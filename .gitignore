@@ -1,0 +1,27 @@
+# Vendored external corpora (local only; not our editorial work)
+research/
+
+# Pre-publication strategy, methodology canon, session artifacts (Dropbox-junctioned)
+private/
+
+# Machine-specific Claude Code permissions (cross-project paths shouldn't be public)
+.claude/settings.json
+.claude/settings.local.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+*.swp
+*.swo
+*~
+
+# Local environment
+.env
