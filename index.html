@@ -12,8 +12,10 @@
     --verse-gap: 8px;
     /* Hebrew with niqqud + te'amim is visually denser than Latin script and
        needs more vertical room. The base size here is the Hebrew size; the
-       English gloss layer (when added) inherits 0.7x via .en. */
-    --font-size: 22px;
+       English gloss layer (when added) inherits 0.7x via .en. The TEXT_SIZES
+       table in JS overrides this with the saved or default ("medium") value
+       on every load, so this CSS default only matters before JS runs. */
+    --font-size: 28px;
     --he-font-size: 1em;
     --en-font-size: 0.7em;
     --letter-spacing: 0;
@@ -1617,7 +1619,10 @@ function toggleVerseNums(on) {
 
 // --- Text size ---
 
-const TEXT_SIZES = { small: '15px', medium: '17px', large: '19px' };
+// Hebrew with niqqud + te'amim is visually denser than Greek/Latin and
+// reads better at substantially larger sizes. The "medium" default here
+// is significantly bigger than the sibling Greek edition's medium (17px).
+const TEXT_SIZES = { small: '22px', medium: '28px', large: '34px' };
 
 function setTextSize(size) {
   document.documentElement.style.setProperty('--font-size', TEXT_SIZES[size]);
