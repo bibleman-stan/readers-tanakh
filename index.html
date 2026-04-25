@@ -1068,7 +1068,7 @@
 <!-- Top bar -->
 <div class="topbar">
   <div class="topbar-loc" id="topbar-loc" onclick="openNav()">
-    <span class="topbar-book" id="topbar-book">Mark</span>
+    <span class="topbar-book" id="topbar-book">Jonah</span>
     <span class="topbar-chap" id="topbar-chap">1</span>
   </div>
   <div class="topbar-icons">
@@ -1264,6 +1264,10 @@ let verseCountCache = {};  // {book: {chapter: verseCount}}
 function parseHash() {
   const hash = location.hash.replace('#', '');
   if (!hash || hash === 'home') return { book: null, chapter: null, verse: null };
+  // Defensive: if the hash names a book we don't have (e.g., a stale
+  // sibling-project hash carried over in the browser), treat as no-hash.
+  // Falls through to the parse logic; the BOOKS[...] guards below will
+  // reject any unknown book key.
   const parts = hash.split('-');
   // Try 3-part: book-chapter-verse (e.g., acts-2-38)
   // Or 2-part: book-chapter (e.g., acts-2)
@@ -1322,6 +1326,14 @@ function updateProgress() {
 // --- Navigation ---
 
 async function navigate(book, chapter, verse) {
+  // Defensive: if we're asked to navigate to a book that's not in BOOKS
+  // (e.g., a stale hash from a sibling-project URL), fall back to landing
+  // instead of throwing partway through.
+  if (!BOOKS[book]) {
+    history.replaceState(null, '', location.pathname);
+    showLanding();
+    return;
+  }
   currentBook = book;
   currentChapter = chapter;
   setHash(book, chapter, verse);
