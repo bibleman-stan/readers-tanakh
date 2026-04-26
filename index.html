@@ -43,8 +43,9 @@
     max-width: 36em;
     margin: 0 auto;
     padding: 1em;
-    /* topbar (44px) + layer-bar (~38px) + breathing room */
-    padding-top: 96px;
+    /* topbar (44px) + layer-bar (~46px on a single row) + breathing room.
+       The mobile media query overrides this; both must clear the layer-bar. */
+    padding-top: 100px;
     letter-spacing: var(--letter-spacing);
     word-spacing: var(--word-spacing);
   }
@@ -65,7 +66,10 @@
   .topbar {
     position: fixed;
     top: 0; left: 0; right: 0;
-    max-width: 42em;
+    /* Matches body max-width so the chrome and the reading column share
+       the same horizontal frame across desktop sizes. On mobile the
+       viewport is narrower than 36em so this caps nothing. */
+    max-width: 36em;
     margin: 0 auto;
     height: 44px;
     background: rgba(28, 31, 36, 0.95);
@@ -244,12 +248,15 @@
     user-select: none;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     letter-spacing: 0.02em;
+    /* Verse refs stay LTR (1:5, not reversed) even inside an RTL Hebrew
+       column. Isolate so the digits don't get re-bidi'd by neighbors. */
+    direction: ltr;
+    unicode-bidi: isolate;
   }
 
-  /* Inline verse markers for cross-verse continuation (e.g. Matt 3:1-2
-     where κηρύσσων and λέγων are parallel participles crossing the
-     Stephanus 1551 verse boundary). Rendered as superscript markers
-     inside the merged colometric line. */
+  /* Inline verse markers for cross-verse continuation (e.g. parallel
+     participles crossing a verse boundary). Rendered as superscript
+     markers inside the merged colometric line. */
   .verse-marker {
     font-size: 0.7em;
     color: var(--text-faint);
@@ -263,10 +270,9 @@
 
   .line {
     display: block;
-    text-indent: calc(-1 * var(--wrap-indent));
-    /* Logical inline-start padding so the hanging indent works in both
-       LTR (English gloss) and RTL (Hebrew) writing directions. */
-    padding-inline-start: var(--wrap-indent);
+    /* Hanging indent lives on .he and .en-gloss directly — text-indent has
+       no effect here because every child layer is its own display:block /
+       display:flex container. */
   }
 
   /* === FOUR-LAYER TEXT === */
@@ -285,10 +291,11 @@
     direction: rtl;
     unicode-bidi: isolate;
     text-align: right;
-  }
-  .verse-num {
-    direction: ltr;
-    unicode-bidi: isolate;
+    /* Hanging indent on the Hebrew block itself (text-indent on the
+       outer .line was dead because .he is its own block). Wrapped Hebrew
+       lines indent inward from the right edge. */
+    text-indent: calc(-1 * var(--wrap-indent));
+    padding-inline-start: var(--wrap-indent);
   }
 
   /* Translit + Interlinear: per-word spans flowed RTL via flex row-reverse
@@ -299,37 +306,53 @@
     justify-content: flex-start;
     align-items: baseline;
     flex-wrap: wrap;
+  }
+  /* The 2px gap between the Hebrew block and its under-laid translit /
+     interlinear study row only makes sense WHEN Hebrew is on. In
+     translit-only or inter-only viewing modes there is nothing above,
+     so the gap reads as a stray top margin. */
+  body.show-he .translit,
+  body.show-he .en-inter {
     margin-top: 2px;
   }
   .translit {
     font-family: Literata, Georgia, serif;
-    /* Sized relative to Hebrew so the per-word study aids stay visually
-       proportional to the Hebrew column they sit under. */
-    font-size: calc(var(--he-base) * 0.6);
+    /* Sized off english-base — Translit is English-script reading content,
+     * not Hebrew-column-aligned. Kept slightly smaller than the smooth
+     * Gloss (which uses 0.85x) so the visual hierarchy goes
+     * Hebrew > Gloss > Translit/Interlinear (study aids). */
+    font-size: calc(var(--english-base) * 0.78);
     color: var(--text-dim);
     font-style: italic;
   }
   .en-inter {
     font-family: Literata, Georgia, serif;
-    font-size: calc(var(--he-base) * 0.6);
+    font-size: calc(var(--english-base) * 0.78);
     color: var(--text-dim);
   }
   .translit .w, .en-inter .w {
     direction: ltr;
     unicode-bidi: isolate;
   }
+  /* Empty word units (e.g. את, the Hebrew object marker, has no English
+     gloss in TAHOT) collapse so they don't emit a stray ← arrow or ‒
+     dash floating between unrelated words. */
+  .translit .w:empty, .en-inter .w:empty { display: none; }
   /* Arrow between consecutive words signals reading direction (RTL).
      Kept at normal text size and dim color — a quiet visual hint, not
      a competing element. ::before sits at the word's left edge — in
      row-reverse layout that left edge faces the next word in source
-     order, so the arrow lands in the correct gap. */
+     order, so the arrow lands in the correct gap.
+     Symbol-font fallback chain so the arrow / dash glyphs render even
+     on systems missing them in the body font. */
   .translit .w:not(:last-child)::before,
   .en-inter .w:not(:last-child)::before {
-    content: "←";
+    content: "\2190";  /* ← LEFTWARDS ARROW */
     color: var(--text-dim);
     opacity: 0.5;
     margin: 0 0.45em;
     font-style: normal;
+    font-family: 'Segoe UI Symbol', 'Apple Color Emoji', 'Noto Sans Symbols', 'Noto Sans Symbols 2', sans-serif;
   }
   /* Maqqef-joined: short dash sits naturally on the baseline (the
      middle-dot we used before pulled the joined word vertically out
@@ -337,10 +360,11 @@
      bond is closer than a normal word boundary. */
   .translit .w.joined:not(:last-child)::before,
   .en-inter .w.joined:not(:last-child)::before {
-    content: "‒";  /* U+2012 figure dash — baseline-friendly */
+    content: "\2012";  /* U+2012 FIGURE DASH — baseline-friendly */
     color: var(--text-dim);
     opacity: 0.6;
     margin: 0 0.2em;
+    font-family: 'Segoe UI Symbol', 'Apple Color Emoji', 'Noto Sans Symbols', 'Noto Sans Symbols 2', sans-serif;
   }
 
   .en-gloss {
@@ -355,6 +379,10 @@
     text-align: left;
     font-style: italic;
     margin-top: 6px;
+    /* Hanging indent on the gloss block itself (text-indent on the
+       outer .line was dead). Wrapped gloss lines indent from the left. */
+    text-indent: calc(-1 * var(--wrap-indent));
+    padding-inline-start: var(--wrap-indent);
   }
 
   body.show-he       .he       { display: block; }
@@ -367,6 +395,9 @@
     position: fixed;
     top: 44px;          /* sits directly under the topbar (44px tall) */
     left: 0; right: 0;
+    /* Matches body / topbar so the chrome shares one frame on desktop. */
+    max-width: 36em;
+    margin: 0 auto;
     background: rgba(28, 31, 36, 0.95);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
@@ -375,19 +406,35 @@
     display: flex;
     gap: 6px;
     justify-content: center;
-    flex-wrap: wrap;
+    /* Nowrap + horizontal scroll keeps the bar a fixed ~46px tall on
+       narrow viewports — wrapping pills onto a second row would have
+       made the body padding-top wrong and hidden the first verse.
+       The bar is rarely wider than the viewport, but in case it is
+       the user can swipe horizontally. */
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;  /* iOS momentum scroll */
+    scrollbar-width: none;              /* Firefox */
     z-index: 99;        /* below topbar (100) */
   }
+  .layer-bar::-webkit-scrollbar { display: none; }  /* Chrome / Safari */
   .pill {
     background: rgba(124, 175, 194, 0.08);
     color: var(--text);
     border: 1px solid rgba(124, 175, 194, 0.25);
     border-radius: 999px;
-    padding: 5px 14px;
+    /* Touch target: 28px+padding ≈ 30px tall — bumped from 5px so the
+       hit area on mobile clears Apple's 44pt minimum more comfortably
+       (the bar's 8px outer padding gets us most of the way). */
+    padding: 6px 14px;
     font: 500 0.78em -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     cursor: pointer;
-    transition: all 0.15s;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
     user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    flex-shrink: 0;     /* never get squished by overflow neighbors */
+    white-space: nowrap;
   }
   .pill:hover { background: rgba(124, 175, 194, 0.16); }
   .pill.active {
@@ -395,6 +442,17 @@
     color: var(--accent);
     border-color: var(--accent);
   }
+  /* Visual feedback when toggleLayer refuses to turn off the last
+     visible layer — short shake on the rejected pill so the user
+     sees the click registered but the system overruled it. */
+  @keyframes pill-shake {
+    0%, 100% { transform: translateX(0); }
+    20%      { transform: translateX(-4px); }
+    40%      { transform: translateX(4px); }
+    60%      { transform: translateX(-3px); }
+    80%      { transform: translateX(3px); }
+  }
+  .pill.shake { animation: pill-shake 0.32s ease-in-out; }
 
   /* === PUNCTUATION (hidden by default — editorial, not original) === */
   .punct {
@@ -474,8 +532,10 @@
   /* === SETTINGS PANEL === */
   .settings-panel {
     position: fixed;
-    top: 45px;
-    right: max(calc((100% - 42em) / 2), 14px);
+    /* Sits below the layer-bar so opening settings doesn't cover the
+       pill toolbar. topbar(44) + layer-bar(~46) + 4px breathing = 94. */
+    top: 94px;
+    right: max(calc((100% - 36em) / 2), 14px);
     width: 240px;
     background: var(--bg-raised);
     border: 1px solid var(--border);
@@ -1071,10 +1131,17 @@
   }
 
   @media (max-width: 480px) {
-    body { padding: 0.5em; padding-top: 50px; }
+    /* topbar (44) + layer-bar (~44 with mobile pill padding) + breathing.
+       Was 50px which only cleared the topbar — first verse hid under
+       the layer-bar on phones. */
+    body { padding: 0.5em; padding-top: 96px; }
     #content { padding: 16px; padding-top: 8px; }
     .nav-book-row { padding: 10px 8px; font-size: 0.82em; }
-    .settings-panel { right: 8px; }
+    .settings-panel { right: 8px; top: 94px; }
+    /* Slightly tighter pill padding on phones so all four fit without
+       triggering horizontal scroll on common widths (375px / 390px). */
+    .layer-bar { padding: 6px 8px; gap: 5px; }
+    .pill { padding: 6px 11px; font-size: 0.74em; }
   }
 
   @media (max-width: 380px) {
@@ -1759,12 +1826,21 @@ function toggleLayer(btn) {
   const layer = btn.dataset.layer;
   const on = !btn.classList.contains('active');
   // Don't allow turning off the last visible layer — leaves the reader
-  // looking blank ("did I break something?").
+  // looking blank ("did I break something?"). Trigger a brief shake on
+  // the rejected pill so the user sees the click registered but was
+  // overruled (silent rejection feels like a broken button).
   if (!on) {
     const visibleLayers = Object.keys(LAYER_DEFAULTS).filter(
       k => document.body.classList.contains('show-' + k)
     );
-    if (visibleLayers.length <= 1) return;  // refuse to turn off the only one
+    if (visibleLayers.length <= 1) {
+      btn.classList.remove('shake');
+      // Force reflow so re-adding the class restarts the animation
+      // even on rapid repeat clicks.
+      void btn.offsetWidth;
+      btn.classList.add('shake');
+      return;
+    }
   }
   setLayer(layer, on, true);
 }
