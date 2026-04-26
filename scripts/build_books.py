@@ -1,21 +1,34 @@
 """
-build_books.py - Generate HTML book fragments from colometric Hebrew sources.
+build_books.py - Generate four-layer HTML book fragments from v1 sources.
 
-Reads chapter files from v4-editorial/{NN-book}/ (preferred) or v1-teamim/{NN-book}/
-(fallback) and writes one HTML fragment per book into books/.
+Per-chapter source preference (independent for each layer):
 
-The fallback is per-chapter: a chapter that exists in v4-editorial uses that;
-chapters that don't fall back to v1-teamim. This means hand-editorial work in
-v4 takes effect chapter-by-chapter as it's produced; the rest of the book
-ships from the te'amim-parsed baseline.
+  Hebrew:       v4-editorial/         > v1-teamim/
+  Interlinear:  eng-interlinear/      > v1-eng-interlinear/
+  Gloss:        eng-gloss/            > v1-eng-gloss/
+  Translit:     translit/             > v1-translit/
 
-Each verse becomes a <div class="verse"> with one or more <span class="line">
-children, each containing a <span class="he"> for the Hebrew text. No English
-layer in the MVP build.
+Each cola is rendered with per-orthographic-word spans so the four-layer
+reader UI can align Hebrew word N with translit word N and interlinear
+word N spatially:
 
-Usage:
-    PYTHONIOENCODING=utf-8 py -3 scripts/build_books.py             # build all books
-    PYTHONIOENCODING=utf-8 py -3 scripts/build_books.py --book jonah
+    <span class="line">
+      <span class="he">
+        <span>WORD1</span> <span>WORD2-</span><span>WORD3</span>
+      </span>
+      <span class="translit"><span class="w">w1</span><span class="w joined">w2</span><span class="w">w3</span></span>
+      <span class="en-inter"><span class="w">w1</span><span class="w joined">w2</span><span class="w">w3</span></span>
+      <span class="en-gloss">smooth gloss text for the cola</span>
+    </span>
+
+The .joined class on a translit/interlinear word means "this Hebrew word
+ends in maqqef and is prosodically joined to the next" — CSS uses it to
+render a tighter dot rather than the standard arrow between this word
+and its right-side visual neighbor.
+
+Hebrew render: each orthographic word is a span. Maqqef-joined words have
+NO whitespace between source spans (the maqqef glyph itself bridges them).
+Non-joined adjacent words have a whitespace text node between (rendered space).
 """
 
 import argparse
@@ -27,15 +40,22 @@ import sys
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.dirname(SCRIPT_DIR)
 
-# Hebrew tier preference: v4-editorial (hand-edited) > v1-teamim (machine).
 V4_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v4-editorial")
 V1_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v1-teamim")
 
-# English tier preference: eng-gloss (hand-edited) > v1-eng-baseline (TAHOT-derived).
-ENG_GLOSS_DIR = os.path.join(REPO_ROOT, "data", "text-files", "eng-gloss")
-ENG_BASELINE_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v1-eng-baseline")
+INTER_HAND_DIR = os.path.join(REPO_ROOT, "data", "text-files", "eng-interlinear")
+INTER_V1_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v1-eng-interlinear")
+
+GLOSS_HAND_DIR = os.path.join(REPO_ROOT, "data", "text-files", "eng-gloss")
+GLOSS_V1_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v1-eng-gloss")
+
+TRANSLIT_HAND_DIR = os.path.join(REPO_ROOT, "data", "text-files", "translit")
+TRANSLIT_V1_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v1-translit")
 
 OUTPUT_DIR = os.path.join(REPO_ROOT, "books")
+
+ENG_WORD_SEP = " | "
+MAQQEF = "־"
 
 VERSE_REF_RE = re.compile(r"^\d+:\d+$")
 
@@ -48,79 +68,120 @@ BOOK_REGISTRY = {
 }
 
 
-def parse_chapter(filepath):
-    """Parse a colometric chapter file into list of verse dicts.
-
-    Returns:
-        chapter_num (int)
-        verses (list of {"ref": "1:1", "lines": ["...", ...]})
-    """
+def parse_chapter_lines(filepath):
+    """Parse a v1/v4 .txt file into [{ref, lines}]."""
+    if not filepath or not os.path.exists(filepath):
+        return []
     with open(filepath, "r", encoding="utf-8") as f:
         raw_lines = f.readlines()
 
     verses = []
     current = None
-    chapter_num = None
-    in_verse = False
-
     for raw in raw_lines:
         line = raw.rstrip("\r\n")
         if VERSE_REF_RE.match(line.strip()):
             if current is not None and current["lines"]:
                 verses.append(current)
-            ref = line.strip()
-            if chapter_num is None:
-                chapter_num = int(ref.split(":")[0])
-            current = {"ref": ref, "lines": []}
-            in_verse = True
+            current = {"ref": line.strip(), "lines": []}
             continue
         if line.strip() == "":
             if current is not None and current["lines"]:
                 verses.append(current)
                 current = None
             continue
-        if not in_verse:
-            continue
         if current is not None:
             current["lines"].append(line)
-
     if current is not None and current["lines"]:
         verses.append(current)
+    return verses
 
-    return chapter_num, verses
+
+def split_hebrew_cola_to_words(cola_line):
+    """Split a Hebrew cola into ordered [{he, joins_next}] orthographic-word records."""
+    out = []
+    pwords = [p for p in cola_line.split(" ") if p]
+    for pw in pwords:
+        if MAQQEF in pw:
+            parts = pw.split(MAQQEF)
+            for p in parts[:-1]:
+                out.append({"he": p + MAQQEF, "joins_next": True})
+            out.append({"he": parts[-1], "joins_next": False})
+        else:
+            out.append({"he": pw, "joins_next": False})
+    return out
 
 
-def render_chapter(chapter_num, he_verses, en_lookup, he_source, en_source):
-    """Render one chapter as HTML.
+def render_he_layer(words):
+    parts = ['<span class="he">']
+    for i, w in enumerate(words):
+        parts.append(f'<span>{html.escape(w["he"])}</span>')
+        if i < len(words) - 1 and not w["joins_next"]:
+            parts.append(" ")
+    parts.append('</span>')
+    return "".join(parts)
 
-    he_verses: [{ref, lines}] from the chosen Hebrew source for this chapter
-    en_lookup: {ref: [lines]} from the chosen English source for this chapter,
-               or {} if no English layer available
-    he_source / en_source: provenance strings for the data-source attributes
+
+def render_word_layer(cls, units, joins):
+    """Render translit/en-inter as per-word .w spans.
+
+    units: list of orthographic-word strings (must match joins length)
+    joins: list of bool (joins_next) parallel to units
     """
+    if not units:
+        return ""
+    parts = [f'<span class="{cls}">']
+    for i, u in enumerate(units):
+        joined_cls = " joined" if i < len(joins) and joins[i] else ""
+        parts.append(f'<span class="w{joined_cls}">{html.escape(u)}</span>')
+    parts.append('</span>')
+    return "".join(parts)
+
+
+def render_chapter(chapter_num, he_verses, inter_lookup, gloss_lookup, tr_lookup, sources):
     out = [
         f'  <div class="chapter" id="ch-{chapter_num}" '
-        f'data-he-source="{he_source}" data-en-source="{en_source}">'
+        f'data-he-source="{sources["he"]}" '
+        f'data-inter-source="{sources["inter"]}" '
+        f'data-gloss-source="{sources["gloss"]}" '
+        f'data-translit-source="{sources["translit"]}">'
     ]
+
     for v in he_verses:
         ref = v["ref"]
         ch, vn = ref.split(":")
-        en_lines = en_lookup.get(ref, [])
         out.append(f'    <div class="verse" id="v-{ch}-{vn}"><span class="verse-num">{ref}</span>')
-        for i, he_line in enumerate(v["lines"]):
-            he_esc = html.escape(he_line)
-            en_esc = html.escape(en_lines[i]) if i < len(en_lines) else ""
-            if en_esc:
-                out.append(
-                    f'      <span class="line">'
-                    f'<span class="he">{he_esc}</span>'
-                    f'<span class="en">{en_esc}</span>'
-                    f'</span>'
-                )
-            else:
-                out.append(f'      <span class="line"><span class="he">{he_esc}</span></span>')
-        out.append("    </div>")
-    out.append("  </div>")
+
+        inter_lines = inter_lookup.get(ref, [])
+        gloss_lines = gloss_lookup.get(ref, [])
+        tr_lines = tr_lookup.get(ref, [])
+
+        for i, he_cola in enumerate(v["lines"]):
+            words = split_hebrew_cola_to_words(he_cola)
+            joins = [w["joins_next"] for w in words]
+
+            inter_units = (
+                [u.strip() for u in inter_lines[i].split(ENG_WORD_SEP)]
+                if i < len(inter_lines) else []
+            )
+            tr_units = (
+                [u.strip() for u in tr_lines[i].split(ENG_WORD_SEP)]
+                if i < len(tr_lines) else []
+            )
+            gloss_text = gloss_lines[i] if i < len(gloss_lines) else ""
+
+            out.append('      <span class="line">')
+            out.append('        ' + render_he_layer(words))
+            if tr_units:
+                out.append('        ' + render_word_layer("translit", tr_units, joins))
+            if inter_units:
+                out.append('        ' + render_word_layer("en-inter", inter_units, joins))
+            if gloss_text:
+                out.append(f'        <span class="en-gloss">{html.escape(gloss_text)}</span>')
+            out.append('      </span>')
+
+        out.append('    </div>')
+
+    out.append('  </div>')
     return "\n".join(out)
 
 
@@ -133,60 +194,114 @@ def _files_in(dir_path, prefix):
     }
 
 
+def lines_to_lookup(verses):
+    return {v["ref"]: v["lines"] for v in verses}
+
+
+def _pick_source(fn, hand_dir, hand_files, v1_dir, v1_files, hand_label, v1_label):
+    """Return (path, source_label, used_hand) for a file, preferring hand over v1."""
+    if fn in hand_files:
+        return os.path.join(hand_dir, fn), hand_label, True
+    if fn in v1_files:
+        return os.path.join(v1_dir, fn), v1_label, False
+    return None, "none", False
+
+
 def build_book(book_key):
     if book_key not in BOOK_REGISTRY:
         sys.exit(f"Unknown book key: {book_key}")
     spec = BOOK_REGISTRY[book_key]
     prefix = spec["prefix"]
+    sub = spec["subdir"]
 
-    v4_dir = os.path.join(V4_DIR, spec["subdir"])
-    v1_dir = os.path.join(V1_DIR, spec["subdir"])
-    eng_gloss_dir = os.path.join(ENG_GLOSS_DIR, spec["subdir"])
-    eng_baseline_dir = os.path.join(ENG_BASELINE_DIR, spec["subdir"])
-
+    # Discover chapters by Hebrew layer (Hebrew is required)
+    v4_dir = os.path.join(V4_DIR, sub)
+    v1_dir = os.path.join(V1_DIR, sub)
     v4_files = _files_in(v4_dir, prefix)
     v1_files = _files_in(v1_dir, prefix)
-    eng_gloss_files = _files_in(eng_gloss_dir, prefix)
-    eng_baseline_files = _files_in(eng_baseline_dir, prefix)
     all_files = sorted(v4_files | v1_files)
 
     if not all_files:
-        sys.exit(f"No chapter files found for {book_key} in v4-editorial/ or v1-teamim/")
+        sys.exit(f"No Hebrew chapter files for {book_key}")
+
+    inter_hand = os.path.join(INTER_HAND_DIR, sub)
+    inter_v1 = os.path.join(INTER_V1_DIR, sub)
+    gloss_hand = os.path.join(GLOSS_HAND_DIR, sub)
+    gloss_v1 = os.path.join(GLOSS_V1_DIR, sub)
+    tr_hand = os.path.join(TRANSLIT_HAND_DIR, sub)
+    tr_v1 = os.path.join(TRANSLIT_V1_DIR, sub)
+
+    inter_hand_files = _files_in(inter_hand, prefix)
+    inter_v1_files = _files_in(inter_v1, prefix)
+    gloss_hand_files = _files_in(gloss_hand, prefix)
+    gloss_v1_files = _files_in(gloss_v1, prefix)
+    tr_hand_files = _files_in(tr_hand, prefix)
+    tr_v1_files = _files_in(tr_v1, prefix)
 
     fragments = []
-    counts = {"v4": 0, "v1": 0, "eng_gloss": 0, "eng_baseline": 0, "no_en": 0}
+    counts = {
+        "he_v4": 0, "he_v1": 0,
+        "inter_hand": 0, "inter_v1": 0, "inter_none": 0,
+        "gloss_hand": 0, "gloss_v1": 0, "gloss_none": 0,
+        "tr_hand": 0, "tr_v1": 0, "tr_none": 0,
+    }
+
     for fn in all_files:
-        # Hebrew source (per chapter): prefer v4, fall back to v1-teamim.
+        # Hebrew (required)
         if fn in v4_files:
-            he_path = os.path.join(v4_dir, fn)
-            he_source = "v4-editorial"
-            counts["v4"] += 1
+            he_path, he_source = os.path.join(v4_dir, fn), "v4-editorial"
+            counts["he_v4"] += 1
         else:
-            he_path = os.path.join(v1_dir, fn)
-            he_source = "v1-teamim"
-            counts["v1"] += 1
+            he_path, he_source = os.path.join(v1_dir, fn), "v1-teamim"
+            counts["he_v1"] += 1
 
-        # English source (per chapter): prefer eng-gloss, fall back to v1-eng-baseline.
-        if fn in eng_gloss_files:
-            en_path = os.path.join(eng_gloss_dir, fn)
-            en_source = "eng-gloss"
-            counts["eng_gloss"] += 1
-        elif fn in eng_baseline_files:
-            en_path = os.path.join(eng_baseline_dir, fn)
-            en_source = "v1-eng-baseline"
-            counts["eng_baseline"] += 1
+        inter_path, inter_source, inter_hand_used = _pick_source(
+            fn, inter_hand, inter_hand_files, inter_v1, inter_v1_files,
+            "eng-interlinear", "v1-eng-interlinear"
+        )
+        if inter_source == "none":
+            counts["inter_none"] += 1
+        elif inter_hand_used:
+            counts["inter_hand"] += 1
         else:
-            en_path = None
-            en_source = "none"
-            counts["no_en"] += 1
+            counts["inter_v1"] += 1
 
-        chapter_num, he_verses = parse_chapter(he_path)
-        if en_path:
-            _, en_verses = parse_chapter(en_path)
-            en_lookup = {v["ref"]: v["lines"] for v in en_verses}
+        gloss_path, gloss_source, gloss_hand_used = _pick_source(
+            fn, gloss_hand, gloss_hand_files, gloss_v1, gloss_v1_files,
+            "eng-gloss", "v1-eng-gloss"
+        )
+        if gloss_source == "none":
+            counts["gloss_none"] += 1
+        elif gloss_hand_used:
+            counts["gloss_hand"] += 1
         else:
-            en_lookup = {}
-        fragments.append(render_chapter(chapter_num, he_verses, en_lookup, he_source, en_source))
+            counts["gloss_v1"] += 1
+
+        tr_path, tr_source, tr_hand_used = _pick_source(
+            fn, tr_hand, tr_hand_files, tr_v1, tr_v1_files,
+            "translit", "v1-translit"
+        )
+        if tr_source == "none":
+            counts["tr_none"] += 1
+        elif tr_hand_used:
+            counts["tr_hand"] += 1
+        else:
+            counts["tr_v1"] += 1
+
+        he_verses = parse_chapter_lines(he_path)
+        chapter_num = int(he_verses[0]["ref"].split(":")[0]) if he_verses else 0
+
+        inter_lookup = lines_to_lookup(parse_chapter_lines(inter_path)) if inter_path else {}
+        gloss_lookup = lines_to_lookup(parse_chapter_lines(gloss_path)) if gloss_path else {}
+        tr_lookup = lines_to_lookup(parse_chapter_lines(tr_path)) if tr_path else {}
+
+        sources = {
+            "he": he_source, "inter": inter_source,
+            "gloss": gloss_source, "translit": tr_source,
+        }
+        fragments.append(
+            render_chapter(chapter_num, he_verses, inter_lookup, gloss_lookup, tr_lookup, sources)
+        )
 
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     out_path = os.path.join(OUTPUT_DIR, spec["out"])
@@ -194,15 +309,16 @@ def build_book(book_key):
         f.write("\n".join(fragments) + "\n")
 
     print(f"  wrote {out_path}")
-    print(f"  Hebrew  — v4-editorial: {counts['v4']}, v1-teamim: {counts['v1']}")
-    print(f"  English — eng-gloss:    {counts['eng_gloss']}, v1-eng-baseline: {counts['eng_baseline']}, none: {counts['no_en']}")
+    print(f"  Hebrew      hand(v4): {counts['he_v4']}  baseline(v1): {counts['he_v1']}")
+    print(f"  Interlinear hand:     {counts['inter_hand']}  baseline:    {counts['inter_v1']}  none: {counts['inter_none']}")
+    print(f"  Gloss       hand:     {counts['gloss_hand']}  baseline:    {counts['gloss_v1']}  none: {counts['gloss_none']}")
+    print(f"  Translit    hand:     {counts['tr_hand']}  baseline:    {counts['tr_v1']}  none: {counts['tr_none']}")
 
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--book", help="Book key; if omitted, build all")
     args = ap.parse_args()
-
     keys = [args.book] if args.book else list(BOOK_REGISTRY.keys())
     for k in keys:
         build_book(k)

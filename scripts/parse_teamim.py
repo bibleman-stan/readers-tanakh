@@ -1,35 +1,25 @@
 """
-parse_teamim.py - Te'amim-driven colometric break generator.
+parse_teamim.py - Te'amim-driven cola generator with four-layer outputs.
 
-Reads v0-prose chapter files and produces v1-teamim chapter files where each
-line break corresponds to a major disjunctive cantillation accent. Two accent
-systems are supported:
+Reads v0-prose Hebrew + v0-eng-baseline English + v0-translit-baseline
+translit in lockstep. Splits at te'amim cola boundaries derived from the
+Hebrew accents. Emits four parallel v1 chapter files per book:
 
-  - Prose accents (used by 21 books): break at atnach, segolta, zaqef qaton,
-    zaqef gadol, tifcha (revia conservatively excluded by default to avoid
-    over-breaking; can be enabled per book).
+  v1-teamim/            Hebrew cola (one cola per line; prosodic-words
+                        space-separated; orthographic-word boundaries within
+                        a prosodic word are signaled by inline maqqef ־)
+  v1-eng-interlinear/   Per-orthographic-word English (` | ` separator,
+                        brackets KEPT, no naturalize)
+  v1-eng-gloss/         Smooth naturalized English (one cola per line, normal
+                        text; brackets stripped, possessives/demonstratives
+                        reordered, Hebrew adjective-after-noun inverted,
+                        compound prepositions collapsed, directional ה
+                        prefixed with "toward")
+  v1-translit/          Per-orthographic-word translit (` | ` separator,
+                        modern Israeli style)
 
-  - Sifrei Emet accents (Psalms, Proverbs, and Job 3:1-42:6): break at atnach,
-    oleh, dechi, revia mugrash. Note that tsinor and pazer in poetic position
-    are not currently treated as breakers in this minimal parser.
-
-This is a minimal parser. It does not implement the full Wickes hierarchy with
-governing-domain logic. It splits on the presence of specific Unicode codepoints
-that mark tier-1 and tier-2 disjunctives. Refinement is iterative: as
-override-rate hot-spots emerge in v4-editorial review, the parser's break set
-is tuned.
-
-The parser preserves all niqqud, te'amim, and inline punctuation. It only
-inserts line breaks. Word integrity (including maqqef-joined groups) is never
-broken: a break is only inserted at a whitespace boundary AFTER a word whose
-final character cluster contains a breaker accent.
-
-Petucha/setuma paragraph markers (the standalone letters Peh and Samekh that
-appear after sof-pasuq in the source) are stripped from the v1 output. They
-are recorded structurally elsewhere (TODO: paragraph markers file).
-
-Usage:
-    PYTHONIOENCODING=utf-8 py -3 scripts/parse_teamim.py --book jonah
+Two accent systems: prose (21 books) and Sifrei Emet (Pss/Prov/poetic Job).
+Per-book registry declares which chapters route through the poetic parser.
 """
 
 import argparse
@@ -39,56 +29,62 @@ import sys
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.dirname(SCRIPT_DIR)
+
 V0_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v0-prose")
 V0_ENG_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v0-eng-baseline")
+V0_TRANSLIT_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v0-translit-baseline")
+
 V1_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v1-teamim")
-V1_ENG_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v1-eng-baseline")
+V1_ENG_INTER_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v1-eng-interlinear")
+V1_ENG_GLOSS_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v1-eng-gloss")
+V1_TRANSLIT_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v1-translit")
 
-ENG_PWORD_SEP = " | "  # must match ingest_tahot.py
+ENG_WORD_SEP = " | "  # must match ingest_tahot.py
+MAQQEF = "־"
 
-# Tier-1/2 disjunctive accents — prose books
+# Tier-1/2 disjunctives — prose (21 books)
 PROSE_BREAKERS = {
-    "֑",  # ETNAHTA  (atnach) — tier 1, mid-verse
-    "֒",  # SEGOL    (segolta) — tier 2
-    "֔",  # ZAQEF QATAN — tier 2
-    "֕",  # ZAQEF GADOL — tier 2
-    "֖",  # TIPEHA   (tifcha) — tier 2
+    "֑",  # ETNAHTA
+    "֒",  # SEGOL (segolta)
+    "֔",  # ZAQEF QATAN
+    "֕",  # ZAQEF GADOL
+    "֖",  # TIPEHA
 }
 
-# Tier-1/2 disjunctive accents — Sifrei Emet (Psalms, Proverbs, poetic Job)
+# Tier-1/2 disjunctives — Sifrei Emet (Pss / Prov / poetic Job)
 POETIC_BREAKERS = {
-    "֑",  # ETNAHTA — tier 1
-    "֫",  # OLE      (component of oleh ve-yored) — tier 2
-    "֭",  # DEHI     (dechi) — tier 2
-    "֗",  # REVIA    (revia mugrash in poetic position) — tier 2
+    "֑",  # ETNAHTA
+    "֫",  # OLE (component of oleh ve-yored)
+    "֭",  # DEHI
+    "֗",  # REVIA (revia mugrash in poetic position)
 }
 
-# Petucha / setuma standalone letters that may follow a sof-pasuq in the source.
-PARAGRAPH_MARKERS_RE = re.compile(r"\s+[פס]\s*$")  # trailing PEH or SAMEKH
-
+PARAGRAPH_MARKERS_RE = re.compile(r"\s+[פס]\s*$")
 VERSE_REF_RE = re.compile(r"^\d+:\d+$")
+
+BOOK_REGISTRY = {
+    "jonah": {
+        "subdir": "05-jonah",
+        "prefix": "jonah",
+        "poetic_chapters": [2],   # the prayer
+    },
+}
 
 
 # ---- Hebrew structural-gloss naturalizer ---------------------------------
-# Modeled on the GNT project's naturalize() in generate_english_glosses.py.
-# Wooden-but-legible: preserve Hebrew clause order (VSO etc.) but fix the
-# morphological/phrasal artifacts that make English ungrammatical:
-#   - Bracketed [supplied] words flattened
-#   - Pronominal suffix reorder ("wickedness their" -> "their wickedness")
-#   - Demonstrative reorder ("evil this" -> "this evil")
-#   - Hebrew adjective-after-noun inversion ("city great" -> "great city")
-#   - Common compound-preposition cleanups ("from to before" -> "from before")
-#   - Directional he ("Tarshish towards" -> "toward Tarshish")
-# All transforms are list-driven, not blanket regex, so adding a Hebrew
-# adjective is one entry and false positives are rare. Iterate by extending
-# the lists as new patterns surface in editorial review.
+# (Same logic as before — modeled on the GNT project's naturalize().)
 
 POSSESSIVES = ('his', 'her', 'its', 'their', 'your', 'my', 'our')
 DEMONSTRATIVES = ('this', 'that', 'these', 'those')
 
-# Words that, if they appear immediately before a possessive/demonstrative,
-# mean we should NOT reorder (the suffix is genuinely English-positioned).
-# E.g., "in his house" (not Hebrew suffix) vs "house his" (Hebrew suffix).
+# Single-swap demonstratives: only `this`/`these` get the noun-after-X swap
+# without article context. `that`/`those` are excluded because TAHOT's English
+# uses "that" for both demonstrative AND complementizer (kī "that, because"),
+# so single-swap fires false positives like "knew that" -> "that knew".
+# The article-aware patterns ("the X that") still handle the demonstrative
+# cases that need it.
+DEMONSTRATIVES_SINGLE_SWAP = ('this', 'these')
+
 PREP_OR_FUNCTION = {
     'of', 'in', 'to', 'on', 'at', 'by', 'for', 'with', 'from', 'about',
     'into', 'before', 'after', 'against', 'upon', 'over', 'under',
@@ -98,83 +94,57 @@ PREP_OR_FUNCTION = {
     'I', 'you', 'he', 'she', 'we', 'they',
 }
 
-# Hebrew adjectives that follow their noun in source order. Inversion is
-# required for English. Extend as new patterns appear; false positives are
-# rare because these words are unambiguously adjectival in TAHOT glosses.
 HEBREW_ADJECTIVES = {
     'great', 'small', 'large', 'little', 'good', 'evil', 'bad', 'holy',
     'innocent', 'wicked', 'righteous', 'pure', 'mighty', 'strong', 'weak',
     'high', 'low', 'wide', 'long', 'short', 'old', 'young', 'new',
     'beloved', 'living', 'dead', 'first', 'last', 'whole', 'broken',
     'open', 'pleasing', 'unleavened', 'precious',
+    # Positional / intensifier adjectives that follow Hebrew noun-first order:
+    'right', 'left', 'own',
 }
 
 _BRACKET_KEEP_RE = re.compile(r'\[([^\]]+)\]')
 
 
 def naturalize_hebrew_gloss(text):
-    """Convert wooden TAHOT-derived English into structural-but-readable English."""
-    # Strip [supplied] brackets, keeping the word(s) inside.
+    """Wooden-but-legible naturalizer: see parse_teamim.py docstring."""
     text = _BRACKET_KEEP_RE.sub(r'\1', text)
 
-    # Compound-preposition cleanups (TAHOT renders Hebrew compound preps
-    # morpheme-by-morpheme; English needs them collapsed).
+    # Rejoin TAHOT's hyphen-split English ("there- -fore" -> "therefore")
+    text = re.sub(r'(\w+)-\s+-(\w+)', r'\1\2', text)
+
     text = re.sub(r'\bfrom to before\b', 'from before', text)
     text = re.sub(r'\bfrom to upon\b', 'from upon', text)
     text = re.sub(r'\bfrom to under\b', 'from under', text)
     text = re.sub(r'\bto in\b', 'into', text)
-
-    # Directional he: "X towards" -> "toward X". Only the trailing "towards"
-    # form (not "towards X") because TAHOT writes the ה-suffix gloss after
-    # its host word.
     text = re.sub(r'\b(\w+) towards\b', r'toward \1', text)
 
     adj_alt = '|'.join(re.escape(a) for a in HEBREW_ADJECTIVES)
     dem_alt = '|'.join(DEMONSTRATIVES)
     poss_alt = '|'.join(POSSESSIVES)
 
-    # Combined Hebrew patterns ("the noun adj dem" etc.) MUST run before the
-    # simpler single-swap patterns or the swaps fight each other.
-    # "the storm great this" -> "this great storm"
-    text = re.sub(
-        rf'\b(the|a|an) (\w+) ({adj_alt}) ({dem_alt})\b',
-        r'\4 \3 \2', text
-    )
-    # "the evil this" (article + adj + dem) -> "this evil"
-    text = re.sub(
-        rf'\b(the|a|an) ({adj_alt}) ({dem_alt})\b',
-        r'\3 \2', text
-    )
-    # "the men that" / "the man this" (article + noun + dem) -> "that men"
-    text = re.sub(
-        rf'\b(the|a|an) (\w+) ({dem_alt})\b',
-        r'\3 \2', text
-    )
-    # "the noun adj poss" -> "poss adj noun"
-    text = re.sub(
-        rf'\b(the|a|an) (\w+) ({adj_alt}) ({poss_alt})\b',
-        r'\4 \3 \2', text
-    )
-    # "the noun poss" -> "poss noun"
-    text = re.sub(
-        rf'\b(the|a|an) (\w+) ({poss_alt})\b',
-        r'\3 \2', text
-    )
+    # Combined patterns BEFORE single-swap so we don't ping-pong.
+    text = re.sub(rf'\b(the|a|an) (\w+) ({adj_alt}) ({dem_alt})\b', r'\4 \3 \2', text)
+    text = re.sub(rf'\b(the|a|an) ({adj_alt}) ({dem_alt})\b', r'\3 \2', text)
+    text = re.sub(rf'\b(the|a|an) (\w+) ({dem_alt})\b', r'\3 \2', text)
+    text = re.sub(rf'\b(the|a|an) (\w+) ({adj_alt}) ({poss_alt})\b', r'\4 \3 \2', text)
+    text = re.sub(rf'\b(the|a|an) (\w+) ({poss_alt})\b', r'\3 \2', text)
 
-    # Adjective inversion (article + noun + adj) -> (article + adj + noun)
+    # No-article adj+noun+poss -> poss+adj+noun ("right hand his" -> "his right hand";
+    # "own land my" -> "my own land"). Must run before the single-swap possessive,
+    # which would otherwise produce "right his hand" and stop.
+    text = re.sub(rf'\b({adj_alt}) (\w+) ({poss_alt})\b', r'\3 \1 \2', text)
+
     for adj in HEBREW_ADJECTIVES:
         text = re.sub(rf'\b(the|a|an) (\w+) {adj}\b', rf'\1 {adj} \2', text)
 
-    # No-article single swaps. These run AFTER the combined patterns above so
-    # we don't undo a prior multi-token reorder.
     def _swap_after_noun(text, after_word_set):
         for w in after_word_set:
             def repl(m, w=w):
                 prev = m.group(1)
                 if prev.lower() in PREP_OR_FUNCTION:
                     return m.group(0)
-                # Don't re-swap if prev is itself in the same set (the
-                # combined pattern already placed things in the right order).
                 if prev.lower() in after_word_set:
                     return m.group(0)
                 return f'{w} {prev}'
@@ -182,9 +152,9 @@ def naturalize_hebrew_gloss(text):
         return text
 
     text = _swap_after_noun(text, set(POSSESSIVES))
-    text = _swap_after_noun(text, set(DEMONSTRATIVES))
+    # Use the safer subset for single-swap demonstratives (drops `that`/`those`).
+    text = _swap_after_noun(text, set(DEMONSTRATIVES_SINGLE_SWAP))
 
-    # No-article adjective inversion ("city great" -> "great city")
     for adj in HEBREW_ADJECTIVES:
         def repl(m, adj=adj):
             prev = m.group(1)
@@ -195,35 +165,27 @@ def naturalize_hebrew_gloss(text):
             return f'{adj} {prev}'
         text = re.sub(rf'\b(\w+) {adj}\b', repl, text)
 
-    # Whitespace cleanup
     text = re.sub(r'\s+', ' ', text).strip()
     return text
 
-BOOK_REGISTRY = {
-    "jonah": {
-        "subdir": "05-jonah",
-        "prefix": "jonah",
-        # Jonah 1, 3, 4 are prose; chapter 2 is the Sifrei-Emet prayer.
-        "poetic_chapters": [2],
-    },
-}
+
+# ---- Cola splitting -----------------------------------------------------
+
+def hebrew_orthographic_word_count(prosodic_word):
+    """Count orthographic words in a maqqef-joined prosodic-word token."""
+    return prosodic_word.count(MAQQEF) + 1
 
 
-def compute_cola_boundaries(he_words, breakers):
-    """Return list of (start_idx, end_idx) word-index pairs, one per cola.
-
-    A cola break is inserted after any Hebrew prosodic-word whose characters
-    include one of the breaker codepoints. Maqqef-joined groups are atomic
-    (already pre-joined into single space-separated tokens by ingest).
-    """
+def compute_cola_boundaries(he_pwords, breakers):
+    """Return [(start_idx, end_idx), ...] of prosodic-word ranges per cola."""
     boundaries = [0]
-    for i, w in enumerate(he_words):
+    for i, w in enumerate(he_pwords):
         if not w:
             continue
         if any(b in w for b in breakers):
             boundaries.append(i + 1)
-    if boundaries[-1] != len(he_words):
-        boundaries.append(len(he_words))
+    if boundaries[-1] != len(he_pwords):
+        boundaries.append(len(he_pwords))
     return list(zip(boundaries, boundaries[1:]))
 
 
@@ -233,7 +195,7 @@ def strip_paragraph_marker(verse_text):
 
 
 def read_v0_chapter(path):
-    """Read a v0-prose / v0-eng-baseline chapter file. Returns [(ref, verse_text), ...]."""
+    """Read a v0-style .txt chapter file. Returns [(ref, verse_text), ...]."""
     with open(path, "r", encoding="utf-8") as f:
         raw = f.read()
     blocks = re.split(r"\n\s*\n", raw.strip())
@@ -242,64 +204,108 @@ def read_v0_chapter(path):
         parts = block.strip().split("\n", 1)
         if len(parts) != 2:
             continue
-        ref, verse_text = parts
+        ref, text = parts
         if not VERSE_REF_RE.match(ref.strip()):
             continue
-        out.append((ref.strip(), verse_text.strip()))
+        out.append((ref.strip(), text.strip()))
     return out
 
 
-def parse_chapter_pair(he_in_path, en_in_path, he_out_path, en_out_path, breakers):
-    """Parse Hebrew + English v0 chapter files into aligned v1 cola files."""
-    he_verses = read_v0_chapter(he_in_path)
-    en_verses_lookup = {ref: text for ref, text in read_v0_chapter(en_in_path)}
+def parse_chapter(he_in, en_in, tr_in,
+                  he_out, en_inter_out, en_gloss_out, tr_out,
+                  breakers):
+    """Parse one chapter into the four v1 outputs."""
+    he_verses = read_v0_chapter(he_in)
+    en_lookup = {ref: text for ref, text in read_v0_chapter(en_in)}
+    tr_lookup = {ref: text for ref, text in read_v0_chapter(tr_in)}
 
-    he_blocks = []
-    en_blocks = []
+    he_blocks, inter_blocks, gloss_blocks, tr_blocks = [], [], [], []
+
     for ref, he_text in he_verses:
         he_clean = strip_paragraph_marker(he_text)
         he_pwords = [w for w in he_clean.split(" ") if w]
 
-        en_text = en_verses_lookup.get(ref, "")
-        en_pwords = [u.strip() for u in en_text.split(ENG_PWORD_SEP)] if en_text else []
+        # Total orthographic words for this verse
+        ortho_count = sum(hebrew_orthographic_word_count(w) for w in he_pwords)
 
-        # If the prosodic-word counts disagree, the alignment broke somewhere
-        # in ingest. Bail loudly rather than silently emit misaligned cola.
-        if en_pwords and len(en_pwords) != len(he_pwords):
+        en_text = en_lookup.get(ref, "")
+        en_words = [w.strip() for w in en_text.split(ENG_WORD_SEP)] if en_text else []
+        tr_text = tr_lookup.get(ref, "")
+        tr_words = [w.strip() for w in tr_text.split(ENG_WORD_SEP)] if tr_text else []
+
+        if en_words and len(en_words) != ortho_count:
             sys.exit(
                 f"Alignment failure at {ref}: "
-                f"{len(he_pwords)} Hebrew prosodic-words vs {len(en_pwords)} English units"
+                f"{ortho_count} Hebrew orthographic-words vs {len(en_words)} English units"
+            )
+        if tr_words and len(tr_words) != ortho_count:
+            sys.exit(
+                f"Alignment failure at {ref}: "
+                f"{ortho_count} Hebrew orthographic-words vs {len(tr_words)} translit units"
             )
 
+        # Cola boundaries are at PROSODIC-word level (te'amim sit on prosodic units)
         boundaries = compute_cola_boundaries(he_pwords, breakers)
-        he_cola = [" ".join(he_pwords[a:b]) for a, b in boundaries]
-        en_cola = [naturalize_hebrew_gloss(" ".join(en_pwords[a:b])) for a, b in boundaries] if en_pwords else []
+
+        # Map prosodic-word index -> orthographic-word start index
+        ortho_starts = [0]
+        for c in (hebrew_orthographic_word_count(w) for w in he_pwords):
+            ortho_starts.append(ortho_starts[-1] + c)
+
+        he_cola, inter_cola, gloss_cola, trans_cola = [], [], [], []
+        for pa, pb in boundaries:
+            he_cola.append(" ".join(he_pwords[pa:pb]))
+
+            oa = ortho_starts[pa]
+            ob = ortho_starts[pb]
+
+            if en_words:
+                inter_words = en_words[oa:ob]
+                inter_cola.append(ENG_WORD_SEP.join(inter_words))
+                gloss_input = " ".join(w for w in inter_words if w)
+                gloss_cola.append(naturalize_hebrew_gloss(gloss_input))
+
+            if tr_words:
+                trans_cola.append(ENG_WORD_SEP.join(tr_words[oa:ob]))
 
         he_blocks.append(ref + "\n" + "\n".join(he_cola))
-        if en_cola:
-            en_blocks.append(ref + "\n" + "\n".join(en_cola))
+        if inter_cola:
+            inter_blocks.append(ref + "\n" + "\n".join(inter_cola))
+            gloss_blocks.append(ref + "\n" + "\n".join(gloss_cola))
+        if trans_cola:
+            tr_blocks.append(ref + "\n" + "\n".join(trans_cola))
 
-    os.makedirs(os.path.dirname(he_out_path), exist_ok=True)
-    os.makedirs(os.path.dirname(en_out_path), exist_ok=True)
-    with open(he_out_path, "w", encoding="utf-8", newline="\n") as f:
+    for path in (he_out, en_inter_out, en_gloss_out, tr_out):
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+
+    with open(he_out, "w", encoding="utf-8", newline="\n") as f:
         f.write("\n\n".join(he_blocks) + "\n")
-    with open(en_out_path, "w", encoding="utf-8", newline="\n") as f:
-        f.write("\n\n".join(en_blocks) + "\n")
+    if inter_blocks:
+        with open(en_inter_out, "w", encoding="utf-8", newline="\n") as f:
+            f.write("\n\n".join(inter_blocks) + "\n")
+        with open(en_gloss_out, "w", encoding="utf-8", newline="\n") as f:
+            f.write("\n\n".join(gloss_blocks) + "\n")
+    if tr_blocks:
+        with open(tr_out, "w", encoding="utf-8", newline="\n") as f:
+            f.write("\n\n".join(tr_blocks) + "\n")
 
 
 def parse_book(book_key):
     if book_key not in BOOK_REGISTRY:
         sys.exit(f"Unknown book key: {book_key}")
     spec = BOOK_REGISTRY[book_key]
+
     he_in_dir = os.path.join(V0_DIR, spec["subdir"])
     en_in_dir = os.path.join(V0_ENG_DIR, spec["subdir"])
+    tr_in_dir = os.path.join(V0_TRANSLIT_DIR, spec["subdir"])
+
     he_out_dir = os.path.join(V1_DIR, spec["subdir"])
-    en_out_dir = os.path.join(V1_ENG_DIR, spec["subdir"])
+    inter_out_dir = os.path.join(V1_ENG_INTER_DIR, spec["subdir"])
+    gloss_out_dir = os.path.join(V1_ENG_GLOSS_DIR, spec["subdir"])
+    tr_out_dir = os.path.join(V1_TRANSLIT_DIR, spec["subdir"])
 
     if not os.path.isdir(he_in_dir):
         sys.exit(f"v0-prose dir not found: {he_in_dir}")
-    if not os.path.isdir(en_in_dir):
-        sys.exit(f"v0-eng-baseline dir not found: {en_in_dir}")
 
     chapter_files = sorted(
         fn for fn in os.listdir(he_in_dir)
@@ -312,20 +318,31 @@ def parse_book(book_key):
     for fn in chapter_files:
         chapter_num = int(fn[len(spec["prefix"]) + 1:-4])
         breakers = POETIC_BREAKERS if chapter_num in poetic_chapters else PROSE_BREAKERS
-        he_in_path = os.path.join(he_in_dir, fn)
-        en_in_path = os.path.join(en_in_dir, fn)
-        he_out_path = os.path.join(he_out_dir, fn)
-        en_out_path = os.path.join(en_out_dir, fn)
-        parse_chapter_pair(he_in_path, en_in_path, he_out_path, en_out_path, breakers)
 
-        with open(he_out_path, "r", encoding="utf-8") as f:
-            line_count = sum(1 for line in f if line.strip() and not VERSE_REF_RE.match(line.strip()))
+        parse_chapter(
+            os.path.join(he_in_dir, fn),
+            os.path.join(en_in_dir, fn),
+            os.path.join(tr_in_dir, fn),
+            os.path.join(he_out_dir, fn),
+            os.path.join(inter_out_dir, fn),
+            os.path.join(gloss_out_dir, fn),
+            os.path.join(tr_out_dir, fn),
+            breakers,
+        )
+
+        with open(os.path.join(he_out_dir, fn), "r", encoding="utf-8") as f:
+            line_count = sum(
+                1 for line in f
+                if line.strip() and not VERSE_REF_RE.match(line.strip())
+            )
         total_lines += line_count
         accent_label = "Sifrei Emet" if chapter_num in poetic_chapters else "prose"
-        print(f"  wrote {he_out_path}  ({line_count} cola, {accent_label} accents)")
-        print(f"  wrote {en_out_path}")
+        print(f"  {fn}: {line_count} cola, {accent_label}")
 
-    print(f"\n{book_key}: {total_lines} cola total in v1-teamim/ and v1-eng-baseline/")
+    print(
+        f"\n{book_key}: {total_lines} cola "
+        f"-> v1-teamim / v1-eng-interlinear / v1-eng-gloss / v1-translit"
+    )
 
 
 def main():

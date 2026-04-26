@@ -271,10 +271,16 @@
     padding-inline-start: var(--wrap-indent);
   }
 
-  /* === HEBREW + ENGLISH TEXT === */
-  /* .he and .en each carry their own direction and text-align so they
-     render correctly side-by-side regardless of which display mode is
-     active. .line is direction-neutral. */
+  /* === FOUR-LAYER TEXT === */
+  /* Per-orthographic-word spans across all four layers. Each Hebrew word
+     gets a translit unit, an interlinear unit, and (collectively) a smooth
+     English gloss line. Maqqef-joined Hebrew words render adjacent (no
+     whitespace between source spans); their corresponding translit and
+     interlinear units carry .joined to render a tighter dot connector
+     instead of the standard arrow.
+     Layers default hidden; body.show-{he,translit,inter,gloss} opt them in. */
+  .he, .translit, .en-inter, .en-gloss { display: none; }
+
   .he {
     font-family: 'SBL Hebrew', 'Ezra SIL', 'Taamey Frank CLM', 'Noto Serif Hebrew', 'David Libre', 'Times New Roman', serif;
     font-size: var(--he-font-size);
@@ -283,38 +289,93 @@
     text-align: right;
   }
   .verse-num {
-    /* Verse numbers stay LTR (Latin digits with colon). */
     direction: ltr;
     unicode-bidi: isolate;
   }
 
-  /* === DUAL-TEXT DISPLAY MODES === */
-  /* Default: Hebrew only. */
-  /* English flows RTL at the word level so each English word lines up
-     spatially with its Hebrew counterpart (word-1 of both lands on the
-     right edge). Letters within each word stay LTR — bidi-override
-     reorders words but is atomic at the character level for Latin script.
-     Right-aligned to share the right margin with Hebrew. */
-  .en {
-    display: none;
-    font-family: Literata, Georgia, serif;
-    font-size: var(--en-font-size);
-    direction: rtl;
-    unicode-bidi: bidi-override;
-    text-align: right;
+  /* Translit + Interlinear: per-word spans flowed RTL via flex row-reverse
+     so word 1 lands at the right under Hebrew word 1, word 2 to its left,
+     etc. Each .w stays LTR internally so letters render normally. */
+  .translit, .en-inter {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 2px;
   }
-  /* Hebrew-only (default): .he block, no .en */
-  .he { display: block; }
-  /* English-only mode */
-  body.show-english .he { display: none; }
-  body.show-english .en { display: block; }
-  /* Both: Hebrew on top right-aligned, English under it left-aligned dimmed italic */
-  body.show-both .he { display: block; }
-  body.show-both .en { display: block; font-style: italic; color: var(--text-dim); margin-top: 4px; }
+  .translit {
+    font-family: Literata, Georgia, serif;
+    font-size: 0.62em;
+    color: var(--text-dim);
+    font-style: italic;
+  }
+  .en-inter {
+    font-family: Literata, Georgia, serif;
+    font-size: 0.62em;
+    color: var(--text-dim);
+  }
+  .translit .w, .en-inter .w {
+    direction: ltr;
+    unicode-bidi: isolate;
+  }
+  /* Arrow between consecutive words signals reading direction (RTL) and
+     reduces cognitive load. The :not(:last-child) skips the source-last
+     word (visually leftmost) which has no following neighbor.
+     ::before sits at the word's left edge — in row-reverse layout that
+     left edge faces the next word in source order, so the arrow lands in
+     the correct gap. */
+  .translit .w:not(:last-child)::before,
+  .en-inter .w:not(:last-child)::before {
+    content: "←";
+    color: var(--text-faint);
+    margin: 0 0.5em;
+    font-style: normal;
+  }
+  /* Maqqef-joined: tighter dot connector instead of the normal arrow. */
+  .translit .w.joined:not(:last-child)::before,
+  .en-inter .w.joined:not(:last-child)::before {
+    content: "·";
+    margin: 0 0.25em;
+  }
 
-  /* Niqqud and te'amim toggles: deferred. Combining marks require Unicode
-     filtering at render time rather than pure CSS hiding. To be added in
-     a later session. */
+  .en-gloss {
+    font-family: Literata, Georgia, serif;
+    font-size: 0.78em;
+    color: var(--text-dim);
+    direction: ltr;
+    unicode-bidi: isolate;
+    text-align: left;
+    font-style: italic;
+    margin-top: 6px;
+  }
+
+  body.show-he       .he       { display: block; }
+  body.show-translit .translit { display: flex; }
+  body.show-inter    .en-inter { display: flex; }
+  body.show-gloss    .en-gloss { display: block; }
+
+  /* === LAYER PILLBOX (in settings panel) === */
+  .pill-row {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+  .pill {
+    background: rgba(124, 175, 194, 0.08);
+    color: var(--text);
+    border: 1px solid rgba(124, 175, 194, 0.25);
+    border-radius: 999px;
+    padding: 5px 12px;
+    font: 500 0.78em -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    cursor: pointer;
+    transition: all 0.15s;
+    user-select: none;
+  }
+  .pill:hover { background: rgba(124, 175, 194, 0.16); }
+  .pill.active {
+    background: rgba(124, 175, 194, 0.32);
+    color: var(--accent);
+    border-color: var(--accent);
+  }
 
   /* === PUNCTUATION (hidden by default — editorial, not original) === */
   .punct {
@@ -1125,12 +1186,13 @@
     </div>
   </div>
   <div style="margin-top:8px; padding-top:8px; border-top:1px solid var(--border);">
-    <div style="font-size:0.78em; color:var(--text-dim); margin-bottom:6px; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">Display</div>
-    <select id="setting-display" onchange="setDisplayMode(this.value)" style="width:100%; padding:6px 8px; background:var(--bg); color:var(--text); border:1px solid var(--border); border-radius:6px; font-size:0.82em; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; cursor:pointer; outline:none;">
-      <option value="greek">Hebrew</option>
-      <option value="english">English</option>
-      <option value="both">Both</option>
-    </select>
+    <div style="font-size:0.78em; color:var(--text-dim); margin-bottom:6px; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">Layers</div>
+    <div class="pill-row">
+      <button class="pill" data-layer="he"       onclick="toggleLayer(this)">Hebrew</button>
+      <button class="pill" data-layer="translit" onclick="toggleLayer(this)">Translit</button>
+      <button class="pill" data-layer="inter"    onclick="toggleLayer(this)">Interlinear</button>
+      <button class="pill" data-layer="gloss"    onclick="toggleLayer(this)">Gloss</button>
+    </div>
   </div>
   <div style="margin-top:8px; padding-top:8px; border-top:1px solid var(--border);">
     <div style="display:flex; align-items:center; justify-content:space-between;">
@@ -1651,27 +1713,41 @@ function setTextSize(size) {
   });
 }
 
-function setDisplayMode(mode) {
-  document.body.classList.remove('show-english', 'show-both');
-  if (mode === 'english') document.body.classList.add('show-english');
-  else if (mode === 'both') document.body.classList.add('show-both');
-  localStorage.setItem('tanakh-display-mode', mode);
-  // Update select element to match
-  const sel = document.getElementById('setting-display');
-  if (sel) sel.value = mode;
+// Four independent layer toggles: Hebrew / Translit / Interlinear / Gloss.
+// Each maps to a body class (show-*) and a localStorage key (tanakh-show-*).
+// Defaults: Hebrew on, Gloss on, others off — matches the reading-vs-study
+// split in the four-layer mockup.
+const LAYER_DEFAULTS = { he: true, translit: false, inter: false, gloss: true };
+
+function setLayer(layer, on) {
+  const cls = 'show-' + layer;
+  document.body.classList.toggle(cls, on);
+  localStorage.setItem('tanakh-show-' + layer, on ? '1' : '0');
+  const btn = document.querySelector('.pill[data-layer="' + layer + '"]');
+  if (btn) btn.classList.toggle('active', on);
+}
+
+function toggleLayer(btn) {
+  const layer = btn.dataset.layer;
+  const on = !btn.classList.contains('active');
+  setLayer(layer, on);
 }
 
 function loadSettings() {
-  const verses = localStorage.getItem('tanakh-show-verses') !== '0'; // default ON
+  const verses = localStorage.getItem('tanakh-show-verses') !== '0';
   const versesEl = document.getElementById('setting-verses');
   if (versesEl) versesEl.checked = verses;
   document.body.classList.toggle('hide-verse-nums', !verses);
-  // Load text size
+
   const savedSize = localStorage.getItem('tanakh-text-size') || 'medium';
   setTextSize(savedSize);
-  // Load display mode (default 'greek' = Hebrew-only in this project)
-  const savedDisplay = localStorage.getItem('tanakh-display-mode') || 'greek';
-  setDisplayMode(savedDisplay);
+
+  // Load each layer toggle from localStorage (or default)
+  for (const layer of Object.keys(LAYER_DEFAULTS)) {
+    const stored = localStorage.getItem('tanakh-show-' + layer);
+    const on = stored === null ? LAYER_DEFAULTS[layer] : stored === '1';
+    setLayer(layer, on);
+  }
 }
 
 // --- Search (Boolean query parser + cross-book index) ---
