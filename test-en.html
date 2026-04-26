@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+<meta charset="UTF-8">
+<title>EN test</title>
+<style>
+  :root {
+    --line-height: 2.5;
+    --font-size: 28px;
+    --he-font-size: 1em;
+    --en-font-size: 0.7em;
+    --bg: #1c1f24;
+    --text: #d4d0c8;
+    --text-dim: #8899aa;
+    --text-faint: #556;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: Literata, Georgia, serif;
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    max-width: 42em;
+    margin: 0 auto;
+    padding: 1em;
+  }
+  .verse { margin-bottom: 8px; }
+  .verse-num { display: block; font-size: 0.6em; color: var(--text-faint); }
+  .line { display: block; }
+  .he {
+    font-family: 'SBL Hebrew', 'Ezra SIL', 'Noto Serif Hebrew', serif;
+    font-size: var(--he-font-size);
+    direction: rtl;
+    unicode-bidi: isolate;
+    text-align: right;
+    display: block;
+  }
+  .en {
+    display: none;
+    font-family: Literata, Georgia, serif;
+    font-size: var(--en-font-size);
+    direction: ltr;
+    unicode-bidi: isolate;
+    text-align: left;
+  }
+  body.show-both .he { display: block; }
+  body.show-both .en { display: block; font-style: italic; color: var(--text-dim); margin-top: 4px; }
+
+  .debug-banner {
+    position: fixed; top: 0; left: 0; right: 0;
+    background: yellow; color: black; padding: 8px;
+    font-family: monospace; font-size: 14px; z-index: 9999;
+  }
+</style>
+</head>
+<body class="show-both">
+<div class="debug-banner">If you see this, the page loaded. Body class = "show-both". You SHOULD see English under each Hebrew below.</div>
+<div style="margin-top: 60px;">
+  <div class="verse">
+    <span class="verse-num">1:1</span>
+    <span class="line">
+      <span class="he">וַֽיְהִי֙ דְּבַר־יְהוָ֔ה</span>
+      <span class="en">and it came [the] word of Yahweh</span>
+    </span>
+    <span class="line">
+      <span class="he">אֶל־יוֹנָ֥ה בֶן־אֲמִתַּ֖י</span>
+      <span class="en">to Jonah [the] son of Amittai</span>
+    </span>
+    <span class="line">
+      <span class="he">לֵאמֹֽר׃</span>
+      <span class="en">saying</span>
+    </span>
+  </div>
+</div>
+</body>
+</html>
