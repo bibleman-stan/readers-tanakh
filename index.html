@@ -1719,10 +1719,12 @@ function setTextSize(size) {
 // split in the four-layer mockup.
 const LAYER_DEFAULTS = { he: true, translit: false, inter: false, gloss: true };
 
-function setLayer(layer, on) {
+function setLayer(layer, on, persist) {
   const cls = 'show-' + layer;
   document.body.classList.toggle(cls, on);
-  localStorage.setItem('tanakh-show-' + layer, on ? '1' : '0');
+  if (persist !== false) {
+    localStorage.setItem('tanakh-show-' + layer, on ? '1' : '0');
+  }
   const btn = document.querySelector('.pill[data-layer="' + layer + '"]');
   if (btn) btn.classList.toggle('active', on);
 }
@@ -1730,7 +1732,15 @@ function setLayer(layer, on) {
 function toggleLayer(btn) {
   const layer = btn.dataset.layer;
   const on = !btn.classList.contains('active');
-  setLayer(layer, on);
+  // Don't allow turning off the last visible layer — leaves the reader
+  // looking blank ("did I break something?").
+  if (!on) {
+    const visibleLayers = Object.keys(LAYER_DEFAULTS).filter(
+      k => document.body.classList.contains('show-' + k)
+    );
+    if (visibleLayers.length <= 1) return;  // refuse to turn off the only one
+  }
+  setLayer(layer, on, true);
 }
 
 function loadSettings() {
@@ -1742,11 +1752,13 @@ function loadSettings() {
   const savedSize = localStorage.getItem('tanakh-text-size') || 'medium';
   setTextSize(savedSize);
 
-  // Load each layer toggle from localStorage (or default)
+  // Load each layer toggle from localStorage (or default). Don't re-persist
+  // defaults — that would lock returning users out of any future default
+  // change.
   for (const layer of Object.keys(LAYER_DEFAULTS)) {
     const stored = localStorage.getItem('tanakh-show-' + layer);
     const on = stored === null ? LAYER_DEFAULTS[layer] : stored === '1';
-    setLayer(layer, on);
+    setLayer(layer, on, false);
   }
 }
 
@@ -1946,7 +1958,11 @@ async function buildSearchIndex() {
         let enText = '';
         for (const line of lines) {
           const heSpan = line.querySelector('.he');
-          const enSpan = line.querySelector('.en');
+          // The English-side selector was '.en' under the old two-layer
+          // design. The four-layer schema uses '.en-gloss' (smooth gloss)
+          // for searchable English. Querying '.en' returned nothing and
+          // silently emptied entry.enText for every verse.
+          const enSpan = line.querySelector('.en-gloss');
           if (heSpan) {
             const clone = heSpan.cloneNode(true);
             const puncts = clone.querySelectorAll('.punct');
@@ -2024,8 +2040,8 @@ function openSearch() {
   const input = document.getElementById('search-input');
   input.value = '';
   // Set placeholder based on display mode
-  const dm = localStorage.getItem('tanakh-display-mode') || 'greek';
-  input.placeholder = dm === 'english' ? 'Search English text...' : 'Search Hebrew text...';
+  const dm = (document.body.classList.contains('show-gloss') ? 'gloss' : 'hebrew');
+  input.placeholder = dm === 'gloss' ? 'Search English text...' : 'Search Hebrew text...';
   input.focus();
   document.getElementById('search-status').textContent = '';
   document.getElementById('search-results').innerHTML = '';
@@ -2440,8 +2456,8 @@ function performSearch(query) {
   }
 
   const hits = [];
-  const displayMode = localStorage.getItem('tanakh-display-mode') || 'greek';
-  const searchEnglish = (displayMode === 'english');
+  const displayMode = (document.body.classList.contains('show-gloss') ? 'gloss' : 'hebrew');
+  const searchEnglish = (displayMode === 'gloss');
   const corpusAllowed = getCorpusAllowedBooks();
 
   for (const entry of searchIndex) {
@@ -2659,8 +2675,8 @@ function renderFilteredResults() {
     statusEl.textContent = totalCount + ' verse' + (totalCount !== 1 ? 's' : '') + ' found' + filterLabel;
   }
 
-  const displayMode = localStorage.getItem('tanakh-display-mode') || 'greek';
-  const searchEnglish = (displayMode === 'english');
+  const displayMode = (document.body.classList.contains('show-gloss') ? 'gloss' : 'hebrew');
+  const searchEnglish = (displayMode === 'gloss');
 
   const shown = Math.min(totalCount, displayLimit);
   for (let i = 0; i < shown; i++) {
