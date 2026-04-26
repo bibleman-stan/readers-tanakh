@@ -1647,6 +1647,7 @@ function setDisplayMode(mode) {
   document.body.classList.remove('show-english', 'show-both');
   if (mode === 'english') document.body.classList.add('show-english');
   else if (mode === 'both') document.body.classList.add('show-both');
+  updateDebugBanner();
   localStorage.setItem('gnt-display-mode', mode);
   // Update select element to match
   const sel = document.getElementById('setting-display');
@@ -2952,9 +2953,32 @@ window.addEventListener('hashchange', () => {
   }
 });
 
+// Persistent debug banner so we can see live state without DevTools.
+// Shows: body class, count of .en spans in DOM, computed display of first .en.
+function updateDebugBanner() {
+  let el = document.getElementById('debug-banner');
+  if (!el) {
+    el = document.createElement('div');
+    el.id = 'debug-banner';
+    el.style.cssText = 'position:fixed;bottom:0;left:0;right:0;background:yellow;color:black;padding:6px 12px;font:12px monospace;z-index:99999;text-align:left;';
+    document.body.appendChild(el);
+  }
+  const enSpans = document.querySelectorAll('.en');
+  const firstEn = enSpans[0];
+  const computedDisplay = firstEn ? getComputedStyle(firstEn).display : 'no .en in DOM';
+  const computedColor = firstEn ? getComputedStyle(firstEn).color : '-';
+  el.textContent = `body.class="${document.body.className}" | .en count=${enSpans.length} | first .en display=${computedDisplay} color=${computedColor}`;
+}
+// Update banner whenever DOM changes (chapter loads).
+const _debugObserver = new MutationObserver(updateDebugBanner);
+document.addEventListener('DOMContentLoaded', () => {
+  _debugObserver.observe(document.body, { childList: true, subtree: true });
+});
+
 (function init() {
   loadSettings();
   buildLandingBooks();
+  setTimeout(updateDebugBanner, 200);
   const { book, chapter, verse } = parseHash();
   if (book === null) {
     showLanding();
