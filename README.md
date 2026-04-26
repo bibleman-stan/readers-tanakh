@@ -4,32 +4,27 @@
 [![Code: MIT](https://img.shields.io/badge/Code-MIT-blue.svg)](LICENSE)
 [![Live](https://img.shields.io/badge/Live-tanakh--reader.com-blue.svg)](https://tanakh-reader.com)
 
-A colometric reading edition of the Hebrew Bible. The Masoretic Text is reformatted into **sense-lines (cola)** — each line one atomic thought, one image, one breath unit, motivated by Hebrew grammatical and prosodic structure. The formatting recovers compositional architecture that prose paragraphs hide.
+A colometric reading edition of the Hebrew Bible. The Masoretic Text is reformatted into **sense-lines (cola)** — each line one atomic thought, motivated by Hebrew grammatical and prosodic structure. The formatting recovers compositional architecture that prose paragraphs hide.
 
 **In progress** — see *Project Stage* below.
 
 ## The Gap This Fills
 
-Colometric study of the Hebrew Bible has a deep tradition (Lowth 1753; Kugel 1981; Berlin 1985; Dobbs-Allsopp 2015) and the Masoretes themselves encoded a hierarchical sense-unit system in the **te'amim** (cantillation accents) over a thousand years ago. Modern critical editions (BHS, BHQ) lay out poetry in sense-lines but leave prose in paragraphs and apply editorial line-breaking inconsistently. No complete, freely-licensed, web-native reading edition has been produced that takes the Masoretic prosodic system as its prior, applies consistent override discipline, and presents the result for oral and devotional reading.
+Colometric study of the Hebrew Bible has a deep tradition (Lowth 1753; Kugel 1981; Berlin 1985; Dobbs-Allsopp 2015) and the Masoretes themselves encoded a hierarchical sense-unit system in the **te'amim** (cantillation accents) over a thousand years ago. Modern critical editions (BHS, BHQ) lay out poetry in sense-lines but leave prose in paragraphs and apply editorial line-breaking inconsistently. No complete, freely-licensed, web-native reading edition has been produced that treats the te'amim as its most important evidence about how the medieval Jewish reading tradition understood the text's structure, applies consistent atomic-thought criteria to every editorial line-break decision, and presents the result for oral and devotional reading.
 
 This project provides that edition.
 
 ## Method
 
-The method has two foundations:
+Every editorial sense-line in this edition is an atomic propositional unit: it contains one complete thought, not merely a grammatically convenient fragment. The Tiberian Masoretic cantillation accents — the **te'amim** (~9th–10th c. CE) — are the most important single piece of evidence about how the medieval Jewish reading tradition understood the text's structure. The disjunctive accent hierarchy (and a separate system for the poetic books *Sifrei Emet* — Psalms, Proverbs, and Job 3:1–42:6) supplies the machine-generated first draft of every chapter's cola. But the te'amim are evidence, not authority: they corroborate editorial decisions; they do not determine them. Where accent structure and atomic-thought analysis converge — roughly 70–80% of the time — the line break is straightforward. Where they diverge, atomic thought prevails.
 
-1. **Te'amim-prior.** The disjunctive cantillation accents form a four-tier prosodic hierarchy that already encodes Masoretic sense-unit boundaries. The poetic books *Sifrei Emet* — Psalms, Proverbs, and Job 3:1–42:6 — use a separate accent system. Both are parsed and used as the structural prior for line breaks.
+Each editorial line-break decision is positively justified: the line stands because it contains an atomic thought. Three criteria apply:
 
-2. **Four override criteria, applied with burden of proof.** Where editorial judgment departs from the accents, the departure must be warranted by at least one of:
+- **Atomic thought** — the line is one complete propositional unit
+- **Single image** — where the thought is imagistic, one mental picture per line
+- **Hebrew syntax** — the break falls at a Hebrew grammatical joint
 
-   - **Atomic thought** — the line contains one complete propositional unit
-   - **Single image** — one mental picture per line
-   - **Breath unit** — a natural pause boundary for oral delivery
-   - **Hebrew syntax** — the break falls at a Hebrew grammatical joint
-
-   An accent disagreement is a flag for review, not a license to break.
-
-The methodology draws on William Wickes's foundational work on the accent systems (1881, 1887), Israel Yeivin's *Introduction to the Tiberian Masorah* (1980), and modern colometric scholarship.
+Breath is not a separate criterion: the te'amim are themselves the chant-breath record of the Masoretic reading tradition, so treating breath independently would double-count that evidence. The methodology draws on William Wickes's foundational work on the accent systems (1881, 1887), Israel Yeivin's *Introduction to the Tiberian Masorah* (1980), and modern colometric scholarship.
 
 ## Structural English Gloss (planned)
 

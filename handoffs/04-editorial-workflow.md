@@ -31,7 +31,7 @@ Open the v1-teamim file and the v0-prose file side-by-side. For each chapter, pr
 
 **Editorial moves allowed:**
 
-- **Override an accent break** — e.g., the parser broke at a tifcha that the editor judges does not warrant a colon boundary. The override must cite which of the four criteria justifies the merge.
+- **Merge an accent break** — e.g., the parser broke at a tifcha that the editor judges does not warrant a colon boundary. Each editorial line break must positively justify itself as containing an atomic thought, citing which of the three editorial criteria (atomic thought, single image, Hebrew syntax) and any relevant structural justification (per colometry-canon.md §1) supports the break. Te'amim agreement or disagreement is documented as evidence.
 - **Insert a non-accent break** — e.g., a long colon contains two atomic thoughts that the accent system left fused. The insertion must cite which criterion warrants the additional break.
 - **Adjust whitespace and verse-number formatting** for readability.
 
@@ -56,7 +56,7 @@ PYTHONIOENCODING=utf-8 py -3 scripts/build_books.py --book jonah
 Run validators in `validators/`:
 
 - **Layer 1 (Hebrew break-legality)** — checks for syntactic patterns that should not be split (e.g., maqqef-joined words; preposition + bound noun; construct chains kept together).
-- **Layer 3 (colometry)** — checks for methodology compliance (every line either accent-induced or with documented override; no orphaned lines; balanced colon lengths within reason).
+- **Layer 3 (colometry)** — checks for methodology compliance (every line positively justified as an atomic thought per canon §1; no orphaned lines; balanced colon lengths within reason).
 
 Validators report issues as candidates for review, not as automatic rewrites.
 
@@ -82,15 +82,15 @@ When a recurring colometric error class is identified across multiple books, the
 
 This pattern is the default for systematic cleanup once the corpus is large enough to make per-chapter editing inefficient. For the MVP and through the first complete book, per-chapter editing is the primary mode.
 
-## Override Tracking
+## Divergence Tracking
 
-Every override of an accent-induced break should leave a trail. The simplest convention:
+Every divergence from the v1-teamim baseline should leave a trail. The simplest convention:
 
-- The v4-editorial file itself is the trail — comparing v1-teamim against v4-editorial reveals every override
-- A periodic sweep produces an "override census": count of overrides per book, per chapter, per criterion-invoked
-- Override hot-spots (chapters with unusually high override rates) are candidates for canon revision — either the criteria need refinement, or the te'amim parser is producing systematic noise
+- The v4-editorial file itself is the trail — comparing v1-teamim against v4-editorial reveals every divergence (merges of accent breaks and splits not in v1)
+- A periodic sweep produces a "divergence census": count of divergences per book, per chapter, per criterion-invoked
+- Divergence hot-spots (chapters with unusually high divergence rates) are candidates for canon revision — either the criteria need refinement, or the te'amim parser is producing systematic noise
 
-Override rate is a key project metric. A v4-editorial that overrides 50%+ of accent breaks suggests the te'amim-prior commitment isn't being honored. A v4-editorial that overrides 0% suggests the editorial pass isn't adding value.
+Divergence rate from v1-teamim is a key diagnostic metric. A v4-editorial that diverges from te'amim breaks at >50% suggests either (a) the v1-teamim baseline is over-fragmenting via tifcha-as-servant (canon Rule H11) and the editor is correctly merging back, or (b) the editor's atomic-thought criterion is firing too aggressively and warrants review for canon compliance. Both cases are diagnostic, not failures per se — the te'amim are evidence, not authority. A v4-editorial that diverges 0% from v1-teamim suggests the editorial pass isn't adding value.
 
 ---
 

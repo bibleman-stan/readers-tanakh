@@ -6,13 +6,17 @@ Read this file completely before doing anything in this repo. It is your orienta
 
 ## What This Project Is
 
-A colometric reading edition of the Hebrew Bible (Tanakh). The Masoretic Text is reformatted from standard prose paragraphs into **sense-lines (cola)** — each line a natural breath unit based on Hebrew prosodic and grammatical structure, designed for oral delivery and comprehension.
+A colometric reading edition of the Hebrew Bible (Tanakh). The Masoretic Text is reformatted from standard prose paragraphs into **sense-lines (cola)** — each line a grammatically and semantically self-contained unit, designed for oral delivery and comprehension.
 
-The methodology has two foundations:
+The full methodology is at [`private/01-method/colometry-canon.md`](private/01-method/colometry-canon.md). Read it before any methodology-touching work.
 
-1. **The te'amim (cantillation accents) are the structural prior.** The disjunctive accents form a four-tier hierarchy that already encodes Masoretic sense-unit boundaries. Two parsers are required: one for the prose accent system (used by 21 books) and one for the *Sifrei Emet* poetic accent system (Psalms, Proverbs, and Job 3:1–42:6).
+The methodology rests on three forces operating simultaneously:
 
-2. **Four override criteria, applied with burden of proof.** Departures from accent-induced breaks must be warranted by atomic-thought, single-image, breath-unit, or Hebrew-syntax considerations. An accent disagreement is a flag, not a license.
+- **Generative** — atomic thought (one proposition per colon) drives line creation; five closed-list structural patterns justify breaks.
+- **Subtractive** — Hebrew syntax integrity, complement integrity, and formula integrity trigger merges; four closed-list merge-overrides govern exceptions.
+- **Diagnostic** — single image acts as tiebreaker when generative and subtractive forces are in tension.
+
+The te'amim (cantillation accents) are **the most important single piece of evidence** — they preserve roughly a millennium of expert Masoretic reading tradition (Tiberian, ~9th–10th c. CE) and form the v1-teamim baseline that editors revise from. The disjunctive accent hierarchy requires two parsers: one for the prose accent system (21 books) and one for the *Sifrei Emet* system (Psalms, Proverbs, Job 3:1–42:6). But the te'amim are evidence, not authority; any editorial overlay (te'amim, sof pasuq, paseq, niqqud, versification) is evidence that informs the editor's judgment, not a break-licensing rule.
 
 - **Repo:** github.com/bibleman-stan/readers-tanakh (public)
 - **Live site:** tanakh-reader.com (planned; domain secured, GitHub Pages not yet configured)
@@ -122,13 +126,15 @@ Multiple free Hebrew-text editions are vendored in `research/` (gitignored): STE
 
 ---
 
-## Te'amim-Prior Discipline
+## Te'amim as Evidence
 
-The te'amim are the project's spine. Two operating rules:
+The te'amim are the editor's starting draft, not the editor's authority. Operating rules:
 
-1. **Every editorial line break should be either (a) accent-induced or (b) explicitly justified as an override.** A `v4-editorial/` line break that matches no disjunctive accent and has no documented override warrant is a defect.
+1. **The v1-teamim layer is the baseline.** Every editorial decision in `v4-editorial/` starts from what the accent hierarchy produces. Departing from it requires a documented reason — which of the three forces (generative, subtractive, diagnostic) is doing the work and why.
 
-2. **Override warrants live in the canon.** The four criteria (atomic thought, single image, breath unit, Hebrew syntax) are not free-floating intuitions — each override should cite which criterion is invoked and why the accent system is wrong here. The canon documents the recurring override patterns as they're discovered.
+2. **Three criteria, not four.** The criteria are atomic thought, single image, and Hebrew syntax. Breath is not a criterion — the te'amim are literally the historical record of Masoretic cantorial phrasing; if breath were a valid prior, the te'amim would encode it perfectly by definition. Both sibling projects (empirical retirement, 2026) confirmed zero cases where breath was the sole deciding factor.
+
+3. **No overlay has deterministic force.** Te'amim, sof pasuq, paseq, niqqud, versification, and punctuation are all evidence. None license a break by themselves.
 
 This is the project's principal differentiator from prior critical editions and the source of its methodological defensibility.
 
@@ -176,11 +182,11 @@ When dispatching subagents via the Agent tool, match model to task complexity. S
 - Makes all final editorial decisions on line breaks
 - Reviews all proposed changes
 - Pushes to GitHub
-- Has final say on all colometric and te'amim-override decisions
+- Has final say on all colometric and te'amim-evidence decisions
 - Decides which books / chapters to work on next
 
 **Claude Code:**
-- Proposes line-break revisions with rationale, citing te'amim and override criteria
+- Proposes line-break revisions with rationale, citing te'amim and the three editorial criteria (atomic thought, single image, Hebrew syntax)
 - Builds and maintains tooling (scripts, build pipeline, web app)
 - Maintains documentation and handoffs
 - Quantitative analysis (colon counts, accent-pattern detection, override-rate tracking)

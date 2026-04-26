@@ -40,7 +40,7 @@ Files created this session:
 Decisions locked in this session:
 - Source text: multi-source vendoring into `research/`. STEPBible TAHOT primary (feeds `v0-prose/`); OSHB and UXLC as Leningrad-tradition transcription cross-checks; MAM as Aleppo-tradition reference (not adopted as base). All free-licensed.
 - Textual posture: this is a colometric reading edition based on a single textual tradition (Tiberian MT, Leningrad). LXX, Dead Sea Scrolls, Samaritan Pentateuch, Targums, Peshitta, Vulgate explicitly out of scope. Mirrors the sibling Greek edition's posture of inheriting an established text and not relitigating textual decisions.
-- Methodology: te'amim-prior with four-criteria override discipline (burden-of-proof framing)
+- Methodology: atomic thought is the prior; te'amim are evidence + starting draft, not authority. Three structural criteria (atomic thought, single image, Hebrew syntax). See colometry-canon.md for full architecture.
 - Versification: Hebrew primary, Christian crosswalk in URL aliases and metadata
 - Book order: TaNaK (Torah / Nevi'im / Ketuvim)
 - English layer: structural glosses, deferred behind Hebrew MVP

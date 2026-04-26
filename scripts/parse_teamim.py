@@ -1,9 +1,10 @@
 """
-parse_teamim.py - Te'amim-driven cola generator with four-layer outputs.
+parse_teamim.py - Te'amim-driven baseline cola generator (starting draft for v4-editorial).
 
 Reads v0-prose Hebrew + v0-eng-baseline English + v0-translit-baseline
 translit in lockstep. Splits at te'amim cola boundaries derived from the
-Hebrew accents. Emits four parallel v1 chapter files per book:
+Hebrew accents. Emits four parallel v1 chapter files per book as a starting
+draft for editorial refinement:
 
   v1-teamim/            Hebrew cola (one cola per line; prosodic-words
                         space-separated; orthographic-word boundaries within
@@ -17,6 +18,14 @@ Hebrew accents. Emits four parallel v1 chapter files per book:
                         prefixed with "toward")
   v1-translit/          Per-orthographic-word translit (` | ` separator,
                         modern Israeli style)
+
+METHODOLOGICAL NOTE: The te'amim (cantillation accents) are EVIDENCE of the
+Masoretic tradition's structural understanding, not authority for line-break
+decisions. v1-teamim is a fast baseline that avoids blank-page work; v4-editorial
+freely adds, removes, or merges line breaks relative to v1-teamim per the
+colometry canon's atomic-thought and Hebrew-syntax criteria. See
+private/01-method/colometry-canon.md §1 "The Te'amim Are Not a Structural Prior"
+and Rule H8 "Te'amim as Evidence" for canonical framing.
 
 Two accent systems: prose (21 books) and Sifrei Emet (Pss/Prov/poetic Job).
 Per-book registry declares which chapters route through the poetic parser.
@@ -42,22 +51,36 @@ V1_TRANSLIT_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v1-translit")
 ENG_WORD_SEP = " | "  # must match ingest_tahot.py
 MAQQEF = "־"
 
-# Tier-1/2 disjunctives — prose (21 books)
+# Tier-1/2 disjunctives — prose (21 books).
+# NOTE: These are draft-generation heuristics for the v1-teamim baseline,
+# not canon commitments. v4-editorial applies the colometry canon to refine
+# breaks relative to this v1 output.
 PROSE_BREAKERS = {
     "֑",  # ETNAHTA
     "֒",  # SEGOL (segolta)
     "֔",  # ZAQEF QATAN
     "֕",  # ZAQEF GADOL
-    "֖",  # TIPEHA
+    "֖",  # TIPEHA (see TODO below)
 }
 
-# Tier-1/2 disjunctives — Sifrei Emet (Pss / Prov / poetic Job)
+# Tier-1/2 disjunctives — Sifrei Emet (Pss / Prov / poetic Job).
+# NOTE: Same draft-heuristic caveat as PROSE_BREAKERS.
 POETIC_BREAKERS = {
     "֑",  # ETNAHTA
     "֫",  # OLE (component of oleh ve-yored)
     "֭",  # DEHI
     "֗",  # REVIA (revia mugrash in poetic position)
 }
+
+# TODO(canon-2026-04-26): Tifcha treatment.
+# Tifcha is often a "servant of atnach" (Wickes 1887) rather than a primary
+# breaker. The current script treats tifcha as a tier-2 default breaker,
+# which over-fragments single-thought verses (canonical example: Jonah 1:1
+# producing a 3-line widow split). Rule H11 in the colometry canon raises
+# tifcha's evidence weight but doesn't override this behavior. Consider tuning
+# the parser to reduce tifcha-driven splits in short verses or within atnach
+# domains when editorial refinement patterns emerge. Do NOT change now;
+# log this for follow-up tuning once v1 → v4 editorial passes yield data.
 
 PARAGRAPH_MARKERS_RE = re.compile(r"\s+[פס]\s*$")
 VERSE_REF_RE = re.compile(r"^\d+:\d+$")
@@ -244,7 +267,9 @@ def parse_chapter(he_in, en_in, tr_in,
                 f"{ortho_count} Hebrew orthographic-words vs {len(tr_words)} translit units"
             )
 
-        # Cola boundaries are at PROSODIC-word level (te'amim sit on prosodic units)
+        # Cola boundaries (v1-teamim baseline) are at PROSODIC-word level.
+        # Te'amim sit on prosodic units; v4-editorial refines these baseline breaks
+        # per the colometry canon's atomic-thought and syntax criteria.
         boundaries = compute_cola_boundaries(he_pwords, breakers)
 
         # Map prosodic-word index -> orthographic-word start index
