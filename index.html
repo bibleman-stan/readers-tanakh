@@ -300,10 +300,10 @@
   .he { display: block; }
   /* English-only mode */
   body.show-english .he { display: none; }
-  body.show-english .en { display: block !important; color: yellow !important; outline: 1px dashed yellow; }
+  body.show-english .en { display: block; }
   /* Both: Hebrew on top right-aligned, English under it left-aligned dimmed italic */
   body.show-both .he { display: block; }
-  body.show-both .en { display: block !important; color: yellow !important; outline: 1px dashed yellow; font-style: italic; margin-top: 4px; }
+  body.show-both .en { display: block; font-style: italic; color: var(--text-dim); margin-top: 4px; }
 
   /* Niqqud and te'amim toggles: deferred. Combining marks require Unicode
      filtering at render time rather than pure CSS hiding. To be added in
@@ -1366,7 +1366,14 @@ async function loadBook(slug) {
   container.innerHTML = '';
 
   try {
-    const resp = await fetch('books/' + slug + '.html');
+    // cache: 'no-cache' forces a conditional revalidation request. Without
+    // this, Chrome serves stale book HTML from the disk cache after a
+    // rebuild — even after a hard-refresh of the page (which reloads
+    // index.html and resets bookCache, but does NOT invalidate the
+    // separately-cached fetch responses for books/*.html). For production
+    // on GitHub Pages this is essentially free: the browser sends
+    // If-Modified-Since / If-None-Match and gets a 304 when unchanged.
+    const resp = await fetch('books/' + slug + '.html', { cache: 'no-cache' });
     if (!resp.ok) throw new Error('Not found');
     const html = await resp.text();
     bookCache[slug] = html;
@@ -1640,9 +1647,6 @@ function setDisplayMode(mode) {
   document.body.classList.remove('show-english', 'show-both');
   if (mode === 'english') document.body.classList.add('show-english');
   else if (mode === 'both') document.body.classList.add('show-both');
-  // Diagnostic logging — remove once display modes are confirmed working.
-  console.log('[display-mode]', mode, 'body.classList=', document.body.className,
-              'en spans in DOM=', document.querySelectorAll('.en').length);
   localStorage.setItem('gnt-display-mode', mode);
   // Update select element to match
   const sel = document.getElementById('setting-display');
