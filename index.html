@@ -1620,12 +1620,12 @@ function closeSettings() {
 
 function togglePunct(on) {
   document.body.classList.toggle('show-punct', on);
-  localStorage.setItem('gnt-show-punct', on ? '1' : '0');
+  localStorage.setItem('tanakh-show-punct', on ? '1' : '0');
 }
 
 function toggleVerseNums(on) {
   document.body.classList.toggle('hide-verse-nums', !on);
-  localStorage.setItem('gnt-show-verses', on ? '1' : '0');
+  localStorage.setItem('tanakh-show-verses', on ? '1' : '0');
 }
 
 // --- Text size ---
@@ -1637,7 +1637,7 @@ const TEXT_SIZES = { small: '22px', medium: '28px', large: '34px' };
 
 function setTextSize(size) {
   document.documentElement.style.setProperty('--font-size', TEXT_SIZES[size]);
-  localStorage.setItem('gnt-text-size', size);
+  localStorage.setItem('tanakh-text-size', size);
   document.querySelectorAll('.size-btn').forEach(function(btn) {
     const label = btn.querySelector('.label');
     if (label) btn.classList.toggle('active', label.textContent.toLowerCase() === size);
@@ -1648,22 +1648,22 @@ function setDisplayMode(mode) {
   document.body.classList.remove('show-english', 'show-both');
   if (mode === 'english') document.body.classList.add('show-english');
   else if (mode === 'both') document.body.classList.add('show-both');
-  localStorage.setItem('gnt-display-mode', mode);
+  localStorage.setItem('tanakh-display-mode', mode);
   // Update select element to match
   const sel = document.getElementById('setting-display');
   if (sel) sel.value = mode;
 }
 
 function loadSettings() {
-  const verses = localStorage.getItem('gnt-show-verses') !== '0'; // default ON
+  const verses = localStorage.getItem('tanakh-show-verses') !== '0'; // default ON
   const versesEl = document.getElementById('setting-verses');
   if (versesEl) versesEl.checked = verses;
   document.body.classList.toggle('hide-verse-nums', !verses);
   // Load text size
-  const savedSize = localStorage.getItem('gnt-text-size') || 'medium';
+  const savedSize = localStorage.getItem('tanakh-text-size') || 'medium';
   setTextSize(savedSize);
   // Load display mode (default 'greek' = Hebrew-only in this project)
-  const savedDisplay = localStorage.getItem('gnt-display-mode') || 'greek';
+  const savedDisplay = localStorage.getItem('tanakh-display-mode') || 'greek';
   setDisplayMode(savedDisplay);
 }
 
@@ -1683,17 +1683,10 @@ let lastHits = [];
 let lastSearchQuery = '';
 let activeBook = null; // book slug (e.g. 'rom') or null for all books
 
-// --- Corpus filter groups ---
-const CORPUS_GROUPS = {
-  'synoptics': ['matt', 'mark', 'luke'],
-  'john': ['john'],
-  'luke-acts': ['luke', 'acts'],
-  'pauline': ['rom', '1cor', '2cor', 'gal', 'eph', 'phil', 'col', '1thess', '2thess', '1tim', '2tim', 'titus', 'phlm'],
-  'disputed': ['eph', 'col', '2thess', '1tim', '2tim', 'titus'],
-  'general': ['heb', 'jas', '1pet', '2pet', 'jude'],
-  'johannine': ['john', '1john', '2john', '3john', 'rev'],
-  'revelation': ['rev']
-};
+// Corpus filter groups deferred — Tanakh sections (Torah / Nevi'im / Ketuvim)
+// will populate this when more than one book ships and the corpus chips
+// are unhidden. Keep an empty object so callers don't NPE.
+const CORPUS_GROUPS = {};
 let activeCorpusFilters = new Set();
 
 function toggleCorpusFilter(el) {
@@ -1767,7 +1760,14 @@ function getCorpusAllowedBooks() {
 }
 
 function stripDiacritics(str) {
-  return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  // Strip Greek combining diacritics (U+0300-U+036F), Hebrew niqqud
+  // (U+05B0-U+05BD, U+05BF, U+05C1-U+05C2, U+05C4-U+05C7), and Hebrew te'amim
+  // (U+0591-U+05AF). Allows search to match an unpointed/unaccented Hebrew
+  // query against the fully-pointed source text.
+  return str
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f\u0591-\u05af\u05b0-\u05bd\u05bf\u05c1\u05c2\u05c4-\u05c7]/g, '')
+    .toLowerCase();
 }
 
 function escapeHtml(str) {
@@ -1777,17 +1777,10 @@ function escapeHtml(str) {
 // --- Lemma index: fetch and expand search terms ---
 
 async function loadLemmaIndex() {
-  if (lemmaIndex || lemmaIndexLoading) return;
-  lemmaIndexLoading = true;
-  try {
-    const resp = await fetch('data/lemma_index.json');
-    if (resp.ok) {
-      lemmaIndex = await resp.json();
-    }
-  } catch (e) {
-    console.error('Failed to load lemma index', e);
-  }
-  lemmaIndexLoading = false;
+  // Hebrew lemma index not yet built. The lemma-expansion search feature
+  // is dormant until Tanakh-side morphology data is in place. Stub to
+  // avoid 404s on data/lemma_index.json.
+  return;
 }
 
 // Given a diacritic-stripped search term, return all inflected forms (also stripped).
@@ -1948,7 +1941,7 @@ function openSearch() {
   const input = document.getElementById('search-input');
   input.value = '';
   // Set placeholder based on display mode
-  const dm = localStorage.getItem('gnt-display-mode') || 'greek';
+  const dm = localStorage.getItem('tanakh-display-mode') || 'greek';
   input.placeholder = dm === 'english' ? 'Search English text...' : 'Search Hebrew text...';
   input.focus();
   document.getElementById('search-status').textContent = '';
@@ -1975,7 +1968,7 @@ function openSearch() {
 // Maintain a small rolling list of recent queries that surfaces when the
 // search input is empty. Click a row to re-run the query; click the × to
 // remove just that entry.
-const RECENT_KEY = 'gnt-recent-searches';
+const RECENT_KEY = 'tanakh-recent-searches';
 const MAX_RECENT = 10;
 
 function getRecentSearches() {
@@ -2294,11 +2287,16 @@ function performSearch(query) {
 
   if (!searchIndex) {
     statusEl.innerHTML = '<div class="search-loading">Building search index...</div>';
-    // Retry after index loads
+    // Poll for the index, but bail with a clear error after 30 seconds
+    // so a buildSearchIndex failure can't deadlock the UI forever.
+    const startedAt = Date.now();
     const checkInterval = setInterval(() => {
       if (searchIndex) {
         clearInterval(checkInterval);
         performSearch(query);
+      } else if (Date.now() - startedAt > 30000) {
+        clearInterval(checkInterval);
+        statusEl.innerHTML = '<div class="search-loading" style="color:#c66;">Search index failed to build (30s timeout). Reload the page to retry.</div>';
       }
     }, 200);
     return;
@@ -2359,7 +2357,7 @@ function performSearch(query) {
   }
 
   const hits = [];
-  const displayMode = localStorage.getItem('gnt-display-mode') || 'greek';
+  const displayMode = localStorage.getItem('tanakh-display-mode') || 'greek';
   const searchEnglish = (displayMode === 'english');
   const corpusAllowed = getCorpusAllowedBooks();
 
@@ -2440,13 +2438,8 @@ function renderBookChart() {
   // Don't render a chart if only one book has hits — there's nothing to filter
   if (bookSlugs.length < 2) return;
 
-  // Maintain canonical NT book order for display
-  const orderedBooks = [
-    'matt','mark','luke','john','acts',
-    'rom','1cor','2cor','gal','eph','phil','col','1thess','2thess','1tim','2tim','titus','phlm',
-    'heb','jas','1pet','2pet','1john','2john','3john','jude','rev'
-  ];
-  const sortedSlugs = orderedBooks.filter(s => bookCounts[s] > 0);
+  // Use the live BOOK_KEYS so the chart works on whatever books are present.
+  const sortedSlugs = BOOK_KEYS.filter(s => bookCounts[s] > 0);
 
   let maxCount = 0;
   for (const slug of sortedSlugs) {
@@ -2583,7 +2576,7 @@ function renderFilteredResults() {
     statusEl.textContent = totalCount + ' verse' + (totalCount !== 1 ? 's' : '') + ' found' + filterLabel;
   }
 
-  const displayMode = localStorage.getItem('gnt-display-mode') || 'greek';
+  const displayMode = localStorage.getItem('tanakh-display-mode') || 'greek';
   const searchEnglish = (displayMode === 'english');
 
   const shown = Math.min(totalCount, displayLimit);
@@ -2808,13 +2801,22 @@ function updateFloatNav() {
 
 // --- Landing page ---
 
-const BOOK_SECTIONS = [
-  { label: 'Gospels', keys: ['matt', 'mark', 'luke', 'john'] },
-  { label: 'History', keys: ['acts'] },
-  { label: 'Pauline Epistles', keys: ['rom', '1cor', '2cor', 'gal', 'eph', 'phil', 'col', '1thess', '2thess', '1tim', '2tim', 'titus', 'phlm'] },
-  { label: 'General Epistles', keys: ['heb', 'jas', '1pet', '2pet', '1john', '2john', '3john', 'jude'] },
-  { label: 'Prophecy', keys: ['rev'] },
+// TaNaK ordering. Only books present in BOOKS render — others are
+// silently skipped, so adding a book elsewhere automatically lights it up
+// here once it joins BOOKS. This avoids the trap that the Greek-NT
+// inherited list crashed buildLandingBooks() on undefined book lookups.
+const BOOK_SECTIONS_RAW = [
+  { label: 'Torah',    keys: ['gen', 'exod', 'lev', 'num', 'deut'] },
+  { label: 'Nevi’im (Former)', keys: ['josh', 'judg', 'sam', 'kgs'] },
+  { label: 'Nevi’im (Latter)', keys: ['isa', 'jer', 'ezek', 'twelve'] },
+  { label: 'Ketuvim', keys: ['ps', 'prov', 'job', 'song', 'ruth', 'lam', 'eccl', 'esth', 'dan', 'ezra-neh', 'chr'] },
+  // 'jonah' is part of 'twelve' (Trei Asar) in the Hebrew tradition, but for
+  // the MVP it gets its own card until the Twelve are joined into one book.
+  { label: 'Jonah (MVP)', keys: ['jonah'] },
 ];
+const BOOK_SECTIONS = BOOK_SECTIONS_RAW
+  .map(s => ({ label: s.label, keys: s.keys.filter(k => BOOKS[k]) }))
+  .filter(s => s.keys.length > 0);
 
 let landingExpanded = null;
 
