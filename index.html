@@ -1366,14 +1366,15 @@ async function loadBook(slug) {
   container.innerHTML = '';
 
   try {
-    // cache: 'no-cache' forces a conditional revalidation request. Without
-    // this, Chrome serves stale book HTML from the disk cache after a
-    // rebuild — even after a hard-refresh of the page (which reloads
-    // index.html and resets bookCache, but does NOT invalidate the
-    // separately-cached fetch responses for books/*.html). For production
-    // on GitHub Pages this is essentially free: the browser sends
-    // If-Modified-Since / If-None-Match and gets a 304 when unchanged.
-    const resp = await fetch('books/' + slug + '.html', { cache: 'no-cache' });
+    // cache: 'no-store' forces a full unconditional GET every time (browser
+    // never reads from or writes to its HTTP cache for this fetch). The
+    // in-memory bookCache above provides the same-session perf benefit;
+    // the HTTP cache layer is the one that was serving stale book HTML
+    // after rebuilds, even across hard-refreshes. 'no-store' is
+    // simpler and more reliable than 'no-cache' (which still relies on
+    // conditional revalidation that can deadlock if the cached response
+    // metadata is mid-flux).
+    const resp = await fetch('books/' + slug + '.html', { cache: 'no-store' });
     if (!resp.ok) throw new Error('Not found');
     const html = await resp.text();
     bookCache[slug] = html;
