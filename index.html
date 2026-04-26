@@ -319,22 +319,35 @@
   }
   /* Arrow between consecutive words signals reading direction (RTL) and
      reduces cognitive load. The :not(:last-child) skips the source-last
-     word (visually leftmost) which has no following neighbor.
-     ::before sits at the word's left edge — in row-reverse layout that
-     left edge faces the next word in source order, so the arrow lands in
-     the correct gap. */
+     word (visually leftmost). ::before sits at the word's left edge — in
+     row-reverse layout that left edge faces the next word in source
+     order, so the arrow lands in the correct gap. Sans-serif font ensures
+     the arrow glyph renders clearly (Literata's ← is too thin); slightly
+     larger than the word itself to read as a real arrow not a dash. */
   .translit .w:not(:last-child)::before,
   .en-inter .w:not(:last-child)::before {
     content: "←";
-    color: var(--text-faint);
+    color: var(--accent);
+    opacity: 0.55;
     margin: 0 0.5em;
     font-style: normal;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 1.25em;
+    vertical-align: -0.05em;
   }
-  /* Maqqef-joined: tighter dot connector instead of the normal arrow. */
+  /* Maqqef-joined: tighter dot connector instead of the normal arrow.
+     Larger middle-dot character and sans-serif so the dot reads as
+     intentional separator, not an invisible artifact. */
   .translit .w.joined:not(:last-child)::before,
   .en-inter .w.joined:not(:last-child)::before {
     content: "·";
-    margin: 0 0.25em;
+    color: var(--accent);
+    opacity: 0.55;
+    margin: 0 0.3em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    vertical-align: -0.1em;
   }
 
   .en-gloss {
