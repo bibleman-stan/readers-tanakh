@@ -317,37 +317,29 @@
     direction: ltr;
     unicode-bidi: isolate;
   }
-  /* Arrow between consecutive words signals reading direction (RTL) and
-     reduces cognitive load. The :not(:last-child) skips the source-last
-     word (visually leftmost). ::before sits at the word's left edge — in
+  /* Arrow between consecutive words signals reading direction (RTL).
+     Kept at normal text size and dim color — a quiet visual hint, not
+     a competing element. ::before sits at the word's left edge — in
      row-reverse layout that left edge faces the next word in source
-     order, so the arrow lands in the correct gap. Sans-serif font ensures
-     the arrow glyph renders clearly (Literata's ← is too thin); slightly
-     larger than the word itself to read as a real arrow not a dash. */
+     order, so the arrow lands in the correct gap. */
   .translit .w:not(:last-child)::before,
   .en-inter .w:not(:last-child)::before {
     content: "←";
-    color: var(--accent);
-    opacity: 0.55;
-    margin: 0 0.5em;
+    color: var(--text-dim);
+    opacity: 0.5;
+    margin: 0 0.45em;
     font-style: normal;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    font-size: 1.25em;
-    vertical-align: -0.05em;
   }
-  /* Maqqef-joined: tighter dot connector instead of the normal arrow.
-     Larger middle-dot character and sans-serif so the dot reads as
-     intentional separator, not an invisible artifact. */
+  /* Maqqef-joined: middle-dot at slightly higher opacity (since it's
+     small and easy to miss) but same size as text. Tighter margin
+     than the arrow to signal the prosodic join. */
   .translit .w.joined:not(:last-child)::before,
   .en-inter .w.joined:not(:last-child)::before {
     content: "·";
-    color: var(--accent);
-    opacity: 0.55;
-    margin: 0 0.3em;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    font-size: 1.5em;
+    color: var(--text-dim);
+    opacity: 0.85;
+    margin: 0 0.25em;
     font-weight: 700;
-    vertical-align: -0.1em;
   }
 
   .en-gloss {
