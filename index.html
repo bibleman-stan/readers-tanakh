@@ -24,6 +24,11 @@
     --text: #d4d0c8;
     --text-dim: #8899aa;
     --text-faint: #556;
+    /* Four-layer reader palette — warm/cool alternation Hebrew→translit→inter→gloss */
+    --layer-he:      #d4d0c8;  /* warm off-white — primary reading text */
+    --layer-translit: #aebbc8; /* cool silver — phonetic decoder ring */
+    --layer-inter:   #d0a878;  /* warm honey — per-word semantic match */
+    --layer-gloss:   #9fb09e;  /* muted sage — fluent English destination */
     --accent: #7cafc2;
     --accent-dim: rgba(124, 175, 194, 0.12);
     --border: rgba(255,255,255,0.06);
@@ -306,6 +311,7 @@
        lines indent inward from the right edge. */
     text-indent: calc(-1 * var(--wrap-indent));
     padding-inline-start: var(--wrap-indent);
+    color: var(--layer-he);
   }
 
   /* Translit + Interlinear: per-word spans flowed RTL via flex row-reverse
@@ -332,13 +338,13 @@
      * Gloss (which uses 0.85x) so the visual hierarchy goes
      * Hebrew > Gloss > Translit/Interlinear (study aids). */
     font-size: calc(var(--english-base) * 0.78);
-    color: var(--text-dim);
+    color: var(--layer-translit);
     font-style: italic;
   }
   .en-inter {
     font-family: Literata, Georgia, serif;
     font-size: calc(var(--english-base) * 0.78);
-    color: var(--text-dim);
+    color: var(--layer-inter);
   }
   .translit .w, .en-inter .w {
     direction: ltr;
@@ -355,10 +361,9 @@
      order, so the arrow lands in the correct gap.
      Symbol-font fallback chain so the arrow / dash glyphs render even
      on systems missing them in the body font. */
-  .translit .w:not(:last-child)::before,
-  .en-inter .w:not(:last-child)::before {
+  .translit .w:not(:last-child)::before {
     content: "\2190";  /* ← LEFTWARDS ARROW */
-    color: var(--text-dim);
+    color: var(--layer-translit);
     opacity: 0.5;
     margin: 0 0.45em;
     font-style: normal;
@@ -367,19 +372,33 @@
        chars (← / ‒) we want monochrome and dim. */
     font-family: 'Segoe UI Symbol', 'Apple Symbols', 'Noto Sans Symbols', 'Noto Sans Symbols 2', sans-serif;
   }
+  .en-inter .w:not(:last-child)::before {
+    content: "\2190";  /* ← LEFTWARDS ARROW */
+    color: var(--layer-inter);
+    opacity: 0.5;
+    margin: 0 0.45em;
+    font-style: normal;
+    font-family: 'Segoe UI Symbol', 'Apple Symbols', 'Noto Sans Symbols', 'Noto Sans Symbols 2', sans-serif;
+  }
   /* Maqqef-joined: short dash sits naturally on the baseline (the
      middle-dot we used before pulled the joined word vertically out
      of line). Tighter margin than the arrow to signal the prosodic
      bond is closer than a normal word boundary. */
-  .translit .w.joined:not(:last-child)::before,
-  .en-inter .w.joined:not(:last-child)::before {
+  .translit .w.joined:not(:last-child)::before {
     content: "\2012";  /* U+2012 FIGURE DASH — baseline-friendly */
-    color: var(--text-dim);
+    color: var(--layer-translit);
     opacity: 0.6;
     margin: 0 0.2em;
     /* Symbol-only fonts. 'Apple Color Emoji' was deliberately dropped —
        its presence in the chain risks color-glyph rendering on iOS for
        chars (← / ‒) we want monochrome and dim. */
+    font-family: 'Segoe UI Symbol', 'Apple Symbols', 'Noto Sans Symbols', 'Noto Sans Symbols 2', sans-serif;
+  }
+  .en-inter .w.joined:not(:last-child)::before {
+    content: "\2012";  /* U+2012 FIGURE DASH — baseline-friendly */
+    color: var(--layer-inter);
+    opacity: 0.6;
+    margin: 0 0.2em;
     font-family: 'Segoe UI Symbol', 'Apple Symbols', 'Noto Sans Symbols', 'Noto Sans Symbols 2', sans-serif;
   }
 
@@ -389,7 +408,7 @@
        reading content, not Hebrew-column-aligned study material. Slight
        0.85x reduction so it reads as a secondary line under the Hebrew. */
     font-size: calc(var(--english-base) * 0.85);
-    color: var(--text-dim);
+    color: var(--layer-gloss);
     direction: ltr;
     unicode-bidi: isolate;
     text-align: left;
@@ -464,6 +483,13 @@
     color: var(--accent);
     border-color: var(--accent);
   }
+  /* Per-layer active-state overrides — pillbox doubles as color legend.
+     Each pill lights up in its layer's color so the toolbar signals
+     which color channel each layer uses (no separate legend needed). */
+  .pill[data-layer="he"].active       { color: var(--layer-he);       border-color: var(--layer-he);       background: rgba(212, 208, 200, 0.18); }
+  .pill[data-layer="translit"].active { color: var(--layer-translit); border-color: var(--layer-translit); background: rgba(174, 187, 200, 0.18); }
+  .pill[data-layer="inter"].active    { color: var(--layer-inter);    border-color: var(--layer-inter);    background: rgba(208, 168, 120, 0.18); }
+  .pill[data-layer="gloss"].active    { color: var(--layer-gloss);    border-color: var(--layer-gloss);    background: rgba(159, 176, 158, 0.18); }
   /* Visual feedback when toggleLayer refuses to turn off the last
      visible layer. Color flash (not horizontal translate) so the cue
      can't be clipped by the layer-bar's overflow-x: auto on edge pills. */

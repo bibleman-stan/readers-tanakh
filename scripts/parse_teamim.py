@@ -128,11 +128,49 @@ HEBREW_ADJECTIVES = {
 }
 
 _BRACKET_KEEP_RE = re.compile(r'\[([^\]]+)\]')
+_VSO_PRONOUN_RE = re.compile(r'^and (he|she|it|they)\s', re.IGNORECASE)
 
 
-def naturalize_hebrew_gloss(text):
-    """Wooden-but-legible naturalizer: see parse_teamim.py docstring."""
+def naturalize_hebrew_gloss(text, word_units=None):
+    """Wooden-but-legible naturalizer: see parse_teamim.py docstring.
+
+    word_units: optional list of per-orthographic-word gloss strings for this
+    cola (the same list used to build the interlinear row).  When provided,
+    the VSO-pronoun-drop rule can inspect the immediately-following word unit
+    rather than guessing from the joined string.
+    """
     text = _BRACKET_KEEP_RE.sub(r'\1', text)
+
+    # ---- VSO pronoun-drop (SMOOTH GLOSS ONLY) --------------------------------
+    # Hebrew wayyiqtol verbs in prose carry an implicit subject pronoun that
+    # TAHOT's interlinear exposes (e.g. "and he appointed").  When the very
+    # next per-word unit in the same cola is a nominal subject — a proper noun
+    # (capitalised word) or a definite noun phrase ("the X" / "[the] X") —
+    # the pronoun is spurious in the smooth gloss because the overt noun
+    # supplies the reference (Hebrew VSO word order: verb-subject-object).
+    # Drop "he/she/it/they" in the smooth layer; the interlinear keeps it.
+    #
+    # Rule fires only when word_units is passed and has ≥ 2 entries so that
+    # the second unit (index 1) can be inspected.  The check is:
+    #   unit[0] starts with "and (he|she|it|they) " (wayyiqtol pronoun pattern)
+    #   unit[1] (brackets stripped) starts with a capital letter (proper noun)
+    #       OR starts with "the " (definite article phrase)
+    if word_units and len(word_units) >= 2:
+        first_unit = _BRACKET_KEEP_RE.sub(r'\1', word_units[0]).strip()
+        second_unit = _BRACKET_KEEP_RE.sub(r'\1', word_units[1]).strip()
+        if _VSO_PRONOUN_RE.match(first_unit):
+            is_proper_noun = bool(second_unit) and second_unit[0].isupper()
+            is_definite = second_unit.startswith('the ') or second_unit == 'the'
+            if is_proper_noun or is_definite:
+                # Remove the spurious pronoun from the joined smooth-gloss string.
+                # Pattern: "^and (he|she|it|they) " at the start of the cola text.
+                text = re.sub(
+                    r'^and (he|she|it|they) ',
+                    'and ',
+                    text,
+                    flags=re.IGNORECASE,
+                )
+    # --------------------------------------------------------------------------
 
     # Rejoin TAHOT's hyphen-split English ("there- -fore" -> "therefore")
     text = re.sub(r'(\w+)-\s+-(\w+)', r'\1\2', text)
@@ -288,7 +326,7 @@ def parse_chapter(he_in, en_in, tr_in,
                 inter_words = en_words[oa:ob]
                 inter_cola.append(ENG_WORD_SEP.join(inter_words))
                 gloss_input = " ".join(w for w in inter_words if w)
-                gloss_cola.append(naturalize_hebrew_gloss(gloss_input))
+                gloss_cola.append(naturalize_hebrew_gloss(gloss_input, word_units=inter_words))
 
             if tr_words:
                 trans_cola.append(ENG_WORD_SEP.join(tr_words[oa:ob]))
