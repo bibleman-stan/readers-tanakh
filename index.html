@@ -300,10 +300,10 @@
   .he { display: block; }
   /* English-only mode */
   body.show-english .he { display: none; }
-  body.show-english .en { display: block; }
+  body.show-english .en { display: block !important; color: yellow !important; outline: 1px dashed yellow; }
   /* Both: Hebrew on top right-aligned, English under it left-aligned dimmed italic */
   body.show-both .he { display: block; }
-  body.show-both .en { display: block; font-style: italic; color: var(--text-dim); margin-top: 2px; }
+  body.show-both .en { display: block !important; color: yellow !important; outline: 1px dashed yellow; font-style: italic; margin-top: 4px; }
 
   /* Niqqud and te'amim toggles: deferred. Combining marks require Unicode
      filtering at render time rather than pure CSS hiding. To be added in
