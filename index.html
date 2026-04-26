@@ -339,9 +339,10 @@
 
   .en-gloss {
     font-family: Literata, Georgia, serif;
-    /* Slightly larger than translit/interlinear since gloss is the
-       fluent-reading line; still sized off the Hebrew base. */
-    font-size: calc(var(--he-base) * 0.7);
+    /* Sized off english-base, NOT he-base — gloss is fluent English
+       reading content, not Hebrew-column-aligned study material. Slight
+       0.85x reduction so it reads as a secondary line under the Hebrew. */
+    font-size: calc(var(--english-base) * 0.85);
     color: var(--text-dim);
     direction: ltr;
     unicode-bidi: isolate;
