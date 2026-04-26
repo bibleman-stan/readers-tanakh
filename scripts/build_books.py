@@ -26,8 +26,15 @@ import sys
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.dirname(SCRIPT_DIR)
+
+# Hebrew tier preference: v4-editorial (hand-edited) > v1-teamim (machine).
 V4_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v4-editorial")
 V1_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v1-teamim")
+
+# English tier preference: eng-gloss (hand-edited) > v1-eng-baseline (TAHOT-derived).
+ENG_GLOSS_DIR = os.path.join(REPO_ROOT, "data", "text-files", "eng-gloss")
+ENG_BASELINE_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v1-eng-baseline")
+
 OUTPUT_DIR = os.path.join(REPO_ROOT, "books")
 
 VERSE_REF_RE = re.compile(r"^\d+:\d+$")
@@ -83,56 +90,103 @@ def parse_chapter(filepath):
     return chapter_num, verses
 
 
-def render_chapter(chapter_num, verses, source_label):
-    out = [f'  <div class="chapter" id="ch-{chapter_num}" data-source="{source_label}">']
-    for v in verses:
+def render_chapter(chapter_num, he_verses, en_lookup, he_source, en_source):
+    """Render one chapter as HTML.
+
+    he_verses: [{ref, lines}] from the chosen Hebrew source for this chapter
+    en_lookup: {ref: [lines]} from the chosen English source for this chapter,
+               or {} if no English layer available
+    he_source / en_source: provenance strings for the data-source attributes
+    """
+    out = [
+        f'  <div class="chapter" id="ch-{chapter_num}" '
+        f'data-he-source="{he_source}" data-en-source="{en_source}">'
+    ]
+    for v in he_verses:
         ref = v["ref"]
         ch, vn = ref.split(":")
+        en_lines = en_lookup.get(ref, [])
         out.append(f'    <div class="verse" id="v-{ch}-{vn}"><span class="verse-num">{ref}</span>')
-        for line in v["lines"]:
-            escaped = html.escape(line)
-            out.append(f'      <span class="line"><span class="he">{escaped}</span></span>')
+        for i, he_line in enumerate(v["lines"]):
+            he_esc = html.escape(he_line)
+            en_esc = html.escape(en_lines[i]) if i < len(en_lines) else ""
+            if en_esc:
+                out.append(
+                    f'      <span class="line">'
+                    f'<span class="he">{he_esc}</span>'
+                    f'<span class="en">{en_esc}</span>'
+                    f'</span>'
+                )
+            else:
+                out.append(f'      <span class="line"><span class="he">{he_esc}</span></span>')
         out.append("    </div>")
     out.append("  </div>")
     return "\n".join(out)
+
+
+def _files_in(dir_path, prefix):
+    if not os.path.isdir(dir_path):
+        return set()
+    return {
+        fn for fn in os.listdir(dir_path)
+        if fn.startswith(prefix + "-") and fn.endswith(".txt")
+    }
 
 
 def build_book(book_key):
     if book_key not in BOOK_REGISTRY:
         sys.exit(f"Unknown book key: {book_key}")
     spec = BOOK_REGISTRY[book_key]
+    prefix = spec["prefix"]
 
     v4_dir = os.path.join(V4_DIR, spec["subdir"])
     v1_dir = os.path.join(V1_DIR, spec["subdir"])
+    eng_gloss_dir = os.path.join(ENG_GLOSS_DIR, spec["subdir"])
+    eng_baseline_dir = os.path.join(ENG_BASELINE_DIR, spec["subdir"])
 
-    # Discover chapters from whichever tier has them; v4 wins per chapter.
-    v4_files = set(
-        fn for fn in (os.listdir(v4_dir) if os.path.isdir(v4_dir) else [])
-        if fn.startswith(spec["prefix"] + "-") and fn.endswith(".txt")
-    )
-    v1_files = set(
-        fn for fn in (os.listdir(v1_dir) if os.path.isdir(v1_dir) else [])
-        if fn.startswith(spec["prefix"] + "-") and fn.endswith(".txt")
-    )
+    v4_files = _files_in(v4_dir, prefix)
+    v1_files = _files_in(v1_dir, prefix)
+    eng_gloss_files = _files_in(eng_gloss_dir, prefix)
+    eng_baseline_files = _files_in(eng_baseline_dir, prefix)
     all_files = sorted(v4_files | v1_files)
 
     if not all_files:
         sys.exit(f"No chapter files found for {book_key} in v4-editorial/ or v1-teamim/")
 
     fragments = []
-    v4_count = 0
-    v1_count = 0
+    counts = {"v4": 0, "v1": 0, "eng_gloss": 0, "eng_baseline": 0, "no_en": 0}
     for fn in all_files:
+        # Hebrew source (per chapter): prefer v4, fall back to v1-teamim.
         if fn in v4_files:
-            path = os.path.join(v4_dir, fn)
-            source_label = "v4-editorial"
-            v4_count += 1
+            he_path = os.path.join(v4_dir, fn)
+            he_source = "v4-editorial"
+            counts["v4"] += 1
         else:
-            path = os.path.join(v1_dir, fn)
-            source_label = "v1-teamim"
-            v1_count += 1
-        chapter_num, verses = parse_chapter(path)
-        fragments.append(render_chapter(chapter_num, verses, source_label))
+            he_path = os.path.join(v1_dir, fn)
+            he_source = "v1-teamim"
+            counts["v1"] += 1
+
+        # English source (per chapter): prefer eng-gloss, fall back to v1-eng-baseline.
+        if fn in eng_gloss_files:
+            en_path = os.path.join(eng_gloss_dir, fn)
+            en_source = "eng-gloss"
+            counts["eng_gloss"] += 1
+        elif fn in eng_baseline_files:
+            en_path = os.path.join(eng_baseline_dir, fn)
+            en_source = "v1-eng-baseline"
+            counts["eng_baseline"] += 1
+        else:
+            en_path = None
+            en_source = "none"
+            counts["no_en"] += 1
+
+        chapter_num, he_verses = parse_chapter(he_path)
+        if en_path:
+            _, en_verses = parse_chapter(en_path)
+            en_lookup = {v["ref"]: v["lines"] for v in en_verses}
+        else:
+            en_lookup = {}
+        fragments.append(render_chapter(chapter_num, he_verses, en_lookup, he_source, en_source))
 
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     out_path = os.path.join(OUTPUT_DIR, spec["out"])
@@ -140,8 +194,8 @@ def build_book(book_key):
         f.write("\n".join(fragments) + "\n")
 
     print(f"  wrote {out_path}")
-    print(f"  chapters from v4-editorial: {v4_count}")
-    print(f"  chapters from v1-teamim:    {v1_count}")
+    print(f"  Hebrew  — v4-editorial: {counts['v4']}, v1-teamim: {counts['v1']}")
+    print(f"  English — eng-gloss:    {counts['eng_gloss']}, v1-eng-baseline: {counts['eng_baseline']}, none: {counts['no_en']}")
 
 
 def main():

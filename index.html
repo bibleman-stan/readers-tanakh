@@ -269,16 +269,16 @@
     padding-inline-start: var(--wrap-indent);
   }
 
-  /* === HEBREW TEXT === */
-  /* For the Hebrew-only MVP, every .line is RTL. When the English gloss
-     layer ships, the build will mark dual-language verses so .line can
-     stay LTR-defaulted with the .he/.en spans handling per-script direction. */
-  .line { direction: rtl; }
+  /* === HEBREW + ENGLISH TEXT === */
+  /* .he and .en each carry their own direction and text-align so they
+     render correctly side-by-side regardless of which display mode is
+     active. .line is direction-neutral. */
   .he {
     font-family: 'SBL Hebrew', 'Ezra SIL', 'Taamey Frank CLM', 'Noto Serif Hebrew', 'David Libre', 'Times New Roman', serif;
     font-size: var(--he-font-size);
     direction: rtl;
     unicode-bidi: isolate;
+    text-align: right;
   }
   .verse-num {
     /* Verse numbers stay LTR (Latin digits with colon). */
@@ -287,24 +287,27 @@
   }
 
   /* === DUAL-TEXT DISPLAY MODES === */
-  /* Default: Hebrew only. English gloss layer not yet implemented; .en
-     selectors retained so the toggle infrastructure is ready when the
-     gloss ships. */
+  /* Default: Hebrew only. */
   .en {
     display: none;
     font-family: Literata, Georgia, serif;
     font-size: var(--en-font-size);
     direction: ltr;
     unicode-bidi: isolate;
+    text-align: left;
   }
+  /* Hebrew-only (default): .he block, no .en */
+  .he { display: block; }
+  /* English-only mode */
   body.show-english .he { display: none; }
-  body.show-english .en { display: inline; }
+  body.show-english .en { display: block; }
+  /* Both: Hebrew on top right-aligned, English under it left-aligned dimmed italic */
   body.show-both .he { display: block; }
   body.show-both .en { display: block; font-style: italic; color: var(--text-dim); margin-top: 2px; }
 
   /* Niqqud and te'amim toggles: deferred. Combining marks require Unicode
      filtering at render time rather than pure CSS hiding. To be added in
-     a later session along with the eng-gloss layer. */
+     a later session. */
 
   /* === PUNCTUATION (hidden by default — editorial, not original) === */
   .punct {
@@ -1118,8 +1121,8 @@
     <div style="font-size:0.78em; color:var(--text-dim); margin-bottom:6px; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">Display</div>
     <select id="setting-display" onchange="setDisplayMode(this.value)" style="width:100%; padding:6px 8px; background:var(--bg); color:var(--text); border:1px solid var(--border); border-radius:6px; font-size:0.82em; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; cursor:pointer; outline:none;">
       <option value="greek">Hebrew</option>
-      <option value="english" disabled>English (coming soon)</option>
-      <option value="both" disabled>Both (coming soon)</option>
+      <option value="english">English</option>
+      <option value="both">Both</option>
     </select>
   </div>
   <div style="margin-top:8px; padding-top:8px; border-top:1px solid var(--border);">

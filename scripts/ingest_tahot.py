@@ -36,6 +36,13 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.dirname(SCRIPT_DIR)
 TAHOT_DIR = os.path.join(REPO_ROOT, "research", "stepbible-tahot")
 V0_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v0-prose")
+V0_ENG_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v0-eng-baseline")
+
+# Within v0-eng-baseline, prosodic-word units (which match Hebrew prosodic
+# words 1:1, including maqqef-grouped units treated as single words) are
+# separated by " | " so the te'amim parser can re-align them at cola
+# boundaries derived from the Hebrew accents.
+ENG_PWORD_SEP = " | "
 
 BOOK_REGISTRY = {
     "jonah": {
@@ -60,10 +67,38 @@ def clean_hebrew(raw):
     return cleaned
 
 
+# English-cleanup: TAHOT field 4 carries one English gloss per Hebrew word,
+# with morphological structure encoded as:
+#   /   separates per-morpheme glosses within one Hebrew word ("and/ it came")
+#   \X  punctuation/structural marker after the word ("\link" for maqqef,
+#       "\verseEnd" for sof pasuq, "\setuma", "\petucha", etc.)
+#   [x] words supplied for translation but not in Hebrew  (KEEP)
+#   <x> words in Hebrew that are best omitted in translation (DROP)
+ENG_OMIT_BRACKET_RE = re.compile(r"<[^>]*>")
+
+
+def clean_english(raw):
+    """Convert a TAHOT English gloss to a clean per-word string.
+
+    Strips trailing \\marker punctuation annotations, collapses morpheme
+    separators, drops <angle-bracketed> words per TAHOT convention, and
+    normalizes whitespace. Square-bracketed [supplied] words are preserved.
+    """
+    if not raw:
+        return ""
+    head = raw.split("\\", 1)[0]
+    head = ENG_OMIT_BRACKET_RE.sub("", head)
+    head = head.replace("/", " ")
+    return " ".join(head.split())
+
+
 def parse_tahot_for_book(tahot_path, book_code):
-    """Parse the TAHOT file and return ({chapter: {verse: [words]}}, crosswalk).
+    """Parse the TAHOT file and return ({chapter: {verse: [(he, en) tuples]}}, crosswalk).
 
     Output uses Hebrew chapter:verse (canon §3 — Hebrew versification primary).
+    Each per-verse word entry is a (hebrew_word, english_gloss) tuple so the
+    two streams stay aligned at the word level for downstream colometric
+    splitting.
     crosswalk maps "heb_ch:heb_v" -> "eng_ch:eng_v" for any verse where the
     two traditions disagree.
     """
@@ -101,7 +136,8 @@ def parse_tahot_for_book(tahot_path, book_code):
                 continue
 
             hebrew = clean_hebrew(fields[1]) if len(fields) > 1 else ""
-            chapters[heb_ch][heb_v].append(hebrew)
+            english = clean_english(fields[3]) if len(fields) > 3 else ""
+            chapters[heb_ch][heb_v].append((hebrew, english))
 
     return chapters, crosswalk
 
@@ -109,33 +145,51 @@ def parse_tahot_for_book(tahot_path, book_code):
 MAQQEF = "־"  # ־
 
 
-def join_words(words):
-    """Join words with spaces, except no space after a maqqef."""
-    out = []
-    for i, w in enumerate(words):
-        if not w:
+def group_prosodic_words(word_pairs):
+    """Group TAHOT word entries into prosodic-word units (maqqef-joined groups).
+
+    Returns a list of (hebrew_pword, english_pword) tuples where:
+      - hebrew_pword joins maqqef-grouped Hebrew words with no space
+      - english_pword joins the corresponding English glosses with a space
+    """
+    groups = []
+    for he, en in word_pairs:
+        if not he and not en:
             continue
-        if i == 0:
-            out.append(w)
-        elif out and out[-1].endswith(MAQQEF):
-            out[-1] = out[-1] + w
+        if groups and groups[-1][0].endswith(MAQQEF):
+            prev_he, prev_en = groups[-1]
+            merged_he = prev_he + he
+            merged_en = (prev_en + " " + en).strip() if (prev_en and en) else (prev_en or en)
+            groups[-1] = (merged_he, merged_en)
         else:
-            out.append(w)
-    return " ".join(out)
+            groups.append((he, en))
+    return groups
 
 
-def write_chapter_file(out_path, chapter_num, verses):
-    """Write one v0-prose chapter file."""
-    os.makedirs(os.path.dirname(out_path), exist_ok=True)
-    with open(out_path, "w", encoding="utf-8", newline="\n") as f:
-        verse_keys = sorted(verses.keys())
+def write_chapter_files(he_path, en_path, chapter_num, verses):
+    """Write one v0-prose Hebrew chapter file and one v0-eng-baseline English chapter file.
+
+    Both files use the same verse-ref / content / blank-line structure. Hebrew
+    prosodic-words are space-separated; English prosodic-words use the
+    ENG_PWORD_SEP delimiter so the te'amim parser can re-align them at the
+    same accent-induced cola boundaries.
+    """
+    os.makedirs(os.path.dirname(he_path), exist_ok=True)
+    os.makedirs(os.path.dirname(en_path), exist_ok=True)
+    verse_keys = sorted(verses.keys())
+    with open(he_path, "w", encoding="utf-8", newline="\n") as fh, \
+         open(en_path, "w", encoding="utf-8", newline="\n") as fe:
         for i, v in enumerate(verse_keys):
-            words = verses[v]
-            hebrew_text = join_words(words)
-            f.write(f"{chapter_num}:{v}\n")
-            f.write(f"{hebrew_text}\n")
+            groups = group_prosodic_words(verses[v])
+            he_text = " ".join(he for he, _ in groups if he)
+            en_text = ENG_PWORD_SEP.join(en for _, en in groups)
+            fh.write(f"{chapter_num}:{v}\n")
+            fh.write(f"{he_text}\n")
+            fe.write(f"{chapter_num}:{v}\n")
+            fe.write(f"{en_text}\n")
             if i < len(verse_keys) - 1:
-                f.write("\n")
+                fh.write("\n")
+                fe.write("\n")
 
 
 def ingest_book(book_key):
@@ -150,24 +204,27 @@ def ingest_book(book_key):
     if not chapters:
         sys.exit(f"No verses found for book code {spec['tahot_book_code']!r} in {tahot_path}")
 
-    out_dir = os.path.join(V0_DIR, spec["out_subdir"])
+    he_out_dir = os.path.join(V0_DIR, spec["out_subdir"])
+    en_out_dir = os.path.join(V0_ENG_DIR, spec["out_subdir"])
     chapter_count = 0
     verse_count = 0
     for chapter_num in sorted(chapters.keys()):
-        out_path = os.path.join(out_dir, f"{spec['out_prefix']}-{chapter_num:02d}.txt")
-        write_chapter_file(out_path, chapter_num, chapters[chapter_num])
+        he_path = os.path.join(he_out_dir, f"{spec['out_prefix']}-{chapter_num:02d}.txt")
+        en_path = os.path.join(en_out_dir, f"{spec['out_prefix']}-{chapter_num:02d}.txt")
+        write_chapter_files(he_path, en_path, chapter_num, chapters[chapter_num])
         chapter_count += 1
         verse_count += len(chapters[chapter_num])
-        print(f"  wrote {out_path}  ({len(chapters[chapter_num])} verses)")
+        print(f"  wrote {he_path}  ({len(chapters[chapter_num])} verses)")
+        print(f"  wrote {en_path}")
 
     if crosswalk:
-        crosswalk_path = os.path.join(out_dir, f"{spec['out_prefix']}-crosswalk.json")
+        crosswalk_path = os.path.join(he_out_dir, f"{spec['out_prefix']}-crosswalk.json")
         import json
         with open(crosswalk_path, "w", encoding="utf-8", newline="\n") as f:
             json.dump(crosswalk, f, ensure_ascii=False, indent=2, sort_keys=True)
         print(f"  wrote {crosswalk_path}  ({len(crosswalk)} verse-numbering differences)")
 
-    print(f"\n{book_key}: {chapter_count} chapters, {verse_count} verses ingested into v0-prose/")
+    print(f"\n{book_key}: {chapter_count} chapters, {verse_count} verses ingested into v0-prose/ and v0-eng-baseline/")
 
 
 def main():

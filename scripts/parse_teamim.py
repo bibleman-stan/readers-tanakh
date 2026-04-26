@@ -40,7 +40,11 @@ import sys
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.dirname(SCRIPT_DIR)
 V0_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v0-prose")
+V0_ENG_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v0-eng-baseline")
 V1_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v1-teamim")
+V1_ENG_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v1-eng-baseline")
+
+ENG_PWORD_SEP = " | "  # must match ingest_tahot.py
 
 # Tier-1/2 disjunctive accents — prose books
 PROSE_BREAKERS = {
@@ -74,25 +78,22 @@ BOOK_REGISTRY = {
 }
 
 
-def split_verse_at_breakers(text, breakers):
-    """Split a verse string into colometric lines at te'amim breakers.
+def compute_cola_boundaries(he_words, breakers):
+    """Return list of (start_idx, end_idx) word-index pairs, one per cola.
 
-    A break is inserted after any whitespace-separated word whose characters
-    include one of the breaker codepoints. Maqqef-joined groups are atomic.
+    A cola break is inserted after any Hebrew prosodic-word whose characters
+    include one of the breaker codepoints. Maqqef-joined groups are atomic
+    (already pre-joined into single space-separated tokens by ingest).
     """
-    words = text.split(" ")
-    lines = []
-    current = []
-    for w in words:
+    boundaries = [0]
+    for i, w in enumerate(he_words):
         if not w:
             continue
-        current.append(w)
         if any(b in w for b in breakers):
-            lines.append(" ".join(current))
-            current = []
-    if current:
-        lines.append(" ".join(current))
-    return lines
+            boundaries.append(i + 1)
+    if boundaries[-1] != len(he_words):
+        boundaries.append(len(he_words))
+    return list(zip(boundaries, boundaries[1:]))
 
 
 def strip_paragraph_marker(verse_text):
@@ -100,41 +101,77 @@ def strip_paragraph_marker(verse_text):
     return PARAGRAPH_MARKERS_RE.sub("", verse_text)
 
 
-def parse_chapter_file(in_path, out_path, breakers):
-    with open(in_path, "r", encoding="utf-8") as f:
+def read_v0_chapter(path):
+    """Read a v0-prose / v0-eng-baseline chapter file. Returns [(ref, verse_text), ...]."""
+    with open(path, "r", encoding="utf-8") as f:
         raw = f.read()
-
-    # The v0-prose format is verse-ref / verse-text / blank line repeating.
     blocks = re.split(r"\n\s*\n", raw.strip())
-    out_blocks = []
+    out = []
     for block in blocks:
-        block_lines = block.strip().split("\n", 1)
-        if len(block_lines) != 2:
+        parts = block.strip().split("\n", 1)
+        if len(parts) != 2:
             continue
-        ref, verse_text = block_lines
+        ref, verse_text = parts
         if not VERSE_REF_RE.match(ref.strip()):
             continue
-        cleaned = strip_paragraph_marker(verse_text.strip())
-        cola = split_verse_at_breakers(cleaned, breakers)
-        out_blocks.append(ref.strip() + "\n" + "\n".join(cola))
+        out.append((ref.strip(), verse_text.strip()))
+    return out
 
-    os.makedirs(os.path.dirname(out_path), exist_ok=True)
-    with open(out_path, "w", encoding="utf-8", newline="\n") as f:
-        f.write("\n\n".join(out_blocks) + "\n")
+
+def parse_chapter_pair(he_in_path, en_in_path, he_out_path, en_out_path, breakers):
+    """Parse Hebrew + English v0 chapter files into aligned v1 cola files."""
+    he_verses = read_v0_chapter(he_in_path)
+    en_verses_lookup = {ref: text for ref, text in read_v0_chapter(en_in_path)}
+
+    he_blocks = []
+    en_blocks = []
+    for ref, he_text in he_verses:
+        he_clean = strip_paragraph_marker(he_text)
+        he_pwords = [w for w in he_clean.split(" ") if w]
+
+        en_text = en_verses_lookup.get(ref, "")
+        en_pwords = [u.strip() for u in en_text.split(ENG_PWORD_SEP)] if en_text else []
+
+        # If the prosodic-word counts disagree, the alignment broke somewhere
+        # in ingest. Bail loudly rather than silently emit misaligned cola.
+        if en_pwords and len(en_pwords) != len(he_pwords):
+            sys.exit(
+                f"Alignment failure at {ref}: "
+                f"{len(he_pwords)} Hebrew prosodic-words vs {len(en_pwords)} English units"
+            )
+
+        boundaries = compute_cola_boundaries(he_pwords, breakers)
+        he_cola = [" ".join(he_pwords[a:b]) for a, b in boundaries]
+        en_cola = [" ".join(en_pwords[a:b]) for a, b in boundaries] if en_pwords else []
+
+        he_blocks.append(ref + "\n" + "\n".join(he_cola))
+        if en_cola:
+            en_blocks.append(ref + "\n" + "\n".join(en_cola))
+
+    os.makedirs(os.path.dirname(he_out_path), exist_ok=True)
+    os.makedirs(os.path.dirname(en_out_path), exist_ok=True)
+    with open(he_out_path, "w", encoding="utf-8", newline="\n") as f:
+        f.write("\n\n".join(he_blocks) + "\n")
+    with open(en_out_path, "w", encoding="utf-8", newline="\n") as f:
+        f.write("\n\n".join(en_blocks) + "\n")
 
 
 def parse_book(book_key):
     if book_key not in BOOK_REGISTRY:
         sys.exit(f"Unknown book key: {book_key}")
     spec = BOOK_REGISTRY[book_key]
-    in_dir = os.path.join(V0_DIR, spec["subdir"])
-    out_dir = os.path.join(V1_DIR, spec["subdir"])
+    he_in_dir = os.path.join(V0_DIR, spec["subdir"])
+    en_in_dir = os.path.join(V0_ENG_DIR, spec["subdir"])
+    he_out_dir = os.path.join(V1_DIR, spec["subdir"])
+    en_out_dir = os.path.join(V1_ENG_DIR, spec["subdir"])
 
-    if not os.path.isdir(in_dir):
-        sys.exit(f"v0-prose dir not found: {in_dir}")
+    if not os.path.isdir(he_in_dir):
+        sys.exit(f"v0-prose dir not found: {he_in_dir}")
+    if not os.path.isdir(en_in_dir):
+        sys.exit(f"v0-eng-baseline dir not found: {en_in_dir}")
 
     chapter_files = sorted(
-        fn for fn in os.listdir(in_dir)
+        fn for fn in os.listdir(he_in_dir)
         if fn.startswith(spec["prefix"] + "-") and fn.endswith(".txt")
     )
 
@@ -144,17 +181,20 @@ def parse_book(book_key):
     for fn in chapter_files:
         chapter_num = int(fn[len(spec["prefix"]) + 1:-4])
         breakers = POETIC_BREAKERS if chapter_num in poetic_chapters else PROSE_BREAKERS
-        in_path = os.path.join(in_dir, fn)
-        out_path = os.path.join(out_dir, fn)
-        parse_chapter_file(in_path, out_path, breakers)
+        he_in_path = os.path.join(he_in_dir, fn)
+        en_in_path = os.path.join(en_in_dir, fn)
+        he_out_path = os.path.join(he_out_dir, fn)
+        en_out_path = os.path.join(en_out_dir, fn)
+        parse_chapter_pair(he_in_path, en_in_path, he_out_path, en_out_path, breakers)
 
-        with open(out_path, "r", encoding="utf-8") as f:
+        with open(he_out_path, "r", encoding="utf-8") as f:
             line_count = sum(1 for line in f if line.strip() and not VERSE_REF_RE.match(line.strip()))
         total_lines += line_count
         accent_label = "Sifrei Emet" if chapter_num in poetic_chapters else "prose"
-        print(f"  wrote {out_path}  ({line_count} cola, {accent_label} accents)")
+        print(f"  wrote {he_out_path}  ({line_count} cola, {accent_label} accents)")
+        print(f"  wrote {en_out_path}")
 
-    print(f"\n{book_key}: {total_lines} cola total in v1-teamim/")
+    print(f"\n{book_key}: {total_lines} cola total in v1-teamim/ and v1-eng-baseline/")
 
 
 def main():
