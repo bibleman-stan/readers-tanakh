@@ -62,25 +62,30 @@
     transition: width 0.15s;
   }
 
-  /* === TOP BAR === */
+  /* === TOP BAR ===
+     Outer .topbar spans full viewport (so the bg + blur cover the whole
+     width on wide desktops — a 36em centered capsule with bare page bg
+     beside it looked terrible). Inner .topbar-inner constrains the
+     interactive content to the same 36em column as the body so the
+     icons line up with the reading column. */
   .topbar {
     position: fixed;
     top: 0; left: 0; right: 0;
-    /* Matches body max-width so the chrome and the reading column share
-       the same horizontal frame across desktop sizes. On mobile the
-       viewport is narrower than 36em so this caps nothing. */
-    max-width: 36em;
-    margin: 0 auto;
     height: 44px;
     background: rgba(28, 31, 36, 0.95);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     border-bottom: 1px solid var(--border);
+    z-index: 100;
+  }
+  .topbar-inner {
+    max-width: 36em;
+    margin: 0 auto;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 14px;
-    z-index: 100;
   }
 
   .topbar-loc {
@@ -274,6 +279,11 @@
        no effect here because every child layer is its own display:block /
        display:flex container. */
   }
+  /* Inter-cola breathing room independent of which layers are active.
+     Without this, translit-only or inter-only viewing modes — which lack
+     the within-line margin-top stack from .translit/.en-gloss — would
+     render consecutive lines flush against one another. */
+  .line + .line { margin-top: 4px; }
 
   /* === FOUR-LAYER TEXT === */
   /* Per-orthographic-word spans across all four layers. Each Hebrew word
@@ -352,7 +362,10 @@
     opacity: 0.5;
     margin: 0 0.45em;
     font-style: normal;
-    font-family: 'Segoe UI Symbol', 'Apple Color Emoji', 'Noto Sans Symbols', 'Noto Sans Symbols 2', sans-serif;
+    /* Symbol-only fonts. 'Apple Color Emoji' was deliberately dropped —
+       its presence in the chain risks color-glyph rendering on iOS for
+       chars (← / ‒) we want monochrome and dim. */
+    font-family: 'Segoe UI Symbol', 'Apple Symbols', 'Noto Sans Symbols', 'Noto Sans Symbols 2', sans-serif;
   }
   /* Maqqef-joined: short dash sits naturally on the baseline (the
      middle-dot we used before pulled the joined word vertically out
@@ -364,7 +377,10 @@
     color: var(--text-dim);
     opacity: 0.6;
     margin: 0 0.2em;
-    font-family: 'Segoe UI Symbol', 'Apple Color Emoji', 'Noto Sans Symbols', 'Noto Sans Symbols 2', sans-serif;
+    /* Symbol-only fonts. 'Apple Color Emoji' was deliberately dropped —
+       its presence in the chain risks color-glyph rendering on iOS for
+       chars (← / ‒) we want monochrome and dim. */
+    font-family: 'Segoe UI Symbol', 'Apple Symbols', 'Noto Sans Symbols', 'Noto Sans Symbols 2', sans-serif;
   }
 
   .en-gloss {
@@ -390,35 +406,42 @@
   body.show-inter    .en-inter { display: flex; }
   body.show-gloss    .en-gloss { display: block; }
 
-  /* === LAYER PILLBOX TOOLBAR (fixed, always visible) === */
+  /* === LAYER PILLBOX TOOLBAR (fixed, always visible) ===
+     Same outer/inner pattern as the topbar — outer spans the viewport
+     so the blurred bg covers the full width; inner constrains the pill
+     content to the body's 36em column. */
   .layer-bar {
     position: fixed;
     top: 44px;          /* sits directly under the topbar (44px tall) */
     left: 0; right: 0;
-    /* Matches body / topbar so the chrome shares one frame on desktop. */
-    max-width: 36em;
-    margin: 0 auto;
     background: rgba(28, 31, 36, 0.95);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     border-bottom: 1px solid var(--border);
+    z-index: 99;        /* below topbar (100) */
+  }
+  .layer-bar-inner {
+    max-width: 36em;
+    margin: 0 auto;
     padding: 8px 12px;
     display: flex;
     gap: 6px;
+    /* `safe center` falls back to flex-start when content overflows the
+       container — prevents the classic centered-overflow bug where the
+       first item scrolls off-screen unreachable. The plain `center`
+       declaration is the fallback for older browsers (Safari < 14). */
     justify-content: center;
+    justify-content: safe center;
     /* Nowrap + horizontal scroll keeps the bar a fixed ~46px tall on
        narrow viewports — wrapping pills onto a second row would have
-       made the body padding-top wrong and hidden the first verse.
-       The bar is rarely wider than the viewport, but in case it is
-       the user can swipe horizontally. */
+       made the body padding-top wrong and hidden the first verse. */
     flex-wrap: nowrap;
     overflow-x: auto;
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;  /* iOS momentum scroll */
     scrollbar-width: none;              /* Firefox */
-    z-index: 99;        /* below topbar (100) */
   }
-  .layer-bar::-webkit-scrollbar { display: none; }  /* Chrome / Safari */
+  .layer-bar-inner::-webkit-scrollbar { display: none; }
   .pill {
     background: rgba(124, 175, 194, 0.08);
     color: var(--text);
@@ -432,7 +455,6 @@
     cursor: pointer;
     transition: background 0.15s, color 0.15s, border-color 0.15s;
     user-select: none;
-    -webkit-tap-highlight-color: transparent;
     flex-shrink: 0;     /* never get squished by overflow neighbors */
     white-space: nowrap;
   }
@@ -443,16 +465,17 @@
     border-color: var(--accent);
   }
   /* Visual feedback when toggleLayer refuses to turn off the last
-     visible layer — short shake on the rejected pill so the user
-     sees the click registered but the system overruled it. */
-  @keyframes pill-shake {
-    0%, 100% { transform: translateX(0); }
-    20%      { transform: translateX(-4px); }
-    40%      { transform: translateX(4px); }
-    60%      { transform: translateX(-3px); }
-    80%      { transform: translateX(3px); }
+     visible layer. Color flash (not horizontal translate) so the cue
+     can't be clipped by the layer-bar's overflow-x: auto on edge pills. */
+  @keyframes pill-reject {
+    0%   { background: rgba(124, 175, 194, 0.08);
+           border-color: rgba(124, 175, 194, 0.25); }
+    25%  { background: rgba(220,  90,  90, 0.28);
+           border-color: rgba(220,  90,  90, 0.65); }
+    100% { background: rgba(124, 175, 194, 0.08);
+           border-color: rgba(124, 175, 194, 0.25); }
   }
-  .pill.shake { animation: pill-shake 0.32s ease-in-out; }
+  .pill.reject { animation: pill-reject 0.45s ease-out; }
 
   /* === PUNCTUATION (hidden by default — editorial, not original) === */
   .punct {
@@ -1224,16 +1247,21 @@
 <!-- Progress line -->
 <div class="progress-line" id="progress-line"></div>
 
-<!-- Layer pillbox toolbar — fixed, always visible, mirrors the mockup -->
+<!-- Layer pillbox toolbar — fixed, always visible, mirrors the mockup.
+     Outer .layer-bar spans the viewport for full-width bg/blur; inner
+     .layer-bar-inner constrains the pill row to the body's 36em column. -->
 <div class="layer-bar" id="layer-bar">
-  <button class="pill" data-layer="he"       onclick="toggleLayer(this)">Hebrew</button>
-  <button class="pill" data-layer="translit" onclick="toggleLayer(this)">Translit</button>
-  <button class="pill" data-layer="inter"    onclick="toggleLayer(this)">Interlinear</button>
-  <button class="pill" data-layer="gloss"    onclick="toggleLayer(this)">Gloss</button>
+  <div class="layer-bar-inner">
+    <button class="pill" data-layer="he"       onclick="toggleLayer(this)">Hebrew</button>
+    <button class="pill" data-layer="translit" onclick="toggleLayer(this)">Translit</button>
+    <button class="pill" data-layer="inter"    onclick="toggleLayer(this)">Interlinear</button>
+    <button class="pill" data-layer="gloss"    onclick="toggleLayer(this)">Gloss</button>
+  </div>
 </div>
 
-<!-- Top bar -->
+<!-- Top bar — outer spans viewport, inner constrains content to 36em. -->
 <div class="topbar">
+ <div class="topbar-inner">
   <div class="topbar-loc" id="topbar-loc" onclick="openNav()">
     <span class="topbar-book" id="topbar-book">Jonah</span>
     <span class="topbar-chap" id="topbar-chap">1</span>
@@ -1257,6 +1285,7 @@
       <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/></svg>
     </button>
   </div>
+ </div><!-- /topbar-inner -->
 </div>
 
 <!-- Settings panel -->
@@ -1834,11 +1863,11 @@ function toggleLayer(btn) {
       k => document.body.classList.contains('show-' + k)
     );
     if (visibleLayers.length <= 1) {
-      btn.classList.remove('shake');
+      btn.classList.remove('reject');
       // Force reflow so re-adding the class restarts the animation
       // even on rapid repeat clicks.
       void btn.offsetWidth;
-      btn.classList.add('shake');
+      btn.classList.add('reject');
       return;
     }
   }
