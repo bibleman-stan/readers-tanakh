@@ -1640,6 +1640,9 @@ function setDisplayMode(mode) {
   document.body.classList.remove('show-english', 'show-both');
   if (mode === 'english') document.body.classList.add('show-english');
   else if (mode === 'both') document.body.classList.add('show-both');
+  // Diagnostic logging — remove once display modes are confirmed working.
+  console.log('[display-mode]', mode, 'body.classList=', document.body.className,
+              'en spans in DOM=', document.querySelectorAll('.en').length);
   localStorage.setItem('gnt-display-mode', mode);
   // Update select element to match
   const sel = document.getElementById('setting-display');
