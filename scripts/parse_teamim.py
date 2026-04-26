@@ -68,6 +68,137 @@ PARAGRAPH_MARKERS_RE = re.compile(r"\s+[פס]\s*$")  # trailing PEH or SAMEKH
 
 VERSE_REF_RE = re.compile(r"^\d+:\d+$")
 
+
+# ---- Hebrew structural-gloss naturalizer ---------------------------------
+# Modeled on the GNT project's naturalize() in generate_english_glosses.py.
+# Wooden-but-legible: preserve Hebrew clause order (VSO etc.) but fix the
+# morphological/phrasal artifacts that make English ungrammatical:
+#   - Bracketed [supplied] words flattened
+#   - Pronominal suffix reorder ("wickedness their" -> "their wickedness")
+#   - Demonstrative reorder ("evil this" -> "this evil")
+#   - Hebrew adjective-after-noun inversion ("city great" -> "great city")
+#   - Common compound-preposition cleanups ("from to before" -> "from before")
+#   - Directional he ("Tarshish towards" -> "toward Tarshish")
+# All transforms are list-driven, not blanket regex, so adding a Hebrew
+# adjective is one entry and false positives are rare. Iterate by extending
+# the lists as new patterns surface in editorial review.
+
+POSSESSIVES = ('his', 'her', 'its', 'their', 'your', 'my', 'our')
+DEMONSTRATIVES = ('this', 'that', 'these', 'those')
+
+# Words that, if they appear immediately before a possessive/demonstrative,
+# mean we should NOT reorder (the suffix is genuinely English-positioned).
+# E.g., "in his house" (not Hebrew suffix) vs "house his" (Hebrew suffix).
+PREP_OR_FUNCTION = {
+    'of', 'in', 'to', 'on', 'at', 'by', 'for', 'with', 'from', 'about',
+    'into', 'before', 'after', 'against', 'upon', 'over', 'under',
+    'between', 'through', 'around', 'among', 'unto', 'concerning',
+    'the', 'a', 'an', 'and', 'or', 'but', 'as', 'than', 'like',
+    'is', 'was', 'are', 'were', 'be', 'been', 'am',
+    'I', 'you', 'he', 'she', 'we', 'they',
+}
+
+# Hebrew adjectives that follow their noun in source order. Inversion is
+# required for English. Extend as new patterns appear; false positives are
+# rare because these words are unambiguously adjectival in TAHOT glosses.
+HEBREW_ADJECTIVES = {
+    'great', 'small', 'large', 'little', 'good', 'evil', 'bad', 'holy',
+    'innocent', 'wicked', 'righteous', 'pure', 'mighty', 'strong', 'weak',
+    'high', 'low', 'wide', 'long', 'short', 'old', 'young', 'new',
+    'beloved', 'living', 'dead', 'first', 'last', 'whole', 'broken',
+    'open', 'pleasing', 'unleavened', 'precious',
+}
+
+_BRACKET_KEEP_RE = re.compile(r'\[([^\]]+)\]')
+
+
+def naturalize_hebrew_gloss(text):
+    """Convert wooden TAHOT-derived English into structural-but-readable English."""
+    # Strip [supplied] brackets, keeping the word(s) inside.
+    text = _BRACKET_KEEP_RE.sub(r'\1', text)
+
+    # Compound-preposition cleanups (TAHOT renders Hebrew compound preps
+    # morpheme-by-morpheme; English needs them collapsed).
+    text = re.sub(r'\bfrom to before\b', 'from before', text)
+    text = re.sub(r'\bfrom to upon\b', 'from upon', text)
+    text = re.sub(r'\bfrom to under\b', 'from under', text)
+    text = re.sub(r'\bto in\b', 'into', text)
+
+    # Directional he: "X towards" -> "toward X". Only the trailing "towards"
+    # form (not "towards X") because TAHOT writes the ה-suffix gloss after
+    # its host word.
+    text = re.sub(r'\b(\w+) towards\b', r'toward \1', text)
+
+    adj_alt = '|'.join(re.escape(a) for a in HEBREW_ADJECTIVES)
+    dem_alt = '|'.join(DEMONSTRATIVES)
+    poss_alt = '|'.join(POSSESSIVES)
+
+    # Combined Hebrew patterns ("the noun adj dem" etc.) MUST run before the
+    # simpler single-swap patterns or the swaps fight each other.
+    # "the storm great this" -> "this great storm"
+    text = re.sub(
+        rf'\b(the|a|an) (\w+) ({adj_alt}) ({dem_alt})\b',
+        r'\4 \3 \2', text
+    )
+    # "the evil this" (article + adj + dem) -> "this evil"
+    text = re.sub(
+        rf'\b(the|a|an) ({adj_alt}) ({dem_alt})\b',
+        r'\3 \2', text
+    )
+    # "the men that" / "the man this" (article + noun + dem) -> "that men"
+    text = re.sub(
+        rf'\b(the|a|an) (\w+) ({dem_alt})\b',
+        r'\3 \2', text
+    )
+    # "the noun adj poss" -> "poss adj noun"
+    text = re.sub(
+        rf'\b(the|a|an) (\w+) ({adj_alt}) ({poss_alt})\b',
+        r'\4 \3 \2', text
+    )
+    # "the noun poss" -> "poss noun"
+    text = re.sub(
+        rf'\b(the|a|an) (\w+) ({poss_alt})\b',
+        r'\3 \2', text
+    )
+
+    # Adjective inversion (article + noun + adj) -> (article + adj + noun)
+    for adj in HEBREW_ADJECTIVES:
+        text = re.sub(rf'\b(the|a|an) (\w+) {adj}\b', rf'\1 {adj} \2', text)
+
+    # No-article single swaps. These run AFTER the combined patterns above so
+    # we don't undo a prior multi-token reorder.
+    def _swap_after_noun(text, after_word_set):
+        for w in after_word_set:
+            def repl(m, w=w):
+                prev = m.group(1)
+                if prev.lower() in PREP_OR_FUNCTION:
+                    return m.group(0)
+                # Don't re-swap if prev is itself in the same set (the
+                # combined pattern already placed things in the right order).
+                if prev.lower() in after_word_set:
+                    return m.group(0)
+                return f'{w} {prev}'
+            text = re.sub(rf'\b(\w+) {w}\b', repl, text)
+        return text
+
+    text = _swap_after_noun(text, set(POSSESSIVES))
+    text = _swap_after_noun(text, set(DEMONSTRATIVES))
+
+    # No-article adjective inversion ("city great" -> "great city")
+    for adj in HEBREW_ADJECTIVES:
+        def repl(m, adj=adj):
+            prev = m.group(1)
+            if prev.lower() in PREP_OR_FUNCTION:
+                return m.group(0)
+            if prev.lower() in DEMONSTRATIVES or prev.lower() in POSSESSIVES:
+                return m.group(0)
+            return f'{adj} {prev}'
+        text = re.sub(rf'\b(\w+) {adj}\b', repl, text)
+
+    # Whitespace cleanup
+    text = re.sub(r'\s+', ' ', text).strip()
+    return text
+
 BOOK_REGISTRY = {
     "jonah": {
         "subdir": "05-jonah",
@@ -142,7 +273,7 @@ def parse_chapter_pair(he_in_path, en_in_path, he_out_path, en_out_path, breaker
 
         boundaries = compute_cola_boundaries(he_pwords, breakers)
         he_cola = [" ".join(he_pwords[a:b]) for a, b in boundaries]
-        en_cola = [" ".join(en_pwords[a:b]) for a, b in boundaries] if en_pwords else []
+        en_cola = [naturalize_hebrew_gloss(" ".join(en_pwords[a:b])) for a, b in boundaries] if en_pwords else []
 
         he_blocks.append(ref + "\n" + "\n".join(he_cola))
         if en_cola:

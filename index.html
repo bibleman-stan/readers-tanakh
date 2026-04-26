@@ -41,7 +41,9 @@
     font-family: Literata, Georgia, serif;
     font-size: var(--font-size);
     line-height: var(--line-height);
-    max-width: 42em;
+    /* Narrower than the GNT 42em because both Hebrew and English right-align,
+       so the eye should stay near the right edge with minimal horizontal travel. */
+    max-width: 36em;
     margin: 0 auto;
     padding: 1em;
     padding-top: 50px;
@@ -288,13 +290,16 @@
 
   /* === DUAL-TEXT DISPLAY MODES === */
   /* Default: Hebrew only. */
+  /* Both Hebrew and English right-align in Both mode so the reader's eye
+     scans vertically (Hebrew cola -> English cola directly underneath at
+     the same right edge), not horizontally across the page width. */
   .en {
     display: none;
     font-family: Literata, Georgia, serif;
     font-size: var(--en-font-size);
     direction: ltr;
     unicode-bidi: isolate;
-    text-align: left;
+    text-align: right;
   }
   /* Hebrew-only (default): .he block, no .en */
   .he { display: block; }
