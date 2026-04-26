@@ -290,15 +290,17 @@
 
   /* === DUAL-TEXT DISPLAY MODES === */
   /* Default: Hebrew only. */
-  /* Both Hebrew and English right-align in Both mode so the reader's eye
-     scans vertically (Hebrew cola -> English cola directly underneath at
-     the same right edge), not horizontally across the page width. */
+  /* English flows RTL at the word level so each English word lines up
+     spatially with its Hebrew counterpart (word-1 of both lands on the
+     right edge). Letters within each word stay LTR — bidi-override
+     reorders words but is atomic at the character level for Latin script.
+     Right-aligned to share the right margin with Hebrew. */
   .en {
     display: none;
     font-family: Literata, Georgia, serif;
     font-size: var(--en-font-size);
-    direction: ltr;
-    unicode-bidi: isolate;
+    direction: rtl;
+    unicode-bidi: bidi-override;
     text-align: right;
   }
   /* Hebrew-only (default): .he block, no .en */
