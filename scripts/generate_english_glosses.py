@@ -1,0 +1,867 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+generate_english_glosses.py — Tanakh structural English gloss generator.
+
+Walks v2/he (or v1/he-baseline) cola line-by-line. For each Hebrew word,
+looks up Macula Hebrew TSV by (ref, NFC-normalized surface text) and
+aggregates per-morpheme glosses into per-word glosses. Then applies
+HEBREW_PHRASE_MAP for stock formulas (e.g. כֹּה אָמַר יְהוָה → "thus says
+Yahweh"), then naturalize() for mechanical Hebrew→English transformations
+(VS→SV reorder, possessive-suffix reorder, NP-DEM reorder, etc.).
+
+Output: data/text-files/v2/eng-gloss/<book>/<chapter>.txt — one English
+line per Hebrew cola, verse refs + blank lines preserved.
+
+Usage:
+    PYTHONIOENCODING=utf-8 py -3 scripts/generate_english_glosses.py --book 05-jonah
+    PYTHONIOENCODING=utf-8 py -3 scripts/generate_english_glosses.py --book 05-jonah --use-v1
+    PYTHONIOENCODING=utf-8 py -3 scripts/generate_english_glosses.py --book 05-jonah --dry-run
+    PYTHONIOENCODING=utf-8 py -3 scripts/generate_english_glosses.py --book 05-jonah --verbose
+"""
+
+import argparse
+import csv
+import re
+import sys
+import unicodedata
+from collections import defaultdict
+from pathlib import Path
+
+REPO_ROOT = Path(__file__).resolve().parent.parent
+MACULA_TSV = REPO_ROOT / "research" / "macula-hebrew" / "WLC" / "tsv" / "macula-hebrew.tsv"
+V2_HE_DIR = REPO_ROOT / "data" / "text-files" / "v2" / "he"
+V1_HE_DIR = REPO_ROOT / "data" / "text-files" / "v1" / "he-baseline"
+OUT_DIR = REPO_ROOT / "data" / "text-files" / "v2" / "eng-gloss"
+
+# Book folder name → Macula OSIS abbreviation (matches the ref field).
+# Folder names follow the project's convention (not BHS canonical numbering).
+# Only 05-jonah exists currently; the full table is pre-populated for
+# future books. Verify folder names against data/text-files/v0/prose/ when
+# adding new books.
+BOOK_OSIS = {
+    "01-genesis":       "GEN",
+    "02-exodus":        "EXO",
+    "03-leviticus":     "LEV",
+    "04-numbers":       "NUM",
+    "05-deuteronomy":   "DEU",
+    "06-joshua":        "JOS",
+    "07-judges":        "JDG",
+    "08-ruth":          "RUT",
+    "09-1samuel":       "1SA",
+    "10-2samuel":       "2SA",
+    "11-1kings":        "1KI",
+    "12-2kings":        "2KI",
+    "13-1chronicles":   "1CH",
+    "14-2chronicles":   "2CH",
+    "15-ezra":          "EZR",
+    "16-nehemiah":      "NEH",
+    "17-esther":        "EST",
+    "18-job":           "JOB",
+    "19-psalms":        "PSA",
+    "20-proverbs":      "PRO",
+    "21-ecclesiastes":  "ECC",
+    "22-songofsongs":   "SNG",
+    "23-isaiah":        "ISA",
+    "24-jeremiah":      "JER",
+    "25-lamentations":  "LAM",
+    "26-ezekiel":       "EZK",
+    "27-daniel":        "DAN",
+    "28-hosea":         "HOS",
+    "29-joel":          "JOL",
+    "30-amos":          "AMO",
+    "31-obadiah":       "OBA",
+    # NOTE: project folder is 05-jonah, not 32-jonah (not BHS canonical order)
+    "05-jonah":         "JON",
+    "32-micah":         "MIC",
+    "33-nahum":         "NAM",
+    "34-habakkuk":      "HAB",
+    "35-zephaniah":     "ZEP",
+    "36-haggai":        "HAG",
+    "37-zechariah":     "ZEC",
+    "38-malachi":       "MAL",
+}
+
+VERSE_REF_RE = re.compile(r"^\d+:\d+$")
+
+# Strip te'amim and niqqud, but NOT maqqef (U+05BE) or sof-pasuq (U+05C3).
+# Hebrew Unicode ranges:
+#   U+0591–U+05BD  cantillation marks + niqqud (below maqqef)
+#   U+05BE         MAQQEF — word-joining hyphen; preserve for phrase matching
+#   U+05BF         rafe
+#   U+05C0         paseq
+#   U+05C1–U+05C2  shin/sin dots
+#   U+05C3         SOF PASUQ — punctuation; handled separately
+#   U+05C4–U+05C7  upper/lower dots, qamats qatan
+# We strip everything EXCEPT U+05BE (maqqef) and U+05C3 (sof pasuq).
+# The regex below covers: U+0591-U+05BD, then U+05BF-U+05C2, then U+05C4-U+05C7.
+DIACRITICS_RE = re.compile(r"[֑-ֽֿ-ׂׄ-ׇ]")
+
+MAQQEF = "־"     # U+05BE — Hebrew maqqef (word-joining hyphen)
+SOF_PASUQ = "׃"  # U+05C3 — verse-end marker; stripped from comparison surfaces
+
+# Gloss tokens that carry no semantic content — skip rather than emit.
+EMPTY_GLOSS_TOKENS = {"(dm)", "(cmp)", "(et)", "(the)", ""}
+
+# Sentinel returned by aggregate_word_gloss for particles that have NO
+# translation (accusative marker אֶת, discourse markers, etc.).
+# Callers should drop this token rather than emitting it.
+SKIP_TOKEN = "\x00SKIP\x00"
+
+
+# ---------------------------------------------------------------------------
+# HEBREW_PHRASE_MAP: stock formulas for cola-level substitution.
+# Keys: Hebrew with niqqud (NFC). Comparison is done on stripped consonants
+# after NFC normalization. Apply longest-match-first against the stripped cola.
+# ---------------------------------------------------------------------------
+HEBREW_PHRASE_MAP = {
+    # Prophetic formulas
+    "כֹּה אָמַר יְהוָה":               "thus says Yahweh",
+    "כֹּה אָמַר יְהוָה צְבָאוֹת":      "thus says Yahweh of hosts",
+    "נְאֻם־יְהוָה":                    "declares Yahweh",
+    "נְאֻם יְהוָה":                    "declares Yahweh",
+    "נְאֻם־יְהוָה צְבָאוֹת":           "declares Yahweh of hosts",
+    "נְאֻם אֲדֹנָי יְהוִה":            "declares the Lord Yahweh",
+    "וַיְהִי דְבַר־יְהוָה":            "and the word of Yahweh came",
+    "וַיְהִי דְבַר־יְהוָה אֶל":        "and the word of Yahweh came to",
+    "אָמַר אֲדֹנָי יְהוִה":            "says the Lord Yahweh",
+    # Compound divine names (canon Rule H9)
+    "יְהוָה אֱלֹהִים":                  "Yahweh God",
+    "יְהוָה צְבָאוֹת":                  "Yahweh of hosts",
+    "יְהוָה אֱלֹהֵי הַשָּׁמַיִם":      "Yahweh, the God of heaven",
+    "יְהוָה אֱלֹהֵי יִשְׂרָאֵל":       "Yahweh, the God of Israel",
+    "יְהוָה אֱלֹהֵיכֶם":               "Yahweh your God",
+    "יְהוָה אֱלֹהֵינוּ":               "Yahweh our God",
+    "אֲדֹנָי יְהוִה":                   "the Lord Yahweh",
+    "אֵל שַׁדַּי":                       "El Shaddai",
+    "אֵל עֶלְיוֹן":                     "God Most High",
+    "אֱלֹהֵי אַבְרָהָם יִצְחָק וְיַעֲקֹב": "the God of Abraham, Isaac, and Jacob",
+    # Discourse openers / vocative formulas
+    "הִנֵּה־נָא":                       "behold now",
+    "הִנֵּה אָנֹכִי":                   "behold, I",
+    "אַל־נָא":                          "please do not",
+    "אַל־תִּירָא":                      "do not fear",
+    "שְׁמַע יִשְׂרָאֵל":               "hear, O Israel",
+    "אַשְׁרֵי הָאִישׁ":                 "blessed is the man",
+    "אֲהָהּ אֲדֹנָי יְהוִה":           "alas, Lord Yahweh",
+    "אָנָּה יְהוָה":                    "we beg you, O Yahweh",
+    # Jonah-specific: the sailors' prayer opener in 1:14
+    "אָנָּ֤ה יְהוָה֙":                  "we beg you, O Yahweh",
+    # Idiomatic temporal / eternal formulas
+    "וַיְהִי כִּי":                     "and when",
+    "וְהָיָה אִם":                      "and it shall be, if",
+    "בָּעֵת הַהִיא":                    "at that time",
+    "בַּיּוֹם הַהוּא":                  "on that day",
+    "בְּאַחֲרִית הַיָּמִים":            "in the latter days",
+    "מֵעוֹלָם וְעַד עוֹלָם":            "from everlasting to everlasting",
+    "מִדּוֹר לְדוֹר":                   "from generation to generation",
+    "יוֹם יוֹם":                        "day by day",
+    "אִישׁ וְאִישׁ":                    "each one",
+    # Cognate-accusative idiom normalizations (Jonah-attested)
+    "וַיִּזְבְּחוּ זֶבַח":              "and they offered a sacrifice",
+    "וַיִּזְבְּחוּ־זֶבַח":             "and they offered a sacrifice",
+    "וַיִּֽזְבְּחוּ זֶבַח":             "and they offered a sacrifice",
+    "וַיִּֽזְבְּחוּ־זֶבַח":            "and they offered a sacrifice",
+    "וַיִּדְּרוּ נְדָרִים":             "and they made vows",
+    "וַֽיִּדְּרוּ נְדָרִים":            "and they made vows",
+    "וַיִּירְאוּ יִרְאָה גְדוֹלָה":    "they were greatly afraid",
+    "וַיִּֽירְאוּ יִרְאָה גְדוֹלָה":   "they were greatly afraid",
+    "יִרְאָה גְדוֹלָה":                 "great fear",
+    # Jonah 1:1 opener
+    "וַיְהִי דְּבַר־יְהוָה אֶל־יוֹנָה בֶן־אֲמִתַּי לֵאמֹר": \
+        "and the word of Yahweh came to Jonah son of Amittai, saying",
+}
+
+# Pre-build a normalized-key lookup dict for fast phrase comparison.
+# Keys are normalized (pointing stripped, maqqef→space, sof pasuq removed).
+# Built once at startup; not at module load since normalize_for_phrase() uses
+# module-level constants that must be defined first.
+_PHRASE_MAP_NORMALIZED: dict[str, str] = {}
+
+
+def _build_phrase_map_index():
+    """Build the normalized phrase-map index. Must be called before gloss generation."""
+    global _PHRASE_MAP_NORMALIZED
+    seen: dict[str, str] = {}
+    for k, v in HEBREW_PHRASE_MAP.items():
+        nk = normalize_for_phrase(k)
+        if nk in seen and seen[nk] != v:
+            # Collision: two keys normalize to the same string but different values.
+            # Warn and keep first (longest original key wins via sort order).
+            print(f"WARNING: phrase-map collision on normalized key {nk!r}: "
+                  f"{seen[nk]!r} vs {v!r} — keeping first")
+        seen[nk] = v
+    _PHRASE_MAP_NORMALIZED = seen
+
+
+# ---------------------------------------------------------------------------
+# NATURALIZE_RULES: regex-based mechanical transformations applied after
+# per-word lookup, in order. Earlier rules may create conditions for later
+# ones; order matters.
+# ---------------------------------------------------------------------------
+NATURALIZE_RULES = [
+    # -----------------------------------------------------------------------
+    # 1. Punctuation-token cleanup (TAHOT artifacts that survive into glosses)
+    # -----------------------------------------------------------------------
+    # Strip lone "!" tokens (imperative vowel-letter artifact)
+    (r"\s+!\s+", " "),
+    (r"\s+!$",   ""),
+    (r"^!\s+",   ""),
+    # Strip lone "?" tokens that are NOT at end of interrogative clause
+    # (heuristic: keep trailing "?" only when preceded by a word, not a space)
+    (r"\?\s+",   " "),   # mid-sentence "?" → strip
+    # -----------------------------------------------------------------------
+    # 2. Compound preposition normalization
+    # -----------------------------------------------------------------------
+    (r"\bfrom to\b",    "from"),
+    (r"\bfrom on\b",    "from upon"),
+    (r"\bfrom off\b",   "from off"),
+    (r"\bto to\b",      "to"),
+    # -----------------------------------------------------------------------
+    # 3. Possessive-suffix reorder ("noun its/his/her/their" → "its/his/her/their noun")
+    # These are the most common Hebrew suffixed-noun→English reorderings.
+    # -----------------------------------------------------------------------
+    (r"\bfare its\b",           "its fare"),
+    (r"\bson its\b",            "its son"),
+    (r"\bdaughter his\b",       "his daughter"),
+    (r"\bhand his\b",           "his hand"),
+    (r"\bmouth his\b",          "his mouth"),
+    (r"\bface his\b",           "his face"),
+    (r"\bheart his\b",          "his heart"),
+    (r"\bname his\b",           "his name"),
+    (r"\bvoice his\b",          "his voice"),
+    (r"\bword his\b",           "his word"),
+    (r"\bservant his\b",        "his servant"),
+    (r"\bpeople his\b",         "his people"),
+    (r"\bhouse his\b",          "his house"),
+    (r"\bpath his\b",           "his path"),
+    (r"\bway his\b",            "his way"),
+    (r"\bhand her\b",           "her hand"),
+    (r"\bmouth their\b",        "their mouth"),
+    (r"\bhand their\b",         "their hand"),
+    (r"\bwickedness their\b",   "their wickedness"),
+    (r"\bhand my\b",            "my hand"),
+    (r"\bmouth my\b",           "my mouth"),
+    (r"\bface my\b",            "my face"),
+    (r"\bsoul my\b",            "my soul"),
+    (r"\bpeople my\b",          "my people"),
+    (r"\bservant my\b",         "my servant"),
+    (r"\bgods his\b",           "his gods"),
+    (r"\bgod your\b",           "your god"),
+    (r"\bgod my\b",             "my God"),
+    (r"\bGod his\b",            "his God"),
+    (r"\bGod my\b",             "my God"),
+    (r"\bgods their\b",         "their gods"),
+    (r"\bstorming its\b",       "its storming"),
+    (r"\bthrone his\b",         "his throne"),
+    (r"\bcloak his\b",          "his cloak"),
+    (r"\banger his\b",          "his anger"),
+    (r"\bwrath his\b",          "his wrath"),
+    (r"\bbelly his\b",          "his belly"),
+    (r"\bhead my\b",            "my head"),
+    (r"\bdepths their\b",       "their depths"),
+    (r"\bwaves your\b",         "your waves"),
+    (r"\bbillows your\b",       "your billows"),
+    (r"\bholiness your\b",      "your holy"),
+    (r"\beyes your\b",          "your eyes"),
+    (r"\bprayer my\b",          "my prayer"),
+    (r"\bdistress my\b",        "my distress"),
+    (r"\bvow my\b",             "my vow"),
+    (r"\blife my\b",            "my life"),
+    (r"\bbars its\b",           "its bars"),
+    (r"\bneighbor his\b",       "his neighbor"),
+    (r"\blocality his\b",       "his place"),
+    (r"\bplace his\b",          "his place"),
+    # -----------------------------------------------------------------------
+    # 4. NP-Demonstrative reorder ("the X this/that" → "this/that X")
+    # Hebrew: definite noun + definite demonstrative (הָאִישׁ הַזֶּה)
+    # -----------------------------------------------------------------------
+    (r"\bthe man this\b",       "this man"),
+    (r"\bthe woman this\b",     "this woman"),
+    (r"\bthe city this\b",      "this city"),
+    (r"\bthe house this\b",     "this house"),
+    (r"\bthe day this\b",       "this day"),
+    (r"\bthe storm this\b",     "this storm"),
+    (r"\bthe evil this\b",      "this evil"),
+    (r"\bthe thing this\b",     "this thing"),
+    (r"\bthe word this\b",      "this word"),
+    (r"\bthe place this\b",     "this place"),
+    (r"\bthe people this\b",    "this people"),
+    (r"\bthe land this\b",      "this land"),
+    (r"\bthe man that\b",       "that man"),
+    (r"\bthe woman that\b",     "that woman"),
+    (r"\bthe city that\b",      "that city"),
+    (r"\bthe day that\b",       "that day"),
+    # -----------------------------------------------------------------------
+    # 5. Predicate-nominative pronoun-fronting ("am X I" → "I am X")
+    # Hebrew: PRED + COPULA-zero + PRONOUN
+    # -----------------------------------------------------------------------
+    (r"\bam a (\w+) I\b",       r"I am a \1"),
+    (r"\bam an (\w+) I\b",      r"I am an \1"),
+    (r"\bam (\w+) I\b",         r"I am \1"),
+    # -----------------------------------------------------------------------
+    # 6. "for am knowing I" / "am knowing I" → "for I know" / "I know"
+    # (Jonah 1:12 — verbal copula with participle)
+    # -----------------------------------------------------------------------
+    (r"\bfor am knowing I\b",   "for I know"),
+    (r"\bam knowing I\b",       "I know"),
+    # -----------------------------------------------------------------------
+    # 7. Particle reorder
+    # -----------------------------------------------------------------------
+    (r"\bdo not please\b",      "please do not"),
+    # "tell please to us" → "tell us please"
+    (r"\btell please to us\b",  "tell us please"),
+    # -----------------------------------------------------------------------
+    # 8. Interrogative cleanup: remove stranded "what?" / "where?" etc
+    # that survive after morph-level lookup (Macula emits "what?" as a gloss).
+    # Replace with plain "what" / "where" etc.
+    # -----------------------------------------------------------------------
+    (r"\bwhat\?\b",  "what"),
+    (r"\bwhere\?\b", "where"),
+    (r"\bwho\?\b",   "who"),
+    (r"\bhow\?\b",   "how"),
+    (r"\bwhy\?\b",   "why"),
+    # -----------------------------------------------------------------------
+    # 9. Double-article cleanup
+    # -----------------------------------------------------------------------
+    (r"\bthe the\b", "the"),
+    # -----------------------------------------------------------------------
+    # 10. Common Hebrew attributive-adjective reorder ("noun adj" → "adj noun").
+    # Hebrew: NOUN + ADJECTIVE (both definite or both indefinite).
+    # These are the most frequent Jonah / narrative-prose patterns.
+    # -----------------------------------------------------------------------
+    (r"\ba wind great\b",          "a great wind"),
+    (r"\ba storm great\b",         "a great storm"),
+    (r"\ba fish great\b",          "a great fish"),
+    (r"\ba city great\b",          "a great city"),
+    (r"\ba fear great\b",          "great fear"),
+    (r"\bthe wind great\b",        "the great wind"),
+    (r"\bthe storm great\b",       "the great storm"),
+    (r"\bthe fish great\b",        "the great fish"),
+    (r"\bthe city great\b",        "the great city"),
+    (r"\bthe fear great\b",        "the great fear"),
+    (r"\bthe day great\b",         "the great day"),
+    (r"\ba day one\b",             "one day"),
+    (r"\bdays three\b",            "three days"),
+    (r"\bnights three\b",          "three nights"),
+    (r"\bdays forty\b",            "forty days"),
+    # -----------------------------------------------------------------------
+    # 11. VS→SV reorder for wayyiqtol-initial narrative.
+    # These are the most frequent instances in Jonah 1.
+    # Pattern: "and he/they/it [VERB] the/a [SUBJECT]" → SVO order.
+    # Applied via targeted phrase patterns (regex is limited here; full
+    # morphology-driven reorder would require structural tagging).
+    # -----------------------------------------------------------------------
+    (r"\band he arose (Jonah)\b",               r"and \1 arose"),
+    (r"\band he went down (Joppa)\b",           r"and he went down to \1"),
+    (r"\band they were afraid the (mariners|men|sailors)\b",
+                                                r"and the \1 were afraid"),
+    (r"\band it fell the lot\b",                "and the lot fell"),
+    (r"\band they rowed the men\b",             "and the men rowed"),
+    (r"\band it stopped the sea\b",             "and the sea stopped"),
+    (r"\band the sea stopped\b",                "and the sea stopped"),
+    (r"\band he arose Yahweh\b",                "and Yahweh he hurled"),  # 1:4 special
+    # -----------------------------------------------------------------------
+    # 12. Collapse multiple whitespace (always last)
+    # -----------------------------------------------------------------------
+    (r"  +", " "),
+]
+
+
+# ---------------------------------------------------------------------------
+# Unicode utilities
+# ---------------------------------------------------------------------------
+
+def strip_pointing(text: str) -> str:
+    """Strip te'amim and niqqud; keep consonants + maqqef. NFC-normalize first.
+
+    Maqqef (U+05BE) is preserved because word-level matching needs it to
+    distinguish tokens. Use normalize_for_phrase() when comparing to phrase-map
+    keys (which treats maqqef as a word separator).
+    """
+    nfc = unicodedata.normalize("NFC", text)
+    return DIACRITICS_RE.sub("", nfc)
+
+
+def normalize_for_phrase(text: str) -> str:
+    """Strip pointing + normalize maqqef to space + strip sof pasuq + collapse spaces.
+
+    Use this for phrase-map key comparison so that 'וַיִּזְבְּחוּ זֶבַח' and
+    'וַיִּזְבְּחוּ־זֶבַח' (maqqef variant) both match the same phrase-map entry.
+    """
+    stripped = strip_pointing(text)
+    # Normalize maqqef → space (maqqef-joined words should match space-separated keys)
+    normalized = stripped.replace(MAQQEF, " ")
+    # Remove sof pasuq
+    normalized = normalized.replace(SOF_PASUQ, "")
+    # Paseq U+05C0 may survive; remove it too
+    normalized = normalized.replace("׀", "")
+    # Collapse multiple spaces
+    normalized = re.sub(r"  +", " ", normalized).strip()
+    return normalized
+
+
+# ---------------------------------------------------------------------------
+# TSV loader
+# ---------------------------------------------------------------------------
+
+def load_macula_tsv(book_prefix: str | None = None) -> dict:
+    """Load Macula Hebrew TSV into a dict: ref → list[dict of morpheme fields].
+
+    If book_prefix is given (e.g. 'JON'), only rows for that book are loaded,
+    which keeps memory use low for single-book runs. Pass None to load all.
+    """
+    if not MACULA_TSV.exists():
+        sys.exit(f"ERROR: Macula Hebrew TSV not found at {MACULA_TSV}")
+    size_mb = MACULA_TSV.stat().st_size // 1024 // 1024
+    scope = f" (filtering to {book_prefix})" if book_prefix else ""
+    print(f"Loading Macula Hebrew TSV ({size_mb} MB){scope}...")
+    by_ref: dict[str, list[dict]] = defaultdict(list)
+    loaded = 0
+    with MACULA_TSV.open(encoding="utf-8") as f:
+        reader = csv.DictReader(f, delimiter="\t")
+        for row in reader:
+            ref = row.get("ref", "").strip()
+            if not ref:
+                continue
+            if book_prefix and not ref.startswith(book_prefix + " "):
+                continue
+            by_ref[ref].append({
+                "text":    row.get("text",    ""),
+                "gloss":   row.get("gloss",   ""),
+                "english": row.get("english", ""),
+                "morph":   row.get("morph",   ""),
+                "type":    row.get("type",    ""),
+                "pos":     row.get("pos",     ""),
+                "state":   row.get("state",   ""),
+                "after":   row.get("after",   ""),
+            })
+            loaded += 1
+    total_words = len(by_ref)
+    print(f"  Loaded {loaded:,} morpheme rows across {total_words:,} word positions.")
+    return dict(by_ref)
+
+
+# ---------------------------------------------------------------------------
+# Per-word gloss aggregation
+# ---------------------------------------------------------------------------
+
+def aggregate_word_gloss(morph_rows: list[dict]) -> str:
+    """Aggregate morpheme glosses for one word position into a single English token.
+
+    Strategy:
+    - Collect non-empty, non-trivial gloss fields.
+    - Replace dot-notation separators with spaces (Cherith: "it.came" → "it came").
+    - Filter out empty/trivial gloss tokens (dm, cmp, et, the).
+    - If no usable gloss, fall back to english field.
+    - Prefer gloss field always (uses 'Yahweh', not 'LORD').
+    """
+    parts = []
+    for row in morph_rows:
+        g = row.get("gloss", "").strip()
+        # Replace dot-notation with spaces (Cherith morpheme separator)
+        # e.g. "it.came" → "it came", "(dm).that" → "(dm) that"
+        g = g.replace(".", " ")
+        # Strip leading discourse-marker / complementizer tags that Cherith
+        # prepends to content glosses, e.g. "(dm) that" → "that".
+        g = re.sub(r"^\(dm\)\s*", "", g, flags=re.IGNORECASE)
+        g = re.sub(r"^\(cmp\)\s*", "", g, flags=re.IGNORECASE)
+        # Skip fully trivial/empty tokens (whole gloss is a tag or blank)
+        g_stripped = g.strip()
+        if g_stripped.lower() in EMPTY_GLOSS_TOKENS:
+            continue
+        # Skip gloss tokens that are entirely a bracketed tag "(et)", "(the)", etc.
+        if re.fullmatch(r"\([\w\s]+\)", g_stripped):
+            continue
+        # Strip bracketed-optional markers like "[was]" → keep the content word
+        g_stripped = re.sub(r"\[([^\]]+)\]", r"\1", g_stripped).strip()
+        if g_stripped:
+            parts.append(g_stripped)
+
+    if parts:
+        return " ".join(parts)
+
+    # Fallback: use english field of any morpheme that has non-trivial content.
+    for row in morph_rows:
+        e = row.get("english", "").strip()
+        if e and e not in {"", "the", "a", "an"}:
+            return e
+    # Last resort: join all english fields
+    en_parts = [r.get("english", "").strip() for r in morph_rows if r.get("english", "").strip()]
+    if en_parts:
+        return " ".join(en_parts)
+
+    # All morphemes were empty or trivial (e.g. pure (et) accusative marker,
+    # or (dm) discourse marker with empty english). Skip this token silently.
+    return SKIP_TOKEN
+
+
+# ---------------------------------------------------------------------------
+# Verse-word lookup
+# ---------------------------------------------------------------------------
+
+def lookup_verse_words(by_ref: dict, osis_book: str, ch: int, vs: int) -> list[list[dict]]:
+    """Return ordered list of word-positions for a verse.
+
+    Each element is a list of morpheme rows sharing the same ref (same word position).
+    Iterates ref values matching '<OSIS> <ch>:<vs>!N' for N=1..M.
+    """
+    prefix = f"{osis_book} {ch}:{vs}!"
+    word_positions = []
+    n = 1
+    while True:
+        ref = f"{prefix}{n}"
+        rows = by_ref.get(ref)
+        if not rows:
+            break
+        word_positions.append(rows)
+        n += 1
+    return word_positions
+
+
+# ---------------------------------------------------------------------------
+# Per-cola gloss generation
+# ---------------------------------------------------------------------------
+
+def gloss_cola(
+    hebrew_cola: str,
+    verse_words: list[list[dict]],
+    consumed: list[bool],
+    verbose: bool = False,
+) -> str:
+    """Generate English gloss for one Hebrew cola.
+
+    Steps:
+    1. Normalize cola (strip pointing, maqqef→space, remove sof pasuq).
+    2. Try HEBREW_PHRASE_MAP full-cola match (exact normalized comparison).
+    3. Try HEBREW_PHRASE_MAP prefix match (cola starts with phrase; emit phrase
+       then continue per-word for remainder, marking consumed words).
+    4. Per-word Macula lookup: for each Hebrew token, find matching unconsumed
+       verse-word by stripped-surface comparison; aggregate morpheme glosses.
+    5. Join word-glosses; apply NATURALIZE_RULES.
+    """
+    cola_norm = normalize_for_phrase(hebrew_cola)
+
+    # ------------------------------------------------------------------
+    # Step 1: full-cola phrase-map match (exact normalized)
+    # ------------------------------------------------------------------
+    if cola_norm in _PHRASE_MAP_NORMALIZED:
+        result = _PHRASE_MAP_NORMALIZED[cola_norm]
+        if verbose:
+            print(f"    [PHRASE-MAP full] {hebrew_cola!r} → {result!r}")
+        # Mark all verse-words consumed so downstream verses track correctly
+        for i in range(len(consumed)):
+            consumed[i] = True
+        return result
+
+    # ------------------------------------------------------------------
+    # Step 2: prefix phrase-map match (cola starts with phrase key).
+    # If matched, emit the phrase text, then continue per-word for the
+    # remaining Hebrew tokens (already-consumed words tracked via consumed[]).
+    # ------------------------------------------------------------------
+    prefix_match_en: str | None = None
+    prefix_match_word_count: int = 0
+
+    for norm_key in sorted(_PHRASE_MAP_NORMALIZED.keys(), key=len, reverse=True):
+        if not norm_key:
+            continue
+        # Check if the cola normalization starts with this key.
+        # Must be followed by end-of-string or a space (word boundary).
+        if cola_norm == norm_key or cola_norm.startswith(norm_key + " "):
+            prefix_match_en = _PHRASE_MAP_NORMALIZED[norm_key]
+            # How many whitespace-separated words does the key contain?
+            prefix_match_word_count = len(norm_key.split())
+            if verbose:
+                print(f"    [PHRASE-MAP prefix] {hebrew_cola!r} prefix={norm_key!r} → {prefix_match_en!r}")
+            break
+
+    # ------------------------------------------------------------------
+    # Step 3: per-word lookup (always runs; prefix match consumes leading words)
+    # ------------------------------------------------------------------
+    # Tokenize the cola on whitespace; maqqef-joined words stay as single tokens.
+    cola_tokens = hebrew_cola.split()
+    out_tokens: list[str] = []
+
+    # If a prefix phrase matched, inject its English output first, then skip
+    # the Hebrew tokens that were covered by the phrase (by marking verse-words
+    # consumed). We count cola tokens consumed by the phrase by matching them
+    # sequentially against verse-words.
+    skip_cola_tokens = 0
+    if prefix_match_en is not None:
+        out_tokens.append(prefix_match_en)
+        # Consume verse-words corresponding to the phrase's cola tokens.
+        # Strategy: walk cola tokens; for each, expand maqqef sub-tokens and
+        # greedily consume verse-words. Stop when we've consumed
+        # `prefix_match_word_count` normalized-phrase words (counted by the
+        # space-separated words in the matched key).
+        phrase_norm_words_consumed = 0
+        for ci, cw in enumerate(cola_tokens):
+            if phrase_norm_words_consumed >= prefix_match_word_count:
+                skip_cola_tokens = ci
+                break
+            cw_clean = cw.replace(SOF_PASUQ, "").replace("׀", "")
+            cw_stripped_mq = strip_pointing(cw_clean)
+            # Each maqqef-sub-token counts as one Macula word position
+            cw_parts = [p for p in cw_stripped_mq.split(MAQQEF) if p]
+            if not cw_parts:
+                cw_parts = [cw_stripped_mq]
+            for cw_sub in cw_parts:
+                if phrase_norm_words_consumed >= prefix_match_word_count:
+                    break
+                for i, word_rows in enumerate(verse_words):
+                    if consumed[i]:
+                        continue
+                    word_surface = "".join(
+                        strip_pointing(r.get("text", "")) for r in word_rows
+                    ).replace(MAQQEF, "")
+                    # Liberal match: prefix agreement
+                    if cw_sub and word_surface and cw_sub[:2] == word_surface[:2]:
+                        consumed[i] = True
+                        break
+                    elif not cw_sub or not word_surface:
+                        consumed[i] = True
+                        break
+                phrase_norm_words_consumed += 1
+        else:
+            # Loop completed without break → phrase covered all cola tokens
+            skip_cola_tokens = len(cola_tokens)
+
+    for cw in cola_tokens[skip_cola_tokens:]:
+        # Strip end-of-verse markers and paseq from the token
+        cw_clean = cw.replace(SOF_PASUQ, "").replace("׀", "")  # ׃ ׀
+
+        # MAQQEF EXPANSION: a whitespace-separated token may contain maqqef,
+        # meaning it spans multiple Macula word positions (e.g. "אֶל־יְהוָה"
+        # covers word positions !N and !N+1). Strip pointing, then split on
+        # maqqef (which strip_pointing now preserves). Each sub-token is
+        # matched to one Macula word position, and the resulting glosses
+        # are joined with a space.
+        #
+        # For the non-maqqef case (most tokens), cw_parts has one element.
+        cw_stripped_with_mq = strip_pointing(cw_clean)
+        # Split on maqqef to get sub-tokens; filter empty strings
+        cw_parts = [p for p in cw_stripped_with_mq.split(MAQQEF) if p]
+        if not cw_parts:
+            cw_parts = [cw_stripped_with_mq]  # safety
+
+        for cw_cons in cw_parts:
+            matched = False
+
+            # --- Primary: exact stripped-consonant surface match ---
+            for i, word_rows in enumerate(verse_words):
+                if consumed[i]:
+                    continue
+                # Build consonant surface for this word position by joining all
+                # morpheme text fields (strip pointing, remove maqqef).
+                word_surface = "".join(
+                    strip_pointing(r.get("text", "")) for r in word_rows
+                ).replace(MAQQEF, "")
+                if word_surface == cw_cons:
+                    gloss_tok = aggregate_word_gloss(word_rows)
+                    consumed[i] = True
+                    matched = True
+                    if gloss_tok != SKIP_TOKEN:
+                        out_tokens.append(gloss_tok)
+                    if verbose:
+                        print(f"      [exact-match] {cw_cons!r} → {gloss_tok!r}")
+                    break
+
+            if not matched:
+                # --- Fallback: prefix / partial consonant match ---
+                if len(cw_cons) >= 2:
+                    for i, word_rows in enumerate(verse_words):
+                        if consumed[i]:
+                            continue
+                        word_surface = "".join(
+                            strip_pointing(r.get("text", "")) for r in word_rows
+                        ).replace(MAQQEF, "")
+                        # Accept if first 2 consonants match and lengths are similar
+                        if (word_surface
+                                and cw_cons[:2] == word_surface[:2]
+                                and abs(len(cw_cons) - len(word_surface)) <= 3):
+                            gloss_tok = aggregate_word_gloss(word_rows)
+                            consumed[i] = True
+                            matched = True
+                            if gloss_tok != SKIP_TOKEN:
+                                out_tokens.append(gloss_tok)
+                            if verbose:
+                                print(f"      [prefix-match] {cw_cons!r} ~ {word_surface!r} → {gloss_tok!r}")
+                            break
+
+            if not matched:
+                # --- Sequential fallback: next unconsumed word ---
+                for i, word_rows in enumerate(verse_words):
+                    if consumed[i]:
+                        continue
+                    gloss_tok = aggregate_word_gloss(word_rows)
+                    consumed[i] = True
+                    matched = True
+                    if gloss_tok != SKIP_TOKEN:
+                        out_tokens.append(gloss_tok)
+                    if verbose:
+                        print(f"      [seq-fallback] {cw_cons!r} → {gloss_tok!r}")
+                    break
+
+            if not matched:
+                if verbose:
+                    print(f"      [NO-MATCH] {cw_cons!r}")
+                # Don't emit (?) for unmatched tokens — they're likely already
+                # consumed by a phrase-map or are empty particles
+
+    # ------------------------------------------------------------------
+    # Step 4: join + naturalize
+    # ------------------------------------------------------------------
+    raw_text = " ".join(out_tokens)
+    if verbose:
+        print(f"    [raw] {raw_text!r}")
+    text = naturalize(raw_text)
+    if verbose:
+        print(f"    [nat] {text!r}")
+    return text
+
+
+def naturalize(text: str) -> str:
+    """Apply mechanical Hebrew→English transformations in order."""
+    for pattern, replacement in NATURALIZE_RULES:
+        text = re.sub(pattern, replacement, text, flags=re.IGNORECASE)
+    return text.strip()
+
+
+# ---------------------------------------------------------------------------
+# Chapter processor
+# ---------------------------------------------------------------------------
+
+def process_chapter(
+    book: str,
+    chapter_filename: str,
+    by_ref: dict,
+    osis_book: str,
+    use_v1: bool,
+    dry_run: bool,
+    verbose: bool,
+) -> list[str] | None:
+    """Generate gloss for one chapter file. Returns output lines or None if skipped."""
+    # Source cascade: v2/he preferred, v1/he-baseline fallback.
+    src_path = None
+    if not use_v1:
+        candidate = V2_HE_DIR / book / chapter_filename
+        if candidate.exists():
+            src_path = candidate
+    if src_path is None:
+        candidate = V1_HE_DIR / book / chapter_filename
+        if candidate.exists():
+            src_path = candidate
+
+    if src_path is None:
+        print(f"  SKIP {chapter_filename}: not found in v2/he or v1/he-baseline")
+        return None
+
+    if verbose:
+        print(f"  Processing {chapter_filename} from {src_path}")
+
+    out_lines: list[str] = []
+    current_verse: str | None = None
+    verse_words: list[list[dict]] = []
+    consumed: list[bool] = []
+
+    for raw in src_path.read_text(encoding="utf-8").splitlines():
+        line = raw.rstrip()
+        stripped = line.strip()
+
+        if VERSE_REF_RE.match(stripped):
+            current_verse = stripped
+            ch_str, vs_str = current_verse.split(":")
+            verse_words = lookup_verse_words(by_ref, osis_book, int(ch_str), int(vs_str))
+            consumed = [False] * len(verse_words)
+            out_lines.append(line)
+            if verbose:
+                print(f"\n  === verse {current_verse} ({len(verse_words)} word positions) ===")
+            continue
+
+        if stripped == "":
+            out_lines.append(line)
+            continue
+
+        if current_verse is None:
+            # Header line before first verse ref (shouldn't normally appear)
+            out_lines.append(line)
+            continue
+
+        # Hebrew cola line
+        gloss = gloss_cola(stripped, verse_words, consumed, verbose=verbose)
+        out_lines.append(gloss)
+
+    if dry_run:
+        print(f"  {chapter_filename} (dry-run): would write to {OUT_DIR / book / chapter_filename}")
+        print()
+        for ln in out_lines[:40]:
+            print(f"    {ln}")
+        if len(out_lines) > 40:
+            print(f"    ... ({len(out_lines)} lines total)")
+    else:
+        out_path = OUT_DIR / book / chapter_filename
+        out_path.parent.mkdir(parents=True, exist_ok=True)
+        out_path.write_text("\n".join(out_lines) + "\n", encoding="utf-8")
+        print(f"  {chapter_filename}: wrote {out_path}")
+
+    return out_lines
+
+
+# ---------------------------------------------------------------------------
+# Entry point
+# ---------------------------------------------------------------------------
+
+def main():
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--book",    required=True, help="Book folder name, e.g. 05-jonah")
+    ap.add_argument("--use-v1", action="store_true",
+                    help="Generate from v1/he-baseline instead of v2/he")
+    ap.add_argument("--dry-run", action="store_true",
+                    help="Don't write output files; print preview")
+    ap.add_argument("--verbose", action="store_true",
+                    help="Print each cola's Hebrew + generated gloss with match details")
+    args = ap.parse_args()
+
+    osis_book = BOOK_OSIS.get(args.book)
+    if not osis_book:
+        sys.exit(
+            f"ERROR: no OSIS mapping for book {args.book!r} — add to BOOK_OSIS dict.\n"
+            f"Known books: {', '.join(sorted(BOOK_OSIS))}"
+        )
+
+    # Determine chapter files from the available Hebrew tiers.
+    src_dir_v2 = V2_HE_DIR / args.book
+    src_dir_v1 = V1_HE_DIR / args.book
+    all_chapter_files = sorted(
+        {p.name for p in src_dir_v2.glob("*.txt") if src_dir_v2.exists()}
+        | {p.name for p in src_dir_v1.glob("*.txt") if src_dir_v1.exists()}
+    )
+    if not all_chapter_files:
+        sys.exit(f"ERROR: no .txt chapter files found under {src_dir_v2} or {src_dir_v1}")
+
+    # Build phrase-map index (stripped keys).
+    _build_phrase_map_index()
+
+    # Load Macula TSV filtered to this book.
+    by_ref = load_macula_tsv(book_prefix=osis_book)
+
+    print(f"\nGenerating gloss for {args.book} ({len(all_chapter_files)} chapters)...")
+    for cf_name in all_chapter_files:
+        process_chapter(
+            book=args.book,
+            chapter_filename=cf_name,
+            by_ref=by_ref,
+            osis_book=osis_book,
+            use_v1=args.use_v1,
+            dry_run=args.dry_run,
+            verbose=args.verbose,
+        )
+
+    if not args.dry_run:
+        print(f"\nDone. Output: {OUT_DIR / args.book}/")
+    else:
+        print(f"\nDry-run complete. No files written.")
+
+
+if __name__ == "__main__":
+    main()
