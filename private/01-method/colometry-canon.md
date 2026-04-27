@@ -1,0 +1,1108 @@
+# Tanakh Colometry — Operating Canon
+
+**Version:** 1.0 (2026-04-26 rewrite from scratch)
+**Predecessor:** `archive/colometry-canon-stub-2026-04-25-retired-2026-04-26.md` — retained for reference, no longer authoritative. The predecessor was a 231-line stub whose central commitment (te'amim-prior with override-warrant discipline) was demoted on the grounds that the te'amim are a Tiberian-Masoretic editorial overlay (~9th–10th c. CE), not a structural prior — which makes them the Hebrew analog of NA28 punctuation in the sibling GNT project and Pratt's 1879 BoFM versification. Sibling-project methodology (BoFM canon v2.0; GNT canon) explicitly forbids editorial overlays from driving line-break decisions. This canon corrects that.
+
+---
+
+**What is this document?**
+
+This document serves as a canon for laying out the main design philosophy (the *what / why / posture* of the project) as well as the pragmatic implementation rules and principles (the *how* — rules and tests an editor reads literally for application). There are times when the line between design philosophy and operational implementation blends together. The structure aims to keep the integration honest while making the predominant character of each section legible at a glance.
+
+- **Part I (The Method, §§0-2)** is the constitutional core: foundational methodology (§§0-1) and autonomy boundary (§2). Each section header discloses whether the section is mainly philosophical, mainly operational, or dual-natured.
+- **Part II (Operating Rules, §§3-6)** carries the quick-reference rule table, Layer 1 pointers, rule detail, and the validator suite.
+- **Part III (Process and Meta, §§7-8)** is change protocol and the chronological update log.
+
+**Reader's guide:**
+
+- **Editor making editorial decisions** (a Claude session working on the corpus): focus on §§3-6 and §7. Consult §§0-1 for grounding when proposing or evaluating rules.
+- **Scholar reading the method as a published artifact**: focus on §§0-1 (foundational method + framework theory) and §7 (change protocol + defensibility).
+- **Tracking how a decision evolved**: §8 carries the reasoning trail.
+
+Some sections are dual-natured by design: §1 interleaves theoretical principles with their operational corollaries. **Treat bolded paragraphs as load-bearing** in those sections regardless of the surrounding prose's character. When revising philosophical prose in dual-natured sections, leave bolded paragraphs untouched unless the change is intentional and audited per §7.
+
+---
+
+# Part I — Method
+
+*Everything in Part I is authoritative and current. Sections 0 through 2 contain the foundational method; §2 Autonomy Boundary governs when to apply vs. flag.*
+
+## §0 Purpose and Stance
+
+*Purpose: **mainly philosophical** — mission, intellectual origin, pragmatic stance, scope. Ground for §1. §0.1 Textual Posture is dual-natured: methodological commitment (philosophical) with operational scope enumeration.*
+
+### Mission
+
+**We are revealing sense-lines — atomic thoughts the reader can process as discrete units.** Each line is a unit of meaning the reader can take in before needing the next. We are not doing typography. We are not revealing rhetorical parallelism (Lowth / Berlin parallelism analysis is a separate scholarly layer that may overlap with ours but is not our target). We are not prescribing oral delivery. We are not mechanizing the te'amim or any other historical reading-tradition's chant structure. We are formatting the text so that an ESL reader, a child, a newcomer to the Hebrew Bible, or an experienced reader looking for the compositional architecture can take Scripture one atomic thought at a time.
+
+### Origin
+
+**Stan's premise:** *"Humans think, compose, and deconstruct (read and hear) in sense-lines — atomic thought-units that correspond to how ideas are generated, encoded, and recovered."* This is the working hypothesis driving the project.
+
+**Intellectual lineage.** Royal Skousen's demonstration that the Book of Mormon could be reduced to sense-lines (*The Earliest Text*, 2009/2022) was the original trigger. Skousen's stated rationale in *The Earliest Text* was specific to the Book of Mormon: his sense-lines aim to convey "a dictated rather than a written text," approximating how the original translation might have sounded during Joseph Smith's dictation. Stan took the term as a starting point and expanded the concept beyond Skousen's specific rationale — applying it first to the Book of Mormon English text (sibling project), then to the Greek New Testament (sibling project), and from those experiments concluded the hypothesis applies to *any* text. **The Tanakh Reader is the analogical extension to biblical Hebrew** — what is true for the BoFM and the GNT is likely true for the Tanakh, and perhaps any text.
+
+The methodology itself — three forces, structural justifications, merge-overrides, autonomy boundary, audit triggers — was not invented for Hebrew. It emerged from ~13 months of hands-on editorial experimentation across the BoFM corpus and the GNT corpus, was iteratively refined against ~50+ documented reverts and adversarial-audit catches, and converged on the architecture this canon now ports. The Tanakh project does not need to re-invent any of it. It does need to slot in Hebrew-specific material where the corpus diverges from its siblings — which is where Part II §5 and the Hebrew-specific sections of Part I §1 do their work.
+
+### Method
+
+**The mission is sense-driven. The method is syntax-constrained.** These are different things and they belong in different parts of this document.
+
+The method leads with syntax (§1 "Syntax Forbids Splits") not because syntax is primary to the mission, but because **syntactic violation is fatal while sense ambiguity is recoverable within the permitted space.** A break that violates Hebrew syntax is always wrong no matter how strong the sense argument; a sense judgment inside the permitted space can be revisited by editorial review. Leading with syntax preserves the discipline that lets sense work — it doesn't demote the mission.
+
+Novel rules can and do originate from sense-driven observation. The method accommodates this: sense proposes, syntax filters, the combination becomes a rule. But every break that survives to the corpus must be affirmable by Hebrew syntax. This is the non-negotiable operational floor.
+
+### Pragmatic stance
+
+This methodology is a set of conventions that reflect what we are trying to reveal. It is not derived from a cognitive theory; we are not claiming otherwise. It is also not derived from any particular Hebrew-poetics theory (Lowth / Kugel / Berlin / Dobbs-Allsopp). Later work may investigate why it works and how it relates to standing scholarship. For now, we operate it honestly as what it is: a consistently-applied editorial practice grounded in Hebrew syntax, tested against the corpus, and refined by validator sweeps and adversarial audits.
+
+### Ground
+
+Every rule here cites a Hebrew grammatical fact (anchored in standard reference grammars — Joüon-Muraoka, Waltke-O'Connor *Biblical Hebrew Syntax*, GKC — and in specific corpus instances). Rules that cannot be grounded in Hebrew syntax are editorial principles and labeled as such.
+
+### Scope
+
+This canon governs where lines break in the v4-editorial source files. It does not govern textual decisions (those follow the textual-posture statement at §0.1; the project does not adjudicate MT against versions), niqqud, te'amim glyph rendering, or layout beyond break positions. Scripts that touch the source text — `scripts/ingest_tahot.py`, `scripts/parse_teamim.py`, `scripts/build_books.py` — implement this canon's mechanical-rule subset; their output (`v0-prose/`, `v1-he-baseline/`, `books/`) is canon-compliant by construction within the limits of mechanical detectability.
+
+### §0.1 Textual Posture
+
+This is a **colometric reading edition based on a single textual tradition: the Tiberian Masoretic Text in its Leningrad recension**. It is not a critical edition and not an eclectic edition. The project does not adjudicate the Masoretic Text against ancient versions, and adopts no readings from them.
+
+**In scope (as textual base):**
+
+- The Westminster Leningrad Codex consonants, niqqud, and te'amim, as transmitted by current free digital editions (STEPBible TAHOT primary; OSHB and UXLC as transcription cross-checks)
+- Internal Masoretic apparatus that the Masoretes themselves preserved: Ketiv/Qere, sebirin readings, the petucha/setuma divisions
+
+**In scope (as reference, not adopted):**
+
+- Miqra `al pi ha-Mesorah (Aleppo-tradition base) is vendored as tradition reference. Where Aleppo and Leningrad disagree, the project follows Leningrad. The presence of MAM in `research/` enables tradition-awareness and spot-checking, not textual eclecticism.
+
+**Out of scope:**
+
+- The Septuagint, Old Greek, and recensional traditions (Theodotion, Symmachus, Aquila, Lucianic)
+- The Dead Sea Scrolls and pre-Masoretic Hebrew witnesses
+- The Samaritan Pentateuch
+- The Targums (Onqelos, Jonathan, Pseudo-Jonathan, Neofiti)
+- The Peshitta and Vulgate
+- BHS / BHQ / HUB / HBCE editorial apparatus and stichometry
+
+These traditions and editions are scholarly resources of the highest importance, and the editorial decisions they document are not trivial. They are excluded here because the project's contribution is colometric — applying a sense-line methodology to a stable textual base — not text-critical. Re-litigating MT against versions is a different project, in another scholar's specialization, and would dilute this project's central methodological commitment. A future extension could add an opt-in comparator layer; it would not change the textual base of the rendered edition.
+
+**Where MT itself preserves variants:**
+
+- Ketiv/Qere — Qere primary, Ketiv accessible as hover/footnote (see §5 Rule H6).
+- Sebirin — printed reading is the base; the sebirin alternative is preserved as marginal note where the Masorah records it.
+- Tiqqunei sopherim and itture sopherim — the Masorah's own annotations are preserved as marginal notes; the printed text follows the Masoretic form.
+
+---
+
+## §1 The Framework — Proposition-First, Syntax-Constrained
+
+*Purpose: **dual-natured** — generative principle, structural justifications, merge-overrides, decision procedure (operational), and the philosophical grounding for those mechanics (Container-Not-Originator, Imposing vs. Revealing, te'amim demotion). Bolded paragraphs throughout are load-bearing operational content embedded in philosophical framing.*
+
+The framework is: **each proposition splits by default, unless syntax forbids.** Substantive adjuncts (slot-fillers in narrative frames) count as atomic thought units and also earn their own lines. Image sharpens ambiguous cases. (Equivalently at the operational level: at any candidate boundary the default is merge — see §1 Decision Procedure step 1 — and a split is licensed only when a proposition or structural-justification boundary is identified. The two phrasings are scope-distinct: "splits by default" generates the proposition-level inventory; "merge by default" is the per-location heuristic. Same procedure, different vantage points.)
+
+### The Generative Principle
+
+**Each proposition splits by default.** A proposition is the atomic thought-unit — a complete predication (subject + finite verb + complement; or in Hebrew, also the verbless clause with its predicate+subject) that the reader can process as a single cognitive bite. Propositions drive line breaks. There is no positive requirement to break beyond this; there is no positive requirement to merge beyond this. The question at every candidate location is: *is this a proposition boundary?*
+
+"Proposition" also includes the five structural-justification cases (below) — non-predicated units that function as atomic thoughts via formal-structural recoverability. These are the only non-strict-predication units that qualify.
+
+**Hebrew anchor inventory.** A line carries an atomic thought when at least one of these is present:
+- A finite verb (qatal, yiqtol, wayyiqtol, weqatal, jussive, cohortative, imperative)
+- An infinitive (construct לְ + infinitive, or absolute used as predicate)
+- A participle standing as predicate (with explicit or implicit copula; the Hebrew predicative participle is a primary anchor type, not a peripheral one)
+- A verbless clause with explicit subject + predicate (Hebrew verbless clauses ARE atomic thoughts; do not import the Greek-canon "every line needs a verb" instinct — Hebrew syntax routinely predicates without an overt copula)
+- A substantive head independently predicated on the line (rare; typically a slot-filler under structural justification 5)
+
+### Syntax Forbids Splits — three closed-list ways
+
+Syntax does not generate breaks. Syntax only vetoes them. A split that proposition-first would generate is forbidden when one of these three applies:
+
+1. **Layer 1 mid-phrase prohibitions.** Splits mid-predication, mid-phrase, or mid-lexical-unit — line-final conjunction (וְ, וַ-, אוֹ, אֲבָל), prepositional prefix (מ/ב/כ/ל) stranded from object, definite article הַ stranded from noun, maqqef-group split, vocative unit split, etc. See [`data/syntax-reference/hebrew-break-legality.md`](../../data/syntax-reference/hebrew-break-legality.md) §1 Break Legality Reference.
+
+2. **Layer 3 complement integrity.** When the matrix verb's or adjective's valence is unsatisfied without its clausal complement — e.g., אָמַר ... כִּי / לֵאמֹר + speech content; יָדַע ... כִּי + content; צִוָּה ... אֲשֶׁר + complement — the matrix is grammatically incomplete on its own; the complement must merge unless one of the long-complement exceptions in §5 Rule H7 fires.
+
+3. **Layer 3 formula integrity.** Lexicalized multi-word frames function as single units — וַיְהִי + temporal protasis, כֹּה אָמַר יְהוָה, נְאֻם־יְהוָה, the divine-name compounds (יְהוָה צְבָאוֹת, יְהוָה אֱלֹהִים), the perpetual-qere תֵּת and its frozen forms. Never break inside the frame.
+
+These are the "unless" clauses of "split each proposition unless syntax forbids."
+
+### Image Sharpens Ambiguous Proposition Boundaries
+
+**Single image / camera angle.** When proposition-first is ambiguous (e.g., a short circumstantial clause that could read as continuation of the prior frame or as its own frame), ask: does the mind's eye reposition between candidate frames? Camera-angle shift → SPLIT. No shift → MERGE. This is a tiebreaker for ambiguous cases, not a primary generator.
+
+### The Five Structural Justifications (Closed List)
+
+Non-predicated units that function as atomic thoughts via formal-structural recoverability. The reader can reconstruct "who did what" because formal markers in the text make the missing predicate recoverable.
+
+1. **Formally-marked parallel series.** Members connected by formal markers (וְ chains, polysyndetic וְ ... וְ ... וְ, correlative גַּם ... גַּם, anaphoric repeated frames such as Pss 119 stanza markers, Lev 11 dietary catalog frames, Deut 27 curse frames, Prophetic woe-formula chains) where the shared predicate is recoverable from the parallel structure. Each member earns its own beat.
+
+    **Compound list break signals.** In a compound list governed by one preposition or verb, bare *"and [noun]"* items are compound objects and stay merged. A break inside a compound list is justified only when one of these signals is present:
+    1. **Elided auxiliary / elided verb** — each item is an implied predication
+    2. **Possessive restart** — change of pronominal suffix possessor (e.g., בְּנוֹ to בִּתָּם), or addition of a possessive suffix where the prior items had none. *Repeated identical possessive* (e.g., a king-list with each name + bound suffix) is formulaic and does NOT alone justify stacking.
+    3. **Demonstrative restart** — *"and that/this/these"* (וְזֶה, וְהִיא, וְאֵלֶּה) signals a new specified noun phrase
+    4. **Relative clause attached** — *"which/who"* (אֲשֶׁר + clause) adds a predication to the item
+
+    Without one of these signals, bare *"and [noun]"* items merge. The possessive-restart vs. repeated-possessive distinction is corpus-critical for genealogies (1 Chr 1–9, Gen 5, Gen 11): king-lists and inheritance-lists frequently trigger false-positive stacking without this test.
+
+    **M1 bonded-pair precedence inside compound lists.** When a compound-list item is itself an M1 bonded pair (hendiadys / merism / cognate pair — *חֶסֶד וֶאֱמֶת*, *שָׁמַיִם וָאָרֶץ*, *יוֹמָם וָלָיְלָה*, *שָׂרִים וְשׁוֹפְטִים*), the bonded pair is the item — the pair treats as one atomic unit within the larger series. None of the four compound-list break signals reaches inside a bonded pair to split it.
+
+2. **Portrait accumulation.** A set of attributes building one mental picture, sharing a copular or attributive frame from context (e.g., the divine attributes formula at Exod 34:6, the description of God in Deut 10:17 *הָאֵל הַגָּדֹל הַגִּבֹּר וְהַנּוֹרָא*). Applies only when the stack IS the portrait, not when it is a catalogue.
+
+3. **Speech-act announcement.** Complete communicative predication introducing direct discourse. Hebrew has rich variety here:
+    - **וַיֹּאמֶר X לֵאמֹר** — speech-intro frame, typically own-line-then-content (see §5 Rule H8 for short-vs-long defaults).
+    - **כֹּה אָמַר יְהוָה** — prophetic messenger formula, own line.
+    - **נְאֻם־יְהוָה** — oracle attribution, own line whether sentence-initial, mid-utterance (parenthetical), or sentence-final (signature).
+    - **לֵאמֹר alone** — the bare infinitive complementizer is a speech-act-announcement marker, gets its own line at the point of speech-onset.
+
+    Announcement and quoted content are separate cognitive frames.
+
+4. **Classical commata.** Short fragmentary utterances carrying full communicative weight (אַשְׁרֵי-formulas; קָדוֹשׁ קָדוֹשׁ קָדוֹשׁ at Isa 6:3; אוֹי-formulas; brief imperatives like שְׁמַע, רְאֵה, הִנֵּה used asyndetically). Typically 1–3 prosodic words; brevity + isolation = deliberate emphasis. The Tanakh has its own inventory of these (Hebrew name to be coined as the canon matures); for now, "classical commata" is the placeholder term ported from sibling projects.
+
+5. **Substantive adjunct as own focus.** A fronted or trailing adjunct (temporal PP, locative PP, causal PP, purpose clause, casus pendens / left-dislocation, circumstantial vav-clause carrying scene-setting weight) that (a) is grammatically peripheral to the matrix predication's core truth AND (b) carries substantial content — enough that the reader processes it as an independent focus rather than background — earns its own line.
+
+    **Hebrew grammatical grounding:** Hebrew treats peripheral adjuncts as syntactically detachable — they can front, trail, or be omitted without breaking the matrix. Casus pendens / topicalization (Topic-fronted NP + resumptive pronoun in the main clause) is the sharpest case; it is universally an own-focus structure (Joüon-Muraoka §156). Circumstantial clauses (vav + non-verb-initial clause indicating background or simultaneous action) are weaker but still detachable.
+
+    **Test:** can the adjunct be paraphrased as its own "when/where/why/how" clause answering a question the matrix leaves open? If yes, it is a slot-filler and earns its own line.
+
+    **Pattern: wayehi protasis as Front-End Frame (FEF).** The Hebrew construction *וַיְהִי* + temporal/circumstantial protasis + main clause is the canonical FEF: the *wayehi* + protasis frames the event, then the main clause resolves. The protasis is held together as one atomic temporal frame even when long; the main clause starts a new line. Jonah 1:1 *וַיְהִי דְבַר־יְהוָה אֶל־יוֹנָה בֶן־אֲמִתַּי לֵאמֹר* is the smallest case — even at five orthographic words the protasis is FEF-shaped and earns its own line, with the speech content (verse 2) starting fresh. Long FEFs (Gen 39:7's whole-verse protasis chain; many Lukan-style narrative openers) hold the protasis together regardless of length.
+
+    **Pattern: prophetic oracle headers and signatures.** *כֹּה אָמַר יְהוָה ... אֲדֹנָי* opening formulas and *נְאֻם־יְהוָה* signatures are substantive adjuncts in the prophetic register; each gets its own line.
+
+    **Exclusion: degree quantifiers.** Short PPs that modify the *degree* of a predicate (בִּמְעַט, מְאֹד as bare adverbs) do NOT pass the slot-paraphrase test — they modify how-much, not when/where/why. They are predicate modifiers, not slot-fillers.
+
+The list is extensible only by worked example + adversarial validation. A proposed sixth justification must demonstrate (a) that it is a genuinely distinct instance of the same generating principle — formal structure in the text enables cognitive recovery of the full predication, or substantive content independently warrants own focus — and (b) that it survives an adversarial challenge.
+
+### The Four Merge-Override Conditions (Closed List)
+
+**Symmetric counterpart to structural justifications.** Where structural justifications describe cases where the default (merge under propositions-first) is overridden to produce a split, merge-overrides describe cases where an apparent split-trigger is itself overridden — returning the members to one line. The default is still merge; these overrides catch cases where naive application of split-triggers would fragment a unit that should stay whole.
+
+**Generating principle:** Even when a line looks like it could pass the structural prong (formal markers present), merge wins when the resulting fragments would fail on more basic grounds — the chunk is not actually two propositions, the clause nucleus would be ruptured, the fragment cannot stand as atomic thought, or the cognitive prong itself fails.
+
+**Strict-application caveat — rejection ≠ split license.** When a merge-override (M1–M4) does NOT apply to a given case, that does not automatically mean the case should split. It just means THAT override doesn't fire. The default behavior is still determined by the generative principle (proposition-first) and by other applicable rules (other merge-overrides, syntactic vetoes, structural justifications). Do not reason: "M1 rejected → must split." Reason instead: "M1 rejected → apply remaining analysis." Each merge-override's absence is silent, not authorizing.
+
+The list is extensible only by worked example + adversarial validation, same rule as the structural justifications.
+
+#### M1. Bonded Pair (hendiadys / merism / cognate pair)
+
+**Definition:** N=2 coordinate members joined by וְ where the pair functions as a single unified hendiadys, merism, or bonded rhetorical image — not two independent propositions. Even under formal וְ-linkage (which would normally trigger structural justification 1), if the pair is bonded, merge.
+
+**Test:** Can the two members be paraphrased as a single unified image or hendiadys? Do they carry shared rhetorical weight without independent predicative force?
+
+**Hebrew canonical cases:**
+- *חֶסֶד וֶאֱמֶת* (covenant loyalty + truthfulness as a unified divine attribute pair) — hendiadys
+- *שָׁמַיִם וָאָרֶץ* (heaven and earth as cosmic pair) — merism
+- *הַטּוֹב וְהָרָע* (good and evil as moral totality) — merism
+- *יוֹמָם וָלָיְלָה* (day and night as temporal totality) — merism
+- *שָׂרִים וְשׁוֹפְטִים* (officials and judges as joint civic class) — bonded pair
+- *אֱמֶת וּמִשְׁפָּט* (truth and justice as paired civic virtue) — bonded
+- *זָכָר וּנְקֵבָה* (male and female as anthropological pair) — merism
+- *אַל־תַּסְתֵּר פָּנֶיךָ מִמֶּנִּי* — internal pair *פָּנֶיךָ מִמֶּנִּי* not bonded; counterexample for the test
+
+**Tie-breaker when M1 and structural justification 1 both seem to apply (N=2 formally-marked pair):**
+- If each member has a distinct non-synonymous finite verb → structural justification 1 wins (SPLIT).
+- If the two members are semantically synonymous, cognate, or intensification variants → M1 wins (MERGE).
+- If the members are bonded-pair nouns/adjectives (not verbs) with unified rhetorical weight → M1 wins (MERGE).
+
+This tie-breaker is the canonical specific case of the cross-cutting **N=2 Adjudication Principle** (see below). The same merge-vs-split logic applies wherever a merge-rule and structural justification 1 both fire at N=2.
+
+**Asymmetric-modifier sub-clause.** When an M1-candidate bonded pair has one member carrying a PP modifier or relative clause the other lacks (*חֶסֶד וֶאֱמֶת לִבְרִיתוֹ*, *שָׁמַיִם וָאָרֶץ אֲשֶׁר עָשָׂה*), M1 still wins → MERGE if the modifier attaches semantically to the pair AS A UNIT (answering "in/on what?" where the modifier's referent is the joint object of both members). SPLIT only if the modifier scopes over only one member to the exclusion of the other, producing genuinely distinct predicative force.
+
+**Grammatical grounding:** Joüon-Muraoka §177 on hendiadys; Waltke-O'Connor §4.6.5 on coordinate noun-pairs as merism.
+
+#### M2. Verb-Object Clause-Nucleus Bond
+
+**Definition:** A finite verb and its direct object (or obligatory complement) on short phrases stay on one line, even under split-trigger pressure. The clause nucleus is the minimal atomic predication and cannot be fragmented.
+
+**Test:** Would splitting strand the verb without its complement, or strand the object without its governor? If yes, MERGE.
+
+**Hebrew specifics:**
+- Verb + direct-object marker אֵת + NP: never split between verb and אֵת+NP.
+- Verb + pronominal suffix (object incorporated morphologically): obviously never breakable.
+- Verb + obligatory PP complement (שָׁמַע ל, נָשַׂא עֵינַיִם אֶל, פָּנָה אֶל): never split between verb and PP.
+
+#### M3. Bare-Governor Indivisibility
+
+**Definition:** A head word — participial adjective standing alone (גָּדוֹל, רַב, מָלֵא + pending complement), governing participle without complement (יוֹדֵעַ, אוֹמֵר, רוֹאֶה without object/clause), discourse particle standing alone (וְעַתָּה, לָכֵן, עַל־כֵּן without following content), or bare construct head awaiting *nomen rectum* — cannot stand on its own line without at least one complement, object, or dependent. The bare governor fails the atomic-thought test because it is grammatical machinery awaiting content, not a complete predication.
+
+**Test:** Can the isolated head-word be read as a complete thought? Or does the reader's attention dangle forward, expecting completion on the next line?
+
+**Hebrew canonical cases:**
+- Bare construct head: דְּבַר־ alone, בֵּית־ alone, קוֹל alone awaiting genitive — fails M3.
+- Bare governing participle: אוֹמֵר alone without speech complement; יוֹדֵעַ alone without כִּי-clause — fails M3.
+- Bare discourse particle: וְעַתָּה alone, לָכֵן alone, עַל־כֵּן alone, הִנֵּה alone — fails M3.
+
+**Contrast with speech-intro (structural justification 3):** Finite speech-act formulas (וַיֹּאמֶר אֵלָיו לֵאמֹר as a complete frame; כֹּה אָמַר יְהוָה as a complete prophetic-messenger predication) ARE complete speech-act predications — the speech act itself is the content. Bare governing participles (אֹמֵר without speech) are not; they await content.
+
+#### M4. Fragmented Atomic Thought-Unit
+
+**Definition:** If splitting a line would produce fragments that individually fail the atomic-thought test, merge. This is the inverse of the cognitive prong: the cognitive prong requires each resulting chunk to be its own atomic thought for a split to proceed; if any resulting fragment fails that test, the split is blocked.
+
+**Test:** Read each proposed resulting line aloud as a standalone unit. Does it constitute one focused-attention chunk with bounded information? If any resulting line fails, the split is over-fragmenting.
+
+**Scope discipline — prospective not retroactive.** M4 fires ONLY when evaluating a PROPOSED split. It is evaluated by reading each of the two proposed fragments as standalone units; if either fails atomic-thought, the proposed split is blocked → MERGE. **M4 is NOT a retrospective merge generator.** When an existing split shows both fragments individually passing atomic-thought, M4 does not fire, even if the two events are causally, narratively, or rhetorically linked. "Narrative completion" and "atomic-thought failure" are different tests; conflating them is a documented sibling-project failure mode (BoFM 2026-04-22 reverts of Alma 47:24, 1 Ne 5:4, Ether 14:29). The operational rule: ask *"does THIS line, alone, constitute one focused-attention chunk?"* — not *"would merging produce a more complete narrative beat?"* The former fires M4 when appropriate; the latter is aesthetic reasoning outside M4's scope.
+
+**Precedence over structural justifications.** M4 fires ONLY when splitting produces a fragment that **fails** the atomic-thought test. A fragment that PASSES atomic-thought via another structural justification's cognitive prong does NOT fail. Specifically:
+- **Formally-marked parallel series (justification 1):** members of a 3+ member series pass cognitive-prong via shared-predicate recovery. M4 does NOT fire on series members.
+- **Substantive adjunct (justification 5):** substantial adjuncts (FEF wayehi protases, prophetic oracle headers, casus pendens phrases) earn own lines. M4 does NOT fire on these.
+
+### Summary: the four forces
+
+| Force | Direction | Role |
+|-------|-----------|------|
+| Propositions (+ 5 structural justifications, including substantive adjunct) | GENERATIVE | Default split at every proposition or justified non-proposition boundary |
+| Syntax (Layer 1 + complement integrity + formula integrity) | SUBTRACTIVE | Forbids some splits the generative principle would produce |
+| Merge-overrides (M1–M4) | SUBTRACTIVE | Block split-triggers when resulting fragments fail on more basic grounds |
+| Image (camera angle) | DIAGNOSTIC | Sharpens ambiguous boundaries |
+
+### Container-Not-Originator (Philosophical Grounding)
+
+**The atomic thought is the primary, originating reality.** It is what the author wants to say, prior to and independent of any particular language. Hebrew, Aramaic, Greek, English, and Chinese speakers all compose in thought units. The atomic-thought target is *language-invariant*.
+
+**Hebrew syntax is the container, not the originator.** Every atomic thought is *always already* shaped by the grammatical framework of the language it was born in — there is no unclothed "pure thought" underneath waiting to be extracted. The container constrains: the biblical authors could not express their thoughts without choosing Hebrew syntactic patterns (verb-subject-object as the unmarked clause type, the construct chain for genitival relations, the *wayyiqtol*-chain narrative engine, the qatal/yiqtol/participle aspectual contrast), and those patterns imposed fixed structural commitments. But the container does not *originate* the thought. The thought exists first and fits itself into whatever vessel is available.
+
+This is the classical distinction between **logos endiathetos** (the thought in the mind) and **logos prophorikos** (the thought as uttered). Colometric recovery targets the endiathetos through the prophorikos because the prophorikos is all we have.
+
+**Consequences for the framework:**
+
+1. **Propositions (atomic thoughts) are the generative force because they are what we are recovering.**
+2. **Hebrew syntax is the subtractive force — the evidence surface through which propositions become visible in this particular language, and simultaneously the floor below which no line can legally sit.** Syntax both reveals where propositions end (thought-marking syntax) and constrains where breaks are legal (Layer 1 break-legality, complement integrity, formula integrity).
+3. **Cross-linguistic invariance is preserved.** The atomic thought-units in Genesis are the same units whether read in Hebrew, Greek (LXX), or English. Only the container changes. We are not imposing Hebrew syntax on English readers; we are recovering the shape the Hebrew author's thoughts actually had when composed.
+
+### Imposing vs. Revealing — Scope Discipline
+
+**Line breaks follow structure that already exists in the text. If a rule produces a line that does not match the text's inherent structure, the rule is wrong.**
+
+- We do not impose visual structure that the grammar does not directly support.
+- We do not construct grammatical categories to justify editorial instincts.
+- If a break cannot be named in standard Hebrew grammatical terms, it is an editorial decision — which is fine, but should be labeled honestly (Category B/C per §2).
+- If a proposed rule consistently produces lines that don't sound like the text, the rule is imposing rather than revealing and is rejected.
+
+**This is a presentational layer, not an analytical one.** Our job is to render the text so its grammatical and cognitive structure is visible at the line level. What scholars do on top of that — identify chiasms, mark rhetorical figures, perform parallelism analysis (Lowth / Berlin / Kugel / Dobbs-Allsopp), perform discourse analysis, write commentary — is downstream work that our edition *enables* but does not perform.
+
+**The boundary test:** if a feature requires *interpretation* of authorial intent or rhetorical strategy to detect, it is out of scope. If it can be identified by Hebrew grammar alone (morphology, syntactic position, lexical markers, the te'amim as evidence), it is in scope.
+
+**Corollary — the "reaching-for-split" warning.** When the grammatical case for a split is borderline and you find yourself reaching for chiastic-structure, parallelism-display, prosodic-emphasis, theological-weight, doctrinal-stakes, narrative-climax, pastoral-force, soteriological-significance, or any analogous non-grammatical category as a tiebreaker, **that is the signal that scope creep is happening.** The scope-disciplined default in a borderline case is to keep the grammatical constituent intact — i.e., **prefer merge to split** when the grammar is ambiguous.
+
+This is the "rhetoric-bandwagon" failure mode named in the sibling projects' `feedback_rhetoric_bandwagon.md` discipline memories. It is the highest predictable risk for the Tanakh project specifically, given Hebrew's deep scholarly literature on parallelism (Lowth 1753; Kugel 1981; Berlin 1985; Dobbs-Allsopp 2015), chiasm (extensive), inclusio, merism, and other rhetorical figures. Importing any of those scholarly categories as a *mechanical* line-break rule is the predictable catastrophic failure. They are evidence, not authority.
+
+**The fronting paradox — marked Hebrew word order argues for MERGE, not split.** Hebrew's unmarked clause order is V-S-O (verb-initial). When a constituent is fronted (subject before verb, object before verb, casus pendens, topic-fronted PP), the natural editorial instinct is to split at the fronted element as a way of "visualizing the emphasis." **This instinct is wrong for tight bound constituents.** The rhetorical effect of fronting depends on the grammatical unity *staying intact*. The marked arrangement is felt as emphatic precisely because the hearer processes the fronted element in a non-default position *within a single breath unit*. Splitting at the fronted-element boundary mechanizes the emphasis — it imposes a pause that was not in the original oral delivery — and paradoxically *diminishes* the rhetorical force.
+
+(Casus pendens / left-dislocation is the *exception* — it is grammatically detached by the resumptive pronoun in the main clause, which is structural justification 5 territory, not a tight-fronting case. The rule applies to fronted-but-grammatically-bound constituents like topic-fronted objects without resumption.)
+
+### The Te'amim Are Not a Structural Prior
+
+The Tiberian **te'amim** (cantillation accents) are the most important single piece of evidence we have about how educated readers in the Tiberian Masoretic tradition (~9th–10th c. CE) understood the structure of the biblical text. They preserve a thousand years of expert reading. They are, by far, the most useful single starting draft an editor has for a colometric reading edition — better than blank-page work.
+
+But the te'amim are **not a structural prior.** They are evidence.
+
+**What the te'amim were designed to do** (Yeivin 1980, Tov 2012, Dobbs-Allsopp 2015):
+1. Mark cantillation melody for liturgical chant (their primary function).
+2. Mark word stress (secondary function — disjunctives also mark the tonic syllable).
+3. Mark phrase-pause boundaries within a verse (disjunctive accents pause the chant; conjunctive accents do not). This produces a binary recursive subdivision of each verse — atnach divides the verse, then zaqef/segolta subdivide each half, then tifcha/pashta subdivide each quarter, all the way down.
+
+**What the te'amim were not designed to do, and do not do reliably:**
+1. Mark sense-units corpus-wide. The te'amim system is **verse-bounded by design** — a wayyiqtol chain spanning three verses cannot be marked by te'amim as one thought; the system has no apparatus for cross-verse sense-unit identification.
+2. Distinguish "this verse is one thought" from "this verse is four thoughts." Every verse gets the same atnach-driven binary subdivision regardless of how many sense-units it actually contains.
+3. Reflect original-author compositional intent. The te'amim are a 9th–10th c. CE artifact reflecting medieval Jewish reading tradition, not Iron Age compositional structure.
+
+**Why this matters operationally.** The Wickes-style framing that the te'amim "encode a hierarchical sense-unit system" conflates the three real functions above with a fourth claimed function (sense-unit marking) that the te'amim were never built for. That framing is the rhetoric of Wickes 1881 / 1887 and persisted into Yeivin 1980, but it does not survive contact with what a colometric reading edition actually requires. The Jonah v1-he-baseline output (the project's MVP) makes this concrete: te'amim-driven breaks fragment single-thought verses into three-line widow patterns and lump multi-thought verses under one atnach-driven subdivision.
+
+**The te'amim's role in this canon:**
+- They are **the most important single piece of evidence** about the Masoretic reading tradition's understanding of structure. They corroborate atomic-thought analysis ~70–80% of the time.
+- They are **the editor's starting draft** in the v1-he-baseline layer of the pipeline (`data/text-files/v1/he-baseline/`), faster than blank-page work.
+- They are NOT authoritative. They cannot license a line break by themselves. Every break that survives to v4-editorial must be defensible as containing an atomic thought, and the te'amim are cited as evidence (confirming, disagreeing, or silent), never as warrant.
+- They are subject to the same discipline as any other editorial overlay: NA28 punctuation in the GNT project, Pratt's 1879 versification in the BoFM project, te'amim in the Tanakh project. Editorial overlays may corroborate; they may not justify.
+
+This is the central methodological correction relative to the predecessor stub canon. Per `project_canon_rewrite_decision.md`, do not relitigate.
+
+### Punctuation, Te'amim Glyphs, and the Masoretic Apparatus Are Not Break Signals
+
+The Masoretic apparatus — niqqud, te'amim, Ketiv/Qere markings, sof pasuq, paseq, soph pasuq, the maqqef — is preserved in the printed text for fidelity. Of these:
+
+- **Te'amim** are evidence-not-authority per the section above.
+- **Sof pasuq (`׃`)** is the verse-end mark. It coincides with silluq and marks the end of verse-internal recursive subdivision. It is the *editorial* boundary between verses, imposed by the Masoretic apparatus on top of compositional structure that often crosses it. Do not treat sof pasuq as a forced line break.
+- **Paseq (`׀`)** is a post-Masoretic disjunctive added in the medieval period. Its function is contested. Treat as evidence (it usually marks something the Masoretes wanted to disjoin) but not as authority.
+- **Maqqef (`־`)** joins two-to-four orthographic words into a single prosodic unit. It IS a break-legality fact (do not break inside a maqqef-group — Layer 1, see §5 Rule H1). It is not by itself a break-license — a maqqef-group ending coincides with a prosodic-word boundary, but most prosodic-word boundaries are not break candidates.
+- **Niqqud** affects pronunciation, not line breaks. Ignore for break decisions.
+
+### Versification Is Not a Break Signal
+
+Hebrew chapter divisions were imposed by Stephen Langton (~1227 CE, working from the Latin Vulgate) and adopted into Hebrew Bibles by the Bomberg / Ben Hayyim editions of the 16th century. Hebrew verse divisions are older (Masoretic, marked by sof pasuq) but were pre-Masoretic chant-units, not compositional sense-units. Both are editorial overlays relative to compositional structure. **Neither overrides grammatical continuity.**
+
+The cross-verse continuity convention (ported from sibling GNT canon §3.17 and BoFM canon §1) applies: when a single atomic thought crosses a verse boundary, the sense-line stays intact in the *earlier* verse's block, with a superscript verse-number marker preserving the versification reference. See §5 Rule H10 for the operational mechanism.
+
+**Hebrew vs. Christian versification.** Hebrew verse numbering and Christian (KJV-tradition) verse numbering disagree in roughly 40+ cases (Joel 2:28–32 = MT 3:1–5; Mal 3:19–24 = MT 4:1–6; Ps superscriptions counted as v.1 in MT but not in KJV; Jonah 1:17 = MT 2:1; etc.). The project follows **Hebrew versification primary** (per textual posture §0.1), and a crosswalk JSON (`data/text-files/v0/prose/<book>/<book>-crosswalk.json`) records the mapping for citation lookup.
+
+### Petucha / Setuma Are Evidence, Not Authority
+
+The pre-Masoretic paragraph divisions — **petucha** (open: full-line gap) and **setuma** (closed: gap mid-line) — are preserved in TAHOT and OSHB. They predate the te'amim and reflect a compositional or liturgical tradition older than the Tiberian Masoretic apparatus. They are **the most important single evidence about pre-Masoretic structural divisions above the colon level**, and the canon treats them with corresponding weight.
+
+But they are not authority either. Aleppo, Leningrad, MAM, and BHS disagree on individual cases (Yeivin 1980 §§81–88; Tov 2012). When sources disagree, the project follows Leningrad (per textual posture §0.1).
+
+**Operational role.** Petucha/setuma serve as evidence for major paragraph-level breaks above the colon level. They corroborate atomic-thought analysis at the paragraph scale. They do not by themselves license cola-level breaks within a paragraph; cola-level breaks follow the framework above (atomic thought, structural justifications, merge-overrides, syntax veto). Web-app rendering reflects petucha/setuma as paragraph breaks (blank line for petucha; indented break for setuma); section-level navigation uses petucha boundaries as primary structural cues.
+
+### Parallelism Is Not a Structural Prior
+
+Hebrew parallelism is real. Lowth (1753) was right that biblical poetry is built on parallelistic structures; the question modern scholarship contests is what *kind* of structure parallelism is, not whether it exists. The 250-year debate (Lowth's three-fold synonymous/antithetic/synthetic taxonomy → Kugel 1981's "there is no such thing as parallelism, only seconding — A, and what's more, B" → Berlin 1985's multi-dimensional analysis across phonological/grammatical/lexical levels → Dobbs-Allsopp 2015's free-verse-with-lineation framing) is real, ongoing, and substantial.
+
+**The project does not take a position in that debate.** Parallelism is not a structural prior for line breaks. It is **evidence**, on the same epistemic footing as the te'amim and petucha/setuma — informative about how the author structured a thought, never authoritative for where the editor breaks a line.
+
+The reasoning is parallel (no pun) to the te'amim demotion: line breaks reveal atomic thoughts; parallelism is a phenomenon the atomic-thought analysis sometimes encounters (especially in Sifrei Emet) but never a generator of breaks in its own right. Importing Lowth's three-fold scheme as a mechanical rule would be the canonical rhetoric-bandwagon failure mode (§1 Imposing vs. Revealing): a scholarly category becoming a line-break authority. Importing Kugel's anti-parallelism stance as a mechanical rule would be the same failure in opposite direction.
+
+**Operational implications:**
+
+- **In Sifrei Emet** (Pss/Prov/poetic Job): the te'amim's stich-divisions are the editor's starting draft per Rule H8, and they correlate strongly with parallelistic structure (the medieval cantor was reading the parallelism). When v4-editorial diverges from te'amim breaks in poetic books, the divergence is informative but not a defect — same status as in prose.
+- **The project does not display parallelism via line layout.** When parallel members appear on parallel lines in the rendered edition, they appear so because each member is itself an atomic thought (structural justification 1), NOT because we are typesetting parallelism for visual effect. This is the anti-Lowth posture from the sibling BoFM canon (which named it explicitly: "split-dominant repeated-frame layout IS the parallelism-display posture the project's stance opposes") applied to the original Hebrew.
+- **Berlin's multi-dimensional analysis is a useful diagnostic** when atomic-thought analysis is borderline — when phonological + grammatical + lexical parallelism converge on a structure the te'amim missed, that's high-confidence evidence for an override. But Berlin is an evidence-application tool under criterion #1, not a baseline framework.
+- **Dobbs-Allsopp's free-verse framing** aligns with the project's posture: the te'amim are a specific historical reading-tradition's lineation; atomic-thought is the editorial criterion that drives v4. The project does not adopt Dobbs-Allsopp as authority either — but his framing is the most compatible of the four with what the canon actually does.
+
+**Why this matters as a load-bearing canon section.** The parallelism question was the question that surfaced the te'amim-prior failure in the first place: when Stan asked which parallelism stance to take for Sifrei Emet, the framing forced the prior-question — what *is* the prior, the te'amim or the atomic thought? The te'amim demotion is the answer. This subsection makes the symmetry explicit so future editorial work in poetic books does not accidentally reintroduce a parallelism-as-prior commitment under a different label. Per `feedback_no_false_choice_framing.md`, do not relitigate by proposing Lowth/Kugel/Berlin/Dobbs-Allsopp as competing structural priors; they are competing scholarly accounts of a phenomenon the editor encounters as evidence.
+
+### N=2 Adjudication Principle
+
+**The problem this solves.** Several canon rules mandate MERGE for N=2 coordinate constructions — M1 bonded pair, future Hebrew-specific compound-verb rules, two-member coordinate clausal series. Simultaneously, structural justification 1 (formally-marked parallel series) mandates SPLIT when each member earns its own atomic beat. At N=2 both rules can fire on the same construction.
+
+**The principle.** When a merge-mandating rule (M1, compound-verb under shared aspectual frame, two-member clausal series) and a split-mandating rule (structural justification 1) both fire on the same N=2 coordinate construction:
+
+- **Bonded / synonymous / cognate / intensification variants → merge wins.** The two members form a single unified image, action, or proposition under one cognitive chunk. Examples: *חֶסֶד וֶאֱמֶת* (M1 bonded), *שָׁמַיִם וָאָרֶץ* (M1 merism), *שְׁמַע וְהַאֲזִינָה* (cognate-imperative pair).
+- **Distinct non-synonymous → split wins.** Each member is its own atomic beat per structural justification 1.
+
+**Diagnostic.** Apply the M1 verb-synonymy / noun-bondedness test: *can the two members be paraphrased as a single unified image or proposition without loss of content?* If yes → merge. If the paraphrase requires dropping semantic content unique to one member → split.
+
+**Does not apply at N=3+.** At N=3+ formally-marked parallel series, structural justification 1 wins regardless of whether a merge-rule is also firing — the cognitive prong is formally recoverable from the series itself, and merge-rules defer. The N=2 vs. N=3+ cliff is principled: two items invite bonding (doublet reading); three or more invite cataloguing (series reading).
+
+**Does not apply to appositional constructions.** Appositives are semantically synonymous by definition — the second member re-names the first — so the synonymy test would mechanically fire "merge" on every appositive. The vocative-with-close-appositive case (vocative + divine-title appositive: *יְהוָה אֱלֹהֵי הַשָּׁמַיִם*) and the proper-name + epithet case are governed by their own rules (see §5 Rule H4 vocatives, §5 Rule H9 divine-title appositives), not the N=2 Principle.
+
+### Authorial Asymmetry Principle
+
+When a passage contains a serial construction (woe-series, blessing-series, beatitude chain, conditional-pair, oracle chain) and the author treats members asymmetrically — expanded mechanism for some, compact for others — **preserve the authorial asymmetry**. Do not pressure compact members to expand, or expanded members to compress, in order to achieve uniform line-treatment across the series.
+
+**Test.** Count the finite verbs, elided verbs, and predicative heads in each member of the series. If counts differ between members in the received text, the asymmetry is authorial and the line-structure reflects it. If counts match but editorial line-treatment diverges, that is editorial drift and should converge.
+
+**Hebrew-attested trigger contexts (representative, not exhaustive — to be expanded as the corpus is edited):**
+- Prophetic woe-series with asymmetric member expansion (Isaiah's *הוֹי* chains in Isa 5:8–24, where some woes are 2-line bicola and others expand to 4–6-line oracle blocks).
+- Blessing/curse pairs in Deuteronomy (Deut 28's blessing list and curse list both expand asymmetrically and should not be flattened).
+- Acrostic structures (Pss 119 stanzas, Lam 1–4 alphabetic chapters): the acrostic letter is the structural anchor; member-level asymmetry within stanzas is authorial.
+- Positive/negative conditional pairs (*אִם ... וְאִם לֹא ...*).
+
+**SCOPE.** Does NOT apply to same-rule-uniformly-applied cases — those are governed by the parallel-list uniformity principle below (or by the `feedback_application_consistency_vs_rule_coverage` discipline once that memory is installed). The Authorial Asymmetry Principle governs the distinct failure mode: **imposed uniform structure where the author wrote variation**. The author's finite-verb count, elided-verb count, and predicative-head count per member is the authoritative signal.
+
+### Parallel-List Uniformity Principle
+
+When a multi-verse list of parallel members exists with a shared explicit frame, list members receive uniform line-treatment regardless of their individual syntactic shape. Per-construction rules yield to the list-uniformity principle within the list's scope.
+
+**Trigger.** All four conditions must hold:
+1. **Multi-verse list, N≥3 members.** Two-member coordinate cases are governed by the N=2 Adjudication Principle; isolated occurrences aren't a list.
+2. **Shared explicit frame.** A repeated lexical anchor introduces each member: *הַבְּרָכָה ... וְהַקְּלָלָה ...* (Deut 27–28); *אַשְׁרֵי הָאִישׁ אֲשֶׁר ...* (Pss 1, 32, 41); *הוֹי X / הוֹי X / ...* (Isaiah's woe chains); *כֹּה אָמַר יְהוָה ... כֹּה אָמַר יְהוָה ...* (prophetic-oracle chains); *אָרוּר ... אָרוּר ...* (Deut 27 curses); *בָּרוּךְ ... בָּרוּךְ ...* (Deut 28 blessings).
+3. **Parallel members.** Each list-item is the same kind of thought (a curse pronounced, a blessing declared, a beatitude, an oracle).
+4. **Authorial-symmetric.** Members do NOT have the finite-verb-count or predicative-head-count asymmetries that the Authorial Asymmetry Principle protects.
+
+**Default direction — merge.** Each member's frame + content stays on one line per member. The atomic-thought unit at the list scale is *one curse / one blessing / one beatitude / one oracle* per member; a frame-fragment alone (*אָרוּר*) is not a self-standing atomic thought.
+
+**Why merge wins as the default direction:**
+- **Atomic-thought test.** Frame-fragments alone fail it; full members as units pass it.
+- **Anti-Lowth (§0 Mission).** Split-dominant treatment with repeated visible frames IS the parallelism-display layout the project's stance opposes. We are formatting the text for sense-line reading, not displaying parallelism.
+- **Audience.** ESL readers, beginning Hebrew students, and read-aloud delivery favor one-line-per-member rhythm; double-breath-per-member fragments cadence.
+- **Descriptive over interpretive.** Merge describes each member as a unit; split imposes a frame-content rhythmic structure on a syntactic surface that doesn't demand it.
+
+**SCOPE — does NOT apply to:**
+- N=2 coordinate cases (governed by N=2 Adjudication Principle).
+- Authorial-asymmetric series (Authorial Asymmetry Principle takes precedence — preserve mechanism-count differences; do not flatten variation).
+- Lists without a repeated explicit frame (narrative sequences without lexical anchor).
+- Within-verse coordinate predications (governed by the N=3+ cliff — justification 1 wins over merge-rules at N=3+).
+
+### Decision Procedure — Application Order
+
+Putting generative, subtractive, and diagnostic forces together, the full editorial decision procedure is:
+
+1. **Default:** merge (propositions share one predicate; atomic-thought test applies at the predication level).
+2. **Split-trigger fires** (any of: proposition boundary; one of structural justifications 1–5): tentative split.
+3. **Syntax veto** (Layer 1 mid-phrase prohibition; complement integrity; formula integrity): blocks the split → **merge**.
+4. **Merge-override fires** (M1 bonded pair, M2 clause-nucleus bond, M3 bare-governor, M4 fragmented fragment): blocks the split → **merge**. **When split-trigger and merge-override both fire on the same line, merge-override wins.**
+5. **Image diagnostic** (camera angle): sharpens cases where 1–4 leave room for editorial judgment.
+
+**Step 0 — Input filter.** Punctuation, te'amim, sof pasuq, paseq, niqqud, and versification are never break signals. Petucha/setuma are evidence-not-authority (corroborate paragraph-level breaks; do not by themselves license cola-level breaks). The Authorial Asymmetry Principle governs batch-sweep discipline — filters what counts as a candidate signal *before* generative evaluation begins. None of these operate within the per-location procedure; they operate upstream of it.
+
+**Within-step commutativity.** Within Step 2, multiple structural justifications firing are co-compatible — they all agree on SPLIT; no adjudication needed. Within Step 3, multiple merge-overrides firing are co-compatible — they all agree on MERGE; no adjudication needed. Step 3 wins over Step 2 when both fire on the same location.
+
+The framework is a default-merge with two closed lists of exceptions — five structural justifications (add splits beyond propositions) and four merge-overrides (block splits that would fragment unity) — plus the syntax-subtractive veto and the image diagnostic.
+
+**Breath as a named diagnostic was retired before the Tanakh canon's first version.** Both sibling projects retired breath empirically (BoFM 2026-04-19, GNT 2026-04-20). The Hebrew evidence sharpens the retirement: the te'amim are *literally* the historical record of "where the cantor breathes." If breath were a valid sense-unit prior, the te'amim would by definition encode it perfectly. The cognitive-chunking work breath was informally doing is absorbed by structural justification #5 (substantive adjunct as own focus). Per `feedback_no_breath_criterion.md`, do not relitigate.
+
+---
+
+## §2 Autonomy Boundary — Categories A / B / C
+
+*Purpose: **mainly operational** — Category A/B/C gating definitions. The Autonomy Boundary determines when a validator finding is apply-ready vs. requires editorial judgment.*
+
+Every proposed change falls into one of three categories:
+
+- **Category A — Editorial slippage.** Suboptimal break with no theological or rhetorical stakes. Apply confidently.
+- **Category B — Rhetorical shape.** The break changes how the speaker builds an argument. Flag and ask Stan before applying.
+- **Category C — Theological weight.** Break placement carries a doctrinal implication. Flag and discuss with Stan before touching.
+
+**Mechanical-rule authority.** When a settled mechanical rule's signature fires unambiguously and the rule's heuristics resolve without ambiguity, the change is **Category A by default**. The canon IS the approval — no per-item flagging is required. Bump to Category B only when rhetorical weight is independently implicated (e.g., breaking a covenant formula, altering a prophetic rhythm with documented liturgical use). Bump to Category C only when theological weight is independently implicated (e.g., classic exegetical hot spots — to be enumerated as the corpus is edited; representative candidates: Gen 1:1–3 (creation narrative opening), Gen 22 (Aqedah), Exod 3:14 (Tetragrammaton revelation), Deut 6:4–5 (Shema), Isa 7:14 (immanuel), Isa 53 (suffering servant), Ps 22, Ps 110, Dan 7). Default-bumping mechanical hits to B out of caution is a failure mode — it inverts the canon's authority and creates unnecessary friction.
+
+**Default:** when uncertain between mechanical and non-mechanical, treat as mechanical if the signature is clean. When uncertain between A and B/C on editorial/rhetorical grounds, treat as Category B. A false Category A on rhetorical grounds (applying a change that warranted discussion) costs more than a false Category B (flagging something straightforward). A false Category B on mechanical grounds (flagging a clean rule hit for review) costs Stan's time and compounds across sessions.
+
+**Scope/precedence/closed-list/carve-out diagnostic.** Canon additions that include ANY of the following are **Category B by default**, regardless of how they are framed in the commit message or §8 entry:
+- A scope claim (*"rule X applies to / does not apply to Y"*)
+- A precedence claim (*"rule A trumps rule B"*, *"X wins over Y when both fire"*)
+- A closed-list extension (adding a verb class, adding a named category, adding a SCOPE-exclusion item)
+- A named-category carve-out (introducing a new gating category, even if cross-referenced to an existing rule)
+
+This diagnostic catches the failure mode where a canon change is self-framed as "documenting existing practice" or "scope clarification" but substantively asserts a new judgment. §7 Change Protocol's mandatory-audit trigger list operationalizes this diagnostic for commit-time discipline.
+
+---
+
+# Part II — Operating Rules
+
+*Applied during editorial work; consulted when proposing or evaluating breaks. Validator output is a work queue, not a review queue (per §2 mechanical-rule authority).*
+
+## §3 Quick-Reference Rule Table
+
+*Purpose: **mainly operational** — quick-reference rule table. An editor's first lookup point; rule detail lives in §5.*
+
+Hebrew-specific rules use the H-prefix to distinguish them from sibling-canon rule numbers (BoFM Rule 1–28, GNT R1–R29) and to signal Tanakh-corpus origin.
+
+| # | Name | Type | Trigger | Action |
+|---|------|------|---------|--------|
+| H1 | Maqqef-group indivisibility | **Layer 1** → [hebrew-break-legality.md](../../data/syntax-reference/hebrew-break-legality.md) | Maqqef glyph (־) joining tokens | Never break inside |
+| H2 | Construct chain default | Mechanical + judgment | Bound *nomen regens + nomen rectum*, no intervening modifier | MERGE (one prosodic unit) |
+| H3 | Vav-consecutive clause-head policy | Editorial | Wayyiqtol verb at clause head | Default own line for narrative *wayyiqtol* heads; tighter merging in fast-paced narrative sequences (see §5 H3) |
+| H4 | Vocative handling (Hebrew) | Editorial | Address particle (or contextually marked vocative — Hebrew lacks a vocative case) | Default own line; merge under apposition rule (§5 H4) |
+| H5 | Direct-speech framing default | Mechanical + judgment | *X לֵאמֹר* speech-intro frame | Short framing (≤3 prosodic words) merges with speech-opening; long framing (≥4 prosodic words, or with embedded location/recipient) gets its own line |
+| H6 | Ketiv/Qere policy | Editorial | K/Q markers in source text | Print Qere by default; Ketiv accessible as hover/footnote (per §5 H6 sub-categories) |
+| H7 | Complement integrity (Hebrew) | Mechanical | Verb + obligatory complement (*אָמַר* + speech, *יָדַע* + כִּי-clause, etc.) | MERGE across boundary |
+| H8 | Te'amim as evidence | Principle | Always | The te'amim corroborate or disagree; they do not authorize. See §1 "The Te'amim Are Not a Structural Prior" |
+| H9 | Divine-title appositives | Editorial | Divine title appositive after *YHWH* or *Elohim* | INTRODUCING (formal anchor) → STACK SPLIT; REFERENCING (default) → MERGE |
+| H10 | Cross-verse continuity merge | Mechanical | Atomic thought spans MT verse boundary | Sense-line stays intact in earlier verse's block; superscript verse-marker for boundary |
+| H11 | Tifcha-as-servant-of-atnach | Mechanical | Tifcha within atnach domain, short prosodic distance | Te'amim evidence weight reduced — tifcha disjunctive is "servant" not "primary breaker" in many positions per Wickes 1887 |
+| H12 | Petucha/setuma rendering | Mechanical | Petucha or setuma marker in source | Petucha → blank-line paragraph break; setuma → indented break. Evidence-weighted, not authority |
+| H13 | Special letters | Editorial | Suspended nun (Judg 18:30), inverted nuns (Num 10:35–36), large/small letters, scriptio plena/defectiva variants | Preserve graphically; document in marginal note; do not affect line breaks |
+| H14 | Discourse particles | Editorial | *הִנֵּה, נָא, אָז, עַתָּה, וְעַתָּה, לָכֵן, עַל־כֵּן* | Lead their content (frame, do not trail); cluster with vocative if both sentence-initial |
+| H15 | Casus pendens / left-dislocation | Mechanical | Topic-fronted NP + resumptive pronoun in main clause | Topic earns its own line (structural justification 5) |
+| H16 | FEF wayehi protasis | Mechanical | *וַיְהִי* + temporal/circumstantial protasis + main clause | Protasis own line; main clause starts fresh |
+| H17 | Genealogy / list-formula handling | Editorial | Genealogical formula (*X הוֹלִיד אֶת־Y וַיֵּלֶד בָּנִים וּבָנוֹת*) | List-uniform per Parallel-List Uniformity Principle; merge per-generation member to one line |
+
+**Guidelines** (useful tendencies, not strict rules): line length as signal; vocative splitting nuances; fronted-adverbial weight thresholds; compound-divine-name handling.
+
+---
+
+## §4 Layer 1 Reference Pointers
+
+Data tables that belong to generic Hebrew grammar live in the Layer 1 reference, not here. This section holds the cross-references.
+
+### 4.1 Hebrew Break Legality Reference
+
+Authoritative table: [`data/syntax-reference/hebrew-break-legality.md`](../../data/syntax-reference/hebrew-break-legality.md). Shape-capped table with columns `Pattern signature | Legality | Reference`. Status: **TODO — file not yet created.** The canon's architectural commitment is in place; the Layer 1 file is named and shape-defined but waits for population. First-pass rows to populate (when the file is created):
+
+- Maqqef-group split: `REQUIRED-MERGE` (Joüon-Muraoka §13 on maqqef as prosodic-unit-marker)
+- Conjunction-prefix וְ stranded line-final: `REQUIRED-MERGE` (the וְ leads its content)
+- Prepositional prefix מ/ב/כ/ל stranded from object: `REQUIRED-MERGE`
+- Definite article הַ stranded from noun: `REQUIRED-MERGE`
+- Direct-object marker אֵת stranded from object: `REQUIRED-MERGE`
+- Construct chain split with no intervening modifier: `REQUIRED-MERGE` (see Rule H2)
+- Compound divine name split (*יְהוָה צְבָאוֹת*, *יְהוָה אֱלֹהֵי הַשָּׁמַיִם*): `REQUIRED-MERGE`
+- Negation (*לֹא, אַל, אַיִן*) stranded from negated word: `REQUIRED-MERGE`
+- Vocative unit split (multi-word direct-address phrase): `REQUIRED-MERGE`
+- Frozen formula split (*כֹּה אָמַר יְהוָה*, *נְאֻם־יְהוָה*, divine-name compounds): `REQUIRED-MERGE`
+
+### 4.2 Te'amim Inventory Reference
+
+Authoritative table: [`data/syntax-reference/teamim-inventory.md`](../../data/syntax-reference/teamim-inventory.md). Status: **TODO — file not yet created.** Will list the full prose and Sifrei Emet accent inventories with disambiguation by glyph / name / positional function / prose-vs-poetic equivalence. Corrects the factual errors in the predecessor stub canon (tzinnor = positional zarqa, mehuppakh-legarmeih is conjunctive-with-paseq, revia mugrash is positional revia).
+
+---
+
+## §5 The Rules (Detail)
+
+*Purpose: **mainly operational** — full rule detail for rules H1–H17. Reference when a §3 table entry is insufficient.*
+
+Each rule below follows the template:
+- **Grammatical basis** — the Hebrew syntactic / orthographic / Masoretic fact
+- **Trigger** — the mechanical signal
+- **Diagnostic** — the test a scanner or human applies
+- **Exceptions** — closed list
+- **Example(s)** — from the corpus
+
+### Rule H1 — Maqqef-Group Indivisibility
+
+**Grammatical basis.** The maqqef (־, U+05BE) joins two-to-four orthographic words into a single **prosodic word** bearing a single ta'am. The maqqef-group is treated as one cantillation unit by the Masoretic apparatus and as one accentual phrase by Hebrew prosody.
+
+**Trigger.** Presence of maqqef glyph between tokens.
+
+**Diagnostic.** Never break inside a maqqef-group, regardless of length. A 4-word maqqef-group is one prosodic unit even when long.
+
+**Exceptions.** None. Maqqef-group integrity is Layer 1 — generic Hebrew grammatical fact, not an editorial convention.
+
+**Note on rendering.** Display the maqqef glyph between joined orthographic words. The web-app's per-orthographic-word `<span>` structure preserves the joining for downstream layers (translit, interlinear) — the connector glyph (figure dash ‒ in current implementation) marks the prosodic bond visually.
+
+### Rule H2 — Construct Chain Default
+
+**Grammatical basis.** A construct chain (*nomen regens + nomen rectum*, e.g., *דְּבַר־יְהוָה*, *בֵּית הַמֶּלֶךְ*, *מִמְּעֵי הַדָּגָה*) is a single bound noun phrase. The regens is in construct state; the rectum carries the genitival force. Modern reference grammars (Joüon-Muraoka §129; Waltke-O'Connor §9) treat construct chains as one syntactic unit for clause analysis.
+
+**Trigger.** Bound *nomen regens + nomen rectum* sequence with no intervening modifier (no article hopping, no PP intervention, no relative clause attached to regens only).
+
+**Diagnostic.** MERGE — treat the construct chain as one prosodic unit for break decisions, regardless of whether the chain is maqqef-joined or not.
+
+**Exceptions:**
+- Chain interrupted by a maqqef-group's natural break point (rare; the maqqef-joining usually coincides with the construct binding).
+- Chain with intervening modifier on the regens (e.g., *הַבַּיִת הַגָּדוֹל אֲשֶׁר־לַמֶּלֶךְ*) — modifier may license a break, evaluated case-by-case.
+- Long construct chain (3+ levels deep) where the deepest rectum is itself modified by a substantial relative clause — evaluate under structural justification 5 (substantive adjunct).
+
+**Example.** Jonah 2:7 *מִמְּעֵי הַדָּגָה* — construct chain, treat as one unit; do not break between *מִמְּעֵי* and *הַדָּגָה* even though they're not maqqef-joined. Currently widow-line in v1-he-baseline Jonah; v4 should merge upward.
+
+### Rule H3 — Vav-Consecutive Clause-Head Policy
+
+**Grammatical basis.** Hebrew narrative is built on chains of *wayyiqtol* (vav-consecutive imperfect) verbs, each marking a sequential narrative event. The *wayyiqtol* form carries narrative-tense morphology (consecutive vav + apocopated yiqtol) and is the dominant clause-head marker in Hebrew prose. The te'amim mark *wayyiqtol* heads inconsistently — sometimes with a strong disjunctive, sometimes with a conjunctive.
+
+**Trigger.** *Wayyiqtol* verb at clause head (verbal morphology: וַ + dagesh forte + yiqtol stem).
+
+**Diagnostic.** **Default own line for narrative wayyiqtol clause heads.** Each wayyiqtol typically introduces its own narrative event and its own atomic thought. Even when the te'amim group multiple wayyiqtol clauses under one atnach, each gets its own line in v4-editorial.
+
+**Exceptions:**
+- **Tight narrative pairs** (*וַיָּקָם וַיֵּלֶךְ*, *וַיַּעַן וַיֹּאמֶר*, *וַיָּבֹא וַיֵּשֶׁב*): two wayyiqtol clauses describing tightly-bonded sequential actions in one image (rising-and-going, answering-and-saying, coming-and-sitting) merge under M1 bonded-pair logic. The pair functions as a single narrative beat.
+- **Speech-intro pair** (*וַיַּעַן ... וַיֹּאמֶר אֵלָיו לֵאמֹר*): the answering+saying pair is a speech-intro frame — merge per structural justification 3 + Rule H5.
+- **Hendiadic wayyiqtol-pair**: when the second wayyiqtol modifies the first (e.g., *וַיּוֹסֶף לְדַבֵּר* "he continued speaking"), the pair is one event — merge.
+
+**WHY:** vav-consecutive is the single most frequent break-decision question in Hebrew narrative. Without an explicit policy, every prose chapter would face this in verse 1 (Jonah 1:1 *וַיְהִי* opens the book; the next clause *וַיָּקָם יוֹנָה* in v.3 starts a fresh wayyiqtol chain).
+
+**HOW WE KNOW:** Hebrew narrative grammar (Waltke-O'Connor §33 on wayyiqtol; Niccacci 1990 on the *wayyiqtol* as foreground-narrative engine). Corpus evidence will accumulate as books are edited.
+
+**SCOPE:** prose books only (21 books using prose accent system + Job's prose frame 1:1–2:13 and 42:7–17). Sifrei Emet poetic books rarely use *wayyiqtol* in extended chains; case-by-case there.
+
+### Rule H4 — Vocative Handling
+
+**Grammatical basis.** Hebrew lacks a morphological vocative case. Direct address is marked by:
+- Sentence-initial address particle (rare — *הוֹי*, *אוֹי* function as woe-particles + vocative; *אָנָּא* as polite plea + vocative)
+- Article-marked NP in address position (*הַמֶּלֶךְ*, *הָאֱלֹהִים*)
+- Bare NP in address position with second-person verbal morphology in the surrounding clause
+- Proper name in address position
+- Compound divine-title address (*יְהוָה אֱלֹהֵי הַשָּׁמַיִם*)
+
+**Trigger.** NP in syntactic address position (initiating direct speech to a named addressee, or coreferential with a 2nd-person verbal form in the same clause).
+
+**Default.** Vocatives get their own line when they initiate or resume direct address. A vocative at the start of a verse, after a speech-introducing boundary, or initiating a new address turn earns its own line as a complete address act.
+
+**Apposition exception.** A vocative merges into the preceding line when it is grammatically appositive to an already-established 2nd-person address in the same clause. Two sub-cases:
+1. **Subject-appositive:** vocative names the implicit subject of a 2p finite verb in the same clause.
+2. **Object-appositive:** vocative restates an explicit 2p pronoun already in the clause.
+
+**Repeated vocatives as a rhetorical unit stay together.** *אַבְרָהָם אַבְרָהָם* (Gen 22:11), *מֹשֶׁה מֹשֶׁה* (Exod 3:4), *שְׁמוּאֵל שְׁמוּאֵל* (1 Sam 3:10) are one speech act per occurrence.
+
+**Stacked parallel vocatives** (multi-vocative address chains) are treated as a parallel address structure — each vocative on its own line per structural justification 1.
+
+### Rule H5 — Direct-Speech Framing Default
+
+**Grammatical basis.** Hebrew direct speech is introduced by an explicit speech-intro frame, most commonly *X אָמַר/אָמְרוּ + (אֶל-Y) + לֵאמֹר*, where *לֵאמֹר* is the bare infinitive complementizer marking the speech-onset boundary. The frame is an obligatory grammatical construction (Waltke-O'Connor §36.2.3 on *לֵאמֹר*).
+
+**Trigger.** Speech-intro frame ending in *לֵאמֹר* or in a bare *וַיֹּאמֶר* / *וַיְדַבֵּר* / *וַיַּעַן* without *לֵאמֹר* but immediately followed by speech.
+
+**Diagnostic — short vs. long framing:**
+- **Short framing (≤3 prosodic words):** *וַיֹּאמֶר לֵאמֹר*, *וַיֹּאמֶר אֵלָיו*, *וַיְדַבֵּר יְהוָה אֶל־מֹשֶׁה לֵאמֹר* (4-prosodic-word boundary case — judgment call). Short framing merges with the speech-opening cola on one line.
+- **Long framing (≥4 prosodic words, or with embedded location/recipient phrases):** *וַיְהִי דְבַר־יְהוָה אֶל־יוֹנָה בֶן־אֲמִתַּי לֵאמֹר* (Jonah 1:1), *וַיֹּאמֶר יְהוָה אֶל־מֹשֶׁה רְאֵה נָתַתִּיךָ אֱלֹהִים לְפַרְעֹה* with full recipient + situation framing. Long framing gets its own line; speech opens on next line.
+
+**Exception — solemnity-prefix and oracle-formula speech-intros.** Prophetic *כֹּה אָמַר יְהוָה* and oracle attribution *נְאֻם־יְהוָה* are atomic formulaic units that get their own line regardless of length. The content of the prophecy/oracle breaks to the next line.
+
+**Example contrasts:**
+- Jonah 1:6 *וַיֹּאמֶר לוֹ* — short framing (2 prosodic words), merges with speech opening (the captain's rebuke).
+- Jonah 1:1 *וַיְהִי דְבַר־יְהוָה אֶל־יוֹנָה בֶן־אֲמִתַּי לֵאמֹר* — long framing with FEF wayehi protasis (Rule H16) + extended recipient-and-patronymic; gets its own line.
+- Jonah 1:9 *וַיֹּאמֶר אֲלֵיהֶם עִבְרִי אָנֹכִי* — short framing (2 prosodic words *וַיֹּאמֶר אֲלֵיהֶם*) merges with speech opening *עִבְרִי אָנֹכִי* on one line.
+
+### Rule H6 — Ketiv/Qere Policy
+
+**Grammatical basis.** The Masoretic apparatus preserves two layers of textual tradition:
+- **Ketiv** (*כְּתִיב* "what is written") — the consonantal text as transmitted in writing.
+- **Qere** (*קְרֵי* "what is read") — the oral reading tradition, sometimes diverging from the written consonantal text.
+
+When Ketiv and Qere differ, the Masoretes preserved both: Ketiv stands in the consonantal text; Qere is marked in the marginal masorah parva and is what the reader/cantor actually voices.
+
+**Default policy: Print Qere by default; Ketiv accessible as hover/footnote.**
+
+**WHY:** The project's oral-delivery orientation favors the Qere — what was actually read aloud in the synagogue tradition the te'amim and niqqud serve. The Ketiv preserves the consonantal tradition and remains accessible for the reader who wants it, but does not occupy the primary visual layer.
+
+**Sub-categories — Ketiv/Qere variants the canon must address:**
+
+#### Rule H6.1 — Perpetual Qere (*Qere Perpetuum*)
+
+**Definition.** Words whose Qere is so consistently substituted that the Masorah does not mark each instance individually. The canonical case is the Tetragrammaton יהוה, vocalized with the niqqud of *אֲדֹנָי* (or *אֱלֹהִים* in immediate sequence with *אֲדֹנָי*), to be read as *Adonai* (or *Elohim*) in liturgical context but written as *YHWH* in the consonantal text.
+
+**Policy.** Display the Tetragrammaton consonants יהוה with the niqqud as transmitted. Do not transliterate as *Adonai* in the translit layer (the project's Modern Israeli transliteration convention transliterates as *Yahweh* per scholarly convention; this is a transliteration choice, not a Ketiv/Qere choice). English gloss layer renders as "the LORD" (small caps) per English-reader convention OR as "Yahweh" per scholarly convention — TBD as English layer matures.
+
+#### Rule H6.2 — *Qere ve-La-Ketiv* (Read but Not Written)
+
+**Definition.** Words read aloud (preserved in the Masorah) that do not appear in the written consonantal text. Example: Judg 20:13 omits *בְּנֵי* in the Ketiv but reads it in the Qere.
+
+**Policy.** Render Qere words in the primary text (italicized or otherwise marked as "read but not written") with marginal note documenting the Ketiv omission. Do not add words silently.
+
+#### Rule H6.3 — *Ketiv ve-La-Qere* (Written but Not Read)
+
+**Definition.** Words written in the consonantal text that are not voiced in reading. Example: Jer 51:3 has *יִדְרֹךְ* doubled in some witnesses with one occurrence as Ketiv-only.
+
+**Policy.** Render the read text as primary; Ketiv-only consonants are marked in marginal note. Do not display silent consonants in the primary visual layer.
+
+#### Rule H6.4 — *Sebirin* (Suspected Readings)
+
+**Definition.** The Masorah occasionally marks a reading as *sebirin* — a "supposed" alternative that some manuscripts or readers have substituted but that the masoretic consensus rejects in favor of the printed reading. Roughly ~350 sebirin notes in the Leningrad apparatus (Yeivin 1980 §149).
+
+**Policy.** Print the masoretic-consensus reading (the non-sebirin form). Mark the sebirin alternative in marginal note where the Masorah records it. Do not adopt sebirin readings into the primary text.
+
+#### Rule H6.5 — *Tiqqunei Sopherim* and *Itture Sopherim*
+
+**Definition.** *Tiqqunei sopherim* ("scribal corrections") — early scribal emendations the Masorah identifies as deliberate textual changes from an earlier form (e.g., euphemistic alterations to avoid blasphemy, ~18 cases per masoretic tradition). *Itture sopherim* ("scribal omissions") — instances where the Masorah notes that the text omits a vav that earlier tradition included (~5 cases).
+
+**Policy.** Print the Masoretic form. Document the scribal-correction note in marginal apparatus where the Masorah records it. The project does not "restore" earlier forms; the Masoretic consensus is the textual base.
+
+### Rule H7 — Complement Integrity (Hebrew)
+
+**Grammatical basis.** Verbs requiring a clausal or PP complement form one integrated predication with their complement. The matrix verb alone does not express a complete thought.
+
+**Hebrew verb classes in scope:**
+
+| Class | Hebrew examples | Merges with complement |
+|-------|-----------------|------------------------|
+| Speech (introducing speech) | *אָמַר לֵאמֹר*, *דִּבֶּר אֵל*, *צִוָּה לֵאמֹר* | Yes (with the speech-intro per Rule H5) |
+| Cognition | *יָדַע כִּי*, *הֵבִין כִּי*, *זָכַר כִּי*, *רָאָה כִּי*, *שָׁמַע כִּי* | Yes (verb + כִּי-clause merges) |
+| Volition | *רָצָה כִּי*, *חָפֵץ כִּי*, *בִּקֵּשׁ אֲשֶׁר* | Yes |
+| Causative | *צִוָּה אֲשֶׁר*, *גָּזַר כִּי*, *הֵכִין כִּי* | Yes |
+| Aspectual | *הוֹסִיף לְ*, *הֵחֵל לְ*, *כִּלָּה לְ* | Yes (verb + infinitive complement merges) |
+| Verbless-clause copular-equivalent | *הָיָה X לְ-Y* | Yes (predicative complement merges with היה) |
+
+**Diagnostic.** Matrix verb and its clausal/PP complement stay on the same line. When combined length exceeds a natural line, prefer an alternative restructuring over a mid-predication break.
+
+**Exceptions — complement integrity does NOT apply:**
+- Direct discourse (colon or *לֵאמֹר* after speech verb → voice shift, content begins on next line per structural justification 3).
+- Long-complement exception (parallel to BoFM Rule 17 long-complement exception): when the matrix is short (verb + recipient), AICTP-equivalent (post-*וַיְהִי*-protasis), with no extended scene-setting, AND the *כִּי*-clause complement is a substantial proposition (≥8 prosodic words with own finite verb), the split is licensed as a structural-justification-3 indirect-discourse announcement.
+- Formally-marked parallel *כִּי*-series (frame + first; stack remainder per structural justification 1).
+- Direct divine speech with recitativum *כִּי* (*נְאֻם־יְהוָה כִּי [first-person content]*) — recitativum-*כִּי* functions as direct-discourse marker.
+
+**Delete-test diagnostic.** Remove any intervening NP. If the sentence still reads as "[subject] [verb] *כִּי* X," the *כִּי* clause is a complement — MERGE. If the deletion breaks the sentence, the *כִּי* clause is appositive to a noun — DNM (do not merge).
+
+### Rule H8 — Te'amim as Evidence (Operational Application)
+
+**Principle.** See §1 "The Te'amim Are Not a Structural Prior" for the foundational framing. This rule operationalizes the principle.
+
+**Application:**
+- The v1-he-baseline (`data/text-files/v1/he-baseline/`) is the editor's starting draft, faster than blank-page work. It is canon-compliant by construction within the limits of mechanical te'amim parsing.
+- v4-editorial (`data/text-files/v4/editorial/`) freely adds, removes, or merges line breaks relative to v1-he-baseline, justified by atomic-thought + structural-justifications + merge-overrides + syntax veto.
+- When v4-editorial breaks coincide with te'amim-induced breaks, the te'amim corroborate. When v4-editorial breaks disagree with te'amim, the disagreement is informative but not a defect — the te'amim are evidence, not authority.
+- **Cite the te'amim as evidence in defensibility-capture for non-trivial breaks** (per §7.5): "WHY = atomic thought; HOW WE KNOW = te'amim agree (atnach at this position); SCOPE = ..."  When te'amim disagree, document: "WHY = atomic thought + structural justification 5; HOW WE KNOW = te'amim disagree (no disjunctive at this position; tifcha mid-clause); the disagreement is consistent with the te'amim-as-chant-pause-not-sense-unit framing in §1."
+
+**Tier-thresholding (the predecessor stub canon's §2.1 default breaker list)** is **withdrawn as a canon claim.** The te'amim disjunctive hierarchy is real, but it operates as evidence-weighting, not as a break-licensing threshold. The pipeline's `scripts/parse_teamim.py` may still implement a mechanical default (silluq + atnach + segolta + zaqef qaton/gadol as primary breakers; tifcha as servant per Rule H11; lower disjunctives as evidence-only) for the v1-he-baseline draft, but this is a draft-generation heuristic, not a canon commitment.
+
+### Rule H9 — Divine-Title Appositives
+
+**Grammatical basis.** Divine titles in apposition to *יְהוָה* or *אֱלֹהִים* (e.g., *יְהוָה אֱלֹהֵי הַשָּׁמַיִם* "YHWH God of the heavens" at Jonah 1:9; *יְהוָה צְבָאוֹת* "YHWH of hosts" passim; *אֲדֹנָי יְהוִה* compound) function either as **introducing** (formal naming or first-occurrence revelation) or **referencing** (already-established identity used as a bound name unit).
+
+**Trigger.** Divine-title appositive structure following YHWH or Elohim.
+
+**Diagnostic — requires formal anchor for STACK SPLIT:**
+
+INTRODUCING (stack on own line) earns a split ONLY when one of three formal anchors is present:
+1. **Formal naming formula:** *וְקָרָא שְׁמוֹ X / Y / Z* "and his name shall be called X, Y, Z."
+2. **First-occurrence context:** identity revealed for the first time in the passage.
+3. **Prophetic proclamation frame:** *כֹּה אָמַר יְהוָה X / Y / Z* — divine-title cluster within prophetic introduction.
+
+**REFERENCING (default, MERGE).** Already-established identity used as a name unit. Most divine-title appositives are referencing.
+
+**Example (REFERENCING):** Jonah 1:9 *אֶת־יְהוָה אֱלֹהֵי הַשָּׁמַיִם אֲנִי יָרֵא* — *יְהוָה אֱלֹהֵי הַשָּׁמַיִם* is a bound name unit referencing the established Hebrew deity, not a first-time revelation. MERGE.
+
+**Precedence with Rule H4 (vocative).** When a divine-title appositive sits within a vocative unit (the phrase opens with address particle + title, addressing deity directly in second person), **Rule H4 wins** — the vocative + its close appositive stay whole as one direct-address unit. Rule H9's STACK SPLIT for INTRODUCING appositives applies only to non-vocative narrative or prophetic frames (third-person naming contexts).
+
+### Rule H10 — Cross-Verse Continuity Merge
+
+**Grammatical basis.** When a single atomic thought crosses an MT verse boundary, the sense-line stays intact. The verse boundary is an editorial overlay (Masoretic verse division was pre-Masoretic chant-units, finalized in the Tiberian period; not original to the text); it does not constrain sense-line formation. The sense-line is formed by grammatical/rhetorical continuity, and the versification is carried along by an inline superscript marker.
+
+**Trigger.** Atomic thought continues across a verse boundary (most common in: wayyiqtol narrative chains, prophetic oracle blocks, casus pendens with resumption in the next verse, cross-verse *לֵאמֹר*-introduced speech where the speech opens in the next verse).
+
+**Procedure:**
+1. **Identify the boundary** — grammatical continuity indicator (wayyiqtol chain, suspended subject, speech-intro straddle, oracle continuation).
+2. **Merge in place** — the sense-line lives in the *earlier* verse's block (where its lead word sits), with the content that MT attributes to the later verse attached inline after a superscript verse-number marker (`²`, `³`, etc.) indicating where the later verse begins visually.
+3. **Mirror in English gloss layer** — the same merge, the same superscript position.
+4. **Cite using the earlier verse's reference** when referring to the merged colometric line.
+
+**Both directions apply.** Sometimes MT pushes a word *forward* into the next verse where sense-line analysis keeps it with the prior; sometimes MT places a word in the earlier verse where sense-line analysis attaches it to the next clause. Same convention applies — keep the sense-line intact in the verse where its lead word sits, mark the boundary with superscript.
+
+**Hebrew-versification-only.** This rule operates on MT (Hebrew) versification. The Hebrew/Christian versification crosswalk (per textual posture) is independent of cross-verse continuity decisions; the crosswalk is a citation-lookup mechanism, not a structural decision.
+
+**Imported from sibling project.** GNT canon §3.17 is the parent rule; BoFM canon §1 imports the principle. Tanakh canon imports the operational mechanism with Hebrew-specific examples.
+
+### Rule H11 — Tifcha-as-Servant-of-Atnach
+
+**Grammatical basis.** William Wickes (*A Treatise on the Accentuation of the Twenty-One So-Called Prose Books of the Old Testament*, 1887) documented that **tifcha** (טִפְחָא, the disjunctive accent at the second tier in some pedagogical schemes) frequently functions as a *servant* (mishneh) of atnach in many positions — i.e., it marks a sub-pause within atnach's domain rather than being a primary clause-divider.
+
+**Trigger.** Tifcha occurring within atnach's domain at short prosodic distance from the atnach (or from silluq when no atnach is present).
+
+**Diagnostic.** Te'amim evidence weight reduced — when tifcha appears in a servant-of-atnach position, treat it as a weak corroborator of any v4-editorial decision rather than as a primary breaking signal. The mechanical default in `scripts/parse_teamim.py` of treating tifcha as a tier-2 default breaker over-fragments single-thought verses (Jonah 1:1 currently produces a 3-line widow split because of tifcha-driven break at *וַיְהִי*); the v4-editorial pass should re-evaluate tifcha-induced breaks against the atomic-thought criterion.
+
+**WHY:** corrects the predecessor stub canon's §2.1 default-breaker list, which included tifcha as a tier-2 primary breaker without addressing Wickes's well-documented servant-of-atnach analysis. Audit-flagged in the 2026-04-26 hostile audit as a Jonah-blocking issue.
+
+**HOW WE KNOW:** Wickes 1887 (treatise on prose accentuation, foundational reference in CLAUDE.md). Yeivin 1980 §266 corroborates the servant-pattern.
+
+**SCOPE:** prose books only (21 books using prose accent system + Job's prose frame). The tifcha analog in the Sifrei Emet system has different position-functions; addressed separately in the te'amim-inventory reference.
+
+### Rule H12 — Petucha / Setuma Rendering
+
+**Grammatical basis.** See §1 "Petucha / Setuma Are Evidence, Not Authority."
+
+**Trigger.** Petucha (פ marker in TAHOT, or whole-line gap in source manuscripts) or setuma (ס marker, or mid-line gap) in the source apparatus.
+
+**Diagnostic.**
+- **Petucha → blank-line paragraph break** in v4-editorial and rendered as `<div class="paragraph-break-open">` (or equivalent) in the web app.
+- **Setuma → indented paragraph break** in v4-editorial and rendered as a smaller-prominence visual break.
+- Section-level navigation in the web app uses petucha/setuma boundaries as primary structural cues; chapter/verse divisions are present for citation but not the primary structural framing.
+
+**Tradition-disagreement protocol.** When Aleppo, Leningrad, MAM, and BHS disagree on petucha/setuma placement (which they do at the ~5–10% level per Yeivin 1980; Tov 2012), the project follows Leningrad per textual posture §0.1. Discrepancies may be documented in marginal note for sibling-tradition awareness but do not affect the primary text.
+
+### Rule H13 — Special Letters
+
+**Grammatical basis.** The Masoretic text preserves graphical anomalies that the masoretic consensus identifies as deliberate (not scribal errors):
+- **Suspended letters** (large nun in Judg 18:30 *מְ\nנַשֶּׁה*, large ayin in Lev 11:42, etc.).
+- **Inverted nuns** (Num 10:35–36, Ps 107:23–28).
+- **Large letters** (Gen 1:1 *בּ*, Deut 6:4 *ע* of *שְׁמַע*, Lev 11:42 *ו* of *גָּחוֹן*).
+- **Small letters** (Gen 2:4 *ה* of *בְּהִבָּרְאָם*, Lev 1:1 *א* of *וַיִּקְרָא*).
+- **Scriptio plena vs. scriptio defectiva** (presence/absence of mater lectionis vowel letters yod/vav across manuscript traditions).
+
+**Trigger.** Source apparatus marks special letter.
+
+**Diagnostic.**
+- Preserve graphically in the rendered text (web app must support these — to be implemented).
+- Document in marginal note (or hover) with masoretic-tradition reference.
+- **Do not affect line breaks.** Special letters are graphical anomalies, not structural cues. The line break decision is independent.
+
+**Scriptio plena/defectiva.** TAHOT preserves the Leningrad orthography. Variants in MAM (Aleppo) or other witnesses are not adopted. Translit layer transliterates the Leningrad form.
+
+### Rule H14 — Discourse Particles
+
+**Grammatical basis.** Hebrew has a rich inventory of discourse particles that signal frame, transition, deixis, or emphasis:
+- *הִנֵּה* — deictic ("behold!") + speech-act-announcement framing
+- *נָא* — politeness particle, attaches to imperatives
+- *אָז* — temporal pivot ("then")
+- *עַתָּה* / *וְעַתָּה* — discourse pivot ("now" / "and now")
+- *לָכֵן* — inferential ("therefore")
+- *עַל־כֵּן* — causal-inferential ("for this reason")
+- *אַף* — emphatic addition ("even", "also")
+
+**Default.** These particles **lead their content**, not trail the prior clause. Never orphan them at the end of a line.
+
+**Diagnostic.**
+- *הִנֵּה* sentence-initial → own line (deictic/speech-act-announcement framing per structural justification 3).
+- *הִנֵּה* mid-clause as parenthetical deictic → merge with preceding clause if short, evaluate case-by-case.
+- *נָא* as imperative-suffix → never separate from imperative.
+- *אָז*, *עַתָּה*, *וְעַתָּה*, *לָכֵן*, *עַל־כֵּן* sentence-initial → frame next line; merge with content on one line if short, lead next line if content is long.
+
+**Cluster with vocative.** When a sentence-initial discourse particle co-occurs with a vocative, both are extra-clausal elements and cluster on one line; the proposition follows on the next line.
+
+### Rule H15 — Casus Pendens / Left-Dislocation
+
+**Grammatical basis.** Hebrew uses topic-fronting + resumptive pronoun (casus pendens, also called *nominative absolute* or *left-dislocation*) extensively. The fronted topic is grammatically detached; the main clause picks up the topic via a resumptive pronoun. Joüon-Muraoka §156 documents this as a primary Hebrew syntactic device.
+
+**Trigger.** Topic-fronted NP + main clause with resumptive pronoun (often a possessive suffix or independent pronoun referring back to the topic).
+
+**Diagnostic.** The fronted topic earns its own line per structural justification 5 (substantive adjunct as own focus). The main clause begins on the next line.
+
+**Example:** *וְהָאֱלֹהִים יַעֲנֶנּוּ בְקוֹל* "(As for) God / He answers him with [his] voice" — *וְהָאֱלֹהִים* fronted topic; *יַעֲנֶנּוּ* main clause with object-suffix resumption.
+
+**SCOPE:** does not apply to mere subject-fronting without resumption (which is a marked-but-bound word-order variation, not a true casus pendens — fronting paradox applies, see §1 "Imposing vs. Revealing").
+
+### Rule H16 — FEF Wayehi Protasis
+
+**Grammatical basis.** The Hebrew narrative construction *וַיְהִי* + temporal/circumstantial protasis + main clause is the canonical Front-End Frame. The *wayyiqtol* of *הָיָה* introduces a temporal frame; the protasis sets the scene; the main clause resolves. Both sibling canons recognize this as the Hebrew paradigm of FEF (GNT canon §5 explicitly names "the Hebrew wayehi protasis is the FEF analogue"; BoFM canon's "And it came to pass" formula is the calque-into-archaic-English of this very Hebrew construction, hence Rule 1 AICTP integrity).
+
+**Trigger.** *וַיְהִי* + (optional temporal/circumstantial material) + main clause.
+
+**Diagnostic.**
+- The *wayehi*-protasis is held together as one atomic temporal frame **regardless of length**.
+- The main clause starts a new line.
+- Even short protases (Jonah 1:1's 5-orthographic-word *וַיְהִי דְבַר־יְהוָה אֶל־יוֹנָה בֶן־אֲמִתַּי לֵאמֹר*) are FEF-shaped and earn their own line.
+
+**Connection to Rule H5 direct-speech framing.** When *וַיְהִי* + speech-intro frame + *לֵאמֹר* combines (Jonah 1:1 case), the FEF protasis IS the long-speech-intro frame; it gets its own line; the speech opens on the next line.
+
+### Rule H17 — Genealogy / List-Formula Handling
+
+**Grammatical basis.** Hebrew genealogies use formulaic constructions: *X חַי N שָׁנִים וַיּוֹלֶד אֶת־Y וַיְחִי X אַחֲרֵי הוֹלִידוֹ אֶת־Y M שָׁנִים וַיּוֹלֶד בָּנִים וּבָנוֹת וַיִּהְיוּ כָּל־יְמֵי X N+M שָׁנִים וַיָּמֹת* (the Gen 5 generational formula). Legal lists use repeated case-introduction frames (*וְכִי / אִם / לֹא*). Each list-member is one of the same kind of unit.
+
+**Trigger.** Genealogical formula or list-formula context.
+
+**Diagnostic.** Per Parallel-List Uniformity Principle: each generation/case member gets one line. Frame-fragments do not stand alone; the full member-content (X-lived-N-years-and-fathered-Y) is the atomic unit.
+
+**Example.** Gen 5:6 *וַיְחִי שֵׁת חָמֵשׁ שָׁנִים וּמְאַת שָׁנָה וַיּוֹלֶד אֶת־אֱנוֹשׁ* → one line per Seth-generation member, not 4–5 lines for the formula's grammatical sub-parts.
+
+**SCOPE:** Gen 5, Gen 10, Gen 11, Gen 36, 1 Chr 1–9, similar genealogical blocks. Legal lists (Lev 11 dietary, Deut 14 dietary, Deut 27 curses, Deut 28 blessings) per the same principle. Acrostic structures (Pss 119, Lam 1–4) — list-uniform within the acrostic-letter-stanza scope.
+
+---
+
+## §6 Validator Suite
+
+Validators live in two subfolders reflecting the Layer 1 / Layer 3 split (planned, not yet built):
+
+**Layer 1 — Syntax validators** at `validators/syntax/` (generic Hebrew grammar checks; violations tagged `[MALFORMED]` — hard grammatical failures): TODO. First-pass implementation will check line-final maqqef, conjunction-prefix וְ stranded, prepositional-prefix stranded, definite-article stranded, direct-object-marker אֵת stranded, construct-chain split.
+
+**Layer 3 — Colometry validators** at `validators/colometry/` (Tanakh-specific editorial-rule checks; violations tagged `[DEVIATION]`): TODO. First-pass implementation will check Rule H5 direct-speech framing default, Rule H7 complement integrity, Rule H17 genealogy/list-formula uniformity.
+
+**Validator design constraint — no length caps on merge candidates.** Atomic-thought test is the gate, not line length. A long correctly-merged line is evidence that the original text contains a long single thought. Length is diagnostic (may trigger Category B/C review for unusually long results) but is never a mechanical gate.
+
+**Validator output is a work queue, not a review queue.** When a colometry validator categorizes instances as `STRONG-MERGE-CANDIDATE`, `STRONG-SPLIT-CANDIDATE`, or similar unambiguous labels, those items are **application-ready** — Category A by default per §2 "Mechanical-rule authority." Only items the validator itself flags as `REVIEW-REQUIRED` require per-item editorial judgment.
+
+### Gold-Standard Regression Fixtures
+
+After any pipeline-changing pass (new rule, reformatter update, build script change, mechanical sweep), verify output against these chapters before committing. Each fixture is chosen for diagnostic specificity; if a chapter breaks, it identifies which rule class regressed.
+
+**Initial fixture set (to be expanded as the corpus grows):**
+
+| Fixture | Register | Primary rules tested |
+|---|---|---|
+| **Jonah 1** | Prose narrative | Rule H5 direct-speech framing (4 instances), Rule H16 FEF wayehi protasis, Rule H3 wayyiqtol clause-head policy, Rule H11 tifcha-as-servant |
+| **Jonah 2** | Sifrei Emet poetic | Te'amim-evidence-not-authority for Sifrei Emet (Rule H8), structural justification 1 parallel members in psalmic poetry, FEF wayehi protasis at 2:1 |
+| **Genesis 1** | Prose narrative + creation formula | Rule H1 maqqef-group, Rule H17 list-formula (the days-of-creation formula), Parallel-List Uniformity Principle |
+| **Deuteronomy 27** | Legal list | Parallel-List Uniformity Principle (the *אָרוּר* curse-series), Authorial Asymmetry test |
+| **Psalm 1** | Sifrei Emet wisdom | Sifrei Emet stichometry, te'amim-as-evidence in poetic register, M1 bonded-pair tests on common psalmic doublets |
+
+**Verification procedure:** diff the rebuilt `books/*.html` for each fixture chapter against the committed baseline after any pipeline change. Any line-count delta or content delta requires inspection before the commit lands.
+
+**Next candidate on the bench:** Ruth 1 (pure prose validation, post-Jonah next-book scoping). Add as sixth fixture when Ruth editorial pass begins.
+
+---
+
+# Part III — Process and Meta
+
+*Read §7 before any canon-touching commit. §8 is the chronological reasoning trail.*
+
+## §7 Change Protocol
+
+*Purpose: **dual-natured** — mandatory-read before canon edits (operational), and the change-protocol rationale (philosophical). §7's Mandatory-audit trigger list is load-bearing operational content.*
+
+Proposals to change an existing rule, add a new rule, or cull a rule must:
+
+1. **State the Hebrew syntactic / orthographic / Masoretic fact.** If you cannot cite it (Joüon-Muraoka, Waltke-O'Connor, GKC, Yeivin, Wickes), the proposal is insufficient.
+
+2. **Provide corpus evidence.** Worked examples from the actual text — not hypotheticals.
+
+3. **Survive adversarial audit.** For proposals matching any of the following **mandatory-audit triggers**, an adversarial audit (hostile agent or equivalent external skeptical review) MUST be dispatched and its findings must be reflected in the commit. Skipping audit on a triggered proposal is a protocol violation.
+
+   **Mandatory-audit triggers (12 categories — ported from BoFM 2026-04-26 / GNT 2026-04-24, both projects converged on the same list):**
+
+   1. **New named rules / sub-clauses / categories** — including precedence cross-references between rules. Shape-matches feel-tests, enumerated lists, and subjective carve-outs particularly.
+   2. **Rule status promotions** — *proposed* → settled. Removes the hedge; stakes increase.
+   3. **Spot-check-based proposals** — any canon claim resting on less than full-corpus-sweep evidence. Claims like "I checked 30 instances and the pattern is uniform" must be verified by full-corpus classification before codification.
+   4. **Reclassification of canon-recorded Category B/C items** — once a verse, rule, or item is recorded as Category B/C in canon §8 or pending lists, subsequent sessions cannot silently reclassify it under a different rule-framing.
+   5. **Rule deletions or SCOPE narrowings that retire live applications** — retiring a rule is as high-stakes as adding one; audit prevents discarding legitimate work.
+   6. **Mechanical signature / validator changes under settled rules** — adding a verb class, refining a trigger, or changing validator conditions silently expands or contracts rule coverage.
+   7. **Corpus sweeps ≥5 instances under a settled rule** — a sweep asserts "the rule fires cleanly here" N times; the collective scope-claim needs audit even when individual instances are Category A.
+   8. **Canonical example additions to settled rules** — examples shape rule interpretation; a poorly-chosen example silently redefines the rule.
+   9. **Meta-rule changes to §7 itself** — changes to this protocol must be audited.
+   10. **Discipline-shifting memory file additions** — new `feedback_*.md` or `project_*.md` files that shape how Claude approaches canon work are behaviorally-governing, not just observations; they need the same scrutiny as canon.
+   11. **Cross-project imports** (BoFM ↔ GNT ↔ Tanakh) **or recoveries from retired canon** — provenance from a sibling project or older version is not validation; the imported claim must have Tanakh-corpus evidence independent of its source.
+   12. **Corpus-fit verification — post-codification AND post-detection.**
+       - **(a) Post-codification.** When a new rule, sub-clause, or named pattern is codified, the rule is **not "closed" until a corpus-wide goal-fit audit has confirmed (i) all eligible instances conform OR (ii) all residuals are explicitly enumerated** in §8. Codifications based on partial-corpus evidence are vulnerable to undercount; the canon's empirical "HOW WE KNOW" claim must be verified against full-corpus reality.
+       - **(b) Post-detection.** This trigger ALSO fires when Stan-eyeball or any audit surfaces a violation of an **existing** (settled) rule. Application drift accumulates on long-codified rules through ongoing corpus modifications and prior partial-sweep gaps. When a violation is detected, schedule a same-rule full-corpus re-sweep within the same session if practical, or as the next session's first task.
+       - **Audit dimensions to consider:** goal-fit (does corpus implement codified rules), application-consistency on formulaic phrases (*וַיְהִי*, *לֵאמֹר*, *כֹּה אָמַר יְהוָה*, *אַשְׁרֵי*), application-consistency on parallel-list constructions (genealogies, beatitudes, woe-series, blessed-series, conditional pairs — see §1 Parallel-List Uniformity Principle), self-consistency (cross-references, defensibility triplets), smuggling (judgment-handoff failure mode). Dispatch in parallel by default.
+
+   **Audit dispatch protocol — parallel by default.** When a proposal triggers multiple audit dimensions, dispatch all in a single message with multiple Agent tool calls. Sequential only when audit A's verdict determines whether audit B should run. Parallelization substantially reduces friction and lowers the effective cost per audit.
+
+   **Audit-skippable categories (all must hold for the proposal to bypass audit):**
+   - Category A mechanical corpus edits per already-codified rules (sweep-scale ≥5 still triggers #7 regardless)
+   - Typo fixes, cross-reference updates that don't assert precedence, internal formatting cleanups
+   - Deletions of items already reverted in the same session (audit-trail cleanup)
+   - Defensibility-capture additions (WHY/HOW WE KNOW/SCOPE) to already-settled rules without changing the rule's scope
+
+4. **Apply uniformly.** If the rule fires in one place, run the validator or equivalent sweep to catch every instance. Sedimented inconsistency is the primary failure mode.
+
+5. **Defensibility capture (prospective only).** Every new rule, sub-rule, or merge-override added to the canon must carry three elements:
+   - **WHY** — the editorial reason the rule exists (what failure mode does it prevent, what pattern does it reveal)
+   - **HOW WE KNOW** — corpus evidence + adversarial validation (worked examples, sweep counts, audit findings)
+   - **SCOPE** — where the rule applies, where it doesn't (named exclusions, interaction with other rules)
+   Retroactive audit of older rules is optional, not required. The purpose is to ensure each new rule is documented well enough that a future reviewer can judge whether it earns its place.
+
+6. **Re-evaluate deferred items when the rule-set changes.** When a rule is adopted or refined, any corpus item previously classified as `REVIEW-REQUIRED` or `deferred-editorial` must be re-evaluated against the updated rule-set before being carried forward as still requiring Stan's judgment. Carrying forward stale classifications wastes session time and hides cases the current rule-set now handles cleanly.
+
+7. **Update this canon.** Append a dated entry to §8 Update Log and add/modify the relevant rule section. Never edit history silently.
+
+**Self-consistency audit trigger.** When a session adds ≥2 new canon subsections, rules, or merge-overrides, run a light self-consistency audit before wrap: check that (a) all new cross-references resolve, (b) no new rule contradicts an existing rule, (c) all three defensibility elements (WHY/HOW WE KNOW/SCOPE) are present for each addition.
+
+### Proposed-rule adoption protocol
+
+A rule labeled *proposed* is a rule awaiting corpus verification. "Proposed" is a testable state, not a hedging license.
+
+**Adoption criteria.** A proposed rule is adopted when its first corpus sweep produces **≥80% clean categorization** — i.e., 80%+ of matched instances resolve to unambiguous SPLIT or MERGE decisions without heuristic ambiguity. Ambiguous residue (`REVIEW-REQUIRED`) ≥20% signals the rule needs refinement before adoption.
+
+**Sweep-then-decide workflow.**
+1. Write validator implementing the rule's conditions.
+2. Run against full corpus.
+3. If clean ≥80% → apply clean decisions mechanically (Category A per §2), remove "proposed" label, append adoption entry to §8 Update Log.
+4. If clean <80% → identify the ambiguity pattern, refine the rule with an explicit sub-clause, re-run.
+5. Repeat until clean ≥80%, then adopt.
+
+**Do not flag clean categorizations for per-item review.** A proposed rule whose conditions are met is as authoritative as an adopted rule on those specific instances; the "proposed" label only gates corpus-wide sweep confidence, not per-instance application.
+
+---
+
+## §8 Update Log
+
+*Purpose: **dual-natured** — chronological reasoning trail. Recent entries documenting active-rule provenance are operationally referenced; older entries are historical narrative.*
+
+### 2026-04-26 — Intro structure brought into parity with GNT canon's 2026-04-25 voice-cleanup passes
+
+The Tanakh canon was written 2026-04-26 using BoFM v2.0 as architectural template. The GNT canon ran three voice-cleanup passes on 2026-04-25 (commits 514f15d, c787418, b86c13a) that the Tanakh canon didn't inherit because BoFM v2.0 still carried the older HUMAN/ROBOT structure. Stan flagged the gap.
+
+**Edits applied:**
+- D1: HUMAN/ROBOT "How to use this document" section replaced with content-led "What is this document?" + Reader's guide by purpose (mirrors GNT lines 31–47).
+- D2: Stripped "for humans understanding what we are doing" parenthetical from Part I header; same for Part II/III headers; added brief italic Part-level epigraphs.
+- D3: Added PURPOSE italics header to §0 opener.
+- D4: Added PURPOSE italics headers to §2, §3, §5, §7, §8 openers (parallel to existing §1 header).
+- E2: Added Skousen-dictation-specific rationale clarification to §0 Origin subsection.
+
+WHY: Stan flagged that the GNT canon is fresher than what the Tanakh rewrite was based on, and asked whether the Tanakh canon's intro matches the fresher GNT structure. It didn't. These edits bring intro architecture and PURPOSE-header discipline into parity. No methodological content changed.
+
+HOW WE KNOW: 2026-04-26 background subagent re-read the GNT canon end-to-end against the current Tanakh canon and produced a structured 4-edit diff with file:line citations.
+
+SCOPE: intro architecture + PURPOSE headers + Origin paragraph factual accuracy. No rule content modified, no Hebrew-specific sections changed, no methodological position revised.
+
+### 2026-04-26 — Canon v1.0 written from scratch
+
+The predecessor stub canon (231 lines, established 2026-04-25) was scrapped and the canon rewritten from scratch using BoFM v2.0 as architectural template, GNT canon as content where BoFM is silent or where GNT's formulation is sharper, and Hebrew-specific content extracted from the stub or written net-new.
+
+**Why:** Granular reading of both sibling canons end-to-end (2026-04-26) found the stub:
+- Carried "te'amim-prior with override discipline" as central commitment, which contradicts the converged sibling principle that **editorial overlays must not have deterministic force**. The te'amim are the Hebrew analog of NA28 punctuation (sibling GNT) and Pratt's 1879 BoFM versification — late editorial overlays.
+- Carried the four-criteria framing both canons retired (BoFM 2026-04-19, GNT 2026-04-20). Breath was empirically retired by both projects after testing showed zero cases where breath was the sole deciding factor.
+- Framed discipline as "override warrants against an authority" instead of the converged "positive justification under atomic-thought prior."
+- Lacked every architectural element both sibling canons converged on after ~13 months of iteration: three forces, closed-list structural justifications, closed-list merge-overrides, Decision Procedure / Application Order, Category A/B/C autonomy boundary, mandatory-audit triggers, defensibility-capture enforcement, gold-standard regression chapters, withdrawn-proposals discipline.
+- Lacked the rhetoric-bandwagon failure-mode awareness, which is the highest-risk failure mode for the Tanakh project specifically given Hebrew's deep scholarly literature on parallelism (Lowth/Kugel/Berlin/Dobbs-Allsopp), chiasm, and other rhetorical figures.
+
+**Stan-validated 2026-04-26** after explicit pushback against earlier hedging that framed the te'amim demotion as a "tradeoff" or "Stan-call between branding and defensibility." Per `feedback_no_false_choice_framing.md`, fixing wrong methodology is not a tradeoff — it is the work.
+
+**Extracted from the predecessor stub (Tanakh-specific decisions retained):**
+- Textual posture (Leningrad-only, no LXX/DSS/Samaritan/Targums/Peshitta/Vulgate, MAM as reference). Now §0.1.
+- Two-accent-systems reality (prose 21 books, Sifrei Emet for Pss/Prov/poetic Job, Job 3:1–42:6 boundary). Now Rule H8 framing + Te'amim Inventory Reference §4.2 (TODO).
+- Petucha/setuma reality. Now §1 "Petucha / Setuma Are Evidence, Not Authority" + Rule H12.
+- Maqqef. Now Rule H1 (Layer 1 break-legality fact).
+- Ketiv/Qere policy. Now Rule H6 with sub-categories H6.1–H6.5.
+- Glossary content extracted to §9.
+
+**Imported from sibling canons:**
+- Three-forces framework + structural justifications + merge-overrides + Decision Procedure / Application Order: from BoFM v2.0 §1 / GNT canon §1–§2.
+- Container-not-originator framing: from GNT canon §1.
+- Imposing vs. Revealing scope discipline + reaching-for-split warning + fronting paradox: from GNT canon §1.
+- Punctuation/versification not break signals: from both canons, adapted to add te'amim explicitly to the same category.
+- Cross-Verse Continuity Merge: from GNT §3.17 (already imported into BoFM 2026-04-22). Now Rule H10.
+- Authorial Asymmetry Principle (R28): from both canons. Now §1 subsection.
+- Parallel-List Uniformity Principle: from BoFM 2026-04-26 (most recent addition).
+- N=2 Adjudication Principle: from BoFM 2026-04-23.
+- Autonomy Boundary (Categories A/B/C) + Mechanical-rule authority + Scope/precedence/closed-list/carve-out diagnostic: from both canons. Now §2.
+- §7 Change Protocol with 12 mandatory-audit triggers + audit-skippable + parallelization default + defensibility-capture + proposed-rule adoption protocol: from both canons (BoFM 2026-04-26 most recent).
+- FEF treatment for *wayehi* protases: explicitly named in GNT canon §5 as the Hebrew paradigm. Now Rule H16.
+- Validator-output-as-work-queue + validator-design-no-length-caps: from BoFM §6.
+
+**Hebrew-specific net-new sections (no sibling source):**
+- §1 "The Te'amim Are Not a Structural Prior" — the central methodological correction. Frames the te'amim as evidence-not-authority parallel to NA28 punctuation in GNT and Pratt's versification in BoFM.
+- §1 Hebrew anchor inventory (in the Generative Principle subsection) — Hebrew verbless clauses ARE atomic thoughts; do not import the Greek "every line needs a verb" instinct.
+- Rule H1 maqqef-group indivisibility (Layer 1 fact) with the joining-glyph rendering note.
+- Rule H2 construct-chain default.
+- Rule H3 vav-consecutive clause-head policy with bonded-pair / speech-intro-pair / hendiadic exceptions.
+- Rule H4 vocative handling (Hebrew lacks morphological vocative case; address-position diagnostic).
+- Rule H5 direct-speech framing default with short-vs-long *לֵאמֹר* test.
+- Rule H6 Ketiv/Qere policy with sub-categories H6.1–H6.5 (perpetual qere, qere-ve-la-ketiv, ketiv-ve-la-qere, sebirin, tiqqunei sopherim).
+- Rule H7 complement integrity for Hebrew verb classes.
+- Rule H8 te'amim as evidence (operational application of the §1 framing).
+- Rule H9 divine-title appositives.
+- Rule H10 cross-verse continuity merge (GNT-imported, Hebrew-specific examples).
+- Rule H11 tifcha-as-servant-of-atnach (Wickes 1887; corrects predecessor stub §2.1 default-breaker list).
+- Rule H12 petucha/setuma rendering with tradition-disagreement protocol.
+- Rule H13 special letters (suspended/inverted nuns, large/small letters, scriptio plena/defectiva).
+- Rule H14 discourse particles (*הִנֵּה, נָא, אָז, עַתָּה, וְעַתָּה, לָכֵן, עַל־כֵּן, אַף*).
+- Rule H15 casus pendens / left-dislocation.
+- Rule H16 FEF wayehi protasis.
+- Rule H17 genealogy / list-formula handling.
+- Layer 1 reference pointer to `data/syntax-reference/hebrew-break-legality.md` (file TODO; first-pass row inventory listed in §4.1).
+- Te'amim Inventory Reference pointer to `data/syntax-reference/teamim-inventory.md` (file TODO; will correct the §3.2 factual errors of the predecessor stub: tzinnor = positional zarqa, mehuppakh-legarmeih is conjunctive-with-paseq, revia mugrash is positional revia).
+
+**Adjudicated decisions captured (do not relitigate):**
+- Three criteria not four (no breath) — see `feedback_no_breath_criterion.md`.
+- Te'amim are evidence-plus-starting-draft, not authority — locked in §1 "The Te'amim Are Not a Structural Prior."
+- Atomic thought is the prior — locked in §1 Generative Principle.
+- Parallelism is evidence, not a structural prior — locked in §1 "Parallelism Is Not a Structural Prior." The Lowth/Kugel/Berlin/Dobbs-Allsopp debate is real and substantial; the project does not take a position in it because parallelism's status as evidence-not-authority is the same status the te'amim hold, and the framework is symmetric.
+
+**Follow-up work (carry-forwards, not part of this commit):**
+- Update `CLAUDE.md` and `README.md` to reflect new framing (drop te'amim-prior, drop four-criteria, drop breath, point to canon).
+- Audit and update `handoffs/` for cross-references that assume the predecessor framing. Most likely candidates: `handoffs/01-project-overview.md`, `handoffs/03-architecture.md`, `handoffs/04-editorial-workflow.md`.
+- Create `data/syntax-reference/hebrew-break-legality.md` shape-capped table (Layer 1 reference).
+- Create `data/syntax-reference/teamim-inventory.md` (te'amim disambiguation reference, correcting predecessor §3.2 factual errors).
+- Update `scripts/parse_teamim.py` to reflect Rule H8's de-authority framing — the script still produces v1-he-baseline as the editor's starting draft (no functional change), but its output is no longer "the structural prior."
+- Update `scripts/parse_teamim.py` to reflect Rule H11 — tifcha-as-servant-of-atnach mechanical adjustment (raise its evidence weight; remove or sub-condition the tifcha tier-2 default-breaker behavior).
+
+**Adversarial audit dispatched:** three parallel Opus subagents on 2026-04-26 (GNT-canon mining, BoFM-canon mining, Hebrew-realities hostile audit). Reports synthesized into the canon-revision plan; this v1.0 rewrite is the implementation. Per §7 trigger #11 (cross-project imports), each imported architectural element was vetted for Tanakh-corpus applicability during the rewrite.
+
+### 2026-04-26 — Directory rename: v1-teamim → v1-he-baseline; all canon path references updated
+
+**Summary:** Renamed `data/text-files/v1-teamim/` to `data/text-files/v1-he-baseline/` and updated all eight path and prose references in this canon accordingly.
+
+**WHY:** The directory name `v1-teamim` carried the te'amim-prior implication that the canon v1.0 rewrite eliminated. The directory's role is "starting draft for editorial work" — not "te'amim-prior baseline." Renaming to `v1-he-baseline` aligns directory-name framing with canon framing and achieves symmetry with sibling tier names (`v0-eng-baseline`, `v0-translit-baseline`, `v1-eng-interlinear`, `v1-eng-gloss`, `v1-translit`), where the tier prefix encodes position in the pipeline and the suffix encodes content/tradition — not the generation mechanism.
+
+**HOW WE KNOW:** Stan flagged the inconsistency directly: the old name implies the te'amim are the authoritative basis of the draft, which is precisely the framing the canon v1.0 rewrite retired.
+
+**SCOPE:** Directory rename (`data/text-files/v1-teamim/` → `data/text-files/v1-he-baseline/`) + all path references in this canon + carry-forward TODO in §8 (scripts/parse_teamim.py update). Path references in `scripts/`, `handoffs/`, `CLAUDE.md`, and any memory files referencing the old directory name are carry-forward work for the same session.
+
+### 2026-04-27 — Directory layout: tier subfolders
+
+`data/text-files/` restructured so each pipeline tier (v0, v1, v2, v3, v4) gets its own subfolder. Previously each tier-layer combination was a top-level directory (e.g., `v1-he-baseline/`, `v2-eng-interlinear/`); now they nest under `vN/` (e.g., `v1/he-baseline/`, `v2/eng-interlinear/`). The tier-name identity strings (v1-he-baseline, v2-he-syntax, etc.) are unchanged — only the filesystem layout. Canon path references updated throughout.
+
+**WHY:** directory layout was getting unwieldy as v2 (and eventually v3) were added — 14+ top-level tier directories cluttered `data/text-files/`. Subfolder grouping makes the tier structure visible at a glance.
+
+**HOW WE KNOW:** Stan flagged the clutter directly 2026-04-27 ("create a subfolder for v0 folders, etc.").
+
+**SCOPE:** filesystem layout + path references in scripts, validators, canon, tracked docs. Tier-name identities unchanged. apply_v2/apply_v3 ADOPTED_VALIDATORS gates and decision-procedure semantics unchanged.
+
+---
+
+## §9 Glossary
+
+Hebrew terminology used throughout this canon, in alphabetical order by transliteration.
+
+- **Aleppo Codex** — the Tiberian-tradition codex that, with Leningrad, is one of the two primary witnesses to the Tiberian Masoretic text. Editorial base for MAM.
+- **Atnach (etnachta)** — major mid-verse disjunctive ta'am in the prose accent system. Divides each verse into two halves.
+- **BHS** — *Biblia Hebraica Stuttgartensia*, the standard scholarly edition of the Hebrew Bible based on Leningrad. BHQ is its successor.
+- **Casus pendens** — Hebrew topic-fronting construction with resumptive pronoun in the main clause; equivalent to "left-dislocation" in syntactic terminology. Joüon-Muraoka §156.
+- **Construct chain** — bound NP construction with *nomen regens* (head) in construct state + *nomen rectum* (genitive). The chain functions as a single syntactic unit.
+- **Disjunctive accent** — a ta'am marking a pause in cantillation. Opposed to *conjunctive accent*, which links words.
+- **FEF (Front-End Frame)** — periodic-sentence construction where a discourse marker or clause-opener suspends resolution until the main verb arrives. The Hebrew *wayehi* protasis is the canonical Hebrew FEF.
+- **Hendiadys** — figure of speech expressing one idea via two coordinated members (*חֶסֶד וֶאֱמֶת* "covenant-loyalty" expressed as the pair "loyalty and truth"). Joüon-Muraoka §177.
+- **Itture sopherim** — "scribal omissions" the Masorah identifies as deliberate textual omissions from earlier forms (~5 cases).
+- **Ketiv** (*כְּתִיב*) — the consonantal text as written.
+- **Leningrad Codex** — the oldest complete Tiberian-tradition codex (~1008 CE). Editorial base for BHS, BHQ, TAHOT, OSHB, UXLC, this project.
+- **Maqqef** (*מַקֵּף*, U+05BE) — Hebrew hyphen joining two-to-four orthographic words into a single prosodic unit bearing one ta'am.
+- **MAM** — *Miqra al pi ha-Mesorah*, the Aleppo-tradition online edition. Vendored as tradition reference, not adopted.
+- **Merism** — figure of speech expressing totality by naming polar opposites (*שָׁמַיִם וָאָרֶץ* = "all of creation"; *זָכָר וּנְקֵבָה* = "all humans").
+- **Niqqud** — Tiberian vowel-pointing system. Subscripts and superscripts indicating vowels; finalized by the Masoretes ~9th–10th c. CE.
+- **Nomen regens** — the head noun in a construct chain (in construct state).
+- **Nomen rectum** — the genitive noun in a construct chain.
+- **OSHB** — *Open Scriptures Hebrew Bible*, free digital edition based on Leningrad, vendored as transcription cross-check.
+- **Paseq** — vertical bar (*׀*) added in some Masoretic traditions as a post-Masoretic disjunctive marker; function contested.
+- **Petucha** (*פתוחה*, "open") — pre-Masoretic paragraph division marked by a full-line gap in manuscripts. Stronger break than setuma.
+- **Pisqa be-emtsa pasuq** — paragraph break occurring mid-verse (e.g., Gen 35:22). Anomalous; preserved per Masoretic tradition.
+- **Prosodic word** — accentual unit in Hebrew. A maqqef-group is one prosodic word containing 2–4 orthographic words.
+- **Qere** (*קְרֵי*) — the consonantal text as read aloud (Masoretic oral-reading tradition).
+- **Sebirin** — masoretic notes marking a "supposed" alternative reading that the consensus rejects in favor of the printed reading.
+- **Setuma** (*סתומה*, "closed") — pre-Masoretic paragraph division marked by a gap mid-line in manuscripts. Weaker break than petucha.
+- **Sifrei Emet** (*אמ"ת*, acronym from *Iyyov / Mishlei / Tehillim* = Job / Proverbs / Psalms) — the three biblical books that use the poetic accent system. Job's poetic body (3:1–42:6) only; the prose frame uses prose accents.
+- **Silluq** — the disjunctive ta'am marking the final tonic syllable of a verse. Always paired with sof pasuq.
+- **Sof pasuq** — verse-end punctuation mark (`׃`, U+05C3). Marks the end of each Masoretic verse.
+- **Stich** (or *colon*) — a single colometric unit in *Sifrei Emet* terminology. Verses subdivide into 1, 2, or 3 stichs.
+- **STEPBible TAHOT** — the primary source-text feeding the project's pipeline. TSV format; CC-BY-4.0; based on Leningrad with morphological tagging.
+- **Ta'am / Te'amim** — Tiberian cantillation accents. Primarily melodic; secondarily marks word stress; tertiarily marks phrase-pause boundaries within a verse.
+- **TaNaK** — acronym for Torah / Nevi'im / Ketuvim, the Hebrew tripartite division of the canon.
+- **Tetragrammaton** — the four-letter divine name יהוה, vocalized as Adonai (or Elohim) in Jewish reading tradition; transliterated as *Yahweh* in this project's translit layer per scholarly convention.
+- **Tiqqunei sopherim** — "scribal corrections" the Masorah identifies as deliberate emendations from earlier forms (~18 cases per masoretic tradition).
+- **Tifcha** (*טִפְחָא*) — disjunctive ta'am that frequently functions as a *servant of atnach* (mishneh) in many positions. See Rule H11.
+- **Trei Asar** — "the Twelve" — the twelve Minor Prophets, treated as one book in Hebrew tradition.
+- **UXLC** — Westminster Leningrad Codex digital edition at tanach.us. Vendored as transcription cross-check.
+- **Wayyiqtol** (vav-consecutive imperfect) — the dominant clause-head verbal form in Hebrew narrative prose. Marks sequential narrative events. See Rule H3.
+- **Zaqef qaton / zaqef gadol** — second-tier disjunctive accents in the prose system.
+- **Zarqa / Tzinnor** — the SAME accent positionally; *zarqa* in prose, *tzinnor* in Sifrei Emet terminology. Predecessor stub canon's §3.2 listing them as separate accents was a factual error.
+
+---
+
+*End of canon.*
+
+### Rule H99 — Synthetic Test Rule
+
+This is a synthetic rule line for testing the canon-extension gate.
