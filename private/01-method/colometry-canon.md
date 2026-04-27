@@ -491,22 +491,60 @@ Hebrew-specific rules use the H-prefix to distinguish them from sibling-canon ru
 
 ## §4 Layer 1 Reference Pointers
 
-Data tables that belong to generic Hebrew grammar live in the Layer 1 reference, not here. This section holds the cross-references.
+*Purpose: **mainly operational** — cross-references to the Layer 1 syntactic floor + the migration discipline that governs which rules live in Layer 1 vs. here.*
+
+### Three-Layer Architecture
+
+The project enforces a three-layer separation:
+
+| Layer | What it is | Where it lives |
+|---|---|---|
+| **1** | Generic Hebrew grammar — universal facts, language-level | `data/syntax-reference/hebrew-break-legality.md` |
+| **2** | Validators — enforce both layers, with distinct error classes | `validators/syntax/` (Layer 1) + `validators/colometry/` (Layer 3) |
+| **3** | Tanakh-specific editorial methodology | This canon |
+
+**Validator error classes:**
+
+- `[MALFORMED]` — Layer 1 violation. Hard grammatical failure. Must fix before editorial review is meaningful.
+- `[DEVIATION]` — Layer 3 violation. Editorial-policy deviation. Review required before deciding merge / split / document-exception.
+
+### Migration Discipline
+
+**Rules whose body is generic syntactic prohibition** (line-final POS, complement-bond, maqqef-group integrity) **migrate to Layer 1.** Their canon §5 entry becomes a one-line pointer; the operational substance lives in `data/syntax-reference/hebrew-break-legality.md` as a row in the shape-capped table.
+
+**Rules whose body is project-specific operational meat** (verb-class taxonomies, anchor-exemption catalogues, diagnostic tests like Q1/Q2 Goldilocks or Completing-Predication, register-aware decisions) **kernel-reference Layer 1 but stay in canon.** Their structural kernel may be cited from Layer 1 (e.g., "construct chain integrity" as a row), but the rule body — including the editorial overlay, the operational tests, and the corpus evidence — stays in §5.
+
+The shape cap on Layer 1 is what makes this discipline enforceable. A Layer 1 row admits only `signature | legality | reference`; there is nowhere to put editorial reasoning. If a proposed addition needs more than three columns, it stays in the canon. Layer 1's shape cap (24 rows max) is tracked in the file header.
+
+**Reference grammars cited in Layer 1:**
+
+- Joüon-Muraoka, *A Grammar of Biblical Hebrew* (2nd ed., Pontifical Biblical Institute, 2006). Cited as `JM §X`.
+- Waltke-O'Connor, *An Introduction to Biblical Hebrew Syntax* (Eisenbrauns, 1990). Cited as `WO §X.Y`.
+- GKC = Gesenius-Kautzsch-Cowley, *Hebrew Grammar* (2nd English ed., 1910). Cited as `GKC §X`.
 
 ### 4.1 Hebrew Break Legality Reference
 
-Authoritative table: [`data/syntax-reference/hebrew-break-legality.md`](../../data/syntax-reference/hebrew-break-legality.md). Shape-capped table with columns `Pattern signature | Legality | Reference`. Status: **TODO — file not yet created.** The canon's architectural commitment is in place; the Layer 1 file is named and shape-defined but waits for population. First-pass rows to populate (when the file is created):
+Authoritative table: [`data/syntax-reference/hebrew-break-legality.md`](../../data/syntax-reference/hebrew-break-legality.md). Shape-capped table with columns `Hebrew morphological signature | Legality | Reference`. **Status: populated 2026-04-27** — 22 rows out of the 24-row cap (13 REQUIRED-MERGE, 9 PERMITTED-EITHER, 0 REQUIRED-BREAK).
 
-- Maqqef-group split: `REQUIRED-MERGE` (Joüon-Muraoka §13 on maqqef as prosodic-unit-marker)
-- Conjunction-prefix וְ stranded line-final: `REQUIRED-MERGE` (the וְ leads its content)
-- Prepositional prefix מ/ב/כ/ל stranded from object: `REQUIRED-MERGE`
-- Definite article הַ stranded from noun: `REQUIRED-MERGE`
-- Direct-object marker אֵת stranded from object: `REQUIRED-MERGE`
-- Construct chain split with no intervening modifier: `REQUIRED-MERGE` (see Rule H2)
-- Compound divine name split (*יְהוָה צְבָאוֹת*, *יְהוָה אֱלֹהֵי הַשָּׁמַיִם*): `REQUIRED-MERGE`
-- Negation (*לֹא, אַל, אַיִן*) stranded from negated word: `REQUIRED-MERGE`
-- Vocative unit split (multi-word direct-address phrase): `REQUIRED-MERGE`
-- Frozen formula split (*כֹּה אָמַר יְהוָה*, *נְאֻם־יְהוָה*, divine-name compounds): `REQUIRED-MERGE`
+#### Rule-to-Table Mapping
+
+Canon rules H1–H17 cite Layer 1 rows by signature. The grammatical floor lives in Layer 1; the editorial overlay lives in this canon. When a rule says "merge X," verify both that the move is editorially preferred (canon §5) **and** that the table doesn't forbid it (Layer 1).
+
+| Canon rule | Layer 1 row(s) cited |
+|---|---|
+| H1 (Maqqef-Group Indivisibility) | Maqqef-group split |
+| H2 (Construct Chain Default) | Construct chain split, Compound divine name split |
+| H3 (Vav-Consecutive Clause-Head Policy) | Vav-consecutive split, Coordinated clause boundary |
+| H4 (Vocative Handling) | Vocative unit split, Vocative boundary |
+| H5 (Direct-Speech Framing Default) | Speech-frame boundary |
+| H7 (Complement Integrity, Hebrew) | Bound enclitic split, plus verb-object integrity inherited from canon |
+| H9 (Divine-Title Appositives) | Compound divine name split, Apposition boundary |
+| H11 (Tifcha-as-Servant-of-Atnach) | All proclitic-stranding rows (conjunction / prep / article / object-marker / negation / compound-prep) |
+| H14 (Discourse Particles) | Conjunction-prefix and proclitic-stranding rows |
+| H15 (Casus Pendens / Left-Dislocation) | Casus pendens boundary |
+| H16 (FEF Wayehi Protasis) | Wayyehi / wehayah boundary |
+
+Other canon rules (H6 Ketiv/Qere, H8 Te'amim-as-Evidence, H10 Cross-Verse Continuity, H12 Petucha/Setuma, H13 Special Letters, H17 Genealogy/List-Formula) operate above this surface — they are textual-tradition policies, editorial-judgment rules, or paragraph-scale concerns where per-line break-legality does not apply.
 
 ### 4.2 Te'amim Inventory Reference
 
