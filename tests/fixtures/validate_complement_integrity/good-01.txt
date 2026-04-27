@@ -1,0 +1,7 @@
+# FIXTURE: good-01 — cognition verb + כִּי on the SAME line (intact complement)
+# Pattern: יָדַע כִּי on one line — no cross-line split
+# Expected: 0 findings
+
+1:1
+וַיֵּדַע כִּי יְהוָה הוּא הָאֱלֹהִים׃
+

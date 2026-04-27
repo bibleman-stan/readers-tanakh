@@ -1,0 +1,10 @@
+# FIXTURE: good-05 — לָכֵן leads its own line (correct placement)
+# Pattern: לָכֵן is first token of its line, governing the content that follows
+# Expected: 0 findings
+
+1:1
+חָטָאנוּ לְפָנֶיךָ׃
+
+1:2
+לָכֵן יָצָא הָרָעָה הַזֹּאת עָלֵינוּ׃
+

@@ -1,0 +1,13 @@
+# FIXTURE: good-05 — verse with no maqqef at all (baseline clean)
+# Pattern: no maqqef glyphs present; lines end with regular words or sof pasuq
+# Expected: 0 findings
+
+1:1
+וַיֹּאמֶר אֵלָיו יְהוָה׃
+
+1:2
+קוּם לֵךְ אֶל נִינְוֵה הָעִיר הַגְּדוֹלָה׃
+
+1:3
+וַיָּקָם יוֹנָה וַיֵּלֶךְ שָׁמָּה׃
+

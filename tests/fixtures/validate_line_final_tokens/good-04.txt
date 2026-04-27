@@ -1,0 +1,10 @@
+# FIXTURE: good-04 — article הַ fused properly to noun
+# Pattern: הַגְּדוֹלָה — article is part of the token, not a standalone
+# Expected: 0 findings
+
+1:1
+נִינְוֵה הָעִיר הַגְּדוֹלָה׃
+
+1:2
+וַיִּירְאוּ הַמַּלָּחִים יִרְאָה גְדוֹלָה׃
+

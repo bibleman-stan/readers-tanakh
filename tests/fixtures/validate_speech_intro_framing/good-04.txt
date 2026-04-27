@@ -1,0 +1,10 @@
+# FIXTURE: good-04 — no לֵאמֹר at all; no speech-intro pattern
+# Pattern: narrative prose with no speech-intro framing
+# Expected: 0 findings
+
+1:1
+וַיָּקָם יוֹנָה לִבְרֹחַ תַּרְשִׁישָׁה׃
+
+1:2
+וַיֵּרֶד יָפוֹ וַיִּמְצָא אֳנִיָּה׃
+

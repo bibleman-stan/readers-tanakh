@@ -1,0 +1,9 @@
+# FIXTURE: good-05 — next line starts with conjunction not article (not a construct rectum)
+# Pattern: common construct ending (בֵּית) at line end, but next line starts with וַ (conjunction)
+# The is_next_clause_starter guard should suppress the finding
+# Expected: 0 findings
+
+1:1
+הוּא שַׁר בֵּית
+וַיָּבֹא אֶל הַמֶּלֶךְ׃
+

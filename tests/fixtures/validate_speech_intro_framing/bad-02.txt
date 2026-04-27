@@ -1,0 +1,8 @@
+# FIXTURE: bad-02 — long frame (5 words + לֵאמֹר) with speech on the SAME line
+# Violation: long frame (≥4 prosodic words) collapsed with speech content on one line
+# Rule: H5/speech-framing, STRONG-SPLIT-CANDIDATE
+# Expected: ≥1 finding with severity STRONG-SPLIT-CANDIDATE
+
+1:1
+וַיְהִי דְּבַר יְהוָה אֶל יוֹנָה בֶן אֲמִתַּי לֵאמֹר קוּם לֵךְ אֶל נִינְוֵה׃
+

@@ -1,0 +1,8 @@
+# FIXTURE: good-05 — cognition verb at line end but next line is a different clause start (not כִּי)
+# Pattern: זָכַר at line end; next line begins with אֵת (direct object marker), not כִּי
+# Expected: 0 findings
+
+1:1
+זָכַר
+אֵת בְּרִיתוֹ לְעוֹלָם׃
+

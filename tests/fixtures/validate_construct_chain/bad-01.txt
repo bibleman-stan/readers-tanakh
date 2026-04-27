@@ -1,0 +1,9 @@
+# FIXTURE: bad-01 — divine name compound split: יְהוָה at line end, צְבָאוֹת starts next line
+# Violation: frozen formula split across lines (heuristic: divine_name)
+# Rule: H2/construct, subcase: divine_name, severity: STRONG-MERGE-CANDIDATE
+# Expected: ≥1 finding with subcase divine_name
+
+1:1
+כֹּה אָמַר יְהוָה
+צְבָאוֹת אֱלֹהֵי יִשְׂרָאֵל׃
+

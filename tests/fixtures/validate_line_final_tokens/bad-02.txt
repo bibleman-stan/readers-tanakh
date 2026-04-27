@@ -1,0 +1,9 @@
+# FIXTURE: bad-02 — stranded prepositional prefix ל at line end
+# Violation: bare ל token at line end; its object is on the next line
+# Rule: L1/prep-prefix
+# Expected: ≥1 finding
+
+1:1
+וַיֹּאמֶר ל
+יוֹנָה קוּם לֵךְ׃
+

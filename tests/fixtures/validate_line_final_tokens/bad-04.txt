@@ -1,0 +1,9 @@
+# FIXTURE: bad-04 — stranded negation לֹא at line end
+# Violation: bare לֹא token at line end; the negated verb is on the next line
+# Rule: L1/negation
+# Expected: ≥1 finding
+
+1:1
+אוּלַי יִתְעַשֵּׁת הָאֱלֹהִים לָנוּ לֹא
+נֹאבֵד׃
+

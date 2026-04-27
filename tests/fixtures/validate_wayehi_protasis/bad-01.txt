@@ -1,0 +1,9 @@
+# FIXTURE: bad-01 — FEF protasis split: וַיְהִי line without sof pasuq, continuation on next line
+# Violation: wayehi protasis split across two lines
+# Rule: H16, tag: STRONG-MERGE-CANDIDATE
+# Expected: ≥1 finding with tag STRONG-MERGE-CANDIDATE
+
+1:1
+וַיְהִי בִּימֵי
+אֲחַשְׁוֵרוֹשׁ הַמֶּלֶךְ׃
+

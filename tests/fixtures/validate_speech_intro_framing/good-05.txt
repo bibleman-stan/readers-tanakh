@@ -1,0 +1,8 @@
+# FIXTURE: good-05 — prophetic formula כֹּה אָמַר יְהוָה gets own line (correct)
+# Pattern: כֹּה אָמַר יְהוָה on its own line — explicitly not flagged
+# Expected: 0 findings
+
+1:1
+כֹּה אָמַר יְהוָה
+פָּקֹד פָּקַדְתִּי אֶתְכֶם׃
+

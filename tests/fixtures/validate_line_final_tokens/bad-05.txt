@@ -1,0 +1,9 @@
+# FIXTURE: bad-05 — stranded direct object marker אֵת at line end
+# Violation: bare אֵת token at line end; its object is on the next line
+# Rule: L1/dot-marker
+# Expected: ≥1 finding
+
+1:1
+וַיַּטִּלוּ אֵת
+הַכֵּלִים אֶל הַיָּם לְהָקֵל מֵעֲלֵיהֶם׃
+

@@ -1,0 +1,10 @@
+# FIXTURE: good-01 — conjunction prefix וְ NOT stranded (attached to its word on the same line)
+# Pattern: וְיוֹנָה is a complete token; the waw is a prefix on a content word
+# Expected: 0 findings
+
+1:1
+וְיוֹנָה יָרַד אֶל יַרְכְּתֵי הַסְּפִינָה׃
+
+1:2
+וַיִּשְׁכַּב וַיֵּרָדַם׃
+

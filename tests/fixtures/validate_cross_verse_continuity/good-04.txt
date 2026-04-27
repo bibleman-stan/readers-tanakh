@@ -1,0 +1,10 @@
+# FIXTURE: good-04 — verse ends with a speech verb (וַיֹּאמֶר) but next verse ALSO starts with speech verb
+# Pattern: speech-intro cross-verse pattern should NOT fire when next verse starts with another speech verb
+# Expected: 0 findings (next starts with speech verb = sequential framing, not continuation)
+
+1:1
+וַיֹּאמֶר אֵלָיו׃
+
+1:2
+וַיֹּאמֶר לוֹ הַמֶּלֶךְ עֲלֵה׃
+

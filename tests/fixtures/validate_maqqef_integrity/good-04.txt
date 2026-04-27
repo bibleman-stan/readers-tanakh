@@ -1,0 +1,10 @@
+# FIXTURE: good-04 — line ends with sof pasuq after maqqef-group (intact)
+# Pattern: כִּי־ group contained on the line with sof pasuq ending
+# Expected: 0 findings
+
+1:1
+כִּי־עָלְתָה רָעָתָם לְפָנָי׃
+
+1:2
+וַיִּירְאוּ אֶת־יְהוָה יִרְאָה גְדוֹלָה׃
+

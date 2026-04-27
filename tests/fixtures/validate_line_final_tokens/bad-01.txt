@@ -1,0 +1,9 @@
+# FIXTURE: bad-01 — stranded conjunction prefix וְ at line end
+# Violation: standalone וְ token at line end; its content is on the next line
+# Rule: L1/conjunction
+# Expected: ≥1 finding
+
+1:1
+וַיִּירְאוּ הַמַּלָּחִים וְ
+יִזְעֲקוּ אִישׁ אֶל אֱלֹהָיו׃
+

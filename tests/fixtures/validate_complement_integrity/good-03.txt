@@ -1,0 +1,8 @@
+# FIXTURE: good-03 — divine-speech recitativum: אָמַר יְהוָה at line end + כִּי on next
+# Pattern: divine-speech exception — אָמַר with יְהוָה on the same line → skip
+# Expected: 0 findings (divine-speech recitativum exception)
+
+1:1
+כֹּה אָמַר יְהוָה
+כִּי פָּקֹד פָּקַדְתִּי אֶתְכֶם׃
+

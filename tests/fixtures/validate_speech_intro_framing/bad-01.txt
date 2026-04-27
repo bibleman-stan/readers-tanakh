@@ -1,0 +1,9 @@
+# FIXTURE: bad-01 — short frame (1 word + לֵאמֹר) isolated on its own line
+# Violation: short frame (1 prosodic word) isolated; speech content on next line
+# Rule: H5/speech-framing, STRONG-MERGE-CANDIDATE
+# Expected: ≥1 finding with severity STRONG-MERGE-CANDIDATE
+
+1:1
+וַיֹּאמֶר לֵאמֹר
+קוּם לֵךְ אֶל נִינְוֵה הָעִיר הַגְּדוֹלָה׃
+

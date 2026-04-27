@@ -1,0 +1,7 @@
+# FIXTURE: good-03 — single verse only (no consecutive pair to check)
+# Pattern: only one verse block — no cross-verse pair to analyze
+# Expected: 0 findings
+
+1:1
+וַיְהִי דְּבַר יְהוָה אֶל יוֹנָה לֵאמֹר׃
+

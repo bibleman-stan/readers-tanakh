@@ -1,0 +1,13 @@
+# FIXTURE: bad-04 — multiple maqqef splits in one file
+# Violation: two separate lines each end with maqqef
+# Rule: H1/maqqef
+# Expected: ≥2 findings
+
+1:1
+דְּבַר־
+יְהוָה׃
+
+1:2
+אֶל־
+יוֹנָה בֶן אֲמִתַּי׃
+

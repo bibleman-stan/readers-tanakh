@@ -1,0 +1,12 @@
+# FIXTURE: bad-04 — verse ends with speech-intro verb (last token) WITHOUT לֵאמֹר
+# The speech verb must be the LAST token of the verse's last cola
+# Violation: speech-intro cross-verse pattern
+# Rule: H10/cross-verse, pattern: speech-intro-cross-verse, REVIEW-REQUIRED
+# Expected: ≥1 finding with pattern speech-intro-cross-verse
+
+1:1
+וַיָּקָם יוֹנָה וַיֹּאמֶר
+
+1:2
+מִי עָשָׂה זֹאת׃
+

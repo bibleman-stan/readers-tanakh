@@ -1,0 +1,8 @@
+# FIXTURE: bad-02 — FEF protasis collapsed with main clause on same line
+# Violation: וַיְהִי + protasis + second wayyiqtol (main clause verb) all on one line
+# Rule: H16, tag: STRONG-SPLIT-CANDIDATE
+# Expected: ≥1 finding with tag STRONG-SPLIT-CANDIDATE
+
+1:1
+וַיְהִי כַּאֲשֶׁר שָׁמַע יַעֲקֹב וַיָּרָץ לִקְרָאתוֹ׃
+

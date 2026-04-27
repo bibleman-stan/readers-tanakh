@@ -1,0 +1,8 @@
+# FIXTURE: bad-05 — FEF collapsed: wayehi + protasis + second wayyiqtol on one line
+# Violation: protasis collapsed with main-clause verb וַיַּרְא on the same line
+# Rule: H16, tag: STRONG-SPLIT-CANDIDATE
+# Expected: ≥1 finding with tag STRONG-SPLIT-CANDIDATE
+
+1:1
+וַיְהִי בְּשָׁמְעָם וַיַּרְא הַמֶּלֶךְ אֶת הַמְּגִלָּה׃
+

@@ -1,0 +1,9 @@
+# FIXTURE: good-02 — long frame gets its own line; speech opens on next line
+# Pattern: 5-word frame + לֵאמֹר on its own line; speech content on next line
+# Rule H5: long frame (≥4 prosodic words) must get its own line
+# Expected: 0 findings
+
+1:1
+וַיְהִי דְּבַר יְהוָה אֶל יוֹנָה בֶן אֲמִתַּי לֵאמֹר
+קוּם לֵךְ אֶל נִינְוֵה הָעִיר הַגְּדוֹלָה׃
+

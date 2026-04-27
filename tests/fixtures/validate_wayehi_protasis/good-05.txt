@@ -1,0 +1,10 @@
+# FIXTURE: good-05 — existential וַיְהִי with no FEF indicators, bare subject NP
+# Pattern: וַיְהִי רָעָב בָּאָרֶץ — existential (there was famine), not FEF
+# Expected: 0 findings (existential exclusion)
+
+1:1
+וַיְהִי רָעָב בָּאָרֶץ׃
+
+1:2
+וַיֵּלֶךְ אִישׁ מִבֵּית לֶחֶם׃
+

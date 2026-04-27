@@ -1,0 +1,9 @@
+# FIXTURE: bad-02 — construct chain split: regens at line end, articulated rectum on next line
+# Violation: unarticulated noun at line end, articulated word starts next line
+# Rule: H2/construct, subcase: article_rectum, severity: REVIEW-REQUIRED
+# Expected: ≥1 finding with subcase article_rectum
+
+1:1
+וַיֵּרֶד אֶל יַרְכְּתֵי
+הַסְּפִינָה׃
+

@@ -66,16 +66,30 @@ def line_ends_with_maqqef(line: str) -> bool:
     encoded string, but visually/prosodically the maqqef is the joining
     connector. We detect this by scanning right-to-left past any combining
     diacritics to find the last base character.
+
+    Bug fix (2026-04-27): the maqqef itself (U+05BE) falls within the Unicode
+    block U+0591–U+05C7, so the original skip loop incorrectly skipped over
+    the maqqef when it was the final character.  The corrected loop skips only
+    true combining marks: U+0591–U+05BD (te'amim) and U+05BF–U+05C7 (niqqud
+    vowel points), explicitly excluding U+05BE (maqqef), which is a spacing
+    punctuation glyph, not a combining mark.
     """
     # Strip trailing whitespace first
     stripped = line.rstrip()
     if not stripped:
         return False
 
-    # Hebrew combining character ranges: U+0591–U+05C7 (cantillation + points)
+    # Hebrew combining character ranges (corrected):
+    #   U+0591–U+05BD  — cantillation accents (te'amim)
+    #   U+05BF–U+05C7  — niqqud vowel points
+    # U+05BE (maqqef) is EXCLUDED — it is spacing punctuation, not a combining mark.
+    def is_combining_mark(ch: str) -> bool:
+        cp = ord(ch)
+        return (0x0591 <= cp <= 0x05BD) or (0x05BF <= cp <= 0x05C7)
+
     # Walk backwards past any trailing combining marks
     i = len(stripped) - 1
-    while i >= 0 and ("֑" <= stripped[i] <= "ׇ"):
+    while i >= 0 and is_combining_mark(stripped[i]):
         i -= 1
 
     if i < 0:

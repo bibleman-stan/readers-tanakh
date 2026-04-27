@@ -1,0 +1,7 @@
+# FIXTURE: good-01 — short frame (1 word) merged with speech content on same line
+# Pattern: וַיֹּאמֶר לֵאמֹר + speech all on one line — correct for short frame
+# Expected: 0 findings
+
+1:1
+וַיֹּאמֶר לֵאמֹר קוּם לֵךְ אֶל נִינְוֵה׃
+

@@ -1,0 +1,11 @@
+# FIXTURE: good-02 — verse ends with subordinator but paragraph break (פ) intervenes
+# Pattern: אֲשֶׁר at verse end, but פ paragraph marker before next verse → suppress
+# Expected: 0 findings (paragraph break guard)
+
+1:1
+וַיִּמְצָא חֵן בְּעֵינֵי אֲשֶׁר׃
+פ
+
+1:2
+הַמֶּלֶךְ גָּדוֹל הָיָה בַּיָּמִים הָהֵם׃
+

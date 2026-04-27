@@ -1,0 +1,9 @@
+# FIXTURE: bad-05 — one-word frame isolated (וַיֵּן alone + לֵאמֹר)
+# Violation: single-word frame with לֵאמֹר isolated on own line
+# Rule: H5/speech-framing, STRONG-MERGE-CANDIDATE
+# Expected: ≥1 finding
+
+1:1
+וַיַּעַן לֵאמֹר
+עִבְרִי אָנֹכִי׃
+

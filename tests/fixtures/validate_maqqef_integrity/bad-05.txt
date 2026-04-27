@@ -1,0 +1,9 @@
+# FIXTURE: bad-05 — maqqef split: מַה־ question particle split
+# Violation: interrogative maqqef-group split across lines
+# Rule: H1/maqqef
+# Expected: ≥1 finding
+
+1:1
+וַיֹּאמְרוּ אֵלָיו מַה־
+מְּלַאכְתְּךָ וּמֵאַיִן תָּבוֹא׃
+

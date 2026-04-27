@@ -1,0 +1,9 @@
+# FIXTURE: bad-02 — לָכֵן stranded at line end
+# Violation: לָכֵן as last token; the consequence clause it introduces is on next line
+# Rule: H14/discourse-particles, STRONG-MERGE-CANDIDATE
+# Expected: ≥1 finding
+
+1:1
+חָטָאנוּ לְפָנֶיךָ לָכֵן
+הִנֵּה יָצָא כָּל הָרָעָה הַזֹּאת׃
+

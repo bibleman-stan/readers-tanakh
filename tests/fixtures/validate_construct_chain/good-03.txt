@@ -1,0 +1,10 @@
+# FIXTURE: good-03 — line ends with sof pasuq, next line starts with article (different verse)
+# Pattern: line ends with ׃; construct heuristic must not fire across verse boundary
+# Expected: 0 findings (sof pasuq guard)
+
+1:1
+וַיָּקָם יוֹנָה וַיֵּלֶךְ אֶל נִינְוֵה׃
+
+1:2
+הָעִיר הַגְּדוֹלָה כִּדְבַר יְהוָה׃
+

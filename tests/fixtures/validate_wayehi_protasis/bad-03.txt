@@ -1,0 +1,9 @@
+# FIXTURE: bad-03 — FEF with ב-temporal prefix; protasis split
+# Violation: וַיְהִי בְּיוֹם line without sof pasuq; protasis continues on next line
+# Rule: H16, tag: STRONG-MERGE-CANDIDATE
+# Expected: ≥1 finding
+
+1:1
+וַיְהִי בְּיוֹם
+עֲשִׂיּוֹת מֹשֶׁה׃
+

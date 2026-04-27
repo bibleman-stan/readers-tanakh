@@ -1,0 +1,11 @@
+# FIXTURE: bad-02 — verse ends with STRONG subordinator אֲשֶׁר
+# Violation: subordinate clause starts in the next verse
+# Rule: H10/cross-verse, pattern: subordinator-cross-verse, STRONG-MERGE-CANDIDATE
+# Expected: ≥1 finding with pattern subordinator-cross-verse
+
+1:1
+וְהָיָה הַדָּבָר אֲשֶׁר
+
+1:2
+שָׁמַעְנוּ׃
+

@@ -1,0 +1,9 @@
+# FIXTURE: bad-01 — maqqef at line end: the group בֶּן־ is split
+# Violation: line ends with ־ (maqqef), continuation on next line
+# Rule: H1/maqqef
+# Expected: ≥1 finding with rule H1/maqqef
+
+1:1
+אֶל־יוֹנָה בֶן־
+אֲמִתַּי לֵאמֹר׃
+

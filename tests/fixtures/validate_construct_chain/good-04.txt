@@ -1,0 +1,10 @@
+# FIXTURE: good-04 — construct regens and rectum on same line (בֵּית יְהוָה)
+# Pattern: בֵּית יְהוָה on the same line — no cross-line split
+# Expected: 0 findings
+
+1:1
+וַיֵּרֶד אֶל בֵּית יְהוָה׃
+
+1:2
+וַיִּתְפַּלֵּל שָׁמָּה׃
+

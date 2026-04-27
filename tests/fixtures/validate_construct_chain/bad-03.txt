@@ -1,0 +1,9 @@
+# FIXTURE: bad-03 — common construct ending split (בֵּית at line end)
+# Violation: known construct form בֵּית at line end with non-clause-starting next token
+# Rule: H2/construct, subcase: common_construct_ending, severity: REVIEW-REQUIRED
+# Expected: ≥1 finding with subcase common_construct_ending
+
+1:1
+וַיָּבֹא אֶל בֵּית
+יְהוָה וַיִּתְפַּלֵּל׃
+

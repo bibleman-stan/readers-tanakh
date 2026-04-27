@@ -1,0 +1,11 @@
+# FIXTURE: bad-05 — verse ends without sof pasuq; next verse starts with article (construct-chain)
+# Violation: construct regens at verse end (no ׃), articulated rectum opens next verse
+# Rule: H10/cross-verse, pattern: construct-chain-cross-verse, STRONG-MERGE-CANDIDATE
+# Expected: ≥1 finding with pattern construct-chain-cross-verse
+
+1:1
+וַיֵּרֶד אֶל יַרְכְּתֵי
+
+1:2
+הַסְּפִינָה וַיִּשְׁכַּב׃
+

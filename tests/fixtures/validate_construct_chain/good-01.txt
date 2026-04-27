@@ -1,0 +1,10 @@
+# FIXTURE: good-01 — divine name compound on same line (intact)
+# Pattern: יְהוָה צְבָאוֹת on one line — no cross-line split
+# Expected: 0 findings
+
+1:1
+כֹּה אָמַר יְהוָה צְבָאוֹת׃
+
+1:2
+וַיֹּאמֶר אֲדֹנָי אֱלֹהִים׃
+

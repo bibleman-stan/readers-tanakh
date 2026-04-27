@@ -1,0 +1,10 @@
+# FIXTURE: good-02 — prepositional prefix ב properly attached to its object
+# Pattern: בַּיָּם — ב is fused with its object on the same token
+# Expected: 0 findings
+
+1:1
+וַיְהִי סַעַר גָּדוֹל בַּיָּם׃
+
+1:2
+וְהָאֳנִיָּה חִשְּׁבָה לְהִשָּׁבֵר׃
+

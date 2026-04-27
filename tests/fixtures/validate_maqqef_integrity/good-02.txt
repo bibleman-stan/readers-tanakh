@@ -1,0 +1,10 @@
+# FIXTURE: good-02 — multiple maqqef groups, all intact on single lines
+# Pattern: several maqqef-joined pairs all kept together
+# Expected: 0 findings
+
+1:1
+וַיָּקָם יוֹנָה לִבְרֹחַ תַּרְשִׁישָׁה מִלִּפְנֵי יְהוָה׃
+
+1:2
+וַיֵּרֶד יָפוֹ וַיִּמְצָא אֳנִיָּה בָּאָה תַרְשִׁישׁ׃
+

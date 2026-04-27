@@ -1,0 +1,10 @@
+# FIXTURE: good-03 — negation לֹא present but not at line end
+# Pattern: לֹא occurs mid-line; line ends with the negated verb
+# Expected: 0 findings
+
+1:1
+וְלֹא נֹאבֵד׃
+
+1:2
+אִם לֹא יִשְׁמַע קוֹלְךָ׃
+

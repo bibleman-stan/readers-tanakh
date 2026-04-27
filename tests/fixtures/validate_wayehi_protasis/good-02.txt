@@ -1,0 +1,7 @@
+# FIXTURE: good-02 — FEF complete on one line with sof pasuq (correct)
+# Pattern: וַיְהִי + complete protasis + sof pasuq on one line
+# Expected: 0 findings (self-contained FEF line with sof pasuq)
+
+1:1
+וַיְהִי דְּבַר יְהוָה אֶל יוֹנָה לֵאמֹר׃
+

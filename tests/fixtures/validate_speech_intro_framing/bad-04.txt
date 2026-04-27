@@ -1,0 +1,9 @@
+# FIXTURE: bad-04 — bare speech verb at line end without לֵאמֹר
+# Pattern: וַיֹּאמֶר at line end with content following on next line
+# Rule: H5/speech-framing, REVIEW-REQUIRED (secondary check)
+# Expected: ≥1 finding with severity REVIEW-REQUIRED
+
+1:1
+וַיִּקְרַב אֵלָיו רַב הַחֹבֵל וַיֹּאמֶר
+מַה לְּךָ נִרְדָּם׃
+

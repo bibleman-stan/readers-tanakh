@@ -1,0 +1,10 @@
+# FIXTURE: good-01 — existential וַיְהִי (there was/became X), NOT a FEF
+# Pattern: וַיְהִי + subject NP + sof pasuq — existential use, should be skipped
+# Expected: 0 findings
+
+1:1
+וַיְהִי סַעַר גָּדוֹל בַּיָּם׃
+
+1:2
+וַיִּירְאוּ הַמַּלָּחִים מְאֹד׃
+

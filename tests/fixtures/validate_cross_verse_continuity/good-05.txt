@@ -1,0 +1,10 @@
+# FIXTURE: good-05 — verse ends with conjunction-starting token that has sof pasuq
+# Pattern: last token has ׃; the cross-verse construct heuristic requires NO sof pasuq on last token
+# Expected: 0 findings
+
+1:1
+וַיֵּלֶךְ וַיָּשָׁב אֶל הָאָרֶץ׃
+
+1:2
+הַמֶּלֶךְ שָׁב לְשָׁלוֹם׃
+

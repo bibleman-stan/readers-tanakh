@@ -1,0 +1,9 @@
+# FIXTURE: good-03 — standalone לֵאמֹר line (correct canonical pattern)
+# Pattern: לֵאמֹר alone on its own line as speech-onset marker
+# Expected: 0 findings (canonical standalone לֵאמֹר is explicitly NOT flagged)
+
+1:1
+וַיְהִי דְּבַר יְהוָה אֶל יוֹנָה
+לֵאמֹר
+קוּם לֵךְ אֶל נִינְוֵה׃
+

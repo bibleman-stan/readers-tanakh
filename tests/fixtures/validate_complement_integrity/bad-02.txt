@@ -1,0 +1,9 @@
+# FIXTURE: bad-02 — שָׁמַע at line end + כִּי-clause on next line
+# Violation: hear-verb split from its complement
+# Rule: H7/complement-integrity, STRONG-MERGE-CANDIDATE
+# Expected: ≥1 finding
+
+1:1
+וַיִּשְׁמַע
+כִּי עָלְתָה צַעֲקָתָם אֵלָיו׃
+

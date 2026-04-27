@@ -1,0 +1,8 @@
+# FIXTURE: good-02 — cognition verb at line end but next line does NOT start with כִּי
+# Pattern: שָׁמַע at line end; next line begins with וַ (conjunction), not כִּי
+# Expected: 0 findings
+
+1:1
+כִּי שָׁמַע
+וַיִּשְׁמַע יִשְׂרָאֵל׃
+

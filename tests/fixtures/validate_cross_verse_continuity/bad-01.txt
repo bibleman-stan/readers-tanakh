@@ -1,0 +1,11 @@
+# FIXTURE: bad-01 — verse ends with לֵאמֹר; speech content opens next verse
+# Violation: לֵאמֹר at verse end, speech content in next verse
+# Rule: H10/cross-verse, pattern: leemor-cross-verse, STRONG-MERGE-CANDIDATE
+# Expected: ≥1 finding with pattern leemor-cross-verse
+
+1:1
+וַיְהִי דְּבַר יְהוָה אֶל יוֹנָה לֵאמֹר
+
+1:2
+קוּם לֵךְ אֶל נִינְוֵה הָעִיר הַגְּדוֹלָה׃
+

@@ -1,0 +1,10 @@
+# FIXTURE: good-01 — verse ends with sof pasuq; next verse is syntactically independent
+# Pattern: standard verse boundary with no continuation-licensing pattern
+# Expected: 0 findings
+
+1:1
+וַיָּקָם יוֹנָה לִבְרֹחַ תַּרְשִׁישָׁה׃
+
+1:2
+וַיֵּרֶד יָפוֹ וַיִּמְצָא אֳנִיָּה׃
+

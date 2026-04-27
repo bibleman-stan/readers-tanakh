@@ -1,0 +1,9 @@
+# FIXTURE: bad-04 — צִוָּה at line end + כִּי-clause on next line
+# Violation: command-verb split from complement clause
+# Rule: H7/complement-integrity, STRONG-MERGE-CANDIDATE
+# Expected: ≥1 finding
+
+1:1
+וַיְצַוֶּה
+כִּי יִשְׁמְרוּ אֶת הַמִּצְוֹת׃
+
