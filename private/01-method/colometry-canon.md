@@ -548,7 +548,7 @@ Other canon rules (H6 Ketiv/Qere, H8 Te'amim-as-Evidence, H10 Cross-Verse Contin
 
 ### 4.2 Te'amim Inventory Reference
 
-Authoritative table: [`data/syntax-reference/teamim-inventory.md`](../../data/syntax-reference/teamim-inventory.md). Status: **TODO — file not yet created.** Will list the full prose and Sifrei Emet accent inventories with disambiguation by glyph / name / positional function / prose-vs-poetic equivalence. Corrects the factual errors in the predecessor stub canon (tzinnor = positional zarqa, mehuppakh-legarmeih is conjunctive-with-paseq, revia mugrash is positional revia).
+Authoritative table: [`data/syntax-reference/teamim-inventory.md`](../../data/syntax-reference/teamim-inventory.md). Status: **populated** (2026-04-27); 82 lines covering prose + Sifrei Emet inventories. Lists the full prose and Sifrei Emet accent inventories with disambiguation by glyph / name / positional function / prose-vs-poetic equivalence. Corrects the factual errors in the predecessor stub canon (tzinnor = positional zarqa, mehuppakh-legarmeih is conjunctive-with-paseq, revia mugrash is positional revia).
 
 ---
 
@@ -872,11 +872,17 @@ INTRODUCING (stack on own line) earns a split ONLY when one of three formal anch
 
 ## §6 Validator Suite
 
-Validators live in two subfolders reflecting the Layer 1 / Layer 3 split (planned, not yet built):
+Validators live in two subfolders reflecting the Layer 1 / Layer 3 split. Four active validators as of 2026-04-27:
 
-**Layer 1 — Syntax validators** at `validators/syntax/` (generic Hebrew grammar checks; violations tagged `[MALFORMED]` — hard grammatical failures): TODO. First-pass implementation will check line-final maqqef, conjunction-prefix וְ stranded, prepositional-prefix stranded, definite-article stranded, direct-object-marker אֵת stranded, construct-chain split.
+**Layer 1 — Syntax validators** at `validators/syntax/` (generic Hebrew grammar checks; violations tagged `[MALFORMED]` — hard grammatical failures):
+- `validate_maqqef_integrity.py` → Rule H1 (maqqef-group indivisibility). Gate-passed; STRONG findings feed the editorial work queue at Category A confidence.
+- `validate_line_final_tokens.py` → Rule H1 sub-check + L1 proclitic-stranding rows from `data/syntax-reference/hebrew-break-legality.md` (conjunction-prefix וְ, prepositional-prefix, definite-article, direct-object-marker אֵת, negation, compound-prep stranded). Gate-passed; STRONG findings feed the editorial work queue at Category A confidence.
 
-**Layer 3 — Colometry validators** at `validators/colometry/` (Tanakh-specific editorial-rule checks; violations tagged `[DEVIATION]`): TODO. First-pass implementation will check Rule H5 direct-speech framing default, Rule H7 complement integrity, Rule H17 genealogy/list-formula uniformity.
+**Layer 3 — Colometry validators** at `validators/colometry/` (Tanakh-specific editorial-rule checks; violations tagged `[DEVIATION]`):
+- `validate_construct_chain.py` → Rule H2 (construct-chain default). Functioning as a REVIEW-REQUIRED surfacer; STRONG threshold not yet cleared at corpus scale.
+- `validate_speech_intro_framing.py` → Rule H5 (direct-speech framing default) + Rule H16 secondary (FEF wayehi-protasis interaction). Gate-passed on STRONG-MERGE findings; REVIEW-REQUIRED items go to per-item editorial judgment.
+
+**Dashboard and gates.** `validators/run_all.py` is the validator dashboard — discovers all `validate_*.py`, runs each with `--json --v2`, aggregates per-validator finding counts. Run with `--baseline-check` to gate against `.baseline.json` (the regression reference). Two git hooks enforce the gate at commit time: the pre-commit hook (`validators/hooks/pre-commit`) runs `run_all.py --baseline-check` when editorial corpus / canon / validator files are staged; the commit-msg hook (`validators/hooks/commit-msg`) runs `check_canon_extensions.py` to require audit-evidence on any commit that extends the canon.
 
 **Validator design constraint — no length caps on merge candidates.** Atomic-thought test is the gate, not line length. A long correctly-merged line is evidence that the original text contains a long single thought. Length is diagnostic (may trigger Category B/C review for unusually long results) but is never a mechanical gate.
 
@@ -1101,6 +1107,17 @@ Pipeline simplified from **v0 → v1 → v2-he-syntax → v3-he-colometry → v4
 **SCOPE:** removed scripts (`scripts/apply_v2.py`, `scripts/apply_v3.py`, `scripts/lib/apply_pipeline.py`, `scripts/lib/__init__.py`, empty `scripts/archive/`); removed reports (`data/reports/v2/`); moved Hebrew gold-standard and parallel-layer files from `v4/` to `v2/`; updated build cascade (`scripts/build_books.py`) from 4-tier to 2-tier; updated validator path constants (V4_DIR → V2_DIR; --v4 flag → --v2); updated pre-commit hook regex; updated all canon, handoff, README, and CLAUDE.md prose. Validator suite continues as before; STRONG-tagged findings now feed the editorial work queue directly. Decision-procedure semantics, three forces, four merge-overrides, structural justifications, autonomy boundary — all unchanged.
 
 **Audit dispatched:** stan-authorized comprehensive cleanup per parent-agent amplification (memory `feedback_purge_stale_framing_comprehensively.md` — methodological reframings must propagate through directory names, filenames, identifiers, scripts, comments, and prose). The amplification specified: "all the remnants and loose ends of our clean up should be enforced throughout."
+
+### 2026-04-27 — Carry-forwards from 2026-04-26 canon v1.0 write — closure
+
+The following carry-forwards listed in the 2026-04-26 §8 "Canon v1.0 written from scratch" entry are now complete:
+
+- **`data/syntax-reference/hebrew-break-legality.md` (file TODO)** — file created 2026-04-27; shape-capped table of Layer 1 break-legality rows populated with per-rule mapping (H1, H2, H7, H9, H11, H14, H15, H16 + other-above-surface rules). Status: populated and active; §4.1 references it correctly.
+- **`data/syntax-reference/teamim-inventory.md` (file TODO)** — file created 2026-04-27; 82 lines covering full prose and Sifrei Emet accent inventories with glyph/name/positional-function/prose-poetic-equivalence disambiguation. Factual errors from predecessor stub (tzinnor ≠ zarqa, mehuppakh-legarmeih, revia mugrash) corrected. §4.2 status updated from "TODO" to "populated."
+- **`scripts/parse_teamim.py` docstring framing** — docstring already carries correct Rule H8 evidence-not-authority framing as of the 2026-04-27 session (confirmed by inspection); the Rule H11 tifcha-as-servant mechanical adjustment carry-forward remains open (script behavior unchanged; editorial work queue absorbs the finding).
+- **Validator suite "planned, not yet built"** — validators are now built and active (four validators across `validators/syntax/` and `validators/colometry/`). §6 updated 2026-04-27 to reflect as-built reality.
+
+Remaining open carry-forward: Rule H11 parse_teamim.py mechanical adjustment (tifcha-as-servant behavior in the v1-he-baseline generator). This is an improvement-path item, not a correctness blocker — the editorial pass at v2/he absorbs the finding.
 
 ---
 
