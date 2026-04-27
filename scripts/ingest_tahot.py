@@ -41,14 +41,259 @@ ENG_WORD_SEP = " | "
 
 MAQQEF = "־"
 
+# BHS canonical order, 2-digit-prefix subdirs, 3-letter TAHOT book codes.
+# Grouped by the four TAHOT source files.
 BOOK_REGISTRY = {
+    # ── Torah (TAHOT_Gen-Deu.txt) ─────────────────────────────────────────
+    "genesis": {
+        "tahot_file": "TAHOT_Gen-Deu.txt",
+        "tahot_book_code": "Gen",
+        "out_subdir": "01-genesis",
+        "out_prefix": "genesis",
+    },
+    "exodus": {
+        "tahot_file": "TAHOT_Gen-Deu.txt",
+        "tahot_book_code": "Exo",
+        "out_subdir": "02-exodus",
+        "out_prefix": "exodus",
+    },
+    "leviticus": {
+        "tahot_file": "TAHOT_Gen-Deu.txt",
+        "tahot_book_code": "Lev",
+        "out_subdir": "03-leviticus",
+        "out_prefix": "leviticus",
+    },
+    "numbers": {
+        "tahot_file": "TAHOT_Gen-Deu.txt",
+        "tahot_book_code": "Num",
+        "out_subdir": "04-numbers",
+        "out_prefix": "numbers",
+    },
+    "deuteronomy": {
+        "tahot_file": "TAHOT_Gen-Deu.txt",
+        "tahot_book_code": "Deu",
+        "out_subdir": "05-deuteronomy",
+        "out_prefix": "deuteronomy",
+    },
+    # ── Former Prophets / Writings (TAHOT_Jos-Est.txt) ───────────────────
+    "joshua": {
+        "tahot_file": "TAHOT_Jos-Est.txt",
+        "tahot_book_code": "Jos",
+        "out_subdir": "06-joshua",
+        "out_prefix": "joshua",
+    },
+    "judges": {
+        "tahot_file": "TAHOT_Jos-Est.txt",
+        "tahot_book_code": "Jdg",
+        "out_subdir": "07-judges",
+        "out_prefix": "judges",
+    },
+    "ruth": {
+        "tahot_file": "TAHOT_Jos-Est.txt",
+        "tahot_book_code": "Rut",
+        "out_subdir": "08-ruth",
+        "out_prefix": "ruth",
+    },
+    "1samuel": {
+        "tahot_file": "TAHOT_Jos-Est.txt",
+        "tahot_book_code": "1Sa",
+        "out_subdir": "09-1samuel",
+        "out_prefix": "1samuel",
+    },
+    "2samuel": {
+        "tahot_file": "TAHOT_Jos-Est.txt",
+        "tahot_book_code": "2Sa",
+        "out_subdir": "10-2samuel",
+        "out_prefix": "2samuel",
+    },
+    "1kings": {
+        "tahot_file": "TAHOT_Jos-Est.txt",
+        "tahot_book_code": "1Ki",
+        "out_subdir": "11-1kings",
+        "out_prefix": "1kings",
+    },
+    "2kings": {
+        "tahot_file": "TAHOT_Jos-Est.txt",
+        "tahot_book_code": "2Ki",
+        "out_subdir": "12-2kings",
+        "out_prefix": "2kings",
+    },
+    "1chronicles": {
+        "tahot_file": "TAHOT_Jos-Est.txt",
+        "tahot_book_code": "1Ch",
+        "out_subdir": "13-1chronicles",
+        "out_prefix": "1chronicles",
+    },
+    "2chronicles": {
+        "tahot_file": "TAHOT_Jos-Est.txt",
+        "tahot_book_code": "2Ch",
+        "out_subdir": "14-2chronicles",
+        "out_prefix": "2chronicles",
+    },
+    "ezra": {
+        "tahot_file": "TAHOT_Jos-Est.txt",
+        "tahot_book_code": "Ezr",
+        "out_subdir": "15-ezra",
+        "out_prefix": "ezra",
+    },
+    "nehemiah": {
+        "tahot_file": "TAHOT_Jos-Est.txt",
+        "tahot_book_code": "Neh",
+        "out_subdir": "16-nehemiah",
+        "out_prefix": "nehemiah",
+    },
+    "esther": {
+        "tahot_file": "TAHOT_Jos-Est.txt",
+        "tahot_book_code": "Est",
+        "out_subdir": "17-esther",
+        "out_prefix": "esther",
+    },
+    # ── Sifrei Emet + Megillot (TAHOT_Job-Sng.txt) ───────────────────────
+    "job": {
+        "tahot_file": "TAHOT_Job-Sng.txt",
+        "tahot_book_code": "Job",
+        "out_subdir": "18-job",
+        "out_prefix": "job",
+    },
+    "psalms": {
+        "tahot_file": "TAHOT_Job-Sng.txt",
+        "tahot_book_code": "Psa",
+        "out_subdir": "19-psalms",
+        "out_prefix": "psalms",
+    },
+    "proverbs": {
+        "tahot_file": "TAHOT_Job-Sng.txt",
+        "tahot_book_code": "Pro",
+        "out_subdir": "20-proverbs",
+        "out_prefix": "proverbs",
+    },
+    "ecclesiastes": {
+        "tahot_file": "TAHOT_Job-Sng.txt",
+        "tahot_book_code": "Ecc",
+        "out_subdir": "21-ecclesiastes",
+        "out_prefix": "ecclesiastes",
+    },
+    "songofsongs": {
+        "tahot_file": "TAHOT_Job-Sng.txt",
+        "tahot_book_code": "Sng",
+        "out_subdir": "22-songofsongs",
+        "out_prefix": "songofsongs",
+    },
+    # ── Latter Prophets (TAHOT_Isa-Mal.txt) ──────────────────────────────
+    "isaiah": {
+        "tahot_file": "TAHOT_Isa-Mal.txt",
+        "tahot_book_code": "Isa",
+        "out_subdir": "23-isaiah",
+        "out_prefix": "isaiah",
+    },
+    "jeremiah": {
+        "tahot_file": "TAHOT_Isa-Mal.txt",
+        "tahot_book_code": "Jer",
+        "out_subdir": "24-jeremiah",
+        "out_prefix": "jeremiah",
+    },
+    "lamentations": {
+        "tahot_file": "TAHOT_Isa-Mal.txt",
+        "tahot_book_code": "Lam",
+        "out_subdir": "25-lamentations",
+        "out_prefix": "lamentations",
+    },
+    "ezekiel": {
+        "tahot_file": "TAHOT_Isa-Mal.txt",
+        "tahot_book_code": "Ezk",
+        "out_subdir": "26-ezekiel",
+        "out_prefix": "ezekiel",
+    },
+    "daniel": {
+        "tahot_file": "TAHOT_Isa-Mal.txt",
+        "tahot_book_code": "Dan",
+        "out_subdir": "27-daniel",
+        "out_prefix": "daniel",
+    },
+    "hosea": {
+        "tahot_file": "TAHOT_Isa-Mal.txt",
+        "tahot_book_code": "Hos",
+        "out_subdir": "28-hosea",
+        "out_prefix": "hosea",
+    },
+    "joel": {
+        "tahot_file": "TAHOT_Isa-Mal.txt",
+        "tahot_book_code": "Jol",
+        "out_subdir": "29-joel",
+        "out_prefix": "joel",
+    },
+    "amos": {
+        "tahot_file": "TAHOT_Isa-Mal.txt",
+        "tahot_book_code": "Amo",
+        "out_subdir": "30-amos",
+        "out_prefix": "amos",
+    },
+    "obadiah": {
+        "tahot_file": "TAHOT_Isa-Mal.txt",
+        "tahot_book_code": "Oba",
+        "out_subdir": "31-obadiah",
+        "out_prefix": "obadiah",
+    },
     "jonah": {
         "tahot_file": "TAHOT_Isa-Mal.txt",
         "tahot_book_code": "Jon",
-        "out_subdir": "05-jonah",
+        "out_subdir": "32-jonah",
         "out_prefix": "jonah",
     },
+    "micah": {
+        "tahot_file": "TAHOT_Isa-Mal.txt",
+        "tahot_book_code": "Mic",
+        "out_subdir": "33-micah",
+        "out_prefix": "micah",
+    },
+    "nahum": {
+        "tahot_file": "TAHOT_Isa-Mal.txt",
+        "tahot_book_code": "Nam",
+        "out_subdir": "34-nahum",
+        "out_prefix": "nahum",
+    },
+    "habakkuk": {
+        "tahot_file": "TAHOT_Isa-Mal.txt",
+        "tahot_book_code": "Hab",
+        "out_subdir": "35-habakkuk",
+        "out_prefix": "habakkuk",
+    },
+    "zephaniah": {
+        "tahot_file": "TAHOT_Isa-Mal.txt",
+        "tahot_book_code": "Zep",
+        "out_subdir": "36-zephaniah",
+        "out_prefix": "zephaniah",
+    },
+    "haggai": {
+        "tahot_file": "TAHOT_Isa-Mal.txt",
+        "tahot_book_code": "Hag",
+        "out_subdir": "37-haggai",
+        "out_prefix": "haggai",
+    },
+    "zechariah": {
+        "tahot_file": "TAHOT_Isa-Mal.txt",
+        "tahot_book_code": "Zec",
+        "out_subdir": "38-zechariah",
+        "out_prefix": "zechariah",
+    },
+    "malachi": {
+        "tahot_file": "TAHOT_Isa-Mal.txt",
+        "tahot_book_code": "Mal",
+        "out_subdir": "39-malachi",
+        "out_prefix": "malachi",
+    },
 }
+
+# BHS canonical order for --all-books iteration
+BOOK_ORDER = [
+    "genesis", "exodus", "leviticus", "numbers", "deuteronomy",
+    "joshua", "judges", "ruth", "1samuel", "2samuel",
+    "1kings", "2kings", "1chronicles", "2chronicles", "ezra", "nehemiah", "esther",
+    "job", "psalms", "proverbs", "ecclesiastes", "songofsongs",
+    "isaiah", "jeremiah", "lamentations", "ezekiel", "daniel",
+    "hosea", "joel", "amos", "obadiah", "jonah", "micah",
+    "nahum", "habakkuk", "zephaniah", "haggai", "zechariah", "malachi",
+]
 
 REF_RE = re.compile(
     r"^([A-Za-z0-9]+)\."
@@ -105,7 +350,7 @@ def clean_translit(raw, is_proper):
     head = head.lower().strip()
     # Strip maqqef hyphen FIRST so a trailing apostrophe behind it gets exposed
     # to the apostrophe-stripping pass (TAHOT writes "halo'-" / "lo'-" with
-    # both terminators on words like לֹא־).
+    # both terminators on words like לא־).
     head = re.sub(r"-$", "", head)
     head = re.sub(r"^'+", "", head)
     head = re.sub(r"'+$", "", head)
@@ -171,7 +416,7 @@ def write_chapter_files(he_path, en_path, tr_path, chapter_num, verses):
     """Write three parallel v0 files for one chapter.
 
     Hebrew is grouped at PROSODIC-word level (maqqef-joined orthographic
-    words concatenated without space — the maqqef glyph fills the join
+    words concatenated without space -- the maqqef glyph fills the join
     visually). English and translit are stored at ORTHOGRAPHIC-word level
     so the build can render per-word spans aligned with Hebrew.
     """
@@ -208,17 +453,31 @@ def write_chapter_files(he_path, en_path, tr_path, chapter_num, verses):
                 ft.write("\n")
 
 
-def ingest_book(book_key):
+def ingest_book(book_key, fatal_on_missing=True):
+    """Ingest a single book.
+
+    Returns (chapter_count, verse_count) on success, or None if the TAHOT
+    file is missing and fatal_on_missing=False (warning printed, no exit).
+    """
     if book_key not in BOOK_REGISTRY:
         sys.exit(f"Unknown book key: {book_key}")
     spec = BOOK_REGISTRY[book_key]
     tahot_path = os.path.join(TAHOT_DIR, spec["tahot_file"])
+
     if not os.path.exists(tahot_path):
-        sys.exit(f"TAHOT file not found: {tahot_path}")
+        msg = f"WARNING: TAHOT file {spec['tahot_file']!r} not vendored; skipping book {book_key!r}"
+        print(msg)
+        if fatal_on_missing:
+            sys.exit(1)
+        return None
 
     chapters, crosswalk = parse_tahot_for_book(tahot_path, spec["tahot_book_code"])
     if not chapters:
-        sys.exit(f"No verses found for book code {spec['tahot_book_code']!r}")
+        msg = f"No verses found for book code {spec['tahot_book_code']!r} in {spec['tahot_file']!r}"
+        print(f"WARNING: {msg}")
+        if fatal_on_missing:
+            sys.exit(msg)
+        return None
 
     he_dir = os.path.join(V0_DIR, spec["out_subdir"])
     en_dir = os.path.join(V0_ENG_DIR, spec["out_subdir"])
@@ -243,19 +502,65 @@ def ingest_book(book_key):
         crosswalk_path = os.path.join(he_dir, f"{spec['out_prefix']}-crosswalk.json")
         with open(crosswalk_path, "w", encoding="utf-8", newline="\n") as f:
             json.dump(crosswalk, f, ensure_ascii=False, indent=2, sort_keys=True)
-        print(f"  wrote {crosswalk_path} ({len(crosswalk)} verse-numbering differences)")
+        print(f"  crosswalk: {crosswalk_path} ({len(crosswalk)} verse-numbering differences)")
 
     print(
-        f"\n{book_key}: {chapter_count} chapters, {verse_count} verses "
+        f"  {book_key}: {chapter_count} chapters, {verse_count} verses "
         f"-> v0-prose / v0-eng-baseline / v0-translit-baseline"
     )
+    return chapter_count, verse_count
 
 
 def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--book", required=True)
+    ap = argparse.ArgumentParser(
+        description="Ingest STEPBible TAHOT TSV files into v0 baseline text files."
+    )
+    group = ap.add_mutually_exclusive_group(required=True)
+    group.add_argument(
+        "--book",
+        metavar="BOOK_KEY",
+        help="Ingest a single book by its registry key (e.g. jonah, genesis).",
+    )
+    group.add_argument(
+        "--all-books",
+        action="store_true",
+        help=(
+            "Ingest every book in BOOK_REGISTRY in BHS canonical order. "
+            "Books whose TAHOT file is not vendored print a warning and are skipped."
+        ),
+    )
     args = ap.parse_args()
-    ingest_book(args.book)
+
+    if args.book:
+        ingest_book(args.book, fatal_on_missing=True)
+    else:
+        # --all-books
+        succeeded = []
+        warned = []
+        failed = []
+        for book_key in BOOK_ORDER:
+            print(f"\n=== {book_key} ===")
+            result = ingest_book(book_key, fatal_on_missing=False)
+            if result is None:
+                warned.append(book_key)
+            else:
+                ch, vs = result
+                succeeded.append((book_key, ch, vs))
+
+        print("\n" + "=" * 60)
+        print(f"--all-books complete: {len(succeeded)} succeeded, {len(warned)} skipped")
+        if succeeded:
+            print("\nSucceeded:")
+            for book_key, ch, vs in succeeded:
+                print(f"  {book_key}: {ch} chapters, {vs} verses")
+        if warned:
+            print("\nSkipped (TAHOT file not vendored or no verses found):")
+            for book_key in warned:
+                print(f"  {book_key}")
+        if failed:
+            print("\nFailed (unexpected errors):")
+            for book_key in failed:
+                print(f"  {book_key}")
 
 
 if __name__ == "__main__":

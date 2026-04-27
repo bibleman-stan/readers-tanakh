@@ -1,9 +1,9 @@
 {
   "validate_complement_integrity": 0,
-  "validate_construct_chain": 0,
+  "validate_construct_chain": 6,
   "validate_discourse_particles": 0,
   "validate_line_final_tokens": 0,
   "validate_maqqef_integrity": 0,
-  "validate_speech_intro_framing": 1,
-  "validate_wayehi_protasis": 0
+  "validate_speech_intro_framing": 5,
+  "validate_wayehi_protasis": 1
 }
