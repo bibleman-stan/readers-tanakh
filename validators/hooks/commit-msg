@@ -1,0 +1,16 @@
+#!/bin/sh
+# Tanakh Reader commit-msg hook
+# Detects canon extensions (§7 trigger patterns) and blocks commits that
+# introduce them without audit evidence in the commit message.
+#
+# Closes the gap the regression-baseline pre-commit hook can't:
+# new closed-list additions / rule sections / merge-overrides that do not
+# increase any existing rule's finding count.
+#
+# To bypass (Stan-only, explicit decision):
+#   git commit --no-verify -m '...'
+
+REPO_ROOT=$(git rev-parse --show-toplevel)
+cd "$REPO_ROOT"
+
+PYTHONIOENCODING=utf-8 py -3 validators/check_canon_extensions.py "$1"

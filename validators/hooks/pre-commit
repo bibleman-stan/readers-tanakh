@@ -1,0 +1,45 @@
+#!/bin/sh
+# Tanakh Reader pre-commit hook
+# Runs all colometry validators automatically on commits that touch the canon
+# or the editorial corpus. Blocks commits that INCREASE finding counts vs
+# validators/.baseline.json.
+#
+# To bypass (only with Stan's explicit authorization):
+#   git commit --no-verify
+
+set -e
+
+# Only run validators if relevant files are staged.
+RELEVANT=$(git diff --cached --name-only | grep -E "^(data/text-files/v4/editorial/|private/01-method/colometry-canon\.md|data/syntax-reference/|validators/)" || true)
+
+if [ -z "$RELEVANT" ]; then
+    exit 0
+fi
+
+echo ""
+echo "[pre-commit] Canon/corpus/validator files staged. Running run_all..."
+echo ""
+
+REPO_ROOT=$(git rev-parse --show-toplevel)
+cd "$REPO_ROOT"
+
+# Run baseline-check mode. Blocks only on REGRESSIONS (finding count
+# increased vs validators/.baseline.json). Pre-existing findings don't block.
+PYTHONIOENCODING=utf-8 py -3 validators/run_all.py --baseline-check
+RESULT=$?
+
+if [ $RESULT -ne 0 ]; then
+    echo ""
+    echo "[pre-commit] BLOCKED: validators report new findings vs baseline."
+    echo "[pre-commit] Review the dashboard above, then either:"
+    echo "  (a) fix the new violations and re-stage, OR"
+    echo "  (b) update baseline if the increase is intentional:"
+    echo "      PYTHONIOENCODING=utf-8 py -3 validators/run_all.py --update-baseline"
+    echo ""
+    exit 1
+fi
+
+echo ""
+echo "[pre-commit] No new findings vs baseline. Proceeding with commit."
+echo ""
+exit 0
