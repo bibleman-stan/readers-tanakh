@@ -376,9 +376,17 @@ def compute_readiness(
     """
     breakdown: dict[str, float] = {}
 
-    # ── 50 pts: zero MALFORMED ─────────────────────────────────────────────
+    # ── 50 pts: MALFORMED findings (graduated scale) ───────────────────────
+    # 0 MALFORMED → 50 pts (full)
+    # 1-3 MALFORMED → 40 pts (small slip)
+    # 4-10 MALFORMED → 25 pts (moderate)
+    # >10 MALFORMED → 0 pts (heavy)
     if malformed == 0:
         pts_malformed = 50.0
+    elif malformed <= 3:
+        pts_malformed = 40.0
+    elif malformed <= 10:
+        pts_malformed = 25.0
     else:
         pts_malformed = 0.0
     breakdown["malformed_pts"] = pts_malformed
