@@ -50,6 +50,14 @@ NEW_MERGE_OVERRIDE_RE = re.compile(r"^#### M\d+\.")
 # (c) New §1 principle / sub-clause with explicit "(added DATE)" provenance
 NEW_DATED_PRINCIPLE_RE = re.compile(r"^### .+\(added 20\d\d-\d\d-\d\d")
 
+# (c-bis) Catch-all: any new H3 heading that isn't structural (§-numbered,
+# Rule HN, Mn., or Part I/II/III). Catches new principle subsections like
+# "### Mission", "### Container-Not-Originator" without requiring the
+# explicit "(added DATE)" marker (most edits won't carry it).
+NEW_PRINCIPLE_HEADING_RE = re.compile(
+    r"^### (?!§|Rule\s+H?\d+|M\d+\.|Part\s+[IVX]+)[A-Z]"
+)
+
 # (d) Closed-list table row — pipe-leading row with 3+ cells, last cell Yes/No
 CLOSED_LIST_TABLE_ROW_RE = re.compile(
     r"^\|\s*[A-Z][^|]+\|.+\|\s*(?:Yes|No)\s*\|\s*$"
@@ -60,6 +68,10 @@ NEW_TRIGGER_ENTRY_RE = re.compile(r"^\s*\d+\.\s+\*\*[A-Z][^*]+\*\*\s+—")
 
 # (f) New SCOPE-exclusion / scope bullet under a rule
 NEW_SCOPE_EXCLUSION_RE = re.compile(r"^-\s+\*\*[A-Z][^*]+\*\*\s+—")
+
+# (g) New bullet item with bolded label (any sub-list addition under a rule)
+# Looser than (f) — doesn't require em-dash; catches more bullet-list extensions.
+NEW_BULLET_LABEL_RE = re.compile(r"^-\s+\*\*[A-Z][^*]{2,}\*\*")
 
 # ---------------------------------------------------------------------------
 # Commit-message gate keywords
@@ -165,12 +177,19 @@ def detect_extensions(diff: str) -> list[tuple[str, str]]:
             indicators.append(("new-merge-override", body[:80]))
         if NEW_DATED_PRINCIPLE_RE.match(body):
             indicators.append(("new-dated-principle", body[:80]))
+        elif NEW_PRINCIPLE_HEADING_RE.match(body):
+            # Only report (c-bis) when (c) didn't already match — same line shouldn't
+            # double-trigger.
+            indicators.append(("new-principle-heading", body[:80]))
         if CLOSED_LIST_TABLE_ROW_RE.match(body):
             indicators.append(("closed-list-table-row", body[:80]))
         if NEW_TRIGGER_ENTRY_RE.match(body):
             indicators.append(("new-trigger-entry", body[:80]))
         if NEW_SCOPE_EXCLUSION_RE.match(body):
             indicators.append(("new-scope-exclusion", body[:80]))
+        elif NEW_BULLET_LABEL_RE.match(body):
+            # Only report (g) when (f) didn't already match.
+            indicators.append(("new-bullet-label", body[:80]))
     return indicators
 
 

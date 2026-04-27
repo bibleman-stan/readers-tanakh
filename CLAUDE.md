@@ -208,6 +208,28 @@ PYTHONIOENCODING=utf-8 py -3 validators/run_all.py --update-baseline # capture n
 
 ---
 
+## Pre-commit Adversarial-Audit Discipline
+
+**Before any commit that modifies `private/01-method/colometry-canon.md`, check whether the change matches a mandatory-audit trigger per canon §7.** The 12 triggers are listed in canon §7; re-read them when uncertain. If the change matches any trigger, audit evidence (hostile-agent dispatch + verdict + application) must be present in the commit message or the canon §8 Update Log entry.
+
+**Audit-skippable.** Canon edits that do NOT match any trigger (typo fixes, cross-reference updates without precedence claims, deletions of same-session reverts, defensibility-capture additions to already-settled rules without scope changes, Category A mechanical corpus edits that are not part of a ≥5-instance sweep) proceed without audit.
+
+**When uncertain.** Dispatch the audit. The cost of a false-positive audit (Stan reads a no-op result) is small; the cost of a false-negative audit (a bogus rule lands silently) is large.
+
+**Required commit-message declaration.** Every commit message that touches `private/01-method/colometry-canon.md` must declare audit-status explicitly: either `Audit-skippable per §7 ([reason])` with the reason citing one of the named audit-skippable categories above, OR `Audit dispatched: [evidence]` with concrete reference (parallel-agent verdicts, §8 entry, prior-commit pointer). Omission is itself a discipline failure — visible at a glance in `git log`. The mechanical gate (`validators/hooks/commit-msg` via `check_canon_extensions.py`) detects extension patterns and requires an audit-evidence keyword; the declaration is the editor-side discipline that front-loads (and complements) the gate.
+
+**Self-test to run pre-commit** (faster than full trigger-list scan):
+- Does this change include a scope claim, a precedence claim, a closed-list extension, or a named-category carve-out? → audit.
+- Does this change rest on spot-check evidence rather than a full-corpus classification? → audit.
+- Does this change reclassify or delete previously-settled canon content? → audit.
+- If no to all three → probably skip-safe.
+
+**Parallelize audits by default.** When triggered, dispatch multiple audit dimensions in parallel (one message, multiple Agent tool calls). Sequential only when audit A's verdict determines whether audit B should run. Canon §7 codifies this default.
+
+This discipline complements (does NOT replace) the **Self-consistency audit trigger** in canon §7 (when a session adds ≥2 new canon subsections, rules, or merge-overrides, run a light self-consistency audit before wrap). Pre-commit is per-change; self-consistency is session-rollup. See canon §2 Autonomy Boundary for the Category-B-by-default rule this self-test instantiates, and canon §7 for the full trigger list.
+
+---
+
 ## Build Pipeline (planned)
 
 The cascade rule (once English layer exists): **Hebrew edit → English regen → HTML rebuild**.
