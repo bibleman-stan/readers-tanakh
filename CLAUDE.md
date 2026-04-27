@@ -89,20 +89,27 @@ Compaction-resume: still run the full CHECK-IN protocol when resuming from a com
 
 ## Key Files
 
-Most of these do not exist yet. They are listed so you know the planned layout when scaffolding scripts in future sessions.
+Current as of 2026-04-27 (post v0/v1/v2 tier collapse).
 
-| File | Purpose |
-|---|---|
-| `index.html` | Main web app — RTL Hebrew layout, all CSS/JS inline |
-| `scripts/ingest_tahot.py` | Reads STEPBible TAHOT TSV → splits to per-book/per-chapter v0-prose files |
-| `scripts/parse_teamim_prose.py` | Parses prose accent hierarchy → v1-he-baseline cola |
-| `scripts/parse_teamim_poetic.py` | Parses *Sifrei Emet* accent hierarchy for Pss / Prov / Job 3:1–42:6 |
-| `scripts/build_books.py` | Converts text files → HTML fragments |
-| `data/text-files/v0/prose/*/` | Chapter files derived from TAHOT — **NEVER EDIT** |
-| `data/text-files/v1/he-baseline/*/` | Hebrew baseline cola draft — machine-generated starting point for editorial work in v2 |
-| `data/text-files/v2/he/*/` | Hand-edited Hebrew gold standard — single source of truth |
-| `data/text-files/v2/eng-gloss/*/` | Structural English glosses (planned, deferred behind Hebrew MVP) |
-| `books/` | Generated HTML fragment files |
+| File | Status | Purpose |
+|---|---|---|
+| `index.html` | live | Main web app — RTL Hebrew layout, all CSS/JS inline |
+| `scripts/ingest_tahot.py` | live | Reads STEPBible TAHOT TSV → per-book/per-chapter v0-prose files |
+| `scripts/parse_teamim.py` | live | Parses te'amim hierarchy → v1-he-baseline cola + per-word layers |
+| `scripts/build_books.py` | live | 3-tier cascade (v2 → v1) → HTML fragments under `books/` |
+| `scripts/propagate_editorial_layers.py` | live | Re-segments v1 per-word layers (interlinear/translit/gloss) when v2/he changes cola structure |
+| `validators/run_all.py` | live | Dashboard + baseline gate (--baseline-check / --update-baseline) |
+| `validators/check_canon_extensions.py` | live | Commit-msg gate against canon-extension diffs |
+| `data/text-files/v0/prose/*/` | populated | Raw text from TAHOT — **NEVER EDIT** |
+| `data/text-files/v1/he-baseline/*/` | populated | Te'amim-baseline cola draft (script-emitted) |
+| `data/text-files/v1/{eng-interlinear,eng-gloss,translit}/*/` | populated | Per-word layers in lockstep with v1/he-baseline |
+| `data/text-files/v2/he/*/` | Jonah 1 only | Hand-edited Hebrew gold standard — single source of truth |
+| `data/text-files/v2/{eng-interlinear,eng-gloss,translit}/*/` | Jonah 1 only | Per-word layers aligned to v2/he cola structure |
+| `data/syntax-reference/hebrew-break-legality.md` | live | Layer 1 surface (shape-capped, 22/24 rows) |
+| `data/syntax-reference/teamim-inventory.md` | TODO | Te'amim glyph inventory (not yet created) |
+| `private/01-method/colometry-canon.md` | live (force-staged) | Layer 3 editorial methodology |
+| `books/` | generated | HTML fragments per `build_books.py` |
+| `.git/hooks/{pre-commit,commit-msg}` | installed | Mechanical gates (sourced from `validators/hooks/`) |
 
 ---
 
