@@ -37,8 +37,8 @@ from pathlib import Path
 # Path constants
 # ---------------------------------------------------------------------------
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
-V1_DIR = REPO_ROOT / "data" / "text-files" / "v1-he-baseline"
-V4_DIR = REPO_ROOT / "data" / "text-files" / "v4-editorial"
+V1_DIR = REPO_ROOT / "data" / "text-files" / "v1" / "he-baseline"
+V4_DIR = REPO_ROOT / "data" / "text-files" / "v4" / "editorial"
 
 # Maqqef glyph
 MAQQEF = "־"  # U+05BE
@@ -138,7 +138,7 @@ def main():
     parser.add_argument(
         "--v4",
         action="store_true",
-        help="Scan v4-editorial files instead of v1-he-baseline.",
+        help="Scan v4/editorial files instead of v1/he-baseline.",
     )
     parser.add_argument(
         "--verbose", "-v",
@@ -153,7 +153,7 @@ def main():
     args = parser.parse_args()
 
     base_dir = V4_DIR if args.v4 else V1_DIR
-    tier_label = "v4-editorial" if args.v4 else "v1-he-baseline"
+    tier_label = "v4/editorial" if args.v4 else "v1/he-baseline"
 
     if not base_dir.exists():
         print(

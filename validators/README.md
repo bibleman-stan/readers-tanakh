@@ -115,8 +115,8 @@ Example:
 
 Validators run against:
 
-- `data/text-files/v1-he-baseline/<book>/` — te'amim-driven machine baseline (primary scan target)
-- `data/text-files/v4-editorial/<book>/` — hand-edited gold standard (when present; higher priority)
+- `data/text-files/v1/he-baseline/<book>/` — te'amim-driven machine baseline (primary scan target)
+- `data/text-files/v4/editorial/<book>/` — hand-edited gold standard (when present; higher priority)
 
 The `--book` argument accepts the book-folder name (e.g., `jonah`, `genesis`).
 Default: all books present in the target directory.
@@ -148,8 +148,8 @@ this rule earn a validator?" forces "does this rule earn its place?"
 2. Name the file `validate_<rule_shortname>.py`.
 3. Add a header docstring citing the canon rule (e.g., "Validates canon Rule H2").
 4. Use `argparse` with `--book` parameter (see existing validators for pattern).
-5. Read from `v1-he-baseline/` by default; add `--v4` flag to switch to
-   `v4-editorial/` when v4 files exist.
+5. Read from `v1/he-baseline/` by default; add `--v4` flag to switch to
+   `v4/editorial/` when v4 files exist.
 6. Output: `[TAG]  file:line  rule  brief` to stdout.
 7. Exit 0 (clean) or 1 (violations); exit 2 on setup error.
 8. Register in this README table under the correct layer.

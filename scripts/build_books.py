@@ -45,22 +45,22 @@ import sys
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.dirname(SCRIPT_DIR)
 
-V4_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v4-editorial")
-V3_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v3-he-colometry")
-V2_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v2-he-syntax")
-V1_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v1-he-baseline")
+V4_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v4", "editorial")
+V3_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v3", "he-colometry")
+V2_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v2", "he-syntax")
+V1_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v1", "he-baseline")
 
-INTER_HAND_DIR = os.path.join(REPO_ROOT, "data", "text-files", "eng-interlinear")
-INTER_V2_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v2-eng-interlinear")
-INTER_V1_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v1-eng-interlinear")
+INTER_HAND_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v4", "eng-interlinear")
+INTER_V2_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v2", "eng-interlinear")
+INTER_V1_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v1", "eng-interlinear")
 
-GLOSS_HAND_DIR = os.path.join(REPO_ROOT, "data", "text-files", "eng-gloss")
-GLOSS_V2_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v2-eng-gloss")
-GLOSS_V1_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v1-eng-gloss")
+GLOSS_HAND_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v4", "eng-gloss")
+GLOSS_V2_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v2", "eng-gloss")
+GLOSS_V1_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v1", "eng-gloss")
 
-TRANSLIT_HAND_DIR = os.path.join(REPO_ROOT, "data", "text-files", "translit")
-TRANSLIT_V2_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v2-translit")
-TRANSLIT_V1_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v1-translit")
+TRANSLIT_HAND_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v4", "translit")
+TRANSLIT_V2_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v2", "translit")
+TRANSLIT_V1_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v1", "translit")
 
 OUTPUT_DIR = os.path.join(REPO_ROOT, "books")
 

@@ -39,14 +39,14 @@ import sys
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.dirname(SCRIPT_DIR)
 
-V0_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v0-prose")
-V0_ENG_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v0-eng-baseline")
-V0_TRANSLIT_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v0-translit-baseline")
+V0_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v0", "prose")
+V0_ENG_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v0", "eng-baseline")
+V0_TRANSLIT_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v0", "translit-baseline")
 
-V1_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v1-he-baseline")
-V1_ENG_INTER_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v1-eng-interlinear")
-V1_ENG_GLOSS_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v1-eng-gloss")
-V1_TRANSLIT_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v1-translit")
+V1_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v1", "he-baseline")
+V1_ENG_INTER_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v1", "eng-interlinear")
+V1_ENG_GLOSS_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v1", "eng-gloss")
+V1_TRANSLIT_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v1", "translit")
 
 ENG_WORD_SEP = " | "  # must match ingest_tahot.py
 MAQQEF = "־"
@@ -368,7 +368,7 @@ def parse_book(book_key):
     tr_out_dir = os.path.join(V1_TRANSLIT_DIR, spec["subdir"])
 
     if not os.path.isdir(he_in_dir):
-        sys.exit(f"v0-prose dir not found: {he_in_dir}")
+        sys.exit(f"v0/prose dir not found: {he_in_dir}")
 
     chapter_files = sorted(
         fn for fn in os.listdir(he_in_dir)

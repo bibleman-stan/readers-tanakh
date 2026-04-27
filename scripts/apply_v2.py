@@ -66,8 +66,8 @@ LAYER_1_VALIDATORS: list[tuple[str, str]] = [
 # Path constants
 # ---------------------------------------------------------------------------
 REPO_ROOT = Path(__file__).resolve().parent.parent
-V1_DIR = REPO_ROOT / "data" / "text-files" / "v1-he-baseline"
-V2_DIR = REPO_ROOT / "data" / "text-files" / "v2-he-syntax"
+V1_DIR = REPO_ROOT / "data" / "text-files" / "v1" / "he-baseline"
+V2_DIR = REPO_ROOT / "data" / "text-files" / "v2" / "he-syntax"
 REPORTS_DIR = REPO_ROOT / "data" / "reports" / "v2"
 
 # Parallel per-word layer files were emitted by parse_teamim.py in lockstep
@@ -76,10 +76,10 @@ REPORTS_DIR = REPO_ROOT / "data" / "reports" / "v2"
 # Per-word files use " | " as the orthographic-word separator (per
 # scripts/ingest_tahot.py ENG_WORD_SEP); Hebrew uses plain space.
 PARALLEL_LAYERS: list[tuple[str, str, str]] = [
-    # (v1 input dir, v2 output dir, merge separator)
-    ("v1-eng-interlinear", "v2-eng-interlinear", " | "),
-    ("v1-eng-gloss",       "v2-eng-gloss",       " "),
-    ("v1-translit",        "v2-translit",        " | "),
+    # (v1 input path relative to data/text-files/, v2 output path, merge separator)
+    ("v1/eng-interlinear", "v2/eng-interlinear", " | "),
+    ("v1/eng-gloss",       "v2/eng-gloss",       " "),
+    ("v1/translit",        "v2/translit",        " | "),
 ]
 
 INPUT_TIER_LABEL = "v1-he-baseline"

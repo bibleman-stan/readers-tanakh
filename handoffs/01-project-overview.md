@@ -80,13 +80,13 @@ Multiple free digital editions are vendored into `research/` (gitignored). Vendo
 
 | Source | Role | Tradition | License |
 |---|---|---|---|
-| **STEPBible TAHOT** | Primary (feeds `v0-prose/`) | Leningrad / WLC | CC-BY-4.0 |
+| **STEPBible TAHOT** | Primary (feeds `v0/prose/`) | Leningrad / WLC | CC-BY-4.0 |
 | **Open Scriptures Hebrew Bible (OSHB)** | Transcription cross-check | Leningrad / WLC | Text PD; lemma + morph CC-BY-4.0 |
 | **Tanach.us (UXLC)** | Transcription cross-check, ongoing typo corrections | Leningrad / WLC | No restrictions |
 | **Miqra `al pi ha-Mesorah (MAM)** | Tradition reference (not adopted as base) | Aleppo | CC-BY-SA |
 | **JPS 1917** | English comparator (deferred) | — | Public domain |
 
-The constraint: **`v0-prose/` has exactly one source feeding it at any given time** — because v0 cascades into v1-he-baseline and v4-editorial, and a forked v0 would multiply downstream ambiguity. Which source is primary is a swappable editorial decision, not an architectural lock-in.
+The constraint: **`v0/prose/` has exactly one source feeding it at any given time** — because v0 cascades into v1-he-baseline and v4-editorial, and a forked v0 would multiply downstream ambiguity. Which source is primary is a swappable editorial decision, not an architectural lock-in.
 
 ### TAHOT as primary (current)
 
@@ -167,3 +167,5 @@ This project is **publicly siloed** — no cross-references in README, CLAUDE.md
 ---
 
 **2026-04-26 update:** v1-teamim directory renamed to v1-he-baseline; path references updated throughout this doc to align with the canon's te'amim-as-evidence framing (no longer te'amim-as-prior).
+
+**2026-04-26 update:** `data/text-files/` restructured into per-tier subfolders (v0/, v1/, v2/, v3/, v4/). Tier-name identity strings (v1-he-baseline, v2-he-syntax, etc.) unchanged; only filesystem layout. Path references in this doc updated to the new layout.

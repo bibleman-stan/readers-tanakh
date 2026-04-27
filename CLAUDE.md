@@ -98,30 +98,30 @@ Most of these do not exist yet. They are listed so you know the planned layout w
 | `scripts/parse_teamim_prose.py` | Parses prose accent hierarchy → v1-he-baseline cola |
 | `scripts/parse_teamim_poetic.py` | Parses *Sifrei Emet* accent hierarchy for Pss / Prov / Job 3:1–42:6 |
 | `scripts/build_books.py` | Converts text files → HTML fragments |
-| `data/text-files/v0-prose/*/` | Chapter files derived from TAHOT — **NEVER EDIT** |
-| `data/text-files/v1-he-baseline/*/` | Hebrew baseline cola draft — machine-generated starting point for editorial work in v4 |
-| `data/text-files/v2-he-syntax/*/` | Post-Layer-1 syntax pass — auto-applies STRONG Rule H1 / H11 candidates from validators/syntax/ |
-| `data/text-files/v3-he-colometry/*/` | Post-Layer-3 colometry pass — auto-applies STRONG Rule H2/H5/H7/H16 candidates from validators/colometry/ |
-| `data/text-files/v4-editorial/*/` | Hand-edited gold standard — single source of truth |
-| `data/text-files/eng-gloss/*/` | Structural English glosses (planned, deferred behind Hebrew MVP) |
+| `data/text-files/v0/prose/*/` | Chapter files derived from TAHOT — **NEVER EDIT** |
+| `data/text-files/v1/he-baseline/*/` | Hebrew baseline cola draft — machine-generated starting point for editorial work in v4 |
+| `data/text-files/v2/he-syntax/*/` | Post-Layer-1 syntax pass — auto-applies STRONG Rule H1 / H11 candidates from validators/syntax/ |
+| `data/text-files/v3/he-colometry/*/` | Post-Layer-3 colometry pass — auto-applies STRONG Rule H2/H5/H7/H16 candidates from validators/colometry/ |
+| `data/text-files/v4/editorial/*/` | Hand-edited gold standard — single source of truth |
+| `data/text-files/v4/eng-gloss/*/` | Structural English glosses (planned, deferred behind Hebrew MVP) |
 | `books/` | Generated HTML fragment files |
 
 ---
 
 ## CRITICAL: Source Text Rules
 
-Multiple free Hebrew-text editions are vendored in `research/` (gitignored): STEPBible TAHOT (primary, Leningrad), OSHB and UXLC (Leningrad transcription cross-checks), MAM (Aleppo tradition reference). The **primary** that feeds `data/text-files/v0-prose/` is currently TAHOT; the others are cross-references and not part of the build pipeline. See `handoffs/03-architecture.md` for the full source table.
+Multiple free Hebrew-text editions are vendored in `research/` (gitignored): STEPBible TAHOT (primary, Leningrad), OSHB and UXLC (Leningrad transcription cross-checks), MAM (Aleppo tradition reference). The **primary** that feeds `data/text-files/v0/prose/` is currently TAHOT; the others are cross-references and not part of the build pipeline. See `handoffs/03-architecture.md` for the full source table.
 
 **NEVER:**
 - Modify any vendored source file in `research/`
-- Modify a `v0-prose/` file
+- Modify a `v0/prose/` file
 - Alter the Hebrew consonants, niqqud, or te'amim
 - Add or remove words
 - Adopt readings from non-vendored versions (LXX, DSS, Samaritan, Targums, Peshitta, Vulgate) into source files — see textual-posture statement in `private/01-method/colometry-canon.md §0.1`
-- Run te'amim parsers without checking if hand-edited chapters in `v4-editorial/` will be overwritten
+- Run te'amim parsers without checking if hand-edited chapters in `v4/editorial/` will be overwritten
 
 **ALWAYS:**
-- Work in `v4-editorial/` — the only editorial tool is where lines break
+- Work in `v4/editorial/` — the only editorial tool is where lines break
 - Present proposed changes for review before finalizing
 - Preserve verse references and Ketiv/Qere markers for alignment with standard editions
 - Use `PYTHONIOENCODING=utf-8` when running Python scripts on Windows (Hebrew Unicode)
@@ -132,7 +132,7 @@ Multiple free Hebrew-text editions are vendored in `research/` (gitignored): STE
 
 The te'amim are the editor's starting draft, not the editor's authority. Operating rules:
 
-1. **The v1-he-baseline layer is the baseline.** Every editorial decision in `v4-editorial/` starts from what the accent hierarchy produces. Departing from it requires a documented reason — which of the three forces (generative, subtractive, diagnostic) is doing the work and why.
+1. **The v1-he-baseline layer is the baseline.** Every editorial decision in `v4/editorial/` starts from what the accent hierarchy produces. Departing from it requires a documented reason — which of the three forces (generative, subtractive, diagnostic) is doing the work and why.
 
 2. **Three criteria, not four.** The criteria are atomic thought, single image, and Hebrew syntax. Breath is not a criterion — the te'amim are literally the historical record of Masoretic cantorial phrasing; if breath were a valid prior, the te'amim would encode it perfectly by definition. Both sibling projects (empirical retirement, 2026) confirmed zero cases where breath was the sole deciding factor.
 
@@ -148,11 +148,11 @@ The pipeline is **v0 → v1 → v2 → v3 → v4**. All five tiers are active; v
 
 | Tier | Directory | Engine | What it does |
 |---|---|---|---|
-| v0 | `data/text-files/v0-prose/` | `scripts/ingest_tahot.py` | Raw text from TAHOT. Never edited. |
-| v1 | `data/text-files/v1-he-baseline/` | `scripts/parse_teamim.py` | Te'amim-as-evidence baseline cola draft. Editor's starting draft, not a normative "version 1." |
-| v2 | `data/text-files/v2-he-syntax/` | `scripts/apply_v2.py` (consumes `validators/syntax/` JSON output) | Layer 1 break-legality pass. Auto-applies STRONG candidates from `validate_maqqef_integrity.py` (Rule H1) and `validate_line_final_tokens.py` (stranded prefixes/proclitics). Output: syntactically-clean Hebrew. |
-| v3 | `data/text-files/v3-he-colometry/` | `scripts/apply_v3.py` (consumes `validators/colometry/` JSON output) | Layer 3 colometry-rule pass. Auto-applies STRONG candidates from `validate_speech_intro_framing.py` (Rules H5, H16) and `validate_construct_chain.py` (Rules H2, H7). Output: rule-clean under codified Layer 3 mechanical rules. |
-| v4 | `data/text-files/v4-editorial/` | Stan + Claude | Editorial pass on REVIEW-REQUIRED items, Category B/C judgment calls, and the three forces on whatever the mechanical layers cannot decide. |
+| v0 | `data/text-files/v0/prose/` | `scripts/ingest_tahot.py` | Raw text from TAHOT. Never edited. |
+| v1 | `data/text-files/v1/he-baseline/` | `scripts/parse_teamim.py` | Te'amim-as-evidence baseline cola draft. Editor's starting draft, not a normative "version 1." |
+| v2 | `data/text-files/v2/he-syntax/` | `scripts/apply_v2.py` (consumes `validators/syntax/` JSON output) | Layer 1 break-legality pass. Auto-applies STRONG candidates from `validate_maqqef_integrity.py` (Rule H1) and `validate_line_final_tokens.py` (stranded prefixes/proclitics). Output: syntactically-clean Hebrew. |
+| v3 | `data/text-files/v3/he-colometry/` | `scripts/apply_v3.py` (consumes `validators/colometry/` JSON output) | Layer 3 colometry-rule pass. Auto-applies STRONG candidates from `validate_speech_intro_framing.py` (Rules H5, H16) and `validate_construct_chain.py` (Rules H2, H7). Output: rule-clean under codified Layer 3 mechanical rules. |
+| v4 | `data/text-files/v4/editorial/` | Stan + Claude | Editorial pass on REVIEW-REQUIRED items, Category B/C judgment calls, and the three forces on whatever the mechanical layers cannot decide. |
 
 **Why this does not repeat the GNT/BoFM v2/v3 10–12% error trap:** Tanakh v2 and v3 apply only a closed list of mechanical rules (H1, H2, H5, H7, H11, H16). They do not generate breaks from external structural assumptions (syntax trees, rhetorical patterns). Error-rate exposure is bounded by the closed rule set, not by open-ended pattern discovery.
 

@@ -4,11 +4,11 @@ This document describes how a chapter moves from raw source to finished reading 
 
 ## Stage 1 — Ingest (one-time per book)
 
-Run `scripts/ingest_tahot.py` to convert the vendored STEPBible TAHOT TSV (in `research/stepbible-tahot/`) into per-chapter `v0-prose/` files.
+Run `scripts/ingest_tahot.py` to convert the vendored STEPBible TAHOT TSV (in `research/stepbible-tahot/`) into per-chapter `v0/prose/` files.
 
 Output convention:
 
-- One subdirectory per book: `data/text-files/v0-prose/{NN-book}/` where `NN` is the TaNaK-order index and `book` is a slug.
+- One subdirectory per book: `data/text-files/v0/prose/{NN-book}/` where `NN` is the TaNaK-order index and `book` is a slug.
 - One file per chapter: `{abbr}-{NN}.txt` (e.g., `gen-01.txt`, `jonah-02.txt`).
 - File contents: verse-marked plain text with full niqqud, full te'amim, ketiv/qere markers preserved, prose paragraph form (no editorial line breaks yet).
 
@@ -21,7 +21,7 @@ Run the appropriate parser on the chapter:
 - `scripts/parse_teamim_prose.py` for the 21 prose books
 - `scripts/parse_teamim_poetic.py` for Psalms, Proverbs, and Job 3:1–42:6 (with the prose parser handling Job's prose frame: 1:1–2:13 and 42:7–17)
 
-Output: `data/text-files/v1-he-baseline/{NN-book}/{abbr}-{NN}.txt` — a plain-text colometric formatting where every line break corresponds to a disjunctive accent at or above the threshold defined in the canon.
+Output: `data/text-files/v1/he-baseline/{NN-book}/{abbr}-{NN}.txt` — a plain-text colometric formatting where every line break corresponds to a disjunctive accent at or above the threshold defined in the canon.
 
 `v1-he-baseline/` is machine-deterministic. Re-running the parser on identical v0 input must produce identical v1 output.
 
@@ -34,7 +34,7 @@ Run `scripts/apply_v2.py` on the chapter's v1-he-baseline file. The script consu
 
 REVIEW-REQUIRED candidates are not applied; they are written to a review list for the v4 editorial pass.
 
-Output: `data/text-files/v2-he-syntax/{NN-book}/{abbr}-{NN}.txt` — the v1-he-baseline with Layer 1 mechanical fixes auto-applied.
+Output: `data/text-files/v2/he-syntax/{NN-book}/{abbr}-{NN}.txt` — the v1-he-baseline with Layer 1 mechanical fixes auto-applied.
 
 `apply_v2.py` always produces a unified diff against v1-he-baseline. A sweep-scale of ≥5 instances of any single fix type triggers a canon §7 mandatory audit before the run is committed.
 
@@ -47,13 +47,13 @@ Run `scripts/apply_v3.py` on the chapter's v2-he-syntax file. The script consume
 
 REVIEW-REQUIRED candidates are not applied; they are written to a review list for the v4 editorial pass.
 
-Output: `data/text-files/v3-he-colometry/{NN-book}/{abbr}-{NN}.txt` — the v2-he-syntax with Layer 3 mechanical fixes auto-applied.
+Output: `data/text-files/v3/he-colometry/{NN-book}/{abbr}-{NN}.txt` — the v2-he-syntax with Layer 3 mechanical fixes auto-applied.
 
 `apply_v3.py` always produces a unified diff against v2-he-syntax. The same ≥5-instance audit gate applies.
 
 ## Stage 5 — Editorial pass (the human work)
 
-Open the v3-he-colometry file and the v0-prose file side-by-side. For each chapter, produce `data/text-files/v4-editorial/{NN-book}/{abbr}-{NN}.txt`.
+Open the v3-he-colometry file and the v0-prose file side-by-side. For each chapter, produce `data/text-files/v4/editorial/{NN-book}/{abbr}-{NN}.txt`.
 
 **Editorial moves allowed:**
 
@@ -71,7 +71,7 @@ Every editorial decision should be defensible against the canon. When the canon 
 
 ## Stage 6 — Build
 
-Run `scripts/build_books.py` to regenerate `books/{book}.html` from `v4-editorial/`. Once English glosses exist, the cascade rule applies: any Hebrew edit triggers English regeneration, then HTML rebuild.
+Run `scripts/build_books.py` to regenerate `books/{book}.html` from `v4/editorial/`. Once English glosses exist, the cascade rule applies: any Hebrew edit triggers English regeneration, then HTML rebuild.
 
 ```bash
 PYTHONIOENCODING=utf-8 py -3 scripts/build_books.py --book jonah
@@ -132,3 +132,5 @@ Divergence rate from v1-he-baseline is a key diagnostic metric. A v4-editorial t
 **2026-04-26 update:** v1-teamim directory renamed to v1-he-baseline; path references updated throughout this doc to align with the canon's te'amim-as-evidence framing (no longer te'amim-as-prior).
 
 **2026-04-26 update:** Four-tier pipeline adopted. Stages 3 and 4 (v2-he-syntax and v3-he-colometry mechanical passes) inserted between the v1 parse stage and the v4 editorial pass. Old Stages 3–5 renumbered to 5–7. v2 applies STRONG Layer 1 syntax candidates (Rules H1, H11 stranded-token); v3 applies STRONG Layer 3 colometry candidates (Rules H2, H5, H7, H16). REVIEW-REQUIRED items from both layers feed the v4 editorial work queue. The editorial pass now opens v3-he-colometry (not v1-he-baseline) as its starting draft.
+
+**2026-04-26 update:** `data/text-files/` restructured into per-tier subfolders (v0/, v1/, v2/, v3/, v4/). Tier-name identity strings (v1-he-baseline, v2-he-syntax, etc.) unchanged; only filesystem layout. Path references in this doc updated to the new layout.

@@ -81,8 +81,8 @@ LAYER_3_VALIDATORS: list[tuple[str, str]] = [
 # Path constants
 # ---------------------------------------------------------------------------
 REPO_ROOT = Path(__file__).resolve().parent.parent
-V2_DIR = REPO_ROOT / "data" / "text-files" / "v2-he-syntax"
-V3_DIR = REPO_ROOT / "data" / "text-files" / "v3-he-colometry"
+V2_DIR = REPO_ROOT / "data" / "text-files" / "v2" / "he-syntax"
+V3_DIR = REPO_ROOT / "data" / "text-files" / "v3" / "he-colometry"
 REPORTS_DIR = REPO_ROOT / "data" / "reports" / "v3"
 
 INPUT_TIER_LABEL = "v2-he-syntax"

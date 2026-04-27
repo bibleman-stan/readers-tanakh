@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Validate Layer 1 line-final token rules across the Tanakh v1-he-baseline corpus.
+Validate Layer 1 line-final token rules across the Tanakh v1/he-baseline corpus.
 
 Checks six REQUIRED-MERGE patterns from data/syntax-reference/hebrew-break-legality.md.
 Each is a hard grammatical failure — a break here violates generic Hebrew syntax
@@ -44,11 +44,11 @@ import sys
 from pathlib import Path
 
 # ---------------------------------------------------------------------------
-# Path constants — use v1-he-baseline (renamed path; not v1-teamim)
+# Path constants — use v1/he-baseline (renamed path; not v1-teamim)
 # ---------------------------------------------------------------------------
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
-V1_DIR = REPO_ROOT / "data" / "text-files" / "v1-he-baseline"
-V4_DIR = REPO_ROOT / "data" / "text-files" / "v4-editorial"
+V1_DIR = REPO_ROOT / "data" / "text-files" / "v1" / "he-baseline"
+V4_DIR = REPO_ROOT / "data" / "text-files" / "v4" / "editorial"
 
 # ---------------------------------------------------------------------------
 # Hebrew Unicode constants
@@ -86,7 +86,7 @@ def check_line_final_maqqef(line: str):
 
 
 # Conjunction prefixes in isolation or attached to next word.
-# In v1-he-baseline lines, a stranded conjunction prefix will appear as a
+# In v1/he-baseline lines, a stranded conjunction prefix will appear as a
 # standalone token at line end: וְ, וַ, וּ (with or without following niqqud
 # on the same character — but by definition it's stranded if it's the only
 # token on the line or the last token with nothing following it).
@@ -324,7 +324,7 @@ def main():
     parser.add_argument(
         "--v4",
         action="store_true",
-        help="Scan v4-editorial files instead of v1-he-baseline.",
+        help="Scan v4/editorial files instead of v1/he-baseline.",
     )
     parser.add_argument(
         "--json",
@@ -334,7 +334,7 @@ def main():
     args = parser.parse_args()
 
     base_dir = V4_DIR if args.v4 else V1_DIR
-    tier_label = "v4-editorial" if args.v4 else "v1-he-baseline"
+    tier_label = "v4/editorial" if args.v4 else "v1/he-baseline"
 
     if not base_dir.exists():
         print(

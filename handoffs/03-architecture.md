@@ -13,18 +13,23 @@ readers-tanakh/
   data/
     text-files/
       README.md                          # Tier system documentation
-      v0-prose/                          # Per-chapter files derived from TAHOT (NEVER edit)
-        01-genesis/, 02-exodus/, ...
-      v1-he-baseline/                    # Hebrew baseline cola draft (machine-generated)
-        01-genesis/, 02-exodus/, ...
-      v2-he-syntax/                      # Layer 1 syntax pass — STRONG Rule H1/H11 auto-applied
-        01-genesis/, 02-exodus/, ...
-      v3-he-colometry/                   # Layer 3 colometry pass — STRONG Rule H2/H5/H7/H16 auto-applied
-        01-genesis/, 02-exodus/, ...
-      v4-editorial/                      # Hand-edited gold standard (single source of truth)
-        01-genesis/, 02-exodus/, ...
-      eng-gloss/                         # Structural English glosses (deferred)
-        01-genesis/, 02-exodus/, ...
+      v0/
+        prose/                           # Per-chapter files derived from TAHOT (NEVER edit)
+          01-genesis/, 02-exodus/, ...
+      v1/
+        he-baseline/                     # Hebrew baseline cola draft (machine-generated)
+          01-genesis/, 02-exodus/, ...
+      v2/
+        he-syntax/                       # Layer 1 syntax pass — STRONG Rule H1/H11 auto-applied
+          01-genesis/, 02-exodus/, ...
+      v3/
+        he-colometry/                    # Layer 3 colometry pass — STRONG Rule H2/H5/H7/H16 auto-applied
+          01-genesis/, 02-exodus/, ...
+      v4/
+        editorial/                       # Hand-edited gold standard (single source of truth)
+          01-genesis/, 02-exodus/, ...
+        eng-gloss/                       # Structural English glosses (deferred)
+          01-genesis/, 02-exodus/, ...
     versification-crosswalk.json         # Hebrew ↔ Christian numbering map (vendored from Sefaria)
     lemma_index.json                     # Searchable Hebrew lemma index (built later)
   books/                                 # Generated HTML fragment files
@@ -35,9 +40,9 @@ readers-tanakh/
     ingest_uxlc.py                       # UXLC → sibling tree (on-demand cross-check)
     ingest_mam.py                        # MAM → sibling tree (Aleppo tradition reference)
     diff_sources.py                      # For any verse, show how each vendored source renders it
-    parse_teamim_prose.py                # Prose accent parser → v1-he-baseline
-    parse_teamim_poetic.py               # Sifrei Emet accent parser → v1-he-baseline
-    build_books.py                       # v4-editorial (+ eng-gloss) → books/*.html
+    parse_teamim_prose.py                # Prose accent parser → v1/he-baseline
+    parse_teamim_poetic.py               # Sifrei Emet accent parser → v1/he-baseline
+    build_books.py                       # v4/editorial (+ v4/eng-gloss) → books/*.html
     ...
   validators/                            # Layer-1 (syntax) and Layer-3 (colometry) checks
     syntax/                              # Hebrew break-legality rules
@@ -61,7 +66,7 @@ Multiple Hebrew-text sources are vendored to enable transcription cross-checking
 
 | Source | Role | Tradition | License | URL |
 |---|---|---|---|---|
-| **STEPBible TAHOT** | Primary (feeds `v0-prose/`) | Leningrad / WLC | CC-BY-4.0 | github.com/STEPBible/STEPBible-Data |
+| **STEPBible TAHOT** | Primary (feeds `v0/prose/`) | Leningrad / WLC | CC-BY-4.0 | github.com/STEPBible/STEPBible-Data |
 | **Open Scriptures Hebrew Bible (OSHB)** | Transcription cross-check | Leningrad / WLC | Text PD; lemma + morph CC-BY-4.0 | github.com/openscriptures/morphhb |
 | **Tanach.us (UXLC)** | Transcription cross-check | Leningrad / WLC | No restrictions | tanach.us |
 | **Miqra `al pi ha-Mesorah (MAM)** | Tradition reference (not adopted as base) | Aleppo | CC-BY-SA | opensiddur.org / Wikisource |
@@ -70,7 +75,7 @@ Multiple Hebrew-text sources are vendored to enable transcription cross-checking
 
 All vendored corpora live in `research/` (gitignored). The `data/` folder holds *our* derivative work and cross-references.
 
-**Constraint:** `data/text-files/v0-prose/` has exactly one source feeding it at any time. Currently that source is TAHOT. Re-picking the primary is an editorial decision (write a different `ingest_*.py`), not an architectural one. The non-primary WLC-derived sources serve as cross-checks via a `scripts/diff_sources.py` tool that surfaces transcription disagreements at the verse level.
+**Constraint:** `data/text-files/v0/prose/` has exactly one source feeding it at any time. Currently that source is TAHOT. Re-picking the primary is an editorial decision (write a different `ingest_*.py`), not an architectural one. The non-primary WLC-derived sources serve as cross-checks via a `scripts/diff_sources.py` tool that surfaces transcription disagreements at the verse level.
 
 **Textual posture:** This is a colometric reading edition based on a single textual tradition (Tiberian MT, Leningrad). LXX, Dead Sea Scrolls, Samaritan Pentateuch, Targums, Peshitta, and Vulgate are explicitly out of scope. See `private/01-method/colometry-canon.md §1.1` for the full statement.
 
@@ -119,11 +124,11 @@ The pipeline runs v0 → v1 → v2 → v3 → v4. All five tiers are active as o
 
 | Tier | Directory | Engine | Status |
 |---|---|---|---|
-| v0 | `v0-prose/` | `ingest_tahot.py` | Derived from TAHOT — verse-marked, full niqqud, full te'amim, ketiv/qere preserved. **NEVER EDIT.** Reference baseline. |
-| v1 | `v1-he-baseline/` | `parse_teamim_prose.py` / `parse_teamim_poetic.py` | Machine-generated Hebrew baseline cola draft. Te'amim-as-evidence starting point; editor's draft, not a normative "version 1." |
-| v2 | `v2-he-syntax/` | `apply_v2.py` (consumes `validators/syntax/` JSON output) | Layer 1 break-legality pass. Auto-applies STRONG-tagged candidates from `validate_maqqef_integrity.py` (Rule H1) and `validate_line_final_tokens.py` (stranded prefixes/proclitics). Output: syntactically-clean Hebrew. |
-| v3 | `v3-he-colometry/` | `apply_v3.py` (consumes `validators/colometry/` JSON output) | Layer 3 colometry-rule pass. Auto-applies STRONG-tagged candidates from `validate_speech_intro_framing.py` (Rules H5, H16) and `validate_construct_chain.py` (Rules H2 with H7 complement integrity). Output: rule-clean under codified Layer 3 mechanical rules. |
-| v4 | `v4-editorial/` | Stan + Claude | Hand-edited gold standard. Single source of truth for the web app. Handles REVIEW-REQUIRED items, Category B/C judgment calls, and the three forces (atomic thought, single image, Hebrew syntax) on whatever the mechanical layers cannot decide. |
+| v0 | `v0/prose/` | `ingest_tahot.py` | Derived from TAHOT — verse-marked, full niqqud, full te'amim, ketiv/qere preserved. **NEVER EDIT.** Reference baseline. |
+| v1 | `v1/he-baseline/` | `parse_teamim_prose.py` / `parse_teamim_poetic.py` | Machine-generated Hebrew baseline cola draft. Te'amim-as-evidence starting point; editor's draft, not a normative "version 1." |
+| v2 | `v2/he-syntax/` | `apply_v2.py` (consumes `validators/syntax/` JSON output) | Layer 1 break-legality pass. Auto-applies STRONG-tagged candidates from `validate_maqqef_integrity.py` (Rule H1) and `validate_line_final_tokens.py` (stranded prefixes/proclitics). Output: syntactically-clean Hebrew. |
+| v3 | `v3/he-colometry/` | `apply_v3.py` (consumes `validators/colometry/` JSON output) | Layer 3 colometry-rule pass. Auto-applies STRONG-tagged candidates from `validate_speech_intro_framing.py` (Rules H5, H16) and `validate_construct_chain.py` (Rules H2 with H7 complement integrity). Output: rule-clean under codified Layer 3 mechanical rules. |
+| v4 | `v4/editorial/` | Stan + Claude | Hand-edited gold standard. Single source of truth for the web app. Handles REVIEW-REQUIRED items, Category B/C judgment calls, and the three forces (atomic thought, single image, Hebrew syntax) on whatever the mechanical layers cannot decide. |
 
 **Apply scripts (v2, v3):** `apply_v2.py` and `apply_v3.py` consume the JSON output of their respective validator suites and apply only STRONG-tagged candidates to produce the next tier. REVIEW-REQUIRED items are passed through unchanged, becoming v4 work-queue items. Each apply run produces a unified diff against the previous tier; a sweep-scale of ≥5 instances triggers a canon §7 mandatory audit. The apply scripts are a separate implementation track; the architectural commitment is established here.
 
@@ -144,15 +149,15 @@ Pipeline:
 
 ```
 research/stepbible-tahot/  →  (ingest_tahot.py)
-                           →  data/text-files/v0-prose/{NN-book}/{abbr}-{ch}.txt
+                           →  data/text-files/v0/prose/{NN-book}/{abbr}-{ch}.txt
                            →  (parse_teamim_prose.py / parse_teamim_poetic.py)
-                           →  data/text-files/v1-he-baseline/{NN-book}/{abbr}-{ch}.txt
+                           →  data/text-files/v1/he-baseline/{NN-book}/{abbr}-{ch}.txt
                            →  (apply_v2.py ← validators/syntax/ JSON)
-                           →  data/text-files/v2-he-syntax/{NN-book}/{abbr}-{ch}.txt
+                           →  data/text-files/v2/he-syntax/{NN-book}/{abbr}-{ch}.txt
                            →  (apply_v3.py ← validators/colometry/ JSON)
-                           →  data/text-files/v3-he-colometry/{NN-book}/{abbr}-{ch}.txt
+                           →  data/text-files/v3/he-colometry/{NN-book}/{abbr}-{ch}.txt
                            →  (manual editorial work on REVIEW-REQUIRED + judgment calls)
-                           →  data/text-files/v4-editorial/{NN-book}/{abbr}-{ch}.txt
+                           →  data/text-files/v4/editorial/{NN-book}/{abbr}-{ch}.txt
                            →  (build_books.py)
                            →  books/{book}.html
                            →  index.html (loads via fetch on demand)
@@ -208,3 +213,5 @@ Pages configuration is **not** yet activated in the repo settings — to be done
 **2026-04-26 update:** v1-teamim directory renamed to v1-he-baseline; path references updated throughout this doc to align with the canon's te'amim-as-evidence framing (no longer te'amim-as-prior).
 
 **2026-04-26 update:** Four-tier pipeline (v0 → v1 → v2 → v3 → v4) documented. v2 and v3 are no longer deferred — they apply the validator infrastructure (Layer 1 syntax + Layer 3 colometry) to the v1-he-baseline mechanically via apply_v2.py and apply_v3.py. Tier-system table, directory tree, and pipeline diagram updated to show `v2-he-syntax/` and `v3-he-colometry/` slots. v4-editorial remains the hand-edited gold standard for REVIEW-REQUIRED items and Category B/C judgment calls.
+
+**2026-04-26 update:** `data/text-files/` restructured into per-tier subfolders (v0/, v1/, v2/, v3/, v4/). Tier-name identity strings (v1-he-baseline, v2-he-syntax, etc.) unchanged; only filesystem layout. Path references in this doc updated to the new layout.

@@ -31,9 +31,9 @@ from collections import defaultdict
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.dirname(SCRIPT_DIR)
 TAHOT_DIR = os.path.join(REPO_ROOT, "research", "stepbible-tahot")
-V0_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v0-prose")
-V0_ENG_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v0-eng-baseline")
-V0_TRANSLIT_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v0-translit-baseline")
+V0_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v0", "prose")
+V0_ENG_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v0", "eng-baseline")
+V0_TRANSLIT_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v0", "translit-baseline")
 
 # Separator between orthographic-word units in v0-eng-baseline / v0-translit
 # (one Hebrew word -> one English unit -> one translit unit)

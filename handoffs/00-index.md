@@ -38,7 +38,7 @@ Files created this session:
 - `04-editorial-workflow.md` — workflow stub (will mature with the Jonah MVP pass)
 
 Decisions locked in this session:
-- Source text: multi-source vendoring into `research/`. STEPBible TAHOT primary (feeds `v0-prose/`); OSHB and UXLC as Leningrad-tradition transcription cross-checks; MAM as Aleppo-tradition reference (not adopted as base). All free-licensed.
+- Source text: multi-source vendoring into `research/`. STEPBible TAHOT primary (feeds `v0/prose/`); OSHB and UXLC as Leningrad-tradition transcription cross-checks; MAM as Aleppo-tradition reference (not adopted as base). All free-licensed.
 - Textual posture: this is a colometric reading edition based on a single textual tradition (Tiberian MT, Leningrad). LXX, Dead Sea Scrolls, Samaritan Pentateuch, Targums, Peshitta, Vulgate explicitly out of scope. Mirrors the sibling Greek edition's posture of inheriting an established text and not relitigating textual decisions.
 - Methodology: atomic thought is the prior; te'amim are evidence + starting draft, not authority. Three structural criteria (atomic thought, single image, Hebrew syntax). See colometry-canon.md for full architecture.
 - Versification: Hebrew primary, Christian crosswalk in URL aliases and metadata
@@ -55,3 +55,5 @@ Decisions locked in this session:
 **2026-04-26 update:** v1-teamim directory renamed to v1-he-baseline; path references updated throughout this doc to align with the canon's te'amim-as-evidence framing (no longer te'amim-as-prior).
 
 **2026-04-26 update:** The 2026-04-25 decision to "defer v2/v3 until proven necessary" (line above) is superseded. The four-tier pipeline (v0 → v1 → v2 → v3 → v4) is now active. v2 (Layer 1 syntax pass) and v3 (Layer 3 colometry pass) apply only the closed list of mechanical rules via apply_v2.py and apply_v3.py, with STRONG-only auto-application and the ≥80% adoption gate and tier-diff audit gate as risk mitigations. See `03-architecture.md` and `04-editorial-workflow.md` for full documentation.
+
+**2026-04-26 update:** `data/text-files/` restructured into per-tier subfolders (v0/, v1/, v2/, v3/, v4/). Tier-name identity strings (v1-he-baseline, v2-he-syntax, etc.) unchanged; only filesystem layout. Path references in this doc updated to the new layout.
