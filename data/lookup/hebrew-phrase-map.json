@@ -1,0 +1,1627 @@
+{
+  "מִי": {
+    "english": "who",
+    "occurrences": 4922,
+    "category": "discourse"
+  },
+  "אֵי": {
+    "english": "where",
+    "occurrences": 3829,
+    "category": "discourse"
+  },
+  "מַה": {
+    "english": "what",
+    "occurrences": 3414,
+    "category": "discourse"
+  },
+  "לֵךְ": {
+    "english": "go",
+    "occurrences": 3376,
+    "category": "commission"
+  },
+  "לֵאמֹר": {
+    "english": "saying",
+    "occurrences": 908,
+    "category": "discourse"
+  },
+  "וַיְהִי": {
+    "english": "and it came to pass",
+    "occurrences": 893,
+    "category": "narrative-opener"
+  },
+  "הִנֵּה": {
+    "english": "behold",
+    "occurrences": 893,
+    "category": "discourse"
+  },
+  "קְרָא": {
+    "english": "call out / proclaim",
+    "occurrences": 835,
+    "category": "vocative"
+  },
+  "יְהוָה אֱלֹהַי": {
+    "english": "Yahweh my God",
+    "occurrences": 817,
+    "category": "divine-name"
+  },
+  "עַמִּי": {
+    "english": "my people",
+    "occurrences": 667,
+    "category": "vocative"
+  },
+  "אָמַר יְהוָה": {
+    "english": "says Yahweh",
+    "occurrences": 599,
+    "category": "prophetic-opener"
+  },
+  "לָמָּה": {
+    "english": "why",
+    "occurrences": 484,
+    "category": "discourse"
+  },
+  "כֹּה אָמַר": {
+    "english": "thus says",
+    "occurrences": 465,
+    "category": "prophetic-opener"
+  },
+  "קוּם": {
+    "english": "arise",
+    "occurrences": 426,
+    "category": "commission"
+  },
+  "דְּבַר יְהוָה": {
+    "english": "the word of Yahweh",
+    "occurrences": 417,
+    "category": "word-formula"
+  },
+  "וְהָיָה": {
+    "english": "and it shall be",
+    "occurrences": 390,
+    "category": "narrative-opener"
+  },
+  "וְהִנֵּה": {
+    "english": "and behold",
+    "occurrences": 351,
+    "category": "discourse"
+  },
+  "שׁוּב": {
+    "english": "return",
+    "occurrences": 348,
+    "category": "discourse"
+  },
+  "שִׁמְעוּ": {
+    "english": "hear",
+    "occurrences": 341,
+    "category": "vocative"
+  },
+  "כֹּה אָמַר יְהוָה": {
+    "english": "thus says Yahweh",
+    "occurrences": 291,
+    "category": "prophetic-opener"
+  },
+  "אֲדֹנָי יְהוִה": {
+    "english": "the Lord Yahweh",
+    "occurrences": 291,
+    "category": "divine-name"
+  },
+  "יְהוָה אֱלֹהֶיךָ": {
+    "english": "Yahweh your God",
+    "occurrences": 259,
+    "category": "divine-name"
+  },
+  "פְּנֵי יְהוָה": {
+    "english": "the face of Yahweh",
+    "occurrences": 259,
+    "category": "anthropomorphism"
+  },
+  "נְאֻם יְהוָה": {
+    "english": "declares Yahweh",
+    "occurrences": 253,
+    "category": "prophetic-closer"
+  },
+  "יְהוָה צְבָאוֹת": {
+    "english": "Yahweh of hosts",
+    "occurrences": 248,
+    "category": "divine-name"
+  },
+  "וַיִּקְרָא": {
+    "english": "and he called",
+    "occurrences": 245,
+    "category": "narrative-opener"
+  },
+  "בֵּית יְהוָה": {
+    "english": "the house of Yahweh",
+    "occurrences": 231,
+    "category": "sanctuary"
+  },
+  "לִפְנֵי יְהוָה": {
+    "english": "before Yahweh",
+    "occurrences": 226,
+    "category": "cultic"
+  },
+  "מֵשַׁל": {
+    "english": "a proverb",
+    "occurrences": 223,
+    "category": "wisdom"
+  },
+  "וַיֹּאמֶר יְהוָה": {
+    "english": "and Yahweh said",
+    "occurrences": 210,
+    "category": "narrative-opener"
+  },
+  "אֲנִי יְהוָה": {
+    "english": "I am Yahweh",
+    "occurrences": 204,
+    "category": "covenant"
+  },
+  "בַּיּוֹם הַהוּא": {
+    "english": "on that day",
+    "occurrences": 201,
+    "category": "temporal"
+  },
+  "אֱלֹהֵי יִשְׂרָאֵל": {
+    "english": "the God of Israel",
+    "occurrences": 196,
+    "category": "divine-name"
+  },
+  "לָכֵן": {
+    "english": "therefore",
+    "occurrences": 196,
+    "category": "discourse"
+  },
+  "וַיֹּאמֶר יְהוָה אֶל": {
+    "english": "and Yahweh said to",
+    "occurrences": 167,
+    "category": "narrative-opener"
+  },
+  "צִיּוֹן": {
+    "english": "Zion",
+    "occurrences": 163,
+    "category": "sanctuary"
+  },
+  "לְעוֹלָם": {
+    "english": "forever",
+    "occurrences": 158,
+    "category": "temporal"
+  },
+  "הוֹי": {
+    "english": "woe",
+    "occurrences": 156,
+    "category": "vocative"
+  },
+  "וַיָּמָת": {
+    "english": "and he died",
+    "occurrences": 151,
+    "category": "genealogical"
+  },
+  "עַל כֵּן": {
+    "english": "therefore",
+    "occurrences": 150,
+    "category": "discourse"
+  },
+  "אָמַר אֲדֹנָי יְהוִה": {
+    "english": "says the Lord Yahweh",
+    "occurrences": 143,
+    "category": "prophetic-opener"
+  },
+  "אֹהֶל מוֹעֵד": {
+    "english": "the tent of meeting",
+    "occurrences": 140,
+    "category": "sanctuary"
+  },
+  "לֵךְ אֶל": {
+    "english": "go to",
+    "occurrences": 138,
+    "category": "commission"
+  },
+  "יְהוָה אֱלֹהֵיכֶם": {
+    "english": "Yahweh your God",
+    "occurrences": 137,
+    "category": "divine-name"
+  },
+  "כֹּה אָמַר אֲדֹנָי יְהוִה": {
+    "english": "thus says the Lord Yahweh",
+    "occurrences": 134,
+    "category": "prophetic-opener"
+  },
+  "כָּל הָאָרֶץ": {
+    "english": "all the earth",
+    "occurrences": 122,
+    "category": "discourse"
+  },
+  "יְהוָה אֱלֹהֵי יִשְׂרָאֵל": {
+    "english": "Yahweh the God of Israel",
+    "occurrences": 119,
+    "category": "divine-name"
+  },
+  "כִּי אֲנִי יְהוָה": {
+    "english": "for I am Yahweh",
+    "occurrences": 107,
+    "category": "legal"
+  },
+  "וַיְדַבֵּר יְהוָה אֶל": {
+    "english": "and Yahweh spoke to",
+    "occurrences": 99,
+    "category": "narrative-opener"
+  },
+  "עֵינֵי יְהוָה": {
+    "english": "the eyes of Yahweh",
+    "occurrences": 98,
+    "category": "anthropomorphism"
+  },
+  "נְאֻם אֲדֹנָי יְהוִה": {
+    "english": "declares the Lord Yahweh",
+    "occurrences": 92,
+    "category": "prophetic-closer"
+  },
+  "יְהוָה אֱלֹהֵינוּ": {
+    "english": "Yahweh our God",
+    "occurrences": 91,
+    "category": "divine-name"
+  },
+  "סֶלָה": {
+    "english": "selah",
+    "occurrences": 91,
+    "category": "liturgical"
+  },
+  "כָּל יְמֵי": {
+    "english": "all the days of",
+    "occurrences": 88,
+    "category": "genealogical"
+  },
+  "בָּרוּךְ": {
+    "english": "blessed",
+    "occurrences": 88,
+    "category": "blessing-curse"
+  },
+  "וַיְהִי דְּבַר יְהוָה": {
+    "english": "and the word of Yahweh came",
+    "occurrences": 83,
+    "category": "word-formula"
+  },
+  "קוּמוּ": {
+    "english": "arise",
+    "occurrences": 79,
+    "category": "discourse"
+  },
+  "וַיְהִי דְּבַר יְהוָה אֶל": {
+    "english": "and the word of Yahweh came to",
+    "occurrences": 78,
+    "category": "word-formula"
+  },
+  "כֹּה אָמַר יְהוָה צְבָאוֹת": {
+    "english": "thus says Yahweh of hosts",
+    "occurrences": 76,
+    "category": "prophetic-opener"
+  },
+  "שׁוּבוּ": {
+    "english": "return",
+    "occurrences": 76,
+    "category": "discourse"
+  },
+  "אַל תִּירָא": {
+    "english": "do not fear",
+    "occurrences": 74,
+    "category": "discourse"
+  },
+  "אַשְׁרֵי": {
+    "english": "blessed/happy are",
+    "occurrences": 74,
+    "category": "liturgical"
+  },
+  "עַד עוֹלָם": {
+    "english": "forever",
+    "occurrences": 69,
+    "category": "temporal"
+  },
+  "וַיִּקָּבֵר": {
+    "english": "and he was buried",
+    "occurrences": 67,
+    "category": "genealogical"
+  },
+  "וַיְחִי": {
+    "english": "and he lived",
+    "occurrences": 64,
+    "category": "genealogical"
+  },
+  "כֹּל הַגּוֹיִם": {
+    "english": "all the nations",
+    "occurrences": 63,
+    "category": "merism"
+  },
+  "אֵלֶּה בְנֵי": {
+    "english": "these are the sons of",
+    "occurrences": 62,
+    "category": "genealogical"
+  },
+  "אָמֵן": {
+    "english": "amen",
+    "occurrences": 58,
+    "category": "liturgical"
+  },
+  "לַמְנַצֵּחַ": {
+    "english": "to the choirmaster",
+    "occurrences": 56,
+    "category": "liturgical"
+  },
+  "מַלְאַךְ יְהוָה": {
+    "english": "the angel of Yahweh",
+    "occurrences": 54,
+    "category": "anthropomorphism"
+  },
+  "וַיּוֹלֶד": {
+    "english": "and he fathered",
+    "occurrences": 54,
+    "category": "genealogical"
+  },
+  "כִּי טוֹב": {
+    "english": "for he is good",
+    "occurrences": 50,
+    "category": "liturgical"
+  },
+  "כֹּל בָּשָׂר": {
+    "english": "all flesh",
+    "occurrences": 49,
+    "category": "merism"
+  },
+  "בָּעֵת הַהִיא": {
+    "english": "at that time",
+    "occurrences": 48,
+    "category": "temporal"
+  },
+  "אַל נָא": {
+    "english": "please do not",
+    "occurrences": 46,
+    "category": "discourse"
+  },
+  "שְׁלָחַנִי": {
+    "english": "has sent me",
+    "occurrences": 45,
+    "category": "commission"
+  },
+  "חַי יְהוָה": {
+    "english": "as Yahweh lives",
+    "occurrences": 43,
+    "category": "oath"
+  },
+  "יַד יְהוָה": {
+    "english": "the hand of Yahweh",
+    "occurrences": 42,
+    "category": "anthropomorphism"
+  },
+  "מֵרֹאשׁ": {
+    "english": "from the beginning",
+    "occurrences": 41,
+    "category": "merism"
+  },
+  "כִּי לְעוֹלָם חַסְדּוֹ": {
+    "english": "for his steadfast love endures forever",
+    "occurrences": 40,
+    "category": "liturgical"
+  },
+  "אָרוּר": {
+    "english": "cursed",
+    "occurrences": 40,
+    "category": "blessing-curse"
+  },
+  "יְהוָה אֱלֹהִים": {
+    "english": "Yahweh God",
+    "occurrences": 38,
+    "category": "divine-name"
+  },
+  "הִנֵּה אָנֹכִי": {
+    "english": "behold, I",
+    "occurrences": 37,
+    "category": "discourse"
+  },
+  "כְּבוֹד יְהוָה": {
+    "english": "the glory of Yahweh",
+    "occurrences": 36,
+    "category": "cultic"
+  },
+  "לָכֵן כֹּה אָמַר יְהוָה": {
+    "english": "therefore thus says Yahweh",
+    "occurrences": 35,
+    "category": "discourse"
+  },
+  "וַיְהִי כַּאֲשֶׁר": {
+    "english": "and when",
+    "occurrences": 35,
+    "category": "narrative-opener"
+  },
+  "אֲרוֹן יְהוָה": {
+    "english": "the ark of Yahweh",
+    "occurrences": 35,
+    "category": "sanctuary"
+  },
+  "אֲנִי יְהוָה אֱלֹהֵיכֶם": {
+    "english": "I am Yahweh your God",
+    "occurrences": 34,
+    "category": "covenant"
+  },
+  "יְהוָה אֱלֹהֵיהֶם": {
+    "english": "Yahweh their God",
+    "occurrences": 34,
+    "category": "divine-name"
+  },
+  "מַשְׂכִּיל": {
+    "english": "a maskil",
+    "occurrences": 34,
+    "category": "liturgical"
+  },
+  "הָלוֹךְ": {
+    "english": "going / go",
+    "occurrences": 34,
+    "category": "commission"
+  },
+  "כֹּה אָמַר יְהוָה אֱלֹהֵי יִשְׂרָאֵל": {
+    "english": "thus says Yahweh the God of Israel",
+    "occurrences": 32,
+    "category": "prophetic-opener"
+  },
+  "אֲרוֹן הָאֱלֹהִים": {
+    "english": "the ark of God",
+    "occurrences": 31,
+    "category": "sanctuary"
+  },
+  "קְדוֹשׁ יִשְׂרָאֵל": {
+    "english": "the Holy One of Israel",
+    "occurrences": 30,
+    "category": "divine-name"
+  },
+  "מִזְמוֹר לְדָוִד": {
+    "english": "a psalm of David",
+    "occurrences": 28,
+    "category": "liturgical"
+  },
+  "רוּחַ יְהוָה": {
+    "english": "the Spirit of Yahweh",
+    "occurrences": 28,
+    "category": "anthropomorphism"
+  },
+  "עַד מָתַי": {
+    "english": "how long",
+    "occurrences": 28,
+    "category": "lament"
+  },
+  "בָּרוּךְ יְהוָה": {
+    "english": "blessed be Yahweh",
+    "occurrences": 27,
+    "category": "liturgical"
+  },
+  "לְדֹרֹתֵיכֶם": {
+    "english": "throughout your generations",
+    "occurrences": 27,
+    "category": "legal"
+  },
+  "וַיֹּאמֶר אֱלֹהִים": {
+    "english": "and God said",
+    "occurrences": 26,
+    "category": "narrative-opener"
+  },
+  "הַלְלוּ יָהּ": {
+    "english": "praise Yahweh",
+    "occurrences": 26,
+    "category": "liturgical"
+  },
+  "הִנֵּה נָא": {
+    "english": "behold now",
+    "occurrences": 26,
+    "category": "discourse"
+  },
+  "אַף כִּי": {
+    "english": "how much more",
+    "occurrences": 26,
+    "category": "lament"
+  },
+  "בַּיּוֹם הַשְּׁלִישִׁי": {
+    "english": "on the third day",
+    "occurrences": 25,
+    "category": "temporal"
+  },
+  "נְאֻם יְהוָה צְבָאוֹת": {
+    "english": "declares Yahweh of hosts",
+    "occurrences": 25,
+    "category": "prophetic-closer"
+  },
+  "אֵלֶּה שְׁמוֹת": {
+    "english": "these are the names of",
+    "occurrences": 25,
+    "category": "genealogical"
+  },
+  "אַל תִּירְאוּ": {
+    "english": "do not fear",
+    "occurrences": 25,
+    "category": "discourse"
+  },
+  "אִשֶּׁה לַיהוָה": {
+    "english": "a food offering to Yahweh",
+    "occurrences": 24,
+    "category": "cultic"
+  },
+  "שְׁמַע יְהוָה": {
+    "english": "hear, O Yahweh",
+    "occurrences": 24,
+    "category": "prayer"
+  },
+  "וְהָיָה אִם": {
+    "english": "and it shall be, if",
+    "occurrences": 24,
+    "category": "narrative-opener"
+  },
+  "קֹדֶשׁ קָדָשִׁים": {
+    "english": "most holy",
+    "occurrences": 23,
+    "category": "cultic"
+  },
+  "עִיר דָּוִד": {
+    "english": "the city of David",
+    "occurrences": 23,
+    "category": "sanctuary"
+  },
+  "יִרְאַת יְהוָה": {
+    "english": "the fear of Yahweh",
+    "occurrences": 22,
+    "category": "wisdom"
+  },
+  "חֻקַּת עוֹלָם": {
+    "english": "a permanent statute",
+    "occurrences": 22,
+    "category": "legal"
+  },
+  "תּוֹלְדֹת": {
+    "english": "the generations of",
+    "occurrences": 22,
+    "category": "genealogical"
+  },
+  "הַצִּילֵנִי": {
+    "english": "deliver me",
+    "occurrences": 21,
+    "category": "prayer"
+  },
+  "נִשְׁבַּע יְהוָה": {
+    "english": "Yahweh has sworn",
+    "occurrences": 20,
+    "category": "oath"
+  },
+  "וְאֵלֶּה שְׁמוֹת": {
+    "english": "and these are the names of",
+    "occurrences": 20,
+    "category": "genealogical"
+  },
+  "שְׁלָחֲךָ": {
+    "english": "has sent you",
+    "occurrences": 20,
+    "category": "commission"
+  },
+  "יוֹמָם וָלַיְלָה": {
+    "english": "day and night",
+    "occurrences": 19,
+    "category": "merism"
+  },
+  "הֵיכַל יְהוָה": {
+    "english": "the temple of Yahweh",
+    "occurrences": 19,
+    "category": "sanctuary"
+  },
+  "הַר צִיּוֹן": {
+    "english": "Mount Zion",
+    "occurrences": 19,
+    "category": "sanctuary"
+  },
+  "וַיּוֹלֶד בָּנִים וּבָנוֹת": {
+    "english": "and he fathered sons and daughters",
+    "occurrences": 18,
+    "category": "genealogical"
+  },
+  "יוֹם יְהוָה": {
+    "english": "the day of Yahweh",
+    "occurrences": 18,
+    "category": "eschatological"
+  },
+  "אֵיכָה": {
+    "english": "how / alas",
+    "occurrences": 18,
+    "category": "lament"
+  },
+  "בֵּית אָבִיו": {
+    "english": "his father's house",
+    "occurrences": 17,
+    "category": "merism"
+  },
+  "בַּיּוֹם הַשְּׁמִינִי": {
+    "english": "on the eighth day",
+    "occurrences": 16,
+    "category": "temporal"
+  },
+  "בְּרִית עוֹלָם": {
+    "english": "an everlasting covenant",
+    "occurrences": 16,
+    "category": "covenant"
+  },
+  "קֹדֶשׁ לַיהוָה": {
+    "english": "holy to Yahweh",
+    "occurrences": 16,
+    "category": "cultic"
+  },
+  "רוּחַ אֱלֹהִים": {
+    "english": "the Spirit of God",
+    "occurrences": 16,
+    "category": "anthropomorphism"
+  },
+  "וַיְהִי כִּי": {
+    "english": "and when",
+    "occurrences": 16,
+    "category": "narrative-opener"
+  },
+  "הוֹשִׁיעֵנִי": {
+    "english": "save me",
+    "occurrences": 16,
+    "category": "prayer"
+  },
+  "וַיִּפֶן": {
+    "english": "and he turned",
+    "occurrences": 16,
+    "category": "narrative-opener"
+  },
+  "אֱלֹהֵי יַעֲקֹב": {
+    "english": "the God of Jacob",
+    "occurrences": 15,
+    "category": "divine-name"
+  },
+  "חֶסֶד וֶאֱמֶת": {
+    "english": "steadfast love and faithfulness",
+    "occurrences": 15,
+    "category": "anthropomorphism"
+  },
+  "רַב חֶסֶד": {
+    "english": "abounding in steadfast love",
+    "occurrences": 15,
+    "category": "anthropomorphism"
+  },
+  "שִׁיר הַמַּעֲלוֹת": {
+    "english": "a song of ascents",
+    "occurrences": 14,
+    "category": "liturgical"
+  },
+  "הִנֵּה יְהוָה": {
+    "english": "behold, Yahweh",
+    "occurrences": 14,
+    "category": "discourse"
+  },
+  "הַאֲזִינוּ": {
+    "english": "give ear",
+    "occurrences": 14,
+    "category": "vocative"
+  },
+  "בְּאַחֲרִית הַיָּמִים": {
+    "english": "in the latter days",
+    "occurrences": 13,
+    "category": "temporal"
+  },
+  "אֶרֶךְ אַפַּיִם": {
+    "english": "slow to anger",
+    "occurrences": 13,
+    "category": "anthropomorphism"
+  },
+  "אֱלֹהֵי אַבְרָהָם": {
+    "english": "the God of Abraham",
+    "occurrences": 12,
+    "category": "divine-name"
+  },
+  "וַיַּרְא אֱלֹהִים": {
+    "english": "and God saw",
+    "occurrences": 11,
+    "category": "narrative-opener"
+  },
+  "שָׁמַיִם וָאָרֶץ": {
+    "english": "heaven and earth",
+    "occurrences": 11,
+    "category": "merism"
+  },
+  "וַיַּרְא יְהוָה": {
+    "english": "and Yahweh saw",
+    "occurrences": 11,
+    "category": "narrative-opener"
+  },
+  "חַי נַפְשְׁךָ": {
+    "english": "as your soul lives",
+    "occurrences": 11,
+    "category": "oath"
+  },
+  "אַל תִּירְאִי": {
+    "english": "do not fear",
+    "occurrences": 11,
+    "category": "discourse"
+  },
+  "לְדֹרֹתָם": {
+    "english": "throughout their generations",
+    "occurrences": 11,
+    "category": "legal"
+  },
+  "כִּי אֲנִי יְהוָה אֱלֹהֵיכֶם": {
+    "english": "for I am Yahweh your God",
+    "occurrences": 10,
+    "category": "legal"
+  },
+  "אֲהָהּ אֲדֹנָי יְהוִה": {
+    "english": "alas, Lord Yahweh",
+    "occurrences": 10,
+    "category": "vocative"
+  },
+  "בַּחֹדֶשׁ הָרִאשׁוֹן": {
+    "english": "in the first month",
+    "occurrences": 10,
+    "category": "temporal"
+  },
+  "בַּיּוֹם הָרִאשׁוֹן": {
+    "english": "on the first day",
+    "occurrences": 10,
+    "category": "temporal"
+  },
+  "וַיִּשְׁלַח יְהוָה": {
+    "english": "and Yahweh sent",
+    "occurrences": 10,
+    "category": "commission"
+  },
+  "יְהוָה אֲדֹנָי": {
+    "english": "Yahweh the Lord",
+    "occurrences": 10,
+    "category": "divine-name"
+  },
+  "הוֹדוּ לַיהוָה": {
+    "english": "give thanks to Yahweh",
+    "occurrences": 10,
+    "category": "liturgical"
+  },
+  "אֵל שַׁדַּי": {
+    "english": "El Shaddai",
+    "occurrences": 10,
+    "category": "divine-name"
+  },
+  "עַד אָנָה": {
+    "english": "how long",
+    "occurrences": 10,
+    "category": "lament"
+  },
+  "אֱלֹהֵי הַשָּׁמַיִם": {
+    "english": "the God of heaven",
+    "occurrences": 9,
+    "category": "divine-name"
+  },
+  "אִישׁ וְאִשָּׁה": {
+    "english": "man and woman",
+    "occurrences": 9,
+    "category": "merism"
+  },
+  "יוֹם יוֹם": {
+    "english": "day by day",
+    "occurrences": 9,
+    "category": "temporal"
+  },
+  "קוּם לֵךְ": {
+    "english": "arise, go",
+    "occurrences": 9,
+    "category": "commission"
+  },
+  "בָּרוּךְ יְהוָה אֱלֹהֵי יִשְׂרָאֵל": {
+    "english": "blessed be Yahweh the God of Israel",
+    "occurrences": 8,
+    "category": "liturgical"
+  },
+  "דְּבַר אֱלֹהִים": {
+    "english": "the word of God",
+    "occurrences": 8,
+    "category": "word-formula"
+  },
+  "שִׁירוּ לַיהוָה": {
+    "english": "sing to Yahweh",
+    "occurrences": 8,
+    "category": "liturgical"
+  },
+  "הַחֻקִּים וְהַמִּשְׁפָּטִים": {
+    "english": "the statutes and the ordinances",
+    "occurrences": 7,
+    "category": "legal"
+  },
+  "אֶרֶךְ אַפַּיִם וְרַב חֶסֶד": {
+    "english": "slow to anger and abounding in steadfast love",
+    "occurrences": 7,
+    "category": "anthropomorphism"
+  },
+  "יְהוָה אֱלֹהֵי אֲבֹתֵיכֶם": {
+    "english": "Yahweh the God of your fathers",
+    "occurrences": 7,
+    "category": "divine-name"
+  },
+  "לְעוֹלָם וָעֶד": {
+    "english": "forever and ever",
+    "occurrences": 7,
+    "category": "temporal"
+  },
+  "בֵּית אֱלֹהִים": {
+    "english": "the house of God",
+    "occurrences": 7,
+    "category": "sanctuary"
+  },
+  "לָמָּה יְהוָה": {
+    "english": "why, O Yahweh",
+    "occurrences": 7,
+    "category": "lament"
+  },
+  "קְשֵׁה עֹרֶף": {
+    "english": "stiff-necked",
+    "occurrences": 7,
+    "category": "anthropomorphism"
+  },
+  "הַר יְהוָה": {
+    "english": "the mountain of Yahweh",
+    "occurrences": 7,
+    "category": "sanctuary"
+  },
+  "וַיְהִי עֶרֶב וַיְהִי בֹקֶר": {
+    "english": "and there was evening and there was morning",
+    "occurrences": 6,
+    "category": "creation"
+  },
+  "יְהוָה אֱלֹהֵי הַשָּׁמַיִם": {
+    "english": "Yahweh the God of heaven",
+    "occurrences": 6,
+    "category": "divine-name"
+  },
+  "עֹלוֹת וּשְׁלָמִים": {
+    "english": "burnt offerings and peace offerings",
+    "occurrences": 6,
+    "category": "cultic"
+  },
+  "שְׁמַע יִשְׂרָאֵל": {
+    "english": "hear, O Israel",
+    "occurrences": 6,
+    "category": "vocative"
+  },
+  "אֵלֶּה תּוֹלְדֹת": {
+    "english": "these are the generations of",
+    "occurrences": 6,
+    "category": "genealogical"
+  },
+  "אֲרוֹן הַבְּרִית": {
+    "english": "the ark of the covenant",
+    "occurrences": 6,
+    "category": "sanctuary"
+  },
+  "לִפְנֵי אֱלֹהִים": {
+    "english": "before God",
+    "occurrences": 6,
+    "category": "cultic"
+  },
+  "שְׁמַע אֱלֹהִים": {
+    "english": "hear, O God",
+    "occurrences": 6,
+    "category": "prayer"
+  },
+  "זָכָר וּנְקֵבָה": {
+    "english": "male and female",
+    "occurrences": 6,
+    "category": "creation"
+  },
+  "בָּרָא אֱלֹהִים": {
+    "english": "God created",
+    "occurrences": 6,
+    "category": "creation"
+  },
+  "עֲנֵנִי יְהוָה": {
+    "english": "answer me, O Yahweh",
+    "occurrences": 6,
+    "category": "prayer"
+  },
+  "אָרוּר הָאִישׁ": {
+    "english": "cursed is the man",
+    "occurrences": 6,
+    "category": "blessing-curse"
+  },
+  "כָּרַת בְּרִית": {
+    "english": "to cut a covenant",
+    "occurrences": 6,
+    "category": "covenant"
+  },
+  "פְּרוּ וּרְבוּ": {
+    "english": "be fruitful and multiply",
+    "occurrences": 6,
+    "category": "creation"
+  },
+  "בְּרֵאשִׁית": {
+    "english": "in the beginning",
+    "occurrences": 6,
+    "category": "temporal"
+  },
+  "זָבַח זֶבַח": {
+    "english": "to offer a sacrifice",
+    "occurrences": 6,
+    "category": "cognate-acc"
+  },
+  "אָנָּא": {
+    "english": "please / we beg",
+    "occurrences": 6,
+    "category": "discourse"
+  },
+  "הֵקֵץ": {
+    "english": "awake",
+    "occurrences": 6,
+    "category": "prayer"
+  },
+  "וַיַּרְא אֱלֹהִים כִּי טוֹב": {
+    "english": "and God saw that it was good",
+    "occurrences": 5,
+    "category": "creation"
+  },
+  "הוֹדוּ לַיהוָה כִּי טוֹב": {
+    "english": "give thanks to Yahweh, for he is good",
+    "occurrences": 5,
+    "category": "liturgical"
+  },
+  "אִם שָׁמוֹעַ תִּשְׁמַע": {
+    "english": "if you will diligently obey",
+    "occurrences": 5,
+    "category": "legal"
+  },
+  "וַיָּמָת וַיִּקָּבֵר": {
+    "english": "and he died and was buried",
+    "occurrences": 5,
+    "category": "genealogical"
+  },
+  "מִלְאוּ אֶת הָאָרֶץ": {
+    "english": "fill the earth",
+    "occurrences": 5,
+    "category": "creation"
+  },
+  "וַיִּהְיוּ יְמֵי": {
+    "english": "and the days of",
+    "occurrences": 5,
+    "category": "genealogical"
+  },
+  "חָנֵּנִי יְהוָה": {
+    "english": "have mercy on me, O Yahweh",
+    "occurrences": 5,
+    "category": "prayer"
+  },
+  "מוֹעֲדֵי יְהוָה": {
+    "english": "the appointed feasts of Yahweh",
+    "occurrences": 5,
+    "category": "legal"
+  },
+  "אֲבִיר יַעֲקֹב": {
+    "english": "the Mighty One of Jacob",
+    "occurrences": 5,
+    "category": "divine-name"
+  },
+  "אֵל עֶלְיוֹן": {
+    "english": "God Most High",
+    "occurrences": 5,
+    "category": "divine-name"
+  },
+  "חַי נַפְשִׁי": {
+    "english": "as my soul lives",
+    "occurrences": 5,
+    "category": "oath"
+  },
+  "אֵל קַנָּא": {
+    "english": "a jealous God",
+    "occurrences": 5,
+    "category": "divine-name"
+  },
+  "חָרָה אַף": {
+    "english": "anger burned",
+    "occurrences": 5,
+    "category": "cognate-acc"
+  },
+  "שִׁירוּ לַיהוָה שִׁיר חָדָשׁ": {
+    "english": "sing to Yahweh a new song",
+    "occurrences": 4,
+    "category": "liturgical"
+  },
+  "וְהָיִיתִי לָהֶם לֵאלֹהִים": {
+    "english": "and I will be their God",
+    "occurrences": 4,
+    "category": "covenant"
+  },
+  "וַהֲקִמֹתִי אֶת בְּרִיתִי": {
+    "english": "and I will establish my covenant",
+    "occurrences": 4,
+    "category": "covenant"
+  },
+  "וְשַׁבְתִּי אֶת שְׁבוּת": {
+    "english": "I will restore the fortunes of",
+    "occurrences": 4,
+    "category": "eschatological"
+  },
+  "וַיִּזְבְּחוּ זֶבַח": {
+    "english": "and they offered a sacrifice",
+    "occurrences": 4,
+    "category": "cognate-acc"
+  },
+  "וַיַּעַשׂ אֱלֹהִים": {
+    "english": "and God made",
+    "occurrences": 4,
+    "category": "narrative-opener"
+  },
+  "אַשְׁרֵי הַגֶּבֶר": {
+    "english": "blessed is the man",
+    "occurrences": 4,
+    "category": "liturgical"
+  },
+  "מֶלֶךְ הַכָּבוֹד": {
+    "english": "the King of glory",
+    "occurrences": 4,
+    "category": "divine-name"
+  },
+  "כָּרְתוּ בְּרִית": {
+    "english": "they cut a covenant",
+    "occurrences": 4,
+    "category": "covenant"
+  },
+  "מִקְדַּשׁ יְהוָה": {
+    "english": "the sanctuary of Yahweh",
+    "occurrences": 4,
+    "category": "sanctuary"
+  },
+  "אֱלֹהֵי יִצְחָק": {
+    "english": "the God of Isaac",
+    "occurrences": 4,
+    "category": "divine-name"
+  },
+  "זֹאת הַתּוֹרָה": {
+    "english": "this is the law",
+    "occurrences": 4,
+    "category": "legal"
+  },
+  "אֵל רֳאִי": {
+    "english": "the God who sees",
+    "occurrences": 4,
+    "category": "divine-name"
+  },
+  "וְהֵמָּה יִהְיוּ לִי לְעָם": {
+    "english": "and they shall be my people",
+    "occurrences": 3,
+    "category": "covenant"
+  },
+  "וַיִּקְרָא אֱלֹהִים": {
+    "english": "and God called",
+    "occurrences": 3,
+    "category": "narrative-opener"
+  },
+  "וַיְבָרֶךְ אֱלֹהִים": {
+    "english": "and God blessed",
+    "occurrences": 3,
+    "category": "narrative-opener"
+  },
+  "וַיְדַבֵּר אֱלֹהִים": {
+    "english": "and God spoke",
+    "occurrences": 3,
+    "category": "narrative-opener"
+  },
+  "שְׁמַע תְּפִלָּתִי": {
+    "english": "hear my prayer",
+    "occurrences": 3,
+    "category": "prayer"
+  },
+  "יְהוָה שָׁלוֹם": {
+    "english": "Yahweh is Peace",
+    "occurrences": 3,
+    "category": "divine-name"
+  },
+  "אַשְׁרֵי הָעָם": {
+    "english": "blessed is the people",
+    "occurrences": 3,
+    "category": "liturgical"
+  },
+  "אַשְׁרֵי כָּל": {
+    "english": "blessed is everyone who",
+    "occurrences": 3,
+    "category": "liturgical"
+  },
+  "אָמֵן וְאָמֵן": {
+    "english": "amen and amen",
+    "occurrences": 3,
+    "category": "liturgical"
+  },
+  "הַר הַקֹּדֶשׁ": {
+    "english": "the holy mountain",
+    "occurrences": 3,
+    "category": "sanctuary"
+  },
+  "עֹלַת תָּמִיד": {
+    "english": "the regular burnt offering",
+    "occurrences": 3,
+    "category": "cultic"
+  },
+  "עַם סְגֻלָּה": {
+    "english": "a treasured people",
+    "occurrences": 3,
+    "category": "covenant"
+  },
+  "חֶסֶד יְהוָה": {
+    "english": "the steadfast love of Yahweh",
+    "occurrences": 3,
+    "category": "anthropomorphism"
+  },
+  "אֵל אֱמֶת": {
+    "english": "the God of truth",
+    "occurrences": 3,
+    "category": "divine-name"
+  },
+  "וַיְהִי דְּבַר יְהוָה אֶל יוֹנָה": {
+    "english": "and the word of Yahweh came to Jonah",
+    "occurrences": 2,
+    "category": "narrative-opener"
+  },
+  "כֹּה אָמַר יְהוָה אֱלֹהֵי דָוִד": {
+    "english": "thus says Yahweh the God of David",
+    "occurrences": 2,
+    "category": "prophetic-opener"
+  },
+  "נְאֻם יְהוָה אֱלֹהֵי יִשְׂרָאֵל": {
+    "english": "declares Yahweh the God of Israel",
+    "occurrences": 2,
+    "category": "prophetic-closer"
+  },
+  "יְהוָה אֱלֹהֵי אֲבֹתֵינוּ": {
+    "english": "Yahweh the God of our fathers",
+    "occurrences": 2,
+    "category": "divine-name"
+  },
+  "מֵעוֹלָם וְעַד עוֹלָם": {
+    "english": "from everlasting to everlasting",
+    "occurrences": 2,
+    "category": "temporal"
+  },
+  "הַשָּׁמַיִם וְהָאָרֶץ": {
+    "english": "the heavens and the earth",
+    "occurrences": 2,
+    "category": "merism"
+  },
+  "יְהוָה אֱלֹהֵי דָוִד": {
+    "english": "Yahweh the God of David",
+    "occurrences": 2,
+    "category": "divine-name"
+  },
+  "חַי יְהוָה צְבָאוֹת": {
+    "english": "as Yahweh of hosts lives",
+    "occurrences": 2,
+    "category": "oath"
+  },
+  "בְּצֶלֶם אֱלֹהִים": {
+    "english": "in the image of God",
+    "occurrences": 2,
+    "category": "creation"
+  },
+  "מַלְאַךְ אֱלֹהִים": {
+    "english": "the angel of God",
+    "occurrences": 2,
+    "category": "anthropomorphism"
+  },
+  "יְהוָה צִדְקֵנוּ": {
+    "english": "Yahweh our Righteousness",
+    "occurrences": 2,
+    "category": "divine-name"
+  },
+  "יִרְאָה גְדוֹלָה": {
+    "english": "great fear",
+    "occurrences": 2,
+    "category": "cognate-acc"
+  },
+  "רְפָאֵנִי יְהוָה": {
+    "english": "heal me, O Yahweh",
+    "occurrences": 2,
+    "category": "prayer"
+  },
+  "עַד אָנָה יְהוָה": {
+    "english": "how long, O Yahweh",
+    "occurrences": 2,
+    "category": "lament"
+  },
+  "צוּר יִשְׂרָאֵל": {
+    "english": "the Rock of Israel",
+    "occurrences": 2,
+    "category": "divine-name"
+  },
+  "רוֹמְמוּ יְהוָה": {
+    "english": "exalt Yahweh",
+    "occurrences": 2,
+    "category": "liturgical"
+  },
+  "בָּרוּךְ אֲשֶׁר": {
+    "english": "blessed is the one who",
+    "occurrences": 2,
+    "category": "blessing-curse"
+  },
+  "יְהוָה יִרְאֶה": {
+    "english": "Yahweh will provide",
+    "occurrences": 2,
+    "category": "divine-name"
+  },
+  "יְהוָה שַׁמָּה": {
+    "english": "Yahweh is there",
+    "occurrences": 2,
+    "category": "divine-name"
+  },
+  "הֶבֶל הֲבָלִים": {
+    "english": "vanity of vanities",
+    "occurrences": 2,
+    "category": "wisdom"
+  },
+  "רוּחַ קָדְשׁוֹ": {
+    "english": "his holy Spirit",
+    "occurrences": 2,
+    "category": "anthropomorphism"
+  },
+  "חֶסֶד אֱלֹהִים": {
+    "english": "the steadfast love of God",
+    "occurrences": 2,
+    "category": "anthropomorphism"
+  },
+  "קָטֹן וְגָדוֹל": {
+    "english": "small and great",
+    "occurrences": 2,
+    "category": "merism"
+  },
+  "אָנָּא יְהוָה": {
+    "english": "we beg you, O Yahweh",
+    "occurrences": 2,
+    "category": "discourse"
+  },
+  "שְׁמַע קוֹלִי": {
+    "english": "hear my voice",
+    "occurrences": 2,
+    "category": "prayer"
+  },
+  "בֶּן אֲמִתַּי": {
+    "english": "son of Amittai",
+    "occurrences": 2,
+    "category": "genealogical"
+  },
+  "חַי פַּרְעֹה": {
+    "english": "as Pharaoh lives",
+    "occurrences": 2,
+    "category": "oath"
+  },
+  "בֶּן שָׁנָה": {
+    "english": "years old",
+    "occurrences": 2,
+    "category": "genealogical"
+  },
+  "נָדַר נֵדֶר": {
+    "english": "to make a vow",
+    "occurrences": 2,
+    "category": "cognate-acc"
+  },
+  "אֱלֹהֵי אַבְרָהָם יִצְחָק וְיַעֲקֹב": {
+    "english": "the God of Abraham, Isaac, and Jacob",
+    "occurrences": 1,
+    "category": "divine-name"
+  },
+  "שְׁמַע יִשְׂרָאֵל יְהוָה אֱלֹהֵינוּ": {
+    "english": "hear, O Israel, Yahweh our God",
+    "occurrences": 1,
+    "category": "vocative"
+  },
+  "נְאֻם יְהוָה אֱלֹהֵי הַצְּבָאוֹת": {
+    "english": "declares Yahweh God of hosts",
+    "occurrences": 1,
+    "category": "prophetic-closer"
+  },
+  "וְנָהֲרוּ אֵלָיו כָּל הַגּוֹיִם": {
+    "english": "and all the nations shall stream to it",
+    "occurrences": 1,
+    "category": "eschatological"
+  },
+  "הֶבֶל הֲבָלִים הַכֹּל הֶבֶל": {
+    "english": "vanity of vanities, all is vanity",
+    "occurrences": 1,
+    "category": "wisdom"
+  },
+  "מִמַּעֲמַקִּים קְרָאתִיךָ": {
+    "english": "out of the depths I cried to you",
+    "occurrences": 1,
+    "category": "prayer"
+  },
+  "וַאֲבָרֲכָה מְבָרְכֶיךָ": {
+    "english": "I will bless those who bless you",
+    "occurrences": 1,
+    "category": "blessing-curse"
+  },
+  "קָדוֹשׁ קָדוֹשׁ קָדוֹשׁ": {
+    "english": "holy, holy, holy",
+    "occurrences": 1,
+    "category": "cultic"
+  },
+  "גּוֹג אֶרֶץ הַמָּגוֹג": {
+    "english": "Gog of the land of Magog",
+    "occurrences": 1,
+    "category": "eschatological"
+  },
+  "וַיִּפְּלוּ גוֹרָלוֹת": {
+    "english": "and they cast lots",
+    "occurrences": 1,
+    "category": "narrative-opener"
+  },
+  "וַיִּדְּרוּ נְדָרִים": {
+    "english": "and they made vows",
+    "occurrences": 1,
+    "category": "cognate-acc"
+  },
+  "הַגִּידוּ בַגּוֹיִם": {
+    "english": "declare among the nations",
+    "occurrences": 1,
+    "category": "liturgical"
+  },
+  "זֶה סֵפֶר תּוֹלְדֹת": {
+    "english": "this is the book of the generations of",
+    "occurrences": 1,
+    "category": "genealogical"
+  },
+  "מַמְלֶכֶת כֹּהֲנִים": {
+    "english": "a kingdom of priests",
+    "occurrences": 1,
+    "category": "covenant"
+  },
+  "שָׁמֹר תִּשְׁמְרוּן": {
+    "english": "you shall diligently keep",
+    "occurrences": 1,
+    "category": "legal"
+  },
+  "חַי אֲדֹנָי יְהוִה": {
+    "english": "as the Lord Yahweh lives",
+    "occurrences": 1,
+    "category": "oath"
+  },
+  "בָּרוּךְ אֲדֹנָי": {
+    "english": "blessed be the Lord",
+    "occurrences": 1,
+    "category": "liturgical"
+  },
+  "אַשְׁרֵי הָאִישׁ": {
+    "english": "blessed is the man",
+    "occurrences": 1,
+    "category": "liturgical"
+  },
+  "אֲנִי אֱלֹהֵיכֶם": {
+    "english": "I am your God",
+    "occurrences": 1,
+    "category": "covenant"
+  },
+  "שַׁעֲרֵי צִיּוֹן": {
+    "english": "the gates of Zion",
+    "occurrences": 1,
+    "category": "sanctuary"
+  },
+  "חָכְמָה וּבִינָה": {
+    "english": "wisdom and understanding",
+    "occurrences": 1,
+    "category": "wisdom"
+  },
+  "לְהָבִין מָשָׁל": {
+    "english": "to understand a proverb",
+    "occurrences": 1,
+    "category": "wisdom"
+  },
+  "מִדּוֹר לְדוֹר": {
+    "english": "from generation to generation",
+    "occurrences": 1,
+    "category": "temporal"
+  },
+  "יְהוָה נִסִּי": {
+    "english": "Yahweh is my Banner",
+    "occurrences": 1,
+    "category": "divine-name"
+  },
+  "שָׁמַע שֵׁמַע": {
+    "english": "to hear / pay close attention",
+    "occurrences": 1,
+    "category": "cognate-acc"
+  },
+  "שָׁבָה שְׁבִי": {
+    "english": "to take captive",
+    "occurrences": 1,
+    "category": "cognate-acc"
+  },
+  "גּוֹי קָדוֹשׁ": {
+    "english": "a holy nation",
+    "occurrences": 1,
+    "category": "covenant"
+  },
+  "יְהוָה רֹעִי": {
+    "english": "Yahweh is my Shepherd",
+    "occurrences": 1,
+    "category": "divine-name"
+  },
+  "חָלַם חֲלוֹם": {
+    "english": "to dream a dream",
+    "occurrences": 1,
+    "category": "cognate-acc"
+  },
+  "אֵל עוֹלָם": {
+    "english": "the Everlasting God",
+    "occurrences": 1,
+    "category": "divine-name"
+  },
+  "הוֹי גּוֹי": {
+    "english": "woe, O nation",
+    "occurrences": 1,
+    "category": "vocative"
+  },
+  "הַאֲזִינִי": {
+    "english": "give ear",
+    "occurrences": 1,
+    "category": "vocative"
+  },
+  "בָּרוּךְ יְהוָה אֱלֹהֵי אֲבֹתֵינוּ": {
+    "english": "blessed be Yahweh the God of our fathers",
+    "occurrences": 0,
+    "category": "liturgical"
+  },
+  "יִרְאַת יְהוָה רֵאשִׁית חָכְמָה": {
+    "english": "the fear of Yahweh is the beginning of wisdom",
+    "occurrences": 0,
+    "category": "wisdom"
+  },
+  "אֵין חָדָשׁ תַּחַת הַשֶּׁמֶשׁ": {
+    "english": "there is nothing new under the sun",
+    "occurrences": 0,
+    "category": "wisdom"
+  },
+  "כֹּה אָמַר יְהוָה אֱלֹהֵיכֶם": {
+    "english": "thus says Yahweh your God",
+    "occurrences": 0,
+    "category": "prophetic-opener"
+  },
+  "כֹּה אָמַר יְהוָה אֱלֹהִים": {
+    "english": "thus says Yahweh God",
+    "occurrences": 0,
+    "category": "prophetic-opener"
+  },
+  "בָּרוּךְ יְהוָה אֱלֹהֵינוּ": {
+    "english": "blessed be Yahweh our God",
+    "occurrences": 0,
+    "category": "liturgical"
+  },
+  "נְאֻם יְהוָה אֱלֹהֵיכֶם": {
+    "english": "declares Yahweh your God",
+    "occurrences": 0,
+    "category": "prophetic-closer"
+  },
+  "יְהוָה אֱלֹהֵי הָאָרֶץ": {
+    "english": "Yahweh the God of the earth",
+    "occurrences": 0,
+    "category": "divine-name"
+  },
+  "הֵקִים אֶת הַבְּרִית": {
+    "english": "to establish the covenant",
+    "occurrences": 0,
+    "category": "covenant"
+  },
+  "אֶל יְהוָה קָרָאתִי": {
+    "english": "to Yahweh I cried",
+    "occurrences": 0,
+    "category": "prayer"
+  },
+  "נִשְׁבַּעְתִּי בִי": {
+    "english": "I have sworn by myself",
+    "occurrences": 0,
+    "category": "oath"
+  },
+  "בְּרִית אַבְרָהָם": {
+    "english": "the covenant with Abraham",
+    "occurrences": 0,
+    "category": "covenant"
+  },
+  "עֹלָה וּשְׁלָמִים": {
+    "english": "a burnt offering and peace offerings",
+    "occurrences": 0,
+    "category": "cultic"
+  },
+  "מִזְרָח וָמַעֲרָב": {
+    "english": "east and west",
+    "occurrences": 0,
+    "category": "merism"
+  },
+  "בָּרוּךְ הָאִישׁ": {
+    "english": "blessed is the man",
+    "occurrences": 0,
+    "category": "liturgical"
+  },
+  "שָׁבַע שְׁבוּעָה": {
+    "english": "to swear an oath",
+    "occurrences": 0,
+    "category": "cognate-acc"
+  },
+  "אָאֹר מְקַלְלֶךָ": {
+    "english": "I will curse the one who curses you",
+    "occurrences": 0,
+    "category": "blessing-curse"
+  },
+  "עַד מָתַי יְהוָה": {
+    "english": "how long, O Yahweh",
+    "occurrences": 0,
+    "category": "lament"
+  },
+  "כָּבֵד אָזְנָיִם": {
+    "english": "heavy of ear",
+    "occurrences": 0,
+    "category": "anthropomorphism"
+  },
+  "גָּנַב גְּנֵבָה": {
+    "english": "to commit theft",
+    "occurrences": 0,
+    "category": "cognate-acc"
+  },
+  "מִנְחַת תָּמִיד": {
+    "english": "the regular grain offering",
+    "occurrences": 0,
+    "category": "cultic"
+  },
+  "כִּי טוֹב מְאֹד": {
+    "english": "that it was very good",
+    "occurrences": 0,
+    "category": "creation"
+  },
+  "גָּדוֹל וָקָטֹן": {
+    "english": "great and small",
+    "occurrences": 0,
+    "category": "merism"
+  },
+  "קָרָא קְרִיאָה": {
+    "english": "to proclaim a proclamation",
+    "occurrences": 0,
+    "category": "cognate-acc"
+  },
+  "צָפוֹן וָנֶגֶב": {
+    "english": "north and south",
+    "occurrences": 0,
+    "category": "merism"
+  },
+  "אֲהָהּ יְהוָה": {
+    "english": "alas, Yahweh",
+    "occurrences": 0,
+    "category": "vocative"
+  },
+  "יָרֵא יִרְאָה": {
+    "english": "to be very afraid",
+    "occurrences": 0,
+    "category": "cognate-acc"
+  },
+  "גָּלָה גָלוּת": {
+    "english": "to go into exile",
+    "occurrences": 0,
+    "category": "cognate-acc"
+  },
+  "חָטָא חַטָּאת": {
+    "english": "to commit sin",
+    "occurrences": 0,
+    "category": "cognate-acc"
+  },
+  "אַתֶּם עַמִּי": {
+    "english": "you are my people",
+    "occurrences": 0,
+    "category": "covenant"
+  },
+  "מִדֹּר וָדֹר": {
+    "english": "from generation to generation",
+    "occurrences": 0,
+    "category": "temporal"
+  },
+  "אֵי אֱלֹהָיו": {
+    "english": "where is his God",
+    "occurrences": 0,
+    "category": "lament"
+  },
+  "חָלָה חֳלִי": {
+    "english": "to be very sick",
+    "occurrences": 0,
+    "category": "cognate-acc"
+  },
+  "רָצַח רֶצַח": {
+    "english": "to commit murder",
+    "occurrences": 0,
+    "category": "cognate-acc"
+  }
+}
