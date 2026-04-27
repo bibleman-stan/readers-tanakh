@@ -9,8 +9,7 @@ hatzileni | me'oyevai | elohai
 mimitkomai | tesageveni
 
 59:3
-hatzileni
-mipo'alei | aven
+hatzileni | mipo'alei | aven
 ume'anshei | damim
 hoshi'eni
 
@@ -20,8 +19,7 @@ yaguru | alai | azim
 lo | fish'i | velo | chatati | Yahweh
 
 59:5
-beli | avon
-yerutzun | veyikonanu
+beli | avon | yerutzun | veyikonanu
 urah | likrati | ure'eh
 
 59:6
@@ -31,25 +29,21 @@ lifkod | kal | hagoyim
 al | tachon | kol | bogedei | aven | selah
 
 59:7
-yashuvu | la'erev
-yehemu | khakalev
+yashuvu | la'erev | yehemu | khakalev
 visovu | ir
 
 59:8
 hineh | yabi'un | befihem
-charavot
-besiftoteihem
+charavot | besiftoteihem
 ki | mi | shomea
 
 59:9
-ve'atah | Yahweh
-tischak | lamo
+ve'atah | Yahweh | tischak | lamo
 til'ag
 lekhol | goyim
 
 59:10
-uzo
-eleikha | eshmorah
+uzo | eleikha | eshmorah
 ki | elohim
 misgabi
 
@@ -60,8 +54,7 @@ yar'eni | veshorerai
 
 59:12
 al | tahargem | pen | yishkechu | ami
-hani'emov | vecheilekha
-vehoridemov
+hani'emov | vecheilekha | vehoridemov
 maginenu | Adonai
 
 59:13
@@ -73,18 +66,15 @@ ume'alah | umikachash | yesaperu
 59:14
 kaleh | vechemah | kaleh | ve'einemov
 veyede'u
-ki | elohim
-moshel | Beya'ako
+ki | elohim | moshel | Beya'ako
 le'afsei | ha'aretz | selah
 
 59:15
-veyashuvu | la'erev
-yehemu | khakalev
+veyashuvu | la'erev | yehemu | khakalev
 visovu | ir
 
 59:16
-hemah
-yeni'un | le'ekhol
+hemah | yeni'un | le'ekhol
 im | lo | yisbe'u
 vaiyalinu
 
@@ -96,7 +86,6 @@ umanos
 beyom | tzar | li
 
 59:18
-uzi
-eleikha | azamerah
+uzi | eleikha | azamerah
 ki | elohim | misgabi
 elohei | chasdi

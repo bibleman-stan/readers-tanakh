@@ -1,12 +1,10 @@
 3:1
-beni
-torati | al | tishkach
+beni | torati | al | tishkach
 umitzvotai
 yitzor | libekha
 
 3:2
-ki | orekh | yamim
-ushenot | chaiyim
+ki | orekh | yamim | ushenot | chaiyim
 veshalom
 yosifu | lakh
 
@@ -22,8 +20,7 @@ umetza | chen | vesekhel | tov
 be'einei | elohim | ve'adam
 
 3:5
-betach | el | Yahweh
-bekhol | libekha
+betach | el | Yahweh | bekhol | libekha
 ve'el | binatekha
 al | tisha'en
 
@@ -38,14 +35,12 @@ yera | et | Yahweh
 vesur | mera
 
 3:8
-rif'ut
-tehi | lesharekha
+rif'ut | tehi | lesharekha
 veshikui
 le'atzmoteikha
 
 3:9
-kabed | et | Yahweh
-mehonekha
+kabed | et | Yahweh | mehonekha
 umereshit
 kol | tevu'atekha
 
@@ -55,8 +50,7 @@ vetiroosh
 yekaveicha | yifrotzu
 
 3:11
-musar | Yahweh
-beni | al | tim'as
+musar | Yahweh | beni | al | tim'as
 ve'al | takotz
 betokhachto
 
@@ -66,26 +60,22 @@ ukhe'av
 et | ben | yirtzeh
 
 3:13
-ashrei | adom
-matza | chokhmah
+ashrei | adom | matza | chokhmah
 ve'adam
 yafik | tevunah
 
 3:14
-ki | tov | sachrah
-misechar | kasef
+ki | tov | sachrah | misechar | kasef
 umecharutz
 tevu'atah
 
 3:15
-yekarah | hi
-mipeniyim
+yekarah | hi | mipeniyim
 vekhol | chafatzeikha
 lo | yishvu | vah
 
 3:16
-orekh | yamim
-biminah
+orekh | yamim | biminah
 bismolah
 osher | vekhavod
 
@@ -94,8 +84,7 @@ derakheiha | darkhei | no'am
 vekhol | netivoteiha | shalom
 
 3:18
-etz | chaiyim | hi
-lamachazikim | bah
+etz | chaiyim | hi | lamachazikim | bah
 vetomekheiha | me'ushar
 
 3:19
@@ -105,14 +94,12 @@ konen | shamayim
 bitvunah
 
 3:20
-beda'to
-tehomot | Nivka'u
+beda'to | tehomot | Nivka'u
 ushechakim
 yir'afu | tal
 
 3:21
-beni
-al | yaluzu | me'eineikha
+beni | al | yaluzu | me'eineikha
 netzor | tushiyah
 umezimah
 
@@ -132,14 +119,12 @@ veshakhavta
 ve'arevah | shenatekha
 
 3:25
-al | tira
-mipachad | pit'om
+al | tira | mipachad | pit'om
 umisho'at | resha'im
 ki | tavo
 
 3:26
-ki | Yahweh
-yihyeh | vekhislekha
+ki | Yahweh | yihyeh | vekhislekha
 veshamar | raglekha | milakhed
 
 3:27
@@ -147,8 +132,7 @@ al | timna | tov | mibe'alav
 bihyot | le'el | yadeikha | la'asot
 
 3:28
-al | tomar | lere'eikha | lekh | vashuv
-umachar | eten
+al | tomar | lere'eikha | lekh | vashuv | umachar | eten
 veyesh | itakh
 
 3:29
@@ -160,8 +144,7 @@ al | tariv | im | adam | chinam
 im | lo | gemalekha | ra'ah
 
 3:31
-al | tekane
-be'ish | chamas
+al | tekane | be'ish | chamas
 ve'al | tivchar
 bekhol | derakhav
 
@@ -170,8 +153,7 @@ ki | to'avat | Yahweh | naloz
 ve'et | yesharim | sodo
 
 3:33
-me'erat | Yahweh
-beveit | rasha
+me'erat | Yahweh | beveit | rasha
 uneveh | tzadikim | yevarekh
 
 3:34
@@ -180,7 +162,6 @@ vela'aniyim
 yiten | chen
 
 3:35
-kavod
-chakhamim | yinchalu
+kavod | chakhamim | yinchalu
 ukhesilim
 merim | kalon

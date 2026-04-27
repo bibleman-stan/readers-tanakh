@@ -4,8 +4,7 @@ Ledavid | mikhtam
 
 58:2
 ha'umnam
-elem | tzedek
-tedaberun
+elem | tzedek | tedaberun
 meisharim | tishpetu
 benei | adam
 
@@ -26,8 +25,7 @@ kemov | feten | cheresh
 ya'tem | azeno
 
 58:6
-asher | lo | yishma
-lekol | melachashim
+asher | lo | yishma | lekol | melachashim
 chover | chavarim | mechukam
 
 58:7
@@ -37,14 +35,12 @@ malte'ot | kefirim
 netotz | Yahweh
 
 58:8
-yima'asu | khemov | mayim
-yithalekhu | lamo
+yima'asu | khemov | mayim | yithalekhu | lamo
 yidrokh | chitzav
 kemo | yitmolalu
 
 58:9
-kemo | shebelul
-temes | yahalokh
+kemo | shebelul | temes | yahalokh
 nefel | eshet
 bal | chazu | shamesh
 
@@ -54,13 +50,11 @@ kemov | chai | kemov | charon
 yis'arenu
 
 58:11
-yismach | tzadik
-ki | chazah | nakam
+yismach | tzadik | ki | chazah | nakam
 pe'amav | yirchatz
 bedam | harasha
 
 58:12
-veyomar | adom
-akh | peri | latzadik
+veyomar | adom | akh | peri | latzadik
 akh | yesh | elohim
 shofetim | ba'aretz

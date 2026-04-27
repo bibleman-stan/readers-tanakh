@@ -1,11 +1,9 @@
 111:1
-halu | Yah | odeh | Yahweh
-bekhol | levav
+halu | Yah | odeh | Yahweh | bekhol | levav
 besod | yesharim | ve'edah
 
 111:2
-gedolim
-ma'asei | Yahweh
+gedolim | ma'asei | Yahweh
 derushim
 lekhol | cheftzeihem
 
@@ -15,24 +13,20 @@ vetzidkato
 omedet | la'ad
 
 111:4
-zekher | asah
-lenifle'otav
+zekher | asah | lenifle'otav
 chanun | verachum | Yahweh
 
 111:5
-teref
-natan | lire'av
+teref | natan | lire'av
 yizkor | le'olam | berito
 
 111:6
-koach | ma'asav
-higid | le'amo
+koach | ma'asav | higid | le'amo
 latet | lahem
 nachalat | goyim
 
 111:7
-ma'asei | yadav
-emet | umishpat
+ma'asei | yadav | emet | umishpat
 ne'emanim
 kol | pikudav
 
@@ -48,7 +42,6 @@ kadoosh | venora | shemo
 
 111:10
 reshit | chokhmah | yir'at | Yahweh
-sekhel | tov
-lekhol | oseihem
+sekhel | tov | lekhol | oseihem
 tehilato
 omedet | la'ad

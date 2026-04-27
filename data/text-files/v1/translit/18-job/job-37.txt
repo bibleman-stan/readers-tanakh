@@ -1,6 +1,5 @@
 37:1
-af | lezot
-yecherad | libi
+af | lezot | yecherad | libi
 veyitar
 mimekomo
 
@@ -16,14 +15,12 @@ al | kanfot | ha'aretz
 
 37:4
 acharav | yish'ag | kol
-yar'em
-bekol | ge'ono
+yar'em | bekol | ge'ono
 velo | ye'akevem
 ki | yishama | kolo
 
 37:5
-yar'em | el | bekolo
-nifla'ot
+yar'em | el | bekolo | nifla'ot
 oseh | gedolot
 velo | neda
 
@@ -44,8 +41,7 @@ vatavo | chaiyah | vemov | arev
 uvim'onoteiha | tishkon
 
 37:9
-min | hacheder
-tavo | sufah
+min | hacheder | tavo | sufah
 umimezarim | karah
 
 37:10
@@ -53,8 +49,7 @@ minishmat | el | yiten | karach
 verochav | mayim | bemutzak
 
 37:11
-af | beri
-yatriach | av
+af | beri | yatriach | av
 yafitz
 anan | oro
 
@@ -73,14 +68,12 @@ amod
 vehitbonen | nifle'ot | el
 
 37:15
-hateda
-besum | eloah | aleihem
+hateda | besum | eloah | aleihem
 vehofia
 or | anano
 
 37:16
-hateda
-al | miflesei | av
+hateda | al | miflesei | av
 mifle'ot
 temim | de'im
 
@@ -90,44 +83,37 @@ behashkit | eretz
 midarom
 
 37:18
-tarkia | imo
-lishchakim
+tarkia | imo | lishchakim
 chazakim
 kir'i | mutzak
 
 37:19
-hodi'enu
-mah | nomar | lo
+hodi'enu | mah | nomar | lo
 lo | na'arokh
 mipenei | choshekh
 
 37:20
-haysupar | lo
-ki | adaber
+haysupar | lo | ki | adaber
 im | amar | ish
 ki | yevula
 
 37:21
 ve'atah | lo | ra'u | or
-bahir | hu
-bashechakim
+bahir | hu | bashechakim
 veruach | averah
 vatetaharem
 
 37:22
-mitzafon
-zahav | ye'eteh
+mitzafon | zahav | ye'eteh
 al | eloah
 nora | hod
 
 37:23
-Shadai | lo | metzanuhu
-sagi | khoach
+Shadai | lo | metzanuhu | sagi | khoach
 umishpat | verov | tzedakah
 lo | ye'aneh
 
 37:24
-lakhen
-yere'uhu | anashim
+lakhen | yere'uhu | anashim
 lo | yir'eh
 kol | chakhmei | lev

@@ -67,10 +67,26 @@ PROSE_BREAKERS = {
 # NOTE: Same draft-heuristic caveat as PROSE_BREAKERS — seed for v1-he-baseline.
 #
 # Sifrei Emet primary disjunctives (Wickes 1881): Silluq (terminal, implicit
-# at verse end), Athnah (ETNAHTA U+0591), Ole-weyored (OLE U+05AB), Dehi
-# (DEHI U+05AD), Revia Gadol (REVIA U+0597).
+# at verse end), Athnah (ETNAHTA U+0591), Ole-weyored (OLE U+05AB), Revia
+# Gadol (REVIA U+0597), Gereshayim (GERESHAYIM U+059D).
 #
-# ZAQEF QATAN (U+0594) is also included because some poetic chapters in
+# DEHI (U+05AD) was previously included here but is removed. Dehi is a
+# pre-atnach servant accent (Wickes 1881; Yeivin §§260-265): it fires within
+# the atnach domain — between a stronger disjunctive and atnach itself —
+# marking the immediate pre-atnach approach rather than a stich boundary.
+# Treating it as a primary breaker causes 1-word orphan cola (Job 38:7
+# בְּרָן/וַיָּרִיעוּ, Pro 3:5 בְּטַח אֶל split). Demoted to
+# POETIC_INTERIOR_BREAKERS (future conditional use).
+#
+# GERESHAYIM (U+059D) is added. It is the 3rd-most-frequent Sifrei Emet
+# accent (1,661 in Pss, 658 in Job 3-42, 644 in Pro) and marks genuine
+# secondary stich boundaries — sub-stich interior breaks between primary
+# disjunctives, not within a primary's immediate approach. Its addition
+# eliminates the Job 38:7 and Pro 3:5 orphan patterns that dehi caused.
+# Gereshayim (U+059D) is distinct from geresh (U+059C, the revia-mugrash
+# component) — no ambiguity risk.
+#
+# ZAQEF QATAN (U+0594) is retained because some poetic chapters in
 # books that carry prose cantillation — notably Jonah 2 (the prayer) — use
 # prose accent marks throughout despite being poetic in meter and register.
 # In those chapters OLE and DEHI are absent; ZAQEF QATAN provides the
@@ -80,10 +96,20 @@ PROSE_BREAKERS = {
 POETIC_BREAKERS = {
     "֑",  # ETNAHTA (U+0591) — primary disjunctive (both systems)
     "֫",  # OLE (U+05AB) — component of oleh ve-yored (Sifrei Emet)
-    "֭",  # DEHI (U+05AD) — primary disjunctive (Sifrei Emet)
     "֗",  # REVIA (U+0597) — revia gadol / revia mugrash (Sifrei Emet)
+    "֝",  # GERESHAYIM (U+059D) — secondary interior disjunctive (Sifrei Emet);
+          #   replaces DEHI; fires at genuine sub-stich boundaries
     "֔",  # ZAQEF QATAN (U+0594) — tier-2 prose disjunctive included for
           #   prose-cantillated poetic chapters (e.g. Jonah 2 prayer)
+}
+
+# Soft/conditional interior breakers — NOT used in current v1-he-baseline
+# generation. Reserved for a future conditional pass (e.g., fire only when a
+# colon is ≥4 orthographic words between two primary breaks).
+POETIC_INTERIOR_BREAKERS = {
+    "֭",  # DEHI (U+05AD) — pre-atnach servant; fires within atnach domain
+    "֮",  # ZINOR/tsinnor (U+05AE) — postpositive minor disjunctive
+    "֡",  # PAZER (U+05A1) — weak disjunctive in extended revia domains
 }
 
 # TODO(canon-2026-04-26): Tifcha treatment.

@@ -1,7 +1,6 @@
 137:1
 al | naharot | Bavel
-sham | yashavnu
-gam | bakhinu
+sham | yashavnu | gam | bakhinu
 bezakherenu
 et | Tziyon
 
@@ -11,8 +10,7 @@ talinu
 kinoroteinu
 
 137:3
-ki | sham | she'elunu | shoveinu | divreishi | shir
-vetolaleinu | simchah
+ki | sham | she'elunu | shoveinu | divreishi | shir | vetolaleinu | simchah
 shiru | lanu
 mishir | Tziyon
 
@@ -28,16 +26,14 @@ tishkach | yemini
 
 137:6
 tidbak | leshoni | lechiki | im | lo | ezkerekhi
-im | lo | a'aleh
-et | Yerushalim
+im | lo | a'aleh | et | Yerushalim
 al
 rosh | simchati
 
 137:7
 zekhor | Yahweh | livnei | Edom
 et | yom | Yerushalim
-ha'omerim
-aru | aru
+ha'omerim | aru | aru
 ad
 haysod | bah
 

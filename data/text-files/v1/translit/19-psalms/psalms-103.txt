@@ -1,12 +1,10 @@
 103:1
-Ledavid | barakhi | nafshi
-et | Yahweh
+Ledavid | barakhi | nafshi | et | Yahweh
 vekhol | keravai
 et | shem | kadesho
 
 103:2
-barakhi | nafshi
-et | Yahweh
+barakhi | nafshi | et | Yahweh
 ve'al | tishkechi
 kol | gemulav
 
@@ -43,26 +41,22 @@ lo | lanetzach | yariv
 velo | le'olam | yitor
 
 103:10
-lo | khachata'einu
-asah | lanu
+lo | khachata'einu | asah | lanu
 velo | kha'avonoteinu
 gamal | aleinu
 
 103:11
-ki | khigvoah | shamayim
-al | ha'aretz
+ki | khigvoah | shamayim | al | ha'aretz
 gavar | chasdo
 al | yere'av
 
 103:12
-kirchok | mizroch
-mima'arav
+kirchok | mizroch | mima'arav
 hirchik | mimenu
 et | pesha'einu
 
 103:13
-kerachem | av
-al | banim
+kerachem | av | al | banim
 richam | Yahweh
 al | yere'av
 
@@ -72,8 +66,7 @@ zakhur
 ki | afar | anachenu
 
 103:15
-enoosh
-kechatzir | yamav
+enoosh | kechatzir | yamav
 ketzitz | hasadeh
 ken | yatzitz
 
@@ -82,8 +75,7 @@ ki | ruach | averah | bo | ve'einenu
 velo | yakirenu | od | mekomo
 
 103:17
-vechesed | Yahweh | me'olam | ve'ad | olom
-al | yere'av
+vechesed | Yahweh | me'olam | ve'ad | olom | al | yere'av
 vetzidkato
 livnei | vanim
 
@@ -94,22 +86,19 @@ la'asotam
 
 103:19
 Yahweh
-bashamayim
-hekhin | kis'o
+bashamayim | hekhin | kis'o
 umalkhuto
 bakol | mashalah
 
 103:20
 barakhu | Yahweh
 mal'akhav
-giborei | khoach
-osei | devaro
+giborei | khoach | osei | devaro
 lishmoa
 bekol | devaro
 
 103:21
-barakhu | Yahweh
-kol | tzeva'av
+barakhu | Yahweh | kol | tzeva'av
 mesharetav
 osei | retzono
 

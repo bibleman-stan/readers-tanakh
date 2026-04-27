@@ -1,12 +1,10 @@
 96:1
-shiru | Layahweh
-shir | chadash
+shiru | Layahweh | shir | chadash
 shiru | Layahweh
 kol | ha'aretz
 
 96:2
-shiru | Layahweh
-barakhu | shemo
+shiru | Layahweh | barakhu | shemo
 baseru | miyom | leyom
 yeshu'ato
 
@@ -31,39 +29,33 @@ oz | vetif'eret
 bemikdasho
 
 96:7
-havu | Layahweh
-mishpechot | amim
+havu | Layahweh | mishpechot | amim
 havu | Layahweh
 kavod | va'oz
 
 96:8
-havu | Layahweh
-kevod | shemo
+havu | Layahweh | kevod | shemo
 se'u | minchah
 uvo'u | lechatzrotav
 
 96:9
-hishtachavu | Layahweh
-behadrat | kodesh
+hishtachavu | Layahweh | behadrat | kodesh
 chilu | mipanav
 kol | ha'aretz
 
 96:10
 imru | vagoyim | Yahweh | malakh
-af | tikon | tevel
-bal | timot
+af | tikon | tevel | bal | timot
 yadin | amim
 bemeisharim
 
 96:11
-yismechu | hashamayim
-vetagel | ha'aretz
+yismechu | hashamayim | vetagel | ha'aretz
 yir'am | haiyam
 umelo'o
 
 96:12
-ya'aloz | sadai
-vekhol | asher | bo
+ya'aloz | sadai | vekhol | asher | bo
 az | yeranenu
 kol | atzei | ya'ar
 

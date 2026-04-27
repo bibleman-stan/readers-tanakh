@@ -1,5 +1,6 @@
 48:1
-shir | mizmor | livnei | Korach
+shir | mizmor
+livnei | Korach
 
 48:2
 gadol | Yahweh | umehulal | me'od
@@ -8,8 +9,7 @@ har | kadesho
 
 48:3
 yepeh | nof | mesos | kol | ha'aretz
-har | Tziyon
-yarketei | tzafon
+har | Tziyon | yarketei | tzafon
 kiryat
 melekh | rav
 
@@ -18,18 +18,15 @@ elohim | be'armenoteiha
 Noda | lemisgav
 
 48:5
-ki | hineh | hamelakhim
-No'adu
+ki | hineh | hamelakhim | No'adu
 averu | yachdav
 
 48:6
-hemah | ra'u
-ken | tamahu
+hemah | ra'u | ken | tamahu
 Nivhalu | Nechpazu
 
 48:7
-re'adah
-achazatam | sham
+re'adah | achazatam | sham
 chil
 kaiyoledah
 
@@ -40,8 +37,7 @@ oniyot | Tarshish
 
 48:9
 ka'asher | shama'nu | ken | ra'inu
-be'ir | Yahweh | tzeva'ot
-be'ir | eloheinu
+be'ir | Yahweh | tzeva'ot | be'ir | eloheinu
 elohim | yekhoneha | ad | olam | selah
 
 48:10
@@ -51,21 +47,18 @@ heikhalekha
 
 48:11
 keshimkha | elohim
-ken | tehilatekha
-al | katzvei | eretz
+ken | tehilatekha | al | katzvei | eretz
 tzedek
 mal'ah | yeminekha
 
 48:12
 yismach | har | Tziyon
-tagelenah
-benot | Yehudah
+tagelenah | benot | Yehudah
 lema'an
 mishpateikha
 
 48:13
-sobu | Tziyon
-vehakifuha
+sobu | Tziyon | vehakifuha
 sifru
 migdaleiha
 
@@ -76,6 +69,5 @@ lema'an | tesaperu
 ledor | acharon
 
 48:15
-ki | zeh | elohim | eloheinu
-olam | va'ed
+ki | zeh | elohim | eloheinu | olam | va'ed
 hu | yenahagenu | al | mut

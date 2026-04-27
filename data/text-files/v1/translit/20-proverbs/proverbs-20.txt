@@ -1,35 +1,29 @@
 20:1
-letz | haiyain
-homeh | shekhar
+letz | haiyain | homeh | shekhar
 vekhol | shogeh | bo
 lo | yechkam
 
 20:2
-naham | kakefir
-eimat | melekh
+naham | kakefir | eimat | melekh
 mit'abero
 chote | nafsho
 
 20:3
-kavod | la'ish
-shevet | meriv
+kavod | la'ish | shevet | meriv
 vekhol | evil
 yitgala
 
 20:4
-mechoref
-atzel | lo | yacharosh
+mechoref | atzel | lo | yacharosh
 veyish'al | bakatzir | va'ayin
 
 20:5
-mayim | amukim
-etzah | velev | ish
+mayim | amukim | etzah | velev | ish
 ve'ish | tevunah | yidlenah
 
 20:6
 rov | adam
-yikra
-ish | chasdo
+yikra | ish | chasdo
 ve'ish | emunim
 mi | yimtza
 
@@ -43,77 +37,64 @@ yoshev | al | kise | din
 mezareh | ve'einav | kol | ra
 
 20:9
-mi | yomar
-zikiti | libi
+mi | yomar | zikiti | libi
 taharti
 mechatati
 
 20:10
-even | va'even
-eifah | ve'eifah
+even | va'even | eifah | ve'eifah
 to'avat | Yahweh
 gam | sheneihem
 
 20:11
-gam | bema'alalav
-yitnaker | na'ar
+gam | bema'alalav | yitnaker | na'ar
 im | zakh | ve'im | yashar | po'olo
 
 20:12
-ozen | shoma'at
-ve'ayin | ro'ah
+ozen | shoma'at | ve'ayin | ro'ah
 Yahweh
 asah | gam | sheneihem
 
 20:13
-al | te'ehav | shenah
-pen | tivaresh
+al | te'ehav | shenah | pen | tivaresh
 pekach | eineikha | seva | lachem
 
 20:14
-ra | ra
-yomar | hakoneh
+ra | ra | yomar | hakoneh
 ve'ozel | lo
 az | yithalal
 
 20:15
-yesh | zaho
-verov | peninim
+yesh | zaho | verov | peninim
 ukheli | yekar
 siftei | da'at
 
 20:16
-lekach | bigdo
-ki | arav | zar
+lekach | bigdo | ki | arav | zar
 uve'ad | nakherim | chavlehu
 
 20:17
-arev | la'ish
-lechem | shaker
+arev | la'ish | lechem | shaker
 ve'achar
 yimale | fihu | chatzatz
 
 20:18
-machashavot
-be'etzah | tikon
+machashavot | be'etzah | tikon
 uvetachbulot
 aseh | milchamah
 
 20:19
-goleh | sod
-holekh | rakhil
+goleh | sod | holekh | rakhil
 ulefoteh | sefatav
 lo | tit'arav
 
 20:20
-mekalel
-aviv | ve'imo
+mekalel | aviv | ve'imo
 yid'akh | nero
 be'ishon | choshekh
 
 20:21
-nachalah
-mevuchelet | barishonah
+nachalah | mevuchelet | barishonah
 ve'acharitah
 lo | tevorakh
 
@@ -123,8 +104,7 @@ kaveh | Layahweh
 veyosha | lakh
 
 20:23
-to'avat | Yahweh
-even | va'aven
+to'avat | Yahweh | even | va'aven
 umoznei | mirmah | lo | tov
 
 20:24
@@ -133,24 +113,20 @@ ve'adam
 mah | yavin | darko
 
 20:25
-mokesh | adom
-yala | kodesh
+mokesh | adom | yala | kodesh
 ve'achar | nedarim | levaker
 
 20:26
-mezareh | resha'im
-melekh | chakham
+mezareh | resha'im | melekh | chakham
 vaiyashev | aleihem | ofan
 
 20:27
-ner | Yahweh
-nishmat | adam
+ner | Yahweh | nishmat | adam
 chofes
 kol | chadrei | vaten
 
 20:28
-chesed | ve'emet
-yitzeru | melekh
+chesed | ve'emet | yitzeru | melekh
 vesa'ad | bachesed | kis'o
 
 20:29
@@ -158,7 +134,6 @@ tif'eret | bachurim | kocham
 vahadar | zekenim | seivah
 
 20:30
-chaburot | petza
-tamrik | bera
+chaburot | petza | tamrik | bera
 umakot
 chadrei | vaten

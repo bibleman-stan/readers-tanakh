@@ -2,17 +2,16 @@
 shir
 hama'alot
 zekhor | Yahweh | Ledavid
-et | kol | unoto
+et
+kol | unoto
 
 132:2
-asher | Nishba
-Layahweh
+asher | Nishba | Layahweh
 nadar
 la'avir | Ya'ako
 
 132:3
-im | avo
-be'ohel | beiti
+im | avo | be'ohel | beiti
 im | e'eleh
 al | eres | yetzu'ai
 
@@ -21,8 +20,7 @@ im | eten | shenat | le'einai
 le'af'apai | tenumah
 
 132:5
-ad | emtza | makom
-Layahweh
+ad | emtza | makom | Layahweh
 mishkanot
 la'avir | Ya'ako
 
@@ -37,8 +35,7 @@ nishtachaveh
 lahadom | raglav
 
 132:8
-kumah | Yahweh
-limnuchatekha
+kumah | Yahweh | limnuchatekha
 atah
 va'aron | uzekha
 
@@ -47,8 +44,7 @@ kohaneikha | yilbeshu | tzedek
 vachasideikha | yeranenu
 
 132:10
-ba'avur
-David | avdekha
+ba'avur | David | avdekha
 al | tashev
 penei | meshichekha
 
@@ -76,14 +72,12 @@ poh | eshev
 ki | ivitiha
 
 132:15
-tzeidah
-barekh | avarekh
+tzeidah | barekh | avarekh
 evyoneiha
 asbia | lachem
 
 132:16
-vekhohaneiha
-albish | yesha
+vekhohaneiha | albish | yesha
 vachasideiha
 ranen | yeranenu
 
@@ -93,7 +87,6 @@ arakhti | ner
 limshichi
 
 132:18
-oyvav
-albish | boshet
+oyvav | albish | boshet
 ve'alav
 yatzitz | nizro

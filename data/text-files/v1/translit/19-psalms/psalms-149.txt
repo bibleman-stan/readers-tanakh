@@ -1,6 +1,5 @@
 149:1
-halu | Yah | shiru | Layahweh
-shir | chadash
+halu | Yah | shiru | Layahweh | shir | chadash
 tehilato
 bikhal | chasidim
 
@@ -25,13 +24,11 @@ yeranenu
 al | mishkevotam
 
 149:6
-romot | el
-bigronam
+romot | el | bigronam
 vecherev | pifiyot | beyadam
 
 149:7
-la'asot | nekamah
-bagoyim
+la'asot | nekamah | bagoyim
 tokhechot
 bal | umim
 
@@ -42,6 +39,5 @@ bekhavlei | varzel
 
 149:9
 la'asot | bahem | mishpat | katuv
-hadar | hu
-lekhol | chasidav
+hadar | hu | lekhol | chasidav
 halu | Yah

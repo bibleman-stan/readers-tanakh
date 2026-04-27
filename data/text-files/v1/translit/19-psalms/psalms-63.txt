@@ -11,23 +11,21 @@ kamah | lekha | vesari
 be'eretz | tziyah | ve'ayef | beli | mayim
 
 63:3
-ken
-bakodesh | chazitikha
+ken | bakodesh | chazitikha
 lir'ot | uzekha
 ukhevodekha
 
 63:4
-ki | tov | chasdekha
-mechaiyim
+ki | tov | chasdekha | mechaiyim
 sefatai | yeshabechunekha
 
 63:5
 ken | avarekhkha | vechaiyai
-beshimkha | esa | khapai
+beshimkha
+esa | khapai
 
 63:6
-kemo | chelev | vadeshen
-tisba | nafshi
+kemo | chelev | vadeshen | tisba | nafshi
 vesiftei | renanot
 yehalel | pi
 
@@ -47,8 +45,7 @@ tamekhah | yeminekha
 
 63:10
 vehemah
-lesho'ah
-yevakshu | nafshi
+lesho'ah | yevakshu | nafshi
 yavo'u
 betachtiyot | ha'aretz
 
@@ -58,7 +55,6 @@ menat | shu'alim | yihyu
 
 63:12
 vehamelekh | yismach | belohim
-yithalel
-kol | hanishba | bo
+yithalel | kol | hanishba | bo
 ki | yisakher
 pi | dovrei | shaker

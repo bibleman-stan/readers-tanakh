@@ -9,14 +9,12 @@ haluhu
 kero | gudlo
 
 150:3
-haluhu
-beteka | shofar
+haluhu | beteka | shofar
 haluhu
 benevel | vekhinor
 
 150:4
-haluhu
-vetof | umachol
+haluhu | vetof | umachol
 haluhu
 beminim | ve'ugav
 
@@ -26,6 +24,5 @@ haluhu
 betziltzelei | teru'ah
 
 150:6
-kol | haneshamah
-tehalel | Yah
+kol | haneshamah | tehalel | Yah
 halu | Yah

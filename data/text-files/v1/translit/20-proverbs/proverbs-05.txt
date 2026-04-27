@@ -1,6 +1,5 @@
 5:1
-beni
-lechakhemati | hakshivah
+beni | lechakhemati | hakshivah
 litvunati
 hat | azenekha
 
@@ -10,31 +9,26 @@ veda'at
 sefateikha | yintzoru
 
 5:3
-ki | nofet | titofenah
-siftei | zarah
+ki | nofet | titofenah | siftei | zarah
 vechalak | mishemen | chikah
 
 5:4
-ve'acharitah
-marah | khala'anah
+ve'acharitah | marah | khala'anah
 chadah
 kecherev | piyot
 
 5:5
-ragleiha
-yoredot | mavet
+ragleiha | yoredot | mavet
 sheol
 tze'adeiha | yitmokhu
 
 5:6
-orach | chaiyim
-pen | tefales
+orach | chaiyim | pen | tefales
 na'u | ma'geloteiha
 lo | teda
 
 5:7
-ve'atah | vanim
-shim'u | li
+ve'atah | vanim | shim'u | li
 ve'al | tasuru
 me'imrei | fi
 
@@ -60,20 +54,17 @@ ushe'erekha
 
 5:12
 ve'amarta
-eikh
-saneti | musar
+eikh | saneti | musar
 vetokhachat
 na'atz | libi
 
 5:13
-velosha | shama'ti
-bekol | morai
+velosha | shama'ti | bekol | morai
 velimlamedai
 lo | hititi | azeni
 
 5:14
-kim'at
-hayiti | vekhol | ra
+kim'at | hayiti | vekhol | ra
 betokh | kahal | ve'edah
 
 5:15
@@ -98,8 +89,7 @@ me'eshet | ne'urekha
 5:19
 aiyelet | ahavim
 veya'alat | chen
-dadeiha
-yeravukha | vekhol | et
+dadeiha | yeravukha | vekhol | et
 be'ahavatah
 tishgeh | tamid
 
@@ -109,8 +99,7 @@ utechabek
 chek | nakheriyah
 
 5:21
-ki | nokhach | einei | Yahweh
-darkhei | ish
+ki | nokhach | einei | Yahweh | darkhei | ish
 vekhol | ma'gelotav | mefales
 
 5:22
@@ -121,6 +110,5 @@ yitamekh
 
 5:23
 hu
-yamut
-be'ein | musar
+yamut | be'ein | musar
 uvero | ivalto | yishgeh

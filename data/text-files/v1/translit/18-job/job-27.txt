@@ -1,11 +1,9 @@
 27:1
-vaiyosef | Iyov
-se'et | meshalo
+vaiyosef | Iyov | se'et | meshalo
 vaiyomar
 
 27:2
-chai | el
-hesir | mishpati
+chai | el | hesir | mishpati
 Veshadai
 hemar | nafshi
 
@@ -24,24 +22,20 @@ ad | egva
 lo | asir | tumati | mimeni
 
 27:6
-betzidkati | hechezakti
-velo | arpeha
+betzidkati | hechezakti | velo | arpeha
 lo | yecheraf | levavi
 miyamai
 
 27:7
-yehi | kherasho
-oyevi
+yehi | kherasho | oyevi
 umitkomi | khe'aval
 
 27:8
-ki | mah | tikvat | chanef
-ki | yivtza
+ki | mah | tikvat | chanef | ki | yivtza
 ki | yeshel | eloah | nafsho
 
 27:9
-hatza'akato
-yishma | el
+hatza'akato | yishma | el
 ki | tavo | alav | tzarah
 
 27:10
@@ -69,8 +63,7 @@ vetze'etza'av
 lo | yisbe'u | lachem
 
 27:15
-seridov
-bamavet | yikaveru
+seridov | bamavet | yikaveru
 ve'almenotav
 lo | tivkeinah
 
@@ -80,8 +73,7 @@ vekhachomer
 yakhin | malbush
 
 27:17
-yakhin
-vetzadik | yilbash
+yakhin | vetzadik | yilbash
 vekhesef
 naki | yachalok
 
@@ -91,13 +83,11 @@ ukhesukah
 asah | notzer
 
 27:19
-ashir | yishkav
-velo | ye'asef
+ashir | yishkav | velo | ye'asef
 einav | pakach | ve'einenu
 
 27:20
-tasigehu | khamayim
-balahot
+tasigehu | khamayim | balahot
 laylah
 genavatu | sufah
 
@@ -107,8 +97,7 @@ visa'arehu
 mimekomo
 
 27:22
-veyashlekh | alav
-velo | yachmol
+veyashlekh | alav | velo | yachmol
 miyado
 baroach | yivrach
 

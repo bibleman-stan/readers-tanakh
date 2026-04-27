@@ -1,6 +1,5 @@
 35:1
-Ledavid | rivah | Yahweh
-et | yerivai
+Ledavid | rivah | Yahweh | et | yerivai
 lecham
 et | lochamai
 
@@ -10,8 +9,7 @@ vekumah
 be'ezrati
 
 35:3
-veharek | chanit | usegor
-likrat | rodefai
+veharek | chanit | usegor | likrat | rodefai
 emor | lenafshi
 yeshu'atekh | ani
 
@@ -33,8 +31,7 @@ umal'akh | Yahweh
 rodefam
 
 35:7
-ki | chinam | tamenu | li
-shachat | rishtam
+ki | chinam | tamenu | li | shachat | rishtam
 chinam
 chaferu | lenafshi
 
@@ -45,27 +42,24 @@ besho'ah
 yipol | bah
 
 35:9
-venafshi
-tagil | Bayahweh
-tasis | bishu'ato
+venafshi | tagil | Bayahweh
+tasis
+bishu'ato
 
 35:10
 kal | atzmotai | tomarnah | Yahweh
 mi | khamokha
-matzil | ani
-mechazak | mimenu
+matzil | ani | mechazak | mimenu
 ve'ani | ve'evyon
 migozelo
 
 35:11
-yekumun
-edei | chamas
+yekumun | edei | chamas
 asher | lo | yada'ti
 yish'aluni
 
 35:12
-yeshalemuni | ra'ah
-tachat | tovah
+yeshalemuni | ra'ah | tachat | tovah
 shekhol | lenafshi
 
 35:13
@@ -75,32 +69,27 @@ utefilati
 al | cheiki | tashuv
 
 35:14
-kerea | ke'ach | li
-hithalakheti
+kerea | ke'ach | li | hithalakheti
 ka'avel | em
 koder | shachoti
 
 35:15
 uvetzal'i | samechu | Vene'esafu
-Ne'esfu | alai | nekhim
-velo | yada'ti
+Ne'esfu | alai | nekhim | velo | yada'ti
 kare'u | velo | damu
 
 35:16
-bechanfei
-la'agei | ma'og
+bechanfei | la'agei | ma'og
 charok | alai | shineimov
 
 35:17
 Adonai | kamah | tir'eh
-hashivah | nafshi
-misho'eihem
+hashivah | nafshi | misho'eihem
 mikefirim
 yechidati
 
 35:18
-odkha
-bekahal | rav
+odkha | bekahal | rav
 be'am | atzum | ahaleka
 
 35:19
@@ -112,34 +101,30 @@ yikretzu | ayin
 ki | lo | shalom
 yedaberu
 ve'al | rig'ei | eretz
-divrei | mirmot | yachashovun
+divrei | mirmot
+yachashovun
 
 35:21
 vaiyarchivu | alai
 pihem
-ameru
-he'ach | he'ach
+ameru | he'ach | he'ach
 ra'atah | eineinu
 
 35:22
-ra'itah | Yahweh
-al | techerash
+ra'itah | Yahweh | al | techerash
 Adonai
 al | tirchak | mimeni
 
 35:23
-ha'irah | vehakitzah
-lemishpati
+ha'irah | vehakitzah | lemishpati
 elohai | Vadonai | lerivi
 
 35:24
-shafeteni | khetzidkekha
-Yahweh | elohai
+shafeteni | khetzidkekha | Yahweh | elohai
 ve'al | yismechu | li
 
 35:25
-al | yomeru | velibom
-he'ach | nafshenu
+al | yomeru | velibom | he'ach | nafshenu
 al | yomeru
 bila'anuhu
 
@@ -150,12 +135,11 @@ hamagdilim | alai
 
 35:27
 yaronu | veyismechu | chafetzei | tzidki
-veyomeru | tamid
-yigdal | Yahweh
+veyomeru | tamid | yigdal | Yahweh
 hechafetz
 shelom | avdo
 
 35:28
-uleshoni
-tehgeh | tzidkecha
-kol | haiyom | tehilatekha
+uleshoni | tehgeh | tzidkecha
+kol | haiyom
+tehilatekha

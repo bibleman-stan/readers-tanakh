@@ -1,17 +1,15 @@
 135:1
-halu | Yah | halu
-et | shem | Yahweh
-halu | avdei | Yahweh
+halu | Yah | halu | et | shem | Yahweh
+halu
+avdei | Yahweh
 
 135:2
-she'omedim
-beveit | Yahweh
+she'omedim | beveit | Yahweh
 bechatzrot
 beit | eloheinu
 
 135:3
-halu | Yah
-ki | tov | Yahweh
+halu | Yah | ki | tov | Yahweh
 zameru | lishmo
 ki | na'im
 
@@ -22,8 +20,7 @@ Yisra'el
 lisgulato
 
 135:5
-ki | ani | yada'ti
-ki | gadol | Yahweh
+ki | ani | yada'ti | ki | gadol | Yahweh
 va'adoneinu
 mikol | elohim
 
@@ -37,30 +34,27 @@ vekhol | tehomot
 135:7
 ma'aleh | nesi'im | miktzeh | ha'aretz
 berakim | lamatar | asah
-motze | ruach | me'otzrotav
+motze | ruach
+me'otzrotav
 
 135:8
-shehikah
-bekhorei | Mitzrayim
+shehikah | bekhorei | Mitzrayim
 me'adam
 ad | behemah
 
 135:9
-shalach | otot | umofetim
-betokhekhi | Mitzrayim
+shalach | otot | umofetim | betokhekhi | Mitzrayim
 befar'oh
 uvekhol | avadav
 
 135:10
-shehikah
-goyim | rabim
+shehikah | goyim | rabim
 veharag
 melakhim | atzumim
 
 135:11
 Lesichon | melekh | ha'emori
-Ule'og
-melekh | Habashan
+Ule'og | melekh | Habashan
 ulekhol
 mamlekhot | Kena'an
 
@@ -70,8 +64,7 @@ nachalah
 Leyisra'el | amo
 
 135:13
-Yahweh
-shimkha | le'olam
+Yahweh | shimkha | le'olam
 Yahweh
 zikhrekha | ledor | vador
 
@@ -81,38 +74,31 @@ ve'al | avadav
 yitnecham
 
 135:15
-atzabei | hagoyim
-kesef | vezahav
+atzabei | hagoyim | kesef | vezahav
 ma'aseh
 yedei | adam
 
 135:16
-peh | lahem
-velo | yedaberu
+peh | lahem | velo | yedaberu
 einayim | lahem
 velo | yir'u
 
 135:17
-azenayim | lahem
-velo | ya'azinu
+azenayim | lahem | velo | ya'azinu
 af
 ein | yesh | ruach | befihem
 
 135:18
-kemohem
-yihyu | oseihem
-kol
-asher | boteach | bahem
+kemohem | yihyu | oseihem
+kol | asher | boteach | bahem
 
 135:19
-beit | Yisra'el
-barakhu | et | Yahweh
+beit | Yisra'el | barakhu | et | Yahweh
 beit | Aharon
 barakhu | et | Yahweh
 
 135:20
-beit | halevi
-barakhu | et | Yahweh
+beit | halevi | barakhu | et | Yahweh
 yir'ei | Yahweh
 barakhu | et | Yahweh
 

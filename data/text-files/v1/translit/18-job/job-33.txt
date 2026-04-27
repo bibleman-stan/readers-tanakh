@@ -4,8 +4,7 @@ shema | na | Iyov | milai
 vekhol | devarai | ha'azinah
 
 33:2
-hineh | na
-patachti | fi
+hineh | na | patachti | fi
 diberah | leshoni | vechiki
 
 33:3
@@ -28,14 +27,12 @@ mechomer
 koratzti | gam | ani
 
 33:7
-hineh | emati
-lo | teva'ateka
+hineh | emati | lo | teva'ateka
 ve'akhpi
 aleikha | lo | yikhbad
 
 33:8
-akh
-amarta | ve'azenai
+akh | amarta | ve'azenai
 vekol | milin | eshma
 
 33:9
@@ -45,8 +42,7 @@ fasha | chaf | anokhi
 velo | avon | li
 
 33:10
-hen | tenu'ot
-alai | yimtza
+hen | tenu'ot | alai | yimtza
 yachsheveni | le'oyev | lo
 
 33:11
@@ -60,8 +56,7 @@ ki | yirbeh | eloha
 me'enoosh
 
 33:13
-madua
-elav | rivota
+madua | elav | rivota
 ki | khol | devarav
 lo | ya'aneh
 
@@ -72,30 +67,25 @@ lo | yeshurenah
 
 33:15
 bachalom | chezyon | laylah
-binfol | tardemah
-al | anashim
+binfol | tardemah | al | anashim
 bitnumot
 alei | mishkav
 
 33:16
-az | yigleh
-ozen | anashim
+az | yigleh | ozen | anashim
 uvemosaram | yachtom
 
 33:17
-lehasir
-adam | ma'aseh
+lehasir | adam | ma'aseh
 vegevah | migever | yekhaseh
 
 33:18
-yachsokh | nafsho
-mini | shachat
+yachsokh | nafsho | mini | shachat
 vechaiyato
 me'avor | bashalach
 
 33:19
-vehukhach | bemakh'ov
-al | mishkavo
+vehukhach | bemakh'ov | al | mishkavo
 veriv | atzamav | etan
 
 33:20
@@ -122,8 +112,7 @@ lehagid | le'adam | yashero
 33:24
 vaychunnenu
 vaiyomer
-peda'ehu
-meredet | shachat
+peda'ehu | meredet | shachat
 matzati | khofer
 
 33:25
@@ -133,31 +122,27 @@ limei | alumav
 
 33:26
 ye'tar | el | eloah | vaiyirtzehu
-vaiyar | panav
-bitru'ah
+vaiyar | panav | bitru'ah
 vaiyashev | le'enoosh
 tzidkato
 
 33:27
 yashor | al | anashim
 vaiyomer
-chatati
-veyashar | he'eveiti
+chatati | veyashar | he'eveiti
 velo | shavah | li
 
 33:28
-padah | nafshi
-me'avor | bashachat
-vechaiyato | ba'or | tir'eh
+padah | nafshi | me'avor | bashachat
+vechaiyato
+ba'or | tir'eh
 
 33:29
-hen | kol | eleh
-yif'al | el
+hen | kol | eleh | yif'al | el
 pa'amayim | shaloosh | im | gaver
 
 33:30
-lehashiv | nafsho
-mini | shachat
+lehashiv | nafsho | mini | shachat
 le'or
 be'or | hachaiyim
 
@@ -172,7 +157,6 @@ daber
 ki | chafatzti | tzadekeka
 
 33:33
-im | ayin
-atah | shema | li
+im | ayin | atah | shema | li
 hacharesh
 va'a'alefkha | chokhmah

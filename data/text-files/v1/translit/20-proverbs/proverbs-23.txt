@@ -1,6 +1,5 @@
 23:1
-ki | teshev
-lilchom | et | moshel
+ki | teshev | lilchom | et | moshel
 bin | tavin
 et | asher | lefaneikha
 
@@ -9,8 +8,7 @@ vesamta | sakin | belo'ekha
 im | ba'al | nefesh | atah
 
 23:3
-al | tit'o
-lemat'amotav
+al | tit'o | lemat'amotav
 vehu
 lechem | kezavim
 
@@ -27,16 +25,14 @@ ve'ayef | hashamayim
 
 23:6
 al | tilcham
-et | lechem
-ra | ayin
+et | lechem | ra | ayin
 ve'al | tit'av
 lemat'amotav
 
 23:7
 ki | kemov | sha'ar | benafsho
 ken | hu
-ekhol | usheteh
-yomar | lakh
+ekhol | usheteh | yomar | lakh
 velibo
 bal | imakh
 
@@ -46,14 +42,12 @@ veshichata
 devareikha | hane'imim
 
 23:9
-be'azenei | khesil
-al | tedaber
+be'azenei | khesil | al | tedaber
 ki | yavuz
 lesekhel | mileikha
 
 23:10
-al | taseg
-gevul | olam
+al | taseg | gevul | olam
 uvisdei | yetomim
 al | tavo
 
@@ -72,14 +66,12 @@ ki | takenu | vashevet
 lo | yamut
 
 23:14
-atah
-bashevet | takenu
+atah | bashevet | takenu
 venafsho
 mishe'ol | tatzil
 
 23:15
-beni
-im | chakham | libekha
+beni | im | chakham | libekha
 yismach | libi | gam | ani
 
 23:16
@@ -88,14 +80,12 @@ bedaber | sefateikha
 meisharim
 
 23:17
-al | yekane | libekha
-bachata'im
+al | yekane | libekha | bachata'im
 ki | im | beyir'at | Yahweh
 kol | haiyom
 
 23:18
-ki
-im | yesh | acharit
+ki | im | yesh | acharit
 vetikvatecha
 lo | tikaret
 
@@ -108,25 +98,21 @@ al | tehi | vesoe'ei | yayin
 bezolalei | vasar | lamo
 
 23:21
-ki | sove | vezolel
-yivaresh
+ki | sove | vezolel | yivaresh
 ukera'im
 talbish | numah
 
 23:22
-shema | le'avikha
-zeh | yeladekha
+shema | le'avikha | zeh | yeladekha
 ve'al | tavuz
 ki | zakenah | imekha
 
 23:23
-emet | keneh
-ve'al | timkor
+emet | keneh | ve'al | timkor
 chokhmah | umusar | uvinah
 
 23:24
-goyl | yagoyl
-avi | tzadik
+goyl | yagoyl | avi | tzadik
 veyoled | chakham
 veyismach | bo
 
@@ -146,15 +132,13 @@ uve'er | tzarah
 nakheriyah
 
 23:28
-af | hi
-kechetef | te'ero
+af | hi | kechetef | te'ero
 uvogdim
 be'adam | tosif
 
 23:29
 lemi | o | lemi | avo | lemi | midonim | lemi | siach
-lemi
-petza'im | chinam
+lemi | petza'im | chinam
 lemi
 chakhlilut | einayim
 
@@ -170,19 +154,16 @@ yithalekh
 bemeisharim
 
 23:32
-acharito
-kenachash | yishakh
+acharito | kenachash | yishakh
 ukhetzif'oni | yafrish
 
 23:33
-eineikha
-yir'u | zarot
+eineikha | yir'u | zarot
 velibekha
 yedaber | tahpukhot
 
 23:34
-vehayita
-keshokhev | belev | yam
+vehayita | keshokhev | belev | yam
 ukheshokhev
 berosh | chibel
 

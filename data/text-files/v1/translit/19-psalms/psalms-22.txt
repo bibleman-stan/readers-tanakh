@@ -1,18 +1,15 @@
 22:1
-lamnatzeach
-al | aiyelet | hashachar
+lamnatzeach | al | aiyelet | hashachar
 mizmor | Ledavid
 
 22:2
-eli | eli
-lamah | azavtani
+eli | eli | lamah | azavtani
 rachok | mishu'ati
 divrei | sha'agati
 
 22:3
 elohai
-ekra | yomom
-velo | ta'aneh
+ekra | yomom | velo | ta'aneh
 velaylah
 velo | dumiyah | li
 
@@ -22,8 +19,7 @@ yoshev
 tehilot | Yisra'el
 
 22:5
-bekha
-batechu | avoteinu
+bekha | batechu | avoteinu
 batechu
 vatefaletemo
 
@@ -37,8 +33,7 @@ cherpat | adam
 uvezui | am
 
 22:8
-kol | ro'ai
-yal'igu | li
+kol | ro'ai | yal'igu | li
 yaftiru | vesafah
 yani'u | rosh
 
@@ -53,19 +48,16 @@ mavtichi
 al | shedei | imi
 
 22:11
-aleikha
-hashelakhti | merachem
+aleikha | hashelakhti | merachem
 mibeten | imi
 eli | atah
 
 22:12
-al | tirchak | mimeni
-ki | tzarah | kerovah
+al | tirchak | mimeni | ki | tzarah | kerovah
 ki | ein | ozer
 
 22:13
-sevavuni
-parim | rabim
+sevavuni | parim | rabim
 abirei | Vashan | kiteruni
 
 22:14
@@ -76,22 +68,19 @@ toref | vesho'eg
 22:15
 kamayim | Nishpakhti | vehitparedu
 kal | atzmotai
-hayah | libi
-kadonag
+hayah | libi | kadonag
 Names
 betokh | me'ai
 
 22:16
 yavesh | kacheres | kochi
-uleshoni
-mudbak | malkochai
+uleshoni | mudbak | malkochai
 vela'afar | mavet | tishpeteni
 
 22:17
 ki | sevavuni
 kelavim
-adat | mere'im
-hikifuni
+adat | mere'im | hikifuni
 ka'ari
 yadai | veraglai
 
@@ -106,8 +95,7 @@ ve'al | levushi
 yapilu | goral
 
 22:20
-ve'atah | Yahweh
-al | tirchak
+ve'atah | Yahweh | al | tirchak
 eyaluti
 le'ezrati | chushah
 
@@ -117,8 +105,7 @@ miyad | kelev
 yechidati
 
 22:22
-hooshi'eni
-mipi | aryeh
+hooshi'eni | mipi | aryeh
 umikarnei | remim | anitani
 
 22:23
@@ -145,26 +132,22 @@ neged | yere'av
 
 22:27
 yokhelu | anavim | veyisba'u
-yehalu | Yahweh
-doreshav
+yehalu | Yahweh | doreshav
 yechi | levavkhem | la'ad
 
 22:28
-yizkeru | veyashuvu | el | Yahweh
-kol | afsei | aretz
+yizkeru | veyashuvu | el | Yahweh | kol | afsei | aretz
 veyishtachavu | lefaneikha
 kal | mishpechot | goyim
 
 22:29
-ki | Layahweh
-hamelukhah
+ki | Layahweh | hamelukhah
 umoshel
 bagoyim
 
 22:30
 akhelu | vaiyishtachavu | kal | dishnei | eretz
-lefanav | yikhre'u
-kol | yordei | afar
+lefanav | yikhre'u | kol | yordei | afar
 venafsho
 lo | chiyah
 
@@ -173,7 +156,6 @@ zera | ya'avdenu
 yesupar | Ladonai | lador
 
 22:32
-yavo'u
-veyagidu | tzidkato
+yavo'u | veyagidu | tzidkato
 le'am | nolad
 ki | asah

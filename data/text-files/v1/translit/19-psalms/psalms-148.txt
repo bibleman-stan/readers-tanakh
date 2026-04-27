@@ -1,6 +1,5 @@
 148:1
-halu | Yah | halu | et | Yahweh
-min | hashamayim
+halu | Yah | halu | et | Yahweh | min | hashamayim
 haluhu
 bameromim
 
@@ -10,22 +9,18 @@ haluhu
 kol | tzeva'ov
 
 148:3
-haluhu
-shemesh | veyareach
+haluhu | shemesh | veyareach
 haluhu
 kol | kokhvei | or
 
 148:4
-haluhu
-shemei | hashamayim
+haluhu | shemei | hashamayim
 vehamayim
 asher | me'al | hashamayim
 
 148:5
-yehalu
-et | shem | Yahweh
-ki | hu
-tzivah | Venivra'u
+yehalu | et | shem | Yahweh
+ki | hu | tzivah | Venivra'u
 
 148:6
 vaiya'amidem | la'ad | le'olam
@@ -33,14 +28,12 @@ chok | natan
 velo | ya'avor
 
 148:7
-halu | et | Yahweh
-min | ha'aretz
+halu | et | Yahweh | min | ha'aretz
 taninim
 vekhol | tehomot
 
 148:8
-esh | uvarod
-sheleg | vekitor
+esh | uvarod | sheleg | vekitor
 ruach | se'arah
 osah | devaro
 
@@ -55,8 +48,7 @@ remes
 vetzipor | kanaf
 
 148:11
-malkhei | eretz
-vekhol | le'umim
+malkhei | eretz | vekhol | le'umim
 sarim
 vekhol | shofetei | aretz
 
@@ -73,6 +65,5 @@ al | eretz | veshamayim
 
 148:14
 vaiyarem | keren | le'amo | tehilah | lekhol | chasidav
-livnei | Yisra'el
-am | kerovo
+livnei | Yisra'el | am | kerovo
 halu | Yah

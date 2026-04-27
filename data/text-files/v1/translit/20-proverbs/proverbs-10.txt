@@ -1,12 +1,10 @@
 10:2
-lo | yo'ilu
-otzrot | resha
+lo | yo'ilu | otzrot | resha
 utzedakah
 tatzil | mimavet
 
 10:3
-lo | yar'iv | Yahweh
-nefesh | tzadik
+lo | yar'iv | Yahweh | nefesh | tzadik
 vehavat | resha'im | yehdof
 
 10:4
@@ -15,65 +13,56 @@ oseh | khaf | remiyah
 veyad | charutzim | ta'ashir
 
 10:5
-oger | bakayitz
-ben | maskil
+oger | bakayitz | ben | maskil
 nirdam | bakatzir
 ben | mevish
 
 10:6
-berakhot
-lerosh | tzadik
+berakhot | lerosh | tzadik
 ufi | resha'im
 yekhaseh | chamas
 
 10:7
-zekher | tzadik
-livrakhah
+zekher | tzadik | livrakhah
 veshem | resha'im | yirkav
 
 10:8
-chakham | lev
-yikach | mitzvot
+chakham | lev | yikach | mitzvot
 ve'evil | sefatayim
 yilavet
 
 10:9
-holekh | batom
-yelekh | betach
+holekh | batom | yelekh | betach
 ume'akesh | derakhav
 yivadea
 
 10:10
-koretz | ayin
-yiten | atzavet
+koretz | ayin | yiten | atzavet
 ve'evil | sefatayim
 yilavet
 
 10:11
-mekor | chaiyim
-pi | tzadik
+mekor | chaiyim | pi | tzadik
 ufi | resha'im
 yekhaseh | chamas
 
 10:12
-sin'ah
-te'orer | medanim
+sin'ah | te'orer | medanim
 ve'al | kol | pesha'im
 tekhaseh | ahavah
 
 10:13
-besiftei | navon
-timatze | chokhmah
+besiftei | navon | timatze | chokhmah
 veshevet
 legev | chasar | lev
 
 10:14
 chakhamim | yitzpenu | da'at
-ufi | evil | mechitah | kerovah
+ufi | evil
+mechitah | kerovah
 
 10:15
-hon | ashir
-kiryat | uzo
+hon | ashir | kiryat | uzo
 mechitat | dalim | reisham
 
 10:16
@@ -81,51 +70,42 @@ pe'ulat | tzadik | lechaiyim
 tevu'at | rasha | lechatat
 
 10:17
-orach | lechaiyim
-shomer | musar
+orach | lechaiyim | shomer | musar
 ve'ozev | tokhachat | mat'eh
 
 10:18
-mekhaseh | sin'ah
-siftei | shaker
+mekhaseh | sin'ah | siftei | shaker
 umotzi | dibah
 hu | khesil
 
 10:19
-bero | devarim
-lo | yechdal | pasha
+bero | devarim | lo | yechdal | pasha
 vechosekh | sefatav | maskil
 
 10:20
-kesef | nivchor
-leshon | tzadik
+kesef | nivchor | leshon | tzadik
 lev | resha'im | kim'at
 
 10:21
-siftei | tzadik
-yir'u | rabim
+siftei | tzadik | yir'u | rabim
 ve'evilim
 bachasar | lev | yamutu
 
 10:22
-birkat | Yahweh
-hi | ta'ashir
+birkat | Yahweh | hi | ta'ashir
 velo | yosif | etzev | imah
 
 10:23
-kischok | likhsil
-asot | zimah
+kischok | likhsil | asot | zimah
 vechakhemah
 le'ish | tevunah
 
 10:24
-megorat | rasho
-hi | tevo'enu
+megorat | rasho | hi | tevo'enu
 veta'avat | tzadikim | yiten
 
 10:25
-ka'avor | sufah
-ve'ein | rasha
+ka'avor | sufah | ve'ein | rasha
 vetzadik
 yesod | olam
 
@@ -136,8 +116,7 @@ ken | he'atzel
 lesholechav
 
 10:27
-yir'at | Yahweh
-tosif | yamim
+yir'at | Yahweh | tosif | yamim
 ushenot | resha'im | tiktzorenah
 
 10:28
@@ -145,8 +124,7 @@ tochelet | tzadikim | simchah
 vetikvat | resha'im | toved
 
 10:29
-ma'oz | latom
-derekh | Yahweh
+ma'oz | latom | derekh | Yahweh
 umechitah
 lefo'alei | aven
 
@@ -156,13 +134,11 @@ uresha'im
 lo | yishkenu | aretz
 
 10:31
-pi | tzadik
-yanuv | chokhmah
+pi | tzadik | yanuv | chokhmah
 uleshon | tahpukhot
 tikaret
 
 10:32
-siftei | tzadik
-yede'un | ratzon
+siftei | tzadik | yede'un | ratzon
 ufi | resha'im
 tahpukhot

@@ -3,13 +3,11 @@ hodu | Layahweh | ki | tov
 ki | le'olam | chasdo
 
 136:2
-hodu
-lelohei | ha'elohim
+hodu | lelohei | ha'elohim
 ki | le'olam | chasdo
 
 136:3
-hodu
-la'adonei | ha'adonim
+hodu | la'adonei | ha'adonim
 ki | le'olam | chasdo
 
 136:4
@@ -17,38 +15,31 @@ le'oseh | nifla'ot | gedolot | levado
 ki | le'olam | chasdo
 
 136:5
-le'oseh | hashamayim
-bitvunah
+le'oseh | hashamayim | bitvunah
 ki | le'olam | chasdo
 
 136:6
-leroka | ha'aretz
-al | hamayim
+leroka | ha'aretz | al | hamayim
 ki | le'olam | chasdo
 
 136:7
-le'oseh
-orim | gedolim
+le'oseh | orim | gedolim
 ki | le'olam | chasdo
 
 136:10
-lemakeh | Mitzrayim
-bivkhoreihem
+lemakeh | Mitzrayim | bivkhoreihem
 ki | le'olam | chasdo
 
 136:11
-vaiyotze | Yisra'el
-mitokham
+vaiyotze | Yisra'el | mitokham
 ki | le'olam | chasdo
 
 136:12
-beyad | chazakah
-uvizroa | netuyah
+beyad | chazakah | uvizroa | netuyah
 ki | le'olam | chasdo
 
 136:13
-legozer | yam | suf
-ligzarim
+legozer | yam | suf | ligzarim
 ki | le'olam | chasdo
 
 136:14
@@ -60,28 +51,23 @@ veni'er | par'oh | vecheilo | veyam | suf
 ki | le'olam | chasdo
 
 136:16
-lemolikh | amo
-bamidbar
+lemolikh | amo | bamidbar
 ki | le'olam | chasdo
 
 136:17
-lemakeh
-melakhim | gedolim
+lemakeh | melakhim | gedolim
 ki | le'olam | chasdo
 
 136:18
-vaiyaharog
-melakhim | adirim
+vaiyaharog | melakhim | adirim
 ki | le'olam | chasdo
 
 136:19
-Lesichon
-melekh | ha'emori
+Lesichon | melekh | ha'emori
 ki | le'olam | chasdo
 
 136:20
-Ule'og
-melekh | Habashan
+Ule'og | melekh | Habashan
 ki | le'olam | chasdo
 
 136:21
@@ -89,13 +75,11 @@ venatan | artzam | lenachalah
 ki | le'olam | chasdo
 
 136:22
-nachalah
-Leyisra'el | avdo
+nachalah | Leyisra'el | avdo
 ki | le'olam | chasdo
 
 136:23
-shebeshiflenu
-zakhar | lanu
+shebeshiflenu | zakhar | lanu
 ki | le'olam | chasdo
 
 136:24
@@ -103,11 +87,9 @@ vaiyifrekenu | mitzareinu
 ki | le'olam | chasdo
 
 136:25
-noten | lechem
-lekhol | basar
+noten | lechem | lekhol | basar
 ki | le'olam | chasdo
 
 136:26
-hodu
-le'el | hashamayim
+hodu | le'el | hashamayim
 ki | le'olam | chasdo
