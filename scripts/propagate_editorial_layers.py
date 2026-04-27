@@ -250,42 +250,97 @@ def propagate_chapter(book: str, chapter_filename: str, dry_run: bool) -> tuple[
     return True, stats
 
 
+def process_book(book: str, dry_run: bool) -> dict:
+    """Process all chapters in a single book. Return aggregate stats."""
+    book_dir = ED_HE_DIR / book
+    if not book_dir.exists():
+        return None  # Signal: book not found
+
+    chapter_files = sorted(book_dir.glob("*.txt"))
+    if not chapter_files:
+        return {}  # Empty book
+
+    book_stats = {"verses": 0, "ed_cola": 0, "clean_merge_cola": 0, "split_cola": 0}
+    for cf in chapter_files:
+        had, stats = propagate_chapter(book, cf.name, dry_run)
+        if not had:
+            continue
+        for k in book_stats:
+            book_stats[k] += stats.get(k, 0)
+        print(
+            f"    {cf.stem}: {stats['verses']} verses, "
+            f"{stats['ed_cola']} cola "
+            f"({stats['clean_merge_cola']} clean / {stats['split_cola']} split)"
+        )
+
+    return book_stats
+
+
 def main() -> None:
     ap = argparse.ArgumentParser(
         description=__doc__,
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
-    ap.add_argument("--book", required=True, help="Book folder, e.g. '05-jonah'")
+    book_group = ap.add_mutually_exclusive_group(required=True)
+    book_group.add_argument("--book", help="Book folder, e.g. '05-jonah'")
+    book_group.add_argument("--all-books", action="store_true", help="Process all books in v2/he/")
     ap.add_argument("--dry-run", action="store_true", help="Do not write files")
     args = ap.parse_args()
 
-    book_dir = ED_HE_DIR / args.book
-    if not book_dir.exists():
-        sys.exit(f"ERROR: editorial Hebrew folder not found: {book_dir}")
+    books_to_process: list[str] = []
 
-    chapter_files = sorted(book_dir.glob("*.txt"))
-    if not chapter_files:
-        sys.exit(f"ERROR: no .txt files under {book_dir}")
-
-    print(f"propagate_editorial_layers.py — book: {args.book}")
-    print(f"Mode: {'dry-run' if args.dry_run else 'apply'}")
-    print(f"Chapters with editorial Hebrew: {len(chapter_files)}\n")
+    if args.all_books:
+        # Discover all book directories in ED_HE_DIR
+        if not ED_HE_DIR.exists():
+            print(f"INFO: editorial Hebrew root not found: {ED_HE_DIR}")
+            print("No books to process.")
+            return
+        book_dirs = sorted([d.name for d in ED_HE_DIR.iterdir() if d.is_dir()])
+        if not book_dirs:
+            print(f"INFO: no book directories found in {ED_HE_DIR}")
+            return
+        books_to_process = book_dirs
+        print(f"propagate_editorial_layers.py — --all-books")
+        print(f"Mode: {'dry-run' if args.dry_run else 'apply'}")
+        print(f"Books to process: {', '.join(books_to_process)}\n")
+    else:
+        books_to_process = [args.book]
+        print(f"propagate_editorial_layers.py — book: {args.book}")
+        print(f"Mode: {'dry-run' if args.dry_run else 'apply'}\n")
 
     total = {"verses": 0, "ed_cola": 0, "clean_merge_cola": 0, "split_cola": 0}
-    for cf in chapter_files:
-        had, stats = propagate_chapter(args.book, cf.name, args.dry_run)
-        if not had:
-            continue
-        for k in total:
-            total[k] += stats.get(k, 0)
-        print(
-            f"  {cf.stem}: {stats['verses']} verses, "
-            f"{stats['ed_cola']} cola "
-            f"({stats['clean_merge_cola']} clean / {stats['split_cola']} split)"
-        )
+    books_processed = 0
+    books_not_found = []
 
-    print()
+    for book in books_to_process:
+        book_stats = process_book(book, args.dry_run)
+
+        if book_stats is None:
+            # Book directory doesn't exist
+            if args.all_books:
+                print(f"  {book}: skipped (no v2/he directory)")
+                books_not_found.append(book)
+            else:
+                # Single-book mode with missing directory
+                print(f"INFO: editorial Hebrew folder not found: {ED_HE_DIR / book}")
+                print("No chapters to process.")
+                return
+            continue
+
+        if not book_stats:
+            # Book directory exists but no chapter files
+            print(f"  {book}: no .txt files")
+            continue
+
+        books_processed += 1
+        for k in total:
+            total[k] += book_stats.get(k, 0)
+        print(f"  {book}: {book_stats['verses']} verses, {book_stats['ed_cola']} cola\n")
+
     print("=" * 60)
+    print(f"Books processed: {books_processed}")
+    if args.all_books and books_not_found:
+        print(f"Books skipped (missing): {', '.join(books_not_found)}")
     print(f"Total: {total['verses']} verses, {total['ed_cola']} editorial cola")
     print(f"  Clean (full v1-line spans):   {total['clean_merge_cola']}")
     print(f"  Split (synth gloss fallback): {total['split_cola']}")
