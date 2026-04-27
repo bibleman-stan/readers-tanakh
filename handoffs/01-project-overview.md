@@ -86,7 +86,7 @@ Multiple free digital editions are vendored into `research/` (gitignored). Vendo
 | **Miqra `al pi ha-Mesorah (MAM)** | Tradition reference (not adopted as base) | Aleppo | CC-BY-SA |
 | **JPS 1917** | English comparator (deferred) | — | Public domain |
 
-The constraint: **`v0/prose/` has exactly one source feeding it at any given time** — because v0 cascades into v1-he-baseline and v4-editorial, and a forked v0 would multiply downstream ambiguity. Which source is primary is a swappable editorial decision, not an architectural lock-in.
+The constraint: **`v0/prose/` has exactly one source feeding it at any given time** — because v0 cascades into v1-he-baseline and v2/he, and a forked v0 would multiply downstream ambiguity. Which source is primary is a swappable editorial decision, not an architectural lock-in.
 
 ### TAHOT as primary (current)
 
@@ -169,3 +169,5 @@ This project is **publicly siloed** — no cross-references in README, CLAUDE.md
 **2026-04-26 update:** v1-teamim directory renamed to v1-he-baseline; path references updated throughout this doc to align with the canon's te'amim-as-evidence framing (no longer te'amim-as-prior).
 
 **2026-04-26 update:** `data/text-files/` restructured into per-tier subfolders (v0/, v1/, v2/, v3/, v4/). Tier-name identity strings (v1-he-baseline, v2-he-syntax, etc.) unchanged; only filesystem layout. Path references in this doc updated to the new layout.
+
+**2026-04-27 update:** Tier collapse — pipeline simplified from 5 tiers (v0/v1/v2-he-syntax/v3-he-colometry/v4-editorial) to 3 tiers (v0/v1/v2). Editorial gold standard now lives at `v2/he/` (was `v4/editorial/`); the parallel per-word layers live at `v2/{eng-interlinear,eng-gloss,translit}/` (was under `v4/`). The intermediate auto-apply tiers are retired; STRONG-tagged validator findings feed the editorial work queue directly. See `03-architecture.md` for the updated pipeline diagram and canon §8 entry 2026-04-27 for full rationale.

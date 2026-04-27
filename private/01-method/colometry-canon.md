@@ -61,7 +61,7 @@ Every rule here cites a Hebrew grammatical fact (anchored in standard reference 
 
 ### Scope
 
-This canon governs where lines break in the v4-editorial source files. It does not govern textual decisions (those follow the textual-posture statement at §0.1; the project does not adjudicate MT against versions), niqqud, te'amim glyph rendering, or layout beyond break positions. Scripts that touch the source text — `scripts/ingest_tahot.py`, `scripts/parse_teamim.py`, `scripts/build_books.py` — implement this canon's mechanical-rule subset; their output (`v0-prose/`, `v1-he-baseline/`, `books/`) is canon-compliant by construction within the limits of mechanical detectability.
+This canon governs where lines break in the v2/he editorial source files. It does not govern textual decisions (those follow the textual-posture statement at §0.1; the project does not adjudicate MT against versions), niqqud, te'amim glyph rendering, or layout beyond break positions. Scripts that touch the source text — `scripts/ingest_tahot.py`, `scripts/parse_teamim.py`, `scripts/build_books.py` — implement this canon's mechanical-rule subset; their output (`v0/prose/`, `v1/he-baseline/`, `books/`) is canon-compliant by construction within the limits of mechanical detectability.
 
 ### §0.1 Textual Posture
 
@@ -310,7 +310,7 @@ But the te'amim are **not a structural prior.** They are evidence.
 **The te'amim's role in this canon:**
 - They are **the most important single piece of evidence** about the Masoretic reading tradition's understanding of structure. They corroborate atomic-thought analysis ~70–80% of the time.
 - They are **the editor's starting draft** in the v1-he-baseline layer of the pipeline (`data/text-files/v1/he-baseline/`), faster than blank-page work.
-- They are NOT authoritative. They cannot license a line break by themselves. Every break that survives to v4-editorial must be defensible as containing an atomic thought, and the te'amim are cited as evidence (confirming, disagreeing, or silent), never as warrant.
+- They are NOT authoritative. They cannot license a line break by themselves. Every break that survives to v2/he must be defensible as containing an atomic thought, and the te'amim are cited as evidence (confirming, disagreeing, or silent), never as warrant.
 - They are subject to the same discipline as any other editorial overlay: NA28 punctuation in the GNT project, Pratt's 1879 versification in the BoFM project, te'amim in the Tanakh project. Editorial overlays may corroborate; they may not justify.
 
 This is the central methodological correction relative to the predecessor stub canon.
@@ -351,10 +351,10 @@ The reasoning is parallel (no pun) to the te'amim demotion: line breaks reveal a
 
 **Operational implications:**
 
-- **In Sifrei Emet** (Pss/Prov/poetic Job): the te'amim's stich-divisions are the editor's starting draft per Rule H8, and they correlate strongly with parallelistic structure (the medieval cantor was reading the parallelism). When v4-editorial diverges from te'amim breaks in poetic books, the divergence is informative but not a defect — same status as in prose.
+- **In Sifrei Emet** (Pss/Prov/poetic Job): the te'amim's stich-divisions are the editor's starting draft per Rule H8, and they correlate strongly with parallelistic structure (the medieval cantor was reading the parallelism). When v2/he diverges from te'amim breaks in poetic books, the divergence is informative but not a defect — same status as in prose.
 - **The project does not display parallelism via line layout.** When parallel members appear on parallel lines in the rendered edition, they appear so because each member is itself an atomic thought (structural justification 1), NOT because we are typesetting parallelism for visual effect. This is the anti-Lowth posture from the sibling BoFM canon (which named it explicitly: "split-dominant repeated-frame layout IS the parallelism-display posture the project's stance opposes") applied to the original Hebrew.
 - **Berlin's multi-dimensional analysis is a useful diagnostic** when atomic-thought analysis is borderline — when phonological + grammatical + lexical parallelism converge on a structure the te'amim missed, that's high-confidence evidence for an override. But Berlin is an evidence-application tool under criterion #1, not a baseline framework.
-- **Dobbs-Allsopp's free-verse framing** aligns with the project's posture: the te'amim are a specific historical reading-tradition's lineation; atomic-thought is the editorial criterion that drives v4. The project does not adopt Dobbs-Allsopp as authority either — but his framing is the most compatible of the four with what the canon actually does.
+- **Dobbs-Allsopp's free-verse framing** aligns with the project's posture: the te'amim are a specific historical reading-tradition's lineation; atomic-thought is the editorial criterion that drives v2/he. The project does not adopt Dobbs-Allsopp as authority either — but his framing is the most compatible of the four with what the canon actually does.
 
 **Why this matters as a load-bearing canon section.** The parallelism question was the question that surfaced the te'amim-prior failure in the first place: when Stan asked which parallelism stance to take for Sifrei Emet, the framing forced the prior-question — what *is* the prior, the te'amim or the atomic thought? The te'amim demotion is the answer. This subsection makes the symmetry explicit so future editorial work in poetic books does not accidentally reintroduce a parallelism-as-prior commitment under a different label. Do not relitigate by proposing Lowth/Kugel/Berlin/Dobbs-Allsopp as competing structural priors; they are competing scholarly accounts of a phenomenon the editor encounters as evidence.
 
@@ -588,7 +588,7 @@ Each rule below follows the template:
 - Chain with intervening modifier on the regens (e.g., *הַבַּיִת הַגָּדוֹל אֲשֶׁר־לַמֶּלֶךְ*) — modifier may license a break, evaluated case-by-case.
 - Long construct chain (3+ levels deep) where the deepest rectum is itself modified by a substantial relative clause — evaluate under structural justification 5 (substantive adjunct).
 
-**Example.** Jonah 2:7 *מִמְּעֵי הַדָּגָה* — construct chain, treat as one unit; do not break between *מִמְּעֵי* and *הַדָּגָה* even though they're not maqqef-joined. Currently widow-line in v1-he-baseline Jonah; v4 should merge upward.
+**Example.** Jonah 2:7 *מִמְּעֵי הַדָּגָה* — construct chain, treat as one unit; do not break between *מִמְּעֵי* and *הַדָּגָה* even though they're not maqqef-joined. Currently widow-line in v1/he-baseline Jonah; v2/he should merge upward.
 
 ### Rule H3 — Vav-Consecutive Clause-Head Policy
 
@@ -596,7 +596,7 @@ Each rule below follows the template:
 
 **Trigger.** *Wayyiqtol* verb at clause head (verbal morphology: וַ + dagesh forte + yiqtol stem).
 
-**Diagnostic.** **Default own line for narrative wayyiqtol clause heads.** Each wayyiqtol typically introduces its own narrative event and its own atomic thought. Even when the te'amim group multiple wayyiqtol clauses under one atnach, each gets its own line in v4-editorial.
+**Diagnostic.** **Default own line for narrative wayyiqtol clause heads.** Each wayyiqtol typically introduces its own narrative event and its own atomic thought. Even when the te'amim group multiple wayyiqtol clauses under one atnach, each gets its own line in v2/he.
 
 **Exceptions:**
 - **Tight narrative pairs** (*וַיָּקָם וַיֵּלֶךְ*, *וַיַּעַן וַיֹּאמֶר*, *וַיָּבֹא וַיֵּשֶׁב*): two wayyiqtol clauses describing tightly-bonded sequential actions in one image (rising-and-going, answering-and-saying, coming-and-sitting) merge under M1 bonded-pair logic. The pair functions as a single narrative beat.
@@ -722,8 +722,8 @@ When Ketiv and Qere differ, the Masoretes preserved both: Ketiv stands in the co
 
 **Application:**
 - The v1-he-baseline (`data/text-files/v1/he-baseline/`) is the editor's starting draft, faster than blank-page work. It is canon-compliant by construction within the limits of mechanical te'amim parsing.
-- v4-editorial (`data/text-files/v4/editorial/`) freely adds, removes, or merges line breaks relative to v1-he-baseline, justified by atomic-thought + structural-justifications + merge-overrides + syntax veto.
-- When v4-editorial breaks coincide with te'amim-induced breaks, the te'amim corroborate. When v4-editorial breaks disagree with te'amim, the disagreement is informative but not a defect — the te'amim are evidence, not authority.
+- v2/he (`data/text-files/v2/he/`) freely adds, removes, or merges line breaks relative to v1/he-baseline, justified by atomic-thought + structural-justifications + merge-overrides + syntax veto.
+- When v2/he breaks coincide with te'amim-induced breaks, the te'amim corroborate. When v2/he breaks disagree with te'amim, the disagreement is informative but not a defect — the te'amim are evidence, not authority.
 - **Cite the te'amim as evidence in defensibility-capture for non-trivial breaks** (per §7.5): "WHY = atomic thought; HOW WE KNOW = te'amim agree (atnach at this position); SCOPE = ..."  When te'amim disagree, document: "WHY = atomic thought + structural justification 5; HOW WE KNOW = te'amim disagree (no disjunctive at this position; tifcha mid-clause); the disagreement is consistent with the te'amim-as-chant-pause-not-sense-unit framing in §1."
 
 **Tier-thresholding (the predecessor stub canon's §2.1 default breaker list)** is **withdrawn as a canon claim.** The te'amim disjunctive hierarchy is real, but it operates as evidence-weighting, not as a break-licensing threshold. The pipeline's `scripts/parse_teamim.py` may still implement a mechanical default (silluq + atnach + segolta + zaqef qaton/gadol as primary breakers; tifcha as servant per Rule H11; lower disjunctives as evidence-only) for the v1-he-baseline draft, but this is a draft-generation heuristic, not a canon commitment.
@@ -771,7 +771,7 @@ INTRODUCING (stack on own line) earns a split ONLY when one of three formal anch
 
 **Trigger.** Tifcha occurring within atnach's domain at short prosodic distance from the atnach (or from silluq when no atnach is present).
 
-**Diagnostic.** Te'amim evidence weight reduced — when tifcha appears in a servant-of-atnach position, treat it as a weak corroborator of any v4-editorial decision rather than as a primary breaking signal. The mechanical default in `scripts/parse_teamim.py` of treating tifcha as a tier-2 default breaker over-fragments single-thought verses (Jonah 1:1 currently produces a 3-line widow split because of tifcha-driven break at *וַיְהִי*); the v4-editorial pass should re-evaluate tifcha-induced breaks against the atomic-thought criterion.
+**Diagnostic.** Te'amim evidence weight reduced — when tifcha appears in a servant-of-atnach position, treat it as a weak corroborator of any v2/he editorial decision rather than as a primary breaking signal. The mechanical default in `scripts/parse_teamim.py` of treating tifcha as a tier-2 default breaker over-fragments single-thought verses (Jonah 1:1 currently produces a 3-line widow split because of tifcha-driven break at *וַיְהִי*); the v2/he editorial pass should re-evaluate tifcha-induced breaks against the atomic-thought criterion.
 
 **WHY:** corrects the predecessor stub canon's §2.1 default-breaker list, which included tifcha as a tier-2 primary breaker without addressing Wickes's well-documented servant-of-atnach analysis.
 
@@ -786,8 +786,8 @@ INTRODUCING (stack on own line) earns a split ONLY when one of three formal anch
 **Trigger.** Petucha (פ marker in TAHOT, or whole-line gap in source manuscripts) or setuma (ס marker, or mid-line gap) in the source apparatus.
 
 **Diagnostic.**
-- **Petucha → blank-line paragraph break** in v4-editorial and rendered as `<div class="paragraph-break-open">` (or equivalent) in the web app.
-- **Setuma → indented paragraph break** in v4-editorial and rendered as a smaller-prominence visual break.
+- **Petucha → blank-line paragraph break** in v2/he and rendered as `<div class="paragraph-break-open">` (or equivalent) in the web app.
+- **Setuma → indented paragraph break** in v2/he and rendered as a smaller-prominence visual break.
 - Section-level navigation in the web app uses petucha/setuma boundaries as primary structural cues; chapter/verse divisions are present for citation but not the primary structural framing.
 
 **Tradition-disagreement protocol.** When Aleppo, Leningrad, MAM, and BHS disagree on petucha/setuma placement (which they do at the ~5–10% level per Yeivin 1980; Tov 2012), the project follows Leningrad per textual posture §0.1. Discrepancies may be documented in marginal note for sibling-tradition awareness but do not affect the primary text.
@@ -1090,6 +1090,18 @@ The predecessor stub canon (231 lines, established 2026-04-25) was scrapped and 
 
 **SCOPE:** filesystem layout + path references in scripts, validators, canon, tracked docs. Tier-name identities unchanged. apply_v2/apply_v3 ADOPTED_VALIDATORS gates and decision-procedure semantics unchanged.
 
+### 2026-04-27 — Tier collapse: 5-tier pipeline → 3-tier pipeline
+
+Pipeline simplified from **v0 → v1 → v2-he-syntax → v3-he-colometry → v4-editorial** (5 tiers) to **v0 → v1 → v2** (3 tiers). The intermediate auto-apply tiers (v2-he-syntax via `apply_v2.py`; v3-he-colometry via `apply_v3.py`) are retired. The editorial gold standard moves from `data/text-files/v4/editorial/` to `data/text-files/v2/he/`; the parallel per-word layers move from `data/text-files/v4/{eng-interlinear,eng-gloss,translit}/` to `data/text-files/v2/{eng-interlinear,eng-gloss,translit}/`. Path references throughout this canon, scripts, validators, hooks, handoffs, and CLAUDE.md updated accordingly.
+
+**WHY:** the auto-apply tiers added pipeline complexity without adding capability. Their function was to auto-apply STRONG-tagged validator findings as a pre-editorial mechanical pass; that work can be done equivalently inside the editorial pass with the same Category A/B/C reasoning the canon already governs (§2 Mechanical-rule authority). `apply_v3.py` was a passthrough (empty `ADOPTED_VALIDATORS` — no Layer 3 validators had cleared the ≥80% adoption gate); `apply_v2.py` had two validators cleared, but their findings (~2 corrections per chapter on Jonah) sit on the editorial work queue without meaningful cost saving. The closed-list rule set (H1, H2, H5, H7, H11, H16) is not the mechanical-error surface that motivated mechanical-tier expansion in sibling projects (where ~10–12% error rates emerged from open-ended pattern-discovery passes); the canon's autonomy boundary already bounds the mechanical surface. Two tiers (baseline + editorial) are sufficient.
+
+**HOW WE KNOW:** the tier collapse was identified in the 2026-04-27 gating-architecture session as a carry-forward (session-notes pt2 carry-forwards: "Tier collapse v0-v4 → v0/v1/v2"), proposed by Claude on grounds of validator-adoption observability (apply_v3 had been a passthrough since inception) and accepted by Stan in principle. Executed as a comprehensive cleanup in the 2026-04-27 tier-collapse-cleanup session, with the file moves landing first (commit `3c6282a`), followed by the script/validator/path updates (commit `7303f28`), then the documentation propagation (this commit).
+
+**SCOPE:** removed scripts (`scripts/apply_v2.py`, `scripts/apply_v3.py`, `scripts/lib/apply_pipeline.py`, `scripts/lib/__init__.py`, empty `scripts/archive/`); removed reports (`data/reports/v2/`); moved Hebrew gold-standard and parallel-layer files from `v4/` to `v2/`; updated build cascade (`scripts/build_books.py`) from 4-tier to 2-tier; updated validator path constants (V4_DIR → V2_DIR; --v4 flag → --v2); updated pre-commit hook regex; updated all canon, handoff, README, and CLAUDE.md prose. Validator suite continues as before; STRONG-tagged findings now feed the editorial work queue directly. Decision-procedure semantics, three forces, four merge-overrides, structural justifications, autonomy boundary — all unchanged.
+
+**Audit dispatched:** stan-authorized comprehensive cleanup per parent-agent amplification (memory `feedback_purge_stale_framing_comprehensively.md` — methodological reframings must propagate through directory names, filenames, identifiers, scripts, comments, and prose). The amplification specified: "all the remnants and loose ends of our clean up should be enforced throughout."
+
 ---
 
 ## §9 Glossary
@@ -1140,7 +1152,3 @@ Hebrew terminology used throughout this canon, in alphabetical order by translit
 ---
 
 *End of canon.*
-
-### Rule H99 — Synthetic Test Rule
-
-This is a synthetic rule line for testing the canon-extension gate.

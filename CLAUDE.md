@@ -99,11 +99,9 @@ Most of these do not exist yet. They are listed so you know the planned layout w
 | `scripts/parse_teamim_poetic.py` | Parses *Sifrei Emet* accent hierarchy for Pss / Prov / Job 3:1–42:6 |
 | `scripts/build_books.py` | Converts text files → HTML fragments |
 | `data/text-files/v0/prose/*/` | Chapter files derived from TAHOT — **NEVER EDIT** |
-| `data/text-files/v1/he-baseline/*/` | Hebrew baseline cola draft — machine-generated starting point for editorial work in v4 |
-| `data/text-files/v2/he-syntax/*/` | Post-Layer-1 syntax pass — auto-applies STRONG Rule H1 / H11 candidates from validators/syntax/ |
-| `data/text-files/v3/he-colometry/*/` | Post-Layer-3 colometry pass — auto-applies STRONG Rule H2/H5/H7/H16 candidates from validators/colometry/ |
-| `data/text-files/v4/editorial/*/` | Hand-edited gold standard — single source of truth |
-| `data/text-files/v4/eng-gloss/*/` | Structural English glosses (planned, deferred behind Hebrew MVP) |
+| `data/text-files/v1/he-baseline/*/` | Hebrew baseline cola draft — machine-generated starting point for editorial work in v2 |
+| `data/text-files/v2/he/*/` | Hand-edited Hebrew gold standard — single source of truth |
+| `data/text-files/v2/eng-gloss/*/` | Structural English glosses (planned, deferred behind Hebrew MVP) |
 | `books/` | Generated HTML fragment files |
 
 ---
@@ -118,10 +116,10 @@ Multiple free Hebrew-text editions are vendored in `research/` (gitignored): STE
 - Alter the Hebrew consonants, niqqud, or te'amim
 - Add or remove words
 - Adopt readings from non-vendored versions (LXX, DSS, Samaritan, Targums, Peshitta, Vulgate) into source files — see textual-posture statement in `private/01-method/colometry-canon.md §0.1`
-- Run te'amim parsers without checking if hand-edited chapters in `v4/editorial/` will be overwritten
+- Run te'amim parsers without checking if hand-edited chapters in `v2/he/` will be overwritten
 
 **ALWAYS:**
-- Work in `v4/editorial/` — the only editorial tool is where lines break
+- Work in `v2/he/` — the only editorial tool is where lines break
 - Present proposed changes for review before finalizing
 - Preserve verse references and Ketiv/Qere markers for alignment with standard editions
 - Use `PYTHONIOENCODING=utf-8` when running Python scripts on Windows (Hebrew Unicode)
@@ -132,7 +130,7 @@ Multiple free Hebrew-text editions are vendored in `research/` (gitignored): STE
 
 The te'amim are the editor's starting draft, not the editor's authority. Operating rules:
 
-1. **The v1-he-baseline layer is the baseline.** Every editorial decision in `v4/editorial/` starts from what the accent hierarchy produces. Departing from it requires a documented reason — which of the three forces (generative, subtractive, diagnostic) is doing the work and why.
+1. **The v1-he-baseline layer is the baseline.** Every editorial decision in `v2/he/` starts from what the accent hierarchy produces. Departing from it requires a documented reason — which of the three forces (generative, subtractive, diagnostic) is doing the work and why.
 
 2. **Three criteria, not four.** The criteria are atomic thought, single image, and Hebrew syntax. Breath is not a criterion — the te'amim are literally the historical record of Masoretic cantorial phrasing; if breath were a valid prior, the te'amim would encode it perfectly by definition. Both sibling projects (empirical retirement, 2026) confirmed zero cases where breath was the sole deciding factor.
 
@@ -144,24 +142,19 @@ This is the project's principal differentiator from prior critical editions and 
 
 ## Tier Discipline
 
-The pipeline is **v0 → v1 → v2 → v3 → v4**. All five tiers are active; v2 and v3 are no longer deferred.
+The pipeline is **v0 → v1 → v2**. The earlier 5-tier scheme (v0/v1/v2-he-syntax/v3-he-colometry/v4-editorial) was collapsed 2026-04-27 — see canon §8 entry for rationale.
 
 | Tier | Directory | Engine | What it does |
 |---|---|---|---|
 | v0 | `data/text-files/v0/prose/` | `scripts/ingest_tahot.py` | Raw text from TAHOT. Never edited. |
 | v1 | `data/text-files/v1/he-baseline/` | `scripts/parse_teamim.py` | Te'amim-as-evidence baseline cola draft. Editor's starting draft, not a normative "version 1." |
-| v2 | `data/text-files/v2/he-syntax/` | `scripts/apply_v2.py` (consumes `validators/syntax/` JSON output) | Layer 1 break-legality pass. Auto-applies STRONG candidates from `validate_maqqef_integrity.py` (Rule H1) and `validate_line_final_tokens.py` (stranded prefixes/proclitics). Output: syntactically-clean Hebrew. |
-| v3 | `data/text-files/v3/he-colometry/` | `scripts/apply_v3.py` (consumes `validators/colometry/` JSON output) | Layer 3 colometry-rule pass. Auto-applies STRONG candidates from `validate_speech_intro_framing.py` (Rules H5, H16) and `validate_construct_chain.py` (Rules H2, H7). Output: rule-clean under codified Layer 3 mechanical rules. |
-| v4 | `data/text-files/v4/editorial/` | Stan + Claude | Editorial pass on REVIEW-REQUIRED items, Category B/C judgment calls, and the three forces on whatever the mechanical layers cannot decide. |
+| v2 | `data/text-files/v2/he/` | Stan + Claude | Hand-edited Hebrew gold standard. Applies the three forces (generative, subtractive, diagnostic) and the four merge-overrides; consumes Layer 1 + Layer 3 validator findings as a work queue. Single source of truth for the build. |
 
-**Why this does not repeat the GNT/BoFM v2/v3 10–12% error trap:** Tanakh v2 and v3 apply only a closed list of mechanical rules (H1, H2, H5, H7, H11, H16). They do not generate breaks from external structural assumptions (syntax trees, rhetorical patterns). Error-rate exposure is bounded by the closed rule set, not by open-ended pattern discovery.
+Parallel per-word layers under `v2/` (`v2/eng-interlinear/`, `v2/eng-gloss/`, `v2/translit/`) are produced by `scripts/propagate_editorial_layers.py` from the v2/he Hebrew structure plus the v1 per-word streams. The build cascade (`scripts/build_books.py`) picks v2 if present per chapter, otherwise falls through to v1.
 
-**Three risk mitigations** governing apply_v2 and apply_v3:
-1. Only STRONG-tagged candidates are applied automatically; REVIEW-REQUIRED items stay on the v4 work queue.
-2. ≥80% adoption gate per validator before its STRONG output is wired into an apply script (canon §7 proposed-rule adoption protocol).
-3. Tier-diff audit gate — every apply run produces a unified diff against the previous tier; sweep-scale ≥5 instances triggers a canon §7 mandatory audit.
+**Why the collapse:** the old v2-he-syntax (auto-apply Layer 1 STRONG candidates) and v3-he-colometry (auto-apply Layer 3 STRONG candidates) tiers added complexity without adding capability — STRONG findings now feed the editorial work queue directly, where the editor applies them with the same reasoning Categories A/B/C the canon already governs (§2 Mechanical-rule authority). The closed-list rule set (H1, H2, H5, H7, H11, H16) was not the failure surface that mechanical-tier expansion in sibling projects had been; the tiers' autonomy boundary was already established at the canon level. Two tiers (baseline + editorial) are sufficient.
 
-Operational governance lives in the canon's §6 (validator suite) and §7 (adoption protocol). The apply scripts (`apply_v2.py`, `apply_v3.py`) are a separate implementation track; the tier nomenclature and architectural commitment are established here.
+**Validator findings are the work queue, not a separate tier.** `validators/run_all.py` produces the dashboard; STRONG-tagged findings on v1 → v2 transitions are Category A (apply confidently per §2); REVIEW-REQUIRED items go to per-item editorial judgment. The `≥80%` adoption gate (canon §7) governs when a validator's STRONG findings are trusted as Category A. The previous "tier-diff audit gate" is replaced by commit-time discipline (the pre-commit and commit-msg gates documented below).
 
 ---
 
@@ -181,9 +174,9 @@ Mirrors the `bibleman-stan/readers-bofm` sibling architecture (codified there 20
 
 | Component | What it does |
 |---|---|
-| `validators/run_all.py` | Dashboard. Discovers all `validate_*.py`, runs each with `--json --v4`, aggregates per-validator finding counts. Modes: default (report-only), `--baseline-check` (regression gate against `validators/.baseline.json`), `--update-baseline` (capture current state). |
+| `validators/run_all.py` | Dashboard. Discovers all `validate_*.py`, runs each with `--json --v2`, aggregates per-validator finding counts. Modes: default (report-only), `--baseline-check` (regression gate against `validators/.baseline.json`), `--update-baseline` (capture current state). |
 | `validators/.baseline.json` | Per-validator finding counts captured at the moment of last `--update-baseline`. The reference state for regression detection. |
-| `.git/hooks/pre-commit` (← `validators/hooks/pre-commit`) | Fires when staged files match `data/text-files/v4/editorial/`, `private/01-method/colometry-canon.md`, `data/syntax-reference/`, or `validators/`. Runs `run_all.py --baseline-check`; blocks on regression (finding count INCREASED vs baseline). |
+| `.git/hooks/pre-commit` (← `validators/hooks/pre-commit`) | Fires when staged files match `data/text-files/v2/he/`, `private/01-method/colometry-canon.md`, `data/syntax-reference/`, or `validators/`. Runs `run_all.py --baseline-check`; blocks on regression (finding count INCREASED vs baseline). |
 | `.git/hooks/commit-msg` (← `validators/hooks/commit-msg`) | Runs `validators/check_canon_extensions.py` on the proposed commit message. Detects canon extensions (new `Rule HN`, new `MN.` merge-override, new dated principle, closed-list table row, new §7 trigger, new SCOPE-exclusion bullet). Requires audit-evidence keyword (`audit`, `§7`, `post-codification`, etc.) OR skip-safe claim (`typo`, `formatting`, `audit-skippable`). Closes the smuggling-during-unrelated-commit failure mode. |
 
 **Override (Stan-only, explicit decision):** `git commit --no-verify`
@@ -204,7 +197,7 @@ PYTHONIOENCODING=utf-8 py -3 validators/run_all.py --baseline-check  # gate (wha
 PYTHONIOENCODING=utf-8 py -3 validators/run_all.py --update-baseline # capture new baseline after intentional changes
 ```
 
-**Why this matters:** the apply pipeline (`apply_v2.py`, `apply_v3.py`) describes how individual validators feed individual tier-transitions; the gating architecture describes how the whole validator suite is **enforced** at commit time. Without the gates, validators are on-demand reports nobody runs. With the gates, regressions block automatically.
+**Why this matters:** validators are on-demand reports nobody runs unless gated. With the gates, regressions block automatically — `run_all.py --baseline-check` runs in pre-commit when canon / corpus / validator files are staged, and `check_canon_extensions.py` runs in commit-msg when canon-extension patterns are detected, requiring audit-evidence keywords.
 
 ---
 
