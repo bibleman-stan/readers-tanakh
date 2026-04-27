@@ -38,6 +38,7 @@ Usage:
 """
 
 import argparse
+import json
 import re
 import sys
 from pathlib import Path
@@ -111,15 +112,64 @@ def check_stranded_conjunction(line: str):
 # just one of these consonants (plus optional points), it is a stranded prefix.
 PREP_PREFIX_RE = re.compile(r"^[מבכל]$")  # מ ב כ ל
 
+# Compound prepositions (multi-character orthographic words) that must govern
+# an object on the SAME line — if they appear as the last token on a line their
+# object is stranded on the next line.  Consonant skeletons after point-stripping.
+COMPOUND_PREP_SKELETONS = {
+    "מלפני",    # מִלִּפְנֵי — from before (מן + לפני)
+    "מפני",     # מִפְּנֵי  — from before / because of
+    "לפני",     # לִפְנֵי  — before / in front of
+    "אחרי",     # אַחֲרֵי  — after / behind
+    "מאחרי",    # מֵאַחֲרֵי — from behind
+    "אצל",      # אֵצֶל   — beside / next to
+    "בתוך",     # בְּתוֹךְ — in the midst of / within
+    "מתוך",     # מִתּוֹךְ — from the midst of
+    "בקרב",     # בְּקֶרֶב — in the midst of
+    "בעבר",     # בְּעֵבֶר — across / beyond
+    "מעל",      # מֵעַל   — from upon / above
+    "מתחת",     # מִתַּחַת — from under / beneath
+    "סביב",     # סָבִיב  — around / surrounding
+    "נגד",      # נֶגֶד   — before / opposite
+    "מנגד",     # מִנֶּגֶד — from opposite / in front of
+    "בלתי",     # בִּלְתִּי — without / except
+    "תחת",      # תַּחַת  — under / instead of
+    "עד",       # עַד     — until / as far as (common preposition governing next noun)
+    "על",       # עַל    — upon / over (standalone prep token)
+    "אל",       # אֶל    — to / toward (standalone prep token)
+    "בין",      # בֵּין  — between
+    "מבין",     # מִבֵּין — from between
+}
+
 
 def check_stranded_prep_prefix(line: str):
-    """Prep prefix מ/ב/כ/ל stranded from object at line end (break-legality row 3)."""
+    """Prep prefix מ/ב/כ/ל stranded from object at line end (break-legality row 3).
+
+    Also catches compound (multi-character) prepositions stranded from their object
+    at line end — e.g. מִלִּפְנֵי / לִפְנֵי / מֵעַל etc. (Bug 4 fix).
+    """
     token = _last_token(line)
     if token is None:
         return None
     bare = strip_points(token)
     if PREP_PREFIX_RE.match(bare):
         return ("L1/prep-prefix", f"stranded prepositional prefix at line end: {token!r}")
+    if bare in COMPOUND_PREP_SKELETONS:
+        # False-positive guard 1: if the token ends with sof pasuq (׃) the
+        # preposition is verse-final and self-contained (e.g. לְפָנַי׃ — "before
+        # me" with pronominal suffix as object).  Not stranded.
+        if "׃" in token:
+            return None
+        # False-positive guard 2: if the stripped skeleton is LONGER than the
+        # base skeleton entry, the extra consonants are a pronominal suffix
+        # (יוֹ, כָה, נוּ, etc.) — the object is the suffix, not the next line.
+        # We detect this by checking known suffixed expansions: if bare == key
+        # exactly, it's bare construct form (potentially stranded).  If bare
+        # starts with the key but has extra consonants appended, it has a suffix.
+        # Since the set stores exact skeletons, `bare in COMPOUND_PREP_SKELETONS`
+        # means an EXACT match — already bare construct.  So sof-pasuq guard
+        # above is the primary control; suffix guard is belt-and-suspenders:
+        # mark stranded only if next line exists (caller handles this).
+        return ("L1/compound-prep", f"stranded compound preposition at line end: {token!r}")
     return None
 
 
@@ -206,6 +256,21 @@ CHECKS = [
     check_stranded_negation,
 ]
 
+# ---------------------------------------------------------------------------
+# Rule metadata for JSON output
+# Maps rule_tag → (rule_id, rule_short)
+# All Layer 1 findings are STRONG-MERGE-CANDIDATE / merge_with_next per spec.
+# ---------------------------------------------------------------------------
+RULE_META: dict[str, tuple[str, str]] = {
+    "H1/maqqef":         ("L1.1", "line-final maqqef — maqqef-group split"),
+    "L1/conjunction":    ("L1.2", "stranded conjunction prefix"),
+    "L1/prep-prefix":    ("L1.3", "stranded prepositional prefix"),
+    "L1/compound-prep":  ("L1.3b", "stranded compound preposition"),
+    "L1/article":        ("L1.4", "stranded definite article"),
+    "L1/dot-marker":     ("L1.5", "stranded direct-object marker"),
+    "L1/negation":       ("L1.6", "stranded negation particle"),
+}
+
 
 def scan_file(path: Path) -> list[dict]:
     """Scan one text file for Layer 1 line-final token violations."""
@@ -219,8 +284,9 @@ def scan_file(path: Path) -> list[dict]:
         if is_skippable(line):
             continue
         # Peek at next line to detect cross-line continuation context
-        next_line = lines[i] if i < len(lines) else ""  # i is already 1-based; lines is 0-based
-        # next line index in 0-based list is i (because enumerate starts at 1 so i-1 is current)
+        # i is already 1-based; lines is 0-based, so lines[i] is the next line
+        next_line = lines[i] if i < len(lines) else ""
+        next_line_num = i + 1 if i < len(lines) else None
         for check_fn in CHECKS:
             result = check_fn(line)
             if result:
@@ -228,10 +294,13 @@ def scan_file(path: Path) -> list[dict]:
                 violations.append(
                     {
                         "file": path.name,
+                        "file_path": path,
                         "line_num": i,
                         "rule": rule_tag,
                         "brief": brief,
                         "line": line.rstrip(),
+                        "next_line_num": next_line_num,
+                        "next_line": next_line.rstrip(),
                     }
                 )
     return violations
@@ -256,6 +325,11 @@ def main():
         "--v4",
         action="store_true",
         help="Scan v4-editorial files instead of v1-he-baseline.",
+    )
+    parser.add_argument(
+        "--json",
+        action="store_true",
+        help="Emit findings as a single JSON document to STDOUT instead of human-readable lines.",
     )
     args = parser.parse_args()
 
@@ -288,10 +362,55 @@ def main():
     for path in files:
         all_violations.extend(scan_file(path))
 
-    # Report
+    exit_code = 1 if all_violations else 0
+
+    # --- JSON output mode ---
+    if args.json:
+        findings = []
+        for v in all_violations:
+            rule_tag = v["rule"]
+            rule_id, rule_short = RULE_META.get(rule_tag, (rule_tag, rule_tag))
+            findings.append({
+                "file": str(v["file_path"].relative_to(REPO_ROOT)).replace("\\", "/"),
+                "line": v["line_num"],
+                "severity": "MALFORMED",
+                "tag": "STRONG-MERGE-CANDIDATE",
+                "rule_id": rule_id,
+                "rule_short": rule_short,
+                "brief": v["brief"],
+                "next_line": v.get("next_line_num"),
+                "applied_action": "merge_with_next",
+            })
+
+        by_severity: dict[str, int] = {}
+        by_tag: dict[str, int] = {}
+        for f in findings:
+            by_severity[f["severity"]] = by_severity.get(f["severity"], 0) + 1
+            by_tag[f["tag"]] = by_tag.get(f["tag"], 0) + 1
+
+        doc = {
+            "validator": "validate_line_final_tokens",
+            "rule": "Layer 1 break-legality",
+            "layer": 1,
+            "book": args.book or "all",
+            "files_scanned": [
+                str(p.relative_to(REPO_ROOT)).replace("\\", "/") for p in files
+            ],
+            "findings": findings,
+            "summary": {
+                "total_findings": len(findings),
+                "by_severity": by_severity,
+                "by_tag": by_tag,
+                "exit_code": exit_code,
+            },
+        }
+        print(json.dumps(doc, ensure_ascii=False, indent=2))
+        sys.exit(exit_code)
+
+    # --- Human-readable output (default) ---
     print("=" * 72)
     print(f"Layer 1 line-final token validator — Tanakh {tier_label} corpus")
-    print("Covers: maqqef, conjunction-prefix, prep-prefix, article, obj-marker, negation")
+    print("Covers: maqqef, conjunction-prefix, prep-prefix, compound-prep, article, obj-marker, negation")
     print("=" * 72)
     print(f"Files scanned : {len(files)}")
     print(f"Violations    : {len(all_violations)}")
@@ -305,7 +424,7 @@ def main():
     else:
         print("No violations found. Layer 1 line-final token rules are clean.")
 
-    sys.exit(1 if all_violations else 0)
+    sys.exit(exit_code)
 
 
 if __name__ == "__main__":

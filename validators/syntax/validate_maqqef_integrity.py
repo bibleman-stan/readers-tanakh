@@ -28,6 +28,7 @@ Usage:
 """
 
 import argparse
+import json
 import re
 import sys
 from pathlib import Path
@@ -100,15 +101,18 @@ def scan_file(path: Path) -> list[dict]:
             continue
 
         if line_ends_with_maqqef(line):
-            # Show next line for context
-            next_line = lines[i] if i < len(lines) else ""  # i is 1-based; lines 0-based
+            # i is 1-based; lines is 0-based, so lines[i] is the next line
+            next_line = lines[i] if i < len(lines) else ""
+            next_line_num = i + 1 if i < len(lines) else None
             violations.append(
                 {
                     "file": path.name,
+                    "file_path": path,
                     "line_num": i,
                     "rule": "H1/maqqef",
                     "brief": "line-final maqqef ־ — maqqef-group split across lines",
                     "line": line.rstrip(),
+                    "next_line_num": next_line_num,
                     "next_line": next_line.rstrip(),
                 }
             )
@@ -141,6 +145,11 @@ def main():
         action="store_true",
         help="Show next-line context for each violation.",
     )
+    parser.add_argument(
+        "--json",
+        action="store_true",
+        help="Emit findings as a single JSON document to STDOUT instead of human-readable lines.",
+    )
     args = parser.parse_args()
 
     base_dir = V4_DIR if args.v4 else V1_DIR
@@ -172,7 +181,50 @@ def main():
     for path in files:
         all_violations.extend(scan_file(path))
 
-    # Report
+    exit_code = 1 if all_violations else 0
+
+    # --- JSON output mode ---
+    if args.json:
+        findings = []
+        for v in all_violations:
+            findings.append({
+                "file": str(v["file_path"].relative_to(REPO_ROOT)).replace("\\", "/"),
+                "line": v["line_num"],
+                "severity": "MALFORMED",
+                "tag": "STRONG-MERGE-CANDIDATE",
+                "rule_id": "H1.1",
+                "rule_short": "maqqef-group split across lines",
+                "brief": v["brief"],
+                "next_line": v.get("next_line_num"),
+                "applied_action": "merge_with_next",
+            })
+
+        by_severity: dict[str, int] = {}
+        by_tag: dict[str, int] = {}
+        for f in findings:
+            by_severity[f["severity"]] = by_severity.get(f["severity"], 0) + 1
+            by_tag[f["tag"]] = by_tag.get(f["tag"], 0) + 1
+
+        doc = {
+            "validator": "validate_maqqef_integrity",
+            "rule": "Rule H1 — Maqqef-Group Indivisibility",
+            "layer": 1,
+            "book": args.book or "all",
+            "files_scanned": [
+                str(p.relative_to(REPO_ROOT)).replace("\\", "/") for p in files
+            ],
+            "findings": findings,
+            "summary": {
+                "total_findings": len(findings),
+                "by_severity": by_severity,
+                "by_tag": by_tag,
+                "exit_code": exit_code,
+            },
+        }
+        print(json.dumps(doc, ensure_ascii=False, indent=2))
+        sys.exit(exit_code)
+
+    # --- Human-readable output (default) ---
     print("=" * 72)
     print(f"Rule H1 Maqqef-Group Integrity validator — Tanakh {tier_label}")
     print(f"Reference: canon §5 H1 + hebrew-break-legality.md (REQUIRED-MERGE)")
@@ -191,7 +243,7 @@ def main():
     else:
         print("No violations found. Rule H1 maqqef-group integrity is clean.")
 
-    sys.exit(1 if all_violations else 0)
+    sys.exit(exit_code)
 
 
 if __name__ == "__main__":

@@ -25,9 +25,35 @@ Output: `data/text-files/v1-he-baseline/{NN-book}/{abbr}-{NN}.txt` — a plain-t
 
 `v1-he-baseline/` is machine-deterministic. Re-running the parser on identical v0 input must produce identical v1 output.
 
-## Stage 3 — Editorial pass (the human work)
+## Stage 3 — Apply v2-he-syntax (Layer 1 syntax pass)
 
-Open the v1-he-baseline file and the v0-prose file side-by-side. For each chapter, produce `data/text-files/v4-editorial/{NN-book}/{abbr}-{NN}.txt`.
+Run `scripts/apply_v2.py` on the chapter's v1-he-baseline file. The script consumes the JSON output produced by the validators in `validators/syntax/` and applies only STRONG-tagged candidates:
+
+- `validate_maqqef_integrity.py` — Rule H1 (maqqef-joined words must not be split across lines)
+- `validate_line_final_tokens.py` — stranded prefixes and proclitics (preposition, conjunction, definite article left line-final without their host)
+
+REVIEW-REQUIRED candidates are not applied; they are written to a review list for the v4 editorial pass.
+
+Output: `data/text-files/v2-he-syntax/{NN-book}/{abbr}-{NN}.txt` — the v1-he-baseline with Layer 1 mechanical fixes auto-applied.
+
+`apply_v2.py` always produces a unified diff against v1-he-baseline. A sweep-scale of ≥5 instances of any single fix type triggers a canon §7 mandatory audit before the run is committed.
+
+## Stage 4 — Apply v3-he-colometry (Layer 3 colometry pass)
+
+Run `scripts/apply_v3.py` on the chapter's v2-he-syntax file. The script consumes the JSON output produced by the validators in `validators/colometry/` and applies only STRONG-tagged candidates:
+
+- `validate_speech_intro_framing.py` — Rules H5 (speech-introduction framing), H16 (closing formula framing)
+- `validate_construct_chain.py` — Rule H2 (construct chains kept together) with Rule H7 (complement integrity) as guard
+
+REVIEW-REQUIRED candidates are not applied; they are written to a review list for the v4 editorial pass.
+
+Output: `data/text-files/v3-he-colometry/{NN-book}/{abbr}-{NN}.txt` — the v2-he-syntax with Layer 3 mechanical fixes auto-applied.
+
+`apply_v3.py` always produces a unified diff against v2-he-syntax. The same ≥5-instance audit gate applies.
+
+## Stage 5 — Editorial pass (the human work)
+
+Open the v3-he-colometry file and the v0-prose file side-by-side. For each chapter, produce `data/text-files/v4-editorial/{NN-book}/{abbr}-{NN}.txt`.
 
 **Editorial moves allowed:**
 
@@ -43,7 +69,7 @@ Open the v1-he-baseline file and the v0-prose file side-by-side. For each chapte
 
 Every editorial decision should be defensible against the canon. When the canon has no clear rule for a decision, that's a signal to either (a) note it for canon revision, or (b) flag it for Stan review.
 
-## Stage 4 — Build
+## Stage 6 — Build
 
 Run `scripts/build_books.py` to regenerate `books/{book}.html` from `v4-editorial/`. Once English glosses exist, the cascade rule applies: any Hebrew edit triggers English regeneration, then HTML rebuild.
 
@@ -51,7 +77,7 @@ Run `scripts/build_books.py` to regenerate `books/{book}.html` from `v4-editoria
 PYTHONIOENCODING=utf-8 py -3 scripts/build_books.py --book jonah
 ```
 
-## Stage 5 — Validate
+## Stage 7 — Validate
 
 Run validators in `validators/`:
 
@@ -104,3 +130,5 @@ Divergence rate from v1-he-baseline is a key diagnostic metric. A v4-editorial t
 ---
 
 **2026-04-26 update:** v1-teamim directory renamed to v1-he-baseline; path references updated throughout this doc to align with the canon's te'amim-as-evidence framing (no longer te'amim-as-prior).
+
+**2026-04-26 update:** Four-tier pipeline adopted. Stages 3 and 4 (v2-he-syntax and v3-he-colometry mechanical passes) inserted between the v1 parse stage and the v4 editorial pass. Old Stages 3–5 renumbered to 5–7. v2 applies STRONG Layer 1 syntax candidates (Rules H1, H11 stranded-token); v3 applies STRONG Layer 3 colometry candidates (Rules H2, H5, H7, H16). REVIEW-REQUIRED items from both layers feed the v4 editorial work queue. The editorial pass now opens v3-he-colometry (not v1-he-baseline) as its starting draft.

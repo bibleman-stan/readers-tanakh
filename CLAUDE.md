@@ -100,6 +100,8 @@ Most of these do not exist yet. They are listed so you know the planned layout w
 | `scripts/build_books.py` | Converts text files → HTML fragments |
 | `data/text-files/v0-prose/*/` | Chapter files derived from TAHOT — **NEVER EDIT** |
 | `data/text-files/v1-he-baseline/*/` | Hebrew baseline cola draft — machine-generated starting point for editorial work in v4 |
+| `data/text-files/v2-he-syntax/*/` | Post-Layer-1 syntax pass — auto-applies STRONG Rule H1 / H11 candidates from validators/syntax/ |
+| `data/text-files/v3-he-colometry/*/` | Post-Layer-3 colometry pass — auto-applies STRONG Rule H2/H5/H7/H16 candidates from validators/colometry/ |
 | `data/text-files/v4-editorial/*/` | Hand-edited gold standard — single source of truth |
 | `data/text-files/eng-gloss/*/` | Structural English glosses (planned, deferred behind Hebrew MVP) |
 | `books/` | Generated HTML fragment files |
@@ -142,9 +144,24 @@ This is the project's principal differentiator from prior critical editions and 
 
 ## Tier Discipline
 
-Start with **v0 → v1-he-baseline → v4-editorial** only. Defer v2 (BHSA syntax-tree refinements) and v3 (rhetorical/parallelism patterns) until they earn their existence.
+The pipeline is **v0 → v1 → v2 → v3 → v4**. All five tiers are active; v2 and v3 are no longer deferred.
 
-The GNT project (sibling Greek edition; not referenced publicly) iterated through five tiers and discovered that v2 and v3 mechanical layers introduced 10–12% error rates that v4 had to fix. The Tanakh project starts lean and adds tiers only when they demonstrably improve v4 input quality.
+| Tier | Directory | Engine | What it does |
+|---|---|---|---|
+| v0 | `data/text-files/v0-prose/` | `scripts/ingest_tahot.py` | Raw text from TAHOT. Never edited. |
+| v1 | `data/text-files/v1-he-baseline/` | `scripts/parse_teamim.py` | Te'amim-as-evidence baseline cola draft. Editor's starting draft, not a normative "version 1." |
+| v2 | `data/text-files/v2-he-syntax/` | `scripts/apply_v2.py` (consumes `validators/syntax/` JSON output) | Layer 1 break-legality pass. Auto-applies STRONG candidates from `validate_maqqef_integrity.py` (Rule H1) and `validate_line_final_tokens.py` (stranded prefixes/proclitics). Output: syntactically-clean Hebrew. |
+| v3 | `data/text-files/v3-he-colometry/` | `scripts/apply_v3.py` (consumes `validators/colometry/` JSON output) | Layer 3 colometry-rule pass. Auto-applies STRONG candidates from `validate_speech_intro_framing.py` (Rules H5, H16) and `validate_construct_chain.py` (Rules H2, H7). Output: rule-clean under codified Layer 3 mechanical rules. |
+| v4 | `data/text-files/v4-editorial/` | Stan + Claude | Editorial pass on REVIEW-REQUIRED items, Category B/C judgment calls, and the three forces on whatever the mechanical layers cannot decide. |
+
+**Why this does not repeat the GNT/BoFM v2/v3 10–12% error trap:** Tanakh v2 and v3 apply only a closed list of mechanical rules (H1, H2, H5, H7, H11, H16). They do not generate breaks from external structural assumptions (syntax trees, rhetorical patterns). Error-rate exposure is bounded by the closed rule set, not by open-ended pattern discovery.
+
+**Three risk mitigations** governing apply_v2 and apply_v3:
+1. Only STRONG-tagged candidates are applied automatically; REVIEW-REQUIRED items stay on the v4 work queue.
+2. ≥80% adoption gate per validator before its STRONG output is wired into an apply script (canon §7 proposed-rule adoption protocol).
+3. Tier-diff audit gate — every apply run produces a unified diff against the previous tier; sweep-scale ≥5 instances triggers a canon §7 mandatory audit.
+
+Operational governance lives in the canon's §6 (validator suite) and §7 (adoption protocol). The apply scripts (`apply_v2.py`, `apply_v3.py`) are a separate implementation track; the tier nomenclature and architectural commitment are established here.
 
 ---
 

@@ -53,3 +53,5 @@ Decisions locked in this session:
 ---
 
 **2026-04-26 update:** v1-teamim directory renamed to v1-he-baseline; path references updated throughout this doc to align with the canon's te'amim-as-evidence framing (no longer te'amim-as-prior).
+
+**2026-04-26 update:** The 2026-04-25 decision to "defer v2/v3 until proven necessary" (line above) is superseded. The four-tier pipeline (v0 → v1 → v2 → v3 → v4) is now active. v2 (Layer 1 syntax pass) and v3 (Layer 3 colometry pass) apply only the closed list of mechanical rules via apply_v2.py and apply_v3.py, with STRONG-only auto-application and the ≥80% adoption gate and tier-diff audit gate as risk mitigations. See `03-architecture.md` and `04-editorial-workflow.md` for full documentation.

@@ -53,6 +53,7 @@ Usage:
 """
 
 import argparse
+import json
 import re
 import sys
 from pathlib import Path
@@ -184,14 +185,53 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
             # Tokens after לֵאמֹר on the SAME line (speech content co-located)
             speech_tokens_same_line = tokens[leemor_pos + 1:]
 
+            # --- EXCEPTION: standalone לֵאמֹר line (Bug 1 fix) ---
+            # Canon §1 SJ3 explicitly states: "לֵאמֹר alone — the bare
+            # infinitive complementizer is a speech-act-announcement marker,
+            # gets its own line at the point of speech-onset."
+            # If the ONLY non-sof-pasuq token on the line IS לֵאמֹר itself,
+            # this is the correct standalone rendering — do NOT flag.
+            non_leemor_bare = [
+                b for b in bare_tokens
+                if b != LEEMOR_SKELETON and b != "׃" and b != ""
+            ]
+            if len(non_leemor_bare) == 0:
+                # Pure standalone לֵאמֹר line — canonical, not a violation.
+                continue
+
             # Count prosodic words in frame (excluding לֵאמֹר itself)
             prosodic_count = count_prosodic_words(frame_tokens)
 
+            # --- CROSS-LINE BACK-SCAN for multi-line speech frames (Bug 2 fix) ---
+            # When frame_tokens is empty or very short (לֵאמֹר is the first or
+            # near-first token on the line), the full speech-intro frame may have
+            # started on a prior line.  Back-scan up prior non-empty lines
+            # (stopping at a verse-reference, blank line, or sof pasuq) to
+            # accumulate additional frame tokens.
+            if prosodic_count < 4:
+                extra_tokens: list[str] = []
+                for k in range(i - 1, -1, -1):
+                    prev = lines[k]
+                    if is_skippable(prev):
+                        break  # blank / verse-ref line — frame doesn't continue
+                    prev_bare = [strip_points(t) for t in prev.split()]
+                    # Stop if prior line contains לֵאמֹר (nested or repeated)
+                    if LEEMOR_SKELETON in prev_bare:
+                        break
+                    # Stop if prior line ends with sof pasuq (previous verse)
+                    if prev.rstrip().endswith("׃"):
+                        break
+                    extra_tokens = list(prev.split()) + extra_tokens
+                if extra_tokens:
+                    prosodic_count += count_prosodic_words(extra_tokens)
+
             # Next non-empty line (to check if speech content follows on next line)
             next_content = ""
+            next_content_line_num = None
             for j in range(i + 1, len(lines)):
                 if not is_skippable(lines[j]):
                     next_content = lines[j].strip()
+                    next_content_line_num = j + 1  # 1-based
                     break
 
             has_speech_on_same_line = bool(speech_tokens_same_line)
@@ -204,6 +244,7 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
                     # Frame is isolated — speech is on next line. Violation.
                     violations.append({
                         "file": path.name,
+                        "file_path": path,
                         "line_num": line_no,
                         "rule": "H5/speech-framing",
                         "severity": "STRONG-MERGE-CANDIDATE",
@@ -213,6 +254,8 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
                         ),
                         "line": line.rstrip(),
                         "next_line": next_content,
+                        "next_line_num": next_content_line_num,
+                        "leemor_pos": leemor_pos,
                     })
 
             elif prosodic_count == 3:
@@ -220,6 +263,7 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
                 # Judgment territory — flag REVIEW-REQUIRED.
                 violations.append({
                     "file": path.name,
+                    "file_path": path,
                     "line_num": line_no,
                     "rule": "H5/speech-framing",
                     "severity": "REVIEW-REQUIRED",
@@ -229,6 +273,8 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
                     ),
                     "line": line.rstrip(),
                     "next_line": next_content,
+                    "next_line_num": next_content_line_num,
+                    "leemor_pos": leemor_pos,
                 })
 
             else:
@@ -238,6 +284,7 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
                     # Frame and speech-opening are on the same line. Violation.
                     violations.append({
                         "file": path.name,
+                        "file_path": path,
                         "line_num": line_no,
                         "rule": "H5/speech-framing",
                         "severity": "STRONG-SPLIT-CANDIDATE",
@@ -247,6 +294,8 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
                         ),
                         "line": line.rstrip(),
                         "next_line": "",
+                        "next_line_num": None,
+                        "leemor_pos": leemor_pos,
                     })
 
         # --- Secondary check: bare speech verb at line end (no לֵאמֹר) ---
@@ -255,13 +304,16 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
         # Low confidence — REVIEW-REQUIRED only.
         elif bare_tokens and bare_tokens[-1] in BARE_SPEECH_VERB_SKELETONS:
             next_content = ""
+            next_content_line_num = None
             for j in range(i + 1, len(lines)):
                 if not is_skippable(lines[j]):
                     next_content = lines[j].strip()
+                    next_content_line_num = j + 1  # 1-based
                     break
             if next_content:
                 violations.append({
                     "file": path.name,
+                    "file_path": path,
                     "line_num": line_no,
                     "rule": "H5/speech-framing",
                     "severity": "REVIEW-REQUIRED",
@@ -271,6 +323,8 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
                     ),
                     "line": line.rstrip(),
                     "next_line": next_content,
+                    "next_line_num": next_content_line_num,
+                    "leemor_pos": None,
                 })
 
     return violations
@@ -300,6 +354,11 @@ def main():
         "--verbose", "-v",
         action="store_true",
         help="Show next-line context for each violation.",
+    )
+    parser.add_argument(
+        "--json",
+        action="store_true",
+        help="Emit findings as a single JSON document to STDOUT instead of human-readable lines.",
     )
     args = parser.parse_args()
 
@@ -331,7 +390,65 @@ def main():
     for path in files:
         all_violations.extend(scan_file(path, verbose=args.verbose))
 
-    # Report
+    exit_code = 1 if all_violations else 0
+
+    # --- JSON output mode ---
+    if args.json:
+        findings = []
+        for v in all_violations:
+            severity = v["severity"]
+            # Determine applied_action from severity and לֵאמֹר position
+            leemor_pos = v.get("leemor_pos")
+            if severity == "STRONG-MERGE-CANDIDATE":
+                applied_action = "merge_with_next"
+            elif severity == "STRONG-SPLIT-CANDIDATE":
+                # split_at_position_N where N is the token index of לֵאמֹר
+                applied_action = (
+                    f"split_at_position_{leemor_pos}"
+                    if leemor_pos is not None
+                    else "split_at_position_unknown"
+                )
+            else:  # REVIEW-REQUIRED
+                applied_action = None
+
+            findings.append({
+                "file": str(v["file_path"].relative_to(REPO_ROOT)).replace("\\", "/"),
+                "line": v["line_num"],
+                "severity": "DEVIATION",
+                "tag": severity,
+                "rule_id": "H5.1",
+                "rule_short": "direct-speech framing boundary",
+                "brief": v["brief"],
+                "next_line": v.get("next_line_num"),
+                "applied_action": applied_action,
+            })
+
+        by_severity_json: dict[str, int] = {}
+        by_tag: dict[str, int] = {}
+        for f in findings:
+            by_severity_json[f["severity"]] = by_severity_json.get(f["severity"], 0) + 1
+            by_tag[f["tag"]] = by_tag.get(f["tag"], 0) + 1
+
+        doc = {
+            "validator": "validate_speech_intro_framing",
+            "rule": "Rule H5 — Direct-Speech Framing Default",
+            "layer": 3,
+            "book": args.book or "all",
+            "files_scanned": [
+                str(p.relative_to(REPO_ROOT)).replace("\\", "/") for p in files
+            ],
+            "findings": findings,
+            "summary": {
+                "total_findings": len(findings),
+                "by_severity": by_severity_json,
+                "by_tag": by_tag,
+                "exit_code": exit_code,
+            },
+        }
+        print(json.dumps(doc, ensure_ascii=False, indent=2))
+        sys.exit(exit_code)
+
+    # --- Human-readable output (default) ---
     print("=" * 72)
     print(f"Rule H5 Direct-Speech Framing validator — Tanakh {tier_label}")
     print(f"Reference: canon §5 H5 (short ≤3 prosodic words; long ≥4)")
@@ -362,7 +479,7 @@ def main():
     else:
         print("No violations found. Rule H5 speech-intro framing is clean.")
 
-    sys.exit(1 if all_violations else 0)
+    sys.exit(exit_code)
 
 
 if __name__ == "__main__":

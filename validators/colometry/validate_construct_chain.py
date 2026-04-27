@@ -77,6 +77,7 @@ Usage:
 """
 
 import argparse
+import json
 import re
 import sys
 from pathlib import Path
@@ -114,6 +115,24 @@ def has_sof_pasuq(token: str) -> bool:
 # ---------------------------------------------------------------------------
 # Heuristic data
 # ---------------------------------------------------------------------------
+
+# Wayyiqtol speech-verb skeletons — lines ending with one of these are speech
+# introductions; the next line begins speech content (often starting with ה on
+# an adverb like הֵיטֵב or a quotation opener).  Do NOT apply the
+# article-rectum heuristic when the current line ends with a speech verb,
+# because the ה on the next line is NOT a construct rectum — it opens speech.
+SPEECH_VERB_SKELETONS = {
+    "ויאמר",   # וַיֹּאמֶר — and he said
+    "ויאמרו",  # וַיֹּאמְרוּ — and they said
+    "ותאמר",   # וַתֹּאמֶר — and she said
+    "וידבר",   # וַיְדַבֵּר — and he spoke
+    "ויען",    # וַיַּעַן — and he answered
+    "ויענו",   # וַיַּעֲנוּ — and they answered
+    "ויקרא",   # וַיִּקְרָא — and he called/cried out (can introduce speech)
+    "ויצו",    # וַיְצַו — and he commanded
+    "ויצוו",   # וַיְצַוּוּ — and they commanded
+    "ויבשר",   # וַיְבַשֵּׂר — and he announced
+}
 
 # Divine name consonant skeletons — these form frozen compounds
 DIVINE_NAME_SKELETONS = {
@@ -245,9 +264,11 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
 
         # Find next non-empty content line
         next_line = ""
+        next_line_num = None
         for j in range(i + 1, len(lines)):
             if not is_skippable(lines[j]):
                 next_line = lines[j]
+                next_line_num = j + 1  # 1-based
                 break
 
         if not next_line:
@@ -261,6 +282,7 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
         if bare_last in DIVINE_NAME_SKELETONS and next_bare_first in YHWH_COMPOUND_FOLLOWERS:
             violations.append({
                 "file": path.name,
+                "file_path": path,
                 "line_num": line_no,
                 "rule": "H2/construct",
                 "severity": "STRONG-MERGE-CANDIDATE",
@@ -271,6 +293,7 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
                 ),
                 "line": line.rstrip(),
                 "next_line": next_line.rstrip(),
+                "next_line_num": next_line_num,
             })
             continue
 
@@ -283,27 +306,42 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
             # If regens is itself articulated, it can't be in construct state
             # (articulated nouns are in absolute state — Joüon-Muraoka §137a).
             if not regens_is_articulated:
-                # Determine confidence level from known construct endings
+                # FILTER: if the current line ends with a speech verb, the next
+                # line's ה-initial word is almost certainly speech content (an
+                # adverb like הֵיטֵב, a question particle, or a quoted clause
+                # opener) — NOT a construct rectum.  Skip the article heuristic
+                # entirely for speech-verb-final lines (Bug 3 fix).
+                if bare_last in SPEECH_VERB_SKELETONS:
+                    continue
+
+                # All article-heuristic findings are REVIEW-REQUIRED.
+                # The heuristic cannot distinguish genuine construct rectum from:
+                #   - paragogic/cohortative ה on imperatives (הַגִּידָה)
+                #   - ה on adverbs (הֵיטֵב)
+                #   - appositive NPs following a proper noun (הָעִיר after נִינְוֵה)
+                # Demoting to REVIEW-REQUIRED keeps findings honest and avoids
+                # misleading the apply script with false STRONG-MERGE-CANDIDATEs.
+                severity = "REVIEW-REQUIRED"
                 if bare_last in COMMON_CONSTRUCT_ENDINGS:
-                    severity = "STRONG-MERGE-CANDIDATE"
                     brief = (
-                        f"likely construct chain split — known regens form {last_token!r} "
-                        f"at line end, articulated rectum {next_line.split()[0]!r} below"
+                        f"possible construct chain split — known regens form {last_token!r} "
+                        f"at line end, articulated word {next_line.split()[0]!r} at next line start"
                     )
                 else:
-                    severity = "REVIEW-REQUIRED"
                     brief = (
                         f"possible construct chain split — {last_token!r} at line end, "
                         f"articulated word {next_line.split()[0]!r} at next line start"
                     )
                 violations.append({
                     "file": path.name,
+                    "file_path": path,
                     "line_num": line_no,
                     "rule": "H2/construct",
                     "severity": severity,
                     "brief": brief,
                     "line": line.rstrip(),
                     "next_line": next_line.rstrip(),
+                    "next_line_num": next_line_num,
                 })
             continue
 
@@ -321,6 +359,7 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
             if not is_next_clause_starter:
                 violations.append({
                     "file": path.name,
+                    "file_path": path,
                     "line_num": line_no,
                     "rule": "H2/construct",
                     "severity": "REVIEW-REQUIRED",
@@ -330,6 +369,7 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
                     ),
                     "line": line.rstrip(),
                     "next_line": next_line.rstrip(),
+                    "next_line_num": next_line_num,
                 })
 
     return violations
@@ -359,6 +399,11 @@ def main():
         "--verbose", "-v",
         action="store_true",
         help="Show next-line context for each violation.",
+    )
+    parser.add_argument(
+        "--json",
+        action="store_true",
+        help="Emit findings as a single JSON document to STDOUT instead of human-readable lines.",
     )
     args = parser.parse_args()
 
@@ -390,7 +435,52 @@ def main():
     for path in files:
         all_violations.extend(scan_file(path, verbose=args.verbose))
 
-    # Report
+    exit_code = 1 if all_violations else 0
+
+    # --- JSON output mode ---
+    if args.json:
+        findings = []
+        for v in all_violations:
+            severity = v["severity"]
+            applied_action = "merge_with_next" if severity == "STRONG-MERGE-CANDIDATE" else None
+            findings.append({
+                "file": str(v["file_path"].relative_to(REPO_ROOT)).replace("\\", "/"),
+                "line": v["line_num"],
+                "severity": "DEVIATION",
+                "tag": severity,
+                "rule_id": "H2.1",
+                "rule_short": "construct chain split across lines",
+                "brief": v["brief"],
+                "next_line": v.get("next_line_num"),
+                "applied_action": applied_action,
+            })
+
+        by_severity_json: dict[str, int] = {}
+        by_tag: dict[str, int] = {}
+        for f in findings:
+            by_severity_json[f["severity"]] = by_severity_json.get(f["severity"], 0) + 1
+            by_tag[f["tag"]] = by_tag.get(f["tag"], 0) + 1
+
+        doc = {
+            "validator": "validate_construct_chain",
+            "rule": "Rule H2 — Construct Chain Default",
+            "layer": 3,
+            "book": args.book or "all",
+            "files_scanned": [
+                str(p.relative_to(REPO_ROOT)).replace("\\", "/") for p in files
+            ],
+            "findings": findings,
+            "summary": {
+                "total_findings": len(findings),
+                "by_severity": by_severity_json,
+                "by_tag": by_tag,
+                "exit_code": exit_code,
+            },
+        }
+        print(json.dumps(doc, ensure_ascii=False, indent=2))
+        sys.exit(exit_code)
+
+    # --- Human-readable output (default) ---
     print("=" * 72)
     print(f"Rule H2 Construct Chain validator — Tanakh {tier_label}")
     print(f"Reference: canon §5 H2; Joüon-Muraoka §129; Waltke-O'Connor §9")
@@ -420,7 +510,7 @@ def main():
     else:
         print("No violations found. Rule H2 construct-chain integrity is clean.")
 
-    sys.exit(1 if all_violations else 0)
+    sys.exit(exit_code)
 
 
 if __name__ == "__main__":

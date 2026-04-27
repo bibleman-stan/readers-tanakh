@@ -17,6 +17,10 @@ readers-tanakh/
         01-genesis/, 02-exodus/, ...
       v1-he-baseline/                    # Hebrew baseline cola draft (machine-generated)
         01-genesis/, 02-exodus/, ...
+      v2-he-syntax/                      # Layer 1 syntax pass — STRONG Rule H1/H11 auto-applied
+        01-genesis/, 02-exodus/, ...
+      v3-he-colometry/                   # Layer 3 colometry pass — STRONG Rule H2/H5/H7/H16 auto-applied
+        01-genesis/, 02-exodus/, ...
       v4-editorial/                      # Hand-edited gold standard (single source of truth)
         01-genesis/, 02-exodus/, ...
       eng-gloss/                         # Structural English glosses (deferred)
@@ -111,20 +115,24 @@ ls -la private    # should show: private -> /c/Users/bibleman/Dropbox/tanakh-rea
 
 ## Tier System — text-files/
 
-The five-tier convention used in sibling colometric projects has been simplified for Tanakh based on lessons learned. Start with three tiers; add more only when they earn their existence.
+The pipeline runs v0 → v1 → v2 → v3 → v4. All five tiers are active as of 2026-04-26.
 
-| Tier | Source | Status |
-|---|---|---|
-| `v0-prose/` | Derived from TAHOT — verse-marked, full niqqud, full te'amim, ketiv/qere preserved. **NEVER EDIT.** | Reference baseline |
-| `v1-he-baseline/` | Machine-generated Hebrew baseline cola draft — output of the te'amim parser (prose or *Sifrei Emet*, depending on book/range). Starting point for editorial work in v4. | Editorial input |
-| `v4-editorial/` | Hand-edited gold standard. Single source of truth for the web app. Each line break either accent-induced or override-warranted. | Active editorial layer |
+| Tier | Directory | Engine | Status |
+|---|---|---|---|
+| v0 | `v0-prose/` | `ingest_tahot.py` | Derived from TAHOT — verse-marked, full niqqud, full te'amim, ketiv/qere preserved. **NEVER EDIT.** Reference baseline. |
+| v1 | `v1-he-baseline/` | `parse_teamim_prose.py` / `parse_teamim_poetic.py` | Machine-generated Hebrew baseline cola draft. Te'amim-as-evidence starting point; editor's draft, not a normative "version 1." |
+| v2 | `v2-he-syntax/` | `apply_v2.py` (consumes `validators/syntax/` JSON output) | Layer 1 break-legality pass. Auto-applies STRONG-tagged candidates from `validate_maqqef_integrity.py` (Rule H1) and `validate_line_final_tokens.py` (stranded prefixes/proclitics). Output: syntactically-clean Hebrew. |
+| v3 | `v3-he-colometry/` | `apply_v3.py` (consumes `validators/colometry/` JSON output) | Layer 3 colometry-rule pass. Auto-applies STRONG-tagged candidates from `validate_speech_intro_framing.py` (Rules H5, H16) and `validate_construct_chain.py` (Rules H2 with H7 complement integrity). Output: rule-clean under codified Layer 3 mechanical rules. |
+| v4 | `v4-editorial/` | Stan + Claude | Hand-edited gold standard. Single source of truth for the web app. Handles REVIEW-REQUIRED items, Category B/C judgment calls, and the three forces (atomic thought, single image, Hebrew syntax) on whatever the mechanical layers cannot decide. |
 
-**Deferred tiers** (will be added if and only if they prove valuable):
+**Apply scripts (v2, v3):** `apply_v2.py` and `apply_v3.py` consume the JSON output of their respective validator suites and apply only STRONG-tagged candidates to produce the next tier. REVIEW-REQUIRED items are passed through unchanged, becoming v4 work-queue items. Each apply run produces a unified diff against the previous tier; a sweep-scale of ≥5 instances triggers a canon §7 mandatory audit. The apply scripts are a separate implementation track; the architectural commitment is established here.
 
-- `v2-syntax/` — would apply BHSA syntactic-tree refinements to v1. Skipped initially because BHSA's licensing is ambiguous commercially and because v1-he-baseline is expected to be high-quality input on its own.
-- `v3-rhetorical/` — would apply parallelism/discourse-pattern detection (Lowth/Berlin lineage) to v2. Skipped until the v1→v4 delta is measured and a clear v2/v3 use case emerges.
+**Risk mitigations against the GNT/BoFM 10–12% mechanical-error trap:**
+1. Only STRONG-tagged candidates are applied automatically; REVIEW-REQUIRED items stay on the v4 work queue.
+2. ≥80% adoption gate per validator before its STRONG output is wired into an apply script (canon §7 proposed-rule adoption protocol).
+3. Tier-diff audit gate — every apply run produces a unified diff; sweep-scale ≥5 triggers a canon §7 mandatory audit.
 
-**Why fewer tiers than sibling projects:** prior experience showed that each mechanical tier introduces its own error rate which a downstream editorial pass must clean up. The Tanakh project starts lean and adds tiers only when they demonstrably improve v4 input quality.
+**Why this differs from the GNT/BoFM trap:** v2 and v3 apply only the closed list of mechanical rules (H1, H2, H5, H7, H11, H16). They do not generate breaks from external structural assumptions (syntax trees, rhetorical patterns). Error-rate exposure is bounded by the closed rule set.
 
 ## Build Pipeline (planned)
 
@@ -139,7 +147,11 @@ research/stepbible-tahot/  →  (ingest_tahot.py)
                            →  data/text-files/v0-prose/{NN-book}/{abbr}-{ch}.txt
                            →  (parse_teamim_prose.py / parse_teamim_poetic.py)
                            →  data/text-files/v1-he-baseline/{NN-book}/{abbr}-{ch}.txt
-                           →  (manual editorial work)
+                           →  (apply_v2.py ← validators/syntax/ JSON)
+                           →  data/text-files/v2-he-syntax/{NN-book}/{abbr}-{ch}.txt
+                           →  (apply_v3.py ← validators/colometry/ JSON)
+                           →  data/text-files/v3-he-colometry/{NN-book}/{abbr}-{ch}.txt
+                           →  (manual editorial work on REVIEW-REQUIRED + judgment calls)
                            →  data/text-files/v4-editorial/{NN-book}/{abbr}-{ch}.txt
                            →  (build_books.py)
                            →  books/{book}.html
@@ -194,3 +206,5 @@ Pages configuration is **not** yet activated in the repo settings — to be done
 ---
 
 **2026-04-26 update:** v1-teamim directory renamed to v1-he-baseline; path references updated throughout this doc to align with the canon's te'amim-as-evidence framing (no longer te'amim-as-prior).
+
+**2026-04-26 update:** Four-tier pipeline (v0 → v1 → v2 → v3 → v4) documented. v2 and v3 are no longer deferred — they apply the validator infrastructure (Layer 1 syntax + Layer 3 colometry) to the v1-he-baseline mechanically via apply_v2.py and apply_v3.py. Tier-system table, directory tree, and pipeline diagram updated to show `v2-he-syntax/` and `v3-he-colometry/` slots. v4-editorial remains the hand-edited gold standard for REVIEW-REQUIRED items and Category B/C judgment calls.
