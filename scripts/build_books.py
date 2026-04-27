@@ -65,11 +65,45 @@ MAQQEF = "־"
 VERSE_REF_RE = re.compile(r"^\d+:\d+$")
 
 BOOK_REGISTRY = {
-    "jonah": {
-        "subdir": "05-jonah",
-        "prefix": "jonah",
-        "out": "jonah.html",
-    },
+    "genesis":      {"subdir": "01-genesis",      "prefix": "genesis",      "out": "genesis.html"},
+    "exodus":       {"subdir": "02-exodus",        "prefix": "exodus",       "out": "exodus.html"},
+    "leviticus":    {"subdir": "03-leviticus",     "prefix": "leviticus",    "out": "leviticus.html"},
+    "numbers":      {"subdir": "04-numbers",       "prefix": "numbers",      "out": "numbers.html"},
+    "deuteronomy":  {"subdir": "05-deuteronomy",   "prefix": "deuteronomy",  "out": "deuteronomy.html"},
+    "joshua":       {"subdir": "06-joshua",        "prefix": "joshua",       "out": "joshua.html"},
+    "judges":       {"subdir": "07-judges",        "prefix": "judges",       "out": "judges.html"},
+    "ruth":         {"subdir": "08-ruth",          "prefix": "ruth",         "out": "ruth.html"},
+    "1samuel":      {"subdir": "09-1samuel",       "prefix": "1samuel",      "out": "1samuel.html"},
+    "2samuel":      {"subdir": "10-2samuel",       "prefix": "2samuel",      "out": "2samuel.html"},
+    "1kings":       {"subdir": "11-1kings",        "prefix": "1kings",       "out": "1kings.html"},
+    "2kings":       {"subdir": "12-2kings",        "prefix": "2kings",       "out": "2kings.html"},
+    "1chronicles":  {"subdir": "13-1chronicles",   "prefix": "1chronicles",  "out": "1chronicles.html"},
+    "2chronicles":  {"subdir": "14-2chronicles",   "prefix": "2chronicles",  "out": "2chronicles.html"},
+    "ezra":         {"subdir": "15-ezra",          "prefix": "ezra",         "out": "ezra.html"},
+    "nehemiah":     {"subdir": "16-nehemiah",      "prefix": "nehemiah",     "out": "nehemiah.html"},
+    "esther":       {"subdir": "17-esther",        "prefix": "esther",       "out": "esther.html"},
+    "job":          {"subdir": "18-job",           "prefix": "job",          "out": "job.html"},
+    "psalms":       {"subdir": "19-psalms",        "prefix": "psalms",       "out": "psalms.html"},
+    "proverbs":     {"subdir": "20-proverbs",      "prefix": "proverbs",     "out": "proverbs.html"},
+    "ecclesiastes": {"subdir": "21-ecclesiastes",  "prefix": "ecclesiastes", "out": "ecclesiastes.html"},
+    "songofsongs":  {"subdir": "22-songofsongs",   "prefix": "songofsongs",  "out": "songofsongs.html"},
+    "isaiah":       {"subdir": "23-isaiah",        "prefix": "isaiah",       "out": "isaiah.html"},
+    "jeremiah":     {"subdir": "24-jeremiah",      "prefix": "jeremiah",     "out": "jeremiah.html"},
+    "lamentations": {"subdir": "25-lamentations",  "prefix": "lamentations", "out": "lamentations.html"},
+    "ezekiel":      {"subdir": "26-ezekiel",       "prefix": "ezekiel",      "out": "ezekiel.html"},
+    "daniel":       {"subdir": "27-daniel",        "prefix": "daniel",       "out": "daniel.html"},
+    "hosea":        {"subdir": "28-hosea",         "prefix": "hosea",        "out": "hosea.html"},
+    "joel":         {"subdir": "29-joel",          "prefix": "joel",         "out": "joel.html"},
+    "amos":         {"subdir": "30-amos",          "prefix": "amos",         "out": "amos.html"},
+    "obadiah":      {"subdir": "31-obadiah",       "prefix": "obadiah",      "out": "obadiah.html"},
+    "jonah":        {"subdir": "32-jonah",         "prefix": "jonah",        "out": "jonah.html"},
+    "micah":        {"subdir": "33-micah",         "prefix": "micah",        "out": "micah.html"},
+    "nahum":        {"subdir": "34-nahum",         "prefix": "nahum",        "out": "nahum.html"},
+    "habakkuk":     {"subdir": "35-habakkuk",      "prefix": "habakkuk",     "out": "habakkuk.html"},
+    "zephaniah":    {"subdir": "36-zephaniah",     "prefix": "zephaniah",    "out": "zephaniah.html"},
+    "haggai":       {"subdir": "37-haggai",        "prefix": "haggai",       "out": "haggai.html"},
+    "zechariah":    {"subdir": "38-zechariah",     "prefix": "zechariah",    "out": "zechariah.html"},
+    "malachi":      {"subdir": "39-malachi",       "prefix": "malachi",      "out": "malachi.html"},
 }
 
 
@@ -221,7 +255,13 @@ def _pick_source(
     return None, "none", "none"
 
 
-def build_book(book_key):
+def build_book(book_key, skip_missing=False):
+    """Build HTML for a single book.
+
+    Returns True on success, False when source files are absent and
+    skip_missing=True (used by --all-books).  With skip_missing=False
+    (default, --book mode) a missing book exits the process.
+    """
     if book_key not in BOOK_REGISTRY:
         sys.exit(f"Unknown book key: {book_key}")
     spec = BOOK_REGISTRY[book_key]
@@ -237,6 +277,8 @@ def build_book(book_key):
     all_files = sorted(v2_he_files | v1_he_files)
 
     if not all_files:
+        if skip_missing:
+            return False
         sys.exit(f"No Hebrew chapter files for {book_key}")
 
     inter_v2 = os.path.join(INTER_V2_DIR, sub)
@@ -319,15 +361,63 @@ def build_book(book_key):
     print(f"  Interlinear v2: {counts['inter_v2']}  v1: {counts['inter_v1']}  none: {counts['inter_none']}")
     print(f"  Gloss       v2: {counts['gloss_v2']}  v1: {counts['gloss_v1']}  none: {counts['gloss_none']}")
     print(f"  Translit    v2: {counts['tr_v2']}  v1: {counts['tr_v1']}  none: {counts['tr_none']}")
+    return True
 
 
 def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--book", help="Book key; if omitted, build all")
+    ap = argparse.ArgumentParser(
+        description="Generate HTML book fragments from tier sources."
+    )
+    group = ap.add_mutually_exclusive_group()
+    group.add_argument(
+        "--book",
+        metavar="KEY",
+        help="Build a single book by registry key (e.g. jonah). "
+             "Exits with an error if source files are missing.",
+    )
+    group.add_argument(
+        "--all-books",
+        action="store_true",
+        help="Attempt to build every book in BOOK_REGISTRY. "
+             "Books whose Hebrew source files are absent are skipped with a "
+             "status line; only books with source data are built.",
+    )
     args = ap.parse_args()
-    keys = [args.book] if args.book else list(BOOK_REGISTRY.keys())
-    for k in keys:
-        build_book(k)
+
+    if args.book:
+        print(f"Building {args.book} ...")
+        build_book(args.book, skip_missing=False)
+    elif args.all_books:
+        built = []
+        skipped = []
+        for key in BOOK_REGISTRY:
+            ok = build_book(key, skip_missing=True)
+            if ok:
+                built.append(key)
+                print()
+            else:
+                skipped.append(key)
+        print(f"\n--- all-books summary ---")
+        print(f"  built   ({len(built)}): {', '.join(built) if built else 'none'}")
+        print(f"  skipped ({len(skipped)}): no source files")
+        if skipped:
+            for s in skipped:
+                print(f"    {s}")
+    else:
+        # Legacy default: build all books that have source files.
+        print("No --book or --all-books flag; building all books with source files ...")
+        built = []
+        skipped = []
+        for key in BOOK_REGISTRY:
+            ok = build_book(key, skip_missing=True)
+            if ok:
+                built.append(key)
+                print()
+            else:
+                skipped.append(key)
+        print(f"\n--- summary ---")
+        print(f"  built   ({len(built)}): {', '.join(built) if built else 'none'}")
+        print(f"  skipped ({len(skipped)}): no source files")
 
 
 if __name__ == "__main__":
