@@ -1,20 +1,20 @@
 {
   "book": "1chronicles",
   "dir_name": "13-1chronicles",
-  "timestamp": "2026-04-27T19:11:31",
+  "timestamp": "2026-04-27T19:43:27",
   "chapter_count": 29,
-  "total_cola": 4268,
-  "readiness_score": 86,
+  "total_cola": 4266,
+  "readiness_score": 84,
   "score_breakdown": {
     "malformed_pts": 50.0,
-    "deviation_pts": 24.37,
+    "deviation_pts": 24.39,
     "review_pts": 10.0,
-    "drift_pts": 1.5
+    "drift_pts": 0.0
   },
   "validators": {
-    "total_findings": 295,
+    "total_findings": 293,
     "malformed": 0,
-    "deviation": 295,
+    "deviation": 293,
     "review_required": 279,
     "per_validator": [
       {
@@ -48,13 +48,12 @@
       {
         "name": "validate_construct_chain",
         "layer": "colometry",
-        "findings": 275,
+        "findings": 273,
         "by_severity": {
-          "DEVIATION": 275
+          "DEVIATION": 273
         },
         "by_tag": {
-          "REVIEW-REQUIRED": 273,
-          "STRONG-MERGE-CANDIDATE": 2
+          "REVIEW-REQUIRED": 273
         },
         "error": null
       },
@@ -119,11 +118,11 @@
     "MID_SPLIT": 0
   },
   "english_drift": {
-    "ARTICLE-SPLIT": 3,
-    "PREP-NP-SPLIT": 3,
+    "ARTICLE-SPLIT": 0,
+    "PREP-NP-SPLIT": 46,
     "AUX-VERB-SPLIT": 1,
-    "PTC-NP-SPLIT": 8,
-    "APPOSITIVE-SPLIT": 2,
+    "PTC-NP-SPLIT": 1,
+    "APPOSITIVE-SPLIT": 32,
     "DANGLING-CONJ": 0
   }
 }

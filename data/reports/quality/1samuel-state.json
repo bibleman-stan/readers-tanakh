@@ -1,7 +1,7 @@
 {
   "book": "1samuel",
   "dir_name": "09-1samuel",
-  "timestamp": "2026-04-27T19:10:05",
+  "timestamp": "2026-04-27T19:43:31",
   "chapter_count": 31,
   "total_cola": 4590,
   "readiness_score": 84,
@@ -117,11 +117,11 @@
     "MID_SPLIT": 0
   },
   "english_drift": {
-    "ARTICLE-SPLIT": 7,
-    "PREP-NP-SPLIT": 4,
+    "ARTICLE-SPLIT": 0,
+    "PREP-NP-SPLIT": 30,
     "AUX-VERB-SPLIT": 0,
-    "PTC-NP-SPLIT": 20,
-    "APPOSITIVE-SPLIT": 3,
+    "PTC-NP-SPLIT": 1,
+    "APPOSITIVE-SPLIT": 12,
     "DANGLING-CONJ": 0
   }
 }

@@ -1,20 +1,20 @@
 {
   "book": "leviticus",
   "dir_name": "03-leviticus",
-  "timestamp": "2026-04-27T19:07:58",
+  "timestamp": "2026-04-27T19:38:26",
   "chapter_count": 27,
-  "total_cola": 4383,
+  "total_cola": 4378,
   "readiness_score": 87,
   "score_breakdown": {
     "malformed_pts": 50.0,
-    "deviation_pts": 27.31,
+    "deviation_pts": 27.38,
     "review_pts": 10.0,
     "drift_pts": 0.0
   },
   "validators": {
-    "total_findings": 220,
+    "total_findings": 215,
     "malformed": 0,
-    "deviation": 220,
+    "deviation": 215,
     "review_required": 176,
     "per_validator": [
       {
@@ -44,13 +44,12 @@
       {
         "name": "validate_construct_chain",
         "layer": "colometry",
-        "findings": 148,
+        "findings": 143,
         "by_severity": {
-          "DEVIATION": 148
+          "DEVIATION": 143
         },
         "by_tag": {
-          "REVIEW-REQUIRED": 143,
-          "STRONG-MERGE-CANDIDATE": 5
+          "REVIEW-REQUIRED": 143
         },
         "error": null
       },
@@ -114,10 +113,10 @@
   },
   "english_drift": {
     "ARTICLE-SPLIT": 0,
-    "PREP-NP-SPLIT": 18,
+    "PREP-NP-SPLIT": 79,
     "AUX-VERB-SPLIT": 2,
-    "PTC-NP-SPLIT": 20,
-    "APPOSITIVE-SPLIT": 4,
+    "PTC-NP-SPLIT": 13,
+    "APPOSITIVE-SPLIT": 2,
     "DANGLING-CONJ": 0
   }
 }

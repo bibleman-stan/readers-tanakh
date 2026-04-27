@@ -1,20 +1,20 @@
 {
   "book": "judges",
   "dir_name": "07-judges",
-  "timestamp": "2026-04-27T19:09:33",
+  "timestamp": "2026-04-27T19:42:13",
   "chapter_count": 21,
-  "total_cola": 3475,
-  "readiness_score": 35,
+  "total_cola": 3474,
+  "readiness_score": 75,
   "score_breakdown": {
-    "malformed_pts": 0.0,
-    "deviation_pts": 25.35,
+    "malformed_pts": 40.0,
+    "deviation_pts": 25.37,
     "review_pts": 10.0,
     "drift_pts": 0.0
   },
   "validators": {
-    "total_findings": 235,
+    "total_findings": 234,
     "malformed": 2,
-    "deviation": 233,
+    "deviation": 232,
     "review_required": 183,
     "per_validator": [
       {
@@ -52,13 +52,12 @@
       {
         "name": "validate_construct_chain",
         "layer": "colometry",
-        "findings": 162,
+        "findings": 161,
         "by_severity": {
-          "DEVIATION": 162
+          "DEVIATION": 161
         },
         "by_tag": {
-          "REVIEW-REQUIRED": 161,
-          "STRONG-MERGE-CANDIDATE": 1
+          "REVIEW-REQUIRED": 161
         },
         "error": null
       },
@@ -122,11 +121,11 @@
     "MID_SPLIT": 0
   },
   "english_drift": {
-    "ARTICLE-SPLIT": 1,
-    "PREP-NP-SPLIT": 8,
+    "ARTICLE-SPLIT": 0,
+    "PREP-NP-SPLIT": 28,
     "AUX-VERB-SPLIT": 0,
-    "PTC-NP-SPLIT": 25,
-    "APPOSITIVE-SPLIT": 0,
+    "PTC-NP-SPLIT": 0,
+    "APPOSITIVE-SPLIT": 4,
     "DANGLING-CONJ": 0
   }
 }

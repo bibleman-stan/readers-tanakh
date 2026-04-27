@@ -1,7 +1,7 @@
 {
   "book": "proverbs",
   "dir_name": "20-proverbs",
-  "timestamp": "2026-04-27T19:13:52",
+  "timestamp": "2026-04-27T19:40:55",
   "chapter_count": 31,
   "total_cola": 2589,
   "readiness_score": 94,
@@ -103,11 +103,11 @@
     "MID_SPLIT": 0
   },
   "english_drift": {
-    "ARTICLE-SPLIT": 1,
-    "PREP-NP-SPLIT": 2,
+    "ARTICLE-SPLIT": 0,
+    "PREP-NP-SPLIT": 6,
     "AUX-VERB-SPLIT": 0,
-    "PTC-NP-SPLIT": 9,
-    "APPOSITIVE-SPLIT": 0,
+    "PTC-NP-SPLIT": 5,
+    "APPOSITIVE-SPLIT": 1,
     "DANGLING-CONJ": 0
   }
 }

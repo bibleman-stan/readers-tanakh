@@ -1,20 +1,20 @@
 {
   "book": "isaiah",
   "dir_name": "23-isaiah",
-  "timestamp": "2026-04-27T19:14:43",
+  "timestamp": "2026-04-27T19:42:56",
   "chapter_count": 66,
-  "total_cola": 6937,
-  "readiness_score": 37,
+  "total_cola": 6933,
+  "readiness_score": 77,
   "score_breakdown": {
-    "malformed_pts": 0.0,
-    "deviation_pts": 26.84,
+    "malformed_pts": 40.0,
+    "deviation_pts": 26.87,
     "review_pts": 10.0,
     "drift_pts": 0.0
   },
   "validators": {
-    "total_findings": 361,
+    "total_findings": 357,
     "malformed": 3,
-    "deviation": 358,
+    "deviation": 354,
     "review_required": 318,
     "per_validator": [
       {
@@ -53,13 +53,12 @@
       {
         "name": "validate_construct_chain",
         "layer": "colometry",
-        "findings": 306,
+        "findings": 302,
         "by_severity": {
-          "DEVIATION": 306
+          "DEVIATION": 302
         },
         "by_tag": {
-          "REVIEW-REQUIRED": 302,
-          "STRONG-MERGE-CANDIDATE": 4
+          "REVIEW-REQUIRED": 302
         },
         "error": null
       },
@@ -122,11 +121,11 @@
     "MID_SPLIT": 0
   },
   "english_drift": {
-    "ARTICLE-SPLIT": 7,
-    "PREP-NP-SPLIT": 10,
+    "ARTICLE-SPLIT": 0,
+    "PREP-NP-SPLIT": 69,
     "AUX-VERB-SPLIT": 0,
-    "PTC-NP-SPLIT": 37,
-    "APPOSITIVE-SPLIT": 3,
+    "PTC-NP-SPLIT": 13,
+    "APPOSITIVE-SPLIT": 15,
     "DANGLING-CONJ": 0
   }
 }

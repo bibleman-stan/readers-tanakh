@@ -1,20 +1,20 @@
 {
   "book": "ezra",
   "dir_name": "15-ezra",
-  "timestamp": "2026-04-27T19:12:07",
+  "timestamp": "2026-04-27T19:37:08",
   "chapter_count": 10,
-  "total_cola": 1377,
-  "readiness_score": 95,
+  "total_cola": 1374,
+  "readiness_score": 88,
   "score_breakdown": {
     "malformed_pts": 50.0,
-    "deviation_pts": 27.52,
+    "deviation_pts": 27.66,
     "review_pts": 10.0,
-    "drift_pts": 7.5
+    "drift_pts": 0.0
   },
   "validators": {
-    "total_findings": 63,
+    "total_findings": 60,
     "malformed": 0,
-    "deviation": 63,
+    "deviation": 60,
     "review_required": 57,
     "per_validator": [
       {
@@ -48,13 +48,12 @@
       {
         "name": "validate_construct_chain",
         "layer": "colometry",
-        "findings": 59,
+        "findings": 56,
         "by_severity": {
-          "DEVIATION": 59
+          "DEVIATION": 56
         },
         "by_tag": {
-          "REVIEW-REQUIRED": 56,
-          "STRONG-MERGE-CANDIDATE": 3
+          "REVIEW-REQUIRED": 56
         },
         "error": null
       },
@@ -109,11 +108,11 @@
     "MID_SPLIT": 0
   },
   "english_drift": {
-    "ARTICLE-SPLIT": 1,
-    "PREP-NP-SPLIT": 2,
+    "ARTICLE-SPLIT": 65,
+    "PREP-NP-SPLIT": 23,
     "AUX-VERB-SPLIT": 0,
-    "PTC-NP-SPLIT": 2,
-    "APPOSITIVE-SPLIT": 0,
+    "PTC-NP-SPLIT": 0,
+    "APPOSITIVE-SPLIT": 2,
     "DANGLING-CONJ": 0
   }
 }

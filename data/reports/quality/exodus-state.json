@@ -1,20 +1,20 @@
 {
   "book": "exodus",
   "dir_name": "02-exodus",
-  "timestamp": "2026-04-27T19:07:33",
+  "timestamp": "2026-04-27T19:43:36",
   "chapter_count": 40,
-  "total_cola": 6268,
+  "total_cola": 6265,
   "readiness_score": 87,
   "score_breakdown": {
     "malformed_pts": 50.0,
-    "deviation_pts": 27.08,
+    "deviation_pts": 27.11,
     "review_pts": 10.0,
     "drift_pts": 0.0
   },
   "validators": {
-    "total_findings": 321,
+    "total_findings": 318,
     "malformed": 0,
-    "deviation": 321,
+    "deviation": 318,
     "review_required": 267,
     "per_validator": [
       {
@@ -48,13 +48,12 @@
       {
         "name": "validate_construct_chain",
         "layer": "colometry",
-        "findings": 220,
+        "findings": 217,
         "by_severity": {
-          "DEVIATION": 220
+          "DEVIATION": 217
         },
         "by_tag": {
-          "REVIEW-REQUIRED": 217,
-          "STRONG-MERGE-CANDIDATE": 3
+          "REVIEW-REQUIRED": 217
         },
         "error": null
       },
@@ -119,11 +118,11 @@
     "MID_SPLIT": 0
   },
   "english_drift": {
-    "ARTICLE-SPLIT": 6,
-    "PREP-NP-SPLIT": 14,
-    "AUX-VERB-SPLIT": 3,
-    "PTC-NP-SPLIT": 36,
-    "APPOSITIVE-SPLIT": 4,
+    "ARTICLE-SPLIT": 0,
+    "PREP-NP-SPLIT": 83,
+    "AUX-VERB-SPLIT": 2,
+    "PTC-NP-SPLIT": 3,
+    "APPOSITIVE-SPLIT": 7,
     "DANGLING-CONJ": 0
   }
 }

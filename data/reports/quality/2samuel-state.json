@@ -1,7 +1,7 @@
 {
   "book": "2samuel",
   "dir_name": "10-2samuel",
-  "timestamp": "2026-04-27T19:10:25",
+  "timestamp": "2026-04-27T19:43:32",
   "chapter_count": 24,
   "total_cola": 3810,
   "readiness_score": 85,
@@ -118,11 +118,11 @@
     "MID_SPLIT": 0
   },
   "english_drift": {
-    "ARTICLE-SPLIT": 8,
-    "PREP-NP-SPLIT": 18,
+    "ARTICLE-SPLIT": 0,
+    "PREP-NP-SPLIT": 41,
     "AUX-VERB-SPLIT": 1,
-    "PTC-NP-SPLIT": 17,
-    "APPOSITIVE-SPLIT": 0,
+    "PTC-NP-SPLIT": 1,
+    "APPOSITIVE-SPLIT": 5,
     "DANGLING-CONJ": 0
   }
 }

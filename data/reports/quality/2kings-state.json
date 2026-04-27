@@ -1,20 +1,20 @@
 {
   "book": "2kings",
   "dir_name": "12-2kings",
-  "timestamp": "2026-04-27T19:11:10",
+  "timestamp": "2026-04-27T19:42:36",
   "chapter_count": 25,
-  "total_cola": 4008,
+  "total_cola": 4006,
   "readiness_score": 83,
   "score_breakdown": {
     "malformed_pts": 50.0,
-    "deviation_pts": 23.57,
+    "deviation_pts": 23.6,
     "review_pts": 9.76,
     "drift_pts": 0.0
   },
   "validators": {
-    "total_findings": 325,
+    "total_findings": 323,
     "malformed": 0,
-    "deviation": 325,
+    "deviation": 323,
     "review_required": 262,
     "per_validator": [
       {
@@ -48,13 +48,12 @@
       {
         "name": "validate_construct_chain",
         "layer": "colometry",
-        "findings": 213,
+        "findings": 211,
         "by_severity": {
-          "DEVIATION": 213
+          "DEVIATION": 211
         },
         "by_tag": {
-          "REVIEW-REQUIRED": 211,
-          "STRONG-MERGE-CANDIDATE": 2
+          "REVIEW-REQUIRED": 211
         },
         "error": null
       },
@@ -118,11 +117,11 @@
     "MID_SPLIT": 0
   },
   "english_drift": {
-    "ARTICLE-SPLIT": 4,
-    "PREP-NP-SPLIT": 10,
+    "ARTICLE-SPLIT": 0,
+    "PREP-NP-SPLIT": 42,
     "AUX-VERB-SPLIT": 0,
-    "PTC-NP-SPLIT": 17,
-    "APPOSITIVE-SPLIT": 1,
+    "PTC-NP-SPLIT": 2,
+    "APPOSITIVE-SPLIT": 5,
     "DANGLING-CONJ": 0
   }
 }

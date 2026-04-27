@@ -1,15 +1,15 @@
 {
   "book": "ruth",
   "dir_name": "08-ruth",
-  "timestamp": "2026-04-27T19:09:42",
+  "timestamp": "2026-04-27T19:42:33",
   "chapter_count": 4,
   "total_cola": 467,
-  "readiness_score": 41,
+  "readiness_score": 80,
   "score_breakdown": {
-    "malformed_pts": 0.0,
+    "malformed_pts": 40.0,
     "deviation_pts": 21.48,
     "review_pts": 10.0,
-    "drift_pts": 9.5
+    "drift_pts": 9.0
   },
   "validators": {
     "total_findings": 46,
@@ -118,11 +118,11 @@
     "MID_SPLIT": 0
   },
   "english_drift": {
-    "ARTICLE-SPLIT": 1,
-    "PREP-NP-SPLIT": 0,
+    "ARTICLE-SPLIT": 0,
+    "PREP-NP-SPLIT": 1,
     "AUX-VERB-SPLIT": 0,
     "PTC-NP-SPLIT": 0,
-    "APPOSITIVE-SPLIT": 0,
+    "APPOSITIVE-SPLIT": 1,
     "DANGLING-CONJ": 0
   }
 }

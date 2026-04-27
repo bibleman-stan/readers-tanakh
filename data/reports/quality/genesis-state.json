@@ -1,20 +1,20 @@
 {
   "book": "genesis",
   "dir_name": "01-genesis",
-  "timestamp": "2026-04-27T19:06:58",
+  "timestamp": "2026-04-27T19:42:21",
   "chapter_count": 50,
-  "total_cola": 7975,
-  "readiness_score": 35,
+  "total_cola": 7974,
+  "readiness_score": 75,
   "score_breakdown": {
-    "malformed_pts": 0.0,
+    "malformed_pts": 40.0,
     "deviation_pts": 24.51,
     "review_pts": 10.0,
     "drift_pts": 0.0
   },
   "validators": {
-    "total_findings": 577,
+    "total_findings": 576,
     "malformed": 1,
-    "deviation": 576,
+    "deviation": 575,
     "review_required": 480,
     "per_validator": [
       {
@@ -53,13 +53,12 @@
       {
         "name": "validate_construct_chain",
         "layer": "colometry",
-        "findings": 362,
+        "findings": 361,
         "by_severity": {
-          "DEVIATION": 362
+          "DEVIATION": 361
         },
         "by_tag": {
-          "REVIEW-REQUIRED": 361,
-          "STRONG-MERGE-CANDIDATE": 1
+          "REVIEW-REQUIRED": 361
         },
         "error": null
       },
@@ -124,11 +123,11 @@
     "MID_SPLIT": 0
   },
   "english_drift": {
-    "ARTICLE-SPLIT": 3,
-    "PREP-NP-SPLIT": 19,
-    "AUX-VERB-SPLIT": 5,
-    "PTC-NP-SPLIT": 34,
-    "APPOSITIVE-SPLIT": 4,
+    "ARTICLE-SPLIT": 0,
+    "PREP-NP-SPLIT": 57,
+    "AUX-VERB-SPLIT": 2,
+    "PTC-NP-SPLIT": 2,
+    "APPOSITIVE-SPLIT": 16,
     "DANGLING-CONJ": 0
   }
 }

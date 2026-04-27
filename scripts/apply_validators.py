@@ -7,10 +7,12 @@ Runs adopted validators, filters to STRONG findings per the adopted tag-set,
 applies mechanical mutations to v1/he-baseline text, and writes v2/he output
 plus per-chapter markdown reports.
 
-ADOPTED_VALIDATORS is the single gate: a dict[str, set[str]] mapping
-validator name → set of tag strings that are cleared for mechanical
-application.  Findings with tags not in the set are demoted to
-REVIEW-REQUIRED regardless of the validator's own tag.
+ADOPTED_VALIDATORS is the single gate: a dict mapping validator name to either:
+  - set[str]                   — a flat set of tag strings cleared for mechanical
+                                 application (all subcases of that tag adopted)
+  - dict[str, list[str]]       — per-tag subcase allowlist; only findings whose
+                                 tag AND subcase are both in the adopted map are
+                                 applied mechanically (others demoted to REVIEW-REQUIRED)
 
 Phase 1 adoption set:
   validate_maqqef_integrity        — all STRONG tags
@@ -18,8 +20,14 @@ Phase 1 adoption set:
   validate_speech_intro_framing    — STRONG-MERGE-CANDIDATE only
   validate_wayehi_protasis         — STRONG-MERGE-CANDIDATE only
 
-NOT adopted yet:
-  validate_construct_chain         — subcase fix pending in parallel agent
+Phase 2 additions:
+  validate_construct_chain         — STRONG-MERGE-CANDIDATE / divine_name subcase only
+                                     (frozen-formula compounds; 61 corpus instances;
+                                     ≥80% adoption gate cleared per canon §7)
+
+NOT adopted yet (remaining subcases):
+  validate_construct_chain / article_rectum        — REVIEW-REQUIRED (lower confidence)
+  validate_construct_chain / common_construct_ending — REVIEW-REQUIRED (lower confidence)
   validate_discourse_particles     — needs multi-book evidence
   validate_complement_integrity    — needs multi-book evidence
 
@@ -61,17 +69,25 @@ INPUT_TIER_LABEL = "v1-he-baseline"
 OUTPUT_TIER_LABEL = "v2-he"
 
 # ---------------------------------------------------------------------------
-# Adoption gate — dict[validator_name, set[allowed_tags]]
+# Adoption gate
 #
-# Only findings whose (validator_name, tag) pair clears this gate are applied
-# mechanically.  All others go to REVIEW-REQUIRED.
+# Maps validator_name → either:
+#   set[str]              — flat tag allowlist (all subcases of those tags adopted)
+#   dict[str, list[str]]  — per-tag subcase allowlist; only (tag, subcase) pairs
+#                           present in the list are mechanically applied
+#
+# Only findings that clear this gate are applied mechanically.
+# All others go to REVIEW-REQUIRED.
 #
 # Update this dict as validators clear the ≥80% clean-rate adoption protocol
 # per canon §7.  Do NOT update validators/.baseline.json from this script;
 # run:  PYTHONIOENCODING=utf-8 py -3 validators/run_all.py --update-baseline
 # ---------------------------------------------------------------------------
 
-ADOPTED_VALIDATORS: dict[str, set[str]] = {
+# Type alias — value is set[str] OR dict[str, list[str]]
+AdoptionSpec = set | dict
+
+ADOPTED_VALIDATORS: dict[str, AdoptionSpec] = {
     "validate_maqqef_integrity": {
         "STRONG-MERGE-CANDIDATE",
         "STRONG-SPLIT-CANDIDATE",
@@ -88,6 +104,11 @@ ADOPTED_VALIDATORS: dict[str, set[str]] = {
         "STRONG-MERGE-CANDIDATE",
         # STRONG-SPLIT-CANDIDATE not yet adopted for this validator
     },
+    # Phase 2: adopt divine_name subcase only (frozen compounds, high-confidence).
+    # article_rectum and common_construct_ending remain REVIEW-REQUIRED.
+    "validate_construct_chain": {
+        "STRONG-MERGE-CANDIDATE": ["divine_name"],
+    },
 }
 
 # ---------------------------------------------------------------------------
@@ -102,7 +123,10 @@ ALL_VALIDATORS: list[tuple[str, str]] = [
     ("validators/colometry/validate_speech_intro_framing.py", "validate_speech_intro_framing"),
     ("validators/colometry/validate_wayehi_protasis.py",   "validate_wayehi_protasis"),
     # Not yet adopted — run for reporting only:
+    # Partially adopted: divine_name subcase only; article_rectum + common_construct_ending
+    # remain REVIEW-REQUIRED.
     ("validators/colometry/validate_construct_chain.py",   "validate_construct_chain"),
+    # Not yet adopted — run for reporting only:
     ("validators/syntax/validate_discourse_particles.py",  "validate_discourse_particles"),
     ("validators/syntax/validate_complement_integrity.py", "validate_complement_integrity"),
 ]
@@ -160,31 +184,55 @@ def run_validator(script_rel: str, book: str) -> dict | None:
 # Finding aggregation — tag-level filtering via ADOPTED_VALIDATORS
 # ---------------------------------------------------------------------------
 
+def _tag_and_subcase_adopted(
+    adopted_spec: AdoptionSpec,
+    tag: str,
+    subcase: str | None,
+) -> bool:
+    """Return True if (tag, subcase) clears the adoption gate.
+
+    adopted_spec is either:
+      set[str]              — tag must be in the set; subcase is irrelevant.
+      dict[str, list[str]]  — tag must be a key AND subcase must appear in its
+                              list.  A None subcase never clears a subcase-gated
+                              tag.
+    """
+    if isinstance(adopted_spec, set):
+        return tag in adopted_spec
+    # dict form: per-tag subcase allowlist
+    if tag not in adopted_spec:
+        return False
+    allowed_subcases = adopted_spec[tag]
+    if not allowed_subcases:
+        # Empty list ⇒ no subcases adopted for this tag
+        return False
+    return subcase in allowed_subcases
+
+
 def aggregate_findings(
     validator_outputs: list[tuple[str, dict]],
-    adopted_map: dict[str, set[str]],
+    adopted_map: dict[str, AdoptionSpec],
 ) -> tuple[dict[str, list[dict]], dict[str, list[dict]]]:
     """Partition findings into STRONG (apply-ready) and REVIEW-REQUIRED queues.
 
     Parameters
     ----------
     validator_outputs : list of (validator_name, doc)
-    adopted_map : dict[str, set[str]]
-        Maps validator name → set of tag strings cleared for mechanical apply.
-        A finding must BOTH come from an adopted validator AND have an
-        adopted tag to enter the strong queue.
+    adopted_map : dict[str, AdoptionSpec]
+        Maps validator name → adoption spec (flat tag set OR per-tag subcase
+        dict).  A finding must clear the adoption gate to enter the strong queue.
 
     Returns
     -------
     (strong_by_file, review_by_file) : dicts mapping repo-relative file path
         strings to lists of finding dicts (augmented with _validator and
-        optionally _unadopted / _unadopted_tag).
+        optionally _unadopted / _unadopted_tag / _unadopted_subcase).
     """
     strong_by_file: dict[str, list[dict]] = defaultdict(list)
     review_by_file: dict[str, list[dict]] = defaultdict(list)
 
     for validator_name, doc in validator_outputs:
-        adopted_tags = adopted_map.get(validator_name)  # None if not adopted at all
+        adopted_spec = adopted_map.get(validator_name)  # None if not adopted at all
         findings = doc.get("findings", [])
 
         for finding in findings:
@@ -195,19 +243,25 @@ def aggregate_findings(
             # Remap file path from v1/he-baseline → use as-is for lookup key.
             # The key must match what resolve_chapter_files produces via file_key().
             tag = finding.get("tag", "")
+            subcase = finding.get("subcase")  # may be None for validators without subcases
             action = finding.get("applied_action")
 
             is_review = (tag == "REVIEW-REQUIRED") or (action is None)
 
             if is_review:
                 review_by_file[file_str].append({**finding, "_validator": validator_name})
-            elif adopted_tags is not None and tag in adopted_tags:
-                # Adopted validator + adopted tag → mechanical apply.
-                strong_by_file[file_str].append({**finding, "_validator": validator_name})
-            elif adopted_tags is None:
+            elif adopted_spec is None:
                 # Validator not adopted at all → demote to review.
                 review_by_file[file_str].append(
                     {**finding, "_validator": validator_name, "_unadopted": True}
+                )
+            elif _tag_and_subcase_adopted(adopted_spec, tag, subcase):
+                # Adopted validator + adopted (tag, subcase) → mechanical apply.
+                strong_by_file[file_str].append({**finding, "_validator": validator_name})
+            elif isinstance(adopted_spec, dict) and tag in adopted_spec and subcase not in adopted_spec[tag]:
+                # Validator adopted, tag adopted, but this specific subcase is not in the allowlist.
+                review_by_file[file_str].append(
+                    {**finding, "_validator": validator_name, "_unadopted_subcase": True}
                 )
             else:
                 # Validator adopted but this specific tag is not in the adopted set.
@@ -495,15 +549,19 @@ def _format_review_block(finding: dict, item_num: int) -> str:
     validator_name = finding.get("_validator", "unknown")
     unadopted = finding.get("_unadopted", False)
     unadopted_tag = finding.get("_unadopted_tag", False)
+    unadopted_subcase = finding.get("_unadopted_subcase", False)
     rule_id = finding.get("rule_id", "?")
     rule_short = finding.get("rule_short", "")
     severity = finding.get("severity", "?")
     tag = finding.get("tag", "?")
+    subcase = finding.get("subcase")
     brief = finding.get("brief", "")
     line_no = finding.get("line", "?")
 
     if unadopted:
         reason = "unadopted validator — STRONG output held back pending ≥80% clean-rate audit"
+    elif unadopted_subcase:
+        reason = f"subcase '{subcase}' not in adopted subcase list for tag '{tag}' in this validator"
     elif unadopted_tag:
         reason = f"tag '{tag}' not in adopted tag-set for this validator"
     else:
@@ -702,6 +760,11 @@ def process_book(
     print(f"Book: {book}")
     print(f"Mode: {'dry-run' if dry_run else 'report-only' if report_only else 'apply'}")
     print(f"Adopted validators: {sorted(adopted_names)}")
+    # Show subcase restrictions for validators with per-tag subcase gates
+    for vname, spec in ADOPTED_VALIDATORS.items():
+        if isinstance(spec, dict):
+            for tag, subcases in spec.items():
+                print(f"  {vname}/{tag}: subcases={subcases}")
     print(f"{'='*60}")
 
     # -----------------------------------------------------------------------

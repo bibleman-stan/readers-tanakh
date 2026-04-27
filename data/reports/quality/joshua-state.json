@@ -1,20 +1,20 @@
 {
   "book": "joshua",
   "dir_name": "06-joshua",
-  "timestamp": "2026-04-27T19:09:14",
+  "timestamp": "2026-04-27T19:41:26",
   "chapter_count": 24,
-  "total_cola": 3345,
+  "total_cola": 3340,
   "readiness_score": 86,
   "score_breakdown": {
     "malformed_pts": 50.0,
-    "deviation_pts": 25.76,
+    "deviation_pts": 25.85,
     "review_pts": 10.0,
     "drift_pts": 0.0
   },
   "validators": {
-    "total_findings": 214,
+    "total_findings": 209,
     "malformed": 0,
-    "deviation": 214,
+    "deviation": 209,
     "review_required": 166,
     "per_validator": [
       {
@@ -48,13 +48,12 @@
       {
         "name": "validate_construct_chain",
         "layer": "colometry",
-        "findings": 164,
+        "findings": 159,
         "by_severity": {
-          "DEVIATION": 164
+          "DEVIATION": 159
         },
         "by_tag": {
-          "REVIEW-REQUIRED": 159,
-          "STRONG-MERGE-CANDIDATE": 5
+          "REVIEW-REQUIRED": 159
         },
         "error": null
       },
@@ -118,11 +117,11 @@
     "MID_SPLIT": 0
   },
   "english_drift": {
-    "ARTICLE-SPLIT": 3,
-    "PREP-NP-SPLIT": 6,
+    "ARTICLE-SPLIT": 0,
+    "PREP-NP-SPLIT": 39,
     "AUX-VERB-SPLIT": 0,
-    "PTC-NP-SPLIT": 10,
-    "APPOSITIVE-SPLIT": 3,
+    "PTC-NP-SPLIT": 1,
+    "APPOSITIVE-SPLIT": 5,
     "DANGLING-CONJ": 0
   }
 }

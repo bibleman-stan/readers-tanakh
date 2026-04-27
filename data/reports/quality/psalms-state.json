@@ -1,20 +1,20 @@
 {
   "book": "psalms",
   "dir_name": "19-psalms",
-  "timestamp": "2026-04-27T19:13:27",
+  "timestamp": "2026-04-27T19:40:15",
   "chapter_count": 150,
-  "total_cola": 7558,
-  "readiness_score": 38,
+  "total_cola": 7554,
+  "readiness_score": 78,
   "score_breakdown": {
-    "malformed_pts": 0.0,
-    "deviation_pts": 28.13,
+    "malformed_pts": 40.0,
+    "deviation_pts": 28.16,
     "review_pts": 10.0,
     "drift_pts": 0.0
   },
   "validators": {
-    "total_findings": 307,
+    "total_findings": 303,
     "malformed": 2,
-    "deviation": 305,
+    "deviation": 301,
     "review_required": 285,
     "per_validator": [
       {
@@ -53,13 +53,12 @@
       {
         "name": "validate_construct_chain",
         "layer": "colometry",
-        "findings": 281,
+        "findings": 277,
         "by_severity": {
-          "DEVIATION": 281
+          "DEVIATION": 277
         },
         "by_tag": {
-          "REVIEW-REQUIRED": 277,
-          "STRONG-MERGE-CANDIDATE": 4
+          "REVIEW-REQUIRED": 277
         },
         "error": null
       },
@@ -117,11 +116,11 @@
     "MID_SPLIT": 0
   },
   "english_drift": {
-    "ARTICLE-SPLIT": 8,
-    "PREP-NP-SPLIT": 7,
+    "ARTICLE-SPLIT": 0,
+    "PREP-NP-SPLIT": 42,
     "AUX-VERB-SPLIT": 0,
-    "PTC-NP-SPLIT": 25,
-    "APPOSITIVE-SPLIT": 9,
+    "PTC-NP-SPLIT": 5,
+    "APPOSITIVE-SPLIT": 30,
     "DANGLING-CONJ": 0
   }
 }

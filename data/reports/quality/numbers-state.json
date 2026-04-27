@@ -1,20 +1,20 @@
 {
   "book": "numbers",
   "dir_name": "04-numbers",
-  "timestamp": "2026-04-27T19:08:28",
+  "timestamp": "2026-04-27T19:39:38",
   "chapter_count": 36,
-  "total_cola": 6383,
-  "readiness_score": 35,
+  "total_cola": 6382,
+  "readiness_score": 75,
   "score_breakdown": {
-    "malformed_pts": 0.0,
-    "deviation_pts": 24.98,
+    "malformed_pts": 40.0,
+    "deviation_pts": 24.99,
     "review_pts": 10.0,
     "drift_pts": 0.0
   },
   "validators": {
-    "total_findings": 444,
+    "total_findings": 443,
     "malformed": 3,
-    "deviation": 441,
+    "deviation": 440,
     "review_required": 359,
     "per_validator": [
       {
@@ -52,13 +52,12 @@
       {
         "name": "validate_construct_chain",
         "layer": "colometry",
-        "findings": 293,
+        "findings": 292,
         "by_severity": {
-          "DEVIATION": 293
+          "DEVIATION": 292
         },
         "by_tag": {
-          "REVIEW-REQUIRED": 292,
-          "STRONG-MERGE-CANDIDATE": 1
+          "REVIEW-REQUIRED": 292
         },
         "error": null
       },
@@ -123,10 +122,10 @@
   },
   "english_drift": {
     "ARTICLE-SPLIT": 0,
-    "PREP-NP-SPLIT": 28,
-    "AUX-VERB-SPLIT": 1,
-    "PTC-NP-SPLIT": 31,
-    "APPOSITIVE-SPLIT": 0,
+    "PREP-NP-SPLIT": 178,
+    "AUX-VERB-SPLIT": 2,
+    "PTC-NP-SPLIT": 6,
+    "APPOSITIVE-SPLIT": 16,
     "DANGLING-CONJ": 0
   }
 }

@@ -1,10 +1,10 @@
 {
   "validate_complement_integrity": 105,
-  "validate_construct_chain": 4987,
+  "validate_construct_chain": 4931,
   "validate_cross_verse_continuity": 335,
   "validate_discourse_particles": 218,
   "validate_line_final_tokens": 15,
   "validate_maqqef_integrity": 0,
-  "validate_speech_intro_framing": 762,
-  "validate_wayehi_protasis": 312
+  "validate_speech_intro_framing": 761,
+  "validate_wayehi_protasis": 313
 }

@@ -1,15 +1,15 @@
 {
   "book": "nehemiah",
   "dir_name": "16-nehemiah",
-  "timestamp": "2026-04-27T19:12:20",
+  "timestamp": "2026-04-27T19:37:42",
   "chapter_count": 13,
   "total_cola": 1912,
-  "readiness_score": 88,
+  "readiness_score": 87,
   "score_breakdown": {
     "malformed_pts": 50.0,
     "deviation_pts": 27.44,
     "review_pts": 10.0,
-    "drift_pts": 1.0
+    "drift_pts": 0.0
   },
   "validators": {
     "total_findings": 92,
@@ -114,10 +114,10 @@
   },
   "english_drift": {
     "ARTICLE-SPLIT": 0,
-    "PREP-NP-SPLIT": 9,
+    "PREP-NP-SPLIT": 40,
     "AUX-VERB-SPLIT": 1,
-    "PTC-NP-SPLIT": 7,
-    "APPOSITIVE-SPLIT": 1,
+    "PTC-NP-SPLIT": 1,
+    "APPOSITIVE-SPLIT": 6,
     "DANGLING-CONJ": 0
   }
 }

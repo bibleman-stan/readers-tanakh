@@ -1,20 +1,20 @@
 {
   "book": "deuteronomy",
   "dir_name": "05-deuteronomy",
-  "timestamp": "2026-04-27T19:08:54",
+  "timestamp": "2026-04-27T19:40:38",
   "chapter_count": 34,
-  "total_cola": 5079,
+  "total_cola": 5076,
   "readiness_score": 88,
   "score_breakdown": {
     "malformed_pts": 50.0,
-    "deviation_pts": 27.64,
+    "deviation_pts": 27.67,
     "review_pts": 10.0,
     "drift_pts": 0.0
   },
   "validators": {
-    "total_findings": 229,
+    "total_findings": 226,
     "malformed": 0,
-    "deviation": 229,
+    "deviation": 226,
     "review_required": 205,
     "per_validator": [
       {
@@ -48,13 +48,12 @@
       {
         "name": "validate_construct_chain",
         "layer": "colometry",
-        "findings": 199,
+        "findings": 196,
         "by_severity": {
-          "DEVIATION": 199
+          "DEVIATION": 196
         },
         "by_tag": {
-          "REVIEW-REQUIRED": 196,
-          "STRONG-MERGE-CANDIDATE": 3
+          "REVIEW-REQUIRED": 196
         },
         "error": null
       },
@@ -118,10 +117,10 @@
   },
   "english_drift": {
     "ARTICLE-SPLIT": 0,
-    "PREP-NP-SPLIT": 11,
+    "PREP-NP-SPLIT": 41,
     "AUX-VERB-SPLIT": 2,
-    "PTC-NP-SPLIT": 13,
-    "APPOSITIVE-SPLIT": 18,
+    "PTC-NP-SPLIT": 0,
+    "APPOSITIVE-SPLIT": 21,
     "DANGLING-CONJ": 0
   }
 }
