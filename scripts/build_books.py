@@ -1,19 +1,19 @@
 """
-build_books.py - Generate four-layer HTML book fragments from tier sources.
+build_books.py - Generate three-layer HTML book fragments from tier sources.
 
 Per-chapter source preference (independent for each layer; falls through):
 
-  Hebrew:       v4-editorial/  >  v3-he-colometry/  >  v2-he-syntax/  >  v1-he-baseline/
-  Interlinear:  eng-interlinear/      > v1-eng-interlinear/
-  Gloss:        eng-gloss/            > v1-eng-gloss/
-  Translit:     translit/             > v1-translit/
+  Hebrew:       v2/he/             > v1/he-baseline/
+  Interlinear:  v2/eng-interlinear/ > v1/eng-interlinear/
+  Gloss:        v2/eng-gloss/       > v1/eng-gloss/
+  Translit:     v2/translit/        > v1/translit/
 
-The Hebrew cascade reflects the four-tier pipeline (canon §6 + handoffs/03-architecture.md):
-v1 = te'amim baseline draft, v2 = Layer 1 syntax-applied, v3 = Layer 3 colometry-applied,
-v4 = editorial gold standard. The cascade picks the most-refined version that exists
-per chapter, independent across chapters.
+The Hebrew cascade reflects the collapsed two-tier pipeline (canon §6 +
+handoffs/03-architecture.md): v1 = te'amim baseline draft, v2 = editorial
+gold standard. The cascade picks the most-refined version that exists per
+chapter, independent across chapters.
 
-Each cola is rendered with per-orthographic-word spans so the four-layer
+Each cola is rendered with per-orthographic-word spans so the multi-layer
 reader UI can align Hebrew word N with translit word N and interlinear
 word N spatially:
 
@@ -45,20 +45,15 @@ import sys
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.dirname(SCRIPT_DIR)
 
-V4_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v4", "editorial")
-V3_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v3", "he-colometry")
-V2_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v2", "he-syntax")
-V1_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v1", "he-baseline")
+V2_HE_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v2", "he")
+V1_HE_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v1", "he-baseline")
 
-INTER_HAND_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v4", "eng-interlinear")
 INTER_V2_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v2", "eng-interlinear")
 INTER_V1_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v1", "eng-interlinear")
 
-GLOSS_HAND_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v4", "eng-gloss")
 GLOSS_V2_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v2", "eng-gloss")
 GLOSS_V1_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v1", "eng-gloss")
 
-TRANSLIT_HAND_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v4", "translit")
 TRANSLIT_V2_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v2", "translit")
 TRANSLIT_V1_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v1", "translit")
 
@@ -79,7 +74,7 @@ BOOK_REGISTRY = {
 
 
 def parse_chapter_lines(filepath):
-    """Parse a v1/v4 .txt file into [{ref, lines}]."""
+    """Parse a v1/v2 .txt file into [{ref, lines}]."""
     if not filepath or not os.path.exists(filepath):
         return []
     with open(filepath, "r", encoding="utf-8") as f:
@@ -210,18 +205,15 @@ def lines_to_lookup(verses):
 
 def _pick_source(
     fn,
-    hand_dir, hand_files,
     v2_dir, v2_files,
     v1_dir, v1_files,
-    hand_label, v2_label, v1_label,
+    v2_label, v1_label,
 ):
-    """Return (path, source_label, tier_used) for a file.
+    """Return (path, source_label, tier_used) for a per-word layer file.
 
-    Cascade: hand-edit → v2 (apply_v2 mechanical output) → v1 (parse_teamim baseline).
-    tier_used is one of: "hand", "v2", "v1", or "none".
+    Cascade: v2 (editorial / propagator output) → v1 (parse_teamim baseline).
+    tier_used is one of: "v2", "v1", or "none".
     """
-    if fn in hand_files:
-        return os.path.join(hand_dir, fn), hand_label, "hand"
     if fn in v2_files:
         return os.path.join(v2_dir, fn), v2_label, "v2"
     if fn in v1_files:
@@ -238,86 +230,67 @@ def build_book(book_key):
 
     # Discover chapters by Hebrew layer (Hebrew is required). Cascade
     # picks the most-refined available tier per chapter independently.
-    v4_dir = os.path.join(V4_DIR, sub)
-    v3_dir = os.path.join(V3_DIR, sub)
-    v2_dir = os.path.join(V2_DIR, sub)
-    v1_dir = os.path.join(V1_DIR, sub)
-    v4_files = _files_in(v4_dir, prefix)
-    v3_files = _files_in(v3_dir, prefix)
-    v2_files = _files_in(v2_dir, prefix)
-    v1_files = _files_in(v1_dir, prefix)
-    all_files = sorted(v4_files | v3_files | v2_files | v1_files)
+    v2_he_dir = os.path.join(V2_HE_DIR, sub)
+    v1_he_dir = os.path.join(V1_HE_DIR, sub)
+    v2_he_files = _files_in(v2_he_dir, prefix)
+    v1_he_files = _files_in(v1_he_dir, prefix)
+    all_files = sorted(v2_he_files | v1_he_files)
 
     if not all_files:
         sys.exit(f"No Hebrew chapter files for {book_key}")
 
-    inter_hand = os.path.join(INTER_HAND_DIR, sub)
     inter_v2 = os.path.join(INTER_V2_DIR, sub)
     inter_v1 = os.path.join(INTER_V1_DIR, sub)
-    gloss_hand = os.path.join(GLOSS_HAND_DIR, sub)
     gloss_v2 = os.path.join(GLOSS_V2_DIR, sub)
     gloss_v1 = os.path.join(GLOSS_V1_DIR, sub)
-    tr_hand = os.path.join(TRANSLIT_HAND_DIR, sub)
     tr_v2 = os.path.join(TRANSLIT_V2_DIR, sub)
     tr_v1 = os.path.join(TRANSLIT_V1_DIR, sub)
 
-    inter_hand_files = _files_in(inter_hand, prefix)
     inter_v2_files = _files_in(inter_v2, prefix)
     inter_v1_files = _files_in(inter_v1, prefix)
-    gloss_hand_files = _files_in(gloss_hand, prefix)
     gloss_v2_files = _files_in(gloss_v2, prefix)
     gloss_v1_files = _files_in(gloss_v1, prefix)
-    tr_hand_files = _files_in(tr_hand, prefix)
     tr_v2_files = _files_in(tr_v2, prefix)
     tr_v1_files = _files_in(tr_v1, prefix)
 
     fragments = []
     counts = {
-        "he_v4": 0, "he_v3": 0, "he_v2": 0, "he_v1": 0,
-        "inter_hand": 0, "inter_v2": 0, "inter_v1": 0, "inter_none": 0,
-        "gloss_hand": 0, "gloss_v2": 0, "gloss_v1": 0, "gloss_none": 0,
-        "tr_hand": 0, "tr_v2": 0, "tr_v1": 0, "tr_none": 0,
+        "he_v2": 0, "he_v1": 0,
+        "inter_v2": 0, "inter_v1": 0, "inter_none": 0,
+        "gloss_v2": 0, "gloss_v1": 0, "gloss_none": 0,
+        "tr_v2": 0, "tr_v1": 0, "tr_none": 0,
     }
 
     for fn in all_files:
         # Hebrew (required). Cascade through tiers in canonical order.
-        if fn in v4_files:
-            he_path, he_source = os.path.join(v4_dir, fn), "v4-editorial"
-            counts["he_v4"] += 1
-        elif fn in v3_files:
-            he_path, he_source = os.path.join(v3_dir, fn), "v3-he-colometry"
-            counts["he_v3"] += 1
-        elif fn in v2_files:
-            he_path, he_source = os.path.join(v2_dir, fn), "v2-he-syntax"
+        if fn in v2_he_files:
+            he_path, he_source = os.path.join(v2_he_dir, fn), "v2-he"
             counts["he_v2"] += 1
         else:
-            he_path, he_source = os.path.join(v1_dir, fn), "v1-he-baseline"
+            he_path, he_source = os.path.join(v1_he_dir, fn), "v1-he-baseline"
             counts["he_v1"] += 1
 
         inter_path, inter_source, inter_tier = _pick_source(
             fn,
-            inter_hand, inter_hand_files,
             inter_v2, inter_v2_files,
             inter_v1, inter_v1_files,
-            "eng-interlinear", "v2-eng-interlinear", "v1-eng-interlinear",
+            "v2-eng-interlinear", "v1-eng-interlinear",
         )
         counts[f"inter_{inter_tier if inter_tier != 'none' else 'none'}"] += 1
 
         gloss_path, gloss_source, gloss_tier = _pick_source(
             fn,
-            gloss_hand, gloss_hand_files,
             gloss_v2, gloss_v2_files,
             gloss_v1, gloss_v1_files,
-            "eng-gloss", "v2-eng-gloss", "v1-eng-gloss",
+            "v2-eng-gloss", "v1-eng-gloss",
         )
         counts[f"gloss_{gloss_tier if gloss_tier != 'none' else 'none'}"] += 1
 
         tr_path, tr_source, tr_tier = _pick_source(
             fn,
-            tr_hand, tr_hand_files,
             tr_v2, tr_v2_files,
             tr_v1, tr_v1_files,
-            "translit", "v2-translit", "v1-translit",
+            "v2-translit", "v1-translit",
         )
         counts[f"tr_{tr_tier if tr_tier != 'none' else 'none'}"] += 1
 
@@ -342,10 +315,10 @@ def build_book(book_key):
         f.write("\n".join(fragments) + "\n")
 
     print(f"  wrote {out_path}")
-    print(f"  Hebrew      v4: {counts['he_v4']}  v3: {counts['he_v3']}  v2: {counts['he_v2']}  v1: {counts['he_v1']}")
-    print(f"  Interlinear hand: {counts['inter_hand']}  v2: {counts['inter_v2']}  v1: {counts['inter_v1']}  none: {counts['inter_none']}")
-    print(f"  Gloss       hand: {counts['gloss_hand']}  v2: {counts['gloss_v2']}  v1: {counts['gloss_v1']}  none: {counts['gloss_none']}")
-    print(f"  Translit    hand: {counts['tr_hand']}  v2: {counts['tr_v2']}  v1: {counts['tr_v1']}  none: {counts['tr_none']}")
+    print(f"  Hebrew      v2: {counts['he_v2']}  v1: {counts['he_v1']}")
+    print(f"  Interlinear v2: {counts['inter_v2']}  v1: {counts['inter_v1']}  none: {counts['inter_none']}")
+    print(f"  Gloss       v2: {counts['gloss_v2']}  v1: {counts['gloss_v1']}  none: {counts['gloss_none']}")
+    print(f"  Translit    v2: {counts['tr_v2']}  v1: {counts['tr_v1']}  none: {counts['tr_none']}")
 
 
 def main():

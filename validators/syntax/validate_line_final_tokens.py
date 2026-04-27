@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Validate Layer 1 line-final token rules across the Tanakh v1/he-baseline corpus.
+Validate Layer 1 line-final token rules across the Tanakh corpus.
+
+Default scan target: v1/he-baseline (the te'amim-driven machine baseline).
+With --v2, scans v2/he (the editorial gold standard).
 
 Checks six REQUIRED-MERGE patterns from data/syntax-reference/hebrew-break-legality.md.
 Each is a hard grammatical failure — a break here violates generic Hebrew syntax
@@ -34,7 +37,7 @@ Exit code: 0 if zero violations, 1 if violations found, 2 on setup error.
 Usage:
     PYTHONIOENCODING=utf-8 py -3 validators/syntax/validate_line_final_tokens.py
     PYTHONIOENCODING=utf-8 py -3 validators/syntax/validate_line_final_tokens.py --book jonah
-    PYTHONIOENCODING=utf-8 py -3 validators/syntax/validate_line_final_tokens.py --v4
+    PYTHONIOENCODING=utf-8 py -3 validators/syntax/validate_line_final_tokens.py --v2
 """
 
 import argparse
@@ -44,11 +47,11 @@ import sys
 from pathlib import Path
 
 # ---------------------------------------------------------------------------
-# Path constants — use v1/he-baseline (renamed path; not v1-teamim)
+# Path constants — collapsed two-tier layout: v1/he-baseline + v2/he
 # ---------------------------------------------------------------------------
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 V1_DIR = REPO_ROOT / "data" / "text-files" / "v1" / "he-baseline"
-V4_DIR = REPO_ROOT / "data" / "text-files" / "v4" / "editorial"
+V2_DIR = REPO_ROOT / "data" / "text-files" / "v2" / "he"
 
 # ---------------------------------------------------------------------------
 # Hebrew Unicode constants
@@ -322,9 +325,9 @@ def main():
              "Default: all books in the target directory.",
     )
     parser.add_argument(
-        "--v4",
+        "--v2",
         action="store_true",
-        help="Scan v4/editorial files instead of v1/he-baseline.",
+        help="Scan v2/he (editorial gold standard) instead of v1/he-baseline.",
     )
     parser.add_argument(
         "--json",
@@ -333,8 +336,8 @@ def main():
     )
     args = parser.parse_args()
 
-    base_dir = V4_DIR if args.v4 else V1_DIR
-    tier_label = "v4/editorial" if args.v4 else "v1/he-baseline"
+    base_dir = V2_DIR if args.v2 else V1_DIR
+    tier_label = "v2/he" if args.v2 else "v1/he-baseline"
 
     if not base_dir.exists():
         print(

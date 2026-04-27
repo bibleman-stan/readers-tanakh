@@ -4,7 +4,7 @@
 run_all.py — Tanakh Reader colometry audit dashboard.
 
 Discovers every `validate_*.py` under `validators/syntax/` and
-`validators/colometry/`, runs each against the v4-editorial corpus
+`validators/colometry/`, runs each against the v2/he editorial corpus
 (in JSON mode), aggregates per-validator finding counts, prints a
 unified dashboard.
 
@@ -73,7 +73,7 @@ def discover_validators() -> list[tuple[str, Path]]:
 
 
 def run_validator(layer: str, path: Path) -> dict:
-    """Invoke one validator with `--json --v4` and parse summary.total_findings.
+    """Invoke one validator with `--json --v2` and parse summary.total_findings.
 
     Returns:
         {
@@ -88,7 +88,7 @@ def run_validator(layer: str, path: Path) -> dict:
             "stderr": str,
         }
     """
-    cmd = [sys.executable, str(path), "--json", "--v4"]
+    cmd = [sys.executable, str(path), "--json", "--v2"]
     env = {**os.environ, "PYTHONIOENCODING": "utf-8"}
 
     try:
@@ -194,7 +194,7 @@ def save_baseline(results: list[dict]) -> None:
 
 def print_dashboard(results: list[dict], verbose: bool) -> None:
     print("=" * 72)
-    print("Tanakh Reader Colometry Audit — running all validators (--v4)")
+    print("Tanakh Reader Colometry Audit — running all validators (--v2)")
     print("=" * 72)
     print()
 

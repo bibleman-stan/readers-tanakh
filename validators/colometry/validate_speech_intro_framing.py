@@ -48,7 +48,7 @@ Exit code: 0 if zero violations, 1 if violations found, 2 on setup error.
 Usage:
     PYTHONIOENCODING=utf-8 py -3 validators/colometry/validate_speech_intro_framing.py
     PYTHONIOENCODING=utf-8 py -3 validators/colometry/validate_speech_intro_framing.py --book jonah
-    PYTHONIOENCODING=utf-8 py -3 validators/colometry/validate_speech_intro_framing.py --v4
+    PYTHONIOENCODING=utf-8 py -3 validators/colometry/validate_speech_intro_framing.py --v2
     PYTHONIOENCODING=utf-8 py -3 validators/colometry/validate_speech_intro_framing.py --verbose
 """
 
@@ -59,11 +59,11 @@ import sys
 from pathlib import Path
 
 # ---------------------------------------------------------------------------
-# Path constants
+# Path constants — collapsed two-tier layout: v1/he-baseline + v2/he
 # ---------------------------------------------------------------------------
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 V1_DIR = REPO_ROOT / "data" / "text-files" / "v1" / "he-baseline"
-V4_DIR = REPO_ROOT / "data" / "text-files" / "v4" / "editorial"
+V2_DIR = REPO_ROOT / "data" / "text-files" / "v2" / "he"
 
 # ---------------------------------------------------------------------------
 # Hebrew Unicode helpers
@@ -346,9 +346,9 @@ def main():
              "Default: all books in the target directory.",
     )
     parser.add_argument(
-        "--v4",
+        "--v2",
         action="store_true",
-        help="Scan v4/editorial files instead of v1/he-baseline.",
+        help="Scan v2/he (editorial gold standard) instead of v1/he-baseline.",
     )
     parser.add_argument(
         "--verbose", "-v",
@@ -362,8 +362,8 @@ def main():
     )
     args = parser.parse_args()
 
-    base_dir = V4_DIR if args.v4 else V1_DIR
-    tier_label = "v4/editorial" if args.v4 else "v1/he-baseline"
+    base_dir = V2_DIR if args.v2 else V1_DIR
+    tier_label = "v2/he" if args.v2 else "v1/he-baseline"
 
     if not base_dir.exists():
         print(

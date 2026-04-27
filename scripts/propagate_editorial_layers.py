@@ -4,12 +4,12 @@
 propagate_editorial_layers.py — re-segment v1 per-word layers to the editorial
 Hebrew cola structure.
 
-When the editorial Hebrew layer (currently data/text-files/v4/editorial/)
-changes cola structure relative to the v1 he-baseline, the per-word layers
-(eng-interlinear, translit, eng-gloss) must follow. v1 has 1:1 alignment
-between Hebrew orthographic words and per-word tokens; this script slices
-those per-word streams by editorial cola word counts and emits new per-word
-files keyed to the editorial cola boundaries.
+When the editorial Hebrew layer (data/text-files/v2/he/) changes cola
+structure relative to the v1 he-baseline, the per-word layers (eng-interlinear,
+translit, eng-gloss) must follow. v1 has 1:1 alignment between Hebrew
+orthographic words and per-word tokens; this script slices those per-word
+streams by editorial cola word counts and emits new per-word files keyed to
+the editorial cola boundaries.
 
 Per-layer behaviour:
   eng-interlinear, translit  — re-segmented mechanically (perfect 1:1).
@@ -43,10 +43,10 @@ V1_INTER_DIR     = TEXT_DIR / "v1" / "eng-interlinear"
 V1_GLOSS_DIR     = TEXT_DIR / "v1" / "eng-gloss"
 V1_TRANSLIT_DIR  = TEXT_DIR / "v1" / "translit"
 
-ED_HE_DIR        = TEXT_DIR / "v4" / "editorial"
-ED_INTER_DIR     = TEXT_DIR / "v4" / "eng-interlinear"
-ED_GLOSS_DIR     = TEXT_DIR / "v4" / "eng-gloss"
-ED_TRANSLIT_DIR  = TEXT_DIR / "v4" / "translit"
+ED_HE_DIR        = TEXT_DIR / "v2" / "he"
+ED_INTER_DIR     = TEXT_DIR / "v2" / "eng-interlinear"
+ED_GLOSS_DIR     = TEXT_DIR / "v2" / "eng-gloss"
+ED_TRANSLIT_DIR  = TEXT_DIR / "v2" / "translit"
 
 VERSE_REF_RE = re.compile(r"^\d+:\d+$")
 ENG_WORD_SEP = " | "

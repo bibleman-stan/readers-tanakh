@@ -10,7 +10,7 @@
 set -e
 
 # Only run validators if relevant files are staged.
-RELEVANT=$(git diff --cached --name-only | grep -E "^(data/text-files/v4/editorial/|private/01-method/colometry-canon\.md|data/syntax-reference/|validators/)" || true)
+RELEVANT=$(git diff --cached --name-only | grep -E "^(data/text-files/v2/he/|private/01-method/colometry-canon\.md|data/syntax-reference/|validators/)" || true)
 
 if [ -z "$RELEVANT" ]; then
     exit 0
