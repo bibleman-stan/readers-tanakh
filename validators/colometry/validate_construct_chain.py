@@ -67,6 +67,28 @@ Where SEVERITY is:
     STRONG-MERGE-CANDIDATE  — high-confidence unmodified construct chain split
     REVIEW-REQUIRED         — lower confidence; editorial check required
 
+JSON subcase field — distinguishes the three detection heuristics so
+downstream orchestrators (e.g., apply_validators.py) can adopt individual
+subcases independently without adopting all H2 findings:
+
+    "divine_name"            — Heuristic (b). Line ends with a divine-name
+                               skeleton (יהוה, אדני, אל, אלהים) and the next
+                               line begins with a recognized compound follower
+                               (צבאות, אלהים, אלהי, etc.). Frozen formula per
+                               hebrew-break-legality.md row 7.
+                               Severity: STRONG-MERGE-CANDIDATE.
+
+    "article_rectum"         — Heuristic (a). Line ends with an unarticulated
+                               token (possible nomen regens) and the next line
+                               begins with הַ/הָ/הֶ (definite article on rectum).
+                               Severity: REVIEW-REQUIRED.
+
+    "common_construct_ending" — Heuristic (c). Line ends with a token whose
+                               bare form matches a closed list of high-frequency
+                               construct-state forms, and the next-line first
+                               token is not an article, conjunction, or particle.
+                               Severity: REVIEW-REQUIRED.
+
 Exit code: 0 if zero violations, 1 if violations found, 2 on setup error.
 
 Usage:
@@ -286,6 +308,7 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
                 "line_num": line_no,
                 "rule": "H2/construct",
                 "severity": "STRONG-MERGE-CANDIDATE",
+                "subcase": "divine_name",
                 "brief": (
                     f"compound divine name split — "
                     f"{last_token!r} at line end, continuation {next_line.split()[0]!r} below "
@@ -338,6 +361,7 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
                     "line_num": line_no,
                     "rule": "H2/construct",
                     "severity": severity,
+                    "subcase": "article_rectum",
                     "brief": brief,
                     "line": line.rstrip(),
                     "next_line": next_line.rstrip(),
@@ -363,6 +387,7 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
                     "line_num": line_no,
                     "rule": "H2/construct",
                     "severity": "REVIEW-REQUIRED",
+                    "subcase": "common_construct_ending",
                     "brief": (
                         f"possible construct chain split — known construct form {last_token!r} "
                         f"at line end, next-line first token {next_line.split()[0]!r}"
@@ -448,6 +473,7 @@ def main():
                 "line": v["line_num"],
                 "severity": "DEVIATION",
                 "tag": severity,
+                "subcase": v["subcase"],
                 "rule_id": "H2.1",
                 "rule_short": "construct chain split across lines",
                 "brief": v["brief"],
@@ -457,9 +483,11 @@ def main():
 
         by_severity_json: dict[str, int] = {}
         by_tag: dict[str, int] = {}
+        by_subcase: dict[str, int] = {}
         for f in findings:
             by_severity_json[f["severity"]] = by_severity_json.get(f["severity"], 0) + 1
             by_tag[f["tag"]] = by_tag.get(f["tag"], 0) + 1
+            by_subcase[f["subcase"]] = by_subcase.get(f["subcase"], 0) + 1
 
         doc = {
             "validator": "validate_construct_chain",
@@ -474,6 +502,7 @@ def main():
                 "total_findings": len(findings),
                 "by_severity": by_severity_json,
                 "by_tag": by_tag,
+                "by_subcase": by_subcase,
                 "exit_code": exit_code,
             },
         }
