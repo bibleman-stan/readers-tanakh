@@ -616,12 +616,34 @@ def read_v0_chapter(path):
 def parse_chapter(he_in, en_in, tr_in,
                   he_out, en_inter_out, en_gloss_out, tr_out,
                   breakers):
-    """Parse one chapter into the four v1 outputs."""
+    """Parse one chapter into the four v1 outputs.
+
+    Alignment mismatches between Hebrew orthographic-word count and
+    English/translit unit count are treated as warnings rather than fatal
+    errors.  The root cause is TAHOT formatting quirks:
+
+      (a) Angle-bracketed English-only words (<obj.>, <the>, <into>, <to>)
+          are stripped by clean_english() → that TAHOT row contributes 1
+          Hebrew orthographic word but 0 English units.
+      (b) Intra-row maqqef entries (e.g. מַה/־/זֶּ֣ה) — one TAHOT row,
+          one English gloss, but the Hebrew side contains the maqqef
+          character making it count as 2 orthographic words.
+      (c) Qere/Ketiv bracket-only rows ([ ]) that survive the skip filter
+          and skew counts in one direction.
+
+    On a mismatch the Hebrew cola are still emitted (the primary output).
+    The English/translit interlinear is skipped for the misaligned verse
+    so we never emit a misaligned interlinear file.  A per-chapter warning
+    line is printed; the caller accumulates the mismatch count.
+
+    Returns the number of verses with alignment mismatches in this chapter.
+    """
     he_verses = read_v0_chapter(he_in)
     en_lookup = {ref: text for ref, text in read_v0_chapter(en_in)}
     tr_lookup = {ref: text for ref, text in read_v0_chapter(tr_in)}
 
     he_blocks, inter_blocks, gloss_blocks, tr_blocks = [], [], [], []
+    mismatch_count = 0
 
     for ref, he_text in he_verses:
         he_clean = strip_paragraph_marker(he_text)
@@ -635,16 +657,26 @@ def parse_chapter(he_in, en_in, tr_in,
         tr_text = tr_lookup.get(ref, "")
         tr_words = [w.strip() for w in tr_text.split(ENG_WORD_SEP)] if tr_text else []
 
+        en_aligned = True
+        tr_aligned = True
+
         if en_words and len(en_words) != ortho_count:
-            sys.exit(
-                f"Alignment failure at {ref}: "
-                f"{ortho_count} Hebrew orthographic-words vs {len(en_words)} English units"
+            print(
+                f"  WARNING: alignment mismatch at {ref}: "
+                f"{ortho_count} Hebrew ortho-words vs {len(en_words)} English units "
+                f"(TAHOT formatting quirk — Hebrew cola emitted; interlinear skipped for this verse)"
             )
-        if tr_words and len(tr_words) != ortho_count:
-            sys.exit(
-                f"Alignment failure at {ref}: "
-                f"{ortho_count} Hebrew orthographic-words vs {len(tr_words)} translit units"
+            en_aligned = False
+            tr_aligned = False  # skip translit too when English is misaligned
+            mismatch_count += 1
+        elif tr_words and len(tr_words) != ortho_count:
+            print(
+                f"  WARNING: alignment mismatch at {ref}: "
+                f"{ortho_count} Hebrew ortho-words vs {len(tr_words)} translit units "
+                f"(TAHOT formatting quirk — Hebrew cola emitted; translit skipped for this verse)"
             )
+            tr_aligned = False
+            mismatch_count += 1
 
         # Cola boundaries (v1-he-baseline starting draft) are at PROSODIC-word level.
         # Te'amim sit on prosodic units; v2/he editorial refines these baseline breaks
@@ -663,13 +695,13 @@ def parse_chapter(he_in, en_in, tr_in,
             oa = ortho_starts[pa]
             ob = ortho_starts[pb]
 
-            if en_words:
+            if en_words and en_aligned:
                 inter_words = en_words[oa:ob]
                 inter_cola.append(ENG_WORD_SEP.join(inter_words))
                 gloss_input = " ".join(w for w in inter_words if w)
                 gloss_cola.append(naturalize_hebrew_gloss(gloss_input, word_units=inter_words))
 
-            if tr_words:
+            if tr_words and tr_aligned:
                 trans_cola.append(ENG_WORD_SEP.join(tr_words[oa:ob]))
 
         he_blocks.append(ref + "\n" + "\n".join(he_cola))
@@ -692,6 +724,8 @@ def parse_chapter(he_in, en_in, tr_in,
     if tr_blocks:
         with open(tr_out, "w", encoding="utf-8", newline="\n") as f:
             f.write("\n\n".join(tr_blocks) + "\n")
+
+    return mismatch_count
 
 
 def parse_book(book_key):
@@ -718,12 +752,13 @@ def parse_book(book_key):
 
     poetic_chapters = set(spec.get("poetic_chapters", []))
     total_lines = 0
+    total_mismatches = 0
 
     for fn in chapter_files:
         chapter_num = int(fn[len(spec["prefix"]) + 1:-4])
         breakers = POETIC_BREAKERS if chapter_num in poetic_chapters else PROSE_BREAKERS
 
-        parse_chapter(
+        chapter_mismatches = parse_chapter(
             os.path.join(he_in_dir, fn),
             os.path.join(en_in_dir, fn),
             os.path.join(tr_in_dir, fn),
@@ -733,6 +768,7 @@ def parse_book(book_key):
             os.path.join(tr_out_dir, fn),
             breakers,
         )
+        total_mismatches += chapter_mismatches
 
         with open(os.path.join(he_out_dir, fn), "r", encoding="utf-8") as f:
             line_count = sum(
@@ -743,10 +779,16 @@ def parse_book(book_key):
         accent_label = "Sifrei Emet" if chapter_num in poetic_chapters else "prose"
         print(f"  {fn}: {line_count} cola, {accent_label}")
 
+    mismatch_note = (
+        f", {total_mismatches} verse(s) with alignment warnings (interlinear skipped for those)"
+        if total_mismatches else ""
+    )
     print(
         f"\n{book_key}: {total_lines} cola "
         f"-> v1-he-baseline / v1-eng-interlinear / v1-eng-gloss / v1-translit"
+        f"{mismatch_note}"
     )
+    return total_mismatches
 
 
 def parse_all_books():
@@ -754,12 +796,13 @@ def parse_all_books():
 
     Prints per-book status (parse OK / errors / cola count).
     Books whose v0/prose directory does not exist are skipped with a warning
-    rather than hard-exiting, so a partial corpus (e.g. missing Ezekiel due
-    to a pre-existing ingest bug) does not abort the full-corpus run.
+    rather than hard-exiting.  Alignment mismatches are treated as warnings;
+    books with mismatches are still counted as parsed (Hebrew cola emitted).
     """
     grand_total = 0
     ok_count = 0
     skip_count = 0
+    total_mismatch_verses = 0
 
     for book_key in BOOK_ORDER:
         spec = BOOK_REGISTRY[book_key]
@@ -770,14 +813,21 @@ def parse_all_books():
             continue
         try:
             print(f"\n--- {book_key} ---")
-            parse_book(book_key)
+            book_mismatches = parse_book(book_key)
             ok_count += 1
+            total_mismatch_verses += book_mismatches
         except SystemExit as exc:
             print(f"  ERROR {book_key}: {exc}")
             skip_count += 1
 
+    mismatch_note = (
+        f"; {total_mismatch_verses} verse(s) across corpus with alignment warnings "
+        f"(interlinear skipped for those — TAHOT formatting quirks)"
+        if total_mismatch_verses else ""
+    )
     print(
-        f"\n=== --all-books complete: {ok_count} parsed, {skip_count} skipped/errored ==="
+        f"\n=== --all-books complete: {ok_count} parsed, {skip_count} skipped/errored"
+        f"{mismatch_note} ==="
     )
 
 
