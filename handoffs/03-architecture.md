@@ -34,10 +34,10 @@ readers-tanakh/
     genesis.html, exodus.html, ...
   scripts/                               # Build, parse, scan, validate
     ingest_tahot.py                      # TAHOT TSV → v0-prose chapter files (primary path)
-    ingest_oshb.py                       # OSHB OSIS → sibling tree (on-demand cross-check)
-    ingest_uxlc.py                       # UXLC → sibling tree (on-demand cross-check)
-    ingest_mam.py                        # MAM → sibling tree (Aleppo tradition reference)
-    diff_sources.py                      # For any verse, show how each vendored source renders it
+    ingest_oshb.py                       # OSHB OSIS → sibling tree (on-demand cross-check) [planned, not yet built]
+    ingest_uxlc.py                       # UXLC → sibling tree (on-demand cross-check) [planned, not yet built]
+    ingest_mam.py                        # MAM → sibling tree (Aleppo tradition reference) [planned, not yet built]
+    diff_sources.py                      # For any verse, show how each vendored source renders it [planned, not yet built]
     parse_teamim.py                      # Te'amim parser (prose + Sifrei Emet) → v1/* layers
     propagate_editorial_layers.py        # v2/he cola changes → re-segment v2/{eng-*,translit}/
     build_books.py                       # v2/* (cascade to v1/*) → books/*.html
@@ -73,7 +73,7 @@ Multiple Hebrew-text sources are vendored to enable transcription cross-checking
 
 All vendored corpora live in `research/` (gitignored). The `data/` folder holds *our* derivative work and cross-references.
 
-**Constraint:** `data/text-files/v0/prose/` has exactly one source feeding it at any time. Currently that source is TAHOT. Re-picking the primary is an editorial decision (write a different `ingest_*.py`), not an architectural one. The non-primary WLC-derived sources serve as cross-checks via a `scripts/diff_sources.py` tool that surfaces transcription disagreements at the verse level.
+**Constraint:** `data/text-files/v0/prose/` has exactly one source feeding it at any time. Currently that source is TAHOT. Re-picking the primary is an editorial decision (write a different `ingest_*.py`), not an architectural one. The non-primary WLC-derived sources serve as cross-checks via a `scripts/diff_sources.py` tool (planned, not yet built) that will surface transcription disagreements at the verse level.
 
 **Textual posture:** This is a colometric reading edition based on a single textual tradition (Tiberian MT, Leningrad). LXX, Dead Sea Scrolls, Samaritan Pentateuch, Targums, Peshitta, and Vulgate are explicitly out of scope. See `private/01-method/colometry-canon.md §1.1` for the full statement.
 

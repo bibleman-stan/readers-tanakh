@@ -48,7 +48,7 @@ Decisions locked in this session:
 - Domain: tanakh-reader.com (secured, CNAME committed)
 - Repo visibility: public from start, siloed from any sibling projects
 - Audio + PWA: skipped for MVP
-- Text-file tiers: start with v0 → v1-he-baseline → v4-editorial; defer v2/v3 until proven necessary
+- Text-file tiers: start with v0 → v1-he-baseline → v4-editorial; defer v2/v3 until proven necessary [SUPERSEDED — see 2026-04-27 update below]
 
 ---
 
