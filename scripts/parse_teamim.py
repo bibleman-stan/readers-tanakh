@@ -65,11 +65,25 @@ PROSE_BREAKERS = {
 
 # Tier-1/2 disjunctives — Sifrei Emet (Pss / Prov / poetic Job).
 # NOTE: Same draft-heuristic caveat as PROSE_BREAKERS — seed for v1-he-baseline.
+#
+# Sifrei Emet primary disjunctives (Wickes 1881): Silluq (terminal, implicit
+# at verse end), Athnah (ETNAHTA U+0591), Ole-weyored (OLE U+05AB), Dehi
+# (DEHI U+05AD), Revia Gadol (REVIA U+0597).
+#
+# ZAQEF QATAN (U+0594) is also included because some poetic chapters in
+# books that carry prose cantillation — notably Jonah 2 (the prayer) — use
+# prose accent marks throughout despite being poetic in meter and register.
+# In those chapters OLE and DEHI are absent; ZAQEF QATAN provides the
+# mid-verse interior breaks that bring cola counts into the 3-4 range
+# expected for bicola/tricola verse (verified against Jonah 2:7 before/after).
+# The v4 editorial pass remains the authoritative line-break surface.
 POETIC_BREAKERS = {
-    "֑",  # ETNAHTA
-    "֫",  # OLE (component of oleh ve-yored)
-    "֭",  # DEHI
-    "֗",  # REVIA (revia mugrash in poetic position)
+    "֑",  # ETNAHTA (U+0591) — primary disjunctive (both systems)
+    "֫",  # OLE (U+05AB) — component of oleh ve-yored (Sifrei Emet)
+    "֭",  # DEHI (U+05AD) — primary disjunctive (Sifrei Emet)
+    "֗",  # REVIA (U+0597) — revia gadol / revia mugrash (Sifrei Emet)
+    "֔",  # ZAQEF QATAN (U+0594) — tier-2 prose disjunctive included for
+          #   prose-cantillated poetic chapters (e.g. Jonah 2 prayer)
 }
 
 # TODO(canon-2026-04-26): Tifcha treatment.
@@ -85,13 +99,340 @@ POETIC_BREAKERS = {
 PARAGRAPH_MARKERS_RE = re.compile(r"\s+[פס]\s*$")
 VERSE_REF_RE = re.compile(r"^\d+:\d+$")
 
+# BOOK_REGISTRY — all 39 Tanakh books in BHS canonical order.
+#
+# Keys:
+#   subdir          — directory name under v0/prose, v1/he-baseline, etc.
+#                     (must match what ingest_tahot.py produced)
+#   prefix          — filename stem (chapter files are {prefix}-{n:02d}.txt
+#                     but ingest produces {prefix}-{n}.txt; parse_book uses
+#                     startswith(prefix+"-") to glob, so zero-padding is
+#                     irrelevant as long as the stem matches)
+#   tahot_book_code — 3-letter TAHOT internal code (for reference / future
+#                     cross-tool use; not read by parse_teamim.py itself)
+#   tahot_file      — which TAHOT source file this book lives in
+#   poetic_chapters — list of chapter numbers routed through POETIC_BREAKERS
+#
+# Sifrei Emet routing:
+#   Psalms (all 150) and Proverbs (all 31): full Sifrei Emet accent system.
+#   Job chapters 3-42: poetic body; chs 1-2 and 42:7-17 are prose by accents
+#     but chapter granularity forces a whole-chapter decision — chs 1-2 & 42
+#     are left as prose here; the prose tail of ch 42 is a TODO for v4.
+#   Lamentations: carries prose accents in Leningrad despite Sifrei Emet
+#     liturgical status — confirmed by accent-inventory inspection; routes prose.
+#   Song of Songs: prose accents per Leningrad — routes prose.
+#   Jonah 2 (the prayer): poetic meter and register, but the Leningrad text
+#     uses prose accent marks (no OLE/DEHI). Routes through POETIC_BREAKERS
+#     so ZAQEF QATAN provides interior breaks that OLE/DEHI would in a true
+#     Sifrei Emet chapter. See POETIC_BREAKERS comment for details.
+#
+# Ezekiel note: 26-ezekiel is absent from v0/prose (ingest_tahot.py uses
+#   "Eze" as the book code but the TAHOT file uses "Ezk" — a pre-existing
+#   ingest bug). parse_book("ezekiel") will fail with a clear error until
+#   the ingest bug is resolved. Entry is included so --all-books can skip
+#   gracefully rather than hard-exit on a missing entry.
 BOOK_REGISTRY = {
+    # ── Torah (TAHOT_Gen-Deu.txt) ─────────────────────────────────────────
+    "genesis": {
+        "subdir": "01-genesis",
+        "prefix": "genesis",
+        "tahot_book_code": "Gen",
+        "tahot_file": "TAHOT_Gen-Deu.txt",
+        "poetic_chapters": [],
+    },
+    "exodus": {
+        "subdir": "02-exodus",
+        "prefix": "exodus",
+        "tahot_book_code": "Exo",
+        "tahot_file": "TAHOT_Gen-Deu.txt",
+        "poetic_chapters": [],
+    },
+    "leviticus": {
+        "subdir": "03-leviticus",
+        "prefix": "leviticus",
+        "tahot_book_code": "Lev",
+        "tahot_file": "TAHOT_Gen-Deu.txt",
+        "poetic_chapters": [],
+    },
+    "numbers": {
+        "subdir": "04-numbers",
+        "prefix": "numbers",
+        "tahot_book_code": "Num",
+        "tahot_file": "TAHOT_Gen-Deu.txt",
+        "poetic_chapters": [],
+    },
+    "deuteronomy": {
+        "subdir": "05-deuteronomy",
+        "prefix": "deuteronomy",
+        "tahot_book_code": "Deu",
+        "tahot_file": "TAHOT_Gen-Deu.txt",
+        "poetic_chapters": [],
+    },
+    # ── Former Prophets / Writings (TAHOT_Jos-Est.txt) ───────────────────
+    "joshua": {
+        "subdir": "06-joshua",
+        "prefix": "joshua",
+        "tahot_book_code": "Jos",
+        "tahot_file": "TAHOT_Jos-Est.txt",
+        "poetic_chapters": [],
+    },
+    "judges": {
+        "subdir": "07-judges",
+        "prefix": "judges",
+        "tahot_book_code": "Jdg",
+        "tahot_file": "TAHOT_Jos-Est.txt",
+        "poetic_chapters": [],
+    },
+    "ruth": {
+        "subdir": "08-ruth",
+        "prefix": "ruth",
+        "tahot_book_code": "Rut",
+        "tahot_file": "TAHOT_Jos-Est.txt",
+        "poetic_chapters": [],
+    },
+    "1samuel": {
+        "subdir": "09-1samuel",
+        "prefix": "1samuel",
+        "tahot_book_code": "1Sa",
+        "tahot_file": "TAHOT_Jos-Est.txt",
+        "poetic_chapters": [],
+    },
+    "2samuel": {
+        "subdir": "10-2samuel",
+        "prefix": "2samuel",
+        "tahot_book_code": "2Sa",
+        "tahot_file": "TAHOT_Jos-Est.txt",
+        "poetic_chapters": [],
+    },
+    "1kings": {
+        "subdir": "11-1kings",
+        "prefix": "1kings",
+        "tahot_book_code": "1Ki",
+        "tahot_file": "TAHOT_Jos-Est.txt",
+        "poetic_chapters": [],
+    },
+    "2kings": {
+        "subdir": "12-2kings",
+        "prefix": "2kings",
+        "tahot_book_code": "2Ki",
+        "tahot_file": "TAHOT_Jos-Est.txt",
+        "poetic_chapters": [],
+    },
+    "1chronicles": {
+        "subdir": "13-1chronicles",
+        "prefix": "1chronicles",
+        "tahot_book_code": "1Ch",
+        "tahot_file": "TAHOT_Jos-Est.txt",
+        "poetic_chapters": [],
+    },
+    "2chronicles": {
+        "subdir": "14-2chronicles",
+        "prefix": "2chronicles",
+        "tahot_book_code": "2Ch",
+        "tahot_file": "TAHOT_Jos-Est.txt",
+        "poetic_chapters": [],
+    },
+    "ezra": {
+        "subdir": "15-ezra",
+        "prefix": "ezra",
+        "tahot_book_code": "Ezr",
+        "tahot_file": "TAHOT_Jos-Est.txt",
+        "poetic_chapters": [],
+    },
+    "nehemiah": {
+        "subdir": "16-nehemiah",
+        "prefix": "nehemiah",
+        "tahot_book_code": "Neh",
+        "tahot_file": "TAHOT_Jos-Est.txt",
+        "poetic_chapters": [],
+    },
+    "esther": {
+        "subdir": "17-esther",
+        "prefix": "esther",
+        "tahot_book_code": "Est",
+        "tahot_file": "TAHOT_Jos-Est.txt",
+        "poetic_chapters": [],
+    },
+    # ── Sifrei Emet + Wisdom (TAHOT_Job-Sng.txt) ─────────────────────────
+    "job": {
+        "subdir": "18-job",
+        "prefix": "job",
+        "tahot_book_code": "Job",
+        "tahot_file": "TAHOT_Job-Sng.txt",
+        # Poetic body: chs 3-42. Prose frame: chs 1-2 and the epilogue
+        # tail 42:7-17. At chapter granularity ch 42 is forced to one
+        # decision; routing it prose loses the poetic 3:1-42:6 body.
+        # TODO(v4): the prose tail of ch 42 needs editorial attention.
+        "poetic_chapters": list(range(3, 43)),
+    },
+    "psalms": {
+        "subdir": "19-psalms",
+        "prefix": "psalms",
+        "tahot_book_code": "Psa",
+        "tahot_file": "TAHOT_Job-Sng.txt",
+        "poetic_chapters": list(range(1, 151)),   # all 150 Psalms
+    },
+    "proverbs": {
+        "subdir": "20-proverbs",
+        "prefix": "proverbs",
+        "tahot_book_code": "Pro",
+        "tahot_file": "TAHOT_Job-Sng.txt",
+        "poetic_chapters": list(range(1, 32)),   # all 31 chapters
+    },
+    "ecclesiastes": {
+        "subdir": "21-ecclesiastes",
+        "prefix": "ecclesiastes",
+        "tahot_book_code": "Ecc",
+        "tahot_file": "TAHOT_Job-Sng.txt",
+        "poetic_chapters": [],   # prose accents in Leningrad
+    },
+    "songofsongs": {
+        "subdir": "22-songofsongs",
+        "prefix": "songofsongs",
+        "tahot_book_code": "Sng",
+        "tahot_file": "TAHOT_Job-Sng.txt",
+        "poetic_chapters": [],   # prose accents in Leningrad
+    },
+    # ── Latter Prophets (TAHOT_Isa-Mal.txt) ──────────────────────────────
+    "isaiah": {
+        "subdir": "23-isaiah",
+        "prefix": "isaiah",
+        "tahot_book_code": "Isa",
+        "tahot_file": "TAHOT_Isa-Mal.txt",
+        "poetic_chapters": [],
+    },
+    "jeremiah": {
+        "subdir": "24-jeremiah",
+        "prefix": "jeremiah",
+        "tahot_book_code": "Jer",
+        "tahot_file": "TAHOT_Isa-Mal.txt",
+        "poetic_chapters": [],
+    },
+    "lamentations": {
+        "subdir": "25-lamentations",
+        "prefix": "lamentations",
+        "tahot_book_code": "Lam",
+        "tahot_file": "TAHOT_Isa-Mal.txt",
+        # Prose accents in Leningrad despite Sifrei Emet liturgical status.
+        "poetic_chapters": [],
+    },
+    "ezekiel": {
+        # NOTE: TAHOT uses book code "Ezk" (not "Eze" as ingest_tahot.py
+        # assumed). The v0/prose directory exists but may have alignment
+        # failures in some chapters due to the ingest mismatch. The
+        # tahot_book_code here is corrected to match TAHOT.
+        "subdir": "26-ezekiel",
+        "prefix": "ezekiel",
+        "tahot_book_code": "Ezk",
+        "tahot_file": "TAHOT_Isa-Mal.txt",
+        "poetic_chapters": [],
+    },
+    "daniel": {
+        "subdir": "27-daniel",
+        "prefix": "daniel",
+        "tahot_book_code": "Dan",
+        "tahot_file": "TAHOT_Isa-Mal.txt",
+        "poetic_chapters": [],
+    },
+    "hosea": {
+        "subdir": "28-hosea",
+        "prefix": "hosea",
+        "tahot_book_code": "Hos",
+        "tahot_file": "TAHOT_Isa-Mal.txt",
+        "poetic_chapters": [],
+    },
+    "joel": {
+        "subdir": "29-joel",
+        "prefix": "joel",
+        "tahot_book_code": "Jol",
+        "tahot_file": "TAHOT_Isa-Mal.txt",
+        "poetic_chapters": [],
+    },
+    "amos": {
+        "subdir": "30-amos",
+        "prefix": "amos",
+        "tahot_book_code": "Amo",
+        "tahot_file": "TAHOT_Isa-Mal.txt",
+        "poetic_chapters": [],
+    },
+    "obadiah": {
+        "subdir": "31-obadiah",
+        "prefix": "obadiah",
+        "tahot_book_code": "Oba",
+        "tahot_file": "TAHOT_Isa-Mal.txt",
+        "poetic_chapters": [],
+    },
     "jonah": {
-        "subdir": "05-jonah",
+        "subdir": "32-jonah",
         "prefix": "jonah",
-        "poetic_chapters": [2],   # the prayer
+        "tahot_book_code": "Jon",
+        "tahot_file": "TAHOT_Isa-Mal.txt",
+        # Ch 2 is the psalm/prayer. Leningrad uses prose accent marks
+        # throughout (no OLE/DEHI), so POETIC_BREAKERS fires on ETNAHTA,
+        # REVIA, and ZAQEF QATAN — giving 3-4 cola/verse as expected.
+        "poetic_chapters": [2],
+    },
+    "micah": {
+        "subdir": "33-micah",
+        "prefix": "micah",
+        "tahot_book_code": "Mic",
+        "tahot_file": "TAHOT_Isa-Mal.txt",
+        "poetic_chapters": [],
+    },
+    "nahum": {
+        "subdir": "34-nahum",
+        "prefix": "nahum",
+        "tahot_book_code": "Nam",
+        "tahot_file": "TAHOT_Isa-Mal.txt",
+        "poetic_chapters": [],
+    },
+    "habakkuk": {
+        "subdir": "35-habakkuk",
+        "prefix": "habakkuk",
+        "tahot_book_code": "Hab",
+        "tahot_file": "TAHOT_Isa-Mal.txt",
+        "poetic_chapters": [],
+    },
+    "zephaniah": {
+        "subdir": "36-zephaniah",
+        "prefix": "zephaniah",
+        "tahot_book_code": "Zep",
+        "tahot_file": "TAHOT_Isa-Mal.txt",
+        "poetic_chapters": [],
+    },
+    "haggai": {
+        "subdir": "37-haggai",
+        "prefix": "haggai",
+        "tahot_book_code": "Hag",
+        "tahot_file": "TAHOT_Isa-Mal.txt",
+        "poetic_chapters": [],
+    },
+    "zechariah": {
+        "subdir": "38-zechariah",
+        "prefix": "zechariah",
+        "tahot_book_code": "Zec",
+        "tahot_file": "TAHOT_Isa-Mal.txt",
+        "poetic_chapters": [],
+    },
+    "malachi": {
+        "subdir": "39-malachi",
+        "prefix": "malachi",
+        "tahot_book_code": "Mal",
+        "tahot_file": "TAHOT_Isa-Mal.txt",
+        "poetic_chapters": [],
     },
 }
+
+# BHS canonical order for --all-books iteration
+BOOK_ORDER = [
+    "genesis", "exodus", "leviticus", "numbers", "deuteronomy",
+    "joshua", "judges", "ruth", "1samuel", "2samuel",
+    "1kings", "2kings", "1chronicles", "2chronicles", "ezra", "nehemiah", "esther",
+    "job", "psalms", "proverbs", "ecclesiastes", "songofsongs",
+    "isaiah", "jeremiah", "lamentations", "ezekiel", "daniel",
+    "hosea", "joel", "amos", "obadiah", "jonah", "micah",
+    "nahum", "habakkuk", "zephaniah", "haggai", "zechariah", "malachi",
+]
 
 
 # ---- Hebrew structural-gloss naturalizer ---------------------------------
@@ -408,11 +749,63 @@ def parse_book(book_key):
     )
 
 
+def parse_all_books():
+    """Iterate every book in BOOK_REGISTRY in BHS canonical order.
+
+    Prints per-book status (parse OK / errors / cola count).
+    Books whose v0/prose directory does not exist are skipped with a warning
+    rather than hard-exiting, so a partial corpus (e.g. missing Ezekiel due
+    to a pre-existing ingest bug) does not abort the full-corpus run.
+    """
+    grand_total = 0
+    ok_count = 0
+    skip_count = 0
+
+    for book_key in BOOK_ORDER:
+        spec = BOOK_REGISTRY[book_key]
+        he_in_dir = os.path.join(V0_DIR, spec["subdir"])
+        if not os.path.isdir(he_in_dir):
+            print(f"  SKIP {book_key}: v0/prose dir not found ({spec['subdir']})")
+            skip_count += 1
+            continue
+        try:
+            print(f"\n--- {book_key} ---")
+            parse_book(book_key)
+            ok_count += 1
+        except SystemExit as exc:
+            print(f"  ERROR {book_key}: {exc}")
+            skip_count += 1
+
+    print(
+        f"\n=== --all-books complete: {ok_count} parsed, {skip_count} skipped/errored ==="
+    )
+
+
 def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--book", required=True)
+    ap = argparse.ArgumentParser(
+        description="Te'amim-driven baseline cola generator (v1-he-baseline)."
+    )
+    grp = ap.add_mutually_exclusive_group(required=True)
+    grp.add_argument(
+        "--book",
+        metavar="BOOK_KEY",
+        help="Parse a single book by registry key (e.g. 'jonah', 'genesis').",
+    )
+    grp.add_argument(
+        "--all-books",
+        action="store_true",
+        help=(
+            "Parse every book in BOOK_REGISTRY in BHS canonical order. "
+            "Prints per-book status. Books with missing v0/prose dirs are "
+            "skipped with a warning."
+        ),
+    )
     args = ap.parse_args()
-    parse_book(args.book)
+
+    if args.all_books:
+        parse_all_books()
+    else:
+        parse_book(args.book)
 
 
 if __name__ == "__main__":
