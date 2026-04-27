@@ -18,6 +18,8 @@ Usage:
     PYTHONIOENCODING=utf-8 py -3 scripts/generate_english_glosses.py --book 05-jonah --use-v1
     PYTHONIOENCODING=utf-8 py -3 scripts/generate_english_glosses.py --book 05-jonah --dry-run
     PYTHONIOENCODING=utf-8 py -3 scripts/generate_english_glosses.py --book 05-jonah --verbose
+    PYTHONIOENCODING=utf-8 py -3 scripts/generate_english_glosses.py --all-books
+    PYTHONIOENCODING=utf-8 py -3 scripts/generate_english_glosses.py --all-books --dry-run
 """
 
 import argparse
@@ -218,7 +220,23 @@ NATURALIZE_RULES = [
     (r"\bfrom off\b",   "from off"),
     (r"\bto to\b",      "to"),
     # -----------------------------------------------------------------------
-    # 3. Possessive-suffix reorder ("noun its/his/her/their" → "its/his/her/their noun")
+    # 3. Poetry-aware: construct-chain double-suffix reorder.
+    # Macula emits two gloss tokens for a single Hebrew word when a construct
+    # form carries a suffix that belongs to a following bound noun — e.g.
+    # קָדְשְׁךָ "your holiness your" / "your holy your" → "your holy".
+    # Pattern: "the temple your holiness your" → "your holy temple".
+    # Must run BEFORE the single-token possessive reorders (rule 4) so the
+    # double-suffix is collapsed first.
+    # -----------------------------------------------------------------------
+    # "the temple your holiness your" → "your holy temple"
+    (r"\bthe temple your holiness your\b",      "your holy temple"),
+    (r"\bthe temple your your holy\b",          "your holy temple"),
+    # Generic double-possessive collapse for "X your Y your" → "your Y X"
+    # Handles any noun + "your holiness your" or "your X your" artifact.
+    (r"\b(\w+) your holiness your\b",           r"your holy \1"),
+    (r"\b(\w+) your your holy\b",               r"your holy \1"),
+    # -----------------------------------------------------------------------
+    # 4. Possessive-suffix reorder ("noun its/his/her/their" → "its/his/her/their noun")
     # These are the most common Hebrew suffixed-noun→English reorderings.
     # -----------------------------------------------------------------------
     (r"\bfare its\b",           "its fare"),
@@ -230,6 +248,7 @@ NATURALIZE_RULES = [
     (r"\bheart his\b",          "his heart"),
     (r"\bname his\b",           "his name"),
     (r"\bvoice his\b",          "his voice"),
+    (r"\bvoice my\b",           "my voice"),
     (r"\bword his\b",           "his word"),
     (r"\bservant his\b",        "his servant"),
     (r"\bpeople his\b",         "his people"),
@@ -240,6 +259,9 @@ NATURALIZE_RULES = [
     (r"\bmouth their\b",        "their mouth"),
     (r"\bhand their\b",         "their hand"),
     (r"\bwickedness their\b",   "their wickedness"),
+    (r"\bloyalty their\b",      "their loyalty"),
+    (r"\bfaithfulness their\b", "their faithfulness"),
+    (r"\bkindness their\b",     "their kindness"),
     (r"\bhand my\b",            "my hand"),
     (r"\bmouth my\b",           "my mouth"),
     (r"\bface my\b",            "my face"),
@@ -260,6 +282,7 @@ NATURALIZE_RULES = [
     (r"\bbelly his\b",          "his belly"),
     (r"\bhead my\b",            "my head"),
     (r"\bdepths their\b",       "their depths"),
+    (r"\bbreakers your\b",      "your breakers"),
     (r"\bwaves your\b",         "your waves"),
     (r"\bbillows your\b",       "your billows"),
     (r"\bholiness your\b",      "your holy"),
@@ -272,8 +295,71 @@ NATURALIZE_RULES = [
     (r"\bneighbor his\b",       "his neighbor"),
     (r"\blocality his\b",       "his place"),
     (r"\bplace his\b",          "his place"),
+    # Additional poetic-register possessive patterns (Jonah 2 / Psalms attested)
+    (r"\bsalvation my\b",       "my salvation"),
+    (r"\bsalvation his\b",      "his salvation"),
+    (r"\bdeliverance my\b",     "my deliverance"),
+    (r"\blove your\b",          "your love"),
+    (r"\bmercy your\b",         "your mercy"),
+    (r"\bfaithfulness your\b",  "your faithfulness"),
+    (r"\bkingdom his\b",        "his kingdom"),
+    (r"\bglory his\b",          "his glory"),
+    (r"\bstrength his\b",       "his strength"),
+    (r"\bpower his\b",          "his power"),
+    (r"\bright his\b",          "his right"),
+    (r"\bright hand his\b",     "his right hand"),
+    (r"\bname your\b",          "your name"),
+    (r"\bpraise your\b",        "your praise"),
+    (r"\bword your\b",          "your word"),
+    (r"\bcommandments your\b",  "your commandments"),
+    (r"\bstatutes your\b",      "your statutes"),
+    (r"\bways your\b",          "your ways"),
+    (r"\bwork your\b",          "your work"),
+    (r"\bworks your\b",         "your works"),
+    (r"\blight your\b",         "your light"),
+    (r"\btruth your\b",         "your truth"),
+    (r"\bpath my\b",            "my path"),
+    (r"\bway my\b",             "my way"),
+    (r"\btrust my\b",           "my trust"),
+    (r"\bhope my\b",            "my hope"),
+    (r"\brock my\b",            "my rock"),
+    (r"\bshield my\b",          "my shield"),
+    (r"\bsong my\b",            "my song"),
+    (r"\brefuge my\b",          "my refuge"),
+    (r"\bstrength my\b",        "my strength"),
+    (r"\bhelp my\b",            "my help"),
     # -----------------------------------------------------------------------
-    # 4. NP-Demonstrative reorder ("the X this/that" → "this/that X")
+    # 5. Poetry-aware: double-gloss dedup.
+    # Macula sometimes emits two English tokens for a single Hebrew adverbial
+    # (e.g. לְעוֹלָם → "forever of perpetuity" where both tokens mean "forever").
+    # Deduplicate the most common compound-morpheme over-emissions.
+    # Rule: when the same semantic content appears twice in close proximity,
+    # collapse to one.
+    # -----------------------------------------------------------------------
+    (r"\bforever of perpetuity\b",   "forever"),
+    (r"\bperpetually forever\b",     "forever"),
+    (r"\bforever and ever ever\b",   "forever and ever"),
+    (r"\beternity forever\b",        "forever"),
+    (r"\bforever eternity\b",        "forever"),
+    # Reduplication artifact: "I I" (waw + pronoun both glossed as subject)
+    (r"\bI I\b",                     "I"),
+    # -----------------------------------------------------------------------
+    # 6. Poetry-aware: vocative O-particle insertion.
+    # When a divine name appears immediately before a first-person verb in
+    # a prayer/address context (no intervening conjunction or preposition),
+    # insert vocative "O" and a comma.
+    # Detection: name immediately followed by first-person action verb.
+    # -----------------------------------------------------------------------
+    # "Yahweh I remembered" → "O Yahweh, I remembered" (Jonah 2:8 pattern)
+    # "Yahweh I called" → "O Yahweh, I called"
+    # The pattern fires when the name is not already preceded by "to"/"before"
+    # (preposition-governed position signals indirect object, not vocative).
+    (r"(?<!\bto )\bYahweh I (remembered|called|cried|prayed|sang|sing|praise|praised|thank|thanked|bless|blessed|seek|sought|answered|heard|saved|delivered)\b",
+                                          r"O Yahweh, I \1"),
+    # Line-initial: "Yahweh my God" direct address in prayer
+    (r"^(O )?Yahweh my God\b",           r"O Yahweh my God"),
+    # -----------------------------------------------------------------------
+    # 7. NP-Demonstrative reorder ("the X this/that" → "this/that X")
     # Hebrew: definite noun + definite demonstrative (הָאִישׁ הַזֶּה)
     # -----------------------------------------------------------------------
     (r"\bthe man this\b",       "this man"),
@@ -293,26 +379,26 @@ NATURALIZE_RULES = [
     (r"\bthe city that\b",      "that city"),
     (r"\bthe day that\b",       "that day"),
     # -----------------------------------------------------------------------
-    # 5. Predicate-nominative pronoun-fronting ("am X I" → "I am X")
+    # 8. Predicate-nominative pronoun-fronting ("am X I" → "I am X")
     # Hebrew: PRED + COPULA-zero + PRONOUN
     # -----------------------------------------------------------------------
     (r"\bam a (\w+) I\b",       r"I am a \1"),
     (r"\bam an (\w+) I\b",      r"I am an \1"),
     (r"\bam (\w+) I\b",         r"I am \1"),
     # -----------------------------------------------------------------------
-    # 6. "for am knowing I" / "am knowing I" → "for I know" / "I know"
+    # 9. "for am knowing I" / "am knowing I" → "for I know" / "I know"
     # (Jonah 1:12 — verbal copula with participle)
     # -----------------------------------------------------------------------
     (r"\bfor am knowing I\b",   "for I know"),
     (r"\bam knowing I\b",       "I know"),
     # -----------------------------------------------------------------------
-    # 7. Particle reorder
+    # 10. Particle reorder
     # -----------------------------------------------------------------------
     (r"\bdo not please\b",      "please do not"),
     # "tell please to us" → "tell us please"
     (r"\btell please to us\b",  "tell us please"),
     # -----------------------------------------------------------------------
-    # 8. Interrogative cleanup: remove stranded "what?" / "where?" etc
+    # 11. Interrogative cleanup: remove stranded "what?" / "where?" etc
     # that survive after morph-level lookup (Macula emits "what?" as a gloss).
     # Replace with plain "what" / "where" etc.
     # -----------------------------------------------------------------------
@@ -322,11 +408,11 @@ NATURALIZE_RULES = [
     (r"\bhow\?\b",   "how"),
     (r"\bwhy\?\b",   "why"),
     # -----------------------------------------------------------------------
-    # 9. Double-article cleanup
+    # 12. Double-article cleanup
     # -----------------------------------------------------------------------
     (r"\bthe the\b", "the"),
     # -----------------------------------------------------------------------
-    # 10. Common Hebrew attributive-adjective reorder ("noun adj" → "adj noun").
+    # 13. Common Hebrew attributive-adjective reorder ("noun adj" → "adj noun").
     # Hebrew: NOUN + ADJECTIVE (both definite or both indefinite).
     # These are the most frequent Jonah / narrative-prose patterns.
     # -----------------------------------------------------------------------
@@ -346,7 +432,7 @@ NATURALIZE_RULES = [
     (r"\bnights three\b",          "three nights"),
     (r"\bdays forty\b",            "forty days"),
     # -----------------------------------------------------------------------
-    # 11. VS→SV reorder for wayyiqtol-initial narrative.
+    # 14. VS→SV reorder for wayyiqtol-initial narrative.
     # These are the most frequent instances in Jonah 1.
     # Pattern: "and he/they/it [VERB] the/a [SUBJECT]" → SVO order.
     # Applied via targeted phrase patterns (regex is limited here; full
@@ -362,7 +448,7 @@ NATURALIZE_RULES = [
     (r"\band the sea stopped\b",                "and the sea stopped"),
     (r"\band he arose Yahweh\b",                "and Yahweh he hurled"),  # 1:4 special
     # -----------------------------------------------------------------------
-    # 12. Collapse multiple whitespace (always last)
+    # 15. Collapse multiple whitespace (always last)
     # -----------------------------------------------------------------------
     (r"  +", " "),
 ]
@@ -811,9 +897,31 @@ def process_chapter(
 # Entry point
 # ---------------------------------------------------------------------------
 
+def _collect_books_with_chapters(use_v1: bool) -> list[tuple[str, list[str]]]:
+    """Return [(book_folder, [chapter_filenames, ...]), ...] for all books with content.
+
+    Prefers v2/he; falls back to v1/he-baseline per chapter, same as process_chapter().
+    Only returns books that have at least one chapter file.
+    """
+    results = []
+    for book_folder in sorted(BOOK_OSIS.keys()):
+        src_dir_v2 = V2_HE_DIR / book_folder
+        src_dir_v1 = V1_HE_DIR / book_folder
+        chapter_files = sorted(
+            {p.name for p in src_dir_v2.glob("*.txt") if src_dir_v2.exists()}
+            | {p.name for p in src_dir_v1.glob("*.txt") if src_dir_v1.exists()}
+        )
+        if chapter_files:
+            results.append((book_folder, chapter_files))
+    return results
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--book",    required=True, help="Book folder name, e.g. 05-jonah")
+    book_group = ap.add_mutually_exclusive_group(required=True)
+    book_group.add_argument("--book",      help="Book folder name, e.g. 05-jonah")
+    book_group.add_argument("--all-books", action="store_true",
+                            help="Generate glosses for every book that has content in v2/he or v1/he-baseline")
     ap.add_argument("--use-v1", action="store_true",
                     help="Generate from v1/he-baseline instead of v2/he")
     ap.add_argument("--dry-run", action="store_true",
@@ -822,45 +930,89 @@ def main():
                     help="Print each cola's Hebrew + generated gloss with match details")
     args = ap.parse_args()
 
-    osis_book = BOOK_OSIS.get(args.book)
-    if not osis_book:
-        sys.exit(
-            f"ERROR: no OSIS mapping for book {args.book!r} — add to BOOK_OSIS dict.\n"
-            f"Known books: {', '.join(sorted(BOOK_OSIS))}"
-        )
-
-    # Determine chapter files from the available Hebrew tiers.
-    src_dir_v2 = V2_HE_DIR / args.book
-    src_dir_v1 = V1_HE_DIR / args.book
-    all_chapter_files = sorted(
-        {p.name for p in src_dir_v2.glob("*.txt") if src_dir_v2.exists()}
-        | {p.name for p in src_dir_v1.glob("*.txt") if src_dir_v1.exists()}
-    )
-    if not all_chapter_files:
-        sys.exit(f"ERROR: no .txt chapter files found under {src_dir_v2} or {src_dir_v1}")
-
     # Build phrase-map index (stripped keys).
     _build_phrase_map_index()
 
-    # Load Macula TSV filtered to this book.
-    by_ref = load_macula_tsv(book_prefix=osis_book)
+    if args.all_books:
+        # Collect all books that have content.
+        books_with_chapters = _collect_books_with_chapters(args.use_v1)
+        if not books_with_chapters:
+            sys.exit("ERROR: no book directories with .txt chapter files found under v2/he or v1/he-baseline")
 
-    print(f"\nGenerating gloss for {args.book} ({len(all_chapter_files)} chapters)...")
-    for cf_name in all_chapter_files:
-        process_chapter(
-            book=args.book,
-            chapter_filename=cf_name,
-            by_ref=by_ref,
-            osis_book=osis_book,
-            use_v1=args.use_v1,
-            dry_run=args.dry_run,
-            verbose=args.verbose,
-        )
+        print(f"Found {len(books_with_chapters)} book(s) with content.")
+        total_chapters = sum(len(chs) for _, chs in books_with_chapters)
+        print(f"Total chapters to process: {total_chapters}")
 
-    if not args.dry_run:
-        print(f"\nDone. Output: {OUT_DIR / args.book}/")
+        # For --all-books, load full Macula TSV once (no per-book filter).
+        by_ref_all = load_macula_tsv(book_prefix=None)
+
+        grand_total_cola = 0
+        for book_folder, chapter_files in books_with_chapters:
+            osis_book = BOOK_OSIS[book_folder]
+            print(f"\n--- {book_folder} ({osis_book}) — {len(chapter_files)} chapter(s) ---")
+            book_cola = 0
+            for cf_name in chapter_files:
+                out_lines = process_chapter(
+                    book=book_folder,
+                    chapter_filename=cf_name,
+                    by_ref=by_ref_all,
+                    osis_book=osis_book,
+                    use_v1=args.use_v1,
+                    dry_run=args.dry_run,
+                    verbose=args.verbose,
+                )
+                if out_lines is not None:
+                    cola_count = sum(
+                        1 for ln in out_lines
+                        if ln.strip() and not VERSE_REF_RE.match(ln.strip())
+                    )
+                    book_cola += cola_count
+            grand_total_cola += book_cola
+            print(f"  {book_folder}: {len(chapter_files)} chapters, ~{book_cola} cola")
+
+        print(f"\n=== All-books complete: {len(books_with_chapters)} books, "
+              f"{total_chapters} chapters, ~{grand_total_cola} cola ===")
+        if args.dry_run:
+            print("Dry-run: no files written.")
+
     else:
-        print(f"\nDry-run complete. No files written.")
+        # Single-book mode.
+        osis_book = BOOK_OSIS.get(args.book)
+        if not osis_book:
+            sys.exit(
+                f"ERROR: no OSIS mapping for book {args.book!r} — add to BOOK_OSIS dict.\n"
+                f"Known books: {', '.join(sorted(BOOK_OSIS))}"
+            )
+
+        # Determine chapter files from the available Hebrew tiers.
+        src_dir_v2 = V2_HE_DIR / args.book
+        src_dir_v1 = V1_HE_DIR / args.book
+        all_chapter_files = sorted(
+            {p.name for p in src_dir_v2.glob("*.txt") if src_dir_v2.exists()}
+            | {p.name for p in src_dir_v1.glob("*.txt") if src_dir_v1.exists()}
+        )
+        if not all_chapter_files:
+            sys.exit(f"ERROR: no .txt chapter files found under {src_dir_v2} or {src_dir_v1}")
+
+        # Load Macula TSV filtered to this book.
+        by_ref = load_macula_tsv(book_prefix=osis_book)
+
+        print(f"\nGenerating gloss for {args.book} ({len(all_chapter_files)} chapters)...")
+        for cf_name in all_chapter_files:
+            process_chapter(
+                book=args.book,
+                chapter_filename=cf_name,
+                by_ref=by_ref,
+                osis_book=osis_book,
+                use_v1=args.use_v1,
+                dry_run=args.dry_run,
+                verbose=args.verbose,
+            )
+
+        if not args.dry_run:
+            print(f"\nDone. Output: {OUT_DIR / args.book}/")
+        else:
+            print(f"\nDry-run complete. No files written.")
 
 
 if __name__ == "__main__":
