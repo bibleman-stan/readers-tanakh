@@ -32,11 +32,11 @@ Sweep-scale audit warning (canon §7): if ≥5 changes are applied in a
 single run, a WARNING is printed.
 
 Usage:
-    PYTHONIOENCODING=utf-8 py -3 scripts/apply_validators.py --book 05-jonah
+    PYTHONIOENCODING=utf-8 py -3 scripts/apply_validators.py --book 32-jonah
     PYTHONIOENCODING=utf-8 py -3 scripts/apply_validators.py --all-books
-    PYTHONIOENCODING=utf-8 py -3 scripts/apply_validators.py --book 05-jonah --dry-run
-    PYTHONIOENCODING=utf-8 py -3 scripts/apply_validators.py --book 05-jonah --report-only
-    PYTHONIOENCODING=utf-8 py -3 scripts/apply_validators.py --book 05-jonah --force
+    PYTHONIOENCODING=utf-8 py -3 scripts/apply_validators.py --book 32-jonah --dry-run
+    PYTHONIOENCODING=utf-8 py -3 scripts/apply_validators.py --book 32-jonah --report-only
+    PYTHONIOENCODING=utf-8 py -3 scripts/apply_validators.py --book 32-jonah --force
 """
 
 import argparse
@@ -806,7 +806,7 @@ def main() -> None:
     group.add_argument(
         "--book",
         metavar="BOOK",
-        help="Book folder name, e.g. '05-jonah'. Must exist under v1/he-baseline/.",
+        help="Book folder name, e.g. '32-jonah'. Must exist under v1/he-baseline/.",
     )
     group.add_argument(
         "--all-books",

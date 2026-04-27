@@ -25,8 +25,8 @@ Word-stream invariant:
   adds/removes/reorders words. Script exits with error on violation.
 
 Usage:
-    PYTHONIOENCODING=utf-8 py -3 scripts/propagate_editorial_layers.py --book 05-jonah
-    PYTHONIOENCODING=utf-8 py -3 scripts/propagate_editorial_layers.py --book 05-jonah --dry-run
+    PYTHONIOENCODING=utf-8 py -3 scripts/propagate_editorial_layers.py --book 32-jonah
+    PYTHONIOENCODING=utf-8 py -3 scripts/propagate_editorial_layers.py --book 32-jonah --dry-run
 """
 
 import argparse
@@ -282,7 +282,7 @@ def main() -> None:
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
     book_group = ap.add_mutually_exclusive_group(required=True)
-    book_group.add_argument("--book", help="Book folder, e.g. '05-jonah'")
+    book_group.add_argument("--book", help="Book folder, e.g. '32-jonah'")
     book_group.add_argument("--all-books", action="store_true", help="Process all books in v2/he/")
     ap.add_argument("--dry-run", action="store_true", help="Do not write files")
     args = ap.parse_args()

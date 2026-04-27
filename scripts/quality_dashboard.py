@@ -78,7 +78,7 @@ def discover_books() -> list[tuple[str, Path]]:
         if d.is_dir():
             slug = _slug_from_dir(d.name)
             if slug in seen_slugs:
-                # Skip duplicate (e.g. 05-jonah and 32-jonah — prefer the first)
+                # Skip duplicate (guard against stale dirs sharing a slug)
                 continue
             seen_slugs.add(slug)
             result.append((d.name, d))
@@ -756,7 +756,7 @@ def main() -> int:
     mode.add_argument(
         "--book",
         metavar="BOOK",
-        help="Score one book by slug (e.g. 'jonah') or directory name (e.g. '05-jonah').",
+        help="Score one book by slug (e.g. 'jonah') or directory name (e.g. '32-jonah').",
     )
     mode.add_argument(
         "--all-books",

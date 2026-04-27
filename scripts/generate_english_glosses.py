@@ -14,10 +14,10 @@ Output: data/text-files/v2/eng-gloss/<book>/<chapter>.txt — one English
 line per Hebrew cola, verse refs + blank lines preserved.
 
 Usage:
-    PYTHONIOENCODING=utf-8 py -3 scripts/generate_english_glosses.py --book 05-jonah
-    PYTHONIOENCODING=utf-8 py -3 scripts/generate_english_glosses.py --book 05-jonah --use-v1
-    PYTHONIOENCODING=utf-8 py -3 scripts/generate_english_glosses.py --book 05-jonah --dry-run
-    PYTHONIOENCODING=utf-8 py -3 scripts/generate_english_glosses.py --book 05-jonah --verbose
+    PYTHONIOENCODING=utf-8 py -3 scripts/generate_english_glosses.py --book 32-jonah
+    PYTHONIOENCODING=utf-8 py -3 scripts/generate_english_glosses.py --book 32-jonah --use-v1
+    PYTHONIOENCODING=utf-8 py -3 scripts/generate_english_glosses.py --book 32-jonah --dry-run
+    PYTHONIOENCODING=utf-8 py -3 scripts/generate_english_glosses.py --book 32-jonah --verbose
     PYTHONIOENCODING=utf-8 py -3 scripts/generate_english_glosses.py --all-books
     PYTHONIOENCODING=utf-8 py -3 scripts/generate_english_glosses.py --all-books --dry-run
 """
@@ -37,8 +37,8 @@ V1_HE_DIR = REPO_ROOT / "data" / "text-files" / "v1" / "he-baseline"
 OUT_DIR = REPO_ROOT / "data" / "text-files" / "v2" / "eng-gloss"
 
 # Book folder name → Macula OSIS abbreviation (matches the ref field).
-# Folder names follow the project's convention (not BHS canonical numbering).
-# Only 05-jonah exists currently; the full table is pre-populated for
+# Folder names follow the project's BHS canonical convention (numeric prefix).
+# Only 32-jonah exists currently; the full table is pre-populated for
 # future books. Verify folder names against data/text-files/v0/prose/ when
 # adding new books.
 BOOK_OSIS = {
@@ -73,15 +73,14 @@ BOOK_OSIS = {
     "29-joel":          "JOL",
     "30-amos":          "AMO",
     "31-obadiah":       "OBA",
-    # NOTE: project folder is 05-jonah, not 32-jonah (not BHS canonical order)
-    "05-jonah":         "JON",
-    "32-micah":         "MIC",
-    "33-nahum":         "NAM",
-    "34-habakkuk":      "HAB",
-    "35-zephaniah":     "ZEP",
-    "36-haggai":        "HAG",
-    "37-zechariah":     "ZEC",
-    "38-malachi":       "MAL",
+    "32-jonah":         "JON",
+    "33-micah":         "MIC",
+    "34-nahum":         "NAM",
+    "35-habakkuk":      "HAB",
+    "36-zephaniah":     "ZEP",
+    "37-haggai":        "HAG",
+    "38-zechariah":     "ZEC",
+    "39-malachi":       "MAL",
 }
 
 VERSE_REF_RE = re.compile(r"^\d+:\d+$")

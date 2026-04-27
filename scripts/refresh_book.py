@@ -12,10 +12,10 @@ For the given book (or all books with --all-books), runs sequentially:
 Each subprocess invocation includes PYTHONIOENCODING=utf-8 env var.
 
 Usage:
-    PYTHONIOENCODING=utf-8 py -3 scripts/refresh_book.py --book 05-jonah
-    PYTHONIOENCODING=utf-8 py -3 scripts/refresh_book.py --book 05-jonah --build
+    PYTHONIOENCODING=utf-8 py -3 scripts/refresh_book.py --book 32-jonah
+    PYTHONIOENCODING=utf-8 py -3 scripts/refresh_book.py --book 32-jonah --build
     PYTHONIOENCODING=utf-8 py -3 scripts/refresh_book.py --all-books --build
-    PYTHONIOENCODING=utf-8 py -3 scripts/refresh_book.py --book 05-jonah --dry-run
+    PYTHONIOENCODING=utf-8 py -3 scripts/refresh_book.py --book 32-jonah --dry-run
 """
 
 import argparse
@@ -186,7 +186,7 @@ def main():
     )
 
     book_group = ap.add_mutually_exclusive_group(required=True)
-    book_group.add_argument("--book", help="Book folder name, e.g. '05-jonah'")
+    book_group.add_argument("--book", help="Book folder name, e.g. '32-jonah'")
     book_group.add_argument("--all-books", action="store_true", help="Process all books in v1/he-baseline/")
 
     ap.add_argument("--build", action="store_true", help="Also rebuild HTML with build_books.py")

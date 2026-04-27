@@ -62,7 +62,7 @@ Every editorial decision should be defensible against the canon. When the canon 
 Once v2/he/ Hebrew is settled for a chapter, re-segment the parallel per-word layers (eng-interlinear, eng-gloss, translit) to match the new cola structure:
 
 ```bash
-PYTHONIOENCODING=utf-8 py -3 scripts/propagate_editorial_layers.py --book 05-jonah
+PYTHONIOENCODING=utf-8 py -3 scripts/propagate_editorial_layers.py --book 32-jonah
 ```
 
 Output: `data/text-files/v2/{eng-interlinear,eng-gloss,translit}/{NN-book}/{abbr}-{NN}.txt`. The propagator enforces a word-stream invariant — v1 Hebrew word stream MUST equal v2 Hebrew word stream (same words, same order, same count); editorial work changes only line breaks, never adds/removes/reorders words. Script exits with error on violation.
