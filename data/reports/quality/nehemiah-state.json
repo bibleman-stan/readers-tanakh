@@ -1,0 +1,123 @@
+{
+  "book": "nehemiah",
+  "dir_name": "16-nehemiah",
+  "timestamp": "2026-04-27T19:12:20",
+  "chapter_count": 13,
+  "total_cola": 1912,
+  "readiness_score": 88,
+  "score_breakdown": {
+    "malformed_pts": 50.0,
+    "deviation_pts": 27.44,
+    "review_pts": 10.0,
+    "drift_pts": 1.0
+  },
+  "validators": {
+    "total_findings": 92,
+    "malformed": 0,
+    "deviation": 92,
+    "review_required": 77,
+    "per_validator": [
+      {
+        "name": "validate_line_final_tokens",
+        "layer": "syntax",
+        "findings": 0,
+        "by_severity": {},
+        "by_tag": {},
+        "error": null
+      },
+      {
+        "name": "validate_maqqef_integrity",
+        "layer": "syntax",
+        "findings": 0,
+        "by_severity": {},
+        "by_tag": {},
+        "error": null
+      },
+      {
+        "name": "validate_complement_integrity",
+        "layer": "colometry",
+        "findings": 3,
+        "by_severity": {
+          "DEVIATION": 3
+        },
+        "by_tag": {
+          "STRONG-MERGE-CANDIDATE": 3
+        },
+        "error": null
+      },
+      {
+        "name": "validate_construct_chain",
+        "layer": "colometry",
+        "findings": 73,
+        "by_severity": {
+          "DEVIATION": 73
+        },
+        "by_tag": {
+          "REVIEW-REQUIRED": 73
+        },
+        "error": null
+      },
+      {
+        "name": "validate_cross_verse_continuity",
+        "layer": "colometry",
+        "findings": 0,
+        "by_severity": {},
+        "by_tag": {},
+        "error": null
+      },
+      {
+        "name": "validate_discourse_particles",
+        "layer": "colometry",
+        "findings": 1,
+        "by_severity": {
+          "DEVIATION": 1
+        },
+        "by_tag": {
+          "STRONG-MERGE-CANDIDATE": 1
+        },
+        "error": null
+      },
+      {
+        "name": "validate_speech_intro_framing",
+        "layer": "colometry",
+        "findings": 5,
+        "by_severity": {
+          "DEVIATION": 5
+        },
+        "by_tag": {
+          "REVIEW-REQUIRED": 4,
+          "STRONG-SPLIT-CANDIDATE": 1
+        },
+        "error": null
+      },
+      {
+        "name": "validate_wayehi_protasis",
+        "layer": "colometry",
+        "findings": 10,
+        "by_severity": {
+          "DEVIATION": 10
+        },
+        "by_tag": {
+          "STRONG-MERGE-CANDIDATE": 6,
+          "STRONG-SPLIT-CANDIDATE": 4
+        },
+        "error": null
+      }
+    ]
+  },
+  "english_quality": {
+    "PRONOUN": 0,
+    "NO_VERB": 0,
+    "FRAGMENT": 0,
+    "REPEAT": 0,
+    "MID_SPLIT": 0
+  },
+  "english_drift": {
+    "ARTICLE-SPLIT": 0,
+    "PREP-NP-SPLIT": 9,
+    "AUX-VERB-SPLIT": 1,
+    "PTC-NP-SPLIT": 7,
+    "APPOSITIVE-SPLIT": 1,
+    "DANGLING-CONJ": 0
+  }
+}

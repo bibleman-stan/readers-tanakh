@@ -1,0 +1,117 @@
+{
+  "book": "daniel",
+  "dir_name": "27-daniel",
+  "timestamp": "2026-04-27T19:16:11",
+  "chapter_count": 12,
+  "total_cola": 2080,
+  "readiness_score": 92,
+  "score_breakdown": {
+    "malformed_pts": 50.0,
+    "deviation_pts": 28.78,
+    "review_pts": 10.0,
+    "drift_pts": 3.5
+  },
+  "validators": {
+    "total_findings": 73,
+    "malformed": 0,
+    "deviation": 73,
+    "review_required": 69,
+    "per_validator": [
+      {
+        "name": "validate_line_final_tokens",
+        "layer": "syntax",
+        "findings": 0,
+        "by_severity": {},
+        "by_tag": {},
+        "error": null
+      },
+      {
+        "name": "validate_maqqef_integrity",
+        "layer": "syntax",
+        "findings": 0,
+        "by_severity": {},
+        "by_tag": {},
+        "error": null
+      },
+      {
+        "name": "validate_complement_integrity",
+        "layer": "colometry",
+        "findings": 1,
+        "by_severity": {
+          "DEVIATION": 1
+        },
+        "by_tag": {
+          "STRONG-MERGE-CANDIDATE": 1
+        },
+        "error": null
+      },
+      {
+        "name": "validate_construct_chain",
+        "layer": "colometry",
+        "findings": 66,
+        "by_severity": {
+          "DEVIATION": 66
+        },
+        "by_tag": {
+          "REVIEW-REQUIRED": 66
+        },
+        "error": null
+      },
+      {
+        "name": "validate_cross_verse_continuity",
+        "layer": "colometry",
+        "findings": 0,
+        "by_severity": {},
+        "by_tag": {},
+        "error": null
+      },
+      {
+        "name": "validate_discourse_particles",
+        "layer": "colometry",
+        "findings": 3,
+        "by_severity": {
+          "DEVIATION": 3
+        },
+        "by_tag": {
+          "STRONG-MERGE-CANDIDATE": 3
+        },
+        "error": null
+      },
+      {
+        "name": "validate_speech_intro_framing",
+        "layer": "colometry",
+        "findings": 3,
+        "by_severity": {
+          "DEVIATION": 3
+        },
+        "by_tag": {
+          "REVIEW-REQUIRED": 3
+        },
+        "error": null
+      },
+      {
+        "name": "validate_wayehi_protasis",
+        "layer": "colometry",
+        "findings": 0,
+        "by_severity": {},
+        "by_tag": {},
+        "error": null
+      }
+    ]
+  },
+  "english_quality": {
+    "PRONOUN": 0,
+    "NO_VERB": 0,
+    "FRAGMENT": 0,
+    "REPEAT": 0,
+    "MID_SPLIT": 0
+  },
+  "english_drift": {
+    "ARTICLE-SPLIT": 3,
+    "PREP-NP-SPLIT": 0,
+    "AUX-VERB-SPLIT": 1,
+    "PTC-NP-SPLIT": 7,
+    "APPOSITIVE-SPLIT": 2,
+    "DANGLING-CONJ": 0
+  }
+}

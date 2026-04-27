@@ -196,16 +196,27 @@ def propagate_chapter(book: str, chapter_filename: str, dry_run: bool) -> tuple[
         for line in v1_translit_lines:
             v1_translit_stream.extend(per_word_tokens(line))
 
-        if len(v1_inter_stream) != len(v1_word_stream):
-            sys.exit(
-                f"ERROR {chapter_filename} {vref}: v1 interlinear word count "
-                f"({len(v1_inter_stream)}) != Hebrew ({len(v1_word_stream)})"
+        n_he = len(v1_word_stream)
+        if len(v1_inter_stream) != n_he:
+            # Alignment-warning verse: parse_teamim skipped interlinear for this
+            # verse due to TAHOT formatting quirks. Pad with "???" placeholders
+            # so propagation can continue for the remaining chapters.
+            print(
+                f"  WARN {chapter_filename} {vref}: interlinear skipped by parser "
+                f"({len(v1_inter_stream)} tokens vs {n_he} Hebrew words) — "
+                f"padding with placeholders",
+                file=sys.stderr,
             )
-        if len(v1_translit_stream) != len(v1_word_stream):
-            sys.exit(
-                f"ERROR {chapter_filename} {vref}: v1 translit word count "
-                f"({len(v1_translit_stream)}) != Hebrew ({len(v1_word_stream)})"
+            v1_inter_stream = ["???"] * n_he
+        if len(v1_translit_stream) != n_he:
+            # Same alignment-warning case for translit.
+            print(
+                f"  WARN {chapter_filename} {vref}: translit skipped by parser "
+                f"({len(v1_translit_stream)} tokens vs {n_he} Hebrew words) — "
+                f"padding with placeholders",
+                file=sys.stderr,
             )
+            v1_translit_stream = ["???"] * n_he
 
         cursor = 0
         ed_inter_lines:    list[str] = []

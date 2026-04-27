@@ -1,0 +1,129 @@
+{
+  "book": "exodus",
+  "dir_name": "02-exodus",
+  "timestamp": "2026-04-27T19:07:33",
+  "chapter_count": 40,
+  "total_cola": 6268,
+  "readiness_score": 87,
+  "score_breakdown": {
+    "malformed_pts": 50.0,
+    "deviation_pts": 27.08,
+    "review_pts": 10.0,
+    "drift_pts": 0.0
+  },
+  "validators": {
+    "total_findings": 321,
+    "malformed": 0,
+    "deviation": 321,
+    "review_required": 267,
+    "per_validator": [
+      {
+        "name": "validate_line_final_tokens",
+        "layer": "syntax",
+        "findings": 0,
+        "by_severity": {},
+        "by_tag": {},
+        "error": null
+      },
+      {
+        "name": "validate_maqqef_integrity",
+        "layer": "syntax",
+        "findings": 0,
+        "by_severity": {},
+        "by_tag": {},
+        "error": null
+      },
+      {
+        "name": "validate_complement_integrity",
+        "layer": "colometry",
+        "findings": 7,
+        "by_severity": {
+          "DEVIATION": 7
+        },
+        "by_tag": {
+          "STRONG-MERGE-CANDIDATE": 7
+        },
+        "error": null
+      },
+      {
+        "name": "validate_construct_chain",
+        "layer": "colometry",
+        "findings": 220,
+        "by_severity": {
+          "DEVIATION": 220
+        },
+        "by_tag": {
+          "REVIEW-REQUIRED": 217,
+          "STRONG-MERGE-CANDIDATE": 3
+        },
+        "error": null
+      },
+      {
+        "name": "validate_cross_verse_continuity",
+        "layer": "colometry",
+        "findings": 18,
+        "by_severity": {
+          "DEVIATION": 18
+        },
+        "by_tag": {
+          "REVIEW-REQUIRED": 2,
+          "STRONG-MERGE-CANDIDATE": 16
+        },
+        "error": null
+      },
+      {
+        "name": "validate_discourse_particles",
+        "layer": "colometry",
+        "findings": 11,
+        "by_severity": {
+          "DEVIATION": 11
+        },
+        "by_tag": {
+          "STRONG-MERGE-CANDIDATE": 11
+        },
+        "error": null
+      },
+      {
+        "name": "validate_speech_intro_framing",
+        "layer": "colometry",
+        "findings": 51,
+        "by_severity": {
+          "DEVIATION": 51
+        },
+        "by_tag": {
+          "REVIEW-REQUIRED": 48,
+          "STRONG-SPLIT-CANDIDATE": 3
+        },
+        "error": null
+      },
+      {
+        "name": "validate_wayehi_protasis",
+        "layer": "colometry",
+        "findings": 14,
+        "by_severity": {
+          "DEVIATION": 14
+        },
+        "by_tag": {
+          "STRONG-MERGE-CANDIDATE": 8,
+          "STRONG-SPLIT-CANDIDATE": 6
+        },
+        "error": null
+      }
+    ]
+  },
+  "english_quality": {
+    "PRONOUN": 0,
+    "NO_VERB": 0,
+    "FRAGMENT": 0,
+    "REPEAT": 0,
+    "MID_SPLIT": 0
+  },
+  "english_drift": {
+    "ARTICLE-SPLIT": 6,
+    "PREP-NP-SPLIT": 14,
+    "AUX-VERB-SPLIT": 3,
+    "PTC-NP-SPLIT": 36,
+    "APPOSITIVE-SPLIT": 4,
+    "DANGLING-CONJ": 0
+  }
+}

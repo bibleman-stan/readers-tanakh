@@ -1,0 +1,127 @@
+{
+  "book": "deuteronomy",
+  "dir_name": "05-deuteronomy",
+  "timestamp": "2026-04-27T19:08:54",
+  "chapter_count": 34,
+  "total_cola": 5079,
+  "readiness_score": 88,
+  "score_breakdown": {
+    "malformed_pts": 50.0,
+    "deviation_pts": 27.64,
+    "review_pts": 10.0,
+    "drift_pts": 0.0
+  },
+  "validators": {
+    "total_findings": 229,
+    "malformed": 0,
+    "deviation": 229,
+    "review_required": 205,
+    "per_validator": [
+      {
+        "name": "validate_line_final_tokens",
+        "layer": "syntax",
+        "findings": 0,
+        "by_severity": {},
+        "by_tag": {},
+        "error": null
+      },
+      {
+        "name": "validate_maqqef_integrity",
+        "layer": "syntax",
+        "findings": 0,
+        "by_severity": {},
+        "by_tag": {},
+        "error": null
+      },
+      {
+        "name": "validate_complement_integrity",
+        "layer": "colometry",
+        "findings": 1,
+        "by_severity": {
+          "DEVIATION": 1
+        },
+        "by_tag": {
+          "STRONG-MERGE-CANDIDATE": 1
+        },
+        "error": null
+      },
+      {
+        "name": "validate_construct_chain",
+        "layer": "colometry",
+        "findings": 199,
+        "by_severity": {
+          "DEVIATION": 199
+        },
+        "by_tag": {
+          "REVIEW-REQUIRED": 196,
+          "STRONG-MERGE-CANDIDATE": 3
+        },
+        "error": null
+      },
+      {
+        "name": "validate_cross_verse_continuity",
+        "layer": "colometry",
+        "findings": 11,
+        "by_severity": {
+          "DEVIATION": 11
+        },
+        "by_tag": {
+          "STRONG-MERGE-CANDIDATE": 11
+        },
+        "error": null
+      },
+      {
+        "name": "validate_discourse_particles",
+        "layer": "colometry",
+        "findings": 2,
+        "by_severity": {
+          "DEVIATION": 2
+        },
+        "by_tag": {
+          "STRONG-MERGE-CANDIDATE": 2
+        },
+        "error": null
+      },
+      {
+        "name": "validate_speech_intro_framing",
+        "layer": "colometry",
+        "findings": 14,
+        "by_severity": {
+          "DEVIATION": 14
+        },
+        "by_tag": {
+          "REVIEW-REQUIRED": 9,
+          "STRONG-SPLIT-CANDIDATE": 5
+        },
+        "error": null
+      },
+      {
+        "name": "validate_wayehi_protasis",
+        "layer": "colometry",
+        "findings": 2,
+        "by_severity": {
+          "DEVIATION": 2
+        },
+        "by_tag": {
+          "STRONG-MERGE-CANDIDATE": 2
+        },
+        "error": null
+      }
+    ]
+  },
+  "english_quality": {
+    "PRONOUN": 0,
+    "NO_VERB": 0,
+    "FRAGMENT": 0,
+    "REPEAT": 0,
+    "MID_SPLIT": 0
+  },
+  "english_drift": {
+    "ARTICLE-SPLIT": 0,
+    "PREP-NP-SPLIT": 11,
+    "AUX-VERB-SPLIT": 2,
+    "PTC-NP-SPLIT": 13,
+    "APPOSITIVE-SPLIT": 18,
+    "DANGLING-CONJ": 0
+  }
+}

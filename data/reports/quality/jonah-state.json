@@ -1,21 +1,21 @@
 {
   "book": "jonah",
-  "dir_name": "05-jonah",
-  "timestamp": "2026-04-27T18:33:28",
+  "dir_name": "32-jonah",
+  "timestamp": "2026-04-27T19:16:55",
   "chapter_count": 4,
-  "total_cola": 188,
-  "readiness_score": 93,
+  "total_cola": 199,
+  "readiness_score": 94,
   "score_breakdown": {
     "malformed_pts": 50.0,
-    "deviation_pts": 24.47,
+    "deviation_pts": 24.29,
     "review_pts": 10.0,
-    "drift_pts": 8.5
+    "drift_pts": 9.5
   },
   "validators": {
-    "total_findings": 14,
+    "total_findings": 15,
     "malformed": 0,
-    "deviation": 14,
-    "review_required": 11,
+    "deviation": 15,
+    "review_required": 12,
     "per_validator": [
       {
         "name": "validate_line_final_tokens",
@@ -44,12 +44,12 @@
       {
         "name": "validate_construct_chain",
         "layer": "colometry",
-        "findings": 6,
+        "findings": 7,
         "by_severity": {
-          "DEVIATION": 6
+          "DEVIATION": 7
         },
         "by_tag": {
-          "REVIEW-REQUIRED": 6
+          "REVIEW-REQUIRED": 7
         },
         "error": null
       },
@@ -108,9 +108,9 @@
   },
   "english_drift": {
     "ARTICLE-SPLIT": 0,
-    "PREP-NP-SPLIT": 2,
+    "PREP-NP-SPLIT": 1,
     "AUX-VERB-SPLIT": 0,
-    "PTC-NP-SPLIT": 1,
+    "PTC-NP-SPLIT": 0,
     "APPOSITIVE-SPLIT": 0,
     "DANGLING-CONJ": 0
   }
