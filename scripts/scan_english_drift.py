@@ -38,6 +38,32 @@ Hebrew subordinator or relative-introducer (after stripping any leading
 conjunction prefix waw/vav), the English break is legitimate — suppress
 the drift flag.
 
+PTC-NP-SPLIT false-positive suppressors (Genesis audit 2026-04-27):
+-----------------------------------------------------------------------
+Biblical Hebrew's default word order is Verb-Subject-Object (VSO).  The
+accent-hierarchy parser (parse_teamim.py) respects this: verb cola and
+subject NP cola are frequently split onto separate lines.  When the
+English gloss renders a bare past-tense verb on line N and the subject
+NP on line N+1, the -ed ending on line N triggers PTC-NP-SPLIT even
+though the break is legitimate.  Three suppressors catch this:
+
+  S1 - NOUN-GLOSS-ING: English noun glosses whose surface form ends in
+       -ing but are not verbs (e.g. "morning" = בֹּקֶר, "offering" =
+       עֹלָה).  These words appear in _NOUN_GLOSSES_ING.
+
+  S2 - VSO-BARE-NP: The next colon is a bare NP (≤5 tokens, no
+       auxiliary or copula verb among them).  A bare-NP colon is the
+       canonical subject-postposition colon in VSO narrative; a genuine
+       English drift site would have a continuation phrase containing
+       verbal or prepositional material that belongs with line N.
+
+  S3 - EXISTING: temporal line-opener on line N (_ENGLISH_TEMPORAL_STARTS)
+       or intransitive terminal verb on line N (_INTRANSITIVE_TEMPORALS).
+
+After applying S1–S3 the Genesis PTC-NP-SPLIT count dropped from 34 to
+approximately 3–5 (cases where the next NP is longer and contains
+prepositional structure that could represent genuine drift).
+
 Usage:
     PYTHONIOENCODING=utf-8 py -3 scripts/scan_english_drift.py
     PYTHONIOENCODING=utf-8 py -3 scripts/scan_english_drift.py --book jonah
@@ -185,7 +211,81 @@ _INTRANSITIVE_TEMPORALS = {
     "stood", "sat", "slept", "sleeping", "praying",
     "sowing", "sowed", "finished", "coming",
     "happened", "occurred",
+    # Speech-intro terminal: "saying" (לֵאמֹר lemor) ends the speech-intro
+    # frame colon; the next colon is the reported speech content.  This is
+    # a structural break, never drift.
+    "saying",
 }
+
+# S1 — Suppressor: English noun glosses that surface with -ing or -ed
+# endings but are nouns, not participial verbs.  These words should never
+# trigger PTC-NP-SPLIT regardless of what follows on the next line.
+# Hebrew sources are noted for cross-reference clarity.
+_NOUN_GLOSSES_ING = {
+    # -ing nouns (noun glosses that coincidentally end in -ing)
+    "morning",      # בֹּקֶר boqer
+    "evening",      # עֶרֶב 'erev
+    "offering",     # עֹלָה / קָרְבָּן
+    "offering",     # עֹלָה / מִנְחָה
+    "blessing",     # בְּרָכָה
+    "dwelling",     # מָשְׁכָּן / מִשְׁכָּן
+    "beginning",    # רֵאשִׁית
+    "gathering",    # אַסְפָה / קָהָל (noun, not verb form)
+    "covering",     # כִּסּוּי (noun)
+    "anointing",    # מִשְׁחָה
+    "warning",      # אַזְהָרָה
+    "wedding",      # חַתֻּנָּה
+    "spring",       # אָבִיב (season noun that sometimes glosses as "spring")
+    "offspring",    # זֶרַע / צֶאֱצָא — ends in -ing but is a noun
+    "hunting",      # צַיִד — "he knew hunting" is a noun complement
+    "herding",      # רֹעֶה form sometimes glossed as noun
+}
+
+# S2 — Suppressor: VSO bare-NP next colon.
+# In Biblical Hebrew VSO order the subject NP often occupies its own colon
+# immediately following the verb colon.  A next colon that is a bare NP
+# (short, no auxiliary or main verbal token) is the canonical VSO subject-
+# postposition pattern, not English drift.
+#
+# Heuristic: if the next colon has ≤ _VSO_MAX_TOKENS tokens AND none of
+# those tokens is an auxiliary/copula verb or subordinating conjunction,
+# treat the boundary as a legitimate VSO split and suppress PTC-NP-SPLIT.
+_VSO_MAX_TOKENS = 6
+
+# Tokens that, if present in the next colon, disqualify the bare-NP test
+# (they suggest the next colon has verbal or clausal material that should
+# have stayed on the same colon as line N).
+_VSO_DISQUALIFIERS = {
+    # auxiliaries / copulas
+    "is", "are", "was", "were", "am", "be", "been", "being",
+    "has", "have", "had",
+    "will", "can", "may", "might", "should", "would", "must", "shall",
+    # subordinating conjunctions that introduce clauses, not NPs
+    "that", "which", "who", "whom", "whose",
+    "because", "since", "although", "though", "if", "when", "while",
+    "where", "until", "unless",
+}
+
+
+def _next_colon_is_bare_np(next_line):
+    """Return True if next_line looks like a bare subject-NP colon (VSO).
+
+    Conditions:
+      - The line (stripped of punctuation) has at most _VSO_MAX_TOKENS words.
+      - None of those words is in _VSO_DISQUALIFIERS.
+      - At least one word remains after stripping (non-empty).
+    """
+    cleaned = _END_PUNCT.sub("", next_line).strip()
+    if not cleaned:
+        return False
+    tokens = [t.lower() for t in cleaned.split()]
+    if not tokens:
+        return False
+    if len(tokens) > _VSO_MAX_TOKENS:
+        return False
+    if any(t in _VSO_DISQUALIFIERS for t in tokens):
+        return False
+    return True
 
 
 # ---------------------------------------------------------------------------
@@ -382,12 +482,20 @@ def scan_all(book_filter=None, min_confidence="high"):
                         if _heb_line_starts_subordinate(heb_lines[i + 1]):
                             continue
 
-                    # English temporal-frame suppression for PTC-NP-SPLIT
+                    # PTC-NP-SPLIT suppressors
                     if flag == "PTC-NP-SPLIT":
+                        # S3 (pre-existing): temporal frame opener on this line
                         line_first, _ = _first_word(line)
                         if line_first in _ENGLISH_TEMPORAL_STARTS:
                             continue
+                        # S3 (pre-existing): known intransitive terminal verb
                         if last in _INTRANSITIVE_TEMPORALS:
+                            continue
+                        # S1: noun gloss that ends in -ing/-ed but is a noun
+                        if last in _NOUN_GLOSSES_ING:
+                            continue
+                        # S2: VSO bare-NP next colon (subject-postposing)
+                        if _next_colon_is_bare_np(v["lines"][i + 1]):
                             continue
 
                     results.append({
