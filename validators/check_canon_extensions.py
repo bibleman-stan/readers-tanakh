@@ -66,8 +66,12 @@ NEW_SCOPE_EXCLUSION_RE = re.compile(r"^-\s+\*\*[A-Z][^*]+\*\*\s+—")
 # ---------------------------------------------------------------------------
 
 # Audit-evidence keywords — at least one must appear if extension detected.
+#
+# IMPORTANT: bare "audit" is too loose — it false-passes messages like
+# "fake commit without audit evidence" (substring match catches the negation).
+# Require either a strong-signal keyword (specific section ref, named pattern)
+# OR an audit phrase that includes a completion verb / verdict word.
 AUDIT_KEYWORDS = [
-    "audit",
     "hostile audit",
     "trigger #",
     "§7",
@@ -81,6 +85,40 @@ AUDIT_KEYWORDS = [
     "update log",
     "stan-authorized",
     "stan-direct",
+    # Audit + completion-verb phrases (paired so bare "audit" doesn't false-pass)
+    "audit complete",
+    "audit completed",
+    "audit passed",
+    "audit verified",
+    "audit verdict",
+    "audit clean",
+    "audit ok",
+    "audit done",
+    "audit found",
+    "audit run",
+    "ran audit",
+    "ran the audit",
+    "completed audit",
+    "performed audit",
+]
+
+# Negation guards — if any of these appear, fail regardless of any audit
+# keyword above. Defends against "fake commit without audit evidence" et al.
+NEGATION_PATTERNS = [
+    "no audit",
+    "without audit",
+    "needs audit",
+    "needs an audit",
+    "audit pending",
+    "audit later",
+    "skip audit",
+    "skipped audit",
+    "no §7",
+    "no trigger",
+    "no update log",
+    "todo: audit",
+    "todo audit",
+    "fake commit",
 ]
 
 # Skip-safe signals — explicit non-extension claims (typo, formatting, ...)
@@ -137,12 +175,18 @@ def detect_extensions(diff: str) -> list[tuple[str, str]]:
 
 
 def has_audit_evidence(message: str) -> bool:
+    """True if message contains a positive audit-evidence signal AND no
+    negation guard (e.g., "without audit") is present."""
     msg_lower = message.lower()
+    if any(neg in msg_lower for neg in NEGATION_PATTERNS):
+        return False
     return any(k in msg_lower for k in AUDIT_KEYWORDS)
 
 
 def has_skip_safe_claim(message: str) -> bool:
     msg_lower = message.lower()
+    if any(neg in msg_lower for neg in NEGATION_PATTERNS):
+        return False
     return any(k in msg_lower for k in SKIP_SAFE_KEYWORDS)
 
 
