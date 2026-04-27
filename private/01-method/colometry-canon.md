@@ -1,13 +1,13 @@
 # Tanakh Colometry — Operating Canon
 
 **Version:** 1.0 (2026-04-26 rewrite from scratch)
-**Predecessor:** `archive/colometry-canon-stub-2026-04-25-retired-2026-04-26.md` — retained for reference, no longer authoritative. The predecessor was a 231-line stub whose central commitment (te'amim-prior with override-warrant discipline) was demoted on the grounds that the te'amim are a Tiberian-Masoretic editorial overlay (~9th–10th c. CE), not a structural prior — which makes them the Hebrew analog of NA28 punctuation in the sibling GNT project and Pratt's 1879 BoFM versification. Sibling-project methodology (BoFM canon v2.0; GNT canon) explicitly forbids editorial overlays from driving line-break decisions. This canon corrects that.
+**Predecessor:** `archive/colometry-canon-stub-2026-04-25-retired-2026-04-26.md` — retained for reference, no longer authoritative. The predecessor's central commitment (te'amim-prior with override-warrant discipline) was demoted on the grounds that the te'amim are a Tiberian-Masoretic editorial overlay (~9th–10th c. CE), not a structural prior. This canon corrects that.
 
 ---
 
 **What is this document?**
 
-This document serves as a canon for laying out the main design philosophy (the *what / why / posture* of the project) as well as the pragmatic implementation rules and principles (the *how* — rules and tests an editor reads literally for application). There are times when the line between design philosophy and operational implementation blends together. The structure aims to keep the integration honest while making the predominant character of each section legible at a glance.
+This canon mixes philosophy (the why) with operational rules (the how); section headers tell you which character predominates in each section.
 
 - **Part I (The Method, §§0-2)** is the constitutional core: foundational methodology (§§0-1) and autonomy boundary (§2). Each section header discloses whether the section is mainly philosophical, mainly operational, or dual-natured.
 - **Part II (Operating Rules, §§3-6)** carries the quick-reference rule table, Layer 1 pointers, rule detail, and the validator suite.
@@ -33,7 +33,7 @@ Some sections are dual-natured by design: §1 interleaves theoretical principles
 
 ### Mission
 
-**We are revealing sense-lines — atomic thoughts the reader can process as discrete units.** Each line is a unit of meaning the reader can take in before needing the next. We are not doing typography. We are not revealing rhetorical parallelism (Lowth / Berlin parallelism analysis is a separate scholarly layer that may overlap with ours but is not our target). We are not prescribing oral delivery. We are not mechanizing the te'amim or any other historical reading-tradition's chant structure. We are formatting the text so that an ESL reader, a child, a newcomer to the Hebrew Bible, or an experienced reader looking for the compositional architecture can take Scripture one atomic thought at a time.
+**We are revealing sense-lines — atomic thoughts the reader can process as discrete units.** Each line is a unit of meaning the reader can take in before needing the next. We are not revealing rhetorical parallelism (Lowth / Berlin parallelism analysis is a separate scholarly layer that may overlap with ours but is not our target). We are not mechanizing the te'amim or any other historical reading-tradition's chant structure. We are formatting the text so that any reader — novice or experienced — can take Scripture one atomic thought at a time.
 
 ### Origin
 
@@ -283,7 +283,7 @@ This is the classical distinction between **logos endiathetos** (the thought in 
 
 **Corollary — the "reaching-for-split" warning.** When the grammatical case for a split is borderline and you find yourself reaching for chiastic-structure, parallelism-display, prosodic-emphasis, theological-weight, doctrinal-stakes, narrative-climax, pastoral-force, soteriological-significance, or any analogous non-grammatical category as a tiebreaker, **that is the signal that scope creep is happening.** The scope-disciplined default in a borderline case is to keep the grammatical constituent intact — i.e., **prefer merge to split** when the grammar is ambiguous.
 
-This is the "rhetoric-bandwagon" failure mode named in the sibling projects' `feedback_rhetoric_bandwagon.md` discipline memories. It is the highest predictable risk for the Tanakh project specifically, given Hebrew's deep scholarly literature on parallelism (Lowth 1753; Kugel 1981; Berlin 1985; Dobbs-Allsopp 2015), chiasm (extensive), inclusio, merism, and other rhetorical figures. Importing any of those scholarly categories as a *mechanical* line-break rule is the predictable catastrophic failure. They are evidence, not authority.
+This is the "rhetoric-bandwagon" failure mode — the highest predictable risk for the Tanakh project specifically, given Hebrew's deep scholarly literature on parallelism (Lowth 1753; Kugel 1981; Berlin 1985; Dobbs-Allsopp 2015), chiasm (extensive), inclusio, merism, and other rhetorical figures. Importing any of those scholarly categories as a *mechanical* line-break rule is the predictable catastrophic failure. They are evidence, not authority.
 
 **The fronting paradox — marked Hebrew word order argues for MERGE, not split.** Hebrew's unmarked clause order is V-S-O (verb-initial). When a constituent is fronted (subject before verb, object before verb, casus pendens, topic-fronted PP), the natural editorial instinct is to split at the fronted element as a way of "visualizing the emphasis." **This instinct is wrong for tight bound constituents.** The rhetorical effect of fronting depends on the grammatical unity *staying intact*. The marked arrangement is felt as emphatic precisely because the hearer processes the fronted element in a non-default position *within a single breath unit*. Splitting at the fronted-element boundary mechanizes the emphasis — it imposes a pause that was not in the original oral delivery — and paradoxically *diminishes* the rhetorical force.
 
@@ -305,7 +305,7 @@ But the te'amim are **not a structural prior.** They are evidence.
 2. Distinguish "this verse is one thought" from "this verse is four thoughts." Every verse gets the same atnach-driven binary subdivision regardless of how many sense-units it actually contains.
 3. Reflect original-author compositional intent. The te'amim are a 9th–10th c. CE artifact reflecting medieval Jewish reading tradition, not Iron Age compositional structure.
 
-**Why this matters operationally.** The Wickes-style framing that the te'amim "encode a hierarchical sense-unit system" conflates the three real functions above with a fourth claimed function (sense-unit marking) that the te'amim were never built for. That framing is the rhetoric of Wickes 1881 / 1887 and persisted into Yeivin 1980, but it does not survive contact with what a colometric reading edition actually requires. The Jonah v1-he-baseline output (the project's MVP) makes this concrete: te'amim-driven breaks fragment single-thought verses into three-line widow patterns and lump multi-thought verses under one atnach-driven subdivision.
+**Why this matters operationally.** The Wickes-style framing that the te'amim "encode a hierarchical sense-unit system" conflates the three real functions above with a fourth claimed function (sense-unit marking) that the te'amim were never built for. That framing does not survive contact with what a colometric reading edition actually requires. The Jonah v1-he-baseline output (the project's MVP) makes this concrete: te'amim-driven breaks fragment single-thought verses into three-line widow patterns and lump multi-thought verses under one atnach-driven subdivision.
 
 **The te'amim's role in this canon:**
 - They are **the most important single piece of evidence** about the Masoretic reading tradition's understanding of structure. They corroborate atomic-thought analysis ~70–80% of the time.
@@ -313,7 +313,7 @@ But the te'amim are **not a structural prior.** They are evidence.
 - They are NOT authoritative. They cannot license a line break by themselves. Every break that survives to v4-editorial must be defensible as containing an atomic thought, and the te'amim are cited as evidence (confirming, disagreeing, or silent), never as warrant.
 - They are subject to the same discipline as any other editorial overlay: NA28 punctuation in the GNT project, Pratt's 1879 versification in the BoFM project, te'amim in the Tanakh project. Editorial overlays may corroborate; they may not justify.
 
-This is the central methodological correction relative to the predecessor stub canon. Per `project_canon_rewrite_decision.md`, do not relitigate.
+This is the central methodological correction relative to the predecessor stub canon.
 
 ### Punctuation, Te'amim Glyphs, and the Masoretic Apparatus Are Not Break Signals
 
@@ -356,7 +356,7 @@ The reasoning is parallel (no pun) to the te'amim demotion: line breaks reveal a
 - **Berlin's multi-dimensional analysis is a useful diagnostic** when atomic-thought analysis is borderline — when phonological + grammatical + lexical parallelism converge on a structure the te'amim missed, that's high-confidence evidence for an override. But Berlin is an evidence-application tool under criterion #1, not a baseline framework.
 - **Dobbs-Allsopp's free-verse framing** aligns with the project's posture: the te'amim are a specific historical reading-tradition's lineation; atomic-thought is the editorial criterion that drives v4. The project does not adopt Dobbs-Allsopp as authority either — but his framing is the most compatible of the four with what the canon actually does.
 
-**Why this matters as a load-bearing canon section.** The parallelism question was the question that surfaced the te'amim-prior failure in the first place: when Stan asked which parallelism stance to take for Sifrei Emet, the framing forced the prior-question — what *is* the prior, the te'amim or the atomic thought? The te'amim demotion is the answer. This subsection makes the symmetry explicit so future editorial work in poetic books does not accidentally reintroduce a parallelism-as-prior commitment under a different label. Per `feedback_no_false_choice_framing.md`, do not relitigate by proposing Lowth/Kugel/Berlin/Dobbs-Allsopp as competing structural priors; they are competing scholarly accounts of a phenomenon the editor encounters as evidence.
+**Why this matters as a load-bearing canon section.** The parallelism question was the question that surfaced the te'amim-prior failure in the first place: when Stan asked which parallelism stance to take for Sifrei Emet, the framing forced the prior-question — what *is* the prior, the te'amim or the atomic thought? The te'amim demotion is the answer. This subsection makes the symmetry explicit so future editorial work in poetic books does not accidentally reintroduce a parallelism-as-prior commitment under a different label. Do not relitigate by proposing Lowth/Kugel/Berlin/Dobbs-Allsopp as competing structural priors; they are competing scholarly accounts of a phenomenon the editor encounters as evidence.
 
 ### N=2 Adjudication Principle
 
@@ -385,7 +385,7 @@ When a passage contains a serial construction (woe-series, blessing-series, beat
 - Acrostic structures (Pss 119 stanzas, Lam 1–4 alphabetic chapters): the acrostic letter is the structural anchor; member-level asymmetry within stanzas is authorial.
 - Positive/negative conditional pairs (*אִם ... וְאִם לֹא ...*).
 
-**SCOPE.** Does NOT apply to same-rule-uniformly-applied cases — those are governed by the parallel-list uniformity principle below (or by the `feedback_application_consistency_vs_rule_coverage` discipline once that memory is installed). The Authorial Asymmetry Principle governs the distinct failure mode: **imposed uniform structure where the author wrote variation**. The author's finite-verb count, elided-verb count, and predicative-head count per member is the authoritative signal.
+**SCOPE.** Does NOT apply to same-rule-uniformly-applied cases — those are governed by the parallel-list uniformity principle below. The Authorial Asymmetry Principle governs the distinct failure mode: **imposed uniform structure where the author wrote variation**. The author's finite-verb count, elided-verb count, and predicative-head count per member is the authoritative signal.
 
 ### Parallel-List Uniformity Principle
 
@@ -427,7 +427,7 @@ Putting generative, subtractive, and diagnostic forces together, the full editor
 
 The framework is a default-merge with two closed lists of exceptions — five structural justifications (add splits beyond propositions) and four merge-overrides (block splits that would fragment unity) — plus the syntax-subtractive veto and the image diagnostic.
 
-**Breath as a named diagnostic was retired before the Tanakh canon's first version.** Both sibling projects retired breath empirically (BoFM 2026-04-19, GNT 2026-04-20). The Hebrew evidence sharpens the retirement: the te'amim are *literally* the historical record of "where the cantor breathes." If breath were a valid sense-unit prior, the te'amim would by definition encode it perfectly. The cognitive-chunking work breath was informally doing is absorbed by structural justification #5 (substantive adjunct as own focus). Per `feedback_no_breath_criterion.md`, do not relitigate.
+**Breath as a named diagnostic was retired before the Tanakh canon's first version.** Both sibling projects retired breath empirically (BoFM 2026-04-19, GNT 2026-04-20). The Hebrew evidence sharpens the retirement: the te'amim are *literally* the historical record of "where the cantor breathes." If breath were a valid sense-unit prior, the te'amim would by definition encode it perfectly. The cognitive-chunking work breath was informally doing is absorbed by structural justification #5 (substantive adjunct as own focus).
 
 ---
 
@@ -763,7 +763,7 @@ INTRODUCING (stack on own line) earns a split ONLY when one of three formal anch
 
 **Hebrew-versification-only.** This rule operates on MT (Hebrew) versification. The Hebrew/Christian versification crosswalk (per textual posture) is independent of cross-verse continuity decisions; the crosswalk is a citation-lookup mechanism, not a structural decision.
 
-**Imported from sibling project.** GNT canon §3.17 is the parent rule; BoFM canon §1 imports the principle. Tanakh canon imports the operational mechanism with Hebrew-specific examples.
+**Cross-verse continuity** is the operative convention; Hebrew-specific examples appear in the rule diagnostic above.
 
 ### Rule H11 — Tifcha-as-Servant-of-Atnach
 
@@ -773,7 +773,7 @@ INTRODUCING (stack on own line) earns a split ONLY when one of three formal anch
 
 **Diagnostic.** Te'amim evidence weight reduced — when tifcha appears in a servant-of-atnach position, treat it as a weak corroborator of any v4-editorial decision rather than as a primary breaking signal. The mechanical default in `scripts/parse_teamim.py` of treating tifcha as a tier-2 default breaker over-fragments single-thought verses (Jonah 1:1 currently produces a 3-line widow split because of tifcha-driven break at *וַיְהִי*); the v4-editorial pass should re-evaluate tifcha-induced breaks against the atomic-thought criterion.
 
-**WHY:** corrects the predecessor stub canon's §2.1 default-breaker list, which included tifcha as a tier-2 primary breaker without addressing Wickes's well-documented servant-of-atnach analysis. Audit-flagged in the 2026-04-26 hostile audit as a Jonah-blocking issue.
+**WHY:** corrects the predecessor stub canon's §2.1 default-breaker list, which included tifcha as a tier-2 primary breaker without addressing Wickes's well-documented servant-of-atnach analysis.
 
 **HOW WE KNOW:** Wickes 1887 (treatise on prose accentuation, foundational reference in CLAUDE.md). Yeivin 1980 §266 corroborates the servant-pattern.
 
@@ -845,7 +845,7 @@ INTRODUCING (stack on own line) earns a split ONLY when one of three formal anch
 
 ### Rule H16 — FEF Wayehi Protasis
 
-**Grammatical basis.** The Hebrew narrative construction *וַיְהִי* + temporal/circumstantial protasis + main clause is the canonical Front-End Frame. The *wayyiqtol* of *הָיָה* introduces a temporal frame; the protasis sets the scene; the main clause resolves. Both sibling canons recognize this as the Hebrew paradigm of FEF (GNT canon §5 explicitly names "the Hebrew wayehi protasis is the FEF analogue"; BoFM canon's "And it came to pass" formula is the calque-into-archaic-English of this very Hebrew construction, hence Rule 1 AICTP integrity).
+**Grammatical basis.** The Hebrew narrative construction *וַיְהִי* + temporal/circumstantial protasis + main clause is the canonical Front-End Frame. The *wayyiqtol* of *הָיָה* introduces a temporal frame; the protasis sets the scene; the main clause resolves.
 
 **Trigger.** *וַיְהִי* + (optional temporal/circumstantial material) + main clause.
 
