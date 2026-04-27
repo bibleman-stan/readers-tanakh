@@ -25,3 +25,6 @@ desktop.ini
 
 # Local environment
 .env
+
+# Generated alignment data (machine-generated; re-run run_eflomal_alignment.py)
+data/alignment/
