@@ -165,6 +165,49 @@ Operational governance lives in the canon's §6 (validator suite) and §7 (adopt
 
 ---
 
+## Three-Layer Validation Architecture & Mechanical Gates
+
+Mirrors the `bibleman-stan/readers-bofm` sibling architecture (codified there 2026-04-19, ported here 2026-04-27):
+
+| Layer | What it is | Where it lives | Validator error class |
+|---|---|---|---|
+| **1** | Generic Hebrew grammar surface — universal facts, language-level | `data/syntax-reference/hebrew-break-legality.md` | `[MALFORMED]` |
+| **2** | Validators — enforce both layers with distinct error classes | `validators/syntax/` (L1) + `validators/colometry/` (L3) | emits L1 / L3 |
+| **3** | Tanakh-specific editorial methodology | `private/01-method/colometry-canon.md` | `[DEVIATION]` |
+
+**Discipline:** Layer 1 is a permission/prohibition surface — it catalogs what Hebrew grammar **forbids** or **permits**; it does not prescribe choices among permitted alternatives. Layer 3 operates **within** Layer 1's permitted-either space and codifies project-specific editorial calls. Mixing them in either direction is a regression. The shape cap on Layer 1's table prevents prose-creep; the `[MALFORMED]` vs `[DEVIATION]` error classes prevent confusing a syntax illegality with an editorial deviation.
+
+### Mechanical gates (enforced by git hooks)
+
+| Component | What it does |
+|---|---|
+| `validators/run_all.py` | Dashboard. Discovers all `validate_*.py`, runs each with `--json --v4`, aggregates per-validator finding counts. Modes: default (report-only), `--baseline-check` (regression gate against `validators/.baseline.json`), `--update-baseline` (capture current state). |
+| `validators/.baseline.json` | Per-validator finding counts captured at the moment of last `--update-baseline`. The reference state for regression detection. |
+| `.git/hooks/pre-commit` (← `validators/hooks/pre-commit`) | Fires when staged files match `data/text-files/v4/editorial/`, `private/01-method/colometry-canon.md`, `data/syntax-reference/`, or `validators/`. Runs `run_all.py --baseline-check`; blocks on regression (finding count INCREASED vs baseline). |
+| `.git/hooks/commit-msg` (← `validators/hooks/commit-msg`) | Runs `validators/check_canon_extensions.py` on the proposed commit message. Detects canon extensions (new `Rule HN`, new `MN.` merge-override, new dated principle, closed-list table row, new §7 trigger, new SCOPE-exclusion bullet). Requires audit-evidence keyword (`audit`, `§7`, `post-codification`, etc.) OR skip-safe claim (`typo`, `formatting`, `audit-skippable`). Closes the smuggling-during-unrelated-commit failure mode. |
+
+**Override (Stan-only, explicit decision):** `git commit --no-verify`
+
+**One-time setup after fresh clone (or when hooks are missing):**
+
+```bash
+cp validators/hooks/pre-commit  .git/hooks/pre-commit
+cp validators/hooks/commit-msg  .git/hooks/commit-msg
+chmod +x .git/hooks/pre-commit .git/hooks/commit-msg
+```
+
+**Routine commands:**
+
+```bash
+PYTHONIOENCODING=utf-8 py -3 validators/run_all.py                   # dashboard
+PYTHONIOENCODING=utf-8 py -3 validators/run_all.py --baseline-check  # gate (what the pre-commit hook runs)
+PYTHONIOENCODING=utf-8 py -3 validators/run_all.py --update-baseline # capture new baseline after intentional changes
+```
+
+**Why this matters:** the apply pipeline (`apply_v2.py`, `apply_v3.py`) describes how individual validators feed individual tier-transitions; the gating architecture describes how the whole validator suite is **enforced** at commit time. Without the gates, validators are on-demand reports nobody runs. With the gates, regressions block automatically.
+
+---
+
 ## Build Pipeline (planned)
 
 The cascade rule (once English layer exists): **Hebrew edit → English regen → HTML rebuild**.
