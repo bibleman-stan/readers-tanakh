@@ -15,7 +15,7 @@ readers-tanakh/
       README.md                          # Tier system documentation
       v0-prose/                          # Per-chapter files derived from TAHOT (NEVER edit)
         01-genesis/, 02-exodus/, ...
-      v1-teamim/                         # Te'amim-driven baseline (machine-deterministic)
+      v1-he-baseline/                    # Hebrew baseline cola draft (machine-generated)
         01-genesis/, 02-exodus/, ...
       v4-editorial/                      # Hand-edited gold standard (single source of truth)
         01-genesis/, 02-exodus/, ...
@@ -31,8 +31,8 @@ readers-tanakh/
     ingest_uxlc.py                       # UXLC → sibling tree (on-demand cross-check)
     ingest_mam.py                        # MAM → sibling tree (Aleppo tradition reference)
     diff_sources.py                      # For any verse, show how each vendored source renders it
-    parse_teamim_prose.py                # Prose accent parser → v1-teamim
-    parse_teamim_poetic.py               # Sifrei Emet accent parser → v1-teamim
+    parse_teamim_prose.py                # Prose accent parser → v1-he-baseline
+    parse_teamim_poetic.py               # Sifrei Emet accent parser → v1-he-baseline
     build_books.py                       # v4-editorial (+ eng-gloss) → books/*.html
     ...
   validators/                            # Layer-1 (syntax) and Layer-3 (colometry) checks
@@ -116,12 +116,12 @@ The five-tier convention used in sibling colometric projects has been simplified
 | Tier | Source | Status |
 |---|---|---|
 | `v0-prose/` | Derived from TAHOT — verse-marked, full niqqud, full te'amim, ketiv/qere preserved. **NEVER EDIT.** | Reference baseline |
-| `v1-teamim/` | Output of the te'amim parser (prose or *Sifrei Emet*, depending on book/range). Machine-deterministic. | Editorial input |
+| `v1-he-baseline/` | Machine-generated Hebrew baseline cola draft — output of the te'amim parser (prose or *Sifrei Emet*, depending on book/range). Starting point for editorial work in v4. | Editorial input |
 | `v4-editorial/` | Hand-edited gold standard. Single source of truth for the web app. Each line break either accent-induced or override-warranted. | Active editorial layer |
 
 **Deferred tiers** (will be added if and only if they prove valuable):
 
-- `v2-syntax/` — would apply BHSA syntactic-tree refinements to v1. Skipped initially because BHSA's licensing is ambiguous commercially and because v1-teamim is expected to be high-quality input on its own.
+- `v2-syntax/` — would apply BHSA syntactic-tree refinements to v1. Skipped initially because BHSA's licensing is ambiguous commercially and because v1-he-baseline is expected to be high-quality input on its own.
 - `v3-rhetorical/` — would apply parallelism/discourse-pattern detection (Lowth/Berlin lineage) to v2. Skipped until the v1→v4 delta is measured and a clear v2/v3 use case emerges.
 
 **Why fewer tiers than sibling projects:** prior experience showed that each mechanical tier introduces its own error rate which a downstream editorial pass must clean up. The Tanakh project starts lean and adds tiers only when they demonstrably improve v4 input quality.
@@ -138,7 +138,7 @@ Pipeline:
 research/stepbible-tahot/  →  (ingest_tahot.py)
                            →  data/text-files/v0-prose/{NN-book}/{abbr}-{ch}.txt
                            →  (parse_teamim_prose.py / parse_teamim_poetic.py)
-                           →  data/text-files/v1-teamim/{NN-book}/{abbr}-{ch}.txt
+                           →  data/text-files/v1-he-baseline/{NN-book}/{abbr}-{ch}.txt
                            →  (manual editorial work)
                            →  data/text-files/v4-editorial/{NN-book}/{abbr}-{ch}.txt
                            →  (build_books.py)
@@ -186,7 +186,11 @@ Pages configuration is **not** yet activated in the repo settings — to be done
 ### Established — 2026-04-25 (scaffolding session)
 
 - Repo skeleton documented; no scripts or text files yet
-- Tier system simplified to v0 / v1-teamim / v4-editorial; v2 and v3 deferred
+- Tier system simplified to v0 / v1-he-baseline / v4-editorial; v2 and v3 deferred
 - Private folder layout fixed; junction setup documented
 - Source-text licensing landscape mapped; TAHOT picked as primary
 - Web app design constraints (RTL, font stack, toggle inventory) listed for the eventual web-app session
+
+---
+
+**2026-04-26 update:** v1-teamim directory renamed to v1-he-baseline; path references updated throughout this doc to align with the canon's te'amim-as-evidence framing (no longer te'amim-as-prior).

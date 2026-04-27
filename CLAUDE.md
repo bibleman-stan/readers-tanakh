@@ -16,7 +16,7 @@ The methodology rests on three forces operating simultaneously:
 - **Subtractive** — Hebrew syntax integrity, complement integrity, and formula integrity trigger merges; four closed-list merge-overrides govern exceptions.
 - **Diagnostic** — single image acts as tiebreaker when generative and subtractive forces are in tension.
 
-The te'amim (cantillation accents) are **the most important single piece of evidence** — they preserve roughly a millennium of expert Masoretic reading tradition (Tiberian, ~9th–10th c. CE) and form the v1-teamim baseline that editors revise from. The disjunctive accent hierarchy requires two parsers: one for the prose accent system (21 books) and one for the *Sifrei Emet* system (Psalms, Proverbs, Job 3:1–42:6). But the te'amim are evidence, not authority; any editorial overlay (te'amim, sof pasuq, paseq, niqqud, versification) is evidence that informs the editor's judgment, not a break-licensing rule.
+The te'amim (cantillation accents) are **the most important single piece of evidence** — they preserve roughly a millennium of expert Masoretic reading tradition (Tiberian, ~9th–10th c. CE) and form the v1-he-baseline that editors revise from. The disjunctive accent hierarchy requires two parsers: one for the prose accent system (21 books) and one for the *Sifrei Emet* system (Psalms, Proverbs, Job 3:1–42:6). But the te'amim are evidence, not authority; any editorial overlay (te'amim, sof pasuq, paseq, niqqud, versification) is evidence that informs the editor's judgment, not a break-licensing rule.
 
 - **Repo:** github.com/bibleman-stan/readers-tanakh (public)
 - **Live site:** tanakh-reader.com (planned; domain secured, GitHub Pages not yet configured)
@@ -95,11 +95,11 @@ Most of these do not exist yet. They are listed so you know the planned layout w
 |---|---|
 | `index.html` | Main web app — RTL Hebrew layout, all CSS/JS inline |
 | `scripts/ingest_tahot.py` | Reads STEPBible TAHOT TSV → splits to per-book/per-chapter v0-prose files |
-| `scripts/parse_teamim_prose.py` | Parses prose accent hierarchy → v1-teamim baseline cola |
+| `scripts/parse_teamim_prose.py` | Parses prose accent hierarchy → v1-he-baseline cola |
 | `scripts/parse_teamim_poetic.py` | Parses *Sifrei Emet* accent hierarchy for Pss / Prov / Job 3:1–42:6 |
 | `scripts/build_books.py` | Converts text files → HTML fragments |
 | `data/text-files/v0-prose/*/` | Chapter files derived from TAHOT — **NEVER EDIT** |
-| `data/text-files/v1-teamim/*/` | Te'amim-driven baseline — machine-deterministic |
+| `data/text-files/v1-he-baseline/*/` | Hebrew baseline cola draft — machine-generated starting point for editorial work in v4 |
 | `data/text-files/v4-editorial/*/` | Hand-edited gold standard — single source of truth |
 | `data/text-files/eng-gloss/*/` | Structural English glosses (planned, deferred behind Hebrew MVP) |
 | `books/` | Generated HTML fragment files |
@@ -115,7 +115,7 @@ Multiple free Hebrew-text editions are vendored in `research/` (gitignored): STE
 - Modify a `v0-prose/` file
 - Alter the Hebrew consonants, niqqud, or te'amim
 - Add or remove words
-- Adopt readings from non-vendored versions (LXX, DSS, Samaritan, Targums, Peshitta, Vulgate) into source files — see textual-posture statement in `private/01-method/colometry-canon.md §1.1`
+- Adopt readings from non-vendored versions (LXX, DSS, Samaritan, Targums, Peshitta, Vulgate) into source files — see textual-posture statement in `private/01-method/colometry-canon.md §0.1`
 - Run te'amim parsers without checking if hand-edited chapters in `v4-editorial/` will be overwritten
 
 **ALWAYS:**
@@ -130,7 +130,7 @@ Multiple free Hebrew-text editions are vendored in `research/` (gitignored): STE
 
 The te'amim are the editor's starting draft, not the editor's authority. Operating rules:
 
-1. **The v1-teamim layer is the baseline.** Every editorial decision in `v4-editorial/` starts from what the accent hierarchy produces. Departing from it requires a documented reason — which of the three forces (generative, subtractive, diagnostic) is doing the work and why.
+1. **The v1-he-baseline layer is the baseline.** Every editorial decision in `v4-editorial/` starts from what the accent hierarchy produces. Departing from it requires a documented reason — which of the three forces (generative, subtractive, diagnostic) is doing the work and why.
 
 2. **Three criteria, not four.** The criteria are atomic thought, single image, and Hebrew syntax. Breath is not a criterion — the te'amim are literally the historical record of Masoretic cantorial phrasing; if breath were a valid prior, the te'amim would encode it perfectly by definition. Both sibling projects (empirical retirement, 2026) confirmed zero cases where breath was the sole deciding factor.
 
@@ -142,7 +142,7 @@ This is the project's principal differentiator from prior critical editions and 
 
 ## Tier Discipline
 
-Start with **v0 → v1-teamim → v4-editorial** only. Defer v2 (BHSA syntax-tree refinements) and v3 (rhetorical/parallelism patterns) until they earn their existence.
+Start with **v0 → v1-he-baseline → v4-editorial** only. Defer v2 (BHSA syntax-tree refinements) and v3 (rhetorical/parallelism patterns) until they earn their existence.
 
 The GNT project (sibling Greek edition; not referenced publicly) iterated through five tiers and discovered that v2 and v3 mechanical layers introduced 10–12% error rates that v4 had to fix. The Tanakh project starts lean and adds tiers only when they demonstrably improve v4 input quality.
 

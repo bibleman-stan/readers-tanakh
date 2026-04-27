@@ -48,4 +48,8 @@ Decisions locked in this session:
 - Domain: tanakh-reader.com (secured, CNAME committed)
 - Repo visibility: public from start, siloed from any sibling projects
 - Audio + PWA: skipped for MVP
-- Text-file tiers: start with v0 → v1-teamim → v4-editorial; defer v2/v3 until proven necessary
+- Text-file tiers: start with v0 → v1-he-baseline → v4-editorial; defer v2/v3 until proven necessary
+
+---
+
+**2026-04-26 update:** v1-teamim directory renamed to v1-he-baseline; path references updated throughout this doc to align with the canon's te'amim-as-evidence framing (no longer te'amim-as-prior).

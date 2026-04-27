@@ -14,20 +14,20 @@ Output convention:
 
 `v0-prose/` is the canonical reference. **Never edit by hand.** Re-run `ingest_tahot.py` if the upstream TAHOT vendor is updated; the regenerated v0 should match bit-for-bit unless TAHOT changed.
 
-## Stage 2 — Generate v1-teamim baseline
+## Stage 2 — Generate v1-he-baseline
 
 Run the appropriate parser on the chapter:
 
 - `scripts/parse_teamim_prose.py` for the 21 prose books
 - `scripts/parse_teamim_poetic.py` for Psalms, Proverbs, and Job 3:1–42:6 (with the prose parser handling Job's prose frame: 1:1–2:13 and 42:7–17)
 
-Output: `data/text-files/v1-teamim/{NN-book}/{abbr}-{NN}.txt` — a plain-text colometric formatting where every line break corresponds to a disjunctive accent at or above the threshold defined in the canon.
+Output: `data/text-files/v1-he-baseline/{NN-book}/{abbr}-{NN}.txt` — a plain-text colometric formatting where every line break corresponds to a disjunctive accent at or above the threshold defined in the canon.
 
-`v1-teamim/` is machine-deterministic. Re-running the parser on identical v0 input must produce identical v1 output.
+`v1-he-baseline/` is machine-deterministic. Re-running the parser on identical v0 input must produce identical v1 output.
 
 ## Stage 3 — Editorial pass (the human work)
 
-Open the v1-teamim file and the v0-prose file side-by-side. For each chapter, produce `data/text-files/v4-editorial/{NN-book}/{abbr}-{NN}.txt`.
+Open the v1-he-baseline file and the v0-prose file side-by-side. For each chapter, produce `data/text-files/v4-editorial/{NN-book}/{abbr}-{NN}.txt`.
 
 **Editorial moves allowed:**
 
@@ -84,13 +84,13 @@ This pattern is the default for systematic cleanup once the corpus is large enou
 
 ## Divergence Tracking
 
-Every divergence from the v1-teamim baseline should leave a trail. The simplest convention:
+Every divergence from the v1-he-baseline should leave a trail. The simplest convention:
 
-- The v4-editorial file itself is the trail — comparing v1-teamim against v4-editorial reveals every divergence (merges of accent breaks and splits not in v1)
+- The v4-editorial file itself is the trail — comparing v1-he-baseline against v4-editorial reveals every divergence (merges of accent breaks and splits not in v1)
 - A periodic sweep produces a "divergence census": count of divergences per book, per chapter, per criterion-invoked
 - Divergence hot-spots (chapters with unusually high divergence rates) are candidates for canon revision — either the criteria need refinement, or the te'amim parser is producing systematic noise
 
-Divergence rate from v1-teamim is a key diagnostic metric. A v4-editorial that diverges from te'amim breaks at >50% suggests either (a) the v1-teamim baseline is over-fragmenting via tifcha-as-servant (canon Rule H11) and the editor is correctly merging back, or (b) the editor's atomic-thought criterion is firing too aggressively and warrants review for canon compliance. Both cases are diagnostic, not failures per se — the te'amim are evidence, not authority. A v4-editorial that diverges 0% from v1-teamim suggests the editorial pass isn't adding value.
+Divergence rate from v1-he-baseline is a key diagnostic metric. A v4-editorial that diverges from te'amim breaks at >50% suggests either (a) the v1-he-baseline is over-fragmenting via tifcha-as-servant (canon Rule H11) and the editor is correctly merging back, or (b) the editor's atomic-thought criterion is firing too aggressively and warrants review for canon compliance. Both cases are diagnostic, not failures per se — the te'amim are evidence, not authority. A v4-editorial that diverges 0% from v1-he-baseline suggests the editorial pass isn't adding value.
 
 ---
 
@@ -100,3 +100,7 @@ Divergence rate from v1-teamim is a key diagnostic metric. A v4-editorial that d
 - Cascade rule and mechanical-merge pattern documented (carried forward from sibling-project lessons)
 - Override tracking framing established as a key methodological metric
 - No actual workflow runs yet; document will mature through Jonah MVP and first-book completion
+
+---
+
+**2026-04-26 update:** v1-teamim directory renamed to v1-he-baseline; path references updated throughout this doc to align with the canon's te'amim-as-evidence framing (no longer te'amim-as-prior).

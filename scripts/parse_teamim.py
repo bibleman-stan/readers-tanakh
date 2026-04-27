@@ -6,7 +6,7 @@ translit in lockstep. Splits at te'amim cola boundaries derived from the
 Hebrew accents. Emits four parallel v1 chapter files per book as a starting
 draft for editorial refinement:
 
-  v1-teamim/            Hebrew cola (one cola per line; prosodic-words
+  v1-he-baseline/       Hebrew cola (one cola per line; prosodic-words
                         space-separated; orthographic-word boundaries within
                         a prosodic word are signaled by inline maqqef ־)
   v1-eng-interlinear/   Per-orthographic-word English (` | ` separator,
@@ -21,9 +21,9 @@ draft for editorial refinement:
 
 METHODOLOGICAL NOTE: The te'amim (cantillation accents) are EVIDENCE of the
 Masoretic tradition's structural understanding, not authority for line-break
-decisions. v1-teamim is a fast baseline that avoids blank-page work; v4-editorial
-freely adds, removes, or merges line breaks relative to v1-teamim per the
-colometry canon's atomic-thought and Hebrew-syntax criteria. See
+decisions. v1-he-baseline is the editor's starting draft (seeded by te'amim
+parsing); v4-editorial freely adds, removes, or merges line breaks relative to
+this baseline per the colometry canon's atomic-thought and Hebrew-syntax criteria. See
 private/01-method/colometry-canon.md §1 "The Te'amim Are Not a Structural Prior"
 and Rule H8 "Te'amim as Evidence" for canonical framing.
 
@@ -43,7 +43,7 @@ V0_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v0-prose")
 V0_ENG_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v0-eng-baseline")
 V0_TRANSLIT_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v0-translit-baseline")
 
-V1_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v1-teamim")
+V1_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v1-he-baseline")
 V1_ENG_INTER_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v1-eng-interlinear")
 V1_ENG_GLOSS_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v1-eng-gloss")
 V1_TRANSLIT_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v1-translit")
@@ -52,9 +52,9 @@ ENG_WORD_SEP = " | "  # must match ingest_tahot.py
 MAQQEF = "־"
 
 # Tier-1/2 disjunctives — prose (21 books).
-# NOTE: These are draft-generation heuristics for the v1-teamim baseline,
-# not canon commitments. v4-editorial applies the colometry canon to refine
-# breaks relative to this v1 output.
+# NOTE: These are draft-generation heuristics for the v1-he-baseline starting
+# draft, not canon commitments. v4-editorial applies the colometry canon to
+# refine breaks relative to this v1 output.
 PROSE_BREAKERS = {
     "֑",  # ETNAHTA
     "֒",  # SEGOL (segolta)
@@ -64,7 +64,7 @@ PROSE_BREAKERS = {
 }
 
 # Tier-1/2 disjunctives — Sifrei Emet (Pss / Prov / poetic Job).
-# NOTE: Same draft-heuristic caveat as PROSE_BREAKERS.
+# NOTE: Same draft-heuristic caveat as PROSE_BREAKERS — seed for v1-he-baseline.
 POETIC_BREAKERS = {
     "֑",  # ETNAHTA
     "֫",  # OLE (component of oleh ve-yored)
@@ -305,7 +305,7 @@ def parse_chapter(he_in, en_in, tr_in,
                 f"{ortho_count} Hebrew orthographic-words vs {len(tr_words)} translit units"
             )
 
-        # Cola boundaries (v1-teamim baseline) are at PROSODIC-word level.
+        # Cola boundaries (v1-he-baseline starting draft) are at PROSODIC-word level.
         # Te'amim sit on prosodic units; v4-editorial refines these baseline breaks
         # per the colometry canon's atomic-thought and syntax criteria.
         boundaries = compute_cola_boundaries(he_pwords, breakers)
@@ -404,7 +404,7 @@ def parse_book(book_key):
 
     print(
         f"\n{book_key}: {total_lines} cola "
-        f"-> v1-teamim / v1-eng-interlinear / v1-eng-gloss / v1-translit"
+        f"-> v1-he-baseline / v1-eng-interlinear / v1-eng-gloss / v1-translit"
     )
 
 

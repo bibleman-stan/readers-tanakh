@@ -3,7 +3,7 @@ build_books.py - Generate four-layer HTML book fragments from v1 sources.
 
 Per-chapter source preference (independent for each layer):
 
-  Hebrew:       v4-editorial/         > v1-teamim/
+  Hebrew:       v4-editorial/         > v1-he-baseline/
   Interlinear:  eng-interlinear/      > v1-eng-interlinear/
   Gloss:        eng-gloss/            > v1-eng-gloss/
   Translit:     translit/             > v1-translit/
@@ -41,7 +41,7 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.dirname(SCRIPT_DIR)
 
 V4_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v4-editorial")
-V1_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v1-teamim")
+V1_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v1-he-baseline")
 
 INTER_HAND_DIR = os.path.join(REPO_ROOT, "data", "text-files", "eng-interlinear")
 INTER_V1_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v1-eng-interlinear")
@@ -252,7 +252,7 @@ def build_book(book_key):
             he_path, he_source = os.path.join(v4_dir, fn), "v4-editorial"
             counts["he_v4"] += 1
         else:
-            he_path, he_source = os.path.join(v1_dir, fn), "v1-teamim"
+            he_path, he_source = os.path.join(v1_dir, fn), "v1-he-baseline"
             counts["he_v1"] += 1
 
         inter_path, inter_source, inter_hand_used = _pick_source(
