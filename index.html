@@ -1833,6 +1833,7 @@ async function loadChapter(slug, chapter) {
   const key = chapterCacheKey(slug, chapter);
 
   if (bookCache[key]) {
+    loading.style.display = 'none';
     container.innerHTML = bookCache[key];
     return;
   }
@@ -3570,15 +3571,15 @@ function showLanding() {
 }
 
 function hideLanding() {
-  // Show the reader surface
+  // Pre-hide cleanup: collapse all non-reader surfaces.
+  // NOTE: currentView is NOT set here — navigate() owns that state assignment
+  // so its guard (if currentView !== 'reader') fires correctly and calls
+  // hideAllViews() + unhides #content + setReaderChrome(true).
   document.getElementById('landing').classList.remove('visible');
   document.getElementById('toc-view').classList.remove('visible');
   document.getElementById('chgrid-view').classList.remove('visible');
-  document.getElementById('content').style.display = '';
-  setReaderChrome(true);
   document.body.classList.remove('view-toc', 'view-chapters');
   updateTopbarForView('reader', null);
-  currentView = 'reader';
 }
 
 
