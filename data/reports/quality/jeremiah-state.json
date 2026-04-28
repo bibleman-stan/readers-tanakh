@@ -1,15 +1,15 @@
 {
   "book": "jeremiah",
   "dir_name": "24-jeremiah",
-  "timestamp": "2026-04-27T19:59:04",
+  "timestamp": "2026-04-27T20:14:50",
   "chapter_count": 52,
   "total_cola": 7465,
-  "readiness_score": 85,
+  "readiness_score": 86,
   "score_breakdown": {
     "malformed_pts": 50.0,
     "deviation_pts": 25.12,
     "review_pts": 10.0,
-    "drift_pts": 0.0
+    "drift_pts": 1.0
   },
   "validators": {
     "total_findings": 510,
@@ -117,11 +117,11 @@
     "MID_SPLIT": 0
   },
   "english_drift": {
-    "ARTICLE-SPLIT": 3,
-    "PREP-NP-SPLIT": 89,
-    "AUX-VERB-SPLIT": 1,
-    "PTC-NP-SPLIT": 3,
-    "APPOSITIVE-SPLIT": 10,
+    "ARTICLE-SPLIT": 2,
+    "PREP-NP-SPLIT": 12,
+    "AUX-VERB-SPLIT": 2,
+    "PTC-NP-SPLIT": 1,
+    "APPOSITIVE-SPLIT": 1,
     "DANGLING-CONJ": 0
   }
 }

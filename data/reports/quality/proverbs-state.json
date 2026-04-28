@@ -1,15 +1,15 @@
 {
   "book": "proverbs",
   "dir_name": "20-proverbs",
-  "timestamp": "2026-04-27T19:56:38",
+  "timestamp": "2026-04-27T20:13:28",
   "chapter_count": 31,
   "total_cola": 2589,
-  "readiness_score": 94,
+  "readiness_score": 96,
   "score_breakdown": {
     "malformed_pts": 50.0,
     "deviation_pts": 30.0,
     "review_pts": 10.0,
-    "drift_pts": 4.0
+    "drift_pts": 6.5
   },
   "validators": {
     "total_findings": 68,
@@ -103,11 +103,11 @@
     "MID_SPLIT": 0
   },
   "english_drift": {
-    "ARTICLE-SPLIT": 0,
-    "PREP-NP-SPLIT": 6,
+    "ARTICLE-SPLIT": 1,
+    "PREP-NP-SPLIT": 2,
     "AUX-VERB-SPLIT": 0,
-    "PTC-NP-SPLIT": 5,
-    "APPOSITIVE-SPLIT": 1,
+    "PTC-NP-SPLIT": 4,
+    "APPOSITIVE-SPLIT": 0,
     "DANGLING-CONJ": 0
   }
 }

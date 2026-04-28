@@ -1,15 +1,15 @@
 {
   "book": "lamentations",
   "dir_name": "25-lamentations",
-  "timestamp": "2026-04-27T19:59:17",
+  "timestamp": "2026-04-27T20:14:59",
   "chapter_count": 5,
   "total_cola": 637,
-  "readiness_score": 84,
+  "readiness_score": 90,
   "score_breakdown": {
     "malformed_pts": 50.0,
     "deviation_pts": 23.5,
     "review_pts": 10.0,
-    "drift_pts": 0.5
+    "drift_pts": 7.0
   },
   "validators": {
     "total_findings": 48,
@@ -99,10 +99,10 @@
     "MID_SPLIT": 0
   },
   "english_drift": {
-    "ARTICLE-SPLIT": 0,
-    "PREP-NP-SPLIT": 16,
-    "AUX-VERB-SPLIT": 1,
-    "PTC-NP-SPLIT": 2,
+    "ARTICLE-SPLIT": 6,
+    "PREP-NP-SPLIT": 0,
+    "AUX-VERB-SPLIT": 0,
+    "PTC-NP-SPLIT": 0,
     "APPOSITIVE-SPLIT": 0,
     "DANGLING-CONJ": 0
   }

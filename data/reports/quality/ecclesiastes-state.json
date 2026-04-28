@@ -1,15 +1,15 @@
 {
   "book": "ecclesiastes",
   "dir_name": "21-ecclesiastes",
-  "timestamp": "2026-04-27T19:56:57",
+  "timestamp": "2026-04-27T20:13:39",
   "chapter_count": 12,
   "total_cola": 1133,
-  "readiness_score": 92,
+  "readiness_score": 96,
   "score_breakdown": {
     "malformed_pts": 50.0,
     "deviation_pts": 26.98,
     "review_pts": 10.0,
-    "drift_pts": 5.0
+    "drift_pts": 9.0
   },
   "validators": {
     "total_findings": 55,
@@ -109,10 +109,10 @@
   },
   "english_drift": {
     "ARTICLE-SPLIT": 0,
-    "PREP-NP-SPLIT": 8,
+    "PREP-NP-SPLIT": 2,
     "AUX-VERB-SPLIT": 0,
-    "PTC-NP-SPLIT": 1,
-    "APPOSITIVE-SPLIT": 1,
+    "PTC-NP-SPLIT": 0,
+    "APPOSITIVE-SPLIT": 0,
     "DANGLING-CONJ": 0
   }
 }

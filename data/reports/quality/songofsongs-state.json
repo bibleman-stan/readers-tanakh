@@ -1,15 +1,15 @@
 {
   "book": "songofsongs",
   "dir_name": "22-songofsongs",
-  "timestamp": "2026-04-27T19:57:09",
+  "timestamp": "2026-04-27T20:13:45",
   "chapter_count": 8,
   "total_cola": 577,
-  "readiness_score": 91,
+  "readiness_score": 95,
   "score_breakdown": {
     "malformed_pts": 50.0,
     "deviation_pts": 24.55,
     "review_pts": 10.0,
-    "drift_pts": 6.0
+    "drift_pts": 10.0
   },
   "validators": {
     "total_findings": 39,
@@ -100,10 +100,10 @@
   },
   "english_drift": {
     "ARTICLE-SPLIT": 0,
-    "PREP-NP-SPLIT": 7,
+    "PREP-NP-SPLIT": 0,
     "AUX-VERB-SPLIT": 0,
     "PTC-NP-SPLIT": 0,
-    "APPOSITIVE-SPLIT": 1,
+    "APPOSITIVE-SPLIT": 0,
     "DANGLING-CONJ": 0
   }
 }

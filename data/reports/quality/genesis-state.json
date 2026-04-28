@@ -1,7 +1,7 @@
 {
   "book": "genesis",
   "dir_name": "01-genesis",
-  "timestamp": "2026-04-27T19:56:08",
+  "timestamp": "2026-04-27T20:06:22",
   "chapter_count": 50,
   "total_cola": 7974,
   "readiness_score": 85,
@@ -119,11 +119,11 @@
     "MID_SPLIT": 0
   },
   "english_drift": {
-    "ARTICLE-SPLIT": 0,
-    "PREP-NP-SPLIT": 53,
-    "AUX-VERB-SPLIT": 2,
+    "ARTICLE-SPLIT": 3,
+    "PREP-NP-SPLIT": 19,
+    "AUX-VERB-SPLIT": 5,
     "PTC-NP-SPLIT": 0,
-    "APPOSITIVE-SPLIT": 13,
+    "APPOSITIVE-SPLIT": 4,
     "DANGLING-CONJ": 0
   }
 }

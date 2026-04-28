@@ -1,7 +1,7 @@
 {
   "book": "leviticus",
   "dir_name": "03-leviticus",
-  "timestamp": "2026-04-27T19:57:44",
+  "timestamp": "2026-04-27T20:07:35",
   "chapter_count": 27,
   "total_cola": 4378,
   "readiness_score": 87,
@@ -113,10 +113,10 @@
   },
   "english_drift": {
     "ARTICLE-SPLIT": 0,
-    "PREP-NP-SPLIT": 72,
+    "PREP-NP-SPLIT": 18,
     "AUX-VERB-SPLIT": 2,
-    "PTC-NP-SPLIT": 9,
-    "APPOSITIVE-SPLIT": 2,
+    "PTC-NP-SPLIT": 5,
+    "APPOSITIVE-SPLIT": 0,
     "DANGLING-CONJ": 0
   }
 }

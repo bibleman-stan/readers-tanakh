@@ -1,7 +1,7 @@
 {
   "book": "numbers",
   "dir_name": "04-numbers",
-  "timestamp": "2026-04-27T19:58:38",
+  "timestamp": "2026-04-27T20:08:16",
   "chapter_count": 36,
   "total_cola": 6382,
   "readiness_score": 85,
@@ -118,10 +118,10 @@
   },
   "english_drift": {
     "ARTICLE-SPLIT": 0,
-    "PREP-NP-SPLIT": 174,
-    "AUX-VERB-SPLIT": 2,
+    "PREP-NP-SPLIT": 28,
+    "AUX-VERB-SPLIT": 1,
     "PTC-NP-SPLIT": 4,
-    "APPOSITIVE-SPLIT": 16,
+    "APPOSITIVE-SPLIT": 0,
     "DANGLING-CONJ": 0
   }
 }

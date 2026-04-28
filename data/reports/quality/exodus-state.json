@@ -1,7 +1,7 @@
 {
   "book": "exodus",
   "dir_name": "02-exodus",
-  "timestamp": "2026-04-27T19:57:04",
+  "timestamp": "2026-04-27T20:07:02",
   "chapter_count": 40,
   "total_cola": 6265,
   "readiness_score": 87,
@@ -118,11 +118,11 @@
     "MID_SPLIT": 0
   },
   "english_drift": {
-    "ARTICLE-SPLIT": 0,
-    "PREP-NP-SPLIT": 82,
-    "AUX-VERB-SPLIT": 2,
+    "ARTICLE-SPLIT": 6,
+    "PREP-NP-SPLIT": 14,
+    "AUX-VERB-SPLIT": 3,
     "PTC-NP-SPLIT": 3,
-    "APPOSITIVE-SPLIT": 5,
+    "APPOSITIVE-SPLIT": 3,
     "DANGLING-CONJ": 0
   }
 }

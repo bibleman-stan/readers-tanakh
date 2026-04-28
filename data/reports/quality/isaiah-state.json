@@ -1,7 +1,7 @@
 {
   "book": "isaiah",
   "dir_name": "23-isaiah",
-  "timestamp": "2026-04-27T19:58:04",
+  "timestamp": "2026-04-27T20:14:17",
   "chapter_count": 66,
   "total_cola": 6933,
   "readiness_score": 87,
@@ -117,11 +117,11 @@
     "MID_SPLIT": 0
   },
   "english_drift": {
-    "ARTICLE-SPLIT": 0,
-    "PREP-NP-SPLIT": 69,
+    "ARTICLE-SPLIT": 7,
+    "PREP-NP-SPLIT": 10,
     "AUX-VERB-SPLIT": 0,
-    "PTC-NP-SPLIT": 11,
-    "APPOSITIVE-SPLIT": 14,
+    "PTC-NP-SPLIT": 6,
+    "APPOSITIVE-SPLIT": 3,
     "DANGLING-CONJ": 0
   }
 }
