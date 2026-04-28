@@ -51,8 +51,22 @@
     /* topbar (44px) + layer-bar (~46px on a single row) + breathing room.
        The mobile media query overrides this; both must clear the layer-bar. */
     padding-top: 100px;
+    /* In TOC and chapter-grid views the layer-bar is hidden so only the
+       topbar (44px) + breathing needs clearing. */
     letter-spacing: var(--letter-spacing);
     word-spacing: var(--word-spacing);
+  }
+
+  /* TOC and chapter-grid view: layer-bar is hidden, so only topbar clears */
+  body.view-toc,
+  body.view-chapters {
+    padding-top: 56px;
+  }
+  @media (max-width: 480px) {
+    body.view-toc,
+    body.view-chapters {
+      padding-top: 52px;
+    }
   }
 
   /* === PROGRESS LINE === */
@@ -1760,17 +1774,24 @@ function updateProgress() {
 
 async function navigate(book, chapter, verse) {
   // Defensive: if we're asked to navigate to a book that's not in BOOKS
-  // (e.g., a stale hash from a sibling-project URL), fall back to landing
-  // instead of throwing partway through.
+  // (e.g., a stale hash from a sibling-project URL), fall back to TOC.
   if (!BOOKS[book]) {
     history.replaceState(null, '', location.pathname);
-    showLanding();
+    showToc();
     return;
+  }
+  // Ensure reader surface is visible when drilling in from TOC / chapter grid
+  if (currentView !== 'reader') {
+    hideAllViews();
+    document.getElementById('content').style.display = '';
+    setReaderChrome(true);
+    document.body.classList.remove('view-toc', 'view-chapters');
+    currentView = 'reader';
   }
   currentBook = book;
   currentChapter = chapter;
   setHash(book, chapter, verse);
-  updateTopbar();
+  updateTopbarForView('reader', null);
   updateNavButtons();
   updateFloatNav();
   await loadChapter(book, chapter);
@@ -3323,8 +3344,8 @@ function updateFloatNav() {
   const prev = document.getElementById('float-prev');
   const next = document.getElementById('float-next');
   if (!prev || !next) return;
-  const landing = document.getElementById('landing');
-  if (landing && landing.classList.contains('visible')) {
+  // Hide float nav in any non-reader view
+  if (currentView !== 'reader') {
     prev.classList.remove('active');
     next.classList.remove('active');
     return;
@@ -3346,11 +3367,13 @@ function hideAllViews() {
   document.getElementById('content').style.display = 'none';
 }
 
-// Show/hide pillbox + prev/next based on view
+// Show/hide pillbox + prev/next based on view; also adjusts body padding class
 function setReaderChrome(show) {
   document.getElementById('layer-bar').style.display = show ? '' : 'none';
   const nav = document.querySelector('.chapter-nav');
   if (nav) nav.style.display = show ? '' : 'none';
+  // Body padding class driven by view (CSS reduces padding when layer-bar is hidden)
+  // These are set by showToc / showChapterGrid / hideLanding directly via currentView
 }
 
 // --- TOC view (root: empty hash) ---
@@ -3390,6 +3413,8 @@ function showToc() {
   hideAllViews();
   document.getElementById('toc-view').classList.add('visible');
   setReaderChrome(false);
+  document.body.classList.add('view-toc');
+  document.body.classList.remove('view-chapters');
   updateTopbarForView('toc', null);
   document.getElementById('progress-line').style.width = '0%';
   document.getElementById('float-prev').classList.remove('active');
@@ -3422,6 +3447,8 @@ function showChapterGrid(slug) {
   buildChapterGrid(slug);
   document.getElementById('chgrid-view').classList.add('visible');
   setReaderChrome(false);
+  document.body.classList.add('view-chapters');
+  document.body.classList.remove('view-toc');
   updateTopbarForView('chapters', slug);
   document.getElementById('progress-line').style.width = '0%';
   document.getElementById('float-prev').classList.remove('active');
@@ -3549,6 +3576,7 @@ function hideLanding() {
   document.getElementById('chgrid-view').classList.remove('visible');
   document.getElementById('content').style.display = '';
   setReaderChrome(true);
+  document.body.classList.remove('view-toc', 'view-chapters');
   updateTopbarForView('reader', null);
   currentView = 'reader';
 }
