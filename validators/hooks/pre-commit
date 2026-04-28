@@ -1,15 +1,80 @@
 #!/bin/sh
 # Tanakh Reader pre-commit hook
-# Runs all colometry validators automatically on commits that touch the canon
-# or the editorial corpus. Blocks commits that INCREASE finding counts vs
-# validators/.baseline.json.
 #
-# To bypass (only with Stan's explicit authorization):
+# Two-phase gate:
+#
+# Phase 1 — Follow-on rebuild cascade (v2/he changes only)
+#   When any data/text-files/v2/he/<book>/ file is staged, automatically
+#   runs refresh_book.py --book <book> --build for each affected book and
+#   stages the regenerated output (v2 derived layers + books/<book>.html).
+#   Multiple books edited in one commit are rebuilt sequentially.
+#   If any rebuild fails, the commit is aborted before the validator gate.
+#
+# Phase 2 — Validator regression gate
+#   Runs run_all.py --baseline-check on any commit that touches v2/he/,
+#   the colometry canon, syntax-reference docs, or validator scripts.
+#   Blocks the commit if finding counts increase vs .baseline.json.
+#
+# Install (one-time, from repo root):
+#   cp validators/hooks/pre-commit .git/hooks/pre-commit
+#   chmod +x .git/hooks/pre-commit
+#
+# Bypass (Stan-only, explicit decision):
 #   git commit --no-verify
 
 set -e
 
-# Only run validators if relevant files are staged.
+REPO_ROOT=$(git rev-parse --show-toplevel)
+cd "$REPO_ROOT"
+
+# ── Phase 1: follow-on rebuild cascade ──────────────────────────────────────
+
+# Find all staged v2/he/<book>/<file> paths and extract unique book folders.
+V2_HE_STAGED=$(git diff --cached --name-only | grep -E "^data/text-files/v2/he/[^/]+/" || true)
+
+if [ -n "$V2_HE_STAGED" ]; then
+    # Extract unique book folder names (the segment after v2/he/).
+    BOOKS=$(echo "$V2_HE_STAGED" | sed -E 's|^data/text-files/v2/he/([^/]+)/.*|\1|' | sort -u)
+
+    echo ""
+    echo "[pre-commit] v2/he edits detected. Running follow-on rebuild cascade..."
+
+    for BOOK in $BOOKS; do
+        echo ""
+        echo "[pre-commit]   Rebuilding: $BOOK"
+        set +e
+        PYTHONIOENCODING=utf-8 py -3 scripts/refresh_book.py --book "$BOOK" --build
+        REBUILD_RESULT=$?
+        set -e
+
+        if [ $REBUILD_RESULT -ne 0 ]; then
+            echo ""
+            echo "[pre-commit] BLOCKED: refresh_book.py failed for $BOOK (exit $REBUILD_RESULT)."
+            echo "[pre-commit] Fix the rebuild error above before committing."
+            echo ""
+            exit 1
+        fi
+    done
+
+    echo ""
+    echo "[pre-commit] Cascade complete. Staging regenerated output files..."
+
+    # Stage everything that changed in the derived v2 layers and books/.
+    # git add is idempotent on already-staged files, so this is safe even
+    # if a layer was untouched by the rebuild.
+    git add \
+        data/text-files/v2/eng-interlinear/ \
+        data/text-files/v2/eng-gloss/ \
+        data/text-files/v2/translit/ \
+        books/ \
+        2>/dev/null || true
+
+    echo "[pre-commit] Regenerated files staged."
+    echo ""
+fi
+
+# ── Phase 2: validator regression gate ──────────────────────────────────────
+
 RELEVANT=$(git diff --cached --name-only | grep -E "^(data/text-files/v2/he/|private/01-method/colometry-canon\.md|data/syntax-reference/|validators/)" || true)
 
 if [ -z "$RELEVANT" ]; then
@@ -17,16 +82,13 @@ if [ -z "$RELEVANT" ]; then
 fi
 
 echo ""
-echo "[pre-commit] Canon/corpus/validator files staged. Running run_all..."
+echo "[pre-commit] Canon/corpus/validator files staged. Running run_all --baseline-check..."
 echo ""
 
-REPO_ROOT=$(git rev-parse --show-toplevel)
-cd "$REPO_ROOT"
-
-# Run baseline-check mode. Blocks only on REGRESSIONS (finding count
-# increased vs validators/.baseline.json). Pre-existing findings don't block.
+set +e
 PYTHONIOENCODING=utf-8 py -3 validators/run_all.py --baseline-check
 RESULT=$?
+set -e
 
 if [ $RESULT -ne 0 ]; then
     echo ""

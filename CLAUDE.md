@@ -183,7 +183,7 @@ Mirrors the `bibleman-stan/readers-bofm` sibling architecture (codified there 20
 |---|---|
 | `validators/run_all.py` | Dashboard. Discovers all `validate_*.py`, runs each with `--json --v2`, aggregates per-validator finding counts. Modes: default (report-only), `--baseline-check` (regression gate against `validators/.baseline.json`), `--update-baseline` (capture current state). |
 | `validators/.baseline.json` | Per-validator finding counts captured at the moment of last `--update-baseline`. The reference state for regression detection. |
-| `.git/hooks/pre-commit` (← `validators/hooks/pre-commit`) | Fires when staged files match `data/text-files/v2/he/`, `private/01-method/colometry-canon.md`, `data/syntax-reference/`, or `validators/`. Runs `run_all.py --baseline-check`; blocks on regression (finding count INCREASED vs baseline). |
+| `.git/hooks/pre-commit` (← `validators/hooks/pre-commit`) | Two-phase gate. **Phase 1 (rebuild cascade):** when `data/text-files/v2/he/<book>/` paths are staged, auto-runs `scripts/refresh_book.py --book <book> --build` for each affected book and stages the regenerated derived layers (`v2/eng-interlinear/`, `v2/eng-gloss/`, `v2/translit/`, `books/<book>.html`) before the commit lands. Multiple books in one commit are rebuilt sequentially; any rebuild failure aborts the commit. **Phase 2 (regression gate):** runs `run_all.py --baseline-check`; blocks on finding count increase vs baseline. |
 | `.git/hooks/commit-msg` (← `validators/hooks/commit-msg`) | Runs `validators/check_canon_extensions.py` on the proposed commit message. Detects canon extensions (new `Rule HN`, new `MN.` merge-override, new dated principle, closed-list table row, new §7 trigger, new SCOPE-exclusion bullet). Requires audit-evidence keyword (`audit`, `§7`, `post-codification`, etc.) OR skip-safe claim (`typo`, `formatting`, `audit-skippable`). Closes the smuggling-during-unrelated-commit failure mode. |
 
 **Override (Stan-only, explicit decision):** `git commit --no-verify`
@@ -230,16 +230,19 @@ This discipline complements (does NOT replace) the **Self-consistency audit trig
 
 ---
 
-## Build Pipeline (planned)
+## Follow-On Rebuild Cascade (automatic)
 
-The cascade rule (once English layer exists): **Hebrew edit → English regen → HTML rebuild**.
+**The cascade fires automatically on every commit that touches `data/text-files/v2/he/`.** You do not invoke it manually.
 
-For the Hebrew-only MVP: **Hebrew edit → HTML rebuild**.
+Cascade rule: **v2/he edit (staged) → pre-commit hook detects affected book(s) → `refresh_book.py --book <book> --build` → regenerated `v2/eng-interlinear/`, `v2/eng-gloss/`, `v2/translit/`, `books/<book>.html` staged and included in the same commit → validator regression gate → commit lands.**
 
-Scripts will live in `scripts/`. Run them with:
+The editor commits only the Hebrew change (`v2/he/<book>/<chapter>.txt`). Everything downstream regenerates and commits atomically. Multiple books in one commit are each rebuilt sequentially.
+
+**Manual invocation** (when running outside a commit, e.g. after pulling):
 
 ```bash
-PYTHONIOENCODING=utf-8 py -3 scripts/<script>.py
+PYTHONIOENCODING=utf-8 py -3 scripts/refresh_book.py --book 32-jonah --build
+PYTHONIOENCODING=utf-8 py -3 scripts/refresh_book.py --all-books --build
 ```
 
 The `PYTHONIOENCODING=utf-8` prefix is mandatory on Windows for any script touching Hebrew Unicode (combining characters, te'amim, niqqud).
