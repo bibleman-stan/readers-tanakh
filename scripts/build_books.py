@@ -34,10 +34,19 @@ and its right-side visual neighbor.
 Hebrew render: each orthographic word is a span. Maqqef-joined words have
 NO whitespace between source spans (the maqqef glyph itself bridges them).
 Non-joined adjacent words have a whitespace text node between (rendered space).
+
+OUTPUT LAYOUT (per-chapter, deprecating monolithic):
+  books/<slug>/manifest.json          — {book_name, chapters: [1,2,...,N]}
+  books/<slug>/<slug>-<NN>.html       — single <div class="chapter"> block per chapter
+
+The monolithic books/<slug>.html files are no longer emitted. The client
+fetches one chapter at a time via per-chapter URLs, with adjacent-chapter
+prefetching for snappy navigation.
 """
 
 import argparse
 import html
+import json
 import os
 import re
 import sys
@@ -256,7 +265,14 @@ def _pick_source(
 
 
 def build_book(book_key, skip_missing=False):
-    """Build HTML for a single book.
+    """Build per-chapter HTML files and a manifest for a single book.
+
+    Emits:
+      books/<slug>/manifest.json              — {book_name, chapters: [...]}
+      books/<slug>/<slug>-<NN>.html           — one file per chapter
+
+    The monolithic books/<slug>.html is no longer produced; the JS client
+    fetches individual chapter files.
 
     Returns True on success, False when source files are absent and
     skip_missing=True (used by --all-books).  With skip_missing=False
@@ -295,13 +311,18 @@ def build_book(book_key, skip_missing=False):
     tr_v2_files = _files_in(tr_v2, prefix)
     tr_v1_files = _files_in(tr_v1, prefix)
 
-    fragments = []
     counts = {
         "he_v2": 0, "he_v1": 0,
         "inter_v2": 0, "inter_v1": 0, "inter_none": 0,
         "gloss_v2": 0, "gloss_v1": 0, "gloss_none": 0,
         "tr_v2": 0, "tr_v1": 0, "tr_none": 0,
     }
+
+    # Per-chapter output directory: books/<slug>/
+    book_out_dir = os.path.join(OUTPUT_DIR, book_key)
+    os.makedirs(book_out_dir, exist_ok=True)
+
+    chapter_nums = []
 
     for fn in all_files:
         # Hebrew (required). Cascade through tiers in canonical order.
@@ -338,6 +359,8 @@ def build_book(book_key, skip_missing=False):
 
         he_verses = parse_chapter_lines(he_path)
         chapter_num = int(he_verses[0]["ref"].split(":")[0]) if he_verses else 0
+        if not chapter_num:
+            continue
 
         inter_lookup = lines_to_lookup(parse_chapter_lines(inter_path)) if inter_path else {}
         gloss_lookup = lines_to_lookup(parse_chapter_lines(gloss_path)) if gloss_path else {}
@@ -347,16 +370,33 @@ def build_book(book_key, skip_missing=False):
             "he": he_source, "inter": inter_source,
             "gloss": gloss_source, "translit": tr_source,
         }
-        fragments.append(
-            render_chapter(chapter_num, he_verses, inter_lookup, gloss_lookup, tr_lookup, sources)
+        fragment = render_chapter(
+            chapter_num, he_verses, inter_lookup, gloss_lookup, tr_lookup, sources
         )
 
-    os.makedirs(OUTPUT_DIR, exist_ok=True)
-    out_path = os.path.join(OUTPUT_DIR, spec["out"])
-    with open(out_path, "w", encoding="utf-8", newline="\n") as f:
-        f.write("\n".join(fragments) + "\n")
+        # Write per-chapter file: books/<slug>/<slug>-<NN>.html
+        ch_filename = f"{book_key}-{chapter_num:02d}.html"
+        ch_path = os.path.join(book_out_dir, ch_filename)
+        with open(ch_path, "w", encoding="utf-8", newline="\n") as f:
+            f.write(fragment + "\n")
 
-    print(f"  wrote {out_path}")
+        chapter_nums.append(chapter_num)
+
+    # Write manifest: books/<slug>/manifest.json
+    # book_key.replace with title-casing is a reasonable display name fallback;
+    # the JS client uses its own BOOKS registry for display names, so the
+    # manifest name is informational only.
+    manifest = {
+        "book_name": book_key.replace("1", "1 ").replace("2", "2 ").title().strip(),
+        "slug": book_key,
+        "chapters": sorted(chapter_nums),
+    }
+    manifest_path = os.path.join(book_out_dir, "manifest.json")
+    with open(manifest_path, "w", encoding="utf-8", newline="\n") as f:
+        json.dump(manifest, f, ensure_ascii=False)
+        f.write("\n")
+
+    print(f"  wrote {book_out_dir}/ ({len(chapter_nums)} chapters + manifest.json)")
     print(f"  Hebrew      v2: {counts['he_v2']}  v1: {counts['he_v1']}")
     print(f"  Interlinear v2: {counts['inter_v2']}  v1: {counts['inter_v1']}  none: {counts['inter_none']}")
     print(f"  Gloss       v2: {counts['gloss_v2']}  v1: {counts['gloss_v1']}  none: {counts['gloss_none']}")

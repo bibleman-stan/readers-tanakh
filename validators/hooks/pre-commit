@@ -6,9 +6,10 @@
 # Phase 1 — Follow-on rebuild cascade (v2/he changes only)
 #   When any data/text-files/v2/he/<book>/ file is staged, automatically
 #   runs refresh_book.py --book <book> --build for each affected book and
-#   stages the regenerated output (v2 derived layers + books/<book>.html).
-#   Multiple books edited in one commit are rebuilt sequentially.
-#   If any rebuild fails, the commit is aborted before the validator gate.
+#   stages the regenerated output (v2 derived layers + books/<book>/ per-chapter
+#   files + manifest.json). Multiple books edited in one commit are rebuilt
+#   sequentially. If any rebuild fails, the commit is aborted before the
+#   validator gate.
 #
 # Phase 2 — Validator regression gate
 #   Runs run_all.py --baseline-check on any commit that touches v2/he/,
