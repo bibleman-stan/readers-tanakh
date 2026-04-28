@@ -1,0 +1,42 @@
+name: m1_bonded_pair
+rule: M1
+subcase: bonded_pair_split
+severity: STRONG-MERGE-CANDIDATE
+description: |
+  Closed-list M1 hendiadys/merism pair split: skeleton1 line-end + וְ-skeleton2
+  line-start, where (skeleton1, skeleton2) is in the canonical bonded-pair lexicon.
+
+trigger:
+  line_n_last_token:
+    skeleton_in:
+      - חסד
+      - שמים
+      - יומם
+      - טוב
+      - זכר
+      - אמת
+      - שרים
+      - רחמים
+      - עז
+      - שלום
+      - כבוד
+  line_n1_first_token:
+    skeleton_starts_with:
+      - וא      # וְאֱמֶת / וְאָרֶץ
+      - וב      # וברכה / וברית
+      - וג      # וגבורה
+      - וח      # וחן
+      - וי      # וילה / וישפט
+      - ול      # ולילה
+      - ומ      # ומשפט
+      - ונ      # ונקבה
+      - ור      # ורע
+      - וש      # ושופטים
+      - וה      # והדר
+
+guards:
+  - poetic_register
+  - both_lines_have_finite_verb
+
+annotation_template: "M1 bonded pair split — likely hendiadys/merism (combined {pwc} prosodic words)"
+suggested_action: MERGE

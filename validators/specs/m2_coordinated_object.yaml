@@ -1,0 +1,22 @@
+name: m2_coordinated_object
+rule: M2
+subcase: coordinated_do_split
+severity: STRONG-MERGE-CANDIDATE
+description: |
+  Compound direct-object split: את + NP // וְאֵת + NP under one shared verb.
+  Both halves serve as compound DO of a single verb on a prior line.
+
+trigger:
+  line_n_first_token:
+    skeleton_in: ["את"]
+  line_n1_first_token:
+    skeleton_in: ["ואת"]
+  combined_max_prosodic_words: 8
+
+guards:
+  - poetic_register
+  - both_lines_have_finite_verb
+  - heavy_subject
+
+annotation_template: "Coordinated DO split: את-NP // וְאֵת-NP (combined {pwc} prosodic words)"
+suggested_action: MERGE

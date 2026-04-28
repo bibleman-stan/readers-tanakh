@@ -558,7 +558,7 @@ Authoritative table: [`data/syntax-reference/teamim-inventory.md`](../../data/sy
 
 ## §5 The Rules (Detail)
 
-*Purpose: **mainly operational** — full rule detail for rules H1–H17. Reference when a §3 table entry is insufficient.*
+*Purpose: **mainly operational** — full rule detail for rules H1–H18. Reference when a §3 table entry is insufficient.*
 
 Each rule below follows the template:
 - **Grammatical basis** — the Hebrew syntactic / orthographic / Masoretic fact
@@ -566,6 +566,70 @@ Each rule below follows the template:
 - **Diagnostic** — the test a scanner or human applies
 - **Exceptions** — closed list
 - **Example(s)** — from the corpus
+
+### §5.0 Named Operational Tests
+
+Five named tests that editors invoke by name at candidate boundaries. They are not separate rules — they are shorthands that instantiate the three forces (generative, subtractive, diagnostic) at the per-location decision point. Cite them by name in commit messages, validator annotations, and editorial review notes to make the discipline visible at the surface.
+
+#### No-Anchor Test
+
+**Question:** Does the candidate line carry an atomic-thought anchor — a finite verb, infinitive, predicative participle, verbless-clause subject+predicate, or substantive head independently predicated?
+
+**Application context:** Generative principle (§1 Generative Principle; Hebrew anchor inventory). Fires first at any proposed split before structural justifications are evaluated.
+
+**WHY:** A line with no anchor fails the atomic-thought test by definition. The failure mode it prevents: splitting off a bare NP, a lone proclitic, or a trailing PP that has no self-standing predicative content. When no anchor is present, the fragment belongs with whichever adjacent line supplies the anchor — merge upward (toward the prior line) unless a structural justification pulls it down.
+
+---
+
+#### Period Test
+
+**Question:** Could a period (English-style sentence end) reasonably fall at this candidate boundary — i.e., does the candidate unit constitute a proposition with proposition-end weight?
+
+**Application context:** Generative principle (proposition boundary). Supplements the No-Anchor Test by checking *propositional completeness*, not just anchor presence. A line can carry an anchor and still not constitute a complete proposition (e.g., a participle awaiting its obligatory complement — M3 bare-governor scenario).
+
+**WHY:** The failure mode it prevents: over-splitting when an anchor is technically present but the predication is not yet closed. The period test externalizes the editor's intuition: *if a translator could end a sentence here, the line has proposition-end weight; if not, something is still dangling forward*. When the answer is no, merge with the complement (complement integrity, §1 Syntax Forbids Splits item 2; Rule H7).
+
+---
+
+#### Image Test
+
+**Question:** Does the mind's eye reposition between the candidate frames — a camera-angle shift between them?
+
+**Application context:** Diagnostic force (§1 Image Sharpens Ambiguous Proposition Boundaries). Fires only after generative and subtractive forces leave a genuine ambiguity — it is a tiebreaker, not a primary generator.
+
+**WHY:** The failure mode it prevents: using intuitive "visual" judgment as a primary split-generator instead of holding it to the tiebreaker role the canon assigns. A camera-angle shift → SPLIT (two distinct focal planes, two lines); no shift → MERGE (one image, one line). The test disciplines the editor to ask *does the perspective change* rather than *does this look like two lines*. Prevents scope creep from rhetoric-bandwagon categories (§1 Imposing vs. Revealing).
+
+---
+
+#### Goldilocks Q1/Q2 Diagnostic
+
+**Q1:** Is the candidate line *too short* to stand as atomic thought — a single bare token with no predication and no structural-justification recoverability?
+
+**Q2:** Is the candidate line *too long* to read as one focused-attention chunk — a span that contains what would otherwise be multiple independently licensable propositions?
+
+**Application context:** Length-range sanity check wrapping the atomic-thought test. Both questions apply *after* structural justifications and merge-overrides have run.
+
+- Q1 yes → the line fails the atomic-thought test; merge upward (M4 prospective test / No-Anchor Test).
+- Q2 yes → the span contains multiple propositions; look for the internal boundary where a split is licensed.
+- Both no (Goldilocks) → leave as-is; neither force applies.
+
+**WHY:** The failure modes it prevents: (a) Q1 — over-splitting that produces widow tokens with no standalone meaning (bare conjunctions, lone preposition-prefixes, bare construct heads — all Layer 1 REQUIRED-MERGE); (b) Q2 — under-splitting that buries multiple propositions in one line, defeating the sense-line purpose. The Goldilocks framing keeps both failure modes in view simultaneously. Note that Q2 is a *signal* to look for an internal split, not itself authorization to split — the licensed split still requires a structural justification or proposition boundary.
+
+---
+
+#### Completing-Predication Test
+
+**Question:** Does the matrix word on the prior line require a downstream complement — a PP, a clausal complement (כִּי-clause, אֲשֶׁר-clause, *לֵאמֹר*-introduced speech, infinitive complement) — to be syntactically complete?
+
+**Application context:** Subtractive force — complement integrity (§1 Syntax Forbids Splits item 2; Rule H7; M3 bare-governor indivisibility). Fires when a proposed split would strand the complement on a separate line from its governing matrix.
+
+**WHY:** The failure mode it prevents: producing lines where the prior line's verb or adjective is syntactically open (valence unsatisfied) and the next line closes it — breaking across a dependency arc that Hebrew grammar treats as one unit. The test is the functional twin of the Period Test: the Period Test checks whether proposition-end weight is present *at the boundary*; the Completing-Predication Test checks whether the *prior* line is already complete or still open. Both must pass for a split to proceed cleanly.
+
+---
+
+**Cite-by-name convention.** In commit messages and validator annotations, reference these tests by their short names: "No-Anchor Test → merge," "Image Test → split (camera shift at *וַיָּקָם*)," "Completing-Predication Test → merge (*יָדַע* still open at כִּי)," etc. This makes the three-force reasoning visible in the audit trail without requiring full prose re-statement of the underlying rule.
+
+---
 
 ### Rule H1 — Maqqef-Group Indivisibility
 
@@ -1240,6 +1304,62 @@ Hebrew terminology used throughout this canon, in alphabetical order by translit
 - **Wayyiqtol** (vav-consecutive imperfect) — the dominant clause-head verbal form in Hebrew narrative prose. Marks sequential narrative events. See Rule H3.
 - **Zaqef qaton / zaqef gadol** — second-tier disjunctive accents in the prose system.
 - **Zarqa / Tzinnor** — the SAME accent positionally; *zarqa* in prose, *tzinnor* in Sifrei Emet terminology. Predecessor stub canon's §3.2 listing them as separate accents was a factual error.
+
+---
+
+## §10 Retired Formulations
+
+*Purpose: **mainly historical** — documents what was explicitly retired and why, so future editors do not accidentally re-propose discarded framings as new ideas. Format mirrors §8 Update Log entries but is deletion-focused rather than addition-focused. Entries are in retirement-date order.*
+
+Each entry records: the retired formulation, the retirement date, why it was retired, and what (if anything) replaced it.
+
+---
+
+### Retired 2026-04-26 — Te'amim-as-prior with override-warrant discipline
+
+**Retired formulation.** The predecessor stub canon (2026-04-25) placed the te'amim as the structural prior for line-break decisions: breaks defaulted to what the te'amim disjunctive hierarchy produced, with documented "override warrants" required to deviate from that prior.
+
+**Why retired.** The te'amim are a Tiberian Masoretic editorial overlay (~9th–10th c. CE), not original compositional structure. The override-warrant framing demoted the editor's evidence-based reasoning to a secondary role relative to a late medieval chant-marker system. The sibling canons (BoFM, GNT) had already converged on the principle that editorial overlays carry no deterministic force — the te'amim in Hebrew are exactly parallel to NA28 punctuation in Greek and Pratt's 1879 versification in the BoFM English text.
+
+**Replacement.** Te'amim-as-evidence: the te'amim are the most important single piece of evidence and the editor's starting draft (v1-he-baseline), but they do not authorize a break by themselves. See §1 "The Te'amim Are Not a Structural Prior" and Rule H8.
+
+**§8 cross-reference.** 2026-04-26 "Canon v1.0 written from scratch" entry — "Stan-validated 2026-04-26 after explicit pushback against earlier hedging that framed the te'amim demotion as a 'tradeoff.'"
+
+---
+
+### Retired 2026-04-26 — Four-criteria framing (atomic thought, single image, syntax, breath)
+
+**Retired formulation.** An earlier framing of the editorial criteria named four: (1) atomic thought, (2) single image, (3) Hebrew syntax, (4) breath / oral phrasing.
+
+**Why retired.** Breath was empirically retired by both sibling projects (BoFM 2026-04-19, GNT 2026-04-20) after full-corpus testing found zero cases where breath was the sole deciding factor in a split/merge adjudication. The Hebrew evidence sharpens the retirement further: the te'amim are *literally* the historical record of Masoretic cantorial phrasing — "where the cantor breathes." If breath were a valid sense-unit prior, the te'amim would by definition encode it perfectly. Breath as a named criterion either collapses into the te'amim (already evidence-not-authority) or is doing no work distinguishable from atomic thought + structural justification 5 (substantive adjunct as own focus). Naming it as a criterion adds confusion without adding discriminatory power.
+
+**Replacement.** Three criteria: atomic thought, single image, Hebrew syntax. See §1 Decision Procedure, §1 summary table (four forces), and `private/memory/feedback_no_breath_criterion.md`.
+
+**§8 cross-reference.** 2026-04-26 "Canon v1.0 written from scratch" entry — "Carried the four-criteria framing both canons retired (BoFM 2026-04-19, GNT 2026-04-20)."
+
+---
+
+### Retired 2026-04-27 — Five-tier pipeline (v0 / v1 / v2-he-syntax / v3-he-colometry / v4-editorial)
+
+**Retired formulation.** The pipeline had five tiers: v0 (raw TAHOT), v1 (te'amim baseline), v2-he-syntax (auto-apply Layer 1 STRONG candidates via `apply_v2.py`), v3-he-colometry (auto-apply Layer 3 STRONG candidates via `apply_v3.py`), v4-editorial (hand-edited gold standard).
+
+**Why retired.** The two intermediate auto-apply tiers added pipeline complexity without adding editorial capability. `apply_v3.py` was a passthrough from inception (no Layer 3 validators had cleared the ≥80% adoption gate). `apply_v2.py` had two validators cleared but their findings (~2 corrections per chapter on Jonah) sit more naturally on the editorial work queue under Category A reasoning (§2 Mechanical-rule authority). The closed-list rule set (H1, H2, H5, H7, H11, H16) is not the large-scale mechanical-error surface that justified intermediate auto-apply tiers in other projects. Two tiers (baseline + editorial) are sufficient for the Tanakh corpus.
+
+**Replacement.** Three-tier pipeline: v0 (raw) → v1 (te'amim-baseline, editor's starting draft) → v2 (hand-edited Hebrew gold standard). Validator STRONG findings feed the editorial work queue directly as Category A items; no intermediate auto-apply tier needed. See §8 "2026-04-27 — Tier collapse" entry and CLAUDE.md Tier Discipline section.
+
+**§8 cross-reference.** 2026-04-27 "Tier collapse: 5-tier pipeline → 3-tier pipeline" entry.
+
+---
+
+### Retired 2026-04-28 — Proposed `validate_tifcha_servant.py` (te'amim-centric validator)
+
+**Retired formulation.** A proposed validator (`validate_tifcha_servant.py`) that would trigger on the tifcha (TIPHA) glyph's presence within atnach domain, flag candidate lines, and recommend merges where tifcha was acting as a "servant of atnach" rather than a primary disjunctive.
+
+**Why retired.** Killed in design after Stan's discomfort flag ("overreliance on Masoretic punctuation cues for determining thought line breaks") and a six-agent hostile audit. Two problems: (1) **Architectural violation:** a validator triggering on te'amim glyph placement operationally centers te'amim as the primary candidate-universe — exactly the te'amim-as-prior the §1 demotion rejects. Even framing the validator as "demoting te'amim by merging across them" doesn't fix the problem: the candidate universe is still defined by tifcha glyph positions. The §1 Validator-architecture corollary (added same session) makes this explicit. (2) **Gold-standard disconfirmation:** the Jonah 1 hand-edited gold standard (the project's existing v2/he reference) showed 3 of 4 candidate tifcha-servant sites SPLIT by Stan's editorial decisions — STRONG-MERGE auto-application would have inverted the documented gold standard.
+
+**Replacement.** The editorial problem the validator was targeting (tifcha-driven over-fragmentation in v1-he-baseline) is addressed by (a) Rule H11 Tifcha-as-Servant-of-Atnach as editorial guidance for human editors reviewing the v1 draft, and (b) Rule H18 Clause-Nucleus Integrity, which provides the morpho-syntactic (non-te'amim) trigger that catches the same over-fragmentation pattern. See §1 Validator-architecture corollary; Rule H11; Rule H18; §8 "2026-04-28 — Rule H18 adopted; te'amim-centric validator architecture rejected."
+
+**§8 cross-reference.** 2026-04-28 entry — "Proposed `validate_tifcha_servant.py` (te'amim-centric architecture) was killed in design."
 
 ---
 

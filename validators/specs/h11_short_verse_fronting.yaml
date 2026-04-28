@@ -1,0 +1,20 @@
+name: h11_short_verse_fronting
+rule: H11
+subcase: short_verse_fronting
+severity: STRONG-MERGE-CANDIDATE
+description: |
+  Fronting paradox per canon §1: marked Hebrew word order (fronted PP/temporal)
+  should merge with main clause when verse is short. Single-token fronted
+  constituent on first line, main clause on second.
+
+trigger:
+  line_n_first_token:
+    morphology: prep   # bound or compound prep first token
+  combined_max_prosodic_words: 6
+
+guards:
+  - poetic_register
+  - both_lines_have_finite_verb
+
+annotation_template: "Short-verse fronting paradox: fronted PP + main clause (combined {pwc} prosodic words)"
+suggested_action: MERGE

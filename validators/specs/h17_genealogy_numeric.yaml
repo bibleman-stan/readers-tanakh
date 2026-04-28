@@ -1,0 +1,51 @@
+name: h17_genealogy_numeric
+rule: H17
+subcase: numeric_counted_noun
+severity: STRONG-MERGE-CANDIDATE
+description: |
+  Number + counted-noun split (e.g., genealogy ages: חָמֵשׁ שָׁנִים // וּמְאַת שָׁנָה).
+  Tight numeric+noun pair stays as one prosodic unit.
+
+trigger:
+  line_n_last_token:
+    skeleton_in:
+      - אחד
+      - אחת
+      - שנים
+      - שתים
+      - שלשה
+      - שלש
+      - ארבעה
+      - ארבע
+      - חמשה
+      - חמש
+      - ששה
+      - שש
+      - שבעה
+      - שבע
+      - שמנה
+      - תשעה
+      - תשע
+      - עשרה
+      - עשר
+      - עשרים
+      - שלשים
+      - ארבעים
+      - חמשים
+      - ששים
+      - שבעים
+      - שמנים
+      - תשעים
+      - מאה
+      - מאות
+      - אלף
+      - אלפים
+      - רבבה
+  line_n1_anywhere:
+    has_finite_verb: false
+
+guards:
+  - poetic_register
+
+annotation_template: "H17 numeric+counted-noun split (combined {pwc} prosodic words)"
+suggested_action: MERGE

@@ -1,0 +1,28 @@
+name: h18_2_participial_predicate
+rule: H18.2
+subcase: participial_pred_split
+severity: REVIEW-REQUIRED
+description: |
+  Subject + participial predicate split. NP-ending line + bare-participle next.
+  Per WO §37.6, predicative participle fills the verbal slot — clause nucleus.
+
+trigger:
+  line_n_anywhere:
+    has_finite_verb: false
+  line_n1_first_token:
+    morphology: bare_participle
+  line_n1_anywhere:
+    has_finite_verb: false
+  combined_max_prosodic_words: 8
+
+guards:
+  - poetic_register
+  - vocative_position
+  - discourse_particle_on_next_line
+  - casus_pendens
+  - heavy_subject
+  - heavy_participial_complement
+  - both_lines_have_finite_verb
+
+annotation_template: "H18.2 subj + participial predicate split (combined {pwc} prosodic words)"
+suggested_action: MERGE

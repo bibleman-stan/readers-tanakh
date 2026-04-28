@@ -1,0 +1,466 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Validate canon Merge-Override M4 — Fragmented Atomic Thought-Unit via short orphan lines.
+
+M4 (canon §4 Merge-overrides; Layer 3 editorial rule):
+If splitting a line would produce fragments that individually fail the atomic-thought
+test, merge. This validator operationalizes the special case of SINGLE-TOKEN orphan
+lines that are not sentence-final verbs, classical commas, or vocatives.
+
+PATTERN DEFINITION (this validator's scope):
+A colometric line consisting of exactly 1 prosodic word (excluding maqqef-grouped
+tokens counted as one) that is NOT one of the explicitly standalone-permitted
+lexical categories:
+
+  1. Sentence-final verb — qatal 3ms / 3fs / 3cp forms that complete a sentence
+     (short, high-confidence skeletons: אמר, ראה, שמע, ידע, etc. in qatal-3 forms).
+
+  2. Classical comma — a small closed-list discourse/interjection particle that
+     logically stands alone: אַשְׁרֵי ("blessed"), הוֹי ("alas"), אָמֵן ("amen"),
+     שָׁלוֹם ("peace"), בְרָכָה ("blessing"), or similar blessing/responsive markers.
+
+  3. Vocative — a direct-address element marked by 2nd-person pronoun, vocative
+     particle (הוֹי, אוֹי), or divine-name vocative (יְהוָה, אֱלֹהִים addressed).
+
+TRIGGER:
+  prosodic_word_count(line) == 1  AND  token NOT IN standalone-permitted lexicon
+
+SEVERITY:
+  REVIEW-REQUIRED — M4 is judgment-heavy; fragments that appear syntactically
+  acceptable still need editorial eye. The validator surfaces candidates; the
+  editor confirms whether atomic-thought actually breaks.
+
+ARCHITECTURAL CONSTRAINT:
+  No te'amim glyph predicates. Skip poetic register (Sifrei Emet chapters).
+  Niqqud is allowed (niqqud ≠ te'amim). No reliance on verse-ending or
+  cantillation hierarchy.
+
+Output format:
+    [DEVIATION]  file:line  M4/orphan-line-atomic-thought  REVIEW-REQUIRED  brief
+
+Exit code: 0 if zero findings, 1 if findings, 2 on setup error.
+
+Usage:
+    PYTHONIOENCODING=utf-8 py -3 validators/colometry/validate_short_orphan_line.py
+    PYTHONIOENCODING=utf-8 py -3 validators/colometry/validate_short_orphan_line.py --book genesis
+    PYTHONIOENCODING=utf-8 py -3 validators/colometry/validate_short_orphan_line.py --v2
+    PYTHONIOENCODING=utf-8 py -3 validators/colometry/validate_short_orphan_line.py --json
+"""
+
+import argparse
+import json
+import re
+import sys
+from pathlib import Path
+
+# ---------------------------------------------------------------------------
+# Path constants — two-tier layout: v1/he-baseline + v2/he
+# ---------------------------------------------------------------------------
+REPO_ROOT = Path(__file__).resolve().parent.parent.parent
+V1_DIR = REPO_ROOT / "data" / "text-files" / "v1" / "he-baseline"
+V2_DIR = REPO_ROOT / "data" / "text-files" / "v2" / "he"
+
+# Make _shared importable when this script is run as __main__.
+sys.path.insert(0, str(REPO_ROOT / "validators"))
+from _shared.poetic_register import is_poetic_register  # noqa: E402
+
+# ---------------------------------------------------------------------------
+# Hebrew Unicode helpers
+# ---------------------------------------------------------------------------
+
+# Hebrew points (cantillation U+0591–U+05AF + niqqud U+05B0–U+05BC, U+05C1–U+05C2,
+# U+05C4–U+05C5, U+05C7). Strip all to leave consonant skeleton.
+# Preserve maqqef (U+05BE), paseq (U+05C0), sof pasuq (U+05C3) so word boundaries remain.
+HEBREW_POINTS_RE = re.compile(r"[֑-ׇֽֿׁׂׅׄ]")
+
+# Sof pasuq, maqqef
+SOF_PASUQ = "׃"
+MAQQEF = "־"
+PASEQ = "׀"
+
+
+def strip_points(token: str) -> str:
+    """Return token with niqqud and te'amim stripped (consonant skeleton + sof pasuq + maqqef)."""
+    return HEBREW_POINTS_RE.sub("", token)
+
+
+# ---------------------------------------------------------------------------
+# Verse-reference / blank line handling
+# ---------------------------------------------------------------------------
+
+VERSE_REF_RE = re.compile(r"^(\S+\s+)?\d+:\d+\s*$")
+
+
+def is_skippable(line: str) -> bool:
+    s = line.strip()
+    if not s:
+        return True
+    if VERSE_REF_RE.match(s):
+        return True
+    return False
+
+
+def parse_verse_ref(line: str):
+    """If `line` is a 'C:V' verse-reference line, return (chapter, verse). Else None."""
+    s = line.strip()
+    m = re.match(r"^(?:\S+\s+)?(\d+):(\d+)\s*$", s)
+    if not m:
+        return None
+    return int(m.group(1)), int(m.group(2))
+
+
+# ---------------------------------------------------------------------------
+# Chapter / book name extraction from path
+# ---------------------------------------------------------------------------
+
+CHAPTER_FILENAME_RE = re.compile(r"-(\d+)\.txt$", re.IGNORECASE)
+
+
+def book_name_from_path(path: Path) -> str:
+    """Return the book directory name (e.g. '01-genesis')."""
+    return path.parent.name
+
+
+def chapter_from_path(path: Path) -> int | None:
+    m = CHAPTER_FILENAME_RE.search(path.name)
+    if not m:
+        return None
+    return int(m.group(1))
+
+
+# ---------------------------------------------------------------------------
+# Token helpers
+# ---------------------------------------------------------------------------
+
+def content_tokens(line: str) -> list[str]:
+    """Split a line into tokens, dropping pure-sof-pasuq and verse-reference tokens."""
+    out = []
+    for tok in line.split():
+        bare = strip_points(tok)
+        if bare in ("", SOF_PASUQ):
+            continue
+        if re.match(r"^\d+:\d+$", bare):
+            continue
+        out.append(tok)
+    return out
+
+
+def prosodic_word_count(line: str) -> int:
+    """Count prosodic words.
+
+    Whitespace-delimited tokens, with maqqef-joined groups counted as one
+    prosodic word (canon §5 H1). Since maqqef joins tokens orthographically
+    INSIDE a single whitespace-delimited token, each whitespace-delimited
+    content token is already one prosodic word.
+    """
+    return len(content_tokens(line))
+
+
+def first_content_token(line: str) -> str | None:
+    toks = content_tokens(line)
+    return toks[0] if toks else None
+
+
+# ---------------------------------------------------------------------------
+# Standalone-permitted lexicon
+# ---------------------------------------------------------------------------
+
+# Sentence-final verbs: qatal 3ms / 3fs / 3cp forms that commonly stand alone,
+# completing a sentence. High-confidence, frequently-isolated skeletons.
+SENTENCE_FINAL_VERBS = {
+    # Common qatal 3ms forms
+    "אמר", "ראה", "שמע", "ידע", "ברא", "ברך", "הלך", "נתן", "עשה",
+    "היה", "בא", "קם", "בנה", "לקח", "כתב", "כרת", "מצא", "נשא",
+    "נפל", "ישב", "עבר", "אכל", "שתה", "מת", "חיה", "סר", "עלה",
+    "ירד", "שב", "הכה", "הביא", "הוציא", "הגיד", "הציל", "צוה",
+    "דבר", "פנה", "נסע", "שמר", "שמר", "קרא", "זעק", "התפלל",
+    # Common qatal 3fs forms
+    "אמרה", "ראתה", "בראה", "ברכה", "הלכה", "נתנה", "עשתה", "היתה",
+    "באה", "קמה", "בנתה", "לקחה", "כתבה", "כרתה", "מצאה", "נשאה",
+    "נפלה", "ישבה", "עברה", "אכלה", "שתתה", "מתה", "חיתה", "סרה",
+    "עלתה", "שבה", "הכתה", "הביאה", "הוציאה", "הגידה", "הצילה",
+    "דברה", "פנתה", "נסעה", "קראה",
+    # Common qatal 3cp forms
+    "אמרו", "ראו", "בראו", "ברכו", "הלכו", "נתנו", "עשו", "היו",
+    "באו", "קמו", "בנו", "לקחו", "כתבו", "כרתו", "מצאו", "נשאו",
+    "נפלו", "ישבו", "עברו", "אכלו", "שתו", "מתו", "חיו", "סרו",
+    "עלו", "ירדו", "שבו", "הכו", "הביאו", "הוציאו", "הגידו",
+    "הצילו", "צווו", "דברו", "פנו", "נסעו", "קראו", "זעקו",
+}
+
+# Classical comma / interjection / blessing words that logically stand alone.
+# These are short, semantically complete, and commonly isolated in discourse.
+CLASSICAL_COMMAS = {
+    "אשרי",      # אַשְׁרֵי — "blessed (are)"
+    "הוי",       # הוֹי — "alas" (vocative particle)
+    "אוי",       # אוֹי — "woe" (interjection)
+    "אמן",       # אָמֵן — "amen"
+    "שלום",      # שָׁלוֹם — "peace" / "hello"
+    "טוב",       # טוֹב — "good" (in responsive context)
+}
+
+# Divine vocative tails — these mark a divine-address element.
+DIVINE_VOCATIVE_TAILS = {"יהוה", "יה", "אלהים", "אדני"}
+
+# Address particles — mark vocative/exclamation position
+ADDRESS_PARTICLES = {"הוי", "אוי", "אהה", "אנא"}
+
+
+def is_standalone_permitted(token: str, line: str) -> bool:
+    """Return True if this single-token line is in the standalone-permitted lexicon.
+
+    Three conditions:
+      (a) Sentence-final verb — qatal 3ms/3fs/3cp from closed list.
+      (b) Classical comma — blessing/interjection from closed list.
+      (c) Vocative — divine name, address particle, or 2nd-person marker.
+    """
+    bare = strip_points(token).rstrip(SOF_PASUQ)
+    if not bare:
+        return False
+
+    # (a) Sentence-final verb check
+    if bare in SENTENCE_FINAL_VERBS:
+        return True
+
+    # (b) Classical comma check
+    if bare in CLASSICAL_COMMAS:
+        return True
+
+    # (c) Vocative check
+    # Divine vocative tails (יְהוָה, אֱלֹהִים, etc. addressed)
+    if bare in DIVINE_VOCATIVE_TAILS:
+        return True
+    # Address particles (הוֹי, אוֹי, etc.)
+    if bare in ADDRESS_PARTICLES:
+        return True
+    # 2nd-person pronoun or suffix (אַתָּה, אַתֶּם, etc., or -ך suffix)
+    if bare in ("אתה", "את", "אתם", "אתן"):
+        return True
+    if bare.endswith("ך") and len(bare) >= 2:
+        return True
+
+    return False
+
+
+# ---------------------------------------------------------------------------
+# Per-file scanner
+# ---------------------------------------------------------------------------
+
+def scan_file(path: Path, verbose: bool = False) -> list[dict]:
+    findings: list[dict] = []
+    try:
+        lines = path.read_text(encoding="utf-8").splitlines()
+    except UnicodeDecodeError:
+        lines = path.read_text(encoding="utf-8-sig").splitlines()
+
+    book = book_name_from_path(path)
+    chapter_from_file = chapter_from_path(path)
+
+    # Build verse-context map: line_index → (chapter, verse)
+    line_to_verse: dict[int, tuple[int | None, int | None]] = {}
+    cur_chapter: int | None = None
+    cur_verse: int | None = None
+    for i, line in enumerate(lines):
+        ref = parse_verse_ref(line)
+        if ref is not None:
+            cur_chapter, cur_verse = ref
+            line_to_verse[i] = (cur_chapter, cur_verse)
+        else:
+            line_to_verse[i] = (cur_chapter, cur_verse)
+
+    for i, line in enumerate(lines):
+        if is_skippable(line):
+            continue
+
+        # Get verse context for poetic-register check
+        v_ctx = line_to_verse.get(i, (None, None))
+        chapter = v_ctx[0] if v_ctx[0] is not None else chapter_from_file
+        verse = v_ctx[1]
+
+        # Skip poetic register
+        if chapter is not None and is_poetic_register(book, chapter, verse):
+            continue
+
+        # Check if this line is a single-token orphan
+        toks = content_tokens(line)
+        if len(toks) != 1:
+            continue
+
+        token = toks[0]
+
+        # Check if token is in the standalone-permitted lexicon
+        if is_standalone_permitted(token, line):
+            continue
+
+        # Emit REVIEW-REQUIRED finding
+        bare = strip_points(token).rstrip(SOF_PASUQ)
+        line_no = i + 1
+        prior_context = ""
+        next_context = ""
+
+        # Gather prior and next lines for context
+        for j in range(max(0, i - 1), i):
+            if not is_skippable(lines[j]):
+                prior_context = lines[j].strip()[:80]
+        for j in range(i + 1, min(len(lines), i + 2)):
+            if not is_skippable(lines[j]):
+                next_context = lines[j].strip()[:80]
+
+        brief = f"single-token orphan line: '{bare}' ({bare})"
+        annotation = (
+            "Single-token line that is not a sentence-final verb, classical comma, "
+            "or vocative (M4 Fragmented Atomic Thought-Unit). Candidate for merge "
+            "if the token fails to constitute an atomic thought on its own."
+        )
+
+        findings.append({
+            "file_path": path,
+            "file_rel": str(path.relative_to(REPO_ROOT)).replace("\\", "/"),
+            "line_num": line_no,
+            "rule": "M4/orphan-line-atomic-thought",
+            "severity": "REVIEW-REQUIRED",
+            "token": bare,
+            "prior_context": prior_context,
+            "next_context": next_context,
+            "annotation": annotation,
+            "brief": brief,
+            "book": book,
+            "chapter": chapter,
+            "verse": verse,
+            "text": line.strip(),
+        })
+
+    return findings
+
+
+# ---------------------------------------------------------------------------
+# Main
+# ---------------------------------------------------------------------------
+
+def resolve_book_dir(base_dir: Path, book_arg: str) -> Path:
+    """Resolve a --book argument permissively."""
+    direct = base_dir / book_arg
+    if direct.exists():
+        return direct
+    candidates = [d for d in base_dir.iterdir() if d.is_dir() and book_arg.lower() in d.name.lower()]
+    if len(candidates) == 1:
+        return candidates[0]
+    if len(candidates) > 1:
+        print(
+            f"ERROR: ambiguous book name {book_arg!r}; "
+            f"matches: {[d.name for d in candidates]}",
+            file=sys.stderr,
+        )
+        sys.exit(2)
+    print(f"ERROR: book directory not found: {direct}", file=sys.stderr)
+    sys.exit(2)
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        description=__doc__,
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+    )
+    parser.add_argument("--book", metavar="BOOK", help="Restrict to one book.")
+    parser.add_argument("--v2", action="store_true", help="Scan v2/he (default if v1 missing).")
+    parser.add_argument("--verbose", "-v", action="store_true", help="Show context.")
+    parser.add_argument("--json", action="store_true", help="Emit JSON document.")
+    args = parser.parse_args()
+
+    base_dir = V2_DIR if args.v2 else V1_DIR
+    tier_label = "v2/he" if args.v2 else "v1/he-baseline"
+    if not base_dir.exists():
+        # Fall back to the other tier rather than failing
+        alt = V2_DIR if not args.v2 else V1_DIR
+        if alt.exists():
+            base_dir = alt
+            tier_label = "v2/he" if alt is V2_DIR else "v1/he-baseline"
+        else:
+            print(f"ERROR: neither {V1_DIR} nor {V2_DIR} found.", file=sys.stderr)
+            sys.exit(2)
+
+    if args.book:
+        book_dir = resolve_book_dir(base_dir, args.book)
+        files = sorted(book_dir.glob("*.txt"))
+    else:
+        files = sorted(base_dir.rglob("*.txt"))
+
+    if not files:
+        print(f"No .txt files found under {base_dir}", file=sys.stderr)
+        sys.exit(2)
+
+    all_findings: list[dict] = []
+    for path in files:
+        all_findings.extend(scan_file(path, verbose=args.verbose))
+
+    exit_code = 1 if all_findings else 0
+
+    if args.json:
+        findings_json = []
+        for f in all_findings:
+            findings_json.append({
+                "file": f["file_rel"],
+                "line": f["line_num"],
+                "rule": f["rule"],
+                "severity": f["severity"],
+                "token": f["token"],
+                "book": f["book"],
+                "chapter": f["chapter"],
+                "verse": f["verse"],
+                "text": f["text"],
+            })
+
+        counts = {"REVIEW-REQUIRED": len(findings_json)}
+
+        doc = {
+            "validator": "validate_short_orphan_line",
+            "rule": "M4",
+            "version": "1.0.0",
+            "layer": 3,
+            "book": args.book or "all",
+            "files_scanned": [
+                str(p.relative_to(REPO_ROOT)).replace("\\", "/") for p in files
+            ],
+            "findings": findings_json,
+            "counts": counts,
+            "summary": {
+                "total_findings": len(findings_json),
+                "by_severity": {"REVIEW-REQUIRED": len(findings_json)},
+                "exit_code": exit_code,
+            },
+        }
+        print(json.dumps(doc, ensure_ascii=False, indent=2))
+        sys.exit(exit_code)
+
+    # --- Human-readable output ---
+    print("=" * 72)
+    print(f"Rule M4 Fragmented Atomic Thought-Unit validator — Tanakh {tier_label}")
+    print(f"Reference: canon §4 M4 (short orphan lines)")
+    print("=" * 72)
+    print(f"Files scanned : {len(files)}")
+    print(f"Findings      : {len(all_findings)}")
+    print()
+
+    if all_findings:
+        for f in all_findings:
+            print(
+                f"[DEVIATION]  {f['file_rel']}:{f['line_num']}  "
+                f"{f['rule']}  {f['severity']}  {f['brief']}"
+            )
+            if args.verbose:
+                print(f"    Text: {f['text'][:120]}")
+                if f['prior_context']:
+                    print(f"    Prior: {f['prior_context']}")
+                if f['next_context']:
+                    print(f"    Next: {f['next_context']}")
+                print(f"    {f['annotation']}")
+                print()
+    else:
+        print("No findings. All single-token lines are in the standalone-permitted lexicon.")
+
+    sys.exit(exit_code)
+
+
+if __name__ == "__main__":
+    main()

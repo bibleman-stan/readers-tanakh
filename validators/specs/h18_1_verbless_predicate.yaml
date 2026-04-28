@@ -1,0 +1,28 @@
+name: h18_1_verbless_predicate
+rule: H18.1
+subcase: verbless_subj_pred_split
+severity: REVIEW-REQUIRED
+description: |
+  Verbless clause subject + predicate-PP split. NP-ending line + prep-fronted
+  next line, no finite verb either side.
+
+trigger:
+  line_n_anywhere:
+    has_finite_verb: false
+  line_n1_first_token:
+    morphology: prep
+  line_n1_anywhere:
+    has_finite_verb: false
+  combined_max_prosodic_words: 8
+
+guards:
+  - poetic_register
+  - vocative_position
+  - discourse_particle_on_next_line
+  - casus_pendens
+  - heavy_subject
+  - le_infinitive_on_next_line
+  - both_lines_have_finite_verb
+
+annotation_template: "H18.1 verbless subj-pred split (combined {pwc} prosodic words)"
+suggested_action: MERGE

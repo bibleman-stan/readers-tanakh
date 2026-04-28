@@ -1,0 +1,18 @@
+name: m3_bare_discourse_particle
+rule: M3
+subcase: bare_discourse_particle
+severity: STRONG-MERGE-CANDIDATE
+description: |
+  M3 + H14 — bare discourse particle on its own line, content on next.
+  Discourse particles lead content; they do not stand alone.
+
+trigger:
+  line_n_last_token:
+    morphology: discourse_particle
+  combined_max_prosodic_words: 12
+
+guards:
+  - poetic_register
+
+annotation_template: "M3/H14 bare discourse particle stranded from content (combined {pwc} prosodic words)"
+suggested_action: MERGE
