@@ -85,6 +85,17 @@ Produce in the session folder:
 
 Compaction-resume: still run the full CHECK-IN protocol when resuming from a compaction summary.
 
+### Intra-session Log
+
+Maintain a running tally during a session in the session folder (`private/03-sessions/yyyy-mm-dd-*/intra-session-log.md`):
+
+- **Discipline failures**: Stan corrections received + memory file updates triggered
+- **Withdrawn proposals**: things proposed and rolled back, with rationale
+- **Workflow use-count**: agent dispatches (with model tier breakdown), commits, cascade runs
+- **In-flight agents**: live count + IDs of background agents
+
+Update after each significant event (every 5-10 dispatches or every Stan correction). Compaction-resume agents read this for fast situational awareness.
+
 ---
 
 ## Key Files
@@ -235,6 +246,21 @@ This discipline complements (does NOT replace) the **Self-consistency audit trig
 
 ---
 
+## Pre-flight Audit Pattern (parallel-by-default)
+
+When the scope of a proposed change is unclear (corpus-wide impact, cross-rule precedence, methodology-touching), dispatch N parallel verification agents BEFORE executing.
+
+**When to invoke:**
+- Adding a new H-rule or M-override → dispatch hostile audit + grammar-grounding + cross-rule integrity (parallel)
+- Sweep ≥5 instances under a settled rule → dispatch FP-precheck per cluster (6 agents)
+- Proposing a validator → dispatch one fixture-oracle agent per regression chapter
+
+**Pattern:** all audit dispatches go in a single message. Agents run concurrently; wall-time = max(per-agent), not sum.
+
+**Worked example (2026-04-28 H18 codification):** 6 parallel hostile audits (tifcha-servant, verbless-clause, Wickes/Yeivin, JM/WO, Sifrei Emet danger zone, cross-rule integrity) → adjudicated → design corrected (Option A vs B) → built. Saved a wider-than-realized scope.
+
+---
+
 ## Follow-On Rebuild Cascade (automatic)
 
 **The cascade fires automatically on every commit that touches `data/text-files/v2/he/`.** You do not invoke it manually.
@@ -254,6 +280,17 @@ The `PYTHONIOENCODING=utf-8` prefix is mandatory on Windows for any script touch
 
 ---
 
+## Two-check Post-cascade Gate
+
+After the rebuild cascade fires (any commit touching `data/text-files/v2/he/`), both English-quality scanners must report zero warnings before the commit lands:
+
+1. `scripts/english_quality_check.py` — eng-gloss / eng-interlinear quality (gender-marker leak, alignment, etc.)
+2. `scripts/scan_english_drift.py` — drift detection across English layers vs. Hebrew structure
+
+Pre-commit hook should run both. Mandatory zero-warning gate; deviation requires explicit `--no-verify` with Stan-approved reason.
+
+---
+
 ## Agent Dispatch — Three-Tier Model Routing
 
 When dispatching subagents via the Agent tool, match model to task complexity. Stan pays per-token and routing matters.
@@ -263,6 +300,30 @@ When dispatching subagents via the Agent tool, match model to task complexity. S
 - **Opus** (reasoning-heavy): multi-angle adversarial audits, methodology synthesis across multiple sources, restructuring major documents, novel rule design, anything where the judgment IS the work product.
 
 **When in doubt, Sonnet is the right default.** Reserve Opus for tasks where the reasoning quality directly determines the output's value.
+
+---
+
+## Corpus Cluster Splits — Parallel Dispatch Pattern
+
+For corpus-wide work (validator runs, sweep audits, FP-precheck), split agents by cluster rather than running one agent on all 39 books.
+
+### The 6 clusters
+
+1. **Torah** — Genesis, Exodus, Leviticus, Numbers, Deuteronomy
+2. **Former Prophets** — Joshua, Judges, 1-2 Samuel, 1-2 Kings
+3. **Latter Prophets** — Isaiah, Jeremiah, Ezekiel, the 12 Minor Prophets
+4. **Writings (prose)** — Ruth, Esther, Daniel, Ezra-Nehemiah, 1-2 Chronicles, Ecclesiastes prose portions
+5. **Sifrei Emet (poetic)** — Psalms, Proverbs, Job 3:1–42:6
+6. **Embedded Poetry (prose-routed)** — Exod 15, Deut 32, Deut 33 vv 2-29, Judg 5, 1 Sam 2:1-10, 2 Sam 22, Isa 12, Hab 3, Lam 1-5, Song of Songs, Eccl 3:2-8
+
+### Two-phase pipeline-change pattern
+
+**Phase 1:** code change + commit in a single agent (one file).
+**Phase 2:** N-cluster parallel rebuild — N separate agent dispatches in one message.
+**Never combine these into one agent.** Bottleneck is documented across siblings.
+
+### Threshold rule
+Any batch of ≥25 surgical fixes spanning 3+ clusters MUST be split by cluster. No exceptions.
 
 ---
 
