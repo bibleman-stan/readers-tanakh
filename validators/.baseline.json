@@ -2,10 +2,13 @@
   "validate_clause_nucleus_split": 5699,
   "validate_complement_integrity": 105,
   "validate_construct_chain": 4930,
+  "validate_coordinated_object": 22,
   "validate_cross_verse_continuity": 338,
   "validate_discourse_particles": 218,
   "validate_line_final_tokens": 0,
   "validate_maqqef_integrity": 0,
+  "validate_short_verse_fronting": 6,
   "validate_speech_intro_framing": 761,
+  "validate_verb_object_bond": 217,
   "validate_wayehi_protasis": 314
 }
