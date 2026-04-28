@@ -108,6 +108,8 @@ Current as of 2026-04-27 (post v0/v1/v2 tier collapse).
 | `data/syntax-reference/hebrew-break-legality.md` | live | Layer 1 surface (shape-capped, 22/24 rows) |
 | `data/syntax-reference/teamim-inventory.md` | TODO | Te'amim glyph inventory (not yet created) |
 | `private/01-method/colometry-canon.md` | live (force-staged) | Layer 3 editorial methodology |
+| `validators/colometry/validate_clause_nucleus_split.py` | live | Layer 3 colometry validator — Rule H18 (Clause-Nucleus Integrity); REVIEW-REQUIRED only; not in ADOPTED_VALIDATORS |
+| `validators/_shared/poetic_register.py` | live | Shared helper — detects poetic register (Sifrei Emet chapters) for validators that need register-aware behavior |
 | `books/<slug>/manifest.json` | generated | Per-book manifest `{slug, book_name, chapters:[1..N]}` for JS nav |
 | `books/<slug>/<slug>-NN.html` | generated | Per-chapter HTML fragment (one `<div class="chapter">` block) — fetched lazily by the client |
 | `.git/hooks/{pre-commit,commit-msg}` | installed | Mechanical gates (sourced from `validators/hooks/`) |
@@ -186,6 +188,8 @@ Mirrors the `bibleman-stan/readers-bofm` sibling architecture (codified there 20
 | `validators/.baseline.json` | Per-validator finding counts captured at the moment of last `--update-baseline`. The reference state for regression detection. |
 | `.git/hooks/pre-commit` (← `validators/hooks/pre-commit`) | Two-phase gate. **Phase 1 (rebuild cascade):** when `data/text-files/v2/he/<book>/` paths are staged, auto-runs `scripts/refresh_book.py --book <book> --build` for each affected book and stages the regenerated derived layers (`v2/eng-interlinear/`, `v2/eng-gloss/`, `v2/translit/`, `books/<book>/`) before the commit lands. Multiple books in one commit are rebuilt sequentially; any rebuild failure aborts the commit. **Phase 2 (regression gate):** runs `run_all.py --baseline-check`; blocks on finding count increase vs baseline. |
 | `.git/hooks/commit-msg` (← `validators/hooks/commit-msg`) | Runs `validators/check_canon_extensions.py` on the proposed commit message. Detects canon extensions (new `Rule HN`, new `MN.` merge-override, new dated principle, closed-list table row, new §7 trigger, new SCOPE-exclusion bullet). Requires audit-evidence keyword (`audit`, `§7`, `post-codification`, etc.) OR skip-safe claim (`typo`, `formatting`, `audit-skippable`). Closes the smuggling-during-unrelated-commit failure mode. |
+| `validators/colometry/validate_clause_nucleus_split.py` | Layer 3 colometry validator for Rule H18 — Clause-Nucleus Integrity (see canon §5 H18). Emits `[DEVIATION]`-class REVIEW-REQUIRED findings only; no STRONG tags. Not in `ADOPTED_VALIDATORS` — requires sustained corpus review before adoption. Uses `validators/_shared/poetic_register.py` to suppress false positives in Sifrei Emet chapters. |
+| `validators/_shared/poetic_register.py` | Shared helper module. Detects whether a chapter is in poetic register (Psalms, Proverbs, Job 3:1–42:6) so that register-sensitive validators can adjust behavior. Imported by `validate_clause_nucleus_split.py` and available to future validators needing the same discriminant. |
 
 **Override (Stan-only, explicit decision):** `git commit --no-verify`
 

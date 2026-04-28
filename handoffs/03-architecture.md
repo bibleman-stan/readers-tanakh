@@ -45,6 +45,9 @@ readers-tanakh/
   validators/                            # Layer-1 (syntax) and Layer-3 (colometry) checks
     syntax/                              # Hebrew break-legality rules
     colometry/                           # Methodology rule checks
+      validate_clause_nucleus_split.py   # Rule H18 — Clause-Nucleus Integrity; REVIEW-REQUIRED only; not adopted
+    _shared/                             # Shared helper modules for validators
+      poetic_register.py                 # Detects Sifrei Emet chapters (Psalms, Proverbs, Job 3:1–42:6)
   handoffs/                              # Project documentation (this folder)
   research/                              # Gitignored — vendored external corpora
     stepbible-tahot/                     # STEPBible TAHOT TSV (Leningrad; primary)
@@ -211,3 +214,5 @@ Pages configuration is **not** yet activated in the repo settings — to be done
 **2026-04-26 update:** `data/text-files/` restructured into per-tier subfolders (v0/, v1/, v2/, v3/, v4/). Tier-name identity strings (v1-he-baseline, v2-he-syntax, etc.) unchanged; only filesystem layout. Path references in this doc updated to the new layout.
 
 **2026-04-27 update:** Tier collapse — both 2026-04-26 multi-tier updates above are superseded. Pipeline simplified from 5 tiers to **3 tiers** (v0 / v1 / v2). Editorial gold standard moved from `v4/editorial/` to `v2/he/`; parallel per-word layers moved from `v4/{eng-interlinear,eng-gloss,translit}/` to `v2/{eng-interlinear,eng-gloss,translit}/`. The intermediate auto-apply tiers (`v2/he-syntax/` via apply_v2; `v3/he-colometry/` via apply_v3) are retired; `apply_v2.py`, `apply_v3.py`, and `scripts/lib/apply_pipeline.py` removed from `scripts/`. STRONG-tagged validator findings now feed the editorial work queue directly. Build cascade simplified to `v2 → v1`. See canon §8 entry 2026-04-27 for full rationale.
+
+**2026-04-28 update:** Two new validator components added. `validators/colometry/validate_clause_nucleus_split.py` enforces Rule H18 — Clause-Nucleus Integrity (see canon §5 H18); emits REVIEW-REQUIRED findings only (no STRONG tags); not in `ADOPTED_VALIDATORS` pending corpus review. `validators/_shared/poetic_register.py` is a shared helper that detects Sifrei Emet chapters (Psalms, Proverbs, Job 3:1–42:6) for register-aware behavior across validators. Both components registered in `validators/run_all.py` discovery and referenced in CLAUDE.md Key Files table.

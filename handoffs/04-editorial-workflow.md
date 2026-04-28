@@ -80,7 +80,7 @@ PYTHONIOENCODING=utf-8 py -3 scripts/build_books.py --book jonah
 The validator suite under `validators/` runs on demand and at commit time (via the pre-commit hook):
 
 - **Layer 1 (Hebrew break-legality)** — checks for syntactic patterns that should not be split (e.g., maqqef-joined words; preposition + bound noun; construct chains kept together).
-- **Layer 3 (colometry)** — checks for methodology compliance (every line positively justified as an atomic thought per canon §1; no orphaned lines; balanced colon lengths within reason).
+- **Layer 3 (colometry)** — checks for methodology compliance (every line positively justified as an atomic thought per canon §1; no orphaned lines; balanced colon lengths within reason). Current Layer 3 validators include Rule H18 — Clause-Nucleus Integrity (`validate_clause_nucleus_split.py`; REVIEW-REQUIRED only; see canon §5 H18), which flags cola where a clause nucleus (subject + predicate) appears to be split across lines without a structural justification.
 
 Validator output is a work queue, not a review queue (canon §6). STRONG-tagged findings are application-ready; REVIEW-REQUIRED items need per-item editorial judgment.
 
@@ -139,3 +139,5 @@ Divergence rate from v1/he-baseline is a key diagnostic metric. A v2/he that div
 **2026-04-26 update:** `data/text-files/` restructured into per-tier subfolders (v0/, v1/, v2/, v3/, v4/). Tier-name identity strings (v1-he-baseline, v2-he-syntax, etc.) unchanged; only filesystem layout. Path references in this doc updated to the new layout.
 
 **2026-04-27 update:** Tier collapse — both 2026-04-26 multi-tier updates above are superseded. Pipeline simplified from 7 stages to **6 stages** (ingest / parse / editorial / propagate / build / validate); the auto-apply mechanical stages (old Stages 3–4) are retired. Editorial pass now opens v1/he-baseline as its starting draft and writes to `v2/he/` (was `v4/editorial/`). STRONG-tagged validator findings feed the editorial work queue directly, with the same Category A/B/C reasoning the canon already governs. Parallel per-word layers re-segmented by `propagate_editorial_layers.py` into `v2/{eng-interlinear,eng-gloss,translit}/`. See canon §8 entry 2026-04-27 for full rationale.
+
+**2026-04-28 update:** Rule H18 — Clause-Nucleus Integrity added to the Layer 3 validator inventory (`validators/colometry/validate_clause_nucleus_split.py`). H18 findings are REVIEW-REQUIRED only; the validator is not in `ADOPTED_VALIDATORS` and does not emit STRONG tags. H18 items in the work queue go to per-item editorial judgment. See canon §5 H18 for the full rule body.
