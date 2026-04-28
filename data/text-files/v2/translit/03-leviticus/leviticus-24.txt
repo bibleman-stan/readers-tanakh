@@ -4,9 +4,7 @@ el | Mosheh | lemor
 
 24:2
 tzav | et | benei | Yisra'el | veyikchu | eleikha | shemen | zayit | zakh | katit
-lama'or
-leha'alot | ner
-tamid
+lama'or | leha'alot | ner | tamid
 
 24:3
 michutz | lefarokhet | ha'eidut | be'ohel | mo'ed | ya'arokh | oto | Aharon | me'erev | ad | boker | lifnei | Yahweh
@@ -15,17 +13,13 @@ chukat | olam
 ledoroteikhem
 
 24:4
-al | hamenorah | hatehorah
-ya'arokh
-et | hanerot
-lifnei | Yahweh
-tamid
+al | hamenorah | hatehorah | ya'arokh | et | hanerot
+lifnei | Yahweh | tamid
 
 24:5
 velakachta | solet
 ve'afita | otah
-sheteim | esreh
-chalot
+sheteim | esreh | chalot
 shenei | esronim
 yihyeh
 hachalah | ha'echat
@@ -33,21 +27,17 @@ hachalah | ha'echat
 24:6
 vesamta | otam | shetayim | ma'arakhot
 shesh | hama'arakhet
-al | hashulchan | hatahor
-lifnei | Yahweh
+al | hashulchan | hatahor | lifnei | Yahweh
 
 24:7
 venatata | al | hama'arekhet
-levonah | zakah
-vehaytah | lalechem | le'azkarah
-isheh
+levonah | zakah | vehaytah | lalechem | le'azkarah | isheh
 Layahweh
 
 24:8
 beyom | hashabat | beyom | hashabat | ya'arkhenu | lifnei | Yahweh
 tamid
-me'et | benei | Yisra'el
-berit | olam
+me'et | benei | Yisra'el | berit | olam
 
 24:9
 vehaytah | Le'aharon | ulevanav
@@ -59,11 +49,8 @@ chok | olam
 24:10
 vaiyetze | ben | ishah | yisre'elit
 vehu | ben | ish | mitzri
-betokh | benei | Yisra'el
-vaiyinatzu | bamachaneh
-ben | haiyisre'elit
-ve'ish
-haiyisre'eli
+betokh | benei | Yisra'el | vaiyinatzu | bamachaneh
+ben | haiyisre'elit | ve'ish | haiyisre'eli
 
 24:11
 vaiyiko | ben | ha'ishah | haiyisre'elit | et | hashem | vaykalel
@@ -74,9 +61,7 @@ lemateh | Dan
 
 24:12
 vaiyanichuhu
-bamishmar
-lifrosh | lahem
-al | pi | Yahweh
+bamishmar | lifrosh | lahem | al | pi | Yahweh
 
 24:13
 vaydaber | Yahweh
@@ -98,17 +83,11 @@ venasa | chet'o
 24:16
 venokev | shem | Yahweh | mot | yumat
 ragom | yirgemu | vo
-kol | ha'edah
-kager | ka'ezrach
-benakvo | shem
-yumat
+kol | ha'edah | kager | ka'ezrach | benakvo | shem | yumat
 
 24:17
 ve'ish
-ki | yakeh
-kol | nefesh | adam
-mot
-yumat
+ki | yakeh | kol | nefesh | adam | mot | yumat
 
 24:18
 umakeh | nefesh | behemah
@@ -118,20 +97,15 @@ tachat | nafesh
 
 24:19
 ve'ish
-ki | yiten | mum
-ba'amito
-ka'asher | asah
-ken
+ki | yiten | mum | ba'amito | ka'asher | asah | ken
 ye'aseh | lo
 
 24:20
 shever | tachat | shever
 ayin | tachat | ayin
 shen
-tachat | shen
-ka'asher | yiten | mum | ba'adam
-ken
-yinaten | bo
+tachat | shen | ka'asher | yiten | mum | ba'adam
+ken | yinaten | bo
 
 24:21
 umakeh | vehemah
@@ -140,8 +114,7 @@ umakeh | adam
 yumat
 
 24:22
-mishpat | echad | yihyeh | lakhem
-kager | ka'ezrach
+mishpat | echad | yihyeh | lakhem | kager | ka'ezrach
 yihyeh
 ki | ani | Yahweh | eloheikhem
 
@@ -151,5 +124,4 @@ vaiyotzi'u | et | hamkalel | el | michutz | lamachaneh
 vaiyirgemu | oto
 aven
 uvenei | Yisra'el | asu
-ka'asher | tzivah | Yahweh
-et | Mosheh
+ka'asher | tzivah | Yahweh | et | Mosheh

@@ -1,9 +1,6 @@
 2:1
 vayhi | beha'alot | Yahweh | et | Eliyahu
-bas'arah
-hashamayim
-vaiyelekh | Eliyahu | Ve'elisha
-min | Hagilgal
+bas'arah | hashamayim | vaiyelekh | Eliyahu | Ve'elisha | min | Hagilgal
 
 2:2
 vaiyomer | Eliyahu | el | Elisha | shev | na | foh | ki | Yahweh | shelachani | ad | Beit | El
@@ -18,9 +15,7 @@ vaiyetze'u | venei | hanevi'im | asher | Beit | El | el | Elisha
 vaiyomeru | elav
 hayada'ta
 ki | haiyom | Yahweh | lokeach | et | adoneikha
-me'al | roshekha
-vaiyomer | gam | ani | yada'ti
-hecheshu
+me'al | roshekha | vaiyomer | gam | ani | yada'ti | hecheshu
 
 2:4
 vaiyomer | lo | Eliyahu | Elisha | shev | na | foh | ki | Yahweh | shelachani | Yericho
@@ -35,9 +30,7 @@ vaiyigeshu | venei | hanevi'im | asher | Biricho | el | Elisha
 vaiyomeru | elav
 hayada'ta
 ki | haiyom | Yahweh | lokeach | et | adoneikha
-me'al | roshekha
-vaiyomer | gam | ani | yada'ti
-hecheshu
+me'al | roshekha | vaiyomer | gam | ani | yada'ti | hecheshu
 
 2:6
 vaiyomer | lo | Eliyahu | shev | na | foh | ki | Yahweh | shelachani | Haiyardenah
@@ -78,10 +71,7 @@ lo | yihyeh
 vayhi | hemah | holekhim | halokh | vedaber
 vehineh | rekhev | esh | vesusei | esh
 vaiyafridu
-bein | sheneihem
-vaiya'al | Eliyahu
-base'arah
-hashamayim
+bein | sheneihem | vaiya'al | Eliyahu | base'arah | hashamayim
 
 2:12
 Ve'elisha | ro'eh | vehu | metza'ek | avi | avi | rekhev | Yisra'el | ufarashav
@@ -94,9 +84,7 @@ lishnayim | kera'im
 2:13
 vaiyarem | et | aderet | Eliyahu
 asher | nafelah
-me'alav
-vaiyashov | vaiya'amod
-al | sefat | Haiyarden
+me'alav | vaiyashov | vaiya'amod | al | sefat | Haiyarden
 
 2:14
 vaiyikach | et | aderet | Eliyahu | asher | nafelah | me'alav | vaiyakeh | et | hamayim
@@ -120,9 +108,7 @@ vaiyomeru | elav | hineh | na | yesh | et | avadeikha | chamishim | anashim | be
 pen | nesa'o | ruach | Yahweh
 vaiyashlikhehu | be'achad | heharim
 o
-be'achat | hageya'ot
-vaiyomer
-lo | tishlachu
+be'achat | hageya'ot | vaiyomer | lo | tishlachu
 
 2:17
 vaiyiftzeru | vo | ad | bosh
@@ -142,31 +128,25 @@ al | telekhu
 2:19
 vaiyomeru | anshei | ha'ir | el | Elisha
 hineh | na | moshav | ha'ir | tov
-ka'asher | adoni
-ro'eh
-vehamayim | ra'im
+ka'asher | adoni | ro'eh | vehamayim | ra'im
 veha'aretz | meshakalet
 
 2:20
 vaiyomer | kechu | li | tzelochit | chadashah
 vesimu | sham
-melach
-vaiyikchu
-elav
+melach | vaiyikchu | elav
 
 2:21
 vaiyetze | el | motza | hamayim
 vaiyashlekh | sham
 melach
 vaiyomer | koh | amar | Yahweh | ripiti | lamayim | ha'eleh
-lo | yihyeh | misham | od
-mavet | umeshakalet
+lo | yihyeh | misham | od | mavet | umeshakalet
 
 2:22
 vaiyerafu | hamayim
 ad | haiyom | hazeh
-kidvar | Elisha
-asher | diber
+kidvar | Elisha | asher | diber
 
 2:23
 vaiya'al | misham
@@ -179,8 +159,7 @@ aleh | kereach
 2:24
 vaiyifen | acharav | vaiyir'em
 vaykalem
-beshem | Yahweh
-vatetzenah | shetayim | dubim | min | haiya'ar
+beshem | Yahweh | vatetzenah | shetayim | dubim | min | haiya'ar
 vatevaka'nah | mehem
 arba'im | ushenei
 yeladim

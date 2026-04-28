@@ -5,25 +5,17 @@ el | Mosheh | lemor
 20:2
 ve'el | benei | Yisra'el | tomar
 ish | ish | mibenei | Yisra'el | umin | hager | hagar | Beyisra'el | asher | yiten | mizar'o | Lamolekh
-mot | yumat
-am | ha'aretz
-yirgemuhu | va'aven
+mot | yumat | am | ha'aretz | yirgemuhu | va'aven
 
 20:3
 va'ani | eten | et | panai | ba'ish | hahu
 vehikhrati | oto
-mikerev | amo
-ki | mizar'o | natan | Lamolekh
-lema'an | tame | et | mikdashi
-ulechalel
-et | shem | kodshi
+mikerev | amo | ki | mizar'o | natan | Lamolekh
+lema'an | tame | et | mikdashi | ulechalel | et | shem | kodshi
 
 20:4
 ve'im | ha'lem | ya'limu | am | ha'aretz | et | eineihem | min | ha'ish | hahu
-betito | mizar'o
-Lamolekh
-levilti
-hamit | oto
+betito | mizar'o | Lamolekh | levilti | hamit | oto
 
 20:5
 vesamti | ani | et | panai | ba'ish | hahu
@@ -33,9 +25,7 @@ mikerev | amam
 
 20:6
 vehanefesh | asher | tifneh | el | ha'ovot | ve'el | haiyide'onim
-liznot
-achareihem
-venatati | et | panai | banefesh | hahiv
+liznot | achareihem | venatati | et | panai | banefesh | hahiv
 vehikhrati | oto
 mikerev | amo
 
@@ -54,64 +44,52 @@ mekadishkhem
 
 20:9
 ki | ish | ish | asher | yekalel | et | aviv | ve'et | imo
-mot | yumat
-aviv | ve'imo | kilel
+mot | yumat | aviv | ve'imo | kilel
 damav | bo
 
 20:10
 ve'ish | asher | yin'af | et | eshet | ish
 asher | yin'af
 et | eshet | re'ehu
-mot | yumat | hano'ef
-vehano'afet
+mot | yumat | hano'ef | vehano'afet
 
 20:11
 ve'ish | asher | yishkav | et | eshet | aviv
 ervat | aviv
 gilah
-mot | yumetu | sheneihem
-demeihem | bam
+mot | yumetu | sheneihem | demeihem | bam
 
 20:12
 ve'ish | asher | yishkav | et | kalato
-mot | yumetu
-sheneihem
-tevel | asu
+mot | yumetu | sheneihem | tevel | asu
 demeihem | bam
 
 20:13
 ve'ish | asher | yishkav | et | zakhar | mishkevei | ishah
 to'evah | asu
 sheneihem
-mot | yumatu
-demeihem | bam
+mot | yumatu | demeihem | bam
 
 20:14
 ve'ish | asher | yikach | et | ishah | ve'et | imah
 zimah | hi
-ba'esh | yisrefu | oto | ve'ethen
-velo | tihyeh | zimah
+ba'esh | yisrefu | oto | ve'ethen | velo | tihyeh | zimah
 betokhkhem
 
 20:15
 ve'ish | asher | yiten | shekhaveto | bivhemah
-mot | yumat
-ve'et | habehemah
-taharogu
+mot | yumat | ve'et | habehemah | taharogu
 
 20:16
 ve'ishah | asher | tikrav | el | kol | behemah | leriv'ah | otah
 veharagta | et | ha'ishah
 ve'et | habehemah
-mot | yumatu
-demeihem | bam
+mot | yumatu | demeihem | bam
 
 20:17
 ve'ish | asher | yikach | et | achoto | bat | aviv | o | vat | imo | vera'ah | et | ervatah | vehi | tir'eh | et | ervato | chesed | hu
 venikhretu
-le'einei
-benei | amam
-ervat | achoto | gilah
+le'einei | benei | amam | ervat | achoto | gilah
 avono | yisa
 
 20:18
@@ -124,8 +102,7 @@ mikerev | amam
 
 20:19
 ve'ervat | achot | imekha | va'achot | avikha
-lo | tegaleh
-ki | et | she'ero | he'erah
+lo | tegaleh | ki | et | she'ero | he'erah
 avonam | yisa'u
 
 20:20
@@ -152,10 +129,7 @@ lashevet | bah
 20:23
 velo | telekhu | bechukot | hagoy
 asher | ani | meshaleach
-mipeneikhem
-ki | et | kol | eleh | asu
-va'akutz
-bam
+mipeneikhem | ki | et | kol | eleh | asu | va'akutz | bam
 
 20:24
 va'omar | lakhem | atem | tireshu | et | admatam
@@ -176,13 +150,11 @@ letame
 
 20:26
 vihyitem | li | kedoshim
-ki | kadoosh
-ani | Yahweh
+ki | kadoosh | ani | Yahweh
 va'avdil | etkhem | min | ha'amim
 lihyot | li
 
 20:27
 ve'ish | ov | ishah | ki | yihyeh | vahem | ov | o | yide'oni
-mot | yumatu
-ba'even | yirgemu | otam
+mot | yumatu | ba'even | yirgemu | otam
 demeihem | bam

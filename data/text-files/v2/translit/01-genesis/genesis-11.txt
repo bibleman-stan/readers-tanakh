@@ -1,20 +1,16 @@
 11:1
-vayhi | khol | ha'aretz | safah | echat
-udevarim
+vayhi | khol | ha'aretz | safah | echat | udevarim
 achadim
 
 11:2
 vayhi
-benase'am | mikedem
-vaiyimtze'u | vik'ah | be'eretz | Shin'ar
+benase'am | mikedem | vaiyimtze'u | vik'ah | be'eretz | Shin'ar
 vaiyeshevu | sham
 
 11:3
 vaiyomeru | ish | el | re'ehu | havah | nilbenah | levenim
 venisrefah
-lisrefah
-vatehi | lahem | halevenah | le'aven
-vehachemar
+lisrefah | vatehi | lahem | halevenah | le'aven | vehachemar
 hayah | lahem
 lachomer
 
@@ -27,9 +23,7 @@ al | penei | khol | ha'aretz
 
 11:5
 vaiyered | Yahweh
-lir'ot | et | ha'ir
-ve'et | hamigdal
-asher | banu
+lir'ot | et | ha'ir | ve'et | hamigdal | asher | banu
 benei | ha'adam
 
 11:6
@@ -37,8 +31,7 @@ vaiyomer | Yahweh | hen | am | echad | vesafah | achat | lekhulam
 vezeh
 hachilam | la'asot
 ve'atah | lo | yibatzer | mehem
-kol | asher | yazemu
-la'asot
+kol | asher | yazemu | la'asot
 
 11:7
 havah | neredah
@@ -50,17 +43,13 @@ sefat | re'ehu
 
 11:8
 vaiyafetz | Yahweh | otam | misham
-al | penei | khol | ha'aretz
-vaiyachdelu
-livnot | ha'ir
+al | penei | khol | ha'aretz | vaiyachdelu | livnot | ha'ir
 
 11:9
 al | ken | kara | shemah | Bavel
-ki | sham | balal | Yahweh
-sefat | kol | ha'aretz
+ki | sham | balal | Yahweh | sefat | kol | ha'aretz
 umisham | hefitzam | Yahweh
-al | penei
-kol | ha'aretz
+al | penei | kol | ha'aretz
 
 11:10
 eleh | toldot | Shem
@@ -72,8 +61,7 @@ achar | hamabul
 
 11:11
 vaychi | Shem | acharei | holido | et | Arpakhshad
-chamesh | me'ot
-shanah
+chamesh | me'ot | shanah
 vaiyoled | banim
 uvanot
 
@@ -86,9 +74,7 @@ et | Shalach
 
 11:13
 vaychi | Arpakhshad | acharei | holido | et | Shelach
-shalosh | shanim
-ve'arba | me'ot
-shanah
+shalosh | shanim | ve'arba | me'ot | shanah
 vaiyoled | banim
 uvanot
 
@@ -100,9 +86,7 @@ et | Ever
 
 11:15
 vaychi | Shelach | acharei | holido | et | Ever
-shalosh | shanim
-ve'arba | me'ot
-shanah
+shalosh | shanim | ve'arba | me'ot | shanah
 vaiyoled | banim
 uvanot
 
@@ -116,8 +100,7 @@ et | Paleg
 11:17
 vaychi | Ever | acharei | holido | et | Peleg
 sheloshim | shanah
-ve'arba | me'ot
-shanah
+ve'arba | me'ot | shanah
 vaiyoled | banim
 uvanot
 
@@ -129,8 +112,7 @@ et | Re'u
 
 11:19
 vaychi | Feleg | acharei | holido | et | Re'u
-tesha | shanim
-umatayim | shanah
+tesha | shanim | umatayim | shanah
 vaiyoled | banim
 uvanot
 
@@ -143,8 +125,7 @@ et | Serug
 
 11:21
 vaychi | Re'u | acharei | holido | et | Serug
-sheva | shanim
-umatayim | shanah
+sheva | shanim | umatayim | shanah
 vaiyoled | banim
 uvanot
 
@@ -156,9 +137,7 @@ et | Nachor
 
 11:23
 vaychi | Serug | acharei | holido | et | Nachor
-matayim | shanah
-vaiyoled | banim
-uvanot
+matayim | shanah | vaiyoled | banim | uvanot
 
 11:24
 vaychi | Nachor
@@ -191,18 +170,15 @@ holid | et | Lot
 
 11:28
 vaiyamot | Haran
-al | penei
-Terach | aviv
-be'eretz | moladto
-Be'ur | Kasdim
+al | penei | Terach | aviv
+be'eretz | moladto | Be'ur | Kasdim
 
 11:29
 vaiyikach | Avram | Venachor | lahem
 nashim
 shem | eshet | Avram | Sarai
 veshem | eshet | Nachor | Milkah
-bat | Haran | avi | Milkah
-va'avi | Yiskah
+bat | Haran | avi | Milkah | va'avi | Yiskah
 
 11:30
 vatehi | Sarai
@@ -221,7 +197,6 @@ vaiyeshevu | sham
 
 11:32
 vaiyihyu | yemei | Terach
-chamesh | shanim
-umatayim | shanah
+chamesh | shanim | umatayim | shanah
 vaiyamot | Terach
 Becharan

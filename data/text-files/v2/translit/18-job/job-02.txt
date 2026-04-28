@@ -1,20 +1,15 @@
 2:1
 vayhi | haiyom
 vaiyavo'u | benei | ha'elohim
-lehityatzev
-al | Yahweh
-vaiyavo | gam | hasatan | betokham
-lehityatzev
-al | Yahweh
+lehityatzev | al | Yahweh | vaiyavo | gam | hasatan | betokham
+lehityatzev | al | Yahweh
 
 2:2
 vaiyomer | Yahweh | el | hasatan
 ei | mizeh
 tavo
 vaiya'an | hasatan | et | Yahweh | vaiyomar
-mishut | ba'aretz
-umehithalekh
-bah
+mishut | ba'aretz | umehithalekh | bah
 
 2:3
 vaiyomer | Yahweh | el | hasatan | hasamta | libekha | el | avdi | Iyov
@@ -46,33 +41,24 @@ et | nafsho | shemor
 
 2:7
 vaiyetze | hasatan
-me'et
-penei | Yahweh
+me'et | penei | Yahweh
 vaiyakh | et | Iyov | bishchin | ra
-mikaf | raglo
-vead | kadekodo
+mikaf | raglo | vead | kadekodo
 
 2:8
 vaiyikach | lo | cheres
-lehitgared
-bo
-vehu
-yoshev | betokh | ha'efer
+lehitgared | bo | vehu | yoshev | betokh | ha'efer
 
 2:9
 vatomer | lo | ishto
 odekha
-machazik | betumatekha
-barekh | elohim
-vamut
+machazik | betumatekha | barekh | elohim | vamut
 
 2:10
 vaiyomer | eleiha | kedaber | achat | hanevalot | tedaberi
 gam | et | hatov | nekabel | me'et | ha'elohim
 ve'et | hara
-lo | nekabel
-bekhol | zot | lo | chata | Iyov
-bisfatav
+lo | nekabel | bekhol | zot | lo | chata | Iyov | bisfatav
 
 2:11
 vaiyishme'u | sheloshet | re'ei | Iyov | et | kol | hara'ah | hazot | haba'ah | alav
@@ -81,8 +67,7 @@ Elifaz | hateimani | Uvildad | hashuchi
 Vetzofar
 hana'amati
 vaiyiva'adu | yachdav
-lavo | lanud | lo
-ulenachamo
+lavo | lanud | lo | ulenachamo
 
 2:12
 vaiyis'u | et | eineihem | merachok | velo | hikiruhu
@@ -97,6 +82,4 @@ vaiyeshevu | ito | la'aretz
 shiv'at | yamim
 veshiv'at | leilot
 ve'ein | dover | elav | davar
-ki | ra'u
-ki | gadal | hake'ev
-me'od
+ki | ra'u | ki | gadal | hake'ev | me'od

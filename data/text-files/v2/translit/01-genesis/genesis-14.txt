@@ -1,8 +1,6 @@
 14:1
 vayhi | bimei | Amrafel | melekh | Shin'ar | Aryokh
-melekh | Elasar
-Kedarela'omer | melekh | Eilam
-Vetid'al
+melekh | Elasar | Kedarela'omer | melekh | Eilam | Vetid'al
 melekh | Goyim
 
 14:2
@@ -14,10 +12,7 @@ umelekh | Bela
 hi | Tzo'ar
 
 14:3
-kol | eleh | chaveru
-el | emek
-Hasidim
-hu
+kol | eleh | chaveru | el | emek | Hasidim | hu
 yam | hamelach
 
 14:4
@@ -31,16 +26,11 @@ maradu
 uve'arba | esreh | shanah | ba | Khedarela'omer | vehamelakhim | asher | ito
 vaiyaku | et | refa'im | Be'ashterot | Karnayim
 ve'et | Hazuzim
-Beham
-ve'et | Ha'eimim
-Beshaveh
-Kiryatayim
+Beham | ve'et | Ha'eimim | Beshaveh | Kiryatayim
 
 14:6
 ve'et | hachori
-beharam | Se'ir
-ad | Eil | Paran
-asher
+beharam | Se'ir | ad | Eil | Paran | asher
 al | hamidbar
 
 14:7
@@ -57,16 +47,13 @@ vaiyetze | melekh | Sedom | umelekh | Amorah | umelekh | Admah | umelekh | Tzevo
 umelekh | Bela
 hi | Tzo'ar
 vaiya'arkhu | itam | milchamah
-be'emek
-Hasidim
+be'emek | Hasidim
 
 14:9
 et | Kedarela'omer | melekh | Eilam | Vetid'al | melekh | Goyim
 Ve'amrafel | melekh | Shin'ar
 Ve'aryokh
-melekh | Elasar
-arba'ah | melakhim
-et | hachamishah
+melekh | Elasar | arba'ah | melakhim | et | hachamishah
 
 14:10
 ve'emek | Hasidim | be'erot | be'erot | chemar
@@ -95,8 +82,7 @@ ba'alei | verit | Avram
 
 14:14
 vaiyishma | Avram
-ki | Nishbah
-achiv
+ki | Nishbah | achiv
 vaiyarek | et | chanikhav | yelidei | veito | shemonah | asar | ushelosh | me'ot
 vaiyirdof
 ad | Dan
@@ -109,16 +95,14 @@ asher | misemol
 Ledamasek
 
 14:16
-vaiyashev
-et | kol | harekhush
+vaiyashev | et | kol | harekhush
 vegam | et | Lot | achiv | urekhusho | heshiv
 vegam | et | hanashim
 ve'et | ha'am
 
 14:17
 vaiyetze | melekh | Sedom | likrato
-acharei | shuvo | mehakot | et | [—] | Kedor-la'ֹomer
-ve'et | hamelakhim
+acharei | shuvo | mehakot | et | [—] | Kedor-la'ֹomer | ve'et | hamelakhim
 asher | ito
 el | emek | Shaveh
 hu
@@ -127,23 +111,18 @@ emek | hamelekh
 14:18
 Umalki | Tzedek | melekh | Shalem
 hotzi
-lechem | vayayin
-vehu | khohen
-le'el | elyon
+lechem | vayayin | vehu | khohen | le'el | elyon
 
 14:19
 vayvarekhehu
 vaiyomar
-barukh | Avram | le'el | elyon
-koneh
+barukh | Avram | le'el | elyon | koneh
 shamayim | va'aretz
 
 14:20
 uvarukh | el | elyon
 asher | migen | tzareikha
-beyadekha
-vaiyiten | lo | ma'aser
-mikol
+beyadekha | vaiyiten | lo | ma'aser | mikol
 
 14:21
 vaiyomer | melekh | Sedom
@@ -162,10 +141,7 @@ shamayim | va'aretz
 14:23
 im | michut | ve'ad | serokh | na'al
 ve'im | ekach
-mikol | asher | lakh
-velo | tomar
-ani
-he'esharti | et | Avram
+mikol | asher | lakh | velo | tomar | ani | he'esharti | et | Avram
 
 14:24
 bil'adai | rak | asher | akhelu | hane'arim

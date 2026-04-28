@@ -4,23 +4,16 @@ lemor | alehem
 
 11:2
 daberu | el | benei | Yisra'el
-lemor
-zot | hachaiyah | asher | tokhelu
-mikol | habehemah
-asher | al | ha'aretz
+lemor | zot | hachaiyah | asher | tokhelu
+mikol | habehemah | asher | al | ha'aretz
 
 11:3
 kol | mafreset | parsah | veshosa'at | shesa | perasot
-ma'alat | gerah
-babehemah
-otah
-tokhelu
+ma'alat | gerah | babehemah | otah | tokhelu
 
 11:4
 akh | et | zeh | lo | tokhelu
-mima'alei | hagerah
-umimafrisei
-haparsah
+mima'alei | hagerah | umimafrisei | haparsah
 et | hagamol | ki | ma'aleh | gerah | hu | ufarsah | einenu | mafris
 tame | hu
 lakhem
@@ -28,16 +21,12 @@ lakhem
 11:5
 ve'et | hashafan | ki | ma'aleh | gerah | hu
 ufarsah
-lo | yafris
-tame | hu
-lakhem
+lo | yafris | tame | hu | lakhem
 
 11:6
 ve'et | ha'arnevet | ki | ma'alat | gerah | hi
 ufarsah
-lo | hifrisah
-teme'ah | hi
-lakhem
+lo | hifrisah | teme'ah | hi | lakhem
 
 11:7
 ve'et | hachazir | ki | mafris | parsah | hu | veshosa | shesa | parsah
@@ -47,23 +36,18 @@ tame | hu
 lakhem
 
 11:8
-mibesaram | lo | tokhelu
-uvenivlatam
-lo | tiga'u
-teme'im | hem
-lakhem
+mibesaram | lo | tokhelu | uvenivlatam
+lo | tiga'u | teme'im | hem | lakhem
 
 11:9
 et | zeh | tokhelu
-mikol
-asher | bamayim
+mikol | asher | bamayim
 kol | asher | lo | senapir | vekaskeset | bamayim | baiyamim | uvanechalim
 otam | tokhelu
 
 11:10
 vekhol | asher | ein | lo | senapir | vekaskeset | baiyamim | uvanechalim
-mikol | sheretz | hamayim
-umikol | nefesh | hachaiyah
+mikol | sheretz | hamayim | umikol | nefesh | hachaiyah
 asher | bamayim
 sheketz | hem
 lakhem
@@ -71,21 +55,16 @@ lakhem
 11:11
 vesheketz
 yihyu | lakhem
-mibesaram | lo | tokhelu
-ve'et | nivlatam
-teshaketzu
+mibesaram | lo | tokhelu | ve'et | nivlatam | teshaketzu
 
 11:12
-kol | asher | ein | lo | senapir | vekaskeset
-bamayim
+kol | asher | ein | lo | senapir | vekaskeset | bamayim
 sheketz | hu
 lakhem
 
 11:13
 ve'et | eleh | teshaketzu | min | ha'of
-lo | ye'akhelu
-sheketz | hem
-et | hanesher | ve'et | haperes
+lo | ye'akhelu | sheketz | hem | et | hanesher | ve'et | haperes
 ve'et
 ha'azeniyah
 
@@ -116,34 +95,24 @@ ve'et | haracham
 11:19
 ve'et | hachasidah
 ha'anafah
-leminah
-ve'et | hadukhifat
-ve'et | ha'atalef
+leminah | ve'et | hadukhifat | ve'et | ha'atalef
 
 11:20
-kol | sheretz | ha'of
-haholekh
-al | arba
+kol | sheretz | ha'of | haholekh | al | arba
 sheketz | hu
 lakhem
 
 11:21
 akh | et | zeh | tokhelu
-mikol | sheretz | ha'of
-haholekh
-al | arba
+mikol | sheretz | ha'of | haholekh | al | arba
 asher | lo | khera'ayim | mima'al | leraglav
-lenater | bahen
-al | ha'aretz
+lenater | bahen | al | ha'aretz
 
 11:22
 et | eleh | mehem | tokhelu
 et | ha'arbeh | lemino
 ve'et | hasal'am
-leminehu
-ve'et | hachargol | leminehu
-ve'et | hechagav
-leminehu
+leminehu | ve'et | hachargol | leminehu | ve'et | hechagav | leminehu
 
 11:23
 vekhol | sheretz | ha'of
@@ -155,28 +124,21 @@ lakhem
 11:24
 ule'eleh
 titama'u
-kol | hanogea | benivlatam
-yitma | ad | ha'arev
+kol | hanogea | benivlatam | yitma | ad | ha'arev
 
 11:25
 vekhol | hanose
-minivlatam
-yekhabes | begadav
-vetame | ad | ha'arev
+minivlatam | yekhabes | begadav | vetame | ad | ha'arev
 
 11:26
 lekhol | habehemah | asher | hi | mafreset | parsah | veshesa | einenah | shosa'at | vegerah | einenah | ma'alah
 teme'im | hem
-lakhem
-kol | hanogea | bahem
-yitma
+lakhem | kol | hanogea | bahem | yitma
 
 11:27
 vekhol | holekh | al | kapav | bekhol | hachaiyah | haholekhet | al | arba
 teme'im | hem
-lakhem
-kol | hanogea | benivlatam
-yitma | ad | ha'arev
+lakhem | kol | hanogea | benivlatam | yitma | ad | ha'arev
 
 11:28
 vehanose | et | nivlatam
@@ -187,9 +149,7 @@ lakhem
 
 11:29
 vezeh | lakhem | hatame
-basheretz
-hashoretz | al | ha'aretz
-hacholed | veha'akhbar
+basheretz | hashoretz | al | ha'aretz | hacholed | veha'akhbar
 vehatzav | leminehu
 
 11:30
@@ -200,31 +160,24 @@ vehatinshamet
 
 11:31
 eleh | hateme'im | lakhem
-bekhol | hasharetz
-kol | hanogea | bahem | bemotam
-yitma | ad | ha'arev
+bekhol | hasharetz | kol | hanogea | bahem | bemotam | yitma | ad | ha'arev
 
 11:32
 vekhol | asher | yipol | alav | mehem | bemotam | yitma | mikol | keli | etz | o | veged | ov | or | o | sak
-kol | keli
-asher | ye'aseh | melakhah
-bahem
-bamayim | yuva | vetame | ad | ha'erev
-vetaher
+kol | keli | asher | ye'aseh | melakhah
+bahem | bamayim | yuva | vetame | ad | ha'erev | vetaher
 
 11:33
 vekhol | keli | cheres
 asher | yipol | mehem
 el | tokho
-kol | asher | betokho | yitma
-ve'oto | tishboru
+kol | asher | betokho | yitma | ve'oto | tishboru
 
 11:34
 mikol | ha'okhel | asher | ye'akhel | asher | yavo | alav | mayim
 yitma
 vekhol | mashkeh | asher | yishateh
-bekhol | keli
-yitma
+bekhol | keli | yitma
 
 11:35
 vekhol | asher | yipol | minivlatam | alav | yitma
@@ -256,9 +209,7 @@ lakhem
 11:39
 vekhi | yamut | min | habehemah
 asher | hi | lakhem
-le'okhlah
-hanogea | benivlatah
-yitma | ad | ha'arev
+le'okhlah | hanogea | benivlatah | yitma | ad | ha'arev
 
 11:40
 veha'okhel | minivlatah
@@ -276,48 +227,33 @@ lo | ye'akhel
 
 11:42
 kol | holekh | al | gachon | vekhol | holekh | al | arba | ad | kol | marbeh | raglayim
-lekhol | hasheretz
-hashoretz | al | ha'aretz
-lo | tokhlum
-ki | sheketz | hem
+lekhol | hasheretz | hashoretz | al | ha'aretz
+lo | tokhlum | ki | sheketz | hem
 
 11:43
 al | teshaketzu | et | nafshoteikhem
-bekhol | hasheretz
-hashoretz
-velo | titame'u | bahem
-venitmetem
+bekhol | hasheretz | hashoretz | velo | titame'u | bahem | venitmetem
 bam
 
 11:44
 ki | ani | Yahweh | eloheikhem
 vehitkadishtem | vihyitem | kedoshim
-ki | kadoosh
-ani
-velo | tetame'u | et | nafshoteikhem
-bekhol | hasheretz
-haromes | al | ha'aretz
+ki | kadoosh | ani | velo | tetame'u | et | nafshoteikhem
+bekhol | hasheretz | haromes | al | ha'aretz
 
 11:45
 ki | ani | Yahweh | hama'aleh | etkhem | me'eretz | Mitzrayim
-lihyot | lakhem
-lelohim
-vihyitem | kedoshim
-ki | kadoosh
-ani
+lihyot | lakhem | lelohim | vihyitem | kedoshim
+ki | kadoosh | ani
 
 11:46
 zot | torat | habehemah | veha'of
 vekhol | nefesh | hachaiyah
 haromeset
-bamayim
-ulekhol | nefesh
-hashoretzet | al | ha'aretz
+bamayim | ulekhol | nefesh | hashoretzet | al | ha'aretz
 
 11:47
-lehavdil
-bein | hatame
-uvein | hatahor
+lehavdil | bein | hatame | uvein | hatahor
 uvein | hachaiyah | hane'ekhelet
 uvein | hachaiyah
 asher

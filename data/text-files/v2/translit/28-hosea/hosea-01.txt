@@ -1,23 +1,19 @@
 1:1
 devar | Yahweh | asher | hayah | el | Hoshea | ben | Be'eri
 bimei | Uziyah | Yotam | Achaz | Yechizkiyah
-malkhei | Yehudah
-uvimei | Yarave'am | ben | Yo'ash
+malkhei | Yehudah | uvimei | Yarave'am | ben | Yo'ash
 melekh | Yisra'el
 
 1:2
 techilat | diber | Yahweh
 Behoshea
 vaiyomer | Yahweh | el | Hoshea | lekh | kach | lekha | eshet | zenunim | veyaldei | zenunim
-ki | zanoh | tizneh | ha'aretz
-me'acharei | Yahweh
+ki | zanoh | tizneh | ha'aretz | me'acharei | Yahweh
 
 1:3
 vaiyelekh | vaiyikach
 et | Gomer
-bat | Divlayim
-vatahar | vateled | lo
-ben
+bat | Divlayim | vatahar | vateled | lo | ben
 
 1:4
 vaiyomer | Yahweh | elav
@@ -25,15 +21,12 @@ kera | shemo
 Yizre'el
 ki | od | me'at | ufakadti | et | demei | Yizre'el | al | beit | Yehu
 vehishbati
-mamlekhut
-beit | Yisra'el
+mamlekhut | beit | Yisra'el
 
 1:5
 vehayah
-baiyom | hahu
-veshavarti | et | keshet | Yisra'el
-be'emek
-Yizre'el
+baiyom | hahu | veshavarti | et | keshet | Yisra'el
+be'emek | Yizre'el
 
 1:6
 vatahar | od | vateled | bat
@@ -41,16 +34,14 @@ vaiyomer | lo
 kera | shemah
 Lo | Ruchamah
 ki | lo | osif | od | arachem | et | beit | Yisra'el
-ki | naso | esa
-lahem
+ki | naso | esa | lahem
 
 1:7
 ve'et | beit | Yehudah | arachem
 vehosha'tim
 Bayahweh | eloheihem
 velo | oshi'em | bekeshet | uvecherev | uvemilchamah
-besusim
-uvefarashim
+besusim | uvefarashim
 
 1:8
 vatigmol
@@ -61,7 +52,6 @@ vateled | ben
 1:9
 vaiyomer
 kera | shemo
-Lo | Ami
-ki | atem | lo | ami
+Lo | Ami | ki | atem | lo | ami
 ve'anokhi
 lo | ehyeh | lakhem

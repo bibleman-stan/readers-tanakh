@@ -1,7 +1,6 @@
 2:1
 eleh
-benei | Yisra'el
-Re'uven | Shim'on | Levi | Vihudah
+benei | Yisra'el | Re'uven | Shim'on | Levi | Vihudah
 Yisoshkhar
 Uzevulun
 
@@ -13,8 +12,7 @@ Gad | Ve'asher
 2:3
 benei | Yehudah | Er | Ve'onan | Veshelah
 sheloshah | Nolad | lo
-mibat | Shua
-hakena'anit
+mibat | Shua | hakena'anit
 vayhi | Er | bekhor | Yehudah | ra | be'einei | Yahweh
 vaymitehu
 
@@ -22,12 +20,10 @@ vaymitehu
 Vetamar | kalato
 yaldah | lo
 et | Peretz | ve'et | Zarach
-kol | benei | Yehudah
-chamishah
+kol | benei | Yehudah | chamishah
 
 2:5
-benei | Feretz
-Chetzron | Vechamul
+benei | Feretz | Chetzron | Vechamul
 
 2:6
 uvenei | Zerach | Zimri | Ve'eitan | Veheiman | Vekhalkol | Vadara
@@ -35,8 +31,7 @@ kulam | chamishah
 
 2:7
 uvenei
-Karmi
-Akhar | okher | Yisra'el
+Karmi | Akhar | okher | Yisra'el
 asher | ma'al | bacherem
 
 2:8
@@ -120,28 +115,22 @@ holid | et | Betzal'el
 ve'achar | ba | Chetzron | el | bat | Makhir | avi | Gil'ad
 vehu | lekachah
 vehu
-ben | shishim | shanah
-vateled | lo
-et | Seguv
+ben | shishim | shanah | vateled | lo | et | Seguv
 
 2:22
 Useguv
 holid | et | Ya'ir
 vayhi | lo | esrim | veshalovosh | arim
-be'eretz
-Hagil'ad
+be'eretz | Hagil'ad
 
 2:23
 vaiyikach | Geshur | Va'arom | et | chavot | Ya'ir | me'itam | et | Kenat | ve'et | benoteiha
 shishim | ir
-kol | eleh
-benei
-Makhir | avi | Gil'ad
+kol | eleh | benei | Makhir | avi | Gil'ad
 
 2:24
 ve'achar | mot | Chetzron
-Bekhalev | Efratah
-ve'eshet | Chetzron | Aviyah
+Bekhalev | Efratah | ve'eshet | Chetzron | Aviyah
 vateled | lo
 et | Ashchur
 avi | Tekoa
@@ -160,9 +149,7 @@ em | Onam
 
 2:27
 vaiyihyu | venei | Ram
-bekhor | Yerachme'el
-Ma'atz | Veyamin
-Va'eker
+bekhor | Yerachme'el | Ma'atz | Veyamin | Va'eker
 
 2:28
 vaiyihyu | venei | Onam
@@ -206,15 +193,12 @@ benei | Yerachme'el
 
 2:34
 velo | hayah | Lesheshan | banim
-ki | im | banot
-Ulesheshan | eved | mitzri
+ki | im | banot | Ulesheshan | eved | mitzri
 ushemo | Yarcha
 
 2:35
 vaiyiten | Sheshan | et | bito | Leyarcha | avdo
-le'ishah
-vateled | lo
-et | Atai
+le'ishah | vateled | lo | et | Atai
 
 2:36
 Ve'atai | holid | et | Natan
@@ -248,9 +232,7 @@ holid | et | Elishama
 
 2:42
 uvenei | Khalev | achi | Yerachme'el
-Meisha | bekhoro
-hu | avi | Zif
-uvenei | Mareshah
+Meisha | bekhoro | hu | avi | Zif | uvenei | Mareshah
 avi | Chevron
 
 2:43
@@ -268,9 +250,7 @@ holid | et | Shamai
 
 2:45
 uven | Shamai
-Ma'on
-Uma'on
-avi | Veit | Tzur
+Ma'on | Uma'on | avi | Veit | Tzur
 
 2:46
 Ve'eifah | pilegesh | Kalev
@@ -299,10 +279,7 @@ Akhsah
 
 2:50
 eleh | hayu | benei | Khalev
-ben | Chur
-bekhor | Efratah
-Shoval
-avi
+ben | Chur | bekhor | Efratah | Shoval | avi
 Kiryat | Ye'arim
 
 2:51
@@ -322,20 +299,15 @@ umishpechot | Kiryat | Ye'arim
 haiyitri | vehaputi
 vehashumati
 vehamishra'i
-me'eleh | yatze'u | hatzare'ati
-veha'eshta'uli
+me'eleh | yatze'u | hatzare'ati | veha'eshta'uli
 
 2:54
-benei | Salma | Beit | Lechem | unetofati
-Atrot
-Beit | Yo'av
-vachatzi | hamanachti
-hatzare'i
+benei | Salma | Beit | Lechem | unetofati | Atrot
+Beit | Yo'av | vachatzi | hamanachti | hatzare'i
 
 2:55
 umishpechot | soferim | yoshevu | Ya'betz
 Tir'atim | shim'atim
 sukhatim
 hemah | hakinim | haba'im
-Mechamat
-avi | veit | Rekhav
+Mechamat | avi | veit | Rekhav

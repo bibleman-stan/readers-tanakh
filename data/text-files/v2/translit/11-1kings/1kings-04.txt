@@ -1,7 +1,6 @@
 4:1
 vayhi | hamelekh | Shelomoh
-melekh
-al | kol | Yisra'el
+melekh | al | kol | Yisra'el
 
 4:2
 ve'eleh | hasarim
@@ -42,38 +41,27 @@ lekhalkel
 
 4:8
 ve'eleh | shemotam
-ben | Chur
-behar | Efrayim
+ben | Chur | behar | Efrayim
 
 4:9
-ben | Deker | Bemakatz | Uvesha'alvim
-Uveit | Shamesh
-Ve'eilon
+ben | Deker | Bemakatz | Uvesha'alvim | Uveit | Shamesh | Ve'eilon
 Beit | Chanan
 
 4:10
-ben | Chesed
-Ba'arubot
-lo | Sokhoh
-vekhol | eretz | Chefer
+ben | Chesed | Ba'arubot | lo | Sokhoh | vekhol | eretz | Chefer
 
 4:11
-ben | Avinadav
-kol | nafat | Dor
-Tafat | bat | Shelomoh
+ben | Avinadav | kol | nafat | Dor | Tafat | bat | Shelomoh
 hayetah | lo
 le'ishah
 
 4:12
-Ba'ana | ben | Achilud
-Ta'nakh
-Umegido
+Ba'ana | ben | Achilud | Ta'nakh | Umegido
 vekhol | Beit | She'an | asher | etzel | Tzaretanah | mitachat | Leyizre'el | Mibeit | She'an | ad | Avel | Mecholah
 ad | me'ever | Leyakemo'am
 
 4:13
-ben | Gever
-Beramot | Gil'ad
+ben | Gever | Beramot | Gil'ad
 lo | chavot | Ya'ir | ben | Menasheh | asher | Bagil'ad | lo | chevel | Argo | asher | Babashan
 shishim | arim | gedolot
 chomah
@@ -85,14 +73,10 @@ Machanayemah
 
 4:15
 Achima'atz
-Benaftali
-gam | hu | lakach | et | Basemat | bat | Shelomoh
-le'ishah
+Benaftali | gam | hu | lakach | et | Basemat | bat | Shelomoh | le'ishah
 
 4:16
-Ba'ana | ben | Chushai
-Be'asher
-Uve'alot
+Ba'ana | ben | Chushai | Be'asher | Uve'alot
 
 4:17
 Yehoshafat | ben | Paruach
@@ -106,12 +90,8 @@ Bevinyamin
 Gever | ben | Uri
 be'eretz | Gil'ad
 eretz | Sichon | melekh | ha'emori | Ve'og | melekh | Habashan
-unetziv | echad
-asher | ba'aretz
+unetziv | echad | asher | ba'aretz
 
 4:20
 Yehudah | Veyisra'el | rabim
-kachol | asher | al | haiyam
-laro
-okhelim | veshotim
-usemechim
+kachol | asher | al | haiyam | laro | okhelim | veshotim | usemechim

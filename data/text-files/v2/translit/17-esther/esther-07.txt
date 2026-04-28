@@ -1,12 +1,10 @@
 7:1
 vaiyavo | hamelekh | Vehaman
-lishtot
-im | Ester | hamalkah
+lishtot | im | Ester | hamalkah
 
 7:2
 vaiyomer | hamelekh | Le'ester | gam | baiyom | hasheni | bemishteh | haiyayin
-mah | she'elatekh | Ester | hamalkah
-vetinaten | lakh
+mah | she'elatekh | Ester | hamalkah | vetinaten | lakh
 umah | bakashatekh | ad | chatzi | hamalkhut
 vete'as
 
@@ -20,12 +18,10 @@ ve'ami
 bevakashati
 
 7:4
-ki | Nimkarnu | ani | ve'ami
-lehashmid
+ki | Nimkarnu | ani | ve'ami | lehashmid
 laharog | ule'abed
 ve'ilu | la'avadim | velishfachot | Nimkarnu | hecherashti
-ki | ein | hatzar | shoveh
-benezek | hamelekh
+ki | ein | hatzar | shoveh | benezek | hamelekh
 
 7:5
 vaiyomer | hamelekh | Achashveroosh
@@ -41,16 +37,14 @@ ish | tzar | ve'oyev
 Haman | hara
 hazeh
 Vehaman | Niv'at
-milifnei | hamelekh
-vehamalkah
+milifnei | hamelekh | vehamalkah
 
 7:7
 vehamelekh | kam | bachamato | mimishteh | haiyayin
 el | ginat
 habitan
 Vehaman | amad | levakesh | al | nafsho | Me'ester | hamalkah
-ki | ra'ah
-ki | khaltah | elav | hara'ah
+ki | ra'ah | ki | khaltah | elav | hara'ah
 me'et | hamelekh
 
 7:8
@@ -58,8 +52,7 @@ vehamelekh | shav | miginat | habitan | el | beit | mishteh | haiyayin | Vehaman
 al | hamitah | asher | Ester | aleiha
 vaiyomer | hamelekh
 hagam | likhboosh | et | hamalkah | imi
-babayit
-hadavar | yatza | mipi | hamelekh
+babayit | hadavar | yatza | mipi | hamelekh
 ufenei | Haman
 chafu
 

@@ -1,7 +1,6 @@
 44:1
 vaytzav | et | asher | al | beito | lemor
-male | et | amtechot | ha'anashim | okhel
-ka'asher | yukhelun
+male | et | amtechot | ha'anashim | okhel | ka'asher | yukhelun
 se'et
 vesim | kesef | ish
 befi | amtachto
@@ -9,10 +8,8 @@ befi | amtachto
 44:2
 ve'et | gevi'i | gevia | hakesef | tasim | befi | amtachat | hakaton
 ve'et
-kesef | shivro
-vaiya'as
-kidvar | Yosef
-asher | diber
+kesef | shivro | vaiya'as
+kidvar | Yosef | asher | diber
 
 44:3
 haboker
@@ -25,18 +22,14 @@ vachamoreihem
 hem | yatze'u | et | ha'ir | lo | hirchiku
 Veyosef | amar | la'asher | al | beito
 kum | redof
-acharei | ha'anashim
-vehisagtam | ve'amarta | alehem
-lamah | shilamtem | ra'ah
-tachat | tovah
+acharei | ha'anashim | vehisagtam | ve'amarta | alehem
+lamah | shilamtem | ra'ah | tachat | tovah
 
 44:5
 halo | zeh | asher | yishteh | adoni | bo
 vehu
 nachesh | yenachesh
-bo
-hare'otem
-asher | asitem
+bo | hare'otem | asher | asitem
 
 44:6
 vaiyasigem
@@ -46,20 +39,15 @@ ha'eleh
 
 44:7
 vaiyomeru | elav
-lamah | yedaber | adoni
-kadevarim
-ha'eleh
+lamah | yedaber | adoni | kadevarim | ha'eleh
 chalilah | la'avadeikha
-me'asot
-kadavar | hazeh
+me'asot | kadavar | hazeh
 
 44:8
 hen | kesef | asher | matzanu | befi | amtechoteinu
 heshivonu | eleikha
-me'eretz | Kena'an
-ve'eikh | nigno | mibeit | adoneikha
-kesef
-o | zahav
+me'eretz | Kena'an | ve'eikh | nigno | mibeit | adoneikha
+kesef | o | zahav
 
 44:9
 asher | yimatze | ito | me'avadeikha
@@ -71,8 +59,7 @@ la'avadim
 44:10
 vaiyomer
 gam | atah | khedivreikhem
-ken | hu
-asher | yimatze | ito | yihyeh | li | aved
+ken | hu | asher | yimatze | ito | yihyeh | li | aved
 ve'atem
 tihyu | nekiyim
 
@@ -84,12 +71,8 @@ ish | amtachto
 
 44:12
 vaychapes
-bagadol | hechel
-uvakaton
-kilah
-vaiyimatze | hagavia
-be'amtachat
-Binyamin
+bagadol | hechel | uvakaton | kilah | vaiyimatze | hagavia
+be'amtachat | Binyamin
 
 44:13
 vaiyikre'u
@@ -107,17 +90,12 @@ aretzah
 
 44:15
 vaiyomer | lahem | Yosef
-mah | hama'aseh | hazeh
-asher | asitem
-halo | yeda'tem
-ki | nachesh | yenachesh | ish
-asher | kamoni
+mah | hama'aseh | hazeh | asher | asitem | halo | yeda'tem
+ki | nachesh | yenachesh | ish | asher | kamoni
 
 44:16
 vaiyomer | Yehudah | mah | nomar | ladoni
-mah | nedaber
-umah | nitztadak
-ha'elohim | matza | et | avon | avadeikha
+mah | nedaber | umah | nitztadak | ha'elohim | matza | et | avon | avadeikha
 hinenu | avadim | ladoni
 gam | anachnu
 gam | asher | Nimtza | hagavia
@@ -126,8 +104,7 @@ beyado
 44:17
 vaiyomer
 chalilah | li
-me'asot
-zot
+me'asot | zot
 ha'ish | asher | Nimtza | hagavia | beyado | hu | yihyeh | li | aved
 ve'atem
 alu | leshalom
@@ -137,16 +114,12 @@ el | avikhem
 vaiyigash | elav | Yehudah | vaiyomer | bi | adoni
 yedaber | na | avdekha | davar | be'azenei | adoni
 ve'al | yichar | apekha
-be'avdekha
-ki | khamokha
-kefar'oh
+be'avdekha | ki | khamokha | kefar'oh
 
 44:19
 adoni | sha'al
 et | avadav
-lemor
-hayesh | lakhem | av
-ov | ach
+lemor | hayesh | lakhem | av | ov | ach
 
 44:20
 vanomer | el | adoni
@@ -165,17 +138,14 @@ alav
 
 44:22
 vanomer | el | adoni
-lo | yukhal | hana'ar
-la'azo | et | aviv
-ve'azav | et | aviv
+lo | yukhal | hana'ar | la'azo | et | aviv | ve'azav | et | aviv
 vamet
 
 44:23
 vatomer | el | avadeikha
 im | lo | yered | achikhem | hakaton
 itekhem
-lo | tosifun
-lir'ot | panai
+lo | tosifun | lir'ot | panai
 
 44:24
 vayhi | ki | alinu | el | avdekha
@@ -191,8 +161,7 @@ shivru | lanu | me'at | okhel
 
 44:26
 vanomer
-lo | nukhal
-laredet
+lo | nukhal | laredet
 im | yesh | achinu | hakaton | itanu | veyaradnu
 ki | lo | nukhal | lir'ot | penei | ha'ish
 ve'achinu | hakaton
@@ -202,8 +171,7 @@ einenu | itanu
 vaiyomer | avdekha | avi
 eleinu
 atem | yeda'tem
-ki | shenayim
-yaldah | li | ishti
+ki | shenayim | yaldah | li | ishti
 
 44:28
 vaiyetze | ha'echad | me'iti
@@ -233,24 +201,17 @@ vehoridu | avadeikha | et | seivat | avdekha | avinu | beyagon
 she'olah
 
 44:32
-ki | avdekha | arav | et | hana'ar
-me'im | avi
-lemor
-im | lo | avi'enu | eleikha
-vechatati | le'avi
+ki | avdekha | arav | et | hana'ar | me'im | avi
+lemor | im | lo | avi'enu | eleikha | vechatati | le'avi
 kol | haiyamim
 
 44:33
 ve'atah | yeshev | na | avdekha | tachat | hana'ar
 eved
-ladoni
-vehana'ar
-ya'al | im | echav
+ladoni | vehana'ar | ya'al | im | echav
 
 44:34
-ki | eikh | e'eleh | el | avi
-vehana'ar
-einenu | iti
+ki | eikh | e'eleh | el | avi | vehana'ar | einenu | iti
 pen | er'eh | vara
 asher | yimtza
 et | avi

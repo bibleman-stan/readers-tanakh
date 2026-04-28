@@ -22,13 +22,10 @@ ha'aralot
 vezeh | hadavar
 asher | mal | Yehoshua
 kol | ha'am | haiyotze | Mimitzrayim | hazekharim | kol | anshei | hamilchamah | metu | vamidbar | baderekh
-betzetam
-Mimitzrayim
+betzetam | Mimitzrayim
 
 5:5
-ki | mulim | hayu
-kol | ha'am
-haiyotze'im
+ki | mulim | hayu | kol | ha'am | haiyotze'im
 vekhol | ha'om | haiyilodim | bamidbar | baderekh | betzetam | Mimitzrayim
 lo | malu
 
@@ -36,8 +33,7 @@ lo | malu
 ki | arba'im | shanah | halekhu | venei | Yisra'el | bamidbar
 ad | tom | kol | hagoy | anshei | hamilchamah | haiyotze'im | Mimitzrayim
 asher | lo | shame'u
-bekol | Yahweh
-asher | Nishba | Yahweh | lahem
+bekol | Yahweh | asher | Nishba | Yahweh | lahem
 levilti | har'otam | et | ha'aretz | asher | Nishba | Yahweh | la'avotam | latet | lanu
 eretz | zavat | chalav
 udevash
@@ -45,10 +41,8 @@ udevash
 5:7
 ve'et | beneihem | hekim | tachtam
 otam
-mal | Yehoshua
-ki | arelim | hayu
-ki | lo | malu | otam
-badarekh
+mal | Yehoshua | ki | arelim | hayu
+ki | lo | malu | otam | badarekh
 
 5:8
 vayhi | ka'asher | tamu | khol | hagoy | lehimol
@@ -58,8 +52,7 @@ ad | chayotam
 5:9
 vaiyomer | Yahweh | el | Yehoshua
 haiyom | galoti | et | cherpat | Mitzrayim
-me'aleikhem
-vaiyikra | shem | hamakom | hahu | Gilgal
+me'aleikhem | vaiyikra | shem | hamakom | hahu | Gilgal
 ad | haiyom | hazeh
 
 5:10
@@ -70,25 +63,20 @@ be'arvot | Yericho
 
 5:11
 vaiyokhelu | me'avur | ha'aretz | mimochorat | hapesach
-matzot | vekalui
-be'etzem
-haiyom | hazeh
+matzot | vekalui | be'etzem | haiyom | hazeh
 
 5:12
 vaiyishbot | haman | mimochorat | be'akhelam | me'avur | ha'aretz
 velo | hayah | od | livnei | Yisra'el
-man
-vaiyokhelu | mitevu'at | eretz | Kena'an
-bashanah
-hahi
+man | vaiyokhelu | mitevu'at | eretz | Kena'an
+bashanah | hahi
 
 5:13
 vayhi | bihyot | Yehoshua | Biricho
 vaiyisa | einav | vaiyar
 vehineh | ish | omed | lenegdo
 vecharbo | shelufah
-beyado
-vaiyelekh | Yehoshua | elav | vaiyomer | lo
+beyado | vaiyelekh | Yehoshua | elav | vaiyomer | lo
 halanu | atah
 im | letzareinu
 
@@ -97,8 +85,7 @@ vaiyomer | lo | ki | ani | sar | tzeva | Yahweh
 atah | vati
 vaiyipol | Yehoshua | el | panav | artzah | vaiyishtachu
 vaiyomer | lo
-mah | adoni
-medaber | el | avdo
+mah | adoni | medaber | el | avdo
 
 5:15
 vaiyomer | sar | tzeva | Yahweh | el | Yehoshua | shal | na'alkha | me'al | raglekha

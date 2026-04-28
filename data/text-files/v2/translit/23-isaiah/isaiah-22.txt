@@ -1,9 +1,6 @@
 22:1
-masa
-gei | chizayon
-mah | lakh | efo
-ki | alit | kulakh
-lagagot
+masa | gei | chizayon
+mah | lakh | efo | ki | alit | kulakh | lagagot
 
 22:2
 teshu'ot | mele'ah | ir | homiyah
@@ -14,11 +11,8 @@ velo
 metei | milchamah
 
 22:3
-kol | ketzinayikh | nadedu | yachad
-mikeshet | usaru
-kol | nimtza'ayikh | useru | yachdav
-merachok
-barachu
+kol | ketzinayikh | nadedu | yachad | mikeshet | usaru
+kol | nimtza'ayikh | useru | yachdav | merachok | barachu
 
 22:4
 al | ken | amarti | she'u | mini
@@ -29,58 +23,41 @@ bat | ami
 
 22:5
 ki | yom | mehumah | umevusah | umevukhah | Ladonai | Yahweh | tzeva'ot
-begei | chizayon
-mekarkar | kir
-veshoa | el | hahar
+begei | chizayon | mekarkar | kir | veshoa | el | hahar
 
 22:6
 Ve'eilam | nasa | ashpah
-berekhev | adam
-parashim
-Vekir | erah
-magen
+berekhev | adam | parashim | Vekir | erah | magen
 
 22:7
 vayhi | mivchar | amakayikh
-mal'u | rakhev
-vehaparashim
-shot
-shatu | hasha'erah
+mal'u | rakhev | vehaparashim | shot | shatu | hasha'erah
 
 22:8
-vaygal
-et | masakh | Yehudah
+vaygal | et | masakh | Yehudah
 vatabet | baiyom | hahu
 el | neshek
 beit | haiya'ar
 
 22:9
 ve'et | beki'ei | ir | David | re'item
-ki | rabu
-vatekabetzu
-et | mei | haberekhah
-hatachtonah
+ki | rabu | vatekabetzu | et | mei | haberekhah | hatachtonah
 
 22:10
 ve'et | batei | Yerushalim
 sefartem
 vatittzev | habatim
-levatzer
-hachomah
+levatzer | hachomah
 
 22:11
 umikvah | asitem | bein | hachomotayim
-lemei
-haberekhah | hayshanah
-velo | hibatem | el | oseiha
+lemei | haberekhah | hayshanah | velo | hibatem | el | oseiha
 veyotzerah | merachok
 lo | re'item
 
 22:12
 vaiyikra | Adonai | Yahweh | tzeva'ot
-baiyom | hahu
-livkhi | ulemisped
-ulekarechah
+baiyom | hahu | livkhi | ulemisped | ulekarechah
 velachagor | sak
 
 22:13
@@ -88,8 +65,7 @@ vehineh | sason | vesimchah | harog | bakar | veshachot | tzon
 akhol | basar
 veshatot | yayin
 akhol | veshato
-ki | machar
-namut
+ki | machar | namut
 
 22:14
 veniglah | ve'azenai
@@ -99,14 +75,11 @@ amar | Adonai | Yahweh | tzeva'ot
 
 22:15
 koh | amar | Adonai | Yahweh | tzeva'ot
-lekh | bo | el | hasokhen | hazeh
-al | Shevna
-asher | al | habayit
+lekh | bo | el | hasokhen | hazeh | al | Shevna | asher | al | habayit
 
 22:16
 mah | lekha | foh | umi | lekha | foh
-ki | chatzavta | lekha | poh
-kaver
+ki | chatzavta | lekha | poh | kaver
 chotzevi | marom | kivro
 chokeki | vasela
 mishkan | lo
@@ -120,25 +93,18 @@ atoh
 
 22:18
 tzanof | yitznafekha | tzenefah
-kadur
-el | eretz
-rachavat | yadayim
+kadur | el | eretz | rachavat | yadayim
 shamah | tamut | veshamah | markevot | kevodekha
 kelon
 beit | adoneikha
 
 22:19
 vahadaftikha
-mimatzavekha
-umima'amadekha
-yehersekha
+mimatzavekha | umima'amadekha | yehersekha
 
 22:20
 vehayah
-baiyom | hahu
-vekarati | le'avdi
-Le'elyakim
-ben | Chilkiyahu
+baiyom | hahu | vekarati | le'avdi | Le'elyakim | ben | Chilkiyahu
 
 22:21
 vehilbashtiv | kutanetekha | ve'avnetekha | achazzekenu
@@ -156,16 +122,12 @@ ve'ein | poteach
 
 22:23
 uteka'tiv | yated
-bemakom | ne'eman
-vehayah | lekhise | khavod
+bemakom | ne'eman | vehayah | lekhise | khavod
 leveit | aviv
 
 22:24
 vetalu | alav | kol | kevod | beit | aviv | hatze'etza'im | vehatzefi'ot
-kol
-kelei | hakatan
-mikelei | ha'aganot
-ve'ad
+kol | kelei | hakatan | mikelei | ha'aganot | ve'ad
 kol | kelei | hanevalim
 
 22:25
@@ -174,5 +136,4 @@ tamush | haiyated
 hateku'ah
 bemakom | ne'eman
 venigde'ah | venafelah | venikhrat | hamasa | asher | aleiha
-ki | Yahweh
-diber
+ki | Yahweh | diber

@@ -1,14 +1,11 @@
 33:1
-ben | sheteim | esreh | shanah
-Menasheh | vemalekho
+ben | sheteim | esreh | shanah | Menasheh | vemalekho
 vachamishim | vechamesh | shanah
-malakh
-Birushalim
+malakh | Birushalim
 
 33:2
 vaiya'as | hara
-be'einei | Yahweh
-keto'avot | hagoyim
+be'einei | Yahweh | keto'avot | hagoyim
 asher | horish | Yahweh
 mipenei | benei | Yisra'el
 
@@ -23,16 +20,12 @@ otam
 
 33:4
 uvanah | mizbechot
-beveit | Yahweh
-asher | amar | Yahweh
-Birushalim | yihyeh | shemi
-le'olam
+beveit | Yahweh | asher | amar | Yahweh
+Birushalim | yihyeh | shemi | le'olam
 
 33:5
 vaiyiven | mizbechot
-lekhol | tzeva | hashamayim
-bishtei
-chatzrot | beit | Yahweh
+lekhol | tzeva | hashamayim | bishtei | chatzrot | beit | Yahweh
 
 33:6
 vehu | he'evir | et | banav | ba'esh | begei | Ven | Hinom
@@ -53,20 +46,15 @@ le'eilom
 
 33:8
 velo | osif | lehasir | et | regel | Yisra'el
-me'al | ha'adamah
-asher | he'emadti
-la'avoteikhem
+me'al | ha'adamah | asher | he'emadti | la'avoteikhem
 rak | im | yishmeru | la'asot | et | kol | asher | tzivitim
-lekhol | hatorah | vehachukim | vehamishpatim
-beyad | Mosheh
+lekhol | hatorah | vehachukim | vehamishpatim | beyad | Mosheh
 
 33:9
 vaiyeta | Menasheh
 et | Yehudah
 veyoshevei | Yerushalim
-la'asot | ra
-min | hagoyim
-asher | hishmid | Yahweh
+la'asot | ra | min | hagoyim | asher | hishmid | Yahweh
 mipenei | benei | Yisra'el
 
 33:10
@@ -76,8 +64,7 @@ velo | hikshivu
 33:11
 vaiyave | Yahweh | aleihem | et | sarei | hatzava | asher | lemelekh | Ashur
 vaiyilkedu | et | Menasheh
-bachochim
-vaiya'asruhu | banchushtayim
+bachochim | vaiya'asruhu | banchushtayim
 vaiyolikhuhu
 Bavelah
 
@@ -92,17 +79,13 @@ milifnei | elohei | avotav
 33:13
 vaiyitpalel | elav | vaiye'ater | lo | vaiyishma | techinato
 vayshivehu | Yerushalim
-lemalkhuto
-vaiyeda | Menasheh
-ki | Yahweh
-hu | ha'elohim
+lemalkhuto | vaiyeda | Menasheh
+ki | Yahweh | hu | ha'elohim
 
 33:14
 ve'acharei | khen | banah | chomah | chitzonah | le'ir | David | ma'ravah | Legichon | banachal | velavo | vesha'ar | hadagim | vesavav | La'ofel
 vaiyagbiheha
-me'od
-vaiyasem | sarei | chayil | bekhol | he'arim | habetzurot
-Bihudah
+me'od | vaiyasem | sarei | chayil | bekhol | he'arim | habetzurot | Bihudah
 
 33:15
 vaiyasar | et | elohei | hanekhar | ve'et | hasemel | mibeit | Yahweh
@@ -117,61 +100,47 @@ vaiyizbach | alav
 zivchei | shelamim
 vetodah
 vaiyomer | Lihudah
-la'avod
-et | Yahweh
-elohei | Yisra'el
+la'avod | et | Yahweh | elohei | Yisra'el
 
 33:17
 aval | od | ha'am
 zoechim
-babamot
-rak
-Layahweh | eloheihem
+babamot | rak | Layahweh | eloheihem
 
 33:18
 veyeter | divrei | Menasheh | utefilato | el | elohav
 vedivrei | hachozim
 hamdaberim | elav
-beshem | Yahweh | elohei | Yisra'el
-hinam
-al | divrei
+beshem | Yahweh | elohei | Yisra'el | hinam | al | divrei
 malkhei | Yisra'el
 
 33:19
 utefilato | vehe'ater | lo | vekhol | chatato | uma'lo
 vehamekomot | asher | banah | vahem | bamot | vehe'emid | ha'asherim | vehapesilim
-lifnei | hikane'o
-hinam | ketuvim
+lifnei | hikane'o | hinam | ketuvim
 al | divrei | chozai
 
 33:20
 vaiyishkav | Menasheh | im | avotav
 vaiyikberuhu
-beito
-vaiyimlokh | Amon | beno
-tachtav
+beito | vaiyimlokh | Amon | beno | tachtav
 
 33:21
-ben | esrim | ushetayim | shanah
-Amon | bemalekho
-ushetayim | shanim
-malakh
+ben | esrim | ushetayim | shanah | Amon | bemalekho
+ushetayim | shanim | malakh
 Birushalim
 
 33:22
 vaiya'as | hara | be'einei | Yahweh
-ka'asher | asah
-Menasheh | aviv
+ka'asher | asah | Menasheh | aviv
 ulekhol | hapesilim | asher | asah | Menasheh | aviv
 zibach | Amon
 vaiya'avdem
 
 33:23
 velo | Nikhna | milifnei | Yahweh
-kehikana
-Menasheh | aviv
-ki | hu | Amon
-hirbah | ashmah
+kehikana | Menasheh | aviv
+ki | hu | Amon | hirbah | ashmah
 
 33:24
 vaiyiksheru | alav | avadav
@@ -179,8 +148,7 @@ vaymituhu
 beveito
 
 33:25
-vaiyaku | am | ha'aretz
-et | kol | hakosherim
+vaiyaku | am | ha'aretz | et | kol | hakosherim
 al | hamelekh | Amon
 vaiyamlikhu | am | ha'aretz | et | Yoshiyahu | veno
 tachtav

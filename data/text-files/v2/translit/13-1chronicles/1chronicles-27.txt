@@ -1,22 +1,15 @@
 27:1
 uvenei | Yisra'el | lemisparam | rashei | ha'avot | vesarei | ha'alafim | vehame'ot | veshotereihem | hamsharetim | et | hamelekh | lekhol | devar | hamachlekot | haba'ah | vehaiyotzet | chodesh | bechodesh
-lekhol
-chadeshei | hashanah
-hamachaloket | ha'achat
+lekhol | chadeshei | hashanah | hamachaloket | ha'achat
 esrim | ve'arba'ah
 alef
 
 27:2
-al | hamachaloket | harishonah | lachodesh | harishon
-Yashave'am
-ben | Zavdi'el
-ve'al | machalukto
-esrim | ve'arba'ah
-alef
+al | hamachaloket | harishonah | lachodesh | harishon | Yashave'am
+ben | Zavdi'el | ve'al | machalukto | esrim | ve'arba'ah | alef
 
 27:3
-min | benei | Feretz | harosh | lekhol | sarei | hatzeva'ot
-lachodesh | harishon
+min | benei | Feretz | harosh | lekhol | sarei | hatzeva'ot | lachodesh | harishon
 
 27:4
 ve'al | machaloket | hachodesh | hasheni | Dodai | ha'achochi | umachalukto
@@ -28,9 +21,7 @@ alef
 
 27:5
 sar | hatzava | hashelishi | lachodesh | hashelishi
-Benayahu | ven | Yehoyada | hakohen
-rosh
-ve'al | machalukto
+Benayahu | ven | Yehoyada | hakohen | rosh | ve'al | machalukto
 esrim | ve'arba'ah
 alef
 
@@ -68,110 +59,68 @@ alef
 27:10
 hashevi'i | lachodesh | hashevi'i
 Cheletz | hapeloni
-min | benei | Efrayim
-ve'al | machalukto
-esrim | ve'arba'ah
+min | benei | Efrayim | ve'al | machalukto | esrim | ve'arba'ah
 alef
 
 27:11
 hashemini | lachodesh | hashemini
 Sibekhai | hachushati
-lazarchi
-ve'al | machalukto
-esrim | ve'arba'ah
-alef
+lazarchi | ve'al | machalukto | esrim | ve'arba'ah | alef
 
 27:12
 hateshi'i | lachodesh | hateshi'i
 Avi'ezer | ha'anetoti
-laben yemini
-ve'al | machalukto
-esrim | ve'arba'ah
-alef
+laben yemini | ve'al | machalukto | esrim | ve'arba'ah | alef
 
 27:13
 ha'asiri | lachodesh | ha'asiri
-Mahrai | hanetofati
-lazarchi
-ve'al | machalukto
+Mahrai | hanetofati | lazarchi | ve'al | machalukto
 esrim | ve'arba'ah
 alef
 
 27:14
 ashtei | asar | le'ashtei | asar | hachodesh
-Benayah | hapir'atoni
-min | benei | Efrayim
-ve'al | machalukto
+Benayah | hapir'atoni | min | benei | Efrayim | ve'al | machalukto
 esrim | ve'arba'ah
 alef
 
 27:15
 hasheneim | asar | lishneim | asar | hachodesh
 Cheldai | hanetofati
-Le'ateni'el
-ve'al | machalukto
-esrim | ve'arba'ah
-alef
+Le'ateni'el | ve'al | machalukto | esrim | ve'arba'ah | alef
 
 27:16
 ve'al | shivtei | Yisra'el
-lor'uveni | nagid
-Eli'ezer
-ben | Zikhri
-lashim'oni
-Shefatyahu
+lor'uveni | nagid | Eli'ezer | ben | Zikhri | lashim'oni | Shefatyahu
 ben | Ma'akhah
 
 27:17
-Lelevi | Chashavyah | ven | Kemu'el
-Le'aharon | Tzadok
+Lelevi | Chashavyah | ven | Kemu'el | Le'aharon | Tzadok
 
 27:18
-Lihudah
-Elihu
-me'achei | David
-Leyisoshkhar
-Ameri
+Lihudah | Elihu | me'achei | David | Leyisoshkhar | Ameri
 ben | Mikha'el
 
 27:19
-Lizvulun
-Yishma'yahu
-ben | Oadyahu
-Lenaftali
-Yerimot
-ben | Azri'el
+Lizvulun | Yishma'yahu | ben | Oadyahu | Lenaftali | Yerimot | ben | Azri'el
 
 27:20
-livnei | Efrayim
-Hoshea
-ben | Azazyahu
-lachatzi | shevet | Menasheh
-Yo'el
-ben | Pedayahu
+livnei | Efrayim | Hoshea
+ben | Azazyahu | lachatzi | shevet | Menasheh | Yo'el | ben | Pedayahu
 
 27:21
-lachatzi | hamnasheh | Gil'adah
-Yido
-ben | Zekharyahu
-Levinyamin
+lachatzi | hamnasheh | Gil'adah | Yido | ben | Zekharyahu | Levinyamin
 Ya'asi'el
 ben | Avner
 
 27:22
-Ledan
-Azar'el
-ben | Yerocham
-eleh
-sarei
+Ledan | Azar'el | ben | Yerocham | eleh | sarei
 shivtei | Yisra'el
 
 27:23
 velo | nasa | David | misparam
-lemiben | esrim | shanah
-ulematah
-ki | amar | Yahweh
-leharbot | et | Yisra'el
+lemiben | esrim | shanah | ulematah
+ki | amar | Yahweh | leharbot | et | Yisra'el
 kechokhvei | hashamayim
 
 27:24
@@ -179,8 +128,7 @@ Yo'av | ben | Tzeruyah | hechel | limnot | velo | khilah
 vayhi | vazot | ketzef
 al | Yisra'el
 velo | alah | hamispar
-bemispar | divrei | haiyamim
-lamelekh | David
+bemispar | divrei | haiyamim | lamelekh | David
 
 27:25
 ve'al | otzerot | hamelekh
@@ -192,10 +140,7 @@ ben | Uziyahu
 
 27:26
 ve'al | osei | melekhet | hasadeh
-la'avodat
-ha'adamah
-Ezri
-ben | Keluv
+la'avodat | ha'adamah | Ezri | ben | Keluv
 
 27:27
 ve'al | hakeramim
@@ -207,10 +152,7 @@ hashifmi
 
 27:28
 ve'al | hazeitim | vehashikmim | asher | bashefelah
-Ba'al | Chanan
-hagederi
-ve'al | otzerot | hashemen
-Yo'ash
+Ba'al | Chanan | hagederi | ve'al | otzerot | hashemen | Yo'ash
 
 27:29
 ve'al | habakar | haro'im | Basharon
@@ -231,9 +173,7 @@ hameronoti
 27:31
 ve'al | hatzon
 Yaziz | hahagri
-kol | eleh | sarei | harekhush
-asher
-lamelekh | David
+kol | eleh | sarei | harekhush | asher | lamelekh | David
 
 27:32
 Vihonatan | dod | David | yo'etz

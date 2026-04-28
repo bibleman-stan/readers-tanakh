@@ -7,30 +7,22 @@ komato
 
 38:2
 vaiya'as | karnotav | al | arba | pinotav
-mimenu
-hayu | karnotav
-vaytzaf | oto
-nechoshet
+mimenu | hayu | karnotav | vaytzaf | oto | nechoshet
 
 38:3
 vaiya'as | et | kol | kelei | hamizbeach | et | hasirot | ve'et | haiya'im | ve'et | hamizrakot
 et | hamizlagot
 ve'et | hamachtot
-kol | kelav
-asah | nechoshet
+kol | kelav | asah | nechoshet
 
 38:4
 vaiya'as | lamizbeach | mikhbar
-ma'aseh
-reshet | nechoshet
-tachat | karkubo | milematah
-ad | chetzyo
+ma'aseh | reshet | nechoshet
+tachat | karkubo | milematah | ad | chetzyo
 
 38:5
 vaiyitzok | arba | taba'ot | be'arba | haketzavot
-lemikhbar | hanechoshet
-batim
-labadim
+lemikhbar | hanechoshet | batim | labadim
 
 38:6
 vaiya'as | et | habadim
@@ -40,17 +32,13 @@ nechoshet
 
 38:7
 vaiyave | et | habadim | bataba'ot | al | tzal'ot | hamizbeach
-laset | oto
-bahem
-nevuv | luchot
+laset | oto | bahem | nevuv | luchot
 asah | oto
 
 38:8
 vaiya'as | et | hakiyor | nechoshet
 ve'et
-kano | nechoshet
-bemar'ot | hatzoe'ot
-asher | tzave'u
+kano | nechoshet | bemar'ot | hatzoe'ot | asher | tzave'u
 petach
 ohel | mo'ed
 
@@ -58,30 +46,23 @@ ohel | mo'ed
 vaiya'as
 et | hechatzer
 lif'at | negev | teimanah | kal'ei | hechatzer | shesh | mashezar
-me'ah
-ba'amah
+me'ah | ba'amah
 
 38:10
-amudeihem | esrim
-ve'adneihem | esrim
-nechoshet
+amudeihem | esrim | ve'adneihem | esrim | nechoshet
 vavei | ha'amudim | vachashukeihem
 kasef
 
 38:11
 velif'at | tzafon | me'ah | va'amah
-amudeihem | esrim
-ve'adneihem | esrim
-nechoshet
+amudeihem | esrim | ve'adneihem | esrim | nechoshet
 vavei | ha'amudim | vachashukeihem
 kasef
 
 38:12
 velif'at | yam | kela'im | chamishim | ba'amah
-amudeihem | asarah
-ve'adneihem
-asarah
-vavei | ha'amudim | vachashukeihem
+amudeihem | asarah | ve'adneihem
+asarah | vavei | ha'amudim | vachashukeihem
 kasef
 
 38:13
@@ -91,17 +72,14 @@ chamishim | amah
 38:14
 kela'im | chamesh | esreh | amah
 el | hakatef
-amudeihem | sheloshah
-ve'adneihem
+amudeihem | sheloshah | ve'adneihem
 sheloshah
 
 38:15
 velakatef | hashenit | mizeh | umizeh | lesha'ar | hechatzer
 kela'im
-chamesh | esreh
-amah
-amudeihem | sheloshah
-ve'adneihem
+chamesh | esreh | amah
+amudeihem | sheloshah | ve'adneihem
 sheloshah
 
 38:16
@@ -111,10 +89,8 @@ kol | kal'ei | hechatzer | saviv | shesh | mashezar
 veha'adanim | la'amudim | nechoshet
 vavei | ha'amudim | vachashukeihem | kesef
 vetzipui | rasheihem
-kasef
-vehem | mechushakim | kesef
-kol
-amudei | hechatzer
+kasef | vehem | mechushakim | kesef
+kol | amudei | hechatzer
 
 38:18
 umasakh | sha'ar | hechatzer | ma'aseh | rokem
@@ -122,13 +98,10 @@ tekhelet | ve'argaman | vetola'at | shani
 veshesh | mashezar
 ve'esrim | amah | orekh
 vekomah | verochav | chamesh | amot
-le'umat
-kal'ei | hechatzer
+le'umat | kal'ei | hechatzer
 
 38:19
-ve'amudeihem | arba'ah
-ve'adneihem | arba'ah
-nechoshet
+ve'amudeihem | arba'ah | ve'adneihem | arba'ah | nechoshet
 vaveihem | kesef
 vetzipui | rasheihem | vachashukeihem
 kasef
@@ -141,15 +114,11 @@ eleh | fekudei | hamishkan | mishkan | ha'edut
 asher | pukad
 al | pi | Mosheh
 avodat | halviyim
-beyad | Itamar
-ben | Aharon
-hakohen
+beyad | Itamar | ben | Aharon | hakohen
 
 38:22
 Uvetzal'el | ben | Uri | ven | Chur
-lemateh | Yehudah
-asah
-et | kol | asher | tzivah | Yahweh
+lemateh | Yehudah | asah | et | kol | asher | tzivah | Yahweh
 et | Mosheh
 
 38:23
@@ -160,9 +129,7 @@ uvetola'at | hashani
 uvashesh
 
 38:24
-kol | hazahav | he'asui | lamelakhah
-bekhol
-melekhet | hakodesh
+kol | hazahav | he'asui | lamelakhah | bekhol | melekhet | hakodesh
 vayhi | zehav | hatenufah | tesha | ve'esrim | kikar | usheva | me'ot | usheloshim | shekel
 beshekel | hakodesh
 
@@ -173,27 +140,20 @@ ve'elef | usheva | me'ot | vachamishah | veshiv'im | shekel
 beshekel | hakodesh
 
 38:26
-beka | lagulgolet
-machatzit | hashekel
-beshekel | hakodesh
+beka | lagulgolet | machatzit | hashekel | beshekel | hakodesh
 lekhol | ha'over | al | hapekudim | miben | esrim | shanah | vama'lah
-leshesh | me'ot | elef | usheloshet | alafim
-vachamesh | me'ot
-vachamishim
+leshesh | me'ot | elef | usheloshet | alafim | vachamesh | me'ot | vachamishim
 
 38:27
 vayhi | me'at | kikar | hakesef | latzeket | et | adnei | hakodesh
 ve'et
 adnei | haparokhet
-me'at | adanim | lim'at | hakikar
-kikar | la'aden
+me'at | adanim | lim'at | hakikar | kikar | la'aden
 
 38:28
 ve'et | ha'elef | usheva | hame'ot | vachamishah | veshiv'im
 asah | vavim
-la'amudim
-vetzipah | rasheihem
-vechishak | otam
+la'amudim | vetzipah | rasheihem | vechishak | otam
 
 38:29
 unechoshet | hatenufah

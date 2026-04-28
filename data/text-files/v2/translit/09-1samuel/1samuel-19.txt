@@ -1,15 +1,11 @@
 19:1
 vaydaber | Sha'ul | el | Yonatan | beno | ve'el | kol | avadav
-lehamit
-et | David
-Vihonatan | ben | Sha'ul
-chafetz | Bedavid
+lehamit | et | David | Vihonatan | ben | Sha'ul | chafetz | Bedavid
 me'od
 
 19:2
 vaiyaged | Yehonatan | Ledavid | lemor
-mevakesh | Sha'ul | avi
-lahamitekha
+mevakesh | Sha'ul | avi | lahamitekha
 ve'atah | hishamer | na | vaboker
 veyashavta | vaseter
 venachbeta
@@ -35,20 +31,15 @@ vaiyasem | et | nafsho | vekhapo | vaiyakh | et | hapelishti | vaiya'as | Yahweh
 ra'ita
 vatismach
 velamah | techeta | bedam | naki
-lehamit | et | David
-chinam
+lehamit | et | David | chinam
 
 19:6
 vaiyishma | Sha'ul
-bekol | Yehonatan
-vaiyishava | Sha'ul
-chai | Yahweh
-im | yumat
+bekol | Yehonatan | vaiyishava | Sha'ul | chai | Yahweh | im | yumat
 
 19:7
 vaiyikra | Yehonatan | Ledavid
-vaiyaged | lo | Yehonatan
-et | kol | hadevarim
+vaiyaged | lo | Yehonatan | et | kol | hadevarim
 ha'eleh
 vaiyave | Yehonatan | et | David | el | Sha'ul
 vayhi | lefanav | ke'etmol | shilshom
@@ -64,51 +55,39 @@ mipanav
 vatehi | ruach | Yahweh | ra'ah | el | Sha'ul
 vehu | beveito | yoshev
 vachanito
-beyado
-Vedavid
-menagen | beyad
+beyado | Vedavid | menagen | beyad
 
 19:10
 vayvakesh | Sha'ul | lehakot | bachanit | Bedavid | uvakir
 vaiyiftar | mipenei | Sha'ul
 vaiyakh | et | hachanit
-bakir
-Vedavid | nas | vaiyimalet
-balaylah | hu
+bakir | Vedavid | nas | vaiyimalet | balaylah | hu
 
 19:11
 vaiyishlach | Sha'ul | mal'akhim | el | beit | David | leshamero
 velahamito
-baboker
-vataged | Ledavid | Mikhal | ishto | lemor
+baboker | vataged | Ledavid | Mikhal | ishto | lemor
 im | einekha | memalet | et | nafshekha | halaylah
-machar
-atah | mumat
+machar | atah | mumat
 
 19:12
 vatored | Mikhal | et | David
-be'ad | hachalon
-vaiyelekh | vaiyivrach
+be'ad | hachalon | vaiyelekh | vaiyivrach
 vaiyimalet
 
 19:13
 vatikach | Mikhal | et | haterafim | vatasem | el | hamitah
 ve'et | kevir | ha'izim
 samah
-mera'ashotav
-vatekhas
-babaged
+mera'ashotav | vatekhas | babaged
 
 19:14
 vaiyishlach | Sha'ul | mal'akhim
-lakachat | et | David
-vatomer
-choleh | hu
+lakachat | et | David | vatomer | choleh | hu
 
 19:15
 vaiyishlach | Sha'ul | et | hamal'akhim
-lir'ot | et | David
-lemor
+lir'ot | et | David | lemor
 ha'alu | oto | vamitah | elai
 lahamito
 
@@ -129,8 +108,7 @@ lamah | amitekh
 
 19:18
 Vedavid | barach | vaiyimalet | vaiyavo | el | Shemu'el | Haramatah
-vaiyaged | lo
-et | kol | asher | asah | lo
+vaiyaged | lo | et | kol | asher | asah | lo
 Sha'ul
 vaiyelekh | hu | Ushemu'el
 vaiyeshevu
@@ -138,10 +116,7 @@ Benoit
 
 19:19
 vaiyugad | Lesha'ul
-lemor
-hineh | David
-Benoit
-Baramah
+lemor | hineh | David | Benoit | Baramah
 
 19:20
 vaiyishlach | Sha'ul | mal'akhim | lakachat | et | David
@@ -167,8 +142,7 @@ vaiyish'al | vaiyomer
 eifoh | Shemu'el
 Vedavid
 vaiyomer
-hineh
-Benoit | Baramah
+hineh | Benoit | Baramah
 
 19:23
 vaiyelekh | sham
@@ -181,8 +155,6 @@ Benoit | Baramah
 19:24
 vaiyifshat | gam | hu | begadav | vaiyitnabe | gam | hu | lifnei | Shemu'el
 vaiyipol | arom
-kol | haiyom | hahu
-vekhol | halayelah
-al | ken | yomeru
+kol | haiyom | hahu | vekhol | halayelah | al | ken | yomeru
 hagam | Sha'ul
 banevi'im

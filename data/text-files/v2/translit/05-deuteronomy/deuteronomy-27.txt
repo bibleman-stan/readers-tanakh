@@ -1,8 +1,7 @@
 27:1
 vaytzav | Mosheh | veziknei | Yisra'el
 et | ha'am
-lemor
-shamor | et | kol | hamitzvah
+lemor | shamor | et | kol | hamitzvah
 asher | anokhi | metzaveh | etkhem
 haiyom
 
@@ -19,22 +18,16 @@ basid
 vekhatavta | aleihen | et | kol | divrei | hatorah | hazot
 be'averekha
 lema'an | asher | tavo | el | ha'aretz | asher | Yahweh | eloheikha | noten | lekha | eretz | zavat | chalav | udevash
-ka'asher | diber | Yahweh | elohei | avoteikha
-lakh
+ka'asher | diber | Yahweh | elohei | avoteikha | lakh
 
 27:4
 vehayah | be'averekhem | et | Haiyarden
 takimu | et | ha'avanim | ha'eleh | asher | anokhi | metzaveh | etkhem | haiyom
-behar | Eival
-vesadta | otam
-basid
+behar | Eival | vesadta | otam | basid
 
 27:5
 uvanita | sham | mizbeach
-Layahweh
-eloheikha
-mizbach | avanim
-lo | tanif | aleihem
+Layahweh | eloheikha | mizbach | avanim | lo | tanif | aleihem
 barzel
 
 27:6
@@ -42,8 +35,7 @@ avanim | shelemot | tivneh
 et | mizbach
 Yahweh | eloheikha
 veha'alita | alav | olot
-Layahweh
-eloheikha
+Layahweh | eloheikha
 
 27:7
 vezavachta | shelamim
@@ -57,39 +49,29 @@ ba'er | heitev
 
 27:9
 vaydaber | Mosheh | vehakohanim | halviyim
-el | kol | Yisra'el
-lemor
-hasket | ushema | Yisra'el
+el | kol | Yisra'el | lemor | hasket | ushema | Yisra'el
 haiyom | hazeh | Nihyeita | le'am
-Layahweh
-eloheikha
+Layahweh | eloheikha
 
 27:10
 veshama'ta
-bekol
-Yahweh | eloheikha
-ve'asita | et | mitzvotav | ve'et | chukav
+bekol | Yahweh | eloheikha | ve'asita | et | mitzvotav | ve'et | chukav
 asher | anokhi | metzavekha
 haiyom
 
 27:11
 vaytzav | Mosheh | et | ha'am
-baiyom | hahu
-lemor
+baiyom | hahu | lemor
 
 27:12
 eleh | ya'amdu | levarekh | et | ha'am | al | har | Gerizim
-be'averekhem
-et | Haiyarden
-Shim'on | Velevi | Vihudah
+be'averekhem | et | Haiyarden | Shim'on | Velevi | Vihudah
 Veyisoshkhar
 Veyosef | Uvinyamin
 
 27:13
 ve'eleh | ya'amdu | al | hakelalah
-behar | Eival
-Re'uven | Gad | Ve'asher
-Uzevulun
+behar | Eival | Re'uven | Gad | Ve'asher | Uzevulun
 Dan | Venaftali
 
 27:14
@@ -104,24 +86,15 @@ amen
 
 27:16
 arur
-makleh | aviv
-ve'imo
-ve'amar | kol | ha'am
-amen
+makleh | aviv | ve'imo | ve'amar | kol | ha'am | amen
 
 27:17
 arur
-masig
-gevul | re'ehu
-ve'amar | kol | ha'am
-amen
+masig | gevul | re'ehu | ve'amar | kol | ha'am | amen
 
 27:18
 arur
-mashgeh | iver
-badarekh
-ve'amar | kol | ha'am
-amen
+mashgeh | iver | badarekh | ve'amar | kol | ha'am | amen
 
 27:19
 arur | mateh | mishpat | ger | yatom
@@ -131,9 +104,7 @@ amen
 
 27:20
 arur | shokhev | im | eshet | aviv
-ki | gilah
-kenaf | aviv
-ve'amar | kol | ha'am
+ki | gilah | kenaf | aviv | ve'amar | kol | ha'am
 amen
 
 27:21
@@ -145,10 +116,7 @@ amen
 
 27:22
 arur | shokhev | im | achoto
-bat | aviv
-o | vat | imo
-ve'amar | kol | ha'am
-amen
+bat | aviv | o | vat | imo | ve'amar | kol | ha'am | amen
 
 27:23
 arur
@@ -159,20 +127,13 @@ amen
 
 27:24
 arur
-makeh | re'ehu
-basater
-ve'amar | kol | ha'am
-amen
+makeh | re'ehu | basater | ve'amar | kol | ha'am | amen
 
 27:25
 arur | lokeach | shochad
-lehakot | nefesh
-dam | naki
-ve'amar | kol | ha'am
+lehakot | nefesh | dam | naki | ve'amar | kol | ha'am
 amen
 
 27:26
 arur | asher | lo | yakim | et | divrei | hatorah | hazot
-la'asot | otam
-ve'amar | kol | ha'am
-amen
+la'asot | otam | ve'amar | kol | ha'am | amen

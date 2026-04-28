@@ -7,62 +7,47 @@ komato
 
 27:2
 ve'asita | karnotav | al | arba | pinotav
-mimenu
-tihyeina | karnotav
-vetzipita | oto
-nechoshet
+mimenu | tihyeina | karnotav | vetzipita | oto | nechoshet
 
 27:3
 ve'asita | sirotav | ledasheno
 veya'av | umizrekotav
 umizlegotav
 umachtotav
-lekhol | kelav
-ta'aseh | nechoshet
+lekhol | kelav | ta'aseh | nechoshet
 
 27:4
 ve'asita | lo | mikhbar
-ma'aseh
-reshet | nechoshet
+ma'aseh | reshet | nechoshet
 ve'asita | al | hareshet | arba | tabe'ot | nechoshet
 al | arba | ketzotav
 
 27:5
 venatatah | otah | tachat | karko | hamizbeach
-milematah
-vehayetah | hareshet
-ad | chatzi | hamizbeach
+milematah | vehayetah | hareshet | ad | chatzi | hamizbeach
 
 27:6
 ve'asita | vadim | lamizbeach
-badei
-atzei | shitim
-vetzipita | otam
-nechoshet
+badei | atzei | shitim | vetzipita | otam | nechoshet
 
 27:7
 vehuva | et | badav
-bataba'ot
-vehayu | habadim | al | shetei | tzal'ot | hamizbeach
+bataba'ot | vehayu | habadim | al | shetei | tzal'ot | hamizbeach
 bis'et | oto
 
 27:8
 nevuv | luchot
 ta'aseh | oto
-ka'asher | her'ah | otekha | bahar
-ken | ya'asu
+ka'asher | her'ah | otekha | bahar | ken | ya'asu
 
 27:9
 ve'asita
 et | chatzar | hamishkan
 lif'at | negev | teimanah | kela'im | lechatzer | shesh | mashezar | me'ah | va'amah | orekh
-lape'ah
-ha'echat
+lape'ah | ha'echat
 
 27:10
-ve'amudav | esrim
-ve'adneihem | esrim
-nechoshet
+ve'amudav | esrim | ve'adneihem | esrim | nechoshet
 vavei | ha'amudim | vachashukeihem
 kasef
 
@@ -78,8 +63,7 @@ kasef
 verochav | hechatzer | lif'at | yam
 kela'im
 chamishim | amah
-amudeihem | asarah
-ve'adneihem
+amudeihem | asarah | ve'adneihem
 asarah
 
 27:13
@@ -88,32 +72,21 @@ chamishim | amah
 
 27:14
 vachamesh | esreh | amah | kela'im
-lakatef
-amudeihem | sheloshah
-ve'adneihem
-sheloshah
+lakatef | amudeihem | sheloshah | ve'adneihem | sheloshah
 
 27:15
 velakatef | hashenit
-chemesh | esreh
-kela'im
-amudeihem | sheloshah
-ve'adneihem
+chemesh | esreh | kela'im
+amudeihem | sheloshah | ve'adneihem
 sheloshah
 
 27:16
 ulesha'ar | hechatzer | masakh | esrim | amah | tekhelet | ve'argaman | vetola'at | shani | veshesh | mashezar
-ma'aseh | rokem
-amudeihem | arba'ah
-ve'adneihem
-arba'ah
+ma'aseh | rokem | amudeihem | arba'ah | ve'adneihem | arba'ah
 
 27:17
-kol | amudei | hechatzer | saviv | mechushakim | kesef
-vaveihem
-kasef
-ve'adneihem
-nechoshet
+kol | amudei | hechatzer | saviv | mechushakim | kesef | vaveihem
+kasef | ve'adneihem | nechoshet
 
 27:18
 orekh | hechatzer | me'ah | va'amah | verochav | chamishim | bachamishim | vekomah | chamesh | amot
@@ -122,21 +95,15 @@ ve'adneihem
 nechoshet
 
 27:19
-lekhol | kelei | hamishkan
-bekhol
-avodato
+lekhol | kelei | hamishkan | bekhol | avodato
 vekhol | yetedotav | vekhol | yitdot | hechatzer
 nechoshet
 
 27:20
 ve'atah | tetzaveh | et | benei | Yisra'el | veyikchu | eleikha | shemen | zayit | zakh | katit
-lama'or
-leha'alot | ner
-tamid
+lama'or | leha'alot | ner | tamid
 
 27:21
 be'ohel | mo'ed | michutz | laparokhet | asher | al | ha'edut | ya'arokh | oto | Aharon | uvanav | me'erev | ad | boker
-lifnei | Yahweh
-chukat | olam | ledorotam
-me'et
-benei | Yisra'el
+lifnei | Yahweh | chukat | olam | ledorotam
+me'et | benei | Yisra'el

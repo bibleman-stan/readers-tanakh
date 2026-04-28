@@ -5,18 +5,13 @@ lemor
 
 20:2
 daber | el | benei | Yisra'el
-lemor
-tenu | lakhem | et | arei | hamiklat
+lemor | tenu | lakhem | et | arei | hamiklat
 asher | dibarti | aleikhem
 beyad | Mosheh
 
 20:3
-lanus | shamah | rotzeach
-makeh | nefesh | bishgagah
-bivli | da'at
-vehayu | lakhem | lemiklat
-migo'el
-hadam
+lanus | shamah | rotzeach | makeh | nefesh | bishgagah
+bivli | da'at | vehayu | lakhem | lemiklat | migo'el | hadam
 
 20:4
 venas | el | achat | mehe'arim | ha'eleh | ve'amad | petach | sha'ar | ha'ir
@@ -29,8 +24,7 @@ veyashav | imam
 20:5
 vekhi | yirdof | go'el | hadam | acharav
 velo | yasgiru | et | harotzeach
-beyado
-ki | vivli | da'at | hikah | et | re'ehu
+beyado | ki | vivli | da'at | hikah | et | re'ehu
 velo | sone | hu | lo
 mitemol | shilshom
 
@@ -46,23 +40,19 @@ asher | nas | misham
 20:7
 vaiyakdishu | et | Kedesh | Bagalil | behar | Naftali
 ve'et | Shekhem
-behar | Efrayim
-ve'et | Kiryat | Arba | hi | Chevron
+behar | Efrayim | ve'et | Kiryat | Arba | hi | Chevron
 behar | Yehudah
 
 20:8
 ume'ever | Leyarden | Yericho | mizrachah
 natenu | et | Betzer | bamidbar | bamishor
-mimateh | Re'uven
-ve'et | Ramot | Bagil'ad | mimateh | Gad
+mimateh | Re'uven | ve'et | Ramot | Bagil'ad | mimateh | Gad
 ve'et | Galon | Babashan
 mimateh | Menasheh
 
 20:9
 eleh | hayu | arei | hamu'adah | lekhol | benei | Yisra'el | velager | hagar | betokham
-lanus | shamah
-kol | makeh | nefesh
-bishgagah
-velo | yamut | beyad | go'el | hadam
+lanus | shamah | kol | makeh | nefesh
+bishgagah | velo | yamut | beyad | go'el | hadam
 ad | amedo
 lifnei | ha'edah

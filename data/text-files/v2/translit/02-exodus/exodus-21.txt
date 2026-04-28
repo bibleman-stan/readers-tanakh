@@ -4,17 +4,14 @@ asher | tasim
 lifneihem
 
 21:2
-ki | tikneh | eved | ivri
-shesh | shanim
-ya'avod
+ki | tikneh | eved | ivri | shesh | shanim | ya'avod
 uvashevi'it
 yetze | lachafeshi
 chinam
 
 21:3
 im | begapo | yavo
-begapo | yetze
-im | ba'al | ishah | hu
+begapo | yetze | im | ba'al | ishah | hu
 veyatze'ah | ishto
 imo
 
@@ -31,8 +28,7 @@ ve'im | amor | yomar | ha'eved
 ahavti | et | adoni
 et | ishti
 ve'et | banai
-lo | etze
-chafeshi
+lo | etze | chafeshi
 
 21:6
 vehigisho | adonav | el | ha'elohim
@@ -45,21 +41,17 @@ le'olam
 
 21:7
 vekhi | yimkor | ish | et | bito
-le'amah
-lo | tetze
-ketzet | ha'avadim
+le'amah | lo | tetze | ketzet | ha'avadim
 
 21:8
 im | ra'ah | be'einei | adoneiha | asher | lo | ye'adah
 vehefdah
-le'am | nakheri | lo | yimshol | lemakherah
-bevigdov | vah
+le'am | nakheri | lo | yimshol | lemakherah | bevigdov | vah
 
 21:9
 ve'im | livno
 yi'adenah
-kemishpat | habanot
-ya'aseh | lah
+kemishpat | habanot | ya'aseh | lah
 
 21:10
 im | acheret
@@ -69,14 +61,11 @@ lo | yigra
 
 21:11
 ve'im | shelash | eleh
-lo | ya'aseh
-lah
-veyatze'ah | chinam
+lo | ya'aseh | lah | veyatze'ah | chinam
 ein | kasef
 
 21:12
-makeh | ish | vamet
-mot | yumat
+makeh | ish | vamet | mot | yumat
 
 21:13
 va'asher | lo | tzadah
@@ -88,10 +77,7 @@ shamah
 
 21:14
 vekhi | yazid | ish | al | re'ehu
-leharego | ve'aremah
-me'im | mizbechi
-tikachenu
-lamut
+leharego | ve'aremah | me'im | mizbechi | tikachenu | lamut
 
 21:15
 umakeh | aviv | ve'imo
@@ -108,9 +94,7 @@ mot | yumat
 21:18
 vekhi | yerivun | anashim
 vehikah | ish | et | re'ehu
-be'even
-o | ve'egrof
-velo | yamut
+be'even | o | ve'egrof | velo | yamut
 venafal | lemishkav
 
 21:19
@@ -122,16 +106,12 @@ verapo | yerape
 21:20
 vekhi | yakeh | ish | et | avdo | o | et | amato | bashevet
 umet
-tachat | yado
-nakom
-yinakem
+tachat | yado | nakom | yinakem
 
 21:21
 akh | im | yom | o | yomayim
 ya'amod
-lo | yukam
-ki | khaspo
-hu
+lo | yukam | ki | khaspo | hu
 
 21:22
 vekhi | yinatzu | anashim | venagefu | ishah | harah | veyatze'u | yeladeiha
@@ -150,29 +130,22 @@ tachat | nafesh
 21:24
 ayin | tachat | ayin
 shen
-tachat | shen
-yad | tachat | yad
-regel
+tachat | shen | yad | tachat | yad | regel
 tachat | ragel
 
 21:25
-keviyah | tachat | keviyah
-petza
-tachat | patza
-chaburah
-tachat | chaburah
+keviyah | tachat | keviyah | petza
+tachat | patza | chaburah | tachat | chaburah
 
 21:26
 vekhi | yakeh | ish | et | ein | avdo | ov | et | ein | amato
 veshichatah
-lachafeshi | yeshallechenu
-tachat | eino
+lachafeshi | yeshallechenu | tachat | eino
 
 21:27
 ve'im | shen | avdo | ov | shen | amato
 yapil
-lachafeshi | yeshallechenu
-tachat | shino
+lachafeshi | yeshallechenu | tachat | shino
 
 21:28
 vekhi | yigach | shor | et | ish | o | et | ishah
@@ -193,20 +166,17 @@ yumat
 im | kofer
 yushat | alav
 venatan | pidyon | nafsho
-kekhol | asher | yushat
-alav
+kekhol | asher | yushat | alav
 
 21:31
 ov | ven | yigach
 ov | vat | yigach
-kamishpat | hazeh
-ye'aseh | lo
+kamishpat | hazeh | ye'aseh | lo
 
 21:32
 im | eved | yigach | hashor
 o | amah
-kesef | sheloshim | shekalim | yiten | ladonav
-vehashor
+kesef | sheloshim | shekalim | yiten | ladonav | vehashor
 yisakel
 
 21:33
@@ -216,9 +186,7 @@ venafal | shamah | shor
 o | chamor
 
 21:34
-ba'al | habor | yeshalem
-kesef
-yashiv | liv'alav
+ba'al | habor | yeshalem | kesef | yashiv | liv'alav
 vehamet
 yihyeh | lo
 
@@ -232,14 +200,12 @@ yechetzun
 21:36
 o | Noda | ki | shor | nagach | hu | mitemol | shilshom
 velo | yishmerenu
-be'alav
-shalem | yeshalem | shor | tachat | hashor
+be'alav | shalem | yeshalem | shor | tachat | hashor
 vehamet
 yihyeh | lo
 
 21:37
-ki | yignov | ish | shor | ov | seh
-utevacho
+ki | yignov | ish | shor | ov | seh | utevacho
 o | mekharo
 chamishah | vakar | yeshalem | tachat | hashor
 ve'arba | tzon

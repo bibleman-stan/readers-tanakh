@@ -16,29 +16,22 @@ chamishim | amot
 neged | ha'esrim | asher | lechatzer | hapenimi
 veneged | ritzfah
 asher
-lechatzer | hachitzonah
-atik | el | penei | atik
-bashelishim
+lechatzer | hachitzonah | atik | el | penei | atik | bashelishim
 
 42:4
 velifnei | haleshakhot | mahalakh | eser | amot | rochav | el | hapenimit
 derekh
-amah | echat
-ufitcheihem
+amah | echat | ufitcheihem
 latzafon
 
 42:5
 vehaleshakhot | ha'elyonot
 ketzurot
-ki | yokhlu | atikim | mehenah | mehatachtonot | umehatikhonot
-binyan
+ki | yokhlu | atikim | mehenah | mehatachtonot | umehatikhonot | binyan
 
 42:6
-ki | meshulashot | henah
-ve'ein | lahen | amudim
-ke'amudei
-hachatzerot
-al | ken | Ne'etzal | mehatachtonot | umehatikhonot
+ki | meshulashot | henah | ve'ein | lahen | amudim
+ke'amudei | hachatzerot | al | ken | Ne'etzal | mehatachtonot | umehatikhonot
 meha'aretz
 
 42:7
@@ -58,9 +51,7 @@ me'ah | amah
 umitachatah
 haleshakhot | ha'eleh
 hamavo | mehakadim
-bevo'o | lahenah
-mehechatzer
-hachitzonah
+bevo'o | lahenah | mehechatzer | hachitzonah
 
 42:10
 berochav | geder | hechatzer | derekh | hakadim | el | penei | hagizrah | ve'el | penei | habinyan
@@ -68,18 +59,13 @@ leshakhot
 
 42:11
 vederekh | lifneihem
-kemar'eh | haleshakhot | asher | derekh | hatzafon
-ke'arekan
-ken | racheban
-vekhol | motza'eihen
-ukhemishpeteihen
-ukhefitcheihen
+kemar'eh | haleshakhot | asher | derekh | hatzafon | ke'arekan
+ken | racheban | vekhol | motza'eihen | ukhemishpeteihen | ukhefitcheihen
 
 42:12
 ukhefitchei | haleshakhot | asher | derekh | hadarom
 petach
-berosh | darekh
-derekh | bifnei | hagederet | haginah
+berosh | darekh | derekh | bifnei | hagederet | haginah
 derekh | hakadim
 bevo'an
 
@@ -88,15 +74,12 @@ vaiyomer | elai | lishkhot | hatzafon | lishkhot | hadarom | asher | el | penei 
 henah | lishkhot | hakodesh | asher | yokhelu | sham | hakohanim | asher | kerovim | Layahweh
 kadeshei | hakodashim
 sham | yanichu | kadeshei | hakodashim | vehaminchah | vehachatat | veha'asham
-ki | hamakom
-kadosh
+ki | hamakom | kadosh
 
 42:14
 bevo'am | hakohanim | velo | yetze'u | mehakodesh | el | hechatzer | hachitzonah
 vesham | yanichu | vigdeihem | asher | yesharetu | vahen
-ki | kodesh | henah
-veyilbeshu | begadim | acherim
-vekarevu
+ki | kodesh | henah | veyilbeshu | begadim | acherim | vekarevu
 el | asher | la'am
 
 42:15
@@ -108,33 +91,25 @@ umedado
 saviv | saviv
 
 42:16
-madad | ruach | hakadim
-bikneh | hamidah
+madad | ruach | hakadim | bikneh | hamidah
 chamesh | emot | kanim | bikneh | hamidah
 saviv
 
 42:17
-madad
-ruach | hatzafon
+madad | ruach | hatzafon
 chamesh | me'ot | kanim | bikneh | hamidah
 saviv
 
 42:18
 et | ruach | hadarom
-madad
-chamesh | me'ot | kanim
-bikneh | hamidah
+madad | chamesh | me'ot | kanim | bikneh | hamidah
 
 42:19
 savav
 el | ruach | haiyam
-madad | chamesh | me'ot | kanim
-bikneh | hamidah
+madad | chamesh | me'ot | kanim | bikneh | hamidah
 
 42:20
-le'arba | ruchot | medado | chomah | lo | saviv | saviv | orekh | chamesh | me'ot
-verochav
-chamesh | me'ot
-lehavdil
-bein | hakodesh
-lechol
+le'arba | ruchot | medado | chomah | lo | saviv | saviv | orekh | chamesh | me'ot | verochav
+chamesh | me'ot | lehavdil
+bein | hakodesh | lechol

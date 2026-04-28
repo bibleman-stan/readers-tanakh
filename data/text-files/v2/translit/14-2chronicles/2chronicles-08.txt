@@ -16,9 +16,7 @@ aleiha
 
 8:4
 vaiyiven | et | Tadmor
-bamidbar
-ve'et | kol | arei | hamiskenot
-asher | banah
+bamidbar | ve'et | kol | arei | hamiskenot | asher | banah
 Bachamat
 
 8:5
@@ -46,15 +44,13 @@ hemah
 8:8
 min | beneihem | asher | Notru | achareihem | ba'aretz
 asher | lo | khilum
-benei | Yisra'el
-vaiya'alem | Shelomoh | lemas
+benei | Yisra'el | vaiya'alem | Shelomoh | lemas
 ad | haiyom | hazeh
 
 8:9
 umin | benei | Yisra'el
 asher | lo | natan | Shelomoh | la'avadim
-limlakhto
-ki | hemah | anshei | milchamah | vesarei | shalishav
+limlakhto | ki | hemah | anshei | milchamah | vesarei | shalishav
 vesarei | rikhbo
 ufarashav
 
@@ -66,36 +62,26 @@ ba'am
 
 8:11
 ve'et | bat | par'oh | he'elah | Shelomoh | me'ir | David
-labayit
-asher | banah | lah
+labayit | asher | banah | lah
 ki | amar | lo | teshev | ishah | li | beveit | David | melekh | Yisra'el
-ki | kodesh | hemah
-asher | ba'ah | aleihem
-aron | Yahweh
+ki | kodesh | hemah | asher | ba'ah | aleihem | aron | Yahweh
 
 8:12
 az | he'elah | Shelomoh | olot
-Layahweh
-al | mizbach | Yahweh
-asher | banah
+Layahweh | al | mizbach | Yahweh | asher | banah
 lifnei | ha'ulam
 
 8:13
 uvidvar | yom | beyom | leha'alot | kemitzvat | Mosheh
-lashabatot | velechodashim
-velamo'adot
-shaloosh | pe'amim
-bashanah
-bechag | hamatzot | uvechag | hashavu'ot
+lashabatot | velechodashim | velamo'adot | shaloosh | pe'amim
+bashanah | bechag | hamatzot | uvechag | hashavu'ot
 uvechag | hasukot
 
 8:14
 vaiya'amed | kemishpat | David | aviv | et | machlekot | hakohanim | al | avodatam | vehalviyim | al | mishmerotom | lehalel | ulesharet | neged | hakohanim | lidvar | yom | beyomo
 vehasho'arim | bemachlekotam
-lesha'ar | vasha'ar
-ki | khen
-mitzvat
-David | ish | ha'elohim
+lesha'ar | vasha'ar | ki | khen
+mitzvat | David | ish | ha'elohim
 
 8:15
 velo | saru | mitzvat | hamelekh | al | hakohanim | vehalviyim | lekhol | davar
@@ -117,6 +103,4 @@ vaiyishlach | lo | Churam | beyad | avadav | oniyot | va'avadim | yod'ei | yam
 vaiyavo'u | im | avdei | Shelomoh | Ofirah
 vaiyikchu | misham
 arba | me'ot | vachamishim
-kikar | zahav
-vaiyavi'u
-el | hamelekh | Shelomoh
+kikar | zahav | vaiyavi'u | el | hamelekh | Shelomoh

@@ -1,14 +1,10 @@
 1:1
-masa | devar | Yahweh
-el | Yisra'el
-beyad
-Mal'akhi
+masa | devar | Yahweh | el | Yisra'el | beyad | Mal'akhi
 
 1:2
 ahavti | etkhem | amar | Yahweh
 va'amartem
-bamah | ahavtanu
-halo | ach | Esav | Leya'ako | ne'um | Yahweh
+bamah | ahavtanu | halo | ach | Esav | Leya'ako | ne'um | Yahweh
 va'ohav
 et | Ya'ako
 
@@ -21,8 +17,7 @@ letanot | midbar
 
 1:4
 ki | tomar | Edom | rushashnu | venashuv | venivneh | choravot
-koh | amar | Yahweh | tzeva'ot
-hemah | yivnu
+koh | amar | Yahweh | tzeva'ot | hemah | yivnu
 va'ani | eheros
 vekare'u | lahem | gevul | rish'ah
 veha'am | asher | za'am | Yahweh
@@ -35,19 +30,14 @@ ve'atem | tomeru | yigdal | Yahweh
 me'al | ligvul | Yisra'el
 
 1:6
-ben | yekhabed | av
-ve'eved | adonav
+ben | yekhabed | av | ve'eved | adonav
 ve'im | av | ani | aiyeh | khevodi | ve'im | adonim | ani | aiyeh | mora'i | amar | Yahweh | tzeva'ot | lakhem | hakohanim | bozei | shemi
 va'amartem
-bameh | vazinu
-et | shemekha
+bameh | vazinu | et | shemekha
 
 1:7
-magishim | al | mizbechi | lechem | mego'al
-va'amartem
-bameh | ge'alnukha
-be'emarekhem
-shulchan | Yahweh
+magishim | al | mizbechi | lechem | mego'al | va'amartem
+bameh | ge'alnukha | be'emarekhem | shulchan | Yahweh
 nivzeh | hu
 
 1:8
@@ -61,14 +51,12 @@ Yahweh | tzeva'ot
 1:9
 ve'atah | chalu | na | fenei | el
 vichanenu
-miyedkhem | hayetah | zot
-hayisa | mikem | panim
+miyedkhem | hayetah | zot | hayisa | mikem | panim
 amar
 Yahweh | tzeva'ot
 
 1:10
-mi | gam | bakhem | veyisgor | delatayim
-velo | ta'iru | mizbechi
+mi | gam | bakhem | veyisgor | delatayim | velo | ta'iru | mizbechi
 chinam
 ein | li | chefetz | bakhem | amar | Yahweh | tzeva'ot
 uminchah
@@ -78,15 +66,12 @@ lo | ertzeh | miyedkhem
 ki | mimizrach | shemesh | ve'ad | mevo'o | gadol | shemi | bagoyim
 uvekhol | makom | muktar | mugash | lishmi
 uminchah | tehorah
-ki | gadol | shemi | bagoyim
-amar
-Yahweh | tzeva'ot
+ki | gadol | shemi | bagoyim | amar | Yahweh | tzeva'ot
 
 1:12
 ve'atem
 mechalelim | oto
-be'emarekhem | shulchan | Adonai | mego'al | hu
-venivo
+be'emarekhem | shulchan | Adonai | mego'al | hu | venivo
 nivzeh | akhelo
 
 1:13
@@ -98,8 +83,7 @@ ha'ertzeh | otah | miyedkhem
 amar | Yahweh
 
 1:14
-ve'arur | nokhel | veyesh | be'edro | zakhar
-venoder | vezoveach | mashechat
+ve'arur | nokhel | veyesh | be'edro | zakhar | venoder | vezoveach | mashechat
 Ladonai
 ki | melekh | gadol | ani | amar | Yahweh | tzeva'ot
 ushemi

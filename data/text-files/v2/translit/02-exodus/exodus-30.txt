@@ -1,15 +1,12 @@
 30:1
 ve'asita | mizbeach
-miktar | ketoret
-atzei | shitim
-ta'aseh | oto
+miktar | ketoret | atzei | shitim | ta'aseh | oto
 
 30:2
 amah | areko | ve'amah | rachebo | ravua | yihyeh
 ve'amatayim
 komato
-mimenu
-karnotav
+mimenu | karnotav
 
 30:3
 vetzipita | oto | zahav | tahor | et | gago | ve'et | kirotav | saviv | ve'et | karnotav
@@ -21,8 +18,7 @@ ushetei | tabe'ot | zahav | ta'aseh | lo | mitachat | lezero | al | shetei | tza
 ta'aseh
 al | shenei | tzidav
 vehayah | levatim | levadim
-laset | oto
-bahemah
+laset | oto | bahemah
 
 30:5
 ve'asita | et | habadim
@@ -41,8 +37,7 @@ shamah
 30:7
 vehiktir | alav | Aharon
 ketoret | samim
-baboker | baboker | beheitivo | et | hanerot
-yaktirenah
+baboker | baboker | beheitivo | et | hanerot | yaktirenah
 
 30:8
 uveha'alot | Aharon | et | hanerot | bein | ha'arbayim
@@ -51,16 +46,13 @@ ketoret | tamid | lifnei | Yahweh
 ledoroteikhem
 
 30:9
-lo | ta'alu | alav | ketoret | zarah
-ve'olah | uminchah
+lo | ta'alu | alav | ketoret | zarah | ve'olah | uminchah
 venesekh
-lo | tisekhu
-alav
+lo | tisekhu | alav
 
 30:10
 vekhiper | Aharon | al | karnotav
-achat
-bashanah
+achat | bashanah
 midam | chatat | hakipurim | achat | bashanah | yekhaper | alav | ledoroteikhem
 kodesh | kadashim | hu
 Layahweh
@@ -72,32 +64,24 @@ el | Mosheh | lemor
 30:12
 ki | tisa | et | rosh | benei | Yisra'el | lifkudeihem
 venatenu | ish | kofer | nafsho | Layahweh
-bifkod | otam
-velo | yihyeh | vahem | negef
+bifkod | otam | velo | yihyeh | vahem | negef
 bifkod | otam
 
 30:13
 zeh | yitenu | kol | ha'over | al | hapekudim
-machatzit | hashekel
-beshekel | hakodesh
+machatzit | hashekel | beshekel | hakodesh
 esrim | gerah | hashekel
-machatzit | hashekel
-terumah
-Layahweh
+machatzit | hashekel | terumah | Layahweh
 
 30:14
-kol | ha'over | al | hapekudim
-miben | esrim | shanah
+kol | ha'over | al | hapekudim | miben | esrim | shanah
 vama'elah
 yiten
 terumat | Yahweh
 
 30:15
 he'ashir | lo | yarbeh | vehadal | lo | yam'it
-mimachatzit
-hashakel
-latet | et | terumat | Yahweh
-lekhaper
+mimachatzit | hashakel | latet | et | terumat | Yahweh | lekhaper
 al | nafshoteikhem
 
 30:16
@@ -106,8 +90,7 @@ venatata | oto
 al | avodat
 ohel | mo'ed
 vehayah | livnei | Yisra'el | lezikaron | lifnei | Yahweh
-lekhaper
-al | nafshoteikhem
+lekhaper | al | nafshoteikhem
 
 30:17
 vaydaber | Yahweh
@@ -122,16 +105,12 @@ mayim
 
 30:19
 verachatzu | Aharon | uvanav
-mimenu
-et | yedeihem
-ve'et | ragleihem
+mimenu | et | yedeihem | ve'et | ragleihem
 
 30:20
-bevo'am | el | ohel | mo'ed | yirchatzu | mayim
-velo | yamutu
+bevo'am | el | ohel | mo'ed | yirchatzu | mayim | velo | yamutu
 o | vegishtam | el | hamizbeach | lesharet
-lehaktir | isheh
-Layahweh
+lehaktir | isheh | Layahweh
 
 30:21
 verachatzu | yedeihem | veragleihem
@@ -145,25 +124,21 @@ el | Mosheh | lemor
 
 30:23
 ve'atah | kach | lekha | besamim | rosh
-mor | deror | chamesh | me'ot
-vekinemon | besem | machatzito
+mor | deror | chamesh | me'ot | vekinemon | besem | machatzito
 chamishim | umatayim
 ukeneh | vosem
 chamishim | umatayim
 
 30:24
 vekidah
-chamesh | me'ot
-beshekel | hakodesh
+chamesh | me'ot | beshekel | hakodesh
 veshemen | zayit
 hin
 
 30:25
 ve'asita | oto | shemen | mishchat | kodesh
 rokach | mirkachat
-ma'aseh | rokeach
-shemen | mishchat | kodesh
-yihyeh
+ma'aseh | rokeach | shemen | mishchat | kodesh | yihyeh
 
 30:26
 umashachta | vo
@@ -188,8 +163,7 @@ ve'et | kano
 vekidashta | otam
 vehayu
 kodesh | kadashim
-kol | hanogea | bahem
-yikdash
+kol | hanogea | bahem | yikdash
 
 30:30
 ve'et | Aharon | ve'et | banav
@@ -206,10 +180,7 @@ ledoroteikhem
 30:32
 al | besar | adam | lo | yisakh
 uvematkunto
-lo | ta'asu
-kamohu
-kodesh | hu
-kodesh
+lo | ta'asu | kamohu | kodesh | hu | kodesh
 yihyeh | lakhem
 
 30:33
@@ -223,15 +194,12 @@ me'amav
 vaiyomer | Yahweh | el | Mosheh | kach | lekha | samim | nataf | ushechelet | vechelbenah
 samim
 ulevonah | zakah
-bad | bevad
-yihyeh
+bad | bevad | yihyeh
 
 30:35
 ve'asita | otah | ketoret
 rokach
-ma'aseh | rokeach
-memulach
-tahor | kodesh
+ma'aseh | rokeach | memulach | tahor | kodesh
 
 30:36
 veshachakta | mimenah | hadek
@@ -243,14 +211,9 @@ tihyeh | lakhem
 
 30:37
 vehaketoret | asher | ta'aseh
-bematkuntah
-lo | ta'asu
-lakhem
-kodesh | tihyeh | lekha
-Layahweh
+bematkuntah | lo | ta'asu
+lakhem | kodesh | tihyeh | lekha | Layahweh
 
 30:38
 ish | asher | ya'aseh | khamoha
-lehariach | bah
-venikhrat
-me'amav
+lehariach | bah | venikhrat | me'amav

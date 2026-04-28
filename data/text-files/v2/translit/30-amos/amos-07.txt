@@ -1,25 +1,18 @@
 7:1
 koh | hir'ani | Adonai | Yahweh
 vehineh | yotzer | goyai
-bitchilat
-alot | halakesh
-vehineh | lekesh
-achar
+bitchilat | alot | halakesh | vehineh | lekesh | achar
 gizei | hamelekh
 
 7:2
 vehayah | im | kilah | le'ekhol | et | esev | ha'aretz
 va'omar | Adonai | Yahweh | selach | na
-mi | yakum
-Ya'ako
-ki | katon
-hu
+mi | yakum | Ya'ako | ki | katon | hu
 
 7:3
 Nicham | Yahweh
 al | zot
-lo | tihyeh
-amar | Yahweh
+lo | tihyeh | amar | Yahweh
 
 7:4
 koh | hir'ani | Adonai | Yahweh
@@ -31,10 +24,7 @@ et | hachelek
 
 7:5
 va'omar | Adonai | Yahweh | chadal | na
-mi | yakum
-Ya'ako
-ki | katon
-hu
+mi | yakum | Ya'ako | ki | katon | hu
 
 7:6
 Nicham | Yahweh
@@ -44,8 +34,7 @@ amar
 Adonai | Yahweh
 
 7:7
-koh | hir'ani
-vehineh | Adonai | nitzav
+koh | hir'ani | vehineh | Adonai | nitzav
 al | chomat | anakh
 uveyado
 anakh
@@ -55,8 +44,7 @@ vaiyomer | Yahweh | elai | mah | atah | ro'eh | Amos
 va'omar
 anakh
 vaiyomer | Adonai | hini | sam | anokh | bekerev | ami | Yisra'el
-lo | osif | od
-avor | lo
+lo | osif | od | avor | lo
 
 7:9
 venashamu | bamot | Yischak
@@ -70,14 +58,10 @@ vaiyishlach | Amatzyah | kohen | Beit | El
 el | Yarave'am | melekh | Yisra'el
 lemor
 kashar | aleikha | Amos | bekerev | beit | Yisra'el
-lo | tukhal | ha'aretz
-lehakhil
-et | kol | devarav
+lo | tukhal | ha'aretz | lehakhil | et | kol | devarav
 
 7:11
-ki | khoh | amar | Amos
-bacherev
-yamut | Yarave'am
+ki | khoh | amar | Amos | bacherev | yamut | Yarave'am
 Veyisra'el
 galoh | yigleh
 me'al | admato
@@ -85,38 +69,27 @@ me'al | admato
 7:12
 vaiyomer | Amatzyah | el | Amos
 chozeh
-lekh | berach | lekha
-el | eretz | Yehudah
-ve'ekhol | sham | lechem
+lekh | berach | lekha | el | eretz | Yehudah | ve'ekhol | sham | lechem
 vesham
 tinave
 
 7:13
 Uveit | El
-lo | tosif | od
-lehinave
-ki | mikdash | melekh | hu
-uveit | mamlakhah
-hu
+lo | tosif | od | lehinave
+ki | mikdash | melekh | hu | uveit | mamlakhah | hu
 
 7:14
 vaiya'an | Amos | vaiyomer | el | Amatzyah
-lo | navi | anokhi
-velo | ven | navi
-anokhi
-ki | voker | anokhi
-uvoles | shikmim
+lo | navi | anokhi | velo | ven | navi | anokhi
+ki | voker | anokhi | uvoles | shikmim
 
 7:15
 vaiyikacheni | Yahweh
-me'acharei | hatzon
-vaiyomer | elai | Yahweh
-lekh | hinave
-el | ami | Yisra'el
+me'acharei | hatzon | vaiyomer | elai | Yahweh
+lekh | hinave | el | ami | Yisra'el
 
 7:16
-ve'atah
-shema | devar | Yahweh
+ve'atah | shema | devar | Yahweh
 atah | omer | lo | tinave | al | Yisra'el
 velo | tatif
 al | beit | Yischak
@@ -124,8 +97,7 @@ al | beit | Yischak
 7:17
 lakhen | koh | amar | Yahweh | ishtekha | ba'ir | tizneh | uvaneikha | uvenoteikha | bacherev | yipolu
 ve'admatekha
-bachevel | techulak
-ve'atah | al | adamah | teme'ah | tamut
+bachevel | techulak | ve'atah | al | adamah | teme'ah | tamut
 Veyisra'el
 galoh | yigleh
 me'al | admato
