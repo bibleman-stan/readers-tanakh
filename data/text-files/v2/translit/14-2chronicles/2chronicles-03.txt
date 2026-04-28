@@ -1,8 +1,11 @@
 3:1
 vaiyachel | Shelomoh | livnot | et | beit | Yahweh | Birushalim
-behar | Hamoriyah | asher | Nir'ah
-Ledavid | avihu | asher | hekhin | bimkom | David
-begoren | Arenan | hayvusi
+behar | Hamoriyah
+asher | Nir'ah
+Ledavid | avihu
+asher | hekhin | bimkom | David
+begoren
+Arenan | hayvusi
 
 3:2
 vaiyachel | livnot | bachodesh | hasheni | basheni
@@ -10,13 +13,16 @@ bishnat | arba | lemalkhuto
 
 3:3
 ve'eleh | husad | Shelomoh
-livnot | et | beit | ha'elohim
+livnot
+et | beit | ha'elohim
 ha'orekh | amot | bamidah | harishonah | amot | shishim | verochav
 amot | esrim
 
 3:4
 veha'ulam | asher | al | penei | ha'orekh | al | penei | rochav | habayit | amot | esrim | vehagoah
-me'ah | ve'esrim | vaytzapehu | mipenimah | zahav | tahor
+me'ah | ve'esrim
+vaytzapehu | mipenimah
+zahav | tahor
 
 3:5
 ve'et | habayit | hagadol | chipah | etz | beroshim
@@ -26,7 +32,9 @@ vesharsherot
 
 3:6
 vaytzaf | et | habayit | even | yekarah
-letif'aret | vehazahav | zehav | Parvayim
+letif'aret
+vehazahav
+zehav | Parvayim
 
 3:7
 vaychaf | et | habayit | hakorot | hasipim | vekirotav | vedaltotav
@@ -39,7 +47,8 @@ vaiya'as | et | beit | kodesh | hakodashim
 areko | al | penei | rochav | habayit | amot | esrim | verachebo
 amot | esrim
 vaychapehu | zahav | tov
-lekhikarim | shesh | me'ot
+lekhikarim
+shesh | me'ot
 
 3:9
 umishkal | lemismerot | lishkalim
@@ -58,15 +67,19 @@ vekhanfei | hakeruvim
 arekam
 amot | esrim | kenaf | ha'echad | le'amot | chamesh | maga'at | lekir | habayit
 vehakanaf | ha'acheret | amot | chamesh | magia
-likhnaf | hakeruv | ha'acher
+likhnaf
+hakeruv | ha'acher
 
 3:12
 ukhenaf | hakeruv | ha'echad | amot | chamesh | magia
-lekir | habayit | vehakanaf | ha'acheret | amot | chamesh | devekah
-likhnaf | hakeruv | ha'acher
+lekir | habayit
+vehakanaf | ha'acheret | amot | chamesh | devekah
+likhnaf
+hakeruv | ha'acher
 
 3:13
-kanfei | hakeruvim | ha'eleh | poresim
+kanfei | hakeruvim | ha'eleh
+poresim
 amot | esrim | vehem | omedim | al | ragleihem
 ufeneihem | labayit
 
@@ -97,5 +110,4 @@ vaiyakem | et | ha'amudim | al | penei | haheikhal
 echad | miyamin
 ve'echad | mehasemol
 vaiyikra | shem | haymini | Yakhin
-veshem | hasemali
-Bo'az
+veshem | hasemali | Bo'az

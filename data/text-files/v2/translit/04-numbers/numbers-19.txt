@@ -20,13 +20,15 @@ veshachat | otah
 lefanav
 
 19:4
-velakach | El'azar | hakohen | midamah
-be'etzba'o | vehizah | el | nokhach | penei | ohel | mo'ed | midamah
+velakach | El'azar | hakohen | midamah | be'etzba'o
+vehizah | el | nokhach | penei | ohel | mo'ed | midamah
 sheva | pe'amim
 
 19:5
-vesaraf | et | haparah
-le'einav | et | orah | ve'et | besarah | ve'et | damah | al | pirshah | yisrof
+vesaraf | et | haparah | le'einav
+et | orah | ve'et | besarah | ve'et | damah
+al | pirshah
+yisrof
 
 19:6
 velakach | hakohen | etz | erez | ve'ezov
@@ -45,13 +47,13 @@ ad | ha'arev
 19:8
 vehasoref | otah
 yekhabes | begadav | bamayim
-verachatz | besaro
-bamayim | vetame | ad | ha'arev
+verachatz | besaro | bamayim
+vetame
+ad | ha'arev
 
 19:9
 ve'asaf | ish | tahor | et | efer | haparah
-vehiniach | michutz | lamachaneh
-bemakom | tahor
+vehiniach | michutz | lamachaneh | bemakom | tahor
 vehayetah | la'adat | benei | Yisra'el | lemishmeret | lemei | nidah
 chatat | hi
 
@@ -63,27 +65,25 @@ vehayetah | livnei | Yisra'el | velager | hagar | betokham
 lechukat | olam
 
 19:11
-hanogea | bemet
-lekhol | nefesh | adam | vetame | shiv'at | yamim
+hanogea | bemet | lekhol | nefesh | adam
+vetame
+shiv'at | yamim
 
 19:12
 hu | yitchata | vo | baiyom | hashelishi | uvaiyom | hashevi'i
 yithar
-ve'im | lo | yitchata | baiyom | hashelishi | uvaiyom | hashevi'i
-lo | yithar
+ve'im | lo | yitchata | baiyom | hashelishi | uvaiyom | hashevi'i | lo | yithar
 
 19:13
 kal | hanogea | bemet | benefesh | ha'adam | asher | yamut | velo | yitchata | et | mishkan | Yahweh | time
-venikhretah | hanefesh | hahiv
-Miyisra'el
+venikhretah | hanefesh | hahiv | Miyisra'el
 ki | mei | nidah | lo | zorak | alav | tame | yihyeh
 od
 tum'ato | vo
 
 19:14
 zot | hatorah
-adam
-ki | yamut | be'ohel | kol | haba | el | ha'ohel | vekhol | asher | ba'ohel
+adam | ki | yamut | be'ohel | kol | haba | el | ha'ohel | vekhol | asher | ba'ohel
 yitma
 shiv'at | yamim
 
@@ -102,8 +102,8 @@ yitma
 shiv'at | yamim
 
 19:17
-velakechu | latame
-me'afar | serefat | hachatat
+velakechu | latame | me'afar
+serefat | hachatat
 venatan | alav | mayim | chaiyim
 el | keli
 
@@ -117,22 +117,22 @@ o | vamet
 o | vakaver
 
 19:19
-vehizah | hatahor | al | hatame
-baiyom | hashelishi | uvaiyom | hashevi'i
+vehizah | hatahor | al | hatame | baiyom | hashelishi
+uvaiyom | hashevi'i
 vechite'o | baiyom | hashevi'i
 vekhibes | begadav | verachatz | bamayim
 vetaher | ba'arev
 
 19:20
 ve'ish | asher | yitma | velo | yitchata
-venikhretah | hanefesh | hahiv
-mitokh | hakahal
+venikhretah | hanefesh | hahiv | mitokh | hakahal
 ki | et | mikdash | Yahweh | time | mei | nidah | lo | zorak | alav
 tame | hu
 
 19:21
 vehayetah | lahem
-lechukat | olam | umazeh | mei | hanidah | yekhabes | begadav
+lechukat | olam
+umazeh | mei | hanidah | yekhabes | begadav
 vehanogea | bemei | hanidah
 yitma
 ad | ha'arev

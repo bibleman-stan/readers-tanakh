@@ -1,7 +1,7 @@
 7:1
 vaiyomer | Yahweh | Lenoach
-bo | atah | vekhol | beitekha | el | hatevah
-ki | otekha | ra'iti | tzadik | lefanai | bador | hazeh
+bo | atah | vekhol | beitekha
+el | hatevah | ki | otekha | ra'iti | tzadik | lefanai | bador | hazeh
 
 7:2
 mikol | habehemah | hatehorah | tikach | lekha | shiv'ah | shiv'ah | ish | ve'ishto
@@ -16,26 +16,32 @@ lechaiyot | zera | al | penei | khol | ha'aretz
 ki | leyamim | od | shiv'ah | anokhi | mamtir | al | ha'aretz
 arba'im | yom
 ve'arba'im
-layelah | umachiti | et | kol | haykum | asher | asiti
-me'al | penei | ha'adamah
+layelah
+umachiti | et | kol | haykum | asher | asiti
+me'al
+penei | ha'adamah
 
 7:5
 vaiya'as
 Noach
-kekhol | asher | tzivahu | Yahweh
+kekhol | asher | tzivahu
+Yahweh
 
 7:6
-Venoach
-ben | shesh | me'ot | shanah | vehammabul | hayah
-mayim | al | ha'aretz
+Venoach | ben | shesh | me'ot | shanah
+vehammabul | hayah
+mayim
+al | ha'aretz
 
 7:7
 vaiyavo | Noach | uvanav | ve'ishto | uneshei | vanav | ito
-el | hatevah
-mipenei | mei | hamabul
+el | hatevah | mipenei | mei | hamabul
 
 7:8
-min | habehemah | hatehorah | umin | habehemah | asher | einenah | tehorah
+min | habehemah | hatehorah
+umin | habehemah
+asher | einenah
+tehorah
 umin | ha'of
 vekhol | asher | romes
 al | ha'adamah
@@ -43,16 +49,19 @@ al | ha'adamah
 7:9
 shenayim | shenayim | ba'u | el | Noach | el | hatevah
 zakhar | unekevah
-ka'asher | tzivah | elohim | et | Noach
+ka'asher | tzivah | elohim
+et | Noach
 
 7:10
 vayhi
-leshiv'at | haiyamim | umei | hamabul | hayu | al | ha'aretz
+leshiv'at | haiyamim
+umei | hamabul
+hayu
+al | ha'aretz
 
 7:11
-bishnat | shesh | me'ot | shanah | lechaiyei | Noach | bachodesh | hasheni
-beshiv'ah | asar | yom | lachodesh
-baiyom | hazeh | Nivke'u | kal | ma'yenot | tehom | rabah
+bishnat | shesh | me'ot | shanah | lechaiyei | Noach | bachodesh | hasheni | beshiv'ah | asar | yom
+lachodesh | baiyom | hazeh | Nivke'u | kal | ma'yenot | tehom | rabah
 va'arubot | hashamayim
 Niftachu
 
@@ -66,13 +75,16 @@ layelah
 7:13
 be'etzem | haiyom | hazeh | ba | Noach
 Veshem | Vecham | Vayefet
-benei | Noach | ve'eshet | Noach | usheloshet | neshei | vanav | itam
+benei | Noach
+ve'eshet | Noach | usheloshet | neshei | vanav | itam
 el | hatevah
 
 7:14
 hemah | vekhol | hachaiyah | leminah | vekhol | habehemah | leminah
 vekhol | haremes | haromes | al | ha'aretz
-leminehu | vekhol | ha'of | leminehu | kol | tzipor | kol | kanaf
+leminehu
+vekhol | ha'of | leminehu | kol
+tzipor | kol | kanaf
 
 7:15
 vaiyavo'u | el | Noach
@@ -83,7 +95,8 @@ ruach | chaiyim
 
 7:16
 vehaba'im | zakhar | unekevah | mikol | basar | ba'u
-ka'asher | tzivah | oto | elohim
+ka'asher | tzivah | oto
+elohim
 vaiyisgor | Yahweh
 ba'ado
 
@@ -91,21 +104,18 @@ ba'ado
 vayhi | hamabul | arba'im | yom
 al | ha'aretz
 vaiyirbu | hamayim | vaiyis'u | et | hatevah
-vatarom
-me'al | ha'aretz
+vatarom | me'al | ha'aretz
 
 7:18
 vaiyigberu | hamayim | vaiyirbu | me'od
 al | ha'aretz
-vatelekh | hatevah
-al | penei | hamayim
+vatelekh | hatevah | al | penei | hamayim
 
 7:19
 vehamayim | gaveru | me'od | me'od
 al | ha'aretz
 vaykhusu | kol | heharim | hagevohim
-asher | tachat
-kol | hashamayim
+asher | tachat | kol | hashamayim
 
 7:20
 chamesh | esreh | amah | milma'lah
@@ -128,7 +138,9 @@ metu
 7:23
 vaiyimach | et | kol | haykum | asher | al | penei | ha'adamah | me'adam | ad | behemah | ad | remes | ve'ad | of | hashamayim
 vaiyimachu
-min | ha'aretz | vayisha'er | akh | Noach | va'asher | ito | batevah
+min | ha'aretz
+vayisha'er | akh | Noach | va'asher | ito
+batevah
 
 7:24
 vaiyigberu | hamayim

@@ -10,11 +10,13 @@ description: |
 trigger:
   line_n_first_token:
     morphology: prep   # bound or compound prep first token
+  line_n_is_verse_start: true   # only fire on the FIRST line of the verse
+  line_n1_anywhere:
+    has_finite_verb: true       # main clause must have a verb
   combined_max_prosodic_words: 6
 
 guards:
   - poetic_register
-  - both_lines_have_finite_verb
 
 annotation_template: "Short-verse fronting paradox: fronted PP + main clause (combined {pwc} prosodic words)"
 suggested_action: MERGE

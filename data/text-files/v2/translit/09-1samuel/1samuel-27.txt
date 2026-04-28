@@ -1,18 +1,15 @@
 27:1
 vaiyomer | David | el | libo
-atah | esapeh | yom | echad
-beyad | Sha'ul
+atah | esapeh | yom | echad | beyad | Sha'ul
 ein | li | tov | ki | himalet | imalet | el | eretz | pelishtim | veno'ash | mimeni | Sha'ul | levaksheni | od | bekhol | gevul | Yisra'el
-venimlati
-miyado
+venimlati | miyado
 
 27:2
 vaiyakom | David
 vaiya'avor | hu
 veshesh | me'ot | ish
 asher | imo
-el | Akhish | ben | Ma'okh
-melekh | Gat
+el | Akhish | ben | Ma'okh | melekh | Gat
 
 27:3
 vaiyeshev | David | im | Akhish | Begat | hu | va'anashav
@@ -24,7 +21,10 @@ hakarmelit
 
 27:4
 vaiyugad | Lesha'ul
-ki | varach | David | Gat | velo | yosaf | od | levaksho
+ki | varach | David
+Gat
+velo | yosaf | od
+levaksho
 
 27:5
 vaiyomer | David | el | Akhish | im | na | matzati | chen | be'eineikha | yitenu | li | makom | be'achat | arei | hasadeh
@@ -36,19 +36,21 @@ imakh
 vaiyiten | lo | Akhish | baiyom | hahu
 et | Tziklag
 lakhen | hayetah | Tziklag | lemalkhei | Yehudah
-ad | haiyom | hazeh
+ad
+haiyom | hazeh
 
 27:7
 vayhi | mispar | haiyamim
-asher | yashav | David
-bisdeh | felishtim | yamim | ve'arba'ah | chodashim
+asher | yashav | David | bisdeh | felishtim
+yamim
+ve'arba'ah | chodashim
 
 27:8
 vaiya'al | David | va'anashav
 vaiyifshetu | el | hageshuri | vehagirzi
-veha'amalki
-ki | henah | yoshevot | ha'aretz | asher | me'olam
-bo'akha | Shurah | ve'ad | eretz | Mitzrayim
+veha'amalki | ki | henah | yoshevot | ha'aretz | asher | me'olam
+bo'akha | Shurah
+ve'ad | eretz | Mitzrayim
 
 27:9
 vehikah | David | et | ha'aretz
@@ -69,11 +71,13 @@ hakeini
 27:11
 ve'ish | ve'ishah | lo | yechaiyeh | David | lehavi | Gat | lemor
 pen | yagidu | aleinu
-lemor | koh | asah | David | vekhoh | mishpato
-kol | haiyamim | asher | yashav | bisdeh | felishtim
+lemor | koh | asah | David | vekhoh | mishpato | kol | haiyamim
+asher | yashav
+bisdeh | felishtim
 
 27:12
 vaiya'amen | Akhish
-Bedavid | lemor | hav'esh | hiv'ish | be'amo | Veyisra'el
+Bedavid | lemor
+hav'esh | hiv'ish | be'amo | Veyisra'el
 vehayah | li
 le'eved | olam

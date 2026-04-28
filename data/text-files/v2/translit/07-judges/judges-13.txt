@@ -21,23 +21,20 @@ veyaladt | ben
 ve'atah | hishameri | na
 ve'al | tishti
 yayin | veshekhar
-ve'al | tokhli
-kol | tame
+ve'al | tokhli | kol | tame
 
 13:5
 ki | hinakh | harah | veyoladt | ben | umorah | lo | ya'aleh | al | rosho
 ki | nezir | elohim | yihyeh | hana'ar | min | habaten
-vehu | yachel | lehoshia | et | Yisra'el
-miyad | pelishtim
+vehu | yachel | lehoshia | et | Yisra'el | miyad | pelishtim
 
 13:6
 vatavo | ha'ishah | vatomer | le'ishah | lemor
 ish | ha'elohim | ba | elai
-umar'ehu
-kemar'eh | mal'akh | ha'elohim | nora | me'od
+umar'ehu | kemar'eh | mal'akh | ha'elohim
+nora | me'od
 velo | she'iltihu | ei | mizeh | hu
-ve'et | shemo
-lo | higid | li
+ve'et | shemo | lo | higid | li
 
 13:7
 vaiyomer | li
@@ -53,7 +50,8 @@ vaiyomar
 bi | Adonai
 ish | ha'elohim | asher | shalachta | yavo | na | od | eleinu
 veyorenu
-mah | na'aseh | lana'ar | haiyulad
+mah | na'aseh
+lana'ar | haiyulad
 
 13:9
 vaiyishma | ha'elohim
@@ -73,25 +71,27 @@ elai
 
 13:11
 vaiyakom | vaiyelekh | Manoach
-acharei | ishto | vaiyavo | el | ha'ish
+acharei | ishto
+vaiyavo | el | ha'ish
 vaiyomer | lo | ha'atah | ha'ish | asher | dibarta | el | ha'ishah
 vaiyomer | ani
 
 13:12
 vaiyomer | Manoach
 atah | yavo | devareikha
-mah | yihyeh | mishpat | hana'ar | uma'asehu
+mah | yihyeh | mishpat | hana'ar
+uma'asehu
 
 13:13
 vaiyomer | mal'akh | Yahweh
-el | Manoach
-mikol | asher | amarti | el | ha'ishah | tishamer
+el | Manoach | mikol | asher | amarti | el | ha'ishah
+tishamer
 
 13:14
 mikol | asher | yetze | migefen | haiyayin | lo | tokhal | veyayin | veshekhar | al | teshet
 vekhol | tum'ah
-al | tokhal
-kol | asher | tzivitiha | tishmor
+al | tokhal | kol | asher | tzivitiha
+tishmor
 
 13:15
 vaiyomer | Manoach
@@ -103,44 +103,54 @@ gedi | izim
 13:16
 vaiyomer | mal'akh | Yahweh | el | Manoach | im | ta'tzereni | lo | okhal | belachmekha
 ve'im | ta'aseh | olah
-Layahweh | ta'alenah
-ki | lo | yada | Manoach | ki | mal'akh | Yahweh | hu
+Layahweh
+ta'alenah | ki | lo | yada | Manoach | ki | mal'akh | Yahweh
+hu
 
 13:17
 vaiyomer | Manoach | el | mal'akh | Yahweh
-mi | shemekha | ki | yavo | divreikha | vekhibadnukha
+mi | shemekha | ki | yavo | divreikha
+vekhibadnukha
 
 13:18
 vaiyomer | lo | mal'akh | Yahweh
-lamah | zeh | tish'al | lishmi | vehu | feli
+lamah | zeh
+tish'al | lishmi
+vehu | feli
 
 13:19
 vaiyikach | Manoach | et | gedi | ha'izim | ve'et | haminchah
 vaiya'al | al | hatzur
-Layahweh | umafli | la'asot | Umanoach | ve'ishto | ro'im
+Layahweh
+umafli | la'asot
+Umanoach | ve'ishto
+ro'im
 
 13:20
 vayhi | va'alot | halahav | me'al | hamizbeach | hashamaymah
 vaiya'al | mal'akh | Yahweh
-belahav | hamizbeach | Umanoach | ve'ishto | ro'im
+belahav | hamizbeach
+Umanoach | ve'ishto | ro'im
 vaiyipelu | al | peneihem
 aretzah
 
 13:21
-velo | yasaf | od | mal'akh | Yahweh
-lehera'oh | el | Manoach | ve'el | ishto | az | yada | Manoach
-ki | mal'akh | Yahweh | hu
+velo | yasaf | od | mal'akh | Yahweh | lehera'oh
+el | Manoach | ve'el | ishto
+az | yada | Manoach
+ki | mal'akh | Yahweh
+hu
 
 13:22
 vaiyomer | Manoach | el | ishto
-mot | namut | ki | elohim | ra'inu
+mot | namut | ki | elohim
+ra'inu
 
 13:23
 vatomer | lo | ishto | lu | chafetz | Yahweh | lahamitenu | lo | lakach | miyadenu | olah | uminchah
 velo | her'anu
 et | kol | eleh
-vekha'et
-lo | hishmi'anu | kazot
+vekha'et | lo | hishmi'anu | kazot
 
 13:24
 vateled | ha'ishah | ben
@@ -152,4 +162,5 @@ Yahweh
 
 13:25
 vatachel | ruach | Yahweh
-lefa'amo | Bemachaneh | Dan | bein | Tzare'ah | uvein | Eshta'ol
+lefa'amo | Bemachaneh | Dan | bein | Tzare'ah
+uvein | Eshta'ol

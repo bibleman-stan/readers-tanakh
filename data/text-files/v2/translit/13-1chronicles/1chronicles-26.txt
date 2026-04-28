@@ -1,10 +1,10 @@
 26:1
-lemachlekot | lesho'arim | lakarechim | Meshelemyahu | ven | Kore
-min | benei | Asaf
+lemachlekot | lesho'arim | lakarechim | Meshelemyahu | ven | Kore | min | benei | Asaf
 
 26:2
 Velimshelemyahu
-banim | Zekharyahu | habekhor | Yedi'a'el | hasheni
+banim
+Zekharyahu | habekhor | Yedi'a'el | hasheni
 Zevadyahu | hashelishi
 Yatni'el
 harevi'i
@@ -15,8 +15,8 @@ Elyeho'einai
 hashevi'i
 
 26:4
-Ule'oved | Edom
-banim | Shema'yah | habekhor | Yehozavad | hasheni
+Ule'oved | Edom | banim
+Shema'yah | habekhor | Yehozavad | hasheni
 Yo'ach | hashelishi | Vesakhar | harevi'i
 Unetan'el
 hachamishi
@@ -24,42 +24,48 @@ hachamishi
 26:5
 Ami'el | hashishi | Yisoshkhar | hashevi'i
 Pe'uletai
-hashemini
-ki | verakho | elohim
+hashemini | ki | verakho
+elohim
 
 26:6
 Velishma'yah | veno | Nolad | banim
 hamishalim
-leveit | avihem | ki | giborei | chayil | hemah
+leveit | avihem | ki | giborei | chayil
+hemah
 
 26:7
 benei | Shema'yah | Ateni | Urefa'el | Ve'oved | Elzavad | echav
-benei | chayil | Elihu | Usemakhyahu
+benei | chayil
+Elihu
+Usemakhyahu
 
 26:8
 kol | eleh | mibenei | Oved | Edom | hemah | uveneihem | va'acheihem
 ish | chayil | bakoach
-la'avodah | shishim | ushenayim | Le'oved | Edom
+la'avodah
+shishim | ushenayim
+Le'oved | Edom
 
 26:9
 Velimshelemyahu | banim | ve'achim | benei | chayil
 shemonah | asar
 
 26:10
-Ulechosah | min | benei | Merari
-banim | Shimri | harosh | ki | lo | hayah | vekhor
+Ulechosah | min | benei | Merari | banim
+Shimri | harosh | ki | lo | hayah | vekhor
 vaysimehu | avihu
 lerosh
 
 26:11
 Chilkiyahu | hasheni | Tevalyahu | hashelishi
 Zekharyahu
-harevi'i
-kol | banim | ve'achim | Lechosah | sheloshah | asar
+harevi'i | kol | banim | ve'achim | Lechosah
+sheloshah | asar
 
 26:12
 le'eleh | machlekot | hasho'arim | lerashei | hagevarim | mishmarot
-le'umat | acheihem | lesharet | beveit | Yahweh
+le'umat | acheihem
+lesharet | beveit | Yahweh
 
 26:13
 vaiyapilu | goralot | kakaton | kagadol | leveit | avotam
@@ -73,22 +79,31 @@ vaiyetze | goralo
 tzafonah
 
 26:15
-Le'oved | Edom | negbah | ulevanav | beit | ha'asupim
+Le'oved | Edom
+negbah
+ulevanav | beit | ha'asupim
 
 26:16
-Leshupim | Ulechosah | lama'arav | im | sha'ar | Shalekhet
-bamsilah | ha'olah | mishmar | le'umat | mishmar
+Leshupim | Ulechosah | lama'arav
+im | sha'ar | Shalekhet | bamsilah
+ha'olah | mishmar
+le'umat | mishmar
 
 26:17
-lamizrach | halviyim | shishah | latzafonah | laiyom | arba'ah | lanegbah | laiyom | arba'ah | vela'asupim
+lamizrach | halviyim | shishah | latzafonah | laiyom | arba'ah | lanegbah | laiyom
+arba'ah | vela'asupim
 shenayim | shenayim
 
 26:18
-laparbar | lama'arav | arba'ah | lamsilah | shenayim | laparbar
+laparbar
+lama'arav
+arba'ah | lamsilah
+shenayim | laparbar
 
 26:19
 eleh | machlekot | hasho'arim
-livnei | hakarechi | velivnei | Merari
+livnei | hakarechi
+velivnei | Merari
 
 26:20
 vehalviyim
@@ -101,8 +116,10 @@ benei | La'don | benei | hagereshuni | Lela'dan | rashei | ha'avot | Lela'dan | 
 yechi'eli
 
 26:22
-benei | yechi'eli | Zetam | Veyo'el | achiv | al | otzerot
-beit | Yahweh
+benei
+yechi'eli
+Zetam | Veyo'el | achiv
+al | otzerot | beit | Yahweh
 
 26:23
 la'amrami | laiyitzhari | lachevroni | la'azi'eli
@@ -124,30 +141,37 @@ hu | Shelomot | ve'echav | al | kol | otzerot | hakodashim | asher | hikdish | D
 vesarei | hatzava
 
 26:27
-min | hamilchamot | umin | hashalal | hikdishu | lechazek | leveit | Yahweh
+min | hamilchamot | umin | hashalal
+hikdishu
+lechazek
+leveit | Yahweh
 
 26:28
 vekhol | hahikdish | Shemu'el | haro'eh | Vesha'ul | ben | Kish
 Ve'avner | ben | Ner
 Veyo'av
-ben | Tzeruyah | kol | hamakdish | al | yad | Shelomit | ve'echav
+ben | Tzeruyah | kol | hamakdish | al | yad | Shelomit
+ve'echav
 
 26:29
-laiyitzhari | Kenanyahu | uvanav | lamelakhah | hachitzonah | al | Yisra'el
-leshoterim | uleshofetim
+laiyitzhari | Kenanyahu | uvanav | lamelakhah | hachitzonah | al | Yisra'el | leshoterim
+uleshofetim
 
 26:30
 lachevroni | Chashavyahu | ve'echav | benei | chayil | elef | usheva | me'ot | al | pekudat | Yisra'el
-me'ever | Laiyarden | ma'ravah
-lekhol | melekhet | Yahweh | vela'avodat | hamelekh
+me'ever | Laiyarden | ma'ravah | lekhol | melekhet | Yahweh
+vela'avodat
+hamelekh
 
 26:31
 lachevroni | Yeriyah | harosh | lachevroni | letoledotav
-le'avot | bishnat | ha'arba'im | lemalkhut | David | Nidrashu
+le'avot
+bishnat | ha'arba'im | lemalkhut | David | Nidrashu
 vaiyimatze | vahem | giborei | chayil
 Beya'zeir | Gil'ad
 
 26:32
 ve'echav | benei | chayil | alpayim | usheva | me'ot | rashei | ha'avot
 vaiyafkidem | David | hamelekh | al | hor'uveni | vehagadi | vachatzi | shevet | hamnashi
-lekhol | devar | ha'elohim | udevar | hamelekh
+lekhol | devar | ha'elohim
+udevar | hamelekh

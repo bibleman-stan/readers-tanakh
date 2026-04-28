@@ -1,8 +1,10 @@
 21:1
-vayhi | devar | Yahweh | elai | lemor
+vayhi | devar | Yahweh
+elai | lemor
 
 21:2
-ben | adam | sim | paneikha | derekh | teimanah | vehatef
+ben | adam | sim | paneikha | derekh | teimanah
+vehatef
 el | darom
 vehinave | el | ya'ar | hasadeh
 Negev
@@ -12,12 +14,11 @@ ve'amarta | leya'ar | Hanegev
 shema
 devar | Yahweh
 koh | amar | Adonai | Yahweh | hini | matzit | bekha | esh | ve'akhelah | vekha | khol | etz | lach | vekhol | etz | yavesh | lo | tikhbeh | lahevet | shalhevet
-venitzrevu | vah | kol | panim
-minegev | tzafonah
+venitzrevu | vah | kol | panim | minegev | tzafonah
 
 21:4
-vera'u | kol | basar
-ki | ani | Yahweh | bi'artiha | lo | tikhbeh
+vera'u | kol | basar | ki | ani | Yahweh | bi'artiha | lo
+tikhbeh
 
 21:5
 va'omar
@@ -28,34 +29,38 @@ halo | memashel | meshalim
 hu
 
 21:6
-vayhi | devar | Yahweh | elai | lemor
+vayhi | devar | Yahweh
+elai | lemor
 
 21:7
-ben | adam | sim | paneikha | el | Yerushalim | vehatef | el | mikdashim
+ben | adam | sim | paneikha | el | Yerushalim
+vehatef
+el | mikdashim
 vehinave
 el | admat | Yisra'el
 
 21:8
 ve'amarta | le'admat | Yisra'el | koh | amar | Yahweh
 hini | elayikh
-vehotzeti | charbi
-mita'rah | vehikhrati | mimekh | tzadik | verasha
+vehotzeti | charbi | mita'rah
+vehikhrati | mimekh
+tzadik | verasha
 
 21:9
 ya'an | asher | hikhrati | mimekh
 tzadik | verasha
-lakhen | tetze | charbi | mita'rah | el | kol | basar
-minegev | tzafon
+lakhen | tetze | charbi | mita'rah | el | kol | basar | minegev | tzafon
 
 21:10
 veyade'u | kol | basar
-ki | ani | Yahweh | hotzeti | charbi
-mita'rah | lo | tashuv | od
+ki | ani | Yahweh
+hotzeti | charbi | mita'rah | lo | tashuv
+od
 
 21:11
 ve'atah | ven | adam
-he'anach
-beshivron | matenayim | uvimrirut | te'anach | le'eineihem
+he'anach | beshivron | matenayim | uvimrirut
+te'anach | le'eineihem
 
 21:12
 vehayah | ki | yomeru | eleikha
@@ -67,49 +72,53 @@ ne'um
 Adonai | Yahweh
 
 21:13
-vayhi | devar | Yahweh | elai | lemor
+vayhi | devar | Yahweh
+elai | lemor
 
 21:14
-ben | adam | hinave | ve'amarta | koh | amar | Adonai
+ben | adam
+hinave | ve'amarta | koh
+amar | Adonai
 emor
 cherev | cherev | huchadah
 vegam | merutah
 
 21:15
-lema'an | tevoach | tevach | huchadah | lema'an | heyeh | lah | barok
-moratah | o | nasis | shevet | beni
-mo'eset | kol | etz
+lema'an | tevoach | tevach | huchadah | lema'an | heyeh | lah | barok | moratah
+o | nasis
+shevet | beni | mo'eset | kol | etz
 
 21:16
 vaiyiten | otah | lemaretah
-litpos | bakaf | hi | huchadah | cherev | vehi | moratah
-latet | otah | beyad | horeg
+litpos | bakaf
+hi | huchadah | cherev | vehi | moratah | latet | otah | beyad | horeg
 
 21:17
 ze'ak | veheilel | ben | adam
-ki | hi | haitah | ve'ami | hi
-bekhol | nesi'ei | Yisra'el | megurei | el | cherev | hayu | et | ami
+ki | hi | haitah | ve'ami
+hi | bekhol | nesi'ei | Yisra'el | megurei | el | cherev | hayu | et | ami
 lakhen | sefok | el | yarekh
 
 21:18
-ki | vochan | umah | im | gam | shevet | mo'eset
-lo | yihyeh | ne'um | Adonai | Yahweh
+ki | vochan
+umah
+im | gam | shevet | mo'eset | lo | yihyeh
+ne'um
+Adonai | Yahweh
 
 21:19
 ve'atah | ven | adam
 hinave
-vehakh
-kaf | el | kaf
+vehakh | kaf | el | kaf
 vetikafel | cherev | shelishitah | cherev | chalalim
 hi | cherev | chalal | hagadol
-hachoderet
-lahem
+hachoderet | lahem
 
 21:20
-lema'an | lamug | lev | veharbeh | hamikhsholim
-al | kol | sha'areihem | natati | ivchat | charev
-ach | asuyah | levarak
-me'utah | letavach
+lema'an | lamug | lev | veharbeh | hamikhsholim | al | kol | sha'areihem
+natati
+ivchat | charev
+ach | asuyah | levarak | me'utah | letavach
 
 21:21
 hit'achadi | heimini
@@ -125,51 +134,58 @@ ani | Yahweh
 dibarti
 
 21:23
-vayhi | devar | Yahweh | elai | lemor
+vayhi | devar | Yahweh
+elai | lemor
 
 21:24
 ve'atah | ven | adam | sim | lekha | shenayim | derakhim | lavo | cherev | melekh | Bavel
-me'eretz | echad | yetze'u | sheneihem | veyad | bare
-berosh | derekh | ir | bare
+me'eretz | echad | yetze'u | sheneihem
+veyad | bare
+berosh | derekh | ir
+bare
 
 21:25
 derekh | tasim
-lavo | cherev | et | rabat | benei | Amon
-ve'et | Yehudah | Virushalim
-betzurah
+lavo | cherev
+et
+rabat | benei | Amon
+ve'et | Yehudah | Virushalim | betzurah
 
 21:26
-ki | amad | melekh | Bavel | el | em | haderekh | berosh | shenei | haderakhim
-liksom | kasem | kilkal | bachitzim | sha'al | baterafim | ra'ah
+ki | amad | melekh | Bavel | el | em | haderekh | berosh | shenei | haderakhim | liksom | kasem
+kilkal | bachitzim | sha'al | baterafim
+ra'ah
 bakaved
 
 21:27
 bimino | hayah | hakesem | Yerushalim | lasum | karim | liftoach | peh | beretzach
 leharim | kol | bitru'ah
-lasum | karim | al | she'arim | lishpokh | solelah
+lasum | karim | al | she'arim
+lishpokh | solelah
 livnot | dayek
 
 21:28
 vehayah | lahem | kiksom | shav | be'eineihem
-shevu'ei | shevu'ot
-lahem | vehu | mazkir | avon | lehitafes
+shevu'ei | shevu'ot | lahem
+vehu | mazkir | avon | lehitafes
 
 21:29
 lakhen | koh | amar | Adonai | Yahweh
-ya'an | hazkarkhem | avonekhem
-behigalot | pish'eikhem | lehera'ot | chatoteikhem | bekhol | aliloteikhem
-ya'an | hizakherkhem
-bakaf | titafesu
+ya'an | hazkarkhem | avonekhem | behigalot | pish'eikhem | lehera'ot | chatoteikhem | bekhol
+aliloteikhem
+ya'an | hizakherkhem | bakaf
+titafesu
 
 21:30
 ve'atah | chalal | rasha
 nesi
 Yisra'el
-asher | ba | yomo
-be'et | avon | ketz
+asher | ba | yomo | be'et
+avon | ketz
 
 21:31
-koh | amar | Adonai | Yahweh | hasir | hamitznefet
+koh | amar | Adonai | Yahweh
+hasir | hamitznefet
 veharim
 ha'atarah
 zot | lo | zot
@@ -188,28 +204,28 @@ unetativ
 ve'atah | ven | adam | hinave | ve'amarta | koh | amar | Adonai | Yahweh
 el | benei | Amon
 ve'el | cherpatam
-ve'amarta | cherev | cherev | petuchah | letevach | merutah
-lehakhil | lema'an | barak
+ve'amarta | cherev | cherev | petuchah | letevach | merutah | lehakhil
+lema'an | barak
 
 21:34
 bachazot | lokh | shav | biksom | lakh
 kazav | latet | otakh | el | tzaverei | chalei | resha'im
-asher | ba | yomam
-be'et | avon | ketz
+asher | ba | yomam | be'et
+avon | ketz
 
 21:35
 hashav
-el | ta'rah
-bimkom | asher | Nivret | be'eretz | mekhurotayikh | eshpot | otakh
+el | ta'rah | bimkom | asher | Nivret | be'eretz | mekhurotayikh
+eshpot | otakh
 
 21:36
-veshafakhti | alayikh | za'mi
-be'esh | evrati | afiach | alayikh
+veshafakhti | alayikh | za'mi | be'esh | evrati
+afiach | alayikh
 unetatikh | beyad | anashim | bo'arim
-charashei
-mashchit
+charashei | mashchit
 
 21:37
-la'esh | tihyeh | le'okhlah | damekh | yihyeh
-betokh | ha'aretz | lo | tizakheri
-ki | ani | Yahweh | dibarti
+la'esh | tihyeh | le'okhlah
+damekh | yihyeh | betokh | ha'aretz
+lo | tizakheri | ki | ani | Yahweh
+dibarti

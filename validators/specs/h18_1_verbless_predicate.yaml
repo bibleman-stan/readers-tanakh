@@ -1,7 +1,7 @@
 name: h18_1_verbless_predicate
 rule: H18.1
 subcase: verbless_subj_pred_split
-severity: REVIEW-REQUIRED
+severity: STRONG-MERGE-CANDIDATE
 description: |
   Verbless clause subject + predicate-PP split. NP-ending line + prep-fronted
   next line, no finite verb either side.

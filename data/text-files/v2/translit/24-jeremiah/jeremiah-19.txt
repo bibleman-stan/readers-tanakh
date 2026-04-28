@@ -1,5 +1,6 @@
 19:1
-koh | amar | Yahweh | halokh | vekanita | vakbuk
+koh | amar | Yahweh
+halokh | vekanita | vakbuk
 yotzer | chares
 umiziknei | ha'am
 umiziknei
@@ -15,8 +16,9 @@ et | hadevarim
 asher | adaber | eleikha
 
 19:3
-ve'amarta | shim'u | devar | Yahweh
-malkhei | Yehudah | veyoshevei | Yerushalim
+ve'amarta | shim'u | devar | Yahweh | malkhei | Yehudah
+veyoshevei
+Yerushalim
 koh | amar | Yahweh | tzeva'ot | elohei | Yisra'el | hini | mevi | ra'ah | al | hamakom | hazeh
 asher | kol | shome'ah
 titzalnah | azenav
@@ -38,57 +40,63 @@ al | libi
 19:6
 lakhen | hineh | yamim | ba'im | ne'um | Yahweh
 velo | yikare | lamakom | hazeh | od | Hatofet
-vegei | Ven | Hinom
-ki | im | gei | haharegah
+vegei | Ven | Hinom | ki
+im | gei | haharegah
 
 19:7
 uvakoti | et | atzat | Yehudah | Virushalim | bamakom | hazeh
 vehipaltim | bacherev | lifnei | oyeveihem
-uveyad
-mevakshei | nafsham | venatati | et | nivlatam | lema'akhal
-le'of | hashamayim | ulevehemat | ha'aretz
+uveyad | mevakshei | nafsham
+venatati | et | nivlatam | lema'akhal
+le'of | hashamayim
+ulevehemat | ha'aretz
 
 19:8
 vesamti | et | ha'ir | hazot
-leshamah | velishrekah
-kol | over | aleiha | yishom | veyishrok | al | kol | makoteha
+leshamah
+velishrekah | kol | over | aleiha
+yishom | veyishrok
+al | kol | makoteha
 
 19:9
 veha'akhaltim | et | besar | beneihem | ve'et | besar | benoteihem
 ve'ish | besar | re'ehu
 yokhelu
-bematzor | uvematzok | asher | yatziku | lahem | oyeveihem
+bematzor | uvematzok
+asher | yatziku | lahem | oyeveihem
 umevakshei | nafsham
 
 19:10
 veshavarta
 habakbuk
-le'einei | ha'anashim | haholekhim | otakh
+le'einei | ha'anashim
+haholekhim
+otakh
 
 19:11
 ve'amarta | aleihem | koh | amar | Yahweh | tzeva'ot | kakhah | eshbor | et | ha'am | hazeh | ve'et | ha'ir | hazot
 ka'asher | yishbor | et | keli | haiyotzer
 asher | lo | yukhal | leherapeh
 od
-Uvetofet | yikberu
-me'ein | makom | likbor
+Uvetofet | yikberu | me'ein | makom
+likbor
 
 19:12
-ken | e'eseh | lamakom | hazeh | ne'um | Yahweh | uleyoshevav
-velatet | et | ha'ir | hazot
-Ketofet
+ken | e'eseh | lamakom | hazeh | ne'um | Yahweh
+uleyoshevav
+velatet | et | ha'ir | hazot | Ketofet
 
 19:13
-vehayu | batei | Yerushalim | uvatei | malkhei | Yehudah
-kimkom | Hatofet | hateme'im
+vehayu | batei | Yerushalim | uvatei | malkhei | Yehudah | kimkom | Hatofet
+hateme'im
 lekhol | habatim | asher | kiteru | al | gagoteihem | lekhol | tzeva | hashamayim
-vehasekh | nesakhim
-lelohim | acherim
+vehasekh | nesakhim | lelohim | acherim
 
 19:14
 vaiyavo | Yirmeyahu | Mehatofet
 asher | shelacho | Yahweh | sham
-lehinave | vaiya'amod | bachatzar | beit | Yahweh
+lehinave
+vaiya'amod | bachatzar | beit | Yahweh
 vaiyomer
 el | kol | ha'am
 
@@ -97,5 +105,6 @@ koh | amar | Yahweh | tzeva'ot | elohei | Yisra'el
 hini | mevi | el | ha'ir | hazot | ve'al | kol | areiha
 et | kol | hara'ah
 asher | dibarti
-aleiha
-ki | hikshu | et | arepam | levilti | shemoa | et | devarai
+aleiha | ki | hikshu | et | arepam
+levilti
+shemoa | et | devarai

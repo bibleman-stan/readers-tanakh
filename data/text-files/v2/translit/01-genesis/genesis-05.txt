@@ -2,18 +2,23 @@
 zeh | sefer
 toldot
 Adam
-beyom | bero | elohim | adam | bidmut | elohim
+beyom | bero | elohim | adam
+bidmut | elohim
 asah | oto
 
 5:2
 zakhar | unekevah
-bera'am | vayvarekh | otam | vaiyikra | et | shemam | adam
-beyom | hibare'am
+bera'am
+vayvarekh | otam | vaiyikra | et | shemam | adam
+beyom
+hibare'am
 
 5:3
 vaychi | Adam | sheloshim | ume'at | shanah
 vaiyoled | bidmuto
-ketzalmo | vaiyikra | et | shemo | Shet
+ketzalmo
+vaiyikra | et | shemo
+Shet
 
 5:4
 vaiyihyu | yemei | Adam | acharei | holido | et | Shet
@@ -135,15 +140,16 @@ vaiyoled | banim
 uvanot
 
 5:23
-vayhi | kol | yemei | Chanokh
+vayhi
+kol | yemei | Chanokh
 chamesh | veshishim | shanah
 ushelosh | me'ot | shanah
 
 5:24
 vaiyithalekh | Chanokh
 et | ha'elohim
-ve'einenu
-ki | lakach | oto | elohim
+ve'einenu | ki | lakach | oto
+elohim
 
 5:25
 vaychi | Metushelach
@@ -174,8 +180,10 @@ ben
 
 5:29
 vaiyikra | et | shemo | Noach
-lemor | zeh | yenachamenu | mima'asenu | ume'itzevon | yadeinu
-min | ha'adamah | asher | ererah | Yahweh
+lemor
+zeh | yenachamenu | mima'asenu | ume'itzevon | yadeinu | min | ha'adamah
+asher | ererah
+Yahweh
 
 5:30
 vaychi | Lemekh | acharei | holido | et | Noach
@@ -186,11 +194,14 @@ vaiyoled | banim
 uvanot
 
 5:31
-vayhi | kol | yemei | Lemekh | sheva | veshiv'im | shanah
+vayhi | kol | yemei | Lemekh
+sheva | veshiv'im | shanah
 usheva | me'ot | shanah
 vaiyamot
 
 5:32
 vayhi | Noach
-ben | chamesh | me'ot | shanah | vaiyoled | Noach | et | Shem
+ben | chamesh | me'ot | shanah
+vaiyoled | Noach
+et | Shem
 et | Cham | ve'et | Yafet

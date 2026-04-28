@@ -1,7 +1,8 @@
 5:1
 Ushelomoh | hayah | moshel | bekhol | hamamlakhot
-min | Hanahar | eretz | pelishtim | ve'ad | gevul | Mitzrayim
-magishim | minchah | ve'oedim | et | Shelomoh | kol | yemei | chaiyav
+min | Hanahar | eretz | pelishtim
+ve'ad
+gevul | Mitzrayim | magishim | minchah | ve'oedim | et | Shelomoh | kol | yemei | chaiyav
 
 5:2
 vayhi | lechem | Shelomoh
@@ -12,47 +13,55 @@ kamach
 5:3
 asarah | vakar | beri'im | ve'esrim | bakar | re'i
 ume'ah | tzon
-levad | me'aiyal | utzevi | veyachmur | uvarburim | avusim
+levad | me'aiyal | utzevi | veyachmur
+uvarburim
+avusim
 
 5:4
-ki | hu | rodeh | bekhol | ever | Hanahar | Mitifsach | ve'ad | Azah
-bekhol | malkhei | ever | Hanahar
+ki | hu | rodeh | bekhol | ever | Hanahar | Mitifsach | ve'ad | Azah | bekhol | malkhei
+ever | Hanahar
 veshalom | hayah | lo | mikol | avarav
 misaviv
 
 5:5
 vaiyeshev | Yehudah | Veyisra'el | lavetach | ish | tachat | gafno | vetachat | te'enato
-Midan | ve'ad | Be'er | Shava | kol | yemei | Shelomoh
+Midan
+ve'ad | Be'er | Shava | kol
+yemei | Shelomoh
 
 5:6
-vayhi | Lishlomoh | arba'im | elef | urvot | susim | lemerkavo
+vayhi | Lishlomoh | arba'im | elef | urvot | susim
+lemerkavo
 usheneim | asar | elef | parashim
 
 5:7
 vekhilkelu | hanitzavim | ha'eleh | et | hamelekh | Shelomoh | ve'et | kol | hakarev | el | shulchan | hamelekh | Shelomoh
-ish | chadesho
-lo | ye'aderu | davar
+ish | chadesho | lo | ye'aderu
+davar
 
 5:8
-vehase'orim | vehateven
-lasusim | velarakhesh | yavi'u | el | hamakom | asher | yihyeh | sham
-ish
-kemishpato
+vehase'orim | vehateven | lasusim
+velarakhesh
+yavi'u | el | hamakom | asher | yihyeh | sham
+ish | kemishpato
 
 5:9
 vaiyiten | elohim | chokhmah | Lishlomoh | utevunah
 harbeh | me'od
-verochav | lev
-kachol | asher | al | sefat | haiyam
+verochav | lev | kachol
+asher
+al | sefat | haiyam
 
 5:10
-vaterev | chakhemat | Shelomoh
-mechakhemat | kol | benei | kedem | umikol | chakhemat | Mitzrayim
+vaterev | chakhemat | Shelomoh | mechakhemat | kol | benei | kedem
+umikol
+chakhemat | Mitzrayim
 
 5:11
 vaiyechkam | mikol | ha'adam
-Me'eitan | ha'ezrachi | Veheiman | Vekhalkol | Vedarda
-benei | Machol | vayhi | shemo | vekhal | hagoyim | saviv
+Me'eitan | ha'ezrachi | Veheiman | Vekhalkol | Vedarda | benei | Machol
+vayhi | shemo | vekhal | hagoyim
+saviv
 
 5:12
 vaydaber
@@ -62,20 +71,28 @@ chamishah | va'alef
 
 5:13
 vaydaber | al | ha'etzim
-min | ha'erez | asher | Balevanon | ve'ad | ha'ezov
+min | ha'erez | asher | Balevanon
+ve'ad | ha'ezov
 asher | yotze
-bakir | vaydaber | al | habehemah | ve'al | ha'of | ve'al | haremes | ve'al | hadagim
+bakir
+vaydaber | al | habehemah | ve'al | ha'of
+ve'al | haremes
+ve'al | hadagim
 
 5:14
 vaiyavo'u | mikol | ha'amim
-lishmoa | et | chakhemat | Shelomoh
-me'et | kol | malkhei | ha'aretz | asher | shame'u | et | chakhemato
+lishmoa
+et
+chakhemat | Shelomoh | me'et | kol | malkhei | ha'aretz
+asher | shame'u
+et | chakhemato
 
 5:15
 vaiyishlach | Chiram | melekh | Tzor | et | avadav | el | Shelomoh
-ki | shama | ki | oto | mashechu | lemelekh
-tachat | avihu
-ki | ohev | hayah | Chiram | Ledavid | kol | haiyamim
+ki | shama
+ki | oto | mashechu | lemelekh | tachat | avihu
+ki | ohev | hayah | Chiram | Ledavid
+kol | haiyamim
 
 5:16
 vaiyishlach | Shelomoh
@@ -84,17 +101,20 @@ lemor
 
 5:17
 atah | yada'ta | et | David | avi | ki | lo | yakhol | livnot | bayit | leshem | Yahweh | elohav
-mipenei | hamilchamah | asher | sevavuhu
-ad | tet | Yahweh | otam
-tachat | kapot | ragli
+mipenei | hamilchamah
+asher | sevavuhu
+ad | tet | Yahweh | otam | tachat | kapot | ragli
 
 5:18
-ve'atah | heniach | Yahweh | elohai | li
-misaviv | ein | satan | ve'ein | pega | ra
+ve'atah | heniach | Yahweh | elohai | li | misaviv
+ein | satan
+ve'ein
+pega | ra
 
 5:19
 vehini | omer
-livnot | bayit | leshem | Yahweh | elohai
+livnot | bayit | leshem
+Yahweh | elohai
 ka'asher | diber | Yahweh | el | David | avi | lemor
 binkha | asher | eten | tachteikha | al | kis'ekha
 hu | yivneh | habayit
@@ -102,13 +122,14 @@ lishmi
 
 5:20
 ve'atah | tzaveh | veyikhretu | li | arazim | min | Halevanon | va'avadai | yihyu | im | avadeikha
-usekhar | avadeikha | eten | lekha
-kekhol | asher | tomer
+usekhar | avadeikha | eten | lekha | kekhol
+asher | tomer
 ki | atah | yada'ta | ki | ein | banu | ish | yodea | likhrot | etzim
 katzidonim
 
 5:21
-vayhi | kishmoa | Chiram | et | divrei | Shelomoh | vaiyismach | me'od
+vayhi | kishmoa | Chiram | et | divrei | Shelomoh
+vaiyismach | me'od
 vaiyomer | barukh | Yahweh | haiyom
 asher | natan | Ledavid | ben | chakham
 al | ha'am | harav
@@ -119,40 +140,44 @@ vaiyishlach | Chiram | el | Shelomoh | lemor
 shama'ti
 et | asher | shalachta
 elai
-ani | e'eseh | et | kol | cheftzekha
-ba'atzei | arazim | uva'atzei | veroshim
+ani | e'eseh | et | kol | cheftzekha | ba'atzei | arazim
+uva'atzei | veroshim
 
 5:23
 avadai | yoridu | min | Halevanon | yamah | va'ani | asimem | doerot | baiyam | ad | hamakom | asher | tishlach | elai | venipatztim | sham
 ve'atah | tisa
-ve'atah | ta'aseh | et | cheftzi
-latet | lechem | beiti
+ve'atah | ta'aseh | et | cheftzi | latet | lechem | beiti
 
 5:24
-vayhi | Chirom | noten | Lishlomoh | atzei | arazim | va'atzei | veroshim | kol | cheftzo
+vayhi | Chirom | noten | Lishlomoh | atzei | arazim | va'atzei | veroshim
+kol | cheftzo
 
 5:25
 Ushelomoh | natan | Lechiram | esrim | elef | kor | chitim | makolet | leveito
 ve'esrim | kor
-shemen | katit
-koh | yiten | Shelomoh | Lechiram | shanah | veshanah
+shemen | katit | koh | yiten | Shelomoh | Lechiram
+shanah | veshanah
 
 5:26
 Vayahweh | natan | chokhmah | Lishlomoh
-ka'asher | diber | lo
+ka'asher
+diber | lo
 vayhi | shalom | bein | Chiram | uvein | Shelomoh
 vaiyikhretu | verit
 sheneihem
 
 5:27
 vaiya'al | hamelekh | Shelomoh | mas
-mikol | Yisra'el | vayhi | hamas | sheloshim | elef | ish
+mikol | Yisra'el
+vayhi | hamas
+sheloshim | elef | ish
 
 5:28
 vaiyishlachem | Levanonah | aseret | alafim | bachodesh | chalifot
 chodesh | yihyu | Valevanon
-shenayim | chodashim
-beveito | Va'adoniram | al | hamas
+shenayim | chodashim | beveito
+Va'adoniram
+al | hamas
 
 5:29
 vayhi | Lishlomoh | shiv'im | elef | nose | sabal
@@ -161,8 +186,7 @@ ushemonim | elef | chotzev | bahar
 5:30
 levad | misarei | hanitzavim | Lishlomoh | asher | al | hamelakhah
 sheloshet | alafim | ushelosh | me'ot | harodim | ba'am
-ha'osim
-bamelakhah
+ha'osim | bamelakhah
 
 5:31
 vaytzav | hamelekh | vaiyasi'u | avanim | gedolot | avanim | yekarot | leyased | habayit

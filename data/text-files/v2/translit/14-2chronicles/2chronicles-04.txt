@@ -11,27 +11,26 @@ vaiya'as | et | haiyam
 mutzak
 eser | ba'amah | misefato | el | sefato | agol | saviv | vechamesh | ba'amah | komato
 vekav | sheloshim | ba'amah
-yaso | oto
-saviv
+yaso | oto | saviv
 
 4:3
 udemut | bekarim | tachat | lo | saviv | saviv | sovim | oto
-eser | ba'amah
-makifim | et | haiyam | saviv | shenayim | turim | habakar
-yetzukim
-bemutzakto
+eser | ba'amah | makifim | et | haiyam | saviv
+shenayim | turim | habakar
+yetzukim | bemutzakto
 
 4:4
 omed | al | sheneim | asar | bakar | sheloshah | fonim | tzafonah | usheloshah | fonim | yamah | usheloshah | ponim | negbah | usheloshah | ponim | mizrachah
 vehaiyam | aleihem
-milma'elah | vekhol | achoreihem | bayetah
+milma'elah
+vekhol | achoreihem | bayetah
 
 4:5
 ve'aveyo | tefach
 usefato | kema'aseh | sefat | kos
 perach
-shoshanah
-machazik | batim | sheloshet | alafim | yakhil
+shoshanah | machazik | batim
+sheloshet | alafim | yakhil
 
 4:6
 vaiya'as | kiyorim | asarah
@@ -77,13 +76,15 @@ beveit | ha'elohim
 
 4:12
 amudim | shenayim | vehaggulot | vehakotarot | al | rosh | ha'amudim
-shetayim | vehasevakhot | shetayim | lekhasot | et | shetei | gulot | hakotarot | asher
+shetayim | vehasevakhot | shetayim | lekhasot | et | shetei | gulot | hakotarot
+asher
 al | rosh | ha'amudim
 
 4:13
 ve'et | harimonim | arba | me'ot | lishtei | hasevakhot
 shenayim | turim | rimonim | lasevakhah | ha'echat
-lekhasot | et | shetei | gulot | hakotarot | asher
+lekhasot | et | shetei | gulot | hakotarot
+asher
 al | penei | ha'amudim
 
 4:14
@@ -100,23 +101,25 @@ tachtav
 4:16
 ve'et | hasirot | ve'et | haiya'im | ve'et | hamizlagoyt | ve'et | kol | keleihem
 asah | Churam | Aviv | lamelekh | Shelomoh
-leveit | Yahweh | nechoshet | maruk
+leveit | Yahweh
+nechoshet | maruk
 
 4:17
-bekhikar | Haiyarden | yetzakam | hamelekh | ba'avi | ha'adamah
-bein | Sukot | uvein | Tzeredatah
+bekhikar | Haiyarden | yetzakam | hamelekh | ba'avi
+ha'adamah | bein | Sukot
+uvein | Tzeredatah
 
 4:18
 vaiya'as | Shelomoh | kol | hakelim | ha'eleh
-laro | me'od | ki | lo | Nechkar
-mishkal | hanechoshet
+laro | me'od | ki | lo | Nechkar | mishkal | hanechoshet
 
 4:19
 vaiya'as | Shelomoh | et | kol | hakelim
 asher
-beit | ha'elohim | ve'et | mizbach | hazahav | ve'et | hashulchanot
-va'aleihem
-lechem | hapanim
+beit | ha'elohim
+ve'et | mizbach | hazahav
+ve'et | hashulchanot
+va'aleihem | lechem | hapanim
 
 4:20
 ve'et | hamenorot | veneroteihem | leva'aram | kamishpat | lifnei | hadevir
@@ -125,8 +128,7 @@ zahav | sagur
 4:21
 vehaperach | vehanerot | vehamelkachayim
 zahav
-hu
-mikhlot | zahav
+hu | mikhlot | zahav
 
 4:22
 vehamzamerot | vehamizrakot | vehakkapot | vehamachtot

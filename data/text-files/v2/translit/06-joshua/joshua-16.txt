@@ -6,7 +6,9 @@ Beit | El
 
 16:2
 veyatza | Mibeit | El
-Luzah | ve'avar | el | gevul | ha'arki | Atarot
+Luzah
+ve'avar | el | gevul | ha'arki
+Atarot
 
 16:3
 veyarad | yamah | el | gevul | haiyafleti | ad | gevul | Beit | Choron | Tachton
@@ -20,7 +22,8 @@ Menasheh | Ve'efrayim
 
 16:5
 vayhi | gevul | benei | Efrayim
-lemishpechotam | vayhi | gevul | nachalatam | mizrachah
+lemishpechotam
+vayhi | gevul | nachalatam | mizrachah
 Atrot | Adar
 ad | Beit | Choron
 Elyon
@@ -29,8 +32,8 @@ Elyon
 veyatza | hagevul | haiyamah | Hamikhmetat | mitzafon
 venasav | hagevul | mizrachah
 Ta'anat | Shiloh
-ve'avar | oto
-mimizrach | Yanochah
+ve'avar | oto | mimizrach
+Yanochah
 
 16:7
 veyarad | Miyanochah
@@ -43,12 +46,13 @@ Haiyarden
 Mitapuach | yelekh | hagevul | yamah | nachal | Kanah
 vehayu | totze'otav
 haiyamah
-zot | nachalat | mateh | venei | Efrayim
-lemishpechotam
+zot | nachalat | mateh | venei | Efrayim | lemishpechotam
 
 16:9
-vehe'arim | hamivdalot | livnei | Efrayim
-betokh | nachalat | benei | Menasheh | kal | he'arim | vechatzreihen
+vehe'arim | hamivdalot | livnei | Efrayim | betokh
+nachalat | benei | Menasheh
+kal | he'arim
+vechatzreihen
 
 16:10
 velo | horishu

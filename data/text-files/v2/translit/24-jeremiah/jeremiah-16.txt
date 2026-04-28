@@ -1,47 +1,53 @@
 16:1
-vayhi | devar | Yahweh | elai | lemor
+vayhi | devar | Yahweh
+elai | lemor
 
 16:2
-lo | tikach | lekha | ishah
-velo | yihyu | lekha | banim | uvanot
-bamakom | hazeh
+lo | tikach | lekha
+ishah
+velo | yihyu | lekha | banim | uvanot | bamakom
+hazeh
 
 16:3
-ki | khoh | amar | Yahweh | al | habanim | ve'al | habanot | haiyilodim
-bamakom | hazeh
-ve'al | imotam | haiyoledot | otam | ve'al | avotam | hamolidim | otam
-ba'aretz | hazot
+ki | khoh | amar | Yahweh | al | habanim | ve'al | habanot
+haiyilodim | bamakom | hazeh
+ve'al | imotam | haiyoledot | otam | ve'al | avotam | hamolidim | otam | ba'aretz | hazot
 
 16:4
 memotei | tachalu'im | yamutu | lo | yisafedu | velo | yikaveru
-ledomen | al | penei | ha'adamah | yihyu
+ledomen | al | penei | ha'adamah
+yihyu
 uvacherev | uvara'av | yikhlu
 vehayetah | nivlatam | lema'akhal
-le'of | hashamayim | ulevehemat | ha'aretz
+le'of | hashamayim
+ulevehemat | ha'aretz
 
 16:5
 ki | khoh | amar | Yahweh | al | tavo | beit | marzeach
 ve'al | telekh | lispod
-ve'al | tanod
-lahem | ki | asafti | et | shelomi | me'et | ha'am | hazeh | ne'um | Yahweh
+ve'al | tanod | lahem | ki | asafti | et | shelomi | me'et | ha'am | hazeh | ne'um | Yahweh
 et | hachesed
 ve'et | harachamim
 
 16:6
 umetu | gedolim | uketanim | ba'aretz | hazot
-lo | yikaveru | velo | yispedu | lahem | velo | yitgodad
-velo | yikareach
-lahem
+lo | yikaveru
+velo | yispedu | lahem
+velo | yitgodad
+velo | yikareach | lahem
 
 16:7
 velo | yifresu | lahem | al | evel
-lenachamo | al | met | velo | yashku | otam | kos | tanchumim
+lenachamo | al | met
+velo | yashku | otam | kos | tanchumim
 al | aviv
 ve'al | imo
 
 16:8
 uveit | mishteh | lo | tavo
-lashevet | otam | le'ekhol | velishtot
+lashevet | otam
+le'ekhol
+velishtot
 
 16:9
 ki | khoh | amar | Yahweh | tzeva'ot | elohei | Yisra'el
@@ -66,14 +72,13 @@ vaiyelekhu | acharei | elohim | acherim
 vaiya'avdum
 vaiyishtachavu | lahem
 ve'oti | azavu
-ve'et | torati
-lo | shamaru
+ve'et | torati | lo | shamaru
 
 16:12
-ve'atem | hare'otem | la'asot
-me'avoteikhem
+ve'atem | hare'otem | la'asot | me'avoteikhem
 vehinekhem | holekhim | ish | acharei | sherirut | libov | hara
-levilti | shemoa | elai
+levilti
+shemoa | elai
 
 16:13
 vehetalti | etkhem | me'al | ha'aretz | hazot
@@ -86,7 +91,8 @@ asher | lo | eten | lakhem
 chaninah
 
 16:14
-lakhen | hineh | yamim | ba'im | ne'um | Yahweh
+lakhen | hineh | yamim | ba'im
+ne'um | Yahweh
 velo | ye'amer | od | chai | Yahweh
 asher | he'elah | et | benei | Yisra'el
 me'eretz | Mitzrayim
@@ -109,17 +115,17 @@ uminekikei
 hasela'im
 
 16:17
-ki | einai | al | kol | darkheihem | lo | Nisteru
-milefanai | velo | Nitzpan | avonam | mineged | einai
+ki | einai | al | kol | darkheihem | lo | Nisteru | milefanai
+velo | Nitzpan | avonam | mineged | einai
 
 16:18
-veshilamti | rishonah | mishneh | avonam | vechatatam
-al | chalelam | et | artzi | benivlat | shikutzeihem | veto'avoteihem
-mal'u | et | nachalati
+veshilamti | rishonah | mishneh | avonam | vechatatam | al
+chalelam | et | artzi | benivlat | shikutzeihem | veto'avoteihem | mal'u
+et | nachalati
 
 16:19
-Yahweh | uzi | uma'uzi | umenusi
-beyom | tzarah | eleikha | goyim | yavo'u | me'afsei | aretz
+Yahweh | uzi | uma'uzi | umenusi | beyom | tzarah
+eleikha | goyim | yavo'u | me'afsei | aretz
 veyomeru | akh | sheker | nachalu | avoteinu
 hevel
 ve'ein | bam | mo'il
@@ -127,8 +133,7 @@ ve'ein | bam | mo'il
 16:20
 haya'aseh | lo | adam
 elohim
-vehemah
-lo | elohim
+vehemah | lo | elohim
 
 16:21
 lakhen | hini | modi'am | bapa'am | hazot

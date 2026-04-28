@@ -1,13 +1,16 @@
 21:1
 vaiyigeshu | rashei | avot | halviyim
 el | El'azar | hakohen
-ve'el | Yehoshua
-bin | Nun | ve'el | rashei | avot | hamatot | livnei | Yisra'el
+ve'el | Yehoshua | bin | Nun
+ve'el | rashei | avot | hamatot
+livnei | Yisra'el
 
 21:2
 vaydaberu | aleihem | Beshiloh | be'eretz | Kena'an | lemor
 Yahweh | tzivah | veyad | Mosheh
-latet | lanu | arim | lashavet | umigresheihen | livhemtenu
+latet | lanu | arim
+lashavet
+umigresheihen | livhemtenu
 
 21:3
 vaiyitenu | venei | Yisra'el | lalviyim | minachalatam
@@ -40,29 +43,32 @@ sheteim | esreh
 vaiyitenu | venei | Yisra'el | lalviyim
 et | he'arim | ha'eleh
 ve'et | migresheihen
-ka'asher | tzivah | Yahweh | beyad | Mosheh | bagoral
+ka'asher | tzivah | Yahweh | beyad | Mosheh
+bagoral
 
 21:9
 vaiyitenu | mimateh | benei | Yehudah
-umimateh
-benei | Shim'on | et | he'arim | ha'eleh
-asher | yikra | ethen
-beshem
+umimateh | benei | Shim'on
+et | he'arim | ha'eleh
+asher | yikra | ethen | beshem
 
 21:10
 vayhi | livnei | Aharon
-mimishpechot | hakehati | mibenei | Levi
-ki | lahem | hayah | hagoral | rishonah
+mimishpechot | hakehati
+mibenei | Levi
+ki | lahem | hayah | hagoral
+rishonah
 
 21:11
 vaiyitenu | lahem | et | Kiryat | Arba | avi | ha'anok | hi | Chevron
-behar | Yehudah | ve'et | migrasheha | sevivoteiha
+behar | Yehudah
+ve'et | migrasheha
+sevivoteiha
 
 21:12
 ve'et | sedeh | ha'ir
 ve'et | chatzereiha
-natenu | Lekhalev | ben | Yefuneh
-ba'achuzato
+natenu | Lekhalev | ben | Yefuneh | ba'achuzato
 
 21:13
 velivnei | Aharon | hakohen | natenu | et | ir | miklat | harotzeach
@@ -104,17 +110,23 @@ arim
 arba
 
 21:19
-kol | arei | venei | Aharon | hakohanim | shelosh | esreh | arim | umigresheihen
+kol | arei | venei | Aharon
+hakohanim
+shelosh | esreh | arim
+umigresheihen
 
 21:20
 ulemishpechot | benei | Kehat | halviyim
-hanotarim
-mibenei | Kehat | vayhi | arei | goralam
-mimateh | Efrayim
+hanotarim | mibenei | Kehat
+vayhi | arei | goralam
+mimateh
+Efrayim
 
 21:21
 vaiyitenu | lahem | et | ir | miklat | harotzeach | et | Shekhem | ve'et | migrasheha
-behar | Efrayim | ve'et | Gezer | ve'et | migrasheha
+behar | Efrayim
+ve'et | Gezer
+ve'et | migrasheha
 
 21:22
 ve'et | Kivtzayim | ve'et | migrasheha
@@ -146,7 +158,8 @@ arim
 shetayim
 
 21:26
-kol | arim | eser | umigresheihen | lemishpechot | benei | Kehat | hanotarim
+kol | arim | eser | umigresheihen | lemishpechot | benei | Kehat
+hanotarim
 
 21:27
 velivnei | Gereshon | mimishpechot | halviyim
@@ -193,11 +206,15 @@ arim
 shalosh
 
 21:33
-kol | arei | hagereshuni | lemishpechotam | shelosh | esreh | ir | umigresheihen
+kol | arei | hagereshuni | lemishpechotam
+shelosh | esreh | ir
+umigresheihen
 
 21:34
-ulemishpechot | benei | Merari | halviyim | hanotarim
-me'et | mateh | Zevulun | et | Yakene'am | ve'et | migrasheha | et | Kartah
+ulemishpechot | benei | Merari | halviyim | hanotarim | me'et | mateh | Zevulun
+et | Yakene'am
+ve'et | migrasheha
+et | Kartah
 ve'et | migrasheha
 
 21:35
@@ -231,16 +248,19 @@ ve'et | migrasheha
 21:39
 et | Cheshbon | ve'et | migrasheha
 et | Ya'zer
-ve'et | migrasheha
-kol | arim | arba
+ve'et | migrasheha | kol | arim
+arba
 
 21:40
-kol | he'arim | livnei | Merari | lemishpechotam | hanotarim
-mimishpechot | halviyim | vayhi | goralam | arim
+kol | he'arim | livnei | Merari | lemishpechotam
+hanotarim | mimishpechot | halviyim
+vayhi | goralam
+arim
 sheteim | esreh
 
 21:41
-kol | arei | halviyim | betokh | achuzat | benei | Yisra'el
+kol | arei | halviyim | betokh
+achuzat | benei | Yisra'el
 arim | arba'im | ushemoneh
 umigresheihen
 
@@ -248,26 +268,28 @@ umigresheihen
 tihyeinah | he'arim | ha'eleh
 ir | ir
 umigrasheiha
-sevivoteiha
-ken | lekhol | he'arim | ha'eleh
+sevivoteiha | ken | lekhol | he'arim | ha'eleh
 
 21:43
 vaiyiten | Yahweh | Leyisra'el
 et | kol | ha'aretz
 asher | Nishba
-latet | la'avotam | vaiyirashuha
+latet | la'avotam
+vaiyirashuha
 vaiyeshevu | vah
 
 21:44
 vaiyanach | Yahweh | lahem | misaviv
-kekhol | asher | Nishba | la'avotam
+kekhol | asher | Nishba
+la'avotam
 velo | amad | ish | bifneihem | mikol | oyeveihem
 et | kol | oyeveihem
 natan | Yahweh
 beyadam
 
 21:45
-lo | nafal | davar | mikol | hadavar | hatov
+lo | nafal | davar
+mikol | hadavar | hatov
 asher | diber | Yahweh
 el | beit | Yisra'el
 hakol

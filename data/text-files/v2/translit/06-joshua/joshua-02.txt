@@ -1,12 +1,14 @@
 2:1
 vaiyishlach | Yehoshua | bin | Nun | min | Hashitim | shenayim | anashim | meragelim | cheresh | lemor
-lekhu | re'u | et | ha'aretz | ve'et | Yericho
+lekhu | re'u | et | ha'aretz
+ve'et | Yericho
 vaiyelekhu | vaiyavo'u | beit | ishah | zonah | ushemah | Rachav
 vaiyishkevu | shamah
 
 2:2
 vaiye'amar
-lemelekh | Yericho | lemor
+lemelekh | Yericho
+lemor
 hineh | anashim | ba'u | henah | halaylah | mibenei | Yisra'el
 lachpor | et | ha'aretz
 
@@ -21,14 +23,14 @@ ki | lachpor | et | kol | ha'aretz | ba'u
 vatikach | ha'ishah | et | shenei | ha'anashim
 vatitzpeno
 vatomer | ken | ba'u | elai | ha'anashim
-velo | yada'ti
-me'ayin | hemah
+velo | yada'ti | me'ayin | hemah
 
 2:5
 vayhi | hasha'ar | lisgor | bachoshekh | veha'anashim | yatza'u
-lo | yada'ti | anah | halekhu | ha'anashim
-ridfu | maher | achareihem
-ki | tasigum
+lo | yada'ti
+anah | halekhu
+ha'anashim
+ridfu | maher | achareihem | ki | tasigum
 
 2:6
 vehi
@@ -38,9 +40,11 @@ ha'arukhot | lah
 al | hagag
 
 2:7
-veha'anashim | radefu | achareihem | derekh | Haiyarden
-al | hama'berot | vehasha'ar | sagaru
-acharei | ka'asher | yatze'u | harodefim | achareihem
+veha'anashim | radefu | achareihem | derekh | Haiyarden | al
+hama'berot
+vehasha'ar | sagaru | acharei
+ka'asher | yatze'u | harodefim
+achareihem
 
 2:8
 vehemah
@@ -50,11 +54,10 @@ al | hagag
 
 2:9
 vatomer | el | ha'anashim
-yada'ti
-ki | natan | Yahweh | lakhem | et | ha'aretz
+yada'ti | ki | natan | Yahweh | lakhem
+et | ha'aretz
 vekhi | nafelah | eimatkhem | aleinu
-vekhi | Namogu | kol | yoshevei | ha'aretz
-mipeneikhem
+vekhi | Namogu | kol | yoshevei | ha'aretz | mipeneikhem
 
 2:10
 ki | shama'nu | et | asher | hovish | Yahweh | et | mei | yam | suf | mipeneikhem
@@ -65,22 +68,20 @@ otam
 
 2:11
 vanishma | vaiyimas | levavenu
-velo | kamah | od | ruach | be'ish
-mipeneikhem | ki | Yahweh | eloheikhem
+velo | kamah | od | ruach | be'ish | mipeneikhem | ki | Yahweh | eloheikhem
 hu | elohim | bashamayim | mima'al
-ve'al | ha'aretz
-mitachat
+ve'al | ha'aretz | mitachat
 
 2:12
-ve'atah | hishave'u | na | li | Bayahweh
-ki | asiti | imakhem | chased
+ve'atah | hishave'u | na | li | Bayahweh | ki | asiti | imakhem
+chased
 va'asitem | gam | atem | im | beit | avi | chesed | unetatem | li
 ot | emet
 
 2:13
 vehachayitem | et | avi | ve'et | imi | ve'et | achai | ve'et | achotai
-ve'et
-kol | asher | lahem | vehitzaltem | et | nafshoteinu | mimavet
+ve'et | kol | asher | lahem
+vehitzaltem | et | nafshoteinu | mimavet
 
 2:14
 vaiyomeru | lah | ha'anashim | nafshenu | tachteikhem | lamut
@@ -92,8 +93,7 @@ ve'asinu | imakh
 chesed | ve'emet
 
 2:15
-vatoridem | bachevel
-be'ad | hachalon | ki | veitah | bekir | hachomah
+vatoridem | bachevel | be'ad | hachalon | ki | veitah | bekir | hachomah
 uvachomah
 hi | yoshavet
 
@@ -108,12 +108,11 @@ telekhu | ledarkekhem
 2:17
 vaiyomeru | eleiha
 ha'anashim
-nekiyim | anachnu
-mishevu'atekh | hazeh | asher | hishba'tanu
+nekiyim | anachnu | mishevu'atekh | hazeh
+asher | hishba'tanu
 
 2:18
-hineh | anachnu | va'im
-ba'aretz
+hineh | anachnu | va'im | ba'aretz
 et | tikvat | chut | hashani | hazeh | tiksheri | bachalon | asher | horadtenu | vo
 ve'et | avikh | ve'et | imekh | ve'et | achayikh | ve'et | kol | beit | avikh
 ta'asfi | elayikh
@@ -130,15 +129,14 @@ tihyeh | bo
 2:20
 ve'im | tagidi
 et | devarenu | zeh
-vehayinu | nekiyim
-mishevu'atekh | asher | hishba'tanu
+vehayinu | nekiyim | mishevu'atekh
+asher | hishba'tanu
 
 2:21
 vatomer | kedivreikhem | ken | hu
 vateshalechem
 vaiyelekhu
-vatikshor | et | tikvat | hashani
-bachalon
+vatikshor | et | tikvat | hashani | bachalon
 
 2:22
 vaiyelekhu | vaiyavo'u | haharah
@@ -151,11 +149,12 @@ velo | matza'u
 2:23
 vaiyashuvu | shenei | ha'anashim | vaiyeredu | mehahar
 vaiya'avru | vaiyavo'u
-el | Yehoshua
-bin | Nun | vaysaperu | lo | et | kol | hamotze'ot | otam
+el | Yehoshua | bin | Nun
+vaysaperu | lo | et | kol | hamotze'ot
+otam
 
 2:24
 vaiyomeru | el | Yehoshua
-ki | natan | Yahweh | beyadenu | et | kol | ha'aretz
-vegam | Namogu | kol | yoshevei | ha'aretz
-mipaneinu
+ki | natan | Yahweh | beyadenu
+et | kol | ha'aretz
+vegam | Namogu | kol | yoshevei | ha'aretz | mipaneinu

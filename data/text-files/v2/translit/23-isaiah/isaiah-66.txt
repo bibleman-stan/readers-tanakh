@@ -1,9 +1,10 @@
 66:1
-koh | amar | Yahweh | hashamayim | kis'i | veha'aretz
+koh | amar | Yahweh
+hashamayim | kis'i
+veha'aretz
 hadom | raglai
 ei | zeh | vayit | asher | tivnu | li
-ve'ei | zeh | makom
-menuchati
+ve'ei | zeh | makom | menuchati
 
 66:2
 ve'et | kol | eleh | yadi | asatah
@@ -17,7 +18,9 @@ al | devari
 66:3
 shochet | hashor | makeh | ish | zoveach | haseh | oref | kelev
 ma'aleh | minchah | dam | chazir | mazkir | levonah
-mevarekh | aven | gam | hemah | bacharu | bedarkheihem | uveshikutzeihem
+mevarekh | aven
+gam | hemah | bacharu | bedarkheihem
+uveshikutzeihem
 nafsham | chafetzah
 
 66:4
@@ -26,8 +29,7 @@ ya'an | karati | ve'ein | oneh
 dibarti
 velo | shame'u
 vaiya'asu | hara | be'einai
-uva'asher | lo | chafatzti
-bacharu
+uva'asher | lo | chafatzti | bacharu
 
 66:5
 shim'u | devar | Yahweh
@@ -39,12 +41,13 @@ vehem | yevoshu
 
 66:6
 kol | sha'on | me'ir
-kol
-meheikhal | kol | Yahweh | meshalem | gemul | le'oyevav
+kol | meheikhal
+kol | Yahweh | meshalem | gemul | le'oyevav
 
 66:7
-beterem | tachil | yaladah
-beterem | yavo | chevel | lah | vehimlitah | zakhar
+beterem | tachil
+yaladah | beterem | yavo | chevel | lah
+vehimlitah | zakhar
 
 66:8
 mi | shama | kazot | mi | ra'ah | ka'eleh
@@ -59,11 +62,13 @@ im | ani | hamolid | ve'atzarti
 amar | elohayikh
 
 66:10
-simchu | et | Yerushalim | vegilu | vah
-kol | ohaveiha | sisu | itah | masos | kol | hamit'abelim | aleiha
+simchu | et | Yerushalim | vegilu | vah | kol | ohaveiha
+sisu | itah | masos | kol | hamit'abelim
+aleiha
 
 66:11
-lema'an | tineku | useva'tem | mishod | tanchumeiha
+lema'an | tineku | useva'tem | mishod
+tanchumeiha
 lema'an | tamotzu | vehit'anagtem | miziz | kevodah
 
 66:12
@@ -74,26 +79,34 @@ ve'al | birkayim
 tesho'osha'u
 
 66:13
-ke'ish | asher | imo | tenachamenu
-ken | anokhi | anachemkhem | Uvirushalim | tenuchamu
+ke'ish
+asher | imo
+tenachamenu | ken | anokhi | anachemkhem
+Uvirushalim
+tenuchamu
 
 66:14
 ure'item | vesas | libekhem
-ve'atzmoteikhem
-kadeshe | tifrachnah | venod'ah | yad | Yahweh | et | avadav | veza'am
+ve'atzmoteikhem | kadeshe | tifrachnah
+venod'ah | yad | Yahweh | et | avadav
+veza'am
 et | oyevav
 
 66:15
-ki | hineh | Yahweh | ba'esh | yavo | vekhasufah
-markevotav | lehashiv | bechemah | apo | vega'arato | belahavei | esh
+ki | hineh | Yahweh | ba'esh | yavo
+vekhasufah | markevotav | lehashiv | bechemah | apo
+vega'arato | belahavei | esh
 
 66:16
-ki | va'esh | Yahweh | nishpat | uvecharbo | et | kol | basar
+ki | va'esh | Yahweh | nishpat
+uvecharbo
+et | kol | basar
 verabu
 chalei | Yahweh
 
 66:17
-hamitkadeshim | vehamitaharim | el | haganot | achar | echad | batavekh | okhelei | besar | hachazir
+hamitkadeshim | vehamitaharim | el | haganot | achar | echad | batavekh
+okhelei | besar | hachazir
 vehasheketz
 veha'akhbar
 yachdav | yasufu
@@ -102,14 +115,16 @@ ne'um | Yahweh
 66:18
 ve'anokhi | ma'aseihem | umachshevoteihem
 ba'ah
-lekabetz | et | kol | hagoyim | vehaleshonot | uva'u | vera'u | et | kevodi
+lekabetz | et | kol | hagoyim
+vehaleshonot
+uva'u
+vera'u | et | kevodi
 
 66:19
 vesamti | vahem | ot | veshilachti | mehem | peleitim | el | hagoyim | Tarshish | Pul | Velud | moshekhei | keshet
 Tuval | Veyavan
 ha'iyim | harechokim | asher | lo | shame'u | et | shim'i | velo | ra'u | et | kevodi
-vehigidu | et | kevodi
-bagoyim
+vehigidu | et | kevodi | bagoyim
 
 66:20
 vehevi'u | et | kol | acheikhem | mikol | hagoyim | minchah | Layahweh | basusim | uvarekhev | uvatzabim | uvaperadim | uvakirkarot | al | har | kodshi | Yerushalim
@@ -122,18 +137,19 @@ vegam | mehem | ekach | lakohanim | lalviyim
 amar | Yahweh
 
 66:22
-ki | kha'asher | hashamayim | hachodashim | veha'aretz | hachadashah | asher | ani | oseh | omedim | lefanai | ne'um | Yahweh
-ken | ya'amod | zar'akhem | veshimkhem
+ki | kha'asher | hashamayim | hachodashim | veha'aretz | hachadashah | asher | ani | oseh | omedim | lefanai
+ne'um | Yahweh | ken | ya'amod | zar'akhem
+veshimkhem
 
 66:23
 vehayah | midei | chodesh | bechadesho
-umidei | shabat
-beshabato
-yavo | khol | basar | lehishtachavot | lefanai | amar | Yahweh
+umidei | shabat | beshabato
+yavo | khol | basar | lehishtachavot | lefanai
+amar | Yahweh
 
 66:24
 veyatze'u | vera'u
-befigrei | ha'anashim | haposhe'im | bi
+befigrei | ha'anashim
+haposhe'im | bi
 ki | tola'tam | lo | tamut | ve'isham | lo | tikhbeh
-vehayu | dera'on
-lekhol | basar
+vehayu | dera'on | lekhol | basar

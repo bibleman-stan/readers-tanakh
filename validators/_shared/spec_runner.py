@@ -191,6 +191,9 @@ def _matches_trigger(spec: Spec, l_n: str, l_n1: str, ctx: dict[str, Any]) -> bo
         total = M.prosodic_word_count(l_n) + M.prosodic_word_count(l_n1)
         if total < t["combined_min_prosodic_words"]:
             return False
+    if "line_n_is_verse_start" in t:
+        if t["line_n_is_verse_start"] != (ctx.get("line_idx_in_verse") == 0):
+            return False
     return True
 
 
@@ -338,6 +341,7 @@ class SpecRunner:
                     "chapter": chapter,
                     "verse": verse,
                     "lookahead": lookahead,
+                    "line_idx_in_verse": i,
                 }
                 for spec in self.specs:
                     if rule_filter and spec.rule != rule_filter and spec.name != rule_filter:

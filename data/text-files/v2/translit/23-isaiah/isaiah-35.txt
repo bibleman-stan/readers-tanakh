@@ -1,12 +1,13 @@
 35:1
 yesusum | midbar
 vetziyah
-vetagel | aravah | vetifrach
-kachavatzalet
+vetagel | aravah | vetifrach | kachavatzalet
 
 35:2
 paroach | tifrach | vetagel | af | gilat | veranen
-kevod | Halevanon | Nitan | lah | hadar | Hakarmel | Vehasharon
+kevod | Halevanon | Nitan | lah
+hadar | Hakarmel
+Vehasharon
 hemah | yir'u | khevod | Yahweh
 hadar | eloheinu
 
@@ -34,24 +35,27 @@ tipatachnah
 35:6
 az | yedaleg | ka'aiyal | piseach
 vetaron
-leshon | ilem | ki | Nivke'u | vamidbar | mayim | unechalim
-ba'aravah
+leshon | ilem | ki | Nivke'u | vamidbar | mayim
+unechalim | ba'aravah
 
 35:7
 vehayah | hasharav | la'agam
-vetzima'on
-lemabu'ei | mayim | binveh | tanim | rivtzah | chatzir
+vetzima'on | lemabu'ei | mayim | binveh | tanim | rivtzah
+chatzir
 lekaneh | vagome
 
 35:8
 vehayah | sham | maslul | vaderekh | vederekh | hakodesh | yikare | lah
-lo | ya'avrenu | tame | vehu | lamo
+lo | ya'avrenu | tame
+vehu | lamo
 holekh | derekh | ve'evilim
 lo | yit'u
 
 35:9
-lo | yihyeh | sham | aryeh | uferitz | chaiyot | bal | ya'alenah
-lo | timatze | sham | vehalekhu | ge'ulim
+lo | yihyeh | sham | aryeh | uferitz | chaiyot | bal | ya'alenah | lo | timatze
+sham
+vehalekhu
+ge'ulim
 
 35:10
 ufeduyei | Yahweh | yeshuvun | uva'u | Tziyon | berinah

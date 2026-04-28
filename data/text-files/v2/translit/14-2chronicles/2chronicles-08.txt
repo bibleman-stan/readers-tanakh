@@ -16,7 +16,9 @@ aleiha
 
 8:4
 vaiyiven | et | Tadmor
-bamidbar | ve'et | kol | arei | hamiskenot | asher | banah
+bamidbar
+ve'et | kol | arei | hamiskenot
+asher | banah
 Bachamat
 
 8:5
@@ -44,8 +46,10 @@ hemah
 8:8
 min | beneihem | asher | Notru | achareihem | ba'aretz
 asher | lo | khilum
-benei | Yisra'el | vaiya'alem | Shelomoh | lemas
-ad | haiyom | hazeh
+benei | Yisra'el
+vaiya'alem | Shelomoh | lemas
+ad
+haiyom | hazeh
 
 8:9
 umin | benei | Yisra'el
@@ -57,31 +61,34 @@ ufarashav
 8:10
 ve'eleh | sarei | hanetzivim | asher | lamelekh | Shelomoh
 chamishim | umatayim
-harodim
-ba'am
+harodim | ba'am
 
 8:11
 ve'et | bat | par'oh | he'elah | Shelomoh | me'ir | David
-labayit | asher | banah | lah
+labayit
+asher | banah | lah
 ki | amar | lo | teshev | ishah | li | beveit | David | melekh | Yisra'el
-ki | kodesh | hemah | asher | ba'ah | aleihem | aron | Yahweh
+ki | kodesh | hemah
+asher | ba'ah | aleihem
+aron | Yahweh
 
 8:12
 az | he'elah | Shelomoh | olot
-Layahweh | al | mizbach | Yahweh | asher | banah
+Layahweh | al | mizbach | Yahweh
+asher | banah
 lifnei | ha'ulam
 
 8:13
-uvidvar | yom | beyom | leha'alot | kemitzvat | Mosheh
-lashabatot | velechodashim | velamo'adot | shaloosh | pe'amim
-bashanah | bechag | hamatzot | uvechag | hashavu'ot
+uvidvar | yom | beyom | leha'alot | kemitzvat | Mosheh | lashabatot | velechodashim
+velamo'adot
+shaloosh | pe'amim | bashanah | bechag | hamatzot | uvechag | hashavu'ot
 uvechag | hasukot
 
 8:14
 vaiya'amed | kemishpat | David | aviv | et | machlekot | hakohanim | al | avodatam | vehalviyim | al | mishmerotom | lehalel | ulesharet | neged | hakohanim | lidvar | yom | beyomo
 vehasho'arim | bemachlekotam
-lesha'ar | vasha'ar | ki | khen
-mitzvat | David | ish | ha'elohim
+lesha'ar | vasha'ar | ki | khen | mitzvat
+David | ish | ha'elohim
 
 8:15
 velo | saru | mitzvat | hamelekh | al | hakohanim | vehalviyim | lekhol | davar
@@ -91,8 +98,7 @@ vela'otzarot
 vatikon | kol | melekhet | Shelomoh
 ad | haiyom | musad | beit | Yahweh
 ve'ad | keloto
-shalem
-beit | Yahweh
+shalem | beit | Yahweh
 
 8:17
 az | halakh | Shelomoh | Le'etzyon | Gever | ve'el | Eilot | al | sefat | haiyam
@@ -102,5 +108,6 @@ be'eretz | Edom
 vaiyishlach | lo | Churam | beyad | avadav | oniyot | va'avadim | yod'ei | yam
 vaiyavo'u | im | avdei | Shelomoh | Ofirah
 vaiyikchu | misham
-arba | me'ot | vachamishim
-kikar | zahav | vaiyavi'u | el | hamelekh | Shelomoh
+arba | me'ot | vachamishim | kikar | zahav
+vaiyavi'u
+el | hamelekh | Shelomoh

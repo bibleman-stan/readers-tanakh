@@ -1,5 +1,7 @@
 3:1
-lakol | zeman | ve'et | lekhol | chefetz | tachat | hashamayim
+lakol
+zeman
+ve'et | lekhol | chefetz | tachat | hashamayim
 
 3:2
 et | laledet
@@ -42,7 +44,8 @@ et | milchamah
 ve'et | shalom
 
 3:9
-mah | yitron | ha'oseh | ba'asher | hu | amel
+mah | yitron | ha'oseh | ba'asher
+hu | amel
 
 3:10
 ra'iti | et | ha'inyan | asher | natan | elohim | livnei | ha'adam
@@ -56,14 +59,13 @@ mibeli | asher | lo | yimtza | ha'adam | et | hama'aseh | asher | asah | ha'eloh
 merosh | ve'ad | sof
 
 3:12
-yada'ti
-ki | ein | tov | bam
-ki | im | lismoach | vela'asot | tov | bechaiyav
+yada'ti | ki | ein | tov | bam | ki | im | lismoach
+vela'asot | tov | bechaiyav
 
 3:13
 vegam | kol | ha'adam | sheiyokhal | veshatah
-vera'ah | tov
-bekhol | amalo | matat | elohim | hi
+vera'ah | tov | bekhol | amalo | matat | elohim
+hi
 
 3:14
 yada'ti | ki | kol | asher | ya'aseh | ha'elohim | hu | yihyeh | le'olam
@@ -71,16 +73,17 @@ alav | ein | lehosif
 umimenu
 ein | ligroa
 veha'elohim | asah
-sheiyir'u
-milefanav
+sheiyir'u | milefanav
 
 3:15
-mah | shehayah | kevar | hu | va'asher | lihyot
-kevar | hayah | veha'elohim | yevakesh | et | nirdaf
+mah | shehayah | kevar | hu
+va'asher | lihyot
+kevar | hayah
+veha'elohim
+yevakesh | et | nirdaf
 
 3:16
-ve'od | ra'iti
-tachat | hashamesh | mekom | hamishpat | shamah | haresha
+ve'od | ra'iti | tachat | hashamesh | mekom | hamishpat | shamah | haresha
 umekom | hatzedek
 shamah | harasha
 
@@ -88,13 +91,17 @@ shamah | harasha
 amarti | ani | belibi
 et | hatzadik | ve'et | harasha
 yishpot
-ha'elohim
-ki | et | lekhol | chefetz | ve'al | kol | hama'aseh | sham
+ha'elohim | ki | et | lekhol | chefetz
+ve'al | kol | hama'aseh
+sham
 
 3:18
 amarti | ani | belibi
 al | divrat | benei | ha'adam
-levaram | ha'elohim | velir'ot | shehem | behemah | hemah | lahem
+levaram
+ha'elohim
+velir'ot
+shehem | behemah | hemah | lahem
 
 3:19
 ki | mikreh | venei | ha'adam | umikreh | habehemah | umikreh | echad | lahem
@@ -113,11 +120,13 @@ shav | el | he'afar
 3:21
 mi | yodea | ruach | benei | ha'adam
 ha'olah | hi
-lema'elah | veruach | habehemah | haiyoredet | hi
+lema'elah
+veruach | habehemah
+haiyoredet | hi
 lematah | la'aretz
 
 3:22
 vera'iti | ki | ein | tov | me'asher | yismach | ha'adam | bema'asav
-ki | hu | chelko
-ki | mi | yevi'enu | lir'ot | bemeh
+ki | hu
+chelko | ki | mi | yevi'enu | lir'ot | bemeh
 sheiyihyeh | acharav

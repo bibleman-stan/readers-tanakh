@@ -1,7 +1,8 @@
 21:1
 ben | sheteim | esreh | shanah | Menasheh | vemalekho
-vachamishim | vechamesh | shanah
-malakh | Birushalim | veshem | imo | Cheftzi | Vah
+vachamishim | vechamesh | shanah | malakh | Birushalim
+veshem | imo
+Cheftzi | Vah
 
 21:2
 vaiya'as | hara
@@ -19,21 +20,22 @@ vaiya'avod
 otam
 
 21:4
-uvanah | mizbechot
-beveit | Yahweh | asher | amar | Yahweh
-Birushalim | asim | et | shemi
+uvanah | mizbechot | beveit | Yahweh
+asher | amar | Yahweh
+Birushalim
+asim | et | shemi
 
 21:5
 vaiyiven | mizbechot
-lekhol | tzeva | hashamayim | bishtei | chatzrot | beit | Yahweh
+lekhol | tzeva | hashamayim | bishtei
+chatzrot | beit | Yahweh
 
 21:6
 vehe'evir | et | beno | ba'esh
 ve'onen | venichesh
 ve'asah | ov
 veyide'onim
-hirbah | la'asot | hara | be'einei | Yahweh
-lehakh'is
+hirbah | la'asot | hara | be'einei | Yahweh | lehakh'is
 
 21:7
 vaiyasem
@@ -45,8 +47,9 @@ asim | et | shemi
 le'olam
 
 21:8
-velo | osif | lehanid | regel | Yisra'el
-min | ha'adamah | asher | natati | la'avotam
+velo | osif | lehanid | regel | Yisra'el | min | ha'adamah
+asher | natati
+la'avotam
 rak | im | yishmeru | la'asot | kekhol | asher | tzivitim
 ulekhol | hatorah
 asher | tzivah | otam
@@ -56,7 +59,8 @@ avdi | Mosheh
 velo
 shame'u
 vaiyat'em | Menasheh | la'asot | et | hara
-min | hagoyim | asher | hishmid | Yahweh
+min | hagoyim
+asher | hishmid | Yahweh
 mipenei | benei | Yisra'el
 
 21:10
@@ -65,8 +69,8 @@ lemor
 
 21:11
 ya'an | asher | asah | Menasheh | melekh | Yehudah | hato'evot | ha'eleh
-hera
-mikol | asher | asu | ha'emori | asher | lefanav
+hera | mikol | asher | asu | ha'emori
+asher | lefanav
 vaiyachati | gam | et | Yehudah
 begilulav
 
@@ -81,29 +85,27 @@ shetei | azenav
 
 21:13
 venatiti | al | Yerushalim | et | kav | Shomeron
-ve'et | mishkolet
-beit | Ach'av
+ve'et | mishkolet | beit | Ach'av
 umachiti | et | Yerushalim | ka'asher | yimcheh | et | hatzalachat | machah
 vehafakh
 al | paneiha
 
 21:14
 venatashti | et | she'erit | nachalati
-unetatim
-beyad | oyeveihem | vehayu | levaz | velimshisah | lekhol | oyeveihem
+unetatim | beyad | oyeveihem
+vehayu | levaz | velimshisah | lekhol | oyeveihem
 
 21:15
 ya'an | asher | asu | et | hara | be'einai
 vaiyihyu | makh'isim
-oti
-min | haiyom | asher | yatze'u | avotam | Mimitzrayim | ve'ad
+oti | min | haiyom | asher | yatze'u | avotam | Mimitzrayim
+ve'ad
 haiyom | hazeh
 
 21:16
 vegam | dam | naki | shafakh | Menasheh | harbeh | me'od
 ad | asher | mile | et | Yerushalim
-peh | lapeh
-levad | mechatato | asher | hecheti | et | Yehudah
+peh | lapeh | levad | mechatato | asher | hecheti | et | Yehudah
 la'asot | hara | be'einei | Yahweh
 
 21:17
@@ -116,20 +118,25 @@ lemalkhei | Yehudah
 21:18
 vaiyishkav | Menasheh | im | avotav
 vaiyikaver | began | beito
-began | Uza | vaiyimlokh | Amon | beno | tachtav
+began | Uza
+vaiyimlokh | Amon | beno
+tachtav
 
 21:19
 ben | esrim | ushetayim | shanah | Amon | bemalekho
-ushetayim | shanim | malakh
-Birushalim | veshem | imo | Meshulemet | bat | Charutz | min | Yatevah
+ushetayim | shanim | malakh | Birushalim
+veshem | imo | Meshulemet | bat | Charutz | min | Yatevah
 
 21:20
 vaiya'as | hara
-be'einei | Yahweh | ka'asher | asah | Menasheh | aviv
+be'einei | Yahweh
+ka'asher | asah
+Menasheh | aviv
 
 21:21
 vaiyelekh
-bekhol | haderekh | asher | halakh | aviv
+bekhol | haderekh
+asher | halakh | aviv
 vaiya'avod | et | hagilulim | asher | avad | aviv
 vaiyishtachu
 lahem
@@ -161,4 +168,6 @@ lemalkhei | Yehudah
 
 21:26
 vaiyikber | oto | bikvurato
-began | Uza | vaiyimlokh | Yoshiyahu | veno | tachtav
+began | Uza
+vaiyimlokh | Yoshiyahu | veno
+tachtav

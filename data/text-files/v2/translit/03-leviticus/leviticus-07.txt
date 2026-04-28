@@ -5,9 +5,10 @@ kodesh | kadashim
 hu
 
 7:2
-bimkom | asher | yishchatu | et | ha'olah | yishchatu | et | ha'asham
-ve'et | damo | yizrok | al | hamizbeach
-saviv
+bimkom | asher | yishchatu | et | ha'olah
+yishchatu
+et | ha'asham
+ve'et | damo | yizrok | al | hamizbeach | saviv
 
 7:3
 ve'et | kol | chelbo
@@ -28,14 +29,20 @@ yesirenah
 7:5
 vehiktir | otam | hakohen | hamizbechah
 isheh
-Layahweh | asham | hu
+Layahweh
+asham
+hu
 
 7:6
-kol | zakhar | bakohanim | yokhelenu
-bemakom | kadovosh | ye'akhel | kodesh | kadashim | hu
+kol | zakhar | bakohanim
+yokhelenu | bemakom | kadovosh | ye'akhel
+kodesh | kadashim
+hu
 
 7:7
-kachatat | ka'asham | torah | achat | lahem | hakohen | asher | yekhaper | bo
+kachatat | ka'asham
+torah | achat | lahem
+hakohen | asher | yekhaper | bo
 lo | yihyeh
 
 7:8
@@ -53,8 +60,8 @@ lakohen | hamakriv | otah | lo | tihyeh
 
 7:10
 vekhol | minchah | velulah | vashemen
-vacharevah
-lekhol | benei | Aharon | tihyeh | ish | ke'achiv
+vacharevah | lekhol | benei | Aharon | tihyeh
+ish | ke'achiv
 
 7:11
 vezot | torat
@@ -65,9 +72,9 @@ Layahweh
 7:12
 im | al | todah | yakrivenu
 vehikriv | al | zevach | hatodah | chalot | matzot | belulot | bashemen
-urekikei | matzot
-meshuchim | bashamen | vesolet | murbekhet | chalot
-belulot | bashamen
+urekikei | matzot | meshuchim | bashamen
+vesolet | murbekhet
+chalot | belulot | bashamen
 
 7:13
 al | chalot | lechem | chametz
@@ -79,22 +86,24 @@ todat | shelamav
 7:14
 vehikriv | mimenu | echad | mikol | korban
 terumah
-Layahweh | lakohen | hazorek | et | dam | hashelamim
-lo | yihyeh
+Layahweh
+lakohen | hazorek | et | dam | hashelamim | lo | yihyeh
 
 7:15
-uvesar | zevach | todat | shelamav
-beyom | karebano | ye'akhel | lo | yaniach | mimenu | ad | boker
+uvesar | zevach | todat | shelamav | beyom | karebano
+ye'akhel | lo | yaniach | mimenu
+ad | boker
 
 7:16
-ve'im | neder | o | nedavah | zevach | karebano
-beyom | hakrivo | et | zivcho | ye'akhel | umimochorat
+ve'im | neder | o | nedavah | zevach | karebano | beyom | hakrivo | et | zivcho
+ye'akhel
+umimochorat
 vehanotar | mimenu
 ye'akhel
 
 7:17
-vehanotar
-mibesar | hazavach | baiyom | hashelishi | ba'esh | yisaref
+vehanotar | mibesar | hazavach | baiyom | hashelishi | ba'esh
+yisaref
 
 7:18
 ve'im | he'akhol | ye'akhel | mibesar | zevach | shelamav | baiyom | hashelishi | lo | yeratzeh
@@ -104,22 +113,22 @@ vehanefesh | ha'okhelet | mimenu
 avonah | tisa
 
 7:19
-vehabasar | asher | yiga | bekhol | tame | lo | ye'akhel
-ba'esh | yisaref | vehabasar | kol | tahor | yokhal | basar
+vehabasar | asher | yiga | bekhol | tame | lo | ye'akhel | ba'esh
+yisaref
+vehabasar | kol | tahor
+yokhal | basar
 
 7:20
 vehanefesh | asher | tokhal | basar | mizevach | hashelamim | asher | Layahweh
 vetum'ato
 alav
-venikhretah | hanefesh | hahiv
-me'ameiha
+venikhretah | hanefesh | hahiv | me'ameiha
 
 7:21
 venefesh | ki | tiga | bekhol | tame | betum'at | adam | o | bivhemah | teme'ah | o | bekhol | sheketz | tame
 ve'akhal | mibesar | zevach | hashelamim
 asher | Layahweh
-venikhretah | hanefesh | hahiv
-me'ameiha
+venikhretah | hanefesh | hahiv | me'ameiha
 
 7:22
 vaydaber | Yahweh
@@ -127,26 +136,28 @@ el | Mosheh | lemor
 
 7:23
 daber | el | benei | Yisra'el
-lemor | kol | chelev | shor | vekhesev | va'ez
-lo | tokhelu
+lemor | kol | chelev | shor | vekhesev | va'ez | lo | tokhelu
 
 7:24
 vechelev | nevelah | vechelev | terefah
-ye'aseh
-lekhol | melakhah | ve'akhol | lo | tokheluhu
+ye'aseh | lekhol | melakhah
+ve'akhol | lo | tokheluhu
 
 7:25
 ki | kol | okhel | chelev | min | habehemah
 asher | yakriv | mimenah | isheh
-Layahweh | venikhretah | hanefesh | ha'okhelet | me'ameiha
+Layahweh
+venikhretah | hanefesh | ha'okhelet | me'ameiha
 
 7:26
-vekhol | dam | lo | tokhelu
-bekhol | moshevoteikhem | la'of | velabehemah
+vekhol | dam | lo | tokhelu | bekhol | moshevoteikhem
+la'of
+velabehemah
 
 7:27
-kol | nefesh | asher | tokhal | kol | dam | venikhretah | hanefesh | hahiv
-me'ameiha
+kol | nefesh
+asher | tokhal | kol | dam
+venikhretah | hanefesh | hahiv | me'ameiha
 
 7:28
 vaydaber | Yahweh
@@ -154,13 +165,14 @@ el | Mosheh | lemor
 
 7:29
 daber | el | benei | Yisra'el
-lemor | hamakriv | et | zevach | shelamav | Layahweh
-yavi | et | karebano | Layahweh
-mizevach | shelamav
+lemor
+hamakriv | et | zevach | shelamav | Layahweh
+yavi | et | karebano | Layahweh | mizevach | shelamav
 
 7:30
 yadav | tevi'einah
-et | ishei | Yahweh
+et
+ishei | Yahweh
 et | hachelev | al | hechazeh | yevi'enu
 et | hechazeh | lehanif | oto | tenufah
 lifnei | Yahweh
@@ -169,32 +181,39 @@ lifnei | Yahweh
 vehiktir | hakohen | et | hachelev
 hamizbechah
 vehayah | hechazeh
-Le'aharon | ulevanav
+Le'aharon
+ulevanav
 
 7:32
 ve'et | shok | haiyamin
 titenu | terumah
-lakohen | mizivchei | shalmeikhem
+lakohen | mizivchei
+shalmeikhem
 
 7:33
-hamakriv | et | dam | hashelamim | ve'et | hachelev
-mibenei | Aharon | lo | tihyeh | shok | haiyamin
+hamakriv | et | dam | hashelamim | ve'et | hachelev | mibenei | Aharon
+lo | tihyeh | shok | haiyamin
 lemanah
 
 7:34
 ki | et | chazeh | hatenufah | ve'et | shok | haterumah | lakachti | me'et | benei | Yisra'el
-mizivchei | shalmeihem
-va'eten | otom | Le'aharon | hakohen | ulevanav | lechok | olam
-me'et | benei | Yisra'el
+mizivchei
+shalmeihem
+va'eten | otom | Le'aharon | hakohen | ulevanav | lechok | olam | me'et
+benei | Yisra'el
 
 7:35
-zot | mishchat | Aharon | umishchat | banav
-me'ishei | Yahweh | beyom | hikriv | otam | lekhahen
+zot | mishchat | Aharon | umishchat | banav | me'ishei
+Yahweh
+beyom | hikriv | otam
+lekhahen
 Layahweh
 
 7:36
 asher | tzivah | Yahweh | latet | lahem | beyom | mashecho | otam
-me'et | benei | Yisra'el | chukat | olam | ledorotam
+me'et | benei | Yisra'el
+chukat | olam
+ledorotam
 
 7:37
 zot | hatorah | la'olah | laminchah

@@ -1,5 +1,6 @@
 12:1
-vayhi | kehakhin | malkhut | Rechav'am | ukhechezkato | azav
+vayhi | kehakhin | malkhut | Rechav'am | ukhechezkato
+azav
 et | torat | Yahweh
 vekhol | Yisra'el
 imo
@@ -7,13 +8,14 @@ imo
 12:2
 vayhi | bashanah | hachamishit | lamelekh | Rechav'am
 alah | Shishak | melekh | Mitzrayim
-al | Yerushalim
-ki | ma'alu | Bayahweh
+al | Yerushalim | ki | ma'alu | Bayahweh
 
 12:3
-be'elef | umatayim | rekhev | uveshishim | elef | parashim
+be'elef | umatayim | rekhev
+uveshishim | elef | parashim
 ve'ein | mispar | la'am | asher | ba'u | imo | Mimitzrayim
-luvim | sukiyim | vekhushim
+luvim | sukiyim
+vekhushim
 
 12:4
 vaiyilkod | et | arei | hametzurot
@@ -27,8 +29,7 @@ vesarei | Yehudah
 asher | Ne'esfu | el | Yerushalim
 mipenei | Shishak
 vaiyomer | lahem | koh | amar | Yahweh | atem | azavtem | oti
-ve'af | ani | azavti | etkhem
-beyad | Shishak
+ve'af | ani | azavti | etkhem | beyad | Shishak
 
 12:6
 vaiyikane'u | sarei | Yisra'el
@@ -39,13 +40,13 @@ tzadik | Yahweh
 12:7
 uvir'ot | Yahweh | ki | Nikhna'u
 hayah | devar | Yahweh | el | Shema'yah | lemor | Nikhne'u
-lo | ashchitem | venatati | lahem | kim'at | lifleitah
-velo | titakh | chamati | Birushalim
-beyad | Shishak
+lo | ashchitem
+venatati | lahem | kim'at | lifleitah
+velo | titakh | chamati | Birushalim | beyad | Shishak
 
 12:8
-ki | yihyu | lo | la'avadim | veyede'u | avodati | va'avodat
-mamlekhot | ha'aratzot
+ki | yihyu | lo | la'avadim | veyede'u | avodati
+va'avodat | mamlekhot | ha'aratzot
 
 12:9
 vaiya'al | Shishak | melekh | Mitzrayim | al | Yerushalim
@@ -58,20 +59,26 @@ Shelomoh
 
 12:10
 vaiya'as | hamelekh | Rechav'am | tachteihem
-maginei | nechoshet | vehifkid | al | yad | sarei | haratzim
+maginei
+nechoshet
+vehifkid | al | yad | sarei | haratzim
 hashomerim
 petach
 beit | hamelekh
 
 12:11
 vayhi | midei | vo | hamelekh
-beit | Yahweh | ba'u | haratzim | unesa'um | veheshivum
+beit | Yahweh | ba'u | haratzim | unesa'um
+veheshivum
 el | ta | haratzim
 
 12:12
 uvehikane'o | shav | mimenu | af | Yahweh
 velo | lehashchit
-lekhalah | vegam | Bihudah | hayah | devarim | tovim
+lekhalah
+vegam | Bihudah
+hayah
+devarim | tovim
 
 12:13
 vaiyitchazek | hamelekh | Rechav'am | Birushalim
@@ -83,15 +90,19 @@ ha'amonit
 
 12:14
 vaiya'as
-hara
-ki | lo | hekhin | libo | lidroosh | et | Yahweh
+hara | ki | lo | hekhin | libo
+lidroosh
+et | Yahweh
 
 12:15
 vedivrei | Rechav'am | harishonim | veha'acharonim
-halo | hem | ketuvim | bedivrei | Shema'yah | hanavi | Ve'ido | hachozeh
-lehityaches | umilchamot | Rechav'am | Veyarave'am | kol | haiyamim
+halo | hem | ketuvim | bedivrei | Shema'yah | hanavi | Ve'ido | hachozeh | lehityaches
+umilchamot | Rechav'am | Veyarave'am
+kol | haiyamim
 
 12:16
 vaiyishkav | Rechav'am | im | avotav
 vaiyikaver
-be'ir | David | vaiyimlokh | Aviyah | veno | tachtav
+be'ir | David
+vaiyimlokh | Aviyah | veno
+tachtav

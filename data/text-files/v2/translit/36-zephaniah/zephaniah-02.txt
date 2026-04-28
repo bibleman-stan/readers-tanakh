@@ -1,30 +1,35 @@
 2:1
 hitkosheshu
 vakooshu
-hagoy
-lo | nikhsaf
+hagoy | lo | nikhsaf
 
 2:2
-beterem | ledet | chok | kemotz | avar | yom
-beterem | lo | yavo | aleikhem | charon | af | Yahweh
-beterem | lo | yavo | aleikhem | yom | af | Yahweh
+beterem | ledet | chok | kemotz
+avar | yom | beterem | lo | yavo | aleikhem | charon | af | Yahweh
+beterem | lo | yavo | aleikhem
+yom
+af | Yahweh
 
 2:3
-bakeshu | et | Yahweh | kol | anvei | ha'aretz | asher | mishpato
-pa'alu
-bakeshu | tzedek | bakeshu | anavah | ulai | tisateru
-beyom | af | Yahweh
+bakeshu | et | Yahweh | kol | anvei | ha'aretz
+asher | mishpato
+pa'alu | bakeshu | tzedek | bakeshu | anavah
+ulai | tisateru | beyom
+af | Yahweh
 
 2:4
-ki | Azah | azuvah | tihyeh | Ve'ashkelon
-lishmamah | Ashdod | batzohorayim | yegareshuha | Ve'ekron | te'aker
+ki | Azah | azuvah | tihyeh
+Ve'ashkelon
+lishmamah
+Ashdod | batzohorayim | yegareshuha
+Ve'ekron
+te'aker
 
 2:5
 ho | yoshevei | chevel | haiyam
 goy | keretim
 devar | Yahweh | aleikhem | Kena'an | eretz | pelishtim
-veha'avadtikh
-me'ein | yoshev
+veha'avadtikh | me'ein | yoshev
 
 2:6
 vehayetah | chevel | haiyam | nevot | kerot | ro'im
@@ -33,32 +38,36 @@ vegidrot | tzon
 2:7
 vehayah | chevel | lish'erit | beit | Yehudah
 aleihem | yir'un
-bevatei | Ashkelon | ba'erev | yirbatzun
-ki | yifkedem | Yahweh | eloheihem | veshav | shevutam
+bevatei | Ashkelon | ba'erev | yirbatzun | ki | yifkedem | Yahweh | eloheihem
+veshav | shevutam
 
 2:8
 shama'ti | cherpat | Mo'av
-vegidufei
-benei | Amon | asher | cherefu | et | ami | vaiyagdilu
+vegidufei | benei | Amon
+asher | cherefu | et | ami
+vaiyagdilu
 al | gevulam
 
 2:9
 lakhen | chai | ani | ne'um | Yahweh | tzeva'ot | elohei | Yisra'el | ki | Mo'av | Kisdom | tihyeh | uvenei | Amon | Ka'amorah
-mishak | charul | umikhreh | melach | ushemamah | ad | olam
+mishak | charul | umikhreh | melach | ushemamah
+ad | olam
 she'erit | ami | yevazum
 veyeter | goyi
 yinchalum
 
 2:10
-zot | lahem
-tachat | ge'onam | ki | cherefu | vaiyagdilu | al | am
+zot | lahem | tachat | ge'onam
+ki | cherefu | vaiyagdilu
+al | am
 Yahweh | tzeva'ot
 
 2:11
-nora | Yahweh | aleihem
-ki | razah | et | kol | elohei | ha'aretz
+nora | Yahweh | aleihem | ki | razah
+et | kol | elohei | ha'aretz
 veyishtachavu | lo | ish | mimekomo
-kol | iyei | hagoyim
+kol
+iyei | hagoyim
 
 2:12
 gam | atem | kushim
@@ -70,15 +79,14 @@ veyet | yado | al | tzafon
 vi'abed
 et | Ashur
 veyasem | et | Nineveh | lishmamah
-tziyah
-kamidbar
+tziyah | kamidbar
 
 2:14
 veravetzu | vetokhah | adarim | kol | chaytov | goy
-gam | ka'at | gam | kipod
-bekhaftoreiha | yalinu
-kol | yeshorer | bachalon | chorev | basaf
-ki | arzah | erah
+gam | ka'at | gam | kipod | bekhaftoreiha
+yalinu
+kol | yeshorer | bachalon | chorev | basaf | ki | arzah
+erah
 
 2:15
 zot | ha'ir | ha'alizah | haiyoshevet | lavetach
@@ -86,4 +94,6 @@ ha'omerah | bilvavah
 ani
 ve'afsi | od
 eikh | hayetah | leshamah | marbetz | lachaiyah
-kol | over | aleiha | yishrok | yania | yado
+kol | over | aleiha
+yishrok
+yania | yado

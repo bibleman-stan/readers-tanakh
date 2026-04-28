@@ -1,7 +1,7 @@
 name: h18_2_participial_predicate
 rule: H18.2
 subcase: participial_pred_split
-severity: REVIEW-REQUIRED
+severity: STRONG-MERGE-CANDIDATE
 description: |
   Subject + participial predicate split. NP-ending line + bare-participle next.
   Per WO §37.6, predicative participle fills the verbal slot — clause nucleus.

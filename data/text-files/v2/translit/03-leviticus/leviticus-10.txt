@@ -21,7 +21,8 @@ Aharon
 
 10:4
 vaiyikra | Mosheh | el | Misha'el | ve'el | Eltzafan
-benei | Uzi'el | dod | Aharon
+benei | Uzi'el
+dod | Aharon
 vaiyomer | alehem | kirvu | se'u | et | acheikhem | me'et | penei | hakodesh
 el | michutz
 lamachaneh
@@ -29,7 +30,8 @@ lamachaneh
 10:5
 vaiyikrevu | vaiyisa'um | bekhutonotam
 el | michutz
-lamachaneh | ka'asher | diber | Mosheh
+lamachaneh | ka'asher
+diber | Mosheh
 
 10:6
 vaiyomer | Mosheh | el | Aharon | Ule'el'azar | Ule'itamar | banav | rasheikhem | al | tifra'u | uvigdeikhem | lo | tifromu | velo | tamutu
@@ -42,7 +44,9 @@ saraf | Yahweh
 
 10:7
 umipetach | ohel | mo'ed | lo | tetze'u | pen | tamutu
-ki | shemen | mishchat | Yahweh | aleikhem | vaiya'asu
+ki | shemen | mishchat | Yahweh
+aleikhem
+vaiya'asu
 kidvar | Mosheh
 
 10:8
@@ -53,12 +57,12 @@ lemor
 10:9
 yayin | veshekhar | al | teshet | atah | uvaneikha | itakh | bevo'akhem | el | ohel | mo'ed
 velo | tamutu
-chukat | olam
-ledoroteikhem
+chukat | olam | ledoroteikhem
 
 10:10
-ulahavdil
-bein | hakodesh | uvein | hachol | uvein | hatame
+ulahavdil | bein | hakodesh
+uvein | hachol
+uvein | hatame
 uvein | hatahor
 
 10:11
@@ -71,27 +75,27 @@ beyad | Mosheh
 10:12
 vaydaber | Mosheh | el | Aharon | ve'el | El'azor | ve'el | Itamar | banav | hanotarim
 kechu | et | haminchah | hanoteret | me'ishei | Yahweh
-ve'ikhluha | matzot
-etzel | hamizbeach | ki | kodesh | kadashim | hi
+ve'ikhluha | matzot | etzel | hamizbeach | ki | kodesh | kadashim
+hi
 
 10:13
-va'akhaltem | otah | bemakom | kadosh
-ki | chakecha | vechok | baneikha | hi | me'ishei | Yahweh
-ki | khen | tzuveiti
+va'akhaltem | otah | bemakom | kadosh | ki | chakecha | vechok | baneikha | hi
+me'ishei
+Yahweh | ki | khen
+tzuveiti
 
 10:14
 ve'et | chazeh | hatenufah | ve'et | shok | haterumah | tokhelu | bemakom | tahor
 atah
 uvaneikha | uvenoteikha
-itakh
-ki | chakecha | vechok | baneikha | Nitenu | mizivchei | shalmei
-benei | Yisra'el
+itakh | ki | chakecha | vechok | baneikha | Nitenu | mizivchei | shalmei | benei | Yisra'el
 
 10:15
 shok | haterumah | vachazeh | hatenufah | al | ishei | hachalavim | yavi'u
-lehanif | tenufah | lifnei | Yahweh
-vehayah | lekha | ulevaneikha | itekha | lechok | olam
-ka'asher | tzivah | Yahweh
+lehanif | tenufah
+lifnei | Yahweh
+vehayah | lekha | ulevaneikha | itekha | lechok | olam | ka'asher
+tzivah | Yahweh
 
 10:16
 ve'et | se'ir | hachatat | darosh | darash | Mosheh
@@ -101,23 +105,23 @@ hanotarim
 lemor
 
 10:17
-madua | lo | akhaltem | et | hachatat | bimkom | hakodesh
-ki | kodesh | kadashim | hi
+madua | lo | akhaltem | et | hachatat | bimkom | hakodesh | ki | kodesh | kadashim
+hi
 ve'otah | natan | lakhem | laset | et | avon | ha'edah
-lekhaper | aleihem | lifnei | Yahweh
+lekhaper | aleihem
+lifnei | Yahweh
 
 10:18
 hen | lo | huva | et | damah
 el | hakodesh
 penimah
-akhol | tokhelu | otah | bakodesh
-ka'asher | tziveiti
+akhol | tokhelu | otah | bakodesh | ka'asher | tziveiti
 
 10:19
 vaydaber | Aharon | el | Mosheh | hen | haiyom | hikrivu | et | chatatam | ve'et | olatam | lifnei | Yahweh
-vatikrenah | oti
-ka'eleh | ve'akhalti | chatat | haiyom | haiyitav
-be'einei | Yahweh
+vatikrenah | oti | ka'eleh
+ve'akhalti | chatat | haiyom
+haiyitav | be'einei | Yahweh
 
 10:20
 vaiyishma | Mosheh

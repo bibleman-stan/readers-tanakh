@@ -1,23 +1,28 @@
 7:1
-tov | shem
-mishemen | tov | veyom | hamavet | miyom | hivaldo
+tov | shem | mishemen | tov | veyom | hamavet
+miyom
+hivaldo
 
 7:2
-tov | lalekhet | el | beit | evel | milekhet | el | beit | mishteh
-ba'asher | hu | sof | kol | ha'adam | vehachai
+tov | lalekhet | el | beit | evel | milekhet | el | beit | mishteh | ba'asher
+hu
+sof | kol | ha'adam
+vehachai
 yiten | el | libo
 
 7:3
-tov | ka'as
-misechok | ki | veroa | panim | yitav | lev
+tov | ka'as | misechok | ki | veroa | panim
+yitav | lev
 
 7:4
-lev | chakhamim | beveit | evel | velev | kesilim
-beveit | simchah
+lev | chakhamim | beveit | evel
+velev | kesilim | beveit | simchah
 
 7:5
 tov
-lishmoa | ga'arat | chakham | me'ish | shomea
+lishmoa
+ga'arat | chakham | me'ish
+shomea
 shir | kesilim
 
 7:6
@@ -27,22 +32,26 @@ vegam | zeh
 havel
 
 7:7
-ki | ha'oshek | yeholel | chakham | vi'abed | et | lev
+ki | ha'oshek
+yeholel | chakham
+vi'abed | et | lev
 matanah
 
 7:8
 tov | acharit | davar
-mereshito | tov | erekh | ruach | migevah | ruach
+mereshito
+tov | erekh | ruach | migevah | ruach
 
 7:9
 al | tevahel | beruchakha
-likh'os | ki | kha'as | becheik | kesilim | yanuach
+likh'os | ki | kha'as | becheik | kesilim
+yanuach
 
 7:10
 al | tomar | meh | hayah
 shehaiyamim | harishonim
-hayu | tovim
-me'eleh | ki | lo | mechakhemah | sha'alta | al | zeh
+hayu | tovim | me'eleh | ki | lo | mechakhemah
+sha'alta | al | zeh
 
 7:11
 tovah | chokhmah
@@ -58,53 +67,56 @@ techaiyeh | ve'aleiha
 
 7:13
 re'eh
-et | ma'aseh | ha'elohim
-ki | mi | yukhal | letaken
-et | asher | iveto
+et | ma'aseh | ha'elohim | ki | mi | yukhal | letaken
+et
+asher | iveto
 
 7:14
-beyom | tovah | heyeh | vetov | uveyom | ra'ah
+beyom | tovah | heyeh | vetov
+uveyom | ra'ah
 re'eh
 gam | et | zeh | le'umat | zeh | asah | ha'elohim
-al | divrat | shelo | yimtza | ha'adam | acharav
-me'umah
+al | divrat | shelo | yimtza | ha'adam | acharav | me'umah
 
 7:15
-et | hakol | ra'iti
-bimei | hevli | yesh | tzadik | oved | betzidko
+et | hakol | ra'iti | bimei | hevli
+yesh | tzadik | oved | betzidko
 veyesh | rasha
 ma'arikh | bera'ato
 
 7:16
 al | tehi | tzadik | harbeh
 ve'al | titchakam
-yoter
-lamah | tishomem
+yoter | lamah
+tishomem
 
 7:17
 al | tirsha | harbeh
-ve'al | tehi | sakhal
-lamah | tamut | belo | itekha
+ve'al | tehi | sakhal | lamah | tamut | belo | itekha
 
 7:18
 tov | asher | te'echoz | bazeh
 vegam | mizeh
-al | tanach | et | yadekha
-ki | yere | elohim | yetze | et | kulam
+al | tanach | et | yadekha | ki | yere | elohim
+yetze | et | kulam
 
 7:19
 hachakhemah
-ta'oz | lechakham
-me'asarah | shalitim | asher | hayu | ba'ir
+ta'oz | lechakham | me'asarah | shalitim
+asher | hayu
+ba'ir
 
 7:20
-ki | adam | ein | tzadik
-ba'aretz | asher | ya'aseh | tov | velo | yecheta
+ki | adam
+ein | tzadik | ba'aretz
+asher | ya'aseh | tov
+velo | yecheta
 
 7:21
 gam | lekhol | hadevarim | asher | yedaberu
-al | titen
-libekha | asher | lo | tishma | et | avdekha | mekalecha
+al | titen | libekha
+asher | lo | tishma | et | avdekha
+mekalecha
 
 7:22
 ki | gam | pe'amim | rabot | yada | libekha
@@ -112,12 +124,15 @@ asher | gam | at
 kilalta | acherim
 
 7:23
-kol | zoh | nisiti | vachakhemah | amarti | echkamah | vehi
+kol | zoh
+nisiti | vachakhemah
+amarti | echkamah
+vehi
 rechokah | mimeni
 
 7:24
-rachok
-mah | shehayah | ve'amok | amok | mi | yimtza'enu
+rachok | mah | shehayah
+ve'amok | amok | mi | yimtza'enu
 
 7:25
 saboti | ani | velibi | lada'at | velatur
@@ -145,8 +160,7 @@ limtzo | cheshbon
 asher | od | bikshah | nafshi
 velo | matzati
 adam | echad | me'elef | matzati
-ve'ishah | vekhol | eleh
-lo | matzati
+ve'ishah | vekhol | eleh | lo | matzati
 
 7:29
 levad | re'eh | zeh | matzati

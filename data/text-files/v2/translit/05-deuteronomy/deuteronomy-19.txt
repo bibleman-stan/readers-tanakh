@@ -9,8 +9,8 @@ uvevateihem
 
 19:2
 shaloosh | arim
-tavdil | lakh
-betokh | artzekha | asher | Yahweh | eloheikha
+tavdil | lakh | betokh | artzekha
+asher | Yahweh | eloheikha
 noten | lekha
 lerishtah
 
@@ -27,8 +27,7 @@ vezeh | devar | harotzeach
 asher | yanus | shamah
 vachai
 asher | yakeh | et | re'ehu | bivli | da'at
-vehu | lo | sone | lo
-mitemol | shilshom
+vehu | lo | sone | lo | mitemol | shilshom
 
 19:5
 va'asher | yavo | et | re'ehu | vaiya'ar | lachto | etzim
@@ -43,17 +42,18 @@ vachai
 pen | yirdof | go'el | hadam | acharei | harotzeach | ki | yecham | levavo
 vehisigo | ki | yirbeh | haderekh
 vehikahu | nafesh
-velo | ein | mishpat | mavet
-ki | lo | sone | hu | lo
+velo | ein | mishpat | mavet | ki | lo | sone | hu | lo
 mitemol | shilshom
 
 19:7
 al | ken | anokhi | metzavekha
-lemor | shalosh | arim | tavdil | lakh
+lemor
+shalosh | arim
+tavdil | lakh
 
 19:8
-ve'im | yarchiv | Yahweh | eloheikha | et | gevulkha
-ka'asher | Nishba | la'avoteikha | venatan | lekha | et | kol | ha'aretz
+ve'im | yarchiv | Yahweh | eloheikha | et | gevulkha | ka'asher | Nishba | la'avoteikha
+venatan | lekha | et | kol | ha'aretz
 asher | diber
 latet | la'avoteikha
 
@@ -61,11 +61,12 @@ latet | la'avoteikha
 ki | tishmor | et | kol | hamitzvah | hazot | la'asotah | asher | anokhi | metzavekha | haiyom
 le'ahavah | et | Yahweh | eloheikha | velalekhet | bidrakhav | kol | haiyamim
 veyasafta | lekha | od | shalosh | arim
-al | hashalosh | ha'eleh
+al
+hashalosh | ha'eleh
 
 19:10
-velo | yishafekh | dam | naki
-bekerev | artzekha | asher | Yahweh | eloheikha
+velo | yishafekh | dam | naki | bekerev | artzekha
+asher | Yahweh | eloheikha
 noten | lekha
 nachalah
 vehayah | aleikha
@@ -82,34 +83,40 @@ he'arim | ha'el
 
 19:12
 veshalechu | ziknei | iro
-velakechu | oto
-misham | venatenu | oto | beyad | go'el | hadam
+velakechu | oto | misham
+venatenu | oto | beyad | go'el | hadam
 vamet
 
 19:13
-lo | tachos | einekha | alav | uvi'arta | dam | hanaki | Miyisra'el
+lo | tachos | einekha
+alav
+uvi'arta | dam | hanaki | Miyisra'el
 vetov | lakh
 
 19:14
-lo | tasig | gevul | re'akha | asher | gavelu
-rishonim
-benachalatekha | asher | tinchal | ba'aretz
+lo | tasig | gevul | re'akha
+asher | gavelu
+rishonim | benachalatekha | asher | tinchal
+ba'aretz
 asher | Yahweh | eloheikha
 noten | lekha
 lerishtah
 
 19:15
-lo | yakum | ed | echad | be'ish | lekhol | avon | ulekhol | chatat
-bekhol | chet | asher | yecheta
+lo | yakum | ed | echad | be'ish | lekhol | avon | ulekhol | chatat | bekhol | chet
+asher | yecheta
 al | pi | shenei | edim | o | al | pi | sheloshah | edim
 yakum | davar
 
 19:16
-ki | yakum | ed | chamas | be'ish | la'anot | bo | sarah
+ki | yakum | ed | chamas | be'ish
+la'anot | bo
+sarah
 
 19:17
 ve'amedu | shenei | ha'anashim | asher | lahem | hariv
-lifnei | Yahweh | lifnei | hakohanim | vehashofetim
+lifnei | Yahweh
+lifnei | hakohanim | vehashofetim
 asher | yihyu
 baiyamim | hahem
 
@@ -121,15 +128,14 @@ sheker
 anah | ve'achiv
 
 19:19
-va'asitem | lo
-ka'asher | zamam | la'asot | le'achiv | uvi'arta | hara
-mikirbecha
+va'asitem | lo | ka'asher | zamam
+la'asot | le'achiv
+uvi'arta | hara | mikirbecha
 
 19:20
 vehanish'arim
 yishme'u | veyira'u
-velo | yosifu | la'asot | od | kadavar | hara | hazeh
-bekirbecha
+velo | yosifu | la'asot | od | kadavar | hara | hazeh | bekirbecha
 
 19:21
 velo | tachos

@@ -1,13 +1,14 @@
 13:1
-ben | sheloshim | shanah | Sha'ul | bemalekho
+ben | sheloshim | shanah
+Sha'ul | bemalekho
 ve'arba'im | ushetei | shanim | malakh
 al | Yisra'el
 
 13:2
 vaiyivchar | lo | Sha'ul | sheloshet | alafim | Miyisra'el
 vaiyihyu | im | Sha'ul | alpayim | Bemikhmas | uvehar | Beit | El
-ve'elef | hayu | im | Yonatan
-begiv'at | Binyamin | veyeter | ha'am
+ve'elef | hayu | im | Yonatan | begiv'at | Binyamin
+veyeter | ha'am
 shilach
 ish | le'ohalav
 
@@ -21,20 +22,20 @@ ha'ivrim
 
 13:4
 vekhol | Yisra'el | shame'u | lemor | hikah | Sha'ul | et | netziv | pelishtim
-vegam | Niv'ash | Yisra'el
-bapelishtim | vaiyitza'aku | ha'am | acharei | Sha'ul | Hagilgal
+vegam | Niv'ash | Yisra'el | bapelishtim
+vaiyitza'aku | ha'am | acharei | Sha'ul
+Hagilgal
 
 13:5
 ufelishtim | Ne'esfu | lehilachem | im | Yisra'el | sheloshim | elef | rekhev | vesheshet | alafim | parashim
-ve'am
-kachol | asher | al | sefat | haiyam | laro
+ve'am | kachol | asher | al | sefat | haiyam
+laro
 vaiya'alu | vaiyachanu | Vemikhmas
-kidmat
-Beit | Aven
+kidmat | Beit | Aven
 
 13:6
-ve'ish | Yisra'el | ra'u | ki | tzar | lo
-ki | Nigas | ha'am
+ve'ish | Yisra'el | ra'u | ki | tzar | lo | ki | Nigas
+ha'am
 vaiyitchabe'u | ha'am | bame'arot | uvachavachim | uvasela'im
 uvatzerichim
 uvaborot
@@ -63,7 +64,8 @@ vaiya'al
 ha'olah
 
 13:10
-vayhi | kekhaloto | leha'alot | ha'olah | vehineh | Shemu'el
+vayhi | kekhaloto | leha'alot | ha'olah
+vehineh | Shemu'el
 ba
 vaiyetze | Sha'ul | likrato
 levarakho
@@ -77,20 +79,23 @@ ne'esafim | Mikhmas
 
 13:12
 va'omar | atah | yeredu | felishtim | elai | Hagilgal
-ufenei | Yahweh
-lo | chiliti | va'et'apak | va'a'aleh | ha'olah
+ufenei | Yahweh | lo | chiliti
+va'et'apak
+va'a'aleh
+ha'olah
 
 13:13
 vaiyomer | Shemu'el | el | Sha'ul
-Niskalta
-lo | shamarta | et | mitzvat | Yahweh | eloheikha | asher | tzivakh
+Niskalta | lo | shamarta | et | mitzvat | Yahweh | eloheikha | asher | tzivakh
 ki | atah | hekhin | Yahweh | et | mamlakhtekha | el | Yisra'el
 ad | olam
 
 13:14
 ve'atah | mamlakhtekha | lo | takum
 bikesh | Yahweh | lo | ish | kilvavo | vaytzavehu | Yahweh | lenagid | al | amo
-ki | lo | shamarta | et | asher | tzivekha | Yahweh
+ki | lo | shamarta
+et | asher | tzivekha
+Yahweh
 
 13:15
 vaiyakom | Shemu'el | vaiya'al | min | Hagilgal
@@ -100,8 +105,9 @@ keshesh | me'ot | ish
 
 13:16
 Vesha'ul | Veyonatan | beno | veha'am | hanimtza | imam
-yoshevim
-Begeva | Binyamin | ufelishtim | chanu | Vemikhmas
+yoshevim | Begeva | Binyamin
+ufelishtim
+chanu | Vemikhmas
 
 13:17
 vaiyetze | hamashchit | mimachaneh | felishtim
@@ -111,23 +117,23 @@ el | eretz | Shu'al
 
 13:18
 veharosh | echad | yifneh
-derekh
-Beit | Choron
+derekh | Beit | Choron
 veharosh | echad | yifneh | derekh | hagevul
 hanishkaf | al | gei | Hatzevo'im
 hamidbarah
 
 13:19
-vecharash | lo | yimatze
-bekhol | eretz | Yisra'el
-ki | amar | felishtim | pen | ya'asu | ha'ivrim | cherev
+vecharash | lo | yimatze | bekhol
+eretz | Yisra'el | ki | amar | felishtim
+pen | ya'asu | ha'ivrim
+cherev
 o | chanit
 
 13:20
 vaiyeredu | khol | Yisra'el
 hapelishtim
-liltoosh | ish | et | macharashto | ve'et | eto | ve'et | kardumo | ve'et
-machareshato
+liltoosh | ish | et | macharashto | ve'et | eto | ve'et | kardumo
+ve'et | machareshato
 
 13:21
 vehayetah | hapetzirah | fim | lamachareshot | vela'etim
@@ -142,10 +148,8 @@ velo | Nimtza | cherev | vachanit | beyad | kol | ha'am
 asher | et | Sha'ul
 ve'et | Yonatan
 vatimatze | Lesha'ul
-Uleyonatan
-beno
+Uleyonatan | beno
 
 13:23
 vaiyetze | matzav | pelishtim
-el | ma'avar
-Mikhmas
+el | ma'avar | Mikhmas

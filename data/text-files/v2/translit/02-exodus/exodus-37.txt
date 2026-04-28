@@ -7,12 +7,14 @@ komato
 
 37:2
 vaytzapehu | zahav | tahor
-mibayit | umichutz | vaiya'as | lo | zer | zahav
+mibayit | umichutz
+vaiya'as | lo | zer | zahav
 saviv
 
 37:3
 vaiyitzok | lo | arba | tabe'ot | zahav
-al | arba | pa'amotav
+al
+arba | pa'amotav
 ushetei | taba'ot | al | tzal'o | ha'echat
 ushetei | taba'ot
 al | tzal'o
@@ -26,7 +28,10 @@ zahav
 
 37:5
 vaiyave | et | habadim | bataba'ot
-al | tzal'ot | ha'aron | laset | et | ha'aron
+al
+tzal'ot | ha'aron
+laset
+et | ha'aron
 
 37:6
 vaiya'as | kaporet
@@ -38,11 +43,15 @@ rachebah
 37:7
 vaiya'as | shenei | kheruvim
 zahav
-mikshah | asah | otam | mishenei | ketzot | hakaporet
+mikshah | asah | otam
+mishenei
+ketzot | hakaporet
 
 37:8
-keruv | echad | mikatzah | mizeh | ukheruv | echad | mikatzah
-mizeh | min | hakaporet | asah | et | hakeruvim | mishenei | kitzvotov
+keruv | echad | mikatzah | mizeh
+ukheruv | echad | mikatzah | mizeh
+min | hakaporet | asah | et | hakeruvim
+mishenei | kitzvotov
 
 37:9
 vaiyihyu | hakeruvim | poresei | khenafayim | lema'lah | sokhekhim | bekhanfeihem | al | hakaporet
@@ -67,59 +76,70 @@ saviv
 
 37:12
 vaiya'as | lo | misgeret | tofach
-saviv | vaiya'as | zer | zahav | lemisgarto | saviv
+saviv
+vaiya'as | zer | zahav | lemisgarto
+saviv
 
 37:13
 vaiyitzok | lo
 arba | tabe'ot | zahav
 vaiyiten | et | hataba'ot
-al | arba | hape'ot | asher | le'arba | raglav
+al | arba | hape'ot
+asher
+le'arba | raglav
 
 37:14
-le'umat | hamisgeret | hayu | hataba'ot
-batim | labadim | laset | et | hashulchan
+le'umat | hamisgeret
+hayu
+hataba'ot | batim | labadim
+laset
+et | hashulchan
 
 37:15
 vaiya'as | et | habadim | atzei | shitim
 vaytzaf | otam
 zahav
-laset | et | hashulchan
+laset
+et | hashulchan
 
 37:16
 vaiya'as | et | hakelim | asher | al | hashulchan | et | ke'arotav | ve'et | kapotav | ve'et | menakiyotav
 ve'et | hakesavot
 asher | yusakh
-bahen | zahav | tahor
+bahen
+zahav
+tahor
 
 37:17
 vaiya'as | et | hamenorah
 zahav | tahor
 mikshah | asah | et | hamenorah | yerekhah | vekanah
-gevi'eiha | kaftoreiha | uferacheiha
-mimenah | hayu
+gevi'eiha | kaftoreiha | uferacheiha | mimenah | hayu
 
 37:18
 veshishah | kanim
-yotze'im
-mitzideiha | sheloshah | kenei | menorah | mitzidah | ha'echad
-usheloshah | kenei | menorah
-mitzidah | hasheni
+yotze'im | mitzideiha
+sheloshah | kenei | menorah | mitzidah | ha'echad
+usheloshah | kenei | menorah | mitzidah
+hasheni
 
 37:19
 sheloshah | gevi'im | meshukadim | bakaneh | ha'echad | kaftor | vaferach
 usheloshah | gevi'im | meshukadim | bekaneh | echad | kaftor | vafarach
-ken | lesheshet | hakanim | haiyotze'im | min | hamenorah
+ken | lesheshet | hakanim
+haiyotze'im | min | hamenorah
 
 37:20
 uvamenorah
-arba'ah | gevi'im
-meshukadim | kaftoreiha | uferacheiha
+arba'ah | gevi'im | meshukadim | kaftoreiha
+uferacheiha
 
 37:21
 vekhaftor | tachat | shenei | hakanim | mimenah | vekhaftor | tachat | shenei | hakanim | mimenah
 vekhaftor
-tachat | shenei | hakanim
-mimenah | lesheshet | hakanim | haiyotze'im | mimenah
+tachat | shenei | hakanim | mimenah
+lesheshet | hakanim
+haiyotze'im | mimenah
 
 37:22
 kaftoreihem | ukenotam | mimenah | hayu
@@ -131,23 +151,26 @@ shiv'ah | umalkacheiha | umachtoteiha
 zahav | tahor
 
 37:24
-kikar | zahav | tahor | asah | otah | ve'et
-kol | keleiha
+kikar | zahav | tahor | asah | otah
+ve'et | kol | keleiha
 
 37:25
 vaiya'as | et | mizbach | haketoret
 atzei | shitim
-amah | areko | ve'amah | rachebo | ravua | ve'amatayim | komato
-mimenu | hayu | karnotav
+amah | areko | ve'amah | rachebo | ravua | ve'amatayim | komato | mimenu
+hayu | karnotav
 
 37:26
-vaytzaf | oto | zahav | tahor | et | gago | ve'et | kirotav | saviv | ve'et | karnotav
+vaytzaf | oto | zahav | tahor | et | gago | ve'et | kirotav | saviv
+ve'et | karnotav
 vaiya'as | lo | zer | zahav
 saviv
 
 37:27
 ushetei | tabe'ot | zahav | asah | lo | mitachat | lezero | al | shetei | tzal'otav
-al | shenei | tzidav | levatim | levadim
+al
+shenei | tzidav
+levatim | levadim
 laset | oto | bahem
 
 37:28
@@ -159,5 +182,5 @@ zahav
 37:29
 vaiya'as | et | shemen | hamishchah | kodesh
 ve'et | ketoret | hasamim
-tahor
-ma'aseh | rokeach
+tahor | ma'aseh
+rokeach

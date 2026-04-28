@@ -3,8 +3,7 @@ uvekhol | zot
 anachnu | koretim | amanah
 vekhotevim
 ve'al | hechatum
-sareinu | leviyenu
-kohaneinu
+sareinu | leviyenu | kohaneinu
 
 10:2
 ve'al
@@ -17,31 +16,32 @@ Serayah | Azaryah
 Yirmeyah
 
 10:4
-Pashchur | Amaryah
-Malkiyah
+Pashchur | Amaryah | Malkiyah
 
 10:5
-Chatush | Shevanyah
-Malukh
+Chatush | Shevanyah | Malukh
 
 10:6
 Charim | Meremot
 Oadyah
 
 10:7
-Daniyel | Gineton
-Barukh
+Daniyel | Gineton | Barukh
 
 10:8
 Meshulam | Aviyah | Miyamin
 
 10:9
-Ma'azyah | Vilgai | Shema'yah | eleh | hakohanim
+Ma'azyah | Vilgai
+Shema'yah
+eleh
+hakohanim
 
 10:10
 vehalviyim
 Veyeshua | ben | Azanyah
-Binui | mibenei | Chenadad | Kadmi'el
+Binui | mibenei | Chenadad
+Kadmi'el
 
 10:11
 va'acheihem
@@ -49,22 +49,21 @@ Shevanyah | Hodiyah | Kelita
 Pelayah | Chanan
 
 10:12
-Mikha | Rechov | Chashavyah
+Mikha | Rechov
+Chashavyah
 
 10:13
 Zakur | Shereveyah
 Shevanyah
 
 10:14
-Hodiyah | Vani
-Beninu
+Hodiyah | Vani | Beninu
 
 10:15
 rashei
 ha'am
 Par'osh | Pachat | Mo'av
-Eilam | Zatu
-Bani
+Eilam | Zatu | Bani
 
 10:16
 Buni | Azgad | Bevai
@@ -78,18 +77,19 @@ Ater | Chizkiyah
 Azur
 
 10:19
-Hodiyah | Chashum
-Betzai
+Hodiyah | Chashum | Betzai
 
 10:20
 Charif | Anatot
 Noai
 
 10:21
-Magpi'ash | Meshulam | Chezir
+Magpi'ash | Meshulam
+Chezir
 
 10:22
-Mesheizav'el | Tzadok | Yadua
+Mesheizav'el | Tzadok
+Yadua
 
 10:23
 Pelatyah | Chanan
@@ -104,8 +104,7 @@ Halochesh | Pilcha
 Shovek
 
 10:26
-Rechum | Chashavnah
-Ma'aseyah
+Rechum | Chashavnah | Ma'aseyah
 
 10:27
 Va'achiyah | Chanan
@@ -116,8 +115,8 @@ Malukh | Charim | Ba'anah
 
 10:29
 ushe'ar | ha'am | hakohanim | halviyim | hasho'arim | hamshorerim | hanetinim | vekhol | hanivdal | me'amei | ha'aratzot | el | torat | ha'elohim
-nesheihem
-beneihem | uvenoteihem | kol | yodea | mevin
+nesheihem | beneihem | uvenoteihem | kol
+yodea | mevin
 
 10:30
 machazikim | al | acheihem | adireihem
@@ -130,22 +129,25 @@ vechukav
 
 10:31
 va'asher | lo | niten | benoteinu
-le'amei | ha'aretz | ve'et | benoteihem | lo | nikach | levaneinu
+le'amei | ha'aretz
+ve'et | benoteihem | lo | nikach | levaneinu
 
 10:32
 ve'amei | ha'aretz | hamvi'im | et | hamakachot | vekhol | shever | beyom | hashabat | limkor
-lo | nikach | mehem | bashabat | uveyom | kodesh
+lo | nikach | mehem | bashabat
+uveyom | kodesh
 venitosh | et | hashanah | hashevi'it
 umasha | khol | yad
 
 10:33
-vehe'emadnu | aleinu | mitzvot
-latet | aleinu | shelishit | hashekel | bashanah
+vehe'emadnu | aleinu | mitzvot | latet | aleinu | shelishit | hashekel | bashanah
 la'avodat | beit | eloheinu
 
 10:34
 lelechem | hama'arekhet | uminchat | hatamid | ule'olat | hatamid | hashabatot | hechodashim | lamo'adim | velakodashim | velachata'ot
-lekhaper | al | Yisra'el | vekhol | melekhet | beit | eloheinu
+lekhaper
+al | Yisra'el
+vekhol | melekhet | beit | eloheinu
 
 10:35
 vehagoralot | hipalnu | al | kurban | ha'etzim | hakohanim | halviyim | veha'am
@@ -156,23 +158,24 @@ leva'er | al | mizbach | Yahweh | eloheinu | kakatuv | batorah
 10:36
 ulehavi | et | bikurei | admatenu | uvikurei | kol | peri | khol | etz
 shanah | veshanah
-leveit | Yahweh
+leveit
+Yahweh
 
 10:37
-ve'et | bekhorot | baneinu | uvehemteinu
-kakatuv | batorah
-ve'et | bekhorei | vekareinu | vetzoneinu | lehavi | leveit | eloheinu
-lakohanim | hamsharetim | beveit | eloheinu
+ve'et | bekhorot | baneinu | uvehemteinu | kakatuv | batorah
+ve'et | bekhorei | vekareinu | vetzoneinu | lehavi | leveit | eloheinu | lakohanim
+hamsharetim | beveit | eloheinu
 
 10:38
 ve'et | reshit | arisoteinu | uterumoteinu | uferi | khol | etz | tiroosh | veyitzhar | navi | lakohanim | el | lishkhot | beit | eloheinu
 uma'sar | admatenu
-lalviyim | vehem | halviyim | ham'aserim
-bekhol | arei | avodatenu
+lalviyim
+vehem | halviyim
+ham'aserim | bekhol
+arei | avodatenu
 
 10:39
-vehayah | hakohen | ben | Aharon | im | halviyim
-ba'ser | halviyim
+vehayah | hakohen | ben | Aharon | im | halviyim | ba'ser | halviyim
 vehalviyim | ya'alu | et | ma'asar | hama'aser | leveit | eloheinu
 el | haleshakhot
 leveit | ha'otzar

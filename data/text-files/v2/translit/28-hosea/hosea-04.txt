@@ -1,6 +1,5 @@
 4:1
-shim'u | devar | Yahweh
-benei | Yisra'el
+shim'u | devar | Yahweh | benei | Yisra'el
 ki | riv | Layahweh | im | yoshevei | ha'aretz
 ki | ein | emet | ve'ein | chesed | ve'ein | da'at | elohim | ba'aretz
 
@@ -13,25 +12,26 @@ vedamim | bedamim
 naga'u
 
 4:3
-al | ken | te'eval | ha'aretz | ve'umlal | kol | yoshev | bah
-bechaiyat | hasadeh | uve'of | hashamayim | vegam | degei | haiyam
+al | ken | te'eval | ha'aretz | ve'umlal | kol | yoshev | bah | bechaiyat | hasadeh
+uve'of | hashamayim
+vegam | degei | haiyam
 ye'asefu
 
 4:4
 akh | ish | al | yarev
 ve'al | yokhach | ish
-ve'amekha
-kimrivei | khohen
+ve'amekha | kimrivei | khohen
 
 4:5
 vekhashalta | haiyom
 vekhashal | gam | navi | imekha
-layelah | vedamiti | imekha
+layelah
+vedamiti
+imekha
 
 4:6
 Nidmu | ami
-mibeli | hada'at
-ki | atah | hada'at | ma'asta | ve'em'asekha | mikahen | li
+mibeli | hada'at | ki | atah | hada'at | ma'asta | ve'em'asekha | mikahen | li
 vatishkach | torat | eloheikha
 eshkach | baneikha
 gam | ani
@@ -46,15 +46,16 @@ ve'el | avonam
 yis'u | nafsho
 
 4:9
-vehayah | kha'am
-kakohen | ufakadti | alav | derakhav | uma'alalav
+vehayah | kha'am | kakohen
+ufakadti | alav | derakhav
+uma'alalav
 ashiv | lo
 
 4:10
 ve'akhelu | velo | yisba'u
 hiznu
-velo | yifrotzu
-ki | et | Yahweh | azevu | lishmor
+velo | yifrotzu | ki | et | Yahweh | azevu
+lishmor
 
 4:11
 zenut | veyayin | vetiroosh
@@ -63,20 +64,22 @@ yikach | lev
 4:12
 ami | be'etzo | yish'al
 umaklo
-yagid | lo
-ki | ruach | zenunim | hit'ah | vaiyiznu
+yagid | lo | ki | ruach | zenunim | hit'ah
+vaiyiznu
 mitachat | eloheihem
 
 4:13
 al | rashei | heharim | yezabechu | ve'al | hageva'ot | yekateru
-tachat | alon | velivneh | ve'elah
-ki | tov | tzilah | al | ken | tizneinah | benoteikhem
+tachat | alon | velivneh | ve'elah | ki | tov | tzilah
+al | ken | tizneinah | benoteikhem
 vekhaloteikhem
 tena'afnah
 
 4:14
 lo | efkod | al | benoteikhem | ki | tizneinah | ve'al | kaloteikhem | ki | tena'afnah
-ki | hem | im | hazonot | yefaredu | ve'im | hakedeshot | yezabechu
+ki | hem | im | hazonot | yefaredu
+ve'im | hakedeshot
+yezabechu
 ve'am | lo | yavin
 yilavet
 
@@ -89,9 +92,10 @@ ve'al | tishave'u
 chai | Yahweh
 
 4:16
-ki | kefarah | sorerah | sarar | Yisra'el
-atah | yir'em | Yahweh
-kekheves | bamerchav
+ki | kefarah | sorerah
+sarar
+Yisra'el
+atah | yir'em | Yahweh | kekheves | bamerchav
 
 4:17
 chavur | atzabim | Efrayim
@@ -101,9 +105,9 @@ hanach | lo
 sar
 save'am
 hazneh | hiznu
-ahavu | hevu | kalon
-magineiha
+ahavu | hevu | kalon | magineiha
 
 4:19
-tzarar | ruach | otah
-bikhnafeiha | veyevoshu | mizivchotam
+tzarar | ruach | otah | bikhnafeiha
+veyevoshu
+mizivchotam

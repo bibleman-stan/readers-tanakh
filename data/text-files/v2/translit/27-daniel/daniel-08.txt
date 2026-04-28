@@ -1,14 +1,16 @@
 8:1
 bishnat | shaloosh | lemalkhut | Beleshatzar | hamelekh
-chazon | Nir'ah | elai | ani | Daniyel
-acharei | Hanir'ah | elai | batechilah
+chazon | Nir'ah | elai | ani | Daniyel | acharei | Hanir'ah | elai
+batechilah
 
 8:2
 va'er'eh | bechazon
 vayhi | bir'oti
 va'ani | Beshushan | habirah
 asher
-Be'eilam | hamedinah | va'er'eh | bechazon | va'ani | hayiti
+Be'eilam | hamedinah
+va'er'eh | bechazon
+va'ani | hayiti
 al | uval | Ulai
 
 8:3
@@ -22,39 +24,46 @@ ba'acharonah
 
 8:4
 ra'iti | et | ha'ayil | menageach | yamah | vetzafonah | vanegbah | vekhol | chaiyot | lo | ya'amdu | lefanav
-ve'ein | matzil
-miyado | ve'asah | khirtzono | vehigdil
+ve'ein | matzil | miyado
+ve'asah | khirtzono
+vehigdil
 
 8:5
 va'ani | hayiti | mevin | vehineh | tzefir | ha'izim | ba | min | hama'arav | al | penei | khol | ha'aretz
-ve'ein | nogea
-ba'aretz | vehatzafir | keren | chazut | bein | einav
+ve'ein | nogea | ba'aretz
+vehatzafir
+keren | chazut | bein | einav
 
 8:6
 vaiyavo | ad | ha'ayil | ba'al | hakeranayim
 asher | ra'iti
 omed
-lifnei | ha'uval | vaiyarotz | elav | bachamat | kocho
+lifnei | ha'uval
+vaiyarotz | elav
+bachamat | kocho
 
 8:7
 ure'itiv | magia | etzel | ha'ayil | vaiyitmarmar | elav | vaiyakh | et | ha'ayil
 vayshaber | et | shetei | keranav
 velo | hayah | khoach | ba'ayil
-la'amod | lefanav | vaiyashlikhehu | artzah | vaiyirmesehu
-velo | hayah | matzil | la'ayil
-miyado
+la'amod | lefanav
+vaiyashlikhehu | artzah | vaiyirmesehu
+velo | hayah | matzil | la'ayil | miyado
 
 8:8
 utzefir | ha'izim
 higdil | ad | me'od
 ukhe'atzemo | Nishberah | hakeren | hagedolah
 vata'alenah | chazut | arba | tachteiha
-le'arba | ruchot | hashamayim
+le'arba
+ruchot | hashamayim
 
 8:9
 umin | ha'achat | mehem
 yatza | keren | achat
-mitze'irah | vatigdal | yeter | el | hanegev | ve'el | hamizrach | ve'el | hatzevi
+mitze'irah
+vatigdal | yeter | el | hanegev | ve'el | hamizrach
+ve'el | hatzevi
 
 8:10
 vatigdal
@@ -66,19 +75,18 @@ vatirmesem
 ve'ad | sar | hatzava
 higdil
 umimenu | herim | hatamid
-vehushlakh
-mekhon | mikdasho
+vehushlakh | mekhon | mikdasho
 
 8:12
-vetzava | tinaten | al | hatamid
-befasha | vetashlekh | emet | artzah | ve'asetah | vehitzlichah
+vetzava | tinaten | al | hatamid | befasha
+vetashlekh | emet | artzah
+ve'asetah
+vehitzlichah
 
 8:13
-va'eshme'ah | echod | kadoosh
-medaber
+va'eshme'ah | echod | kadoosh | medaber
 vaiyomer | echad | kadoosh | lapalmoni | hamdaber | ad | matai | hechazon | hatamid | vehapesha | shomem
-tet | vekodesh | vetzava
-mirmas
+tet | vekodesh | vetzava | mirmas
 
 8:14
 vaiyomer | elai
@@ -94,17 +102,19 @@ vehineh | omed | lenegdi
 kemar'eh | gaver
 
 8:16
-va'eshma | kol | adam
-bein | Ulai | vaiyikra | vaiyomar | Gavri'el
+va'eshma | kol | adam | bein | Ulai
+vaiyikra | vaiyomar
+Gavri'el
 haven | lehalaz
 et | hamar'eh
 
 8:17
 vaiyavo | etzel | amedi
 uvevo'o | Niv'ati
-va'epelah
-al | panai | vaiyomer | elai | haven | ben | adam
-ki | le'et | ketz | hechazon
+va'epelah | al | panai
+vaiyomer | elai | haven | ben | adam
+ki
+le'et | ketz | hechazon
 
 8:18
 uvedabero | imi
@@ -116,15 +126,15 @@ al | amedi
 
 8:19
 vaiyomer | hini | modi'akha | et | asher | yihyeh
-be'acharit | haza'am | ki | lemo'ed | ketz
+be'acharit | haza'am | ki
+lemo'ed | ketz
 
 8:20
-ha'ayil | asher | ra'ita
-ba'al | hakeranayim | malkhei | Madai | Ufaras
+ha'ayil | asher | ra'ita | ba'al | hakeranayim | malkhei | Madai | Ufaras
 
 8:21
-vehatzafir | hasa'ir
-melekh | Yavan | vehakeren | hagedolah | asher | bein | einav
+vehatzafir | hasa'ir | melekh | Yavan
+vehakeren | hagedolah | asher | bein | einav
 hu
 hamelekh | harishon
 
@@ -135,8 +145,9 @@ arba | malkhuyot | migoy | ya'amodenah
 velo | vekhocho
 
 8:23
-uve'acharit | malkhutam
-kehatem | haposh'im | ya'amod | melekh | az | panim
+uve'acharit | malkhutam | kehatem
+haposh'im
+ya'amod | melekh | az | panim
 umevin | chidot
 
 8:24
@@ -158,8 +169,8 @@ yishaver
 8:26
 umar'eh | ha'erev | vehaboker | asher | Ne'emar
 emet | hu
-ve'atah | setom | hechazon
-ki | leyamim | rabim
+ve'atah | setom | hechazon | ki
+leyamim | rabim
 
 8:27
 va'ani | Daniyel | Nihyeiti | Venecheleiti | yamim

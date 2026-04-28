@@ -1,8 +1,7 @@
 10:1
 vaiyakam | acharei | Avimelekh | lehoshia | et | Yisra'el | Tola | ben | Pu'ah | ben | Dodo
 ish | Yisoshkhar
-vehu | yoshev | Beshamir
-behar | Efrayim
+vehu | yoshev | Beshamir | behar | Efrayim
 
 10:2
 vaiyishpot | et | Yisra'el
@@ -22,8 +21,7 @@ shanah
 10:4
 vayhi | lo | sheloshim | banim | rokhevim | al | sheloshim | ayarim
 usheloshim | ayarim
-lahem
-lahem | yikre'u | chavot | Ya'ir | ad | haiyom | hazeh
+lahem | lahem | yikre'u | chavot | Ya'ir | ad | haiyom | hazeh
 asher
 be'eretz | Hagil'ad
 
@@ -42,24 +40,30 @@ velo | avaduhu
 
 10:7
 vaiyichar | af | Yahweh
-Beyisra'el | vaiyimkerem | beyad | pelishtim | uveyad | benei | Amon
+Beyisra'el
+vaiyimkerem | beyad | pelishtim
+uveyad | benei | Amon
 
 10:8
 vaiyir'atzu | vayrotzetzu | et | benei | Yisra'el
-bashanah | hahi
+bashanah
+hahi
 shemoneh | esreh | shanah | et | kol | benei | Yisra'el | asher | be'ever | Haiyarden
-be'eretz | ha'emori | asher | Bagil'ad
+be'eretz | ha'emori
+asher | Bagil'ad
 
 10:9
 vaiya'avru | venei | Amon | et | Haiyarden
-lehilachem | gam | Bihudah | Uvevinyamin | uveveit | Efrayim
-vatetzer | Leyisra'el
-me'od
+lehilachem | gam | Bihudah | Uvevinyamin
+uveveit | Efrayim
+vatetzer | Leyisra'el | me'od
 
 10:10
 vaiyiz'aku | benei | Yisra'el
 el | Yahweh
-lemor | chatanu | lakh | vekhi | azavnu | et | eloheinu
+lemor
+chatanu | lakh
+vekhi | azavnu | et | eloheinu
 vana'avod
 et | habe'alim
 
@@ -72,8 +76,10 @@ umin | pelishtim
 
 10:12
 vetzidonim | Va'amalek | Uma'on
-lachatzu | etkhem | vatitz'aku | elai | va'oshi'ah | etkhem
-miyadam
+lachatzu
+etkhem
+vatitz'aku | elai
+va'oshi'ah | etkhem | miyadam
 
 10:13
 ve'atem | azavtem | oti
@@ -82,31 +88,35 @@ elohim | acherim
 lakhen | lo | osif | lehoshia | etkhem
 
 10:14
-lekhu | veza'aku | el | ha'elohim | asher | bechartem
-bam | hemah | yoshi'u | lakhem | be'et | tzaratkhem
+lekhu | veza'aku | el | ha'elohim
+asher | bechartem
+bam
+hemah | yoshi'u | lakhem | be'et | tzaratkhem
 
 10:15
 vaiyomeru | venei | Yisra'el | el | Yahweh | chatanu
-aseh | atah | lanu
-kekhol | hatov | be'eineikha | akh | hatzilenu | na
+aseh | atah | lanu | kekhol | hatov | be'eineikha
+akh | hatzilenu | na
 haiyom | hazeh
 
 10:16
 vaiyasiru | et | elohei | hanekhar | mikirbam
 vaiya'avdu
 et | Yahweh
-vatiktzar | nafsho
-ba'amal | Yisra'el
+vatiktzar | nafsho | ba'amal | Yisra'el
 
 10:17
 vaiyitza'aku | benei | Amon
 vaiyachanu
-Bagil'ad | vaiye'asefu | benei | Yisra'el
+Bagil'ad
+vaiye'asefu | benei | Yisra'el
 vaiyachanu
 Bamitzpah
 
 10:18
 vaiyomeru | ha'am | sarei | Gil'ad | ish | el | re'ehu
-mi | ha'ish | asher | yachel
-lehilachem | bivnei | Amon | yihyeh | lerosh
-lekhol | yoshevei | Gil'ad
+mi | ha'ish
+asher | yachel
+lehilachem | bivnei | Amon
+yihyeh | lerosh | lekhol
+yoshevei | Gil'ad

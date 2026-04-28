@@ -1,7 +1,9 @@
 5:1
 ashirah | na | lididi
 shirat | dodi
-lekharmo | kerem | hayah | lididi | bekeren | ben | shamen
+lekharmo
+kerem | hayah | lididi
+bekeren | ben | shamen
 
 5:2
 vay'azekehu | vaysakelehu | vaiyita'ehu | sorek
@@ -14,18 +16,19 @@ vaiya'as | be'ushim
 5:3
 ve'atah | yoshev | Yerushalim
 ve'ish | Yehudah
-shiftu | na
-beini | uvein | karmi
+shiftu | na | beini
+uvein | karmi
 
 5:4
-mah | la'asot | od | lekharmi | velo | asiti
-bo | madua | kiveiti | la'asot | anavim
+mah | la'asot | od | lekharmi
+velo | asiti | bo | madua | kiveiti | la'asot | anavim
 vaiya'as | be'ushim
 
 5:5
 ve'atah | odi'ah | na | etkhem
 et | asher | ani | oseh
-lekharmi | haser | mesukato | vehayah | leva'er
+lekharmi
+haser | mesukato | vehayah | leva'er
 parotz | gedero
 vehayah | lemirmas
 
@@ -33,8 +36,7 @@ vehayah | lemirmas
 va'ashitehu | vatah | lo | yizamer | velo | ye'ader
 ve'alah | shamir
 vashayit
-ve'al | he'avim | atzaveh
-mehamtir | alav | matar
+ve'al | he'avim | atzaveh | mehamtir | alav | matar
 
 5:7
 ki | kherem | Yahweh | tzeva'ot | beit | Yisra'el
@@ -42,36 +44,38 @@ ve'ish | Yehudah
 neta
 sha'ashu'av
 vaykav | lemishpat | vehineh | mispach
-litzdakah | vehineh | tze'akah
+litzdakah
+vehineh | tze'akah
 
 5:8
 ho | magi'ei | vayit | bevayit
 sadeh | vesadeh
 yakrivu
 ad | efes | makom
-vehushavtem | levadekhem
-bekerev | ha'aretz
+vehushavtem | levadekhem | bekerev | ha'aretz
 
 5:9
-be'azenai | Yahweh | tzeva'ot
+be'azenai
+Yahweh | tzeva'ot
 im | lo | batim | rabim | leshamah | yihyu
-gedolim | vetovim
-me'ein | yoshev
+gedolim | vetovim | me'ein | yoshev
 
 5:10
-ki | aseret | tzimdei | kherem | ya'asu
-bat | echat | vezera | chomer | ya'aseh | eifah
+ki | aseret | tzimdei | kherem
+ya'asu | bat | echat | vezera | chomer
+ya'aseh | eifah
 
 5:11
 ho | mashkimei | vaboker
-shekhar | yirdofu
-me'acharei | vaneshef | yayin | yadlikem
+shekhar | yirdofu | me'acharei | vaneshef
+yayin
+yadlikem
 
 5:12
 vehayah | khinor | vanevel | tof | vechalil | vayayin
-mishteihem | ve'et | po'al | Yahweh | lo | yabitu
-uma'aseh | yadav
-lo | ra'u
+mishteihem
+ve'et | po'al | Yahweh | lo | yabitu
+uma'aseh | yadav | lo | ra'u
 
 5:13
 lakhen | galah | ami | mibeli | da'at
@@ -80,8 +84,9 @@ vahamono
 tzicheh | tzama
 
 5:14
-lakhen | hirchivah | she'ol | nafshah | ufa'arah | fiha
-livli | chok | veyarad | hadarah | vahamonah | ushe'onah
+lakhen | hirchivah | she'ol | nafshah
+ufa'arah | fiha | livli | chok
+veyarad | hadarah | vahamonah | ushe'onah
 ve'alez | bah
 
 5:15
@@ -92,15 +97,20 @@ tishpalnah
 
 5:16
 vaiyigbah | Yahweh | tzeva'ot
-bamishpat | veha'el | hakadoosh | nikdash | bitzdakah
+bamishpat
+veha'el | hakadoosh
+nikdash | bitzdakah
 
 5:17
-vera'u | khevasim
-kedaveram | vecharevot | mechim | garim | yokhelu
+vera'u | khevasim | kedaveram
+vecharevot | mechim
+garim | yokhelu
 
 5:18
 ho | moshekhei | he'avon
-bechavlei | hashav | vekha'avot | ha'agalah | chata'ah
+bechavlei | hashav
+vekha'avot | ha'agalah
+chata'ah
 
 5:19
 ha'omerim | yemaher | yachishah | ma'asehu
@@ -123,35 +133,39 @@ nevonim
 5:22
 ho
 giborim
-lishtot | yayin | ve'anshei | chayil | limsokh | shekhar
+lishtot | yayin
+ve'anshei | chayil
+limsokh | shekhar
 
 5:23
-matzdikei | rasha | ekev | shochad | vetzidkat | tzadikim
+matzdikei | rasha
+ekev | shochad
+vetzidkat | tzadikim
 yasiru | mimenu
 
 5:24
 lakhen | ke'ekhol | kash | leshon | esh | vachashash | lehavah | yirpeh
 sharesham | kamak | yihyeh
-ufircham
-ka'avak | ya'aleh
+ufircham | ka'avak | ya'aleh
 ki | ma'asu | et | torat | Yahweh | tzeva'ot
 ve'et | imrat | kedoosh | Yisra'el
 ni'etzu
 
 5:25
 al | ken | charah | af | Yahweh | be'amo | vaiyet | yado | alav | vaiyakehu | vaiyirgezu | heharim
-vatehi | nivlatam | kasuchah
-bekerev | chutzot | bekhol | zot | lo | shav | apo | ve'od
+vatehi | nivlatam | kasuchah | bekerev | chutzot | bekhol | zot | lo | shav | apo
+ve'od
 yado | netuyah
 
 5:26
 venasa | nes | lagoyim | merachok
-vesharak | lo
-miktzeh | ha'aretz | vehineh | meherah | kal | yavo
+vesharak | lo | miktzeh | ha'aretz
+vehineh | meherah
+kal | yavo
 
 5:27
-ein | ayef | ve'ein | koshel | bo
-lo | yanum | velo | yishan
+ein | ayef | ve'ein | koshel | bo | lo | yanum
+velo | yishan
 velo | Niftach | ezor | chalatzav
 velo | Nitak
 serokh | ne'alav
@@ -161,17 +175,18 @@ asher | chitzav | shenunim
 vekhol | kashetotav
 derukhot
 parsot | susav | katzar | Nechshavu
-vegalgilav
-kasufah
+vegalgilav | kasufah
 
 5:29
 she'agah | lo
-kalavi | yisha'ag | kakefirim | veyinhom | veyochez | teref
+kalavi
+yisha'ag | kakefirim | veyinhom | veyochez | teref
 veyaflit
 ve'ein | matzil
 
 5:30
 veyinhom | alav | baiyom | hahu
-kenahamat | yam | venibat | la'aretz | vehineh | choshekh | tzar | va'or
-chashakh
-ba'arifeiha
+kenahamat | yam
+venibat | la'aretz | vehineh | choshekh
+tzar | va'or
+chashakh | ba'arifeiha

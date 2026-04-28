@@ -27,7 +27,8 @@ tzadik | veyashar
 hu
 
 32:5
-shichet | lo | lo | banav | mumam
+shichet | lo | lo
+banav | mumam
 dor | ikesh
 ufetaltol
 
@@ -360,10 +361,12 @@ al | asher | me'altem | bi | betokh | benei | Yisra'el
 bemei | merivat | Kadesh
 midbar | Tzin
 al | asher | lo | kidashtem | oti
-betokh | benei | Yisra'el
+betokh
+benei | Yisra'el
 
 32:52
-ki | mineged | tir'eh | et | ha'aretz
+ki | mineged
+tir'eh | et | ha'aretz
 veshamah | lo | tavo
 el | ha'aretz
 asher | ani | noten

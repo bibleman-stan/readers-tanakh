@@ -2,21 +2,21 @@
 uva'et | hahi | ya'amod | Mikha'el | hasar | hagadol | ha'omed | al | benei | amekha
 vehayetah | et | tzarah
 asher | lo | Nihyetah | mihyot | goy
-ad | ha'et | hahi
-uva'et | hahi | yimalet | amekha
-kol | hanimtza | katuv | basefer
+ad
+ha'et | hahi
+uva'et | hahi | yimalet | amekha | kol | hanimtza | katuv | basefer
 
 12:2
-verabim
-miyeshenei | admat | afar | yakitzu | eleh | lechaiyei | olam
-ve'eleh | lacharafot
-ledir'on | olam
+verabim | miyeshenei | admat | afar
+yakitzu
+eleh | lechaiyei | olam
+ve'eleh | lacharafot | ledir'on | olam
 
 12:3
 vehamaskilim
-yazhiru
-kezohar | harakia | umatzdikei | harabim
-kakokhavim | le'olam | va'ed
+yazhiru | kezohar | harakia
+umatzdikei | harabim | kakokhavim
+le'olam | va'ed
 
 12:4
 ve'atah | Daniyel | setom | hadevarim | vachatom | hasefer
@@ -34,7 +34,9 @@ ve'echad | henah | lisfat | hay'or
 12:6
 vaiyomer | la'ish | levush | habadim
 asher | mima'al
-lemeimei | hay'or | ad | matai | ketz | hapela'ot
+lemeimei | hay'or
+ad | matai
+ketz | hapela'ot
 
 12:7
 va'eshma | et | ha'ish | levush | habadim | asher | mima'al | lemeimei | hay'or
@@ -48,8 +50,8 @@ tikhleinah | khol | eleh
 va'ani | shama'ti
 velo | avin
 va'omerah
-adoni
-mah | acharit | eleh
+adoni | mah | acharit
+eleh
 
 12:9
 vaiyomer
@@ -59,8 +61,9 @@ ad | et | ketz
 12:10
 yitbararu | veyitlabenu | veyitzarefu | rabim
 vehirshi'u | resha'im
-velo | yavinu
-kol | resha'im | vehamaskilim | yavinu
+velo | yavinu | kol | resha'im
+vehamaskilim
+yavinu
 
 12:11
 ume'et | husar | hatamid
@@ -72,9 +75,9 @@ elef | matayim | vetish'im
 12:12
 ashrei | hamchakeh
 veyagia
-leyamim | elef | shelosh | me'ot | sheloshim | vachamishah
+leyamim
+elef | shelosh | me'ot | sheloshim | vachamishah
 
 12:13
-ve'atah
-lekh | laketz | vetanuach | veta'amod | legoralekha
-leketz | haiyamin
+ve'atah | lekh | laketz
+vetanuach | veta'amod | legoralekha | leketz | haiyamin

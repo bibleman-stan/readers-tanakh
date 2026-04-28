@@ -1,16 +1,19 @@
 15:1
 vayhi | hagoral | lemateh | benei | Yehudah
-lemishpechotam | el | gevul | Edom | midbar | Tzin | negbah
-miktzeh | teiman
+lemishpechotam
+el | gevul | Edom | midbar | Tzin | negbah | miktzeh | teiman
 
 15:2
 vayhi | lahem | gevul | negev
-miktzeh | yam | hamelach | min | halashon | haponeh | negbah
+miktzeh
+yam | hamelach | min | halashon
+haponeh | negbah
 
 15:3
 veyatza | el | minegev | Lema'aleh | Akrabim | ve'avar | Tzinah
 ve'alah | minegev
-Lekadesh | Barnea | ve'avar | Chetzron | ve'alah | Adarah
+Lekadesh | Barnea
+ve'avar | Chetzron | ve'alah | Adarah
 venasav
 Hakarka'ah
 
@@ -25,21 +28,22 @@ gevul | negev
 ugevul | kedemah | yam | hamelach
 ad | ketzeh
 Haiyarden
-ugevul | lif'at | tzafonah | mileshon | haiyam
-miktzeh | Haiyarden
+ugevul | lif'at | tzafonah | mileshon | haiyam | miktzeh
+Haiyarden
 
 15:6
 ve'alah | hagevul | Beit | Chagelah
-ve'avar
-mitzefon | Leveit | Ha'aravah | ve'alah | hagevul
-even | Bohan
-ben | Re'uven
+ve'avar | mitzefon
+Leveit | Ha'aravah
+ve'alah | hagevul
+even | Bohan | ben | Re'uven
 
 15:7
 ve'alah | hagevul | Devirah | me'emek | Akhor
 vetzafonah | poneh | el | Hagilgal | asher | nokhach | lema'aleh | Adumim
 asher | minegev
-lanachal | ve'avar | hagevul | el | mei | Ein | Shemesh
+lanachal
+ve'avar | hagevul | el | mei | Ein | Shemesh
 vehayu | totze'otav
 el | Ein | Rogel
 
@@ -83,14 +87,15 @@ zeh | gevul | benei | Yehudah | saviv | lemishpechotam
 
 15:13
 Ulekhalev | ben | Yefuneh | natan | chelek | betokh | benei | Yehudah
-el | pi | Yahweh
-Lihoshua | et | Kiryat | Arba | avi | ha'anak
+el | pi | Yahweh | Lihoshua
+et | Kiryat | Arba | avi | ha'anak
 hi | Chevron
 
 15:14
 vaiyoresh | misham | Kalev
-et | sheloshah
-benei | ha'anak | et | Sheshai | ve'et | Achiman | ve'et | Talmai | yelidei
+et | sheloshah | benei | ha'anak
+et | Sheshai | ve'et | Achiman | ve'et | Talmai
+yelidei
 ha'anak
 
 15:15
@@ -115,8 +120,9 @@ le'ishah
 
 15:18
 vayhi | bevo'ah | vatesitehu | lish'ol | me'et | aviha | sadeh
-vatitznach
-me'al | hachamor | vaiyomer | lah | Kalev | mah | lakh
+vatitznach | me'al | hachamor
+vaiyomer | lah | Kalev
+mah | lakh
 
 15:19
 vatomer | tenah | li | verakhah | ki | eretz | Hanegev | netatani
@@ -127,13 +133,13 @@ ve'et
 gulot | tachtiyot
 
 15:20
-zot | nachalat | mateh | venei | Yehudah
-lemishpechotam
+zot | nachalat | mateh | venei | Yehudah | lemishpechotam
 
 15:21
 vaiyihyu | he'arim | miktzeh | lemateh | venei | Yehudah
-el | gevul | Edom
-Banegbah | Kavtze'el | Ve'eder | Veyagur
+el | gevul | Edom | Banegbah
+Kavtze'el | Ve'eder
+Veyagur
 
 15:22
 Vekinah | Vedimonah
@@ -164,7 +170,8 @@ Uveit | Palet
 Vachatzar | Shu'al | Uve'er | Sheva | Uvizyotyah
 
 15:29
-Ba'alah | Ve'iyim | Va'atzem
+Ba'alah | Ve'iyim
+Va'atzem
 
 15:30
 Ve'eltolad | Ukhesil
@@ -177,10 +184,13 @@ Vesansanah
 15:32
 Uleva'ot | Veshilchim
 Ve'ayin | Verimon
-kol | arim | esrim | vatesha | vechatzreihen
+kol | arim | esrim | vatesha
+vechatzreihen
 
 15:33
-bashefelah | Eshta'ol | Vetzare'ah | Ve'ashnah
+bashefelah
+Eshta'ol | Vetzare'ah
+Ve'ashnah
 
 15:34
 Vezanoach | Ve'ein | Ganim
@@ -208,18 +218,22 @@ Vedil'an | Vehamitzpeh
 Veyakete'el
 
 15:39
-Lakhish | Uvatzekat | Ve'eglon
+Lakhish | Uvatzekat
+Ve'eglon
 
 15:40
 Vekhabon | Velachmas
 Vekhitlish
 
 15:41
-Ugederot
-Beit | Dagon | Vena'amah | Umakedah | arim | shesh | esreh | vechatzreihen
+Ugederot | Beit | Dagon | Vena'amah
+Umakedah
+arim | shesh | esreh
+vechatzreihen
 
 15:42
-Livnah | Va'eter | Ve'ashan
+Livnah | Va'eter
+Ve'ashan
 
 15:43
 Veyiftach | Ve'ashnah
@@ -235,7 +249,9 @@ Ekron | uvenoteiha
 vachatzereiha
 
 15:46
-Me'ekron | vayamah | kol | asher | al | yad | Ashdod | vechatzreihen
+Me'ekron | vayamah
+kol | asher | al | yad | Ashdod
+vechatzreihen
 
 15:47
 Ashdod | benoteiha | vachatzereiha | Azah | benoteiha | vachatzereiha
@@ -302,7 +318,8 @@ Veharabah
 arim | shetayim | vechatzreihen
 
 15:61
-bamidbar | Beit | Ha'aravah | Midin | Usekhakhah
+bamidbar | Beit | Ha'aravah | Midin
+Usekhakhah
 
 15:62
 Vehanivshan | Ve'ir | Hamelach
@@ -310,7 +327,7 @@ Ve'ein | Gedi
 arim | shesh | vechatzreihen
 
 15:63
-ve'et | hayvusi | yoshevei | Yerushalim
-lo | yukhelu | venei | Yehudah | lehorisham
+ve'et | hayvusi | yoshevei | Yerushalim | lo | yukhelu | venei | Yehudah | lehorisham
 vaiyeshev | hayvusi | et | benei | Yehudah | Birushalim
-ad | haiyom | hazeh
+ad
+haiyom | hazeh
