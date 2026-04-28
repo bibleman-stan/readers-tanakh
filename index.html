@@ -1510,7 +1510,7 @@ const BOOKS = {
 };
 
 const BOOK_KEYS = Object.keys(BOOKS);
-let currentBook = 'genesis';
+let currentBook = 'jonah';  // small default — Genesis-class books (3+MB DOM) hang on initial load; users opt in via picker
 let currentChapter = 1;
 let bookCache = {};
 let expandedBook = null;
