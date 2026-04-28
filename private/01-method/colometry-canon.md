@@ -315,6 +315,8 @@ But the te'amim are **not a structural prior.** They are evidence.
 
 This is the central methodological correction relative to the predecessor stub canon.
 
+**Validator-architecture corollary.** The te'amim demotion has an operational reach into validator design. Validators (Layer 2) must trigger on Hebrew morpho-syntactic patterns — lexical class, morphology, syntactic position, formula presence, prefix class, agreement features. Validators must NEVER trigger on te'amim glyph placement or te'amim-derived positional concepts (atnach-domain membership, tifcha-as-servant position, zaqef-tier hierarchy, paseq presence, etc.). Te'amim placement MAY appear as corroborating or disagreeing evidence in a finding's defensibility-capture per Rule H8, but never as the trigger that surfaced the candidate. **Diagnostic test:** if the validator wouldn't fire on text stripped of te'amim, its trigger is te'amim-dependent and the architecture is wrong. Te'amim-meta-rules (Rule H11 Tifcha-as-Servant, the prose-vs-Sifrei-Emet routing, etc.) remain valid as editorial guidance for human editors reviewing the v1-baseline draft, but they do not become corpus-wide mechanical sweeps. **WHY:** even framing a validator as "demoting te'amim by merging across them" operationally promotes the te'amim as the primary signal — the universe of candidates surfaced by such a validator is defined by te'amim placement, which is exactly the prior the §1 demotion rejects. **Provenance:** Stan flagged this 2026-04-28 against a proposed `validate_tifcha_servant.py`; the validator was killed in design.
+
 ### Punctuation, Te'amim Glyphs, and the Masoretic Apparatus Are Not Break Signals
 
 The Masoretic apparatus — niqqud, te'amim, Ketiv/Qere markings, sof pasuq, paseq, soph pasuq, the maqqef — is preserved in the printed text for fidelity. Of these:
@@ -484,6 +486,7 @@ Hebrew-specific rules use the H-prefix to distinguish them from sibling-canon ru
 | H15 | Casus pendens / left-dislocation | Mechanical | Topic-fronted NP + resumptive pronoun in main clause | Topic earns its own line (structural justification 5) |
 | H16 | FEF wayehi protasis | Mechanical | *וַיְהִי* + temporal/circumstantial protasis + main clause | Protasis own line; main clause starts fresh |
 | H17 | Genealogy / list-formula handling | Editorial | Genealogical formula (*X הוֹלִיד אֶת־Y וַיֵּלֶד בָּנִים וּבָנוֹת*) | List-uniform per Parallel-List Uniformity Principle; merge per-generation member to one line |
+| H18 | Clause-nucleus integrity (verbless / participial / verb-PP-complement) | Mechanical + judgment | NP-ending line followed by prep- or participle-fronted next line, no finite verb either side | MERGE (default for short cases ≤8 prosodic words); SPLIT permitted for heavy predicate, casus pendens, embedded poetry, parallel bicolon |
 
 **Guidelines** (useful tendencies, not strict rules): line length as signal; vocative splitting nuances; fronted-adverbial weight thresholds; compound-divine-name handling.
 
@@ -528,7 +531,7 @@ Authoritative table: [`data/syntax-reference/hebrew-break-legality.md`](../../da
 
 #### Rule-to-Table Mapping
 
-Canon rules H1–H17 cite Layer 1 rows by signature. The grammatical floor lives in Layer 1; the editorial overlay lives in this canon. When a rule says "merge X," verify both that the move is editorially preferred (canon §5) **and** that the table doesn't forbid it (Layer 1).
+Canon rules H1–H18 cite Layer 1 rows by signature. The grammatical floor lives in Layer 1; the editorial overlay lives in this canon. When a rule says "merge X," verify both that the move is editorially preferred (canon §5) **and** that the table doesn't forbid it (Layer 1).
 
 | Canon rule | Layer 1 row(s) cited |
 |---|---|
@@ -543,6 +546,7 @@ Canon rules H1–H17 cite Layer 1 rows by signature. The grammatical floor lives
 | H14 (Discourse Particles) | Conjunction-prefix and proclitic-stranding rows |
 | H15 (Casus Pendens / Left-Dislocation) | Casus pendens boundary |
 | H16 (FEF Wayehi Protasis) | Wayyehi / wehayah boundary |
+| H18 (Clause-Nucleus Integrity: verbless / participial / verb-PP-complement) | Apposition boundary, Bound enclitic split (H18.2 participial complement); H18.3 inherits H7's verb-object integrity from canon |
 
 Other canon rules (H6 Ketiv/Qere, H8 Te'amim-as-Evidence, H10 Cross-Verse Continuity, H12 Petucha/Setuma, H13 Special Letters, H17 Genealogy/List-Formula) operate above this surface — they are textual-tradition policies, editorial-judgment rules, or paragraph-scale concerns where per-line break-legality does not apply.
 
@@ -868,6 +872,51 @@ INTRODUCING (stack on own line) earns a split ONLY when one of three formal anch
 
 **SCOPE:** Gen 5, Gen 10, Gen 11, Gen 36, 1 Chr 1–9, similar genealogical blocks. Legal lists (Lev 11 dietary, Deut 14 dietary, Deut 27 curses, Deut 28 blessings) per the same principle. Acrostic structures (Pss 119, Lam 1–4) — list-uniform within the acrostic-letter-stanza scope.
 
+### Rule H18 — Clause-Nucleus Integrity (Verbless / Participial / Verb-PP-Complement)
+
+**Grammatical basis.** Hebrew has no overt copula in present-tense verbless clauses (Joüon-Muraoka §154; Waltke-O'Connor §8.4; GKC §141). Subject and predicate sit in juxtaposition and form a single predication. Participial predicates (with or without obligatory complement) similarly fill the slot of a finite verb (JM §121; WO §37.6) and form one predication with their subject. Finite verbs that govern an obligatory PP-complement (*שָׁמַע ל*, *נָשָׂא עֵינַיִם אֶל*, *פָּנָה אֶל*) form one integrated predication with the complement (already in M2's body — extended here with explicit signature for validator detection). The mechanical te'amim-derived v1-baseline frequently splits subject from predicate-PP in verbless clauses and subject from participial predicate, over-fragmenting the basic predication. This rule names the default-MERGE behavior across the three sub-cases.
+
+**Sub-rules:**
+
+- **H18.1 — Verbless predicate integrity.** Subject (NP) + non-verbal predicate (NP / PP / Adj) with no copula. JM §154; WO §8.4. Default-MERGE for short cases.
+- **H18.2 — Participial predicate integrity.** Subject (NP) + participial predicate (active or passive participle, with or without obligatory complement). JM §121; WO §37.6 (participle "fills the slot of a finite verb"). Default-MERGE for short cases.
+- **H18.3 — Verb-PP-complement integrity (M2 corpus extension).** Finite verb + obligatory PP-complement (*שָׁמַע ל*, *נָשָׂא עֵינַיִם אֶל*, *פָּנָה אֶל*). Already in M2's body; extended here with explicit morpho-syntactic signature for validator detection.
+
+**Trigger** (morpho-syntactic; no te'amim glyph references): line ends in NP not bearing finite-verb skeleton; next line begins with preposition (*עַל*, *אֶל*, *בְּ*, *לְ*, *מִן*, compound-prep) OR bare participle morphology (active or passive). Combined ≤8 prosodic words. NO finite verb on either line.
+
+**Diagnostic.** When the trigger fires and no forced-no-merge exception below applies, MERGE the two lines into a single colometric unit expressing the verbless / participial / verb-PP predication. Combined-length check is a guardrail against over-merging into substantive-adjunct territory (justification 5); cases over 8 prosodic words are evaluated per-instance rather than mechanically merged.
+
+**Forced-no-merge exceptions (cross-rule precedence — these win over H18):**
+- H4 (vocative position).
+- H9 (divine-title appositive in vocative scope).
+- H14 (sentence-initial discourse particle *הִנֵּה* / *אַף* / *עַל־כֵּן* on next line).
+- H15 (resumptive pronoun on next line — casus pendens).
+- H16 (FEF *wayehi* protasis still open).
+- M3 (bare-governing participle without complement).
+- Heavy subject (relative clause attached to subject; ≥2 appositives; construct chain ≥3 deep).
+- Heavy participial complement (DO + PP, ≥5 prosodic words on participial side).
+- Sifrei Emet routing (Pss / Prov / Job 3:1–42:6).
+- Embedded-poetry chapter list (Exod 15, Deut 32, Deut 33, Judg 5, 1 Sam 2:1–10, 2 Sam 22, Isa 12, Hab 3, Lam 1–5, Song 1–8, Eccl 3:2–8).
+- Acrostic detection (Lam 1–4, Pss 9/10, 25, 34, 37, 111, 112, 119, 145, Pro 31:10–31, Nah 1:2–8).
+- Both lines have a finite verb anywhere (parallelism territory, not verbless predication).
+- Next-line preposition takes *לְ* + infinitive (justification 5 purpose-PP territory).
+
+**Examples:**
+
+- **MERGE candidate (Gen 1:2):** *וְחֹשֶׁךְ // עַל־פְּנֵי תְהוֹם* — verbless clause subject + locative predicate; combined 5 prosodic words; no fronted topic. H18.1 fires.
+- **MERGE candidate (Gen 1:2):** *וְרוּחַ אֱלֹהִים מְרַחֶפֶת // עַל־פְּנֵי הַמָּיִם* — circumstantial-participial clause; participle + obligatory PP-complement. H18.2 fires.
+- **PRESERVE-SPLIT (Deut 33:26):** *אֵין כָּאֵל יְשֻׁרוּן // רֹכֵב שָׁמַיִם בְעֶזְרֶךָ* — embedded-poetry chapter (Mosaic blessings); Deut 33 hard-skip applies. H18 does NOT fire.
+- **PRESERVE-SPLIT (Lam 3:25):** *טוֹב יְהוָה לְקֹוָיו // לְנֶפֶשׁ תִּדְרְשֶׁנּוּ* — acrostic chapter; Lam 3 hard-skip applies. H18 does NOT fire.
+- **PRESERVE-SPLIT (Pro 25:11):** *תַּפּוּחֵי זָהָב בְּמַשְׂכִּיּוֹת כָּסֶף // דָּבָר דָּבֻר עַל־אָפְנָיו* — Sifrei Emet routing applies. H18 does NOT fire. (Even if not routed Sifrei Emet, the next line begins with bare NP not prep / participle, so signature does not match.)
+
+**Defensibility capture (mandatory):**
+
+- **WHY:** Hebrew has no overt copula in present-tense verbless clauses; the te'amim mark prosodic chant pauses, not propositional boundaries. The mechanical te'amim-derived v1-baseline often splits subject from predicate-PP in verbless clauses and subject from participial predicate — over-fragmentation of the basic predication. Naming this as a closed rule prevents the over-fragmentation.
+- **HOW WE KNOW:** Joüon-Muraoka §154 (verbless clauses), §121 (participial predicates), §156 (casus pendens exception); Waltke-O'Connor §8.4 (verbless clause word order), §37.6 (participial predicate as verb-equivalent); GKC §141 (nominal sentences). Corpus survey 2026-04-28 found 1,533 strict-signature candidates corpus-wide. Six-agent hostile audit (2026-04-28; verdict: REFINE-FIRST then PROCEED OPTION-A) confirmed grammatical basis and identified the closed-list of forced-no-merge exceptions above.
+- **SCOPE:** All books except Sifrei Emet routing + embedded-poetry list + acrostic chapters. Does NOT apply when next line begins with finite verb (parallelism territory). Does NOT apply when subject or predicate is heavy (substantive-adjunct territory per justification 5).
+
+**Note on architectural choice.** Option A (new H18) was chosen over Option B (extend M2). The cross-rule integrity audit identified Option B as closed-list smuggling per §2 scope diagnostic. WO §37.6's "participle fills the slot of a finite verb" is cited in H18.2's grammatical basis without nesting H18 under M2.
+
 ---
 
 ## §6 Validator Suite
@@ -901,6 +950,14 @@ After any pipeline-changing pass (new rule, reformatter update, build script cha
 | **Genesis 1** | Prose narrative + creation formula | Rule H1 maqqef-group, Rule H17 list-formula (the days-of-creation formula), Parallel-List Uniformity Principle |
 | **Deuteronomy 27** | Legal list | Parallel-List Uniformity Principle (the *אָרוּר* curse-series), Authorial Asymmetry test |
 | **Psalm 1** | Sifrei Emet wisdom | Sifrei Emet stichometry, te'amim-as-evidence in poetic register, M1 bonded-pair tests on common psalmic doublets |
+| **Exodus 15** | Embedded prose-cantillated poetry (Song of the Sea) | Embedded-poetry skip-gate for H18; Rule H11 + Authorial Asymmetry interaction; structural justification 1 (parallel bicolon) |
+| **Deuteronomy 32** | Embedded prose-cantillated poetry (Ha'azinu) | H18 hard-skip (densest embedded-poetry chapter in Torah); mixed verbal/verbless bicola |
+| **Deuteronomy 33** | Embedded prose-cantillated poetry (Mosaic blessings) | H18 hard-skip; **Deut 33:26 canonical regression case** (verbless-NP // bare-participle must NOT merge) |
+| **Judges 5** | Embedded prose-cantillated poetry (Song of Deborah) | Long embedded-poetry block; gate completeness across full chapter |
+| **2 Samuel 22** | Embedded prose-cantillated poetry (≈ Ps 18) | Cross-system A/B comparison with Ps 18; tests whether validators track poetry vs. accent-system |
+| **Habakkuk 3** | Embedded prose-cantillated poetry (*תְּפִלָּה* superscription) | Lexical-anchor register detection; embedded psalm in prose-route prophetic book |
+| **Lamentations 3** | Acrostic poetry routed prose | H18 acrostic-detection skip; **Lam 3:25 canonical regression case** (verbless + prep must NOT merge) |
+| **Proverbs 25** | Sifrei Emet wisdom couplets (NP \|\| PP density) | Confirms Sifrei Emet hard-skip holds at corpus scale for V2 (Pro 25:11 NP-anchor pair); the *תַּפּוּחֵי זָהָב* style |
 
 **Verification procedure:** diff the rebuilt `books/*.html` for each fixture chapter against the committed baseline after any pipeline change. Any line-count delta or content delta requires inspection before the commit lands.
 
@@ -1118,6 +1175,24 @@ The following carry-forwards listed in the 2026-04-26 §8 "Canon v1.0 written fr
 - **Validator suite "planned, not yet built"** — validators are now built and active (four validators across `validators/syntax/` and `validators/colometry/`). §6 updated 2026-04-27 to reflect as-built reality.
 
 Remaining open carry-forward: Rule H11 parse_teamim.py mechanical adjustment (tifcha-as-servant behavior in the v1-he-baseline generator). This is an improvement-path item, not a correctness blocker — the editorial pass at v2/he absorbs the finding.
+
+### 2026-04-28 — Rule H18 Clause-Nucleus Integrity adopted; te'amim-centric validator architecture rejected
+
+**What landed:**
+1. New Rule H18 (Verbless / Participial / Verb-PP-complement Clause-Nucleus Integrity) added to §3 and §5. Three sub-rules H18.1 / H18.2 / H18.3.
+2. §1 "The Te'amim Are Not a Structural Prior" extended with Validator-architecture corollary: validator triggers must be Hebrew morpho-syntactic, never te'amim-derived.
+3. §6 fixture set expanded by 8 chapters (Exod 15, Deut 32, Deut 33, Judg 5, 2 Sam 22, Hab 3, Lam 3, Pro 25) — closes embedded-poetry blind spot.
+4. Proposed `validate_tifcha_servant.py` (te'amim-centric architecture) was killed in design after Stan's discomfort flag and 6-agent hostile audit findings.
+
+**Why:** Stan flagged Genesis 1:1 and 1:2 as over-split; corpus survey confirmed pattern at scale (~1,533 strict candidates for verbless / participial; ~16,835 candidates for tifcha-servant signature). Initial proposal included a tifcha-servant validator triggering on the TIPHA glyph; Stan's discomfort with "overreliance on Masoretic punctuation cues for determining thought line breaks" surfaced the architectural problem: even framing a validator as "demoting te'amim by merging across them" operationally centers them as the primary signal. The validator-architecture corollary makes explicit what §1's te'amim demotion already implied.
+
+Hostile audit findings on the original tifcha-servant proposal: the canon's own H11 fixture (Jonah 1) DISCONFIRMED the proposal — 3 of 4 candidate sites in the gold-standard book were SPLIT by Stan's hand-edit decisions (1:4 *בַּיָּ֑ם*, 1:4 *לְהִשָּׁבֵֽר*, 1:5 *מֵֽעֲלֵיהֶ֑ם*). STRONG-MERGE auto-application would have inverted documented gold-standard.
+
+**HOW WE KNOW:** Six-agent parallel hostile audit dispatched 2026-04-28 (Opus, multi-dimensional): hostile audit on tifcha-servant + verbless-clause; Wickes / Yeivin grounding deep-dive; JM / WO grammar deep-dive; Sifrei Emet poetic-bicolon danger zone; cross-rule integrity. Verdicts adjudicated. Architectural choice (Option A new H18 vs. Option B extend M2) decided by cross-rule integrity audit's identification of Option B as closed-list smuggling per §2 scope diagnostic.
+
+**SCOPE:** H18 covers all books except Sifrei Emet routing + embedded-poetry list + acrostic chapters. Validator deployment is REVIEW-REQUIRED-only initially; promotion to STRONG-MERGE awaits at least one hand-edited Tanakh book beyond Jonah showing ≥80% editor-merge agreement on a specific subcase.
+
+**Audit dispatched:** six-agent parallel adversarial audit 2026-04-28; verdicts and design corrections cited above.
 
 ---
 
