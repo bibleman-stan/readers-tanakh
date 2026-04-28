@@ -28,3 +28,7 @@ desktop.ini
 
 # Generated alignment data (machine-generated; re-run run_eflomal_alignment.py)
 data/alignment/
+
+# Generated audit-trail reports (per-run apply diffs + per-book quality scorecards;
+# accumulate forever, regeneratable on demand, not editorial source-of-truth)
+data/reports/
