@@ -1,32 +1,28 @@
 {
   "book": "numbers",
   "dir_name": "04-numbers",
-  "timestamp": "2026-04-27T19:39:38",
+  "timestamp": "2026-04-27T19:58:38",
   "chapter_count": 36,
   "total_cola": 6382,
-  "readiness_score": 75,
+  "readiness_score": 85,
   "score_breakdown": {
-    "malformed_pts": 40.0,
+    "malformed_pts": 50.0,
     "deviation_pts": 24.99,
     "review_pts": 10.0,
     "drift_pts": 0.0
   },
   "validators": {
-    "total_findings": 443,
-    "malformed": 3,
+    "total_findings": 440,
+    "malformed": 0,
     "deviation": 440,
     "review_required": 359,
     "per_validator": [
       {
         "name": "validate_line_final_tokens",
         "layer": "syntax",
-        "findings": 3,
-        "by_severity": {
-          "MALFORMED": 3
-        },
-        "by_tag": {
-          "STRONG-MERGE-CANDIDATE": 3
-        },
+        "findings": 0,
+        "by_severity": {},
+        "by_tag": {},
         "error": null
       },
       {
@@ -122,9 +118,9 @@
   },
   "english_drift": {
     "ARTICLE-SPLIT": 0,
-    "PREP-NP-SPLIT": 178,
+    "PREP-NP-SPLIT": 174,
     "AUX-VERB-SPLIT": 2,
-    "PTC-NP-SPLIT": 6,
+    "PTC-NP-SPLIT": 4,
     "APPOSITIVE-SPLIT": 16,
     "DANGLING-CONJ": 0
   }

@@ -1,32 +1,28 @@
 {
   "book": "job",
   "dir_name": "18-job",
-  "timestamp": "2026-04-27T19:38:54",
+  "timestamp": "2026-04-27T19:54:51",
   "chapter_count": 42,
   "total_cola": 3094,
-  "readiness_score": 79,
+  "readiness_score": 89,
   "score_breakdown": {
-    "malformed_pts": 40.0,
+    "malformed_pts": 50.0,
     "deviation_pts": 27.45,
     "review_pts": 10.0,
     "drift_pts": 1.5
   },
   "validators": {
-    "total_findings": 146,
-    "malformed": 2,
+    "total_findings": 144,
+    "malformed": 0,
     "deviation": 144,
     "review_required": 129,
     "per_validator": [
       {
         "name": "validate_line_final_tokens",
         "layer": "syntax",
-        "findings": 2,
-        "by_severity": {
-          "MALFORMED": 2
-        },
-        "by_tag": {
-          "STRONG-MERGE-CANDIDATE": 2
-        },
+        "findings": 0,
+        "by_severity": {},
+        "by_tag": {},
         "error": null
       },
       {

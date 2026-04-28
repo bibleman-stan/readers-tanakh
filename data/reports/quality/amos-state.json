@@ -1,20 +1,20 @@
 {
   "book": "amos",
   "dir_name": "30-amos",
-  "timestamp": "2026-04-27T19:16:40",
+  "timestamp": "2026-04-27T20:01:01",
   "chapter_count": 9,
-  "total_cola": 775,
+  "total_cola": 774,
   "readiness_score": 94,
   "score_breakdown": {
     "malformed_pts": 50.0,
-    "deviation_pts": 26.19,
+    "deviation_pts": 26.27,
     "review_pts": 10.0,
-    "drift_pts": 7.5
+    "drift_pts": 8.0
   },
   "validators": {
-    "total_findings": 44,
+    "total_findings": 43,
     "malformed": 0,
-    "deviation": 44,
+    "deviation": 43,
     "review_required": 39,
     "per_validator": [
       {
@@ -44,13 +44,12 @@
       {
         "name": "validate_construct_chain",
         "layer": "colometry",
-        "findings": 40,
+        "findings": 39,
         "by_severity": {
-          "DEVIATION": 40
+          "DEVIATION": 39
         },
         "by_tag": {
-          "REVIEW-REQUIRED": 39,
-          "STRONG-MERGE-CANDIDATE": 1
+          "REVIEW-REQUIRED": 39
         },
         "error": null
       },
@@ -107,7 +106,7 @@
     "ARTICLE-SPLIT": 1,
     "PREP-NP-SPLIT": 3,
     "AUX-VERB-SPLIT": 0,
-    "PTC-NP-SPLIT": 1,
+    "PTC-NP-SPLIT": 0,
     "APPOSITIVE-SPLIT": 0,
     "DANGLING-CONJ": 0
   }

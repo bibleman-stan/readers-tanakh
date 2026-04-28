@@ -3,9 +3,9 @@ and these | [are] [the] accounts of | Esau
 that | [is] Edom
 
 36:2
-Esau | he took |  | wives his
+Esau | he took | [obj.] | wives his
 from [the] daughters of | Canaan
- | Adah | [the] daughter of | Elon | the Hittite
+[obj.] | Adah | [the] daughter of | Elon | the Hittite
 and | Oholibamah | [the] daughter of | Anah
 [the] daughter of | Zibeon
 the Hivite
@@ -16,21 +16,21 @@ and | Basemath | [the] daughter of | Ishmael
 
 36:4
 and she bore | Adah | to Esau
- | Eliphaz
+[obj.] | Eliphaz
 and Basemath
 she bore
- | Reuel
+[obj.] | Reuel
 
 36:5
 and Oholibamah | she bore
- | Jeush | and | Jalam
+[obj.] | Jeush | and | Jalam
 and | Korah
 these | [were] [the] sons of | Esau
 who | they were born | to him
 in [the] land of | Canaan
 
 36:6
-and he took | Esau |  | wives his | and | sons his | and | daughters his | and | all | [the] people of | household his
+and he took | Esau | [obj.] | wives his | and | sons his | and | daughters his | and | all | [the] people of | household his
 and | livestock his | and | all | animal[s] his | and | all | possession[s] his
 which | he had accumulated
 in [the] land of | Canaan
@@ -72,7 +72,7 @@ and Kenaz
 36:12
 and Timna | she was | a concubine | of Eliphaz | [the] son of | Esau
 and she bore | to Eliphaz
- | Amalek
+[obj.] | Amalek
 these
 [were] [the] sons of | Adah
 [the] wife of | Esau
@@ -89,7 +89,7 @@ these | they were
 and these | they were | [the] sons of | Oholibamah | [the] daughter of | Anah | [the] daughter of | Zibeon
 [the] wife of | Esau
 and she bore | to Esau
- | Jeush | and | Jalam
+[obj.] | Jeush | and | Jalam
 and | Korah
 
 36:15
@@ -157,8 +157,8 @@ and Onam
 36:24
 and these | [were] [the] sons of | Zibeon
 and Aiah | and Anah
-he | [was] Anah | who | he found |  | the hot springs | in the wilderness
-when was pasturing he |  | the donkeys
+he | [was] Anah | who | he found | [obj.] | the hot springs | in the wilderness
+when was pasturing he | [obj.] | the donkeys
 of Zibeon | father his
 
 36:25
@@ -227,7 +227,7 @@ from [the] land of | the Temanite[s]
 36:35
 and he died
 Husham
-and he reigned | in place of him | Hadad | [the] son of | Bedad | who defeated |  | Midian | in [the] region of | Moab
+and he reigned | in place of him | Hadad | [the] son of | Bedad | who defeated | [obj.] | Midian | in [the] region of | Moab
 and [the] name of | city his
 [was] Avith
 

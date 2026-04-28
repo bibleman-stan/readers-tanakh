@@ -17,11 +17,11 @@ it
 you will eat
 
 11:4
-nevertheless |  | this | not | you must eat
+nevertheless | [obj.] | this | not | you must eat
 from [those which] bring up | the cud
 and from [those which] divide in two
 the hoof
- | the camel | that | [is] bringing up | cud | it | and a hoof | not it | [is] dividing in two
+[obj.] | the camel | that | [is] bringing up | cud | it | and a hoof | not it | [is] dividing in two
 [is] unclean | it
 to you
 
@@ -54,11 +54,11 @@ not | you will touch
 to you
 
 11:9
-??? | ??? | ???
-???
-??? | ???
-??? | ??? | ??? | ??? | ??? | ??? | ??? | ???
-??? | ???
+[obj.] | this | you will eat
+from all
+that | [is] in the waters
+all | that | [belong] to it | fin | and scale | in the waters | in the seas | and in the wadis
+them | you will eat
 
 11:10
 and all | that | not | [belong] to it | fin | and scale | in the seas | and in the wadis
@@ -85,7 +85,7 @@ to you
 and | these | you will consider detestable | from | the bird[s]
 not | they will be eaten
 [are] detestable thing[s] | they
- | the eagle | and | the bearded vulture
+[obj.] | the eagle | and | the bearded vulture
 and
 the osprey
 
@@ -95,8 +95,8 @@ and | the hawk
 to kind its
 
 11:15
-??? | ??? | ???
-???
+[obj.] | every | raven
+to kind its
 
 11:16
 and | [the] daughter of | the ostrich
@@ -128,7 +128,7 @@ on | four [legs]
 to you
 
 11:21
-nevertheless |  | this | you will eat
+nevertheless | [obj.] | this | you will eat
 from every | swarming thing of | wing
 which walks
 on | four [legs]
@@ -137,13 +137,13 @@ to hop | with them
 on | the ground
 
 11:22
-??? | ??? | ??? | ???
-??? | ??? | ???
-??? | ???
-???
-??? | ??? | ???
-??? | ???
-???
+[obj.] | these | any of them | you will eat
+[obj.] | the locust | to kind its
+and | the locust
+to kind its
+and | the locust | to kind its
+and | the grasshopper
+to kind its
 
 11:23
 and every | swarming thing of | wing
@@ -179,7 +179,7 @@ every | [one who] touches | carcass their
 he will be unclean | until | the evening
 
 11:28
-and who [-ever] carries |  | carcass their
+and who [-ever] carries | [obj.] | carcass their
 he will wash | garments his
 and he will be unclean | until | the evening
 [are] unclean | they
@@ -264,7 +264,7 @@ he will be unclean | until | the evening
 and [who [-ever] eats | any of carcass its
 he will wash | garments his
 and he will be unclean | until | the evening
-and who [-ever] carries |  | carcass its
+and who [-ever] carries | [obj.] | carcass its
 he will wash | garments his
 and he will be unclean | until | the evening
 
@@ -282,7 +282,7 @@ not | you must eat them
 for | [are] a detestable thing | they
 
 11:43
-may not | you make detestable |  | selves your
+may not | you make detestable | [obj.] | selves your
 by any | swarming thing
 which swarms
 and not | you must make yourselves unclean | by them
@@ -294,7 +294,7 @@ for | I | [am] Yahweh | God your
 and you will keep yourselves holy | and you will be | holy
 for | [am] holy
 I
-and not | you must make unclean |  | selves your
+and not | you must make unclean | [obj.] | selves your
 by any | swarming thing
 which creeps | on | the earth
 

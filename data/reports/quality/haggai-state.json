@@ -1,32 +1,28 @@
 {
   "book": "haggai",
   "dir_name": "37-haggai",
-  "timestamp": "2026-04-27T19:17:38",
+  "timestamp": "2026-04-27T20:02:04",
   "chapter_count": 2,
   "total_cola": 198,
-  "readiness_score": 40,
+  "readiness_score": 90,
   "score_breakdown": {
-    "malformed_pts": 0.0,
+    "malformed_pts": 50.0,
     "deviation_pts": 20.54,
     "review_pts": 10.0,
     "drift_pts": 9.5
   },
   "validators": {
-    "total_findings": 25,
-    "malformed": 1,
+    "total_findings": 24,
+    "malformed": 0,
     "deviation": 24,
     "review_required": 14,
     "per_validator": [
       {
         "name": "validate_line_final_tokens",
         "layer": "syntax",
-        "findings": 1,
-        "by_severity": {
-          "MALFORMED": 1
-        },
-        "by_tag": {
-          "STRONG-MERGE-CANDIDATE": 1
-        },
+        "findings": 0,
+        "by_severity": {},
+        "by_tag": {},
         "error": null
       },
       {

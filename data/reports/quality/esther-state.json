@@ -1,15 +1,15 @@
 {
   "book": "esther",
   "dir_name": "17-esther",
-  "timestamp": "2026-04-27T19:38:09",
+  "timestamp": "2026-04-27T20:03:42",
   "chapter_count": 10,
   "total_cola": 946,
-  "readiness_score": 88,
+  "readiness_score": 96,
   "score_breakdown": {
     "malformed_pts": 50.0,
     "deviation_pts": 26.71,
     "review_pts": 10.0,
-    "drift_pts": 1.0
+    "drift_pts": 9.0
   },
   "validators": {
     "total_findings": 51,
@@ -114,10 +114,10 @@
   },
   "english_drift": {
     "ARTICLE-SPLIT": 0,
-    "PREP-NP-SPLIT": 17,
+    "PREP-NP-SPLIT": 2,
     "AUX-VERB-SPLIT": 0,
     "PTC-NP-SPLIT": 0,
-    "APPOSITIVE-SPLIT": 1,
+    "APPOSITIVE-SPLIT": 0,
     "DANGLING-CONJ": 0
   }
 }

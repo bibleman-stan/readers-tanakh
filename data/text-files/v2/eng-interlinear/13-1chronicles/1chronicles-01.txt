@@ -50,13 +50,13 @@ Sheba | and Dedan
 
 1:10
 and Cush
-he fathered |  | Nimrod
+he fathered | [obj.] | Nimrod
 he | he began
 to be | a mighty [man]
 on the earth
 
 1:11
-and Mizraim | he fathered |  | [the] Ludites | and | [the] Anamites | and | [the] Lehabites
+and Mizraim | he fathered | [obj.] | [the] Ludites | and | [the] Anamites | and | [the] Lehabites
 and | [the] Naphtuhites
 
 1:12
@@ -64,7 +64,7 @@ and | [the] Pathrusites | and | [the] Casluhites | whom | they came forth | from
 and | [the] Caphtorites
 
 1:13
-and Canaan | he fathered |  | Sidon | firstborn his
+and Canaan | he fathered | [obj.] | Sidon | firstborn his
 and | Heth
 
 1:14
@@ -90,9 +90,9 @@ and Gether | and Meshech
 
 1:18
 and Arphaxad
-he fathered |  | Shelah
+he fathered | [obj.] | Shelah
 and Shelah
-he fathered |  | Eber
+he fathered | [obj.] | Eber
 
 1:19
 and to Eber | it was born
@@ -103,7 +103,7 @@ and [the] name of | brother his
 
 1:20
 and Joktan | he fathered
- | Almodad
+[obj.] | Almodad
 and | Sheleph
 and | Hazarmaveth
 and | Jerah
@@ -162,7 +162,7 @@ these | they
 [were] [the] sons of | Ishmael
 
 1:32
-and [the] sons of | Keturah | [the] concubine of | Abraham | she bore |  | Zimran | and Jokshan | and Medan | and Midian
+and [the] sons of | Keturah | [the] concubine of | Abraham | she bore | [obj.] | Zimran | and Jokshan | and Medan | and Midian
 and Ishbak | and Shuah
 and [the] sons of | Jokshan
 Sheba | and Dedan
@@ -175,11 +175,11 @@ all | these
 [were] [the] sons of | Keturah
 
 1:34
-??? | ???
-??? | ???
-??? | ??? | ???
-???
-???
+and he fathered | Abraham
+[obj.] | Isaac
+[the] sons of | Isaac
+Esau
+and Israel
 
 1:35
 [the] sons of
@@ -214,18 +214,18 @@ and [was] [the] sister of | Lotan
 Timna
 
 1:40
-??? | ???
-??? | ??? | ???
-??? | ???
-??? | ??? | ???
-??? | ???
+[the] sons of | Shobal
+Alyan | and Manahath | and Ebal
+Shephi | and Onam
+and [the] sons of | Zibeon
+Aiah | and Anah
 
 1:41
-??? | ???
-???
-??? | ??? | ???
-??? | ???
-??? | ???
+[the] sons of | Anah
+Dishon
+and [the] sons of | Dishon
+Hamran | and Eshban
+and Ithran | and Keran
 
 1:42
 [the] sons of | Ezer
@@ -259,7 +259,7 @@ from [the] land of | the Temanite[s]
 1:46
 and he died
 Husham
-and he reigned | in place of him | Hadad | [the] son of | Bedad | who struck down |  | Midian | in [the] region of | Moab
+and he reigned | in place of him | Hadad | [the] son of | Bedad | who struck down | [obj.] | Midian | in [the] region of | Moab
 and [the] name of | city his
 [was] Avith
 
@@ -294,11 +294,11 @@ and [the] name of | wife his | [was] Mehetabel | [the] daughter of | Matred
 Me- | Zahab
 
 1:51
-???
-???
-??? | ??? | ??? | ???
-??? | ??? | ??? | ???
-??? | ???
+and he died
+Hadad
+and they were | [the] chiefs of | Edom
+chief | Timna | chief | Alvah
+chief | Jetheth
 
 1:52
 chief | Oholibamah | chief | Elah

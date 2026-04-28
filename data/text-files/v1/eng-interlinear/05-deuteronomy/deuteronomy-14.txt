@@ -39,10 +39,10 @@ it
 you will eat
 
 14:7
-nevertheless |  | this | not | you will eat | any of [those which] bring up | the cud
+nevertheless | [obj.] | this | not | you will eat | any of [those which] bring up | the cud
 and [any] of those dividing | the hoof
 cloven
- | the camel | and | the hare | and | the rock badger | that | [is] bringing up | cud | they | and a hoof | not | they divide
+[obj.] | the camel | and | the hare | and | the rock badger | that | [is] bringing up | cud | they | and a hoof | not | they divide
 [are] unclean | they
 to you
 
@@ -53,6 +53,13 @@ to you
 any of meat their | not | you will eat
 and carcass their
 not | you will touch
+
+14:9
+[obj.] | this | you will eat
+from all
+that | [is] in the water
+all | that | [belongs] to it | fin | and scale
+you will eat
 
 14:10
 and all | that | not | [belongs] to it | fin | and scale
@@ -87,6 +94,10 @@ and | the gull
 and | the falcon
 to kind its
 
+14:16
+[obj.] | the little owl | and | the great owl
+and the barn owl
+
 14:17
 and the desert owl | and | the Egyptian vulture
 and | the cormorant
@@ -119,7 +130,7 @@ in [the] milk of | mother its
 
 14:22
 fully | you will tithe
-
+[obj.]
 all | [the] produce of | seed your
 which comes out | the field
 a year | a year
@@ -129,7 +140,7 @@ and you will eat | before | Yahweh | God your | in the place | where | he will c
 [the] tithe of | grain your | new wine your | and fresh oil your
 and [the] firstborn of | herd your
 and flock your
-so that | you may learn | to fear |  | Yahweh | God your
+so that | you may learn | to fear | [obj.] | Yahweh | God your
 all | the days
 
 14:24
@@ -164,7 +175,7 @@ for | not | [belongs] to him | a portion | and an inheritance
 with you
 
 14:28
-from [the] end of | three | years | you will bring out |  | all | [the] tithe of | produce your
+from [the] end of | three | years | you will bring out | [obj.] | all | [the] tithe of | produce your
 in the year
 that
 and you will deposit [it]

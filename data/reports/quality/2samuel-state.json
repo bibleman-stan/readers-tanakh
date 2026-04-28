@@ -1,20 +1,20 @@
 {
   "book": "2samuel",
   "dir_name": "10-2samuel",
-  "timestamp": "2026-04-27T19:43:32",
+  "timestamp": "2026-04-27T20:01:23",
   "chapter_count": 24,
   "total_cola": 3810,
   "readiness_score": 85,
   "score_breakdown": {
     "malformed_pts": 50.0,
-    "deviation_pts": 25.06,
+    "deviation_pts": 25.04,
     "review_pts": 10.0,
     "drift_pts": 0.0
   },
   "validators": {
-    "total_findings": 259,
+    "total_findings": 260,
     "malformed": 0,
-    "deviation": 259,
+    "deviation": 260,
     "review_required": 214,
     "per_validator": [
       {
@@ -60,12 +60,12 @@
       {
         "name": "validate_cross_verse_continuity",
         "layer": "colometry",
-        "findings": 1,
+        "findings": 2,
         "by_severity": {
-          "DEVIATION": 1
+          "DEVIATION": 2
         },
         "by_tag": {
-          "STRONG-MERGE-CANDIDATE": 1
+          "STRONG-MERGE-CANDIDATE": 2
         },
         "error": null
       },
@@ -118,11 +118,11 @@
     "MID_SPLIT": 0
   },
   "english_drift": {
-    "ARTICLE-SPLIT": 0,
-    "PREP-NP-SPLIT": 41,
+    "ARTICLE-SPLIT": 8,
+    "PREP-NP-SPLIT": 17,
     "AUX-VERB-SPLIT": 1,
-    "PTC-NP-SPLIT": 1,
-    "APPOSITIVE-SPLIT": 5,
+    "PTC-NP-SPLIT": 0,
+    "APPOSITIVE-SPLIT": 0,
     "DANGLING-CONJ": 0
   }
 }

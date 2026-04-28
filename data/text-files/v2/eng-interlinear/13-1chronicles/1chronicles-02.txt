@@ -21,7 +21,7 @@ and he put to death him
 2:4
 and Tamar | daughter-in-law his
 she bore | to him
- | Perez | and | Zerah
+[obj.] | Perez | and | Zerah
 all | [the] sons of | Judah
 [were] five
 
@@ -46,29 +46,29 @@ Azariah
 2:9
 and [the] sons of | Hezron
 whom | it was born | to him
- | Jerahmeel | and | Ram
+[obj.] | Jerahmeel | and | Ram
 and | Celubai
 
 2:10
 and Ram
-he fathered |  | Amminadab
-and Amminadab | he fathered |  | Nahshon
+he fathered | [obj.] | Amminadab
+and Amminadab | he fathered | [obj.] | Nahshon
 [the] leader of
 [the] descendants of | Judah
 
 2:11
-and Nahshon | he fathered |  | Salma
+and Nahshon | he fathered | [obj.] | Salma
 and Salma
-he fathered |  | Boaz
+he fathered | [obj.] | Boaz
 
 2:12
-and Boaz | he fathered |  | Obed
+and Boaz | he fathered | [obj.] | Obed
 and Obed
-he fathered |  | Jesse
+he fathered | [obj.] | Jesse
 
 2:13
-and Jesse | he fathered |  | firstborn his
- | Eliab
+and Jesse | he fathered | [obj.] | firstborn his
+[obj.] | Eliab
 and Abinadab | the second
 and Shimea
 the third
@@ -92,7 +92,7 @@ three
 2:17
 and Abigail
 she bore
- | Amasa
+[obj.] | Amasa
 and [the] father of | Amasa
 Jether
 the Ishmaelite
@@ -107,14 +107,14 @@ and Ardon
 2:19
 and she died
 Azubah
-and he took | for himself | Caleb |  | Ephrath
+and he took | for himself | Caleb | [obj.] | Ephrath
 and she bore | to him
- | Hur
+[obj.] | Hur
 
 2:20
-and Hur | he fathered |  | Uri
+and Hur | he fathered | [obj.] | Uri
 and Uri
-he fathered |  | Bezalel
+he fathered | [obj.] | Bezalel
 
 2:21
 and after | he went | Hezron | into | [the] daughter of | Makir | [the] father of | Gilead
@@ -122,17 +122,17 @@ and he | he had taken her
 and he
 [was] a son of | sixty | year[s]
 and she bore | to him
- | Segub
+[obj.] | Segub
 
 2:22
 and Segub
-he fathered |  | Jair
+he fathered | [obj.] | Jair
 and it belonged | to him | twenty | and three | cities
 in [the] land of
 Gilead
 
 2:23
-and he took | Geshur | and Aram |  | Havvoth | Jair | from with them |  | Kenath | and | daughters its
+and he took | Geshur | and Aram | [obj.] | Havvoth | Jair | from with them | [obj.] | Kenath | and | daughters its
 sixty | citi[es]
 all | these
 [were] [the] sons of
@@ -143,7 +143,7 @@ and after | [the] death of | Hezron
 in Caleb | Ephrathah
 and [the] wife of | Hezron | Abijah
 and she bore | to him
- | Ashhur
+[obj.] | Ashhur
 [the] father of | Tekoa
 
 2:25
@@ -175,7 +175,7 @@ and Abishur
 and [the] name of | [the] wife of | Abishur
 [was] Abihail
 and she bore | to him
- | Ahban
+[obj.] | Ahban
 and | Molid
 
 2:30
@@ -211,40 +211,40 @@ and [belonged] to Sheshan | a slave | Egyptian
 and name his | [was] Jarha
 
 2:35
-and he gave | Sheshan |  | daughter his | to Jarha | slave his
+and he gave | Sheshan | [obj.] | daughter his | to Jarha | slave his
 to a wife
 and she bore | to him
- | Attai
+[obj.] | Attai
 
 2:36
-and Attai | he fathered |  | Nathan
+and Attai | he fathered | [obj.] | Nathan
 and Nathan
-he fathered |  | Zabad
+he fathered | [obj.] | Zabad
 
 2:37
-and Zabad | he fathered |  | Ephlal
+and Zabad | he fathered | [obj.] | Ephlal
 and Ephlal
-he fathered |  | Obed
+he fathered | [obj.] | Obed
 
 2:38
-and Obed | he fathered |  | Jehu
+and Obed | he fathered | [obj.] | Jehu
 and Jehu
-he fathered |  | Azariah
+he fathered | [obj.] | Azariah
 
 2:39
-and Azariah | he fathered |  | Helez
+and Azariah | he fathered | [obj.] | Helez
 and Helez
-he fathered |  | Eleasah
+he fathered | [obj.] | Eleasah
 
 2:40
-and Eleasah | he fathered |  | Sismai
+and Eleasah | he fathered | [obj.] | Sismai
 and Sismai
-he fathered |  | Shallum
+he fathered | [obj.] | Shallum
 
 2:41
-and Shallum | he fathered |  | Jekamiah
+and Shallum | he fathered | [obj.] | Jekamiah
 and Jekamiah
-he fathered |  | Elishama
+he fathered | [obj.] | Elishama
 
 2:42
 and [the] sons of | Caleb | [the] brother of | Jerahmeel
@@ -261,10 +261,10 @@ and Rekem | and Shema
 
 2:44
 and Shema | he fathered
- | Raham
+[obj.] | Raham
 [the] father of | Jorkeam
 and Rekem
-he fathered |  | Shammai
+he fathered | [obj.] | Shammai
 
 2:45
 and [the] son of | Shammai
@@ -274,10 +274,10 @@ and Maon
 
 2:46
 and Ephah | [the] concubine of | Caleb
-she bore |  | Haran | and | Moza
+she bore | [obj.] | Haran | and | Moza
 and | Gazez
 and Haran
-he fathered |  | Gazez
+he fathered | [obj.] | Gazez
 
 2:47
 and [the] sons of
@@ -292,7 +292,7 @@ and | Tirhanah
 
 2:49
 and she bore | Shaaph | [the] father of | Madmannah
- | Sheva | [the] father of | Machbenah
+[obj.] | Sheva | [the] father of | Machbenah
 and [the] father of | Gibea
 and [was] [the] daughter of | Caleb
 Achsah

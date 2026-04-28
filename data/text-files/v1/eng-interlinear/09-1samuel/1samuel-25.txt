@@ -11,7 +11,7 @@ to | [the] wilderness of | Paran
 and a man | [was] in Maon | and business his | [was] in Carmel | and the man | [was] great | very
 and [belonged] to him | sheep | three | thousand
 and one thousand | goats
-and it was | when sheared |  | sheep his
+and it was | when sheared | [obj.] | sheep his
 in Carmel
 
 25:3
@@ -26,7 +26,7 @@ and he | [was] a Calebite
 and he heard | David
 in the wilderness
 that | [was] shearing | Nabal
- | sheep his
+[obj.] | sheep his
 
 25:5
 and he sent | David
@@ -52,10 +52,10 @@ all | [the] days of
 being they | in Carmel
 
 25:8
-ask |  | own young men your | so they may tell | to you | and let them find | the young men | favor | in view your
+ask | [obj.] | own young men your | so they may tell | to you | and let them find | the young men | favor | in view your
 for | on | a day | good
 we have come
-give ! | please |  | [that] which | it will find | hand your | to servants your
+give ! | please | [obj.] | [that] which | it will find | hand your | to servants your
 and to son your
 to David
 
@@ -66,7 +66,7 @@ in [the] name of | David
 and they rested
 
 25:10
-and he answered | Nabal |  | [the] servants of | David | and he said
+and he answered | Nabal | [obj.] | [the] servants of | David | and he said
 who? | [is] David
 and who? | [is] [the] son of | Jesse
 this day | they are many | servants
@@ -75,7 +75,7 @@ each one
 from before | master his
 
 25:11
-and will I take |  | bread my | and | water my
+and will I take | [obj.] | bread my | and | water my
 and | slaughter my
 which | I have slaughtered
 for shearers my
@@ -93,9 +93,9 @@ according to all
 the words | these
 
 25:13
-and he said | David | to men his | gird on | everyone |  | sword his | and they girded on | everyone |  | sword his
+and he said | David | to men his | gird on | everyone | [obj.] | sword his | and they girded on | everyone | [obj.] | sword his
 and he girded on | also | David
- | sword his
+[obj.] | sword his
 and they went up | after | David | about four | hundred | man
 and two hundred
 they remained | with | the baggage
@@ -104,7 +104,7 @@ they remained | with | the baggage
 and to Abigail | [the] wife of | Nabal
 he told | a young man | one | from the young men
 saying
-there! | he sent | David | messengers | from the wilderness | to bless |  | master our
+there! | he sent | David | messengers | from the wilderness | to bless | [obj.] | master our
 and he shouted | at them
 
 25:15
@@ -154,7 +154,7 @@ and she met
 them
 
 25:21
-and David | he had said | surely | to deception | I have guarded |  | all | that | [belongs] to this [man] | in the wilderness
+and David | he had said | surely | to deception | I have guarded | [obj.] | all | that | [belongs] to this [man] | in the wilderness
 and not | it has been missing | any of all | that | [belongs] to him
 anything
 and he has returned | to me | evil
@@ -167,7 +167,7 @@ if | I will leave | any of all | that | [belongs] to him | until | the morning
 [one who] urinates | on a wall
 
 25:23
-and she saw | Abigail |  | David
+and she saw | Abigail | [obj.] | David
 and she made haste
 and she came down
 from on | the donkey
@@ -182,16 +182,16 @@ and she said
 the iniquity
 and let her speak | please | maidservant your | in ears your
 and hear
-
+[obj.]
 [the] words of | maidservant your
 
 25:25
-may not | please | he set | lord my |  | heart his | to | [the] man of | worthlessness | this | on | Nabal | for | like name his | [is] so | he
+may not | please | he set | lord my | [obj.] | heart his | to | [the] man of | worthlessness | this | on | Nabal | for | like name his | [is] so | he
 [is] Nabal | name his
 and disgraceful folly
 [is] with him
 and I | maidservant your
-not | I saw |  | [the] young men of | lord my
+not | I saw | [obj.] | [the] young men of | lord my
 whom | you sent
 
 25:26
@@ -220,7 +220,7 @@ from days your
 25:29
 and he has arisen | a man | to pursue you
 and to seek
- | life your
+[obj.] | life your
 and it will be | [the] life of | lord my | bound up | in [the] bundle of | the living | with | Yahweh | God your
 and | [the] life of | enemies your | he will sling out it
 in [the] midst of
@@ -228,7 +228,7 @@ in [the] midst of
 
 25:30
 and it will be | that | he will do | Yahweh | to lord my
-according to all | that | he has spoken |  | the good
+according to all | that | he has spoken | [obj.] | the good
 on you
 and he will appoint you | to ruler
 over | Israel
@@ -239,7 +239,7 @@ and to deliver | lord my
 himself
 and he will do good | Yahweh | to lord my
 and you will remember
- | maidservant your
+[obj.] | maidservant your
 
 25:32
 and he said | David
@@ -266,7 +266,7 @@ that | except | he has been left | to Nabal | until | [the] light of | the morni
 
 25:35
 and he took | David | from hand her
- | [that] which | she had brought
+[obj.] | [that] which | she had brought
 to him
 and to her | he said | go up | to peace | to house your
 see | I have listened | to voice your
@@ -283,7 +283,7 @@ until | [the] light of | the morning
 25:37
 and it was | in the morning | when had gone out | the wine | from Nabal
 and she told | to him | wife his
- | the things
+[obj.] | the things
 these
 and it died | heart his | in inward part[s] his
 and he
@@ -292,12 +292,12 @@ he became | stone
 25:38
 and it was
 about [the] ten | the days
-and he struck | Yahweh |  | Nabal
+and he struck | Yahweh | [obj.] | Nabal
 and he died
 
 25:39
 and he heard | David | that | he had died | Nabal
-and he said | [be] blessed | Yahweh | who | he has conducted |  | [the] case of | disgrace my | from [the] hand of | Nabal | and | servant his | he has restrained | from evil
+and he said | [be] blessed | Yahweh | who | he has conducted | [obj.] | [the] case of | disgrace my | from [the] hand of | Nabal | and | servant his | he has restrained | from evil
 and | [the] evil of | Nabal
 he has turned back | Yahweh
 on own head his
@@ -338,7 +338,7 @@ and they became | also | both of them | of him
 wives
 
 25:44
-and Saul | he had given |  | Michal | daughter his
+and Saul | he had given | [obj.] | Michal | daughter his
 [the] wife of | David
 to Palti | [the] son of | Laish
 who | [was] from Gallim

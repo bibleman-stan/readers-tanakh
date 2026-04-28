@@ -9,7 +9,7 @@ he made | him
 5:2
 male | and female
 he created them
-and he blessed | them | and he called |  | name their | humankind
+and he blessed | them | and he called | [obj.] | name their | humankind
 on [the] day
 were created they
 
@@ -17,11 +17,11 @@ were created they
 and he lived | Adam | thirty | and one hundred | year[s]
 and he became a father | in own likeness his
 according to image his
-and he called |  | name his
+and he called | [obj.] | name his
 Seth
 
 5:4
-and they were | [the] days of | Adam | after | fathered he |  | Seth
+and they were | [the] days of | Adam | after | fathered he | [obj.] | Seth
 eight | hundred
 year[s]
 and he fathered | sons
@@ -39,10 +39,10 @@ and he lived | Seth
 five | years
 and one hundred | year[s]
 and he fathered
- | Enosh
+[obj.] | Enosh
 
 5:7
-and he lived | Seth | after | fathered he |  | Enosh
+and he lived | Seth | after | fathered he | [obj.] | Enosh
 seven | years
 and eight | hundred
 year[s]
@@ -60,10 +60,10 @@ and he died
 and he lived | Enosh
 ninety | year[s]
 and he fathered
- | Kenan
+[obj.] | Kenan
 
 5:10
-and he lived | Enosh | after | fathered he |  | Kenan
+and he lived | Enosh | after | fathered he | [obj.] | Kenan
 fif- | teen | year[s]
 and eight | hundred
 year[s]
@@ -81,10 +81,10 @@ and he died
 and he lived | Kenan
 seventy | year[s]
 and he fathered
- | Mahalalel
+[obj.] | Mahalalel
 
 5:13
-and he lived | Kenan | after | fathered he |  | Mahalalel
+and he lived | Kenan | after | fathered he | [obj.] | Mahalalel
 forty | year[s]
 and eight | hundred
 year[s]
@@ -103,10 +103,10 @@ and he lived | Mahalalel
 five | years
 and sixty | year[s]
 and he fathered
- | Jared
+[obj.] | Jared
 
 5:16
-and he lived | Mahalalel | after | fathered he |  | Jared
+and he lived | Mahalalel | after | fathered he | [obj.] | Jared
 thirty | year[s]
 and eight | hundred
 year[s]
@@ -125,10 +125,10 @@ and he lived | Jared
 two | and sixty | year[s]
 and one hundred | year[s]
 and he fathered
- | Enoch
+[obj.] | Enoch
 
 5:19
-and he lived | Jared | after | fathered he |  | Enoch
+and he lived | Jared | after | fathered he | [obj.] | Enoch
 eight | hundred
 year[s]
 and he fathered | sons
@@ -146,10 +146,10 @@ and he lived | Enoch
 five | and sixty
 year[s]
 and he fathered
- | Methuselah
+[obj.] | Methuselah
 
 5:22
-and he walked about | Enoch | with | God | after | fathered he |  | Methuselah
+and he walked about | Enoch | with | God | after | fathered he | [obj.] | Methuselah
 three | hundred
 year[s]
 and he fathered | sons
@@ -173,10 +173,10 @@ and he lived | Methuselah
 seven | and eighty | year[s]
 and one hundred | year[s]
 and he fathered
- | Lamech
+[obj.] | Lamech
 
 5:26
-and he lived | Methuselah | after | fathered he |  | Lamech
+and he lived | Methuselah | after | fathered he | [obj.] | Lamech
 two | and eighty | year[s]
 and seven | hundred
 year[s]
@@ -198,7 +198,7 @@ and he fathered
 a son
 
 5:29
-and he called |  | name his | Noah
+and he called | [obj.] | name his | Noah
 saying
 this [one] | he will comfort us | from work our | and from [the] pain of | hands our
 from | the ground
@@ -206,7 +206,7 @@ which | he has cursed it
 Yahweh
 
 5:30
-and he lived | Lamech | after | fathered he |  | Noah
+and he lived | Lamech | after | fathered he | [obj.] | Noah
 five | and ninety | year[s]
 and five | hundred
 year[s]
@@ -224,5 +224,5 @@ and he was | Noah
 a son of | five | hundred
 year[s]
 and he fathered | Noah
- | Shem
- | Ham | and | Japheth
+[obj.] | Shem
+[obj.] | Ham | and | Japheth

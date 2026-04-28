@@ -3,10 +3,10 @@ and he spoke | Yahweh
 to | Moses | saying
 
 28:2
-command |  | [the] people of | Israel
+command | [obj.] | [the] people of | Israel
 and you will say
 to them
- | offering my | food my | for fire offerings my | [the] odor of | soothing my
+[obj.] | offering my | food my | for fire offerings my | [the] odor of | soothing my
 you will take care
 to bring near | to me
 at appointed time its
@@ -18,6 +18,13 @@ which | you will bring near
 to Yahweh
 lambs | sons of | a year | unblemished | two | for the day
 a burnt offering | continually
+
+28:4
+[obj.] | the lamb | one
+you will offer | in the morning
+and | the lamb | second
+you will offer
+between | the evenings
 
 28:5
 and [the] tenth of | ephah | fine flour
@@ -150,7 +157,7 @@ besides | [the] burnt offering of | the morning
 which
 [is] for [the] burnt offering of | continuity
 you will offer
- | these [things]
+[obj.] | these [things]
 
 28:24
 like these [things] | you will offer | for the day | seven | days

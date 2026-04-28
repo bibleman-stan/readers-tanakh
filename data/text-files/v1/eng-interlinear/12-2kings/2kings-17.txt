@@ -36,8 +36,8 @@ and he laid siege | on it
 three | years
 
 17:6
-in [the] year | ninth | of Hoshea | he captured | [the] king of | Assyria |  | Samaria
-and he took into exile |  | Israel
+in [the] year | ninth | of Hoshea | he captured | [the] king of | Assyria | [obj.] | Samaria
+and he took into exile | [obj.] | Israel
 Assyria towards
 and he caused to dwell | them | in Halah | and on [the] Habor | [the] river of | Gozan
 and [the] cities of | Media
@@ -81,20 +81,20 @@ which | he had taken into exile | Yahweh
 from before them
 and they did | things | evil
 to provoke to anger
- | Yahweh
+[obj.] | Yahweh
 
 17:12
 and they served
 the idols
 which | he had said | Yahweh | to them
 not | you must do
- | the thing | this
+[obj.] | the thing | this
 
 17:13
 and he warned | Yahweh | Israel | and Judah | by [the] hand of | every | [the] prophets | every | seer | saying | turn back | from ways your | evil | and keep | commandments my | statutes my
 according to all | the law
 which | I commanded
- | ancestors your
+[obj.] | ancestors your
 and which | I sent | to you
 by [the] hand of
 servants my | the prophets
@@ -102,13 +102,13 @@ servants my | the prophets
 17:14
 and not
 they listened
-and they stiffened |  | neck their | like [the] neck of | ancestors their
+and they stiffened | [obj.] | neck their | like [the] neck of | ancestors their
 who | not | they trusted
 in Yahweh
 God their
 
 17:15
-and they rejected |  | statutes his | and | covenant his | which | he had made | with | ancestors their
+and they rejected | [obj.] | statutes his | and | covenant his | which | he had made | with | ancestors their
 and | testimonies his
 which | he warned
 them
@@ -119,15 +119,15 @@ to not
 to do | like them
 
 17:16
-and they forsook |  | all | [the] commandments of | Yahweh | God their
+and they forsook | [obj.] | all | [the] commandments of | Yahweh | God their
 and they made | for themselves | a molten image
 two | calves
 and they made | an Asherah pole | and they bowed down | to all | [the] host of | the heavens
 and they served
- | Baal
+[obj.] | Baal
 
 17:17
-and they made pass |  | sons their | and | daughters their | in the fire
+and they made pass | [obj.] | sons their | and | daughters their | in the fire
 and they divined | divinations
 and they practiced divination
 and they sold themselves | to do | the evil | in [the] eyes of | Yahweh
@@ -144,7 +144,7 @@ to only it
 17:19
 also | Judah
 not | it kept
- | [the] commandments of
+[obj.] | [the] commandments of
 Yahweh | God their
 and they walked
 in [the] customs of | Israel
@@ -160,8 +160,8 @@ from before him
 17:21
 if | he tore | Israel | from with | [the] house of | David
 and they made king
- | Jeroboam | [the] son of | Nebat
-and he enticed away | Jeroboam |  | Israel | from after | Yahweh
+[obj.] | Jeroboam | [the] son of | Nebat
+and he enticed away | Jeroboam | [obj.] | Israel | from after | Yahweh
 and he caused to sin them
 a sin | great
 
@@ -173,7 +173,7 @@ not | they turned aside
 from it
 
 17:23
-until | that | he removed | Yahweh |  | Israel | from on | face his
+until | that | he removed | Yahweh | [obj.] | Israel | from on | face his
 just as | he had spoken
 by [the] hand of
 all | servants his | the prophets
@@ -186,15 +186,15 @@ and he brought [people] | [the] king of | Assyria | from Babylon | and from Cuth
 and he caused [them] to dwell | in [the] cities of | Samaria
 in place of
 [the] people of | Israel
-and they took possession of |  | Samaria
+and they took possession of | [obj.] | Samaria
 and they dwelt
 in cities its
 
 17:25
 and it was | at [the] beginning of | dwelling they | there
 not | they feared
- | Yahweh
-and he sent | Yahweh | among them |  | lions
+[obj.] | Yahweh
+and he sent | Yahweh | among them | [obj.] | lions
 and they were | killing
 in them
 
@@ -202,11 +202,11 @@ in them
 and people said | to [the] king of | Assyria | saying
 the nations | which | you took into exile | and you caused to dwell | in [the] cities of | Samaria
 not | they know
- | [the] custom of
+[obj.] | [the] custom of
 [the] god of | the land
-and he has sent | among them |  | lions | and there they | [are] killing | them
+and he has sent | among them | [obj.] | lions | and there they | [are] killing | them
 since | not they | [are] knowing
- | [the] custom of
+[obj.] | [the] custom of
 [the] god of | the land
 
 17:27
@@ -214,7 +214,7 @@ and he commanded | [the] king of | Assyria | saying | take | there towards | one
 so they may go
 and they may dwell | there
 so he may teach them
- | [the] custom of
+[obj.] | [the] custom of
 [the] god of | the land
 
 17:28
@@ -223,7 +223,7 @@ and he dwelt
 in Beth- | -el
 and he was | teaching | them
 how?
-will they fear |  | Yahweh
+will they fear | [obj.] | Yahweh
 
 17:29
 and they were | making
@@ -235,34 +235,42 @@ where | they | [were] dwelling
 there
 
 17:30
-and [the] people of | Babylon | they made |  | Succoth | Benoth
+and [the] people of | Babylon | they made | [obj.] | Succoth | Benoth
 and [the] people of | Cuthah
 they made
- | Nergal
+[obj.] | Nergal
 and [the] people of | Hamath
-they made |  | Ashima
+they made | [obj.] | Ashima
 
 17:31
 and the Avvites | they made | Nibhaz
 and | Tartak
-and the Sepharvites | [were] burning |  | children their | in the fire
+and the Sepharvites | [were] burning | [obj.] | children their | in the fire
 to Adrammelech | and Anammelech
 [the] gods of | Sepharvaim
 
 17:32
 and they were | fearing
- | Yahweh
+[obj.] | Yahweh
 and they appointed | for themselves | from among themselves | priests of | [the] high places
 and they were | offering | for them
 in [the] house of | the high places
+
+17:33
+[obj.] | Yahweh
+they were | fearing
+and | own gods their | they were | serving
+according to [the] custom of | the nations
+which | they had taken into exile | them
+from there
 
 17:34
 until | the day | this | they | [are] doing
 according to the customs
 former
-not they | [are] fearing |  | Yahweh
+not they | [are] fearing | [obj.] | Yahweh
 and not they | [are] doing | according to statutes their | and according to judgment their
-and according to the law | and according to the commandment | which | he commanded | Yahweh |  | [the] descendants of | Jacob
+and according to the law | and according to the commandment | which | he commanded | Yahweh | [obj.] | [the] descendants of | Jacob
 whom | he made | name his
 Israel
 
@@ -277,7 +285,7 @@ and not | you must sacrifice
 to them
 
 17:36
-that | except |  | Yahweh | who | he brought up | you | from [the] land of | Egypt | with power | great | and by an arm | outstretched
+that | except | [obj.] | Yahweh | who | he brought up | you | from [the] land of | Egypt | with power | great | and by an arm | outstretched
 him | you will fear
 and to him | you will bow down
 and to him | you will sacrifice
@@ -296,7 +304,7 @@ and not | you must fear
 gods | other
 
 17:39
-that | except |  | Yahweh | God your
+that | except | [obj.] | Yahweh | God your
 you will fear
 and he | he will deliver | you
 from [the] hand of
@@ -309,7 +317,7 @@ that | except | according to custom their | former
 they | [were] doing
 
 17:41
-and they were | the nations | these | fearing |  | Yahweh
+and they were | the nations | these | fearing | [obj.] | Yahweh
 and | idols their
 they were | serving
 also | children their | and [the] children of | children their | just as | they did | fathers their | they | [are] doing

@@ -1,21 +1,21 @@
 {
   "book": "jonah",
   "dir_name": "32-jonah",
-  "timestamp": "2026-04-27T19:16:55",
+  "timestamp": "2026-04-27T20:01:18",
   "chapter_count": 4,
-  "total_cola": 199,
+  "total_cola": 237,
   "readiness_score": 94,
   "score_breakdown": {
     "malformed_pts": 50.0,
-    "deviation_pts": 24.29,
+    "deviation_pts": 24.33,
     "review_pts": 10.0,
     "drift_pts": 9.5
   },
   "validators": {
-    "total_findings": 15,
+    "total_findings": 18,
     "malformed": 0,
-    "deviation": 15,
-    "review_required": 12,
+    "deviation": 18,
+    "review_required": 14,
     "per_validator": [
       {
         "name": "validate_line_final_tokens",
@@ -44,12 +44,12 @@
       {
         "name": "validate_construct_chain",
         "layer": "colometry",
-        "findings": 7,
+        "findings": 10,
         "by_severity": {
-          "DEVIATION": 7
+          "DEVIATION": 10
         },
         "by_tag": {
-          "REVIEW-REQUIRED": 7
+          "REVIEW-REQUIRED": 10
         },
         "error": null
       },
@@ -76,23 +76,24 @@
       {
         "name": "validate_speech_intro_framing",
         "layer": "colometry",
-        "findings": 5,
+        "findings": 4,
         "by_severity": {
-          "DEVIATION": 5
+          "DEVIATION": 4
         },
         "by_tag": {
-          "REVIEW-REQUIRED": 5
+          "REVIEW-REQUIRED": 4
         },
         "error": null
       },
       {
         "name": "validate_wayehi_protasis",
         "layer": "colometry",
-        "findings": 1,
+        "findings": 2,
         "by_severity": {
-          "DEVIATION": 1
+          "DEVIATION": 2
         },
         "by_tag": {
+          "STRONG-MERGE-CANDIDATE": 1,
           "STRONG-SPLIT-CANDIDATE": 1
         },
         "error": null

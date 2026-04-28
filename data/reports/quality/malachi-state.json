@@ -1,15 +1,15 @@
 {
   "book": "malachi",
   "dir_name": "39-malachi",
-  "timestamp": "2026-04-27T19:17:57",
+  "timestamp": "2026-04-27T20:02:25",
   "chapter_count": 3,
   "total_cola": 317,
-  "readiness_score": 96,
+  "readiness_score": 97,
   "score_breakdown": {
     "malformed_pts": 50.0,
     "deviation_pts": 27.44,
     "review_pts": 10.0,
-    "drift_pts": 8.5
+    "drift_pts": 9.5
   },
   "validators": {
     "total_findings": 15,
@@ -106,7 +106,7 @@
     "ARTICLE-SPLIT": 0,
     "PREP-NP-SPLIT": 0,
     "AUX-VERB-SPLIT": 0,
-    "PTC-NP-SPLIT": 3,
+    "PTC-NP-SPLIT": 1,
     "APPOSITIVE-SPLIT": 0,
     "DANGLING-CONJ": 0
   }

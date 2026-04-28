@@ -1,15 +1,15 @@
 {
   "book": "hosea",
   "dir_name": "28-hosea",
-  "timestamp": "2026-04-27T19:16:22",
+  "timestamp": "2026-04-27T20:00:37",
   "chapter_count": 14,
   "total_cola": 1051,
-  "readiness_score": 97,
+  "readiness_score": 98,
   "score_breakdown": {
     "malformed_pts": 50.0,
     "deviation_pts": 28.39,
     "review_pts": 10.0,
-    "drift_pts": 8.5
+    "drift_pts": 9.5
   },
   "validators": {
     "total_findings": 42,
@@ -114,7 +114,7 @@
     "ARTICLE-SPLIT": 0,
     "PREP-NP-SPLIT": 1,
     "AUX-VERB-SPLIT": 0,
-    "PTC-NP-SPLIT": 2,
+    "PTC-NP-SPLIT": 0,
     "APPOSITIVE-SPLIT": 0,
     "DANGLING-CONJ": 0
   }

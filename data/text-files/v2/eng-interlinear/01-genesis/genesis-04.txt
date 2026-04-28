@@ -1,16 +1,16 @@
 4:1
 and the man
 he knew
- | Eve | wife his
-and she conceived | and she bore |  | Cain
+[obj.] | Eve | wife his
+and she conceived | and she bore | [obj.] | Cain
 and she said
 I have acquired | a man
 with | Yahweh
 
 4:2
 and she repeated | to give birth to
- | brother his
- | Abel
+[obj.] | brother his
+[obj.] | Abel
 and he was | Abel | a herder of | sheep
 and Cain
 he was
@@ -77,12 +77,12 @@ from | the ground
 4:11
 and now
 [are] cursed | you
-from | the ground | which | has opened |  | mouth its
-to receive |  | [the] blood of | brother your
+from | the ground | which | has opened | [obj.] | mouth its
+to receive | [obj.] | [the] blood of | brother your
 from hand your
 
 4:12
-for | you will till |  | the ground
+for | you will till | [obj.] | the ground
 not | will repeat | to give | produce its
 to you
 a wanderer | and a fugitive
@@ -117,22 +117,22 @@ and he dwelt | in [the] land of | Nod
 [the] east of | Eden
 
 4:17
-and he knew | Cain |  | wife his
+and he knew | Cain | [obj.] | wife his
 and she conceived
-and she bore |  | Enoch
+and she bore | [obj.] | Enoch
 and he was | building | a city
 and he called | [the] name of | the city
 according to [the] name of
 son his | Enoch
 
 4:18
-and he was born | to Enoch |  | Irad
+and he was born | to Enoch | [obj.] | Irad
 and Irad
 he fathered
- | Mehujael
-and Mehujael | he fathered |  | Methushael
+[obj.] | Mehujael
+and Mehujael | he fathered | [obj.] | Methushael
 and Methushael
-he fathered |  | Lamech
+he fathered | [obj.] | Lamech
 
 4:19
 and he took | for himself | Lamech
@@ -143,7 +143,7 @@ and [the] name of | the second
 
 4:20
 and she bore | Adah
- | Jabal
+[obj.] | Jabal
 he | he was
 [the] father of
 dweller[s] of | tent
@@ -158,7 +158,7 @@ every | player of | harp
 and flute
 
 4:22
-and Zillah | also | she | she bore |  | Tubal- | Cain
+and Zillah | also | she | she bore | [obj.] | Tubal- | Cain
 a sharpener of
 every | worker of | bronze
 and iron
@@ -181,9 +181,9 @@ and Lamech
 seventy | and seven
 
 4:25
-and he knew | Adam | again |  | wife his
+and he knew | Adam | again | [obj.] | wife his
 and she bore | a son
-and she called |  | name his
+and she called | [obj.] | name his
 Seth
 for | he has appointed | for me | God of | spring | another
 in place of | Abel
@@ -192,7 +192,7 @@ Cain
 
 4:26
 and to Seth | also | he | he was born | a son
-and he called |  | name his
+and he called | [obj.] | name his
 Enosh
 then | it was begun
 to call

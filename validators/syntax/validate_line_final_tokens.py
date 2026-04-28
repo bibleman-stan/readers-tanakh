@@ -227,12 +227,27 @@ def check_stranded_negation(line: str):
 # Helpers
 # ---------------------------------------------------------------------------
 
+SOF_PASUQ = "׃"  # ׃ — verse-final marker; a line ending with sof pasuq cannot
+                      # contain a stranded proclitic (the verse is complete).
+
+
 def _last_token(line: str):
-    """Return the last whitespace-delimited token of `line`, or None if empty."""
+    """Return the last whitespace-delimited token of `line`, or None if empty.
+
+    Returns None if the last token ends with the sof pasuq glyph (U+05C3 ׃)
+    — a verse-final line cannot contain a stranded proclitic by definition.
+    This guards against false positives where verse-final divine names (אֵֽל׃),
+    pronouns (אָֽתְּ׃), and existential particles (אָֽיִן׃) match the bare-
+    consonant patterns for negation (אל) or object marker (את) after
+    niqqud-stripping removes the sof pasuq from the comparison string.
+    """
     tokens = line.rstrip().split()
     if not tokens:
         return None
-    return tokens[-1]
+    last = tokens[-1]
+    if SOF_PASUQ in last:
+        return None
+    return last
 
 
 def is_skippable(line: str) -> bool:

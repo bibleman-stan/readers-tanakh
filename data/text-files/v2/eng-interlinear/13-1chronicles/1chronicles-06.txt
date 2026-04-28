@@ -85,7 +85,7 @@ the ark
 
 6:17
 and they were | serving | before | [the] tabernacle of | [the] tent of | meeting | with song
-until | built | Solomon |  | [the] house of | Yahweh
+until | built | Solomon | [obj.] | [the] house of | Yahweh
 in Jerusalem
 and they stood | according to custom their
 on | service their
@@ -211,7 +211,7 @@ for | to them
 it belonged | the lot
 
 6:40
-and people gave | to them |  | Hebron
+and people gave | to them | [obj.] | Hebron
 in [the] land of | Judah
 and | pasture lands its
 around it
@@ -223,15 +223,15 @@ people gave
 to Caleb | [the] son of | Jephunneh
 
 6:42
-and to [the] descendants of | Aaron | people gave |  | [the] cities of | refuge
- | Hebron | and | Libnah
+and to [the] descendants of | Aaron | people gave | [obj.] | [the] cities of | refuge
+[obj.] | Hebron | and | Libnah
 and | pasture lands its
 and | Jattir | and | Eshtemoa
 and | pasture lands its
 
 6:43
 and | Hilez | and | pasture lands its
- | Debir
+[obj.] | Debir
 and | pasture lands its
 
 6:44
@@ -240,7 +240,7 @@ and | Juttah | and | pasture lands its | and | Beth | Shemesh
 and | pasture lands its
 
 6:45
-and from [the] tribe of | Benjamin |  | Gibeon | and | pasture lands its |  | Geba | and | pasture lands its | and | Alemeth | and | pasture lands its
+and from [the] tribe of | Benjamin | [obj.] | Gibeon | and | pasture lands its | [obj.] | Geba | and | pasture lands its | and | Alemeth | and | pasture lands its
 and | Anathoth
 and | pasture lands its
 all | cities their | [were] thir- | teen | citi[es]
@@ -263,14 +263,14 @@ two [plus] | ten
 6:49
 and they gave | [the] people of | Israel
 to the Levites
- | the cities
+[obj.] | the cities
 and | pasture lands their
 
 6:50
 and they gave | by the lot | from [the] tribe of | [the] descendants of | Judah | and from [the] tribe of | [the] descendants of | Simeon
 and from [the] tribe of
 [the] descendants of | Benjamin
- | the cities | these
+[obj.] | the cities | these
 which | they called | them
 by names
 
@@ -282,7 +282,7 @@ and it was | [the] cities of | territory their
 Ephraim
 
 6:52
-and they gave | to them |  | [the] cities of | refuge |  | Shechem | and | pasture lands its
+and they gave | to them | [obj.] | [the] cities of | refuge | [obj.] | Shechem | and | pasture lands its
 in [the] hill country of | Ephraim
 and | Gezer
 and | pasture lands its
@@ -299,7 +299,7 @@ and | pasture lands its
 
 6:55
 and from [the] half of | [the] tribe of | Manasseh
- | Aner | and | pasture lands its
+[obj.] | Aner | and | pasture lands its
 and | Bileam
 and | pasture lands its
 for [the] clan | of [the] descendants of | Kohath
@@ -308,16 +308,16 @@ which remained
 6:56
 to [the] descendants of | Gershom
 from [the] clan of | [the] half of | [the] tribe of | Manasseh
- | Golan | in Bashan
+[obj.] | Golan | in Bashan
 and | pasture lands its
 and | Ashtaroth
 and | pasture lands its
 
 6:57
 and from [the] tribe of | Issachar
- | Kedesh
+[obj.] | Kedesh
 and | pasture lands its
- | Daberath
+[obj.] | Daberath
 and | pasture lands its
 
 6:58
@@ -327,7 +327,7 @@ and | pasture lands its
 
 6:59
 and from [the] tribe of | Asher
- | Mashal
+[obj.] | Mashal
 and | pasture lands its
 and | Abdon
 and | pasture lands its
@@ -338,7 +338,7 @@ and | Rehob
 and | pasture lands its
 
 6:61
-and from [the] tribe of | Naphtali |  | Kedesh | in Galilee | and | pasture lands its
+and from [the] tribe of | Naphtali | [obj.] | Kedesh | in Galilee | and | pasture lands its
 and | Hammon
 and | pasture lands its
 and | Kiriathaim
@@ -347,15 +347,15 @@ and | pasture lands its
 6:62
 to [the] descendants of | Merari | which remained
 of [the] tribe of | Zebulun
- | Jokneam | and | pasture lands its |  | Kartah | and | pasture lands its |  | Rimmono
+[obj.] | Jokneam | and | pasture lands its | [obj.] | Kartah | and | pasture lands its | [obj.] | Rimmono
 and | pasture lands its
- | Tabor
+[obj.] | Tabor
 and | pasture lands its
 
 6:63
 and from [the] other side | of [the] Jordan | of Jericho | to [the] east of | the Jordan
 from [the] tribe of | Reuben
- | Bezer | in the wilderness
+[obj.] | Bezer | in the wilderness
 and | pasture lands its
 and | Jahaz
 and | pasture lands its
@@ -367,7 +367,7 @@ and | pasture lands its
 
 6:65
 and from [the] tribe of | Gad
- | Ramoth | in Gilead
+[obj.] | Ramoth | in Gilead
 and | pasture lands its
 and | Mahanaim
 and | pasture lands its

@@ -14,7 +14,7 @@ before | not | it will come | on you
 [the] anger of | Yahweh
 
 2:3
-seek |  | Yahweh | O all | [the] humble [people] of | the land
+seek | [obj.] | Yahweh | O all | [the] humble [people] of | the land
 who | judgment his
 they have done
 seek | righteousness | seek | humility
@@ -52,7 +52,7 @@ and he will turn back | captivity their
 I have heard | [the] reproach of | Moab
 and [the] reviling words of
 [the] people of | Ammon
-who | they have reproached |  | people my
+who | they have reproached | [obj.] | people my
 and they have magnified themselves
 on | territory their
 
@@ -74,7 +74,7 @@ Yahweh | of hosts
 2:11
 [will be] awesome | Yahweh | on them
 if | he will make lean
-
+[obj.]
 all | [the] gods of | the earth
 so they may bow down | to him | everyone | from own place his
 all
@@ -88,8 +88,8 @@ they
 2:13
 and he may stretch out | hand his | on | [the] north
 so he may destroy
- | Assyria
-and he may make |  | Nineveh | a waste
+[obj.] | Assyria
+and he may make | [obj.] | Nineveh | a waste
 a dry region
 like the wilderness
 

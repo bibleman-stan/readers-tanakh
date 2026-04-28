@@ -1,21 +1,21 @@
 {
   "book": "1samuel",
   "dir_name": "09-1samuel",
-  "timestamp": "2026-04-27T19:43:31",
+  "timestamp": "2026-04-27T20:00:58",
   "chapter_count": 31,
   "total_cola": 4590,
-  "readiness_score": 84,
+  "readiness_score": 88,
   "score_breakdown": {
     "malformed_pts": 50.0,
-    "deviation_pts": 24.42,
+    "deviation_pts": 24.44,
     "review_pts": 10.0,
-    "drift_pts": 0.0
+    "drift_pts": 3.5
   },
   "validators": {
-    "total_findings": 331,
+    "total_findings": 330,
     "malformed": 0,
-    "deviation": 331,
-    "review_required": 283,
+    "deviation": 330,
+    "review_required": 282,
     "per_validator": [
       {
         "name": "validate_line_final_tokens",
@@ -48,12 +48,12 @@
       {
         "name": "validate_construct_chain",
         "layer": "colometry",
-        "findings": 232,
+        "findings": 231,
         "by_severity": {
-          "DEVIATION": 232
+          "DEVIATION": 231
         },
         "by_tag": {
-          "REVIEW-REQUIRED": 232
+          "REVIEW-REQUIRED": 231
         },
         "error": null
       },
@@ -117,11 +117,11 @@
     "MID_SPLIT": 0
   },
   "english_drift": {
-    "ARTICLE-SPLIT": 0,
-    "PREP-NP-SPLIT": 30,
+    "ARTICLE-SPLIT": 7,
+    "PREP-NP-SPLIT": 2,
     "AUX-VERB-SPLIT": 0,
     "PTC-NP-SPLIT": 1,
-    "APPOSITIVE-SPLIT": 12,
+    "APPOSITIVE-SPLIT": 3,
     "DANGLING-CONJ": 0
   }
 }

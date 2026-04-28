@@ -1,15 +1,15 @@
 {
   "book": "ezra",
   "dir_name": "15-ezra",
-  "timestamp": "2026-04-27T19:37:08",
+  "timestamp": "2026-04-27T20:03:16",
   "chapter_count": 10,
   "total_cola": 1374,
-  "readiness_score": 88,
+  "readiness_score": 96,
   "score_breakdown": {
     "malformed_pts": 50.0,
     "deviation_pts": 27.66,
     "review_pts": 10.0,
-    "drift_pts": 0.0
+    "drift_pts": 8.5
   },
   "validators": {
     "total_findings": 60,
@@ -108,11 +108,11 @@
     "MID_SPLIT": 0
   },
   "english_drift": {
-    "ARTICLE-SPLIT": 65,
-    "PREP-NP-SPLIT": 23,
+    "ARTICLE-SPLIT": 1,
+    "PREP-NP-SPLIT": 2,
     "AUX-VERB-SPLIT": 0,
     "PTC-NP-SPLIT": 0,
-    "APPOSITIVE-SPLIT": 2,
+    "APPOSITIVE-SPLIT": 0,
     "DANGLING-CONJ": 0
   }
 }

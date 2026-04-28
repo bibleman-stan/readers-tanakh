@@ -1,7 +1,7 @@
 3:1
-and Moses | he was | pasturing |  | [the] flock of | Jethro | father-in-law his
+and Moses | he was | pasturing | [obj.] | [the] flock of | Jethro | father-in-law his
 [the] priest of | Midian
-and he drove |  | the flock | behind | the wilderness
+and he drove | [obj.] | the flock | behind | the wilderness
 and he came | to | [the] mountain of | God
 Horeb towards
 
@@ -15,7 +15,7 @@ not it | [was] consumed
 3:3
 and he said | Moses
 I will turn aside | please | so I may see
- | the sight | great
+[obj.] | the sight | great
 this
 why?
 not | is it burning | the bush
@@ -45,11 +45,11 @@ to | God
 
 3:7
 and he said | Yahweh
-certainly | I have seen |  | [the] affliction of | people my
+certainly | I have seen | [obj.] | [the] affliction of | people my
 which | [is] in Egypt
 and | cry of distress their | I have heard | because of | taskmasters its
 for | I know
- | pains its
+[obj.] | pains its
 
 3:8
 and I have come down | to deliver it | from [the] hand of | Egypt | and to bring up it | from | the land | that
@@ -65,7 +65,7 @@ and the Jebusite[s]
 and now
 there! | [the] cry of distress of | [the] people of | Israel
 it has come | to me
-and also | I have seen |  | the oppression
+and also | I have seen | [obj.] | the oppression
 which | Egypt
 [are] oppressing | them
 
@@ -73,7 +73,7 @@ which | Egypt
 and therefore | go !
 and I will send you
 to | Pharaoh
-and bring out |  | people my | [the] people of | Israel
+and bring out | [obj.] | people my | [the] people of | Israel
 from Egypt
 
 3:11
@@ -81,7 +81,7 @@ and he said | Moses | to | God
 who? | [am] I
 that | I will go
 to | Pharaoh
-and that | I will bring out |  | [the] people of | Israel
+and that | I will bring out | [obj.] | [the] people of | Israel
 from Egypt
 
 3:12
@@ -89,8 +89,8 @@ and he said | that | I will be | with you
 and this | for you | [will be] the sign
 that | I
 I sent you
-when bringing out you |  | the people | from Egypt
-you will serve ! |  | God
+when bringing out you | [obj.] | the people | from Egypt
+you will serve ! | [obj.] | God
 on | the mountain | this
 
 3:13
@@ -119,7 +119,7 @@ and this | [is] memorial my
 to a generation | generation
 
 3:16
-go | and you will gather |  | [the] elders of | Israel | and you will say | to them | Yahweh | [the] God of | ancestors your | he appeared | to me
+go | and you will gather | [obj.] | [the] elders of | Israel | and you will say | to them | Yahweh | [the] God of | ancestors your | he appeared | to me
 [the] God of | Abraham | Isaac | and Jacob
 saying
 certainly | I have observed | you
@@ -151,7 +151,7 @@ and not
 by a hand | strong
 
 3:20
-and I will stretch out |  | hand my | and I will strike |  | Egypt
+and I will stretch out | [obj.] | hand my | and I will strike | [obj.] | Egypt
 with all | wonders my
 which | I will do
 in midst its
@@ -159,7 +159,7 @@ and after | thus
 he will let go | you
 
 3:21
-and I will give |  | [the] favor of | the people | this
+and I will give | [obj.] | [the] favor of | the people | this
 in [the] eyes of | Egypt
 and it will be | that | you will go !
 not | you will go
@@ -171,4 +171,4 @@ articles of | silver | and articles of | gold
 and clothes
 and you will put [them] | on | sons your | and on | daughters your
 and you will plunder
- | Egypt
+[obj.] | Egypt

@@ -1,20 +1,20 @@
 {
   "book": "1kings",
   "dir_name": "11-1kings",
-  "timestamp": "2026-04-27T19:41:43",
+  "timestamp": "2026-04-27T20:01:51",
   "chapter_count": 22,
-  "total_cola": 4428,
-  "readiness_score": 83,
+  "total_cola": 4427,
+  "readiness_score": 85,
   "score_breakdown": {
     "malformed_pts": 50.0,
-    "deviation_pts": 24.35,
+    "deviation_pts": 24.33,
     "review_pts": 9.05,
-    "drift_pts": 0.0
+    "drift_pts": 1.5
   },
   "validators": {
-    "total_findings": 335,
+    "total_findings": 336,
     "malformed": 0,
-    "deviation": 335,
+    "deviation": 336,
     "review_required": 262,
     "per_validator": [
       {
@@ -98,12 +98,12 @@
       {
         "name": "validate_wayehi_protasis",
         "layer": "colometry",
-        "findings": 35,
+        "findings": 36,
         "by_severity": {
-          "DEVIATION": 35
+          "DEVIATION": 36
         },
         "by_tag": {
-          "STRONG-MERGE-CANDIDATE": 21,
+          "STRONG-MERGE-CANDIDATE": 22,
           "STRONG-SPLIT-CANDIDATE": 14
         },
         "error": null
@@ -118,11 +118,11 @@
     "MID_SPLIT": 0
   },
   "english_drift": {
-    "ARTICLE-SPLIT": 0,
-    "PREP-NP-SPLIT": 40,
-    "AUX-VERB-SPLIT": 3,
+    "ARTICLE-SPLIT": 3,
+    "PREP-NP-SPLIT": 9,
+    "AUX-VERB-SPLIT": 1,
     "PTC-NP-SPLIT": 0,
-    "APPOSITIVE-SPLIT": 8,
+    "APPOSITIVE-SPLIT": 4,
     "DANGLING-CONJ": 0
   }
 }

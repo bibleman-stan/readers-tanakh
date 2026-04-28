@@ -1,32 +1,28 @@
 {
   "book": "judges",
   "dir_name": "07-judges",
-  "timestamp": "2026-04-27T19:42:13",
+  "timestamp": "2026-04-27T20:00:15",
   "chapter_count": 21,
   "total_cola": 3474,
-  "readiness_score": 75,
+  "readiness_score": 91,
   "score_breakdown": {
-    "malformed_pts": 40.0,
+    "malformed_pts": 50.0,
     "deviation_pts": 25.37,
     "review_pts": 10.0,
-    "drift_pts": 0.0
+    "drift_pts": 5.5
   },
   "validators": {
-    "total_findings": 234,
-    "malformed": 2,
+    "total_findings": 232,
+    "malformed": 0,
     "deviation": 232,
     "review_required": 183,
     "per_validator": [
       {
         "name": "validate_line_final_tokens",
         "layer": "syntax",
-        "findings": 2,
-        "by_severity": {
-          "MALFORMED": 2
-        },
-        "by_tag": {
-          "STRONG-MERGE-CANDIDATE": 2
-        },
+        "findings": 0,
+        "by_severity": {},
+        "by_tag": {},
         "error": null
       },
       {
@@ -121,11 +117,11 @@
     "MID_SPLIT": 0
   },
   "english_drift": {
-    "ARTICLE-SPLIT": 0,
-    "PREP-NP-SPLIT": 28,
+    "ARTICLE-SPLIT": 1,
+    "PREP-NP-SPLIT": 8,
     "AUX-VERB-SPLIT": 0,
     "PTC-NP-SPLIT": 0,
-    "APPOSITIVE-SPLIT": 4,
+    "APPOSITIVE-SPLIT": 0,
     "DANGLING-CONJ": 0
   }
 }

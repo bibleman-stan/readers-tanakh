@@ -22,18 +22,18 @@ not | I made myself known
 to them
 
 6:4
-and also | I established |  | covenant my | with them
+and also | I established | [obj.] | covenant my | with them
 to give | to them
- | [the] land of | Canaan
- | [the] land of | sojournings their
+[obj.] | [the] land of | Canaan
+[obj.] | [the] land of | sojournings their
 which | they sojourned | in it
 
 6:5
-and also | I | I have heard |  | [the] groaning of | [the] people of | Israel
+and also | I | I have heard | [obj.] | [the] groaning of | [the] people of | Israel
 whom | Egypt
 [are] compelling to labor | them
 and I have remembered
- | covenant my
+[obj.] | covenant my
 
 6:6
 therefore | say | to [the] people of | Israel | I | [am] Yahweh
@@ -54,7 +54,7 @@ from under | [the] forced labor of | Egypt
 
 6:8
 and I will bring | you | into | the land
-which | I lifted up |  | hand my
+which | I lifted up | [obj.] | hand my
 to give | it
 to Abraham | to Isaac
 and to Jacob
@@ -77,7 +77,7 @@ to | Moses | saying
 go | speak
 to | Pharaoh
 [the] king of | Egypt
-so he may let go |  | [the] people of | Israel
+so he may let go | [obj.] | [the] people of | Israel
 from land his
 
 6:12
@@ -94,7 +94,7 @@ and he spoke | Yahweh | to | Moses | and to | Aaron
 and he commanded them | to | [the] people of | Israel
 and to | Pharaoh
 [the] king of | Egypt
-to bring out |  | [the] people of | Israel
+to bring out | [obj.] | [the] people of | Israel
 from [the] land of | Egypt
 
 6:14
@@ -140,9 +140,9 @@ these | [were] [the] clans of | the Levite[s]
 to descendants their
 
 6:20
-and he took | Amram |  | Jochebed | father's sister his | for himself | to a wife
+and he took | Amram | [obj.] | Jochebed | father's sister his | for himself | to a wife
 and she bore | to him
- | Aaron
+[obj.] | Aaron
 and | Moses
 and [the] years of | [the] life of | Amram
 [were] seven | and thirty | and one hundred
@@ -161,10 +161,10 @@ Uzziel
 and Sithri
 
 6:23
-and he took | Aaron |  | Elisheba | [the] daughter of | Amminadab | [the] sister of | Nahshon
+and he took | Aaron | [obj.] | Elisheba | [the] daughter of | Amminadab | [the] sister of | Nahshon
 for himself | to a wife
-and she bore | to him |  | Nadab | and | Abihu
- | Eleazar
+and she bore | to him | [obj.] | Nadab | and | Abihu
+[obj.] | Eleazar
 and | Ithamar
 
 6:24
@@ -177,7 +177,7 @@ these
 6:25
 and Eleazar | [the] son of | Aaron | he took | for himself | one of [the] daughters of | Putiel | for himself | to a wife
 and she bore | to him
- | Phinehas
+[obj.] | Phinehas
 these | [were] [the] heads of | [the] ancestors of | the Levites
 to clans their
 
@@ -185,12 +185,12 @@ to clans their
 that | Aaron
 and Moses
 whom | he said | Yahweh | to them
-bring out |  | [the] people of | Israel | from [the] land of | Egypt
+bring out | [obj.] | [the] people of | Israel | from [the] land of | Egypt
 on | hosts their
 
 6:27
 they | [were] the [ones who] were speaking | to | Pharaoh | [the] king of | Egypt
-to bring out |  | [the] people of | Israel
+to bring out | [obj.] | [the] people of | Israel
 from Egypt
 that | Moses
 and Aaron
@@ -202,7 +202,7 @@ and it was | on [the] day | [when] he spoke | Yahweh | to | Moses | in [the] lan
 and he spoke | Yahweh | to | Moses | saying
 I | [am] Yahweh
 speak | to | Pharaoh | [the] king of | Egypt
- | all | that | I
+[obj.] | all | that | I
 [am] speaking | to you
 
 6:30

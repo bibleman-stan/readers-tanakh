@@ -1,32 +1,28 @@
 {
   "book": "ruth",
   "dir_name": "08-ruth",
-  "timestamp": "2026-04-27T19:42:33",
+  "timestamp": "2026-04-27T20:00:26",
   "chapter_count": 4,
   "total_cola": 467,
-  "readiness_score": 80,
+  "readiness_score": 91,
   "score_breakdown": {
-    "malformed_pts": 40.0,
+    "malformed_pts": 50.0,
     "deviation_pts": 21.48,
     "review_pts": 10.0,
-    "drift_pts": 9.0
+    "drift_pts": 9.5
   },
   "validators": {
-    "total_findings": 46,
-    "malformed": 1,
+    "total_findings": 45,
+    "malformed": 0,
     "deviation": 45,
     "review_required": 38,
     "per_validator": [
       {
         "name": "validate_line_final_tokens",
         "layer": "syntax",
-        "findings": 1,
-        "by_severity": {
-          "MALFORMED": 1
-        },
-        "by_tag": {
-          "STRONG-MERGE-CANDIDATE": 1
-        },
+        "findings": 0,
+        "by_severity": {},
+        "by_tag": {},
         "error": null
       },
       {
@@ -118,11 +114,11 @@
     "MID_SPLIT": 0
   },
   "english_drift": {
-    "ARTICLE-SPLIT": 0,
-    "PREP-NP-SPLIT": 1,
+    "ARTICLE-SPLIT": 1,
+    "PREP-NP-SPLIT": 0,
     "AUX-VERB-SPLIT": 0,
     "PTC-NP-SPLIT": 0,
-    "APPOSITIVE-SPLIT": 1,
+    "APPOSITIVE-SPLIT": 0,
     "DANGLING-CONJ": 0
   }
 }

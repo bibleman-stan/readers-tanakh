@@ -119,8 +119,7 @@ vayhi
 im | levav
 David | avi
 livnot | bayit
-leshem | Yahweh
-elohei | Yisra'el
+leshem | Yahweh | elohei | Yisra'el
 
 8:18
 vaiyomer | Yahweh | el | David | avi
@@ -145,8 +144,7 @@ et | devaro
 asher | diber
 va'akum | tachat | David | avi | va'eshev | al | kise | Yisra'el | ka'asher | diber | Yahweh
 va'evneh | habayit
-leshem | Yahweh
-elohei | Yisra'el
+leshem | Yahweh | elohei | Yisra'el
 
 8:21
 va'asim | sham | makom | la'aron
@@ -229,11 +227,11 @@ veshama'ta
 vesalacheta
 
 8:31
-??? | ??? | ??? | ??? | ???
-??? | ??? | ???
-???
-??? | ??? | ??? | ???
-??? | ???
+et | asher | yecheta | ish | lere'ehu
+venasha | vo | alah
+leha'aloto
+uva | alah | lifnei | mizbachakha
+babayit | hazeh
 
 8:32
 ve'atah | tishma | hashamayim | ve'asita | veshafata | et | avadeikha

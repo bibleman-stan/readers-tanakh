@@ -2,7 +2,7 @@
 and Abraham | he was old
 he had come
 in days
-and Yahweh | he had blessed |  | Abraham
+and Yahweh | he had blessed | [obj.] | Abraham
 in everything
 
 24:2
@@ -33,7 +33,7 @@ and he said | to him | the servant
 perhaps | not | she will be willing | the woman
 to go | after me
 to | the land | this
-¿ really | will I take back |  | son your
+¿ really | will I take back | [obj.] | son your
 to | the land
 where | you came out | from there
 
@@ -41,7 +41,7 @@ where | you came out | from there
 and he said | to him
 Abraham
 take heed | to yourself
-lest | you should take back |  | son my
+lest | you should take back | [obj.] | son my
 there towards
 
 24:7
@@ -49,7 +49,7 @@ Yahweh | [the] God of | the heavens | who | he took me | from [the] household of
 and who | he spoke | to me | and who | he swore an oath | to me | saying
 to offspring your
 I will give
- | the land | this
+[obj.] | the land | this
 he | he will send | angel his | before you
 and you will take | a wife | for son my
 from there
@@ -59,12 +59,12 @@ and if | not | she will be willing | the woman | to go | after you
 and you will be free
 from oath my
 this
-only |  | son my
+only | [obj.] | son my
 not | you must take back
 there towards
 
 24:9
-and he put | the servant |  | hand his
+and he put | the servant | [obj.] | hand his
 under | [the] thigh of | Abraham
 master his
 and he swore an oath | to him
@@ -144,7 +144,7 @@ and she gave a drink him
 and she finished
 to give a drink him
 and she said | also | for camels your | I will draw water
-until |  | they have finished
+until | [if] | they have finished
 to drink
 
 24:20
@@ -219,8 +219,8 @@ and he ran | Laban | to | the man | the outside towards
 to | the spring
 
 24:30
-and it was | when saw |  | the ring | and | the bracelets | on | [the] hands of | sister his
-and just as heard he |  | [the] words of | Rebekah | sister his | saying
+and it was | when saw | [obj.] | the ring | and | the bracelets | on | [the] hands of | sister his
+and just as heard he | [obj.] | [the] words of | Rebekah | sister his | saying
 thus | he spoke | to me
 the man
 and he went | to | the man
@@ -248,7 +248,7 @@ who | [were] with him
 24:33
 and it was put | before him | to eat
 and he said | not | I will eat
-until |  | I have spoken
+until | [if] | I have spoken
 words my
 and he said
 speak
@@ -259,7 +259,7 @@ and he said
 I
 
 24:35
-and Yahweh | he has blessed |  | master my | exceedingly
+and Yahweh | he has blessed | [obj.] | master my | exceedingly
 and he has become great
 and he has given | to him | sheep | and cattle | and silver | and gold
 and [male] servants | and female servants
@@ -271,7 +271,7 @@ and she has borne | Sarah | [the] wife of | master my | a son | to master my
 after
 old age her
 and he has given | to him
- | all | that | [belongs] to him
+[obj.] | all | that | [belongs] to him
 
 24:37
 and he made swear an oath me | master my
@@ -361,9 +361,9 @@ on | hands her
 24:48
 and I bowed low | and I bowed down
 to Yahweh
-and I blessed |  | Yahweh | [the] God of | master my | Abraham
+and I blessed | [obj.] | Yahweh | [the] God of | master my | Abraham
 who | he had led me | in [the] way of | truth
-to take |  | [the] daughter of | [the] brother of | master my
+to take | [obj.] | [the] daughter of | [the] brother of | master my
 for son his
 
 24:49
@@ -391,7 +391,7 @@ he has spoken | Yahweh
 24:52
 and it was
 just as | he heard | [the] servant of | Abraham
- | words their
+[obj.] | words their
 and he bowed down | [the] ground towards
 to Yahweh
 
@@ -429,7 +429,7 @@ to master my
 and they said
 let us summon | the young woman
 and let us ask
- | mouth her
+[obj.] | mouth her
 
 24:58
 and they summoned | Rebekah | and they said | to her
@@ -439,25 +439,25 @@ and she said
 I will go
 
 24:59
-and they sent away |  | Rebekah | sister their
+and they sent away | [obj.] | Rebekah | sister their
 and | suckling-nurse her
 and | [the] servant of | Abraham
 and | men his
 
 24:60
-and they blessed |  | Rebekah | and they said | to her
+and they blessed | [obj.] | Rebekah | and they said | to her
 O sister our
 you | become
 thousands of | ten thousand
 so may it take possession of | offspring your
-
+[obj.]
 [the] gate of | [those who] hate it
 
 24:61
 and she arose | Rebekah | and maids her | and they rode | on | the camels
 and they went
 after | the man
-and he took | the servant |  | Rebekah
+and he took | the servant | [obj.] | Rebekah
 and he went
 
 24:62
@@ -475,9 +475,9 @@ and there! | camels
 [were] coming
 
 24:64
-and she lifted up | Rebekah |  | eyes her
+and she lifted up | Rebekah | [obj.] | eyes her
 and she saw
- | Isaac
+[obj.] | Isaac
 and she fell
 from on | the camel
 
@@ -491,12 +491,12 @@ and she covered herself
 24:66
 and he recounted | the servant
 to Isaac
- | all | the things
+[obj.] | all | the things
 which | he had done
 
 24:67
 and he brought her | Isaac | the tent of towards | Sarah | mother his
-and he took |  | Rebekah | and she became | of him | a wife
+and he took | [obj.] | Rebekah | and she became | of him | a wife
 and he loved her
 and he was comforted | Isaac
 after | mother his

@@ -1,7 +1,7 @@
 {
   "book": "2chronicles",
   "dir_name": "14-2chronicles",
-  "timestamp": "2026-04-27T19:36:39",
+  "timestamp": "2026-04-27T20:03:05",
   "chapter_count": 36,
   "total_cola": 4508,
   "readiness_score": 86,
@@ -9,7 +9,7 @@
     "malformed_pts": 50.0,
     "deviation_pts": 25.98,
     "review_pts": 10.0,
-    "drift_pts": 0.0
+    "drift_pts": 0.5
   },
   "validators": {
     "total_findings": 272,
@@ -117,10 +117,10 @@
     "MID_SPLIT": 0
   },
   "english_drift": {
-    "ARTICLE-SPLIT": 0,
-    "PREP-NP-SPLIT": 53,
+    "ARTICLE-SPLIT": 2,
+    "PREP-NP-SPLIT": 9,
     "AUX-VERB-SPLIT": 1,
-    "PTC-NP-SPLIT": 3,
+    "PTC-NP-SPLIT": 2,
     "APPOSITIVE-SPLIT": 5,
     "DANGLING-CONJ": 0
   }

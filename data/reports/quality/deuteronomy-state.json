@@ -1,7 +1,7 @@
 {
   "book": "deuteronomy",
   "dir_name": "05-deuteronomy",
-  "timestamp": "2026-04-27T19:40:38",
+  "timestamp": "2026-04-27T19:59:19",
   "chapter_count": 34,
   "total_cola": 5076,
   "readiness_score": 88,
@@ -117,10 +117,10 @@
   },
   "english_drift": {
     "ARTICLE-SPLIT": 0,
-    "PREP-NP-SPLIT": 41,
+    "PREP-NP-SPLIT": 34,
     "AUX-VERB-SPLIT": 2,
     "PTC-NP-SPLIT": 0,
-    "APPOSITIVE-SPLIT": 21,
+    "APPOSITIVE-SPLIT": 20,
     "DANGLING-CONJ": 0
   }
 }

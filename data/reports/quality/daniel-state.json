@@ -1,15 +1,15 @@
 {
   "book": "daniel",
   "dir_name": "27-daniel",
-  "timestamp": "2026-04-27T19:16:11",
+  "timestamp": "2026-04-27T20:00:23",
   "chapter_count": 12,
   "total_cola": 2080,
-  "readiness_score": 92,
+  "readiness_score": 95,
   "score_breakdown": {
     "malformed_pts": 50.0,
     "deviation_pts": 28.78,
     "review_pts": 10.0,
-    "drift_pts": 3.5
+    "drift_pts": 6.5
   },
   "validators": {
     "total_findings": 73,
@@ -110,7 +110,7 @@
     "ARTICLE-SPLIT": 3,
     "PREP-NP-SPLIT": 0,
     "AUX-VERB-SPLIT": 1,
-    "PTC-NP-SPLIT": 7,
+    "PTC-NP-SPLIT": 1,
     "APPOSITIVE-SPLIT": 2,
     "DANGLING-CONJ": 0
   }

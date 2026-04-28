@@ -1,15 +1,15 @@
 {
   "book": "zephaniah",
   "dir_name": "36-zephaniah",
-  "timestamp": "2026-04-27T19:17:30",
+  "timestamp": "2026-04-27T20:01:55",
   "chapter_count": 3,
   "total_cola": 289,
-  "readiness_score": 94,
+  "readiness_score": 95,
   "score_breakdown": {
     "malformed_pts": 50.0,
     "deviation_pts": 25.49,
     "review_pts": 10.0,
-    "drift_pts": 9.0
+    "drift_pts": 9.5
   },
   "validators": {
     "total_findings": 17,
@@ -98,7 +98,7 @@
     "ARTICLE-SPLIT": 0,
     "PREP-NP-SPLIT": 1,
     "AUX-VERB-SPLIT": 0,
-    "PTC-NP-SPLIT": 1,
+    "PTC-NP-SPLIT": 0,
     "APPOSITIVE-SPLIT": 0,
     "DANGLING-CONJ": 0
   }

@@ -1,7 +1,7 @@
 {
   "book": "micah",
   "dir_name": "33-micah",
-  "timestamp": "2026-04-27T19:17:04",
+  "timestamp": "2026-04-27T20:01:29",
   "chapter_count": 7,
   "total_cola": 585,
   "readiness_score": 95,
@@ -9,7 +9,7 @@
     "malformed_pts": 50.0,
     "deviation_pts": 26.61,
     "review_pts": 10.0,
-    "drift_pts": 8.0
+    "drift_pts": 8.5
   },
   "validators": {
     "total_findings": 30,
@@ -102,7 +102,7 @@
     "ARTICLE-SPLIT": 1,
     "PREP-NP-SPLIT": 1,
     "AUX-VERB-SPLIT": 0,
-    "PTC-NP-SPLIT": 2,
+    "PTC-NP-SPLIT": 1,
     "APPOSITIVE-SPLIT": 0,
     "DANGLING-CONJ": 0
   }

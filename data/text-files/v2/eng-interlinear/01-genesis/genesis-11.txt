@@ -27,7 +27,7 @@ over | [the] surface of | all | the earth
 
 11:5
 and he came down | Yahweh
-to see |  | the city
+to see | [obj.] | the city
 and | the tower
 which | they had built
 [the] children of | humankind
@@ -66,12 +66,12 @@ all | the earth
 these | [are] [the] accounts of | Shem
 Shem | [was] a son of | one hundred | year[s]
 and he fathered
- | Arphaxad
+[obj.] | Arphaxad
 two years
 after | the flood
 
 11:11
-and he lived | Shem | after | fathered he |  | Arphaxad
+and he lived | Shem | after | fathered he | [obj.] | Arphaxad
 five | hundred
 year[s]
 and he fathered | sons
@@ -82,10 +82,10 @@ and Arphaxad | he lived
 five | and thirty
 year[s]
 and he fathered
- | Shelah
+[obj.] | Shelah
 
 11:13
-and he lived | Arphaxad | after | fathered he |  | Shelah
+and he lived | Arphaxad | after | fathered he | [obj.] | Shelah
 three | years
 and four | hundred
 year[s]
@@ -96,10 +96,10 @@ and daughters
 and Shelah | he lived
 thirty | year[s]
 and he fathered
- | Eber
+[obj.] | Eber
 
 11:15
-and he lived | Shelah | after | fathered he |  | Eber
+and he lived | Shelah | after | fathered he | [obj.] | Eber
 three | years
 and four | hundred
 year[s]
@@ -111,10 +111,10 @@ and he lived | Eber
 four | and thirty
 year[s]
 and he fathered
- | Peleg
+[obj.] | Peleg
 
 11:17
-and he lived | Eber | after | fathered he |  | Peleg
+and he lived | Eber | after | fathered he | [obj.] | Peleg
 thirty | year[s]
 and four | hundred
 year[s]
@@ -125,10 +125,10 @@ and daughters
 and he lived | Peleg
 thirty | year[s]
 and he fathered
- | Reu
+[obj.] | Reu
 
 11:19
-and he lived | Peleg | after | fathered he |  | Reu
+and he lived | Peleg | after | fathered he | [obj.] | Reu
 nine | years
 and two hundred | year[s]
 and he fathered | sons
@@ -139,10 +139,10 @@ and he lived | Reu
 two | and thirty
 year[s]
 and he fathered
- | Serug
+[obj.] | Serug
 
 11:21
-and he lived | Reu | after | fathered he |  | Serug
+and he lived | Reu | after | fathered he | [obj.] | Serug
 seven | years
 and two hundred | year[s]
 and he fathered | sons
@@ -152,10 +152,10 @@ and daughters
 and he lived | Serug
 thirty | year[s]
 and he fathered
- | Nahor
+[obj.] | Nahor
 
 11:23
-and he lived | Serug | after | fathered he |  | Nahor
+and he lived | Serug | after | fathered he | [obj.] | Nahor
 two hundred | year[s]
 and he fathered | sons
 and daughters
@@ -165,10 +165,10 @@ and he lived | Nahor
 nine | and twenty
 year[s]
 and he fathered
- | Terah
+[obj.] | Terah
 
 11:25
-and he lived | Nahor | after | fathered he |  | Terah
+and he lived | Nahor | after | fathered he | [obj.] | Terah
 nine- | teen | year[s]
 and one hundred | year[s]
 and he fathered | sons
@@ -177,17 +177,17 @@ and daughters
 11:26
 and he lived | Terah
 seventy | year[s]
-and he fathered |  | Abram
- | Nahor
+and he fathered | [obj.] | Abram
+[obj.] | Nahor
 and | Haran
 
 11:27
 and these | [are] [the] accounts of | Terah
-Terah | he fathered |  | Abram
- | Nahor
+Terah | he fathered | [obj.] | Abram
+[obj.] | Nahor
 and | Haran
 and Haran
-he fathered |  | Lot
+he fathered | [obj.] | Lot
 
 11:28
 and he died | Haran
@@ -211,7 +211,7 @@ not | [belonged] to her
 a child
 
 11:31
-and he took | Terah |  | Abram | son his | and | Lot | [the] son of | Haran | [the] son of | son his
+and he took | Terah | [obj.] | Abram | son his | and | Lot | [the] son of | Haran | [the] son of | son his
 and | Sarai | daughter-in-law his
 [the] wife of
 Abram | son his

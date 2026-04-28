@@ -66,7 +66,7 @@ and the ambusher | [was] sitting | of her | in the chamber
 and she said | to him
 [the] Philistines | [are] on you
 O Samson
-and he tore apart |  | the cords
+and he tore apart | [obj.] | the cords
 just as | it is torn apart | thread of | tow | when smells it | fire
 and not | it was known
 strength his
@@ -82,7 +82,7 @@ will you be bound
 
 16:11
 and he said | to her
- | certainly [if] | they will bind me | with ropes | new
+[if] | certainly [if] | they will bind me | with ropes | new
 which | not | it has been done | with them
 work
 and I will be weak | and I will be
@@ -101,16 +101,16 @@ tell ! | to me
 how?
 will you be bound
 and he said | to her
-if | you will weave |  | seven | [the] plaits of | head my
+if | you will weave | [obj.] | seven | [the] plaits of | head my
 with | the web | and you will strike | with a pin | to | the wall | and I will be weak | and I will be | like one | man
 
 16:14
-and she made sleep him | and she wove |  | seven | [the] plaits | head his | with | the web | and she thrust | with the pin
+and she made sleep him | and she wove | [obj.] | seven | [the] plaits | head his | with | the web | and she thrust | with the pin
 and she said | to him
 [the] Philistines | [are] on you
 O Samson
 and he awoke | from sleep his
-and he pulled out |  | the pin of | the loom
+and he pulled out | [obj.] | the pin of | the loom
 and | the web
 
 16:15
@@ -129,7 +129,7 @@ and it was short | self his
 to die
 
 16:17
-and he told | to her |  | all | heart his | and he said | to her | a razor | not | it has come up | on | head my
+and he told | to her | [obj.] | all | heart his | and he said | to her | a razor | not | it has come up | on | head my
 for | [am] a Nazirite of | God | I
 from [the] womb of | mother my
 if | I was shaved | and it will depart | from me | strength my
@@ -137,10 +137,10 @@ and I will be weak | and I will be
 like every | man
 
 16:18
-and she saw | Delilah | that | he had told | to her |  | all | heart his
+and she saw | Delilah | that | he had told | to her | [obj.] | all | heart his
 and she sent | and she summoned | [the] rulers of | [the] Philistines | saying | come up | this time
 for | he has told | to me
- | all | heart his
+[obj.] | all | heart his
 and they came up | to her | [the] rulers of | [the] Philistines
 and they brought up | the silver
 in hand their
@@ -149,7 +149,7 @@ in hand their
 and she made sleep him | on | knees her
 and she summoned | the man
 and she shaved off
- | seven
+[obj.] | seven
 [the] plaits of | head his
 and she began | to humble him
 and it departed | strength his
@@ -167,7 +167,7 @@ he had departed | from with him
 16:21
 and they seized him | [the] Philistines
 and they gouged out
- | eyes his
+[obj.] | eyes his
 and they brought down | him | Gaza towards | and they bound him | with bronze fetters
 and he was | grinding
 in [the] house of | those imprisoned
@@ -181,21 +181,30 @@ and [the] rulers of | [the] Philistines | they gathered | to sacrifice | a sacri
 and for joy
 and they said
 he has given | god our | in hand our
-
+[obj.]
 Samson | enemies our
 
 16:24
 and they saw | him | the people
 and they praised
- | god their
-for | they said | he has given | god our | in hand our |  | enemy our
+[obj.] | god their
+for | they said | he has given | god our | in hand our | [obj.] | enemy our
 and | [the] desolator of | land our
 and who | he has multiplied
- | slain [ones] our
+[obj.] | slain [ones] our
+
+16:25
+and it was | like good | heart their
+and they said
+summon | Samson
+so he may make sport | for us
+and they summoned | Samson | from [the] house of | those imprisoned | and he made sport | before them
+and they made stand | him
+between | the pillars
 
 16:26
 and he said | Samson | to | the young man | who kept hold | on hand his | permit ! | me
-and let feel me |  | the pillars
+and let feel me | [obj.] | the pillars
 which | the house
 [is] established | on them
 so I may lean
@@ -218,7 +227,7 @@ so let me avenge myself | vengeance of | one | from [the] two | eyes my
 from [the] Philistines
 
 16:29
-and he grasped | Samson |  | [the] two | [the] pillars of | the middle | which | the house | [was] established | on them
+and he grasped | Samson | [obj.] | [the] two | [the] pillars of | the middle | which | the house | [was] established | on them
 and he supported himself
 on them
 one | in right [hand] his
@@ -240,5 +249,5 @@ and they went down | brothers his | and all | [the] household of | father his | 
 and they brought [him] up | and they buried | him | between | Zorah | and between | Eshtaol
 in [the] tomb of
 Manoah | father his
-and he | he judged |  | Israel
+and he | he judged | [obj.] | Israel
 twenty | year[s]

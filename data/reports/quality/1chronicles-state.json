@@ -1,15 +1,15 @@
 {
   "book": "1chronicles",
   "dir_name": "13-1chronicles",
-  "timestamp": "2026-04-27T19:43:27",
+  "timestamp": "2026-04-27T20:02:39",
   "chapter_count": 29,
   "total_cola": 4266,
-  "readiness_score": 84,
+  "readiness_score": 90,
   "score_breakdown": {
     "malformed_pts": 50.0,
     "deviation_pts": 24.39,
     "review_pts": 10.0,
-    "drift_pts": 0.0
+    "drift_pts": 5.5
   },
   "validators": {
     "total_findings": 293,
@@ -118,11 +118,11 @@
     "MID_SPLIT": 0
   },
   "english_drift": {
-    "ARTICLE-SPLIT": 0,
-    "PREP-NP-SPLIT": 46,
+    "ARTICLE-SPLIT": 3,
+    "PREP-NP-SPLIT": 3,
     "AUX-VERB-SPLIT": 1,
-    "PTC-NP-SPLIT": 1,
-    "APPOSITIVE-SPLIT": 32,
+    "PTC-NP-SPLIT": 0,
+    "APPOSITIVE-SPLIT": 2,
     "DANGLING-CONJ": 0
   }
 }

@@ -12,7 +12,7 @@ or | to | one | of sons his
 the priests
 
 13:3
-and he will see | the priest |  | the plague | on [the] skin of | the flesh | and [the] hair | in the plague | it has turned | white | and [the] appearance of | the plague | [is] deep | more than [the] skin of | flesh his
+and he will see | the priest | [obj.] | the plague | on [the] skin of | the flesh | and [the] hair | in the plague | it has turned | white | and [the] appearance of | the plague | [is] deep | more than [the] skin of | flesh his
 [is] a plague of | a serious skin disease
 it
 and he will see it | the priest
@@ -22,7 +22,7 @@ and he will declare unclean | him
 and if | [is] a bright spot | white | it | on [the] skin of | flesh his | and [is] deep | not | appearance its | more than | the skin
 and hair its
 not | it has turned | white
-and he will shut up | the priest |  | the plagued [person]
+and he will shut up | the priest | [obj.] | the plagued [person]
 seven | days
 
 13:5
@@ -81,16 +81,16 @@ he
 
 13:12
 and if | certainly | it will break out | the serious skin disease | on the skin
-and it will cover | the serious skin disease |  | all | [the] skin of | the plagued [person]
+and it will cover | the serious skin disease | [obj.] | all | [the] skin of | the plagued [person]
 from head his
 and to | feet his
 to all | [the] appearance of
 [the] eyes of | the priest
 
 13:13
-and he will see | the priest | and there! | it has covered | the serious skin disease |  | all | flesh his
+and he will see | the priest | and there! | it has covered | the serious skin disease | [obj.] | all | flesh his
 and he will declare pure
- | the plagued [person]
+[obj.] | the plagued [person]
 all of him | it has turned | white
 [is] pure | he
 
@@ -99,7 +99,7 @@ and on [the] day | appears | on him | flesh | living
 he will be unclean
 
 13:15
-and he will see | the priest |  | the flesh | living
+and he will see | the priest | [obj.] | the flesh | living
 and he will declare unclean him
 the flesh | living | [is] unclean | it
 [is] a serious skin disease | it
@@ -114,7 +114,7 @@ to | the priest
 and he will see it | the priest
 and there! | it has been turned | the plague
 to white
-and he will declare pure | the priest |  | the plagued [person]
+and he will declare pure | the priest | [obj.] | the plagued [person]
 [is] pure | he
 
 13:18
@@ -183,7 +183,7 @@ seven | days
 13:27
 and he will see it | the priest
 on the day | seventh
- | certainly [if] | it will spread | in the skin
+[if] | certainly [if] | it will spread | in the skin
 and he will declare unclean | the priest | him
 [is] a plague of | a serious skin disease
 it
@@ -204,7 +204,7 @@ on [the] head
 or | in [the] beard
 
 13:30
-and he will see | the priest |  | the plague | and there! | appearance its | [is] deep | more than | the skin
+and he will see | the priest | [obj.] | the plague | and there! | appearance its | [is] deep | more than | the skin
 and [is] in it | hair | yellow
 thin
 and he will declare unclean | him | the priest | [is] a scall | it
@@ -212,14 +212,14 @@ and he will declare unclean | him | the priest | [is] a scall | it
 it
 
 13:31
-and if | he will see | the priest |  | [the] plague of | the scall | and there! | not | appearance its | [is] deep | more than | the skin
+and if | he will see | the priest | [obj.] | [the] plague of | the scall | and there! | not | appearance its | [is] deep | more than | the skin
 and [is] hair | black
 there not | in it
-and he will shut up | the priest |  | [the] plagued [person] of | the scall
+and he will shut up | the priest | [obj.] | [the] plagued [person] of | the scall
 seven | days
 
 13:32
-and he will see | the priest |  | the plague | on the day | seventh
+and he will see | the priest | [obj.] | the plague | on the day | seventh
 and there! | not | it has spread | the scall
 and not | it was | in it
 hair | yellow
@@ -231,11 +231,11 @@ more than | the skin
 and he will shave himself
 and | the scall
 not | he will shave
-and he will shut up | the priest |  | the scall | seven | days
+and he will shut up | the priest | [obj.] | the scall | seven | days
 a second
 
 13:34
-and he will see | the priest |  | the scall | on the day | seventh | and there! | not | it has spread | the scall | in the skin
+and he will see | the priest | [obj.] | the scall | on the day | seventh | and there! | not | it has spread | the scall | in the skin
 and appearance its
 not it | [is] deep
 more than | the skin
@@ -344,24 +344,24 @@ and it will be | the plague | greenish | or | reddish | in the clothing | or | i
 [is] a plague of | a serious disease
 it
 and it will be shown to
- | the priest
+[obj.] | the priest
 
 13:50
 and he will see | the priest
- | the plague
-and he will shut up |  | the plague
+[obj.] | the plague
+and he will shut up | [obj.] | the plague
 seven | days
 
 13:51
-and he will see |  | the plague | on the day | seventh | if | it has spread | the plague | in the clothing | or | in the warp | or | in the woof | or | in the hide
+and he will see | [obj.] | the plague | on the day | seventh | if | it has spread | the plague | in the clothing | or | in the warp | or | in the woof | or | in the hide
 to all | that | it will be made | the hide
 into a product
 [is] a serious disease | malignant | the plague
 [is] unclean | it
 
 13:52
-and he will burn |  | the garment | or |  | the warp | or |  | the woof | in the wool | or | in the linen
-or |  | every | article of | hide
+and he will burn | [obj.] | the garment | or | [obj.] | the warp | or | [obj.] | the woof | in the wool | or | in the linen
+or | [obj.] | every | article of | hide
 which | it will be | in it
 the plague
 for | [is] a serious disease | malignant | it
@@ -380,13 +380,13 @@ in every | article of | hide
 13:54
 and he will command | the priest
 and they will wash
- | [that] which | [is] in it
+[obj.] | [that] which | [is] in it
 the plague
 and he will shut up it | seven | days
 a second
 
 13:55
-and he will see | the priest | after | was washed out |  | the plague | and there! | not | it has turned | the plague |  | eye its | and the plague | not | it has spread
+and he will see | the priest | after | was washed out | [obj.] | the plague | and there! | not | it has turned | the plague | [obj.] | eye its | and the plague | not | it has spread
 [is] unclean | it
 with fire
 you will burn it
@@ -407,7 +407,7 @@ and if | it will appear | again | in the garment | or | in the warp | or | in th
 [is] breaking out
 it
 with fire | you will burn it
- | [that] which | [is] in it
+[obj.] | [that] which | [is] in it
 the plague
 
 13:58

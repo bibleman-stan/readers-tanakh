@@ -1,20 +1,20 @@
 {
   "book": "jeremiah",
   "dir_name": "24-jeremiah",
-  "timestamp": "2026-04-27T19:15:17",
+  "timestamp": "2026-04-27T19:59:04",
   "chapter_count": 52,
-  "total_cola": 7475,
+  "total_cola": 7465,
   "readiness_score": 85,
   "score_breakdown": {
     "malformed_pts": 50.0,
-    "deviation_pts": 25.04,
+    "deviation_pts": 25.12,
     "review_pts": 10.0,
     "drift_pts": 0.0
   },
   "validators": {
-    "total_findings": 520,
+    "total_findings": 510,
     "malformed": 0,
-    "deviation": 520,
+    "deviation": 510,
     "review_required": 410,
     "per_validator": [
       {
@@ -48,13 +48,12 @@
       {
         "name": "validate_construct_chain",
         "layer": "colometry",
-        "findings": 400,
+        "findings": 390,
         "by_severity": {
-          "DEVIATION": 400
+          "DEVIATION": 390
         },
         "by_tag": {
-          "REVIEW-REQUIRED": 390,
-          "STRONG-MERGE-CANDIDATE": 10
+          "REVIEW-REQUIRED": 390
         },
         "error": null
       },
@@ -118,11 +117,11 @@
     "MID_SPLIT": 0
   },
   "english_drift": {
-    "ARTICLE-SPLIT": 2,
-    "PREP-NP-SPLIT": 13,
-    "AUX-VERB-SPLIT": 2,
-    "PTC-NP-SPLIT": 18,
-    "APPOSITIVE-SPLIT": 1,
+    "ARTICLE-SPLIT": 3,
+    "PREP-NP-SPLIT": 89,
+    "AUX-VERB-SPLIT": 1,
+    "PTC-NP-SPLIT": 3,
+    "APPOSITIVE-SPLIT": 10,
     "DANGLING-CONJ": 0
   }
 }

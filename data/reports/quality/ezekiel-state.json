@@ -1,20 +1,20 @@
 {
   "book": "ezekiel",
   "dir_name": "26-ezekiel",
-  "timestamp": "2026-04-27T19:15:58",
+  "timestamp": "2026-04-27T20:00:06",
   "chapter_count": 48,
-  "total_cola": 6872,
-  "readiness_score": 85,
+  "total_cola": 6868,
+  "readiness_score": 87,
   "score_breakdown": {
     "malformed_pts": 50.0,
-    "deviation_pts": 24.88,
+    "deviation_pts": 24.9,
     "review_pts": 10.0,
-    "drift_pts": 0.0
+    "drift_pts": 2.0
   },
   "validators": {
-    "total_findings": 476,
+    "total_findings": 474,
     "malformed": 0,
-    "deviation": 476,
+    "deviation": 474,
     "review_required": 395,
     "per_validator": [
       {
@@ -48,25 +48,24 @@
       {
         "name": "validate_construct_chain",
         "layer": "colometry",
-        "findings": 352,
+        "findings": 349,
         "by_severity": {
-          "DEVIATION": 352
+          "DEVIATION": 349
         },
         "by_tag": {
-          "REVIEW-REQUIRED": 349,
-          "STRONG-MERGE-CANDIDATE": 3
+          "REVIEW-REQUIRED": 349
         },
         "error": null
       },
       {
         "name": "validate_cross_verse_continuity",
         "layer": "colometry",
-        "findings": 48,
+        "findings": 49,
         "by_severity": {
-          "DEVIATION": 48
+          "DEVIATION": 49
         },
         "by_tag": {
-          "STRONG-MERGE-CANDIDATE": 48
+          "STRONG-MERGE-CANDIDATE": 49
         },
         "error": null
       },
@@ -117,11 +116,11 @@
     "MID_SPLIT": 0
   },
   "english_drift": {
-    "ARTICLE-SPLIT": 5,
+    "ARTICLE-SPLIT": 4,
     "PREP-NP-SPLIT": 7,
     "AUX-VERB-SPLIT": 1,
-    "PTC-NP-SPLIT": 22,
-    "APPOSITIVE-SPLIT": 3,
+    "PTC-NP-SPLIT": 2,
+    "APPOSITIVE-SPLIT": 2,
     "DANGLING-CONJ": 0
   }
 }

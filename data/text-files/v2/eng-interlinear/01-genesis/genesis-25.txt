@@ -3,7 +3,7 @@ and he repeated | Abraham | and he took | a wife
 and name her | [was] Keturah
 
 25:2
-and she bore | to him |  | Zimran | and | Jokshan
+and she bore | to him | [obj.] | Zimran | and | Jokshan
 and | Medan
 and | Midian
 and | Ishbak
@@ -11,7 +11,7 @@ and | Shuah
 
 25:3
 and Jokshan | he fathered
- | Sheba
+[obj.] | Sheba
 and | Dedan
 and [the] sons of | Dedan
 they were | Asshurites | and Letushites
@@ -25,7 +25,7 @@ all | these
 [were] [the] sons of | Keturah
 
 25:5
-and he gave | Abraham |  | all | that | [belonged] to him
+and he gave | Abraham | [obj.] | all | that | [belonged] to him
 to Isaac
 
 25:6
@@ -65,7 +65,7 @@ and Sarah | wife his
 25:11
 and it was | after | [the] death of | Abraham
 and he blessed | God
- | Isaac | son his
+[obj.] | Isaac | son his
 and he dwelt | Isaac
 near | Beer | Lahai
 Roi
@@ -119,11 +119,11 @@ he fell
 and these | [are] [the] accounts of | Isaac
 [the] son of | Abraham
 Abraham
-he fathered |  | Isaac
+he fathered | [obj.] | Isaac
 
 25:20
 and he was | Isaac | a son of | forty | year[s]
-when took he |  | Rebekah | [the] daughter of | Bethuel | the Aramean
+when took he | [obj.] | Rebekah | [the] daughter of | Bethuel | the Aramean
 from Paddan
 Aram
 [the] sister of | Laban | the Aramean
@@ -143,7 +143,7 @@ and she said | if | thus
 why? | this
 [am] I
 and she went
-to consult |  | Yahweh
+to consult | [obj.] | Yahweh
 
 25:23
 and he said | Yahweh | to her | two | nations | [are] in womb your
@@ -183,10 +183,10 @@ and Jacob | [was] a man | quiet
 tents
 
 25:28
-and he loved | Isaac |  | Esau
+and he loved | Isaac | [obj.] | Esau
 for | wild game | [was] in mouth his
 and Rebekah
-[was] loving |  | Jacob
+[was] loving | [obj.] | Jacob
 
 25:29
 and he had cooked | Jacob
@@ -204,7 +204,7 @@ Edom
 25:31
 and he said
 Jacob
-sell ! | as the day |  | birthright your
+sell ! | as the day | [obj.] | birthright your
 to me
 
 25:32
@@ -218,7 +218,7 @@ and for what? | this | to me
 and he said | Jacob | swear ! | to me | as the day
 and he swore
 to him
-and he sold |  | birthright his
+and he sold | [obj.] | birthright his
 to Jacob
 
 25:34
@@ -227,4 +227,4 @@ and he ate | and he drank
 and he arose
 and he went
 and he despised | Esau
- | the birthright
+[obj.] | the birthright

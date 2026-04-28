@@ -1,15 +1,15 @@
 {
   "book": "joel",
   "dir_name": "29-joel",
-  "timestamp": "2026-04-27T19:16:30",
+  "timestamp": "2026-04-27T20:00:48",
   "chapter_count": 4,
   "total_cola": 410,
-  "readiness_score": 95,
+  "readiness_score": 97,
   "score_breakdown": {
     "malformed_pts": 50.0,
     "deviation_pts": 28.13,
     "review_pts": 10.0,
-    "drift_pts": 7.0
+    "drift_pts": 8.5
   },
   "validators": {
     "total_findings": 16,
@@ -98,7 +98,7 @@
     "ARTICLE-SPLIT": 0,
     "PREP-NP-SPLIT": 0,
     "AUX-VERB-SPLIT": 0,
-    "PTC-NP-SPLIT": 4,
+    "PTC-NP-SPLIT": 1,
     "APPOSITIVE-SPLIT": 2,
     "DANGLING-CONJ": 0
   }

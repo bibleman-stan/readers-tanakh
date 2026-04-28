@@ -8,18 +8,18 @@ which | you | [are] alive
 on | the land
 
 12:2
-certainly | you will destroy ! |  | all | the places | where | they have served | there | the nations | whom | you | [are] about to dispossess | them
- | gods their
+certainly | you will destroy ! | [obj.] | all | the places | where | they have served | there | the nations | whom | you | [are] about to dispossess | them
+[obj.] | gods their
 on | the mountains | high | and on | the hills
 and under
 every | tree | luxuriant
 
 12:3
-and you will break down |  | altars their | and you will shatter |  | sacred pillars their
+and you will break down | [obj.] | altars their | and you will shatter | [obj.] | sacred pillars their
 and Asherah poles their | you will burn ! | with fire
 and [the] images of | gods their
 you will cut down !
-and you will destroy |  | name their
+and you will destroy | [obj.] | name their
 from | the place
 that
 
@@ -30,7 +30,7 @@ God your
 
 12:5
 that | except | to | the place | where | he will choose | Yahweh | God your | from all | tribes your
-to put |  | name his
+to put | [obj.] | name his
 there
 to dwelling its | you will resort
 and you will go | there towards
@@ -67,7 +67,7 @@ which | Yahweh | God your
 [is] about to give | to you
 
 12:10
-and you will pass over |  | the Jordan
+and you will pass over | [obj.] | the Jordan
 and you will dwell | in the land
 which | Yahweh | God your
 [is] giving as an inheritance | you
@@ -77,7 +77,7 @@ and you will dwell | security
 12:11
 and it will be | the place | which | he will choose | Yahweh | God your | it | to cause to dwell | name his | there
 there towards | you will bring
- | all | that | I
+[obj.] | all | that | I
 [am] commanding | you
 burnt offerings your | and sacrifices your | tithes your | and [the] contribution of | hand your
 and all | [the] choicest of | votive offerings your
@@ -141,12 +141,12 @@ undertaking of | hand your
 12:19
 take heed | to yourself
 lest | you should neglect
- | the Levite
+[obj.] | the Levite
 all | days your
 on | land your
 
 12:20
-if | he will enlarge | Yahweh | God your |  | territory your | just as | he spoke | to you
+if | he will enlarge | Yahweh | God your | [obj.] | territory your | just as | he spoke | to you
 and you will say | I want to eat | meat
 for | it will desire | appetite your
 to eat | meat
@@ -163,7 +163,7 @@ in all
 [the] desire of | self your
 
 12:22
-surely | just as | it is eaten |  | the gazelle | and | the deer
+surely | just as | it is eaten | [obj.] | the gazelle | and | the deer
 so
 you will eat it
 the unclean | and the clean
@@ -204,7 +204,7 @@ and the flesh
 you will eat
 
 12:28
-take care | and you will hear |  | all | the words | these
+take care | and you will hear | [obj.] | all | the words | these
 which | I
 [am] commanding you
 so that | it may go well | for you | and for children your | after you | until | perpetuity
@@ -213,7 +213,7 @@ in [the] eyes of
 Yahweh | God your
 
 12:29
-if | he will cut off | Yahweh | God your |  | the nations | where | you | [are] about to go | there towards | by dispossessing | them
+if | he will cut off | Yahweh | God your | [obj.] | the nations | where | you | [are] about to go | there towards | by dispossessing | them
 from before you
 and you will dispossess | them
 and you will dwell
@@ -222,7 +222,7 @@ in land their
 12:30
 take heed | to yourself | lest | you should be ensnared | after them
 after | have been destroyed they | from before you
-and lest | you should enquire | of gods their | saying | how? | do they serve | the nations | these |  | gods their
+and lest | you should enquire | of gods their | saying | how? | do they serve | the nations | these | [obj.] | gods their
 so I may do | thus
 also | I
 
@@ -231,6 +231,6 @@ not | you will do | thus
 to Yahweh
 God your
 for | every | abomination of | Yahweh | which | he hates | they have done | to gods their
-for | also |  | sons their | and | daughters their
+for | also | [obj.] | sons their | and | daughters their
 they burn | with fire
 to gods their

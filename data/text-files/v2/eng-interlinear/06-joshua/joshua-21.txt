@@ -17,7 +17,7 @@ for livestock our
 21:3
 and they gave | [the] people of | Israel | to the Levites | some of inheritance their
 to | [the] mouth of | Yahweh
- | the cities | these
+[obj.] | the cities | these
 and | pasture lands their
 
 21:4
@@ -43,7 +43,7 @@ two [plus] | ten
 
 21:8
 and they gave | [the] people of | Israel | to the Levites
- | the cities | these
+[obj.] | the cities | these
 and | pasture lands their
 just as | he had commanded | Yahweh | by [the] hand of | Moses
 by the lot
@@ -52,7 +52,7 @@ by the lot
 and they gave | from [the] tribe of | [the] descendants of | Judah
 and from [the] tribe of
 [the] descendants of | Simeon
- | the cities | these
+[obj.] | the cities | these
 which | he called | them
 by name
 
@@ -64,7 +64,7 @@ for | to them | it belonged | the lot
 first
 
 21:11
-and they gave | to them |  | Kiriath | Arba | [the] father of | Anak | that | [is] Hebron
+and they gave | to them | [obj.] | Kiriath | Arba | [the] father of | Anak | that | [is] Hebron
 in [the] hill country of | Judah
 and | pasture lands its
 around it
@@ -76,8 +76,8 @@ they gave | to Caleb | [the] son of | Jephunneh
 possession his
 
 21:13
-and to [the] descendants of | Aaron | the priest | they gave |  | [the] city of | refuge of | the killer
- | Hebron
+and to [the] descendants of | Aaron | the priest | they gave | [obj.] | [the] city of | refuge of | the killer
+[obj.] | Hebron
 and | pasture lands its
 and | Libnah
 and | pasture lands its
@@ -94,7 +94,7 @@ and | pasture lands its
 
 21:16
 and | Ain | and | pasture lands its | and | Juttah | and | pasture lands its
- | Beth | Shemesh
+[obj.] | Beth | Shemesh
 and | pasture lands its
 cities | nine
 from with
@@ -103,17 +103,17 @@ these
 
 21:17
 and from [the] tribe of | Benjamin
- | Gibeon
+[obj.] | Gibeon
 and | pasture lands its
- | Geba
+[obj.] | Geba
 and | pasture lands its
 
 21:18
-??? | ??? | ??? | ???
-??? | ???
-??? | ???
-???
-???
+[obj.] | Anathoth | and | pasture lands its
+and | Almon
+and | pasture lands its
+cities
+four
 
 21:19
 all | [the] cities of | [the] descendants of | Aaron
@@ -130,7 +130,7 @@ from [the] tribe of
 Ephraim
 
 21:21
-and they gave | to them |  | [the] city of | refuge of | the killer |  | Shechem | and | pasture lands its
+and they gave | to them | [obj.] | [the] city of | refuge of | the killer | [obj.] | Shechem | and | pasture lands its
 in [the] hill country of | Ephraim
 and | Gezer
 and | pasture lands its
@@ -144,21 +144,21 @@ four
 
 21:23
 and from [the] tribe of | Dan
- | Eltekeh
+[obj.] | Eltekeh
 and | pasture lands its
- | Gibbethon
+[obj.] | Gibbethon
 and | pasture lands its
 
 21:24
-??? | ??? | ??? | ???
-??? | ??? | ???
-??? | ???
-???
-???
+[obj.] | Aijalon | and | pasture lands its
+[obj.] | Gath | Rimmon
+and | pasture lands its
+cities
+four
 
 21:25
 and from [the] half of | [the] tribe of | Manasseh
- | Taanach | and | pasture lands its
+[obj.] | Taanach | and | pasture lands its
 and | Gath | Rimmon
 and | pasture lands its
 cities
@@ -172,8 +172,8 @@ which remained
 
 21:27
 and to [the] descendants of | Gershon | from [the] clans of | the Levites
-from [the] half of | [the] tribe of | Manasseh |  | [the] city of | refuge of | the killer
- | Golan | in Bashan | and | pasture lands its
+from [the] half of | [the] tribe of | Manasseh | [obj.] | [the] city of | refuge of | the killer
+[obj.] | Golan | in Bashan | and | pasture lands its
 and | Beeshtarah
 and | pasture lands its
 cities
@@ -181,34 +181,34 @@ two
 
 21:28
 and from [the] tribe of | Issachar
- | Kishion
+[obj.] | Kishion
 and | pasture lands its
- | Daberath
+[obj.] | Daberath
 and | pasture lands its
 
 21:29
-??? | ??? | ??? | ???
-??? | ??? | ???
-??? | ???
-???
-???
+[obj.] | Jarmuth | and | pasture lands its
+[obj.] | En | Gannim
+and | pasture lands its
+cities
+four
 
 21:30
 and from [the] tribe of | Asher
- | Mishal
+[obj.] | Mishal
 and | pasture lands its
- | Abdon
+[obj.] | Abdon
 and | pasture lands its
 
 21:31
-??? | ??? | ??? | ???
-??? | ???
-??? | ???
-???
-???
+[obj.] | Helkath | and | pasture lands its
+and | Rehob
+and | pasture lands its
+cities
+four
 
 21:32
-and from [the] tribe of | Naphtali |  | [the] city of | refuge of | the killer |  | Kedesh | in Galilee | and | pasture lands its | and | Hammoth | Dor | and | pasture lands its
+and from [the] tribe of | Naphtali | [obj.] | [the] city of | refuge of | the killer | [obj.] | Kedesh | in Galilee | and | pasture lands its | and | Hammoth | Dor | and | pasture lands its
 and | Kartan
 and | pasture lands its
 cities
@@ -223,45 +223,45 @@ and pasture lands their
 21:34
 and to [the] clans of | [the] descendants of | Merari | the Levites | which remained
 from with | [the] tribe of | Zebulun
- | Jokneam
+[obj.] | Jokneam
 and | pasture lands its
- | Kartah
+[obj.] | Kartah
 and | pasture lands its
 
 21:35
-??? | ??? | ??? | ???
-??? | ???
-??? | ???
-???
-???
+[obj.] | Dimnah | and | pasture lands its
+[obj.] | Nahalal
+and | pasture lands its
+cities
+four
 
 21:36
 and from [the] tribe of | Reuben
- | Bezer
+[obj.] | Bezer
 and | pasture lands its
 and | Jahaz
 and | pasture lands its
 
 21:37
-??? | ??? | ??? | ???
-??? | ???
-??? | ???
-???
-???
+[obj.] | Kedemoth | and | pasture lands its
+and | Mephaath
+and | pasture lands its
+cities
+four
 
 21:38
-and from [the] tribe of | Gad |  | [the] city of | refuge of | the killer
- | Ramoth | in Gilead
+and from [the] tribe of | Gad | [obj.] | [the] city of | refuge of | the killer
+[obj.] | Ramoth | in Gilead
 and | pasture lands its
 and | Mahanaim
 and | pasture lands its
 
 21:39
-??? | ??? | ??? | ???
-??? | ???
-??? | ???
-??? | ???
-???
+[obj.] | Heshbon | and | pasture lands its
+[obj.] | Jazer
+and | pasture lands its
+all | [the] cities
+[were] four
 
 21:40
 all | the cities | of [the] descendants of | Merari | to clans their
@@ -287,7 +287,7 @@ for all | the cities | these
 
 21:43
 and he gave | Yahweh | to Israel
- | all | the land
+[obj.] | all | the land
 which | he had sworn
 to give | to ancestors their
 and they took possession of it
@@ -298,7 +298,7 @@ and he gave rest | Yahweh | to them | from round about
 according to all | that | he had sworn
 to ancestors their
 and not | he stood | anyone | in faces their | from all | enemies their
- | all | enemies their
+[obj.] | all | enemies their
 he gave | Yahweh
 in hand their
 

@@ -20,9 +20,9 @@ and I have spoken | to you | rising early | and speaking
 and not | you have listened
 
 25:4
-and he sent | Yahweh | to you |  | all | servants his | the prophets | rising early | and sending
+and he sent | Yahweh | to you | [obj.] | all | servants his | the prophets | rising early | and sending
 and not | you listened
-and not | you inclined |  | ear your
+and not | you inclined | [obj.] | ear your
 to listen
 
 25:5
@@ -53,10 +53,10 @@ thus | he says
 Yahweh | of hosts
 because
 that | not | you have listened to
- | words my
+[obj.] | words my
 
 25:9
-here I | [am] about to send | and I will fetch |  | all | [the] clans of | [the] north | [the] utterance of | Yahweh | and to | Nebuchadnezzar | [the] king of | Babylon | servant my
+here I | [am] about to send | and I will fetch | [obj.] | all | [the] clans of | [the] north | [the] utterance of | Yahweh | and to | Nebuchadnezzar | [the] king of | Babylon | servant my
 and I will bring them | on | the land | this | and on | inhabitants its
 and on | all | the nations | these
 round about
@@ -76,20 +76,20 @@ and [the] light of | a lamp
 and it will become | all | the land | this
 a desolation
 a waste
-and they will serve | the nations | these |  | [the] king of | Babylon
+and they will serve | the nations | these | [obj.] | [the] king of | Babylon
 seventy | year[s]
 
 25:12
-and it will be | when are completed | seventy | year[s] | I will visit [judgment] | on | [the] king of | Babylon | and on | the nation | that | [the] utterance of | Yahweh |  | iniquity their
+and it will be | when are completed | seventy | year[s] | I will visit [judgment] | on | [the] king of | Babylon | and on | the nation | that | [the] utterance of | Yahweh | [obj.] | iniquity their
 and on | [the] land of | [the] Chaldeans
 and I will make | it
 into desolations of | perpetuity
 
 25:13
 and I will bring | on | the land | that
- | all | words my
+[obj.] | all | words my
 which | I spoke | on it
- | every | [thing] written | in the book | this
+[obj.] | every | [thing] written | in the book | this
 which | he prophesied | Jeremiah
 on | all | the nations
 
@@ -102,9 +102,9 @@ and according to [the] work of | hands their
 
 25:15
 for | thus | he said | Yahweh | [the] God of | Israel | to me
-take |  | [the] cup of | wine | the rage | this
+take | [obj.] | [the] cup of | wine | the rage | this
 from hand my
-and you will make drink | it |  | all | the nations
+and you will make drink | it | [obj.] | all | the nations
 which | I | [am] sending | you
 to them
 
@@ -117,11 +117,22 @@ which | I | [am] about to send
 between them
 
 25:17
-and I took |  | the cup
+and I took | [obj.] | the cup
 from [the] hand of | Yahweh
-and I made drink |  | all | the nations
+and I made drink | [obj.] | all | the nations
 which | he sent me | Yahweh
 to them
+
+25:18
+[obj.] | Jerusalem | and | [the] cities of | Judah
+and | kings its
+[obj.] | officials its
+to make | them | into a ruin | into a waste | into a hissing | and into a curse
+as the day | this
+
+25:19
+[obj.] | Pharaoh | [the] king of | Egypt | and | servants his | and | officials his
+and | all | people his
 
 25:20
 and | every | foreigner
@@ -132,6 +143,10 @@ and | all | [the] kings of | [the] land of | [the] Philistines
 and | Ashkelon | and | Gaza | and | Ekron
 and
 [the] remnant of | Ashdod
+
+25:21
+[obj.] | Edom | and | Moab
+and | [the] people of | Ammon
 
 25:22
 and | all | [the] kings of | Tyre
@@ -166,6 +181,14 @@ which
 and [the] king of | Sheshach
 he will drink | after them
 
+25:27
+and you will say | to them | thus | he says | Yahweh | of hosts | [the] God of | Israel | drink | and become drunk | and vomit
+and fall down
+and not | you will rise
+because of | the sword
+which | I | [am] about to send
+between you
+
 25:28
 and it will be | that | they will refuse | to take | the cup | from hand your
 to drink
@@ -183,7 +206,7 @@ Yahweh | of hosts
 
 25:30
 and you | you will prophesy | to them
- | all | the words
+[obj.] | all | the words
 these
 and you will say | to them | Yahweh | from a high place | he will roar | and from [the] dwelling of | holiness his | he will give forth | voice his
 certainly | he will roar | on | habitation his
@@ -234,7 +257,7 @@ from [the] noble [ones] of | the flock
 and [the] wailing of
 [the] noble [ones] of | the flock
 for | [is] destroying | Yahweh
- | pasture their
+[obj.] | pasture their
 
 25:37
 and they will be devastated

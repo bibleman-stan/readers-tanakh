@@ -1,5 +1,5 @@
 7:1
-and it was | on [the] day | finished | Moses | to set up |  | the tabernacle | and he anointed | it | and he consecrated | it | and | all | articles its
+and it was | on [the] day | finished | Moses | to set up | [obj.] | the tabernacle | and he anointed | it | and he consecrated | it | and | all | articles its
 and | the altar
 and | all | articles its
 and he anointed them
@@ -14,7 +14,7 @@ they | [were] the [ones who] stood
 over | the enrolled [men]
 
 7:3
-and they brought |  | offering their | before | Yahweh | six | carts of | covering | and two [plus] | ten | ox[en]
+and they brought | [obj.] | offering their | before | Yahweh | six | carts of | covering | and two [plus] | ten | ox[en]
 a cart | on | two of | the leaders
 and an ox | for one
 and they brought near | them
@@ -28,7 +28,7 @@ to | Moses | saying
 take [them] | from with them
 and they will be
 to serve
- | [the] service of
+[obj.] | [the] service of
 [the] tent of | meeting
 and you will give | them | to | the Levites
 each one
@@ -36,10 +36,17 @@ according to [the] mouth of | service his
 
 7:6
 and he took | Moses
- | the carts
+[obj.] | the carts
 and | the ox[en]
 and he gave | them
 to | the Levites
+
+7:7
+[obj.] | two of | the carts | and | four of | the ox[en]
+he gave
+to [the] descendants of | Gershon
+according to [the] mouth of
+service their
 
 7:8
 and | four of | the carts | and | eight of | the ox[en]
@@ -58,23 +65,23 @@ on the shoulder
 they carried
 
 7:10
-and they brought near | the leaders |  | [the] dedication of | the altar
+and they brought near | the leaders | [obj.] | [the] dedication of | the altar
 on [the] day
 was anointed | it
-and they brought near | the leaders |  | offering their
+and they brought near | the leaders | [obj.] | offering their
 before | the altar
 
 7:11
 and he said | Yahweh
 to | Moses
 a leader | one | for the day | a leader | one | for the day
-they will bring near |  | offering their
+they will bring near | [obj.] | offering their
 for [the] dedication of
 the altar
 
 7:12
 and it was | the [one who] brought near | on the day | first
- | offering his
+[obj.] | offering his
 [was] Nahshon | [the] son of | Amminadab
 of [the] tribe of | Judah
 
@@ -114,7 +121,7 @@ Nethanel | [the] son of | Zuar
 Issachar
 
 7:19
-he brought near |  | offering his | a dish of | silver | one | [was] thirty | and one hundred | weight its
+he brought near | [obj.] | offering his | a dish of | silver | one | [was] thirty | and one hundred | weight its
 a bowl | one | silver
 seventy | shekel[s]
 by [the] shekel of | the holy place
@@ -343,6 +350,14 @@ to a burnt offering
 a male goat of | goats | one
 to a sin offering
 
+7:59
+and to [the] sacrifice of | the peace offerings | ox[en] | two
+rams | five | goats | five
+lambs | sons of | a year
+five
+this | [was] [the] offering of | Gamaliel
+[the] son of | Pedah zur
+
 7:60
 on the day | ninth
 [the] leader
@@ -523,7 +538,7 @@ was anointed | it
 
 7:89
 and when went | Moses | into | [the] tent of | meeting | to speak | with him
-and he heard |  | the voice | speaking | to him | from above | the atonement cover | which | [was] on | [the] ark of | the testimony
+and he heard | [obj.] | the voice | speaking | to him | from above | the atonement cover | which | [was] on | [the] ark of | the testimony
 from between
 [the] two | the cherubim
 and he spoke

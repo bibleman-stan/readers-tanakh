@@ -1,6 +1,6 @@
 5:1
-and he summoned | Moses |  | all | Israel
-and he said | to them | hear | O Israel |  | the statutes | and | the judgments
+and he summoned | Moses | [to] | all | Israel
+and he said | to them | hear | O Israel | [obj.] | the statutes | and | the judgments
 which | I | [am] speaking | in ears your
 this day
 and you will learn | them
@@ -14,7 +14,7 @@ at Horeb
 5:3
 not | with | ancestors our
 he made | Yahweh
- | the covenant | this
+[obj.] | the covenant | this
 for | with us | we | these | here | this day
 all of us | alive
 
@@ -25,7 +25,7 @@ from [the] middle of | the fire
 5:5
 I | [was] standing | between | Yahweh | and between you | at the time | that
 to declare | to you
- | [the] word of | Yahweh
+[obj.] | [the] word of | Yahweh
 for | you were afraid | of | the fire
 and not | you went up | on the mountain
 saying
@@ -61,14 +61,14 @@ of [those who] love me
 and of [those who] keep | commandments my
 
 5:11
-not | you must take |  | [the] name of | Yahweh | God your
+not | you must take | [obj.] | [the] name of | Yahweh | God your
 for emptiness
 for | not | he will leave unpunished | Yahweh
- | [one] who | he will take |  | name his
+[obj.] | [one] who | he will take | [obj.] | name his
 for emptiness
 
 5:12
-keep |  | [the] day of | the sabbath
+keep | [obj.] | [the] day of | the sabbath
 to set apart as holy it
 just as | he commanded you
 Yahweh | God your
@@ -93,10 +93,10 @@ by a hand | strong
 and by an arm | outstretched
 there- | -fore | he has commanded you | Yahweh | God your
 to observe
- | [the] day of | the sabbath
+[obj.] | [the] day of | the sabbath
 
 5:16
-honor |  | father your | and | mother your
+honor | [obj.] | father your | and | mother your
 just as | he has commanded you
 Yahweh | God your
 so that | they may be long ! | days your | and so that | it may go well | for you
@@ -120,8 +120,23 @@ you must steal
 and not | you must testify | against neighbor your
 testimony of | falsehood
 
+5:21
+and not | you must covet
+[the] wife of | neighbor your
+and not | you must desire | [the] house of | neighbor your | field his | and [male] servant his | and female servant his | ox his | and donkey his
+and all
+that | [belongs] to neighbor your
+
+5:22
+[obj.] | the words | these | he spoke | Yahweh | to | all | assembly your | at the mountain | from [the] middle of | the fire | the cloud | and the thick darkness
+a voice | great
+and not | he added
+and he inscribed them | on | two | tablets of | stone
+and he gave them
+to me
+
 5:23
-and it was | when heard you |  | the voice | from [the] middle of | the darkness
+and it was | when heard you | [obj.] | the voice | from [the] middle of | the darkness
 and the mountain
 [was] burning | with fire
 and you drew near ! | to me
@@ -129,7 +144,7 @@ all | [the] chiefs of | tribes your
 and elders your
 
 5:24
-and you said | here! | he has shown us | Yahweh | God our |  | glory his | and | greatness his
+and you said | here! | he has shown us | Yahweh | God our | [obj.] | glory his | and | greatness his
 and | voice his | we have heard
 from [the] middle of | the fire
 the day | this | we have seen
@@ -141,7 +156,7 @@ and therefore | why? | will we die
 for | it will consume us
 the fire | great
 this
-if | [are] repeating | we | to hear |  | [the] voice of | Yahweh | God our | again
+if | [are] repeating | we | to hear | [obj.] | [the] voice of | Yahweh | God our | again
 and we will die
 
 5:26
@@ -150,21 +165,21 @@ and he has lived
 
 5:27
 draw near | you | and hear
- | all | that | he will say
+[obj.] | all | that | he will say
 Yahweh | God our
-and you | you will speak | to us |  | all | that | he will speak | Yahweh | God our | to you
+and you | you will speak | to us | [obj.] | all | that | he will speak | Yahweh | God our | to you
 and we will listen | and we will do [it]
 
 5:28
-and he heard | Yahweh |  | [the] sound of | words your
+and he heard | Yahweh | [obj.] | [the] sound of | words your
 when spoke you
 to me
-and he said | Yahweh | to me | I have heard |  | [the] sound of | [the] words of | the people | this | which | they spoke | to you
+and he said | Yahweh | to me | I have heard | [obj.] | [the] sound of | [the] words of | the people | this | which | they spoke | to you
 they have done well
 all | that | they have spoken
 
 5:29
-who? | will he give | and it will belong | heart their | this | to them | to fear | me | and to keep |  | all | commandments my
+who? | will he give | and it will belong | heart their | this | to them | to fear | me | and to keep | [obj.] | all | commandments my
 all | the days
 so that | it may go well | for them | and for children their
 for ever
@@ -177,7 +192,7 @@ to tents your
 
 5:31
 and you | here | stand | with me
-so let me speak | to you |  | all | the commandment | and the statutes | and the judgments
+so let me speak | to you | [obj.] | all | the commandment | and the statutes | and the judgments
 which | you will teach them
 and they will observe [them] | in the land
 which | I | [am] about to give | to them

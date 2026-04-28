@@ -1,15 +1,15 @@
 {
   "book": "zechariah",
   "dir_name": "38-zechariah",
-  "timestamp": "2026-04-27T19:17:49",
+  "timestamp": "2026-04-27T20:02:16",
   "chapter_count": 14,
   "total_cola": 1156,
-  "readiness_score": 91,
+  "readiness_score": 93,
   "score_breakdown": {
     "malformed_pts": 50.0,
     "deviation_pts": 24.57,
     "review_pts": 10.0,
-    "drift_pts": 6.5
+    "drift_pts": 8.5
   },
   "validators": {
     "total_findings": 85,
@@ -115,7 +115,7 @@
     "ARTICLE-SPLIT": 0,
     "PREP-NP-SPLIT": 2,
     "AUX-VERB-SPLIT": 1,
-    "PTC-NP-SPLIT": 4,
+    "PTC-NP-SPLIT": 0,
     "APPOSITIVE-SPLIT": 0,
     "DANGLING-CONJ": 0
   }

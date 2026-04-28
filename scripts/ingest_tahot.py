@@ -303,25 +303,75 @@ REF_RE = re.compile(
 )
 
 ENG_OMIT_BRACKET_RE = re.compile(r"<[^>]*>")
+ENG_ANGLE_ONLY_RE = re.compile(r"^(<[^>]*>\s*)+$")  # entire field is <...> tokens
+
+
+# Strip trailing scribal glyphs from cleaned Hebrew fields.
+# The paragraph/section markers פ and ס appear as STANDALONE characters
+# preceded by whitespace — they are NOT part of any Hebrew word.
+# The Nun hafucha (U+05C6 ׆) is a scribal marker that appears between
+# whitespace-separated tokens (always preceded by space).
+# Pattern: one or more groups of (optional whitespace + marker) at end of string.
+# IMPORTANT: ס (U+05E1 Samekh) is also a normal Hebrew consonant — only strip
+# it when it appears as a whitespace-separated standalone token, never when it
+# is the final consonant of a Hebrew word (e.g. חָמָס = violence).
+# Likewise for פ (U+05E4 Peh).
+_SCRIBAL_TAIL_RE = re.compile(
+    r"(\s+[׆פס])+\s*$",  # one or more: whitespace + standalone scribal marker
+    re.UNICODE,
+)
 
 
 def clean_hebrew(raw):
-    """Strip STEP morphological / and \\ separators; preserve in-text punctuation."""
-    return raw.replace("/", "").replace("\\", "")
+    """Strip STEP morphological / and \\ separators; preserve in-text punctuation.
+
+    Also strips trailing scribal glyphs that TAHOT embeds in Hebrew fields:
+      - Paragraph/section markers פ and ס (section-division glyphs; no Hebrew
+        word value; no English/translit counterpart)
+      - Nun hafucha / inverted nun (U+05C6 ׆), a rare scribal marker that
+        appears in Numbers 10:34–36 around the inverted-nun sections
+
+    Stripping these at the source prevents spurious ortho-word counts when
+    the markers appear mid-verse (where the end-of-verse regex in
+    parse_teamim cannot reach them) and when they are embedded inside a
+    single TAHOT row alongside actual Hebrew.
+    """
+    cleaned = raw.replace("/", "").replace("\\", "")
+    cleaned = _SCRIBAL_TAIL_RE.sub("", cleaned)
+    return cleaned.strip()
 
 
 def clean_english(raw):
     """Convert TAHOT field 4 to a clean per-word string.
 
-    Drops trailing \\marker annotations; collapses morpheme separators;
-    drops <angle-bracketed> words per TAHOT convention; preserves
-    [square-bracketed] supplied words for the interlinear layer (the
-    naturalizer in parse_teamim strips them downstream for the smooth
-    gloss).
+    Drops trailing \\marker annotations; collapses morpheme separators.
+
+    Angle-bracketed words (<obj.>, <the>, <into>, <to>, etc.) are TAHOT
+    editor-supplied words that have no direct Hebrew anchor.  When the
+    ENTIRE field (before \\) consists only of angle-bracket tokens the row
+    produces zero English text — which creates a unit-count mismatch when
+    parse_teamim counts ortho-words vs English units.
+
+    Fix (quirk a): if the pre-backslash portion is all angle-bracket content
+    (after stripping), return the inner text of those brackets as a
+    [square-bracket] supplied gloss rather than empty string.  This keeps
+    the ortho-word count aligned while clearly marking the supplied word in
+    the interlinear layer.  Mixed rows (e.g. "and/ <obj.>") keep their
+    non-bracket content and drop the brackets.
+
+    [square-bracketed] words are preserved as-is — the naturalizer in
+    parse_teamim strips them for the smooth gloss layer.
     """
     if not raw:
         return ""
     head = raw.split("\\", 1)[0]
+    # Quirk (a): entire field is angle-bracket tokens → convert to [square] gloss
+    if ENG_ANGLE_ONLY_RE.match(head.strip()):
+        inner = ENG_OMIT_BRACKET_RE.sub(lambda m: m.group(0)[1:-1], head).strip()
+        inner = inner.replace("/", " ").strip()
+        if inner:
+            return f"[{inner}]"
+        return "[obj.]"
     head = ENG_OMIT_BRACKET_RE.sub("", head)
     head = head.replace("/", " ")
     return " ".join(head.split())
@@ -359,12 +409,46 @@ def clean_translit(raw, is_proper):
     return head
 
 
+def _count_internal_maqqef(he_clean):
+    """Count maqqef chars that are NOT at the end of the string.
+
+    A trailing maqqef means the word joins the next TAHOT row (handled by
+    the joins_next flag).  Internal maqqef chars (within the token) mean
+    this single TAHOT row encodes more than one orthographic word — the
+    intra-row maqqef quirk.
+    """
+    if not he_clean:
+        return 0
+    # Strip the trailing maqqef (if any) before counting
+    stripped = he_clean[:-1] if he_clean.endswith(MAQQEF) else he_clean
+    return stripped.count(MAQQEF)
+
+
 def parse_tahot_for_book(tahot_path, book_code):
     """Parse TAHOT for a book.
 
     Returns ({chapter: {verse: [{he, en, translit, joins_next}]}}, crosswalk).
     Each list entry is one ORTHOGRAPHIC word; joins_next=True iff the Hebrew
     word ends in maqqef.
+
+    Three TAHOT formatting quirks are handled here to keep Hebrew
+    ortho-word counts aligned with English unit counts:
+
+    (a) Angle-bracket-only English (<obj.>, <to>, etc.) — now handled in
+        clean_english() which returns [obj.] instead of empty string.
+
+    (b) Intra-row maqqef: a single TAHOT row whose Hebrew field contains an
+        INTERNAL maqqef (not just trailing) encodes multiple ortho-words
+        with a single English gloss.  Detect these rows and emit extra
+        word entries (one per additional ortho-word) so the English unit
+        count matches the ortho count.  The extra entries carry the same
+        English gloss for the last sub-word and "[—]" for all earlier ones,
+        marking them as continuation units in the interlinear.
+
+    (c) Empty-Hebrew Q(K) rows: bracket-only Qere variants like "[ ]" that
+        have no Hebrew content are skipped entirely — they have no Hebrew
+        anchor and inflate the English unit count without adding to the
+        Hebrew.
     """
     chapters = defaultdict(lambda: defaultdict(list))
     crosswalk = {}
@@ -402,12 +486,70 @@ def parse_tahot_for_book(tahot_path, book_code):
             grammar = fields[5] if len(fields) > 5 else ""
             translit = clean_translit(translit_raw, is_proper_noun(grammar))
 
-            chapters[heb_ch][heb_v].append({
-                "he": he,
-                "en": en,
-                "translit": translit,
-                "joins_next": he.endswith(MAQQEF),
-            })
+            # Quirk (c): skip rows where Hebrew is empty after cleaning.
+            # These are Qere/Ketiv bracket-only rows (e.g. "[ ]" English
+            # with no Hebrew anchor) — they inflate English unit count.
+            if not he:
+                continue
+
+            # Quirk (d): internal whitespace in he from TAHOT's " / " separator
+            # used as a morpheme-internal boundary within a single orthographic
+            # word (e.g. 'פְּדָה/ /צוּר' → after clean_hebrew → 'פְּדָה צוּר').
+            # This is one Hebrew word (Pedahzur) on one TAHOT row with one
+            # English gloss; the space after stripping slashes is artefactual.
+            # Fix: collapse internal whitespace so the token is read back as
+            # ONE prosodic-word token (no spurious split in parse_teamim).
+            if " " in he:
+                he = re.sub(r"\s+", "", he)
+
+            # Quirk (b): intra-row maqqef.
+            # A single TAHOT row whose cleaned Hebrew contains an INTERNAL
+            # maqqef (not just trailing) represents multiple ortho-words with
+            # one English gloss.  Split the row into N+1 entries where N is
+            # the internal-maqqef count, so the English unit count matches.
+            #
+            # Splitting strategy: split `he` on the maqqef character.
+            #   sub_words = ['כְּדָרְ', 'לָעֹמֶר'] for 'כְּדָרְ─לָעֹמֶר'
+            # The last sub-word carries the English gloss; earlier sub-words
+            # get "[—]" (continuation marker).  Each non-final sub-word has
+            # joins_next=True to preserve prosodic-word assembly downstream.
+            extra_ortho = _count_internal_maqqef(he)
+            if extra_ortho > 0:
+                # Split he on the internal maqqef chars (preserve trailing maqqef
+                # on the final sub-part if the original row had one).
+                trailing_maqqef = he.endswith(MAQQEF)
+                he_stripped = he[:-1] if trailing_maqqef else he
+                sub_parts = he_stripped.split(MAQQEF)
+                # Emit one entry per sub-part.
+                # Non-final sub-parts: append maqqef to signal join-to-next,
+                #   get "[—]" as interlinear placeholder.
+                # Final sub-part: restore trailing maqqef if original had one,
+                #   gets the actual English gloss and translit.
+                for k, sub in enumerate(sub_parts):
+                    is_last = (k == len(sub_parts) - 1)
+                    if is_last:
+                        he_entry = sub + (MAQQEF if trailing_maqqef else "")
+                        en_entry = en
+                        tr_entry = translit
+                        jn = trailing_maqqef
+                    else:
+                        he_entry = sub + MAQQEF
+                        en_entry = "[—]"
+                        tr_entry = "[—]"  # placeholder keeps unit counts aligned
+                        jn = True  # this sub-part joins into the next
+                    chapters[heb_ch][heb_v].append({
+                        "he": he_entry,
+                        "en": en_entry,
+                        "translit": tr_entry,
+                        "joins_next": jn,
+                    })
+            else:
+                chapters[heb_ch][heb_v].append({
+                    "he": he,
+                    "en": en,
+                    "translit": translit,
+                    "joins_next": he.endswith(MAQQEF),
+                })
 
     return chapters, crosswalk
 

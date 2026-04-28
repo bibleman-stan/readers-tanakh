@@ -48,8 +48,7 @@ vayhi
 im | levav
 David | avi
 livnot | bayit
-leshem | Yahweh
-elohei | Yisra'el
+leshem | Yahweh | elohei | Yisra'el
 
 6:8
 vaiyomer | Yahweh | el | David | avi
@@ -74,8 +73,7 @@ et | devaro
 asher | diber
 va'akum | tachat | David | avi | va'eshev | al | kise | Yisra'el | ka'asher | diber | Yahweh
 va'evneh | habayit
-leshem | Yahweh
-elohei | Yisra'el
+leshem | Yahweh | elohei | Yisra'el
 
 6:11
 va'asim | sham | et | ha'aron
@@ -125,8 +123,7 @@ lefanai
 
 6:17
 ve'atah
-Yahweh
-elohei | Yisra'el
+Yahweh | elohei | Yisra'el
 ye'amen | devarekha
 asher | dibarta
 le'avdekha | Ledavid

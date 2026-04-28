@@ -1,5 +1,5 @@
 10:1
-and it was | when heard | Adoni- | Zedek | [the] king of | Jerusalem | that | he had captured | Joshua |  | Ai | and he had totally destroyed it
+and it was | when heard | Adoni- | Zedek | [the] king of | Jerusalem | that | he had captured | Joshua | [obj.] | Ai | and he had totally destroyed it
 just as | he had done | to Jericho | and to king its
 so | he had done | to Ai
 and to king its
@@ -23,7 +23,7 @@ saying
 10:4
 come up | to me | and help me
 so we may attack
- | Gibeon
+[obj.] | Gibeon
 for | it has made peace | with | Joshua
 and with | [the] people of | Israel
 
@@ -80,7 +80,7 @@ with the sword
 
 10:12
 then | he spoke | Joshua | to Yahweh
-on [the] day | delivered up | Yahweh |  | the Amorite[s]
+on [the] day | delivered up | Yahweh | [obj.] | the Amorite[s]
 before | [the] people of | Israel
 and he said | to [the] eyes of | Israel | O sun | at Gibeon | be still
 and O moon
@@ -146,30 +146,30 @@ into | [the] cities of | fortification
 and they returned | all | the people | to | the camp | to | Joshua | Makkedah
 in peace
 not | he sharpened | to [the] people of | Israel | to anyone
- | tongue his
+[obj.] | tongue his
 
 10:22
 and he said | Joshua
 open
- | [the] mouth of | the cave
-and bring out | to me |  | [the] five | the kings | these
+[obj.] | [the] mouth of | the cave
+and bring out | to me | [obj.] | [the] five | the kings | these
 from | the cave
 
 10:23
 and they did | thus
-and they brought out | to him |  | [the] five | the kings | these
+and they brought out | to him | [obj.] | [the] five | the kings | these
 from | the cave
- | [the] king of | Jerusalem |  | [the] king of | Hebron |  | [the] king of | Jarmuth
- | [the] king of | Lachish
- | [the] king of | Eglon
+[obj.] | [the] king of | Jerusalem | [obj.] | [the] king of | Hebron | [obj.] | [the] king of | Jarmuth
+[obj.] | [the] king of | Lachish
+[obj.] | [the] king of | Eglon
 
 10:24
-and it was | when brought out they |  | the kings | these | to | Joshua | and he summoned | Joshua |  | every | man of | Israel | and he said | to | [the] commanders of | [the] men of | war | who had gone | with him
-draw near | put |  | feet your
+and it was | when brought out they | [obj.] | the kings | these | to | Joshua | and he summoned | Joshua | [to] | every | man of | Israel | and he said | to | [the] commanders of | [the] men of | war | who had gone | with him
+draw near | put | [obj.] | feet your
 on | [the] necks of
 the kings | these
 and they drew near
-and they put |  | feet their
+and they put | [obj.] | feet their
 on | necks their
 
 10:25
@@ -229,7 +229,7 @@ and he engaged in battle
 against it
 
 10:32
-and he gave | Yahweh |  | Lachish | in [the] hand of | Israel | and he captured it | on the day | second
+and he gave | Yahweh | [obj.] | Lachish | in [the] hand of | Israel | and he captured it | on the day | second
 and he struck it | to [the] mouth of | [the] sword
 and | every | person
 who | [was] in it
@@ -239,7 +239,7 @@ to Libnah
 10:33
 then | he came up | Horam | [the] king of | Gezer
 to help
- | Lachish
+[obj.] | Lachish
 and he attacked him | Joshua | and | people his
 until | not | he had left | to him
 a survivor
@@ -281,7 +281,7 @@ on it
 
 10:39
 and he captured it | and | king its | and | all | cities its | and they struck them | to [the] mouth of | [the] sword
-and they totally destroyed |  | every | person | who | [was] in it
+and they totally destroyed | [obj.] | every | person | who | [was] in it
 not | he left
 a survivor
 just as | he had done | to Hebron | so | he did | to Debir | and to king its
@@ -289,13 +289,12 @@ and just as | he had done | to Libnah
 and to king its
 
 10:40
-and he defeated | Joshua |  | all | the land | the hill country | and the Negev | and the Shephelah | and the slopes | and | all | kings their
+and he defeated | Joshua | [obj.] | all | the land | the hill country | and the Negev | and the Shephelah | and the slopes | and | all | kings their
 not | he left
 a survivor
 and | every | breathing thing | he totally destroyed
 just as | he had commanded
-Yahweh
-[the] God of | Israel
+Yahweh | [the] God of | Israel
 
 10:41
 and he struck down them | Joshua | from Kadesh | Barnea

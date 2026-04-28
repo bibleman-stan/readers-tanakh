@@ -8,7 +8,7 @@ speak | to | [the] people of | Israel | saying | this | [is] the living creature
 any | [one which] divides in two | a hoof | and [which] cleaves | a cleft of | hooves | [which] brings up | cud | among the animal[s] | it | you will eat
 
 11:4
-nevertheless |  | this | not | you must eat | from [those which] bring up | the cud | and from [those which] divide in two | the hoof |  | the camel | that | [is] bringing up | cud | it | and a hoof | not it | [is] dividing in two | [is] unclean | it | to you
+nevertheless | [obj.] | this | not | you must eat | from [those which] bring up | the cud | and from [those which] divide in two | the hoof | [obj.] | the camel | that | [is] bringing up | cud | it | and a hoof | not it | [is] dividing in two | [is] unclean | it | to you
 
 11:5
 and | the rock badger | that | [is] bringing up | cud | it | and a hoof | not | it divides in two | [is] unclean | it | to you
@@ -23,7 +23,7 @@ and | the pig | that | [is] dividing in two | a hoof | it | and [is] cleaving | 
 any of meat their | not | you must eat | and carcass their | not | you will touch | [are] unclean | they | to you
 
 11:9
- | this | you will eat | from all | that | [is] in the waters | all | that | [belong] to it | fin | and scale | in the waters | in the seas | and in the wadis | them | you will eat
+[obj.] | this | you will eat | from all | that | [is] in the waters | all | that | [belong] to it | fin | and scale | in the waters | in the seas | and in the wadis | them | you will eat
 
 11:10
 and all | that | not | [belong] to it | fin | and scale | in the seas | and in the wadis | from every | swarming thing of | the waters | and of every | creature | living | which | [is] in the waters | [are] detestable thing[s] | they | to you
@@ -35,13 +35,13 @@ and detestable thing[s] | they will be | to you | any of meat their | not | you 
 all | that | not | [belong] to it | fin | and scale | in the waters | [is] a detestable thing | it | to you
 
 11:13
-and | these | you will consider detestable | from | the bird[s] | not | they will be eaten | [are] detestable thing[s] | they |  | the eagle | and | the bearded vulture | and | the osprey
+and | these | you will consider detestable | from | the bird[s] | not | they will be eaten | [are] detestable thing[s] | they | [obj.] | the eagle | and | the bearded vulture | and | the osprey
 
 11:14
 and | the black kite | and | the hawk | to kind its
 
 11:15
- | every | raven | to kind its
+[obj.] | every | raven | to kind its
 
 11:16
 and | [the] daughter of | the ostrich | and | the screech owl | and | the gull | and | the falcon | to kind its
@@ -59,10 +59,10 @@ and | the stork | the heron | to kind its | and | the hoopoe | and | the bat
 every | swarming thing of | wing | which walks | on | four [legs] | [is] a detestable thing | it | to you
 
 11:21
-nevertheless |  | this | you will eat | from every | swarming thing of | wing | which walks | on | four [legs] | which | [belong] to it | legs | from above | feet its | to hop | with them | on | the ground
+nevertheless | [obj.] | this | you will eat | from every | swarming thing of | wing | which walks | on | four [legs] | which | [belong] to it | legs | from above | feet its | to hop | with them | on | the ground
 
 11:22
- | these | any of them | you will eat |  | the locust | to kind its | and | the locust | to kind its | and | the locust | to kind its | and | the grasshopper | to kind its
+[obj.] | these | any of them | you will eat | [obj.] | the locust | to kind its | and | the locust | to kind its | and | the locust | to kind its | and | the grasshopper | to kind its
 
 11:23
 and every | swarming thing of | wing | which | [belong] to it | four | feet | [is] a detestable thing | it | to you
@@ -80,7 +80,7 @@ to every | animal | which | it | [is] dividing in two | a hoof | and a cleft | n
 and any | [one which] walks | on | paws its | among every | living creature | which walks | on | four [feet] | [are] unclean | they | to you | every | [one who] touches | carcass their | he will be unclean | until | the evening
 
 11:28
-and who [-ever] carries |  | carcass their | he will wash | garments his | and he will be unclean | until | the evening | [are] unclean | they | to you
+and who [-ever] carries | [obj.] | carcass their | he will wash | garments his | and he will be unclean | until | the evening | [are] unclean | they | to you
 
 11:29
 and this | to you | [is] the unclean | among the swarming thing[s] | which swarms | on | the earth | the weasel | and the mouse | and the great lizard | to kind its
@@ -116,7 +116,7 @@ and if | it will be put | water | on | seed | and it will fall | any of carcass 
 and if | it will die | any of | the livestock | which | it | [belongs] to you | to food | who [-ever] touches | carcass its | he will be unclean | until | the evening
 
 11:40
-and [who [-ever] eats | any of carcass its | he will wash | garments his | and he will be unclean | until | the evening | and who [-ever] carries |  | carcass its | he will wash | garments his | and he will be unclean | until | the evening
+and [who [-ever] eats | any of carcass its | he will wash | garments his | and he will be unclean | until | the evening | and who [-ever] carries | [obj.] | carcass its | he will wash | garments his | and he will be unclean | until | the evening
 
 11:41
 and every | swarming thing | which swarms | on | the earth | [is] a detestable thing | it | not | it will be eaten
@@ -125,10 +125,10 @@ and every | swarming thing | which swarms | on | the earth | [is] a detestable t
 any | [one which] walks | on | belly | and any | [one which] walks | on | four [feet] | to | any | [one which] multiplies | feet | to every | swarming thing | which swarms | on | the earth | not | you must eat them | for | [are] a detestable thing | they
 
 11:43
-may not | you make detestable |  | selves your | by any | swarming thing | which swarms | and not | you must make yourselves unclean | by them | and you will make yourselves unclean | by them
+may not | you make detestable | [obj.] | selves your | by any | swarming thing | which swarms | and not | you must make yourselves unclean | by them | and you will make yourselves unclean | by them
 
 11:44
-for | I | [am] Yahweh | God your | and you will keep yourselves holy | and you will be | holy | for | [am] holy | I | and not | you must make unclean |  | selves your | by any | swarming thing | which creeps | on | the earth
+for | I | [am] Yahweh | God your | and you will keep yourselves holy | and you will be | holy | for | [am] holy | I | and not | you must make unclean | [obj.] | selves your | by any | swarming thing | which creeps | on | the earth
 
 11:45
 for | I | [am] Yahweh | who brought up | you | from [the] land of | Egypt | to become | for you | God | and you will be | holy | for | [am] holy | I

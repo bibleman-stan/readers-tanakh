@@ -1,32 +1,28 @@
 {
   "book": "isaiah",
   "dir_name": "23-isaiah",
-  "timestamp": "2026-04-27T19:42:56",
+  "timestamp": "2026-04-27T19:58:04",
   "chapter_count": 66,
   "total_cola": 6933,
-  "readiness_score": 77,
+  "readiness_score": 87,
   "score_breakdown": {
-    "malformed_pts": 40.0,
+    "malformed_pts": 50.0,
     "deviation_pts": 26.87,
     "review_pts": 10.0,
     "drift_pts": 0.0
   },
   "validators": {
-    "total_findings": 357,
-    "malformed": 3,
+    "total_findings": 354,
+    "malformed": 0,
     "deviation": 354,
     "review_required": 318,
     "per_validator": [
       {
         "name": "validate_line_final_tokens",
         "layer": "syntax",
-        "findings": 3,
-        "by_severity": {
-          "MALFORMED": 3
-        },
-        "by_tag": {
-          "STRONG-MERGE-CANDIDATE": 3
-        },
+        "findings": 0,
+        "by_severity": {},
+        "by_tag": {},
         "error": null
       },
       {
@@ -124,8 +120,8 @@
     "ARTICLE-SPLIT": 0,
     "PREP-NP-SPLIT": 69,
     "AUX-VERB-SPLIT": 0,
-    "PTC-NP-SPLIT": 13,
-    "APPOSITIVE-SPLIT": 15,
+    "PTC-NP-SPLIT": 11,
+    "APPOSITIVE-SPLIT": 14,
     "DANGLING-CONJ": 0
   }
 }
