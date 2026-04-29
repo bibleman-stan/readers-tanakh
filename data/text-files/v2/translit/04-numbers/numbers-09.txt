@@ -8,8 +8,7 @@ bemo'ado
 
 9:3
 be'arba'ah | asar | yom | bachodesh | hazeh | bein | ha'arbayim | ta'asu | oto
-bemo'ado | kekhol | chukotav | ukhekhkhol | mishpatav
-ta'asu | oto
+bemo'ado | kekhol | chukotav | ukhekhkhol | mishpatav | ta'asu | oto
 
 9:4
 vaydaber | Mosheh | el | benei | Yisra'el
@@ -19,7 +18,8 @@ la'asot | hapasach
 vaiya'asu | et | hapesach | barishon | be'arba'ah | asar | yom | lachodesh | bein | ha'arbayim
 bemidbar | Sinai
 kekhol | asher | tzivah | Yahweh | et | Mosheh
-ken | asu | benei | Yisra'el
+ken | asu
+benei | Yisra'el
 
 9:6
 vayhi | anashim | asher | hayu | teme'im | lenefesh | adam
@@ -31,13 +31,16 @@ baiyom | hahu
 vaiyomeru | ha'anashim | hahemah | elav
 anachnu | teme'im
 lenefesh | adam
-lamah | nigara | levilti | hakriv | et | kareban | Yahweh | bemo'ado | betokh
+lamah | nigara | levilti | hakriv | et | kareban | Yahweh | bemo'ado
+betokh
 benei | Yisra'el
 
 9:8
 vaiyomer | alehem
 Mosheh
-imdu | ve'eshme'ah | mah | yetzaveh | Yahweh | lakhem
+imdu | ve'eshme'ah
+mah | yetzaveh | Yahweh
+lakhem
 
 9:9
 vaydaber | Yahweh
@@ -58,8 +61,9 @@ yokheluhu
 
 9:12
 lo | yash'iru | mimenu | ad | boker
-ve'etzem | lo | yishberu | vo | kekhol | chukat | hapesach
-ya'asu | oto
+ve'etzem
+lo | yishberu | vo
+kekhol | chukat | hapesach | ya'asu | oto
 
 9:13
 veha'ish | asher | hu | tahor | uvederekh | lo | hayah | vechadal | la'asot | hapesach
@@ -70,37 +74,45 @@ ha'ish | hahu
 
 9:14
 vekhi | yagur | itekhem | ger | ve'asah | fesach | Layahweh
-kechukat | hapesach | ukhemishpato | ken | ya'aseh
-chukah | achat | yihyeh | lakhem | velager | ule'ezrach | ha'aretz
+kechukat | hapesach | ukhemishpato
+ken | ya'aseh
+chukah | achat | yihyeh | lakhem
+velager | ule'ezrach | ha'aretz
 
 9:15
 uveyom | hakim | et | hamishkan | kisah | he'anan | et | hamishkan
 le'ohel
-ha'edut | uva'erev | yihyeh | al | hamishkan | kemar'eh | esh
+ha'edut
+uva'erev | yihyeh | al | hamishkan | kemar'eh | esh
 ad | boker
 
 9:16
 ken | yihyeh | tamid
 he'anan
-yekhassenu | umar'eh | esh
+yekhassenu
+umar'eh | esh
 layelah
 
 9:17
 ulefi | he'alot | he'anan | me'al | ha'ohel
 ve'acharei | khen
-yis'u | benei | Yisra'el | uvimkom | asher | yishkon | sham | he'anan
-sham | yachanu | benei | Yisra'el
+yis'u
+benei | Yisra'el
+uvimkom | asher | yishkon | sham | he'anan
+sham | yachanu
+benei | Yisra'el
 
 9:18
 al | pi | Yahweh | yis'u | benei | Yisra'el
 ve'al | pi | Yahweh
-yachanu | kol | yemei | asher | yishkon | he'anan | al | hamishkan
+yachanu
+kol | yemei | asher | yishkon | he'anan | al | hamishkan
 yachanu
 
 9:19
-uveha'arikh | he'anan | al | hamishkan
-yamim | rabim
-veshameru | venei | Yisra'el | et | mishmeret | Yahweh | velo | yisa'u
+uveha'arikh | he'anan | al | hamishkan | yamim | rabim
+veshameru | venei | Yisra'el | et | mishmeret | Yahweh
+velo | yisa'u
 
 9:20
 veyesh | asher | yihyeh | he'anan | yamim | mispar
@@ -119,12 +131,14 @@ venasa'u
 
 9:22
 ov | yomayim | ov | chodesh | ov | yamim | beha'arikh | he'anan | al | hamishkan | lishkon | alav
-yachanu | venei | Yisra'el | velo | yisa'u | uvehe'aloto
-yisa'u
+yachanu | venei | Yisra'el
+velo | yisa'u
+uvehe'aloto | yisa'u
 
 9:23
 al | pi | Yahweh | yachanu
 ve'al | pi | Yahweh
 yisa'u
 et | mishmeret | Yahweh | shamaru
-al | pi | Yahweh | beyad | Mosheh
+al | pi | Yahweh
+beyad | Mosheh

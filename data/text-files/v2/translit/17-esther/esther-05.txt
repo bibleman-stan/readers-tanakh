@@ -8,16 +8,16 @@ petach | habayit
 
 5:2
 vayhi | khir'ot | hamelekh | et | Ester | hamalkah | omedet | bechatzer
-nase'ah | chen | be'einav
+nase'ah | chen
+be'einav
 vaiyooshet | hamelekh | Le'ester | et | sharvit | hazahav | asher | beyado
 vatikrav | Ester
 vatiga | berosh | hasharvit
 
 5:3
 vaiyomer | lah | hamelekh
-mah | lakh
-Ester | hamalkah | umah | bakashatekh | ad | chatzi | hamalkhut
-veyinaten | lakh
+mah | lakh | Ester | hamalkah
+umah | bakashatekh | ad | chatzi | hamalkhut | veyinaten | lakh
 
 5:4
 vatomer | Ester
@@ -52,7 +52,8 @@ im | matzati | chen | be'einei | hamelekh | ve'im | al | hamelekh | tov | latet 
 vela'asot
 et | bakashati
 yavo | hamelekh | Vehaman | el | hamishteh | asher | e'eseh | lahem
-umachar | e'eseh | kidvar | hamelekh
+umachar | e'eseh
+kidvar | hamelekh
 
 5:9
 vaiyetze | Haman | baiyom | hahu
@@ -85,9 +86,10 @@ im | hamelekh
 
 5:13
 vekhol | zeh
-einenu | shoveh | li
-bekhol | et | asher | ani | ro'eh | et | Maredokhai | haiyehudi
-yoshev | besha'ar | hamelekh
+einenu | shoveh
+li | bekhol | et | asher | ani | ro'eh | et | Maredokhai | haiyehudi
+yoshev
+besha'ar | hamelekh
 
 5:14
 vatomer | lo | Zeresh | ishto | vekhol | ohavav | ya'asu | etz | gavoah | chamishim | amah

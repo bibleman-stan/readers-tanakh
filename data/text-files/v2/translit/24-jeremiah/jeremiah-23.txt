@@ -6,11 +6,11 @@ ne'um | Yahweh
 lakhen | koh | amar | Yahweh | elohei | Yisra'el | al | haro'im | haro'im | et | ami
 atem | hafitzotem | et | tzoni | vatadichum | velo | fekadtem
 otam
-hini | foked | aleikhem | et | roa | ma'aleikhem
-ne'um | Yahweh
+hini | foked | aleikhem | et | roa | ma'aleikhem | ne'um | Yahweh
 
 23:3
-va'ani | akabetz | et | she'erit | tzoni | mikol | ha'aratzot
+va'ani | akabetz | et | she'erit | tzoni
+mikol | ha'aratzot
 asher | hidachti | otam
 sham
 vahashivoti | ethen | al | nevehen
@@ -18,7 +18,8 @@ ufaru | veravu
 
 23:4
 vahakimoti | aleihem | ro'im
-vera'um | velo | yire'u | od | velo | yechatu | velo | yipakedu
+vera'um
+velo | yire'u | od | velo | yechatu | velo | yipakedu
 ne'um | Yahweh
 
 23:5
@@ -28,14 +29,14 @@ tzemach | tzadik | umalakh | melekh | vehiskil
 ve'asah | mishpat | utzedakah | ba'aretz
 
 23:6
-beyamav | tivasha | Yehudah | Veyisra'el
-yishkon | lavetach
+beyamav | tivasha | Yehudah | Veyisra'el | yishkon | lavetach
 vezeh | shemo | asher | yikre'o
 Yahweh | tzidkenu
 
 23:7
 lakhen | hineh | yamim | ba'im
-ne'um | Yahweh | velo | yomeru | od | chai | Yahweh | asher | he'elah | et | benei | Yisra'el
+ne'um | Yahweh
+velo | yomeru | od | chai | Yahweh | asher | he'elah | et | benei | Yisra'el
 me'eretz | Mitzrayim
 
 23:8
@@ -48,11 +49,14 @@ al | admatam
 23:9
 lanevi'im | Nishbar | libi | vekirbi | rachafu | kol | atzmotai
 hayiti | ke'ish | shikor | ukhegever
-avarov | yayin | mipenei | Yahweh | umipenei
+avarov | yayin
+mipenei | Yahweh
+umipenei
 divrei | kadesho
 
 23:10
-ki | mena'afim | mal'ah | ha'aretz | ki | mipenei | alah | avelah | ha'aretz
+ki | mena'afim | mal'ah | ha'aretz
+ki | mipenei | alah | avelah | ha'aretz
 yaveshu
 ne'ot | midbar
 vatehi | merutzatam | ra'ah
@@ -68,7 +72,8 @@ ne'um | Yahweh
 23:12
 lakhen | yihyeh | darkam | lahem | kachalaklakot | ba'afelah
 yidachu
-venafelu | vah | ki | avi | aleihem | ra'ah | shenat | pekudatam
+venafelu | vah
+ki | avi | aleihem | ra'ah | shenat | pekudatam
 ne'um | Yahweh
 
 23:13
@@ -81,8 +86,7 @@ et | Yisra'el
 23:14
 uvinvi'ei | Yerushalim | ra'iti | sha'arurah | na'of | vehalokh | basheker | vechizeku | yedei | mere'im
 levilti | shavu
-ish | mera'ato
-hayu | li | khulam | Kisdom
+ish | mera'ato | hayu | li | khulam | Kisdom
 veyosheveiha
 Ka'amorah
 
@@ -90,13 +94,15 @@ Ka'amorah
 lakhen | koh | amar | Yahweh | tzeva'ot | al | hanevi'im
 hini | ma'akhil | otam | la'anah
 vehishkitim | mei | rosh | ki | me'et | nevi'ei | Yerushalim
-yatze'ah | chanupah | lekhol | ha'aretz
+yatze'ah | chanupah
+lekhol | ha'aretz
 
 23:16
 koh | amar | Yahweh | tzeva'ot | al | tishme'u | al | divrei | hanevi'im | hanibe'im | lakhem
-mahbilim | hemah
-etkhem
-chazon | libam | yedaberu | lo | mipi | Yahweh
+mahbilim | hemah | etkhem
+chazon | libam | yedaberu
+lo
+mipi | Yahweh
 
 23:17
 omerim | amor | limna'atzai
@@ -108,7 +114,8 @@ lo | tavo | aleikhem
 ra'ah
 
 23:18
-ki | mi | amad | besod | Yahweh | veyere
+ki | mi | amad | besod | Yahweh
+veyere
 veyishma | et | devaro
 mi | hikshiv | devaro | vaiyishma
 
@@ -120,7 +127,8 @@ yachul
 23:20
 lo | yashuv | af | Yahweh
 ad | asoto | ve'ad | hakimo | mezimot | libo | be'acharit | haiyamim
-titbonu | vah | binah
+titbonu | vah
+binah
 
 23:21
 lo | shalachti | et | hanevi'im
@@ -136,7 +144,9 @@ umeroa | ma'aleihem
 
 23:23
 ha'elohei | mikaro | ani
-ne'um | Yahweh | velo | elohei | merachok
+ne'um | Yahweh
+velo | elohei
+merachok
 
 23:24
 im | yisater | ish | bamistarim | va'ani | lo | er'enu
@@ -159,7 +169,9 @@ tarmit | libam
 
 23:27
 hachoshevim | lehashkiach | et | ami | shemi | bachalomotam | asher | yesaperu
-ish | lere'ehu | ka'asher | shakhechu | avotam | et | shemi | baba'al
+ish | lere'ehu
+ka'asher | shakhechu | avotam | et | shemi
+baba'al
 
 23:28
 hanavi | asher | ito | chalom | yesaper | chalom
@@ -207,8 +219,9 @@ ve'al | beito
 
 23:35
 koh | tomeru | ish | al | re'ehu
-ve'ish | el | achiv | meh | anah | Yahweh | umah | diber
-Yahweh
+ve'ish | el | achiv
+meh | anah | Yahweh
+umah | diber | Yahweh
 
 23:36
 umasa | Yahweh | lo | tizkeru | od
@@ -219,18 +232,21 @@ eloheinu
 
 23:37
 koh | tomar
-el | hanavi | meh | anakh | Yahweh | umah | diber
-Yahweh
+el | hanavi
+meh | anakh | Yahweh
+umah | diber | Yahweh
 
 23:38
 ve'im | masa | Yahweh | tomeru
 lakhen | koh | amar | Yahweh
-ya'an | amarekhem | et | hadavar | hazeh | masa | Yahweh
-va'eshlach | aleikhem | lemor | lo | tomeru | masa | Yahweh
+ya'an | amarekhem | et | hadavar | hazeh
+masa | Yahweh
+va'eshlach | aleikhem | lemor
+lo | tomeru
+masa | Yahweh
 
 23:39
-lakhen | hini
-venashiti | etkhem
+lakhen | hini | venashiti | etkhem
 nasho
 venatashti | etkhem | ve'et | ha'ir | asher | natati | lakhem | vela'avoteikhem
 me'al | panai

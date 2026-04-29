@@ -1,7 +1,6 @@
 18:1
 vaiyera | elav | Yahweh
-be'elonei | Mamre
-vehu | yoshev | petach | ha'ohel
+be'elonei | Mamre | vehu | yoshev | petach | ha'ohel
 kechom | haiyom
 
 18:2
@@ -16,19 +15,21 @@ aretzah
 18:3
 vaiyomar
 adonai | im | na | matzati | chen | be'eineikha
-al | na | ta'avor | me'al | avdekha
+al | na | ta'avor
+me'al | avdekha
 
 18:4
-yukach | na | me'at | mayim
-verachatzu
+yukach | na | me'at | mayim | verachatzu
 ragleikhem
 vehisha'anu | tachat | ha'etz
 
 18:5
-ve'ekchah | fat | lechem | vesa'adu | libekhem | achar | ta'avoru | ki | al | ken | avartem
+ve'ekchah | fat | lechem | vesa'adu | libekhem | achar | ta'avoru
+ki | al | ken | avartem
 al | avdekhem
 vaiyomeru
-ken | ta'aseh | ka'asher | dibarta
+ken | ta'aseh
+ka'asher | dibarta
 
 18:6
 vaymaher | Avraham | ha'ohelah
@@ -71,7 +72,8 @@ chadal | lihyot | Lesarah
 orach | kanashim
 
 18:12
-vatitzchak | Sarah | bekirbah | lemor | acharei | veloti | hayetah | li | ednah
+vatitzchak | Sarah | bekirbah | lemor
+acharei | veloti | hayetah | li | ednah
 vadoni
 zaken
 
@@ -82,12 +84,13 @@ lamah | zeh | tzachakah | Sarah | lemor | ha'af | umnam | eled
 va'ani | zakanti
 
 18:14
-hayipale | Meyahweh
-davar
-lamo'ed | ashuv | eleikha | ka'et | chaiyah | Ulesarah | ven
+hayipale | Meyahweh | davar
+lamo'ed | ashuv | eleikha | ka'et | chaiyah
+Ulesarah | ven
 
 18:15
-vatekhachesh | Sarah | lemor | lo | tzachakti | ki | yare'ah
+vatekhachesh | Sarah | lemor | lo | tzachakti
+ki | yare'ah
 vaiyomer | lo
 ki | tzachaket
 
@@ -108,8 +111,8 @@ hamkhaseh | ani | Me'avraham | asher | ani | oseh
 Ve'avraham
 hayo | yihyeh | legoy | gadol
 ve'atzum
-venivrekhu | vo | kol
-goyei | ha'aretz
+venivrekhu | vo
+kol | goyei | ha'aretz
 
 18:19
 ki | yeda'tiv | lema'an | asher | yetzaveh | et | banav | ve'et | beito | acharav
@@ -121,8 +124,10 @@ alav
 
 18:20
 vaiyomer | Yahweh
-za'akat | Sedom | Va'amorah | ki | rabah
-vechatatam | ki | khavedah | me'od
+za'akat | Sedom | Va'amorah
+ki | rabah
+vechatatam
+ki | khavedah | me'od
 
 18:21
 eradah | na | ve'er'eh
@@ -147,7 +152,8 @@ tzadik
 im | rasha
 
 18:24
-ulai | yesh | chamishim | tzadikim | betokh | ha'ir
+ulai | yesh | chamishim | tzadikim
+betokh | ha'ir
 ha'af | tispeh | velo | tisa | lamakom
 lema'an | chamishim | hatzadikim | asher | bekirbah
 
@@ -155,7 +161,9 @@ lema'an | chamishim | hatzadikim | asher | bekirbah
 chalilah | lekha | me'asot | kadavar | hazeh | lehamit | tzadik | im | rasha
 vehayah | khatzadik | karasha
 chalilah | lakh
-hashofet | kol | ha'aretz | lo | ya'aseh | mishpat
+hashofet | kol | ha'aretz
+lo | ya'aseh
+mishpat
 
 18:26
 vaiyomer | Yahweh
@@ -181,8 +189,7 @@ vaiyosef | od | ledaber | elav | vaiyomar
 ulai | yimatze'un | sham
 arba'im
 vaiyomer | lo | e'eseh
-ba'avur
-ha'arba'im
+ba'avur | ha'arba'im
 
 18:30
 vaiyomer | al | na | yichar | Ladonai | va'adaberah
@@ -197,16 +204,14 @@ vaiyomer | hineh | na | ho'alti | ledaber | el | Adonai
 ulai | yimatze'un | sham
 esrim
 vaiyomer | lo | ashchit
-ba'avur
-ha'esrim
+ba'avur | ha'esrim
 
 18:32
 vaiyomer | al | na | yichar | Ladonai | va'adaberah | akh | hapa'am
 ulai | yimatze'un | sham
 asarah
 vaiyomer | lo | ashchit
-ba'avur
-ha'asarah
+ba'avur | ha'asarah
 
 18:33
 vaiyelekh | Yahweh

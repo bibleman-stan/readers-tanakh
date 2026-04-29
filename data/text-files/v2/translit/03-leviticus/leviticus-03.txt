@@ -1,8 +1,7 @@
 3:1
 ve'im | zevach | shelamim
 karebano
-im | min | habakar | hu | makriv
-im | zakhar | im | nekevah
+im | min | habakar | hu | makriv | im | zakhar | im | nekevah
 tamim | yakrivenu
 lifnei | Yahweh
 
@@ -11,7 +10,8 @@ vesamakh | yado | al | rosh | karebano
 ushechato
 petach
 ohel | mo'ed
-vezareku | benei | Aharon | hakohanim | et | hadam | al | hamizbeach | saviv
+vezareku | benei | Aharon | hakohanim | et | hadam | al | hamizbeach
+saviv
 
 3:3
 vehikriv | mizevach | hashelamim
@@ -51,13 +51,13 @@ vesamakh | et | yado | al | rosh | karebano
 veshachat | oto
 lifnei
 ohel | mo'ed
-vezareku | benei | Aharon | et | damo | al | hamizbeach | saviv
+vezareku | benei | Aharon | et | damo | al | hamizbeach
+saviv
 
 3:9
 vehikriv | mizevach | hashelamim | isheh | Layahweh
 chelbo | ha'alyah | temimah
-le'umat | he'atzeh
-yesirenah
+le'umat | he'atzeh | yesirenah
 ve'et | hachelev | hamkhaseh | et | hakerev
 ve'et | kol | hachelev | asher | al | hakerev
 
@@ -84,7 +84,8 @@ vesamakh | et | yado | al | rosho
 veshachat | oto
 lifnei
 ohel | mo'ed
-vezareku | benei | Aharon | et | damo | al | hamizbeach | saviv
+vezareku | benei | Aharon | et | damo | al | hamizbeach
+saviv
 
 3:14
 vehikriv | mimenu | karebano
@@ -102,7 +103,9 @@ yesirenah
 
 3:16
 vehiktiram | hakohen
-hamizbechah | lechem | isheh | lereiach | nichoach | kol | chelev
+hamizbechah
+lechem | isheh | lereiach | nichoach
+kol | chelev
 Layahweh
 
 3:17

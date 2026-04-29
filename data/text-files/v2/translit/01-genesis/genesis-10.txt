@@ -19,8 +19,8 @@ Ashkanaz | Verifat
 Vetogarmah
 
 10:4
-uvenei | Yavan
-Elishah | Vetarshish | Kitim
+uvenei | Yavan | Elishah | Vetarshish
+Kitim
 Vedodanim
 
 10:5
@@ -48,7 +48,8 @@ hu | hechel | lihyot | gibor | ba'aretz
 10:9
 hu | hayah | gibor | tzayid
 lifnei | Yahweh
-al | ken | ye'amar | Kenimrod | gibor | tzayid
+al | ken | ye'amar
+Kenimrod | gibor | tzayid
 lifnei | Yahweh
 
 10:10
@@ -63,7 +64,9 @@ ve'et | Rechovot | Ir
 ve'et | Kalach
 
 10:12
-ve'et | Resen | bein | Ninveh | uvein | Kalach
+ve'et | Resen
+bein | Ninveh
+uvein | Kalach
 hi
 ha'ir | hagedolah
 
@@ -91,8 +94,8 @@ ve'et | hasini
 10:18
 ve'et | ha'arvadi | ve'et | hatzemari
 ve'et | hachamati
-ve'achar | Nafotzu | mishpechot
-hakena'ani
+ve'achar | Nafotzu
+mishpechot | hakena'ani
 
 10:19
 vayhi | gevul | hakena'ani | Mitzidon
@@ -151,7 +154,9 @@ ve'et | Sheva
 
 10:29
 ve'et | Ofir | ve'et | Chavilah
-ve'et | Yovav | kol | eleh | benei | Yaketan
+ve'et | Yovav
+kol | eleh
+benei | Yaketan
 
 10:30
 vayhi | moshavam

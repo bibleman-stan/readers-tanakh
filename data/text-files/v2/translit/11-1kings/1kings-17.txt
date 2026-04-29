@@ -2,7 +2,8 @@
 vaiyomer | Eliyahu | hatishbi | mitoshavei | Gil'ad | el | Ach'av
 chai | Yahweh | elohei | Yisra'el | asher | amadti | lefanav
 im | yihyeh | hashanim | ha'eleh
-tal | umatar | ki
+tal | umatar
+ki
 im | lefi | devari
 
 17:2
@@ -16,7 +17,8 @@ kedemah
 venistarta | benachal | Kerit | asher | al | penei | Haiyarden
 
 17:4
-vehayah | mehanachal | tishteh
+vehayah
+mehanachal | tishteh
 ve'et | ha'orevim | tziviti | lekhalkelkha
 sham
 
@@ -26,8 +28,8 @@ kidvar | Yahweh
 vaiyelekh | vaiyeshev | benachal | Kerit | asher | al | penei | Haiyarden
 
 17:6
-veha'orevim | mevi'im | lo | lechem | uvasar | baboker
-velechem | uvasar | ba'arev | umin | hanachal
+veha'orevim | mevi'im | lo | lechem | uvasar | baboker | velechem | uvasar
+ba'arev | umin | hanachal
 yishteh
 
 17:7
@@ -43,12 +45,13 @@ elav | lemor
 kum | lekh | Tzarefatah | asher | Letzidon
 veyashavta
 sham
-hineh | tziviti | sham | ishah | almanah | lekhalkelekha
+hineh | tziviti | sham | ishah | almanah
+lekhalkelekha
 
 17:10
 vaiyakom | vaiyelekh | Tzarefatah | vaiyavo | el | petach | ha'ir
-vehineh | sham | ishah | almanah | mekosheshet | etzim
-vaiyikra | eleiha | vaiyomar
+vehineh | sham | ishah | almanah
+mekosheshet | etzim | vaiyikra | eleiha | vaiyomar
 kechi | na | li | me'at | mayim | bakeli
 ve'eshteh
 
@@ -71,28 +74,33 @@ bo'i
 asi | khidvarekh
 akh | asi | li | mishom | ugah | ketanah | varishonah | vehotzet | li
 velakh | velivnekh
-ta'asi | ba'acharonah
+ta'asi
+ba'acharonah
 
 17:14
 ki | khoh | amar | Yahweh | elohei | Yisra'el | kad | hakemach | lo | tikhlah
-vetzapachat | hashemen | lo | techsar
-ad | yom | titen | Hashem | geshem | al | penei | ha'adamah
+vetzapachat | hashemen
+lo | techsar
+ad | yom | titen | Hashem | geshem
+al | penei | ha'adamah
 
 17:15
-vatelekh | vata'aseh | kidvar | Eliyahu
+vatelekh | vata'aseh
+kidvar | Eliyahu
 vatokhal | hi | vahu | uveitah
 yamim
 
 17:16
 kad | hakemach | lo | khalatah
-vetzapachat | hashemen | lo | chaser | kidvar | Yahweh | asher | diber
+vetzapachat | hashemen | lo | chaser
+kidvar | Yahweh | asher | diber
 beyad | Eliyahu
 
 17:17
 vayhi | achar | hadevarim | ha'eleh
-chalah | ben | ha'ishah | ba'alat | habayit
-vayhi | chalyo | chazak | me'od
-ad | asher | lo | Notrah | bo
+chalah
+ben | ha'ishah | ba'alat | habayit
+vayhi | chalyo | chazak | me'od | ad | asher | lo | Notrah | bo
 neshamah
 
 17:18
@@ -135,7 +143,8 @@ chai | benekh
 
 17:24
 vatomer | ha'ishah | el | Eliyahu
-atah | zeh | yada'ti | ki | ish | elohim
+atah | zeh | yada'ti
+ki | ish | elohim
 atah
 udevar | Yahweh | befikha
 emet

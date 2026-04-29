@@ -5,7 +5,8 @@ el | Mosheh | lemor
 17:2
 emor | el | El'azar | ben | Aharon | hakohen | veyarem | et | hamachtot | mibein | haserefah
 ve'et | ha'esh
-zereh | hal'ah | ki
+zereh | hal'ah
+ki
 kadeshu
 
 17:3
@@ -24,7 +25,8 @@ tzipui | lamizbeach
 17:5
 zikaron | livnei | Yisra'el | lema'an | asher | lo | yikrav | ish | zar | asher | lo | mizera | Aharon | hu
 lehaktir | ketoret
-lifnei | Yahweh | velo | yihyeh | Khekorach | vekha'adato
+lifnei | Yahweh
+velo | yihyeh | Khekorach | vekha'adato
 ka'asher | diber | Yahweh | beyad | Mosheh
 lo
 
@@ -60,8 +62,8 @@ al | peneihem
 
 17:11
 vaiyomer | Mosheh | el | Aharon | kach | et | hamachtah | veten | aleiha | esh | me'al | hamizbeach | vesim | ketoret
-veholekh | meherah | el | ha'edah
-vekhaper | aleihem | ki | yatza | haketzef | milifnei | Yahweh
+veholekh | meherah | el | ha'edah | vekhaper | aleihem
+ki | yatza | haketzef | milifnei | Yahweh
 hechel | hanagef
 
 17:12
@@ -85,8 +87,7 @@ al | devar | Korach
 17:15
 vaiyashov | Aharon | el | Mosheh
 el | petach
-ohel | mo'ed
-vehammagefah
+ohel | mo'ed | vehammagefah
 Ne'etzarah
 
 17:16
@@ -95,15 +96,16 @@ el | Mosheh | lemor
 
 17:17
 daber | el | benei | Yisra'el | vekach | me'itam | mateh | mateh | leveit | av | me'et | kol | nesi'ehem | leveit | avotam
-sheneim | asar | matot
-ish | et | shemo
+sheneim | asar | matot | ish | et | shemo
 tikhto
 al | matehu
 
 17:18
 ve'et | shem | Aharon
 tikhto
-al | mateh | Levi | ki | mateh | echad | lerosh | beit | avotam
+al | mateh | Levi
+ki | mateh | echad | lerosh
+beit | avotam
 
 17:19
 vehinachtam | be'ohel | mo'ed
@@ -118,17 +120,18 @@ aleikhem
 
 17:21
 vaydaber | Mosheh | el | benei | Yisra'el | vaiyitenu | elav | kal | nesi'eihem | mateh | lenasi | echad | mateh | lenasi | echad | leveit | avotam
-sheneim | asar | matot | umateh | Aharon | betokh | matotam
+sheneim | asar | matot | umateh | Aharon
+betokh | matotam
 
 17:22
 vaiyanach | Mosheh | et | hamatot
-lifnei | Yahweh | be'ohel
+lifnei | Yahweh
+be'ohel
 ha'edut
 
 17:23
 vayhi | mimochorat | vaiyavo | Mosheh | el | ohel | ha'edut
-vehineh | parach | mateh | Aharon
-leveit | Levi
+vehineh | parach | mateh | Aharon | leveit | Levi
 vaiyotze | ferach | vaiyatzetz | tzitz
 vaiyigmol
 shekedim
@@ -143,7 +146,8 @@ ish | matehu
 17:25
 vaiyomer | Yahweh | el | Mosheh | hashev | et | mateh | Aharon | lifnei | ha'edut
 lemishmeret | le'ot | livnei | meri
-utekhal | telunotam | me'alai | velo | yamutu
+utekhal | telunotam | me'alai
+velo | yamutu
 
 17:26
 vaiya'as
@@ -155,7 +159,8 @@ ken | asah
 vaiyomeru | benei | Yisra'el
 el | Mosheh
 lemor
-hen | gava'nu | avadnu | kulanu | avadnu
+hen | gava'nu | avadnu
+kulanu | avadnu
 
 17:28
 kol | hakarev | hakarev | el | mishkan | Yahweh

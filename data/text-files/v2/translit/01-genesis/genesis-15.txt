@@ -16,13 +16,15 @@ Damesek | Eli'ezer
 
 15:3
 vaiyomer | Avram
-hen | li | lo | natatah
+hen | li
+lo | natatah
 zara
 vehineh | ven | beiti
 yoresh | oti
 
 15:4
-vehineh | devar | Yahweh | elav | lemor | lo | yirashekha
+vehineh | devar | Yahweh | elav | lemor
+lo | yirashekha
 zeh
 ki | im | asher | yetze | mime'eikha
 hu
@@ -50,13 +52,13 @@ lerishtah
 
 15:8
 vaiyomar
-Adonai | Yahweh | bamah | eda | ki | irashenah
+Adonai | Yahweh
+bamah | eda
+ki | irashenah
 
 15:9
 vaiyomer | elav | kechah | li | eglah | meshuleshet
-ve'ez | meshuleshet
-ve'ayil | meshulash
-vetor
+ve'ez | meshuleshet | ve'ayil | meshulash | vetor
 vegozal
 
 15:10
@@ -87,11 +89,13 @@ arba | me'ot | shanah
 15:14
 vegam | et | hagoy | asher | ya'avodu
 dan | anokhi
-ve'acharei | khen | yetze'u | birkhush | gadol
+ve'acharei | khen | yetze'u
+birkhush | gadol
 
 15:15
-ve'atah | tavo | el | avoteikha | beshalom
-tikaver | beseivah | tovah
+ve'atah | tavo | el | avoteikha
+beshalom | tikaver
+beseivah | tovah
 
 15:16
 vedor | revi'i
@@ -109,7 +113,8 @@ hagezarim | ha'eleh
 15:18
 baiyom | hahu | karat | Yahweh | et | Avram
 berit | lemor
-lezar'akha | natati | et | ha'aretz | hazot | minehar | Mitzrayim
+lezar'akha | natati | et | ha'aretz | hazot
+minehar | Mitzrayim
 ad | hanahar | hagadol
 nehar | Perat
 

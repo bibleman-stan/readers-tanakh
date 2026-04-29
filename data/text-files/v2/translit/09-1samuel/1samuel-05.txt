@@ -14,8 +14,7 @@ etzel | Dagon
 5:3
 vaiyashkimu | ashdodim | mimochorat
 vehineh | Dagon | nofel | lefanav | artzah
-lifnei
-aron | Yahweh
+lifnei | aron | Yahweh
 vaiyikchu | et | Dagon
 vaiyashivu | oto
 limkomo
@@ -23,8 +22,7 @@ limkomo
 5:4
 vaiyashkimu | vaboker | mimochorat
 vehineh | Dagon | nofel | lefanav | artzah
-lifnei
-aron | Yahweh
+lifnei | aron | Yahweh
 verosh | Dagon | ushetei | kapot | yadav | kerutot | el | hamiftan
 rak | Dagon
 Nish'ar | alav
@@ -61,11 +59,8 @@ et | aron
 elohei | Yisra'el
 
 5:9
-vayhi | acharei | hesabu | oto | vatehi | yad | Yahweh | ba'ir | mehumah | gedolah | me'od
-vaiyakh | et | anshei | ha'ir
-mikaton
-ve'ad | gadol
-vaiyisateru | lahem
+vayhi | acharei | hesabu | oto | vatehi | yad | Yahweh | ba'ir | mehumah | gedolah | me'od | vaiyakh | et | anshei | ha'ir
+mikaton | ve'ad | gadol | vaiyisateru | lahem
 ofalim
 
 5:10
@@ -79,7 +74,8 @@ ve'et | ami
 5:11
 vaiyishlechu | vaiya'asfu | et | kol | sarnei | felishtim | vaiyomeru | shalechu | et | aron | elohei | Yisra'el | veyasho | limkomo
 velo | yamit | oti
-ve'et | ami | ki | hayetah | mehumat | mavet | bekhol | ha'ir | kavedah | me'od | yad | ha'elohim
+ve'et | ami
+ki | hayetah | mehumat | mavet | bekhol | ha'ir | kavedah | me'od | yad | ha'elohim
 sham
 
 5:12

@@ -1,8 +1,7 @@
 15:1
 vayhi | me'acharei | khen
 vaiya'as | lo | Avshalom
-merkavah
-vesusim
+merkavah | vesusim
 vachamishim | ish
 ratzim | lefanav
 
@@ -43,10 +42,10 @@ anshei | Yisra'el
 
 15:7
 vayhi
-miketz
-arba'im | shanah
+miketz | arba'im | shanah
 vaiyomer | Avshalom | el | hamelekh
-elakhah | na | va'ashalem | et | nidri | asher | nadarti | Layahweh | Bechevron
+elakhah | na | va'ashalem | et | nidri | asher | nadarti | Layahweh
+Bechevron
 
 15:8
 ki | neder | nadar | avdekha | beshivti | Vigshur | Ba'aram
@@ -64,12 +63,15 @@ vaiyelekh | Chevronah
 vaiyishlach | Avshalom | meragelim
 bekhol | shivtei | Yisra'el
 lemor | keshame'akhem | et | kol | hashofar
-va'amartem | malakh | Avshalom | Bechevron
+va'amartem
+malakh | Avshalom
+Bechevron
 
 15:11
-ve'et | Avshalom | halekhu | matayim | ish | Mirushalim
-keru'im
-veholekhim | letumam | velo | yade'u | kol | davar
+ve'et | Avshalom | halekhu | matayim | ish | Mirushalim | keru'im
+veholekhim | letumam
+velo | yade'u
+kol | davar
 
 15:12
 vaiyishlach | Avshalom | et | Achitofel | hagiloni | yo'etz | David | me'iro | Migiloh
@@ -88,7 +90,8 @@ acharei | Avshalom
 
 15:14
 vaiyomer | David | lekhol | avadav | asher | ito | Virushalim | kumu | venivrachah
-ki | lo | tihyeh | lanu | feleitah | mipenei | Avshalom
+ki | lo | tihyeh | lanu | feleitah
+mipenei | Avshalom
 maharu | lalekhet | pen | yemaher | vehisiganu | vehidiach | aleinu | et | hara'ah
 vehikah | ha'ir | lefi | charev
 
@@ -117,8 +120,7 @@ oerim | al | penei | hamelekh
 
 15:19
 vaiyomer | hamelekh | el | Itai | hagiti
-lamah | telekh | gam | atah
-itanu
+lamah | telekh | gam | atah | itanu
 shuv | veshev | im | hamelekh | ki | nakheri | atah
 vegam | goleh | atah | limkomecha
 
@@ -172,7 +174,8 @@ ve'et | navehu
 15:26
 ve'im | koh | yomar | lo | chafatzti | bakh
 hini
-ya'aseh | li | ka'asher | tov | be'einav
+ya'aseh | li
+ka'asher | tov | be'einav
 
 15:27
 vaiyomer | hamelekh | el | Tzadok | hakohen
@@ -246,7 +249,8 @@ hineh | sham | imam | shenei | veneihem
 Achima'atz | Letzadok
 Vihonatan
 Le'evyatar
-ushelachtem | beyadam | elai | kol | davar | asher | tishma'u
+ushelachtem | beyadam | elai
+kol | davar | asher | tishma'u
 
 15:37
 vaiyavo | Chushai | re'eh | David

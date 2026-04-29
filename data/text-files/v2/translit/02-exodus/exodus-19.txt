@@ -28,7 +28,8 @@ elai
 ve'atah | im | shamoa | tishme'u | bekoli
 ushemartem
 et | beriti
-vihyitem | li | segulah | mikol | ha'amim | ki | li | kol | ha'aretz
+vihyitem | li | segulah | mikol | ha'amim | ki | li
+kol | ha'aretz
 
 19:6
 ve'atem | tihyu | li | mamlekhet | kohanim
@@ -72,11 +73,15 @@ al | har | Sinai
 19:12
 vehigbalta | et | ha'am | saviv | lemor
 hishameru | lakhem | alot | bahar
-unegoa | bekatzehu | kol | hanogea | bahar | mot | yumat
+unegoa | bekatzehu
+kol | hanogea | bahar
+mot | yumat
 
 19:13
 lo | tiga | bo | yad | ki | sakol | yisakel | ov | yaroh | yiyareh
-im | behemah | im | ish | lo | yichyeh | bimshokh | haiyovel
+im | behemah | im | ish
+lo | yichyeh
+bimshokh | haiyovel
 hemah
 ya'alu | vahar
 
@@ -97,8 +102,7 @@ el | ishah
 19:16
 vayhi | vaiyom | hashelishi | bihyot | haboker | vayhi | kolot | uverakim | ve'anan | kaved | al | hahar
 vekol | shofar
-chazak | me'od
-vaiyecherad | kol | ha'am | asher | bamachaneh
+chazak | me'od | vaiyecherad | kol | ha'am | asher | bamachaneh
 
 19:17
 vaiyotze | Mosheh | et | ha'am | likrat | ha'elohim
@@ -130,8 +134,7 @@ vaiyomer | Yahweh | el | Mosheh
 red
 ha'ed | ba'am
 pen | yehersu | el | Yahweh | lir'ot
-venafal | mimenu
-rav
+venafal | mimenu | rav
 
 19:22
 vegam | hakohanim | hanigashim | el | Yahweh
@@ -143,7 +146,8 @@ Yahweh
 vaiyomer | Mosheh | el | Yahweh
 lo | yukhal | ha'am
 la'alot
-el | har | Sinai | ki | atah | ha'edotah | banu | lemor
+el | har | Sinai
+ki | atah | ha'edotah | banu | lemor
 hagbel | et | hahar
 vekidashto
 

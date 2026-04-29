@@ -25,8 +25,8 @@ vekhol
 gelilot | Pelashet
 hagemul | atem | meshalemim | alai
 ve'im | gomelim | atem | alai
-kal | meherah
-ashiv | gemulkhem | beroshekhem
+kal | meherah | ashiv | gemulkhem
+beroshekhem
 
 4:5
 asher | kaspi | uzehavi
@@ -34,37 +34,37 @@ lekachtem | umachamadai | hatovim
 havetem | leheikheleikhem
 
 4:6
-uvenei | Yehudah | uvenei | Yerushalim | mekhartem
-livnei | haiyevanim
+uvenei | Yehudah | uvenei | Yerushalim
+mekhartem | livnei | haiyevanim
 lema'an | harchikam | me'al | gevulam
 
 4:7
-hini | me'iram | min | hamakom
-asher | mekhartem | otam
+hini | me'iram | min | hamakom | asher | mekhartem | otam
 shamah
 vahashivoti | gemulkhem | beroshekhem
 
 4:8
-umakharti | et | beneikhem | ve'et | benoteikhem | beyad | benei | Yehudah | umekharum | Lishvayim
-el | goy | rachok | ki | Yahweh
+umakharti | et | beneikhem | ve'et | benoteikhem | beyad | benei | Yehudah
+umekharum | Lishvayim
+el | goy | rachok
+ki | Yahweh
 diber
 
 4:9
 kir'u | zot | bagoyim
-kadeshu | milchamah
-ha'iru | hagiborim
-yigeshu | ya'alu | kol
-anshei | hamilchamah
+kadeshu | milchamah | ha'iru | hagiborim
+yigeshu | ya'alu
+kol | anshei | hamilchamah
 
 4:10
-kotu | iteikhem | lacharavot | umazmeroteikhem | lirmachim
+kotu | iteikhem | lacharavot
+umazmeroteikhem | lirmachim
 hachalash
 yomar
 gibor | ani
 
 4:11
-ushu | vavo'u | khol | hagoyim | misaviv
-venikbatzu
+ushu | vavo'u | khol | hagoyim | misaviv | venikbatzu
 shamah
 hanchat | Yahweh
 giboreikha
@@ -72,17 +72,22 @@ giboreikha
 4:12
 ye'oru | veya'alu | hagoyim
 el | emek
-Yehoshafat | ki | sham | eshev | lishpot | et | kol | hagoyim | misaviv
+Yehoshafat
+ki | sham | eshev | lishpot | et | kol | hagoyim | misaviv
 
 4:13
-shilchu | magal | ki | vashal
+shilchu | magal
+ki | vashal
 katzir | bo'u | redu | ki | mal'ah | gat
-heshiku | haykavim | ki | rabah
+heshiku | haykavim
+ki | rabah
 ra'atam
 
 4:14
 hamonim | hamonim | be'emek
-hecharutz | ki | karov | yom | Yahweh | be'emek
+hecharutz
+ki | karov | yom | Yahweh
+be'emek
 hecharutz
 
 4:15
@@ -118,7 +123,8 @@ et | nachal | Hashitim
 Mitzrayim | lishmamah | tihyeh
 Ve'edom
 lemidbar | shemamah
-tihyeh | mechamas | benei | Yehudah
+tihyeh
+mechamas | benei | Yehudah
 asher | shafekhu | dom | naki | be'artzam
 
 4:20

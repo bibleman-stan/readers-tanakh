@@ -1,7 +1,6 @@
 14:1
 vaiyavo | elai | anashim
-miziknei
-Yisra'el
+miziknei | Yisra'el
 vaiyeshevu
 lefanai
 
@@ -13,7 +12,8 @@ elai | lemor
 ben | adam | ha'anashim | ha'eleh | he'elu | giluleihem | al | libam | umikhshol | avonam
 natenu
 nokhach | peneihem
-ha'idarosh | idaresh | lahem
+ha'idarosh | idaresh
+lahem
 
 14:4
 lakhen | daber | otom | ve'amarta | aleihem | koh | amar | Adonai | Yahweh | ish | ish | mibeit | Yisra'el | asher | ya'aleh | et | gilulav | el | libo | umikhshol | avono | yasim | nokhach | panav
@@ -24,7 +24,8 @@ bero | gilulav
 
 14:5
 lema'an | tefos | et | beit | Yisra'el | belibam | asher | Nazoru | me'alai
-begiluleihem | kulam
+begiluleihem
+kulam
 
 14:6
 lakhen | emor | el | beit | Yisra'el | koh | amar | Adonai | Yahweh
@@ -35,12 +36,12 @@ hashivu | feneikhem
 14:7
 ki | ish | ish | mibeit | Yisra'el | umehager | asher | yagur | Beyisra'el
 veyinazer | me'acharai | veya'al | gilulav | el | libo
-umikhshol | avono
-yasim
+umikhshol | avono | yasim
 nokhach | panav
 uva | el | hanavi | lidrosh | lo | vi
 ani | Yahweh
-na'aneh | lo | bi
+na'aneh | lo
+bi
 
 14:8
 venatati | fanai | ba'ish | hahu | vahasimotihu | le'ot | velimshalim
@@ -50,12 +51,10 @@ ki | ani | Yahweh
 
 14:9
 vehanavi | khi | yefuteh | vediber | davar
-ani | Yahweh | piteiti
-et
+ani | Yahweh | piteiti | et
 hanavi | hahu
 venatiti | et | yadi | alav
-vehishmadtiv | mitokh
-ami | Yisra'el
+vehishmadtiv | mitokh | ami | Yisra'el
 
 14:10
 venase'u
@@ -77,10 +76,8 @@ elai | lemor
 14:13
 ben | adam | eretz | ki | techeta | li | lim'ol | ma'al
 venatiti | yadi | aleiha
-veshavarti | lah | mateh | lachem
-vehishlachti | vah | ra'av
-vehikhrati | mimenah
-adam | uvehemah
+veshavarti | lah | mateh | lachem | vehishlachti | vah | ra'av
+vehikhrati | mimenah | adam | uvehemah
 
 14:14
 vehayu | sheloshet | ha'anashim | ha'eleh | betokhah
@@ -93,8 +90,7 @@ Adonai | Yahweh
 14:15
 lu | chaiyah | ra'ah | a'avir | ba'aretz
 veshikelatah
-vehayetah | shemamah | mibeli | over | mipenei
-hachaiyah
+vehayetah | shemamah | mibeli | over | mipenei | hachaiyah
 
 14:16
 sheloshet | ha'anashim | ha'eleh | betokhah
@@ -109,13 +105,14 @@ tihyeh | shemamah
 o | cherev | avi
 al | ha'aretz | hahi
 ve'amarti | cherev | ta'avor | ba'aretz
-vehikhrati | mimenah
-adam | uvehemah
+vehikhrati | mimenah | adam | uvehemah
 
 14:18
 usheloshet | ha'anashim | ha'eleh | betokhah
-chai | ani | ne'um | Adonai | Yahweh | lo | yatzilu
-banim | uvanot | ki | hem | levadam
+chai | ani | ne'um | Adonai | Yahweh
+lo | yatzilu
+banim | uvanot
+ki | hem | levadam
 yinatzelu
 
 14:19
@@ -135,8 +132,7 @@ yatzilu | nafsham
 14:21
 ki | khoh | amar | Adonai | Yahweh | af | ki | arba'at | shefatai | hara'im | cherev | vera'av | vechaiyah | ra'ah | vadever
 shilachti
-el | Yerushalim | lehakhrit | mimenah
-adam | uvehemah
+el | Yerushalim | lehakhrit | mimenah | adam | uvehemah
 
 14:22
 vehineh | Notrah | bah | peletah | hamutza'im | banim | uvanot
@@ -148,7 +144,8 @@ et | kol | asher | heveti
 aleiha
 
 14:23
-venichamu | etkhem | ki | tir'u | et | darkam
+venichamu | etkhem
+ki | tir'u | et | darkam
 ve'et | alilotam
 vida'tem | ki | lo | chinam | asiti | et | kol | asher | asiti | vah
 ne'um

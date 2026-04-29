@@ -23,8 +23,7 @@ limkomah
 vaiyomer | lahem | Ya'ako
 achai | me'ayin | atem
 vaiyomeru
-Mecharan
-anachenu
+Mecharan | anachenu
 
 29:5
 vaiyomer | lahem
@@ -138,8 +137,7 @@ otah
 
 29:21
 vaiyomer | Ya'ako | el | Lavan | havah | et | ishti
-ki | mal'u
-yamai
+ki | mal'u | yamai
 ve'avo'ah
 eleiha
 
@@ -211,7 +209,8 @@ akarah
 29:32
 vatahar | Le'ah | vateled | ben
 vatikra | shemo
-Re'uven | ki | amerah | ki | ra'ah | Yahweh | be'onyi
+Re'uven
+ki | amerah | ki | ra'ah | Yahweh | be'onyi
 ki | atah | ye'ehavani | ishi
 
 29:33
@@ -224,9 +223,11 @@ Shim'on
 
 29:34
 vatahar | od | vateled | ben
-vatomer | atah | hapa'am | yilaveh | ishi | elai | ki | yaladti | lo
+vatomer | atah | hapa'am | yilaveh | ishi | elai
+ki | yaladti | lo
 sheloshah | vanim
-al | ken | kara | shemo | Levi
+al | ken | kara | shemo
+Levi
 
 29:35
 vatahar | od | vateled | ben | vatomer | hapa'am | odeh | et | Yahweh

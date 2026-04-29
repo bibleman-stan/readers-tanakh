@@ -10,7 +10,8 @@ ad | migdal | Chanan'el
 ve'al | yado | vanu
 anshei | Yerecho
 ve'al | yado | vanah
-Zakur | ben | Imri
+Zakur
+ben | Imri
 
 3:3
 ve'et | sha'ar | hadagim | banu
@@ -21,9 +22,11 @@ man'ulav | uverichav
 
 3:4
 ve'al | yadam | hechezik | Meremot | ben | Uriyah | ben | Hakotz
-ve'al | yadam | hechezik | Meshulam | ben | Berekhyah | ben | Mesheizav'el
+ve'al | yadam | hechezik | Meshulam | ben | Berekhyah
+ben | Mesheizav'el
 ve'al | yadam | hechezik
-Tzadok | ben | Ba'ana
+Tzadok
+ben | Ba'ana
 
 3:5
 ve'al | yadam
@@ -33,7 +36,8 @@ ba'avodat
 adoneihem
 
 3:6
-ve'et | sha'ar | hayshanah | hecheziku | Yoyada | ben | Paseach | Umeshulam
+ve'et | sha'ar | hayshanah | hecheziku | Yoyada | ben | Paseach
+Umeshulam
 ben | Besodyah
 hemah | keruhu
 vaiya'amidu | daltotav
@@ -50,7 +54,8 @@ ever | Hanahar
 3:8
 al | yado | hechezik | Uzi'el | ben | Charhayah | tzorfim
 ve'al | yado | hechezik
-Chananyah | ben | harakachim
+Chananyah
+ben | harakachim
 vaiya'azvu | Yerushalim
 ad
 hachomah | harechavah
@@ -65,11 +70,13 @@ pelekh | Yerushalim
 ve'al | yadam | hechezik | Yedayah | ven | Charumaf
 veneged | beito
 ve'al | yado | hechezik
-Chatush | ben | Chashavneyah
+Chatush
+ben | Chashavneyah
 
 3:11
 midah | shenit | hechezik | Malkiyah | ven | Charim
-Vechashuv | ben | Pachat | Mo'av
+Vechashuv
+ben | Pachat | Mo'av
 ve'et | migdal | hatanurim
 
 3:12
@@ -121,39 +128,44 @@ al | yado | hechezik | Chashavyah | sar | chatzi | felekh | Ke'ilah
 lefilko
 
 3:18
-acharav | hecheziku | acheihem | Bavai | ben | Chenadad
+acharav | hecheziku | acheihem
+Bavai
+ben | Chenadad
 sar
 chatzi
 pelekh | Ke'ilah
 
 3:19
 vaychazek | al | yado | Ezer | ben | Yeshua | sar | Hamitzpah
-midah | shenit | mineged
-alot | haneshek
+midah | shenit | mineged | alot | haneshek
 hamiktzoa
 
 3:20
-acharav | hecherah | hechezik | Barukh | ben | Zakai | midah | shenit | min | hamiktzoa
-ad | petach | beit | Elyashiv
+acharav | hecherah | hechezik | Barukh | ben | Zakai
+midah | shenit | min | hamiktzoa | ad | petach | beit | Elyashiv
 hakohen
 hagadol
 
 3:21
 acharav | hechezik | Meremot | ben | Uriyah | ben | Hakotz
-midah | shenit | mipetach | beit | Elyashiv
-ve'ad | takhlit | beit | Elyashiv
+midah | shenit
+mipetach | beit | Elyashiv
+ve'ad | takhlit
+beit | Elyashiv
 
 3:22
 ve'acharav | hecheziku | hakohanim
 anshei | hakikar
 
 3:23
-acharav | hechezik | Binyamin | Vechashuv | neged | beitam
+acharav | hechezik | Binyamin | Vechashuv
+neged | beitam
 acharav | hechezik | Azaryah | ven | Ma'aseyah | ben | Ananeyah
 etzel | beito
 
 3:24
-acharav | hechezik | Binui | ben | Chenadad | midah | shenit | mibeit | Azaryah
+acharav | hechezik | Binui | ben | Chenadad
+midah | shenit | mibeit | Azaryah
 ad | hamiktzoa
 ve'ad | hapinah
 
@@ -171,8 +183,8 @@ vehamigdal
 haiyotze
 
 3:27
-acharav | hecheziku | hateko'im | midah | shenit
-mineged | hamigdal | hagadol | haiyotze
+acharav | hecheziku | hateko'im
+midah | shenit | mineged | hamigdal | hagadol | haiyotze
 ve'ad
 chomat | Ha'ofel
 
@@ -182,7 +194,8 @@ ish
 leneged | beito
 
 3:29
-acharav | hechezik | Tzadok | ben | Imer | neged | beito
+acharav | hechezik | Tzadok | ben | Imer
+neged | beito
 ve'acharav | hechezik | Shema'yah | ven | Shekhanyah
 shomer
 sha'ar | Hamizrach
@@ -190,8 +203,8 @@ sha'ar | Hamizrach
 3:30
 achareiv | hechezik | Chananyah | ven | Shelemyah | Vechanun | ben | Tzalaf | hashishi
 midah | sheni
-acharav | hechezik | Meshulam | ben | Berekhyah | neged
-nishkato
+acharav | hechezik | Meshulam | ben | Berekhyah
+neged | nishkato
 
 3:31
 achareiv | hechezik | Malkiyah | ben | hatzorefi
@@ -218,8 +231,7 @@ vaiyomer | lifnei | echav | vecheil | Shomeron
 vaiyomer
 mah | haiyehudim | ha'amelalim
 osim
-haya'azvu | lahem | hayizbachu | haykhalu | vaiyom
-haychaiyu | et | ha'avanim | me'aremot | he'afar
+haya'azvu | lahem | hayizbachu | haykhalu | vaiyom | haychaiyu | et | ha'avanim | me'aremot | he'afar
 vehemah | serufot
 
 3:35
@@ -238,7 +250,8 @@ utenem | levizah | be'eretz | shivyah
 
 3:37
 ve'al | tekhas | al | avonam
-vechatatam | milefaneikha | al | timacheh | ki | hikh'isu
+vechatatam | milefaneikha | al | timacheh
+ki | hikh'isu
 leneged | habonim
 
 3:38

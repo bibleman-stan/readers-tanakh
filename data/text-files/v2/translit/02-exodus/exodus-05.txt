@@ -1,7 +1,8 @@
 5:1
 ve'achar | ba'u | Mosheh | Ve'aharon
 vaiyomeru
-el | par'oh | koh | amar | Yahweh | elohei | Yisra'el
+el | par'oh
+koh | amar | Yahweh | elohei | Yisra'el
 shalach | et | ami
 veyachogu | li
 bamidbar
@@ -10,8 +11,10 @@ bamidbar
 vaiyomer | par'oh
 mi | Yahweh | asher | eshma | bekolo
 leshalach
-et | Yisra'el | lo | yada'ti | et | Yahweh
-vegam | et | Yisra'el | lo | ashaleach
+et | Yisra'el
+lo | yada'ti | et | Yahweh
+vegam | et | Yisra'el
+lo | ashaleach
 
 5:3
 vaiyomeru
@@ -23,8 +26,8 @@ o | vecharev
 
 5:4
 vaiyomer | alehem | melekh | Mitzrayim
-lamah | Mosheh | Ve'aharon
-tafri'u | et | ha'am | mima'asav | lekhu | lesivloteikhem
+lamah | Mosheh | Ve'aharon | tafri'u | et | ha'am
+mima'asav | lekhu | lesivloteikhem
 
 5:5
 vaiyomer | par'oh
@@ -48,8 +51,7 @@ teven
 5:8
 ve'et | matkonet | halevenim | asher | hem | osim | temol | shilshom | tasimu | aleihem
 lo | tigre'u
-mimenu
-ki | nirpim | hem
+mimenu | ki | nirpim | hem
 al | ken | hem | tzo'akim | lemor
 nelekhah
 nizbechah | leloheinu
@@ -69,7 +71,8 @@ teven
 
 5:11
 atem | lekhu | kechu | lakhem | teven | me'asher
-timtza'u | ki | ein | nigra | me'avodatkhem
+timtza'u
+ki | ein | nigra | me'avodatkhem
 davar
 
 5:12
@@ -80,7 +83,8 @@ lateven
 
 5:13
 vehanogesim
-atzim | lemor | kalu | ma'aseikhem | devar | yom | beyomo
+atzim | lemor
+kalu | ma'aseikhem | devar | yom | beyomo
 ka'asher | bihyot | hateven
 
 5:14
@@ -94,14 +98,15 @@ gam | haiyom
 5:15
 vaiyavo'u | shoterei | benei | Yisra'el
 vaiyitz'aku | el | par'oh
-lemor | lamah | ta'aseh | khoh | la'avadeikha
+lemor
+lamah | ta'aseh | khoh
+la'avadeikha
 
 5:16
 teven | ein | nitan | la'avadeikha
 ulevenim | omerim | lanu
 asu
-vehineh | avadeikha | mukim
-vechatat | amekha
+vehineh | avadeikha | mukim | vechatat | amekha
 
 5:17
 vaiyomer | nirpim | atem
@@ -118,12 +123,12 @@ titenu
 
 5:19
 vaiyir'u | shoterei | venei | Yisra'el | otam
-bera | lemor | lo | tigre'u | milivneikhem
-devar | yom | beyomo
+bera | lemor | lo | tigre'u | milivneikhem | devar | yom | beyomo
 
 5:20
 vaiyifge'u | et | Mosheh | ve'et | Aharon
-nitzavim | likratam | betzetam | me'et | par'oh
+nitzavim
+likratam | betzetam | me'et | par'oh
 
 5:21
 vaiyomeru | alehem

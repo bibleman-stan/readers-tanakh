@@ -23,8 +23,8 @@ sarid
 3:4
 vanilkod | et | kol | arav | ba'et | hahiv
 lo | hayetah | kiryah | asher | lo | lakachnu
-me'itam
-shishim | ir | kol | chevel | Argo | mamlekhet | Og | Babashan
+me'itam | shishim | ir | kol | chevel | Argo
+mamlekhet | Og | Babashan
 
 3:5
 kol | eleh | arim | betzurot | chomah | gevohah
@@ -32,7 +32,8 @@ delatayim | uveriach | levad | me'arei | haperazi
 harbeh | me'od
 
 3:6
-vanacharem | otam | ka'asher | asinu
+vanacharem | otam
+ka'asher | asinu
 Lesichon | melekh | Cheshbon
 hacharem | kol | ir | metim
 hanashim
@@ -43,7 +44,8 @@ vekhol | habehemah | ushelal | he'arim | bazonu | lanu
 
 3:8
 vanikach | ba'et | hahiv | et | ha'aretz | miyad | shenei | malkhei | ha'emori
-asher | be'ever | Haiyarden | minachal | Arnon
+asher | be'ever | Haiyarden
+minachal | Arnon
 ad | har | Chermon
 
 3:9
@@ -63,18 +65,22 @@ arei | mamlekhet | Og | Babashan
 ki | rak | Og | melekh | Habashan | Nish'ar | miyeter | harefa'im
 hineh | arso | eres | barzel
 haloh | hi | berabat | benei | Amon
-tesha | amot | arekah | ve'arba | amot | rachebah | be'amat | ish
+tesha | amot | arekah | ve'arba | amot | rachebah
+be'amat | ish
 
 3:12
-ve'et | ha'aretz | hazot | yarashnu | ba'et | hahiv
+ve'et | ha'aretz | hazot | yarashnu
+ba'et | hahiv
 Me'aro'er | asher | al | nachal | Arnon | vachatzi | har | Hagil'ad | ve'arav
-natati | laru'uveni | velagadi
+natati
+laru'uveni | velagadi
 
 3:13
 veyeter | Hagil'ad | vekhol | Habashan | mamlekhet | Og
 natati
 lachatzi
-shevet | hamnasheh | kol | chevel | Ha'argo | lekhol | Habashan
+shevet | hamnasheh
+kol | chevel | Ha'argo | lekhol | Habashan
 hahu | yikare
 eretz | refa'im
 
@@ -87,8 +93,7 @@ ad
 haiyom | hazeh
 
 3:15
-Ulemakhir
-natati | et | Hagil'ad
+Ulemakhir | natati | et | Hagil'ad
 
 3:16
 velaru'uveni | velagadi | natati | min | Hagil'ad | ve'ad | nachal | Arnon
@@ -100,17 +105,21 @@ gevul | benei | Amon
 3:17
 Veha'aravah
 Vehaiyarden | ugevul | Mikineret | ve'ad | yam | Ha'aravah | yam | hamelach
-tachat | ashdot | Hapisgah | mizrachah
+tachat | ashdot | Hapisgah
+mizrachah
 
 3:18
-va'atzav | etkhem | ba'et | hahiv
+va'atzav | etkhem
+ba'et | hahiv
 lemor
 Yahweh | eloheikhem | natan | lakhem | et | ha'aretz | hazot | lerishtah
-chalutzim | ta'avru | lifnei | acheikhem | benei | Yisra'el | kol | benei | chayil
+chalutzim | ta'avru | lifnei | acheikhem | benei | Yisra'el
+kol | benei | chayil
 
 3:19
 rak | nesheikhem | vetapekhem | umiknekhem
-yada'ti | ki | mikneh | rav | lakhem
+yada'ti
+ki | mikneh | rav | lakhem
 yeshevu | be'areikhem | asher | natati
 lakhem
 
@@ -130,8 +139,7 @@ ken | ya'aseh | Yahweh | lekhol | hamamlakhot | asher | atah
 over | shamah
 
 3:22
-lo
-tira'um | ki | Yahweh | eloheikhem
+lo | tira'um | ki | Yahweh | eloheikhem
 hu
 hanilcham | lakhem
 
@@ -162,12 +170,14 @@ badavar | hazeh
 
 3:27
 aleh | rosh | Hapisgah | vesa | eineikha | yamah | vetzafonah | veteimanah | umizrachah
-ure'eh | ve'eineikha | ki | lo | ta'avor
+ure'eh | ve'eineikha
+ki | lo | ta'avor
 et | Haiyarden | hazeh
 
 3:28
 vetzav | et | Yehoshua
-vechazekehu | ve'ametzehu | ki | hu | ya'avor | lifnei | ha'am | hazeh
+vechazekehu | ve'ametzehu
+ki | hu | ya'avor | lifnei | ha'am | hazeh
 vehu | yanchil | otam
 et | ha'aretz | asher | tir'eh
 

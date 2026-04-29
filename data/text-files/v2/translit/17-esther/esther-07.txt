@@ -18,7 +18,8 @@ tinaten | li | nafshi | bish'elati
 ve'ami | bevakashati
 
 7:4
-ki | Nimkarnu | ani | ve'ami | lehashmid | laharog | ule'abed
+ki | Nimkarnu | ani | ve'ami
+lehashmid | laharog | ule'abed
 ve'ilu | la'avadim | velishfachot | Nimkarnu | hecherashti
 ki | ein | hatzar | shoveh | benezek | hamelekh
 
@@ -32,9 +33,9 @@ la'asot | ken
 7:6
 vatomer | Ester
 ish | tzar | ve'oyev
-Haman | hara
-hazeh
-Vehaman | Niv'at | milifnei | hamelekh
+Haman | hara | hazeh
+Vehaman | Niv'at
+milifnei | hamelekh
 vehamalkah
 
 7:7
@@ -43,7 +44,8 @@ el | ginat
 habitan
 Vehaman | amad | levakesh | al | nafsho | Me'ester | hamalkah
 ki | ra'ah
-ki | khaltah | elav | hara'ah | me'et | hamelekh
+ki | khaltah | elav | hara'ah
+me'et | hamelekh
 
 7:8
 vehamelekh | shav | miginat | habitan | el | beit | mishteh | haiyayin | Vehaman | nofel

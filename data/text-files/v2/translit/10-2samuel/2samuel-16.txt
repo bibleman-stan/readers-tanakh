@@ -1,7 +1,6 @@
 16:1
 Vedavid | avar | me'at | meharosh
-vehineh | Tziva | na'ar | Mefi | Voshet
-likrato
+vehineh | Tziva | na'ar | Mefi | Voshet | likrato
 vetzemed | chamorim | chavushim | va'aleihem | matayim | lechem | ume'ah | tzimukim | ume'ah | kayitz
 venevel | yayin
 
@@ -14,15 +13,17 @@ lishtot | haiya'ef | bamidbar
 
 16:3
 vaiyomer | hamelekh
-ve'aiyeh | ben | adoneikha
+ve'aiyeh
+ben | adoneikha
 vaiyomer | Tziva | el | hamelekh | hineh | yoshev | Birushalim
 ki | amar
-haiyom | yashivu | li | beit | Yisra'el
-et | mamlekhut | avi
+haiyom | yashivu | li | beit | Yisra'el | et
+mamlekhut | avi
 
 16:4
 vaiyomer | hamelekh | Letziva
-hineh | lekha | kol | asher | Limfi | Voshet
+hineh | lekha
+kol | asher | Limfi | Voshet
 vaiyomer | Tziva | hishtachaveiti
 emtza | chen | be'eineikha
 adoni | hamelekh
@@ -48,9 +49,9 @@ ve'ish | habeliya'al
 16:8
 heshiv | aleikha | Yahweh | kol | demei | veit | Sha'ul | asher | malakhta | tachto
 vaiyiten | Yahweh | et | hamelukhah
-beyad
-Avshalom | benekha
-vehinekha | bera'atekha | ki | ish | damim
+beyad | Avshalom | benekha
+vehinekha | bera'atekha
+ki | ish | damim
 atah
 
 16:9
@@ -65,8 +66,7 @@ ve'asirah | et | rosho
 vaiyomer | hamelekh
 mah | li | velakhem | benei | Tzeruyah
 ki | yekalel | vekhi | Yahweh | amar | lo | kalel | et | David
-umi | yomar | madua
-asitah | ken
+umi | yomar | madua | asitah | ken
 
 16:11
 vaiyomer | David | el | Avishai | ve'el | kol | avadav
@@ -76,8 +76,10 @@ ki | amar | lo
 Yahweh
 
 16:12
-ulai | yir'eh | Yahweh | be'oni
-veheshiv | Yahweh | li | tovah | tachat | kilato
+ulai | yir'eh | Yahweh
+be'oni
+veheshiv | Yahweh | li | tovah
+tachat | kilato
 haiyom | hazeh
 
 16:13
@@ -94,8 +96,8 @@ vaiyinafesh
 sham
 
 16:15
-Ve'avshalom | vekhol | ha'am | ish | Yisra'el | ba'u
-Yerushalim
+Ve'avshalom | vekhol | ha'am | ish | Yisra'el
+ba'u | Yerushalim
 Va'achitofel
 ito
 
@@ -114,14 +116,18 @@ et | re'ekha
 
 16:18
 vaiyomer | Chushai | el | Avshalom
-lo | ki | asher | bachar | Yahweh | veha'am | hazeh
-vekhol | ish | Yisra'el | lo | ehyeh
+lo
+ki | asher | bachar | Yahweh | veha'am | hazeh
+vekhol | ish | Yisra'el
+lo | ehyeh
 ve'ito | eshev
 
 16:19
 vehashenit | lemi | ani | e'evod
 halo
-lifnei | veno | ka'asher | avadti | lifnei | avikha | ken
+lifnei | veno
+ka'asher | avadti | lifnei | avikha
+ken
 ehyeh | lifaneikha
 
 16:20
@@ -135,16 +141,20 @@ bo | el | pilagshei | avikha | asher | hiniach
 lishmor | habayit
 veshama | kol | Yisra'el | ki | Niv'ashta | et | avikha
 vechazeku
-yedei | kol | asher | itakh
+yedei
+kol | asher | itakh
 
 16:22
 vaiyatu | Le'avshalom | ha'ohel
 al | hagag
 vaiyavo | Avshalom | el | pilagshei | aviv
-le'einei | kol | Yisra'el
+le'einei
+kol | Yisra'el
 
 16:23
 va'atzat | Achitofel | asher | ya'atz | baiyamim | hahem
-ka'asher | [—] | yish'al-ish | bidvar | ha'elohim | ken | kol | atzat | Achitofel
+ka'asher | [—] | yish'al-ish
+bidvar | ha'elohim
+ken | kol | atzat | Achitofel
 gam | Ledavid
 gam | Le'avshalom

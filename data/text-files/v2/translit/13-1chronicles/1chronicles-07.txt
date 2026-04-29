@@ -8,14 +8,15 @@ giborei | chayil | letoledotam | misparam | bimei | David
 esrim | ushenayim | elef | veshesh | me'ot
 
 7:3
-uvenei | Uzi
-Yizrachyah
+uvenei | Uzi | Yizrachyah
 uvenei | Yizrachyah | Mikha'el | Ve'oadyah | Veyo'el | Yishiyah | chamishah | rashim | kulam
 
 7:4
 va'aleihem | letoledotam | leveit | avotam | gedudei | tzeva | milchamah
 sheloshim | veshishah
-alef | ki | hirbu | nashim | uvanim
+alef
+ki | hirbu | nashim
+uvanim
 
 7:5
 va'acheihem | lekhol | mishpechot | Yisoshkhar
@@ -37,7 +38,8 @@ ve'arba'ah
 7:8
 uvenei | Vekher | Zemirah | Veyo'ash | Ve'eli'ezer | Ve'elyo'einai | Ve'ameri | Viremot | Va'aviyah
 Va'anatot
-Ve'alamet | kol | eleh | benei | Vakher
+Ve'alamet
+kol | eleh | benei | Vakher
 
 7:9
 vehityachsam | letoledotam | rashei | beit | avotam
@@ -47,7 +49,8 @@ esrim | elef | umatayim
 
 7:10
 uvenei | Yedi'a'el
-Bilhan | uvenei | Vilhan | Ye'ush | Uvinyamin | Ve'ehud | Ukhena'anah | Vezeitan
+Bilhan
+uvenei | Vilhan | Ye'ush | Uvinyamin | Ve'ehud | Ukhena'anah | Vezeitan
 Vetarshish
 Va'achishachar
 
@@ -67,8 +70,7 @@ benei | Naftali | Yachatzi'el | Veguni | Veyetzer | Veshalum
 benei | Vilhah
 
 7:14
-benei | Menasheh
-Asri'el | asher | yaladah
+benei | Menasheh | Asri'el | asher | yaladah
 pilagsho | ha'aramiyah
 yaldah
 et | Makhir
@@ -89,8 +91,11 @@ Sharesh | uvanav
 Ulam | Varakem
 
 7:17
-uvenei | Ulam | Bedan
-eleh | benei | Gil'ad | ben | Makhir | ben | Menasheh
+uvenei | Ulam
+Bedan
+eleh | benei | Gil'ad
+ben | Makhir
+ben | Menasheh
 
 7:18
 va'achoto
@@ -101,8 +106,8 @@ ve'et | Machlah
 
 7:19
 vaiyihyu
-benei | Shemida
-Achyan | Vashekhem | Velikchi
+benei | Shemida | Achyan | Vashekhem
+Velikchi
 Va'ani'am
 
 7:20
@@ -114,7 +119,8 @@ Vetachat | beno
 7:21
 Vezavad | beno | Veshutelach | beno
 Ve'ezer | Ve'el'ad
-vaharagum | anshei | Gat | hanoladim | ba'aretz | ki | yaredu
+vaharagum | anshei | Gat | hanoladim | ba'aretz
+ki | yaredu
 lakachat
 et | mikneihem
 
@@ -144,8 +150,7 @@ Verefach | beno | Vereshef | beno | Vetelach | beno
 Vetachan | beno
 
 7:26
-La'dan | beno | Amihud | beno
-Elishama | beno
+La'dan | beno | Amihud | beno | Elishama | beno
 
 7:27
 Non | beno
@@ -153,12 +158,17 @@ Yehoshua | beno
 
 7:28
 va'achuzatam | umoshevotam | Beit | El | uvenoteiha
-velamizrach | Na'aran | velama'arav | Gezer | uvenoteiha | Ushekhem | uvenoteiha
+velamizrach | Na'aran
+velama'arav | Gezer | uvenoteiha | Ushekhem | uvenoteiha
 ad | Aiyah | uvenoteiha
 
 7:29
-ve'al | yedei | venei | Menasheh | Beit | She'an | uvenoteiha | Ta'nakh | uvenoteiha | Megido | uvenoteiha
-Dor | uvenoteiha | be'eleh | yashevu | benei | Yosef | ben | Yisra'el
+ve'al | yedei | venei | Menasheh | Beit | She'an | uvenoteiha | Ta'nakh | uvenoteiha
+Megido | uvenoteiha
+Dor | uvenoteiha
+be'eleh | yashevu
+benei | Yosef
+ben | Yisra'el
 
 7:30
 benei | Asher | Yimnah | Veyishvah | Veyishvi | Uveri'ah
@@ -181,7 +191,8 @@ Shu'a | achotam
 uvenei | Yaflet
 Pasakh | Uvimhal
 Ve'ashvat
-eleh | benei | Yaflet
+eleh
+benei | Yaflet
 
 7:34
 uvenei
@@ -206,9 +217,7 @@ Betzer | Vahod | Veshama | Veshilshah | Veyitran
 Uve'era
 
 7:38
-uvenei
-Yeter
-Yefuneh | Ufispah
+uvenei | Yeter | Yefuneh | Ufispah
 Va'ra
 
 7:39
@@ -221,6 +230,7 @@ Veritzya
 kol | eleh | venei | Asher | rashei | veit | ha'avot | berurim | giborei | chayalim
 rashei
 hanesi'im
-vehityachsam | batzava | bamilchamah | misparam | anashim
+vehityachsam | batzava | bamilchamah
+misparam | anashim
 esrim | veshishah
 alef

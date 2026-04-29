@@ -8,11 +8,13 @@ le'olam
 
 2:2
 ve'atem | lo | tikhretu | verit | leyoshevei | ha'aretz | hazot | mizbechoteihem
-titotzun | velo | shema'tem | bekoli | mah | zot | asitem
+titotzun
+velo | shema'tem | bekoli | mah | zot | asitem
 
 2:3
-vegam | amarti | lo | agaresh | otam | mipeneikhem
-vehayu | lakhem | letzidim
+vegam | amarti
+lo | agaresh | otam
+mipeneikhem | vehayu | lakhem | letzidim
 veloheihem
 yihyu | lakhem
 lemokesh
@@ -37,20 +39,22 @@ lareshet | et | ha'aretz
 
 2:7
 vaiya'avdu | ha'am | et | Yahweh
-kol
-yemei | Yehoshua
+kol | yemei | Yehoshua
 vekhol | yemei | hazekenim | asher | he'erikhu | yamim | acharei | Yehoshua
 asher | ra'u | et | kol | ma'aseh | Yahweh | hagadol | asher | asah
 Leyisra'el
 
 2:8
 vaiyamot | Yehoshua | bin | Nun
-eved | Yahweh | ben | me'ah | va'eser
+eved | Yahweh
+ben | me'ah | va'eser
 shanim
 
 2:9
 vaiyikberu | oto | bigvul | nachalato
-Betimnat | Cheres | behar | Efrayim | mitzefon | lehar | Ga'ash
+Betimnat | Cheres
+behar | Efrayim
+mitzefon | lehar | Ga'ash
 
 2:10
 vegam | kol | hador | hahu
@@ -62,7 +66,8 @@ Leyisra'el
 
 2:11
 vaiya'asu | venei | Yisra'el | et | hara
-be'einei | Yahweh | vaiya'avdu
+be'einei | Yahweh
+vaiya'avdu
 et | habe'alim
 
 2:12
@@ -92,8 +97,7 @@ lifnei | oyveihem
 bekhol | asher | yatze'u | yad | Yahweh | hayetah | bam | lera'ah
 ka'asher | diber | Yahweh
 vekha'asher | Nishba | Yahweh
-lahem
-vaiyetzer | lahem
+lahem | vaiyetzer | lahem
 me'od
 
 2:16
@@ -114,8 +118,8 @@ lo | asu | khen
 2:18
 vekhi | hekim | Yahweh | lahem | shofetim
 vehayah | Yahweh | im | hashofet
-vehoshi'am | miyad | oyeveihem | kol
-yemei | hashofet
+vehoshi'am | miyad | oyeveihem
+kol | yemei | hashofet
 ki | yinachem | Yahweh | mina'akatam
 mipenei | lochatzeihem
 vedochakeihem
@@ -130,12 +134,11 @@ hakashah
 vaiyichar | af | Yahweh
 Beyisra'el
 vaiyomer | ya'an | asher | averu | hagoy | hazeh | et | beriti | asher | tziviti | et | avotam
-velo | shame'u
-lekoli
+velo | shame'u | lekoli
 
 2:21
-gam | ani | lo | osif | lehorish | ish | mipeneihem
-min | hagoyim | asher | azav | Yehoshua
+gam | ani | lo | osif
+lehorish | ish | mipeneihem | min | hagoyim | asher | azav | Yehoshua
 vaiyamot
 
 2:22
@@ -146,4 +149,6 @@ im | lo
 
 2:23
 vaiyanach | Yahweh | et | hagoyim | ha'eleh
-levilti | horisham | maher | velo | netanam | beyad | Yehoshua
+levilti | horisham | maher
+velo | netanam
+beyad | Yehoshua

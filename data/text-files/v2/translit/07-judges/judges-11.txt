@@ -1,6 +1,7 @@
 11:1
 Veyiftach | hagil'adi | hayah | gibor | chayil
-vehu | ben | ishah | zonah
+vehu
+ben | ishah | zonah
 vaiyoled | Gil'ad
 et | Yiftach
 
@@ -61,7 +62,8 @@ lerosh
 vaiyomeru | ziknei | Gil'ad
 el | Yiftach
 Yahweh | yihyeh | shomea | beinoteinu
-im | lo | khidvarekha | ken | na'aseh
+im | lo | khidvarekha
+ken | na'aseh
 
 11:11
 vaiyelekh | Yiftach | im | ziknei | Gil'ad
@@ -73,13 +75,15 @@ Bamitzpah
 11:12
 vaiyishlach | Yiftach | mal'akhim
 el | melekh | benei | Amon
-lemor | mah | li | valakh | ki | vata | elai | lehilachem | be'artzi
+lemor | mah | li | valakh
+ki | vata | elai | lehilachem | be'artzi
 
 11:13
 vaiyomer | melekh | benei | Amon | el | mal'akhei | Yiftach | ki | lakach | Yisra'el | et | artzi | ba'aloto | Mimitzrayim
 Me'arnon | ve'ad | Haiyabok
 ve'ad | Haiyarden
-ve'atah | hashivah | ethen | beshalom
+ve'atah | hashivah | ethen
+beshalom
 
 11:14
 vaiyosef | od
@@ -109,7 +113,9 @@ Bekadesh
 vaiyelekh | bamidbar | vaiyasov | et | eretz | Edom | ve'et | eretz | Mo'av
 vaiyavo | mimizrach | shemesh | le'eretz | Mo'av
 vaiyachanun
-be'ever | Arnon | velo | va'u | bigvul | Mo'av | ki | Arnon
+be'ever | Arnon
+velo | va'u | bigvul | Mo'av
+ki | Arnon
 gevul | Mo'av
 
 11:19
@@ -139,8 +145,8 @@ kol | gevul | ha'emori | Me'arnon | ve'ad | Haiyabok | umin | hamidbar
 ve'ad | Haiyarden
 
 11:23
-ve'atah | Yahweh | elohei | Yisra'el | horish | et | ha'emori | mipenei
-amo | Yisra'el
+ve'atah | Yahweh | elohei | Yisra'el | horish | et | ha'emori
+mipenei | amo | Yisra'el
 ve'atah
 tirashenu
 
@@ -153,7 +159,8 @@ oto | nirash
 11:25
 ve'atah | hatov | tov | atah | Mibalak | ben | Tzipor | melekh | Mo'av
 harov | rav | im | Yisra'el
-im | nilchom | Nilcham | bam
+im | nilchom | Nilcham
+bam
 
 11:26
 beshevet | Yisra'el | Becheshbon | uvivnoteiha | Uve'ar'or | uvivnoteiha | uvekhol | he'arim | asher | al | yedei | Arnon
@@ -161,9 +168,9 @@ shelosh | me'ot | shanah | umadua | lo | hitzaltem | ba'et | hahi
 
 11:27
 ve'anokhi | lo | chatati | lakh
-ve'atah | oseh | iti | ra'ah
-lehilachem | bi
-yishpot | Yahweh | hashofet | haiyom | bein | benei | Yisra'el
+ve'atah | oseh | iti | ra'ah | lehilachem | bi
+yishpot | Yahweh | hashofet | haiyom
+bein | benei | Yisra'el
 uvein | benei | Amon
 
 11:28
@@ -200,14 +207,13 @@ beyado
 11:33
 vaiyakem | Me'aro'er | ve'ad | bo'akha | Minit | esrim | ir | ve'ad | Avel | Keramim
 makah
-gedolah | me'od
-vaiyikane'u | benei | Amon
+gedolah | me'od | vaiyikane'u | benei | Amon
 mipenei | benei | Yisra'el
 
 11:34
 vaiyavo | Yiftach | Hamitzpah | el | beito
-vehineh | vito | yotzet | likrato | vetupim
-uvimcholot
+vehineh | vito | yotzet | likrato
+vetupim | uvimcholot
 verak | hi | yechidah
 ein | lo | mimenu | ben
 ov | vat
@@ -216,7 +222,8 @@ ov | vat
 vayhi | khir'oto | otah | vaiyikra | et | begadav | vaiyomer | ahah | biti | hakhrea | hikhra'tini
 ve'at
 hayit | be'okherai
-ve'anokhi | patziti | fi | el | Yahweh | velo | ukhal
+ve'anokhi | patziti | fi | el | Yahweh
+velo | ukhal
 lashuv
 
 11:36
@@ -254,4 +261,5 @@ vatehi | chok | Beyisra'el
 miyamim | yamimah | telakhnah | benot | Yisra'el
 letanot | levat | Yiftach
 hagil'adi
-arba'at | yamim | bashanah
+arba'at | yamim
+bashanah

@@ -1,19 +1,21 @@
 14:1
 vayhi | bimei | Amrafel | melekh | Shin'ar
-Aryokh | melekh | Elasar | Kedarela'omer | melekh | Eilam
+Aryokh
+melekh | Elasar
+Kedarela'omer | melekh | Eilam
 Vetid'al | melekh | Goyim
 
 14:2
 asu | milchamah | et | Bera | melekh | Sedom
 ve'et | Birsha | melekh | Amorah
-Shin'av | melekh | Admah | Veshem'ever | melekh | Tzevoyim | umelekh | Bela
+Shin'av | melekh | Admah | Veshem'ever | melekh | Tzevoyim
+umelekh | Bela
 hi | Tzo'ar
 
 14:3
 kol | eleh | chaveru
 el | emek
-Hasidim
-hu
+Hasidim | hu
 yam | hamelach
 
 14:4
@@ -52,7 +54,8 @@ Hasidim
 14:9
 et | Kedarela'omer | melekh | Eilam | Vetid'al | melekh | Goyim
 Ve'amrafel | melekh | Shin'ar
-Ve'aryokh | melekh | Elasar
+Ve'aryokh
+melekh | Elasar
 arba'ah | melakhim
 et | hachamishah
 
@@ -70,8 +73,7 @@ vaiyelekhu
 14:12
 vaiyikchu | et | Lot | ve'et | rekhusho | ben | achi | Avram
 vaiyelekhu
-vehu | yoshev
-Bisdom
+vehu | yoshev | Bisdom
 
 14:13
 vaiyavo | hapalit
@@ -116,7 +118,8 @@ vehu | khohen | le'el | elyon
 14:19
 vayvarekhehu
 vaiyomar
-barukh | Avram | le'el | elyon | koneh
+barukh | Avram | le'el | elyon
+koneh
 shamayim | va'aretz
 
 14:20

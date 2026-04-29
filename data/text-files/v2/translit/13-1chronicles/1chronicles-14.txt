@@ -9,8 +9,8 @@ livnot | lo | bayit
 14:2
 vaiyeda | David
 ki | hekhino | Yahweh | lemelekh
-al | Yisra'el | ki | Niset | lema'lah | malkhuto | ba'avur
-amo | Yisra'el
+al | Yisra'el
+ki | Niset | lema'lah | malkhuto | ba'avur | amo | Yisra'el
 
 14:3
 vaiyikach | David | od | nashim
@@ -82,7 +82,8 @@ hasev | me'aleihem | uvata | lahem | mimul | habekha'im
 
 14:15
 vihi | keshame'akha | et | kol | hatze'adah | berashei | habekha'im
-az | tetze | vamilchamah | ki | yatza | ha'elohim | lefaneikha | lehakot
+az | tetze | vamilchamah
+ki | yatza | ha'elohim | lefaneikha | lehakot
 et | machaneh | felishtim
 
 14:16
@@ -90,8 +91,7 @@ vaiya'as | David
 ka'asher | tzivahu
 ha'elohim
 vaiyaku | et | machaneh | felishtim
-Migiv'on
-ve'ad | Gazerah
+Migiv'on | ve'ad | Gazerah
 
 14:17
 vaiyetze | shem | David

@@ -6,8 +6,7 @@ bamidbar | Ba'aravah | mol | Suf | bein | Paran | uvein | Tofel | Velavan | Vach
 Vedi | Zahav
 
 1:2
-achad | asar | yom | Mechorev
-derekh
+achad | asar | yom | Mechorev | derekh
 har | Se'ir
 ad
 Kadesh | Barnea
@@ -47,11 +46,11 @@ re'eh | natati | lifneikhem
 et | ha'aretz
 bo'u | ureshu | et | ha'aretz
 asher | Nishba | Yahweh | la'avoteikhem | Le'avraham | Leyitzchak | Uleya'ako | latet | lahem
-ulezar'am
-achareihem
+ulezar'am | achareihem
 
 1:9
-va'omar | alekhem | ba'et | hahiv
+va'omar | alekhem
+ba'et | hahiv
 lemor | lo | ukhal | levadi
 se'et | etkhem
 
@@ -99,13 +98,15 @@ bein | ish | uvein | achiv | uvein | gero
 
 1:17
 lo | takiru | fanim | bamishpat | kakaton | kagadol | tishma'un
-lo | taguru | mipenei | ish | ki | hamishpat | lelohim | hu
+lo | taguru | mipenei | ish
+ki | hamishpat | lelohim | hu
 vehadavar | asher | yiksheh | mikem
 takrivun | elai
 ushema'tiv
 
 1:18
-va'atzaveh | etkhem | ba'et | hahiv
+va'atzaveh | etkhem
+ba'et | hahiv
 et | kol | hadevarim | asher | ta'asun
 
 1:19
@@ -118,7 +119,8 @@ Kadesh | Barnea
 
 1:20
 va'omar
-alekhem | batem | ad | har | ha'emori
+alekhem
+batem | ad | har | ha'emori
 asher | Yahweh | eloheinu
 noten | lanu
 
@@ -165,11 +167,11 @@ noten | lanu
 velo | avitem
 la'alot
 vatamru
-et | pi | Yahweh
-eloheikhem
+et | pi | Yahweh | eloheikhem
 
 1:27
-vateragenu | ve'oholeikhem | vatomeru | besin'at | Yahweh | otanu
+vateragenu | ve'oholeikhem | vatomeru
+besin'at | Yahweh | otanu
 hotzi'anu | me'eretz | Mitzrayim | latet | otanu | beyad | ha'emori | lehashmidenu
 
 1:28
@@ -180,7 +182,8 @@ ra'inu | sham
 
 1:29
 va'omar
-alekhem | lo | ta'artzun | velo | tir'un | mehem
+alekhem
+lo | ta'artzun | velo | tir'un | mehem
 
 1:30
 Yahweh | eloheikhem | haholekh | lifneikhem
@@ -199,14 +202,13 @@ ad | hamakom | hazeh
 1:32
 uvadavar
 hazeh
-einekhem | ma'aminim | Bayahweh
-eloheikhem
+einekhem | ma'aminim
+Bayahweh | eloheikhem
 
 1:33
 haholekh | lifneikhem | baderekh | latur | lakhem | makom | lachanotekhem
 ba'esh | laylah | lar'otekhem | baderekh | asher | telekhu | vah
-uve'anan
-yomam
+uve'anan | yomam
 
 1:34
 vaiyishma | Yahweh
@@ -216,8 +218,7 @@ vaiyishava | lemor
 
 1:35
 im | yir'eh | ish | ba'anashim | ha'eleh
-hador | hara
-hazeh
+hador | hara | hazeh
 et | ha'aretz | hatovah | asher | Nishba'ti
 latet | la'avoteikhem
 
@@ -229,7 +230,8 @@ ya'an | asher | mile
 acharei | Yahweh
 
 1:37
-gam | bi | hit'anaf | Yahweh | biglalkhem
+gam | bi | hit'anaf | Yahweh
+biglalkhem
 lemor
 gam | atah
 lo | tavo | sham
@@ -238,7 +240,8 @@ lo | tavo | sham
 Yehoshua | bin | Nun | ha'omed | lefaneikha
 hu
 yavo | shamah
-oto | chazek | ki | hu
+oto | chazek
+ki | hu
 yanchilenah | et | Yisra'el
 
 1:39
@@ -257,20 +260,22 @@ derekh | yam | suf
 
 1:41
 vata'anu | vatomeru | elai | chatanu | Layahweh
-anachnu | na'aleh | venilchamnu | kekhol | asher | tzivanu
-Yahweh | eloheinu
-vatachgeru | ish | et | kelei | milchamto
-vatahinu
+anachnu | na'aleh | venilchamnu
+kekhol | asher | tzivanu | Yahweh | eloheinu
+vatachgeru | ish | et | kelei | milchamto | vatahinu
 la'alot | haharah
 
 1:42
 vaiyomer | Yahweh | elai | emor | lahem | lo | ta'alu | velo | tilachamu
-ki | eineni | bekirbekhem | velo | tinagefu
+ki | eineni
+bekirbekhem
+velo | tinagefu
 lifnei
 oyeveikhem
 
 1:43
-va'adaber | aleikhem | velo | shema'tem
+va'adaber | aleikhem
+velo | shema'tem
 vatamru | et | pi | Yahweh
 vatazidu
 vata'alu | haharah
@@ -285,9 +290,11 @@ ad | Charemah
 
 1:45
 vatashuvu | vativku
-lifnei | Yahweh | velo | shama | Yahweh | bekolekhem | velo | he'ezin
-aleikhem
+lifnei | Yahweh
+velo | shama | Yahweh | bekolekhem
+velo | he'ezin | aleikhem
 
 1:46
 vateshevu | Vekadesh
-yamim | rabim | kaiyamim | asher | yeshavtem
+yamim | rabim
+kaiyamim | asher | yeshavtem

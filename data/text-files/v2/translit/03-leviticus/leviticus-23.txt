@@ -11,12 +11,13 @@ eleh | hem | mo'adai
 
 23:3
 sheshet | yamim | te'aseh | melakhah
-uvaiyom | hashevi'i | shabat | shabaton | mikra | kodesh | kol | melakhah | lo | ta'asu
+uvaiyom | hashevi'i | shabat | shabaton | mikra | kodesh | kol | melakhah
+lo | ta'asu
 shabat | hi | Layahweh | bekhol | mooshevoteikhem
 
 23:4
-eleh | mo'adei | Yahweh | mikra'ei
-kodesh
+eleh | mo'adei | Yahweh
+mikra'ei | kodesh
 asher | tikre'u | otam | bemo'adam
 
 23:5
@@ -28,16 +29,19 @@ Layahweh
 uvachamishah | asar | yom | lachodesh | hazeh
 chag | hamatzot
 Layahweh
-shiv'at | yamim | matzot | tokhelu
+shiv'at | yamim
+matzot | tokhelu
 
 23:7
-baiyom | harishon | mikra | kodesh
-yihyeh | lakhem | kol | melekhet | avodah | lo | ta'asu
+baiyom | harishon | mikra | kodesh | yihyeh | lakhem
+kol | melekhet | avodah
+lo | ta'asu
 
 23:8
 vehikravtem | isheh | Layahweh
-shiv'at | yamim | baiyom | hashevi'i | mikra | kodesh
-kol | melekhet | avodah | lo | ta'asu
+shiv'at | yamim
+baiyom | hashevi'i | mikra | kodesh | kol | melekhet | avodah
+lo | ta'asu
 
 23:9
 vaydaber | Yahweh
@@ -52,13 +56,14 @@ vahavetem | et | omer | reshit | ketzirekhem
 el | hakohen
 
 23:11
-vehenif | et | ha'omer | lifnei | Yahweh | lirtzonekhem | mimochorat | hashabat
-yenifenu
+vehenif | et | ha'omer | lifnei | Yahweh
+lirtzonekhem | mimochorat | hashabat | yenifenu
 hakohen
 
 23:12
 va'asitem | beyom | hanifkhem
-et | ha'omer | keves | tamim | ben | shenato | le'olah
+et | ha'omer
+keves | tamim | ben | shenato | le'olah
 Layahweh
 
 23:13
@@ -92,7 +97,8 @@ Layahweh
 mimoshevoteikhem | tavi''u | lechem | tenufah | shetayim | shenei | esronim
 solet | tihyeinah
 chametz
-te'afeinah | bikurim
+te'afeinah
+bikurim
 Layahweh
 
 23:18
@@ -116,12 +122,14 @@ lakohen
 
 23:21
 ukeratem | be'etzem | haiyom | hazeh | mikra | kodesh | yihyeh | lakhem
-kol | melekhet | avodah | lo | ta'asu
+kol | melekhet | avodah
+lo | ta'asu
 chukat | olam | bekhol | moshevoteikhem | ledoroteikhem
 
 23:22
 uvekutzrekhem | et | ketzir | artzekhem | lo | tekhaleh | pe'at | sadekha | bekutzrecha
-veleket | ketzirecha | lo | telaket
+veleket | ketzirecha
+lo | telaket
 le'ani | velager | ta'azo | otam
 ani
 Yahweh | eloheikhem
@@ -132,11 +140,14 @@ el | Mosheh | lemor
 
 23:24
 daber | el | benei | Yisra'el
-lemor | bachodesh | hashevi'i | be'echad | lachodesh | yihyeh | lakhem | shabaton
-zikhron | teru'ah | mikra | kodesh
+lemor
+bachodesh | hashevi'i | be'echad | lachodesh | yihyeh | lakhem | shabaton
+zikhron | teru'ah
+mikra | kodesh
 
 23:25
-kol | melekhet | avodah | lo | ta'asu
+kol | melekhet | avodah
+lo | ta'asu
 vehikravtem | isheh
 Layahweh
 
@@ -152,8 +163,10 @@ vehikravtem | isheh
 Layahweh
 
 23:28
-vekhol | melakhah | lo | ta'asu | be'etzem
-haiyom | hazeh | ki | yom | kipurim | hu
+vekhol | melakhah | lo | ta'asu
+be'etzem
+haiyom | hazeh
+ki | yom | kipurim | hu
 lekhaper | aleikhem
 lifnei
 Yahweh | eloheikhem
@@ -171,13 +184,15 @@ haiyom | hazeh
 veha'avadti | et | hanefesh | hahiv | mikerev | amah
 
 23:31
-kol | melakhah | lo | ta'asu
+kol | melakhah
+lo | ta'asu
 chukat | olam | ledoroteikhem | bekhol | moshevoteikhem
 
 23:32
 shabat | shabaton | hu | lakhem
 ve'initem
-et | nafshoteikhem | betish'ah | lachodesh | ba'erev | me'erev | ad | erev
+et | nafshoteikhem
+betish'ah | lachodesh | ba'erev | me'erev | ad | erev
 tishbetu
 shabatekhem
 
@@ -192,14 +207,16 @@ chag | hasukot | shiv'at | yamim
 Layahweh
 
 23:35
-baiyom | harishon | mikra | kodesh | kol | melekhet | avodah | lo | ta'asu
+baiyom | harishon | mikra | kodesh | kol | melekhet | avodah
+lo | ta'asu
 
 23:36
 shiv'at | yamim
 takrivu | isheh
 Layahweh
 baiyom | hashemini | mikra | kodesh | yihyeh | lakhem | vehikravtem | isheh | Layahweh | atzeret | hi
-kol | melekhet | avodah | lo | ta'asu
+kol | melekhet | avodah
+lo | ta'asu
 
 23:37
 eleh | mo'adei | Yahweh
@@ -208,15 +225,15 @@ lehakriv | isheh | Layahweh | olah | uminchah | zevach | unesakhim
 devar | yom | beyomo
 
 23:38
-milevad
-shabetot | Yahweh | umilevad | matenoteikhem | umilevad | kol | nidreikhem | umilevad | kol | nidvoteikhem
-asher | titenu
+milevad | shabetot | Yahweh
+umilevad | matenoteikhem | umilevad | kol | nidreikhem | umilevad | kol | nidvoteikhem | asher | titenu
 Layahweh
 
 23:39
 akh | bachamishah | asar | yom | lachodesh | hashevi'i | be'aspekhem | et | tevu'at | ha'aretz
 tachogu | et | chag | Yahweh
-shiv'at | yamim | baiyom | harishon | shabaton | uvaiyom | hashemini
+shiv'at | yamim
+baiyom | harishon | shabaton | uvaiyom | hashemini
 shabaton
 
 23:40
@@ -228,18 +245,21 @@ shiv'at | yamim
 
 23:41
 vechagotem | oto | chag | Layahweh
-shiv'at | yamim | bashanah
-chukat | olam | ledoroteikhem | bachodesh | hashevi'i
+shiv'at | yamim
+bashanah | chukat | olam | ledoroteikhem | bachodesh | hashevi'i
 tachogu | oto
 
 23:42
-basukot | teshevu
-shiv'at | yamim | kol | ha'ezrach | Beyisra'el
-yeshevu | basukot
+basukot | teshevu | shiv'at | yamim
+kol | ha'ezrach | Beyisra'el
+yeshevu
+basukot
 
 23:43
-lema'an | yede'u | doroteikhem | ki | vasukot | hoshavti | et | benei | Yisra'el
-behotzi'i | otam | me'eretz | Mitzrayim
+lema'an | yede'u | doroteikhem
+ki | vasukot | hoshavti | et | benei | Yisra'el
+behotzi'i | otam
+me'eretz | Mitzrayim
 ani
 Yahweh | eloheikhem
 

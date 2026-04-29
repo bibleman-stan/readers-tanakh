@@ -5,15 +5,15 @@ el | Mosheh | lemor
 15:2
 daber | el | benei | Yisra'el
 ve'amarta
-alehem | ki | tavo'u | el | eretz | moshevoteikhem | asher | ani
+alehem
+ki | tavo'u | el | eretz | moshevoteikhem | asher | ani
 noten | lakhem
 
 15:3
-va'asitem | isheh | Layahweh | olah | ov | zevach
-lefale | neder | o | vindavah
+va'asitem | isheh | Layahweh | olah | ov | zevach | lefale | neder | o | vindavah
 o | bemo'adeikhem
-la'asot | reiach | nichoach | Layahweh | min | habakar
-o | min | hatzon
+la'asot | reiach | nichoach | Layahweh
+min | habakar | o | min | hatzon
 
 15:4
 vehikriv | hamakriv | karebano
@@ -41,13 +41,11 @@ Layahweh
 
 15:8
 vekhi | ta'aseh | ven | bakar
-olah | ov | zavach
-lefale | neder | ov | shelamim
+olah | ov | zavach | lefale | neder | ov | shelamim
 Layahweh
 
 15:9
-vehikriv | al | ben | habakar | minchah
-solet
+vehikriv | al | ben | habakar | minchah | solet
 sheloshah | esronim | balul | bashemen
 chatzi | hahin
 
@@ -65,8 +63,8 @@ ov | laseh | vakevasim
 o | va'izim
 
 15:12
-kamispar | asher | ta'asu
-kakhah | ta'asu | la'echad | kemisparam
+kamispar | asher | ta'asu | kakhah | ta'asu | la'echad
+kemisparam
 
 15:13
 kol | ha'ezrach | ya'aseh | kakhah
@@ -76,16 +74,21 @@ Layahweh
 15:14
 vekhi | yagur | itekhem | ger | o | asher | betokhkhem | ledoroteikhem
 ve'asah | isheh | reiach | nichoach
-Layahweh | ka'asher | ta'asu | ken | ya'aseh
+Layahweh
+ka'asher | ta'asu
+ken | ya'aseh
 
 15:15
 hakahal
 chukah | achat | lakhem | velager | hagar
-chukat | olam | ledoroteikhem | kakhem | kager | yihyeh
+chukat | olam | ledoroteikhem
+kakhem | kager | yihyeh
 lifnei | Yahweh
 
 15:16
-torah | achat | umishpat | echad | yihyeh | lakhem | velager
+torah | achat | umishpat | echad
+yihyeh | lakhem
+velager
 hagar | itekhem
 
 15:17
@@ -95,7 +98,8 @@ el | Mosheh | lemor
 15:18
 daber | el | benei | Yisra'el
 ve'amarta
-alehem | bevo'akhem | el | ha'aretz | asher | ani | mevi | etkhem
+alehem
+bevo'akhem | el | ha'aretz | asher | ani | mevi | etkhem
 shamah
 
 15:19
@@ -106,17 +110,18 @@ Layahweh
 15:20
 reshit | arisotekhem
 chalah
-tarimu | terumah | kitrumat | goren | ken
+tarimu | terumah
+kitrumat | goren
+ken
 tarimu | otah
 
 15:21
-mereshit | arisoteikhem
-titenu | Layahweh
-terumah | ledoroteikhem
+mereshit | arisoteikhem | titenu | Layahweh | terumah
+ledoroteikhem
 
 15:22
-vekhi | tishgu | velo | ta'asu
-et | kol | hamitzvot
+vekhi | tishgu
+velo | ta'asu | et | kol | hamitzvot
 ha'eleh
 asher | diber | Yahweh
 el | Mosheh
@@ -141,11 +146,14 @@ vehem | hevi'u | et | karebanam | isheh | Layahweh | vechatatam | lifnei | Yahwe
 al | shigatam
 
 15:26
-venislach | lekhol | adat | benei | Yisra'el | velager
-hagar | betokham | ki | lekhol | ha'am | bishgagah
+venislach | lekhol | adat | benei | Yisra'el
+velager
+hagar | betokham
+ki | lekhol | ha'am | bishgagah
 
 15:27
-ve'im | nefesh | achat | techeta | vishgagah
+ve'im | nefesh | achat
+techeta | vishgagah
 vehikrivah | ez | bat | shenatah
 lechatat
 
@@ -156,7 +164,8 @@ lekhaper | alav
 venislach | lo
 
 15:29
-ha'ezrach | bivnei | Yisra'el | velager
+ha'ezrach | bivnei | Yisra'el
+velager
 hagar | betokham
 torah | achat | yihyeh | lakhem
 la'oseh | bishgagah
@@ -164,8 +173,7 @@ la'oseh | bishgagah
 15:30
 vehanefesh | asher | ta'aseh | beyad | ramah | min | ha'ezrach | umin | hager
 et | Yahweh
-hu | megadef
-venikhretah | hanefesh | hahiv | mikerev | amah
+hu | megadef | venikhretah | hanefesh | hahiv | mikerev | amah
 
 15:31
 ki | devar | Yahweh | bazah
@@ -183,11 +191,13 @@ beyom | hashabat
 vaiyakrivu | oto
 hamotze'im | oto | mekoshesh | etzim
 el | Mosheh | ve'el | Aharon
-ve'el | kol | ha'edah
+ve'el
+kol | ha'edah
 
 15:34
 vaiyanichu | oto
-bamishmar | ki | lo | forash | mah | ye'aseh | lo
+bamishmar
+ki | lo | forash | mah | ye'aseh | lo
 
 15:35
 vaiyomer | Yahweh | el | Mosheh
@@ -218,7 +228,8 @@ petil | tekhelet
 vehayah | lakhem | letzitzit
 ure'item | oto | uzekhartem | et | kol | mitzvot | Yahweh
 va'asitem
-otam | velo | taturu | acharei | levavkhem | ve'acharei | eineikhem
+otam
+velo | taturu | acharei | levavkhem | ve'acharei | eineikhem
 asher | atem | zonim
 achareihem
 

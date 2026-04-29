@@ -5,15 +5,12 @@ ba'u | me'eretz | Kena'an
 vehinam | be'eretz | Goshen
 
 47:2
-umiktzeh | echav | lakach
-chamishah | anashim
-vaiyatzigem
+umiktzeh | echav | lakach | chamishah | anashim | vaiyatzigem
 lifnei | far'oh
 
 47:3
 vaiyomer | par'oh | el | echav
-mah | ma'aseikhem
-vaiyomeru | el | par'oh | ro'eh | tzon | avadeikha
+mah | ma'aseikhem | vaiyomeru | el | par'oh | ro'eh | tzon | avadeikha
 gam | anachnu
 gam | avoteinu
 
@@ -21,13 +18,15 @@ gam | avoteinu
 vaiyomeru | el | par'oh | lagur | ba'aretz | banu
 ki | ein | mir'eh | latzon | asher | la'avadeikha
 ki | khaved | hara'av | be'eretz | Kena'an
-ve'atah | yeshevu | na | avadeikha | be'eretz | Goshen
+ve'atah | yeshevu | na | avadeikha
+be'eretz | Goshen
 
 47:5
 vaiyomer | par'oh
 el | Yosef
 lemor
-avikha | ve'acheikha | ba'u | eleikha
+avikha | ve'acheikha
+ba'u | eleikha
 
 47:6
 eretz | Mitzrayim | lefaneikha | hi | bemeitav | ha'aretz
@@ -35,8 +34,7 @@ hoshev | et | avikha
 ve'et | acheikha
 yeshevu | be'eretz | Goshen
 ve'im | yada'ta | veyesh | bam | anshei | chayil
-vesamtam | sarei | mikneh
-al | asher | li
+vesamtam | sarei | mikneh | al | asher | li
 
 47:7
 vaiyave | Yosef | et | Ya'ako | aviv
@@ -52,10 +50,10 @@ shenei | chaiyeikha
 
 47:9
 vaiyomer | Ya'ako | el | par'oh
-yemei | shenei | megurai
-sheloshim | ume'at
+yemei | shenei | megurai | sheloshim | ume'at
 shanah | me'at | vera'im | hayu | yemei | shenei | chaiyai
-velo | hisigu | et | yemei | shenei | chaiyei | avotai | bimei | megureihem
+velo | hisigu | et | yemei | shenei | chaiyei | avotai
+bimei | megureihem
 
 47:10
 vayvarekh | Ya'ako
@@ -71,11 +69,13 @@ tzivah | far'oh
 
 47:12
 vaykhalkel | Yosef | et | aviv | ve'et | echav
-ve'et | kol | beit | aviv | lechem | lefi | hataf
+ve'et
+kol | beit | aviv
+lechem | lefi | hataf
 
 47:13
-velechem | ein | bekhol | ha'aretz | ki | khaved | hara'av | me'od
-vatelah | eretz | Mitzrayim | ve'eretz | Kena'an | mipenei
+velechem | ein | bekhol | ha'aretz
+ki | khaved | hara'av | me'od | vatelah | eretz | Mitzrayim | ve'eretz | Kena'an | mipenei
 hara'av
 
 47:14
@@ -89,7 +89,8 @@ beitah | far'oh
 vaiyitom | hakesef | me'eretz | Mitzrayim | ume'eretz | Kena'an
 vaiyavo'u | khol | Mitzrayim | el | Yosef | lemor | havah | lanu | lechem
 velamah | namut
-negdekha | ki | afes | kasef
+negdekha
+ki | afes | kasef
 
 47:16
 vaiyomer | Yosef | havu | mikneikhem
@@ -100,26 +101,29 @@ im | afes | kasef
 vaiyavi'u | et | mikneihem | el | Yosef
 vaiyiten | lahem | Yosef | lechem | basusim | uvemikneh | hatzon | uvemikneh | habakar
 uvachamorim | vaynahalem | balechem | bekhol | miknehem
-bashanah
-hahiv
+bashanah | hahiv
 
 47:18
 vatitom | hashanah | hahiv
 vaiyavo'u | elav | bashanah | hashenit | vaiyomeru | lo | lo | nekhached | me'adoni
 ki | im | tam | hakesef | umikneh | habehemah
-el | adoni | lo | Nish'ar | lifnei | adoni | bilti | im | geviyatenu
+el | adoni
+lo | Nish'ar | lifnei | adoni
+bilti | im | geviyatenu
 ve'admatenu
 
 47:19
 lamah | namut | le'eineikha | gam | anachnu | gam | admatenu
-keneh | otanu | ve'et | admatenu | balachem
+keneh | otanu | ve'et | admatenu
+balachem
 venihyeh | anachnu | ve'admatenu | avadim | lefar'oh
 veten | zera | venichyeh | velo | namut
 veha'adamah | lo | tesham
 
 47:20
 vaiyiken | Yosef | et | kol | admat | Mitzrayim | lefar'oh
-ki | makheru | Mitzrayim | ish | sadehu | ki | chazak | alehem
+ki | makheru | Mitzrayim | ish | sadehu
+ki | chazak | alehem
 hara'av
 vatehi | ha'aretz
 lefar'oh
@@ -135,8 +139,7 @@ ve'ad | katzehu
 rak | admat | hakohanim
 lo | kanah
 ki | chok | lakohanim | me'et | par'oh | ve'akhelu | et | chukam | asher | natan | lahem | par'oh
-al | ken | lo | makheru
-et | admatam
+al | ken | lo | makheru | et | admatam
 
 47:23
 vaiyomer | Yosef | el | ha'am
@@ -183,14 +186,15 @@ shanah
 47:29
 vaiyikrevu | yemei | Yisra'el | lamut
 vaiyikra | livno | Leyosef | vaiyomer | lo | im | na | matzati | chen | be'eineikha
-sim | na | yadekha | tachat | yerekhi
+sim | na | yadekha
+tachat | yerekhi
 ve'asita | imadi | chesed | ve'emet
-al | na | tikbereni | Bemitzrayim
+al | na | tikbereni
+Bemitzrayim
 
 47:30
 veshakhavti | im | avotai
-unesatani | Mimitzrayim
-ukevartani | bikvuratam
+unesatani | Mimitzrayim | ukevartani | bikvuratam
 vaiyomar
 anokhi
 e'eseh | khidvarekha

@@ -6,16 +6,15 @@ verashei | avot | hamatot
 livnei | Yisra'el
 
 14:2
-begoral
-nachalatam
-ka'asher | tzivah | Yahweh | beyad | Mosheh
+begoral | nachalatam | ka'asher | tzivah | Yahweh | beyad | Mosheh
 letish'at | hamatot
 vachatzi | hamateh
 
 14:3
-ki | natan | Mosheh | nachalat | shenei | hamatot | vachatzi | hamateh | me'ever
-Laiyarden | velalviyim
-lo | natan | nachalah | betokham
+ki | natan | Mosheh | nachalat | shenei | hamatot | vachatzi | hamateh
+me'ever | Laiyarden | velalviyim
+lo | natan | nachalah
+betokham
 
 14:4
 ki | hayu | venei | Yosef | shenei | matot | Menasheh | Ve'efrayim
@@ -24,7 +23,8 @@ umigresheihem | lemikneihem | ulekinyanam
 
 14:5
 ka'asher | tzivah | Yahweh | et | Mosheh
-ken | asu | benei | Yisra'el
+ken | asu
+benei | Yisra'el
 vaiyachleku
 et | ha'aretz
 
@@ -47,21 +47,22 @@ im | levavi
 ve'achai | asher | alu | imi
 himsiv
 et | lev | ha'am
-ve'anokhi | mileti | acharei
-Yahweh | elohai
+ve'anokhi | mileti | acharei | Yahweh | elohai
 
 14:9
 vaiyishava | Mosheh | baiyom | hahu | lemor
 im | lo | ha'aretz | asher | darekhah | raglekha | bah
 lekha | tihyeh | lenachalah | ulevaneikha
-ad | olam | ki | mileta | acharei
-Yahweh | elohai
+ad | olam
+ki | mileta | acharei | Yahweh | elohai
 
 14:10
 ve'atah | hineh | hecheyah | Yahweh | oti | ka'asher | diber
 zeh | arba'im | vechamesh | shanah | me'oz | diber | Yahweh | et | hadavar | hazeh | el | Mosheh
-asher | halakh | Yisra'el | bamidbar
-ve'atah | hineh | anokhi | haiyom | ben | chamesh | ushemonim
+asher | halakh | Yisra'el
+bamidbar
+ve'atah | hineh | anokhi | haiyom
+ben | chamesh | ushemonim
 shanah
 
 14:11
@@ -70,10 +71,11 @@ kekhochi | az | ukhekhochi | atah | lamilchamah | velatzet | velavo
 
 14:12
 ve'atah | tenah | li | et | hahar | hazeh
-asher | diber | Yahweh | baiyom | hahu
+asher | diber | Yahweh
+baiyom | hahu
 ki | atah | shama'ta | vaiyom | hahu | ki | anakim | sham | ve'arim | gedolot | betzurot
-ulai | Yahweh | oti | vehorashtim | ka'asher
-diber | Yahweh
+ulai | Yahweh | oti | vehorashtim
+ka'asher | diber | Yahweh
 
 14:13
 vayvarekhehu
@@ -86,9 +88,7 @@ al | ken | hayetah | Chevron | Lekhalev | ben | Yefuneh | hakenizi | lenachalah
 ad
 haiyom | hazeh
 ya'an | asher | mile
-acharei
-Yahweh
-elohei | Yisra'el
+acharei | Yahweh | elohei | Yisra'el
 
 14:15
 veshem | Chevron | lefanim | Kiryat | Arba | ha'adam | hagadol | ba'anakim

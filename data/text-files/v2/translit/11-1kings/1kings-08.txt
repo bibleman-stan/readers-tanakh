@@ -1,6 +1,7 @@
 8:1
 az | yakhel | Shelomoh | et | ziknei | Yisra'el | et | kol | rashei | hamatot | nesi'ei | ha'avot | livnei | Yisra'el | el | hamelekh | Shelomoh
-Yerushalim | leha'alot | et | aron | berit | Yahweh | me'ir | David
+Yerushalim
+leha'alot | et | aron | berit | Yahweh | me'ir | David
 hi | Tziyon
 
 8:2
@@ -11,8 +12,7 @@ hachodesh | hashevi'i
 
 8:3
 vaiyavo'u
-kol
-ziknei | Yisra'el
+kol | ziknei | Yisra'el
 vaiyis'u | hakohanim
 et | ha'aron
 
@@ -59,12 +59,12 @@ betzetam | me'eretz | Mitzrayim
 
 8:10
 vayhi
-betzet | hakohanim | min | hakodesh
-vehe'anan | male
+betzet | hakohanim | min | hakodesh | vehe'anan | male
 et | beit | Yahweh
 
 8:11
-velo | yakhelu | hakohanim | la'amod | lesharet | mipenei | he'anan | ki | male | khevod | Yahweh
+velo | yakhelu | hakohanim | la'amod | lesharet | mipenei | he'anan
+ki | male | khevod | Yahweh
 et | beit | Yahweh
 
 8:12
@@ -85,8 +85,7 @@ vekhol | kehal | Yisra'el
 omed
 
 8:15
-vaiyomer | barukh | Yahweh | elohei | Yisra'el
-asher | diber | befiv | et
+vaiyomer | barukh | Yahweh | elohei | Yisra'el | asher | diber | befiv | et
 David | avi | uveyado | mile
 lemor
 
@@ -102,8 +101,8 @@ al | ami | Yisra'el
 vayhi
 im | levav
 David | avi
-livnot | bayit | leshem | Yahweh
-elohei | Yisra'el
+livnot | bayit
+leshem | Yahweh | elohei | Yisra'el
 
 8:18
 vaiyomer | Yahweh | el | David | avi
@@ -115,33 +114,35 @@ ki | hayah
 im | levavekha
 
 8:19
-rak | atah | lo | tivneh
-habayit | ki | im | binkha | haiyotze | mechalatzeikha
-hu | yivneh | habayit
+rak | atah
+lo | tivneh
+habayit
+ki | im | binkha | haiyotze | mechalatzeikha | hu | yivneh | habayit
 lishmi
 
 8:20
 vaiyakem | Yahweh
 et | devaro | asher | diber
 va'akum | tachat | David | avi | va'eshev | al | kise | Yisra'el | ka'asher | diber | Yahweh
-va'evneh | habayit | leshem | Yahweh
-elohei | Yisra'el
+va'evneh | habayit
+leshem | Yahweh | elohei | Yisra'el
 
 8:21
 va'asim | sham | makom | la'aron
-asher | sham | berit | Yahweh | asher | karat | im | avoteinu
+asher | sham
+berit | Yahweh | asher | karat | im | avoteinu
 behotzi'o | otam | me'eretz | Mitzrayim
 
 8:22
 vaiya'amod | Shelomoh | lifnei | mizbach | Yahweh
-neged | kol | kehal | Yisra'el | vaiyifros | kapav
+neged
+kol | kehal | Yisra'el
+vaiyifros | kapav
 hashamayim
 
 8:23
 vaiyomar | Yahweh | elohei | Yisra'el | ein | kamokha | elohim
-bashamayim | mima'al
-ve'al | ha'aretz | mitachat
-shomer | haberit | vehachesed | la'avadeikha
+bashamayim | mima'al | ve'al | ha'aretz | mitachat | shomer | haberit | vehachesed | la'avadeikha
 haholekhim | lefaneikha | bekhol | libam
 
 8:24
@@ -151,8 +152,7 @@ vatedaber | befikha | uveyadekha | mileta | kaiyom | hazeh
 
 8:25
 ve'atah | Yahweh | elohei | Yisra'el | shemor | le'avdekha | David | avi | et | asher | dibarta | lo | lemor
-lo | yikaret | lekha | ish | milefanai
-yoshev
+lo | yikaret | lekha | ish | milefanai | yoshev
 al | kise | Yisra'el
 rak | im | yishmeru | vaneikha | et | darkam | lalekhet | lefanai | ka'asher | halakhta
 lefanai
@@ -164,7 +164,8 @@ le'avdekha
 David | avi
 
 8:27
-ki | ha'umnam | yeshev | elohim
+ki | ha'umnam
+yeshev | elohim
 al | ha'aretz
 hineh | hashamayim | ushemei | hashamayim | lo | yekhalkelukha
 af | ki | habayit | hazeh | asher | baniti
@@ -197,13 +198,15 @@ venasha | vo | alah | leha'aloto
 uva | alah | lifnei | mizbachakha | babayit | hazeh
 
 8:32
-ve'atah | tishma | hashamayim | ve'asita | veshafata | et | avadeikha | leharshia | rasha
-latet | darko | berosho | ulehatzdik | tzadik | latet | lo | ketzidkato
+ve'atah | tishma | hashamayim | ve'asita | veshafata | et | avadeikha
+leharshia | rasha | latet | darko | berosho | ulehatzdik | tzadik
+latet | lo | ketzidkato
 
 8:33
 behinagef | amekha | Yisra'el | lifnei | oyev | asher | yechet'u | lakh
 veshavu | eleikha | vehodu | et | shemekha
-vehitpalu | vehitchanenu | eleikha | babayit | hazeh
+vehitpalu | vehitchanenu | eleikha
+babayit | hazeh
 
 8:34
 ve'atah | tishma | hashamayim
@@ -216,7 +219,8 @@ la'avotam
 8:35
 behe'atzer | shamayim | velo | yihyeh | matar | ki | yechet'u | lakh
 vehitpalu | el | hamakom | hazeh | vehodu | et | shemekha
-umechatatam | yeshuvun | ki | ta'anem
+umechatatam | yeshuvun
+ki | ta'anem
 
 8:36
 ve'atah | tishma | hashamayim | vesalachta | lechatat | avadeikha | ve'amekha | Yisra'el
@@ -227,7 +231,10 @@ lenachalah
 
 8:37
 ra'av | ki | yihyeh | va'aretz | dever | ki | yihyeh | shidafon | yerakon | arbeh | chasil | ki | yihyeh
-ki | yatzar | lo | oyevo | be'eretz | she'arav | kol | nega | kal | machalah
+ki | yatzar | lo | oyevo
+be'eretz | she'arav
+kol | nega
+kal | machalah
 
 8:38
 kol | tefilah | khol | techinah | asher | tihyeh | lekhol | ha'adam
@@ -239,8 +246,10 @@ el | habayit | hazeh
 8:39
 ve'atah | tishma | hashamayim | mekhon | shivtekha | vesalachta | ve'asita
 venatata | la'ish | kekhol | derakhav | asher | teda
-et | levavo | ki | atah | yada'ta | levadekha
-et | levav | kol | benei | ha'adam
+et | levavo
+ki | atah | yada'ta | levadekha
+et | levav
+kol | benei | ha'adam
 
 8:40
 lema'an | yira'ukha
@@ -264,10 +273,12 @@ el | habayit | hazeh
 
 8:43
 atah | tishma | hashamayim | mekhon | shivtekha
-ve'asita | kekhol | asher | yikra | eleikha
+ve'asita
+kekhol | asher | yikra | eleikha
 hanakheri
 lema'an | yede'un | kol | amei | ha'aretz | et | shemekha | leyir'ah | otekha | ke'amekha | Yisra'el
-velada'at | ki | shimkha | Nikra
+velada'at
+ki | shimkha | Nikra
 al | habayit | hazeh | asher | baniti
 
 8:44
@@ -298,7 +309,8 @@ chatanu | vehe'evinu
 rasha'enu
 
 8:48
-veshavu | eleikha | bekhol | levavam | uvekhol | nafsham | be'eretz | oyeveihem
+veshavu | eleikha | bekhol | levavam | uvekhol | nafsham
+be'eretz | oyeveihem
 asher | shavu | otam
 vehitpalu | eleikha | derekh | artzam | asher | natatah | la'avotam
 ha'ir | asher | bacharta
@@ -326,7 +338,8 @@ mitokh | kur | habarzel
 lihyot | eineikha | fetuchot | el | techinat | avdekha
 ve'el | techinat
 amekha | Yisra'el
-lishmoa | aleihem | bekhol
+lishmoa | aleihem
+bekhol
 kare'am | eleikha
 
 8:53
@@ -363,8 +376,7 @@ al | ya'azvenu
 ve'al | yiteshenu
 
 8:58
-lehatot | levavenu
-elav
+lehatot | levavenu | elav
 lalekhet | bekhol | derakhav | velishmor | mitzvotav | vechukav | umishpatav | asher | tzivah
 et | avoteinu
 
@@ -377,8 +389,7 @@ devar | yom | beyomo
 
 8:60
 lema'an | da'at | kol | amei | ha'aretz | ki | Yahweh
-hu | ha'elohim
-ein
+hu | ha'elohim | ein
 od
 
 8:61
@@ -406,7 +417,8 @@ vekhol | benei | Yisra'el
 baiyom | hahu | kidash | hamelekh | et | tokh | hechatzer | asher | lifnei | veit | Yahweh
 ki | asah | sham | et | ha'olah | ve'et | haminchah
 ve'et
-chelvei | hashelamim | ki | mizbach | hanechoshet | asher | lifnei | Yahweh
+chelvei | hashelamim
+ki | mizbach | hanechoshet | asher | lifnei | Yahweh
 katon | mehakhil | et | ha'olah | ve'et | haminchah
 ve'et
 chelvei | hashelamim

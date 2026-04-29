@@ -1,8 +1,7 @@
 11:1
 vaiyavo | Rechav'am | Yerushalim
 vaiyakhel | et | beit | Yehudah | Uvinyamin | me'ah | ushemonim | elef | bachur
-oseh | milchamah
-lehilachem | im | Yisra'el | lehashiv | et | hamamlakhah | Lirchav'am
+oseh | milchamah | lehilachem | im | Yisra'el | lehashiv | et | hamamlakhah | Lirchav'am
 
 11:2
 vayhi | devar | Yahweh
@@ -11,7 +10,8 @@ lemor
 
 11:3
 emor
-el | Rechav'am | ben | Shelomoh | melekh | Yehudah
+el | Rechav'am | ben | Shelomoh
+melekh | Yehudah
 ve'el | kol | Yisra'el | Bihudah | Uvinyamin
 lemor
 
@@ -54,8 +54,7 @@ arei | metzurot
 vaychazek
 et | hametzurot
 vaiyiten | bahem | negidim
-ve'otzerot | ma'akhal
-veshemen | vayayin
+ve'otzerot | ma'akhal | veshemen | vayayin
 
 11:12
 uvekhol | ir | va'ir | tzinot | uremachim | vaychazekem
@@ -67,9 +66,11 @@ vehakohanim | vehalviyim | asher | bekhol | Yisra'el
 hityatzevu | alav | mikol | gevulam
 
 11:14
-ki | azevu | halviyim | et | migresheihem | va'achuzatam | vaiyelekhu | Lihudah
-Velirushalim | ki | hiznicham | Yarave'am | uvanav | mikahen
-Layahweh
+ki | azevu | halviyim | et | migresheihem | va'achuzatam
+vaiyelekhu | Lihudah
+Velirushalim
+ki | hiznicham | Yarave'am | uvanav
+mikahen | Layahweh
 
 11:15
 vaiya'amed | lo | kohanim
@@ -81,7 +82,8 @@ ve'achareihem | mikol | shivtei | Yisra'el
 hanotenim | et | levavam
 levakesh
 et | Yahweh
-elohei | Yisra'el | ba'u | Yerushalim
+elohei | Yisra'el
+ba'u | Yerushalim
 lizboach
 Layahweh
 elohei | avoteihem
@@ -89,13 +91,18 @@ elohei | avoteihem
 11:17
 vaychazeku | et | malkhut | Yehudah
 vay'ametzu | et | Rechav'am | ben | Shelomoh
-leshanim | shaloosh | ki | halekhu | bederekh | David | Ushelomoh
+leshanim | shaloosh
+ki | halekhu | bederekh | David | Ushelomoh
 leshanim | shaloosh
 
 11:18
 vaiyikach | lo | Rechav'am | ishah
-et | Machalat | ben | Yerimot | ben | David
-Avihayil | bat | Eli'av | ben | Yishai
+et | Machalat
+ben | Yerimot
+ben | David
+Avihayil
+bat | Eli'av
+ben | Yishai
 
 11:19
 vateled | lo | banim
@@ -104,7 +111,8 @@ ve'et | Zaham
 
 11:20
 ve'achareiha | lakach
-et | Ma'akhah | bat | Avshalom
+et | Ma'akhah
+bat | Avshalom
 vateled | lo | et | Aviyah | ve'et | Atai
 ve'et | Ziza
 ve'et | Shelomit
@@ -119,7 +127,8 @@ veshishim | banot
 
 11:22
 vaiya'amed | larosh | Rechav'am | et | Aviyah | ven | Ma'akhah
-lenagid | be'echav | ki | lehamlikho
+lenagid | be'echav
+ki | lehamlikho
 
 11:23
 vaiyaven | vaiyifrotz | mikol | banav | lekhol | artzot | Yehudah | Uvinyamin | lekhol | arei | hametzurot

@@ -1,6 +1,7 @@
 19:1
 vaiyavo'u | shenei | hamal'akhim | Sedomah | ba'erev
-Velot | yoshev | besha'ar | Sedom
+Velot
+yoshev | besha'ar | Sedom
 vaiyar | Lot | vaiyakom | likratam
 vaiyishtachu | apayim
 aretzah
@@ -14,8 +15,7 @@ ki | varechov
 nalin
 
 19:3
-vaiyiftzar | bam | me'od
-vaiyasuru | elav
+vaiyiftzar | bam | me'od | vaiyasuru | elav
 vaiyavo'u
 el | beito
 vaiya'as | lahem | mishteh
@@ -23,8 +23,9 @@ umatzot | afah | vaiyokhelu
 
 19:4
 terem | yishkavu
-ve'anshei | ha'ir | anshei | Sedom | Nasabu | al | habayit | mina'ar
-ve'ad | zaken | kol | ha'am | mikatzeh
+ve'anshei | ha'ir | anshei | Sedom | Nasabu | al | habayit
+mina'ar | ve'ad | zaken
+kol | ha'am | mikatzeh
 
 19:5
 vaiyikre'u | el | Lot | vaiyomeru | lo
@@ -55,8 +56,7 @@ ki | al | ken | ba'u | betzel | korati
 19:9
 vaiyomeru | gesh | hal'ah | vaiyomeru | ha'echad | ba | lagur | vaiyishpot | shafot
 atah | nara | lekha | mehem
-vaiyiftzeru | va'ish | Belot | me'od
-vaiyigeshu
+vaiyiftzeru | va'ish | Belot | me'od | vaiyigeshu
 lishbor | hadalet
 
 19:10
@@ -81,7 +81,8 @@ hotze | min | hamakom
 19:13
 ki | mashchitim | anachnu
 et | hamakom
-hazeh | ki | gadelah | tza'akatam | et | penei | Yahweh
+hazeh
+ki | gadelah | tza'akatam | et | penei | Yahweh
 vayshalechenu | Yahweh
 leshachatah
 
@@ -135,8 +136,7 @@ utechi | nafshi
 19:21
 vaiyomer | elav
 hineh | nasati | faneikha
-gam
-ladavar | hazeh
+gam | ladavar | hazeh
 levilti | hafeki | et | ha'ir | asher | dibarta
 
 19:22
@@ -154,19 +154,21 @@ Velot | ba | Tzo'arah
 
 19:24
 Vayahweh | himtir | al | Sedom | ve'al | Amorah
-gaferit | va'esh | me'et | Yahweh | min | hashamayim
+gaferit | va'esh
+me'et | Yahweh
+min | hashamayim
 
 19:25
 vaiyahafokh | et | he'arim | ha'el
-ve'et | kol | hakikar
+ve'et
+kol | hakikar
 ve'et | kol | yoshevei | he'arim
 vetzemach
 ha'adamah
 
 19:26
-vatabet | ishto | me'acharav
-vatehi
-netziv | melach
+vatabet | ishto
+me'acharav | vatehi | netziv | melach
 
 19:27
 vaiyashkem | Avraham
@@ -202,13 +204,13 @@ ushetei | venotav
 19:31
 vatomer | habekhirah | el | hatze'irah
 avinu | zaken
-ve'ish | ein | ba'aretz | lavo | aleinu | kederekh | kol | ha'aretz
+ve'ish | ein | ba'aretz | lavo | aleinu | kederekh
+kol | ha'aretz
 
 19:32
 lekhah | nashkeh | et | avinu | yayin
 venishkevah | imo
-unechaiyeh | me'avinu
-zara
+unechaiyeh | me'avinu | zara
 
 19:33
 vatashkeina | et | avihen | yayin | balaylah | hu
@@ -220,8 +222,7 @@ vatomer | habekhirah | el | hatze'irah
 hen | shakhavti | emesh
 et | avi
 nashkenu | yayin | gam | halaylah | uvo'i | shikhvi | imo
-unechaiyeh | me'avinu
-zara
+unechaiyeh | me'avinu | zara
 
 19:35
 vatashkeina | gam | balaylah | hahu | et | avihen
@@ -239,6 +240,7 @@ ad | haiyom
 
 19:38
 vehatze'irah | gam | hi | yaldah | ben
-vatikra | shemo | Ben | Ami
+vatikra | shemo
+Ben | Ami
 hu | avi | venei | Amon
 ad | haiyom

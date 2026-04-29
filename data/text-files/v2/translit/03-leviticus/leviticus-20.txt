@@ -19,8 +19,7 @@ et | shem | kodshi
 
 20:4
 ve'im | ha'lem | ya'limu | am | ha'aretz | et | eineihem | min | ha'ish | hahu
-betito | mizar'o
-Lamolekh
+betito | mizar'o | Lamolekh
 levilti
 hamit | oto
 
@@ -31,22 +30,22 @@ mikerev | amam
 
 20:6
 vehanefesh | asher | tifneh | el | ha'ovot | ve'el | haiyide'onim
-liznot
-achareihem
+liznot | achareihem
 venatati | et | panai | banefesh | hahiv
 vehikhrati | oto | mikerev | amo
 
 20:7
 vehitkadishtem
 vihyitem
-kedoshim | ki | ani | Yahweh
-eloheikhem
+kedoshim
+ki | ani | Yahweh | eloheikhem
 
 20:8
 ushemartem | et | chukotai
 va'asitem
 otam
-ani | Yahweh | mekadishkhem
+ani | Yahweh
+mekadishkhem
 
 20:9
 ki | ish | ish | asher | yekalel | et | aviv | ve'et | imo
@@ -82,8 +81,10 @@ demeihem | bam
 
 20:14
 ve'ish | asher | yikach | et | ishah | ve'et | imah
-zimah | hi | ba'esh | yisrefu | oto | ve'ethen
-velo | tihyeh | zimah | betokhkhem
+zimah | hi
+ba'esh | yisrefu | oto | ve'ethen
+velo | tihyeh | zimah
+betokhkhem
 
 20:15
 ve'ish | asher | yiten | shekhaveto | bivhemah
@@ -113,7 +114,8 @@ et | mekor | dameiha
 venikhretu | sheneihem | mikerev | amam
 
 20:19
-ve'ervat | achot | imekha | va'achot | avikha | lo | tegaleh
+ve'ervat | achot | imekha | va'achot | avikha
+lo | tegaleh
 ki | et | she'ero | he'erah
 avonam | yisa'u
 
@@ -133,8 +135,8 @@ aririm | yihyu
 20:22
 ushemartem | et | kol | chukotai | ve'et | kol | mishpatai
 va'asitem
-otam | velo | taki | etkhem | ha'aretz
-asher | ani | mevi | etkhem | shamah
+otam
+velo | taki | etkhem | ha'aretz | asher | ani | mevi | etkhem | shamah
 lashevet | bah
 
 20:23
@@ -148,7 +150,8 @@ va'ani | ettenenah | lakhem | lareshet | otah
 eretz | zavat | chalav
 udevash
 ani | Yahweh | eloheikhem
-asher | hivdalti | etkhem | min | ha'amim
+asher | hivdalti | etkhem
+min | ha'amim
 
 20:25
 vehivdaltem | bein | habehemah | hatehorah | lateme'ah | uvein | ha'of | hatame
@@ -158,9 +161,11 @@ asher | hivdalti | lakhem
 letame
 
 20:26
-vihyitem | li | kedoshim | ki | kadoosh
+vihyitem | li | kedoshim
+ki | kadoosh
 ani | Yahweh
-va'avdil | etkhem | min | ha'amim | lihyot | li
+va'avdil | etkhem | min | ha'amim
+lihyot | li
 
 20:27
 ve'ish | ov | ishah | ki | yihyeh | vahem | ov | o | yide'oni

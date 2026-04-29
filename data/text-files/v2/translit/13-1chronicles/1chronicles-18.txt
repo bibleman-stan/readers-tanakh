@@ -32,8 +32,7 @@ esrim | ushenayim | elef | ish
 vaiyasem | David | Ba'aram | Darmesek
 vayhi | Aram | Ledavid
 avadim
-nose'ei | minchah
-vaiyoosha | Yahweh | Ledavid
+nose'ei | minchah | vaiyoosha | Yahweh | Ledavid
 bekhol | asher | halakh
 
 18:7
@@ -46,13 +45,14 @@ Yerushalim
 18:8
 Umitivchat | Umikun | arei | Hadad'ezer
 lakach | David | nechoshet
-rabah | me'od
-bah | asah | Shelomoh | et | yam | hanechoshet | ve'et | ha'amudim
-ve'et | kelei | hanechoshet
+rabah | me'od | bah | asah | Shelomoh | et | yam | hanechoshet | ve'et | ha'amudim
+ve'et
+kelei | hanechoshet
 
 18:9
 vaiyishma
-To'u | melekh | Chamat | ki | hikah | David
+To'u | melekh | Chamat
+ki | hikah | David
 et | kol | cheil
 Hadad'ezer | melekh | Tzovah
 

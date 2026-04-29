@@ -22,8 +22,8 @@ hapenimit
 vaiyarom | kevod | Yahweh | me'al | hakeruv
 al | miftan | habayit
 vaiyimale | habayit | et | he'anan
-vehechatzer | mal'ah
-et | nogah | kevod | Yahweh
+vehechatzer | mal'ah | et | nogah
+kevod | Yahweh
 
 10:5
 vekol | kanfei | hakeruvim
@@ -47,8 +47,8 @@ vaiyetze
 
 10:8
 vaiyera
-lakeruvim
-tavnit | yad | adam | tachat | kanfeihem
+lakeruvim | tavnit | yad | adam
+tachat | kanfeihem
 
 10:9
 va'er'eh | vehineh | arba'ah | ofanim | etzel | hakeruvim
@@ -58,12 +58,16 @@ even | tarshish
 
 10:10
 umar'eihem
-demut | echad | le'arba'tam | ka'asher | yihyeh | ha'ofan | betokh | ha'ofan
+demut | echad | le'arba'tam
+ka'asher | yihyeh | ha'ofan
+betokh | ha'ofan
 
 10:11
 belekhtam | el | arba'at | riv'eihem | yelekhu | lo | yisabu
-belekhtam | ki | hamakom | asher | yifneh | harosh | acharav | yelekhu
-lo | yisabu | belekhtam
+belekhtam
+ki | hamakom | asher | yifneh | harosh | acharav | yelekhu
+lo | yisabu
+belekhtam
 
 10:12
 vekhol | besaram | vegabehem
@@ -86,21 +90,17 @@ penei | nasher
 
 10:15
 vaiyeromu
-hakeruvim
-hi | hachaiyah | asher | ra'iti
+hakeruvim | hi | hachaiyah | asher | ra'iti
 binhar | Kevar
 
 10:16
-uvelekhet | hakeruvim
-yelekhu | ha'ofanim
-etzlam
+uvelekhet | hakeruvim | yelekhu | ha'ofanim | etzlam
 uvis'et | hakeruvim | et | kanfeihem | larum | me'al | ha'aretz
 lo | yisabu | ha'ofanim | gam | hem | me'etzlam
 
 10:17
-be'amedam | ya'amodu
-uveromam
-yeromu | otam | ki | ruach | hachaiyah | bahem
+be'amedam | ya'amodu | uveromam | yeromu | otam
+ki | ruach | hachaiyah | bahem
 
 10:18
 vaiyetze | kevod | Yahweh
@@ -112,12 +112,14 @@ vaiyis'u | hakeruvim | et | kanfeihem | vaiyeromu | min | ha'aretz | le'einai | 
 veha'ofanim
 le'umatam
 vaiya'amod | petach | sha'ar | beit | Yahweh | hakadmoni
-ukhevod | elohei | Yisra'el | aleihem | milma'elah
+ukhevod | elohei | Yisra'el | aleihem
+milma'elah
 
 10:20
 hi | hachaiyah | asher | ra'iti | tachat | elohei | Yisra'el
 binhar | Kevar
-va'eda | ki | kheruvim
+va'eda
+ki | kheruvim
 hemah
 
 10:21
@@ -129,7 +131,6 @@ udemut | yedei | adam | tachat | kanfeihem
 10:22
 udemut | peneihem
 hemah | hapanim | asher | ra'iti | al | nehar | Kevar
-mar'eihem
-ve'otam
+mar'eihem | ve'otam
 ish | el | ever | panav
 yelekhu

@@ -3,7 +3,8 @@ vayhi | bishloshim | shanah | barevi'i | bachamishah | lachodesh
 va'ani | vetokh | hagolah
 al | nehar | Kevar
 Niftechu | hashamayim
-va'er'eh | mar'ot | elohim
+va'er'eh
+mar'ot | elohim
 
 1:2
 bachamishah
@@ -26,8 +27,7 @@ venogah | lo | saviv | umitokhah | ke'ein | hachashmal | mitokh | ha'esh
 umitokhah
 demut
 arba | chaiyot
-vezeh | mar'eihen
-demut | adam | lahenah
+vezeh | mar'eihen | demut | adam | lahenah
 
 1:6
 ve'arba'ah | fanim
@@ -37,14 +37,14 @@ le'achat | lahem
 
 1:7
 veragleihem
-regel | yesharah | vekhaf | ragleihem | kekhaf | regel | egel
+regel | yesharah
+vekhaf | ragleihem | kekhaf | regel | egel
 venotzetzim | ke'ein
 nechoshet | kalal
 
 1:8
 veyadov | adam | mitachat | kanfeihem
-al
-arba'at | riv'eihem
+al | arba'at | riv'eihem
 ufeneihem | vekhanfeihem | le'arba'tam
 
 1:9
@@ -59,20 +59,20 @@ ufenei | shor | mehasemol | le'arba'tan
 ufenei | nesher | le'arba'tan
 
 1:11
-ufeneihem | vekhanfeihem | perudot | milma'elah
-le'ish | shetayim | choerot | ish
-ushetayim | mekhasot
-et
+ufeneihem | vekhanfeihem | perudot | milma'elah | le'ish | shetayim | choerot | ish
+ushetayim | mekhasot | et
 geviyoteihenah
 
 1:12
 ve'ish | el | ever | panav
-yelekhu | el | asher | yihyeh | shamah | haruach | lalekhet | yelekhu
-lo | yisabu | belekhtan
+yelekhu
+el | asher | yihyeh | shamah | haruach | lalekhet | yelekhu
+lo | yisabu
+belekhtan
 
 1:13
-udemut | hachaiyot | mar'eihem | kegachalei | esh | bo'arot | kemar'eh | halapidim
-hi | mithalekhet | bein | hachaiyot
+udemut | hachaiyot | mar'eihem | kegachalei | esh | bo'arot | kemar'eh | halapidim | hi
+mithalekhet | bein | hachaiyot
 venogah | la'esh | umin | ha'esh
 yotze | varak
 
@@ -84,15 +84,20 @@ habazak
 1:15
 va'ere
 hachaiyot
-vehineh | ofan | echad | ba'aretz | etzel | hachaiyot | le'arba'at | panav
+vehineh | ofan | echad | ba'aretz | etzel | hachaiyot
+le'arba'at | panav
 
 1:16
 mar'eh | ha'ofanim | uma'aseihem | ke'ein | tarshish
-udemut | echad | le'arba'tan
-umar'eihem | uma'aseihem | ka'asher | yihyeh | ha'ofan | betokh | ha'ofan
+udemut | echad | le'arba'tan | umar'eihem | uma'aseihem
+ka'asher | yihyeh | ha'ofan
+betokh | ha'ofan
 
 1:17
-al | arba'at | riv'eihen | belekhtam | yelekhu | lo | yisabu | belekhtan
+al | arba'at | riv'eihen
+belekhtam | yelekhu
+lo | yisabu
+belekhtan
 
 1:18
 vegabeihen
@@ -101,30 +106,31 @@ veyir'ah | lahem
 vegabotam | mele'ot | einayim | saviv | le'arba'tan
 
 1:19
-uvelekhet | hachaiyot
-yelekhu | ha'ofanim
-etzlam | uvehinase | hachaiyot | me'al | ha'aretz
-yinase'u
+uvelekhet | hachaiyot | yelekhu | ha'ofanim | etzlam
+uvehinase | hachaiyot | me'al | ha'aretz | yinase'u
 ha'ofanim
 
 1:20
 al | asher | yihyeh | sham | haruach | lalekhet | yelekhu
 shamah | haruach
 lalekhet
-veha'ofanim | yinase'u | le'umatam | ki | ruach | hachaiyah | ba'ofanim
+veha'ofanim | yinase'u | le'umatam
+ki | ruach | hachaiyah | ba'ofanim
 
 1:21
-belekhtam | yelekhu | uve'amedam
-ya'amodu | uvehinase'am | me'al | ha'aretz | yinase'u | ha'ofanim | le'umatam
+belekhtam | yelekhu | uve'amedam | ya'amodu
+uvehinase'am | me'al | ha'aretz | yinase'u | ha'ofanim | le'umatam
 ki | ruach | hachaiyah | ba'ofanim
 
 1:22
 udemut | al | rashei | hachaiyah | rakia | ke'ein
 hakerach | hanora
-natui | al | rasheihem | milma'elah
+natui | al | rasheihem
+milma'elah
 
 1:23
-vetachat | harakia | kanfeihem | yesharot
+vetachat | harakia
+kanfeihem | yesharot
 ishah
 el | achotah
 le'ish | shetayim | mekhasot | lahenah | ule'ish | shetayim | mekhasot | lahenah
@@ -133,8 +139,7 @@ geviyoteihem
 
 1:24
 va'eshma | et | kol | kanfeihem | kekol | mayim | rabim | kekol | Shadai | belekhtam
-kol | hamulah | kekol | machaneh
-be'amedam
+kol | hamulah | kekol | machaneh | be'amedam
 terapeinah | khanfeihen
 
 1:25
@@ -159,8 +164,7 @@ venogah | lo | saviv
 
 1:28
 kemar'eh | hakeshet | asher | yihyeh | ve'anan | beyom | hageshem | ken | mar'eh | hanogah | saviv
-hu | mar'eh
-demut | kevod | Yahweh
+hu | mar'eh | demut | kevod | Yahweh
 va'er'eh | va'epol | al | panai
 va'eshma
 kol | medaber

@@ -19,12 +19,12 @@ legalav
 
 26:4
 veshichatu | chomot | Tzor | veharesu | migdaleiha
-vesicheiti | afarah | mimenah
-venatati | otah
+vesicheiti | afarah | mimenah | venatati | otah
 litzchiach | sala
 
 26:5
-mishtach | charamim | tihyeh | betokh | haiyam | ki | ani | dibarti
+mishtach | charamim | tihyeh | betokh | haiyam
+ki | ani | dibarti
 ne'um
 Adonai | Yahweh
 vehayetah | levaz
@@ -39,8 +39,8 @@ ki | ani | Yahweh
 
 26:7
 ki | khoh | amar | Adonai | Yahweh
-hini | mevi | el | Tzor | Nevukhadretzar | melekh | Bavel | mitzafon | melekh | melakhim
-besus | uverekhev | uvefarashim
+hini | mevi | el | Tzor | Nevukhadretzar | melekh | Bavel | mitzafon
+melekh | melakhim | besus | uverekhev | uvefarashim
 vekahal | ve'am | rav
 
 26:8
@@ -55,16 +55,16 @@ yiten | bechomotayikh | umigdelotayikh
 yitotz | becharvotav
 
 26:10
-mishif'at | susav
-yekhasekh | avakam | mikol | parash | vegalgal | varekhev | tir'ashnah | chomotayikh
+mishif'at | susav | yekhasekh | avakam
+mikol | parash | vegalgal | varekhev | tir'ashnah | chomotayikh
 bevo'o | bish'arayikh | kimvo'ei
 ir | mevuka'ah
 
 26:11
-befarsot | susav
-yirmos
+befarsot | susav | yirmos
 et | kol | chutzotayikh
-amekh | bacherev | yaharog | umatzevot | uzekh
+amekh | bacherev | yaharog
+umatzevot | uzekh
 la'aretz | tered
 
 26:12
@@ -78,12 +78,15 @@ yasimu
 26:13
 vehishbati
 hamon | shirayikh
-vekol | kinorayikh | lo | yishama
+vekol | kinorayikh
+lo | yishama
 od
 
 26:14
-unetatikh | litzchiach | sela | mishtach | charamim | tihyeh | lo | tibaneh
-od | ki | ani | Yahweh | dibarti
+unetatikh | litzchiach | sela | mishtach | charamim | tihyeh
+lo | tibaneh
+od
+ki | ani | Yahweh | dibarti
 ne'um
 Adonai | Yahweh
 
@@ -107,18 +110,19 @@ alayikh
 26:17
 venase'u | alayikh | kinah | ve'ameru | lakh
 eikh | avadt
-noshevet | miyamim
+noshevet
+miyamim
 ha'ir | hahulalah | asher | hayetah | chazakah | vaiyam | hi | veyosheveiha
 asher | natenu | chititam | lekhol | yosheveiha
 
 26:18
 atah | yechredu | ha'iyin
-yom | mapaltekh
-venivhalu | ha'iyim | asher | baiyam | mitzetekh
+yom | mapaltekh | venivhalu | ha'iyim | asher | baiyam | mitzetekh
 
 26:19
 ki | khoh | amar | Adonai | Yahweh
-betiti | otokh | ir | necherevet | ke'arim | asher | lo | Noshavu
+betiti | otokh | ir | necherevet
+ke'arim | asher | lo | Noshavu
 beha'alot | alayikh | et | tehom | vekhisukh
 hamayim | harabim
 

@@ -8,7 +8,8 @@ imo
 12:2
 vayhi | bashanah | hachamishit | lamelekh | Rechav'am
 alah | Shishak | melekh | Mitzrayim
-al | Yerushalim | ki | ma'alu | Bayahweh
+al | Yerushalim
+ki | ma'alu | Bayahweh
 
 12:3
 be'elef | umatayim | rekhev | uveshishim | elef | parashim
@@ -26,7 +27,8 @@ vesarei | Yehudah
 asher | Ne'esfu | el | Yerushalim
 mipenei | Shishak
 vaiyomer | lahem | koh | amar | Yahweh | atem | azavtem | oti
-ve'af | ani | azavti | etkhem | beyad | Shishak
+ve'af | ani | azavti | etkhem
+beyad | Shishak
 
 12:6
 vaiyikane'u | sarei | Yisra'el
@@ -41,7 +43,8 @@ lo | ashchitem
 venatati | lahem | kim'at | lifleitah | velo | titakh | chamati | Birushalim | beyad | Shishak
 
 12:8
-ki | yihyu | lo | la'avadim | veyede'u | avodati
+ki | yihyu | lo
+la'avadim | veyede'u | avodati
 va'avodat | mamlekhot | ha'aratzot
 
 12:9
@@ -54,8 +57,7 @@ Shelomoh
 
 12:10
 vaiya'as | hamelekh | Rechav'am | tachteihem
-maginei
-nechoshet
+maginei | nechoshet
 vehifkid | al | yad | sarei | haratzim
 hashomerim
 petach
@@ -63,7 +65,8 @@ beit | hamelekh
 
 12:11
 vayhi | midei | vo | hamelekh
-beit | Yahweh | ba'u | haratzim | unesa'um
+beit | Yahweh
+ba'u | haratzim | unesa'um
 veheshivum
 el | ta | haratzim
 
@@ -85,7 +88,8 @@ ha'amonit
 
 12:14
 vaiya'as
-hara | ki | lo | hekhin | libo
+hara
+ki | lo | hekhin | libo
 lidroosh
 et | Yahweh
 

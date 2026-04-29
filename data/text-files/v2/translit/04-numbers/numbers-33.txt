@@ -11,8 +11,10 @@ ve'eleh | mas'eihem | lemotza'eihem
 33:3
 vaiyis'u | Mera'meses | bachodesh | harishon
 bachamishah | asar | yom
-lachodesh | harishon | mimochorat | hapesach | yatze'u | venei | Yisra'el | beyad | ramah
-le'einei | kol | Mitzrayim
+lachodesh | harishon
+mimochorat | hapesach | yatze'u | venei | Yisra'el | beyad | ramah
+le'einei
+kol | Mitzrayim
 
 33:4
 Umitzrayim | mekaberim | et | asher | hikah | Yahweh | bahem
@@ -46,7 +48,8 @@ Bemarah
 33:9
 vaiyis'u | Mimarah
 vaiyavo'u
-Eilimah | Uve'eilim | sheteim | esreh | einot | mayim | veshiv'im | temarim
+Eilimah
+Uve'eilim | sheteim | esreh | einot | mayim | veshiv'im | temarim
 vaiyachanu | sham
 
 33:10
@@ -162,7 +165,8 @@ Bivnei | Ya'akan
 
 33:32
 vaiyis'u
-Mibenei | Ya'akan | vaiyachanu
+Mibenei | Ya'akan
+vaiyachanu
 Bechor | Hagidgad
 
 33:33
@@ -198,12 +202,14 @@ bishnat | ha'arba'im | letzet | benei | Yisra'el | me'eretz | Mitzrayim | bachod
 be'echad | lachodesh
 
 33:39
-Ve'aharon | ben | shalosh | ve'esrim | ume'at
+Ve'aharon
+ben | shalosh | ve'esrim | ume'at
 shanah | bemoto | Behor | hahar
 
 33:40
 vaiyishma | hakena'ani | melekh | Arad
-vehu | yoshev | Banegev | be'eretz | Kena'an | bevo | benei | Yisra'el
+vehu | yoshev | Banegev | be'eretz | Kena'an | bevo
+benei | Yisra'el
 
 33:41
 vaiyis'u
@@ -243,8 +249,7 @@ lifnei | Nevo
 33:48
 vaiyis'u
 meharei | Ha'avarim | vaiyachanu | Be'arvot | Mo'av
-al
-Yarden | Yerecho
+al | Yarden | Yerecho
 
 33:49
 vaiyachanu | al | Haiyarden | Mibeit | Hayshimot
@@ -260,13 +265,16 @@ lemor
 33:51
 daber | el | benei | Yisra'el
 ve'amarta
-alehem | ki | atem | oerim | et | Haiyarden
+alehem
+ki | atem | oerim | et | Haiyarden
 el | eretz | Kena'an
 
 33:52
-vehorashtem | et | kol | yoshevei | ha'aretz | mipeneikhem
-ve'ibadtem
-et | kol | maskiyotam | ve'et | kol | tzalmei | masekhotam | te'abedu | ve'et | kol | bamotam
+vehorashtem | et | kol | yoshevei | ha'aretz | mipeneikhem | ve'ibadtem
+et
+kol | maskiyotam
+ve'et | kol | tzalmei | masekhotam | te'abedu
+ve'et | kol | bamotam
 tashmidu
 
 33:53
@@ -277,7 +285,8 @@ lareshet | otah
 
 33:54
 vehitnachaltem | et | ha'aretz | begoral | lemishpechoteikhem | larav | tarbu | et | nachalato | velam'at | tam'it | et | nachalato
-el | asher | yetze | lo | shamah | hagoral | lo | yihyeh
+el | asher | yetze | lo | shamah | hagoral
+lo | yihyeh
 lematot | avoteikhem
 titnechalu
 

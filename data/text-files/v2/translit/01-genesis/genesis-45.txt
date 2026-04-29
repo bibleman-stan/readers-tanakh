@@ -1,7 +1,8 @@
 45:1
 velo | yakhol | Yosef | lehit'apek | lekhol | hanitzavim | alav
 vaiyikra
-hotzi'u | khol | ish | me'alai | velo | amad | ish | ito | behitvada | Yosef
+hotzi'u | khol | ish | me'alai | velo | amad | ish | ito
+behitvada | Yosef
 el | echav
 
 45:2
@@ -14,7 +15,9 @@ beit | par'oh
 vaiyomer | Yosef | el | echav | ani | Yosef
 ha'od | avi
 chai
-velo | yakhelu | echav | la'anot | oto | ki | Nivhalu | mipanav
+velo | yakhelu | echav | la'anot | oto
+ki | Nivhalu
+mipanav
 
 45:4
 vaiyomer | Yosef | el | echav | geshu | na | elai
@@ -23,9 +26,11 @@ vaiyomer | ani | Yosef | achikhem
 asher | mekhartem | oti | Mitzrayemah
 
 45:5
-ve'atah | al | te'atzevu | ve'al | yichar | be'eineikhem | ki | mekhartem | oti
+ve'atah | al | te'atzevu | ve'al | yichar | be'eineikhem
+ki | mekhartem | oti
 henah | ki | lemichyah
-shelachani | elohim | lifneikhem
+shelachani | elohim
+lifneikhem
 
 45:6
 ki | zeh | shenatayim | hara'av | bekerev | ha'aretz
@@ -46,7 +51,8 @@ umoshel | bekhol | eretz | Mitzrayim
 45:9
 maharu | va'alu | el | avi
 va'amartem | elav | koh | amar | binkha | Yosef
-samani | elohim | le'adon | lekhol | Mitzrayim
+samani | elohim | le'adon
+lekhol | Mitzrayim
 redah | elai
 al | ta'amod
 
@@ -57,19 +63,22 @@ vetzonekha | uvekarecha
 vekhol | asher | lakh
 
 45:11
-vekhilkalti | otekha | sham | ki | od | chamesh | shanim | ra'av
+vekhilkalti | otekha | sham
+ki | od | chamesh | shanim | ra'av
 pen | tivaresh | atah | uveitekha
 vekhol | asher | lakh
 
 45:12
 vehineh | eineikhem | ro'ot
 ve'einei
-achi | Vinyamin | ki | fi
+achi | Vinyamin
+ki | fi
 hamdaber | aleikhem
 
 45:13
 vehigadtem | le'avi | et | kol | kevodi | Bemitzrayim
-ve'et | kol | asher | re'item | umihartem | vehoradtem | et | avi
+ve'et
+kol | asher | re'item | umihartem | vehoradtem | et | avi
 henah
 
 45:14
@@ -86,7 +95,8 @@ diberu | echav
 ito
 
 45:16
-vehakol | Nishma | beit | par'oh | lemor | ba'u
+vehakol | Nishma | beit | par'oh | lemor
+ba'u
 achei | Yosef
 vaiyitav | be'einei | far'oh
 uve'einei
@@ -114,7 +124,8 @@ unesatem | et | avikhem | uvatem
 45:20
 ve'einekhem
 al | tachos
-al | keleikhem | ki | tuv | kol | eretz | Mitzrayim | lakhem | hu
+al | keleikhem
+ki | tuv | kol | eretz | Mitzrayim | lakhem | hu
 
 45:21
 vaiya'asu | khen | benei | Yisra'el
@@ -167,4 +178,5 @@ Ya'ako | avihem
 vaiyomer | Yisra'el
 rav | od | Yosef | beni
 chai
-elekhah | ve'er'enu | beterem | amut
+elekhah | ve'er'enu
+beterem | amut

@@ -6,22 +6,20 @@ veshalosh | amot
 komato
 
 27:2
-ve'asita | karnotav | al | arba | pinotav | mimenu
-tihyeina | karnotav
+ve'asita | karnotav | al | arba | pinotav
+mimenu | tihyeina | karnotav
 vetzipita | oto
 nechoshet
 
 27:3
 ve'asita | sirotav | ledasheno
 veya'av | umizrekotav
-umizlegotav | umachtotav | lekhol | kelav
-ta'aseh | nechoshet
+umizlegotav | umachtotav | lekhol | kelav | ta'aseh | nechoshet
 
 27:4
-ve'asita | lo | mikhbar | ma'aseh
-reshet | nechoshet
-ve'asita | al | hareshet | arba | tabe'ot | nechoshet | al
-arba | ketzotav
+ve'asita | lo | mikhbar | ma'aseh | reshet | nechoshet
+ve'asita | al | hareshet | arba | tabe'ot | nechoshet
+al | arba | ketzotav
 
 27:5
 venatatah | otah | tachat | karko | hamizbeach | milematah
@@ -41,7 +39,9 @@ vehayu | habadim | al | shetei | tzal'ot | hamizbeach | bis'et | oto
 
 27:8
 nevuv | luchot
-ta'aseh | oto | ka'asher | her'ah | otekha | bahar | ken | ya'asu
+ta'aseh | oto
+ka'asher | her'ah | otekha | bahar
+ken | ya'asu
 
 27:9
 ve'asita
@@ -52,7 +52,8 @@ lape'ah
 ha'echat
 
 27:10
-ve'amudav | esrim | ve'adneihem | esrim | nechoshet
+ve'amudav | esrim | ve'adneihem | esrim
+nechoshet
 vavei | ha'amudim | vachashukeihem | kasef
 
 27:11
@@ -100,8 +101,7 @@ nechoshet
 
 27:18
 orekh | hechatzer | me'ah | va'amah | verochav | chamishim | bachamishim | vekomah | chamesh | amot
-shesh | mashezar
-ve'adneihem
+shesh | mashezar | ve'adneihem
 nechoshet
 
 27:19
@@ -112,10 +112,10 @@ nechoshet
 
 27:20
 ve'atah | tetzaveh | et | benei | Yisra'el | veyikchu | eleikha | shemen | zayit | zakh | katit
-lama'or | leha'alot | ner
-tamid
+lama'or | leha'alot | ner | tamid
 
 27:21
 be'ohel | mo'ed | michutz | laparokhet | asher | al | ha'edut | ya'arokh | oto | Aharon | uvanav | me'erev | ad | boker
 lifnei | Yahweh
-chukat | olam | ledorotam | me'et | benei | Yisra'el
+chukat | olam | ledorotam | me'et
+benei | Yisra'el

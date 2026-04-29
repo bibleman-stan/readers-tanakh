@@ -12,19 +12,19 @@ ve'al | yoshevei
 Yerushalim
 
 11:3
-ve'amarta | aleihem | koh | amar | Yahweh
-elohei | Yisra'el
+ve'amarta | aleihem
+koh | amar | Yahweh | elohei | Yisra'el
 arur | ha'ish | asher | lo | yishma
 et | divrei
 haberit | hazot
 
 11:4
 asher | tziviti | et | avoteikhem | beyom | hotzi'i | otam | me'eretz | Mitzrayim | mikur | habarzel | lemor | shim'u | vekoli | va'asitem | otam
-kekhol | asher | atzaveh
-etkhem
+kekhol | asher | atzaveh | etkhem
 vihyitem | li | le'am
 ve'anokhi
-ehyeh | lakhem | lelohim
+ehyeh | lakhem
+lelohim
 
 11:5
 lema'an | hakim | et | hashevu'ah | asher | Nishba'ti | la'avoteikhem | latet | lahem | eretz | zavat | chalav | udevash
@@ -56,8 +56,8 @@ va'avi | aleihem | et | kol | divrei | haberit | hazot | asher | tziviti | la'as
 11:9
 vaiyomer | Yahweh
 elai
-Nimtza | kesher | be'ish | Yehudah | uveyoshevei
-Yerushalim
+Nimtza | kesher | be'ish | Yehudah
+uveyoshevei | Yerushalim
 
 11:10
 shavu | al | avonot | avotam | harishonim | asher | me'anu | lishmoa | et | devarai
@@ -70,22 +70,21 @@ et | avotam
 11:11
 lakhen | koh | amar | Yahweh
 hini | mevi | aleihem | ra'ah | asher | lo | yukhelu
-latzet | mimenah
-veza'aku | elai
+latzet | mimenah | veza'aku | elai
 velo | eshma
 aleihem
 
 11:12
 vehalekhu | arei | Yehudah | veyoshevei | Yerushalim
-veza'aku | el | ha'elohim | asher | hem | mekaterim
-lahem
+veza'aku | el | ha'elohim | asher | hem | mekaterim | lahem
 vehoshea | lo | yoshi'u | lahem | be'et | ra'atam
 
 11:13
 ki | mispar | areikha
 hayu | eloheikha
-Yehudah | umispar | chutzot | Yerushalim | samtem | mizbechot | laboshet | mizbechot
-lekater | laba'al
+Yehudah
+umispar | chutzot | Yerushalim | samtem | mizbechot | laboshet
+mizbechot | lekater | laba'al
 
 11:14
 ve'atah | al | titpalel | be'ad | ha'am | hazeh
@@ -96,7 +95,8 @@ be'ad | ra'atam
 
 11:15
 meh | lididi | beveiti | asotah | hamzimatah | harabim | uvesar | kodesh
-ya'avru | me'alayikh | ki | ra'atekhi
+ya'avru | me'alayikh
+ki | ra'atekhi
 az | ta'alozi
 
 11:16
@@ -120,7 +120,8 @@ va'eda'ah
 az | hir'itani | ma'aleihem
 
 11:19
-va'ani | kekheves | aluf
+va'ani
+kekheves | aluf
 yuval | litvoach
 velo | yada'ti | ki | alai | chashevu | machashavot | nashchitah | etz | belachmo | venikhretenu | me'eretz | chaiyim
 ushemo | lo | yizakher | od
@@ -129,21 +130,29 @@ ushemo | lo | yizakher | od
 Vayahweh | tzeva'ot | shofet | tzedek
 bochen | kelayot
 valev
-er'eh | nikmatecha | mehem | ki | eleikha
+er'eh | nikmatecha | mehem
+ki | eleikha
 giliti | et | rivi
 
 11:21
 lakhen | koh | amar | Yahweh | al | anshei | Anatot
 hamvakshim | et | nafshekha
-lemor | lo | tinave | beshem | Yahweh | velo | tamut | beyadenu
+lemor
+lo | tinave | beshem | Yahweh
+velo | tamut
+beyadenu
 
 11:22
 lakhen | koh | amar | Yahweh | tzeva'ot
 hini | foked
 aleihem
-habachurim | yamutu | vacherev | beneihem | uvenoteihem
-yamutu | bara'av
+habachurim | yamutu | vacherev
+beneihem | uvenoteihem | yamutu
+bara'av
 
 11:23
-ushe'erit | lo | tihyeh | lahem | ki | avi | ra'ah | el | anshei | Anatot
+ushe'erit
+lo | tihyeh
+lahem
+ki | avi | ra'ah | el | anshei | Anatot
 shenat | pekudatam

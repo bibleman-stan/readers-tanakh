@@ -12,7 +12,8 @@ vesamtam | ba'aron
 
 10:3
 va'a'as | aron | atzei | shitim
-va'efsol | shenei | luchot | avanim | karishonim
+va'efsol | shenei | luchot | avanim
+karishonim
 va'a'al | haharah
 ushenei | haluchot | beyadi
 
@@ -23,21 +24,20 @@ beyom | hakahal | vaiyitenem | Yahweh
 elai
 
 10:5
-va'efen | va'ered | min | hahar
-va'asim | et | haluchot | ba'aron | asher | asiti
+va'efen | va'ered | min | hahar | va'asim | et | haluchot | ba'aron | asher | asiti
 vaiyihyu | sham
-ka'asher | tzivani
-Yahweh
+ka'asher | tzivani | Yahweh
 
 10:6
-uvenei | Yisra'el | nase'u | Mibe'erot | Benei | Ya'akan | Moserah
-sham | met | Aharon | vaiyikaver | sham
+uvenei | Yisra'el | nase'u | Mibe'erot | Benei | Ya'akan
+Moserah | sham | met | Aharon | vaiyikaver | sham
 vaykhahen | El'azar | beno
 tachtav
 
 10:7
 misham | nase'u
-Hagudgodah | umin | Hagudgodah | Yatevatah
+Hagudgodah
+umin | Hagudgodah | Yatevatah
 eretz
 nachalei | mayim
 
@@ -73,10 +73,12 @@ veyavo'u | veyirshu | et | ha'aretz
 asher | Nishba'ti | la'avotam | latet | lahem
 
 10:12
-ve'atah | Yisra'el | mah | Yahweh | eloheikha
+ve'atah | Yisra'el
+mah | Yahweh | eloheikha
 sho'el | me'imakh
 ki | im | leyir'ah | et | Yahweh | eloheikha | lalekhet | bekhol | derakhav | ule'ahavah | oto
-vela'avod | et | Yahweh | eloheikha | bekhol | levavekha | uvekhol | nafshekha
+vela'avod | et | Yahweh | eloheikha
+bekhol | levavekha | uvekhol | nafshekha
 
 10:13
 lishmor | et | mitzvot | Yahweh | ve'et | chukotav | asher | anokhi | metzavekha
@@ -100,7 +102,8 @@ kaiyom | hazeh
 umaltem
 et
 arelat | levavkhem
-ve'arepekhem | lo | takshu
+ve'arepekhem
+lo | takshu
 od
 
 10:17
@@ -119,12 +122,14 @@ ve'ohev | ger | latet | lo | lechem | vesimlah
 
 10:19
 va'ahavtem
-et | hager | ki | gerim | heyitem | be'eretz | Mitzrayim
+et | hager
+ki | gerim | heyitem | be'eretz | Mitzrayim
 
 10:20
 et | Yahweh | eloheikha | tira
-oto | ta'avod | uvo | tidbak | uvishmo
-tishavea
+oto | ta'avod
+uvo | tidbak
+uvishmo | tishavea
 
 10:21
 hu | tehilatekha
@@ -133,6 +138,6 @@ asher | asah | itekha | et | hagedolot | ve'et | hanora'ot | ha'eleh | asher | r
 eineikha
 
 10:22
-beshiv'im | nefesh
-yaredu | avoteikha | Mitzrayemah
-ve'atah | samekha | Yahweh | eloheikha | kechokhvei | hashamayim | laro
+beshiv'im | nefesh | yaredu | avoteikha
+Mitzrayemah | ve'atah | samekha | Yahweh | eloheikha
+kechokhvei | hashamayim | laro

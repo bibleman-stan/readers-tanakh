@@ -1,7 +1,8 @@
 19:1
 masa | Mitzrayim
 hineh | Yahweh | rokhev | al | av | kal | uva | Mitzrayim
-vena'u | elilei | Mitzrayim | mipanav | ulevav | Mitzrayim
+vena'u | elilei | Mitzrayim | mipanav
+ulevav | Mitzrayim
 yimas | bekirbo
 
 19:2
@@ -20,13 +21,13 @@ ve'el | haiyide'onim
 
 19:4
 vesikarti | et | Mitzrayim | beyad
-adonim | kasheh | umelekh | az | yimshol | bam
+adonim | kasheh
+umelekh | az | yimshol | bam
 ne'um | ha'adon
 Yahweh | tzeva'ot
 
 19:5
-venishetu | mayim | mehaiyam
-venahar
+venishetu | mayim | mehaiyam | venahar
 yecherav | veyavesh
 
 19:6
@@ -45,7 +46,8 @@ ve'einenu
 
 19:8
 ve'anu | hadaiyagim
-ve'avelu | kol | mashlikhei | Vay'or
+ve'avelu
+kol | mashlikhei | Vay'or
 chakah
 uforesei | mikhmoret | al | penei | mayim
 umlalu
@@ -65,7 +67,9 @@ akh | evilim | sarei | Tzo'an
 chakhmei | yo'atzei | far'oh
 etzah
 niv'arah
-eikh | tomeru | el | par'oh | ben | chakhamim | ani | ben | malkhei | kedem
+eikh | tomeru | el | par'oh
+ben | chakhamim | ani
+ben | malkhei | kedem
 
 19:12
 aiyam | efo | chakhameikha
@@ -91,15 +95,16 @@ velo | yihyeh | Lemitzrayim | ma'aseh | asher | ya'aseh | rosh | vezanav
 kipah | ve'agmon
 
 19:16
-baiyom | hahu
-yihyeh | Mitzrayim | kanashim
+baiyom | hahu | yihyeh | Mitzrayim
+kanashim
 vecharad | ufachad | mipenei | tenufat | yad | Yahweh | tzeva'ot
 asher | hu | menif | alav
 
 19:17
 vehayetah | admat | Yehudah | Lemitzrayim | lechaga
 kol | asher | yazkir | otah | elav
-yifchad | mipenei | atzat | Yahweh | tzeva'ot
+yifchad
+mipenei | atzat | Yahweh | tzeva'ot
 asher | hu
 yo'etz | alav
 
@@ -112,7 +117,8 @@ ye'amer
 le'echat
 
 19:19
-baiyom | hahu | yihyeh | mizbeach | Layahweh | betokh
+baiyom | hahu | yihyeh | mizbeach | Layahweh
+betokh
 eretz | Mitzrayim | umatzevah | etzel | gevulah
 Layahweh
 
@@ -138,17 +144,18 @@ vene'tar | lahem
 urefa'am
 
 19:23
-baiyom | hahu | tihyeh | mesilah | Mimitzrayim | Ashurah | uva | Ashur | Bemitzrayim
-Umitzrayim | Be'ashur
+baiyom | hahu | tihyeh | mesilah | Mimitzrayim | Ashurah
+uva | Ashur | Bemitzrayim | Umitzrayim | Be'ashur
 ve'avedu | Mitzrayim
 et | Ashur
 
 19:24
-baiyom | hahu | yihyeh | Yisra'el | shelishiyah | Lemitzrayim
-Ule'ashur | berakhah | bekerev | ha'aretz
+baiyom | hahu | yihyeh | Yisra'el | shelishiyah
+Lemitzrayim | Ule'ashur | berakhah | bekerev | ha'aretz
 
 19:25
 asher | berakho | Yahweh | tzeva'ot
-lemor | barukh | ami | Mitzrayim | uma'aseh | yadai | Ashur
+lemor
+barukh | ami | Mitzrayim | uma'aseh | yadai | Ashur
 venachalati
 Yisra'el

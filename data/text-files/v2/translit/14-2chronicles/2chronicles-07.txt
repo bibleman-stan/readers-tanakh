@@ -1,20 +1,24 @@
 7:1
-ukhekhalot | Shelomoh | lehitpalel
-veha'esh | yaredah | mehashamayim
+ukhekhalot | Shelomoh | lehitpalel | veha'esh | yaredah | mehashamayim
 vatokhal | ha'olah
-vehazevachim | ukhevod | Yahweh | male | et | habayit
+vehazevachim
+ukhevod | Yahweh
+male | et | habayit
 
 7:2
 velo | yakhelu | hakohanim
 lavo
-el | beit | Yahweh | ki | male | khevod | Yahweh
+el | beit | Yahweh
+ki | male | khevod | Yahweh
 et | beit | Yahweh
 
 7:3
-vekhol | benei | Yisra'el | ro'im | beredet | ha'esh | ukhevod | Yahweh
+vekhol | benei | Yisra'el | ro'im | beredet | ha'esh
+ukhevod | Yahweh
 al | habayit
 vaiyikhre'u | apayim | artzah | al | haritzfah | vaiyishtachavu
-vehodot | Layahweh | ki | tov | ki | le'olam
+vehodot | Layahweh | ki | tov
+ki | le'olam
 chasdo
 
 7:4
@@ -55,7 +59,8 @@ ad | nachal | Mitzrayim
 
 7:9
 vaiya'asu | baiyom | hashemini
-atzaret | ki | chanukat | hamizbeach | asu | shiv'at | yamim
+atzaret
+ki | chanukat | hamizbeach | asu | shiv'at | yamim
 vehechag
 shiv'at | yamim
 
@@ -106,7 +111,8 @@ hamakom | hazeh
 7:16
 ve'atah | bacharti | vehikdashti | et | habayit | hazeh | lihyot | shemi | sham
 ad | olam
-vehayu | einai | velibi | sham | kol | haiyamim
+vehayu | einai | velibi | sham
+kol | haiyamim
 
 7:17
 ve'atah | im | telekh | lefanai | ka'asher | halakh | David | avikha
@@ -117,8 +123,8 @@ tishmor
 7:18
 vahakimoti
 et | kise | malkhutekha
-ka'asher | karati | Ledavid | avikha | lemor | lo | yikaret | lekha | ish
-moshel | Beyisra'el
+ka'asher | karati | Ledavid | avikha | lemor
+lo | yikaret | lekha | ish | moshel | Beyisra'el
 
 7:19
 ve'im | teshuvun | atem
@@ -130,7 +136,8 @@ vehishtachavitem | lahem
 7:20
 unetashtim | me'al | admati | asher | natati | lahem
 ve'et | habayit | hazeh | asher | hikdashti | lishmi
-ashlikh | me'al | panai
+ashlikh
+me'al | panai
 ve'ettenenu | lemashal | velishninah | bekhol | ha'amim
 
 7:21

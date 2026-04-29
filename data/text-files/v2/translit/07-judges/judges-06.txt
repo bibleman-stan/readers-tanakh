@@ -1,6 +1,7 @@
 6:1
 vaiya'asu | venei | Yisra'el | hara
-be'einei | Yahweh | vaiyitenem | Yahweh | beyad | Midyan
+be'einei | Yahweh
+vaiyitenem | Yahweh | beyad | Midyan
 sheva | shanim
 
 6:2
@@ -25,14 +26,12 @@ vachamor
 
 6:5
 ki | hem | umikneihem | ya'alu | ve'oholeihem | vuba'u | khedei | arbeh | laro
-velahem | veligmaleihem
-ein | mispar
-vaiyavo'u | va'aretz
+velahem | veligmaleihem | ein | mispar | vaiyavo'u | va'aretz
 leshachatah
 
 6:6
-vaiyidal | Yisra'el | me'od
-mipenei | Midyan | vaiyiz'aku | venei | Yisra'el
+vaiyidal | Yisra'el | me'od | mipenei | Midyan
+vaiyiz'aku | venei | Yisra'el
 el | Yahweh
 
 6:7
@@ -45,10 +44,13 @@ odot | Midyan
 vaiyishlach | Yahweh | ish | navi
 el | benei | Yisra'el
 vaiyomer | lahem | koh | amar | Yahweh | elohei | Yisra'el | anokhi | he'eleiti | etkhem | Mimitzrayim
-va'otzi | etkhem | mibeit | avadim
+va'otzi | etkhem
+mibeit | avadim
 
 6:9
-va'atzil | etkhem | miyad | Mitzrayim | umiyad | kol | lochatzeikhem
+va'atzil | etkhem | miyad | Mitzrayim
+umiyad
+kol | lochatzeikhem
 va'agaresh | otam | mipeneikhem
 va'etenah | lakhem
 et | artzam
@@ -56,7 +58,8 @@ et | artzam
 6:10
 va'omerah | lakhem | ani | Yahweh | eloheikhem
 lo | tire'u | et | elohei | ha'emori | asher | atem
-yoshevim | be'artzam | velo | shema'tem | bekoli
+yoshevim | be'artzam
+velo | shema'tem | bekoli
 
 6:11
 vaiyavo | mal'akh | Yahweh | vaiyeshev | tachat | ha'elah | asher | Be'aferah
@@ -66,7 +69,8 @@ Vegid'on | beno | chovet | chitim | bagat | lehanis | mipenei | Midyan
 
 6:12
 vaiyera | elav
-mal'akh | Yahweh | vaiyomer | elav
+mal'akh | Yahweh
+vaiyomer | elav
 Yahweh | imekha
 gibor | hechayil
 
@@ -82,8 +86,7 @@ bekhaf | Midyan
 6:14
 vaiyifen | elav | Yahweh
 vaiyomer | lekh | bekhochakha | zeh
-vehosha'ta | et | Yisra'el | mikaf | Midyan
-halo
+vehosha'ta | et | Yisra'el | mikaf | Midyan | halo
 shelachtikha
 
 6:15
@@ -133,7 +136,8 @@ ken
 vaiyishlach | mal'akh | Yahweh | et | ketzeh | hamish'enet | asher | beyado
 vaiyiga | babasar
 uvammatzot
-vata'al | ha'esh | min | hatzur | vatokhal | et | habasar | ve'et | hamatzot | umal'akh | Yahweh
+vata'al | ha'esh | min | hatzur | vatokhal | et | habasar | ve'et | hamatzot
+umal'akh | Yahweh
 halakh
 me'einav
 
@@ -211,13 +215,15 @@ ha'asherah | asher | alav
 vaiyomer | Yo'ash | lekhol | asher | amedu | alav | ha'atem | terivun | laba'al | im | atem | toshi'un | oto
 asher | yariv | lo | yumat
 ad | haboker
-im | elohim | hu | yarev | lo | ki | natatz
+im | elohim | hu | yarev | lo
+ki | natatz
 et | mizbecho
 
 6:32
 vaiyikra | lo | vaiyom | hahu
 Yeruba'al | lemor
-yarev | bo | haba'al | ki | natatz
+yarev | bo | haba'al
+ki | natatz
 et | mizbecho
 
 6:33
@@ -235,8 +241,7 @@ vaiyiza'ek | Avi'ezer
 acharav
 
 6:35
-umal'akhim | shalach | bekhol | Menasheh | vaiyiza'ek | gam | hu
-acharav
+umal'akhim | shalach | bekhol | Menasheh | vaiyiza'ek | gam | hu | acharav
 umal'akhim | shalach | Be'asher | Uvizvulun | Uvenaftali
 vaiya'alu
 likratam

@@ -1,5 +1,6 @@
 3:1
-ve'eleh | toldot | Aharon | Umosheh
+ve'eleh | toldot | Aharon
+Umosheh
 beyom | diber | Yahweh | et | Mosheh
 behar | Sinai
 
@@ -22,8 +23,7 @@ vaiyamot | Nadav | Va'avihu | lifnei | Yahweh | behakrivam | esh | zarah | lifne
 uvanim
 lo | hayu | lahem
 vaykhahen | El'azar | Ve'itamar
-al | penei
-Aharon | avihem
+al | penei | Aharon | avihem
 
 3:5
 vaydaber | Yahweh
@@ -40,20 +40,21 @@ oto
 3:7
 veshameru | et | mishmarto | ve'et | mishmeret | kol | ha'edah
 lifnei
-ohel | mo'ed
-la'avod
+ohel | mo'ed | la'avod
 et | avodat | hamishkan
 
 3:8
-veshameru | et | kol | kelei | ohel | mo'ed
-ve'et | mishmeret | benei | Yisra'el
+veshameru | et | kol | kelei | ohel | mo'ed | ve'et | mishmeret
+benei | Yisra'el
 la'avod
 et | avodat | hamishkan
 
 3:9
 venatatah | et | halviyim
 Le'aharon | ulevanav
-netunim | netunim | hemah | lo | me'et | benei | Yisra'el
+netunim | netunim | hemah | lo
+me'et
+benei | Yisra'el
 
 3:10
 ve'et | Aharon | ve'et | banav | tifkod
@@ -68,15 +69,16 @@ el | Mosheh | lemor
 
 3:12
 va'ani | hineh | lakachti | et | halviyim | mitokh | benei | Yisra'el
-tachat | kol | bekhor | peter | rechem | mibenei | Yisra'el
+tachat | kol | bekhor | peter | rechem
+mibenei | Yisra'el
 vehayu | li
 halviyim
 
 3:13
 ki | li | kol | bekhor
 beyom | hakoti | khol | bekhor | be'eretz | Mitzrayim | hikdashti | li | khol | bekhor | Beyisra'el
-me'adam
-ad | behemah | li | yihyu
+me'adam | ad | behemah
+li | yihyu
 ani | Yahweh
 
 3:14
@@ -86,13 +88,15 @@ lemor
 
 3:15
 pekod | et | benei | Levi
-leveit | avotam | lemishpechotam | kol | zakhar | miben | chodesh | vama'lah
+leveit | avotam
+lemishpechotam
+kol | zakhar | miben | chodesh | vama'lah
 tifkedem
 
 3:16
 vaiyifkod | otam | Mosheh
-al | pi | Yahweh | ka'asher
-tzuvah
+al | pi | Yahweh
+ka'asher | tzuvah
 
 3:17
 vaiyihyu | eleh | venei | Levi
@@ -117,29 +121,26 @@ eleh | hem | mishpechot | halevi
 leveit | avotam
 
 3:21
-Legereshon | mishpachat | halivni | umishpachat
-hashim'i
-eleh | hem | mishpechot
-hagereshuni
+Legereshon | mishpachat | halivni
+umishpachat
+hashim'i | eleh | hem | mishpechot | hagereshuni
 
 3:22
-pekudeihem | bemispar | kol | zakhar | miben | chodesh
-vama'elah
+pekudeihem | bemispar | kol | zakhar | miben | chodesh | vama'elah
 pekudeihem
 shiv'at | alafim | vachamesh | me'ot
 
 3:23
-mishpechot
-hagereshuni | acharei | hamishkan | yachanu
+mishpechot | hagereshuni | acharei | hamishkan | yachanu
 yamah
 
 3:24
 unesi | veit | av | lagereshuni
-Elyasaf | ben | La'el
+Elyasaf
+ben | La'el
 
 3:25
-umishmeret | benei | Gereshon | be'ohel | mo'ed
-hamishkan
+umishmeret | benei | Gereshon | be'ohel | mo'ed | hamishkan
 veha'ohel | mikhsehu | umasakh
 petach
 ohel | mo'ed
@@ -151,22 +152,23 @@ ve'et | meitarav | lekhol
 avodato
 
 3:27
-Velikhat | mishpachat | ha'amrami | umishpachat | haiyitzhari | umishpachat | hachevroni | umishpachat
-ha'azi'eli
-eleh | hem | mishpechot | hakehati
+Velikhat | mishpachat | ha'amrami | umishpachat | haiyitzhari | umishpachat | hachevroni
+umishpachat
+ha'azi'eli | eleh | hem | mishpechot | hakehati
 
 3:28
 bemispar | kol | zakhar | miben | chodesh | vama'elah
-shemonat | alafim | veshesh | me'ot | shomerei | mishmeret | hakodesh
+shemonat | alafim | veshesh | me'ot | shomerei
+mishmeret | hakodesh
 
 3:29
-mishpechot | benei | Kehat
-yachanu | al | yerekh | hamishkan
-teimanah
+mishpechot | benei | Kehat | yachanu
+al | yerekh | hamishkan | teimanah
 
 3:30
 unesi | veit | av | lemishpechot | hakehati
-Elitzafan | ben | Uzi'el
+Elitzafan
+ben | Uzi'el
 
 3:31
 umishmartam | ha'aron | vehashulchan | vehamenorah | vehamizbechot
@@ -178,27 +180,28 @@ avodato
 
 3:32
 unesi | nesi'ei | halevi
-El'azar | ben | Aharon | hakohen
+El'azar
+ben | Aharon | hakohen
 pekudat
 shomerei | mishmeret | hakodesh
 
 3:33
-Limrari | mishpachat | hamachli | umishpachat
-hamushi
-eleh | hem | mishpechot | Merari
+Limrari | mishpachat | hamachli
+umishpachat
+hamushi | eleh | hem | mishpechot | Merari
 
 3:34
 ufekudeihem | bemispar | kol | zakhar | miben | chodesh | vama'elah
 sheshet | alafim | umatayim
 
 3:35
-unesi | veit | av | lemishpechot | Merari
-Tzuri'el | ben | Avichayil | al | yerekh | hamishkan | yachanu
+unesi | veit | av | lemishpechot | Merari | Tzuri'el
+ben | Avichayil
+al | yerekh | hamishkan | yachanu
 tzafonah
 
 3:36
-ufekudat | mishmeret | benei | Merari
-karshei | hamishkan | uverichav
+ufekudat | mishmeret | benei | Merari | karshei | hamishkan | uverichav
 ve'amudav | va'adanav
 vekhol | kelav
 vekhol
@@ -212,13 +215,15 @@ umeitereihem
 
 3:38
 vehachonim | lifnei | hamishkan | kedemah | lifnei | ohel | mo'ed | mizrachah | Mosheh | Ve'aharon | uvanav | shomerim | mishmeret | hamikdash
-lemishmeret | benei | Yisra'el
+lemishmeret
+benei | Yisra'el
 vehazar | hakarev
 yumat
 
 3:39
 kol | pekudei | halviyim | asher | pakad | Mosheh | Ve'aharon | al | pi | Yahweh
-lemishpechotam | kol | zakhar | miben | chodesh | vama'lah
+lemishpechotam
+kol | zakhar | miben | chodesh | vama'lah
 shenayim | ve'esrim
 alef
 
@@ -229,15 +234,18 @@ vesa
 et | mispar | shemotam
 
 3:41
-velakachta | et | halviyim | li | ani | Yahweh | tachat | kol | bekhor
+velakachta | et | halviyim | li | ani | Yahweh
+tachat | kol | bekhor
 bivnei | Yisra'el
-ve'et | behemat | halviyim | tachat | kol | bekhor | bevehemat | benei | Yisra'el
+ve'et | behemat | halviyim | tachat | kol | bekhor | bevehemat
+benei | Yisra'el
 
 3:42
 vaiyifkod | Mosheh
 ka'asher | tzivah | Yahweh
 oto
-et | kol | bekhor | bivnei | Yisra'el
+et | kol | bekhor
+bivnei | Yisra'el
 
 3:43
 vayhi | khol | bekhor | zakhar | bemispar | shemot | miben | chodesh | vama'lah

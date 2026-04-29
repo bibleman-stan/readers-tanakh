@@ -8,7 +8,9 @@ vena'avdeka
 
 11:2
 vaiyomer | aleihem | Nachash | ha'amoni
-bezot | ekhrot | lakhem | binkor | lakhem | kol | ein | yamin
+bezot | ekhrot | lakhem
+binkor | lakhem
+kol | ein | yamin
 vesamtiha | cherpah
 al | kol | Yisra'el
 
@@ -28,7 +30,8 @@ vaiyivku
 11:5
 vehineh | Sha'ul | ba | acharei | habakar | min | hasadeh
 vaiyomer | Sha'ul
-mah | la'am | ki | yivku | vaysaperu | lo
+mah | la'am | ki | yivku
+vaysaperu | lo
 et | divrei
 anshei | Yaveish
 
@@ -42,20 +45,21 @@ me'od
 vaiyikach | tzemed | bakar | vaynatechehu | vayshalach | bekhol | gevul | Yisra'el | beyad | hamal'akhim | lemor
 asher | einenu | yotze | acharei | Sha'ul | ve'achar | Shemu'el
 koh | ye'aseh
-livkaro
-vaiyipol | pachad | Yahweh | al | ha'am
+livkaro | vaiyipol | pachad | Yahweh | al | ha'am
 vaiyetze'u
 ke'ish | echad
 
 11:8
 vaiyifkedem
 Bevazek
-vaiyihyu | venei | Yisra'el | shelosh | me'ot | elef | ve'ish | Yehudah
+vaiyihyu | venei | Yisra'el | shelosh | me'ot | elef
+ve'ish | Yehudah
 sheloshim | alef
 
 11:9
 vaiyomeru | lamal'akhim | haba'im | koh | tomerun | le'ish | Yaveish | Gil'ad
-machar | tihyeh | lakhem | teshu'ah | kechom | hashamesh
+machar | tihyeh | lakhem | teshu'ah
+kechom | hashamesh
 vaiyavo'u | hamal'akhim | vaiyagidu | le'anshei | Yaveish
 vaiyismachu
 
@@ -85,7 +89,8 @@ unemitem
 11:13
 vaiyomer | Sha'ul
 lo | yumat | ish | baiyom | hazeh
-ki | haiyom | asah | Yahweh | teshu'ah | Beyisra'el
+ki | haiyom | asah | Yahweh | teshu'ah
+Beyisra'el
 
 11:14
 vaiyomer | Shemu'el | el | ha'am

@@ -18,8 +18,7 @@ anav | me'od | mikol | ha'adam | asher | al | penei | ha'adamah
 12:4
 vaiyomer | Yahweh | pit'om | el | Mosheh | ve'el | Aharon | ve'el | Miryam
 tze'u | shelashetekhem
-el | ohel | mo'ed
-vaiyetze'u
+el | ohel | mo'ed | vaiyetze'u
 shelashetam
 
 12:5
@@ -34,8 +33,8 @@ sheneihem
 vaiyomer
 shim'u | na | devarai
 im | yihyeh | nevi'akhem
-Yahweh | bamar'ah | elav | etvada | bachalom
-adaber | bo
+Yahweh | bamar'ah | elav | etvada
+bachalom | adaber | bo
 
 12:7
 lo | khen
@@ -45,7 +44,8 @@ ne'eman | hu
 12:8
 peh | el | peh | adaber | bo | umar'eh | velo | vechidot
 utemunat | Yahweh
-yabit | umadua | lo | yeretem
+yabit
+umadua | lo | yeretem
 ledaber | be'avdi | Vemosheh
 
 12:9
@@ -90,6 +90,6 @@ veha'am | lo | nasa
 ad | he'asef | Miryam
 
 12:16
-ve'achar | nase'u | ha'am | Mechatzerot
-vaiyachanu
+ve'achar | nase'u | ha'am
+Mechatzerot | vaiyachanu
 bemidbar | Paran

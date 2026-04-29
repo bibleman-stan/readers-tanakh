@@ -1,7 +1,7 @@
 65:1
 Nidrashti | lelo | sha'alu
-Nimtzeti | lelo | vikshuni
-amarti | hineni | hineni
+Nimtzeti
+lelo | vikshuni | amarti | hineni | hineni
 el | goy
 lo | kora | vishmi
 
@@ -20,17 +20,22 @@ al | halevenim
 65:4
 haiyoshevim | bakevarim | uvanetzurim
 yalinu
-ha'okhelim | besar | hachazir | uferak | pigulim | keleihem
+ha'okhelim | besar | hachazir
+uferak | pigulim
+keleihem
 
 65:5
 ha'omerim | kerav | eleikha
-al | tigash | bi | ki | kedashticha
+al | tigash | bi
+ki | kedashticha
 eleh | ashan | be'api
-esh | yokedet | kol | haiyom
+esh | yokedet
+kol | haiyom
 
 65:6
 hineh | khetuvah
-lefanai | lo | echeseh | ki | im | shilamti
+lefanai
+lo | echeseh | ki | im | shilamti
 veshilamti
 al | cheikam
 
@@ -42,8 +47,9 @@ cherefuni | umadoti | fe'ulatam | rishonah | al | cheikam
 
 65:8
 koh | amar | Yahweh | ka'asher | yimatze | hatirovosh | ba'eshkol
-ve'amar | al | tashchitehu | ki | verakhah
-bo | ken | e'eseh | lema'an | avadai
+ve'amar | al | tashchitehu
+ki | verakhah | bo
+ken | e'eseh | lema'an | avadai
 levilti
 hashchit | hakol
 
@@ -82,30 +88,37 @@ hineh | avadai | yismachu
 ve'atem | tevoshu
 
 65:14
-hineh | avadai | yaronu | mituv | lev
-ve'atem | titz'aku | mike'ev | lev | umishever | ruach
-teyelilu
+hineh | avadai | yaronu
+mituv | lev
+ve'atem | titz'aku | mike'ev | lev
+umishever | ruach | teyelilu
 
 65:15
 vehinachtem | shimkhem | lishvu'ah | livchirai
 vehemitekha
-Adonai | Yahweh | vela'avadav | yikra
+Adonai | Yahweh
+vela'avadav | yikra
 shem | acher
 
 65:16
 asher | hamitbarekh | ba'aretz | yitbarekh | belohei | amen
 vehanishba | ba'aretz
-yishava | belohei | amen | ki | Nishkechu | hatzarot | harishonot
-vekhi | Nisteru | me'einai
+yishava
+belohei | amen
+ki | Nishkechu | hatzarot | harishonot
+vekhi | Nisteru
+me'einai
 
 65:17
 ki | hini | vore | shamayim | chadashim
-va'aretz | chadashah | velo | tizakharnah | harishonot | velo | ta'aleinah
+va'aretz | chadashah
+velo | tizakharnah | harishonot
+velo | ta'aleinah
 al | lev
 
 65:18
-ki | im | sisu | vegilu | adei | ad | asher
-ani | vore | ki | hini | vore | et | Yerushalim | gilah
+ki | im | sisu | vegilu | adei | ad | asher | ani | vore
+ki | hini | vore | et | Yerushalim | gilah
 ve'amah | masos
 
 65:19
@@ -116,8 +129,10 @@ vekol | ze'akah
 
 65:20
 lo | yihyeh | misham | od | ul | yamim | vezaken | asher | lo | yemale
-et | yamav | ki | hana'ar | ben | me'ah | shanah | yamut
-vehachote | ben | me'ah | shanah
+et | yamav
+ki | hana'ar | ben | me'ah | shanah | yamut
+vehachote
+ben | me'ah | shanah
 yekulal
 
 65:21
@@ -127,10 +142,10 @@ ve'akhelu
 piryam
 
 65:22
-lo | yivnu | ve'acher | yeshev
-lo | yite'u
+lo | yivnu | ve'acher | yeshev | lo | yite'u
 ve'acher | yokhel
-ki | khimei | ha'etz | yemei | ami | uma'aseh | yedeihem
+ki | khimei | ha'etz | yemei | ami
+uma'aseh | yedeihem
 yevalu | vechirai
 
 65:23
@@ -143,8 +158,7 @@ itam
 65:24
 vehayah | terem | yikra'u
 va'ani | e'eneh
-od | hem | medaberim
-va'ani | eshma
+od | hem | medaberim | va'ani | eshma
 
 65:25
 ze'ev | vetaleh | yir'u | khe'echad | ve'aryeh | kabakar | yokhal | teven

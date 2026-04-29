@@ -17,7 +17,8 @@ eshet | Na'aman
 vatomer | el | gevirtah
 achalei | adoni
 lifnei | hanavi | asher | Beshomeron
-az | ye'esof | oto | mitzara'to
+az | ye'esof | oto
+mitzara'to
 
 5:4
 vaiyavo
@@ -43,8 +44,8 @@ va'asafto | mitzara'to
 5:7
 vayhi | kikro | melekh | Yisra'el | et | hasefer | vaiyikra | begadav | vaiyomer | ha'elohim | ani | lehamit | ulehachayot
 ki | zeh | sholeach | elai
-le'esof | ish | mitzara'to | ki | akh | de'u | na | ure'u | ki | mit'aneh | hu
-li
+le'esof | ish | mitzara'to | ki | akh | de'u | na | ure'u
+ki | mit'aneh | hu | li
 
 5:8
 vayhi | kishmoa | Elisha | ish | ha'elohim | ki | kara | melekh | Yisra'el | et | begadav
@@ -52,7 +53,8 @@ vaiyishlach | el | hamelekh | lemor
 lamah | kara'ta | begadeikha
 yavo | na | elai
 veyeda
-ki | yesh | navi | Beyisra'el
+ki | yesh | navi
+Beyisra'el
 
 5:9
 vaiyavo | Na'aman
@@ -118,12 +120,11 @@ ki
 im | Layahweh
 
 5:18
-ladavar | hazeh
-yislach | Yahweh
+ladavar | hazeh | yislach | Yahweh
 le'avdekha
 bevo | adoni | veit | Rimon | lehishtachavot | shamah | vehu | nish'an | al | yadi | vehishtachaveiti | beit | Rimon
-behishtachavayati | beit | Rimon
-yislach | Yahweh | le'avdekha | badavar | hazeh
+behishtachavayati | beit | Rimon | yislach | Yahweh | le'avdekha
+badavar | hazeh
 
 5:19
 vaiyomer | lo
@@ -134,7 +135,8 @@ kivrat | aretz
 vaiyomer | Geichazi | na'ar | Elisha | ish | ha'elohim
 hineh | chasakh | adoni | et | Na'aman | ha'arami | hazeh | mikachat | miyado
 et | asher | hevi
-chai | Yahweh | ki | im | ratzti | acharav | velakachti | me'ito | me'umah
+chai | Yahweh | ki | im | ratzti | acharav
+velakachti | me'ito | me'umah
 
 5:21
 vaiyirdof | Geichazi
@@ -170,9 +172,7 @@ vaiyelekhu
 5:25
 vehu | va | vaiya'amod | el | adonav
 vaiyomer | elav | Elisha
-me'an
-Gechazi
-vaiyomer
+me'an | Gechazi | vaiyomer
 lo | halakh | avdekha
 aneh | va'anah
 
@@ -185,6 +185,6 @@ va'avadim
 ushefachot
 
 5:27
-vetzara'at | Na'aman | tidbak | bekha | uvezar'akha | le'olam
-vaiyetze | milefanav
+vetzara'at | Na'aman | tidbak | bekha
+uvezar'akha | le'olam | vaiyetze | milefanav
 metzora | kashaleg

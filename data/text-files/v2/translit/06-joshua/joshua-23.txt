@@ -1,7 +1,7 @@
 23:1
 vayhi | miyamim | rabim
-acharei | asher | heniach | Yahweh | Leyisra'el | mikol | oyeveihem | misaviv
-Vihoshua | zaken
+acharei | asher | heniach | Yahweh | Leyisra'el | mikol | oyeveihem
+misaviv | Vihoshua | zaken
 ba
 baiyamim
 
@@ -25,14 +25,12 @@ vehaiyam | hagadol | mevo | hashamesh
 
 23:5
 Vayahweh | eloheikhem | hu | yehdofem | mipeneikhem
-vehorish | otam | milifneikhem
-virishtem | et | artzam
+vehorish | otam | milifneikhem | virishtem | et | artzam
 ka'asher | diber | Yahweh | eloheikhem
 lakhem
 
 23:6
-vachazaktem | me'od
-lishmor | vela'asot
+vachazaktem | me'od | lishmor | vela'asot
 et | kol | hakatuv | besefer
 torat | Mosheh
 levilti | sur | mimenu
@@ -41,12 +39,16 @@ yamin | usemol
 23:7
 levilti | vo | bagoyim | ha'eleh
 hanish'arim | ha'eleh
-itekhem | uveshem | eloheihem | lo | tazkiru | velo | tashbi'u
-velo | ta'avdum | velo | tishtachavu | lahem
+itekhem
+uveshem | eloheihem | lo | tazkiru | velo | tashbi'u
+velo | ta'avdum
+velo | tishtachavu
+lahem
 
 23:8
 ki | im | Bayahweh | eloheikhem
-tidbaku | ka'asher | asitem
+tidbaku
+ka'asher | asitem
 ad
 haiyom | hazeh
 
@@ -60,8 +62,9 @@ haiyom | hazeh
 
 23:10
 ish | echad | mikem
-yirdof | alef | ki | Yahweh | eloheikhem | hu | hanilcham | lakhem | ka'asher
-diber | lakhem
+yirdof | alef
+ki | Yahweh | eloheikhem | hu | hanilcham | lakhem
+ka'asher | diber | lakhem
 
 23:11
 venishmartem | me'od | lenafshoteikhem
@@ -81,24 +84,23 @@ ki | lo | yosif | Yahweh | eloheikhem | lehorish | et | hagoyim | ha'eleh
 milifneikhem
 vehayu | lakhem | lefach | ulemokesh | uleshotet | betzideikhem | velitzninim | be'eineikhem
 ad | avadekhem | me'al | ha'adamah | hatovah | hazot | asher | natan | lakhem
-Yahweh
-eloheikhem
+Yahweh | eloheikhem
 
 23:14
-vehineh | anokhi | holekh | haiyom | bederekh | kol | ha'aretz
+vehineh | anokhi | holekh | haiyom | bederekh
+kol | ha'aretz
 vida'tem | bekhol | levavkhem | uvekhol | nafshekhem | ki | lo | nafal | davar | echad | mikol | hadevarim | hatovim | asher | diber | Yahweh | eloheikhem | aleikhem
 hakol | ba'u | lakhem
-lo | nafal | mimenu
-davar | echad
+lo | nafal | mimenu | davar | echad
 
 23:15
 vehayah | ka'asher | ba | aleikhem | kol | hadavar | hatov
 asher | diber | Yahweh | eloheikhem
-aleikhem | ken | yavi | Yahweh | aleikhem | et | kol | hadavar | hara
+aleikhem
+ken | yavi | Yahweh | aleikhem | et | kol | hadavar | hara
 ad | hashmido | otkhem | me'al | ha'adamah | hatovah | hazot
 asher | natan | lakhem
-Yahweh
-eloheikhem
+Yahweh | eloheikhem
 
 23:16
 be'averekhem | et | berit | Yahweh | eloheikhem | asher | tzivah | etkhem

@@ -1,10 +1,13 @@
 13:1
 koh | amar | Yahweh | elai | halokh | vekanita | lekha | ezor | pishtim
 vesamto
-al | mateneikha | uvamayim | lo | tevi'ehu
+al | mateneikha
+uvamayim
+lo | tevi'ehu
 
 13:2
-va'ekneh | et | ha'ezor | kidvar | Yahweh
+va'ekneh | et | ha'ezor
+kidvar | Yahweh
 va'asim
 al | matenai
 
@@ -25,17 +28,17 @@ oti
 
 13:6
 vayhi
-miketz
-yamim | rabim
+miketz | yamim | rabim
 vaiyomer | Yahweh | elai | kum | lekh | Peratah
 vekach | misham | et | ha'ezor | asher | tzivitikha
 letamenov | sham
 
 13:7
 va'elekh | Peratah
-va'echpor | va'ekach | et | ha'ezor | min | hamakom
-asher | temantiv | shamah
-vehineh | Nishchat | ha'ezor | lo | yitzlach | lakol
+va'echpor | va'ekach | et | ha'ezor | min | hamakom | asher | temantiv | shamah
+vehineh | Nishchat | ha'ezor
+lo | yitzlach
+lakol
 
 13:8
 vayhi | devar | Yahweh
@@ -63,7 +66,8 @@ ve'amarta | aleihem | et | hadavar | hazeh | koh | amar | Yahweh | elohei | Yisr
 kol | nevel
 yimale | yayin
 ve'ameru | eleikha
-hayadoa | lo | neda | ki | khol | nevel
+hayadoa | lo | neda
+ki | khol | nevel
 yimale | yayin
 
 13:13
@@ -72,11 +76,14 @@ shikaron
 
 13:14
 venipatztim | ish | el | achiv | veha'avot | vehabanim | yachdav
-ne'um | Yahweh | lo | echmol | velo | achus | velo | arachem | mehashchitam
+ne'um | Yahweh
+lo | echmol | velo | achus | velo | arachem
+mehashchitam
 
 13:15
 shim'u | veha'azinu
-al | tigbahu | ki | Yahweh
+al | tigbahu
+ki | Yahweh
 diber
 
 13:16
@@ -88,8 +95,11 @@ veyashit
 la'arafel
 
 13:17
-ve'im | lo | tishma'uha | bemistarim | tivkeh | nafshi | mipenei | gevah
-vedamoa | tidma | veterad | eini | dim'ah | ki | Nishbah
+ve'im | lo | tishma'uha
+bemistarim | tivkeh | nafshi
+mipenei | gevah
+vedamoa | tidma | veterad | eini | dim'ah
+ki | Nishbah
 eder | Yahweh
 
 13:18
@@ -107,8 +117,7 @@ hagelat | shelomim
 
 13:20
 se'i | eineikhem | ure'i
-haba'im | mitzafon
-aiyeh | ha'eder | Nitan | lakh
+haba'im | mitzafon | aiyeh | ha'eder | Nitan | lakh
 tzon
 tif'artekh
 
@@ -119,8 +128,8 @@ halo | chavalim | yochezukh | kemo
 eshet | ledah
 
 13:22
-vekhi | tomeri | bilvavekh | madua
-kera'uni | eleh | bero | avonekh | Niglu | shulayikh
+vekhi | tomeri | bilvavekh | madua | kera'uni | eleh
+bero | avonekh | Niglu | shulayikh
 Nechmesu | akevayikh
 
 13:23
@@ -136,8 +145,7 @@ va'afitzem | kekash | over
 leruach | midbar
 
 13:25
-zeh | goralekh | menot | midayikh | me'iti
-ne'um | Yahweh | asher | shakhachat | oti
+zeh | goralekh | menot | midayikh | me'iti | ne'um | Yahweh | asher | shakhachat | oti
 vativtechi | bashaker
 
 13:26
@@ -152,5 +160,6 @@ al | geva'ot | basadeh
 ra'iti
 shikutzayikh
 o | lokh | Yerushalim
-lo | tithari | acharei | matai
+lo | tithari
+acharei | matai
 od

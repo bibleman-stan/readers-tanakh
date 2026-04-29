@@ -11,8 +11,8 @@ bamidbar
 16:3
 vaiyomeru | alehem | benei | Yisra'el | mi | yiten | mutenu | veyad | Yahweh | be'eretz | Mitzrayim
 beshivtenu | al | sir | habasar | be'akhelenu | lechem
-lasoa | ki | hotzetem | otanu | el | hamidbar | hazeh
-lehamit | et | kol | hakahal | hazeh | bara'av
+lasoa
+ki | hotzetem | otanu | el | hamidbar | hazeh | lehamit | et | kol | hakahal | hazeh | bara'av
 
 16:4
 vaiyomer | Yahweh | el | Mosheh
@@ -38,17 +38,20 @@ ki | Yahweh | hotzi | etkhem
 me'eretz | Mitzrayim
 
 16:7
-uvoker | ure'item | et | kevod | Yahweh | beshame'o | et | telunoteikhem
+uvoker | ure'item | et | kevod | Yahweh
+beshame'o | et | telunoteikhem
 al | Yahweh
-venachnu | mah | ki | talonu
+venachnu | mah
+ki | talonu
 aleinu
 
 16:8
 vaiyomer | Mosheh | betet | Yahweh | lakhem | ba'erev | basar | le'ekhol | velechem | baboker | lisboa
 bishmoa | Yahweh | et | telunoteikhem
-asher | atem | malinim
-alav
-venachnu | mah | lo | aleinu | telunoteikhem | ki | al | Yahweh
+asher | atem | malinim | alav
+venachnu | mah
+lo | aleinu | telunoteikhem
+ki | al | Yahweh
 
 16:9
 vaiyomer | Mosheh | el | Aharon
@@ -63,7 +66,8 @@ vayhi | kedaber | Aharon | el | kol | adat | benei | Yisra'el
 vaiyifnu
 el | hamidbar
 vehineh | kevod | Yahweh
-Nir'ah | be'anan
+Nir'ah
+be'anan
 
 16:11
 vaydaber | Yahweh
@@ -72,11 +76,9 @@ el | Mosheh | lemor
 16:12
 shama'ti | et | telunot | benei | Yisra'el
 daber | alehem | lemor | bein | ha'arbayim | tokhelu | vasar
-uvaboker
-tisbe'u | lachem
+uvaboker | tisbe'u | lachem
 vida'tem
-ki | ani | Yahweh
-eloheikhem
+ki | ani | Yahweh | eloheikhem
 
 16:13
 vayhi | va'erev
@@ -97,22 +99,22 @@ al | ha'aretz
 16:15
 vaiyir'u | venei | Yisra'el | vaiyomeru | ish | el | achiv | man | hu
 ki | lo | yade'u
-mah | hu
-vaiyomer | Mosheh | alehem
+mah | hu | vaiyomer | Mosheh | alehem
 hu | halechem | asher | natan | Yahweh | lakhem
 le'okhlah
 
 16:16
 zeh | hadavar | asher | tzivah | Yahweh
-liktu | mimenu
-ish | lefi | akhelo
+liktu | mimenu | ish
+lefi | akhelo
 omer | lagulgolet | mispar | nafshoteikhem
 ish | la'asher | be'oholo
 tikachu
 
 16:17
 vaiya'asu | khen
-benei | Yisra'el | vaiyilketu
+benei | Yisra'el
+vaiyilketu
 hamarbeh
 vehamam'it
 
@@ -127,8 +129,7 @@ lakatu
 vaiyomer | Mosheh
 alehem
 ish
-al | yoter | mimenu
-ad | boker
+al | yoter | mimenu | ad | boker
 
 16:20
 velo | shame'u | el | Mosheh | vaiyotiru | anashim | mimenu | ad | boker
@@ -139,7 +140,8 @@ Mosheh
 
 16:21
 vaiyilketu | oto | baboker | baboker
-ish | kefi | akhelo
+ish
+kefi | akhelo
 vecham | hashemesh
 venamas
 
@@ -168,11 +170,15 @@ verimah | lo | hayetah | bo
 vaiyomer | Mosheh | ikhluhu | haiyom
 ki | shabat | haiyom
 Layahweh
-haiyom | lo | timtza'uhu | basadeh
+haiyom
+lo | timtza'uhu
+basadeh
 
 16:26
 sheshet | yamim
-tilketuhu | uvaiyom | hashevi'i | shabat | lo | yihyeh | bo
+tilketuhu
+uvaiyom | hashevi'i | shabat
+lo | yihyeh | bo
 
 16:27
 vayhi | baiyom | hashevi'i
@@ -182,15 +188,14 @@ lilkot | velo | matza'u
 16:28
 vaiyomer | Yahweh
 el | Mosheh
-ad | anah | me'antem
-lishmor | mitzvotai
-vetorotai
+ad | anah | me'antem | lishmor | mitzvotai | vetorotai
 
 16:29
 re'u | ki | Yahweh | natan | lakhem | hashabat
 al | ken | hu | noten | lakhem | baiyom | hashishi
 lechem | yomayim
-shevu | ish | tachtav | al | yetze | ish | mimekomo | baiyom | hashevi'i
+shevu | ish | tachtav | al | yetze | ish | mimekomo
+baiyom | hashevi'i
 
 16:30
 vaiyishbetu | ha'am
@@ -206,12 +211,14 @@ veta'mo | ketzapichit | bidvash
 vaiyomer | Mosheh | zeh | hadavar | asher | tzivah | Yahweh
 melo | ha'omer | mimenu | lemishmeret | ledoroteikhem
 lema'an | yir'u | et | halechem | asher | he'ekhalti | etkhem | bamidbar
-behotzi'i | etkhem | me'eretz | Mitzrayim
+behotzi'i | etkhem
+me'eretz | Mitzrayim
 
 16:33
 vaiyomer | Mosheh | el | Aharon | kach | tzintzenet | achat | veten | shamah | melo | ha'omer
 man
-vehanach | oto | lifnei | Yahweh | lemishmeret | ledoroteikhem
+vehanach | oto | lifnei | Yahweh
+lemishmeret | ledoroteikhem
 
 16:34
 ka'asher | tzivah | Yahweh
@@ -230,5 +237,4 @@ eretz | Kena'an
 
 16:36
 veha'omer
-asirit | ha'eifah
-hu
+asirit | ha'eifah | hu

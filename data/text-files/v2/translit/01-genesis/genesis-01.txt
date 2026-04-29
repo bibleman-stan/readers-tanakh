@@ -3,8 +3,10 @@ bereshit | bara | elohim | et | hashamayim | ve'et | ha'aretz
 
 1:2
 veha'aretz | hayetah | tohu | vavohu
-vechoshekh | al | penei | tehom
-veruach | elohim | merachefet | al | penei | hamayim
+vechoshekh
+al | penei | tehom
+veruach | elohim
+merachefet | al | penei | hamayim
 
 1:3
 vaiyomer | elohim
@@ -109,7 +111,8 @@ vaiyomer | elohim
 yishretzu | hamayim
 sheretz
 nefesh | chaiyah
-ve'of | ye'ofef | al | ha'aretz | al | penei
+ve'of | ye'ofef | al | ha'aretz
+al | penei
 rekia | hashamayim
 
 1:21
@@ -145,14 +148,16 @@ ki | tov
 
 1:26
 vaiyomer | elohim
-na'aseh | adam | betzalmenu | kidmutenu
+na'aseh | adam | betzalmenu
+kidmutenu
 veyirdu | vidgat | haiyam | uve'of | hashamayim | uvabehemah | uvekhol | ha'aretz
 uvekhol | haremes
 haromes | al | ha'aretz
 
 1:27
 vaiyivra | elohim | et | ha'adam | betzalmo
-betzelem | elohim | bara | oto
+betzelem | elohim
+bara | oto
 zakhar | unekevah
 bara | otam
 
@@ -166,7 +171,8 @@ haromeset | al | ha'aretz
 1:29
 vaiyomer | elohim | hineh | natati | lakhem | et | kol | esev | zorea | zera | asher | al | penei | khol | ha'aretz
 ve'et | kol | ha'etz | asher | bo | feri | etz
-zorea | zara | lakhem | yihyeh
+zorea | zara
+lakhem | yihyeh
 le'okhlah
 
 1:30
@@ -177,6 +183,5 @@ vayhi | khen
 
 1:31
 vaiyar | elohim | et | kol | asher | asah
-vehineh | tov | me'od
-vayhi | erev | vayhi | voker
+vehineh | tov | me'od | vayhi | erev | vayhi | voker
 yom | hashishi

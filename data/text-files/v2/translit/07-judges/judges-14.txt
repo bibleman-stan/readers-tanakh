@@ -13,8 +13,7 @@ le'ishah
 
 14:3
 vaiyomer | lo | aviv | ve'imo | ha'ein | bivnot | acheikha | uvekhol | ami | ishah
-ki | atah | holekh | lakachat | ishah | mipelishtim
-ha'arelim
+ki | atah | holekh | lakachat | ishah | mipelishtim | ha'arelim
 vaiyomer | Shimshon | el | aviv | otah | kach | li
 ki | hi
 yasherah | ve'einai
@@ -33,8 +32,7 @@ sho'eg | likrato
 
 14:6
 vatitzlach | alav | ruach | Yahweh | vayshase'ehu | keshasa | hagedi
-ume'umah
-ein | beyado | velo | higid | le'aviv | ule'imo
+ume'umah | ein | beyado | velo | higid | le'aviv | ule'imo
 et | asher | asah
 
 14:7
@@ -54,7 +52,8 @@ vaiyirdehu | el | kapav | vaiyelekh | halokh | ve'akhol
 vaiyelekh | el | aviv | ve'el | imo
 vaiyiten | lahem
 vaiyokhelu
-velo | higid | lahem | ki | migeviyat | ha'aryeh
+velo | higid | lahem
+ki | migeviyat | ha'aryeh
 radah | hadevash
 
 14:10
@@ -66,7 +65,8 @@ habachurim
 
 14:11
 vayhi
-kir'otam | oto | vaiyikchu | sheloshim | mere'im
+kir'otam | oto
+vaiyikchu | sheloshim | mere'im
 vaiyihyu
 ito
 
@@ -96,7 +96,8 @@ sheloshet | yamim
 
 14:15
 vayhi | baiyom | hashevi'i | vaiyomeru | le'eshet | Shimshon | pati | et | ishekh | veyaged | lanu | et | hachidah
-pen | nisrof | otakh | ve'et | beit | avikh | ba'esh
+pen | nisrof | otakh | ve'et | beit | avikh
+ba'esh
 halyareshenu
 keratem | lanu
 halo
@@ -118,10 +119,8 @@ livnei | amah
 14:18
 vaiyomeru | lo | anshei | ha'ir | baiyom | hashevi'i | beterem | yavo | hacharsah
 mah | matok | midevash | umeh | az
-me'ari
-vaiyomer | lahem
-lule | charashtem | be'eglati | lo | metzatem
-chidati
+me'ari | vaiyomer | lahem
+lule | charashtem | be'eglati | lo | metzatem | chidati
 
 14:19
 vatitzlach | alav | ruach | Yahweh | vaiyered | Ashkelon | vaiyakh | mehem | sheloshim | ish | vaiyikach | et | chalitzotam

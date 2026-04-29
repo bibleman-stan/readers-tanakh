@@ -6,8 +6,7 @@ tzar | mimenu
 
 6:2
 nelekhah | na | ad | Haiyarden | venikchah | misham | ish | korah | echat | vena'aseh | lanu | sham | makom
-lashevet | sham
-vaiyomer
+lashevet | sham | vaiyomer
 lekhu
 
 6:3
@@ -52,8 +51,8 @@ tachanoti
 
 6:9
 vaiyishlach | ish | ha'elohim | el | melekh | Yisra'el | lemor
-hishamer | me'avor
-hamakom | hazeh | ki | sham
+hishamer | me'avor | hamakom | hazeh
+ki | sham
 Aram | nechitim
 
 6:10
@@ -65,13 +64,14 @@ vaiyisa'er | lev | melekh | Aram
 al | hadavar
 hazeh
 vaiyikra | el | avadav | vaiyomer | aleihem
-halo | tagidu | li | mi | mishelanu
-el | melekh | Yisra'el
+halo | tagidu | li
+mi | mishelanu | el | melekh | Yisra'el
 
 6:12
 vaiyomer | achad | me'avadav
 lo
-adoni | hamelekh | ki | Elisha | hanavi | asher | Beyisra'el
+adoni | hamelekh
+ki | Elisha | hanavi | asher | Beyisra'el
 yagid | lemelekh | Yisra'el
 et | hadevarim | asher | tedaber
 bachadar | mishkavekha
@@ -100,9 +100,9 @@ eikhah | na'aseh
 
 6:16
 vaiyomer
-al | tira | ki | rabim | asher | itanu
-me'asher
-otam
+al | tira
+ki | rabim | asher | itanu
+me'asher | otam
 
 6:17
 vaiyitpalel | Elisha | vaiyomar
@@ -122,8 +122,7 @@ kidvar | Elisha
 
 6:19
 vaiyomer | alehem | Elisha | lo | zeh | haderekh | velo | zoh | ha'ir
-lekhu | acharai
-ve'olikhah | etkhem
+lekhu | acharai | ve'olikhah | etkhem
 el | ha'ish | asher | tevakeshun
 vaiyolekh | otam
 Shomeronah
@@ -140,8 +139,7 @@ vehineh | betokh | Shomeron
 
 6:21
 vaiyomer | melekh | Yisra'el | el | Elisha
-kir'oto
-otam
+kir'oto | otam
 ha'akeh | akeh
 avi
 
@@ -158,7 +156,8 @@ vaiyikhreh | lahem | kerah | gedolah | vaiyokhelu | vaiyishtu
 vayshalechem
 vaiyelekhu
 el | adoneihem | velo | yasefu | od | gedudei | Aram
-lavo | be'eretz | Yisra'el
+lavo
+be'eretz | Yisra'el
 
 6:24
 vayhi | acharei | khen
@@ -185,8 +184,7 @@ adoni | hamelekh
 
 6:27
 vaiyomer | al | yoshi'ekh | Yahweh
-me'ayin
-oshi'ekh
+me'ayin | oshi'ekh
 hamin | hagoren
 o | min | haiyakev
 
@@ -213,7 +211,8 @@ vehineh | hasak | al | besaro | mibayit
 
 6:31
 vaiyomer
-koh | ya'aseh | li | elohim | vekhoh | yosif
+koh | ya'aseh | li | elohim
+vekhoh | yosif
 im | ya'amod | rosh | Elisha | ben | Shafat | alav
 haiyom
 

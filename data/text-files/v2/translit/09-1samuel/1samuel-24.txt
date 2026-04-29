@@ -5,9 +5,7 @@ bimtzadot | Ein | Gedi
 
 24:2
 vayhi | ka'asher | shav | Sha'ul
-me'acharei
-pelishtim
-vaiyagidu | lo | lemor
+me'acharei | pelishtim | vaiyagidu | lo | lemor
 hineh | David | bemidbar
 Ein | Gedi
 
@@ -40,7 +38,8 @@ et | kanaf | asher | Lesha'ul
 
 24:7
 vaiyomer | la'anashav | chalilah | li | Meyahweh | im | e'eseh | et | hadavar | hazeh | ladoni | limshiach | Yahweh
-lishloach | yadi | bo | ki | meshiach | Yahweh
+lishloach | yadi | bo
+ki | meshiach | Yahweh
 hu
 
 24:8
@@ -62,14 +61,14 @@ vaiyishtachu
 vaiyomer | David | Lesha'ul
 lamah | tishma | et | divrei | adam
 lemor
-hineh | David | mevakesh
-ra'atekha
+hineh | David | mevakesh | ra'atekha
 
 24:11
 hineh | haiyom | hazeh | ra'u | eineikha | et | asher | netanekha | Yahweh | haiyom | beyadi | bame'arah
 ve'amar | laharagakha
 vatachos | aleikha
-va'omar | lo | eshlach | yadi | badoni | ki | meshiach | Yahweh
+va'omar | lo | eshlach | yadi | badoni
+ki | meshiach | Yahweh
 hu
 
 24:12
@@ -82,8 +81,8 @@ lekachtah
 
 24:13
 yishpot | Yahweh | beini | uveinekha
-unekamani | Yahweh | mimeka
-veyadi
+unekamani | Yahweh
+mimeka | veyadi
 lo | tihyeh | bakh
 
 24:14
@@ -97,8 +96,7 @@ acharei | mi | yatza | melekh | Yisra'el
 acharei | mi
 atah | rodef
 acharei | kelev | met
-acharei
-par'osh | echad
+acharei | par'osh | echad
 
 24:16
 vehayah | Yahweh | ledaiyan
@@ -116,7 +114,8 @@ vaiyevek
 
 24:18
 vaiyomer | el | David
-tzadik | atah | mimeni | ki | atah | gemaltani | hatovah
+tzadik | atah | mimeni
+ki | atah | gemaltani | hatovah
 va'ani
 gemaltikha | hara'ah
 
@@ -135,15 +134,16 @@ tachat | haiyom | hazeh | asher | asitah
 li
 
 24:21
-ve'atah | hineh | yada'ti | ki | malokh
+ve'atah | hineh | yada'ti
+ki | malokh
 timlokh
-vekamah | beyadekha | mamlekhet
-Yisra'el
+vekamah | beyadekha | mamlekhet | Yisra'el
 
 24:22
 ve'atah | hishave'ah | li | Bayahweh
-im | takhrit | et | zar'i | acharai
-ve'im | tashmid | et | shemi | mibeit | avi
+im | takhrit | et | zar'i
+acharai | ve'im | tashmid | et | shemi
+mibeit | avi
 
 24:23
 vaiyishava | David

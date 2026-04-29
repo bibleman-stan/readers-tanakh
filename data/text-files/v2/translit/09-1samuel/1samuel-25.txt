@@ -7,8 +7,7 @@ vaiyered
 el | midbar | Paran
 
 25:2
-ve'ish | Bema'on | uma'asehu | Vakarmel | veha'ish | gadol | me'od
-velo | tzon | sheloshet | alafim
+ve'ish | Bema'on | uma'asehu | Vakarmel | veha'ish | gadol | me'od | velo | tzon | sheloshet | alafim
 ve'elef | izim
 vayhi | bigzoz | et | tzono
 Bakarmel
@@ -18,12 +17,12 @@ veshem | ha'ish | Naval
 veshem | ishto
 Avigayil
 veha'ishah | toat | sekhel | vifat | to'ar
-veha'ish | kasheh | vera | ma'alalim
-vehu | khalvov
+veha'ish | kasheh | vera | ma'alalim | vehu | khalvov
 
 25:4
 vaiyishma | David
-bamidbar | ki | gozez | Naval
+bamidbar
+ki | gozez | Naval
 et | tzono
 
 25:5
@@ -40,7 +39,8 @@ vekhol | asher | lekha
 shalom
 
 25:7
-ve'atah | shama'ti | ki | gozezim | lakh
+ve'atah | shama'ti
+ki | gozezim | lakh
 atah | haro'im | asher | lekha | hayu | imanu
 lo | hekhlamnum | velo | Nifkad | lahem | me'umah | kol | yemei
 heyotam | Bakarmel
@@ -62,7 +62,8 @@ vaiya'an | Naval | et | avdei | David | vaiyomer
 mi | David | umi | ven | Yishai
 haiyom | rabu | avadim
 hamitparetzim
-ish | mipenei | adonav
+ish
+mipenei | adonav
 
 25:11
 velakachti | et | lachmi | ve'et | meimai
@@ -84,30 +85,29 @@ vaiyomer | David | la'anashav | chigru | ish | et | charbo | vaiyachgeru | ish |
 vaiyachgor | gam | David
 et | charbo
 vaiya'alu | acharei | David | ke'arba | me'ot | ish
-umatayim
-yashevu | al | hakelim
+umatayim | yashevu | al | hakelim
 
 25:14
 Vela'avigayil | eshet | Naval
-higid | na'ar | echad | mehane'arim
-lemor
+higid | na'ar | echad | mehane'arim | lemor
 hineh | shalach | David | mal'akhim | mehamidbar | levarekh | et | adoneinu
 vaiya'at | bahem
 
 25:15
 veha'anashim
-tovim | lanu | me'od
-velo | hakhelamnu | velo | fakadnu | me'umah | kol | yemei | hithalakhnu | itam
-bihyotenu | basadeh
+tovim | lanu | me'od | velo | hakhelamnu | velo | fakadnu | me'umah
+kol | yemei | hithalakhnu | itam | bihyotenu | basadeh
 
 25:16
 chomah | hayu | aleinu
 gam | laylah
-gam | yomam | kol | yemei | heyotenu | imam
+gam | yomam
+kol | yemei | heyotenu | imam
 ro'im | hatzon
 
 25:17
-ve'atah | de'i | ure'i | mah | ta'asi | ki | khaltah | hara'ah | el | adoneinu
+ve'atah | de'i | ure'i | mah | ta'asi
+ki | khaltah | hara'ah | el | adoneinu
 ve'al | kol | beito
 vehu | ben | beliya'al | midaber
 elav
@@ -137,7 +137,8 @@ velo | Nifkad | mikol | asher | lo | me'umah | vaiyashev | li | ra'ah
 tachat | tovah
 
 25:22
-koh | ya'aseh | elohim | le'oyevei | David | vekhoh | yosif
+koh | ya'aseh | elohim | le'oyevei | David
+vekhoh | yosif
 im | ash'ir | mikol | asher | lo | ad | haboker | mashtin | bekir
 
 25:23
@@ -162,7 +163,8 @@ al | na | yasim | adoni | et | libo | el | ish | habeliya'al | hazeh | al | Nava
 Naval | shemo
 unevalah
 imo
-va'ani | amatekha | lo | ra'iti | et | na'arei | adoni | asher | shalacheta
+va'ani | amatekha
+lo | ra'iti | et | na'arei | adoni | asher | shalacheta
 
 25:26
 ve'atah | adoni | chai | Yahweh | vechei | nafshekha | asher | mena'akha | Yahweh | mibo | vedamim
@@ -189,10 +191,12 @@ vaiyakom | adam | lirdafekha
 ulevakesh
 et | nafshekha
 vehayetah | nefesh | adoni | tzerurah | bitzror | hachaiyim | et | Yahweh | eloheikha
-ve'et | nefesh | oyeveikha | yekalle'enah | betokh | kaf | hakala
+ve'et | nefesh | oyeveikha | yekalle'enah
+betokh | kaf | hakala
 
 25:30
-vehayah | ki | ya'aseh | Yahweh | ladoni | kekhol | asher | diber | et | hatovah
+vehayah | ki | ya'aseh | Yahweh | ladoni
+kekhol | asher | diber | et | hatovah
 aleikha
 vetzivekha | lenagid
 al | Yisra'el
@@ -206,8 +210,8 @@ et | amatekha
 
 25:32
 vaiyomer | David
-La'avigal | barukh | Yahweh | elohei | Yisra'el
-asher | shelachekh | haiyom | hazeh
+La'avigal
+barukh | Yahweh | elohei | Yisra'el | asher | shelachekh | haiyom | hazeh
 likrati
 
 25:33
@@ -217,8 +221,8 @@ vehoshea | yadi | li
 
 25:34
 ve'ulam | chai | Yahweh | elohei | Yisra'el | asher | mena'ani
-mehara
-otakh | ki | lulei | mihart | vatavoti | likrati
+mehara | otakh
+ki | lulei | mihart | vatavoti | likrati
 ki | im | Notar | Lenaval | ad | or | haboker | mashtin | bekir
 
 25:35
@@ -254,8 +258,8 @@ vaiyamot
 vaiyishma | David | ki | met | Naval
 vaiyomer | barukh | Yahweh | asher | rav | et | riv | cherpati | miyad | Naval | ve'et | avdo | chasakh | mera'ah
 ve'et | ra'at | Naval
-heshiv | Yahweh | berosho
-vaiyishlach | David | vaydaber | Ba'avigayil
+heshiv | Yahweh
+berosho | vaiyishlach | David | vaydaber | Ba'avigayil
 lekachtah | lo
 le'ishah
 
@@ -287,8 +291,7 @@ le'ishah
 
 25:43
 ve'et | Achino'am | lakach | David
-Miyizre'el
-vatihyeina | gam | sheteihen | lo
+Miyizre'el | vatihyeina | gam | sheteihen | lo
 lenashim
 
 25:44

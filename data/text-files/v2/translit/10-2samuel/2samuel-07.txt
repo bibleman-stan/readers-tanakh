@@ -7,10 +7,10 @@ mikol | oyevav
 7:2
 vaiyomer | hamelekh | el | Natan | hanavi
 re'eh | na
-anokhi | yoshev | beveit | arazim
+anokhi | yoshev
+beveit | arazim
 va'aron | ha'elohim
-yoshev
-betokh | hayri'ah
+yoshev | betokh | hayri'ah
 
 7:3
 vaiyomer | Natan | el | hamelekh
@@ -42,12 +42,13 @@ va'ehyeh | mithalekh | be'ohel | uvemishkan
 bekhol | asher | hithalakhti | bekhol | benei | Yisra'el
 hadavar | dibarti | et | achad | shivtei | Yisra'el
 asher | tziviti | lir'ot | et | ami | et | Yisra'el
-lemor | lamah | lo | venitem | li | beit | arazim
+lemor | lamah | lo | venitem | li
+beit | arazim
 
 7:8
 ve'atah | koh | tomar | le'avdi | Ledavid | koh | amar | Yahweh | tzeva'ot
-ani | lekachtikha | min | hanaveh | me'achar
-hatzon | lihyot | nagid
+ani | lekachtikha | min | hanaveh | me'achar | hatzon
+lihyot | nagid
 al | ami
 al | Yisra'el
 
@@ -63,31 +64,30 @@ od | velo | yosifu | venei | avlah | le'anoto | ka'asher | barishonah
 
 7:11
 ulemin | haiyom | asher | tziviti | shofetim | al | ami | Yisra'el
-vahanichoti | lekha | mikol | oyeveikha
-vehigid | lekha | Yahweh | ki | vayit
+vahanichoti | lekha | mikol | oyeveikha | vehigid | lekha | Yahweh
+ki | vayit
 ya'aseh | lekha | Yahweh
 
 7:12
 ki | yimle'u | yameikha | veshakhavta | et | avoteikha
 vahakimoti | et | zar'akha | achareikha | asher | yetze
-mime'eikha
-vahakhinoti
+mime'eikha | vahakhinoti
 et | mamlakhto
 
 7:13
 hu | yivneh | bayit
-lishmi | vekhonanti | et | kise | mamlakhto
-ad | olam
+lishmi | vekhonanti | et | kise | mamlakhto | ad | olam
 
 7:14
 ani | ehyeh | lo | le'av
 vehu
 yihyeh | li | leven | asher | beha'oto
-vehokhachtiv | beshevet | anashim | uvenig'ei | benei | adam
+vehokhachtiv | beshevet | anashim
+uvenig'ei | benei | adam
 
 7:15
-vechasdi | lo | yasur | mimenu | ka'asher | hasiroti | me'im | Sha'ul
-asher | hasiroti
+vechasdi | lo | yasur | mimenu
+ka'asher | hasiroti | me'im | Sha'ul | asher | hasiroti
 milefaneikha
 
 7:16
@@ -117,8 +117,7 @@ vezot | torat | ha'adam
 Adonai | Yahweh
 
 7:20
-umah | yosif | David | od
-ledaber | eleikha
+umah | yosif | David | od | ledaber | eleikha
 ve'atah | yada'ta | et | avdekha
 Adonai | Yahweh
 
@@ -131,7 +130,8 @@ et | avdekha
 
 7:22
 al | ken | gadalta
-Adonai | Yahweh | ki | ein | kamokha | ve'ein | elohim | zulatekha
+Adonai | Yahweh
+ki | ein | kamokha | ve'ein | elohim | zulatekha
 bekhol | asher | shama'nu | be'azeneinu
 
 7:23
@@ -165,8 +165,7 @@ lefaneikha
 
 7:27
 ki | atah | Yahweh | tzeva'ot | elohei | Yisra'el | galitah | et | ozen | avdekha | lemor
-bayit
-evneh | lakh
+bayit | evneh | lakh
 al | ken | matza | avdekha | et | libo
 lehitpalel | eleikha
 et | hatefilah
@@ -182,6 +181,7 @@ hazot
 
 7:29
 ve'atah | ho'el | uvarekh | et | beit | avdekha | lihyot | le'olam
-lefaneikha | ki | atah | Adonai | Yahweh | dibarta | umibirkhatekha
-yevorakh | beit | avdekha
+lefaneikha
+ki | atah | Adonai | Yahweh | dibarta
+umibirkhatekha | yevorakh | beit | avdekha
 le'olam

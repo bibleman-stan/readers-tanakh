@@ -1,8 +1,7 @@
 19:1
 vaiyetze | hagoral | hasheni | Leshim'on
 lemateh | venei | Shim'on | lemishpechotam | vayhi | nachalatam
-betokh
-nachalat | benei | Yehudah
+betokh | nachalat | benei | Yehudah
 
 19:2
 vayhi | lahem
@@ -35,11 +34,13 @@ arim | arba | vechatzreihen
 vekhol | hachatzerim | asher | sevivot | he'arim | ha'eleh
 ad | Ba'alat | Be'er
 ramat | Negev
-zot | nachalat | mateh | venei | Shim'on | lemishpechotam
+zot | nachalat | mateh | venei | Shim'on
+lemishpechotam
 
 19:9
-mechevel | benei | Yehudah
-nachalat | benei | Shim'on | ki | hayah | chelek | benei | Yehudah | rav | mehem
+mechevel | benei | Yehudah | nachalat
+benei | Shim'on
+ki | hayah | chelek | benei | Yehudah | rav | mehem
 vaiyinchalu | venei | Shim'on
 betokh | nachalatam
 
@@ -62,15 +63,13 @@ veyatza | el | Hadaverat
 ve'alah | Yafia
 
 19:13
-umisham | avar | kedemah | mizrachah
-Gitah | Chefer
+umisham | avar | kedemah | mizrachah | Gitah | Chefer
 Itah | Katzin
 veyatza | Rimon | hameto'ar
 Hane'ah
 
 19:14
-venasav | oto | hagevul | mitzefon
-Chanaton
+venasav | oto | hagevul | mitzefon | Chanaton
 vehayu | totze'otav
 gei
 Yiftach | El
@@ -83,14 +82,16 @@ arim | sheteim | esreh
 vechatzreihen
 
 19:16
-zot | nachalat | benei | Zevulun | lemishpechotam
+zot | nachalat | benei | Zevulun
+lemishpechotam
 he'arim | ha'eleh
 vechatzreihen
 
 19:17
 Leyisoshkhar | yatza
 hagoral | harevi'i
-livnei | Yisoshkhar | lemishpechotam
+livnei | Yisoshkhar
+lemishpechotam
 
 19:18
 vayhi
@@ -117,7 +118,8 @@ arim | shesh | esreh
 vechatzreihen
 
 19:23
-zot | nachalat | mateh | venei | Yisoshkhar | lemishpechotam
+zot | nachalat | mateh | venei | Yisoshkhar
+lemishpechotam
 he'arim
 vechatzreihen
 
@@ -150,9 +152,9 @@ Tzidon | rabah
 
 19:29
 veshav | hagevul | Haramah
-ve'ad | ir | mivtzar | Tzor
-veshav | hagevul | Chosah
-veyihyu | totze'otav | haiyamah | mechevel | Akhzivah
+ve'ad | ir | mivtzar | Tzor | veshav | hagevul | Chosah
+veyihyu | totze'otav | haiyamah
+mechevel | Akhzivah
 
 19:30
 Ve'umah | Va'afek
@@ -161,14 +163,16 @@ arim | esrim | ushetayim
 vechatzreihen
 
 19:31
-zot | nachalat | mateh | venei | Asher | lemishpechotam
+zot | nachalat | mateh | venei | Asher
+lemishpechotam
 he'arim | ha'eleh
 vechatzreihen
 
 19:32
 livnei | Naftali | yatza
 hagoral | hashishi
-livnei | Naftali | lemishpechotam
+livnei | Naftali
+lemishpechotam
 
 19:33
 vayhi | gevulam | Mechelef | me'elon | Betza'ananim | Va'adami | Hanekev | Veyavne'el
@@ -184,8 +188,7 @@ ufaga | Bizvulun | minegev | Uve'asher | paga | miyam | Uvihudah
 Haiyarden | mizrach | hashamesh
 
 19:35
-ve'arei | mivtzar
-Hatzidim | Tzer
+ve'arei | mivtzar | Hatzidim | Tzer
 Vechamat
 Rakat | Vekhinaret
 
@@ -204,7 +207,8 @@ arim | tesha | esreh
 vechatzreihen
 
 19:39
-zot | nachalat | mateh | venei | Naftali | lemishpechotam
+zot | nachalat | mateh | venei | Naftali
+lemishpechotam
 he'arim
 vechatzreihen
 
@@ -247,7 +251,8 @@ keshem
 Dan | avihem
 
 19:48
-zot | nachalat | mateh | venei | Dan | lemishpechotam
+zot | nachalat | mateh | venei | Dan
+lemishpechotam
 he'arim | ha'eleh
 vechatzreihen
 
@@ -259,14 +264,13 @@ betokham
 
 19:50
 al | pi | Yahweh | natenu | lo | et | ha'ir | asher | sha'al
-et | Timnat | Serach | behar | Efrayim
+et | Timnat | Serach
+behar | Efrayim
 vaiyivneh | et | ha'ir
 vaiyeshev | bah
 
 19:51
 eleh | hanechalot | asher | nichalu | El'azar | hakohen | Vihoshua | bin | Nun | verashei | ha'avot | lematot | benei | Yisra'el | begoral | Beshiloh | lifnei | Yahweh
 petach
-ohel | mo'ed
-vaykhalu
-mechalek
-et | ha'aretz
+ohel | mo'ed | vaykhalu
+mechalek | et | ha'aretz

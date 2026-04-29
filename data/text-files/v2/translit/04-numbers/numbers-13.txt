@@ -7,12 +7,12 @@ shelach | lekha | anashim | veyaturu | et | eretz | Kena'an
 asher | ani | noten
 livnei | Yisra'el
 ish | echad | ish | echad | lemateh | avotav | tishlachu
-kol
-nasi | vahem
+kol | nasi | vahem
 
 13:3
 vaiyishlach | otam | Mosheh | mimidbar | Paran
-al | pi | Yahweh | kulam | anashim
+al | pi | Yahweh
+kulam | anashim
 rashei | venei | Yisra'el
 hemah
 
@@ -20,18 +20,22 @@ hemah
 ve'eleh
 shemotam
 lemateh | Re'uven
-Shamua | ben | Zakur
+Shamua
+ben | Zakur
 
 13:5
 lemateh | Shim'on
-Shafat | ben | Chori
+Shafat
+ben | Chori
 
 13:6
-lemateh | Yehudah | Kalev | ben | Yefuneh
+lemateh | Yehudah
+Kalev
+ben | Yefuneh
 
 13:7
-lemateh | Yisoshkhar
-Yig'al | ben | Yosef
+lemateh | Yisoshkhar | Yig'al
+ben | Yosef
 
 13:8
 lemateh | Efrayim
@@ -39,31 +43,36 @@ Hoshea | bin | Nun
 
 13:9
 lemateh | Vinyamin
-Palti | ben | Rafu
+Palti
+ben | Rafu
 
 13:10
 lemateh | Zevulun
-Gadi'el | ben | Sodi
+Gadi'el
+ben | Sodi
 
 13:11
 lemateh | Yosef
-lemateh | Menasheh
-Gadi | ben | Susi
+lemateh | Menasheh | Gadi
+ben | Susi
 
 13:12
 lemateh | Dan
-Ami'el | ben | Gemali
+Ami'el
+ben | Gemali
 
 13:13
-lemateh | Asher | Setur | ben | Mikha'el
+lemateh | Asher | Setur
+ben | Mikha'el
 
 13:14
-lemateh | Naftali
-Nachbi | ben | Vafesi
+lemateh | Naftali | Nachbi
+ben | Vafesi
 
 13:15
 lemateh | Gad
-Ge'u'el | ben | Makhi
+Ge'u'el
+ben | Makhi
 
 13:16
 eleh | shemot | ha'anashim
@@ -81,8 +90,7 @@ va'alitem
 et | hahar
 
 13:18
-ure'item | et | ha'aretz | mah | hi
-ve'et | ha'am | haiyoshev | aleiha
+ure'item | et | ha'aretz | mah | hi | ve'et | ha'am | haiyoshev | aleiha
 hechazak | hu | harapeh
 ham'at | hu
 im | rav
@@ -90,7 +98,8 @@ im | rav
 13:19
 umah | ha'aretz | asher | hu | yoshev | bah
 hatovah | hi
-im | ra'ah | umah | he'arim | asher | hu | yoshev | bahenah
+im | ra'ah
+umah | he'arim | asher | hu | yoshev | bahenah
 habemachanim
 im | bemivtzarim
 
@@ -120,14 +129,14 @@ vaiyisa'uhu | vamot
 bishnayim | umin | harimonim | umin | hate'enim
 
 13:24
-lamakom | hahu | kara
-Nachal | Eshkol | al | odot | ha'eshkol
-asher | karetu | misham | benei | Yisra'el
+lamakom | hahu | kara | Nachal | Eshkol
+al | odot | ha'eshkol
+asher | karetu | misham
+benei | Yisra'el
 
 13:25
 vaiyashuvu
-mitur | ha'aretz | miketz
-arba'im | yom
+mitur | ha'aretz | miketz | arba'im | yom
 
 13:26
 vaiyelekhu | vaiyavo'u | el | Mosheh | ve'el | Aharon | ve'el | kol | adat | benei | Yisra'el | el | midbar | Paran
@@ -146,12 +155,12 @@ vezeh | piryah
 13:28
 efes | ki | az | ha'am
 haiyoshev | ba'aretz
-vehe'arim | betzurot | gedolot | me'od
-vegam | yelidei | ha'anak
+vehe'arim | betzurot | gedolot | me'od | vegam | yelidei | ha'anak
 ra'inu | sham
 
 13:29
-Amalek | yoshev | be'eretz | Hanegev
+Amalek | yoshev
+be'eretz | Hanegev
 vehachiti | vehayvusi | veha'emori | yoshev | bahar
 vehakena'ani | yoshev | al | haiyam
 ve'al
@@ -161,11 +170,14 @@ yad | Haiyarden
 vaiyahas | Kalev | et | ha'am
 el | Mosheh
 vaiyomer | aloh | na'aleh | veyarashnu | otah
-ki | yakhol | nukhal | lah
+ki | yakhol | nukhal
+lah
 
 13:31
-veha'anashim | asher | alu | imo | ameru | lo | nukhal
-la'alot | el | ha'am | ki | chazak | hu | mimenu
+veha'anashim | asher | alu | imo | ameru
+lo | nukhal
+la'alot | el | ha'am
+ki | chazak | hu | mimenu
 
 13:32
 vaiyotzi'u | dibat | ha'aretz | asher | taru | otah

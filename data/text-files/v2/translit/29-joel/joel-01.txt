@@ -1,13 +1,15 @@
 1:1
 devar | Yahweh | asher | hayah
-el | Yo'el | ben | Petu'el
+el | Yo'el
+ben | Petu'el
 
 1:2
 shim'u | zot | hazekenim
-veha'azinu | kol
-yoshevei | ha'aretz
+veha'azinu
+kol | yoshevei | ha'aretz
 hehayetah | zot | bimeikhem
-ve'im | bimei | avoteikhem
+ve'im
+bimei | avoteikhem
 
 1:3
 aleiha | livneikhem | saperu | uveneikhem | livneihem | uveneihem
@@ -23,14 +25,17 @@ hechasil
 
 1:5
 hakitzu | shikorim | uvekhu
-veheililu | kol | shotei | yayin
-al | asis | ki | Nikhrat | mipikhem
+veheililu
+kol | shotei | yayin
+al | asis
+ki | Nikhrat
+mipikhem
 
 1:6
 ki | goy | alah | al | artzi
 atzum
-ve'ein | mispar
-shinav | shinei | aryeh | umetale'ot | lavi | lo
+ve'ein | mispar | shinav | shinei | aryeh
+umetale'ot | lavi | lo
 
 1:7
 sam | gafni | leshamah
@@ -45,55 +50,62 @@ eli | kivtulah | chagurat | sak
 al | ba'al | ne'ureiha
 
 1:9
-hakherat | minchah | vanesekh | mibeit | Yahweh
-avelu | hakohanim | mesharetei
-Yahweh
+hakherat | minchah | vanesekh
+mibeit | Yahweh
+avelu | hakohanim
+mesharetei | Yahweh
 
 1:10
 shudad | sadeh
 avelah
-adamah | ki | shudad | dagan
+adamah
+ki | shudad | dagan
 hovish | tiroosh
 umlal | yitzhar
 
 1:11
 hovishu | ikarim | heililu | koremim
 al | chitah
-ve'al | se'orah | ki | avad
+ve'al | se'orah
+ki | avad
 ketzir | sadeh
 
 1:12
 hagefen | hovishah
 vehate'enah
 umlalah
-rimon | gam | tamar | vetapuach | kol | atzei | hasadeh | yaveshu | ki | hovish | sason
-min | benei | adam
+rimon | gam | tamar | vetapuach | kol | atzei | hasadeh | yaveshu
+ki | hovish | sason | min | benei | adam
 
 1:13
 chigru | vesifdu | hakohanim | heililu | mesharetei | mizbeach
-bo'u | linu | vasakim | mesharetei
-elohai | ki | Nimna | mibeit | eloheikhem | minchah | vanasekh
+bo'u | linu | vasakim | mesharetei | elohai
+ki | Nimna | mibeit | eloheikhem
+minchah | vanasekh
 
 1:14
 kadeshu | tzom | kir'u | atzarah
-isfu | zekenim | kol | yoshevei | ha'aretz | beit
-Yahweh | eloheikhem
+isfu | zekenim | kol | yoshevei | ha'aretz
+beit | Yahweh | eloheikhem
 veza'aku
 el | Yahweh
 
 1:15
-ahah
-laiyom | ki | karov | yom | Yahweh | ukheshod | Mishadai | yavo
+ahah | laiyom
+ki | karov | yom | Yahweh
+ukheshod
+Mishadai | yavo
 
 1:16
 halo | neged | eineinu
-okhel | Nikhrat | mibeit | eloheinu
+okhel | Nikhrat
+mibeit | eloheinu
 simchah | vagil
 
 1:17
-aveshu | ferudot | tachat | megrefoteihem
-Nashamu | otzarot
-Nehersu | mamegurot | ki | hovish
+aveshu | ferudot | tachat | megrefoteihem | Nashamu | otzarot
+Nehersu
+mamegurot | ki | hovish
 dagan
 
 1:18
@@ -104,12 +116,15 @@ Ne'shamu
 
 1:19
 eleikha | Yahweh
-ekra | ki | esh | akhelah | ne'ot | midbar
-velehavah | lihatah | kol | atzei | hasadeh
+ekra
+ki | esh | akhelah | ne'ot | midbar
+velehavah | lihatah
+kol | atzei | hasadeh
 
 1:20
 gam | bahamot | sadeh
-ta'arog | eleikha | ki | yaveshu | afikei | mayim
+ta'arog | eleikha
+ki | yaveshu | afikei | mayim
 ve'esh
 akhelah
 ne'ot | hamidbar

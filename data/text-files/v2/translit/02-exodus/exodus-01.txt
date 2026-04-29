@@ -1,7 +1,6 @@
 1:1
 ve'eleh | shemot | benei | Yisra'el
-haba'im | Mitzrayemah
-et | Ya'ako
+haba'im | Mitzrayemah | et | Ya'ako
 ish | uveito | ba'u
 
 1:2
@@ -9,7 +8,8 @@ Re'uven | Shim'on | Levi
 Vihudah
 
 1:3
-Yisoshkhar | Zevulun | Uveneyamin
+Yisoshkhar | Zevulun
+Uveneyamin
 
 1:4
 Dan | Venaftali
@@ -28,8 +28,7 @@ hador | hahu
 
 1:7
 uvenei | Yisra'el | paru | vaiyishretzu | vaiyirbu | vaiya'atzmu
-bim'od | me'od
-vatimale | ha'aretz
+bim'od | me'od | vatimale | ha'aretz
 otam
 
 1:8
@@ -44,7 +43,8 @@ hineh | am | benei | Yisra'el
 rav | ve'atzum | mimenu
 
 1:10
-havah | nitchakemah | lo
+havah | nitchakemah
+lo
 pen | yirbeh | vehayah | ki | tikrenah | milchamah | venosaf | gam | hu | al | sone'einu
 venilcham | banu
 ve'alah | min | ha'aretz
@@ -104,8 +104,10 @@ vatechaiyeina
 et | hayladim
 
 1:19
-vatomarna | hamyaledot | el | par'oh | ki | lo | khanashim | hamitzriyot
-ha'ivriyot | ki | chayot | henah | beterem | tavo | alehen | hamyaledet
+vatomarna | hamyaledot | el | par'oh
+ki | lo | khanashim | hamitzriyot
+ha'ivriyot
+ki | chayot | henah | beterem | tavo | alehen | hamyaledet
 veyaladu
 
 1:20
@@ -123,6 +125,7 @@ batim
 1:22
 vaytzav | par'oh
 lekhol | amo
-lemor | kol | haben | haiyilod | Hay'orah | tashlikhuhu
+lemor
+kol | haben | haiyilod | Hay'orah | tashlikhuhu
 vekhol | habat
 techaiyun

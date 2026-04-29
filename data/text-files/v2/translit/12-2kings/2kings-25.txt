@@ -26,7 +26,8 @@ vaiyirdefu | cheil | Kasdim | achar | hamelekh
 vaiyasigu | oto
 be'arvot | Yerecho
 vekhol | cheilo
-Nafotzu | me'alav
+Nafotzu
+me'alav
 
 25:6
 vaiyitpesu | et | hamelekh
@@ -59,8 +60,8 @@ ve'et | kol | batei | Yerushalim | ve'et | kol | beit | gadol
 saraf | ba'esh
 
 25:10
-ve'et | chomot | Yerushalim | saviv
-natetzu | kol | cheil | Kasdim | asher | rav | tabachim
+ve'et | chomot | Yerushalim
+saviv | natetzu | kol | cheil | Kasdim | asher | rav | tabachim
 
 25:11
 ve'et | yeter | ha'am | hanish'arim | ba'ir | ve'et | hanofelim | asher | nafelu | al | hamelekh | Bavel
@@ -95,19 +96,19 @@ rav | tabachim
 ha'amudim | shenayim | haiyam | ha'echad | vehamekhonot
 asher | asah | Shelomoh
 leveit | Yahweh
-lo | hayah | mishkal
-linchoshet | kol | hakelim | ha'eleh
+lo | hayah | mishkal | linchoshet
+kol | hakelim | ha'eleh
 
 25:17
 shemoneh | esreh | amah | komat | ha'amud | ha'echad | vekhoteret | alav | nechoshet | vekomat | hakoteret | shalosh | amah
 usevakhah | verimonim | al | hakoteret | saviv
-hakol | nechoshet | vekha'eleh | la'amud | hasheni
+hakol | nechoshet
+vekha'eleh | la'amud | hasheni
 al | hasevakhah
 
 25:18
 vaiyikach | rav | tabachim | et | Serayah | kohen | harosh
-ve'et | Tzefanyahu | kohen | mishneh
-ve'et | sheloshet
+ve'et | Tzefanyahu | kohen | mishneh | ve'et | sheloshet
 shomerei | hasaf
 
 25:19
@@ -133,9 +134,9 @@ me'al | admato
 25:22
 veha'am | hanish'ar | be'eretz | Yehudah | asher | hish'ir
 Nevukhadnetzar
-melekh | Bavel
-vaiyafked | aleihem
-et | Gedalyahu | ben | Achikam | ben | Shafan
+melekh | Bavel | vaiyafked | aleihem
+et | Gedalyahu
+ben | Achikam | ben | Shafan
 
 25:23
 vaiyishme'u | khol | sarei | hachayalim | hemah | veha'anashim | ki | hifkid | melekh | Bavel | et | Gedalyahu
@@ -162,7 +163,9 @@ asher | hayu | ito | Bamitzpah
 25:26
 vaiyakumu | khol | ha'am | mikaton | ve'ad | gadol | vesarei | hachayalim
 vaiyavo'u
-Mitzrayim | ki | yare'u | mipenei | Khasdim
+Mitzrayim
+ki | yare'u
+mipenei | Khasdim
 
 25:27
 vayhi | vishloshim | vasheva | shanah | legalut | Yehoyakhin | melekh | Yehudah
@@ -181,9 +184,10 @@ Bevavel
 25:29
 veshina
 et | bigdei | khil'o
-ve'akhal | lechem | tamid | lefanav | kol | yemei | chaiyav
+ve'akhal | lechem | tamid | lefanav
+kol | yemei | chaiyav
 
 25:30
 va'aruchato | aruchat | tamid | Nitenah | lo | me'et | hamelekh
-devar | yom | beyomo | kol
-yemei | chaiyav
+devar | yom | beyomo
+kol | yemei | chaiyav

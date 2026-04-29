@@ -2,7 +2,8 @@
 vaiyashkem | Yeruba'al | hu | Gid'on | vekhol | ha'am | asher | ito
 vaiyachanu
 al | Ein | Charod
-umachaneh | Midyan | hayah | lo | mitzafon | migiv'at | Hamoreh | ba'emek
+umachaneh | Midyan | hayah | lo | mitzafon
+migiv'at | Hamoreh | ba'emek
 
 7:2
 vaiyomer | Yahweh | el | Gid'on
@@ -16,11 +17,12 @@ hoshi'ah | li
 ve'atah | kera | na | be'azenei | ha'am | lemor
 mi | yare | vechared | yasho | veyitzpor
 mehar | Hagil'ad
-vaiyashov | min | ha'am | esrim | ushenayim | elef | va'aseret | alafim | Nish'aru
+vaiyashov | min | ha'am | esrim | ushenayim | elef
+va'aseret | alafim
+Nish'aru
 
 7:4
-vaiyomer | Yahweh | el | Gid'on | od | ha'am | rav
-hored | otam | el | hamayim
+vaiyomer | Yahweh | el | Gid'on | od | ha'am | rav | hored | otam | el | hamayim
 ve'etzrefenu | lekha
 sham
 vehayah | asher | omar | eleikha | zeh | yelekh | itakh | hu | yelekh | itakh
@@ -50,15 +52,16 @@ ish | limkomo
 7:8
 vaiyikchu | et | tzedah | ha'am | beyadam | ve'et | shofroteihem | ve'et | kol | ish | Yisra'el | shilach | ish | le'ohalav
 uvishlosh | me'ot | ha'ish
-hechezik | umachaneh | Midyan
-hayah | lo
+hechezik | umachaneh | Midyan | hayah | lo
 mitachat | ba'emek
 
 7:9
 vayhi | balaylah | hahu
 vaiyomer | elav | Yahweh
 kum
-red | bamachaneh | ki | netativ | beyadekha
+red | bamachaneh
+ki | netativ
+beyadekha
 
 7:10
 ve'im | yare | atah
@@ -67,8 +70,7 @@ red | atah | Ufurah | na'arkha
 el | hamachaneh
 
 7:11
-veshama'ta | mah | yedaberu
-ve'achar | techezaknah | yadeikha
+veshama'ta | mah | yedaberu | ve'achar | techezaknah | yadeikha
 veyaradta
 bamachaneh | vaiyered | hu | Ufurah | na'aro
 el | ketzeh | hachamushim | asher | bamachaneh
@@ -112,7 +114,8 @@ vaiyomer | aleihem
 mimeni | tir'u
 vekhen | ta'asu
 vehineh | anokhi | va | biktzeh | hamachaneh
-vehayah | kha'asher | e'eseh | ken | ta'asun
+vehayah | kha'asher | e'eseh
+ken | ta'asun
 
 7:18
 vetaka'ti | bashofar
@@ -150,8 +153,7 @@ vaiyitke'u | shelosh | me'ot | hashofarot
 vaiyasem | Yahweh | et | cherev | ish | bere'ehu
 uvekhol | hamachaneh
 vaiyanos | hamachaneh | ad | Beit | Hashitah | Tzereratah
-ad | sefat | Avel | Mecholah
-al | Tabat
+ad | sefat | Avel | Mecholah | al | Tabat
 
 7:23
 vaiyitza'ek | ish | Yisra'el | Minaftali | umin | Asher
@@ -171,5 +173,4 @@ vaiyilkedu | shenei | sarei | Midyan | et | Orev | ve'et | Ze'ev | vaiyahargu | 
 vaiyirdefu
 el | Midyan
 verosh | Orev | Uze'ev
-hevi'u | el | Gid'on | me'ever
-Laiyarden
+hevi'u | el | Gid'on | me'ever | Laiyarden

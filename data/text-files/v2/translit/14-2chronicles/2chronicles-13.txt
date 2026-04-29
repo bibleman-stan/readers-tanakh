@@ -5,8 +5,8 @@ al | Yehudah
 
 13:2
 shaloosh | shanim | malakh | Birushalim
-veshem | imo | Mikhayahu | vat | Uri'el | min | Giv'ah
-umilchamah | hayetah | bein | Aviyah
+veshem | imo | Mikhayahu | vat | Uri'el
+min | Giv'ah | umilchamah | hayetah | bein | Aviyah
 uvein | Yarave'am
 
 13:3
@@ -42,10 +42,10 @@ Urechav'am | hayah | na'ar | verakh | levav
 velo | hitchazak | lifneihem
 
 13:8
-ve'atah | atem | omerim | lehitchazek | lifnei | mamlekhet | Yahweh | beyad
-benei | David
-ve'atem | hamon | rav
-ve'imakhem | eglei | zahav | asher | asah | lakhem | Yarave'am
+ve'atah | atem | omerim | lehitchazek | lifnei | mamlekhet | Yahweh
+beyad | benei | David
+ve'atem | hamon | rav | ve'imakhem | eglei | zahav
+asher | asah | lakhem | Yarave'am
 lelohim
 
 13:9
@@ -57,7 +57,8 @@ kol | haba | lemale | yado | befar | ben | bakar | ve'eilim | shiv'ah | vehayah 
 lelo | elohim
 
 13:10
-va'anachnu | Yahweh | eloheinu | velo | azavnuhu
+va'anachnu | Yahweh | eloheinu
+velo | azavnuhu
 vekhohanim | mesharetim | Layahweh | benei | Aharon
 vehalviyim | bamlakhet
 
@@ -71,7 +72,8 @@ azavtem | oto
 
 13:12
 vehineh | imanu | varosh | ha'elohim | vekhohanav | vachatzotzerot | hateru'ah
-leharia | aleikhem | benei | Yisra'el | al | tilachamu | im | Yahweh | elohei | avoteikhem
+leharia | aleikhem
+benei | Yisra'el | al | tilachamu | im | Yahweh | elohei | avoteikhem
 ki | lo | tatzlichu
 
 13:13
@@ -95,7 +97,8 @@ Vihudah
 
 13:16
 vaiyanusu | venei | Yisra'el
-mipenei | Yehudah | vaiyitenem | elohim
+mipenei | Yehudah
+vaiyitenem | elohim
 beyadam
 
 13:17
@@ -119,8 +122,7 @@ ve'et | benoteiha
 ve'et | Efron | uvenoteiha
 
 13:20
-velo | atzar | koach | Yarave'am | od
-bimei | Aviyahu
+velo | atzar | koach | Yarave'am | od | bimei | Aviyahu
 vaiyigefehu | Yahweh
 vaiyamot
 
@@ -141,5 +143,6 @@ hanavi | Ido
 13:23
 vaiyishkav | Aviyah | im | avotav | vaiyikberu | oto | be'ir | David
 vaiyimlokh | Asa | veno
-tachtav | beyamav | shaketah | ha'aretz
+tachtav
+beyamav | shaketah | ha'aretz
 eser | shanim

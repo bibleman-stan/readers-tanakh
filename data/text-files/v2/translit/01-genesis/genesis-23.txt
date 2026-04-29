@@ -6,8 +6,7 @@ chaiyei | Sarah
 
 23:2
 vatamot | Sarah | Bekiryat | Arba | hi | Chevron
-be'eretz | Kena'an
-vaiyavo | Avraham
+be'eretz | Kena'an | vaiyavo | Avraham
 lispod | Lesarah | velivkotah
 
 23:3
@@ -28,11 +27,11 @@ vaiya'anu | venei | Chet | et | Avraham
 lemor | lo
 
 23:6
-shema'enu | adoni | nesi | elohim | atah | betokhenu | bemivchar | kevareinu
+shema'enu | adoni | nesi | elohim | atah | betokhenu
+bemivchar | kevareinu
 kevor
 et | metekha
-ish | mimenu
-et | kivro | lo | yikhleh | mimekha | mikevor | metekha
+ish | mimenu | et | kivro | lo | yikhleh | mimekha | mikevor | metekha
 
 23:7
 vaiyakom | Avraham | vaiyishtachu | le'am | ha'aretz
@@ -41,13 +40,13 @@ livnei | Chet
 23:8
 vaydaber | itam
 lemor
-im | yesh | et | nafshekhem | likbor | et | meti | milefanai
-shema'uni
+im | yesh | et | nafshekhem | likbor | et | meti | milefanai | shema'uni
 ufig'u | li | Be'efron | ben | Tzochar
 
 23:9
-veyiten | li | et | me'arat | Hamakhpelah | asher | lo | asher
-biktzeh | sadehu | bekhesef | male | yitenenah | li | betokhkhem | la'achuzat | kaver
+veyiten | li | et | me'arat | Hamakhpelah | asher | lo | asher | biktzeh | sadehu
+bekhesef | male | yitenenah | li | betokhkhem
+la'achuzat | kaver
 
 23:10
 Ve'efron | yoshev
@@ -57,9 +56,9 @@ lekhol | ba'ei | sha'ar | iro
 lemor
 
 23:11
-lo | adoni | shema'eni
-hasadeh | natati | lakh
-vehame'arah | asher | bo | lekha | netatiha
+lo | adoni | shema'eni | hasadeh | natati | lakh
+vehame'arah | asher | bo
+lekha | netatiha
 le'einei | venei | ami | netatiha | lakh
 kevor | metekha
 
@@ -82,8 +81,8 @@ lemor | lo
 
 23:15
 adoni | shema'eni
-eretz | arba | me'ot | shekel | kesef | beini | uveinekha | mah | hi
-ve'et | metekha
+eretz | arba | me'ot | shekel | kesef | beini | uveinekha
+mah | hi | ve'et | metekha
 kevor
 
 23:16
@@ -96,8 +95,8 @@ over
 lasocher
 
 23:17
-vaiyakom | sedeh | Efron | asher | Bamakhpelah | asher | lifnei | Mamre
-hasadeh | vehame'arah | asher | bo
+vaiyakom | sedeh | Efron | asher | Bamakhpelah | asher
+lifnei | Mamre | hasadeh | vehame'arah | asher | bo
 vekhol | ha'etz | asher | basadeh | asher | bekhol | gevulo
 saviv
 

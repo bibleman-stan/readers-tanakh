@@ -21,8 +21,7 @@ Uriyah | hachiti
 
 11:4
 vaiyishlach | David | mal'akhim | vaiyikacheha | vatavo | elav | vaiyishkav | imah
-vehi | mitkadeshet | mitum'atah
-vatashov
+vehi | mitkadeshet | mitum'atah | vatashov
 el | beitah
 
 11:5
@@ -52,7 +51,8 @@ vaiyomer | David | Le'uriyah
 red | leveitekha
 urechatz | ragleikha
 vaiyetze | Uriyah | mibeit | hamelekh
-vatetze | acharav | mas'at | hamelekh
+vatetze | acharav
+mas'at | hamelekh
 
 11:9
 vaiyishkav | Uriyah | petach | beit | hamelekh | et
@@ -69,7 +69,8 @@ madua | lo | yaradta | el | beitekha
 
 11:11
 vaiyomer | Uriyah | el | David | ha'aron | Veyisra'el | Vihudah | yoshevim | basukot | vadoni | Yo'av | ve'avdei | adoni | al | penei | hasadeh | chonim
-va'ani | avo | el | beiti | le'ekhol | velishtot | velishkav | im | ishti
+va'ani | avo | el | beiti | le'ekhol | velishtot
+velishkav | im | ishti
 chaiyekha | vechei | nafshekha
 im | e'eseh
 et | hadavar | hazeh
@@ -98,8 +99,7 @@ beyad | Uriyah
 vaiyikhto | basefer
 lemor
 havu | et | Uriyah | el | mul | penei | hamilchamah | hachazakah
-veshavtem | me'acharav
-venikah | vamet
+veshavtem | me'acharav | venikah | vamet
 
 11:16
 vayhi
@@ -114,8 +114,7 @@ sham
 vaiyetze'u | anshei | ha'ir | vaiyilachamu | et | Yo'av
 vaiyipol | min | ha'am
 me'avdei | David | vaiyamot
-gam
-Uriyah | hachiti
+gam | Uriyah | hachiti
 
 11:18
 vaiyishlach
@@ -131,9 +130,11 @@ ledaber | el | hamelekh
 
 11:20
 vehayah | im | ta'aleh | chamat | hamelekh
-ve'amar | lekha | madua | Nigashtem | el | ha'ir | lehilachem
-halo | yeda'tem
-et | asher | yoru | me'al | hachomah
+ve'amar | lekha
+madua | Nigashtem | el | ha'ir
+lehilachem
+halo | yeda'tem | et | asher | yoru
+me'al | hachomah
 
 11:21
 mi | hikah | et | Avimelekh | ben | Yerubeshet | halo | ishah | hishlikhah | alav | pelach | rekhev | me'al | hachomah | vaiyamot | Betevetz
@@ -172,13 +173,15 @@ hachazek | milchamtekha | el | ha'ir | veharesah
 vechazekehu
 
 11:26
-vatishma | eshet | Uriyah | ki | met
+vatishma | eshet | Uriyah
+ki | met
 Uriyah | ishah
 vatispod
 al | ba'lah
 
 11:27
 vaiya'avor | ha'evel | vaiyishlach | David | vaiya'asfah | el | beito | vatehi | lo | le'ishah
-vateled | lo | ben
+vateled | lo
+ben
 vaiyera | hadavar | asher | asah | David
 be'einei | Yahweh

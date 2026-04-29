@@ -6,7 +6,8 @@ Vechagelah | Umilkah
 Vetirtzah
 
 27:2
-vata'amodenah | lifnei | Mosheh | velifnei | El'azar | hakohen | velifnei | hanesi'im
+vata'amodenah | lifnei | Mosheh | velifnei | El'azar | hakohen
+velifnei | hanesi'im
 vekhol | ha'edah
 petach | ohel | mo'ed
 lemor
@@ -19,9 +20,11 @@ uvanim
 lo | hayu | lo
 
 27:4
-lamah | yigara | shem | avinu | mitokh | mishpachto | ki | ein | lo
+lamah | yigara | shem | avinu | mitokh | mishpachto
+ki | ein | lo
 ben
-tenah | lanu | achuzah | betokh
+tenah | lanu | achuzah
+betokh
 achei | avinu
 
 27:5
@@ -37,7 +40,8 @@ ken | benot | Tzelafechad | doerot
 naton | titen | lahem | achuzat | nachalah
 betokh
 achei | avihem
-veha'avarta | et | nachalat | avihen | lahen
+veha'avarta | et | nachalat | avihen
+lahen
 
 27:8
 ve'el | benei | Yisra'el
@@ -47,7 +51,8 @@ veha'avartem | et | nachalato
 levito
 
 27:9
-ve'im | ein | lo | bat
+ve'im | ein | lo
+bat
 unetatem | et | nachalato
 le'echav
 
@@ -67,15 +72,15 @@ et | Mosheh
 
 27:12
 vaiyomer | Yahweh | el | Mosheh
-aleh | el | har | Ha'avarim
-hazeh
+aleh | el | har | Ha'avarim | hazeh
 ure'eh | et | ha'aretz | asher | natati
 livnei | Yisra'el
 
 27:13
 vera'itah | otah
 vene'esafta | el | ameikha
-gam | atah | ka'asher | Ne'esaf
+gam | atah
+ka'asher | Ne'esaf
 Aharon | achikha
 
 27:14
@@ -90,15 +95,16 @@ el | Yahweh
 lemor
 
 27:16
-yifkod | Yahweh
-elohei | haruchot | lekhol | basar
+yifkod | Yahweh | elohei | haruchot
+lekhol | basar
 ish
 al | ha'edah
 
 27:17
 asher | yetze | lifneihem | va'asher | yavo | lifneihem
 va'asher | yotzi'em
-va'asher | yevi'em | velo | tihyeh | adat | Yahweh
+va'asher | yevi'em
+velo | tihyeh | adat | Yahweh
 katzon | asher | ein | lahem
 ro'eh
 
@@ -111,13 +117,15 @@ alav
 
 27:19
 veha'amadta | oto | lifnei | El'azar | hakohen
-velifnei | kol | ha'edah
+velifnei
+kol | ha'edah
 vetzivitah | oto | le'eineihem
 
 27:20
-venatatah | mehodkha
-alav
-lema'an | yishme'u | kol | adat | benei | Yisra'el
+venatatah | mehodkha | alav
+lema'an | yishme'u
+kol | adat
+benei | Yisra'el
 
 27:21
 velifnei | El'azar | hakohen | ya'amod
@@ -131,7 +139,8 @@ vaiya'as | Mosheh
 ka'asher | tzivah | Yahweh
 oto
 vaiyikach | et | Yehoshua | vaiya'amidehu | lifnei | El'azar | hakohen
-velifnei | kol | ha'edah
+velifnei
+kol | ha'edah
 
 27:23
 vaiyismokh | et | yadav | alav

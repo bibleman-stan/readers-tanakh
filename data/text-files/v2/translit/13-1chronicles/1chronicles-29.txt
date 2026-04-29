@@ -2,7 +2,9 @@
 vaiyomer | David | hamelekh | lekhol | hakahal
 Shelomoh | veni | echad | bachar | bo | elohim
 na'ar | varakh
-vehamelakhah | gedolah | ki | lo | le'adam | habirah | ki
+vehamelakhah | gedolah
+ki | lo | le'adam | habirah
+ki
 Layahweh | elohim
 
 29:2
@@ -16,18 +18,19 @@ laro
 ve'od | birtzoti | beveit | elohai
 yesh | li | segulah
 zahav | vakhasef
-natati | leveit | elohai | lema'lah | mikol | hakhinoti
-leveit | hakodesh
+natati | leveit | elohai | lema'lah
+mikol | hakhinoti | leveit | hakodesh
 
 29:4
-sheloshet | alafim | kikerei | zahav | mizehav | Ofir
+sheloshet | alafim | kikerei | zahav
+mizehav | Ofir
 veshiv'at | alafim | kikar | kesef | mezukak
 latuach
 kirot | habatim
 
 29:5
-lazahav | lazahav | velakesef | lakesef | ulekhol | melakhah | beyad | charashim
-umi | mitnadev | lemalot | yado | haiyom
+lazahav | lazahav | velakesef | lakesef | ulekhol | melakhah
+beyad | charashim | umi | mitnadev | lemalot | yado | haiyom
 Layahweh
 
 29:6
@@ -37,7 +40,8 @@ ulesarei | melekhet | hamelekh
 29:7
 vaiyitenu | la'avodat | beit | ha'elohim | zahav | kikarim | chameshet | alafim | va'adarkhonim | ribo
 vekhesef | kikarim | aseret | alafim | unechoshet
-ribo | ushemonat | alafim | kikarim | uvarzel | me'ah | elef | kikarim
+ribo | ushemonat | alafim | kikarim
+uvarzel | me'ah | elef | kikarim
 
 29:8
 vehanimtza | ito | avanim
@@ -56,35 +60,41 @@ simchah | gedolah
 
 29:10
 vayvarekh | David | et | Yahweh
-le'einei | kol | hakahal
+le'einei
+kol | hakahal
 vaiyomer | David | barukh | atah | Yahweh | elohei | Yisra'el | avinu
-me'olam
-ve'ad | olam
+me'olam | ve'ad | olam
 
 29:11
-lekha | Yahweh | hagedulah | vehagevurah | vehatif'eret | vehanetzach | vehahod | ki | khol
-bashamayim | uva'aretz | lekha | Yahweh | hamamlakhah
+lekha | Yahweh | hagedulah | vehagevurah | vehatif'eret | vehanetzach | vehahod
+ki | khol | bashamayim | uva'aretz
+lekha | Yahweh | hamamlakhah
 vehammitnase | lekhol | lerosh
 
 29:12
-veha'osher | vehakavod | milefaneikha
-ve'atah | moshel | bakol | uveyadekha | koach | ugevurah | uveyadekha
+veha'osher | vehakavod | milefaneikha | ve'atah | moshel | bakol
+uveyadekha | koach | ugevurah | uveyadekha
 legadel | ulechazek | lakol
 
 29:13
-ve'atah | eloheinu | modim | anachnu | lakh | umehalim | leshem | tif'artekha
+ve'atah | eloheinu
+modim | anachnu | lakh | umehalim
+leshem | tif'artekha
 
 29:14
-vekhi | mi | ani | umi | ami | ki | na'tzor | koach
-lehitnadev | kazot | ki | mimekha | hakol | umiyadekha
+vekhi | mi | ani | umi | ami
+ki | na'tzor | koach | lehitnadev | kazot
+ki | mimekha | hakol | umiyadekha
 natanu | lakh
 
 29:15
-ki | gerim | anachnu | lefaneikha | vetoshavim | kekhol | avoteinu | katzel | yameinu | al | ha'aretz
+ki | gerim | anachnu | lefaneikha | vetoshavim | kekhol | avoteinu
+katzel | yameinu | al | ha'aretz
 ve'ein | mikveh
 
 29:16
-Yahweh | eloheinu | khol | hehamon | hazeh | asher | hakhinonu
+Yahweh | eloheinu
+khol | hehamon | hazeh | asher | hakhinonu
 livnot | lekha | vayit | leshem | kodshecha | miyadekha | hi | ulekha | hakol
 
 29:17
@@ -104,8 +114,7 @@ eleikha
 
 29:19
 Velishlomoh | veni | ten | levav | shalem
-lishmor | mitzvoteikha
-edevoteikha
+lishmor | mitzvoteikha | edevoteikha
 vechukeicha | vela'asot | hakol | velivnot
 habirah | asher | hakhinoti
 
@@ -137,14 +146,17 @@ kol | Yisra'el
 
 29:24
 vekhol | hasarim | vehaggiborim
-vegam | kol | benei
+vegam
+kol | benei
 hamelekh | David
-natenu | yad | tachat
+natenu | yad
+tachat
 Shelomoh | hamelekh
 
 29:25
 vaygadel | Yahweh | et | Shelomoh | lema'lah
-le'einei | kol | Yisra'el
+le'einei
+kol | Yisra'el
 vaiyiten | alav | hod | malkhut | asher | lo | hayah | al | kol | melekh | lefanav
 al | Yisra'el
 
@@ -154,7 +166,8 @@ al | kol | Yisra'el
 
 29:27
 vehaiyamim | asher | malakh | al | Yisra'el
-arba'im | shanah | Bechevron | malakh | sheva | shanim | Uvirushalim | malakh
+arba'im | shanah
+Bechevron | malakh | sheva | shanim | Uvirushalim | malakh
 sheloshim | veshaloosh
 
 29:28
@@ -177,4 +190,5 @@ Gad | hachozeh
 im | kol | malkhuto
 ugevurato
 veha'itim | asher | averu | alav | ve'al | Yisra'el
-ve'al | kol | mamlekhot | ha'aratzot
+ve'al
+kol | mamlekhot | ha'aratzot

@@ -7,8 +7,7 @@ lefar'oh | ulekhol | avadav | ulekhol | artzo
 29:2
 hamasot | hagedolot | asher | ra'u
 eineikha
-ha'otot | vehamofetim | hagedolim
-hahem
+ha'otot | vehamofetim | hagedolim | hahem
 
 29:3
 velo | natan | Yahweh | lakhem | lev | lada'at
@@ -18,15 +17,15 @@ ad
 haiyom | hazeh
 
 29:4
-va'olekh | etkhem | arba'im | shanah | bamidbar
-lo | valu | salmoteikhem | me'aleikhem
-vena'alkha | lo | valtah | me'al | raglekha
+va'olekh | etkhem | arba'im | shanah
+bamidbar
+lo | valu | salmoteikhem | me'aleikhem | vena'alkha | lo | valtah | me'al | raglekha
 
 29:5
 lechem | lo | akhaltem | veyayin | veshekhar
 lo | shetitem
-lema'an | tede'u | ki | ani | Yahweh
-eloheikhem
+lema'an | tede'u
+ki | ani | Yahweh | eloheikhem
 
 29:6
 vatavo'u
@@ -43,15 +42,14 @@ shevet | hamnashi
 ushemartem | et | divrei | haberit | hazot
 va'asitem
 otam
-lema'an | taskilu
-et | kol | asher | ta'asun
+lema'an | taskilu | et
+kol | asher | ta'asun
 
 29:9
 atem | nitzavim | haiyom | kulekhem
-lifnei
-Yahweh | eloheikhem
-rasheikhem | shivteikhem | zikneikhem | veshotereikhem | kol
-ish | Yisra'el
+lifnei | Yahweh | eloheikhem
+rasheikhem | shivteikhem | zikneikhem | veshotereikhem
+kol | ish | Yisra'el
 
 29:10
 tapekhem | nesheikhem
@@ -60,14 +58,16 @@ ad
 sho'ev | meimeikha
 
 29:11
-le'averekha | bivrit | Yahweh | eloheikha | uve'alato | asher | Yahweh | eloheikha
+le'averekha | bivrit | Yahweh | eloheikha
+uve'alato | asher | Yahweh | eloheikha
 koret | imekha
 haiyom
 
 29:12
 lema'an | hakim | otekha | haiyom | lo | le'am | vehu | yihyeh | lekha | lelohim
-ka'asher
-diber | lakh | vekha'asher | Nishba | la'avoteikha | Le'avraham | Leyitzchak | Uleya'ako
+ka'asher | diber | lakh
+vekha'asher | Nishba | la'avoteikha
+Le'avraham | Leyitzchak | Uleya'ako
 
 29:13
 velo | itekhem
@@ -78,15 +78,14 @@ hazot
 
 29:14
 ki | et | asher | yeshno | poh | imanu | omed | haiyom
-lifnei
-Yahweh | eloheinu
+lifnei | Yahweh | eloheinu
 ve'et | asher | einenu | poh
 imanu | haiyom
 
 29:15
-ki | atem | yeda'tem
-et | asher | yashavnu | be'eretz | Mitzrayim | ve'et | asher | avarnu | bekerev | hagoyim
-asher | avartem
+ki | atem | yeda'tem | et | asher | yashavnu
+be'eretz | Mitzrayim
+ve'et | asher | avarnu | bekerev | hagoyim | asher | avartem
 
 29:16
 vatir'u | et | shikutzeihem
@@ -112,45 +111,47 @@ et | hatzeme'ah
 lo | yoveh | Yahweh | seloach | lo
 ki | az | ye'shan | af | Yahweh | vekin'ato | ba'ish | hahu
 veravetzah | bo | kol | ha'alah
-haketuvah | basefer | hazeh | umachah | Yahweh | et | shemo | mitachat
-hashamayim
+haketuvah | basefer | hazeh
+umachah | Yahweh | et | shemo
+mitachat | hashamayim
 
 29:20
-vehivdilo | Yahweh | lera'ah | mikol
-shivtei | Yisra'el | kekhol | alot | haberit
-haketuvah | besefer | hatorah
-hazeh
+vehivdilo | Yahweh | lera'ah
+mikol
+shivtei | Yisra'el
+kekhol | alot | haberit
+haketuvah | besefer | hatorah | hazeh
 
 29:21
 ve'amar | hador | ha'acharon | beneikhem | asher | yakumu | me'achareikhem
 vehanakheri | asher | yavo
 me'eretz | rechokah
 vera'u | et | makot | ha'aretz | hahiv | ve'et | tachalu'eiha
-asher | chilah | Yahweh | bah
+asher | chilah | Yahweh
+bah
 
 29:22
-gaferit | vamelach | serefah | khol | artzah | lo | tizara | velo | tatzmiach
-velo | ya'aleh | vah | kol | esev | kemahpekhat | Sedom | Va'amorah | Admah | Utzevyim
-asher | hafakh | Yahweh
+gaferit | vamelach | serefah | khol | artzah
+lo | tizara | velo | tatzmiach
+velo | ya'aleh | vah
+kol | esev
+kemahpekhat | Sedom | Va'amorah | Admah | Utzevyim | asher | hafakh | Yahweh
 be'apo | uvachamato
 
 29:23
 ve'ameru | kol | hagoyim
 al | meh | asah | Yahweh | kakhah
-la'aretz | hazot | meh | chori | ha'af | hagadol
-hazeh
+la'aretz | hazot | meh | chori | ha'af | hagadol | hazeh
 
 29:24
 ve'ameru | al | asher | azevu
-et | berit | Yahweh
-elohei | avotam | asher | karat | imam
+et | berit | Yahweh | elohei | avotam | asher | karat | imam
 behotzi'o | otam | me'eretz | Mitzrayim
 
 29:25
 vaiyelekhu | vaiya'avdu | elohim | acherim
 vaiyishtachavu
-lahem
-elohim | asher | lo | yeda'um
+lahem | elohim | asher | lo | yeda'um
 velo | chalak | lahem
 
 29:26

@@ -1,7 +1,7 @@
 55:1
 ho | kol | tzame | lekhu | lamayim
-va'asher | ein | lo | kasef | lekhu | shivru | ve'ekholu
-ulekhu | shivru | belo | khesef | uvelo | mechir
+va'asher | ein | lo | kasef
+lekhu | shivru | ve'ekholu | ulekhu | shivru | belo | khesef | uvelo | mechir
 yayin | vechalav
 
 55:2
@@ -29,7 +29,9 @@ le'umim
 hen | goy | lo | teda | tikra
 vegoy | lo | yeda'ukha
 eleikha | yarutzu
-lema'an | Yahweh | eloheikha | velikdoosh | Yisra'el | ki | fe'arakh
+lema'an | Yahweh | eloheikha
+velikdoosh | Yisra'el
+ki | fe'arakh
 
 55:6
 dirshu | Yahweh
@@ -39,9 +41,9 @@ kera'uhu | bihyoto | karov
 55:7
 ya'azo | rasha | darko
 ve'ish | aven
-machshevotav
-veyasho | el | Yahweh | virachamehu
-ve'el | eloheinu | ki | yarbeh | lisloach
+machshevotav | veyasho | el | Yahweh | virachamehu
+ve'el | eloheinu
+ki | yarbeh | lisloach
 
 55:8
 ki | lo | machshevotai | machshevoteikhem | velo | darkheikhem
@@ -64,12 +66,13 @@ la'okhel
 55:11
 ken | yihyeh | devari | asher | yetze | mipi
 lo | yashuv | elai
-reikam | ki | im | asah | et | asher | chafatzti
+reikam
+ki | im | asah | et | asher | chafatzti
 vehitzliach | asher | shelachtiv
 
 55:12
-ki | vesimchah | tetze'u | uveshalom
-tuvalun
+ki | vesimchah | tetze'u
+uveshalom | tuvalun
 heharim | vehageva'ot | yiftzechu | lifneikhem | rinah
 vekhol | atzei | hasadeh
 yimcha'u | khaf
@@ -79,4 +82,5 @@ tachat | hana'atzutz | ya'aleh | veroosh
 vetachat | hasirpad
 ya'aleh | hadas
 vehayah | Layahweh | leshem
-le'ot | olam | lo | yikaret
+le'ot | olam
+lo | yikaret

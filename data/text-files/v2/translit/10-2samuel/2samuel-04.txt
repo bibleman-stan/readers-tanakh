@@ -7,7 +7,8 @@ Nivhalu
 
 4:2
 ushenei | anashim | sarei | gedudim | hayu | ven | Sha'ul | shem | ha'echad | Ba'anah | veshem | hasheni | Rekhav | benei | Rimon | habe'eroti
-mibenei | Vinyamin | ki | gam | Be'erot
+mibenei | Vinyamin
+ki | gam | Be'erot
 techashev
 al | Binyamin
 
@@ -19,7 +20,8 @@ ad
 haiyom | hazeh
 
 4:4
-Velihonatan | ben | Sha'ul | ben
+Velihonatan | ben | Sha'ul
+ben
 nekheh | raglayim
 ben | chamesh | shanim | hayah | bevo | shemu'at | Sha'ul | Vihonatan | Miyizre'el | vatisa'ehu | omanto | vatanos
 vayhi | bechafezah | lanus | vaiyipol | vaiyipaseach
@@ -30,8 +32,8 @@ vaiyelekhu | benei | Rimon | habe'eroti | Rekhav | Uva'anah
 vaiyavo'u | kechom | haiyom
 el | beit
 Ish | Boshet
-vehu | shokhev | et
-mishkav | hatzohorayim
+vehu | shokhev
+et | mishkav | hatzohorayim
 
 4:6
 vehenah | ba'u | ad | tokh | habayit | lokechei | chitim
@@ -72,7 +74,9 @@ besorah
 4:11
 af | ki | anashim | resha'im | haregu | et | ish | tzadik | beveito
 al | mishkavo
-ve'atah | halo | avakesh | et | damo | miyedkhem | uvi'arti | etkhem | min | ha'aretz
+ve'atah | halo | avakesh | et | damo | miyedkhem
+uvi'arti | etkhem
+min | ha'aretz
 
 4:12
 vaytzav | David | et | hane'arim | vaiyahargum | vaykatzetzu | et | yedeihem | ve'et | ragleihem

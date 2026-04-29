@@ -49,8 +49,7 @@ ve'arba | me'ot | ish
 imo
 
 32:8
-vaiyira | Ya'ako | me'od
-vaiyetzer | lo
+vaiyira | Ya'ako | me'od | vaiyetzer | lo
 vaiyachatz | et | ha'am | asher | ito | ve'et | hatzon | ve'et | habakar | vehaggemalim
 lishnei | machanot
 
@@ -70,7 +69,8 @@ ve'eitivah | imakh
 
 32:11
 katoneti | mikol | hachasadim | umikol | ha'emet | asher | asita
-et | avdekha | ki | vemakli | avarti | et | Haiyarden | hazeh
+et | avdekha
+ki | vemakli | avarti | et | Haiyarden | hazeh
 ve'atah | hayiti
 lishnei | machanot
 
@@ -95,14 +95,14 @@ vaiyikach | min | haba | veyado | minchah
 Le'esav | achiv
 
 32:15
-izim | matayim
-uteyashim
-esrim | rechelim | matayim
-ve'eilim | esrim
+izim | matayim | uteyashim
+esrim | rechelim | matayim | ve'eilim | esrim
 
 32:16
 gemalim | meinikot | uveneihem
-sheloshim | parot | arba'im | ufarim | asarah | atonot | esrim | va'yarim
+sheloshim
+parot | arba'im | ufarim | asarah
+atonot | esrim | va'yarim
 asarah
 
 32:17
@@ -110,11 +110,13 @@ vaiyiten | beyad | avadav
 eder | eder
 levado
 vaiyomer | el | avadav | ivru | lefanai
-verevach | tasimu | bein | eder | uvein | eder
+verevach | tasimu
+bein | eder | uvein | eder
 
 32:18
 vaytzav | et | harishon
-lemor | ki | yifgashekha | Esav | achi | vish'elekha | lemor
+lemor
+ki | yifgashekha | Esav | achi | vish'elekha | lemor
 lemi | atah | ve'anah | telekh | ulemi
 eleh | lefaneikha
 
@@ -127,14 +129,18 @@ achareinu
 
 32:20
 vaytzav | gam | et | hasheni | gam | et | hashelishi
-gam | et | kol | haholekhim | acharei | ha'adarim
-lemor | kadavar | hazeh | tedaberun | el | Esav | bemotza'akhem
+gam | et | kol | haholekhim
+acharei | ha'adarim
+lemor
+kadavar | hazeh | tedaberun | el | Esav
+bemotza'akhem
 oto
 
 32:21
 va'amartem
 gam | hineh | avdekha | Ya'ako
-achareinu | ki | amar | akhaperah | fanav | baminchah | haholekhet | lefanai
+achareinu
+ki | amar | akhaperah | fanav | baminchah | haholekhet | lefanai
 ve'acharei | khen | er'eh | fanav
 ulai
 yisa | fanai
@@ -146,7 +152,8 @@ vehu | lan | balaylah | hahu | bamachaneh
 
 32:23
 vaiyakom | balaylah | hu | vaiyikach | et | shetei | nashav | ve'et | shetei | shifchotav
-ve'et | achad | asar | yeladav
+ve'et | achad | asar
+yeladav
 vaiya'avor | et
 ma'avar | Yabok
 
@@ -167,7 +174,8 @@ alot | hashachar
 vaiyar | ki | lo | yakhol | lo
 vaiyiga
 bekhaf | yerekho
-vateka | kaf | yerekh | Ya'ako | behe'aveko
+vateka | kaf | yerekh | Ya'ako
+behe'aveko
 imo
 
 32:27
@@ -186,20 +194,21 @@ Ya'ako
 32:29
 vaiyomer | lo | Ya'ako | ye'amer | od | shimkha
 ki
-im | Yisra'el | ki | sarita | im | elohim | ve'im | anashim
+im | Yisra'el
+ki | sarita | im | elohim | ve'im | anashim
 vatukhal
 
 32:30
 vaiyish'al | Ya'ako | vaiyomer | hagidah | na | shemekha
 vaiyomer
-lamah | zeh
-tish'al | lishmi
+lamah | zeh | tish'al | lishmi
 vayvarekh | oto
 sham
 
 32:31
 vaiyikra | Ya'ako | shem | hamakom
-Peni'el | ki | ra'iti | elohim | panim | el | panim
+Peni'el
+ki | ra'iti | elohim | panim | el | panim
 vatinatzel
 nafshi
 
@@ -213,5 +222,7 @@ al | yerekho
 32:33
 al | ken | lo | yokhelu | venei | Yisra'el | et | gid | hanasheh | asher | al | kaf | haiyarekh
 ad
-haiyom | hazeh | ki | naga | bekhaf | yerekh | Ya'ako | begid
+haiyom | hazeh
+ki | naga | bekhaf | yerekh | Ya'ako
+begid
 hanasheh

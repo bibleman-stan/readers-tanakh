@@ -4,7 +4,8 @@ alah | Ba'sha | melekh | Yisra'el | al | Yehudah
 vaiyiven
 et | Haramah
 levilti | tet | yotze | vava
-Le'asa | melekh | Yehudah
+Le'asa
+melekh | Yehudah
 
 16:2
 vaiyotze | Asa | kesef | vezahav | me'otzerot | beit | Yahweh
@@ -14,7 +15,8 @@ haiyoshev | Bedarmesek
 lemor
 
 16:3
-berit | beini | uveinekha | uvein | avi | uvein | avikha
+berit | beini | uveinekha | uvein | avi
+uvein | avikha
 hineh | shalachti | lekha | kesef | vezahav
 lekh | hafer | beritekha | et | Ba'sha | melekh | Yisra'el
 veya'aleh
@@ -31,9 +33,7 @@ arei | Naftali
 16:5
 vayhi | kishmoa | Ba'sha
 vaiyechdal
-mibenot
-et | Haramah
-vaiyashbet
+mibenot | et | Haramah | vaiyashbet
 et | melakhto
 
 16:6
@@ -45,9 +45,11 @@ ve'et | Hamitzpah
 
 16:7
 uva'et | hahi | ba | Chanani | haro'eh
-el | Asa | melekh | Yehudah
+el | Asa
+melekh | Yehudah
 vaiyomer | elav | behisha'enkha | al | melekh | Aram | velo | Nish'anta | al | Yahweh | eloheikha
-al | ken | Nimlat | cheil | melekh | Aram | miyadekha
+al | ken | Nimlat | cheil | melekh | Aram
+miyadekha
 
 16:8
 halo | hakushim | vehaluvim | hayu | lechayil | laro | lerekhev | ulefarashim
@@ -56,8 +58,8 @@ netanam | beyadekha
 
 16:9
 ki | Yahweh | einav | meshotetot | bekhol | ha'aretz | lehitchazek | im | levavam | shalem | elav
-Niskalta | al | zot | ki | me'atah
-yesh | imekha | milchamot
+Niskalta | al | zot
+ki | me'atah | yesh | imekha | milchamot
 
 16:10
 vaiyikh'as | Asa | el | haro'eh | vaiyitenehu | beit | hamahpekhet
@@ -77,7 +79,8 @@ Veyisra'el
 vaiyechele | Asa | bishnat | sheloshim | vatesha | lemalkhuto | beraglav
 ad | lema'lah
 chalyo
-vegam | bechalyo | lo | darash | et | Yahweh | ki | barofe'im
+vegam | bechalyo | lo | darash | et | Yahweh
+ki | barofe'im
 
 16:13
 vaiyishkav | Asa

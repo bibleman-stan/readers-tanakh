@@ -15,7 +15,8 @@ elohim | acherim
 
 24:3
 va'ekach | et | avikhem | et | Avraham | me'ever | hanahar
-va'olekh | oto | bekhol | eretz | Kena'an
+va'olekh | oto
+bekhol | eretz | Kena'an
 va'erev | et | zar'o
 va'eten | lo
 et | Yitzchak
@@ -34,8 +35,7 @@ ve'achar
 hotzeti | etkhem
 
 24:6
-va'otzi | et | avoteikhem | Mimitzrayim
-vatavo'u
+va'otzi | et | avoteikhem | Mimitzrayim | vatavo'u
 haiyamah
 vaiyirdefu | Mitzrayim | acharei | avoteikhem | berekhev | uvefarashim
 yam | suf
@@ -62,16 +62,17 @@ lekalel | etkhem
 
 24:10
 velo | aviti
-lishmoa | Levil'am
-vayvarekh | barokh | etkhem
-va'atzil | etkhem | miyado
+lishmoa | Levil'am | vayvarekh | barokh | etkhem
+va'atzil | etkhem
+miyado
 
 24:11
 vata'avru | et | Haiyarden | vatavo'u | el | Yericho
 vaiyilachamu | vakhem | ba'alei | Yericho | ha'emori | vehapperizi | vehakena'ani | vehachiti | vehagirgashi
 hachivi
 vehayvusi
-va'eten | otam | beyedkhem
+va'eten | otam
+beyedkhem
 
 24:12
 va'eshlach | lifneikhem | et | hatzir'ah
@@ -85,7 +86,8 @@ atem
 okhelim
 
 24:14
-ve'atah | yer'u | et | Yahweh | ve'ivdu | oto | betamim | uve'emet
+ve'atah | yer'u | et | Yahweh | ve'ivdu | oto
+betamim | uve'emet
 vehasiru | et | elohim | asher | avedu | avoteikhem | be'ever | hanahar | Uvemitzrayim
 ve'ivdu
 et | Yahweh
@@ -101,8 +103,7 @@ et | Yahweh
 
 24:16
 vaiya'an | ha'am | vaiyomer
-chalilah | lanu | me'azo
-et | Yahweh
+chalilah | lanu | me'azo | et | Yahweh
 la'avod
 elohim | acherim
 
@@ -116,8 +117,8 @@ bekirbam
 
 24:18
 vaygaresh | Yahweh | et | kol | ha'amim | ve'et | ha'emori | yoshev | ha'aretz
-mipaneinu
-gam | anachnu | na'avod | et | Yahweh | ki | hu
+mipaneinu | gam | anachnu | na'avod | et | Yahweh
+ki | hu
 eloheinu
 
 24:19
@@ -131,12 +132,13 @@ lo | yisa | lefish'akhem | ulechatoteikhem
 ki | ta'azvu | et | Yahweh
 va'avadtem
 elohei | nekhar
-veshav | vehera | lakhem | vekhilah | etkhem | acharei
-asher | heitiv | lakhem
+veshav | vehera | lakhem | vekhilah | etkhem
+acharei | asher | heitiv | lakhem
 
 24:21
 vaiyomer | ha'am
-el | Yehoshua | lo | ki | et | Yahweh
+el | Yehoshua | lo
+ki | et | Yahweh
 na'avod
 
 24:22
@@ -155,8 +157,8 @@ elohei | Yisra'el
 24:24
 vaiyomeru | ha'am
 el | Yehoshua
-et | Yahweh | eloheinu | na'avod | uvekolo
-nishma
+et | Yahweh | eloheinu | na'avod
+uvekolo | nishma
 
 24:25
 vaiyikhrot | Yehoshua | berit | la'am
@@ -186,7 +188,8 @@ ish | lenachalato
 24:29
 vayhi | acharei | hadevarim | ha'eleh
 vaiyamot | Yehoshua | bin | Nun
-eved | Yahweh | ben | me'ah | va'eser
+eved | Yahweh
+ben | me'ah | va'eser
 shanim
 
 24:30
@@ -196,8 +199,7 @@ mitzefon | lehar | Ga'ash
 
 24:31
 vaiya'avod | Yisra'el | et | Yahweh
-kol
-yemei | Yehoshua
+kol | yemei | Yehoshua
 vekhol | yemei | hazekenim | asher | he'erikhu | yamim | acharei | Yehoshua
 va'asher | yade'u | et | kol | ma'aseh | Yahweh | asher | asah
 Leyisra'el

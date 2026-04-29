@@ -25,7 +25,8 @@ lamelekh
 vehana'arah
 yafah | ad | me'od
 vatehi | lamelekh | sokhenet | vatesharetehu
-vehamelekh | lo | yeda'ah
+vehamelekh
+lo | yeda'ah
 
 1:5
 Va'adoniyah | ven | Chagit | mitnase | lemor
@@ -35,9 +36,10 @@ vachamishim | ish
 ratzim | lefanav
 
 1:6
-velo | atzavo | aviv | miyamav | lemor | madua | kakhah | asita
-vegam | hu | tov | to'ar | me'od
-ve'oto | yaldah | acharei | Avshalom
+velo | atzavo | aviv | miyamav | lemor
+madua | kakhah | asita
+vegam | hu | tov | to'ar | me'od | ve'oto | yaldah
+acharei | Avshalom
 
 1:7
 vaiyihyu | devarav
@@ -45,8 +47,7 @@ im | Yo'av | ben | Tzeruyah
 ve'im
 Evyatar | hakohen
 vaiya'zeru
-acharei
-Adoniyah
+acharei | Adoniyah
 
 1:8
 Vetzadok | hakohen | Uvenayahu | ven | Yehoyada | Venatan | hanavi | Veshim'i | Vere'i
@@ -83,23 +84,22 @@ Shelomoh
 
 1:13
 lekhi | uvo'i | el | hamelekh | David | ve'amart | elav | halo | atah | adoni | hamelekh | Nishba'ta | la'amatekha | lemor
-ki | Shelomoh | venekh | yimlokh | acharai
-vehu
+ki | Shelomoh | venekh | yimlokh | acharai | vehu
 yeshev | al | kis'i
-umadua | malakh | Adoniyahu
+umadua
+malakh | Adoniyahu
 
 1:14
 hineh | odakh | medaberet | sham
 im | hamelekh
-va'ani | avo | acharayikh | umileti
+va'ani | avo | acharayikh
+umileti
 et | devarayikh
 
 1:15
 vatavo | Vat | Sheve | el | hamelekh | hachadrah
 vehamelekh
-zaken | me'od
-Va'avishag | hashunamit | mesharat
-et | hamelekh
+zaken | me'od | Va'avishag | hashunamit | mesharat | et | hamelekh
 
 1:16
 vatikod | Bat | Sheva
@@ -111,13 +111,14 @@ mah | lakh
 1:17
 vatomer | lo | adoni | atah | Nishba'ta | Bayahweh | eloheikha | la'amatekha
 ki | Shelomoh | venekh
-yimlokh | acharai
-vehu
+yimlokh | acharai | vehu
 yeshev | al | kis'i
 
 1:18
-ve'atah | hineh | Adoniyah | malakh
-ve'atah | adoni | hamelekh | lo | yada'eta
+ve'atah | hineh | Adoniyah
+malakh
+ve'atah | adoni | hamelekh
+lo | yada'eta
 
 1:19
 vaiyizbach | shor | umeri | vetzon | laro
@@ -140,8 +141,7 @@ vehayiti | ani | uveni | Shelomoh
 chata'im
 
 1:22
-vehineh | odenah | medaberet
-im | hamelekh
+vehineh | odenah | medaberet | im | hamelekh
 Venatan | hanavi
 ba
 
@@ -157,8 +157,7 @@ vaiyomer | Natan
 adoni | hamelekh
 atah | amarta
 Adoniyahu
-yimlokh | acharai
-vehu
+yimlokh | acharai | vehu
 yeshev | al | kis'i
 
 1:25
@@ -196,9 +195,9 @@ asher | padah | et | nafshi | mikol | tzarah
 
 1:30
 ki | ka'asher | Nishba'ti | lakh | Bayahweh | elohei | Yisra'el | lemor
-ki | Shelomoh | venekh | yimlokh | acharai
-vehu | yeshev | al | kis'i
-tachtai | ki | ken | e'eseh
+ki | Shelomoh | venekh | yimlokh | acharai | vehu | yeshev | al | kis'i
+tachtai
+ki | ken | e'eseh
 haiyom | hazeh
 
 1:31
@@ -211,7 +210,9 @@ le'olam
 
 1:32
 vaiyomer | hamelekh | David | kir'u | li | Letzadok | hakohen | Ulenatan | hanavi
-Velivnayahu | ben | Yehoyada | vaiyavo'u
+Velivnayahu
+ben | Yehoyada
+vaiyavo'u
 lifnei | hamelekh
 
 1:33
@@ -241,8 +242,7 @@ ve'al | Yehudah
 1:36
 vaiya'an | Benayahu | ven | Yehoyada | et | hamelekh
 vaiyomer | amen
-ken | yomar | Yahweh
-elohei
+ken | yomar | Yahweh | elohei
 adoni | hamelekh
 
 1:37
@@ -250,8 +250,7 @@ ka'asher | hayah | Yahweh | im | adoni | hamelekh
 ken
 yehi | im | Shelomoh
 vigadel | et | kis'o
-mikise
-adoni
+mikise | adoni
 hamelekh | David
 
 1:38
@@ -280,7 +279,8 @@ vatibaka | ha'aretz | bekolam
 
 1:41
 vaiyishma | Adoniyahu | vekhol | hakeru'im | asher | ito
-vehem | kilu | le'ekhol
+vehem
+kilu | le'ekhol
 vaiyishma | Yo'av | et | kol | hashofar
 vaiyomer
 madua | kol | hakiryah
@@ -313,8 +313,7 @@ pirdat | hamelekh
 1:45
 vaiyimshechu | oto | Tzadok | hakohen | Venatan | hanavi | lemelekh | Begichon | vaiya'alu | misham | semechim
 vatehom
-hakiryah
-hu | hakol | asher | shema'tem
+hakiryah | hu | hakol | asher | shema'tem
 
 1:46
 vegam | yashav | Shelomoh
@@ -358,8 +357,7 @@ im | yamit | et | avdo | becharev
 1:52
 vaiyomer | Shelomoh
 im | yihyeh | leven | chayil
-lo | yipol | misa'arato
-aretzah
+lo | yipol | misa'arato | aretzah
 ve'im | ra'ah | timatze | vo
 vamet
 

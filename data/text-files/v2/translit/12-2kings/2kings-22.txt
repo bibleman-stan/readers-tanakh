@@ -2,14 +2,14 @@
 ben | shemoneh | shanah | Yoshiyahu | vemalekho
 usheloshim | ve'achat | shanah | malakh | Birushalim
 veshem | imo
-Yedidah | vat | Adayah | Mibatzekat
+Yedidah | vat | Adayah
+Mibatzekat
 
 22:2
 vaiya'as | haiyashar
 be'einei | Yahweh
 vaiyelekh | bekhol | derekh | David | aviv
-velo | sar
-yamin | usemol
+velo | sar | yamin | usemol
 
 22:3
 vayhi | bishmoneh | esreh | shanah
@@ -22,12 +22,14 @@ lemor
 22:4
 aleh | el | Chilkiyahu | hakohen | hagadol
 veyatem | et | hakesef
-hamuva | beit | Yahweh | asher | asefu | shomerei | hasaf
+hamuva
+beit | Yahweh | asher | asefu | shomerei | hasaf
 me'et | ha'am
 
 22:5
 veyitnuhu | al | yad | osei | hamelakhah
-hamufkadim | veit | Yahweh
+hamufkadim
+veit | Yahweh
 veyitenu | oto | le'osei | hamelakhah | asher | beveit | Yahweh
 lechazek | bedek | habayit
 
@@ -56,7 +58,8 @@ vaiyashev | et | hamelekh
 davar
 vaiyomer | hitikhu | avadeikha | et | hakesef | hanimtza | vabayit
 vaiyitenuhu | al | yad | osei | hamelakhah
-hamufkadim | beit | Yahweh
+hamufkadim
+beit | Yahweh
 
 22:10
 vaiyaged | Shafan | hasofer | lamelekh | lemor
@@ -79,8 +82,8 @@ lemor
 
 22:13
 lekhu | dirshu | et | Yahweh | ba'adi | uve'ad | ha'am | uve'ad | kol | Yehudah
-al | divrei | hasefer | hanimtza
-hazeh | ki | gedolah | chamat | Yahweh | asher | hi | Nitzetah | vanu
+al | divrei | hasefer | hanimtza | hazeh
+ki | gedolah | chamat | Yahweh | asher | hi | Nitzetah | vanu
 al | asher | lo | shame'u | avoteinu | al | divrei | hasefer | hazeh
 la'asot | kekhol | hakatuv | aleinu
 
@@ -91,8 +94,8 @@ vaydaberu
 eleiha
 
 22:15
-vatomer | aleihem | koh | amar | Yahweh
-elohei | Yisra'el
+vatomer | aleihem
+koh | amar | Yahweh | elohei | Yisra'el
 imru | la'ish
 asher | shalach | etkhem
 elai
@@ -106,12 +109,16 @@ melekh | Yehudah
 
 22:17
 tachat | asher | azavuni | vaykateru | lelohim | acherim
-lema'an | hakh'iseni | bekhol | ma'aseh | yedeihem
-venitzetah | chamati | bamakom | hazeh | velo | tikhbeh
+lema'an | hakh'iseni
+bekhol
+ma'aseh | yedeihem
+venitzetah | chamati | bamakom | hazeh
+velo | tikhbeh
 
 22:18
-ve'el | melekh | Yehudah | hasholeach | etkhem | lidrosh | et | Yahweh | koh | tomeru
-elav | koh | amar | Yahweh | elohei | Yisra'el
+ve'el | melekh | Yehudah | hasholeach | etkhem | lidrosh | et | Yahweh
+koh | tomeru | elav
+koh | amar | Yahweh | elohei | Yisra'el
 hadevarim | asher | shama'eta
 
 22:19
@@ -125,7 +132,6 @@ ne'um | Yahweh
 22:20
 lakhen | hini | osifkha | al | avoteikha | vene'esafta | el | kivroteicha | beshalom
 velo | tir'einah | eineikha | bekhol | hara'ah
-asher | ani | mevi
-al | hamakom | hazeh
+asher | ani | mevi | al | hamakom | hazeh
 vaiyashivu | et | hamelekh
 davar

@@ -5,8 +5,7 @@ achadim
 
 11:2
 vayhi
-benase'am | mikedem
-vaiyimtze'u | vik'ah | be'eretz | Shin'ar
+benase'am | mikedem | vaiyimtze'u | vik'ah | be'eretz | Shin'ar
 vaiyeshevu | sham
 
 11:3
@@ -34,7 +33,8 @@ benei | ha'adam
 vaiyomer | Yahweh | hen | am | echad | vesafah | achat | lekhulam
 vezeh
 hachilam | la'asot
-ve'atah | lo | yibatzer | mehem | kol | asher | yazemu
+ve'atah | lo | yibatzer | mehem
+kol | asher | yazemu
 la'asot
 
 11:7
@@ -52,7 +52,10 @@ livnot | ha'ir
 11:9
 al | ken | kara | shemah | Bavel
 ki | sham | balal | Yahweh
-sefat | kol | ha'aretz | umisham | hefitzam | Yahweh | al | penei | kol | ha'aretz
+sefat | kol | ha'aretz
+umisham | hefitzam | Yahweh
+al | penei
+kol | ha'aretz
 
 11:10
 eleh | toldot | Shem
@@ -174,7 +177,8 @@ holid | et | Lot
 11:28
 vaiyamot | Haran
 al | penei
-Terach | aviv | be'eretz | moladto | Be'ur | Kasdim
+Terach | aviv
+be'eretz | moladto | Be'ur | Kasdim
 
 11:29
 vaiyikach | Avram | Venachor | lahem
@@ -185,8 +189,7 @@ va'avi | Yiskah
 
 11:30
 vatehi | Sarai
-akarah
-ein | lah | valad
+akarah | ein | lah | valad
 
 11:31
 vaiyikach | Terach | et | Avram | beno | ve'et | Lot | ben | Haran | ben | beno

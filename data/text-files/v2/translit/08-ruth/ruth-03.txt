@@ -1,6 +1,7 @@
 3:1
 vatomer | lah
-No'omi | chamotah | biti | halo | avakesh | lakh | manoach | asher | yitav | lakh
+No'omi | chamotah
+biti | halo | avakesh | lakh | manoach | asher | yitav | lakh
 
 3:2
 ve'atah | halo | Vo'az | moda'tanu | asher | hayit
@@ -17,14 +18,13 @@ le'ekhol | velishtot
 
 3:4
 vihi | veshakhevo | veyada'at | et | hamakom | asher | yishkav | sham
-uvat | vegilit | margelotav
-veshakhaveti
-vehu | yagid | lakh
-et | asher | ta'asin
+uvat | vegilit | margelotav | veshakhaveti
+vehu | yagid | lakh | et | asher | ta'asin
 
 3:5
 vatomer
-eleiha | kol | asher | tomri elai
+eleiha
+kol | asher | tomri elai
 e'eseh
 
 3:6
@@ -38,8 +38,7 @@ vaiyokhal | Bo'az | vaiyeshet | vaiyitav | libo
 vaiyavo
 lishkav | biktzeh | ha'aremah
 vatavo | valat
-vategal | margelotav
-vatishkav
+vategal | margelotav | vatishkav
 
 3:8
 vayhi | bachatzi | halaylah
@@ -50,24 +49,29 @@ shokhevet | margelotav
 
 3:9
 vaiyomer
-mi | at
-vatomer | anokhi | Rut | amatekha
-ufarasta | khenafekha | al | amatekha | ki | go'el
+mi | at | vatomer | anokhi | Rut | amatekha
+ufarasta | khenafekha | al | amatekha
+ki | go'el
 atah
 
 3:10
 vaiyomer | berukhah | at | Layahweh | biti
-heitavt | chasdekh | ha'acharon | min | harishon | levilti | lekhet | acharei | habachurim
+heitavt | chasdekh | ha'acharon | min | harishon
+levilti | lekhet | acharei | habachurim
 im | dal
 ve'im | ashir
 
 3:11
-ve'atah | biti | al | tir'i | kol | asher | tomri
-e'eseh | lakh | ki | yodea | kol | sha'ar | ami | ki | eshet | chayil
+ve'atah | biti | al | tir'i
+kol | asher | tomri
+e'eseh | lakh
+ki | yodea | kol | sha'ar | ami
+ki | eshet | chayil
 at
 
 3:12
-ve'atah | ki | amenam | ki | go'el
+ve'atah | ki | amenam
+ki | go'el
 anokhi
 vegam | yesh | go'el
 karov | mimeni
@@ -115,5 +119,6 @@ vatomer | shevi | viti
 ad | asher | tede'in
 eikh
 yipol | davar
-ki | lo | yishkot | ha'ish | ki | im | kilah | hadavar
+ki | lo | yishkot | ha'ish
+ki | im | kilah | hadavar
 haiyom

@@ -10,7 +10,8 @@ lemor
 daberu | na | be'azenei | khol | ba'alei | Shekhem | mah | tov | lakhem
 hamshol | bakhem | shiv'im | ish | kol | benei | Yeruba'al
 im | meshol | bakhem
-ish | echad | uzekhartem | ki | atzmekhem | uvesarkhem
+ish | echad | uzekhartem
+ki | atzmekhem | uvesarkhem
 ani
 
 9:3
@@ -102,8 +103,7 @@ vaiyomer | ha'atad | el | ha'etzim
 im | be'emet | atem | moshechim | oti | lemelekh | aleikhem | bo'u
 chasu | vetzili
 ve'im | ayin
-tetze | esh | min | ha'atad
-vetokhal
+tetze | esh | min | ha'atad | vetokhal
 et | arzei | Halevanon
 
 9:16
@@ -137,8 +137,7 @@ bakhem
 
 9:20
 ve'im | ayin
-tetze | esh | Me'avimelekh
-vetokhal | et | ba'alei | Shekhem
+tetze | esh | Me'avimelekh | vetokhal | et | ba'alei | Shekhem
 ve'et | beit | milo
 vetetze | esh | miba'alei | Shekhem | umibeit | milo
 vetokhal
@@ -149,8 +148,7 @@ vaiyanos | Yotam
 vaiyivrach
 vaiyelekh | Be'erah
 vaiyeshev | sham
-mipenei
-Avimelekh | achiv
+mipenei | Avimelekh | achiv
 
 9:22
 vaiyasar | Avimelekh | al | Yisra'el
@@ -158,8 +156,8 @@ shalosh | shanim
 
 9:23
 vaiyishlach | elohim | ruach | ra'ah
-bein | Avimelekh | uvein | ba'alei | Shekhem
-vaiyivgedu | va'alei | Shekhem
+bein | Avimelekh
+uvein | ba'alei | Shekhem | vaiyivgedu | va'alei | Shekhem
 Ba'avimelekh
 
 9:24
@@ -250,23 +248,24 @@ min | hama'rav
 9:36
 vaiyar | Ga'al | et | ha'am
 vaiyomer | el | Zevul
-hineh | am | yored | merashei
-heharim
+hineh | am | yored
+merashei | heharim
 vaiyomer | elav | Zevul | et | tzel | heharim | atah | ro'eh
 ka'anashim
 
 9:37
 vaiyosef | od | Ga'al | ledaber
 vaiyomer
-hineh | am | yordim | me'im
+hineh | am | yordim
+me'im
 tabur | ha'aretz
 verosh | echad | ba
-miderekh
-elon | me'onim
+miderekh | elon | me'onim
 
 9:38
 vaiyomer | elav | Zevul | aiyeh | efo | fikha | asher | tomar
-mi | Avimelekh | ki | na'avdenu
+mi | Avimelekh
+ki | na'avdenu
 halo | zeh | ha'am | asher | ma'astah | bo
 tze | na | atah | vehilachem | bo
 
@@ -321,13 +320,14 @@ melach
 
 9:46
 vaiyishme'u
-kal | ba'alei | migdal | Shekhem
-vaiyavo'u | el | tzeriach
+kal | ba'alei | migdal | Shekhem | vaiyavo'u | el | tzeriach
 beit | El | Berit
 
 9:47
 vaiyugad
-La'avimelekh | ki | hitkabetzu | kal | ba'alei | migdal | Shekhem
+La'avimelekh
+ki | hitkabetzu
+kal | ba'alei | migdal | Shekhem
 
 9:48
 vaiya'al | Avimelekh | har | Tzalmon | hu | vekhol | ha'am | asher | ito
@@ -336,8 +336,7 @@ vaiyisa'eha
 vaiyasem
 al | shikhmo
 vaiyomer | el | ha'am | asher | imo | mah | re'item | asiti
-maharu
-asu | khamoni
+maharu | asu | khamoni
 
 9:49
 vaiyikhretu | gam | kol | ha'am | ish | sokhoh | vaiyelekhu | acharei | Avimelekh | vaiyasimu | al | hatzeriach

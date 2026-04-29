@@ -22,8 +22,8 @@ min | haiyorim
 
 10:4
 vaiyomer | Sha'ul | el | nose | khelav | shelof | charbekha | vedakereni | vah | pen | yavo'u | ha'arelim | ha'eleh | vehit'alelu | vi
-velo | avah | nose | khelav | ki | yare | me'od
-vaiyikach | Sha'ul | et | hacherev
+velo | avah | nose | khelav
+ki | yare | me'od | vaiyikach | Sha'ul | et | hacherev
 vaiyipol
 aleiha
 
@@ -64,15 +64,13 @@ ve'et | ha'am
 
 10:10
 vaiyasimu | et | kelav
-beit
-eloheihem
-ve'et | gulgalto | take'u | beit | Dagon
+beit | eloheihem
+ve'et | gulgalto | take'u
+beit | Dagon
 
 10:11
 vaiyishme'u
-kol
-Yaveish | Gil'ad
-et | kol | asher | asu | felishtim
+kol | Yaveish | Gil'ad | et | kol | asher | asu | felishtim
 Lesha'ul
 
 10:12
@@ -92,4 +90,5 @@ lidroosh
 
 10:14
 velo | darash | Bayahweh | vaymitehu | vaiyasev | et | hamelukhah
-Ledavid | ben | Yishai
+Ledavid
+ben | Yishai

@@ -10,8 +10,8 @@ umarah
 4:2
 vaiyavo
 ad
-lifnei | sha'ar | hamelekh | ki | ein | lavo | el | sha'ar | hamelekh
-bilvush | sak
+lifnei | sha'ar | hamelekh
+ki | ein | lavo | el | sha'ar | hamelekh | bilvush | sak
 
 4:3
 uvekhol | medinah | umedinah | mekom | asher | devar | hamelekh | vedato | magia
@@ -23,16 +23,14 @@ larabim
 
 4:4
 vatevo'einah | na'arot | Ester | vesariseiha | vaiyagidu | lah
-vatitchalchal | hamalkah | me'od
-vatishlach | begadim | lehalbish | et | Maredokhai | ulehasir | sako | me'alav
+vatitchalchal | hamalkah | me'od | vatishlach | begadim | lehalbish | et | Maredokhai | ulehasir | sako | me'alav
 velo | kibel
 
 4:5
 vatikra | Ester | Lahatakh | misarisei | hamelekh | asher | he'emid | lefaneiha
 vatetzavehu
 al | Maredokhai
-lada'at | mah | zeh
-ve'al | mah | zeh
+lada'at | mah | zeh | ve'al | mah | zeh
 
 4:6
 vaiyetze | Hatakh
@@ -83,22 +81,24 @@ al | tedami | venafshekh | lehimalet | beit | hamelekh | mikol | haiyehudim
 ki | im | hacharesh | tacharishi | ba'et | hazot
 revach | vehatzalah | ya'amod | laiyehudim | mimakom | acher
 ve'at | uveit | avikh
-tovedu | umi | yodea
+tovedu
+umi | yodea
 im | le'et | kazot
 higa'at | lamalkhut
 
 4:15
-vatomer | Ester | lehashiv | el | Maredokhai
+vatomer | Ester
+lehashiv | el | Maredokhai
 
 4:16
 lekh | kenos | et | kol | haiyehudim | hanimtze'im | Beshushan | vetzumu | alai | ve'al | tokhelu | ve'al | tishtu | sheloshet | yamim | laylah | vayom
 gam | ani | vena'arotai
-atzum | ken | uvekhen | avo | el | hamelekh | asher | lo | khadat
+atzum | ken
+uvekhen | avo | el | hamelekh | asher | lo | khadat
 vekha'asher | avadti
 avadeti
 
 4:17
 vaiya'avor
 Maredokhai | vaiya'as
-kekhol | asher | tzivetah | alav
-Ester
+kekhol | asher | tzivetah | alav | Ester

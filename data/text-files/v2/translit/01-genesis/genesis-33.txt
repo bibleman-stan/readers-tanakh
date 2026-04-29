@@ -52,8 +52,7 @@ limtzo | chen | be'einei | adoni
 
 33:9
 vaiyomer | Esav
-yesh | li | rav
-achi
+yesh | li | rav | achi
 yehi | lekha
 asher | lakh
 
@@ -80,7 +79,8 @@ lenegdekha
 vaiyomer | elav | adoni | yodea | ki | hayladim | rakim
 vehatzon | vehabakar
 alot | alai
-udefakum | yom | echad | vametu | kol | hatzon
+udefakum | yom | echad | vametu
+kol | hatzon
 
 33:14
 ya'avor | na | adoni
@@ -91,9 +91,11 @@ Se'irah
 
 33:15
 vaiyomer | Esav
-atzigah | na | imekha | min | ha'am | asher | iti
+atzigah | na | imekha
+min | ha'am | asher | iti
 vaiyomer | lamah | zeh
-emtza | chen | be'einei | adoni
+emtza | chen
+be'einei | adoni
 
 33:16
 vaiyashav | baiyom | hahu | Esav | ledarko
@@ -121,5 +123,4 @@ kesitah
 33:20
 vaiyatzev | sham
 mizbeach | vaiyikra | lo
-el
-elohei | Yisra'el
+el | elohei | Yisra'el

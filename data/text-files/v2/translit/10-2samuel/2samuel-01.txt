@@ -1,9 +1,7 @@
 1:1
 vayhi | acharei | mot | Sha'ul
 Vedavid | shav
-mehakot
-et | Ha'amalek
-vaiyeshev | David | Betziklag
+mehakot | et | Ha'amalek | vaiyeshev | David | Betziklag
 yamim | shenayim
 
 1:2
@@ -34,7 +32,8 @@ metu
 vaiyomer | David
 el | hana'ar
 hamagid | lo
-eikh | yada'ta | ki | met | Sha'ul
+eikh | yada'ta
+ki | met | Sha'ul
 Vihonatan | beno
 
 1:6
@@ -53,19 +52,22 @@ hineni
 
 1:8
 vaiyomer | li
-mi | atah
-vaiyomer | elav
+mi | atah | vaiyomer | elav
 amalki
 anokhi
 
 1:9
 vaiyomer | elai | amod | na | alai | umoteteni
 ki | achazani
-hashavatz | ki | khol | od | nafshi | bi
+hashavatz
+ki | khol | od | nafshi
+bi
 
 1:10
-va'e'emod | alav | va'amotetehu | ki | yada'ti
-ki | lo | yichyeh | acharei | niflo
+va'e'emod | alav | va'amotetehu
+ki | yada'ti
+ki | lo | yichyeh
+acharei | niflo
 va'ekach | hanezer | asher | al | rosho | ve'etz'adah | asher | al | zero'o
 va'avi'em | el | adoni
 henah
@@ -80,7 +82,8 @@ vaiyispedu | vaiyivku
 vaiyatzumu
 ad | ha'arev
 al | Sha'ul | ve'al | Yehonatan | beno | ve'al | am | Yahweh | ve'al | beit | Yisra'el
-ki | nafelu | becharev
+ki | nafelu
+becharev
 
 1:13
 vaiyomer | David | el | hana'ar | hamagid | lo
@@ -110,8 +113,7 @@ vaiyomer | elav | David
 dameikha
 al | roshekha
 ki | fikha | anah | vekha | lemor
-anokhi | motati
-et | meshiach | Yahweh
+anokhi | motati | et | meshiach | Yahweh
 
 1:17
 vaykonen | David
@@ -136,26 +138,30 @@ nafelu | giborim
 
 1:20
 al | tagidu | Vegat
-al | tevaseru | bechutzot | Ashkelon
+al | tevaseru
+bechutzot | Ashkelon
 pen | tismachnah | benot | pelishtim
 pen | ta'alozenah | benot | ha'arelim
 
 1:21
 harei | Vagilboa | al | tal | ve'al | matar | aleikhem
-usedei | terumot | ki | sham | Nig'al | magen | giborim
+usedei | terumot
+ki | sham | Nig'al | magen | giborim
 magen | Sha'ul | beli | mashiach | bashamen
 
 1:22
-midam | chalalim | mechelev | giborim
-keshet | Yehonatan | lo | Nasog
+midam | chalalim | mechelev | giborim | keshet | Yehonatan
+lo | Nasog
 achor
-vecherev | Sha'ul | lo | tashuv
+vecherev | Sha'ul
+lo | tashuv
 reikam
 
 1:23
 Sha'ul | Vihonatan | hane'ehavim | vehane'imim | bechaiyeihem
-uvemotam | lo | Nifradu | minesharim | kalu | me'arayot
-gaveru
+uvemotam
+lo | Nifradu
+minesharim | kalu | me'arayot | gaveru
 
 1:24
 benot | Yisra'el
@@ -164,7 +170,8 @@ hamalbishkhem | shani | im | adanim
 hama'aleh | adi | zahav | al | levushekhen
 
 1:25
-eikh | nafelu | giborim | betokh
+eikh | nafelu | giborim
+betokh
 hamilchamah
 Yehonatan
 al | bamoteikha
@@ -172,9 +179,9 @@ chalal
 
 1:26
 tzar | li | aleikha | achi | Yehonatan
-na'amta | li | me'od
-Nifle'atah | ahavatekha | li | me'ahavat
-nashim
+na'amta | li
+me'od | Nifle'atah | ahavatekha | li
+me'ahavat | nashim
 
 1:27
 eikh | nafelu | giborim

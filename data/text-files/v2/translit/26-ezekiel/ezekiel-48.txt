@@ -13,7 +13,8 @@ ve'al | gevul | Asher | mipe'at | kadimah | ve'ad | pe'at | yamah
 Naftali | echad
 
 48:4
-ve'al | gevul | Naftali | mipe'at | kadimah | ad | pe'at | yamah | Menasheh | echad
+ve'al | gevul | Naftali | mipe'at | kadimah | ad | pe'at | yamah
+Menasheh | echad
 
 48:5
 ve'al | gevul | Menasheh | mipe'at | kadimah | ad | pe'at | yamah
@@ -28,10 +29,12 @@ ve'al | gevul | Re'uven | mipe'at | kadim | ad | pe'at | yamah
 Yehudah | echad
 
 48:8
-ve'al | gevul | Yehudah | mipe'at | kadim
+ve'al | gevul | Yehudah
+mipe'at | kadim
 ad | pe'at | yamah
 tihyeh | haterumah | asher | tarimu | chamishah | ve'esrim | elef | rochav | ve'orekh | ke'achad | hachalakim | mipe'at | kadimah | ad | pe'at | yamah
-vehayah | hamikdash | betokho
+vehayah | hamikdash
+betokho
 
 48:9
 haterumah | asher | tarimu
@@ -41,7 +44,8 @@ aseret | alafim
 
 48:10
 ule'eleh | tihyeh | terumat | hakodesh | lakohanim
-tzafonah | chamishah | ve'esrim | elef | veyamah | rochav | aseret | alafim | vekadimah | rochav | aseret | alafim | venegbah
+tzafonah | chamishah | ve'esrim | elef | veyamah | rochav | aseret | alafim
+vekadimah | rochav | aseret | alafim | venegbah
 orekh
 chamishah | ve'esrim
 alef | vehayah | mikdash | Yahweh | betokho
@@ -67,18 +71,21 @@ aseret | alafim
 
 48:14
 velo | yimkeru | mimenu | velo | yamer | velo | ya'avur
-reshit | ha'aretz | ki | kodesh
+reshit | ha'aretz
+ki | kodesh
 Layahweh
 
 48:15
 vachameshet | alafim | hanotar | barochav | al | penei | chamishah | ve'esrim | elef | chol | hu | la'ir
 lemoshav | ulemigrash
-vehayetah | ha'ir | betokho
+vehayetah | ha'ir
+betokho
 
 48:16
 ve'eleh | midoteiha
 pe'at | tzafon | chamesh | me'ot | ve'arba'at | alafim | ufe'at | negev
-chamesh | me'ot | ve'arba'at | alafim | umipe'at | kadim | chamesh | me'ot | ve'arba'at | alafim | ufe'at | yamah
+chamesh | me'ot | ve'arba'at | alafim
+umipe'at | kadim | chamesh | me'ot | ve'arba'at | alafim | ufe'at | yamah
 chamesh | me'ot | ve'arba'at | alafim
 
 48:17
@@ -102,12 +109,14 @@ ha'ir
 48:19
 veha'oved
 ha'ir
-ya'avduhu | mikol
+ya'avduhu
+mikol
 shivtei | Yisra'el
 
 48:20
 kol | haterumah | chamishah | ve'esrim | elef | bachamishah | ve'esrim
-alef | revi'it | tarimu | et | terumat | hakodesh
+alef
+revi'it | tarimu | et | terumat | hakodesh
 el | achuzat
 ha'ir
 
@@ -116,13 +125,15 @@ vehanotar | lanasi | mizeh | umizeh | litrumat | hakodesh | vela'achuzat | ha'ir
 veyamah | al | penei | chamishah | ve'esrim | elef | al | gevul | yamah
 le'umat | chalakim
 lanasi
-vehayetah | terumat | hakodesh | umikdash | habayit | betokho
+vehayetah | terumat | hakodesh
+umikdash | habayit
+betokho
 
 48:22
 ume'achuzat | halviyim | ume'achuzat | ha'ir | betokh | asher | lanasi
-yihyeh | bein | gevul | Yehudah | uvein | gevul | Binyamin
-lanasi
 yihyeh
+bein | gevul | Yehudah | uvein | gevul | Binyamin
+lanasi | yihyeh
 
 48:23
 veyeter
@@ -153,15 +164,14 @@ nachalah
 al | haiyam | hagadol
 
 48:29
-zot | ha'aretz | asher | tapilu | minachalah
-leshivtei | Yisra'el
-ve'eleh | machlekotam
-ne'um
+zot | ha'aretz | asher | tapilu | minachalah | leshivtei | Yisra'el
+ve'eleh | machlekotam | ne'um
 Adonai | Yahweh
 
 48:30
 ve'eleh
-totz'ot | ha'ir | mipe'at | tzafon
+totz'ot | ha'ir
+mipe'at | tzafon
 chamesh | me'ot | ve'arba'at | alafim | midah
 
 48:31
@@ -173,21 +183,24 @@ echad
 
 48:32
 ve'el | pe'at | kadimah | chamesh | me'ot | ve'arba'at | alafim | ushe'arim
-sheloshah | vesha'ar | Yosef | echad | sha'ar | Binyamin | echad | sha'ar | Dan
+sheloshah
+vesha'ar | Yosef | echad | sha'ar | Binyamin | echad | sha'ar | Dan
 echad
 
 48:33
 ufe'at | negbah | chamesh | me'ot | ve'arba'at | alafim | midah
 ushe'arim
-sheloshah | sha'ar | Shim'on | echad | sha'ar | Yisashkhar | echad | sha'ar | Zevulun
+sheloshah
+sha'ar | Shim'on | echad | sha'ar | Yisashkhar | echad | sha'ar | Zevulun
 echad
 
 48:34
 pe'at | yamah | chamesh | me'ot | ve'arba'at | alafim | sha'areihem
-sheloshah | sha'ar | Gad | echad | sha'ar | Asher | echad | sha'ar | Naftali
+sheloshah | sha'ar | Gad | echad | sha'ar | Asher | echad
+sha'ar | Naftali
 echad
 
 48:35
 saviv
-shemonah | asar | alef | veshem | ha'ir | miyom
-Yahweh | shamah
+shemonah | asar | alef
+veshem | ha'ir | miyom | Yahweh | shamah

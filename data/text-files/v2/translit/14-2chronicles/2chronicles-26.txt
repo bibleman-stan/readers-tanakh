@@ -1,9 +1,9 @@
 26:1
 vaiyikchu | kol | am | Yehudah | et | Uziyahu
-vehu | ben | shesh | esreh | shanah
+vehu
+ben | shesh | esreh | shanah
 vaiyamlikhu | oto
-tachat
-aviv | Amatzyahu
+tachat | aviv | Amatzyahu
 
 26:2
 hu | banah | et | Eilot
@@ -15,13 +15,13 @@ im | avotav
 ben | shesh | esreh | shanah | Uziyahu | vemalekho
 vachamishim | ushetayim | shanah | malakh | Birushalim
 veshem | imo
-Yekhileyah | min | Yerushalim
+Yekhileyah
+min | Yerushalim
 
 26:4
 vaiya'as | haiyashar
 be'einei | Yahweh
-kekhol | asher | asah
-Amatzyahu | aviv
+kekhol | asher | asah | Amatzyahu | aviv
 
 26:5
 vayhi | lidrosh | elohim
@@ -58,15 +58,15 @@ vaychazekem
 vaiyiven | migdalim | bamidbar | vaiyachtzo | borot | rabim
 ki | mikneh | rav | hayah | lo
 uvashefelah | uvamishor
-ikarim | vekhoremim | beharim | uvakarmel | ki | ohev | adamah
+ikarim | vekhoremim | beharim | uvakarmel
+ki | ohev | adamah
 hayah
 
 26:11
 vayhi | Le'uziyahu | chayil | oseh | milchamah | yotz'ei | tzava | ligdud | bemispar | pekudatam
 beyad | Ye'u'el | hasofer
 Uma'aseyahu
-hashoter | al | yad | Chananyahu | misarei
-hamelekh
+hashoter | al | yad | Chananyahu | misarei | hamelekh
 
 26:12
 kol | mispar | rashei | ha'avot | legiborei | chayil
@@ -94,7 +94,8 @@ ad | ki | chazak
 
 26:16
 ukhechezkato | gavah | libo | ad | lehashchit | vaiyim'al
-Bayahweh | elohav | vaiyavo | el | heikhal | Yahweh
+Bayahweh | elohav
+vaiyavo | el | heikhal | Yahweh
 lehaktir
 al | mizbach | haketoret
 
@@ -106,7 +107,8 @@ ve'imo | kohanim | Layahweh | shemonim | benei | chayil
 26:18
 vaiya'amdu | al | Uziyahu | hamelekh | vaiyomeru | lo | lo | lekha | Uziyahu | lehaktir | Layahweh
 ki | lakohanim | benei | Aharon | hamkudashim | lehaktir
-tze | min | hamikdash | ki | ma'alta | velo | lekha | lekhavod | Meyahweh | elohim
+tze | min | hamikdash | ki | ma'alta | velo | lekha | lekhavod
+Meyahweh | elohim
 
 26:19
 vaiyiz'af | Uziyahu
@@ -119,12 +121,14 @@ lemizbach | haketoret
 vaiyifen | elav | Azaryahu | khohen | harosh | vekhol | hakohanim | vehineh | hu | metzora | bemitzcho
 vaiyavhiluhu
 misham
-vegam | hu | Nidchaf | latzet | ki | nige'o
+vegam | hu | Nidchaf | latzet
+ki | nige'o
 Yahweh
 
 26:21
 vayhi | Uziyahu | hamelekh | metzora | ad | yom | moto | vaiyeshev | beit | hachafeshut | metzora
-ki | Nigzar | mibeit | Yahweh
+ki | Nigzar
+mibeit | Yahweh
 Veyotam | beno | al | beit | hamelekh
 shofet
 et | am | ha'aretz
@@ -138,6 +142,6 @@ hanavi
 
 26:23
 vaiyishkav | Uziyahu | im | avotav | vaiyikberu | oto | im | avotav | bisdeh | hakevurah | asher | lamelakhim
-ki | ameru | metzora | hu
-vaiyimlokh | Yotam | beno
+ki | ameru
+metzora | hu | vaiyimlokh | Yotam | beno
 tachtav

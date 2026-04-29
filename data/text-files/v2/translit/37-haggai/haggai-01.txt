@@ -8,7 +8,9 @@ lemor
 1:2
 koh | amar | Yahweh | tzeva'ot
 lemor
-ha'am | hazeh | ameru | lo | et | bo | et | beit | Yahweh | lehibanot
+ha'am | hazeh | ameru
+lo | et | bo | et | beit | Yahweh
+lehibanot
 
 1:3
 vayhi | devar | Yahweh
@@ -31,12 +33,10 @@ al | darkheikhem
 zera'tem | harbeh | vehave | me'at | akhol | ve'ein | lesave'ah | shato | ve'ein | leshakherah
 lavoosh
 ve'ein | lechom | lo
-vehammistaker | mistaker
-el | tzeror | nakuv
+vehammistaker | mistaker | el | tzeror | nakuv
 
 1:7
-koh | amar
-Yahweh | tzeva'ot
+koh | amar | Yahweh | tzeva'ot
 simu | levavkhem
 al | darkheikhem
 
@@ -55,15 +55,18 @@ ve'atem | ratzim
 ish | leveito
 
 1:10
-al | ken | aleikhem | kal'u | shamayim | mital
-veha'aretz | kal'ah | yevulah
+al | ken | aleikhem
+kal'u | shamayim | mital
+veha'aretz
+kal'ah | yevulah
 
 1:11
 va'ekra | chorev | al | ha'aretz | ve'al | heharim | ve'al | hadagan | ve'al | hatiroosh | ve'al | haiyitzhar
 ve'al | asher | totzi
 ha'adamah
 ve'al | ha'adam | ve'al | habehemah
-ve'al | kol | yegia | kapayim
+ve'al
+kol | yegia | kapayim
 
 1:12
 vaiyishma | Zerubavel | ben | Shalti'el | Vihoshua | ben | Yehotzadak | hakohen | hagadol | vekhol | she'erit | ha'am | bekol | Yahweh | eloheihem
@@ -81,11 +84,10 @@ ne'um | Yahweh
 
 1:14
 vaiya'ar | Yahweh | et | ruach | Zerubavel | ben | Shalti'el | pachat | Yehudah | ve'et | ruach | Yehoshua | ben | Yehotzadak | hakohen | hagadol
-ve'et | ruach | kol
-she'erit | ha'am
+ve'et | ruach
+kol | she'erit | ha'am
 vaiyavo'u | vaiya'asu | melakhah
-beveit | Yahweh | tzeva'ot
-eloheihem
+beveit | Yahweh | tzeva'ot | eloheihem
 
 1:15
 beyom | esrim | ve'arba'ah | lachodesh | bashishi

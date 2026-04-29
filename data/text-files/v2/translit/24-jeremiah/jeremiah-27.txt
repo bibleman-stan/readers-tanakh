@@ -15,12 +15,15 @@ veshilachtam | el | melekh | Edom | ve'el | melekh | Mo'av | ve'el | melekh | be
 ve'el | melekh | Tzor
 ve'el | melekh | Tzidon
 beyad | mal'akhim | haba'im | Yerushalim
-el | Tzidkiyahu | melekh | Yehudah
+el | Tzidkiyahu
+melekh | Yehudah
 
 27:4
 vetzivita | otam
 el | adoneihem
-lemor | koh | amar | Yahweh | tzeva'ot | elohei | Yisra'el | koh | tomeru
+lemor
+koh | amar | Yahweh | tzeva'ot | elohei | Yisra'el
+koh | tomeru
 el | adoneikhem
 
 27:5
@@ -32,7 +35,8 @@ la'asher
 yashar | be'einai
 
 27:6
-ve'atah | anokhi | natati | et | kol | ha'aratzot | ha'eleh | beyad | Nevukhadnetzar | melekh | Bavel
+ve'atah | anokhi | natati | et | kol | ha'aratzot | ha'eleh
+beyad | Nevukhadnetzar | melekh | Bavel
 avdi
 vegam | et | chaiyat | hasadeh
 natati | lo
@@ -57,7 +61,8 @@ ad | tumi | otam | beyado
 ve'atem | al | tishme'u | el | nevi'eikhem | ve'el | kosemeikhem | ve'el | chalomoteikhem
 ve'el | oneneikhem
 ve'el | kashafeikhem
-asher | hem | omerim | aleikhem | lemor | lo | ta'avdu
+asher | hem | omerim | aleikhem | lemor
+lo | ta'avdu
 et | melekh | Bavel
 
 27:10
@@ -82,13 +87,15 @@ havi'u | et | tzavereikhem | be'ol | melekh | Bavel | ve'ivdu | oto | ve'amo
 vichyu
 
 27:13
-lamah | tamutu | atah | ve'amekha | bacherev | bara'av | uvadaver
+lamah | tamutu | atah | ve'amekha
+bacherev | bara'av | uvadaver
 ka'asher | diber | Yahweh
 el | hagoy | asher | lo | ya'avod
 et | melekh | Bavel
 
 27:14
-ve'al | tishme'u | el | divrei | hanevi'im | ha'omerim | aleikhem | lemor | lo | ta'avdu
+ve'al | tishme'u | el | divrei | hanevi'im | ha'omerim | aleikhem | lemor
+lo | ta'avdu
 et | melekh | Bavel
 ki | sheker
 hem
@@ -114,7 +121,8 @@ nibe'im | lakhem
 27:17
 al | tishme'u | aleihem
 ivdu | et | melekh | Bavel
-vichyu | lamah | tihyeh | ha'ir | hazot
+vichyu
+lamah | tihyeh | ha'ir | hazot
 charebah
 
 27:18
@@ -142,12 +150,11 @@ Virushalim
 27:21
 ki | khoh | amar | Yahweh | tzeva'ot
 elohei | Yisra'el
-al | hakelim | hanotarim | beit | Yahweh | uveit | melekh | Yehudah
-Virushalim
+al | hakelim | hanotarim | beit | Yahweh
+uveit | melekh | Yehudah | Virushalim
 
 27:22
-Bavelah | yuva'u
-veshamah | yihyu
+Bavelah | yuva'u | veshamah | yihyu
 ad | yom | pakedi | otam | ne'um | Yahweh
 veha'alitim | vahashivotim
 el | hamakom

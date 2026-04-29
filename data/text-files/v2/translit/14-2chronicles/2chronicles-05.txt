@@ -19,8 +19,7 @@ hachodesh | hashevi'i
 
 5:4
 vaiyavo'u
-kol
-ziknei | Yisra'el
+kol | ziknei | Yisra'el
 vaiyis'u | halviyim
 et | ha'aron
 
@@ -66,8 +65,8 @@ betzetam | Mimitzrayim
 
 5:11
 vayhi
-betzet | hakohanim | min | hakodesh | ki | kol | hakohanim | hanimtze'im | hitkadashu
-ein
+betzet | hakohanim | min | hakodesh
+ki | kol | hakohanim | hanimtze'im | hitkadashu | ein
 lishmor | lemachlekot
 
 5:12
@@ -81,8 +80,10 @@ vayhi | khe'echod | lamachatzotzerim | velamshorarim | lehashmia | kol | echad |
 ukheharim | kol | bachatzotzerot | uvimtziltayim | uvikhlei | hashir | uvehalel | Layahweh | ki | tov
 ki | le'olam
 chasdo
-vehabayit | male | anan | beit | Yahweh
+vehabayit | male | anan
+beit | Yahweh
 
 5:14
-velo | yakhelu | hakohanim | la'amod | lesharet | mipenei | he'anan | ki | male | khevod | Yahweh
+velo | yakhelu | hakohanim | la'amod | lesharet | mipenei | he'anan
+ki | male | khevod | Yahweh
 et | beit | ha'elohim

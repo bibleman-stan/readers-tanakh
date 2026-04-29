@@ -1,11 +1,11 @@
 16:1
-shilchu | khar | moshel | eretz | Misela | midbarah
-el | har | bat | Tziyon
+shilchu | khar | moshel | eretz | Misela | midbarah | el | har
+bat | Tziyon
 
 16:2
 vehayah | khe'of | noded
-ken | meshulach
-tihyeinah | benot | Mo'av | ma'barot | Le'arnon
+ken | meshulach | tihyeinah | benot | Mo'av
+ma'barot | Le'arnon
 
 16:3
 havi'u | etzah | asu | felilah
@@ -15,8 +15,9 @@ noded
 al | tegali
 
 16:4
-yaguru | vokh | nidachai | Mo'av | hevi | seter | lamo
-mipenei | shoded | ki | afes | hametz | kalah | shod
+yaguru | vokh | nidachai
+Mo'av | hevi | seter | lamo | mipenei | shoded
+ki | afes | hametz | kalah | shod
 tamu | romes | min | ha'aretz
 
 16:5
@@ -27,8 +28,7 @@ shofet | vedoresh | mishpat | umehir | tzedek
 
 16:6
 shama'nu | ge'on | Mo'av
-ge | me'od
-ga'avato | uge'ono | ve'evrato
+ge | me'od | ga'avato | uge'ono | ve'evrato
 lo | khen | badav
 
 16:7
@@ -48,11 +48,13 @@ averu | yam
 al | ken | evkeh | bivkhi | Ya'zer | gefen | Sivmah
 araiyavekh | dim'ati
 Cheshbon
-Ve'el'aleh | ki | al | keitzekh | ve'al | ketzirekh
+Ve'el'aleh
+ki | al | keitzekh | ve'al | ketzirekh
 heidad | nafal
 
 16:10
-vene'esaf | simchah | vagil | min | hakarmel | uvakeramim | lo | yerunan | lo | yero'a
+vene'esaf | simchah | vagil | min | hakarmel | uvakeramim | lo | yerunan
+lo | yero'a
 yayin | baykavim | lo | yidrokh | hadorekh
 heidad | hishbati
 
@@ -65,7 +67,8 @@ Lekir | Chares
 16:12
 vehayah | khi | Nir'ah | ki | Nil'ah | Mo'av
 al | habamah
-uva | el | mikdasho | lehitpalel | velo | yukhal
+uva | el | mikdasho | lehitpalel
+velo | yukhal
 
 16:13
 zeh | hadavar | asher | diber | Yahweh | el | Mo'av

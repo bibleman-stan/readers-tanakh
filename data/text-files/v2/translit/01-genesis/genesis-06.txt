@@ -14,7 +14,8 @@ mikol | asher | bacharu
 vaiyomer | Yahweh | lo | yadon | ruchi | va'adam | le'olam
 beshagam
 hu | vasar
-vehayu | yamav | me'ah | ve'esrim
+vehayu | yamav
+me'ah | ve'esrim
 shanah
 
 6:4
@@ -22,14 +23,14 @@ hanefilim | hayu | va'aretz | baiyamim | hahem
 vegam | acharei | khen | asher | yavo'u | benei | ha'elohim | el | benot | ha'adam
 veyaldu
 lahem
-hemah | hagiborim | asher | me'olam
-anshei | hashem
+hemah | hagiborim | asher | me'olam | anshei | hashem
 
 6:5
 vaiyar | Yahweh
 ki | rabah | ra'at | ha'adam | ba'aretz
 vekhol | yetzer | machshevot | libo
-rak | ra | kol | haiyom
+rak | ra
+kol | haiyom
 
 6:6
 vaiyinachem | Yahweh
@@ -41,7 +42,9 @@ el | libo
 vaiyomer | Yahweh | emcheh | et | ha'adam | asher | barati | me'al | penei | ha'adamah
 me'adam | ad | behemah
 ad | remes
-ve'ad | of | hashamayim | ki | Nichamti | ki | asitim
+ve'ad | of | hashamayim
+ki | Nichamti
+ki | asitim
 
 6:8
 Venoach
@@ -69,19 +72,20 @@ chamas
 
 6:12
 vaiyar | elohim | et | ha'aretz
-vehineh | Nishchatah | ki | hishchit | kol | basar | et | darko
+vehineh | Nishchatah
+ki | hishchit | kol | basar | et | darko
 al | ha'aretz
 
 6:13
 vaiyomer | elohim | Lenoach | ketz | kol | basar | ba | lefanai
 ki | mal'ah | ha'aretz | chamas | mipeneihem
-vehini | mashchitam
-et | ha'aretz
+vehini | mashchitam | et | ha'aretz
 
 6:14
 aseh | lekha | tevat | atzei | gofer
 kinim
-ta'aseh | et | hatevah | vekhafarta | otah | mibayit | umichutz | bakofer
+ta'aseh | et | hatevah
+vekhafarta | otah | mibayit | umichutz | bakofer
 
 6:15
 vezeh | asher | ta'aseh
@@ -93,14 +97,16 @@ komatah
 
 6:16
 tzohar | ta'aseh | latevah | ve'el | amah | tekhalenah | milma'lah
-ufetach | hatevah | betzidah | tasim
+ufetach | hatevah
+betzidah | tasim
 tachtiyim | sheniyim | ushelishim
 ta'aseha
 
 6:17
 va'ani | hini | mevi | et | hamabul | mayim | al | ha'aretz
 leshachet | kol | basar | asher | bo | ruach | chaiyim | mitachat
-hashamayim | kol | asher | ba'aretz
+hashamayim
+kol | asher | ba'aretz
 yigva
 
 6:18
@@ -110,13 +116,14 @@ atah | uvaneikha | ve'ishtekha | uneshei | vaneikha
 itakh
 
 6:19
-umikol | hachai | mikol | basar | shenayim | mikol | tavi | el | hatevah | lehachayot | itakh
-zakhar | unekevah
+umikol | hachai | mikol | basar | shenayim | mikol | tavi | el | hatevah
+lehachayot | itakh | zakhar | unekevah
 yihyu
 
 6:20
 meha'of | leminehu | umin | habehemah | leminah | mikol | remes | ha'adamah | leminehu
-shenayim | mikol | yavo'u | eleikha | lehachayot
+shenayim | mikol | yavo'u | eleikha
+lehachayot
 
 6:21
 ve'atah | kach | lekha | mikol | ma'akhal | asher | ye'akhel

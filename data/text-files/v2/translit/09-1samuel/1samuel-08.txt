@@ -7,20 +7,18 @@ Leyisra'el
 
 8:2
 vayhi | shem | beno | habekhor | Yo'el
-veshem | mishnehu
-Aviyah
+veshem | mishnehu | Aviyah
 shofetim | Biv'er | Shava
 
 8:3
-velo | halekhu | vanav | bedarkhov | vaiyitu
-acharei | habatza | vaiyikchu | shochad
+velo | halekhu | vanav | bedarkhov | vaiyitu | acharei | habatza
+vaiyikchu | shochad
 vaiyatu
 mishpat
 
 8:4
 vaiyitkabetzu
-kol
-ziknei | Yisra'el
+kol | ziknei | Yisra'el
 vaiyavo'u | el | Shemu'el
 Haramatah
 
@@ -39,15 +37,15 @@ el | Yahweh
 8:7
 vaiyomer | Yahweh | el | Shemu'el
 shema | bekol | ha'am
-lekhol | asher | yomeru
-eleikha | ki | lo | otekha | ma'asu
-ki | oti | ma'asu | mimelokh | aleihem
+lekhol | asher | yomeru | eleikha
+ki | lo | otekha | ma'asu | ki | oti | ma'asu | mimelokh | aleihem
 
 8:8
 kekhal | hama'asim | asher | asu | miyom | ha'aloti | otam | Mimitzrayim | ve'ad | haiyom | hazeh
 vaiya'azvuni
 vaiya'avdu
-elohim | acherim | ken | hemah | osim
+elohim | acherim
+ken | hemah | osim
 gam | lakh
 
 8:9
@@ -71,8 +69,7 @@ veratzu
 lifnei | merkavto
 
 8:12
-velasum | lo
-sarei | alafim | vesarei | chamishim | velacharosh | charisho | veliktzor | ketziro
+velasum | lo | sarei | alafim | vesarei | chamishim | velacharosh | charisho | veliktzor | ketziro
 vela'asot | kelei | milchamto
 ukhelei | rikhbo
 
@@ -103,7 +100,9 @@ tihyu | lo | la'avadim
 
 8:18
 uze'aktem | baiyom | hahu | milifnei | malkekhem | asher | bechartem
-lakhem | velo | ya'aneh | Yahweh | etkhem | baiyom | hahu
+lakhem
+velo | ya'aneh | Yahweh | etkhem
+baiyom | hahu
 
 8:19
 vayma'anu | ha'am

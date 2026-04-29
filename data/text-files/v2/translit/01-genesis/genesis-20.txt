@@ -28,13 +28,14 @@ taharog
 20:5
 halo | hu | amar | li | achoti | hi
 vehi | gam | hi | amerah
-achi | hu | betom | levavi | uvenikyon | kapai
+achi | hu
+betom | levavi | uvenikyon | kapai
 asiti | zot
 
 20:6
 vaiyomer | elav | ha'elohim | bachalom | gam | anokhi | yada'ti | ki | vetom | levavekha | asita | zot
-va'echsokh | gam | anokhi | otkha | mechatov | li
-al | ken | lo | netatikha
+va'echsokh | gam | anokhi | otkha
+mechatov | li | al | ken | lo | netatikha
 lingoa | eleiha
 
 20:7
@@ -60,12 +61,14 @@ imadi
 
 20:10
 vaiyomer | Avimelekh
-el | Avraham | mah | ra'ita | ki | asita
+el | Avraham | mah | ra'ita
+ki | asita
 et | hadavar | hazeh
 
 20:11
 vaiyomer | Avraham
-ki | amarti | rak | ein | yir'at | elohim | bamakom
+ki | amarti | rak | ein | yir'at | elohim
+bamakom
 hazeh
 vaharaguni
 al | devar | ishti
@@ -80,7 +83,8 @@ le'ishah
 vayhi | ka'asher | hit'u | oti | elohim | mibeit | avi
 va'omar | lah
 zeh | chasdekh | asher | ta'asi
-imadi | el | kol | hamakom | asher | navo | shamah
+imadi
+el | kol | hamakom | asher | navo | shamah
 imri | li
 achi | hu
 
@@ -99,8 +103,7 @@ shev
 20:16
 Ulesarah | amar | hineh | natati | elef | kesef | le'achikh
 hineh | hu | lokh | kesut | einayim | lekhol | asher | itakh
-ve'et | kol
-venokhachat
+ve'et | kol | venokhachat
 
 20:17
 vaiyitpalel | Avraham
@@ -109,7 +112,8 @@ vaiyirpa | elohim | et | Avimelekh | ve'et | ishto | ve'amhotav
 vaiyeledu
 
 20:18
-ki | atzor | atzar | Yahweh | be'ad | kol | rechem
+ki | atzor | atzar | Yahweh
+be'ad | kol | rechem
 leveit | Avimelekh
 al | devar | Sarah
 eshet | Avraham

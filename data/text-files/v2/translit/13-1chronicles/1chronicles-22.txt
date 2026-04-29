@@ -13,8 +13,7 @@ livnot | beit | ha'elohim
 22:3
 uvarzel | laro | lamismerim | ledaltot | hashe'arim | velamchaberot
 hekhin | David
-unechoshet | laro
-ein | mishkal
+unechoshet | laro | ein | mishkal
 
 22:4
 va'atzei | arazim
@@ -25,33 +24,33 @@ Ledavid
 22:5
 vaiyomer | David | Shelomoh | veni | na'ar | varokh
 vehabayit | livnot | Layahweh | lehagdil | lema'lah | leshem | uletif'eret | lekhol | ha'aratzot
-akhinah | na | lo
-vaiyakhen | David | laro
+akhinah | na
+lo | vaiyakhen | David | laro
 lifnei | moto
 
 22:6
 vaiyikra
 Lishlomoh | veno | vaytzavehu | livnot | bayit
-Layahweh
-elohei | Yisra'el
+Layahweh | elohei | Yisra'el
 
 22:7
 vaiyomer | David
 Lishlomoh | beni
 ani | hayah | im | levavi
-livnot | bayit | leshem
-Yahweh | elohai
+livnot | bayit | leshem | Yahweh | elohai
 
 22:8
 vayhi | alai | devar | Yahweh | lemor
 dam | laro | shafakhta | umilchamot | gedolot
-asita | lo | tivneh | vayit | lishmi | ki | damim | rabim
+asita | lo | tivneh | vayit | lishmi
+ki | damim | rabim
 shafakhta | artzah
 lefanai
 
 22:9
 hineh | ven | nolad | lakh | hu | yihyeh | ish | menuchah
-vahanichoti | lo | mikol | oyvav | misaviv | ki | Shelomoh | yihyeh | shemo
+vahanichoti | lo | mikol | oyvav | misaviv
+ki | Shelomoh | yihyeh | shemo
 veshalom | vasheket | eten | al | Yisra'el | beyamav
 
 22:10
@@ -65,8 +64,8 @@ ad | olam
 atah | veni
 yehi | Yahweh
 imakh
-vehitzlachta | uvanita | beit | Yahweh | eloheikha | ka'asher
-diber | aleikha
+vehitzlachta | uvanita | beit | Yahweh | eloheikha
+ka'asher | diber | aleikha
 
 22:12
 akh | yiten | lekha | Yahweh | sekhel | uvinah
@@ -92,15 +91,13 @@ va'aleihem
 tosif
 
 22:15
-ve'imekha | laro | osei | melakhah
-chotzevim
+ve'imekha | laro | osei | melakhah | chotzevim
 vecharashei | even
 va'etz
 vekhol | chakham | bekhol | melakhah
 
 22:16
-lazahav | lakesef | velanechoshet | velabarzel
-ein | mispar
+lazahav | lakesef | velanechoshet | velabarzel | ein | mispar
 kum | va'aseh
 vihi | Yahweh
 imakh
@@ -114,7 +111,8 @@ Lishlomoh | veno
 halo | Yahweh | eloheikhem | imakhem
 veheniach | lakhem | misaviv
 ki | natan | beyadi | et | yoshevei | ha'aretz
-venikhbeshah | ha'aretz | lifnei | Yahweh | velifnei | amo
+venikhbeshah | ha'aretz | lifnei | Yahweh
+velifnei | amo
 
 22:19
 atah | tenu | levavkhem | venafshekhem

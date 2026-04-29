@@ -1,6 +1,8 @@
 8:1
 Ve'elisha | diber | el | ha'ishah | asher | hecheyah | et | benah | lemor | kumi | ulekhi | ati | uveitekh
-veguri | ba'asher | taguri | ki | kara | Yahweh | lara'av
+veguri
+ba'asher | taguri
+ki | kara | Yahweh | lara'av
 vegam | ba | el | ha'aretz
 sheva | shanim
 
@@ -32,8 +34,7 @@ vayhi | hu | mesaper | lamelekh | et | asher | hecheyah | et | hamet
 vehineh | ha'ishah | asher | hecheyah | et | benah | tzo'eket | el | hamelekh
 al | beitah
 ve'al | sadah
-vaiyomer | Gechazi | adoni | hamelekh
-zot | ha'ishah
+vaiyomer | Gechazi | adoni | hamelekh | zot | ha'ishah
 vezeh | benah
 asher | hecheyah | Elisha
 
@@ -46,8 +47,7 @@ ve'ad | atah
 
 8:7
 vaiyavo | Elisha | Damesek
-Uven | Hadad | melekh | Aram
-choleh
+Uven | Hadad | melekh | Aram | choleh
 vaiyugad | lo | lemor
 ba | ish | ha'elohim
 ad | henah
@@ -63,8 +63,7 @@ ha'echyeh | mecholi | zeh
 8:9
 vaiyelekh | Chaza'el | likrato
 vaiyikach | minchah | veyado | vekhol | tuv | Damesek
-masa
-arba'im | gamal
+masa | arba'im | gamal
 vaiyavo | vaiya'amod | lefanav
 vaiyomer | binkha | Ven | Hadad | melekh | Aram | shelachani | eleikha | lemor
 ha'echyeh | mecholi | zeh
@@ -73,7 +72,8 @@ ha'echyeh | mecholi | zeh
 vaiyomer | elav | Elisha
 lekh | emor | lo
 chayoh | tichyeh
-vehir'ani | Yahweh | ki | mot | yamut
+vehir'ani | Yahweh
+ki | mot | yamut
 
 8:11
 vaiya'amed | et | panav
@@ -83,8 +83,7 @@ ish | ha'elohim
 
 8:12
 vaiyomer | Chaza'el
-madua
-adoni | vokheh
+madua | adoni | vokheh
 vaiyomer | ki | yada'ti | et | asher | ta'aseh | livnei | Yisra'el | ra'ah | mivtzereihem | teshalach | ba'esh | uvachureihem | bacherev | taharog
 ve'oleleihem | teratesh
 veharoteihem
@@ -92,17 +91,17 @@ tevakea
 
 8:13
 vaiyomer | Chazah'el
-ki | mah | avdekha | hakelev | ki | ya'aseh
-hadavar | hagadol
-hazeh
+ki | mah | avdekha | hakelev
+ki | ya'aseh
+hadavar | hagadol | hazeh
 vaiyomer | Elisha
-hir'ani | Yahweh | otekha | melekh | al | Aram
+hir'ani | Yahweh | otekha
+melekh | al | Aram
 
 8:14
 vaiyelekh | me'et | Elisha | vaiyavo | el | adonav
 vaiyomer | lo
-mah | amar | lekha
-Elisha
+mah | amar | lekha | Elisha
 vaiyomer
 amar | li
 chayoh | tichyeh
@@ -117,30 +116,31 @@ tachtav
 8:16
 uvishnat | chamesh | Leyoram | ben | Ach'av | melekh | Yisra'el
 Vihoshafat
-melekh | Yehudah | malakh | Yehoram | ben | Yehoshafat | melekh | Yehudah
+melekh | Yehudah
+malakh | Yehoram | ben | Yehoshafat
+melekh | Yehudah
 
 8:17
-ben | sheloshim | ushetayim | shanah | hayah | vemalekho
+ben | sheloshim | ushetayim | shanah
+hayah | vemalekho
 ushemoneh | shanah | malakh | Birushalim
 
 8:18
 vaiyelekh | bederekh | malkhei | Yisra'el | ka'asher | asu | beit | Ach'av
 ki | bat | Ach'av
 hayetah | lo
-le'ishah
-vaiya'as | hara
+le'ishah | vaiya'as | hara
 be'einei | Yahweh
 
 8:19
 velo | avah | Yahweh | lehashchit | et | Yehudah
-lema'an
-David | avdo | ka'asher | amar | lo | latet | lo | nir | levanav
+lema'an | David | avdo
+ka'asher | amar | lo | latet | lo | nir | levanav
 kol | haiyamim
 
 8:20
-beyamav | pasha | Edom | mitachat
-yad | Yehudah
-vaiyamlikhu | aleihem
+beyamav | pasha | Edom
+mitachat | yad | Yehudah | vaiyamlikhu | aleihem
 melekh
 
 8:21
@@ -155,7 +155,8 @@ le'ohalav
 vaiyifsha | Edom | mitachat | yad | Yehudah
 ad
 haiyom | hazeh
-az | tifsha | Livnah | ba'et | hahi
+az | tifsha | Livnah
+ba'et | hahi
 
 8:23
 veyeter | divrei | Yoram
@@ -171,19 +172,24 @@ tachtav
 
 8:25
 bishnat | sheteim | esreh | shanah
-Leyoram | ben | Ach'av | melekh | Yisra'el | malakh | Achazyahu | ven | Yehoram
+Leyoram | ben | Ach'av
+melekh | Yisra'el
+malakh | Achazyahu | ven | Yehoram
 melekh | Yehudah
 
 8:26
 ben | esrim | ushetayim | shanah | Achazyahu | vemalekho
 veshanah | achat | malakh
 Birushalim
-veshem | imo | Atalyahu | bat | Ameri | melekh | Yisra'el
+veshem | imo | Atalyahu
+bat | Ameri
+melekh | Yisra'el
 
 8:27
 vaiyelekh | bederekh | beit | Ach'av
 vaiya'as | hara | be'einei | Yahweh
-keveit | Ach'av | ki | chatan | beit | Ach'av
+keveit | Ach'av
+ki | chatan | beit | Ach'av
 hu
 
 8:28

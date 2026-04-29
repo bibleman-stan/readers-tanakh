@@ -8,21 +8,23 @@ Yahweh
 36:2
 vaiyikra | Mosheh | el | Betzal'el | ve'el | Oholi'av
 ve'el | kol | ish | chakham | lev | asher | natan | Yahweh | chokhmah
-belibo | kol | asher | nesa'o | libo
+belibo
+kol | asher | nesa'o | libo
 lekarevah | el | hamelakhah
 la'asot | otah
 
 36:3
 vaiyikchu | milifnei | Mosheh | et | kol | haterumah | asher | hevi'u | benei | Yisra'el | limlekhet | avodat | hakodesh
 la'asot | otah
-vehem | hevi'u | elav | od | nedavah | baboker | baboker
+vehem | hevi'u | elav | od | nedavah
+baboker | baboker
 
 36:4
 vaiyavo'u | kol | hachakhamim
 ha'osim
-et | kol | melekhet | hakodesh
-ish | ish | mimelakhto
-asher | hemah | osim
+et
+kol | melekhet | hakodesh
+ish | ish | mimelakhto | asher | hemah | osim
 
 36:5
 vaiyomeru | el | Mosheh | lemor
@@ -90,7 +92,8 @@ asah | otam
 orekh | hayri'ah | ha'achat | sheloshim | ba'amah
 ve'arba | amot
 rochav
-hayri'ah | ha'echat | midah | achat | le'ashtei | esreh | yeri'ot
+hayri'ah | ha'echat | midah | achat | le'ashtei | esreh
+yeri'ot
 
 36:16
 vaychaber | et | chamesh | hayri'ot
@@ -110,7 +113,9 @@ chamishim | lechaber | et | ha'ohel | lihyot | echad
 
 36:19
 vaiya'as | mikhseh | la'ohel
-orot | elim | me'adamim | umikhseh | orot | techashim | milma'elah
+orot | elim
+me'adamim | umikhseh | orot | techashim
+milma'elah
 
 36:20
 vaiya'as | et | hakerashim
@@ -157,7 +162,8 @@ esrim | kerashim
 36:26
 ve'arba'im | adneihem | kasef
 shenei | adanim | tachat | hakeresh | ha'echad
-ushenei | adanim | tachat
+ushenei | adanim
+tachat
 hakeresh | ha'echad
 
 36:27
@@ -183,8 +189,10 @@ hamiktzo'ot
 36:30
 vehayu | shemonah | kerashim
 ve'adneihem | kesef
-shishah | asar | adanim
-shenei | adanim | shenei | adanim | tachat
+shishah | asar
+adanim
+shenei | adanim | shenei | adanim
+tachat
 hakeresh | ha'echad
 
 36:31
@@ -203,8 +211,7 @@ yamah
 36:33
 vaiya'as
 et | haberiach | hatikhon
-livroach | betokh | hakerashim | min | hakatzeh
-el | hakatzeh
+livroach | betokh | hakerashim | min | hakatzeh | el | hakatzeh
 
 36:34
 ve'et | hakerashim | tzipah | zahav | ve'et | tabe'otam | asah | zahav
@@ -215,8 +222,7 @@ zahav
 36:35
 vaiya'as | et | haparokhet
 tekhelet | ve'argaman | vetola'at | shani
-veshesh | mashezar
-ma'aseh | choshev | asah | otah
+veshesh | mashezar | ma'aseh | choshev | asah | otah
 keruvim
 
 36:36
@@ -230,11 +236,11 @@ arba'ah | adnei | khasef
 36:37
 vaiya'as | masokh | lefetach | ha'ohel
 tekhelet | ve'argaman | vetola'at | shani
-veshesh | mashezar | ma'aseh
-rokem
+veshesh | mashezar | ma'aseh | rokem
 
 36:38
 ve'et | amudav | chamishah | ve'et | vaveihem
 vetzipah | rasheihem | vachashukeihem
 zahav
-ve'adneihem | chamishah | nechoshet
+ve'adneihem | chamishah
+nechoshet

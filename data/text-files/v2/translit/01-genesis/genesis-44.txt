@@ -1,8 +1,10 @@
 44:1
 vaytzav | et | asher | al | beito | lemor
-male | et | amtechot | ha'anashim | okhel | ka'asher | yukhelun
+male | et | amtechot | ha'anashim | okhel
+ka'asher | yukhelun
 se'et
-vesim | kesef | ish | befi | amtachto
+vesim | kesef | ish
+befi | amtachto
 
 44:2
 ve'et | gevi'i | gevia | hakesef | tasim | befi | amtachat | hakaton
@@ -22,12 +24,14 @@ hem | yatze'u | et | ha'ir | lo | hirchiku
 Veyosef | amar | la'asher | al | beito
 kum | redof
 acharei | ha'anashim
-vehisagtam | ve'amarta | alehem | lamah | shilamtem | ra'ah | tachat | tovah
+vehisagtam | ve'amarta | alehem
+lamah | shilamtem | ra'ah | tachat | tovah
 
 44:5
 halo | zeh | asher | yishteh | adoni | bo
 vehu
-nachesh | yenachesh | bo
+nachesh | yenachesh
+bo
 hare'otem | asher | asitem
 
 44:6
@@ -38,25 +42,30 @@ ha'eleh
 
 44:7
 vaiyomeru | elav
-lamah | yedaber | adoni | kadevarim
+lamah | yedaber | adoni
+kadevarim
 ha'eleh
 chalilah | la'avadeikha | me'asot | kadavar | hazeh
 
 44:8
 hen | kesef | asher | matzanu | befi | amtechoteinu
-heshivonu | eleikha | me'eretz | Kena'an
-ve'eikh | nigno | mibeit | adoneikha | kesef
+heshivonu | eleikha
+me'eretz | Kena'an
+ve'eikh | nigno | mibeit | adoneikha
+kesef
 o | zahav
 
 44:9
 asher | yimatze | ito | me'avadeikha
 vamet
 vegam | anachnu
-nihyeh | ladoni | la'avadim
+nihyeh | ladoni
+la'avadim
 
 44:10
 vaiyomer
-gam | atah | khedivreikhem | ken | hu | asher | yimatze | ito | yihyeh | li | aved
+gam | atah | khedivreikhem
+ken | hu | asher | yimatze | ito | yihyeh | li | aved
 ve'atem
 tihyu | nekiyim
 
@@ -68,7 +77,8 @@ ish | amtachto
 
 44:12
 vaychapes
-bagadol | hechel | uvakaton | kilah
+bagadol | hechel | uvakaton
+kilah
 vaiyimatze | hagavia
 be'amtachat | Binyamin
 
@@ -89,7 +99,8 @@ aretzah
 44:15
 vaiyomer | lahem | Yosef
 mah | hama'aseh | hazeh | asher | asitem
-halo | yeda'tem | ki | nachesh | yenachesh | ish | asher | kamoni
+halo | yeda'tem
+ki | nachesh | yenachesh | ish | asher | kamoni
 
 44:16
 vaiyomer | Yehudah | mah | nomar | ladoni
@@ -101,8 +112,7 @@ gam | asher | Nimtza | hagavia | beyado
 
 44:17
 vaiyomer
-chalilah | li | me'asot
-zot
+chalilah | li | me'asot | zot
 ha'ish | asher | Nimtza | hagavia | beyado | hu | yihyeh | li | aved
 ve'atem
 alu | leshalom
@@ -111,7 +121,8 @@ el | avikhem
 44:18
 vaiyigash | elav | Yehudah | vaiyomer | bi | adoni
 yedaber | na | avdekha | davar | be'azenei | adoni
-ve'al | yichar | apekha | be'avdekha | ki | khamokha | kefar'oh
+ve'al | yichar | apekha | be'avdekha
+ki | khamokha | kefar'oh
 
 44:19
 adoni | sha'al
@@ -144,7 +155,8 @@ vamet
 44:23
 vatomer | el | avadeikha
 im | lo | yered | achikhem | hakaton
-itekhem | lo | tosifun
+itekhem
+lo | tosifun
 lir'ot | panai
 
 44:24
@@ -162,7 +174,8 @@ shuvu
 shivru | lanu | me'at | okhel
 
 44:26
-vanomer | lo | nukhal
+vanomer
+lo | nukhal
 laredet
 im | yesh | achinu | hakaton | itanu | veyaradnu
 ki | lo | nukhal | lir'ot | penei | ha'ish
@@ -172,7 +185,9 @@ einenu | itanu
 44:27
 vaiyomer | avdekha | avi
 eleinu
-atem | yeda'tem | ki | shenayim | yaldah | li | ishti
+atem | yeda'tem
+ki | shenayim
+yaldah | li | ishti
 
 44:28
 vaiyetze | ha'echad | me'iti
@@ -182,8 +197,7 @@ tarof | toraf | velo | re'itiv
 ad | henah
 
 44:29
-ulekachtem | gam | et | zeh | me'im | panai
-vekarahu | ason
+ulekachtem | gam | et | zeh | me'im | panai | vekarahu | ason
 vehoradtem | et | seivati | bera'ah
 she'olah
 
@@ -204,7 +218,8 @@ she'olah
 ki | avdekha | arav | et | hana'ar | me'im | avi
 lemor
 im | lo | avi'enu | eleikha
-vechatati | le'avi | kol | haiyamim
+vechatati | le'avi
+kol | haiyamim
 
 44:33
 ve'atah | yeshev | na | avdekha | tachat | hana'ar

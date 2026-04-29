@@ -28,12 +28,13 @@ velo | matza'u
 hemah | ba'u | be'eretz | Tzuf
 Vesha'ul | amar | lena'aro | asher | imo
 lekhah | venashuvah
-pen | yechdal | avi | min | ha'atonot
-veda'ag | lanu
+pen | yechdal | avi | min | ha'atonot | veda'ag | lanu
 
 9:6
 vaiyomer | lo | hineh | na | ish | elohim | ba'ir | hazot
-veha'ish | nikhbad | kol | asher | yedaber | bo | yavo
+veha'ish | nikhbad
+kol | asher | yedaber
+bo | yavo
 atah | nelakhah | sham
 ulai | yagid | lanu
 et | darkenu
@@ -41,8 +42,7 @@ asher | halakhnu | aleiha
 
 9:7
 vaiyomer | Sha'ul | lena'aro | vehineh | nelekh | umah | navi | la'ish
-ki | halechem | azal | mikeleinu
-uteshurah | ein | lehavi
+ki | halechem | azal | mikeleinu | uteshurah | ein | lehavi
 le'ish | ha'elohim | mah
 itanu
 
@@ -59,13 +59,15 @@ et | darkenu
 9:9
 lefanim | Beyisra'el | koh | amar | ha'ish | belekhto | lidroosh | elohim
 lekhu | venelekhah
-ad | haro'eh | ki | lanavi | haiyom
+ad | haro'eh
+ki | lanavi | haiyom
 yikare | lefanim
 haro'eh
 
 9:10
 vaiyomer | Sha'ul | lena'aro | tov | devarekha
-lekhah | nelekhah | vaiyelekhu | el | ha'ir
+lekhah | nelekhah
+vaiyelekhu | el | ha'ir
 asher | sham
 ish | ha'elohim
 
@@ -79,8 +81,7 @@ hayesh | bazeh
 haro'eh
 
 9:12
-vata'aneinah | otam | vatomarnah | yesh
-hineh | lefaneikha
+vata'aneinah | otam | vatomarnah | yesh | hineh | lefaneikha
 maher | atah | ki | haiyom | ba | la'ir
 ki | zevach | haiyom | la'am | babamah
 
@@ -89,7 +90,8 @@ kevo'akhem | ha'ir | ken | timtze'un | oto | beterem | ya'aleh | habamatah | le'
 ki | hu | yevarekh | hazevach
 acharei | khen
 yokhelu | hakeru'im
-ve'atah | alu | ki | oto | khehaiyom
+ve'atah | alu
+ki | oto | khehaiyom
 timtze'un | oto
 
 9:14
@@ -109,7 +111,8 @@ lemor
 
 9:16
 ka'et | machar | eshlach | eleikha | ish | me'eretz | Binyamin | umeshachto | lenagid | al | ami | Yisra'el
-vehoshia | et | ami | miyad | pelishtim | ki | ra'iti | et | ami
+vehoshia | et | ami | miyad | pelishtim
+ki | ra'iti | et | ami
 ki | ba'ah | tza'akato
 elai
 
@@ -137,8 +140,11 @@ agid | lakh
 
 9:20
 vela'atonot | ha'oedot | lekha | haiyom | sheloshet | haiyamim
-al | tasem | et | libekha | lahem | ki | Nimtza'u | ulemi | kol | chemdat | Yisra'el
-halo | lekha | ulekhol | beit | avikha
+al | tasem | et | libekha | lahem
+ki | Nimtza'u
+ulemi | kol | chemdat | Yisra'el
+halo | lekha | ulekhol
+beit | avikha
 
 9:21
 vaiya'an | Sha'ul | vaiyomer | halo | ven | yemini | anokhi | mikatanei | shivtei | Yisra'el

@@ -3,8 +3,9 @@ koh | amar | Adonai | Yahweh
 sha'ar | hechatzer | hapenimit | haponeh | kadim
 yihyeh | sagur
 sheshet
-yemei | hama'aseh | uveyom | hashabat | yipateach | uveyom | hachodesh
-yipateach
+yemei | hama'aseh
+uveyom | hashabat | yipateach
+uveyom | hachodesh | yipateach
 
 46:2
 uva | hanasi | derekh | ulam | hasha'ar | michutz | ve'amad | al | mezuzat | hasha'ar
@@ -23,11 +24,13 @@ Yahweh
 46:4
 veha'olah
 asher | yakriv | hanasi
-Layahweh | beyom | hashabat | shishah | khevasim | temimim
+Layahweh
+beyom | hashabat | shishah | khevasim | temimim
 ve'ayil | tamim
 
 46:5
-uminchah | eifah | la'ayil | velakevasim | minchah | matat | yado
+uminchah | eifah | la'ayil
+velakevasim | minchah | matat | yado
 veshemen
 hin | la'eifah
 
@@ -40,7 +43,8 @@ temimim | yihyu
 
 46:7
 ve'eifah | lapar | ve'eifah | la'ayil | ya'aseh | minchah
-velakevasim | ka'asher | tasig
+velakevasim
+ka'asher | tasig
 yado
 veshemen
 hin | la'eifah
@@ -48,21 +52,23 @@ hin | la'eifah
 46:8
 uvevo
 hanasi
-derekh | ulam | hasha'ar | yavo | uvedarko
-yetze
+derekh | ulam | hasha'ar | yavo
+uvedarko | yetze
 
 46:9
 uvevo | am | ha'aretz | lifnei | Yahweh | bamo'adim
 haba | derekh | sha'ar | tzafon | lehishtachavot | yetze | derekh | sha'ar | negev
 vehaba | derekh | sha'ar | negev
 yetze
-derekh | sha'ar | tzafonah | lo | yashuv | derekh | hasha'ar | asher | ba | vo
+derekh | sha'ar | tzafonah
+lo | yashuv | derekh | hasha'ar | asher | ba | vo
 ki | nikhcho
 yetze'u
 
 46:10
-vehanasi | betokham | bevo'am | yavo | uvetzetam
-yetze'u
+vehanasi
+betokham | bevo'am | yavo
+uvetzetam | yetze'u
 
 46:11
 uvachagim | uvamo'adim | tihyeh | haminchah | eifah | lapar | ve'eifah | la'ayil
@@ -73,14 +79,14 @@ hin | la'eifah
 46:12
 vekhi | ya'aseh | hanasi | nedavah | olah | ov | shelamim | nedavah | Layahweh
 ufatach | lo | et | hasha'ar | haponeh | kadim
-ve'asah | et | olato | ve'et | shelamav | ka'asher | ya'aseh | beyom | hashabat
-veyatza | vesagar | et | hasha'ar
+ve'asah | et | olato | ve'et | shelamav
+ka'asher | ya'aseh
+beyom | hashabat | veyatza | vesagar | et | hasha'ar
 acharei | tzeto
 
 46:13
 vekheves | ben | shenato | tamim | ta'aseh | olah | laiyom
-Layahweh | baboker | baboker
-ta'aseh | oto
+Layahweh | baboker | baboker | ta'aseh | oto
 
 46:14
 uminchah | ta'aseh | alav | baboker | baboker | shishit | ha'eifah
@@ -89,7 +95,8 @@ chukot | olam
 tamid
 
 46:15
-va'asu | et | hakeves | ve'et | haminchah | ve'et | hashemen | baboker | baboker
+va'asu | et | hakeves | ve'et | haminchah | ve'et | hashemen
+baboker | baboker
 olat
 tamid
 
@@ -97,14 +104,17 @@ tamid
 koh | amar | Adonai | Yahweh | ki | yiten | hanasi | matanah | le'ish | mibanav
 nachalato | hi
 levanav | tihyeh
-achuzatam | hi | benachalah
+achuzatam | hi
+benachalah
 
 46:17
 vekhi | yiten | matanah | minachalato | le'achad | me'avadav
 vehayetah | lo | ad | shenat | haderor
 veshavat
 lanasi
-akh | nachalato | banav | lahem | tihyeh
+akh | nachalato
+banav
+lahem | tihyeh
 
 46:18
 velo | yikach | hanasi | minachalat | ha'am | lehonotam | me'achuzatam | me'achuzato

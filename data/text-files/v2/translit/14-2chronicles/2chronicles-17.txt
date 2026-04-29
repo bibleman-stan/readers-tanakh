@@ -19,9 +19,10 @@ ki | halakh | bedarkhei | David | aviv | harishonim
 velo | darash | labe'alim
 
 17:4
-ki | lelohei | aviv | darash | uvemitzvotav
-halakh
-velo | kema'aseh | Yisra'el
+ki | lelohei | aviv | darash
+uvemitzvotav | halakh
+velo
+kema'aseh | Yisra'el
 
 17:5
 vaiyakhen | Yahweh | et | hamamlakhah | beyado
@@ -37,7 +38,8 @@ ve'od | hesir | et | habamot | ve'et | ha'asherim | Mihudah
 17:7
 uvishnat | shaloosh | lemalekho | shalach | lesarav | Leven | Chayil | Ule'oadyah | Velizkharyah
 Velintan'el | Ulemikhayahu
-lelamed | be'arei | Yehudah
+lelamed
+be'arei | Yehudah
 
 17:8
 ve'imahem | halviyim | Shema'yahu | Unetanyahu | Uzevadyahu | Va'asah'el | Ushemirimot | Vihonatan | Va'adoniyahu | Vetoiyahu | Vetov | Adoniyah
@@ -55,8 +57,8 @@ vaylamedu
 ba'am
 
 17:10
-vayhi | pachad | Yahweh | al | kol | mamlekhot | ha'aratzot | asher
-sevivot | Yehudah | velo | Nilchamu
+vayhi | pachad | Yahweh | al | kol | mamlekhot | ha'aratzot | asher | sevivot | Yehudah
+velo | Nilchamu
 im | Yehoshafat
 
 17:11
@@ -73,13 +75,13 @@ vaiyiven | Bihudah | biraniyot
 ve'arei | miskenot
 
 17:13
-umelakhah | rabah | hayah | lo
-be'arei | Yehudah
+umelakhah | rabah | hayah | lo | be'arei | Yehudah
 ve'anshei | milchamah | giborei | chayil | Birushalim
 
 17:14
 ve'eleh | fekudatam
-leveit | avoteihem | Lihudah | sarei | alafim | Adnah | hasar
+leveit | avoteihem
+Lihudah | sarei | alafim | Adnah | hasar
 ve'imo | giborei | chayil
 shelosh | me'ot | alef
 

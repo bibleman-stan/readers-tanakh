@@ -1,7 +1,9 @@
 6:1
 ho | hasha'ananim | Betziyon
 vehabotechim | behar | Shomeron
-nekuvei | reshit | hagoyim | uva'u | lahem | beit | Yisra'el
+nekuvei | reshit | hagoyim
+uva'u | lahem
+beit | Yisra'el
 
 6:2
 ivru | Khalneh | ure'u | ulekhu | misham
@@ -19,22 +21,25 @@ shevet | chamas
 hashokhevim | al | mitot | shen
 useruchim
 al | arsotam
-ve'okhelim | karim | mitzon
-va'agalim | mitokh | marbek
+ve'okhelim | karim | mitzon | va'agalim | mitokh | marbek
 
 6:5
 haporetim
 al | pi | hanavel
 Kedavid
-chashevu | lahem | kelei | shir
+chashevu | lahem
+kelei | shir
 
 6:6
 hashotim | bemizrekei | yayin
-vereshit | shemanim | yimshachu | velo | Nechlu
+vereshit | shemanim
+yimshachu
+velo | Nechlu
 al | shever | Yosef
 
 6:7
-lakhen | atah | yiglu | berosh | golim
+lakhen | atah | yiglu
+berosh | golim
 vesar | mirzach | seruchim
 
 6:8
@@ -52,7 +57,9 @@ vehayah | im | yivateru | asarah | anashim | bevayit | echad | vametu
 unesa'o | dodo | umesarefo | lehotzi | atzamim | min | habayit
 ve'amar | la'asher | beyarketei | habayit | ha'od | imakh
 ve'amar | afes
-ve'amar | has | ki | lo | lehazkir | beshem | Yahweh
+ve'amar | has
+ki | lo | lehazkir
+beshem | Yahweh
 
 6:11
 ki | hineh | Yahweh | metzaveh
@@ -62,8 +69,8 @@ vehabayit | hakaton | beki'im
 
 6:12
 hayrutzun | basela | susim
-im | yacharoosh | babekarim | ki | hafakhtem | lerosh | mishpat
-uferi | tzedakah
+im | yacharoosh | babekarim
+ki | hafakhtem | lerosh | mishpat | uferi | tzedakah
 lela'anah
 
 6:13
@@ -76,5 +83,6 @@ Karnayim
 
 6:14
 ki | hini | mekim | aleikhem | beit | Yisra'el | ne'um | Yahweh | elohei | hatzeva'ot
-goy | velachatzu | etkhem | Milevo | Chamat
+goy
+velachatzu | etkhem | Milevo | Chamat
 ad | nachal | Ha'aravah

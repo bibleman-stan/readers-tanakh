@@ -33,8 +33,7 @@ vehineh | male | khevod | Yahweh
 habayit
 
 43:6
-va'eshma | midaber | elai | mehabayit
-ve'ish
+va'eshma | midaber | elai | mehabayit | ve'ish
 hayah | omed
 etzli
 
@@ -52,8 +51,8 @@ vetime'u | et | shem | kodshi | beto'avotam | asher | asu
 va'akhal | otam | be'api
 
 43:9
-atah | yerachaku | et | zenutam | ufigrei | malkheihem | mimeni
-veshakhanti | vetokham
+atah | yerachaku | et | zenutam | ufigrei | malkheihem
+mimeni | veshakhanti | vetokham
 le'olam
 
 43:10
@@ -86,13 +85,15 @@ gav | hamizbeach
 43:14
 umecheik | ha'aretz | ad | ha'azarah | hatachtonah | shetayim | amot
 verochav
-amah | echat | umeho'azarah | haketanah | ad | ha'azarah | hagedolah | arba | amot
+amah | echat
+umeho'azarah | haketanah | ad | ha'azarah | hagedolah | arba | amot
 verochav
 ha'amah
 
 43:15
 vehahar'el
-arba | amot | umeha'ari'el | ulema'lah
+arba | amot
+umeha'ari'el | ulema'lah
 hakeranot
 arba
 
@@ -102,16 +103,16 @@ ravua | el
 arba'at | reva'av
 
 43:17
-veha'azarah | arba | esreh | orekh | be'arba | esreh | rochav | el
-arba'at | reva'eiha
+veha'azarah | arba | esreh | orekh | be'arba | esreh | rochav
+el | arba'at | reva'eiha
 vehagevul | saviv | otah | chatzi | ha'amah | vehacheik | lah | amah | saviv
 uma'alotehu
 penot | kadim
 
 43:18
 vaiyomer | elai | ben | adam | koh | amar | Adonai | Yahweh
-eleh | chukot | hamizbeach | beyom
-he'asoto | leha'alot | alav | olah | velizrok | alav
+eleh | chukot | hamizbeach | beyom | he'asoto | leha'alot | alav | olah
+velizrok | alav
 dam
 
 43:19
@@ -123,7 +124,8 @@ lechatat
 43:20
 velakachta | midamo | venatatah | al | arba | karnotav | ve'el | arba | pinot | ha'azarah
 ve'el | hagevul | saviv
-vechiteta | oto | vekhipartahu
+vechiteta | oto
+vekhipartahu
 
 43:21
 velakachta
@@ -133,16 +135,13 @@ userafo | bemifkad | habayit | michutz
 lamikdash
 
 43:22
-uvaiyom | hasheni
-takriv | se'ir | izim | tamim
+uvaiyom | hasheni | takriv | se'ir | izim | tamim
 lechatat
 vechite'u | et | hamizbeach | ka'asher | chite'u | bapar
 
 43:23
-bekhalotkha | mechate
-takriv | par | ben | bakar | tamim
-ve'ayil | min | hatzon
-tamim
+bekhalotkha | mechate | takriv | par | ben | bakar | tamim
+ve'ayil | min | hatzon | tamim
 
 43:24
 vehikravtam
@@ -155,8 +154,7 @@ Layahweh
 shiv'at | yamim
 ta'aseh | se'ir | chatat
 laiyom
-ufar | ben | bakar | ve'ayil | min | hatzon
-temimim | ya'asu
+ufar | ben | bakar | ve'ayil | min | hatzon | temimim | ya'asu
 
 43:26
 shiv'at | yamim | yekhaperu | et | hamizbeach

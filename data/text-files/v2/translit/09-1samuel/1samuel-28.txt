@@ -12,7 +12,8 @@ lakhen | atah | teda
 et | asher | ya'aseh
 avdekha
 vaiyomer | Akhish | el | David
-lakhen | shomer | leroshi | asimekha | kol | haiyamim
+lakhen | shomer | leroshi | asimekha
+kol | haiyamim
 
 28:3
 Ushemu'el | met
@@ -38,8 +39,7 @@ me'od
 
 28:6
 vaiyish'al | Sha'ul | Bayahweh
-velo | anahu
-Yahweh
+velo | anahu | Yahweh
 gam | bachalomot | gam | ba'urim
 gam | banevi'im
 
@@ -105,12 +105,12 @@ vaiyishtachu
 vaiyomer | Shemu'el | el | Sha'ul
 lamah | hirgaztani | leha'alot | oti
 vaiyomer | Sha'ul | tzar | li | me'od | ufelishtim | nilchamim | bi | velohim | sar | me'alai | velo | anani | od | gam | beyad | hanevi'im | gam | bachalomot
-va'ekra'eh | lekha | lehodi'eni | mah | e'eseh
+va'ekra'eh | lekha | lehodi'eni
+mah | e'eseh
 
 28:16
 vaiyomer | Shemu'el
-velamah
-tish'aleni
+velamah | tish'aleni
 Vayahweh | sar | me'aleikha
 vayhi | arekha
 
@@ -122,7 +122,8 @@ vaiyitenah
 lere'akha | Ledavid
 
 28:18
-ka'asher | lo | shama'ta | bekol | Yahweh | velo | asita | charon | apo | Ba'amalek
+ka'asher | lo | shama'ta | bekol | Yahweh
+velo | asita | charon | apo | Ba'amalek
 al | ken | hadavar | hazeh
 asah | lekha | Yahweh
 haiyom | hazeh
@@ -133,19 +134,21 @@ umachar
 atah | uvaneikha
 imi
 gam | et | machaneh | Yisra'el
-yiten | Yahweh | beyad | pelishtim
+yiten | Yahweh
+beyad | pelishtim
 
 28:20
 vaymaher | Sha'ul | vaiyipol | melo | komato | artzah
-vaiyira | me'od
-midivrei | Shemu'el
-gam | koach | lo | hayah | vo | ki | lo | akhal | lechem | kol | haiyom
+vaiyira | me'od | midivrei | Shemu'el
+gam | koach | lo | hayah | vo
+ki | lo | akhal | lechem
+kol | haiyom
 vekhol | halayelah
 
 28:21
 vatavo | ha'ishah | el | Sha'ul
-vatere | ki | Nivhal | me'od
-vatomer | elav | hineh | shame'ah | shifchatekha | bekolecha
+vatere
+ki | Nivhal | me'od | vatomer | elav | hineh | shame'ah | shifchatekha | bekolecha
 va'asim | nafshi | bekhapi
 va'eshma | et | devareikha | asher | dibarta
 elai
@@ -160,8 +163,8 @@ ki | telekh | badarekh
 28:23
 vayma'en | vaiyomer | lo | okhal
 vaiyifretzu | vo | avadav | vegam | ha'ishah
-vaiyishma
-lekolam | vaiyakom | meha'aretz
+vaiyishma | lekolam
+vaiyakom | meha'aretz
 vaiyeshev
 el | hamitah
 

@@ -1,7 +1,6 @@
 11:1
 vayhi
-kishmoa
-Yavin | melekh | Chatzor
+kishmoa | Yavin | melekh | Chatzor
 vaiyishlach | el | Yovav | melekh | Madon
 ve'el | melekh | Shimron
 ve'el | melekh | Akhshaf
@@ -25,8 +24,7 @@ rav | me'od
 
 11:5
 vaiyiva'adu
-kol
-hamelakhim | ha'eleh
+kol | hamelakhim | ha'eleh
 vaiyavo'u | vaiyachanu | yachdav | el | mei | Merom
 lehilachem
 im | Yisra'el
@@ -48,8 +46,7 @@ bahem
 11:8
 vaiyitenem | Yahweh | beyad | Yisra'el | vaiyakum
 vaiyirdefum | ad | Tzidon | rabah | ve'ad | Misrefot | Mayim
-ve'ad | bik'at | Mitzpeh | mizrachah
-vaiyakum
+ve'ad | bik'at | Mitzpeh | mizrachah | vaiyakum
 ad | bilti | hish'ir | lahem
 sarid
 
@@ -64,13 +61,16 @@ saraf | ba'esh
 11:10
 vaiyashov | Yehoshua | ba'et | hahi | vaiyilkod | et | Chatzor
 ve'et | malkah
-hikah | vecharev | ki | Chatzor | lefanim
+hikah | vecharev
+ki | Chatzor | lefanim
 hi
-rosh | kol | hamamlakhot | ha'eleh
+rosh
+kol | hamamlakhot | ha'eleh
 
 11:11
 vaiyaku | et | kol | hanefesh | asher | bah | lefi | cherev | hacharem
-lo | Notar | kol | neshamah
+lo | Notar
+kol | neshamah
 ve'et | Chatzor
 saraf | ba'esh
 
@@ -90,7 +90,8 @@ saraf | Yehoshua
 11:14
 vekhol | shelal | he'arim | ha'eleh | vehabehemah | bazezu | lahem
 benei | Yisra'el
-rak | et | kol | ha'adam | hiku | lefi | cherev | ad | hishmidam | otam | lo | hish'iru
+rak | et | kol | ha'adam | hiku | lefi | cherev | ad | hishmidam | otam
+lo | hish'iru
 kol | neshamah
 
 11:15
@@ -130,14 +131,15 @@ lakechu | vamilchamah
 
 11:20
 ki | me'et | Yahweh | hayetah | lechazek | et | libam | likrat | hamilchamah | et | Yisra'el | lema'an | hacharimam
-levilti | heyot | lahem
-techinah | ki | lema'an | hashmidam
+levilti | heyot | lahem | techinah
+ki | lema'an | hashmidam
 ka'asher | tzivah | Yahweh
 et | Mosheh
 
 11:21
 vaiyavo | Yehoshua | ba'et | hahi | vaiyakhret | et | ha'anakim | min | hahar | min | Chevron | min | Devir | min | Anav
-umikol | har | Yehudah | umikol
+umikol | har | Yehudah
+umikol
 har | Yisra'el
 im | areihem
 hecherimam | Yehoshua

@@ -13,7 +13,8 @@ atah | haketz | alayikh
 veshilachti | api | bakh
 ushefatikh | kidrakhayikh
 venatati | alayikh
-et | kol | to'avotayikh
+et
+kol | to'avotayikh
 
 7:4
 velo | tachos | eini | alayikh | velo | echmol
@@ -22,8 +23,7 @@ vida'tem
 ki | ani | Yahweh
 
 7:5
-koh | amar
-Adonai | Yahweh
+koh | amar | Adonai | Yahweh
 ra'ah | achat | ra'ah
 hineh | va'ah
 
@@ -44,13 +44,15 @@ atah | mikarov | eshpokh | chamati | alayikh
 vekhileiti | api | bakh
 ushefatikh | kidrakhayikh
 venatati | alayikh
-et | kol | to'avotayikh
+et
+kol | to'avotayikh
 
 7:9
-velo | tachos | eini
-velo | echmol | kidrakhayikh | alayikh | eten | veto'avotayikh | betokhekh | tihyeina
+velo | tachos | eini | velo | echmol
+kidrakhayikh | alayikh | eten | veto'avotayikh | betokhekh | tihyeina
 vida'tem
-ki | ani | Yahweh | makeh
+ki | ani | Yahweh
+makeh
 
 7:10
 hineh | haiyom
@@ -69,19 +71,22 @@ lo | mehem | velo | mehamonam | velo | mehemehem | velo | noah | bahem
 ba | ha'et | higia | haiyom
 hakoneh | al | yismach
 vehamokher
-al | yit'abal | ki | charon
+al | yit'abal
+ki | charon
 el | kol | hamonah
 
 7:13
 ki | hamokher | el | hamikar | lo | yashuv
 ve'od | bachaiyim
-chaiyatam | ki | chazon | el | kol | hamonah | lo | yashuv
-ve'ish | ba'avono | chaiyato | lo | yitchazaku
+chaiyatam
+ki | chazon | el | kol | hamonah | lo | yashuv
+ve'ish | ba'avono | chaiyato
+lo | yitchazaku
 
 7:14
 take'u | vatakoa | vehakhin | hakol
-ve'ein | holekh
-lamilchamah | ki | charoni
+ve'ein | holekh | lamilchamah
+ki | charoni
 el | kol | hamonah
 
 7:15
@@ -104,7 +109,8 @@ vekhol | birkayim
 telakhnah | mayim
 
 7:18
-vechageru | sakim | vekhisetah | otam
+vechageru | sakim
+vekhisetah | otam
 palatzut
 ve'el | kol | panim | bushah | uvekhol | rasheihem
 karechah
@@ -112,7 +118,10 @@ karechah
 7:19
 kaspam | bachutzot | yashlikhu | uzehavam | lenidah | yihyeh
 kaspam | uzehavam | lo | yukhal | lehatzilam | beyom | evrat | Yahweh
-nafsham | lo | yesabe'u | ume'eihem | lo | yemale'u | ki | mikhshol | avonam
+nafsham | lo | yesabe'u
+ume'eihem
+lo | yemale'u
+ki | mikhshol | avonam
 hayah
 
 7:20
@@ -135,7 +144,8 @@ vechileluha
 
 7:23
 aseh
-haratok | ki | ha'aretz | mal'ah | mishpat | damim
+haratok
+ki | ha'aretz | mal'ah | mishpat | damim
 veha'ir | mal'ah | chamas
 
 7:24
@@ -152,13 +162,13 @@ kefadah | va | uvikshu | shalom | va'ayin
 hovah | al | hovah | tavo
 ushemu'ah | el | shemu'ah
 tihyeh
-uvikshu | chazon | minavi
-vetorah | tovad | mikohen
+uvikshu | chazon | minavi | vetorah | tovad | mikohen
 ve'etzah | mizekenim
 
 7:27
 hamelekh | yit'abal | venasi | yilbash | shemamah
 videi | am | ha'aretz
-tibahalnah | midarkam | e'eseh | otam | uvemishpeteihem | eshpetem
+tibahalnah
+midarkam | e'eseh | otam | uvemishpeteihem | eshpetem
 veyade'u
 ki | ani | Yahweh

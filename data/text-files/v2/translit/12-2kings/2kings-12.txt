@@ -1,5 +1,6 @@
 12:1
-ben | sheva | shanim | Yeho'ash | bemalekho
+ben | sheva | shanim
+Yeho'ash | bemalekho
 
 12:2
 bishnat | sheva | Leyehu | malakh | Yeho'ash
@@ -20,19 +21,23 @@ od | ha'am | mezabechim | umekaterim | babamot
 
 12:5
 vaiyomer | Yeho'ash | el | hakohanim | kol | kesef | hakodashim | asher | yuva | veit | Yahweh | kesef | over
-ish | kesef | nafshot
-erko | kol | kesef | asher | ya'aleh | al | lev | ish
-lehavi | beit | Yahweh
+ish
+kesef | nafshot
+erko
+kol | kesef | asher | ya'aleh | al | lev | ish
+lehavi
+beit | Yahweh
 
 12:6
 yikchu | lahem | hakohanim
 ish
-me'et | makaro
-vehem | yechazeku | et | bedek | habayit | lekhol | asher | yimatze | sham | badek
+me'et | makaro | vehem | yechazeku | et | bedek | habayit
+lekhol | asher | yimatze | sham | badek
 
 12:7
 vayhi | bishnat | esrim | veshalosh | shanah
-lamelekh | Yeho'ash | lo | chizeku | hakohanim
+lamelekh | Yeho'ash
+lo | chizeku | hakohanim
 et | bedek | habayit
 
 12:8
@@ -40,8 +45,7 @@ vaiyikra | hamelekh | Yeho'ash | Lihoyada | hakohen | velakohanim
 vaiyomer | alehem
 madua | einkhem | mechazekim
 et | bedek | habayit
-ve'atah | al | tikchu | khesef | me'et | makareikhem
-ki | levedek | habayit
+ve'atah | al | tikchu | khesef | me'et | makareikhem | ki | levedek | habayit
 titenuhu
 
 12:9
@@ -74,7 +78,8 @@ al | yad | osei | hamelakhah
 hapekudim
 beit | Yahweh
 vaiyotzi'uhu | lecharashei | ha'etz | velabonim
-ha'osim | beit | Yahweh
+ha'osim
+beit | Yahweh
 
 12:13
 velagoderim | ulechotzevei | ha'even | veliknot | etzim | ve'avnei | machtzev
@@ -85,8 +90,7 @@ lechazekah
 12:14
 akh | lo | ye'aseh | beit | Yahweh | sipot | kesef | mezamerot | mizrakot | chatzotzerot
 kol | keli | zahav
-ukheli | khasef | min | hakesef
-hamuva | veit | Yahweh
+ukheli | khasef | min | hakesef | hamuva | veit | Yahweh
 
 12:15
 ki | le'osei | hamelakhah
@@ -103,8 +107,8 @@ hem | osim
 
 12:17
 kesef | asham | vekhesef | chata'ot | lo | yuva
-beit | Yahweh | lakohanim
-yihyu
+beit | Yahweh
+lakohanim | yihyu
 
 12:18
 az | ya'aleh | Chaza'el | melekh | Aram

@@ -22,8 +22,8 @@ ha'ivrim
 
 13:4
 vekhol | Yisra'el | shame'u | lemor | hikah | Sha'ul | et | netziv | pelishtim
-vegam | Niv'ash | Yisra'el | bapelishtim
-vaiyitza'aku | ha'am | acharei | Sha'ul
+vegam | Niv'ash | Yisra'el
+bapelishtim | vaiyitza'aku | ha'am | acharei | Sha'ul
 Hagilgal
 
 13:5
@@ -34,7 +34,8 @@ vaiya'alu | vaiyachanu | Vemikhmas
 kidmat | Beit | Aven
 
 13:6
-ve'ish | Yisra'el | ra'u | ki | tzar | lo | ki | Nigas
+ve'ish | Yisra'el | ra'u | ki | tzar | lo
+ki | Nigas
 ha'am
 vaiyitchabe'u | ha'am | bame'arot | uvachavachim | uvasela'im
 uvatzerichim | uvaborot
@@ -78,14 +79,16 @@ ne'esafim | Mikhmas
 
 13:12
 va'omar | atah | yeredu | felishtim | elai | Hagilgal
-ufenei | Yahweh | lo | chiliti
+ufenei | Yahweh
+lo | chiliti
 va'et'apak
 va'a'aleh
 ha'olah
 
 13:13
 vaiyomer | Shemu'el | el | Sha'ul
-Niskalta | lo | shamarta | et | mitzvat | Yahweh | eloheikha | asher | tzivakh
+Niskalta
+lo | shamarta | et | mitzvat | Yahweh | eloheikha | asher | tzivakh
 ki | atah | hekhin | Yahweh | et | mamlakhtekha | el | Yisra'el
 ad | olam
 
@@ -122,8 +125,10 @@ hanishkaf | al | gei | Hatzevo'im
 hamidbarah
 
 13:19
-vecharash | lo | yimatze | bekhol
-eretz | Yisra'el | ki | amar | felishtim
+vecharash | lo | yimatze
+bekhol
+eretz | Yisra'el
+ki | amar | felishtim
 pen | ya'asu | ha'ivrim
 cherev
 o | chanit

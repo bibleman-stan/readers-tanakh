@@ -13,7 +13,8 @@ tame | lanafesh
 5:3
 mizakhar | ad | nekevah | teshalechu
 el | michutz | lamachaneh
-teshalechum | velo | yetame'u | et | machaneihem | asher | ani
+teshalechum
+velo | yetame'u | et | machaneihem | asher | ani
 shokhen | betokham
 
 5:4
@@ -22,7 +23,8 @@ vayshalechu | otam
 el | michutz
 lamachaneh
 ka'asher | diber | Yahweh | el | Mosheh
-ken | asu | benei | Yisra'el
+ken | asu
+benei | Yisra'el
 
 5:5
 vaydaber | Yahweh
@@ -51,12 +53,14 @@ lakohen | milevad | eil | hakipurim | asher | yekhaper | bo
 alav
 
 5:9
-vekhol | terumah | lekhol | kadeshei | venei | Yisra'el | asher | yakrivu | lakohen | lo | yihyeh
+vekhol | terumah | lekhol | kadeshei | venei | Yisra'el | asher | yakrivu | lakohen
+lo | yihyeh
 
 5:10
 ve'ish | et | kodashav
 lo | yihyu
-ish | asher | yiten | lakohen | lo | yihyeh
+ish | asher | yiten | lakohen
+lo | yihyeh
 
 5:11
 vaydaber | Yahweh
@@ -66,7 +70,8 @@ el | Mosheh | lemor
 daber | el | benei | Yisra'el
 ve'amarta
 alehem
-ish | ish | ki | tisteh | ishto | uma'alah | vo | ma'al
+ish | ish | ki | tisteh | ishto
+uma'alah | vo | ma'al
 
 5:13
 veshakhav | ish | otah | shikhvat | zera
@@ -74,13 +79,15 @@ vene'lam | me'einei | ishah
 venisterah
 vehi | Nitma'ah
 ve'ed | ein | bah
-vehiv | lo | Nitpasah
+vehiv
+lo | Nitpasah
 
 5:14
 ve'avar | alav | ruach | kin'ah | vekine | et | ishto
 vehiv | Nitma'ah
 ov | avar | alav | ruach | kin'ah | vekine | et | ishto
-vehi | lo | Nitma'ah
+vehi
+lo | Nitma'ah
 
 5:15
 vehevi | ha'ish | et | ishto | el | hakohen
@@ -106,26 +113,28 @@ venatan | el | hamayim
 vehe'emid | hakohen | et | ha'ishah | lifnei | Yahweh
 ufara | et | rosh | ha'ishah
 venatan | al | kapeiha | et | minchat | hazikaron | minchat | kena'ot
-hi | uveyad | hakohen | yihyu | mei | hamarim
+hi
+uveyad | hakohen | yihyu
+mei | hamarim
 ham'ararim
 
 5:19
 vehishbia | otah | hakohen | ve'amar | el | ha'ishah | im | lo | shakhav | ish | otakh
-ve'im | lo | satit | tum'ah | tachat | ishekh
-hinaki | mimei | hamarim | ham'ararim
-ha'eleh
+ve'im | lo | satit | tum'ah
+tachat | ishekh
+hinaki | mimei | hamarim | ham'ararim | ha'eleh
 
 5:20
 ve'at | ki | satit | tachat | ishekh
 vekhi | Nitmet
 vaiyiten | ish | bokh | et | shekhaveto
-mibal'adei
-ishekh
+mibal'adei | ishekh
 
 5:21
 vehishbia | hakohen | et | ha'ishah | bishvu'at | ha'alah
 ve'amar | hakohen | la'ishah
-yiten | Yahweh | otakh | le'alah | velishvu'ah | betokh | amekh
+yiten | Yahweh | otakh | le'alah | velishvu'ah
+betokh | amekh
 betet | Yahweh | et | yerekhekh | nofelet
 ve'et | bitnekh
 tzavah
@@ -189,7 +198,6 @@ et | kol | hatorah
 hazot
 
 5:31
-venikah | ha'ish | me'avon
-veha'ishah | hahiv
+venikah | ha'ish | me'avon | veha'ishah | hahiv
 tisa
 et | avonah

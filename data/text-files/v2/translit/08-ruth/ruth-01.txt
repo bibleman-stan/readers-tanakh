@@ -8,8 +8,7 @@ ushenei | vanav
 
 1:2
 veshem | ha'ish | Elimelekh | veshem | ishto | No'omi | veshem | shenei | vanav | Machlon | Vekhilyon | efratim
-Mibeit | Lechem
-Yehudah
+Mibeit | Lechem | Yehudah
 vaiyavo'u | sedei | Mo'av
 vaiyihyu | sham
 
@@ -30,13 +29,16 @@ ke'eser | shanim
 1:5
 vaiyamutu | gam | sheneihem
 Machlon | Vekhilyon
-vatisha'er | ha'ishah | mishenei | yeladeiha | ume'ishah
+vatisha'er | ha'ishah
+mishenei | yeladeiha
+ume'ishah
 
 1:6
 vatakom | hi | vekhaloteiha
 vatashov | misedei | Mo'av
 ki | shame'ah | bisdeh | Mo'av
-ki | fakad | Yahweh | et | amo | latet | lahem | lachem
+ki | fakad | Yahweh | et | amo
+latet | lahem | lachem
 
 1:7
 vatetze | min | hamakom | asher | hayetah | shamah
@@ -51,30 +53,33 @@ vatomer | No'omi | lishtei | khaloteiha
 lekhenah | shoenah
 ishah
 leveit | imah
-ya'aseh | Yahweh | imakhem | chesed | ka'asher | asitem | im | hametim
+ya'aseh | Yahweh | imakhem | chesed
+ka'asher | asitem | im | hametim
 ve'imadi
 
 1:9
-yiten | Yahweh | lakhem | umetzena | menuchah
-ishah
+yiten | Yahweh | lakhem
+umetzena | menuchah | ishah
 beit | ishah
 vatishak | lahen
 vatisenah | kolan
 vativkeinah
 
 1:10
-vatomarnah | lah | ki | itakh | nashuv
+vatomarnah | lah
+ki | itakh | nashuv
 le'amekh
 
 1:11
-vatomer | No'omi | shoenah | venotai | lamah | telakhnah
+vatomer | No'omi | shoenah | venotai
+lamah | telakhnah
 imi
 ha'od | li | vanim | beme'ai
 vehayu | lakhem | la'anashim
 
 1:12
-shoenah | venotai | lekhena | ki | zakanti
-mihyot | le'ish | ki | amarti | yesh | li | tikvah
+shoenah | venotai | lekhena | ki | zakanti | mihyot | le'ish
+ki | amarti | yesh | li | tikvah
 gam | hayiti | halaylah | le'ish
 vegam
 yaladti | vanim
@@ -99,7 +104,8 @@ davekah | bah
 vatomer | hineh | shavah | yevimtekh
 el | amah
 ve'el | eloheiha
-shuvi | acharei | yevimtekh
+shuvi
+acharei | yevimtekh
 
 1:16
 vatomer | Rut | al | tifge'i | vi
@@ -113,12 +119,15 @@ elohai
 1:17
 ba'asher | tamuti | amut
 vesham
-ekaver | koh | ya'aseh | Yahweh | li | vekhoh | yosif
+ekaver
+koh | ya'aseh | Yahweh | li | vekhoh | yosif
 ki | hamavet
-yafrid | beini | uveinekh
+yafrid
+beini | uveinekh
 
 1:18
-vatere | ki | mit'ametzet | hi
+vatere
+ki | mit'ametzet | hi
 lalekhet | itah
 vatechdal
 ledaber | eleiha
@@ -135,12 +144,14 @@ hazot | No'omi
 vatomer | aleihen
 al | tikrenah | li
 No'omi
-kerena | li | mara | ki | hemar | Shadai | li | me'od
+kerena | li | mara
+ki | hemar | Shadai | li | me'od
 
 1:21
 ani | mele'ah | halakhti
 vereikam
-heshivani | Yahweh | lamah | tikrenah | li | No'omi
+heshivani | Yahweh
+lamah | tikrenah | li | No'omi
 Vayahweh | anah | vi
 Veshadai
 hera | li
@@ -148,5 +159,6 @@ hera | li
 1:22
 vatashov | No'omi | Verut | hamo'aviyah | khalatah | imah
 hashavah | misedei | Mo'av
-vehemah | ba'u | Beit | Lechem | bitchilat
+vehemah | ba'u | Beit | Lechem
+bitchilat
 ketzir | se'orim

@@ -1,6 +1,8 @@
 47:1
 redi | ushevi | al | afar | betulat | bat | Bavel
-shevi | la'aretz | ein | kise | bat | Kasdim | ki | lo | tosifi | yikre'u | lakh
+shevi | la'aretz | ein | kise
+bat | Kasdim
+ki | lo | tosifi | yikre'u | lakh
 rakah
 va'anugah
 
@@ -14,7 +16,8 @@ ivri | neharot
 tigal | ervatekh
 gam | tera'eh
 cherpatekh
-nakam | ekach | velo | efga
+nakam | ekach
+velo | efga
 adam
 
 47:4
@@ -25,7 +28,8 @@ kedoosh
 Yisra'el
 
 47:5
-shevi | dumam | uvo'i | vachoshekh | bat | Kasdim
+shevi | dumam | uvo'i | vachoshekh
+bat | Kasdim
 ki | lo | tosifi | yikre'u | lakh
 geveret | mamlakhot
 
@@ -48,7 +52,9 @@ acharitah
 ve'atah | shim'i | zot | adinah | haiyoshevet | lavetach
 ha'omerah | bilvavah
 ani
-ve'afsi | od | lo | eshev | almanah | velo | eda
+ve'afsi | od
+lo | eshev | almanah
+velo | eda
 shekhol
 
 47:9
@@ -65,18 +71,24 @@ ve'afsi | od
 
 47:11
 uva | alayikh | ra'ah | lo | tede'i | shachrah
-vetipol | alayikh | hovah | lo | tukheli | kaperah
-vetavo | alayikh | pit'om | sho'ah | lo | teda'i
+vetipol | alayikh | hovah
+lo | tukheli
+kaperah
+vetavo | alayikh | pit'om | sho'ah
+lo | teda'i
 
 47:12
-imdi | na | vachavarayikh | uvero | keshafayikh | ba'asher | yaga'at | mine'urayikh
-ulai | tukheli | ho'il
+imdi | na | vachavarayikh | uvero | keshafayikh
+ba'asher | yaga'at
+mine'urayikh | ulai | tukheli | ho'il
 ulai | ta'arotzi
 
 47:13
-Nil'eit | bero | atzatayikh
+Nil'eit
+bero | atzatayikh
 ya'amdu | na | veyoshi'ukh | haveru | shamayim | hachozim | bakokhavim
-modi'im | lechodashim | me'asher | yavo'u
+modi'im | lechodashim
+me'asher | yavo'u
 alayikh
 
 47:14
@@ -88,5 +100,4 @@ lashevet | negdo
 
 47:15
 ken | hayu | lakh | asher | yaga'at
-socharayikh | mine'urayikh | ish | le'evro | ta'u
-ein | moshi'ekh
+socharayikh | mine'urayikh | ish | le'evro | ta'u | ein | moshi'ekh

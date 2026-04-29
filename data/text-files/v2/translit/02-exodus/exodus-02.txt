@@ -19,8 +19,8 @@ vatasem | basuf
 al | sefat | Hay'or
 
 2:4
-vatetatzav | achoto | merachok
-lede'ah | mah | ye'aseh | lo
+vatetatzav | achoto
+merachok | lede'ah | mah | ye'aseh | lo
 
 2:5
 vatered | bat | par'oh | lirchotz | al | Hay'or
@@ -34,8 +34,7 @@ vatikacheha
 vatiftach | vatir'ehu | et | haiyeled
 vehineh | na'ar | bokheh
 vatachmol | alav
-vatomer | miyaldei | ha'ivrim
-zeh
+vatomer | miyaldei | ha'ivrim | zeh
 
 2:7
 vatomer | achoto | el | bat | par'oh
@@ -62,7 +61,8 @@ vayigdal | haiyeled | vatevi'ehu | levat | par'oh
 vayhi | lah
 leven
 vatikra | shemo | Mosheh
-vatomer | ki | min | hamayim | meshitihu
+vatomer
+ki | min | hamayim | meshitihu
 
 2:11
 vayhi | baiyamim | hahem | vaiyigdal | Mosheh | vaiyetze | el | echav
@@ -88,12 +88,10 @@ re'ekha
 
 2:14
 vaiyomer | mi | samekha | le'ish | sar | veshofet | aleinu
-halharegeni | atah | omer
-ka'asher | haragta
+halharegeni | atah | omer | ka'asher | haragta
 et | hamitzri
 vaiyira | Mosheh | vaiyomar
-akhen
-Noda | hadavar
+akhen | Noda | hadavar
 
 2:15
 vaiyishma | par'oh | et | hadavar | hazeh
@@ -104,8 +102,7 @@ vaiyeshev | be'eretz | Midyan
 vaiyeshev | al | habe'er
 
 2:16
-ulekhohen | Midyan
-sheva | banot
+ulekhohen | Midyan | sheva | banot
 vatavonah | vatidlenah | vatemalenah | et | harehatim
 lehashkot
 tzon | avihen
@@ -127,8 +124,7 @@ haiyom
 
 2:19
 vatomarna
-ish | mitzri
-hitzilanu | miyad | haro'im
+ish | mitzri | hitzilanu | miyad | haro'im
 vegam | daloh | dalah | lanu
 vaiyashk
 et | hatzon

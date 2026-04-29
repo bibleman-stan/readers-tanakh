@@ -9,21 +9,21 @@ besone'eihem
 Nikhalu | haiyehudim | be'areihem | bekhol | medinot | hamelekh | Ochashveroosh
 lishloach | yad | bimvakshei
 ra'atam
-ve'ish | lo | amad | lifneihem | ki | nafal | pachdam
+ve'ish | lo | amad | lifneihem
+ki | nafal | pachdam
 al | kol | ha'amim
 
 9:3
 vekhol | sarei | hamedinot | veha'achashdarpenim | vehapachot | ve'osei | hamelakhah | asher | lamelekh
-menase'im
-et | haiyehudim
+menase'im | et | haiyehudim
 ki | nafal | pachad | Maredokhai
 aleihem
 
 9:4
 ki | gadol | Maredokhai | beveit | hamelekh
 veshame'o
-holekh | bekhol | hamedinot | ki | ha'ish | Maredokhai
-holekh | vegadol
+holekh | bekhol | hamedinot
+ki | ha'ish | Maredokhai | holekh | vegadol
 
 9:5
 vaiyaku | haiyehudim | bekhol | oyeveihem
@@ -137,8 +137,7 @@ umishloach | manot | ish | lere'ehu | umatanot | la'evyonim
 vekibel | haiyehudim
 et | asher | hechelu
 la'asot
-ve'et | asher | katav | Maredokhai
-aleihem
+ve'et | asher | katav | Maredokhai | aleihem
 
 9:24
 ki | Haman | ben | Hamedata | ha'agagi | tzorer | kol | haiyehudim
@@ -181,8 +180,7 @@ hashenit
 
 9:30
 vaiyishlach | sefarim | el | kol | haiyehudim | el | sheva | ve'esrim | ume'ah | medinah
-malkhut
-Achashveroosh
+malkhut | Achashveroosh
 divrei | shalom | ve'emet
 
 9:31
@@ -195,6 +193,5 @@ veza'akatam
 9:32
 uma'amar | Ester
 kiyam
-divrei | hapurim
-ha'eleh
+divrei | hapurim | ha'eleh
 venikhtav | basefer

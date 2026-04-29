@@ -11,13 +11,13 @@ Mirushalim
 
 29:3
 beyad | El'asah | ven | Shafan
-Ugemaryah | ben | Chilkiyah
-asher | shalach | Tzidkiyah | melekh | Yehudah | el | Nevukhadnetzar | melekh | Bavel
+Ugemaryah
+ben | Chilkiyah | asher | shalach | Tzidkiyah | melekh | Yehudah | el | Nevukhadnetzar | melekh | Bavel
 Bavelah | lemor
 
 29:4
-koh | amar | Yahweh | tzeva'ot
-elohei | Yisra'el | lekhol | hagolah
+koh | amar | Yahweh | tzeva'ot | elohei | Yisra'el
+lekhol | hagolah
 asher | higleiti | Mirushalim | Bavelah
 
 29:5
@@ -37,7 +37,8 @@ ve'al | tim'atu
 29:7
 vedirshu | et | shelom | ha'ir | asher | higleiti | etkhem | shamah
 vehitpalu | va'adah
-el | Yahweh | ki | vishlomah
+el | Yahweh
+ki | vishlomah
 yihyeh | lakhem
 shalom
 
@@ -50,14 +51,16 @@ machlemim
 
 29:9
 ki | vesheker
-hem | nibe'im | lakhem | bishmi | lo | shelachtim
+hem | nibe'im | lakhem
+bishmi | lo | shelachtim
 ne'um | Yahweh
 
 29:10
 ki | khoh | amar | Yahweh
 ki | lefi | melot | Levavel | shiv'im | shanah
 efkod | etkhem
-vahakimoti | aleikhem | et | devari | hatov | lehashiv | etkhem
+vahakimoti | aleikhem | et | devari | hatov
+lehashiv | etkhem
 el | hamakom
 hazeh
 
@@ -74,7 +77,8 @@ veshama'ti
 aleikhem
 
 29:13
-uvikashtem | oti | umetzatem | ki | tidreshuni | bekhol | levavkhem
+uvikashtem | oti | umetzatem | ki | tidreshuni
+bekhol | levavkhem
 
 29:14
 venimtzeti | lakhem | ne'um | Yahweh
@@ -82,12 +86,14 @@ veshavti | et | shevitekhem | vekibatzti | etkhem | mikol | hagoyim | umikol | h
 ne'um | Yahweh
 vahashivoti | etkhem
 el | hamakom
-asher | higleiti | etkhem | misham
+asher | higleiti | etkhem
+misham
 
 29:15
 ki
 amartem
-hekim | lanu | Yahweh | nevi'im | Bavelah
+hekim | lanu | Yahweh | nevi'im
+Bavelah
 
 29:16
 ki | khoh | amar | Yahweh | el | hamelekh | haiyoshev | el | kise | David
@@ -105,7 +111,8 @@ venatati | otam | kate'enim | hasho'arim | asher | lo | te'akhalnah
 meroa
 
 29:18
-veradafti | achareihem | bacherev | bara'av | uvadaver
+veradafti | achareihem
+bacherev | bara'av | uvadaver
 unetatim | lizva'ah | lekhol | mamlekhot | ha'aretz | le'alah | uleshamah | velishrekah | ulecherpah
 bekhol | hagoyim
 asher | hidachtim | sham
@@ -118,7 +125,8 @@ ne'um | Yahweh
 
 29:20
 ve'atem
-shim'u | devar | Yahweh | kol | hagolah
+shim'u | devar | Yahweh
+kol | hagolah
 asher | shilachti | Mirushalim | Bavelah
 
 29:21
@@ -129,9 +137,9 @@ hini | noten | otam | beyad | Nevukhadretzar | melekh | Bavel
 vehikam | le'eineikhem
 
 29:22
-velukach | mehem | kelalah | lekhol | galut | Yehudah | asher | Bevavel
-lemor
-yesimkha | Yahweh | Ketzidkiyahu | Ukhe'echav
+velukach | mehem | kelalah
+lekhol | galut | Yehudah | asher | Bevavel
+lemor | yesimkha | Yahweh | Ketzidkiyahu | Ukhe'echav
 asher | kalam | melekh | Bavel | ba'esh
 
 29:23
@@ -154,7 +162,8 @@ lemor
 
 29:26
 Yahweh | netanekha | khohen | tachat | Yehoyada | hakohen
-lihyot | pekidim | beit | Yahweh | lekhol | ish | meshuga | umitnabe
+lihyot | pekidim | beit | Yahweh
+lekhol | ish | meshuga | umitnabe
 venatatah | oto | el | hamahpekhet
 ve'el | hatzinok
 
@@ -165,7 +174,8 @@ hamitnabe | lakhem
 
 29:28
 ki | al | ken | shalach | eleinu | Bavel | lemor
-arukah | hi | benu | vatim | veshevu
+arukah | hi
+benu | vatim | veshevu
 venit'u | ganot
 ve'ikhlu
 et | perihen

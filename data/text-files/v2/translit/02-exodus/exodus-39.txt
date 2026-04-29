@@ -16,8 +16,7 @@ veshesh | mashezar
 vayrake'u | et | pachei | hazahav | vekitzetz | petilim
 la'asot | betokh | hatekhelet | uvetokh | ha'argaman
 uvetokh | tola'at | hashani
-uvetokh | hashesh | ma'aseh
-choshev
+uvetokh | hashesh | ma'aseh | choshev
 
 39:4
 ketefot | asu | lo
@@ -28,14 +27,14 @@ chubar
 39:5
 vecheshev | afudato | asher | alav | mimenu | hu | kema'asehu
 zahav | tekhelet | ve'argaman | vetola'at | shani
-veshesh | mashezar
-ka'asher | tzivah | Yahweh
+veshesh | mashezar | ka'asher | tzivah | Yahweh
 et | Mosheh
 
 39:6
 vaiya'asu | et | avnei | hashoham
 musabot | mishbetzot | zahav | mefutachot | pituchei | chotam
-al | shemot | benei | Yisra'el
+al | shemot
+benei | Yisra'el
 
 39:7
 vaiyasem | otam | al | kitfot | ha'efod
@@ -53,7 +52,8 @@ veshesh | mashezar
 39:9
 ravua | hayah | kaful
 asu | et | hachoshen
-zeret | areko | vezeret | rachebo | kaful
+zeret | areko | vezeret | rachebo
+kaful
 
 39:10
 vaymal'u | vo
@@ -123,8 +123,7 @@ bayetah
 39:20
 vaiya'asu | shetei | tabe'ot | zahav
 vaiyitenum | al | shetei | khitfot | ha'efod | milmatah | mimul | panav
-le'umat | mechbarto | mima'al
-lecheshev
+le'umat | mechbarto | mima'al | lecheshev
 ha'efod
 
 39:21
@@ -136,12 +135,15 @@ et | Mosheh
 
 39:22
 vaiya'as | et | me'il | ha'efod
-ma'aseh | oreg | kelil
+ma'aseh | oreg
+kelil
 tekhelet
 
 39:23
-ufi | hame'il | betokho | kefi | tachra
-safah | lefiv | saviv | lo | yikarea
+ufi | hame'il | betokho
+kefi | tachra
+safah | lefiv | saviv
+lo | yikarea
 
 39:24
 vaiya'asu | al | shulei | hame'il
@@ -187,14 +189,13 @@ Layahweh
 
 39:31
 vaiyitenu | alav | petil | tekhelet
-latet | al | hamitznefet | milma'elah
-ka'asher | tzivah | Yahweh
+latet | al | hamitznefet | milma'elah | ka'asher | tzivah | Yahweh
 et | Mosheh
 
 39:32
-vatekhel | kol | avodat | mishkan
-ohel | mo'ed
-vaiya'asu | benei | Yisra'el
+vatekhel
+kol | avodat | mishkan
+ohel | mo'ed | vaiya'asu | benei | Yisra'el
 kekhol | asher | tzivah | Yahweh | et | Mosheh
 ken | asu
 
@@ -259,8 +260,9 @@ lekhahen
 
 39:42
 kekhol | asher | tzivah | Yahweh
-et | Mosheh | ken | asu | benei | Yisra'el
-et | kol | ha'avodah
+et | Mosheh
+ken | asu | benei | Yisra'el | et
+kol | ha'avodah
 
 39:43
 vaiyar | Mosheh | et | kol | hamelakhah | vehineh | asu | otah

@@ -31,18 +31,19 @@ lalun
 20:5
 vaiyakumu | alai | ba'alei | Hagiv'ah
 vaiyasobu | alai | et | habayit
-layelah
-oti | dimu | laharog
+layelah | oti | dimu | laharog
 ve'et | pilagshi | inu
 vatamot
 
 20:6
 va'ochez | befilagshi | va'anatecheha
 va'ashalecheha | bekhol | sedeh
-nachalat | Yisra'el | ki | asu | zimah | unevalah | Beyisra'el
+nachalat | Yisra'el
+ki | asu | zimah | unevalah | Beyisra'el
 
 20:7
-hineh | khulekhem | benei | Yisra'el
+hineh | khulekhem
+benei | Yisra'el
 havu | lakhem | davar | ve'etzah
 halom
 
@@ -95,18 +96,22 @@ sheva | me'ot | ish | bachur
 20:16
 mikol | ha'am | hazeh | sheva | me'ot | ish | bachur
 iter
-yad | yemino | kol | zeh | kolea | ba'even | el | hasa'arah | velo | yachati
+yad | yemino
+kol | zeh | kolea | ba'even | el | hasa'arah
+velo | yachati
 
 20:17
 ve'ish | Yisra'el | hitpakedu | levad | Mibinyamin
 arba | me'ot | elef | ish
-sholef | charev | kol | zeh
+sholef | charev
+kol | zeh
 ish | milchamah
 
 20:18
 vaiyakumu | vaiya'alu | Veit | El | vaiyish'alu | velohim
 vaiyomeru | benei | Yisra'el
-mi | ya'aleh | lanu | vatechilah | lamilchamah
+mi | ya'aleh | lanu | vatechilah
+lamilchamah
 im | benei | Vinyamin
 vaiyomer | Yahweh
 Yehudah | vatechilah
@@ -152,7 +157,8 @@ baiyom | hasheni
 20:25
 vaiyetze | Vinyamin | likratam | min | Hagiv'ah | baiyom | hasheni
 vaiyashchitu | vivnei | Yisra'el | od | shemonat | asar | elef | ish
-aretzah | kol | eleh
+aretzah
+kol | eleh
 sholefei | charev
 
 20:26
@@ -195,27 +201,31 @@ kishloshim | ish | Beyisra'el
 20:32
 vaiyomeru | benei | Vinyamin
 nigafim | hem | lefaneinu
-kevarishonah | uvenei | Yisra'el | ameru | nanusah | unetakenuhu | min | ha'ir
-el | hamsilot
+kevarishonah
+uvenei | Yisra'el | ameru | nanusah | unetakenuhu
+min | ha'ir | el | hamsilot
 
 20:33
 vekhol | ish | Yisra'el | kamu | mimekomo
 vaiya'arkhu
 Beva'al | Tamar
-ve'orev | Yisra'el | megiach | mimekomo | mima'areh | Gava
+ve'orev | Yisra'el | megiach | mimekomo
+mima'areh | Gava
 
 20:34
 vaiyavo'u | mineged | Lagiv'ah | aseret | alafim | ish | bachur | mikol | Yisra'el
 vehamilchamah
 kavedah
-vehem | lo | yade'u | ki | noga'at | aleihem
+vehem | lo | yade'u
+ki | noga'at | aleihem
 hara'ah
 
 20:35
 vaiyigof | Yahweh | et | Binyamin | lifnei | Yisra'el
 vaiyashchitu | venei | Yisra'el | Bevinyamin | baiyom | hahu
 esrim | vachamishah | elef | ume'ah
-ish | kol | eleh
+ish
+kol | eleh
 sholef | charev
 
 20:36
@@ -242,12 +252,12 @@ herev | leha'alotam | mas'at | he'ashan | min | ha'ir
 vaiyahafokh | ish | Yisra'el
 bamilchamah | Uvinyamin | hechel | lehakot | chalalim | be'ish | Yisra'el | kishloshim | ish
 ki | ameru
-akh | nigof | nigaf | hu | lefaneinu | kamilchamah
+akh | nigof | nigaf | hu | lefaneinu
+kamilchamah
 harishonah
 
 20:40
-vehamas'et | hechelah | la'alot | min | ha'ir
-amud | ashan
+vehamas'et | hechelah | la'alot | min | ha'ir | amud | ashan
 vaiyifen | Binyamin | acharav
 vehineh | alah | khelil | ha'ir
 hashamayemah
@@ -264,12 +274,11 @@ hara'ah
 vaiyifnu | lifnei | ish | Yisra'el | el | derekh | hamidbar
 vehamilchamah
 hidbikatehu
-va'asher | mehe'arim | mashchitim | oto | betokho
+va'asher | mehe'arim | mashchitim | oto
+betokho
 
 20:43
-kiteru | et | Binyamin | hirdifuhu
-menuchah
-hidrikhuhu
+kiteru | et | Binyamin | hirdifuhu | menuchah | hidrikhuhu
 ad | nokhach | Hagiv'ah | mimizrach | shamesh
 
 20:44
@@ -301,6 +310,7 @@ arba'ah | chodashim
 20:48
 ve'ish | Yisra'el | shavu | el | benei | Vinyamin | vaiyakum | lefi | cherev
 me'ir | metom | ad | behemah
-ad | kol | hanimtza
+ad
+kol | hanimtza
 gam | kol | he'arim | hanimtza'ot
 shilechu | va'esh

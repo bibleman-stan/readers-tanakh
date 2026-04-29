@@ -1,7 +1,6 @@
 3:1
 Umosheh | hayah | ro'eh | et | tzon | Yitro | choteno
-kohen | Midyan
-vaiyinhag | et | hatzon | achar | hamidbar
+kohen | Midyan | vaiyinhag | et | hatzon | achar | hamidbar
 vaiyavo | el | har | ha'elohim
 Chorevah
 
@@ -15,8 +14,7 @@ einenu | ukal
 3:3
 vaiyomer | Mosheh
 asurah | na | ve'er'eh
-et | hamar'eh | hagadol
-hazeh | madua | lo | yiv'ar | haseneh
+et | hamar'eh | hagadol | hazeh | madua | lo | yiv'ar | haseneh
 
 3:4
 vaiyar | Yahweh
@@ -37,13 +35,13 @@ vaiyomer | anokhi | elohei | avikha
 elohei | Avraham | elohei | Yitzchak
 velohei | Ya'ako
 vaiyaster | Mosheh | panav
-ki | yare | mehabit
-el | ha'elohim
+ki | yare | mehabit | el | ha'elohim
 
 3:7
 vaiyomer | Yahweh
 ra'oh | ra'iti | et | oni | ami | asher | Bemitzrayim
-ve'et | tza'akatam | shama'ti | mipenei | nogesav | ki | yada'ti
+ve'et | tza'akatam | shama'ti | mipenei | nogesav
+ki | yada'ti
 et | makh'ovav
 
 3:8
@@ -70,15 +68,18 @@ vehotze | et | ami | venei | Yisra'el | Mimitzrayim
 
 3:11
 vaiyomer | Mosheh | el | ha'elohim
-mi | anokhi | ki | elekh
+mi | anokhi
+ki | elekh
 el | par'oh
-vekhi | otzi | et | benei | Yisra'el | Mimitzrayim
+vekhi | otzi | et | benei | Yisra'el
+Mimitzrayim
 
 3:12
 vaiyomer | ki | ehyeh | imakh
-vezeh | lekha | ha'ot | ki | anokhi
-shelachtikha | behotzi'akha | et | ha'am | Mimitzrayim
-ta'avdun | et | ha'elohim | al
+vezeh | lekha | ha'ot
+ki | anokhi
+shelachtikha | behotzi'akha | et | ha'am | Mimitzrayim | ta'avdun | et | ha'elohim
+al
 hahar | hazeh
 
 3:13
@@ -86,8 +87,7 @@ vaiyomer | Mosheh | el | ha'elohim | hineh | anokhi | va | el | benei | Yisra'el
 ve'amarti | lahem
 elohei | avoteikhem
 shelachani | aleikhem
-ve'ameru | li | mah | shemo
-mah | omar
+ve'ameru | li | mah | shemo | mah | omar
 alehem
 
 3:14
@@ -129,22 +129,26 @@ venizbechah
 Layahweh | eloheinu
 
 3:19
-va'ani | yada'ti | ki | lo | yiten | etkhem | melekh | Mitzrayim | lahalokh
-velo | beyad | chazakah
+va'ani | yada'ti
+ki | lo | yiten | etkhem | melekh | Mitzrayim
+lahalokh | velo | beyad | chazakah
 
 3:20
-veshalachti | et | yadi | vehikeiti | et | Mitzrayim | bekhol | nifle'otai | asher | e'eseh
+veshalachti | et | yadi | vehikeiti | et | Mitzrayim
+bekhol | nifle'otai | asher | e'eseh
 bekirbo
 ve'acharei | khen
 yeshalach | etkhem
 
 3:21
 venatati | et | chen | ha'om | hazeh | be'einei | Mitzrayim
-vehayah | ki | telekhun | lo | telekhu
+vehayah | ki | telekhun
+lo | telekhu
 reikam
 
 3:22
-vesha'alah | ishah | mishekhentah | umigarat | beitah | kelei | khesef | ukhelei | zahav
+vesha'alah | ishah | mishekhentah | umigarat | beitah
+kelei | khesef | ukhelei | zahav
 usemalot
 vesamtem | al | beneikhem | ve'al | benoteikhem
 venitzaltem

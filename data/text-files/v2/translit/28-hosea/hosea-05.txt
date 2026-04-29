@@ -1,7 +1,8 @@
 5:1
 shim'u | zot | hakohanim | vehakshivu | beit | Yisra'el | uveit | hamelekh | ha'azinu
 ki | lakhem
-hamishpat | ki | fach | heyitem | Lemitzpah
+hamishpat
+ki | fach | heyitem | Lemitzpah
 vereshet
 perusah | al | Tavor
 
@@ -20,8 +21,10 @@ Yisra'el
 5:4
 lo | yitenu | ma'aleihem
 lashuv
-el | eloheihem | ki | ruach | zenunim | bekirbam
-ve'et | Yahweh | lo | yada'u
+el | eloheihem
+ki | ruach | zenunim | bekirbam
+ve'et | Yahweh
+lo | yada'u
 
 5:5
 ve'anah | ge'on | Yisra'el | befanav
@@ -35,7 +38,8 @@ velo | yimtza'u
 chalatz | mehem
 
 5:7
-Bayahweh | bagadu | ki | vanim | zarim
+Bayahweh | bagadu
+ki | vanim | zarim
 yaladu
 atah | yokhlem | chodesh
 et | chelkeihem
@@ -44,16 +48,19 @@ et | chelkeihem
 tik'u | shofar | Bagiv'ah
 chatzotzerah | Baramah
 hari'u | Beit | Aven
-achareikha | Binyamin
+achareikha
+Binyamin
 
 5:9
-Efrayim | leshamah | tihyeh | beyom
-tokhechah | beshivtei | Yisra'el
+Efrayim | leshamah | tihyeh
+beyom | tokhechah
+beshivtei | Yisra'el
 hoda'ti
 ne'emanah
 
 5:10
-hayu | sarei | Yehudah | kemasigei
+hayu | sarei | Yehudah
+kemasigei
 gevul
 aleihem
 eshpokh | kamayim
@@ -74,7 +81,8 @@ vaiyar | Efrayim | et | chalyo | Vihudah | et | mezoro
 vaiyelekh | Efrayim | el | Ashur
 vaiyishlach
 el | melekh | Yarev
-vehu | lo | yukhal | lirpo | lakhem | velo | yigheh | mikem | mazor
+vehu | lo | yukhal | lirpo | lakhem
+velo | yigheh | mikem | mazor
 
 5:14
 ki | anokhi | khashachal | Le'efrayim | vekhakefir

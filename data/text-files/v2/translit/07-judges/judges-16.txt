@@ -37,7 +37,9 @@ elef | ume'ah | kasef
 
 16:6
 vatomer | Delilah | el | Shimshon
-hagidah | na | li | bameh | kochakha | gadol | uvameh | te'aser | le'anotekha
+hagidah | na | li | bameh | kochakha | gadol
+uvameh | te'aser
+le'anotekha
 
 16:7
 vaiyomer | eleiha | Shimshon
@@ -54,7 +56,9 @@ vatomer | elav
 pelishtim | aleikha
 Shimshon
 vaynatek | et | haytarim
-ka'asher | yinatek | petil | hane'oret | baharicho | esh | velo | Noda | kocho
+ka'asher | yinatek | petil | hane'oret | baharicho | esh
+velo | Noda
+kocho
 
 16:10
 vatomer | Delilah | el | Shimshon
@@ -66,8 +70,7 @@ te'aser
 16:11
 vaiyomer | eleiha
 im | asor | ya'asruni | ba'avotim | chadashim | asher | lo | Na'asah | vahem
-melakhah
-vechaliti | vehayiti | ke'achad | ha'adam
+melakhah | vechaliti | vehayiti | ke'achad | ha'adam
 
 16:12
 vatikach | Delilah | avotim | chadashim | vata'asrehu | vahem | vatomer | elav | pelishtim | aleikha | Shimshon
@@ -94,10 +97,10 @@ vaiyisa | et | haytad | ha'ereg
 ve'et | hamasakhet
 
 16:15
-vatomer | elav | eikh | tomar | ahavtikh | velibekha
-ein | iti
-zeh | shalosh | pe'amim | hetalta | bi
-velo | higadta | li | bameh | kochakha | gadol
+vatomer | elav | eikh | tomar | ahavtikh
+velibekha | ein | iti
+zeh | shalosh | pe'amim | hetalta | bi | velo | higadta | li
+bameh | kochakha | gadol
 
 16:16
 vayhi | ki | hetzikah | lo | vidvareiha | kol | haiyamim
@@ -107,7 +110,8 @@ lamut
 
 16:17
 vaiyaged | lah | et | kol | libo | vaiyomer | lah | morah | lo | alah | al | roshi
-ki | nezir | elohim | ani | mibeten | imi
+ki | nezir | elohim | ani
+mibeten | imi
 im | gulachti | vesar | mimeni | khochi
 vechaliti | vehayiti | kekhol | ha'adam
 
@@ -151,8 +155,8 @@ vaiyachel | se'ar | rosho | letzameach
 ka'asher | gulach
 
 16:23
-vesarnei | felishtim | Ne'esfu | lizboach | zevach | gadol | Ledagon | eloheihem | ulesimchah
-vaiyomeru
+vesarnei | felishtim | Ne'esfu | lizboach | zevach | gadol | Ledagon | eloheihem
+ulesimchah | vaiyomeru
 natan | eloheinu | beyadenu | et
 Shimshon | oyveinu
 
@@ -183,8 +187,8 @@ aleihem
 
 16:27
 vehabayit | male | ha'anashim | vehanashim
-veshamah | kol
-sarnei | felishtim
+veshamah
+kol | sarnei | felishtim
 ve'al | hagag | kishloshet | alafim | ish | ve'ishah
 haro'im | bischok | Shimshon
 
@@ -213,6 +217,7 @@ rabim | me'asher | hemit | bechaiyav
 16:31
 vaiyeredu | echav | vekhol | beit | avihu | vaiyis'u | oto
 vaiya'alu | vaiyikberu | oto | bein | Tzare'ah | uvein | Eshta'ol
-bekever | Manoach | aviv
+bekever
+Manoach | aviv
 vehu | shafat | et | Yisra'el
 esrim | shanah

@@ -4,8 +4,8 @@ sheloshim | alef
 
 6:2
 vaiyakom | vaiyelekh | David | vekhol | ha'am | asher | ito
-Miba'alei
-Yehudah | leha'alot | misham | et | aron | ha'elohim
+Miba'alei | Yehudah
+leha'alot | misham | et | aron | ha'elohim
 asher | Nikra | shem | shem | Yahweh | tzeva'ot | yoshev | hakeruvim
 alav
 
@@ -26,7 +26,8 @@ holekh
 lifnei | ha'aron
 
 6:5
-Vedavid | vekhol | beit | Yisra'el | mesachakim | lifnei | Yahweh | bekhol
+Vedavid | vekhol | beit | Yisra'el | mesachakim | lifnei | Yahweh
+bekhol
 atzei | veroshim | uvekhinorot | uvinvalim | uvetupim | uvimna'an'im | uvetzeltzelim
 
 6:6
@@ -74,8 +75,7 @@ ve'et | kol | beito
 6:12
 vaiyugad | lamelekh | David | lemor
 berakh | Yahweh | et | beit | Oved | Edom | ve'et | kol | asher | lo
-ba'avur
-aron | ha'elohim
+ba'avur | aron | ha'elohim
 vaiyelekh | David | vaiya'al | et | aron | ha'elohim | mibeit | Oved | Edom | ir | David
 besimchah
 
@@ -93,8 +93,9 @@ chagur
 efod | bad
 
 6:15
-Vedavid | vekhol | beit | Yisra'el | ma'alim
-et | aron | Yahweh | bitru'ah | uvekol | shofar
+Vedavid | vekhol | beit | Yisra'el
+ma'alim | et | aron | Yahweh
+bitru'ah | uvekol | shofar
 
 6:16
 vehayah | aron | Yahweh
@@ -115,8 +116,7 @@ vaykhal | David
 meha'alot | ha'olah
 vehashelamim
 vayvarekh | et | ha'am
-beshem
-Yahweh | tzeva'ot
+beshem | Yahweh | tzeva'ot
 
 6:19
 vaychalek | lekhol | ha'am | lekhol | hamon | Yisra'el | leme'ish | ve'ad | ishah
@@ -142,8 +142,7 @@ vesichakti
 lifnei | Yahweh
 
 6:22
-unekaloti | od | mizot
-vehayiti | shafal | be'einai
+unekaloti | od | mizot | vehayiti | shafal | be'einai
 ve'im | ha'amahot | asher | amart
 imam
 ikavedah

@@ -26,18 +26,18 @@ nofel
 ugelui | einayim
 
 24:5
-mah | tou | ohaleikha
-Ya'ako | mishkenoteikha
-Yisra'el
+mah | tou | ohaleikha | Ya'ako | mishkenoteikha | Yisra'el
 
 24:6
-kinchalim | Nitayu | keganot
-alei | nahar | ka'ahalim | nata | Yahweh | ka'arazim
+kinchalim | Nitayu
+keganot
+alei | nahar
+ka'ahalim | nata | Yahweh
+ka'arazim
 alei | mayim
 
 24:7
-yizal | mayim | midalyav
-vezar'o | bemayim | rabim
+yizal | mayim | midalyav | vezar'o | bemayim | rabim
 veyarom | Me'agag | malko
 vetinnase | malkhuto
 
@@ -48,8 +48,8 @@ yokhal | goyim | tzarav | ve'atzmoteihem | yegarem
 vechitzav | yimchatz
 
 24:9
-kara | shakhav | ka'ari | ukhelavi
-mi | yekimenu | mevarakheikha | varukh
+kara | shakhav | ka'ari | ukhelavi | mi | yekimenu
+mevarakheikha | varukh
 ve'orereikha
 arur
 
@@ -65,7 +65,8 @@ shalosh | pe'amim
 24:11
 ve'atah | berach | lekha | el | mekomecha
 amarti | kabed | akhabedkha
-vehineh | mena'akha | Yahweh | mikavod
+vehineh | mena'akha | Yahweh
+mikavod
 
 24:12
 vaiyomer | Bil'am
@@ -82,7 +83,8 @@ oto | adaber
 
 24:14
 ve'atah | hini | holekh
-le'ami | lekhah | i'atzekha | asher | ya'aseh | ha'am | hazeh | le'amekha
+le'ami
+lekhah | i'atzekha | asher | ya'aseh | ha'am | hazeh | le'amekha
 be'acharit | haiyamim
 
 24:15
@@ -95,15 +97,18 @@ shetum | ha'ayin
 24:16
 ne'um | shomea | imrei | el
 veyodea
-da'at | elyon | machazeh | Shadai | yechezeh
+da'at | elyon
+machazeh | Shadai | yechezeh
 nofel
 ugelui | einayim
 
 24:17
-er'enu | velo | atah | ashurenu | velo | karov
+er'enu | velo | atah | ashurenu
+velo | karov
 darakh | kokhav | Miya'ako | vekam | shevet | Miyisra'el
 umachatz | pa'atei | Mo'av
-vekarkar | kol | benei | Shet
+vekarkar
+kol | benei | Shet
 
 24:18
 vehayah | Edom | yereshah | vehayah | yereshah | Se'ir
@@ -113,8 +118,7 @@ oseh | chayil
 
 24:19
 veyered
-Miya'ako
-vehe'evid | sarid | me'ir
+Miya'ako | vehe'evid | sarid | me'ir
 
 24:20
 vaiyar | et | Amalek
@@ -141,8 +145,8 @@ Ashur | tishbeka
 24:23
 vaiyisa | meshalo
 vaiyomar
-o
-mi | yichyeh | misumo | el
+o | mi | yichyeh
+misumo | el
 
 24:24
 vetzim | miyad | Kitim

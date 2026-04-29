@@ -27,35 +27,41 @@ yesodoteiha
 30:5
 Kush | Ufut | Velud | vekhol | ha'erev | Vekhuv | uvenei
 eretz | haberit
-itam | bacherev | yipolu
+itam
+bacherev | yipolu
 
 30:6
 koh | amar | Yahweh
 venafelu | somekhei | Mitzrayim
 veyarad
-ge'on | uzah | Mimigdol | Seveneh | bacherev | yipelu | vah
+ge'on | uzah
+Mimigdol | Seveneh | bacherev | yipelu | vah
 ne'um
 Adonai | Yahweh
 
 30:7
 venashamu | betokh
 aratzot | neshamot
-ve'arav | betokh | arim | nacharavot
+ve'arav
+betokh | arim | nacharavot
 tihyeinah
 
 30:8
 veyade'u
-ki | ani | Yahweh | betiti | esh | Bemitzrayim
-venishberu | kol | ozereiha
+ki | ani | Yahweh
+betiti | esh | Bemitzrayim
+venishberu
+kol | ozereiha
 
 30:9
-baiyom | hahu | yetze'u | mal'akhim | milefanai | batzim | lehacharid
+baiyom | hahu | yetze'u | mal'akhim | milefanai | batzim
+lehacharid
 et | Kush | betach
-vehayetah | chalchalah | vahem | beyom | Mitzrayim | ki | hineh | ba'ah
+vehayetah | chalchalah | vahem | beyom | Mitzrayim
+ki | hineh | ba'ah
 
 30:10
-koh | amar
-Adonai | Yahweh
+koh | amar | Adonai | Yahweh
 vehishbati | et | hamon | Mitzrayim | beyad
 Nevukhadretzar | melekh | Bavel
 
@@ -66,7 +72,8 @@ veheriku | charvotam | al | Mitzrayim | umal'u | et | ha'aretz
 chalal
 
 30:12
-venatati | ye'orim | charavah | umakharti | et | ha'aretz | beyad | ra'im
+venatati | ye'orim | charavah
+umakharti | et | ha'aretz | beyad | ra'im
 vahashimoti | eretz | umelo'ah | beyad | zarim
 ani | Yahweh
 dibarti
@@ -74,7 +81,8 @@ dibarti
 30:13
 koh | amar | Adonai | Yahweh | veha'avadti | gilulim | vehishbati | elilim | Minof
 venasi | me'eretz | Mitzrayim | lo | yihyeh | od
-venatati | yir'ah | be'eretz | Mitzrayim
+venatati | yir'ah
+be'eretz | Mitzrayim
 
 30:14
 vahashimoti | et | Patros
@@ -97,13 +105,16 @@ tzarei | yomam
 
 30:17
 bachurei | Aven | Ufi | Veset | bacherev | yipolu
-vehenah | bashevi | telakhnah
+vehenah
+bashevi | telakhnah
 
 30:18
 Uvitchafneches | chasakh | haiyom | beshivri | sham | et | motot | Mitzrayim
 venishbat | bah
 ge'on | uzah
-hi | anan | yekhasenah | uvenoteiha | bashevi | telakhnah
+hi | anan | yekhasenah
+uvenoteiha
+bashevi | telakhnah
 
 30:19
 ve'asiti | shefatim | Bemitzrayim
@@ -117,8 +128,7 @@ elai | lemor
 
 30:21
 ben | adam
-et | zeroa | par'oh | melekh | Mitzrayim
-shavareti
+et | zeroa | par'oh | melekh | Mitzrayim | shavareti
 vehineh | lo | chubeshah | latet | refu'ot | lasum | chitul | lechaveshah | lechazekah
 litpos | becharev
 
@@ -150,6 +160,6 @@ el | eretz | Mitzrayim
 
 30:26
 vahafitzoti | et | Mitzrayim | bagoyim
-vezeriti | otam | ba'aratzot
-veyade'u
+vezeriti | otam
+ba'aratzot | veyade'u
 ki | ani | Yahweh

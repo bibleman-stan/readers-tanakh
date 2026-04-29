@@ -6,8 +6,8 @@ sheni | Daniyel | La'avigayil
 hakarmelit
 
 3:2
-hashelishi | Le'avshalom | ben | Ma'akhah | bat | Talmai
-melekh | Geshur
+hashelishi | Le'avshalom | ben | Ma'akhah
+bat | Talmai | melekh | Geshur
 harevi'i
 Adoniyah | ven | Chagit
 
@@ -23,8 +23,10 @@ sheva | shanim | veshishah | chodashim
 usheloshim | veshalovosh | shanah | malakh | Birushalim
 
 3:5
-ve'eleh | Nuledu | lo | Birushalayim
-Shim'a | Veshovav | Venatan | Ushelomoh | arba'ah | Levat | Shua | bat | Ami'el
+ve'eleh | Nuledu | lo
+Birushalayim
+Shim'a | Veshovav | Venatan | Ushelomoh | arba'ah | Levat | Shua
+bat | Ami'el
 
 3:6
 Veyivchar | Ve'elishama
@@ -64,8 +66,7 @@ Amon | beno
 Yoshiyahu | veno
 
 3:15
-uvenei | Yoshiyahu
-habekhor | Yochanan
+uvenei | Yoshiyahu | habekhor | Yochanan
 hasheni
 Yehoyakim
 hashelishi | Tzidkiyahu
@@ -73,9 +74,7 @@ harevi'i
 Shalum
 
 3:16
-uvenei
-Yehoyakim
-Yekhaneyah | veno
+uvenei | Yehoyakim | Yekhaneyah | veno
 Tzidkiyah | veno
 
 3:17
@@ -103,7 +102,8 @@ chamesh
 3:21
 uven | Chananyah
 Pelatyah | Visha'yah
-benei | Refayah | benei | Arnan | benei | Oadyah | benei | Shekhanyah
+benei | Refayah | benei | Arnan
+benei | Oadyah | benei | Shekhanyah
 
 3:22
 uvenei | Shekhanyah

@@ -11,8 +11,7 @@ asher | hifkid | melekh | Bavel | ba'aretz
 
 41:3
 ve'et | kol | haiyehudim | asher | hayu | ito | et | Gedalyahu | Bamitzpah
-ve'et | hakasdim | asher | Nimtze'u | sham
-et | anshei | hamilchamah
+ve'et | hakasdim | asher | Nimtze'u | sham | et | anshei | hamilchamah
 hikah
 Yishma'el
 
@@ -25,7 +24,8 @@ lo | yada
 41:5
 vaiyavo'u | anashim | Mishekhem | Mishilo | Umishomeron | shemonim | ish
 megulechei | zakan | ukeru'ei | vegadim | umitgodedim
-uminchah | ulevonah | beyadam | lehavi | beit | Yahweh
+uminchah | ulevonah | beyadam | lehavi
+beit | Yahweh
 
 41:6
 vaiyetze | Yishma'el | ben | Netanyah | likratam | min | Hamitzpah
@@ -39,8 +39,7 @@ el | Gedalyahu | ven | Achikam
 vayhi
 kevo'am
 el | tokh | ha'ir
-vaiyishchatem | Yishma'el | ben | Netanyah | el | tokh | habor
-hu
+vaiyishchatem | Yishma'el | ben | Netanyah | el | tokh | habor | hu
 veha'anashim | asher | ito
 
 41:8
@@ -49,20 +48,21 @@ ki | yesh | lanu | matmonim | basadeh
 chitim | use'orim
 veshemen | udevash
 vaiyechdal
-velo | hemitam | betokh | acheihem
+velo | hemitam
+betokh | acheihem
 
 41:9
 vehabor | asher | hishlikh | sham | Yishma'el | et | kol | pigrei | ha'anashim | asher | hikah | beyad | Gedalyahu
 hu | asher | asah | hamelekh | Asa
-mipenei
-Ba'sha | melekh | Yisra'el
+mipenei | Ba'sha | melekh | Yisra'el
 oto | mile | Yishma'el | ben | Netanyahu
 chalalim
 
 41:10
 vaiyishb | Yishma'el | et | kol | she'erit | ha'am | asher | Bamitzpah | et | benot | hamelekh | ve'et | kol | ha'am | hanish'arim | Bamitzpah
 asher | hifkid | Nevuzar'adan | rav | tabachim
-et | Gedalyahu | ben | Achikam
+et | Gedalyahu
+ben | Achikam
 vaiyishbem | Yishma'el | ben | Netanyah
 vaiyelekh
 la'avor
@@ -72,7 +72,8 @@ el | benei | Amon
 vaiyishma | Yochanan | ben | Kareach
 vekhol | sarei | hachayalim | asher | ito
 et | kol | hara'ah | asher | asah
-Yishma'el | ben | Netanyah
+Yishma'el
+ben | Netanyah
 
 41:12
 vaiyikchu | et | kol | ha'anashim
@@ -90,21 +91,22 @@ vaiyismachu
 
 41:14
 vaiyasobu | kol | ha'am
-asher | shavah | Yishma'el | min | Hamitzpah
-vaiyashuvu | vaiyelekhu
-el | Yochanan | ben | Kareach
+asher | shavah | Yishma'el
+min | Hamitzpah | vaiyashuvu | vaiyelekhu
+el | Yochanan
+ben | Kareach
 
 41:15
 Veyishma'el | ben | Netanyah | Nimlat | bishmonah | anashim
-mipenei
-Yochanan
+mipenei | Yochanan
 vaiyelekh
 el | benei | Amon
 
 41:16
 vaiyikach | Yochanan | ben | Kareach | vekhol | sarei | hachayalim | asher | ito | et | kol | she'erit | ha'am | asher | heshiv | me'et | Yishma'el | ben | Netanyah | min | Hamitzpah
 achar | hikah
-et | Gedalyah | ben | Achikam
+et | Gedalyah
+ben | Achikam
 gevarim | anshei | hamilchamah | venashim | vetaf | vesarisim | asher | heshiv
 Migiv'on
 
@@ -115,6 +117,6 @@ lalekhet
 lavo | Mitzrayim
 
 41:18
-mipenei | hakasdim
-ki | yare'u | mipeneihem | ki | hikah | Yishma'el | ben | Netanyah | et | Gedalyahu | ben | Achikam
+mipenei | hakasdim | ki | yare'u
+mipeneihem | ki | hikah | Yishma'el | ben | Netanyah | et | Gedalyahu | ben | Achikam
 asher | hifkid | melekh | Bavel | ba'aretz

@@ -22,8 +22,7 @@ layelah
 
 8:4
 vaytzav | otam | lemor | re'u | atem | orevim | la'ir | me'acharei | ha'ir
-al | tarchiku | min | ha'ir | me'od
-vihyitem | kulekhem
+al | tarchiku | min | ha'ir | me'od | vihyitem | kulekhem
 nekhonim
 
 8:5
@@ -36,18 +35,20 @@ venasnu | lifneihem
 8:6
 veyatze'u | achareinu | ad | hatikenu | otam | min | ha'ir
 ki | yomeru
-nasim | lefaneinu | ka'asher
-barishonah
+nasim | lefaneinu
+ka'asher | barishonah
 venasnu | lifneihem
 
 8:7
 ve'atem | takumu | meha'orev
 vehorashtem
 et | ha'ir
-unetanah | Yahweh | eloheikhem | beyedkhem
+unetanah | Yahweh | eloheikhem
+beyedkhem
 
 8:8
-vehayah | ketafesekhem | et | ha'ir | tatzitu | et | ha'ir | ba'esh | kidvar | Yahweh
+vehayah | ketafesekhem | et | ha'ir | tatzitu | et | ha'ir | ba'esh
+kidvar | Yahweh
 ta'asu
 re'u
 tziviti | etkhem
@@ -97,8 +98,7 @@ derekh | hamidbar
 
 8:16
 vaiyiza'aku | kol | ha'am | asher | Ba'ir
-lirdof
-achareihem
+lirdof | achareihem
 vaiyirdefu | acharei | Yehoshua
 vaiyinateku
 min | ha'ir
@@ -166,18 +166,20 @@ lefi | charev
 
 8:25
 vayhi | khol | hanofelim | baiyom | hahu | me'ish | ve'ad | ishah
-sheneim | asar | alef | kol
-anshei | Ha'ai
+sheneim | asar | alef
+kol | anshei | Ha'ai
 
 8:26
 Vihoshua | lo | heshiv | yado | asher | natah
 bakidon
 ad | asher | hecherim
-et | kol | yoshevei | Ha'ai
+et
+kol | yoshevei | Ha'ai
 
 8:27
 rak | habehemah | ushelal | ha'ir | hahi | bazezu | lahem
-Yisra'el | kidvar | Yahweh | asher | tzivah
+Yisra'el
+kidvar | Yahweh | asher | tzivah
 et | Yehoshua
 
 8:28
@@ -197,15 +199,14 @@ haiyom | hazeh
 
 8:30
 az | yivneh | Yehoshua | mizbeach
-Layahweh
-elohei | Yisra'el | behar
+Layahweh | elohei | Yisra'el
+behar
 Eival
 
 8:31
 ka'asher | tzivah | Mosheh | eved | Yahweh | et | benei | Yisra'el | kakatuv | besefer | torat | Mosheh
 mizbach | avanim | shelemot | asher | lo | henif | aleihen
-barzel
-vaiya'alu | alav | olot | Layahweh
+barzel | vaiya'alu | alav | olot | Layahweh
 vaiyizbechu
 shelamim
 
@@ -213,7 +214,8 @@ shelamim
 vaiyikhtov | sham
 al | ha'avanim
 et | mishneh | torat | Mosheh | asher | katav
-lifnei | benei | Yisra'el
+lifnei
+benei | Yisra'el
 
 8:33
 vekhol | Yisra'el | uzekenav | veshoterim | veshofetav | omedim | mizeh | umizeh | la'aron | neged | hakohanim | halviyim | nose'ei | aron | berit | Yahweh | kager | ka'ezrach

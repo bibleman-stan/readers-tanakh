@@ -27,14 +27,12 @@ Mitzrayemah
 ben | esrim | vechamesh | shanah | Yehoyakim | bemalekho
 ve'achat | esreh | shanah | malakh | Birushalim
 vaiya'as | hara
-be'einei
-Yahweh | elohav
+be'einei | Yahweh | elohav
 
 36:6
 alav | alah
 Nevukhadnetzar
-melekh | Bavel
-vaiya'asrehu | banchushtayim
+melekh | Bavel | vaiya'asrehu | banchushtayim
 leholikho | Bavelah
 
 36:7
@@ -51,8 +49,8 @@ tachtav
 
 36:9
 ben | shemoneh | shanim | Yehoyakhin | bemalekho
-usheloshah | chodashim | va'aseret | yamim | malakh | Birushalim
-vaiya'as | hara
+usheloshah | chodashim | va'aseret | yamim
+malakh | Birushalim | vaiya'as | hara
 be'einei | Yahweh
 
 36:10
@@ -71,17 +69,14 @@ ve'achat | esreh | shanah | malakh | Birushalim
 
 36:12
 vaiya'as | hara
-be'einei
-Yahweh | elohav | lo | Nikhna | milifnei | Yirmeyahu | hanavi
+be'einei | Yahweh | elohav
+lo | Nikhna | milifnei | Yirmeyahu | hanavi
 mipi | Yahweh
 
 36:13
 vegam | bamelekh | Nevukhadnetzar | marad | asher | hishbi'o
-belohim
-vaiyekesh | et | arepo | vay'ametz | et | levavo
-mishuv
-el | Yahweh
-elohei | Yisra'el
+belohim | vaiyekesh | et | arepo | vay'ametz | et | levavo
+mishuv | el | Yahweh | elohei | Yisra'el
 
 36:14
 gam | kol | sarei | hakohanim | veha'am | hirbu | lim'ol | ma'al | kekhol
@@ -91,7 +86,8 @@ Birushalim
 
 36:15
 vaiyishlach | Yahweh | elohei | avoteihem | aleihem | beyad | mal'akhav
-hashkem | veshaloach | ki | chamal | al | amo
+hashkem | veshaloach
+ki | chamal | al | amo
 ve'al | me'ono
 
 36:16
@@ -131,12 +127,14 @@ ad | melokh | malkhut | Paras
 36:21
 lemalot | devar | Yahweh | befi | Yirmeyahu
 ad | ratzetah | ha'aretz
-et | shabetoteiha | kol | yemei | hashamah | shavatah | lemalot
+et | shabetoteiha
+kol | yemei | hashamah | shavatah | lemalot
 shiv'im | shanah
 
 36:22
 uvishnat | achat | Lekhoresh | melekh | Paras
-likhlot | devar | Yahweh | befi | Yirmeyahu
+likhlot | devar | Yahweh
+befi | Yirmeyahu
 he'ir | Yahweh | et | ruach | Koresh | melekh | Paras
 vaiya'aver | kol | bekhol | malkhuto
 vegam | bemikhtav

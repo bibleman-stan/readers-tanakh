@@ -23,28 +23,28 @@ vayhi
 beveit | Mikhayehu
 
 17:5
-veha'ish | Mikhah | lo | beit | elohim
+veha'ish | Mikhah | lo
+beit | elohim
 vaiya'as | efod | uterafim
 vaymale | et | yad | achad | mibanav
 vayhi | lo
 lekhohen
 
 17:6
-baiyamim | hahem
-ein | melekh | Beyisra'el
+baiyamim | hahem | ein | melekh | Beyisra'el
 ish | haiyashar | be'einav
 ya'aseh
 
 17:7
 vayhi | na'ar | Mibeit | Lechem | Yehudah
-mimishpachat
-Yehudah
+mimishpachat | Yehudah
 vehu | levi
 vehu | gar | sham
 
 17:8
 vaiyelekh | ha'ish | meha'ir | Mibeit | Lechem | Yehudah
-lagur | ba'asher | yimtza
+lagur
+ba'asher | yimtza
 vaiyavo | har | Efrayim | ad | beit | Mikhah
 la'asot | darko
 
@@ -53,7 +53,8 @@ vaiyomer | lo | Mikhah
 me'ayin | tavo
 vaiyomer | elav | levi | anokhi | Mibeit | Lechem | Yehudah
 ve'anokhi | holekh
-lagur | ba'asher | emtza
+lagur
+ba'asher | emtza
 
 17:10
 vaiyomer | lo | Mikhah | shevah | imadi | vehyeh | li | le'av | ulekhohen
@@ -75,6 +76,8 @@ beveit | Mikhah
 
 17:13
 vaiyomer | Mikhah
-atah | yada'ti | ki | yeitiv | Yahweh | li
+atah | yada'ti
+ki | yeitiv | Yahweh
+li
 ki | hayah | li | halevi
 lekhohen

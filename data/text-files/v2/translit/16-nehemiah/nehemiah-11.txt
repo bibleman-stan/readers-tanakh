@@ -12,12 +12,15 @@ lashevet | Birushalim
 
 11:3
 ve'eleh | rashei | hamedinah | asher | yashevu
-Birushalim | uve'arei | Yehudah | yashevu | ish | ba'achuzato | be'areihem
-Yisra'el | hakohanim | vehalviyim | vehanetinim | uvenei
+Birushalim
+uve'arei | Yehudah | yashevu | ish | ba'achuzato | be'areihem
+Yisra'el | hakohanim | vehalviyim | vehanetinim
+uvenei
 avdei | Shelomoh
 
 11:4
-Uvirushalim | yashevu | mibenei | Yehudah | umibenei | Vinyamin
+Uvirushalim | yashevu | mibenei | Yehudah
+umibenei | Vinyamin
 mibenei | Yehudah | Atayah | ven | Uziyah | ben | Zekharyah | ven | Amaryah | ben | Shefatyah | ven | Mahalal'el
 mibenei | Faretz
 
@@ -48,9 +51,7 @@ Vihudah | ven | hasenu'ah | al | ha'ir
 mishneh
 
 11:10
-min | hakohanim
-Yeda'yah | ven | Yoyariv
-Yakhin
+min | hakohanim | Yeda'yah | ven | Yoyariv | Yakhin
 
 11:11
 Serayah | ven | Chilkiyah | ben | Meshulam | ben | Tzadok | ben | Merayot | ben | Achituv
@@ -60,18 +61,19 @@ negid | beit | ha'elohim
 va'acheihem | osei | hamelakhah | labayit
 shemoneh | me'ot | esrim | ushenayim
 Va'adayah | ben | Yerocham | ben | Pelalyah | ben | Amtzi | ven | Zekharyah
-ben | Pashchur | ben | Malkiyah
+ben | Pashchur
+ben | Malkiyah
 
 11:13
-ve'echav | rashim | le'avot | matayim
-arba'im | ushenayim
+ve'echav | rashim | le'avot | matayim | arba'im | ushenayim
 Va'amashsai | ben | Azar'el | ben | Achzai | ben | Meshilemot
 ben | Imer
 
 11:14
 va'acheihem | giborei | chayil | me'ah | esrim | ushemonah
 ufakid | aleihem
-Zavdi'el | ben | Hagedolim
+Zavdi'el
+ben | Hagedolim
 
 11:15
 umin | halviyim
@@ -80,18 +82,16 @@ ben | Buni
 
 11:16
 Veshabetai | Veyozavad | al | hamelakhah | hachitzonah | leveit | ha'elohim
-merashei
-halviyim
+merashei | halviyim
 
 11:17
 Umatanyah | ven | Mikhah | ben | Zavdi | ven | Asaf | rosh | hatechilah | yehodeh | latefilah
-Uvakbukyah | mishneh | me'echav
-Ve'avda | ben | Shamua | ben | Galal
+Uvakbukyah | mishneh | me'echav | Ve'avda | ben | Shamua
+ben | Galal
 ben | Yeditun
 
 11:18
-kol | halviyim | be'ir | hakodesh | matayim
-shemonim | ve'arba'ah
+kol | halviyim | be'ir | hakodesh | matayim | shemonim | ve'arba'ah
 
 11:19
 vehasho'arim | Akuv | Talmon
@@ -111,8 +111,8 @@ al | hanetinim
 11:22
 ufekid | halviyim | Birushalim
 Uzi | ven | Bani | ben | Chashavyah
-ben | Matanyah | ben | Mikha
-mibenei | Asaf | hamshorerim
+ben | Matanyah
+ben | Mikha | mibenei | Asaf | hamshorerim
 leneged | melekhet | beit | ha'elohim
 
 11:23
@@ -126,7 +126,8 @@ Ufetachyah | ben | Mesheizav'el | mibenei | Zerach | ben | Yehudah | leyad | ham
 lekhol | davar | la'am
 
 11:25
-ve'el | hachatzerim | bisdotam | mibenei | Yehudah | yashevu | Bekiryat | Ha'arba | uvenoteiha
+ve'el | hachatzerim | bisdotam
+mibenei | Yehudah | yashevu | Bekiryat | Ha'arba | uvenoteiha
 Uvedivon | uvenoteiha | Uvikavtze'el
 vachatzereiha
 
@@ -169,4 +170,5 @@ Lod | Ve'ono
 gei | hacharashim
 
 11:36
-umin | halviyim | machlekot | Yehudah | Levinyamin
+umin | halviyim | machlekot | Yehudah
+Levinyamin

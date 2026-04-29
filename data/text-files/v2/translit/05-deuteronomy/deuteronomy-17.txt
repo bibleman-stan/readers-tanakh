@@ -1,7 +1,6 @@
 17:1
 lo | tizbach | Layahweh | eloheikha | shor | vaseh | asher | yihyeh | vo | mum
-kol
-davar | ra
+kol | davar | ra
 ki | to'avat | Yahweh | eloheikha
 hu
 
@@ -23,7 +22,8 @@ vehugad | lekha
 veshama'eta
 vedarashta | heitev
 vehineh | emet | nakhon | hadavar
-Ne'estah | hato'evah | hazot | Beyisra'el
+Ne'estah | hato'evah | hazot
+Beyisra'el
 
 17:5
 vehotzeta | et | ha'ish | hahu | o | et | ha'ishah | hahiv | asher | asu | et | hadavar | hara | hazeh | el | she'areikha
@@ -34,7 +34,8 @@ usekaltam | ba'avanim | vametu
 
 17:6
 al | pi | shenayim | edim | o | sheloshah | edim
-yumat | hamet | lo | yumat
+yumat | hamet
+lo | yumat
 al | pi
 ed | echad
 
@@ -51,8 +52,7 @@ el | hamakom | asher | yivchar | Yahweh | eloheikha
 bo
 
 17:9
-uvata | el | hakohanim | halviyim
-ve'el | hashofet | asher | yihyeh
+uvata | el | hakohanim | halviyim | ve'el | hashofet | asher | yihyeh
 baiyamim | hahem
 vedarashta | vehigidu | lekha
 et
@@ -65,7 +65,8 @@ veshamarta | la'asot | kekhol | asher | yorukha
 
 17:11
 al | pi | hatorah | asher | yorukha | ve'al | hamishpat | asher | yomeru | lekha
-ta'aseh | lo | tasur | min | hadavar | asher | yagidu | lekha
+ta'aseh
+lo | tasur | min | hadavar | asher | yagidu | lekha
 yamin | usemol
 
 17:12
@@ -84,25 +85,28 @@ od
 ki | tavo | el | ha'aretz | asher | Yahweh | eloheikha | noten | lakh
 virishtah
 veyashavtah | bah
-ve'amarta | asimah | alai | melekh | kekhol | hagoyim | asher | sevivotai
+ve'amarta | asimah | alai | melekh
+kekhol | hagoyim | asher | sevivotai
 
 17:15
 som | tasim | aleikha | melekh | asher | yivchar | Yahweh | eloheikha
-bo | mikerev | acheikha | tasim | aleikha | melekh
+bo
+mikerev | acheikha | tasim | aleikha | melekh
 lo | tukhal | latet | aleikha | ish | nakheri | asher | lo | achikha
 hu
 
 17:16
 rak | lo | yarbeh | lo | susim | velo | yashiv | et | ha'am | Mitzraymah
-lema'an
-harbot | sus
+lema'an | harbot | sus
 Vayahweh | amar | lakhem
 lo | tosifun | lashuv | baderekh | hazeh
 od
 
 17:17
 velo | yarbeh | lo | nashim | velo | yasur
-levavo | vekhesef | vezahav | lo | yarbeh | lo | me'od
+levavo | vekhesef | vezahav
+lo | yarbeh | lo
+me'od
 
 17:18
 vehayah | kheshivto | al | kise | mamlakhto
@@ -111,7 +115,8 @@ halviyim
 
 17:19
 vehayetah | imo
-vekara | vo | kol | yemei | chaiyav
+vekara | vo
+kol | yemei | chaiyav
 lema'an | yilmad | leyir'ah | et | Yahweh | elohav
 lishmor | et | kol | divrei | hatorah | hazot | ve'et | hachukim | ha'eleh
 la'asotam
@@ -119,4 +124,5 @@ la'asotam
 17:20
 levilti | rum | levavo | me'echav | ulevilti | sur | min | hamitzvah
 yamin | usemol
-lema'an | ya'arikh | yamim | al | mamlakhto | hu | uvanav | bekerev | Yisra'el
+lema'an | ya'arikh | yamim | al | mamlakhto | hu | uvanav
+bekerev | Yisra'el

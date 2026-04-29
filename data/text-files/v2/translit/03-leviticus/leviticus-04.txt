@@ -52,8 +52,8 @@ al | hakelayot
 yesirenah
 
 4:10
-ka'asher | yuram | mishor
-zevach | hashelamim
+ka'asher | yuram
+mishor | zevach | hashelamim
 vehiktiram | hakohen | al | mizbach | ha'olah
 
 4:11
@@ -72,8 +72,7 @@ yisaref
 4:13
 ve'im | kol | adat | Yisra'el | yishgu
 vene'lam | davar
-me'einei
-hakahal
+me'einei | hakahal
 ve'asu | achat | mikol | mitzvot | Yahweh | asher | lo | te'aseinah
 ve'ashemu
 
@@ -96,9 +95,8 @@ vehevi | hakohen | hamashiach | midam | hapar
 el | ohel | mo'ed
 
 4:17
-vetaval | hakohen | etzba'o | min | hadam
-vehizah | sheva | pe'amim | lifnei | Yahweh
-et
+vetaval | hakohen | etzba'o
+min | hadam | vehizah | sheva | pe'amim | lifnei | Yahweh | et
 penei | haparokhet
 
 4:18
@@ -126,8 +124,7 @@ vehotzi | et | hapar | el | michutz | lamachaneh
 vesaraf | oto | ka'asher | saraf
 et
 hapar | harishon
-chatat | hakahal
-hu
+chatat | hakahal | hu
 
 4:22
 asher | nasi
@@ -156,12 +153,14 @@ ve'et | damo | yishpokh
 el | yesod | mizbach | ha'olah
 
 4:26
-ve'et | kol | chelbo | yaktir | hamizbechah | kechelev
+ve'et | kol | chelbo | yaktir | hamizbechah
+kechelev
 zevach | hashelamim | vekhiper | alav | hakohen | mechatato
 venislach | lo
 
 4:27
-ve'im | nefesh | achat | techeta | vishgagah | me'am | ha'aretz
+ve'im | nefesh | achat | techeta | vishgagah
+me'am | ha'aretz
 ba'asotah | achat | mimitzvot | Yahweh | asher | lo | te'aseinah
 ve'ashem
 
@@ -194,8 +193,7 @@ venislach | lo
 
 4:32
 ve'im | keves | yavi | karebano
-lechatat
-nekevah | temimah
+lechatat | nekevah | temimah
 yevi'enah
 
 4:33
@@ -215,5 +213,6 @@ hamizbeach
 4:35
 ve'et | kol | chelbah | yasir | ka'asher | yusar | chelev | hakesev | mizevach | hashelamim
 vehiktir | hakohen | otam | hamizbechah | al
-ishei | Yahweh | vekhiper | alav | hakohen | al | chatato | asher | chata
+ishei | Yahweh
+vekhiper | alav | hakohen | al | chatato | asher | chata
 venislach | lo

@@ -50,7 +50,8 @@ Amasai
 Va'achimot
 
 6:11
-Elkanah | benei | Elkanah
+Elkanah
+benei | Elkanah
 Tzofai | beno
 Venachat | beno
 
@@ -73,44 +74,52 @@ Asayah | veno
 
 6:16
 ve'eleh | asher | he'emid | David | al | yedei | shir
-beit | Yahweh | mimenoach
-ha'aron
+beit | Yahweh
+mimenoach | ha'aron
 
 6:17
 vaiyihyu | mesharetim | lifnei | mishkan | ohel | mo'ed | bashir
-ad | benot | Shelomoh | et | beit | Yahweh | Birushalim
-vaiya'amdu | khemishpatam
+ad | benot | Shelomoh | et | beit | Yahweh
+Birushalim | vaiya'amdu | khemishpatam
 al | avodatam
 
 6:18
 ve'eleh | ha'omedim | uveneihem | mibenei | hakehati
-Heiman | hamshorer | ben | Yo'el | ben | Shemu'el
+Heiman | hamshorer
+ben | Yo'el
+ben | Shemu'el
 
 6:19
 ben | Elkanah | ben | Yerocham
-ben | Eli'el | ben | Toach
+ben | Eli'el
+ben | Toach
 
 6:20
 ben | Tzif | ben | Elkanah
-ben | Machat | ben | Amasai
+ben | Machat
+ben | Amasai
 
 6:21
 ben | Elkanah | ben | Yo'el
-ben | Azaryah | ben | Tzefanyah
+ben | Azaryah
+ben | Tzefanyah
 
 6:22
 ben | Tachat | ben | Asir
-ben | Evyasaf | ben | Korach
+ben | Evyasaf
+ben | Korach
 
 6:23
 ben | Yitzhar | ben | Kehat
-ben | Levi | ben | Yisra'el
+ben | Levi
+ben | Yisra'el
 
 6:24
 ve'achiv | Asaf
 ha'omed
 al | yemino
-Asaf | ben | Berekhyahu | ben | Shim'a
+Asaf | ben | Berekhyahu
+ben | Shim'a
 
 6:25
 ben | Mikha'el | ben | Ba'aseyah
@@ -131,7 +140,8 @@ ben | Levi
 6:29
 uvenei | Merari | acheihem
 al | hasemol
-Eitan | ben | Kishi | ben | Avdi
+Eitan | ben | Kishi
+ben | Avdi
 ben | Malukh
 
 6:30
@@ -144,23 +154,25 @@ ben | Shamer
 
 6:32
 ben | Machli | ben | Mushi
-ben | Merari | ben | Levi
+ben | Merari
+ben | Levi
 
 6:33
 va'acheihem
 halviyim
-netunim | lekhol | avodat | mishkan | beit | ha'elohim
+netunim
+lekhol | avodat | mishkan | beit | ha'elohim
 
 6:34
 Ve'aharon | uvanav | maktirim | al | mizbach | ha'olah | ve'al | mizbach | haketoret | lekhol
-melekhet
-kodesh | hakodashim | ulekhaper | al | Yisra'el
+melekhet | kodesh | hakodashim | ulekhaper | al | Yisra'el
 kekhol | asher | tzivah
 Mosheh
 eved | ha'elohim
 
 6:35
-ve'eleh | benei | Aharon
+ve'eleh
+benei | Aharon
 El'azar | beno | Pinchas | beno
 Avishua | beno
 
@@ -169,17 +181,16 @@ Buki | veno | Uzi | veno
 Zerachyah | veno
 
 6:37
-Merayot | beno | Amaryah | veno
-Achituv | beno
+Merayot | beno | Amaryah | veno | Achituv | beno
 
 6:38
 Tzadok | beno
 Achima'atz | beno
 
 6:39
-ve'eleh | moshevotam | letirotam
-bigvulam
-livnei | Aharon | lemishpachat | hakehati | ki | lahem
+ve'eleh | moshevotam | letirotam | bigvulam
+livnei | Aharon | lemishpachat | hakehati
+ki | lahem
 hayah | hagoral
 
 6:40
@@ -214,7 +225,8 @@ ve'et | migrasheiha
 6:45
 umimateh | Vinyamin | et | Giv'on | ve'et | migrasheiha | et | Geva | ve'et | migrasheiha | ve'et | Alemet | ve'et | migrasheiha
 ve'et | Anatot
-ve'et | migrasheiha | kol | areihem | shelosh | esreh | ir | bemishpechoteihem
+ve'et | migrasheiha
+kol | areihem | shelosh | esreh | ir | bemishpechoteihem
 
 6:46
 velivnei | Kehat | hanotarim | mimishpachat | hamateh | mimachatzit | mateh | chatzi | Menasheh | bagoral
@@ -240,12 +252,12 @@ ve'et | migresheihem
 vaiyitenu | vagoral | mimateh | venei | Yehudah | umimateh | venei | Shim'on
 umimateh | benei | Vinyamin
 et | he'arim | ha'eleh
-asher | yikre'u | ethem | beshemot
+asher | yikre'u | ethem
+beshemot
 
 6:51
 umimishpechot | benei | Kehat | vayhi | arei | gevulam
-mimateh
-Efrayim
+mimateh | Efrayim
 
 6:52
 vaiyitenu | lahem | et | arei | hamiklat | et | Shekhem | ve'et | migrasheiha
@@ -264,8 +276,7 @@ ve'et | Gat | Rimon
 ve'et | migrasheiha
 
 6:55
-umimachatzit | mateh | Menasheh
-et | Aner | ve'et | migrasheiha
+umimachatzit | mateh | Menasheh | et | Aner | ve'et | migrasheiha
 ve'et | Bil'am
 ve'et | migrasheiha | lemishpachat | livnei | Kehat
 hanotarim
@@ -315,7 +326,8 @@ et | Tavor
 ve'et | migrasheiha
 
 6:63
-ume'ever | Leyarden | Yerecho | lemizrach | Haiyarden | mimateh | Re'uven
+ume'ever | Leyarden | Yerecho | lemizrach | Haiyarden
+mimateh | Re'uven
 et | Betzer | bamidbar
 ve'et | migrasheiha
 ve'et | Yahtzah

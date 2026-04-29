@@ -2,7 +2,8 @@
 vaiyavdel | David | vesarei | hatzava | la'avodah | livnei | Asaf | Veheiman | Vidutun
 hanebi'im | bekhinorot | binvalim | uvimtziltayim
 vayhi | misparam
-anshei | melakhah | la'avodatam
+anshei | melakhah
+la'avodatam
 
 25:2
 livnei | Asaf | Zakur | Veyosef | Unetanyah | Va'asar'elah
@@ -36,14 +37,12 @@ Veheiman
 
 25:7
 vayhi | misparam | im | acheihem
-melumedei | shir
-Layahweh | kol | hamevin | matayim
-shemonim | ushemonah
+melumedei | shir | Layahweh
+kol | hamevin | matayim | shemonim | ushemonah
 
 25:8
 vaiyapilu | goralot | mishmeret | le'umat | kakaton | kagadol
-mevin
-im | talmid
+mevin | im | talmid
 
 25:9
 vaiyetze | hagoral | harishon | Le'asaf
@@ -61,7 +60,8 @@ harevi'i | laiyitzri | banav | ve'echav
 sheneim | asar
 
 25:12
-hachamishi | Netanyahu | banav | ve'echav
+hachamishi | Netanyahu
+banav | ve'echav
 sheneim | asar
 
 25:13
@@ -69,11 +69,13 @@ hashishi | Vukiyahu | banav | ve'echav
 sheneim | asar
 
 25:14
-hashevi'i | Yesar'elah | banav | ve'echav
+hashevi'i | Yesar'elah
+banav | ve'echav
 sheneim | asar
 
 25:15
-hashemini | Yesha'yahu | banav | ve'echav
+hashemini | Yesha'yahu
+banav | ve'echav
 sheneim | asar
 
 25:16

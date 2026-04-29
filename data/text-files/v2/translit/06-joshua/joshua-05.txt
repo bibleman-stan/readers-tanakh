@@ -25,7 +25,8 @@ kol | ha'am | haiyotze | Mimitzrayim | hazekharim | kol | anshei | hamilchamah |
 betzetam | Mimitzrayim
 
 5:5
-ki | mulim | hayu | kol | ha'am
+ki | mulim | hayu
+kol | ha'am
 haiyotze'im
 vekhol | ha'om | haiyilodim | bamidbar | baderekh | betzetam | Mimitzrayim
 lo | malu
@@ -40,7 +41,10 @@ udevash
 
 5:7
 ve'et | beneihem | hekim | tachtam
-otam | mal | Yehoshua | ki | arelim | hayu | ki | lo | malu | otam
+otam
+mal | Yehoshua
+ki | arelim | hayu
+ki | lo | malu | otam
 badarekh
 
 5:8
@@ -68,10 +72,9 @@ haiyom | hazeh
 
 5:12
 vaiyishbot | haman | mimochorat | be'akhelam | me'avur | ha'aretz
-velo | hayah | od | livnei | Yisra'el | man
-vaiyokhelu | mitevu'at | eretz | Kena'an
-bashanah
-hahi
+velo | hayah | od | livnei | Yisra'el
+man | vaiyokhelu | mitevu'at | eretz | Kena'an
+bashanah | hahi
 
 5:13
 vayhi | bihyot | Yehoshua | Biricho

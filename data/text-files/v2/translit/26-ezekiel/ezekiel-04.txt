@@ -13,7 +13,8 @@ venatatah | aleiha | machanot | vesim | aleiha | karim | saviv
 
 4:3
 ve'atah | kach | lekha | machavat | barzel
-venatatah | otah | kir | barzel | beinekha | uvein | ha'ir
+venatatah | otah | kir | barzel
+beinekha | uvein | ha'ir
 vahakhinotah | et | paneikha | eleiha | vehayetah | vamatzor | vetzarta | aleiha
 ot | hi
 leveit | Yisra'el
@@ -21,7 +22,8 @@ leveit | Yisra'el
 4:4
 ve'atah | shekhav | al | tzidekha | hasemali
 vesamta | et | avon | beit | Yisra'el
-alav | mispar | haiyamim | asher | tishkav | alav
+alav
+mispar | haiyamim | asher | tishkav | alav
 tisa
 et | avonam
 
@@ -55,7 +57,8 @@ ad | kalotkha
 yemei | metzurekha
 
 4:9
-ve'atah | kach | lekha | chitin | use'orim | ufol | va'adashim | vedochan | vekhusemim | venatatah | otam | bikhli | echad | ve'asita | otam | lekha
+ve'atah | kach | lekha | chitin | use'orim | ufol | va'adashim | vedochan | vekhusemim | venatatah | otam | bikhli | echad
+ve'asita | otam | lekha
 lelachem
 mispar | haiyamim | asher | atah | shokhev | al | tzidekha | shelosh | me'ot | vetish'im | yom
 tokhalenu
@@ -76,7 +79,8 @@ tishteh
 ve'ugat | se'orim
 tokhalenah
 vehi | begelei | tze'at | ha'adam
-te'ugenah | le'eineihem
+te'ugenah
+le'eineihem
 
 4:13
 vaiyomer | Yahweh
@@ -86,9 +90,10 @@ sham
 
 4:14
 va'omar | ahah | Adonai | Yahweh
-hineh | nafshi | lo | metuma'ah
-unevelah | uterefah | lo | akhalti | mine'urai | ve'ad | atah
-velo | va | befi | besar | pigul
+hineh | nafshi
+lo | metuma'ah
+unevelah | uterefah | lo | akhalti | mine'urai | ve'ad | atah | velo | va | befi
+besar | pigul
 
 4:15
 vaiyomer | elai
@@ -104,6 +109,7 @@ ve'akhelu | lechem | bemishkal | uvid'agah | umayim | bimsurah | uveshimamon
 yishtu
 
 4:17
-lema'an | yachseru | lechem | vamayim
+lema'an | yachseru
+lechem | vamayim
 venashamu | ish | ve'achiv
 venamaku | ba'avonam

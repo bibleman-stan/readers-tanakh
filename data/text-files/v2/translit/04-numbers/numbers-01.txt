@@ -6,10 +6,13 @@ lemor
 
 1:2
 se'u | et | rosh | kol | adat | benei | Yisra'el | lemishpechotam
-leveit | avotam | bemispar | shemot | kol | zakhar | legulgelotam
+leveit | avotam
+bemispar | shemot
+kol | zakhar | legulgelotam
 
 1:3
-miben | esrim | shanah | vama'lah | kol | yotze | tzava | Beyisra'el
+miben | esrim | shanah | vama'lah
+kol | yotze | tzava | Beyisra'el
 tifkedu | otam | letziv'otam
 atah | Ve'aharon
 
@@ -22,54 +25,59 @@ hu
 
 1:5
 ve'eleh | shemot | ha'anashim | asher | ya'amdu
-itekhem | Lir'uven
-Elitzur | ben | Shedei'ur
+itekhem
+Lir'uven | Elitzur
+ben | Shedei'ur
 
 1:6
 Leshim'on
-Shelumi'el | ben | Tzurishadai
+Shelumi'el
+ben | Tzurishadai
 
 1:7
-Lihudah
-Nachshon | ben | Aminadav
+Lihudah | Nachshon
+ben | Aminadav
 
 1:8
-Leyisoshkhar
-Netan'el | ben | Tzu'ar
+Leyisoshkhar | Netan'el
+ben | Tzu'ar
 
 1:9
-Lizvulun
-Eli'av | ben | Chelon
+Lizvulun | Eli'av
+ben | Chelon
 
 1:10
-livnei | Yosef | Le'efrayim
-Elishama | ben | Amihud
+livnei | Yosef | Le'efrayim | Elishama
+ben | Amihud
 Limnasheh
-Gamli'el | ben | Pedahtzur
+Gamli'el
+ben | Pedahtzur
 
 1:11
-Levinyamin
-Avidan | ben | Gid'oni
+Levinyamin | Avidan
+ben | Gid'oni
 
 1:12
-Ledan
-Achi'ezer | ben | Ammishadai
+Ledan | Achi'ezer
+ben | Ammishadai
 
 1:13
 Le'asher
-Pag'i'el | ben | Akheran
+Pag'i'el
+ben | Akheran
 
 1:14
-Legad
-Elyasaf | ben | De'u'el
+Legad | Elyasaf
+ben | De'u'el
 
 1:15
-Lenaftali
-Achira | ben | Einan
+Lenaftali | Achira
+ben | Einan
 
 1:16
 eleh | keri'ei | ha'edah
-nesi'ei | matot | avotam
+nesi'ei
+matot | avotam
 rashei | alfei | Yisra'el
 hem
 
@@ -82,8 +90,8 @@ beshemot
 1:18
 ve'et | kol | ha'edah | hikhilu | be'echad | lachodesh | hasheni
 vaiyityaldu | al | mishpechotam
-leveit | avotam | bemispar | shemot | miben | esrim | shanah | vama'lah
-legulgelotam
+leveit | avotam
+bemispar | shemot | miben | esrim | shanah | vama'lah | legulgelotam
 
 1:19
 ka'asher | tzivah | Yahweh
@@ -94,9 +102,10 @@ bemidbar | Sinai
 1:20
 vaiyihyu | venei | Re'uven | bekhor | Yisra'el
 toldotam | lemishpechotam
-leveit | avotam | bemispar | shemot | legulgelotam
-kol | zakhar | miben | esrim | shanah | vama'lah | kol
-yotze | tzava
+leveit | avotam
+bemispar | shemot | legulgelotam
+kol | zakhar | miben | esrim | shanah | vama'lah
+kol | yotze | tzava
 
 1:21
 pekudeihem
@@ -104,12 +113,10 @@ lemateh | Re'uven
 shishah | ve'arba'im | elef | vachamesh | me'ot
 
 1:22
-livnei | Shim'on
-toldotam | lemishpechotam
-leveit | avotam
+livnei | Shim'on | toldotam | lemishpechotam | leveit | avotam
 pekudav | bemispar | shemot | legulgelotam
-kol | zakhar | miben | esrim | shanah | vama'lah | kol
-yotze | tzava
+kol | zakhar | miben | esrim | shanah | vama'lah
+kol | yotze | tzava
 
 1:23
 pekudeihem
@@ -117,11 +124,9 @@ lemateh | Shim'on
 tish'ah | vachamishim | elef | ushelosh | me'ot
 
 1:24
-livnei | Gad
-toldotam | lemishpechotam
-leveit | avotam | bemispar | shemot | miben | esrim | shanah | vama'lah
-kol
-yotze | tzava
+livnei | Gad | toldotam | lemishpechotam | leveit | avotam
+bemispar | shemot | miben | esrim | shanah | vama'lah
+kol | yotze | tzava
 
 1:25
 pekudeihem
@@ -129,11 +134,9 @@ lemateh | Gad
 chamishah | ve'arba'im | elef | veshesh | me'ot | vachamishim
 
 1:26
-livnei | Yehudah
-toldotam | lemishpechotam
-leveit | avotam | bemispar | shemot | miben | esrim | shanah | vama'lah
-kol
-yotze | tzava
+livnei | Yehudah | toldotam | lemishpechotam | leveit | avotam
+bemispar | shemot | miben | esrim | shanah | vama'lah
+kol | yotze | tzava
 
 1:27
 pekudeihem
@@ -141,11 +144,9 @@ lemateh | Yehudah
 arba'ah | veshiv'im | elef | veshesh | me'ot
 
 1:28
-livnei | Yisoshkhar
-toldotam | lemishpechotam
-leveit | avotam | bemispar | shemot | miben | esrim | shanah | vama'lah
-kol
-yotze | tzava
+livnei | Yisoshkhar | toldotam | lemishpechotam | leveit | avotam
+bemispar | shemot | miben | esrim | shanah | vama'lah
+kol | yotze | tzava
 
 1:29
 pekudeihem
@@ -153,11 +154,9 @@ lemateh | Yisoshkhar
 arba'ah | vachamishim | elef | ve'arba | me'ot
 
 1:30
-livnei | Zevulun
-toldotam | lemishpechotam
-leveit | avotam | bemispar | shemot | miben | esrim | shanah | vama'lah
-kol
-yotze | tzava
+livnei | Zevulun | toldotam | lemishpechotam | leveit | avotam
+bemispar | shemot | miben | esrim | shanah | vama'lah
+kol | yotze | tzava
 
 1:31
 pekudeihem
@@ -165,11 +164,10 @@ lemateh | Zevulun
 shiv'ah | vachamishim | elef | ve'arba | me'ot
 
 1:32
-livnei | Yosef | livnei | Efrayim
-toldotam | lemishpechotam
-leveit | avotam | bemispar | shemot | miben | esrim | shanah | vama'lah
-kol
-yotze | tzava
+livnei | Yosef | livnei | Efrayim | toldotam | lemishpechotam
+leveit | avotam
+bemispar | shemot | miben | esrim | shanah | vama'lah
+kol | yotze | tzava
 
 1:33
 pekudeihem
@@ -177,23 +175,18 @@ lemateh | Efrayim
 arba'im | elef | vachamesh | me'ot
 
 1:34
-livnei | Menasheh
-toldotam | lemishpechotam
-leveit | avotam | bemispar | shemot | miben | esrim | shanah | vama'lah
-kol
-yotze | tzava
+livnei | Menasheh | toldotam | lemishpechotam | leveit | avotam
+bemispar | shemot | miben | esrim | shanah | vama'lah
+kol | yotze | tzava
 
 1:35
 pekudeihem
-lemateh | Menasheh
-shenayim | usheloshim | elef | umatayim
+lemateh | Menasheh | shenayim | usheloshim | elef | umatayim
 
 1:36
-livnei | Vinyamin
-toldotam | lemishpechotam
-leveit | avotam | bemispar | shemot | miben | esrim | shanah | vama'lah
-kol
-yotze | tzava
+livnei | Vinyamin | toldotam | lemishpechotam | leveit | avotam
+bemispar | shemot | miben | esrim | shanah | vama'lah
+kol | yotze | tzava
 
 1:37
 pekudeihem
@@ -201,11 +194,9 @@ lemateh | Vinyamin
 chamishah | usheloshim | elef | ve'arba | me'ot
 
 1:38
-livnei | Dan
-toldotam | lemishpechotam
-leveit | avotam | bemispar | shemot | miben | esrim | shanah | vama'lah
-kol
-yotze | tzava
+livnei | Dan | toldotam | lemishpechotam | leveit | avotam
+bemispar | shemot | miben | esrim | shanah | vama'lah
+kol | yotze | tzava
 
 1:39
 pekudeihem
@@ -213,21 +204,18 @@ lemateh | Dan
 shenayim | veshishim | elef | usheva | me'ot
 
 1:40
-livnei | Asher | toldotam | lemishpechotam
-leveit | avotam | bemispar | shemot | miben | esrim | shanah | vama'lah
-kol
-yotze | tzava
+livnei | Asher | toldotam | lemishpechotam | leveit | avotam
+bemispar | shemot | miben | esrim | shanah | vama'lah
+kol | yotze | tzava
 
 1:41
 pekudeihem
 lemateh | Asher | echad | ve'arba'im | elef | vachamesh | me'ot
 
 1:42
-benei | Naftali
-toldotam | lemishpechotam
-leveit | avotam | bemispar | shemot | miben | esrim | shanah | vama'lah
-kol
-yotze | tzava
+benei | Naftali | toldotam | lemishpechotam | leveit | avotam
+bemispar | shemot | miben | esrim | shanah | vama'lah
+kol | yotze | tzava
 
 1:43
 pekudeihem
@@ -242,16 +230,20 @@ hayu
 
 1:45
 vaiyihyu | kol | pekudei | venei | Yisra'el
-leveit | avotam | miben | esrim | shanah | vama'lah
+leveit | avotam
+miben | esrim | shanah | vama'lah
 kol | yotze | tzava | Beyisra'el
 
 1:46
 vaiyihyu | kol | hapekudim
-shesh | me'ot | elef | usheloshet | alafim | vachamesh | me'ot | vachamishim
+shesh | me'ot | elef
+usheloshet | alafim | vachamesh | me'ot | vachamishim
 
 1:47
 vehalviyim
-lemateh | avotam | lo | hatpakdu | betokham
+lemateh | avotam
+lo | hatpakdu
+betokham
 
 1:48
 vaydaber | Yahweh
@@ -259,7 +251,8 @@ el | Mosheh | lemor
 
 1:49
 akh | et | mateh | Levi | lo | tifkod
-ve'et | rosham | lo | tisa | betokh | benei | Yisra'el
+ve'et | rosham | lo | tisa | betokh
+benei | Yisra'el
 
 1:50
 ve'atah | hafked | et | halviyim | al | mishkan | ha'edut | ve'al | kol | kelav | ve'al | kol | asher | lo
@@ -270,8 +263,8 @@ vesaviv | lamishkan
 yachanu
 
 1:51
-uvinsoa | hamishkan | yoridu | oto | halviyim | uvachanot | hamishkan
-yakimu | oto
+uvinsoa | hamishkan | yoridu | oto | halviyim
+uvachanot | hamishkan | yakimu | oto
 halviyim
 vehazar | hakarev
 yumat
@@ -282,8 +275,10 @@ benei | Yisra'el
 ish | al | machanehu | ve'ish | al | diglo | letziv'otam
 
 1:53
-vehalviyim | yachanu | saviv | lemishkan | ha'edut | velo | yihyeh | ketzef
-al | adat | benei | Yisra'el
+vehalviyim | yachanu | saviv | lemishkan | ha'edut
+velo | yihyeh | ketzef
+al | adat
+benei | Yisra'el
 veshameru | halviyim
 et | mishmeret | mishkan | ha'edut
 

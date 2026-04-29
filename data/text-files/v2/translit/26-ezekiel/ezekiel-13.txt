@@ -6,26 +6,24 @@ elai | lemor
 ben | adam
 hinave | el | nevi'ei | Yisra'el
 haniba'im
-ve'amarta | linvi'ei | milibam
-shim'u
+ve'amarta | linvi'ei | milibam | shim'u
 devar | Yahweh
 
 13:3
 koh | amar | Adonai | Yahweh
-ho
-al | hanevi'im | hanevalim | asher | holekhim | achar | rucham
+ho | al | hanevi'im | hanevalim | asher | holekhim | achar | rucham
 ulevilti | ra'u
 
 13:4
-keshu'alim | bochoravot
-nevi'eikha | Yisra'el
+keshu'alim | bochoravot | nevi'eikha | Yisra'el
 hayu
 
 13:5
 lo | alitem | baperatzot
 vatigderu | gader
 al | beit | Yisra'el
-la'amod | bamilchamah | beyom | Yahweh
+la'amod | bamilchamah
+beyom | Yahweh
 
 13:6
 chazu | shav | vekesem | kazav
@@ -51,7 +49,8 @@ Adonai | Yahweh
 13:9
 vehayetah | yadi | el | hanevi'im | hachozim | shav | vehakosemim | kazav
 besod | ami | lo | yihyu | uvikhtav | beit | Yisra'el | lo | yikatevu
-ve'el | admat | Yisra'el | lo | yavo'u
+ve'el | admat | Yisra'el
+lo | yavo'u
 vida'tem
 ki | ani
 Adonai | Yahweh
@@ -78,7 +77,8 @@ aiyeh | hatiach | asher | tachtem
 lakhen | koh | amar | Adonai | Yahweh
 uvika'ti | ruach | se'arot | bachamati
 vegeshem | shotef | be'api | yihyeh
-ve'avnei | elgavish | bechemah | lekhalah
+ve'avnei | elgavish
+bechemah | lekhalah
 
 13:14
 veharasti | et | hakir | asher | tachtem | tafel | vehiga'tihu | el | ha'aretz
@@ -104,8 +104,7 @@ Adonai | Yahweh
 
 13:17
 ve'atah | ven | adam | sim | paneikha | el | benot | amekha
-hamitnabe'ot | milibehen
-vehinave
+hamitnabe'ot | milibehen | vehinave
 aleihen
 
 13:18
@@ -131,8 +130,8 @@ veshilachti | et | hanefashot | asher | atem | metzodedot | et | nefashim
 leforechot
 
 13:21
-vekara'ti | et | mispechoteikhem | vehitzalti | et | ami | miyedkhen
-velo | yihyu | od | beyedkhen | limtzudah
+vekara'ti | et | mispechoteikhem | vehitzalti | et | ami | miyedkhen | velo | yihyu | od | beyedkhen
+limtzudah
 vida'ten
 ki | ani | Yahweh
 
@@ -144,6 +143,5 @@ ulechazek | yedei | rasha | levilti | shuv | midarko | hara | lehachayoto
 13:23
 lakhen | shav | lo | techezeinah
 vekesem | lo | tiksamnah | od
-vehitzalti | et | ami | miyedkhen
-vida'ten
+vehitzalti | et | ami | miyedkhen | vida'ten
 ki | ani | Yahweh

@@ -39,8 +39,7 @@ veholid | et | Uza
 ve'et | Achichud
 
 8:8
-Veshacharayim | holid | bisdeh | Mo'av | min | shilcho
-otam
+Veshacharayim | holid | bisdeh | Mo'av | min | shilcho | otam
 Chushim | ve'et | Ba'ara
 nashav
 
@@ -137,9 +136,9 @@ eleh
 yashevu | Virushalim
 
 8:29
-Uvegiv'on | yashevu
-Ye'u'el | avi | Giv'on
-veshem | ishto | Ma'akhah
+Uvegiv'on | yashevu | Ye'u'el | avi | Giv'on
+veshem | ishto
+Ma'akhah
 
 8:30
 uveno | habekhor
@@ -169,8 +168,7 @@ uven | Yehonatan | Meriv | Ba'al | Umeriv | Ba'al
 holid | et | Mikhah
 
 8:35
-uvenei | Mikhah
-Piton | Vamelekh
+uvenei | Mikhah | Piton | Vamelekh
 Veta'rea | Ve'achaz
 
 8:36
@@ -183,13 +181,15 @@ holid | et | Motza
 8:37
 Umotza
 holid | et | Bin'a
-Rafah | veno | El'asah | veno | Atzel | beno
+Rafah | veno | El'asah | veno
+Atzel | beno
 
 8:38
 Ule'atzel | shishah | vanim
 ve'eleh | shemotam | Azrikam | Bokheru | Veyishma'el | Ushe'aryah
 Ve'oadyah
-Vechanan | kol | eleh | benei | Atzal
+Vechanan
+kol | eleh | benei | Atzal
 
 8:39
 uvenei
@@ -201,4 +201,5 @@ hashelishi
 
 8:40
 vaiyihyu | venei | Ulom | anashim | giborei | chayil | dorekhei | keshet | umarbim | banim | uvenei | vanim
-me'ah | vachamishim | kol | eleh | mibenei | Vinyamin
+me'ah | vachamishim
+kol | eleh | mibenei | Vinyamin

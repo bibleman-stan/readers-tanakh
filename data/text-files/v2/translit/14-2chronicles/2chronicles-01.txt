@@ -19,7 +19,8 @@ bamidbar
 1:4
 aval | aron | ha'elohim | he'elah | David | Mikiryat | Ye'arim
 bahekhin | lo
-David | ki | natah | lo | ohel | Birushalim
+David
+ki | natah | lo | ohel | Birushalim
 
 1:5
 umizbach | hanechoshet | asher | asah | Betzal'el | ben | Uri | ven | Chur
@@ -30,15 +31,13 @@ vaiyidreshehu | Shelomoh
 vehakahal
 
 1:6
-vaiya'al | Shelomoh | sham | al | mizbach | hanechoshet | lifnei | Yahweh | asher | le'ohel | mo'ed
-vaiya'al | alav | olot
+vaiya'al | Shelomoh | sham | al | mizbach | hanechoshet | lifnei | Yahweh | asher
+le'ohel | mo'ed | vaiya'al | alav | olot
 alef
 
 1:7
-balaylah | hahu
-Nir'ah | elohim
-Lishlomoh
-vaiyomer | lo
+balaylah | hahu | Nir'ah | elohim
+Lishlomoh | vaiyomer | lo
 she'al | mah | eten | lakh
 
 1:8
@@ -52,14 +51,16 @@ tachtav
 atah | Yahweh | elohim
 ye'amen | devarekha
 im
-David | avi | ki | atah | himlakhtani
+David | avi
+ki | atah | himlakhtani
 al | am
 rav | ka'afar | ha'aretz
 
 1:10
 atah | chokhmah | umada | ten | li
 ve'etze'ah | lifnei | ha'om | hazeh
-ve'avo'ah | ki | mi | yishpot
+ve'avo'ah
+ki | mi | yishpot
 et | amekha | hazeh
 hagadol
 
@@ -74,13 +75,12 @@ hachakhemah | vehammada
 natun | lakh
 ve'osher | unekhasim | vekhavod | eten | lakh
 asher | lo | hayah | khen | lamelakhim | asher | lefaneikha
-ve'achareikha | lo | yihyeh | ken
+ve'achareikha
+lo | yihyeh | ken
 
 1:13
 vaiyavo | Shelomoh | labamah | asher | Begiv'on | Yerushalim
-milifnei
-ohel | mo'ed
-vaiyimlokh
+milifnei | ohel | mo'ed | vaiyimlokh
 al | Yisra'el
 
 1:14
@@ -99,12 +99,15 @@ laro
 1:16
 umotza | hasusim | asher | Lishlomoh
 Mimitzrayim | Umikve
-socharei | hamelekh | Mikve | yikchu | bimchir
+socharei | hamelekh
+Mikve | yikchu
+bimchir
 
 1:17
 vaiya'alu | vaiyotzi'u | Mimitzrayim | merkavah | beshesh | me'ot | kesef
 vesus | bachamishim | ume'ah
-vekhen | lekhol | malkhei | hachitim | umalkhei | Aram | beyadam | yotzi'u
+vekhen | lekhol | malkhei | hachitim | umalkhei | Aram
+beyadam | yotzi'u
 
 1:18
 vaiyomer | Shelomoh | livnot | bayit | leshem | Yahweh

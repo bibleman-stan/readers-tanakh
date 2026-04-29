@@ -2,8 +2,7 @@
 vaiyavo'u | venei | Yisra'el | kol | ha'edah | midbar | Tzin | bachodesh | harishon
 vaiyeshev | ha'am
 Bekadesh
-vatamot | sham | Miryam
-vatikaver
+vatamot | sham | Miryam | vatikaver
 sham
 
 20:2
@@ -29,9 +28,8 @@ anachnu | uve'irenu
 
 20:5
 velamah | he'elitunu | Mimitzrayim | lehavi | otanu
-el | hamakom | hara
-hazeh | lo | mekom | zera | ute'enah | vegefen | verimon
-umayim | ayin
+el | hamakom | hara | hazeh
+lo | mekom | zera | ute'enah | vegefen | verimon | umayim | ayin
 lishtot
 
 20:6
@@ -48,8 +46,7 @@ el | Mosheh | lemor
 20:8
 kach | et | hamateh | vehakhel | et | ha'edah | atah | Ve'aharon | achikha
 vedibartem | el | hasela | le'eineihem
-venatan | meimav
-vehotzeta | lahem | mayim | min | hasela
+venatan | meimav | vehotzeta | lahem | mayim | min | hasela
 vehishkita | et | ha'edah
 ve'et | be'iram
 
@@ -64,7 +61,8 @@ vaiyakhilu | Mosheh | Ve'aharon | et | hakahal
 el | penei | hasala
 vaiyomer | lahem | shim'u | na | hamorim
 hamin | hasela | hazeh
-notzi | lakhem | mayim
+notzi | lakhem
+mayim
 
 20:11
 vaiyarem | Mosheh | et | yado | vaiyakh | et | hasela | bematehu
@@ -75,14 +73,14 @@ vateshet | ha'edah | uve'iram
 20:12
 vaiyomer | Yahweh | el | Mosheh | ve'el | Aharon
 ya'an | lo | he'emantem | bi | lehakdisheni
-le'einei | benei | Yisra'el
+le'einei
+benei | Yisra'el
 lakhen | lo | tavi'u | et | hakahal | hazeh
 el | ha'aretz
 asher | natati | lahem
 
 20:13
-hemah | mei | Merivah
-asher | ravu | venei | Yisra'el
+hemah | mei | Merivah | asher | ravu | venei | Yisra'el
 et | Yahweh
 vaiyikadesh
 bam
@@ -91,8 +89,7 @@ bam
 vaiyishlach | Mosheh | mal'akhim | Mikadesh
 el | melekh | Edom
 koh | amar | achikha | Yisra'el
-atah | yada'ta
-et | kol | hatela'ah | asher | metza'atenu
+atah | yada'ta | et | kol | hatela'ah | asher | metza'atenu
 
 20:15
 vaiyeredu | avoteinu | Mitzraymah
@@ -105,33 +102,35 @@ vela'avoteinu
 vanitz'ak | el | Yahweh | vaiyishma | kolenu
 vaiyishlach | mal'akh
 vaiyotzi'enu
-Mimitzrayim
-vehineh | anachnu | Vekadesh
+Mimitzrayim | vehineh | anachnu | Vekadesh
 ir
 ketzeh | gevulekha
 
 20:17
 na'berah | na | ve'artzekha | lo | na'avor | besadeh | uvekherem
-velo | nishteh | mei | ve'er
+velo | nishteh
+mei | ve'er
 derekh | hamelekh | nelekh | lo | niteh | yamin | usemol
 ad | asher | na'avor
 gevulekha
 
 20:18
 vaiyomer | elav | Edom
-lo | ta'avor | bi
+lo | ta'avor
+bi
 pen | bacherev
 etze | likratecha
 
 20:19
 vaiyomeru | elav | benei | Yisra'el | bamsilah | na'aleh
 ve'im | meimeikha | nishteh | ani | umiknai
-venatati | mikhram
-rak | ein | davar | beraglai | e'evorah
+venatati | mikhram | rak | ein | davar
+beraglai | e'evorah
 
 20:20
 vaiyomer
-lo | ta'avor | vaiyetze | Edom | likrato
+lo | ta'avor
+vaiyetze | Edom | likrato
 be'am | kaved | uveyad | chazakah
 
 20:21
@@ -152,9 +151,10 @@ al | gevul | eretz | Edom
 lemor
 
 20:24
-ye'asef | Aharon | el | amav | ki | lo | yavo | el | ha'aretz
-asher | natati
-livnei | Yisra'el | al | asher | meritem | et | pi | lemei | Merivah
+ye'asef | Aharon | el | amav
+ki | lo | yavo | el | ha'aretz | asher | natati
+livnei | Yisra'el
+al | asher | meritem | et | pi | lemei | Merivah
 
 20:25
 kach | et | Aharon
@@ -173,7 +173,8 @@ umet | sham
 vaiya'as | Mosheh
 ka'asher | tzivah | Yahweh
 vaiya'alu | el | Hor | hahar
-le'einei | kol | ha'edah
+le'einei
+kol | ha'edah
 
 20:28
 vaiyafshet | Mosheh | et | Aharon | et | begadav | vaiyalbesh | otam | et | El'azar | beno

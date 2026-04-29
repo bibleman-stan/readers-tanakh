@@ -1,5 +1,6 @@
 59:1
-hen | lo | katzerah | yad | Yahweh | mehoshia | velo | khavedah | azeno | mishemoa
+hen | lo | katzerah | yad | Yahweh | mehoshia | velo | khavedah | azeno
+mishemoa
 
 59:2
 ki | im | avonoteikhem | hayu | mavdilim | beinekhem
@@ -15,7 +16,8 @@ avlah | tehgeh
 
 59:4
 ein | kore | vetzedek
-ve'ein | nishpat | be'emunah | batoach | al | tohu | vedaber | shav
+ve'ein | nishpat
+be'emunah | batoach | al | tohu | vedaber | shav
 haro | amal
 veholeid | aven
 
@@ -30,8 +32,7 @@ tibaka | ef'eh
 59:6
 kureihem | lo | yihyu | leveged
 velo | yitkasu
-bema'aseihem | ma'aseihem | ma'asei | aven
-ufo'al | chamas | bekhapeihem
+bema'aseihem | ma'aseihem | ma'asei | aven | ufo'al | chamas | bekhapeihem
 
 59:7
 ragleihem | lara | yarutzu
@@ -42,46 +43,53 @@ shod | vashever | bimsilotam
 
 59:8
 derekh | shalom | lo | yada'u
-ve'ein | mishpat
-bema'gelotam
-netivoteihem | ikeshu | lahem | kol | dorekh | bah
+ve'ein | mishpat | bema'gelotam
+netivoteihem | ikeshu | lahem
+kol | dorekh | bah
 lo | yada
 shalom
 
 59:9
 al | ken | rachak | mishpat | mimenu | velo | tasigenu
 tzedakah
-nekaveh | la'or | vehineh | choshekh | lingohot | ba'afelot | nehalekh
+nekaveh | la'or | vehineh | choshekh
+lingohot
+ba'afelot | nehalekh
 
 59:10
-negashshah | kha'ivrim | kir | ukhe'ein | einayim
-negasheshah | kashalnu | vatzohorayim | kaneshef | ba'ashmanim | kametim
+negashshah | kha'ivrim | kir
+ukhe'ein | einayim | negasheshah
+kashalnu | vatzohorayim | kaneshef | ba'ashmanim | kametim
 
 59:11
 nehemeh | khadubim | kulanu
 vekhaiyonim
 hagoh | nehgeh
-nekaveh | lamishpat | va'ayin | lishu'ah
+nekaveh | lamishpat | va'ayin
+lishu'ah
 rachakah | mimenu
 
 59:12
 ki | rabu | fesha'einu | negdekha
 vechatoteinu
-anetah | banu | ki | fesha'einu | itanu
+anetah | banu
+ki | fesha'einu | itanu
 va'avonoteinu
 yeda'anum
 
 59:13
 pashoa | vekhachesh | Bayahweh
-venasog | me'achar | eloheinu
+venasog
+me'achar | eloheinu
 daber | oshek | vesarah
 horo | vehogo | milev
 divrei | shaker
 
 59:14
 vehusag | achor | mishpat
-utzedakah | merachok | ta'amod | ki | khashelah | varechov | emet | unekhochah
-lo | tukhal | lavo
+utzedakah
+merachok | ta'amod
+ki | khashelah | varechov | emet | unekhochah | lo | tukhal | lavo
 
 59:15
 vatehi | ha'emet | ne'deret
@@ -92,15 +100,14 @@ ki | ein | mishpat
 59:16
 vaiyar | ki | ein | ish
 vaiyishtomem
-ki | ein | mafgia
-vatoosha | lo | zero'o
+ki | ein | mafgia | vatoosha | lo | zero'o
 vetzidkato
 hi | semakhatehu
 
 59:17
 vaiyilbash | tzedakah | kashiryan
-vekhoa | yeshu'ah | berosho
-vaiyilbash | bigdei | nakam | tilboshet
+vekhoa | yeshu'ah
+berosho | vaiyilbash | bigdei | nakam | tilboshet
 vaiya'at | kam'il
 kin'ah
 
@@ -114,7 +121,8 @@ gemul | yeshalem
 59:19
 veyire'u | mima'arav | et | shem | Yahweh
 umimizrach | shemesh
-et | kevodo | ki | yavo | khanahar | tzar
+et | kevodo
+ki | yavo | khanahar | tzar
 ruach | Yahweh
 nosesah | vo
 
@@ -129,5 +137,4 @@ ruchi | asher | aleikha
 udevarai
 asher | samti | befikha
 lo | yamushu | mipikha | umipi | zar'akha | umipi | zera | zar'akha | amar | Yahweh
-me'atah
-ve'ad | olam
+me'atah | ve'ad | olam

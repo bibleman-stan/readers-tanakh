@@ -1,8 +1,10 @@
 6:1
 vaiyomer | Yahweh | el | Mosheh
 atah | tir'eh | asher | e'eseh
-lefar'oh | ki | veyad | chazakah | yeshalechem | uveyad | chazakah
-yegareshem | me'artzo
+lefar'oh
+ki | veyad | chazakah | yeshalechem
+uveyad | chazakah | yegareshem
+me'artzo
 
 6:2
 vaydaber | elohim
@@ -12,13 +14,14 @@ ani | Yahweh
 
 6:3
 va'era | el | Avraham | el | Yitzchak | ve'el | Ya'ako | be'el | Shadai
-ushemi | Yahweh | lo | Noda'ti | lahem
+ushemi | Yahweh
+lo | Noda'ti
+lahem
 
 6:4
 vegam | hakimoti | et | beriti | itam | latet | lahem
 et | eretz | Kena'an
-et | eretz | megureihem
-asher | garu | vah
+et | eretz | megureihem | asher | garu | vah
 
 6:5
 vegam | ani | shama'ti | et | na'akat | benei | Yisra'el | asher | Mitzrayim
@@ -29,26 +32,27 @@ et | beriti
 6:6
 lakhen | emor | livnei | Yisra'el | ani | Yahweh
 vehotzeti | etkhem | mitachat | sivlot | Mitzrayim
-vehitzalti | etkhem | me'avodatam
-vega'alti | etkhem | bizroa | netuyah | uvishfatim
+vehitzalti | etkhem
+me'avodatam | vega'alti | etkhem | bizroa | netuyah
+uvishfatim
 gedolim
 
 6:7
 velakachti | etkhem | li | le'am
 vehayiti | lakhem | lelohim
 vida'tem | ki | ani | Yahweh | eloheikhem
-hamotzi | etkhem | mitachat
-sivlot | Mitzrayim
+hamotzi | etkhem
+mitachat | sivlot | Mitzrayim
 
 6:8
 veheveti | etkhem | el | ha'aretz | asher | nasati | et | yadi
 latet | otah | Le'avraham | Leyitzchak | Uleya'ako
-venatati | otah | lakhem | morashah
-ani | Yahweh
+venatati | otah | lakhem | morashah | ani | Yahweh
 
 6:9
 vaydaber | Mosheh | ken
-el | benei | Yisra'el | velo | shame'u | el | Mosheh | mikotzer | ruach | ume'avodah
+el | benei | Yisra'el
+velo | shame'u | el | Mosheh | mikotzer | ruach | ume'avodah
 kashah
 
 6:10
@@ -83,7 +87,8 @@ eleh | mishpechot | Re'uven
 
 6:15
 uvenei | Shim'on | Yemu'el | Veyamin | Ve'ohad | Veyakhin | Vetzochar
-Vesha'ul | ben | hakena'anit
+Vesha'ul
+ben | hakena'anit
 eleh | mishpechot | Shim'on
 
 6:16
@@ -119,8 +124,7 @@ sheva | usheloshim | ume'at
 shanah
 
 6:21
-uvenei
-Yitzhar
+uvenei | Yitzhar
 Korach | Vanefeg
 Vezikhri
 
@@ -137,8 +141,7 @@ et | El'azar
 ve'et | Itamar
 
 6:24
-uvenei | Korach
-Asir | Ve'elkanah
+uvenei | Korach | Asir | Ve'elkanah
 Va'avi'asaf
 eleh | mishpechot | hakarechi
 
@@ -146,7 +149,8 @@ eleh | mishpechot | hakarechi
 Ve'el'azar | ben | Aharon | lakach | lo | mibenot | Puti'el | lo | le'ishah
 vateled | lo
 et | Pinchas
-eleh | rashei | avot | halviyim | lemishpechotam
+eleh | rashei | avot | halviyim
+lemishpechotam
 
 6:26
 hu | Aharon
@@ -155,8 +159,8 @@ hotzi'u | et | benei | Yisra'el | me'eretz | Mitzrayim
 al | tziv'otam
 
 6:27
-hem | hamdaberim | el | par'oh | melekh | Mitzrayim | lehotzi | et | benei | Yisra'el | Mimitzrayim
-hu | Mosheh
+hem | hamdaberim | el | par'oh | melekh | Mitzrayim | lehotzi | et | benei | Yisra'el
+Mimitzrayim | hu | Mosheh
 Ve'aharon
 
 6:28

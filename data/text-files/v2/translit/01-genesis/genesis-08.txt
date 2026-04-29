@@ -17,8 +17,7 @@ min | hashamayim
 vaiyashuvu | hamayim | me'al | ha'aretz
 halokh | vashov
 vaiyachseru | hamayim
-miktzeh
-chamishim | ume'at
+miktzeh | chamishim | ume'at
 yom
 
 8:4
@@ -35,8 +34,7 @@ rashei | heharim
 
 8:6
 vayhi
-miketz
-arba'im | yom
+miketz | arba'im | yom
 vaiyiftach | Noach
 et | chalon | hatevah | asher | asah
 
@@ -48,13 +46,12 @@ ad | yevoshet | hamayim | me'al | ha'aretz
 
 8:8
 vayshalach | et | haiyonah
-me'ito
-lir'ot | hakalu | hamayim | me'al
+me'ito | lir'ot | hakalu | hamayim | me'al
 penei | ha'adamah
 
 8:9
-velo | matze'ah | haiyonah | manoach | lekhaf | raglah | vatashov | elav | el | hatevah | ki | mayim
-al | penei | khol | ha'aretz
+velo | matze'ah | haiyonah | manoach | lekhaf | raglah | vatashov | elav | el | hatevah
+ki | mayim | al | penei | khol | ha'aretz
 vaiyishlach | yado | vaiyikacheha
 vaiyave | otah | elav
 el | hatevah
@@ -100,8 +97,7 @@ vaydaber | elohim
 el | Noach | lemor
 
 8:16
-tze | min | hatevah
-atah
+tze | min | hatevah | atah
 ve'ishtekha | uvaneikha | uneshei | vaneikha
 itakh
 
@@ -118,9 +114,10 @@ uvanav | ve'ishto | uneshei | vanav
 ito
 
 8:19
-kol | hachaiyah | kol | haremes | vekhol | ha'of | kol
-romes | al | ha'aretz | lemishpechoteihem
-yatze'u | min | hatevah
+kol | hachaiyah | kol | haremes | vekhol | ha'of
+kol | romes | al | ha'aretz | lemishpechoteihem
+yatze'u
+min | hatevah
 
 8:20
 vaiyiven | Noach | mizbeach
@@ -136,6 +133,7 @@ ki | yetzer | lev | ha'adam | ra
 mine'urav | velo | osif | od | lehakot | et | kol | chai | ka'asher | asiti
 
 8:22
-od | kol | yemei | ha'aretz
+od
+kol | yemei | ha'aretz
 zera | vekatzir | vekor | vachom | vekayitz | vachoref | veyom | valaylah
 lo | yishbotu

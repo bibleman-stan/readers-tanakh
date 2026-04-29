@@ -1,6 +1,5 @@
 53:1
-mi | he'emin | lishmu'atenu
-uzeroa | Yahweh
+mi | he'emin | lishmu'atenu | uzeroa | Yahweh
 al | mi | Niglatah
 
 53:2
@@ -12,16 +11,16 @@ venechmedehu
 
 53:3
 nivzeh | vachadal | ishim
-ish | makh'ovot
-vidua | choli
-ukhemaster | panim | mimenu
-nivzeh | velo | chashavnuhu
+ish | makh'ovot | vidua | choli
+ukhemaster | panim | mimenu | nivzeh
+velo | chashavnuhu
 
 53:4
 akhen | cholayenu | hu | nasa | umakh'oveinu
 sevalam
 va'anachnu | chashavnuhu
-nagua | mukeh | elohim | ume'uneh
+nagua | mukeh | elohim
+ume'uneh
 
 53:5
 vehu | mecholal | mipesha'enu | meduka | me'avonoteinu | musar | shelomenu | alav
@@ -36,16 +35,20 @@ Vayahweh | hifgia | bo | et
 avon | kulanu
 
 53:7
-Nigas | vehu | na'aneh | velo | yiftach | piv | kaseh | latevach | yuval
+Nigas | vehu | na'aneh | velo | yiftach | piv
+kaseh | latevach | yuval
 ukherachel
 lifnei | gozezeiha
-Ne'elamah | velo | yiftach
+Ne'elamah
+velo | yiftach
 piv
 
 53:8
 me'otzer | umimishpat | lukach
-ve'et | doro | mi | yesocheach
-ki | Nigzar | me'eretz | chaiyim | mipesha | ami
+ve'et | doro
+mi | yesocheach
+ki | Nigzar | me'eretz | chaiyim
+mipesha | ami
 nega | lamo
 
 53:9
@@ -59,10 +62,12 @@ Vayahweh | chafetz | dake'o | hecheli
 im | tasim | asham | nafsho
 yir'eh | zera
 ya'arikh | yamim
-vechefetz | Yahweh | beyado | yitzlach
+vechefetz | Yahweh
+beyado | yitzlach
 
 53:11
-me'amal | nafsho | yir'eh | yisba | beda'to | yatzdik | tzadik | avdi
+me'amal | nafsho | yir'eh | yisba
+beda'to | yatzdik | tzadik | avdi
 larabim
 va'avonotam
 hu | yisbol

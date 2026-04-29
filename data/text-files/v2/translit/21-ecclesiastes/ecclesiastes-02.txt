@@ -6,21 +6,20 @@ vehineh | gam | hu
 havel
 
 2:2
-lischok
-amarti | meholal | ulesimchah
-mah | zoh | osah
+lischok | amarti | meholal
+ulesimchah | mah | zoh | osah
 
 2:3
 tarti | velibi
 limshokh | baiyayin
 et | besari | velibi | noheg | bachakhemah | vele'echoz | besikhlut
 ad | asher | er'eh | ei | zeh | tov | livnei | ha'adam | asher | ya'asu | tachat | hashamayim
-mispar
-yemei | chaiyeihem
+mispar | yemei | chaiyeihem
 
 2:4
 higdalti | ma'asai | baniti | li | batim
-nata'ti | li | keramim
+nata'ti | li
+keramim
 
 2:5
 asiti | li
@@ -42,8 +41,7 @@ mikol | shehayu | lefanai | Birushalim
 
 2:8
 kanasti | li | gam | kesef | vezahav
-usegulat | melakhim
-vehamedinot
+usegulat | melakhim | vehamedinot
 asiti | li | sharim | vesharot | veta'anugot | benei | ha'adam
 shidah | veshidot
 
@@ -54,32 +52,35 @@ amedah | li
 
 2:10
 vekhol | asher | sha'alu | einai
-lo | atzalti | mehem
-lo | mana'ti | et | libi | mikol | simchah | ki | libi | sameach | mikol | amali
+lo | atzalti
+mehem | lo | mana'ti | et | libi | mikol | simchah | ki | libi | sameach | mikol | amali
 vezeh | hayah | chelki | mikol | amali
 
 2:11
 ufaniti | ani | bekhol | ma'asai | she'asu | yadai | uve'amal
 she'amalti | la'asot
 vehineh | hakol | hevel | ure'ut | ruach
-ve'ein | yitron | tachat | hashamesh
+ve'ein | yitron
+tachat | hashamesh
 
 2:12
 ufaniti | ani | lir'ot | chokhmah
 veholelot
-vesikhlut | ki | meh | ha'adam | sheiyavo | acharei | hamelekh
-et | asher | kevar
+vesikhlut
+ki | meh | ha'adam | sheiyavo | acharei | hamelekh | et | asher | kevar
 asuhu
 
 2:13
 vera'iti | ani
-sheiyesh | yitron | lachakhemah | min | hasikhlut | kitron | ha'or | min | hachoshekh
+sheiyesh | yitron | lachakhemah
+min | hasikhlut | kitron | ha'or | min | hachoshekh
 
 2:14
 hechakham | einav | berosho
 vehakesil | bachoshekh | holekh
 veyada'ti | gam | ani
-shemikreh | echad | yikreh | et | kulam
+shemikreh | echad
+yikreh | et | kulam
 
 2:15
 ve'amarti | ani | belibi | kemikreh | hakesil | gam | ani | yikreni
@@ -91,13 +92,16 @@ havel
 
 2:16
 ki | ein | zikhron | lechakham | im | hakesil
-le'olam | beshekevar | haiyamim | haba'im | hakol | Nishkach
+le'olam
+beshekevar | haiyamim | haba'im | hakol | Nishkach
 ve'eikh | yamut | hechakham
 im | hakesil
 
 2:17
-vesaneti | et | hachaiyim | ki | ra | alai | hama'aseh
-Shena'asah | tachat | hashamesh | ki | hakol | hevel
+vesaneti | et | hachaiyim
+ki | ra | alai | hama'aseh
+Shena'asah | tachat | hashamesh
+ki | hakol | hevel
 ure'ut | ruach
 
 2:18
@@ -139,8 +143,8 @@ hevel | hu
 2:24
 ein | tov | ba'adam | sheiyokhal | veshatah
 veher'ah | et | nafsho | tov | ba'amalo
-gam | zoh | ra'iti | ani | ki | miyad | ha'elohim
-hi
+gam | zoh | ra'iti | ani
+ki | miyad | ha'elohim | hi
 
 2:25
 ki | mi | yokhal | umi | yachush

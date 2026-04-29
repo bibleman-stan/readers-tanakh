@@ -41,8 +41,7 @@ ki | marah | nefesh | kol | ha'am
 ish
 al | benov | ve'al | benotav
 vaiyitchazek | David
-Bayahweh
-elohav
+Bayahweh | elohav
 
 30:7
 vaiyomer | David | el | Evyatar | hakohen | ben | Achimelekh
@@ -71,8 +70,7 @@ vaiyirdof | David
 hu
 ve'arba | me'ot | ish
 vaiya'amdu | matayim | ish | asher | pigeru
-me'avor
-et | nachal | Habesor
+me'avor | et | nachal | Habesor
 
 30:11
 vaiyimtze'u | ish | mitzri | basadeh
@@ -85,7 +83,8 @@ mayim
 30:12
 vaiyitenu | lo | felach | develah | ushenei | tzimukim | vaiyokhal
 vatashov | rucho
-elav | ki | lo | akhal | lechem | velo | shatah | mayim
+elav
+ki | lo | akhal | lechem | velo | shatah | mayim
 sheloshah | yamim
 usheloshah | leilot
 
@@ -113,7 +112,8 @@ el | hagedud | hazeh
 
 30:16
 vaiyoridehu
-vehineh | netushim | al | penei | khol | ha'aretz
+vehineh | netushim
+al | penei | khol | ha'aretz
 okhelim | veshotim | vechogegim | bekhol | hashalal | hagadol
 asher | lakechu | me'eretz | pelishtim
 ume'eretz | Yehudah
@@ -173,7 +173,8 @@ beyadenu
 30:24
 umi | yishma | lakhem
 ladavar
-hazeh | ki | kechelek | haiyored | bamilchamah | ukhechelek | haiyoshev | al | hakelim
+hazeh
+ki | kechelek | haiyored | bamilchamah | ukhechelek | haiyoshev | al | hakelim
 yachdav | yachaloku
 
 30:25
@@ -187,8 +188,7 @@ haiyom | hazeh
 vaiyavo | David | el | Tziklag
 vayshalach | mehashalal | leziknei | Yehudah
 lere'ehu | lemor
-hineh | lakhem | berakhah | mishelal
-oyevei | Yahweh
+hineh | lakhem | berakhah | mishelal | oyevei | Yahweh
 
 30:27
 la'asher | Beveit | El | vela'asher | Beramot | Negev | vela'asher | Beyatir

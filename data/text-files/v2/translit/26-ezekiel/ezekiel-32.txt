@@ -6,8 +6,8 @@ elai | lemor
 
 32:2
 ben | adam | sa | kinah | al | par'oh | melekh | Mitzrayim
-ve'amarta | elav | kefir | goyim
-Nidmeita
+ve'amarta | elav
+kefir | goyim | Nidmeita
 ve'atah | katanim | baiyamim
 vatagach | benaharoteikha | vatidlach | mayim | beragleikha
 vatirpos
@@ -32,8 +32,7 @@ al | heharim | umileti | hage'ayot
 ramutekha
 
 32:6
-vehishkeiti | eretz | tzafatekha | midamekha
-el | heharim
+vehishkeiti | eretz | tzafatekha | midamekha | el | heharim
 va'afikim
 yimal'un | mimeka
 
@@ -66,23 +65,26 @@ vecharedu | lirga'im | ish | lenafsho | beyom | mapaltekha
 32:11
 ki | koh | amar
 Adonai | Yahweh
-cherev | melekh | Bavel
-tevo'ekha
+cherev | melekh | Bavel | tevo'ekha
 
 32:12
 becharvot | giborim | apil | hamonekha
-aritzei | goyim | kulam
+aritzei | goyim
+kulam
 veshadedu | et | ge'on | Mitzrayim
-venishmad | kol | hamonah
+venishmad
+kol | hamonah
 
 32:13
 veha'avadti | et | kol | behemtah | me'al | mayim | rabim
 velo | tidlachem | regel | adam | od
-ufarsot | behemah | lo | tidlachem
+ufarsot | behemah
+lo | tidlachem
 
 32:14
 az | ashkia | meimeihem
-venaharotam | kashemen | olikh
+venaharotam
+kashemen | olikh
 ne'um
 Adonai | Yahweh
 
@@ -112,15 +114,13 @@ otah | uvenot | goyim | adirim | el | eretz | tachtiyot
 et | yordei | vor
 
 32:19
-mimi
-na'ameta
+mimi | na'ameta
 redah | vehashekevah
 et | arelim
 
 32:20
-betokh | chalei | cherev
-yipolu
-cherev | Nitanah | mashekhu | otah
+betokh | chalei | cherev | yipolu | cherev | Nitanah
+mashekhu | otah
 vekhol | hamoneiha
 
 32:21
@@ -132,14 +132,16 @@ chalei | charev
 32:22
 sham | Ashur | vekhol | kehalah
 sevivotav
-kivrotav | kulam | chalalim
+kivrotav
+kulam | chalalim
 hanofelim | becharev
 
 32:23
 asher | Nitenu | kivroteiha | beyarketei | vor
 vayhi | kehalah
 sevivot
-kevuratah | kulam | chalalim | nofelim | bacherev
+kevuratah
+kulam | chalalim | nofelim | bacherev
 asher | natenu | chitit | be'eretz | chaiyim
 
 32:24
@@ -160,7 +162,8 @@ betokh | chalalim | nitan
 32:26
 sham | Meshekh | Tuval | vekhol | hamonah
 sevivotav
-kivroteiha | kulam | arelim | mechulei | cherev
+kivroteiha
+kulam | arelim | mechulei | cherev
 ki | natenu | chititam | be'eretz | chaiyim
 
 32:27

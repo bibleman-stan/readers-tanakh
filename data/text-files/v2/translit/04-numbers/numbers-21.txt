@@ -29,8 +29,8 @@ vatiktzar | nefesh | ha'am | badarekh
 
 21:5
 vaydaber | ha'am | belohim | Uvemosheh
-lamah | he'elitunu | Mimitzrayim
-lamut | bamidbar | ki | ein | lechem | ve'ein | mayim
+lamah | he'elitunu | Mimitzrayim | lamut | bamidbar
+ki | ein | lechem | ve'ein | mayim
 venafshenu | katzah | balechem
 hakelokel
 
@@ -67,30 +67,31 @@ vachai
 
 21:10
 vaiyis'u
-benei | Yisra'el | vaiyachanu
+benei | Yisra'el
+vaiyachanu
 Be'ovot
 
 21:11
 vaiyis'u
 Me'ovot
 vaiyachanu | Be'iyei | Ha'avarim | bamidbar | asher | al | penei | Mo'av
-mimizrach
-hashamesh
+mimizrach | hashamesh
 
 21:12
-misham
-nasa'u
-vaiyachanu
+misham | nasa'u | vaiyachanu
 benachal | Zared
 
 21:13
 misham | nasa'u
 vaiyachanu | me'ever | Arnon | asher | bamidbar
 haiyotze | migevul | ha'emori
-ki | Arnon | gevul | Mo'av | bein | Mo'av | uvein | ha'emori
+ki | Arnon | gevul | Mo'av
+bein | Mo'av | uvein | ha'emori
 
 21:14
-al | ken | ye'amar | besefer | milchamot | Yahweh
+al | ken | ye'amar
+besefer
+milchamot | Yahweh
 et | Vahev | Besufah
 ve'et | hanechalim
 Arnon
@@ -115,12 +116,12 @@ ali | ve'er
 enu | lah
 
 21:18
-be'er | chafaruha | sarim | karuha | nedivei | ha'am | bimchokek | bemish'anotam
-umimidbar | Matanah
+be'er | chafaruha | sarim | karuha | nedivei | ha'am
+bimchokek | bemish'anotam | umimidbar | Matanah
 
 21:19
-Umimatanah
-Nachali'el | Uminachali'el | Bamot
+Umimatanah | Nachali'el
+Uminachali'el | Bamot
 
 21:20
 Umibamot | hagay | asher | bisdeh | Mo'av
@@ -130,11 +131,11 @@ venishkafah | al | penei | hayshimon
 
 21:21
 vaiyishlach | Yisra'el | mal'akhim
-el | Sichon | melekh | ha'emori
-lemor
+el | Sichon | melekh | ha'emori | lemor
 
 21:22
-e'berah | ve'artzekha | lo | niteh | besadeh | uvekherem | lo | nishteh
+e'berah | ve'artzekha | lo | niteh | besadeh | uvekherem
+lo | nishteh
 mei | ve'er | bederekh | hamelekh | nelekh
 ad | asher | na'avor
 gevulekha
@@ -162,8 +163,7 @@ Becheshbon | uvekhol | benoteiha
 
 21:26
 ki | Cheshbon
-ir | Sichon | melekh | ha'emori
-hi
+ir | Sichon | melekh | ha'emori | hi
 vehu | Nilcham | bemelekh | Mo'av | harishon
 vaiyikach | et | kol | artzo | miyado
 ad | Arnon
@@ -174,8 +174,11 @@ tibaneh | vetikonen
 ir | Sichon
 
 21:28
-ki | esh | yatze'ah | Mecheshbon | lehavah | mikiryat | Sichon
-akhelah | Ar | Mo'av | ba'alei | bamot | Arnon
+ki | esh | yatze'ah | Mecheshbon
+lehavah | mikiryat | Sichon
+akhelah | Ar | Mo'av
+ba'alei
+bamot | Arnon
 
 21:29
 o | lekha | Mo'av

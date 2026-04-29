@@ -15,8 +15,8 @@ imakhem
 18:3
 vaiyomer | ha'am | lo | tetze | ki | im | nos | nanus | lo | yasimu | eleinu | lev | ve'im | yamutu | chetzyenu | lo | yasimu | eleinu | lev
 ki | atah | khamonu
-asarah | alafim | ve'atah | tov | ki | tihyeh | lanu | me'ir
-la'zir
+asarah | alafim | ve'atah | tov
+ki | tihyeh | lanu | me'ir | la'zir
 
 18:4
 vaiyomer | aleihem | hamelekh
@@ -36,7 +36,8 @@ al | devar | Avshalom
 18:6
 vaiyetze | ha'am | hasadeh
 likrat | Yisra'el
-vatehi | hamilchamah | beya'ar | Efrayim
+vatehi | hamilchamah
+beya'ar | Efrayim
 
 18:7
 vaiyinagefu | sham | am | Yisra'el
@@ -46,9 +47,11 @@ vatehi | sham | hamagefah | gedolah | baiyom | hahu
 esrim | alef
 
 18:8
-vatehi | sham | hamilchamah | nafotzeit | al | penei | khol | ha'aretz
+vatehi | sham | hamilchamah | nafotzeit
+al | penei | khol | ha'aretz
 vaiyerev | haiya'ar | le'ekhol | ba'am
-me'asher | akhelah | hacherev | baiyom | hahu
+me'asher | akhelah | hacherev
+baiyom | hahu
 
 18:9
 vaiyikare | Avshalom
@@ -62,7 +65,8 @@ avar
 vaiyar | ish | echad
 vaiyaged
 Leyo'av | vaiyomer | hineh | ra'iti | et | Avshalom
-talui | ba'elah
+talui
+ba'elah
 
 18:11
 vaiyomer | Yo'av | la'ish | hamagid | lo
@@ -81,8 +85,7 @@ shimru | mi | bana'ar | Be'avshalom
 
 18:13
 o | asiti | venafshi | sheker
-vekhol | davar | lo | yikached | min | hamelekh
-ve'atah
+vekhol | davar | lo | yikached | min | hamelekh | ve'atah
 tityatzev | mineged
 
 18:14
@@ -95,29 +98,29 @@ belev | ha'elah
 
 18:15
 vaiyasobu | asarah | ne'arim
-nose'ei | kelei | Yo'av
+nose'ei
+kelei | Yo'av
 vaiyaku | et | Avshalom
 vaymituhu
 
 18:16
 vaiyitka | Yo'av | bashofar
 vaiyasho | ha'am
-mirdof | acharei | Yisra'el | ki | chasakh | Yo'av
+mirdof | acharei | Yisra'el
+ki | chasakh | Yo'av
 et | ha'am
 
 18:17
 vaiyikchu | et | Avshalom | vaiyashlikhu | oto | vaiya'ar | el | hapachat | hagadol
 vaiyatzivu | alav | gal | avanim
-gadol | me'od
-vekhol | Yisra'el
+gadol | me'od | vekhol | Yisra'el
 nasu
 ish | le'ohelo
 
 18:18
 Ve'avshalom | lakach | vaiyatzev | lo | vechayav | et | matzevet | asher | be'emek | hamelekh
 ki | amar | ein | li | ven
-ba'avur
-hazkir | shemi
+ba'avur | hazkir | shemi
 vaiyikra | lamatzevet | al | shemo
 vaiyikare | lah | yad | Avshalom
 ad
@@ -127,12 +130,15 @@ haiyom | hazeh
 Va'achima'atz | ben | Tzadok | amar
 arutzah | na
 va'avaserah
-et | hamelekh | ki | shefato | Yahweh | miyad | oyevav
+et | hamelekh
+ki | shefato | Yahweh
+miyad | oyevav
 
 18:20
 vaiyomer | lo | Yo'av | lo | ish | besorah | atah | haiyom | hazeh
 uvisarta | beyom | acher
-vehaiyom | hazeh | lo | tevaser | ki | [—] | al-ken | ben | hamelekh
+vehaiyom | hazeh | lo | tevaser
+ki | [—] | al-ken | ben | hamelekh
 met
 
 18:21
@@ -144,7 +150,8 @@ vaiyarotz
 18:22
 vaiyosef | od | Achima'atz | ben | Tzadok | vaiyomer | el | Yo'av
 vihi | mah
-arutzah | na | gam | ani | acharei | hakushi
+arutzah | na | gam | ani
+acharei | hakushi
 vaiyomer | Yo'av | lamah | zeh | atah | ratz | beni
 ulekhah
 ein | besorah | motzet
@@ -158,7 +165,8 @@ vaiya'avor
 et | hakushi
 
 18:24
-Vedavid | yoshev | bein | shenei | hashe'arim
+Vedavid | yoshev
+bein | shenei | hashe'arim
 vaiyelekh | hatzopeh | el | gag | hasha'ar | el | hachomah
 vaiyisa | et | einav | vaiyar
 vehineh | ish
@@ -182,8 +190,7 @@ gam | zeh | mevaser
 
 18:27
 vaiyomer | hatzopeh
-ani | ro'eh | et | merutzat | harishon
-kimrutzat
+ani | ro'eh | et | merutzat | harishon | kimrutzat
 Achima'atz | ben | Tzadok
 vaiyomer | hamelekh | ish | tov | zeh
 ve'el | besorah | tovah
@@ -200,7 +207,8 @@ asher | nase'u | et | yadam | badoni | hamelekh
 vaiyomer | hamelekh
 shalom | lana'ar | Le'avshalom
 vaiyomer | Achima'atz | ra'iti | hehamon | hagadol | lishloach | et | eved | hamelekh | Yo'av | ve'et | avdekha
-velo | yada'ti | mah
+velo | yada'ti
+mah
 
 18:30
 vaiyomer | hamelekh
@@ -213,7 +221,9 @@ vaiya'amod
 vehineh | hakushi
 ba
 vaiyomer | hakushi | yitbaser | adoni | hamelekh
-ki | shefatekha | Yahweh | haiyom | miyad | kol | hakamim | aleikha
+ki | shefatekha | Yahweh | haiyom
+miyad
+kol | hakamim | aleikha
 
 18:32
 vaiyomer | hamelekh | el | hakushi

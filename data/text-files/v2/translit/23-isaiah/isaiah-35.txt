@@ -13,8 +13,8 @@ hadar | eloheinu
 
 35:3
 chazeku
-yadayim | rafot | uvirkayim | koshelot
-ametzu
+yadayim | rafot
+uvirkayim | koshelot | ametzu
 
 35:4
 imru | lenimharei | lev
@@ -34,12 +34,14 @@ tipatachnah
 35:6
 az | yedaleg | ka'aiyal | piseach
 vetaron
-leshon | ilem | ki | Nivke'u | vamidbar | mayim
+leshon | ilem
+ki | Nivke'u | vamidbar | mayim
 unechalim | ba'aravah
 
 35:7
 vehayah | hasharav | la'agam
-vetzima'on | lemabu'ei | mayim | binveh | tanim | rivtzah
+vetzima'on | lemabu'ei | mayim
+binveh | tanim | rivtzah
 chatzir
 lekaneh | vagome
 
@@ -51,7 +53,8 @@ holekh | derekh | ve'evilim
 lo | yit'u
 
 35:9
-lo | yihyeh | sham | aryeh | uferitz | chaiyot | bal | ya'alenah | lo | timatze
+lo | yihyeh | sham | aryeh | uferitz | chaiyot | bal | ya'alenah
+lo | timatze
 sham
 vehalekhu
 ge'ulim

@@ -8,8 +8,7 @@ shamah
 39:2
 vayhi | Yahweh | et | Yosef
 vayhi
-ish | matzliach
-vayhi
+ish | matzliach | vayhi
 beveit | adonav
 hamitzri
 
@@ -18,7 +17,8 @@ vaiyar | adonav
 ki | Yahweh
 ito
 vekhol | asher | hu | oseh
-Yahweh | matzliach | beyado
+Yahweh
+matzliach | beyado
 
 39:4
 vaiyimtza | Yosef | chen | be'einav
@@ -52,8 +52,7 @@ shikhvah | imi
 39:8
 vayma'en | vaiyomer | el | eshet | adonav
 hen | adoni
-lo | yada | iti | mah | babayit
-vekhol | asher | yesh | lo
+lo | yada | iti | mah | babayit | vekhol | asher | yesh | lo
 natan | beyadi
 
 39:9
@@ -65,7 +64,9 @@ vechatati | lelohim
 39:10
 vayhi
 kedaberah | el | Yosef
-yom | yom | velo | shama | eleiha | lishkav | etzlah | lihyot | imah
+yom | yom
+velo | shama | eleiha | lishkav | etzlah
+lihyot | imah
 
 39:11
 vayhi | kehaiyom | hazeh
@@ -108,8 +109,10 @@ ad | bo | adonav
 el | beito
 
 39:17
-vatedaber | elav | kadevarim | ha'eleh
-lemor | ba | elai | ha'eved | ha'ivri | asher | heveta | lanu
+vatedaber | elav
+kadevarim | ha'eleh
+lemor
+ba | elai | ha'eved | ha'ivri | asher | heveta | lanu
 letzachek | bi
 
 39:18
@@ -142,7 +145,8 @@ be'einei
 sar | beit | hasohar
 
 39:22
-vaiyiten | sar | beit | hasohar | beyad | Yosef | et | kol | ha'asirim | asher | beveit | hasohar
+vaiyiten | sar | beit | hasohar | beyad | Yosef | et | kol | ha'asirim
+asher | beveit | hasohar
 ve'et | kol | asher | osim | sham
 hu
 hayah | oseh

@@ -11,28 +11,24 @@ o | nefesh | asher | tiga | bekhol | davar | tame
 o | venivlat | chaiyah | teme'ah | o | benivlat | behemah | teme'ah
 o | benivlat
 sheretz | tame
-vene'lam | mimenu
-vehu | tame
+vene'lam | mimenu | vehu | tame
 ve'ashem
 
 5:3
 o | khi | yiga | betum'at | adam | lekhol | tum'ato
 asher | yitma
 bah
-vene'lam | mimenu
-vehu | yada
+vene'lam | mimenu | vehu | yada
 ve'ashem
 
 5:4
 o | nefesh | ki | tishava | levate | visfatayim | lehara | o | leheitiv | lekhol | asher | yevate | ha'adam | bishvu'ah
-vene'lam | mimenu
-vehu | yada | ve'ashem
+vene'lam | mimenu | vehu | yada | ve'ashem
 le'achat | me'eleh
 
 5:5
 vehayah | khi | ye'sham
-le'achat | me'eleh
-vehitvadah | asher | chata
+le'achat | me'eleh | vehitvadah | asher | chata
 aleiha
 
 5:6
@@ -49,7 +45,8 @@ ve'echad | le'olah
 5:8
 vehevi | otam | el | hakohen
 vehikriv | et | asher | lachatat
-rishonah | umalak | et | rosho | mimul | arepo | velo | yavdil
+rishonah | umalak | et | rosho | mimul | arepo
+velo | yavdil
 
 5:9
 vehizah | midam | hachatat | al | kir | hamizbeach
@@ -90,8 +87,7 @@ el | Mosheh | lemor
 
 5:15
 nefesh | ki | tim'ol | ma'al
-vechate'ah | bishgagah | mikadeshei
-Yahweh
+vechate'ah | bishgagah | mikadeshei | Yahweh
 vehevi | et | ashamo | Layahweh | ayil | tamim | min | hatzon | be'erkekha | kesef | shekalim | beshekel | hakodesh
 le'asham
 
@@ -104,7 +100,8 @@ venislach | lo
 
 5:17
 ve'im | nefesh | ki | techeta
-ve'asetah | achat | mikol | mitzvot | Yahweh | asher | lo | te'aseinah | velo | yada | ve'ashem
+ve'asetah | achat | mikol | mitzvot | Yahweh | asher | lo | te'aseinah
+velo | yada | ve'ashem
 venasa | avono
 
 5:18
@@ -124,7 +121,8 @@ vaydaber | Yahweh
 el | Mosheh | lemor
 
 5:21
-nefesh | ki | techeta | uma'alah | ma'al | Bayahweh
+nefesh | ki | techeta
+uma'alah | ma'al | Bayahweh
 vekhichesh | ba'amito | befikadon | ov | vitsumet | yad | o | vegazel
 o
 ashak | et | amito
@@ -147,7 +145,8 @@ o | mikol | asher | yishava | alav | lasheker
 veshilam | oto | berosho
 vachamishitav
 yosef | alav
-la'asher | hu | lo | yitenenu | beyom | ashmato
+la'asher | hu | lo | yitenenu
+beyom | ashmato
 
 5:25
 ve'et | ashamo | yavi

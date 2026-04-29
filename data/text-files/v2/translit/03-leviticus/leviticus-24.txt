@@ -4,8 +4,7 @@ el | Mosheh | lemor
 
 24:2
 tzav | et | benei | Yisra'el | veyikchu | eleikha | shemen | zayit | zakh | katit
-lama'or | leha'alot | ner
-tamid
+lama'or | leha'alot | ner | tamid
 
 24:3
 michutz | lefarokhet | ha'eidut | be'ohel | mo'ed | ya'arokh | oto | Aharon | me'erev | ad | boker | lifnei | Yahweh
@@ -13,8 +12,7 @@ tamid
 chukat | olam | ledoroteikhem
 
 24:4
-al | hamenorah | hatehorah
-ya'arokh
+al | hamenorah | hatehorah | ya'arokh
 et | hanerot
 lifnei | Yahweh
 tamid
@@ -41,7 +39,8 @@ Layahweh
 
 24:8
 beyom | hashabat | beyom | hashabat | ya'arkhenu | lifnei | Yahweh
-tamid | me'et | benei | Yisra'el | berit | olam
+tamid
+me'et | benei | Yisra'el | berit | olam
 
 24:9
 vehaytah | Le'aharon | ulevanav
@@ -78,7 +77,8 @@ el | Mosheh | lemor
 hotze | et | hamkalel | el | michutz | lamachaneh
 vesamekhu | khol | hashome'im | et | yedeihem
 al | rosho
-veragmu | oto | kol | ha'edah
+veragmu | oto
+kol | ha'edah
 
 24:15
 ve'el | benei | Yisra'el
@@ -88,20 +88,23 @@ venasa | chet'o
 
 24:16
 venokev | shem | Yahweh | mot | yumat
-ragom | yirgemu | vo | kol | ha'edah | kager | ka'ezrach | benakvo | shem
+ragom | yirgemu | vo
+kol | ha'edah | kager | ka'ezrach | benakvo | shem
 yumat
 
 24:17
-ve'ish | ki | yakeh | kol | nefesh | adam | mot
+ve'ish
+ki | yakeh
+kol | nefesh | adam | mot
 yumat
 
 24:18
-umakeh | nefesh | behemah
-yeshallemenah
+umakeh | nefesh | behemah | yeshallemenah
 nefesh | tachat | nafesh
 
 24:19
-ve'ish | ki | yiten | mum | ba'amito
+ve'ish
+ki | yiten | mum | ba'amito
 ka'asher | asah
 ken
 ye'aseh | lo
@@ -109,18 +112,17 @@ ye'aseh | lo
 24:20
 shever | tachat | shever
 ayin | tachat | ayin
-shen | tachat | shen | ka'asher | yiten | mum | ba'adam | ken
+shen | tachat | shen | ka'asher | yiten | mum | ba'adam
+ken
 yinaten | bo
 
 24:21
-umakeh | vehemah
-yeshallemenah | umakeh | adam
-yumat
+umakeh | vehemah | yeshallemenah | umakeh | adam | yumat
 
 24:22
-mishpat | echad | yihyeh | lakhem | kager | ka'ezrach
-yihyeh | ki | ani | Yahweh
-eloheikhem
+mishpat | echad | yihyeh | lakhem
+kager | ka'ezrach | yihyeh
+ki | ani | Yahweh | eloheikhem
 
 24:23
 vaydaber | Mosheh | el | benei | Yisra'el

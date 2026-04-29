@@ -4,7 +4,8 @@ el | Yisra'el | beyad | Mal'akhi
 
 1:2
 ahavti | etkhem | amar | Yahweh
-va'amartem | bamah | ahavtanu
+va'amartem
+bamah | ahavtanu
 halo | ach | Esav | Leya'ako | ne'um | Yahweh
 va'ohav
 et | Ya'ako
@@ -28,7 +29,8 @@ ad | olam
 1:5
 ve'eineikhem
 tir'einah
-ve'atem | tomeru | yigdal | Yahweh | me'al
+ve'atem | tomeru | yigdal | Yahweh
+me'al
 ligvul | Yisra'el
 
 1:6
@@ -39,15 +41,13 @@ va'amartem | bameh | vazinu
 et | shemekha
 
 1:7
-magishim | al | mizbechi | lechem | mego'al
-va'amartem | bameh | ge'alnukha | be'emarekhem
+magishim | al | mizbechi | lechem | mego'al | va'amartem | bameh | ge'alnukha | be'emarekhem
 shulchan | Yahweh
 nivzeh | hu
 
 1:8
 vekhi | tagishun | iver | lizboach | ein | ra
-vekhi | tagishu | piseach | vecholeh
-ein | ra
+vekhi | tagishu | piseach | vecholeh | ein | ra
 hakrivehu | na | lefechatekha | hayirtzekha | o | hayisa | faneikha
 amar
 Yahweh | tzeva'ot
@@ -62,20 +62,21 @@ Yahweh | tzeva'ot
 
 1:10
 mi | gam | bakhem | veyisgor | delatayim
-velo | ta'iru | mizbechi
-chinam
+velo | ta'iru | mizbechi | chinam
 ein | li | chefetz | bakhem | amar | Yahweh | tzeva'ot
 uminchah | lo | ertzeh | miyedkhem
 
 1:11
 ki | mimizrach | shemesh | ve'ad | mevo'o | gadol | shemi | bagoyim
-uvekhol | makom | muktar | mugash | lishmi
-uminchah | tehorah | ki | gadol | shemi | bagoyim
+uvekhol | makom | muktar | mugash | lishmi | uminchah | tehorah
+ki | gadol | shemi | bagoyim
 amar
 Yahweh | tzeva'ot
 
 1:12
-ve'atem | mechalelim | oto | be'emarekhem | shulchan | Adonai | mego'al | hu
+ve'atem
+mechalelim | oto
+be'emarekhem | shulchan | Adonai | mego'al | hu
 venivo
 nivzeh | akhelo
 

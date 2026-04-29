@@ -5,10 +5,11 @@ vaiyamod | et | ha'eilim | shesh | amot | rochav | mipo | veshesh | amot | rocha
 rochav | ha'ohel
 
 41:2
-verochav | hapetach | eser | amot | vekhitfot | hapetach
+verochav | hapetach | eser | amot
+vekhitfot | hapetach
 chamesh | amot | mipo
-vechamesh | amot | mipo
-vaiyamod | areko | arba'im | amah
+vechamesh | amot
+mipo | vaiyamod | areko | arba'im | amah
 verochav
 esrim | amah
 
@@ -30,17 +31,21 @@ kodesh | hakodashim
 41:5
 vaiyamod | kir | habayit
 shesh | amot
-verochav | hatzela | arba | amot | saviv | saviv | labayit | saviv
+verochav | hatzela | arba | amot | saviv | saviv | labayit
+saviv
 
 41:6
 vehatzela'ot | tzela | el | tzela | shaloosh | usheloshim | pe'amim | uva'ot | bakir | asher | labayit | latzela'ot | saviv | saviv
-lihyot | achuzim | velo | yihyu | achuzim | bekir | habayit
+lihyot | achuzim
+velo | yihyu | achuzim
+bekir | habayit
 
 41:7
 verachavah | venasevah | lema'lah | lema'lah | latzela'ot | ki | musav | habayit | lema'lah | lema'lah | saviv | saviv | labayit
 al | ken | rochav | labayit
 lema'elah
-vekhen | hatachtonah | ya'aleh | al | ha'elyonah | latikhonah
+vekhen | hatachtonah | ya'aleh | al | ha'elyonah
+latikhonah
 
 41:8
 vera'iti | labayit | goah | saviv | saviv
@@ -62,7 +67,8 @@ ufetach | hatzela | lamunach
 petach | echad | derekh | hatzafon
 ufetach | echad | ladarom
 verochav | mekom | hamunach
-chamesh | amot | saviv | saviv
+chamesh | amot
+saviv | saviv
 
 41:12
 vehabinyan | asher | el | penei | hagizrah | pe'at | derekh | haiyam | rochav | shiv'im | amah
@@ -137,8 +143,8 @@ shetayim | ledelet | echat | ushetei | delatot
 la'acheret
 
 41:25
-va'asuyah | aleihen | el | daltot | haheikhal | keruvim | vetimorim | ka'asher | asuyim
-lakirot
+va'asuyah | aleihen | el | daltot | haheikhal | keruvim | vetimorim
+ka'asher | asuyim | lakirot
 ve'av | etz | el | penei | ha'ulam | mehachutz
 
 41:26

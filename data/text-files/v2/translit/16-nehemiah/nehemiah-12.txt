@@ -26,7 +26,8 @@ Yeda'yah
 Salu | Amok
 Chilkiyah
 Yeda'yah
-eleh | rashei | hakohanim | va'acheihem | bimei | Yeshua
+eleh | rashei | hakohanim | va'acheihem
+bimei | Yeshua
 
 12:8
 vehalviyim | Yeshua | Binui | Kadmi'el | Shereveyah
@@ -35,7 +36,8 @@ al | hyedot
 hu | ve'echav
 
 12:9
-Uvakbukyah | Ve'unov | acheihem | lenegdam | lemishmarot
+Uvakbukyah | Ve'unov | acheihem | lenegdam
+lemishmarot
 
 12:10
 Veyeshua
@@ -57,12 +59,10 @@ Lisrayah | Merayah | Leyirmeyah
 Chananyah
 
 12:13
-Le'ezra | Meshulam | La'amaryah
-Yehochanan
+Le'ezra | Meshulam | La'amaryah | Yehochanan
 
 12:14
-Limlukhi | Yonatan | Lishvanyah
-Yosef
+Limlukhi | Yonatan | Lishvanyah | Yosef
 
 12:15
 Lecharim | Adna | Limrayot
@@ -77,8 +77,7 @@ Zikhri | Leminyamin | Lemo'adyah
 Piltai
 
 12:18
-Levilgah | Shamua | Lishma'yah
-Yehonatan
+Levilgah | Shamua | Lishma'yah | Yehonatan
 
 12:19
 Uleyoyariv | Matenai | Lida'yah
@@ -89,8 +88,7 @@ Lesalai | Kalai
 Le'amok | Ever
 
 12:21
-Lechilkiyah | Chashavyah | Lida'yah
-Netan'el
+Lechilkiyah | Chashavyah | Lida'yah | Netan'el
 
 12:22
 halviyim | bimei | Elyashiv | Yoyada | Veyochanan | Veyadua
@@ -110,36 +108,38 @@ Yochanan | ben | Elyashiv
 12:24
 verashei | halviyim | Chashavyah | Shereveyah | Veyeshua | ben | Kadmi'el | va'acheihem | lenegdam
 lehalel | lehodot | bemitzvat
-David | ish | ha'elohim | mishmar
-le'umat | mishmar
+David | ish | ha'elohim | mishmar | le'umat | mishmar
 
 12:25
-Matanyah | Uvakbukyah | Oadyah | Meshulam
-Talmon | Akuv
+Matanyah | Uvakbukyah | Oadyah | Meshulam | Talmon | Akuv
 shomerim | sho'arim | mishmar | ba'asupei
 hashe'arim
 
 12:26
-eleh | bimei | Yoyakim | ben | Yeshua | ben | Yotzadak
+eleh
+bimei | Yoyakim | ben | Yeshua
+ben | Yotzadak
 uvimei | Nechemyah | hapechah
 Ve'ezra | hakohen
 hasofer
 
 12:27
-uvachanukat | chomat | Yerushalim | bikshu | et | halviyim | mikol | mekomotam | lahavi'am | Lirushalim
+uvachanukat | chomat | Yerushalim | bikshu | et | halviyim | mikol | mekomotam
+lahavi'am | Lirushalim
 la'asot | chanukah | vesimchah | uvetodot | uveshir | metziltayim
 nevalim | uvekhinorot
 
 12:28
 vaiye'asefu
 benei
-hamshorerim | umin | hakikar | sevivot | Yerushalim | umin | chatzrei
-netofati
+hamshorerim
+umin | hakikar | sevivot | Yerushalim
+umin | chatzrei | netofati
 
 12:29
-Umibeit | Hagilgal
-umisedot | Geva
-Ve'azmavet | ki | chatzerim | banu | lahem | hamshorarim
+Umibeit | Hagilgal | umisedot | Geva
+Ve'azmavet
+ki | chatzerim | banu | lahem | hamshorarim
 sevivot
 Yerushalim
 
@@ -152,7 +152,8 @@ ve'et | hashe'arim
 ve'et | hachomah
 
 12:31
-va'a'aleh | et | sarei | Yehudah | me'al
+va'a'aleh | et | sarei | Yehudah
+me'al
 lachomah
 va'a'amidah | shetei | todot | gedolot | vetahalukhot | laiyamin | me'al | lachomah
 lesha'ar
@@ -174,7 +175,8 @@ Veyirmeyah
 12:35
 umibenei | hakohanim | bachatzotzerot
 Zekharyah | ven | Yonatan | ben | Shema'yah | ben | Matanyah | ben | Mikhayah
-ben | Zakur | ben | Asaf
+ben | Zakur
+ben | Asaf
 
 12:36
 ve'echav | Shema'yah | Va'azar'el | Milalai | Gilalai | Ma'ai | Netan'el | Vihudah | Chanani
@@ -223,12 +225,13 @@ hapakid
 vaiyizbechu | vaiyom | hahu | zevachim | gedolim | vaiyismachu | ki | ha'elohim | simecham | simchah | gedolah
 vegam | hanashim | vehayladim
 samechu
-vatishama | simchat | Yerushalim | merachok
+vatishama | simchat | Yerushalim
+merachok
 
 12:44
 vaiyipakedu | vaiyom | hahu | anashim | al | haneshakhot | la'otzarot | laterumot | lareshit | velama'asrot
-likhnos | bahem | lisdei | he'arim | mena'ot | hatorah | lakohanim
-velalviyim | ki | simchat | Yehudah
+likhnos | bahem | lisdei | he'arim | mena'ot | hatorah | lakohanim | velalviyim
+ki | simchat | Yehudah
 al | hakohanim | ve'al | halviyim
 ha'omedim
 
@@ -239,12 +242,11 @@ vehasho'arim | kemitzvat | David
 Shelomoh | veno
 
 12:46
-ki | vimei | David | Ve'asaf | mikedem
-rosh | hamshorerim
+ki | vimei | David | Ve'asaf | mikedem | rosh | hamshorerim
 veshir | tehilah | vehodot | lelohim
 
 12:47
 vekhol | Yisra'el | bimei | Zerubavel | uvimei | Nechemyah | notenim | menayot | hamshorerim | vehasho'arim
-devar | yom | beyomo | umakdishim | lalviyim
-vehalviyim | makdishim
-livnei | Aharon
+devar | yom | beyomo
+umakdishim | lalviyim
+vehalviyim | makdishim | livnei | Aharon

@@ -24,13 +24,13 @@ sheshet | alafim
 
 23:5
 ve'arba'at | alafim | sho'arim
-ve'arba'at | alafim | mehalim | Layahweh | bakelim | asher | asiti
+ve'arba'at | alafim | mehalim | Layahweh
+bakelim | asher | asiti
 lehalel
 
 23:6
 vaiyechalkem | David
-machlekot
-livnei | Levi | Legereshon
+machlekot | livnei | Levi | Legereshon
 Kehat | Umerari
 
 23:7
@@ -68,8 +68,7 @@ benei | Kehat | Amram | Yitzhar | Chevron | Ve'uzi'el
 arba'ah
 
 23:13
-benei | Amram
-Aharon | Umosheh
+benei | Amram | Aharon | Umosheh
 vaiyibadel | Aharon | lehakdisho | kodesh | kadashim | hu | uvanav | ad | olam
 lehaktir | lifnei | Yahweh | leshareto | ulevarekh | bishmo
 ad | olam
@@ -91,7 +90,9 @@ Shevu'el | harosh
 
 23:17
 vaiyihyu | venei | Eli'ezer
-Rechavyah | harosh | velo | hayah | Le'eli'ezer | banim | acherim | uvenei | Rechavyah
+Rechavyah | harosh
+velo | hayah | Le'eli'ezer | banim | acherim
+uvenei | Rechavyah
 ravu | lema'elah
 
 23:18
@@ -118,7 +119,8 @@ El'azar | Vekish
 
 23:22
 vaiyamot | El'azar
-velo | hayu | lo | banim | ki | im | banot
+velo | hayu | lo | banim
+ki | im | banot
 vaiyisa'um | benei | Kish
 acheihem
 
@@ -129,13 +131,14 @@ sheloshah
 23:24
 eleh | venei | Levi | leveit | avoteihem | rashei | ha'avot | lifkudeihem | bemispar | shemot | legulgelotam
 oseh | hamelakhah
-la'avodat | beit | Yahweh | miben | esrim | shanah | vama'elah
+la'avodat
+beit | Yahweh
+miben | esrim | shanah | vama'elah
 
 23:25
 ki | amar | David
 heniach | Yahweh | elohei | Yisra'el
-le'amo
-vaiyishkon | Birushalim
+le'amo | vaiyishkon | Birushalim
 ad | le'olam
 
 23:26
@@ -164,12 +167,14 @@ vekhen
 la'arev
 
 23:31
-ulekhol | ha'alot | olot | Layahweh | lashabatot
-lechodashim | velamo'adim | bemispar | kemishpat | aleihem | tamid
+ulekhol | ha'alot | olot | Layahweh | lashabatot | lechodashim
+velamo'adim
+bemispar | kemishpat | aleihem | tamid
 lifnei | Yahweh
 
 23:32
 veshameru | et | mishmeret | ohel | mo'ed | ve'et | mishmeret | hakodesh | umishmeret
 benei | Aharon
 acheihem
-la'avodat | beit | Yahweh
+la'avodat
+beit | Yahweh

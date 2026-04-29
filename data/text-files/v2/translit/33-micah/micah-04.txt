@@ -1,13 +1,13 @@
 4:1
 vehayah | be'acharit | haiyamim | yihyeh | har | beit | Yahweh | nakhon | berosh | heharim
-venisa | hu | migeva'ot
-venaharu | alav
+venisa | hu | migeva'ot | venaharu | alav
 amim
 
 4:2
 vehalekhu | goyim | rabim | ve'ameru | lekhu | vena'aleh | el | har | Yahweh | ve'el | beit | elohei | Ya'ako
 veyorenu | miderakhav
-venelekhah | be'orechotav | ki | Mitziyon | tetze | torah
+venelekhah | be'orechotav
+ki | Mitziyon | tetze | torah
 udevar | Yahweh | Mirushalim
 
 4:3
@@ -24,7 +24,8 @@ diber
 4:5
 ki | kol | ha'amim
 yelekhu
-ish | beshem | elohav
+ish
+beshem | elohav
 va'anachnu | nelekh | beshem | Yahweh | eloheinu
 le'olam | va'ed
 
@@ -38,8 +39,9 @@ hare'oti
 4:7
 vesamti | et | hatzole'ah | lish'erit
 vehanahala'ah
-legoy | atzum | umalakh | Yahweh | aleihem | behar | Tziyon | me'atah
-ve'ad | olam
+legoy | atzum
+umalakh | Yahweh | aleihem | behar | Tziyon
+me'atah | ve'ad | olam
 
 4:8
 ve'atah | Migdal | Eder | ofel | bat | Tziyon
@@ -49,12 +51,16 @@ uva'ah | hamemshalah | harishonah | mamlekhet | levat | Yerushalim
 4:9
 atah | lamah | tari'i
 rea
-hamelekh | ein | bakh | im | yo'atzekh | avad | ki | hechezikekh | chil | kaiyoledah
+hamelekh | ein | bakh | im | yo'atzekh | avad
+ki | hechezikekh | chil
+kaiyoledah
 
 4:10
-chuli | vagochi | bat | Tziyon | kaiyoledah
+chuli | vagochi | bat | Tziyon
+kaiyoledah
 ki | atah | tetze'i | mikiryah | veshakhant | basadeh | uvat | ad | Bavel | sham | tinatzeli
-sham | yig'alekh | Yahweh | mikaf
+sham | yig'alekh | Yahweh
+mikaf
 oyevayikh
 
 4:11
@@ -65,8 +71,10 @@ vetachaz | Betziyon
 eineinu
 
 4:12
-vehemah | lo | yade'u | machshevot | Yahweh | velo | hevinu
-atzato | ki | kibetzam | ke'amir | gorenah
+vehemah | lo | yade'u | machshevot | Yahweh
+velo | hevinu
+atzato
+ki | kibetzam | ke'amir | gorenah
 
 4:13
 kumi | vadooshi | vat | Tziyon | ki | karnekh | asim | barzel | ufarsotayikh | asim | nechushah
@@ -77,7 +85,7 @@ vecheilam
 la'adon | kol | ha'aretz
 
 4:14
-atah | titgodedi | vat | gedud | matzor
-sam | aleinu | bashevet | yaku | al | halechi
+atah | titgodedi | vat | gedud
+matzor | sam | aleinu | bashevet | yaku | al | halechi
 et
 shofet | Yisra'el

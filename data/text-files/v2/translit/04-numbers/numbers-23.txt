@@ -1,8 +1,7 @@
 23:1
 vaiyomer | Bil'am | el | Balak
 beneh | li | vazeh
-shiv'ah | mizbechot
-vehakhen | li | bazeh
+shiv'ah | mizbechot | vehakhen | li | bazeh
 shiv'ah | farim
 veshiv'ah | eilim
 
@@ -15,8 +14,7 @@ bamizbeach
 23:3
 vaiyomer | Bil'am | Levalak | hityatzev | al | olatekha
 ve'elekhah | ulai | yikareh | Yahweh | likrati
-udevar | mah | yar'eni
-vehigadti | lakh
+udevar | mah | yar'eni | vehigadti | lakh
 vaiyelekh
 shefi
 
@@ -41,25 +39,30 @@ vekhol | sarei | Mo'av
 23:7
 vaiyisa | meshalo
 vaiyomar
-min | Arom | yancheni | Valak | melekh | Mo'av | meharei | kedem | lekhah | arah | li | Ya'ako
+min | Arom | yancheni | Valak | melekh | Mo'av | meharei | kedem
+lekhah | arah | li | Ya'ako
 ulekhah
 zo'amah | Yisra'el
 
 23:8
 mah | eko | lo | kaboh | el
-umah | ez'om | lo | za'am
-Yahweh
+umah | ez'om
+lo | za'am | Yahweh
 
 23:9
-ki | merosh | tzurim | er'enu | umigeva'ot
-ashurenu
-hen | am | levadad | yishkon | uvagoyim | lo | yitchashav
+ki | merosh | tzurim | er'enu
+umigeva'ot | ashurenu
+hen | am | levadad | yishkon
+uvagoyim
+lo | yitchashav
 
 23:10
-mi | manah | afar | Ya'ako | umispar
+mi | manah | afar | Ya'ako
+umispar
 et | roa | Yisra'el
 tamot | nafshi | mot | yesharim
-utehi | achariti | kamohu
+utehi | achariti
+kamohu
 
 23:11
 vaiyomer | Balak | el | Bil'am
@@ -77,7 +80,8 @@ ledaber
 23:13
 vaiyomer | elav | Balak | lekhah | na | iti | el | makom | acher | asher | tir'enu | misham
 efes | katzehu | tir'eh
-vekhulo | lo | tir'eh
+vekhulo
+lo | tir'eh
 vekavenov | li | misham
 
 23:14
@@ -106,8 +110,7 @@ vaiyavo | elav | vehino | nitzav | al | olato
 vesarei | Mo'av
 ito
 vaiyomer | lo | Balak
-mah | diber
-Yahweh
+mah | diber | Yahweh
 
 23:18
 vaiyisa | meshalo
@@ -120,12 +123,14 @@ lo | ish | el | vikhazev
 uven | adam
 veyitnecham
 hahu | amar | velo | ya'aseh
-vediber | velo | yekimenah
+vediber
+velo | yekimenah
 
 23:20
 hineh | varekh
 lakacheti
-uverekh | velo | ashivenah
+uverekh
+velo | ashivenah
 
 23:21
 lo | hibit | aven | Beya'ako | velo | ra'ah | amal | Beyisra'el
@@ -136,25 +141,30 @@ uteru'at | melekh | bo
 el | motzi'am | Mimitzrayim | keto'afot | re'em | lo
 
 23:23
-ki | lo | nachash | Beya'ako
-velo | kesem | Beyisra'el | ka'et | ye'amer | Leya'ako | Uleyisra'el | mah | pa'al | el
+ki | lo | nachash | Beya'ako | velo | kesem | Beyisra'el
+ka'et | ye'amer | Leya'ako | Uleyisra'el
+mah | pa'al | el
 
 23:24
-hen | am | kelavi | yakum | vekha'ari
-yitnasa | lo | yishkav | ad | yokhal | teref
+hen | am | kelavi | yakum
+vekha'ari | yitnasa
+lo | yishkav | ad | yokhal | teref
 vedam | chalalim
 yishteh
 
 23:25
 vaiyomer | Balak | el | Bil'am
-gam | ko | lo | tikovenu
-gam | barekh | lo | tevarakhenu
+gam | ko
+lo | tikovenu
+gam | barekh
+lo | tevarakhenu
 
 23:26
 vaiya'an | Bil'am
 vaiyomer
 el | Balak
-halo | dibarti | eleikha | lemor | kol | asher | yedaber | Yahweh
+halo | dibarti | eleikha | lemor
+kol | asher | yedaber | Yahweh
 oto | e'eseh
 
 23:27
@@ -174,8 +184,7 @@ hanishkaf | al | penei | hayshimon
 23:29
 vaiyomer | Bil'am | el | Balak
 beneh | li | vazeh
-shiv'ah | mizbechot
-vehakhen | li | bazeh
+shiv'ah | mizbechot | vehakhen | li | bazeh
 shiv'ah | farim
 veshiv'ah | eilim
 

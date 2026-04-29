@@ -1,6 +1,5 @@
 6:1
-Vedareyavesh | madaya
-kabel | malkhuta | kevar | shenin
+Vedareyavesh | madaya | kabel | malkhuta | kevar | shenin
 shitin | vetartein
 
 6:2
@@ -17,9 +16,9 @@ umalka | la | leheve | nazik
 
 6:4
 edayin | Daniyel | denah
-hava | mitnatzach
-al | sarekhaiya
-va'achashdarpenaiya | kol | kovel | di | ruach | yatira | beh
+hava | mitnatzach | al | sarekhaiya
+va'achashdarpenaiya
+kol | kovel | di | ruach | yatira | beh
 umalka | ashit | lahakamuteh
 al | kol | malkhuta
 
@@ -32,8 +31,10 @@ alohi
 
 6:6
 edayin | guvraiya | ilekh | amerin
-di | la | nehashkach | Ledaniyel | denah | kol | ila | lahen
-hashkachnah | alohi | bedat | elaheh
+di | la | nehashkach | Ledaniyel | denah
+kol | ila | lahen
+hashkachnah | alohi
+bedat | elaheh
 
 6:7
 edayin | sarekhaiya | va'achashdarpenaiya | ilen
@@ -47,12 +48,11 @@ itya'atu | kol | sarekhei | malkhuta | signaiya | va'achashdarpenaiya | hadavera
 lekaiyamah | keyam | malka | uletakafah
 esar
 di | khol | di | yiv'eh | va'u | min | kol | elah | ve'enash | ad | yomin | telatin | lahen | minakh | malka
-yitreme | lego
-aryavata
+yitreme
+lego | aryavata
 
 6:9
-ke'an | malka
-tekim | esara
+ke'an | malka | tekim | esara
 vetirshum | ketava
 di | la | lehashnayah | kedot | Madai | Ufaras
 di | la | te'de
@@ -68,8 +68,7 @@ Vedaniyel | kedi | yeda | di | reshim | ketava | al | levayteh
 vekhavin | petichan | leh | be'iliteh | neged
 Yerushelem
 vezimnin | telatah | veyoma | hu | barekh | al | birkhohi | umetzale | umode | kodam | elaheh
-kol | kovel | di | hava | aved | min | kadmat
-denah
+kol | kovel | di | hava | aved | min | kadmat | denah
 
 6:12
 edayin | guvraiya | ilekh | hargishu
@@ -80,8 +79,7 @@ kodam | elaheh
 bedayin | kerivu | ve'amerin | kodom | malka | al | esar | malka
 hala | esar | reshamta | di | khol | enash | di | yiv'eh | min | kol | elah | ve'enash | ad | yomin | telatin | lahen | minakh | malka
 yitreme
-legov
-aryota
+legov | aryota
 aneh | malka | ve'amar | yatziva | mileta | kedot | Madai | Ufaras
 di | la | te'de
 
@@ -90,7 +88,8 @@ bedayin | ano | ve'amerin | kodam | malka
 di | Daniyel | di | min | benei | galuta | di | Yehud | la | sam | alayikh | malka | te'em
 ve'al | esara
 di | reshamta
-vezimnin | telatah | beyoma | ba'e | ba'uteh
+vezimnin | telatah | beyoma
+ba'e | ba'uteh
 
 6:15
 edayin | malka | kedi | mileta | shema | sagi | be'esh | alohi
@@ -103,7 +102,8 @@ bedayin | guvraiya | ilekh
 hargishu
 al | malka
 ve'amerin | lemalka | da | malka | di | dat | Lemadai | Ufaras
-di | khol | esar | ukeyam | di | malka | yehakeim | la | lehashnayah
+di | khol | esar | ukeyam | di | malka | yehakeim
+la | lehashnayah
 
 6:17
 bedayin | malka | amar | vehaytiv | Ledaniyel
@@ -129,8 +129,8 @@ veshinteh
 nadat | alohi
 
 6:20
-bedayin | malka | bishparpara
-yekum | benageha | uvehitbehalah
+bedayin | malka | bishparpara | yekum | benageha
+uvehitbehalah
 leguba | di | aryavata
 azal
 
@@ -147,9 +147,9 @@ im | malka | malil | malka | le'almin | cheyi
 
 6:23
 elahi | shelach | mal'akheh | usagar | pum | aryavata
-vela | chabeluni | kol | kovel | di | kadamohi | zakhu | hishtekhachat | li
-ve'af | kadamayikh | malka
-chavulah | la | avdet
+vela | chabeluni
+kol | kovel | di | kadamohi | zakhu | hishtekhachat | li
+ve'af | kadamayikh | malka | chavulah | la | avdet
 
 6:24
 bedayin | malka | sagi | te'ev | alohi | Uledaniyel
@@ -162,7 +162,8 @@ heimin | belaheh
 6:25
 va'amar | malka | vehaytiv | guvraiya | ilekh | di | akhalu | kartzohi | di | Daniyel
 ulego | aryavata | remo
-inun | beneihon | unesheihon
+inun
+beneihon | unesheihon
 vela | meto | le'ar'it | guba | ad | di | shelitu | vehon | aryavata
 vekhol | garmeihon
 hadiku
@@ -175,14 +176,15 @@ shelamekhon | yisge
 min | kodamai | sim | te'em
 di | bekhol | shaltan | malkhuti | lehevon | za'a'in | vedachalin | min | kodam
 elaheh | di | Daniyel
-di | hu | elaha | chaiya | vekaiyam | le'alemin | umalkhuteh | di | la | titchabal
+di | hu | elaha | chaiya | vekaiyam | le'alemin
+umalkhuteh | di | la | titchabal
 veshaltaneh
 ad | sofa
 
 6:28
-mesheiziv | umatzil | ve'aved | atin | vetimhin | bishmaiya | uve'ar'a
-di | sheiziv | Ledaniyel | min | yad
-aryavata
+mesheiziv | umatzil | ve'aved | atin | vetimhin
+bishmaiya | uve'ar'a
+di | sheiziv | Ledaniyel | min | yad | aryavata
 
 6:29
 Vedaniyel | denah

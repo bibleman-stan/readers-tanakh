@@ -15,7 +15,8 @@ chamishim | amot
 42:3
 neged | ha'esrim | asher | lechatzer | hapenimi
 veneged | ritzfah | asher | lechatzer | hachitzonah
-atik | el | penei | atik | bashelishim
+atik | el | penei | atik
+bashelishim
 
 42:4
 velifnei | haleshakhot | mahalakh | eser | amot | rochav | el | hapenimit
@@ -25,12 +26,15 @@ latzafon
 
 42:5
 vehaleshakhot | ha'elyonot
-ketzurot | ki | yokhlu | atikim | mehenah | mehatachtonot | umehatikhonot | binyan
+ketzurot
+ki | yokhlu | atikim | mehenah | mehatachtonot | umehatikhonot
+binyan
 
 42:6
 ki | meshulashot | henah | ve'ein | lahen | amudim | ke'amudei
 hachatzerot
-al | ken | Ne'etzal | mehatachtonot | umehatikhonot | meha'aretz
+al | ken | Ne'etzal | mehatachtonot | umehatikhonot
+meha'aretz
 
 42:7
 vegader | asher | lachutz | le'umat | haleshakhot
@@ -47,8 +51,7 @@ vehineh | al | penei | haheikhal | me'ah | amah
 42:9
 umitachatah
 haleshakhot | ha'eleh
-hamavo | mehakadim | bevo'o | lahenah | mehechatzer
-hachitzonah
+hamavo | mehakadim | bevo'o | lahenah | mehechatzer | hachitzonah
 
 42:10
 berochav | geder | hechatzer | derekh | hakadim | el | penei | hagizrah | ve'el | penei | habinyan
@@ -76,7 +79,8 @@ kadosh
 
 42:14
 bevo'am | hakohanim | velo | yetze'u | mehakodesh | el | hechatzer | hachitzonah
-vesham | yanichu | vigdeihem | asher | yesharetu | vahen | ki | kodesh | henah | veyilbeshu | begadim | acherim
+vesham | yanichu | vigdeihem | asher | yesharetu | vahen
+ki | kodesh | henah | veyilbeshu | begadim | acherim
 vekarevu
 el | asher | la'am
 

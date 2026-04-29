@@ -1,6 +1,6 @@
 13:1
-masa | Bavel | asher | chazah
-Yesha'yahu | ben | Amotz
+masa | Bavel | asher | chazah | Yesha'yahu
+ben | Amotz
 
 13:2
 al | har | nishpeh | se'u | nes
@@ -19,17 +19,21 @@ ga'avati
 kol | hamon | beharim
 demut | am | rav
 kol | she'on | mamlekhot | goyim | ne'esafim
-Yahweh | tzeva'ot | mefaked
-tzeva | milchamah
+Yahweh | tzeva'ot
+mefaked | tzeva | milchamah
 
 13:5
 ba'im | me'eretz | merchak | miktzeh | hashamayim
 Yahweh | ukhelei | za'mo
-lechabel | kol | ha'aretz
+lechabel
+kol | ha'aretz
 
 13:6
-heililu | ki | karov
-yom | Yahweh | keshod | Mishadai | yavo
+heililu
+ki | karov
+yom | Yahweh
+keshod
+Mishadai | yavo
 
 13:7
 al | ken | kol | yadayim | tirpeinah
@@ -37,7 +41,8 @@ vekhol | levav | enoosh
 yimas
 
 13:8
-venivhalu | tzirim | vachavalim | yochezun | kaiyoledah
+venivhalu | tzirim | vachavalim | yochezun
+kaiyoledah
 yechilun
 ish | el | re'ehu | yitmahu
 penei | lehavim
@@ -51,7 +56,8 @@ vechata'eiha
 yashmid | mimenah
 
 13:10
-ki | khokhvei | hashamayim | ukhesileihem | lo | yahelu
+ki | khokhvei | hashamayim | ukhesileihem
+lo | yahelu
 oram
 chashakh | hashemesh | betzeto
 veyareach
@@ -66,18 +72,20 @@ vega'avat | aritzim
 ashpil
 
 13:12
-okir | enoosh | mipaz
-ve'adam | miketem | Ofir
+okir | enoosh
+mipaz
+ve'adam
+miketem | Ofir
 
 13:13
 al | ken | shamayim | argiz
-vetir'ash | ha'aretz | mimekomah | be'evrat | Yahweh | tzeva'ot | uveyom
+vetir'ash | ha'aretz | mimekomah | be'evrat | Yahweh | tzeva'ot
+uveyom
 charon | apo
 
 13:14
 vehayah | kitzvi | mudach | ukhetzon
-ve'ein | mekabetz
-ish | el | amo | yifnu
+ve'ein | mekabetz | ish | el | amo | yifnu
 ve'ish | el | artzo
 yanusu
 
@@ -89,8 +97,7 @@ yipol | becharev
 
 13:16
 ve'oleleihem | yeruteshu
-le'eineihem
-yishasu | bateihem
+le'eineihem | yishasu | bateihem
 unesheihem
 tishakhabnah
 
@@ -98,7 +105,8 @@ tishakhabnah
 hini | me'ir | aleihem
 et | Madai
 asher | kesef | lo | yachshou
-vezahav | lo | yachpetzu | vo
+vezahav
+lo | yachpetzu | vo
 
 13:18
 ukeshatot
@@ -107,9 +115,9 @@ uferi | veten | lo | yerachemu
 al | banim | lo | tachus | einam
 
 13:19
-vehayetah | Vavel | tzevi | mamlakhot
-tif'eret
-ge'on | Kasdim | kemahpekhat | elohim
+vehayetah | Vavel | tzevi | mamlakhot | tif'eret
+ge'on | Kasdim
+kemahpekhat | elohim
 et | Sedom
 ve'et | Amorah
 

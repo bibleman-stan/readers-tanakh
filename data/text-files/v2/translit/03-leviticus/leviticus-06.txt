@@ -5,8 +5,7 @@ el | Mosheh | lemor
 6:2
 tzav | et | Aharon | ve'et | banav | lemor
 zot | torat
-ha'olah
-hi | ha'olah | al | mokdah | al | hamizbeach | kol | halaylah | ad | haboker
+ha'olah | hi | ha'olah | al | mokdah | al | hamizbeach | kol | halaylah | ad | haboker
 ve'esh | hamizbeach
 tukad | bo
 
@@ -18,7 +17,8 @@ vesamo | etzel
 hamizbeach
 
 6:4
-ufashat | et | begadav | velavash | begadim | acherim
+ufashat | et | begadav | velavash
+begadim | acherim
 vehotzi | et | hadeshen | el | michutz | lamachaneh
 el | makom
 tahor
@@ -31,7 +31,8 @@ vehiktir | aleiha
 chelvei | hashelamim
 
 6:6
-esh | tamid | tukad | al | hamizbeach | lo | tikhveh
+esh | tamid | tukad | al | hamizbeach
+lo | tikhveh
 
 6:7
 vezot | torat
@@ -47,20 +48,20 @@ vehiktir | hamizbeach | reiach | nichoach | azkaratah
 Layahweh
 
 6:9
-vehanoteret | mimenah
-yokhelu
-Aharon | uvanav | matzot | te'akhel | bemakom | kadosh | bachatzar | ohel | mo'ed
+vehanoteret | mimenah | yokhelu
+Aharon | uvanav
+matzot | te'akhel | bemakom | kadosh
+bachatzar | ohel | mo'ed
 yokheluha
 
 6:10
-lo | te'apeh | chametz
-chelkam | natati | otah | me'ishai
-kodesh | kadashim | hi | kachatat | vekha'asham
+lo | te'apeh | chametz | chelkam | natati | otah
+me'ishai | kodesh | kadashim | hi | kachatat | vekha'asham
 
 6:11
 kol | zakhar | bivnei | Aharon | yokhalenah
-chok | olam | ledoroteikhem | me'ishei
-Yahweh | kol | asher | yiga | bahem
+chok | olam | ledoroteikhem | me'ishei | Yahweh
+kol | asher | yiga | bahem
 yikdash
 
 6:12
@@ -69,11 +70,12 @@ el | Mosheh | lemor
 
 6:13
 zeh | kareban | Aharon | uvanav | asher | yakrivu | Layahweh | beyom | himashach | oto
-asirit | ha'efah | solet | minchah
-tamid | machatzitah | baboker | umachatzitah | ba'arev
+asirit | ha'efah | solet | minchah | tamid
+machatzitah | baboker | umachatzitah | ba'arev
 
 6:14
-al | machavat | bashemen | te'aseh | murbekhet | tevi'enah
+al | machavat | bashemen | te'aseh
+murbekhet | tevi'enah
 tufinei | minchat | pitim
 takriv | reiach | nichoach
 Layahweh
@@ -82,10 +84,12 @@ Layahweh
 vehakohen | hamashiach | tachtav | mibanav
 ya'aseh | otah
 chok | olam
-Layahweh | kalil | taketar
+Layahweh
+kalil | taketar
 
 6:16
-vekhol | minchat | kohen | kalil | tihyeh | lo | te'akhel
+vekhol | minchat | kohen | kalil | tihyeh
+lo | te'akhel
 
 6:17
 vaydaber | Yahweh
@@ -101,19 +105,23 @@ hi
 
 6:19
 hakohen | hamchate | otah
-yokhalenah | bemakom | kadosh | te'akhel | bachatzar
+yokhalenah
+bemakom | kadosh | te'akhel
+bachatzar
 ohel | mo'ed
 
 6:20
 kol | asher | yiga | bivsarah
 yikdash
 va'asher | yizeh | midamah | al | habeged | asher | yizeh | aleiha
-tekhabes | bemakom | kadosh
+tekhabes
+bemakom | kadosh
 
 6:21
 ukheli | cheres | asher | tevushal | bo
 yishaver
-ve'im | bikhli | nechoshet | bushalah | umorak | veshutaf | bamayim
+ve'im | bikhli | nechoshet | bushalah
+umorak | veshutaf | bamayim
 
 6:22
 kol | zakhar | bakohanim
@@ -123,5 +131,5 @@ hi
 
 6:23
 vekhol | chatat | asher | yuva | midamah | el | ohel | mo'ed | lekhaper | bakodesh
-lo | te'akhel | ba'esh
-tisaref
+lo | te'akhel
+ba'esh | tisaref

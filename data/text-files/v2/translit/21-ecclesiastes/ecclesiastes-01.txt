@@ -7,8 +7,7 @@ havel | havalim
 hakol | havel
 
 1:3
-mah | yitron
-la'adam | bekhol | amalo
+mah | yitron | la'adam | bekhol | amalo
 sheiya'amol | tachat | hashamesh
 
 1:4
@@ -40,7 +39,8 @@ sham | hem | shavim
 lalakhet
 
 1:8
-kol | hadevarim | yege'im | lo | yukhal | ish
+kol | hadevarim | yege'im
+lo | yukhal | ish
 ledaber | lo | tisba | ayin | lir'ot | velo | timale | ozen | mishemoa
 
 1:9
@@ -65,7 +65,8 @@ im | sheiyihyu | la'acharonah
 ani | kohelet | hayiti | melekh | al | Yisra'el | Birushalim
 
 1:13
-venatati | et | libi | lidroosh | velatur | bachakhemah | al | kol | asher | Na'asah
+venatati | et | libi | lidroosh | velatur | bachakhemah
+al | kol | asher | Na'asah
 tachat | hashamayim
 hu | inyan | ra | natan | elohim | livnei | ha'adam
 la'anot | bo

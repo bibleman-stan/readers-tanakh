@@ -3,8 +3,7 @@ vaydaber | Yahweh
 el | Mosheh | lemor
 
 40:2
-beyom | hachodesh | harishon | be'echad | lachodesh
-takim
+beyom | hachodesh | harishon | be'echad | lachodesh | takim
 et | mishkan
 ohel | mo'ed
 
@@ -69,8 +68,7 @@ oto
 40:12
 vehikravta | et | Aharon | ve'et | banav
 el | petach
-ohel | mo'ed
-verachatzta | otam | bamayim
+ohel | mo'ed | verachatzta | otam | bamayim
 
 40:13
 vehilbashta | et | Aharon
@@ -111,8 +109,7 @@ et | amudav
 40:19
 vaiyifros | et | ha'ohel | al | hamishkan
 vaiyasem | et | mikhseh | ha'ohel | alav
-milma'elah
-ka'asher | tzivah | Yahweh
+milma'elah | ka'asher | tzivah | Yahweh
 et | Mosheh
 
 40:20
@@ -126,8 +123,7 @@ milma'elah
 vaiyave | et | ha'aron | el | hamishkan
 vaiyasem | et | parokhet | hamasakh
 vaiyasekh
-al
-aron | ha'edut
+al | aron | ha'edut
 ka'asher | tzivah | Yahweh
 et | Mosheh
 
@@ -157,8 +153,7 @@ et | Mosheh
 
 40:26
 vaiyasem | et | mizbach | hazahav
-be'ohel | mo'ed
-lifnei
+be'ohel | mo'ed | lifnei
 haparokhet
 
 40:27
@@ -193,8 +188,7 @@ et | yedeihem
 ve'et | ragleihem
 
 40:32
-bevo'am | el | ohel | mo'ed | uvekarevatam | el | hamizbeach
-yirchatzu
+bevo'am | el | ohel | mo'ed | uvekarevatam | el | hamizbeach | yirchatzu
 ka'asher | tzivah | Yahweh
 et | Mosheh
 
@@ -208,25 +202,32 @@ et | hamelakhah
 
 40:34
 vaykhas | he'anan
-et | ohel | mo'ed | ukhevod | Yahweh | male
+et | ohel | mo'ed | ukhevod | Yahweh
+male
 et | hamishkan
 
 40:35
-velo | yakhol | Mosheh | lavo | el | ohel | mo'ed | ki | shakhan | alav
-he'anan | ukhevod | Yahweh | male
+velo | yakhol | Mosheh | lavo | el | ohel | mo'ed
+ki | shakhan | alav
+he'anan
+ukhevod | Yahweh
+male
 et | hamishkan
 
 40:36
-uvehe'alot | he'anan | me'al | hamishkan
-yis'u | benei | Yisra'el | bekhol | mas'eihem
+uvehe'alot | he'anan | me'al | hamishkan | yis'u
+benei | Yisra'el
+bekhol | mas'eihem
 
 40:37
 ve'im | lo | ye'aleh
-he'anan | velo | yis'u
+he'anan
+velo | yis'u
 ad | yom
 he'aloto
 
 40:38
 ki | anan | Yahweh | al | hamishkan | yomam | ve'esh
-tihyeh | laylah | bo
+tihyeh | laylah
+bo
 le'einei | khol | beit | Yisra'el | bekhol | mas'eihem

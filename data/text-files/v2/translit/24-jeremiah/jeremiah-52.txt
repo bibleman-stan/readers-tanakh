@@ -6,14 +6,13 @@ Chamital | bat | Yirmeyahu | Milivnah
 
 52:2
 vaiya'as | hara
-be'einei | Yahweh | kekhol | asher | asah
-Yehoyakim
+be'einei | Yahweh
+kekhol | asher | asah | Yehoyakim
 
 52:3
 ki | al | af | Yahweh | hayetah | Birushalim | Vihudah
 ad | hishlikho | otam
-me'al | panav
-vaiyimrod | Tzidkiyahu
+me'al | panav | vaiyimrod | Tzidkiyahu
 bemelekh | Bavel
 
 52:4
@@ -44,7 +43,8 @@ vaiyirdefu | cheil | Kasdim | acharei | hamelekh
 vaiyasigu | et | Tzidkiyahu
 be'arvot | Yerecho
 vekhol | cheilo
-Nafotzu | me'alav
+Nafotzu
+me'alav
 
 52:9
 vaiyitpesu | et | hamelekh
@@ -81,8 +81,8 @@ ve'et | kol | batei | Yerushalim | ve'et | kol | beit | hagadol
 saraf | ba'esh
 
 52:14
-ve'et | kol | chomot | Yerushalim | saviv
-natetzu | kol | cheil | Kasdim | asher | et | rav | tabachim
+ve'et | kol | chomot | Yerushalim
+saviv | natetzu | kol | cheil | Kasdim | asher | et | rav | tabachim
 
 52:15
 umidalot | ha'am | ve'et | yeter | ha'am | hanish'arim | ba'ir | ve'et | hanofelim | asher | nafelu | el | melekh | Bavel
@@ -119,7 +119,8 @@ rav | tabachim
 ha'amudim | shenayim | haiyam | echad | vehabakar | sheneim | asar | nechoshet | asher | tachat | hamekhonot
 asher | asah | hamelekh | Shelomoh
 leveit | Yahweh
-lo | hayah | mishkal | linchushtam | kol | hakelim | ha'eleh
+lo | hayah | mishkal | linchushtam
+kol | hakelim | ha'eleh
 
 52:21
 veha'amudim | shemoneh | esreh | amah | komah | ha'amud | ha'echad
@@ -131,13 +132,15 @@ navuv
 52:22
 vekhoteret | alav | nechoshet | vekomat | hakoteret | ha'achat | chamesh | amot
 usevakhah | verimonim | al | hakoteret | saviv
-hakol | nechoshet | vekha'eleh | la'amud | hasheni
+hakol | nechoshet
+vekha'eleh | la'amud | hasheni
 verimonim
 
 52:23
 vaiyihyu | harimonim
 tish'im | veshishah
-ruchah | kol | harimonim | me'ah | al | hasevakhah | saviv
+ruchah
+kol | harimonim | me'ah | al | hasevakhah | saviv
 
 52:24
 vaiyikach | rav | tabachim | et | Serayah | kohen | harosh
@@ -167,13 +170,12 @@ me'al | admato
 
 52:28
 zeh | ha'am | asher | heglah
-Nevukhadretzar | bishnat | sheva
-yehudim
+Nevukhadretzar
+bishnat | sheva | yehudim
 sheloshet | alafim | ve'esrim | usheloshah
 
 52:29
-bishnat | shemoneh | esreh | Linvukhadretzar | Mirushalim
-nefesh
+bishnat | shemoneh | esreh | Linvukhadretzar | Mirushalim | nefesh
 shemoneh | me'ot | sheloshim | ushenayim
 
 52:30
@@ -181,7 +183,8 @@ bishnat | shalosh | ve'esrim | Linvukhadretzar
 heglah | Nevuzar'adan | rav | tabachim
 yehudim
 nefesh
-sheva | me'ot | arba'im | vachamishah | kol | nefesh
+sheva | me'ot | arba'im | vachamishah
+kol | nefesh
 arba'at | alafim | veshesh | me'ot
 
 52:31
@@ -202,9 +205,9 @@ Bevavel
 52:33
 veshinah
 et | bigdei | khil'o
-ve'akhal | lechem | lefanav | tamid | kol | yemei | chaiyav
+ve'akhal | lechem | lefanav | tamid
+kol | yemei | chaiyav
 
 52:34
 va'aruchato | aruchat | tamid | Nitenah | lo | me'et | melekh | Bavel | devar | yom | beyomo
-ad | yom | moto | kol
-yemei | chaiyav
+ad | yom | moto | kol | yemei | chaiyav

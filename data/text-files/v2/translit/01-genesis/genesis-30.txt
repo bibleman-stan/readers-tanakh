@@ -25,7 +25,8 @@ Ya'ako
 
 30:5
 vatahar | Bilhah
-vateled | Leya'ako | ben
+vateled | Leya'ako
+ben
 
 30:6
 vatomer | Rachel | danani | elohim
@@ -38,7 +39,8 @@ Dan
 30:7
 vatahar | od
 vateled | Bilhah
-shifchat | Rachel | ben | sheni
+shifchat | Rachel
+ben | sheni
 Leya'ako
 
 30:8
@@ -48,8 +50,8 @@ vatikra | shemo
 Naftali
 
 30:9
-vatere | Le'ah | ki | amedah | miledet
-vatikach | et | Zilpah | shifchatah
+vatere | Le'ah
+ki | amedah | miledet | vatikach | et | Zilpah | shifchatah
 vatiten | otah | Leya'ako
 le'ishah
 
@@ -63,11 +65,14 @@ vatikra | et | shemo
 Gad
 
 30:12
-vateled | Zilpah | shifchat | Le'ah | ben | sheni
+vateled | Zilpah | shifchat | Le'ah
+ben | sheni
 Leya'ako
 
 30:13
-vatomer | Le'ah | be'asheri | ki | isheruni | banot
+vatomer | Le'ah | be'asheri
+ki | isheruni
+banot
 vatikra | et | shemo | Asher
 
 30:14
@@ -81,7 +86,8 @@ teni | na | li | miduda'ei | benekh
 30:15
 vatomer | lah | ham'at | kachtekh | et | ishi | velakachat
 gam | et | duda'ei | beni
-vatomer | Rachel | lakhen | yishkav | imokh | halaylah | tachat
+vatomer | Rachel | lakhen | yishkav | imokh | halaylah
+tachat
 duda'ei | venekh
 
 30:16
@@ -94,7 +100,8 @@ balaylah | hu
 30:17
 vaiyishma | elohim
 el | Le'ah
-vatahar | vateled | Leya'ako | ben | chamishi
+vatahar | vateled | Leya'ako
+ben | chamishi
 
 30:18
 vatomer | Le'ah | natan | elohim | sekhari
@@ -110,7 +117,8 @@ Leya'ako
 
 30:20
 vatomer | Le'ah | zevadani | elohim | oti | zeved | tov
-hapa'am | yizbeleni | ishi | ki | yaladti | lo
+hapa'am | yizbeleni | ishi
+ki | yaladti | lo
 shishah | vanim
 vatikra | et | shemo
 Zevulun
@@ -138,7 +146,8 @@ et | cherpati
 30:24
 vatikra | et | shemo | Yosef
 lemor
-yosef | Yahweh | li | ben | acher
+yosef | Yahweh | li
+ben | acher
 
 30:25
 vayhi
@@ -150,7 +159,8 @@ el | mekomi | ule'artzi
 
 30:26
 tenah | et | nashai | ve'et | yeladai | asher | avadti | otekha | bahen
-ve'elekhah | ki | atah | yada'ta
+ve'elekhah
+ki | atah | yada'ta
 et | avodati | asher | avadtikha
 
 30:27
@@ -167,10 +177,8 @@ ve'etenah
 
 30:29
 vaiyomer | elav
-atah | yada'ta
-et | asher | avadtikha
-ve'et | asher | hayah | miknecha
-iti
+atah | yada'ta | et | asher | avadtikha
+ve'et | asher | hayah | miknecha | iti
 
 30:30
 ki | me'at | asher | hayah | lekha | lefanai | vaiyifrotz | laro
@@ -194,8 +202,10 @@ vehayah
 sekhari
 
 30:33
-ve'anetah | bi | tzidkati | beyom | machar | ki | tavo | al | sekhari
-lefaneikha | kol | asher | einenu | nakod | vetalu | ba'izim | vechum | bakesavim
+ve'anetah | bi | tzidkati | beyom | machar
+ki | tavo | al | sekhari
+lefaneikha
+kol | asher | einenu | nakod | vetalu | ba'izim | vechum | bakesavim
 ganuv | hu
 iti
 
@@ -213,7 +223,8 @@ beyad | banav
 
 30:36
 vaiyasem | derekh | sheloshet | yamim
-beino | uvein | Ya'ako
+beino
+uvein | Ya'ako
 Veya'ako | ro'eh | et | tzon | Lavan
 hanotarot
 
@@ -246,7 +257,8 @@ al | tzon | Lavan
 
 30:41
 vehayah | bekhol | yachem | hatzon | hamkusharot
-vesam | Ya'ako | et | hamaklot | le'einei | hatzon | borohatim | leyachmenah | bamaklot
+vesam | Ya'ako | et | hamaklot | le'einei | hatzon
+borohatim | leyachmenah | bamaklot
 
 30:42
 uveha'atif | hatzon | lo | yasim

@@ -1,6 +1,7 @@
 13:1
 bishnat | esrim | veshalosh | shanah
-Leyo'ash | ben | Achazyahu | melekh | Yehudah
+Leyo'ash | ben | Achazyahu
+melekh | Yehudah
 malakh | Yeho'achaz | ben | Yehu | al | Yisra'el | Beshomeron
 sheva | esreh | shanah
 
@@ -26,9 +27,7 @@ ki | lachatz | otam | melekh | Aram
 13:5
 vaiyiten | Yahweh | Leyisra'el | moshia
 vaiyetze'u
-mitachat
-yad | Aram
-vaiyeshevu | venei | Yisra'el | be'oholeihem
+mitachat | yad | Aram | vaiyeshevu | venei | Yisra'el | be'oholeihem
 kitmol | shilshom
 
 13:6
@@ -39,7 +38,8 @@ amedah | Beshomeron
 
 13:7
 ki | lo | hish'ir | Liho'achaz | am | ki | im | chamishim | parashim | va'asarah | rekhev
-va'aseret | alafim | ragli | ki | ibedam | melekh | Aram
+va'aseret | alafim | ragli
+ki | ibedam | melekh | Aram
 vaysimem | ke'afar
 ladush
 
@@ -57,7 +57,9 @@ tachtav
 
 13:10
 bishnat | sheloshim | vasheva | shanah
-Leyo'ash | melekh | Yehudah | malakh | Yeho'ash | ben | Yeho'achaz | al | Yisra'el | Beshomeron
+Leyo'ash
+melekh | Yehudah
+malakh | Yeho'ash | ben | Yeho'achaz | al | Yisra'el | Beshomeron
 shesh | esreh | shanah
 
 13:11
@@ -79,7 +81,8 @@ vaiyishkav | Yo'ash | im | avotav
 Veyarave'am
 yashav | al | kis'o
 vaiyikaver | Yo'ash | Beshomeron
-im | malkhei | Yisra'el
+im
+malkhei | Yisra'el
 
 13:14
 Ve'elisha | chalah | et | chalyo | asher | yamut
@@ -141,21 +144,19 @@ vaiyakom | al | raglav
 
 13:22
 Vachaza'el | melekh | Aram | lachatz
-et | Yisra'el | kol
-yemei | Yeho'achaz
+et | Yisra'el
+kol | yemei | Yeho'achaz
 
 13:23
 vaiyachan | Yahweh | otam | vayrachamem | vaiyifen | aleihem
 lema'an | berito
 et | Avraham
 Yitzchak | Veya'ako
-velo | avah | hashchitam | velo | hishlikham | me'al | panav
-ad | atah
+velo | avah | hashchitam | velo | hishlikham | me'al | panav | ad | atah
 
 13:24
 vaiyamot
-Chaza'el | melekh | Aram
-vaiyimlokh | Ben | Hadad | beno
+Chaza'el | melekh | Aram | vaiyimlokh | Ben | Hadad | beno
 tachtav
 
 13:25
