@@ -3634,11 +3634,10 @@ function buildTocSections() {
       primary.textContent = bookDisplayName(slug, 'short');
       btn.appendChild(primary);
 
-      // Secondary line: Hebrew script + middle-dot + transliteration.
-      // Only rendered when both fields are populated; the registry currently
-      // populates them for every book, but the guard keeps the DOM clean if
-      // a future entry omits one.
-      if (book.hebrew && book.transliterated) {
+      // Secondary line: Hebrew script only.
+      // Transliteration is kept in the registry (URL aliasing) and in the
+      // tooltip title attr, but not shown in the button body.
+      if (book.hebrew) {
         const secondary = document.createElement('span');
         secondary.className = 'toc-book-secondary';
         const heb = document.createElement('span');
@@ -3647,14 +3646,6 @@ function buildTocSections() {
         heb.setAttribute('lang', 'he');
         heb.textContent = book.hebrew;
         secondary.appendChild(heb);
-        const sep = document.createElement('span');
-        sep.className = 'toc-book-sep';
-        sep.textContent = '·';
-        secondary.appendChild(sep);
-        const tr = document.createElement('span');
-        tr.className = 'toc-book-translit';
-        tr.textContent = book.transliterated;
-        secondary.appendChild(tr);
         btn.appendChild(secondary);
       }
 
