@@ -128,9 +128,8 @@ even | Yisra'el
 
 49:25
 me'el | avikha | veya'zereka | ve'et | Shadai | vivarekheka
-birkhot | shamayim | me'al
-birkhot | tehom | rovetzet | tachat
-birkhot | shadayim
+birkhot | shamayim | me'al | birkhot | tehom
+rovetzet | tachat | birkhot | shadayim
 varacham
 
 49:26
@@ -162,8 +161,7 @@ la'achuzat | kaver
 
 49:31
 shamah | kaveru | et | Avraham | ve'et | Sarah | ishto
-shamah | kaveru | et | Yitzchak | ve'et
-Rivkah | ishto
+shamah | kaveru | et | Yitzchak | ve'et | Rivkah | ishto
 veshamah | kavarti
 et | Le'ah
 

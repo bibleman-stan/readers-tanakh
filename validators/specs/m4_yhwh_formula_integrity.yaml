@@ -1,0 +1,31 @@
+name: m4_yhwh_formula_integrity
+rule: M4
+subcase: yhwh_formula_integrity
+severity: STRONG-MERGE-CANDIDATE
+description: |
+  Multi-token YHWH-speech formulas must remain intact. The te'amim-baseline
+  occasionally splits these formulas across line breaks; in every editorial
+  tradition they read as a single integral unit.
+
+  Closed list of formulas this catches:
+    - אֲנִי יְהוָה ([אֱלֹהֵיכֶם]) — "I am YHWH (your God)" — Lev 18-22 ubiquitous
+    - נְאֻם יְהוָה — "declares YHWH" — Latter Prophets ubiquitous
+    - כֹּה אָמַר יְהוָה — "thus said YHWH" — Latter Prophets
+    - אָמַר יְהוָה — completing the כה formula on the next line
+    - דְּבַר יְהוָה — "the word of YHWH" (construct chain, formula-strength)
+
+  Audited 2026-04-29: Lev 19 splits this formula 14× internally; Latter
+  Prophets show it across all major books.
+
+trigger:
+  line_n_last_token:
+    skeleton_in: [אני, נאם, כה, אמר, דבר]
+  line_n1_first_token:
+    skeleton_in: [יהוה, אמר]
+  combined_max_prosodic_words: 6
+
+guards:
+  - poetic_register
+
+annotation_template: "YHWH-speech formula split ({pwc} prosodic words)"
+suggested_action: MERGE

@@ -1,7 +1,6 @@
 5:1
 venefesh | ki | techeta | veshame'ah | kol | alah
-vehu | ed
-o | ra'ah
+vehu | ed | o | ra'ah
 o | yada
 im | lo | yagid
 venasa | avono
@@ -72,8 +71,7 @@ hi
 5:12
 vehevi'ah | el | hakohen
 vekamatz | hakohen | mimenah | melo | kumtzo | et | azkaratah | vehiktir | hamizbechah
-al
-ishei | Yahweh
+al | ishei | Yahweh
 chatat
 hi
 
@@ -86,8 +84,8 @@ vehayetah | lakohen | kaminchah
 vaydaber | Yahweh | el | Mosheh | lemor
 
 5:15
-nefesh | ki | tim'ol | ma'al
-vechate'ah | bishgagah | mikadeshei | Yahweh
+nefesh | ki | tim'ol | ma'al | vechate'ah | bishgagah
+mikadeshei | Yahweh
 vehevi | et | ashamo | Layahweh | ayil | tamim | min | hatzon | be'erkekha | kesef | shekalim | beshekel | hakodesh
 le'asham
 

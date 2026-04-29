@@ -24,12 +24,11 @@ tishmor
 9:5
 vahakimoti | et | kise | mamlakhtekha | al | Yisra'el | le'olam
 ka'asher | dibarti | al | David | avikha | lemor
-lo | yikaret | lekha | ish | me'al
-kise | Yisra'el
+lo | yikaret | lekha | ish | me'al | kise | Yisra'el
 
 9:6
-im | shov | teshuvun | atem | uveneikhem | me'acharai
-velo | tishmeru | mitzvotai | chukotai | asher | natati | lifneikhem
+im | shov | teshuvun | atem | uveneikhem | me'acharai | velo | tishmeru | mitzvotai | chukotai
+asher | natati | lifneikhem
 vahalakhtem | va'avadtem | elohim | acherim
 vehishtachavitem | lahem
 
@@ -76,8 +75,7 @@ velo | yasheru | be'einav
 vaiyomer | mah | he'arim | ha'eleh
 asher | natatah | li
 achi
-vaiyikra | lahem | eretz | Kavul | ad
-haiyom | hazeh
+vaiyikra | lahem | eretz | Kavul | ad | haiyom | hazeh
 
 9:14
 vaiyishlach | Chiram | lamelekh | me'ah | ve'esrim | kikar | zahav
@@ -119,8 +117,7 @@ hemah
 9:21
 beneihem | asher | Noteru | achareihem | ba'aretz
 asher | lo | yakhelu | benei | Yisra'el | lehacharimam
-vaiya'alem | Shelomoh | lemas | oved | ad
-haiyom | hazeh
+vaiya'alem | Shelomoh | lemas | oved | ad | haiyom | hazeh
 
 9:22
 umibenei | Yisra'el | lo | natan | Shelomoh
@@ -152,8 +149,7 @@ be'eretz | Edom
 vaiyishlach | Chiram | bo'oni | et | avadav
 anshei | oniyot
 yode'ei
-haiyam | im
-avdei | Shelomoh
+haiyam | im | avdei | Shelomoh
 
 9:28
 vaiyavo'u | Ofirah

@@ -186,6 +186,8 @@ def _check_morphology(tok: str, morph: str) -> bool:
         return M.is_do_marker_token(tok)
     if morph == "bare_do_marker":
         return M.is_bare_do_marker_token(tok)
+    if morph == "bare_prep":
+        return M.is_bare_prep_token(tok)
     if morph == "definite_adjective":
         return M.is_definite_adjective_token(tok)
     return False

@@ -113,8 +113,8 @@ vaiyikra | vo | Shafan
 lifnei | hamelekh
 
 34:19
-vayhi | kishmoa | hamelekh | et
-divrei | hatorah | vaiyikra | et | begadav
+vayhi | kishmoa | hamelekh | et | divrei | hatorah
+vaiyikra | et | begadav
 
 34:20
 vaytzav | hamelekh | et | Chilkiyahu | ve'et | Achikam | benosha | Shafan | ve'et | Avdon | ben | Mikhah | ve'et | Shafan | hasofer | ve'et | Asayah | eved | hamelekh
@@ -143,8 +143,7 @@ elai
 koh | amar | Yahweh
 hini | mevi | ra'ah | al | hamakom | hazeh | ve'al | yoshevav
 et | kol | ha'alot | haketuvot | al | hasefer | asher | kare'u
-lifnei
-melekh | Yehudah
+lifnei | melekh | Yehudah
 
 34:25
 tachat | asher | azavuni | vaiyaktiru | lelohim | acherim
@@ -161,10 +160,8 @@ hadevarim | asher | shama'eta
 
 34:27
 ya'an | rakh | levavekha | vatikana | milifnei | elohim | beshame'akha | et | devarav | al | hamakom | hazeh | ve'al | yoshevav
-vatikana | lefanai
-vatikra | et | begadeikha
-vatevek | lefanai
-vegam | ani | shama'ti
+vatikana | lefanai | vatikra | et | begadeikha
+vatevek | lefanai | vegam | ani | shama'ti
 ne'um | Yahweh
 
 34:28

@@ -123,8 +123,7 @@ gedolah | me'od
 
 14:21
 veha'ivrim | hayu | lapelishtim | ke'etmol | shilshom
-asher | alu | imam | bamachaneh | saviv
-vegam | hemah | lihyot | im | Yisra'el | asher | im | Sha'ul
+asher | alu | imam | bamachaneh | saviv | vegam | hemah | lihyot | im | Yisra'el | asher | im | Sha'ul
 Veyonatan
 
 14:22
@@ -252,7 +251,8 @@ veha'am | yatza'u
 
 14:42
 vaiyomer | Sha'ul
-hapilu | beini | uvein | Yonatan | beni
+hapilu | beini
+uvein | Yonatan | beni
 vaiyilakhed
 Yonatan
 
@@ -276,8 +276,7 @@ haiyom | hazeh | vaiyifdu | ha'am | et | Yonatan
 velo | met
 
 14:46
-vaiya'al | Sha'ul | me'acharei
-pelishtim
+vaiya'al | Sha'ul | me'acharei | pelishtim
 ufelishtim
 halekhu | limkomam
 

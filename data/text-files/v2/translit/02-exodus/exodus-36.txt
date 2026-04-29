@@ -132,8 +132,7 @@ negev | teimanah
 
 36:24
 ve'arba'im | adnei | khesef
-asah | tachat
-esrim | hakerashim
+asah | tachat | esrim | hakerashim
 shenei | adanim | tachat | hakeresh | ha'echad | lishtei | yedotav
 ushenei | adanim | tachat | hakeresh | ha'echad
 lishtei | yedotav
@@ -147,8 +146,7 @@ esrim | kerashim
 36:26
 ve'arba'im | adneihem | kasef
 shenei | adanim | tachat | hakeresh | ha'echad
-ushenei | adanim | tachat
-hakeresh | ha'echad
+ushenei | adanim | tachat | hakeresh | ha'echad
 
 36:27
 uleyarketei | hamishkan
@@ -171,8 +169,7 @@ hamiktzo'ot
 vehayu | shemonah | kerashim
 ve'adneihem | kesef
 shishah | asar | adanim
-shenei | adanim | shenei | adanim | tachat
-hakeresh | ha'echad
+shenei | adanim | shenei | adanim | tachat | hakeresh | ha'echad
 
 36:31
 vaiya'as | berichei

@@ -1,0 +1,27 @@
+name: h16_b_line_final_bare_do_marker
+rule: H16
+subcase: line_final_bare_do_marker
+severity: STRONG-MERGE-CANDIDATE
+description: |
+  Line N ends with the BARE direct-object marker אֵת/וְאֵת (no maqqef-bound
+  complement). Layer-1 syntax violation: אֵת cannot end a colon without its
+  noun phrase.
+
+  Sibling to h13_c_stranded_do_marker (which fires when the WHOLE line is
+  just the bare DO marker). h16_b handles the case where line N is multi-
+  token but ends with a stranded DO marker.
+
+  Example (audited 2026-04-29):
+    2 Chr 9:3   וַתֵּרֶא מַלְכַּת־שְׁבָא אֵת
+                NP
+
+trigger:
+  line_n_last_token:
+    morphology: bare_do_marker
+  combined_max_prosodic_words: 10
+
+guards:
+  - poetic_register
+
+annotation_template: "Line-final bare DO marker stranded ({pwc} prosodic words)"
+suggested_action: MERGE

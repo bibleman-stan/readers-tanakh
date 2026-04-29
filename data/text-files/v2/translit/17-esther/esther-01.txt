@@ -20,8 +20,7 @@ behar'oto | et | osher | kevod | malkhuto | ve'et | yekar
 tif'eret
 gedulato
 yamim | rabim
-shemonim | ume'at
-yom
+shemonim | ume'at | yom
 
 1:5
 uvimlot | haiyamim | ha'eleh | asah | hamelekh | lekhol | ha'am | hanimtze'im | Beshushan | habirah | lemigadol | ve'ad | katan | mishteh
@@ -69,8 +68,7 @@ vaiyiktzof | hamelekh | me'od | vachamato | ba'arah | vo
 1:13
 vaiyomer | hamelekh | lachakhamim
 yode'ei | ha'itim
-ki | khen | devar | hamelekh | lifnei
-kol | yode'ei
+ki | khen | devar | hamelekh | lifnei | kol | yode'ei
 dat | vadin
 
 1:14
@@ -123,6 +121,6 @@ vehasarim | vaiya'as | hamelekh | kidvar | Memukhan
 
 1:22
 vaiyishlach | sefarim | el | kol | medinot | hamelekh
-el | medinah | umedinah | kikhtavah | ve'el | am | va'am
-kilshono | lihyot | kol | ish | sorer | beveito | umedaber
+el | medinah | umedinah | kikhtavah | ve'el | am | va'am | kilshono | lihyot | kol | ish | sorer | beveito
+umedaber
 kilshon | amo

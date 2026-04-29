@@ -20,13 +20,11 @@ veha'aleita
 et | neroteiha
 
 40:5
-venatatah | et | mizbach | hazahav | liktoret | lifnei
-aron | ha'edut
+venatatah | et | mizbach | hazahav | liktoret | lifnei | aron | ha'edut
 vesamta | et | masakh | hapetach | lamishkan
 
 40:6
-venatatah | et | mizbach | ha'olah | lifnei
-petach | mishkan | ohel | mo'ed
+venatatah | et | mizbach | ha'olah | lifnei | petach | mishkan | ohel | mo'ed
 
 40:7
 venatata | et | hakiyor | bein | ohel | mo'ed
@@ -100,8 +98,7 @@ vaiyiten | et | hakaporet | al | ha'aron | milma'elah
 40:21
 vaiyave | et | ha'aron | el | hamishkan
 vaiyasem | et | parokhet | hamasakh
-vaiyasekh | al
-aron | ha'edut
+vaiyasekh | al | aron | ha'edut
 ka'asher | tzivah | Yahweh | et | Mosheh
 
 40:22
@@ -125,8 +122,7 @@ lifnei | Yahweh
 ka'asher | tzivah | Yahweh | et | Mosheh
 
 40:26
-vaiyasem | et | mizbach | hazahav | be'ohel | mo'ed | lifnei
-haparokhet
+vaiyasem | et | mizbach | hazahav | be'ohel | mo'ed | lifnei | haparokhet
 
 40:27
 vaiyakter | alav

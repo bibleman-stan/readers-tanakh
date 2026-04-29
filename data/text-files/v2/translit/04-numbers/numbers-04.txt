@@ -3,13 +3,11 @@ vaydaber | Yahweh
 el | Mosheh | ve'el | Aharon | lemor
 
 4:2
-naso | et | rosh | benei | Kehat | mitokh
-benei | Levi | lemishpechotam
+naso | et | rosh | benei | Kehat | mitokh | benei | Levi | lemishpechotam
 leveit | avotam
 
 4:3
-miben | sheloshim | shanah | vama'lah | ve'ad
-ben | chamishim | shanah
+miben | sheloshim | shanah | vama'lah | ve'ad | ben | chamishim | shanah
 kol | ba | latzava | la'asot | melakhah | be'ohel | mo'ed
 
 4:4
@@ -177,8 +175,7 @@ lemishpechotam
 uleveit | avotam
 
 4:35
-miben | sheloshim | shanah | vama'lah | ve'ad
-ben | chamishim | shanah
+miben | sheloshim | shanah | vama'lah | ve'ad | ben | chamishim | shanah
 kol | haba | latzava | la'avodah | be'ohel | mo'ed
 
 4:36
@@ -195,8 +192,7 @@ ufekudei | benei | Gereshon | lemishpechotam
 uleveit | avotam
 
 4:39
-miben | sheloshim | shanah | vama'lah | ve'ad
-ben | chamishim | shanah
+miben | sheloshim | shanah | vama'lah | ve'ad | ben | chamishim | shanah
 kol | haba | latzava | la'avodah | be'ohel | mo'ed
 
 4:40
@@ -214,8 +210,7 @@ ufekudei | mishpechot | benei | Merari | lemishpechotam
 leveit | avotam
 
 4:43
-miben | sheloshim | shanah | vama'lah | ve'ad
-ben | chamishim | shanah
+miben | sheloshim | shanah | vama'lah | ve'ad | ben | chamishim | shanah
 kol | haba | latzava | la'avodah | be'ohel | mo'ed
 
 4:44
@@ -233,8 +228,7 @@ et | halviyim | lemishpechotam
 uleveit | avotam
 
 4:47
-miben | sheloshim | shanah | vama'lah | ve'ad
-ben | chamishim | shanah
+miben | sheloshim | shanah | vama'lah | ve'ad | ben | chamishim | shanah
 kol | haba | la'avod | avodat | avodah | va'avodat | masa | be'ohel | mo'ed
 
 4:48

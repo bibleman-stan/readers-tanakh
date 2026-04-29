@@ -91,8 +91,8 @@ asitem | lo
 9:17
 asher | Nilcham | avi
 aleikhem
-vaiyashlekh | et | nafsho | mineged
-vaiyatzel | etkhem | miyad | Midyan
+vaiyashlekh | et | nafsho | mineged | vaiyatzel | etkhem
+miyad | Midyan
 
 9:18
 ve'atem | kamtem | al | beit | avi | haiyom
@@ -119,8 +119,7 @@ vetokhal | et | Avimelekh
 vaiyanos | Yotam
 vaiyivrach
 vaiyelekh | Be'erah
-vaiyeshev | sham | mipenei
-Avimelekh | achiv
+vaiyeshev | sham | mipenei | Avimelekh | achiv
 
 9:22
 vaiyasar | Avimelekh | al | Yisra'el
@@ -128,8 +127,8 @@ shalosh | shanim
 
 9:23
 vaiyishlach | elohim | ruach | ra'ah
-bein | Avimelekh | uvein
-ba'alei | Shekhem | vaiyivgedu | va'alei | Shekhem | Ba'avimelekh
+bein | Avimelekh | uvein | ba'alei | Shekhem
+vaiyivgedu | va'alei | Shekhem | Ba'avimelekh
 
 9:24
 lavo
@@ -228,8 +227,8 @@ halo | zeh | ha'am | asher | ma'astah | bo
 tze | na | atah | vehilachem | bo
 
 9:39
-vaiyetze | Ga'al | lifnei
-ba'alei | Shekhem | vaiyilachem | Ba'avimelekh
+vaiyetze | Ga'al | lifnei | ba'alei | Shekhem
+vaiyilachem | Ba'avimelekh
 
 9:40
 vaiyirdefehu | Avimelekh
@@ -326,8 +325,8 @@ vaiyelekhu
 ish | limkomo
 
 9:56
-vaiyashev | elohim | et
-ra'at | Avimelekh | asher | asah | le'aviv | laharog
+vaiyashev | elohim | et | ra'at | Avimelekh | asher | asah | le'aviv
+laharog
 et | shiv'im | echav
 
 9:57

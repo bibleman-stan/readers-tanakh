@@ -346,6 +346,25 @@ def is_bare_do_marker_token(token: str) -> bool:
     return s == "את" or s == "ואת"
 
 
+def is_bare_prep_token(token: str) -> bool:
+    """True only if the token is a BARE preposition with no maqqef-joined
+    complement — i.e., the prep is stranded awaiting its noun on the next line.
+
+    Free preps (אֶל, עַל, מִן, תַּחַת, ...) and vav-prefixed forms (וְאֶל, וְעַל, ...)
+    when standing alone (no maqqef) are stranded — line-final or line-only
+    occurrences indicate a complement that belongs on the merged line.
+    """
+    if MAQQEF in token:
+        return False
+    s = skel(token)
+    if s in PREP_SKELETONS:
+        return True
+    # vav-prefixed free prep: וְאֶל, וְעַל, וְעִם, ...
+    if len(s) >= 3 and s[0] == "ו" and s[1:] in PREP_SKELETONS:
+        return True
+    return False
+
+
 # Definite adjective — article-marked single-word adjective (heuristic).
 # Common patterns: הַגָּדוֹל, הַגְּדוֹלָה, הַגְּדֹלִים, הַגְּדֹלוֹת.
 # Conservative: requires single-token, ה- prefix, no further structure markers.

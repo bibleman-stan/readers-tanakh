@@ -71,8 +71,8 @@ lema'an | David | avdi
 ulema'an | Yerushalim | asher | bachareti
 
 11:14
-vaiyakem | Yahweh | satan | Lishlomoh | et
-Hadad | ha'adomi | mizera | hamelekh | hu | Be'edom
+vaiyakem | Yahweh | satan | Lishlomoh | et | Hadad | ha'adomi | mizera | hamelekh | hu
+Be'edom
 
 11:15
 vayhi | bihyot | David | et | Edom
@@ -104,10 +104,8 @@ Tachpeneis | hagevirah
 
 11:20
 vateled | lo | achot | Tachpeneis | et | Genuvat | beno
-vatigmelehu | Tachpenes | betokh
-beit | par'oh
-vayhi | Genuvat | beit | par'oh | betokh
-benei | far'oh
+vatigmelehu | Tachpenes | betokh | beit | par'oh
+vayhi | Genuvat | beit | par'oh | betokh | benei | far'oh
 
 11:21
 Vahadad | shama | Bemitzrayim | ki | shakhav | David | im | avotav
@@ -175,8 +173,7 @@ vaiyomer | Leyarave'am
 kach | lekha
 asarah | kera'im
 ki | khoh | amar | Yahweh | elohei | Yisra'el | hini | korea | et | hamamlakhah | miyad | Shelomoh
-venatati | lekha | et
-asarah | hashevatim
+venatati | lekha | et | asarah | hashevatim
 
 11:32
 vehashevet | ha'echad | yihyeh | lo
@@ -199,8 +196,7 @@ mitzvotai | vechukotai
 
 11:35
 velakachti | hamelukhah | miyad | beno
-unetatiha | lekha | et
-aseret | hashevatim
+unetatiha | lekha | et | aseret | hashevatim
 
 11:36
 velivno

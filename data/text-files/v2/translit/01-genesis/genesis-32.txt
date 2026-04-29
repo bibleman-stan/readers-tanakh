@@ -91,8 +91,8 @@ asarah
 32:17
 vaiyiten | beyad | avadav
 eder | eder | levado
-vaiyomer | el | avadav | ivru | lefanai
-verevach | tasimu | bein | eder | uvein | eder
+vaiyomer | el | avadav | ivru | lefanai | verevach | tasimu
+bein | eder | uvein | eder
 
 32:18
 vaytzav | et | harishon | lemor
@@ -116,8 +116,7 @@ oto
 va'amartem
 gam | hineh | avdekha | Ya'ako
 achareinu
-ki | amar | akhaperah | fanav | baminchah | haholekhet | lefanai
-ve'acharei | khen | er'eh | fanav
+ki | amar | akhaperah | fanav | baminchah | haholekhet | lefanai | ve'acharei | khen | er'eh | fanav
 ulai
 yisa | fanai
 
@@ -138,8 +137,7 @@ vaiya'aver | et | asher | lov
 
 32:25
 vaiyivater | Ya'ako | levado
-vaiye'avek | ish | imo | ad
-alot | hashachar
+vaiye'avek | ish | imo | ad | alot | hashachar
 
 32:26
 vaiyar | ki | lo | yakhol | lo
@@ -186,7 +184,6 @@ vehu | tzolea | al | yerekho
 
 32:33
 al | ken | lo | yokhelu | venei | Yisra'el | et | gid | hanasheh | asher | al | kaf | haiyarekh
-ad
-haiyom | hazeh
+ad | haiyom | hazeh
 ki | naga | bekhaf | yerekh | Ya'ako | begid
 hanasheh

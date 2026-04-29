@@ -1,0 +1,31 @@
+name: h16_line_final_bare_prep
+rule: H16
+subcase: line_final_bare_prep
+severity: STRONG-MERGE-CANDIDATE
+description: |
+  Line N ends with a BARE preposition (אֶל/עַל/מִן/תַּחַת/וְאֶל/וְעַל/...) — no
+  maqqef-joined complement. The prep is syntactically stranded; its
+  complement is on line N+1. Layer-1 syntax violation: a preposition
+  cannot end a colon without its complement.
+
+  Examples (audited 2026-04-29):
+    Josh 2:7  ...וַיִּסְגֹּרוּ הַשַּׁעַר עַל
+              הַמַּעְבְּרוֹת
+    2 Chr 9:3 ...וַתֵּרֶא מַלְכַּת־שְׁבָא אֵת   (DO marker — handled by h16_b)
+    2 Kgs 17:7 ...יָצְאוּ מִתַּחַת יַד
+                פַּרְעֹה
+
+  Discriminator from existing h11/h11_2: those fire on FRONTING (line N first
+  token is prep). h16 fires on STRANDING (line N last token is bare prep).
+  Different position → different rule.
+
+trigger:
+  line_n_last_token:
+    morphology: bare_prep
+  combined_max_prosodic_words: 10
+
+guards:
+  - poetic_register
+
+annotation_template: "Line-final bare preposition stranded ({pwc} prosodic words)"
+suggested_action: MERGE

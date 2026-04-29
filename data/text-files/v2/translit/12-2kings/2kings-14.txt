@@ -33,8 +33,7 @@ ki | im | ish | bechet'o | yamut
 14:7
 hu | hikah | et | Edom | begei | melach | aseret | alafim
 vetafas | et | Hasela | bamilchamah
-vaiyikra | et | shemah | Yakete'el | ad
-haiyom | hazeh
+vaiyikra | et | shemah | Yakete'el | ad | haiyom | hazeh
 
 14:8
 az | shalach | Amatzyah | mal'akhim
@@ -80,15 +79,13 @@ Shomeronah
 
 14:15
 veyeter | divrei | Yeho'ash | asher | asah | ugevurato
-va'asher | Nilcham | im
-Amatzyahu | melekh | Yehudah
+va'asher | Nilcham | im | Amatzyahu | melekh | Yehudah
 halo | hem | ketuvim | al | sefer | divrei | haiyamim
 lemalkhei | Yisra'el
 
 14:16
 vaiyishkav | Yeho'ash | im | avotav
-vaiyikaver | Beshomeron | im
-malkhei | Yisra'el
+vaiyikaver | Beshomeron | im | malkhei | Yisra'el
 vaiyimlokh | Yarave'am | beno
 tachtav
 
@@ -119,8 +116,7 @@ vaiyikaver | Birushalim | im | avotav | be'ir | David
 vaiyikchu | kol | am | Yehudah | et | Azaryah
 vehu
 ben | shesh | esreh | shanah
-vaiyamlikhu | oto | tachat
-aviv | Amatzyahu
+vaiyamlikhu | oto | tachat | aviv | Amatzyahu
 
 14:22
 hu | banah | et | Eilat
@@ -152,8 +148,8 @@ ve'ein | ozer | Leyisra'el
 
 14:27
 velo | diber | Yahweh
-limchot | et | shem | Yisra'el | mitachat
-hashamayim | vaiyooshi'em | beyad
+limchot | et | shem | Yisra'el | mitachat | hashamayim
+vaiyooshi'em | beyad
 Yarave'am | ben | Yo'ash
 
 14:28
@@ -163,7 +159,6 @@ halo | hem | ketuvim | al | sefer | divrei | haiyamim
 lemalkhei | Yisra'el
 
 14:29
-vaiyishkav | Yarave'am | im | avotav | im
-malkhei | Yisra'el
+vaiyishkav | Yarave'am | im | avotav | im | malkhei | Yisra'el
 vaiyimlokh | Zekharyah | veno
 tachtav

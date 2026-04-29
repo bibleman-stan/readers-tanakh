@@ -51,8 +51,7 @@ ve'asita | alav | zer | zahav | saviv
 
 25:12
 veyatzakta | lo | arba | tabe'ot | zahav
-venatatah | al
-arba | pa'amotav
+venatatah | al | arba | pa'amotav
 ushetei | taba'ot | al | tzal'o | ha'echat
 ushetei | taba'ot | al | tzal'o
 hashenit
@@ -64,8 +63,8 @@ vetzipita | otam
 zahav
 
 25:14
-veheveta | et | habadim | bataba'ot | al
-tzal'ot | ha'aron | laset | et | ha'aron | bahem
+veheveta | et | habadim | bataba'ot | al | tzal'ot | ha'aron
+laset | et | ha'aron | bahem
 
 25:15
 betabe'ot | ha'aron | yihyu
@@ -126,8 +125,7 @@ zahav | tahor
 ve'asita | lo | zer | zahav | saviv
 
 25:25
-ve'asita | lo | misgeret | tofach | saviv
-ve'asita | zer | zahav | lemisgarto | saviv
+ve'asita | lo | misgeret | tofach | saviv | ve'asita | zer | zahav | lemisgarto | saviv
 
 25:26
 ve'asita | lo | arba

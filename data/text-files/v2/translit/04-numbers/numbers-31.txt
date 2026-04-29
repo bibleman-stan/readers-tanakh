@@ -2,10 +2,8 @@
 vaydaber | Yahweh | el | Mosheh | lemor
 
 31:2
-nekom | nikmat | benei | Yisra'el | me'et
-hamidyanim
-achar
-te'asef | el | ameikha
+nekom | nikmat | benei | Yisra'el | me'et | hamidyanim
+achar | te'asef | el | ameikha
 
 31:3
 vaydaber | Mosheh | el | ha'am | lemor
@@ -63,8 +61,7 @@ vaiyetze'u | Mosheh | Ve'el'azar | hakohen | vekhol | nesi'ei | ha'edah | likrat
 el | michutz | lamachaneh
 
 31:14
-vaiyiktzof | Mosheh | al
-pekudei | hechayil
+vaiyiktzof | Mosheh | al | pekudei | hechayil
 sarei | ha'alafim | vesarei | hame'ot
 haba'im | mitzeva | hamilchamah
 
@@ -134,8 +131,7 @@ verashei | avot | ha'edah
 31:27
 vechatzita | et | hamalkoach
 bein | tofesei | hamilchamah
-haiyotze'im | latzava | uvein
-kol | ha'edah
+haiyotze'im | latzava | uvein | kol | ha'edah
 
 31:28
 vaharemota | mekhes | Layahweh | me'et | anshei | hamilchamah | haiyotze'im | latzava
@@ -263,8 +259,7 @@ kol | keli | ma'aseh
 31:52
 vayhi | kol | zehav | haterumah | asher | herimu | Layahweh
 shishah | asar | elef | sheva | me'ot | vachamishim
-shakel | me'et | sarei | ha'alafim | ume'et
-sarei | hame'ot
+shakel | me'et | sarei | ha'alafim | ume'et | sarei | hame'ot
 
 31:53
 anshei | hatzava | bazezu

@@ -50,8 +50,7 @@ ve'et | kol | batei | Yerushalim | ve'et | kol | beit | gadol
 saraf | ba'esh
 
 25:10
-ve'et | chomot | Yerushalim | saviv
-natetzu | kol | cheil | Kasdim | asher | rav | tabachim
+ve'et | chomot | Yerushalim | saviv | natetzu | kol | cheil | Kasdim | asher | rav | tabachim
 
 25:11
 ve'et | yeter | ha'am | hanish'arim | ba'ir | ve'et | hanofelim | asher | nafelu | al | hamelekh | Bavel
@@ -86,8 +85,8 @@ kol | hakelim | ha'eleh
 
 25:17
 shemoneh | esreh | amah | komat | ha'amud | ha'echad | vekhoteret | alav | nechoshet | vekomat | hakoteret | shalosh | amah
-usevakhah | verimonim | al | hakoteret | saviv
-hakol | nechoshet | vekha'eleh | la'amud | hasheni | al | hasevakhah
+usevakhah | verimonim | al | hakoteret | saviv | hakol | nechoshet
+vekha'eleh | la'amud | hasheni | al | hasevakhah
 
 25:18
 vaiyikach | rav | tabachim | et | Serayah | kohen | harosh

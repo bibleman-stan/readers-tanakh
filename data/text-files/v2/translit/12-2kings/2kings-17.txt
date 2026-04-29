@@ -52,8 +52,7 @@ mimigdal | notzrim | ad | ir | mivtzar
 17:10
 vaiyatzivu | lahem | matzevot
 va'asherim
-al | kol | giv'ah | gevohah | vetachat
-kol | etz | ra'anan
+al | kol | giv'ah | gevohah | vetachat | kol | etz | ra'anan
 
 17:11
 vaykateru | sham | bekhol | bamot | kagoyim
@@ -132,13 +131,11 @@ bekhol | chatot | Yarave'am | asher | asah | lo | saru | mimenah
 ad | asher | hesir | Yahweh | et | Yisra'el | me'al | panav
 ka'asher | diber | beyad
 kol | avadav | hanevi'im
-vaiyigel | Yisra'el | me'al | admato | Ashurah | ad
-haiyom | hazeh
+vaiyigel | Yisra'el | me'al | admato | Ashurah | ad | haiyom | hazeh
 
 17:24
 vaiyave | melekh | Ashur | Mibavel | Umikutah | Ume'ava | Umechamat | Usefarvayim
-vaiyoshev | be'arei | Shomeron | tachat
-benei | Yisra'el
+vaiyoshev | be'arei | Shomeron | tachat | benei | Yisra'el
 vaiyirshu | et | Shomeron
 vaiyeshevu | be'areiha
 
@@ -254,5 +251,4 @@ vaiyihyu | hagoyim | ha'eleh | yere'im | et | Yahweh
 ve'et | pesileihem
 hayu | oedim
 gam | beneihem | uvenei | veneihem | ka'asher | asu | avotam | hem | osim
-ad
-haiyom | hazeh
+ad | haiyom | hazeh

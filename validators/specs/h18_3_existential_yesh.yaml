@@ -13,6 +13,7 @@ trigger:
   line_n_last_token:
     skeleton_in:
       - "יש"
+      - "אין"
   line_n1_anywhere:
     has_finite_verb: false
 

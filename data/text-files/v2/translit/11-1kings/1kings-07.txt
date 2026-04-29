@@ -111,8 +111,7 @@ amot
 7:20
 vekhotarot | al | shenei | ha'amudim
 gam | mima'al | mile'umat | habeten | asher | le'ever | hasevakhah
-veharimonim | matayim | turim | saviv | al
-hakoteret | hashenit
+veharimonim | matayim | turim | saviv | al | hakoteret | hashenit
 
 7:21
 vaiyakem | et | ha'amudim | le'ulam
@@ -133,8 +132,7 @@ yaso | oto | saviv
 
 7:24
 ufeka'im | mitachat | lisfato | saviv | soevim | oto
-eser | ba'amah | makifim | et | haiyam | saviv
-shenei | turim | hapeka'im
+eser | ba'amah | makifim | et | haiyam | saviv | shenei | turim | hapeka'im
 yetzukim | bitzukato
 
 7:25
@@ -196,8 +194,8 @@ ha'echat | min | hamekhonah | ketefeiha
 
 7:35
 uverosh | hamekhonah | chatzi | ha'amah | komah
-agol | saviv
-ve'al | rosh | hamekhonah | yedoteiha | umisgeroteiha | mimenah
+agol | saviv | ve'al | rosh | hamekhonah | yedoteiha
+umisgeroteiha | mimenah
 
 7:36
 vayfatach | al | haluchot | yedoteiha | ve'al | misgeroteiha | keruvim

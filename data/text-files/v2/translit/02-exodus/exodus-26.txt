@@ -70,8 +70,7 @@ vehayah | echad
 veserach | ha'odef | biri'ot
 ha'ohel
 chatzi | hayri'ah | ha'odefet
-tisrach | al
-achorei | hamishkan
+tisrach | al | achorei | hamishkan
 
 26:13
 veha'amah | mizeh | veha'amah | mizeh | ba'odef | be'orekh
@@ -107,8 +106,7 @@ negbah | teimanah
 
 26:19
 ve'arba'im | adnei | khesef
-ta'aseh | tachat
-esrim | hakaresh
+ta'aseh | tachat | esrim | hakaresh
 shenei | adanim | tachat | hakeresh | ha'echad | lishtei | yedotav
 ushenei | adanim | tachat | hakeresh | ha'echad
 lishtei | yedotav
@@ -121,8 +119,7 @@ esrim | karesh
 26:21
 ve'arba'im | adneihem | kasef
 shenei | adanim | tachat | hakeresh | ha'echad
-ushenei | adanim | tachat
-hakeresh | ha'echad
+ushenei | adanim | tachat | hakeresh | ha'echad
 
 26:22
 uleyarketei | hamishkan
@@ -146,8 +143,7 @@ vehayu | shemonah | kerashim
 ve'adneihem | kesef
 shishah | asar | adanim
 shenei | adanim | tachat | hakeresh | ha'echad
-ushenei | adanim | tachat
-hakeresh | ha'echad
+ushenei | adanim | tachat | hakeresh | ha'echad
 
 26:26
 ve'asita | verichim
@@ -191,8 +187,7 @@ et | aron | ha'edut
 vehivdilah | haparokhet | lakhem | bein | hakodesh | uvein | kodesh | hakodashim
 
 26:34
-venatata | et | hakaporet | al
-aron | ha'edut | bekodesh
+venatata | et | hakaporet | al | aron | ha'edut | bekodesh
 hakodashim
 
 26:35
