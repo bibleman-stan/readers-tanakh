@@ -162,9 +162,8 @@ uvenei | Nadav | Seled | Ve'apayim
 vaiyamot | Seled | lo | vanim
 
 2:31
-uvenei | Apayim | Yish'i
-uvenei | Yish'i | Sheshan | uvenei | Sheshan
-Achlai
+uvenei | Apayim | Yish'i | uvenei | Yish'i | Sheshan
+uvenei | Sheshan | Achlai
 
 2:32
 uvenei | Yada | achi | Shamai | Yeter | Veyonatan

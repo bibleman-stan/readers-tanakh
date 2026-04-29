@@ -13,8 +13,8 @@ ve'et | hakasdim | asher | Nimtze'u | sham | et | anshei | hamilchamah
 hikah | Yishma'el
 
 41:4
-vayhi | baiyom | hasheni | lehamit | et | Gedalyahu
-ve'ish
+vayhi | baiyom | hasheni
+lehamit | et | Gedalyahu | ve'ish
 lo | yada
 
 41:5
@@ -30,7 +30,8 @@ vayhi | kifgosh | otam
 vaiyomer | aleihem | bo'u | el | Gedalyahu | ven | Achikam
 
 41:7
-vayhi | kevo'am | el | tokh | ha'ir
+vayhi | kevo'am
+el | tokh | ha'ir
 vaiyishchatem | Yishma'el | ben | Netanyah | el | tokh | habor | hu
 veha'anashim | asher | ito
 
@@ -64,8 +65,9 @@ ben | Netanyah
 
 41:12
 vaiyikchu | et | kol | ha'anashim
-vaiyelekhu | lehilachem | im | Yishma'el | ben | Netanyah
-vaiyimtze'u | oto | el | mayim | rabim | asher | Begiv'on
+vaiyelekhu | lehilachem
+im | Yishma'el | ben | Netanyah | vaiyimtze'u | oto
+el | mayim | rabim | asher | Begiv'on
 
 41:13
 vayhi | kir'ot | kol | ha'am | asher | et | Yishma'el | et | Yochanan | ben | Kareach

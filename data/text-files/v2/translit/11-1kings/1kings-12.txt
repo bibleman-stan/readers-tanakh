@@ -60,11 +60,9 @@ katani | avah | mimatenei | avi
 
 12:11
 ve'atah | avi | he'mis | aleikhem | ol | kaved
-va'ani
-osif | al | ulekhem
+va'ani | osif | al | ulekhem
 avi | yisar | etkhem | bashotim
-va'ani
-ayaser | etkhem | ba'akrabim
+va'ani | ayaser | etkhem | ba'akrabim
 
 12:12
 vaiyavov | Yarave'am | vekhol | ha'am | el | Rechav'am | baiyom | hashelishi
@@ -73,15 +71,16 @@ shuvu | elai | baiyom | hashelishi
 
 12:13
 vaiya'an | hamelekh | et | ha'am
-kashah | vaiya'azo | et | atzat | hazekenim | asher | ye'atzuhu
+kashah
+vaiya'azo | et | atzat | hazekenim | asher | ye'atzuhu
 
 12:14
 vaydaber | aleihem | ka'atzat | hayladim | lemor
-avi | hikhbid | et | ulekhem | va'ani
+avi | hikhbid | et | ulekhem
+va'ani
 osif | al | ulekhem
 avi | yisar | etkhem | bashotim
-va'ani
-ayaser | etkhem | ba'akrabim
+va'ani | ayaser | etkhem | ba'akrabim
 
 12:15
 velo | shama | hamelekh | el | ha'am

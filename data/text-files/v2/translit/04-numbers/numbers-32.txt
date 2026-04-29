@@ -4,7 +4,8 @@ atzum | me'od | vaiyir'u | et | eretz | Ya'zer | ve'et | eretz | Gil'ad
 vehineh | hamakom | mekom | mikneh
 
 32:2
-vaiyavo'u | venei | Gad | uvenei | Re'uven
+vaiyavo'u | venei | Gad
+uvenei | Re'uven
 vaiyomeru | el | Mosheh | ve'el | El'azar | hakohen
 ve'el | nesi'ei | ha'edah | lemor
 
@@ -44,8 +45,8 @@ benei | Yisra'el | levilti | vo | el | ha'aretz
 asher | natan | lahem | Yahweh
 
 32:10
-vaiyichar | af | Yahweh | baiyom | hahu
-vaiyishava | lemor
+vaiyichar | af | Yahweh
+baiyom | hahu | vaiyishava | lemor
 
 32:11
 im | yir'u | ha'anashim | ha'olim | Mimitzrayim | miben | esrim | shanah | vama'lah
@@ -91,7 +92,8 @@ yoshevei | ha'aretz
 32:18
 lo | nashuv | el | bateinu
 ad | hitnachel | benei | Yisra'el
-ish | nachalato
+ish
+nachalato
 
 32:19
 ki | lo | ninchal | itam | me'ever | Laiyarden

@@ -1,6 +1,6 @@
 19:1
-vaiyetze | hagoral | hasheni | Leshim'on | lemateh | venei | Shim'on | lemishpechotam
-vayhi | nachalatam | betokh
+vaiyetze | hagoral | hasheni | Leshim'on | lemateh | venei | Shim'on
+lemishpechotam | vayhi | nachalatam | betokh
 nachalat | benei | Yehudah
 
 19:2
@@ -36,7 +36,9 @@ ramat | Negev
 zot | nachalat | mateh | venei | Shim'on | lemishpechotam
 
 19:9
-mechevel | benei | Yehudah | nachalat | benei | Shim'on
+mechevel | benei | Yehudah
+nachalat
+benei | Shim'on
 ki | hayah | chelek | benei | Yehudah | rav | mehem
 vaiyinchalu | venei | Shim'on
 betokh | nachalatam
@@ -202,8 +204,7 @@ Tzare'ah | Ve'eshta'ol
 Ve'ir | Shamesh
 
 19:42
-Vesha'alabin | Ve'aiyalon
-Veyitlah
+Vesha'alabin | Ve'aiyalon | Veyitlah
 
 19:43
 Ve'eilon | Vetimnatah

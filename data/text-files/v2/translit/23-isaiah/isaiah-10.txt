@@ -27,9 +27,8 @@ umateh | hu | veyadam
 za'mi
 
 10:6
-begoy | chanef | ashallechenu | ve'al | am | evrati
-atzavvenu | lishlol | shalal | velavoz | baz
-ulesimov | mirmas | kechomer | chutzot
+begoy | chanef | ashallechenu | ve'al | am | evrati | atzavvenu
+lishlol | shalal | velavoz | baz | ulesimov | mirmas | kechomer | chutzot
 
 10:7
 vehu | lo | khen | yedameh | ulevavo
@@ -101,8 +100,7 @@ vehayah | kimsos | noses
 10:19
 ushe'ar | etz | ya'ro
 mispar | yihyu
-vena'ar
-yikhtevem
+vena'ar | yikhtevem
 
 10:20
 vehayah | baiyom | hahu | lo | yosif | od | she'ar | Yisra'el | ufeleitat | beit | Ya'ako

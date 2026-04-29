@@ -15,15 +15,13 @@ livnotav
 36:3
 vehayu | le'echad | mibenei | shivtei | venei | Yisra'el | lenashim
 venigre'ah | nachalatan | minachalat | avoteinu
-venosaf
-al | nachalat | hamateh | asher | tihyeinah | lahem
+venosaf | al | nachalat | hamateh | asher | tihyeinah | lahem
 umigoral | nachalatenu
 yigarea
 
 36:4
 ve'im | yihyeh | haiyovel | livnei | Yisra'el
-venosfah | nachalatan
-al | nachalat | hamateh | asher | tihyeinah | lahem
+venosfah | nachalatan | al | nachalat | hamateh | asher | tihyeinah | lahem
 uminachalat | mateh | avoteinu
 yigara
 nachalatan
@@ -51,7 +49,8 @@ vekhol | bat | yoreshet | nachalah | mimatot | benei | Yisra'el
 le'echad | mimishpachat | mateh | aviha
 tihyeh | le'ishah
 lema'an | yireshu | benei | Yisra'el
-ish | nachalat | avotav
+ish
+nachalat | avotav
 
 36:9
 velo | tiso | nachalah | mimateh | lemateh | acher

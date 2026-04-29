@@ -66,7 +66,8 @@ until | came | the king | Ahaz | from Damascus
 
 16:12
 and he came | the king | from Damascus
-and he saw | the king | [obj.] | the altar
+and he saw | the king
+[obj.] | the altar
 and he drew near | the king | to | the altar
 and he offered up | on it
 
@@ -112,6 +113,6 @@ of [the] kings of | Judah
 
 16:20
 and he lay down | Ahaz | with | ancestors his
-and he was buried | with | ancestors his | in [the] city of | David
-and he became king | Hezekiah | son his
+and he was buried | with | ancestors his
+in [the] city of | David | and he became king | Hezekiah | son his
 in place of him

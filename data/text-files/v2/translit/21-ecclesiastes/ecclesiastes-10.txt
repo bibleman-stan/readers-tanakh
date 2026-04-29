@@ -37,8 +37,8 @@ bo | yipol
 uforetz | gader | yishekhenu | nachash
 
 10:9
-masia | avanim | ye'atzev | bahem | bokea | etzim
-yisakhen | bam
+masia | avanim | ye'atzev
+bahem | bokea | etzim | yisakhen | bam
 
 10:10
 im | kehah | habarzel | vehu | lo | fanim | kilkal
@@ -60,7 +60,8 @@ tevalle'enu
 
 10:13
 techilat | divrei | fihu
-sikhlut | ve'acharit | pihu
+sikhlut
+ve'acharit | pihu
 holelut
 ra'ah
 
@@ -91,7 +92,9 @@ uveshiflut | yadayim
 yidlof | habayit
 
 10:19
-lischok | osim | lechem | veyayin | yesamach | chaiyim
+lischok | osim | lechem
+veyayin
+yesamach | chaiyim
 vehakesef | ya'aneh | et | hakol
 
 10:20

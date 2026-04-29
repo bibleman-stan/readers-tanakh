@@ -130,7 +130,8 @@ ve'al | mivtzarim | yechashev | machshevotav | ve'ad | et
 
 11:25
 veya'er | kocho | ulevavo | al | melekh | hanegev | bechayil | gadol
-umelekh | hanegev | yitgareh | lamilchamah | bechayil | gadol | ve'atzum | ad | me'od
+umelekh | hanegev | yitgareh | lamilchamah
+bechayil | gadol | ve'atzum | ad | me'od
 velo | ya'amod
 ki | yachshevu | alav | machashavot
 
@@ -171,7 +172,8 @@ venatenu
 hashikutz | meshomem
 
 11:32
-umarshi'ei | verit | yachanif | bachalakot | ve'am | yode'ei | elohav
+umarshi'ei | verit | yachanif
+bachalakot | ve'am | yode'ei | elohav
 yachaziku | ve'asu
 
 11:33
@@ -198,8 +200,7 @@ ki | necheratzah
 Ne'esatah
 
 11:37
-ve'al | elohei | avotav | lo | yavin
-ve'al | chemdat | nashim | ve'al | kol | eloah
+ve'al | elohei | avotav | lo | yavin | ve'al | chemdat | nashim | ve'al | kol | eloah
 lo | yavin
 ki | al | kol | yitgadal
 
@@ -211,8 +212,7 @@ uvachamudot
 11:39
 ve'asah | lemivtzerei | ma'uzim | im | eloah | nekhar | asher | hikir
 yarbeh | khavod | vehimshilam | barabim
-va'adamah
-yechalek | bimchir
+va'adamah | yechalek | bimchir
 
 11:40
 uve'et | ketz | yitnagach | imo | melekh | hanegev

@@ -5,8 +5,8 @@ ve'el | ha'omenim | Ach'av | lemor
 
 10:2
 ve'atah | bevo | hasefer | hazeh | aleikhem
-ve'itekhem | benei | adoneikhem
-ve'itekhem | harekhev | vehasusim
+ve'itekhem
+benei | adoneikhem | ve'itekhem | harekhev | vehasusim
 ve'ir | mivtzar | vehanashek
 
 10:3
@@ -78,7 +78,8 @@ hu | Beit | Eked | Haro'im | badarekh
 
 10:13
 Veyehu | matza | et | achei | Achazyahu | melekh | Yehudah
-vaiyomer | mi | atem
+vaiyomer
+mi | atem
 vaiyomeru | achei | Achazyahu | anachnu
 vanered | lishlom | benei | hamelekh | uvenei | hagevirah
 
@@ -138,7 +139,8 @@ vaiyotze | lahem
 hamalbush
 
 10:23
-vaiyavo | Yehu | Vihonadav | ben | Rekhav | beit | haba'al
+vaiyavo | Yehu | Vihonadav | ben | Rekhav
+beit | haba'al
 vaiyomer | le'oedei | haba'al | chapesu | ure'u | pen | yesh | poh | imakhem | me'avdei | Yahweh
 ki | im | oedei | haba'al | levadam
 
@@ -147,8 +149,7 @@ vaiyavo'u | la'asot
 zevachim | ve'olot
 Veyehu | som | lo | vachutz | shemonim | ish
 vaiyomer | ha'ish | asher | yimalet | min | ha'anashim | asher | ani | mevi | al | yedeikhem
-nafsho
-tachat | nafsho
+nafsho | tachat | nafsho
 
 10:25
 vayhi | kekhaloto | la'asot | ha'olah | vaiyomer | Yehu | laratzim | velashalishim | bo'u | hakum | ish | al | yetze

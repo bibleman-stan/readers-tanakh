@@ -80,7 +80,8 @@ hachutzah
 
 39:14
 vatikra | le'anshei | veitah | vatomer | lahem | lemor
-re'u | hevi | lanu | ish | ivri | letzachek | banu
+re'u | hevi | lanu | ish | ivri
+letzachek | banu
 ba | elai | lishkav | imi
 va'ekra | bekol | gadol
 
@@ -101,8 +102,8 @@ vatedaber | elav | kadevarim | ha'eleh | lemor
 ba | elai | ha'eved | ha'ivri | asher | heveta | lanu | letzachek | bi
 
 39:18
-vayhi | kaharimi | koli
-va'ekra
+vayhi
+kaharimi | koli | va'ekra
 vaiya'azo | bigdo | etzli
 vaiyanos | hachutzah
 

@@ -24,8 +24,8 @@ va'aseret | alafim
 et | ish | Yehudah
 
 15:5
-vaiyavo | Sha'ul | ad | ir | Amalek
-vaiyarev | banachal
+vaiyavo | Sha'ul
+ad | ir | Amalek | vaiyarev | banachal
 
 15:6
 vaiyomer | Sha'ul | el | hakeini | lekhu | suru | redu | mitokh | amalki | pen | osifkha | imo
@@ -174,8 +174,8 @@ vehishtachaveiti
 Layahweh | eloheikha
 
 15:31
-vaiyashov | Shemu'el | acharei | Sha'ul
-vaiyishtachu | Sha'ul | Layahweh
+vaiyashov | Shemu'el
+acharei | Sha'ul | vaiyishtachu | Sha'ul | Layahweh
 
 15:32
 vaiyomer | Shemu'el | hagishu | elai | et | Agag | melekh | Amalek
@@ -184,8 +184,7 @@ Agag | ma'adanot | vaiyomer | Agag
 akhen | sar | mar | hamavet
 
 15:33
-vaiyomer | Shemu'el
-ka'asher | shikelah | nashim | charbekha
+vaiyomer | Shemu'el | ka'asher | shikelah | nashim | charbekha
 ken | tishkal | minashim | imekha
 vayshasef | Shemu'el | et | Agag | lifnei | Yahweh | Bagilgal
 

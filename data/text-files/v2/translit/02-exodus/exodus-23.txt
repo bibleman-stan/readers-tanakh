@@ -53,8 +53,8 @@ chaiyat | hasadeh
 ken | ta'aseh | lekharmekha | lezeitekha
 
 23:12
-sheshet | yamim | ta'aseh | ma'aseikha | uvaiyom | hashevi'i
-tishbot
+sheshet | yamim | ta'aseh | ma'aseikha
+uvaiyom | hashevi'i | tishbot
 lema'an | yanuach | shorkha | vachamorekha
 veyinafesh | ben | amatekha
 vehager
@@ -150,7 +150,8 @@ chaiyat | hasadeh
 23:30
 me'at | me'at | agareshenu | mipaneikha
 ad | asher | tifreh
-venachalta | et | ha'aretz
+venachalta
+et | ha'aretz
 
 23:31
 veshati | et | gevulkha | miyam | suf | ve'ad | yam | pelishtim | umimidbar | ad | Hanahar

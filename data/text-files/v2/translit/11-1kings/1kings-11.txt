@@ -24,9 +24,7 @@ David | aviv
 11:5
 vaiyelekh | Shelomoh | acharei | Ashtoret
 elohei
-tzidonim
-ve'acharei | Milkom
-shikutz
+tzidonim | ve'acharei | Milkom | shikutz
 amonim
 
 11:6
@@ -97,8 +95,7 @@ vaiyavo'u
 Paran
 vaiyikchu | anashim | imam | Miparan | vaiyavo'u | Mitzrayim | el | par'oh | melekh | Mitzrayim
 vaiyiten | lo | vayit | velechem | amar | lo
-ve'eretz
-natan | lo
+ve'eretz | natan | lo
 
 11:19
 vaiyimtza | Hadad | chen | be'einei | far'oh | me'od | vaiyiten | lo | ishah | et | achot | ishto
@@ -107,8 +104,10 @@ Tachpeneis | hagevirah
 
 11:20
 vateled | lo | achot | Tachpeneis | et | Genuvat | beno
-vatigmelehu | Tachpenes | betokh | beit | par'oh
-vayhi | Genuvat | beit | par'oh | betokh | benei | far'oh
+vatigmelehu | Tachpenes | betokh
+beit | par'oh
+vayhi | Genuvat | beit | par'oh | betokh
+benei | far'oh
 
 11:21
 Vahadad | shama | Bemitzrayim | ki | shakhav | David | im | avotav
@@ -229,7 +228,8 @@ va'aneh | et | zera | David | lema'an | zot
 akh | lo | khol | haiyamim
 
 11:40
-vayvakesh | Shelomoh | lehamit | et | Yarave'am
+vayvakesh | Shelomoh
+lehamit | et | Yarave'am
 vaiyakom | Yarave'am | vaiyivrach | Mitzrayim | el | Shishak | melekh | Mitzrayim
 vayhi | Vemitzrayim | ad | mot | Shelomoh
 

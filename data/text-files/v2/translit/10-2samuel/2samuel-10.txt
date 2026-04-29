@@ -1,7 +1,7 @@
 10:1
 vayhi | acharei | khen
-vaiyamot | melekh | benei | Amon
-vaiyimlokh | Chanun | beno
+vaiyamot | melekh
+benei | Amon | vaiyimlokh | Chanun | beno
 tachtav
 
 10:2
@@ -19,8 +19,8 @@ eleikha
 
 10:4
 vaiyikach | Chanun | et | avdei | David | vaygalach | et | chatzi | zekanam
-vaiyikhrot | et | madveihem | bachetzi | ad | shetoteihem
-vayshalechem
+vaiyikhrot | et | madveihem | bachetzi
+ad | shetoteihem | vayshalechem
 
 10:5
 vaiyagidu | Ledavid | vaiyishlach | likratam
@@ -70,8 +70,8 @@ arei | eloheinu | Vayahweh
 ya'aseh | hatov | be'einav
 
 10:13
-vaiyigash | Yo'av | veha'am | asher | imo | lamilchamah | Ba'aram
-vaiyanusu | mipanav
+vaiyigash | Yo'av | veha'am | asher | imo | lamilchamah
+Ba'aram | vaiyanusu | mipanav
 
 10:14
 uvenei | Amon | ra'u | ki | nas | Aram

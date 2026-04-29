@@ -14,7 +14,8 @@ tavozu | lakhem
 sim | lekha | orev | la'ir | me'achareiha
 
 8:3
-vaiyakom | Yehoshua | vekhol | am | hamilchamah | la'alot | Ha'ai
+vaiyakom | Yehoshua | vekhol | am | hamilchamah
+la'alot | Ha'ai
 vaiyivchar | Yehoshua | sheloshim | elef | ish | giborei | hachayil
 vaiyishlachem | layelah
 
@@ -24,8 +25,7 @@ al | tarchiku | min | ha'ir | me'od | vihyitem | kulekhem
 nekhonim
 
 8:5
-va'ani | vekhol | ha'am | asher | iti
-nikrav | el | ha'ir
+va'ani | vekhol | ha'am | asher | iti | nikrav | el | ha'ir
 vehayah | ki | yetze'u | likratenu | ka'asher | barishonah
 venasnu | lifneihem
 
@@ -49,8 +49,10 @@ tziviti | etkhem
 
 8:9
 vaiyishlachem | Yehoshua | vaiyelekhu | el | hama'rav
-vaiyeshevu | bein | Beit | El | uvein | Ha'ai | miyam | La'ai
-vaiyalen | Yehoshua | balaylah | hahu | betokh | ha'am
+vaiyeshevu | bein | Beit | El | uvein | Ha'ai
+miyam | La'ai
+vaiyalen | Yehoshua | balaylah | hahu
+betokh | ha'am
 
 8:10
 vaiyashkem | Yehoshua | baboker
@@ -60,8 +62,8 @@ Ha'ai
 
 8:11
 vekhol | ha'am | hamilchamah | asher | ito | alu | vaiyigeshu
-vaiyavo'u | neged | ha'ir
-vaiyachanu | mitzefon | La'ai
+vaiyavo'u
+neged | ha'ir | vaiyachanu | mitzefon | La'ai
 vehagai | beinov | uvein | Ha'ai
 
 8:12
@@ -175,8 +177,8 @@ Eival
 
 8:31
 ka'asher | tzivah | Mosheh | eved | Yahweh | et | benei | Yisra'el | kakatuv | besefer | torat | Mosheh
-mizbach | avanim | shelemot | asher | lo | henif | aleihen | barzel
-vaiya'alu | alav | olot | Layahweh
+mizbach | avanim | shelemot | asher | lo | henif | aleihen
+barzel | vaiya'alu | alav | olot | Layahweh
 vaiyizbechu
 shelamim
 

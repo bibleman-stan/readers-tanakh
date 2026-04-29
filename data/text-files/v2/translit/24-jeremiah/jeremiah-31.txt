@@ -70,8 +70,8 @@ velo | yosifu | leda'avah
 od
 
 31:13
-az | tismach | betulah | bemachol | uvachurim | uzekenim
-yachdav
+az | tismach | betulah | bemachol
+uvachurim | uzekenim | yachdav
 vehafakhti | evlam | lesason | venichamtim
 vesimachtim | migonam
 
@@ -105,15 +105,15 @@ hashiveni | ve'ashuvah
 ki | atah | Yahweh | elohai
 
 31:19
-ki | acharei | shuvi | Nichamti
-ve'acharei | hivade'i
+ki | acharei | shuvi | Nichamti | ve'acharei | hivade'i
 safakti | al | yarekh | bosheti | vegam | Nikhlamti
 ki | nasati
 cherpat | ne'urai
 
 31:20
 haven | yakir | li | Efrayim | im | yeled | sha'ashu'im
-ki | midei | daberi | bo | zakhor | ezkerenu
+ki | midei | daberi | bo
+zakhor | ezkerenu
 od | al | ken | hamu | me'ai | lo
 rachem | arachamenu
 ne'um | Yahweh
@@ -130,8 +130,7 @@ ad | matai | titchamakin
 habat
 hashoevah
 ki | vara | Yahweh | chadashah | ba'aretz
-nekevah
-tesoev | gaver
+nekevah | tesoev | gaver
 
 31:23
 koh | amar | Yahweh | tzeva'ot | elohei | Yisra'el

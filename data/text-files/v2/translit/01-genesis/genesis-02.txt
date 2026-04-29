@@ -23,7 +23,8 @@ vekhol | siach | hasadeh | terem | yihyeh | va'aretz
 vekhol | esev | hasadeh
 terem | yitzmach
 ki | lo | himtir | Yahweh | elohim | al | ha'aretz
-ve'adam | ayin | la'avod | et | ha'adamah
+ve'adam | ayin | la'avod
+et | ha'adamah
 
 2:6
 ve'ed
@@ -94,8 +95,8 @@ mimenu | ki | beyom | akhalkha | mimenu
 mot | tamut
 
 2:18
-vaiyomer | Yahweh | elohim | lo | tov | heyot | ha'adam | levado
-e'eseh | lo | ezer | kenegdo
+vaiyomer | Yahweh | elohim | lo | tov | heyot | ha'adam
+levado | e'eseh | lo | ezer | kenegdo
 
 2:19
 vaiyitzer | Yahweh | elohim | min | ha'adamah | kol | chaiyat | hasadeh | ve'et | kol | of | hashamayim
@@ -115,8 +116,8 @@ vaiyisgor | basar
 tachtenah
 
 2:22
-vaiyiven | Yahweh | elohim | et | hatzela | asher | lakach | min | ha'adam | le'ishah
-vayvi'eha | el | ha'adam
+vaiyiven | Yahweh | elohim | et | hatzela | asher | lakach | min | ha'adam
+le'ishah | vayvi'eha | el | ha'adam
 
 2:23
 vaiyomer | ha'adam | zot | hapa'am | etzem | me'atzamai
@@ -131,5 +132,6 @@ levasar | echad
 
 2:25
 vaiyihyu | sheneihem | arumim
-ha'adam | ve'ishto
-velo | yitboshashu
+ha'adam
+ve'ishto | velo
+yitboshashu

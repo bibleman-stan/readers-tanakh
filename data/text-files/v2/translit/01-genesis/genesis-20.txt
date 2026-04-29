@@ -1,7 +1,7 @@
 20:1
 vaiyisa | misham | Avraham | artzah | Hanegev
-vaiyeshev | bein | Kadesh | uvein | Shur
-vaiyagor | Bigrar
+vaiyeshev | bein | Kadesh
+uvein | Shur | vaiyagor | Bigrar
 
 20:2
 vaiyomer | Avraham | el | Sarah | ishto
@@ -10,13 +10,14 @@ vaiyishlach | Avimelekh | melekh | Gerar
 vaiyikach | et | Sarah
 
 20:3
-vaiyavo | elohim | el | Avimelekh | bachalom | halayelah
+vaiyavo | elohim | el | Avimelekh
+bachalom | halayelah
 vaiyomer | lo | hinekha | met | al | ha'ishah | asher | lakachta
 vehiv | be'ulat | ba'al
 
 20:4
-Va'avimelekh | lo | karav
-eleiha
+Va'avimelekh
+lo | karav | eleiha
 vaiyomar
 Adonai
 hagoy | gam | tzadik

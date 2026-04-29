@@ -51,8 +51,9 @@ tzedakah | nekaveh | la'or | vehineh | choshekh | lingohot
 ba'afelot | nehalekh
 
 59:10
-negashshah | kha'ivrim | kir | ukhe'ein | einayim
-negasheshah | kashalnu | vatzohorayim | kaneshef | ba'ashmanim | kametim
+negashshah | kha'ivrim | kir
+ukhe'ein | einayim | negasheshah | kashalnu | vatzohorayim | kaneshef | ba'ashmanim
+kametim
 
 59:11
 nehemeh | khadubim | kulanu
@@ -86,8 +87,7 @@ vaiyar | Yahweh | vaiyera | be'einav
 ki | ein | mishpat
 
 59:16
-vaiyar | ki | ein | ish
-vaiyishtomem
+vaiyar | ki | ein | ish | vaiyishtomem
 ki | ein | mafgia | vatoosha | lo | zero'o
 vetzidkato
 hi | semakhatehu

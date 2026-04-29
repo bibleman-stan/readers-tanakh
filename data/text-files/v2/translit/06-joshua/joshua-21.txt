@@ -1,6 +1,6 @@
 21:1
-vaiyigeshu | rashei | avot | halviyim | el | El'azar | hakohen
-ve'el | Yehoshua
+vaiyigeshu | rashei | avot | halviyim
+el | El'azar | hakohen | ve'el | Yehoshua
 bin | Nun | ve'el | rashei | avot | hamatot
 livnei | Yisra'el
 
@@ -15,7 +15,8 @@ el | pi | Yahweh | et | he'arim | ha'eleh
 ve'et | migresheihen
 
 21:4
-vaiyetze | hagoral | lemishpechot | hakehati
+vaiyetze | hagoral
+lemishpechot | hakehati
 vayhi | livnei | Aharon | hakohen | min | halviyim | mimateh | Yehudah | umimateh | hashim'oni | umimateh | Vinyamin | bagoral
 arim
 shelosh | esreh

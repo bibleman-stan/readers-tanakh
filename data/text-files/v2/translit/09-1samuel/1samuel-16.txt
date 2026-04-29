@@ -31,7 +31,8 @@ vaiyikra | lahem | lazavach
 
 16:6
 vayhi | bevo'am
-vaiyar | et | Eli'av
+vaiyar
+et | Eli'av
 vaiyomer
 akh | neged | Yahweh | meshicho
 
@@ -45,8 +46,8 @@ yir'eh | lalevav
 
 16:8
 vaiyikra | Yishai | el | Avinadav
-vaiya'avirehu | lifnei | Shemu'el
-vaiyomer
+vaiya'avirehu
+lifnei | Shemu'el | vaiyomer
 gam | bazeh
 lo | vachar | Yahweh
 
@@ -57,8 +58,8 @@ gam | bazeh
 lo | vachar | Yahweh
 
 16:10
-vaiya'aver | Yishai | shiv'at | banav | lifnei | Shemu'el
-vaiyomer | Shemu'el | el | Yishai
+vaiya'aver | Yishai | shiv'at | banav
+lifnei | Shemu'el | vaiyomer | Shemu'el | el | Yishai
 lo | vachar | Yahweh | ba'eleh
 
 16:11

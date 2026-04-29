@@ -29,8 +29,8 @@ venatatah | et | mizbach | ha'olah | lifnei
 petach | mishkan | ohel | mo'ed
 
 40:7
-venatata | et | hakiyor | bein | ohel | mo'ed | uvein | hamizbeach
-venatata | sham | mayim
+venatata | et | hakiyor | bein | ohel | mo'ed
+uvein | hamizbeach | venatata | sham | mayim
 
 40:8
 vesamta | et | hechatzer | saviv | venatata | et | masakh
@@ -143,7 +143,8 @@ vaiya'al | alav | et | ha'olah | ve'et | haminchah
 ka'asher | tzivah | Yahweh | et | Mosheh
 
 40:30
-vaiyasem | et | hakiyor | bein | ohel | mo'ed | uvein | hamizbeach
+vaiyasem | et | hakiyor | bein | ohel | mo'ed
+uvein | hamizbeach
 vaiyiten | shamah | mayim | lerachetzah
 
 40:31

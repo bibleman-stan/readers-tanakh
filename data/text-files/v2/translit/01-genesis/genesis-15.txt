@@ -59,8 +59,8 @@ vegozal
 
 15:10
 vaiyikach | lo | et | kol | eleh | vayvater | otam | batavekh
-vaiyiten | ish | bitro | likrat | re'ehu
-ve'et | hatzipor | lo | vatar
+vaiyiten | ish | bitro
+likrat | re'ehu | ve'et | hatzipor | lo | vatar
 
 15:11
 vaiyered | ha'ayit | al | hapegarim
@@ -81,7 +81,9 @@ arba | me'ot | shanah
 
 15:14
 vegam | et | hagoy | asher | ya'avodu
-dan | anokhi | ve'acharei | khen | yetze'u | birkhush | gadol
+dan | anokhi
+ve'acharei | khen | yetze'u
+birkhush | gadol
 
 15:15
 ve'atah | tavo | el | avoteikha | beshalom

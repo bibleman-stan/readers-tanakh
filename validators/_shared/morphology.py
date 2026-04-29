@@ -115,7 +115,11 @@ QATAL_COMMON = {
     # speech
     "אמר", "דבר", "ענה", "קרא", "צוה", "ספר",
     # cognition
-    "ידע", "ראה", "שמע", "זכר", "חשב", "הבין",
+    # NOTE: "זכר" excluded — homograph with זָכָר (noun "male"). Skeleton can't
+    # disambiguate without niqqud (qamatz-qamatz noun vs. qamatz-patah qatal).
+    # Per canon §1 hybrid policy, prefer FN on rare qatal "remembered" 3ms over
+    # FP on common noun "male". Wayyiqtol וַיִּזְכֹּר / yiqtol יִזְכֹּר still detected.
+    "ידע", "ראה", "שמע", "חשב", "הבין",
     # motion
     "הלך", "בא", "באה", "יצא", "שב", "קם", "ירד", "עלה", "פנה", "סר", "נע", "נד",
     # perception
@@ -138,6 +142,55 @@ QATAL_COMMON = {
 }
 
 
+# Yiqtol-prefix-conflict nouns — skeletons that LOOK like yiqtol forms
+# (start with י/ת/א/נ) but are actually nouns. Per canon §1 hybrid policy
+# (2026-04-29): prefer lexical exclusion over niqqud-aware vowel inspection.
+# This list is also reused in the wayyiqtol check to filter vav+noun forms
+# (וְנָקֵבָה, וְאָדָם, וְתוֹרָה, etc.) that would otherwise look like
+# 1cp/1cs/3fs wayyiqtol.
+YIQTOL_KNOWN_NOUNS = {
+    # י-initial nouns
+    "יד", "ים", "יום", "ין", "יין", "יער", "יען", "ימים",
+    "ירא", "ירה",  # fear/shoot (can be noun in some forms)
+    # ── α-prefix nouns (lexical exclusion per canon §1 hybrid policy)
+    # chataf-aleph noun stems
+    "אדמה", "אדמת", "אדמתו", "אדמתי", "אדמתך", "אדמתם",
+    "אמונה", "אמונת", "אמונתי",
+    "אנוש", "אנושי",
+    "אלהים", "אלהי", "אלהיו", "אלהיך", "אלהינו", "אלהיכם", "אלהיהם",
+    "אלוה",
+    "אדון", "אדונים", "אדונו", "אדוני", "אדונך",
+    "אדנים", "אדנו", "אדנך",
+    "אדני", "אדנינו", "אדניך", "אדניכם", "אדניהם",
+    # hireq-aleph noun stems
+    "אישה", "אשה", "אשת", "אשתו", "אשתי", "אשתך", "אשתם", "אשתן", "אשתכם", "אשתהם",
+    "אישון", "איתן", "איתנים", "אילם", "אילים",
+    # tsere-aleph noun stems
+    "אמת", "אמתי", "אמתך",
+    "אילת", "אילי",
+    # other α-prefix nouns
+    "אחד", "אחת", "אחור", "אחרי", "אחרית",
+    "אחי", "אחיו", "אחיך", "אחינו", "אחיכם", "אחים",
+    "אנחנו", "אנכי", "אני",
+    "ארצי", "ארצנו", "ארצו", "ארצם", "ארצך", "ארצכם", "ארצהם",
+    "ארץ", "ארצות",
+    "אילון", "אכזב", "אכזרי", "אסיר", "אסירי",
+    "אדם", "אדמני",
+    # נ-initial nouns (vav-prefix would look like 1cp wayyiqtol)
+    "נקבה", "נקבות", "נער", "נערה", "נערים", "נערות",
+    "נשים", "נשי", "נשיו", "נשיהם",
+    "נביא", "נביאים", "נביאי",
+    "נחל", "נחלי", "נחלת", "נחלתו",
+    "נפש", "נפשו", "נפשי", "נפשך", "נפשם",
+    "נשר", "נמר", "נחש", "נשק",
+    # ת-initial nouns
+    "תורה", "תפלה", "תבל", "תנין", "תפארת", "תקוה", "תרומה",
+    "תורת", "תורתו", "תורתך",
+    "תהלה", "תהלות", "תפלת", "תפלתי", "תפלתך",
+    "תכלת", "תולדות", "תולדת", "תולדתם",
+}
+
+
 def is_finite_verb_skel(skeleton: str) -> bool:
     """Heuristic: True if consonant skeleton looks like a finite Hebrew verb.
 
@@ -150,60 +203,21 @@ def is_finite_verb_skel(skeleton: str) -> bool:
         return True
     # wayyiqtol prefix — ו + (י|ת|א|נ) + verb stem
     # Covers: וי (3ms/3mp/2fp), ות (3fs/2ms/2fp/2mp), וא (1cs), ון (1cp)
+    # Filter: if inner skeleton is in YIQTOL_KNOWN_NOUNS, it's vav+noun, not wayyiqtol.
     if (
         len(skeleton) >= 3
         and skeleton[0] == "ו"
         and skeleton[1] in YIQTOL_PREFIXES
     ):
+        inner = skeleton[1:]
+        if inner in YIQTOL_KNOWN_NOUNS:
+            return False
         return True
     # yiqtol — single-prefix + 3-letter root skeleton
     # Pattern: prefix (י/ת/א/נ) + root consonants ≥ 3 total chars
-    # Guards against common false positives:
-    #   - nouns starting with י: יד, ים, יום, ין — excluded by known-noun list
-    #   - prepositions starting with ת: — rare false positive, accept
-    # This detects תהיו (2mp yiqtol), ישטמנו (3ms + suffix), etc.
-    YIQTOL_KNOWN_NOUNS = {
-        # י-initial nouns
-        "יד", "ים", "יום", "ין", "יין", "יער", "יען", "ימים",
-        "ירא", "ירה",  # fear/shoot (can be noun in some forms)
-        # ── α-prefix nouns (lexical exclusion per canon §1 hybrid policy:
-        #    use lexical list rather than niqqud-aware vowel patterns)
-        # chataf-aleph noun stems
-        "אדמה", "אדמת", "אדמתו", "אדמתי", "אדמתך", "אדמתם",
-        "אמונה", "אמונת", "אמונתי",
-        "אנוש", "אנושי",
-        "אלהים", "אלהי", "אלהיו", "אלהיך", "אלהינו", "אלהיכם", "אלהיהם",
-        "אלוה",
-        "אדון", "אדונים", "אדונו", "אדוני", "אדונך",
-        "אדנים", "אדנו", "אדנך",  # construct/short variants of אֲדָנִים (bases)
-        "אדני", "אדנינו", "אדניך", "אדניכם", "אדניהם",
-        # hireq-aleph noun stems (אִ-prefix)
-        "אישה", "אשה", "אשת", "אשתו", "אשתי", "אשתך", "אשתם", "אשתן", "אשתכם", "אשתהם",
-        "אישון",
-        "איתן", "איתנים",
-        "אילם", "אילים",
-        # tsere-aleph noun stems (אֵ-prefix)
-        "אמת", "אמתי", "אמתך",
-        "אילת", "אילי",
-        # other 4+ char α-prefix nouns
-        "אחד", "אחת", "אחור", "אחרי", "אחרית",
-        "אחי", "אחיו", "אחיך", "אחינו", "אחיכם", "אחים",
-        "אנחנו", "אנכי", "אני",
-        "ארצי", "ארצנו", "ארצו", "ארצם", "ארצך", "ארצכם", "ארצהם",
-        "ארץ", "ארצות",
-        "אילון", "אילי",
-        "אכזב", "אכזרי",
-        "אסיר", "אסירי",
-        # ת-initial nouns
-        "תורה", "תפלה", "תבל", "תנין", "תפארת", "תקוה", "תרומה",
-        "תורת", "תורתו", "תורתך",
-        "תהלה", "תהלות", "תפלת", "תפלתי", "תפלתך",
-        "תכלת", "תולדות", "תולדת", "תולדתם",
-    }
+    # Uses module-level YIQTOL_KNOWN_NOUNS (also reused by wayyiqtol filter above).
     if len(skeleton) >= 3 and skeleton[0] in YIQTOL_PREFIXES:
-        # Exclude only the 2-char existential יש (skeleton = "יש")
         if skeleton not in YIQTOL_KNOWN_NOUNS and skeleton != "יש":
-            # Rough heuristic: accept if it's ≥ 4 chars (prefix + 3-root)
             if len(skeleton) >= 4:
                 return True
     return False

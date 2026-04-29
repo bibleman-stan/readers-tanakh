@@ -4,8 +4,8 @@ shalosh | shanim | ein | milchamah | bein | Aram
 uvein | Yisra'el
 
 22:2
-vayhi | bashanah | hashelishit
-vaiyered | Yehoshafat | melekh | Yehudah
+vayhi
+bashanah | hashelishit | vaiyered | Yehoshafat | melekh | Yehudah
 el | melekh | Yisra'el
 
 22:3
@@ -13,8 +13,7 @@ vaiyomer | melekh | Yisra'el | el | avadav
 hayda'tem
 ki | lanu
 Ramot | Gil'ad
-va'anachnu | machshim | mikachat | otah
-miyad | melekh | Aram
+va'anachnu | machshim | mikachat | otah | miyad | melekh | Aram
 
 22:4
 vaiyomer | el | Yehooshafat
@@ -38,7 +37,8 @@ veyiten | Adonai | beyad | hamelekh
 22:7
 vaiyomer | Yehooshafat
 ha'ein | poh | navi | Layahweh
-od | venidreshah | me'oto
+od
+venidreshah | me'oto
 
 22:8
 vaiyomer | melekh | Yisra'el | el | Yehoshafat | od | ish | echad | lidrosh | et | Yahweh | me'oto | va'ani | senetiv | ki | lo | yitnabe | alai | tov | ki | im | ra
@@ -106,8 +106,8 @@ vekhol | tzeva | hashamayim | omed | alav | mimino | umisemolo
 22:20
 vaiyomer | Yahweh | mi | yefateh | et | Ach'av
 veya'al
-veyipol | Beramot | Gil'ad
-vaiyomer | zeh | bekhoh
+veyipol
+Beramot | Gil'ad | vaiyomer | zeh | bekhoh
 vezeh | omer | bekhoh
 
 22:21
@@ -189,7 +189,8 @@ hu | vaiyashuvu | me'acharav
 
 22:34
 ve'ish | mashakh | bakeshet | letumo
-vaiyakeh | et | melekh | Yisra'el | bein | hadevakim | uvein | hashiryan
+vaiyakeh | et | melekh | Yisra'el | bein | hadevakim
+uvein | hashiryan
 vaiyomer | lerakavo | hafokh | yadekha | vehotzi'eni | min | hamachaneh
 ki | hocholeiti
 
@@ -271,8 +272,8 @@ ki | Nishberah | oniyot | Be'etzyon | Gaver
 
 22:50
 az | amar | Achazyahu | ven | Ach'av | el | Yehooshafat
-yelekhu | avadai | im | avadeikha | bo'oniyot | velo | avah
-Yehoshafat
+yelekhu | avadai | im | avadeikha | bo'oniyot
+velo | avah | Yehoshafat
 
 22:51
 vaiyishkav | Yehoshafat | im | avotav

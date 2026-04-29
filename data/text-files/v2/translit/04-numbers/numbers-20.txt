@@ -27,8 +27,7 @@ umayim | ayin | lishtot
 20:6
 vaiyavo | Mosheh | Ve'aharon | mipenei | hakahal | el | petach | ohel | mo'ed
 vaiyipelu | al | peneihem
-vaiyera | khevod | Yahweh
-aleihem
+vaiyera | khevod | Yahweh | aleihem
 
 20:7
 vaydaber | Yahweh | el | Mosheh | lemor
@@ -45,7 +44,8 @@ milifnei | Yahweh | ka'asher
 tzivahu
 
 20:10
-vaiyakhilu | Mosheh | Ve'aharon | et | hakahal | el | penei | hasala
+vaiyakhilu | Mosheh | Ve'aharon | et | hakahal
+el | penei | hasala
 vaiyomer | lahem | shim'u | na | hamorim
 hamin | hasela | hazeh | notzi | lakhem | mayim
 
@@ -149,8 +149,8 @@ kol | ha'edah
 
 20:28
 vaiyafshet | Mosheh | et | Aharon | et | begadav | vaiyalbesh | otam | et | El'azar | beno
-vaiyamot | Aharon | sham | berosh | hahar
-vaiyered | Mosheh | Ve'el'azar | min | hahar
+vaiyamot | Aharon | sham
+berosh | hahar | vaiyered | Mosheh | Ve'el'azar | min | hahar
 
 20:29
 vaiyir'u | kol | ha'edah

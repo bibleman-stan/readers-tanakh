@@ -42,7 +42,8 @@ vatehi | sham | hamagefah | gedolah | baiyom | hahu
 esrim | alef
 
 18:8
-vatehi | sham | hamilchamah | nafotzeit | al | penei | khol | ha'aretz
+vatehi | sham | hamilchamah | nafotzeit
+al | penei | khol | ha'aretz
 vaiyerev | haiya'ar | le'ekhol | ba'am
 me'asher | akhelah | hacherev | baiyom | hahu
 
@@ -54,9 +55,8 @@ vehapered | asher | tachtav
 avar
 
 18:10
-vaiyar | ish | echad
-vaiyaged | Leyo'av
-vaiyomer | hineh | ra'iti | et | Avshalom
+vaiyar | ish | echad | vaiyaged
+Leyo'av | vaiyomer | hineh | ra'iti | et | Avshalom
 talui | ba'elah
 
 18:11
@@ -132,8 +132,10 @@ vaiyarotz
 18:22
 vaiyosef | od | Achima'atz | ben | Tzadok | vaiyomer | el | Yo'av
 vihi | mah
-arutzah | na | gam | ani | acharei | hakushi
-vaiyomer | Yo'av | lamah | zeh | atah | ratz | beni | ulekhah
+arutzah | na | gam | ani
+acharei | hakushi
+vaiyomer | Yo'av | lamah | zeh | atah | ratz | beni
+ulekhah
 ein | besorah | motzet
 
 18:23
@@ -143,7 +145,8 @@ rutz | vaiyarotz | Achima'atz | derekh | hakikar
 vaiya'avor | et | hakushi
 
 18:24
-Vedavid | yoshev | bein | shenei | hashe'arim
+Vedavid | yoshev
+bein | shenei | hashe'arim
 vaiyelekh | hatzopeh | el | gag | hasha'ar | el | hachomah
 vaiyisa | et | einav | vaiyar
 vehineh | ish

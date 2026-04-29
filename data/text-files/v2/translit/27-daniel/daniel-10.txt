@@ -2,8 +2,8 @@
 bishnat | shaloosh | Lekhoresh | melekh | Paras
 davar | Niglah | Ledaniyel
 asher | Nikra | shemo | Beleteshatzar
-ve'emet | hadavar | vetzava | gadol
-uvin | et | hadavar | uvinah | lo | bamar'eh
+ve'emet | hadavar | vetzava | gadol | uvin | et | hadavar
+uvinah | lo | bamar'eh
 
 10:2
 baiyamim
@@ -101,7 +101,8 @@ vaychazekeni
 
 10:19
 vaiyomer | al | tira | ish | chamudot | shalom | lakh
-chazak | vachazak | ubedabero | imi | hitchazakti
+chazak | vachazak
+ubedabero | imi | hitchazakti
 va'omerah | yedaber | adoni
 ki | chizaktani
 

@@ -79,8 +79,7 @@ vaiyevek | Uvinyamin | bakhah | al | tzavarav
 
 45:15
 vaynashek | lekhol | echav
-vaiyevek | aleihem
-ve'acharei | khen
+vaiyevek | aleihem | ve'acharei | khen
 diberu | echav
 ito
 
@@ -99,7 +98,8 @@ ulekhu | vo'u
 artzah | Kena'an
 
 45:18
-ukechu | et | avikhem | ve'et | bateikhem | uvo'u | elai
+ukechu | et | avikhem | ve'et | bateikhem
+uvo'u | elai
 ve'etenah | lakhem | et | tuv | eretz | Mitzrayim
 ve'ikhlu | et | chelev | ha'aretz
 
@@ -115,8 +115,8 @@ ki | tuv | kol | eretz | Mitzrayim | lakhem | hu
 
 45:21
 vaiya'asu | khen | benei | Yisra'el
-vaiyiten | lahem | Yosef | agalot | al | pi | far'oh
-vaiyiten | lahem | tzedah | ladarekh
+vaiyiten | lahem | Yosef | agalot
+al | pi | far'oh | vaiyiten | lahem | tzedah | ladarekh
 
 45:22
 lekhulam | natan | la'ish
@@ -150,8 +150,8 @@ ki | lo | he'emin | lahem
 45:27
 vaydaberu | elav | et | kol | divrei | Yosef | asher | diber | alehem
 vaiyar | et | ha'agalot
-asher | shalach | Yosef | laset | oto
-vatechi
+asher | shalach | Yosef
+laset | oto | vatechi
 ruach | Ya'ako | avihem
 
 45:28

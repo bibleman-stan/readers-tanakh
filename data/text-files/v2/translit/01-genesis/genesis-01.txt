@@ -13,7 +13,9 @@ yehi | or | vayhi | or
 
 1:4
 vaiyar | elohim | et | ha'or
-ki | tov | vaiyavdel | elohim | bein | ha'or | uvein | hachoshekh
+ki | tov
+vaiyavdel | elohim
+bein | ha'or | uvein | hachoshekh
 
 1:5
 vaiyikra | elohim | la'or | yom | velachoshekh
@@ -43,8 +45,8 @@ vetera'eh
 haiyabashah | vayhi | khen
 
 1:10
-vaiyikra | elohim | laiyabashah | eretz | ulemikveh | hamayim
-kara | yamim
+vaiyikra | elohim | laiyabashah | eretz
+ulemikveh | hamayim | kara | yamim
 vaiyar | elohim
 ki | tov
 
@@ -135,10 +137,9 @@ uvekhol | haremes
 haromes | al | ha'aretz
 
 1:27
-vaiyivra | elohim | et | ha'adam | betzalmo | betzelem | elohim
-bara | oto
-zakhar | unekevah
-bara | otam
+vaiyivra | elohim | et | ha'adam | betzalmo
+betzelem | elohim | bara | oto
+zakhar | unekevah | bara | otam
 
 1:28
 vayvarekh | otam | elohim

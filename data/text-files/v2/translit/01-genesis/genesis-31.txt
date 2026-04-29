@@ -135,7 +135,8 @@ vaiyadbek | oto
 behar | Hagil'ad
 
 31:24
-vaiyavo | elohim | el | Lavan | ha'arami | bachalom | halayelah
+vaiyavo | elohim | el | Lavan | ha'arami
+bachalom | halayelah
 vaiyomer | lo | hishamer | lekha | pen | tedaber | im | Ya'ako
 mitov | ad | ra
 
@@ -145,8 +146,8 @@ Veya'ako | taka | et | oholo | bahar
 Velavan | taka | et | echav | behar | Hagil'ad
 
 31:26
-vaiyomer | Lavan | Leya'ako | meh | asita
-vatigno | et | levavi
+vaiyomer | Lavan | Leya'ako
+meh | asita | vatigno | et | levavi
 vatenaheg | et | benotai | kishvuyot
 charev
 
@@ -203,8 +204,7 @@ velo | matza
 31:35
 vatomer | el | aviha | al | yichar | be'einei | adoni
 ki | lo | ukhal | lakum | mipaneikha
-ki | derekh | nashim | li
-vaychapes
+ki | derekh | nashim | li | vaychapes
 velo | matza | et | haterafim
 
 31:36
@@ -217,7 +217,8 @@ ki | dalakta | acharai
 ki | mishashta | et | kol | kelai | mah | matzata | mikol | kelei | veitekha
 sim | koh | neged | achai
 ve'acheikha
-veyokhichu | bein | sheneinu
+veyokhichu
+bein | sheneinu
 
 31:38
 zeh | esrim | shanah | anokhi | imakh

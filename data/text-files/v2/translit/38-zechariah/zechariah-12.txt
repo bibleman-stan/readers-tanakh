@@ -59,13 +59,14 @@ baiyom | hahu | yigdal | hamisped | Birushalim | kemispad | Hadad | Rimon
 bevik'at | Megidon
 
 12:12
-vesafedah | ha'aretz | mishpachot | mishpachot | levad
-mishpachat | beit | David | levad | unesheihem | levad
-mishpachat | beit | Natan | levad | unesheihem | levad
+vesafedah | ha'aretz | mishpachot | mishpachot
+levad | mishpachat | beit | David | levad | unesheihem | levad
+mishpachat | beit | Natan | levad
+unesheihem | levad
 
 12:13
-mishpachat | beit | Levi | levad | unesheihem
-levad | mishpachat | hashim'i | levad
+mishpachat | beit | Levi | levad
+unesheihem | levad | mishpachat | hashim'i | levad
 unesheihem | levad
 
 12:14

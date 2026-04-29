@@ -66,7 +66,8 @@ ad | bo | hamelekh | Achaz | Midamasek
 
 16:12
 vaiyavo | hamelekh | Midamesek
-vaiyar | hamelekh | et | hamizbeach
+vaiyar | hamelekh
+et | hamizbeach
 vaiyikrav | hamelekh | al | hamizbeach
 vaiya'al | alav
 
@@ -112,6 +113,6 @@ lemalkhei | Yehudah
 
 16:20
 vaiyishkav | Achaz | im | avotav
-vaiyikaver | im | avotav | be'ir | David
-vaiyimlokh | Chizkiyahu | veno
+vaiyikaver | im | avotav
+be'ir | David | vaiyimlokh | Chizkiyahu | veno
 tachtav

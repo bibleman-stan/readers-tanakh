@@ -6,14 +6,15 @@ chanu | Va'afek
 
 4:2
 vaiya'arkhu | felishtim | likrat | Yisra'el | vatitosh | hamilchamah
-vaiyinagef | Yisra'el | lifnei | felishtim
-vaiyaku | vama'arakhah | basadeh
+vaiyinagef | Yisra'el
+lifnei | felishtim | vaiyaku | vama'arakhah | basadeh
 ke'arba'at | alafim | ish
 
 4:3
 vaiyavo | ha'am | el | hamachaneh
 vaiyomeru | ziknei | Yisra'el
-lamah | negafanu | Yahweh | haiyom | lifnei | felishtim
+lamah | negafanu | Yahweh | haiyom
+lifnei | felishtim
 nikchah | eleinu | Mishiloh | et | aron | berit | Yahweh
 veyavo | vekirbenu
 veyoshi'enu | mikaf | oyeveinu
@@ -99,8 +100,7 @@ velo | yakhol | lir'ot
 
 4:16
 vaiyomer | ha'ish | el | Eli | anokhi | haba | min | hama'arakhah
-va'ani | min | hama'arakhah
-nasti | haiyom
+va'ani | min | hama'arakhah | nasti | haiyom
 vaiyomer | meh | hayah | hadavar | beni
 
 4:17
@@ -121,7 +121,8 @@ arba'im | shanah
 vekhalato | eshet | Pinechas | harah | lalat
 vatishma | et | hashemu'ah
 el | hilakach | aron | ha'elohim
-umet | chamiha | ve'ishah
+umet | chamiha
+ve'ishah
 vatikhra | vateled
 ki | Nehefkhu | aleiha
 tzireiha

@@ -117,8 +117,8 @@ hem | yoshevim | el | hashulchan
 vayhi | devar | Yahweh | el | hanavi | asher | heshivo
 
 13:21
-vaiyikra | el | ish | ha'elohim | asher | ba | Mihudah | lemor | koh
-amar | Yahweh
+vaiyikra | el | ish | ha'elohim | asher | ba | Mihudah | lemor
+koh | amar | Yahweh
 ya'an | ki | marita | pi | Yahweh
 velo | shamarta | et | hamitzvah | asher | tzivekha
 Yahweh | eloheikha
@@ -132,8 +132,7 @@ el | kever | avoteikha
 
 13:23
 vayhi | acharei | akhelo | lechem
-ve'acharei | shetoto
-vaiyachavosh | lo | hachamor | lanavi | asher | heshivo
+ve'acharei | shetoto | vaiyachavosh | lo | hachamor | lanavi | asher | heshivo
 
 13:24
 vaiyelekh
@@ -145,7 +144,8 @@ veha'aryeh | omed | etzel | hanevelah
 
 13:25
 vehineh | anashim | oerim | vaiyir'u | et | hanevelah | mushlekhet | baderekh
-ve'et | ha'aryeh | omed | etzel | hanevelah
+ve'et | ha'aryeh | omed
+etzel | hanevelah
 vaiyavo'u | vaydaberu | va'ir | asher | hanavi | hazaken
 yoshev | bah
 

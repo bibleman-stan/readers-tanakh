@@ -310,6 +310,26 @@ def _g_n_starts_do(l_n, l_n1, ctx):
     return M.is_do_marker_token(first)
 
 
+@_register_guard("next_line_is_verb_initial")
+def _g_next_verb_initial(l_n, l_n1, ctx):
+    """Fire (block) if the line AFTER the candidate pair (lookahead) starts with
+    a finite verb.
+
+    Use case: when line N+1 is a PP and lookahead is verb-initial, line N+1 is
+    a fronted PP for the lookahead clause — NOT a recipient/complement of line N.
+    Without this guard, m2_6 (verb+subj + PP-recipient) over-merges parallel-
+    structure verses like Gen 1:27 (where 'בצלם אלהים' is fronting for 'ברא אתו',
+    not a complement of the prior 'ויברא אלהים את־האדם בצלמו').
+    """
+    lookahead = ctx.get("lookahead", "")
+    if not lookahead:
+        return False
+    first = M.first_content_token(lookahead)
+    if not first:
+        return False
+    return M.is_finite_verb_token(first)
+
+
 @_register_guard("prev_line_incomplete")
 def _g_prev_incomplete(l_n, l_n1, ctx):
     """Fire (block emission) if line N-1 lacks a finite verb.

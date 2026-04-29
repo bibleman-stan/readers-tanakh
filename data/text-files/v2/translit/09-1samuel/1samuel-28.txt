@@ -25,13 +25,14 @@ vaiyikbotz | Sha'ul | et | kol | Yisra'el
 vaiyachanu | Bagilboa
 
 28:5
-vaiyar | Sha'ul | et | machaneh | felishtim
+vaiyar | Sha'ul
+et | machaneh | felishtim
 vaiyira
 vaiyecherad | libo | me'od
 
 28:6
-vaiyish'al | Sha'ul | Bayahweh | velo | anahu
-Yahweh
+vaiyish'al | Sha'ul | Bayahweh
+velo | anahu | Yahweh
 gam | bachalomot | gam | ba'urim
 gam | banevi'im
 
@@ -69,7 +70,8 @@ ha'ali | li
 
 28:12
 vatere | ha'ishah | et | Shemu'el
-vatiz'ak | bekol | gadol
+vatiz'ak
+bekol | gadol
 vatomer | ha'ishah | el | Sha'ul | lemor | lamah | rimitani
 ve'atah | Sha'ul
 
@@ -89,7 +91,8 @@ vaiyikod | apayim | artzah
 vaiyishtachu
 
 28:15
-vaiyomer | Shemu'el | el | Sha'ul | lamah | hirgaztani | leha'alot | oti
+vaiyomer | Shemu'el | el | Sha'ul | lamah | hirgaztani
+leha'alot | oti
 vaiyomer | Sha'ul | tzar | li | me'od | ufelishtim | nilchamim | bi | velohim | sar | me'alai | velo | anani | od | gam | beyad | hanevi'im | gam | bachalomot
 va'ekra'eh | lekha | lehodi'eni
 mah | e'eseh
