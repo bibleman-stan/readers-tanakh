@@ -1,0 +1,28 @@
+name: h16_d_clause_initial_bare_construct
+rule: H16
+subcase: clause_initial_bare_construct
+severity: STRONG-MERGE-CANDIDATE
+description: |
+  Bare construct head (single-token line) at clause-start cannot stand alone —
+  the nomen rectum is on line N+1. Layer-1 stranding violation. Sibling to
+  h16_c (line-final construct head) — covers the clause-initial position.
+
+  Pattern (audited 2026-04-29 Wave 4 Writings — 1 Chr genealogy chapters):
+    line N:    בְּנֵי                  (or וּבְנֵי / מִבְּנֵי / ...)
+    line N+1:  גֹּמֶר                  (the rectum)
+
+  Engine uses morphology=construct_head which strips vav/bound-prep/article
+  before checking the closed list — so this catches all prefix variants.
+
+trigger:
+  line_n_first_token:
+    morphology: construct_head
+  line_n_last_token:
+    morphology: construct_head    # single-token line: first == last
+  combined_max_prosodic_words: 9
+
+guards:
+  - poetic_register
+
+annotation_template: "Clause-initial bare construct head ({pwc} prosodic words)"
+suggested_action: MERGE

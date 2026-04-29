@@ -1,0 +1,29 @@
+name: m4_b_dibber_formula
+rule: M4
+subcase: dibber_formula
+severity: STRONG-MERGE-CANDIDATE
+description: |
+  YHWH-speech closing formula 'כִּי פִּי יְהוָה (צְבָאוֹת) דִּבֵּר' — atnach typically
+  splits the formula between יְהוָה (or יְהוָה צְבָאוֹת) and דִּבֵּר. Sibling to
+  m4_yhwh_formula_integrity which catches openers (כֹּה אָמַר, נְאֻם, etc.); this
+  one catches closers.
+
+  Examples (audited 2026-04-29 Wave 4 Latter Prophets):
+    Isa 1:20, 40:5, 58:14:  כִּי פִּי יְהוָה / דִּבֵּר
+    Mic 4:4:                 כִּי־פִי יְהוָה צְבָאוֹת / דִּבֵּר
+
+  Tighter combined_max (5) than m4 to limit firing to formula contexts —
+  בִּקֵשׁ נְבִיא / דָּבָר and similar non-formula splits would exceed it.
+
+trigger:
+  line_n_last_token:
+    skeleton_in: [יהוה, צבאות, יהוהצבאות]
+  line_n1_first_token:
+    skeleton_in: [דבר, דבר־יהוה]
+  combined_max_prosodic_words: 5
+
+guards:
+  - poetic_register
+
+annotation_template: "YHWH-דִּבֵּר closing formula split ({pwc} prosodic words)"
+suggested_action: MERGE
