@@ -1148,6 +1148,38 @@
   }
   .toc-view.visible { display: block; }
 
+  /* Tradition toggle (Tanakh / Christian OT) — sits above .toc-title */
+  .tradition-toggle {
+    display: inline-flex;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 2px;
+    background: rgba(255,255,255,0.02);
+    margin-bottom: 1em;
+    font-family: inherit;
+    user-select: none;
+  }
+  .tradition-toggle button {
+    border: 0;
+    background: transparent;
+    color: var(--text-faint);
+    font-family: inherit;
+    font-size: 0.7em;
+    letter-spacing: 0.04em;
+    padding: 6px 14px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: color 0.15s, background 0.15s;
+    line-height: 1.2;
+  }
+  .tradition-toggle button:hover {
+    color: var(--text);
+  }
+  .tradition-toggle button.active {
+    background: var(--accent-dim);
+    color: var(--text);
+  }
+
   .toc-title {
     font-size: 1.25em;
     color: var(--accent);
@@ -1601,7 +1633,14 @@
 
 <!-- TOC view — shown at empty hash -->
 <div class="toc-view" id="toc-view">
-  <div class="toc-title">Hebrew Bible<br><span class="toc-title-sub">Colometric Reading Edition</span></div>
+  <div class="tradition-toggle" id="tradition-toggle" role="tablist" aria-label="Tradition">
+    <button type="button" data-tradition="hebrew"    role="tab" aria-selected="true">Tanakh</button>
+    <button type="button" data-tradition="christian" role="tab" aria-selected="false">Christian OT</button>
+  </div>
+  <div class="toc-title" id="toc-title">
+    <span id="toc-title-main">Hebrew Bible</span><br>
+    <span class="toc-title-sub" id="toc-title-sub">Colometric Reading Edition</span>
+  </div>
   <div id="toc-sections"></div>
 </div>
 
@@ -1913,24 +1952,37 @@ function updateTopbarForView(view, slug) {
   const homeBtn = document.getElementById('btn-home');
   const bookEl = document.getElementById('topbar-book');
   const chapEl = document.getElementById('topbar-chap');
+  // Tradition-aware identity strings. christianBrand vs hebrewBrand drive
+  // the <title> base; per-view bookName resolves through bookDisplayName()
+  // so christianName overrides (e.g., 'Canticles') flow through.
+  const traditionBrand = (currentTradition === 'christian')
+    ? 'Old Testament' : 'Hebrew Bible';
   if (view === 'toc') {
     locEl.style.display = 'none';
     homeBtn.style.display = 'none';
-    document.title = 'Tanakh Reader — Hebrew Bible';
+    document.title = 'Tanakh Reader — ' + traditionBrand;
   } else if (view === 'chapters') {
     locEl.style.display = '';
     homeBtn.style.display = '';
-    bookEl.textContent = BOOKS[slug].name;
-    chapEl.textContent = '';
-    document.title = BOOKS[slug].name + ' — Tanakh Reader';
+    bookEl.textContent = bookDisplayName(slug, 'name');
+    // In christian mode, surface the KJV section (e.g. "— Major Prophets")
+    // alongside the book name so Daniel reads as a Major Prophet, not
+    // (silently) as Ketuvim. Hebrew mode keeps the existing terse display.
+    if (currentTradition === 'christian') {
+      const sec = activeSectionLabel(slug);
+      chapEl.textContent = sec ? '— ' + sec : '';
+    } else {
+      chapEl.textContent = '';
+    }
+    document.title = bookDisplayName(slug, 'name') + ' — Tanakh Reader';
     // In chapter-grid, clicking the topbar-loc goes back to TOC
     locEl.onclick = () => history.back();
   } else {
     locEl.style.display = '';
     homeBtn.style.display = '';
-    bookEl.textContent = BOOKS[currentBook].name;
+    bookEl.textContent = bookDisplayName(currentBook, 'name');
     chapEl.textContent = currentChapter;
-    document.title = BOOKS[currentBook].name + ' ' + currentChapter + ' — Tanakh Reader';
+    document.title = bookDisplayName(currentBook, 'name') + ' ' + currentChapter + ' — Tanakh Reader';
     locEl.onclick = () => openNav();
   }
 }
@@ -3558,7 +3610,7 @@ function buildTocSections() {
   if (!container) return;
   container.innerHTML = '';
 
-  for (const section of BOOK_SECTIONS) {
+  for (const section of activeSections()) {
     const label = document.createElement('div');
     label.className = 'toc-section-label';
     label.textContent = section.label;
@@ -3574,7 +3626,12 @@ function buildTocSections() {
 
       const primary = document.createElement('span');
       primary.className = 'toc-book-primary';
-      primary.textContent = book.short || book.name;
+      // Tradition-aware: in christian mode, prefer christianName when
+      // defined (e.g., 'Cant' for Song of Songs). The Hebrew + transliterated
+      // secondary line below is rendered identically in both modes —
+      // Hebrew-first identity is preserved even when the primary label
+      // adopts the Christian convention.
+      primary.textContent = bookDisplayName(slug, 'short');
       btn.appendChild(primary);
 
       // Secondary line: Hebrew script + middle-dot + transliteration.
@@ -3637,7 +3694,9 @@ function showToc() {
 
 function buildChapterGrid(slug) {
   const book = BOOKS[slug];
-  document.getElementById('chgrid-book-name').textContent = book.name;
+  // Tradition-aware book name (Christian mode prefers christianName when
+  // defined; e.g., songofsongs renders as "Canticles" in chgrid header).
+  document.getElementById('chgrid-book-name').textContent = bookDisplayName(slug, 'name');
   const grid = document.getElementById('chgrid-grid');
   grid.innerHTML = '';
   for (let c = 1; c <= book.chapters; c++) {
@@ -3697,6 +3756,162 @@ const BOOK_SECTIONS_RAW = [
 const BOOK_SECTIONS = BOOK_SECTIONS_RAW
   .map(s => ({ label: s.label, keys: s.keys.filter(k => BOOKS[k]) }))
   .filter(s => s.keys.length > 0);
+
+// Christian-OT (KJV-tradition) ordering. Same 39 books, regrouped into
+// Pentateuch / Historical / Wisdom / Major Prophets / Minor Prophets per
+// the standard Protestant Old Testament sequence. Used when the tradition
+// toggle is set to 'christian'.
+const CHRISTIAN_SECTIONS_RAW = [
+  { label: 'Pentateuch', keys: [
+      'genesis', 'exodus', 'leviticus', 'numbers', 'deuteronomy'
+    ]
+  },
+  { label: 'Historical', keys: [
+      'joshua', 'judges', 'ruth', '1samuel', '2samuel',
+      '1kings', '2kings', '1chronicles', '2chronicles',
+      'ezra', 'nehemiah', 'esther'
+    ]
+  },
+  { label: 'Wisdom', keys: [
+      'job', 'psalms', 'proverbs', 'ecclesiastes', 'songofsongs'
+    ]
+  },
+  { label: 'Major Prophets', keys: [
+      'isaiah', 'jeremiah', 'lamentations', 'ezekiel', 'daniel'
+    ]
+  },
+  { label: 'Minor Prophets', keys: [
+      'hosea', 'joel', 'amos', 'obadiah', 'jonah', 'micah',
+      'nahum', 'habakkuk', 'zephaniah', 'haggai', 'zechariah', 'malachi'
+    ]
+  },
+];
+const CHRISTIAN_SECTIONS = CHRISTIAN_SECTIONS_RAW
+  .map(s => ({ label: s.label, keys: s.keys.filter(k => BOOKS[k]) }))
+  .filter(s => s.keys.length > 0);
+
+// Reverse lookup: slug -> Christian section label. Used by the topbar
+// when tradition='christian' to render "Daniel — Major Prophets" instead
+// of the BHS placement (which would be Ketuvim).
+const BOOKS_BY_CHRISTIAN_SECTION = (function() {
+  const m = {};
+  for (const s of CHRISTIAN_SECTIONS) {
+    for (const k of s.keys) m[k] = s.label;
+  }
+  return m;
+})();
+
+// Symmetric reverse lookup for Hebrew-tradition (BHS) section labels.
+// Currently unused by the topbar (chapter-grid view doesn't surface the
+// section), but kept in parity with BOOKS_BY_CHRISTIAN_SECTION so future
+// surfaces can opt in cheaply.
+const BOOKS_BY_HEBREW_SECTION = (function() {
+  const m = {};
+  for (const s of BOOK_SECTIONS) {
+    for (const k of s.keys) m[k] = s.label;
+  }
+  return m;
+})();
+
+// --- Tradition state (Tanakh ↔ Christian OT) ---
+//
+// Persisted in localStorage under TRADITION_KEY. Default is 'hebrew' — the
+// project's identity is Tanakh-first; the toggle exposes the Christian-OT
+// rendering as an alternate view. The toggle does NOT alter URL routing
+// (canonical slugs are always English) — see CLAUDE.md and the H/E design
+// doc (private/03-sessions/2026-04-28-h18-rule-design/
+// hebrew-english-organization-design.md, solutions #1 + #5).
+const TRADITION_KEY = 'tanakh-tradition';
+const VALID_TRADITIONS = { hebrew: true, christian: true };
+let currentTradition = 'hebrew';
+
+function loadTradition() {
+  let stored = null;
+  try { stored = localStorage.getItem(TRADITION_KEY); } catch (e) {}
+  currentTradition = (stored && VALID_TRADITIONS[stored]) ? stored : 'hebrew';
+  return currentTradition;
+}
+
+function setTradition(tr, persist) {
+  if (!VALID_TRADITIONS[tr]) return;
+  currentTradition = tr;
+  if (persist !== false) {
+    try { localStorage.setItem(TRADITION_KEY, tr); } catch (e) {}
+  }
+  applyTraditionToDom();
+}
+
+// Refreshes every tradition-sensitive UI surface (toggle button states,
+// TOC heading + sections, topbar in chapter-grid view, document.title).
+// Cheap enough to call on every toggle click — no expensive recomputes.
+function applyTraditionToDom() {
+  // 1) Toggle pill button states
+  const toggle = document.getElementById('tradition-toggle');
+  if (toggle) {
+    toggle.querySelectorAll('button[data-tradition]').forEach(b => {
+      const on = b.getAttribute('data-tradition') === currentTradition;
+      b.classList.toggle('active', on);
+      b.setAttribute('aria-selected', on ? 'true' : 'false');
+    });
+  }
+  // 2) TOC heading text
+  const titleMain = document.getElementById('toc-title-main');
+  if (titleMain) {
+    titleMain.textContent = (currentTradition === 'christian')
+      ? 'Old Testament' : 'Hebrew Bible';
+  }
+  // 3) Re-render TOC sections (book grouping flips with the tradition).
+  //    No-op if the TOC view is currently hidden — the next showToc() will
+  //    re-call buildTocSections() anyway, but doing it eagerly keeps the
+  //    DOM consistent so a deep-link landed user sees the right grid the
+  //    moment they navigate back to TOC.
+  buildTocSections();
+  // 4) If we're currently sitting on the chapter-grid view, refresh the
+  //    book-name display + topbar to pick up christianName / section.
+  if (currentView === 'chapters' && currentBook) {
+    buildChapterGrid(currentBook);
+    updateTopbarForView('chapters', currentBook);
+  } else if (currentView === 'reader' && currentBook) {
+    updateTopbarForView('reader', null);
+  } else if (currentView === 'toc') {
+    // refresh document.title for SEO/sharing
+    updateTopbarForView('toc', null);
+  }
+}
+
+// Helper: which book-name string to surface for a given slug, given the
+// active tradition. Christian mode prefers christianName when defined
+// (e.g., songofsongs -> Canticles). The `field` param picks 'name' (long)
+// or 'short' (compact label for grid buttons). Falls back gracefully.
+function bookDisplayName(slug, field) {
+  const book = BOOKS[slug];
+  if (!book) return slug;
+  if (currentTradition === 'christian' && book.christianName) {
+    // christianName is currently always the long form. For 'short' field
+    // requests we still want a compact label — use christianName when it
+    // happens to be short, otherwise compose a 4-char abbreviation. The
+    // only registry entry currently exercising this path is songofsongs
+    // (christianName: 'Canticles' — compact enough at 9 chars; we use the
+    // first 4 chars 'Cant' for the short-form button per the design doc).
+    if (field === 'short') {
+      return (book.christianName.length <= 5)
+        ? book.christianName
+        : book.christianName.slice(0, 4);
+    }
+    return book.christianName;
+  }
+  return (field === 'short') ? (book.short || book.name) : book.name;
+}
+
+function activeSections() {
+  return (currentTradition === 'christian') ? CHRISTIAN_SECTIONS : BOOK_SECTIONS;
+}
+
+function activeSectionLabel(slug) {
+  return (currentTradition === 'christian')
+    ? (BOOKS_BY_CHRISTIAN_SECTION[slug] || '')
+    : (BOOKS_BY_HEBREW_SECTION[slug] || '');
+}
 
 let landingExpanded = null;
 
@@ -3834,8 +4049,20 @@ window.addEventListener('hashchange', () => {
 
 (function init() {
   loadSettings();
+  loadTradition();      // restore tradition preference from localStorage
+  // Wire the tradition toggle once. Click handler delegates by data-attr.
+  const toggle = document.getElementById('tradition-toggle');
+  if (toggle) {
+    toggle.addEventListener('click', (e) => {
+      const btn = e.target.closest('button[data-tradition]');
+      if (!btn) return;
+      const tr = btn.getAttribute('data-tradition');
+      if (tr && tr !== currentTradition) setTradition(tr, true);
+    });
+  }
   buildLandingBooks();  // kept for legacy landing; harmless
-  buildTocSections();   // new 4-section TOC grid
+  buildTocSections();   // new 4-section TOC grid (uses currentTradition)
+  applyTraditionToDom(); // sync toggle button + heading to loaded tradition
   const { view, book, chapter, verse } = parseHash();
   if (view === 'toc') {
     showToc();
