@@ -6,8 +6,7 @@ megurei | aviv | be'eretz | Kena'an
 eleh | toledot | Ya'ako | Yosef | ben | sheva | esreh | shanah | hayah | ro'eh | et | echav | batzon
 vehu | na'ar | et | benei | Vilhah | ve'et | benei | Zilpah
 neshei | aviv
-vaiyave | Yosef | et | dibatam | ra'ah
-el | avihem
+vaiyave | Yosef | et | dibatam | ra'ah | el | avihem
 
 37:3
 Veyisra'el | ahav | et | Yosef | mikol | banav
@@ -44,9 +43,7 @@ vatishtachaveina | la'alumati
 vaiyomeru | lo | echav
 hamalokh | timlokh | aleinu
 im | mashol | timshol | banu
-vaiyosifu | od | seno | oto
-al | chalomotav
-ve'al | devarav
+vaiyosifu | od | seno | oto | al | chalomotav | ve'al | devarav
 
 37:9
 vaiyachalom | od | chalom | acher
@@ -58,8 +55,7 @@ li
 37:10
 vaysaper | el | aviv | ve'el | echav
 vaiyig'ar | bo | aviv
-vaiyomer | lo
-mah | hachalom | hazeh | asher | chalameta
+vaiyomer | lo | mah | hachalom | hazeh | asher | chalameta
 havo | navo | ani | ve'imekha | ve'acheikha
 lehishtachavot | lekha | aretzah
 
@@ -70,7 +66,8 @@ shamar | et | hadavar
 
 37:12
 vaiyelekhu
-echav | lir'ot | et | tzon | avihem | Bishkhem
+echav
+lir'ot | et | tzon | avihem | Bishkhem
 
 37:13
 vaiyomer | Yisra'el | el | Yosef | halo | acheikha | ro'im | Bishkhem
@@ -115,7 +112,8 @@ ba
 37:20
 ve'atah | lekhu | venahargehu | venashlikhehu | be'achad | haborot
 ve'amarnu
-chaiyah | ra'ah | akhalatehu | venir'eh | mah | yihyu
+chaiyah | ra'ah | akhalatehu
+venir'eh | mah | yihyu
 chalomotav
 
 37:21
@@ -128,15 +126,13 @@ nafesh
 37:22
 vaiyomer | alehem | Re'uven | al | tishpekhu | dam
 hashlikhu | oto | el | habor | hazeh | asher | bamidbar
-veyad
-al | tishlechu | vo | lema'an | hatzil | oto | miyadam | lahashivo
-el | aviv
+veyad | al | tishlechu | vo
+lema'an | hatzil | oto | miyadam | lahashivo | el | aviv
 
 37:23
 vayhi
-ka'asher | ba | Yosef
-el | echav | vaiyafshitu | et | Yosef | et | kutaneto
-et | ketonet | hapasim | asher | alav
+ka'asher | ba | Yosef | el | echav
+vaiyafshitu | et | Yosef | et | kutaneto | et | ketonet | hapasim | asher | alav
 
 37:24
 vaiyikachuhu
@@ -153,8 +149,7 @@ ugemaleihem | nose'im | nekhot | utzeri | valot
 holkhim | lehorid | Mitzrayemah
 
 37:26
-vaiyomer | Yehudah
-el | echav
+vaiyomer | Yehudah | el | echav
 mah | betza | ki | naharog | et | achinu | vekhisinu | et | damo
 
 37:27
@@ -212,7 +207,6 @@ vaiyevek | oto
 aviv
 
 37:36
-vehamedanim | makheru | oto
-el | Mitzrayim | Lefotifar | seris | par'oh
+vehamedanim | makheru | oto | el | Mitzrayim | Lefotifar | seris | par'oh
 sar
 hatabachim

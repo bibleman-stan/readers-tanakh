@@ -8,8 +8,7 @@ lamizbeach
 
 47:2
 vaiyotzi'eni | derekh | sha'ar | tzafonah
-vaysibeni | derekh | chutz
-el | sha'ar | hachutz
+vaysibeni | derekh | chutz | el | sha'ar | hachutz
 derekh
 haponeh | kadim
 vehineh | mayim | mefakim | min | hakatef | haymanit
@@ -45,15 +44,12 @@ rav | me'od | mizeh | umizeh
 
 47:8
 vaiyomer | elai | hamayim | ha'eleh | yotz'im | el | hagelilah | hakadmonah
-veyaredu
-al | Ha'aravah | uva'u | haiyamah
-el | haiyamah | hamutza'im
+veyaredu | al | Ha'aravah | uva'u | haiyamah | el | haiyamah | hamutza'im
 venirpe'u | hamayim
 
 47:9
 vehayah | khol | nefesh | chaiyah | asher | yishrotz | el | kol | asher | yavo | sham | nachalayim | yichyeh
-vehayah | hadagah
-rabah | me'od | ki | va'u | shamah | hamayim | ha'eleh | veyerafe'u | vachai
+vehayah | hadagah | rabah | me'od | ki | va'u | shamah | hamayim | ha'eleh | veyerafe'u | vachai
 kol | asher | yavo | shamah
 hanachal
 
@@ -61,8 +57,7 @@ hanachal
 vehayah | ya'amdu | alav | davagim | Me'ein | Gedi | ve'ad | Ein | Eglayim
 mishtoach | lacharamim
 yihyu
-leminah | tihyeh | degatam
-kidgat | haiyam | hagadol
+leminah | tihyeh | degatam | kidgat | haiyam | hagadol
 rabah | me'od
 
 47:11
@@ -76,8 +71,7 @@ ve'alehu | litrufah
 
 47:13
 koh | amar | Adonai | Yahweh
-geh | gevul | asher | titnachalu | et | ha'aretz
-lishnei | asar
+geh | gevul | asher | titnachalu | et | ha'aretz | lishnei | asar
 shivtei | Yisra'el
 Yosef
 chavalim

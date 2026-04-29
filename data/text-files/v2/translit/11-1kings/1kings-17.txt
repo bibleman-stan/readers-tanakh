@@ -55,12 +55,12 @@ kechi | na | li | me'at | mayim | bakeli | ve'eshteh
 
 17:11
 vatelekh | lakachat
-vaiyikra | eleiha | vaiyomar
-likchi | na | li | pat | lechem | beyadekh
+vaiyikra | eleiha | vaiyomar | likchi | na | li | pat | lechem | beyadekh
 
 17:12
 vatomer | chai | Yahweh | eloheikha | im | yesh | li | ma'og
-ki | im | melo | khaf | kemach | bakad | ume'at | shemen | batzapachat
+ki | im | melo | khaf | kemach | bakad
+ume'at | shemen | batzapachat
 vehini | mekosheshet | shenayim | etzim | uvati | va'asitihu | li | velivni
 va'akhalnuhu | vamatenu
 
@@ -75,8 +75,7 @@ ta'asi | ba'acharonah
 ki | khoh | amar | Yahweh | elohei | Yisra'el | kad | hakemach | lo | tikhlah
 vetzapachat | hashemen
 lo | techsar
-ad | yom | titen | Hashem | geshem
-al | penei | ha'adamah
+ad | yom | titen | Hashem | geshem | al | penei | ha'adamah
 
 17:15
 vatelekh | vata'aseh
@@ -105,8 +104,7 @@ ish | ha'elohim | bata | elai | lehazkir | et | avoni | ulehamit | et | beni
 vaiyomer | eleiha
 teni | li | et | benekh
 vaiyikachehu | mecheikah | vaiya'alehu | el | ha'aliyah | asher | hu | yoshev | sham
-vaiyashkivehu
-al | mitato
+vaiyashkivehu | al | mitato
 
 17:20
 vaiyikra | el | Yahweh
@@ -119,8 +117,7 @@ vaiyitmoded | al | haiyeled | shalosh | pe'amim
 vaiyikra | el | Yahweh
 vaiyomar
 Yahweh | elohai
-tasho | na | nefesh | haiyeled | hazeh
-al | kirbo
+tasho | na | nefesh | haiyeled | hazeh | al | kirbo
 
 17:22
 vaiyishma | Yahweh

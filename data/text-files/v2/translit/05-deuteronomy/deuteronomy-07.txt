@@ -1,6 +1,5 @@
 7:1
-ki | yevi'akha | Yahweh | eloheikha
-el | ha'aretz
+ki | yevi'akha | Yahweh | eloheikha | el | ha'aretz
 asher | atah | va | shamah | lerishtah
 venashal | goyim | rabim | mipaneikha | hachiti | vehagirgashi | veha'emori | vehakena'ani | vehapperizi | vehachivi | vehayvusi
 shiv'ah | goyim
@@ -43,8 +42,8 @@ ki | atem | ham'at | mikol | ha'amim
 
 7:8
 ki | me'ahavat | Yahweh | etkhem | umishamero | et | hashevu'ah | asher | Nishba | la'avoteikhem
-hotzi | Yahweh | etkhem
-beyad | chazakah | vaiyifdekha | mibeit | avadim | miyad
+hotzi | Yahweh | etkhem | beyad | chazakah
+vaiyifdekha | mibeit | avadim | miyad
 par'oh | melekh | Mitzrayim
 
 7:9
@@ -57,8 +56,8 @@ le'elef | dor
 
 7:10
 umeshalem | lesone'av | el | panav | leha'avido
-lo | ye'acher | lesone'o
-el | panav | yeshalem | lo
+lo | ye'acher | lesone'o | el | panav
+yeshalem | lo
 
 7:11
 veshamarta | et | hamitzvah | ve'et | hachukim | ve'et | hamishpatim | asher | anokhi | metzavekha | haiyom
@@ -102,8 +101,8 @@ eikhah | ukhal | lehorisham
 
 7:18
 lo | tira | mehem
-zakhor | tizkor | et | asher | asah | Yahweh | eloheikha
-lefar'oh | ulekhol | Mitzrayim
+zakhor | tizkor | et | asher | asah | Yahweh | eloheikha | lefar'oh
+ulekhol | Mitzrayim
 
 7:19
 hamasot | hagedolot | asher | ra'u | eineikha | veha'otot | vehamofetim | vehaiyad | hachazakah | vehazeroa | hanetuyah
@@ -113,12 +112,13 @@ ken | ya'aseh | Yahweh | eloheikha | lekhol | ha'amim
 asher | atah | yare | mipeneihem
 
 7:20
-vegam | et | hatzir'ah | yeshalach | Yahweh | eloheikha | bam
-ad | avod | hanish'arim | vehanistarim | mipaneikha
+vegam | et | hatzir'ah | yeshalach | Yahweh | eloheikha
+bam | ad | avod | hanish'arim | vehanistarim | mipaneikha
 
 7:21
-lo | ta'arotz | mipeneihem | ki | Yahweh | eloheikha | bekirbecha
-el | gadol | venora
+lo | ta'arotz | mipeneihem
+ki | Yahweh | eloheikha | bekirbecha | el | gadol
+venora
 
 7:22
 venashal | Yahweh | eloheikha | et | hagoyim | ha'el | mipaneikha
@@ -128,15 +128,13 @@ chaiyat | hasadeh
 
 7:23
 unetanam | Yahweh | eloheikha | lefaneikha
-vehamam | mehumah | gedolah
-ad
+vehamam | mehumah | gedolah | ad
 hishamedam
 
 7:24
 venatan | malkheihem | beyadekha
 veha'avadta | et | shemam | mitachat
-hashamayim | lo | yityatzev | ish | befaneikha
-ad | hishmidkha
+hashamayim | lo | yityatzev | ish | befaneikha | ad | hishmidkha
 otam
 
 7:25

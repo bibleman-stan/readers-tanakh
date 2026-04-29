@@ -2,8 +2,7 @@
 vayhi | acharei | khen
 vaiyakh | David | et | pelishtim
 vaiyakhni'em
-vaiyikach | et | Gat | uvenoteiha
-miyad | pelishtim
+vaiyikach | et | Gat | uvenoteiha | miyad | pelishtim
 
 18:2
 vaiyakh | et | Mo'av
@@ -18,12 +17,10 @@ Chamatah | belekhto | lehatziv | yado | binhar | Perat
 vaiyilkod | David | mimenu | elef | rekhev | veshiv'at | alafim | parashim
 ve'esrim | elef | ish | ragli
 vay'aker | David | et | kol | harekhev
-vaiyoter | mimenu
-me'ah | rakhev
+vaiyoter | mimenu | me'ah | rakhev
 
 18:5
-vaiyavo | Aram | Darmesek | la'zor
-Lahadad'ezer | melekh | Tzovah
+vaiyavo | Aram | Darmesek | la'zor | Lahadad'ezer | melekh | Tzovah
 vaiyakh | David | Ba'aram
 esrim | ushenayim | elef | ish
 
@@ -51,7 +48,8 @@ ve'et | kelei | hanechoshet
 vaiyishma
 To'u | melekh | Chamat
 ki | hikah | David
-et | kol | cheil | Hadad'ezer | melekh | Tzovah
+et | kol | cheil
+Hadad'ezer | melekh | Tzovah
 
 18:10
 vaiyishlach | et | Hadorom | beno | el | hamelekh | David | lish'ol | lo | leshalom | ulevarakho | al | asher | Nilcham | Bahadad'ezer | vaiyakehu
@@ -59,9 +57,9 @@ ki | ish | milchamot | To'u | hayah | Hadad'azer
 vekhol | kelei | zahav | vakhesef | unechoshet
 
 18:11
-gam | otam | hikdish | hamelekh | David | Layahweh
-im | hakesef | vehazahav | asher | nasa
-mikol | hagoyim | Me'edom | Umimo'av | umibenei | Amon | umipelishtim | Ume'amalek
+gam | otam | hikdish | hamelekh | David | Layahweh | im | hakesef | vehazahav
+asher | nasa | mikol | hagoyim
+Me'edom | Umimo'av | umibenei | Amon | umipelishtim | Ume'amalek
 
 18:12
 Ve'avshai | ben | Tzeruyah | hikah | et | Edom | Begei | Hamelach
@@ -74,12 +72,12 @@ avadim | Ledavid | vaiyoosha | Yahweh | et | David
 bekhol | asher | halakh
 
 18:14
-vaiyimlokh | David
-al | kol | Yisra'el | vayhi | oseh | mishpat | utzedakah | lekhol | amo
+vaiyimlokh | David | al | kol | Yisra'el
+vayhi | oseh | mishpat | utzedakah | lekhol | amo
 
 18:15
-Veyo'av | ben | Tzeruyah
-al | hatzava | Vihoshafat | ben | Achilud | mazkir
+Veyo'av | ben | Tzeruyah | al | hatzava
+Vihoshafat | ben | Achilud | mazkir
 
 18:16
 Vetzadok | ben | Achituv | Va'avimelekh | ben | Evyatar | kohanim
@@ -87,6 +85,6 @@ Veshavsha
 sofer
 
 18:17
-Uvenayahu | ben | Yehoyada
-al | hakereti
-vehapeleti | uvenei | David | harishonim | leyad | hamelekh
+Uvenayahu | ben | Yehoyada | al | hakereti
+vehapeleti
+uvenei | David | harishonim | leyad | hamelekh

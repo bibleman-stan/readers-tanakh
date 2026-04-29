@@ -1,7 +1,6 @@
 9:1
 vekhol | Yisra'el | hityachsu
-vehinam | ketuvim
-al | sefer
+vehinam | ketuvim | al | sefer
 malkhei | Yisra'el
 Vihudah | hagelu | Levavel | bema'alam
 
@@ -105,8 +104,7 @@ Ufinchas | ben | El'azar | nagid | hayah | aleihem | lefanim
 Yahweh | imo
 
 9:21
-Zekharyah | ben | Meshelemyah | sho'er | petach
-le'ohel | mo'ed
+Zekharyah | ben | Meshelemyah | sho'er | petach | le'ohel | mo'ed
 
 9:22
 kulam | haberurim | lesho'arim | basipim | matayim
@@ -128,24 +126,19 @@ im | eleh
 9:26
 ki | ve'emunah | hemah | arba'at | giborei | hasho'arim | hem
 halviyim
-vehayu | al | haleshakhot
-ve'al | ha'otzerot | beit | ha'elohim
+vehayu | al | haleshakhot | ve'al | ha'otzerot | beit | ha'elohim
 
 9:27
 usevivot | beit | ha'elohim | yalinu
 ki | aleihem | mishmeret | vehem | al | hamafteach | velaboker | laboker
 
 9:28
-umehem
-al | kelei | ha'avodah
-ki | vemispar | yevi'um | uvemispar
+umehem | al | kelei | ha'avodah | ki | vemispar | yevi'um | uvemispar
 yotzi'um
 
 9:29
-umehem | memunim | al | hakelim
-ve'al
-kol | kelei | hakodesh
-ve'al | hasolet | vehaiyayin | vehashemen
+umehem | memunim | al | hakelim | ve'al
+kol | kelei | hakodesh | ve'al | hasolet | vehaiyayin | vehashemen
 vehalevonah
 vehabesamim
 
@@ -190,18 +183,19 @@ Uzekharyah | Umiklot
 9:38
 Umiklot
 holid | et | Shim'am
-ve'af | hem | neged | acheihem | yashevu | Virushalim
-im | acheihem
+ve'af | hem | neged | acheihem | yashevu | Virushalim | im | acheihem
 
 9:39
 Vener | holid | et | Kish
 Vekish
 holid | et | Sha'ul
 Vesha'ul | holid | et | Yehonatan | ve'et | Malki | Shua
-ve'et | Avinadav | ve'et | Eshba'al
+ve'et | Avinadav
+ve'et | Eshba'al
 
 9:40
-uven | Yehonatan | Meriv | Ba'al | Umeri | Va'al
+uven | Yehonatan | Meriv | Ba'al
+Umeri | Va'al
 holid | et | Mikhah
 
 9:41
@@ -210,7 +204,8 @@ uvenei | Mikhah | Piton | Vamelekh | Vetachrea | Ve'achaz
 9:42
 Ve'achaz | holid | et | Ya'rah
 Veya'rah | holid | et | Alemet | ve'et | Azmavet
-ve'et | Zimri | Vezimri
+ve'et | Zimri
+Vezimri
 holid | et | Motza
 
 9:43

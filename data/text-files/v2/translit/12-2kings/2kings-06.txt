@@ -1,13 +1,12 @@
 6:1
-vaiyomeru | venei | hanevi'im
-el | Elisha
+vaiyomeru | venei | hanevi'im | el | Elisha
 hineh | na | hamakom | asher | anachnu | yoshevim | sham | lefaneikha
 tzar | mimenu
 
 6:2
 nelekhah | na | ad | Haiyarden | venikchah | misham | ish | korah | echat
-vena'aseh | lanu | sham | makom
-lashevet | sham | vaiyomer | lekhu
+vena'aseh | lanu | sham | makom | lashevet | sham
+vaiyomer | lekhu
 
 6:3
 vaiyomer | ha'echad
@@ -22,13 +21,15 @@ ha'etzim
 
 6:5
 vayhi | ha'echad | mapil | hakorah
-ve'et | habarzel | nafal | el | hamayim
+ve'et | habarzel
+nafal | el | hamayim
 vaiyitz'ak | vaiyomer | ahah | adoni
 vehu | sha'ul
 
 6:6
 vaiyomer | ish | ha'elohim
-anah | nafal | vaiyar'ehu | et | hamakom
+anah | nafal
+vaiyar'ehu | et | hamakom
 vaiyiktzov | etz | vaiyashlekh | shamah
 vaiyatzef
 habarzel
@@ -51,14 +52,11 @@ Aram | nechitim
 
 6:10
 vaiyishlach | melekh | Yisra'el | el | hamakom | asher | amar | lo | ish | ha'elohim | vehizhiro
-venishmar | sham
-lo | achat | velo | shetayim
+venishmar | sham | lo | achat | velo | shetayim
 
 6:11
-vaiyisa'er | lev | melekh | Aram
-al | hadavar
-hazeh
-vaiyikra | el | avadav | vaiyomer | aleihem
+vaiyisa'er | lev | melekh | Aram | al | hadavar
+hazeh | vaiyikra | el | avadav | vaiyomer | aleihem
 halo | tagidu | li | mi | mishelanu
 el | melekh | Yisra'el
 
@@ -77,9 +75,9 @@ hineh | Vedotan
 
 6:14
 vaiyishlach | shamah | susim | verekhev
-vechayil | kaved | vaiyavo'u | laylah
-vaiyakifu
-al | ha'ir
+vechayil | kaved
+vaiyavo'u | laylah
+vaiyakifu | al | ha'ir
 
 6:15
 vaiyashkem | mesharet | ish | ha'elohim | lakum
@@ -90,8 +88,7 @@ vaiyomer | na'aro | elav | ahah | adoni
 eikhah | na'aseh
 
 6:16
-vaiyomer
-al | tira
+vaiyomer | al | tira
 ki | rabim | asher | itanu | me'asher
 otam
 
@@ -136,33 +133,30 @@ vaiyomer | lo | takeh
 ha'asher | shavita | becharbekha | uvekashtecha
 atah | makeh
 sim | lechem | vamayim | lifneihem | veyokhelu | veyishtu
-veyelekhu
-el | adoneihem
+veyelekhu | el | adoneihem
 
 6:23
 vaiyikhreh | lahem | kerah | gedolah | vaiyokhelu | vaiyishtu
 vayshalechem
-vaiyelekhu
-el | adoneihem | velo | yasefu | od | gedudei | Aram | lavo
+vaiyelekhu | el | adoneihem
+velo | yasefu | od | gedudei | Aram | lavo
 be'eretz | Yisra'el
 
 6:24
 vayhi | acharei | khen
 vaiyikbotz | Ben | Hadad | melekh | Aram | et | kol | machanehu
 vaiya'al
-vaiyatzar
-al | Shomeron
+vaiyatzar | al | Shomeron
 
 6:25
 vayhi | ra'av | gadol | Beshomeron
 vehineh
-tzarim | aleiha
-ad | heyot | rosh | chamor | bishmonim | kesef
+tzarim | aleiha | ad | heyot | rosh | chamor | bishmonim | kesef
 veroa | hakav | chareiyonim | bachamishah | khasef
 
 6:26
-vayhi | melekh | Yisra'el | over
-al | hachomah | ve'ishah | tza'akah | elav | lemor
+vayhi | melekh | Yisra'el | over | al | hachomah
+ve'ishah | tza'akah | elav | lemor
 hoshi'ah
 adoni | hamelekh
 
@@ -175,7 +169,8 @@ o | min | haiyakev
 6:28
 vaiyomer | lah | hamelekh | mah | lakh
 vatomer | ha'ishah | hazot | amerah | elai | teni | et | benekh | venokhelenu | haiyom
-ve'et | beni | nokhal | machar
+ve'et | beni
+nokhal | machar
 
 6:29
 vanevashel | et | beni
@@ -189,8 +184,7 @@ vehu | over | al | hachomah | vaiyar | ha'am
 vehineh | hasak | al | besaro | mibayit
 
 6:31
-vaiyomer
-koh | ya'aseh | li | elohim
+vaiyomer | koh | ya'aseh | li | elohim
 vekhoh | yosif
 im | ya'amod | rosh | Elisha | ben | Shafat | alav
 haiyom

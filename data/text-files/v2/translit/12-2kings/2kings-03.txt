@@ -17,8 +17,7 @@ davek | lo | sar | mimenah
 
 3:4
 Umeisha | melekh | Mo'av | hayah | noked
-veheshiv | lemelekh | Yisra'el | me'ah | elef | karim | ume'ah | elef
-eilim | tzamer
+veheshiv | lemelekh | Yisra'el | me'ah | elef | karim | ume'ah | elef | eilim | tzamer
 
 3:5
 vayhi
@@ -40,13 +39,15 @@ kesusai | kesuseikha
 vaiyomer
 ei | zeh | haderekh | na'aleh
 vaiyomer
-derekh | midbar | Edom
+derekh
+midbar | Edom
 
 3:9
 vaiyelekh | melekh | Yisra'el | umelekh | Yehudah | umelekh | Edom
 vaiyasobu
 derekh
-shiv'at | yamim | velo | hayah | mayim | lamachaneh | velabehemah | asher | beragleihem
+shiv'at | yamim
+velo | hayah | mayim | lamachaneh | velabehemah | asher | beragleihem
 
 3:10
 vaiyomer
@@ -113,15 +114,15 @@ vekhol | hachelkah | hatovah | takh'ivu | ba'avanim
 
 3:20
 vayhi | vaboker | ka'alot | haminchah
-vehineh | mayim | ba'im | miderekh | Edom
+vehineh | mayim | ba'im
+miderekh | Edom
 vatimale | ha'aretz | et | hamayim
 
 3:21
 vekhol | Mo'av | shame'u
 ki | alu | hamelakhim | lehilachem | bam
 vaiyitza'aku | mikol | choger | chagorah | vama'lah
-vaiya'amdu
-al | hagevul
+vaiya'amdu | al | hagevul
 
 3:22
 vaiyashkimu | vaboker
@@ -159,6 +160,6 @@ velo | yakholu
 
 3:27
 vaiyikach | et | beno | habekhor | asher | yimlokh | tachtav | vaiya'alehu | olah | al | hachomah
-vayhi | ketzef | gadol
-al | Yisra'el | vaiyis'u | me'alav
+vayhi | ketzef | gadol | al | Yisra'el
+vaiyis'u | me'alav
 vaiyashuvu | la'aretz

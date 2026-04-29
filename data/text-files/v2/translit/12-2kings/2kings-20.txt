@@ -6,9 +6,8 @@ ki | met | atah
 velo | tichyeh
 
 20:2
-vaiyasev | et | panav
-el | hakir | vaiyitpalel
-el | Yahweh | lemor
+vaiyasev | et | panav | el | hakir
+vaiyitpalel | el | Yahweh | lemor
 
 20:3
 anah | Yahweh | zekhor | na | et | asher | hithalakhti | lefaneikha | be'emet | uvelevav | shalem
@@ -29,7 +28,8 @@ hayah | elav | lemor
 shuv | ve'amarta | el | Chizkiyahu | negid | ami | koh | amar | Yahweh | elohei | David | avikha
 shama'ti | et | tefilatekha
 ra'iti
-et | dim'atekha | hini | rofe | lakh | baiyom | hashelishi
+et | dim'atekha
+hini | rofe | lakh | baiyom | hashelishi
 ta'aleh
 beit | Yahweh
 
@@ -48,8 +48,7 @@ vaiyikchu | vaiyasimu | al | hashechin
 vaiyechi
 
 20:8
-vaiyomer | Chizkiyahu | el | Yesha'yahu
-mah | ot
+vaiyomer | Chizkiyahu | el | Yesha'yahu | mah | ot
 ki | yirpa | Yahweh | li
 ve'aliti | baiyom | hashelishi
 beit | Yahweh
@@ -69,8 +68,7 @@ yashuv | hatzel | achoranit
 eser | ma'alot
 
 20:11
-vaiyikra | Yesha'yahu | hanavi
-el | Yahweh
+vaiyikra | Yesha'yahu | hanavi | el | Yahweh
 vaiyashev | et | hatzel | bama'alot | asher | yaredah | bema'alot | Achaz | achoranit
 eser | ma'alot
 
@@ -89,8 +87,7 @@ lo | hayah | davar | asher | lo | her'am | Chizkiyahu | beveito
 uvekhol | memshalto
 
 20:14
-vaiyavo | Yesha'yahu | hanavi
-el | hamelekh
+vaiyavo | Yesha'yahu | hanavi | el | hamelekh
 Chizkiyahu
 vaiyomer | elav | mah | ameru | ha'anashim | ha'eleh | ume'ayin | yavo'u | eleikha
 vaiyomer | Chizkiyahu | me'eretz | rechokah | ba'u | Mibavel
@@ -101,8 +98,8 @@ vaiyomer | Chizkiyahu | et | kol | asher | beveiti | ra'u
 lo | hayah | davar | asher | lo | hir'itim | be'otzerotai
 
 20:16
-vaiyomer | Yesha'yahu
-el | Chizkiyahu | shema
+vaiyomer | Yesha'yahu | el | Chizkiyahu
+shema
 devar | Yahweh
 
 20:17
@@ -133,6 +130,6 @@ halo | hem | ketuvim | al | sefer | divrei | haiyamim
 lemalkhei | Yehudah
 
 20:21
-vaiyishkav | Chizkiyahu
-im | avotav | vaiyimlokh | Menasheh | veno
+vaiyishkav | Chizkiyahu | im | avotav
+vaiyimlokh | Menasheh | veno
 tachtav

@@ -1,8 +1,7 @@
 28:1
 vaiyikra | Yitzchak | el | Ya'ako
 vayvarekh | oto
-vaytzavehu | vaiyomer | lo
-lo | tikach | ishah | mibenot | Kena'an
+vaytzavehu | vaiyomer | lo | lo | tikach | ishah | mibenot | Kena'an
 
 28:2
 kum | lekh | Padenah | Aram | beitah | Vetu'el
@@ -11,9 +10,7 @@ vekach | lekha | misham | ishah | mibenot | Lavan
 achi | imekha
 
 28:3
-ve'el | Shadai | yevarekh | otekha
-veyafrekha
-veyarbekha
+ve'el | Shadai | yevarekh | otekha | veyafrekha | veyarbekha
 vehayita
 likhal | amim
 
@@ -25,8 +22,7 @@ asher | natan | elohim | Le'avraham
 28:5
 vaiyishlach | Yitzchak | et | Ya'ako
 vaiyelekh
-Padenah | Aram
-el | Lavan | ben | Betu'el | ha'arami
+Padenah | Aram | el | Lavan | ben | Betu'el | ha'arami
 achi | Rivkah
 em | Ya'ako
 Ve'esav
@@ -39,8 +35,8 @@ vaytzav | alav | lemor
 lo | tikach | ishah | mibenot | Kena'an
 
 28:7
-vaiyishma | Ya'ako
-el | aviv | ve'el | imo
+vaiyishma | Ya'ako | el | aviv
+ve'el | imo
 vaiyelekh
 Padenah | Aram
 
@@ -50,8 +46,7 @@ ki | ra'ot | benot | Kena'an | be'einei
 Yitzchak | aviv
 
 28:9
-vaiyelekh | Esav
-el | Yishma'el
+vaiyelekh | Esav | el | Yishma'el
 vaiyikach | et | Machalat | bat | Yishma'el | ben | Avraham | achot | Nevayot | al | nashav
 lo | le'ishah
 
@@ -64,8 +59,7 @@ Charanah
 vaiyifga | bamakom | vaiyalen | sham | ki | va | hashemesh
 vaiyikach | me'avnei | hamakom
 vaiyasem | mera'ashotav
-vaiyishkav
-bamakom | hahu
+vaiyishkav | bamakom | hahu
 
 28:12
 vaiyachalom | vehineh | sulam | mutzav | artzah
@@ -89,8 +83,7 @@ venivrakhu | vekha | kol | mishpechot | ha'adamah | uvezar'ekha
 
 28:15
 vehineh | anokhi | imakh | ushemartikha | bekhol | asher | telekh
-vahashivotikha
-el | ha'adamah
+vahashivotikha | el | ha'adamah
 hazot
 ki | lo | e'ezavekha
 ad | asher | im | asiti
@@ -112,8 +105,7 @@ sha'ar | hashamayim
 28:18
 vaiyashkem | Ya'ako | baboker | vaiyikach | et | ha'even | asher | sam | mera'ashotav
 vaiyasem | otah | matzevah
-vaiyitzok | shemen
-al | roshah
+vaiyitzok | shemen | al | roshah
 
 28:19
 vaiyikra | et | shem | hamakom | hahu | Beit | El
@@ -126,12 +118,11 @@ im | yihyeh | elohim | imadi | ushemarani | baderekh | hazeh | asher | anokhi | 
 venatan | li | lechem | le'ekhol | uveged | lilbosh
 
 28:21
-veshavti | veshalom
-el | beit | avi
+veshavti | veshalom | el | beit | avi
 vehayah | Yahweh | li | lelohim
 
 28:22
-veha'even | hazot | asher | samti | matzevah | yihyeh
-beit | elohim
+veha'even | hazot | asher | samti | matzevah | yihyeh | beit | elohim
 vekhol | asher | titen | li
-aser | a'asserenu | lakh
+aser
+a'asserenu | lakh

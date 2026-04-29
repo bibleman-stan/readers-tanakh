@@ -5,23 +5,19 @@ me'et | Yahweh | lemor
 
 27:2
 koh | amar | Yahweh | elai | aseh | lekha | moserot | umotot
-unetatam
-al | tzavarekha
+unetatam | al | tzavarekha
 
 27:3
 veshilachtam | el | melekh | Edom | ve'el | melekh | Mo'av | ve'el | melekh | benei | Amon
 ve'el | melekh | Tzor
 ve'el | melekh | Tzidon
-beyad | mal'akhim | haba'im | Yerushalim
-el | Tzidkiyahu
+beyad | mal'akhim | haba'im | Yerushalim | el | Tzidkiyahu
 melekh | Yehudah
 
 27:4
-vetzivita | otam
-el | adoneihem | lemor
+vetzivita | otam | el | adoneihem | lemor
 koh | amar | Yahweh | tzeva'ot | elohei | Yisra'el
-koh | tomeru
-el | adoneikhem
+koh | tomeru | el | adoneikhem
 
 27:5
 anokhi | asiti | et | ha'aretz | et | ha'adam | ve'et | habehemah | asher | al | penei | ha'aretz
@@ -39,7 +35,8 @@ natati | lo | le'avedo
 
 27:7
 ve'avedu | oto | kol | hagoyim | ve'et | beno
-ve'et | ben | beno | ad | bo | et | artzo | gam | hu
+ve'et | ben | beno
+ad | bo | et | artzo | gam | hu
 ve'avedu | vo | goyim | rabim | umelakhim
 gedolim
 
@@ -78,10 +75,8 @@ havi'u | et | tzavereikhem | be'ol | melekh | Bavel | ve'ivdu | oto | ve'amo
 vichyu
 
 27:13
-lamah | tamutu | atah | ve'amekha | bacherev
-bara'av | uvadaver
-ka'asher | diber | Yahweh
-el | hagoy | asher | lo | ya'avod
+lamah | tamutu | atah | ve'amekha | bacherev | bara'av | uvadaver
+ka'asher | diber | Yahweh | el | hagoy | asher | lo | ya'avod
 et | melekh | Bavel
 
 27:14
@@ -122,11 +117,8 @@ levilti | vo'u | hakelim | hanotarim | beveit | Yahweh | uveit | melekh | Yehuda
 Bavelah
 
 27:19
-ki | khoh | amar | Yahweh | tzeva'ot
-el | ha'amudim
-ve'al | haiyam
-ve'al | hamekhonot
-ve'al | yeter | hakelim
+ki | khoh | amar | Yahweh | tzeva'ot | el | ha'amudim
+ve'al | haiyam | ve'al | hamekhonot | ve'al | yeter | hakelim
 hanotarim | ba'ir | hazot
 
 27:20
@@ -144,6 +136,5 @@ Virushalim
 27:22
 Bavelah | yuva'u | veshamah | yihyu
 ad | yom | pakedi | otam | ne'um | Yahweh
-veha'alitim | vahashivotim
-el | hamakom
+veha'alitim | vahashivotim | el | hamakom
 hazeh

@@ -11,7 +11,8 @@ vesus | doher | umerkavah | merakedah
 
 3:3
 parash | ma'aleh | velahav | cherev | uverak | chanit
-vero | chalal | vekhoed | pager
+vero | chalal
+vekhoed | pager
 ve'ein | ketzeh | lageviyah | veyikhshelu | bigviyatam
 
 3:4
@@ -21,8 +22,7 @@ hamokheret | goyim | biznuneiha | umishpachot | bikhshafeiha
 
 3:5
 hini | elayikh | ne'um | Yahweh | tzeva'ot
-vegileiti | shulayikh
-al | panayikh
+vegileiti | shulayikh | al | panayikh
 vehar'eiti | goyim | ma'rekh | umamlakhot
 kelonekh
 
@@ -33,7 +33,8 @@ vesamtikh | kero'i
 3:7
 vehayah | khol | ro'ayikh | yidod | mimekh
 ve'amar | shadedah | Ninveh | mi
-yanud | lah | me'ayin | avakesh | menachamim | lakh
+yanud | lah
+me'ayin | avakesh | menachamim | lakh
 
 3:8
 hateitevi | Mino | Amon
@@ -49,8 +50,7 @@ hayu | be'ezratekh
 3:10
 gam | hi | lagolah | halekhah | vashevi
 gam | olaleiha | yeruteshu
-berosh | kol | chutzot
-ve'al | nikhbadeiha | yadu | goral
+berosh | kol | chutzot | ve'al | nikhbadeiha | yadu | goral
 vekhol | gedoleiha
 ruteku | vazikim
 
@@ -60,17 +60,14 @@ tehi | na'alamah
 gam | at | tevakshi | ma'oz | me'oyev
 
 3:12
-kal | mivtzarayikh | te'enim
-im | bikurim
-im | yino'u
-venafelu
+kal | mivtzarayikh | te'enim | im | bikurim
+im | yino'u | venafelu
 al | pi | okhel
 
 3:13
 hineh | amekh | nashim | bekirbekh | le'oyevayikh
 patoach | Niftechu
-sha'arei | artzekh
-akhelah | esh | berichayikh
+sha'arei | artzekh | akhelah | esh | berichayikh
 
 3:14
 mei | matzor | sha'avi | lakh
@@ -94,8 +91,8 @@ vaiya'of
 minezarayikh | ka'arbeh
 vetafserayikh | kegov | goyai
 hachonim | bagederot | beyom | karah
-shemesh | zarechah | venodad | velo | Noda | mekomo
-aiyam
+shemesh | zarechah | venodad
+velo | Noda | mekomo | aiyam
 
 3:18
 namu | ro'eikha | melekh | Ashur

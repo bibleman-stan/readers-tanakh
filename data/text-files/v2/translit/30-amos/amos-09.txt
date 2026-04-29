@@ -1,8 +1,8 @@
 9:1
 ra'iti | et | Adonai | nitzav | al | hamizbeach | vaiyomer | hakh | hakaftor | veyir'ashu | hasipim | uvetza'am | berosh | kulam
 ve'acharitam
-bacherev | eherog
-lo | yanus | lahem | nas | velo | yimalet | lahem
+bacherev | eherog | lo | yanus | lahem | nas
+velo | yimalet | lahem
 palit
 
 9:2
@@ -12,9 +12,11 @@ ve'im | ya'alu | hashamayim | misham
 oridem
 
 9:3
-ve'im | yechave'u | berosh | Hakarmel | misham | achapes | ulekachtim
+ve'im | yechave'u | berosh | Hakarmel
+misham | achapes | ulekachtim
 ve'im | yisateru | mineged | einai | bekarka | haiyam
-misham | atzaveh | et | hanachash | uneshakham
+misham | atzaveh | et | hanachash
+uneshakham
 
 9:4
 ve'im | yelekhu | vashevi | lifnei | veihem
@@ -88,12 +90,12 @@ veshavti | et | shevut | ami | Yisra'el
 uvanu | arim | neshamot | veyashavu
 venate'u | kheramim
 veshatu
-et | yeinam | ve'asu | ganot
+et | yeinam
+ve'asu | ganot
 ve'akhelu | et | perihem
 
 9:15
-uneta'tim
-al | admatam
+uneta'tim | al | admatam
 velo | yinateshu | od | me'al | admatam | asher | natati | lahem
 amar
 Yahweh | eloheikha

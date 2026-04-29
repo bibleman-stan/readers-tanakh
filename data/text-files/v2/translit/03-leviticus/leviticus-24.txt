@@ -1,6 +1,5 @@
 24:1
-vaydaber | Yahweh
-el | Mosheh | lemor
+vaydaber | Yahweh | el | Mosheh | lemor
 
 24:2
 tzav | et | benei | Yisra'el | veyikchu | eleikha | shemen | zayit | zakh | katit
@@ -12,8 +11,8 @@ tamid
 chukat | olam | ledoroteikhem
 
 24:4
-al | hamenorah | hatehorah | ya'arokh
-et | hanerot | lifnei | Yahweh
+al | hamenorah | hatehorah | ya'arokh | et | hanerot
+lifnei | Yahweh
 tamid
 
 24:5
@@ -29,19 +28,16 @@ shesh | hama'arakhet | al | hashulchan | hatahor
 lifnei | Yahweh
 
 24:7
-venatata | al | hama'arekhet
-levonah | zakah
+venatata | al | hama'arekhet | levonah | zakah
 vehaytah | lalechem | le'azkarah
 isheh | Layahweh
 
 24:8
 beyom | hashabat | beyom | hashabat | ya'arkhenu | lifnei | Yahweh
-tamid | me'et | benei | Yisra'el
-berit | olam
+tamid | me'et | benei | Yisra'el | berit | olam
 
 24:9
-vehaytah | Le'aharon | ulevanav | va'akhaluhu
-bemakom | kadosh
+vehaytah | Le'aharon | ulevanav | va'akhaluhu | bemakom | kadosh
 ki | kodesh | kadashim | hu | lo | me'ishei | Yahweh
 chok | olam
 
@@ -55,8 +51,7 @@ haiyisre'eli
 
 24:11
 vaiyiko | ben | ha'ishah | haiyisre'elit | et | hashem | vaykalel
-vaiyavi'u | oto
-el | Mosheh
+vaiyavi'u | oto | el | Mosheh
 veshem | imo | Shelomit | bat | Divri | lemateh | Dan
 
 24:12
@@ -64,19 +59,16 @@ vaiyanichuhu | bamishmar | lifrosh | lahem
 al | pi | Yahweh
 
 24:13
-vaydaber | Yahweh
-el | Mosheh | lemor
+vaydaber | Yahweh | el | Mosheh | lemor
 
 24:14
 hotze | et | hamkalel | el | michutz | lamachaneh
-vesamekhu | khol | hashome'im | et | yedeihem
-al | rosho
+vesamekhu | khol | hashome'im | et | yedeihem | al | rosho
 veragmu | oto
 kol | ha'edah
 
 24:15
-ve'el | benei | Yisra'el
-tedaber | lemor
+ve'el | benei | Yisra'el | tedaber | lemor
 ish | ish | ki | yekalel | elohav
 venasa | chet'o
 
@@ -120,5 +112,6 @@ ki | ani | Yahweh | eloheikhem
 vaydaber | Mosheh | el | benei | Yisra'el
 vaiyotzi'u | et | hamkalel | el | michutz | lamachaneh
 vaiyirgemu | oto
-aven | uvenei | Yisra'el | asu
+aven
+uvenei | Yisra'el | asu
 ka'asher | tzivah | Yahweh | et | Mosheh

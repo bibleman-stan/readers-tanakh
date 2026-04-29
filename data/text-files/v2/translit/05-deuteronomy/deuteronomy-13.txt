@@ -1,7 +1,6 @@
 13:1
 et | kol | hadavar | asher | anokhi | metzaveh | etkhem
-oto | tishmeru | la'asot
-lo | tosef | alav
+oto | tishmeru | la'asot | lo | tosef | alav
 velo | tigra | mimenu
 
 13:2
@@ -20,7 +19,8 @@ vena'avedem
 lo | tishma | el | divrei | hanavi | hahu
 o | el | cholem | hachalom | hahu
 ki | menaseh | Yahweh | eloheikhem | etkhem
-lada'at | hayishkhem | ohavim | et | Yahweh | eloheikhem | bekhol | levavkhem | uvekhol | nafshekhem
+lada'at | hayishkhem | ohavim | et | Yahweh | eloheikhem | bekhol | levavkhem
+uvekhol | nafshekhem
 
 13:5
 acharei | Yahweh | eloheikhem | telekhu | ve'oto | tira'u
@@ -42,12 +42,12 @@ atah | va'avoteikha
 13:8
 me'elohei | ha'amim | asher | sevivoteikhem | hakerovim | eleikha
 o
-harechokim | mimeka | miktzeh | ha'aretz
-ve'ad | ketzeh | ha'aretz
+harechokim | mimeka | miktzeh | ha'aretz | ve'ad | ketzeh | ha'aretz
 
 13:9
 lo | toveh | lo | velo | tishma | elav
-velo | tachos | einekha | alav | velo | tachmol | velo | tekhaseh
+velo | tachos | einekha | alav
+velo | tachmol | velo | tekhaseh
 alav
 
 13:10
@@ -99,7 +99,7 @@ lema'an | yashuv | Yahweh | mecharon | apo | venatan | lekha | rachamim | verich
 ka'asher | Nishba | la'avoteikha
 
 13:19
-ki | tishma | bekol | Yahweh | eloheikha
-lishmor | et | kol | mitzvotav | asher | anokhi | metzavekha | haiyom
+ki | tishma | bekol | Yahweh | eloheikha | lishmor | et | kol | mitzvotav
+asher | anokhi | metzavekha | haiyom
 la'asot | haiyashar | be'einei
 Yahweh | eloheikha

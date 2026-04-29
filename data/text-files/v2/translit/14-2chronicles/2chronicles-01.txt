@@ -1,6 +1,6 @@
 1:1
-vaiyitchazek | Shelomoh | ven | David
-al | malkhuto | Vayahweh | elohav | imo
+vaiyitchazek | Shelomoh | ven | David | al | malkhuto
+Vayahweh | elohav | imo
 vaygadelehu | lema'elah
 
 1:2
@@ -44,11 +44,9 @@ tachtav
 
 1:9
 atah | Yahweh | elohim
-ye'amen | devarekha
-im
+ye'amen | devarekha | im
 David | avi
-ki | atah | himlakhtani
-al | am
+ki | atah | himlakhtani | al | am
 rav | ka'afar | ha'aretz
 
 1:10
@@ -72,15 +70,13 @@ lo | yihyeh | ken
 
 1:13
 vaiyavo | Shelomoh | labamah | asher | Begiv'on | Yerushalim | milifnei
-ohel | mo'ed | vaiyimlokh
-al | Yisra'el
+ohel | mo'ed | vaiyimlokh | al | Yisra'el
 
 1:14
 vaiye'esof | Shelomoh | rekhev | ufarashim
 vayhi | lo | elef | ve'arba | me'ot | rekhev
 usheneim | asar | elef | parashim
-vaiyanichem | be'arei | harekhev
-ve'im | hamelekh | Birushalim
+vaiyanichem | be'arei | harekhev | ve'im | hamelekh | Birushalim
 
 1:15
 vaiyiten | hamelekh | et | hakesef | ve'et | hazahav | Birushalim | ka'avanim
@@ -98,5 +94,5 @@ vekhen | lekhol | malkhei | hachitim | umalkhei | Aram
 beyadam | yotzi'u
 
 1:18
-vaiyomer | Shelomoh | livnot | bayit | leshem | Yahweh
-uvayit | lemalkhuto
+vaiyomer | Shelomoh | livnot | bayit | leshem | Yahweh | uvayit
+lemalkhuto

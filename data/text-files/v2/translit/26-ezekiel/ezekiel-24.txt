@@ -18,7 +18,8 @@ vegam | yetzok | bo | mayim
 24:4
 esof | netacheiha | eleiha
 kol | netach | tov
-yarekh | vekhatef | mivchar | atzamim | male
+yarekh | vekhatef | mivchar | atzamim
+male
 
 24:5
 mivchar | hatzon | lakoach
@@ -38,8 +39,7 @@ lo | nafal | aleiha
 goral
 
 24:7
-ki | damah | betokhah | hayah
-al | tzechiach | sela
+ki | damah | betokhah | hayah | al | tzechiach | sela
 samatehu | lo | shefakhathu | al | ha'aretz
 lekhasot | alav
 afar
@@ -72,21 +72,19 @@ chel'atah
 
 24:12
 te'unim
-hel'at | velo | tetze | mimenah | rabat | chel'atah | be'esh
+hel'at
+velo | tetze | mimenah | rabat | chel'atah | be'esh
 chel'atah
 
 24:13
 betum'atekh
 zimah
 ya'an | tihartikh | velo | tahart
-mitum'atekh | lo | tithari | od
-ad | hanichi | et | chamati | bakh
+mitum'atekh | lo | tithari | od | ad | hanichi | et | chamati | bakh
 
 24:14
-ani | Yahweh | dibarti | ba'ah | ve'asiti
-lo | efra | velo | achus
-velo | enachem
-kidrakhayikh | vekha'alilotayikh | shefatukh
+ani | Yahweh | dibarti | ba'ah | ve'asiti | lo | efra | velo | achus
+velo | enachem | kidrakhayikh | vekha'alilotayikh | shefatukh
 ne'um
 Adonai | Yahweh
 
@@ -112,8 +110,7 @@ velechem | anashim | lo | tokhel
 24:18
 va'adaber | el | ha'am | baboker
 vatamot | ishti | ba'arev
-va'a'as | baboker
-ka'asher | tzuveiti
+va'a'as | baboker | ka'asher | tzuveiti
 
 24:19
 vaiyomeru | elai
@@ -124,7 +121,8 @@ oseh
 
 24:20
 va'omar
-aleihem | devar | Yahweh
+aleihem
+devar | Yahweh
 hayah | elai | lemor
 
 24:21
@@ -148,9 +146,9 @@ unehamtem
 ish | el | achiv
 
 24:24
-vehayah | Yechezkel | lakhem | lemofet
-kekhol | asher | asah | ta'asu
-bevo'ah | vida'tem
+vehayah | Yechezkel | lakhem | lemofet | kekhol | asher | asah
+ta'asu | bevo'ah
+vida'tem
 ki | ani
 Adonai | Yahweh
 

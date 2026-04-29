@@ -4,8 +4,7 @@ me'et | Yahweh | lemor
 
 30:2
 koh | amar | Yahweh | elohei | Yisra'el | lemor
-ketov | lekha | et | kol | hadevarim | asher | dibarti | eleikha
-el | sefer
+ketov | lekha | et | kol | hadevarim | asher | dibarti | eleikha | el | sefer
 
 30:3
 ki | hineh | yamim | ba'im | ne'um | Yahweh
@@ -39,7 +38,8 @@ yivashea
 
 30:8
 vehayah | vaiyom | hahu | ne'um | Yahweh | tzeva'ot | eshbor | ulo | me'al | tzavarekha
-umosroteikha | anatek | velo | ya'avdu | vo | od
+umosroteikha | anatek
+velo | ya'avdu | vo | od
 zarim
 
 30:9
@@ -62,8 +62,7 @@ lo | anakeka
 
 30:12
 ki | khoh | amar | Yahweh
-anush | leshivrekh
-nachlah | makatekh
+anush | leshivrekh | nachlah | makatekh
 
 30:13
 ein | dan | dinekh | lemazor
@@ -78,8 +77,8 @@ atzemu
 chatotayikh
 
 30:15
-mah | tiz'ak | al | shivrekh | anush
-makh'ovekh | al | ro | avonekh | atzemu | chatotayikh
+mah | tiz'ak | al | shivrekh
+anush | makh'ovekh | al | ro | avonekh | atzemu | chatotayikh
 asiti | eleh | lakh
 
 30:16
@@ -99,7 +98,8 @@ doresh | ein | lah
 
 30:18
 koh | amar | Yahweh | hini | shav | shevut | oholei | Ya'akov
-umishkenotav | arachem | venivnetah | ir | al | tilah
+umishkenotav | arachem
+venivnetah | ir | al | tilah
 ve'armon
 al | mishpato | yeshev
 
@@ -132,6 +132,6 @@ sa'ar | mitgorer | al | rosh | resha'im
 yachul
 
 30:24
-lo | yashuv | charon | af | Yahweh
-ad | asoto | ve'ad | hakimo | mezimot | libo | be'acharit | haiyamim
+lo | yashuv | charon | af | Yahweh | ad | asoto | ve'ad | hakimo
+mezimot | libo | be'acharit | haiyamim
 titbonu | vah

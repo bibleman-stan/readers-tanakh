@@ -2,14 +2,12 @@
 velo | yakhol | Yosef | lehit'apek | lekhol | hanitzavim | alav
 vaiyikra
 hotzi'u | khol | ish | me'alai | velo | amad | ish | ito
-behitvada | Yosef
-el | echav
+behitvada | Yosef | el | echav
 
 45:2
 vaiyiten | et | kolo | bivkhi
 vaiyishme'u | Mitzrayim
-vaiyishma
-beit | par'oh
+vaiyishma | beit | par'oh
 
 45:3
 vaiyomer | Yosef | el | echav | ani | Yosef
@@ -35,8 +33,8 @@ ve'od | chamesh | shanim | asher | ein | charish
 vekatzir
 
 45:7
-vaiyishlacheni | elohim | lifneikhem
-lasum | lakhem | she'erit | ba'aretz | ulehachayot | lakhem | lifleitah
+vaiyishlacheni | elohim | lifneikhem | lasum | lakhem | she'erit
+ba'aretz | ulehachayot | lakhem | lifleitah
 gedolah
 
 45:8
@@ -49,8 +47,7 @@ bekhol | eretz | Mitzrayim
 maharu | va'alu | el | avi
 va'amartem | elav | koh | amar | binkha | Yosef
 samani | elohim | le'adon | lekhol | Mitzrayim
-redah | elai
-al | ta'amod
+redah | elai | al | ta'amod
 
 45:10
 veyashavta | ve'eretz | Goshen | vehayita | karov | elai
@@ -78,8 +75,7 @@ henah
 
 45:14
 vaiyipol | al | tzaverei | Vinyamin | achiv
-vaiyevek | Uvinyamin | bakhah
-al | tzavarav
+vaiyevek | Uvinyamin | bakhah | al | tzavarav
 
 45:15
 vaynashek | lekhol | echav
@@ -98,12 +94,12 @@ avadav
 vaiyomer | par'oh | el | Yosef
 emor | el | acheikha
 zot | asu
-ta'anu | et | be'irekhem | ulekhu | vo'u
+ta'anu | et | be'irekhem
+ulekhu | vo'u
 artzah | Kena'an
 
 45:18
-ukechu | et | avikhem | ve'et | bateikhem
-uvo'u | elai
+ukechu | et | avikhem | ve'et | bateikhem | uvo'u | elai
 ve'etenah | lakhem | et | tuv | eretz | Mitzrayim
 ve'ikhlu | et | chelev | ha'aretz
 
@@ -114,15 +110,13 @@ kechu | lakhem | me'eretz | Mitzrayim | agalot | letapekhem | velinsheikhem
 unesatem | et | avikhem | uvatem
 
 45:20
-ve'einekhem
-al | tachos
-al | keleikhem
+ve'einekhem | al | tachos | al | keleikhem
 ki | tuv | kol | eretz | Mitzrayim | lakhem | hu
 
 45:21
 vaiya'asu | khen | benei | Yisra'el
-vaiyiten | lahem | Yosef | agalot
-al | pi | far'oh | vaiyiten | lahem | tzedah | ladarekh
+vaiyiten | lahem | Yosef | agalot | al | pi | far'oh
+vaiyiten | lahem | tzedah | ladarekh
 
 45:22
 lekhulam | natan | la'ish
@@ -140,13 +134,12 @@ ladarekh
 45:24
 vayshalach | et | echav
 vaiyelekhu
-vaiyomer | alehem
-al | tirgezu | badarekh
+vaiyomer | alehem | al | tirgezu | badarekh
 
 45:25
 vaiya'alu | Mimitzrayim
-vaiyavo'u | eretz | Kena'an
-el | Ya'ako | avihem
+vaiyavo'u | eretz | Kena'an | el | Ya'ako
+avihem
 
 45:26
 vaiyagidu | lo | lemor | od | Yosef | chai
@@ -157,8 +150,8 @@ ki | lo | he'emin | lahem
 45:27
 vaydaberu | elav | et | kol | divrei | Yosef | asher | diber | alehem
 vaiyar | et | ha'agalot
-asher | shalach | Yosef
-laset | oto | vatechi
+asher | shalach | Yosef | laset | oto
+vatechi
 ruach | Ya'ako | avihem
 
 45:28

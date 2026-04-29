@@ -17,9 +17,10 @@ description: |
 
 trigger:
   line_n_first_token:
-    morphology: do_marker
+    morphology: bare_do_marker
   line_n_last_token:
-    morphology: do_marker          # single-token line with just את / ואת
+    morphology: bare_do_marker     # single-token line with just את / ואת
+                                    # (no maqqef-bound complement)
   combined_max_prosodic_words: 6
 
 guards:

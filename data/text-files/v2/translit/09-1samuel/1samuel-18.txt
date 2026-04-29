@@ -1,24 +1,20 @@
 18:1
 vayhi | kekhaloto | ledaber | el | Sha'ul
 venefesh | Yehonatan
-Niksherah
-benefesh | David | vaiye'ehavov | Yehonatan | kenafsho
+Niksherah | benefesh | David
+vaiye'ehavov | Yehonatan | kenafsho
 
 18:2
-vaiyikachehu | Sha'ul
-baiyom | hahu
+vaiyikachehu | Sha'ul | baiyom | hahu
 velo | netano | lashuv
 beit | aviv
 
 18:3
-vaiyikhrot | Yehonatan | Vedavid | berit
-be'ahavato | oto | kenafsho
+vaiyikhrot | Yehonatan | Vedavid | berit | be'ahavato | oto | kenafsho
 
 18:4
 vaiyitpashet | Yehonatan | et | hame'il | asher | alav
-vaiyitenehu | Ledavid | umadav
-ve'ad | charbo | ve'ad | kashto
-ve'ad | chagoro
+vaiyitenehu | Ledavid | umadav | ve'ad | charbo | ve'ad | kashto | ve'ad | chagoro
 
 18:5
 vaiyetze | David | bekhol | asher | yishlachenu | Sha'ul | yaskil
@@ -30,8 +26,7 @@ avdei | Sha'ul
 
 18:6
 vayhi | bevo'am | beshuv | David | mehakot | et | hapelishti
-vatetzenah | hanashim | mikol | arei | Yisra'el | lashor | vehamecholot
-likrat
+vatetzenah | hanashim | mikol | arei | Yisra'el | lashor | vehamecholot | likrat
 Sha'ul | hamelekh
 betupim | besimchah | uveshalishim
 
@@ -74,8 +69,7 @@ ume'im | Sha'ul | sar
 18:13
 vaysirehu | Sha'ul | me'imo
 vaysimehu | lo
-sar | alef | vaiyetze | vaiyavo
-lifnei | ha'am
+sar | alef | vaiyetze | vaiyavo | lifnei | ha'am
 
 18:14
 vayhi | David | lekhol | darekhav | maskil
@@ -87,8 +81,8 @@ vaiyar | Sha'ul
 asher | hu | maskil | me'od | vaiyagor | mipanav
 
 18:16
-vekhol | Yisra'el | Vihudah | ohev
-et | David | ki | hu | yotze | vava | lifneihem
+vekhol | Yisra'el | Vihudah | ohev | et | David
+ki | hu | yotze | vava | lifneihem
 
 18:17
 vaiyomer | Sha'ul | el | David | hineh | viti | hagedolah | Merav | otah | eten | lekha | le'ishah
@@ -135,8 +129,8 @@ ve'anokhi
 ish | rash | venikleh
 
 18:24
-vaiyagidu | avdei | Sha'ul | lo | lemor
-kadevarim | ha'eleh | diber | David
+vaiyagidu | avdei | Sha'ul | lo | lemor | kadevarim | ha'eleh
+diber | David
 
 18:25
 vaiyomer | Sha'ul | koh | tomeru | Ledavid | ein | chefetz | lamelekh | bemohar
@@ -156,9 +150,7 @@ vaiyiten | lo | Sha'ul | et | Mikhal | bito | le'ishah
 
 18:28
 vaiyar | Sha'ul | vaiyeda
-ki | Yahweh
-im | David
-Umikhal | bat | Sha'ul
+ki | Yahweh | im | David | Umikhal | bat | Sha'ul
 ahevathu
 
 18:29

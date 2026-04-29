@@ -1,6 +1,6 @@
 19:1
-vaiyetze | hagoral | hasheni | Leshim'on | lemateh | venei | Shim'on
-lemishpechotam | vayhi | nachalatam | betokh
+vaiyetze | hagoral | hasheni | Leshim'on | lemateh | venei | Shim'on | lemishpechotam
+vayhi | nachalatam | betokh
 nachalat | benei | Yehudah
 
 19:2
@@ -36,16 +36,14 @@ ramat | Negev
 zot | nachalat | mateh | venei | Shim'on | lemishpechotam
 
 19:9
-mechevel | benei | Yehudah | nachalat
-benei | Shim'on
+mechevel | benei | Yehudah | nachalat | benei | Shim'on
 ki | hayah | chelek | benei | Yehudah | rav | mehem
 vaiyinchalu | venei | Shim'on
 betokh | nachalatam
 
 19:10
 vaiya'al | hagoral | hashelishi | livnei | Zevulun | lemishpechotam
-vayhi | gevul | nachalatam
-ad | Sarid
+vayhi | gevul | nachalatam | ad | Sarid
 
 19:11
 ve'alah | gevulam | laiyamah | Umar'alah
@@ -53,8 +51,7 @@ ufaga | Bedabashet
 ufaga | el | hanachal | asher | al | penei | Yakene'am
 
 19:12
-veshav | Misarid | kedemah | mizrach | hashemesh
-al | gevul | Kislot
+veshav | Misarid | kedemah | mizrach | hashemesh | al | gevul | Kislot
 Tavor
 veyatza | el | Hadaverat
 ve'alah | Yafia
@@ -134,13 +131,11 @@ veyatza | el | Kavul | misemol
 
 19:28
 Ve'evron | Urecho
-Vechamon | Vekanah
-ad
+Vechamon | Vekanah | ad
 Tzidon | rabah
 
 19:29
-veshav | hagevul | Haramah
-ve'ad | ir | mivtzar | Tzor | veshav | hagevul | Chosah
+veshav | hagevul | Haramah | ve'ad | ir | mivtzar | Tzor | veshav | hagevul | Chosah
 veyihyu | totze'otav | haiyamah
 mechevel | Akhzivah
 
@@ -223,8 +218,7 @@ Vegat | Rimon
 
 19:46
 umei | Haiyarkon
-Veharakon
-im | hagevul | mul | Yafo
+Veharakon | im | hagevul | mul | Yafo
 
 19:47
 vaiyetze | gevul | benei | Dan | mehem
@@ -244,11 +238,12 @@ betokham
 
 19:50
 al | pi | Yahweh | natenu | lo | et | ha'ir | asher | sha'al
-et | Timnat | Serach | behar | Efrayim
+et | Timnat | Serach
+behar | Efrayim
 vaiyivneh | et | ha'ir
 vaiyeshev | bah
 
 19:51
 eleh | hanechalot | asher | nichalu | El'azar | hakohen | Vihoshua | bin | Nun | verashei | ha'avot | lematot | benei | Yisra'el | begoral | Beshiloh | lifnei | Yahweh
-petach
-ohel | mo'ed | vaykhalu | mechalek | et | ha'aretz
+petach | ohel | mo'ed
+vaykhalu | mechalek | et | ha'aretz

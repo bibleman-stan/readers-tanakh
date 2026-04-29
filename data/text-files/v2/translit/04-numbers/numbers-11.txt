@@ -4,12 +4,11 @@ ra
 be'azenei | Yahweh
 vaiyishma | Yahweh | vaiyichar | apo
 vativ'ar | bam | esh | Yahweh
-vatokhal
-biktzeh | hamachaneh
+vatokhal | biktzeh | hamachaneh
 
 11:2
-vaiyitz'ak | ha'am
-el | Mosheh | vaiyitpalel | Mosheh | el | Yahweh
+vaiyitz'ak | ha'am | el | Mosheh
+vaiyitpalel | Mosheh | el | Yahweh
 vatishka
 ha'esh
 
@@ -32,11 +31,11 @@ zakharnu | et | hadagah
 asher | nokhal | Bemitzrayim
 chinam
 et | hakishu'im | ve'et | ha'avatichim
-ve'et | hechatzir | ve'et | habetzalim | ve'et | hashumim
+ve'et | hechatzir | ve'et | habetzalim
+ve'et | hashumim
 
 11:6
-ve'atah | nafshenu | yeveshah | ein | kol | bilti
-el | haman | eineinu
+ve'atah | nafshenu | yeveshah | ein | kol | bilti | el | haman | eineinu
 
 11:7
 vehaman | kizra | gad
@@ -113,8 +112,7 @@ va'akhaltem
 
 11:19
 lo | yom | echad | tokhlun | velo | yomayim
-velo | chamishah | yamim | velo | asarah | yamim
-velo
+velo | chamishah | yamim | velo | asarah | yamim | velo
 esrim | yom
 
 11:20
@@ -129,8 +127,7 @@ vaiyomer | Mosheh
 shesh | me'ot | elef | ragli
 ha'am | asher | anokhi | bekirbo
 ve'atah | amarta | basar | eten | lahem
-ve'akhelu
-chodesh | yamim
+ve'akhelu | chodesh | yamim
 
 11:22
 hatzon | uvakar | yishachet | lahem
@@ -155,10 +152,8 @@ sevivot | ha'ohel
 11:25
 vaiyered | Yahweh | be'anan | vaydaber | elav
 vaiyatzel | min | haruach | asher | alav
-vaiyiten
-al | shiv'im | ish
-hazekenim
-vayhi | kenoach | aleihem | haruach
+vaiyiten | al | shiv'im | ish
+hazekenim | vayhi | kenoach | aleihem | haruach
 vaiyitnabe'u
 velo | yasafu
 
@@ -187,8 +182,7 @@ ki | yiten | Yahweh | et | rucho
 aleihem
 
 11:30
-vaiye'asef | Mosheh
-el | hamachaneh
+vaiye'asef | Mosheh | el | hamachaneh
 hu
 veziknei | Yisra'el
 
@@ -203,8 +197,7 @@ vaiyakom | ha'am | kol | haiyom | hahu | vekhol | halaylah | vekhol | yom | hamo
 hamam'it
 asaf
 asarah | chomarim
-vaiyishtechu | lahem | shatoach
-sevivot
+vaiyishtechu | lahem | shatoach | sevivot
 hamachaneh
 
 11:33
@@ -219,8 +212,8 @@ rabah | me'od
 vaiyikra | et | shem | hamakom | hahu
 Kivrot | Hata'avah
 ki | sham | kaveru
-et | ha'am | hamit'avim
+et | ha'am
+hamit'avim
 
 11:35
-Mikivrot | Hata'avah | nase'u | ha'am | Chatzerot | vaiyihyu
-Bachatzerot
+Mikivrot | Hata'avah | nase'u | ha'am | Chatzerot | vaiyihyu | Bachatzerot

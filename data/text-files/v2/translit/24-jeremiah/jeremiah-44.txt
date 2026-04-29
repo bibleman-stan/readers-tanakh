@@ -1,6 +1,5 @@
 44:1
-hadavar | asher | hayah | el | Yirmeyahu
-el | kol | haiyehudim
+hadavar | asher | hayah | el | Yirmeyahu | el | kol | haiyehudim
 haiyoshevim | be'eretz | Mitzrayim
 haiyoshevim | Bemigdol | Uvetachpanches | Uvenof | uve'eretz | Patros
 lemor
@@ -58,11 +57,11 @@ ve'et | ra'ot | nesheikhem | asher | asu | be'eretz | Yehudah | uvechutzot
 Yerushalim
 
 44:10
-lo | duke'u
-ad
+lo | duke'u | ad
 haiyom | hazeh
 velo | yare'u | velo | halekhu | vetorati | uvechukotai
-asher | natati | lifneikhem | velifnei | avoteikhem
+asher | natati | lifneikhem
+velifnei | avoteikhem
 
 44:11
 lakhen | koh | amar | Yahweh | tzeva'ot | elohei | Yisra'el
@@ -117,18 +116,14 @@ hamibal'adei | anasheinu | asinu | lah | kavanim | leha'atzivah
 vehasekh | lah | nesakhim
 
 44:20
-vaiyomer | Yirmeyahu
-el | kol | ha'am
-al | hagevarim | ve'al | hanashim | ve'al | kol | ha'am
+vaiyomer | Yirmeyahu | el | kol | ha'am | al | hagevarim | ve'al | hanashim | ve'al | kol | ha'am
 ha'onim | oto | davar | lemor
 
 44:21
 halo | et | hakiter | asher | kitartem | be'arei | Yehudah | uvechutzot | Yerushalim
-atem | va'avoteikhem | malkheikhem | vesareikhem
-ve'am | ha'aretz
+atem | va'avoteikhem | malkheikhem | vesareikhem | ve'am | ha'aretz
 otam | zakhar | Yahweh
-vata'aleh
-al | libo
+vata'aleh | al | libo
 
 44:22
 velo | yukhal | Yahweh | od | laset | mipenei | roa | ma'aleikhem

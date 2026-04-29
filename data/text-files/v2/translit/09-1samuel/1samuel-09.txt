@@ -54,10 +54,8 @@ et | darkenu
 
 9:9
 lefanim | Beyisra'el | koh | amar | ha'ish | belekhto | lidroosh | elohim
-lekhu | venelekhah
-ad | haro'eh
-ki | lanavi | haiyom
-yikare | lefanim
+lekhu | venelekhah | ad | haro'eh
+ki | lanavi | haiyom | yikare | lefanim
 haro'eh
 
 9:10
@@ -81,8 +79,7 @@ ki | zevach | haiyom | la'am | babamah
 
 9:13
 kevo'akhem | ha'ir | ken | timtze'un | oto | beterem | ya'aleh | habamatah | le'ekhol | ki | lo | yokhal | ha'am | ad | bo'o
-ki | hu | yevarekh | hazevach
-acharei | khen
+ki | hu | yevarekh | hazevach | acharei | khen
 yokhelu | hakeru'im
 ve'atah | alu
 ki | oto | khehaiyom
@@ -115,13 +112,14 @@ hineh | ha'ish | asher | amarti | eleikha
 zeh | ya'tzor | be'ami
 
 9:18
-vaiyigash | Sha'ul | et | Shemu'el
-betokh | hasha'ar | vaiyomer | hagidah | na | li
+vaiyigash | Sha'ul | et | Shemu'el | betokh | hasha'ar
+vaiyomer | hagidah | na | li
 ei | zeh | beit | haro'eh
 
 9:19
 vaiya'an | Shemu'el | et | Sha'ul | vaiyomer | anokhi | haro'eh
-aleh | lefanai | habamah | va'akhaltem | imi
+aleh | lefanai | habamah
+va'akhaltem | imi
 haiyom
 veshilachtikha | vaboker
 vekhol | asher | bilvavekha
@@ -163,8 +161,7 @@ baiyom | hahu
 
 9:25
 vaiyeredu | mehabamah
-ha'ir | vaydaber | im | Sha'ul
-al | hagag
+ha'ir | vaydaber | im | Sha'ul | al | hagag
 
 9:26
 vaiyashkimu | vayhi | ka'alot | hashachar | vaiyikra | Shemu'el | el | Sha'ul | hagagh | lemor

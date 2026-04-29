@@ -1,6 +1,5 @@
 22:1
-vaydaber | Yahweh
-el | Mosheh | lemor
+vaydaber | Yahweh | el | Mosheh | lemor
 
 22:2
 daber | el | Aharon | ve'el | banav | veyinazeru | mikadeshei | venei | Yisra'el
@@ -16,8 +15,7 @@ ani | Yahweh
 
 22:4
 ish | ish | mizera | Aharon | vehu | tzarua | o | zav
-bakodashim | lo | yokhal
-ad | asher | yithar
+bakodashim | lo | yokhal | ad | asher | yithar
 vehanogea | bekhol | teme | nefesh
 o | ish
 asher | tetze | mimenu | shikhvat | zara
@@ -29,9 +27,8 @@ tum'ato
 
 22:6
 nefesh | asher | tiga | bo
-vetame'ah
-ad | ha'arev | velo | yokhal | min | hakodashim
-ki | im | rachatz | besaro | bamayim
+vetame'ah | ad | ha'arev | velo | yokhal | min | hakodashim | ki | im | rachatz | besaro
+bamayim
 
 22:7
 uva | hashemesh
@@ -45,8 +42,7 @@ nevelah | uterefah | lo | yokhal | letame'ah | vah
 ani | Yahweh
 
 22:9
-veshameru | et | mishmarti | velo | yis'u | alav | chet
-umetu | vo
+veshameru | et | mishmarti | velo | yis'u | alav | chet | umetu | vo
 ki | yechaleluhu
 ani | Yahweh | mekadesham
 
@@ -88,12 +84,11 @@ velo | yechalelu | et | kadeshei
 benei | Yisra'el | et | asher | yarimu | Layahweh
 
 22:16
-vehisi'u | otam | avon | ashmah | be'akhelam
-et | kadesheihem | ki | ani | Yahweh | mekadesham
+vehisi'u | otam | avon | ashmah | be'akhelam | et | kadesheihem
+ki | ani | Yahweh | mekadesham
 
 22:17
-vaydaber | Yahweh
-el | Mosheh | lemor
+vaydaber | Yahweh | el | Mosheh | lemor
 
 22:18
 daber | el | Aharon | ve'el | banav | ve'el | kol | benei | Yisra'el
@@ -111,8 +106,8 @@ lo | takrivu
 ki | lo | leratzon | yihyeh | lakhem
 
 22:21
-ve'ish | ki | yakriv | zevach | shelamim | Layahweh
-lefale | neder | o | lindavah | babakar
+ve'ish | ki | yakriv | zevach | shelamim | Layahweh | lefale | neder | o | lindavah
+babakar
 o | vatzon
 tamim | yihyeh | leratzon
 kol | mum
@@ -140,30 +135,25 @@ ki | mashechatam | bahem | mum | bam
 lo | yeratzu | lakhem
 
 22:26
-vaydaber | Yahweh
-el | Mosheh | lemor
+vaydaber | Yahweh | el | Mosheh | lemor
 
 22:27
 shor | ov | khesev | ov | ez | ki | yivaled
-vehayah | shiv'at | yamim
-tachat | imo | umiyom | hashemini | vahal'ah
+vehayah | shiv'at | yamim | tachat | imo | umiyom | hashemini | vahal'ah
 yeratzeh | lekarban | isheh | Layahweh
 
 22:28
 veshor
 ov | seh
 oto | ve'et | beno
-lo | tishchatu
-beyom | echad
+lo | tishchatu | beyom | echad
 
 22:29
 vekhi | tizbechu | zevach | todah | Layahweh | lirtzonekhem | tizbachu
 
 22:30
-baiyom | hahu | ye'akhel | lo | totiru | mimenu
-ad | boker
-ani
-Yahweh
+baiyom | hahu | ye'akhel | lo | totiru | mimenu | ad | boker
+ani | Yahweh
 
 22:31
 ushemartem | mitzvotai | va'asitem
@@ -177,7 +167,5 @@ benei | Yisra'el
 ani | Yahweh | mekadishkhem
 
 22:33
-hamotzi | etkhem | me'eretz | Mitzrayim | lihyot | lakhem
-lelohim
-ani
-Yahweh
+hamotzi | etkhem | me'eretz | Mitzrayim | lihyot | lakhem | lelohim
+ani | Yahweh

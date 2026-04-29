@@ -1,18 +1,18 @@
 31:1
 ufelishtim | nilchamim | Beyisra'el
 vaiyanusu | anshei | Yisra'el | mipenei | felishtim
-vaiyipelu | chalalim
-behar | Hagilboa
+vaiyipelu | chalalim | behar | Hagilboa
 
 31:2
 vaiyadbeku | felishtim | et | Sha'ul
-ve'et | banav | vaiyaku | felishtim | et | Yehonatan | ve'et | Avinadav | ve'et | Malki | Shua
-benei | Sha'ul
+ve'et | banav
+vaiyaku | felishtim | et | Yehonatan | ve'et | Avinadav | ve'et | Malki | Shua | benei | Sha'ul
 
 31:3
 vatikhbad | hamilchamah | el | Sha'ul
 vaiyimtza'uhu | hamorim
-anashim | bakashet | vaiyachel | me'od | mehamorim
+anashim | bakashet
+vaiyachel | me'od | mehamorim
 
 31:4
 vaiyomer | Sha'ul | lenose | khelav | shelof | charbekha | vedakereni | vah | pen | yavo'u | ha'arelim | ha'eleh | udekaruni | vehit'alelu | vi
@@ -41,8 +41,8 @@ vaiyeshevu | bahen
 
 31:8
 vayhi | mimochorat
-vaiyavo'u | felishtim | lefashet
-et | hachalalim | vaiyimtze'u | et | Sha'ul | ve'et | sheloshet | banav
+vaiyavo'u | felishtim | lefashet | et | hachalalim
+vaiyimtze'u | et | Sha'ul | ve'et | sheloshet | banav
 nofelim | behar | Hagilboa
 
 31:9
@@ -53,8 +53,7 @@ ve'et | ha'am
 
 31:10
 vaiyasimu | et | kelav | beit
-ashtarot | ve'et | geviyato | take'u | bechomat
-Beit | Shan
+ashtarot | ve'et | geviyato | take'u | bechomat | Beit | Shan
 
 31:11
 vaiyishme'u | elav

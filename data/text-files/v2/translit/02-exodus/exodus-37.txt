@@ -13,8 +13,7 @@ vaiya'as | lo | zer | zahav | saviv
 vaiyitzok | lo | arba | tabe'ot | zahav | al
 arba | pa'amotav
 ushetei | taba'ot | al | tzal'o | ha'echat
-ushetei | taba'ot
-al | tzal'o
+ushetei | taba'ot | al | tzal'o
 hashenit
 
 37:4
@@ -40,14 +39,14 @@ mikshah | asah | otam | mishenei
 ketzot | hakaporet
 
 37:8
-keruv | echad | mikatzah | mizeh | ukheruv | echad | mikatzah | mizeh
+keruv | echad | mikatzah | mizeh
+ukheruv | echad | mikatzah | mizeh
 min | hakaporet | asah | et | hakeruvim | mishenei | kitzvotov
 
 37:9
 vaiyihyu | hakeruvim | poresei | khenafayim | lema'lah | sokhekhim | bekhanfeihem | al | hakaporet
 ufeneihem
-ish | el | achiv
-el | hakaporet
+ish | el | achiv | el | hakaporet
 hayu
 penei | hakeruvim
 
@@ -116,8 +115,7 @@ uferacheiha
 
 37:21
 vekhaftor | tachat | shenei | hakanim | mimenah | vekhaftor | tachat | shenei | hakanim | mimenah
-vekhaftor
-tachat | shenei | hakanim | mimenah | lesheshet | hakanim
+vekhaftor | tachat | shenei | hakanim | mimenah | lesheshet | hakanim
 haiyotze'im | mimenah
 
 37:22
@@ -141,7 +139,8 @@ mimenu | hayu | karnotav
 
 37:26
 vaytzaf | oto | zahav | tahor | et | gago | ve'et | kirotav | saviv
-ve'et | karnotav | vaiya'as | lo | zer | zahav | saviv
+ve'et | karnotav
+vaiya'as | lo | zer | zahav | saviv
 
 37:27
 ushetei | tabe'ot | zahav | asah | lo | mitachat | lezero | al | shetei | tzal'otav

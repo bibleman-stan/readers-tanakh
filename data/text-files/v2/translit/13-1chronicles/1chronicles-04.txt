@@ -6,7 +6,8 @@ Vechur | Veshoval
 4:2
 Ure'ayah | ven | Shoval | holid | et | Yachat
 Veyachat | holid | et | Achumai
-ve'et | Lahad | eleh | mishpechot | hatzare'ati
+ve'et | Lahad
+eleh | mishpechot | hatzare'ati
 
 4:3
 ve'eleh | avi | Eitam
@@ -30,7 +31,9 @@ Chel'ah | Vena'arah
 
 4:6
 vateled | lo | Na'arah | et | Achuzam | ve'et | Chefer
-ve'et | teimni | ve'et | ha'achashtari | eleh
+ve'et | teimni
+ve'et | ha'achashtari
+eleh
 benei | Na'arah
 
 4:7
@@ -41,7 +44,9 @@ Ve'etnan
 
 4:8
 Vekotz | holid
-et | Anuv | ve'et | hatzoevah | umishpechot | Acharchel
+et | Anuv
+ve'et | hatzoevah
+umishpechot | Acharchel
 ben | Harum
 
 4:9
@@ -63,8 +68,10 @@ avi | Eshton
 
 4:12
 Ve'eshton | holid | et | beit | Rafa | ve'et | Paseach
-ve'et | Techinah | avi | Ir | Nachash
-eleh | anshei | Rekhah
+ve'et | Techinah
+avi | Ir | Nachash
+eleh
+anshei | Rekhah
 
 4:13
 uvenei | Kenaz
@@ -94,11 +101,13 @@ uven | Ezrah
 Yeter | Umered
 Ve'efer | Veyalon
 vatahar | et | Miryam | ve'et | Shamai
-ve'et | Yishbach | avi | Eshtemoa
+ve'et | Yishbach
+avi | Eshtemoa
 
 4:18
 ve'ishto | hayhudiyah | yaldah | et | Yered | avi | Gedor | ve'et | Chever | avi | Sokho
-ve'et | Yekuti'el | avi | Zanoach
+ve'et | Yekuti'el
+avi | Zanoach
 ve'eleh | benei | Bityah | vat | par'oh | asher | lakach
 Mared
 
@@ -129,9 +138,7 @@ atikim
 
 4:23
 hemah | haiyotzrim | veyoshevei | Neta'im
-Ugederah
-im | hamelekh | bimlakhto
-yashevu | sham
+Ugederah | im | hamelekh | bimlakhto | yashevu | sham
 
 4:24
 benei
@@ -166,8 +173,7 @@ Uvivtu'el | Uvecharemah | Uvetzikelag
 4:31
 Uveveit | Markavot | Uvachatzar | Susim | Uveveit | Bir'i
 Uvesha'arayim
-eleh | areihem
-ad | melokh | David
+eleh | areihem | ad | melokh | David
 
 4:32
 vechatzreihem | Eitam | Va'ayin
@@ -177,8 +183,7 @@ arim
 chamesh
 
 4:33
-vekhol | chatzreihem | asher | sevivot | he'arim | ha'eleh
-ad | Ba'al
+vekhol | chatzreihem | asher | sevivot | he'arim | ha'eleh | ad | Ba'al
 zot | moshevotam | vehityachsam | lahem
 
 4:34
@@ -192,8 +197,7 @@ ben | Serayah
 ben | Asi'el
 
 4:36
-Ve'elyo'einai | Veya'akoah | Vishochayah | Va'asayah | Va'adi'el | Visimi'el
-Uvenayah
+Ve'elyo'einai | Veya'akoah | Vishochayah | Va'asayah | Va'adi'el | Visimi'el | Uvenayah
 
 4:37
 Veziza | ven | Shif'i | ven | Alon | ben | Yedayah | ven | Shimri
@@ -205,8 +209,8 @@ uveit | avoteihem
 paretzu | larov
 
 4:39
-vaiyelekhu | limvo | Gedor
-ad | lemizrach | hagay | levakesh | mir'eh | letzonam
+vaiyelekhu | limvo | Gedor | ad
+lemizrach | hagay | levakesh | mir'eh | letzonam
 
 4:40
 vaiyimtze'u | mir'eh | shamen | vatov
@@ -231,6 +235,5 @@ berosham
 
 4:43
 vaiyaku | et | she'erit | hapeletah | La'amalek
-vaiyeshevu | sham
-ad
+vaiyeshevu | sham | ad
 haiyom | hazeh

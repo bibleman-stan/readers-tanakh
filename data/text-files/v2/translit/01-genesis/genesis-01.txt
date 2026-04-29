@@ -13,8 +13,7 @@ yehi | or | vayhi | or
 
 1:4
 vaiyar | elohim | et | ha'or
-ki | tov | vaiyavdel | elohim
-bein | ha'or | uvein | hachoshekh
+ki | tov | vaiyavdel | elohim | bein | ha'or | uvein | hachoshekh
 
 1:5
 vaiyikra | elohim | la'or | yom | velachoshekh
@@ -44,8 +43,8 @@ vetera'eh
 haiyabashah | vayhi | khen
 
 1:10
-vaiyikra | elohim | laiyabashah | eretz
-ulemikveh | hamayim | kara | yamim
+vaiyikra | elohim | laiyabashah | eretz | ulemikveh | hamayim
+kara | yamim
 vaiyar | elohim
 ki | tov
 
@@ -67,14 +66,13 @@ vayhi | erev | vayhi | voker
 yom | shelishi
 
 1:14
-vaiyomer | elohim | yehi | me'orot | birkia | hashamayim
-lehavdil | bein | haiyom | uvein | halayelah
+vaiyomer | elohim | yehi | me'orot | birkia | hashamayim | lehavdil
+bein | haiyom | uvein | halayelah
 vehayu | le'otot | ulemo'adim | uleyamim
 veshanim
 
 1:15
-vehayu | lim'orot | birkia | hashamayim | leha'ir
-al | ha'aretz
+vehayu | lim'orot | birkia | hashamayim | leha'ir | al | ha'aretz
 vayhi | khen
 
 1:16
@@ -84,8 +82,7 @@ ve'et | hama'or | hakaton | lememshelet | halaylah
 ve'et | hakokhavim
 
 1:17
-vaiyiten | otam | elohim | birkia | hashamayim | leha'ir
-al | ha'aretz
+vaiyiten | otam | elohim | birkia | hashamayim | leha'ir | al | ha'aretz
 
 1:18
 velimshol | baiyom | uvalaylah | ulahavdil | bein | ha'or | uvein | hachoshekh
@@ -138,8 +135,8 @@ uvekhol | haremes
 haromes | al | ha'aretz
 
 1:27
-vaiyivra | elohim | et | ha'adam | betzalmo
-betzelem | elohim | bara | oto
+vaiyivra | elohim | et | ha'adam | betzalmo | betzelem | elohim
+bara | oto
 zakhar | unekevah
 bara | otam
 
@@ -147,7 +144,8 @@ bara | otam
 vayvarekh | otam | elohim
 vaiyomer | lahem | elohim | peru | urevu | umil'u | et | ha'aretz
 vekhivshuha
-uredu | bidgat | haiyam | uve'of | hashamayim | uvekhol | chaiyah
+uredu | bidgat | haiyam | uve'of | hashamayim
+uvekhol | chaiyah
 haromeset | al | ha'aretz
 
 1:29

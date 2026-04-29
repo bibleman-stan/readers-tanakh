@@ -24,9 +24,8 @@ chaiyim | kulekhem
 haiyom
 
 4:5
-re'eh | limadti | etkhem | chukim | umishpatim
-ka'asher | tzivani | Yahweh | elohai
-la'asot | ken | bekerev | ha'aretz
+re'eh | limadti | etkhem | chukim | umishpatim | ka'asher | tzivani
+Yahweh | elohai | la'asot | ken | bekerev | ha'aretz
 asher | atem | ba'im | shamah | lerishtah
 
 4:6
@@ -58,11 +57,11 @@ yom | asher | amadta | lifnei | Yahweh | eloheikha | Bechorev
 be'emor | Yahweh | elai | hakhel | li | et | ha'am
 ve'ashmi'em | et | devarai
 asher | yilmedun | leyir'ah | oti | kol | haiyamim | asher | hem | chaiyim | al | ha'adamah
-ve'et | beneihem | yelamedun
+ve'et | beneihem
+yelamedun
 
 4:11
-vatikrevun | vata'amdun
-tachat | hahar
+vatikrevun | vata'amdun | tachat | hahar
 vehahar | bo'er | ba'esh | ad | lev | hashamayim
 choshekh
 anan | va'arafel
@@ -77,8 +76,7 @@ zulati | kol
 vaiyaged | lakhem | et | berito | asher | tzivah | etkhem | la'asot
 aseret
 hadevarim
-vaiyikhtevem
-al | shenei
+vaiyikhtevem | al | shenei
 luchot | avanim
 
 4:14
@@ -123,8 +121,8 @@ lihyot | lo | le'am | nachalah
 kaiyom | hazeh
 
 4:21
-Vayahweh | hit'anef | bi
-al | divreikhem | vaiyishava | levilti | averi | et | Haiyarden
+Vayahweh | hit'anef | bi | al | divreikhem
+vaiyishava | levilti | averi | et | Haiyarden
 ulevilti | vo | el | ha'aretz | hatovah | asher | Yahweh | eloheikha
 noten | lekha | nachalah
 
@@ -154,9 +152,9 @@ lehakh'iso
 4:26
 ha'idoti | vakhem | haiyom | et | hashamayim | ve'et | ha'aretz | ki | avod | toedun | maher
 me'al | ha'aretz | asher | atem | oerim | et | Haiyarden | shamah
-lerishtah
-lo | ta'arikhun | yamim | aleiha
-ki | hishamed | tishamedun
+lerishtah | lo | ta'arikhun | yamim | aleiha
+ki | hishamed
+tishamedun
 
 4:27
 vehefitz | Yahweh | etkhem | ba'amim
@@ -171,7 +169,8 @@ velo | yerichun
 
 4:29
 uvikashtem | misham | et | Yahweh | eloheikha | umatzata
-ki | tidreshenu | bekhol | levavekha | uvekhol | nafshekha
+ki | tidreshenu | bekhol | levavekha
+uvekhol | nafshekha
 
 4:30
 batzar | lekha | umetza'ukha
@@ -183,13 +182,11 @@ veshama'ta | bekolo
 ki | el | rachum | Yahweh | eloheikha
 lo | yarpekha
 velo | yashchitekha
-velo | yishkach | et | berit | avoteikha | asher | Nishba
-lahem
+velo | yishkach | et | berit | avoteikha | asher | Nishba | lahem
 
 4:32
 ki | she'al | na | leyamim | rishonim | asher | hayu | lefaneikha | lemin | haiyom | asher | bara | elohim | adam | al | ha'aretz
-ulemiktzeh | hashamayim
-ve'ad | ketzeh | hashamayim
+ulemiktzeh | hashamayim | ve'ad | ketzeh | hashamayim
 Hanihyah | kadavar | hagadol | hazeh
 o
 Hanishma | kamohu
@@ -212,13 +209,11 @@ ki | Yahweh
 hu | ha'elohim | ein | od | milvado
 
 4:36
-min | hashamayim | hishmi'akha | et | kolo | leyasereka
-ve'al | ha'aretz | her'akha | et | isho | hagedolah
+min | hashamayim | hishmi'akha | et | kolo | leyasereka | ve'al | ha'aretz | her'akha | et | isho | hagedolah
 udevarav | shama'ta | mitokh | ha'esh
 
 4:37
-vetachat | ki | ahav | et | avoteikha
-vaiyivchar | bezar'o
+vetachat | ki | ahav | et | avoteikha | vaiyivchar | bezar'o
 acharav
 vaiyotzi'akha | befanav | bekhocho | hagadol | Mimitzrayim
 

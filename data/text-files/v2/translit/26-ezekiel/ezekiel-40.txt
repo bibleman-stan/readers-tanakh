@@ -84,8 +84,7 @@ shishim | amah | ve'el | eil | hechatzer
 hasha'ar | saviv | saviv
 
 40:15
-ve'al | penei | hasha'ar | haiyoton
-al | lifnei
+ve'al | penei | hasha'ar | haiyoton | al | lifnei
 ulam | hasha'ar
 hapenimi
 chamishim | amah
@@ -101,8 +100,7 @@ timorim
 vayvi'eni | el | hechatzer | hachitzonah
 vehineh | leshakhot | veritzfah
 asui | lechatzer | saviv | saviv
-sheloshim | leshakhot
-el | haritzfah
+sheloshim | leshakhot | el | haritzfah
 
 40:18
 veharitzfah | el | ketef | hashe'arim | le'umat | orekh | hashe'arim
@@ -130,8 +128,7 @@ verochav
 chamesh | ve'esrim | ba'amah
 
 40:22
-vechalonov | ve'elamov | vetimorov
-kemidat | hasha'ar | asher | panav
+vechalonov | ve'elamov | vetimorov | kemidat | hasha'ar | asher | panav
 derekh | hakadim
 uvema'alot | sheva | ya'alu | vo
 ve'eilamov | lifneihem
@@ -158,8 +155,7 @@ amah
 
 40:26
 uma'alot | shiv'ah | olotov | ve'elamov | lifneihem
-vetimorim | lo | echad | mipo | ve'echad | mipo
-el | eilov
+vetimorim | lo | echad | mipo | ve'echad | mipo | el | eilov
 
 40:27
 vesha'ar | lechatzer | hapenimi
@@ -168,8 +164,8 @@ vaiyamod | misha'ar | el | hasha'ar | derekh | hadarom
 me'ah | amot
 
 40:28
-vayvi'eni | el | chatzer | hapenimi
-besha'ar | hadarom | vaiyamod | et | hasha'ar | hadarom | kamidot
+vayvi'eni | el | chatzer | hapenimi | besha'ar | hadarom
+vaiyamod | et | hasha'ar | hadarom | kamidot
 ha'eleh
 
 40:29
@@ -186,8 +182,7 @@ chamesh | amot
 
 40:31
 ve'elamav | el | chatzer | hachitzonah
-vetimorim
-el | eilov | uma'alot | shemoneh | ma'alov
+vetimorim | el | eilov | uma'alot | shemoneh | ma'alov
 
 40:32
 vayvi'eni | el | hechatzer | hapenimi
@@ -207,8 +202,7 @@ vetimorim | el | elov | mipo | umipo
 ushemoneh | ma'alot | ma'alov
 
 40:35
-vayvi'eni
-el | sha'ar | hatzafon | umadad | kamidot | ha'eleh
+vayvi'eni | el | sha'ar | hatzafon | umadad | kamidot | ha'eleh
 
 40:36
 ta'ov | elov | ve'elamov

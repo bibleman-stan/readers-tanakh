@@ -1,6 +1,5 @@
 18:1
-vaydaber | Yahweh
-el | Mosheh | lemor
+vaydaber | Yahweh | el | Mosheh | lemor
 
 18:2
 daber | el | benei | Yisra'el
@@ -103,14 +102,11 @@ et | bat | benah | ve'et | bat | bitah | lo | tikach | legalot | ervatah
 sha'arah | henah | zimah | hi
 
 18:18
-ve'ishah | el | achotah
-lo | tikach
+ve'ishah | el | achotah | lo | tikach
 litzror | legalot | ervatah | aleiha | bechaiyeiha
 
 18:19
-ve'el | ishah
-benidat | tum'atah
-lo | tikrav | legalot
+ve'el | ishah | benidat | tum'atah | lo | tikrav | legalot
 ervatah
 
 18:20
@@ -122,8 +118,9 @@ velo | techalel | et | shem | eloheikha
 ani | Yahweh
 
 18:22
-ve'et | zakhar | lo | tishkav
-mishkevei | ishah | to'evah
+ve'et | zakhar
+lo | tishkav | mishkevei | ishah
+to'evah
 hi
 
 18:23
@@ -132,8 +129,7 @@ ve'ishah | lo | ta'amod | lifnei | vehemah | leriv'ah
 tevel | hu
 
 18:24
-al | titame'u | bekhol | eleh
-ki | vekhol | eleh | Nitme'u | hagoyim
+al | titame'u | bekhol | eleh | ki | vekhol | eleh | Nitme'u | hagoyim
 asher | ani | meshaleach | mipeneikhem
 
 18:25
@@ -143,8 +139,7 @@ aleiha | vataki | ha'aretz | et | yosheveiha
 
 18:26
 ushemartem | atem | et | chukotai | ve'et | mishpatai
-velo | ta'asu
-mikol | hato'evot | ha'eleh
+velo | ta'asu | mikol | hato'evot | ha'eleh
 ha'ezrach
 vehager
 hagar | betokhkhem
@@ -160,8 +155,7 @@ velo | taki | ha'aretz | etkhem | betama'akhem
 otah | ka'asher | ka'ah | et | hagoy | asher | lifneikhem
 
 18:29
-ki | kol | asher | ya'aseh
-mikol | hato'evot | ha'eleh
+ki | kol | asher | ya'aseh | mikol | hato'evot | ha'eleh
 venikhretu | hanefashot | ha'osot | mikerev | amam
 
 18:30

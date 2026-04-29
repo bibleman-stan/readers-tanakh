@@ -21,30 +21,26 @@ uveyadav | mile | lemor
 min | haiyom | asher | hotzeti | et | ami | me'eretz | Mitzrayim
 lo | vacharti | ve'ir | mikol | shivtei | Yisra'el
 livnot | bayit | lihyot | shemi
-sham | velo | vacharti | ve'ish
+sham
+velo | vacharti | ve'ish
 lihyot | nagid
 al | ami | Yisra'el
 
 6:6
-va'evchar | Birushalim
-lihyot | shemi
-sham
-va'evchar | Bedavid | lihyot
+va'evchar | Birushalim | lihyot | shemi
+sham | va'evchar | Bedavid | lihyot
 al | ami | Yisra'el
 
 6:7
-vayhi
-im | levav
+vayhi | im | levav
 David | avi | livnot | bayit
 leshem | Yahweh | elohei | Yisra'el
 
 6:8
 vaiyomer | Yahweh | el | David | avi
-ya'an | asher | hayah | im | levavekha | livnot | bayit
-lishmi
+ya'an | asher | hayah | im | levavekha | livnot | bayit | lishmi
 hetivota
-ki | hayah
-im | levavekha
+ki | hayah | im | levavekha
 
 6:9
 rak | atah
@@ -80,8 +76,8 @@ vaiyifros | kapav
 hashamayemah
 
 6:14
-vaiyomar | Yahweh | elohei | Yisra'el | ein | kamokha | elohim
-bashamayim | uva'aretz
+vaiyomar | Yahweh | elohei | Yisra'el | ein | kamokha | elohim | bashamayim
+uva'aretz
 shomer | haberit | vehachesed | la'avadeikha
 haholekhim | lefaneikha | bekhol | libam
 
@@ -103,8 +99,7 @@ ve'atah | Yahweh | elohei | Yisra'el
 ye'amen | devarekha | asher | dibarta | le'avdekha | Ledavid
 
 6:18
-ki | ha'umnam | yeshev | elohim | et | ha'adam
-al | ha'aretz
+ki | ha'umnam | yeshev | elohim | et | ha'adam | al | ha'aretz
 hineh | shamayim | ushemei | hashamayim | lo | yekhalkelukha
 af | ki | habayit | hazeh | asher | baniti
 
@@ -115,11 +110,8 @@ lishmoa | el | harinah | ve'el | hatefilah | asher | avdekha | mitpalel | lefane
 
 6:20
 lihyot | eineikha | fetuchot | el | habayit | hazeh | yomam | valaylah
-el | hamakom | asher | amarta
-lasum | shimkha
-sham
-lishmoa | el | hatefilah | asher | yitpalel | avdekha
-el | hamakom
+el | hamakom | asher | amarta | lasum | shimkha
+sham | lishmoa | el | hatefilah | asher | yitpalel | avdekha | el | hamakom
 hazeh
 
 6:21
@@ -165,22 +157,19 @@ asher | natatah | le'amekha | lenachalah
 
 6:28
 ra'av | ki | yihyeh | va'aretz | dever | ki | yihyeh | shidafon | veyerakon | arbeh | vechasil | ki | yihyeh
-ki | yatzar | lo | oyvav
-be'eretz | she'arav
+ki | yatzar | lo | oyvav | be'eretz | she'arav
 kol | nega
 vekhol | machalah
 
 6:29
 kol | tefilah | khol | techinah | asher | yihyeh | lekhol | ha'adam | ulekhol
 amekha | Yisra'el | asher | yede'u | ish | nig'o | umakh'ovo
-ufaras | kapav
-el | habayit | hazeh
+ufaras | kapav | el | habayit | hazeh
 
 6:30
 ve'atah | tishma | min | hashamayim | mekhon | shivtekha | vesalachta
-venatatah | la'ish | kekhol | derakhav | asher | teda
-et | levavo | ki | atah | levadekha | yada'ta
-et | levav | benei | ha'adam
+venatatah | la'ish | kekhol | derakhav | asher | teda | et | levavo
+ki | atah | levadekha | yada'ta | et | levav | benei | ha'adam
 
 6:31
 lema'an | yira'ukha | lalekhet | bidrakheikha
@@ -191,8 +180,7 @@ asher | hem | chaiyim | al | penei | ha'adamah | asher | natatah | la'avoteinu
 vegam | el | hanakheri | asher | lo | me'amekha | Yisra'el | hu
 uva | me'eretz | rechokah | lema'an | shimkha | hagadol | veyadekha | hachazakah
 uzero'akha
-hanetuyah | uva'u | vehitpalu
-el | habayit | hazeh
+hanetuyah | uva'u | vehitpalu | el | habayit | hazeh
 
 6:33
 ve'atah | tishma | min | hashamayim | mimekhon | shivtekha
@@ -201,8 +189,7 @@ kekhol | asher | yikra | eleikha
 hanakheri
 lema'an | yede'u | khol | amei | ha'aretz | et | shemekha | uleyir'ah | otekha | ke'amekha | Yisra'el
 velada'at
-ki | shimkha | Nikra
-al | habayit | hazeh | asher | baniti
+ki | shimkha | Nikra | al | habayit | hazeh | asher | baniti
 
 6:34
 ki | yetze | amekha | lamilchamah | al | oyvav | baderekh | asher | tishlachem
@@ -211,7 +198,8 @@ vehabayit
 asher | baniti | lishmekha
 
 6:35
-veshama'ta | min | hashamayim | et | tefilatam | ve'et | techinatam | ve'asita | mishpatam
+veshama'ta | min | hashamayim | et | tefilatam | ve'et | techinatam
+ve'asita | mishpatam
 
 6:36
 ki | yechet'u | lakh | ki | ein | adam | asher | lo | yecheta
@@ -228,8 +216,7 @@ chatanu | he'evinu
 verasha'enu
 
 6:38
-veshavu | eleikha | bekhol | libam | uvekhol | nafsham
-be'eretz | shivyam
+veshavu | eleikha | bekhol | libam | uvekhol | nafsham | be'eretz | shivyam
 asher | shavu | otam
 vehitpalu | derekh | artzam | asher | natatah | la'avotam
 veha'ir | asher | bacharta | velabayit
@@ -252,7 +239,6 @@ kohaneikha | Yahweh | elohim | yilbeshu | teshu'ah
 vachasideikha | yismechu | vatov
 
 6:42
-Yahweh | elohim
-al | tashev
+Yahweh | elohim | al | tashev
 penei | meshicheikha | zakherah | lechasdei
 David | avdekha

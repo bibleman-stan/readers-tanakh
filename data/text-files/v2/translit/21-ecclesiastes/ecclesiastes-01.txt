@@ -24,10 +24,8 @@ sham
 
 1:6
 holekh | el | darom
-vesovev
-el | tzafon
-sovev | sovev | holekh | haruach
-ve'al | sevivotav
+vesovev | el | tzafon
+sovev | sovev | holekh | haruach | ve'al | sevivotav
 shav | haruach
 
 1:7
@@ -38,11 +36,13 @@ el | mekom | shehanechalim | holekhim
 sham | hem | shavim | lalakhet
 
 1:8
-kol | hadevarim | yege'im | lo | yukhal | ish | ledaber
-lo | tisba | ayin | lir'ot | velo | timale | ozen | mishemoa
+kol | hadevarim | yege'im | lo | yukhal | ish
+ledaber | lo | tisba | ayin | lir'ot
+velo | timale | ozen | mishemoa
 
 1:9
-mah | shehayah | hu | sheiyihyeh | umah | Shena'asah
+mah | shehayah | hu | sheiyihyeh
+umah | Shena'asah
 hu
 sheiye'aseh
 ve'ein | kol | chadash
@@ -55,16 +55,15 @@ kevar | hayah | le'olamim | asher | hayah | milefanenu
 
 1:11
 ein | zikhron | larishonim
-vegam | la'acharonim | sheiyihyu | lo | yihyeh | lahem | zikaron
-im | sheiyihyu | la'acharonah
+vegam | la'acharonim | sheiyihyu | lo | yihyeh | lahem | zikaron | im | sheiyihyu
+la'acharonah
 
 1:12
 ani | kohelet | hayiti | melekh | al | Yisra'el | Birushalim
 
 1:13
 venatati | et | libi | lidroosh | velatur | bachakhemah
-al | kol | asher | Na'asah
-tachat | hashamayim
+al | kol | asher | Na'asah | tachat | hashamayim
 hu | inyan | ra | natan | elohim | livnei | ha'adam
 la'anot | bo
 

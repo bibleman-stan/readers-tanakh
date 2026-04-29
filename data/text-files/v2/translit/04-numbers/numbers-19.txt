@@ -9,8 +9,7 @@ daber | el | benei | Yisra'el | veyikchu | eleikha | farah | adumah | temimah | 
 asher | lo | alah | aleiha | ol
 
 19:3
-unetatem | otah
-el | El'azar
+unetatem | otah | el | El'azar
 hakohen
 vehotzi | otah | el | michutz | lamachaneh
 veshachat | otah | lefanav
@@ -28,22 +27,19 @@ yisrof
 19:6
 velakach | hakohen | etz | erez | ve'ezov
 usheni | tola'at
-vehishlikh
-el | tokh
+vehishlikh | el | tokh
 serefat | haparah
 
 19:7
 vekhibes | begadav | hakohen | verachatz | besaro | bamayim
 ve'achar
 yavo | el | hamachaneh
-vetame | hakohen
-ad | ha'arev
+vetame | hakohen | ad | ha'arev
 
 19:8
 vehasoref | otah | yekhabes | begadav | bamayim
 verachatz | besaro | bamayim
-vetame
-ad | ha'arev
+vetame | ad | ha'arev
 
 19:9
 ve'asaf | ish | tahor | et | efer | haparah
@@ -53,8 +49,7 @@ chatat | hi
 
 19:10
 vekhibes | ha'osef | et | efer | haparah | et | begadav
-vetame
-ad | ha'arev
+vetame | ad | ha'arev
 vehayetah | livnei | Yisra'el | velager | hagar | betokham
 lechukat | olam
 
@@ -99,14 +94,12 @@ shiv'at | yamim
 
 19:17
 velakechu | latame | me'afar | serefat | hachatat
-venatan | alav | mayim | chaiyim
-el | keli
+venatan | alav | mayim | chaiyim | el | keli
 
 19:18
 velakach | ezov | vetaval | bamayim | ish | tahor
-vehizah | al | ha'ohel | ve'al | kol | hakelim
-ve'al | hanefashot | asher | hayu | sham
-ve'al | hanogea | ba'etzem | o | vechalal
+vehizah | al | ha'ohel | ve'al | kol | hakelim | ve'al | hanefashot
+asher | hayu | sham | ve'al | hanogea | ba'etzem | o | vechalal
 o | vamet
 o | vakaver
 
@@ -125,8 +118,7 @@ tame | hu
 vehayetah | lahem
 lechukat | olam
 umazeh | mei | hanidah | yekhabes | begadav
-vehanogea | bemei | hanidah | yitma
-ad | ha'arev
+vehanogea | bemei | hanidah | yitma | ad | ha'arev
 
 19:22
 vekhol | asher | yiga | bo | hatame | yitma

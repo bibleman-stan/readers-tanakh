@@ -41,13 +41,12 @@ vaiya'al | barishonah | Yo'av | ben | Tzeruyah
 vayhi | lerosh
 
 11:7
-vaiyeshev | David | bamtzad
-al | ken | kare'u | lo
+vaiyeshev | David | bamtzad | al | ken | kare'u | lo
 ir | David
 
 11:8
-vaiyiven | ha'ir | misaviv | min | hamilo
-ve'ad | hasaviv | Veyo'av
+vaiyiven | ha'ir | misaviv | min | hamilo | ve'ad | hasaviv
+Veyo'av
 yechaiyeh | et | she'ar | ha'ir
 
 11:9
@@ -58,8 +57,7 @@ imo
 11:10
 ve'eleh | rashei | hagiborim | asher | Ledavid
 hamitchazekim | imo | vemalkhuto | im | kol | Yisra'el | lehamlikho
-kidvar | Yahweh
-al | Yisra'el
+kidvar | Yahweh | al | Yisra'el
 
 11:11
 ve'eleh | mispar | hagiborim | asher | Ledavid
@@ -82,8 +80,7 @@ vaiyoosha | Yahweh
 teshu'ah | gedolah
 
 11:15
-vaiyeredu | sheloshah | min | hasheloshim | rosh | al | hatzur | el | David
-el | me'arat
+vaiyeredu | sheloshah | min | hasheloshim | rosh | al | hatzur | el | David | el | me'arat
 Adulam | umachaneh | felishtim
 chonah | be'emek | refa'im
 
@@ -101,8 +98,8 @@ mi | yashkeni | mayim | mibor | Beit | Lechem | asher | basha'ar
 11:18
 vaiyivke'u | hasheloshah | bemachaneh | felishtim | vaiyish'avu | mayim | mibor | Beit | Lechem | asher | basha'ar
 vaiyis'u
-vaiyavi'u | el | David | velo | avah | David | lishtotam
-vaynasekh | otam | Layahweh
+vaiyavi'u | el | David
+velo | avah | David | lishtotam | vaynasekh | otam | Layahweh
 
 11:19
 vaiyomer | chalilah | li | me'elohai | me'asot | zot | hadam | ha'anashim | ha'eleh | eshteh | venafshotam | ki | venafshotam | hevi'um
@@ -113,12 +110,12 @@ hagiborim
 
 11:20
 Ve'avshai | achi | Yo'av | hu | hayah | rosh | hasheloshah
-vehu | orer | et | chanito
-al | shelosh | me'ot | chalal | velo | shem | basheloshah
+vehu | orer | et | chanito | al | shelosh | me'ot | chalal | velo | shem
+basheloshah
 
 11:21
-min | hasheloshah | vashenayim | nikhbad | vayhi | lahem | lesar
-ve'ad | hasheloshah | lo | va
+min | hasheloshah | vashenayim | nikhbad | vayhi | lahem | lesar | ve'ad | hasheloshah
+lo | va
 
 11:22
 Benayah | ven | Yehoyada | ben | ish | chayil | rav | pe'alim | min | Kavtze'el
@@ -134,12 +131,12 @@ vaiyahargehu | bachanito
 
 11:24
 eleh | asah | Benayahu
-ben | Yehoyada | velov | shem | bishloshah | hagiborim
+ben | Yehoyada
+velov | shem | bishloshah | hagiborim
 
 11:25
 min | hasheloshim | hino | nikhbad | hu | ve'el | hasheloshah
-lo | va | vaysimehu | David
-al | mishma'to
+lo | va | vaysimehu | David | al | mishma'to
 
 11:26
 vegiborei
@@ -236,11 +233,13 @@ Veyocha | achiv
 hatitzi
 
 11:46
-Eli'el | hamachavim | Virivai | Veyoshavyah
+Eli'el | hamachavim
+Virivai | Veyoshavyah
 benei | Elna'am
 Veyitmah
 hamo'avi
 
 11:47
-Eli'el | Ve'oved | Veya'asi'el
+Eli'el | Ve'oved
+Veya'asi'el
 Hametzoayah

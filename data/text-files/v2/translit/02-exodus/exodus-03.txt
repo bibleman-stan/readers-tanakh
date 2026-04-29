@@ -21,8 +21,7 @@ vaiyikra | elav | elohim | mitokh | haseneh | vaiyomer | Mosheh | Mosheh
 vaiyomer | hineni
 
 3:5
-vaiyomer
-al | tikrav | halom
+vaiyomer | al | tikrav | halom
 shal | ne'aleikha | me'al | ragleikha
 ki | hamakom | asher | atah | omed | alav
 admat | kodesh
@@ -43,10 +42,8 @@ ki | yada'ti | et | makh'ovav
 
 3:8
 va'ered | lehatzilo | miyad | Mitzrayim | uleha'aloto | min | ha'aretz | hahiv
-el | eretz | tovah | urechavah
-el | eretz | zavat | chalav
-udevash
-el | mekom | hakena'ani | vehachiti
+el | eretz | tovah | urechavah | el | eretz | zavat | chalav
+udevash | el | mekom | hakena'ani | vehachiti
 veha'emori | vehapperizi
 vehachivi
 vehayvusi
@@ -58,15 +55,12 @@ vegam | ra'iti | et | halachatz | asher | Mitzrayim
 lochatzim | otam
 
 3:10
-ve'atah | lekhah | ve'eshlachakha
-el | par'oh
+ve'atah | lekhah | ve'eshlachakha | el | par'oh
 vehotze | et | ami | venei | Yisra'el | Mimitzrayim
 
 3:11
-vaiyomer | Mosheh | el | ha'elohim
-mi | anokhi
-ki | elekh
-el | par'oh
+vaiyomer | Mosheh | el | ha'elohim | mi | anokhi
+ki | elekh | el | par'oh
 vekhi | otzi | et | benei | Yisra'el | Mimitzrayim
 
 3:12
@@ -82,8 +76,8 @@ vaiyomer | Mosheh | el | ha'elohim | hineh | anokhi | va | el | benei | Yisra'el
 ve'amarti | lahem
 elohei | avoteikhem
 shelachani | aleikhem
-ve'ameru | li | mah | shemo
-mah | omar | alehem
+ve'ameru | li | mah | shemo | mah | omar
+alehem
 
 3:14
 vaiyomer | elohim | el | Mosheh
@@ -110,16 +104,14 @@ va'omar | a'aleh | etkhem | me'oni | Mitzrayim
 el | eretz | hakena'ani | vehachiti
 veha'emori | vehapperizi
 vehachivi
-vehayvusi
-el | eretz | zavat | chalav
+vehayvusi | el | eretz | zavat | chalav
 udevash
 
 3:18
 veshame'u | lekolecha
 uvata | atah | veziknei | Yisra'el | el | melekh | Mitzrayim | va'amartem | elav | Yahweh | elohei | ha'ivriyim | Nikrah | aleinu
 ve'atah | nelakhah | na | derekh | sheloshet | yamim | bamidbar
-venizbechah
-Layahweh | eloheinu
+venizbechah | Layahweh | eloheinu
 
 3:19
 va'ani | yada'ti

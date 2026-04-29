@@ -12,17 +12,15 @@ nechoshet
 
 38:3
 vaiya'as | et | kol | kelei | hamizbeach | et | hasirot | ve'et | haiya'im | ve'et | hamizrakot | et | hamizlagot
-ve'et | hamachtot | kol | kelav
-asah | nechoshet
+ve'et | hamachtot
+kol | kelav | asah | nechoshet
 
 38:4
 vaiya'as | lamizbeach | mikhbar | ma'aseh
-reshet | nechoshet | tachat | karkubo | milematah
-ad | chetzyo
+reshet | nechoshet | tachat | karkubo | milematah | ad | chetzyo
 
 38:5
-vaiyitzok | arba | taba'ot | be'arba | haketzavot
-lemikhbar | hanechoshet
+vaiyitzok | arba | taba'ot | be'arba | haketzavot | lemikhbar | hanechoshet
 batim | labadim
 
 38:6
@@ -37,8 +35,8 @@ asah | oto
 
 38:8
 vaiya'as | et | hakiyor | nechoshet
-ve'et | kano | nechoshet
-bemar'ot | hatzoe'ot | asher | tzave'u | petach | ohel | mo'ed
+ve'et | kano | nechoshet | bemar'ot | hatzoe'ot | asher | tzave'u
+petach | ohel | mo'ed
 
 38:9
 vaiya'as | et | hechatzer
@@ -67,8 +65,7 @@ asarah | vavei | ha'amudim | vachashukeihem | kasef
 velif'at | kedemah | mizrachah | chamishim | amah
 
 38:14
-kela'im | chamesh | esreh | amah
-el | hakatef
+kela'im | chamesh | esreh | amah | el | hakatef
 amudeihem | sheloshah
 ve'adneihem
 sheloshah
@@ -167,5 +164,6 @@ kol | kelei | hamizbeach
 
 38:31
 ve'et | adnei | hechatzer | saviv
-ve'et | adnei | sha'ar | hechatzer
+ve'et | adnei
+sha'ar | hechatzer
 ve'et | kol | yitdot | hamishkan | ve'et | kol | yitdot | hechatzer | saviv

@@ -5,10 +5,8 @@ Yahweh | mibeten | kera'ani | mime'ei | imi
 hizkir | shemi
 
 49:2
-vaiyasem | pi | kecherev | chadah
-betzel | yado
-hechbi'ani
-vaysimeni | lechetz | barur | be'ashpato
+vaiyasem | pi | kecherev | chadah | betzel | yado
+hechbi'ani | vaysimeni | lechetz | barur | be'ashpato
 histirani
 
 49:3
@@ -17,8 +15,8 @@ avdi | atah | Yisra'el
 asher | bekha | etpa'ar
 
 49:4
-va'ani | amarti | lerik | yaga'ti
-letohu | vehevel | kochi | khileiti
+va'ani | amarti | lerik | yaga'ti | letohu | vehevel
+kochi | khileiti
 akhen | mishpati | et | Yahweh
 ufe'ulati
 et | elohai
@@ -37,8 +35,7 @@ vaiyomer | Nakel | mihyotkha | li | eved
 lehakim | et | shivtei | Ya'ako
 unetzirei | Yisra'el | lehashiv
 unetatikha | le'or | goyim
-lihyot | yeshu'ati
-ad | ketzeh | ha'aretz
+lihyot | yeshu'ati | ad | ketzeh | ha'aretz
 
 49:7
 koh | amar | Yahweh | go'el | Yisra'el | kedosho | livzoh | nefesh | limta'ev | goy | le'eved | moshelim
@@ -57,14 +54,15 @@ lehakim | eretz | lehanchil | nechalot | shomemot
 49:9
 lemor | la'asurim | tze'u | la'asher | bachoshekh
 higalu
-al | derakhim | yir'u | uvekhol | shefayim | mar'itam
+al | derakhim | yir'u
+uvekhol | shefayim | mar'itam
 
 49:10
 lo | yir'avu | velo | yitzma'u
 velo | yakem | sharav
 vashamesh
-ki | merachamam | yenahagem
-ve'al | mabu'ei | mayim | yenahalem
+ki | merachamam | yenahagem | ve'al | mabu'ei | mayim
+yenahalem
 
 49:11
 vesamti | khol | harai | ladarekh | umesilotai | yerumun
@@ -150,7 +148,8 @@ yimalet
 ki | khoh | amar | Yahweh | gam | shevi | gibor | yukach
 umalkoach | aritz | yimalet
 ve'et | yerivekh | anokhi | ariv
-ve'et | banayikh | anokhi | oshia
+ve'et | banayikh
+anokhi | oshia
 
 49:26
 veha'akhalti | et | monayikh | et | besaram | vekhe'asis

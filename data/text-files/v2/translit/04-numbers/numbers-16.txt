@@ -22,8 +22,7 @@ al | kehal | Yahweh
 
 16:4
 vaiyishma | Mosheh
-vaiyipol
-al | panav
+vaiyipol | al | panav
 
 16:5
 vaydaber | el | Korach | ve'el | kol | adato | lemor
@@ -45,16 +44,15 @@ hu | hakadoosh
 rav | lakhem | benei | Levi
 
 16:8
-vaiyomer | Mosheh
-el | Korach
+vaiyomer | Mosheh | el | Korach
 shim'u | na | benei | Levi
 
 16:9
 ham'at | mikem | ki | hivdil | elohei | Yisra'el | etkhem | me'adat | Yisra'el
 lehakriv | etkhem
 elav
-la'avod | et | avodat | mishkan | Yahweh
-vela'amod | lifnei | ha'edah | lesharetam
+la'avod | et | avodat | mishkan | Yahweh | vela'amod | lifnei | ha'edah
+lesharetam
 
 16:10
 vaiyakrev | otekha
@@ -64,15 +62,15 @@ gam | kehunah
 
 16:11
 lakhen | atah | vekhol | adatekha
-hano'adim
-al | Yahweh
+hano'adim | al | Yahweh
 Ve'aharon | mah | hu
 ki | tilonu
 alav
 
 16:12
 vaiyishlach | Mosheh | likro | Ledatan | Vela'aviram
-benei | Eli'av | vaiyomeru
+benei | Eli'av
+vaiyomeru
 lo | na'aleh
 
 16:13
@@ -90,11 +88,8 @@ ha'einei | ha'anashim | hahem | tenaker
 lo | na'aleh
 
 16:15
-vaiyichar | Lemosheh | me'od | vaiyomer | el | Yahweh
-al | tefen
-el | minchatam
-lo | chamor | echad | mehem | nasati
-velo | hare'oti
+vaiyichar | Lemosheh | me'od | vaiyomer | el | Yahweh | al | tefen | el | minchatam
+lo | chamor | echad | mehem | nasati | velo | hare'oti
 et | achad | mehem
 
 16:16
@@ -117,10 +112,8 @@ ketoret | vaiya'amdu | petach | ohel | mo'ed
 Umosheh | Ve'aharon
 
 16:19
-vaiyakhel | aleihem | Korach | et | kol | ha'edah
-el | petach
-ohel | mo'ed | vaiyera | khevod | Yahweh
-el | kol | ha'edah
+vaiyakhel | aleihem | Korach | et | kol | ha'edah | el | petach
+ohel | mo'ed | vaiyera | khevod | Yahweh | el | kol | ha'edah
 
 16:20
 vaydaber | Yahweh
@@ -137,8 +130,7 @@ ha'ish | echad | yecheta
 ve'al | kol | ha'edah | tiktzof
 
 16:23
-vaydaber | Yahweh
-el | Mosheh | lemor
+vaydaber | Yahweh | el | Mosheh | lemor
 
 16:24
 daber | el | ha'edah | lemor
@@ -191,7 +183,8 @@ ha'eleh | vatibaka | ha'adamah | asher | tachteihem
 16:32
 vatiftach | ha'aretz | et | piha
 vativla | otam
-ve'et | bateihem | ve'et | kol | ha'adam | asher | Lekorach
+ve'et | bateihem
+ve'et | kol | ha'adam | asher | Lekorach
 ve'et | kol | harakhush
 
 16:33

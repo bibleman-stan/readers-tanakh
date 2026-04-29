@@ -23,8 +23,7 @@ ki | amar
 pen | yikra'enu | ason
 
 42:5
-vaiyavo'u | benei | Yisra'el | lishbor
-betokh | haba'im
+vaiyavo'u | benei | Yisra'el | lishbor | betokh | haba'im
 ki | hayah | hara'av | be'eretz | Kena'an
 
 42:6
@@ -51,8 +50,7 @@ vaiyomer | alehem | meragelim | atem
 lir'ot | et | ervat | ha'aretz | batem
 
 42:10
-vaiyomeru | elav
-lo | adoni
+vaiyomeru | elav | lo | adoni
 va'avadeikha | ba'u | lishbor | okhel
 
 42:11
@@ -97,7 +95,8 @@ sheloshet | yamim
 42:18
 vaiyomer | alehem | Yosef | baiyom | hashelishi | zot | asu
 vichyu
-et | ha'elohim | ani | yare
+et | ha'elohim
+ani | yare
 
 42:19
 im | kenim | atem
@@ -145,12 +144,12 @@ vaiya'as | lahem
 ken
 
 42:26
-vaiyis'u | et | shivram
-al | chamoreihem | vaiyelekhu | misham
+vaiyis'u | et | shivram | al | chamoreihem
+vaiyelekhu | misham
 
 42:27
-vaiyiftach | ha'echad | et | sako | latet | mispo | lachamoro
-bamalon | vaiyar | et | kaspo
+vaiyiftach | ha'echad | et | sako | latet | mispo | lachamoro | bamalon
+vaiyar | et | kaspo
 vehineh | hu
 befi | amtachto
 
@@ -171,8 +170,7 @@ diber | ha'ish | adonei | ha'aretz | itanu
 kashot | vaiyiten | otanu | kimragelim | et | ha'aretz
 
 42:31
-vanomer | elav
-kenim | anachenu | lo | hayinu | meragelim
+vanomer | elav | kenim | anachenu | lo | hayinu | meragelim
 
 42:32
 sheneim | asar | anachnu | achim
@@ -181,8 +179,7 @@ ha'echad | einenu
 vehakaton | haiyom | et | avinu | be'eretz | Kena'an
 
 42:33
-vaiyomer | eleinu | ha'ish | adonei | ha'aretz
-bezot | eda
+vaiyomer | eleinu | ha'ish | adonei | ha'aretz | bezot | eda
 ki | khenim
 atem
 achikhem | ha'echad | hanichu | iti
@@ -195,7 +192,8 @@ ve'ede'ah | ki | lo | meragelim | atem
 ki | khenim
 atem
 et | achikhem | eten | lakhem
-ve'et | ha'aretz | tischaru
+ve'et | ha'aretz
+tischaru
 
 42:35
 vayhi | hem | merikim | sakeihem
@@ -215,7 +213,8 @@ hayu | khulanah
 42:37
 vaiyomer | Re'uven | el | aviv | lemor
 et | shenei | vanai | tamit
-im | lo | avi'enu | eleikha
+im | lo | avi'enu
+eleikha
 tenah | oto | al | yadi | va'ani
 ashivenu | eleikha
 

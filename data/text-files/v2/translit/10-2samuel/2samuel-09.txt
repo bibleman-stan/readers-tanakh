@@ -5,8 +5,7 @@ leveit | Sha'ul | ve'e'eseh | imo | chesed
 ba'avur | Yehonatan
 
 9:2
-uleveit | Sha'ul | eved | ushemo | Tziva | vaiyikre'u | lo
-el | David
+uleveit | Sha'ul | eved | ushemo | Tziva | vaiyikre'u | lo | el | David
 vaiyomer | hamelekh | elav | ha'atah | Tziva
 vaiyomer | avdekha
 
@@ -41,16 +40,15 @@ hineh | avdekha
 9:7
 vaiyomer | lo | David | al | tira | ki | asoh | e'eseh | imekha | chesed | ba'avur | Yehonatan | avikha
 vahashivoti | lekha
-et | kol | sedeh | Sha'ul | avikha
+et | kol | sedeh
+Sha'ul | avikha
 ve'atah | tokhal | lechem | al | shulchani
 tamid
 
 9:8
 vaiyishtachu
-vaiyomer
-meh | avdekha
-ki | fanita
-el | hakelev | hamet | asher | kamoni
+vaiyomer | meh | avdekha
+ki | fanita | el | hakelev | hamet | asher | kamoni
 
 9:9
 vaiyikra | hamelekh | el | Tziva | na'ar | Sha'ul
@@ -61,15 +59,15 @@ natati | leven | adoneikha
 9:10
 ve'avadta | lo | et | ha'adamah | atah | uvaneikha | va'avadeikha | veheveta | vehayah | leven | adoneikha | lechem | va'akhalo
 Umefivoshet | ben | adoneikha
-yokhal | tamid | lechem
-al | shulchani | Uletziva | chamishah | asar | banim
+yokhal | tamid | lechem | al | shulchani
+Uletziva | chamishah | asar | banim
 ve'esrim | avadim
 
 9:11
 vaiyomer | Tziva | el | hamelekh
 kekhol | asher | yetzaveh | adoni | hamelekh | et | avdo
-ken | ya'aseh | avdekha
-Umefivoshet | okhel | al | shulchani | ke'achad | mibenei | hamelekh
+ken | ya'aseh | avdekha | Umefivoshet | okhel | al | shulchani | ke'achad
+mibenei | hamelekh
 
 9:12
 Velimfivoshet | ben | katan

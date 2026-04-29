@@ -9,8 +9,7 @@ chamesh | me'ot | bachamesh | me'ot | meruba | saviv
 vachamishim | amah | migrash | lo | saviv
 
 45:3
-umin | hamidah | hazot | tamod
-orekh | chamesh | ve'esrim | elef | verochav
+umin | hamidah | hazot | tamod | orekh | chamesh | ve'esrim | elef | verochav
 aseret | alafim | uvov | yihyeh | hamikdash | kodesh | kadashim
 
 45:4
@@ -20,8 +19,7 @@ lesharet | et | Yahweh
 vehayah | lahem | makom | levatim | umikdash | lamikdash
 
 45:5
-vachamishah | ve'esrim | elef | orekh
-va'aseret | alafim | rochav
+vachamishah | ve'esrim | elef | orekh | va'aseret | alafim | rochav
 vehayah | lalviyim | mesharetei | habayit | lahem | la'achuzah
 esrim | leshakhot
 
@@ -34,7 +32,8 @@ yihyeh
 
 45:7
 velanasi | mizeh | umizeh | litrumat | hakodesh | vela'achuzat | ha'ir | el | penei | terumat | hakodesh | ve'el | penei | achuzat | ha'ir
-mipe'at | yam | yamah | umipe'at | kedemah
+mipe'at | yam | yamah
+umipe'at | kedemah
 kadimah
 ve'orekh | le'umot | achad | hachalakim | migevul | yam
 el | gevul | kadimah
@@ -60,8 +59,7 @@ yehi | lakhem
 ha'eifah | vehabat | tokhen | echad | yihyeh | laset
 ma'sar | hachomer
 habat
-va'asirit | hachomer | ha'eifah
-el | hachomer
+va'asirit | hachomer | ha'eifah | el | hachomer
 yihyeh | matkunto
 
 45:12
@@ -89,8 +87,8 @@ ne'um
 Adonai | Yahweh
 
 45:16
-kol | ha'am | ha'aretz | yihyu
-el | haterumah | hazot | lanasi | Beyisra'el
+kol | ha'am | ha'aretz | yihyu | el | haterumah | hazot | lanasi
+Beyisra'el
 
 45:17
 ve'al | hanasi | yihyeh | ha'olot | vehaminchah | vehanesekh
@@ -107,8 +105,7 @@ et | hamikdash
 
 45:19
 velakach | hakohen | midam | hachatat | venatan | el | mezuzat | habayit
-ve'el | arba | pinot | ha'azarah | lamizbeach
-ve'al | mezuzat
+ve'el | arba | pinot | ha'azarah | lamizbeach | ve'al | mezuzat
 sha'ar
 hechatzer | hapenimit
 
@@ -122,8 +119,7 @@ barishon | be'arba'ah | asar | yom | lachodesh
 yihyeh | lakhem
 hapasach
 chag
-shevu'ot | yamim | matzot
-ye'akhel
+shevu'ot | yamim | matzot | ye'akhel
 
 45:22
 ve'asah | hanasi | baiyom | hahu | ba'ado | uve'ad

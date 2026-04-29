@@ -39,15 +39,15 @@ veraglav
 vaiyomer | Adoni | Vezek | shiv'im | melakhim | behonot | yedeihem | veragleihem | mekutzatzim | hayu | melaketim | tachat | shulchani
 ka'asher | asiti
 ken | shilam | li
-elohim
-vayvi'uhu | Yerushalim
+elohim | vayvi'uhu | Yerushalim
 vaiyamot | sham
 
 1:8
 vaiyilachamu | venei | Yehudah | Birushalim
 vaiyilkedu | otah
 vaiyakuha | lefi | charev
-ve'et | ha'ir | shilechu | va'esh
+ve'et | ha'ir
+shilechu | va'esh
 
 1:9
 ve'achar | yaredu | benei | Yehudah | lehilachem | bakena'ani
@@ -63,8 +63,7 @@ vaiyaku | et | Sheshai | ve'et | Achiman
 ve'et | Talmai
 
 1:11
-vaiyelekh | misham
-el | yoshevei
+vaiyelekh | misham | el | yoshevei
 Devir
 veshem | Devir | lefanim
 Kiryat | Sefer
@@ -81,8 +80,8 @@ hakaton | mimenu | vaiyiten | lo | et | Akhsah | vito | le'ishah
 
 1:14
 vayhi | bevo'ah | vatesitehu | lish'ol | me'et | aviha | hasadeh
-vatitznach
-me'al | hachamor | vaiyomer | lah | Kalev | mah | lakh
+vatitznach | me'al | hachamor
+vaiyomer | lah | Kalev | mah | lakh
 
 1:15
 vatomer | lo | havah | li | verakhah | ki | eretz | Hanegev | netatani
@@ -107,7 +106,10 @@ Charemah
 
 1:18
 vaiyilkod | Yehudah | et | Azah | ve'et | gevulah
-ve'et | Ashkelon | ve'et | gevulah | ve'et | Ekron | ve'et | gevulah
+ve'et | Ashkelon
+ve'et | gevulah
+ve'et | Ekron
+ve'et | gevulah
 
 1:19
 vayhi | Yahweh | et | Yehudah
@@ -118,14 +120,11 @@ ki | rekhev | barzel | lahem
 1:20
 vaiyitenu | Lekhalev | et | Chevron | ka'asher
 diber | Mosheh
-vaiyoresh | misham | et | sheloshah
-benei | ha'anak
+vaiyoresh | misham | et | sheloshah | benei | ha'anak
 
 1:21
-ve'et | hayvusi | yoshev | Yerushalim
-lo | horishu | benei | Vinyamin
-vaiyeshev | hayvusi | et | benei | Vinyamin | Birushalim
-ad
+ve'et | hayvusi | yoshev | Yerushalim | lo | horishu | benei | Vinyamin
+vaiyeshev | hayvusi | et | benei | Vinyamin | Birushalim | ad
 haiyom | hazeh
 
 1:22
@@ -147,23 +146,23 @@ chased
 1:25
 vaiyar'em | et | mevo | ha'ir
 vaiyaku | et | ha'ir | lefi | charev
-ve'et | ha'ish | ve'et | kol | mishpachto | shilechu
+ve'et | ha'ish | ve'et | kol | mishpachto
+shilechu
 
 1:26
 vaiyelekh | ha'ish
 eretz
 hachitim
 vaiyiven | ir | vaiyikra | shemah | Luz
-hu | shemah
-ad
+hu | shemah | ad
 haiyom | hazeh
 
 1:27
 velo | horish | Menasheh | et | Beit | She'an | ve'et | benoteiha | ve'et | Ta'nakh | ve'et | benoteiha
 ve'et | yoshev | Dor | ve'et | benoteiha | ve'et | yoshevei | Yivle'am | ve'et | benoteiha
 ve'et | yoshevei | Megido
-ve'et | benoteiha | vaiyo'el | hakena'ani
-lashevet | ba'aretz | hazot
+ve'et | benoteiha
+vaiyo'el | hakena'ani | lashevet | ba'aretz | hazot
 
 1:28
 vayhi | ki | chazak | Yisra'el
@@ -177,25 +176,26 @@ vaiyeshev | hakena'ani | bekirbo | Begazer
 
 1:30
 Zevulun | lo | horish | et | yoshevei | Kitron
-ve'et | yoshevei | Nahalol
+ve'et | yoshevei
+Nahalol
 vaiyeshev | hakena'ani | bekirbo
 vaiyihyu | lamas
 
 1:31
 Asher | lo | horish | et | yoshevei | Ako
-ve'et | yoshevei | Tzidon
-ve'et | Achlav | ve'et | Akhziv | ve'et | Chelbah | ve'et | Afik | ve'et | Recho
+ve'et | yoshevei
+Tzidon | ve'et | Achlav | ve'et | Akhziv | ve'et | Chelbah
+ve'et | Afik
+ve'et | Recho
 
 1:32
-vaiyeshev | ha'asheri
-bekerev | hakena'ani
+vaiyeshev | ha'asheri | bekerev | hakena'ani
 yoshevei | ha'aretz
 ki | lo | horisho
 
 1:33
 Naftali | lo | horish | et | yoshevei | Veit | Shemesh | ve'et | yoshevei | Veit | Anat
-vaiyeshev
-bekerev | hakena'ani
+vaiyeshev | bekerev | hakena'ani
 yoshevei | ha'aretz
 veyoshevei | Veit | Shemesh | Uveit | Anat
 hayu | lahem | lamas

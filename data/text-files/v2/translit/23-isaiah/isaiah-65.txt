@@ -1,20 +1,17 @@
 65:1
 Nidrashti | lelo | sha'alu
 Nimtzeti | lelo | vikshuni
-amarti | hineni | hineni
-el | goy | lo | kora | vishmi
+amarti | hineni | hineni | el | goy | lo | kora | vishmi
 
 65:2
-perasti | yadai | kol | haiyom
-el | am | sorer
+perasti | yadai | kol | haiyom | el | am | sorer
 haholekhim | haderekh | lo | tov
 achar | machshevoteihem
 
 65:3
 ha'am | hamakh'isim | oti | al | panai
 tamid
-zoechim | baganot | umekaterim
-al | halevenim
+zoechim | baganot | umekaterim | al | halevenim
 
 65:4
 haiyoshevim | bakevarim | uvanetzurim | yalinu
@@ -23,8 +20,7 @@ uferak | pigulim
 keleihem
 
 65:5
-ha'omerim | kerav | eleikha
-al | tigash | bi
+ha'omerim | kerav | eleikha | al | tigash | bi
 ki | kedashticha
 eleh | ashan | be'api
 esh | yokedet | kol | haiyom
@@ -32,13 +28,11 @@ esh | yokedet | kol | haiyom
 65:6
 hineh | khetuvah | lefanai
 lo | echeseh | ki | im | shilamti
-veshilamti
-al | cheikam
+veshilamti | al | cheikam
 
 65:7
 avonoteikhem | va'avonot | avoteikhem | yachdav | amar | Yahweh
-asher | kiteru | al | heharim
-ve'al | hageva'ot
+asher | kiteru | al | heharim | ve'al | hageva'ot
 cherefuni | umadoti | fe'ulatam | rishonah | al | cheikam
 
 65:8
@@ -93,8 +87,7 @@ shem | acher
 
 65:16
 asher | hamitbarekh | ba'aretz | yitbarekh | belohei | amen
-vehanishba | ba'aretz | yishava
-belohei | amen
+vehanishba | ba'aretz | yishava | belohei | amen
 ki | Nishkechu | hatzarot | harishonot
 vekhi | Nisteru | me'einai
 
@@ -102,8 +95,7 @@ vekhi | Nisteru | me'einai
 ki | hini | vore | shamayim | chadashim
 va'aretz | chadashah
 velo | tizakharnah | harishonot
-velo | ta'aleinah
-al | lev
+velo | ta'aleinah | al | lev
 
 65:18
 ki | im | sisu | vegilu | adei | ad | asher | ani | vore
@@ -112,13 +104,15 @@ ve'amah | masos
 
 65:19
 vegalti | Virushalim
-vesasti | ve'ami | velo | yishama | bah | od
+vesasti | ve'ami
+velo | yishama | bah | od
 kol | bekhi
 vekol | ze'akah
 
 65:20
 lo | yihyeh | misham | od | ul | yamim | vezaken | asher | lo | yemale
-et | yamav | ki | hana'ar | ben | me'ah | shanah | yamut
+et | yamav
+ki | hana'ar | ben | me'ah | shanah | yamut
 vehachote
 ben | me'ah | shanah
 yekulal

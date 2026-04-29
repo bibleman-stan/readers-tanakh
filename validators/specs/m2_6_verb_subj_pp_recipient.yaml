@@ -1,0 +1,35 @@
+name: m2_6_verb_subj_pp_recipient
+rule: M2
+subcase: verb_subj_pp_recipient
+severity: STRONG-MERGE-CANDIDATE
+description: |
+  Verb (+ subject NP) on line N, prep-headed PP on line N+1 — typical
+  speech-introduction or motion-toward pattern. The PP supplies the verb's
+  argument (recipient/target). Per WO §10.3 / JM §125 — verb-argument
+  bond is the core clause nucleus.
+
+  Examples (Gen 4):
+    4:4 line N:    וַיִּשַׁע יְהוָה
+        line N+1:  אֶל־הֶבֶל וְאֶל־מִנְחָתוֹ
+        merge:     וַיִּשַׁע יְהוָה אֶל־הֶבֶל וְאֶל־מִנְחָתוֹ
+
+    4:8 line N:    וַיֹּאמֶר קַיִן
+        line N+1:  אֶל־הֶבֶל אָחִיו
+        merge:     וַיֹּאמֶר קַיִן אֶל־הֶבֶל אָחִיו
+
+trigger:
+  line_n_anywhere:
+    has_finite_verb: true
+  line_n1_first_token:
+    morphology: prep
+  line_n1_anywhere:
+    has_finite_verb: false
+  combined_max_prosodic_words: 7
+
+guards:
+  - poetic_register
+  - both_lines_have_finite_verb     # if both have verbs, treat as separate clauses
+  - prev_line_incomplete            # ensure line N is the new clause head, not a stranded continuation
+
+annotation_template: "Verb (+subj) + PP-recipient merge ({pwc} prosodic words)"
+suggested_action: MERGE

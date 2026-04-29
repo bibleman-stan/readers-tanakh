@@ -1,7 +1,6 @@
 31:1
 vaiyelekh | Mosheh
-vaydaber | et | hadevarim | ha'eleh
-el | kol | Yisra'el
+vaydaber | et | hadevarim | ha'eleh | el | kol | Yisra'el
 
 31:2
 vaiyomer | alehem | ben | me'ah | ve'esrim | shanah | anokhi | haiyom
@@ -17,8 +16,8 @@ diber | Yahweh
 
 31:4
 ve'asah | Yahweh | lahem
-ka'asher | asah | Lesichon | Ule'og | malkhei | ha'emori
-ule'artzam | asher | hishmid
+ka'asher | asah | Lesichon | Ule'og | malkhei | ha'emori | ule'artzam
+asher | hishmid
 otam
 
 31:5
@@ -35,9 +34,9 @@ velo | ya'azveka
 
 31:7
 vaiyikra | Mosheh | Lihoshua | vaiyomer | elav | le'einei | khol | Yisra'el | chazak | ve'ematz
-ki | atah | tavo | et | ha'am | hazeh
-el | ha'aretz | asher | Nishba | Yahweh | la'avotam
-latet | lahem | ve'atah
+ki | atah | tavo | et | ha'am | hazeh | el | ha'aretz
+asher | Nishba | Yahweh | la'avotam | latet | lahem
+ve'atah
 tanchilenah | otam
 
 31:8
@@ -50,7 +49,8 @@ lo | tira | velo | techat
 vaiyikhto | Mosheh | et | hatorah | hazot
 vaiyitenah | el | hakohanim | benei | Levi
 hanose'im
-et | aron | berit | Yahweh
+et | aron
+berit | Yahweh
 ve'el | kol | ziknei
 Yisra'el
 
@@ -60,8 +60,8 @@ otam | lemor
 miketz | sheva | shanim | bemo'ed | shenat | hashemitah | bechag | hasukot
 
 31:11
-bevo | khol | Yisra'el | lera'ot | et | penei | Yahweh | eloheikha
-bamakom | asher | yivchar
+bevo | khol | Yisra'el | lera'ot | et | penei | Yahweh | eloheikha | bamakom
+asher | yivchar
 tikra | et | hatorah | hazot | neged | kol | Yisra'el | be'azeneihem
 
 31:12
@@ -69,7 +69,8 @@ hakhel | et | ha'am | ha'anashim | vehanashim | vehataf
 vegerekha | asher | bish'areikha
 lema'an | yishme'u | ulema'an | yilmedu | veyare'u | et | Yahweh | eloheikhem
 veshameru | la'asot
-et | kol | divrei | hatorah | hazot
+et | kol | divrei
+hatorah | hazot
 
 31:13
 uveneihem | asher | lo | yade'u | yishme'u | velamedu | leyir'ah
@@ -85,14 +86,12 @@ vaiyelekh | Mosheh | Vihoshua
 vaiyityatzevu | be'ohel | mo'ed
 
 31:15
-vaiyera | Yahweh | ba'ohel
-be'amud | anan | vaiya'amod | amud | he'anan
-al | petach | ha'ohel
+vaiyera | Yahweh | ba'ohel | be'amud | anan
+vaiya'amod | amud | he'anan | al | petach | ha'ohel
 
 31:16
 vaiyomer | Yahweh | el | Mosheh
-hinekha | shokhev
-im | avoteikha
+hinekha | shokhev | im | avoteikha
 vekam | ha'am | hazeh | vezanah | acharei | elohei | nekhar | ha'aretz | asher | hu | va | shamah | bekirbo
 va'azavani
 vehefer | et | beriti | asher | karati
@@ -109,8 +108,8 @@ hara'ot | ha'eleh
 31:18
 ve'anokhi | haster | astir | panai | baiyom | hahu
 al | kol | hara'ah | asher | asah
-ki | fanah
-el | elohim | acherim
+ki | fanah | el | elohim
+acherim
 
 31:19
 ve'atah | kitvu | lakhem | et | hashirah | hazot
@@ -134,25 +133,21 @@ ve'anetah | hashirah | hazot | lefanav | le'ed
 ki | lo | tishakhach
 mipi | zar'o
 ki | yada'ti | et | yitzro | asher | hu | oseh | haiyom
-beterem | avi'enu
-el | ha'aretz | asher | Nishba'eti
+beterem | avi'enu | el | ha'aretz | asher | Nishba'eti
 
 31:22
-vaiyikhto | Mosheh | et | hashirah | hazot
-baiyom | hahu | vaylamedah
+vaiyikhto | Mosheh | et | hashirah | hazot | baiyom | hahu
+vaylamedah
 et | benei | Yisra'el
 
 31:23
 vaytzav | et | Yehoshua | bin | Nun | vaiyomer | chazak | ve'ematz
-ki | atah | tavi | et | benei | Yisra'el
-el | ha'aretz
-asher | Nishba'ti | lahem
-ve'anokhi
+ki | atah | tavi | et | benei | Yisra'el | el | ha'aretz
+asher | Nishba'ti | lahem | ve'anokhi
 ehyeh | imakh
 
 31:24
-vayhi | kekhalot | Mosheh | likhto | et | divrei | hatorah | hazot
-al | sefer
+vayhi | kekhalot | Mosheh | likhto | et | divrei | hatorah | hazot | al | sefer
 ad
 tumam
 
@@ -162,7 +157,8 @@ nose'ei | aron | berit | Yahweh | lemor
 
 31:26
 lakoach | et | sefer | hatorah | hazeh
-vesamtem | oto | mitzad | aron | berit | Yahweh
+vesamtem | oto
+mitzad | aron | berit | Yahweh
 eloheikhem
 vehayah | sham | bekha | le'ed
 
@@ -188,6 +184,5 @@ ki | ta'asu | et | hara | be'einei | Yahweh | lehakh'iso
 bema'aseh | yedeikhem
 
 31:30
-vaydaber | Mosheh | be'azenei | kol | kehal | Yisra'el | et | divrei | hashirah | hazot
-ad
+vaydaber | Mosheh | be'azenei | kol | kehal | Yisra'el | et | divrei | hashirah | hazot | ad
 tumam

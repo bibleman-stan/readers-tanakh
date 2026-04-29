@@ -1,6 +1,6 @@
 3:1
-vatehi | hamilchamah | arukah
-bein | beit | Sha'ul | uvein | beit | David
+vatehi | hamilchamah | arukah | bein | beit | Sha'ul
+uvein | beit | David
 Vedavid | holekh | vechazek | uveit | Sha'ul
 holekhim | vedalim
 
@@ -27,8 +27,8 @@ eshet | David
 eleh | yuledu | Ledavid | Bechevron
 
 3:6
-vayhi | bihyot | hamilchamah
-bein | beit | Sha'ul | uvein | beit | David
+vayhi | bihyot | hamilchamah | bein | beit | Sha'ul
+uvein | beit | David
 Ve'avner | hayah | mitchazek
 beveit | Sha'ul
 
@@ -54,16 +54,15 @@ ki | khen | e'eseh | lo
 
 3:10
 leha'avir | hamamlakhah | mibeit | Sha'ul
-ulehakim | et | kise | David | al | Yisra'el | ve'al | Yehudah | Midan
-ve'ad | Be'er | Shava
+ulehakim | et | kise | David | al | Yisra'el | ve'al | Yehudah | Midan | ve'ad | Be'er | Shava
 
 3:11
-velo | yakhol | od | lehashiv | et | Avner | davar | miyir'ato
+velo | yakhol | od | lehashiv | et | Avner
+davar | miyir'ato
 oto
 
 3:12
-vaiyishlach | Avner | mal'akhim | el | David | tachatov | lemor
-lemi | aretz
+vaiyishlach | Avner | mal'akhim | el | David | tachatov | lemor | lemi | aretz
 lemor | karetah | veritekha | iti
 vehineh | yadi | imakh
 lehasev | eleikha | et | kol | Yisra'el
@@ -76,10 +75,8 @@ ki | im | lifnei | hevi'akha | et | Mikhal | bat | Sha'ul | bevo'akha
 lir'ot | et | panai
 
 3:14
-vaiyishlach | David | mal'akhim
-el | Ish | Boshet | ben | Sha'ul | lemor
-tenah | et | ishti | et | Mikhal | asher | erasti | li
-beme'ah
+vaiyishlach | David | mal'akhim | el | Ish | Boshet | ben | Sha'ul | lemor
+tenah | et | ishti | et | Mikhal | asher | erasti | li | beme'ah
 arelot | pelishtim
 
 3:15
@@ -88,8 +85,7 @@ vaiyikacheha | me'im | ish | me'im
 Palti'el | ben | Lush
 
 3:16
-vaiyelekh | itah | ishah | halokh | uvakhoh | achareiha
-ad | Bachurim
+vaiyelekh | itah | ishah | halokh | uvakhoh | achareiha | ad | Bachurim
 vaiyomer | elav | Avner | lekh | shuv
 vaiyasho
 
@@ -140,8 +136,7 @@ vaiyelekh | beshalom
 
 3:24
 vaiyavo | Yo'av | el | hamelekh
-vaiyomer
-meh | asitah
+vaiyomer | meh | asitah
 hineh | va | Avner | eleikha
 lamah | zeh | shilachto | vaiyelekh | halokh
 
@@ -160,16 +155,15 @@ lo | yada
 
 3:27
 vaiyashov | Avner | Chevron
-vaiyatehu | Yo'av | el | tokh | hasha'ar
-ledaber | ito | basheli
+vaiyatehu | Yo'av | el | tokh | hasha'ar | ledaber | ito | basheli
 vaiyakehu | sham | hachomesh
 vaiyamot | bedam
 Asah | El | achiv
 
 3:28
 vaiyishma | David | me'acharei | khen
-vaiyomer | naki | anokhi | umamlakhti | me'im | Yahweh
-ad | olam | midemei | Avner | ben | Ner
+vaiyomer | naki | anokhi | umamlakhti | me'im | Yahweh | ad | olam
+midemei | Avner | ben | Ner
 
 3:29
 yachulu | al | rosh | Yo'av
@@ -180,7 +174,8 @@ vachasar | lachem
 
 3:30
 Veyo'av | Va'avishai | achiv
-haregu | Le'avner | al | asher | hemit | et | Asah'el | achihem | Begiv'on
+haregu | Le'avner
+al | asher | hemit | et | Asah'el | achihem | Begiv'on
 bamilchamah
 
 3:31
@@ -203,30 +198,25 @@ hakemot | naval | yamut | Avner
 3:34
 yadekha | lo | asurot | veragleikha | lo | linchushtayim | hugashu | kinfol | lifnei | venei | avlah
 nafalta
-vaiyosifu | khol | ha'am
-livkot | alav
+vaiyosifu | khol | ha'am | livkot | alav
 
 3:35
-vaiyavo | khol | ha'am | lehavrot | et | David | lechem
-be'od | haiyom
+vaiyavo | khol | ha'am | lehavrot | et | David | lechem | be'od | haiyom
 vaiyishava | David | lemor | koh | ya'aseh | li | elohim | vekhoh | yosif
 ki | im | lifnei | vo | hashemesh | et'am | lechem
 o | khol | me'umah
 
 3:36
 vekhol | ha'am | hikiru | vaiyitav | be'eineihem
-kekhol | asher | asah | hamelekh
-be'einei | khol | ha'am
+kekhol | asher | asah | hamelekh | be'einei | khol | ha'am
 tov
 
 3:37
-vaiyede'u | khol | ha'am | vekhol | Yisra'el
-baiyom | hahu
+vaiyede'u | khol | ha'am | vekhol | Yisra'el | baiyom | hahu
 ki | lo | hayetah | mehamelekh | lehamit | et | Avner | ben | Ner
 
 3:38
-vaiyomer | hamelekh
-el | avadav
+vaiyomer | hamelekh | el | avadav
 halo | tede'u
 ki | sar | vegadol | nafal | haiyom | hazeh | Beyisra'el
 

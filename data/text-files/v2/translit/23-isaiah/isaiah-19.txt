@@ -17,7 +17,8 @@ ve'el | ha'ovot
 ve'el | haiyide'onim
 
 19:4
-vesikarti | et | Mitzrayim | beyad | adonim | kasheh
+vesikarti | et | Mitzrayim | beyad
+adonim | kasheh
 umelekh | az | yimshol | bam
 ne'um | ha'adon | Yahweh | tzeva'ot
 
@@ -70,8 +71,7 @@ ben | malkhei | kedem
 aiyam | efo | chakhameikha
 veyagidu | na | lakh
 veyede'u
-mah | ya'atz | Yahweh | tzeva'ot
-al | Mitzrayim
+mah | ya'atz | Yahweh | tzeva'ot | al | Mitzrayim
 
 19:13
 No'alu | sarei | Tzo'an
@@ -103,10 +103,8 @@ asher | hu | yo'etz | alav
 
 19:18
 baiyom | hahu | yihyu | chamesh | arim | be'eretz | Mitzrayim | medaberot | sefat | Kena'an
-venishba'ot
-Layahweh | tzeva'ot
-Ir | Haheres
-ye'amer | le'echat
+venishba'ot | Layahweh | tzeva'ot
+Ir | Haheres | ye'amer | le'echat
 
 19:19
 baiyom | hahu | yihyeh | mizbeach | Layahweh | betokh
@@ -120,10 +118,8 @@ vehitzilam
 
 19:21
 venoda | Yahweh | Lemitzrayim
-veyade'u | Mitzrayim | et | Yahweh
-baiyom | hahu
-ve'avedu | zevach | uminchah
-venaderu | neder | Layahweh
+veyade'u | Mitzrayim | et | Yahweh | baiyom | hahu
+ve'avedu | zevach | uminchah | venaderu | neder | Layahweh
 veshilemu
 
 19:22

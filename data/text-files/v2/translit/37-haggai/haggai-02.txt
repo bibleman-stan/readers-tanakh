@@ -21,14 +21,14 @@ ne'um | Yahweh | tzeva'ot
 
 2:5
 et | hadavar | asher | karati | itekhem | betzetekhem | Mimitzrayim
-veruchi | omedet | betokhkhem
-al | tira'u
+veruchi | omedet | betokhkhem | al | tira'u
 
 2:6
 ki | khoh | amar | Yahweh | tzeva'ot
 od | achat | me'at | hi
 va'ani | mar'ish | et | hashamayim | ve'et | ha'aretz
-ve'et | haiyam | ve'et | hecharavah
+ve'et | haiyam
+ve'et | hecharavah
 
 2:7
 vehir'ashti | et | kol | hagoyim | uva'u
@@ -44,15 +44,12 @@ Yahweh | tzeva'ot
 2:9
 gadol | yihyeh | kevod | habayit | hazeh | ha'acharon | min | harishon
 amar
-Yahweh | tzeva'ot
-uvamakom | hazeh | eten | shalom
-ne'um
-Yahweh | tzeva'ot
+Yahweh | tzeva'ot | uvamakom | hazeh | eten | shalom
+ne'um | Yahweh | tzeva'ot
 
 2:10
 be'esrim | ve'arba'ah | lateshi'i | bishnat | shetayim | Ledareyavesh
-hayah | devar | Yahweh
-el | Chagai | hanavi | lemor
+hayah | devar | Yahweh | el | Chagai | hanavi | lemor
 
 2:11
 koh | amar | Yahweh | tzeva'ot
@@ -99,9 +96,8 @@ miyom | esrim | ve'arba'ah | lateshi'i | lemin | haiyom | asher | yusad | heikha
 simu | levavkhem
 
 2:19
-ha'od | hazera | bamegurah
-ve'ad | hagefen | vehate'enah | veharimon | ve'etz | hazayit | lo | nasa
-min | haiyom | hazeh
+ha'od | hazera | bamegurah | ve'ad | hagefen | vehate'enah | veharimon | ve'etz | hazayit
+lo | nasa | min | haiyom | hazeh
 avarekh
 
 2:20
@@ -109,10 +105,8 @@ vayhi | devar | Yahweh | shenit | el | Chagai
 be'esrim | ve'arba'ah | lachodesh | lemor
 
 2:21
-emor
-el | Zerubavel | pachat | Yehudah | lemor
-ani | mar'ish | et | hashamayim
-ve'et | ha'aretz
+emor | el | Zerubavel | pachat | Yehudah | lemor
+ani | mar'ish | et | hashamayim | ve'et | ha'aretz
 
 2:22
 vehafakhti | kise | mamlakhot | vehishmadti | chozek | mamlekhot | hagoyim

@@ -1,11 +1,9 @@
 34:1
-vaydaber | Yahweh
-el | Mosheh | lemor
+vaydaber | Yahweh | el | Mosheh | lemor
 
 34:2
 tzav | et | benei | Yisra'el | ve'amarta | alehem
-ki | atem | ba'im
-el | ha'aretz | Kena'an
+ki | atem | ba'im | el | ha'aretz | Kena'an
 zot | ha'aretz | asher | tipol | lakhem | benachalah
 eretz | Kena'an | ligvuloteiha
 
@@ -40,8 +38,7 @@ teta'u | lakhem
 Hor | hahar
 
 34:8
-Mehor | hahar | teta'u
-levo | Chamat
+Mehor | hahar | teta'u | levo | Chamat
 vehayu | totz'ot | hagevul
 Tzedadah
 
@@ -59,8 +56,7 @@ Shefamah
 
 34:11
 veyarad | hagevul | Mishefam | Harivlah | mikedem | La'ayin
-veyarad | hagevul
-umachah | al | ketef | yom | Kineret
+veyarad | hagevul | umachah | al | ketef | yom | Kineret
 kedemah
 
 34:12
@@ -73,8 +69,7 @@ zot | tihyeh | lakhem | ha'aretz | ligvuloteiha | saviv
 vaytzav | Mosheh
 et | benei | Yisra'el | lemor
 zot | ha'aretz | asher | titnachalu | otah | begoral
-asher | tzivah | Yahweh
-latet | letish'at | hamatot
+asher | tzivah | Yahweh | latet | letish'at | hamatot
 vachatzi | hamateh
 
 34:14
@@ -90,20 +85,19 @@ lakechu | nachalatam | me'ever | Leyarden | Yerecho
 kedemah | mizrachah
 
 34:16
-vaydaber | Yahweh
-el | Mosheh | lemor
+vaydaber | Yahweh | el | Mosheh | lemor
 
 34:17
 eleh | shemot | ha'anashim
 asher | yinchalu | lakhem
-et | ha'aretz | El'azar | hakohen
+et | ha'aretz
+El'azar | hakohen
 Vihoshua
 bin | Nun
 
 34:18
 venasi | echad | nasi | echad | mimateh
-tikchu
-linchol | et | ha'aretz
+tikchu | linchol | et | ha'aretz
 
 34:19
 ve'eleh

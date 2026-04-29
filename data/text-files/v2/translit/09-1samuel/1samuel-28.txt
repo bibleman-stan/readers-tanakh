@@ -6,11 +6,8 @@ yadoa | teda | ki | iti | tetze | vamachaneh
 atah | va'anasheikha
 
 28:2
-vaiyomer | David | el | Akhish
-lakhen | atah | teda
-et | asher | ya'aseh
-avdekha
-vaiyomer | Akhish | el | David
+vaiyomer | David | el | Akhish | lakhen | atah | teda | et | asher | ya'aseh
+avdekha | vaiyomer | Akhish | el | David
 lakhen | shomer | leroshi | asimekha
 kol | haiyamim
 
@@ -33,8 +30,8 @@ vaiyira
 vaiyecherad | libo | me'od
 
 28:6
-vaiyish'al | Sha'ul | Bayahweh
-velo | anahu | Yahweh
+vaiyish'al | Sha'ul | Bayahweh | velo | anahu
+Yahweh
 gam | bachalomot | gam | ba'urim
 gam | banevi'im
 
@@ -72,8 +69,7 @@ ha'ali | li
 
 28:12
 vatere | ha'ishah | et | Shemu'el
-vatiz'ak
-bekol | gadol
+vatiz'ak | bekol | gadol
 vatomer | ha'ishah | el | Sha'ul | lemor | lamah | rimitani
 ve'atah | Sha'ul
 
@@ -93,8 +89,7 @@ vaiyikod | apayim | artzah
 vaiyishtachu
 
 28:15
-vaiyomer | Shemu'el | el | Sha'ul
-lamah | hirgaztani | leha'alot | oti
+vaiyomer | Shemu'el | el | Sha'ul | lamah | hirgaztani | leha'alot | oti
 vaiyomer | Sha'ul | tzar | li | me'od | ufelishtim | nilchamim | bi | velohim | sar | me'alai | velo | anani | od | gam | beyad | hanevi'im | gam | bachalomot
 va'ekra'eh | lekha | lehodi'eni
 mah | e'eseh
@@ -119,8 +114,7 @@ asah | lekha | Yahweh
 haiyom | hazeh
 
 28:19
-veyiten | Yahweh | gam | et | Yisra'el | imekha | beyad | pelishtim
-umachar
+veyiten | Yahweh | gam | et | Yisra'el | imekha | beyad | pelishtim | umachar
 atah | uvaneikha
 imi
 gam | et | machaneh | Yisra'el
@@ -154,8 +148,7 @@ vayma'en | vaiyomer | lo | okhal
 vaiyifretzu | vo | avadav | vegam | ha'ishah
 vaiyishma | lekolam
 vaiyakom | meha'aretz
-vaiyeshev
-el | hamitah
+vaiyeshev | el | hamitah
 
 28:24
 vela'ishah | egel | marbek | babayit | vatemaher | vatizbachehu
@@ -165,5 +158,4 @@ vatofehu | matzot
 28:25
 vatagesh | lifnei | Sha'ul | velifnei | avadav
 vaiyokhelu
-vaiyakumu | vaiyelekhu
-balaylah | hahu
+vaiyakumu | vaiyelekhu | balaylah | hahu

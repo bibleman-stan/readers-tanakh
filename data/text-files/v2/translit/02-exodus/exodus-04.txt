@@ -36,8 +36,8 @@ vehineh | yado | metzora'at | kashaleg
 
 4:7
 vaiyomer | hashev | yadekha | el | cheikecha
-vaiyashev | yado
-el | cheiko | vaiyotzi'ah | mecheiko
+vaiyashev | yado | el | cheiko
+vaiyotzi'ah | mecheiko
 vehineh | shavah | kivsaro
 
 4:8
@@ -76,8 +76,8 @@ ve'atah | lekh | ve'anokhi | ehyeh | im | pikha
 vehoreitikha | asher | tedaber
 
 4:13
-vaiyomer
-bi | Adonai | shelach | na | beyad | tishlach
+vaiyomer | bi | Adonai
+shelach | na | beyad | tishlach
 
 4:14
 vaiyichar | af | Yahweh | Bemosheh | vaiyomer | halo | Aharon | achikha | halevi
@@ -95,8 +95,7 @@ ve'anokhi | ehyeh | im | pikha | ve'im | pihu
 vehoreiti | etkhem | et | asher | ta'asun
 
 4:16
-vediber | hu | lekha
-el | ha'am
+vediber | hu | lekha | el | ha'am
 vehayah | hu | yihyeh | lekha | lepeh
 ve'atah
 tihyeh | lo | lelohim
@@ -108,8 +107,7 @@ tikach | beyadekha | asher | ta'aseh | bo | et | ha'otot
 4:18
 vaiyelekh | Mosheh | vaiyashov | el | Yeter | choteno | vaiyomer | lo | elekhah | na | ve'ashuvah | el | achai | asher | Bemitzrayim
 ve'er'eh
-ha'odam | chaiyim | vaiyomer | Yitro | Lemosheh
-lekh | leshalom
+ha'odam | chaiyim | vaiyomer | Yitro | Lemosheh | lekh | leshalom
 
 4:19
 vaiyomer | Yahweh | el | Mosheh | Bemidyan | lekh
@@ -133,8 +131,7 @@ va'ani | achazek | et | libo
 velo | yeshalach | et | ha'am
 
 4:22
-ve'amarta
-el | par'oh
+ve'amarta | el | par'oh
 koh | amar | Yahweh | beni | vekhori
 Yisra'el
 
@@ -177,9 +174,8 @@ benei | Yisra'el
 
 4:30
 vaydaber | Aharon | et | kol | hadevarim
-asher | diber | Yahweh
-el | Mosheh | vaiya'as | ha'otot
-le'einei | ha'am
+asher | diber | Yahweh | el | Mosheh
+vaiya'as | ha'otot | le'einei | ha'am
 
 4:31
 vaiya'amen

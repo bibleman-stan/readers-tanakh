@@ -2,8 +2,7 @@
 vatere | Rachel | ki | lo | yaldah | Leya'ako
 vatekane | Rachel | ba'achotah
 vatomer | el | Ya'ako | havah | li | vanim
-ve'im | ayin
-metah | anokhi
+ve'im | ayin | metah | anokhi
 
 30:2
 vaiyichar | af | Ya'ako | Berachel
@@ -52,8 +51,7 @@ ki | amedah | miledet | vatikach | et | Zilpah | shifchatah
 vatiten | otah | Leya'ako | le'ishah
 
 30:10
-vateled | Zilpah | shifchat | Le'ah
-Leya'ako | ben
+vateled | Zilpah | shifchat | Le'ah | Leya'ako | ben
 
 30:11
 vatomer | Le'ah | begad
@@ -71,10 +69,8 @@ vatikra | et | shemo | Asher
 
 30:14
 vaiyelekh | Re'uven | bimei | ketzir | chitim | vaiyimtza | duda'im | basadeh
-vaiyave | otam
-el | Le'ah
-imo
-vatomer | Rachel | el | Le'ah
+vaiyave | otam | el | Le'ah
+imo | vatomer | Rachel | el | Le'ah
 teni | na | li | miduda'ei | benekh
 
 30:15
@@ -92,8 +88,8 @@ vaiyishkav | imah
 balaylah | hu
 
 30:17
-vaiyishma | elohim
-el | Le'ah | vatahar | vateled | Leya'ako
+vaiyishma | elohim | el | Le'ah
+vatahar | vateled | Leya'ako
 ben | chamishi
 
 30:18
@@ -128,7 +124,8 @@ vaiyiftach | et | rachmah
 vatahar
 vateled | ben
 vatomer
-asaf | elohim | et | cherpati
+asaf | elohim
+et | cherpati
 
 30:24
 vatikra | et | shemo | Yosef | lemor
@@ -139,8 +136,7 @@ ben | acher
 vayhi
 ka'asher | yaldah | Rachel | et | Yosef
 vaiyomer | Ya'ako | el | Lavan
-shalecheni | ve'elekhah
-el | mekomi | ule'artzi
+shalecheni | ve'elekhah | el | mekomi | ule'artzi
 
 30:26
 tenah | et | nashai | ve'et | yeladai | asher | avadti | otekha | bahen
@@ -169,8 +165,7 @@ vayvarekh | Yahweh | otekha | leragli
 ve'atah | matai | e'eseh | gam | anokhi | leveiti
 
 30:31
-vaiyomer
-mah | eten | lakh
+vaiyomer | mah | eten | lakh
 vaiyomer | Ya'ako | lo | titen | li | me'umah
 im | ta'aseh | li | hadavar | hazeh
 ashuvah | er'eh | tzonekha
@@ -207,8 +202,7 @@ Veya'ako | ro'eh | et | tzon | Lavan
 hanotarot
 
 30:37
-vaiyikach | lo | Ya'ako | makal | livneh | lach
-veluz | ve'ermon
+vaiyikach | lo | Ya'ako | makal | livneh | lach | veluz | ve'ermon
 vayfatzel | bahen | petzalot | levanot | machsof | halavan | asher | al | hamaklot
 
 30:38
@@ -217,17 +211,15 @@ beshikatot | hamayim | asher | tavona | hatzon | lishtot | lenokhach | hatzon
 vaiyechamnah | bevo'an | lishtot
 
 30:39
-vaiyechemu | hatzon
-el | hamaklot | vateladna | hatzon
+vaiyechemu | hatzon | el | hamaklot
+vateladna | hatzon
 akudim | nekudim
 utelu'im
 
 30:40
 vehakesavim | hifrid | Ya'ako
-vaiyiten | penei | hatzon | el | akod | vekhol | chum
-betzon | Lavan | vaiyashet | lo | adarim | levado
-velo | shatam
-al | tzon | Lavan
+vaiyiten | penei | hatzon | el | akod | vekhol | chum | betzon | Lavan
+vaiyashet | lo | adarim | levado | velo | shatam | al | tzon | Lavan
 
 30:41
 vehayah | bekhol | yachem | hatzon | hamkusharot

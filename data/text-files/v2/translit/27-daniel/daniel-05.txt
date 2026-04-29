@@ -26,8 +26,7 @@ a'a | ve'avna
 
 5:5
 bah | sha'atah | nefaku | etzbe'an | di | yad | enash
-vekhatevan | lokovel | nevrashta
-al | gira
+vekhatevan | lokovel | nevrashta | al | gira
 di | khetal | heikhla
 di | malka | umalka | chazeh
 pas | yedah
@@ -53,7 +52,8 @@ kol | chakimei | malka | vela | khahalin | ketava | lemikre
 ufishrah | lehoda'ah | lemalka
 
 5:9
-edayin | malka | Veleshatzar | sagi | mitbahal | veziyohi
+edayin | malka | Veleshatzar | sagi | mitbahal
+veziyohi
 shanayin | alohi
 veravrevanohi | mishtabeshin
 
@@ -62,8 +62,7 @@ malketa | lokovel | milei | malka | veravrevanohi
 leveit | mishteya | alalat
 anat | malketa | va'ameret | malka | le'almin | cheyi
 al | yevahalukh | ra'yonakh
-vezivaikh
-al | yishtano
+vezivaikh | al | yishtano
 
 5:11
 itai | gevar | bemalkhutakh | di | ruach | elahin | kadishin | beh
@@ -95,7 +94,8 @@ hishtekhachat | bakh
 5:15
 ukhe'an | hu'alu | kadamai | chakimaiya | ashefaiya
 di | khetavah | denah | yikron
-ufishreh | lehoda'utani | vela | khahalin | peshar | mileta | lehachavayah
+ufishreh | lehoda'utani
+vela | khahalin | peshar | mileta | lehachavayah
 
 5:16
 va'anah | shim'et | alayikh
@@ -108,15 +108,15 @@ tishlat
 
 5:17
 bedayin | aneh | Daniyel | ve'amar | kodam | malka
-matenatokh | lakh | lehevyan | unevazebeyatakh
-le'ochoran | hav
+matenatokh | lakh | lehevyan | unevazebeyatakh | le'ochoran | hav
 beram | ketava | ekre | lemalka
 ufishra | ahod'ineh
 
 5:18
 antah | malka | elaha | ilaya
 malkhuta | urevuta | vikara | vehadrah
-yehav | Linvukhadnetzar | avukh
+yehav
+Linvukhadnetzar | avukh
 
 5:19
 umin | revuta | di | yehav | leh
@@ -135,8 +135,7 @@ he'diyu | mineh
 
 5:21
 umin | benei | anasha | terid | veliveh | im | cheivta | shevi | ve'im | aradaiya | medoreh
-isba | khetorin | yeta'amuneh
-umital | shemaiya
+isba | khetorin | yeta'amuneh | umital | shemaiya
 gishmeh | yitztaba
 ad | di | yeda | di | shalit | elaha | ilaya | bemalkhut | anasha
 uleman | di | yitzbeh
@@ -178,8 +177,7 @@ Lemadai | Ufaras
 
 5:29
 bedayin | amar | Beleshatzar | vehalbishu | Ledaniyel | argevana
-vehamonkha | di | dahava
-al | tzavereh
+vehamonkha | di | dahava | al | tzavereh
 vehakhrizu | alohi
 di | leheve | shalit | talta | bemalkhuta
 

@@ -18,14 +18,12 @@ shevet | chamas
 
 6:4
 hashokhevim | al | mitot | shen
-useruchim
-al | arsotam
+useruchim | al | arsotam
 ve'okhelim | karim | mitzon
 va'agalim | mitokh | marbek
 
 6:5
-haporetim
-al | pi | hanavel | Kedavid
+haporetim | al | pi | hanavel | Kedavid
 chashevu | lahem
 kelei | shir
 
@@ -37,8 +35,7 @@ velo | Nechlu
 al | shever | Yosef
 
 6:7
-lakhen | atah | yiglu
-berosh | golim
+lakhen | atah | yiglu | berosh | golim
 vesar | mirzach | seruchim
 
 6:8

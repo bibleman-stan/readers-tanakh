@@ -4,8 +4,8 @@ hakohanim
 
 2:2
 im | lo | tishme'u | ve'im | lo | tasimu | al | lev | latet | kavod | lishmi | amar | Yahweh | tzeva'ot
-veshilachti | vakhem | et | hame'erah | ve'aroti
-et | birkhoteikhem | vegam | arotiha
+veshilachti | vakhem | et | hame'erah | ve'aroti | et | birkhoteikhem
+vegam | arotiha
 ki | einkhem
 samim | al | lev
 
@@ -27,8 +27,7 @@ Yahweh | tzeva'ot
 2:5
 beriti | hayetah | ito | hachaiyim | vehashalom
 va'etenem | lo | mora
-vaiyira'eni
-umipenei | shemi
+vaiyira'eni | umipenei | shemi
 Nichat | hu
 
 2:6
@@ -83,17 +82,14 @@ va'anakah | me'ein | od | penot | el | haminchah
 velakachat | ratzon | miyedkhem
 
 2:14
-va'amartem
-al | mah
+va'amartem | al | mah
 al | ki | Yahweh | he'id | beinekha | uvein | eshet | ne'ureikha | asher | atah | bagadtah | bah
 vehi | chavertekha | ve'eshet | beritekha
 
 2:15
-velo | echad | asah | ushe'ar | ruach | lo
-umah | ha'echad | mevakesh | zera | elohim
-venishmartem | beruchakhem
-uve'eshet | ne'ureikha
-al | yivgod
+velo | echad | asah | ushe'ar | ruach | lo | umah | ha'echad
+mevakesh | zera | elohim | venishmartem | beruchakhem
+uve'eshet | ne'ureikha | al | yivgod
 
 2:16
 ki | sane | shalach | amar | Yahweh | elohei | Yisra'el
@@ -104,7 +100,7 @@ velo | tivgodu
 
 2:17
 hoga'tem | Yahweh | bedivreikhem
-va'amartem
-bamah | hoga'enu
+va'amartem | bamah | hoga'enu
 be'emarekhem | kol | oseh | ra | tov | be'einei | Yahweh | uvahem | hu | chafetz
-o | aiyeh | elohei | hamishpat
+o | aiyeh
+elohei | hamishpat

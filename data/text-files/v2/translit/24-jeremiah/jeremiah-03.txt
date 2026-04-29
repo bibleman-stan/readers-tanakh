@@ -50,12 +50,12 @@ vatelekh
 vatizen | gam | hi
 
 3:9
-vehayah | mikol | zenutah | vatechenaf
-et | ha'aretz | vatin'af | et | ha'even | ve'et | ha'etz
+vehayah | mikol | zenutah | vatechenaf | et | ha'aretz
+vatin'af | et | ha'even
+ve'et | ha'etz
 
 3:10
-vegam | bekhol | zot | lo | shavah | elai | bagodah | achotah | Yehudah
-bekhol | libah
+vegam | bekhol | zot | lo | shavah | elai | bagodah | achotah | Yehudah | bekhol | libah
 ki | im | besheker
 ne'um | Yahweh
 
@@ -95,8 +95,7 @@ de'ah | vehaskeil
 3:16
 vehayah | ki | tirbu | uferitem | ba'aretz | baiyamim | hahemah | ne'um | Yahweh
 lo | yomeru | od | aron | berit | Yahweh
-velo | ya'aleh
-al | lev
+velo | ya'aleh | al | lev
 velo | yizkeru | vo | velo | yifkodu
 velo | ye'aseh
 od
@@ -104,13 +103,11 @@ od
 3:17
 ba'et | hahi | yikre'u | Lirushalim | kise | Yahweh
 venikvvu | eleiha | khol | hagoyim | leshem | Yahweh | Lirushalim
-velo | yelekhu | od | acharei | sherirut
-libam | hara
+velo | yelekhu | od | acharei | sherirut | libam | hara
 
 3:18
 baiyamim | hahemah | yelekhu | veit | Yehudah | al | beit | Yisra'el
-veyavo'u | yachdav | me'eretz | tzafon
-al | ha'aretz | asher | hinchalti
+veyavo'u | yachdav | me'eretz | tzafon | al | ha'aretz | asher | hinchalti
 et | avoteikhem
 
 3:19
@@ -147,7 +144,8 @@ Yisra'el
 
 3:24
 vehaboshet | akhelah | et | yegia | avoteinu | mine'ureinu
-et | tzonam | ve'et | bekaram | et | beneihem | ve'et | benoteihem
+et | tzonam | ve'et | bekaram | et | beneihem
+ve'et | benoteihem
 
 3:25
 nishkevah | bevashetenu | utekhasenu | kelimatenu

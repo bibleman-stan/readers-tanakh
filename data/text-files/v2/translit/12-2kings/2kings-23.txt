@@ -6,8 +6,7 @@ Virushalim
 
 23:2
 vaiya'al | hamelekh | beit | Yahweh | vekhol | ish | Yehudah | vekhol | yoshevei | Yerushalim | ito | vehakohanim | vehanevi'im
-vekhol | ha'am
-lemikaton | ve'ad | gadol
+vekhol | ha'am | lemikaton | ve'ad | gadol
 vaiyikra | ve'azeneihem | et | kol | divrei | sefer | haberit
 hanimtza
 beveit | Yahweh
@@ -15,8 +14,7 @@ beveit | Yahweh
 23:3
 vaiya'amod | hamelekh | al | ha'amud | vaiyikhrot | et | haberit | lifnei | Yahweh | lalekhet | achar | Yahweh | velishmor | mitzvotav | ve'et | edevotav | ve'et | chukotav | bekhol | lev | uvekhol | nefesh
 lehakim | et | divrei | haberit | hazot
-haketuvim
-al | hasefer | hazeh
+haketuvim | al | hasefer | hazeh
 vaiya'amod | kol | ha'am | baberit
 
 23:4
@@ -38,8 +36,7 @@ tzeva | hashamayim
 vaiyotze | et | ha'asherah | mibeit | Yahweh | michutz | Lirushalim | el | nachal | Kidron
 vaiyisrof | otah | benachal | Kidron
 vaiyadek | le'afar
-vaiyashlekh | et | afarah
-al | kever | benei | ha'am
+vaiyashlekh | et | afarah | al | kever | benei | ha'am
 
 23:7
 vaiyitotz | et | batei | hakedeshim | asher
@@ -74,8 +71,7 @@ ve'et | hamizbechot | asher | al | hagag | aliyat | Achaz | asher | asu | malkhe
 bishtei | chatzrot | beit | Yahweh
 natatz | hamelekh
 vaiyarotz | misham
-vehishlikh | et | afaram
-el | nachal | Kidron
+vehishlikh | et | afaram | el | nachal | Kidron
 
 23:13
 ve'et | habamot | asher | al | penei | Yerushalim | asher | mimin | lehar | hamashchit
@@ -85,8 +81,9 @@ time
 hamelekh
 
 23:14
-veshibar | et | hamatzevot | vaiyikhrot
-et | ha'asherim | vaymale | et | mekomam | atzmot | adam
+veshibar | et | hamatzevot | vaiyikhrot | et | ha'asherim
+vaymale | et | mekomam
+atzmot | adam
 
 23:15
 vegam | et | hamizbeach | asher | Beveit | El | habamah | asher | asah | Yarave'am | ben | Nevat | asher | hecheti | et | Yisra'el
@@ -100,19 +97,18 @@ vaiyishlach | vaiyikach | et | ha'atzamot | min | hakevarim
 vaiyisrof | al | hamizbeach
 vaytame'ehu
 kidvar | Yahweh | asher | kara | ish | ha'elohim | asher | kara
-et | hadevarim | ha'eleh
+et | hadevarim
+ha'eleh
 
 23:17
-vaiyomer
-mah | hatziyun | halaz | asher | ani | ro'eh
+vaiyomer | mah | hatziyun | halaz | asher | ani | ro'eh
 vaiyomeru | elav | anshei | ha'ir | hakever | ish | ha'elohim | asher | ba | Mihudah
 vaiyikra | et | hadevarim | ha'eleh | asher | asita | al
 hamizbach | Beit | El
 
 23:18
 vaiyomer | hanichu | lo
-ish
-al | yana | atzmotav
+ish | al | yana | atzmotav
 vaymaletu | atzmotav | et | atzmot | hanavi
 asher | ba | Mishomeron
 
@@ -130,13 +126,15 @@ Yerushalim
 
 23:21
 vaytzav | hamelekh | et | kol | ha'am | lemor
-asu | fesach | Layahweh | eloheikhem | kakatuv
+asu | fesach | Layahweh
+eloheikhem | kakatuv
 al | sefer | haberit | hazeh
 
 23:22
 ki | lo | Na'asah | kapesach | hazeh | mimei | hashofetim
 asher | shafetu
-et | Yisra'el | vekhol | yemei | malkhei | Yisra'el
+et | Yisra'el
+vekhol | yemei | malkhei | Yisra'el
 umalkhei | Yehudah
 
 23:23
@@ -199,13 +197,12 @@ Chamutal | bat | Yirmeyahu | Milivnah
 
 23:32
 vaiya'as | hara
-be'einei | Yahweh
-kekhol | asher | asu | avotav
+be'einei | Yahweh | kekhol | asher | asu
+avotav
 
 23:33
 vaiya'asrehu | far'oh | Nekhoh | Verivlah | be'eretz | Chamat | mimlokh
-Birushalim | vaiyiten | onesh | al | ha'aretz | me'ah | khikar | kesef
-vekhikar | zahav
+Birushalim | vaiyiten | onesh | al | ha'aretz | me'ah | khikar | kesef | vekhikar | zahav
 
 23:34
 vaiyamlekh | par'oh | Nekhoh | et | Elyakim | ben | Yoshiyahu | tachat | Yoshiyahu | aviv
@@ -217,8 +214,7 @@ vaiyamot | sham
 
 23:35
 vehakesef | vehazahav | natan | Yehoyakim | lefar'oh
-akh | he'erikh | et | ha'aretz | latet | et | hakesef
-al | pi | far'oh
+akh | he'erikh | et | ha'aretz | latet | et | hakesef | al | pi | far'oh
 ish | ke'erko | nagas | et | hakesef | ve'et | hazahav | et | am | ha'aretz
 latet
 lefar'oh | Nekhoh
@@ -231,5 +227,5 @@ Zevidah | vat | Pedayah | min | Rumah
 
 23:37
 vaiya'as | hara
-be'einei | Yahweh
-kekhol | asher | asu | avotav
+be'einei | Yahweh | kekhol | asher | asu
+avotav

@@ -70,8 +70,7 @@ bo'i | shikhvi | imi | achoti
 
 13:12
 vatomer | lo | al | achi | al | te'aneni
-ki | lo | ye'aseh | khen | Beyisra'el
-al | ta'aseh
+ki | lo | ye'aseh | khen | Beyisra'el | al | ta'aseh
 et | hanevalah | hazot
 
 13:13
@@ -88,7 +87,8 @@ otah
 
 13:15
 vaiyisna'eha | Amnon | sin'ah | gedolah | me'od | ki | gedolah | hasin'ah | asher | sene'ah
-me'ahavah | asher | ahevah | vaiyomer | lah | Amnon
+me'ahavah | asher | ahevah
+vaiyomer | lah | Amnon
 kumi | lekhi
 
 13:16
@@ -119,8 +119,7 @@ veza'akah
 
 13:20
 vaiyomer | eleiha | Avshalom | achiha | Ha'aminon | achikh | hayah | imokh
-ve'atah | achoti | hacharishi | achikh | hu
-al | tashiti | et | libekh
+ve'atah | achoti | hacharishi | achikh | hu | al | tashiti | et | libekh
 ladavar | hazeh
 vateshev | Tamar | veshomemah | beit
 Avshalom | achiha
@@ -130,25 +129,21 @@ vehamelekh | David | shama | et | kol | hadevarim
 ha'eleh | vaiyichar | lo | me'od
 
 13:22
-velo | diber | Avshalom | im | Amnon
-lemera | ve'ad | tov
+velo | diber | Avshalom | im | Amnon | lemera | ve'ad | tov
 ki | sane | Avshalom | et | Amnon
 al | devar | asher | inah | et
 Tamar | achoto
 
 13:23
 vayhi | lishnatayim | yamim
-vaiyihyu | gozezim | Le'avshalom
-Beva'al | Chatzor | asher | im | Efrayim
-vaiyikra | Avshalom
-lekhol | benei | hamelekh
+vaiyihyu | gozezim | Le'avshalom | Beva'al | Chatzor | asher | im | Efrayim
+vaiyikra | Avshalom | lekhol | benei | hamelekh
 
 13:24
 vaiyavo | Avshalom | el | hamelekh
 vaiyomer
 hineh | na | gozezim | le'avdekha
-yelekh | na | hamelekh | va'avadav
-im | avdekha
+yelekh | na | hamelekh | va'avadav | im | avdekha
 
 13:25
 vaiyomer | hamelekh | el | Avshalom | al | beni | al | na | nelekh | kulanu
@@ -160,8 +155,7 @@ vayvarakhehu
 vaiyomer | Avshalom | valo
 yelekh | na | itanu
 Amnon | achi
-vaiyomer | lo | hamelekh
-lamah | yelekh
+vaiyomer | lo | hamelekh | lamah | yelekh
 imakh
 
 13:27
@@ -172,8 +166,7 @@ ve'et | kol | benei | hamelekh
 
 13:28
 vaytzav | Avshalom | et | ne'arav | lemor | re'u | na | ketov | lev | Amnon | baiyayin | ve'amarti | aleikhem
-haku | et | Amnon | vahamitem | oto
-al | tira'u
+haku | et | Amnon | vahamitem | oto | al | tira'u
 halo | ki | anokhi | tziviti | etkhem
 chizku
 vihyu | livnei | chayil
@@ -187,9 +180,9 @@ vaiyanusu
 
 13:30
 vayhi | hemah | vaderekh
-vehashemu'ah | va'ah
-el | David | lemor
-hikah | Avshalom | et | kol | benei | hamelekh | velo | Notar | mehem
+vehashemu'ah | va'ah | el | David | lemor
+hikah | Avshalom | et | kol | benei | hamelekh
+velo | Notar | mehem
 echad
 
 13:31
@@ -213,9 +206,9 @@ met
 vaiyivrach
 Avshalom
 vaiyisa | hana'ar | hatzopeh | et | eino
-vaiyar | vehineh | am | rav | holekhim | miderekh | acharav
-bamorad | vaiyavo | hatzopeh | vaiyaged
-lamelekh | vaiyomar
+vaiyar | vehineh | am | rav | holekhim | miderekh | acharav | bamorad
+vaiyavo | hatzopeh | vaiyaged | lamelekh
+vaiyomar
 anashim | ra'iti | yoredim | miderekh | Choronayim | mitzad | hahar
 
 13:35
@@ -232,8 +225,8 @@ gadol | me'od
 
 13:37
 Ve'avshalom | barach
-vaiyelekh | el | Talmai | ben | Amichur
-melekh | Geshur | vaiyit'abel | al | beno
+vaiyelekh | el | Talmai | ben | Amichur | melekh | Geshur
+vaiyit'abel | al | beno
 kol | haiyamim
 
 13:38
@@ -243,7 +236,6 @@ vayhi | sham
 shalosh | shanim
 
 13:39
-vatekhal | David | hamelekh | latzet
-el | Avshalom
+vatekhal | David | hamelekh | latzet | el | Avshalom
 ki | Nicham | al | Amnon
 ki | met

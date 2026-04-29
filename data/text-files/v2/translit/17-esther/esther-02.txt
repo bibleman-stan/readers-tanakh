@@ -21,15 +21,13 @@ tamrukeihen
 
 2:4
 vehana'arah | asher | titav | be'einei | hamelekh
-timlokh
-tachat | Vashti
+timlokh | tachat | Vashti
 vaiyitav | hadavar | be'einei | hamelekh
 vaiya'as | ken
 
 2:5
 ish | yehudi
-hayah
-Beshushan | habirah
+hayah | Beshushan | habirah
 ushemo | Maredokhai | ben | Ya'ir | ben | Shim'i | ben | Kish
 ish | yemini
 
@@ -49,10 +47,8 @@ levat
 
 2:8
 vayhi | behishama | devar | hamelekh | vedato
-uvehikavetz | ne'arot | rabot | el | Shushan | habirah
-el | yad | Hegai
-vatilakach | Ester | el | beit | hamelekh
-el | yad | Hegai
+uvehikavetz | ne'arot | rabot | el | Shushan | habirah | el | yad | Hegai
+vatilakach | Ester | el | beit | hamelekh | el | yad | Hegai
 shomer | hanashim
 
 2:9
@@ -64,13 +60,14 @@ vayshaneha | ve'et | na'aroteiha | letov
 beit | hanashim
 
 2:10
-lo | higidah | Ester | et | amah
-ve'et | moladtah | ki | Maredokhai | tzivah | aleiha | asher | lo | tagid
+lo | higidah | Ester | et | amah | ve'et | moladtah
+ki | Maredokhai | tzivah | aleiha | asher | lo | tagid
 
 2:11
 uvekhol | yom | vayom | Maredokhai | mithalekh | lifnei
 chatzar | beit | hanashim
-lada'at | et | shelom | Ester | umah | ye'aseh | bah
+lada'at | et | shelom | Ester
+umah | ye'aseh | bah
 
 2:12
 uvehagia | tor | na'arah | vena'arah | lavo | el | hamelekh | Achashveroosh | miketz | heyot | lah | kedat | hanashim | sheneim | asar | chodesh
@@ -84,8 +81,7 @@ hanashim
 uvazeh
 hana'arah
 ba'ah | el | hamelekh | et | kol | asher | tomar | yinaten | lah | lavo | imah
-mibeit | hanashim
-ad | beit | hamelekh
+mibeit | hanashim | ad | beit | hamelekh
 
 2:14
 ba'erev | hi | va'ah | uvaboker | hi | shavah | el | beit | hanashim | sheni
@@ -110,8 +106,7 @@ hu | chodesh | Tevet | bishnat | sheva | lemalkhuto
 vaiye'ehav | hamelekh | et | Ester | mikol | hanashim
 vatisa | chen | vachesed | lefanav | mikol | habetulot
 vaiyasem | keter | malkhut | beroshah
-vaiyamlikheha
-tachat | Vashti
+vaiyamlikheha | tachat | Vashti
 
 2:18
 vaiya'as | hamelekh | mishteh | gadol | lekhol | sarav | va'avadav | et
@@ -141,12 +136,10 @@ Achashverosh
 
 2:22
 vaiyivada | hadavar | Lemaredokhai
-vaiyaged
-Le'ester | hamalkah | vatomer | Ester | lamelekh
-beshem | Maredokhai
+vaiyaged | Le'ester | hamalkah
+vatomer | Ester | lamelekh | beshem | Maredokhai
 
 2:23
 vayvukash | hadavar | vaiyimatze
-vaiyitalu | sheneihem
-al | etz | vaiyikatev | besefer | divrei | haiyamim
-lifnei | hamelekh
+vaiyitalu | sheneihem | al | etz
+vaiyikatev | besefer | divrei | haiyamim | lifnei | hamelekh

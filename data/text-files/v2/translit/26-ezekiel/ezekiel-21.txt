@@ -4,8 +4,7 @@ elai | lemor
 
 21:2
 ben | adam | sim | paneikha | derekh | teimanah
-vehatef
-el | darom
+vehatef | el | darom
 vehinave | el | ya'ar | hasadeh
 Negev
 
@@ -33,8 +32,7 @@ elai | lemor
 
 21:7
 ben | adam | sim | paneikha | el | Yerushalim
-vehatef
-el | mikdashim
+vehatef | el | mikdashim
 vehinave
 el | admat | Yisra'el
 
@@ -61,8 +59,7 @@ he'anach | beshivron | matenayim | uvimrirut
 te'anach | le'eineihem
 
 21:12
-vehayah | ki | yomeru | eleikha
-al | mah
+vehayah | ki | yomeru | eleikha | al | mah
 atah | ne'enach
 ve'amarta | el | shemu'ah | khi | va'ah | venames | kol | lev | verafu | khol | yadayim | vekhihatah | khol | ruach | vekhol | birkayim | telakhnah | mayim
 hineh | va'ah | venihyatah
@@ -88,8 +85,7 @@ shevet | beni | mo'eset | kol | etz
 
 21:16
 vaiyiten | otah | lemaretah | litpos | bakaf
-hi | huchadah | cherev | vehi | moratah | latet | otah
-beyad | horeg
+hi | huchadah | cherev | vehi | moratah | latet | otah | beyad | horeg
 
 21:17
 ze'ak | veheilel | ben | adam
@@ -138,13 +134,11 @@ elai | lemor
 21:24
 ve'atah | ven | adam | sim | lekha | shenayim | derakhim | lavo | cherev | melekh | Bavel
 me'eretz | echad | yetze'u | sheneihem
-veyad | bare
-berosh | derekh | ir | bare
+veyad | bare | berosh | derekh | ir
+bare
 
 21:25
-derekh | tasim
-lavo | cherev
-et | rabat | benei | Amon
+derekh | tasim | lavo | cherev | et | rabat | benei | Amon
 ve'et | Yehudah | Virushalim | betzurah
 
 21:26
@@ -155,8 +149,7 @@ ra'ah | bakaved
 21:27
 bimino | hayah | hakesem | Yerushalim | lasum | karim | liftoach | peh | beretzach
 leharim | kol
-bitru'ah
-lasum | karim | al | she'arim
+bitru'ah | lasum | karim | al | she'arim
 lishpokh | solelah
 livnot | dayek
 
@@ -190,14 +183,14 @@ hashpil
 21:32
 avah | avah
 avah | asimenah
-gam | zot | lo | hayah
-ad | bo | asher | lo | hamishpat | unetativ
+gam | zot | lo | hayah | ad | bo | asher | lo | hamishpat
+unetativ
 
 21:33
 ve'atah | ven | adam | hinave | ve'amarta | koh | amar | Adonai | Yahweh
 el | benei | Amon | ve'el | cherpatam
-ve'amarta | cherev | cherev | petuchah | letevach | merutah
-lehakhil | lema'an | barak
+ve'amarta | cherev | cherev | petuchah | letevach | merutah | lehakhil
+lema'an | barak
 
 21:34
 bachazot | lokh | shav | biksom | lakh | kazav
@@ -205,9 +198,8 @@ latet | otakh | el | tzaverei | chalei | resha'im
 asher | ba | yomam | be'et | avon | ketz
 
 21:35
-hashav
-el | ta'rah | bimkom | asher | Nivret | be'eretz | mekhurotayikh
-eshpot | otakh
+hashav | el | ta'rah
+bimkom | asher | Nivret | be'eretz | mekhurotayikh | eshpot | otakh
 
 21:36
 veshafakhti | alayikh | za'mi | be'esh | evrati
@@ -216,8 +208,7 @@ unetatikh | beyad | anashim | bo'arim
 charashei | mashchit
 
 21:37
-la'esh | tihyeh | le'okhlah | damekh | yihyeh
-betokh | ha'aretz
+la'esh | tihyeh | le'okhlah | damekh | yihyeh | betokh | ha'aretz
 lo | tizakheri
 ki | ani | Yahweh
 dibarti

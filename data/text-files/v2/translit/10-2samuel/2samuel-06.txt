@@ -11,18 +11,19 @@ alav
 
 6:3
 vaiyarkivu | et | aron | ha'elohim | el | agalah | chadashah
-vaiyisa'uhu | mibeit | Avinadav | asher | bagiv'ah
+vaiyisa'uhu
+mibeit | Avinadav | asher | bagiv'ah
 Ve'uza | Ve'achyo | benei | Avinadav
 nohagim
 et | ha'agalah | chadashah
 
 6:4
-vaiyisa'uhu | mibeit | Avinadav | asher | bagiv'ah
-im | aron | ha'elohim | Ve'achyo | holekh | lifnei | ha'aron
+vaiyisa'uhu | mibeit | Avinadav | asher | bagiv'ah | im
+aron | ha'elohim
+Ve'achyo | holekh | lifnei | ha'aron
 
 6:5
-Vedavid | vekhol | beit | Yisra'el | mesachakim | lifnei | Yahweh
-bekhol
+Vedavid | vekhol | beit | Yisra'el | mesachakim | lifnei | Yahweh | bekhol
 atzei | veroshim | uvekhinorot | uvinvalim | uvetupim | uvimna'an'im | uvetzeltzelim
 
 6:6
@@ -34,27 +35,25 @@ habakar
 
 6:7
 vaiyichar | af | Yahweh | Be'uzah
-vaiyakehu | sham | ha'elohim
-al | hashal | vaiyamot | sham
-im | aron | ha'elohim
+vaiyakehu | sham | ha'elohim | al | hashal
+vaiyamot | sham | im
+aron | ha'elohim
 
 6:8
 vaiyichar | Ledavid
 al | asher | paratz | Yahweh | peretz | Be'uzah
-vaiyikra | lamakom | hahu | Peretz | Uzah
-ad
+vaiyikra | lamakom | hahu | Peretz | Uzah | ad
 haiyom | hazeh
 
 6:9
-vaiyira | David | et | Yahweh
-baiyom | hahu | vaiyomer
+vaiyira | David | et | Yahweh | baiyom | hahu
+vaiyomer
 eikh | yavo | elai
 aron | Yahweh
 
 6:10
 velo | avah | David | lehasir | elav | et | aron | Yahweh
-al | ir | David | vaiyatehu | David
-beit | Oed | Edom
+al | ir | David | vaiyatehu | David | beit | Oed | Edom
 hagiti
 
 6:11
@@ -65,8 +64,7 @@ ve'et | kol | beito
 
 6:12
 vaiyugad | lamelekh | David | lemor
-berakh | Yahweh | et | beit | Oved | Edom | ve'et | kol | asher | lo
-ba'avur | aron | ha'elohim
+berakh | Yahweh | et | beit | Oved | Edom | ve'et | kol | asher | lo | ba'avur | aron | ha'elohim
 vaiyelekh | David | vaiya'al | et | aron | ha'elohim | mibeit | Oved | Edom | ir | David
 besimchah
 
@@ -114,8 +112,7 @@ echat | vaiyelekh | kol | ha'am
 ish | leveito
 
 6:20
-vaiyashov | David
-levarekh | et | beito
+vaiyashov | David | levarekh | et | beito
 vatetze | Mikhal | bat | Sha'ul | likrat | David
 vatomer | mah | Nikhbad | haiyom | melekh | Yisra'el | asher | Niglah | haiyom | le'einei | amhot | avadav
 kehigalot | niglot
@@ -124,8 +121,7 @@ achad | harekim
 6:21
 vaiyomer | David | el | Mikhal
 lifnei | Yahweh | asher | bachar | bi | me'avikh | umikol | beito
-letzavot | oti | nagid | al | am | Yahweh
-al | Yisra'el
+letzavot | oti | nagid | al | am | Yahweh | al | Yisra'el
 vesichakti
 lifnei | Yahweh
 
@@ -136,7 +132,5 @@ ve'im | ha'amahot | asher | amart
 imam | ikavedah
 
 6:23
-Ulemikhal | bat | Sha'ul | lo | hayah | lah
-yaled
-ad
+Ulemikhal | bat | Sha'ul | lo | hayah | lah | yaled | ad
 yom | motah

@@ -51,8 +51,7 @@ betiti | esh | Bemitzrayim | venishberu
 kol | ozereiha
 
 30:9
-baiyom | hahu | yetze'u | mal'akhim | milefanai | batzim
-lehacharid
+baiyom | hahu | yetze'u | mal'akhim | milefanai | batzim | lehacharid
 et | Kush | betach
 vehayetah | chalchalah | vahem | beyom | Mitzrayim
 ki | hineh | ba'ah
@@ -85,8 +84,7 @@ vahashimoti | et | Patros | venatati | esh | Betzo'an
 ve'asiti | shefatim | Beno
 
 30:15
-veshafakhti | chamati
-al | Sin | ma'oz | Mitzrayim
+veshafakhti | chamati | al | Sin | ma'oz | Mitzrayim
 vehikhrati
 et | hamon | No
 
@@ -115,8 +113,8 @@ ve'asiti | shefatim | Bemitzrayim | veyade'u
 ki | ani | Yahweh
 
 30:20
-vayhi | be'achat | esreh | shanah | barishon
-beshiv'ah | lachodesh | hayah | devar | Yahweh
+vayhi | be'achat | esreh | shanah | barishon | beshiv'ah | lachodesh
+hayah | devar | Yahweh
 elai | lemor
 
 30:21
@@ -128,7 +126,9 @@ litpos | becharev
 30:22
 lakhen | koh | amar | Adonai | Yahweh | hini | el | par'oh | melekh | Mitzrayim
 veshavarti | et | zero'otav
-et | hachazakah | ve'et | hanishbaret | vehipalti | et | hacherev | miyado
+et | hachazakah
+ve'et | hanishbaret
+vehipalti | et | hacherev | miyado
 
 30:23
 vahafitzoti | et | Mitzrayim | bagoyim
@@ -145,8 +145,7 @@ vehachazakti | et | zero'ot | melekh | Bavel
 uzero'ot | par'oh
 tipolenah
 veyade'u | ki | ani | Yahweh | betiti | charbi | beyad | melekh | Bavel
-venatah | otah
-el | eretz | Mitzrayim
+venatah | otah | el | eretz | Mitzrayim
 
 30:26
 vahafitzoti | et | Mitzrayim | bagoyim

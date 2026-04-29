@@ -1,6 +1,6 @@
 47:1
-asher | hayah | devar | Yahweh | el | Yirmeyahu | hanavi
-el | pelishtim | beterem | yakeh | far'oh
+asher | hayah | devar | Yahweh | el | Yirmeyahu | hanavi | el | pelishtim
+beterem | yakeh | far'oh
 et | Azah
 
 47:2
@@ -27,13 +27,10 @@ i | Khaftor
 47:5
 ba'ah | karechah | el | Azah
 Nidmetah | Ashkelon
-she'erit | imkam
-ad | matai
-titgodadi
+she'erit | imkam | ad | matai | titgodadi
 
 47:6
-ho | cherev | Layahweh
-ad | anah
+ho | cherev | Layahweh | ad | anah
 lo | tishkoti
 he'asefi | al | ta'rekh
 herage'i

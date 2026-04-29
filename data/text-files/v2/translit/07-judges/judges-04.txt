@@ -1,6 +1,5 @@
 4:1
-vaiyosifu | benei | Yisra'el
-la'asot | hara
+vaiyosifu | benei | Yisra'el | la'asot | hara
 be'einei | Yahweh
 Ve'ehud
 met
@@ -13,8 +12,7 @@ vehu | yoshev
 Bacharoshet | Hagoyim
 
 4:3
-vaiyitz'aku | venei | Yisra'el
-el | Yahweh
+vaiyitz'aku | venei | Yisra'el | el | Yahweh
 ki | tesha | me'ot | rekhev | barzel | lo
 vehu | lachatz | et | benei | Yisra'el | bechazekah
 esrim | shanah
@@ -34,12 +32,13 @@ vatishlach | vatikra | Levarak | ben | Avino'am | Mikedesh
 Naftali
 vatomer | elav | halo | tzivah | Yahweh | elohei | Yisra'el | lekh | umashakhta | behar | Tavor
 velakachta | imekha | aseret | alafim | ish
-mibenei | Naftali
-umibenei | Zevulun
+mibenei | Naftali | umibenei | Zevulun
 
 4:7
 umashakhti | eleikha | el | nachal | Kishon | et | Sisera | sar | tzeva | Yavin
-ve'et | rikhbo | ve'et | hamono | unetatihu | beyadekha
+ve'et | rikhbo
+ve'et | hamono
+unetatihu | beyadekha
 
 4:8
 vaiyomer | eleiha | Barak
@@ -50,8 +49,8 @@ lo | elekh
 
 4:9
 vatomer | halokh | elekh | imakh | efes | ki | lo | tihyeh | tif'artekha | al | haderekh | asher | atah | holekh
-ki | veyad | ishah | yimkor | Yahweh
-et | Sisra | vatakom | Devorah | vatelekh | im | Barak
+ki | veyad | ishah | yimkor | Yahweh | et | Sisra
+vatakom | Devorah | vatelekh | im | Barak
 Kedshah
 
 4:10
@@ -63,8 +62,8 @@ Devorah
 
 4:11
 Vechever | hakeini | nifrad | Mikayin | mibenei | Chovav
-choten | Mosheh | vaiyet | oholo
-ad | elon | Batz'anim | asher | et | Kedesh
+choten | Mosheh
+vaiyet | oholo | ad | elon | Batz'anim | asher | et | Kedesh
 
 4:12
 vaiyagidu | Lesisera
@@ -73,15 +72,15 @@ har | Tavor
 
 4:13
 vaiyaz'ek | Sisra | et | kol | rikhbo | tesha | me'ot | rekhev | barzel
-ve'et | kol | ha'am | asher | ito | Mecharoshet | Hagoyim
-el | nachal | Kishon
+ve'et | kol | ha'am | asher | ito | Mecharoshet | Hagoyim | el | nachal | Kishon
 
 4:14
 vatomer | Devorah | el | Barak | kum | ki | zeh | haiyom | asher | natan | Yahweh | et | Sisera | beyadekha
 halo | Yahweh
 yatza | lefaneikha
 vaiyered | Barak | mehar | Tavor
-va'aseret | alafim | ish | acharav
+va'aseret | alafim | ish
+acharav
 
 4:15
 vaiyahom | Yahweh | et | Sisra | ve'et | kol | harekhev | ve'et | kol | hamachaneh | lefi | cherev
@@ -90,16 +89,13 @@ vaiyered | Sisra | me'al | hamerkavah
 vaiyanos | beraglav
 
 4:16
-Uvarak | radaf | acharei | harekhev | ve'acharei | hamachaneh
-ad
+Uvarak | radaf | acharei | harekhev | ve'acharei | hamachaneh | ad
 Charoshet | Hagoyim
 vaiyipol | kol | machaneh | Sisera | lefi | cherev
-lo | Nish'ar
-ad | echad
+lo | Nish'ar | ad | echad
 
 4:17
-Vesisera | nas | beraglav
-el | ohel | Ya'el
+Vesisera | nas | beraglav | el | ohel | Ya'el
 eshet
 Chever | hakeini
 ki | shalom | bein | Yavin | melekh | Chatzor | uvein
@@ -108,8 +104,8 @@ Chever | hakeini
 
 4:18
 vatetze | Ya'el | likrat | Sisera
-vatomer | elav | surah | adoni | surah | elai
-al | tira | vaiyasar | eleiha | ha'ohelah
+vatomer | elav | surah | adoni | surah | elai | al | tira
+vaiyasar | eleiha | ha'ohelah
 vatekhasehu | basemikhah
 
 4:19
@@ -120,7 +116,8 @@ vatekhasehu
 
 4:20
 vaiyomer | eleiha
-amod | petach | ha'ohel
+amod
+petach | ha'ohel
 vehayah | im | ish | yavo | ushe'elekh | ve'amar | hayesh | poh | ish
 ve'amart | ayin
 
@@ -147,6 +144,4 @@ benei | Yisra'el
 
 4:24
 vatelekh | yad | benei | Yisra'el | halokh | vekashah | al
-Yavin | melekh | Kena'an
-ad | asher | hikhritu
-et | Yavin | melekh | Kena'an
+Yavin | melekh | Kena'an | ad | asher | hikhritu | et | Yavin | melekh | Kena'an

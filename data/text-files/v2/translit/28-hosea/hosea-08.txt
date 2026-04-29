@@ -1,8 +1,6 @@
 8:1
-el | chikekha | shofar | kanesher
-al | beit | Yahweh
-ya'an | averu | veriti
-ve'al | torati
+el | chikekha | shofar | kanesher | al | beit | Yahweh
+ya'an | averu | veriti | ve'al | torati
 pasha'u
 
 8:2
@@ -19,9 +17,7 @@ velo | yada'eti
 kaspam | uzehavam | asu | lahem | atzabim | lema'an | yikaret
 
 8:5
-zanach | eglekh | Shomeron
-charah | api | bam
-ad | matai
+zanach | eglekh | Shomeron | charah | api | bam | ad | matai
 lo | yukhelu
 nikayon
 
@@ -54,8 +50,7 @@ hitnu | ahavim
 8:10
 gam | ki | yitnu | vagoyim
 atah | akabetzem
-vaiyachelu | me'at | mimasa
-melekh | sarim
+vaiyachelu | me'at | mimasa | melekh | sarim
 
 8:11
 ki | hirbah | Efrayim | mizbechot | lachato
@@ -68,8 +63,7 @@ kemov | zar | Nechshavu
 
 8:13
 zivchei | havhavai | yizbechu | vasar | vaiyokhelu
-Yahweh
-lo | ratzam
+Yahweh | lo | ratzam
 atah | yizkor | avonam | veyifkod | chatotam
 hemah
 Mitzrayim | yashuvu

@@ -1,34 +1,32 @@
 4:1
-veha'adam | yada
-et | Chavah | ishto
+veha'adam | yada | et | Chavah | ishto
 vatahar | vateled | et | Kayin
 vatomer
 kaniti | ish
 et | Yahweh
 
 4:2
-vatosef | laledet | et | achiv
-et | Havel | vayhi | Hevel | ro'eh | tzon
+vatosef | laledet | et | achiv | et | Havel
+vayhi | Hevel | ro'eh | tzon
 Vekayin | hayah | oved | adamah
 
 4:3
-vayhi
-miketz | yamim
+vayhi | miketz | yamim
 vaiyave | Kayin | miperi | ha'adamah | minchah | Layahweh
 
 4:4
 Vehevel | hevi | gam | hu | mibekhorot | tzono | umechelvehen
-vaiyisha | Yahweh
-el | Hevel | ve'el | minchato
+vaiyisha | Yahweh | el | Hevel
+ve'el | minchato
 
 4:5
-ve'el | Kayin | ve'el | minchato
-lo | sha'ah | vaiyichar | Lekayin | me'od | vaiyipelu
+ve'el | Kayin | ve'el | minchato | lo | sha'ah
+vaiyichar | Lekayin | me'od | vaiyipelu
 panav
 
 4:6
-vaiyomer | Yahweh
-el | Kayin | lamah | charah | lakh | velamah
+vaiyomer | Yahweh | el | Kayin
+lamah | charah | lakh | velamah
 nafelu | faneikha
 
 4:7
@@ -39,8 +37,7 @@ ve'atah
 timshol | bo
 
 4:8
-vaiyomer | Kayin
-el | Hevel | achiv
+vaiyomer | Kayin | el | Hevel | achiv
 nelekhah | hasadeh | vayhi | bihyotam | basadeh
 vaiyakom | Kayin | el | Hevel | achiv
 vaiyahargehu
@@ -54,8 +51,7 @@ hashomer | achi
 anokhi
 
 4:10
-vaiyomer
-meh | asita
+vaiyomer | meh | asita
 kol | demei | achikha
 tzo'akim | elai | min | ha'adamah
 
@@ -69,8 +65,7 @@ na | vanad
 tihyeh | va'aretz
 
 4:13
-vaiyomer | Kayin
-el | Yahweh
+vaiyomer | Kayin | el | Yahweh
 gadol | avoni | mineso
 
 4:14
@@ -98,14 +93,12 @@ vaiyeda | Kayin | et | ishto
 vatahar
 vateled | et | Chanokh
 vayhi | boneh | ir
-vaiyikra | shem | ha'ir | keshem
-beno | Chanokh
+vaiyikra | shem | ha'ir | keshem | beno | Chanokh
 
 4:18
 vaiyivaled | Lachanokh | et | Irad
-Ve'irad
-yalad
-et | Mechuya'el | Umechiya'el | yalad | et | Metusha'el | Umetusha'el
+Ve'irad | yalad | et | Mechuya'el
+Umechiya'el | yalad | et | Metusha'el | Umetusha'el
 yalad | et | Lamekh
 
 4:19
@@ -156,6 +149,7 @@ ki | harago
 Kayin
 
 4:26
-Ulshet | gam | hu | yulad | ben | vaiyikra | et | shemo | Enoosh
+Ulshet | gam | hu | yulad | ben | vaiyikra | et | shemo
+Enoosh
 az | huchal | likro
 beshem | Yahweh

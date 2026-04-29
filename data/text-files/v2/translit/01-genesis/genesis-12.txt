@@ -1,7 +1,6 @@
 12:1
 vaiyomer | Yahweh | el | Avram | lekh | lekha | me'artzekha | umimoladtekha
-umibeit | avikha
-el | ha'aretz | asher | ar'eka
+umibeit | avikha | el | ha'aretz | asher | ar'eka
 
 12:2
 ve'e'eskha | legoy | gadol
@@ -22,15 +21,14 @@ Ve'avram | ben | chamesh | shanim | veshiv'im | shanah | betzeto | Mecharan
 
 12:5
 vaiyikach | Avram | et | Sarai | ishto | ve'et | Lot | ben | achiv | ve'et | kol | rekhusham | asher | rakhashu
-ve'et | hanefesh | asher | asu | Vecharan
+ve'et | hanefesh
+asher | asu | Vecharan
 vaiyetze'u | lalekhet | artzah | Kena'an
 vaiyavo'u
 artzah | Kena'an
 
 12:6
-vaiya'avor | Avram | ba'aretz
-ad | mekom | Shekhem
-ad
+vaiya'avor | Avram | ba'aretz | ad | mekom | Shekhem | ad
 elon | Moreh
 vehakena'ani
 az | ba'aretz
@@ -61,8 +59,8 @@ vaiyered | Avram | Mitzraymah | lagur | sham
 ki | khaved | hara'av | ba'aretz
 
 12:11
-vayhi | ka'asher | hikriv | lavo | Mitzrayemah
-vaiyomer | el | Sarai | ishto
+vayhi | ka'asher | hikriv
+lavo | Mitzrayemah | vaiyomer | el | Sarai | ishto
 hineh | na | yada'ti
 ki | ishah | yefat | mar'eh
 at
@@ -70,7 +68,8 @@ at
 12:12
 vehayah | ki | yir'u | otokh | hamitzrim | ve'ameru
 ishto | zot
-veharegu | oti | ve'otakh | yechaiyu
+veharegu | oti
+ve'otakh | yechaiyu
 
 12:13
 imri | na
@@ -86,9 +85,8 @@ ki | yafah | hi | me'od
 
 12:15
 vaiyir'u | otah | sarei | far'oh
-vayhalu | otah
-el | par'oh | vatukach | ha'ishah
-beit | par'oh
+vayhalu | otah | el | par'oh
+vatukach | ha'ishah | beit | par'oh
 
 12:16
 Ul'avram | heitiv | ba'avurah | vayhi | lo | tzon | uvakar | vachamorim
@@ -115,5 +113,6 @@ kach | valekh
 
 12:20
 vaytzav | alav | par'oh
-anashim | vayshalechu | oto | ve'et | ishto
+anashim
+vayshalechu | oto | ve'et | ishto
 ve'et | kol | asher | lo

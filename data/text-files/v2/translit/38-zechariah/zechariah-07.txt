@@ -12,8 +12,7 @@ va'anashav | lechalot
 et | penei | Yahweh
 
 7:3
-lemor | el | hakohanim | asher | leveit | Yahweh | tzeva'ot | ve'el | hanevi'im
-lemor
+lemor | el | hakohanim | asher | leveit | Yahweh | tzeva'ot | ve'el | hanevi'im | lemor
 ha'evkeh | bachodesh | hachamishi
 hinazer | ka'asher | asiti
 zeh | kameh | shanim
@@ -23,7 +22,8 @@ vayhi | devar | Yahweh | tzeva'ot
 elai | lemor
 
 7:5
-emor | el | kol | am | ha'aretz | ve'el | hakohanim | lemor
+emor | el | kol | am | ha'aretz
+ve'el | hakohanim | lemor
 ki | tzamtem | vesafod | bachamishi | uvashevi'i | vezeh | shiv'im | shanah
 hatzom | tzamtuni
 ani
@@ -43,8 +43,7 @@ Vehanegev | vehashefelah
 yoshev
 
 7:8
-vayhi | devar | Yahweh
-el | Zekharyah | lemor
+vayhi | devar | Yahweh | el | Zekharyah | lemor
 
 7:9
 koh | amar | Yahweh | tzeva'ot | lemor
@@ -54,10 +53,8 @@ asu
 ish | et | achiv
 
 7:10
-ve'almanah | veyatom | ger | ve'ani
-al | ta'ashoku
-vera'at | ish | achiv
-al | tachshevu | bilvavkhem
+ve'almanah | veyatom | ger | ve'ani | al | ta'ashoku
+vera'at | ish | achiv | al | tachshevu | bilvavkhem
 
 7:11
 vayma'anu | lehakshiv
@@ -73,8 +70,7 @@ vayhi | ketzef | gadol | me'et
 Yahweh | tzeva'ot
 
 7:13
-vayhi | kha'asher | kara
-velo | shame'u
+vayhi | kha'asher | kara | velo | shame'u
 ken | yikre'u | velo | eshma
 amar
 Yahweh | tzeva'ot

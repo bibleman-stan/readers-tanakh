@@ -7,8 +7,7 @@ vaiyiven | et | beit | ya'ar | Halevanon | me'ah | amah | areko | vachamishim | 
 usheloshim | amah
 komato
 al | arba'ah | turei | amudei | arazim
-ukherutot | arazim
-al | ha'amudim
+ukherutot | arazim | al | ha'amudim
 
 7:3
 vesafun | ba'erez | mima'al | al | hatzela'ot | asher | al | ha'amudim
@@ -31,8 +30,7 @@ chamishim | amah | areko
 usheloshim | amah
 rachebo
 ve'ulam | al | peneihem
-ve'amudim | ve'av
-al | peneihem
+ve'amudim | ve'av | al | peneihem
 
 7:7
 ve'ulam | hakise | asher | yishpot | sham
@@ -43,14 +41,12 @@ vesafun | ba'erez | mehakarka | ad | hakarka
 uveito | asher | yeshev | sham | chatzer | ha'acheret | mibeit | la'ulam
 kama'aseh | hazeh
 hayah
-uvayit | ya'aseh | levat | par'oh | asher | lakach | Shelomoh
-ka'ulam
+uvayit | ya'aseh | levat | par'oh | asher | lakach | Shelomoh | ka'ulam
 hazeh
 
 7:9
 kol | eleh | avanim | yekarot | kemidot | gazit | megorarot | bamegerah
-mibayit | umichutz | umimasad | ad | hatefachot | umichutz
-ad | hechatzer | hagedolah
+mibayit | umichutz | umimasad | ad | hatefachot | umichutz | ad | hechatzer | hagedolah
 
 7:10
 umeyusad | avanim | yekarot | avanim | gedolot
@@ -63,7 +59,9 @@ umilma'lah | avanim | yekarot | kemidot | gazit | va'arez
 
 7:12
 vechatzer | hagedolah | saviv | sheloshah | turim | gazit
-vetur | kerutot | arazim | velachatzar | beit | Yahweh | hapenimit | ule'ulam | habayit
+vetur
+kerutot | arazim
+velachatzar | beit | Yahweh | hapenimit | ule'ulam | habayit
 
 7:13
 vaiyishlach | hamelekh | Shelomoh
@@ -71,8 +69,7 @@ vaiyikach | et | Chiram | Mitzor
 
 7:14
 ben | ishah | almanah | hu | mimateh | Naftali | ve'aviv | ish | tzori | choresh | nechoshet
-vaiyimale | et | hachakhemah | ve'et | hatevunah | ve'et | hada'at
-la'asot | kol | melakhah | banechoshet
+vaiyimale | et | hachakhemah | ve'et | hatevunah | ve'et | hada'at | la'asot | kol | melakhah | banechoshet
 vaiyavo | el | hamelekh | Shelomoh
 vaiya'as | et | kol | melakhto
 
@@ -171,8 +168,7 @@ loyot | ma'aseh | morad
 7:30
 ve'arba'ah | ofanei | nechoshet | lamekhonah | ha'achat | vesarnei | nechoshet
 ve'arba'ah | fa'amotav | ketefot | lahem
-mitachat | lakiyor | haketefot | yetzukot | me'ever | ish
-loyot
+mitachat | lakiyor | haketefot | yetzukot | me'ever | ish | loyot
 
 7:31
 ufihu | mibeit | lakoteret | vama'lah | ba'amah
@@ -204,8 +200,7 @@ agol | saviv
 ve'al | rosh | hamekhonah | yedoteiha | umisgeroteiha | mimenah
 
 7:36
-vayfatach | al | haluchot | yedoteiha
-ve'al | misgeroteiha | keruvim
+vayfatach | al | haluchot | yedoteiha | ve'al | misgeroteiha | keruvim
 arayot | vetimorot | kema'ar | ish | veloyot | saviv
 
 7:37
@@ -228,7 +223,8 @@ mimul | negev
 
 7:40
 vaiya'as | Chirom | et | hakiyorot
-ve'et | haiya'im | ve'et | hamizrakot
+ve'et | haiya'im
+ve'et | hamizrakot
 vaykhal | Chiram | la'asot | et | kol | hamelakhah | asher | asah | lamelekh | Shelomoh
 beit | Yahweh
 
@@ -242,13 +238,12 @@ shenei | turim | rimonim | lasevakhah | ha'echat
 lekhasot | et | shetei | gulot | hakotarot | asher | al | penei | ha'amudim
 
 7:43
-ve'et | hamekhonot | aser
-ve'et | hakiyorot | asarah | al | hamekhonot
+ve'et | hamekhonot
+aser | ve'et | hakiyorot | asarah | al | hamekhonot
 
 7:44
 ve'et | haiyam | ha'echad
-ve'et | habakar | sheneim | asar
-tachat | haiyam
+ve'et | habakar | sheneim | asar | tachat | haiyam
 
 7:45
 ve'et | hasirot | ve'et | haiya'im | ve'et | hamizrakot | ve'et | kol | hakelim | ha'ohel

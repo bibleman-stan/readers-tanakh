@@ -1,6 +1,7 @@
 44:1
 vaytzav | et | asher | al | beito | lemor
-male | et | amtechot | ha'anashim | okhel | ka'asher | yukhelun
+male | et | amtechot | ha'anashim | okhel
+ka'asher | yukhelun
 se'et
 vesim | kesef | ish
 befi | amtachto
@@ -21,7 +22,8 @@ vachamoreihem
 44:4
 hem | yatze'u | et | ha'ir | lo | hirchiku
 Veyosef | amar | la'asher | al | beito
-kum | redof | acharei | ha'anashim
+kum | redof
+acharei | ha'anashim
 vehisagtam | ve'amarta | alehem
 lamah | shilamtem | ra'ah | tachat | tovah
 
@@ -90,7 +92,8 @@ halo | yeda'tem
 ki | nachesh | yenachesh | ish | asher | kamoni
 
 44:16
-vaiyomer | Yehudah | mah | nomar | ladoni | mah | nedaber | umah | nitztadak
+vaiyomer | Yehudah | mah | nomar | ladoni | mah | nedaber
+umah | nitztadak
 ha'elohim | matza | et | avon | avadeikha
 hinenu | avadim | ladoni
 gam | anachnu
@@ -101,8 +104,7 @@ vaiyomer
 chalilah | li | me'asot | zot
 ha'ish | asher | Nimtza | hagavia | beyado | hu | yihyeh | li | aved
 ve'atem
-alu | leshalom
-el | avikhem
+alu | leshalom | el | avikhem
 
 44:18
 vaiyigash | elav | Yehudah | vaiyomer | bi | adoni
@@ -111,8 +113,7 @@ ve'al | yichar | apekha | be'avdekha
 ki | khamokha | kefar'oh
 
 44:19
-adoni | sha'al
-et | avadav | lemor
+adoni | sha'al | et | avadav | lemor
 hayesh | lakhem | av
 ov | ach
 
@@ -131,24 +132,18 @@ ve'asimah | eini
 alav
 
 44:22
-vanomer | el | adoni
-lo | yukhal | hana'ar
-la'azo | et | aviv
+vanomer | el | adoni | lo | yukhal | hana'ar | la'azo | et | aviv
 ve'azav | et | aviv
 vamet
 
 44:23
 vatomer | el | avadeikha
 im | lo | yered | achikhem | hakaton
-itekhem
-lo | tosifun
-lir'ot | panai
+itekhem | lo | tosifun | lir'ot | panai
 
 44:24
-vayhi | ki | alinu
-el | avdekha
-avi
-vanaged | lo | et
+vayhi | ki | alinu | el | avdekha
+avi | vanaged | lo | et
 divrei | adoni
 
 44:25
@@ -175,8 +170,7 @@ ki | shenayim | yaldah | li | ishti
 vaiyetze | ha'echad | me'iti
 va'omar
 akh
-tarof | toraf | velo | re'itiv
-ad | henah
+tarof | toraf | velo | re'itiv | ad | henah
 
 44:29
 ulekachtem | gam | et | zeh | me'im | panai | vekarahu | ason

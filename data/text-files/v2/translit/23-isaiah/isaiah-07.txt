@@ -5,8 +5,7 @@ aleiha | velo | yakhol | lehilachem | aleiha
 
 7:2
 vaiyugad | leveit | David | lemor
-nachah | Aram
-al | Efrayim
+nachah | Aram | al | Efrayim
 vaiyana | levavo | ulevav | amo
 kenoa | atzei | ya'ar | mipenei | ruach
 
@@ -16,8 +15,7 @@ tze | na | likrat | Achaz
 atah
 Ushe'ar
 Yashuv | benekha
-el | ketzeh | te'alat | haberekhah | ha'elyonah
-el | mesilat
+el | ketzeh | te'alat | haberekhah | ha'elyonah | el | mesilat
 sedeh | khoves
 
 7:4
@@ -61,7 +59,8 @@ vaiyosef | Yahweh
 daber | el | Achaz | lemor
 
 7:11
-she'al | lekha | ot | me'im | Yahweh | eloheikha
+she'al | lekha | ot | me'im
+Yahweh | eloheikha
 ha'mek | she'alah
 o
 hagbeah | lema'elah
@@ -113,7 +112,8 @@ hanahalolim
 
 7:20
 baiyom | hahu | yegalach | Adonai | beta'ar | hasekhirah | be'evrei | nahar | bemelekh | Ashur
-et | harosh | vesa'ar | haraglayim
+et | harosh
+vesa'ar | haraglayim
 vegam | et | hazakan
 tispeh
 
@@ -138,8 +138,8 @@ bachitzim | uvakeshet | yavo | shamah
 ki | shamir | vashayit | tihyeh | khol | ha'aretz
 
 7:25
-vekhol | heharim | asher | bama'der | ye'aderun
-lo | tavo | shamah | yir'at
+vekhol | heharim | asher | bama'der | ye'aderun | lo | tavo | shamah
+yir'at
 shamir | vashayit
 vehayah | lemishlach | shor | ulemirmas
 seh

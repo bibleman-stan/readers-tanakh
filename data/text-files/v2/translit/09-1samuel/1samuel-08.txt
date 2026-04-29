@@ -1,8 +1,6 @@
 8:1
-vayhi
-ka'asher | zaken
-Shemu'el
-vaiyasem | et | banav | shofetim | Leyisra'el
+vayhi | ka'asher | zaken
+Shemu'el | vaiyasem | et | banav | shofetim | Leyisra'el
 
 8:2
 vayhi | shem | beno | habekhor | Yo'el
@@ -10,8 +8,8 @@ veshem | mishnehu | Aviyah
 shofetim | Biv'er | Shava
 
 8:3
-velo | halekhu | vanav | bedarkhov | vaiyitu | acharei | habatza
-vaiyikchu | shochad
+velo | halekhu | vanav | bedarkhov | vaiyitu
+acharei | habatza | vaiyikchu | shochad
 vaiyatu | mishpat
 
 8:4
@@ -28,13 +26,13 @@ atah | simah | lanu | melekh | leshafetenu | kekhol | hagoyim
 8:6
 vaiyera | hadavar | be'einei | Shemu'el
 ka'asher | ameru
-tenah | lanu | melekh | leshafetenu | vaiyitpalel | Shemu'el
-el | Yahweh
+tenah | lanu | melekh | leshafetenu
+vaiyitpalel | Shemu'el | el | Yahweh
 
 8:7
 vaiyomer | Yahweh | el | Shemu'el
-shema | bekol | ha'am
-lekhol | asher | yomeru | eleikha
+shema | bekol | ha'am | lekhol | asher | yomeru
+eleikha
 ki | lo | otekha | ma'asu | ki | oti | ma'asu | mimelokh | aleihem
 
 8:8
@@ -53,8 +51,7 @@ aleihem
 
 8:10
 vaiyomer | Shemu'el | et
-kol | divrei | Yahweh
-el | ha'am
+kol | divrei | Yahweh | el | ha'am
 hasho'alim | me'ito | melekh
 
 8:11
@@ -70,7 +67,8 @@ vela'asot | kelei | milchamto
 ukhelei | rikhbo
 
 8:13
-ve'et | benoteikhem | yikach | lerakachot | uletabachot | ule'ofot
+ve'et | benoteikhem
+yikach | lerakachot | uletabachot | ule'ofot
 
 8:14
 ve'ets | sedoteikhem | ve'et | karmeikhem | vezeiteikhem | hatovim
@@ -81,7 +79,8 @@ vezar'eikhem | vekharmeikhem | ya'sor
 venatan | lesarisav | vela'avadav
 
 8:16
-ve'et | avdeikhem | ve'et | shifchoteikhem | ve'et | bachureikhem | hatovim | ve'et | chamoreikhem | yikach
+ve'et | avdeikhem | ve'et | shifchoteikhem | ve'et | bachureikhem | hatovim | ve'et | chamoreikhem
+yikach
 ve'asah | limlakhto
 
 8:17
@@ -95,8 +94,8 @@ velo | ya'aneh | Yahweh | etkhem
 baiyom | hahu
 
 8:19
-vayma'anu | ha'am | lishmoa
-bekol | Shemu'el | vaiyomeru | lo
+vayma'anu | ha'am | lishmoa | bekol | Shemu'el
+vaiyomeru | lo
 ki | im | melekh | yihyeh | aleinu
 
 8:20

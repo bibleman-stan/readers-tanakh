@@ -1,14 +1,12 @@
 3:1
-vehanachash | hayah | arum
-mikol | chaiyat | hasadeh | asher | asah
+vehanachash | hayah | arum | mikol | chaiyat | hasadeh | asher | asah
 Yahweh | elohim
 vaiyomer | el | ha'ishah
 af | ki | amar | elohim | lo | tokhelu | mikol
 etz | hagan
 
 3:2
-vatomer | ha'ishah
-el | hanachash | miperi | etz | hagan
+vatomer | ha'ishah | el | hanachash | miperi | etz | hagan
 nokhel
 
 3:3
@@ -18,12 +16,13 @@ velo | tige'u | bo
 pen | temutun
 
 3:4
-vaiyomer | hanachash
-el | ha'ishah | lo | mot | temutun
+vaiyomer | hanachash | el | ha'ishah | lo | mot
+temutun
 
 3:5
 ki | yodea | elohim
-ki | beyom | akhalkhem | mimenu | venifkechu
+ki | beyom | akhalkhem | mimenu
+venifkechu
 eineikhem
 vihyitem | kelohim
 yode'ei
@@ -53,8 +52,8 @@ betokh
 etz | hagan
 
 3:9
-vaiyikra | Yahweh | elohim
-el | ha'adam | vaiyomer | lo
+vaiyikra | Yahweh | elohim | el | ha'adam
+vaiyomer | lo
 aiyekah
 
 3:10
@@ -84,21 +83,20 @@ hanachash | hishi'ani | va'okhel
 3:14
 vaiyomer | Yahweh | elohim | el | hanachash | ki | asita | zot
 arur | atah | mikol | habehemah | umikol
-chaiyat | hasadeh
-al | gechonekha | telekh
+chaiyat | hasadeh | al | gechonekha | telekh
 ve'afar | tokhal
 kol | yemei | chaiyeikha
 
 3:15
-ve'eivah | ashit | beinekha | uvein | ha'ishah
-uvein | zar'akha | uvein | zar'ah
+ve'eivah | ashit | beinekha | uvein | ha'ishah | uvein | zar'akha
+uvein | zar'ah
 hu | yeshufekha | rosh
 ve'atah
 teshufenu | akev
 
 3:16
-el | ha'ishah | amar | harbah | arbeh | itzevonekh | veheronekh
-be'etzev | teledi | vanim
+el | ha'ishah | amar | harbah | arbeh | itzevonekh | veheronekh | be'etzev
+teledi | vanim
 ve'el | ishekh | teshukatekh
 vehu | yimshol | bakh
 
@@ -114,8 +112,7 @@ vekotz | vedardar | tatzmiach | lakh
 ve'akhalta | et | esev | hasadeh
 
 3:19
-beze'at | apeikha | tokhal | lechem
-ad | shuvekha | el | ha'adamah
+beze'at | apeikha | tokhal | lechem | ad | shuvekha | el | ha'adamah
 ki | mimenah | lukacheta
 ki | afar | atah
 ve'el | afar
@@ -147,4 +144,5 @@ la'avod | et | ha'adamah | asher | lukach | misham
 vaygaresh | et | ha'adam
 vaiyashken | mikedem | legan | Eden | et | hakeruvim | ve'et | lahat | hacherev | hamithapekhet
 lishmor
-et | derekh | etz | hachaiyim
+et | derekh
+etz | hachaiyim

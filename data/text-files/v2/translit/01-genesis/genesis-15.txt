@@ -1,6 +1,6 @@
 15:1
-achar | hadevarim | ha'eleh | hayah | devar | Yahweh | el | Avram
-bamachazeh | lemor
+achar | hadevarim | ha'eleh | hayah | devar | Yahweh | el | Avram | bamachazeh
+lemor
 al | tira | Avram | anokhi | magen | lakh
 sekharekha
 harbeh | me'od
@@ -59,13 +59,12 @@ vegozal
 
 15:10
 vaiyikach | lo | et | kol | eleh | vayvater | otam | batavekh
-vaiyiten | ish | bitro
-likrat | re'ehu | ve'et | hatzipor
-lo | vatar
+vaiyiten | ish | bitro | likrat | re'ehu
+ve'et | hatzipor | lo | vatar
 
 15:11
-vaiyered | ha'ayit
-al | hapegarim | vaiyashev | otam
+vaiyered | ha'ayit | al | hapegarim
+vaiyashev | otam
 Avram
 
 15:12
@@ -82,17 +81,14 @@ arba | me'ot | shanah
 
 15:14
 vegam | et | hagoy | asher | ya'avodu
-dan | anokhi | ve'acharei | khen | yetze'u
-birkhush | gadol
+dan | anokhi | ve'acharei | khen | yetze'u | birkhush | gadol
 
 15:15
 ve'atah | tavo | el | avoteikha | beshalom
-tikaver
-beseivah | tovah
+tikaver | beseivah | tovah
 
 15:16
-vedor | revi'i | yashuvu | henah | ki | lo | shalem | avon | ha'emori
-ad | henah
+vedor | revi'i | yashuvu | henah | ki | lo | shalem | avon | ha'emori | ad | henah
 
 15:17
 vayhi | hashemesh | ba'ah
@@ -102,17 +98,20 @@ bein
 hagezarim | ha'eleh
 
 15:18
-baiyom | hahu | karat | Yahweh | et | Avram
-berit | lemor
+baiyom | hahu | karat | Yahweh | et | Avram | berit | lemor
 lezar'akha | natati | et | ha'aretz | hazot | minehar | Mitzrayim
 ad | hanahar | hagadol
 nehar | Perat
 
 15:19
-et | hakeini | ve'et | hakenizi | ve'et | hakadmoni
+et | hakeini | ve'et | hakenizi
+ve'et | hakadmoni
 
 15:20
-ve'et | hachiti | ve'et | haperizi | ve'et | harefa'im
+ve'et | hachiti | ve'et | haperizi
+ve'et | harefa'im
 
 15:21
-ve'et | ha'emori | ve'et | hakena'ani | ve'et | hagirgashi | ve'et | hayvusi
+ve'et | ha'emori | ve'et | hakena'ani
+ve'et | hagirgashi
+ve'et | hayvusi

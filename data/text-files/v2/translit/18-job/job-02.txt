@@ -1,8 +1,7 @@
 2:1
 vayhi | haiyom
-vaiyavo'u | benei | ha'elohim | lehityatzev
-al | Yahweh | vaiyavo | gam | hasatan | betokham | lehityatzev
-al | Yahweh
+vaiyavo'u | benei | ha'elohim | lehityatzev | al | Yahweh
+vaiyavo | gam | hasatan | betokham | lehityatzev | al | Yahweh
 
 2:2
 vaiyomer | Yahweh | el | hasatan
@@ -40,8 +39,7 @@ et | nafsho | shemor
 2:7
 vaiyetze | hasatan | me'et
 penei | Yahweh
-vaiyakh | et | Iyov | bishchin | ra
-mikaf | raglo
+vaiyakh | et | Iyov | bishchin | ra | mikaf | raglo
 vead | kadekodo
 
 2:8
@@ -57,7 +55,8 @@ vamut
 2:10
 vaiyomer | eleiha | kedaber | achat | hanevalot | tedaberi
 gam | et | hatov | nekabel | me'et | ha'elohim
-ve'et | hara | lo | nekabel
+ve'et | hara
+lo | nekabel
 bekhol | zot | lo | chata | Iyov | bisfatav
 
 2:11
@@ -79,6 +78,7 @@ hashamayemah
 2:13
 vaiyeshevu | ito | la'aretz
 shiv'at | yamim
-veshiv'at | leilot | ve'ein | dover | elav | davar
+veshiv'at | leilot
+ve'ein | dover | elav | davar
 ki | ra'u
 ki | gadal | hake'ev | me'od

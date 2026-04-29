@@ -1,6 +1,5 @@
 27:1
-vaydaber | Yahweh
-el | Mosheh | lemor
+vaydaber | Yahweh | el | Mosheh | lemor
 
 27:2
 daber | el | benei | Yisra'el | ve'amarta | alehem
@@ -10,8 +9,7 @@ neder
 be'erkekha | nefashot | Layahweh
 
 27:3
-vehayah | erkekha | hazakhar | miben | esrim | shanah
-ve'ad
+vehayah | erkekha | hazakhar | miben | esrim | shanah | ve'ad
 ben | shishim | shanah
 vehayah | erkekha | chamishim | shekel | kesef | beshekel | hakodesh
 
@@ -72,8 +70,7 @@ ken | yihyeh
 27:13
 ve'im | ga'ol
 yig'alenah
-veyasaf | chamishito
-al | erkekha
+veyasaf | chamishito | al | erkekha
 
 27:14
 ve'ish | ki | yakdish | et | beito | kodesh | Layahweh
@@ -99,8 +96,7 @@ ke'erkekha | yakum
 
 27:18
 ve'im | achar | haiyovel | yakdish | sadehu
-vechishav | lo | hakohen | et | hakesef | al | pi | hashanim | hanotarot
-ad
+vechishav | lo | hakohen | et | hakesef | al | pi | hashanim | hanotarot | ad
 shenat | haiyovel
 venigra | me'erkekha
 
@@ -113,8 +109,7 @@ vekam | lo
 
 27:20
 ve'im | lo | yig'al | et | hasadeh
-ve'im | makhar | et | hasadeh
-le'ish | acher
+ve'im | makhar | et | hasadeh | le'ish | acher
 lo | yiga'el
 od
 
@@ -124,25 +119,22 @@ kisdeh | hacherem | lakohen
 tihyeh | achuzato
 
 27:22
-ve'im | et | sedeh | miknato | asher | lo | misedeh | achuzato
+ve'im | et | sedeh | miknato | asher | lo
+misedeh | achuzato
 yakdish | Layahweh
 
 27:23
-vechishav | lo | hakohen | et | mikhsat | ha'erkekha
-ad
+vechishav | lo | hakohen | et | mikhsat | ha'erkekha | ad
 shenat | haiyovel
 venatan | et | ha'erkekha | baiyom | hahu | kodesh | Layahweh
 
 27:24
-bishnat | haiyovel | yashuv | hasadeh
-la'asher | kanahu | me'ito | la'asher | lo
-achuzat | ha'aretz
+bishnat | haiyovel | yashuv | hasadeh | la'asher | kanahu
+me'ito | la'asher | lo | achuzat | ha'aretz
 
 27:25
-vekhol | erkekha | yihyeh
-beshekel | hakodesh
-esrim | gerah
-yihyeh | hashakel
+vekhol | erkekha | yihyeh | beshekel | hakodesh
+esrim | gerah | yihyeh | hashakel
 
 27:26
 akh | bekhor | asher | yevukar | Layahweh | bivhemah | lo | yakdish | ish

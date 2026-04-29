@@ -11,8 +11,8 @@ ad | ashtei | esreh | shanah | lamelekh
 Tzidkiyahu
 
 25:3
-bachodesh | harevi'i | betish'ah | lachodesh | vaiyechezak | hara'av
-ba'ir | velo | hayah | lechem | le'am | ha'aretz
+bachodesh | harevi'i | betish'ah | lachodesh | vaiyechezak | hara'av | ba'ir
+velo | hayah | lechem | le'am | ha'aretz
 
 25:4
 vatibaka | ha'ir | vekhol | anshei | hamilchamah | halaylah | derekh | sha'ar | bein | hachomotayim | asher | al | gan | hamelekh
@@ -87,14 +87,13 @@ kol | hakelim | ha'eleh
 25:17
 shemoneh | esreh | amah | komat | ha'amud | ha'echad | vekhoteret | alav | nechoshet | vekomat | hakoteret | shalosh | amah
 usevakhah | verimonim | al | hakoteret | saviv
-hakol | nechoshet
-vekha'eleh | la'amud | hasheni
-al | hasevakhah
+hakol | nechoshet | vekha'eleh | la'amud | hasheni | al | hasevakhah
 
 25:18
 vaiyikach | rav | tabachim | et | Serayah | kohen | harosh
 ve'et | Tzefanyahu | kohen | mishneh
-ve'et | sheloshet | shomerei | hasaf
+ve'et | sheloshet
+shomerei | hasaf
 
 25:19
 umin | ha'ir | lakach | saris | echad | asher | hu | fakid | al | anshei | hamilchamah | vachamishah | anashim | mero'ei | fenei | hamelekh | asher | Nimtze'u | va'ir
@@ -112,8 +111,7 @@ Rivlatah
 
 25:21
 vaiyakh | otam | melekh | Bavel | vaymitem | Berivlah
-be'eretz | Chamat | vaiyigel | Yehudah
-me'al | admato
+be'eretz | Chamat | vaiyigel | Yehudah | me'al | admato
 
 25:22
 veha'am | hanish'ar | be'eretz | Yehudah | asher | hish'ir
@@ -130,8 +128,7 @@ hemah | ve'ansheihem
 
 25:24
 vaiyishava | lahem | Gedalyahu | ule'ansheihem
-vaiyomer | lahem
-al | tire'u | me'avdei | hakasdim
+vaiyomer | lahem | al | tire'u | me'avdei | hakasdim
 shevu | va'aretz | ve'ivdu | et | melekh | Bavel
 veyitav | lakhem
 
@@ -139,7 +136,8 @@ veyitav | lakhem
 vayhi | bachodesh | hashevi'i | ba | Yishma'el | ben | Netanyah | ben | Elishama | mizera | hamelukhah | va'asarah | anashim | ito
 vaiyaku | et | Gedalyahu
 vaiyamot
-ve'et | haiyehudim | ve'et | hakasdim | asher | hayu | ito | Bamitzpah
+ve'et | haiyehudim | ve'et | hakasdim
+asher | hayu | ito | Bamitzpah
 
 25:26
 vaiyakumu | khol | ha'am | mikaton | ve'ad | gadol | vesarei | hachayalim

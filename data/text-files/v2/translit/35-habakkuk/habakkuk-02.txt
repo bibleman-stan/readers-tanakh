@@ -1,13 +1,10 @@
 2:1
-al | mishmarti | e'emodah
-ve'etyatzevah
+al | mishmarti | e'emodah | ve'etyatzevah
 al | matzor | va'atzapeh | lir'ot | mah | yedaber | bi
-umah | ashiv
-al | tokhachti
+umah | ashiv | al | tokhachti
 
 2:2
-vaiya'aneni | Yahweh | vaiyomer | ketov | chazon | uva'er
-al | haluchot
+vaiya'aneni | Yahweh | vaiyomer | ketov | chazon | uva'er | al | haluchot
 lema'an | yarutz
 kore | vo
 
@@ -37,8 +34,8 @@ kol | ha'amim
 2:6
 halo | eleh | khulam | alav | mashal | yisa'u | umelitzah
 chidot | lo
-veyomar | ho | hamarbeh | lo | lo
-ad | matai | umakhbid | alav
+veyomar | ho | hamarbeh | lo | lo | ad | matai
+umakhbid | alav
 avtit
 
 2:7
@@ -84,16 +81,13 @@ yekhasu | al | yam
 2:15
 ho | mashkeh | re'ehu
 mesapeach | chamatekha
-ve'af | shaker
-lema'an | habit
-al | me'oreihem
+ve'af | shaker | lema'an | habit | al | me'oreihem
 
 2:16
 sava'ta | kalon | mikavod | sheteh | gam | atah
 vehe'arel
 tisov | aleikha | kos | yemin | Yahweh
-vekikalon
-al | kevodekha
+vekikalon | al | kevodekha
 
 2:17
 ki | chamas | Levanon | yekhaseka
@@ -115,6 +109,5 @@ hineh | hu | tafus | zahav | vakhesef
 vekhol | ruach | ein | bekirbo
 
 2:20
-Vayahweh
-beheikhal | kadesho
+Vayahweh | beheikhal | kadesho
 has | mipanav | kol | ha'aretz

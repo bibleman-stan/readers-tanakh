@@ -7,8 +7,7 @@ arim | gedolot | uvetzurot | bashamayim
 9:2
 am | gadol | varam | benei | anakim
 asher | atah | yada'ta | ve'atah | shama'ta
-mi | yityatzev | lifnei
-benei | anak
+mi | yityatzev | lifnei | benei | anak
 
 9:3
 veyada'ta | haiyom | ki | Yahweh | eloheikha | hu | ha'over | lefaneikha | esh | okhelah
@@ -38,11 +37,12 @@ atah
 9:7
 zekhor | al | tishkach | et | asher | hiktzafta | et | Yahweh | eloheikha
 bamidbar | lemin | haiyom | asher | yatzata | me'eretz | Mitzrayim | ad | bo'akhem | ad | hamakom | hazeh
-mamrim | heyitem
-im | Yahweh
+mamrim | heyitem | im | Yahweh
 
 9:8
-Uvechorev | hiktzaftem | et | Yahweh | vaiyit'anaf | Yahweh | bakhem
+Uvechorev | hiktzaftem
+et | Yahweh
+vaiyit'anaf | Yahweh | bakhem
 lehashmid | etkhem
 
 9:9
@@ -50,12 +50,10 @@ ba'aloti | haharah | lakachat | luchot | ha'avanim | luchot | haberit
 asher | karat | Yahweh
 imakhem
 va'eshev | bahar | arba'im | yom | ve'arba'im | laylah
-lechem | lo | akhalti | umayim
-lo | shatiti
+lechem | lo | akhalti | umayim | lo | shatiti
 
 9:10
-vaiyiten | Yahweh | elai | et | shenei | luchot | ha'avanim
-ketuvim
+vaiyiten | Yahweh | elai | et | shenei | luchot | ha'avanim | ketuvim
 be'etzba | elohim
 va'aleihem | kekhol | hadevarim | asher | diber | Yahweh | imakhem | bahar | mitokh | ha'esh
 beyom | hakahal
@@ -117,14 +115,12 @@ gam | bapa'am | hahiv
 
 9:20
 Uve'aharon | hit'anaf | Yahweh | me'od | lehashmido
-va'etpalel | gam | be'ad | Aharon
-ba'et | hahiv
+va'etpalel | gam | be'ad | Aharon | ba'et | hahiv
 
 9:21
 ve'et | chatatkhem | asher | asitem | et | ha'egel | lakachti | va'esrof | oto | ba'esh
-va'ekot | oto | tachon | heitev
-ad | asher | dak | le'afar | va'ashlikh | et | afaro
-el | hanachal
+va'ekot | oto | tachon | heitev | ad | asher | dak | le'afar
+va'ashlikh | et | afaro | el | hanachal
 haiyored | min | hahar
 
 9:22
@@ -154,14 +150,14 @@ begadelekha
 asher | hotzeta | Mimitzrayim | beyad | chazakah
 
 9:27
-zekhor | la'avadeikha | Le'avraham | Leyitzchak | Uleya'ako
-al | tefen | el | keshi | ha'am | hazeh | ve'el | rish'o
+zekhor | la'avadeikha | Le'avraham | Leyitzchak
+Uleya'ako | al | tefen | el | keshi | ha'am | hazeh
+ve'el | rish'o
 ve'el | chatato
 
 9:28
 pen | yomeru | ha'aretz | asher | hotzetanu | misham
-mibeli | yekholet | Yahweh | lahavi'am
-el | ha'aretz
+mibeli | yekholet | Yahweh | lahavi'am | el | ha'aretz
 asher | diber | lahem
 umisin'ato | otam
 hotzi'am | lahamitam | bamidbar

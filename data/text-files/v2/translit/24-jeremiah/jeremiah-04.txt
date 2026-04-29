@@ -12,8 +12,7 @@ uvo | yithalalu
 4:3
 ki | khoh | amar | Yahweh | le'ish | Yehudah | Velirushalim
 niru | lakhem
-nir | ve'al | tizre'u
-el | kotzim
+nir | ve'al | tizre'u | el | kotzim
 
 4:4
 himolu | Layahweh | vehasiru | arelot | levavkhem
@@ -26,22 +25,18 @@ roa | ma'aleikhem
 hagidu | Vihudah | Uvirushalim | hashmi'u | ve'imru
 vtik'u | shofar | ba'aretz
 kir'u | mal'u | ve'imru
-he'asefu | venavo'ah
-el | arei | hamivtzar
+he'asefu | venavo'ah | el | arei | hamivtzar
 
 4:6
 se'u | nes | Tziyonah
-ha'izu
-al | ta'amodu
+ha'izu | al | ta'amodu
 ki | ra'ah | anokhi | mevi | mitzafon
 veshever | gadol
 
 4:7
-alah | aryeh | misubekho
-umashchit | goyim
+alah | aryeh | misubekho | umashchit | goyim
 nasa
-yatza | mimekomo
-lasum | artzekh | leshamah
+yatza | mimekomo | lasum | artzekh | leshamah
 arayikh | titzeinah
 me'ein | yoshev
 
@@ -59,8 +54,7 @@ vehanevi'im | yitmahu
 4:10
 va'omar | ahah | Adonai | Yahweh | akhen | hashe | hisheta | la'am | hazeh | Velirushalim | lemor
 shalom | yihyeh | lakhem
-venage'ah | cherev
-ad | hanafesh
+venage'ah | cherev | ad | hanafesh
 
 4:11
 ba'et | hahi | ye'amer | la'om | hazeh | Velirushalim
@@ -69,8 +63,10 @@ derekh
 bat | ami | lo | lizrot | velo | lehavar
 
 4:12
-ruach | male | me'eleh | yavo | li
-atah | gam | ani | adaber | mishpatim | otam
+ruach | male | me'eleh
+yavo | li
+atah | gam | ani | adaber | mishpatim
+otam
 
 4:13
 hineh | ka'ananim | ya'aleh | vekhasufah | markevotav
@@ -101,8 +97,7 @@ hayu | aleiha | misaviv | ki | oti | maratah | ne'um | Yahweh
 darkekh | uma'alalayikh
 aso | eleh | lakh
 zot | ra'atekh | ki | mar
-ki | naga
-ad | libekh
+ki | naga | ad | libekh
 
 4:19
 me'ai | me'ai | achulah | kirot | libi | homeh | li | libi
@@ -119,8 +114,7 @@ rega
 yeri'otai
 
 4:21
-ad | matai | er'eh | nes
-eshme'ah
+ad | matai | er'eh | nes | eshme'ah
 kol | shofar
 
 4:22
@@ -167,7 +161,8 @@ lo | e'eseh
 4:28
 al | zot | te'eval | ha'aretz
 vekaderu | hashamayim | mima'al | al | ki | dibarti | zamoti
-velo | Nichamti | velo | ashuv | mimenah
+velo | Nichamti
+velo | ashuv | mimenah
 
 4:29
 mikol | parash | veromeh | keshet | borachat | kol | ha'ir | ba'u | be'avim

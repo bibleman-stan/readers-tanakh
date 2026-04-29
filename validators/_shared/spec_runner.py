@@ -134,8 +134,27 @@ def _check_morphology(tok: str, morph: str) -> bool:
         # standalone token check: not a finite verb, not a particle/prep
         return not M.is_finite_verb_token(tok) and not M._matches_prep_only(tok) if hasattr(M, "_matches_prep_only") else not M.is_finite_verb_token(tok)
     if morph == "prep":
+        # Maqqef-joined prep+complement (e.g., אֶל־הֶבֶל, מִן־הָאֲדָמָה):
+        # check the FIRST sub-token (the prep itself), not the whole compound.
+        if M.MAQQEF in tok:
+            head = tok.split(M.MAQQEF, 1)[0]
+            s_head = M.skel(head)
+            if s_head in M.PREP_SKELETONS:
+                return True
+            # vav-prefixed free prep within maqfef compound (וְאֶל־..., וְעַל־...)
+            if len(s_head) >= 3 and s_head[0] == "ו" and s_head[1:] in M.PREP_SKELETONS:
+                return True
+            # bound-prep on head sub-token
+            if len(s_head) >= 2 and s_head[0] in M.BOUND_PREP_PREFIXES and not M.is_finite_verb_skel(s_head):
+                if s_head[:2] in M.NON_PREP_2CHAR_PREFIX:
+                    return False
+                return True
+            return False
         s = M.skel(tok)
         if s in M.PREP_SKELETONS:
+            return True
+        # vav-prefixed free prep (וְאֶל = and-to, וְעַל = and-upon, וְעִם = and-with)
+        if len(s) >= 3 and s[0] == "ו" and s[1:] in M.PREP_SKELETONS:
             return True
         if len(s) >= 2 and s[0] in M.BOUND_PREP_PREFIXES and not M.is_finite_verb_skel(s):
             if s[:2] in M.NON_PREP_2CHAR_PREFIX:
@@ -165,6 +184,8 @@ def _check_morphology(tok: str, morph: str) -> bool:
         return M.is_m2_pp_verb_token(tok)
     if morph == "do_marker":
         return M.is_do_marker_token(tok)
+    if morph == "bare_do_marker":
+        return M.is_bare_do_marker_token(tok)
     if morph == "definite_adjective":
         return M.is_definite_adjective_token(tok)
     return False
@@ -274,6 +295,19 @@ def _g_both_verbs(l_n, l_n1, ctx):
 def _g_cross_verse(l_n, l_n1, ctx):
     # always False — engine already verse-scopes; this guard is a no-op marker
     return False
+
+
+@_register_guard("line_n_starts_with_do_marker")
+def _g_n_starts_do(l_n, l_n1, ctx):
+    """Fire (block) when line N starts with אֵת / וְאֵת (DO marker).
+
+    Use case: m2_4 (subject NP + verb merge) shouldn't fire when line N is
+    a stranded DO continuation of the prior clause, not a new subject NP.
+    """
+    first = M.first_content_token(l_n)
+    if not first:
+        return False
+    return M.is_do_marker_token(first)
 
 
 @_register_guard("prev_line_incomplete")

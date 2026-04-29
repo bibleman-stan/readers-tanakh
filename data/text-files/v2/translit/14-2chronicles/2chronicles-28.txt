@@ -16,8 +16,8 @@ keto'avot | hagoyim | asher | hōrish | Hashem
 mipenei | benei | Yisra'el
 
 28:4
-vayzabeach | vaykater | babamot
-ve'al | hageva'ot | vetachat
+vayzabeach | vaykater | babamot | ve'al | hageva'ot
+vetachat
 kol | etz | ra'anan
 
 28:5
@@ -27,17 +27,18 @@ vaiyishbu | mimenu | shivyah | gedolah
 vaiyavi'u
 Darmasek
 vegam | beyad | melekh | Yisra'el | nitan
-vaiyakh | bo
-makah | gedolah
+vaiyakh | bo | makah | gedolah
 
 28:6
 vaiyaharog | Pekach | ben | Remalyahu | Bihudah | me'ah | ve'esrim | elef | beyom | echad | hakol | benei | chayil
 be'azevam
-et | Yahweh | elohei | avotam
+et | Yahweh
+elohei | avotam
 
 28:7
 vaiyaharog | Zikhri | gibor | Efrayim | et | Ma'aseyahu | ben | hamelekh
-ve'et | Azrikam | negid | habayit
+ve'et | Azrikam
+negid | habayit
 ve'et | Elkanah | mishneh | hamelekh
 
 28:8
@@ -50,8 +51,7 @@ veshom | hayah | navi | Layahweh | Oded | shemo
 vaiyetze | lifnei | hatzava | haba | Leshomeron
 vaiyomer | lahem | hineh | bachamat | Yahweh | elohei | avoteikhem | al | Yehudah
 netanam | beyedkhem
-vatahargu | vam | veza'af
-ad | lashamayim
+vatahargu | vam | veza'af | ad | lashamayim
 higia
 
 28:10
@@ -70,26 +70,24 @@ aleikhem
 vaiyakumu | anashim | merashei | venei | Efrayim | Azaryahu | ven | Yehochanan | Berekhyahu | ven | Meshilemot
 Vichizkiyahu | ben | Shalum
 Va'amasa
-ben | Chadlai
-al | haba'im | min | hatzava
+ben | Chadlai | al | haba'im | min | hatzava
 
 28:13
 vaiyomeru | lahem | lo | tavi'u | et | hashivyah | henah | ki | le'ashmat | Yahweh | aleinu | atem | omerim
-lehosif | al | chatoteinu
-ve'al | ashmateinu
+lehosif | al | chatoteinu | ve'al | ashmateinu
 ki | rabah | ashmah | lanu
 vacharon | af | al | Yisra'el
 
 28:14
-vaiya'azo | hechalutz | et | hashivyah | ve'et | habizah
-lifnei | hasarim
+vaiya'azo | hechalutz | et | hashivyah | ve'et | habizah | lifnei | hasarim
 vekhol | hakahal
 
 28:15
 vaiyakumu | ha'anashim | asher | Nikevu | veshemot | vaiyachaziku | vashivyah | vekhol | ma'arumeihem | hilbishu | min | hashalal
 vaiyalbishum | vaiyan'ilum | vaiya'akhilum | vaiyashkum | vaysukhum | vaynahalum | bachamorim | lekhol | koshel
 vayvi'um | Yerecho | ir | hatemarim
-etzel | acheihem | vaiyashuvu
+etzel | acheihem
+vaiyashuvu
 Shomeron
 
 28:16
@@ -97,13 +95,16 @@ ba'et | hahi | shalach | hamelekh | Achaz | al | malkhei | Ashur
 la'zor | lo
 
 28:17
-ve'od | adomim | ba'u | vaiyaku | Vihudah
+ve'od | adomim | ba'u
+vaiyaku | Vihudah
 vaiyishbu | shevi
 
 28:18
 ufelishtim | pashetu | be'arei | hashefelah | Vehanegev | Lihudah
 vaiyilkedu | et | Beit | Shemesh | ve'et | Aiyalon | ve'et | Hagederot | ve'et | Sokho | uvenoteiha | ve'et | Timnah | uvenoteiha
-ve'et | Gimzo | ve'et | benoteiha | vaiyeshevu
+ve'et | Gimzo
+ve'et | benoteiha
+vaiyeshevu
 sham
 
 28:19
@@ -114,14 +115,12 @@ uma'ol | ma'al | Bayahweh
 vaiyavo | alav
 Tilegat | Pilne'eser
 melekh | Ashur
-vaiyatzar | lo
-velo | chazako
+vaiyatzar | lo | velo | chazako
 
 28:21
 ki | chalak | Achaz | et | beit | Yahweh
 ve'et | beit | hamelekh
-vehasarim | vaiyiten | lemelekh | Ashur
-velo | le'ezrah | lo
+vehasarim | vaiyiten | lemelekh | Ashur | velo | le'ezrah | lo
 
 28:22
 uve'et | hatzer | lo | vaiyosef | lim'ol | Bayahweh
@@ -131,8 +130,10 @@ hamelekh | Achaz
 28:23
 vaiyizbach | lelohei | Darmesek | hamakim | bo
 vaiyomer | ki | elohei | malkhei | Aram | hem | ma'zerim | otam
-lahem | azabeach | veya'zeruni
-vehem | hayu | lo | lehakhshilo | ulekhol | Yisra'el
+lahem | azabeach
+veya'zeruni
+vehem | hayu | lo | lehakhshilo
+ulekhol | Yisra'el
 
 28:24
 vaiye'esof | Achaz | et | kelei | veit | ha'elohim | vaykatzetz | et | kelei | veit | ha'elohim
@@ -141,15 +142,15 @@ vaiya'as | lo | mizbechot | bekhol | pinah | Birushalim
 
 28:25
 uvekhol | ir | va'ir | Lihudah | asah | vamot | lekater
-lelohim | acherim | vaiyakh'es | et | Yahweh
+lelohim | acherim
+vaiyakh'es | et | Yahweh
 elohei | avotav
 
 28:26
 veyeter | devarav | vekhol | derakhav
 harishonim
 veha'acharonim
-hinam | ketuvim
-al | sefer | malkhei | Yehudah | Veyisra'el
+hinam | ketuvim | al | sefer | malkhei | Yehudah | Veyisra'el
 
 28:27
 vaiyishkav | Achaz | im | avotav | vaiyikberuhu | va'ir | Birushalim

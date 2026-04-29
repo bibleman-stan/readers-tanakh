@@ -1,7 +1,7 @@
 1:1
 vayhi | acharei | mot | Sha'ul
-Vedavid | shav | mehakot
-et | Ha'amalek | vaiyeshev | David | Betziklag
+Vedavid | shav | mehakot | et | Ha'amalek
+vaiyeshev | David | Betziklag
 yamim | shenayim
 
 1:2
@@ -25,8 +25,7 @@ vaiyomer | asher | nas | ha'am | min | hamilchamah | vegam | harbeh | nafal | mi
 vegam | Sha'ul | Vihonatan | beno | metu
 
 1:5
-vaiyomer | David
-el | hana'ar
+vaiyomer | David | el | hana'ar
 hamagid | lo
 eikh | yada'ta
 ki | met | Sha'ul | Vihonatan | beno
@@ -72,8 +71,7 @@ vegam | kol | ha'anashim | asher | ito
 
 1:12
 vaiyispedu | vaiyivku
-vaiyatzumu
-ad | ha'arev
+vaiyatzumu | ad | ha'arev
 al | Sha'ul | ve'al | Yehonatan | beno | ve'al | am | Yahweh | ve'al | beit | Yisra'el
 ki | nafelu | becharev
 
@@ -99,42 +97,35 @@ vaiyamot
 
 1:16
 vaiyomer | elav | David
-dameikha
-al | roshekha
+dameikha | al | roshekha
 ki | fikha | anah | vekha | lemor
 anokhi | motati | et | meshiach | Yahweh
 
 1:17
 vaykonen | David | et | hakinah
-hazot
-al | Sha'ul
-ve'al | Yehonatan | beno
+hazot | al | Sha'ul | ve'al | Yehonatan | beno
 
 1:18
 vaiyomer | lelamed | benei | Yehudah
 kashet
-hineh | khetuvah
-al | sefer | haiyashar
+hineh | khetuvah | al | sefer | haiyashar
 
 1:19
-hatzevi | Yisra'el
-al | bamoteikha
+hatzevi | Yisra'el | al | bamoteikha
 chalal
 eikh
 nafelu | giborim
 
 1:20
-al | tagidu | Vegat
-al | tevaseru
-bechutzot | Ashkelon
+al | tagidu | Vegat | al | tevaseru | bechutzot | Ashkelon
 pen | tismachnah | benot | pelishtim
 pen | ta'alozenah | benot | ha'arelim
 
 1:21
 harei | Vagilboa | al | tal | ve'al | matar | aleikhem
 usedei | terumot
-ki | sham | Nig'al | magen | giborim
-magen | Sha'ul | beli | mashiach | bashamen
+ki | sham | Nig'al | magen | giborim | magen | Sha'ul
+beli | mashiach | bashamen
 
 1:22
 midam | chalalim | mechelev | giborim | keshet | Yehonatan
@@ -149,15 +140,13 @@ Sha'ul | Vihonatan | hane'ehavim | vehane'imim | bechaiyeihem | uvemotam
 lo | Nifradu | minesharim | kalu | me'arayot | gaveru
 
 1:24
-benot | Yisra'el
-el | Sha'ul | bekheinah
+benot | Yisra'el | el | Sha'ul | bekheinah
 hamalbishkhem | shani | im | adanim
 hama'aleh | adi | zahav | al | levushekhen
 
 1:25
 eikh | nafelu | giborim | betokh
-hamilchamah | Yehonatan
-al | bamoteikha
+hamilchamah | Yehonatan | al | bamoteikha
 chalal
 
 1:26

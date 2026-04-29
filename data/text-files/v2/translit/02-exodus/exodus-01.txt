@@ -29,13 +29,10 @@ bim'od | me'od | vatimale | ha'aretz
 otam
 
 1:8
-vaiyakom | melekh | chadash
-al | Mitzrayim | asher | lo | yada
-et | Yosef
+vaiyakom | melekh | chadash | al | Mitzrayim | asher | lo | yada | et | Yosef
 
 1:9
-vaiyomer
-el | amo
+vaiyomer | el | amo
 hineh | am | benei | Yisra'el
 rav | ve'atzum | mimenu
 
@@ -46,8 +43,7 @@ venilcham | banu
 ve'alah | min | ha'aretz
 
 1:11
-vaiyasimu | alav | sarei | misim
-lema'an | anoto | besivlotam
+vaiyasimu | alav | sarei | misim | lema'an | anoto | besivlotam
 vaiyiven | arei | miskenot | lefar'oh | et | Pitom
 ve'et | Ra'amses
 
@@ -74,15 +70,13 @@ Pu'ah
 
 1:16
 vaiyomer | beyaledkhen | et | ha'ivriyot
-ure'iten
-al | ha'avenayim
+ure'iten | al | ha'avenayim
 im | ben | hu | vahamiten | oto
 ve'im | bat | hi
 vachayah
 
 1:17
-vatirena | hamyaledot | et | ha'elohim
-velo | asu
+vatirena | hamyaledot | et | ha'elohim | velo | asu
 ka'asher | diber | aleihen | melekh | Mitzrayim
 vatechaiyeina | et | hayladim
 
@@ -105,7 +99,8 @@ vaiyirev | ha'am | vaiya'atzmu | me'od
 1:21
 vayhi
 ki | yare'u | hamyaledot
-et | ha'elohim | vaiya'as | lahem
+et | ha'elohim
+vaiya'as | lahem
 batim
 
 1:22

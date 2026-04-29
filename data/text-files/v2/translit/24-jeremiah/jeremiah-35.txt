@@ -6,15 +6,16 @@ bimei | Yehoyakim | ben | Yoshiyahu | melekh | Yehudah | lemor
 35:2
 halokh | el | beit | harekhavim
 vedibarta | otam
-vahavi'otam | beit | Yahweh
-el | achat
+vahavi'otam | beit | Yahweh | el | achat
 haleshakhot
 vehishkita | otam
 yayin
 
 35:3
 va'ekach | et | Ya'azanyah | ven | Yirmeyahu | ben | Chavatzinyah
-ve'et | echav | ve'et | kol | banav | ve'et | kol | beit | harekhavim
+ve'et | echav
+ve'et | kol | banav
+ve'et | kol | beit | harekhavim
 
 35:4
 va'avi | otam | beit | Yahweh
@@ -32,8 +33,7 @@ shetu | yayin
 vaiyomeru
 lo | nishteh | yayin
 ki | Yonadav | ben | Rekhav | avinu | tzivah | aleinu | lemor
-lo | tishtu | yayin | atem | uveneikhem
-ad | olam
+lo | tishtu | yayin | atem | uveneikhem | ad | olam
 
 35:7
 uvayit | lo | tivnu | vezera | lo | tizra'u | vekherem | lo | tita'u
@@ -64,8 +64,7 @@ cheil | Aram
 vaneshev | Birushalim
 
 35:12
-vayhi | devar | Yahweh
-el | Yirmeyahu | lemor
+vayhi | devar | Yahweh | el | Yirmeyahu | lemor
 
 35:13
 koh | amar | Yahweh | tzeva'ot | elohei | Yisra'el
@@ -78,8 +77,7 @@ ne'um | Yahweh
 hukam | et | divrei | Yehonadav | ben | Rekho | asher | tzivah | et | banav | levilti | shetot | yayin | velo | shatu | ad | haiyom | hazeh
 ki | shame'u
 et | mitzvat | avihem
-ve'anokhi | dibarti | aleikhem | hashkem | vedaber
-velo | shema'tem
+ve'anokhi | dibarti | aleikhem | hashkem | vedaber | velo | shema'tem
 elai
 
 35:15
@@ -100,17 +98,15 @@ hini | mevi | el | Yehudah | ve'el | kol | yoshevei | Yerushalim | et | kol | ha
 asher | dibarti
 aleihem
 ya'an | dibarti | aleihem | velo | shame'u
-va'ekra | lahem
-velo | anu
+va'ekra | lahem | velo | anu
 
 35:18
 uleveit | harekhavim | amar | Yirmeyahu | koh | amar | Yahweh | tzeva'ot | elohei | Yisra'el
-ya'an | asher | shema'tem
-al | mitzvat
+ya'an | asher | shema'tem | al | mitzvat
 Yehonadav | avikhem
 vatishmeru | et | kol | mitzvotav
-vata'asu
-kekhol | asher | tzivah | etkhem
+vata'asu | kekhol | asher | tzivah
+etkhem
 
 35:19
 lakhen | koh | amar | Yahweh | tzeva'ot

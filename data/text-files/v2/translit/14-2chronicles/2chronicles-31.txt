@@ -15,8 +15,7 @@ veha'olot | lashabatot | velechodashim | velamo'adim | kakatuv
 betorat | Yahweh
 
 31:4
-vaiyomer | la'am | leyoshevei | Yerushalim | latet
-menat | hakohanim
+vaiyomer | la'am | leyoshevei | Yerushalim | latet | menat | hakohanim
 vehalviyim
 lema'an | yechezku
 betorat | Yahweh
@@ -31,7 +30,8 @@ uvenei | Yisra'el | Vihudah | haiyoshevim | be'arei | Yehudah
 gam | hem | ma'sar | bakar | vatzon | uma'sar | kadashim
 hamkudashim
 Layahweh | eloheihem
-hevi'u | vaiyitenu
+hevi'u
+vaiyitenu
 aremot | aremot
 
 31:7
@@ -46,12 +46,10 @@ vayvarakhu | et | Yahweh
 ve'et | amo | Yisra'el
 
 31:9
-vaiyidrosh | Yechizkiyahu | al | hakohanim | vehalviyim
-al | ha'aremot
+vaiyidrosh | Yechizkiyahu | al | hakohanim | vehalviyim | al | ha'aremot
 
 31:10
-vaiyomer | elav | Azaryahu | hakohen | harosh
-leveit | Tzadok
+vaiyomer | elav | Azaryahu | hakohen | harosh | leveit | Tzadok
 vaiyomer | mehachel | haterumah | lavi | veit | Yahweh | akhol | vesavoa | vehoter | ad | larov
 ki | Yahweh | berakh | et | amo
 vehanotar
@@ -99,7 +97,8 @@ ki | ve'emunatam | yitkadeshu | kodesh
 31:19
 velivnei | Aharon | hakohanim | bisdei | migrash | areihem | bekhol | ir | va'ir
 anashim | asher | Nikevu
-beshemot | latet | manot | lekhol | zakhar | bakohanim | ulekhol | hityaches | balviyim
+beshemot | latet | manot | lekhol | zakhar | bakohanim
+ulekhol | hityaches | balviyim
 
 31:20
 vaiya'as | kazot | Yechizkiyahu | bekhol | Yehudah

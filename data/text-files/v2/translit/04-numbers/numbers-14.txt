@@ -1,8 +1,7 @@
 14:1
 vatisa | kol | ha'edah
 vaiyitenu | et | kolam
-vaiyivku | ha'am
-balaylah | hahu
+vaiyivku | ha'am | balaylah | hahu
 
 14:2
 vaiyilonu | al | Mosheh | ve'al | Aharon
@@ -23,18 +22,16 @@ ish | el | achiv | nitenah | rosh
 venashuvah | Mitzrayemah
 
 14:5
-vaiyipol | Mosheh | Ve'aharon
-al | peneihem | lifnei
+vaiyipol | Mosheh | Ve'aharon | al | peneihem | lifnei
 kol | kehal | adat
 benei | Yisra'el
 
 14:6
-Vihoshua | bin | Nun | Vekhalev | ben | Yefuneh | min | hatarim | et | ha'aretz | kare'u
-bigdeihem
+Vihoshua | bin | Nun | Vekhalev | ben | Yefuneh | min | hatarim | et | ha'aretz
+kare'u | bigdeihem
 
 14:7
-vaiyomeru
-el | kol | adat | benei | Yisra'el | lemor
+vaiyomeru | el | kol | adat | benei | Yisra'el | lemor
 ha'aretz | asher | avarnu | vah | latur | otah
 tovah | ha'aretz | me'od | me'od
 
@@ -50,19 +47,18 @@ akh | Bayahweh | al | timrodu
 ve'atem | al | tire'u | et | am | ha'aretz
 ki | lachmenu
 hem
-sar | tzilam | me'aleihem | Vayahweh | itanu
-al | tira'um
+sar | tzilam | me'aleihem | Vayahweh | itanu | al | tira'um
 
 14:10
 vaiyomeru | kol | ha'edah | lirgom | otam | ba'avanim
-ukhevod | Yahweh | Nir'ah | be'ohel | mo'ed
-el | kol | benei | Yisra'el
+ukhevod | Yahweh | Nir'ah | be'ohel | mo'ed | el | kol | benei
+Yisra'el
 
 14:11
 vaiyomer | Yahweh | el | Mosheh
 ad | anah | yena'atzuni
-ha'am | hazeh
-ve'ad | anah | lo | ya'aminu | vi | bekhol | ha'otot | asher | asiti | bekirbo
+ha'am | hazeh | ve'ad | anah | lo | ya'aminu | vi
+bekhol | ha'otot | asher | asiti | bekirbo
 
 14:12
 akkenu | vadever
@@ -70,8 +66,7 @@ ve'orishenu
 ve'e'eseh | otekha | legoy | gadol | ve'atzum | mimenu
 
 14:13
-vaiyomer | Mosheh
-el | Yahweh
+vaiyomer | Mosheh | el | Yahweh
 veshame'u | Mitzrayim
 ki | he'elita | vekhochakha | et | ha'am | hazeh | mikirbo
 
@@ -89,28 +84,22 @@ ve'ameru | hagoyim
 asher | shame'u | et | shim'akha | lemor
 
 14:16
-mibilti | yekholet | Yahweh | lehavi | et | ha'am | hazeh
-el | ha'aretz
-asher | Nishba | lahem
-vaiyishchatem | bamidbar
+mibilti | yekholet | Yahweh | lehavi | et | ha'am | hazeh | el | ha'aretz
+asher | Nishba | lahem | vaiyishchatem | bamidbar
 
 14:17
-ve'atah | yigdal | na
-koach | Adonai | ka'asher | dibarta | lemor
+ve'atah | yigdal | na | koach | Adonai | ka'asher | dibarta | lemor
 
 14:18
 Yahweh | erekh | apayim | verav | chesed
 nose | avon
 vafasha
 venakeh | lo | yenakeh
-poked | avon | avot | al | banim
-al | shileshim
-ve'al | ribe'im
+poked | avon | avot | al | banim | al | shileshim | ve'al | ribe'im
 
 14:19
 selach | na | la'avon | ha'am | hazeh | kegodel | chasdekha
-vekha'asher | nasatah | la'am | hazeh | Mimitzrayim
-ve'ad | henah
+vekha'asher | nasatah | la'am | hazeh | Mimitzrayim | ve'ad | henah
 
 14:20
 vaiyomer | Yahweh
@@ -134,8 +123,7 @@ lo | yir'uha
 
 14:24
 ve'avdi | Khalev | ekev | hayetah | ruach | acheret | imo
-vaymale
-acharai | vahavi'otiv | el | ha'aretz | asher | ba | shamah
+vaymale | acharai | vahavi'otiv | el | ha'aretz | asher | ba | shamah
 vezar'o | yorishenah
 
 14:25
@@ -183,8 +171,7 @@ bamidbar | hazeh
 
 14:33
 uveneikhem | yihyu | ro'im | bamidbar | arba'im | shanah
-venase'u | et | zenuteikhem
-ad | tom | pigreikhem | bamidbar
+venase'u | et | zenuteikhem | ad | tom | pigreikhem | bamidbar
 
 14:34
 bemispar | haiyamim | asher | tartem | et | ha'aretz | arba'im | yom
@@ -205,8 +192,7 @@ veha'anashim
 asher | shalach | Mosheh
 latur | et | ha'aretz
 vaiyashuvu | vaiyilonu | alav | et | kol | ha'edah
-lehotzi | dibah
-al | ha'aretz
+lehotzi | dibah | al | ha'aretz
 
 14:37
 vaiyamutu | ha'anashim | motzi'ei | dibat | ha'aretz
@@ -222,8 +208,8 @@ haholekhim
 latur | et | ha'aretz
 
 14:39
-vaydaber | Mosheh | et | hadevarim | ha'eleh
-el | kol | benei | Yisra'el
+vaydaber | Mosheh | et | hadevarim | ha'eleh | el | kol | benei
+Yisra'el
 vaiyit'abelu | ha'am | me'od
 
 14:40
@@ -233,15 +219,13 @@ hinenu | ve'alinu | el | hamakom | asher | amar | Yahweh
 ki | chatanu
 
 14:41
-vaiyomer | Mosheh
-lamah | zeh | atem | oerim
+vaiyomer | Mosheh | lamah | zeh | atem | oerim
 et | pi | Yahweh
 vehiv
 lo | titzlach
 
 14:42
-al | ta'alu
-ki | ein | Yahweh | bekirbekhem
+al | ta'alu | ki | ein | Yahweh | bekirbekhem
 velo | tinagefu | lifnei
 oyeveikhem
 
@@ -253,11 +237,10 @@ velo | yihyeh | Yahweh
 imakhem
 
 14:44
-vaiya'pilu | la'alot
-el | rosh | hahar
+vaiya'pilu | la'alot | el | rosh | hahar
 va'aron | berit | Yahweh | Umosheh | lo | mashu | mikerev | hamachaneh
 
 14:45
 vaiyered | ha'amalki | vehakena'ani
-haiyoshev | bahar | hahu | vaiyakum | vaiyaketum
-ad | Hacharemah
+haiyoshev | bahar | hahu
+vaiyakum | vaiyaketum | ad | Hacharemah

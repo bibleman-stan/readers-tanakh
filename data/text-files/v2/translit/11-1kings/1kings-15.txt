@@ -1,7 +1,6 @@
 15:1
 uvishnat | shemoneh | esreh | lamelekh | Yarave'am | ben | Nevat
-malakh | Aviyam
-al | Yehudah
+malakh | Aviyam | al | Yehudah
 
 15:2
 shalosh | shanim | malakh | Birushalim
@@ -10,7 +9,8 @@ veshem | imo | Ma'akhah | bat | Avishalom
 15:3
 vaiyelekh
 bekhol | chatot | aviv
-asher | asah | lefanav | velo | hayah | levavo | shalem | im | Yahweh | elohav
+asher | asah | lefanav
+velo | hayah | levavo | shalem | im | Yahweh | elohav
 kilvav
 David | aviv
 
@@ -39,13 +39,12 @@ uvein | Yarave'am
 
 15:8
 vaiyishkav | Aviyam | im | avotav
-vaiyikberu | oto
-be'ir | David | vaiyimlokh | Asa | veno
+vaiyikberu | oto | be'ir | David
+vaiyimlokh | Asa | veno
 tachtav
 
 15:9
-uvishnat | esrim | Leyarave'am | melekh | Yisra'el
-malakh | Asa
+uvishnat | esrim | Leyarave'am | melekh | Yisra'el | malakh | Asa
 melekh | Yehudah
 
 15:10
@@ -66,8 +65,7 @@ avotav
 vegam | et | Ma'akhah | imo | vaysireha | migevirah
 asher | asetah | mifletzet | la'asherah
 vaiyikhrot | Asa | et | miflatztah
-vaiyisrof
-benachal | Kidron
+vaiyisrof | benachal | Kidron
 
 15:14
 vehabamot | lo | saru
@@ -87,8 +85,7 @@ kol | yemeihem
 
 15:17
 vaiya'al | Ba'sha | melekh | Yisra'el | al | Yehudah
-vaiyiven | et | Haramah
-levilti | tet | yotze | vava | Le'asa
+vaiyiven | et | Haramah | levilti | tet | yotze | vava | Le'asa
 melekh | Yehudah
 
 15:18
@@ -112,15 +109,15 @@ kol | eretz | Naftali
 
 15:21
 vayhi | kishmoa | Ba'sha
-vaiyechdal | mibenot
-et | Haramah | vaiyeshev
+vaiyechdal | mibenot | et | Haramah
+vaiyeshev
 Betirtzah
 
 15:22
 vehamelekh | Asa | hishmia | et | kol | Yehudah | ein | naki
 vaiyis'u | et | avnei | Haramah | ve'et | etzeiha | asher | banah
-Ba'sha | vaiyiven | bam | hamelekh | Asa
-et | Geva | Binyamin | ve'et | Hamitzpah
+Ba'sha | vaiyiven | bam | hamelekh | Asa | et | Geva | Binyamin
+ve'et | Hamitzpah
 
 15:23
 veyeter | kol | divrei | Asa | vekhol | gevurato | vekhol | asher | asah | vehe'arim | asher | banah
@@ -138,8 +135,7 @@ vaiyimlokh | Yehoshafat | beno
 tachtav
 
 15:25
-Venadav | ben | Yarave'am | malakh | al | Yisra'el
-bishnat | shetayim | Le'asa
+Venadav | ben | Yarave'am | malakh | al | Yisra'el | bishnat | shetayim | Le'asa
 melekh | Yehudah
 vaiyimlokh | al | Yisra'el
 shenatayim
@@ -153,8 +149,7 @@ vaiyelekh | bederekh | aviv | uvechatato | asher | hecheti | et | Yisra'el
 vaiyikshor | alav | Ba'sha | ven | Achiyah | leveit | Yisoshkhar
 vaiyakehu | Va'sha | Begibeton | asher | lapelishtim
 Venadav | vekhol | Yisra'el
-tzarim
-al | Gibeton
+tzarim | al | Gibeton
 
 15:28
 vaymitehu | Va'sha | bishnat | shalosh | Le'asa
@@ -164,16 +159,15 @@ tachtav
 
 15:29
 vayhi | khemalekho | hikah | et | kol | beit | Yarave'am
-lo | hish'ir | kol | neshamah | Leyarave'am
-ad | hishmido
+lo | hish'ir | kol | neshamah | Leyarave'am | ad | hishmido
 kidvar | Yahweh | asher | diber
 beyad | avdo | Achiyah | hashiloni
 
 15:30
-al | chatot | Yarave'am | asher | chata
-va'asher | hecheti | et | Yisra'el
-bekha'so | asher | hikh'is
-et | Yahweh | elohei | Yisra'el
+al | chatot | Yarave'am | asher | chata | va'asher | hecheti
+et | Yisra'el | bekha'so | asher | hikh'is
+et | Yahweh
+elohei | Yisra'el
 
 15:31
 veyeter | divrei | Nadav

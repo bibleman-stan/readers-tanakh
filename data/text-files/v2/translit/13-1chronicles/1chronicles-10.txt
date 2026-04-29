@@ -1,15 +1,12 @@
 10:1
 ufelishtim | Nilchamu | Veyisra'el
 vaiyanos
-ish | Yisra'el | mipenei | felishtim | vaiyipelu | chalalim
-behar | Gilboa
+ish | Yisra'el | mipenei | felishtim | vaiyipelu | chalalim | behar | Gilboa
 
 10:2
-vaiyadbeku | felishtim
-acharei | Sha'ul
+vaiyadbeku | felishtim | acharei | Sha'ul
 ve'acharei | vanav
-vaiyaku | felishtim | et | Yonatan | ve'et | Avinadav | ve'et | Malki | Shua
-benei | Sha'ul
+vaiyaku | felishtim | et | Yonatan | ve'et | Avinadav | ve'et | Malki | Shua | benei | Sha'ul
 
 10:3
 vatikhbad | hamilchamah | al | Sha'ul
@@ -43,20 +40,20 @@ vaiyeshevu | bahem
 
 10:8
 vayhi | mimochorat
-vaiyavo'u | felishtim | lefashet
-et | hachalalim | vaiyimtze'u | et | Sha'ul | ve'et | banav
+vaiyavo'u | felishtim | lefashet | et | hachalalim
+vaiyimtze'u | et | Sha'ul | ve'et | banav
 nofelim | behar | Gilboa
 
 10:9
 vaiyafshituhu
 vaiyis'u | et | rosho
-ve'et | kelav | vayshalechu | ve'eretz | felishtim | saviv | levaser | et | atzabeihem
+ve'et | kelav
+vayshalechu | ve'eretz | felishtim | saviv | levaser | et | atzabeihem
 ve'et | ha'am
 
 10:10
 vaiyasimu | et | kelav | beit
-eloheihem | ve'et | gulgalto | take'u
-beit | Dagon
+eloheihem | ve'et | gulgalto | take'u | beit | Dagon
 
 10:11
 vaiyishme'u
@@ -77,5 +74,6 @@ al | devar | Yahweh | asher | lo | shamar
 vegam | lish'ol | ba'ov | lidroosh
 
 10:14
-velo | darash | Bayahweh | vaymitehu | vaiyasev | et | hamelukhah | Ledavid
+velo | darash | Bayahweh | vaymitehu
+vaiyasev | et | hamelukhah | Ledavid
 ben | Yishai

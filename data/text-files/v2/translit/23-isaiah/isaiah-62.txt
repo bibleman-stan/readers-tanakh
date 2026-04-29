@@ -1,7 +1,7 @@
 62:1
 lema'an | Tziyon | lo | echesheh | ulema'an | Yerushalim
-lo | eshkot
-ad | yetze | khanogah | tzidkah | vishu'atah
+lo | eshkot | ad | yetze | khanogah | tzidkah
+vishu'atah
 kelapid | yiv'ar
 
 62:2
@@ -31,23 +31,22 @@ elohayikh
 al | chomotayikh | Yerushalim | hifkadti | shomerim
 kol | haiyom | vekhol | halaylah | tamid
 lo | yecheshu
-hamazkirim | et | Yahweh
-al | domi | lakhem
+hamazkirim | et | Yahweh | al | domi | lakhem
 
 62:7
 ve'al | titenu | domi | lo
 ad | yekhonen | ve'ad | yasim | et | Yerushalim | tehilah | ba'aretz
 
 62:8
-Nishba | Yahweh | bimino
-uvizroa | uzo
+Nishba | Yahweh | bimino | uvizroa | uzo
 im | eten | et | deganekh | od | ma'akhal | le'oyevayikh
 ve'im | yishtu | venei | nekhar | tiroshekh | asher | yaga'at | bo
 
 62:9
 ki | me'asfav | yokheluhu
 vehilu
-et | Yahweh | umekabetzav | yishtuhu
+et | Yahweh
+umekabetzav | yishtuhu
 bechatzrot | kodshi
 
 62:10
@@ -55,8 +54,7 @@ ivru | ivru | bashe'arim
 panu
 derekh | ha'am
 solu | solu | hamsilah | sakelu | me'even
-harimu | nes
-al | ha'amim
+harimu | nes | al | ha'amim
 
 62:11
 hineh | Yahweh | hishmia | el | ketzeh | ha'aretz

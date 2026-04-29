@@ -1,6 +1,5 @@
 1:1
-vayhi | devar | Yahweh
-el | Yonah | ven | Amitai | lemor
+vayhi | devar | Yahweh | el | Yonah | ven | Amitai | lemor
 
 1:2
 kum | lekh | el | Ninveh | ha'ir | hagedolah
@@ -31,22 +30,19 @@ vaiyikrav | elav | rav | hachovel
 vaiyomer | lo
 mah | lekha | nirdam
 kum | kera | el | eloheikha
-ulai | yit'ashet | ha'elohim | lanu
-velo | noved
+ulai | yit'ashet | ha'elohim | lanu | velo | noved
 
 1:7
 vaiyomeru | ish | el | re'ehu | lekhu | venapilah | goralot
 venede'ah | beshelemi | hara'ah | hazot | lanu
 vaiyapilu | goralot
-vaiyipol | hagoral
-al | Yonah
+vaiyipol | hagoral | al | Yonah
 
 1:8
 vaiyomeru | elav
 hagidah | na | lanu | ba'asher | lemi | hara'ah | hazot | lanu
 mah | melakhtekha | ume'ayin | tavo
-mah | artzekha
-ve'ei | mizeh | am
+mah | artzekha | ve'ei | mizeh | am
 atah
 
 1:9
@@ -86,14 +82,13 @@ aleihem
 vaiyikre'u | el | Yahweh | vaiyomeru | anah | Yahweh | al | na | novdah | benefesh | ha'ish | hazeh
 ve'al | titen | aleinu
 dam | naki
-ki | atah | Yahweh
-ka'asher | chafatzta
+ki | atah | Yahweh | ka'asher | chafatzta
 asita
 
 1:15
 vaiyis'u | et | Yonah
-vaytiluhu
-el | haiyam | vaiya'amod | haiyam | miza'po
+vaytiluhu | el | haiyam
+vaiya'amod | haiyam | miza'po
 
 1:16
 vaiyire'u | ha'anashim | yir'ah | gedolah | et | Yahweh

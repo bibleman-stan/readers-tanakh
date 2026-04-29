@@ -1,17 +1,14 @@
 14:1
 vaiyeda
 Yo'av | ben | Tzeruyah
-ki | lev | hamelekh
-al | Avshalom
+ki | lev | hamelekh | al | Avshalom
 
 14:2
 vaiyishlach | Yo'av | Teko'ah
 vaiyikach | misham
 ishah | chakhamah
 vaiyomer | eleiha | hit'abeli | na | velivshi | na | vigdei | evel | ve'al | tasukhi | shemen
-vehayit
-ke'ishah | zeh | yamim | rabim | mit'abelet
-al | met
+vehayit | ke'ishah | zeh | yamim | rabim | mit'abelet | al | met
 
 14:3
 uvat | el | hamelekh | vedibart | elav
@@ -49,8 +46,7 @@ atzaveh | alayikh
 
 14:9
 vatomer | ha'ishah | hateko'it | el | hamelekh
-alai | adoni | hamelekh | he'avon
-ve'al | beit | avi
+alai | adoni | hamelekh | he'avon | ve'al | beit | avi
 vehamelekh | vekhis'o
 naki
 
@@ -89,11 +85,11 @@ vechashav | machashavot | levilti | yidach | mimenu | nidach
 ve'atah | asher | bati | ledaber | el | hamelekh | adoni | et | hadavar | hazeh
 ki | yere'uni
 ha'am | vatomer | shifchatekha | adaberah | na | el | hamelekh
-ulai | ya'aseh | hamelekh | et | devar | amato
+ulai | ya'aseh | hamelekh
+et | devar | amato
 
 14:16
-ki | yishma | hamelekh
-lehatzil | et | amato | mikaf | ha'ish
+ki | yishma | hamelekh | lehatzil | et | amato | mikaf | ha'ish
 lehashmid | oti | ve'et | beni | yachad | minachalat
 elohim
 
@@ -129,7 +125,8 @@ et | kol | asher | ba'aretz
 14:21
 vaiyomer | hamelekh | el | Yo'av
 hineh | na | asiti
-et | hadavar | hazeh | velekh | hashev | et | hana'ar | et | Avshalom
+et | hadavar | hazeh | velekh | hashev | et | hana'ar
+et | Avshalom
 
 14:22
 vaiyipol | Yo'av | el | panav | artzah | vaiyishtachu
@@ -196,8 +193,7 @@ lamah | hitzitu | avadekha | et | hachelkah | asher | li | ba'esh
 
 14:32
 vaiyomer | Avshalom | el | Yo'av | hineh | shalachti | eleikha | lemor | bo | henah | ve'eshlechah | otekha | el | hamelekh | lemor | lamah | bati | Migeshur
-tov | li
-od | ani | sham
+tov | li | od | ani | sham
 ve'atah | er'eh | penei | hamelekh
 ve'im | yesh | bi | avon
 vehemitani
@@ -205,5 +201,5 @@ vehemitani
 14:33
 vaiyavo | Yo'av | el | hamelekh | vaiyaged | lo
 vaiyikra | el | Avshalom | vaiyavo | el | hamelekh
-vaiyishtachu | lo | al | apav | artzah
-lifnei | hamelekh | vaiyishak | hamelekh | Le'avshalom
+vaiyishtachu | lo | al | apav | artzah | lifnei | hamelekh
+vaiyishak | hamelekh | Le'avshalom

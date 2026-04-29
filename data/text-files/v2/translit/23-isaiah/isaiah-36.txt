@@ -15,8 +15,7 @@ hamazkir
 
 36:4
 vaiyomer | aleihem | rav | shakeh
-imru | na
-el | Chizkiyahu
+imru | na | el | Chizkiyahu
 koh | amar | hamelekh | hagadol | melekh | Ashur
 mah | habitachon | hazeh | asher | batacheta
 
@@ -34,15 +33,15 @@ ken | par'oh | melekh | Mitzrayim | lekhol | habotechim
 alav
 
 36:7
-vekhi | tomar | elai
-el | Yahweh | eloheinu | batachenu
+vekhi | tomar | elai | el | Yahweh | eloheinu | batachenu
 halo | hu | asher | hesir | Chizkiyahu | et | bamotav | ve'et | mizbechotav
-vaiyomer | Lihudah | Velirushalim
-lifnei | hamizbeach | hazeh | tishtachavu
+vaiyomer | Lihudah | Velirushalim | lifnei | hamizbeach | hazeh
+tishtachavu
 
 36:8
 ve'atah | hit'arev | na
-et | adoni | hamelekh | Ashur
+et | adoni
+hamelekh | Ashur
 ve'etenah | lekha | alpayim | susim
 im | tukhal | latet | lekha
 rokhevim | aleihem
@@ -82,8 +81,7 @@ shim'u | et | divrei | hamelekh | hagadol
 melekh | Ashur
 
 36:14
-koh | amar | hamelekh
-al | yashi | lakhem
+koh | amar | hamelekh | al | yashi | lakhem
 Chizkiyahu
 ki | lo | yukhal
 lehatzil | etkhem
@@ -96,17 +94,14 @@ lo | tinaten | ha'ir | hazot | beyad
 melekh | Ashur
 
 36:16
-al | tishme'u
-el | Chizkiyahu
+al | tishme'u | el | Chizkiyahu
 ki | khoh | amar | hamelekh | Ashur | asu | iti | verakhah | utze'u | elai
 ve'ikhlu | ish | gafno | ve'ish | te'enato
 ushetu
 ish | mei | voro
 
 36:17
-ad | bo'i
-velakachti | etkhem
-el | eretz | ke'artzekhem
+ad | bo'i | velakachti | etkhem | el | eretz | ke'artzekhem
 eretz | dagan | vetiroosh
 eretz | lechem | ukheramim
 
@@ -119,7 +114,8 @@ melekh | Ashur
 
 36:19
 aiyeh | elohei | Chamat | Ve'arpad
-aiyeh | elohei | Sefarvayim
+aiyeh
+elohei | Sefarvayim
 vekhi | hitzilu | et | Shomeron | miyadi
 
 36:20

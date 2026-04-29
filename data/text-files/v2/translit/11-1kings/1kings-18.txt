@@ -1,18 +1,16 @@
 18:1
 vayhi | yamim | rabim
-udevar | Yahweh | hayah | el | Eliyahu | bashanah | hashelishit | lemor
-lekh | hera'eh | el | Ach'av | ve'etenah | matar
+udevar | Yahweh | hayah | el | Eliyahu | bashanah | hashelishit
+lemor | lekh | hera'eh | el | Ach'av
+ve'etenah | matar
 al | penei | ha'adamah
 
 18:2
-vaiyelekh | Eliyahu | lehera'ot
-el | Ach'av
-vehara'av
-chazak | Beshomeron
+vaiyelekh | Eliyahu | lehera'ot | el | Ach'av
+vehara'av | chazak | Beshomeron
 
 18:3
-vaiyikra | Ach'av
-el | Oadyahu | asher | al | habayit
+vaiyikra | Ach'av | el | Oadyahu | asher | al | habayit
 Ve'oadyahu | hayah | yare | et | Yahweh | me'od
 
 18:4
@@ -22,8 +20,8 @@ vaiyikach | Oadyahu | me'ah | nevi'im | vaiyachbi'em | chamishim | ish | bame'ar
 vekhilkelam | lechem | vamayim
 
 18:5
-vaiyomer | Ach'av | el | Oadyahu
-lekh | ba'aretz | el | kol | ma'yenei | hamayim | ve'el
+vaiyomer | Ach'av | el | Oadyahu | lekh | ba'aretz | el | kol | ma'yenei | hamayim
+ve'el
 kol | hanechalim
 ulai | nimtza | chatzir | unechaiyeh | sus | vafered
 velo | nakhrit | mehabehemah
@@ -43,12 +41,12 @@ adoni | Eliyahu
 
 18:8
 vaiyomer | lo
-ani | lekh | emor | ladoneikha
+ani
+lekh | emor | ladoneikha
 hineh | Eliyahu
 
 18:9
-vaiyomer
-meh | chatati
+vaiyomer | meh | chatati
 ki | atah | noten | et | avdekha | beyad | Ach'av | lahamiteni
 
 18:10
@@ -102,20 +100,17 @@ vaiyomer | lo | akharti | et | Yisra'el
 ki | im | atah
 uveit | avikha
 ba'azavekhem | et | mitzvot | Yahweh
-vatelekh
-acharei | habe'alim
+vatelekh | acharei | habe'alim
 
 18:19
-ve'atah | shelach | kevotz | elai | et | kol | Yisra'el
-el | har | Hakarmel
+ve'atah | shelach | kevotz | elai | et | kol | Yisra'el | el | har | Hakarmel
 ve'et | nevi'ei | haba'al | arba | me'ot | vachamishim | unevi'ei | ha'asherah | arba | me'ot | okhelei
 shulchan | Izavel
 
 18:20
 vaiyishlach | Ach'av
 bekhol | benei | Yisra'el
-vaiyikbotz | et | hanevi'im
-el | har | Hakarmel
+vaiyikbotz | et | hanevi'im | el | har | Hakarmel
 
 18:21
 vaiyigash | Eliyahu | el | kol | ha'am | vaiyomer | ad | matai | atem | posechim | al | shetei | hase'ipim
@@ -158,8 +153,7 @@ vaiyikchu | et | hapar | asher | natan | lahem | vaiya'asu
 vaiyikre'u | veshem | haba'al | mehaboker | ve'ad | hatzohorayim | lemor | haba'al | anenu
 ve'ein | kol
 ve'ein | oneh
-vayfasechu
-al | hamizbeach | asher | asah
+vayfasechu | al | hamizbeach | asher | asah
 
 18:27
 vayhi | vatzohorayim | vayhatel | bahem | Eliyahu | vaiyomer | kir'u | vekol | gadol | ki | elohim | hu
@@ -170,15 +164,12 @@ veyikatz
 
 18:28
 vaiyikre'u | bekol | gadol
-vaiyitgodedu | kemishpatam | bacharavot | uvaremachim
-ad | shefokh | dam
+vaiyitgodedu | kemishpatam | bacharavot | uvaremachim | ad | shefokh | dam
 aleihem
 
 18:29
 vayhi | ka'avor | hatzohorayim
-vaiyitnabe'u
-ad
-la'alot | haminchah
+vaiyitnabe'u | ad | la'alot | haminchah
 ve'ein | kol | ve'ein | oneh
 ve'ein | kashev
 
@@ -198,19 +189,17 @@ yihyeh | shemekha
 18:32
 vaiyivneh | et | ha'avanim | mizbeach
 beshem | Yahweh
-vaiya'as | te'alah | keveit | satayim | zera | saviv
-lamizbeach
+vaiya'as | te'alah | keveit | satayim | zera | saviv | lamizbeach
 
 18:33
 vaiya'arokh | et | ha'etzim
 vaynatach | et | hapar
-vaiyasem
-al | ha'etzim
+vaiyasem | al | ha'etzim
 
 18:34
 vaiyomer | mil'u | arba'ah | khadim | mayim
-veyitzku | al | ha'olah
-ve'al | ha'etzim | vaiyomer | shenu | vaiyishnu
+veyitzku | al | ha'olah | ve'al | ha'etzim
+vaiyomer | shenu | vaiyishnu
 vaiyomer | shaleshu
 vayshaleshu
 
@@ -222,9 +211,7 @@ vegam | et | hate'alah | mile | mayim
 vayhi | ba'alot | haminchah | vaiyigash | Eliyahu | hanavi | vaiyomar
 Yahweh | elohei | Avraham | Yitzchak | Veyisra'el
 haiyom | yivada | ki | atah | elohim | Beyisra'el
-va'ani | avdekha
-uvedivreikha | asiti
-et | kol | hadevarim
+va'ani | avdekha | uvedivreikha | asiti | et | kol | hadevarim
 ha'eleh
 
 18:37
@@ -236,12 +223,14 @@ achoranit
 
 18:38
 vatipol | esh | Yahweh | vatokhal | et | ha'olah | ve'et | ha'etzim
-ve'et | ha'avanim | ve'et | he'afar | ve'et | hamayim | asher | bate'alah | lichekhah
+ve'et | ha'avanim
+ve'et | he'afar
+ve'et | hamayim | asher | bate'alah | lichekhah
 
 18:39
 vaiyar | kol | ha'am
-vaiyipelu
-al | peneihem | vaiyomeru
+vaiyipelu | al | peneihem
+vaiyomeru
 Yahweh | hu | ha'elohim
 Yahweh
 hu | ha'elohim
@@ -290,5 +279,5 @@ vaiyelekh | Yizre'elah
 18:46
 veyad | Yahweh | hayetah | el | Eliyahu
 vayshanes | matenav
-vaiyarotz | lifnei | Ach'av
-ad | bo'akhah | Yizre'elah
+vaiyarotz | lifnei | Ach'av | ad | bo'akhah
+Yizre'elah

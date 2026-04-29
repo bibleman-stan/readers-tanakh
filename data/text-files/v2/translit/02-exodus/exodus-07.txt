@@ -15,14 +15,13 @@ va'ani | aksheh | et | lev | par'oh
 vehirbeiti | et | ototai | ve'et | moftai | be'eretz | Mitzrayim
 
 7:4
-velo | yishma | alekhem | par'oh | venatati | et | yadi | Bemitzrayim
+velo | yishma | alekhem | par'oh
+venatati | et | yadi | Bemitzrayim
 vehotzeti | et | tziv'otai | et | ami | venei | Yisra'el | me'eretz | Mitzrayim | bishfatim
 gedolim
 
 7:5
-veyade'u | Mitzrayim | ki | ani | Yahweh
-bintoti | et | yadi
-al | Mitzrayim
+veyade'u | Mitzrayim | ki | ani | Yahweh | bintoti | et | yadi | al | Mitzrayim
 vehotzeti | et | benei | Yisra'el | mitokham
 
 7:6
@@ -34,8 +33,7 @@ ken | asu
 7:7
 Umosheh | ben | shemonim | shanah | Ve'aharon
 ben | shalosh | ushemonim
-shanah | bedaberam
-el | par'oh
+shanah | bedaberam | el | par'oh
 
 7:8
 vaiyomer | Yahweh
@@ -67,12 +65,12 @@ vaiyivla | mateh | Aharon | et | matotam
 7:13
 vaiyechezak | lev | par'oh
 velo | shama
-alehem | ka'asher | diber | Yahweh
+alehem | ka'asher
+diber | Yahweh
 
 7:14
-vaiyomer | Yahweh | el | Mosheh | kaved
-lev | par'oh | me'en
-leshalach | ha'am
+vaiyomer | Yahweh | el | Mosheh
+kaved | lev | par'oh | me'en | leshalach | ha'am
 
 7:15
 lekh | el | par'oh | baboker | hineh | yotze | hamaymah
@@ -85,21 +83,18 @@ tikach | beyadekha
 ve'amarta | elav | Yahweh | elohei | ha'ivrim | shelachani | eleikha | lemor
 shalach | et | ami
 veya'avduni | bamidbar
-vehineh | lo | shama'ta
-ad | koh
+vehineh | lo | shama'ta | ad | koh
 
 7:17
-koh | amar | Yahweh
-bezot | teda
+koh | amar | Yahweh | bezot | teda
 ki
 ani | Yahweh
 hineh | anokhi | makeh | bamateh | asher | beyadi | al | hamayim | asher | Bay'or
 venehefkhu | ledam
 
 7:18
-vehadagah | asher | Bay'or | tamut
-uva'ash | Hay'or | venil'u | Mitzrayim
-lishtot | mayim | min | Hay'or
+vehadagah | asher | Bay'or | tamut | uva'ash | Hay'or
+venil'u | Mitzrayim | lishtot | mayim | min | Hay'or
 
 7:19
 vaiyomer | Yahweh | el | Mosheh | emor | el | Aharon | kach | matekha | uneteh | yadekha | al | meimei | Mitzrayim | al | naharotam | al | ye'oreihem | ve'al | agmeihem | ve'al | kol | mikveh | meimeihem
@@ -124,8 +119,8 @@ diber | Yahweh
 
 7:23
 vaiyifen | par'oh
-vaiyavo
-el | beito | velo | shat | libo
+vaiyavo | el | beito
+velo | shat | libo
 gam | lazot
 
 7:24
@@ -135,13 +130,12 @@ Hay'or
 
 7:25
 vaiyimale
-shiv'at | yamim
-acharei | hakot | Yahweh | et | Hay'or
+shiv'at | yamim | acharei | hakot | Yahweh
+et | Hay'or
 
 7:26
 vaiyomer | Yahweh | el | Mosheh
-bo
-el | par'oh
+bo | el | par'oh
 ve'amarta | elav | koh | amar | Yahweh
 shalach | et | ami
 veya'avduni
@@ -157,5 +151,7 @@ ve'al | mitatekha | uveveit | avadeikha | uve'amekha
 uvetanureikha | uvemish'aroteikha
 
 7:29
-uvekhah | uve'amekha | uvekhol | avadeikha | ya'alu
+uvekhah | uve'amekha
+uvekhol | avadeikha
+ya'alu
 hatzfarde'im

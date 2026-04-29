@@ -1,6 +1,5 @@
 16:1
-vaydaber | Yahweh | el | Mosheh
-acharei | mot
+vaydaber | Yahweh | el | Mosheh | acharei | mot
 shenei
 benei | Aharon | bekarevatam | lifnei | Yahweh
 vaiyamutu
@@ -9,19 +8,16 @@ vaiyamutu
 vaiyomer | Yahweh | el | Mosheh | daber | el | Aharon | achikha
 ve'al | yavo | vekhol | et | el | hakodesh | mibeit | laparokhet
 el | penei | hakaporet | asher | al | ha'aron | velo | yamut
-ki | be'anan | era'eh
-al | hakaporet
+ki | be'anan | era'eh | al | hakaporet
 
 16:3
-bezot | yavo | Aharon
-el | hakodesh | befar | ben | bakar | lechatat
+bezot | yavo | Aharon | el | hakodesh | befar | ben | bakar | lechatat
 ve'ayil | le'olah
 
 16:4
 ketonet | bad | kodesh | yilbash | umikhnesei | vad | yihyu | al | besaro
 uve'avnet | bad | yachgor | uvemitznefet | bad
-yitznof
-bigdei | kodesh | hem
+yitznof | bigdei | kodesh | hem
 verachatz | bamayim | et | besaro | ulevesham
 
 16:5
@@ -53,13 +49,13 @@ chatat
 
 16:10
 vehasa'ir | asher | alah | alav | hagoral | La'azazel
-yo'omad | chai | lifnei | Yahweh
-lekhaper | alav | leshalach | oto | La'azazel
+yo'omad | chai | lifnei | Yahweh | lekhaper | alav
+leshalach | oto | La'azazel
 hamidbarah
 
 16:11
-vehikriv | Aharon | et | par | hachatat | asher | lo
-vekhiper | ba'ado | uve'ad | beito
+vehikriv | Aharon | et | par | hachatat | asher | lo | vekhiper | ba'ado
+uve'ad | beito
 veshachat | et | par | hachatat
 asher | lo
 
@@ -83,26 +79,23 @@ kedemah | velifnei | hakaporet | yazeh | sheva | pe'amim | min | hadam | be'etzb
 
 16:15
 veshachat | et | se'ir | hachatat | asher | la'am
-vehevi | et | damo
-el | mibeit | laparokhet
+vehevi | et | damo | el | mibeit | laparokhet
 ve'asah | et | damo | ka'asher | asah | ledam | hapar
 vehizah | oto | al | hakaporet | velifnei | hakaporet
 
 16:16
-vekhiper | al | hakodesh | mitum'ot | benei | Yisra'el | umipish'eihem
-lekhol | chatotam
+vekhiper | al | hakodesh | mitum'ot | benei | Yisra'el | umipish'eihem | lekhol | chatotam
 vekhen | ya'aseh | le'ohel | mo'ed
 hashokhen | itam | betokh
 tum'otam
 
 16:17
-vekhol | adam | lo | yihyeh | be'ohel | mo'ed | bevo'o | lekhaper | bakodesh
-ad | tzeto | vekhiper | ba'ado | uve'ad | beito | uve'ad
+vekhol | adam | lo | yihyeh | be'ohel | mo'ed | bevo'o | lekhaper | bakodesh | ad | tzeto
+vekhiper | ba'ado | uve'ad | beito | uve'ad
 kol | kehal | Yisra'el
 
 16:18
-veyatza | el | hamizbeach | asher | lifnei | Yahweh
-vekhiper | alav
+veyatza | el | hamizbeach | asher | lifnei | Yahweh | vekhiper | alav
 velakach | midam | hapar | umidam | hasa'ir
 venatan | al | karnot | hamizbeach | saviv
 
@@ -113,7 +106,9 @@ vetiharo | vekidesho | mitum'ot | benei | Yisra'el
 
 16:20
 vekhilah | mikaper | et | hakodesh | ve'et | ohel | mo'ed
-ve'et | hamizbeach | vehikriv | et | hasa'ir | hechai
+ve'et | hamizbeach
+vehikriv
+et | hasa'ir | hechai
 
 16:21
 vesamakh | Aharon | et | shetei | yadov | al | rosh | hasa'ir | hachai
@@ -124,8 +119,7 @@ veshilach | beyad | ish | iti
 hamidbarah
 
 16:22
-venasa | hasa'ir | alav | et | kol | avonotam
-el | eretz | gezerah
+venasa | hasa'ir | alav | et | kol | avonotam | el | eretz | gezerah
 veshilach | et | hasa'ir | bamidbar
 
 16:23
@@ -137,7 +131,8 @@ sham
 
 16:24
 verachatz | et | besaro | vamayim | bemakom | kadoosh | velavash
-et | begadav | veyatza | ve'asah | et | olato | ve'et | olat | ha'am
+et | begadav
+veyatza | ve'asah | et | olato | ve'et | olat | ha'am
 vekhiper | ba'ado | uve'ad | ha'am
 
 16:25
@@ -151,10 +146,10 @@ yavo | el | hamachaneh
 
 16:27
 ve'et | par | hachatat | ve'et | se'ir | hachatat | asher | huva | et | damam | lekhaper | bakodesh
-yotzi
-el | michutz | lamachaneh
+yotzi | el | michutz | lamachaneh
 vesarefu | va'esh
-et | orotam | ve'et | besaram | ve'et | pirsham
+et | orotam | ve'et | besaram
+ve'et | pirsham
 
 16:28
 vehasoref | otam | yekhabes | begadav
@@ -171,15 +166,15 @@ hagar | betokhkhem
 
 16:30
 ki | vaiyom | hazeh | yekhaper | aleikhem
-letaher | etkhem
-mikol | chatoteikhem
+letaher | etkhem | mikol | chatoteikhem
 lifnei | Yahweh
 titharu
 
 16:31
 shabat | shabaton | hi | lakhem
 ve'initem
-et | nafshoteikhem | chukat
+et | nafshoteikhem
+chukat
 olam
 
 16:32
@@ -190,8 +185,8 @@ velavash | et | bigdei | habad | bigdei | hakodesh
 
 16:33
 vekhiper | et | mikdash | hakodesh | ve'et | ohel | mo'ed | ve'et | hamizbeach
+yekhaper | ve'al | hakohanim | ve'al | kol | am | hakahal
 yekhaper
-ve'al | hakohanim | ve'al | kol | am | hakahal | yekhaper
 
 16:34
 vehayetah | zot | lakhem | lechukat | olam | lekhaper | al | benei | Yisra'el | mikol | chatotam

@@ -1,11 +1,11 @@
 31:1
-vayhi | be'achat | esreh | shanah | bashelishi
-be'echad | lachodesh | hayah | devar | Yahweh
+vayhi | be'achat | esreh | shanah | bashelishi | be'echad | lachodesh
+hayah | devar | Yahweh
 elai | lemor
 
 31:2
-ben | adam | emor | el | par'oh | melekh | Mitzrayim | ve'el | hamono
-el | mi
+ben | adam | emor | el | par'oh | melekh | Mitzrayim
+ve'el | hamono | el | mi
 damita | vegadelekha
 
 31:3
@@ -36,8 +36,7 @@ kol | goyim | rabim
 31:7
 vaiyeyif | begadelo | be'orekh
 daliyotav
-ki | hayah | sharesho
-el | mayim | rabim
+ki | hayah | sharesho | el | mayim | rabim
 
 31:8
 arazim | lo | amamuhu | began | elohim | beroshim | lo | damu | el | se'apotav
@@ -70,8 +69,7 @@ vaiyeredu | mitzilo | kol | amei | ha'aretz
 vaiyiteshuhu
 
 31:13
-al | mapalto | yishkenu
-kol | of | hashamayim | ve'el | porotav | hayu
+al | mapalto | yishkenu | kol | of | hashamayim | ve'el | porotav | hayu
 kol | chaiyat | hasadeh
 
 31:14
@@ -84,8 +82,8 @@ el | yordei | vor
 31:15
 koh | amar | Adonai | Yahweh | beyom | ridto | she'olah | he'evalti | kiseti | alav | et | tehom
 va'emna | naharoteiha
-vaiyikal'u
-mayim | rabim | va'akdir | alav | Levanon
+vaiyikal'u | mayim | rabim
+va'akdir | alav | Levanon
 vekhol | atzei | hasadeh
 alav | ulpeh
 
@@ -96,10 +94,8 @@ vaiyinachamu | be'eretz | tachtit | kol | atzei | Eden | mivchar | vetov | Levan
 kol | shotei | mayim
 
 31:17
-gam | hem | ito | yaredu | she'olah
-el | chalei | charev
-uzero'o | yashevu | vetzilo
-betokh | goyim
+gam | hem | ito | yaredu | she'olah | el | chalei | charev
+uzero'o | yashevu | vetzilo | betokh | goyim
 
 31:18
 el | mi | damita | kakhah | bekhavod | uvegodel | ba'atzei | Eden

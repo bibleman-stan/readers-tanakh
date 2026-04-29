@@ -6,8 +6,8 @@ vaiyetze | el | panav | Yehu | ven | Chanani | hachozeh
 vaiyomer | el | hamelekh | Yehoshafat
 halarasha | la'zor
 ulesone'ei | Yahweh
-te'ehav | uvazot | aleikha | ketzef | milifnei
-Yahweh
+te'ehav | uvazot | aleikha | ketzef
+milifnei | Yahweh
 
 19:3
 aval
@@ -19,8 +19,8 @@ lidrosh | ha'elohim
 19:4
 vaiyeshev | Yehoshafat | Birushalim
 vaiyashov | vaiyetze | va'am | Mibe'er | Sheva | ad | har | Efrayim
-vayshivem
-el | Yahweh | elohei | avoteihem
+vayshivem | el | Yahweh
+elohei | avoteihem
 
 19:5
 vaiya'amed | shofetim | ba'aretz | bekhol | arei | Yehudah | habetzurot
@@ -36,7 +36,8 @@ ve'imakhem | bidvar | mishpat
 ve'atah | yehi | fachad | Yahweh
 aleikhem
 shimru | va'asu
-ki | ein | im | Yahweh | eloheinu | avlah | umaso | fanim | umikach | shochad
+ki | ein | im | Yahweh | eloheinu | avlah | umaso | fanim
+umikach | shochad
 
 19:8
 vegam | Birushalim | he'emid | Yehoshafat | min | halviyim | vehakohanim | umerashei | ha'avot | Leyisra'el
@@ -53,8 +54,7 @@ uvelevav | shalem
 vekhol | riv | asher | yavo | aleikhem | me'acheikhem | haiyoshevim | be'areihem | bein | dam | ledam | bein | torah | lemitzvah | lechukim | ulemishpatim
 vehizhartem | otam
 velo | ye'shemu | Layahweh
-vehayah | ketzef | aleikhem
-ve'al | acheikhem
+vehayah | ketzef | aleikhem | ve'al | acheikhem
 koh | ta'asun
 velo | te'shamu
 
@@ -62,5 +62,4 @@ velo | te'shamu
 vehineh | Amaryahu | khohen | harosh | aleikhem | lekhol | devar | Yahweh | Uzevadyahu | ven | Yishma'el | hanagid | leveit | Yehudah | lekhol | devar | hamelekh
 veshoterim | halviyim | lifneikhem
 chizku | va'asu
-vihi | Yahweh
-im | hatov
+vihi | Yahweh | im | hatov

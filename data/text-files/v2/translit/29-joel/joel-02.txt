@@ -6,13 +6,11 @@ ki | va | yom | Yahweh
 ki | karov
 
 2:2
-yom | choshekh | va'afelah | yom | anan | va'arafel
-keshachar
+yom | choshekh | va'afelah | yom | anan | va'arafel | keshachar
 parus | al | heharim
 am | rav | ve'atzum
 kamohu | lo | Nihyah | min | ha'olam
-ve'acharav | lo | yosef
-ad | shenei
+ve'acharav | lo | yosef | ad | shenei
 dor | vador
 
 2:3
@@ -70,12 +68,10 @@ shuvu | adai | bekhol | levavkhem | uvetzom | uvevekhi | uvemisped
 
 2:13
 vekir'u | levavkhem | ve'al | bigdeikhem
-veshuvu
-el | Yahweh | eloheikhem
+veshuvu | el | Yahweh | eloheikhem
 ki | chanun | verachum | hu
 erekh | apayim | verav | chesed
-venicham
-al | hara'ah
+venicham | al | hara'ah
 
 2:14
 mi | yodea | yashuv | venicham
@@ -105,8 +101,7 @@ eloheihem
 
 2:18
 vaykane | Yahweh | le'artzo
-vaiyachmol
-al | amo
+vaiyachmol | al | amo
 
 2:19
 vaiya'an | Yahweh | vaiyomer | le'amo | hini | sholeach | lakhem | et | hadagan | vehatiroosh | vehaiyitzhar
@@ -117,13 +112,13 @@ velo | eten | etkhem | od | cherpah | bagoyim
 2:20
 ve'et | hatzefoni | archik | me'aleikhem | vehidachtiv | el | eretz | tziyah | ushemamah
 et | panav | el | haiyam | hakadmoni
-vesofo
-el | haiyam | ha'acharon
+vesofo | el | haiyam | ha'acharon
 ve'alah | va'esho | veta'al | tzachanato
 ki | higdil | la'asot
 
 2:21
-al | tir'i | adamah
+al | tir'i
+adamah
 gili | usemachi
 ki | higdil | Yahweh | la'asot
 
@@ -131,7 +126,8 @@ ki | higdil | Yahweh | la'asot
 al | tire'u | bahamot | sadai
 ki | dashe'u
 ne'ot | midbar
-ki | etz | nasa | firyo | te'enah | vagefen
+ki | etz | nasa | firyo
+te'enah | vagefen
 natenu | cheilam
 
 2:23
@@ -153,9 +149,11 @@ cheili | hagadol | asher | shilachti | bakhem
 2:26
 va'akhaltem | akhol | vesavoa
 vehilaltem | et | shem | Yahweh | eloheikhem
-asher | asah | imakhem | lehafli | velo | yevoshu | ami | le'olam
+asher | asah | imakhem | lehafli
+velo | yevoshu | ami | le'olam
 
 2:27
 vida'tem | ki | vekerev | Yisra'el | ani
 va'ani | Yahweh | eloheikhem
-ve'ein | od | velo | yevoshu | ami | le'olam
+ve'ein | od
+velo | yevoshu | ami | le'olam

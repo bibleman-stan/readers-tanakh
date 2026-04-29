@@ -1,6 +1,5 @@
 31:1
-vaydaber | Yahweh
-el | Mosheh | lemor
+vaydaber | Yahweh | el | Mosheh | lemor
 
 31:2
 re'eh
@@ -9,7 +8,8 @@ lemateh | Yehudah
 
 31:3
 va'amale | oto
-ruach | elohim | bechakhemah | uvitvunah | uveda'at | uvekhol | melakhah
+ruach | elohim | bechakhemah | uvitvunah | uveda'at
+uvekhol | melakhah
 
 31:4
 lachsho | machashavot | la'asot | bazahav | uvakesef | uvanechoshet
@@ -30,12 +30,16 @@ ve'et | hakaporet | asher | alav
 ve'et | kol | kelei | ha'ohel
 
 31:8
-ve'et | hashulchan | ve'et | kelav | ve'et | hamenorah | hatehorah
-ve'et | kol | keleiha | ve'et | mizbach | haketoret
+ve'et | hashulchan | ve'et | kelav
+ve'et | hamenorah | hatehorah
+ve'et | kol | keleiha
+ve'et | mizbach | haketoret
 
 31:9
 ve'et | mizbach | ha'olah
-ve'et | kol | kelav | ve'et | hakiyor | ve'et | kano
+ve'et | kol | kelav
+ve'et | hakiyor
+ve'et | kano
 
 31:10
 ve'et | bigdei | haserad
@@ -47,8 +51,7 @@ ve'et | shemen | hamishchah | ve'et | ketoret | hasamim | lakodesh
 kekhol | asher | tzivitikha | ya'asu
 
 31:12
-vaiyomer | Yahweh
-el | Mosheh | lemor
+vaiyomer | Yahweh | el | Mosheh | lemor
 
 31:13
 ve'atah | daber | el | benei | Yisra'el | lemor

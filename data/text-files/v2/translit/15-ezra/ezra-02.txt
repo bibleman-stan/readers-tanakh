@@ -187,8 +187,7 @@ benei | Vatzlut | benei | Mechida | benei | Charsha
 benei | Varkos | benei | Sisra | benei | Tamach
 
 2:54
-benei | Netziach
-benei | Chatifa
+benei | Netziach | benei | Chatifa
 
 2:55
 benei
@@ -218,8 +217,7 @@ shesh | me'ot | chamishim | ushenayim
 2:61
 umibenei | hakohanim | benei | Choaiyah | benei | Hakotz
 benei | Varzilai | asher | lakach | mibenot | Barzilai | hagil'adi | ishah
-vaiyikare
-al | shemam
+vaiyikare | al | shemam
 
 2:62
 eleh | bikshu | khetavam | hamityachsim
@@ -251,8 +249,7 @@ sheshet | alafim | sheva | me'ot | ve'esrim
 2:68
 umerashei | ha'avot | bevo'am
 leveit | Yahweh | asher | Birushalim
-hitnadevu | leveit | ha'elohim | leha'amido
-al | mekhono
+hitnadevu | leveit | ha'elohim | leha'amido | al | mekhono
 
 2:69
 kekhocham | natenu | le'otzar | hamelakhah

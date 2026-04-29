@@ -4,14 +4,12 @@ chakhemat | adam | ta'ir | panav
 ve'oz | panav | yeshune
 
 8:2
-ani | pi | melekh | shemor
-ve'al
+ani | pi | melekh | shemor | ve'al
 divrat
 shevu'at | elohim
 
 8:3
-al | tibahel | mipanav | telekh
-al | ta'amod | bedavar | ra
+al | tibahel | mipanav | telekh | al | ta'amod | bedavar | ra
 ki | kol | asher | yachpotz
 ya'aseh
 
@@ -23,8 +21,7 @@ shilton | umi | yomar | lo | mah | ta'aseh
 shomer | mitzvah
 lo | yeda
 davar | ra
-ve'et | umishpat | yeda
-lev | chakham
+ve'et | umishpat | yeda | lev | chakham
 
 8:6
 ki | lekhol | chefetz
@@ -69,15 +66,14 @@ asher | yire'u | milefanav
 
 8:13
 vetov | lo | yihyeh | larasha
-velo | ya'arikh | yamim | katzel | asher | einenu | yare
-milifnei | elohim
+velo | ya'arikh | yamim | katzel | asher | einenu | yare | milifnei | elohim
 
 8:14
 yesh | hevel | asher | Na'asah | al | ha'aretz
 asher | yesh | tzadikim | asher | magia | alehem | kema'aseh | haresha'im
 veyesh | resha'im
-shemagia | alehem
-kema'aseh | hatzadikim | amarti
+shemagia | alehem | kema'aseh | hatzadikim
+amarti
 shegam | zeh
 havel
 
@@ -88,9 +84,8 @@ vehu | yilvenu | va'amalo | yemei | chaiyav | asher | natan | lo | ha'elohim
 tachat | hashamesh
 
 8:16
-ka'asher | natati | et | libi | lada'at | chokhmah
-velir'ot | et | ha'inyan | asher | Na'asah
-al | ha'aretz
+ka'asher | natati | et | libi | lada'at | chokhmah | velir'ot | et | ha'inyan
+asher | Na'asah | al | ha'aretz
 ki | gam | baiyom | uvalaylah
 shenah | be'einav
 einenu | ro'eh

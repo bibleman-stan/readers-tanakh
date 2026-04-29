@@ -26,9 +26,7 @@ ki | yihyeh | tzadik
 ve'asah | mishpat | utzedakah
 
 18:6
-el | heharim | lo | akhal
-ve'einav | lo | nasa
-el | gilulei
+el | heharim | lo | akhal | ve'einav | lo | nasa | el | gilulei
 beit | Yisra'el
 ve'et | eshet | re'ehu | lo | time
 ve'el | ishah | nidah
@@ -49,8 +47,7 @@ yashiv | yado
 mishpat | emet | ya'aseh | bein | ish | le'ish
 
 18:9
-bechukotai | yehalekh | umishpatai | shamar
-la'asot | emet
+bechukotai | yehalekh | umishpatai | shamar | la'asot | emet
 tzadik | hu | chayoh | yichyeh
 ne'um
 Adonai | Yahweh
@@ -62,7 +59,8 @@ ve'asah | ach | me'achad | me'eleh
 
 18:11
 vehu
-et | kol | eleh | lo | asah
+et | kol | eleh
+lo | asah
 ki | gam | el | heharim | akhal
 ve'et | eshet | re'ehu
 time
@@ -91,9 +89,7 @@ vaiyir'eh
 velo | ya'aseh | kahen
 
 18:15
-al | heharim | lo | akhal
-ve'einav | lo | nasa
-el | gilulei
+al | heharim | lo | akhal | ve'einav | lo | nasa | el | gilulei
 beit | Yisra'el | et | eshet | re'ehu
 lo | time
 
@@ -113,13 +109,11 @@ chayoh | yichyeh
 
 18:18
 aviv | ki | ashak | oshek | gazal | gezel | ach
-va'asher | lo | tov | asah
-betokh | amav
+va'asher | lo | tov | asah | betokh | amav
 vehineh | met | ba'avono
 
 18:19
-va'amartem
-madua | lo | nasa | haben | ba'avon | ha'av
+va'amartem | madua | lo | nasa | haben | ba'avon | ha'av
 vehaben | mishpat | utzedakah | asah | et | kol | chukotai | shamar | vaiya'aseh | otam
 chayoh | yichyeh
 
@@ -140,8 +134,8 @@ lo | yamut
 
 18:22
 kol | pesha'av | asher | asah
-lo | yizakheru | lo
-betzidkato | asher | asah | yichyeh
+lo | yizakheru | lo | betzidkato | asher | asah
+yichyeh
 
 18:23
 hechafotz | echpotz | mot | rasha

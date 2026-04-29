@@ -1,7 +1,7 @@
 3:1
-ve'eleh | hagoyim | asher | hiniach | Yahweh
-lenasot | bam
-et | Yisra'el | et | kol | asher | lo | yade'u
+ve'eleh | hagoyim | asher | hiniach | Yahweh | lenasot | bam
+et | Yisra'el
+et | kol | asher | lo | yade'u
 et | kol | milchamot | Kena'an
 
 3:2
@@ -13,25 +13,24 @@ lo | yeda'um
 chameshet | sarnei | felishtim | vekhol | hakena'ani | vehatzidoni
 vehachivi
 yoshev
-har | Halevanon | mehar | Ba'al | Chermon
-ad
+har | Halevanon | mehar | Ba'al | Chermon | ad
 levo | Chamat
 
 3:4
-vaiyihyu | lenasot | bam
-et | Yisra'el | lada'at | hayishme'u | et | mitzvot | Yahweh
+vaiyihyu | lenasot | bam | et | Yisra'el
+lada'at | hayishme'u | et | mitzvot | Yahweh
 asher | tzivah | et | avotam | beyad | Mosheh
 
 3:5
-uvenei | Yisra'el | yashevu
-bekerev | hakena'ani
+uvenei | Yisra'el | yashevu | bekerev | hakena'ani
 hachiti | veha'emori | vehapperizi
 vehachivi
 vehayvusi
 
 3:6
 vaiyikchu | et | benoteihem | lahem | lenashim
-ve'et | benoteihem | natenu | livneihem
+ve'et | benoteihem
+natenu | livneihem
 vaiya'avdu | et | eloheihem
 
 3:7
@@ -57,9 +56,8 @@ hakaton | mimenu
 3:10
 vatehi | alav | ruach | Yahweh | vaiyishpot | et | Yisra'el
 vaiyetze | lamilchamah
-vaiyiten | Yahweh | beyado | et | Kushan | Rish'atayim
-melekh | Aram | vata'oz | yado | al
-Kushan | Rish'atayim
+vaiyiten | Yahweh | beyado | et | Kushan | Rish'atayim | melekh | Aram
+vata'oz | yado | al | Kushan | Rish'atayim
 
 3:11
 vatishkot | ha'aretz
@@ -68,8 +66,7 @@ vaiyamot
 Ateni'el | ben | Kenaz
 
 3:12
-vaiyosifu | benei | Yisra'el
-la'asot | hara
+vaiyosifu | benei | Yisra'el | la'asot | hara
 be'einei | Yahweh
 vaychazek | Yahweh | et | Eglon | melekh | Mo'av | al | Yisra'el
 al | ki | asu | et | hara
@@ -104,8 +101,9 @@ Ve'eglon
 ish | bari | me'od
 
 3:18
-vayhi | ka'asher | kilah | lehakriv
-et | haminchah | vayshalach | et | ha'am | nose'ei
+vayhi | ka'asher | kilah | lehakriv | et | haminchah
+vayshalach | et | ha'am
+nose'ei
 haminchah
 
 3:19
@@ -122,8 +120,7 @@ Ve'ehud | ba | elav | vehu | yoshev | ba'aliyat | hamekerah | asher | lo | levad
 vaiyomer | Ehud
 devar | elohim | li
 eleikha
-vaiyakom
-me'al | hakise
+vaiyakom | me'al | hakise
 
 3:21
 vaiyishlach | Ehud | et | yad | semolo
@@ -157,10 +154,8 @@ nofel | artzah
 met
 
 3:26
-Ve'ehud | Nimlat
-ad | hitmahmeham
-vehu | avar | et | hapesilim
-vaiyimalet
+Ve'ehud | Nimlat | ad | hitmahmeham
+vehu | avar | et | hapesilim | vaiyimalet
 Hase'iratah
 
 3:27

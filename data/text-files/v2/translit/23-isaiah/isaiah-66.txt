@@ -11,8 +11,7 @@ ve'et | kol | eleh | yadi | asatah
 vaiyihyu | khol | eleh
 ne'um | Yahweh | ve'el | zeh | abit
 el | ani | unekheh | ruach
-vechared
-al | devari
+vechared | al | devari
 
 66:3
 shochet | hashor | makeh | ish | zoveach | haseh | oref | kelev
@@ -29,8 +28,7 @@ vaiya'asu | hara | be'einai | uva'asher | lo | chafatzti | bacharu
 
 66:5
 shim'u | devar | Yahweh
-hacharedim
-el | devaro
+hacharedim | el | devaro
 ameru | acheikhem | sone'eikhem | menadeikhem | lema'an | shemi | yikhbad | Yahweh
 venir'eh | vesimchatkhem
 vehem | yevoshu
@@ -68,12 +66,13 @@ lema'an | tamotzu | vehit'anagtem | miziz | kevodah
 66:12
 ki | khoh | amar | Yahweh | hini | noteh | eleiha | kenahar | shalom | ukhenachal | shotef | kevod | goyim
 vinaktem
-al | tzad | tinase'u
-ve'al | birkayim | tesho'osha'u
+al | tzad | tinase'u | ve'al | birkayim
+tesho'osha'u
 
 66:13
 ke'ish | asher | imo | tenachamenu
-ken | anokhi | anachemkhem | Uvirushalim | tenuchamu
+ken | anokhi | anachemkhem | Uvirushalim
+tenuchamu
 
 66:14
 ure'item | vesas | libekhem
@@ -89,7 +88,8 @@ markevotav | lehashiv | bechemah | apo
 vega'arato | belahavei | esh
 
 66:16
-ki | va'esh | Yahweh | nishpat | uvecharbo | et | kol | basar | verabu
+ki | va'esh | Yahweh | nishpat | uvecharbo | et | kol | basar
+verabu
 chalei | Yahweh
 
 66:17
@@ -102,8 +102,7 @@ ne'um | Yahweh
 
 66:18
 ve'anokhi | ma'aseihem | umachshevoteihem
-ba'ah
-lekabetz | et | kol | hagoyim
+ba'ah | lekabetz | et | kol | hagoyim
 vehaleshonot | uva'u
 vera'u | et | kevodi
 
@@ -135,8 +134,7 @@ yavo | khol | basar | lehishtachavot | lefanai
 amar | Yahweh
 
 66:24
-veyatze'u | vera'u
-befigrei | ha'anashim
+veyatze'u | vera'u | befigrei | ha'anashim
 haposhe'im | bi
 ki | tola'tam | lo | tamut | ve'isham | lo | tikhbeh
 vehayu | dera'on | lekhol | basar

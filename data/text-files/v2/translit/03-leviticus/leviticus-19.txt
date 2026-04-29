@@ -1,6 +1,5 @@
 19:1
-vaydaber | Yahweh
-el | Mosheh | lemor
+vaydaber | Yahweh | el | Mosheh | lemor
 
 19:2
 daber | el | kol | adat | benei | Yisra'el | ve'amarta | alehem
@@ -11,7 +10,8 @@ Yahweh | eloheikhem
 
 19:3
 ish | imo | ve'aviv | tira'u
-ve'et | shabetotai | tishmoru
+ve'et | shabetotai
+tishmoru
 ani | Yahweh | eloheikhem
 
 19:4
@@ -28,8 +28,7 @@ beyom | zivchakhem | ye'akhel | umimochorat
 vehanotar | ad | yom | hashelishi | ba'esh | yisaref
 
 19:7
-ve'im | he'akhol | ye'akhel
-baiyom | hashelishi
+ve'im | he'akhol | ye'akhel | baiyom | hashelishi
 pigul | hu
 lo | yeratzeh
 
@@ -52,17 +51,18 @@ le'ani | velager | ta'azo | otam
 ani | Yahweh | eloheikhem
 
 19:11
-lo | tignou | velo | tekhachashu | velo | teshakeru
+lo | tignou
+velo | tekhachashu | velo | teshakeru
 ish | ba'amito
 
 19:12
-velo | tishave'u | vishmi | lashaker | vechilalta | et | shem | eloheikha
+velo | tishave'u | vishmi | lashaker
+vechilalta | et | shem | eloheikha
 ani | Yahweh
 
 19:13
 lo | ta'ashok | et | re'akha | velo | tigzol
-lo | talin | pe'ulat | sakhir | itekha
-ad | boker
+lo | talin | pe'ulat | sakhir | itekha | ad | boker
 
 19:14
 lo | tekalel | cheresh | velifnei | iver | lo | titen | mikhshol
@@ -76,25 +76,19 @@ velo | tehdar
 penei | gadol | betzedek | tishpot | amitekha
 
 19:16
-lo | telekh | rakhil | be'ameikha | lo | ta'amod
-al | dam | re'ekha
-ani
-Yahweh
+lo | telekh | rakhil | be'ameikha | lo | ta'amod | al | dam | re'ekha
+ani | Yahweh
 
 19:17
 lo | tisna | et | achikha | bilvavekha | hokheach | tokhiach | et | amitekha
-velo | tisa | alav
-chet
+velo | tisa | alav | chet
 
 19:18
-lo | tikom | velo | titor | et | benei | amekha | ve'ahavta | lere'akha
-kamokha
-ani
-Yahweh
+lo | tikom | velo | titor | et | benei | amekha | ve'ahavta | lere'akha | kamokha
+ani | Yahweh
 
 19:19
-et | chukotai | tishmoru
-behemtekha | lo | tarbia | kil'ayim
+et | chukotai | tishmoru | behemtekha | lo | tarbia | kil'ayim
 sadekha | lo | tizra | kil'ayim | uveged | kil'ayim | sha'atnez
 lo | ya'aleh
 aleikha
@@ -108,8 +102,7 @@ bikoret | tihyeh | lo | yumetu
 ki | lo | chupashah
 
 19:21
-vehevi | et | ashamo | Layahweh
-el | petach | ohel | mo'ed | eil
+vehevi | et | ashamo | Layahweh | el | petach | ohel | mo'ed | eil
 asham
 
 19:22
@@ -120,7 +113,8 @@ venislach | lo | mechatato | asher | chata
 19:23
 vekhi | tavo'u | el | ha'aretz | uneta'tem | kol | etz | ma'akhal
 va'araltem | arelato
-et | piryo | shalosh | shanim | yihyeh | lakhem | arelim
+et | piryo
+shalosh | shanim | yihyeh | lakhem | arelim
 lo | ye'akhel
 
 19:24
@@ -133,9 +127,7 @@ tevu'ato
 ani | Yahweh | eloheikhem
 
 19:26
-lo | tokhelu
-al | hadam
-lo | tenachashu
+lo | tokhelu | al | hadam | lo | tenachashu
 velo | te'onenu
 
 19:27
@@ -146,13 +138,13 @@ velo | tashchit | et
 pe'at | zekanecha
 
 19:28
-veseret | lanefesh | lo | titenu | bivsarkhem
-ukhetoet | ka'aka
+veseret | lanefesh | lo | titenu | bivsarkhem | ukhetoet | ka'aka
 lo | titenu | bakhem
 ani | Yahweh
 
 19:29
-al | techalel | et | bitekha | lehaznotah | velo | tizneh | ha'aretz | umal'ah | ha'aretz
+al | techalel | et | bitekha | lehaznotah
+velo | tizneh | ha'aretz | umal'ah | ha'aretz
 zimah
 
 19:30
@@ -161,10 +153,8 @@ tira'u
 ani | Yahweh
 
 19:31
-al | tifnu | el | ha'ovot | ve'el | haiyide'onim
-al | tevakshu | letame'ah | vahem
-ani
-Yahweh | eloheikhem
+al | tifnu | el | ha'ovot | ve'el | haiyide'onim | al | tevakshu | letame'ah | vahem
+ani | Yahweh | eloheikhem
 
 19:32
 mipenei | seivah | takum

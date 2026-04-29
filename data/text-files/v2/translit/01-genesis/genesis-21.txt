@@ -5,8 +5,7 @@ vaiya'as | Yahweh | Lesarah
 ka'asher | diber
 
 21:2
-vatahar | vateled | Sarah | Le'avraham | ben | lizkunav
-lamo'ed
+vatahar | vateled | Sarah | Le'avraham | ben | lizkunav | lamo'ed
 asher | diber | oto
 elohim
 
@@ -16,7 +15,8 @@ Yitzchak
 
 21:4
 vaiyamol | Avraham | et | Yitzchak | beno
-ben | shemonat | yamim
+ben | shemonat
+yamim
 ka'asher | tzivah | oto
 elohim
 
@@ -29,7 +29,8 @@ et | Yitzchak | beno
 vatomer | Sarah
 tzechok | asah | li
 elohim
-kol | hashomea | yitzchak | li
+kol | hashomea
+yitzchak | li
 
 21:7
 vatomer | mi | milel | Le'avraham
@@ -47,10 +48,9 @@ vatere | Sarah | et | ben | Hagar | hamitzrit | asher | yaldah | Le'avraham | me
 
 21:10
 vatomer | Le'avraham
-garesh | ha'amah | hazot | ve'et | benah
-ki | lo | yirash | ben | ha'amah | hazot
-im | beni
-im | Yitzchak
+garesh | ha'amah | hazot
+ve'et | benah
+ki | lo | yirash | ben | ha'amah | hazot | im | beni | im | Yitzchak
 
 21:11
 vaiyera | hadavar | me'od | be'einei | Avraham
@@ -72,8 +72,7 @@ hu
 21:14
 vaiyashkem | Avraham | baboker | vaiyikach | lechem | vechemat | mayim | vaiyiten | el | Hagor | sam | al | shikhmah | ve'et | haiyeled
 vayshalecheha
-vatelekh | vateta | bemidbar
-Be'er | Shava
+vatelekh | vateta | bemidbar | Be'er | Shava
 
 21:15
 vaiyikhlu | hamayim | min | hachemet
@@ -82,16 +81,15 @@ achad | hasichim
 
 21:16
 vatelekh | vateshev | lah | mineged | harchek | kimtachavei | keshet
-ki | amerah
-al | er'eh | bemot | haiyaled | vateshev | mineged
+ki | amerah | al | er'eh | bemot | haiyaled
+vateshev | mineged
 vatisa | et | kolah
 vatevek
 
 21:17
 vaiyishma | elohim | et | kol | hana'ar
 vaiyikra | mal'akh | elohim | el | Hagar | min | hashamayim
-vaiyomer | lah | mah | lakh | Hagar
-al | tir'i
+vaiyomer | lah | mah | lakh | Hagar | al | tir'i
 ki | shama | elohim | el | kol | hana'ar | ba'asher | hu | sham
 
 21:18
@@ -113,20 +111,19 @@ vaiyeshev | bamidbar
 vayhi | roveh | kashat
 
 21:21
-vaiyeshev
-bemidbar | Paran | vatikach | lo | imo | ishah | me'eretz | Mitzrayim
+vaiyeshev | bemidbar | Paran
+vatikach | lo | imo | ishah | me'eretz | Mitzrayim
 
 21:22
 vayhi | ba'et | hahiv
-vaiyomer | Avimelekh | Ufikhol | sar | tzeva'o
-el | Avraham | lemor | elohim | imekha | bekhol | asher | atah
+vaiyomer | Avimelekh | Ufikhol | sar | tzeva'o | el | Avraham | lemor
+elohim | imekha | bekhol | asher | atah
 oseh
 
 21:23
 ve'atah | hishave'ah | li | velohim | henah | im | tishkor | li
 ulenini | ulenekhdi
-kachesed | asher | asiti | imekha | ta'aseh | imadi
-ve'im | ha'aretz
+kachesed | asher | asiti | imekha | ta'aseh | imadi | ve'im | ha'aretz
 asher | gartah | bah
 
 21:24
@@ -154,9 +151,9 @@ vaiyikhretu | sheneihem | berit
 vaiyatzev | Avraham | et | sheva | kivsot | hatzon | levadehen
 
 21:29
-vaiyomer | Avimelekh
-el | Avraham | mah | henah | sheva | kevasot | ha'eleh
-asher | hitzavta | levadanah
+vaiyomer | Avimelekh | el | Avraham
+mah | henah | sheva | kevasot | ha'eleh | asher | hitzavta
+levadanah
 
 21:30
 vaiyomer
@@ -166,23 +163,19 @@ ki | chafarti
 et | habe'er | hazot
 
 21:31
-al | ken | kara | lamakom | hahu
-Be'er | Shava
+al | ken | kara | lamakom | hahu | Be'er | Shava
 ki | sham | Nishbe'u
 sheneihem
 
 21:32
-vaiyikhretu | verit
-Biv'er | Shava
+vaiyikhretu | verit | Biv'er | Shava
 vaiyakom | Avimelekh | Ufikhol | sar | tzeva'o
-vaiyashuvu
-el | eretz | pelishtim
+vaiyashuvu | el | eretz | pelishtim
 
 21:33
-vaiyita | eshel
-Biv'er | Shava | vaiyikra | sham
-beshem | Yahweh
-el | olam
+vaiyita | eshel | Biv'er | Shava
+vaiyikra | sham
+beshem | Yahweh | el | olam
 
 21:34
 vaiyagor | Avraham | be'eretz | pelishtim

@@ -34,8 +34,7 @@ vaiya'alu | mibenei | Yisra'el | umin | hakohanim | vehalviyim | vehamshorerim |
 el | Yerushalim | bishnat | sheva | Le'artachshast | hamelekh
 
 7:8
-vaiyavo | Yerushalim
-bachodesh | hachamishi | hi | shenat | hashevi'it | lamelekh
+vaiyavo | Yerushalim | bachodesh | hachamishi | hi | shenat | hashevi'it | lamelekh
 
 7:9
 ki | be'echad | lachodesh | harishon | hu | yesud
@@ -52,8 +51,7 @@ chok | umishpat
 7:11
 vezeh | parshegen | hanishtevan | asher | natan | hamelekh | Artachshast
 Le'ezra | hakohen
-hasofer | sofer | divrei | mitzvot | Yahweh | vechukav
-al | Yisra'el
+hasofer | sofer | divrei | mitzvot | Yahweh | vechukav | al | Yisra'el
 
 7:12
 Artachshast | melekh | malkhaiya
@@ -67,7 +65,8 @@ yehakh
 
 7:14
 kol | kovel | di | min | kodam | malka | veshiv'at | ya'atohi | sheliach
-levakara | al | Yehud | Velirushelem | bedat | elahakh
+levakara | al | Yehud | Velirushelem
+bedat | elahakh
 di | vidakh
 
 7:15
@@ -85,17 +84,19 @@ di | Virushelem
 7:17
 kol | kovel | denah | aseparna | tikne | bekhaspa | denah | torin | dikhrin | imerin
 uminchatehon | veniskeihon
-utekarev | himo
-al | madbechah
+utekarev | himo | al | madbechah
 di | beit | elahakhom
 di | Virushelem
 
 7:18
 umah | di | alayikh | ve'al | echayikh | yitav | bish'ar | kaspa | vedahavah
-leme'bad | kir'ut | elahakhom | ta'avdun
+leme'bad
+kir'ut | elahakhom
+ta'avdun
 
 7:19
-umanaiya | di | mityahavin | lakh | lefalechan | beit | elahakh | hashlem
+umanaiya | di | mityahavin | lakh | lefalechan
+beit | elahakh | hashlem
 kodam
 elah | Yerushelem
 
@@ -122,8 +123,7 @@ di | la | khetav
 kol | di | min | ta'am | elah | shemaiya
 yit'aved | adrazda | leveit
 elah | shemaiya
-di | lemah | leheve | ketzaf
-al | malkhut | malka | uvenohi
+di | lemah | leheve | ketzaf | al | malkhut | malka | uvenohi
 
 7:24
 ulekhom | mehod'in | di | khol | kahanaiya | velevaye | zamaraiya | tara'aiya | netinaiya
@@ -156,5 +156,4 @@ ve'alai | hitah | chesed | lifnei | hamelekh | veyo'atzav
 ulekhol | sarei | hamelekh
 hagiborim
 va'ani | hitchazakti | keyad | Yahweh | elohai | alai
-va'ekbetzah | Miyisra'el | rashim
-la'alot | imi
+va'ekbetzah | Miyisra'el | rashim | la'alot | imi

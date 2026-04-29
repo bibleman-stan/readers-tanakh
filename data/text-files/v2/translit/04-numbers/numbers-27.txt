@@ -27,8 +27,7 @@ vaiyakrev | Mosheh | et | mishpatan
 lifnei | Yahweh
 
 27:6
-vaiyomer | Yahweh
-el | Mosheh | lemor
+vaiyomer | Yahweh | el | Mosheh | lemor
 
 27:7
 ken | benot | Tzelafechad | doerot
@@ -37,8 +36,7 @@ achei | avihem
 veha'avarta | et | nachalat | avihen | lahen
 
 27:8
-ve'el | benei | Yisra'el
-tedaber | lemor
+ve'el | benei | Yisra'el | tedaber | lemor
 ish | ki | yamut | uven | ein | lo
 veha'avartem | et | nachalato | levito
 
@@ -48,8 +46,7 @@ bat | unetatem | et | nachalato | le'echav
 
 27:10
 ve'im | ein | lo
-achim
-unetatem | et | nachalato
+achim | unetatem | et | nachalato
 la'achei | aviv
 
 27:11
@@ -77,13 +74,11 @@ lehakdisheni | vamayim | le'eineihem
 hem | mei | Merivat | Kadesh | midbar | Tzin
 
 27:15
-vaydaber | Mosheh
-el | Yahweh | lemor
+vaydaber | Mosheh | el | Yahweh | lemor
 
 27:16
 yifkod | Yahweh | elohei | haruchot | lekhol | basar
-ish
-al | ha'edah
+ish | al | ha'edah
 
 27:17
 asher | yetze | lifneihem | va'asher | yavo | lifneihem

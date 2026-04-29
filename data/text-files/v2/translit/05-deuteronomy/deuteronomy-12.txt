@@ -1,14 +1,13 @@
 12:1
-eleh | hachukim | vehamishpatim | asher | tishmerun | la'asot
-ba'aretz | asher | natan | Yahweh | elohei | avoteikha | lekha
-lerishtah
+eleh | hachukim | vehamishpatim | asher | tishmerun | la'asot | ba'aretz
+asher | natan | Yahweh | elohei | avoteikha | lekha | lerishtah
 kol | haiyamim
-asher | atem | chaiyim
-al | ha'adamah
+asher | atem | chaiyim | al | ha'adamah
 
 12:2
 abed | te'abedun | et | kol | hamekomot | asher | avedu | sham | hagoyim | asher | atem | yoreshim | otam
-et | eloheihem | al | heharim | haramim | ve'al | hageva'ot | vetachat
+et | eloheihem | al | heharim | haramim | ve'al | hageva'ot
+vetachat
 kol | etz | ra'anan
 
 12:3
@@ -19,7 +18,8 @@ ve'ibadtem | et | shemam | min | hamakom
 hahu
 
 12:4
-lo | ta'asun | ken | Layahweh | eloheikhem
+lo | ta'asun | ken | Layahweh
+eloheikhem
 
 12:5
 ki | im | el | hamakom | asher | yivchar | Yahweh | eloheikhem | mikol | shivteikhem
@@ -43,15 +43,13 @@ uvateikhem | asher | berakhkha
 Yahweh | eloheikha
 
 12:8
-lo | ta'asun
-kekhol | asher | anachnu | osim | poh
+lo | ta'asun | kekhol | asher | anachnu | osim | poh
 haiyom
 ish
 kol | haiyashar | be'einav
 
 12:9
-ki | lo | batem
-ad | atah
+ki | lo | batem | ad | atah
 el | hamenuchah | ve'el | hanachalah
 asher | Yahweh | eloheikha | noten | lakh
 
@@ -114,8 +112,8 @@ vesamachta | lifnei | Yahweh | eloheikha | bekhol | mishlach | yadekha
 12:19
 hishamer | lekha
 pen | ta'azo
-et | halevi | kol | yameikha
-al | admatekha
+et | halevi
+kol | yameikha | al | admatekha
 
 12:20
 ki | yarchiv | Yahweh | eloheikha | et | gevulekha | ka'asher | diber | lokh
@@ -140,8 +138,8 @@ yokhelenu
 
 12:23
 rak | chazak | levilti | akhol | hadam
-ki | hadam | hu | hanafesh | velo | tokhal | hanefesh
-im | habasar
+ki | hadam | hu | hanafesh
+velo | tokhal | hanefesh | im | habasar
 
 12:24
 lo | tokhelenu | al | ha'aretz | tishpekhenu | kamayim
@@ -154,13 +152,11 @@ be'einei | Yahweh
 
 12:26
 rak | kadasheicha | asher | yihyu | lekha | unedareikha
-tisa | uvata
-el | hamakom
+tisa | uvata | el | hamakom
 asher | yivchar | Yahweh
 
 12:27
-ve'asita | oloteikha | habasar | vehadam
-al | mizbach
+ve'asita | oloteikha | habasar | vehadam | al | mizbach
 Yahweh | eloheikha
 vedam | zevacheikha | yishafekh | al | mizbach | Yahweh | eloheikha
 vehabasar | tokhel
@@ -178,14 +174,14 @@ mipaneikha | veyarashta | otam
 veyashavta | be'artzam
 
 12:30
-hishamer | lekha | pen | tinakesh | achareihem
-acharei | hishamedam | mipaneikha
+hishamer | lekha | pen | tinakesh | achareihem | acharei | hishamedam | mipaneikha
 ufen | tidrosh | leloheihem | lemor | eikhah | ya'avdu | hagoyim | ha'eleh | et | eloheihem
 ve'e'eseh | ken
 gam | ani
 
 12:31
-lo | ta'aseh | khen | Layahweh | eloheikha
+lo | ta'aseh | khen | Layahweh
+eloheikha
 ki | kol | to'avat | Yahweh | asher | sane | asu | leloheihem
 ki | gam | et | beneihem | ve'et | benoteihem
 yisrefu | va'esh | leloheihem

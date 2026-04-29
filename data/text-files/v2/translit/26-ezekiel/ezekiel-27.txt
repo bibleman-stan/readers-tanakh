@@ -35,8 +35,8 @@ alonim | Mibashon
 asu | mishotayikh | karshekh | asu | shen | bat | ashurim | me'iyei | Kitiyim
 
 27:7
-shesh | berikmah | Mimitzrayim | hayah | mifrasekh | lihyot | lakh
-lenes | tekhelet | ve'argaman | me'iyei | Elishah
+shesh | berikmah | Mimitzrayim | hayah | mifrasekh | lihyot | lakh | lenes
+tekhelet | ve'argaman | me'iyei | Elishah
 hayah | mekhasekh
 
 27:8
@@ -67,9 +67,8 @@ hemah
 kalu | yafeyekh
 
 27:12
-Tarshish | sochartekh
-mero | kol | hon | bekhesef | barzel | bedil | ve'oferet
-natenu
+Tarshish | sochartekh | mero | kol | hon
+bekhesef | barzel | bedil | ve'oferet | natenu
 izvonayikh
 
 27:13
@@ -136,8 +135,7 @@ Ashur
 Kilmad | rokhaltekh
 
 27:24
-hemah | rokhelayikh | vemakhlulim
-biglomei | tekhelet | verikmah | uveginzei | beromim
+hemah | rokhelayikh | vemakhlulim | biglomei | tekhelet | verikmah | uveginzei | beromim
 bachavalim | chavushim | va'aruzim | bemarkhultekh
 
 27:25
@@ -149,8 +147,7 @@ bemayim | rabim | hevi'ukh
 hashatim
 otakh
 ruach | hakadim
-shevarekh
-belev | yamim
+shevarekh | belev | yamim
 
 27:27
 honekh | ve'izvonayikh | ma'aravekh | malachayikh | vechoelayikh
@@ -164,9 +161,7 @@ yir'ashu | migroshot
 
 27:29
 veyaredu | me'aniyoteihem | kol | tofesei | mashot | malachim
-kol | choelei | haiyam
-el | ha'aretz
-ya'amodu
+kol | choelei | haiyam | el | ha'aretz | ya'amodu
 
 27:30
 vehishmi'u | alayikh | bekolam | veyiz'aku
@@ -204,5 +199,4 @@ panim
 socharim | ba'amim
 shareku
 alayikh | balahot | hayit
-ve'einekh
-ad | olam
+ve'einekh | ad | olam

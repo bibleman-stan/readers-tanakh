@@ -4,8 +4,7 @@ elai | lemor
 
 35:2
 ben | adam
-sim | paneikha
-al | har | Se'ir
+sim | paneikha | al | har | Se'ir
 vehinave
 alav
 
@@ -25,8 +24,7 @@ ki | ani | Yahweh
 
 35:5
 ya'an | heyot | lekha | eivat | olam
-vatager | et | benei | Yisra'el
-al | yedei | charev
+vatager | et | benei | Yisra'el | al | yedei | charev
 be'et | eidam | be'et | avon | ketz
 
 35:6
@@ -82,10 +80,8 @@ ani
 shama'eti
 
 35:14
-koh | amar | Adonai | Yahweh
-kismoach | kol | ha'aretz
-shemamah
-e'eseh | lakh
+koh | amar | Adonai | Yahweh | kismoach | kol | ha'aretz
+shemamah | e'eseh | lakh
 
 35:15
 kesimchatekha | lenachlat | beit | Yisra'el | al | asher | shamemah

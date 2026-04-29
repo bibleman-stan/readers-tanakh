@@ -35,7 +35,8 @@ kulam | magen | vekhova
 Gomer | vekhol | agapeiha
 beit | Togarmah
 yarketei | tzafon
-ve'et | kol | agapav | amim | rabim
+ve'et | kol | agapav
+amim | rabim
 itakh
 
 38:7
@@ -54,8 +55,8 @@ vehi | me'amim | hutza'ah | veyashevu | lavetach
 kulam
 
 38:9
-ve'alita | kasho'ah | tavo
-ke'anan | lekhasot | ha'aretz | tihyeh
+ve'alita | kasho'ah | tavo | ke'anan | lekhasot | ha'aretz
+tihyeh
 atah | vekhol | agapeikha
 ve'amim | rabim
 otakh
@@ -75,8 +76,7 @@ kulam | yoshevim | be'ein | chomah | uveriach | udelatayim | ein | lahem
 lishlol | shalal | velavoz | baz
 lehashiv | yadekha | al | choravot | noshavot | ve'el | am | me'usaf | migoyim
 oseh | mikneh | vekinyan
-yoshevei
-al | tabur | ha'aretz
+yoshevei | al | tabur | ha'aretz
 
 38:13
 Sheva | Udedon | vesocharei | Tarshish | vekhol | kefireiha | yomeru | lekha
@@ -104,8 +104,7 @@ kahal | gadol
 vechayil | rav
 
 38:16
-ve'alita | al | ami | Yisra'el | ke'anan
-lekhasot | ha'aretz
+ve'alita | al | ami | Yisra'el | ke'anan | lekhasot | ha'aretz
 be'acharit | haiyamim | tihyeh | vahavi'otikha | al | artzi
 lema'an | da'at | hagoyim | oti | behikadeshi | vekha | le'eineihem
 Gog
@@ -126,7 +125,8 @@ ta'aleh | chamati | be'api
 uvekin'ati | ve'esh | evrati
 dibarti
 im | lo | baiyom | hahu | yihyeh | ra'ash | gadol
-al | admat | Yisra'el
+al
+admat | Yisra'el
 
 38:20
 vera'ashu | mipanai | degei | haiyam | ve'of | hashamayim | vechaiyat | hasadeh | vekhol | haremes | haromes | al | ha'adamah

@@ -8,8 +8,7 @@ zemirot | Yisra'el
 
 23:2
 ruach | Yahweh
-diber | bi | umilato
-al | leshoni
+diber | bi | umilato | al | leshoni
 
 23:3
 amar | elohei | Yisra'el
@@ -23,8 +22,7 @@ boker | lo | avot | minogah | mimatar
 deshe | me'aretz
 
 23:5
-ki | lo | khen | beiti
-im | el
+ki | lo | khen | beiti | im | el
 ki | verit | olam | sam | li | arukhah | vakol | ushemurah
 ki | khol | yish'i | vekhol | chefetz
 ki | lo | yatzmiach
@@ -55,8 +53,7 @@ ish | Yisra'el
 
 23:10
 hu | kam | vaiyakh | bapelishtim | ad | ki | yage'ah | yado | vatidbak | yado | el | hacherev
-vaiya'as | Yahweh | teshu'ah | gedolah
-baiyom | hahu
+vaiya'as | Yahweh | teshu'ah | gedolah | baiyom | hahu
 veha'am | yashuvu | acharav
 akh | lefashet
 
@@ -104,12 +101,12 @@ hagiborim
 
 23:18
 Va'avishai | achi | Yo'av | ben | Tzeruyah | hu | rosh | hasheloshi
-vehu | orer | et | chanito
-al | shelosh | me'ot | chalal | velo | shem | basheloshah
+vehu | orer | et | chanito | al | shelosh | me'ot | chalal
+velo | shem | basheloshah
 
 23:19
-min | hasheloshah | hakhi | nikhbad | vayhi | lahem | lesar
-ve'ad | hasheloshah | lo | va
+min | hasheloshah | hakhi | nikhbad | vayhi | lahem | lesar | ve'ad | hasheloshah
+lo | va
 
 23:20
 Uvenayahu | ven | Yehoyada | ben | ish | chai | rav | pe'alim | Mikavtze'el
@@ -125,11 +122,11 @@ vaiyahargehu | bachanito
 
 23:22
 eleh | asah | Benayahu
-ben | Yehoyada | velo | shem | bishloshah | hagiborim
+ben | Yehoyada
+velo | shem | bishloshah | hagiborim
 
 23:23
-min | hasheloshim | nikhbad | ve'el | hasheloshah | lo | va | vaysimehu | David
-el | mishma'to
+min | hasheloshim | nikhbad | ve'el | hasheloshah | lo | va | vaysimehu | David | el | mishma'to
 
 23:24
 Asah | El | achi | Yo'av | basheloshim
@@ -145,7 +142,8 @@ Ira | ven | Ikesh
 hateko'i
 
 23:27
-Avi'ezer | ha'anetoti | Mevunai | hachushati
+Avi'ezer | ha'anetoti | Mevunai
+hachushati
 
 23:28
 Tzalmon | ha'achochi | Mahrai | hanetofati
@@ -165,8 +163,8 @@ Azmavet
 habarchumi
 
 23:32
-Elyachba | hasha'alvoni
-benei | Yashen | Yehonatan
+Elyachba | hasha'alvoni | benei | Yashen
+Yehonatan
 
 23:33
 ben | Shamah | haharari | Achi'am | ben | Sharar

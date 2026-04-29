@@ -13,19 +13,19 @@ bikhal | Yahweh
 23:4
 lo | yavo | amoni | umo'avi | bikhal | Yahweh
 gam | dor | asiri
-lo | yavo | lahem | bikhal | Yahweh
-ad | olam
+lo | yavo | lahem | bikhal | Yahweh | ad | olam
 
 23:5
-al | devar | asher | lo | kidemu | etkhem | balechem | uvamayim
-baderekh | betzetekhem | Mimitzrayim
+al | devar | asher | lo | kidemu | etkhem | balechem | uvamayim | baderekh
+betzetekhem | Mimitzrayim
 va'asher | sakhar | aleikha | et | Bil'am | ben | Be'or | Mipetor | Aram | Naharayim
 lekaleka
 
 23:6
 velo | avah | Yahweh | eloheikha | lishmoa | el | Bil'am
 vaiyahafokh | Yahweh | eloheikha | lekha | et | hakelalah | livrakhah
-ki | ahevekha | Yahweh | eloheikha
+ki | ahevekha
+Yahweh | eloheikha
 
 23:7
 lo | tidrosh | shelomam
@@ -51,14 +51,11 @@ davar | ra
 23:11
 ki | yihyeh | vekha | ish | asher | lo | yihyeh | tahor
 mikereh | layelah | veyatza | el | michutz | lamachaneh
-lo | yavo
-el | tokh | hamachaneh
+lo | yavo | el | tokh | hamachaneh
 
 23:12
-vehayah | lifnot | erev | yirchatz | bamayim
-ukhevo | hashemesh
-yavo
-el | tokh | hamachaneh
+vehayah | lifnot | erev | yirchatz | bamayim | ukhevo | hashemesh
+yavo | el | tokh | hamachaneh
 
 23:13
 veyad | tihyeh | lekha | michutz | lamachaneh
@@ -66,8 +63,7 @@ veyatzata | shamah
 chutz
 
 23:14
-veyated | tihyeh | lekha
-al | azenekha
+veyated | tihyeh | lekha | al | azenekha
 vehayah | beshivtekha | chutz
 vechafartah | vah
 veshavta | vekhisita | et | tze'atekha
@@ -79,9 +75,7 @@ velo | yir'eh | vekha | ervat | davar
 veshav | me'achareikha
 
 23:16
-lo | tasgir | eved
-el | adonav
-asher | yinatzel | eleikha
+lo | tasgir | eved | el | adonav | asher | yinatzel | eleikha
 me'im | adonav
 
 23:17
@@ -115,8 +109,7 @@ asher | atah | va | shamah | lerishtah
 ki | tidor | neder | Layahweh | eloheikha
 lo | te'acher | leshalemo
 ki | darosh | yidreshenu | Yahweh | eloheikha | me'imakh
-vehayah | vekha
-chet
+vehayah | vekha | chet
 
 23:23
 vekhi | techdal | lindor | lo | yihyeh | vekha
@@ -130,8 +123,7 @@ befikha
 23:25
 ki | tavo | bekherem | re'ekha
 ve'akhalta | anavim | kenafshekha
-save'ekha | ve'el | kelyekha
-lo | titen
+save'ekha | ve'el | kelyekha | lo | titen
 
 23:26
 ki | tavo | bekamat | re'ekha

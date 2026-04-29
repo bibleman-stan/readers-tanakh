@@ -44,8 +44,7 @@ vatelakhnah | vaderekh | lashuv
 el | eretz | Yehudah
 
 1:8
-vatomer | No'omi | lishtei | khaloteiha
-lekhenah | shoenah
+vatomer | No'omi | lishtei | khaloteiha | lekhenah | shoenah
 ishah
 leveit | imah
 ya'aseh | Yahweh | imakhem | chesed
@@ -93,9 +92,10 @@ Verut
 davekah | bah
 
 1:15
-vatomer | hineh | shavah | yevimtekh
-el | amah | ve'el | eloheiha
-shuvi | acharei | yevimtekh
+vatomer | hineh | shavah | yevimtekh | el | amah
+ve'el | eloheiha
+shuvi
+acharei | yevimtekh
 
 1:16
 vatomer | Rut | al | tifge'i | vi | le'azevekh | lashuv | me'acharayikh
@@ -116,16 +116,15 @@ vatechdal
 ledaber | eleiha
 
 1:19
-vatelakhnah | sheteihem
-ad | bo'anah | Beit | Lachem
+vatelakhnah | sheteihem | ad | bo'anah | Beit | Lachem
 vayhi | kevo'anah | Beit | Lechem
 vatehom | kol | ha'ir | aleihen
 vatomarnah
 hazot | No'omi
 
 1:20
-vatomer | aleihen
-al | tikrenah | li | No'omi
+vatomer | aleihen | al | tikrenah | li
+No'omi
 kerena | li | mara
 ki | hemar | Shadai | li | me'od
 

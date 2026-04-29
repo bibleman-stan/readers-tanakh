@@ -2,9 +2,7 @@
 vayhi | ra'av | bimei | David | shalosh | shanim | shanah | acharei | shanah
 vayvakesh | David
 et | penei | Yahweh
-vaiyomer | Yahweh | el | Sha'ul | ve'el | beit | hadamim
-al | asher | hemit
-et | hagiv'onim
+vaiyomer | Yahweh | el | Sha'ul | ve'el | beit | hadamim | al | asher | hemit | et | hagiv'onim
 
 21:2
 vaiyikra | hamelekh | lagiv'onim
@@ -16,7 +14,8 @@ Vihudah
 
 21:3
 vaiyomer | David | el | hagiv'onim
-mah | e'eseh | lakhem | uvamah | akhaper | uvarekhu
+mah | e'eseh | lakhem
+uvamah | akhaper | uvarekhu
 et | nachalat | Yahweh
 
 21:4
@@ -39,15 +38,15 @@ vaiyomer | hamelekh
 ani | eten
 
 21:7
-vaiyachmol | hamelekh
-al | Mefi | Voshet
+vaiyachmol | hamelekh | al | Mefi | Voshet
 ben | Yehonatan | ben | Sha'ul
 al | shevu'at | Yahweh | asher | beinotam
 bein | David | uvein | Yehonatan | ben | Sha'ul
 
 21:8
 vaiyikach | hamelekh | etosh | shenei | benei | Ritzpah | vat | Aiyah | asher | yaldah | Lesha'ul
-et | Armoni | ve'et | Mefivoshet
+et | Armoni
+ve'et | Mefivoshet
 ve'et | chameshet | benei | Mikhal | bat | Sha'ul | asher | yaldah | Le'adri'el | ben | Barzilai
 hamecholati
 
@@ -77,7 +76,8 @@ beyom | hakot | pelishtim | et | Sha'ul | Bagilboa
 
 21:13
 vaiya'al | misham | et | atzmot | Sha'ul
-ve'et | atzmot | Yehonatan | beno
+ve'et | atzmot
+Yehonatan | beno
 vaiya'asfu | et | atzmot
 hamuka'im
 
@@ -86,8 +86,7 @@ vaiyikberu | et | atzmot | Sha'ul | Vihonaton | beno | be'eretz | Binyamin | Bet
 vaiya'asu
 kol | asher | tzivah
 hamelekh
-vaiye'ater | elohim | la'aretz
-acharei | khen
+vaiye'ater | elohim | la'aretz | acharei | khen
 
 21:15
 vatehi | od | milchamah | lapelishtim | et | Yisra'el
@@ -111,14 +110,12 @@ et | ner | Yisra'el
 
 21:18
 vayhi | acharei | khen
-vatehi | od | hamilchamah | Begov
-im | pelishtim
+vatehi | od | hamilchamah | Begov | im | pelishtim
 az | hikah | Sibekhai | hachushati
 et | Saf | asher | bilidei | Harafah
 
 21:19
-vatehi | od | hamilchamah | Begov
-im | pelishtim
+vatehi | od | hamilchamah | Begov | im | pelishtim
 vaiyakh | Elchanan | ben | Ya'rei | oregim | beit | halachmi | et | Galyat | hagiti
 ve'etz | chanito | kimnor
 oregim
@@ -126,8 +123,7 @@ oregim
 21:20
 vatehi | od | milchamah | Begat
 vayhi | ish | madin | ve'etzbe'ot | yadav | ve'etzbe'ot | raglav | shesh | vashesh | esrim | ve'arba | mispar
-vegam | hu
-yulad | Leharafah
+vegam | hu | yulad | Leharafah
 
 21:21
 vaycharef | et | Yisra'el
@@ -137,5 +133,4 @@ achi | David
 
 21:22
 et | arba'at | eleh | yuledu | Leharafah | Begat
-vaiyipelu | veyad | David
-uveyad | avadav
+vaiyipelu | veyad | David | uveyad | avadav

@@ -31,15 +31,14 @@ shenit
 
 13:6
 vera'ah | hakohen | oto | baiyom | hashevi'i | shenit
-vehineh | kehah | hanega | velo | fasah | hanega | ba'or
+vehineh | kehah | hanega
+velo | fasah | hanega | ba'or
 vetiharo | hakohen | mispachat | hi | vekhibes | begadav
 vetaher
 
 13:7
-ve'im | pasoh | tifseh | hamispachat | ba'or
-acharei | hera'oto | el | hakohen | letohorato
-venir'ah | shenit
-el | hakohen
+ve'im | pasoh | tifseh | hamispachat | ba'or | acharei | hera'oto | el | hakohen
+letohorato | venir'ah | shenit | el | hakohen
 
 13:8
 vera'ah | hakohen
@@ -50,8 +49,7 @@ tzara'at | hi
 13:9
 nega | tzara'at
 ki | tihyeh | be'adam
-vehuva
-el | hakohen
+vehuva | el | hakohen
 
 13:10
 vera'ah | hakohen | vehineh | se'et | levanah | ba'or
@@ -77,7 +75,8 @@ einei | hakohen
 13:13
 vera'ah | hakohen | vehineh | khisetah | hatzara'at | et | kol | besaro
 vetihar
-et | hanaga | kulo | hafakh | lavan
+et | hanaga
+kulo | hafakh | lavan
 tahor | hu
 
 13:14
@@ -92,8 +91,7 @@ tzara'at | hu
 13:16
 o | khi | yashuv | habasar | hachai
 venehpakh | lelavan
-uva
-el | hakohen
+uva | el | hakohen
 
 13:17
 vera'ahu | hakohen
@@ -111,8 +109,7 @@ venirpa
 vehayah | bimkom | hashechin | se'et | levanah
 o | vaheret
 levanah | adamdamet
-venir'ah
-el | hakohen
+venir'ah | el | hakohen
 
 13:20
 vera'ah | hakohen | vehineh | mar'eha | shafal | min | ha'or
@@ -193,7 +190,8 @@ shiv'at | yamim
 
 13:32
 vera'ah | hakohen | et | hanega | baiyom | hashevi'i
-vehineh | lo | fasah | hanetek | velo | hayah | vo
+vehineh | lo | fasah | hanetek
+velo | hayah | vo
 se'ar | tzaho | umar'eh | hanetek | ein | amok | min | ha'or
 
 13:33
@@ -210,8 +208,7 @@ vetihar | oto | hakohen | vekhibes | begadav
 vetaher
 
 13:35
-ve'im | pasoh | yifseh | hanetek | ba'or
-acharei | tohorato
+ve'im | pasoh | yifseh | hanetek | ba'or | acharei | tohorato
 
 13:36
 vera'ahu | hakohen
@@ -249,12 +246,14 @@ tahor | hu
 
 13:42
 vekhi | yihyeh | vakarachat | o | vagabachat
-nega | lavan | adamdam
+nega
+lavan | adamdam
 tzara'at | porachat | hi | bekarachto
 o | vegabachto
 
 13:43
-vera'ah | oto | hakohen | vehineh | se'et | hanega | levanah | adamdemet | bekarachto
+vera'ah | oto | hakohen | vehineh | se'et | hanega | levanah | adamdemet
+bekarachto
 o | vegabachto | kemar'eh | tzara'at
 or | basar
 
@@ -294,7 +293,9 @@ et | hakohen
 
 13:50
 vera'ah | hakohen
-et | hanaga | vehisgir | et | hanega | shiv'at | yamim
+et | hanaga
+vehisgir | et | hanega
+shiv'at | yamim
 
 13:51
 vera'ah | et | hanega | baiyom | hashevi'i | ki | fasah | hanega | babeged | ov | vasheti | ov | va'erev | o | va'or

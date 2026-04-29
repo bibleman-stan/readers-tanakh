@@ -3,25 +3,22 @@ divrei | Yirmeyahu
 ben | Chilkiyahu | min | hakohanim | asher | Ba'anatot | be'eretz | Binyamin
 
 1:2
-asher | hayah | devar | Yahweh | elav
-bimei | Yoshiyahu | ven | Amon
+asher | hayah | devar | Yahweh | elav | bimei | Yoshiyahu | ven | Amon
 melekh | Yehudah | bishlosh | esreh | shanah | lemalekho
 
 1:3
 vayhi | bimei | Yehoyakim | ben | Yoshiyahu | melekh | Yehudah
 ad | tom | ashtei | esreh | shanah | Letzidkiyahu | ven | Yoshiyahu
 melekh | Yehudah
-ad | gelot | Yerushalim
-bachodesh | hachamishi
+ad | gelot | Yerushalim | bachodesh | hachamishi
 
 1:4
 vayhi | devar | Yahweh
 elai | lemor
 
 1:5
-beterem | etzorkha | vabeten | yeda'tikha
-uveterem | tetze | merechem | hikdashticha
-navi | lagoyim
+beterem | etzorkha | vabeten | yeda'tikha | uveterem | tetze | merechem
+hikdashticha | navi | lagoyim
 netatikha
 
 1:6
@@ -31,8 +28,7 @@ ki | na'ar
 anokhi
 
 1:7
-vaiyomer | Yahweh | elai
-al | tomar
+vaiyomer | Yahweh | elai | al | tomar
 na'ar | anokhi
 ki | al | kol | asher | eshlachakha | telekh
 ve'et | kol | asher | atzavekha
@@ -44,8 +40,8 @@ ne'um | Yahweh
 
 1:9
 vaiyishlach | Yahweh | et | yado
-vaiyaga
-al | pi | vaiyomer | Yahweh | elai
+vaiyaga | al | pi
+vaiyomer | Yahweh | elai
 hineh | natati | devarai | befikha
 
 1:10
@@ -55,8 +51,7 @@ lintoosh | velintotz | uleha'avid | velaharos | livnot | velintoa
 1:11
 vayhi | devar | Yahweh | elai | lemor | mah | atah | ro'eh
 Yirmeyahu
-va'omar
-makel | shaked
+va'omar | makel | shaked
 ani | ro'eh
 
 1:12
@@ -65,9 +60,8 @@ heitavta | lir'ot
 ki | shoked | ani | al | devari | la'asoto
 
 1:13
-vayhi | devar | Yahweh | elai | shenit | lemor
-mah | atah | ro'eh
-va'omar | sir | nafuach | ani | ro'eh
+vayhi | devar | Yahweh | elai | shenit | lemor | mah | atah
+ro'eh | va'omar | sir | nafuach | ani | ro'eh
 ufanav | mipenei | tzafonah
 
 1:14
@@ -93,8 +87,8 @@ lema'asei | yedeihem
 1:17
 ve'atah | te'zor | mateneikha
 vekamta | vedibarta | aleihem | et | kol | asher | anokhi
-atzaveka
-al | techat | mipeneihem | pen | achitekha | lifneihem
+atzaveka | al | techat | mipeneihem
+pen | achitekha | lifneihem
 
 1:18
 va'ani | hineh | netatikha | haiyom | le'ir | mivtzar | ule'amud | barzel | ulechomot | nechoshet
@@ -103,5 +97,6 @@ lemalkhei | Yehudah | lesareiha | lekhohaneiha
 ule'am | ha'aretz
 
 1:19
-venilchamu | eleikha | velo | yukhelu | lakh
+venilchamu | eleikha
+velo | yukhelu | lakh
 ki | itekha | ani | ne'um | Yahweh | lehatzilekha

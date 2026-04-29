@@ -23,12 +23,12 @@ aleikhem
 6:4
 vaiyishlechu | elai | kadavar | hazeh
 arba | pe'amim
-va'ashiv | otam
-kadavar | hazeh
+va'ashiv | otam | kadavar | hazeh
 
 6:5
 vaiyishlach | elai | Sanvalat | kadavar | hazeh | pa'am | chamishit
-et | na'aro | ve'igeret | petuchah | beyado
+et | na'aro
+ve'igeret | petuchah | beyado
 
 6:6
 katuv | bah | bagoyim | nishma | Vegashmu | omer
@@ -88,8 +88,7 @@ vegam | Leno'adyah | hanevi'ah | uleyeter | hanevi'im | asher | hayu
 meyare'im | oti
 
 6:15
-vatishlam | hachomah | be'esrim | vachamishah | Le'elul
-lachamishim | ushenayim
+vatishlam | hachomah | be'esrim | vachamishah | Le'elul | lachamishim | ushenayim
 yom
 
 6:16
@@ -102,9 +101,7 @@ hamelakhah | hazot
 
 6:17
 gam | baiyamim | hahem | marbim | chorei | Yehudah | igeroteihem
-holkhot
-al | Toiyah
-va'asher | Letoiyah
+holkhot | al | Toiyah | va'asher | Letoiyah
 ba'ot | aleihem
 
 6:18

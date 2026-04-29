@@ -83,8 +83,8 @@ ad | tom | kol | hador | anshei | hamilchamah | mikerev | hamachaneh
 ka'asher | Nishba | Yahweh | lahem
 
 2:15
-vegam | yad | Yahweh | hayetah | bam | lehumam | mikerev | hamachaneh
-ad
+vegam | yad | Yahweh | hayetah | bam | lehumam
+mikerev | hamachaneh | ad
 tumam
 
 2:16
@@ -99,8 +99,7 @@ atah | over | haiyom | et | gevul | Mo'av
 et | Ar
 
 2:19
-vekaravta | mul | benei | Amon
-al | tetzurem
+vekaravta | mul | benei | Amon | al | tetzurem
 ve'al | titgar | bam
 ki | lo | eten | me'eretz | benei | Amon | lekha | yerushah
 ki | livnei | Lot | netatiha | yerushah
@@ -121,13 +120,11 @@ vaiyeshevu | tachtam
 2:22
 ka'asher | asah | livnei | Esav
 haiyoshevim | Bese'ir | asher | hishmid | et | hachori | mipeneihem
-vaiyirashum | vaiyeshevu | tachtam
-ad
+vaiyirashum | vaiyeshevu | tachtam | ad
 haiyom | hazeh
 
 2:23
-Veha'avim | haiyoshevim | bachatzerim
-ad | Azah | kaftorim | haiyotze'im | Mikaftor | hishmidum
+Veha'avim | haiyoshevim | bachatzerim | ad | Azah | kaftorim | haiyotze'im | Mikaftor | hishmidum
 vaiyeshevu | tachtam
 
 2:24
@@ -143,8 +140,7 @@ kol | hashamayim | asher | yishme'un | shim'akha
 veragezu | vechalu | mipaneikha
 
 2:26
-va'eshlach | mal'akhim | mimidbar | Kedemot
-el | Sichon | melekh | Cheshbon
+va'eshlach | mal'akhim | mimidbar | Kedemot | el | Sichon | melekh | Cheshbon
 divrei | shalom | lemor
 
 2:27
@@ -154,17 +150,14 @@ lo | asur
 yamin | usemol
 
 2:28
-okhel | bakesef | tashbireni | ve'akhalti
-umayim | bakesef | titen | li
+okhel | bakesef | tashbireni | ve'akhalti | umayim | bakesef | titen | li
 veshatiti
 rak | e'berah | veraglai
 
 2:29
 ka'asher | asu | li | benei | Esav | haiyoshevim | Bese'ir
 vehamo'avim
-haiyoshevim | Be'ar
-ad | asher | e'evor | et | Haiyarden
-el | ha'aretz
+haiyoshevim | Be'ar | ad | asher | e'evor | et | Haiyarden | el | ha'aretz
 asher | Yahweh | eloheinu | noten | lanu
 
 2:30
@@ -177,7 +170,9 @@ kaiyom | hazeh
 2:31
 vaiyomer | Yahweh | elai
 re'eh | hachiloti | tet | lefaneikha | et | Sichon
-ve'et | artzo | hachel | rash | lareshet | et | artzo
+ve'et | artzo
+hachel | rash | lareshet
+et | artzo
 
 2:32
 vaiyetze | Sichon | likratenu | hu | vekhol | amo | lamilchamah

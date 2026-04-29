@@ -22,8 +22,7 @@ vayhi | imadi | baderekh | asher | halakheti
 35:4
 vaiyitenu | el | Ya'ako | et | kol | elohei | hanekhar | asher | beyadam
 ve'et | hanezamim | asher | be'azeneihem
-vaiyitmon | otam | Ya'ako
-tachat | ha'elah | asher | im | Shekhem
+vaiyitmon | otam | Ya'ako | tachat | ha'elah | asher | im | Shekhem
 
 35:5
 vaiyisa'u
@@ -44,8 +43,8 @@ mipenei | achiv
 
 35:8
 vatamot | Devorah | meineket | Rivkah
-vatikaver | mitachat | Leveit | El
-tachat | ha'alon | vaiyikra | shemo
+vatikaver | mitachat | Leveit | El | tachat | ha'alon
+vaiyikra | shemo
 Alon | Bakhut
 
 35:9
@@ -111,10 +110,8 @@ Rachel | vatikaver | bederekh | Efratah
 hi | Beit | Lachem
 
 35:20
-vaiyatzev | Ya'ako | matzevah
-al | kevuratah
-hi | matzevet | kevurat | Rachel
-ad | haiyom
+vaiyatzev | Ya'ako | matzevah | al | kevuratah
+hi | matzevet | kevurat | Rachel | ad | haiyom
 
 35:21
 vaiyisa
@@ -148,8 +145,7 @@ Venaftali
 
 35:26
 uvenei | Zilpah | shifchat | Le'ah | Gad | Ve'asher
-eleh | benei | Ya'ako | asher | yulad | lo
-Befadan | Aram
+eleh | benei | Ya'ako | asher | yulad | lo | Befadan | Aram
 
 35:27
 vaiyavo | Ya'ako | el | Yitzchak | aviv | Mamre
@@ -159,8 +155,7 @@ Veyitzchak
 
 35:28
 vaiyihyu
-yemei | Yitzchak
-me'at | shanah
+yemei | Yitzchak | me'at | shanah
 ushemonim | shanah
 
 35:29

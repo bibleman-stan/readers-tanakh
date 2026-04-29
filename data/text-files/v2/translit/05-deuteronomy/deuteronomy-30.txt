@@ -5,9 +5,10 @@ vahashevota | el | levavekha | bekhol | hagoyim | asher | hidichakha | Yahweh | 
 shamah
 
 30:2
-veshavta | ad | Yahweh | eloheikha | veshama'ta | vekolo
-kekhol | asher | anokhi | metzavekha | haiyom
-atah | uvaneikha | bekhol | levavekha | uvekhol | nafshekha
+veshavta | ad | Yahweh | eloheikha | veshama'ta | vekolo | kekhol | asher | anokhi | metzavekha
+haiyom
+atah | uvaneikha | bekhol | levavekha
+uvekhol | nafshekha
 
 30:3
 veshav | Yahweh | eloheikha | et | shevutekha
@@ -16,8 +17,7 @@ veshav | vekibetzcha | mikol | ha'amim | asher | hefitzekha | Yahweh | eloheikha
 shamah
 
 30:4
-im | yihyeh | nidachakha
-biktzeh | hashamayim
+im | yihyeh | nidachakha | biktzeh | hashamayim
 misham | yekabetzcha | Yahweh | eloheikha | umisham
 yikachecha
 
@@ -33,8 +33,7 @@ lema'an | chaiyeikha
 
 30:7
 venatan | Yahweh | eloheikha | et | kol | ha'alot
-ha'eleh
-al | oyeveikha | ve'al | sone'eikha | asher | redafukha
+ha'eleh | al | oyeveikha | ve'al | sone'eikha | asher | redafukha
 
 30:8
 ve'atah | tashuv
@@ -46,14 +45,14 @@ ve'asita | et | kol | mitzvotav | asher | anokhi | metzavekha | haiyom
 vehotirekha | Yahweh | eloheikha | bekhol | ma'aseh | yadekha | bifri | vitnekha | uvifri | vehemtekha | uvifri | admatekha
 letovah
 ki | yashuv | Yahweh | lasus | aleikha | letov
-ka'asher | sas
-al | avoteikha
+ka'asher | sas | al | avoteikha
 
 30:10
 ki | tishma | bekol | Yahweh | eloheikha
 lishmor | mitzvotav | vechukotav
 haketuvah | besefer | hatorah | hazeh
-ki | tashuv | el | Yahweh | eloheikha | bekhol | levavekha | uvekhol | nafshekha
+ki | tashuv | el | Yahweh | eloheikha | bekhol | levavekha
+uvekhol | nafshekha
 
 30:11
 ki | hamitzvah | hazot | asher | anokhi | metzavekha
@@ -79,12 +78,14 @@ ki | karov | eleikha | hadavar | me'od | befikha | uvilvavekha | la'asoto
 
 30:15
 re'eh | natati | lefaneikha | haiyom | et | hachaiyim
-ve'et | hatov | ve'et | hamavet | ve'et | hara
+ve'et | hatov
+ve'et | hamavet
+ve'et | hara
 
 30:16
 im | tishma | el | mitzvot | Yahweh | eloheikha | asher | anokhi | metzavekha | haiyom
-le'ahavah | et | Yahweh | eloheikha | lalekhet | bidrakhav
-velishmor | mitzvotav | vechukotav | umishpatav
+le'ahavah | et | Yahweh | eloheikha | lalekhet | bidrakhav | velishmor | mitzvotav | vechukotav
+umishpatav
 vechayita | veravita
 uverakhkha | Yahweh | eloheikha | ba'aretz
 asher | atah | va | shamah | lerishtah
@@ -98,8 +99,7 @@ va'avadtam
 30:18
 higadti | lakhem | haiyom
 ki | avod
-toedun
-lo | ta'arikhun | yamim | al | ha'adamah | asher | atah | over | et | Haiyarden
+toedun | lo | ta'arikhun | yamim | al | ha'adamah | asher | atah | over | et | Haiyarden
 lavo | shamah | lerishtah
 
 30:19
@@ -111,7 +111,8 @@ lema'an | tichyeh
 atah | vezar'ekha
 
 30:20
-le'ahavah | et | Yahweh | eloheikha | lishmoa | bekolo | uledavekah | vo
+le'ahavah | et | Yahweh | eloheikha | lishmoa | bekolo
+uledavekah | vo
 ki | hu | chaiyeikha | ve'orekh | yameikha
 lashevet | al | ha'adamah | asher | Nishba | Yahweh | la'avoteikha | Le'avraham | Leyitzchak | Uleya'ako
 latet | lahem

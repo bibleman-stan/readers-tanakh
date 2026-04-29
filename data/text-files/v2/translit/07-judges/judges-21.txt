@@ -7,8 +7,7 @@ ish | mimenu | lo | yiten | bito | Levinyamin | le'ishah
 vaiyavo | ha'am | Beit | El
 vaiyeshevu | sham | ad | ha'erev | lifnei
 ha'elohim | vaiyis'u | kolam
-vaiyivku
-bekhi | gadol
+vaiyivku | bekhi | gadol
 
 21:3
 vaiyomeru
@@ -25,16 +24,13 @@ ushelamim
 
 21:5
 vaiyomeru | benei | Yisra'el
-mi | asher | lo | alah | vakahal | mikol | shivtei | Yisra'el
-el | Yahweh
+mi | asher | lo | alah | vakahal | mikol | shivtei | Yisra'el | el | Yahweh
 ki | hashevu'ah | hagedolah | hayetah | la'asher | lo | alah | el | Yahweh | Hamitzpah | lemor
 mot | yumat
 
 21:6
-vaiyinachamu | benei | Yisra'el
-el | Binyamin
-achiv
-vaiyomeru
+vaiyinachamu | benei | Yisra'el | el | Binyamin
+achiv | vaiyomeru
 Nigda | haiyom | shevet | echad | Miyisra'el
 
 21:7
@@ -79,7 +75,8 @@ shalom
 21:14
 vaiyashov | Binyamin | ba'et | hahi
 vaiyitenu | lahem | hanashim | asher | chiyu
-mineshei | Yavesh | Gil'ad | velo | matze'u | lahem
+mineshei | Yavesh | Gil'ad
+velo | matze'u | lahem
 ken
 
 21:15
@@ -93,11 +90,13 @@ ki | Nishmedah | Mibinyamin | ishah
 
 21:17
 vaiyomeru
-yerushat | peleitah | Levinyamin | velo | yimacheh | shevet | Miyisra'el
+yerushat | peleitah | Levinyamin
+velo | yimacheh | shevet | Miyisra'el
 
 21:18
 va'anachnu | lo | nukhal | latet | lahem | nashim | mibenoteinu
-ki | Nishbe'u | venei | Yisra'el | lemor | arur | noten | ishah | Levinyamin
+ki | Nishbe'u | venei | Yisra'el | lemor
+arur | noten | ishah | Levinyamin
 
 21:19
 vaiyomeru | hineh | chag | Yahweh | Beshilo | miyamim | yamimah | asher | mitzefonah | Leveit | El | mizrechah | hashemesh

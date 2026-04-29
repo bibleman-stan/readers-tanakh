@@ -26,7 +26,8 @@ saratet
 21:6
 kedoshim | yihyu | leloheihem
 velo | yechalelu
-shem | eloheihem
+shem
+eloheihem
 ki | et | ishei | Yahweh | lechem | eloheihem | hem | makrivim
 vehayu | kodesh
 
@@ -52,12 +53,12 @@ tisaref
 21:10
 vehakohen | hagadol | me'echav | asher | yutzak | al | rosho | shemen | hamishchah | umile | et | yado
 lilbosh
-et | habegadim | et | rosho | lo | yifra | uvegadav
+et | habegadim
+et | rosho | lo | yifra | uvegadav
 lo | yifrom
 
 21:11
-ve'al | kol | nafshot | met
-lo | yavo | le'aviv | ule'imo
+ve'al | kol | nafshot | met | lo | yavo | le'aviv | ule'imo
 lo | yitama
 
 21:12
@@ -71,8 +72,7 @@ ishah | vivtuleiha
 yikach
 
 21:14
-almanah | ugerushah | vachalalah | zonah | et | eleh
-lo | yikach
+almanah | ugerushah | vachalalah | zonah | et | eleh | lo | yikach
 ki | im | betulah | me'amav | yikach | ishah
 
 21:15
@@ -80,14 +80,12 @@ velo | yechalel | zar'o | be'amav
 ki | ani | Yahweh | mekadesho
 
 21:16
-vaydaber | Yahweh
-el | Mosheh | lemor
+vaydaber | Yahweh | el | Mosheh | lemor
 
 21:17
 daber | el | Aharon | lemor
 ish | mizar'akha | ledorotam | asher | yihyeh | vo | mum
-lo | yikrav | lehakriv
-lechem | elohav
+lo | yikrav | lehakriv | lechem | elohav
 
 21:18
 ki | khol | ish | asher | bo | mum
@@ -113,8 +111,8 @@ o | meroach | ashekh
 21:21
 kol | ish | asher | bo | mum | mizera | Aharon | hakohen
 lo | yigash | lehakriv
-et | ishei | Yahweh | mum | bo | et | lechem | elohav
-lo | yigash | lehakriv
+et | ishei | Yahweh | mum | bo | et | lechem | elohav | lo | yigash
+lehakriv
 
 21:22
 lechem | elohav | mikadeshei | hakodashim | umin | hakodashim
@@ -127,7 +125,7 @@ velo | yechalel | et | mikdashai
 ki | ani | Yahweh | mekadesham
 
 21:24
-vaydaber | Mosheh
-el | Aharon | ve'el | banav
+vaydaber | Mosheh | el | Aharon
+ve'el | banav
 ve'el | kol | benei
 Yisra'el

@@ -1,8 +1,6 @@
 2:1
-koh | amar | Yahweh
-al | sheloshah | pish'ei | Mo'av
-ve'al | arba'ah | lo | ashivenu
-al | sarefo | atzmot | melekh | Edom | lasid
+koh | amar | Yahweh | al | sheloshah | pish'ei | Mo'av | ve'al | arba'ah
+lo | ashivenu | al | sarefo | atzmot | melekh | Edom | lasid
 
 2:2
 veshilachti | esh | Bemo'av | ve'akhelah
@@ -15,19 +13,20 @@ vehikhrati | shofet | mikirbah | vekhol | sareiha | eherog | imo
 amar | Yahweh
 
 2:4
-koh | amar | Yahweh | al | sheloshah | pish'ei | Yehudah
-ve'al | arba'ah | lo | ashivenu
+koh | amar | Yahweh | al | sheloshah | pish'ei | Yehudah | ve'al | arba'ah
+lo | ashivenu
 al | mo'osam | et | torat | Yahweh | vechukav | lo | shamaru
 vaiyat'um | kizveihem
-asher | halekhu | avotam | achareihem
+asher | halekhu | avotam
+achareihem
 
 2:5
 veshilachti | esh | Bihudah | ve'akhelah
 armenot | Yerushalim
 
 2:6
-koh | amar | Yahweh | al | sheloshah | pish'ei | Yisra'el
-ve'al | arba'ah | lo | ashivenu
+koh | amar | Yahweh | al | sheloshah | pish'ei | Yisra'el | ve'al | arba'ah
+lo | ashivenu
 al | mikhram | bakesef | tzadik | ve'evyon
 ba'avur | na'alayim
 
@@ -63,8 +62,7 @@ ne'um | Yahweh
 
 2:12
 vatashku | et | hanezirim
-yayin
-ve'al | hanevi'im | tzivitem | lemor | lo
+yayin | ve'al | hanevi'im | tzivitem | lemor | lo
 tinave'u
 
 2:13

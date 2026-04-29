@@ -9,7 +9,8 @@ lo | yigos | et | re'ehu | ve'et | achiv
 ki | kara | shemitah | Layahweh
 
 15:3
-et | hanakheri | tigos
+et | hanakheri
+tigos
 va'asher | yihyeh | lekha | et | achikha
 tashmet | yadekha
 
@@ -52,7 +53,8 @@ vehayah | vekha
 chet
 
 15:10
-naton | titen | lo | velo | yera | levavekha
+naton | titen | lo
+velo | yera | levavekha
 betitekha | lo
 ki | biglal | hadavar | hazeh | yevarekhkha | Yahweh | eloheikha
 bekhol | ma'asekha | uvekhol | mishlach | yadekha
@@ -81,13 +83,12 @@ titen | lo
 15:15
 vezakharta | ki | eved | hayita | be'eretz | Mitzrayim
 vaiyifdekha
-Yahweh | eloheikha
-al | ken | anokhi | metzavekha | et | hadavar | hazeh
+Yahweh | eloheikha | al | ken | anokhi | metzavekha | et | hadavar | hazeh
 haiyom
 
 15:16
-vehayah | ki | yomar | eleikha | lo | etze | me'imakh
-ki | ahevekha | ve'et | beitekha
+vehayah | ki | yomar | eleikha | lo | etze
+me'imakh | ki | ahevekha | ve'et | beitekha
 ki | tov | lo
 imakh
 
@@ -107,8 +108,7 @@ uverakhkha | Yahweh | eloheikha | bekhol | asher | ta'aseh
 
 15:19
 kal | habekhor | asher | yivaled | bivkarecha | uvetzonekha | hazakhar
-takdish
-Layahweh | eloheikha
+takdish | Layahweh | eloheikha
 lo | ta'avod | bivkhor | shorekha
 velo | tagoz | bekhor | tzonekha
 
@@ -124,8 +124,7 @@ lo | tizbachenu | Layahweh
 eloheikha
 
 15:22
-bish'areikha | tokhalenu | hatame | vehatahor | yachdav | katzevi
-vekha'aiyal
+bish'areikha | tokhalenu | hatame | vehatahor | yachdav | katzevi | vekha'aiyal
 
 15:23
 rak | et | damo | lo | tokhel

@@ -37,8 +37,8 @@ ki | rabu | pish'eihem
 atzemu | meshuvoteihem
 
 5:7
-ei | lazot | esloach | lakh
-banayikh | azavuni | vaiyishave'u
+ei | lazot | esloach | lakh | banayikh | azavuni
+vaiyishave'u
 belo | elohim | va'asbia | otam | vaiyin'afu
 uveit | zonah | yitgodadu
 
@@ -56,8 +56,7 @@ nafshi
 
 5:10
 alu | vesharoteiha | veshachetu
-vekhalah
-al | ta'asu
+vekhalah | al | ta'asu
 hasiru | netishoteiha
 ki | lo | Layahweh
 hemah
@@ -67,8 +66,8 @@ ki | vagod | bagedu | bi | beit | Yisra'el | uveit | Yehudah
 ne'um | Yahweh
 
 5:12
-kichashu | Bayahweh | vaiyomeru
-lo | hu | velo | tavo | aleinu | ra'ah
+kichashu | Bayahweh | vaiyomeru | lo | hu
+velo | tavo | aleinu | ra'ah
 vecherev | vera'av
 lo | nir'eh
 
@@ -80,7 +79,8 @@ koh | ye'aseh | lahem
 5:14
 lakhen | koh | amar | Yahweh | elohei | tzeva'ot
 ya'an | daberkhem
-et | hadavar | hazeh
+et | hadavar
+hazeh
 hini | noten | devarai | befikha | le'esh | veha'am | hazeh | etzim
 va'akhalatam
 
@@ -92,8 +92,7 @@ goy | lo | teda | leshono
 velo | tishma | mah | yedaber
 
 5:16
-ashpato
-kekever | patuach
+ashpato | kekever | patuach
 kulam
 giborim
 
@@ -123,8 +122,7 @@ beveit | Ya'ako
 vehashmi'uha | Vihudah | lemor
 
 5:21
-shim'u | na | zot
-am | sakhal
+shim'u | na | zot | am | sakhal
 ve'ein | lev
 einayim | lahem | velo | yir'u
 azenayim | lahem
@@ -171,8 +169,7 @@ shamenu | ashetu | gam | averu | divrei | ra
 din | lo | danu
 din | yatom
 veyatzlichu
-umishpat | evyonim
-lo | shafatu
+umishpat | evyonim | lo | shafatu
 
 5:29
 ha'al | eleh | lo | efkod
@@ -186,4 +183,5 @@ shamah | vesha'arurah | Nihyetah | ba'aretz
 
 5:31
 hanevi'im | Nibe'u | vasheker | vehakohanim | yirdu | al | yedeihem
-ve'ami | ahavu | khen | umah | ta'asu | le'acharitah
+ve'ami | ahavu | khen
+umah | ta'asu | le'acharitah

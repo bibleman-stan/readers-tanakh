@@ -7,9 +7,7 @@ terem | ya'avoru
 
 3:2
 vayhi | miktzeh
-sheloshet | yamim
-vaiya'avru | hashoterim
-bekerev | hamachaneh
+sheloshet | yamim | vaiya'avru | hashoterim | bekerev | hamachaneh
 
 3:3
 vaytzavu | et | ha'am | lemor
@@ -21,8 +19,8 @@ ve'atem | tis'u | mimekomkhem
 vahalakhtem | acharav
 
 3:4
-akh | rachok | yihyeh | beineikhem | uveinov
-ke'alpayim | amah | bamidah
+akh | rachok | yihyeh | beineikhem | uveinov | ke'alpayim | amah
+bamidah
 al | tikrevu | elav | lema'an | asher | tede'u | et | haderekh | asher | telekhu | vah
 ki | lo | avartem | baderekh | mitemol | shilshom
 
@@ -38,8 +36,7 @@ se'u | et | aron | haberit
 ve'ivru
 lifnei | ha'am
 vaiyis'u | et | aron | haberit
-vaiyelekhu
-lifnei | ha'am
+vaiyelekhu | lifnei | ha'am
 
 3:7
 vaiyomer | Yahweh | el | Yehoshua
@@ -50,14 +47,16 @@ ehyeh | imakh
 
 3:8
 ve'atah | tetzaveh | et | hakohanim
-nose'ei | aron | haberit | lemor | kevo'akhem | ad | ketzeh | mei | Haiyarden | Baiyarden
+nose'ei | aron | haberit | lemor
+kevo'akhem | ad | ketzeh | mei | Haiyarden | Baiyarden
 ta'amodu
 
 3:9
 vaiyomer | Yehoshua
 el | benei | Yisra'el
 goshu | henah | veshim'u
-et | divrei | Yahweh | eloheikhem
+et | divrei
+Yahweh | eloheikhem
 
 3:10
 vaiyomer | Yehoshua
@@ -84,8 +83,8 @@ hamayim | haiyoredim | milma'elah | veya'amdu
 ned | echad
 
 3:14
-vayhi | binsoa | ha'am | me'oholeihem | la'avor
-et | Haiyarden | vehakohanim | nose'ei | ha'aron | haberit
+vayhi | binsoa | ha'am | me'oholeihem | la'avor | et | Haiyarden
+vehakohanim | nose'ei | ha'aron | haberit
 lifnei | ha'am
 
 3:15
@@ -106,6 +105,6 @@ neged | Yericho
 3:17
 vaiya'amdu | hakohanim | nose'ei | ha'aron | berit | Yahweh | becharavah | betokh | Haiyarden
 hakhen
-vekhol | Yisra'el | oerim | becharavah
-ad | asher | tamu | kol | hagoy | la'avor
+vekhol | Yisra'el | oerim | becharavah | ad | asher | tamu | kol | hagoy
+la'avor
 et | Haiyarden

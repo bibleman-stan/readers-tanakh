@@ -35,8 +35,7 @@ Uzekharyahu
 Uvela | ben | Azaz
 ben | Shema
 ben | Yo'el
-hu | yoshev | Ba'aro'er
-ve'ad | Nevo | Uva'al | Me'on
+hu | yoshev | Ba'aro'er | ve'ad | Nevo | Uva'al | Me'on
 
 5:9
 velamizrach | yashav | ad | levo | midbarah | lemin | hanahar
@@ -45,12 +44,10 @@ ki | mikneihem | ravu | be'eretz | Gil'ad
 
 5:10
 uvimei | Sha'ul | asu | milchamah | im | hahagri'im | vaiyipelu
-beyadam | vaiyeshevu | be'oholeihem
-al | kol | penei | mizrach | Lagil'ad
+beyadam | vaiyeshevu | be'oholeihem | al | kol | penei | mizrach | Lagil'ad
 
 5:11
-uvenei | Gad | lenegdam | yashevu | be'eretz | Habashan
-ad | Salkhah
+uvenei | Gad | lenegdam | yashevu | be'eretz | Habashan | ad | Salkhah
 
 5:12
 Yo'el | harosh
@@ -73,8 +70,7 @@ leveit | avotam
 
 5:16
 vaiyeshevu | Bagil'ad | Babashan | uvivnoteiha
-uvekhol | migreshei | Sharon
-al | totz'otam
+uvekhol | migreshei | Sharon | al | totz'otam
 
 5:17
 kulam | hityachsu | bimei
@@ -83,13 +79,14 @@ Yarave'am | melekh | Yisra'el
 
 5:18
 benei | Re'uven | vegadi | vachatzi | shevet | Menasheh | min | benei | chayil
-anashim | nose'ei | magen | vecherev | vedorekhei | keshet | ulemudei | milchamah
+anashim | nose'ei | magen | vecherev | vedorekhei | keshet
+ulemudei | milchamah
 arba'im | ve'arba'ah | elef | usheva | me'ot | veshishim
 yotze'ei | tzava
 
 5:19
-vaiya'asu | milchamah
-im | hahagri'im | Vitur | Venafish
+vaiya'asu | milchamah | im | hahagri'im
+Vitur | Venafish
 Venodav
 
 5:20
@@ -104,13 +101,12 @@ ki | vatechu | vo
 5:21
 vaiyishbu | mikneihem | gemaleihem | chamishim | elef | vetzon | matayim | vachamishim | elef | vachamorim
 alpayim
-venefesh | adam
-me'ah | alef
+venefesh | adam | me'ah | alef
 
 5:22
 ki | chalalim | rabim | nafalu
-ki | meha'elohim | hamilchamah | vaiyeshevu | tachteihem
-ad | hagolah
+ki | meha'elohim | hamilchamah
+vaiyeshevu | tachteihem | ad | hagolah
 
 5:23
 uvenei | chatzi | shevet | Menasheh | yashevu
@@ -127,7 +123,8 @@ leveit | avotam
 
 5:25
 vaiyim'alu | belohei
-avoteihem | vaiyiznu | acharei | elohei | amei | ha'aretz
+avoteihem
+vaiyiznu | acharei | elohei | amei | ha'aretz
 asher | hishmid | elohim | mipeneihem
 
 5:26

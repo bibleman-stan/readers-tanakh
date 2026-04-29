@@ -27,16 +27,15 @@ vaiyomer
 anokhi | eg'al
 
 4:5
-vaiyomer | Bo'az
-beyom | kenotcha | hasadeh
+vaiyomer | Bo'az | beyom | kenotcha | hasadeh
 miyad | No'omi
-ume'et | Rut | hamo'aviyah | eshet | hamet | kaniti | lehakim | shem | hamet
-al | nachalato
+ume'et | Rut | hamo'aviyah | eshet | hamet | kaniti | lehakim | shem | hamet | al | nachalato
 
 4:6
 vaiyomer | hago'el | lo | ukhal | lig'ol | li
 pen | ashchit
-et | nachalati | ge'al | lekha | atah | et | ge'ulati
+et | nachalati
+ge'al | lekha | atah | et | ge'ulati
 ki | lo | ukhal | lig'ol
 
 4:7
@@ -90,7 +89,8 @@ haiyom | veyikare | shemo | Beyisra'el
 
 4:15
 vehayah | lokh | lemeshiv | nefesh | ulekhalkel
-et | seivatekh | ki | khalatekh | asher | ahevatekh | yeladatu
+et | seivatekh
+ki | khalatekh | asher | ahevatekh | yeladatu
 asher | hi | toah | lakh | mishiv'ah | banim
 
 4:16
@@ -99,7 +99,8 @@ vatehi | lo | le'omenet
 
 4:17
 vatikrenah | lo | hashekhenot | shem | lemor
-yulad | ben | Leno'omi | vatikrenah | shemo | Oved
+yulad | ben | Leno'omi
+vatikrenah | shemo | Oved
 hu | avi | Yishai
 avi | David
 

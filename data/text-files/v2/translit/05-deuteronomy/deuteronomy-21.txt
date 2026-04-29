@@ -10,8 +10,7 @@ veshofeteikha | umadedu | el | he'arim | asher | sevivot | hechalal
 
 21:3
 vehayah | ha'ir
-hakerovah
-el | hechalal
+hakerovah | el | hechalal
 velakechu | ziknei | ha'ir | hahiv | eglat | bakar | asher | lo | ubad | bah
 asher | lo | mashekhah | be'ol
 
@@ -23,18 +22,15 @@ ve'arefu | sham | et | ha'eglah | banachal
 
 21:5
 venigeshu | hakohanim | benei | Levi
-ki | vam | bachar | Yahweh | eloheikha | leshareto
-ulevarekh
+ki | vam | bachar | Yahweh | eloheikha | leshareto | ulevarekh
 beshem | Yahweh
 ve'al | pihem | yihyeh
 kol | riv | vekhol | naga
 
 21:6
 vekhol | ziknei | ha'ir | hahiv
-hakerovim
-el | hechalal
-yirchatzu | et | yedeihem
-al | ha'eglah
+hakerovim | el | hechalal
+yirchatzu | et | yedeihem | al | ha'eglah
 ha'arufah | vanachal
 
 21:7
@@ -55,8 +51,7 @@ ki | ta'aseh | haiyashar
 be'einei | Yahweh
 
 21:10
-ki | tetze | lamilchamah
-al | oyeveikha
+ki | tetze | lamilchamah | al | oyeveikha
 unetano | Yahweh | eloheikha | beyadekha
 veshavita | shivyo
 
@@ -67,8 +62,7 @@ yefat | to'ar
 vechashakta | vah | velakachta | lekha | le'ishah
 
 21:12
-vahavetah
-el | tokh | beitekha
+vahavetah | el | tokh | beitekha
 vegilechah | et | roshah
 ve'asetah
 et | tzipareneiha
@@ -106,8 +100,8 @@ ki | hu | reshit | ono | lo | mishpat | habekhorah
 21:18
 ki | yihyeh | le'ish | ben | sorer | umoreh
 einenu | shomea
-bekol | aviv
-uvekol | imo | veyiseru | oto
+bekol | aviv | uvekol | imo
+veyiseru | oto
 velo | yishma
 aleihem
 
@@ -129,9 +123,8 @@ mikirbecha | vekhol | Yisra'el
 yishme'u | veyira'u
 
 21:22
-vekhi | yihyeh | ve'ish | chet | mishpat | mavet | vehumat
-vetalita | oto
-al | etz
+vekhi | yihyeh | ve'ish | chet | mishpat | mavet
+vehumat | vetalita | oto | al | etz
 
 21:23
 lo | talin | nivlato | al | ha'etz | ki | kavor | tikberenu | baiyom | hahu

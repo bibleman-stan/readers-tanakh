@@ -2,8 +2,7 @@
 balaylah | hahu | nadedah
 shenat | hamelekh
 vaiyomer | lehavi | et | sefer | hazikhronot | divrei | haiyamim
-vaiyihyu | nikra'im
-lifnei | hamelekh
+vaiyihyu | nikra'im | lifnei | hamelekh
 
 6:2
 vaiyimatze | khatuv | asher | higid | Maredokhai | al | Bigtana | Vateresh | shenei | sarisei | hamelekh
@@ -11,16 +10,14 @@ mishomerei | hasaf | asher | bikshu | lishloach | yad | bamelekh
 Achashveroosh
 
 6:3
-vaiyomer | hamelekh | mah | Na'asah | yekar | ugedulah | Lemaredokhai
-al | zeh | vaiyomeru | na'arei | hamelekh | mesharetav
+vaiyomer | hamelekh | mah | Na'asah | yekar | ugedulah | Lemaredokhai | al | zeh
+vaiyomeru | na'arei | hamelekh | mesharetav
 lo | Na'asah | imo | davar
 
 6:4
 vaiyomer | hamelekh | mi | vechatzer
-Vehaman | ba | lachatzar | beit | hamelekh | hachitzonah
-lemor | lamelekh
-litlot | et | Maredokhai
-al | ha'etz
+Vehaman | ba | lachatzar | beit | hamelekh | hachitzonah | lemor | lamelekh
+litlot | et | Maredokhai | al | ha'etz
 asher | hekhin | lo
 
 6:5
@@ -31,16 +28,13 @@ yavo
 
 6:6
 vaiyavo | Haman
-vaiyomer | lo | hamelekh | mah | la'asot
-ba'ish | asher | hamelekh
-chafetz | bikaro
-vaiyomer | Haman | belibo
+vaiyomer | lo | hamelekh | mah | la'asot | ba'ish | asher | hamelekh
+chafetz | bikaro | vaiyomer | Haman | belibo
 lemi | yachpotz | hamelekh | la'asot | yekar
 yoter | mimeni
 
 6:7
-vaiyomer | Haman
-el | hamelekh
+vaiyomer | Haman | el | hamelekh
 ish | asher | hamelekh
 chafetz | bikaro
 
@@ -74,8 +68,7 @@ kakhah | ye'aseh | la'ish | asher | hamelekh
 chafetz | bikaro
 
 6:12
-vaiyashov | Maredokhai
-el | sha'ar | hamelekh
+vaiyashov | Maredokhai | el | sha'ar | hamelekh
 Vehaman | Nidchaf | el | beito
 avel
 vachafui | rosh
@@ -90,6 +83,5 @@ ki | nafol | tipol | lefanav
 odam | medaberim | imo
 vesarisei | hamelekh
 higi'u
-vaiyavhilu | lehavi | et | Haman
-el | hamishteh
+vaiyavhilu | lehavi | et | Haman | el | hamishteh
 asher | asetah | Ester

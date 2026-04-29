@@ -7,8 +7,8 @@ me'et | Yahweh | lemor
 koh | amar | Yahweh | amod | bachatzar | beit | Yahweh
 vedibarta | al | kol | arei | Yehudah | haba'im | lehishtachavot | beit | Yahweh | et | kol | hadevarim
 asher | tzivitikha
-ledaber | aleihem
-al | tigra | davar
+ledaber | aleihem | al | tigra
+davar
 
 26:3
 ulai | yishme'u
@@ -21,8 +21,7 @@ mipenei | roa | ma'aleihem
 26:4
 ve'amarta | aleihem | koh
 amar | Yahweh
-im | lo | tishme'u | elai
-lalekhet | betorati | asher | natati | lifneikhem
+im | lo | tishme'u | elai | lalekhet | betorati | asher | natati | lifneikhem
 
 26:5
 lishmoa | al | divrei | avadai | hanevi'im | asher | anokhi
@@ -42,8 +41,7 @@ beveit | Yahweh
 
 26:8
 vayhi | kekhalot | Yirmeyahu | ledaber | et | kol | asher | tzivah | Yahweh
-ledaber
-el | kol | ha'am
+ledaber | el | kol | ha'am
 vaiyitpesu | oto | hakohanim | vehanevi'im | vekhol | ha'am | lemor
 mot | tamut
 
@@ -75,8 +73,7 @@ asher | shema'tem
 ve'atah | heitivu | darkheikhem | uma'aleikhem
 veshim'u | bekol
 Yahweh | eloheikhem
-veyinachem | Yahweh
-el | hara'ah | asher | diber
+veyinachem | Yahweh | el | hara'ah | asher | diber
 aleikhem
 
 26:14
@@ -89,22 +86,19 @@ akh | yadoa | tede'u | ki | im | memitim | atem | oti
 ki | dam | naki | atem | notenim | aleikhem
 ve'el | ha'ir | hazot
 ve'el | yosheveiha
-ki | ve'emet | shelachani | Yahweh | aleikhem
-ledaber | be'azeneikhem
-et | kol | hadevarim
+ki | ve'emet | shelachani | Yahweh | aleikhem | ledaber | be'azeneikhem | et | kol | hadevarim
 ha'eleh
 
 26:16
-vaiyomeru | hasarim | vekhol | ha'am
-el | hakohanim | ve'el | hanevi'im
+vaiyomeru | hasarim | vekhol | ha'am | el | hakohanim
+ve'el | hanevi'im
 ein | la'ish | hazeh | mishpat | mavet
 ki | beshem | Yahweh | eloheinu
 diber | eleinu
 
 26:17
 vaiyakumu | anashim | miziknei
-ha'aretz | vaiyomeru
-el | kol | kehal | ha'am | lemor
+ha'aretz | vaiyomeru | el | kol | kehal | ha'am | lemor
 
 26:18
 Mikhayah | hamorashti | hayah | niba | bimei
@@ -116,11 +110,9 @@ levamot | ya'ar
 26:19
 hehamet | hemituhu | Chizkiyahu | melekh | Yehudah | vekhol | Yehudah | halo | yare | et | Yahweh
 vaychal | et | penei | Yahweh
-vaiyinachem | Yahweh
-el | hara'ah
+vaiyinachem | Yahweh | el | hara'ah
 asher | diber | aleihem
-va'anachnu | osim | ra'ah | gedolah
-al | nafshoteinu
+va'anachnu | osim | ra'ah | gedolah | al | nafshoteinu
 
 26:20
 vegam | ish | hayah | mitnabe | beshem | Yahweh
@@ -137,14 +129,12 @@ vaiyivrach
 vaiyavo | Mitzrayim
 
 26:22
-vaiyishlach | hamelekh | Yehoyakim | anashim | Mitzrayim | et | Elnatan | ben | Akhbor | va'anashim | ito
-el | Mitzrayim
+vaiyishlach | hamelekh | Yehoyakim | anashim | Mitzrayim | et | Elnatan | ben | Akhbor | va'anashim | ito | el | Mitzrayim
 
 26:23
 vaiyotzi'u | et | Uriyahu | Mimitzrayim | vayvi'uhu | el | hamelekh | Yehoyakim
 vaiyakehu | becharev
-vaiyashlekh | et | nivlato
-el | kivrei | benei | ha'am
+vaiyashlekh | et | nivlato | el | kivrei | benei | ha'am
 
 26:24
 akh | yad | Achikam | ben | Shafan

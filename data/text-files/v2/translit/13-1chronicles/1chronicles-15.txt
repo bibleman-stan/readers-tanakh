@@ -1,23 +1,19 @@
 15:1
-vaiya'as | lo | vatim
-be'ir | David
+vaiya'as | lo | vatim | be'ir | David
 vaiyakhen | makom | la'aron | ha'elohim
 vaiyet | lo
 ohel
 
 15:2
-az | amar | David
-lo | laset | et | aron | ha'elohim
+az | amar | David | lo | laset | et | aron | ha'elohim
 ki
 im | halviyim
 ki | vam | bachar | Yahweh | laset | et | aron | Yahweh | uleshareto
 ad | olam
 
 15:3
-vaiyakhel | David | et | kol | Yisra'el
-el | Yerushalim
-leha'alot | et | aron | Yahweh
-el | mekomo
+vaiyakhel | David | et | kol | Yisra'el | el | Yerushalim
+leha'alot | et | aron | Yahweh | el | mekomo
 asher | hekhin | lo
 
 15:4
@@ -28,8 +24,7 @@ ve'et | halviyim
 livnei
 Kehat
 Uri'el | hasar
-ve'echav
-me'ah | ve'esrim
+ve'echav | me'ah | ve'esrim
 
 15:6
 livnei | Merari | Asayah | hasar
@@ -39,8 +34,7 @@ ve'echav | matayim | ve'esrim
 livnei
 Gereshom
 Yo'el | hasar
-ve'echav
-me'ah | usheloshim
+ve'echav | me'ah | usheloshim
 
 15:8
 livnei | Elitzafan | Shema'yah | hasar | ve'echav | matayim
@@ -68,8 +62,8 @@ Ve'aminadav
 vaiyomer | lahem
 atem | rashei | ha'avot | lalviyim
 hitkadeshu | atem | va'acheikhem
-veha'alitem | et | aron | Yahweh | elohei | Yisra'el
-el | hakhinoti | lo
+veha'alitem | et | aron | Yahweh | elohei | Yisra'el | el | hakhinoti
+lo
 
 15:13
 ki | lemabarishonah | lo | atem
@@ -89,14 +83,14 @@ kidvar | Yahweh | bikhtefam | bamotot
 aleihem
 
 15:16
-vaiyomer | David | lesarei | halviyim
-leha'amid | et | acheihem | hamshorerim
+vaiyomer | David | lesarei | halviyim | leha'amid | et | acheihem | hamshorerim
 bikhlei | shir | nevalim | vekhinorot | umetziltayim | mashmi'im | leharim | bekol | lesimchah
 
 15:17
 vaiya'amidu | halviyim | et | Heiman | ben | Yo'el | umin | echav
 Asaf
-ben | Berekhyahu | umin | benei | Merari | acheihem
+ben | Berekhyahu
+umin | benei | Merari | acheihem
 Eitan
 ben | Kushayahu
 
@@ -112,9 +106,8 @@ Ve'eitan
 bimtziltayim | nechoshet | lehashmia
 
 15:20
-Uzekharyah | Va'azi'el | Ushemiramot | Vichi'el | Ve'uni | Ve'eli'av
-Uma'aseyahu | Uvenayahu | binvalim
-al | alamot
+Uzekharyah | Va'azi'el | Ushemiramot | Vichi'el | Ve'uni | Ve'eli'av | Uma'aseyahu
+Uvenayahu | binvalim | al | alamot
 
 15:21
 Umatityahu | Ve'elifelehu | Umikneyahu | Ve'oved | Edom | Vi'i'el
@@ -142,14 +135,14 @@ haholekhim | leha'alot | et | aron | berit | Yahweh | min | beit | Oed | Edom | 
 
 15:26
 vayhi | be'zor | ha'elohim | et | halviyim
-nose'ei | aron | berit | Yahweh | vaiyizbechu | shiv'ah | farim
+nose'ei | aron | berit | Yahweh
+vaiyizbechu | shiv'ah | farim
 veshiv'ah | eilim
 
 15:27
 Vedavid | mekhurbal | bim'il | butz | vekhol | halviyim | hanose'im | et | ha'aron
 vehamshorerim | Ukhenanyah | hasar | hamasa
-hamshorerim
-ve'al | David
+hamshorerim | ve'al | David
 efod | bad
 
 15:28
@@ -158,7 +151,6 @@ bitru'ah | uvekol | shofar | uvachatzotzerot | uvimtziltayim | mashmi'im | binva
 
 15:29
 vayhi | aron | berit | Yahweh
-ba
-ad | ir | David
+ba | ad | ir | David
 Umikhal | bat | Sha'ul | Nishkefah | be'ad | hachalon | vatere | et | hamelekh | David | meraked | umesachek
 vativez | lo | belibah

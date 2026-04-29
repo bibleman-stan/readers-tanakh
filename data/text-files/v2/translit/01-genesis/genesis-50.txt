@@ -5,8 +5,8 @@ vaiyevek | alav
 vaiyishak | lo
 
 50:2
-vaytzav | Yosef | et | avadav | et | harofe'im | lachanot
-et | aviv | vaiyachantu | harofe'im | et | Yisra'el
+vaytzav | Yosef | et | avadav | et | harofe'im | lachanot | et | aviv
+vaiyachantu | harofe'im | et | Yisra'el
 
 50:3
 vaiyimle'u | lo | arba'im | yom
@@ -16,8 +16,7 @@ shiv'im | yom
 
 50:4
 vaiya'avru | yemei | vekhito
-vaydaber | Yosef
-el | beit | par'oh | lemor
+vaydaber | Yosef | el | beit | par'oh | lemor
 im | na | matzati | chen | be'eineikhem
 daberu | na | be'azenei | far'oh | lemor
 
@@ -34,8 +33,7 @@ vaiyomer
 par'oh | aleh | ukevor | et | avikha | ka'asher | hishbi'ekha
 
 50:7
-vaiya'al | Yosef
-likbor | et | aviv
+vaiya'al | Yosef | likbor | et | aviv
 vaiya'alu | ito | kol | avdei | far'oh | ziknei | veito
 vekhol
 ziknei | eretz | Mitzrayim
@@ -51,7 +49,8 @@ azevu | be'eretz | Goshen
 vaiya'al | imo
 gam | rekhev
 gam | parashim
-vayhi | hamachaneh | kaved | me'od
+vayhi | hamachaneh
+kaved | me'od
 
 50:10
 vaiyavo'u | ad | goren | Ha'atad | asher | be'ever | Haiyarden
@@ -78,9 +77,7 @@ al | penei | Mamre
 
 50:14
 vaiyashov | Yosef | Mitzraymah | hu | ve'echav
-vekhol | ha'olim | ito
-likbor | et | aviv
-acharei | kavero | et | aviv
+vekhol | ha'olim | ito | likbor | et | aviv | acharei | kavero | et | aviv
 
 50:15
 vaiyir'u | achei | Yosef | ki | met | avihem
@@ -91,8 +88,7 @@ vehashev | yashiv | lanu | et | kol | hara'ah | asher | gamalnu
 oto
 
 50:16
-vaytzavu
-el | Yosef | lemor
+vaytzavu | el | Yosef | lemor
 avikha | tzivah | lifnei | moto | lemor
 
 50:17
@@ -110,8 +106,7 @@ vaiyomeru
 hinenu | lekha | la'avadim
 
 50:19
-vaiyomer | alehem | Yosef
-al | tira'u
+vaiyomer | alehem | Yosef | al | tira'u
 ki | hatachat | elohim
 ani
 
@@ -125,16 +120,15 @@ lema'an | asoh | kaiyom | hazeh | lehachayot | am | rav
 50:21
 ve'atah | al | tira'u
 anokhi | akhalkel | etkhem
-ve'et | tapekhem | vaynachem | otam
-vaydaber
-al | libam
+ve'et | tapekhem
+vaynachem | otam
+vaydaber | al | libam
 
 50:22
 vaiyeshev | Yosef | Bemitzrayim
 hu
 uveit | aviv
-vaychi | Yosef
-me'ah | va'eser
+vaychi | Yosef | me'ah | va'eser
 shanim
 
 50:23

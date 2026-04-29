@@ -37,10 +37,8 @@ yeshalem | shenayim
 
 22:7
 im | lo | yimatze | haganav
-venikrav | ba'al | habayit
-el | ha'elohim
-im | lo | shalach | yado
-bimlekhet | re'ehu
+venikrav | ba'al | habayit | el | ha'elohim
+im | lo | shalach | yado | bimlekhet | re'ehu
 
 22:8
 al | kol | devar | pesha | al | shor | al | chamor | al | seh | al | salmah | al | kol | avedah | asher | yomar | ki | hu | zeh
@@ -56,8 +54,7 @@ umet | ov | Nishbar | ov | Nishbah | ein | ro'eh
 
 22:10
 shevu'at | Yahweh | tihyeh | bein | sheneihem
-im | lo | shalach | yado
-bimlekhet | re'ehu
+im | lo | shalach | yado | bimlekhet | re'ehu
 velakach | be'alav
 velo | yeshalem
 
@@ -74,8 +71,7 @@ lo | yeshalem
 22:13
 vekhi | yish'al | ish | me'im | re'ehu
 venishbar | ov | met
-be'alav | ein | imo
-shalem | yeshalem
+be'alav | ein | imo | shalem | yeshalem
 
 22:14
 im | be'alav | imo
@@ -125,14 +121,13 @@ vehayu | nesheikhem | almanot | uveneikhem
 yetomim
 
 22:24
-im | kesef | talveh | et | ami | et | he'ani | imakh
-lo | tihyeh | lo | kenosheh | lo | tesimun | alav
+im | kesef | talveh | et | ami | et | he'ani | imakh | lo | tihyeh | lo
+kenosheh | lo | tesimun | alav
 neshekh
 
 22:25
 im | chavol | tachbol
-salmat | re'ekha
-ad | bo | hashemesh
+salmat | re'ekha | ad | bo | hashemesh
 teshivenu | lo
 
 22:26
@@ -146,8 +141,7 @@ ki | chanun | ani
 22:27
 elohim
 lo | tekalel
-venasi | ve'amekha
-lo | ta'or
+venasi | ve'amekha | lo | ta'or
 
 22:28
 mele'atekha | vedim'akha | lo | te'acher | bekhor | baneikha
@@ -160,6 +154,5 @@ baiyom | hashemini | titenov | li
 
 22:30
 ve'anshei | kodesh
-tihyun | li
-uvasar | basadeh | terefah | lo | tokhelu | lakelev
-tashlikhun | oto
+tihyun | li | uvasar | basadeh | terefah | lo | tokhelu
+lakelev | tashlikhun | oto

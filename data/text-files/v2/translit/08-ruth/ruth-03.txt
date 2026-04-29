@@ -5,13 +5,13 @@ biti | halo | avakesh | lakh | manoach | asher | yitav | lakh
 
 3:2
 ve'atah | halo | Vo'az | moda'tanu | asher | hayit
-et | na'arotav | hineh | hu | zoreh | et | goren | hase'orim
+et | na'arotav
+hineh | hu | zoreh | et | goren | hase'orim
 halayelah
 
 3:3
 verachatzt | vasakht | vesamt | simlotekh | alayikh
-veyaradti | hagoren
-al | tivade'i | la'ish
+veyaradti | hagoren | al | tivade'i | la'ish
 ad | kaloto | le'ekhol | velishtot
 
 3:4
@@ -26,14 +26,13 @@ kol | asher | tomri elai | e'eseh
 
 3:6
 vatered
-hagoren | vata'as
-kekhol | asher | tzivatah
+hagoren | vata'as | kekhol | asher | tzivatah
 chamotah
 
 3:7
 vaiyokhal | Bo'az | vaiyeshet | vaiyitav | libo
-vaiyavo | lishkav
-biktzeh | ha'aremah | vatavo | valat
+vaiyavo | lishkav | biktzeh | ha'aremah
+vatavo | valat
 vategal | margelotav
 vatishkav
 
@@ -52,9 +51,9 @@ ki | go'el | atah
 
 3:10
 vaiyomer | berukhah | at | Layahweh | biti
-heitavt | chasdekh | ha'acharon | min | harishon
-levilti | lekhet | acharei | habachurim
-im | dal | ve'im | ashir
+heitavt | chasdekh | ha'acharon | min | harishon | levilti | lekhet | acharei | habachurim
+im | dal
+ve'im | ashir
 
 3:11
 ve'atah | biti | al | tir'i
@@ -74,8 +73,7 @@ karov | mimeni
 lini | halaylah | vehayah | vaboker | im | yig'alekh | tov | yig'al
 ve'im | lo | yachpotz | lego'olekh | uge'altikh | anokhi
 chai | Yahweh
-shikhvi
-ad | haboker
+shikhvi | ad | haboker
 
 3:14
 vatishkav | margelatav | ad | haboker
@@ -101,9 +99,7 @@ ha'ish
 3:17
 vatomer
 shesh | hase'orim | ha'eleh | natan | li
-ki | amar 'ali
-al | tavo'i | reikam
-el | chamotekh
+ki | amar 'ali | al | tavo'i | reikam | el | chamotekh
 
 3:18
 vatomer | shevi | viti

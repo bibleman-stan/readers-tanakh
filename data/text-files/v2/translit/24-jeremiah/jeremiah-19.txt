@@ -8,7 +8,8 @@ hakohanim
 veyatzata | el | gei | Ven | Hinom | asher | petach
 sha'ar | hacharasut
 vekarata | sham
-et | hadevarim | asher | adaber | eleikha
+et | hadevarim
+asher | adaber | eleikha
 
 19:3
 ve'amarta | shim'u | devar | Yahweh
@@ -21,15 +22,13 @@ asher | kol | shome'ah | titzalnah | azenav
 19:4
 ya'an | asher | azavuni | vaynakeru | et | hamakom | hazeh | vaykateru | vo | lelohim | acherim
 asher | lo | yeda'um | hemah | va'avoteihem
-umalkhei | Yehudah
-umal'u | et | hamakom | hazeh
+umalkhei | Yehudah | umal'u | et | hamakom | hazeh
 dam | nekiyim
 
 19:5
 uvanu | et | bamot | haba'al | lisrof | et | beneihem | ba'esh
 olot | laba'al | asher | lo | tziviti | velo | dibarti
-velo | altah
-al | libi
+velo | altah | al | libi
 
 19:6
 lakhen | hineh | yamim | ba'im | ne'um | Yahweh
@@ -42,14 +41,12 @@ im | gei | haharegah
 uvakoti | et | atzat | Yehudah | Virushalim | bamakom | hazeh
 vehipaltim | bacherev | lifnei | oyeveihem | uveyad
 mevakshei | nafsham
-venatati | et | nivlatam | lema'akhal
-le'of | hashamayim | ulevehemat | ha'aretz
+venatati | et | nivlatam | lema'akhal | le'of | hashamayim | ulevehemat | ha'aretz
 
 19:8
 vesamti | et | ha'ir | hazot | leshamah | velishrekah
 kol | over | aleiha
-yishom | veyishrok
-al | kol | makoteha
+yishom | veyishrok | al | kol | makoteha
 
 19:9
 veha'akhaltim | et | besar | beneihem | ve'et | besar | benoteihem
@@ -84,8 +81,7 @@ lelohim | acherim
 19:14
 vaiyavo | Yirmeyahu | Mehatofet | asher | shelacho | Yahweh | sham
 lehinave | vaiya'amod | bachatzar | beit | Yahweh
-vaiyomer
-el | kol | ha'am
+vaiyomer | el | kol | ha'am
 
 19:15
 koh | amar | Yahweh | tzeva'ot | elohei | Yisra'el

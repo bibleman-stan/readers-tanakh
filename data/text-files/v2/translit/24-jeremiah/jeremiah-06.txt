@@ -1,7 +1,6 @@
 6:1
 ha'izu | benei | Vinyamin | mikerev | Yerushalim
-Uvitkoa | tik'u | shofar
-ve'al | Beit | Hakerem
+Uvitkoa | tik'u | shofar | ve'al | Beit | Hakerem
 se'u | mas'et | ki | ra'ah | Nishkefah | mitzafon
 veshever | gadol
 
@@ -29,8 +28,7 @@ venashchitah
 armenoteiha
 
 6:6
-ki | khoh | amar | Yahweh | tzeva'ot
-kirtu | etzah
+ki | khoh | amar | Yahweh | tzeva'ot | kirtu | etzah
 veshifkhu | al | Yerushalim
 solelah
 hi | ha'ir | hafekad
@@ -54,8 +52,7 @@ lo | Noshavah
 koh | amar | Yahweh | tzeva'ot
 olel | ye'olu | khagefen
 she'erit | Yisra'el
-hashev | yadekha | kevotzer
-al | salsilot
+hashev | yadekha | kevotzer | al | salsilot
 
 6:10
 al | mi | adaberah | ve'a'idah | veyishma'u
@@ -66,12 +63,10 @@ lo | yachpetzu | vo
 
 6:11
 ve'et | chamat | Yahweh | maleti | Nil'eiti | hakhil
-shefokh | al | olal | bachutz
-ve'al | sod | bachurim
+shefokh | al | olal | bachutz | ve'al | sod | bachurim
 yachdav
 ki | gam | ish | im | ishah | yilakhedu
-zaken
-im | mele | yamim
+zaken | im | mele | yamim
 
 6:12
 venasabu | vateihem | la'acherim
@@ -101,8 +96,7 @@ amar | Yahweh
 
 6:16
 koh | amar | Yahweh | imdu | al | derakhim | ure'u | vesha'alu | lintivot | olam | ei | zeh | derekh | hatov | ulekhu | vah
-umitz'u | margoa | lenafshekhem | vaiyomeru
-lo | nelekh
+umitz'u | margoa | lenafshekhem | vaiyomeru | lo | nelekh
 
 6:17
 vahakimoti | aleikhem | tzofim
@@ -143,8 +137,8 @@ ye'or | miyarketei | aretz
 
 6:23
 keshet | vekhidon | yachaziku | akhzari | hu | velo | yerachemu
-kolam | kaiyam | yehemeh
-ve'al | susim | yirkavu
+kolam | kaiyam | yehemeh | ve'al | susim
+yirkavu
 arukh | ke'ish | lamilchamah
 alayikh
 bat | Tziyon
@@ -157,8 +151,7 @@ chil
 kaiyoledah
 
 6:25
-al | tetze'i | hasadeh | uvaderekh
-al | telekhi
+al | tetze'i | hasadeh | uvaderekh | al | telekhi
 ki | cherev | le'oyev | magor | misaviv
 
 6:26

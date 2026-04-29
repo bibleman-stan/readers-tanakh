@@ -1,12 +1,10 @@
 9:1
 vayvarekh | elohim | et | Noach
-ve'et | banav | vaiyomer | lahem | peru | urevu
-umil'u | et | ha'aretz
+ve'et | banav
+vaiyomer | lahem | peru | urevu | umil'u | et | ha'aretz
 
 9:2
-umora'akhem | vechitekhem | yihyeh
-al | kol | chaiyat | ha'aretz
-ve'al
+umora'akhem | vechitekhem | yihyeh | al | kol | chaiyat | ha'aretz | ve'al
 kol | of | hashamayim
 bekhol | asher | tirmos | ha'adamah | uvekhol | degei | haiyam
 beyedkhem | Nitanu
@@ -20,9 +18,8 @@ keyerek | esev | natati | lakhem | et | kol
 akh | basar | benafsho | damo | lo | tokhelu
 
 9:5
-ve'akh | et | dimkhem | lenafshoteikhem | edrosh
-miyad | kol | chaiyah | edreshenu
-umiyad | ha'adam | miyad | ish | achiv
+ve'akh | et | dimkhem | lenafshoteikhem | edrosh | miyad | kol | chaiyah
+edreshenu | umiyad | ha'adam | miyad | ish | achiv
 edrosh | et | nefesh | ha'adam
 
 9:6
@@ -43,7 +40,8 @@ ve'el | banav | ito | lemor
 9:9
 va'ani
 hini | mekim | et | beriti | itekhem
-ve'et | zar'akhem | achareikhem
+ve'et | zar'akhem
+achareikhem
 
 9:10
 ve'et | kol | nefesh | hachaiyah | asher | itekhem
@@ -62,12 +60,12 @@ uvein | kol | nefesh | chaiyah | asher | itekhem | ledorot
 olam
 
 9:13
-et | kashti | natati | be'anan
+et | kashti
+natati | be'anan
 vehayetah | le'ot | berit | beini | uvein | ha'aretz
 
 9:14
-vehayah | be'ani | anan
-al | ha'aretz
+vehayah | be'ani | anan | al | ha'aretz
 venir'atah | hakeshet | be'anan
 
 9:15
@@ -78,12 +76,11 @@ kol | basar
 
 9:16
 vehayetah | hakeshet | be'anan
-ure'itiha | lizkor | berit | olam
-bein | elohim | uvein | kol | nefesh | chaiyah | bekhol | basar | asher | al | ha'aretz
+ure'itiha | lizkor | berit | olam | bein | elohim
+uvein | kol | nefesh | chaiyah | bekhol | basar | asher | al | ha'aretz
 
 9:17
-vaiyomer | elohim
-el | Noach
+vaiyomer | elohim | el | Noach
 zot | ot | haberit | asher | hakimoti | beini
 uvein | kol | basar | asher | al | ha'aretz
 
@@ -124,8 +121,7 @@ ve'ervat | avihem | lo | ra'u
 
 9:24
 vaiyiketz | Noach | miyeino
-vaiyeda | et | asher | asah | lo
-beno | hakatan
+vaiyeda | et | asher | asah | lo | beno | hakatan
 
 9:25
 vaiyomer
@@ -139,8 +135,8 @@ vihi | Khena'an
 eved | lamo
 
 9:27
-yaft | elohim | Leyefet | veyishkon | be'oholei | Shem
-vihi | Khena'an
+yaft | elohim | Leyefet | veyishkon
+be'oholei | Shem | vihi | Khena'an
 eved | lamo
 
 9:28

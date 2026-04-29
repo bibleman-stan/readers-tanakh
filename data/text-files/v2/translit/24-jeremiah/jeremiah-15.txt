@@ -34,8 +34,7 @@ Nil'eiti
 hinachem
 
 15:7
-va'ezrem | bemizreh
-besha'arei | ha'aretz
+va'ezrem | bemizreh | besha'arei | ha'aretz
 shikalti | ibadti | et | ami | midarkheihem | lo | shavu
 
 15:8
@@ -68,7 +67,8 @@ hayaroa | barzel | barzel | mitzafon | unechoshet
 
 15:13
 cheilekha | ve'otzroteikha | lavaz | eten | lo | vimchir
-uvekhol | chatoteikha | uvekhol | gevuleikha
+uvekhol | chatoteikha
+uvekhol | gevuleikha
 
 15:14
 veha'avarti | et | oyeveikha | be'eretz
@@ -110,7 +110,8 @@ lo | tashuv | aleihem
 
 15:20
 unetatikha | la'am | hazeh | lechomat | nechoshet | betzurah
-venilchamu | eleikha | velo | yukhelu | lakh
+venilchamu | eleikha
+velo | yukhelu | lakh
 ki | itekha | ani | lehoshi'akha | ulehatzilekha
 ne'um | Yahweh
 

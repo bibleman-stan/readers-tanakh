@@ -25,7 +25,8 @@ noten | lekha | nachalah
 
 24:5
 ki | yikach | ish | ishah | chadashah
-lo | yetze | batzava | velo | ya'avor | alav | lekhol | davar
+lo | yetze | batzava
+velo | ya'avor | alav | lekhol | davar
 naki | yihyeh | leveito | shanah | echat | vesimach
 et | ishto | asher | lakach
 
@@ -79,15 +80,14 @@ me'acheikha | o | migerekha | asher | be'artzekha | bish'areikha
 beyomo | titen | sekharo | velo | tavo | alav | hashemesh | ki | ani | hu
 ve'elav
 hu | nose
-et | nafsho | velo | yikra | aleikha | el | Yahweh
+et | nafsho
+velo | yikra | aleikha | el | Yahweh
 vehayah | vekha
 chet
 
 24:16
-lo | yumetu | avot | al | banim | uvanim
-lo | yumetu | al | avot
-ish | bechet'o
-yumatu
+lo | yumetu | avot | al | banim | uvanim | lo | yumetu | al | avot
+ish | bechet'o | yumatu
 
 24:17
 lo | tateh | mishpat | ger | yatom
@@ -98,7 +98,8 @@ almanah
 vezakharta | ki | eved | hayita | Bemitzrayim
 vaiyifdekha | Yahweh | eloheikha | misham
 al | ken | anokhi | metzavekha | la'asot
-et | hadavar | hazeh
+et | hadavar
+hazeh
 
 24:19
 ki | tiktzor | ketzirecha | vesadekha | veshakhachta | omer | basadeh | lo | tashuv | lekachto
@@ -122,4 +123,5 @@ yihyeh
 vezakharta
 ki | eved | hayita | be'eretz | Mitzrayim
 al | ken | anokhi | metzavekha | la'asot
-et | hadavar | hazeh
+et | hadavar
+hazeh

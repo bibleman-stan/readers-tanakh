@@ -24,6 +24,10 @@ guards:
   - prev_line_incomplete          # only fire when prev clause is complete
                                    # (line N is genuinely a new subject NP,
                                    #  not a stranded modifier)
+  - line_n_starts_with_do_marker  # block if line N is a DO continuation of
+                                   # the prior clause (e.g., אֶת־חַוָּה אִשְׁתּוֹ
+                                   # following וְהָאָדָם יָדַע) — these are
+                                   # complement chains, not new subjects
 
 annotation_template: "Subject NP + verb merge ({pwc} prosodic words)"
 suggested_action: MERGE

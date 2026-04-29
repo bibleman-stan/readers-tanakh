@@ -1,14 +1,13 @@
 10:1
 vaiyomer | Yahweh | el | Mosheh
-bo
-el | par'oh
+bo | el | par'oh
 ki | ani | hikhbadti | et | libo | ve'et | lev | avadav
 lema'an | shiti | ototai | eleh | bekirbov
 
 10:2
 ulema'an | tesaper | be'azenei | vinkha | uven | binkha | et | asher | hit'alalti | Bemitzrayim
-ve'et | ototai | asher | samti | vam
-vida'tem
+ve'et | ototai
+asher | samti | vam | vida'tem
 ki | ani | Yahweh
 
 10:3
@@ -24,8 +23,7 @@ leshaleach | et | ami
 hini | mevi | machar | arbeh | bigvulekha
 
 10:5
-vekhisah | et | ein | ha'aretz | velo | yukhal
-lir'ot | et | ha'aretz
+vekhisah | et | ein | ha'aretz | velo | yukhal | lir'ot | et | ha'aretz
 ve'akhal | et | yeter | hapeletah | hanish'eret | lakhem | min | habarad
 ve'akhal | et | kol | ha'etz
 hatzomeach | lakhem | min | hasadeh
@@ -33,8 +31,7 @@ hatzomeach | lakhem | min | hasadeh
 10:6
 umal'u | vateikha | uvatei | khol | avadeikha | uvatei | khol | Mitzrayim
 asher | lo | ra'u | avoteikha | va'avot | avoteikha
-miyom | heyotam | al | ha'adamah
-ad
+miyom | heyotam | al | ha'adamah | ad
 haiyom | hazeh
 vaiyifen | vaiyetze
 me'im | par'oh
@@ -48,8 +45,7 @@ ki | avedah | Mitzrayim
 
 10:8
 vaiyushav | et | Mosheh | ve'et | Aharon | el | par'oh
-vaiyomer | alehem
-lekhu | ivdu
+vaiyomer | alehem | lekhu | ivdu
 et | Yahweh | eloheikhem | mi | vami
 haholekhim
 
@@ -61,7 +57,8 @@ ki | chag | Yahweh | lanu
 10:10
 vaiyomer | alehem | yehi | khen | Yahweh | imakhem
 ka'asher | ashalach | etkhem
-ve'et | tapekhem | re'u
+ve'et | tapekhem
+re'u
 ki | ra'ah | neged | peneikhem
 
 10:11
@@ -72,8 +69,8 @@ penei | far'oh
 
 10:12
 vaiyomer | Yahweh | el | Mosheh | neteh | yadekha | al | eretz | Mitzrayim | ba'arbeh
-veya'al
-al | eretz | Mitzrayim | veyokhal | et | kol | esev | ha'aretz | et | kol | asher | hish'ir
+veya'al | al | eretz | Mitzrayim
+veyokhal | et | kol | esev | ha'aretz | et | kol | asher | hish'ir
 habarad
 
 10:13
@@ -82,21 +79,21 @@ Vayahweh | nihag | ruach | kadim | ba'aretz
 kol | haiyom | hahu
 vekhol | halayelah
 haboker | hayah
-veruach | hakadim
-nasa
-et | ha'arbeh
+veruach | hakadim | nasa | et | ha'arbeh
 
 10:14
 vaiya'al | ha'arbeh | al | kol | eretz | Mitzrayim
 vaiyanach | bekhol
-gevul | Mitzrayim | kaved | me'od | lefanav | lo | hayah | khen | arbeh | kamohu
+gevul | Mitzrayim
+kaved | me'od | lefanav | lo | hayah | khen | arbeh | kamohu
 ve'acharav
 lo | yihyeh | ken
 
 10:15
 vaykhas | et | ein | kol | ha'aretz | vatechshakh | ha'aretz
 vaiyokhal | et | kol | esev | ha'aretz | ve'et | kol | peri | ha'etz | asher | hotir
-habarad | velo | Notar | kol | yerek | ba'etz | uve'esev | hasadeh | bekhol | eretz | Mitzrayim
+habarad
+velo | Notar | kol | yerek | ba'etz | uve'esev | hasadeh | bekhol | eretz | Mitzrayim
 
 10:16
 vaymaher | par'oh | likro | Lemosheh | Ule'aharon
@@ -110,9 +107,8 @@ veyaser | me'alai
 rak | et | hamavet | hazeh
 
 10:18
-vaiyetze
-me'im | par'oh | vaiye'tar
-el | Yahweh
+vaiyetze | me'im | par'oh
+vaiye'tar | el | Yahweh
 
 10:19
 vaiyahafokh | Yahweh | ruach | yam | chazak | me'od | vaiyisa | et | ha'arbeh
@@ -128,13 +124,13 @@ et | benei | Yisra'el
 
 10:21
 vaiyomer | Yahweh | el | Mosheh | neteh | yadekha | al | hashamayim
-vihi | choshekh
-al | eretz | Mitzrayim | veyamesh
+vihi | choshekh | al | eretz | Mitzrayim
+veyamesh
 choshekh
 
 10:22
-vaiyet | Mosheh | et | yado
-al | hashamayim | vayhi | choshekh | afelah | bekhol | eretz | Mitzrayim
+vaiyet | Mosheh | et | yado | al | hashamayim
+vayhi | choshekh | afelah | bekhol | eretz | Mitzrayim
 sheloshet | yamim
 
 10:23
@@ -160,13 +156,11 @@ Layahweh | eloheinu
 vegam | miknenu | yelekh | imanu | lo | tisha'er | parsah
 ki | mimenu | nikach | la'avod
 et | Yahweh | eloheinu
-va'anachnu | lo | neda | mah | na'avod | et | Yahweh
-ad | bo'enu
+va'anachnu | lo | neda | mah | na'avod | et | Yahweh | ad | bo'enu
 shamah
 
 10:27
-vaychazek | Yahweh | et | lev | par'oh
-velo | avah | leshalecham
+vaychazek | Yahweh | et | lev | par'oh | velo | avah | leshalecham
 
 10:28
 vaiyomer | lo | far'oh | lekh | me'alai

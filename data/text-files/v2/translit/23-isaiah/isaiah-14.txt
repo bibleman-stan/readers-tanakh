@@ -1,8 +1,6 @@
 14:1
 ki | yerachem | Yahweh | et | Ya'ako | uvachar | od | Beyisra'el
-vehinicham
-al | admatam
-venilvah | hager | aleihem
+vehinicham | al | admatam | venilvah | hager | aleihem
 venispechu
 al | beit | Ya'ako
 
@@ -23,13 +21,12 @@ ve'amareta
 eikh | shavat | noges | shavetah | madhevah
 
 14:5
-shavar | Yahweh
-mateh | resha'im
+shavar | Yahweh | mateh | resha'im
 shevet | moshelim
 
 14:6
-makeh | amim | be'evrah | makat | bilti | sarah
-rodeh | va'af | goyim | murdaf | beli | chasakh
+makeh | amim | be'evrah | makat
+bilti | sarah | rodeh | va'af | goyim | murdaf | beli | chasakh
 
 14:7
 nachah | shaketah
@@ -62,22 +59,19 @@ tole'ah
 14:12
 eikh | nafalta | mishamayim
 heilel | ben | shachar | Nigda'ta | la'aretz
-cholesh
-al | goyim
+cholesh | al | goyim
 
 14:13
 ve'atah | amarta | vilvavekha | hashamayim | e'eleh | mima'al | lekhokhvei | el
 arim | kis'i
-ve'eshev | behar | mo'ed
-beyarketei | tzafon
+ve'eshev | behar | mo'ed | beyarketei | tzafon
 
 14:14
-e'eleh
-al | bomotei | av | eddameh | le'elyon
+e'eleh | al | bomotei | av
+eddameh | le'elyon
 
 14:15
-akh | el | she'ol | turad
-el | yarketei | vor
+akh | el | she'ol | turad | el | yarketei | vor
 
 14:16
 ro'eikha | eleikha | yashgichu
@@ -97,8 +91,8 @@ shakhevu | vekhavod
 ish | beveito
 
 14:19
-ve'atah | hashelakhta | mikivrecha | kenetzer | nit'av
-levush | harugim | meto'anei | charev
+ve'atah | hashelakhta | mikivrecha | kenetzer | nit'av | levush | harugim
+meto'anei | charev
 yordei | el | avnei | vor | kefeger | muvas
 
 14:20
@@ -109,8 +103,7 @@ zera | mere'im
 
 14:21
 hakhinu | levanav | matbeach | ba'avon | avotam
-bal | yakumu | veyareshu | aretz
-umal'u | fenei | tevel
+bal | yakumu | veyareshu | aretz | umal'u | fenei | tevel
 arim
 
 14:22
@@ -139,10 +132,8 @@ vesubolo | me'al | shikhmo
 yasur
 
 14:26
-zot | ha'etzah | haiye'utzah
-al | kol | ha'aretz
-vezot | haiyad | hanetuyah
-al | kol | hagoyim
+zot | ha'etzah | haiye'utzah | al | kol | ha'aretz
+vezot | haiyad | hanetuyah | al | kol | hagoyim
 
 14:27
 ki | Yahweh | tzeva'ot | ya'atz | umi | yafer
@@ -156,8 +147,7 @@ hayah
 hamasa | hazeh
 
 14:29
-al | tismechi | Feleshet | kulekh
-ki | Nishbar
+al | tismechi | Feleshet | kulekh | ki | Nishbar
 shevet | makekh
 ki | mishoresh | nachash | yetze | tzefa
 ufiryo

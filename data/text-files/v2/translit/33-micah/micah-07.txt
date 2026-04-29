@@ -1,8 +1,6 @@
 7:1
-alai | li | ki | hayiti | ke'asepei | kayitz | ke'olelot
-batzir
-ein | eshkol | le'ekhol | bikurah
-ivetah | nafshi
+alai | li | ki | hayiti | ke'asepei | kayitz | ke'olelot | batzir
+ein | eshkol | le'ekhol | bikurah | ivetah | nafshi
 
 7:2
 avad | chasid | min | ha'aretz | veyashar | ba'adam | ayin
@@ -22,8 +20,7 @@ yashar | mimesukhah | yom | metzapeikha | pekudatecha | va'ah
 atah | tihyeh | mevukhatam
 
 7:5
-al | ta'aminu | verea
-al | tivtechu | be'aluf | mishokhevet | cheikecha
+al | ta'aminu | verea | al | tivtechu | be'aluf | mishokhevet | cheikecha
 shemor
 pitchei | fikha
 
@@ -42,8 +39,7 @@ yishma'eni
 elohai
 
 7:8
-al | tismechi | oyavti | li
-ki | nafalti
+al | tismechi | oyavti | li | ki | nafalti
 kameti
 ki | eshev | bachoshekh
 Yahweh
@@ -62,8 +58,7 @@ ha'omerah | elai
 aiyo
 Yahweh | elohayikh
 einai | tir'einah | bah
-atah | tihyeh | lemirmas
-ketit | chutzot
+atah | tihyeh | lemirmas | ketit | chutzot
 
 7:11
 yom
@@ -79,8 +74,7 @@ veyam | miyam
 vehar | hahar
 
 7:13
-vehayetah | ha'aretz | lishmamah
-al | yosheveiha | miperi | ma'aleihem
+vehayetah | ha'aretz | lishmamah | al | yosheveiha | miperi | ma'aleihem
 
 7:14
 re'eh | amekha | veshivtekha | tzon | nachalatekha
@@ -100,9 +94,9 @@ azeneihem
 techerashnah
 
 7:17
-yelachakhu | afar | kanachash
-kezochalei | eretz | yirgezu
-mimisgeroteihem | el | Yahweh | eloheinu | yifchadu
+yelachakhu | afar | kanachash | kezochalei | eretz
+yirgezu | mimisgeroteihem
+el | Yahweh | eloheinu | yifchadu
 veyir'u | mimeka
 
 7:18

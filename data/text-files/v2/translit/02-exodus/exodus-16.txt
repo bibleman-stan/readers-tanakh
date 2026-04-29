@@ -27,15 +27,13 @@ vehayah | mishneh | al | asher | yilketu
 yom | yom
 
 16:6
-vaiyomer | Mosheh | Ve'aharon
-el | kol | benei | Yisra'el
+vaiyomer | Mosheh | Ve'aharon | el | kol | benei
+Yisra'el
 erev | vida'tem
 ki | Yahweh | hotzi | etkhem | me'eretz | Mitzrayim
 
 16:7
-uvoker | ure'item | et | kevod | Yahweh
-beshame'o | et | telunoteikhem
-al | Yahweh
+uvoker | ure'item | et | kevod | Yahweh | beshame'o | et | telunoteikhem | al | Yahweh
 venachnu | mah
 ki | talonu
 aleinu
@@ -57,14 +55,12 @@ telunoteikhem
 
 16:10
 vayhi | kedaber | Aharon | el | kol | adat | benei | Yisra'el
-vaiyifnu
-el | hamidbar
+vaiyifnu | el | hamidbar
 vehineh | kevod | Yahweh
 Nir'ah | be'anan
 
 16:11
-vaydaber | Yahweh
-el | Mosheh | lemor
+vaydaber | Yahweh | el | Mosheh | lemor
 
 16:12
 shama'ti | et | telunot | benei | Yisra'el
@@ -83,19 +79,17 @@ uvaboker | hayetah | shikhvat | hatal | saviv | lamachaneh
 vata'al
 shikhvat | hatal
 vehineh | al | penei | hamidbar | dak | mechuspas
-dak | kakefor
-al | ha'aretz
+dak | kakefor | al | ha'aretz
 
 16:15
 vaiyir'u | venei | Yisra'el | vaiyomeru | ish | el | achiv | man | hu
 ki | lo | yade'u | mah | hu
 vaiyomer | Mosheh | alehem
-hu | halechem | asher | natan | Yahweh | lakhem
-le'okhlah
+hu | halechem | asher | natan | Yahweh | lakhem | le'okhlah
 
 16:16
-zeh | hadavar | asher | tzivah | Yahweh
-liktu | mimenu | ish
+zeh | hadavar | asher | tzivah | Yahweh | liktu | mimenu
+ish
 lefi | akhelo
 omer | lagulgolet | mispar | nafshoteikhem
 ish | la'asher | be'oholo | tikachu
@@ -108,16 +102,14 @@ hamarbeh
 vehamam'it
 
 16:18
-vaiyamodu | va'omer
-velo | he'dif | hamarbeh
+vaiyamodu | va'omer | velo | he'dif | hamarbeh
 vehamam'it | lo | hechsir
 ish | lefi | akhelo | lakatu
 
 16:19
 vaiyomer | Mosheh
 alehem
-ish
-al | yoter | mimenu | ad | boker
+ish | al | yoter | mimenu | ad | boker
 
 16:20
 velo | shame'u | el | Mosheh | vaiyotiru | anashim | mimenu | ad | boker
@@ -142,13 +134,11 @@ vaiyomer | alehem | hu | asher | diber | Yahweh
 shabaton | shabat | kodesh | Layahweh | machar
 et | asher | tofu | efu | ve'et | asher | tevashelu | bashelu
 ve'et | kol | ha'odef
-hanichu | lakhem | lemishmeret
-ad | haboker
+hanichu | lakhem | lemishmeret | ad | haboker
 
 16:24
 vaiyanichu | oto | ad | haboker | ka'asher
-tzivah | Mosheh
-velo | hiv'ish
+tzivah | Mosheh | velo | hiv'ish
 verimah | lo | hayetah | bo
 
 16:25
@@ -158,9 +148,7 @@ haiyom
 lo | timtza'uhu | basadeh
 
 16:26
-sheshet | yamim
-tilketuhu
-uvaiyom | hashevi'i | shabat
+sheshet | yamim | tilketuhu | uvaiyom | hashevi'i | shabat
 lo | yihyeh | bo
 
 16:27
@@ -168,9 +156,8 @@ vayhi | baiyom | hashevi'i
 yatze'u | min | ha'am | lilkot | velo | matza'u
 
 16:28
-vaiyomer | Yahweh
-el | Mosheh
-ad | anah | me'antem | lishmor | mitzvotai | vetorotai
+vaiyomer | Yahweh | el | Mosheh | ad | anah | me'antem | lishmor | mitzvotai
+vetorotai
 
 16:29
 re'u | ki | Yahweh | natan | lakhem | hashabat
@@ -180,8 +167,7 @@ shevu | ish | tachtav | al | yetze | ish | mimekomo
 baiyom | hashevi'i
 
 16:30
-vaiyishbetu | ha'am
-baiyom | hashevi'i
+vaiyishbetu | ha'am | baiyom | hashevi'i
 
 16:31
 vaiyikre'u | veit | Yisra'el | et | shemo | man
@@ -200,16 +186,13 @@ veten | shamah | melo | ha'omer | man
 vehanach | oto | lifnei | Yahweh | lemishmeret | ledoroteikhem
 
 16:34
-ka'asher | tzivah | Yahweh
-el | Mosheh | vaiyanichehu | Aharon | lifnei | ha'edut | lemishmaret
+ka'asher | tzivah | Yahweh | el | Mosheh
+vaiyanichehu | Aharon | lifnei | ha'edut | lemishmaret
 
 16:35
-uvenei | Yisra'el | akhelu | et | haman | arba'im | shanah
-ad | bo'am
+uvenei | Yisra'el | akhelu | et | haman | arba'im | shanah | ad | bo'am
 el | eretz | noshavet
-et | haman | akhelu
-ad | bo'am
-el | ketzeh
+et | haman | akhelu | ad | bo'am | el | ketzeh
 eretz | Kena'an
 
 16:36

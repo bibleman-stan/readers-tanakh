@@ -20,7 +20,8 @@ vaymitehu
 2:4
 Vetamar | kalato
 yaldah | lo
-et | Peretz | ve'et | Zarach | kol | benei | Yehudah
+et | Peretz | ve'et | Zarach
+kol | benei | Yehudah
 chamishah
 
 2:5
@@ -40,8 +41,8 @@ uvenei | Eitan
 Azaryah
 
 2:9
-uvenei | Chetzron | asher | Nolad | lo
-et | Yerachme'el | ve'et | Ram | ve'et | Keluvai
+uvenei | Chetzron | asher | Nolad | lo | et | Yerachme'el | ve'et | Ram
+ve'et | Keluvai
 
 2:10
 Veram
@@ -89,7 +90,8 @@ Yeter | haiyishme'eli
 
 2:18
 Vekhalev | ben | Chetzron | holid | et | Azuvah | ishah
-ve'et | Yeri'ot | ve'eleh | vaneiha
+ve'et | Yeri'ot
+ve'eleh | vaneiha
 Yesher | Veshovav | Ve'ardon
 
 2:19
@@ -146,10 +148,8 @@ Va'eker
 
 2:28
 vaiyihyu | venei | Onam
-Shamai | Veyada
-uvenei | Shamai
-Nadav
-Va'avishur
+Shamai | Veyada | uvenei | Shamai
+Nadav | Va'avishur
 
 2:29
 veshem | eshet | Avishur
@@ -162,8 +162,9 @@ uvenei | Nadav | Seled | Ve'apayim
 vaiyamot | Seled | lo | vanim
 
 2:31
-uvenei | Apayim | Yish'i | uvenei | Yish'i | Sheshan
-uvenei | Sheshan | Achlai
+uvenei | Apayim | Yish'i
+uvenei | Yish'i | Sheshan | uvenei | Sheshan
+Achlai
 
 2:32
 uvenei | Yada | achi | Shamai | Yeter | Veyonatan
@@ -222,7 +223,8 @@ Verekem | Vashama
 
 2:44
 Veshema | holid
-et | Racham | avi | Yareko'am
+et | Racham
+avi | Yareko'am
 Verekem
 holid | et | Shamai
 
@@ -233,7 +235,8 @@ avi | Veit | Tzur
 2:46
 Ve'eifah | pilegesh | Kalev
 yaldah | et | Charan | ve'et | Motza
-ve'et | Gazez | Vecharan
+ve'et | Gazez
+Vecharan
 holid | et | Gazez
 
 2:47

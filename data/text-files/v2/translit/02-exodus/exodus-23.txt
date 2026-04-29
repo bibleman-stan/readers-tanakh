@@ -1,7 +1,6 @@
 23:1
 lo | tisa | shema | shav
-al | tashet | yadekha | im | rasha | lihyot
-ed | chamas
+al | tashet | yadekha | im | rasha | lihyot | ed | chamas
 
 23:2
 lo | tihyeh | acharei | rabim | lera'ot
@@ -54,8 +53,8 @@ chaiyat | hasadeh
 ken | ta'aseh | lekharmekha | lezeitekha
 
 23:12
-sheshet | yamim | ta'aseh | ma'aseikha
-uvaiyom | hashevi'i | tishbot
+sheshet | yamim | ta'aseh | ma'aseikha | uvaiyom | hashevi'i
+tishbot
 lema'an | yanuach | shorkha | vachamorekha
 veyinafesh | ben | amatekha
 vehager
@@ -63,8 +62,7 @@ vehager
 23:13
 uvekhol | asher | amarti | aleikhem | tishameru
 veshem | elohim | acherim | lo | tazkiru
-lo | yishama
-al | pikha
+lo | yishama | al | pikha
 
 23:14
 shalosh | regalim
@@ -78,33 +76,28 @@ velo | yera'u | fanai
 reikam
 
 23:16
-vechag | hakatzir | bikurei | ma'aseikha | asher | tizra
-basadeh
+vechag | hakatzir | bikurei | ma'aseikha | asher | tizra | basadeh
 vechag | ha'asif | betzet | hashanah | be'asepekha | et | ma'aseikha | min | hasadeh
 
 23:17
-shalosh | pe'amim | bashanah | yera'eh | kol | zekhurekha
-el | penei
+shalosh | pe'amim | bashanah | yera'eh | kol | zekhurekha | el | penei
 ha'adon | Yahweh
 
 23:18
 lo | tizbach | al | chametz
-dam | zivchi | velo | yalin | chelev | chagi
-ad | boker
+dam | zivchi
+velo | yalin | chelev | chagi | ad | boker
 
 23:19
-reshit | bikurei | admatekha
-tavi | beit
-Yahweh | eloheikha
-lo | tevashel | gedi | bachalev | imo
+reshit | bikurei | admatekha | tavi
+beit | Yahweh | eloheikha | lo | tevashel | gedi | bachalev | imo
 
 23:20
 hineh | anokhi | sholeach | mal'okh | lefaneikha | lishmarekha | badarekh | velahavi'akha
 el | hamakom | asher | hakhinoti
 
 23:21
-hishamer | mipanav | ushema | bekolo
-al | tamer | bo
+hishamer | mipanav | ushema | bekolo | al | tamer | bo
 ki | lo | yisa | lefish'akhem
 ki | shemi | bekirbo
 
@@ -125,8 +118,7 @@ vehayvusi
 vehikhchadtiv
 
 23:24
-lo | tishtachaveh | leloheihem | velo | ta'avedem | velo | ta'aseh
-kema'aseihem
+lo | tishtachaveh | leloheihem | velo | ta'avedem | velo | ta'aseh | kema'aseihem
 ki | hares | teharesem
 veshaber | teshaber | matzevoteihem
 
@@ -161,8 +153,7 @@ ad | asher | tifreh
 venachalta | et | ha'aretz
 
 23:31
-veshati | et | gevulkha | miyam | suf | ve'ad | yam | pelishtim | umimidbar
-ad | Hanahar
+veshati | et | gevulkha | miyam | suf | ve'ad | yam | pelishtim | umimidbar | ad | Hanahar
 ki | eten | beyedkhem | et | yoshevei | ha'aretz
 vegerashtamov | mipaneikha
 

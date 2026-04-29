@@ -1,32 +1,26 @@
 8:1
-vaydaber | Yahweh
-el | Mosheh | lemor
+vaydaber | Yahweh | el | Mosheh | lemor
 
 8:2
 daber | el | Aharon
 ve'amarta
-elav
-beha'alotekha | et | hanerot
-el | mul | penei | hamenorah
+elav | beha'alotekha | et | hanerot | el | mul | penei | hamenorah
 ya'iru
 shiv'at | hanerot
 
 8:3
-vaiya'as | ken | Aharon
-el | mul | penei | hamenorah
-he'elah
-neroteiha
+vaiya'as | ken | Aharon | el | mul | penei | hamenorah
+he'elah | neroteiha
 ka'asher | tzivah | Yahweh | et | Mosheh
 
 8:4
-vezeh | ma'aseh | hamenorah | mikshah | zahav
-ad | yerekhah | ad | pirchah | mikshah | hi
+vezeh | ma'aseh | hamenorah | mikshah | zahav | ad | yerekhah | ad | pirchah
+mikshah | hi
 kamar'eh | asher | her'ah | Yahweh | et | Mosheh
 ken | asah | et | hamenorah
 
 8:5
-vaydaber | Yahweh
-el | Mosheh | lemor
+vaydaber | Yahweh | el | Mosheh | lemor
 
 8:6
 kach | et | halviyim | mitokh | benei | Yisra'el
@@ -46,17 +40,16 @@ tikach | lechatat
 
 8:9
 vehikravta | et | halviyim | lifnei | ohel | mo'ed | vehikhalta
-et | kol | adat | benei | Yisra'el
+et | kol | adat
+benei | Yisra'el
 
 8:10
 vehikravta | et | halviyim
 lifnei | Yahweh
-vesamekhu | venei | Yisra'el | et | yedeihem
-al | halviyim
+vesamekhu | venei | Yisra'el | et | yedeihem | al | halviyim
 
 8:11
-vehenif | Aharon | et | halviyim | tenufah | lifnei | Yahweh
-me'et
+vehenif | Aharon | et | halviyim | tenufah | lifnei | Yahweh | me'et
 benei | Yisra'el
 vehayu | la'avod
 et | avodat | Yahweh
@@ -65,8 +58,7 @@ et | avodat | Yahweh
 vehalviyim | yismekhu | et | yedeihem | al
 rosh | haparim
 va'aseh | et | ha'echad | chatat | ve'et | ha'echad | olah | Layahweh
-lekhaper
-al | halviyim
+lekhaper | al | halviyim
 
 8:13
 veha'amadta | et | halviyim
@@ -96,16 +88,14 @@ uvabehemah | beyom | hakoti | khol | bekhor | be'eretz | Mitzrayim
 hikdashti | otam | li
 
 8:18
-va'ekach | et | halviyim
-tachat | kol | bekhor
+va'ekach | et | halviyim | tachat | kol | bekhor
 bivnei | Yisra'el
 
 8:19
 va'etenah | et | halviyim | netunim | Le'aharon | ulevanav | mitokh | benei | Yisra'el
 la'avod | et | avodat | benei | Yisra'el | be'ohel | mo'ed | ulekhaper
 al | benei | Yisra'el
-velo | yihyeh | bivnei | Yisra'el | negef
-begeshet | benei | Yisra'el
+velo | yihyeh | bivnei | Yisra'el | negef | begeshet | benei | Yisra'el
 el | hakodesh
 
 8:20
@@ -128,8 +118,7 @@ ken
 asu | lahem
 
 8:23
-vaydaber | Yahweh
-el | Mosheh | lemor
+vaydaber | Yahweh | el | Mosheh | lemor
 
 8:24
 zot | asher | lalviyim

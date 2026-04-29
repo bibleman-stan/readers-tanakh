@@ -28,8 +28,7 @@ chafeshi
 21:6
 vehigisho | adonav | el | ha'elohim
 vehigisho | el | hadelet
-o
-el | hamezuzah
+o | el | hamezuzah
 veratza | adonav | et | azeno | bamartzea
 va'avado | le'olam
 
@@ -43,8 +42,8 @@ le'am | nakheri | lo | yimshol | lemakherah | bevigdov | vah
 
 21:9
 ve'im | livno
-yi'adenah
-kemishpat | habanot | ya'aseh | lah
+yi'adenah | kemishpat | habanot
+ya'aseh | lah
 
 21:10
 im | acheret
@@ -102,8 +101,7 @@ yinakem
 
 21:21
 akh | im | yom | o | yomayim
-ya'amod
-lo | yukam
+ya'amod | lo | yukam
 ki | khaspo
 hu
 
@@ -117,8 +115,7 @@ venatan | biflilim
 21:23
 ve'im | ason
 yihyeh
-venatatah | nefesh
-tachat | nafesh
+venatatah | nefesh | tachat | nafesh
 
 21:24
 ayin | tachat | ayin
@@ -141,8 +138,7 @@ tachat | eino
 21:27
 ve'im | shen | avdo | ov | shen | amato
 yapil
-lachafeshi | yeshallechenu
-tachat | shino
+lachafeshi | yeshallechenu | tachat | shino
 
 21:28
 vekhi | yigach | shor | et | ish | o | et | ishah
@@ -160,8 +156,7 @@ vegam | be'alav | yumat
 
 21:30
 im | kofer | yushat | alav
-venatan | pidyon | nafsho
-kekhol | asher | yushat
+venatan | pidyon | nafsho | kekhol | asher | yushat
 alav
 
 21:31
@@ -202,5 +197,4 @@ ki | yignov | ish | shor | ov | seh
 utevacho
 o | mekharo
 chamishah | vakar | yeshalem | tachat | hashor
-ve'arba | tzon
-tachat | haseh
+ve'arba | tzon | tachat | haseh

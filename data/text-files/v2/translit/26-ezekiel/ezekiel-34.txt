@@ -18,8 +18,7 @@ lo | tir'u
 34:4
 et | hanachlot | lo | chizaktem | ve'et | hacholah | lo | ripetem | velanishberet | lo | chavashtem
 ve'et | hanidachat | lo | hashevotem
-ve'et | ha'ovedet | lo | vikashtem
-uvechazekah | reditem | otam | uvefarekh
+ve'et | ha'ovedet | lo | vikashtem | uvechazekah | reditem | otam | uvefarekh
 
 34:5
 vatefutzeinah | mibeli | ro'eh
@@ -27,8 +26,7 @@ vatihyeinah | le'okhlah | lekhol | chaiyat | hasadeh
 vatefutzeinah
 
 34:6
-yishgu | tzoni | bekhol | heharim
-ve'al
+yishgu | tzoni | bekhol | heharim | ve'al
 kol | giv'ah | ramah
 ve'al | kol | penei | ha'aretz | Nafotzu | tzoni
 ve'ein | doresh
@@ -42,7 +40,8 @@ et | devar | Yahweh
 34:8
 chai | ani | ne'um | Adonai | Yahweh | im | lo | ya'an | heyot | tzoni | lavaz | vatihyeinah | tzoni | le'okhlah | lekhol | chaiyat | hasadeh | me'ein | ro'eh
 velo | dareshu | ro'ai
-et | tzoni | vaiyir'u | haro'im | otam
+et | tzoni
+vaiyir'u | haro'im | otam
 ve'et | tzoni | lo | ra'u
 
 34:9
@@ -69,8 +68,7 @@ beyom | anan
 va'arafel
 
 34:13
-vehotzetim | min | ha'amim | vekibatztim | min | ha'aratzot | vahavi'otim
-el | admatam
+vehotzetim | min | ha'amim | vekibatztim | min | ha'aratzot | vahavi'otim | el | admatam
 ure'itim | el | harei | Yisra'el | ba'afikim
 uvekhol | moshevei | ha'aretz
 
@@ -89,7 +87,8 @@ Adonai | Yahweh
 34:16
 et | ha'ovedet | avakesh | ve'et | hanidachat | ashiv
 velanishberet | echevosh
-ve'et | hacholah | achazek
+ve'et | hacholah
+achazek
 ve'et | hashemenah | ve'et | hachazakah | ashmid
 er'enah | vemishpat
 
@@ -122,11 +121,11 @@ razah
 ya'an | betzad | uvekhatef | tehdofu
 uvekarneikhem | tenagechu
 kol | hanachlot
-ad | asher | hafitzotem | otanah
-el | hachutzah
+ad | asher | hafitzotem | otanah | el | hachutzah
 
 34:22
-vehosha'ti | letzoni | velo | tihyeinah | od | lavaz
+vehosha'ti | letzoni
+velo | tihyeinah | od | lavaz
 veshafati | bein | seh | laseh
 
 34:23
@@ -167,7 +166,8 @@ ve'ein | macharid
 
 34:29
 vahakimoti | lahem | mata | leshem
-velo | yihyu | od | asufei | ra'av | ba'aretz | velo | yis'u | od
+velo | yihyu | od | asufei | ra'av | ba'aretz
+velo | yis'u | od
 kelimat | hagoyim
 
 34:30

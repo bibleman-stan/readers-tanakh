@@ -2,8 +2,7 @@
 vehayah | mispar | benei | Yisra'el | kechol | haiyam | asher | lo | yimad
 velo | yisafer
 vehayah | bimkom | asher | ye'amer | lahem | lo | ami | atem
-ye'amer | lahem
-benei | el | chai
+ye'amer | lahem | benei | el | chai
 
 2:2
 venikbetzu | benei | Yehudah | uvenei | Yisra'el | yachdav
@@ -20,8 +19,7 @@ ruchamah
 rivu | ve'imekhem | rivu
 ki | hi | lo | ishti
 ve'anokhi
-lo | ishah
-vetaser | zenuneiha | mipaneih
+lo | ishah | vetaser | zenuneiha | mipaneih
 vena'afufeiha | mibein | shadeiha
 
 2:5
@@ -33,7 +31,8 @@ vesamtiha | khamidbar | veshatiha | ke'eretz | tziyah
 vahamitiha | batzama
 
 2:6
-ve'et | baneiha | lo | arachem
+ve'et | baneiha
+lo | arachem
 ki | venei | zenunim
 hemah
 
@@ -90,8 +89,7 @@ chaiyat | hasadeh
 2:15
 ufakadti | aleiha | et | yemei | habe'alim | asher | taktir | lahem
 vata'ad | nizmah | vechelyatah
-vatelekh
-acharei | me'ahaveiha
+vatelekh | acharei | me'ahaveiha
 ve'oti | shakhechah
 ne'um | Yahweh
 
@@ -102,18 +100,19 @@ vedibarti | al | libah
 
 2:17
 venatati | lah | et | kerameiha | misham
-ve'et | emek | Akhor
-lefetach | tikvah
+ve'et | emek | Akhor | lefetach | tikvah
 ve'anetah | shamah | kimei | ne'ureiha
 vikhyom
 alotah | me'eretz | Mitzrayim
 
 2:18
 vehayah | vaiyom | hahu | ne'um | Yahweh | tikre'i
-ishi | velo | tikre'i | li | od | ba'li
+ishi
+velo | tikre'i | li | od | ba'li
 
 2:19
-vahasiroti | et | shemot | habe'alim | mipiha | velo | yizakheru | od | bishmam
+vahasiroti | et | shemot | habe'alim | mipiha
+velo | yizakheru | od | bishmam
 
 2:20
 vekharati | lahem | berit | baiyom | hahu
@@ -138,8 +137,8 @@ vehem | ya'anu | et | ha'aretz
 
 2:24
 veha'aretz | ta'aneh | et | hadagan
-ve'et | hatiroosh | ve'et | haiyitzhar | vehem
-ya'anu | et | Yizre'el
+ve'et | hatiroosh | ve'et | haiyitzhar
+vehem | ya'anu | et | Yizre'el
 
 2:25
 uzera'tiha | li | ba'aretz

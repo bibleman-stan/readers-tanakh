@@ -32,9 +32,7 @@ lekhol | asher | yimatze | sham | badek
 
 12:7
 vayhi | bishnat | esrim | veshalosh | shanah
-lamelekh | Yeho'ash
-lo | chizeku | hakohanim
-et | bedek | habayit
+lamelekh | Yeho'ash | lo | chizeku | hakohanim | et | bedek | habayit
 
 12:8
 vaiyikra | hamelekh | Yeho'ash | Lihoyada | hakohen | velakohanim
@@ -46,8 +44,8 @@ titenuhu
 12:9
 vaiye'otu
 hakohanim
-levilti | kechat | kesef | me'et | ha'am | ulevilti | chazek
-et | bedek | habayit
+levilti | kechat | kesef | me'et | ha'am
+ulevilti | chazek | et | bedek | habayit
 
 12:10
 vaiyikach | Yehoyada | hakohen | aron | echad
@@ -64,8 +62,7 @@ vaiyatzuru | vaiyimnu | et | hakesef
 hanimtza | veit | Yahweh
 
 12:12
-venatenu | et | hakesef | hamtukan
-al | yad | osei | hamelakhah
+venatenu | et | hakesef | hamtukan | al | yad | osei | hamelakhah
 hapekudim
 beit | Yahweh
 vaiyotzi'uhu | lecharashei | ha'etz | velabonim
@@ -103,13 +100,11 @@ yihyu
 az | ya'aleh | Chaza'el | melekh | Aram
 vaiyilachem | al | Gat
 vaiyilkedah
-vaiyasem | Chaza'el | panav | la'alot
-al | Yerushalim
+vaiyasem | Chaza'el | panav | la'alot | al | Yerushalim
 
 12:19
 vaiyikach | Yeho'ash | melekh | Yehudah | et | kol | hakodashim | asher | hikdishu | Yehoshafat | Vihoram | Va'achazyahu | avotav | malkhei | Yehudah | ve'et | kodashav
-ve'et | kol | hazahav | hanimtza | be'otzerot | beit | Yahweh
-uveit | hamelekh
+ve'et | kol | hazahav | hanimtza | be'otzerot | beit | Yahweh | uveit | hamelekh
 vaiyishlach | Lachaza'el | melekh | Aram
 vaiya'al
 me'al | Yerushalim
@@ -123,11 +118,12 @@ lemalkhei | Yehudah
 12:21
 vaiyakumu | avadav
 vaiyiksheru | kasher
-vaiyaku | et | Yo'ash | beit | milo
+vaiyaku | et | Yo'ash
+beit | milo
 haiyored | Sila
 
 12:22
 Veyozavad | benoshi | Shim'at | Vihozavad | ben | Shomer | avadav | hikuhu | vaiyamot
-vaiyikberu | oto | im | avotav
-be'ir | David | vaiyimlokh | Amatzyah | veno
+vaiyikberu | oto | im | avotav | be'ir | David
+vaiyimlokh | Amatzyah | veno
 tachtav

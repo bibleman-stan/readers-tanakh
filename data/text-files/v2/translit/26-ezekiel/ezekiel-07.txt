@@ -4,8 +4,7 @@ elai | lemor
 
 7:2
 ve'atah | ven | adam | koh | amar | Adonai | Yahweh | le'admat | Yisra'el
-ketz | ba | haketz
-al | arba'at | kanfot | ha'aretz
+ketz | ba | haketz | al | arba'at | kanfot | ha'aretz
 
 7:3
 atah | haketz | alayikh
@@ -15,7 +14,8 @@ venatati | alayikh | et
 kol | to'avotayikh
 
 7:4
-velo | tachos | eini | alayikh | velo | echmol
+velo | tachos | eini | alayikh
+velo | echmol
 ki | derakhayikh | alayikh | eten | veto'avotayikh | betokhekh | tihyeina
 vida'tem
 ki | ani | Yahweh
@@ -45,7 +45,8 @@ venatati | alayikh | et
 kol | to'avotayikh
 
 7:9
-velo | tachos | eini | velo | echmol
+velo | tachos | eini
+velo | echmol
 kidrakhayikh | alayikh | eten | veto'avotayikh | betokhekh | tihyeina
 vida'tem
 ki | ani | Yahweh | makeh
@@ -60,15 +61,14 @@ hazadon
 
 7:11
 hechamas | kam | lemateh | resha
-lo | mehem | velo | mehamonam | velo | mehemehem | velo | noah | bahem
+lo | mehem | velo | mehamonam | velo | mehemehem
+velo | noah | bahem
 
 7:12
 ba | ha'et | higia | haiyom
 hakoneh | al | yismach
-vehamokher
-al | yit'abal
-ki | charon
-el | kol | hamonah
+vehamokher | al | yit'abal
+ki | charon | el | kol | hamonah
 
 7:13
 ki | hamokher | el | hamikar | lo | yashuv
@@ -81,8 +81,7 @@ lo | yitchazaku
 7:14
 take'u | vatakoa | vehakhin | hakol
 ve'ein | holekh | lamilchamah
-ki | charoni
-el | kol | hamonah
+ki | charoni | el | kol | hamonah
 
 7:15
 hacherev | bachutz
@@ -104,7 +103,8 @@ vekhol | birkayim | telakhnah | mayim
 7:18
 vechageru | sakim
 vekhisetah | otam
-palatzut | ve'el | kol | panim | bushah | uvekhol | rasheihem
+palatzut | ve'el | kol | panim | bushah
+uvekhol | rasheihem
 karechah
 
 7:19
@@ -127,7 +127,8 @@ vechilluhu
 7:22
 vahasiboti | fanai | mehem
 vechilelu
-et | tzefuni | uva'u | vah | paritzim
+et | tzefuni
+uva'u | vah | paritzim
 vechileluha
 
 7:23
@@ -137,9 +138,8 @@ ki | ha'aretz | mal'ah | mishpat | damim
 veha'ir | mal'ah | chamas
 
 7:24
-veheveti | ra'ei | goyim | veyareshu
-et | bateihem | vehishbati | ge'on | azim
-venichalu | mekadsheihem
+veheveti | ra'ei | goyim | veyareshu | et | bateihem
+vehishbati | ge'on | azim | venichalu | mekadsheihem
 
 7:25
 kefadah | va | uvikshu | shalom | va'ayin

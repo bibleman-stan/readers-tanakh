@@ -1,18 +1,17 @@
 13:1
-baiyom | hahu | Nikra | besefer | Mosheh
-be'azenei | ha'am | venimtza | katuv | bo
+baiyom | hahu | Nikra | besefer | Mosheh | be'azenei | ha'am
+venimtza | katuv | bo
 asher | lo | yavo | amoni | umo'avi | bikhal | ha'elohim
 ad | olam
 
 13:2
-ki | lo | kidemu | et | benei | Yisra'el
-balechem | uvamayim
+ki | lo | kidemu | et | benei | Yisra'el | balechem | uvamayim
 vaiyiskor | alav | et | Bil'am | lekalo
 vaiyahafokh | eloheinu | hakelalah | livrakhah
 
 13:3
-vayhi
-keshame'am | et | hatorah | vaiyavdilu | khol | erev | Miyisra'el
+vayhi | keshame'am | et | hatorah
+vaiyavdilu | khol | erev | Miyisra'el
 
 13:4
 velifnei | mizeh | Elyashiv | hakohen
@@ -36,8 +35,7 @@ Nish'alti | min | hamelekh
 13:7
 va'avo | Lirushalim
 va'avinah | vara'ah | asher | asah | Elyashiv | Letoiyah
-la'asot | lo | nishkah | bechatzrei
-beit | ha'elohim
+la'asot | lo | nishkah | bechatzrei | beit | ha'elohim
 
 13:8
 vaiyera | li | me'od | va'ashlikhah | et | kol | kelei | veit | Toiyah | hachutz | min | halishkah
@@ -61,8 +59,7 @@ va'arivah | et | haseganim
 va'omerah | madua
 Ne'ezav | beit | ha'elohim
 va'ekbetzem
-va'a'amidem
-al | amedam
+va'a'amidem | al | amedam
 
 13:12
 vekhol | Yehudah | hevi'u | ma'sar | hadagan | vehatiroosh | vehaiyitzhar | la'otzarot
@@ -76,16 +73,14 @@ ki | ne'emanim | Nechshavu
 va'aleihem | lachalok | la'acheihem
 
 13:14
-zakherah | li | elohai
-al | zot
+zakherah | li | elohai | al | zot
 ve'al | temach | chasadai | asher | asiti | beveit | elohai
 uvemishmarav
 
 13:15
 baiyamim | hahemah | ra'iti | Vihudah | dorekhim | gitot | bashabat | umevi'im | ha'aremot | ve'omesim | al | hachamorim | ve'af | yayin | anavim | ute'enim | vekhol | masa
-umevi'im | Yerushalim
-beyom | hashabat | va'a'id
-beyom | mikhram | tzayid
+umevi'im | Yerushalim | beyom | hashabat
+va'a'id | beyom | mikhram | tzayid
 
 13:16
 vehatzorim | yashevu | vah | mevi'im | dag
@@ -101,15 +96,13 @@ et | yom | hashabat
 
 13:18
 halo | khoh | asu | avoteikhem
-vaiyave | eloheinu | aleinu | et | kol | hara'ah | hazot
-ve'al
+vaiyave | eloheinu | aleinu | et | kol | hara'ah | hazot | ve'al
 ha'ir | hazot
 ve'atem | mosifim | charon | al | Yisra'el | lechalel | et | hashabat
 
 13:19
 vayhi | ka'asher | tzalalu | sha'arei | Yerushalim | lifnei | hashabat | va'omerah | vaiyisageru | hadelatot
-va'omerah | asher | lo | yiftachum
-ad
+va'omerah | asher | lo | yiftachum | ad
 achar | hashabat | umine'arai | he'emadti | al | hashe'arim
 lo | yavo | masa | beyom | hashabat
 
@@ -137,8 +130,7 @@ amoniyot | mo'aviyot
 13:24
 uveneihem | chatzi | medaber | ashdodit | ve'einam | makirim
 ledaber | yehudit
-vekhilshon
-am | va'am
+vekhilshon | am | va'am
 
 13:25
 va'ariv | imam | va'akalem
@@ -149,8 +141,7 @@ ve'im | tis'u | mibenoteihem | livneikhem | velakhem
 
 13:26
 halo | al | eleh | chata | Shelomoh | melekh | Yisra'el | uvagoyim | harabim | lo | hayah | melekh | kamohu | ve'ahuv | lelohav | hayah
-vaiyitenehu | elohim | melekh
-al | kol | Yisra'el
+vaiyitenehu | elohim | melekh | al | kol | Yisra'el
 gam | oto | hecheti'u
 hanashim
 hanakheriyot
@@ -167,7 +158,8 @@ Lesanvalat | hachoroni
 va'avrichehu | me'alai
 
 13:29
-zakherah | lahem | elohai | al | go'olei | hakehunah | uverit | hakehunah
+zakherah | lahem
+elohai | al | go'olei | hakehunah | uverit | hakehunah
 vehalviyim
 
 13:30

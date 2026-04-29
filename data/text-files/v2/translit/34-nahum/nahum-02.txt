@@ -8,7 +8,8 @@ kuloh | Nikhrat
 2:2
 alah | mefitz | al | panayikh
 natzor | metzurah
-tzapeh | derekh | chazek | matenayim | ametz | koach | me'od
+tzapeh | derekh | chazek | matenayim
+ametz | koach | me'od
 
 2:3
 ki | shav | Yahweh | et | ge'on | Ya'ako | kig'on
@@ -18,14 +19,14 @@ uzemoreihem
 shichetu
 
 2:4
-magen | giboreihu | me'adam | anshei | chayil | metula'im
-be'esh | peladot | harekhev | beyom | hakhino
+magen | giboreihu | me'adam | anshei | chayil | metula'im | be'esh | peladot | harekhev
+beyom | hakhino
 vehaberoshim
 hare'alu
 
 2:5
-bachutzot | yitholu | harekhev | yishtakshekun
-barechovot | mar'eihen | kalapidim | kaberakim | yerotzetzu
+bachutzot | yitholu | harekhev | yishtakshekun | barechovot | mar'eihen | kalapidim
+kaberakim | yerotzetzu
 
 2:6
 yizkor | adirav
@@ -41,8 +42,7 @@ vehaheikhal | Namog
 2:8
 vehutzav
 guletah | ho'alatah
-ve'amhoteiha | menahagoyt | kekol | yonim | metofefot
-al | livehen
+ve'amhoteiha | menahagoyt | kekol | yonim | metofefot | al | livehen
 
 2:9
 Venineveh | khivrekhat | mayim | mimei | hi
@@ -51,7 +51,8 @@ imdu | amodu | ve'ein | mafneh
 
 2:10
 bozu | khesef | bozu | zahav
-ve'ein | ketzeh | latekhunah | kavod | mikol
+ve'ein | ketzeh | latekhunah
+kavod | mikol
 keli | chemdah
 
 2:11
@@ -61,8 +62,8 @@ ufenei | khulam
 kibetzu | farur
 
 2:12
-aiyeh | me'on | arayot | umir'eh | hu | lakefirim
-asher | halakh | aryeh | lavi | sham | gur | aryeh
+aiyeh | me'on | arayot | umir'eh | hu
+lakefirim | asher | halakh | aryeh | lavi | sham | gur | aryeh
 ve'ein | macharid
 
 2:13
@@ -74,5 +75,6 @@ terefah
 hini | elayikh | ne'um | Yahweh | tzeva'ot
 vehiv'arti | ve'ashan | rikhbah | ukhefirayikh
 tokhal | charev
-vehikhrati | me'eretz | tarpekh | velo | yishama | od
+vehikhrati | me'eretz | tarpekh
+velo | yishama | od
 kol | mal'akhekheh

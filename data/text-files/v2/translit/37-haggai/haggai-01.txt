@@ -20,8 +20,7 @@ charev
 1:5
 ve'atah | koh | amar
 Yahweh | tzeva'ot
-simu | levavkhem
-al | darkheikhem
+simu | levavkhem | al | darkheikhem
 
 1:6
 zera'tem | harbeh | vehave | me'at | akhol | ve'ein | lesave'ah | shato | ve'ein | leshakherah
@@ -30,8 +29,7 @@ vehammistaker | mistaker | el | tzeror | nakuv
 
 1:7
 koh | amar | Yahweh | tzeva'ot
-simu | levavkhem
-al | darkheikhem
+simu | levavkhem | al | darkheikhem
 
 1:8
 alu | hahar | vahavetem | etz | uvenu | habayit
@@ -55,9 +53,7 @@ kal'ah | yevulah
 1:11
 va'ekra | chorev | al | ha'aretz | ve'al | heharim | ve'al | hadagan | ve'al | hatiroosh | ve'al | haiyitzhar
 ve'al | asher | totzi
-ha'adamah
-ve'al | ha'adam | ve'al | habehemah
-ve'al
+ha'adamah | ve'al | ha'adam | ve'al | habehemah | ve'al
 kol | yegia | kapayim
 
 1:12
@@ -76,9 +72,11 @@ ne'um | Yahweh
 
 1:14
 vaiya'ar | Yahweh | et | ruach | Zerubavel | ben | Shalti'el | pachat | Yehudah | ve'et | ruach | Yehoshua | ben | Yehotzadak | hakohen | hagadol
-ve'et | ruach | kol | she'erit | ha'am
+ve'et | ruach
+kol | she'erit | ha'am
 vaiyavo'u | vaiya'asu | melakhah
-beveit | Yahweh | tzeva'ot | eloheihem
+beveit | Yahweh | tzeva'ot
+eloheihem
 
 1:15
 beyom | esrim | ve'arba'ah | lachodesh | bashishi

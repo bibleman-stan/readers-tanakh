@@ -1,7 +1,7 @@
 21:1
 vaiyishkav | Yehoshafat | im | avotav
-vaiyikaver | im | avotav
-be'ir | David | vaiyimlokh | Yehoram | beno
+vaiyikaver | im | avotav | be'ir | David
+vaiyimlokh | Yehoram | beno
 tachtav
 
 21:2
@@ -34,8 +34,8 @@ ishah | vaiya'as | hara
 be'einei | Yahweh
 
 21:7
-velo | avah | Yahweh | lehashchit | et | beit | David
-lema'an | haberit | asher | karat | Ledavid
+velo | avah | Yahweh | lehashchit | et | beit | David | lema'an | haberit
+asher | karat | Ledavid
 vekha'asher | amar | latet | lo | nir | ulevanav
 kol | haiyamim
 
@@ -55,7 +55,8 @@ ve'et | sarei | harakhev
 vaiyifsha | Edom | mitachat | yad | Yehudah | ad | haiyom | hazeh
 az | tifsha | Livnah | ba'et | hahi | mitachat | yado
 ki | azav
-et | Yahweh | elohei | avotav
+et | Yahweh
+elohei | avotav
 
 21:11
 gam | hu | asah | vamot
@@ -66,8 +67,7 @@ vaiyadach | et | Yehudah
 21:12
 vaiyavo | elav | mikhtav | Me'eliyahu | hanavi | lemor
 koh | amar | Yahweh | elohei | David | avikha
-tachat | asher | lo | halakhta | bedarkhei | Yehoshafat | avikha
-uvedarkhei
+tachat | asher | lo | halakhta | bedarkhei | Yehoshafat | avikha | uvedarkhei
 Asa | melekh | Yehudah
 
 21:13
@@ -79,12 +79,12 @@ harageta
 
 21:14
 hineh | Yahweh | nogef | magefah | gedolah | be'amekha
-uvevaneikha | uvenasheikha | uvekhol | rekhushekha
+uvevaneikha | uvenasheikha
+uvekhol | rekhushekha
 
 21:15
 ve'atah | bocholayim | rabim | bemachaleh | me'eikha
-ad | yetze'u | me'eikha | min | hacholi | yamim
-al | yamim
+ad | yetze'u | me'eikha | min | hacholi | yamim | al | yamim
 
 21:16
 vaiya'ar | Yahweh | al | Yehoram | et | ruach | hapelishtim | veha'arvim | asher | al | yad | kushim
@@ -98,18 +98,18 @@ ki | im | Yeho'achaz
 keton | banav
 
 21:18
-ve'acharei
-kol | zot | negafo | Yahweh | beme'av | locholi
+ve'acharei | kol | zot | negafo | Yahweh | beme'av | locholi
 le'ein | marpe
 
 21:19
 vayhi | leyamim | miyamim | ukhe'et | tzet | haketz | leyamim | shenayim | yatze'u | me'av | im | chalyo
 vaiyamot
-betachalu'im | ra'im | velo | asu | lo | amo | serefah | kisrefat | avotav
+betachalu'im | ra'im
+velo | asu | lo | amo | serefah
+kisrefat | avotav
 
 21:20
 ben | sheloshim | ushetayim | hayah | vemalekho
 ushemoneh | shanim | malakh | Birushalim
 vaiyelekh | belo | chemdah
-vaiyikberuhu | be'ir | David | velo
-bekivrot | hamelakhim
+vaiyikberuhu | be'ir | David | velo | bekivrot | hamelakhim

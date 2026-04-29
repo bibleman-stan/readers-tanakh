@@ -1,8 +1,6 @@
 15:1
 vaiyomer | Shemu'el | el | Sha'ul
-oti | shalach | Yahweh | limshochokha | lemelekh
-al | amo
-al | Yisra'el
+oti | shalach | Yahweh | limshochokha | lemelekh | al | amo | al | Yisra'el
 ve'atah | shema | lekol
 divrei | Yahweh
 
@@ -26,8 +24,8 @@ va'aseret | alafim
 et | ish | Yehudah
 
 15:5
-vaiyavo | Sha'ul
-ad | ir | Amalek | vaiyarev | banachal
+vaiyavo | Sha'ul | ad | ir | Amalek
+vaiyarev | banachal
 
 15:6
 vaiyomer | Sha'ul | el | hakeini | lekhu | suru | redu | mitokh | amalki | pen | osifkha | imo
@@ -40,7 +38,8 @@ vaiyakh | Sha'ul | et | Amalek | Mechavilah | bo'akha | Shur | asher | al | pene
 15:8
 vaiyitpos | et | Agag | melekh | Amalek
 chai
-ve'et | kol | ha'am | hecherim | lefi | charev
+ve'et | kol | ha'am
+hecherim | lefi | charev
 
 15:9
 vaiyachmol | Sha'ul | veha'am | al | Agag | ve'al | meitav | hatzon | vehabakar | vehamishnim | ve'al | hakarim | ve'al | kol | hatov
@@ -50,8 +49,7 @@ vekhol | hamelakhah | nemivzah | venames
 otah | hecherimu
 
 15:10
-vayhi | devar | Yahweh
-el | Shemu'el | lemor
+vayhi | devar | Yahweh | el | Shemu'el | lemor
 
 15:11
 Nichamti | ki | himlakhti | et | Sha'ul | lemelekh
@@ -68,8 +66,7 @@ vaiyered
 Hagilgal
 
 15:13
-vaiyavo | Shemu'el
-el | Sha'ul
+vaiyavo | Shemu'el | el | Sha'ul
 vaiyomer | lo | Sha'ul | barukh | atah | Layahweh
 hakimoti
 et | devar | Yahweh
@@ -83,7 +80,8 @@ shomea
 vaiyomer | Sha'ul | me'amalki | hevi'um | asher | chamal | ha'am | al | meitav | hatzon | vehabakar
 lema'an | zevoach
 Layahweh | eloheikha
-ve'et | haiyoter | hecheramnu
+ve'et | haiyoter
+hecheramnu
 
 15:16
 vaiyomer | Shemu'el | el | Sha'ul
@@ -95,14 +93,12 @@ daber
 vaiyomer | Shemu'el
 halo | im | katon | atah | be'eineikha
 rosh | shivtei | Yisra'el
-atah | vaiyimshachakha | Yahweh | lemelekh
-al | Yisra'el
+atah | vaiyimshachakha | Yahweh | lemelekh | al | Yisra'el
 
 15:18
 vaiyishlachakha | Yahweh | bedarekh
 vaiyomer | lekh | vehacharamtah | et | hachata'im | et | Amalek
-venilchamta | vo
-ad | kalotam
+venilchamta | vo | ad | kalotam
 otam
 
 15:19
@@ -115,18 +111,17 @@ vaiyomer | Sha'ul | el | Shemu'el | asher | shama'ti | bekol | Yahweh
 va'elekh | baderekh
 asher | shelachani | Yahweh
 va'avi | et | Agag | melekh | Amalek
-ve'et | Amalek | hecheramti
+ve'et | Amalek
+hecheramti
 
 15:21
 vaiyikach | ha'am | mehashalal | tzon | uvakar
 reshit | hacherem | lizboach | Layahweh | eloheikha | Bagilgal
 
 15:22
-vaiyomer | Shemu'el | hachefetz | Layahweh | be'olot | uzevachim
-kishmoa
+vaiyomer | Shemu'el | hachefetz | Layahweh | be'olot | uzevachim | kishmoa
 bekol | Yahweh
-hineh | shemoa | mizevach | tov | lehakshiv
-mechelev | eilim
+hineh | shemoa | mizevach | tov | lehakshiv | mechelev | eilim
 
 15:23
 ki | chatat | kesem | meri | ve'aven | uterafim
@@ -142,7 +137,8 @@ va'eshma | bekolam
 
 15:25
 ve'atah | sa | na
-et | chatati | veshuv | imi
+et | chatati
+veshuv | imi
 ve'eshtachaveh | Layahweh
 
 15:26
@@ -150,8 +146,7 @@ vaiyomer | Shemu'el | el | Sha'ul
 lo | ashuv
 imakh
 ki | ma'astah | et | devar | Yahweh
-vaiyim'asekha | Yahweh | mihyot | melekh
-al | Yisra'el
+vaiyim'asekha | Yahweh | mihyot | melekh | al | Yisra'el
 
 15:27
 vaiyiso | Shemu'el | lalekhet
@@ -179,8 +174,7 @@ vehishtachaveiti
 Layahweh | eloheikha
 
 15:31
-vaiyashov | Shemu'el
-acharei | Sha'ul
+vaiyashov | Shemu'el | acharei | Sha'ul
 vaiyishtachu | Sha'ul | Layahweh
 
 15:32
@@ -203,8 +197,6 @@ giv'at | Sha'ul
 
 15:35
 velo | yasaf | Shemu'el | lir'ot | et | Sha'ul | ad | yom | moto
-ki | hit'abel | Shemu'el
-el | Sha'ul
+ki | hit'abel | Shemu'el | el | Sha'ul
 Vayahweh | nicham
-ki | himlikh | et | Sha'ul
-al | Yisra'el
+ki | himlikh | et | Sha'ul | al | Yisra'el

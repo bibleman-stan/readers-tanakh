@@ -1,5 +1,6 @@
 1:1
-Adam | Shet | Enoosh
+Adam | Shet
+Enoosh
 
 1:2
 Keinan | Mahalal'el | Yared
@@ -40,8 +41,7 @@ Vesavtekha | uvenei | Ra'ma
 Sheva | Udedan
 
 1:10
-Vekhush
-yalad | et | Nimrod
+Vekhush | yalad | et | Nimrod
 hu | hechel | lihyot | gibor | ba'aretz
 
 1:11
@@ -55,13 +55,16 @@ ve'et | kaftorim
 Ukhena'an | yalad | et | Tzidon | bekhoro | ve'et | Chet
 
 1:14
-ve'et | hayvusi | ve'et | ha'emori | ve'et | hagirgashi
+ve'et | hayvusi | ve'et | ha'emori
+ve'et | hagirgashi
 
 1:15
-ve'et | hachivi | ve'et | ha'arki | ve'et | hasini
+ve'et | hachivi | ve'et | ha'arki
+ve'et | hasini
 
 1:16
-ve'et | ha'arvadi | ve'et | hatzemari | ve'et | hachamati
+ve'et | ha'arvadi | ve'et | hatzemari
+ve'et | hachamati
 
 1:17
 benei | Shem | Eilam | Ve'ashur | Ve'arpakhshad
@@ -72,8 +75,7 @@ Vegeter | Vameshekh
 1:18
 Ve'arpakhshad
 yalad | et | Shalach
-Veshelach
-yalad | et | Ever
+Veshelach | yalad | et | Ever
 
 1:19
 Ule'ever | yulad
@@ -83,16 +85,22 @@ veshem | achiv | Yaketan
 
 1:20
 Veyaketan | yalad | et | Almodad
-ve'et | Shalef | ve'et | Chatzarmavet | ve'et | Yarach
+ve'et | Shalef
+ve'et | Chatzarmavet
+ve'et | Yarach
 
 1:21
-ve'et | Hadoram | ve'et | Uzal | ve'et | Diklah
+ve'et | Hadoram | ve'et | Uzal
+ve'et | Diklah
 
 1:22
-ve'et | Eival | ve'et | Avima'el | ve'et | Sheva
+ve'et | Eival | ve'et | Avima'el
+ve'et | Sheva
 
 1:23
-ve'et | Ofir | ve'et | Chavilah | ve'et | Yovav | kol | eleh
+ve'et | Ofir | ve'et | Chavilah
+ve'et | Yovav
+kol | eleh
 benei | Yaketan
 
 1:24
@@ -187,14 +195,12 @@ Chamran | Ve'eshban
 Veyitran | Ukheran
 
 1:42
-benei | Etzer | Bilhan | Veza'avan | Ya'akan
-benei | Dishon
+benei | Etzer | Bilhan | Veza'avan | Ya'akan | benei | Dishon
 Utz | Va'aran
 
 1:43
 ve'eleh | hamelakhim | asher | malekhu | be'eretz | Edom
-lifnei | melokh | melekh | livnei | Yisra'el
-Bela | ben | Be'or
+lifnei | melokh | melekh | livnei | Yisra'el | Bela | ben | Be'or
 veshem | iro
 Dinhavah
 
@@ -228,8 +234,7 @@ Sha'ul | Merechovot | Hanahar
 
 1:49
 vaiyamot
-Sha'ul | vaiyimlokh | tachtav
-Ba'al | Chanan
+Sha'ul | vaiyimlokh | tachtav | Ba'al | Chanan
 ben | Akhbor
 
 1:50

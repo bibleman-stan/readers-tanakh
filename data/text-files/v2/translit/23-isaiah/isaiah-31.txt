@@ -1,6 +1,5 @@
 31:1
-ho | haiyoredim | Mitzrayim | le'ezrah
-al | susim
+ho | haiyoredim | Mitzrayim | le'ezrah | al | susim
 yisha'enu
 vaiyivtechu | al | rekhev | ki | rav | ve'al | parashim | ki | atzemu | me'od | velo | sha'u | al | kedoosh | Yisra'el
 ve'et | Yahweh | lo | darashu
@@ -13,7 +12,8 @@ po'alei | aven
 
 31:3
 Umitzrayim | adam | velo | el
-vesuseihem | basar | velo | ruach
+vesuseihem | basar
+velo | ruach
 Vayahweh | yateh | yado | vekhashal | ozer | venafal | azur
 veyachdav
 kulam | yikhlayun
@@ -22,13 +22,10 @@ kulam | yikhlayun
 ki | khoh | amar | Yahweh | elai | ka'asher | yehgeh | ha'aryeh | vehakefir | al | tarpo | asher | yikare | alav | melo | ro'im
 mikolam | lo | yechat | umehamonam
 lo | ya'aneh
-ken | yered | Yahweh | tzeva'ot
-litzbo | al | har | Tziyon
-ve'al | giv'atah
+ken | yered | Yahweh | tzeva'ot | litzbo | al | har | Tziyon | ve'al | giv'atah
 
 31:5
-ketziporim | afot | ken | yagen | Yahweh | tzeva'ot
-al | Yerushalim
+ketziporim | afot | ken | yagen | Yahweh | tzeva'ot | al | Yerushalim
 ganon | vehitzil
 pasoach | vehimlit
 

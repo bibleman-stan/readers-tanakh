@@ -1,10 +1,9 @@
 13:1
-vaydaber | Yahweh
-el | Mosheh | lemor
+vaydaber | Yahweh | el | Mosheh | lemor
 
 13:2
-kadesh | li | khol | bekhor | peter | kol | rechem | bivnei | Yisra'el
-ba'adam | uvabehemah | li
+kadesh | li | khol | bekhor | peter | kol | rechem | bivnei | Yisra'el | ba'adam
+uvabehemah | li
 hu
 
 13:3
@@ -25,15 +24,13 @@ udevash
 ve'avadta | et | ha'avodah | hazot | bachodesh | hazeh
 
 13:6
-shiv'at | yamim
-tokhal | matzot
-uvaiyom | hashevi'i
+shiv'at | yamim | tokhal | matzot | uvaiyom | hashevi'i
 chag | Layahweh
 
 13:7
 matzot | ye'akhel | et
-shiv'at | haiyamim | velo | yera'eh | lekha | chametz | velo | yera'eh | lekha | se'or
-bekhol | gevulekha
+shiv'at | haiyamim
+velo | yera'eh | lekha | chametz | velo | yera'eh | lekha | se'or | bekhol | gevulekha
 
 13:8
 vehigadta | levinkha | baiyom | hahu | lemor
@@ -69,8 +66,7 @@ tifdeh
 13:14
 vehayah | ki | yish'alekha | vinkha | machar | lemor | mah | zot
 ve'amarta | elav
-bechozek | yad | hotzi'anu | Yahweh | Mimitzrayim
-mibeit | avadim
+bechozek | yad | hotzi'anu | Yahweh | Mimitzrayim | mibeit | avadim
 
 13:15
 vayhi | ki | hikshah | far'oh | leshalechenu

@@ -4,8 +4,7 @@ shamor | et | kol | hamitzvah | asher | anokhi | metzaveh | etkhem
 haiyom
 
 27:2
-vehayah | baiyom | asher | ta'avru | et | Haiyarden
-el | ha'aretz
+vehayah | baiyom | asher | ta'avru | et | Haiyarden | el | ha'aretz
 asher | Yahweh | eloheikha | noten | lakh
 vahakemota | lekha | avanim | gedolot
 vesadta | otam | basid
@@ -22,13 +21,15 @@ behar | Eival
 vesadta | otam | basid
 
 27:5
-uvanita | sham | mizbeach | Layahweh | eloheikha
+uvanita | sham | mizbeach | Layahweh
+eloheikha
 mizbach | avanim | lo | tanif | aleihem | barzel
 
 27:6
 avanim | shelemot | tivneh | et | mizbach
 Yahweh | eloheikha
-veha'alita | alav | olot | Layahweh | eloheikha
+veha'alita | alav | olot | Layahweh
+eloheikha
 
 27:7
 vezavachta | shelamim | ve'akhalta | sham
@@ -38,8 +39,7 @@ vesamachta | lifnei | Yahweh | eloheikha
 vekhatavta | al | ha'avanim | et | kol | divrei | hatorah | hazot | ba'er | heitev
 
 27:9
-vaydaber | Mosheh | vehakohanim | halviyim
-el | kol | Yisra'el | lemor
+vaydaber | Mosheh | vehakohanim | halviyim | el | kol | Yisra'el | lemor
 hasket | ushema | Yisra'el
 haiyom | hazeh | Nihyeita | le'am | Layahweh
 eloheikha
@@ -53,15 +53,14 @@ haiyom
 vaytzav | Mosheh | et | ha'am | baiyom | hahu | lemor
 
 27:12
-eleh | ya'amdu | levarekh | et | ha'am | al | har | Gerizim
-be'averekhem
-et | Haiyarden | Shim'on | Velevi | Vihudah
+eleh | ya'amdu | levarekh | et | ha'am | al | har | Gerizim | be'averekhem
+et | Haiyarden
+Shim'on | Velevi | Vihudah
 Veyisoshkhar
 Veyosef | Uvinyamin
 
 27:13
-ve'eleh | ya'amdu | al | hakelalah
-behar | Eival
+ve'eleh | ya'amdu | al | hakelalah | behar | Eival
 Re'uven | Gad | Ve'asher
 Uzevulun
 Dan | Venaftali
@@ -108,9 +107,7 @@ amen
 
 27:21
 arur
-shokhev
-im | kol | behemah
-ve'amar | kol | ha'am
+shokhev | im | kol | behemah | ve'amar | kol | ha'am
 amen
 
 27:22
@@ -122,9 +119,7 @@ amen
 
 27:23
 arur
-shokhev
-im | chotanto
-ve'amar | kol | ha'am
+shokhev | im | chotanto | ve'amar | kol | ha'am
 amen
 
 27:24
@@ -133,10 +128,8 @@ ve'amar | kol | ha'am
 amen
 
 27:25
-arur | lokeach | shochad
-lehakot | nefesh
-dam | naki
-ve'amar | kol | ha'am
+arur | lokeach | shochad | lehakot | nefesh
+dam | naki | ve'amar | kol | ha'am
 amen
 
 27:26

@@ -1,7 +1,7 @@
 38:1
 vayhi | ba'et | hahiv
-vaiyered | Yehudah
-me'et | echav | vaiyet | ad | ish | adulami
+vaiyered | Yehudah | me'et | echav
+vaiyet | ad | ish | adulami
 ushemo | Chirah
 
 38:2
@@ -72,8 +72,7 @@ Timnatah
 
 38:13
 vaiyugad | Letamar | lemor
-hineh | chamikh | oleh | Timnatah
-lagoz | tzono
+hineh | chamikh | oleh | Timnatah | lagoz | tzono
 
 38:14
 vatasar | bigdei | almenutah | me'aleiha | vatekhas | batza'if | vatit'alaf
@@ -98,9 +97,9 @@ elai
 
 38:17
 vaiyomer
-anokhi | ashalach | gedi | izim | min | hatzon | vatomer
-im | titen | eravon
-ad | shalchekha
+anokhi | ashalach | gedi | izim | min | hatzon
+vatomer
+im | titen | eravon | ad | shalchekha
 
 38:18
 vaiyomer | mah | ha'eravon | asher | eten | lokh
@@ -120,8 +119,7 @@ lakachat | ha'eravon | miyad | ha'ishah | velo | metza'ah
 
 38:21
 vaiyish'al | et | anshei | mekomah | lemor
-aiyeh | hakedeshah | hi | Va'einayim
-al | hadarekh
+aiyeh | hakedeshah | hi | Va'einayim | al | hadarekh
 vaiyomeru | lo | hayetah | vazeh
 kedeshah
 
@@ -134,8 +132,7 @@ kedeshah
 38:23
 vaiyomer | Yehudah | tikach | lah
 pen | nihyeh | lavuz
-hineh | shalachti | hagedi | hazeh | ve'atah
-lo | metzatah
+hineh | shalachti | hagedi | hazeh | ve'atah | lo | metzatah
 
 38:24
 vayhi | kemishlosh | chodashim | vaiyugad | Lihudah | lemor | zanetah | Tamar | kalatekha
@@ -154,7 +151,8 @@ ha'eleh
 
 38:26
 vaiyaker | Yehudah | vaiyomer | tzadekah | mimeni
-ki | al | ken | lo | netatiha | Leshelah | veni | velo | yasaf | od | leda'tah
+ki | al | ken | lo | netatiha | Leshelah | veni
+velo | yasaf | od | leda'tah
 
 38:27
 vayhi | be'et | lidtah

@@ -5,8 +5,7 @@ ki | ha'elohim | bashamayim | ve'atah | al | ha'aretz
 al | ken | yihyu | devareikha | me'atim
 
 5:2
-ki | ba | hachalom
-bero | inyan
+ki | ba | hachalom | bero | inyan
 vekol | kesil | bero | devarim
 
 5:3
@@ -36,8 +35,7 @@ yera
 
 5:7
 im | oshek | rash | vegezel | mishpat | vatzedek | tir'eh | vamedinah
-al | titmah
-al | hachefetz
+al | titmah | al | hachefetz
 ki | gavoah | me'al | gavoah | shomer
 ugevohim
 aleihem
@@ -47,7 +45,8 @@ veyitron | eretz | bakol | hi | melekh | lesadeh
 Ne'evad
 
 5:9
-ohev | kesef | lo | yisba | kesef | umi | ohev | behamon
+ohev | kesef | lo | yisba | kesef
+umi | ohev | behamon
 lo | tevu'ah
 gam | zeh
 havel
@@ -55,7 +54,8 @@ havel
 5:10
 birvot | hatovah
 rabu
-okhleiha | umah | kishron | liv'aleiha
+okhleiha
+umah | kishron | liv'aleiha
 ki
 im | re'iyat | einav
 
@@ -71,21 +71,19 @@ ra'iti | tachat | hashamesh
 osher | shamur | liv'alav | lera'ato
 
 5:13
-ve'avad | ha'osher | hahu
-be'inyan | ra
-veholid | ben
-ve'ein | beyado | me'umah
+ve'avad | ha'osher | hahu | be'inyan | ra
+veholid | ben | ve'ein | beyado | me'umah
 
 5:14
 ka'asher | yatza | mibeten | imo
-arom | yashuv | lalekhet | kesheba
-ume'umah | lo | yisa | va'amalo
+arom | yashuv | lalekhet | kesheba | ume'umah | lo | yisa | va'amalo
 sheiyolekh | beyado
 
 5:15
 vegam | zoh | ra'ah | cholah
 kol | umat | sheba
-ken | yelekh | umah | yitron | lo
+ken | yelekh
+umah | yitron | lo
 sheiya'amol | laruach
 
 5:16

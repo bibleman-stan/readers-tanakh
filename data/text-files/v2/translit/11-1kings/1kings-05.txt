@@ -5,9 +5,7 @@ gevul | Mitzrayim | magishim | minchah | ve'oedim | et | Shelomoh
 kol | yemei | chaiyav
 
 5:2
-vayhi | lechem | Shelomoh
-leyom | echad | sheloshim | kor | solet
-veshishim | kor
+vayhi | lechem | Shelomoh | leyom | echad | sheloshim | kor | solet | veshishim | kor
 kamach
 
 5:3
@@ -22,12 +20,10 @@ veshalom | hayah | lo | mikol | avarav | misaviv
 
 5:5
 vaiyeshev | Yehudah | Veyisra'el | lavetach | ish | tachat | gafno | vetachat | te'enato
-Midan
-ve'ad | Be'er | Shava | kol | yemei | Shelomoh
+Midan | ve'ad | Be'er | Shava | kol | yemei | Shelomoh
 
 5:6
-vayhi | Lishlomoh | arba'im | elef | urvot | susim
-lemerkavo
+vayhi | Lishlomoh | arba'im | elef | urvot | susim | lemerkavo
 usheneim | asar | elef | parashim
 
 5:7
@@ -56,15 +52,14 @@ benei | Machol | vayhi | shemo | vekhal | hagoyim | saviv
 
 5:12
 vaydaber
-sheloshet | alafim | mashal | vayhi | shiro
+sheloshet | alafim | mashal
+vayhi | shiro
 chamishah | va'alef
 
 5:13
 vaydaber | al | ha'etzim | min | ha'erez | asher | Balevanon
 ve'ad | ha'ezov | asher | yotze | bakir
-vaydaber | al | habehemah | ve'al | ha'of
-ve'al | haremes
-ve'al | hadagim
+vaydaber | al | habehemah | ve'al | ha'of | ve'al | haremes | ve'al | hadagim
 
 5:14
 vaiyavo'u | mikol | ha'amim | lishmoa | et | chakhemat | Shelomoh
@@ -80,8 +75,7 @@ ki | ohev | hayah | Chiram | Ledavid
 kol | haiyamim
 
 5:16
-vaiyishlach | Shelomoh
-el | Chiram | lemor
+vaiyishlach | Shelomoh | el | Chiram | lemor
 
 5:17
 atah | yada'ta | et | David | avi | ki | lo | yakhol | livnot | bayit | leshem | Yahweh | elohav
@@ -109,8 +103,7 @@ katzidonim
 5:21
 vayhi | kishmoa | Chiram | et | divrei | Shelomoh
 vaiyismach | me'od | vaiyomer | barukh | Yahweh | haiyom
-asher | natan | Ledavid | ben | chakham
-al | ha'am | harav | hazeh
+asher | natan | Ledavid | ben | chakham | al | ha'am | harav | hazeh
 
 5:22
 vaiyishlach | Chiram | el | Shelomoh | lemor
@@ -150,8 +143,7 @@ sheloshim | elef | ish
 5:28
 vaiyishlachem | Levanonah | aseret | alafim | bachodesh | chalifot
 chodesh | yihyu | Valevanon
-shenayim | chodashim | beveito | Va'adoniram
-al | hamas
+shenayim | chodashim | beveito | Va'adoniram | al | hamas
 
 5:29
 vayhi | Lishlomoh | shiv'im | elef | nose | sabal
@@ -168,5 +160,4 @@ avnei | gazit
 
 5:32
 vaiyifselu | bonei | Shelomoh | uvonei | Chirom
-vehagivlim | vaiyakhinu | ha'etzim | veha'avanim
-livnot | habayit
+vehagivlim | vaiyakhinu | ha'etzim | veha'avanim | livnot | habayit

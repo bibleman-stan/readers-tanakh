@@ -1,6 +1,5 @@
 28:1
-vaydaber | Yahweh
-el | Mosheh | lemor
+vaydaber | Yahweh | el | Mosheh | lemor
 
 28:2
 tzav | et | benei | Yisra'el
@@ -16,10 +15,10 @@ kevasim | benei | shanah | temimim | shenayim | laiyom
 olah | tamid
 
 28:4
-et | hakeves | echad | ta'aseh | vaboker
+et | hakeves | echad
+ta'aseh | vaboker
 ve'et | hakeves | hasheni
-ta'aseh
-bein | ha'arbayim
+ta'aseh | bein | ha'arbayim
 
 28:5
 va'asirit | ha'eifah | solet | leminchah | belulah | beshemen | katit
@@ -37,8 +36,7 @@ ha'echad | bakodesh | hasekh | nesekh | shekhar | Layahweh
 
 28:8
 ve'et | hakeves | hasheni
-ta'aseh
-bein | ha'arbayim
+ta'aseh | bein | ha'arbayim
 keminchat | haboker | ukhenisko | ta'aseh
 isheh | reiach | nichoach | Layahweh
 
@@ -50,8 +48,7 @@ ushenei | esronim | solet | minchah | belulah | vashemen
 venisko
 
 28:10
-olat | shabat | beshabbato
-al | olat | hatamid
+olat | shabat | beshabbato | al | olat | hatamid
 veniskah
 
 28:11
@@ -89,8 +86,7 @@ pesach | Layahweh
 28:17
 uvachamishah | asar | yom | lachodesh | hazeh
 chag
-shiv'at | yamim | matzot
-ye'akhel
+shiv'at | yamim | matzot | ye'akhel
 
 28:18
 baiyom | harishon | mikra | kodesh | kol | melekhet | avodah

@@ -4,8 +4,7 @@ Chavakuk
 hanavi
 
 1:2
-ad | anah | Yahweh | shiva'ti
-velo | tishma
+ad | anah | Yahweh | shiva'ti | velo | tishma
 ez'ak | eleikha | chamas
 velo | toshia
 
@@ -16,8 +15,9 @@ vayhi | riv | umadon
 yisa
 
 1:4
-al | ken | tafug | torah | velo | yetze | lanetzach
-mishpat | ki | rasha | makhtir | et | hatzadik
+al | ken | tafug | torah
+velo | yetze | lanetzach | mishpat
+ki | rasha | makhtir | et | hatzadik
 al | ken | yetze | mishpat | me'ukal
 
 1:5
@@ -75,13 +75,11 @@ tehor | einayim | mere'ot | ra
 vehabit | el | amal
 lo | tukhal
 lamah | tabit | bogdim
-tacharish
-bevala | rasha
+tacharish | bevala | rasha
 tzadik | mimenu
 
 1:14
-vata'aseh | adam | kidgei | haiyam | keremes
-lo | moshel | bo
+vata'aseh | adam | kidgei | haiyam | keremes | lo | moshel | bo
 
 1:15
 kuloh | bechakah | he'alah | yegorehu | vechermo
@@ -89,8 +87,7 @@ veya'asfehu | bemikhmarto
 al | ken | yismach | veyagil
 
 1:16
-al | ken | yezabeach | lechermo
-vikater | lemikhmarto
+al | ken | yezabeach | lechermo | vikater | lemikhmarto
 ki | vahemah | shamen | chelko | uma'akhalo | beri'ah
 
 1:17

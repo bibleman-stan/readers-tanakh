@@ -1,6 +1,5 @@
 1:1
-devar | Yahweh | asher | hayah
-el | Yo'el
+devar | Yahweh | asher | hayah | el | Yo'el
 ben | Petu'el
 
 1:2
@@ -24,8 +23,7 @@ hechasil
 1:5
 hakitzu | shikorim | uvekhu
 veheililu
-kol | shotei | yayin
-al | asis
+kol | shotei | yayin | al | asis
 ki | Nikhrat | mipikhem
 
 1:6
@@ -57,9 +55,7 @@ hovish | tiroosh
 umlal | yitzhar
 
 1:11
-hovishu | ikarim | heililu | koremim
-al | chitah
-ve'al | se'orah
+hovishu | ikarim | heililu | koremim | al | chitah | ve'al | se'orah
 ki | avad
 ketzir | sadeh
 
@@ -80,8 +76,7 @@ minchah | vanasekh
 kadeshu | tzom | kir'u | atzarah
 isfu | zekenim | kol | yoshevei | ha'aretz | beit
 Yahweh | eloheikhem
-veza'aku
-el | Yahweh
+veza'aku | el | Yahweh
 
 1:15
 ahah | laiyom
@@ -109,8 +104,7 @@ Ne'shamu
 1:19
 eleikha | Yahweh
 ekra
-ki | esh | akhelah | ne'ot | midbar | velehavah
-lihatah
+ki | esh | akhelah | ne'ot | midbar | velehavah | lihatah
 kol | atzei | hasadeh
 
 1:20

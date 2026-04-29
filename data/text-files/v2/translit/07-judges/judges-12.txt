@@ -31,8 +31,7 @@ vaiyomer | lo
 12:6
 vaiyomeru | lo | emor | na | shibolet | vaiyomer | sibolet | velo | yakhin | ledaber | ken
 vaiyochazu | oto
-vaiyishchatuhu
-el | ma'berot | Haiyarden
+vaiyishchatuhu | el | ma'berot | Haiyarden
 vaiyipol | ba'et | hahi | Me'efrayim
 arba'im | ushenayim
 alef
@@ -40,8 +39,7 @@ alef
 12:7
 vaiyishpot | Yiftach | et | Yisra'el
 shesh | shanim | vaiyamot | Yiftach | hagil'adi
-vaiyikaver
-be'arei | Gil'ad
+vaiyikaver | be'arei | Gil'ad
 
 12:8
 vaiyishpot | acharav | et | Yisra'el
@@ -60,14 +58,14 @@ vaiyikaver | Beveit | Lachem
 12:11
 vaiyishpot | acharav | et | Yisra'el
 Eilon
-hazevuloni | vaiyishpot | et | Yisra'el
+hazevuloni
+vaiyishpot | et | Yisra'el
 eser | shanim
 
 12:12
 vaiyamot
 Elon | hazevuloni
-vaiyikaver | Be'aiyalon
-be'eretz | Zevulun
+vaiyikaver | Be'aiyalon | be'eretz | Zevulun
 
 12:13
 vaiyishpot | acharav | et | Yisra'el
@@ -76,9 +74,7 @@ hapir'atoni
 
 12:14
 vayhi | lo | arba'im | banim | usheloshim | benei | vanim
-rokhevim
-al | shiv'im | ayarim
-vaiyishpot | et | Yisra'el
+rokhevim | al | shiv'im | ayarim | vaiyishpot | et | Yisra'el
 shemoneh | shanim
 
 12:15

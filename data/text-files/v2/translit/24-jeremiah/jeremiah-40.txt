@@ -7,8 +7,7 @@ hamuglim | Bavelah
 40:2
 vaiyikach | rav | tabachim | Leyirmeyahu
 vaiyomer | elav
-Yahweh | eloheikha | diber | et | hara'ah | hazot
-el | hamakom
+Yahweh | eloheikha | diber | et | hara'ah | hazot | el | hamakom
 hazeh
 
 40:3
@@ -55,8 +54,8 @@ shevu | va'aretz | ve'ivdu | et | melekh | Bavel
 veyitav | lakhem
 
 40:10
-va'ani | hini | yoshev | Bamitzpah
-la'amod | lifnei | hakasdim | asher | yavo'u
+va'ani | hini | yoshev | Bamitzpah | la'amod | lifnei | hakasdim
+asher | yavo'u
 eleinu
 ve'atem | isfu | yayin | vekayitz | veshemen | vesimu | bikhleikhem
 ushevu | be'areikhem | asher | tefastem
@@ -65,7 +64,8 @@ ushevu | be'areikhem | asher | tefastem
 vegam | kal | haiyehudim | asher | Bemo'av | uvivnei | Amon | Uve'edom | va'asher | bekhol | ha'aratzot | shame'u
 ki | natan | melekh | Bavel | she'erit | Lihudah
 vekhi | hifkid | aleihem
-et | Gedalyahu | ben | Achikam | ben | Shafan
+et | Gedalyahu
+ben | Achikam | ben | Shafan
 
 40:12
 vaiyashuvu | khol | haiyehudim | mikol | hamekomot | asher | Nidechu | sham
@@ -75,14 +75,14 @@ harbeh | me'od
 
 40:13
 Veyochanan | ben | Kareach
-vekhol | sarei | hachayalim | asher | basadeh
-ba'u | el | Gedalyahu
+vekhol | sarei | hachayalim | asher | basadeh | ba'u | el | Gedalyahu
 Hamitzpatah
 
 40:14
 vaiyomeru | elav | hayadoa | teda | ki | Ba'alis | melekh | benei | Amon | shalach | et | Yishma'el | ben | Netanyah
 lehakotekha
-nafesh | velo | he'emin | lahem
+nafesh
+velo | he'emin | lahem
 Gedalyahu
 ben | Achikam
 
@@ -96,7 +96,6 @@ ve'avedah
 she'erit | Yehudah
 
 40:16
-vaiyomer | Gedalyahu | ven | Achikam | el | Yochanan | ben | Kareach
-al | ta'as
+vaiyomer | Gedalyahu | ven | Achikam | el | Yochanan | ben | Kareach | al | ta'as
 et | hadavar | hazeh
 ki | sheker | atah | dover | el | Yishma'el

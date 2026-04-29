@@ -10,8 +10,8 @@ ve'etenah | veriti | beini | uveinekha
 ve'arbeh | otkha | bim'od | me'od
 
 17:3
-vaiyipol | Avram
-al | panav | vaydaber | ito | elohim | lemor
+vaiyipol | Avram | al | panav
+vaydaber | ito | elohim | lemor
 
 17:4
 ani
@@ -26,8 +26,7 @@ vehayah | shimkha | Avraham
 ki | av | hamon | goyim | netatikha
 
 17:6
-vehifreti | otekha | bim'od | me'od | unetatikha
-legoyim | umelakhim
+vehifreti | otekha | bim'od | me'od | unetatikha | legoyim | umelakhim
 mimekha | yetze'u
 
 17:7
@@ -54,8 +53,7 @@ himol | lakhem
 kol | zakhar
 
 17:11
-unemaltem | et
-besar | arelatkhem
+unemaltem | et | besar | arelatkhem
 vehayah | le'ot | berit | beini | uveineikhem
 
 17:12
@@ -71,12 +69,12 @@ livrit | olam
 
 17:14
 ve'arel | zakhar | asher | lo | yimol | et | besar | arelato
-venikhretah | hanefesh | hahiv | me'ameiha | et | beriti | hefar
+venikhretah | hanefesh | hahiv | me'ameiha | et | beriti
+hefar
 
 17:15
 vaiyomer | elohim | el | Avraham
-Sarai | ishtekha
-lo | tikra | et | shemah
+Sarai | ishtekha | lo | tikra | et | shemah
 Sarai
 ki | Sarah
 shemah
@@ -95,8 +93,7 @@ havat | tish'im | shanah
 teled
 
 17:18
-vaiyomer | Avraham
-el | ha'elohim
+vaiyomer | Avraham | el | ha'elohim
 lu | Yishma'el
 yichyeh | lefaneikha
 
@@ -110,18 +107,17 @@ lezar'o | acharav
 Uleyishma'el | shema'tikha
 hineh | berakhti | oto | vehifreiti | oto | vehirbeiti | oto
 bim'od | me'od | sheneim | asar | nesi'im | yolid
-unetativ
-legoy | gadol
+unetativ | legoy | gadol
 
 17:21
-ve'et | beriti | akim | et | Yitzchak
-asher | teled | lekha | Sarah | lamo'ed | hazeh
+ve'et | beriti
+akim | et | Yitzchak | asher | teled | lekha | Sarah | lamo'ed | hazeh
 bashanah | ha'acheret
 
 17:22
-vaykhal
-ledaber | ito | vaiya'al | elohim
-me'al | Avraham
+vaykhal | ledaber | ito
+vaiya'al | elohim | me'al
+Avraham
 
 17:23
 vaiyikach | Avraham | et | Yishma'el | beno | ve'et | kol | yelidei | veito | ve'et | kol | miknat | kaspo
@@ -146,6 +142,6 @@ be'etzem | haiyom | hazeh | Nimol | Avraham
 Veyishma'el | beno
 
 17:27
-vekhol | anshei | veito | yelid | bayit | umiknat | kesef
-me'et | ben | nekhar | Nimolu
+vekhol | anshei | veito | yelid | bayit
+umiknat | kesef | me'et | ben | nekhar | Nimolu
 ito

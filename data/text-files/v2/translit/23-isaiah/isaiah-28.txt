@@ -1,7 +1,6 @@
 28:1
 ho | ateret | ge'ut | shikorei | Efrayim
-vetzitz | novel
-tzevi | tif'arto | asher | al | rosh | gei | shemanim
+vetzitz | novel | tzevi | tif'arto | asher | al | rosh | gei | shemanim
 halumei | yayin
 
 28:2
@@ -21,8 +20,8 @@ asher | yir'eh | haro'eh | otah | be'odah | bekhapo
 yivla'enah
 
 28:5
-baiyom | hahu | yihyeh | Yahweh | tzeva'ot
-la'ateret | tzevi | velitzfirat | tif'arah | lish'ar
+baiyom | hahu | yihyeh | Yahweh | tzeva'ot | la'ateret | tzevi
+velitzfirat | tif'arah | lish'ar
 amo
 
 28:6
@@ -41,7 +40,8 @@ ki | kol | shulchanot | mal'u | ki | tzo'ah | beli | makom
 
 28:9
 et | mi | yoreh | de'ah
-ve'et | mi | yavin | shemu'ah
+ve'et | mi
+yavin | shemu'ah
 gemulei | mechalav | atikei | mishadayim
 
 28:10
@@ -53,8 +53,7 @@ ze'eir | sham
 
 28:11
 ki | bela'agei | safah | uvelashon | acheret
-yedaber
-el | ha'am | hazeh
+yedaber | el | ha'am | hazeh
 
 28:12
 asher | amar | aleihem | zot | hamenuchah | hanichu | le'ayef
@@ -76,8 +75,7 @@ lakhen | shim'u | devar | Yahweh | anshei | latzon
 moshelei | ha'am | hazeh | asher | Birushalim
 
 28:15
-ki | amartem | karatnu | verit | et | mavet
-ve'im | she'ol
+ki | amartem | karatnu | verit | et | mavet | ve'im | she'ol
 asinu | chozeh
 shit | shotef | ki | avar | lo | yevo'enu
 ki | samnu | khazav | machsenu | uvasheker | Nistarenu
@@ -147,8 +145,8 @@ elohav | yorenu
 
 28:27
 ki | lo | vecharutz | yudash | ketzach
-ve'ofan | agalah
-al | kamon | yusav
+ve'ofan | agalah | al | kamon
+yusav
 ki | vamateh | yechavet | ketzach | vekhamon | bashavet
 
 28:28

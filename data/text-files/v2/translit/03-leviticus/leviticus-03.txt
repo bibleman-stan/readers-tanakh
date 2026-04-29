@@ -9,23 +9,23 @@ lifnei | Yahweh
 vesamakh | yado | al | rosh | karebano
 ushechato
 petach | ohel | mo'ed
-vezareku | benei | Aharon | hakohanim | et | hadam | al | hamizbeach
-saviv
+vezareku | benei | Aharon | hakohanim | et | hadam | al | hamizbeach | saviv
 
 3:3
 vehikriv | mizevach | hashelamim
 isheh | Layahweh
-et | hachelev | hamkhaseh | et | hakerev | ve'et | kol | hachelev | asher | al | hakerev
+et | hachelev | hamkhaseh | et | hakerev
+ve'et | kol | hachelev | asher | al | hakerev
 
 3:4
 ve'et | shetei | hakelayot
 ve'et | hachelev | asher | alehen | asher | al | hakesalim
-ve'et | haiyoteret | al | hakaved
-al | hakelayot | yesirenah
+ve'et | haiyoteret | al | hakaved | al | hakelayot
+yesirenah
 
 3:5
-vehiktiru | oto | venei | Aharon | hamizbechah
-al | ha'olah | asher | al | ha'etzim | asher | al | ha'esh
+vehiktiru | oto | venei | Aharon | hamizbechah | al | ha'olah
+asher | al | ha'etzim | asher | al | ha'esh
 isheh | reiach | nichoach | Layahweh
 
 3:6
@@ -36,7 +36,8 @@ yakrivenu
 
 3:7
 im | kesev | hu | makriv
-et | karebano | vehikriv | oto
+et | karebano
+vehikriv | oto
 lifnei | Yahweh
 
 3:8
@@ -48,13 +49,14 @@ vezareku | benei | Aharon | et | damo | al | hamizbeach | saviv
 vehikriv | mizevach | hashelamim | isheh | Layahweh
 chelbo | ha'alyah | temimah
 le'umat | he'atzeh | yesirenah
-ve'et | hachelev | hamkhaseh | et | hakerev | ve'et | kol | hachelev | asher | al | hakerev
+ve'et | hachelev | hamkhaseh | et | hakerev
+ve'et | kol | hachelev | asher | al | hakerev
 
 3:10
 ve'et | shetei | hakelayot
 ve'et | hachelev | asher | alehen | asher | al | hakesalim
-ve'et | haiyoteret | al | hakaved
-al | hakelayot | yesirenah
+ve'et | haiyoteret | al | hakaved | al | hakelayot
+yesirenah
 
 3:11
 vehiktiro | hakohen
@@ -74,13 +76,14 @@ vezareku | benei | Aharon | et | damo | al | hamizbeach | saviv
 3:14
 vehikriv | mimenu | karebano
 isheh | Layahweh
-et | hachelev | hamkhaseh | et | hakerev | ve'et | kol | hachelev | asher | al | hakerev
+et | hachelev | hamkhaseh | et | hakerev
+ve'et | kol | hachelev | asher | al | hakerev
 
 3:15
 ve'et | shetei | hakelayot
 ve'et | hachelev | asher | alehen | asher | al | hakesalim
-ve'et | haiyoteret | al | hakaved
-al | hakelayot | yesirenah
+ve'et | haiyoteret | al | hakaved | al | hakelayot
+yesirenah
 
 3:16
 vehiktiram | hakohen

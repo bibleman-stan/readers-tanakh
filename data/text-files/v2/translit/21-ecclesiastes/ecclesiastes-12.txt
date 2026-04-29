@@ -1,6 +1,6 @@
 12:1
-uzekhor | et | bor'eikha | bimei | bechuroteikha
-ad | asher | lo | yavo'u | yemei | hara'ah
+uzekhor | et | bor'eikha | bimei
+bechuroteikha | ad | asher | lo | yavo'u | yemei | hara'ah
 vehigi'u | shanim | asher | tomar
 ein | li | vahem
 chefetz
@@ -35,16 +35,13 @@ vesavevu | vashuk
 hasofedim
 
 12:6
-ad | asher | lo | yirchak | chevel | hakesef
-vetarutz
+ad | asher | lo | yirchak | chevel | hakesef | vetarutz
 gulat | hazahav | vetishaver | kad | al | hamabua
-venarotz | hagalgal
-el | habor
+venarotz | hagalgal | el | habor
 
 12:7
 veyasho | he'afar | al | ha'aretz | keshehayah
-veharuach | tashuv
-el | ha'elohim | asher | netanah
+veharuach | tashuv | el | ha'elohim | asher | netanah
 
 12:8
 havel | havalim | amar | hakohelet
@@ -65,11 +62,11 @@ divrei | emet
 12:11
 divrei | chakhamim | kadarevonot
 ukhemasmerot | netu'im
-ba'alei | asupot | Nitenu | mero'eh | echad
+ba'alei | asupot
+Nitenu | mero'eh | echad
 
 12:12
-veyoter | mehemah
-beni | hizaher
+veyoter | mehemah | beni | hizaher
 asot | sefarim | harbeh | ein | ketz | velahag | harbeh
 yegi'at | basar
 

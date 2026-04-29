@@ -60,8 +60,7 @@ chashakh | hashemesh | betzeto | veyareach
 lo | yagiha | oro
 
 13:11
-ufakadti | al | tevel | ra'ah
-ve'al | resha'im
+ufakadti | al | tevel | ra'ah | ve'al | resha'im
 avonam
 vehishbati | ge'on | zedim
 vega'avat | aritzim
@@ -73,9 +72,8 @@ ve'adam
 miketem | Ofir
 
 13:13
-al | ken | shamayim | argiz
-vetir'ash | ha'aretz | mimekomah
-be'evrat | Yahweh | tzeva'ot | uveyom
+al | ken | shamayim | argiz | vetir'ash | ha'aretz
+mimekomah | be'evrat | Yahweh | tzeva'ot | uveyom
 charon | apo
 
 13:14
@@ -97,23 +95,24 @@ tishakhabnah
 
 13:17
 hini | me'ir | aleihem
-et | Madai | asher | kesef | lo | yachshou
+et | Madai
+asher | kesef | lo | yachshou
 vezahav
 lo | yachpetzu | vo
 
 13:18
 ukeshatot | ne'arim | teratashnah
-uferi | veten | lo | yerachemu
-al | banim | lo | tachus | einam
+uferi | veten | lo | yerachemu | al | banim | lo | tachus | einam
 
 13:19
 vehayetah | Vavel | tzevi | mamlakhot | tif'eret
-ge'on | Kasdim | kemahpekhat | elohim | et | Sedom
+ge'on | Kasdim | kemahpekhat | elohim
+et | Sedom
 ve'et | Amorah
 
 13:20
-lo | teshev | lanetzach | velo | tishkon
-ad | dor | vador | velo | yahel | sham | aravi
+lo | teshev | lanetzach | velo | tishkon | ad | dor | vador
+velo | yahel | sham | aravi
 vero'im | lo | yarbitzu | sham
 
 13:21
@@ -124,6 +123,6 @@ use'irim | yerakedu | sham
 
 13:22
 ve'anah | iyim | be'almnotav
-vetanim
-beheikhelei | oneg | vekarov | lavo | itah | veyameiha
+vetanim | beheikhelei | oneg
+vekarov | lavo | itah | veyameiha
 lo | yimashekhu

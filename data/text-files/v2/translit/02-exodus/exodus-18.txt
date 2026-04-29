@@ -20,8 +20,7 @@ veshem | ha'echad | Eli'ezer
 ki | elohei | avi | be'ezri | vaiyatzileni | mecherev | par'oh
 
 18:5
-vaiyavo | Yitro | choten | Mosheh | uvanav | ve'ishto
-el | Mosheh
+vaiyavo | Yitro | choten | Mosheh | uvanav | ve'ishto | el | Mosheh
 el | hamidbar | asher | hu | choneh | sham
 har | ha'elohim
 
@@ -46,8 +45,7 @@ vaiyatzilem
 Yahweh
 
 18:9
-vaiyichad | Yitro
-al | kol | hatovah
+vaiyichad | Yitro | al | kol | hatovah
 asher | asah | Yahweh | Leyisra'el | asher | hitzilo | miyad | Mitzrayim
 
 18:10
@@ -63,19 +61,17 @@ ki | vadavar | asher | zadu
 aleihem
 
 18:12
-vaiyikach | Yitro | choten | Mosheh | olah | uzevachim
-lelohim
+vaiyikach | Yitro | choten | Mosheh | olah | uzevachim | lelohim
 vaiyavo | Aharon | vekhol | ziknei | Yisra'el | le'ekhol | lechem | im | choten | Mosheh
 lifnei | ha'elohim
 
 18:13
 vayhi | mimochorat
-vaiyeshev | Mosheh
-lishpot | et | ha'am | vaiya'amod | ha'am | al | Mosheh | min | haboker | ad | ha'arev
+vaiyeshev | Mosheh | lishpot | et | ha'am
+vaiya'amod | ha'am | al | Mosheh | min | haboker | ad | ha'arev
 
 18:14
-vaiyar | choten | Mosheh | et | kol | asher | hu | oseh
-la'am
+vaiyar | choten | Mosheh | et | kol | asher | hu | oseh | la'am
 vaiyomer | mah | hadavar | hazeh | asher | atah | oseh | la'am
 madua | atah | yoshev | levadekha
 vekhol | ha'am | nitzav | aleikha | min | boker | ad | arev
@@ -93,8 +89,7 @@ ve'et | torotav
 
 18:17
 vaiyomer | choten | Mosheh
-elav
-lo | tov | hadavar | asher | atah
+elav | lo | tov | hadavar | asher | atah
 oseh
 
 18:18
@@ -108,12 +103,12 @@ atah | shema | bekoli | i'atzekha
 vihi | elohim
 imakh
 heyeh | atah | la'am | mul | ha'elohim
-veheveta | atah | et | hadevarim
-el | ha'elohim
+veheveta | atah | et | hadevarim | el | ha'elohim
 
 18:20
 vehizhartah | ethem | et | hachukim
-ve'et | hatorot | vehoda'ta | lahem | et | haderekh | yelekhu | vah
+ve'et | hatorot
+vehoda'ta | lahem | et | haderekh | yelekhu | vah
 ve'et | hama'aseh | asher | ya'asun
 
 18:21
@@ -132,19 +127,17 @@ itakh
 im | et | hadavar | hazeh | ta'aseh
 vetzivekha | elohim | veyakhalta
 amod
-vegam | kol | ha'am | hazeh
-al | mekomo
+vegam | kol | ha'am | hazeh | al | mekomo
 yavo | veshalom
 
 18:24
-vaiyishma | Mosheh
-lekol | choteno | vaiya'as
+vaiyishma | Mosheh | lekol | choteno
+vaiya'as
 kol | asher | amar
 
 18:25
 vaiyivchar | Mosheh | anshei | chayil | mikol | Yisra'el
-vaiyiten | otam | rashim
-al | ha'am
+vaiyiten | otam | rashim | al | ha'am
 sarei | alafim | sarei | me'ot | sarei | chamishim | vesarei | asarot
 
 18:26
@@ -154,5 +147,4 @@ vekhol | hadavar | hakaton | yishputu | hem
 
 18:27
 vayshalach | Mosheh | et | choteno
-vaiyelekh | lo
-el | artzo
+vaiyelekh | lo | el | artzo

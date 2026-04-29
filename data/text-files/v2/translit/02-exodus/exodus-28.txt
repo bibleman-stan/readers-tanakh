@@ -21,7 +21,9 @@ ve'asu | vigdei | kodesh | Le'aharon | achikha | ulevanav | lekhahanov | li
 
 28:5
 vehem | yikchu | et | hazahav
-ve'et | hatekhelet | ve'et | ha'argaman | ve'et | tola'at | hashani
+ve'et | hatekhelet
+ve'et | ha'argaman
+ve'et | tola'at | hashani
 ve'et | hashesh
 
 28:6
@@ -41,7 +43,9 @@ zahav | tekhelet | ve'argaman | vetola'at | shani
 veshesh | mashezar
 
 28:9
-velakachta | et | shetei | avnei | shoham
+velakachta
+et | shetei
+avnei | shoham
 ufitachta | aleihem
 shemot
 benei | Yisra'el
@@ -53,8 +57,7 @@ ve'et | shemot | hashishah | hanotarim | al | ha'even | hashenit | ketoldotam
 
 28:11
 ma'aseh | charash | even
-pituchei | chotam | tefatach | et | shetei | ha'avanim
-al | shemot
+pituchei | chotam | tefatach | et | shetei | ha'avanim | al | shemot
 benei | Yisra'el | musabot | mishbetzot | zahav
 ta'aseh | otam
 
@@ -71,8 +74,7 @@ ve'asita | mishbetzot | zahav
 28:14
 ushetei | sharsherot | zahav | tahor
 migbalot | ta'aseh | otam | ma'aseh | avot
-venatatah | et | sharsherot | ha'avotot
-al | hamishbetzot
+venatatah | et | sharsherot | ha'avotot | al | hamishbetzot
 
 28:15
 ve'asita | choshen | mishpat | ma'aseh | choshev | kema'aseh | efod
@@ -115,30 +117,24 @@ tahor
 ve'asita | al | hachoshen
 shetei
 tabe'ot | zahav
-venatata | et | shetei | hataba'ot
-al | shenei
+venatata | et | shetei | hataba'ot | al | shenei
 ketzot | hachoshen
 
 28:24
-venatatah | et | shetei | avotot | hazahav
-al | shetei
-hataba'ot
-el | ketzot
+venatatah | et | shetei | avotot | hazahav | al | shetei
+hataba'ot | el | ketzot
 hachoshen
 
 28:25
 ve'et | shetei | ketzot | shetei | ha'avotot
-titen
-al | shetei | hamishbetzot
+titen | al | shetei | hamishbetzot
 venatatah | al | kitfot | ha'efod
 el | mul | panav
 
 28:26
 ve'asita | shetei | tabe'ot | zahav
-vesamta | otam
-al | shenei
-ketzot | hachoshen
-al | sefato | asher | el | ever | ha'efod | bayetah
+vesamta | otam | al | shenei
+ketzot | hachoshen | al | sefato | asher | el | ever | ha'efod | bayetah
 
 28:27
 ve'asita | shetei | tabe'ot | zahav
@@ -148,8 +144,8 @@ ha'efod
 
 28:28
 veyirkesu | et | hachoshen | mitabe'otov | el | tabe'ot | ha'efod | biftil | tekhelet
-lihyot
-al | cheshev | ha'efod | velo | yizach | hachoshen | me'al
+lihyot | al | cheshev | ha'efod
+velo | yizach | hachoshen | me'al
 ha'efod
 
 28:29
@@ -181,8 +177,7 @@ ufa'amonei | zahav | betokham | saviv
 28:34
 pa'amon | zahav | verimon
 pa'amon | zahav
-verimon
-al | shulei | hame'il | saviv
+verimon | al | shulei | hame'il | saviv
 
 28:35
 vehayah | al | Aharon | lesharet
@@ -196,9 +191,7 @@ ufitachta | alav | pituchei | chotam | kodesh | Layahweh
 
 28:37
 vesamta | oto | al | petil | tekhelet
-vehayah
-al | hamitznafet
-el | mul | penei | hamitznefet
+vehayah | al | hamitznafet | el | mul | penei | hamitznefet
 yihyeh
 
 28:38

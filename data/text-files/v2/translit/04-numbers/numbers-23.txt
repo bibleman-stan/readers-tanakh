@@ -17,8 +17,7 @@ udevar | mah | yar'eni | vehigadti | lakh | vaiyelekh
 shefi
 
 23:4
-vaiyikar | elohim
-el | Bil'am
+vaiyikar | elohim | el | Bil'am
 vaiyomer | elav | et | shiv'at | hamizbechot | arakhti
 va'a'al | par | va'ayil | bamizbeach
 
@@ -29,8 +28,7 @@ vekhoh | tedaber
 
 23:6
 vaiyashov | elav
-vehineh | nitzav
-al | olato
+vehineh | nitzav | al | olato
 hu
 vekhol | sarei | Mo'av
 
@@ -59,8 +57,8 @@ tamot | nafshi | mot | yesharim
 utehi | achariti | kamohu
 
 23:11
-vaiyomer | Balak | el | Bil'am | meh | asita | li
-lako | oyevai | lekachtikha
+vaiyomer | Balak | el | Bil'am | meh | asita
+li | lako | oyevai | lekachtikha
 vehineh
 berakhta | varekh
 
@@ -78,17 +76,13 @@ lo | tir'eh
 vekavenov | li | misham
 
 23:14
-vaiyikachehu | sedeh | tzofim
-el | rosh
-Hapisgah
-vaiyiven | shiv'ah | mizbechot
+vaiyikachehu | sedeh | tzofim | el | rosh
+Hapisgah | vaiyiven | shiv'ah | mizbechot
 vaiya'al | par | va'ayil | bamizbeach
 
 23:15
 vaiyomer | el | Balak
-hityatzev | koh
-al | olatekha
-ve'anokhi
+hityatzev | koh | al | olatekha | ve'anokhi
 ikareh | koh
 
 23:16
@@ -118,10 +112,12 @@ velo | yekimenah
 
 23:20
 hineh | varekh | lakacheti
-uverekh | velo | ashivenah
+uverekh
+velo | ashivenah
 
 23:21
-lo | hibit | aven | Beya'ako | velo | ra'ah | amal | Beyisra'el
+lo | hibit | aven | Beya'ako
+velo | ra'ah | amal | Beyisra'el
 Yahweh | elohav | imo
 uteru'at | melekh | bo
 
@@ -129,7 +125,8 @@ uteru'at | melekh | bo
 el | motzi'am | Mimitzrayim | keto'afot | re'em | lo
 
 23:23
-ki | lo | nachash | Beya'ako | velo | kesem | Beyisra'el
+ki | lo | nachash | Beya'ako
+velo | kesem | Beyisra'el
 ka'et | ye'amer | Leya'ako | Uleyisra'el | mah | pa'al | el
 
 23:24
@@ -147,18 +144,15 @@ lo | tevarakhenu
 
 23:26
 vaiya'an | Bil'am
-vaiyomer
-el | Balak
+vaiyomer | el | Balak
 halo | dibarti | eleikha | lemor
 kol | asher | yedaber | Yahweh
 oto | e'eseh
 
 23:27
 vaiyomer | Balak | el | Bil'am
-lekhah | na | ekachakha
-el | makom
-acher
-ulai | yishar | be'einei | ha'elohim
+lekhah | na | ekachakha | el | makom
+acher | ulai | yishar | be'einei | ha'elohim
 vekabotov | li | misham
 
 23:28

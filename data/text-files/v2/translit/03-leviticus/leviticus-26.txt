@@ -34,7 +34,8 @@ vehishbati | chaiyah | ra'ah | min | ha'aretz | vecherev | lo | ta'avor | be'art
 
 26:7
 uredaftem
-et | oyeveikhem | venafelu | lifneikhem | lecharev
+et | oyeveikhem
+venafelu | lifneikhem | lecharev
 
 26:8
 veradfu | mikem | chamishah | me'ah | ume'ah | mikem
@@ -92,10 +93,8 @@ oyeveikhem
 
 26:17
 venatati | fanai | bakhem
-venigaftem
-lifnei | oyeveikhem
-veradu | vakhem | sone'eikhem
-venastem
+venigaftem | lifnei | oyeveikhem
+veradu | vakhem | sone'eikhem | venastem
 ve'ein | rodef | etkhem
 
 26:18
@@ -117,8 +116,7 @@ ve'etz | ha'aretz | lo | yiten
 piryo
 
 26:21
-ve'im | telekhu | imi | keri
-velo | tovu | lishmoa | li
+ve'im | telekhu | imi | keri | velo | tovu | lishmoa | li
 veyasafti | aleikhem | makah
 sheva | kechatoteikhem
 
@@ -143,8 +141,7 @@ sheva | al | chatoteikhem
 
 26:25
 veheveti | aleikhem | cherev | nokemet | nekam | berit
-vene'esaftem
-el | areikhem
+vene'esaftem | el | areikhem
 veshilachti | dever | betokhkhem
 venittatem | beyad | oyev
 
@@ -170,8 +167,7 @@ tokhelu
 
 26:30
 vehishmadti | et | bamoteikhem | vehikhrati | et | chamaneikhem
-venatati | et | pigreikhem
-al | pigrei
+venatati | et | pigreikhem | al | pigrei
 giluleikhem
 vega'alah | nafshi
 etkhem
@@ -179,12 +175,14 @@ etkhem
 26:31
 venatati | et | areikhem | charbah
 vahashimoti
-et | mikdesheikhem | velo | ariach
-bereiach | nichochakhem
+et | mikdesheikhem
+velo | ariach | bereiach
+nichochakhem
 
 26:32
 vahashimoti | ani
-et | ha'aretz | veshamu | aleiha | oyeveikhem
+et | ha'aretz
+veshamu | aleiha | oyeveikhem
 haiyoshevim | bah
 
 26:33
@@ -192,12 +190,12 @@ ve'etkhem | ezareh | vagoyim
 vaharikoti | achareikhem
 charev
 vehaytah | artzekhem | shemamah
-ve'areikhem | yihyu | charbah
+ve'areikhem
+yihyu | charbah
 
 26:34
 az | tirtzeh | ha'aretz | et | shabetoteiha | kol | yemei | hoshamah
-ve'atem
-be'eretz | oyeveikhem
+ve'atem | be'eretz | oyeveikhem
 az | tishbat | ha'aretz
 vehirtzat
 et | shabetoteiha
@@ -252,8 +250,8 @@ veha'aretz | ezkor
 26:43
 veha'aretz | te'azev | mehem | vetiretz | et | shabetoteiha | bahshamah | mehem
 vehem | yirtzu | et | avonam
-ya'an | uveya'an | bemishpatai | ma'asu
-ve'et | chukotai | ga'alah | nafsham
+ya'an | uveya'an | bemishpatai | ma'asu | ve'et | chukotai
+ga'alah | nafsham
 
 26:44
 ve'af | gam | zot | bihyotam | be'eretz | oyeveihem | lo | me'astim | velo | ge'altim | lekhalotam

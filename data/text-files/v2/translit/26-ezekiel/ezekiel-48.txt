@@ -29,20 +29,20 @@ ve'al | gevul | Re'uven | mipe'at | kadim | ad | pe'at | yamah
 Yehudah | echad
 
 48:8
-ve'al | gevul | Yehudah | mipe'at | kadim
-ad | pe'at | yamah
+ve'al | gevul | Yehudah | mipe'at | kadim | ad | pe'at | yamah
 tihyeh | haterumah | asher | tarimu | chamishah | ve'esrim | elef | rochav | ve'orekh | ke'achad | hachalakim | mipe'at | kadimah | ad | pe'at | yamah
 vehayah | hamikdash
 betokho
 
 48:9
-haterumah | asher | tarimu | Layahweh
-orekh | chamishah | ve'esrim | elef | verochav
+haterumah | asher | tarimu
+Layahweh | orekh | chamishah | ve'esrim | elef | verochav
 aseret | alafim
 
 48:10
 ule'eleh | tihyeh | terumat | hakodesh | lakohanim
-tzafonah | chamishah | ve'esrim | elef | veyamah | rochav | aseret | alafim | vekadimah | rochav | aseret | alafim
+tzafonah | chamishah | ve'esrim | elef | veyamah | rochav | aseret | alafim
+vekadimah | rochav | aseret | alafim
 venegbah | orekh
 chamishah | ve'esrim
 alef | vehayah | mikdash | Yahweh | betokho
@@ -106,8 +106,7 @@ shivtei | Yisra'el
 48:20
 kol | haterumah | chamishah | ve'esrim | elef | bachamishah | ve'esrim
 alef
-revi'it | tarimu | et | terumat | hakodesh
-el | achuzat
+revi'it | tarimu | et | terumat | hakodesh | el | achuzat
 ha'ir
 
 48:21
@@ -121,8 +120,8 @@ betokho
 48:22
 ume'achuzat | halviyim | ume'achuzat | ha'ir | betokh | asher | lanasi
 yihyeh
-bein | gevul | Yehudah | uvein | gevul | Binyamin
-lanasi | yihyeh
+bein | gevul | Yehudah | uvein | gevul | Binyamin | lanasi
+yihyeh
 
 48:23
 veyeter
@@ -145,9 +144,7 @@ ve'al | gevul | Zevulun | mipe'at | kadimah | ad | pe'at | yamah
 Gad | echad
 
 48:28
-ve'al | gevul | Gad
-el | pe'at
-negev | teimanah
+ve'al | gevul | Gad | el | pe'at | negev | teimanah
 vehayah | gevul | Mitamar | mei | merivat | Kadesh
 nachalah
 al | haiyam | hagadol

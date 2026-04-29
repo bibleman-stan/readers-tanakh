@@ -16,8 +16,8 @@ sheva | shanim
 8:3
 vayhi | miktzeh | sheva | shanim
 vatashov | ha'ishah | me'eretz | pelishtim
-vatetze | litz'ok | el | hamelekh
-el | beitah | ve'el | sadah
+vatetze | litz'ok | el | hamelekh | el | beitah
+ve'el | sadah
 
 8:4
 vehamelekh | medaber | el | Gechazi
@@ -28,9 +28,7 @@ asher | asah | Elisha
 
 8:5
 vayhi | hu | mesaper | lamelekh | et | asher | hecheyah | et | hamet
-vehineh | ha'ishah | asher | hecheyah | et | benah | tzo'eket | el | hamelekh
-al | beitah
-ve'al | sadah
+vehineh | ha'ishah | asher | hecheyah | et | benah | tzo'eket | el | hamelekh | al | beitah | ve'al | sadah
 vaiyomer | Gechazi | adoni | hamelekh | zot | ha'ishah
 vezeh | benah
 asher | hecheyah | Elisha
@@ -39,18 +37,16 @@ asher | hecheyah | Elisha
 vaiyish'al | hamelekh | la'ishah
 vatesaper | lo
 vaiyiten | lah | hamelekh | saris | echad | lemor | hasheiv | et | kol | asher | lah | ve'et | kol | tevu'ot | hasadeh
-miyom | azevah | et | ha'aretz
-ve'ad | atah
+miyom | azevah | et | ha'aretz | ve'ad | atah
 
 8:7
 vaiyavo | Elisha | Damesek
 Uven | Hadad | melekh | Aram | choleh | vaiyugad | lo | lemor
-ba | ish | ha'elohim
-ad | henah
+ba | ish | ha'elohim | ad | henah
 
 8:8
-vaiyomer | hamelekh | el | Chazah'el | kach | beyadekha | minchah
-velekh | likrat
+vaiyomer | hamelekh | el | Chazah'el | kach | beyadekha | minchah | velekh
+likrat
 ish | ha'elohim
 vedarashta | et | Yahweh | me'oto | lemor
 ha'echyeh | mecholi | zeh
@@ -88,13 +84,13 @@ vaiyomer | Chazah'el
 ki | mah | avdekha | hakelev
 ki | ya'aseh
 hadavar | hagadol | hazeh | vaiyomer | Elisha
-hir'ani | Yahweh | otekha
-melekh | al | Aram
+hir'ani | Yahweh | otekha | melekh | al | Aram
 
 8:14
 vaiyelekh | me'et | Elisha | vaiyavo | el | adonav
 vaiyomer | lo | mah | amar | lekha
-Elisha | vaiyomer
+Elisha
+vaiyomer
 amar | li
 chayoh | tichyeh
 
@@ -139,8 +135,7 @@ vayhi | hu | kam | laylah | vaiyakeh | et | Edom | hasoveiv | elav | ve'et | sar
 vaiyanos | ha'am | le'ohalav
 
 8:22
-vaiyifsha | Edom | mitachat | yad | Yehudah
-ad
+vaiyifsha | Edom | mitachat | yad | Yehudah | ad
 haiyom | hazeh
 az | tifsha | Livnah
 ba'et | hahi
@@ -153,8 +148,8 @@ lemalkhei | Yehudah
 
 8:24
 vaiyishkav | Yoram | im | avotav
-vaiyikaver | im | avotav
-be'ir | David | vaiyimlokh | Achazyahu | veno
+vaiyikaver | im | avotav | be'ir | David
+vaiyimlokh | Achazyahu | veno
 tachtav
 
 8:25
@@ -185,6 +180,7 @@ Beramot | Gil'ad | vaiyaku | aramim | et | Yoram
 8:29
 vaiyashav | Yoram | hamelekh | lehitrape | Veyizre'el | min | hamakim | asher | yakuhu | aramim | Baramah
 behilachamo
-et | Chazah'el | melekh | Aram
+et | Chazah'el
+melekh | Aram
 Va'achazyahu | ven | Yehoram | melekh | Yehudah | yarad | lir'ot | et | Yoram | ben | Ach'av | Beyizre'el
 ki | choleh | hu

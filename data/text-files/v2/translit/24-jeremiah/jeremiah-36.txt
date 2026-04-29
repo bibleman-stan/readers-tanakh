@@ -1,6 +1,5 @@
 36:1
-vayhi | bashanah | harevi'it
-Lihoyakim | ben | Yoshiyahu
+vayhi | bashanah | harevi'it | Lihoyakim | ben | Yoshiyahu
 melekh | Yehudah
 hayah | hadavar | hazeh | el | Yirmeyahu
 me'et | Yahweh | lemor
@@ -9,8 +8,7 @@ me'et | Yahweh | lemor
 kach | lekha | megilat | sefer
 vekhatavta | eleiha | et | kol | hadevarim | asher | dibarti | eleikha | al | Yisra'el | ve'al | Yehudah
 ve'al | kol | hagoyim
-miyom | dibarti | eleikha | mimei | Yoshiyahu
-ve'ad
+miyom | dibarti | eleikha | mimei | Yoshiyahu | ve'ad
 haiyom | hazeh
 
 36:3
@@ -45,8 +43,8 @@ asher | diber | Yahweh
 el | ha'am | hazeh
 
 36:8
-vaiya'as | Barukh | ben | Neriyah
-kekhol | asher | tzivahu | Yirmeyahu | hanavi
+vaiya'as | Barukh | ben | Neriyah | kekhol | asher | tzivahu
+Yirmeyahu | hanavi
 likro | vasefer | divrei | Yahweh
 beit | Yahweh
 
@@ -76,8 +74,7 @@ vekhol | hasarim
 
 36:13
 vaiyaged | lahem | Mikhayehu | et | kol | hadevarim
-asher | shamea | bikro | Varukh | basefer
-be'azenei | ha'am
+asher | shamea | bikro | Varukh | basefer | be'azenei | ha'am
 
 36:14
 vaiyishlechu | khol | hasarim | el | Barukh | et | Yehudi | ben | Netanyahu | ben | Shelemyahu | ven | Kushi | lemor
@@ -101,7 +98,8 @@ hageid | nagid | lamelekh | et | kol | hadevarim
 ha'eleh
 
 36:17
-ve'et | Barukh | sha'alu | lemor
+ve'et | Barukh
+sha'alu | lemor
 haged | na | lanu
 eikh | katavta | et | kol | hadevarim | ha'eleh | mipiv
 
@@ -111,8 +109,7 @@ mipiv | yikra | elai | et | kol | hadevarim
 ha'eleh | va'ani | kotev | al | hasefer | badeyo
 
 36:19
-vaiyomeru | hasarim | el | Barukh
-lekh | hisater
+vaiyomeru | hasarim | el | Barukh | lekh | hisater
 atah | Veyirmeyahu
 ve'ish | al | yeda
 eifoh | atem
@@ -128,8 +125,7 @@ kol | hadevarim
 vaiyishlach | hamelekh | et | Yehudi | lakachat | et | hamegilah
 vaiyikacheha | milishkat
 Elishama | hasofer
-vaiyikra'eha | Yehudi | be'azenei | hamelekh
-uve'azenei | kol | hasarim
+vaiyikra'eha | Yehudi | be'azenei | hamelekh | uve'azenei | kol | hasarim
 ha'omedim | me'al | hamelekh
 
 36:22
@@ -139,15 +135,14 @@ ve'et | ha'ach | lefanav | mevo'aret
 36:23
 vayhi | kikro | Yehudi | shalosh | delatot | ve'arba'ah
 yikra'eha | beta'ar | hasofer
-vehashlekh
-el | ha'esh | asher | el | ha'ach
-ad | tom | kol | hamegilah
-al | ha'esh | asher | al | ha'ach
+vehashlekh | el | ha'esh | asher | el | ha'ach
+ad | tom | kol | hamegilah | al | ha'esh | asher | al | ha'ach
 
 36:24
 velo | fachadu
 velo | kare'u
-et | bigdeihem | hamelekh | vekhol | avadav
+et | bigdeihem
+hamelekh | vekhol | avadav
 hashome'im
 et | kol | hadevarim
 ha'eleh
@@ -155,7 +150,8 @@ ha'eleh
 36:25
 vegam | Elnatan | Udelayahu | Ugemaryahu | hifgi'u | vamelekh
 levilti | serof
-et | hamegilah | velo | shama
+et | hamegilah
+velo | shama
 aleihem
 
 36:26
@@ -166,8 +162,7 @@ vaiyastirem
 Yahweh
 
 36:27
-vayhi | devar | Yahweh
-el | Yirmeyahu
+vayhi | devar | Yahweh | el | Yirmeyahu
 acharei | serof | hamelekh | et | hamegilah | ve'et | hadevarim
 asher | katav | Barukh | mipi | Yirmeyahu | lemor
 
@@ -179,17 +174,15 @@ asher | hayu | al | hamegilah | harishonah | asher | saraf
 Yehoyakim | melekh | Yehudah
 
 36:29
-ve'al | Yehoyakim | melekh | Yehudah | tomar | koh
-amar | Yahweh
+ve'al | Yehoyakim | melekh | Yehudah | tomar | koh | amar | Yahweh
 atah | sarafta | et | hamegilah | hazot | lemor
 madua | katavta | aleiha | lemor | bo | yavo | melekh | Bavel | vehishchit | et | ha'aretz | hazot
 vehishbit | mimenah | adam | uvehemah
 
 36:30
 lakhen | koh | amar | Yahweh | al | Yehoyakim | melekh | Yehudah
-lo | yihyeh | lo | yoshev
-al | kise | David | venivlato | tihyeh | mushlekhet
-lachorev | baiyom | velakerach | balayelah
+lo | yihyeh | lo | yoshev | al | kise | David
+venivlato | tihyeh | mushlekhet | lachorev | baiyom | velakerach | balayelah
 
 36:31
 ufakadti | alav | ve'al | zar'o | ve'al | avadav

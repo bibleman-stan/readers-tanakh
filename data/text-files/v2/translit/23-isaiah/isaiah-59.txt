@@ -51,9 +51,8 @@ tzedakah | nekaveh | la'or | vehineh | choshekh | lingohot
 ba'afelot | nehalekh
 
 59:10
-negashshah | kha'ivrim | kir
-ukhe'ein | einayim | negasheshah
-kashalnu | vatzohorayim | kaneshef | ba'ashmanim | kametim
+negashshah | kha'ivrim | kir | ukhe'ein | einayim
+negasheshah | kashalnu | vatzohorayim | kaneshef | ba'ashmanim | kametim
 
 59:11
 nehemeh | khadubim | kulanu
@@ -70,14 +69,13 @@ ki | fesha'einu | itanu
 va'avonoteinu | yeda'anum
 
 59:13
-pashoa | vekhachesh | Bayahweh | venasog | me'achar | eloheinu
-daber | oshek | vesarah
+pashoa | vekhachesh | Bayahweh | venasog
+me'achar | eloheinu | daber | oshek | vesarah
 horo | vehogo | milev
 divrei | shaker
 
 59:14
-vehusag | achor | mishpat
-utzedakah
+vehusag | achor | mishpat | utzedakah
 merachok | ta'amod
 ki | khashelah | varechov | emet | unekhochah | lo | tukhal | lavo
 
@@ -108,8 +106,10 @@ gemul | le'oyevav | la'iyim
 gemul | yeshalem
 
 59:19
-veyire'u | mima'arav | et | shem | Yahweh | umimizrach | shemesh
-et | kevodo | ki | yavo | khanahar | tzar
+veyire'u | mima'arav | et | shem | Yahweh
+umimizrach | shemesh
+et | kevodo
+ki | yavo | khanahar | tzar
 ruach | Yahweh
 nosesah | vo
 

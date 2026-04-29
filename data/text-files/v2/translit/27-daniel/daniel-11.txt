@@ -40,21 +40,18 @@ hatzafon
 
 11:9
 uva | bemalkhut | melekh | hanegev
-veshav
-el | admato
+veshav | el | admato
 
 11:10
 uvnov | yitgaru | ve'asefu | hamon | chayalim | rabim
 uva | vo
 veshataf | ve'avar
-veyasho | veyitgaru
-ad | ma'uzo
+veyasho | veyitgaru | ad | ma'uzo
 
 11:11
 veyitmarmar | melekh | hanegev
 veyatza
-venilcham | imo
-im | melekh | hatzafon
+venilcham | imo | im | melekh | hatzafon
 vehe'emid | hamon | rav | venitan | hehamon | beyado
 
 11:12
@@ -71,8 +68,7 @@ uleketz | ha'itim | shanim | yavo | vo
 bechayil | gadol | uvirkhush | rav
 
 11:14
-uva'itim | hahem | rabim | ya'amdu
-al | melekh | hanegev
+uva'itim | hahem | rabim | ya'amdu | al | melekh | hanegev
 uvenei | paritzei | amekha | yinase'u | leha'amid | chazon
 venikhshalu
 
@@ -96,8 +92,7 @@ velo | ta'amod
 velo | lo | tihyeh
 
 11:18
-veyasev | panav | le'iyim
-velakhad | rabim
+veyasev | panav | le'iyim | velakhad | rabim
 vehishbit | katzin | cherpato | lo | bilti | cherpato
 yashiv | lo
 
@@ -131,14 +126,11 @@ beshalvah | uvmishmanei | medinah | yavo
 ve'asah | asher | lo | asu | avotav | va'avot | avotav
 bizah | veshalal | urekhush
 lahem | yivzor
-ve'al | mivtzarim | yechashev | machshevotav
-ve'ad | et
+ve'al | mivtzarim | yechashev | machshevotav | ve'ad | et
 
 11:25
 veya'er | kocho | ulevavo | al | melekh | hanegev | bechayil | gadol
-umelekh | hanegev | yitgareh | lamilchamah
-bechayil | gadol | ve'atzum
-ad | me'od
+umelekh | hanegev | yitgareh | lamilchamah | bechayil | gadol | ve'atzum | ad | me'od
 velo | ya'amod
 ki | yachshevu | alav | machashavot
 
@@ -149,8 +141,7 @@ venafelu
 chalalim | rabim
 
 11:27
-usheneihem | hamelakhim | levavam | lemera
-ve'al | shulchan | echad
+usheneihem | hamelakhim | levavam | lemera | ve'al | shulchan | echad
 kazav | yedaberu
 velo | titzlach
 ki | od | ketz | lamo'ed
@@ -162,14 +153,15 @@ veshav | le'artzo
 
 11:29
 lamo'ed | yashuv
-uva | vanegev | velo | tihyeh | kharishonah | vekha'acharonah
+uva | vanegev
+velo | tihyeh | kharishonah | vekha'acharonah
 
 11:30
 uva'u | vo | tziyim | Kitim | venikh'ah
 veshav | veza'am | al | berit | kodesh
 ve'asah
-veshav | veyaven
-al | ozevei | berit | kodesh
+veshav | veyaven | al | ozevei
+berit | kodesh
 
 11:31
 uzero'im
@@ -179,8 +171,8 @@ venatenu
 hashikutz | meshomem
 
 11:32
-umarshi'ei | verit | yachanif | bachalakot
-ve'am | yode'ei | elohav | yachaziku | ve'asu
+umarshi'ei | verit | yachanif | bachalakot | ve'am | yode'ei | elohav
+yachaziku | ve'asu
 
 11:33
 umaskilei | am | yavinu | larabim
@@ -224,8 +216,7 @@ yechalek | bimchir
 
 11:40
 uve'et | ketz | yitnagach | imo | melekh | hanegev
-veyista'er | alav | melekh | hatzafon | berekhev | uvefarashim
-uvo'oniyot
+veyista'er | alav | melekh | hatzafon | berekhev | uvefarashim | uvo'oniyot
 rabot
 uva | va'aratzot
 veshataf | ve'avar
@@ -253,6 +244,5 @@ veyatza | bechema | gedolah | lehashmid | ulehacharim
 rabim
 
 11:45
-veyita | oholei | apadno
-bein | yamim | lehar | tzevi | kodesh
+veyita | oholei | apadno | bein | yamim | lehar | tzevi | kodesh
 uva | ad | kitzo | ve'ein | ozer | lo

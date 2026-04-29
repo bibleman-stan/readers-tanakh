@@ -83,8 +83,7 @@ venislach | lo
 vehayetah | lakohen | kaminchah
 
 5:14
-vaydaber | Yahweh
-el | Mosheh | lemor
+vaydaber | Yahweh | el | Mosheh | lemor
 
 5:15
 nefesh | ki | tim'ol | ma'al
@@ -105,8 +104,7 @@ velo | yada | ve'ashem
 venasa | avono
 
 5:18
-vehevi | ayil | tamim | min | hatzon | be'erkekha | le'asham
-el | hakohen
+vehevi | ayil | tamim | min | hatzon | be'erkekha | le'asham | el | hakohen
 vekhiper | alav | hakohen | al | shigato | asher | shagag | vehu | lo | yada
 venislach | lo
 
@@ -116,8 +114,7 @@ hu
 ashom | asham | Layahweh
 
 5:20
-vaydaber | Yahweh
-el | Mosheh | lemor
+vaydaber | Yahweh | el | Mosheh | lemor
 
 5:21
 nefesh | ki | techeta | uma'alah | ma'al
@@ -127,8 +124,8 @@ ashak | et | amito
 
 5:22
 ov | matza | avedah | vekhichesh | bah
-venishba | al | shaker
-al | achat | mikol | asher | ya'aseh | ha'adam | lachato | vahenah
+venishba | al | shaker | al | achat | mikol | asher | ya'aseh | ha'adam
+lachato | vahenah
 
 5:23
 vehayah | ki | yecheta | ve'ashem
@@ -146,10 +143,8 @@ beyom | ashmato
 
 5:25
 ve'et | ashamo | yavi | Layahweh
-ayil | tamim | min | hatzon | be'erkekha | le'asham
-el | hakohen
+ayil | tamim | min | hatzon | be'erkekha | le'asham | el | hakohen
 
 5:26
 vekhiper | alav | hakohen | lifnei | Yahweh
-venislach | lo
-al | achat | mikol | asher | ya'aseh | le'ashmah | vah
+venislach | lo | al | achat | mikol | asher | ya'aseh | le'ashmah | vah

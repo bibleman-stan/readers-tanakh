@@ -6,7 +6,8 @@ vayrivun | ito | bechazekah
 
 8:2
 vaiyomer | aleihem | meh | asiti | atah | kakhem
-halo | tov | olelot | Efrayim | mivtzir | Avi'ezer
+halo | tov | olelot | Efrayim
+mivtzir | Avi'ezer
 
 8:3
 beyedkhem | natan | elohim | et | sarei | Midyan | et | Orev | ve'et | Ze'ev
@@ -90,7 +91,9 @@ ki | niten | la'anasheikha | haiye'efim | lachem
 8:16
 vaiyikach | et | ziknei | ha'ir
 ve'et | kotzei | hamidbar
-ve'et | habarkonim | vaiyoda | bahem | et | anshei | Sukot
+ve'et | habarkonim
+vaiyoda | bahem | et
+anshei | Sukot
 
 8:17
 ve'et | migdal | Penu'el
@@ -111,8 +114,7 @@ lo | haragti | etkhem
 
 8:20
 vaiyomer | Leyeter | bekhoro
-kum
-harog | otam
+kum | harog | otam
 velo | shalaf | hana'ar | charbo | ki | yare
 ki | odenu
 na'ar
@@ -166,10 +168,8 @@ sham | vayhi | Legid'on | uleveito | lemokesh
 
 8:28
 vaiyikana | Midyan | lifnei | benei | Yisra'el
-velo | yasefu
-laset | rosham
-vatishkot | ha'aretz | arba'im | shanah
-bimei | Gid'on
+velo | yasefu | laset | rosham
+vatishkot | ha'aretz | arba'im | shanah | bimei | Gid'on
 
 8:29
 vaiyelekh | Yeruba'al | ben | Yo'ash
@@ -188,23 +188,22 @@ ben | vaiyasem | et | shemo
 Avimelekh
 
 8:32
-vaiyamot | Gid'on | ben | Yo'ash
-beseivah | tovah
+vaiyamot | Gid'on | ben | Yo'ash | beseivah | tovah
 vaiyikaver | bekever | Yo'ash | aviv | Be'aferah
 avi | ha'ezri
 
 8:33
 vayhi | ka'asher | met | Gid'on
 vaiyashuvu | benei | Yisra'el
-vaiyiznu
-acharei | habe'alim
+vaiyiznu | acharei | habe'alim
 vaiyasimu | lahem | Ba'al | Berit | lelohim
 
 8:34
-velo | zakheru | benei | Yisra'el | et | Yahweh | eloheihem
+velo | zakheru | benei | Yisra'el | et | Yahweh
+eloheihem
 hamatzil | otam | miyad | kol | oyeveihem | misaviv
 
 8:35
-velo | asu | chesed | im | beit | Yeruba'al
-Gid'on | kekhol | hatovah | asher | asah
-im | Yisra'el
+velo | asu | chesed
+im | beit | Yeruba'al
+Gid'on | kekhol | hatovah | asher | asah | im | Yisra'el

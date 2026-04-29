@@ -20,12 +20,10 @@ dirshuni
 vichyu
 
 5:5
-ve'al | tidreshu | Beit | El
-Vehagilgal | lo | tavo'u
-Uve'er | Sheva
+ve'al | tidreshu | Beit | El | Vehagilgal | lo | tavo'u | Uve'er | Sheva
 lo | ta'avoru
-ki | Hagilgal | galoh | yigleh | Uveit | El
-yihyeh | le'aven
+ki | Hagilgal | galoh | yigleh
+Uveit | El | yihyeh | le'aven
 
 5:6
 dirshu | et | Yahweh
@@ -45,8 +43,7 @@ hakore | lemei | haiyam | vaiyishpekhem | al | penei | ha'aretz
 Yahweh | shemo
 
 5:9
-hamavlig | shod
-al | az
+hamavlig | shod | al | az
 veshod
 al | mivtzar | yavo
 
@@ -56,7 +53,8 @@ yeta'evu
 
 5:11
 lakhen | ya'an | boshaskhem | al | dal | umas'at | bar | tikchu | mimenu
-batei | gazit | benitem | velo | teshevu | vam
+batei | gazit | benitem
+velo | teshevu | vam
 karmei | chemed | neta'tem
 velo | tishtu | et | yeinam
 
@@ -88,11 +86,11 @@ she'erit | Yosef
 lakhen | koh | amar | Yahweh | elohei | tzeva'ot | Adonai
 bekhol | rechovot | misped | uvekhol | chutzot
 yomeru | hov | ho
-vekare'u | ikar | el | evel | umisped
-el | yod'ei | nehi
+vekare'u | ikar | el | evel | umisped | el | yod'ei | nehi
 
 5:17
-uvekhol | keramim | misped | ki | e'evor | bekirbecha | amar | Yahweh
+uvekhol | keramim | misped | ki | e'evor | bekirbecha
+amar | Yahweh
 
 5:18
 ho | hamit'avim
@@ -110,8 +108,9 @@ uneshakho
 hanachash
 
 5:20
-halo | choshekh | yom | Yahweh | velo | or
-ve'afel | velo | nogah | lo
+halo | choshekh | yom | Yahweh
+velo | or | ve'afel
+velo | nogah | lo
 
 5:21
 saneti | ma'asti | chageikhem
@@ -129,8 +128,7 @@ lo | eshma
 
 5:24
 veyigal | kamayim | mishpat
-utzedakah
-kenachal | eitan
+utzedakah | kenachal | eitan
 
 5:25
 hazevachim | uminchah | higashtem | li | vamidbar | arba'im | shanah
@@ -138,8 +136,8 @@ beit | Yisra'el
 
 5:26
 unesatem | et | Sikut | malkekhem
-ve'et | Kiyun | tzalmeikhem
-kokhav | eloheikhem | asher | asitem | lakhem
+ve'et | Kiyun | tzalmeikhem | kokhav | eloheikhem | asher | asitem
+lakhem
 
 5:27
 vehigleiti | etkhem | mehal'ah | Ledamasek

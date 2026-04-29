@@ -1,7 +1,7 @@
 20:1
 vaiyisa | misham | Avraham | artzah | Hanegev
-vaiyeshev | bein | Kadesh
-uvein | Shur | vaiyagor | Bigrar
+vaiyeshev | bein | Kadesh | uvein | Shur
+vaiyagor | Bigrar
 
 20:2
 vaiyomer | Avraham | el | Sarah | ishto
@@ -10,14 +10,13 @@ vaiyishlach | Avimelekh | melekh | Gerar
 vaiyikach | et | Sarah
 
 20:3
-vaiyavo | elohim | el | Avimelekh
-bachalom | halayelah
+vaiyavo | elohim | el | Avimelekh | bachalom | halayelah
 vaiyomer | lo | hinekha | met | al | ha'ishah | asher | lakachta
 vehiv | be'ulat | ba'al
 
 20:4
-Va'avimelekh
-lo | karav | eleiha
+Va'avimelekh | lo | karav
+eleiha
 vaiyomar
 Adonai
 hagoy | gam | tzadik
@@ -32,8 +31,7 @@ asiti | zot
 
 20:6
 vaiyomer | elav | ha'elohim | bachalom | gam | anokhi | yada'ti | ki | vetom | levavekha | asita | zot
-va'echsokh | gam | anokhi | otkha | mechatov | li
-al | ken | lo | netatikha
+va'echsokh | gam | anokhi | otkha | mechatov | li | al | ken | lo | netatikha
 lingoa | eleiha
 
 20:7
@@ -57,8 +55,7 @@ asita
 imadi
 
 20:10
-vaiyomer | Avimelekh
-el | Avraham | mah | ra'ita
+vaiyomer | Avimelekh | el | Avraham | mah | ra'ita
 ki | asita
 et | hadavar | hazeh
 
@@ -66,8 +63,7 @@ et | hadavar | hazeh
 vaiyomer | Avraham
 ki | amarti | rak | ein | yir'at | elohim | bamakom
 hazeh
-vaharaguni
-al | devar | ishti
+vaharaguni | al | devar | ishti
 
 20:12
 vegam | amenah | achoti | vat | avi | hi
@@ -99,14 +95,11 @@ hineh | hu | lokh | kesut | einayim | lekhol | asher | itakh
 ve'et | kol | venokhachat
 
 20:17
-vaiyitpalel | Avraham
-el | ha'elohim
+vaiyitpalel | Avraham | el | ha'elohim
 vaiyirpa | elohim | et | Avimelekh | ve'et | ishto | ve'amhotav
 vaiyeledu
 
 20:18
-ki | atzor | atzar | Yahweh
-be'ad | kol | rechem
-leveit | Avimelekh
-al | devar | Sarah
+ki | atzor | atzar | Yahweh | be'ad | kol | rechem
+leveit | Avimelekh | al | devar | Sarah
 eshet | Avraham

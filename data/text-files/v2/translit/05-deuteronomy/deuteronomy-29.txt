@@ -2,7 +2,8 @@
 vaiyikra | Mosheh | el | kol | Yisra'el
 vaiyomer | alehem
 atem | re'item | et | kol | asher | asah | Yahweh | le'eineikhem | be'eretz | Mitzrayim
-lefar'oh | ulekhol | avadav | ulekhol | artzo
+lefar'oh | ulekhol | avadav
+ulekhol | artzo
 
 29:2
 hamasot | hagedolot | asher | ra'u
@@ -11,24 +12,20 @@ ha'otot | vehamofetim | hagedolim | hahem
 
 29:3
 velo | natan | Yahweh | lakhem | lev | lada'at
-ve'einayim | lir'ot | ve'azenayim | lishmoa
-ad
+ve'einayim | lir'ot | ve'azenayim | lishmoa | ad
 haiyom | hazeh
 
 29:4
 va'olekh | etkhem | arba'im | shanah | bamidbar
-lo | valu | salmoteikhem | me'aleikhem | vena'alkha | lo | valtah
-me'al | raglekha
+lo | valu | salmoteikhem | me'aleikhem | vena'alkha | lo | valtah | me'al | raglekha
 
 29:5
-lechem | lo | akhaltem | veyayin | veshekhar
-lo | shetitem
+lechem | lo | akhaltem | veyayin | veshekhar | lo | shetitem
 lema'an | tede'u
 ki | ani | Yahweh | eloheikhem
 
 29:6
-vatavo'u
-el | hamakom | hazeh
+vatavo'u | el | hamakom | hazeh
 vaiyetze | Sichon | melekh | Cheshbon | Ve'og | melekh | Habashan | likratenu | lamilchamah
 vanakem
 
@@ -69,7 +66,8 @@ vekha'asher | Nishba | la'avoteikha | Le'avraham | Leyitzchak | Uleya'ako
 29:13
 velo | itekhem | levadekhem
 anokhi | koret | et | haberit | hazot
-ve'et | ha'alah | hazot
+ve'et | ha'alah
+hazot
 
 29:14
 ki | et | asher | yeshno | poh | imanu | omed | haiyom
@@ -84,13 +82,13 @@ ve'et | asher | avarnu | bekerev | hagoyim | asher | avartem
 29:16
 vatir'u | et | shikutzeihem
 ve'et | giluleihem
-etz | va'even
-kesef | vezahav | asher | imahem
+etz | va'even | kesef | vezahav | asher | imahem
 
 29:17
 pen | yesh | bakhem | ish | ov | ishah | o | mishpachah | ov | shevet | asher | levavo | foneh | haiyom | me'im | Yahweh | eloheinu
 lalekhet | la'avod
-et | elohei | hagoyim | hahem
+et | elohei
+hagoyim | hahem
 pen | yesh | bakhem | shoresh | poreh | rosh | vela'anah
 
 29:18
@@ -123,21 +121,20 @@ asher | chilah | Yahweh | bah
 
 29:22
 gaferit | vamelach | serefah | khol | artzah
-lo | tizara | velo | tatzmiach | velo | ya'aleh | vah
-kol | esev
-kemahpekhat | Sedom | Va'amorah | Admah | Utzevyim | asher | hafakh | Yahweh
-be'apo | uvachamato
+lo | tizara | velo | tatzmiach
+velo | ya'aleh | vah
+kol | esev | kemahpekhat | Sedom | Va'amorah | Admah | Utzevyim
+asher | hafakh | Yahweh | be'apo | uvachamato
 
 29:23
 ve'ameru | kol | hagoyim
-al | meh | asah | Yahweh | kakhah
-la'aretz | hazot | meh | chori | ha'af | hagadol | hazeh
+al | meh | asah | Yahweh | kakhah | la'aretz | hazot
+meh | chori | ha'af | hagadol | hazeh
 
 29:24
-ve'ameru
-al | asher | azevu
-et | berit | Yahweh | elohei | avotam | asher | karat | imam
-behotzi'o | otam | me'eretz | Mitzrayim
+ve'ameru | al | asher | azevu
+et | berit | Yahweh | elohei | avotam
+asher | karat | imam | behotzi'o | otam | me'eretz | Mitzrayim
 
 29:25
 vaiyelekhu | vaiya'avdu | elohim | acherim
@@ -145,8 +142,7 @@ vaiyishtachavu | lahem
 elohim | asher | lo | yeda'um | velo | chalak | lahem
 
 29:26
-vaiyichar | af | Yahweh
-ba'aretz | hahiv | lehavi | aleiha | et | kol | hakelalah
+vaiyichar | af | Yahweh | ba'aretz | hahiv | lehavi | aleiha | et | kol | hakelalah
 haketuvah | basefer | hazeh
 
 29:27
@@ -155,6 +151,8 @@ uveketzef | gadol | vaiyashlikhem | el | eretz | acheret
 kaiyom | hazeh
 
 29:28
-hanistarot | Layahweh | eloheinu
+hanistarot | Layahweh
+eloheinu
 vehaniglot | lanu | ulevaneinu | ad | olam | la'asot
-et | kol | divrei | hatorah | hazot
+et | kol | divrei
+hatorah | hazot

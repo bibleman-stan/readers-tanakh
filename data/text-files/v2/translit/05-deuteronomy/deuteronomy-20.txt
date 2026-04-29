@@ -5,15 +5,12 @@ ki | Yahweh | eloheikha | imakh
 hama'alkha | me'eretz | Mitzrayim
 
 20:2
-vehayah | kekaravekhem
-el | hamilchamah
-venigash | hakohen
+vehayah | kekaravekhem | el | hamilchamah | venigash | hakohen
 vediber | el | ha'am
 
 20:3
 ve'amar | alehem | shema | Yisra'el
-atem | kerevim | haiyom | lamilchamah
-al | oyeveikhem
+atem | kerevim | haiyom | lamilchamah | al | oyeveikhem
 al | yerakh | levavkhem | al | tire'u | ve'al | tachpezu | ve'al | ta'artzu | mipeneihem
 
 20:4
@@ -46,13 +43,11 @@ yikachenah
 20:8
 veyasefu | hashoterim | ledaber | el | ha'am
 ve'ameru | mi | ha'ish | haiyare | verakh | halevav
-yelekh | veyasho | leveito
-velo | yimas | et | levav | echav
+yelekh | veyasho | leveito | velo | yimas | et | levav | echav
 kilvavo
 
 20:9
-vehayah | kekhalot | hashoterim
-ledaber | el | ha'am
+vehayah | kekhalot | hashoterim | ledaber | el | ha'am
 ufakedu | sarei | tzeva'ot | berosh | ha'am
 
 20:10
@@ -105,7 +100,8 @@ Layahweh | eloheikhem
 
 20:19
 ki | tatzur | el | ir | yamim | rabim | lehilachem | aleiha | letafesah | lo | tashchit | et | etzah | lindoach | alav | garzen
-ki | mimenu | tokhel | ve'oto
+ki | mimenu | tokhel
+ve'oto
 lo | tikhrot
 ki | ha'adam | etz | hasadeh | lavo | mipaneikha | bamatzor
 

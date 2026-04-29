@@ -1,6 +1,5 @@
 6:1
-vaydaber | Yahweh
-el | Mosheh | lemor
+vaydaber | Yahweh | el | Mosheh | lemor
 
 6:2
 tzav | et | Aharon | ve'et | banav | lemor
@@ -11,15 +10,14 @@ tukad | bo
 
 6:3
 velavash | hakohen | mido | vad | umikhnesei | vad | yilbash | al | besaro
-veherim | et | hadeshen | asher | tokhal | ha'esh | et | ha'olah
-al | hamizbeach
+veherim | et | hadeshen | asher | tokhal | ha'esh | et | ha'olah | al | hamizbeach
 vesamo | etzel
 hamizbeach
 
 6:4
-ufashat | et | begadav | velavash | begadim | acherim
-vehotzi | et | hadeshen | el | michutz | lamachaneh
-el | makom
+ufashat | et | begadav | velavash
+begadim | acherim
+vehotzi | et | hadeshen | el | michutz | lamachaneh | el | makom
 tahor
 
 6:5
@@ -36,8 +34,7 @@ lo | tikhveh
 6:7
 vezot | torat
 haminchah
-hakrev | otah | benei | Aharon | lifnei | Yahweh
-el | penei
+hakrev | otah | benei | Aharon | lifnei | Yahweh | el | penei
 hamizbeach
 
 6:8
@@ -47,8 +44,7 @@ vehiktir | hamizbeach | reiach | nichoach | azkaratah | Layahweh
 
 6:9
 vehanoteret | mimenah | yokhelu | Aharon | uvanav
-matzot | te'akhel | bemakom | kadosh
-bachatzar | ohel | mo'ed
+matzot | te'akhel | bemakom | kadosh | bachatzar | ohel | mo'ed
 yokheluha
 
 6:10
@@ -61,8 +57,7 @@ chok | olam | ledoroteikhem | me'ishei | Yahweh
 kol | asher | yiga | bahem | yikdash
 
 6:12
-vaydaber | Yahweh
-el | Mosheh | lemor
+vaydaber | Yahweh | el | Mosheh | lemor
 
 6:13
 zeh | kareban | Aharon | uvanav | asher | yakrivu | Layahweh | beyom | himashach | oto
@@ -70,8 +65,7 @@ asirit | ha'efah | solet | minchah | tamid
 machatzitah | baboker | umachatzitah | ba'arev
 
 6:14
-al | machavat | bashemen | te'aseh
-murbekhet | tevi'enah
+al | machavat | bashemen | te'aseh | murbekhet | tevi'enah
 tufinei | minchat | pitim
 takriv | reiach | nichoach | Layahweh
 
@@ -86,8 +80,7 @@ vekhol | minchat | kohen | kalil | tihyeh
 lo | te'akhel
 
 6:17
-vaydaber | Yahweh
-el | Mosheh | lemor
+vaydaber | Yahweh | el | Mosheh | lemor
 
 6:18
 daber | el | Aharon | ve'el | banav | lemor
@@ -105,8 +98,7 @@ bemakom | kadosh | te'akhel | bachatzar | ohel | mo'ed
 6:20
 kol | asher | yiga | bivsarah | yikdash
 va'asher | yizeh | midamah | al | habeged | asher | yizeh | aleiha
-tekhabes
-bemakom | kadosh
+tekhabes | bemakom | kadosh
 
 6:21
 ukheli | cheres | asher | tevushal | bo

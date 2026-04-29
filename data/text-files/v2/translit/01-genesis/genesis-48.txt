@@ -1,9 +1,9 @@
 48:1
 vayhi | acharei | hadevarim | ha'eleh
 vaiyomer | Leyosef
-hineh | avikha
-choleh | vaiyikach | et | shenei | vanav | imo
-et | Menasheh | ve'et | Efrayim
+hineh | avikha | choleh
+vaiyikach | et | shenei | vanav | imo | et | Menasheh
+ve'et | Efrayim
 
 48:2
 vaiyaged | Leya'ako
@@ -11,8 +11,7 @@ vaiyomer
 hineh | binkha | Yosef
 ba | eleikha
 vaiyitchazek | Yisra'el
-vaiyeshev
-al | hamitah
+vaiyeshev | al | hamitah
 
 48:3
 vaiyomer | Ya'ako | el | Yosef
@@ -22,8 +21,7 @@ oti
 
 48:4
 vaiyomer | elai | hini | mafrekha | vehirbitikha
-unetatikha
-likhal | amim
+unetatikha | likhal | amim
 venatati | et | ha'aretz | hazot | lezar'akha | achareikha
 achuzat | olam
 
@@ -49,10 +47,8 @@ et | benei | Yosef
 vaiyomer | mi | eleh
 
 48:9
-vaiyomer | Yosef | el | aviv
-banai | hem
-asher | natan | li | elohim | bazeh
-vaiyomar
+vaiyomer | Yosef | el | aviv | banai | hem
+asher | natan | li | elohim | bazeh | vaiyomar
 kachem | na | elai | va'avarakhem
 
 48:10
@@ -64,8 +60,7 @@ vaychabek | lahem
 
 48:11
 vaiyomer | Yisra'el | el | Yosef
-re'oh | faneikha
-lo | filalti
+re'oh | faneikha | lo | filalti
 vehineh | her'ah | oti | elohim
 gam | et | zar'ekha
 
@@ -97,9 +92,9 @@ ha'elohim | haro'eh | oti | me'odi | ad | haiyom | hazeh
 48:16
 hamal'okh | hago'el | oti | mikol | ra | yevarekh | et | hane'arim
 veyikare | vahem | shemi
-veshem | avotai | Avraham | Veyitzchak
-veyidgu | laro
-bekerev | ha'aretz
+veshem | avotai
+Avraham | Veyitzchak
+veyidgu | laro | bekerev | ha'aretz
 
 48:17
 vaiyar | Yosef | ki | yashit | aviv | yad | yemino | al | rosh | Efrayim
@@ -108,11 +103,9 @@ vaiyitmokh | yad | aviv | lehasir | otah | me'al | rosh | Efrayim
 al | rosh | Menasheh
 
 48:18
-vaiyomer | Yosef | el | aviv
-lo | khen | avi
+vaiyomer | Yosef | el | aviv | lo | khen | avi
 ki | zeh | habekhor
-sim | yeminekha
-al | rosho
+sim | yeminekha | al | rosho
 
 48:19
 vayma'en | aviv | vaiyomer | yada'ti | veni | yada'ti
@@ -131,8 +124,8 @@ vaiyasem | et | Efrayim | lifnei | Menasheh
 vaiyomer | Yisra'el | el | Yosef
 hineh | anokhi | met
 vehayah | elohim | imakhem
-veheshiv | etkhem
-el | eretz | avoteikhem
+veheshiv | etkhem | el | eretz
+avoteikhem
 
 48:22
 va'ani | natati | lekha | shekhem | achad | al | acheikha

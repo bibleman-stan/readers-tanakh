@@ -12,8 +12,7 @@ tikshavnah
 
 32:4
 ulevav | nimharim | yavin | lada'at
-uleshon | ilegim | temaher
-ledaber | tzachot
+uleshon | ilegim | temaher | ledaber | tzachot
 
 32:5
 lo | yikare | od | lenaval | nadiv | ulekhilai
@@ -47,26 +46,24 @@ ha'zenah
 imrati
 
 32:10
-yamim | al | shanah
-tirgaznah | botechot
+yamim | al | shanah | tirgaznah | botechot
 ki | kalah | vatzir | osef | beli | yavo
 
 32:11
 chirdu | sha'ananot
 regazah | botechot
 peshotah | ve'orah
-vachagorah
-al | chalatzayim
+vachagorah | al | chalatzayim
 
 32:12
 al | shadayim
-sofedim
-al | sedei | chemed
-al | gefen
+sofedim | al | sedei | chemed | al | gefen
 poriyah
 
 32:13
-al | admat | ami | kotz | shamir | ta'aleh
+al | admat | ami
+kotz | shamir
+ta'aleh
 ki | al | kol | batei | masos | kiryah
 alizah
 
@@ -90,12 +87,10 @@ veshakhan | bamidbar | mishpat | utzedakah | bakarmel | teshev
 vehayah | ma'aseh | hatzedakah
 shalom
 va'avodat | hatzedakah
-hashket | vavetach
-ad | olam
+hashket | vavetach | ad | olam
 
 32:18
-veyashav | ami | binveh | shalom | uvemishkenot | mivtachim
-uvimnuchot
+veyashav | ami | binveh | shalom | uvemishkenot | mivtachim | uvimnuchot
 sha'ananot
 
 32:19
@@ -103,6 +98,5 @@ uvarad | beredet | haiya'ar | uvashiflah | tishpal | ha'ir
 
 32:20
 ashreikhem
-zore'ei
-al | kol | mayim | meshalechei | regel | hashor
+zore'ei | al | kol | mayim | meshalechei | regel | hashor
 vehachamor

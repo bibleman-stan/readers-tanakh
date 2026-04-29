@@ -26,13 +26,12 @@ ki | magefah | achat | lekhulam | ulesarneikhem
 va'asitem | tzalmei | techoreikhem | vetzalmei | akhbereikhem | hamashchitim | et | ha'aretz
 unetatem | lelohei | Yisra'el | kavod
 ulai | yakel | et | yado | me'aleikhem
-ume'al | eloheikhem
-ume'al | artzekhem
+ume'al | eloheikhem | ume'al | artzekhem
 
 6:6
-velamah | tekhabedu | et | levavkhem
-ka'asher | kibedu | Mitzrayim | ufar'oh
-et | libam | halo | ka'asher | hit'alel | bahem
+velamah | tekhabedu | et | levavkhem | ka'asher | kibedu | Mitzrayim | ufar'oh
+et | libam
+halo | ka'asher | hit'alel | bahem
 vayshalechum
 vaiyelekhu
 
@@ -59,20 +58,19 @@ mikreh | hu | hayah | lanu
 vaiya'asu | ha'anashim | ken
 vaiyikchu | shetei | farot | alot
 vaiya'asrum | ba'agalah
-ve'et | beneihem | kalu | vabayit
+ve'et | beneihem
+kalu | vabayit
 
 6:11
-vaiyasimu | et | aron | Yahweh
-el | ha'agalah
+vaiyasimu | et | aron | Yahweh | el | ha'agalah
 ve'et | ha'argaz | ve'et | akhberei | hazahav
 ve'et | tzalmei | techoreihem
 
 6:12
 vayisharnah | haparot | baderekh | al | derekh | Beit | Shemesh
-bimsilah | achat | halekhu | halokh | vega'o | velo | saru
-yamin | usemol
-vesarnei | felishtim | holekhim | achareihem
-ad | gevul | Beit | Shamesh
+bimsilah | achat | halekhu | halokh | vega'o
+velo | saru | yamin | usemol
+vesarnei | felishtim | holekhim | achareihem | ad | gevul | Beit | Shamesh
 
 6:13
 Uveit | Shemesh
@@ -85,12 +83,12 @@ veha'agalah | ba'ah | el | sedeh | Yehoshua | beit | hashimshi | vata'amod | sha
 vesham
 even | gedolah
 vayvake'u | et | atzei | ha'agalah
-ve'et | haparot | he'elu | olah | Layahweh
+ve'et | haparot
+he'elu | olah | Layahweh
 
 6:15
 vehalviyim | horidu | et | aron | Yahweh | ve'et | ha'argaz | asher | ito | asher | bo | khelei | zahav
-vaiyasimu
-el | ha'even | hagedolah
+vaiyasimu | el | ha'even | hagedolah
 ve'anshei | Veit | Shemesh | he'elu | olot | vaiyizbechu | zevachim | baiyom | hahu
 Layahweh
 
@@ -115,8 +113,7 @@ bisdeh | Yehoshua | beit | hashimshi
 vaiyakh | be'anshei | Veit | Shemesh | ki | ra'u | ba'aron | Yahweh
 vaiyakh | ba'am | shiv'im | ish
 chamishim | elef | ish | vaiyit'abelu | ha'am
-ki | hikah | Yahweh | ba'am
-makah | gedolah
+ki | hikah | Yahweh | ba'am | makah | gedolah
 
 6:20
 vaiyomeru | anshei | Veit | Shemesh
@@ -126,8 +123,7 @@ ve'el | mi
 ya'aleh | me'aleinu
 
 6:21
-vaiyishlechu | mal'akhim
-el | yoshevei | Kiryat | Ye'arim | lemor
+vaiyishlechu | mal'akhim | el | yoshevei | Kiryat | Ye'arim | lemor
 heshivu | felishtim | et | aron | Yahweh
 redu
 ha'alu | oto

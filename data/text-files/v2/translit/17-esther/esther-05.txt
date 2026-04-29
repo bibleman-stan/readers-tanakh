@@ -10,8 +10,7 @@ vayhi | khir'ot | hamelekh | et | Ester | hamalkah | omedet | bechatzer
 nase'ah | chen | be'einav
 vaiyooshet | hamelekh | Le'ester | et | sharvit | hazahav | asher | beyado
 vatikrav | Ester
-vatiga
-berosh | hasharvit
+vatiga | berosh | hasharvit
 
 5:3
 vaiyomer | lah | hamelekh | mah | lakh
@@ -22,15 +21,13 @@ umah | bakashatekh | ad | chatzi | hamalkhut | veyinaten | lakh
 vatomer | Ester
 im | al | hamelekh
 tov
-yavo | hamelekh | Vehaman | haiyom
-el | hamishteh
+yavo | hamelekh | Vehaman | haiyom | el | hamishteh
 asher | asiti | lo
 
 5:5
 vaiyomer | hamelekh | maharu | et | Haman | la'asot
 et | devar | Ester
-vaiyavo | hamelekh | Vehaman
-el | hamishteh
+vaiyavo | hamelekh | Vehaman | el | hamishteh
 asher | asetah | Ester
 
 5:6
@@ -48,8 +45,7 @@ im | matzati | chen | be'einei | hamelekh | ve'im | al | hamelekh | tov
 latet | et | she'elati | vela'asot
 et | bakashati
 yavo | hamelekh | Vehaman | el | hamishteh | asher | e'eseh | lahem
-umachar | e'eseh
-kidvar | hamelekh
+umachar | e'eseh | kidvar | hamelekh
 
 5:9
 vaiyetze | Haman | baiyom | hahu
@@ -61,8 +57,8 @@ chemah
 
 5:10
 vaiyit'apak | Haman
-vaiyavo
-el | beito | vaiyishlach | vaiyave | et | ohavav
+vaiyavo | el | beito
+vaiyishlach | vaiyave | et | ohavav
 ve'et | Zeresh | ishto
 
 5:11
@@ -76,8 +72,7 @@ ve'avdei | hamelekh
 vaiyomer | Haman
 af | lo | hevi'ah | Ester | hamalkah | im | hamelekh | el | hamishteh | asher | asatah
 ki | im | oti
-vegam | lemachar | ani | karu | lah
-im | hamelekh
+vegam | lemachar | ani | karu | lah | im | hamelekh
 
 5:13
 vekhol | zeh | einenu | shoveh
@@ -88,7 +83,6 @@ besha'ar | hamelekh
 5:14
 vatomer | lo | Zeresh | ishto | vekhol | ohavav | ya'asu | etz | gavoah | chamishim | amah
 uvaboker | emor | lamelekh | veyitlu | et | Maredokhai | alav
-uvo | im | hamelekh | el | hamishteh
-sameach
+uvo | im | hamelekh | el | hamishteh | sameach
 vaiyitav | hadavar | lifnei | Haman
 vaiya'as | ha'etz

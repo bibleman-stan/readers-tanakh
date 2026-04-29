@@ -35,8 +35,7 @@ et | kol | penei | ha'adamah
 vaiyitzer | Yahweh | elohim | et | ha'adam | afar | min | ha'adamah
 vaiyipach | be'apav
 nishmat | chaiyim
-vayhi | ha'adam
-lenefesh | chaiyah
+vayhi | ha'adam | lenefesh | chaiyah
 
 2:8
 vaiyita | Yahweh | elohim | gan | Be'eden | mikedem
@@ -52,8 +51,8 @@ hada'at
 tov | vara
 
 2:10
-venahar | yotze | Me'eden | lehashkot
-et | hagan | umisham | yipared
+venahar | yotze | Me'eden | lehashkot | et | hagan
+umisham | yipared
 vehayah | le'arba'ah | rashim
 
 2:11
@@ -86,8 +85,7 @@ vaiyikach | Yahweh | elohim | et | ha'adam
 vaiyanichehu | vegan | Eden | le'avedah | uleshamerah
 
 2:16
-vaytzav | Yahweh | elohim
-al | ha'adam | lemor | mikol | etz | hagan
+vaytzav | Yahweh | elohim | al | ha'adam | lemor | mikol | etz | hagan
 akhol | tokhel
 
 2:17
@@ -96,8 +94,7 @@ mimenu | ki | beyom | akhalkha | mimenu
 mot | tamut
 
 2:18
-vaiyomer | Yahweh | elohim
-lo | tov | heyot | ha'adam | levado
+vaiyomer | Yahweh | elohim | lo | tov | heyot | ha'adam | levado
 e'eseh | lo | ezer | kenegdo
 
 2:19
@@ -107,8 +104,7 @@ vekhol | asher | yikra | lo | ha'adam | nefesh | chaiyah
 hu | shemo
 
 2:20
-vaiyikra | ha'adam | shemot | lekhol | habehemah | ule'of | hashamayim
-ulekhol
+vaiyikra | ha'adam | shemot | lekhol | habehemah | ule'of | hashamayim | ulekhol
 chaiyat | hasadeh | Ule'adam | lo | matza | ezer | kenegdo
 
 2:21
@@ -119,9 +115,8 @@ vaiyisgor | basar
 tachtenah
 
 2:22
-vaiyiven | Yahweh | elohim | et | hatzela | asher | lakach | min | ha'adam
-le'ishah | vayvi'eha
-el | ha'adam
+vaiyiven | Yahweh | elohim | et | hatzela | asher | lakach | min | ha'adam | le'ishah
+vayvi'eha | el | ha'adam
 
 2:23
 vaiyomer | ha'adam | zot | hapa'am | etzem | me'atzamai
@@ -129,8 +124,8 @@ uvasar | mibesari | lezot | yikare | ishah
 ki | me'ish | lukochah | zot
 
 2:24
-al | ken | ya'azov | ish | et | aviv
-ve'et | imo | vedavak | be'ishto
+al | ken | ya'azov | ish | et | aviv | ve'et | imo
+vedavak | be'ishto
 vehayu
 levasar | echad
 

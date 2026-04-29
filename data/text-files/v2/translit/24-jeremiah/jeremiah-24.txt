@@ -22,15 +22,13 @@ vayhi | devar | Yahweh
 elai | lemor
 
 24:5
-koh | amar | Yahweh | elohei | Yisra'el
-kate'enim | hatovot | ha'eleh
+koh | amar | Yahweh | elohei | Yisra'el | kate'enim | hatovot | ha'eleh
 ken | akir | et | galut | Yehudah | asher | shilachti | min | hamakom | hazeh | eretz | Kasdim
 letovah
 
 24:6
 vesamti | eini | aleihem | letovah
-vahashivotim
-al | ha'aretz | hazot
+vahashivotim | al | ha'aretz | hazot
 uvenitim | velo | eheros
 uneta'tim
 velo | etoosh
@@ -53,5 +51,7 @@ asher | adichem | sham
 
 24:10
 veshilachti | vam
-et | hacherev | et | hara'av | ve'et | hadaver | ad | tumam | me'al | ha'adamah
+et | hacherev
+et | hara'av | ve'et | hadaver
+ad | tumam | me'al | ha'adamah
 asher | natati | lahem | vela'avoteihem

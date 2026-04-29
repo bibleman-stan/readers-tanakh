@@ -5,15 +5,14 @@ Virushalim
 
 4:2
 vekibatzti | et | kol | hagoyim
-vehoradtim
-el | emek
+vehoradtim | el | emek
 Yehoshafat
 venishpati | imam | sham | al | ami | venachalati | Yisra'el | asher | pizeru | vagoyim
-ve'et | artzi | chileku
+ve'et | artzi
+chileku
 
 4:3
-ve'el | ami
-yadu | goral | vaiyitenu | haiyeled | bazonah
+ve'el | ami | yadu | goral | vaiyitenu | haiyeled | bazonah
 vehaiyaldah | makheru | vaiyayin | vaiyishtu
 
 4:4
@@ -29,8 +28,7 @@ asher | kaspi | uzehavi | lekachtem | umachamadai | hatovim
 havetem | leheikheleikhem
 
 4:6
-uvenei | Yehudah | uvenei | Yerushalim | mekhartem
-livnei | haiyevanim
+uvenei | Yehudah | uvenei | Yerushalim | mekhartem | livnei | haiyevanim
 lema'an | harchikam | me'al | gevulam
 
 4:7
@@ -40,8 +38,7 @@ vahashivoti | gemulkhem | beroshekhem
 
 4:8
 umakharti | et | beneikhem | ve'et | benoteikhem | beyad | benei | Yehudah
-umekharum | Lishvayim
-el | goy | rachok
+umekharum | Lishvayim | el | goy | rachok
 ki | Yahweh
 diber
 
@@ -52,8 +49,7 @@ yigeshu | ya'alu
 kol | anshei | hamilchamah
 
 4:10
-kotu | iteikhem | lacharavot | umazmeroteikhem
-lirmachim | hachalash
+kotu | iteikhem | lacharavot | umazmeroteikhem | lirmachim | hachalash
 yomar
 gibor | ani
 
@@ -64,8 +60,8 @@ hanchat | Yahweh
 giboreikha
 
 4:12
-ye'oru | veya'alu | hagoyim
-el | emek | Yehoshafat
+ye'oru | veya'alu | hagoyim | el | emek
+Yehoshafat
 ki | sham | eshev | lishpot | et | kol | hagoyim | misaviv
 
 4:13
@@ -115,9 +111,8 @@ mechamas | benei | Yehudah
 asher | shafekhu | dom | naki | be'artzam
 
 4:20
-Vihudah
-le'olam | teshev | Virushalim
-ledor | vador
+Vihudah | le'olam | teshev
+Virushalim | ledor | vador
 
 4:21
 venikeiti

@@ -4,8 +4,7 @@ elai | lemor
 
 25:2
 ben | adam
-sim | paneikha
-el | benei | Amon
+sim | paneikha | el | benei | Amon
 vehinave
 aleihem
 
@@ -33,8 +32,8 @@ ki | ani | Yahweh
 ki | khoh | amar | Adonai | Yahweh
 ya'an | mach'akha | yad
 verak'acha | beragel
-vatismach | bekhol | shatekha | benefesh
-el | admat | Yisra'el
+vatismach | bekhol | shatekha | benefesh | el | admat
+Yisra'el
 
 25:7
 lakhen | hini | natiti | et | yadi | aleikha | unetatikha | levag | lagoyim
@@ -93,8 +92,10 @@ eivat | olam
 lakhen | koh | amar | Adonai | Yahweh
 hini | noteh | yadi | al | pelishtim
 vehikhrati
-et | keretim | veha'avadti
-et | she'erit | chof | haiyam
+et | keretim
+veha'avadti
+et | she'erit
+chof | haiyam
 
 25:17
 ve'asiti | vam | nekamot | gedolot

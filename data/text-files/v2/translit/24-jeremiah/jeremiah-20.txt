@@ -26,7 +26,8 @@ vehikam | becharev
 
 20:5
 venatati | et | kol | chosen | ha'ir | hazot
-ve'et | kol | yegi'ah | ve'et | kol | yekarah
+ve'et | kol | yegi'ah
+ve'et | kol | yekarah
 ve'et | kol | otzrot | malkhei | Yehudah | eten | beyad | oyeveihem
 uvezazum | ulekachum
 vehevi'um | Bavelah
@@ -69,8 +70,7 @@ venikchah | nikmatenu | mimenu
 20:11
 Vayahweh | oti | kegibor | aritz
 al | ken | rodefai | yikashelu
-velo | yukhalu
-boshu | me'od | ki | lo | hiskilu
+velo | yukhalu | boshu | me'od | ki | lo | hiskilu
 kelimat | olam
 lo | tishakheach
 
@@ -83,13 +83,12 @@ giliti | et | rivi
 20:13
 shiru | Layahweh
 halu
-et | Yahweh | ki | hitzil | et | nefesh | evyon
-miyad | mere'im
+et | Yahweh
+ki | hitzil | et | nefesh | evyon | miyad | mere'im
 
 20:14
 arur | haiyom | asher | yuladti | bo
-yom | asher | yeladatni | imi
-al | yehi | varukh
+yom | asher | yeladatni | imi | al | yehi | varukh
 
 20:15
 arur | ha'ish | asher | bisar | et | avi | lemor
@@ -112,7 +111,7 @@ verachmah
 harat | olam
 
 20:18
-lamah | zeh | merechem | yatzati
-lir'ot | amal | veyagon
+lamah | zeh | merechem | yatzati | lir'ot | amal
+veyagon
 vaiyikhlu | bevoshet
 yamai

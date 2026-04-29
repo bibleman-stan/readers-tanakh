@@ -21,19 +21,19 @@ lema'an | tizkor | et | yom | tzetekha | me'eretz | Mitzrayim
 kol | yemei | chaiyeikha
 
 16:4
-velo | yera'eh | lekha | se'or | bekhol | gevulkha | shiv'at | yamim
+velo | yera'eh | lekha | se'or | bekhol | gevulkha
+shiv'at | yamim
 velo | yalin | min | habasar | asher | tizbach | ba'erev | baiyom | harishon
 laboker
 
 16:5
-lo | tukhal
-lizboach | et | hapasach | be'achad | she'areikha
+lo | tukhal | lizboach | et | hapasach | be'achad | she'areikha
 asher | Yahweh | eloheikha | noten | lakh
 
 16:6
 ki | im | el | hamakom | asher | yivchar | Yahweh | eloheikha | leshaken | shemo
-sham | tizbach | et | hapesach | ba'arev
-kevo | hashemesh | mo'ed | tzetekha | Mimitzrayim
+sham | tizbach | et | hapesach | ba'arev | kevo | hashemesh | mo'ed
+tzetekha | Mimitzrayim
 
 16:7
 uvishalta | ve'akhalta | bamakom | asher | yivchar | Yahweh | eloheikha | bo
@@ -41,8 +41,7 @@ ufanita | vaboker
 vehalakhta | le'ohaleikha
 
 16:8
-sheshet | yamim
-tokhal | matzot
+sheshet | yamim | tokhal | matzot
 uvaiyom | hashevi'i | atzeret | Layahweh | eloheikha
 lo | ta'aseh | melakhah
 
@@ -69,7 +68,8 @@ sham
 vezakharta
 ki | eved | hayita | Bemitzrayim
 veshamarta | ve'asita
-et | hachukim | ha'eleh
+et | hachukim
+ha'eleh
 
 16:13
 chag | hasukot | ta'aseh | lekha
@@ -104,7 +104,8 @@ veshafetu | et | ha'am | mishpat | tzedek
 
 16:19
 lo | tateh | mishpat | lo | takir
-panim | velo | tikach | shochad
+panim
+velo | tikach | shochad
 ki | hashochad | ye'aver | einei | chakhamim
 visalef
 divrei | tzadikim

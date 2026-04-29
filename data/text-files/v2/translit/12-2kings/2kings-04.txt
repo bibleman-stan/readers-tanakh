@@ -1,7 +1,8 @@
 4:1
 ve'ishah | achat | mineshei | venei | hanevi'im | tza'akah | el | Elisha | lemor | avdekha | ishi | met
 ve'atah | yada'ta
-ki | avdekha | hayah | yare | et | Yahweh | vehanosheh
+ki | avdekha | hayah | yare | et | Yahweh
+vehanosheh
 ba | lakachat | et | shenei | yeladai | lo | la'avadim
 
 4:2
@@ -14,8 +15,7 @@ im | asukh | shamen
 4:3
 vaiyomer | lekhi | sha'ali | lakh | kelim | min | hachutz | me'et
 kol | shikhnikhe
-kelim | rekim
-al | tam'iti
+kelim | rekim | al | tam'iti
 
 4:4
 uvat | vesagart | hadelet | ba'adekh | uve'ad | banayikh | veyatzakt
@@ -40,7 +40,8 @@ hashamen
 vatavo | vataged | le'ish | ha'elohim
 vaiyomer | lekhi | mikhri | et | hashemen
 veshalemi
-et | nishyekhe | ve'at | vebaneikhe
+et | nishyekhe
+ve'at | vebaneikhe
 tichyi | banotar
 
 4:8
@@ -58,8 +59,7 @@ tamid
 
 4:10
 na'aseh | na | aliyat | kir | ketanah
-venasim | lo | sham | mitah | veshulchan
-vekhise | umenorah
+venasim | lo | sham | mitah | veshulchan | vekhise | umenorah
 vehayah | bevo'o | eleinu
 yasur | shamah
 
@@ -79,8 +79,7 @@ vata'amod | lefanav
 vaiyomer | lo | emor | na | eleiha | hineh | charadt | eleinu | et | kol | hacharadah | hazot
 meh | la'asot | lakh
 hayesh | ledaber | lokh | el | hamelekh
-o
-el | sar | hatzava
+o | el | sar | hatzava
 vatomer
 betokh | ami
 anokhi | yoshavet
@@ -99,39 +98,33 @@ vata'amod | bapatach
 4:16
 vaiyomer | lamo'ed | hazeh | ka'et | chaiyah | ati
 choveket | ben
-vatomer | al | adoni | ish | ha'elohim
-al | tekhazev | beshifchatekha
+vatomer | al | adoni | ish | ha'elohim | al | tekhazev | beshifchatekha
 
 4:17
 vatahar | ha'ishah
-vateled | ben
-lamo'ed | hazeh | ka'et | chaiyah
+vateled | ben | lamo'ed | hazeh | ka'et | chaiyah
 asher | diber | eleiha
 Elisha
 
 4:18
 vaiyigdal
 haiyaled | vayhi | haiyom
-vaiyetze | el | aviv
-el | hakotzerim
+vaiyetze | el | aviv | el | hakotzerim
 
 4:19
 vaiyomer | el | aviv
 roshi | roshi | vaiyomer | el | hana'ar
-sa'ehu
-el | imo
+sa'ehu | el | imo
 
 4:20
 vaiyisa'ehu
-vayvi'ehu
-el | imo | vaiyeshev | al | birkeiha | ad | hatzohorayim
+vayvi'ehu | el | imo
+vaiyeshev | al | birkeiha | ad | hatzohorayim
 vaiyamot
 
 4:21
-vata'al | vatashkivehu
-al | mitat
-ish | ha'elohim
-vatisgor | ba'ado
+vata'al | vatashkivehu | al | mitat
+ish | ha'elohim | vatisgor | ba'ado
 vatetze
 
 4:22
@@ -142,21 +135,19 @@ ha'atonot | ve'arutzah | ad | ish | ha'elohim
 ve'ashuvah
 
 4:23
-vaiyomer | madua | ati | holakhti | elav | haiyom
-lo | chodesh | velo | shabat | vatomer
+vaiyomer | madua | ati | holakhti | elav | haiyom | lo | chodesh
+velo | shabat | vatomer
 shalom
 
 4:24
 vatachavosh | ha'aton
 vatomer | el | na'arah
-nehag | valekh
-al | ta'atzor | li | lirko
+nehag | valekh | al | ta'atzor | li | lirko
 ki
 im | amarti | lakh
 
 4:25
-vatelekh | vatavo | el | ish | ha'elohim
-el | har | Hakarmel
+vatelekh | vatavo | el | ish | ha'elohim | el | har | Hakarmel
 vayhi | kir'ot | ish | ha'elohim | otah | mineged
 vaiyomer | el | Geichazi | na'aro
 hineh | hashunamit | halaz
@@ -197,27 +188,23 @@ vaiyelekh | achareiha
 Vegechazi | avar | lifneihem | vaiyasem | et | hamish'enet | al | penei | hana'ar
 ve'ein | kol
 ve'ein | kashev
-vaiyashov | likrato | vaiyaged | lo | lemor
-lo | hekitz
+vaiyashov | likrato | vaiyaged | lo | lemor | lo | hekitz
 hana'ar
 
 4:32
 vaiyavo | Elisha
 habayetah
-vehineh | hana'ar | met | mushkav
-al | mitato
+vehineh | hana'ar | met | mushkav | al | mitato
 
 4:33
 vaiyavo
-vaiyisgor | hadelet
-be'ad | sheneihem | vaiyitpalel
-el | Yahweh
+vaiyisgor | hadelet | be'ad | sheneihem
+vaiyitpalel | el | Yahweh
 
 4:34
 vaiya'al | vaiyishkav | al | haiyeled | vaiyasem | piv | al | piv | ve'einav | al | einav | vekhapav | al | kapov
 vaiyighar
-alav | vaiyachom
-besar | haiyaled
+alav | vaiyachom | besar | haiyaled
 
 4:35
 vaiyashov | vaiyelekh | babayit | achat | henah | ve'achat | henah | vaiya'al
@@ -240,17 +227,16 @@ vatisa | et | benah
 vatetze
 
 4:38
-Ve'elisha | shav | Hagilgalah | vehara'av | ba'aretz
-uvenei | hanevi'im
+Ve'elisha | shav | Hagilgalah | vehara'av | ba'aretz | uvenei | hanevi'im
 yoshevim | lefanav
 vaiyomer | lena'aro | shefot | hasir | hagedolah
-uvashel | nazid
-livnei | hanevi'im
+uvashel | nazid | livnei | hanevi'im
 
 4:39
 vaiyetze | echad | el | hasadeh | lelaket | orot
 vaiyimtza | gefen | sadeh
-vaylaket | mimenu | paku'ot | sadeh | melo | vigdo
+vaylaket | mimenu | paku'ot | sadeh
+melo | vigdo
 vaiyavo | vayfalach | el | sir | hanazid
 ki | lo | yada'u
 
@@ -261,8 +247,8 @@ velo | yakhelu | le'ekhol
 
 4:41
 vaiyomer | ukechu | kemach
-vaiyashlekh
-el | hasir | vaiyomer | tzak | la'am | veyokhelu
+vaiyashlekh | el | hasir
+vaiyomer | tzak | la'am | veyokhelu
 velo | hayah | davar | ra | basir
 
 4:42
@@ -271,8 +257,8 @@ vekharmel | betziklono | vaiyomer
 ten | la'am | veyokhelu
 
 4:43
-vaiyomer | meshareto | mah | eten | zeh | lifnei
-me'ah | ish
+vaiyomer | meshareto | mah | eten | zeh
+lifnei | me'ah | ish
 vaiyomer | ten | la'am | veyokhelu
 ki | khoh | amar | Yahweh
 akhol | vehoter

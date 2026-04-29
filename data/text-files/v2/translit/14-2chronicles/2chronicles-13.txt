@@ -1,7 +1,6 @@
 13:1
 bishnat | shemoneh | esreh | lamelekh | Yarave'am
-vaiyimlokh | Aviyah
-al | Yehudah
+vaiyimlokh | Aviyah | al | Yehudah
 
 13:2
 shaloosh | shanim | malakh | Birushalim
@@ -30,15 +29,12 @@ le'olam | lo | ulevanav | berit | melach
 vaiyakom | Yarave'am | ben | Nevat
 eved
 Shelomoh | ven | David
-vaiyimrod
-al | adonav
+vaiyimrod | al | adonav
 
 13:7
 vaiyikavetzu | alav | anashim | rekim | benei | veliya'al
-vaiyit'ametzu
-al | Rechav'am | ben | Shelomoh
-Urechav'am | hayah | na'ar | verakh | levav
-velo | hitchazak | lifneihem
+vaiyit'ametzu | al | Rechav'am | ben | Shelomoh
+Urechav'am | hayah | na'ar | verakh | levav | velo | hitchazak | lifneihem
 
 13:8
 ve'atah | atem | omerim | lehitchazek | lifnei | mamlekhet | Yahweh
@@ -55,15 +51,15 @@ kol | haba | lemale | yado | befar | ben | bakar | ve'eilim | shiv'ah | vehayah 
 lelo | elohim
 
 13:10
-va'anachnu | Yahweh | eloheinu
-velo | azavnuhu
+va'anachnu | Yahweh | eloheinu | velo | azavnuhu
 vekhohanim | mesharetim | Layahweh | benei | Aharon
 vehalviyim | bamlakhet
 
 13:11
 umaktirim | Layahweh | olot | baboker | baboker | uva'erev | ba'erev | uketoret | samim | uma'arekhet | lechem | al | hashulchan | hatahor | umenorat | hazahav | veneroteiha | leva'er | ba'erev | ba'erev
 ki | shomerim | anachnu
-et | mishmeret | Yahweh | eloheinu
+et | mishmeret
+Yahweh | eloheinu
 ve'atem
 azavtem | oto
 
@@ -98,22 +94,27 @@ vaiyitenem | elohim | beyadam
 
 13:17
 vaiyaku | vahem | Aviyah | ve'amo
-makah | rabah | vaiyipelu | chalalim | Miyisra'el
+makah | rabah
+vaiyipelu | chalalim | Miyisra'el
 chamesh | me'ot | elef | ish | bachur
 
 13:18
-vaiyikane'u | venei | Yisra'el
-ba'et | hahi | vaiye'emtzu | benei | Yehudah
-ki | Nish'anu
-al | Yahweh | elohei | avoteihem
+vaiyikane'u | venei | Yisra'el | ba'et | hahi
+vaiye'emtzu | benei | Yehudah
+ki | Nish'anu | al | Yahweh
+elohei | avoteihem
 
 13:19
 vaiyirdof | Aviyah | acharei | Yarave'am
 vaiyilkod | mimenu | arim
-et | Beit | El | ve'et | benoteiha | ve'et | Yeshanah | ve'et | benoteiha | ve'et | Efron | uvenoteiha
+et | Beit | El | ve'et | benoteiha
+ve'et | Yeshanah
+ve'et | benoteiha
+ve'et | Efron | uvenoteiha
 
 13:20
-velo | atzar | koach | Yarave'am | od | bimei | Aviyahu
+velo | atzar | koach | Yarave'am | od
+bimei | Aviyahu
 vaiyigefehu | Yahweh
 vaiyamot
 
@@ -134,6 +135,5 @@ hanavi | Ido
 13:23
 vaiyishkav | Aviyah | im | avotav | vaiyikberu | oto | be'ir | David
 vaiyimlokh | Asa | veno
-tachtav
-beyamav | shaketah | ha'aretz
+tachtav | beyamav | shaketah | ha'aretz
 eser | shanim

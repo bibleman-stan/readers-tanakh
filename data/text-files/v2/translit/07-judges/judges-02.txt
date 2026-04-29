@@ -1,13 +1,13 @@
 2:1
-vaiya'al | mal'akh | Yahweh | min | Hagilgal
-el | Habokhim
+vaiya'al | mal'akh | Yahweh | min | Hagilgal | el | Habokhim
 vaiyomer | a'aleh | etkhem | Mimitzrayim | va'avi | etkhem | el | ha'aretz | asher | Nishba'ti | la'avoteikhem
 va'omar
 lo | afer | beriti | itekhem | le'olam
 
 2:2
 ve'atem | lo | tikhretu | verit | leyoshevei | ha'aretz | hazot | mizbechoteihem
-titotzun | velo | shema'tem | bekoli | mah | zot | asitem
+titotzun
+velo | shema'tem | bekoli | mah | zot | asitem
 
 2:3
 vegam | amarti
@@ -16,8 +16,8 @@ vehayu | lakhem | letzidim | veloheihem
 yihyu | lakhem | lemokesh
 
 2:4
-vayhi | kedaber | mal'akh | Yahweh | et | hadevarim | ha'eleh
-el | kol | benei | Yisra'el
+vayhi | kedaber | mal'akh | Yahweh | et | hadevarim | ha'eleh | el | kol | benei
+Yisra'el
 vaiyis'u | ha'am | et | kolam
 vaiyivku
 
@@ -27,8 +27,7 @@ vaiyizbechu | sham | Layahweh
 
 2:6
 vayshalach | Yehoshua | et | ha'am
-vaiyelekhu | venei | Yisra'el | ish | lenachalato
-lareshet | et | ha'aretz
+vaiyelekhu | venei | Yisra'el | ish | lenachalato | lareshet | et | ha'aretz
 
 2:7
 vaiya'avdu | ha'am | et | Yahweh
@@ -49,8 +48,7 @@ Betimnat | Cheres
 behar | Efrayim | mitzefon | lehar | Ga'ash
 
 2:10
-vegam | kol | hador | hahu | Ne'esfu
-el | avotav
+vegam | kol | hador | hahu | Ne'esfu | el | avotav
 vaiyakam | dor | acher | achareihem | asher | lo | yade'u | et | Yahweh
 vegam | et | hama'aseh | asher | asah | Leyisra'el
 
@@ -115,8 +113,8 @@ vaiyomer | ya'an | asher | averu | hagoy | hazeh | et | beriti | asher | tziviti
 velo | shame'u | lekoli
 
 2:21
-gam | ani | lo | osif | lehorish | ish | mipeneihem
-min | hagoyim | asher | azav | Yehoshua
+gam | ani | lo | osif | lehorish | ish
+mipeneihem | min | hagoyim | asher | azav | Yehoshua
 vaiyamot
 
 2:22
@@ -125,6 +123,5 @@ hashomerim | hem | et | derekh | Yahweh | lalekhet | bam | ka'asher | shameru | 
 im | lo
 
 2:23
-vaiyanach | Yahweh | et | hagoyim | ha'eleh
-levilti | horisham | maher
+vaiyanach | Yahweh | et | hagoyim | ha'eleh | levilti | horisham | maher
 velo | netanam | beyad | Yehoshua

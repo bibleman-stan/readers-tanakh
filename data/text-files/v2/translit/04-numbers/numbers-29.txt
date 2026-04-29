@@ -33,7 +33,8 @@ isheh | Layahweh
 29:7
 uve'asor | lachodesh | hashevi'i | hazeh | mikra | kodesh | yihyeh | lakhem
 ve'initem
-et | nafshoteikhem | kol | melakhah
+et | nafshoteikhem
+kol | melakhah
 lo | ta'asu
 
 29:8
@@ -66,8 +67,7 @@ shiv'at | yamim
 
 29:13
 vehikravtem | olah | isheh | reiach | nichoach | Layahweh
-parim | benei | vakar | sheloshah | asar
-eilim | shenayim
+parim | benei | vakar | sheloshah | asar | eilim | shenayim
 kevasim | benei | shanah | arba'ah | asar
 temimim | yihyu
 
@@ -86,14 +86,12 @@ use'ir | izim | echad | chatat | milevad | olat | hatamid | minchatah
 veniskah
 
 29:17
-uvaiyom | hasheni | parim | benei | vakar | sheneim | asar
-eilim | shenayim
+uvaiyom | hasheni | parim | benei | vakar | sheneim | asar | eilim | shenayim
 kevasim | benei | shanah | arba'ah | asar
 temimim
 
 29:18
-uminchatam | veniskeihem | laparim | la'eilim | velakevasim | bemisparam
-kamishpat
+uminchatam | veniskeihem | laparim | la'eilim | velakevasim | bemisparam | kamishpat
 
 29:19
 use'ir | izim | echad | chatat
@@ -101,13 +99,13 @@ milevad | olat | hatamid | uminchatah
 veniskeihem
 
 29:20
-uvaiyom | hashelishi | parim | ashtei | asar | eilim | shenayim
+uvaiyom | hashelishi | parim | ashtei | asar
+eilim | shenayim
 kevasim | benei | shanah | arba'ah | asar
 temimim
 
 29:21
-uminchatam | veniskeihem | laparim | la'eilim | velakevasim | bemisparam
-kamishpat
+uminchatam | veniskeihem | laparim | la'eilim | velakevasim | bemisparam | kamishpat
 
 29:22
 use'ir | chatat
@@ -120,8 +118,7 @@ kevasim | benei | shanah | arba'ah | asar
 temimim
 
 29:24
-minchatam | veniskeihem | laparim | la'eilim | velakevasim | bemisparam
-kamishpat
+minchatam | veniskeihem | laparim | la'eilim | velakevasim | bemisparam | kamishpat
 
 29:25
 use'ir | izim | echad | chatat | milevad | olat | hatamid | minchatah
@@ -133,8 +130,7 @@ kevasim | benei | shanah | arba'ah | asar
 temimim
 
 29:27
-uminchatam | veniskeihem | laparim | la'eilim | velakevasim | bemisparam
-kamishpat
+uminchatam | veniskeihem | laparim | la'eilim | velakevasim | bemisparam | kamishpat
 
 29:28
 use'ir | chatat
@@ -147,8 +143,7 @@ kevasim | benei | shanah | arba'ah | asar
 temimim
 
 29:30
-uminchatam | veniskeihem | laparim | la'eilim | velakevasim | bemisparam
-kamishpat
+uminchatam | veniskeihem | laparim | la'eilim | velakevasim | bemisparam | kamishpat
 
 29:31
 use'ir | chatat
@@ -161,8 +156,7 @@ kevasim | benei | shanah | arba'ah | asar
 temimim
 
 29:33
-uminchatam | veniskehem | laparim | la'eilim | velakevasim | bemisparam
-kemishpatam
+uminchatam | veniskehem | laparim | la'eilim | velakevasim | bemisparam | kemishpatam
 
 29:34
 use'ir | chatat
@@ -182,8 +176,7 @@ par | echad | ayil | echad | kevasim | benei | shanah | shiv'ah
 temimim
 
 29:37
-minchatam | veniskeihem | lapar | la'ayil | velakevasim | bemisparam
-kamishpat
+minchatam | veniskeihem | lapar | la'ayil | velakevasim | bemisparam | kamishpat
 
 29:38
 use'ir | chatat
@@ -192,5 +185,4 @@ veniskah
 
 29:39
 eleh | ta'asu | Layahweh | bemo'adeikhem
-levad | minidreikhem | venidvoteikhem | le'oloteikhem | uleminchoteikhem | uleniskeikhem
-uleshalmeikhem
+levad | minidreikhem | venidvoteikhem | le'oloteikhem | uleminchoteikhem | uleniskeikhem | uleshalmeikhem

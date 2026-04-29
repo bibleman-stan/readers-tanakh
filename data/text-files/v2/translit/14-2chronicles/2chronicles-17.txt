@@ -1,8 +1,7 @@
 17:1
 vaiyimlokh | Yehoshafat | beno
 tachtav
-vaiyitchazek
-al | Yisra'el
+vaiyitchazek | al | Yisra'el
 
 17:2
 vaiyiten | chayil
@@ -12,8 +11,7 @@ uve'arei | Efrayim | asher | lakhad
 Asa | aviv
 
 17:3
-vayhi | Yahweh
-im | Yehoshafat
+vayhi | Yahweh | im | Yehoshafat
 ki | halakh | bedarkhei | David | aviv | harishonim
 velo | darash | labe'alim
 
@@ -52,19 +50,19 @@ vaylamedu | ba'am
 
 17:10
 vayhi | pachad | Yahweh | al | kol | mamlekhot | ha'aratzot | asher | sevivot | Yehudah
-velo | Nilchamu
-im | Yehoshafat
+velo | Nilchamu | im | Yehoshafat
 
 17:11
 umin | pelishtim | mevi'im | Lihoshafat | minchah | vekhesef | masa
 gam | ha'arvi'im | mevi'im | lo | tzon
 eilim
-shiv'at | alafim | usheva | me'ot | uteyashim
+shiv'at | alafim | usheva | me'ot
+uteyashim
 shiv'at | alafim | usheva | me'ot
 
 17:12
-vayhi | Yehoshafat | holekh | vegadel
-ad | lema'elah | vaiyiven | Bihudah | biraniyot
+vayhi | Yehoshafat | holekh | vegadel | ad | lema'elah
+vaiyiven | Bihudah | biraniyot
 ve'arei | miskenot
 
 17:13
@@ -73,7 +71,8 @@ ve'anshei | milchamah | giborei | chayil | Birushalim
 
 17:14
 ve'eleh | fekudatam
-leveit | avoteihem | Lihudah | sarei | alafim | Adnah | hasar
+leveit | avoteihem
+Lihudah | sarei | alafim | Adnah | hasar
 ve'imo | giborei | chayil
 shelosh | me'ot | alef
 

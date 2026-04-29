@@ -27,14 +27,14 @@ emtza | chen | be'eineikha
 adoni | hamelekh
 
 16:5
-uva | hamelekh | David
-ad | Bachurim
+uva | hamelekh | David | ad | Bachurim
 vehineh | misham | ish | yotze | mimishpachat | beit | Sha'ul | ushemo | Shim'i | ven | Gera
 yotze | yatzo | umekalel
 
 16:6
 vaysakel | ba'avanim | et | David
-ve'et | kol | avdei | hamelekh | David
+ve'et | kol | avdei
+hamelekh | David
 vekhol | ha'am | vekhol | hagiborim | mimino | umisemolo
 
 16:7
@@ -57,8 +57,7 @@ hamelekh | e'berah | na
 ve'asirah | et | rosho
 
 16:10
-vaiyomer | hamelekh | mah | li | velakhem
-benei | Tzeruyah
+vaiyomer | hamelekh | mah | li | velakhem | benei | Tzeruyah
 ki | yekalel | vekhi | Yahweh | amar | lo | kalel | et | David
 umi | yomar | madua | asitah | ken
 
@@ -71,8 +70,7 @@ Yahweh
 
 16:12
 ulai | yir'eh | Yahweh | be'oni
-veheshiv | Yahweh | li | tovah
-tachat | kilato
+veheshiv | Yahweh | li | tovah | tachat | kilato
 haiyom | hazeh
 
 16:13
@@ -93,8 +91,8 @@ Va'achitofel
 ito
 
 16:16
-vayhi | ka'asher | ba | Chushai | ha'arki | re'eh | David
-el | Avshalom | vaiyomer | Chushai | el | Avshalom
+vayhi | ka'asher | ba | Chushai | ha'arki | re'eh | David | el | Avshalom
+vaiyomer | Chushai | el | Avshalom
 yechi | hamelekh
 yechi | hamelekh
 
@@ -118,28 +116,25 @@ ka'asher | avadti | lifnei | avikha
 ken | ehyeh | lifaneikha
 
 16:20
-vaiyomer | Avshalom
-el | Achitofel
+vaiyomer | Avshalom | el | Achitofel
 havu | lakhem | etzah | mah | na'aseh
 
 16:21
 vaiyomer | Achitofel | el | Avshalom
-bo | el | pilagshei | avikha | asher | hiniach
-lishmor | habayit
+bo | el | pilagshei | avikha | asher | hiniach | lishmor | habayit
 veshama | kol | Yisra'el | ki | Niv'ashta | et | avikha
 vechazeku
 yedei
 kol | asher | itakh
 
 16:22
-vaiyatu | Le'avshalom | ha'ohel
-al | hagag | vaiyavo | Avshalom | el | pilagshei | aviv | le'einei
+vaiyatu | Le'avshalom | ha'ohel | al | hagag
+vaiyavo | Avshalom | el | pilagshei | aviv | le'einei
 kol | Yisra'el
 
 16:23
 va'atzat | Achitofel | asher | ya'atz | baiyamim | hahem
-ka'asher | [—] | yish'al-ish
-bidvar | ha'elohim
+ka'asher | [—] | yish'al-ish | bidvar | ha'elohim
 ken | kol | atzat | Achitofel
 gam | Ledavid
 gam | Le'avshalom

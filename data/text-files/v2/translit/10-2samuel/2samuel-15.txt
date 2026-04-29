@@ -7,8 +7,7 @@ ratzim | lefanav
 
 15:2
 vehishkim | Avshalom
-ve'amad
-al | yad
+ve'amad | al | yad
 derekh | hasha'ar
 vayhi | kol | ha'ish | asher | yihyeh | lov | riv | lavo | el | hamelekh | lamishpat | vaiyikra | Avshalom | elav | vaiyomer | ei | mizeh | ir | atah
 vaiyomer | me'achad | shivtei | Yisra'el
@@ -32,8 +31,7 @@ venashak | lo
 
 15:6
 vaiya'as | Avshalom | kadavar | hazeh | lekhol | Yisra'el
-asher | yavo'u | lamishpat
-el | hamelekh
+asher | yavo'u | lamishpat | el | hamelekh
 vayganev | Avshalom | et | lev
 anshei | Yisra'el
 
@@ -41,8 +39,7 @@ anshei | Yisra'el
 vayhi | miketz
 arba'im | shanah
 vaiyomer | Avshalom | el | hamelekh
-elakhah | na | va'ashalem | et | nidri | asher | nadarti | Layahweh
-Bechevron
+elakhah | na | va'ashalem | et | nidri | asher | nadarti | Layahweh | Bechevron
 
 15:8
 ki | neder | nadar | avdekha | beshivti | Vigshur | Ba'aram
@@ -58,8 +55,8 @@ vaiyelekh | Chevronah
 
 15:10
 vaiyishlach | Avshalom | meragelim
-bekhol | shivtei | Yisra'el | lemor
-keshame'akhem | et | kol | hashofar | va'amartem
+bekhol | shivtei | Yisra'el | lemor | keshame'akhem | et | kol | hashofar
+va'amartem
 malakh | Avshalom | Bechevron
 
 15:11
@@ -72,13 +69,14 @@ kol | davar
 15:12
 vaiyishlach | Avshalom | et | Achitofel | hagiloni | yo'etz | David | me'iro | Migiloh
 bezavecho
-et | hazevachim | vayhi | hakesher | amitz
+et | hazevachim
+vayhi | hakesher | amitz
 veha'am | holekh | varav
 et | Avshalom
 
 15:13
-vaiyavo | hamagid
-el | David | lemor | hayah | lev | ish | Yisra'el
+vaiyavo | hamagid | el | David | lemor
+hayah | lev | ish | Yisra'el
 acharei | Avshalom
 
 15:14
@@ -89,8 +87,7 @@ maharu | lalekhet | pen | yemaher | vehisiganu | vehidiach | aleinu | et | hara'
 vehikah | ha'ir | lefi | charev
 
 15:15
-vaiyomeru | avdei | hamelekh
-el | hamelekh | kekhol | asher | yivchar | adoni | hamelekh
+vaiyomeru | avdei | hamelekh | el | hamelekh | kekhol | asher | yivchar | adoni | hamelekh
 hineh | avadeikha
 
 15:16
@@ -100,8 +97,7 @@ lishmor | habayit
 
 15:17
 vaiyetze | hamelekh | vekhol | ha'am | beraglav
-vaiya'amdu
-beit | hamerchak
+vaiya'amdu | beit | hamerchak
 
 15:18
 vekhol | avadav | oerim | al | yado
@@ -111,15 +107,14 @@ vekhol | hagitim | shesh | me'ot | ish | asher | ba'u | veraglo | Migat
 oerim | al | penei | hamelekh
 
 15:19
-vaiyomer | hamelekh | el | Itai | hagiti
-lamah | telekh | gam | atah | itanu
+vaiyomer | hamelekh | el | Itai | hagiti | lamah | telekh | gam | atah
+itanu
 shuv | veshev | im | hamelekh | ki | nakheri | atah
 vegam | goleh | atah | limkomecha
 
 15:20
 temol | bo'ekha | vehaiyom | ano'akha | imanu | lalekhet
-va'ani | holekh
-al | asher | ani
+va'ani | holekh | al | asher | ani
 holekh
 shuv | vehashev | et | acheikha | imakh
 chesed | ve'emet
@@ -132,8 +127,7 @@ ki | im | bimkom | asher | yihyeh | sham | adoni | hamelekh | im | lemavet | im 
 ki | sham | yihyeh | avdekha
 
 15:22
-vaiyomer | David | el | Itai
-lekh | va'avor
+vaiyomer | David | el | Itai | lekh | va'avor
 vaiya'avor | Itai | hagiti | vekhol | anashav
 vekhol | hataf | asher | ito
 
@@ -142,16 +136,14 @@ vekhol | ha'aretz | bokhim | kol | gadol
 vekhol | ha'am
 oerim
 vehamelekh | over | benachal | Kidron
-vekhol | ha'am | oerim
-al | penei | derekh
+vekhol | ha'am | oerim | al | penei | derekh
 et | hamidbar
 
 15:24
 vehineh | gam | Tzadok | vekhol | halviyim | ito | nose'im | et | aron | berit | ha'elohim
 vaiyatziku | et | aron | ha'elohim
 vaiya'al
-Evyatar
-ad | tom | kol | ha'am | la'avor | min | ha'ir
+Evyatar | ad | tom | kol | ha'am | la'avor | min | ha'ir
 
 15:25
 vaiyomer | hamelekh | Letzadok
@@ -193,15 +185,15 @@ ve'alu | aloh | uvakhoh
 15:31
 Vedavid | higid | lemor | Achitofel | bakosherim
 im | Avshalom | vaiyomer | David
-sakel | na | et | atzat | Achitofel | Yahweh
+sakel | na | et | atzat | Achitofel
+Yahweh
 
 15:32
 vayhi | David | ba | ad | harosh
 asher | yishtachaveh | sham | lelohim
 vehineh | likrato | Chushai | ha'arki
 karua | kutaneto
-va'adamah
-al | rosho
+va'adamah | al | rosho
 
 15:33
 vaiyomer | lo

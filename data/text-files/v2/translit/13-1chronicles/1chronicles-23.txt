@@ -1,8 +1,7 @@
 23:1
 Vedavid | zaken
 vesava | yamim
-vaiyamlekh | et | Shelomoh | veno
-al | Yisra'el
+vaiyamlekh | et | Shelomoh | veno | al | Yisra'el
 
 23:2
 vaiye'esof | et | kol | sarei | Yisra'el
@@ -60,8 +59,7 @@ arba'ah
 23:13
 benei | Amram | Aharon | Umosheh
 vaiyibadel | Aharon | lehakdisho | kodesh | kadashim | hu | uvanav | ad | olam
-lehaktir | lifnei | Yahweh | leshareto | ulevarekh | bishmo
-ad | olam
+lehaktir | lifnei | Yahweh | leshareto | ulevarekh | bishmo | ad | olam
 
 23:14
 Umosheh
@@ -80,7 +78,9 @@ Shevu'el | harosh
 
 23:17
 vaiyihyu | venei | Eli'ezer
-Rechavyah | harosh | velo | hayah | Le'eli'ezer | banim | acherim | uvenei | Rechavyah
+Rechavyah | harosh
+velo | hayah | Le'eli'ezer | banim | acherim
+uvenei | Rechavyah
 ravu | lema'elah
 
 23:18
@@ -105,8 +105,10 @@ benei | Merari | Machli | Umushi | benei | Machli
 El'azar | Vekish
 
 23:22
-vaiyamot | El'azar | velo | hayu | lo | banim
-ki | im | banot | vaiyisa'um | benei | Kish
+vaiyamot | El'azar
+velo | hayu | lo | banim
+ki | im | banot
+vaiyisa'um | benei | Kish
 acheihem
 
 23:23
@@ -121,8 +123,7 @@ beit | Yahweh | miben | esrim | shanah | vama'elah
 23:25
 ki | amar | David
 heniach | Yahweh | elohei | Yisra'el | le'amo
-vaiyishkon | Birushalim
-ad | le'olam
+vaiyishkon | Birushalim | ad | le'olam
 
 23:26
 vegam | lalviyim
@@ -134,13 +135,12 @@ hemah | mispar | benei | Levi | miben | esrim | shanah | ulema'elah
 
 23:28
 ki | ma'amadam | leyad | benei | Aharon | la'avodat | beit | Yahweh
-al | hachatzerot | ve'al | haleshakhot
-ve'al | tohorat | lekhol | kodesh | uma'aseh
+al | hachatzerot | ve'al | haleshakhot | ve'al | tohorat | lekhol | kodesh | uma'aseh
 avodat | beit | ha'elohim
 
 23:29
-ulelechem | hama'arekhet | ulesolet | leminchah | velirkikei | hamatzot | velamachavat
-velamurbakhet | ulekhol | mesurah | umidah
+ulelechem | hama'arekhet | ulesolet | leminchah | velirkikei | hamatzot | velamachavat | velamurbakhet
+ulekhol | mesurah | umidah
 
 23:30
 vela'amod | baboker | baboker | lehodot | ulehalel | Layahweh
@@ -153,8 +153,7 @@ bemispar | kemishpat | aleihem | tamid
 lifnei | Yahweh
 
 23:32
-veshameru | et | mishmeret | ohel | mo'ed | ve'et | mishmeret | hakodesh
-umishmeret
+veshameru | et | mishmeret | ohel | mo'ed | ve'et | mishmeret | hakodesh | umishmeret
 benei | Aharon
 acheihem | la'avodat
 beit | Yahweh

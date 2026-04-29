@@ -1,7 +1,6 @@
 9:1
 vaiyomer | Yahweh | el | Mosheh
-bo
-el | par'oh
+bo | el | par'oh
 vedibarta | elav | koh | amar | Yahweh | elohei | ha'ivrim
 shalach | et | ami
 veya'avduni
@@ -13,7 +12,8 @@ ve'odkha | machazik | bam
 9:3
 hineh | yad | Yahweh | hoyah | bemiknecha | asher | basadeh
 basusim | bachamorim | bagemalim | babakar | uvatzon
-dever | kaved | me'od
+dever
+kaved | me'od
 
 9:4
 vehiflah | Yahweh
@@ -33,8 +33,8 @@ lo | met | echad
 
 9:7
 vaiyishlach | par'oh
-vehineh | lo | met | mimikneh | Yisra'el
-ad | echad | vaiyikhbad | lev | par'oh
+vehineh | lo | met | mimikneh | Yisra'el | ad | echad
+vaiyikhbad | lev | par'oh
 velo | shilach | et | ha'am
 
 9:8
@@ -47,7 +47,8 @@ le'einei | far'oh
 9:9
 vehayah | le'avak | al
 kol | eretz | Mitzrayim
-vehayah | al | ha'adam | ve'al | habehemah | lishchin | poreach | ava'bu'ot | bekhol | eretz | Mitzrayim
+vehayah | al | ha'adam | ve'al | habehemah | lishchin | poreach | ava'bu'ot
+bekhol | eretz | Mitzrayim
 
 9:10
 vaiyikchu | et | piach | hakivshan | vaiya'amdu | lifnei | far'oh
@@ -57,14 +58,14 @@ poreach | ba'adam | uvabehemah
 
 9:11
 velo | yakhelu | hachartumim | la'amod | lifnei | Mosheh | mipenei | hashechin
-ki | hayah | hashechin | bachartumim | uvekhol | Mitzrayim
+ki | hayah | hashechin | bachartumim
+uvekhol | Mitzrayim
 
 9:12
 vaychazek | Yahweh | et | lev | par'oh
 velo | shama
 alehem
-ka'asher | diber | Yahweh
-el | Mosheh
+ka'asher | diber | Yahweh | el | Mosheh
 
 9:13
 vaiyomer | Yahweh | el | Mosheh
@@ -96,8 +97,7 @@ shalecham
 9:18
 hini | mamtir | ka'et | machar | barad
 kaved | me'od | asher | lo | hayah | khamohu | Bemitzrayim
-lemin | haiyom | hivasedah
-ve'ad | atah
+lemin | haiyom | hivasedah | ve'ad | atah
 
 9:19
 ve'atah | shelach | ha'ez | et | miknecha
@@ -108,8 +108,7 @@ veyarad | alehem | habarad | vametu
 9:20
 haiyare | et | devar | Yahweh | me'avdei
 par'oh
-henis | et | avadav | ve'et | miknehu
-el | habatim
+henis | et | avadav | ve'et | miknehu | el | habatim
 
 9:21
 va'asher | lo | sam | libo
@@ -126,13 +125,13 @@ vaiyet | Mosheh | et | matehu | al | hashamayim
 Vayahweh | natan | kolot | uvarad
 vatihalakh | esh
 aretzah
-vaiyamter | Yahweh | barad
-al | eretz | Mitzrayim
+vaiyamter | Yahweh | barad | al | eretz | Mitzrayim
 
 9:24
 vayhi | varad
-ve'esh | mitlakachat | betokh | habarad | kaved | me'od | asher | lo | hayah | khamohu | bekhol | eretz | Mitzrayim | me'az
-hayetah | legoy
+ve'esh | mitlakachat | betokh | habarad
+kaved | me'od | asher | lo | hayah | khamohu | bekhol | eretz | Mitzrayim
+me'az | hayetah | legoy
 
 9:25
 vaiyakh | habarad | bekhol | eretz | Mitzrayim | et | kol | asher | basadeh
@@ -159,11 +158,9 @@ verav | mihyot | kolot | elohim | uvarad
 va'ashalechah | etkhem | velo | tosifun | la'amod
 
 9:29
-vaiyomer | elav | Mosheh
-ketzeti | et | ha'ir | efros | et | kapai
-el | Yahweh
-hakolot | yechdalun | vehabarad | lo | yihyeh | od
-lema'an | teda
+vaiyomer | elav | Mosheh | ketzeti | et | ha'ir
+efros | et | kapai | el | Yahweh
+hakolot | yechdalun | vehabarad | lo | yihyeh | od | lema'an | teda
 ki | Layahweh
 ha'aretz
 
@@ -186,8 +183,8 @@ henah
 
 9:33
 vaiyetze | Mosheh | me'im | par'oh | et | ha'ir
-vaiyifros | kapav
-el | Yahweh | vaiyachdelu | hakolot | vehabarad | umatar
+vaiyifros | kapav | el | Yahweh
+vaiyachdelu | hakolot | vehabarad | umatar
 lo | Nitakh | aretzah
 
 9:34

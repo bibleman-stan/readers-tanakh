@@ -42,7 +42,8 @@ asu | labe'alim
 24:8
 vaiyomer | hamelekh
 vaiya'asu
-aron | echad | vaiyitenuhu | besha'ar | beit | Yahweh
+aron | echad
+vaiyitenuhu | besha'ar | beit | Yahweh
 chutzah
 
 24:9
@@ -51,8 +52,7 @@ bamidbar
 
 24:10
 vaiyismechu | khol | hasarim
-vekhol | ha'am | vaiyavi'u | vaiyashlikhu | la'aron
-ad | lekhaleh
+vekhol | ha'am | vaiyavi'u | vaiyashlikhu | la'aron | ad | lekhaleh
 
 24:11
 vayhi | be'et | yavi | et | ha'aron | el | pekudat | hamelekh | beyad | halviyim
@@ -87,14 +87,11 @@ vaiyamot
 ben | me'ah | usheloshim | shanah | bemoto
 
 24:16
-vaiyikberuhu | ve'ir | David
-im | hamelakhim
-ki | asah | tovah | Beyisra'el
-ve'im | ha'elohim | uveito
+vaiyikberuhu | ve'ir | David | im | hamelakhim
+ki | asah | tovah | Beyisra'el | ve'im | ha'elohim | uveito
 
 24:17
-ve'acharei | mot | Yehoyada
-ba'u | sarei | Yehudah
+ve'acharei | mot | Yehoyada | ba'u | sarei | Yehudah
 vaiyishtachavu | lamelekh
 az | shama | hamelekh
 aleihem
@@ -102,13 +99,13 @@ aleihem
 24:18
 vaiya'azvu | et | beit | Yahweh | elohei | avoteihem
 vaiya'avdu | et | ha'asherim
-ve'et | ha'atzabim | vayhi | ketzef | al | Yehudah | Virushalim | be'ashmatam
+ve'et | ha'atzabim
+vayhi | ketzef | al | Yehudah | Virushalim | be'ashmatam
 zot
 
 24:19
-vaiyishlach | bahem | nevi'im | lahashivam
-el | Yahweh | vaiya'idu | vam
-velo | he'ezinu
+vaiyishlach | bahem | nevi'im | lahashivam | el | Yahweh
+vaiya'idu | vam | velo | he'ezinu
 
 24:20
 veruach | elohim | laveshah | et | Zekharyah | ben | Yehoyada | hakohen
@@ -137,16 +134,17 @@ lemelekh | Darmasek
 
 24:24
 ki | vemitz'ar | anashim | ba'u | cheil | Aram | Vayahweh | natan | beyadam | chayil | laro | me'od | ki | azevu
-et | Yahweh | elohei | avoteihem
-ve'et | Yo'ash | asu | shefatim
+et | Yahweh
+elohei | avoteihem
+ve'et | Yo'ash
+asu | shefatim
 
 24:25
 uvelekhtam | mimenu | ki | azevu | oto | bemachaliyim | rabim
 hitkasheru | alav | avadav | bidmei | benei | Yehoyada | hakohen
 vaiyaharguhu | al | mitato
 vaiyamot
-vaiyikberuhu | be'ir | David
-velo | kevaruhu | bekivrot | hamelakhim
+vaiyikberuhu | be'ir | David | velo | kevaruhu | bekivrot | hamelakhim
 
 24:26
 ve'eleh
@@ -158,8 +156,6 @@ hamo'avit
 
 24:27
 uvanav | yerev | hamasa | alav | visod | beit | ha'elohim
-hinam | ketuvim
-al | midrash
-sefer | hamelakhim
+hinam | ketuvim | al | midrash | sefer | hamelakhim
 vaiyimlokh | Amatzyahu | veno
 tachtav

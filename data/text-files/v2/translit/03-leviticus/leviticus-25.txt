@@ -60,20 +60,17 @@ velo | tiktzeru | et | seficheiha
 velo | tivtzeru | et | nezireiha
 
 25:12
-ki | yovel | hi
-kodesh | tihyeh | lakhem
-min | hasadeh | tokhelu | et | tevu'atah
+ki | yovel | hi | kodesh
+tihyeh | lakhem | min | hasadeh
+tokhelu | et | tevu'atah
 
 25:13
 bishnat | haiyovel | hazot | tashuvu
-ish
-el | achuzato
+ish | el | achuzato
 
 25:14
 vekhi | timkeru | mikar | la'amitekha
-o | kanoh
-miyad | amitekha
-al | tonu
+o | kanoh | miyad | amitekha | al | tonu
 ish | et | achiv
 
 25:15
@@ -146,16 +143,14 @@ veshav | la'achuzato
 
 25:28
 ve'im | lo | matze'ah | yado | dei | hashiv | lo
-vehayah | mikaro | beyad | hakoneh | oto
-ad
+vehayah | mikaro | beyad | hakoneh | oto | ad
 shenat | haiyovel
 veyatza | baiyovel
 veshav | la'achuzato
 
 25:29
 ve'ish | ki | yimkor | beit | moshav | ir | chomah
-vehaytah | ge'ulato
-ad | tom
+vehaytah | ge'ulato | ad | tom
 shenat | mikaro | yamim
 tihyeh | ge'ulato
 
@@ -197,9 +192,8 @@ ger | vetoshav | vachai
 imakh
 
 25:36
-al | tikach | me'ito | neshekh | vetarbit
-veyareta | me'eloheikha
-vechei | achikha
+al | tikach | me'ito | neshekh | vetarbit | veyareta
+me'eloheikha | vechei | achikha
 imakh
 
 25:37
@@ -246,8 +240,7 @@ umimishpachtam | asher | imakhem | asher | holidu | be'artzekhem
 vehayu | lakhem | la'achuzah
 
 25:46
-vehitnachaltem | otam | livneikhem | achareikhem | lareshet | achuzah
-le'olam
+vehitnachaltem | otam | livneikhem | achareikhem | lareshet | achuzah | le'olam
 bahem | ta'avodu | uve'acheikhem | benei | Yisra'el | ish | be'achiv
 lo | tirdeh | vo | befarekh
 
@@ -268,8 +261,7 @@ ov | mishe'er | besaro | mimishpachto | yig'alenu
 ov | hisigah | yado | venig'al
 
 25:50
-vechishav | im | konehu | mishenat | himakherov | lo
-ad
+vechishav | im | konehu | mishenat | himakherov | lo | ad
 shenat | haiyovel
 vehayah | kesef | mikaro | bemispar | shanim | kimei | sakhir
 yihyeh | imo
@@ -288,8 +280,7 @@ lo | yirdenu | beferekh | le'eineikha
 
 25:54
 ve'im | lo | yiga'el | be'eleh
-veyatza | bishnat | haiyovel | hu
-uvanav | imo
+veyatza | bishnat | haiyovel | hu | uvanav | imo
 
 25:55
 ki | li | venei | Yisra'el | avadim

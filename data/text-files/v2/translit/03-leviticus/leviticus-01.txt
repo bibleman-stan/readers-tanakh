@@ -1,6 +1,6 @@
 1:1
-vaiyikra
-el | Mosheh | vaydaber | Yahweh | elav | me'ohel | mo'ed | lemor
+vaiyikra | el | Mosheh
+vaydaber | Yahweh | elav | me'ohel | mo'ed | lemor
 
 1:2
 daber | el | benei | Yisra'el | ve'amarta | alehem
@@ -28,17 +28,16 @@ asher | petach | ohel | mo'ed
 
 1:6
 vehifshit
-et | ha'olah | venitach | otah | lintacheiha
+et | ha'olah
+venitach | otah | lintacheiha
 
 1:7
-venatenu | benei | Aharon | hakohen | esh
-al | hamizbeach
-ve'arekhu | etzim
-al | ha'esh
+venatenu | benei | Aharon | hakohen | esh | al | hamizbeach
+ve'arekhu | etzim | al | ha'esh
 
 1:8
-ve'arekhu | benei | Aharon | hakohanim | et | hanetachim
-et | harosh | ve'et | hapader | al | ha'etzim | asher | al | ha'esh | asher | al | hamizbeach
+ve'arekhu | benei | Aharon | hakohanim | et | hanetachim | et | harosh
+ve'et | hapader | al | ha'etzim | asher | al | ha'esh | asher | al | hamizbeach
 
 1:9
 vekirbo | ukhera'av | yirchatz | bamayim
@@ -53,13 +52,13 @@ yakrivenu
 1:11
 veshachat | oto | al | yerekh | hamizbeach | tzafonah
 lifnei | Yahweh
-vezareku | benei | Aharon | hakohanim | et | damo | al | hamizbeach
-saviv
+vezareku | benei | Aharon | hakohanim | et | damo | al | hamizbeach | saviv
 
 1:12
 venitach | oto | lintachav
-ve'et | rosho | ve'et | pidro | ve'arakh | hakohen | otam
-al | ha'etzim | asher | al | ha'esh | asher | al | hamizbeach
+ve'et | rosho
+ve'et | pidro
+ve'arakh | hakohen | otam | al | ha'etzim | asher | al | ha'esh | asher | al | hamizbeach
 
 1:13
 vehakerev | vehakera'ayim | yirchatz | bamayim
@@ -80,12 +79,10 @@ kir | hamizbeach
 
 1:16
 vehesir | et | mur'ato | benotzatah
-vehishlikh | otah | etzel | hamizbeach | kedemah
-el | mekom
+vehishlikh | otah | etzel | hamizbeach | kedemah | el | mekom
 hadashen
 
 1:17
 veshisa | oto | vikhnafav | lo | yavdil
-vehiktir | oto | hakohen | hamizbechah
-al | ha'etzim | asher | al | ha'esh
+vehiktir | oto | hakohen | hamizbechah | al | ha'etzim | asher | al | ha'esh
 olah | hu | isheh | reiach | nichoach | Layahweh

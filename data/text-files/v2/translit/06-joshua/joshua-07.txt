@@ -16,13 +16,13 @@ vayragelu | et | Ha'ai
 vaiyashuvu | el | Yehoshua | vaiyomeru | elav | al | ya'al | kol | ha'am
 ke'alpayim | ish | o | kishloshet | alafim | ish
 ya'alu
-veyaku | et | Ha'ai
-al | teyaga | shamah | et | kol | ha'am
+veyaku | et | Ha'ai | al | teyaga | shamah | et | kol | ha'am
 ki | me'at | hemah
 
 7:4
 vaiya'alu | min | ha'am | shamah
-kishloshet | alafim | ish | vaiyanusu | lifnei
+kishloshet | alafim | ish
+vaiyanusu | lifnei
 anshei | Ha'ai
 
 7:5
@@ -36,8 +36,7 @@ vayhi | lemayim
 vaiyikra | Yehoshua | simlotav | vaiyipol | al | panav | artzah | lifnei | aron | Yahweh | ad | ha'erev
 hu
 veziknei | Yisra'el
-vaiya'alu | afar
-al | rosham
+vaiya'alu | afar | al | rosham
 
 7:7
 vaiyomer | Yehoshua | ahah | Adonai | Yahweh | lamah | he'avarta | ha'avir | et | ha'am | hazeh | et | Haiyarden
@@ -59,8 +58,7 @@ leshimkha | hagadol
 
 7:10
 vaiyomer | Yahweh | el | Yehoshua
-kum | lakh
-lamah | zeh
+kum | lakh | lamah | zeh
 atah | nofel | al | paneikha
 
 7:11
@@ -84,8 +82,8 @@ kum | kadesh | et | ha'am
 ve'amarta
 hitkadeshu | lemachar
 ki | khoh | amar | Yahweh | elohei | Yisra'el | cherem | bekirbecha | Yisra'el
-lo | tukhal | lakum | lifnei | oyeveikha
-ad | hasirkhem | hacherem | mikirbekhem
+lo | tukhal | lakum | lifnei | oyeveikha | ad | hasirkhem | hacherem
+mikirbekhem
 
 7:14
 venikravtem | baboker | leshivteikhem
@@ -120,8 +118,7 @@ lemateh | Yehudah
 7:19
 vaiyomer | Yehoshua | el | Akhan | beni | sim | na | khavod | Layahweh | elohei | Yisra'el
 veten | lo | todah
-vehaged | na | li | meh | asita
-al | tekhached | mimeni
+vehaged | na | li | meh | asita | al | tekhached | mimeni
 
 7:20
 vaiya'an | Akhan | et | Yehoshua
@@ -161,8 +158,7 @@ emek | Akhor
 
 7:25
 vaiyomer | Yehoshua | meh | akhartanu
-ya'korkha | Yahweh
-baiyom | hazeh
+ya'korkha | Yahweh | baiyom | hazeh
 vaiyirgemu | oto | khol | Yisra'el | even
 vaiyisrefu | otam | ba'esh
 vaiyiskelu | otam | ba'avanim

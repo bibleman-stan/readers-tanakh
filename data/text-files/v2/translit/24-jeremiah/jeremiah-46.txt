@@ -1,6 +1,5 @@
 46:1
-asher | hayah | devar | Yahweh | el | Yirmeyahu | hanavi
-al | hagoyim
+asher | hayah | devar | Yahweh | el | Yirmeyahu | hanavi | al | hagoyim
 
 46:2
 Lemitzrayim | al | cheil | par'oh | Nekho | melekh | Mitzrayim
@@ -19,8 +18,8 @@ hasiryonot
 
 46:5
 madua | ra'iti | hemah | chatim | nesogim | achor
-vegiboreihem | yukatu
-umanos | nasu | velo | hifnu | magor | misaviv | ne'um | Yahweh
+vegiboreihem | yukatu | umanos | nasu
+velo | hifnu | magor | misaviv | ne'um | Yahweh
 
 46:6
 al | yanus | hakal | ve'al | yimalet
@@ -65,8 +64,7 @@ yachdav
 nafelu | sheneihem
 
 46:13
-hadavar | asher | diber | Yahweh
-el | Yirmeyahu
+hadavar | asher | diber | Yahweh | el | Yirmeyahu
 hanavi
 lavo | Nevukhadretzar | melekh | Bavel | lehakot | et | eretz | Mitzrayim
 
@@ -134,21 +132,16 @@ ki | rabu | me'arbeh | ve'ein | lahem | mispar
 46:24
 hovishah
 bat | Mitzrayim
-Nitenah
-beyad | am | tzafon
+Nitenah | beyad | am | tzafon
 
 46:25
 amar | Yahweh | tzeva'ot | elohei | Yisra'el | hini | foked | el | Amon | Mino
-ve'al | par'oh | ve'al | Mitzrayim
-ve'al | eloheiha
-ve'al | melakheiha
-ve'al | par'oh
-ve'al | habotechim | bo
+ve'al | par'oh | ve'al | Mitzrayim | ve'al | eloheiha | ve'al | melakheiha | ve'al | par'oh | ve'al | habotechim | bo
 
 46:26
 unetatim | beyad | mevakshei | nafsham
-uveyad | Nevukhadretzar | melekh | Bavel | uveyad | avadav
-ve'acharei | khen | tishkon | kimei | kedem
+uveyad | Nevukhadretzar | melekh | Bavel
+uveyad | avadav | ve'acharei | khen | tishkon | kimei | kedem
 ne'um | Yahweh
 
 46:27

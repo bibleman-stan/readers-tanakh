@@ -1,15 +1,12 @@
 14:1
-vaydaber | Yahweh
-el | Mosheh | lemor
+vaydaber | Yahweh | el | Mosheh | lemor
 
 14:2
 zot | tihyeh | torat | hametzora | beyom | tohorato
-vehuva
-el | hakohen
+vehuva | el | hakohen
 
 14:3
-veyatza | hakohen
-el | michutz | lamachaneh
+veyatza | hakohen | el | michutz | lamachaneh
 vera'ah | hakohen
 vehineh | Nirpa | nega | hatzara'at | min | hatzarua
 
@@ -24,9 +21,7 @@ ve'ezo
 14:5
 vetzivah | hakohen
 veshachat
-et | hatzipor | ha'echat
-el | keli | cheres
-al | mayim | chaiyim
+et | hatzipor | ha'echat | el | keli | cheres | al | mayim | chaiyim
 
 14:6
 et | hatzipor | hachaiyah | yikach | otah
@@ -50,8 +45,8 @@ shiv'at | yamim
 
 14:9
 vehayah | vaiyom | hashevi'i | yegalach | et | kol | se'aro | et | rosho | ve'et | zekano | ve'et | gabot | einav
-ve'et | kol | se'aro | yegaleach
-vekhibes | et | begadav | verachatz | et | besaro | bamayim
+ve'et | kol | se'aro
+yegaleach | vekhibes | et | begadav | verachatz | et | besaro | bamayim
 vetaher
 
 14:10
@@ -81,9 +76,7 @@ hu
 velakach | hakohen | midam | ha'asham
 venatan | hakohen
 al | tenukh | ozen | hamitaher
-haymanit
-ve'al | bohen | yado | haymanit
-ve'al | bohen | raglo
+haymanit | ve'al | bohen | yado | haymanit | ve'al | bohen | raglo
 haymanit
 
 14:15
@@ -100,20 +93,18 @@ lifnei | Yahweh
 
 14:17
 umiyeter | hashemen | asher | al | kapo | yiten | hakohen | al | tenukh | ozen | hamitaher | haymanit
-ve'al | bohen | yado | haymanit
-ve'al | bohen | raglo
+ve'al | bohen | yado | haymanit | ve'al | bohen | raglo
 haymanit | al
 dam | ha'asham
 
 14:18
 vehanotar | bashemen | asher | al | kaf | hakohen
-yiten
-al | rosh | hamitaher | vekhiper | alav | hakohen
+yiten | al | rosh | hamitaher | vekhiper | alav | hakohen
 lifnei | Yahweh
 
 14:19
-ve'asah | hakohen | et | hachatat | vekhiper
-al | hamitaher | mitum'ato | ve'achar
+ve'asah | hakohen | et | hachatat | vekhiper | al | hamitaher | mitum'ato
+ve'achar
 yishchat | et | ha'olah
 
 14:20
@@ -135,9 +126,7 @@ veha'echad
 olah
 
 14:23
-vehevi | otam | baiyom | hashemini | letohorato
-el | hakohen
-el | petach | ohel | mo'ed
+vehevi | otam | baiyom | hashemini | letohorato | el | hakohen | el | petach | ohel | mo'ed
 lifnei | Yahweh
 
 14:24
@@ -150,15 +139,12 @@ lifnei | Yahweh
 veshachat | et | keves | ha'asham
 velakach | hakohen | midam | ha'asham
 venatan | al | tenukh | ozen | hamitaher
-haymanit
-ve'al | bohen | yado | haymanit
-ve'al | bohen | raglo
+haymanit | ve'al | bohen | yado | haymanit | ve'al | bohen | raglo
 haymanit
 
 14:26
 umin | hashemen
-yitzok | hakohen
-al | kaf | hakohen
+yitzok | hakohen | al | kaf | hakohen
 hasemalit
 
 14:27
@@ -169,16 +155,13 @@ lifnei | Yahweh
 
 14:28
 venatan | hakohen | min | hashemen | asher | al | kapo | al | tenukh | ozen | hamitaher | haymanit
-ve'al | bohen | yado | haymanit
-ve'al | bohen | raglo
-haymanit
-al | mekom
+ve'al | bohen | yado | haymanit | ve'al | bohen | raglo
+haymanit | al | mekom
 dam | ha'asham
 
 14:29
 vehanotar | min | hashemen | asher | al | kaf | hakohen
-yiten
-al | rosh | hamitaher
+yiten | al | rosh | hamitaher
 lekhaper | alav
 lifnei | Yahweh
 
@@ -224,8 +207,7 @@ sheka'arurot | yerakrakot
 o | adamdamot | umar'eihen | shafal | min | hakir
 
 14:38
-veyatza | hakohen | min | habayit
-el | petach | habayit
+veyatza | hakohen | min | habayit | el | petach | habayit
 vehisgir | et | habayit
 shiv'at | yamim
 
@@ -238,20 +220,18 @@ vehineh | pasah | hanega | bekirot | habayit
 vetzivah | hakohen
 vechiletzu | et | ha'avanim | asher | bahen
 hanaga
-vehishlikhu | ethen | el | michutz | la'ir
-el | makom | tame
+vehishlikhu | ethen | el | michutz | la'ir | el | makom
+tame
 
 14:41
 ve'et | habayit | yaktzia | mibayit | saviv
-veshafekhu | et | he'afar | asher | hiktzu
-el | michutz | la'ir
+veshafekhu | et | he'afar | asher | hiktzu | el | michutz | la'ir
 el | makom
 tame
 
 14:42
 velakechu | avanim | acherot
-vehevi'u
-el | tachat | ha'avanim
+vehevi'u | el | tachat | ha'avanim
 ve'afar | acher | yikach
 vetach | et | habayit
 
@@ -272,20 +252,17 @@ tame | hu
 14:45
 venatatz | et | habayit | et | avanav | ve'et | etzav
 ve'et | kol | afar | habayit
-vehotzi | el | michutz | la'ir
-el | makom
-tame
+vehotzi | el | michutz | la'ir | el | makom | tame
 
 14:46
 vehaba | el | habayit
 kol | yemei
 hisgir | oto
-yitma
-ad | ha'arev
+yitma | ad | ha'arev
 
 14:47
-vehashokhev | babayit | yekhabes | et | begadav | veha'okhel | babayit
-yekhabes | et | begadav
+vehashokhev | babayit | yekhabes | et | begadav
+veha'okhel | babayit | yekhabes | et | begadav
 
 14:48
 ve'im | bo | yavo | hakohen | vera'ah | vehineh | lo | fasah | hanega | babayit
@@ -303,9 +280,7 @@ ve'ezo
 
 14:50
 veshachat
-et | hatzipor | ha'echat
-el | keli | cheres
-al | mayim | chaiyim
+et | hatzipor | ha'echat | el | keli | cheres | al | mayim | chaiyim
 
 14:51
 velakach | et | etz | ha'erez | ve'et | ha'ezo | ve'et | sheni | hatola'at | ve'et | hatzipor | hachaiyah
@@ -318,8 +293,8 @@ vechite | et | habayit | bedam | hatzipor | uvamayim | hachaiyim
 uvatztzipor | hachaiyah | uve'etz | ha'erez | uva'ezo | uvishni | hatola'at
 
 14:53
-veshilach | et | hatzipor | hachaiyah | el | michutz | la'ir
-el | penei | hasadeh | vekhiper | al | habayit
+veshilach | et | hatzipor | hachaiyah | el | michutz | la'ir | el | penei | hasadeh
+vekhiper | al | habayit
 vetaher
 
 14:54

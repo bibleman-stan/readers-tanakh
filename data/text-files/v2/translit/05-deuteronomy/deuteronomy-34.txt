@@ -1,19 +1,16 @@
 34:1
 vaiya'al | Mosheh | Me'arvot | Mo'av | el | har | Nevo
 rosh | Hapisgah | asher | al | penei | Yerecho
-vaiyar'ehu | Yahweh | et | kol | ha'aretz | et | Hagil'ad
-ad | Dan
+vaiyar'ehu | Yahweh | et | kol | ha'aretz | et | Hagil'ad | ad | Dan
 
 34:2
 ve'et | kol | Naftali
 ve'et | eretz | Efrayim | Umenasheh
-ve'et | kol | eretz | Yehudah
-ad
+ve'et | kol | eretz | Yehudah | ad
 haiyam | ha'acharon
 
 34:3
-ve'et | Hanegev | ve'et | hakikar | bik'at | Yerecho | ir | hatemarim
-ad | Tzo'ar
+ve'et | Hanegev | ve'et | hakikar | bik'at | Yerecho | ir | hatemarim | ad | Tzo'ar
 
 34:4
 vaiyomer | Yahweh | elav | zot | ha'aretz | asher | Nishba'ti | Le'avraham | Leyitzchak | Uleya'ako | lemor
@@ -28,13 +25,13 @@ al | pi | Yahweh
 
 34:6
 vaiyikbor | oto | vagay | be'eretz | Mo'av | mul
-Beit | Pe'or | velo | yada | ish | et | kevurato
-ad
+Beit | Pe'or
+velo | yada | ish | et | kevurato | ad
 haiyom | hazeh
 
 34:7
-Umosheh | ben | me'ah | ve'esrim | shanah | bemoto
-lo | khahatah | eino | velo | nas | lechoh
+Umosheh | ben | me'ah | ve'esrim | shanah | bemoto | lo | khahatah | eino
+velo | nas | lechoh
 
 34:8
 vaiyivku | venei | Yisra'el | et | Mosheh | Be'arvot | Mo'av
@@ -51,12 +48,13 @@ ka'asher | tzivah | Yahweh | et | Mosheh
 
 34:10
 velo | kam | navi | od | Beyisra'el | Kemosheh | asher | yeda'o | Yahweh
-panim
-el | panim
+panim | el | panim
 
 34:11
 lekhol | ha'otot | vehamoftim | asher | shelacho | Yahweh | la'asot
-be'eretz | Mitzrayim | lefar'oh | ulekhol | avadav | ulekhol | artzo
+be'eretz | Mitzrayim
+lefar'oh | ulekhol | avadav
+ulekhol | artzo
 
 34:12
 ulekhol | haiyad | hachazakah | ulekhol

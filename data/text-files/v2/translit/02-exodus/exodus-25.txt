@@ -1,6 +1,5 @@
 25:1
-vaydaber | Yahweh
-el | Mosheh | lemor
+vaydaber | Yahweh | el | Mosheh | lemor
 
 25:2
 daber | el | benei | Yisra'el
@@ -55,8 +54,7 @@ veyatzakta | lo | arba | tabe'ot | zahav
 venatatah | al
 arba | pa'amotav
 ushetei | taba'ot | al | tzal'o | ha'echat
-ushetei | taba'ot
-al | tzal'o
+ushetei | taba'ot | al | tzal'o
 hashenit
 
 25:13
@@ -75,9 +73,7 @@ habadim
 lo | yasuru | mimenu
 
 25:16
-venatata
-el | ha'aron
-et | ha'edut | asher | eten
+venatata | el | ha'aron | et | ha'edut | asher | eten
 eleikha
 
 25:17
@@ -94,15 +90,15 @@ mikshah | ta'aseh | otam | mishenei
 ketzot | hakaporet
 
 25:19
-va'aseh | keruv | echad | mikatzah | mizeh | ukheruv | echad | mikatzah | mizeh
+va'aseh | keruv | echad | mikatzah | mizeh
+ukheruv | echad | mikatzah | mizeh
 min | hakaporet | ta'asu | et | hakeruvim
 al | shenei | ketzotav
 
 25:20
 vehayu | hakeruvim | poresei | khenafayim | lema'lah | sokhekhim | bekhanfeihem | al | hakaporet
 ufeneihem
-ish | el | achiv
-el | hakaporet
+ish | el | achiv | el | hakaporet
 yihyu
 penei | hakeruvim
 
@@ -183,8 +179,7 @@ uferacheiha
 
 25:35
 vekhaftor | tachat | shenei | hakanim | mimenah | vekhaftor | tachat | shenei | hakanim | mimenah
-vekhaftor
-tachat | shenei | hakanim | mimenah | lesheshet | hakanim
+vekhaftor | tachat | shenei | hakanim | mimenah | lesheshet | hakanim
 haiyotze'im | min | hamenorah
 
 25:36
@@ -194,8 +189,7 @@ kulah | mikshah | achat | zahav | tahor
 25:37
 ve'asita | et | neroteiha
 shiv'ah | vehe'elah | et | neroteiha
-vehe'ir
-al | ever | paneiha
+vehe'ir | al | ever | paneiha
 
 25:38
 umalkacheiha | umachtoteiha

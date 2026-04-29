@@ -1,8 +1,8 @@
 3:1
-vaiyachel | Shelomoh | livnot | et | beit | Yahweh | Birushalim
-behar | Hamoriyah | asher | Nir'ah
-Ledavid | avihu | asher | hekhin | bimkom | David
-begoren | Arenan | hayvusi
+vaiyachel | Shelomoh | livnot | et | beit | Yahweh | Birushalim | behar | Hamoriyah
+asher | Nir'ah
+Ledavid | avihu | asher | hekhin | bimkom | David | begoren
+Arenan | hayvusi
 
 3:2
 vaiyachel | livnot | bachodesh | hasheni | basheni
@@ -32,8 +32,7 @@ zehav | Parvayim
 3:7
 vaychaf | et | habayit | hakorot | hasipim | vekirotav | vedaltotav
 zahav
-ufitach | keruvim
-al | hakirot
+ufitach | keruvim | al | hakirot
 
 3:8
 vaiya'as | et | beit | kodesh | hakodashim
@@ -84,8 +83,8 @@ amot | chamesh
 
 3:16
 vaiya'as | sharsherot | badevir
-vaiyiten
-al | rosh | ha'amudim | vaiya'as | rimonim | me'ah
+vaiyiten | al | rosh | ha'amudim
+vaiya'as | rimonim | me'ah
 vaiyiten | basharsherot
 
 3:17

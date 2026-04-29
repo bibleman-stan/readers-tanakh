@@ -117,17 +117,24 @@ QATAL_COMMON = {
     # cognition
     "ידע", "ראה", "שמע", "זכר", "חשב", "הבין",
     # motion
-    "הלך", "בא", "באה", "יצא", "שב", "קם", "ירד", "עלה", "פנה", "סר",
+    "הלך", "בא", "באה", "יצא", "שב", "קם", "ירד", "עלה", "פנה", "סר", "נע", "נד",
     # perception
     "פתח", "סגר", "מצא",
     # action
     "נתן", "לקח", "שלח", "השליך", "הביא", "הוציא", "כתב", "כרת", "ספר",
     # state
-    "ישב", "עמד", "שכב", "נח", "מת", "חי",
+    "ישב", "עמד", "שכב", "נח", "מת", "חי", "ילד", "נפל",
+    # emotion / inner state
+    "חרה", "אהב", "שנא", "שמח", "פחד", "ירא",
     # transactional
     "מכר", "קנה", "בנה", "הרס",
     # blessing/cursing
     "ברך", "ארר", "הקדיש", "טמא",
+    # genealogy / proliferation
+    "פרה", "רבה", "מלא", "גדל",
+    # narrative-frequent action verbs
+    "הרג", "גרש", "חטא", "סלח", "חזק", "שלם", "כבד", "תם", "נשא", "ענש",
+    "שאה", "שעה", "השע", "שאל",
 }
 
 
@@ -157,16 +164,41 @@ def is_finite_verb_skel(skeleton: str) -> bool:
     # This detects תהיו (2mp yiqtol), ישטמנו (3ms + suffix), etc.
     YIQTOL_KNOWN_NOUNS = {
         # י-initial nouns
-        "יד", "ים", "יום", "ין", "יין", "יין", "יער", "יען",
+        "יד", "ים", "יום", "ין", "יין", "יער", "יען", "ימים",
         "ירא", "ירה",  # fear/shoot (can be noun in some forms)
-        # א-initial common nouns (not verbs)
+        # ── α-prefix nouns (lexical exclusion per canon §1 hybrid policy:
+        #    use lexical list rather than niqqud-aware vowel patterns)
+        # chataf-aleph noun stems
+        "אדמה", "אדמת", "אדמתו", "אדמתי", "אדמתך", "אדמתם",
+        "אמונה", "אמונת", "אמונתי",
+        "אנוש", "אנושי",
+        "אלהים", "אלהי", "אלהיו", "אלהיך", "אלהינו", "אלהיכם", "אלהיהם",
+        "אלוה",
+        "אדון", "אדונים", "אדונו", "אדוני", "אדונך",
+        "אדנים", "אדנו", "אדנך",  # construct/short variants of אֲדָנִים (bases)
         "אדני", "אדנינו", "אדניך", "אדניכם", "אדניהם",
-        "אחי", "אחיו", "אחיך", "אחינו", "אחיכם",
+        # hireq-aleph noun stems (אִ-prefix)
+        "אישה", "אשה", "אשת", "אשתו", "אשתי", "אשתך", "אשתם", "אשתן", "אשתכם", "אשתהם",
+        "אישון",
+        "איתן", "איתנים",
+        "אילם", "אילים",
+        # tsere-aleph noun stems (אֵ-prefix)
+        "אמת", "אמתי", "אמתך",
+        "אילת", "אילי",
+        # other 4+ char α-prefix nouns
+        "אחד", "אחת", "אחור", "אחרי", "אחרית",
+        "אחי", "אחיו", "אחיך", "אחינו", "אחיכם", "אחים",
         "אנחנו", "אנכי", "אני",
-        "ארצי", "ארצנו", "ארצו", "ארצם",
+        "ארצי", "ארצנו", "ארצו", "ארצם", "ארצך", "ארצכם", "ארצהם",
+        "ארץ", "ארצות",
+        "אילון", "אילי",
+        "אכזב", "אכזרי",
+        "אסיר", "אסירי",
         # ת-initial nouns
-        "תורה", "תפלה", "תבל", "תנין",
+        "תורה", "תפלה", "תבל", "תנין", "תפארת", "תקוה", "תרומה",
         "תורת", "תורתו", "תורתך",
+        "תהלה", "תהלות", "תפלת", "תפלתי", "תפלתך",
+        "תכלת", "תולדות", "תולדת", "תולדתם",
     }
     if len(skeleton) >= 3 and skeleton[0] in YIQTOL_PREFIXES:
         # Exclude only the 2-char existential יש (skeleton = "יש")
@@ -200,24 +232,13 @@ def _first_vowel_is_holam(token: str) -> bool:
     return False
 
 
-def _first_vowel_is_chataf(token: str) -> bool:
-    """True if the first niqqud after the first Hebrew consonant is a chataf vowel.
-
-    Chataf-vowels (chataf-segol U+05B1, chataf-patach U+05B2, chataf-qamatz U+05B3)
-    signal noun stems with guttural-onset sheva-equivalents — אֲדָמָה (ground),
-    אֱמוּנָה (faith), חֳלִי (sickness), etc. Verbs in the same skeleton-prefix
-    range take full vowels (segol/patach), not chataf.
-    """
-    found_first_consonant = False
-    for ch in token:
-        cp = ord(ch)
-        if 0x05D0 <= cp <= 0x05EA:
-            if found_first_consonant:
-                return False
-            found_first_consonant = True
-        elif found_first_consonant and 0x05B0 <= cp <= 0x05BD:
-            return cp in (0x05B1, 0x05B2, 0x05B3)
-    return False
+## Note: niqqud-policy per canon §1 (2026-04-29). Hybrid approach:
+##   - Niqqud-AWARE checks are reserved for morpho-lexical patterns that cannot be
+##     enumerated lexically (qal active participle CōCēC — every active verb has one,
+##     too many to list). The _first_vowel_is_holam check is the only one of these.
+##   - All other α-/ת-/נ-prefix-noun-vs-verb disambiguations use lexical exclusion
+##     via YIQTOL_KNOWN_NOUNS (consonant-skeleton-anchored). Niqqud is NOT a
+##     break-licensing criterion at any layer.
 
 
 def is_finite_verb_token(token: str) -> bool:
@@ -235,10 +256,10 @@ def is_finite_verb_token(token: str) -> bool:
     """
     if MAQQEF in token:
         first_sub = token.split(MAQQEF, 1)[0]
-        if _first_vowel_is_holam(first_sub) or _first_vowel_is_chataf(first_sub):
+        if _first_vowel_is_holam(first_sub):
             return False
         return is_finite_verb_skel(skel(first_sub))
-    if _first_vowel_is_holam(token) or _first_vowel_is_chataf(token):
+    if _first_vowel_is_holam(token):
         return False
     return is_finite_verb_skel(skel(token))
 
@@ -251,9 +272,10 @@ def has_finite_verb(line: str) -> bool:
 # ─── prep / participle detection ────────────────────────────────────
 
 PREP_SKELETONS = {
-    "על", "אל", "מן", "לפני", "אחרי", "תחת", "בין", "בתוך",
+    "על", "אל", "מן", "לפני", "אחרי", "תחת", "בין", "בתוך", "תוך",
     "מעל", "מתחת", "עלפני", "מלפני", "מפני", "מאת", "בעד", "נגד",
-    "אצל", "מאחרי", "בקרב", "בעבר", "מנגד", "סביב", "מסביב",
+    "אצל", "מאחרי", "בקרב", "בעבר", "מנגד", "סביב", "מסביב", "סביבות",
+    "עם", "עד", "כמו", "מתוך", "מבין",
 }
 
 BOUND_PREP_PREFIXES = ("ב", "ל", "כ", "מ")
@@ -296,6 +318,17 @@ def is_do_marker_token(token: str) -> bool:
         s = skel(first_sub)
     else:
         s = skel(token)
+    return s == "את" or s == "ואת"
+
+
+def is_bare_do_marker_token(token: str) -> bool:
+    """True only if the token is the BARE DO marker אֵת/וְאֵת — no maqqef-joined
+    complement. Used by stranded-DO-marker rules where the marker is on its
+    own line awaiting forward-merge with its noun.
+    """
+    if MAQQEF in token:
+        return False
+    s = skel(token)
     return s == "את" or s == "ואת"
 
 

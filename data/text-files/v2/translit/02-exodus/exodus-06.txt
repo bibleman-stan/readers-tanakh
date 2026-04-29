@@ -5,13 +5,12 @@ ki | veyad | chazakah | yeshalechem
 uveyad | chazakah | yegareshem | me'artzo
 
 6:2
-vaydaber | elohim
-el | Mosheh | vaiyomer | elav
+vaydaber | elohim | el | Mosheh
+vaiyomer | elav
 ani | Yahweh
 
 6:3
-va'era | el | Avraham | el | Yitzchak | ve'el | Ya'ako
-be'el | Shadai
+va'era | el | Avraham | el | Yitzchak | ve'el | Ya'ako | be'el | Shadai
 ushemi | Yahweh
 lo | Noda'ti | lahem
 
@@ -46,17 +45,15 @@ ani | Yahweh
 
 6:9
 vaydaber | Mosheh | ken
-el | benei | Yisra'el
-velo | shame'u | el | Mosheh | mikotzer | ruach | ume'avodah
+el | benei | Yisra'el | velo | shame'u | el | Mosheh
+mikotzer | ruach | ume'avodah
 kashah
 
 6:10
-vaydaber | Yahweh
-el | Mosheh | lemor
+vaydaber | Yahweh | el | Mosheh | lemor
 
 6:11
-bo | daber
-el | par'oh | melekh | Mitzrayim
+bo | daber | el | par'oh | melekh | Mitzrayim
 vishalach | et | benei | Yisra'el | me'artzo
 
 6:12
@@ -70,8 +67,7 @@ aral | sefatayim
 6:13
 vaydaber | Yahweh | el | Mosheh | ve'el | Aharon
 vaytzavem | el | benei | Yisra'el
-ve'el | par'oh | melekh | Mitzrayim
-lehotzi | et | benei | Yisra'el | me'eretz | Mitzrayim
+ve'el | par'oh | melekh | Mitzrayim | lehotzi | et | benei | Yisra'el | me'eretz | Mitzrayim
 
 6:14
 eleh
@@ -111,7 +107,8 @@ eleh | mishpechot | halevi | letoledotam
 6:20
 vaiyikach | Amram | et | Yokheved | dodato | lo | le'ishah
 vateled | lo | et | Aharon
-ve'et | Mosheh | ushenei | chaiyei | Amram
+ve'et | Mosheh
+ushenei | chaiyei | Amram
 sheva | usheloshim | ume'at
 shanah
 
@@ -142,8 +139,7 @@ eleh | rashei | avot | halviyim | lemishpechotam
 
 6:26
 hu | Aharon | Umosheh | asher | amar | Yahweh | lahem
-hotzi'u | et | benei | Yisra'el | me'eretz | Mitzrayim
-al | tziv'otam
+hotzi'u | et | benei | Yisra'el | me'eretz | Mitzrayim | al | tziv'otam
 
 6:27
 hem | hamdaberim | el | par'oh | melekh | Mitzrayim | lehotzi | et | benei | Yisra'el
@@ -151,8 +147,7 @@ Mimitzrayim | hu | Mosheh
 Ve'aharon
 
 6:28
-vayhi | beyom | diber | Yahweh | el | Mosheh
-be'eretz | Mitzrayim
+vayhi | beyom | diber | Yahweh | el | Mosheh | be'eretz | Mitzrayim
 
 6:29
 vaydaber | Yahweh | el | Mosheh | lemor

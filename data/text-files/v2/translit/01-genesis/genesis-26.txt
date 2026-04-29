@@ -6,8 +6,8 @@ Gerarah
 
 26:2
 vaiyera | elav | Yahweh
-vaiyomer
-al | tered | Mitzrayemah | shekhon | ba'aretz | asher | omar | eleikha
+vaiyomer | al | tered | Mitzrayemah
+shekhon | ba'aretz | asher | omar | eleikha
 
 26:3
 gur | ba'aretz | hazot | ve'ehyeh | imekha
@@ -50,7 +50,8 @@ Rivkah | ishto
 26:9
 vaiyikra | Avimelekh | Leyitzchak | vaiyomer | akh | hineh | ishtekha | hi
 ve'eikh | amarta
-achoti | hi | vaiyomer | elav | Yitzchak
+achoti | hi
+vaiyomer | elav | Yitzchak
 ki | amarti
 pen | amut
 aleiha
@@ -69,19 +70,17 @@ mot | yumat
 
 26:12
 vaiyizra | Yitzchak | ba'aretz | hahiv
-vaiyimtza | bashanah | hahiv
-me'ah | she'arim | vayvarakhehu
+vaiyimtza | bashanah | hahiv | me'ah | she'arim
+vayvarakhehu
 Yahweh
 
 26:13
 vaiyigdal
-ha'ish | vaiyelekh | halokh | vegadel
-ad | ki | gadal | me'od
+ha'ish | vaiyelekh | halokh | vegadel | ad | ki | gadal | me'od
 
 26:14
 vayhi | lo | mikneh | tzon | umikneh | vakar
-va'avudah
-rabah
+va'avudah | rabah
 vaykan'u | oto
 pelishtim
 
@@ -92,8 +91,7 @@ sitemum | pelishtim | vaymal'um
 afar
 
 26:16
-vaiyomer | Avimelekh
-el | Yitzchak | lekh | me'imanu | ki | atzamta | mimenu | me'od
+vaiyomer | Avimelekh | el | Yitzchak | lekh | me'imanu | ki | atzamta | mimenu | me'od
 
 26:17
 vaiyelekh | misham
@@ -103,15 +101,13 @@ vaiyeshev | sham
 
 26:18
 vaiyashov | Yitzchak | vaiyachpor | et | be'erot | hamayim | asher | chaferu | bimei | Avraham | aviv
-vaysatemum | pelishtim
-acharei | mot | Avraham
+vaysatemum | pelishtim | acharei | mot | Avraham
 vaiyikra | lahen | shemot | kashemot
 asher | kara | lahen | aviv
 
 26:19
 vaiyachperu | avdei | Yitzchak | banachal
-vaiyimtze'u | sham | be'er
-mayim | chaiyim
+vaiyimtze'u | sham | be'er | mayim | chaiyim
 
 26:20
 vaiyarivu | ro'ei | Gerar | im | ro'ei | Yitzchak | lemor
@@ -126,21 +122,20 @@ gam | aleiha | vaiyikra | shemah
 Sitnah
 
 26:22
-vaiya'tek | misham | vaiyachpor | be'er | acheret
-velo | ravu
-aleiha
-vaiyikra | shemah | Rechovot
+vaiya'tek | misham | vaiyachpor | be'er | acheret | velo | ravu
+aleiha | vaiyikra | shemah | Rechovot
 vaiyomer | ki | atah | hirchiv | Yahweh | lanu
 ufarinu | va'aretz
 
 26:23
-vaiya'al | misham
-Be'er | Shava
+vaiya'al | misham | Be'er | Shava
 
 26:24
 vaiyera | elav | Yahweh | balaylah | hahu
 vaiyomer
-anokhi | elohei | Avraham | avikha
+anokhi
+elohei
+Avraham | avikha
 al | tira | ki | itekha | anokhi | uverakhtikha | vehirbeiti | et | zar'akha
 ba'avur | Avraham | avdi
 
@@ -158,14 +153,14 @@ Ufikhol
 sar | tzeva'o
 
 26:27
-vaiyomer | alehem | Yitzchak | madua
-batem | elai | ve'atem | senetem | oti
+vaiyomer | alehem | Yitzchak | madua | batem | elai
+ve'atem | senetem | oti
 vateshalechuni | me'itekhem
 
 26:28
 vaiyomeru | ra'o | ra'inu | ki | hayah | Yahweh | imokh
-vanomer | tehi | na | alah | beinoteinu
-beineinu | uveinekha | venikhretah | verit
+vanomer | tehi | na | alah | beinoteinu | beineinu | uveinekha
+venikhretah | verit
 imakh
 
 26:29
@@ -186,8 +181,7 @@ vaiyelekhu | me'ito | beshalom
 
 26:32
 vayhi | baiyom | hahu | vaiyavo'u | avdei | Yitzchak
-vaiyagidu | lo
-al | odot | habe'er | asher | chafaru
+vaiyagidu | lo | al | odot | habe'er | asher | chafaru
 vaiyomeru | lo | matzanu | mayim
 
 26:33
@@ -200,7 +194,8 @@ vayhi | Esav | ben | arba'im | shanah
 vaiyikach | ishah | et | Yehudit
 bat | Be'eri
 hachiti
-ve'et | Basemat | bat | Eilon
+ve'et | Basemat
+bat | Eilon
 hachiti
 
 26:35

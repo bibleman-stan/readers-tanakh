@@ -1,6 +1,6 @@
 49:1
-vaiyikra | Ya'ako
-el | banav | vaiyomer | he'asefu | ve'agidah | lakhem | et | asher | yikra | etkhem
+vaiyikra | Ya'ako | el | banav
+vaiyomer | he'asefu | ve'agidah | lakhem | et | asher | yikra | etkhem
 be'acharit | haiyamim
 
 49:2
@@ -21,12 +21,12 @@ mishkevei | avikha
 az | chilalta | yetzu'i | alah
 
 49:5
-Shim'on | Velevi | achim
+Shim'on | Velevi
+achim
 kelei | chamas | mekheroteihem
 
 49:6
-besodam | al | tavo | nafshi | bikhalam
-al | techad | kevodi
+besodam | al | tavo | nafshi | bikhalam | al | techad | kevodi
 ki | ve'apam | haregu | ish | uvirtzonam
 ikeru | shor
 
@@ -48,13 +48,14 @@ beni | alita | kara | ravatz | ke'aryeh | ukhelavi
 mi | yekimenu
 
 49:10
-lo | yasur | shevet | Mihudah | umechokek | mibein | raglav
-ad | ki | yavo | Shiloh | velo
+lo | yasur | shevet | Mihudah | umechokek
+mibein | raglav | ad | ki | yavo | Shiloh | velo
 yikehat | amim
 
 49:11
 oseri | lagefen | iro | velasorekah
-beni | atono | kibes | baiyayin | levusho | uvedam | anavim
+beni | atono | kibes | baiyayin | levusho
+uvedam | anavim
 suto
 
 49:12
@@ -64,8 +65,8 @@ chakhlili | einayim | miyayin | uleven | shinayim | mechalav
 Zevulun
 lechof | yamim
 yishkon
-vehu | lechof | oniyot | veyarkhato
-al | Tzidon
+vehu | lechof | oniyot
+veyarkhato | al | Tzidon
 
 49:14
 Yisoshkhar
@@ -73,7 +74,8 @@ chamor | garem | rovetz | bein | hamishpetayim
 
 49:15
 vaiyar | menuchah | ki | tov
-ve'et | ha'aretz | ki | na'emah
+ve'et | ha'aretz
+ki | na'emah
 vaiyet | shikhmo | lisbol
 vayhi | lemas | oved
 
@@ -116,25 +118,24 @@ alei | shur
 
 49:23
 vaymararuhu
-varobu | vaiyistemuhu
-ba'alei | chitzim
+varobu | vaiyistemuhu | ba'alei | chitzim
 
 49:24
 vateshev | be'eitan | kashto
 vaiyafozu
 zero'ei | yadav
-midei | avir | Ya'ako
-misham | ro'eh | even | Yisra'el
+midei | avir | Ya'ako | misham | ro'eh
+even | Yisra'el
 
 49:25
 me'el | avikha | veya'zereka | ve'et | Shadai | vivarekheka
 birkhot | shamayim | me'al
-birkhot | tehom | rovetzet | tachat | birkhot | shadayim
+birkhot | tehom | rovetzet | tachat
+birkhot | shadayim
 varacham
 
 49:26
-birkhot | avikha | gaveru | al | birkhot | horai
-ad | ta'avat
+birkhot | avikha | gaveru | al | birkhot | horai | ad | ta'avat
 giv'ot | olam
 tihyein | lerosh | Yosef | ulekadekod
 nezir | echav
@@ -151,9 +152,7 @@ ish | asher | kevirkhato | berakh | otam
 
 49:29
 vaytzav | otam | vaiyomer | alehem | ani | ne'esaf | el | ami
-kivru | oti
-el | avotai
-el | hame'arah | asher | bisdeh
+kivru | oti | el | avotai | el | hame'arah | asher | bisdeh
 Efron | hachiti
 
 49:30
@@ -174,6 +173,6 @@ mikneh | hasadeh | vehame'arah | asher | bo | me'et | benei | Chet
 
 49:33
 vaykhal | Ya'ako | letzavot | et | banav
-vaiye'esof | raglav
-el | hamitah | vaiyigva
+vaiye'esof | raglav | el | hamitah
+vaiyigva
 vaiye'asef | el | amav

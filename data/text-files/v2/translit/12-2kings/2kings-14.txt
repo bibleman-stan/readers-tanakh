@@ -26,22 +26,20 @@ hamakim
 et | hamelekh | aviv
 
 14:6
-ve'et | benei | hamakim
-lo | hemit
+ve'et | benei | hamakim | lo | hemit
 kakatuv | besefer | torat | Mosheh | asher | tzivah | Yahweh | lemor | lo | yumetu | avot | al | banim | uvanim | lo | yumetu | al | avot
 ki | im | ish | bechet'o | yamut
 
 14:7
 hu | hikah | et | Edom | begei | melach | aseret | alafim
 vetafas | et | Hasela | bamilchamah
-vaiyikra | et | shemah | Yakete'el
-ad
+vaiyikra | et | shemah | Yakete'el | ad
 haiyom | hazeh
 
 14:8
 az | shalach | Amatzyah | mal'akhim
-el | Yeho'ash | ben | Yeho'achaz | ben | Yehu | melekh | Yisra'el | lemor
-lekhah | nitra'eh | fanim
+el | Yeho'ash | ben | Yeho'achaz | ben | Yehu | melekh | Yisra'el | lemor | lekhah
+nitra'eh | fanim
 
 14:9
 vaiyishlach | Yeho'ash | melekh | Yisra'el | el | Amatzyahu | melekh | Yehudah | lemor
@@ -60,8 +58,7 @@ atah | Vihudah | imakh
 14:11
 velo | shama | Amatzyahu
 vaiya'al | Yeho'ash | melekh | Yisra'el | vaiyitra'u | fanim
-hu | Va'amatzyahu | melekh | Yehudah
-Beveit | Shemesh | asher | Lihudah
+hu | Va'amatzyahu | melekh | Yehudah | Beveit | Shemesh | asher | Lihudah
 
 14:12
 vaiyinagef | Yehudah
@@ -83,22 +80,20 @@ Shomeronah
 
 14:15
 veyeter | divrei | Yeho'ash | asher | asah | ugevurato
-va'asher | Nilcham
-im | Amatzyahu | melekh | Yehudah
+va'asher | Nilcham | im
+Amatzyahu | melekh | Yehudah
 halo | hem | ketuvim | al | sefer | divrei | haiyamim
 lemalkhei | Yisra'el
 
 14:16
 vaiyishkav | Yeho'ash | im | avotav
-vaiyikaver | Beshomeron
-im
+vaiyikaver | Beshomeron | im
 malkhei | Yisra'el
 vaiyimlokh | Yarave'am | beno
 tachtav
 
 14:17
-vaychi | Amatzyahu | ven | Yo'ash | melekh | Yehudah
-acharei | mot
+vaychi | Amatzyahu | ven | Yo'ash | melekh | Yehudah | acharei | mot
 Yeho'ash | ben | Yeho'achaz
 melekh | Yisra'el
 chamesh | esreh | shanah
@@ -117,9 +112,8 @@ vaymituhu
 sham
 
 14:20
-vaiyis'u | oto
-al | hasusim | vaiyikaver | Birushalim | im | avotav
-be'ir | David
+vaiyis'u | oto | al | hasusim
+vaiyikaver | Birushalim | im | avotav | be'ir | David
 
 14:21
 vaiyikchu | kol | am | Yehudah | et | Azaryah
@@ -131,8 +125,7 @@ aviv | Amatzyahu
 14:22
 hu | banah | et | Eilat
 vayshiveha | Lihudah
-acharei | shekhav | hamelekh
-im | avotav
+acharei | shekhav | hamelekh | im | avotav
 
 14:23
 bishnat | chamesh | esreh | shanah | La'amatzyahu | ven | Yo'ash
@@ -158,8 +151,9 @@ ki | ra'ah | Yahweh | et | oni | Yisra'el | moreh | me'od | ve'efes | atzur | ve
 ve'ein | ozer | Leyisra'el
 
 14:27
-velo | diber | Yahweh | limchot | et | shem | Yisra'el | mitachat | hashamayim
-vaiyooshi'em | beyad
+velo | diber | Yahweh
+limchot | et | shem | Yisra'el | mitachat
+hashamayim | vaiyooshi'em | beyad
 Yarave'am | ben | Yo'ash
 
 14:28
@@ -169,8 +163,7 @@ halo | hem | ketuvim | al | sefer | divrei | haiyamim
 lemalkhei | Yisra'el
 
 14:29
-vaiyishkav | Yarave'am | im | avotav
-im
+vaiyishkav | Yarave'am | im | avotav | im
 malkhei | Yisra'el
 vaiyimlokh | Zekharyah | veno
 tachtav

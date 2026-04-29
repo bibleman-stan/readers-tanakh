@@ -98,8 +98,7 @@ ish | benachalato
 11:21
 vehanetinim
 yoshevim | Ba'ofel
-Vetzicha | Vegishpa
-al | hanetinim
+Vetzicha | Vegishpa | al | hanetinim
 
 11:22
 ufekid | halviyim | Birushalim
@@ -140,11 +139,11 @@ Uve'ein | Rimon | Uvetzare'ah | Uveyarmut
 Zanoach | Adulam | vechatzreihem
 Lakhish | usedoteiha
 Azekah | uvenoteiha
-vaiyachanu | Mibe'er | Sheva
-ad | gei | Hinom
+vaiyachanu | Mibe'er | Sheva | ad | gei | Hinom
 
 11:31
-uvenei | Vinyamin | Migava | Mikhmas | Ve'aiyah | Uveit | El | uvenoteiha
+uvenei | Vinyamin | Migava | Mikhmas | Ve'aiyah
+Uveit | El | uvenoteiha
 
 11:32
 Anatot | No

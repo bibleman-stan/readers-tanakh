@@ -17,9 +17,8 @@ umalka | la | leheve | nazik
 6:4
 edayin | Daniyel | denah
 hava | mitnatzach | al | sarekhaiya | va'achashdarpenaiya
-kol | kovel | di | ruach | yatira | beh
-umalka | ashit | lahakamuteh
-al | kol | malkhuta
+kol | kovel | di | ruach | yatira | beh | umalka | ashit
+lahakamuteh | al | kol | malkhuta
 
 6:5
 edayin | sarekhaiya | va'achashdarpenaiya | havo | va'ayin | ilah | lehashkachah | Ledaniyel
@@ -32,12 +31,12 @@ alohi
 edayin | guvraiya | ilekh | amerin
 di | la | nehashkach | Ledaniyel | denah
 kol | ila | lahen
-hashkachnah | alohi | bedat | elaheh
+hashkachnah | alohi
+bedat | elaheh
 
 6:7
 edayin | sarekhaiya | va'achashdarpenaiya | ilen
-hargishu
-al | malka
+hargishu | al | malka
 vekhen | amerin | leh
 Dareyavesh | malka | le'almin | cheyi
 
@@ -89,14 +88,12 @@ vezimnin | telatah | beyoma | ba'e | ba'uteh
 
 6:15
 edayin | malka | kedi | mileta | shema | sagi | be'esh | alohi
-ve'al | Daniyel | sam | bal | lesheizavuteh
-ve'ad | me'alei | shimsha
+ve'al | Daniyel | sam | bal | lesheizavuteh | ve'ad | me'alei | shimsha
 hava | mishtadar | lehatzaluteh
 
 6:16
 bedayin | guvraiya | ilekh
-hargishu
-al | malka
+hargishu | al | malka
 ve'amerin | lemalka | da | malka | di | dat | Lemadai | Ufaras
 di | khol | esar | ukeyam | di | malka | yehakeim | la | lehashnayah
 
@@ -110,8 +107,7 @@ hu | yesheizevinakh
 
 6:18
 veheitayit | even | chadah
-vesumat
-al | pum | guba
+vesumat | al | pum | guba
 vechatmah | malka | be'izketeh | uve'izkat | ravrevanohi
 di | la | tishne | tzevu | Bedaniyel
 
@@ -134,8 +130,7 @@ elahakh | di | antah | palach | leh | bitdira
 haykhil | lesheizavutakh | min | aryavata
 
 6:22
-edayin | Daniyel
-im | malka | malil | malka | le'almin | cheyi
+edayin | Daniyel | im | malka | malil | malka | le'almin | cheyi
 
 6:23
 elahi | shelach | mal'akheh | usagar | pum | aryavata
@@ -170,12 +165,10 @@ di | bekhol | shaltan | malkhuti | lehevon | za'a'in | vedachalin | min | kodam
 elaheh | di | Daniyel
 di | hu | elaha | chaiya | vekaiyam | le'alemin
 umalkhuteh | di | la | titchabal
-veshaltaneh
-ad | sofa
+veshaltaneh | ad | sofa
 
 6:28
-mesheiziv | umatzil | ve'aved | atin | vetimhin | bishmaiya
-uve'ar'a
+mesheiziv | umatzil | ve'aved | atin | vetimhin | bishmaiya | uve'ar'a
 di | sheiziv | Ledaniyel | min | yad | aryavata
 
 6:29

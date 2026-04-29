@@ -1,6 +1,5 @@
 3:1
-ve'eleh | hayu | benei | Doyid | asher | Nolad | lo
-Bechevron
+ve'eleh | hayu | benei | Doyid | asher | Nolad | lo | Bechevron
 habekhor | Amnon | La'achino'am | haiyizre'elit
 sheni | Daniyel | La'avigayil
 hakarmelit
@@ -99,8 +98,8 @@ chamesh
 3:21
 uven | Chananyah
 Pelatyah | Visha'yah
-benei | Refayah | benei | Arnan
-benei | Oadyah | benei | Shekhanyah
+benei | Refayah | benei | Arnan | benei | Oadyah
+benei | Shekhanyah
 
 3:22
 uvenei | Shekhanyah

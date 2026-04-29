@@ -8,8 +8,7 @@ vaiyomer | hamelekh | likro | lachartumim | vela'ashafim | velamkhashefim | vela
 lehagid | lamelekh
 chalomotav
 vaiyavo'u
-vaiya'amdu
-lifnei | hamelekh
+vaiya'amdu | lifnei | hamelekh
 
 2:3
 vaiyomer | lahem | hamelekh
@@ -51,12 +50,12 @@ di | azda | mini | mileta
 2:9
 di | hen | chelma | la | tehod'unani | chadah | hi | datekhon | umilah | khidvah | ushechitah | hazmintun | lememar | kadamai
 ad | di | idana | yishtane
-lahen | chelma | emaru | li | ve'inda
+lahen | chelma | emaru | li
+ve'inda
 di | fishreh | tehachavunani
 
 2:10
-ano | khasdai | kodom | malka | ve'amerin
-la | itai | anash | al | yabeshta
+ano | khasdai | kodom | malka | ve'amerin | la | itai | anash | al | yabeshta
 di | milat | malka | yukhal | lehachavayah
 kol | kovel | di | kol | melekh | rav | veshalit
 milah | khidnah | la | she'el | lekhol | charttom
@@ -88,7 +87,8 @@ di | malka | di | nefak | lekatalah | lechakimei | Bavel
 2:15
 aneh | ve'amar | Le'aryokh | shalita | di | malka
 al | mah | data | mehachtzefah | min | kodam | malka
-edayin | mileta | hoda | Aryokh | Ledaniyel
+edayin | mileta
+hoda | Aryokh | Ledaniyel
 
 2:16
 Vedaniyel | al
@@ -96,26 +96,23 @@ uve'ah | min | malka | di | zeman | yinten | leh
 ufishra | lehachavayah | lemalka
 
 2:17
-edayin | Daniyel
-levayteh | azal | Velachananyah | Misha'el | Va'azaryah | chavrohi | mileta | hoda
+edayin | Daniyel | levayteh | azal
+Velachananyah | Misha'el | Va'azaryah | chavrohi | mileta | hoda
 
 2:18
-verachamin | lemiv'e | min | kodam | elah | shemaiya
-al | razah
+verachamin | lemiv'e | min | kodam | elah | shemaiya | al | razah
 denah
-di | la | yehoedun | Daniyel | vechavrohi
-im | she'ar
+di | la | yehoedun | Daniyel | vechavrohi | im | she'ar
 chakimei | Vavel
 
 2:19
 edayin | Ledaniyel | bechezva | di | leilya
 razah | gali | edayin | Daniyel
-barikh
-le'elah | shemaiya
+barikh | le'elah | shemaiya
 
 2:20
-aneh | Daniyel | ve'amar
-leheve | shemeh | di | elaha | mevarakh | min | alma | ve'ad | alma
+aneh | Daniyel | ve'amar | leheve | shemeh | di | elaha | mevarakh
+min | alma | ve'ad | alma
 di | chakhemeta | ugevureta
 di | leh | hi
 
@@ -246,20 +243,19 @@ tadik | veteroa
 
 2:41
 vedi | chazaytah | raglaiya | ve'etzbe'ata | minehen | chasaf | di | fechar | uminehon | parzel
-malkhu | feligah | teheveh
-umin | nitzbeta | di | farzela | leheve | vah
+malkhu | feligah | teheveh | umin | nitzbeta | di | farzela | leheve | vah
 kol | kovel | di | chazaytah
 parzela | me'arav | bachasaf | tina
 
 2:42
-ve'etzbe'at | raglaiya | minehon | parzel
-uminehon | chasaf
+ve'etzbe'at | raglaiya | minehon | parzel | uminehon | chasaf
 min | ketzat | malkhuta | teheveh | takifah | uminah
 teheveh | tevirah
 
 2:43
 vedi | chazayta | parzela | me'arav | bachasaf | tina
-mit'arevin | lehevon | bizra | anasha | vela | lehevon | davekin
+mit'arevin | lehevon | bizra | anasha
+vela | lehevon | davekin
 denah | im | denah
 he | khedi | farzela | la | mit'arav | im | chaspa
 

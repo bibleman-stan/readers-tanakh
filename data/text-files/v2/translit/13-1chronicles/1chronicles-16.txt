@@ -1,10 +1,7 @@
 16:1
 vaiyavi'u | et | aron | ha'elohim
-vaiyatzigu | oto
-betokh | ha'ohel | asher | natah | lo
-David
-vaiyakrivu | olot | ushelamim
-lifnei | ha'elohim
+vaiyatzigu | oto | betokh | ha'ohel | asher | natah | lo
+David | vaiyakrivu | olot | ushelamim | lifnei | ha'elohim
 
 16:2
 vaykhal | David | meha'alot | ha'olah
@@ -12,8 +9,8 @@ vehashelamim | vayvarekh | et | ha'am
 beshem | Yahweh
 
 16:3
-vaychalek | lekhol | ish | Yisra'el | me'ish
-ve'ad | ishah | le'ish | kikar | lechem | ve'eshpar
+vaychalek | lekhol | ish | Yisra'el | me'ish | ve'ad | ishah | le'ish | kikar | lechem
+ve'eshpar
 va'ashishah
 
 16:4
@@ -34,8 +31,8 @@ bachatzotzerot | tamid | lifnei
 aron | berit | ha'elohim
 
 16:7
-baiyom | hahu | az | natan | David | barosh
-lehodot | Layahweh | beyad | Asaf | ve'echav
+baiyom | hahu | az | natan | David | barosh | lehodot
+Layahweh | beyad | Asaf | ve'echav
 
 16:8
 hodu | Layahweh | kir'u | vishmo
@@ -51,11 +48,12 @@ hithalu | beshem | kadesho | yismach | lev
 mevakshei | Yahweh
 
 16:11
-dirshu | Yahweh | ve'uzo
-bakeshu | fanav | tamid
+dirshu | Yahweh | ve'uzo | bakeshu | fanav
+tamid
 
 16:12
-zikhru | nifle'otav | asher | asah | mofetav | umishpetei | fihu
+zikhru | nifle'otav | asher | asah | mofetav
+umishpetei | fihu
 
 16:13
 zera | Yisra'el | avdo
@@ -65,16 +63,14 @@ benei | Ya'ako | bechirav
 hu | Yahweh | eloheinu | bekhol | ha'aretz | mishpatav
 
 16:15
-zikhru | le'olam | berito | davar | tzivah
-le'elef | dor
+zikhru | le'olam | berito | davar | tzivah | le'elef | dor
 
 16:16
 asher | karat | et | Avraham
 ushevu'ato | Leyitzchak
 
 16:17
-vaiya'amideha | Leya'ako | lechok | Leyisra'el
-berit | olam
+vaiya'amideha | Leya'ako | lechok | Leyisra'el | berit | olam
 
 16:18
 lemor | lekha | eten | eretz | Kena'an
@@ -86,15 +82,13 @@ bihyotkhem | metei | mispar | kim'at
 vegarim | bah
 
 16:20
-vaiyithalekhu | migoy | el | goy | umimamlakhah
-el | am | acher
+vaiyithalekhu | migoy | el | goy | umimamlakhah | el | am | acher
 
 16:21
 lo | hiniach | le'ish | le'ashekam | vaiyokhach | aleihem | melakhim
 
 16:22
-al | tige'u | bimshichai | uvinvi'ai
-al | tare'u
+al | tige'u | bimshichai | uvinvi'ai | al | tare'u
 
 16:23
 shiru | Layahweh | kol | ha'aretz | baseru | miyom | el | yom | yeshu'ato
@@ -107,7 +101,8 @@ ki | gadol | Yahweh | umehulal | me'od | venora | hu
 al | kol | elohim
 
 16:26
-ki | kol | elohei | ha'amim | elilim | Vayahweh
+ki | kol | elohei | ha'amim | elilim
+Vayahweh
 shamayim | asah
 
 16:27
@@ -156,8 +151,8 @@ vekabetzenu | vehatzilenu | min | hagoyim | lehodot | leshem | kodshecha | lehis
 bithilatekha
 
 16:36
-barukh | Yahweh | elohei | Yisra'el | min | ha'olam
-ve'ad | ha'olam | vaiyomeru | khol | ha'am | amen
+barukh | Yahweh | elohei | Yisra'el | min | ha'olam | ve'ad | ha'olam
+vaiyomeru | khol | ha'am | amen
 vehalel | Layahweh
 
 16:37
@@ -176,13 +171,11 @@ mishkan | Yahweh | babamah | asher | Begiv'on
 16:40
 leha'alot | olot | Layahweh | al | mizbach | ha'olah | tamid
 laboker | vela'arev
-ulekhol | hakatuv | betorat | Yahweh | asher | tzivah
-al | Yisra'el
+ulekhol | hakatuv | betorat | Yahweh | asher | tzivah | al | Yisra'el
 
 16:41
 ve'imahem | Heiman | Vidutun
-ushe'ar | haberurim | asher | Nikevu
-beshemot | lehodot | Layahweh
+ushe'ar | haberurim | asher | Nikevu | beshemot | lehodot | Layahweh
 ki | le'olam
 chasdo
 
@@ -194,5 +187,4 @@ uvenei | Yedutun | lasha'ar
 
 16:43
 vaiyelekhu | khol | ha'am
-ish | leveito | vaiyiso | David
-levarekh | et | beito
+ish | leveito | vaiyiso | David | levarekh | et | beito

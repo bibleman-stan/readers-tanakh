@@ -6,8 +6,7 @@ bat | Zekharyahu
 
 29:2
 vaiya'as | haiyashar
-be'einei | Yahweh
-kekhol | asher | asah
+be'einei | Yahweh | kekhol | asher | asah
 David | aviv
 
 29:3
@@ -16,8 +15,8 @@ vaychazekem
 
 29:4
 vaiyave | et | hakohanim
-ve'et | halviyim | vaiya'asfem
-lirchov | hamizrach
+ve'et | halviyim
+vaiya'asfem | lirchov | hamizrach
 
 29:5
 vaiyomer | lahem
@@ -38,15 +37,14 @@ ve'olah | lo | he'elu | vakodesh | lelohei
 Yisra'el
 
 29:8
-vayhi | ketzef | Yahweh
-al | Yehudah | Virushalim
-vaiyitenem | lizva'ah | leshamah | velishrekah
-ka'asher | atem | ro'im | be'eineikhem
+vayhi | ketzef | Yahweh | al | Yehudah
+Virushalim
+vaiyitenem | lizva'ah | leshamah | velishrekah | ka'asher | atem | ro'im
+be'eineikhem
 
 29:9
 vehineh | nafelu | avoteinu | becharev
-uvaneinu | uvenoteinu | venasheinu | bashevi
-al | zot
+uvaneinu | uvenoteinu | venasheinu | bashevi | al | zot
 
 29:10
 atah | im | levavi | likhrot | berit | Layahweh
@@ -70,8 +68,7 @@ Ve'eden
 ben | Yo'ach
 
 29:13
-umin | benei | Elitzafan | Shimri | Vi'u'el
-umin | benei | Asaf
+umin | benei | Elitzafan | Shimri | Vi'u'el | umin | benei | Asaf
 Zekharyahu | Umatanyahu
 
 29:14
@@ -96,8 +93,8 @@ chutzah
 29:17
 vaiyachelu | be'echad | lachodesh | harishon | lekadesh
 uveyom | shemonah | lachodesh | ba'u | le'ulam | Yahweh
-vaykadeshu | et | beit | Yahweh
-leyamim | shemonah | uveyom | shishah | asar | lachodesh | harishon
+vaykadeshu | et | beit | Yahweh | leyamim | shemonah
+uveyom | shishah | asar | lachodesh | harishon
 kilu
 
 29:18
@@ -105,7 +102,8 @@ vaiyavo'u | fenimah | el | Chizkiyahu | hamelekh
 vaiyomeru
 tiharnu
 et | kol | beit | Yahweh
-et | mizbach | ha'olah | ve'et | kol | kelav | ve'et | shulchan | hama'arekhet
+et | mizbach | ha'olah | ve'et | kol | kelav
+ve'et | shulchan | hama'arekhet
 ve'et | kol | kelav
 
 29:19
@@ -122,8 +120,7 @@ beit | Yahweh
 
 29:21
 vaiyavi'u | farim | shiv'ah | ve'eilim | shiv'ah | ukhevasim | shiv'ah | utzefirei | izim | shiv'ah | lechatat
-al | hamamlakhah | ve'al | hamikdash
-ve'al | Yehudah
+al | hamamlakhah | ve'al | hamikdash | ve'al | Yehudah
 vaiyomer | livnei | Aharon | hakohanim | leha'alot
 al | mizbach | Yahweh
 
@@ -138,16 +135,13 @@ vaiyizreku | hadam
 hamizbechah
 
 29:23
-vaiyagishu | et | se'irei | hachatat
-lifnei | hamelekh
-vehakahal
-vaiyismekhu | yedeihem
+vaiyagishu | et | se'irei | hachatat | lifnei | hamelekh
+vehakahal | vaiyismekhu | yedeihem
 aleihem
 
 29:24
 vaiyishchatum | hakohanim
-vaychate'u | et | damam | hamizbechah | lekhaper
-al | kol | Yisra'el
+vaychate'u | et | damam | hamizbechah | lekhaper | al | kol | Yisra'el
 ki | lekhol | Yisra'el | amar | hamelekh
 ha'olah
 vehachatat
@@ -163,16 +157,14 @@ vaiya'amdu | halviyim | bikhlei | David
 vehakohanim | bachatzotzerot
 
 29:27
-vaiyomer | Chizkiyahu | leha'alot | ha'olah | lehamizbeach
-uve'et | hechel | ha'olah | hechel | shir | Yahweh | vehachatzotzerot
-ve'al | yedei
+vaiyomer | Chizkiyahu | leha'alot | ha'olah
+lehamizbeach | uve'et | hechel | ha'olah | hechel | shir | Yahweh | vehachatzotzerot | ve'al | yedei
 kelei
 David | melekh | Yisra'el
 
 29:28
 vekhol | hakahal | mishtachavim | vehashir | meshorer | vehachatzotzerot | machatzotzerim
-hakol
-ad
+hakol | ad
 likhlot | ha'olah
 
 29:29
@@ -180,9 +172,8 @@ ukhekhalot | leha'alot | kare'u | hamelekh | vekhol | hanimtze'im | ito
 vaiyishtachavu
 
 29:30
-vaiyomer | Yechizkiyahu | hamelekh | vehasarim | lalviyim
-lehalel | Layahweh | bedivrei | David
-Ve'asaf | hachozeh
+vaiyomer | Yechizkiyahu | hamelekh | vehasarim | lalviyim | lehalel | Layahweh
+bedivrei | David | Ve'asaf | hachozeh
 vayhalu | ad | lesimchah
 vaiyikedu
 vaiyishtachavu
@@ -216,7 +207,5 @@ vatikon
 avodat | beit | Yahweh
 
 29:36
-vaiyismach | Yechizkiyahu | vekhol | ha'am
-al | hahekhin | ha'elohim | la'am
-ki | befit'om
-hayah | hadavar
+vaiyismach | Yechizkiyahu | vekhol | ha'am | al | hahekhin | ha'elohim | la'am
+ki | befit'om | hayah | hadavar

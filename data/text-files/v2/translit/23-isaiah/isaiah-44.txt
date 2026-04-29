@@ -9,14 +9,11 @@ al | tira | avdi | Ya'ako
 Vishurun | bacharti | vo
 
 44:3
-ki | etzok | mayim | al | tzame | venozelim
-al | yabashah
-etzok | ruchi | al | zar'ekha | uvirkhati
-al | tze'etza'eikha
+ki | etzok | mayim | al | tzame | venozelim | al | yabashah
+etzok | ruchi | al | zar'ekha | uvirkhati | al | tze'etza'eikha
 
 44:4
-vetzamechu | bevein | chatzir | ka'aravim
-al | yivlei | mayim
+vetzamechu | bevein | chatzir | ka'aravim | al | yivlei | mayim
 
 44:5
 zeh | yomar | Layahweh | ani
@@ -31,8 +28,8 @@ koh | amar | Yahweh | melekh | Yisra'el | vego'alo | Yahweh | tzeva'ot
 ani | rishon | va'ani | acharon | umibal'adai | ein | elohim
 
 44:7
-umi | khamoni | yikra | veyagideha | veya'rekheha | li | misumi
-am | olam | ve'otiyot | va'asher | tavonah
+umi | khamoni | yikra | veyagideha | veya'rekheha | li | misumi | am | olam
+ve'otiyot | va'asher | tavonah
 yagidu | lamo
 
 44:8
@@ -70,8 +67,7 @@ charash | etzim | natah | kav
 yeta'arehu | vasered
 ya'asehu | bamaktzu'ot | uvamechugah
 yeto'orehu
-vaiya'asehu | ketavnit | ish
-ketif'eret | adam | lashevet | bayit
+vaiya'asehu | ketavnit | ish | ketif'eret | adam | lashevet | bayit
 
 44:14
 likhrot | lo | arazim | vaiyikach | tirzah | ve'alon
@@ -86,8 +82,7 @@ af | yif'al | el | vaiyishtachu
 asahu | fesel | vaiyisgod | lamo
 
 44:16
-chetzyo | saraf | bemov | esh
-al | chetzyo | basar | yokhel
+chetzyo | saraf | bemov | esh | al | chetzyo | basar | yokhel
 yitzleh | tzali
 veyisba
 af | yachom | veyomar | he'ach
@@ -111,13 +106,14 @@ velo | yashiv | el | libo | velo | da'at | velo | tevunah | lemor
 chetzyo | sarafti | vemov | esh | ve'af | afiti | al | gechalav | lechem
 etzleh | vasar
 ve'okhel
-veyitro | leto'evah | e'eseh
-levul | etz | esgod
+veyitro | leto'evah | e'eseh | levul | etz
+esgod
 
 44:20
 ro'eh | efer
 lev | hutal
-hitahu | velo | yatzil | et | nafsho | velo | yomar
+hitahu
+velo | yatzil | et | nafsho | velo | yomar
 halo | sheker | bimini
 
 44:21
@@ -149,8 +145,7 @@ roka | ha'aretz | ma'iti
 44:25
 mefer | otot | badim
 vekosemim
-yeholel
-meshiv | chakhamim | achor
+yeholel | meshiv | chakhamim | achor
 veda'tam | yesakel
 
 44:26

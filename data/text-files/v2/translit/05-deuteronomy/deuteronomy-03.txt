@@ -8,14 +8,14 @@ Edre'i
 3:2
 vaiyomer | Yahweh | elai | al | tira | oto
 ki | veyadekha | natati | oto | ve'et | kol | amo
-ve'et | artzo | ve'asita | lo
-ka'asher | asita | Lesichon | melekh | ha'emori | asher | yoshev
-Becheshbon
+ve'et | artzo
+ve'asita | lo | ka'asher | asita | Lesichon | melekh | ha'emori
+asher | yoshev | Becheshbon
 
 3:3
 vaiyiten | Yahweh | eloheinu | beyadenu | gam | et | Og | melekh | Habashan
-ve'et | kol | amo | vanakehu
-ad | bilti | hish'ir | lo
+ve'et | kol | amo
+vanakehu | ad | bilti | hish'ir | lo
 sarid
 
 3:4
@@ -30,8 +30,7 @@ delatayim | uveriach | levad | me'arei | haperazi
 harbeh | me'od
 
 3:6
-vanacharem | otam | ka'asher | asinu | Lesichon
-melekh | Cheshbon
+vanacharem | otam | ka'asher | asinu | Lesichon | melekh | Cheshbon
 hacharem | kol | ir | metim
 hanashim
 vehataf
@@ -53,8 +52,7 @@ yikre'u | lo
 Senir
 
 3:10
-kol | arei | hamishor | vekhol | Hagil'ad | vekhol | Habashan
-ad | Salkhah
+kol | arei | hamishor | vekhol | Hagil'ad | vekhol | Habashan | ad | Salkhah
 Ve'edre'i
 arei | mamlekhet | Og | Babashan
 
@@ -66,8 +64,7 @@ tesha | amot | arekah | ve'arba | amot | rachebah
 be'amat | ish
 
 3:12
-ve'et | ha'aretz | hazot | yarashnu
-ba'et | hahiv
+ve'et | ha'aretz | hazot | yarashnu | ba'et | hahiv
 Me'aro'er | asher | al | nachal | Arnon | vachatzi | har | Hagil'ad | ve'arav
 natati | laru'uveni | velagadi
 
@@ -80,8 +77,7 @@ hahu | yikare
 eretz | refa'im
 
 3:14
-Ya'ir | ben | Menasheh | lakach | et | kol | chevel | Argo
-ad | gevul | hageshuri
+Ya'ir | ben | Menasheh | lakach | et | kol | chevel | Argo | ad | gevul | hageshuri
 vehama'akhati
 vaiyikra | otam | al | shemo | et | Habashan | chavot | Ya'ir
 ad
@@ -93,8 +89,7 @@ Ulemakhir | natati | et | Hagil'ad
 3:16
 velaru'uveni | velagadi | natati | min | Hagil'ad | ve'ad | nachal | Arnon
 tokh | hanachal
-ugevul
-ve'ad | Yabok | hanachal
+ugevul | ve'ad | Yabok | hanachal
 gevul | benei | Amon
 
 3:17
@@ -131,8 +126,7 @@ hu
 hanilcham | lakhem
 
 3:23
-va'etchanan
-el | Yahweh | ba'et | hahiv | lemor
+va'etchanan | el | Yahweh | ba'et | hahiv | lemor
 
 3:24
 Adonai | Yahweh | atah | hachilota | lehar'ot | et | avdekha | et | gadelekha
@@ -148,8 +142,7 @@ Vehalevanon
 vaiyit'aber | Yahweh | bi | lema'ankhem
 velo | shama
 elai | vaiyomer | Yahweh | elai | rav | lakh
-al | tosef | daber | elai | od
-badavar | hazeh
+al | tosef | daber | elai | od | badavar | hazeh
 
 3:27
 aleh | rosh | Hapisgah | vesa | eineikha | yamah | vetzafonah | veteimanah | umizrachah
@@ -163,5 +156,4 @@ ki | hu | ya'avor | lifnei | ha'am | hazeh
 vehu | yanchil | otam | et | ha'aretz | asher | tir'eh
 
 3:29
-vaneshev | bagay | mul
-Beit | Pe'or
+vaneshev | bagay | mul | Beit | Pe'or

@@ -1,6 +1,6 @@
 34:1
-vatetze | Dinah | bat | Le'ah | asher | yaldah
-Leya'ako | lir'ot | bivnot | ha'aretz
+vatetze | Dinah | bat | Le'ah | asher | yaldah | Leya'ako | lir'ot
+bivnot | ha'aretz
 
 34:2
 vaiyar | otah | Shekhem | ben | Chamor | hachivi
@@ -11,8 +11,7 @@ vay'aneha
 34:3
 vatidbak | nafsho | Bedinah
 bat | Ya'ako | vaiye'ehav | et | hana'ara
-vaydaber
-al | lev | hana'ara
+vaydaber | al | lev | hana'ara
 
 34:4
 vaiyomer | Shekhem
@@ -22,12 +21,10 @@ kach | li | et | haiyaldah | hazot | le'ishah
 34:5
 Veya'ako | shama | ki | time | et | Dinah | vito
 uvanav | hayu | et | miknehu | basadeh
-vehecherish | Ya'ako
-ad | bo'am
+vehecherish | Ya'ako | ad | bo'am
 
 34:6
-vaiyetze | Chamor | avi | Shekhem
-el | Ya'ako | ledaber
+vaiyetze | Chamor | avi | Shekhem | el | Ya'ako | ledaber
 ito
 
 34:7
@@ -47,7 +44,8 @@ tenu | na | otah | lo | le'ishah
 vehitchatenu
 otanu
 benoteikhem | titenu | lanu
-ve'et | benoteinu | tikchu | lakhem
+ve'et | benoteinu
+tikchu | lakhem
 
 34:10
 ve'itanu
@@ -85,13 +83,12 @@ kol | zakhar
 
 34:16
 venatanu | et | benoteinu | lakhem
-ve'et | benoteikhem | nikach | lanu
-veyashavnu | itekhem
+ve'et | benoteikhem
+nikach | lanu | veyashavnu | itekhem
 vehayinu | le'am | echad
 
 34:17
-ve'im | lo | tishme'u | eleinu | lehimol
-velakachnu | et | bitenu
+ve'im | lo | tishme'u | eleinu | lehimol | velakachnu | et | bitenu
 vehalakhenu
 
 34:18
@@ -105,18 +102,19 @@ vehu | nikhbad | mikol
 beit | aviv
 
 34:20
-vaiyavo | Chamor | Ushekhem | beno
-el | sha'ar | iram | vaydaberu | el | anshei | iram | lemor
+vaiyavo | Chamor | Ushekhem | beno | el | sha'ar | iram
+vaydaberu | el | anshei | iram | lemor
 
 34:21
 ha'anashim | ha'eleh | shelemim | hem | itanu | veyeshevu | va'aretz | veyischaru | otah
 veha'aretz | hineh | rachavat | yadayim | lifneihem
 et | benotam | nikach | lanu | lenashim
-ve'et | benoteinu | niten | lahem
+ve'et | benoteinu
+niten | lahem
 
 34:22
-akh | bezot | ye'otu | lanu | ha'anashim | lashevet | itanu
-lihyot | le'am | echad | behimol | lanu | kol | zakhar | ka'asher
+akh | bezot | ye'otu | lanu | ha'anashim | lashevet | itanu | lihyot
+le'am | echad | behimol | lanu | kol | zakhar | ka'asher
 hem | nimolim
 
 34:23
@@ -152,12 +150,13 @@ benei | Ya'ako | ba'u | al | hachalalim | vaiyavozu
 ha'ir | asher | time'u | achotam
 
 34:28
-et | tzonam | ve'et | bekaram | ve'et | chamoreihem
+et | tzonam | ve'et | bekaram
+ve'et | chamoreihem
 ve'et | asher | ba'ir | ve'et | asher | basadeh | lakachu
 
 34:29
-ve'et | kol | cheilam | ve'et | kol | tapam | ve'et | nesheihem | shavu
-vaiyavozu
+ve'et | kol | cheilam | ve'et | kol | tapam | ve'et | nesheihem
+shavu | vaiyavozu
 ve'et | kol | asher | babayit
 
 34:30

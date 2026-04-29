@@ -1,6 +1,5 @@
 31:1
-vaydaber | Yahweh
-el | Mosheh | lemor
+vaydaber | Yahweh | el | Mosheh | lemor
 
 31:2
 nekom | nikmat | benei | Yisra'el | me'et
@@ -43,7 +42,8 @@ haregu | becharev
 
 31:9
 vaiyishbu | venei | Yisra'el | et | neshei | Midyan
-ve'et | tapam | ve'et | kol | behemtam | ve'et | kol | miknehem | ve'et | kol | cheilam | bazazu
+ve'et | tapam
+ve'et | kol | behemtam | ve'et | kol | miknehem | ve'et | kol | cheilam | bazazu
 
 31:10
 ve'et | kol | areihem | bemooshevotam
@@ -56,12 +56,10 @@ ve'et | kol | hamalkoach | ba'adam | uvabehemah
 
 31:12
 vaiyavi'u | el | Mosheh | ve'el | El'azar | hakohen | ve'el | adat | benei | Yisra'el | et | hashevi | ve'et | hamalkoach | ve'et | hashalal
-el | hamachaneh
-el | Arvot | Mo'av | asher | al | Yarden | Yerecho
+el | hamachaneh | el | Arvot | Mo'av | asher | al | Yarden | Yerecho
 
 31:13
-vaiyetze'u | Mosheh | Ve'el'azar | hakohen | vekhol | nesi'ei | ha'edah
-likratam
+vaiyetze'u | Mosheh | Ve'el'azar | hakohen | vekhol | nesi'ei | ha'edah | likratam
 el | michutz | lamachaneh
 
 31:14
@@ -77,9 +75,7 @@ kol | nekevah
 
 31:16
 hen | henah | hayu | livnei | Yisra'el | bidvar | Bil'am
-limsor | ma'al | Bayahweh
-al | devar | Pe'or
-vatehi | hamagefah
+limsor | ma'al | Bayahweh | al | devar | Pe'or | vatehi | hamagefah
 ba'adat | Yahweh
 
 31:17
@@ -127,8 +123,7 @@ ve'achar
 tavo'u | el | hamachaneh
 
 31:25
-vaiyomer | Yahweh
-el | Mosheh | lemor
+vaiyomer | Yahweh | el | Mosheh | lemor
 
 31:26
 sa | et | rosh | malkoach | hashevi | ba'adam
@@ -187,7 +182,8 @@ alef
 31:36
 vatehi | hamechetzah
 chelek
-haiyotze'im | batzava | mispar | hatzon | shelosh | me'ot | elef | usheloshim | elef | veshiv'at | alafim | vachamesh | me'ot
+haiyotze'im | batzava | mispar | hatzon | shelosh | me'ot | elef | usheloshim | elef
+veshiv'at | alafim | vachamesh | me'ot
 
 31:37
 vayhi | hamekhes | Layahweh | min | hatzon
@@ -221,7 +217,8 @@ hatzoe'im
 
 31:43
 vatehi | mechetzat | ha'edah | min | hatzon
-shelosh | me'ot | elef | usheloshim | elef | shiv'at | alafim | vachamesh | me'ot
+shelosh | me'ot | elef | usheloshim | elef
+shiv'at | alafim | vachamesh | me'ot
 
 31:44
 uvakar
@@ -256,8 +253,7 @@ velo | Nifkad | mimenu | ish
 31:50
 vanakrev | et | kareban | Yahweh | ish | asher | matza | kheli | zahav | etz'adah | vetzamid
 taba'at
-agil | vekhumaz
-lekhaper | al | nafshoteinu
+agil | vekhumaz | lekhaper | al | nafshoteinu
 lifnei | Yahweh
 
 31:51

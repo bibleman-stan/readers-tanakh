@@ -4,8 +4,7 @@ beit | Yisra'el
 
 10:2
 koh | amar | Yahweh | el | derekh | hagoyim | al | tilmadu
-ume'otot | hashamayim
-al | techatu
+ume'otot | hashamayim | al | techatu
 ki | yechatu | hagoyim | mehemah
 
 10:3
@@ -51,8 +50,8 @@ velo | yakhilu | goyim
 za'mo
 
 10:11
-kidnah | temrun | lehom | elahaiya | di | shemaiya | ve'arka
-la | avadu
+kidnah | temrun | lehom | elahaiya
+di | shemaiya | ve'arka | la | avadu
 yevadu | me'ar'a | umin | techot | shemaiya
 eleh
 
@@ -69,12 +68,11 @@ vaiyotze | ruach | me'otzerotav
 
 10:14
 Niv'ar | kol | adam | mida'at
-hovish | kol | tzoref | mipasel
-ki | sheker | nisko | velo | ruach | bam
+hovish | kol | tzoref | mipasel | ki | sheker | nisko
+velo | ruach | bam
 
 10:15
-hevel | hemah | ma'aseh | ta'tu'im
-be'et | pekudatam
+hevel | hemah | ma'aseh | ta'tu'im | be'et | pekudatam
 yovedu
 
 10:16
@@ -109,10 +107,8 @@ yeri'otai
 
 10:21
 ki | Niv'aru | haro'im
-ve'et | Yahweh | lo | darashu
-al | ken | lo | hiskilu
-vekhol | mar'itam
-Nafotzah
+ve'et | Yahweh | lo | darashu | al | ken | lo | hiskilu
+vekhol | mar'itam | Nafotzah
 
 10:22
 kol | shemu'ah | hineh | va'ah
@@ -128,8 +124,7 @@ et | tza'ado
 
 10:24
 yasereni | Yahweh
-akh | bemishpat
-al | be'apekha
+akh | bemishpat | al | be'apekha
 pen | tam'iteni
 
 10:25
@@ -137,4 +132,5 @@ shefokh | chamatekha | al | hagoyim | asher | lo | yeda'ukha
 ve'al | mishpachot | asher | beshimkha
 lo | kara'u
 ki | akhelu | et | Ya'ako | va'akhaluhu | vaykhaluhu
-ve'et | navehu | heshamu
+ve'et | navehu
+heshamu

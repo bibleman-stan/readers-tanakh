@@ -1,11 +1,9 @@
 17:1
-chatat | Yehudah | ketuvah | be'et | barzel
-betziporen | shamir
+chatat | Yehudah | ketuvah | be'et | barzel | betziporen | shamir
 charushah | al | luach | libam | ulekarnot | mizbechoteikhem
 
 17:2
-kizkor | beneihem | mizbechotam | va'ashereihem
-al | etz | ra'anan | al
+kizkor | beneihem | mizbechotam | va'ashereihem | al | etz | ra'anan | al
 geva'ot | hagevohot
 
 17:3
@@ -47,8 +45,8 @@ ako | halev | mikol | ve'anush | hu
 mi | yeda'enu
 
 17:10
-ani | Yahweh | choker | lev
-bochen | kelayot | velatet | le'ish | kedarkov | kifri | ma'alalav
+ani | Yahweh | choker | lev | bochen | kelayot
+velatet | le'ish | kedarkov | kifri | ma'alalav
 
 17:11
 kore | dagar | velo | yalad
@@ -89,8 +87,7 @@ al | tihyeh | li | limchitah | machasi | atah | beyom | ra'ah
 yevoshu | rodefai | ve'al | evoshah | ani
 yechatu | hemah
 ve'al | echatah
-ani | havi | aleihem | yom | ra'ah
-umishneh | shibaron
+ani | havi | aleihem | yom | ra'ah | umishneh | shibaron
 shaverem
 
 17:19
@@ -122,7 +119,8 @@ et | avoteikhem
 
 17:23
 velo | shame'u | velo | hitu
-et | azenam | vaiyakshu | et | arepam | levilti | shomea | ulevilti
+et | azenam
+vaiyakshu | et | arepam | levilti | shomea | ulevilti
 kachat | musar
 
 17:24

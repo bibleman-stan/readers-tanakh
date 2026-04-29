@@ -17,8 +17,7 @@ lavo | itah | ve'asetah | gilulim | aleiha | letame'ah
 22:4
 bedamekh | asher | shafakht | ashamt | uvegilulayikh | asher | asit | tamet
 vatakrivi | yamayikh
-vatavo
-ad | shenotayikh
+vatavo | ad | shenotayikh
 al | ken | netatikh | cherpah | lagoyim
 vekalasah | lekhol | ha'aratzot
 
@@ -34,18 +33,17 @@ ish | lizro'o
 hayu | vakh | lema'an | shefokh | dam
 
 22:7
-av | va'em | hekalu | vakh
-lager | asu | va'oshek
-betokhekh
-yatom | ve'almanah
+av | va'em | hekalu | vakh | lager | asu | va'oshek
+betokhekh | yatom | ve'almanah
 honu | vakh
 
 22:8
-kadashai | bazit | ve'et | shabetotai | chilalet
+kadashai | bazit | ve'et | shabetotai
+chilalet
 
 22:9
-anshei | rakhil | hayu | vakh
-lema'an | shefokh | dam | ve'el | heharim | akhelu | vakh
+anshei | rakhil | hayu | vakh | lema'an | shefokh | dam
+ve'el | heharim | akhelu | vakh
 zimah
 asu | vetokhekh
 
@@ -71,9 +69,8 @@ ne'um
 Adonai | Yahweh
 
 22:13
-vehineh | hikeiti | khapi
-el | bitz'ekh | asher | asit
-ve'al | damekh | asher | hayu
+vehineh | hikeiti | khapi | el | bitz'ekh | asher | asit | ve'al | damekh
+asher | hayu
 betokhekh
 
 22:14
@@ -88,8 +85,8 @@ vezeritikh | ba'aratzot
 vahatimoti | tum'atekh | mimekh
 
 22:16
-venichalt | bakh
-le'einei | goyim | veyada'at
+venichalt | bakh | le'einei | goyim
+veyada'at
 ki | ani | Yahweh
 
 22:17
@@ -106,8 +103,8 @@ hayu
 22:19
 lakhen | koh | amar | Adonai | Yahweh
 ya'an | heyot | kulekhem | lesigim
-lakhen | hini | kovetz | etkhem
-el | tokh | Yerushalim
+lakhen | hini | kovetz | etkhem | el | tokh
+Yerushalim
 
 22:20
 kevutzat | kesef | unechoshet | uvarzel | ve'oferet | uvedil | el | tokh | kur
@@ -137,8 +134,7 @@ ben | adam | emor | lah | at | eretz | lo | metoharah
 hi | lo | gushmah | beyom | za'am
 
 22:25
-kesher | nevi'eiha | betokhah
-ka'ari | sho'eg
+kesher | nevi'eiha | betokhah | ka'ari | sho'eg
 toref | taref
 nefesh | akhalu | chosen | vikar | yikachu
 almenoteiha
@@ -176,8 +172,7 @@ va'avakesh | mehem | ish | goder | gader | ve'omed | baperetz | lefanai | be'ad 
 levilti | shachatah | velo | matzati
 
 22:31
-va'eshpokh | aleihem | za'mi
-be'esh | evrati
+va'eshpokh | aleihem | za'mi | be'esh | evrati
 kilitim
 darkam | berosham | natati
 ne'um

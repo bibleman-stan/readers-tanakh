@@ -1,6 +1,5 @@
 17:1
-vaydaber | Yahweh
-el | Mosheh | lemor
+vaydaber | Yahweh | el | Mosheh | lemor
 
 17:2
 daber | el | Aharon | ve'el | banav | ve'el | kol | benei | Yisra'el
@@ -29,7 +28,8 @@ otam
 
 17:6
 vezarak | hakohen | et | hadam | al | mizbach | Yahweh
-petach | ohel | mo'ed | vehiktir | hachelev
+petach | ohel | mo'ed
+vehiktir | hachelev
 lereiach | nichoach | Layahweh
 
 17:7
@@ -45,9 +45,8 @@ asher | ya'aleh | olah
 ov | zavach
 
 17:9
-ve'el | petach | ohel | mo'ed | lo | yevi'enu
-la'asot | oto | Layahweh
-venikhrat | ha'ish | hahu | me'amav
+ve'el | petach | ohel | mo'ed | lo | yevi'enu | la'asot | oto
+Layahweh | venikhrat | ha'ish | hahu | me'amav
 
 17:10
 ve'ish | ish | mibeit | Yisra'el | umin | hager | hagar | betokham
@@ -58,8 +57,7 @@ vehikhrati | otah | mikerev | amah
 
 17:11
 ki | nefesh | habasar | badam | hi
-va'ani | netativ | lakhem | al | hamizbeach | lekhaper
-al | nafshoteikhem
+va'ani | netativ | lakhem | al | hamizbeach | lekhaper | al | nafshoteikhem
 ki | hadam | hu
 banefesh | yekhaper
 

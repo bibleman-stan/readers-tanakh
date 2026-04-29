@@ -3,11 +3,11 @@ vaiya'al | Avram | Mimitzrayim | hu | ve'ishto | vekhol | asher | lo | Velot | i
 Hanegbah
 
 13:2
-Ve'avram | kaved | me'od | bamikneh | bakesef | uvazahav
+Ve'avram
+kaved | me'od | bamikneh | bakesef | uvazahav
 
 13:3
-vaiyelekh | lemasa'av | Minegev
-ve'ad | Beit | El
+vaiyelekh | lemasa'av | Minegev | ve'ad | Beit | El
 ad | hamakom | asher | hayah | sham | oholo | batechilah
 bein | Beit | El | uvein | Ha'ai
 
@@ -20,11 +20,13 @@ beshem | Yahweh
 13:5
 vegam | Lelot
 haholekh
-et | Avram | hayah | tzon | uvakar
+et | Avram
+hayah | tzon | uvakar
 ve'ohalim
 
 13:6
-velo | nasa | otam | ha'aretz | lashevet | yachdav
+velo | nasa | otam | ha'aretz
+lashevet | yachdav
 ki | hayah | rekhusham | rav | velo | yakhelu
 lashevet | yachdav
 
@@ -61,8 +63,7 @@ ish | me'al | achiv
 Avram
 yashav | be'eretz | Kena'an
 Velot | yashav | be'arei | hakikar
-vaiye'ehal
-ad | Sedom
+vaiye'ehal | ad | Sedom
 
 13:13
 ve'anshei | Sedom
@@ -77,9 +78,8 @@ tzafonah | vanegbah
 vakedemah | vayamah
 
 13:15
-ki | et | kol | ha'aretz | asher | atah | ro'eh
-lekha | ettenenah | ulzar'akha
-ad | olam
+ki | et | kol | ha'aretz | asher | atah | ro'eh | lekha | ettenenah
+ulzar'akha | ad | olam
 
 13:16
 vesamti | et | zar'akha | ka'afar | ha'aretz
