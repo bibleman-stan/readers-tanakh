@@ -13,10 +13,8 @@ ro'ot | otanu
 
 42:3
 veyaged | lanu | Yahweh | eloheikha
-et | haderekh
-asher | nelekh | bah
-ve'et | hadavar
-asher | na'aseh
+et | haderekh | asher | nelekh | bah
+ve'et | hadavar | asher | na'aseh
 
 42:4
 vaiyomer | aleihem | Yirmeyahu | hanavi | shama'ti
@@ -49,24 +47,20 @@ el | Yirmeyahu
 
 42:8
 vaiyikra | el | Yochanan | ben | Kareach
-ve'el | kol | sarei | hachayalim
-asher | ito
+ve'el | kol | sarei | hachayalim | asher | ito
 ulekhal | ha'am
 lemikaton | ve'ad | gadol
 
 42:9
 vaiyomer | aleihem
 koh | amar | Yahweh
-elohei | Yisra'el
-asher | shelachtem | oti | elav
+elohei | Yisra'el | asher | shelachtem | oti | elav
 lehapil | techinatkhem
 lefanav
 
 42:10
-im | shov | teshevu | ba'aretz | hazot
-uvaniti | etkhem | velo | eheros
-venata'ti | etkhem
-velo | etoosh | ki | Nichamti | el | hara'ah
+im | shov | teshevu | ba'aretz | hazot | uvaniti | etkhem | velo | eheros
+venata'ti | etkhem | velo | etoosh | ki | Nichamti | el | hara'ah
 asher | asiti
 lakhem
 
@@ -90,8 +84,7 @@ Yahweh | eloheikhem
 42:14
 lemor | lo | ki | eretz | Mitzrayim | navo
 asher | lo | nir'eh | milchamah
-vekol | shofar | lo | nishma
-velalechem | lo | nir'av
+vekol | shofar | lo | nishma | velalechem | lo | nir'av
 vesham | neshev
 
 42:15
@@ -110,8 +103,7 @@ vesham | tamutu
 42:17
 veyihyu | khol | ha'anashim | asher | samu | et | peneihem | lavo | Mitzrayim | lagur | sham
 yamutu | bacherev
-bara'av | uvadaver
-velo | yihyeh | lahem | sarid | ufalit | mipenei | hara'ah
+bara'av | uvadaver | velo | yihyeh | lahem | sarid | ufalit | mipenei | hara'ah
 asher | ani
 mevi | aleihem
 
@@ -119,8 +111,7 @@ mevi | aleihem
 ki | khoh | amar | Yahweh | tzeva'ot | elohei | Yisra'el
 ka'asher | Nitakh | api | vachamati | al | yoshevei | Yerushalim
 ken | titakh | chamati | aleikhem | bevo'akhem | Mitzrayim
-vihyitem | le'alah | uleshamah | veliklalah | ulecherpah
-velo | tir'u | od
+vihyitem | le'alah | uleshamah | veliklalah | ulecherpah | velo | tir'u | od
 et | hamakom
 hazeh
 
@@ -136,15 +127,12 @@ ki | hit'eteim | benafshoteikhem
 ki | atem | shelachtem | oti | el | Yahweh | eloheikhem | lemor
 hitpalel | ba'adenu
 el | Yahweh
-eloheinu
-ukhekhol | asher | yomar | Yahweh | eloheinu | ken | haged | lanu
+eloheinu | ukhekhol | asher | yomar | Yahweh | eloheinu | ken | haged | lanu
 ve'asinu
 
 42:21
 va'agid | lakhem
-haiyom
-velo | shema'tem | bekol | Yahweh | eloheikhem
-ulekhol
+haiyom | velo | shema'tem | bekol | Yahweh | eloheikhem | ulekhol
 asher | shelachani | aleikhem
 
 42:22

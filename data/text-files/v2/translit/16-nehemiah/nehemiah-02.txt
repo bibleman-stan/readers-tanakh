@@ -1,8 +1,7 @@
 2:1
 vayhi | bechodesh | Nisan | shenat | esrim | Le'artachshast | hamelekh
 yayin | lefanav
-va'esa | et | haiyayin | va'etenah | lamelekh
-velo | hayiti | ra
+va'esa | et | haiyayin | va'etenah | lamelekh | velo | hayiti | ra
 lefanav
 
 2:2
@@ -31,14 +30,12 @@ hashamayim
 2:5
 va'omar | lamelekh
 im | al | hamelekh | tov | ve'im | yitav | avdekha
-lefaneikha
-asher | tishlacheni | el | Yehudah | el | ir | kivrot | avotai
+lefaneikha | asher | tishlacheni | el | Yehudah | el | ir | kivrot | avotai
 ve'evnenah
 
 2:6
 vaiyomer | li | hamelekh | vehashegal | yoshevet | etzlo | ad | matai | yihyeh | mahalakhakha
-umatai | tashuv
-vaiyitav | lifnei | hamelekh | vaiyishlacheni
+umatai | tashuv | vaiyitav | lifnei | hamelekh | vaiyishlacheni
 va'etenah | lo
 zeman
 
@@ -47,8 +44,7 @@ va'omar | lamelekh
 im | al | hamelekh | tov
 igerot | yitenu | li
 al | pachavot
-ever | Hanahar
-asher | ya'aviruni
+ever | Hanahar | asher | ya'aviruni
 ad | asher | avo
 el | Yehudah
 
@@ -84,11 +80,9 @@ va'ehi | sham
 yamim | sheloshah
 
 2:12
-va'akum | laylah | ani | va'anashim | me'at | imi
-velo | higadti | le'adam
+va'akum | laylah | ani | va'anashim | me'at | imi | velo | higadti | le'adam
 mah | elohai | noten | el | libi
-la'asot | Lirushalim
-uvehemah | ein | imi | ki | im | habehemah
+la'asot | Lirushalim | uvehemah | ein | imi | ki | im | habehemah
 asher | ani
 rokhev | bah
 
@@ -114,8 +108,7 @@ va'ashuv | va'avo | besha'ar | hagay
 va'ashuv
 
 2:16
-vehaseganim | lo | yade'u | anah | halakhti
-umah
+vehaseganim | lo | yade'u | anah | halakhti | umah
 ani | oseh
 velaiyehudim | velakohanim | velachorim | velaseganim | uleyeter | oseh | hamelakhah
 ad | ken | lo | higadti
@@ -124,14 +117,12 @@ ad | ken | lo | higadti
 va'omar | alehem | atem | ro'im | hara'ah | asher | anachnu | vah
 asher | Yerushalim | charevah
 ushe'areiha
-Nitzetu | va'esh | lekhu | venivneh | et | chomat | Yerushalim
-velo | nihyeh | od
+Nitzetu | va'esh | lekhu | venivneh | et | chomat | Yerushalim | velo | nihyeh | od
 cherpah
 
 2:18
 va'agid | lahem | et | yad | elohai | asher | hi | tovah | alai
-ve'af | divrei | hamelekh
-asher | amar | li
+ve'af | divrei | hamelekh | asher | amar | li
 vaiyomeru | nakum | uvaninu
 vaychazeku | yedeihem
 latovah
@@ -149,5 +140,4 @@ atem | moredim
 va'ashiv | otam | davar | va'omar | lahem | elohei | hashamayim
 hu | yatzliach | lanu
 va'anachnu | avadav
-nakum | uvaninu
-velakhem | ein | chelek | utzedakah | vezikaron | Birushalim
+nakum | uvaninu | velakhem | ein | chelek | utzedakah | vezikaron | Birushalim

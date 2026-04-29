@@ -20,8 +20,7 @@ et | ha'atonot
 
 9:4
 vaiya'avor | behar | Efrayim | vaiya'avor | be'eretz | Shalishah
-velo | matza'u
-vaiya'avru | ve'eretz | Sha'alim | va'ayin
+velo | matza'u | vaiya'avru | ve'eretz | Sha'alim | va'ayin
 vaiya'avor | be'eretz | yemini
 velo | matza'u
 
@@ -66,8 +65,7 @@ haro'eh
 
 9:10
 vaiyomer | Sha'ul | lena'aro | tov | devarekha
-lekhah | nelekhah
-vaiyelekhu | el | ha'ir
+lekhah | nelekhah | vaiyelekhu | el | ha'ir
 asher | sham
 ish | ha'elohim
 
@@ -125,8 +123,7 @@ ya'tzor | be'ami
 
 9:18
 vaiyigash | Sha'ul | et | Shemu'el
-betokh | hasha'ar
-vaiyomer | hagidah | na | li
+betokh | hasha'ar | vaiyomer | hagidah | na | li
 ei | zeh | beit | haro'eh
 
 9:19
@@ -140,16 +137,13 @@ agid | lakh
 
 9:20
 vela'atonot | ha'oedot | lekha | haiyom | sheloshet | haiyamim
-al | tasem | et | libekha | lahem | ki | Nimtza'u
-ulemi | kol | chemdat | Yisra'el
-halo | lekha
-ulekhol | beit | avikha
+al | tasem | et | libekha | lahem | ki | Nimtza'u | ulemi | kol | chemdat | Yisra'el
+halo | lekha | ulekhol | beit | avikha
 
 9:21
 vaiya'an | Sha'ul | vaiyomer | halo | ven | yemini | anokhi | mikatanei | shivtei | Yisra'el
 umishpachti | hatze'irah | mikol | mishpechot
-shivtei | Vinyamin
-velamah | dibarta | elai | kadavar
+shivtei | Vinyamin | velamah | dibarta | elai | kadavar
 hazeh
 
 9:22
@@ -161,10 +155,8 @@ vehemah | kishloshim | ish
 
 9:23
 vaiyomer | Shemu'el | latabach
-tenah | et | hamanah
-asher | natati
-lakh
-asher | amarti | eleikha
+tenah | et | hamanah | asher | natati
+lakh | asher | amarti | eleikha
 sim | otah
 imakh
 

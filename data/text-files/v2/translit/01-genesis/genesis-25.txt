@@ -12,10 +12,8 @@ ve'et | Shuach
 25:3
 Veyakeshan | yalad
 et | Sheva
-ve'et | Dedan
-uvenei | Dedan
-hayu | ashurim | Uletushim
-Ule'umim
+ve'et | Dedan | uvenei | Dedan
+hayu | ashurim | Uletushim | Ule'umim
 
 25:4
 uvenei | Midyan | Eifah | Va'efer | Vachanokh
@@ -27,8 +25,7 @@ vaiyiten | Avraham | et | kol | asher | lo
 Leyitzchak
 
 25:6
-velivnei | hapilagshim | asher | Le'avraham
-natan | Avraham
+velivnei | hapilagshim | asher | Le'avraham | natan | Avraham
 matanot
 vayshalechem | me'al | Yitzchak | beno | be'odenu | chai
 kedemah
@@ -49,9 +46,7 @@ el | amav
 vaiyikberu | oto | Yitzchak | Veyishma'el | banav
 el | me'arat
 Hamakhpelah
-el | sedeh | Efron | ben | Tzochar | hachiti
-asher
-al | penei | Mamre
+el | sedeh | Efron | ben | Tzochar | hachiti | asher | al | penei | Mamre
 
 25:10
 hasadeh | asher | kanah | Avraham
@@ -75,12 +70,10 @@ Le'avraham
 25:13
 ve'eleh | shemot | benei | Yishma'el | bishmotam
 letoldotam | bekhor | Yishma'el | Nevayot
-Vekedar | Ve'adbe'el
-Umivsam
+Vekedar | Ve'adbe'el | Umivsam
 
 25:14
-Umishma | Vedumah
-Umasa
+Umishma | Vedumah | Umasa
 
 25:15
 Chadad | Veteima
@@ -88,8 +81,7 @@ Yetur | Nafish
 Vakedemah
 
 25:16
-eleh | hem | benei | Yishma'el | ve'eleh | shemotam | bechatzreihem
-uvetirotam
+eleh | hem | benei | Yishma'el | ve'eleh | shemotam | bechatzreihem | uvetirotam
 sheneim | asar | nesi'im
 le'umotam
 
@@ -136,8 +128,7 @@ lidrosh | et | Yahweh
 25:23
 vaiyomer | Yahweh | lah | shenei | goyim | bevitnekh
 ushenei | le'umim | mime'ayikh
-yiparedu
-ule'om | mil'om | ye'ematz
+yiparedu | ule'om | mil'om | ye'ematz
 verav
 ya'avod | tza'ir
 
@@ -193,14 +184,12 @@ Ya'ako | mikhrah | khaiyom | et | bekhoratekha | li
 25:32
 vaiyomer | Esav
 hineh | anokhi | holekh
-lamut
-velamah | zeh | li | bekhorah
+lamut | velamah | zeh | li | bekhorah
 
 25:33
 vaiyomer | Ya'ako | hishave'ah | li | kaiyom
 vaiyishava
-lo
-vaiyimkor | et | bekhorato
+lo | vaiyimkor | et | bekhorato
 Leya'ako
 
 25:34

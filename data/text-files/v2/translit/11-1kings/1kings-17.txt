@@ -13,9 +13,7 @@ elav | lemor
 lekh | mizeh
 ufanita | lekha
 kedemah
-venistarta | benachal | Kerit
-asher
-al | penei | Haiyarden
+venistarta | benachal | Kerit | asher | al | penei | Haiyarden
 
 17:4
 vehayah | mehanachal | tishteh
@@ -25,14 +23,11 @@ sham
 17:5
 vaiyelekh | vaiya'as
 kidvar | Yahweh
-vaiyelekh | vaiyeshev | benachal | Kerit
-asher
-al | penei | Haiyarden
+vaiyelekh | vaiyeshev | benachal | Kerit | asher | al | penei | Haiyarden
 
 17:6
 veha'orevim | mevi'im | lo | lechem | uvasar | baboker
-velechem | uvasar | ba'arev
-umin | hanachal
+velechem | uvasar | ba'arev | umin | hanachal
 yishteh
 
 17:7
@@ -65,12 +60,10 @@ likchi | na | li | pat | lechem | beyadekh
 
 17:12
 vatomer | chai | Yahweh | eloheikha | im | yesh | li | ma'og
-ki | im | melo | khaf | kemach | bakad
-ume'at | shemen
+ki | im | melo | khaf | kemach | bakad | ume'at | shemen
 batzapachat
 vehini | mekosheshet | shenayim | etzim | uvati | va'asitihu | li | velivni
-va'akhalnuhu
-vamatenu
+va'akhalnuhu | vamatenu
 
 17:13
 vaiyomer | eleiha | Eliyahu | al | tir'i
@@ -92,8 +85,7 @@ yamim
 
 17:16
 kad | hakemach | lo | khalatah
-vetzapachat | hashemen | lo | chaser | kidvar | Yahweh
-asher | diber
+vetzapachat | hashemen | lo | chaser | kidvar | Yahweh | asher | diber
 beyad | Eliyahu
 
 17:17
@@ -105,8 +97,7 @@ neshamah
 
 17:18
 vatomer | el | Eliyahu | mah | li | valakh
-ish | ha'elohim | bata | elai | lehazkir | et | avoni
-ulehamit | et | beni
+ish | ha'elohim | bata | elai | lehazkir | et | avoni | ulehamit | et | beni
 
 17:19
 vaiyomer | eleiha
@@ -138,8 +129,7 @@ vaiyechi
 17:23
 vaiyikach | Eliyahu | et | haiyeled | vaiyoridehu | min | ha'aliyah | habaytah
 vaiyitenehu
-le'imo
-vaiyomer | Eliyahu
+le'imo | vaiyomer | Eliyahu
 re'i
 chai | benekh
 

@@ -1,6 +1,5 @@
 19:1
-ki | yakhrit | Yahweh | eloheikha | et | hagoyim
-asher | Yahweh | eloheikha
+ki | yakhrit | Yahweh | eloheikha | et | hagoyim | asher | Yahweh | eloheikha
 noten | lekha
 et | artzam
 virishtam
@@ -9,15 +8,13 @@ uvevateihem
 
 19:2
 shaloosh | arim
-tavdil | lakh | betokh | artzekha
-asher | Yahweh | eloheikha
+tavdil | lakh | betokh | artzekha | asher | Yahweh | eloheikha
 noten | lekha
 lerishtah
 
 19:3
 takhin | lekha | haderekh
-veshilashta | et | gevul | artzekha
-asher | yanchilekha
+veshilashta | et | gevul | artzekha | asher | yanchilekha
 Yahweh | eloheikha
 vehayah
 lanus | shamah | kol | rotzeach
@@ -25,8 +22,7 @@ lanus | shamah | kol | rotzeach
 19:4
 vezeh | devar | harotzeach
 asher | yanus | shamah
-vachai
-asher | yakeh | et | re'ehu | bivli | da'at
+vachai | asher | yakeh | et | re'ehu | bivli | da'at
 vehu | lo | sone | lo | mitemol | shilshom
 
 19:5
@@ -53,8 +49,7 @@ tavdil | lakh
 
 19:8
 ve'im | yarchiv | Yahweh | eloheikha | et | gevulkha | ka'asher | Nishba | la'avoteikha
-venatan | lekha | et | kol | ha'aretz
-asher | diber
+venatan | lekha | et | kol | ha'aretz | asher | diber
 latet | la'avoteikha
 
 19:9
@@ -82,23 +77,19 @@ el | achat
 he'arim | ha'el
 
 19:12
-veshalechu | ziknei | iro
-velakechu | oto | misham
+veshalechu | ziknei | iro | velakechu | oto | misham
 venatenu | oto | beyad | go'el | hadam
 vamet
 
 19:13
 lo | tachos | einekha
-alav
-uvi'arta | dam | hanaki | Miyisra'el
+alav | uvi'arta | dam | hanaki | Miyisra'el
 vetov | lakh
 
 19:14
-lo | tasig | gevul | re'akha
-asher | gavelu
+lo | tasig | gevul | re'akha | asher | gavelu
 rishonim | benachalatekha | asher | tinchal
-ba'aretz
-asher | Yahweh | eloheikha
+ba'aretz | asher | Yahweh | eloheikha
 noten | lekha
 lerishtah
 
@@ -116,8 +107,7 @@ sarah
 19:17
 ve'amedu | shenei | ha'anashim | asher | lahem | hariv
 lifnei | Yahweh
-lifnei | hakohanim | vehashofetim
-asher | yihyu
+lifnei | hakohanim | vehashofetim | asher | yihyu
 baiyamim | hahem
 
 19:18
@@ -129,8 +119,7 @@ anah | ve'achiv
 
 19:19
 va'asitem | lo | ka'asher | zamam
-la'asot | le'achiv
-uvi'arta | hara | mikirbecha
+la'asot | le'achiv | uvi'arta | hara | mikirbecha
 
 19:20
 vehanish'arim

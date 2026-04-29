@@ -1,6 +1,5 @@
 62:1
-lema'an | Tziyon | lo | echesheh
-ulema'an | Yerushalim | lo | eshkot
+lema'an | Tziyon | lo | echesheh | ulema'an | Yerushalim | lo | eshkot
 ad | yetze | khanogah | tzidkah
 vishu'atah
 kelapid | yiv'ar
@@ -8,8 +7,7 @@ kelapid | yiv'ar
 62:2
 vera'u | goyim | tzidkekh
 vekhol | melakhim | kevodekh
-vekora | lokh | shem | chadash
-asher | pi | Yahweh
+vekora | lokh | shem | chadash | asher | pi | Yahweh
 yikovenu
 
 62:3
@@ -25,8 +23,7 @@ tiba'el
 
 62:5
 ki | yiv'al | bachur | betulah
-yiv'alukh | banayikh
-umesos | chatan | al | kalah
+yiv'alukh | banayikh | umesos | chatan | al | kalah
 yasis | alayikh
 elohayikh
 
@@ -41,18 +38,15 @@ ve'al | titenu | domi | lo
 ad | yekhonen | ve'ad | yasim | et | Yerushalim | tehilah | ba'aretz
 
 62:8
-Nishba | Yahweh | bimino
-uvizroa | uzo
+Nishba | Yahweh | bimino | uvizroa | uzo
 im | eten | et | deganekh | od | ma'akhal | le'oyevayikh
-ve'im | yishtu | venei | nekhar | tiroshekh
-asher | yaga'at
+ve'im | yishtu | venei | nekhar | tiroshekh | asher | yaga'at
 bo
 
 62:9
 ki | me'asfav | yokheluhu
 vehilu
-et | Yahweh
-umekabetzav | yishtuhu | bechatzrot | kodshi
+et | Yahweh | umekabetzav | yishtuhu | bechatzrot | kodshi
 
 62:10
 ivru | ivru | bashe'arim
@@ -73,6 +67,5 @@ lefanav
 
 62:12
 vekare'u | lahem | am | hakodesh
-ge'ulei | Yahweh
-velokh | yikare | derushah
+ge'ulei | Yahweh | velokh | yikare | derushah
 ir | lo | Ne'ezavah

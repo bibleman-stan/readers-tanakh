@@ -14,8 +14,7 @@ chazak | Beshomeron
 
 18:3
 vaiyikra | Ach'av
-el | Oadyahu
-asher | al | habayit
+el | Oadyahu | asher | al | habayit
 Ve'oadyahu | hayah | yare | et | Yahweh
 me'od
 
@@ -92,8 +91,7 @@ vaharagani
 
 18:15
 vaiyomer | Eliyahu
-chai | Yahweh | tzeva'ot
-asher | amadti
+chai | Yahweh | tzeva'ot | asher | amadti
 lefanav | ki | haiyom
 era'eh | elav
 
@@ -112,8 +110,7 @@ okher | Yisra'el
 
 18:18
 vaiyomer | lo | akharti | et | Yisra'el
-ki | im | atah
-uveit | avikha | ba'azavekhem | et | mitzvot | Yahweh
+ki | im | atah | uveit | avikha | ba'azavekhem | et | mitzvot | Yahweh
 vatelekh | acharei | habe'alim
 
 18:19
@@ -124,15 +121,13 @@ shulchan | Izavel
 
 18:20
 vaiyishlach | Ach'av
-bekhol | benei | Yisra'el
-vaiyikbotz | et | hanevi'im
+bekhol | benei | Yisra'el | vaiyikbotz | et | hanevi'im
 el | har | Hakarmel
 
 18:21
 vaiyigash | Eliyahu | el | kol | ha'am | vaiyomer | ad | matai | atem | posechim | al | shetei | hase'ipim
 im | Yahweh | ha'elohim | lekhu | acharav
-ve'im | haba'al | lekhu | acharav
-velo | anu | ha'am | oto
+ve'im | haba'al | lekhu | acharav | velo | anu | ha'am | oto
 davar
 
 18:22
@@ -169,8 +164,7 @@ vaiyikre'u | veshem | haba'al | mehaboker | ve'ad | hatzohorayim | lemor | haba'
 ve'ein | kol
 ve'ein | oneh
 vayfasechu
-al | hamizbeach
-asher | asah
+al | hamizbeach | asher | asah
 
 18:27
 vayhi | vatzohorayim | vayhatel | bahem | Eliyahu | vaiyomer | kir'u | vekol | gadol | ki | elohim | hu
@@ -182,8 +176,7 @@ veyikatz
 18:28
 vaiyikre'u | bekol | gadol
 vaiyitgodedu | kemishpatam
-bacharavot
-uvaremachim
+bacharavot | uvaremachim
 ad | shefokh | dam
 aleihem
 
@@ -205,8 +198,7 @@ heharus
 18:31
 vaiyikach | Eliyahu | sheteim | esreh | avanim
 kemispar
-shivtei | venei | Ya'ako
-asher | hayah | devar | Yahweh | elav | lemor
+shivtei | venei | Ya'ako | asher | hayah | devar | Yahweh | elav | lemor
 Yisra'el
 yihyeh | shemekha
 
@@ -242,8 +234,7 @@ vegam | et | hate'alah | mile | mayim
 vayhi | ba'alot | haminchah | vaiyigash | Eliyahu | hanavi | vaiyomar
 Yahweh | elohei | Avraham | Yitzchak | Veyisra'el
 haiyom | yivada | ki | atah | elohim | Beyisra'el
-va'ani | avdekha
-uvedivreikha | asiti
+va'ani | avdekha | uvedivreikha | asiti
 et | kol | hadevarim
 ha'eleh
 
@@ -318,7 +309,6 @@ vaiyelekh | Yizre'elah
 18:46
 veyad | Yahweh | hayetah | el | Eliyahu
 vayshanes
-matenav
-vaiyarotz | lifnei | Ach'av
+matenav | vaiyarotz | lifnei | Ach'av
 ad | bo'akhah
 Yizre'elah

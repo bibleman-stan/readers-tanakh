@@ -1,6 +1,5 @@
 34:1
-vatetze | Dinah | bat | Le'ah
-asher | yaldah
+vatetze | Dinah | bat | Le'ah | asher | yaldah
 Leya'ako
 lir'ot | bivnot | ha'aretz
 
@@ -78,8 +77,7 @@ le'ishah
 
 34:13
 vaiya'anu | venei | Ya'ako | et | Shekhem | ve'et | Chamor | aviv | bemirmah
-vaydaberu
-asher | time | et
+vaydaberu | asher | time | et
 Dinah | achotam
 
 34:14
@@ -101,14 +99,12 @@ veyashavnu | itekhem
 vehayinu | le'am | echad
 
 34:17
-ve'im | lo | tishme'u | eleinu | lehimol
-velakachnu | et | bitenu
+ve'im | lo | tishme'u | eleinu | lehimol | velakachnu | et | bitenu
 vehalakhenu
 
 34:18
 vaiyitevu | divreihem
-be'einei | Chamor
-uve'einei
+be'einei | Chamor | uve'einei
 Shekhem | ben | Chamor
 
 34:19
@@ -153,8 +149,7 @@ sha'ar | iro
 34:25
 vayhi | vaiyom | hashelishi | bihyotam | ko'avim | vaiyikchu | shenei | venei | Ya'ako | Shim'on | Velevi | achei | Dinah | ish | charbo
 vaiyavo'u | al | ha'ir
-betach
-vaiyahargu
+betach | vaiyahargu
 kol | zakhar
 
 34:26
@@ -165,8 +160,7 @@ vaiyetze'u
 
 34:27
 benei | Ya'ako | ba'u | al | hachalalim | vaiyavozu
-ha'ir
-asher | time'u
+ha'ir | asher | time'u
 achotam
 
 34:28
@@ -183,8 +177,7 @@ ve'et | kol | asher | babayit
 
 34:30
 vaiyomer | Ya'ako | el | Shim'on | ve'el | Levi | akhartem | oti
-lehav'isheni | beyoshev | ha'aretz | bakena'ani
-uvapperizi
+lehav'isheni | beyoshev | ha'aretz | bakena'ani | uvapperizi
 va'ani | metei | mispar
 vene'esfu | alai | vehikuni
 venishmadti

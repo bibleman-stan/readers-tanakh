@@ -7,8 +7,7 @@ lehaktir
 13:2
 vaiyikra | al | hamizbeach | bidvar | Yahweh
 vaiyomer | mizbeach | mizbeach
-koh
-amar | Yahweh
+koh | amar | Yahweh
 hineh | ven | nolad | leveit | David | Yoshiyahu | shemo
 vezavach | aleikha | et | kohanei | habamot | hamaktirim | aleikha
 ve'atzmot | adam
@@ -16,9 +15,7 @@ yisrefu | aleikha
 
 13:3
 venatan | baiyom | hahu | mofet | lemor
-zeh | hamofet
-asher
-diber | Yahweh
+zeh | hamofet | asher | diber | Yahweh
 hineh | hamizbeach | Nikra
 venishpakh
 hadeshen | asher | alav
@@ -54,22 +51,17 @@ ve'etenah | lekha | matat
 13:8
 vaiyomer | ish | ha'elohim | el | hamelekh
 im | titen | li | et | chatzi | veitekha | lo | avo
-imakh
-velo | okhal | lechem | velo | eshteh | mayim | bamakom
+imakh | velo | okhal | lechem | velo | eshteh | mayim | bamakom
 hazeh
 
 13:9
 ki | khen | tzivah | oti | bidvar | Yahweh | lemor
-lo | tokhal | lechem
-velo | tishteh | mayim
-velo | tashuv | baderekh
-asher | halakheta
+lo | tokhal | lechem | velo | tishteh | mayim
+velo | tashuv | baderekh | asher | halakheta
 
 13:10
 vaiyelekh
-bederekh | acher
-velo | shav | baderekh
-asher | ba | vah
+bederekh | acher | velo | shav | baderekh | asher | ba | vah
 el | Beit | El
 
 13:11
@@ -111,8 +103,7 @@ ve'ekhol | lachem
 
 13:16
 vaiyomer | lo | ukhal | lashuv | itakh
-velavo | itakh
-velo | okhal | lechem | velo | eshteh | itekha | mayim | bamakom
+velavo | itakh | velo | okhal | lechem | velo | eshteh | itekha | mayim | bamakom
 hazeh
 
 13:17
@@ -136,15 +127,12 @@ vayhi
 hem | yoshevim
 el | hashulchan
 vayhi | devar | Yahweh
-el | hanavi
-asher | heshivo
+el | hanavi | asher | heshivo
 
 13:21
 vaiyikra | el | ish | ha'elohim | asher | ba | Mihudah | lemor
-koh
-amar | Yahweh
-ya'an | ki | marita | pi | Yahweh
-velo | shamarta | et | hamitzvah
+koh | amar | Yahweh
+ya'an | ki | marita | pi | Yahweh | velo | shamarta | et | hamitzvah
 asher | tzivekha
 Yahweh | eloheikha
 
@@ -159,8 +147,7 @@ el | kever | avoteikha
 vayhi | acharei | akhelo | lechem
 ve'acharei | shetoto
 vaiyachavosh | lo | hachamor
-lanavi
-asher | heshivo
+lanavi | asher | heshivo
 
 13:24
 vaiyelekh
@@ -176,19 +163,15 @@ etzel | hanevelah
 vehineh | anashim | oerim | vaiyir'u | et | hanevelah | mushlekhet | baderekh
 ve'et | ha'aryeh
 omed
-etzel | hanevelah
-vaiyavo'u | vaydaberu | va'ir
-asher | hanavi | hazaken
+etzel | hanevelah | vaiyavo'u | vaydaberu | va'ir | asher | hanavi | hazaken
 yoshev | bah
 
 13:26
 vaiyishma | hanavi | asher | heshivo | min | haderekh
-vaiyomer | ish | ha'elohim | hu
-asher | marah
+vaiyomer | ish | ha'elohim | hu | asher | marah
 et | pi | Yahweh
 vaiyitenehu | Yahweh | la'aryeh | vaiyishberehu | vaymitehu
-kidvar | Yahweh
-asher | diber | lo
+kidvar | Yahweh | asher | diber | lo
 
 13:27
 vaydaber | el | banav | lemor
@@ -200,39 +183,32 @@ vaiyachavoshu
 vaiyelekh | vaiyimtza | et | nivlato | mushlekhet | baderekh
 vachamor | veha'aryeh
 omedim | etzel | hanevelah
-lo | akhal | ha'aryeh | et | hanevelah
-velo | shavar
+lo | akhal | ha'aryeh | et | hanevelah | velo | shavar
 et | hachamor
 
 13:29
 vaiyisa | hanavi | et | nivlat | ish | ha'elohim | vaiyanichehu | el | hachamor
 vayshivehu
 vaiyavo | el | ir | hanavi | hazaken
-lispod
-ulekavero
+lispod | ulekavero
 
 13:30
 vaiyanach | et | nivlato
-bekivro
-vaiyispedu | alav
+bekivro | vaiyispedu | alav
 ho | achi
 
 13:31
 vayhi | acharei | kavero | oto
 vaiyomer | el | banav | lemor
-bemoti | ukevartem | oti | bakever
-asher | ish | ha'elohim
+bemoti | ukevartem | oti | bakever | asher | ish | ha'elohim
 kavur | bo | etzel | atzmotav
 hanichu
 et | atzmotai
 
 13:32
 ki | hayoh | yihyeh | hadavar | asher | kara | bidvar | Yahweh
-al | hamizbeach
-asher | Beveit | El
-ve'al | kol | batei | habamot
-asher
-be'arei | Shomeron
+al | hamizbeach | asher | Beveit | El
+ve'al | kol | batei | habamot | asher | be'arei | Shomeron
 
 13:33
 achar | hadavar | hazeh
@@ -244,6 +220,5 @@ kohanei | vamot
 
 13:34
 vayhi | badavar | hazeh
-lechatat | beit | Yarave'am
-ulehakhchid | ulehashmid | me'al
+lechatat | beit | Yarave'am | ulehakhchid | ulehashmid | me'al
 penei | ha'adamah

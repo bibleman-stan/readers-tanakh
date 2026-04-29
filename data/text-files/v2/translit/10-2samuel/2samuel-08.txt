@@ -34,12 +34,10 @@ vaiyasem | David | netzivim | Ba'aram | Damesek
 vatehi | Aram | Ledavid | la'avadim
 nos'ei | minchah
 vaiyosha | Yahweh | et | David
-bekhol
-asher | halakh
+bekhol | asher | halakh
 
 8:7
-vaiyikach | David | et | shiltei | hazahav
-asher | hayu
+vaiyikach | David | et | shiltei | hazahav | asher | hayu
 el
 avdei | Hadad'azer
 vayvi'em
@@ -68,14 +66,11 @@ gam | otam
 hikdish | hamelekh | David
 Layahweh
 im | hakesef | vehazahav | asher | hikdish
-mikol | hagoyim
-asher | kibesh
+mikol | hagoyim | asher | kibesh
 
 8:12
-Me'aram | Umimo'av | umibenei | Amon
-umipelishtim
-Ume'amalek
-umishelal | Hadad'ezer | ben | Recho | melekh | Tzovah
+Me'aram | Umimo'av | umibenei | Amon | umipelishtim
+Ume'amalek | umishelal | Hadad'ezer | ben | Recho | melekh | Tzovah
 
 8:13
 vaiya'as | David | shem
@@ -87,8 +82,7 @@ vaiyasem | Be'edom | netzivim | bekhol | Edom | sam | netzivim
 vayhi | khol | Edom
 avadim | Ledavid
 vaiyoosha | Yahweh | et | David
-bekhol
-asher | halakh
+bekhol | asher | halakh
 
 8:15
 vaiyimlokh | David
@@ -111,5 +105,4 @@ sofer
 8:18
 Uvenayahu | ben | Yehoyada
 vehakereti
-vehapeleti
-uvenei | David | kohanim | hayu
+vehapeleti | uvenei | David | kohanim | hayu

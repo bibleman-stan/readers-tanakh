@@ -22,8 +22,7 @@ sarid
 
 3:4
 vanilkod | et | kol | arav | ba'et | hahiv
-lo | hayetah | kiryah
-asher | lo | lakachnu
+lo | hayetah | kiryah | asher | lo | lakachnu
 me'itam
 shishim | ir | kol | chevel | Argo | mamlekhet | Og | Babashan
 
@@ -44,8 +43,7 @@ vekhol | habehemah | ushelal | he'arim | bazonu | lanu
 
 3:8
 vanikach | ba'et | hahiv | et | ha'aretz | miyad | shenei | malkhei | ha'emori
-asher
-be'ever | Haiyarden | minachal | Arnon
+asher | be'ever | Haiyarden | minachal | Arnon
 ad | har | Chermon
 
 3:9
@@ -70,8 +68,7 @@ tesha | amot | arekah | ve'arba | amot | rachebah | be'amat | ish
 3:12
 ve'et | ha'aretz | hazot | yarashnu | ba'et | hahiv
 Me'aro'er | asher | al | nachal | Arnon | vachatzi | har | Hagil'ad | ve'arav
-natati | laru'uveni
-velagadi
+natati | laru'uveni | velagadi
 
 3:13
 veyeter | Hagil'ad | vekhol | Habashan | mamlekhet | Og
@@ -114,26 +111,22 @@ chalutzim | ta'avru | lifnei | acheikhem | benei | Yisra'el | kol | benei | chay
 3:19
 rak | nesheikhem | vetapekhem | umiknekhem
 yada'ti | ki | mikneh | rav | lakhem
-yeshevu | be'areikhem
-asher | natati
+yeshevu | be'areikhem | asher | natati
 lakhem
 
 3:20
 ad | asher | yaniach | Yahweh | la'acheikhem | kakhem
 veyareshu | gam | hem
-et | ha'aretz
-asher | Yahweh | eloheikhem | noten | lahem
+et | ha'aretz | asher | Yahweh | eloheikhem | noten | lahem
 be'ever | Haiyarden
-veshavtem | ish | lirushato
-asher | natati
+veshavtem | ish | lirushato | asher | natati
 lakhem
 
 3:21
 ve'et | Yehoshua | tziveiti | ba'et | hahiv
 lemor
 eineikha | haro'ot | et | kol | asher | asah | Yahweh | eloheikhem | lishnei | hamelakhim | ha'eleh
-ken | ya'aseh | Yahweh | lekhol | hamamlakhot
-asher | atah
+ken | ya'aseh | Yahweh | lekhol | hamamlakhot | asher | atah
 over | shamah
 
 3:22
@@ -151,15 +144,11 @@ lemor
 Adonai | Yahweh | atah | hachilota | lehar'ot | et | avdekha
 et | gadelekha
 ve'et | yadekha
-hachazakah
-asher | mi | el | bashamayim | uva'aretz
-asher | ya'aseh | khema'aseikha
-vekhigvurotekha
+hachazakah | asher | mi | el | bashamayim | uva'aretz
+asher | ya'aseh | khema'aseikha | vekhigvurotekha
 
 3:25
-e'berah | na | ve'er'eh | et | ha'aretz | hatovah
-asher
-be'ever | Haiyarden
+e'berah | na | ve'er'eh | et | ha'aretz | hatovah | asher | be'ever | Haiyarden
 hahar | hatov | hazeh
 Vehalevanon
 
@@ -180,8 +169,7 @@ et | Haiyarden | hazeh
 vetzav | et | Yehoshua
 vechazekehu | ve'ametzehu | ki | hu | ya'avor | lifnei | ha'am | hazeh
 vehu | yanchil | otam
-et | ha'aretz
-asher | tir'eh
+et | ha'aretz | asher | tir'eh
 
 3:29
 vaneshev | bagay | mul | Beit | Pe'or

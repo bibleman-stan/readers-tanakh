@@ -5,8 +5,7 @@ el | Mosheh | lemor
 15:2
 daber | el | benei | Yisra'el
 ve'amarta
-alehem | ki | tavo'u | el | eretz | moshevoteikhem
-asher | ani
+alehem | ki | tavo'u | el | eretz | moshevoteikhem | asher | ani
 noten | lakhem
 
 15:3
@@ -66,8 +65,7 @@ ov | laseh | vakevasim
 o | va'izim
 
 15:12
-kamispar
-asher | ta'asu
+kamispar | asher | ta'asu
 kakhah | ta'asu | la'echad | kemisparam
 
 15:13
@@ -82,14 +80,12 @@ Layahweh | ka'asher | ta'asu | ken | ya'aseh
 
 15:15
 hakahal
-chukah | achat | lakhem
-velager | hagar
+chukah | achat | lakhem | velager | hagar
 chukat | olam | ledoroteikhem | kakhem | kager | yihyeh
 lifnei | Yahweh
 
 15:16
-torah | achat | umishpat | echad | yihyeh | lakhem
-velager
+torah | achat | umishpat | echad | yihyeh | lakhem | velager
 hagar | itekhem
 
 15:17
@@ -99,8 +95,7 @@ el | Mosheh | lemor
 15:18
 daber | el | benei | Yisra'el
 ve'amarta
-alehem | bevo'akhem | el | ha'aretz
-asher | ani | mevi | etkhem
+alehem | bevo'akhem | el | ha'aretz | asher | ani | mevi | etkhem
 shamah
 
 15:19
@@ -120,8 +115,7 @@ titenu | Layahweh
 terumah | ledoroteikhem
 
 15:22
-vekhi | tishgu
-velo | ta'asu
+vekhi | tishgu | velo | ta'asu
 et | kol | hamitzvot
 ha'eleh
 asher | diber | Yahweh
@@ -147,8 +141,7 @@ vehem | hevi'u | et | karebanam | isheh | Layahweh | vechatatam | lifnei | Yahwe
 al | shigatam
 
 15:26
-venislach | lekhol | adat | benei | Yisra'el
-velager
+venislach | lekhol | adat | benei | Yisra'el | velager
 hagar | betokham | ki | lekhol | ha'am | bishgagah
 
 15:27
@@ -163,8 +156,7 @@ lekhaper | alav
 venislach | lo
 
 15:29
-ha'ezrach | bivnei | Yisra'el
-velager
+ha'ezrach | bivnei | Yisra'el | velager
 hagar | betokham
 torah | achat | yihyeh | lakhem
 la'oseh | bishgagah
@@ -184,8 +176,7 @@ avonah | vah
 
 15:32
 vaiyihyu | venei | Yisra'el
-bamidbar
-vaiyimtze'u | ish | mekoshesh | etzim
+bamidbar | vaiyimtze'u | ish | mekoshesh | etzim
 beyom | hashabat
 
 15:33
@@ -227,8 +218,7 @@ petil | tekhelet
 vehayah | lakhem | letzitzit
 ure'item | oto | uzekhartem | et | kol | mitzvot | Yahweh
 va'asitem
-otam
-velo | taturu | acharei | levavkhem | ve'acharei | eineikhem
+otam | velo | taturu | acharei | levavkhem | ve'acharei | eineikhem
 asher | atem | zonim
 achareihem
 

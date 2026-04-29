@@ -5,8 +5,7 @@ el | Mosheh | lemor
 14:2
 daber | el | benei | Yisra'el
 veyashuvu | veyachanu | lifnei | Pi | Hachirot
-bein | Migdol
-uvein | haiyam
+bein | Migdol | uvein | haiyam
 lifnei | Ba'al | Tzefon
 nikhcho | tachanu
 al | haiyam
@@ -49,8 +48,7 @@ al | kulo
 14:8
 vaychazek | Yahweh | et | lev | par'oh | melekh | Mitzrayim
 vaiyirdof
-acharei | benei | Yisra'el
-uvenei | Yisra'el
+acharei | benei | Yisra'el | uvenei | Yisra'el
 yotze'im | beyad | ramah
 
 14:9
@@ -101,8 +99,7 @@ daber | el | benei | Yisra'el
 veyisa'u
 
 14:16
-ve'atah | harem | et | matekha | uneteh | et | yadekha | al | haiyam
-uveka'ehu
+ve'atah | harem | et | matekha | uneteh | et | yadekha | al | haiyam | uveka'ehu
 veyavo'u | venei | Yisra'el | betokh | haiyam
 baiyabashah
 
@@ -110,19 +107,16 @@ baiyabashah
 va'ani | hini | mechazek | et | lev | Mitzrayim
 veyavo'u
 achareihem
-ve'ikavedah | befar'oh | uvekhol | cheilo | berikhbo
-uvefarashav
+ve'ikavedah | befar'oh | uvekhol | cheilo | berikhbo | uvefarashav
 
 14:18
 veyade'u | Mitzrayim
-ki | ani | Yahweh | behikavedi | befar'oh | berikhbo
-uvefarashav
+ki | ani | Yahweh | behikavedi | befar'oh | berikhbo | uvefarashav
 
 14:19
 vaiyisa | mal'akh | ha'elohim | haholekh | lifnei | machaneh | Yisra'el
 vaiyelekh
-me'achareihem
-vaiyisa | amud | he'anan | mipeneihem
+me'achareihem | vaiyisa | amud | he'anan | mipeneihem
 vaiya'amod
 me'achareihem
 
@@ -130,22 +124,19 @@ me'achareihem
 vaiyavo | bein | machaneh | Mitzrayim | uvein | machaneh | Yisra'el
 vayhi | he'anan | vehachoshekh
 vaiya'er
-et | halayelah
-velo | karav | zeh | el | zeh | kol | halayelah
+et | halayelah | velo | karav | zeh | el | zeh | kol | halayelah
 
 14:21
 vaiyet | Mosheh | et | yado | al | haiyam
 vaiyolekh | Yahweh | et | haiyom | beruach | kadim | azah | kol | halaylah
 vaiyasem | et | haiyam
-lecharavah
-vaiyibake'u
+lecharavah | vaiyibake'u
 hamayim
 
 14:22
 vaiyavo'u | venei | Yisra'el | betokh | haiyam
 baiyabashah
-vehamayim | lahem | chomah | miminam
-umisemolam
+vehamayim | lahem | chomah | miminam | umisemolam
 
 14:23
 vaiyirdefu | Mitzrayim | vaiyavo'u | achareihem
@@ -195,13 +186,11 @@ ad | echad
 14:29
 uvenei | Yisra'el | halekhu | vaiyabashah
 betokh | haiyam
-vehamayim | lahem | chomah | miminam
-umisemolam
+vehamayim | lahem | chomah | miminam | umisemolam
 
 14:30
 vaiyoosha | Yahweh | baiyom | hahu | et | Yisra'el
-miyad | Mitzrayim
-vaiyar | Yisra'el | et | Mitzrayim
+miyad | Mitzrayim | vaiyar | Yisra'el | et | Mitzrayim
 met
 al | sefat | haiyam
 

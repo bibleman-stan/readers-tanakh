@@ -1,7 +1,5 @@
 8:1
-mi | kehechakham
-umi | yodea
-pesher | davar
+mi | kehechakham | umi | yodea | pesher | davar
 chakhemat | adam | ta'ir | panav
 ve'oz | panav
 yeshune
@@ -19,8 +17,7 @@ ya'aseh
 
 8:4
 ba'asher | devar | melekh
-shilton
-umi | yomar | lo | mah | ta'aseh
+shilton | umi | yomar | lo | mah | ta'aseh
 
 8:5
 shomer | mitzvah
@@ -44,21 +41,18 @@ yagid | lo
 8:8
 ein | adam | shalit | baruach | likhlo | et | haruach
 ve'ein | shilton | beyom | hamavet
-ve'ein | mishlachat | bamilchamah
-velo | yemalet | resha
+ve'ein | mishlachat | bamilchamah | velo | yemalet | resha
 et | be'alav
 
 8:9
-et | kol | zeh | ra'iti | venaton | et | libi | lekhol | ma'aseh
-asher | Na'asah
+et | kol | zeh | ra'iti | venaton | et | libi | lekhol | ma'aseh | asher | Na'asah
 tachat | hashamesh
 et | asher | shalat | ha'adam | be'adam
 lera | lo
 
 8:10
 uvekhen | ra'iti | resha'im | kevurim | vava'u | umimekom | kadovosh | yehalekhu
-veyishtakechu | va'ir
-asher | ken | asu
+veyishtakechu | va'ir | asher | ken | asu
 gam | zeh
 havel
 
@@ -72,13 +66,11 @@ la'asot | ra
 8:12
 asher | chote | oseh | ra | me'at
 uma'arikh | lo | ki | gam | yodea | ani
-asher | yihyeh | tov | leyir'ei | ha'elohim
-asher | yire'u
+asher | yihyeh | tov | leyir'ei | ha'elohim | asher | yire'u
 milefanav
 
 8:13
-vetov | lo | yihyeh | larasha
-velo | ya'arikh | yamim | katzel
+vetov | lo | yihyeh | larasha | velo | ya'arikh | yamim | katzel
 asher | einenu | yare
 milifnei | elohim
 
@@ -92,16 +84,13 @@ shegam | zeh
 havel
 
 8:15
-veshibachti | ani | et | hasimchah
-asher | ein | tov | la'adam | tachat | hashemesh
-ki | im | le'ekhol | velishtot
-velismoach
+veshibachti | ani | et | hasimchah | asher | ein | tov | la'adam | tachat | hashemesh
+ki | im | le'ekhol | velishtot | velismoach
 vehu | yilvenu | va'amalo | yemei | chaiyav | asher | natan | lo | ha'elohim
 tachat | hashamesh
 
 8:16
-ka'asher | natati | et | libi | lada'at | chokhmah
-velir'ot | et | ha'inyan
+ka'asher | natati | et | libi | lada'at | chokhmah | velir'ot | et | ha'inyan
 asher | Na'asah
 al | ha'aretz | ki | gam | baiyom | uvalaylah
 shenah | be'einav

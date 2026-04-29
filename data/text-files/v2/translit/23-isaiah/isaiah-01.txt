@@ -1,6 +1,5 @@
 1:1
-chazon | Yesha'yahu | ven | Amotz
-asher | chazah
+chazon | Yesha'yahu | ven | Amotz | asher | chazah
 al | Yehudah
 Virushalim
 bimei | Uziyahu | Yotam | Achaz | Yechizkiyahu | malkhei | Yehudah
@@ -33,10 +32,8 @@ davai
 
 1:6
 mikaf | regel | ve'ad | rosh | ein | bo | metom
-petza | vechaburah
-umakah | teriyah
-lo | zoru | velo | chubashu
-velo | rukekhah | bashamen
+petza | vechaburah | umakah | teriyah
+lo | zoru | velo | chubashu | velo | rukekhah | bashamen
 
 1:7
 artzekhem | shemamah
@@ -119,8 +116,7 @@ tuv | ha'aretz
 tokhelu
 
 1:20
-ve'im | tema'anu
-umeritem
+ve'im | tema'anu | umeritem
 cherev | te'ukelu | ki | pi | Yahweh
 diber
 
@@ -173,10 +169,8 @@ ve'ozevei | Yahweh
 yikhlu
 
 1:29
-ki | yevoshu | me'eilim
-asher | chamadtem
-vetachperu | mehagganot
-asher | bechartem
+ki | yevoshu | me'eilim | asher | chamadtem
+vetachperu | mehagganot | asher | bechartem
 
 1:30
 ki | tihyu | ke'elah | novelet | aleha
@@ -186,7 +180,5 @@ ein | lah
 
 1:31
 vehayah | hechason | lin'oret
-ufo'alo
-lenitzotz
-uva'aru | sheneihem | yachdav
+ufo'alo | lenitzotz | uva'aru | sheneihem | yachdav
 ve'ein | mekhabeh

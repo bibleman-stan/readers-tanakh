@@ -1,9 +1,7 @@
 6:1
 vaiyomer | Yahweh | el | Mosheh
-atah | tir'eh
-asher | e'eseh
-lefar'oh | ki | veyad | chazakah | yeshalechem
-uveyad | chazakah
+atah | tir'eh | asher | e'eseh
+lefar'oh | ki | veyad | chazakah | yeshalechem | uveyad | chazakah
 yegareshem | me'artzo
 
 6:2
@@ -23,8 +21,7 @@ et | eretz | megureihem
 asher | garu | vah
 
 6:5
-vegam | ani | shama'ti | et | na'akat | benei | Yisra'el
-asher | Mitzrayim
+vegam | ani | shama'ti | et | na'akat | benei | Yisra'el | asher | Mitzrayim
 ma'avidim | otam
 va'ezkor
 et | beriti
@@ -33,8 +30,7 @@ et | beriti
 lakhen | emor | livnei | Yisra'el | ani | Yahweh
 vehotzeti | etkhem | mitachat | sivlot | Mitzrayim
 vehitzalti | etkhem | me'avodatam
-vega'alti | etkhem | bizroa | netuyah
-uvishfatim
+vega'alti | etkhem | bizroa | netuyah | uvishfatim
 gedolim
 
 6:7
@@ -45,18 +41,14 @@ hamotzi | etkhem | mitachat
 sivlot | Mitzrayim
 
 6:8
-veheveti | etkhem | el | ha'aretz
-asher | nasati | et | yadi
-latet | otah | Le'avraham | Leyitzchak
-Uleya'ako
+veheveti | etkhem | el | ha'aretz | asher | nasati | et | yadi
+latet | otah | Le'avraham | Leyitzchak | Uleya'ako
 venatati | otah | lakhem | morashah
 ani | Yahweh
 
 6:9
 vaydaber | Mosheh | ken
-el | benei | Yisra'el
-velo | shame'u | el | Mosheh | mikotzer | ruach
-ume'avodah
+el | benei | Yisra'el | velo | shame'u | el | Mosheh | mikotzer | ruach | ume'avodah
 kashah
 
 6:10
@@ -97,8 +89,7 @@ eleh | mishpechot | Shim'on
 6:16
 ve'eleh | shemot | benei | Levi | letoledotam
 Gereshon
-Ukehat
-Umerari
+Ukehat | Umerari
 ushenei | chaiyei | Levi
 sheva | usheloshim | ume'at
 shanah
@@ -107,8 +98,7 @@ shanah
 benei | Gereshon | Livni | Veshim'i | lemishpechotam
 
 6:18
-uvenei | Kehat
-Amram | Veyitzhar
+uvenei | Kehat | Amram | Veyitzhar
 Vechevron
 Ve'uzi'el
 ushenei | chaiyei | Kehat
@@ -160,8 +150,7 @@ eleh | rashei | avot | halviyim | lemishpechotam
 
 6:26
 hu | Aharon
-Umosheh
-asher | amar | Yahweh | lahem
+Umosheh | asher | amar | Yahweh | lahem
 hotzi'u | et | benei | Yisra'el | me'eretz | Mitzrayim
 al | tziv'otam
 

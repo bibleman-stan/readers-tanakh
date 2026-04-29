@@ -56,6 +56,10 @@ REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 V1_DIR = REPO_ROOT / "data" / "text-files" / "v1" / "he-baseline"
 V2_DIR = REPO_ROOT / "data" / "text-files" / "v2" / "he"
 
+# Make _shared importable when this script is run as __main__.
+sys.path.insert(0, str(REPO_ROOT / "validators"))
+from _shared.poetic_register import is_poetic_register  # noqa: E402
+
 # ---------------------------------------------------------------------------
 # Hebrew Unicode helpers
 # ---------------------------------------------------------------------------
@@ -138,6 +142,33 @@ PUNCTUATION_SKELETONS: set[str] = {
     "פ",   # petucha paragraph marker
     "",    # empty after stripping
 }
+
+# ---------------------------------------------------------------------------
+# Chapter / book name extraction from path
+# ---------------------------------------------------------------------------
+
+CHAPTER_FILENAME_RE = re.compile(r"-(\d+)\.txt$", re.IGNORECASE)
+
+
+def book_name_from_path(path: Path) -> str:
+    """Return the book directory name (e.g. '01-genesis')."""
+    return path.parent.name
+
+
+def chapter_from_path(path: Path) -> int | None:
+    m = CHAPTER_FILENAME_RE.search(path.name)
+    if not m:
+        return None
+    return int(m.group(1))
+
+
+def parse_verse_ref(line: str):
+    """If line is a 'C:V' verse-reference line, return (chapter, verse). Else None."""
+    s = line.strip()
+    m = re.match(r"^(?:\S+\s+)?(\d+):(\d+)\s*$", s)
+    if not m:
+        return None
+    return int(m.group(1)), int(m.group(2))
 
 
 def is_punctuation_only(skeleton: str) -> bool:
@@ -226,11 +257,29 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
     except UnicodeDecodeError:
         lines = path.read_text(encoding="utf-8-sig").splitlines()
 
+    book = book_name_from_path(path)
+    chapter_from_file = chapter_from_path(path)
+
+    # Track current chapter/verse as we scan (updated from verse-reference lines)
+    cur_chapter: int | None = chapter_from_file
+    cur_verse: int | None = None
+
     for i, line in enumerate(lines):
+        # Update chapter/verse tracking before skippability check
+        ref = parse_verse_ref(line)
+        if ref is not None:
+            cur_chapter, cur_verse = ref
+            continue
+
         if is_skippable(line):
             continue
 
         line_no = i + 1  # 1-based
+
+        # Guard 0: poetic register — suppress false positives in Sifrei Emet
+        # and embedded-poetry chapters (Song of Songs, Lamentations, etc.).
+        if cur_chapter is not None and is_poetic_register(book, cur_chapter, cur_verse):
+            continue
 
         # Guard 1: clause-boundary — subordinator at verse-end is not stranded.
         if line_ends_at_clause_boundary(line):
@@ -265,13 +314,13 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
         if next_skeleton is None:
             continue
 
-        # Heuristic: finite verb or NP start suggests clause content.
+        # Guard 3: require the next line to look like clause content (finite
+        # verb or NP head). This implements the is_clause_content gate that
+        # was computed but pass'd unused in the original code — the comment
+        # "don't skip even if not in explicit lists" was the bug.
         is_clause_content = is_finite_verb_start(next_skeleton) or is_np_start(next_skeleton)
         if not is_clause_content:
-            # Even if not in our explicit lists, don't skip — the subordinator
-            # + any non-empty next line is likely a bond violation.
-            # Only strict guards (clause boundary, sof-pasuq) prevent flagging.
-            pass
+            continue
 
         # Identify the original token (with pointing) for display.
         tokens = line.rstrip().split()

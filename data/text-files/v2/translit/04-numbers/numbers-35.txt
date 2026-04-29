@@ -7,21 +7,17 @@ lemor
 35:2
 tzav | et | benei | Yisra'el
 venatenu | lalviyim | minachalat | achuzatam
-arim | lashavet
-umigrash | le'arim | sevivoteihem
+arim | lashavet | umigrash | le'arim | sevivoteihem
 titenu
 lalviyim
 
 35:3
 vehayu | he'arim | lahem
-lashavet
-umigresheihem | yihyu | livhemtam | velirkhusham
-ulekhol
+lashavet | umigresheihem | yihyu | livhemtam | velirkhusham | ulekhol
 chaiyatam
 
 35:4
-umigreshei | he'arim
-asher | titenu
+umigreshei | he'arim | asher | titenu
 lalviyim | mikir | ha'ir | vachutzah
 elef | amah | saviv
 
@@ -33,8 +29,7 @@ he'arim
 
 35:6
 ve'et | he'arim | asher | titenu | lalviyim
-et | shesh | arei | hamiklat
-asher | titenu
+et | shesh | arei | hamiklat | asher | titenu
 lanus | shamah
 harotzeach
 va'aleihem | titenu
@@ -50,8 +45,7 @@ ve'et | migresheihen
 
 35:8
 vehe'arim | asher | titenu | me'achuzat | benei | Yisra'el
-me'et | harav | tarbu
-ume'et | ham'at
+me'et | harav | tarbu | ume'et | ham'at
 tam'itu
 ish | kefi | nachalato | asher | yinchalu
 yiten | me'arav
@@ -74,14 +68,12 @@ tihyeinah | lakhem
 venas | shamah | rotzeach | makeh | nefesh | bishgagah
 
 35:12
-vehayu | lakhem | he'arim | lemiklat | migo'el
-velo | yamut | harotzeach
+vehayu | lakhem | he'arim | lemiklat | migo'el | velo | yamut | harotzeach
 ad | amedo | lifnei | ha'edah
 lamishpat
 
 35:13
-vehe'arim
-asher | titenu
+vehe'arim | asher | titenu
 shesh | arei | miklat
 tihyeinah | lakhem
 
@@ -140,13 +132,11 @@ ov | hishlikh | alav | kol | keli | belo | tzediyah
 o | vekhol | even | asher | yamut | bah | belo | re'ot
 vaiyapel | alav
 vaiyamot
-vehu | lo | oyev | lo
-velo | mevakesh
+vehu | lo | oyev | lo | velo | mevakesh
 ra'ato
 
 35:24
-veshafetu | ha'edah | bein | hamakeh
-uvein
+veshafetu | ha'edah | bein | hamakeh | uvein
 go'el | hadam | al | hamishpatim
 ha'eleh
 
@@ -161,8 +151,7 @@ asher | mashach | oto | beshemen | hakodesh
 35:26
 ve'im | yatzo | yetze
 harotzeach
-et | gevul | ir | miklato
-asher | yanus
+et | gevul | ir | miklato | asher | yanus
 shamah
 
 35:27
@@ -210,8 +199,7 @@ hakohen
 velo | tachanifu | et | ha'aretz | asher | atem | bah
 ki | hadam
 hu | yachanif
-et | ha'aretz
-vela'aretz | lo | yekhupar | ladam | asher | shupakh | bah
+et | ha'aretz | vela'aretz | lo | yekhupar | ladam | asher | shupakh | bah
 ki | im | bedam | shofekho
 
 35:34

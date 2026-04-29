@@ -1,14 +1,12 @@
 19:1
 vaiyetze | hagoral | hasheni | Leshim'on
-lemateh | venei | Shim'on | lemishpechotam
-vayhi | nachalatam
+lemateh | venei | Shim'on | lemishpechotam | vayhi | nachalatam
 betokh
 nachalat | benei | Yehudah
 
 19:2
 vayhi | lahem
-benachalatam | Be'er | Sheva | Vesheva
-Umoladah
+benachalatam | Be'er | Sheva | Vesheva | Umoladah
 
 19:3
 Vachatzar | Shu'al | Uvalah
@@ -54,9 +52,7 @@ ad | Sarid
 19:11
 ve'alah | gevulam | laiyamah | Umar'alah
 ufaga | Bedabashet
-ufaga | el | hanachal
-asher
-al | penei | Yakene'am
+ufaga | el | hanachal | asher | al | penei | Yakene'am
 
 19:12
 veshav | Misarid | kedemah | mizrach | hashemesh
@@ -111,8 +107,7 @@ Veharabit | Vekishyon
 Va'avetz
 
 19:21
-Veremet | Ve'ein | Ganim | Ve'ein | Chadah
-Uveit | Patzetz
+Veremet | Ve'ein | Ganim | Ve'ein | Chadah | Uveit | Patzetz
 
 19:22
 ufaga | hagevul | Betavor | Veshachatzumah | Uveit | Shemesh
@@ -133,14 +128,11 @@ lemateh | venei | Asher | lemishpechotam
 19:25
 vayhi
 gevulam
-Chelkat | Vachali
-Vaveten | Ve'akhshaf
+Chelkat | Vachali | Vaveten | Ve'akhshaf
 
 19:26
-Ve'alamelekh | Ve'am'ad
-Umish'al
-ufaga | Bekharmel | haiyamah
-Uveshichor
+Ve'alamelekh | Ve'am'ad | Umish'al
+ufaga | Bekharmel | haiyamah | Uveshichor
 Livnat
 
 19:27
@@ -188,8 +180,7 @@ Haiyarden
 veshav | hagevul | yamah | Aznot | Tavor
 veyatza | misham
 Chukokah
-ufaga | Bizvulun | minegev | Uve'asher | paga | miyam
-Uvihudah
+ufaga | Bizvulun | minegev | Uve'asher | paga | miyam | Uvihudah
 Haiyarden | mizrach | hashamesh
 
 19:35
@@ -208,8 +199,7 @@ Ve'ein | Chatzor
 
 19:38
 Veyir'on | Umigdal | El
-Chorem | Uveit | Anat
-Uveit | Shamesh
+Chorem | Uveit | Anat | Uveit | Shamesh
 arim | tesha | esreh
 vechatzreihen
 
@@ -237,8 +227,7 @@ Ve'eilon | Vetimnatah
 Ve'ekron
 
 19:44
-Ve'eltekeh | Vegibeton
-Uva'alat
+Ve'eltekeh | Vegibeton | Uva'alat
 
 19:45
 Vihud | Uvenei | Verak

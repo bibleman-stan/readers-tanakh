@@ -21,8 +21,7 @@ hakodashim
 uva | Aharon | uvanav | binsoa | hamachaneh
 vehoridu
 et
-parokhet | hamasakh
-vekhisu | vah
+parokhet | hamasakh | vekhisu | vah
 et
 aron | ha'edut
 
@@ -35,13 +34,11 @@ vesamu | badav
 ve'al | shulchan | hapanim | yifresu | beged | tekhelet
 venatenu | alav | et | hake'arot | ve'et | hakapot | ve'et | hamenakiyot
 ve'et
-kesot | hanasekh
-velechem | hatamid
+kesot | hanasekh | velechem | hatamid
 alav | yihyeh
 
 4:8
-ufaresu | aleihem | beged | tola'at | shani
-vekhisu | oto | bemikhseh
+ufaresu | aleihem | beged | tola'at | shani | vekhisu | oto | bemikhseh
 or | tachash
 vesamu
 et | badav
@@ -88,17 +85,14 @@ vesamu | vadav
 
 4:15
 vekhilah | Aharon | uvanav | lekhasot | et | hakodesh | ve'et | kol | kelei | hakodesh | binsoa | hamachaneh
-ve'acharei | khen | yavo'u | venei | Kehat | laset
-velo | yige'u | el | hakodesh
-vametu
+ve'acharei | khen | yavo'u | venei | Kehat | laset | velo | yige'u | el | hakodesh | vametu
 eleh | masa | venei | Kehat | be'ohel | mo'ed
 
 4:16
 ufekudat | El'azar | ben | Aharon | hakohen | shemen | hama'or | uketoret | hasamim
 uminchat | hatamid
 veshemen | hamishchah
-pekudat | kol | hamishkan | vekhol | asher | bo | bekodesh
-uvekhelav
+pekudat | kol | hamishkan | vekhol | asher | bo | bekodesh | uvekhelav
 
 4:17
 vaydaber | Yahweh
@@ -118,8 +112,7 @@ vesamu | otam | ish | ish | al | avodato
 ve'el | masa'o
 
 4:20
-velo | yavo'u | lir'ot | kevala | et | hakodesh
-vametu
+velo | yavo'u | lir'ot | kevala | et | hakodesh | vametu
 
 4:21
 vaydaber | Yahweh
@@ -138,8 +131,7 @@ la'avod | avodah | be'ohel | mo'ed
 4:24
 zot | avodat | mishpechot
 hagereshuni
-la'avod
-ulemasa
+la'avod | ulemasa
 
 4:25
 venase'u | et | yeri'ot | hamishkan | ve'et | ohel | mo'ed | mikhsehu
@@ -182,16 +174,13 @@ ohel | mo'ed
 
 4:31
 vezot | mishmeret | masa'am | lekhol | avodatam | be'ohel | mo'ed
-karshei | hamishkan
-uverichav
+karshei | hamishkan | uverichav
 ve'amudav | va'adanav
 
 4:32
 ve'amudei | hechatzer | saviv | ve'adneihem | vitedotam | umeitreihem
-lekhol | keleihem
-ulekhol
-avodatam
-uveshemot | tifkedu
+lekhol | keleihem | ulekhol
+avodatam | uveshemot | tifkedu
 et | kelei | mishmeret | masa'am
 
 4:33
@@ -202,8 +191,7 @@ hakohen
 
 4:34
 vaiyifkod | Mosheh | Ve'aharon | unesi'ei | ha'edah
-et | benei | hakehati | lemishpechotam
-uleveit | avotam
+et | benei | hakehati | lemishpechotam | uleveit | avotam
 
 4:35
 miben | sheloshim | shanah | vama'lah
@@ -221,8 +209,7 @@ asher | pakad | Mosheh | Ve'aharon
 al | pi | Yahweh | beyad | Mosheh
 
 4:38
-ufekudei | benei | Gereshon | lemishpechotam
-uleveit | avotam
+ufekudei | benei | Gereshon | lemishpechotam | uleveit | avotam
 
 4:39
 miben | sheloshim | shanah | vama'lah
@@ -261,8 +248,7 @@ al | pi | Yahweh | beyad | Mosheh
 
 4:46
 kal | hapekudim | asher | pakad | Mosheh | Ve'aharon | unesi'ei | Yisra'el
-et | halviyim | lemishpechotam
-uleveit | avotam
+et | halviyim | lemishpechotam | uleveit | avotam
 
 4:47
 miben | sheloshim | shanah | vama'lah

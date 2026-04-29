@@ -38,8 +38,7 @@ petach
 mishkan | ohel | mo'ed
 
 40:7
-venatata | et | hakiyor | bein | ohel | mo'ed
-uvein | hamizbeach
+venatata | et | hakiyor | bein | ohel | mo'ed | uvein | hamizbeach
 venatata | sham | mayim
 
 40:8
@@ -49,8 +48,7 @@ et | masakh
 sha'ar | hechatzer
 
 40:9
-velakachta | et | shemen | hamishchah
-umashachta | et | hamishkan
+velakachta | et | shemen | hamishchah | umashachta | et | hamishkan
 ve'et | kol | asher | bo
 vekidashta | oto | ve'et | kol | kelav
 vehayah | kodesh
@@ -77,8 +75,7 @@ verachatzta | otam | bamayim
 40:13
 vehilbashta | et | Aharon
 et | bigdei | hakodesh
-umashachta | oto | vekidashta | oto
-vekhihen | li
+umashachta | oto | vekidashta | oto | vekhihen | li
 
 40:14
 ve'et | banav
@@ -86,8 +83,7 @@ takriv
 vehilbashta | otam | kutonot
 
 40:15
-umashachta | otam | ka'asher | mashachta | et | avihem
-vekhihanu
+umashachta | otam | ka'asher | mashachta | et | avihem | vekhihanu
 li
 vehayetah | lihyot | lahem | mashechatam | likhhunat | olam
 ledorotam
@@ -186,8 +182,7 @@ et | Mosheh
 
 40:30
 vaiyasem | et | hakiyor
-bein | ohel | mo'ed
-uvein | hamizbeach
+bein | ohel | mo'ed | uvein | hamizbeach
 vaiyiten | shamah | mayim
 lerachetzah
 
@@ -213,14 +208,12 @@ et | hamelakhah
 
 40:34
 vaykhas | he'anan
-et | ohel | mo'ed
-ukhevod | Yahweh | male
+et | ohel | mo'ed | ukhevod | Yahweh | male
 et | hamishkan
 
 40:35
 velo | yakhol | Mosheh | lavo | el | ohel | mo'ed | ki | shakhan | alav
-he'anan
-ukhevod | Yahweh | male
+he'anan | ukhevod | Yahweh | male
 et | hamishkan
 
 40:36
@@ -229,8 +222,7 @@ yis'u | benei | Yisra'el | bekhol | mas'eihem
 
 40:37
 ve'im | lo | ye'aleh
-he'anan
-velo | yis'u
+he'anan | velo | yis'u
 ad | yom
 he'aloto
 

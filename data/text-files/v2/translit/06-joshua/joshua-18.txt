@@ -5,8 +5,7 @@ et | ohel | mo'ed
 veha'aretz | Nikhbeshah | lifneihem
 
 18:2
-vaiyivateru | bivnei | Yisra'el
-asher | lo | chalku
+vaiyivateru | bivnei | Yisra'el | asher | lo | chalku
 et | nachalatam
 shiv'ah | shevatim
 
@@ -14,8 +13,7 @@ shiv'ah | shevatim
 vaiyomer | Yehoshua
 el | benei | Yisra'el
 ad | anah | atem | mitrapim
-lavo | lareshet | et | ha'aretz
-asher | natan | lakhem
+lavo | lareshet | et | ha'aretz | asher | natan | lakhem
 Yahweh
 elohei | avoteikhem
 
@@ -67,10 +65,8 @@ kemachlekotam
 
 18:11
 vaiya'al | goral | mateh | venei | Vinyamin
-lemishpechotam
-vaiyetze | gevul | goralam
-bein | benei | Yehudah
-uvein | benei | Yosef
+lemishpechotam | vaiyetze | gevul | goralam
+bein | benei | Yehudah | uvein | benei | Yosef
 
 18:12
 vayhi | lahem | hagevul | lif'at | tzafonah
@@ -82,8 +78,7 @@ vehayah | totze'otav | midbarah | Beit | Aven
 ve'avar | misham | hagevul | Luzah | el | ketef | Luzah | negbah
 hi | Beit | El
 veyarad | hagevul | Atrot | Adar
-al | hahar
-asher | minegev | Leveit | Choron
+al | hahar | asher | minegev | Leveit | Choron
 Tachton
 
 18:14
@@ -139,8 +134,7 @@ Yericho | Uveit | Chagelah
 ve'emek | Ketzitz
 
 18:22
-Uveit | Ha'aravah | Utzemarayim
-Uveit | El
+Uveit | Ha'aravah | Utzemarayim | Uveit | El
 
 18:23
 Veha'avim | Vehaparah
@@ -153,8 +147,7 @@ arim | sheteim | esreh
 vechatzreihen
 
 18:25
-Giv'on | Veharamah
-Uve'erot
+Giv'on | Veharamah | Uve'erot
 
 18:26
 Vehamitzpeh | Vehakefirah

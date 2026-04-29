@@ -47,8 +47,7 @@ Ve'etnan
 4:8
 Vekotz | holid
 et | Anuv
-ve'et | hatzoevah
-umishpechot | Acharchel | ben | Harum
+ve'et | hatzoevah | umishpechot | Acharchel | ben | Harum
 
 4:9
 vayhi | Ya'betz
@@ -77,8 +76,7 @@ anshei | Rekhah
 4:13
 uvenei | Kenaz
 Ateni'el
-Userayah
-uvenei | Ateni'el
+Userayah | uvenei | Ateni'el
 Chatat | Ume'onotai
 
 4:14
@@ -90,8 +88,7 @@ hayu
 4:15
 uvenei | Kalev | ben | Yefuneh
 Iru | Elah
-Vana'am
-uvenei | Elah
+Vana'am | uvenei | Elah
 Ukenaz
 
 4:16
@@ -113,8 +110,7 @@ avi | Eshtemoa
 ve'ishto | hayhudiyah | yaldah | et | Yered | avi | Gedor | ve'et | Chever | avi | Sokho
 ve'et | Yekuti'el
 avi | Zanoach
-ve'eleh | benei | Bityah | vat | par'oh
-asher | lakach
+ve'eleh | benei | Bityah | vat | par'oh | asher | lakach
 Mared
 
 4:19
@@ -128,17 +124,14 @@ hama'akhati
 4:20
 uvenei | Shimon
 Amnon | Verinah | Ben | Chanan
-Vetolon
-uvenei | Yish'i
+Vetolon | uvenei | Yish'i
 Zochet
 Uven | Zochet
 
 4:21
 benei | Shelah | ven | Yehudah
-Er | avi | Lekhah
-Vela'dah
-avi | Mareshah
-umishpechot | beit | avodat | habutz
+Er | avi | Lekhah | Vela'dah
+avi | Mareshah | umishpechot | beit | avodat | habutz
 leveit | Ashbea
 
 4:22
@@ -184,12 +177,10 @@ Uvevilhah | Uve'etzem
 Uvetolad
 
 4:30
-Uvivtu'el | Uvecharemah
-Uvetzikelag
+Uvivtu'el | Uvecharemah | Uvetzikelag
 
 4:31
-Uveveit | Markavot | Uvachatzar | Susim
-Uveveit | Bir'i
+Uveveit | Markavot | Uvachatzar | Susim | Uveveit | Bir'i
 Uvesha'arayim
 eleh | areihem
 ad | melokh | David
@@ -208,8 +199,7 @@ zot | moshevotam
 vehityachsam | lahem
 
 4:34
-Umeshovav | Veyamlekh
-Veyoshah
+Umeshovav | Veyamlekh | Veyoshah
 ben | Amatzyah
 
 4:35
@@ -227,9 +217,7 @@ ben | Shema'yah
 
 4:38
 eleh | haba'im | beshemot
-nesi'im
-bemishpechotam
-uveit | avoteihem
+nesi'im | bemishpechotam | uveit | avoteihem
 paretzu
 larov
 

@@ -48,8 +48,7 @@ mishenei
 ketzot | hakaporet
 
 37:8
-keruv | echad | mikatzah | mizeh
-ukheruv | echad | mikatzah | mizeh
+keruv | echad | mikatzah | mizeh | ukheruv | echad | mikatzah | mizeh
 min | hakaporet | asah | et | hakeruvim
 mishenei | kitzvotov
 
@@ -76,17 +75,14 @@ saviv
 
 37:12
 vaiya'as | lo | misgeret | tofach
-saviv
-vaiya'as | zer | zahav | lemisgarto
+saviv | vaiya'as | zer | zahav | lemisgarto
 saviv
 
 37:13
 vaiyitzok | lo
 arba | tabe'ot | zahav
 vaiyiten | et | hataba'ot
-al | arba | hape'ot
-asher
-le'arba | raglav
+al | arba | hape'ot | asher | le'arba | raglav
 
 37:14
 le'umat | hamisgeret
@@ -104,8 +100,7 @@ et | hashulchan
 
 37:16
 vaiya'as | et | hakelim | asher | al | hashulchan | et | ke'arotav | ve'et | kapotav | ve'et | menakiyotav
-ve'et | hakesavot
-asher | yusakh
+ve'et | hakesavot | asher | yusakh
 bahen
 zahav
 tahor

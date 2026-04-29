@@ -1,7 +1,6 @@
 17:1
 chatat | Yehudah | ketuvah | be'et | barzel | betziporen | shamir
-charushah | al | luach | libam
-ulekarnot | mizbechoteikhem
+charushah | al | luach | libam | ulekarnot | mizbechoteikhem
 
 17:2
 kizkor | beneihem | mizbechotam
@@ -15,27 +14,23 @@ cheilekha | khol | otzroteikha | lavaz | eten | bamoteikha | bechatat | bekhol |
 
 17:4
 veshamatah | uvekha | minachalatekha | asher | natati | lakh
-veha'avadtikha | et | oyeveikha | ba'aretz
-asher | lo | yada'eta
+veha'avadtikha | et | oyeveikha | ba'aretz | asher | lo | yada'eta
 ki | esh | kedachtem | be'api
 ad | olam | tukad
 
 17:5
 koh | amar | Yahweh | arur | hagever | asher | yivtach | ba'adam
 vesam | basar
-zero'o
-umin | Yahweh
+zero'o | umin | Yahweh
 yasur | libo
 
 17:6
 vehayah | ke'ar'ar | ba'aravah
 velo | yir'eh | ki | yavo | tov | veshakhan | charerim | bamidbar
-eretz | melechah
-velo | teshev
+eretz | melechah | velo | teshev
 
 17:7
-barukh | hagever
-asher | yivtach
+barukh | hagever | asher | yivtach
 Bayahweh
 vehayah | Yahweh | mivtacho
 
@@ -43,8 +38,7 @@ vehayah | Yahweh | mivtacho
 vehayah | ke'etz | shatul | al | mayim | ve'al | yuval | yeshalach | sharashav
 velo | yira | ki | yavo | chom
 vehayah | alehu
-ra'anan
-uvishnat | batzoret | lo | yid'ag
+ra'anan | uvishnat | batzoret | lo | yid'ag
 velo | yamish | me'asot | peri
 
 17:9
@@ -59,8 +53,7 @@ velatet | le'ish | kedarkov | kifri | ma'alalav
 17:11
 kore | dagar | velo | yalad
 oseh | osher | velo | vemishpat
-bachatzi | yomov | ya'azvenu
-uve'acharito
+bachatzi | yomov | ya'azvenu | uve'acharito
 yihyeh | naval
 
 17:12
@@ -108,8 +101,7 @@ shaverem
 koh | amar | Yahweh | elai | halokh | ve'amadta | besha'ar | benei | haam
 asher | yavo'u | vo | malkhei | Yehudah
 va'asher
-yetze'u | vo
-uvekhol
+yetze'u | vo | uvekhol
 sha'arei | Yerushalim
 
 17:20
@@ -131,19 +123,16 @@ vekidashtem | et | yom | hashabat | ka'asher | tziviti
 et | avoteikhem
 
 17:23
-velo | shame'u
-velo | hitu
+velo | shame'u | velo | hitu
 et | azenam
 vaiyakshu | et | arepam
-levilti | shomea
-ulevilti
+levilti | shomea | ulevilti
 kachat | musar
 
 17:24
 vehayah | im | shamoa | tishme'un | elai | ne'um | Yahweh
 levilti | havi | masa | besha'arei | ha'ir | hazot
-beyom | hashabat
-ulekadesh | et | yom | hashabat
+beyom | hashabat | ulekadesh | et | yom | hashabat
 levilti | asot | boh | kol | melakhah
 
 17:25
@@ -155,12 +144,10 @@ le'olam
 
 17:26
 uva'u | me'arei | Yehudah | umisevivot | Yerushalim | ume'eretz | Binyamin | umin | hashefelah | umin | hahar | umin | Hanegev
-mevi'im | olah | vezevach
-uminchah | ulevonah
+mevi'im | olah | vezevach | uminchah | ulevonah
 umevi'ei | todah | beit | Yahweh
 
 17:27
 ve'im | lo | tishme'u | elai | lekadesh | et | yom | hashabat
 ulevilti | se'et | masa | uvo | besha'arei | Yerushalim | beyom | hashabat
-vehitzati | esh | bish'areiha | ve'akhelah | armenot | Yerushalim
-velo | tikhbeh
+vehitzati | esh | bish'areiha | ve'akhelah | armenot | Yerushalim | velo | tikhbeh

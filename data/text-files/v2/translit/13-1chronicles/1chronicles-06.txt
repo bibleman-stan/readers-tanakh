@@ -1,8 +1,7 @@
 6:1
 benei | Levi
 Gereshom
-Kehat
-Umerari
+Kehat | Umerari
 
 6:2
 ve'eleh | shemot | benei | Gereshom
@@ -84,8 +83,7 @@ vaiya'amdu | khemishpatam
 al | avodatam
 
 6:18
-ve'eleh | ha'omedim
-uveneihem | mibenei | hakehati
+ve'eleh | ha'omedim | uveneihem | mibenei | hakehati
 Heiman | hamshorer | ben | Yo'el | ben | Shemu'el
 
 6:19
@@ -156,8 +154,7 @@ netunim | lekhol | avodat | mishkan | beit | ha'elohim
 6:34
 Ve'aharon | uvanav | maktirim | al | mizbach | ha'olah | ve'al | mizbach | haketoret | lekhol
 melekhet
-kodesh | hakodashim
-ulekhaper | al | Yisra'el
+kodesh | hakodashim | ulekhaper | al | Yisra'el
 kekhol | asher | tzivah
 Mosheh
 eved | ha'elohim
@@ -246,8 +243,7 @@ et | he'arim | ha'eleh
 asher | yikre'u | ethem | beshemot
 
 6:51
-umimishpechot | benei | Kehat
-vayhi | arei | gevulam
+umimishpechot | benei | Kehat | vayhi | arei | gevulam
 mimateh
 Efrayim
 
@@ -294,8 +290,7 @@ ve'et | Anem
 ve'et | migrasheiha
 
 6:59
-umimateh | Asher
-et | Mashal
+umimateh | Asher | et | Mashal
 ve'et | migrasheiha
 ve'et | Avdon
 ve'et | migrasheiha

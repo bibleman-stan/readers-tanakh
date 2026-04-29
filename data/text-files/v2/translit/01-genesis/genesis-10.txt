@@ -7,8 +7,7 @@ achar | hamabul
 
 10:2
 benei | Yefet
-Gomer | Umagog
-Umadai
+Gomer | Umagog | Umadai
 Veyavan | Vetuval
 Umeshekh
 Vetiras
@@ -38,8 +37,7 @@ Ufut | Ukhena'an
 uvenei | Khush
 Seva | Vachavilah
 Vesavtah | Vera'mah
-Vesavtekha
-uvenei | Ra'mah
+Vesavtekha | uvenei | Ra'mah
 Sheva | Udedan
 
 10:8
@@ -65,8 +63,7 @@ ve'et | Rechovot | Ir
 ve'et | Kalach
 
 10:12
-ve'et | Resen | bein | Ninveh
-uvein | Kalach
+ve'et | Resen | bein | Ninveh | uvein | Kalach
 hi
 ha'ir | hagedolah
 
@@ -116,8 +113,7 @@ Yefet | hagadol
 10:22
 benei | Shem
 Eilam | Ve'ashur
-Ve'arpakhshad
-Velud | Va'aram
+Ve'arpakhshad | Velud | Va'aram
 
 10:23
 uvenei

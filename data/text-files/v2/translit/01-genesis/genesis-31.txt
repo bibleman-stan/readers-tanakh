@@ -1,8 +1,7 @@
 31:1
 vaiyishma | et | divrei | venei | Lavan | lemor
 lakach | Ya'ako | et
-kol | asher | le'avinu
-ume'asher | le'avinu
+kol | asher | le'avinu | ume'asher | le'avinu
 asah | et | kol | hakavod
 hazeh
 
@@ -13,8 +12,7 @@ vehineh | einenu | imo | kitmol | shilshom
 
 31:3
 vaiyomer | Yahweh | el | Ya'ako
-shuv | el | eretz | avoteikha
-ulemoladtekha
+shuv | el | eretz | avoteikha | ulemoladtekha
 ve'ehyeh
 imakh
 
@@ -41,8 +39,7 @@ et | avikhen
 31:7
 va'avikhen | hetel | bi
 vehechelif | et | maskurti
-aseret | monim
-velo | netano | elohim | lehara
+aseret | monim | velo | netano | elohim | lehara
 imadi
 
 31:8
@@ -61,8 +58,7 @@ vaiyiten | li
 vayhi | be'et | yachem | hatzon
 va'esa | einai | va'ere | bachalom
 vehineh | ha'atudim | ha'olim | al | hatzon
-akudim | nekudim
-uverudim
+akudim | nekudim | uverudim
 
 31:11
 vaiyomer | elai | mal'akh | ha'elohim | bachalom
@@ -72,14 +68,12 @@ hineni
 
 31:12
 vaiyomer | sa | na | eineikha | ure'eh | kol | ha'atudim | ha'olim | al | hatzon
-akudim | nekudim
-uverudim | ki | ra'iti
+akudim | nekudim | uverudim | ki | ra'iti
 et | kol | asher | Lavan
 oseh | lakh
 
 31:13
-anokhi | ha'el | Beit | El
-asher | mashachta | sham | matzevah
+anokhi | ha'el | Beit | El | asher | mashachta | sham | matzevah
 asher | nadarta | li | sham
 neder
 atah | kum | tze | min | ha'aretz | hazot
@@ -98,8 +92,7 @@ et | kaspenu
 
 31:16
 ki | khol | ha'osher | asher | hitzil | elohim | me'avinu
-lanu | hu
-ulevaneinu
+lanu | hu | ulevaneinu
 ve'atah | kol | asher | amar | elohim | eleikha
 aseh
 
@@ -111,8 +104,7 @@ al | hagemalim
 
 31:18
 vaiyinhag | et | kol | miknehu | ve'et | kol | rekhusho | asher | rakhash
-mikneh | kinyano
-asher | rakhash
+mikneh | kinyano | asher | rakhash
 Befadan | Aram
 lavo | el | Yitzchak | aviv
 artzah | Kena'an
@@ -122,8 +114,7 @@ Velavan | halakh
 ligzoz
 et | tzono
 vatigno | Rachel
-et | haterafim
-asher | le'aviha
+et | haterafim | asher | le'aviha
 
 31:20
 vaiyigno | Ya'ako
@@ -175,14 +166,12 @@ charev
 31:27
 lamah | Nachbeta | livroach
 vatigno
-oti
-velo | higadta | li
+oti | velo | higadta | li
 va'ashalechakha | besimchah | uveshirim | betof | uvekhinor
 
 31:28
 velo | netashtani
-lenashek | levanai
-velivnotai
+lenashek | levanai | velivnotai
 atah | hiskalta | aso
 
 31:29
@@ -207,8 +196,7 @@ pen | tigzol | et | benoteikha | me'imi
 31:32
 im | asher | timtza | et | eloheikha | lo | yichyeh
 neged | acheinu | haker | lekha | mah | imadi
-vekach | lakh
-velo | yada | Ya'ako | ki | Rachel
+vekach | lakh | velo | yada | Ya'ako | ki | Rachel
 genavatam
 
 31:33
@@ -280,8 +268,7 @@ vaiya'an | Lavan | vaiyomer | el | Ya'ako | habanot | benotai | vehabanim | bana
 vekhol | asher | atah | ro'eh
 li | hu
 velivnotai | mah | e'eseh | la'eleh | haiyom
-o | livneihen
-asher | yaladu
+o | livneihen | asher | yaladu
 
 31:44
 ve'atah | lekhah | nikhretah | verit
@@ -332,8 +319,7 @@ elohim | ed | beini | uveinekha
 31:51
 vaiyomer | Lavan
 Leya'ako
-hineh | hagal | hazeh | vehineh | hamatzevah
-asher | yariti
+hineh | hagal | hazeh | vehineh | hamatzevah | asher | yariti
 beini | uveinekha
 
 31:52
@@ -355,7 +341,6 @@ aviv | Yitzchak
 31:54
 vaiyizbach | Ya'ako | zevach | bahar
 vaiyikra | le'echav
-le'ekhol | lachem
-vaiyokhelu | lechem
+le'ekhol | lachem | vaiyokhelu | lechem
 vaiyalinu
 bahar

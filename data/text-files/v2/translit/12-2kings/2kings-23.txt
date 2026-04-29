@@ -23,8 +23,7 @@ baberit
 23:4
 vaytzav | hamelekh | et | Chilkiyahu | hakohen | hagadol | ve'et | kohanei | hamishneh | ve'et | shomerei | hasaf
 lehotzi | meheikhal | Yahweh
-et | kol | hakelim | ha'asuyim | laba'al | vela'asherah
-ulekhol
+et | kol | hakelim | ha'asuyim | laba'al | vela'asherah | ulekhol
 tzeva | hashamayim
 vaiyisrefem | michutz | Lirushalim | beshadmot | Kidron
 venasa | et | afaram | Beit | El
@@ -34,8 +33,7 @@ vehishbit | et | hakemarim | asher | natenu | malkhei | Yehudah
 vaykater | babamot | be'arei | Yehudah
 umesibei
 Yerushalim
-ve'et | hamkaterim | laba'al | lashemesh | velaiyareach | velammazalot
-ulekhol
+ve'et | hamkaterim | laba'al | lashemesh | velaiyareach | velammazalot | ulekhol
 tzeva | hashamayim
 
 23:6
@@ -46,10 +44,8 @@ vaiyashlekh | et | afarah
 al | kever | benei | ha'am
 
 23:7
-vaiyitotz | et | batei | hakedeshim
-asher
-beveit | Yahweh
-asher | hanashim | oregoyt | sham | batim
+vaiyitotz | et | batei | hakedeshim | asher
+beveit | Yahweh | asher | hanashim | oregoyt | sham | batim
 la'asherah
 
 23:8
@@ -64,17 +60,13 @@ akh | lo | ya'alu | kohanei | habamot
 el | mizbach | Yahweh | Birushalim | ki | im | akhelu | matzot | betokh | acheihem
 
 23:10
-vetime | et | Hatofet
-asher
-begei | venei | Hinom
+vetime | et | Hatofet | asher | begei | venei | Hinom
 levilti | leha'avir | ish | et | beno | ve'et | bito | ba'esh
 Lamolekh
 
 23:11
 vaiyashbet | et | hasusim | asher | natenu | malkhei | Yehudah | lashemesh | mibo | veit | Yahweh
-el | lishkat | Netan | Melekh | hasaris
-asher
-baparvarim
+el | lishkat | Netan | Melekh | hasaris | asher | baparvarim
 ve'et | markevot | hashemesh
 saraf | ba'esh
 
@@ -113,16 +105,13 @@ vaiyifen | Yoshiyahu | vaiyar | et | hakevarim | asher | sham | bahar
 vaiyishlach | vaiyikach | et | ha'atzamot | min | hakevarim
 vaiyisrof | al | hamizbeach
 vaytame'ehu
-kidvar | Yahweh | asher | kara | ish | ha'elohim
-asher | kara
+kidvar | Yahweh | asher | kara | ish | ha'elohim | asher | kara
 et | hadevarim
 ha'eleh
 
 23:17
 vaiyomer
-mah | hatziyun | halaz
-asher
-ani | ro'eh
+mah | hatziyun | halaz | asher | ani | ro'eh
 vaiyomeru | elav | anshei | ha'ir | hakever | ish | ha'elohim | asher | ba | Mihudah
 vaiyikra | et | hadevarim | ha'eleh | asher | asita
 al
@@ -140,8 +129,7 @@ vegam | et | kol | batei | habamot | asher | be'arei | Shomeron | asher | asu | 
 hesir
 Yoshiyahu
 vaiya'as | lahem
-kekhol | hama'asim
-asher | asah
+kekhol | hama'asim | asher | asah
 Beveit | El
 
 23:20
@@ -163,8 +151,7 @@ hazeh
 ki | lo | Na'asah | kapesach | hazeh | mimei | hashofetim
 asher | shafetu
 et | Yisra'el
-vekhol | yemei | malkhei | Yisra'el
-umalkhei | Yehudah
+vekhol | yemei | malkhei | Yisra'el | umalkhei | Yehudah
 
 23:23
 ki | im | bishmoneh | esreh | shanah
@@ -189,17 +176,14 @@ lo | kam | kamohu
 
 23:26
 akh | lo | shav | Yahweh | mecharon | apo | hagadol
-asher | charah | apo | Bihudah | al | kol | hake'asim
-asher | hikh'iso
+asher | charah | apo | Bihudah | al | kol | hake'asim | asher | hikh'iso
 Menasheh
 
 23:27
 vaiyomer | Yahweh | gam | et | Yehudah | asir | me'al | panai
 ka'asher | hasiroti
-et | Yisra'el
-uma'asti | et | ha'ir | hazot | asher | bacharti | et | Yerushalim
-ve'et | habayit
-asher | amarti
+et | Yisra'el | uma'asti | et | ha'ir | hazot | asher | bacharti | et | Yerushalim
+ve'et | habayit | asher | amarti
 yihyeh | shemi
 sham
 
@@ -221,8 +205,7 @@ oto
 vaiyarkivuhu | avadav | met | Mimegido
 vayvi'uhu | Yerushalim
 vaiyikberuhu
-bikvurato
-vaiyikach | am | ha'aretz | et | Yeho'achaz | ben | Yoshiyahu
+bikvurato | vaiyikach | am | ha'aretz | et | Yeho'achaz | ben | Yoshiyahu
 vaiyimshechu | oto | vaiyamlikhu | oto
 tachat | aviv
 
@@ -239,10 +222,8 @@ avotav
 
 23:33
 vaiya'asrehu | far'oh | Nekhoh | Verivlah | be'eretz | Chamat
-mimlokh | Birushalim
-vaiyiten | onesh | al | ha'aretz
-me'ah | khikar | kesef
-vekhikar | zahav
+mimlokh | Birushalim | vaiyiten | onesh | al | ha'aretz
+me'ah | khikar | kesef | vekhikar | zahav
 
 23:34
 vaiyamlekh | par'oh | Nekhoh | et | Elyakim | ben | Yoshiyahu | tachat | Yoshiyahu | aviv

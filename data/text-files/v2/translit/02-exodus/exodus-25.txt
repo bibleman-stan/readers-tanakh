@@ -10,8 +10,7 @@ tikchu
 et | terumati
 
 25:3
-vezot | haterumah
-asher | tikchu
+vezot | haterumah | asher | tikchu
 me'itam
 zahav | vakhesef
 unechoshet
@@ -26,15 +25,13 @@ va'atzei | shitim
 
 25:6
 shemen
-lama'or | besamim | leshemen | hamishchah
-veliktoret
+lama'or | besamim | leshemen | hamishchah | veliktoret
 hasamim
 
 25:7
 avnei | shoham
 ve'avnei | milu'im
-la'efod
-velachoshen
+la'efod | velachoshen
 
 25:8
 ve'asu | li | mikdash
@@ -87,8 +84,7 @@ habadim | lo | yasuru | mimenu
 25:16
 venatata
 el | ha'aron
-et | ha'edut
-asher | eten
+et | ha'edut | asher | eten
 eleikha
 
 25:17
@@ -119,15 +115,12 @@ penei | hakeruvim
 25:21
 venatata | et | hakaporet | al | ha'aron | milma'elah
 ve'el | ha'aron
-titen | et | ha'edut
-asher | eten
+titen | et | ha'edut | asher | eten
 eleikha
 
 25:22
 veno'adti | lekha | sham
-vedibarti | itekha | me'al | hakaporet | mibein | shenei | hakeruvim
-asher
-al | aron | ha'edut
+vedibarti | itekha | me'al | hakaporet | mibein | shenei | hakeruvim | asher | al | aron | ha'edut
 et | kol | asher | atzaveh | otkha
 el | benei | Yisra'el
 
@@ -150,9 +143,7 @@ ve'asita | zer | zahav | lemisgarto | saviv
 25:26
 ve'asita | lo
 arba | tabe'ot | zahav
-venatata | et | hataba'ot | al | arba | hape'ot
-asher
-le'arba | raglav
+venatata | et | hataba'ot | al | arba | hape'ot | asher | le'arba | raglav
 
 25:27
 le'umat | hamisgeret
@@ -170,8 +161,7 @@ venisa | vam
 et | hashulchan
 
 25:29
-ve'asita | ke'arotav | vekhapotav | ukesotav | umenakiyotav
-asher | yusakh
+ve'asita | ke'arotav | vekhapotav | ukesotav | umenakiyotav | asher | yusakh
 bahen
 zahav | tahor
 ta'aseh | otam

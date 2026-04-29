@@ -1,7 +1,6 @@
 40:1
 be'esrim | vechamesh | shanah | legalutenu | berosh | hashanah | be'asor | lachodesh | be'arba | esreh | shanah
-achar
-asher | huketah
+achar | asher | huketah
 ha'ir
 be'etzem | haiyom | hazeh | hayetah | alai | yad | Yahweh
 vaiyave | oti
@@ -60,8 +59,7 @@ ve'ulam | hasha'ar | mehabayit
 
 40:10
 veta'ei | hasha'ar | derekh | hakadim | sheloshah | mipoh | usheloshah | mipoh
-midah | achat | lishlashetam
-umidah | achat | la'eilim | mipoh | umipo
+midah | achat | lishlashetam | umidah | achat | la'eilim | mipoh | umipo
 
 40:11
 vaiyamod | et | rochav | petach | hasha'ar
@@ -139,24 +137,21 @@ verochav
 chamesh | ve'esrim | ba'amah
 
 40:22
-vechalonov | ve'elamov | vetimorov | kemidat | hasha'ar
-asher | panav
+vechalonov | ve'elamov | vetimorov | kemidat | hasha'ar | asher | panav
 derekh | hakadim
 uvema'alot | sheva | ya'alu | vo
 ve'eilamov | lifneihem
 
 40:23
 vesha'ar | lechatzer | hapenimi | neged | hasha'ar
-latzafon
-velakadim
+latzafon | velakadim
 vaiyamod | misha'ar | el | sha'ar
 me'ah | amah
 
 40:24
 vaiyolikheni | derekh | hadarom
 vehineh | sha'ar
-derekh | hadarom
-umadad | eilov | ve'eilamov | kamidot
+derekh | hadarom | umadad | eilov | ve'eilamov | kamidot
 ha'eleh
 
 40:25
@@ -181,8 +176,7 @@ me'ah | amot
 
 40:28
 vayvi'eni | el | chatzer | hapenimi
-besha'ar | hadarom
-vaiyamod | et | hasha'ar | hadarom
+besha'ar | hadarom | vaiyamod | et | hasha'ar | hadarom
 kamidot
 ha'eleh
 
@@ -203,8 +197,7 @@ chamesh | amot
 40:31
 ve'elamav | el | chatzer | hachitzonah
 vetimorim
-el | eilov
-uma'alot | shemoneh | ma'alov
+el | eilov | uma'alot | shemoneh | ma'alov
 
 40:32
 vayvi'eni | el | hechatzer | hapenimi
@@ -228,8 +221,7 @@ ushemoneh | ma'alot | ma'alov
 
 40:35
 vayvi'eni
-el | sha'ar | hatzafon
-umadad | kamidot | ha'eleh
+el | sha'ar | hatzafon | umadad | kamidot | ha'eleh
 
 40:36
 ta'ov | elov | ve'elamov
@@ -320,8 +312,7 @@ veshalosh | amot | mipo
 
 40:49
 orekh | ha'ulam | esrim | amah | verochav | ashtei | esreh | amah
-uvama'alot
-asher | ya'alu
+uvama'alot | asher | ya'alu
 elav
 ve'amudim | el | ha'eilim
 echad | mipoh

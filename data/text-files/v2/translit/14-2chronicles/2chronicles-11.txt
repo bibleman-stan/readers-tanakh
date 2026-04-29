@@ -25,8 +25,7 @@ milekhet | el | Yarave'am
 
 11:5
 vaiyeshev | Rechav'am
-Birushalim
-vaiyiven | arim | lematzor
+Birushalim | vaiyiven | arim | lematzor
 Bihudah
 
 11:6
@@ -47,8 +46,7 @@ ve'et | Azekah
 
 11:10
 ve'et | Tzare'ah | ve'et | Aiyalon
-ve'et | Chevron
-asher | Bihudah
+ve'et | Chevron | asher | Bihudah
 Uvevinyamin
 arei | metzurot
 
@@ -60,16 +58,12 @@ ve'otzerot | ma'akhal
 veshemen | vayayin
 
 11:12
-uvekhol | ir | va'ir | tzinot | uremachim
-vaychazekem
-leharbeh | me'od
-vayhi | lo
+uvekhol | ir | va'ir | tzinot | uremachim | vaychazekem
+leharbeh | me'od | vayhi | lo
 Yehudah | Uvinyamin
 
 11:13
-vehakohanim | vehalviyim
-asher
-bekhol | Yisra'el
+vehakohanim | vehalviyim | asher | bekhol | Yisra'el
 hityatzevu | alav | mikol | gevulam
 
 11:14
@@ -79,10 +73,8 @@ Layahweh
 
 11:15
 vaiya'amed | lo | kohanim
-labamot
-velase'irim
-vela'agalim
-asher | asah
+labamot | velase'irim
+vela'agalim | asher | asah
 
 11:16
 ve'achareihem | mikol | shivtei | Yisra'el
@@ -132,6 +124,5 @@ lenagid | be'echav | ki | lehamlikho
 11:23
 vaiyaven | vaiyifrotz | mikol | banav | lekhol | artzot | Yehudah | Uvinyamin | lekhol | arei | hametzurot
 vaiyiten | lahem | hamazon
-laro
-vaiyish'al
+laro | vaiyish'al
 hamon | nashim

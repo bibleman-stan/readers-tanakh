@@ -1,6 +1,5 @@
 13:1
-masa | Bavel
-asher | chazah
+masa | Bavel | asher | chazah
 Yesha'yahu | ben | Amotz
 
 13:2
@@ -72,13 +71,11 @@ ve'adam | miketem | Ofir
 
 13:13
 al | ken | shamayim | argiz
-vetir'ash | ha'aretz | mimekomah | be'evrat | Yahweh | tzeva'ot
-uveyom
+vetir'ash | ha'aretz | mimekomah | be'evrat | Yahweh | tzeva'ot | uveyom
 charon | apo
 
 13:14
-vehayah | kitzvi | mudach
-ukhetzon
+vehayah | kitzvi | mudach | ukhetzon
 ve'ein | mekabetz
 ish | el | amo | yifnu
 ve'ish | el | artzo
@@ -117,15 +114,12 @@ et | Sedom
 ve'et | Amorah
 
 13:20
-lo | teshev | lanetzach
-velo | tishkon
-ad | dor | vador
-velo | yahel | sham | aravi
+lo | teshev | lanetzach | velo | tishkon
+ad | dor | vador | velo | yahel | sham | aravi
 vero'im | lo | yarbitzu | sham
 
 13:21
-veravetzu | sham | tziyim
-umal'u | vateihem
+veravetzu | sham | tziyim | umal'u | vateihem
 ochim
 veshakhenu | sham | benot | ya'anah
 use'irim

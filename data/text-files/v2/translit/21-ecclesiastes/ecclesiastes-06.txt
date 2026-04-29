@@ -1,6 +1,5 @@
 6:1
-yesh | ra'ah
-asher | ra'iti
+yesh | ra'ah | asher | ra'iti
 tachat | hashamesh
 verabah | hi
 al | ha'adam
@@ -21,8 +20,7 @@ hanafel
 
 6:4
 ki | vahevel | ba
-uvachoshekh | yelekh
-uvachoshekh
+uvachoshekh | yelekh | uvachoshekh
 shemo | yekhuseh
 
 6:5
@@ -53,8 +51,7 @@ ure'ut | ruach
 6:10
 mah | shehayah | kevar | nikra | shemo
 venoda
-asher | hu | adam
-velo | yukhal | ladin
+asher | hu | adam | velo | yukhal | ladin
 im | shehatkif | mimenu
 
 6:11
@@ -63,6 +60,5 @@ la'adam
 
 6:12
 ki | mi | yodea | mah | tov | la'adam | bachaiyim | mispar | yemei | chaiyei | hevlo
-veya'asem | katzel
-asher | mi | yagid | la'adam
+veya'asem | katzel | asher | mi | yagid | la'adam
 mah | yihyeh | acharav | tachat | hashamesh

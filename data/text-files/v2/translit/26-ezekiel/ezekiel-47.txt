@@ -24,17 +24,14 @@ mei | afesayim
 47:4
 vaiyamod | elef
 vaiya'avireni | vamayim
-mayim | birkayim
-vaiyamod | elef
+mayim | birkayim | vaiyamod | elef
 vaiya'avireni
 mei | matenayim
 
 47:5
-vaiyamod | elef | nachal
-asher | lo | ukhal
+vaiyamod | elef | nachal | asher | lo | ukhal
 la'avor | ki | ga'u | hamayim | mei | sachu
-nachal
-asher | lo | ye'aver
+nachal | asher | lo | ye'aver
 
 47:6
 vaiyomer | elai
@@ -46,14 +43,12 @@ sefat | hanachal
 beshuveni
 vehineh | el | sefat | hanachal
 etz
-rav | me'od | mizeh
-umizeh
+rav | me'od | mizeh | umizeh
 
 47:8
 vaiyomer | elai | hamayim | ha'eleh | yotz'im | el | hagelilah | hakadmonah
 veyaredu
-al | Ha'aravah
-uva'u | haiyamah
+al | Ha'aravah | uva'u | haiyamah
 el | haiyamah | hamutza'im
 venirpe'u | hamayim
 
@@ -91,8 +86,7 @@ Yosef
 chavalim
 
 47:14
-unechaltem | otah | ish | ke'achiv
-asher | nasati | et | yadi
+unechaltem | otah | ish | ke'achiv | asher | nasati | et | yadi
 letitah | la'avoteikhem
 venafelah | ha'aretz | hazot | lakhem | benachalah
 
@@ -103,13 +97,10 @@ lif'at | tzafonah | min | haiyam | hagadol | haderekh | Chetlon
 levo | Tzedadah
 
 47:16
-Chamat | Berotah | Sivrayim
-asher | bein | gevul | Damesek
+Chamat | Berotah | Sivrayim | asher | bein | gevul | Damesek
 uvein
 gevul | Chamat
-Chatzer | Hatikhon
-asher
-el | gevul | Chavran
+Chatzer | Hatikhon | asher | el | gevul | Chavran
 
 47:17
 vehayah | gevul | min | haiyam | Chatzar | Einon | gevul | Damesek

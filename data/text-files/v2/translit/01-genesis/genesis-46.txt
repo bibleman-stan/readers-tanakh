@@ -1,8 +1,7 @@
 46:1
 vaiyisa | Yisra'el | vekhol | asher | lo
 vaiyavo
-Be'erah | Shava
-vaiyizbach | zevachim
+Be'erah | Shava | vaiyizbach | zevachim
 lelohei
 aviv | Yitzchak
 
@@ -68,8 +67,7 @@ Vesha'ul | ben | hakena'anit
 46:11
 uvenei | Levi
 Gereshon
-Kehat
-Umerari
+Kehat | Umerari
 
 46:12
 uvenei | Yehudah | Er | Ve'onan | Veshelah
@@ -105,10 +103,8 @@ Ve'ar'eli
 
 46:17
 uvenei | Asher | Yimnah | Veyishvah | Veyishvi | Uveri'ah
-Veserach | achotam
-uvenei | Veri'ah
-Chever
-Umalki'el
+Veserach | achotam | uvenei | Veri'ah
+Chever | Umalki'el
 
 46:18
 eleh | benei | Zilpah
@@ -119,12 +115,10 @@ shesh | esreh | nafesh
 
 46:19
 benei | Rachel | eshet | Ya'ako
-Yosef
-Uvinyamin
+Yosef | Uvinyamin
 
 46:20
-vaiyivaled | Leyosef | be'eretz | Mitzrayim
-asher | yaldah | lo | Asenat
+vaiyivaled | Leyosef | be'eretz | Mitzrayim | asher | yaldah | lo | Asenat
 bat | Poti | Fera | kohen | On
 et | Menasheh
 ve'et | Efrayim
@@ -136,8 +130,7 @@ Echi | Varosh | Mupim | Vechupim
 Va'ared
 
 46:22
-eleh | benei | Rachel
-asher | yulad
+eleh | benei | Rachel | asher | yulad
 Leya'ako | kol | nefesh
 arba'ah | asar
 

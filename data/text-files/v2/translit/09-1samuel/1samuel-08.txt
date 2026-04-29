@@ -12,10 +12,8 @@ Aviyah
 shofetim | Biv'er | Shava
 
 8:3
-velo | halekhu | vanav | bedarkhov
-vaiyitu
-acharei | habatza
-vaiyikchu | shochad
+velo | halekhu | vanav | bedarkhov | vaiyitu
+acharei | habatza | vaiyikchu | shochad
 vaiyatu
 mishpat
 
@@ -55,8 +53,7 @@ gam | lakh
 8:9
 ve'atah | shema | bekolam
 akh | ki | ha'ed | ta'id | bahem
-vehigadta | lahem | mishpat | hamelekh
-asher | yimlokh
+vehigadta | lahem | mishpat | hamelekh | asher | yimlokh
 aleihem
 
 8:10
@@ -67,8 +64,7 @@ hasho'alim | me'ito | melekh
 
 8:11
 vaiyomer
-zeh | yihyeh | mishpat | hamelekh
-asher | yimlokh
+zeh | yihyeh | mishpat | hamelekh | asher | yimlokh
 aleikhem
 et | beneikhem | yikach | vesam | lo | bemerkavto | uvefarashav
 veratzu
@@ -82,8 +78,7 @@ ukhelei | rikhbo
 
 8:13
 ve'et | benoteikhem
-yikach | lerakachot | uletabachot
-ule'ofot
+yikach | lerakachot | uletabachot | ule'ofot
 
 8:14
 ve'ets | sedoteikhem | ve'et | karmeikhem | vezeiteikhem | hatovim
@@ -93,8 +88,7 @@ venatan | la'avadav
 8:15
 vezar'eikhem | vekharmeikhem
 ya'sor
-venatan | lesarisav
-vela'avadav
+venatan | lesarisav | vela'avadav
 
 8:16
 ve'et | avdeikhem | ve'et | shifchoteikhem | ve'et | bachureikhem | hatovim | ve'et | chamoreikhem
@@ -108,15 +102,12 @@ ve'atem
 tihyu | lo | la'avadim
 
 8:18
-uze'aktem | baiyom | hahu | milifnei | malkekhem
-asher | bechartem
-lakhem
-velo | ya'aneh | Yahweh | etkhem | baiyom | hahu
+uze'aktem | baiyom | hahu | milifnei | malkekhem | asher | bechartem
+lakhem | velo | ya'aneh | Yahweh | etkhem | baiyom | hahu
 
 8:19
 vayma'anu | ha'am
-lishmoa | bekol | Shemu'el
-vaiyomeru | lo
+lishmoa | bekol | Shemu'el | vaiyomeru | lo
 ki | im | melekh
 yihyeh | aleinu
 

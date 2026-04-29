@@ -7,8 +7,7 @@ Hagil'ad | Vehabashan
 
 17:2
 vayhi | livnei | Menasheh | hanotarim | lemishpechotam
-livnei | Avi'ezer | velivnei | Chelek | velivnei | Asri'el | velivnei | Shekhem
-velivnei | Chefer
+livnei | Avi'ezer | velivnei | Chelek | velivnei | Asri'el | velivnei | Shekhem | velivnei | Chefer
 velivnei | Shemida
 eleh | benei | Menasheh | ben | Yosef | hazekharim | lemishpechotam
 
@@ -30,9 +29,7 @@ achei | avihen
 
 17:5
 vaiyipelu | chavlei | Menasheh
-asarah | levad | me'eretz | Hagil'ad | Vehabashan
-asher
-me'ever | Laiyarden
+asarah | levad | me'eretz | Hagil'ad | Vehabashan | asher | me'ever | Laiyarden
 
 17:6
 ki | benot | Menasheh
@@ -43,9 +40,7 @@ hanotarim
 
 17:7
 vayhi | gevul | Menasheh | Me'asher
-Hamikhmetat
-asher
-al | penei | Shekhem
+Hamikhmetat | asher | al | penei | Shekhem
 vehalakh | hagevul | el | haiyamin
 el | yoshevei
 Ein | Tapuach
@@ -67,9 +62,7 @@ haiyamah
 17:10
 negbah | Le'efrayim | vetzafonah | Limnasheh
 vayhi | haiyam
-gevulo
-Uve'asher | yifge'un | mitzafon
-Uveyisoshkhar | mimizrach
+gevulo | Uve'asher | yifge'un | mitzafon | Uveyisoshkhar | mimizrach
 
 17:11
 vayhi | Limnasheh | Beyisoshkhar | Uve'asher | Beit | She'an | uvenoteiha | Veyivle'am | uvenoteiha | ve'et | yoshevei | Dor | uvenoteiha | veyoshevei | Ein | Dor | uvenoteiha
@@ -109,8 +102,7 @@ vaiyomeru | benei | Yosef
 lo | yimatze | lanu
 hahar
 verekhev | barzel | bekhol | hakena'ani | haiyoshev | be'eretz | ha'emek
-la'asher | Beveit | She'an | uvenoteiha
-vela'asher | be'emek | Yizre'el
+la'asher | Beveit | She'an | uvenoteiha | vela'asher | be'emek | Yizre'el
 
 17:17
 vaiyomer | Yehoshua | el | beit | Yosef
@@ -120,8 +112,7 @@ am | rav | atah | vekhoach | gadol | lakh | lo | yihyeh | lekha
 goral | echad
 
 17:18
-ki | har | yihyeh | lokh | ki | ya'ar | hu
-uvereto
+ki | har | yihyeh | lokh | ki | ya'ar | hu | uvereto
 vehayah | lekha
 totze'otav | ki | torish | et | hakena'ani | ki | rekhev | barzel | lo
 ki | chazak

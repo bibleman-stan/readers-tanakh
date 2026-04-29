@@ -1,7 +1,6 @@
 10:1
 uvekhol | zot
-anachnu | koretim | amanah
-vekhotevim
+anachnu | koretim | amanah | vekhotevim
 ve'al | hechatum
 sareinu | leviyenu | kohaneinu
 
@@ -120,10 +119,8 @@ yodea | mevin
 
 10:30
 machazikim | al | acheihem | adireihem
-uva'im | be'alah | uvishvu'ah | lalekhet | betorat | ha'elohim
-asher | Nitenah
-beyad | Mosheh | eved | ha'elohim
-velishmor | vela'asot | et | kol | mitzvot | Yahweh | adoneinu
+uva'im | be'alah | uvishvu'ah | lalekhet | betorat | ha'elohim | asher | Nitenah
+beyad | Mosheh | eved | ha'elohim | velishmor | vela'asot | et | kol | mitzvot | Yahweh | adoneinu
 umishpatav
 vechukav
 
@@ -134,10 +131,8 @@ ve'et | benoteihem | lo | nikach | levaneinu
 
 10:32
 ve'amei | ha'aretz | hamvi'im | et | hamakachot | vekhol | shever | beyom | hashabat | limkor
-lo | nikach | mehem | bashabat
-uveyom | kodesh
-venitosh | et | hashanah | hashevi'it
-umasha | khol | yad
+lo | nikach | mehem | bashabat | uveyom | kodesh
+venitosh | et | hashanah | hashevi'it | umasha | khol | yad
 
 10:33
 vehe'emadnu | aleinu | mitzvot | latet | aleinu | shelishit | hashekel | bashanah
@@ -185,6 +180,5 @@ ki | el | haleshakhot | yavi'u | venei | Yisra'el | uvenei | halevi | et | terum
 vesham | kelei | hamikdash
 vehakohanim | hamsharetim
 vehasho'arim
-vehamshorerim
-velo | na'azo
+vehamshorerim | velo | na'azo
 et | beit | eloheinu

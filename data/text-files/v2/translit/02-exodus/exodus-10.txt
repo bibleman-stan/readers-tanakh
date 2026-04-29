@@ -25,8 +25,7 @@ leshaleach | et | ami
 hini | mevi | machar | arbeh | bigvulekha
 
 10:5
-vekhisah | et | ein | ha'aretz
-velo | yukhal
+vekhisah | et | ein | ha'aretz | velo | yukhal
 lir'ot | et | ha'aretz
 ve'akhal | et | yeter | hapeletah | hanish'eret | lakhem | min | habarad
 ve'akhal | et | kol | ha'etz
@@ -102,10 +101,8 @@ ve'acharav | lo | yihyeh | ken
 
 10:15
 vaykhas | et | ein | kol | ha'aretz | vatechshakh | ha'aretz
-vaiyokhal | et | kol | esev | ha'aretz | ve'et | kol | peri | ha'etz
-asher | hotir
-habarad
-velo | Notar | kol | yerek | ba'etz | uve'esev | hasadeh | bekhol | eretz | Mitzrayim
+vaiyokhal | et | kol | esev | ha'aretz | ve'et | kol | peri | ha'etz | asher | hotir
+habarad | velo | Notar | kol | yerek | ba'etz | uve'esev | hasadeh | bekhol | eretz | Mitzrayim
 
 10:16
 vaymaher | par'oh
@@ -124,8 +121,7 @@ et | hamavet | hazeh
 
 10:18
 vaiyetze
-me'im | par'oh
-vaiye'tar
+me'im | par'oh | vaiye'tar
 el | Yahweh
 
 10:19
@@ -185,8 +181,7 @@ shamah
 
 10:27
 vaychazek | Yahweh
-et | lev | par'oh
-velo | avah
+et | lev | par'oh | velo | avah
 leshalecham
 
 10:28

@@ -6,8 +6,7 @@ lemor | alehem
 daberu | el | benei | Yisra'el
 lemor
 zot | hachaiyah | asher | tokhelu
-mikol | habehemah
-asher | al | ha'aretz
+mikol | habehemah | asher | al | ha'aretz
 
 11:3
 kol | mafreset | parsah | veshosa'at | shesa | perasot | ma'alat | gerah
@@ -16,8 +15,7 @@ otah
 tokhelu
 
 11:4
-akh | et | zeh | lo | tokhelu | mima'alei | hagerah
-umimafrisei
+akh | et | zeh | lo | tokhelu | mima'alei | hagerah | umimafrisei
 haparsah
 et | hagamol | ki | ma'aleh | gerah | hu | ufarsah | einenu | mafris
 tame | hu
@@ -42,22 +40,18 @@ tame | hu
 lakhem
 
 11:8
-mibesaram | lo | tokhelu
-uvenivlatam
+mibesaram | lo | tokhelu | uvenivlatam
 lo | tiga'u
 teme'im | hem | lakhem
 
 11:9
-et | zeh | tokhelu | mikol
-asher | bamayim
+et | zeh | tokhelu | mikol | asher | bamayim
 kol | asher | lo | senapir | vekaskeset | bamayim | baiyamim | uvanechalim
 otam | tokhelu
 
 11:10
 vekhol | asher | ein | lo | senapir | vekaskeset | baiyamim | uvanechalim
-mikol | sheretz | hamayim
-umikol | nefesh | hachaiyah
-asher | bamayim
+mikol | sheretz | hamayim | umikol | nefesh | hachaiyah | asher | bamayim
 sheketz | hem | lakhem
 
 11:11
@@ -213,8 +207,7 @@ yitma
 
 11:37
 vekhi | yipol | minivlatam
-al | kol | zera | zerua
-asher | yizarea
+al | kol | zera | zerua | asher | yizarea
 tahor
 hu
 
@@ -252,15 +245,13 @@ hashoretz | al | ha'aretz | lo | tokhlum | ki | sheketz | hem
 
 11:43
 al | teshaketzu | et | nafshoteikhem | bekhol | hasheretz
-hashoretz
-velo | titame'u | bahem
+hashoretz | velo | titame'u | bahem
 venitmetem | bam
 
 11:44
 ki | ani | Yahweh | eloheikhem
 vehitkadishtem | vihyitem | kedoshim | ki | kadoosh
-ani
-velo | tetame'u | et | nafshoteikhem | bekhol | hasheretz
+ani | velo | tetame'u | et | nafshoteikhem | bekhol | hasheretz
 haromes | al | ha'aretz
 
 11:45
@@ -272,14 +263,9 @@ ani
 11:46
 zot | torat | habehemah | veha'of
 vekhol | nefesh | hachaiyah
-haromeset | bamayim
-ulekhol | nefesh
+haromeset | bamayim | ulekhol | nefesh
 hashoretzet | al | ha'aretz
 
 11:47
-lehavdil | bein | hatame
-uvein | hatahor
-uvein | hachaiyah | hane'ekhelet
-uvein | hachaiyah
-asher
-lo | te'akhel
+lehavdil | bein | hatame | uvein | hatahor
+uvein | hachaiyah | hane'ekhelet | uvein | hachaiyah | asher | lo | te'akhel

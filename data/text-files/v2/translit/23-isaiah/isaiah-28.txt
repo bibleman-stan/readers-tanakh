@@ -1,8 +1,7 @@
 28:1
 ho | ateret | ge'ut | shikorei | Efrayim
 vetzitz | novel
-tzevi | tif'arto
-asher | al | rosh | gei | shemanim
+tzevi | tif'arto | asher | al | rosh | gei | shemanim
 halumei | yayin
 
 28:2
@@ -17,8 +16,7 @@ ateret | ge'ut
 shikorei | Efrayim
 
 28:4
-vehayetah | tzitzat | novel | tzevi | tif'arto
-asher | al | rosh
+vehayetah | tzitzat | novel | tzevi | tif'arto | asher | al | rosh
 gei | shemanim | kevikurah | beterem | kayitz
 asher | yir'eh | haro'eh | otah
 be'odah | bekhapo
@@ -26,21 +24,18 @@ yivla'enah
 
 28:5
 baiyom | hahu | yihyeh | Yahweh | tzeva'ot
-la'ateret | tzevi
-velitzfirat
+la'ateret | tzevi | velitzfirat
 tif'arah
 lish'ar
 amo
 
 28:6
 uleruach | mishpat
-laiyoshev | al | hamishpat
-veligvurah | meshivei | milchamah
+laiyoshev | al | hamishpat | veligvurah | meshivei | milchamah
 sha'erah
 
 28:7
-vegam | eleh | baiyayin | shagu
-uvashekhar
+vegam | eleh | baiyayin | shagu | uvashekhar
 ta'u
 kohen | venavi | shagu | vashekhar | Nivle'u | min | haiyayin | ta'u | min | hashekhar
 shagu | baro'eh
@@ -66,8 +61,7 @@ ze'eir | sham
 ze'eir | sham
 
 28:11
-ki | bela'agei | safah
-uvelashon
+ki | bela'agei | safah | uvelashon
 acheret
 yedaber
 el | ha'am | hazeh
@@ -75,8 +69,7 @@ el | ha'am | hazeh
 28:12
 asher | amar | aleihem | zot | hamenuchah | hanichu | le'ayef
 vezot
-hamarge'ah
-velo | avu
+hamarge'ah | velo | avu
 shemoa
 
 28:13
@@ -89,17 +82,14 @@ venilkadu
 
 28:14
 lakhen | shim'u | devar | Yahweh
-anshei | latzon | moshelei | ha'am | hazeh
-asher
-Birushalim
+anshei | latzon | moshelei | ha'am | hazeh | asher | Birushalim
 
 28:15
 ki | amartem | karatnu | verit | et | mavet
 ve'im | she'ol
 asinu | chozeh
 shit | shotef | ki | avar | lo | yevo'enu
-ki | samnu | khazav | machsenu
-uvasheker | Nistarenu
+ki | samnu | khazav | machsenu | uvasheker | Nistarenu
 
 28:16
 lakhen | koh | amar | Adonai | Yahweh
@@ -135,8 +125,7 @@ vehammasekhah | tzarah | kehitkanes
 28:21
 ki | khehar | Peratzim | yakum | Yahweh | ke'emek
 Begiv'on | yirgaz
-la'asot | ma'asehu | zar | ma'asehu
-vela'avod | avodato
+la'asot | ma'asehu | zar | ma'asehu | vela'avod | avodato
 nakheriyah
 avodato
 
@@ -161,10 +150,8 @@ admato
 
 28:25
 halo | im | shivah | faneiha
-vehefitz | ketzach
-vekhamon | yizrok
-vesam | chitah | sorah | use'orah | nisman
-vekhusemet
+vehefitz | ketzach | vekhamon | yizrok
+vesam | chitah | sorah | use'orah | nisman | vekhusemet
 gevulato
 
 28:26
@@ -175,8 +162,7 @@ elohav | yorenu
 ki | lo | vecharutz | yudash | ketzach
 ve'ofan | agalah
 al | kamon
-yusav | ki | vamateh | yechavet | ketzach
-vekhamon | bashavet
+yusav | ki | vamateh | yechavet | ketzach | vekhamon | bashavet
 
 28:28
 lechem | yudak | ki | lo | lanetzach

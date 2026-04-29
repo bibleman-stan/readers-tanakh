@@ -4,11 +4,9 @@ vekhol | tzeva'am
 
 2:2
 vaykhal | elohim | baiyom | hashevi'i
-melakhto
-asher | asah
+melakhto | asher | asah
 vaiyishbot | baiyom | hashevi'i
-mikol | melakhto
-asher | asah
+mikol | melakhto | asher | asah
 
 2:3
 vayvarekh | elohim | et | yom | hashevi'i
@@ -45,10 +43,8 @@ lenefesh | chaiyah
 
 2:8
 vaiyita | Yahweh | elohim | gan | Be'eden
-mikedem
-vaiyasem | sham
-et | ha'adam
-asher | yatzar
+mikedem | vaiyasem | sham
+et | ha'adam | asher | yatzar
 
 2:9
 vaiyatzmach | Yahweh | elohim | min | ha'adamah
@@ -62,8 +58,7 @@ tov | vara
 2:10
 venahar | yotze | Me'eden
 lehashkot
-et | hagan
-umisham | yipared
+et | hagan | umisham | yipared
 vehayah | le'arba'ah | rashim
 
 2:11
@@ -96,8 +91,7 @@ hu | Ferat
 vaiyikach | Yahweh | elohim
 et | ha'adam
 vaiyanichehu | vegan | Eden
-le'avedah
-uleshamerah
+le'avedah | uleshamerah
 
 2:16
 vaytzav | Yahweh | elohim
@@ -125,8 +119,7 @@ hu | shemo
 2:20
 vaiyikra | ha'adam | shemot | lekhol | habehemah | ule'of | hashamayim
 ulekhol
-chaiyat | hasadeh
-Ule'adam
+chaiyat | hasadeh | Ule'adam
 lo | matza | ezer | kenegdo
 
 2:21
@@ -138,14 +131,12 @@ tachtenah
 
 2:22
 vaiyiven | Yahweh | elohim | et | hatzela | asher | lakach | min | ha'adam
-le'ishah
-vayvi'eha
+le'ishah | vayvi'eha
 el | ha'adam
 
 2:23
 vaiyomer | ha'adam
-zot | hapa'am | etzem | me'atzamai
-uvasar | mibesari
+zot | hapa'am | etzem | me'atzamai | uvasar | mibesari
 lezot | yikare | ishah | ki | me'ish | lukochah | zot
 
 2:24
@@ -159,6 +150,5 @@ levasar | echad
 2:25
 vaiyihyu | sheneihem | arumim
 ha'adam
-ve'ishto
-velo
+ve'ishto | velo
 yitboshashu

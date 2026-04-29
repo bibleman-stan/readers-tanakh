@@ -14,9 +14,7 @@ chamishim | amot
 
 42:3
 neged | ha'esrim | asher | lechatzer | hapenimi
-veneged | ritzfah
-asher
-lechatzer | hachitzonah
+veneged | ritzfah | asher | lechatzer | hachitzonah
 atik | el | penei | atik | bashelishim
 
 42:4
@@ -60,13 +58,10 @@ leshakhot
 vederekh | lifneihem | kemar'eh | haleshakhot | asher | derekh | hatzafon
 ke'arekan
 ken | racheban
-vekhol | motza'eihen
-ukhemishpeteihen
-ukhefitcheihen
+vekhol | motza'eihen | ukhemishpeteihen | ukhefitcheihen
 
 42:12
-ukhefitchei | haleshakhot | asher | derekh | hadarom
-petach
+ukhefitchei | haleshakhot | asher | derekh | hadarom | petach
 berosh | darekh
 derekh | bifnei | hagederet | haginah
 derekh | hakadim | bevo'an
@@ -87,10 +82,8 @@ el | asher | la'am
 
 42:15
 vekhilah | et | midot | habayit | hapenimi
-vehotzi'ani | derekh | hasha'ar
-asher | panav
-derekh | hakadim
-umedado | saviv | saviv
+vehotzi'ani | derekh | hasha'ar | asher | panav
+derekh | hakadim | umedado | saviv | saviv
 
 42:16
 madad | ruach | hakadim | bikneh | hamidah

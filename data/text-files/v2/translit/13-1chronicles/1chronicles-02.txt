@@ -32,8 +32,7 @@ kulam | chamishah
 
 2:7
 uvenei | Karmi
-Akhar | okher | Yisra'el
-asher | ma'al
+Akhar | okher | Yisra'el | asher | ma'al
 bacherem
 
 2:8
@@ -41,8 +40,7 @@ uvenei | Eitan
 Azaryah
 
 2:9
-uvenei | Chetzron
-asher | Nolad | lo
+uvenei | Chetzron | asher | Nolad | lo
 et | Yerachme'el | ve'et | Ram
 ve'et | Keluvai
 
@@ -139,8 +137,7 @@ avi | Tekoa
 
 2:25
 vaiyihyu | venei | Yerachme'el | bekhor | Chetzron
-habekhor | Ram
-Uvunah | Va'oren | Va'otzem
+habekhor | Ram | Uvunah | Va'oren | Va'otzem
 Achiyah
 
 2:26
@@ -177,9 +174,7 @@ lo | vanim
 
 2:31
 uvenei | Apayim
-Yish'i
-uvenei | Yish'i | Sheshan
-uvenei | Sheshan
+Yish'i | uvenei | Yish'i | Sheshan | uvenei | Sheshan
 Achlai
 
 2:32
@@ -195,8 +190,7 @@ Pelet | Vezaza
 eleh | hayu | benei | Yerachme'el
 
 2:34
-velo | hayah | Lesheshan | banim | ki | im | banot
-Ulesheshan | eved | mitzri
+velo | hayah | Lesheshan | banim | ki | im | banot | Ulesheshan | eved | mitzri
 ushemo | Yarcha
 
 2:35
@@ -237,8 +231,7 @@ holid | et | Elishama
 
 2:42
 uvenei | Khalev | achi | Yerachme'el | Meisha | bekhoro
-hu | avi | Zif
-uvenei | Mareshah
+hu | avi | Zif | uvenei | Mareshah
 avi | Chevron
 
 2:43
@@ -255,8 +248,7 @@ Verekem
 holid | et | Shamai
 
 2:45
-uven | Shamai | Ma'on
-Uma'on
+uven | Shamai | Ma'on | Uma'on
 avi | Veit | Tzur
 
 2:46

@@ -1,7 +1,6 @@
 23:1
 lo | yikach | ish
-et | eshet | aviv
-velo | yegaleh | kenaf | aviv
+et | eshet | aviv | velo | yegaleh | kenaf | aviv
 
 23:2
 lo | yavo | fetzua | daka | ukherut | shafekhah | bikhal | Yahweh
@@ -51,8 +50,7 @@ venishmarta | mikol
 davar | ra
 
 23:11
-ki | yihyeh | vekha | ish
-asher | lo | yihyeh | tahor
+ki | yihyeh | vekha | ish | asher | lo | yihyeh | tahor
 mikereh | layelah
 veyatza | el | michutz | lamachaneh
 lo | yavo
@@ -60,8 +58,7 @@ el | tokh | hamachaneh
 
 23:12
 vehayah | lifnot | erev
-yirchatz | bamayim
-ukhevo | hashemesh
+yirchatz | bamayim | ukhevo | hashemesh
 yavo
 el | tokh | hamachaneh
 
@@ -77,8 +74,7 @@ veyated | tihyeh | lekha
 al | azenekha
 vehayah | beshivtekha | chutz
 vechafartah | vah
-veshavta
-vekhisita | et | tze'atekha
+veshavta | vekhisita | et | tze'atekha
 
 23:15
 ki | Yahweh | eloheikha | mithalekh | bekerev | machanekha | lehatzilekha | velatet | oyeveikha | lefaneikha
@@ -98,8 +94,7 @@ batov | lo | lo
 tonenu
 
 23:18
-lo | tihyeh | kedeshah | mibenot | Yisra'el
-velo | yihyeh | kadesh | mibenei | Yisra'el
+lo | tihyeh | kedeshah | mibenot | Yisra'el | velo | yihyeh | kadesh | mibenei | Yisra'el
 
 23:19
 lo | tavi | etnan | zonah | umechir | kelev | beit | Yahweh | eloheikha
@@ -111,12 +106,10 @@ gam | sheneihem
 lo | tashikh | le'achikha
 neshekh | kesef
 neshekh | okhel
-neshekh | kol | davar
-asher | yishakh
+neshekh | kol | davar | asher | yishakh
 
 23:21
-lanakheri | tashikh
-ule'achikha | lo | tashikh
+lanakheri | tashikh | ule'achikha | lo | tashikh
 lema'an | yevarekhkha | Yahweh | eloheikha | bekhol | mishlach | yadekha
 al | ha'aretz
 asher | atah | va | shamah

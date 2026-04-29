@@ -55,8 +55,7 @@ lemateh | Dan
 Ami'el | ben | Gemali
 
 13:13
-lemateh | Asher
-Setur | ben | Mikha'el
+lemateh | Asher | Setur | ben | Mikha'el
 
 13:14
 lemateh | Naftali
@@ -91,15 +90,13 @@ im | rav
 13:19
 umah | ha'aretz | asher | hu | yoshev | bah
 hatovah | hi
-im | ra'ah
-umah | he'arim | asher | hu | yoshev | bahenah
+im | ra'ah | umah | he'arim | asher | hu | yoshev | bahenah
 habemachanim
 im | bemivtzarim
 
 13:20
 umah | ha'aretz | hashemenah | hi | im | razah | hayesh | bah | etz | im | ayin
-vehitchazaktem
-ulekachtem | miperi | ha'aretz
+vehitchazaktem | ulekachtem | miperi | ha'aretz
 vehaiyamim
 yemei | bikurei | anavim
 
@@ -120,9 +117,7 @@ Tzo'an | Mitzrayim
 13:23
 vaiyavo'u | ad | Nachal | Eshkol | vaiyikhretu | misham | zemorah | ve'eshkol | anavim | echad
 vaiyisa'uhu | vamot
-bishnayim
-umin | harimonim
-umin | hate'enim
+bishnayim | umin | harimonim | umin | hate'enim
 
 13:24
 lamakom | hahu | kara
@@ -144,8 +139,7 @@ et | peri | ha'aretz
 13:27
 vaysaperu | lo | vaiyomeru
 banu
-el | ha'aretz
-asher | shelachtanu
+el | ha'aretz | asher | shelachtanu
 vegam | zavat | chalav | udevash | hi
 vezeh | piryah
 

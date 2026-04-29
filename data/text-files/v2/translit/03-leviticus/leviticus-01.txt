@@ -50,9 +50,7 @@ ve'arekhu | benei | Aharon | hakohanim
 et | hanetachim
 et | harosh
 ve'et | hapader
-al | ha'etzim | asher | al | ha'esh
-asher
-al | hamizbeach
+al | ha'etzim | asher | al | ha'esh | asher | al | hamizbeach
 
 1:9
 vekirbo | ukhera'av
@@ -77,9 +75,7 @@ venitach | oto | lintachav
 ve'et | rosho
 ve'et | pidro
 ve'arakh | hakohen | otam
-al | ha'etzim | asher | al | ha'esh
-asher
-al | hamizbeach
+al | ha'etzim | asher | al | ha'esh | asher | al | hamizbeach
 
 1:13
 vehakerev | vehakera'ayim
@@ -95,8 +91,7 @@ vehikriv | min | hatorim | o | min | benei | haiyonah
 et | karebano
 
 1:15
-vehikrivo | hakohen | el | hamizbeach
-umalak | et | rosho
+vehikrivo | hakohen | el | hamizbeach | umalak | et | rosho
 vehiktir
 hamizbechah
 venimtzah | damo | al
@@ -111,7 +106,6 @@ hadashen
 1:17
 veshisa | oto | vikhnafav | lo | yavdil
 vehiktir | oto | hakohen | hamizbechah
-al | ha'etzim
-asher | al | ha'esh
+al | ha'etzim | asher | al | ha'esh
 olah | hu | isheh | reiach | nichoach
 Layahweh

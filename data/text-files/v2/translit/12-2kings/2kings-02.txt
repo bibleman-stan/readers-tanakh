@@ -18,8 +18,7 @@ vaiyetze'u | venei | hanevi'im | asher | Beit | El | el | Elisha
 vaiyomeru | elav
 hayada'ta
 ki | haiyom | Yahweh | lokeach | et | adoneikha
-me'al | roshekha
-vaiyomer | gam | ani | yada'ti
+me'al | roshekha | vaiyomer | gam | ani | yada'ti
 hecheshu
 
 2:4
@@ -35,8 +34,7 @@ vaiyigeshu | venei | hanevi'im | asher | Biricho | el | Elisha
 vaiyomeru | elav
 hayada'ta
 ki | haiyom | Yahweh | lokeach | et | adoneikha
-me'al | roshekha
-vaiyomer | gam | ani | yada'ti
+me'al | roshekha | vaiyomer | gam | ani | yada'ti
 hecheshu
 
 2:6
@@ -79,8 +77,7 @@ ve'im | ayin | lo | yihyeh
 vayhi | hemah | holekhim | halokh | vedaber
 vehineh | rekhev | esh | vesusei | esh
 vaiyafridu
-bein | sheneihem
-vaiya'al | Eliyahu
+bein | sheneihem | vaiya'al | Eliyahu
 base'arah
 hashamayim
 
@@ -93,10 +90,8 @@ vaiyikra'em
 lishnayim | kera'im
 
 2:13
-vaiyarem | et | aderet | Eliyahu
-asher | nafelah
-me'alav
-vaiyashov | vaiya'amod
+vaiyarem | et | aderet | Eliyahu | asher | nafelah
+me'alav | vaiyashov | vaiya'amod
 al | sefat | Haiyarden
 
 2:14
@@ -164,8 +159,7 @@ lo | yihyeh | misham | od | mavet | umeshakalet
 2:22
 vaiyerafu | hamayim
 ad
-haiyom | hazeh | kidvar | Elisha
-asher | diber
+haiyom | hazeh | kidvar | Elisha | asher | diber
 
 2:23
 vaiya'al | misham
@@ -186,6 +180,5 @@ yeladim
 
 2:25
 vaiyelekh | misham
-el | har | Hakarmel
-umisham
+el | har | Hakarmel | umisham
 shav | Shomeron

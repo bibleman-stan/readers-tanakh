@@ -8,17 +8,14 @@ lo | yada'nu | meh | hayah | lo
 
 32:2
 vaiyomer | alehem | Aharon
-pareku | nizmei | hazahav
-asher | be'azenei | nesheikhem
-beneikhem
-uvenoteikhem
+pareku | nizmei | hazahav | asher | be'azenei | nesheikhem
+beneikhem | uvenoteikhem
 vehavi'u
 elai
 
 32:3
 vaiyitpareku | kol | ha'am
-et | nizmei | hazahav
-asher | be'azeneihem
+et | nizmei | hazahav | asher | be'azeneihem
 vaiyavi'u
 el | Aharon
 
@@ -27,15 +24,13 @@ vaiyikach | miyadam | vaiyatzar | oto | bacheret
 vaiya'asehu
 egel | masekhah
 vaiyomeru
-eleh | eloheikha | Yisra'el
-asher | he'elukha
+eleh | eloheikha | Yisra'el | asher | he'elukha
 me'eretz | Mitzrayim
 
 32:5
 vaiyar | Aharon
 vaiyiven | mizbeach
-lefanav
-vaiyikra | Aharon | vaiyomar
+lefanav | vaiyikra | Aharon | vaiyomar
 chag | Layahweh | machar
 
 32:6
@@ -50,8 +45,7 @@ letzachek
 32:7
 vaydaber | Yahweh
 el | Mosheh
-lekh | red | ki | shichet | amekha
-asher | he'eleita
+lekh | red | ki | shichet | amekha | asher | he'eleita
 me'eretz | Mitzrayim
 
 32:8
@@ -60,8 +54,7 @@ asu | lahem
 egel | masekhah
 vaiyishtachavu | lo | vaiyizbechu | lo
 vaiyomeru
-eleh | eloheikha | Yisra'el
-asher | he'elukha
+eleh | eloheikha | Yisra'el | asher | he'elukha
 me'eretz | Mitzrayim
 
 32:9
@@ -84,8 +77,7 @@ et | penei
 Yahweh | elohav
 vaiyomer | lamah | Yahweh | yechereh | apekha | be'amekha
 asher | hotzeta | me'eretz | Mitzrayim
-bekhoach | gadol
-uveyad | chazakah
+bekhoach | gadol | uveyad | chazakah
 
 32:12
 lamah | yomeru | Mitzrayim | lemor | bera'ah | hotzi'am | laharog | otam | beharim
@@ -107,8 +99,7 @@ le'olam
 32:14
 vaiyinachem
 Yahweh
-al | hara'ah
-asher | diber
+al | hara'ah | asher | diber
 la'asot | le'amo
 
 32:15
@@ -126,8 +117,7 @@ al | haluchot
 
 32:17
 vaiyishma | Yehoshua | et | kol | ha'am
-bere'o
-vaiyomer | el | Mosheh
+bere'o | vaiyomer | el | Mosheh
 kol | milchamah | bamachaneh
 
 32:18
@@ -168,8 +158,7 @@ hu
 
 32:23
 vaiyomeru | li
-aseh | lanu | elohim
-asher | yelekhu
+aseh | lanu | elohim | asher | yelekhu
 lefaneinu | ki | zeh | Mosheh | ha'ish | asher | he'elanu | me'eretz | Mitzrayim
 lo | yada'nu | meh | hayah | lo
 
@@ -212,9 +201,7 @@ ish
 
 32:29
 vaiyomer | Mosheh | mil'u | yedkhem | haiyom | Layahweh
-ki | ish | bivno
-uve'achiv
-velatet | aleikhem | haiyom | berakhah
+ki | ish | bivno | uve'achiv | velatet | aleikhem | haiyom | berakhah
 
 32:30
 vayhi | mimochorat
@@ -233,8 +220,7 @@ elohei | zahav
 
 32:32
 ve'atah | im | tisa | chatatam
-ve'im | ayin | mecheni | na | misifrekha
-asher | kataveta
+ve'im | ayin | mecheni | na | misifrekha | asher | kataveta
 
 32:33
 vaiyomer | Yahweh
@@ -251,6 +237,5 @@ chatatam
 
 32:35
 vaiyigof | Yahweh
-et | ha'am | al | asher | asu | et | ha'egel
-asher | asah
+et | ha'am | al | asher | asu | et | ha'egel | asher | asah
 Aharon

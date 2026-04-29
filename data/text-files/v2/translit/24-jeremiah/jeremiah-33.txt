@@ -23,10 +23,8 @@ el | hasolelot
 ve'el | hecharev
 
 33:5
-ba'im | lehilachem | et | hakasdim
-ulemal'am | et | pigrei | ha'adam
-asher | hikeiti | ve'api
-uvachamati
+ba'im | lehilachem | et | hakasdim | ulemal'am | et | pigrei | ha'adam
+asher | hikeiti | ve'api | uvachamati
 va'asher | histarti | fanai | meha'ir | hazot | al | kol | ra'atam
 
 33:6
@@ -38,12 +36,10 @@ ateret | shalom | ve'emet
 33:7
 vahashivoti | et | shevut | Yehudah
 ve'et
-shevut | Yisra'el
-uvenitim | kevarishonah
+shevut | Yisra'el | uvenitim | kevarishonah
 
 33:8
-vetihartim | mikol | avonam
-asher | chate'u | li
+vetihartim | mikol | avonam | asher | chate'u | li
 vesalachti | lekhol | avonoteihem | asher | chate'u | li
 va'asher
 pashe'u | vi
@@ -52,8 +48,7 @@ pashe'u | vi
 vehayetah | li | leshem | sason | lithilah | uletif'eret | lekhol
 goyei | ha'aretz
 asher | yishme'u | et | kol | hatovah | asher | anokhi | oseh | otam
-ufachadu | veragezu | al | kol | hatovah | ve'al | kol | hashalom
-asher | anokhi
+ufachadu | veragezu | al | kol | hatovah | ve'al | kol | hashalom | asher | anokhi
 oseh | lah
 
 33:10
@@ -61,8 +56,7 @@ koh | amar | Yahweh | od | yishama | bamakom | hazeh
 asher | atem | omerim
 charev | hu | me'ein | adam
 ume'ein | behemah | be'arei | Yehudah | uvechutzot | Yerushalim
-hanshamot | me'ein | adam | ume'ein | yoshev
-ume'ein | behemah
+hanshamot | me'ein | adam | ume'ein | yoshev | ume'ein | behemah
 
 33:11
 kol | sason | vekol | simchah | kol | chatan | vekol | kalah
@@ -72,23 +66,20 @@ amar | Yahweh
 
 33:12
 koh | amar | Yahweh | tzeva'ot
-od | yihyeh | bamakom | hazeh | hecharev | me'ein | adam | ve'ad | behemah
-uvekhol | arav
+od | yihyeh | bamakom | hazeh | hecharev | me'ein | adam | ve'ad | behemah | uvekhol | arav
 neveh | ro'im | marbitzim
 tzon
 
 33:13
 be'arei | hahar | be'arei | hashefelah | uve'arei | Hanegev
-uve'eretz | Binyamin | uvisvivei | Yerushalim
-uve'arei | Yehudah
+uve'eretz | Binyamin | uvisvivei | Yerushalim | uve'arei | Yehudah
 od | ta'avorenah | hatzon | al | yedei | moneh
 amar | Yahweh
 
 33:14
 hineh | yamim | ba'im
 ne'um | Yahweh
-vahakimoti | et | hadavar | hatov
-asher | dibarti | el | beit | Yisra'el
+vahakimoti | et | hadavar | hatov | asher | dibarti | el | beit | Yisra'el
 ve'al | beit | Yehudah
 
 33:15
@@ -123,8 +114,7 @@ lemor
 koh | amar | Yahweh
 im | taferu | et | beriti | haiyom
 ve'et | beriti
-halayelah
-ulevilti | heyot | yomom | valaylah | be'itam
+halayelah | ulevilti | heyot | yomom | valaylah | be'itam
 
 33:21
 gam | beriti | tufar | et | David | avdi | mihyot | lo | ven | molekh | al | kis'o

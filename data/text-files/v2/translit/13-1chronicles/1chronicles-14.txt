@@ -14,13 +14,11 @@ amo | Yisra'el
 
 14:3
 vaiyikach | David | od | nashim
-Birushalim
-vaiyoled | David | od
+Birushalim | vaiyoled | David | od
 banim | uvanot
 
 14:4
-ve'eleh | shemot | hayludim
-asher | hayu | lo
+ve'eleh | shemot | hayludim | asher | hayu | lo
 Birushalim
 Shamua | Veshovav
 Natan
@@ -41,8 +39,7 @@ Ve'elifalet
 14:8
 vaiyishme'u | felishtim | ki | Nimshach | David | lemelekh | al | kol | Yisra'el
 vaiya'alu | khol | pelishtim
-levakesh | et | David
-vaiyishma | David
+levakesh | et | David | vaiyishma | David
 vaiyetze
 lifneihem
 
@@ -81,8 +78,7 @@ vaiyish'al | od | David | belohim
 vaiyomer | lo | ha'elohim
 lo | ta'aleh
 achareihem
-hasev | me'aleihem
-uvata | lahem | mimul | habekha'im
+hasev | me'aleihem | uvata | lahem | mimul | habekha'im
 
 14:15
 vihi | keshame'akha | et | kol | hatze'adah | berashei | habekha'im
@@ -99,6 +95,5 @@ ve'ad | Gazerah
 
 14:17
 vaiyetze | shem | David
-bekhol | ha'aratzot
-Vayahweh | natan | et | pachdo
+bekhol | ha'aratzot | Vayahweh | natan | et | pachdo
 al | kol | hagoyim

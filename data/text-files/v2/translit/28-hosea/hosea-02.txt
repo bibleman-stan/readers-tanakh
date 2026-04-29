@@ -1,6 +1,5 @@
 2:1
-vehayah | mispar | benei | Yisra'el | kechol | haiyam
-asher | lo | yimad
+vehayah | mispar | benei | Yisra'el | kechol | haiyam | asher | lo | yimad
 velo | yisafer
 vehayah | bimkom | asher | ye'amer | lahem | lo | ami | atem
 ye'amer | lahem | benei | el | chai
@@ -12,8 +11,7 @@ yom | Yizre'el
 
 2:3
 imru | la'acheikhem
-ami
-vela'achoteikhem
+ami | vela'achoteikhem
 ruchamah
 
 2:4
@@ -48,22 +46,18 @@ vegadarti | et | gederah
 unetivoteiha | lo | timtza
 
 2:9
-veridefah | et | me'ahaveiha | velo | tasig | otam
-uvikshatam
-velo | timtza
+veridefah | et | me'ahaveiha | velo | tasig | otam | uvikshatam | velo | timtza
 ve'amerah | elekhah | ve'ashuvah | el | ishi | harishon
 ki | tov | li | az | me'atah
 
 2:10
 vehi | lo | yade'ah | ki | anokhi | natati | lah
 hadagan
-vehatiroosh | vehaiyitzhar
-vekhesef | hirbeiti | lah | vezahav
+vehatiroosh | vehaiyitzhar | vekhesef | hirbeiti | lah | vezahav
 asu | laba'al
 
 2:11
-lakhen | ashuv
-velakachti | degani | be'ito
+lakhen | ashuv | velakachti | degani | be'ito
 vetiroshi | bemo'ado
 vehitzalti | tzamri | ufishti
 lekhasot
@@ -81,8 +75,7 @@ chadeshah | veshabbatah
 vekhol | mo'adah
 
 2:14
-vahashimoti | gafnah | ute'enatah
-asher | amerah | etnah | hemah | li
+vahashimoti | gafnah | ute'enatah | asher | amerah | etnah | hemah | li
 asher | natenu | li
 me'ahavai
 vesamtim | leya'ar
@@ -113,12 +106,10 @@ alotah | me'eretz | Mitzrayim
 2:18
 vehayah | vaiyom | hahu | ne'um | Yahweh
 tikre'i
-ishi
-velo | tikre'i | li | od | ba'li
+ishi | velo | tikre'i | li | od | ba'li
 
 2:19
-vahasiroti | et | shemot | habe'alim | mipiha
-velo | yizakheru | od | bishmam
+vahasiroti | et | shemot | habe'alim | mipiha | velo | yizakheru | od | bishmam
 
 2:20
 vekharati | lahem | berit | baiyom | hahu
@@ -132,9 +123,7 @@ lavetach
 2:21
 ve'erastikh | li
 le'olam
-ve'erastikh | li | betzedek | uvemishpat
-uvechesed
-uverachamim
+ve'erastikh | li | betzedek | uvemishpat | uvechesed | uverachamim
 
 2:22
 ve'erastikh | li | be'emunah

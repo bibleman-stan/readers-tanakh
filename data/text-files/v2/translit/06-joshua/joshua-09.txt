@@ -23,9 +23,7 @@ vaiya'asu | gam | hemah | be'aremah
 vaiyelekhu
 vaiyitztaiyaru
 vaiyikchu | sakim | balim | lachamoreihem
-venodot | yayin | balim
-umevuka'im
-umetzorarim
+venodot | yayin | balim | umevuka'im | umetzorarim
 
 9:5
 une'alot | balot | umetula'ot | beragleihem
@@ -62,10 +60,8 @@ ve'et | kol | asher | asah
 Bemitzrayim
 
 9:10
-ve'et | kol | asher | asah | lishnei | malkhei | ha'emori
-asher
-be'ever | Haiyarden | Lesichon | melekh | Cheshbon
-Ule'og | melekh | Habashan
+ve'et | kol | asher | asah | lishnei | malkhei | ha'emori | asher
+be'ever | Haiyarden | Lesichon | melekh | Cheshbon | Ule'og | melekh | Habashan
 asher | Be'ashtarot
 
 9:11
@@ -96,8 +92,7 @@ ve'et | pi | Yahweh | lo | sha'alu
 9:15
 vaiya'as | lahem | Yehoshua | shalom
 vaiyikhrot | lahem | berit
-lechaiyotam
-vaiyishave'u | lahem
+lechaiyotam | vaiyishave'u | lahem
 nesi'ei
 ha'edah
 
@@ -113,8 +108,7 @@ hem | yoshevim
 9:17
 vaiyis'u | venei | Yisra'el | vaiyavo'u | el | areihem
 baiyom | hashelishi
-ve'areihem | Giv'on | Vehakefirah
-Uve'erot
+ve'areihem | Giv'on | Vehakefirah | Uve'erot
 Vekiryat | Ye'arim
 
 9:18
@@ -133,8 +127,7 @@ lingoa | bahem
 
 9:20
 zot | na'aseh | lahem
-vehachayeh | otam
-velo | yihyeh | aleinu | ketzef
+vehachayeh | otam | velo | yihyeh | aleinu | ketzef
 al | hashevu'ah
 asher | Nishba'nu | lahem
 
@@ -159,8 +152,7 @@ leveit | elohai
 
 9:24
 vaiya'anu | et | Yehoshua | vaiyomeru | ki | huged | hugad | la'avadeikha | et | asher | tzivah | Yahweh | eloheikha | et | Mosheh | avdo
-latet | lakhem | et | kol | ha'aretz
-ulehashmid | et | kol | yoshevei | ha'aretz | mipeneikhem
+latet | lakhem | et | kol | ha'aretz | ulehashmid | et | kol | yoshevei | ha'aretz | mipeneikhem
 vanira | me'od | lenafshoteinu | mipeneikhem
 vana'aseh
 et | hadavar | hazeh
@@ -177,7 +169,5 @@ velo | haragum
 
 9:27
 vaiyitenem | Yehoshua | baiyom | hahu | chotevei | etzim | vesho'avei | mayim
-la'edah
-ulemizbach | Yahweh | ad | haiyom | hazeh
-el | hamakom
-asher | yivchar
+la'edah | ulemizbach | Yahweh | ad | haiyom | hazeh
+el | hamakom | asher | yivchar

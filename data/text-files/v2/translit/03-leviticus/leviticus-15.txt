@@ -24,8 +24,7 @@ vekhol | hakeli | asher | yeshev | alav
 yitma
 
 15:5
-ve'ish
-asher | yiga
+ve'ish | asher | yiga
 bemishkavo
 yekhabes | begadav | verachatz | bamayim
 vetame | ad | ha'arev
@@ -43,8 +42,7 @@ yekhabes | begadav | verachatz | bamayim
 vetame | ad | ha'arev
 
 15:8
-vekhi | yarok | hazav | batahor
-vekhibes | begadav | verachatz | bamayim
+vekhi | yarok | hazav | batahor | vekhibes | begadav | verachatz | bamayim
 vetame | ad | ha'arev
 
 15:9
@@ -62,8 +60,7 @@ vetame | ad | ha'arev
 15:11
 vekhol | asher | yiga | bo | hazav
 veyadav
-lo | shataf | bamayim
-vekhibes | begadav | verachatz | bamayim
+lo | shataf | bamayim | vekhibes | begadav | verachatz | bamayim
 vetame | ad | ha'arev
 
 15:12
@@ -74,8 +71,7 @@ yishatef | bamayim
 
 15:13
 vekhi | yithar | hazav | mizovo
-vesafar | lo | shiv'at | yamim | letohorato
-vekhibes | begadav
+vesafar | lo | shiv'at | yamim | letohorato | vekhibes | begadav
 verachatz | besaro | bemayim | chaiyim
 vetaher
 
@@ -102,13 +98,11 @@ vetame | ad | ha'arev
 15:17
 vekhol | beged | vekhol | or
 asher | yihyeh | alav
-shikhvat | zara
-vekhubas | bamayim
+shikhvat | zara | vekhubas | bamayim
 vetame | ad | ha'arev
 
 15:18
-ve'ishah
-asher | yishkav | ish | otah
+ve'ishah | asher | yishkav | ish | otah
 shikhvat | zara
 verachatzu | vamayim
 vetame'u
@@ -166,8 +160,7 @@ nidatah
 
 15:27
 vekhol | hanogea | bam
-yitma
-vekhibes | begadav | verachatz | bamayim
+yitma | vekhibes | begadav | verachatz | bamayim
 vetame | ad | ha'arev
 
 15:28
@@ -191,8 +184,7 @@ vekhiper | aleiha | hakohen | lifnei | Yahweh | mizov
 tum'atah
 
 15:31
-vehizartem | et | benei | Yisra'el | mitum'atam
-velo | yamutu | betum'atam | betame'am | et | mishkani
+vehizartem | et | benei | Yisra'el | mitum'atam | velo | yamutu | betum'atam | betame'am | et | mishkani
 asher | betokham
 
 15:32
@@ -203,8 +195,5 @@ va'asher | tetze | mimenu | shikhvat | zera | letame'ah | vah
 15:33
 vehadavah | benidatah
 vehazav | et | zovo
-lazakhar
-velanekevah
-ule'ish
-asher | yishkav
+lazakhar | velanekevah | ule'ish | asher | yishkav
 im | teme'ah

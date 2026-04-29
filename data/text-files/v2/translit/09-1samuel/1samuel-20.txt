@@ -9,8 +9,7 @@ et | nafshi
 vaiyomer | lo | chalilah | lo | tamut
 hineh | lo | ya'asah | avi | davar | gadol | o | davar | katon
 velo | yigleh
-et | azeni
-umadua | yastir | avi | mimeni | et | hadavar | hazeh
+et | azeni | umadua | yastir | avi | mimeni | et | hadavar | hazeh
 ein | zot
 
 20:3
@@ -77,8 +76,7 @@ hasadeh
 20:12
 vaiyomer | Yehonatan | el | David | Yahweh | elohei | Yisra'el | ki | echkor | et | avi | ka'et | machar | hashelishit
 vehineh | tov
-el | David
-velo | az | eshlach | eleikha
+el | David | velo | az | eshlach | eleikha
 vegaliti
 et | azenekha
 
@@ -92,22 +90,18 @@ ka'asher | hayah
 im | avi
 
 20:14
-velo
-im | odeni | chai
-velo | ta'aseh | imadi | chesed | Yahweh
-velo | amut
+velo | im | odeni | chai
+velo | ta'aseh | imadi | chesed | Yahweh | velo | amut
 
 20:15
 velo | takhrit | et | chasdekha | me'im | beiti
-ad | olam
-velo | behakhrit | Yahweh | et | oyevei | David
+ad | olam | velo | behakhrit | Yahweh | et | oyevei | David
 ish | me'al
 penei | ha'adamah
 
 20:16
 vaiyikhrot | Yehonatan
-im | beit | David
-uvikesh | Yahweh | miyad
+im | beit | David | uvikesh | Yahweh | miyad
 oyevei | David
 
 20:17
@@ -122,8 +116,7 @@ machar | chodesh
 venifkadta | ki | yipaked | moshavekha
 
 20:19
-veshilashta | tered | me'od
-uvata | el | hamakom
+veshilashta | tered | me'od | uvata | el | hamakom
 asher | Nistarta | sham | beyom | hama'aseh
 veyashavta
 etzel
@@ -147,16 +140,14 @@ hineh | hachitzim | mimekha | vahal'ah | lekh | ki | shilachakha
 Yahweh
 
 20:23
-vehadavar
-asher | dibarnu
+vehadavar | asher | dibarnu
 ani | va'atah
 hineh | Yahweh | beini | uveinekha
 ad | olam
 
 20:24
 vaiyisater | David
-basadeh
-vayhi | hachodesh
+basadeh | vayhi | hachodesh
 vaiyeshev | hamelekh | al | halechem
 le'ekhol
 
@@ -164,8 +155,7 @@ le'ekhol
 vaiyeshev | hamelekh | al | moshavo | kefa'am | befa'am | el | moshav | hakir
 vaiyakom | Yehonatan
 vaiyeshev | Avner
-mitzad | Sha'ul
-vaiyipaked
+mitzad | Sha'ul | vaiyipaked
 mekom | David
 
 20:26
@@ -202,8 +192,7 @@ vaiyomer | lo
 ben | na'avat
 hamardut
 halo | yada'ti | ki | vocher | atah | leven | Yishai
-levashetekha
-ulevoshet
+levashetekha | ulevoshet
 ervat | imekha
 
 20:31
@@ -223,14 +212,12 @@ meh | asah
 
 20:33
 vaiyatel | Sha'ul | et | hachanit | alav
-lehakoto
-vaiyeda | Yehonatan
+lehakoto | vaiyeda | Yehonatan
 ki | khalah | hi | me'im | aviv | lehamit | et | David
 
 20:34
 vaiyakom | Yehonatan | me'im | hashulchan
-bochori | af
-velo | akhal | beyom | hachodesh | hasheni | lechem | ki | Ne'tzav | el | David
+bochori | af | velo | akhal | beyom | hachodesh | hasheni | lechem | ki | Ne'tzav | el | David
 ki | hikhlimo
 aviv
 
@@ -243,15 +230,13 @@ imo
 
 20:36
 vaiyomer | lena'aro
-rutz | metza | na | et | hachitzim
-asher | anokhi
+rutz | metza | na | et | hachitzim | asher | anokhi
 moreh
 hana'ar | ratz
 vehu | yarah | hachetzi | leha'aviro
 
 20:37
-vaiyavo | hana'ar | ad | mekom | hachetzi
-asher | yarah
+vaiyavo | hana'ar | ad | mekom | hachetzi | asher | yarah
 Yehonatan
 vaiyikra | Yehonatan | acharei | hana'ar | vaiyomer
 halo | hachetzi | mimekha | vahal'ah
@@ -276,8 +261,7 @@ vaiyiten | Yehonatan | et | kelav
 el | hana'ar
 asher | lo
 vaiyomer | lo
-lekh
-havei | ha'ir
+lekh | havei | ha'ir
 
 20:41
 hana'ar | ba

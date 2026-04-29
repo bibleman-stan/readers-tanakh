@@ -23,11 +23,9 @@ di | hakeim
 Nevukhadnetzar
 
 3:4
-vekharoza
-kare | vechayil
+vekharoza | kare | vechayil
 lekhon | amerin | amaiya
-umaiya
-velishanaiya
+umaiya | velishanaiya
 
 3:5
 be'idana | di | tishme'un | kal | karna | mashrokita | kitaros | sabekha | pesanterin | sumeponeyah
@@ -38,8 +36,7 @@ di | hakeim
 Nevukhadnetzar | malka
 
 3:6
-uman | di | la | yipel
-veyisgud
+uman | di | la | yipel | veyisgud
 bah | sha'ata | yitreme | legoy | atun | nura
 yakidta
 
@@ -71,8 +68,7 @@ yipel | veyisgud
 letzelem | dahava
 
 3:11
-uman | di | la | yipel
-veyisgud
+uman | di | la | yipel | veyisgud
 yitreme | legoy | atun | nura
 yakidta
 
@@ -102,8 +98,7 @@ uletzelem | dahava | di | hakeimet | la | sagedin
 3:15
 ke'an | hen | iteikhon | atidin | di | ve'idana | di | tishme'un | kal | karna | mashrokita | kitaros | sabekha | pesanterin | vesumeponeyah | vekhol | zenei | zemara | tipelun | vetisgedun | letzalma | di | avdet
 vehen | la | tisgedun | bah | sha'atah | titremon | legoy | atun | nura
-yakidta
-uman | hu | elah
+yakidta | uman | hu | elah
 dei | yesheizevinkhon | min | yedai
 
 3:16
@@ -132,8 +127,7 @@ chad | shiv'ah | al | di | chazeh
 lemezeyeh
 
 3:20
-uleguvrin | gibarei | chayil | di | vechayleh
-amar | lekhapatah
+uleguvrin | gibarei | chayil | di | vechayleh | amar | lekhapatah
 Leshadrakh | Meishakh
 Va'aved | Nego
 lemirme
@@ -141,9 +135,7 @@ le'atun | nura
 yakidta
 
 3:21
-bedayin | guvraiya | ilekh | kefitu | besarbaleihon | patisheihon
-vekharbelatehon
-ulevusheihon
+bedayin | guvraiya | ilekh | kefitu | besarbaleihon | patisheihon | vekharbelatehon | ulevusheihon
 uremiv | legoy | atun | nura
 yakidta
 
@@ -192,16 +184,14 @@ vereiach | nur | la | adat | behon
 aneh | Nevukhadnetzar | ve'amar | berikh | elahahon | di | Shadrakh | Meishakh | Va'aved | Nego
 di | shelach | mal'akheh | vesheiziv | le'avdohi
 di | hitrechitzu
-alohi
-umilat | malka | shaniv
+alohi | umilat | malka | shaniv
 vihavu | geshmeihon | di | la | yiflechun | vela | yisgedun | lekhol | elah
 lahen | lelahahon
 
 3:29
 umini | sim | te'em
 di | khol | am | umah | velishan | di | yemar | shelah | al | elahahon | di | Shadrakh | Meishakh | Va'aved | Nego
-hadamin | yit'aved
-uvayteh
+hadamin | yit'aved | uvayteh
 nevali | yishtaveh | kol | kovel | di | la | itai | elah | ochoran
 di | yikul | lehatzalah | kidnah
 

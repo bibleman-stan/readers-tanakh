@@ -35,11 +35,9 @@ shenit
 
 13:6
 vera'ah | hakohen | oto | baiyom | hashevi'i | shenit
-vehineh | kehah | hanega
-velo | fasah | hanega
+vehineh | kehah | hanega | velo | fasah | hanega
 ba'or
-vetiharo | hakohen | mispachat | hi
-vekhibes | begadav
+vetiharo | hakohen | mispachat | hi | vekhibes | begadav
 vetaher
 
 13:7
@@ -204,10 +202,8 @@ shiv'at | yamim
 
 13:32
 vera'ah | hakohen | et | hanega | baiyom | hashevi'i
-vehineh | lo | fasah | hanetek
-velo | hayah | vo
-se'ar | tzaho
-umar'eh | hanetek
+vehineh | lo | fasah | hanetek | velo | hayah | vo
+se'ar | tzaho | umar'eh | hanetek
 ein | amok | min | ha'or
 
 13:33
@@ -222,8 +218,7 @@ vera'ah | hakohen | et | hanetek | baiyom | hashevi'i | vehineh | lo | fasah | h
 umar'ehu
 einenu | amok
 min | ha'or
-vetihar | oto | hakohen
-vekhibes | begadav
+vetihar | oto | hakohen | vekhibes | begadav
 vetaher
 
 13:35
@@ -299,8 +294,7 @@ nega | tzara'at | beveged | tzemer
 o | beveged | pishtim
 
 13:48
-o | vishti | o | ve'erev | lapishtim
-velatzamer
+o | vishti | o | ve'erev | lapishtim | velatzamer
 o | ve'or
 o | bekhol | melekhet | or
 
@@ -338,8 +332,7 @@ o | va'erev
 o | bekhol | keli | or
 
 13:54
-vetzivah | hakohen
-vekhibesu
+vetzivah | hakohen | vekhibesu
 et | asher | bo
 hanaga
 vehisgiro | shiv'at | yamim
@@ -371,8 +364,7 @@ hanaga
 13:58
 vehabeged | ov | hasheti | ov | ha'erev | ov | khol | keli | ha'or | asher | tekhabes
 vesar | mehem
-hanaga
-vekhubas | shenit
+hanaga | vekhubas | shenit
 vetaher
 
 13:59

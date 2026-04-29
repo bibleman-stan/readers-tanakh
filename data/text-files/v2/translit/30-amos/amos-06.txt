@@ -1,12 +1,10 @@
 6:1
 ho | hasha'ananim | Betziyon
 vehabotechim | behar | Shomeron
-nekuvei | reshit | hagoyim
-uva'u | lahem | beit | Yisra'el
+nekuvei | reshit | hagoyim | uva'u | lahem | beit | Yisra'el
 
 6:2
-ivru | Khalneh | ure'u
-ulekhu | misham
+ivru | Khalneh | ure'u | ulekhu | misham
 Chamat | rabah
 uredu | Gat | pelishtm | hatovim | min | hamamlakhot | ha'eleh
 im | rav | gevulam | migevulkhem
@@ -32,8 +30,7 @@ chashevu | lahem | kelei | shir
 
 6:6
 hashotim | bemizrekei | yayin
-vereshit | shemanim | yimshachu
-velo | Nechlu
+vereshit | shemanim | yimshachu | velo | Nechlu
 al | shever | Yosef
 
 6:7
@@ -79,6 +76,5 @@ Karnayim
 
 6:14
 ki | hini | mekim | aleikhem | beit | Yisra'el | ne'um | Yahweh | elohei | hatzeva'ot
-goy
-velachatzu | etkhem | Milevo | Chamat
+goy | velachatzu | etkhem | Milevo | Chamat
 ad | nachal | Ha'aravah

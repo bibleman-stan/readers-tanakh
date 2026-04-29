@@ -1,8 +1,7 @@
 1:1
 vehamelekh | David | zaken
 ba
-baiyamim
-vaykhasuhu | babegadim
+baiyamim | vaykhasuhu | babegadim
 velo | yicham | lo
 
 1:2
@@ -51,8 +50,7 @@ Adoniyah
 
 1:8
 Vetzadok | hakohen | Uvenayahu | ven | Yehoyada | Venatan | hanavi | Veshim'i | Vere'i
-vehaggiborim
-asher | Ledavid
+vehaggiborim | asher | Ledavid
 lo | hayu
 im | Adoniyahu
 
@@ -79,8 +77,7 @@ lo | yada
 
 1:12
 ve'atah | lekhi | i'atzekh | na
-etzah
-umaleti | et | nafshekh
+etzah | umaleti | et | nafshekh
 ve'et | nefesh | benekh
 Shelomoh
 
@@ -94,8 +91,7 @@ umadua | malakh | Adoniyahu
 1:14
 hineh | odakh | medaberet | sham
 im | hamelekh
-va'ani | avo | acharayikh
-umileti
+va'ani | avo | acharayikh | umileti
 et | devarayikh
 
 1:15
@@ -126,10 +122,8 @@ ve'atah | adoni | hamelekh | lo | yada'eta
 1:19
 vaiyizbach | shor | umeri | vetzon | laro
 vaiyikra | lekhol | benei | hamelekh
-Ule'evyatar | hakohen
-Uleyo'av
-sar | hatzava
-Velishlomoh | avdekha
+Ule'evyatar | hakohen | Uleyo'av
+sar | hatzava | Velishlomoh | avdekha
 lo | kara
 
 1:20
@@ -183,8 +177,7 @@ lo | kara
 1:27
 im | me'et | adoni | hamelekh
 Nihyah
-hadavar | hazeh
-velo | hoda'ta | et | avdeikha
+hadavar | hazeh | velo | hoda'ta | et | avdeikha
 mi | yeshev | al | kise | adoni | hamelekh
 acharav
 
@@ -218,8 +211,7 @@ le'olam
 
 1:32
 vaiyomer | hamelekh | David | kir'u | li | Letzadok | hakohen | Ulenatan | hanavi
-Velivnayahu | ben | Yehoyada
-vaiyavo'u
+Velivnayahu | ben | Yehoyada | vaiyavo'u
 lifnei | hamelekh
 
 1:33
@@ -322,8 +314,7 @@ pirdat | hamelekh
 vaiyimshechu | oto | Tzadok | hakohen | Venatan | hanavi | lemelekh | Begichon | vaiya'alu | misham | semechim
 vatehom
 hakiryah
-hu | hakol
-asher | shema'tem
+hu | hakol | asher | shema'tem
 
 1:46
 vegam | yashav | Shelomoh
@@ -333,8 +324,7 @@ al | kise | hamelukhah
 vegam | ba'u | avdei | hamelekh | levarekh | et | adoneinu | hamelekh | David | lemor
 yeitev | eloheicha | et | shem | Shelomoh | mishemekha
 vigadel | et | kis'o
-mikis'ekha
-vaiyishtachu | hamelekh
+mikis'ekha | vaiyishtachu | hamelekh
 al | hamishkav
 
 1:48
@@ -345,9 +335,7 @@ ve'einai | ro'ot
 
 1:49
 vaiyecherdu | vaiyakumu
-kol | hakeru'im
-asher
-La'adoniyahu
+kol | hakeru'im | asher | La'adoniyahu
 vaiyelekhu
 ish | ledarko
 
@@ -379,6 +367,5 @@ vamet
 vaiyishlach | hamelekh | Shelomoh | vaiyoriduhu | me'al | hamizbeach
 vaiyavo
 vaiyishtachu
-lamelekh | Shelomoh
-vaiyomer | lo | Shelomoh
+lamelekh | Shelomoh | vaiyomer | lo | Shelomoh
 lekh | leveitekha

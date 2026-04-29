@@ -40,8 +40,7 @@ even | Bohan | ben | Re'uven
 
 15:7
 ve'alah | hagevul | Devirah | me'emek | Akhor
-vetzafonah | poneh | el | Hagilgal | asher | nokhach | lema'aleh | Adumim
-asher | minegev
+vetzafonah | poneh | el | Hagilgal | asher | nokhach | lema'aleh | Adumim | asher | minegev
 lanachal
 ve'avar | hagevul | el | mei | Ein | Shemesh
 vehayu | totze'otav
@@ -107,8 +106,7 @@ Kiryat | Sefer
 
 15:16
 vaiyomer | Kalev
-asher | yakeh | et | Kiryat | Sefer
-ulekhadah
+asher | yakeh | et | Kiryat | Sefer | ulekhadah
 venatati | lo | et | Akhsah | viti
 le'ishah
 
@@ -150,8 +148,7 @@ Vekedesh | Vechatzor
 Veyitnan
 
 15:24
-Zif | Vatelem
-Uve'alot
+Zif | Vatelem | Uve'alot
 
 15:25
 Vechatzor | Chadatah | Ukeriyot
@@ -159,12 +156,10 @@ Chetzron
 hi | Chatzor
 
 15:26
-Amam | Ushema
-Umoladah
+Amam | Ushema | Umoladah
 
 15:27
-Vachatzar | Gadah | Vecheshmon
-Uveit | Palet
+Vachatzar | Gadah | Vecheshmon | Uveit | Palet
 
 15:28
 Vachatzar | Shu'al | Uve'er | Sheva | Uvizyotyah
@@ -210,8 +205,7 @@ arim | arba | esreh
 vechatzreihen
 
 15:37
-Tzenan | Vachadashah
-Umigdal | Gad
+Tzenan | Vachadashah | Umigdal | Gad
 
 15:38
 Vedil'an | Vehamitzpeh
@@ -222,12 +216,10 @@ Lakhish | Uvatzekat
 Ve'eglon
 
 15:40
-Vekhabon | Velachmas
-Vekhitlish
+Vekhabon | Velachmas | Vekhitlish
 
 15:41
-Ugederot | Beit | Dagon | Vena'amah
-Umakedah
+Ugederot | Beit | Dagon | Vena'amah | Umakedah
 arim | shesh | esreh
 vechatzreihen
 
@@ -260,8 +252,7 @@ vehaiyam | hagavol
 ugevul
 
 15:48
-uvahar
-Shamir | Veyatir
+uvahar | Shamir | Veyatir
 Vesokhoh
 
 15:49

@@ -26,8 +26,7 @@ shevet | echad
 vayhi | mimochorat
 vaiyashkimu | ha'am
 vaiyivnu | sham
-mizbeach
-vaiya'alu | olot
+mizbeach | vaiya'alu | olot
 ushelamim
 
 21:5
@@ -53,8 +52,7 @@ lenashim
 
 21:8
 vaiyomeru
-mi | echad | mishivtei | Yisra'el
-asher | lo | alah | el | Yahweh
+mi | echad | mishivtei | Yisra'el | asher | lo | alah | el | Yahweh
 Hamitzpah
 vehineh | lo | va | ish | el | hamachaneh | Miyaveish | Gil'ad
 el | hakahal
@@ -73,8 +71,7 @@ vehanashim
 vehataf
 
 21:11
-vezeh | hadavar
-asher | ta'asu
+vezeh | hadavar | asher | ta'asu
 kol | zakhar | vekhol | ishah | yoda'at | mishkav | zakhar
 tacharimu
 
@@ -82,25 +79,19 @@ tacharimu
 vaiyimtze'u | miyoshevei | Yaveish | Gil'ad | arba | me'ot | na'arah | vetulah
 asher | lo | yade'ah | ish
 lemishkav | zakhar
-vaiyavi'u | otam | el | hamachaneh | Shiloh
-asher
-be'eretz | Kena'an
+vaiyavi'u | otam | el | hamachaneh | Shiloh | asher | be'eretz | Kena'an
 
 21:13
 vaiyishlechu | kol | ha'edah
-vaydaberu | el | benei | Vinyamin
-asher
-besela | Rimon
+vaydaberu | el | benei | Vinyamin | asher | besela | Rimon
 vaiyikre'u | lahem
 shalom
 
 21:14
 vaiyashov | Binyamin | ba'et | hahi
-vaiyitenu | lahem | hanashim
-asher | chiyu
+vaiyitenu | lahem | hanashim | asher | chiyu
 mineshei
-Yavesh | Gil'ad
-velo | matze'u | lahem | ken
+Yavesh | Gil'ad | velo | matze'u | lahem | ken
 
 21:15
 veha'am | nicham | Levinyamin | ki | asah | Yahweh | peretz | beshivtei | Yisra'el
@@ -113,8 +104,7 @@ ishah
 
 21:17
 vaiyomeru
-yerushat | peleitah | Levinyamin
-velo | yimacheh | shevet | Miyisra'el
+yerushat | peleitah | Levinyamin | velo | yimacheh | shevet | Miyisra'el
 
 21:18
 va'anachnu | lo | nukhal | latet | lahem | nashim | mibenoteinu
@@ -127,8 +117,7 @@ Levinyamin
 vaiyomeru | hineh | chag | Yahweh | Beshilo | miyamim | yamimah | asher | mitzefonah | Leveit | El | mizrechah | hashemesh
 limsilah
 ha'olah | Mibeit | El
-Shekhemah
-Uminegev | Lilvonah
+Shekhemah | Uminegev | Lilvonah
 
 21:20
 vaytzav
@@ -151,8 +140,7 @@ bamilchamah | ki | lo | atem | netatem | lahem | ka'et | te'shamu
 21:23
 vaiya'asu | khen | benei | Vinyamin
 vaiyis'u | nashim | lemisparam
-min | hamecholelot
-asher | gazalu
+min | hamecholelot | asher | gazalu
 vaiyelekhu | vaiyashuvu | el | nachalatam
 vaiyivnu | et | he'arim
 vaiyeshevu
@@ -160,8 +148,7 @@ bahem
 
 21:24
 vaiyithalekhu | misham | benei | Yisra'el | ba'et | hahi
-ish | leshivto
-ulemishpachto
+ish | leshivto | ulemishpachto
 vaiyetze'u | misham
 ish | lenachalato
 
