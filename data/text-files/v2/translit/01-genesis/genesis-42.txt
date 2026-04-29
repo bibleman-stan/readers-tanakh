@@ -1,8 +1,8 @@
 42:1
 vaiyar | Ya'ako
 ki | yesh | shever | Bemitzrayim
-vaiyomer | Ya'ako | levanav
-lamah | titra'u
+vaiyomer | Ya'ako | levanav | lamah
+titra'u
 
 42:2
 vaiyomer
@@ -20,12 +20,11 @@ asarah | lishbor | bar | Mimitzrayim
 ve'et | Binyamin | achi | Yosef
 lo | shalach | Ya'ako | et | echav
 ki | amar
-pen | yikra'enu
-ason
+pen | yikra'enu | ason
 
 42:5
-vaiyavo'u | benei | Yisra'el
-lishbor | betokh | haba'im
+vaiyavo'u | benei | Yisra'el | lishbor
+betokh | haba'im
 ki | hayah | hara'av | be'eretz | Kena'an
 
 42:6
@@ -40,16 +39,15 @@ aretzah
 vaiyar | Yosef | et | echav
 vaiyakirem
 vaiyitnaker | aleihem | vaydaber | itam | kashot | vaiyomer | alehem | me'ayin | batem
-vaiyomeru
-me'eretz | Kena'an | lishbor | okhel
+vaiyomeru | me'eretz | Kena'an | lishbor | okhel
 
 42:8
 vaiyaker | Yosef | et | echav
 vehem | lo | hikiruhu
 
 42:9
-vaiyizkor | Yosef | et | hachalomot | asher | chalam
-lahem | vaiyomer | alehem | meragelim | atem
+vaiyizkor | Yosef | et | hachalomot | asher | chalam | lahem
+vaiyomer | alehem | meragelim | atem
 lir'ot | et | ervat | ha'aretz | batem
 
 42:10
@@ -58,15 +56,12 @@ lo | adoni
 va'avadeikha | ba'u | lishbor | okhel
 
 42:11
-kulanu | benei | ish | echad
-nachenu
-kenim | anachnu
-lo | hayu | avadeikha | meragelim
+kulanu | benei | ish | echad | nachenu
+kenim | anachnu | lo | hayu | avadeikha | meragelim
 
 42:12
 vaiyomer
-alehem
-lo
+alehem | lo
 ki | ervat | ha'aretz | batem | lir'ot
 
 42:13
@@ -79,8 +74,7 @@ einenu
 42:14
 vaiyomer | alehem
 Yosef
-hu | asher | dibarti | alekhem | lemor
-meragelim | atem
+hu | asher | dibarti | alekhem | lemor | meragelim | atem
 
 42:15
 bezot | tibachenu | chei | far'oh | im | tetze'u | mizeh
@@ -103,14 +97,13 @@ sheloshet | yamim
 42:18
 vaiyomer | alehem | Yosef | baiyom | hashelishi | zot | asu
 vichyu
-et | ha'elohim
-ani | yare
+et | ha'elohim | ani | yare
 
 42:19
 im | kenim | atem
 achikhem | echad
-ye'aser
-beveit | mishmarkhem | ve'atem | lekhu | havi'u
+ye'aser | beveit | mishmarkhem
+ve'atem | lekhu | havi'u
 shever
 ra'avon | bateikhem
 
@@ -124,8 +117,7 @@ vaiya'asu | khen
 vaiyomeru | ish | el | achiv | aval | ashemim | anachnu | al | achinu
 asher | ra'inu | tzarat | nafsho | behitchano | eleinu
 velo | shama'enu
-al | ken | ba'ah | eleinu
-hatzarah | hazot
+al | ken | ba'ah | eleinu | hatzarah | hazot
 
 42:22
 vaiya'an | Re'uven | otam | lemor | halo | amarti | aleikhem | lemor | al | techet'u | vaiyeled
@@ -135,8 +127,7 @@ hineh | nidrash
 
 42:23
 vehem | lo | yade'u
-ki | shomea
-Yosef
+ki | shomea | Yosef
 ki | hamelitz | beinotam
 
 42:24
@@ -144,8 +135,7 @@ vaiyiso | me'aleihem
 vaiyevek
 vaiyashov | alehem | vaydaber | alehem
 vaiyikach | me'itam | et | Shim'on
-vaiye'esor | oto
-le'eineihem
+vaiye'esor | oto | le'eineihem
 
 42:25
 vaytzav | Yosef | vaymal'u | et | keleihem | bar
@@ -156,9 +146,7 @@ ken
 
 42:26
 vaiyis'u | et | shivram
-al | chamoreihem
-vaiyelekhu
-misham
+al | chamoreihem | vaiyelekhu | misham
 
 42:27
 vaiyiftach | ha'echad | et | sako | latet | mispo | lachamoro
@@ -171,21 +159,16 @@ vaiyomer | el | echav | hushav | kaspi
 vegam
 hineh | ve'amtachti
 vaiyetze | libam | vaiyecherdu | ish | el | achiv | lemor
-mah | zot | asah | elohim
-lanu
+mah | zot | asah | elohim | lanu
 
 42:29
 vaiyavo'u | el | Ya'ako | avihem
 artzah | Kena'an
-vaiyagidu | lo | et | kol | hakorot | otam
-lemor
+vaiyagidu | lo | et | kol | hakorot | otam | lemor
 
 42:30
 diber | ha'ish | adonei | ha'aretz | itanu
-kashot
-vaiyiten | otanu
-kimragelim
-et | ha'aretz
+kashot | vaiyiten | otanu | kimragelim | et | ha'aretz
 
 42:31
 vanomer | elav
@@ -212,13 +195,11 @@ ve'ede'ah | ki | lo | meragelim | atem
 ki | khenim
 atem
 et | achikhem | eten | lakhem
-ve'et | ha'aretz
-tischaru
+ve'et | ha'aretz | tischaru
 
 42:35
 vayhi | hem | merikim | sakeihem
-vehineh | ish | tzeror | kaspo
-besako
+vehineh | ish | tzeror | kaspo | besako
 vaiyir'u | et | tzerorot | kaspeihem | hemah | va'avihem
 vaiyira'u
 
@@ -234,15 +215,12 @@ hayu | khulanah
 42:37
 vaiyomer | Re'uven | el | aviv | lemor
 et | shenei | vanai | tamit
-im | lo | avi'enu
-eleikha
-tenah | oto | al | yadi
-va'ani
+im | lo | avi'enu | eleikha
+tenah | oto | al | yadi | va'ani
 ashivenu | eleikha
 
 42:38
-vaiyomer
-lo | yered | beni
+vaiyomer | lo | yered | beni
 imakhem
 ki | achiv | met | vehu | levado | nish'ar | ukera'ahu | ason | baderekh | asher | telekhu | vah
 vehoradtem | et | seivati | beyagon

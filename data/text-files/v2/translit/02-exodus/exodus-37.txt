@@ -6,14 +6,12 @@ ve'amah | vachetzi
 komato
 
 37:2
-vaytzapehu | zahav | tahor
-mibayit | umichutz
-vaiya'as | lo | zer | zahav
-saviv
+vaytzapehu | zahav | tahor | mibayit | umichutz
+vaiya'as | lo | zer | zahav | saviv
 
 37:3
-vaiyitzok | lo | arba | tabe'ot | zahav
-al | arba | pa'amotav
+vaiyitzok | lo | arba | tabe'ot | zahav | al
+arba | pa'amotav
 ushetei | taba'ot | al | tzal'o | ha'echat
 ushetei | taba'ot
 al | tzal'o
@@ -21,34 +19,29 @@ hashenit
 
 37:4
 vaiya'as | badei
-atzei | shitim
-vaytzaf | otam
+atzei | shitim | vaytzaf | otam
 zahav
 
 37:5
-vaiyave | et | habadim | bataba'ot
-al
-tzal'ot | ha'aron
-laset
+vaiyave | et | habadim | bataba'ot | al
+tzal'ot | ha'aron | laset
 et | ha'aron
 
 37:6
 vaiya'as | kaporet
-zahav | tahor
-amatayim | vachetzi | arekah
+zahav | tahor | amatayim | vachetzi | arekah
 ve'amah | vachetzi
 rachebah
 
 37:7
 vaiya'as | shenei | kheruvim
 zahav
-mikshah | asah | otam
-mishenei | ketzot | hakaporet
+mikshah | asah | otam | mishenei
+ketzot | hakaporet
 
 37:8
 keruv | echad | mikatzah | mizeh | ukheruv | echad | mikatzah | mizeh
-min | hakaporet | asah | et | hakeruvim
-mishenei | kitzvotov
+min | hakaporet | asah | et | hakeruvim | mishenei | kitzvotov
 
 37:9
 vaiyihyu | hakeruvim | poresei | khenafayim | lema'lah | sokhekhim | bekhanfeihem | al | hakaporet
@@ -68,13 +61,11 @@ komato
 37:11
 vaytzaf | oto
 zahav | tahor
-vaiya'as | lo | zer | zahav
-saviv
+vaiya'as | lo | zer | zahav | saviv
 
 37:12
-vaiya'as | lo | misgeret | tofach
-saviv | vaiya'as | zer | zahav | lemisgarto
-saviv
+vaiya'as | lo | misgeret | tofach | saviv
+vaiya'as | zer | zahav | lemisgarto | saviv
 
 37:13
 vaiyitzok | lo
@@ -86,21 +77,18 @@ al | arba | hape'ot | asher | le'arba | raglav
 le'umat | hamisgeret
 hayu
 hataba'ot
-batim | labadim
-laset
+batim | labadim | laset
 et | hashulchan
 
 37:15
 vaiya'as | et | habadim | atzei | shitim
 vaytzaf | otam
-zahav
-laset
+zahav | laset
 et | hashulchan
 
 37:16
 vaiya'as | et | hakelim | asher | al | hashulchan | et | ke'arotav | ve'et | kapotav | ve'et | menakiyotav
-ve'et | hakesavot | asher | yusakh
-bahen
+ve'et | hakesavot | asher | yusakh | bahen
 zahav
 tahor
 
@@ -123,8 +111,7 @@ ken | lesheshet | hakanim
 haiyotze'im | min | hamenorah
 
 37:20
-uvamenorah | arba'ah | gevi'im
-meshukadim | kaftoreiha
+uvamenorah | arba'ah | gevi'im | meshukadim | kaftoreiha
 uferacheiha
 
 37:21
@@ -144,8 +131,7 @@ zahav | tahor
 
 37:24
 kikar | zahav | tahor | asah | otah
-ve'et
-kol | keleiha
+ve'et | kol | keleiha
 
 37:25
 vaiya'as | et | mizbach | haketoret
@@ -155,21 +141,17 @@ mimenu | hayu | karnotav
 
 37:26
 vaytzaf | oto | zahav | tahor | et | gago | ve'et | kirotav | saviv
-ve'et | karnotav
-vaiya'as | lo | zer | zahav
-saviv
+ve'et | karnotav | vaiya'as | lo | zer | zahav | saviv
 
 37:27
 ushetei | tabe'ot | zahav | asah | lo | mitachat | lezero | al | shetei | tzal'otav
 al
-shenei | tzidav
-levatim | levadim
+shenei | tzidav | levatim | levadim
 laset | oto | bahem
 
 37:28
 vaiya'as | et | habadim
-atzei | shitim
-vaytzaf | otam
+atzei | shitim | vaytzaf | otam
 zahav
 
 37:29

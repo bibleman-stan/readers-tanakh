@@ -8,9 +8,8 @@ hoda | et | Yerushalim
 et | to'avoteiha
 
 16:3
-ve'amarta | koh | amar | Adonai | Yahweh | Lirushalim
-mekhorotayikh | umoledotayikh | me'eretz | hakena'ani
-avikh | ha'emori
+ve'amarta | koh | amar | Adonai | Yahweh | Lirushalim | mekhorotayikh | umoledotayikh
+me'eretz | hakena'ani | avikh | ha'emori
 ve'imekh | chitit
 
 16:4
@@ -22,21 +21,21 @@ vehachetel | lo | chutalet
 16:5
 lo | chasah | alayikh | ayin | la'asot | lakh | achat | me'eleh
 lechumlah | alayikh
-vatushlekhi | el | penei | hasadeh | bego'al | nafshekh
-beyom | huledet | otakh
+vatushlekhi | el | penei | hasadeh | bego'al | nafshekh | beyom | huledet | otakh
 
 16:6
 va'e'evor | alayikh | va'er'ekh | mitboseset | bedamayikh
 va'omar | lokh | bedamayikh | chayi
-va'omar | lakh | bedamayikh | chayi
+va'omar | lakh
+bedamayikh | chayi
 
 16:7
 revavah | ketzemach | hasadeh | netatikh
 vatirbi | vatigdeli
-vatavo'i | ba'adi | adayim
+vatavo'i
+ba'adi | adayim
 shadayim | Nakhonu | use'arekh | tzimeach
-ve'at
-erom | ve'eryah
+ve'at | erom | ve'eryah
 
 16:8
 va'e'evor | alayikh | va'er'ekh | vehineh | itekh | et | dodim
@@ -48,19 +47,18 @@ vatihyi | li
 
 16:9
 va'erchatzekh | bamayim
-va'eshtof | damayikh | me'alayikh | va'asukhekh | bashamen
+va'eshtof | damayikh | me'alayikh
+va'asukhekh | bashamen
 
 16:10
 va'albishekh | rikmah
 va'en'alekh
-tachash
-va'echbeshekh | bashesh
+tachash | va'echbeshekh | bashesh
 va'akhasekh | meshi
 
 16:11
 va'e'dekh
-edi
-va'etenah | tzemidim | al | yadayikh
+edi | va'etenah | tzemidim | al | yadayikh
 veravid
 al | geronekh
 
@@ -68,18 +66,15 @@ al | geronekh
 va'eten | nezem | al | apekh
 va'agilim
 al | azenayikh
-va'ateret | tif'eret
-beroshekh
+va'ateret | tif'eret | beroshekh
 
 16:13
 vata'di | zahav | vakhesef | umalbushekh | sheshi | vameshi | verikmah
-solet | udevash | vashemen
-akhalti
+solet | udevash | vashemen | akhalti
 vatifi | bim'od | me'od | vatitzlechi | limlukhah
 
 16:14
-vaiyetze | lakh | shem | bagoyim
-beyafeyekh
+vaiyetze | lakh | shem | bagoyim | beyafeyekh
 ki | kalil | hu | bahadari | asher | samti | alayikh
 ne'um
 Adonai | Yahweh
@@ -87,9 +82,7 @@ Adonai | Yahweh
 16:15
 vativtechi | veyafeyekh
 vatizni
-al | shemekh
-vatishpekhi | et | taznutayikh | al | kol | over
-lov | yehi
+al | shemekh | vatishpekhi | et | taznutayikh | al | kol | over | lov | yehi
 
 16:16
 vatikchi | mibegadayikh | vata'asi | lokh | bamot | telu'ot
@@ -118,19 +111,17 @@ Adonai | Yahweh
 
 16:20
 vatikchi | et | banayikh | ve'et | benotayikh | asher | yaladt | li
-vatizbachim | lahem
-le'ekhol
+vatizbachim | lahem | le'ekhol
 ham'at | mitaznutekh
 
 16:21
-vatishchati
-et | banai
+vatishchati | et | banai
 vatitenim
-beha'avir | otam
-lahem
+beha'avir | otam | lahem
 
 16:22
-ve'et | kol | to'avotayikh | vetaznutayikh | lo | zakharti
+ve'et | kol | to'avotayikh | vetaznutayikh
+lo | zakharti
 et | yemei | ne'urayikh
 bihyotekh | erom | ve'eryah | mitboseset | bedamekh
 hayit
@@ -144,20 +135,17 @@ Adonai | Yahweh
 
 16:24
 vativni | lakh
-gev
-vata'asi | lakh | ramah | bekhol | rechov
+gev | vata'asi | lakh | ramah | bekhol | rechov
 
 16:25
 el | kol | rosh | derekh | banit | ramatekh
 vateta'avi | et | yafeyekh
 vatefaseki | et | raglayikh | lekhol | over
-vatarbi
-et | taznutekh
+vatarbi | et | taznutekh
 
 16:26
 vatizni | el | benei | Mitzrayim | shekhenayikh
-gidlei | vasar
-vatarbi | et | taznutekh | lehakh'iseni
+gidlei | vasar | vatarbi | et | taznutekh | lehakh'iseni
 
 16:27
 vehineh | natiti | yadi | alayikh
@@ -167,9 +155,8 @@ va'etenekh | benefesh | sone'otayikh | benot | pelishtim
 hanikhlamot | midarkekh | zimah
 
 16:28
-vatizni | el | benei | Ashur
-mibilti | save'atekh
-vatiznim
+vatizni | el | benei | Ashur | mibilti
+save'atekh | vatiznim
 vegam | lo | sava'at
 
 16:29
@@ -196,14 +183,14 @@ tikach
 et | zarim
 
 16:33
-lekhol | zonot | yitenu | nedeh
-ve'at | natat | et | nedanayikh | lekhol | me'ahavayikh
+lekhol | zonot | yitenu | nedeh | ve'at | natat | et | nedanayikh | lekhol | me'ahavayikh
 vatishchodi | otam | lavo | elayikh | misaviv
 betaznutayikh
 
 16:34
 vayhi | vakh | hefekh | min | hanashim | betaznutayikh
-ve'acharayikh | lo | zunah
+ve'acharayikh
+lo | zunah
 uvetitekh | etnan | ve'etnan | lo | Nitan | lakh
 vatehi | lehefekh
 
@@ -216,14 +203,11 @@ devar | Yahweh
 koh | amar | Adonai | Yahweh | ya'an | hishafekh | nechushtekh | vatigaleh | ervatekh
 betaznutayikh
 al | me'ahavayikh
-ve'al | kol | gilulei | to'avotayikh
-vekhidmei | vanayikh | asher | natat
-lahem
+ve'al | kol | gilulei | to'avotayikh | vekhidmei | vanayikh | asher | natat | lahem
 
 16:37
 lakhen | hini | mekabetz | et | kol | me'ahavayikh | asher | aravt | aleihem
-ve'et | kol | asher | ahavt
-al
+ve'et | kol | asher | ahavt | al
 kol | asher | sanet
 vekibatzti | otam | alayikh | misaviv | vegileiti | ervatekh | alehem
 vera'u
@@ -239,22 +223,19 @@ vekin'ah
 
 16:39
 venatati | otakh | beyadam | veharesu | gabekh | venitetzu | ramotayikh
-vehifshitu | otokh | begadayikh
-velakechu
+vehifshitu | otokh | begadayikh | velakechu
 kelei | tif'artekh
 vehinichukh
 eirom | ve'eryah
 
 16:40
 vehe'elu | alayikh | kahal
-veragemu | otakh
-ba'aven
+veragemu | otakh | ba'aven
 uvitekukh | becharvotam
 
 16:41
 vesarefu | vatayikh | ba'esh
-ve'asu | vakh | shefatim
-le'einei
+ve'asu | vakh | shefatim | le'einei
 nashim | rabot
 vehishbatikh | mizonah | vegam | etnan
 lo | titeni | od
@@ -275,14 +256,12 @@ kol | to'avotayikh
 
 16:44
 hineh | kol | hamoshel
-alayikh | yimshol
-lemor | ke'imah
+alayikh | yimshol | lemor | ke'imah
 bitah
 
 16:45
 bat | imekh | at
-go'elet | ishah
-uvaneiha
+go'elet | ishah | uvaneiha
 va'achot | achotekh | at | asher | ga'alu | ansheihen | uveneihen
 imekhen | chitit
 va'avikhen
@@ -292,7 +271,8 @@ emori
 va'achotekh | hagedolah | Shomeron | hi | uvenoteiha
 haiyoshevet
 al | semolekh
-va'achotekh | haketanah | mimekh | haiyoshevet | miminekh | Sedom | uvenoteiha
+va'achotekh | haketanah | mimekh | haiyoshevet | miminekh
+Sedom | uvenoteiha
 
 16:47
 velo | vedarkheihen | halakht
@@ -317,14 +297,14 @@ lo | hechezikah
 
 16:50
 vatigbeheinah
-vata'aseinah | to'evah
-lefanai
+vata'aseinah | to'evah | lefanai
 va'asir | ethen
 ka'asher | ra'iti
 
 16:51
 Veshomeron | kachatzi | chatotayikh | lo | chata'ah
-vatarbi | et | to'avotayikh | mehenah | vatetzadeki | et | achotekh | bekhol | to'avotayikh | asher | asit
+vatarbi | et | to'avotayikh | mehenah
+vatetzadeki | et | achotekh | bekhol | to'avotayikh | asher | asit
 
 16:52
 gam | at | se'i | khelimatekh | asher | pilalt | la'achotekh
@@ -341,36 +321,29 @@ ushevit | shevitayikh
 betokhahenah
 
 16:54
-lema'an | tis'i | khelimatekh
-venikhlamt | mikol | asher | asit
-benachamekh
+lema'an | tis'i | khelimatekh | venikhlamt
+mikol | asher | asit | benachamekh
 otan
 
 16:55
 va'achotayikh | Sedom | uvenoteiha | tashoena | lekadmatan
-Veshomeron | uvenoteiha
-tashoena
-lekadmatan
-ve'at | uvenotayikh
-teshuveinah
-lekadmatkhen
+Veshomeron | uvenoteiha | tashoena
+lekadmatan | ve'at | uvenotayikh
+teshuveinah | lekadmatkhen
 
 16:56
-velo | hayetah | Sedom | achotekh
-lishmu'ah | befikh | beyom | ge'onayikh
+velo | hayetah | Sedom | achotekh | lishmu'ah
+befikh | beyom | ge'onayikh
 
 16:57
 beterem | tigaleh | ra'atekh
 kemo | et | cherpat | benot | Aram
 vekhol | sevivoteiha | benot | pelishtim
-hashatot | otakh
-misaviv
+hashatot | otakh | misaviv
 
 16:58
-et | zimatekh | ve'et | to'avotayikh
-at | nesatim
-ne'um
-Yahweh
+et | zimatekh | ve'et | to'avotayikh | at | nesatim
+ne'um | Yahweh
 
 16:59
 ki | khoh | amar | Adonai | Yahweh
@@ -384,11 +357,10 @@ bimei | ne'urayikh
 vahakimoti | lakh | berit | olam
 
 16:61
-vezakhart | et | derakhayikh | venikhlamt | bekachtekh | et | achotayikh | hagedolot | mimekh
-el | haketanot
-mimekh
-venatati | ethen | lakh | levanot
-velo | miberitekh
+vezakhart | et | derakhayikh | venikhlamt
+bekachtekh | et | achotayikh | hagedolot | mimekh
+el | haketanot | mimekh
+venatati | ethen | lakh | levanot | velo | miberitekh
 
 16:62
 vahakimoti | ani | et | beriti
@@ -398,7 +370,7 @@ ki | ani | Yahweh
 
 16:63
 lema'an | tizkeri | vavoshet
-velo | yihyeh | lakh | od | pitchon | peh
-mipenei | kelimatekh | bekhaperi | lokh | lekhol | asher | asit
+velo | yihyeh | lakh | od | pitchon | peh | mipenei
+kelimatekh | bekhaperi | lokh | lekhol | asher | asit
 ne'um
 Adonai | Yahweh

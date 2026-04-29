@@ -16,24 +16,20 @@ Yitzchak
 
 21:4
 vaiyamol | Avraham | et | Yitzchak | beno
-ben | shemonat
-yamim
+ben | shemonat | yamim
 ka'asher | tzivah | oto
 elohim
 
 21:5
 Ve'avraham
 ben | me'at | shanah | behivaled | lo
-et
-Yitzchak | beno
+et | Yitzchak | beno
 
 21:6
 vatomer | Sarah
-tzechok
-asah | li
+tzechok | asah | li
 elohim
-kol | hashomea
-yitzchak | li
+kol | hashomea | yitzchak | li
 
 21:7
 vatomer | mi | milel | Le'avraham
@@ -44,16 +40,14 @@ ki | yaladti | ven | lizkunav
 21:8
 vaiyigdal | haiyeled
 vaiyigamal
-vaiya'as | Avraham | mishteh | gadol
-beyom | higamel | et | Yitzchak
+vaiya'as | Avraham | mishteh | gadol | beyom | higamel | et | Yitzchak
 
 21:9
 vatere | Sarah | et | ben | Hagar | hamitzrit | asher | yaldah | Le'avraham | metzachek
 
 21:10
 vatomer | Le'avraham
-garesh | ha'amah | hazot
-ve'et | benah
+garesh | ha'amah | hazot | ve'et | benah
 ki | lo | yirash | ben | ha'amah | hazot
 im | beni
 im | Yitzchak
@@ -66,8 +60,7 @@ al | odot | beno
 vaiyomer | elohim | el | Avraham | al | yera | be'eineikha | al | hana'ar | ve'al | amatekha
 kol | asher | tomar | eleikha | Sarah
 shema | bekolah
-ki | Veyitzchak
-yikare | lekha
+ki | Veyitzchak | yikare | lekha
 zara
 
 21:13
@@ -79,28 +72,27 @@ hu
 21:14
 vaiyashkem | Avraham | baboker | vaiyikach | lechem | vechemat | mayim | vaiyiten | el | Hagor | sam | al | shikhmah | ve'et | haiyeled
 vayshalecheha
-vatelekh | vateta | bemidbar | Be'er | Shava
+vatelekh | vateta | bemidbar
+Be'er | Shava
 
 21:15
-vaiyikhlu | hamayim
-min | hachemet | vatashlekh | et | haiyeled | tachat
+vaiyikhlu | hamayim | min | hachemet
+vatashlekh | et | haiyeled | tachat
 achad | hasichim
 
 21:16
 vatelekh | vateshev | lah | mineged | harchek | kimtachavei | keshet
 ki | amerah
-al | er'eh | bemot | haiyaled
-vateshev | mineged | vatisa | et | kolah
+al | er'eh | bemot | haiyaled | vateshev | mineged
+vatisa | et | kolah
 vatevek
 
 21:17
 vaiyishma | elohim | et | kol | hana'ar
 vaiyikra | mal'akh | elohim | el | Hagar | min | hashamayim
-vaiyomer | lah
-mah | lakh | Hagar
+vaiyomer | lah | mah | lakh | Hagar
 al | tir'i
-ki | shama | elohim | el | kol | hana'ar
-ba'asher | hu | sham
+ki | shama | elohim | el | kol | hana'ar | ba'asher | hu | sham
 
 21:18
 kumi | se'i | et | hana'ar
@@ -112,28 +104,22 @@ asimenu
 vaiyifkach | elohim | et | eineiha
 vatere | be'er | mayim
 vatelekh | vatemale | et | hachemet | mayim
-vatashk
-et | hana'ar
+vatashk | et | hana'ar
 
 21:20
 vayhi | elohim | et | hana'ar
 vaiyigdal
 vaiyeshev | bamidbar
-vayhi
-roveh | kashat
+vayhi | roveh | kashat
 
 21:21
 vaiyeshev
-bemidbar | Paran
-vatikach | lo | imo | ishah | me'eretz | Mitzrayim
+bemidbar | Paran | vatikach | lo | imo | ishah | me'eretz | Mitzrayim
 
 21:22
 vayhi | ba'et | hahiv
 vaiyomer | Avimelekh | Ufikhol | sar | tzeva'o
-el | Avraham
-lemor
-elohim | imekha
-bekhol | asher | atah
+el | Avraham | lemor | elohim | imekha | bekhol | asher | atah
 oseh
 
 21:23
@@ -145,8 +131,7 @@ asher | gartah | bah
 
 21:24
 vaiyomer | Avraham
-anokhi
-ishavea
+anokhi | ishavea
 
 21:25
 vehokhiach | Avraham | et | Avimelekh
@@ -162,18 +147,16 @@ bilti | haiyom
 
 21:27
 vaiyikach | Avraham | tzon | uvakar
-vaiyiten
-La'avimelekh | vaiyikhretu | sheneihem
-berit
+vaiyiten | La'avimelekh
+vaiyikhretu | sheneihem | berit
 
 21:28
-vaiyatzev | Avraham | et | sheva | kivsot | hatzon
-levadehen
+vaiyatzev | Avraham | et | sheva | kivsot | hatzon | levadehen
 
 21:29
 vaiyomer | Avimelekh
-el | Avraham | mah | henah | sheva | kevasot | ha'eleh | asher | hitzavta
-levadanah
+el | Avraham | mah | henah | sheva | kevasot | ha'eleh
+asher | hitzavta | levadanah
 
 21:30
 vaiyomer

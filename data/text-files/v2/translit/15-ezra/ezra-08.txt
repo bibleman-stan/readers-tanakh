@@ -1,8 +1,7 @@
 8:1
 ve'eleh | rashei | avoteihem
 vehityachsam
-ha'olim | imi | bemalkhut | Artachshast | hamelekh
-Mibavel
+ha'olim | imi | bemalkhut | Artachshast | hamelekh | Mibavel
 
 8:2
 mibenei | Finechas | Gereshom | mibenei | Itamar
@@ -72,9 +71,7 @@ ve'imo | me'ah | va'asarah
 hazekharim
 
 8:13
-umibenei | Adonikam | acharonim
-ve'eleh | shemotam
-Elifelet
+umibenei | Adonikam | acharonim | ve'eleh | shemotam | Elifelet
 Ye'i'el | Ushema'yah
 ve'imahem
 shishim | hazekharim
@@ -88,16 +85,16 @@ shiv'im | hazekharim
 8:15
 va'ekbetzem | el | hanahar | haba | el | Ahava
 vanachaneh | sham
-yamim | sheloshah | va'avinah | va'am | uvakohanim
-umibenei | Levi | lo | matzati | sham
+yamim | sheloshah
+va'avinah | va'am | uvakohanim | umibenei | Levi
+lo | matzati | sham
 
 8:16
 va'eshlechah | Le'eli'ezer | La'ari'el | Lishma'yah | Ule'elnatan | Uleyariv | Ule'elnatan | Ulenatan | Velizkharyah | Velimshulam
 rashim | Uleyoyariv | Ule'elnatan | mevinim
 
 8:17
-va'otzi'ah | otam | al | Ido | harosh
-Bekhasifya
+va'otzi'ah | otam | al | Ido | harosh | Bekhasifya
 hamakom
 va'asimah | befihem | devarim | ledaber | el | Ido | achiv | hanetunim | Bekhasifya | hamakom
 lehavi | lanu | mesharetim | leveit | eloheinu
@@ -110,24 +107,19 @@ Veshereveyah | uvanav | ve'echav
 shemonah | asar
 
 8:19
-ve'et | Chashavyah
-ve'ito | Yesha'yah
-mibenei | Merari | echav | uveneihem
+ve'et | Chashavyah | ve'ito | Yesha'yah | mibenei | Merari | echav | uveneihem
 esrim
 
 8:20
 umin | hanetinim | shenatan | David | vehasarim | la'avodat | halviyim
-netinim
-matayim | ve'esrim
-kulam
-Nikevu | veshemot
+netinim | matayim | ve'esrim
+kulam | Nikevu | veshemot
 
 8:21
-va'ekra | sham | tzom | al | hanahar | Ahava
-lehit'anot
+va'ekra | sham | tzom | al | hanahar | Ahava | lehit'anot
 lifnei | eloheinu
-levakesh | mimenu | derekh | yesharah
-lanu | uletapenu | ulekhol | rekhushenu
+levakesh | mimenu | derekh | yesharah | lanu | uletapenu
+ulekhol | rekhushenu
 
 8:22
 ki | vosheti | lish'ol | min | hamelekh | chayil | ufarashim | le'azerenu | me'oyev
@@ -137,9 +129,8 @@ ve'uzo | ve'apo | al
 kol | ozevav
 
 8:23
-vanatzumah | vanevakshah | me'eloheinu | al | zot
-vaiye'ater
-lanu
+vanatzumah | vanevakshah | me'eloheinu
+al | zot | vaiye'ater | lanu
 
 8:24
 va'avdilah | misarei | hakohanim
@@ -148,8 +139,7 @@ ve'imahem | me'acheihem | asarah
 
 8:25
 va'eshkolah | lahem
-et | hakesef | ve'et | hazahav
-ve'et | hakelim
+et | hakesef | ve'et | hazahav | ve'et | hakelim
 terumat | beit | eloheinu | haherimu | hamelekh | veyo'atzav | vesarav
 vekhol | Yisra'el
 hanimtza'im
@@ -167,10 +157,8 @@ kazahav
 
 8:28
 va'omerah | alehem | atem | kodesh | Layahweh
-vehakelim
-kodesh
-vehakesef | vehazahav | nedavah
-Layahweh | elohei | avoteikhem
+vehakelim | kodesh | vehakesef | vehazahav | nedavah | Layahweh
+elohei | avoteikhem
 
 8:29
 shikdu | veshimru | ad | tishkelu | lifnei | sarei | hakohanim | vehalviyim | vesarei | ha'avot | Leyisra'el
@@ -199,8 +187,7 @@ yamim | sheloshah
 
 8:33
 uvaiyom | harevi'i | Nishkal | hakesef | vehazahav | vehakelim | beveit | eloheinu | al | yad | Meremot | ben | Uriyah | hakohen
-ve'imo
-El'azar | ben | Pinchas
+ve'imo | El'azar | ben | Pinchas
 ve'imahem | Yozavad | ben | Yeshua | Veno'adyah | ven | Binui
 halviyim
 

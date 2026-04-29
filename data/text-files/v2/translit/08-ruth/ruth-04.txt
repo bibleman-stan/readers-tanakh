@@ -13,8 +13,7 @@ vaiyeshevu
 
 4:3
 vaiyomer | lago'el
-chelkat | hasadeh | asher | le'achinu
-Le'elimelekh
+chelkat | hasadeh | asher | le'achinu | Le'elimelekh
 makherah | No'omi
 hashavah | misedeh | Mo'av
 
@@ -37,10 +36,8 @@ al | nachalato
 4:6
 vaiyomer | hago'el | lo | ukhal | lig'ol | li
 pen | ashchit
-et | nachalati
-ge'al | lekha | atah | et | ge'ulati
-ki | lo | ukhal
-lig'ol
+et | nachalati | ge'al | lekha | atah | et | ge'ulati
+ki | lo | ukhal | lig'ol
 
 4:7
 vezot | lefanim | Beyisra'el | al | hage'ulah | ve'al | hatemurah | lekaiyem | kol | davar
@@ -76,8 +73,8 @@ ukera | shem | Beveit | Lachem
 4:12
 vihi | veitekha | keveit | Peretz
 asher | yaldah | Tamar | Lihudah
-min | hazera | asher | yiten | Yahweh | lekha
-min | hana'arah | hazot
+min | hazera | asher | yiten | Yahweh | lekha | min | hana'arah
+hazot
 
 4:13
 vaiyikach | Bo'az | et | Rut | vatehi | lo | le'ishah
@@ -89,26 +86,20 @@ vateled | ben
 4:14
 vatomarnah | hanashim | el | No'omi
 barukh | Yahweh | asher | lo | hishbit | lakh | go'el
-haiyom
-veyikare | shemo
-Beyisra'el
+haiyom | veyikare | shemo | Beyisra'el
 
 4:15
 vehayah | lokh | lemeshiv | nefesh | ulekhalkel
-et | seivatekh
-ki | khalatekh | asher | ahevatekh | yeladatu
+et | seivatekh | ki | khalatekh | asher | ahevatekh | yeladatu
 asher | hi | toah | lakh | mishiv'ah | banim
 
 4:16
 vatikach | No'omi | et | haiyeled | vateshitehu | vecheikah
-vatehi | lo
-le'omenet
+vatehi | lo | le'omenet
 
 4:17
 vatikrenah | lo | hashekhenot | shem | lemor
-yulad | ben
-Leno'omi
-vatikrenah | shemo | Oved
+yulad | ben | Leno'omi | vatikrenah | shemo | Oved
 hu | avi | Yishai
 avi | David
 
@@ -123,8 +114,7 @@ Veram
 holid | et | Aminadav
 
 4:20
-Ve'aminadav | holid | et | Nachshon
-Venachshon
+Ve'aminadav | holid | et | Nachshon | Venachshon
 holid | et | Salmah
 
 4:21
@@ -132,6 +122,5 @@ Vesalmon | holid | et | Bo'az | Uvo'az
 holid | et | Oved
 
 4:22
-Ve'oved | holid | et | Yishai
-Veyishai
+Ve'oved | holid | et | Yishai | Veyishai
 holid | et | David

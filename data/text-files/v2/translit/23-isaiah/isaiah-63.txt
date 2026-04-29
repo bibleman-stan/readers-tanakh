@@ -1,7 +1,6 @@
 63:1
 mi | zeh | ba | Me'edom | chamutz | begadim | Mibatzerah
-zeh | hadur | bilvusho
-tzo'eh | bero | kocho
+zeh | hadur | bilvusho | tzo'eh | bero | kocho
 ani | medaber | bitzdakah
 rav | lehoshia
 
@@ -13,8 +12,7 @@ purah | darakhti | levadi | ume'amim | ein | ish | iti
 ve'edrekhem | be'api
 ve'ermesem | bachamati
 veyez | nitzcham | al | begadai
-vekhol | malbushai
-eg'aleti
+vekhol | malbushai | eg'aleti
 
 63:4
 ki | yom | nakam | belibi
@@ -36,19 +34,15 @@ ve'orid | la'aretz
 nitzcham
 
 63:7
-chasdei | Yahweh | azkir | tehilot | Yahweh
-ke'al
-kol | asher | gemalanu
-Yahweh
+chasdei | Yahweh | azkir | tehilot | Yahweh | ke'al
+kol | asher | gemalanu | Yahweh
 verav | tuv | leveit | Yisra'el
 asher | gemalam | kerachamav | ukhero | chasadav
 
 63:8
-vaiyomer | akh | ami | hemah
-banim
+vaiyomer | akh | ami | hemah | banim
 lo | yeshakeru
-vayhi | lahem
-lemoshia
+vayhi | lahem | lemoshia
 
 63:9
 bekhol | tzaratam | lo | tzar | umal'akh | panav | hoshi'am | be'ahavato | uvechemlato
@@ -72,8 +66,7 @@ et | ruach | kadesho
 63:12
 molikh | limin | Mosheh
 zeroa
-tif'arto
-bokea | mayim | mipeneihem | la'asot | lo
+tif'arto | bokea | mayim | mipeneihem | la'asot | lo
 shem | olam
 
 63:13
@@ -81,8 +74,7 @@ molikham | batehomot | kasus | bamidbar | lo | yikashelu
 
 63:14
 kabehemah | babik'ah | tered | ruach | Yahweh | tenichenu
-ken | nihagta | amekha
-la'asot | lekha
+ken | nihagta | amekha | la'asot | lekha
 shem | tif'aret
 
 63:15
@@ -115,5 +107,5 @@ tzareinu | bosu | mikdashecha
 hayinu | me'olam | lo | mashalta | bam
 lo | Nikra | shimkha
 aleihem
-lu | kara'ta | shamayim | yaradta
-mipaneikha | harim | Nazolu
+lu | kara'ta | shamayim | yaradta | mipaneikha
+harim | Nazolu

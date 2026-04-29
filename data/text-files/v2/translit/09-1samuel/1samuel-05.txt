@@ -1,7 +1,6 @@
 5:1
 ufelishtim | lakechu
-et
-aron | ha'elohim
+et | aron | ha'elohim
 vayvi'uhu | Me'even | Ha'ezer
 Ashdodah
 
@@ -13,19 +12,17 @@ etzel | Dagon
 
 5:3
 vaiyashkimu | ashdodim | mimochorat
-vehineh | Dagon | nofel | lefanav | artzah
-lifnei | aron | Yahweh
+vehineh | Dagon | nofel | lefanav | artzah | lifnei
+aron | Yahweh
 vaiyikchu | et | Dagon
-vaiyashivu | oto
-limkomo
+vaiyashivu | oto | limkomo
 
 5:4
 vaiyashkimu | vaboker | mimochorat
-vehineh | Dagon | nofel | lefanav | artzah
-lifnei | aron | Yahweh
+vehineh | Dagon | nofel | lefanav | artzah | lifnei
+aron | Yahweh
 verosh | Dagon | ushetei | kapot | yadav | kerutot | el | hamiftan
-rak | Dagon
-Nish'ar | alav
+rak | Dagon | Nish'ar | alav
 
 5:5
 al | ken | lo | yidrekhu | khohanei | Dagon | vekhol | haba'im | beit | Dagon | al | miftan | Dagon
@@ -50,8 +47,7 @@ Dagon | eloheinu
 5:8
 vaiyishlechu | vaiya'asfu | et | kol | sarnei | felishtim | aleihem | vaiyomeru | mah | na'aseh | la'aron | elohei | Yisra'el
 vaiyomeru
-Gat | yiso
-aron
+Gat | yiso | aron
 elohei | Yisra'el
 vaiyassebu | et | aron
 elohei | Yisra'el
@@ -66,13 +62,11 @@ vayshalechu | et | aron | ha'elohim
 Ekron
 vayhi | kevo | aron | ha'elohim | Ekron
 vaiyiz'aku | ha'ekronim | lemor | hesabu | elai | et | aron | elohei | Yisra'el
-lahamiteni
-ve'et | ami
+lahamiteni | ve'et | ami
 
 5:11
 vaiyishlechu | vaiya'asfu | et | kol | sarnei | felishtim | vaiyomeru | shalechu | et | aron | elohei | Yisra'el | veyasho | limkomo
-velo | yamit | oti
-ve'et | ami
+velo | yamit | oti | ve'et | ami
 ki | hayetah | mehumat | mavet | bekhol | ha'ir | kavedah | me'od | yad | ha'elohim
 sham
 

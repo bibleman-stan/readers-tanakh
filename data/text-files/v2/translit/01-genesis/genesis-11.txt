@@ -1,21 +1,17 @@
 11:1
 vayhi | khol | ha'aretz
-safah | echat | udevarim
-achadim
+safah | echat | udevarim | achadim
 
 11:2
-vayhi
-benase'am | mikedem | vaiyimtze'u | vik'ah | be'eretz | Shin'ar
+vayhi | benase'am | mikedem
+vaiyimtze'u | vik'ah | be'eretz | Shin'ar
 vaiyeshevu | sham
 
 11:3
 vaiyomeru | ish | el | re'ehu | havah | nilbenah | levenim
-venisrefah
-lisrefah
+venisrefah | lisrefah
 vatehi | lahem | halevenah | le'aven
-vehachemar
-hayah | lahem
-lachomer
+vehachemar | hayah | lahem | lachomer
 
 11:4
 vaiyomeru | havah | nivneh | lanu | ir | umigdal | verosho | vashamayim
@@ -25,8 +21,7 @@ pen | nafutz | al | penei | khol | ha'aretz
 
 11:5
 vaiyered | Yahweh
-lir'ot | et | ha'ir
-ve'et | hamigdal | asher | banu
+lir'ot | et | ha'ir | ve'et | hamigdal | asher | banu
 benei | ha'adam
 
 11:6
@@ -34,8 +29,7 @@ vaiyomer | Yahweh | hen | am | echad | vesafah | achat | lekhulam
 vezeh
 hachilam | la'asot
 ve'atah | lo | yibatzer | mehem
-kol | asher | yazemu
-la'asot
+kol | asher | yazemu | la'asot
 
 11:7
 havah | neredah
@@ -53,22 +47,18 @@ livnot | ha'ir
 al | ken | kara | shemah | Bavel
 ki | sham | balal | Yahweh
 sefat | kol | ha'aretz
-umisham | hefitzam | Yahweh
-al | penei
+umisham | hefitzam | Yahweh | al | penei
 kol | ha'aretz
 
 11:10
 eleh | toldot | Shem
-Shem | ben | me'at | shanah
-vaiyoled | et | Arpakhshad
-shenatayim
+Shem | ben | me'at | shanah | vaiyoled | et | Arpakhshad | shenatayim
 achar | hamabul
 
 11:11
 vaychi | Shem | acharei | holido | et | Arpakhshad
 chamesh | me'ot | shanah
-vaiyoled | banim
-uvanot
+vaiyoled | banim | uvanot
 
 11:12
 Ve'arpakhshad | chai
@@ -78,44 +68,36 @@ vaiyoled | et | Shalach
 
 11:13
 vaychi | Arpakhshad | acharei | holido | et | Shelach
-shalosh | shanim | ve'arba | me'ot | shanah
-vaiyoled | banim
-uvanot
+shalosh | shanim | ve'arba | me'ot
+shanah | vaiyoled | banim | uvanot
 
 11:14
 Veshelach | chai
-sheloshim | shanah
-vaiyoled | et | Ever
+sheloshim | shanah | vaiyoled | et | Ever
 
 11:15
 vaychi | Shelach | acharei | holido | et | Ever
-shalosh | shanim | ve'arba | me'ot | shanah
-vaiyoled | banim
-uvanot
+shalosh | shanim | ve'arba | me'ot
+shanah | vaiyoled | banim | uvanot
 
 11:16
 vaychi | Ever
 arba | usheloshim
-shanah
-vaiyoled | et | Paleg
+shanah | vaiyoled | et | Paleg
 
 11:17
 vaychi | Ever | acharei | holido | et | Peleg
-sheloshim | shanah
-ve'arba | me'ot | shanah
-vaiyoled | banim
-uvanot
+sheloshim | shanah | ve'arba | me'ot
+shanah | vaiyoled | banim | uvanot
 
 11:18
 vaychi | Feleg
-sheloshim | shanah
-vaiyoled | et | Re'u
+sheloshim | shanah | vaiyoled | et | Re'u
 
 11:19
 vaychi | Feleg | acharei | holido | et | Re'u
 tesha | shanim | umatayim | shanah
-vaiyoled | banim
-uvanot
+vaiyoled | banim | uvanot
 
 11:20
 vaychi | Re'u
@@ -126,18 +108,15 @@ vaiyoled | et | Serug
 11:21
 vaychi | Re'u | acharei | holido | et | Serug
 sheva | shanim | umatayim | shanah
-vaiyoled | banim
-uvanot
+vaiyoled | banim | uvanot
 
 11:22
 vaychi | Serug
-sheloshim | shanah
-vaiyoled | et | Nachor
+sheloshim | shanah | vaiyoled | et | Nachor
 
 11:23
-vaychi | Serug | acharei | holido | et | Nachor
-matayim | shanah | vaiyoled | banim
-uvanot
+vaychi | Serug | acharei | holido | et | Nachor | matayim | shanah
+vaiyoled | banim | uvanot
 
 11:24
 vaychi | Nachor
@@ -148,28 +127,22 @@ vaiyoled | et | Tarach
 11:25
 vaychi | Nachor | acharei | holido | et | Terach
 tesha | esreh | shanah | ume'at | shanah
-vaiyoled | banim
-uvanot
+vaiyoled | banim | uvanot
 
 11:26
 vaychi | Terach
-shiv'im | shanah
-vaiyoled | et | Avram | et | Nachor
-ve'et | Haran
+shiv'im | shanah | vaiyoled | et | Avram
+et | Nachor | ve'et | Haran
 
 11:27
 ve'eleh | toldot | Terach
 Terach | holid | et | Avram
-et | Nachor
-ve'et | Haran
-Veharan
+et | Nachor | ve'et | Haran | Veharan
 holid | et | Lot
 
 11:28
-vaiyamot | Haran
-al | penei
-Terach | aviv
-be'eretz | moladto | Be'ur | Kasdim
+vaiyamot | Haran | al | penei
+Terach | aviv | be'eretz | moladto | Be'ur | Kasdim
 
 11:29
 vaiyikach | Avram | Venachor | lahem
@@ -185,8 +158,7 @@ akarah | ein | lah | valad
 11:31
 vaiyikach | Terach | et | Avram | beno | ve'et | Lot | ben | Haran | ben | beno
 ve'et | Sarai | kalato
-eshet
-Avram | beno
+eshet | Avram | beno
 vaiyetze'u | itam | Me'ur | Kasdim | lalekhet | artzah | Kena'an
 vaiyavo'u | ad | Charan
 vaiyeshevu | sham
@@ -194,5 +166,4 @@ vaiyeshevu | sham
 11:32
 vaiyihyu | yemei | Terach
 chamesh | shanim | umatayim | shanah
-vaiyamot | Terach
-Becharan
+vaiyamot | Terach | Becharan

@@ -5,14 +5,13 @@ ishei | Yahweh | venachalato
 yokhelun
 
 18:2
-venachalah | lo | yihyeh | lo | bekerev | echav
-Yahweh | hu | nachalato
+venachalah | lo | yihyeh | lo
+bekerev | echav | Yahweh | hu | nachalato
 ka'asher | diber | lo
 
 18:3
 vezeh | yihyeh | mishpat | hakohanim | me'et | ha'am | me'et | zoechei | hazevach
-im | shor | im | seh
-venatan | lakohen
+im | shor | im | seh | venatan | lakohen
 hazeroa | vehalechayayim
 vehakevah
 
@@ -21,8 +20,8 @@ reshit | deganekha | tiroshekha | veyitzharekha | vereshit | gez | tzonekha
 titen | lo
 
 18:5
-ki | vo | bachar | Yahweh | eloheikha
-mikol | shevateikha | la'amod | lesharet | beshem | Yahweh | hu | uvanav
+ki | vo | bachar | Yahweh | eloheikha | mikol | shevateikha
+la'amod | lesharet | beshem | Yahweh | hu | uvanav
 kol | haiyamim
 
 18:6
@@ -33,8 +32,7 @@ el | hamakom
 asher | yivchar | Yahweh
 
 18:7
-vesheret | beshem
-Yahweh | elohav
+vesheret | beshem | Yahweh | elohav
 kekhol | echav | halviyim
 ha'omedim | sham
 lifnei | Yahweh
@@ -46,8 +44,7 @@ yokhelu | levad | mikarav | al | ha'avot
 18:9
 ki | atah | ba | el | ha'aretz
 asher | Yahweh | eloheikha
-noten | lakh | lo | tilmad | la'asot
-keto'avot
+noten | lakh | lo | tilmad | la'asot | keto'avot
 hagoyim | hahem
 
 18:10
@@ -65,20 +62,18 @@ el | hametim
 ki | to'avat | Yahweh
 kol | oseh | eleh | uviglal | hato'evot | ha'eleh
 Yahweh | eloheikha
-morish | otam
-mipaneikha
+morish | otam | mipaneikha
 
 18:13
 tamim | tihyeh
-im
-Yahweh | eloheikha
+im | Yahweh | eloheikha
 
 18:14
 ki | hagoyim | ha'eleh | asher | atah | yoresh | otam
 el | me'onenim | ve'el | kosemim
 yishma'u
-ve'atah | lo | khen
-natan | lekha
+ve'atah
+lo | khen | natan | lekha
 Yahweh | eloheikha
 
 18:15
@@ -90,8 +85,7 @@ tishma'un
 
 18:16
 kekhol | asher | sha'alta | me'im | Yahweh | eloheikha | Bechorev
-beyom | hakahal
-lemor
+beyom | hakahal | lemor
 lo | osef | lishmoa | et | kol | Yahweh | elohai
 ve'et | ha'esh | hagedolah | hazot | lo | er'eh | od
 velo | amut
@@ -102,8 +96,7 @@ elai
 heitivu | asher | diberu
 
 18:18
-navi | akim | lahem | mikerev | acheihem
-kamokha
+navi | akim | lahem | mikerev | acheihem | kamokha
 venatati | devarai | befiv
 vediber | aleihem | et
 kol | asher | atzavvenu
@@ -116,8 +109,8 @@ edrosh | me'imo
 
 18:20
 akh | hanavi | asher | yazid | ledaber | davar | bishmi | et | asher | lo | tzivitiv | ledaber
-va'asher | yedaber
-beshem | elohim | acherim
+va'asher | yedaber | beshem
+elohim | acherim
 umet
 hanavi | hahu
 
@@ -128,8 +121,6 @@ Yahweh
 
 18:22
 asher | yedaber | hanavi | beshem | Yahweh | velo | yihyeh | hadavar | velo | yavo
-hu | hadavar | asher | lo | dibero
-Yahweh
+hu | hadavar | asher | lo | dibero | Yahweh
 bezadon | dibero | hanavi
-lo | tagur
-mimenu
+lo | tagur | mimenu

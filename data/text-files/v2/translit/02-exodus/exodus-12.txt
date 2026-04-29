@@ -1,18 +1,15 @@
 12:1
-vaiyomer | Yahweh | el | Mosheh | ve'el | Aharon
-be'eretz | Mitzrayim
+vaiyomer | Yahweh | el | Mosheh | ve'el | Aharon | be'eretz | Mitzrayim
 lemor
 
 12:2
 hachodesh | hazeh | lakhem
 rosh | chodashim
-rishon | hu | lakhem
-lechadeshei
+rishon | hu | lakhem | lechadeshei
 hashanah
 
 12:3
-daberu | el | kol | adat | Yisra'el | lemor
-be'asor
+daberu | el | kol | adat | Yisra'el | lemor | be'asor
 lachodesh | hazeh
 veyikchu | lahem | ish | seh | leveit | avot
 seh | labayit
@@ -27,8 +24,8 @@ al | haseh
 
 12:5
 seh | tamim | zakhar | ben | shanah
-yihyeh | lakhem
-min | hakevasim | umin | ha'izim | tikachu
+yihyeh | lakhem | min | hakevasim | umin | ha'izim
+tikachu
 
 12:6
 vehayah | lakhem | lemishmeret
@@ -42,7 +39,8 @@ ve'al | hamashkof | al | habatim
 asher | yokhelu | oto | bahem
 
 12:8
-ve'akhelu | et | habasar | balaylah | hazeh
+ve'akhelu | et | habasar
+balaylah | hazeh
 tzeli | esh | umatzot
 al | merorim
 yokheluhu
@@ -59,12 +57,10 @@ vehanotar | mimenu | ad | boker
 ba'esh | tisrofu
 
 12:11
-vekhakhah | tokhelu | oto
-mateneikhem | chagurim | na'aleikhem | beragleikhem
-umakelkhem | beyedkhem
+vekhakhah | tokhelu | oto | mateneikhem | chagurim
+na'aleikhem | beragleikhem | umakelkhem | beyedkhem
 va'akhaltem | oto | bechipazon
-pesach | hu
-Layahweh
+pesach | hu | Layahweh
 
 12:12
 ve'avarti | ve'eretz | Mitzrayim | balaylah | hazeh
@@ -87,9 +83,7 @@ techaguhu
 
 12:15
 shiv'at | yamim | matzot | tokhelu
-akh | baiyom | harishon
-tashbitu | se'or
-mibateikhem
+akh | baiyom | harishon | tashbitu | se'or | mibateikhem
 ki | kol | okhel | chametz | venikhretah | hanefesh | hahiv | Miyisra'el
 miyom | harishon
 ad | yom | hashevi'i
@@ -99,8 +93,7 @@ uvaiyom | harishon | mikra | kodesh | uvaiyom | hashevi'i
 mikra | kodesh | yihyeh | lakhem
 kol | melakhah | lo | ye'aseh | vahem
 akh | asher | ye'akhel | lekhol | nefesh
-hu | levado
-ye'aseh | lakhem
+hu | levado | ye'aseh | lakhem
 
 12:17
 ushemartem | et | hamatzot
@@ -111,27 +104,23 @@ chukat | olam
 
 12:18
 barishon | be'arba'ah | asar | yom | lachodesh | ba'erev
-tokhelu
-matzot
+tokhelu | matzot
 ad | yom | ha'echad | ve'esrim | lachodesh | ba'arev
 
 12:19
 shiv'at | yamim
 se'or
-lo | yimatze
-bevateikhem
+lo | yimatze | bevateikhem
 ki | kol | okhel | machmetzet | venikhretah | hanefesh | hahiv | me'adat | Yisra'el
 bager | uve'ezrach | ha'aretz
 
 12:20
 kol | machmetzet | lo | tokhelu
-bekhol | moshevoteikhem | tokhelu
-matzot
+bekhol | moshevoteikhem | tokhelu | matzot
 
 12:21
 vaiyikra | Mosheh | lekhol | ziknei | Yisra'el
-vaiyomer | alehem
-mishkhu | ukechu | lakhem | tzon | lemishpechoteikhem
+vaiyomer | alehem | mishkhu | ukechu | lakhem | tzon | lemishpechoteikhem
 veshachatu | hapasach
 
 12:22
@@ -146,13 +135,11 @@ vera'ah | et | hadam | al | hamashkof
 ve'al
 shetei | hamezuzot
 ufasach | Yahweh | al | hapetach
-velo | yiten | hamashchit | lavo | el | bateikhem
-lingof
+velo | yiten | hamashchit | lavo | el | bateikhem | lingof
 
 12:24
 ushemartem
-et | hadavar | hazeh
-lechok | lekha | ulevaneikha
+et | hadavar | hazeh | lechok | lekha | ulevaneikha
 ad | olam
 
 12:25
@@ -163,13 +150,11 @@ et | ha'avodah | hazot
 
 12:26
 vehayah
-ki | yomeru | aleikhem
-beneikhem | mah | ha'avodah | hazot | lakhem
+ki | yomeru | aleikhem | beneikhem | mah | ha'avodah | hazot | lakhem
 
 12:27
 va'amartem | zevach | pesach | hu | Layahweh | asher | pasach | al | batei | venei | Yisra'el | Bemitzrayim
-benagepo | et | Mitzrayim
-ve'et | bateinu | hitzil
+benagepo | et | Mitzrayim | ve'et | bateinu | hitzil
 vaiyikod | ha'am
 vaiyishtachavu
 
@@ -188,29 +173,25 @@ vekhol | bekhor | behemah
 12:30
 vaiyakom | par'oh | laylah | hu | vekhol | avadav | vekhol | Mitzrayim
 vatehi | tze'akah | gedolah | Bemitzrayim
-ki | ein | bayit | asher | ein | sham
-met
+ki | ein | bayit | asher | ein | sham | met
 
 12:31
 vaiyikra | Lemosheh | Ule'aharon | laylah | vaiyomer | kumu | tze'u | mitokh | ami
 gam | atem
-gam | benei | Yisra'el
-ulekhu | ivdu | et | Yahweh | kedaberkhem
+gam | benei | Yisra'el | ulekhu | ivdu | et | Yahweh | kedaberkhem
 
 12:32
 gam | tzonkhem | gam | bekarkhem | kechu | ka'asher | dibartem | valekhu | uverakhtem
 gam | oti
 
 12:33
-vatechezak | Mitzrayim | al | ha'am
-lemaher
+vatechezak | Mitzrayim | al | ha'am | lemaher
 leshalecham | min | ha'aretz | ki | ameru
 kulanu | metim
 
 12:34
 vaiyisa | ha'am | et | betzeko
-terem | yechmatz
-mish'arotam | tzerurot | besimlotam
+terem | yechmatz | mish'arotam | tzerurot | besimlotam
 al | shikhmam
 
 12:35
@@ -235,27 +216,22 @@ vetzon | uvakar | mikneh | kaved | me'od
 vaiyofu | et | habatzek | asher | hotzi'u | Mimitzrayim | ugot | matzot
 ki | lo | chametz
 ki | goreshu | Mimitzrayim | velo | yakhelu | lehitmahmeah
-vegam | tzedah
-lo | asu | lahem
+vegam | tzedah | lo | asu | lahem
 
 12:40
-umoshav | benei | Yisra'el | asher | yashevu
-Bemitzrayim
-sheloshim | shanah
-ve'arba | me'ot | shanah
+umoshav | benei | Yisra'el | asher | yashevu | Bemitzrayim
+sheloshim | shanah | ve'arba | me'ot | shanah
 
 12:41
 vayhi | miketz | sheloshim | shanah
 ve'arba | me'ot | shanah
 vayhi | be'etzem | haiyom | hazeh
-yatze'u | kol | tziv'ot | Yahweh
-me'eretz | Mitzrayim
+yatze'u | kol | tziv'ot | Yahweh | me'eretz | Mitzrayim
 
 12:42
 leil | shimurim | hu | Layahweh | lehotzi'am | me'eretz | Mitzrayim
 hu | halaylah | hazeh | Layahweh
-shimurim | lekhol | benei | Yisra'el
-ledorotam
+shimurim | lekhol | benei | Yisra'el | ledorotam
 
 12:43
 vaiyomer | Yahweh | el | Mosheh | Ve'aharon
@@ -268,12 +244,11 @@ vekhol | eved | ish | miknat | kasef | umaltah | oto
 az | yokhal | bo
 
 12:45
-toshav | vesakhir
-lo | yokhal | bo
+toshav | vesakhir | lo | yokhal | bo
 
 12:46
-bevayit | echad | ye'akhel
-lo | totzi | min | habayit | min | habasar | chutzah
+bevayit | echad | ye'akhel | lo | totzi | min | habayit | min | habasar
+chutzah
 ve'etzem
 lo | tishberu | vo
 
@@ -288,9 +263,7 @@ vehayah | ke'ezrach | ha'aretz
 vekhol | arel | lo | yokhal | bo
 
 12:49
-torah | achat
-yihyeh
-la'ezrach | velager
+torah | achat | yihyeh | la'ezrach | velager
 hagar | betokhkhem
 
 12:50
@@ -300,8 +273,7 @@ ka'asher | tzivah | Yahweh | et | Mosheh | ve'et | Aharon
 ken | asu
 
 12:51
-vayhi
-be'etzem
+vayhi | be'etzem
 haiyom | hazeh
 hotzi | Yahweh | et | benei | Yisra'el | me'eretz | Mitzrayim
 al | tziv'otam

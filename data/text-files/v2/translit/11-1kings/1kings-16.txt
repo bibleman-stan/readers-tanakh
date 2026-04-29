@@ -1,7 +1,6 @@
 16:1
 vayhi | devar | Yahweh | el | Yehu | ven | Chanani
-al | Ba'sha
-lemor
+al | Ba'sha | lemor
 
 16:2
 ya'an | asher | harimotikha | min | he'afar | va'etenkha | nagid
@@ -33,8 +32,7 @@ lemalkhei | Yisra'el
 16:6
 vaiyishkav | Ba'sha | im | avotav
 vaiyikaver
-Betirtzah
-vaiyimlokh | Elah | veno
+Betirtzah | vaiyimlokh | Elah | veno
 tachtav
 
 16:7
@@ -45,8 +43,7 @@ ve'al | asher | hikah
 oto
 
 16:8
-bishnat | esrim | vashesh | shanah
-Le'asa
+bishnat | esrim | vashesh | shanah | Le'asa
 melekh | Yehudah
 malakh | Elah | ven | Ba'sha | al | Yisra'el | Betirtzah
 shenatayim
@@ -60,8 +57,7 @@ Betirtzah
 
 16:10
 vaiyavo | Zimri | vaiyakehu | vaymitehu
-bishnat | esrim | vasheva
-Le'asa
+bishnat | esrim | vasheva | Le'asa
 melekh | Yehudah
 vaiyimlokh
 tachtav
@@ -75,15 +71,14 @@ vere'ehu
 16:12
 vaiyashmed | Zimri | et
 kol | beit | Ba'sha
-kidvar | Yahweh | asher | diber | el | Ba'sha
-beyad | Yehu | hanavi
+kidvar | Yahweh | asher | diber | el | Ba'sha | beyad
+Yehu | hanavi
 
 16:13
 el | kol | chatot | Ba'sha
 vechatot
 Elah | veno | asher | chate'u | va'asher | hecheti'u | et | Yisra'el
-lehakh'is | et | Yahweh | elohei | Yisra'el
-behavleihem
+lehakh'is | et | Yahweh | elohei | Yisra'el | behavleihem
 
 16:14
 veyeter | divrei | Elah
@@ -107,8 +102,8 @@ vaiyamlikhu | khol | Yisra'el | et | Ameri | sar | tzava | al | Yisra'el | baiyo
 bamachaneh
 
 16:17
-vaiya'aleh | Ameri | vekhol | Yisra'el | imo
-Migibeton | vaiyatzuru
+vaiya'aleh | Ameri | vekhol | Yisra'el | imo | Migibeton
+vaiyatzuru
 al | Tirtzah
 
 16:18
@@ -123,9 +118,7 @@ al | chatatov | asher | chata
 la'asot | hara
 be'einei | Yahweh
 lalekhet | bederekh | Yarave'am
-uvechatato | asher | asah
-lehachati
-et | Yisra'el
+uvechatato | asher | asah | lehachati | et | Yisra'el
 
 16:20
 veyeter | divrei | Zimri
@@ -134,15 +127,13 @@ halo | hem | ketuvim | al | sefer | divrei | haiyamim
 lemalkhei | Yisra'el
 
 16:21
-az | yechalek | ha'am | Yisra'el
-lachetzi
+az | yechalek | ha'am | Yisra'el | lachetzi
 chatzi | ha'am | hayah | acharei | Tivni | ven | Ginat | lehamlikho
-vehachatzi
-acharei | Ameri
+vehachatzi | acharei | Ameri
 
 16:22
-vaiyechezak | ha'am | asher | acharei | Ameri
-et | ha'am | asher | acharei | Tivni | ven | Ginat
+vaiyechezak | ha'am | asher | acharei | Ameri | et | ha'am
+asher | acharei | Tivni | ven | Ginat
 vaiyamot | Tivni
 vaiyimlokh
 Ameri
@@ -164,15 +155,11 @@ hahar | Shomeron
 16:25
 vaiya'aseh | Ameri | hara
 be'einei | Yahweh
-vaiyara
-mikol | asher | lefanav
+vaiyara | mikol | asher | lefanav
 
 16:26
-vaiyelekh | bekhol | derekh | Yarave'am | ben | Nevat
-uvechatotav | asher | hecheti
-et | Yisra'el
-lehakh'is | et | Yahweh | elohei | Yisra'el
-behavleihem
+vaiyelekh | bekhol | derekh | Yarave'am | ben | Nevat | uvechatotav | asher | hecheti
+et | Yisra'el | lehakh'is | et | Yahweh | elohei | Yisra'el | behavleihem
 
 16:27
 veyeter | divrei | Ameri | asher | asah
@@ -182,13 +169,13 @@ lemalkhei | Yisra'el
 
 16:28
 vaiyishkav | Ameri | im | avotav
-vaiyikaver
-Beshomeron | vaiyimlokh | Ach'av | beno
+vaiyikaver | Beshomeron
+vaiyimlokh | Ach'av | beno
 tachtav
 
 16:29
-Ve'ach'av | ben | Ameri | malakh | al | Yisra'el | bishnat | sheloshim | ushemoneh | shanah
-Le'asa
+Ve'ach'av | ben | Ameri | malakh | al | Yisra'el
+bishnat | sheloshim | ushemoneh | shanah | Le'asa
 melekh | Yehudah
 vaiyimlokh | Ach'av | ben | Ameri | al | Yisra'el | Beshomeron
 esrim | ushetayim
@@ -196,27 +183,23 @@ shanah
 
 16:30
 vaiya'as | Ach'av | ben | Ameri | hara
-be'einei | Yahweh
-mikol | asher | lefanav
+be'einei | Yahweh | mikol | asher | lefanav
 
 16:31
-vayhi | Hanakel | lekhto
-bechatot | Yarave'am | ben | Nevat
+vayhi | Hanakel | lekhto | bechatot
+Yarave'am | ben | Nevat
 vaiyikach | ishah | et | Izevel | bat | Etba'al | melekh | tzidonim
 vaiyelekh | vaiya'avod | et | haba'al
-vaiyishtachu
-lo
+vaiyishtachu | lo
 
 16:32
-vaiyakem | mizbeach
-laba'al | beit | haba'al | asher | banah
-Beshomeron
+vaiyakem | mizbeach | laba'al
+beit | haba'al | asher | banah | Beshomeron
 
 16:33
 vaiya'as | Ach'av | et | ha'asherah
 vaiyosef | Ach'av | la'asot | lehakh'is | et | Yahweh | elohei | Yisra'el
-mikol | malkhei | Yisra'el | asher | hayu
-lefanav
+mikol | malkhei | Yisra'el | asher | hayu | lefanav
 
 16:34
 beyamav | banah | Chi'el | beit | ha'eli | et | Yerichoh

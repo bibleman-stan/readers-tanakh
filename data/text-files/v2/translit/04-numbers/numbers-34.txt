@@ -16,12 +16,13 @@ kedemah
 
 34:4
 venasav | lakhem | hagevul | minegev | Lema'aleh | Akrabim | ve'avar | Tzinah
-vehayah | totz'otav
-minegev | Lekadesh | Barnea | veyatza | Chatzar | Adar
+vehayah | totz'otav | minegev | Lekadesh | Barnea
+veyatza | Chatzar | Adar
 ve'avar | Atzmonah
 
 34:5
-venasav | hagevul | Me'atzmon | nachlah | Mitzrayim
+venasav | hagevul | Me'atzmon
+nachlah | Mitzrayim
 vehayu | totz'otav
 haiyamah
 
@@ -57,8 +58,8 @@ ligvul | kedemah | Mechatzar | Einan
 Shefamah
 
 34:11
-veyarad | hagevul | Mishefam | Harivlah
-mikedem | La'ayin | veyarad | hagevul
+veyarad | hagevul | Mishefam | Harivlah | mikedem | La'ayin
+veyarad | hagevul
 umachah | al | ketef | yom | Kineret
 kedemah
 
@@ -66,13 +67,11 @@ kedemah
 veyarad | hagevul | Haiyardenah
 vehayu | totz'otav
 yam | hamelach
-zot | tihyeh | lakhem | ha'aretz | ligvuloteiha
-saviv
+zot | tihyeh | lakhem | ha'aretz | ligvuloteiha | saviv
 
 34:13
 vaytzav | Mosheh
-et | benei | Yisra'el
-lemor
+et | benei | Yisra'el | lemor
 zot | ha'aretz | asher | titnachalu | otah | begoral
 asher | tzivah | Yahweh
 latet | letish'at | hamatot
@@ -82,8 +81,7 @@ vachatzi | hamateh
 ki | lakechu | mateh | venei | har'uveni | leveit | avotam
 umateh | venei | hagadi
 leveit | avotam
-vachatzi | mateh | Menasheh | lakechu
-nachalatam
+vachatzi | mateh | Menasheh | lakechu | nachalatam
 
 34:15
 shenei | hamatot
@@ -98,8 +96,7 @@ el | Mosheh | lemor
 34:17
 eleh | shemot | ha'anashim
 asher | yinchalu | lakhem
-et | ha'aretz
-El'azar | hakohen
+et | ha'aretz | El'azar | hakohen
 Vihoshua
 bin | Nun
 
@@ -125,8 +122,7 @@ lemateh | Vinyamin | Elidad
 ben | Kislon
 
 34:22
-ulemateh | venei | Dan | nasi
-Buki
+ulemateh | venei | Dan | nasi | Buki
 ben | Yageli
 
 34:23

@@ -1,8 +1,6 @@
 37:1
-vaiyeshev | Ya'ako
-be'eretz
-megurei | aviv
-be'eretz | Kena'an
+vaiyeshev | Ya'ako | be'eretz
+megurei | aviv | be'eretz | Kena'an
 
 37:2
 eleh | toledot | Ya'ako | Yosef | ben | sheva | esreh | shanah | hayah | ro'eh | et | echav | batzon
@@ -25,8 +23,8 @@ dabero | leshalom
 
 37:5
 vaiyachalom | Yosef | chalom
-vaiyaged
-le'echav | vaiyosifu | od
+vaiyaged | le'echav
+vaiyosifu | od
 seno | oto
 
 37:6
@@ -45,17 +43,17 @@ vatishtachaveina | la'alumati
 37:8
 vaiyomeru | lo | echav
 hamalokh | timlokh | aleinu
-im | mashol | timshol
-banu | vaiyosifu | od | seno | oto
+im | mashol | timshol | banu
+vaiyosifu | od | seno | oto
 al | chalomotav
 ve'al | devarav
 
 37:9
 vaiyachalom | od | chalom | acher
-vaysaper | oto
-le'echav
+vaysaper | oto | le'echav
 vaiyomer | hineh | chalamti | chalom | od
-vehineh | hashemesh | vehaiyareach | ve'achad | asar | kokhavim | mishtachavim | li
+vehineh | hashemesh | vehaiyareach | ve'achad | asar | kokhavim | mishtachavim
+li
 
 37:10
 vaysaper | el | aviv | ve'el | echav
@@ -67,58 +65,46 @@ lehishtachavot | lekha | aretzah
 
 37:11
 vaykan'u | vo
-echav
-ve'aviv
+echav | ve'aviv
 shamar | et | hadavar
 
 37:12
 vaiyelekhu
-echav
-lir'ot | et | tzon | avihem
-Bishkhem
+echav | lir'ot | et | tzon | avihem | Bishkhem
 
 37:13
 vaiyomer | Yisra'el | el | Yosef | halo | acheikha | ro'im | Bishkhem
-lekhah
-ve'eshlachakha | aleihem
+lekhah | ve'eshlachakha | aleihem
 vaiyomer | lo
 hineni
 
 37:14
 vaiyomer | lo | lekh | na | re'eh | et | shelom | acheikha | ve'et | shelom | hatzon
-vahashiveni
-davar
+vahashiveni | davar
 vaiyishlachehu | me'emek | Chevron
 vaiyavo
 Shekhemah
 
 37:15
 vaiyimtza'ehu | ish
-vehineh | to'eh
-basadeh
-vaiyish'alehu | ha'ish | lemor
-mah | tevakesh
+vehineh | to'eh | basadeh
+vaiyish'alehu | ha'ish | lemor | mah | tevakesh
 
 37:16
 vaiyomer | et | achai
-anokhi | mevakesh | hagidah | na | li
-eifoh
+anokhi | mevakesh | hagidah | na | li | eifoh
 hem | ro'im
 
 37:17
 vaiyomer | ha'ish | nase'u | mizeh
-ki | shama'ti | omerim
-nelekhah
-Dotayenah
-vaiyelekh | Yosef | achar | echav
-vaiyimtza'em
-Bedotan
+ki | shama'ti | omerim | nelekhah
+Dotayenah | vaiyelekh | Yosef | achar | echav
+vaiyimtza'em | Bedotan
 
 37:18
-vaiyir'u | oto
-merachok | uveterem | yikrav | aleihem
-vaiyitnakelu | oto
-lahamito
+vaiyir'u | oto | merachok
+uveterem | yikrav | aleihem
+vaiyitnakelu | oto | lahamito
 
 37:19
 vaiyomeru
@@ -129,14 +115,13 @@ ba
 37:20
 ve'atah | lekhu | venahargehu | venashlikhehu | be'achad | haborot
 ve'amarnu
-chaiyah | ra'ah
-akhalatehu
-venir'eh | mah | yihyu | chalomotav
+chaiyah | ra'ah | akhalatehu | venir'eh | mah | yihyu
+chalomotav
 
 37:21
 vaiyishma | Re'uven
-vaiyatzilehu
-miyadam | vaiyomer
+vaiyatzilehu | miyadam
+vaiyomer
 lo | nakenu
 nafesh
 
@@ -144,15 +129,14 @@ nafesh
 vaiyomer | alehem | Re'uven | al | tishpekhu | dam
 hashlikhu | oto | el | habor | hazeh | asher | bamidbar
 veyad
-al | tishlechu | vo
-lema'an | hatzil | oto | miyadam | lahashivo
+al | tishlechu | vo | lema'an | hatzil | oto | miyadam | lahashivo
 el | aviv
 
 37:23
 vayhi
 ka'asher | ba | Yosef
-el | echav
-vaiyafshitu | et | Yosef | et | kutaneto | et | ketonet | hapasim | asher | alav
+el | echav | vaiyafshitu | et | Yosef | et | kutaneto
+et | ketonet | hapasim | asher | alav
 
 37:24
 vaiyikachuhu
@@ -164,16 +148,14 @@ vehabor | rek | ein | bo | mayim
 vaiyeshevu | le'ekhol | lechem
 vaiyis'u | eineihem | vaiyir'u
 vehineh | orechat | yishme'elim
-ba'ah
-Migil'ad | ugemaleihem | nose'im | nekhot | utzeri | valot
+ba'ah | Migil'ad
+ugemaleihem | nose'im | nekhot | utzeri | valot
 holkhim | lehorid | Mitzrayemah
 
 37:26
 vaiyomer | Yehudah
 el | echav
-mah | betza | ki | naharog | et | achinu
-vekhisinu
-et | damo
+mah | betza | ki | naharog | et | achinu | vekhisinu | et | damo
 
 37:27
 lekhu | venimkerenu | laiyishme'elim | veyadenu | al | tehi | vo
@@ -184,14 +166,12 @@ echav
 
 37:28
 vaiya'avru | anashim | midyanim | socharim | vaiyimshekhu | vaiya'alu | et | Yosef | min | habor
-vaiyimkeru | et | Yosef | laiyishme'elim
-be'esrim | kasef | vaiyavi'u | et | Yosef
-Mitzrayemah
+vaiyimkeru | et | Yosef | laiyishme'elim | be'esrim | kasef
+vaiyavi'u | et | Yosef | Mitzrayemah
 
 37:29
 vaiyashov | Re'uven | el | habor
-vehineh | ein | Yosef | babor
-vaiyikra | et | begadav
+vehineh | ein | Yosef | babor | vaiyikra | et | begadav
 
 37:30
 vaiyashov | el | echav
@@ -204,8 +184,7 @@ anah | ani | va
 vaiyikchu
 et | ketonet | Yosef
 vaiyishchatu | se'ir | izim
-vaiyitbelu | et | hakutonet
-badam
+vaiyitbelu | et | hakutonet | badam
 
 37:32
 vayshalechu | et | ketonet | hapasim | vaiyavi'u | el | avihem
@@ -215,15 +194,13 @@ im | lo
 
 37:33
 vaiyakirah | vaiyomer | ketonet | beni
-chaiyah | ra'ah
-akhalatehu
-tarof | toraf
-Yosef
+chaiyah | ra'ah | akhalatehu
+tarof | toraf | Yosef
 
 37:34
 vaiyikra | Ya'ako | simlotav
-vaiyasem | sak
-bematenav | vaiyit'abel | al | beno
+vaiyasem | sak | bematenav
+vaiyit'abel | al | beno
 yamim | rabim
 
 37:35

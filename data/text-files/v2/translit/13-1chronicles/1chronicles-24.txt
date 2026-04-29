@@ -5,10 +5,8 @@ El'azar
 Ve'itamar
 
 24:2
-vaiyamot | Nadav | Va'avihu | lifnei | avihem
-uvanim
-lo | hayu | lahem
-vaykhahanu
+vaiyamot | Nadav | Va'avihu | lifnei | avihem | uvanim
+lo | hayu | lahem | vaykhahanu
 El'azar
 Ve'itamar
 
@@ -16,8 +14,7 @@ Ve'itamar
 vaiyechalkem | David
 Vetzadok | min | benei | El'azar
 Va'achimelekh
-min | benei | Itamar
-lifkudatam | ba'avodatam
+min | benei | Itamar | lifkudatam | ba'avodatam
 
 24:4
 vaiyimatze'u | venei | El'azar | rabim | lerashei | hagevarim | min | benei | Itamar
@@ -39,21 +36,18 @@ verashei | ha'avot | lakohanim | velalviyim | beit | av | echad | achuz | Le'el'
 ve'achuz | achuz | Le'itamar
 
 24:7
-vaiyetze | hagoral | harishon | Lihoyariv
-Lida'yah | hasheni
+vaiyetze | hagoral | harishon | Lihoyariv | Lida'yah | hasheni
 
 24:8
 Lecharim | hashelishi | Lis'orim
 harevi'i
 
 24:9
-Lemalkiyah | hachamishi
-Lemiyamin
+Lemalkiyah | hachamishi | Lemiyamin
 hashishi
 
 24:10
-Lehakotz | hashevi'i
-La'aviyah
+Lehakotz | hashevi'i | La'aviyah
 hashemini
 
 24:11
@@ -80,8 +74,7 @@ Liftachyah | tish'ah | asar | Lichezkel
 ha'esrim
 
 24:17
-Leyakhin | echad | ve'esrim
-Legamul
+Leyakhin | echad | ve'esrim | Legamul
 shenayim | ve'esrim
 
 24:18
@@ -125,19 +118,16 @@ livnei | Yishiyah
 Zekharyahu
 
 24:26
-benei | Merari | Machli | Umushi
-benei
+benei | Merari | Machli | Umushi | benei
 Ya'aziyahu | Veno
 
 24:27
-benei
-Merari | Leya'aziyahu | Veno
+benei | Merari | Leya'aziyahu | Veno
 Veshoham | Vezakur
 Ve'ivri
 
 24:28
-Lemachli | El'azar
-velo | hayah | lo | banim
+Lemachli | El'azar | velo | hayah | lo | banim
 
 24:29
 Lekish | benei | Kish | Yerachme'el
@@ -150,6 +140,5 @@ leveit | avoteihem
 24:31
 vaiyapilu | gam | hem | goralot | le'umat | acheihem | benei | Aharon | lifnei | David | hamelekh | Vetzadok | Va'achimelekh
 verashei | ha'avot | lakohanim | velalviyim
-avot | harosh
-le'umat
+avot | harosh | le'umat
 achiv | hakatan

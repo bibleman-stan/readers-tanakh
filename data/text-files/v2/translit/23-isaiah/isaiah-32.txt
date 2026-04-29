@@ -1,7 +1,5 @@
 32:1
-hen | letzedek
-yimlokh | melekh
-ulesarim
+hen | letzedek | yimlokh | melekh | ulesarim
 lemishpat | yasoru
 
 32:2
@@ -9,9 +7,7 @@ vehayah | ish | kemachave | ruach
 veseter | zarem | kefalgei | mayim | betzayon | ketzel | sela | kaved | be'eretz | ayefah
 
 32:3
-velo | tish'einah
-einei | ro'im
-ve'azenei | shome'im
+velo | tish'einah | einei | ro'im | ve'azenei | shome'im
 tikshavnah
 
 32:4
@@ -20,14 +16,13 @@ uleshon | ilegim | temaher
 ledaber | tzachot
 
 32:5
-lo | yikare | od | lenaval | nadiv
-ulekhilai
+lo | yikare | od | lenaval | nadiv | ulekhilai
 lo | ye'amer
 shoa
 
 32:6
-ki | naval | nevalah | yedaber
-velibo | ya'aseh | aven
+ki | naval | nevalah | yedaber | velibo
+ya'aseh | aven
 la'asot | chonef | uledaber | el | Yahweh | to'ah
 leharik | nefesh | ra'ev | umashkeh | tzame
 yachsir
@@ -35,10 +30,8 @@ yachsir
 32:7
 vekhelai
 kelav | ra'im
-hu | zimot | ya'atz
-lechabel | anavim | be'imrei | sheker
-uvedaber | evyon
-mishpat
+hu | zimot | ya'atz | lechabel | anavim | be'imrei | sheker
+uvedaber | evyon | mishpat
 
 32:8
 venadiv
@@ -55,11 +48,8 @@ imrati
 
 32:10
 yamim | al | shanah
-tirgaznah
-botechot
-ki | kalah | vatzir
-osef
-beli | yavo
+tirgaznah | botechot
+ki | kalah | vatzir | osef | beli | yavo
 
 32:11
 chirdu | sha'ananot
@@ -76,9 +66,7 @@ al | gefen
 poriyah
 
 32:13
-al | admat | ami
-kotz | shamir
-ta'aleh
+al | admat | ami | kotz | shamir | ta'aleh
 ki | al | kol | batei | masos | kiryah
 alizah
 
@@ -106,8 +94,8 @@ hashket | vavetach
 ad | olam
 
 32:18
-veyashav | ami
-binveh | shalom | uvemishkenot | mivtachim | uvimnuchot
+veyashav | ami | binveh | shalom | uvemishkenot | mivtachim
+uvimnuchot
 sha'ananot
 
 32:19

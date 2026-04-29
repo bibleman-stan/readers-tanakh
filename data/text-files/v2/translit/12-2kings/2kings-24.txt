@@ -1,28 +1,25 @@
 24:1
-beyamav | alah | Nevukhadnetzar
-melekh | Bavel
+beyamav | alah | Nevukhadnetzar | melekh | Bavel
 vayhi | lo | Yehoyakim | eved | shalosh | shanim
 vaiyashov
 vaiyimrod | bo
 
 24:2
 vayshalach | Yahweh | bo | et | gedudei | Khasdim | ve'et | gedudei | Aram | ve'et | gedudei | Mo'av | ve'et | gedudei | venei | Amon
-vayshalechem | Bihudah
-leha'avido
-kidvar | Yahweh | asher | diber
-beyad
+vayshalechem | Bihudah | leha'avido
+kidvar | Yahweh | asher | diber | beyad
 avadav | hanevi'im
 
 24:3
-akh | al | pi | Yahweh | hayetah | Bihudah
-lehasir | me'al | panav | bechatot | Menasheh | kekhol | asher | asah
+akh | al | pi | Yahweh | hayetah | Bihudah | lehasir
+me'al | panav | bechatot | Menasheh
+kekhol | asher | asah
 
 24:4
 vegam | dam | hanaki | asher | shafakh
 vaymale | et | Yerushalim
 dam | naki
-velo | avah | Yahweh
-lisloach
+velo | avah | Yahweh | lisloach
 
 24:5
 veyeter | divrei | Yehoyakim
@@ -32,23 +29,19 @@ lemalkhei | Yehudah
 
 24:6
 vaiyishkav | Yehoyakim
-im | avotav
-vaiyimlokh | Yehoyakhin | beno
+im | avotav | vaiyimlokh | Yehoyakhin | beno
 tachtav
 
 24:7
-velo | hosif | od | melekh | Mitzrayim
-latzet | me'artzo
+velo | hosif | od | melekh | Mitzrayim | latzet | me'artzo
 ki | lakach | melekh | Bavel | minachal | Mitzrayim | ad | nehar | Perat
-kol | asher | hayetah
-lemelekh | Mitzrayim
+kol | asher | hayetah | lemelekh | Mitzrayim
 
 24:8
 ben | shemoneh | esreh | shanah | Yehoyakhin | bemalekho
 usheloshah | chodashim | malakh | Birushalim
 veshem | imo
-Nechushta | vat | Elnatan
-Mirushalim
+Nechushta | vat | Elnatan | Mirushalim
 
 24:9
 vaiya'as | hara
@@ -76,7 +69,8 @@ bishnat | shemoneh | lemalekho
 
 24:13
 vaiyotze | misham | et | kol | otzrot | beit | Yahweh
-ve'otzrot | beit | hamelekh
+ve'otzrot
+beit | hamelekh
 vaykatzetz | et | kol | kelei | hazahav | asher | asah | Shelomoh | melekh | Yisra'el | beheikhal | Yahweh
 ka'asher | diber | Yahweh
 
@@ -89,16 +83,14 @@ zulat
 dalat | am | ha'aretz
 
 24:15
-vaiyegel | et | Yehoyakhin
-Bavelah
+vaiyegel | et | Yehoyakhin | Bavelah
 ve'et | em | hamelekh | ve'et | neshei | hamelekh | ve'et | sarisav | ve'et | evilei | ha'aretz
 holikh | golah | Mirushalim | Bavelah
 
 24:16
 ve'et | kol | anshei | hachayil | shiv'at | alafim | vehecharash | vehamasger | elef | hakol
 giborim
-osei | milchamah | vayvi'em | melekh | Bavel | golah
-Bavelah
+osei | milchamah | vayvi'em | melekh | Bavel | golah | Bavelah
 
 24:17
 vaiyamlekh | melekh | Bavel | et | Matanyah | dodo
@@ -121,5 +113,4 @@ kekhol | asher | asah | Yehoyakim
 ki | al | af | Yahweh | hayetah | Virushalim | Uvihudah
 ad | hishlikho | otam
 me'al | panav
-vaiyimrod | Tzidkiyahu
-bemelekh | Bavel
+vaiyimrod | Tzidkiyahu | bemelekh | Bavel

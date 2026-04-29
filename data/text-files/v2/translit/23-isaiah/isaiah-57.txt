@@ -1,20 +1,17 @@
 57:1
-hatzadik | avad
-ve'ein | ish
+hatzadik | avad | ve'ein | ish
 sam | al | lev
 ve'anshei | chesed | ne'esafim | be'ein | mevin
-ki | mipenei | hara'ah
-Ne'esaf | hatzadik
+ki | mipenei | hara'ah | Ne'esaf | hatzadik
 
 57:2
 yavo | shalom
 yanuchu
-al | mishkevotam
-holekh
-nekhocho
+al | mishkevotam | holekh | nekhocho
 
 57:3
-ve'atem | kirvu | henah | benei | onenah
+ve'atem | kirvu | henah
+benei | onenah
 zera | mena'ef | vatizneh
 
 57:4
@@ -54,8 +51,7 @@ yad | chazit
 57:9
 vatashuri | lamelekh | bashemen
 vatarbi
-rikuchayikh
-vateshalechi | tziraikh | ad | merachok
+rikuchayikh | vateshalechi | tziraikh | ad | merachok
 vatashpili
 ad | she'ol
 
@@ -65,8 +61,7 @@ chaiyat | yadekh | matzat | al | ken | lo | chalit
 
 57:11
 ve'et | mi | da'agt | vatire'i | ki | tekhazevi
-ve'oti | lo | zakhart
-lo | samt
+ve'oti | lo | zakhart | lo | samt
 al | libekh
 halo | ani | machsheh | ume'olam
 ve'oti
@@ -74,13 +69,11 @@ lo | tira'i
 
 57:12
 ani | agid
-tzidkatekh
-ve'et | ma'asayikh
+tzidkatekh | ve'et | ma'asayikh
 velo | yo'ilukh
 
 57:13
-beza'akekh | yatzilukh | kibutzayikh
-ve'et | kulam | yisa | ruach
+beza'akekh | yatzilukh | kibutzayikh | ve'et | kulam | yisa | ruach
 yikach | havel
 vehachoseh | vi | yinchal | eretz
 veyirash
@@ -98,24 +91,20 @@ ve'et | daka | ushefal | ruach | lehachayot | ruach | shefalim | ulehachayot
 lev | nidka'im
 
 57:16
-ki | lo | le'olam | ariv
-velo | lanetzach | eketzof
+ki | lo | le'olam | ariv | velo | lanetzach
+eketzof
 ki | ruach | milefanai | ya'atof
 uneshamot
 ani | asiti
 
 57:17
-ba'avon | bitz'o | katzafti | ve'akehu
-haster | ve'ektzof
-vaiyelekh | shovav
-bederekh | libo
+ba'avon | bitz'o | katzafti | ve'akehu | haster | ve'ektzof
+vaiyelekh | shovav | bederekh | libo
 
 57:18
-derakhav | ra'iti
-ve'erpa'ehu
+derakhav | ra'iti | ve'erpa'ehu
 ve'anchehu
-va'ashalem | nichumim | lo
-vela'avelav
+va'ashalem | nichumim | lo | vela'avelav
 
 57:19
 bore
@@ -131,6 +120,4 @@ vaiyigreshu | meimav
 refesh | vatit
 
 57:21
-ein | shalom
-amar | elohai
-laresha'im
+ein | shalom | amar | elohai | laresha'im

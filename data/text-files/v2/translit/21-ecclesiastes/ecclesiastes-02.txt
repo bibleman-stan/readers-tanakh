@@ -1,6 +1,5 @@
 2:1
-amarti | ani | belibi
-lekhah | na | anasekhah | vesimchah
+amarti | ani | belibi | lekhah | na | anasekhah | vesimchah
 ure'eh | vetov
 vehineh | gam | hu
 havel
@@ -10,16 +9,14 @@ lischok | amarti | meholal
 ulesimchah | mah | zoh | osah
 
 2:3
-tarti | velibi
-limshokh | baiyayin
+tarti | velibi | limshokh | baiyayin
 et | besari | velibi | noheg | bachakhemah | vele'echoz | besikhlut
 ad | asher | er'eh | ei | zeh | tov | livnei | ha'adam | asher | ya'asu | tachat | hashamayim
 mispar | yemei | chaiyeihem
 
 2:4
 higdalti | ma'asai | baniti | li | batim
-nata'ti | li
-keramim
+nata'ti | li | keramim
 
 2:5
 asiti | li
@@ -52,8 +49,8 @@ amedah | li
 
 2:10
 vekhol | asher | sha'alu | einai
-lo | atzalti
-mehem | lo | mana'ti | et | libi | mikol | simchah | ki | libi | sameach | mikol | amali
+lo | atzalti | mehem
+lo | mana'ti | et | libi | mikol | simchah | ki | libi | sameach | mikol | amali
 vezeh | hayah | chelki | mikol | amali
 
 2:11
@@ -72,15 +69,14 @@ asuhu
 
 2:13
 vera'iti | ani
-sheiyesh | yitron | lachakhemah
-min | hasikhlut | kitron | ha'or | min | hachoshekh
+sheiyesh | yitron | lachakhemah | min | hasikhlut
+kitron | ha'or | min | hachoshekh
 
 2:14
 hechakham | einav | berosho
 vehakesil | bachoshekh | holekh
 veyada'ti | gam | ani
-shemikreh | echad
-yikreh | et | kulam
+shemikreh | echad | yikreh | et | kulam
 
 2:15
 ve'amarti | ani | belibi | kemikreh | hakesil | gam | ani | yikreni
@@ -91,8 +87,7 @@ shegam | zeh
 havel
 
 2:16
-ki | ein | zikhron | lechakham | im | hakesil
-le'olam
+ki | ein | zikhron | lechakham | im | hakesil | le'olam
 beshekevar | haiyamim | haba'im | hakol | Nishkach
 ve'eikh | yamut | hechakham
 im | hakesil
@@ -107,8 +102,7 @@ ure'ut | ruach
 2:18
 vesaneti | ani | et | kol | amali
 she'ani | amel | tachat | hashamesh
-she'annichenu
-la'adam
+she'annichenu | la'adam
 sheiyihyeh | acharai
 
 2:19
@@ -135,8 +129,7 @@ shehu | amel | tachat | hashamesh
 
 2:23
 ki | khol | yamav | makh'ovim | vakha'as | inyano
-gam | balaylah
-lo | shakhav | libo
+gam | balaylah | lo | shakhav | libo
 gam | zeh
 hevel | hu
 

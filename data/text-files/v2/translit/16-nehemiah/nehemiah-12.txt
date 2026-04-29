@@ -5,15 +5,13 @@ Serayah | Yirmeyah
 Ezra
 
 12:2
-Amaryah | Malukh
-Chatush
+Amaryah | Malukh | Chatush
 
 12:3
 Shekhanyah | Rechum | Meremot
 
 12:4
-Ido | Gineto
-Aviyah
+Ido | Gineto | Aviyah
 
 12:5
 Miyamin | Ma'adyah | Bilgah
@@ -36,15 +34,12 @@ al | hyedot
 hu | ve'echav
 
 12:9
-Uvakbukyah | Ve'unov | acheihem | lenegdam
-lemishmarot
+Uvakbukyah | Ve'unov | acheihem | lenegdam | lemishmarot
 
 12:10
 Veyeshua
-holid | et | Yoyakim
-Veyoyakim | holid | et | Elyashiv
-Ve'elyashiv
-et | Yoyada
+holid | et | Yoyakim | Veyoyakim | holid | et | Elyashiv
+Ve'elyashiv | et | Yoyada
 
 12:11
 Veyoyada | holid | et | Yonatan
@@ -54,8 +49,7 @@ holid | et | Yadua
 12:12
 uvimei | Yoyakim
 hayu | khohanim
-rashei | ha'avot
-Lisrayah | Merayah | Leyirmeyah
+rashei | ha'avot | Lisrayah | Merayah | Leyirmeyah
 Chananyah
 
 12:13
@@ -130,11 +124,10 @@ la'asot | chanukah | vesimchah | uvetodot | uveshir | metziltayim
 nevalim | uvekhinorot
 
 12:28
-vaiye'asefu
-benei
+vaiye'asefu | benei
 hamshorerim
-umin | hakikar | sevivot | Yerushalim
-umin | chatzrei | netofati
+umin | hakikar | sevivot | Yerushalim | umin | chatzrei
+netofati
 
 12:29
 Umibeit | Hagilgal | umisedot | Geva
@@ -148,13 +141,10 @@ vaiyitaharu
 hakohanim
 vehalviyim
 vaytaharu | et | ha'am
-ve'et | hashe'arim
-ve'et | hachomah
+ve'et | hashe'arim | ve'et | hachomah
 
 12:31
-va'a'aleh | et | sarei | Yehudah
-me'al
-lachomah
+va'a'aleh | et | sarei | Yehudah | me'al | lachomah
 va'a'amidah | shetei | todot | gedolot | vetahalukhot | laiyamin | me'al | lachomah
 lesha'ar
 ha'ashpot
@@ -169,8 +159,7 @@ Va'azaryah | Ezra | Umeshulam
 
 12:34
 Yehudah | Uvinyamin
-Ushema'yah
-Veyirmeyah
+Ushema'yah | Veyirmeyah
 
 12:35
 umibenei | hakohanim | bachatzotzerot
@@ -186,8 +175,7 @@ Ve'ezra | hasofer | lifneihem
 
 12:37
 ve'al | sha'ar | ha'ayin | venegdam | alu | al | ma'alot | ir | David
-bama'aleh
-lachomah | me'al | leveit | David
+bama'aleh | lachomah | me'al | leveit | David
 ve'ad | sha'ar | hamayim | mizrach
 
 12:38
@@ -205,8 +193,8 @@ ve'amedu | besha'ar
 hamatarah
 
 12:40
-vata'amodenah | shetei | hatodot | beveit | ha'elohim
-va'ani
+vata'amodenah | shetei | hatodot
+beveit | ha'elohim | va'ani
 vachatzi | haseganim
 imi
 
@@ -216,8 +204,7 @@ bachatzotzerot
 
 12:42
 Uma'aseyah | Ushema'yah | Ve'el'azar | Ve'uzi | Vihochanan | Umalkiyah
-Ve'eilam | Va'azer
-vaiyashmi'u | hamshorerim
+Ve'eilam | Va'azer | vaiyashmi'u | hamshorerim
 Veyizrachyah
 hapakid
 
@@ -225,8 +212,7 @@ hapakid
 vaiyizbechu | vaiyom | hahu | zevachim | gedolim | vaiyismachu | ki | ha'elohim | simecham | simchah | gedolah
 vegam | hanashim | vehayladim
 samechu
-vatishama | simchat | Yerushalim
-merachok
+vatishama | simchat | Yerushalim | merachok
 
 12:44
 vaiyipakedu | vaiyom | hahu | anashim | al | haneshakhot | la'otzarot | laterumot | lareshit | velama'asrot
@@ -242,11 +228,11 @@ vehasho'arim | kemitzvat | David
 Shelomoh | veno
 
 12:46
-ki | vimei | David | Ve'asaf | mikedem | rosh | hamshorerim
+ki | vimei | David | Ve'asaf | mikedem
+rosh | hamshorerim
 veshir | tehilah | vehodot | lelohim
 
 12:47
 vekhol | Yisra'el | bimei | Zerubavel | uvimei | Nechemyah | notenim | menayot | hamshorerim | vehasho'arim
-devar | yom | beyomo
-umakdishim | lalviyim
+devar | yom | beyomo | umakdishim | lalviyim
 vehalviyim | makdishim | livnei | Aharon

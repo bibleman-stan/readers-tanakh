@@ -1,7 +1,6 @@
 7:1
 vaiyomer | Elisha
-shim'u
-devar | Yahweh
+shim'u | devar | Yahweh
 koh | amar | Yahweh | ka'et | machar | se'ah | solet | beshekel | vesatayim | se'orim | beshekel
 besha'ar | Shomeron
 
@@ -10,8 +9,8 @@ vaiya'an | hashalish | asher | lamelekh | nish'an | al | yado | et | ish | ha'el
 hineh | Yahweh | oseh | arubot | bashamayim
 hayihyeh
 hadavar | hazeh
-vaiyomer | hinekhah | ro'eh | be'eineikha
-umisham | lo | tokhel
+vaiyomer | hinekhah | ro'eh | be'eineikha | umisham
+lo | tokhel
 
 7:3
 ve'arba'ah | anashim | hayu | metzora'im
@@ -28,8 +27,7 @@ im | yechaiyunu | nichyeh
 ve'im | yemitunu | vamatenu
 
 7:5
-vaiyakumu | vaneshef
-lavo
+vaiyakumu | vaneshef | lavo
 el | machaneh | Aram
 vaiyavo'u | ad | ketzeh | machaneh | Aram
 vehineh | ein | sham
@@ -45,8 +43,7 @@ lavo | aleinu
 7:7
 vaiyakumu | vaiyanusu | vaneshef
 vaiya'azvu | et | oholeihem | ve'et | suseihem | ve'et | chamoreihem
-hamachaneh | ka'asher | hi
-vaiyanusu
+hamachaneh | ka'asher | hi | vaiyanusu
 el | nafsham
 
 7:8
@@ -61,9 +58,11 @@ vaiyatminu
 
 7:9
 vaiyomeru | ish | el | re'ehu | lo | khen | anachnu | osim | haiyom | hazeh | yom | besorah | hu
-va'anachnu | machshim | vechikinu | ad | or | haboker | umetza'anu | avon
+va'anachnu | machshim | vechikinu | ad | or | haboker
+umetza'anu | avon
 ve'atah | lekhu | venavo'ah
-venagidah | beit | hamelekh
+venagidah
+beit | hamelekh
 
 7:10
 vaiyavo'u | vaiyikre'u | el | sho'er | ha'ir
@@ -76,8 +75,7 @@ ve'ohalim | ka'asher | hemah
 
 7:11
 vaiyikra
-hasho'arim
-vaiyagidu
+hasho'arim | vaiyagidu
 beit | hamelekh
 penimah
 
@@ -95,8 +93,7 @@ vaiya'an | echad | me'avadav | vaiyomer | veyikchu | na | chamishah | min | hasu
 hinam | kekhol | hehamon | Yisra'el | asher | Nish'aru | vah
 hinam
 kekhol | hamon | Yisra'el
-asher | tamu
-venishlechah
+asher | tamu | venishlechah
 venir'eh
 
 7:14
@@ -111,13 +108,11 @@ vaiyelekhu | achareihem | ad | Haiyarden
 vehineh | khol | haderekh | mele'ah | vegadim | vekhelim
 asher | hishlikhu | Aram | behechafezam
 vaiyashuvu | hamal'akhim
-vaiyagidu
-lamelekh
+vaiyagidu | lamelekh
 
 7:16
 vaiyetze | ha'am
-vaiyavozu | et
-machaneh | Aram
+vaiyavozu | et | machaneh | Aram
 vayhi | se'ah | solet | beshekel | vesatayim | se'orim | beshekel
 kidvar | Yahweh
 
@@ -130,22 +125,19 @@ beredet | hamelekh | elav
 
 7:18
 vayhi | kedaber | ish | ha'elohim
-el | hamelekh
-lemor
+el | hamelekh | lemor
 satayim | se'orim | beshekel | use'ah | solet | beshekel
-yihyeh | ka'et | machar
-besha'ar
+yihyeh | ka'et | machar | besha'ar
 Shomeron
 
 7:19
 vaiya'an | hashalish | et | ish | ha'elohim | vaiyomar
 vehineh | Yahweh | oseh | arubot | bashamayim
 hayihyeh | kadavar | hazeh
-vaiyomer | hinekha | ro'eh | be'eineikha
-umisham | lo | tokhel
+vaiyomer | hinekha | ro'eh | be'eineikha | umisham
+lo | tokhel
 
 7:20
 vayhi | lo
-ken
-vaiyirmesu | oto | ha'am | basha'ar
+ken | vaiyirmesu | oto | ha'am | basha'ar
 vaiyamot

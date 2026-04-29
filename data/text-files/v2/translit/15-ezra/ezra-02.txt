@@ -1,7 +1,7 @@
 2:1
 ve'eleh | benei | hamedinah | ha'olim | mishevi | hagolah
-asher | heglah | Nevukhadnetzor | melekh | Bavel
-Levavel | vaiyashuvu | Lirushalim | Vihudah
+asher | heglah | Nevukhadnetzor | melekh | Bavel | Levavel
+vaiyashuvu | Lirushalim | Vihudah
 ish | le'iro
 
 2:2
@@ -25,12 +25,10 @@ benei | Fachat | Mo'av | livnei | Yeshua | Yo'av
 alpayim | shemoneh | me'ot | usheneim | asar
 
 2:7
-benei | Eilam
-elef | matayim | chamishim | ve'arba'ah
+benei | Eilam | elef | matayim | chamishim | ve'arba'ah
 
 2:8
-benei | Zatu
-tesha | me'ot | ve'arba'im | vachamishah
+benei | Zatu | tesha | me'ot | ve'arba'im | vachamishah
 
 2:9
 benei | Zakai
@@ -65,8 +63,7 @@ benei | Vetzai
 shelosh | me'ot | esrim | usheloshah
 
 2:18
-benei | Yorah
-me'ah | usheneim | asar
+benei | Yorah | me'ah | usheneim | asar
 
 2:19
 benei | Chashum | matayim | esrim | usheloshah
@@ -82,8 +79,7 @@ anshei | Netofah
 chamishim | veshishah
 
 2:23
-anshei | Anatot
-me'ah | esrim | ushemonah
+anshei | Anatot | me'ah | esrim | ushemonah
 
 2:24
 benei | Azmavet | arba'im | ushenayim
@@ -97,12 +93,11 @@ benei | Haramah | Vagava
 shesh | me'ot | esrim | ve'echad
 
 2:27
-anshei | Mikhmas
-me'ah | esrim | ushenayim
+anshei | Mikhmas | me'ah | esrim | ushenayim
 
 2:28
-anshei | Veit | El | Veha'ai
-matayim | esrim | usheloshah
+anshei | Veit | El | Veha'ai | matayim
+esrim | usheloshah
 
 2:29
 benei | Nevo
@@ -155,7 +150,8 @@ hamshorerim | benei | Asaf | me'ah | esrim | ushemonah
 2:42
 benei | hasho'arim | benei | Shalum | benei | Ater | benei | Talmon | benei | Akuv | benei | Chatita
 benei | Shovai
-hakol | me'ah | sheloshim | vetish'ah
+hakol | me'ah
+sheloshim | vetish'ah
 
 2:43
 hanetinim | benei | Tzicha | venei | Chasufa | benei | Taba'ot
@@ -210,8 +206,8 @@ avdei | Shelomoh
 shelosh | me'ot | tish'im | ushenayim
 
 2:59
-ve'eleh | ha'olim | Mitel | Melach | Tel | Charsha | Keruv | Adan
-Imer
+ve'eleh | ha'olim | Mitel | Melach | Tel | Charsha
+Keruv | Adan | Imer
 velo | yakhelu | lehagid | beit | avotam | vezar'am
 im | Miyisra'el | hem
 
@@ -228,18 +224,14 @@ al | shemam
 2:62
 eleh | bikshu | khetavam | hamityachsim
 velo | Nimtza'u
-vaygo'alu
-min | hakehunah
+vaygo'alu | min | hakehunah
 
 2:63
-vaiyomer | hatirshata | lahem | asher | lo | yokhelu
-mikodesh | hakodashim
-ad | amod | kohen
-le'urim | uletumim
+vaiyomer | hatirshata | lahem | asher | lo | yokhelu | mikodesh | hakodashim
+ad | amod | kohen | le'urim | uletumim
 
 2:64
-kol | hakahal | ke'echad
-arba | ribo
+kol | hakahal | ke'echad | arba | ribo
 alpayim | shelosh | me'ot | shishim
 
 2:65
@@ -252,8 +244,7 @@ sheva | me'ot | sheloshim | veshishah
 pirdeihem | matayim | arba'im | vachamishah
 
 2:67
-gemaleihem
-arba | me'ot | sheloshim | vachamishah
+gemaleihem | arba | me'ot | sheloshim | vachamishah
 chamorim
 sheshet | alafim | sheva | me'ot | ve'esrim
 

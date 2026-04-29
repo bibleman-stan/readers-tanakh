@@ -1,0 +1,32 @@
+name: h14_short_pp_completion
+rule: H14
+subcase: short_pp_completion
+severity: STRONG-MERGE-CANDIDATE
+description: |
+  Short PP (1-2 prosodic words, single bare prep-headed token) attaches
+  backward to its preceding line, completing the predication or NP.
+
+  Examples:
+    Gen 1:30:  "אֶת־כָּל־יֶרֶק עֵשֶׂב" + "לְאָכְלָה"
+                → "אֶת־כָּל־יֶרֶק עֵשֶׂב לְאָכְלָה" ("every green herb for food")
+    Gen 1:29:  "זֹרֵעַ זָרַע לָכֶם יִהְיֶה" + "לְאָכְלָה"
+                → "...יִהְיֶה לְאָכְלָה" ("...it will be for food")
+
+  Discriminator from h11_2 (PP + verb fronting): h11_2 requires line N+1 to
+  start with a finite verb. h14 requires line N+1 to be the SHORT PP itself
+  (first AND last tokens both prep-headed = single-token PP), no verb on N+1.
+
+trigger:
+  line_n1_first_token:
+    morphology: prep
+  line_n1_last_token:
+    morphology: prep
+  line_n1_anywhere:
+    has_finite_verb: false
+  combined_max_prosodic_words: 6
+
+guards:
+  - poetic_register
+
+annotation_template: "Short PP completion attaches backward ({pwc} prosodic words)"
+suggested_action: MERGE

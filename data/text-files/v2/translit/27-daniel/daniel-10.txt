@@ -2,8 +2,8 @@
 bishnat | shaloosh | Lekhoresh | melekh | Paras
 davar | Niglah | Ledaniyel
 asher | Nikra | shemo | Beleteshatzar
-ve'emet | hadavar | vetzava | gadol | uvin | et | hadavar
-uvinah | lo | bamar'eh
+ve'emet | hadavar | vetzava | gadol
+uvin | et | hadavar | uvinah | lo | bamar'eh
 
 10:2
 baiyamim
@@ -25,8 +25,7 @@ va'ani | hayiti | al | yad | hanahar | hagadol | hu | Chidakel
 
 10:5
 va'esa | et | einai | va'ere
-vehineh | ish | echad
-lavush | badim | umatenav | chagurim
+vehineh | ish | echad | lavush | badim | umatenav | chagurim
 bekhetem | Ufaz
 
 10:6
@@ -39,29 +38,26 @@ vekol | devarav | kekol | hamon
 vera'iti | ani | Daniyel | levadi | et | hamar'ah
 veha'anashim | asher | hayu | imi
 lo | ra'u
-et | hamar'ah
-aval | charadah | gedolah | nafelah | aleihem
-vaiyivrechu
-behechave
+et | hamar'ah | aval | charadah | gedolah | nafelah | aleihem
+vaiyivrechu | behechave
 
 10:8
 va'ani | Nish'arti | levadi
 va'er'eh | et | hamar'ah | hagedolah | hazot
-velo | Nish'ar | bi
-koch
+velo | Nish'ar | bi | koch
 vehodi | Nehpakh | alai | lemashchit
 velo | atzarti | koach
 
 10:9
-va'eshma
-et | kol | devarav | ukheshame'i | et | kol | devarav
+va'eshma | et | kol | devarav
+ukheshame'i | et | kol | devarav
 va'ani | hayiti | nirdam | al | panai
 ufanai | aretzah
 
 10:10
-vehineh | yad
-nage'ah | bi
-vateni'eni | al | birkai | vekhapot | yadai
+vehineh | yad | nage'ah | bi
+vateni'eni | al | birkai
+vekhapot | yadai
 
 10:11
 vaiyomer | elai | Daniyel | ish | chamudot | haven | badevarim | asher | anokhi | dover | eleikha | va'amod | al | amedekha
@@ -79,14 +75,12 @@ va'ani | vati | bidvareikha
 vesar | malkhut | Paras | omed | lenegdi | esrim | ve'echad | yom
 vehineh | Mikha'el | achad | hasarim | harishonim
 ba | le'azereni
-va'ani | Notarti | sham
-etzel | malkhei | Faras
+va'ani | Notarti | sham | etzel | malkhei | Faras
 
 10:14
 uvati | lahavinekha
 et | asher | yikrah | le'amekha | be'acharit | haiyamim
-ki | od | chazon
-laiyamim
+ki | od | chazon | laiyamim
 
 10:15
 uvedabero | imi | kadevarim
@@ -95,16 +89,13 @@ natati | fanai | artzah
 vene'elameti
 
 10:16
-vehineh | kidmut | benei | adam
-nogea
-al | sefatai
+vehineh | kidmut | benei | adam | nogea | al | sefatai
 va'eftach | pi | va'adaberah | va'omerah | el | ha'omed | lenegdi
 adoni | bamar'ah | Nehefkhu | tzirai | alai
 velo | atzarti | koach
 
 10:17
-veheikh | yukhal | eved | adoni | zeh
-ledaber
+veheikh | yukhal | eved | adoni | zeh | ledaber
 im | adoni | zeh
 va'ani | me'atah | lo | ya'amod | bi | khoach
 uneshamah
@@ -122,12 +113,9 @@ ki | chizaktani
 
 10:20
 vaiyomer | hayada'ta | lamah | bati | eleikha
-ve'atah | ashuv
-lehilachem
-im | sar | Paras
-va'ani | yotze
-vehineh | sar | Yavan
-ba
+ve'atah | ashuv | lehilachem
+im | sar | Paras | va'ani | yotze
+vehineh | sar | Yavan | ba
 
 10:21
 aval | agid | lekha | et | harashum | bikhtav

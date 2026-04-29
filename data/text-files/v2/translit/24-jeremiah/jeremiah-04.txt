@@ -1,19 +1,18 @@
 4:1
 im | tashuv | Yisra'el | ne'um | Yahweh | elai
 tashuv
-ve'im | tasir | shikutzeicha | mipanai | velo | tanud
+ve'im | tasir | shikutzeicha | mipanai
+velo | tanud
 
 4:2
-venishba'ta | chai | Yahweh
-be'emet | bemishpat | uvitzdakah
+venishba'ta | chai | Yahweh | be'emet | bemishpat | uvitzdakah
 vehitbarekhu | vo | goyim
 uvo | yithalalu
 
 4:3
 ki | khoh | amar | Yahweh | le'ish | Yehudah | Velirushalim
 niru | lakhem
-nir
-ve'al | tizre'u
+nir | ve'al | tizre'u
 el | kotzim
 
 4:4
@@ -24,10 +23,8 @@ pen | tetze | kha'esh | chamati | uva'arah | ve'ein | mekhabeh | mipenei
 roa | ma'aleikhem
 
 4:5
-hagidu | Vihudah | Uvirushalim | hashmi'u
-ve'imru
-vtik'u | shofar
-ba'aretz
+hagidu | Vihudah | Uvirushalim | hashmi'u | ve'imru
+vtik'u | shofar | ba'aretz
 kir'u | mal'u | ve'imru
 he'asefu | venavo'ah
 el | arei | hamivtzar
@@ -57,13 +54,11 @@ ki | lo | shav | charon | af | Yahweh | mimenu
 vehayah | vaiyom | hahu | ne'um | Yahweh
 yovad | lev | hamelekh | velev | hasarim
 venashamu | hakohanim
-vehanevi'im
-yitmahu
+vehanevi'im | yitmahu
 
 4:10
 va'omar | ahah | Adonai | Yahweh | akhen | hashe | hisheta | la'am | hazeh | Velirushalim | lemor
-shalom
-yihyeh | lakhem
+shalom | yihyeh | lakhem
 venage'ah | cherev
 ad | hanafesh
 
@@ -75,8 +70,7 @@ bat | ami | lo | lizrot | velo | lehavar
 
 4:12
 ruach | male | me'eleh | yavo | li
-atah | gam | ani | adaber | mishpatim
-otam
+atah | gam | ani | adaber | mishpatim | otam
 
 4:13
 hineh | ka'ananim | ya'aleh | vekhasufah | markevotav
@@ -114,8 +108,7 @@ ad | libekh
 me'ai | me'ai | achulah | kirot | libi | homeh | li | libi
 lo | acharish
 ki | kol | shofar | shama'ti | nafshi
-teru'at
-milchamah
+teru'at | milchamah
 
 4:20
 shever | al | shever | Nikra
@@ -126,8 +119,7 @@ rega
 yeri'otai
 
 4:21
-ad | matai
-er'eh | nes
+ad | matai | er'eh | nes
 eshme'ah
 kol | shofar
 
@@ -162,8 +154,8 @@ nadadu
 ra'iti
 vehineh | hakarmel
 hamidbar
-vekhol | arav | Nitetzu | mipenei | Yahweh
-mipenei | charon | apo
+vekhol | arav | Nitetzu | mipenei | Yahweh | mipenei
+charon | apo
 
 4:27
 ki | khoh | amar | Yahweh
@@ -175,8 +167,7 @@ lo | e'eseh
 4:28
 al | zot | te'eval | ha'aretz
 vekaderu | hashamayim | mima'al | al | ki | dibarti | zamoti
-velo | Nichamti
-velo | ashuv | mimenah
+velo | Nichamti | velo | ashuv | mimenah
 
 4:29
 mikol | parash | veromeh | keshet | borachat | kol | ha'ir | ba'u | be'avim
@@ -188,8 +179,7 @@ ish
 
 4:30
 ve'ati | shadud | mah | ta'asi | ki | tilbeshi | shani | ki | ta'di | adi | zahav | ki | tikre'i | vapukh | einayikh
-lashav
-tityapi
+lashav | tityapi
 ma'asu | vakh | ogevim | nafshekh | yevakeshu
 
 4:31
@@ -197,5 +187,4 @@ ki | kol | kecholah | shama'ti | tzarah | kemavkirah
 kol | bat | Tziyon | tityapeach
 tefares | kapeiha
 o | na | li
-ki | ayefah | nafshi
-lehoregim
+ki | ayefah | nafshi | lehoregim

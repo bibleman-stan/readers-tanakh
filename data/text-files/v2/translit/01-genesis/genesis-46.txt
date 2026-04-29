@@ -13,8 +13,7 @@ hineni
 
 46:3
 vaiyomer
-anokhi | ha'el
-elohei | avikha
+anokhi | ha'el | elohei | avikha
 al | tira | meredah | Mitzraymah | ki | legoy | gadol
 asimekha | sham
 
@@ -26,8 +25,7 @@ yashit | yado
 al | eineikha
 
 46:5
-vaiyakom | Ya'ako
-Mibe'er | Shava
+vaiyakom | Ya'ako | Mibe'er | Shava
 vaiyis'u | venei | Yisra'el | et | Ya'ako | avihem | ve'et | tapam | ve'et | nesheihem
 ba'agalot
 asher | shalach | par'oh
@@ -35,15 +33,14 @@ laset | oto
 
 46:6
 vaiyikchu | et | mikneihem | ve'et | rekhusham | asher | rakheshu | be'eretz | Kena'an
-vaiyavo'u
-Mitzrayemah | Ya'ako
+vaiyavo'u | Mitzrayemah
+Ya'ako
 vekhol | zar'o | ito
 
 46:7
 banav | uvenei | vanav | ito | benotav | uvenot | banav
 vekhol | zar'o
-hevi | ito
-Mitzrayemah
+hevi | ito | Mitzrayemah
 
 46:8
 ve'eleh | shemot | benei | Yisra'el | haba'im | Mitzraymah
@@ -86,8 +83,7 @@ Veyachle'el
 
 46:15
 eleh | benei | Le'ah | asher | yaldah | Leya'ako | Befadan | Aram
-ve'et
-Dinah | vito
+ve'et | Dinah | vito
 kol | nefesh | banav | uvenotav
 sheloshim | veshalosh
 
@@ -100,8 +96,7 @@ Ve'ar'eli
 
 46:17
 uvenei | Asher | Yimnah | Veyishvah | Veyishvi | Uveri'ah
-Veserach | achotam
-uvenei | Veri'ah
+Veserach | achotam | uvenei | Veri'ah
 Chever | Umalki'el
 
 46:18
@@ -112,24 +107,20 @@ vateled | et | eleh | Leya'ako
 shesh | esreh | nafesh
 
 46:19
-benei | Rachel | eshet | Ya'ako | Yosef
-Uvinyamin
+benei | Rachel | eshet | Ya'ako | Yosef | Uvinyamin
 
 46:20
 vaiyivaled | Leyosef | be'eretz | Mitzrayim | asher | yaldah | lo | Asenat
 bat | Poti | Fera | kohen | On
-et | Menasheh
-ve'et | Efrayim
+et | Menasheh | ve'et | Efrayim
 
 46:21
 uvenei | Vinyamin | Bela | Vavekher | Ve'ashbel
 Gera | Vena'aman
-Echi | Varosh | Mupim | Vechupim
-Va'ared
+Echi | Varosh | Mupim | Vechupim | Va'ared
 
 46:22
-eleh | benei | Rachel | asher | yulad
-Leya'ako
+eleh | benei | Rachel | asher | yulad | Leya'ako
 kol | nefesh
 arba'ah | asar
 
@@ -148,8 +139,8 @@ vateled | et | eleh | Leya'ako
 kol | nefesh | shiv'ah
 
 46:26
-kol | hanefesh | haba'ah | Leya'ako | Mitzraymah | yotze'ei | yerekho
-milevad | neshei | venei | Ya'ako
+kol | hanefesh | haba'ah | Leya'ako | Mitzraymah | yotze'ei | yerekho | milevad
+neshei | venei | Ya'ako
 kol | nefesh
 shishim | vashesh
 
@@ -159,17 +150,14 @@ nefesh | shenayim | kol | hanefesh | leveit | Ya'ako | haba'ah | Mitzraymah
 shiv'im
 
 46:28
-ve'et | Yehudah | shalach | lefanav | el | Yosef
-lehorot | lefanav
-Goshenah
-vaiyavo'u
+ve'et | Yehudah | shalach | lefanav | el | Yosef | lehorot | lefanav
+Goshenah | vaiyavo'u
 artzah | Goshen
 
 46:29
 vaiye'sor | Yosef | merkavto
 vaiya'al | likrat | Yisra'el | aviv
-Goshenah
-vaiyera | elav | vaiyipol | al | tzavarav
+Goshenah | vaiyera | elav | vaiyipol | al | tzavarav
 vaiyevek | al | tzavarav
 od
 
@@ -177,8 +165,7 @@ od
 vaiyomer | Yisra'el | el | Yosef
 amutah | hapa'am
 acharei | re'oti | et | paneikha
-ki | odkha
-chai
+ki | odkha | chai
 
 46:31
 vaiyomer | Yosef | el | echav | ve'el | beit | aviv

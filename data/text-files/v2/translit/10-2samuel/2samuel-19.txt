@@ -3,12 +3,10 @@ vaiyirgaz | hamelekh | vaiya'al | al | aliyat | hasha'ar
 vaiyevek
 vekhoh | amar | belekhto | beni | Avshalom | beni | veni | Avshalom
 mi | yiten | muti | ani | tachteikha
-Avshalom
-beni | veni
+Avshalom | beni | veni
 
 19:2
-vaiyugad
-Leyo'av
+vaiyugad | Leyo'av
 hineh | hamelekh | bokheh | vaiyit'abel
 al | Avshalom
 
@@ -21,16 +19,13 @@ al | beno
 19:4
 vaiyitganev | ha'am | baiyom | hahu
 lavo | ha'ir
-ka'asher | yitganev | ha'am | hanikhlamim
-benusam | bamilchamah
+ka'asher | yitganev | ha'am | hanikhlamim | benusam | bamilchamah
 
 19:5
-vehamelekh | la'at | et | panav
-vaiyiz'ak | hamelekh
+vehamelekh | la'at | et | panav | vaiyiz'ak | hamelekh
 kol | gadol
 beni | Avshalom
-Avshalom
-beni | veni
+Avshalom | beni | veni
 
 19:6
 vaiyavo | Yo'av | el | hamelekh
@@ -68,15 +63,13 @@ ish | le'ohalav
 
 19:10
 vayhi | khol | ha'am | nadon
-bekhol | shivtei | Yisra'el
-lemor
+bekhol | shivtei | Yisra'el | lemor
 hamelekh | hitzilanu | mikaf | oyeveinu | vehu | miletanu | mikaf | pelishtim
 ve'atah | barach | min | ha'aretz | me'al | Avshalom
 
 19:11
 Ve'avshalom | asher | mashachnu | aleinu
-met
-bamilchamah
+met | bamilchamah
 ve'atah | lamah | atem | macharishim | lehashiv | et | hamelekh
 
 19:12
@@ -137,16 +130,15 @@ Veshim'i | ven | Gera | nafal | lifnei | hamelekh | be'avero | Baiyarden
 
 19:20
 vaiyomer | el | hamelekh | al | yachashov | li | adoni | avon
-ve'al | tizkor | et | asher | he'evah | avdekha
-baiyom | asher | yatza | adoni | hamelekh | Mirushalim | lasum | hamelekh
+ve'al | tizkor | et | asher | he'evah | avdekha | baiyom | asher | yatza | adoni | hamelekh | Mirushalim
+lasum | hamelekh
 el | libo
 
 19:21
 ki | yada | avdekha
 ki
 ani | chatati
-vehineh | vati | haiyom | rishon | lekhol | beit | Yosef
-laredet
+vehineh | vati | haiyom | rishon | lekhol | beit | Yosef | laredet
 likrat
 adoni | hamelekh
 
@@ -160,8 +152,7 @@ et | meshiach | Yahweh
 
 19:23
 vaiyomer | David | mah | li | velakhem | benei | Tzeruyah
-ki | tihyu | li | haiyom
-lesatan
+ki | tihyu | li | haiyom | lesatan
 haiyom | yumat | ish | Beyisra'el
 ki | halo | yada'ti
 ki | haiyom
@@ -210,10 +201,8 @@ el | hamelekh
 19:30
 vaiyomer | lo | hamelekh
 lamah | tedaber | od
-devareikha
-amarti
-atah | Vetziva
-tachleku | et | hasadeh
+devareikha | amarti
+atah | Vetziva | tachleku | et | hasadeh
 
 19:31
 vaiyomer | Mefivoshet | el | hamelekh
@@ -224,9 +213,7 @@ el | beito
 
 19:32
 Uvarzilai | hagil'adi | yarad
-Merogelim | vaiya'avor | et | hamelekh | Haiyarden
-leshalecho
-et | Havaiyarden
+Merogelim | vaiya'avor | et | hamelekh | Haiyarden | leshalecho | et | Havaiyarden
 
 19:33
 Uvarzilai | zaken | me'od | ben | shemonim
@@ -261,8 +248,7 @@ hagemulah | hazot
 
 19:38
 yashov | na | avdekha | ve'amut | be'iri
-im | kever | avi
-ve'imi
+im | kever | avi | ve'imi
 vehineh | avdekha | Khimham | ya'avor | im | adoni | hamelekh
 va'aseh | lo
 et | asher | tov | be'eineikha
@@ -270,19 +256,16 @@ et | asher | tov | be'eineikha
 19:39
 vaiyomer | hamelekh | iti | ya'avor | Kimham
 va'ani | e'eseh | lo | et | hatov | be'eineikha
-vekhol | asher | tivchar | alai
-e'eseh | lakh
+vekhol | asher | tivchar | alai | e'eseh | lakh
 
 19:40
 vaiya'avor | kol | ha'am | et | Haiyarden
 vehamelekh | avar
 vaiyishak | hamelekh | Levarzilai | vayvarakhehu
-vaiyashov
-limkomo
+vaiyashov | limkomo
 
 19:41
-vaiya'avor | hamelekh | Hagilgalah
-Vekhimhan
+vaiya'avor | hamelekh | Hagilgalah | Vekhimhan
 avar | imo
 vekhol | am | Yehudah | vay'eviru | et | hamelekh
 vegam
@@ -307,6 +290,5 @@ im | niset | Nisa | lanu
 19:44
 vaiya'an | ish | Yisra'el | et | ish | Yehudah | vaiyomer | eser | yadot | li | vamelekh | vegam | Bedavid | ani | mimekha
 umadua | hekilotani | velo | hayah | devari | rishon | li | lehashiv | et | malki
-vaiyikesh | devar | ish | Yehudah
-midevar
+vaiyikesh | devar | ish | Yehudah | midevar
 ish | Yisra'el

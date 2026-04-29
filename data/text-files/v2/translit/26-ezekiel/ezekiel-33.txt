@@ -6,14 +6,11 @@ elai | lemor
 ben | adam | daber | el | benei | amekha | ve'amarta | aleihem
 eretz
 ki | avi | aleiha
-charev
-velakechu | am | ha'aretz | ish | echad | miktzeihem
-venatenu | oto | lahem
-letzopeh
+charev | velakechu | am | ha'aretz | ish | echad | miktzeihem
+venatenu | oto | lahem | letzopeh
 
 33:3
-vera'ah | et | hacherev
-ba'ah | al | ha'aretz
+vera'ah | et | hacherev | ba'ah | al | ha'aretz
 vetaka | bashofar
 vehizhir | et | ha'am
 
@@ -21,8 +18,7 @@ vehizhir | et | ha'am
 veshama | hashomea | et | kol | hashofar | velo | Nizhar
 vatavo | cherev
 vatikachehu
-damo | verosho
-yihyeh
+damo | verosho | yihyeh
 
 33:5
 et | kol | hashofar | shama | velo | Nizhar
@@ -51,12 +47,11 @@ vehizharta | otam | mimeni
 be'ameri | larasha | rasha | mot | tamut
 velo | dibarta | lehazhir | rasha
 midarko | hu | rasha | ba'avono | yamut
-vedamo
-miyadekha | avakesh
+vedamo | miyadekha | avakesh
 
 33:9
-ve'atah | ki | hizharta | rasha | midarko | lashuv | mimenah | velo | shav
-midarko | hu | ba'avono | yamut
+ve'atah | ki | hizharta | rasha | midarko | lashuv | mimenah
+velo | shav | midarko | hu | ba'avono | yamut
 ve'atah
 nafshekha | hitzalta
 
@@ -94,16 +89,14 @@ veshav | mechatato | ve'asah | mishpat | utzedakah
 
 33:15
 chavol | yashiv | rasha | gezelah | yeshalem
-bechukot | hachaiyim | halakh
-levilti
+bechukot | hachaiyim | halakh | levilti
 asot | avel
 chayo | yichyeh
 lo | yamut
 
 33:16
 kol | chatatov | asher | chata
-lo | tizakharnah
-lo
+lo | tizakharnah | lo
 mishpat | utzedakah | asah
 chayo | yichyeh
 
@@ -138,8 +131,7 @@ huketah | ha'ir
 33:22
 veyad | Yahweh | hayetah | elai | ba'erev | lifnei | bo | hapalit
 vaiyiftach | et | pi
-ad | bo | elai | baboker
-vaiyipatach | pi
+ad | bo | elai | baboker | vaiyipatach | pi
 velo | Ne'elamti
 od
 
@@ -152,14 +144,12 @@ ben | adam | yoshevei | hechoravot | ha'eleh | al | admat | Yisra'el | omerim | 
 echad | hayah | Avraham
 vaiyirash | et | ha'aretz
 va'anachnu | rabim
-lanu | Nitenah | ha'aretz
-lemorashah
+lanu | Nitenah | ha'aretz | lemorashah
 
 33:25
 lakhen | emor | aleihem | koh | amar | Adonai | Yahweh | al | hadam | tokhelu | ve'einekhem | tis'u | el | giluleikhem
 vedam | tishpokhu
-veha'aretz
-tirashu
+veha'aretz | tirashu
 
 33:26
 amadtem | al | charbekhem | asiten | to'evah
@@ -172,8 +162,7 @@ tirashu
 koh | tomar | alehem | koh | amar | Adonai | Yahweh | chai | ani
 im | lo | asher | bechoravot | bacherev | yipolu
 va'asher | al | penei | hasadeh
-lachaiyah | netativ
-le'akhelo
+lachaiyah | netativ | le'akhelo
 va'asher | bametzadot | uvame'arot
 badever | yamutu
 
@@ -181,8 +170,7 @@ badever | yamutu
 venatati | et | ha'aretz | shemamah | umeshamah
 venishbat
 ge'on | uzah
-veshamemu | harei | Yisra'el
-me'ein | over
+veshamemu | harei | Yisra'el | me'ein | over
 
 33:29
 veyade'u
@@ -190,8 +178,8 @@ ki | ani | Yahweh
 betiti | et | ha'aretz | shemamah | umeshamah | al | kol | to'avotam | asher | asu
 
 33:30
-ve'atah | ven | adam | benei | amekha | hanidbarim | bekha | etzel | hakirot
-uvefitchei
+ve'atah | ven | adam
+benei | amekha | hanidbarim | bekha | etzel | hakirot | uvefitchei
 habatim
 vediber | chad | et | achad | ish | et | achiv | lemor | bo'u | na | veshim'u
 mah | hadavar
@@ -200,8 +188,7 @@ me'et | Yahweh
 
 33:31
 veyavo'u | eleikha | kimvo | am | veyeshevu | lefaneikha | ami
-veshame'u | et | devareikha
-ve'otam
+veshame'u | et | devareikha | ve'otam
 lo | ya'asu
 ki | agavim | befihem | hemah | osim
 acharei | vitz'am

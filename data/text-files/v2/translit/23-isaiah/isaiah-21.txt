@@ -1,7 +1,7 @@
 21:1
 masa | midbar | yam | kesufot | Banegev | lachalof
-mimidbar | ba
-me'eretz | nora'ah
+mimidbar | ba | me'eretz
+nora'ah
 
 21:2
 chazut | kashah
@@ -13,18 +13,16 @@ hishbati
 
 21:3
 al | ken | mal'u | matenai | chalchalah
-tzirim | achazuni
-ketzirei | yoledah
+tzirim | achazuni | ketzirei
+yoledah
 Na'aveiti | mishemoa
-Nivhalti
-mere'ot
+Nivhalti | mere'ot
 
 21:4
 ta'ah | levavi
 palatzut | bi'atateni
 et | neshef | chishki
-sam | li
-lacharadah
+sam | li | lacharadah
 
 21:5
 arokh | hashulchan | tzafoh | hatzafit
@@ -72,8 +70,7 @@ shomer | mah | mileil
 
 21:12
 amar | shomer
-atah | voker
-vegam | layelah
+atah | voker | vegam | layelah
 im | tiv'ayun | be'ayu
 shuvu | etayu
 
@@ -85,13 +82,11 @@ dedanim
 21:14
 likrat | tzame
 hetayu | mayim
-yoshevei | eretz | Teima
-belachmo
+yoshevei | eretz | Teima | belachmo
 kidemu | noded
 
 21:15
-ki | mipenei | charavot
-nadadu
+ki | mipenei | charavot | nadadu
 mipenei | cherev | netushah | umipenei | keshet | derukhah
 umipenei | koed | milchamah
 
@@ -102,7 +97,6 @@ vekhalah
 kol | kevod | Kedar
 
 21:17
-ushe'ar | mispar | keshet | giborei | venei | Kedar
-yim'atu
+ushe'ar | mispar | keshet | giborei | venei | Kedar | yim'atu
 ki | Yahweh | elohei | Yisra'el
 diber

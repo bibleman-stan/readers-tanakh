@@ -7,11 +7,9 @@ aleihon
 
 5:2
 bedayin | kamu | Zerubavel | bar | She'alti'el | Veyeshua | bar | Yotzadak
-veshariv | lemivne
-beit | elaha
+veshariv | lemivne | beit | elaha
 di | Virushelem
-ve'imehon | nevi'aiya | di | elaha
-mesa'adin | lehon
+ve'imehon | nevi'aiya | di | elaha | mesa'adin | lehon
 
 5:3
 beh | zimna | ata | aleihon | Tatenai | pachat | avar | naharah | Ushetar | Boznai
@@ -22,8 +20,7 @@ ve'usharna | denah | leshakhlalah
 
 5:4
 edayin | kenema
-amarna | lehom
-man | inun | shemahat | guvraiya
+amarna | lehom | man | inun | shemahat | guvraiya
 di | denah | vinyana | banayin
 
 5:5
@@ -47,15 +44,12 @@ Ledareyavesh | malka | shelama | khola
 
 5:8
 yedia | leheve | lemalka | di | azalna | Lihud | medineta | leveit | elaha | raba
-vehu | mitbene | even | gelal
-ve'a | mitesam | bekhutlaiya
-va'avidta | dakh | aseparna | mit'avda
-umatzlach | beyedhom
+vehu | mitbene | even | gelal | ve'a | mitesam | bekhutlaiya
+va'avidta | dakh | aseparna | mit'avda | umatzlach | beyedhom
 
 5:9
-edayin | she'elena | lesavaiya | ilekh
-kenema | amarna | lehom
-man | sam | lekhom | te'em | bayta | denah | lemivneyah
+edayin | she'elena | lesavaiya | ilekh | kenema
+amarna | lehom | man | sam | lekhom | te'em | bayta | denah | lemivneyah
 ve'usharna | denah | leshakhlalah
 
 5:10
@@ -73,16 +67,15 @@ veshakhleleh
 5:12
 lahen | min | di | hargizu | avohotana | le'elah | shemaiya
 yehav | himo
-beyad | Nevukhadnetzar | melekh | Bavel
-kasdaya | uvaytah | denah | satreh
+beyad | Nevukhadnetzar | melekh | Bavel | kasdaya
+uvaytah | denah | satreh
 ve'amah
 hagli | Levavel
 
 5:13
-beram | bishnat | chadah
-Lekhoresh | malka | di | Vavel
-Koresh | malka | sam | te'em | beit | elaha | denah
-libene
+beram | bishnat | chadah | Lekhoresh | malka
+di | Vavel | Koresh | malka | sam | te'em
+beit | elaha | denah | libene
 
 5:14
 ve'af | manaiya | di | veit | elaha | di | dahavah | vekhaspa
@@ -95,9 +88,9 @@ di | fechah
 sameh
 
 5:15
-va'amar | leh | eleh | manaiya | se | ezel | achet | himo | beheikhela
-di | Virushelem
-uveit | elaha
+va'amar | leh | eleh | manaiya
+se | ezel | achet | himo | beheikhela
+di | Virushelem | uveit | elaha
 yitbene | al | atreh
 
 5:16

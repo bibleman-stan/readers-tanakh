@@ -7,20 +7,16 @@ lifnei | hamelekh
 
 6:2
 vaiyimatze | khatuv | asher | higid | Maredokhai | al | Bigtana | Vateresh | shenei | sarisei | hamelekh
-mishomerei | hasaf | asher | bikshu | lishloach | yad
-bamelekh
+mishomerei | hasaf | asher | bikshu | lishloach | yad | bamelekh
 Achashveroosh
 
 6:3
-vaiyomer | hamelekh
-mah | Na'asah | yekar | ugedulah | Lemaredokhai
-al | zeh
-vaiyomeru | na'arei | hamelekh | mesharetav
+vaiyomer | hamelekh | mah | Na'asah | yekar | ugedulah | Lemaredokhai
+al | zeh | vaiyomeru | na'arei | hamelekh | mesharetav
 lo | Na'asah | imo | davar
 
 6:4
-vaiyomer | hamelekh
-mi | vechatzer
+vaiyomer | hamelekh | mi | vechatzer
 Vehaman | ba | lachatzar | beit | hamelekh | hachitzonah
 lemor | lamelekh
 litlot | et | Maredokhai
@@ -29,15 +25,14 @@ asher | hekhin | lo
 
 6:5
 vaiyomeru | na'arei | hamelekh | elav
-hineh | Haman
-omed | bechatzer
+hineh | Haman | omed | bechatzer
 vaiyomer | hamelekh
 yavo
 
 6:6
 vaiyavo | Haman
-vaiyomer | lo | hamelekh
-mah | la'asot | ba'ish | asher | hamelekh
+vaiyomer | lo | hamelekh | mah | la'asot
+ba'ish | asher | hamelekh
 chafetz | bikaro
 vaiyomer | Haman | belibo
 lemi | yachpotz | hamelekh | la'asot | yekar
@@ -53,8 +48,7 @@ chafetz | bikaro
 yavi'u | levush | malkhut | asher | lavash | bo
 hamelekh
 vesus | asher | rakhav | alav | hamelekh
-va'asher | Nitan | keter | malkhut
-berosho
+va'asher | Nitan | keter | malkhut | berosho
 
 6:9
 venaton | halevush | vehasus | al | yad | ish | misarei | hamelekh | hapartemim
@@ -69,8 +63,7 @@ chafetz | bikaro
 vaiyomer | hamelekh | Lehaman | maher | kach | et | halevush | ve'et | hasus | ka'asher | dibarta
 va'aseh | khen | Lemaredokhai | haiyehudi
 haiyoshev | besha'ar | hamelekh
-al | tapel | davar
-mikol | asher | dibarta
+al | tapel | davar | mikol | asher | dibarta
 
 6:11
 vaiyikach | Haman | et | halevush | ve'et | hasus
@@ -91,8 +84,7 @@ vachafui | rosh
 vaysaper | Haman | Lezeresh | ishto | ulekhol | ohavav | et
 kol | asher | karahu
 vaiyomeru | lo | chakhamav | Vezeresh | ishto | im | mizera | haiyehudim | Maredokhai | asher | hachilota | linpol | lefanav | lo | tukhal | lo
-ki | nafol | tipol
-lefanav
+ki | nafol | tipol | lefanav
 
 6:14
 odam | medaberim | imo

@@ -4,30 +4,23 @@ ushemah | Keturah
 
 25:2
 vateled | lo | et | Zimran | ve'et | Yakeshan
-ve'et | Medan
-ve'et | Midyan
-ve'et | Yishbak
-ve'et | Shuach
+ve'et | Medan | ve'et | Midyan | ve'et | Yishbak | ve'et | Shuach
 
 25:3
 Veyakeshan | yalad | et | Sheva
 ve'et | Dedan | uvenei | Dedan
-hayu | ashurim | Uletushim
-Ule'umim
+hayu | ashurim | Uletushim | Ule'umim
 
 25:4
-uvenei | Midyan | Eifah | Va'efer | Vachanokh
-Va'avida
+uvenei | Midyan | Eifah | Va'efer | Vachanokh | Va'avida
 Ve'elda'ah
 kol | eleh | benei | Keturah
 
 25:5
-vaiyiten | Avraham | et | kol | asher | lo
-Leyitzchak
+vaiyiten | Avraham | et | kol | asher | lo | Leyitzchak
 
 25:6
-velivnei | hapilagshim | asher | Le'avraham | natan | Avraham
-matanot
+velivnei | hapilagshim | asher | Le'avraham | natan | Avraham | matanot
 vayshalechem | me'al | Yitzchak | beno | be'odenu | chai
 kedemah
 el | eretz | kedem
@@ -39,8 +32,7 @@ vechamesh | shanim
 
 25:8
 vaiyigva | vaiyamot | Avraham | beseivah | tovah
-zaken | vesavea
-vaiye'asef
+zaken | vesavea | vaiye'asef
 el | amav
 
 25:9
@@ -50,8 +42,7 @@ Hamakhpelah
 el | sedeh | Efron | ben | Tzochar | hachiti | asher | al | penei | Mamre
 
 25:10
-hasadeh | asher | kanah | Avraham
-me'et | benei | Chet
+hasadeh | asher | kanah | Avraham | me'et | benei | Chet
 shamah | kubar | Avraham
 Vesarah | ishto
 
@@ -68,8 +59,7 @@ ben | Avraham | asher | yaldah | Hagar | hamitzrit | shifchat | Sarah
 Le'avraham
 
 25:13
-ve'eleh | shemot | benei | Yishma'el
-bishmotam | letoldotam
+ve'eleh | shemot | benei | Yishma'el | bishmotam | letoldotam
 bekhor | Yishma'el | Nevayot
 Vekedar | Ve'adbe'el | Umivsam
 
@@ -84,8 +74,7 @@ Vakedemah
 25:16
 eleh | hem | benei | Yishma'el | ve'eleh | shemotam
 bechatzreihem | uvetirotam
-sheneim | asar | nesi'im
-le'umotam
+sheneim | asar | nesi'im | le'umotam
 
 25:17
 ve'eleh | shenei | chaiyei | Yishma'el
@@ -103,15 +92,13 @@ nafal
 
 25:19
 ve'eleh | toldot | Yitzchak
-ben | Avraham
-Avraham
+ben | Avraham | Avraham
 holid | et | Yitzchak
 
 25:20
 vayhi | Yitzchak | ben | arba'im | shanah
 bekachto | et | Rivkah | bat | Betu'el | ha'arami | Mipadan | Aram
-achot | Lavan | ha'arami
-lo | le'ishah
+achot | Lavan | ha'arami | lo | le'ishah
 
 25:21
 vaiye'tar | Yitzchak | Layahweh | lenokhach | ishto
@@ -123,7 +110,8 @@ Rivkah | ishto
 
 25:22
 vaiyitrotzatzu | habanim | bekirbah
-vatomer | im | ken | lamah | zeh
+vatomer | im | ken
+lamah | zeh
 anokhi
 vatelekh
 lidrosh | et | Yahweh
@@ -132,19 +120,15 @@ lidrosh | et | Yahweh
 vaiyomer | Yahweh | lah | shenei | goyim | bevitnekh
 ushenei | le'umim | mime'ayikh | yiparedu
 ule'om | mil'om | ye'ematz
-verav
-ya'avod | tza'ir
+verav | ya'avod | tza'ir
 
 25:24
-vaiyimle'u | yameiha
-laledet
-vehineh | tomim
-bevitnah
+vaiyimle'u | yameiha | laledet
+vehineh | tomim | bevitnah
 
 25:25
 vaiyetze | harishon | admoni
-kulo | ke'aderet | se'ar
-vaiyikre'u | shemo
+kulo | ke'aderet | se'ar | vaiyikre'u | shemo
 Esav
 
 25:26
@@ -157,16 +141,14 @@ beledet | otam
 25:27
 vaiyigdelu | hane'arim
 vayhi | Esav | ish | yodea | tzayid
-ish | sadeh
-Veya'ako | ish | tam
+ish | sadeh | Veya'ako | ish | tam
 yoshev
 ohalim
 
 25:28
 vaiye'ehav | Yitzchak | et | Esav
 ki | tzayid | befiv
-Verivkah
-ohevet | et | Ya'ako
+Verivkah | ohevet | et | Ya'ako
 
 25:29
 vaiyazed | Ya'ako
@@ -183,19 +165,16 @@ Edom
 
 25:31
 vaiyomer
-Ya'ako
-mikhrah | khaiyom | et | bekhoratekha | li
+Ya'ako | mikhrah | khaiyom | et | bekhoratekha | li
 
 25:32
 vaiyomer | Esav
-hineh | anokhi | holekh
-lamut | velamah | zeh | li | bekhorah
+hineh | anokhi | holekh | lamut | velamah | zeh | li | bekhorah
 
 25:33
 vaiyomer | Ya'ako | hishave'ah | li | kaiyom
-vaiyishava
-lo | vaiyimkor | et | bekhorato
-Leya'ako
+vaiyishava | lo
+vaiyimkor | et | bekhorato | Leya'ako
 
 25:34
 Veya'ako | natan | Le'esav | lechem | unezid | adashim

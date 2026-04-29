@@ -8,8 +8,7 @@ hakol | lifneihem
 9:2
 hakol | ka'asher | lakol | mikreh | echad | latzadik | velarasha | latov | velara | velatahor | velatame
 velazoveach | vela'asher
-einenu | zoveach
-katov | kachote
+einenu | zoveach | katov | kachote
 hanishba | ka'asher
 shevu'ah | yare
 
@@ -24,8 +23,8 @@ el | hametim
 ki | mi | asher | yibacher
 el | kol | hachaiyim
 yesh | bitachon
-ki | lekhelev | chai | hu | tov
-min | ha'aryeh | hamet
+ki | lekhelev | chai | hu | tov | min | ha'aryeh
+hamet
 
 9:5
 ki | hachaiyim | yod'im
@@ -48,8 +47,7 @@ ratzah | ha'elohim
 et | ma'aseikha
 
 9:8
-bekhol | et | yihyu | vegadeikha
-levanim
+bekhol | et | yihyu | vegadeikha | levanim
 veshemen
 al | roshekha | al | yechsar
 
@@ -76,8 +74,7 @@ yikreh | et | kulam
 9:12
 ki | gam | lo | yeda | ha'adam | et | ito | kadagim | shene'echazim | bimtzodah | ra'ah
 vekhatztziporim
-ha'achuzot
-bapach
+ha'achuzot | bapach
 kahem | yukashim | benei | ha'adam
 le'et | ra'ah | keshettipol | aleihem
 pit'om
@@ -88,8 +85,8 @@ ugedolah | hi
 elai
 
 9:14
-ir | ketanah
-va'anashim | bah | me'at | uva | eleiha | melekh | gadol | vesavav | otah
+ir | ketanah | va'anashim | bah
+me'at | uva | eleiha | melekh | gadol | vesavav | otah
 uvanah | aleiha | metzodim | gedolim
 
 9:15
@@ -104,8 +101,7 @@ einam | nishma'im
 
 9:17
 divrei | chakhamim | benachat
-nishma'im
-miza'akat | moshel | bakesilim
+nishma'im | miza'akat | moshel | bakesilim
 
 9:18
 tovah | chokhmah | mikelei | kerav

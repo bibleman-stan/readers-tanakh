@@ -1,6 +1,6 @@
 2:1
-vaiyelekh | ish
-mibeit | Levi | vaiyikach | et | bat | Levi
+vaiyelekh | ish | mibeit | Levi
+vaiyikach | et | bat | Levi
 
 2:2
 vatahar | ha'ishah
@@ -10,16 +10,14 @@ vatitzpenehu
 sheloshah | yerachim
 
 2:3
-velo | yakhelah | od | hatzefino
-vatikach | lo | tevat | gome
+velo | yakhelah | od | hatzefino | vatikach | lo | tevat | gome
 vatachmerah | vachemar | uvazafet
 vatasem | bah | et | haiyeled
 vatasem | basuf
 al | sefat | Hay'or
 
 2:4
-vatetatzav | achoto
-merachok | lede'ah | mah | ye'aseh | lo
+vatetatzav | achoto | merachok | lede'ah | mah | ye'aseh | lo
 
 2:5
 vatered | bat | par'oh | lirchotz | al | Hay'or
@@ -31,56 +29,47 @@ vatikacheha
 
 2:6
 vatiftach | vatir'ehu | et | haiyeled
-vehineh | na'ar | bokheh
-vatachmol | alav
+vehineh | na'ar | bokheh | vatachmol | alav
 vatomer | miyaldei | ha'ivrim | zeh
 
 2:7
 vatomer | achoto | el | bat | par'oh
 ha'elekh | vekarati | lokh | ishah | meineket | min
 ha'ivriyot
-veteinik | lakh
-et | haiyaled
+veteinik | lakh | et | haiyaled
 
 2:8
 vatomer | lah | bat | par'oh | lekhi
 vatelekh | ha'almah
-vatikra
-et | em | haiyaled
+vatikra | et | em | haiyaled
 
 2:9
 vatomer | lah | bat | par'oh | heilikhi | et | haiyeled | hazeh | veheinikihu | li
 va'ani
-eten | et | sekharekh
-vatikach | ha'ishah | haiyeled
+eten | et | sekharekh | vatikach | ha'ishah | haiyeled
 vatenikehu
 
 2:10
 vayigdal | haiyeled | vatevi'ehu | levat | par'oh
-vayhi | lah
-leven
+vayhi | lah | leven
 vatikra | shemo | Mosheh
 vatomer
 ki | min | hamayim | meshitihu
 
 2:11
 vayhi | baiyamim | hahem | vaiyigdal | Mosheh | vaiyetze | el | echav
-vaiyar
-besivlotam | vaiyar | ish | mitzri
-makeh | ish | ivri | me'echav
+vaiyar | besivlotam
+vaiyar | ish | mitzri | makeh | ish | ivri | me'echav
 
 2:12
 vaiyifen | koh | vakhoh
 vaiyar
-ki | ein | ish
-vaiyakh | et | hamitzri
-vaiyitmenehu
-bachol
+ki | ein | ish | vaiyakh | et | hamitzri
+vaiyitmenehu | bachol
 
 2:13
 vaiyetze | baiyom | hasheni
-vehineh | shenei | anashim | ivrim
-nitzim
+vehineh | shenei | anashim | ivrim | nitzim
 vaiyomer | larasha
 lamah | takeh
 re'ekha
@@ -88,8 +77,7 @@ re'ekha
 2:14
 vaiyomer | mi | samekha | le'ish | sar | veshofet | aleinu
 halharegeni | atah | omer | ka'asher | haragta
-et | hamitzri
-vaiyira | Mosheh | vaiyomar
+et | hamitzri | vaiyira | Mosheh | vaiyomar
 akhen | Noda | hadavar
 
 2:15
@@ -102,8 +90,7 @@ vaiyeshev | al | habe'er
 
 2:16
 ulekhohen | Midyan | sheva | banot
-vatavonah | vatidlenah | vatemalenah | et | harehatim
-lehashkot
+vatavonah | vatidlenah | vatemalenah | et | harehatim | lehashkot
 tzon | avihen
 
 2:17
@@ -114,9 +101,7 @@ vaiyashk | et | tzonam
 
 2:18
 vatavonah
-el | Re'u'el
-avihen
-vaiyomer
+el | Re'u'el | avihen | vaiyomer
 madua | miharten | bo
 haiyom
 
@@ -128,22 +113,21 @@ vaiyashk | et | hatzon
 
 2:20
 vaiyomer | el | benotav
-ve'aiyo | lamah | zeh | azavten | et | ha'ish
+ve'aiyo
+lamah | zeh | azavten | et | ha'ish
 kir'en | lo
 veyokhal | lachem
 
 2:21
 vaiyo'el | Mosheh
-lashevet | et | ha'ish | vaiyiten | et | Tziporah | vito
-Lemosheh
+lashevet | et | ha'ish | vaiyiten | et | Tziporah | vito | Lemosheh
 
 2:22
 vateled | ben
 vaiyikra | et | shemo
 Gereshom
 ki | amar
-ger | hayiti | be'eretz
-nakheriyah
+ger | hayiti | be'eretz | nakheriyah
 
 2:23
 vayhi | vaiyamim | harabim | hahem | vaiyamot | melekh | Mitzrayim
@@ -153,7 +137,8 @@ vata'al | shav'atam | el | ha'elohim | min | ha'avodah
 
 2:24
 vaiyishma | elohim | et | na'akatam
-vaiyizkor | elohim | et | berito | et | Avraham | et | Yitzchak | ve'et | Ya'ako
+vaiyizkor | elohim | et | berito | et | Avraham
+et | Yitzchak | ve'et | Ya'ako
 
 2:25
 vaiyar | elohim

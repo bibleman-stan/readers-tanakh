@@ -1,14 +1,12 @@
 3:1
 ve'eleh | hagoyim | asher | hiniach | Yahweh
 lenasot | bam
-et | Yisra'el
-et | kol | asher | lo | yade'u
-et
-kol | milchamot | Kena'an
+et | Yisra'el | et | kol | asher | lo | yade'u
+et | kol | milchamot | Kena'an
 
 3:2
-rak | lema'an | da'at | dorot | benei | Yisra'el
-lelamedam | milchamah | rak | asher | lefanim
+rak | lema'an | da'at | dorot | benei | Yisra'el | lelamedam
+milchamah | rak | asher | lefanim
 lo | yeda'um
 
 3:3
@@ -20,10 +18,8 @@ ad
 levo | Chamat
 
 3:4
-vaiyihyu
-lenasot | bam
-et | Yisra'el
-lada'at | hayishme'u | et | mitzvot | Yahweh
+vaiyihyu | lenasot | bam
+et | Yisra'el | lada'at | hayishme'u | et | mitzvot | Yahweh
 asher | tzivah | et | avotam | beyad | Mosheh
 
 3:5
@@ -35,21 +31,18 @@ vehayvusi
 
 3:6
 vaiyikchu | et | benoteihem | lahem | lenashim
-ve'et | benoteihem
-natenu | livneihem
+ve'et | benoteihem | natenu | livneihem
 vaiya'avdu | et | eloheihem
 
 3:7
 vaiya'asu | venei | Yisra'el | et | hara | be'einei | Yahweh
-vaiyishkechu
-et | Yahweh | eloheihem
+vaiyishkechu | et | Yahweh | eloheihem
 vaiya'avdu | et | habe'alim
 ve'et | ha'asherot
 
 3:8
 vaiyichar | af | Yahweh | Beyisra'el
-vaiyimkerem | beyad | Kushan | Rish'atayim
-melekh
+vaiyimkerem | beyad | Kushan | Rish'atayim | melekh
 Aram | Naharayim
 vaiya'avdu | venei | Yisra'el | et | Kushan | Rish'atayim
 shemoneh | shanim
@@ -64,8 +57,9 @@ hakaton | mimenu
 3:10
 vatehi | alav | ruach | Yahweh | vaiyishpot | et | Yisra'el
 vaiyetze | lamilchamah
-vaiyiten | Yahweh | beyado | et | Kushan | Rish'atayim | melekh | Aram
-vata'oz | yado | al | Kushan | Rish'atayim
+vaiyiten | Yahweh | beyado | et | Kushan | Rish'atayim
+melekh | Aram | vata'oz | yado | al
+Kushan | Rish'atayim
 
 3:11
 vatishkot | ha'aretz
@@ -83,8 +77,7 @@ be'einei | Yahweh
 
 3:13
 vaiye'esof | elav | et | benei | Amon
-Va'amalek
-vaiyelekh | vaiyakh | et | Yisra'el
+Va'amalek | vaiyelekh | vaiyakh | et | Yisra'el
 vaiyireshu | et | ir | hatemarim
 
 3:14
@@ -96,36 +89,30 @@ vaiyiz'aku | venei | Yisra'el | el | Yahweh
 vaiyakem | Yahweh | lahem | moshia | et | Ehud | ben | Gera | ben | haymini
 ish | iter
 yad | yemino
-vaiyishlechu | venei | Yisra'el | beyado | minchah
-Le'eglon | melekh | Mo'av
+vaiyishlechu | venei | Yisra'el | beyado | minchah | Le'eglon
+melekh | Mo'av
 
 3:16
 vaiya'as | lo | Ehud | cherev | velah | shenei | feyot
 gomed | arekah
-vaiyachgor | otah | mitachat | lemadav
-al
+vaiyachgor | otah | mitachat | lemadav | al
 yerekh | yemino
 
 3:17
-vaiyakrev | et | haminchah
-Le'eglon | melekh | Mo'av
+vaiyakrev | et | haminchah | Le'eglon | melekh | Mo'av
 Ve'eglon
 ish | bari | me'od
 
 3:18
-vayhi | ka'asher | kilah
-lehakriv
-et | haminchah
-vayshalach | et | ha'am
-nose'ei
+vayhi | ka'asher | kilah | lehakriv
+et | haminchah | vayshalach | et | ha'am | nose'ei
 haminchah
 
 3:19
 vehu | shav | min | hapesilim | asher | et | Hagilgal
 vaiyomer
 devar | seter | li | eleikha
-hamelekh
-vaiyomer | has
+hamelekh | vaiyomer | has
 vaiyetze'u | me'alav
 kol | ha'omedim
 alav
@@ -140,11 +127,9 @@ me'al | hakise
 
 3:21
 vaiyishlach | Ehud | et | yad | semolo
-vaiyikach | et | hacherev
-me'al
+vaiyikach | et | hacherev | me'al
 yerekh | yemino
-vaiyitka'eha
-bevitno
+vaiyitka'eha | bevitno
 
 3:22
 vaiyavo | gam | hanitzav | achar | halahav | vaiyisgor | hachelev | be'ad | halahav
@@ -153,23 +138,20 @@ haparshedonah
 
 3:23
 vaiyetze | Ehud
-hamisderonah
-vaiyisgor | daltot | ha'aliyah | ba'ado
+hamisderonah | vaiyisgor | daltot | ha'aliyah | ba'ado
 vena'al
 
 3:24
 vehu | yatza | va'avadav | ba'u
 vaiyir'u
-vehineh | daltot | ha'aliyah
-ne'ulot
+vehineh | daltot | ha'aliyah | ne'ulot
 vaiyomeru
 akh | mesikh | hu | et | raglav | bachadar | hamekerah
 
 3:25
 vaiyachilu | ad | boosh
 vehineh | einenu | foteach
-daltot | ha'aliyah
-vaiyikchu | et | hamafteach | vaiyiftachu
+daltot | ha'aliyah | vaiyikchu | et | hamafteach | vaiyiftachu
 vehineh | adoneihem
 nofel | artzah
 met
@@ -192,8 +174,7 @@ vehu | lifneihem
 vaiyomer | alehem | ridfu | acharai | ki | natan | Yahweh | et | oyeveikhem | et | Mo'av
 beyedkhem
 vaiyeredu | acharav | vaiyilkedu | et | ma'berot | Haiyarden | Lemo'av
-velo | natenu | ish
-la'avor
+velo | natenu | ish | la'avor
 
 3:29
 vaiyaku | et | Mo'av | ba'et | hahi | ka'aseret | alafim | ish
@@ -210,7 +191,5 @@ shemonim | shanah
 
 3:31
 ve'acharav | hayah | Shamgar | ben | Anat
-vaiyakh | et | pelishtim | shesh | me'ot | ish
-bemalmad
-habakar
-vaiyosha | gam | hu | et | Yisra'el
+vaiyakh | et | pelishtim | shesh | me'ot | ish | bemalmad
+habakar | vaiyosha | gam | hu | et | Yisra'el

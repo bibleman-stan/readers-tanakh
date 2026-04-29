@@ -1,7 +1,6 @@
 4:1
 ve'atah | ven | adam | kach | lekha | levenah
-venatatah | otah
-lefaneikha
+venatatah | otah | lefaneikha
 vechakota | aleiha | ir
 et | Yerushalim
 
@@ -13,8 +12,8 @@ venatatah | aleiha | machanot | vesim | aleiha | karim | saviv
 
 4:3
 ve'atah | kach | lekha | machavat | barzel
-venatatah | otah | kir | barzel
-beinekha | uvein | ha'ir
+venatatah | otah | kir | barzel | beinekha
+uvein | ha'ir
 vahakhinotah | et | paneikha | eleiha | vehayetah | vamatzor | vetzarta | aleiha
 ot | hi
 leveit | Yisra'el
@@ -31,14 +30,12 @@ et | avonam
 va'ani | natati | lekha | et | shenei | avonam
 lemispar | yamim
 shelosh | me'ot | vetish'im
-yom
-venasata
+yom | venasata
 avon | beit | Yisra'el
 
 4:6
 vekhilita | et | eleh | veshakhavta | al | tzidekha | haymoni | shenit
-venasata
-et | avon | beit | Yehudah
+venasata | et | avon | beit | Yehudah
 arba'im | yom
 yom | lashanah | yom | lashanah
 netativ | lakh
@@ -58,29 +55,22 @@ yemei | metzurekha
 
 4:9
 ve'atah | kach | lekha | chitin | use'orim | ufol | va'adashim | vedochan | vekhusemim | venatatah | otam | bikhli | echad
-ve'asita | otam | lekha
-lelachem
+ve'asita | otam | lekha | lelachem
 mispar | haiyamim | asher | atah | shokhev | al | tzidekha | shelosh | me'ot | vetish'im | yom
 tokhalenu
 
 4:10
-uma'akhalekha | asher | tokhalenu
-bemishkol
-esrim | shekel
-laiyom | me'et | ad | et
+uma'akhalekha | asher | tokhalenu | bemishkol
+esrim | shekel | laiyom | me'et | ad | et
 tokhalenu
 
 4:11
 umayim | bimsurah | tishteh
-shishit | hahin | me'et | ad | et
-tishteh
+shishit | hahin | me'et | ad | et | tishteh
 
 4:12
-ve'ugat | se'orim
-tokhalenah
-vehi | begelei | tze'at | ha'adam
-te'ugenah
-le'eineihem
+ve'ugat | se'orim | tokhalenah
+vehi | begelei | tze'at | ha'adam | te'ugenah | le'eineihem
 
 4:13
 vaiyomer | Yahweh
@@ -90,15 +80,13 @@ sham
 
 4:14
 va'omar | ahah | Adonai | Yahweh
-hineh | nafshi
-lo | metuma'ah
-unevelah | uterefah | lo | akhalti | mine'urai | ve'ad | atah | velo | va | befi
-besar | pigul
+hineh | nafshi | lo | metuma'ah
+unevelah | uterefah | lo | akhalti | mine'urai | ve'ad | atah
+velo | va | befi | besar | pigul
 
 4:15
 vaiyomer | elai
-re'eh | natati | lekha | et | tzefu'ei | habakar
-tachat
+re'eh | natati | lekha | et | tzefu'ei | habakar | tachat
 gelei | ha'adam
 ve'asita | et | lachmekha
 aleihem
@@ -109,7 +97,6 @@ ve'akhelu | lechem | bemishkal | uvid'agah | umayim | bimsurah | uveshimamon
 yishtu
 
 4:17
-lema'an | yachseru
-lechem | vamayim
+lema'an | yachseru | lechem | vamayim
 venashamu | ish | ve'achiv
 venamaku | ba'avonam

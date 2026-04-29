@@ -1,15 +1,13 @@
 8:1
 baiyom | hahu | natan | hamelekh | Achashverovosh | Le'ester | hamalkah
-et | beit | Haman
-tzorer | haiyehudiyim
+et | beit | Haman | tzorer | haiyehudiyim
 Umaredokhai | ba | lifnei | hamelekh
 ki | higidah | Ester
 mah | hu | lah
 
 8:2
 vaiyasar | hamelekh | et | taba'to | asher | he'evir | Mehaman
-vaiyitenah
-Lemaredokhai
+vaiyitenah | Lemaredokhai
 vatasem | Ester | et | Maredokhai
 al | beit | Haman
 
@@ -23,8 +21,7 @@ al | haiyehudim
 
 8:4
 vaiyooshet | hamelekh | Le'ester | et
-sharvit | hazahav
-vatakom | Ester
+sharvit | hazahav | vatakom | Ester
 vata'amod
 lifnei | hamelekh
 
@@ -35,15 +32,12 @@ yikatev | lehashiv | et | hasefarim | machashevet | Haman | ben | Hamedata | ha'
 asher | katav | le'abed | et | haiyehudim | asher | bekhol | medinot | hamelekh
 
 8:6
-ki | eikhakhah | ukhal | vera'iti
-bara'ah
+ki | eikhakhah | ukhal | vera'iti | bara'ah
 asher | yimtza | et | ami
-ve'eikhakhah | ukhal | vera'iti
-be'avedan | moladti
+ve'eikhakhah | ukhal | vera'iti | be'avedan | moladti
 
 8:7
-vaiyomer | hamelekh | Achashverosh | Le'ester | hamalkah
-Ulemaredokhai
+vaiyomer | hamelekh | Achashverosh | Le'ester | hamalkah | Ulemaredokhai
 haiyehudi
 hineh | veit | Haman | natati | Le'ester | ve'oto | talu | al | ha'etz
 al | asher | shalach | yado | baiyehudiyim
@@ -74,8 +68,7 @@ haramakhim
 asher | natan | hamelekh | laiyehudim | asher | bekhol | ir | va'ir | lehikahel | vela'amod | al | nafsham
 lehashmid | velaharog | ule'abed | et | kol | cheil | am | umedinah | hatzarim | otam
 taf | venashim
-ushelalam
-lavoz
+ushelalam | lavoz
 
 8:12
 beyom | echad | bekhol | medinot | hamelekh | Achashveroosh
@@ -96,8 +89,7 @@ Beshushan | habirah
 
 8:15
 Umaredokhai | yatza | milifnei | hamelekh | bilvush | malkhut | tekhelet | vachur
-va'ateret | zahav | gedolah
-vetakhrikh | butz
+va'ateret | zahav | gedolah | vetakhrikh | butz
 ve'argaman
 veha'ir | Shushan
 tzahalah

@@ -1,8 +1,8 @@
 33:1
-ho | shoded | ve'atah | lo | shadud
-uvoged | velo | vagedu | vo
-kahatimkha | shoded | tushad
-kanelotekha | livgod | yivgedu | vakh
+ho | shoded | ve'atah | lo | shadud | uvoged
+velo | vagedu | vo
+kahatimkha | shoded | tushad | kanelotekha | livgod
+yivgedu | vakh
 
 33:2
 Yahweh | chanenu
@@ -14,8 +14,7 @@ mikol | hamon | nadedu | amim | meromutekha | nafetzu
 goyim
 
 33:4
-ve'usaf | shelalkhem
-osef
+ve'usaf | shelalkhem | osef
 hechasil | kemashak | gevim
 shokek | bo
 
@@ -27,8 +26,7 @@ utzedakah
 33:6
 vehayah | emunat | iteikha
 chosen | yeshu'ot
-chakhemat | vada'at
-yir'at | Yahweh
+chakhemat | vada'at | yir'at | Yahweh
 hi | otzaro
 
 33:7
@@ -39,8 +37,7 @@ yivkayun
 
 33:8
 Nashamu | mesilot
-shavat
-over | orach
+shavat | over | orach
 hefer | berit | ma'as | arim
 lo | chashav
 enoosh
@@ -76,11 +73,10 @@ ude'u | kerovim
 gevurati
 
 33:14
-pachadu | Vetziyon | chata'im
-achazah | re'adah
+pachadu | Vetziyon | chata'im | achazah | re'adah
 chanefim
-mi | yagur | lanu | esh | okhelah
-mi | yagur | lanu | mokdei | olam
+mi | yagur | lanu | esh | okhelah | mi | yagur | lanu
+mokdei | olam
 
 33:15
 holekh | tzedakot
@@ -90,8 +86,8 @@ otem | azeno | mishemoa | damim
 ve'otzem | einav | mere'ot | bera
 
 33:16
-hu | meromim | yishkon
-metzadot | sela'im | misgabo | lachmo | nitan
+hu | meromim | yishkon | metzadot | sela'im
+misgabo | lachmo | nitan
 meimav | ne'emanim
 
 33:17
@@ -101,8 +97,7 @@ eretz | marchakim
 33:18
 libekha | yehgeh | eimah
 aiyeh | sofer | aiyeh | shokel
-aiyeh
-sofer | et | hamigdalim
+aiyeh | sofer | et | hamigdalim
 
 33:19
 et | am | no'az
@@ -125,8 +120,8 @@ lo | ya'avrenu
 
 33:22
 ki | Yahweh | shofetenu
-Yahweh
-mechokekenu | Yahweh | malkenu
+Yahweh | mechokekenu
+Yahweh | malkenu
 hu | yoshi'enu
 
 33:23

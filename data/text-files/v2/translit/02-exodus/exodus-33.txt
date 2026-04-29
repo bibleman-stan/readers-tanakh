@@ -1,7 +1,6 @@
 33:1
 vaydaber | Yahweh | el | Mosheh | lekh | aleh | mizeh
-atah | veha'am | asher | he'elita
-me'eretz | Mitzrayim
+atah | veha'am | asher | he'elita | me'eretz | Mitzrayim
 el | ha'aretz | asher | Nishba'ti | Le'avraham | Leyitzchak | Uleya'ako | lemor
 lezar'akha | ettenenah
 
@@ -45,8 +44,7 @@ yetze | el | ohel | mo'ed | asher | michutz | lamachaneh
 vehayah | ketzet | Mosheh | el | ha'ohel
 yakumu | kol | ha'am
 venitzevu
-ish
-petach | oholo
+ish | petach | oholo
 vehibitu | acharei | Mosheh
 ad | bo'o
 ha'ohelah
@@ -54,14 +52,12 @@ ha'ohelah
 33:9
 vehayah | kevo | Mosheh | ha'ohelah
 yered | amud | he'anan
-ve'amad
-petach | ha'ohel
+ve'amad | petach | ha'ohel
 vediber
 im | Mosheh
 
 33:10
-vera'ah | khol | ha'am | et | amud | he'anan
-omed
+vera'ah | khol | ha'am | et | amud | he'anan | omed
 petach | ha'ohel
 vekam | kol | ha'am | vehishtachavu
 ish
@@ -73,22 +69,18 @@ ka'asher | yedaber | ish
 el | re'ehu
 veshav | el | hamachaneh
 umeshareto | Yehoshua | bin | Nun | na'ar
-lo | yamish
-mitokh | ha'ohel
+lo | yamish | mitokh | ha'ohel
 
 33:12
 vaiyomer | Mosheh | el | Yahweh | re'eh | atah | omer | elai | ha'al | et | ha'am | hazeh
-ve'atah | lo | hoda'tani
-et | asher | tishlach
-imi
-ve'atah | amarta | yeda'tikha | veshem
+ve'atah | lo | hoda'tani | et | asher | tishlach
+imi | ve'atah | amarta | yeda'tikha | veshem
 vegam | matzata | chen | be'einai
 
 33:13
 ve'atah | im | na | matzati | chen | be'eineikha | hodi'eni | na | et | derakhekha
 ve'eda'akha
-lema'an | emtza | chen
-be'eineikha
+lema'an | emtza | chen | be'eineikha
 ure'eh
 ki | amekha
 hagoy | hazeh
@@ -113,8 +105,7 @@ venifleinu | ani | ve'amekha | mikol | ha'am | asher | al | penei | ha'adamah
 vaiyomer | Yahweh | el | Mosheh
 gam | et | hadavar | hazeh | asher | dibarta
 e'eseh
-ki | matzata | chen | be'einai
-va'eda'akha | beshem
+ki | matzata | chen | be'einai | va'eda'akha | beshem
 
 33:18
 vaiyomar
@@ -123,8 +114,7 @@ et | kevodekha
 
 33:19
 vaiyomer | ani | a'avir | kol | tuvi | al | paneikha
-vekarati | veshem | Yahweh
-lefaneikha
+vekarati | veshem | Yahweh | lefaneikha
 vechanoti | et | asher | achon
 verichamti
 et | asher | arachem
@@ -152,6 +142,5 @@ ad | averi
 33:23
 vahasiroti | et | kapi
 vera'ita
-et | achorai
-ufanai
+et | achorai | ufanai
 lo | yera'u

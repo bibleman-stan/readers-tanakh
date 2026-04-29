@@ -1,6 +1,5 @@
 13:1
-vaiyiva'atz | David | im | sarei | ha'alafim | vehame'ot
-lekhol | nagid
+vaiyiva'atz | David | im | sarei | ha'alafim | vehame'ot | lekhol | nagid
 
 13:2
 vaiyomer | David | lekhol | kehal | Yisra'el | im | aleikhem | tov | umin | Yahweh | eloheinu | nifretzah | nishlechah | al | acheinu | hanish'arim | bekhol | artzot | Yisra'el
@@ -18,8 +17,7 @@ la'asot | ken
 ki | yashar | hadavar | be'einei | khol | ha'am
 
 13:5
-vaiyakhel | David | et | kol | Yisra'el
-min | Shichor | Mitzrayim
+vaiyakhel | David | et | kol | Yisra'el | min | Shichor | Mitzrayim
 ve'ad | levo | Chamat | lehavi | et | aron | ha'elohim
 Mikiryat | Ye'arim
 
@@ -30,8 +28,8 @@ leha'alot | misham | et | aron | ha'elohim | Yahweh | yoshev | hakeruvim
 asher | Nikra | shem
 
 13:7
-vaiyarkivu | et | aron | ha'elohim | al | agalah | chadashah
-mibeit | Avinadav
+vaiyarkivu | et | aron | ha'elohim | al | agalah | chadashah | mibeit
+Avinadav
 Ve'uza | Ve'achyo
 nohagim | ba'agalah
 
@@ -56,23 +54,19 @@ lifnei | elohim
 
 13:11
 vaiyichar | Ledavid
-ki | faratz | Yahweh | peretz
-Be'uza
+ki | faratz | Yahweh | peretz | Be'uza
 vaiyikra | lamakom | hahu | Peretz | Uza
 ad
 haiyom | hazeh
 
 13:12
-vaiyira | David | et | ha'elohim
-baiyom | hahu
-lemor
+vaiyira | David | et | ha'elohim | baiyom | hahu | lemor
 heikh | avi | elai | et
 aron | ha'elohim
 
 13:13
 velo | hesir | David | et | ha'aron | elav
-el | ir | David
-vaiyatehu
+el | ir | David | vaiyatehu
 el | beit | Oed | Edom
 hagiti
 

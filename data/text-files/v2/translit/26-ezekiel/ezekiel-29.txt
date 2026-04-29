@@ -22,8 +22,8 @@ va'ani | asitini
 venatati | chachiyim | bilchayeikha
 vehidbakti | degat | ye'oreikha | bekaskesoteicha
 veha'alitikha | mitokh | ye'oreikha
-ve'et | kol | degat | ye'oreikha
-bekaskesoteicha | tidbak
+ve'et | kol | degat | ye'oreikha | bekaskesoteicha
+tidbak
 
 29:5
 unetashtikha | hamidbarah | otkha | ve'et | kol | degat | ye'oreikha
@@ -41,8 +41,7 @@ ya'an | heyotam | mish'enet | kaneh
 leveit | Yisra'el
 
 29:7
-betafesam | bekha | vakafkha | terotz
-uvaka'ta | lahem
+betafesam | bekha | vakafkha | terotz | uvaka'ta | lahem
 kol | katef
 uvehisha'anam | aleikha | tishaver
 veha'amadta | lahem
@@ -56,16 +55,15 @@ vehikhrati | mimekh
 adam | uvehemah
 
 29:9
-vehayetah | eretz | Mitzrayim | lishmamah | vecharebah
-veyade'u
+vehayetah | eretz | Mitzrayim | lishmamah | vecharebah | veyade'u
 ki | ani | Yahweh
 ya'an | amar | Ye'or | li
 va'ani | asiti
 
 29:10
-lakhen | hini | eleikha
-ve'el | ye'oreikha
-venatati | et | eretz | Mitzrayim | lecharevot | chorev | shemamah | Mimigdol | Seveneh
+lakhen | hini | eleikha | ve'el | ye'oreikha
+venatati | et | eretz | Mitzrayim | lecharevot | chorev | shemamah
+Mimigdol | Seveneh
 ve'ad | gevul | Kush
 
 29:11
@@ -83,8 +81,8 @@ vezeritim | ba'aratzot
 29:13
 ki | koh | amar
 Adonai | Yahweh
-miketz | arba'im | shanah | akabetz | et | Mitzrayim
-min | ha'amim | asher | Nafotzu | shamah
+miketz | arba'im | shanah | akabetz | et | Mitzrayim | min | ha'amim
+asher | Nafotzu | shamah
 
 29:14
 veshavti | et | shevut | Mitzrayim
@@ -95,8 +93,7 @@ al | eretz | mekhuratam | vehayu | sham | mamlakhah | shefalah
 min | hamamlakhot | tihyeh | shefalah
 velo | titnase | od
 al | hagoyim
-vehim'atim
-levilti
+vehim'atim | levilti
 redot | bagoyim
 
 29:16
@@ -107,8 +104,8 @@ ki | ani
 Adonai | Yahweh
 
 29:17
-vayhi | be'esrim | vasheva | shanah
-barishon | be'echad | lachodesh | hayah | devar | Yahweh
+vayhi | be'esrim | vasheva | shanah | barishon
+be'echad | lachodesh | hayah | devar | Yahweh
 elai | lemor
 
 29:18
@@ -122,12 +119,11 @@ asher | avad | aleiha
 lakhen | koh | amar | Adonai | Yahweh
 hini | noten | Linvukhadretzar | melekh | Bavel | et | eretz | Mitzrayim
 venasa | hamonah | veshalal | shelalah | uvazaz | bizah
-vehayetah | sakhar
-lecheilo
+vehayetah | sakhar | lecheilo
 
 29:20
-pe'ulato | asher | avad | bah
-natati | lo | et | eretz | Mitzrayim | asher | asu | li
+pe'ulato | asher | avad | bah | natati | lo
+et | eretz | Mitzrayim | asher | asu | li
 ne'um
 Adonai | Yahweh
 

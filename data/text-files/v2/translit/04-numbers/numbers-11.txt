@@ -4,12 +4,12 @@ ra
 be'azenei | Yahweh
 vaiyishma | Yahweh | vaiyichar | apo
 vativ'ar | bam | esh | Yahweh
-vatokhal | biktzeh | hamachaneh
+vatokhal
+biktzeh | hamachaneh
 
 11:2
 vaiyitz'ak | ha'am
-el | Mosheh
-vaiyitpalel | Mosheh | el | Yahweh
+el | Mosheh | vaiyitpalel | Mosheh | el | Yahweh
 vatishka
 ha'esh
 
@@ -25,16 +25,14 @@ hit'avu
 ta'avah
 vaiyashuvu | vaiyivku | gam | benei | Yisra'el
 vaiyomeru
-mi | ya'akhilenu
-basar
+mi | ya'akhilenu | basar
 
 11:5
 zakharnu | et | hadagah
 asher | nokhal | Bemitzrayim
 chinam
 et | hakishu'im | ve'et | ha'avatichim
-ve'et | hechatzir | ve'et | habetzalim
-ve'et | hashumim
+ve'et | hechatzir | ve'et | habetzalim | ve'et | hashumim
 
 11:6
 ve'atah | nafshenu | yeveshah | ein | kol | bilti
@@ -53,9 +51,7 @@ ugot
 vehayah | ta'mo | keta'am | leshad | hashamen
 
 11:9
-uveredet | hatal | al | hamachaneh
-layelah
-yered | haman
+uveredet | hatal | al | hamachaneh | layelah | yered | haman
 alav
 
 11:10
@@ -76,8 +72,7 @@ he'anokhi | hariti | et | kol | ha'am | hazeh
 im | anokhi
 yelidtihu
 ki | tomar | elai | sa'ehu | vecheikecha | ka'asher | yisa | ha'omen | et | haiyonek
-al | ha'adamah | asher | Nishba'ta
-la'avotav
+al | ha'adamah | asher | Nishba'ta | la'avotav
 
 11:13
 me'ayin | li | basar | latet | lekhol | ha'am | hazeh
@@ -86,15 +81,13 @@ tenah | lanu | vasar
 venokhelah
 
 11:14
-lo | ukhal | anokhi | levadi
-laset
+lo | ukhal | anokhi | levadi | laset
 et | kol | ha'am | hazeh
 ki | khaved | mimeni
 
 11:15
 ve'im | kakhah | at | oseh | li | haregeni | na | harog
-im | matzati | chen | be'eineikha
-ve'al | er'eh | bera'ati
+im | matzati | chen | be'eineikha | ve'al | er'eh | bera'ati
 
 11:16
 vaiyomer | Yahweh | el | Mosheh | esfah | li | shiv'im | ish | miziknei | Yisra'el
@@ -108,8 +101,8 @@ imakh
 veyaradti | vedibarti | imekha | sham
 ve'atzalti | min | haruach | asher | aleikha
 vesamti | aleihem
-venase'u | itekha | bemasa | ha'am | velo | tisa | atah
-levadekha
+venase'u | itekha | bemasa | ha'am
+velo | tisa | atah | levadekha
 
 11:18
 ve'el | ha'am | tomar | hitkadeshu | lemachar | va'akhaltem | basar
@@ -126,17 +119,15 @@ esrim | yom
 
 11:20
 ad | chodesh | yamim | ad | asher | yetze | me'apekhem
-vehayah | lakhem
-lezara
+vehayah | lakhem | lezara
 ya'an | ki | me'astem | et | Yahweh | asher | bekirbekhem
-vativku | lefanav | lemor | lamah | zeh
-yatzanu | Mimitzrayim
+vativku | lefanav | lemor
+lamah | zeh | yatzanu | Mimitzrayim
 
 11:21
 vaiyomer | Mosheh
 shesh | me'ot | elef | ragli
-ha'am | asher | anokhi
-bekirbo
+ha'am | asher | anokhi | bekirbo
 ve'atah | amarta | basar | eten | lahem
 ve'akhelu
 chodesh | yamim
@@ -174,16 +165,13 @@ velo | yasafu
 11:26
 vaiyisha'aru | shenei | anashim | bamachaneh | shem | ha'echad | Eldad | veshem | hasheni | Meidad | vatanach | aleihem | haruach | vehemah | baketuvim
 velo | yatze'u
-ha'ohelah
-vaiyitnabe'u
-bamachaneh
+ha'ohelah | vaiyitnabe'u | bamachaneh
 
 11:27
 vaiyarotz | hana'ar
 vaiyaged | Lemosheh
 vaiyomar
-Eldad | Umeidad
-mitnabe'im | bamachaneh
+Eldad | Umeidad | mitnabe'im | bamachaneh
 
 11:28
 vaiya'an | Yehoshua | bin | Nun | mesharet | Mosheh | mibechurav
@@ -224,19 +212,15 @@ habasar | odenu | bein | shineihem
 terem
 yikaret
 ve'af | Yahweh | charah | va'am
-vaiyakh | Yahweh | ba'am
-makah
+vaiyakh | Yahweh | ba'am | makah
 rabah | me'od
 
 11:34
 vaiyikra | et | shem | hamakom | hahu
 Kivrot | Hata'avah
 ki | sham | kaveru
-et | ha'am
-hamit'avim
+et | ha'am | hamit'avim
 
 11:35
-Mikivrot | Hata'avah | nase'u | ha'am
-Chatzerot
-vaiyihyu
+Mikivrot | Hata'avah | nase'u | ha'am | Chatzerot | vaiyihyu
 Bachatzerot

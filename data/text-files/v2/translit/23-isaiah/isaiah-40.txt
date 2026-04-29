@@ -9,23 +9,19 @@ daberu | al | lev | Yerushalim | vekir'u | eleiha
 ki | mal'ah | tzeva'ah
 ki | Nirtzah
 avonah
-ki | lakechah | miyad | Yahweh
-kiflayim | bekhol | chatoteiha
+ki | lakechah | miyad | Yahweh | kiflayim | bekhol | chatoteiha
 
 40:3
 kol | kore | bamidbar
 panu
 derekh | Yahweh
-yasheru | ba'aravah
-mesilah | leloheinu
+yasheru | ba'aravah | mesilah | leloheinu
 
 40:4
 kol | gei | yinase
-vekhol | har | vegiv'ah
-yishpalu
+vekhol | har | vegiv'ah | yishpalu
 vehayah | he'ako | lemishor
-veharekhasim
-levik'ah
+veharekhasim | levik'ah
 
 40:5
 veniglah
@@ -57,16 +53,14 @@ yakum | le'olam
 40:9
 al | har | gavoha | ali | lokh | mevaseret | Tziyon
 harimi | vakoach | kolekh | mevaseret | Yerushalim
-harimi | al | tira'i
-imri | le'arei | Yehudah
+harimi | al | tira'i | imri | le'arei | Yehudah
 hineh | eloheikhem
 
 40:10
 hineh | Adonai | Yahweh | bechazak | yavo
 uzero'o | moshelah | lo
 hineh | sekharo | ito
-ufe'ulato
-lefanav
+ufe'ulato | lefanav
 
 40:11
 kero'eh | edro | yir'eh | bizro'o | yekabetz | tela'im
@@ -83,14 +77,12 @@ veshakal | bapeles | harim
 ugeva'ot | bemozenayim
 
 40:13
-mi | tiken | et | ruach | Yahweh
-ve'ish | atzato
-yodi'enu
+mi | tiken | et | ruach | Yahweh | ve'ish | atzato | yodi'enu
 
 40:14
 et | mi | no'atz | vayvinehu
-vaylamedehu
-be'orach | mishpat | vaylamedehu | da'at
+vaylamedehu | be'orach | mishpat
+vaylamedehu | da'at
 vederekh | tevunot
 yodi'enu
 
@@ -108,12 +100,13 @@ olah
 40:17
 kol | hagoyim
 ke'ayin | negdo
-me'efes | vatohu | Nechshevu | lo
+me'efes | vatohu
+Nechshevu | lo
 
 40:18
 ve'el | mi
-tedameyun | el
-umah | demut | ta'arkhu | lo
+tedameyun | el | umah | demut
+ta'arkhu | lo
 
 40:19
 hapesel | nasakh | charash
@@ -124,8 +117,7 @@ tzoref
 
 40:20
 hamsukan | terumah
-etz | lo | yirkav
-yivchar
+etz | lo | yirkav | yivchar
 charash | chakham | yevakesh | lo
 lehakhin | pesel
 lo | yimot
@@ -136,15 +128,11 @@ halo | hugad | merosh | lakhem
 halo | havinotem | mosdot | ha'aretz
 
 40:22
-haiyoshev | al | chug | ha'aretz
-veyosheveiha
-kachagavim
-hanoteh | khadok | shamayim | vaiyimtachem | ka'ohel
-lashavet
+haiyoshev | al | chug | ha'aretz | veyosheveiha | kachagavim
+hanoteh | khadok | shamayim | vaiyimtachem | ka'ohel | lashavet
 
 40:23
-hanoten | roznim
-le'ayin
+hanoten | roznim | le'ayin
 shofetei | eretz
 katohu | asah
 
@@ -172,18 +160,14 @@ ish
 lo | ne'dar
 
 40:27
-lamah | tomar | Ya'ako
-utedaber
-Yisra'el
-Nisterah | darki | Meyahweh
-ume'elohai
+lamah | tomar | Ya'ako | utedaber | Yisra'el
+Nisterah | darki | Meyahweh | ume'elohai
 mishpati | ya'avor
 
 40:28
 halo | yada'ta | im | lo | shama'ta | elohei | olam | Yahweh | bore | ketzot | ha'aretz
 lo | yi'af
-velo | yiga | ein | cheker
-litvunato
+velo | yiga | ein | cheker | litvunato
 
 40:29
 noten | laiya'ef | koach
@@ -192,13 +176,12 @@ atzemah | yarbeh
 
 40:30
 veyi'afu | ne'arim
-veyiga'u
-uvachurim
+veyiga'u | uvachurim
 kashol | yikashelu
 
 40:31
 vekoye | Yahweh | yachalifu | khoach
-ya'alu | ever
-kanesharim | yarutzu | velo | yiga'u
+ya'alu | ever | kanesharim
+yarutzu | velo | yiga'u
 yelekhu
 velo | yi'afu

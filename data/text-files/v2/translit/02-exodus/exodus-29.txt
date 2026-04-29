@@ -6,28 +6,22 @@ temimim
 
 29:2
 velechem | matzot | vechalot | matzot | belulot | bashemen
-urekikei | matzot | meshuchim | bashamen
-solet | chitim
+urekikei | matzot | meshuchim | bashamen | solet | chitim
 ta'aseh | otam
 
 29:3
 venatata | otam | al | sal | echad | vehikravta | otam
-basal
-ve'et | hapar
-ve'et
+basal | ve'et | hapar | ve'et
 shenei | ha'eilim
 
 29:4
 ve'et | Aharon | ve'et | banav | takriv
-el | petach
-ohel | mo'ed | verachatzta | otam | bamayim
+el | petach | ohel | mo'ed | verachatzta | otam | bamayim
 
 29:5
 velakachta | et | habegadim | vehilbashta | et | Aharon | et | hakutonet
 ve'et | me'il | ha'efod
-ve'et | ha'efod
-ve'et | hachoshen
-ve'afadta | lo | becheshev
+ve'et | ha'efod | ve'et | hachoshen | ve'afadta | lo | becheshev
 ha'efod
 
 29:6
@@ -42,8 +36,7 @@ al | rosho | umashachta
 oto
 
 29:8
-ve'et | banav
-takriv
+ve'et | banav | takriv
 vehilbashtam | kutonot
 
 29:9
@@ -53,21 +46,18 @@ lechukat | olam | umileta | yad | Aharon
 veyad | banav
 
 29:10
-vehikravta | et | hapar
-lifnei
+vehikravta | et | hapar | lifnei
 ohel | mo'ed | vesamakh | Aharon | uvanav | et | yedeihem
 al | rosh | hapar
 
 29:11
 veshachata | et | hapar
 lifnei | Yahweh
-petach
-ohel | mo'ed
+petach | ohel | mo'ed
 
 29:12
-velakachta | midam | hapar
-venatatah | al | karnot | hamizbeach | be'etzba'ekha
-ve'et | kol | hadam | tishpokh
+velakachta | midam | hapar | venatatah | al | karnot | hamizbeach
+be'etzba'ekha | ve'et | kol | hadam | tishpokh
 el | yesod
 hamizbeach
 
@@ -80,10 +70,8 @@ vehiktarta
 hamizbechah
 
 29:14
-ve'et | besar | hapar | ve'et | oro | ve'et | pirsho
-tisrof | ba'esh
-michutz
-lamachaneh
+ve'et | besar | hapar | ve'et | oro | ve'et | pirsho | tisrof | ba'esh
+michutz | lamachaneh
 chatat
 hu
 
@@ -95,29 +83,23 @@ al | rosh | ha'ayil
 
 29:16
 veshachata
-et | ha'ayil | velakachta | et | damo
-vezarakta | al | hamizbeach | saviv
+et | ha'ayil | velakachta | et | damo | vezarakta | al | hamizbeach | saviv
 
 29:17
-ve'et | ha'ayil
-tenateach
-lintachav
-verachatzta | kirbo | ukhera'av
-venatata | al | netachav
+ve'et | ha'ayil | tenateach | lintachav
+verachatzta | kirbo | ukhera'av | venatata | al | netachav
 ve'al | rosho
 
 29:18
 vehiktarta | et | kol | ha'ayil | hamizbechah
-olah | hu
-Layahweh
+olah | hu | Layahweh
 reiach | nichoach
 isheh | Layahweh
 hu
 
 29:19
 velakachta
-et
-ha'ayil | hasheni
+et | ha'ayil | hasheni
 vesamakh | Aharon | uvanav | et | yedeihem
 al | rosh | ha'ayil
 
@@ -138,8 +120,7 @@ ito
 
 29:22
 velakachta | min | ha'ayil | hachelev | veha'alyah | ve'et | hachelev | hamkhaseh | et | hakerev | ve'et | yoteret | hakaved | ve'et | shetei | hakelayot | ve'et | hachelev | asher | alehen
-ve'et
-shok | haiyamin
+ve'et | shok | haiyamin
 ki | eil | milu'im | hu
 
 29:23
@@ -157,39 +138,33 @@ lifnei | Yahweh
 velakachta | otam | miyadam | vehiktarta | hamizbechah
 al | ha'olah
 lereiach | nichoach | lifnei | Yahweh
-isheh | hu
-Layahweh
+isheh | hu | Layahweh
 
 29:26
 velakachta | et | hechazeh | me'eil | hamilu'im | asher | Le'aharon
 vehenafta | oto | tenufah
 lifnei | Yahweh
-vehayah | lekha
-lemanah
+vehayah | lekha | lemanah
 
 29:27
 vekidashta | et | chazeh | hatenufah | ve'et | shok | haterumah
-asher | hunaf
-va'asher | huram | me'eil | hamilu'im | me'asher | Le'aharon | ume'asher | levanav
+asher | hunaf | va'asher | huram
+me'eil | hamilu'im | me'asher | Le'aharon | ume'asher | levanav
 
 29:28
 vehayah | Le'aharon | ulevanav | lechok | olam | me'et | benei | Yisra'el
 ki | terumah
 hu
 uterumah | yihyeh | me'et | benei | Yisra'el | mizivchei | shalmeihem
-terumatam
-Layahweh
+terumatam | Layahweh
 
 29:29
 uvigdei | hakodesh | asher | Le'aharon | yihyu | levanav
-acharav
-lemashechah | vahem | ulemale | vam
-et | yadam
+acharav | lemashechah | vahem | ulemale | vam | et | yadam
 
 29:30
-shiv'at | yamim | yilbasham | hakohen | tachtav
-mibanav | asher | yavo | el | ohel | mo'ed
-lesharet | bakodesh
+shiv'at | yamim | yilbasham | hakohen | tachtav | mibanav
+asher | yavo | el | ohel | mo'ed | lesharet | bakodesh
 
 29:31
 ve'et | eil | hamilu'im
@@ -198,8 +173,7 @@ tikach | uvishalta | et | besaro | bemakom | kadosh
 29:32
 ve'akhal | Aharon | uvanav | et | besar | ha'ayil
 ve'et | halechem | asher | basal
-petach
-ohel | mo'ed
+petach | ohel | mo'ed
 
 29:33
 ve'akhelu | otam | asher | kupar | bahem
@@ -224,8 +198,7 @@ temale | yadam
 29:36
 ufar | chatat | ta'aseh | laiyom | al | hakipurim
 vechiteta | al | hamizbeach | bekhaperkha
-alav | umashachta | oto
-lekadesho
+alav | umashachta | oto | lekadesho
 
 29:37
 shiv'at | yamim | tekhaper | al | hamizbeach
@@ -241,8 +214,7 @@ al | hamizbeach | kevasim | benei | shanah | shenayim | laiyom
 tamid
 
 29:39
-et | hakeves | ha'echad
-ta'aseh | vaboker
+et | hakeves | ha'echad | ta'aseh | vaboker
 ve'et | hakeves | hasheni
 ta'aseh
 bein | ha'arbayim
@@ -251,8 +223,7 @@ bein | ha'arbayim
 ve'isaron | solet | balul | beshemen | katit | reva | hahin
 venesekh
 revi'it | hahin
-yayin
-lakeves | ha'echad
+yayin | lakeves | ha'echad
 
 29:41
 ve'et | hakeves | hasheni
@@ -260,8 +231,7 @@ ta'aseh
 bein | ha'arbayim
 keminchat | haboker | ukheniskah | ta'aseh | lah
 lereiach | nichoach
-isheh
-Layahweh
+isheh | Layahweh
 
 29:42
 olat | tamid | ledoroteikhem
@@ -277,8 +247,7 @@ venikdash | bikhvodi
 
 29:44
 vekidashti | et | ohel | mo'ed | ve'et | hamizbeach
-ve'et | Aharon | ve'et | banav | akadesh
-lekhahen | li
+ve'et | Aharon | ve'et | banav | akadesh | lekhahen | li
 
 29:45
 veshakhanti | betokh

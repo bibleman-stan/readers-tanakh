@@ -10,10 +10,8 @@ ufi | lo | sha'alu
 la'oz | bema'oz | par'oh | velachsot | betzel | Mitzrayim
 
 30:3
-vehayah | lakhem | ma'oz | par'oh
-levoshet
-vehechasut | betzel | Mitzrayim
-likhlimah
+vehayah | lakhem | ma'oz | par'oh | levoshet
+vehechasut | betzel | Mitzrayim | likhlimah
 
 30:4
 ki | hayu | Vetzo'an
@@ -37,16 +35,14 @@ lo | yo'ilu
 30:7
 Umitzrayim
 hevel | varik
-ya'zoru
-lakhen | karati | lazot
+ya'zoru | lakhen | karati | lazot
 Rahav | hem
 shavet
 
 30:8
 atah | bo | khatevah | al | luach | itam
 ve'al | sefer | chukah
-utehi | leyom | acharon
-la'ad
+utehi | leyom | acharon | la'ad
 ad | olam
 
 30:9
@@ -55,8 +51,7 @@ lo | avu | shemoa
 torat | Yahweh
 
 30:10
-asher | ameru | laro'im | lo | tir'u
-velachozim
+asher | ameru | laro'im | lo | tir'u | velachozim
 lo | techezu | lanu
 nekhochot
 daberu | lanu | chalakot
@@ -77,20 +72,18 @@ alav
 lakhen | yihyeh | lakhem | he'avon | hazeh
 keferetz | nofel | niv'eh
 bechomah | nisgavah
-asher | pit'om | lefeta
-yavo | shivrah
+asher | pit'om | lefeta | yavo | shivrah
 
 30:14
 ushevarah | keshever | nevel | yotzrim | katut
 lo | yachmol
-velo | yimatze | vimkhitato | cheres
-lachtot | esh | miyakud | velachsof | mayim | migeve
+velo | yimatze | vimkhitato | cheres | lachtot | esh | miyakud
+velachsof | mayim | migeve
 
 30:15
 ki | khoh | amar | Adonai | Yahweh | kedoosh | Yisra'el | beshuvah | vanachat | tivashe'un
 behashket | uvevitchah | tihyeh
-gevuratkhem | velo
-avitem
+gevuratkhem | velo | avitem
 
 30:16
 vatomeru | lo | khi | al | sus | nanus
@@ -112,30 +105,27 @@ ashrei
 kol | chokhei | lo
 
 30:19
-ki | am | Betziyon | yeshev
-Birushalim
+ki | am | Betziyon | yeshev | Birushalim
 bakho | lo | tivkeh | chanon | yachenekha | lekol | za'akecha
 keshame'ato
 anakh
 
 30:20
-venatan | lakhem | Adonai | lechem | tzar | umayim | lachatz
-velo | yikanef | od | moreikha | vehayu | eineikha
+venatan | lakhem | Adonai | lechem | tzar
+umayim | lachatz | velo | yikanef | od | moreikha
+vehayu | eineikha
 ro'ot | et | moreikha
 
 30:21
-ve'azeneikha | tishma'nah | davar
-me'achareikha | lemor
+ve'azeneikha | tishma'nah | davar | me'achareikha | lemor
 zeh | haderekh | lekhu | vo
 ki | ta'aminu
 vekhi | tasme'ilu
 
 30:22
-vetimetem | et | tzipui | pesilei | khaspekha
-ve'et | afudat | masekhat | zehavekha
-tizrem | kemo | davah
-tze
-tomar | lo
+vetimetem | et | tzipui | pesilei | khaspekha | ve'et | afudat
+masekhat | zehavekha | tizrem | kemo | davah
+tze | tomar | lo
 
 30:23
 venatan | metar | zar'akha | asher | tizra | et | ha'adamah | velechem | tevu'at | ha'adamah
@@ -151,14 +141,11 @@ asher | zoreh | varachat | uvamizreh
 
 30:25
 vehayah | al | kol | har | gavoha | ve'al | kol | giv'ah | nisa'ah
-pelagim
-yivlei | mayim
-beyom | hereg | rav | binfol | migdalim
+pelagim | yivlei | mayim | beyom | hereg | rav | binfol | migdalim
 
 30:26
 vehayah | or | halevanah | ke'or | hachamah
-ve'or | hachamah | yihyeh | shiv'atayim
-ke'or
+ve'or | hachamah | yihyeh | shiv'atayim | ke'or
 shiv'at | haiyamim
 beyom | chavosh | Yahweh | et | shever | amo
 umachatz | makato | yirpa
@@ -178,21 +165,18 @@ lechayei | amim
 hashir | yihyeh | lakhem
 keleil
 hitkadesh | chag
-vesimchat | levav | kaholekh | bechalil
-lavo | vehar | Yahweh
+vesimchat | levav | kaholekh | bechalil | lavo | vehar | Yahweh
 el | tzur | Yisra'el
 
 30:30
 vehishmia | Yahweh | et | hod | kolo | venachat | zero'o | yar'eh
 beza'af | af | velahav
 esh | okhelah
-nefetz | vazerem
-ve'even | barad
+nefetz | vazerem | ve'even | barad
 
 30:31
 ki | mikol | Yahweh
-yechat | Ashur
-bashevet
+yechat | Ashur | bashevet
 yakeh
 
 30:32
@@ -206,5 +190,4 @@ Nilcham | bam
 ki | arukh | me'etmul | tafeteh
 gam | hu | lamelekh | hukhan
 he'mik | hirchiv | meduratah | esh | ve'etzim | harbeh
-nishmat | Yahweh | kenachal | gaferit
-bo'arah | bah
+nishmat | Yahweh | kenachal | gaferit | bo'arah | bah

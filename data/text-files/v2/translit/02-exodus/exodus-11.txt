@@ -1,11 +1,9 @@
 11:1
 vaiyomer | Yahweh | el | Mosheh | od | nega | echad | avi | al | par'oh | ve'al | Mitzrayim
 acharei | khen
-yeshalach | etkhem
-mizeh | keshalecho
+yeshalach | etkhem | mizeh | keshalecho
 kalah
-garesh | yegaresh | etkhem
-mizeh
+garesh | yegaresh | etkhem | mizeh
 
 11:2
 daber | na
@@ -15,17 +13,15 @@ kelei | khesef
 ukhelei | zahav
 
 11:3
-vaiyiten | Yahweh | et | chen | ha'am
-be'einei | Mitzrayim
+vaiyiten | Yahweh | et | chen | ha'am | be'einei | Mitzrayim
 gam | ha'ish | Mosheh | gadol | me'od | be'eretz | Mitzrayim
 be'einei | avdei | far'oh | uve'einei | ha'am
 
 11:4
-vaiyomer | Mosheh
-koh | amar | Yahweh
+vaiyomer | Mosheh | koh
+amar | Yahweh
 kachatzot | halaylah
-ani | yotze
-betokh | Mitzrayim
+ani | yotze | betokh | Mitzrayim
 
 11:5
 umet | kol | bekhor | be'eretz | Mitzrayim | mibekhor | par'oh | haiyoshev | al | kis'o
@@ -33,9 +29,9 @@ ad | bekhor | hashifchah | asher | achar | harechayim
 vekhol | bekhor | behemah
 
 11:6
-vehayetah | tze'akah | gedolah
-bekhol | eretz | Mitzrayim | asher | kamohu | lo | Nihyatah
-vekhamohu | lo | tosif
+vehayetah | tze'akah | gedolah | bekhol | eretz | Mitzrayim
+asher | kamohu | lo | Nihyatah | vekhamohu
+lo | tosif
 
 11:7
 ulekhol | benei | Yisra'el | lo | yecheratz | kelev | leshono
@@ -48,15 +44,12 @@ uvein | Yisra'el
 11:8
 veyaredu | khol | avadeikha | eleh | elai | vehishtachavu | li | lemor | tze | atah | vekhol | ha'am | asher | beragleikha
 ve'acharei | khen
-etze
-vaiyetze | me'im | par'oh
-bochori | af
+etze | vaiyetze | me'im | par'oh | bochori | af
 
 11:9
 vaiyomer | Yahweh | el | Mosheh
 lo | yishma | aleikhem
-par'oh
-lema'an | revot | moftai | be'eretz | Mitzrayim
+par'oh | lema'an | revot | moftai | be'eretz | Mitzrayim
 
 11:10
 Umosheh | Ve'aharon | asu | et | kol | hamofetim | ha'eleh

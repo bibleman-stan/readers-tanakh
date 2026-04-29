@@ -12,8 +12,7 @@ hah | laiyom
 
 30:3
 ki | karov | yom
-vekarov | yom
-Layahweh
+vekarov | yom | Layahweh
 yom | anan
 et | goyim
 yihyeh
@@ -31,8 +30,7 @@ itam
 bacherev | yipolu
 
 30:6
-koh | amar | Yahweh
-venafelu | somekhei | Mitzrayim
+koh | amar | Yahweh | venafelu | somekhei | Mitzrayim
 veyarad
 ge'on | uzah
 Mimigdol | Seveneh | bacherev | yipelu | vah
@@ -49,8 +47,7 @@ tihyeinah
 30:8
 veyade'u
 ki | ani | Yahweh
-betiti | esh | Bemitzrayim
-venishberu
+betiti | esh | Bemitzrayim | venishberu
 kol | ozereiha
 
 30:9
@@ -72,21 +69,19 @@ veheriku | charvotam | al | Mitzrayim | umal'u | et | ha'aretz
 chalal
 
 30:12
-venatati | ye'orim | charavah
-umakharti | et | ha'aretz | beyad | ra'im
+venatati | ye'orim | charavah | umakharti | et | ha'aretz | beyad | ra'im
 vahashimoti | eretz | umelo'ah | beyad | zarim
 ani | Yahweh
 dibarti
 
 30:13
 koh | amar | Adonai | Yahweh | veha'avadti | gilulim | vehishbati | elilim | Minof
-venasi | me'eretz | Mitzrayim | lo | yihyeh | od
-venatati | yir'ah
-be'eretz | Mitzrayim
+venasi | me'eretz | Mitzrayim
+lo | yihyeh | od
+venatati | yir'ah | be'eretz | Mitzrayim
 
 30:14
-vahashimoti | et | Patros
-venatati | esh | Betzo'an
+vahashimoti | et | Patros | venatati | esh | Betzo'an
 ve'asiti | shefatim | Beno
 
 30:15
@@ -112,18 +107,16 @@ bashevi | telakhnah
 Uvitchafneches | chasakh | haiyom | beshivri | sham | et | motot | Mitzrayim
 venishbat | bah
 ge'on | uzah
-hi | anan | yekhasenah
-uvenoteiha
+hi | anan | yekhasenah | uvenoteiha
 bashevi | telakhnah
 
 30:19
-ve'asiti | shefatim | Bemitzrayim
-veyade'u
+ve'asiti | shefatim | Bemitzrayim | veyade'u
 ki | ani | Yahweh
 
 30:20
-vayhi | be'achat | esreh | shanah
-barishon | beshiv'ah | lachodesh | hayah | devar | Yahweh
+vayhi | be'achat | esreh | shanah | barishon
+beshiv'ah | lachodesh | hayah | devar | Yahweh
 elai | lemor
 
 30:21
@@ -135,9 +128,7 @@ litpos | becharev
 30:22
 lakhen | koh | amar | Adonai | Yahweh | hini | el | par'oh | melekh | Mitzrayim
 veshavarti | et | zero'otav
-et | hachazakah
-ve'et | hanishbaret
-vehipalti | et | hacherev | miyado
+et | hachazakah | ve'et | hanishbaret | vehipalti | et | hacherev | miyado
 
 30:23
 vahafitzoti | et | Mitzrayim | bagoyim
@@ -147,8 +138,7 @@ vezeritim | ba'aratzot
 vechizakti | et | zero'ot | melekh | Bavel
 venatati | et | charbi | beyado
 veshavarti | et | zero'ot | par'oh
-vena'ak | na'akot | chalal
-lefanav
+vena'ak | na'akot | chalal | lefanav
 
 30:25
 vehachazakti | et | zero'ot | melekh | Bavel
@@ -160,6 +150,6 @@ el | eretz | Mitzrayim
 
 30:26
 vahafitzoti | et | Mitzrayim | bagoyim
-vezeriti | otam
-ba'aratzot | veyade'u
+vezeriti | otam | ba'aratzot
+veyade'u
 ki | ani | Yahweh

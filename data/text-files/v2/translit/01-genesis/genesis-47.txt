@@ -9,8 +9,8 @@ umiktzeh | echav | lakach | chamishah | anashim | vaiyatzigem
 lifnei | far'oh
 
 47:3
-vaiyomer | par'oh | el | echav
-mah | ma'aseikhem | vaiyomeru | el | par'oh | ro'eh | tzon | avadeikha
+vaiyomer | par'oh | el | echav | mah | ma'aseikhem
+vaiyomeru | el | par'oh | ro'eh | tzon | avadeikha
 gam | anachnu
 gam | avoteinu
 
@@ -23,16 +23,13 @@ be'eretz | Goshen
 
 47:5
 vaiyomer | par'oh
-el | Yosef
-lemor
-avikha | ve'acheikha
+el | Yosef | lemor | avikha | ve'acheikha
 ba'u | eleikha
 
 47:6
 eretz | Mitzrayim | lefaneikha | hi | bemeitav | ha'aretz
 hoshev | et | avikha
-ve'et | acheikha
-yeshevu | be'eretz | Goshen
+ve'et | acheikha | yeshevu | be'eretz | Goshen
 ve'im | yada'ta | veyesh | bam | anshei | chayil
 vesamtam | sarei | mikneh | al | asher | li
 
@@ -51,13 +48,11 @@ shenei | chaiyeikha
 vaiyomer | Ya'ako | el | par'oh
 yemei | shenei | megurai | sheloshim | ume'at
 shanah | me'at | vera'im | hayu | yemei | shenei | chaiyai
-velo | hisigu | et | yemei | shenei | chaiyei | avotai
-bimei | megureihem
+velo | hisigu | et | yemei | shenei | chaiyei | avotai | bimei | megureihem
 
 47:10
 vayvarekh | Ya'ako | et | par'oh
-vaiyetze
-milifnei | far'oh
+vaiyetze | milifnei | far'oh
 
 47:11
 vaiyoshev | Yosef | et | aviv | ve'et | echav
@@ -67,8 +62,7 @@ tzivah | far'oh
 
 47:12
 vaykhalkel | Yosef | et | aviv | ve'et | echav
-ve'et
-kol | beit | aviv
+ve'et | kol | beit | aviv
 lechem | lefi | hataf
 
 47:13
@@ -107,13 +101,11 @@ vaiyavo'u | elav | bashanah | hashenit | vaiyomeru | lo | lo | nekhached | me'ad
 ki | im | tam | hakesef | umikneh | habehemah
 el | adoni
 lo | Nish'ar | lifnei | adoni
-bilti | im | geviyatenu
-ve'admatenu
+bilti | im | geviyatenu | ve'admatenu
 
 47:19
 lamah | namut | le'eineikha | gam | anachnu | gam | admatenu
-keneh | otanu | ve'et | admatenu
-balachem
+keneh | otanu | ve'et | admatenu | balachem
 venihyeh | anachnu | ve'admatenu | avadim | lefar'oh
 veten | zera | venichyeh | velo | namut
 veha'adamah | lo | tesham
@@ -123,14 +115,10 @@ vaiyiken | Yosef | et | kol | admat | Mitzrayim | lefar'oh
 ki | makheru | Mitzrayim | ish | sadehu
 ki | chazak | alehem
 hara'av
-vatehi | ha'aretz
-lefar'oh
+vatehi | ha'aretz | lefar'oh
 
 47:21
-ve'et | ha'am
-he'evir | oto
-le'arim
-miktzeh | gevul | Mitzrayim
+ve'et | ha'am | he'evir | oto | le'arim | miktzeh | gevul | Mitzrayim
 ve'ad | katzehu
 
 47:22
@@ -141,38 +129,31 @@ al | ken | lo | makheru | et | admatam
 
 47:23
 vaiyomer | Yosef | el | ha'am
-hen | kaniti | etkhem | haiyom | ve'et | admatkhem
-lefar'oh
+hen | kaniti | etkhem | haiyom | ve'et | admatkhem | lefar'oh
 he | lakhem | zera
 uzera'tem
 et | ha'adamah
 
 47:24
-vehayah | batevu'ot
-unetatem | chamishit
-lefar'oh
+vehayah | batevu'ot | unetatem | chamishit | lefar'oh
 ve'arba | haiyadot | yihyeh | lakhem | lezera | hasadeh | ule'akhelekhem | vela'asher | bevateikhem
 vele'ekhol | letapekhem
 
 47:25
 vaiyomeru
-hecheyitanu
-nimtza | chen | be'einei | adoni
-vehayinu | avadim
-lefar'oh
+hecheyitanu | nimtza | chen | be'einei | adoni
+vehayinu | avadim | lefar'oh
 
 47:26
 vaiyasem | otah | Yosef | lechok | ad | haiyom | hazeh | al | admat | Mitzrayim | lefar'oh
 lachomesh
 rak | admat | hakohanim | levadam
-lo | hayetah
-lefar'oh
+lo | hayetah | lefar'oh
 
 47:27
 vaiyeshev | Yisra'el | be'eretz | Mitzrayim
 be'eretz | Goshen | vaiye'achazu | vah
-vaiyifru | vaiyirbu
-me'od
+vaiyifru | vaiyirbu | me'od
 
 47:28
 vaychi | Ya'ako | be'eretz | Mitzrayim
@@ -187,18 +168,15 @@ vaiyikra | livno | Leyosef | vaiyomer | lo | im | na | matzati | chen | be'einei
 sim | na | yadekha
 tachat | yerekhi
 ve'asita | imadi | chesed | ve'emet
-al | na | tikbereni
-Bemitzrayim
+al | na | tikbereni | Bemitzrayim
 
 47:30
-veshakhavti | im | avotai
-unesatani | Mimitzrayim | ukevartani | bikvuratam
-vaiyomar
-anokhi
-e'eseh | khidvarekha
+veshakhavti | im | avotai | unesatani | Mimitzrayim
+ukevartani | bikvuratam | vaiyomar
+anokhi | e'eseh | khidvarekha
 
 47:31
 vaiyomer | hishave'ah | li
-vaiyishava
-lo | vaiyishtachu | Yisra'el
+vaiyishava | lo
+vaiyishtachu | Yisra'el
 al | rosh | hamitah

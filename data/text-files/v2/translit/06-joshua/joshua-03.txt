@@ -6,8 +6,8 @@ vaiyalinu | sham
 terem | ya'avoru
 
 3:2
-vayhi
-miktzeh | sheloshet | yamim
+vayhi | miktzeh
+sheloshet | yamim
 vaiya'avru | hashoterim
 bekerev | hamachaneh
 
@@ -18,8 +18,7 @@ vehakohanim | halviyim
 nose'im
 oto
 ve'atem | tis'u | mimekomkhem
-vahalakhtem
-acharav
+vahalakhtem | acharav
 
 3:4
 akh | rachok | yihyeh | beineikhem | uveinov
@@ -51,22 +50,19 @@ ehyeh | imakh
 
 3:8
 ve'atah | tetzaveh | et | hakohanim
-nose'ei | aron | haberit
-lemor | kevo'akhem | ad | ketzeh | mei | Haiyarden | Baiyarden
+nose'ei | aron | haberit | lemor | kevo'akhem | ad | ketzeh | mei | Haiyarden | Baiyarden
 ta'amodu
 
 3:9
 vaiyomer | Yehoshua
 el | benei | Yisra'el
 goshu | henah | veshim'u
-et | divrei
-Yahweh | eloheikhem
+et | divrei | Yahweh | eloheikhem
 
 3:10
 vaiyomer | Yehoshua
 bezot | tede'un
-ki | el | chai
-bekirbekhem
+ki | el | chai | bekirbekhem
 vehoresh | yorish | mipeneikhem | et | hakena'ani | ve'et | hachiti | ve'et | hachivi | ve'et | haperizi | ve'et | hagirgashi
 veha'emori
 vehayvusi
@@ -74,14 +70,12 @@ vehayvusi
 3:11
 hineh | aron | haberit
 adon
-kol | ha'aretz
-over | lifneikhem | Baiyarden
+kol | ha'aretz | over | lifneikhem | Baiyarden
 
 3:12
 ve'atah | kechu | lakhem | shenei | asar | ish | mishivtei
 Yisra'el
-ish | echad | ish | echad
-lashavet
+ish | echad | ish | echad | lashavet
 
 3:13
 vehayah | kenoach | kapot | raglei | hakohanim | nose'ei | aron | Yahweh | adon | kol | ha'aretz | bemei | Haiyarden
@@ -90,10 +84,8 @@ hamayim | haiyoredim | milma'elah | veya'amdu
 ned | echad
 
 3:14
-vayhi | binsoa | ha'am | me'oholeihem
-la'avor
-et | Haiyarden
-vehakohanim | nose'ei | ha'aron | haberit
+vayhi | binsoa | ha'am | me'oholeihem | la'avor
+et | Haiyarden | vehakohanim | nose'ei | ha'aron | haberit
 lifnei | ha'am
 
 3:15
@@ -115,6 +107,5 @@ neged | Yericho
 vaiya'amdu | hakohanim | nose'ei | ha'aron | berit | Yahweh | becharavah | betokh | Haiyarden
 hakhen
 vekhol | Yisra'el | oerim | becharavah
-ad | asher | tamu | kol | hagoy
-la'avor
+ad | asher | tamu | kol | hagoy | la'avor
 et | Haiyarden

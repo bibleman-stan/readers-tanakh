@@ -2,8 +2,8 @@
 vaiyashkem | Yeruba'al | hu | Gid'on | vekhol | ha'am | asher | ito
 vaiyachanu
 al | Ein | Charod
-umachaneh | Midyan | hayah | lo | mitzafon
-migiv'at | Hamoreh | ba'emek
+umachaneh | Midyan | hayah | lo | mitzafon | migiv'at | Hamoreh
+ba'emek
 
 7:2
 vaiyomer | Yahweh | el | Gid'on
@@ -17,8 +17,7 @@ hoshi'ah | li
 ve'atah | kera | na | be'azenei | ha'am | lemor
 mi | yare | vechared | yasho | veyitzpor
 mehar | Hagil'ad
-vaiyashov | min | ha'am | esrim | ushenayim | elef
-va'aseret | alafim
+vaiyashov | min | ha'am | esrim | ushenayim | elef | va'aseret | alafim
 Nish'aru
 
 7:4
@@ -33,8 +32,7 @@ hu | lo | yelekh
 vaiyored | et | ha'am
 el | hamayim
 vaiyomer | Yahweh | el | Gid'on | kol | asher | yalok | bilshono | min | hamayim | ka'asher | yalok | hakelev | tatzig | oto | levad
-vekhol | asher | yikhra | al | birkav
-lishtot
+vekhol | asher | yikhra | al | birkav | lishtot
 
 7:6
 vayhi | mispar | hamalakim | beyadam | el | pihem
@@ -45,34 +43,31 @@ lishtot | mayim
 7:7
 vaiyomer | Yahweh | el | Gid'on | bishlosh | me'ot | ha'ish | hamalakim | oshia | etkhem
 venatati | et | Midyan | beyadekha
-vekhol | ha'am
-yelekhu
+vekhol | ha'am | yelekhu
 ish | limkomo
 
 7:8
 vaiyikchu | et | tzedah | ha'am | beyadam | ve'et | shofroteihem | ve'et | kol | ish | Yisra'el | shilach | ish | le'ohalav
 uvishlosh | me'ot | ha'ish
-hechezik | umachaneh | Midyan | hayah | lo
-mitachat | ba'emek
+hechezik | umachaneh | Midyan
+hayah | lo | mitachat | ba'emek
 
 7:9
 vayhi | balaylah | hahu
 vaiyomer | elav | Yahweh
 kum
 red | bamachaneh
-ki | netativ
-beyadekha
+ki | netativ | beyadekha
 
 7:10
-ve'im | yare | atah
-laredet
+ve'im | yare | atah | laredet
 red | atah | Ufurah | na'arkha
 el | hamachaneh
 
 7:11
 veshama'ta | mah | yedaberu | ve'achar | techezaknah | yadeikha
-veyaradta
-bamachaneh | vaiyered | hu | Ufurah | na'aro
+veyaradta | bamachaneh
+vaiyered | hu | Ufurah | na'aro
 el | ketzeh | hachamushim | asher | bamachaneh
 
 7:12
@@ -104,8 +99,8 @@ ki | natan | Yahweh | beyedkhem | et | machaneh | Midyan
 7:16
 vaiyachatz | et | shelosh | me'ot | ha'ish
 sheloshah | rashim
-vaiyiten | shofarot | beyad | kulam | vekhadim | rekim
-velapidim | betokh | hakadim
+vaiyiten | shofarot | beyad | kulam | vekhadim | rekim | velapidim
+betokh | hakadim
 
 7:17
 vaiyomer | aleihem
@@ -120,29 +115,22 @@ vetaka'ti | bashofar
 anokhi
 vekhol | asher | iti
 uteka'tem | bashofarot | gam | atem | sevivot | kol | hamachaneh
-va'amartem
-Layahweh | Ulegid'on
+va'amartem | Layahweh | Ulegid'on
 
 7:19
 vaiyavo | Gid'on | ume'ah | ish | asher | ito | biktzeh | hamachaneh | rosh | ha'ashmoret | hatikhonah
 akh | hakem | hekimu
-et | hashomerim
-vaiyitke'u | bashofarot
+et | hashomerim | vaiyitke'u | bashofarot
 venafotz | hakadim | asher | beyadam
 
 7:20
 vaiyitke'u | sheloshet | harashim | bashofarot | vaiyishberu | hakadim
-vaiyachaziku | veyad | sem'olam | balapidim
-uveyad | yeminam
-hashofarot
-litkoa
-vaiyikre'u
+vaiyachaziku | veyad | sem'olam | balapidim | uveyad | yeminam
+hashofarot | litkoa | vaiyikre'u
 cherev | Layahweh | Ulegid'on
 
 7:21
-vaiya'amdu | ish | tachtav
-saviv
-lamachaneh
+vaiya'amdu | ish | tachtav | saviv | lamachaneh
 vaiyarotz | kol | hamachaneh | vaiyari'u
 vaiyanisu
 
@@ -154,17 +142,15 @@ vaiyanos | hamachaneh | ad | Beit | Hashitah | Tzereratah
 ad | sefat | Avel | Mecholah | al | Tabat
 
 7:23
-vaiyitza'ek | ish | Yisra'el | Minaftali | umin | Asher
-umin | kol | Menasheh | vaiyirdefu
+vaiyitza'ek | ish | Yisra'el | Minaftali | umin | Asher | umin | kol | Menasheh
+vaiyirdefu
 acharei | Midyan
 
 7:24
 umal'akhim | shalach | Gid'on | bekhol | har | Efrayim | lemor | redu | likrat | Midyan | velikhdu | lahem | et | hamayim
-ad | Beit | Barah
-ve'et | Haiyarden
+ad | Beit | Barah | ve'et | Haiyarden
 vaiyitza'ek | kol | ish | Efrayim | vaiyilkedu | et | hamayim
-ad | Beit | Barah
-ve'et | Haiyarden
+ad | Beit | Barah | ve'et | Haiyarden
 
 7:25
 vaiyilkedu | shenei | sarei | Midyan | et | Orev | ve'et | Ze'ev | vaiyahargu | et | Orev | betzur | Orev | ve'et | Ze'ev | haregu | veyekev | Ze'ev

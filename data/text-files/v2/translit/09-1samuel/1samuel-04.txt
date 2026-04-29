@@ -1,6 +1,5 @@
 4:1
-vayhi | devar | Shemu'el
-lekhol | Yisra'el
+vayhi | devar | Shemu'el | lekhol | Yisra'el
 vaiyetze | Yisra'el | likrat | pelishtim | lamilchamah | vaiyachanu | al | Ha'even | Ha'ezer
 ufelishtim
 chanu | Va'afek
@@ -49,8 +48,7 @@ el | hamachaneh
 vaiyir'u | hapelishtim
 ki | ameru
 ba | elohim
-el | hamachaneh
-vaiyomeru | o | lanu
+el | hamachaneh | vaiyomeru | o | lanu
 ki | lo | hayetah | kazot
 etmol | shilshom
 
@@ -61,10 +59,8 @@ miyad | ha'elohim | ha'adirim | ha'eleh | eleh | hem | ha'elohim | hamakim | et 
 
 4:9
 hitchazeku | vihyu | la'anashim | pelishtim
-pen | ta'avdu | la'ivrim
-ka'asher | avedu | lakhem
-vihyitem | la'anashim
-venilchamtem
+pen | ta'avdu | la'ivrim | ka'asher | avedu | lakhem
+vihyitem | la'anashim | venilchamtem
 
 4:10
 vaiyilachamu | felishtim | vaiyinagef | Yisra'el | vaiyanusu | ish | le'ohalav
@@ -82,8 +78,7 @@ Ufinechas
 4:12
 vaiyarotz | ish | Binyamin | mehama'arakhah
 vaiyavo | Shiloh
-baiyom | hahu | umadav | keru'im
-va'adamah
+baiyom | hahu | umadav | keru'im | va'adamah
 al | rosho
 
 4:13
@@ -107,19 +102,17 @@ Ve'eli
 ben | tish'im | ushemoneh
 shanah
 ve'einav | kamah
-velo | yakhol
-lir'ot
+velo | yakhol | lir'ot
 
 4:16
 vaiyomer | ha'ish | el | Eli | anokhi | haba | min | hama'arakhah
-va'ani | min | hama'arakhah | nasti | haiyom
-vaiyomer | meh | hayah | hadavar
-beni
+va'ani | min | hama'arakhah
+nasti | haiyom
+vaiyomer | meh | hayah | hadavar | beni
 
 4:17
 vaiya'an | hamvaser | vaiyomer | nas | Yisra'el | lifnei | felishtim
-vegam | magefah | gedolah
-hayetah | va'am
+vegam | magefah | gedolah | hayetah | va'am
 vegam | shenei | vaneikha | metu | Chafeni | Ufinchas
 va'aron | ha'elohim
 Nilkachah
@@ -134,8 +127,7 @@ arba'im | shanah
 vekhalato | eshet | Pinechas | harah | lalat
 vatishma | et | hashemu'ah
 el | hilakach | aron | ha'elohim
-umet | chamiha
-ve'ishah
+umet | chamiha | ve'ishah
 vatikhra | vateled
 ki | Nehefkhu | aleiha
 tzireiha

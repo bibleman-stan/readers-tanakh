@@ -1,21 +1,17 @@
 17:1
 vayhi | Avram
-ben | tish'im | shanah
-vetesha | shanim
+ben | tish'im | shanah | vetesha | shanim
 vaiyera | Yahweh | el | Avram | vaiyomer | elav | ani | el | Shadai
 hithalekh | lefanai
 vehyeh | tamim
 
 17:2
 ve'etenah | veriti | beini | uveinekha
-ve'arbeh | otkha
-bim'od | me'od
+ve'arbeh | otkha | bim'od | me'od
 
 17:3
 vaiyipol | Avram
-al | panav
-vaydaber | ito | elohim
-lemor
+al | panav | vaydaber | ito | elohim | lemor
 
 17:4
 ani
@@ -27,8 +23,7 @@ hamon | goyim
 17:5
 velo | yikare | od | et | shimkha | Avram
 vehayah | shimkha | Avraham
-ki | av | hamon | goyim
-netatikha
+ki | av | hamon | goyim | netatikha
 
 17:6
 vehifreti | otekha | bim'od | me'od | unetatikha
@@ -50,8 +45,7 @@ vehayiti | lahem | lelohim
 vaiyomer | elohim | el | Avraham
 ve'atah
 et | beriti | tishmor
-atah | vezar'akha | achareikha
-ledorotam
+atah | vezar'akha | achareikha | ledorotam
 
 17:10
 zot | beriti | asher | tishmeru | beini | uveineikhem
@@ -60,26 +54,24 @@ himol | lakhem
 kol | zakhar
 
 17:11
-unemaltem
-et | besar | arelatkhem
+unemaltem | et
+besar | arelatkhem
 vehayah | le'ot | berit | beini | uveineikhem
 
 17:12
-uven | shemonat | yamim | yimol | lakhem | kol | zakhar
-ledoroteikhem | yelid | bayit
+uven | shemonat | yamim | yimol | lakhem | kol | zakhar | ledoroteikhem
+yelid | bayit
 umiknat | kesef | mikol | ben | nekhar | asher | lo | mizar'akha
 hu
 
 17:13
-himol | yimol | yelid | beitekha
-umiknat | kaspekha
+himol | yimol | yelid | beitekha | umiknat | kaspekha
 vehayetah | veriti | bivsarkhem
 livrit | olam
 
 17:14
 ve'arel | zakhar | asher | lo | yimol | et | besar | arelato
-venikhretah | hanefesh | hahiv | me'ameiha | et | beriti
-hefar
+venikhretah | hanefesh | hahiv | me'ameiha | et | beriti | hefar
 
 17:15
 vaiyomer | elohim | el | Avraham
@@ -110,8 +102,7 @@ yichyeh | lefaneikha
 
 17:19
 vaiyomer | elohim | aval | Sarah | ishtekha | yoledet | lekha | ben
-vekarata | et | shemo
-Yitzchak
+vekarata | et | shemo | Yitzchak
 vahakimoti | et | beriti | ito | livrit | olam
 lezar'o | acharav
 
@@ -123,8 +114,8 @@ unetativ
 legoy | gadol
 
 17:21
-ve'et | beriti
-akim | et | Yitzchak | asher | teled | lekha | Sarah | lamo'ed | hazeh
+ve'et | beriti | akim | et | Yitzchak
+asher | teled | lekha | Sarah | lamo'ed | hazeh
 bashanah | ha'acheret
 
 17:22
@@ -134,8 +125,7 @@ me'al | Avraham
 
 17:23
 vaiyikach | Avraham | et | Yishma'el | beno | ve'et | kol | yelidei | veito | ve'et | kol | miknat | kaspo
-kol | zakhar
-be'anshei
+kol | zakhar | be'anshei
 beit | Avraham
 vaiyamol | et | besar | arelatam | be'etzem | haiyom | hazeh
 ka'asher | diber | ito
@@ -152,10 +142,10 @@ ben | shelosh | esreh | shanah | behimolo
 et | besar | arelato
 
 17:26
-be'etzem | haiyom | hazeh | Nimol | Avraham | Veyishma'el
-beno
+be'etzem | haiyom | hazeh | Nimol | Avraham
+Veyishma'el | beno
 
 17:27
-vekhol | anshei | veito | yelid | bayit
-umiknat | kesef | me'et | ben | nekhar | Nimolu
+vekhol | anshei | veito | yelid | bayit | umiknat | kesef
+me'et | ben | nekhar | Nimolu
 ito

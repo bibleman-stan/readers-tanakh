@@ -1,6 +1,6 @@
 9:1
-bishnat | achat | Ledareyavesh | ben | Achashveroosh | mizera | Madai | asher | hamelakh
-al | malkhut | Kasdim
+bishnat | achat | Ledareyavesh | ben | Achashveroosh | mizera | Madai
+asher | hamelakh | al | malkhut | Kasdim
 
 9:2
 bishnat | achat | lemalekho
@@ -11,8 +11,7 @@ shiv'im | shanah
 
 9:3
 va'etenah | et | panai | el | Adonai | ha'elohim
-levakesh | tefilah
-vetachanunim | betzom
+levakesh | tefilah | vetachanunim | betzom
 vesak | va'efer
 
 9:4
@@ -41,9 +40,8 @@ ulekhol | Yisra'el | hakerovim | veharechokim | bekhol | ha'aratzot | asher | hi
 bema'alam | asher | ma'alu | vakh
 
 9:8
-Yahweh | lanu | boshet | hapanim
-limlakheinu | lesareinu | vela'avoteinu | asher | chatanu
-lakh
+Yahweh | lanu | boshet | hapanim | limlakheinu | lesareinu
+vela'avoteinu | asher | chatanu | lakh
 
 9:9
 Ladonai | eloheinu
@@ -53,14 +51,12 @@ ki | maradnu | bo
 
 9:10
 velo | shama'nu | bekol | Yahweh | eloheinu
-lalekhet | betorotav | asher | natan | lefaneinu
-beyad
+lalekhet | betorotav | asher | natan | lefaneinu | beyad
 avadav | hanevi'im
 
 9:11
 vekhol | Yisra'el | averu | et | toratekha
-vesor
-levilti
+vesor | levilti
 shemoa | bekolecha
 vatitakh | aleinu | ha'alah | vehashevu'ah | asher | ketuvah | betorat | Mosheh | eved | ha'elohim
 ki | chatanu | lo
@@ -69,8 +65,7 @@ ki | chatanu | lo
 vaiyakem | et | devarav | asher | diber | aleinu | ve'al | shofeteinu | asher | shefatunu
 lehavi | aleinu
 ra'ah | gedolah | asher | lo | Ne'estah | tachat | kol | hashamayim
-ka'asher | Ne'estah
-Birushalim
+ka'asher | Ne'estah | Birushalim
 
 9:13
 ka'asher | katuv | betorat | Mosheh
@@ -98,15 +93,13 @@ Adonai | kekhol | tzidkotecha | yashov | na | apekha | vachamatekha
 me'irekha | Yerushalim
 har | kodshecha
 ki | vachata'einu | uva'avonot | avoteinu
-Yerushalim | ve'amekha | lecherpah
-lekhol | sevivoteinu
+Yerushalim | ve'amekha | lecherpah | lekhol | sevivoteinu
 
 9:17
 ve'atah | shema | eloheinu | el | tefilat | avdekha | ve'el | tachanunav
 veha'er | paneikha
 al | mikdashecha
-hashamem
-lema'an | Adonai
+hashamem | lema'an | Adonai
 
 9:18
 hateh | elohai | azenekha | ushama
@@ -131,8 +124,7 @@ ve'al | amekha
 ve'od | ani | medaber | umitpalel | umitvadeh | chatati
 vechatat
 ami | Yisra'el
-umapil | techinati | lifnei | Yahweh | elohai
-al
+umapil | techinati | lifnei | Yahweh | elohai | al
 har | kodesh | elohai
 
 9:21
@@ -146,8 +138,7 @@ vaiyaven
 vaydaber | imi
 vaiyomar
 Daniyel
-atah | yatzati
-lehaskilekha | vinah
+atah | yatzati | lehaskilekha | vinah
 
 9:23
 bitchilat | tachanuneikha | yatza | davar | va'ani | bati | lehagid
@@ -158,8 +149,8 @@ vehaven | bamar'eh
 9:24
 shavu'im | shiv'im | Nechtakh | al | amekha | ve'al | ir | kodshecha | lekhale | hapesha | ulachtom | chata'ot | ulekhaper | avon
 ulehavi
-tzedek | olamim | velachtom | chazon | venavi | velimshoach
-kodesh | kadashim
+tzedek | olamim
+velachtom | chazon | venavi | velimshoach | kodesh | kadashim
 
 9:25
 veteda | vetaskel | min | motza | davar | lehashiv | velivnot | Yerushalim | ad | mashiach | nagid

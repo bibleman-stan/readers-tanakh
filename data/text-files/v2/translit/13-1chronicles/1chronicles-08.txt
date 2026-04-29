@@ -11,10 +11,8 @@ Verafa
 hachamishi
 
 8:3
-vaiyihyu | vanim
-Levala
-Adar | Vegera
-Va'avihud
+vaiyihyu | vanim | Levala
+Adar | Vegera | Va'avihud
 
 8:4
 Va'avishua | Vena'aman
@@ -44,19 +42,15 @@ nashav
 
 8:9
 vaiyoled
-min | Chodesh | ishto | et | Yovav | ve'et | Tzivya
-ve'et | Meisha
-ve'et | Malkam
+min | Chodesh | ishto
+et | Yovav | ve'et | Tzivya | ve'et | Meisha | ve'et | Malkam
 
 8:10
-ve'et | Ye'utz | ve'et | Sakheyah
-ve'et | Mirmah
-eleh | vanav
+ve'et | Ye'utz | ve'et | Sakheyah | ve'et | Mirmah | eleh | vanav
 rashei | avot
 
 8:11
-Umechushim | holid | et | Avituv
-ve'et | Elpa'al
+Umechushim | holid | et | Avituv | ve'et | Elpa'al
 
 8:12
 uvenei | Elpa'al
@@ -81,8 +75,7 @@ Uzevadyah | Va'arad
 Va'ader
 
 8:16
-Umikha'el | Veyishpah | Veyocha
-benei | Veri'ah
+Umikha'el | Veyishpah | Veyocha | benei | Veri'ah
 
 8:17
 Uzevadyah | Umeshulam
@@ -135,13 +128,13 @@ yashevu | Virushalim
 
 8:29
 Uvegiv'on | yashevu | Ye'u'el | avi | Giv'on
-veshem | ishto
-Ma'akhah
+veshem | ishto | Ma'akhah
 
 8:30
 uveno | habekhor
 Avdon
-Vetzur | Vekish | Uva'al | Vener | Venadav
+Vetzur | Vekish
+Uva'al | Vener | Venadav
 
 8:31
 Ugedor | Ve'achyo
@@ -158,29 +151,25 @@ Vener | holid | et | Kish
 Vekish
 holid | et | Sha'ul
 Vesha'ul | holid | et | Yehonatan | ve'et | Malki | Shua
-ve'et | Avinadav
-ve'et | Eshba'al
+ve'et | Avinadav | ve'et | Eshba'al
 
 8:34
 uven | Yehonatan | Meriv | Ba'al | Umeriv | Ba'al
 holid | et | Mikhah
 
 8:35
-uvenei | Mikhah | Piton | Vamelekh
-Veta'rea | Ve'achaz
+uvenei | Mikhah | Piton | Vamelekh | Veta'rea | Ve'achaz
 
 8:36
 Ve'achaz | holid | et | Yeho'adah
 Viho'adah | holid | et | Alemet | ve'et | Azmavet
-ve'et | Zimri
-Vezimri
+ve'et | Zimri | Vezimri
 holid | et | Motza
 
 8:37
 Umotza
 holid | et | Bin'a
-Rafah | veno | El'asah | veno
-Atzel | beno
+Rafah | veno | El'asah | veno | Atzel | beno
 
 8:38
 Ule'atzel | shishah | vanim

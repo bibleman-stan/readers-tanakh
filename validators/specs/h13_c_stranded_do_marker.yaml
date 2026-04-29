@@ -1,0 +1,29 @@
+name: h13_c_stranded_do_marker
+rule: H13
+subcase: stranded_do_marker
+severity: STRONG-MERGE-CANDIDATE
+description: |
+  Bare DO marker (אֵת or וְאֵת) on its own line cannot stand alone — it must
+  mark its object. Merge forward with the noun line.
+
+  Example (Gen 1:16):
+    line N:    וְאֵת
+    line N+1:  הַכּוֹכָבִים׃
+    merge:     וְאֵת הַכּוֹכָבִים׃
+
+  Cascade companion to m2_3 (verb + DO-NP) and h15 (NP + definite-adjective).
+  Together they collapse 3-way enumeration tails: "and the larger light for X
+  and the smaller light for Y / and-DO-marker / the stars" → unified.
+
+trigger:
+  line_n_first_token:
+    morphology: do_marker
+  line_n_last_token:
+    morphology: do_marker          # single-token line with just את / ואת
+  combined_max_prosodic_words: 6
+
+guards:
+  - poetic_register
+
+annotation_template: "Bare DO marker forward-merge ({pwc} prosodic words)"
+suggested_action: MERGE

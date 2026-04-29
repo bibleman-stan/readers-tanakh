@@ -4,8 +4,7 @@ vaiyikra | Maredokhai | et | begadav
 vaiyilbash | sak
 va'efer
 vaiyetze | betokh | ha'ir
-vaiyiz'ak | ze'akah | gedolah
-umarah
+vaiyiz'ak | ze'akah | gedolah | umarah
 
 4:2
 vaiyavo
@@ -18,8 +17,7 @@ uvekhol | medinah | umedinah | mekom | asher | devar | hamelekh | vedato | magia
 evel | gadol | laiyehudim
 vetzom | uvekhi | umisped
 sak | va'efer
-yutza
-larabim
+yutza | larabim
 
 4:4
 vatevo'einah | na'arot | Ester | vesariseiha | vaiyagidu | lah
@@ -29,8 +27,7 @@ velo | kibel
 4:5
 vatikra | Ester | Lahatakh | misarisei | hamelekh | asher | he'emid | lefaneiha
 vatetzavehu
-al | Maredokhai
-lada'at | mah | zeh | ve'al | mah | zeh
+al | Maredokhai | lada'at | mah | zeh | ve'al | mah | zeh
 
 4:6
 vaiyetze | Hatakh
@@ -51,9 +48,7 @@ al | amah
 
 4:9
 vaiyavo
-Hatakh
-vaiyaged | Le'ester | et
-divrei | Maredokhai
+Hatakh | vaiyaged | Le'ester | et | divrei | Maredokhai
 
 4:10
 vatomer | Ester | Lahatakh
@@ -99,6 +94,6 @@ vekha'asher | avadti
 avadeti
 
 4:17
-vaiya'avor
-Maredokhai | vaiya'as
+vaiya'avor | Maredokhai
+vaiya'as
 kekhol | asher | tzivetah | alav | Ester

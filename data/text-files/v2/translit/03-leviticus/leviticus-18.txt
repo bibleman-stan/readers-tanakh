@@ -6,8 +6,7 @@ el | Mosheh | lemor
 daber | el | benei | Yisra'el
 ve'amarta
 alehem
-ani
-Yahweh | eloheikhem
+ani | Yahweh | eloheikhem
 
 18:3
 kema'aseh | eretz | Mitzrayim | asher | yeshavtem | bah | lo | ta'asu
@@ -16,10 +15,8 @@ uvechukoteihem
 lo | telekhu
 
 18:4
-et | mishpatai | ta'asu | ve'et | chukotai | tishmeru
-lalekhet | bahem
-ani
-Yahweh | eloheikhem
+et | mishpatai | ta'asu | ve'et | chukotai | tishmeru | lalekhet | bahem
+ani | Yahweh | eloheikhem
 
 18:5
 ushemartem | et | chukotai | ve'et | mishpatai | asher | ya'aseh | otam | ha'adam
@@ -48,8 +45,7 @@ ervat | avikha
 hi
 
 18:9
-ervat | achotkha | vat | avikha | o | vat | imekha
-moledet | bayit
+ervat | achotkha | vat | avikha | o | vat | imekha | moledet | bayit
 o | moledet | chutz
 lo | tegaleh
 ervatan
@@ -107,19 +103,18 @@ et | bat | benah | ve'et | bat | bitah | lo | tikach | legalot | ervatah
 sha'arah | henah | zimah | hi
 
 18:18
-ve'ishah | el | achotah | lo | tikach
+ve'ishah | el | achotah
+lo | tikach
 litzror | legalot | ervatah | aleiha | bechaiyeiha
 
 18:19
-ve'el | ishah | benidat | tum'atah
-lo | tikrav
-legalot
+ve'el | ishah
+benidat | tum'atah
+lo | tikrav | legalot
 ervatah
 
 18:20
-ve'el | eshet | amitekha
-lo | titen | shekhavetekha
-lezara | letame'ah | vah
+ve'el | eshet | amitekha | lo | titen | shekhavetekha | lezara | letame'ah | vah
 
 18:21
 umizar'akha | lo | titen | leha'avir | Lamolekh
@@ -127,8 +122,7 @@ velo | techalel | et | shem | eloheikha
 ani | Yahweh
 
 18:22
-ve'et | zakhar
-lo | tishkav
+ve'et | zakhar | lo | tishkav
 mishkevei | ishah | to'evah
 hi
 
@@ -145,9 +139,7 @@ asher | ani | meshaleach | mipeneikhem
 18:25
 vatitma | ha'aretz
 va'efkod | avonah
-aleiha
-vataki | ha'aretz
-et | yosheveiha
+aleiha | vataki | ha'aretz | et | yosheveiha
 
 18:26
 ushemartem | atem | et | chukotai | ve'et | mishpatai
@@ -164,8 +156,7 @@ vatitma
 ha'aretz
 
 18:28
-velo | taki | ha'aretz | etkhem
-betama'akhem
+velo | taki | ha'aretz | etkhem | betama'akhem
 otah | ka'asher | ka'ah | et | hagoy | asher | lifneikhem
 
 18:29
@@ -175,7 +166,5 @@ venikhretu | hanefashot | ha'osot | mikerev | amam
 
 18:30
 ushemartem | et | mishmarti | levilti | asot | mechukot | hato'evot | asher | Na'asu | lifneikhem
-velo | titame'u
-bahem
-ani
-Yahweh | eloheikhem
+velo | titame'u | bahem
+ani | Yahweh | eloheikhem

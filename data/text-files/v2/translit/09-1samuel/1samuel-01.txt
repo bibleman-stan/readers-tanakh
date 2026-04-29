@@ -9,8 +9,7 @@ velo | shetei | nashim
 shem | achat | Chanah
 veshem | hashenit
 Peninah
-vayhi | Lifninah | yeladim
-Ulechanah | ein | yeladim
+vayhi | Lifninah | yeladim | Ulechanah | ein | yeladim
 
 1:3
 ve'alah | ha'ish | hahu | me'iro | miyamim | yamimah
@@ -22,15 +21,13 @@ Layahweh
 vayhi | haiyom
 vaiyizbach
 Elkanah
-venatan | Lifninah | ishto | ulekhol | baneiha | uvenoteiha
-manot
+venatan | Lifninah | ishto | ulekhol | baneiha | uvenoteiha | manot
 
 1:5
 Ulechanah
 yiten | manah | achat
 apayim
-ki | et | Chanah | ahev
-Vayahweh
+ki | et | Chanah | ahev | Vayahweh
 sagar | rachmah
 
 1:6
@@ -40,9 +37,9 @@ be'ad | rachmah
 
 1:7
 vekhen | ya'aseh | shanah | veshanah | midei | alotah | beveit | Yahweh
-ken
-takh'isenah
-vativkeh | velo | tokhal
+ken | takh'isenah
+vativkeh
+velo | tokhal
 
 1:8
 vaiyomer | lah | Elkanah | ishah | Chanah | lameh | tivki | velameh | lo | tokhli
@@ -59,15 +56,15 @@ al | mezuzat
 heikhal | Yahweh
 
 1:10
-vehi | marat | nafesh
-vatitpalel | al | Yahweh
+vehi | marat | nafesh | vatitpalel | al | Yahweh
 uvakhoh | tivkeh
 
 1:11
 vatidor | neder | vatomar | Yahweh | tzeva'ot | im | ra'oh | tir'eh | bo'oni | amatekha | uzekhartani | velo | tishkach | et | amatekha
 venatatah | la'amatekha
 zera | anashim
-unetativ | Layahweh | kol | yemei | chaiyav | umorah | lo | ya'aleh | al | rosho
+unetativ | Layahweh | kol | yemei | chaiyav | umorah
+lo | ya'aleh | al | rosho
 
 1:12
 vehayah | ki | hirbetah | lehitpalel
@@ -80,40 +77,32 @@ Vechanah | hi | medaberet | al | libah
 rak | sefateiha | na'ot
 vekolah
 lo | yishamea
-vaiyachsheveha | Eli
-leshikorah
+vaiyachsheveha | Eli | leshikorah
 
 1:14
 vaiyomer | eleiha | Eli
-ad | matai
-tishtakarin
+ad | matai | tishtakarin
 hasiri | et | yeinekh | me'alayikh
 
 1:15
 vata'an | Chanah | vatomer | lo | adoni
-ishah | keshat | ruach | anokhi
-veyayin | veshekhar
-lo | shatiti
-va'eshpokh | et | nafshi
+ishah | keshat | ruach | anokhi | veyayin | veshekhar
+lo | shatiti | va'eshpokh | et | nafshi
 lifnei | Yahweh
 
 1:16
-al | titen | et | amatekha
-lifnei
+al | titen | et | amatekha | lifnei
 bat | beliya'al
 ki | mero | sichi | vekha'si
 dibarti | ad | henah
 
 1:17
-vaiya'an | Eli | vaiyomer
-lekhi | leshalom
-velohei | Yisra'el | yiten | et | shelatekh | asher | sha'alt
-me'imo
+vaiya'an | Eli | vaiyomer | lekhi | leshalom
+velohei | Yisra'el | yiten | et | shelatekh | asher | sha'alt | me'imo
 
 1:18
 vatomer
-timtza | shifchatekha | chen
-be'eineikha
+timtza | shifchatekha | chen | be'eineikha
 vatelekh | ha'ishah | ledarkah | vatokhal
 ufaneiha | lo | hayu | lah
 od
@@ -121,8 +110,7 @@ od
 1:19
 vaiyashkimu | vaboker | vaiyishtachavu | lifnei | Yahweh
 vaiyashuvu | vaiyavo'u | el | beitam
-Haramatah
-vaiyeda | Elkanah | et | Chanah | ishto
+Haramatah | vaiyeda | Elkanah | et | Chanah | ishto
 vaiyizkereha
 Yahweh
 
@@ -174,11 +162,9 @@ el | Yahweh
 1:27
 el | hana'ar | hazeh
 hitpalalti
-vaiyiten | Yahweh | li | et | she'elati | asher | sha'alti
-me'imo
+vaiyiten | Yahweh | li | et | she'elati | asher | sha'alti | me'imo
 
 1:28
 vegam | anokhi | hish'iltihu | Layahweh
-kol | haiyamim | asher | hayah | hu | sha'ul
-Layahweh | vaiyishtachu | sham
-Layahweh
+kol | haiyamim | asher | hayah | hu | sha'ul | Layahweh
+vaiyishtachu | sham | Layahweh

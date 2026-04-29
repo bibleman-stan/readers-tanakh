@@ -15,6 +15,10 @@ from typing import Optional
 
 # strip niqqud + te'amim (U+0591–U+05BD), preserve maqqef (U+05BE), paseq (U+05C0), sof-pasuq (U+05C3)
 NIQQUD_TEAMIM_RE = re.compile(r"[֑-ֽֿׁׂׄ-ׇ]")
+
+# Strip ONLY te'amim (cantillation marks U+0591–U+05AF), preserving niqqud (U+05B0+).
+# Use when a niqqud-aware morphology regex needs te'amim removed but vowels intact.
+TEAMIM_ONLY_RE = re.compile(r"[֑-֯]")
 MAQQEF = "־"
 PASEQ = "׀"
 SOF_PASUQ = "׃"
@@ -31,6 +35,11 @@ def skel(s: str) -> str:
 def strip_apparatus(s: str) -> str:
     """Strip niqqud + te'amim but PRESERVE maqqef/paseq/sof-pasuq for morphology checks."""
     return NIQQUD_TEAMIM_RE.sub("", s)
+
+
+def strip_teamim(s: str) -> str:
+    """Strip ONLY te'amim, preserving niqqud — for niqqud-aware regex matching."""
+    return TEAMIM_ONLY_RE.sub("", s)
 
 
 # ─── line / token primitives ────────────────────────────────────────
@@ -132,9 +141,13 @@ def is_finite_verb_skel(skeleton: str) -> bool:
         return False
     if skeleton in QATAL_COMMON:
         return True
-    # wayyiqtol prefix — וי / וַי / וְ + yiqtol
-    if skeleton.startswith("וי") and len(skeleton) >= 3:
-        # "וי" + at least one more consonant
+    # wayyiqtol prefix — ו + (י|ת|א|נ) + verb stem
+    # Covers: וי (3ms/3mp/2fp), ות (3fs/2ms/2fp/2mp), וא (1cs), ון (1cp)
+    if (
+        len(skeleton) >= 3
+        and skeleton[0] == "ו"
+        and skeleton[1] in YIQTOL_PREFIXES
+    ):
         return True
     # yiqtol — single-prefix + 3-letter root skeleton
     # Pattern: prefix (י/ת/א/נ) + root consonants ≥ 3 total chars
@@ -187,6 +200,26 @@ def _first_vowel_is_holam(token: str) -> bool:
     return False
 
 
+def _first_vowel_is_chataf(token: str) -> bool:
+    """True if the first niqqud after the first Hebrew consonant is a chataf vowel.
+
+    Chataf-vowels (chataf-segol U+05B1, chataf-patach U+05B2, chataf-qamatz U+05B3)
+    signal noun stems with guttural-onset sheva-equivalents — אֲדָמָה (ground),
+    אֱמוּנָה (faith), חֳלִי (sickness), etc. Verbs in the same skeleton-prefix
+    range take full vowels (segol/patach), not chataf.
+    """
+    found_first_consonant = False
+    for ch in token:
+        cp = ord(ch)
+        if 0x05D0 <= cp <= 0x05EA:
+            if found_first_consonant:
+                return False
+            found_first_consonant = True
+        elif found_first_consonant and 0x05B0 <= cp <= 0x05BD:
+            return cp in (0x05B1, 0x05B2, 0x05B3)
+    return False
+
+
 def is_finite_verb_token(token: str) -> bool:
     """True if the token (raw, with niqqud/te'amim) parses as a finite verb.
 
@@ -202,10 +235,10 @@ def is_finite_verb_token(token: str) -> bool:
     """
     if MAQQEF in token:
         first_sub = token.split(MAQQEF, 1)[0]
-        if _first_vowel_is_holam(first_sub):
+        if _first_vowel_is_holam(first_sub) or _first_vowel_is_chataf(first_sub):
             return False
         return is_finite_verb_skel(skel(first_sub))
-    if _first_vowel_is_holam(token):
+    if _first_vowel_is_holam(token) or _first_vowel_is_chataf(token):
         return False
     return is_finite_verb_skel(skel(token))
 
@@ -251,7 +284,8 @@ def line_starts_with_prep(line: str) -> tuple[bool, Optional[str]]:
 
 # Direct-object marker — אֵת standalone or maqqef-joined (אֶת־...)
 def is_do_marker_token(token: str) -> bool:
-    """True if the token IS the DO marker אֵת — standalone or maqqef-bound.
+    """True if the token IS the DO marker אֵת — standalone, maqqef-bound, or
+    vav-prefixed (וְאֵת).
 
     Distinguishes DO marker את from אַתָּה (you, ms = "אתה" skeleton),
     אִתִּי (with me = "אתי") etc., which would all start with the same
@@ -259,8 +293,10 @@ def is_do_marker_token(token: str) -> bool:
     """
     if MAQQEF in token:
         first_sub = token.split(MAQQEF, 1)[0]
-        return skel(first_sub) == "את"
-    return skel(token) == "את"
+        s = skel(first_sub)
+    else:
+        s = skel(token)
+    return s == "את" or s == "ואת"
 
 
 # Definite adjective — article-marked single-word adjective (heuristic).
@@ -345,8 +381,9 @@ def line_starts_with_participle(line: str) -> bool:
     # m-prefix derived stems
     if s.startswith("מ") and len(s) >= 4 and not is_finite_verb_skel(s):
         return True
-    # qal active CoCeC — needs niqqud-aware check
-    if QAL_ACTIVE_PARTICIPLE_RE.match(tok):
+    # qal active CoCeC — needs niqqud-aware check; te'amim must be stripped
+    # without removing vowels.
+    if QAL_ACTIVE_PARTICIPLE_RE.match(strip_teamim(tok)):
         return True
     return False
 

@@ -1,6 +1,5 @@
 24:1
-hineh | Yahweh | bokek | ha'aretz
-uvolkah
+hineh | Yahweh | bokek | ha'aretz | uvolkah
 ve'ivah | faneiha
 vehefitz
 yosheveiha
@@ -19,9 +18,7 @@ diber | et | hadavar | hazeh
 24:4
 avelah | navelah | ha'aretz
 umlelah | navelah
-tevel
-umlalu
-merom | am | ha'aretz
+tevel | umlalu | merom | am | ha'aretz
 
 24:5
 veha'aretz | chanefah | tachat | yosheveiha
@@ -33,8 +30,7 @@ al | ken | alah | akhelah | eretz
 vaiye'shemu
 yoshevei | vah
 al | ken | charu | yoshevei | eretz
-venish'ar | enoosh
-miz'ar
+venish'ar | enoosh | miz'ar
 
 24:7
 aval | tiroosh
@@ -50,14 +46,11 @@ shavat | mesos | kinor
 
 24:9
 bashir | lo | yishtu | yayin
-yemar | shekhar
-leshotav
+yemar | shekhar | leshotav
 
 24:10
 Nishberah
-kiryat | tohu
-sugar | kol | bayit
-mibo
+kiryat | tohu | sugar | kol | bayit | mibo
 
 24:11
 tzevachah | al | haiyayin | bachutzot
@@ -90,8 +83,8 @@ shem | Yahweh | elohei | Yisra'el
 24:16
 mikenaf | ha'aretz | zemirot | shama'nu | tzevi | latzadik
 va'omar | razi | li | razi | li
-o | li
-bogedim | bagadu | uveged | bogdim | bagadu
+o | li | bogedim | bagadu
+uveged | bogdim | bagadu
 
 24:17
 pachad | vafachat
@@ -102,11 +95,9 @@ yoshev | ha'aretz
 24:18
 vehayah | hanas | mikol | hapachad | yipol | el | hapachat
 veha'oleh | mitokh | hapachat
-yilakhed
-bapach
+yilakhed | bapach
 ki | arubot | mimarom | Niftachu
-vaiyir'ashu
-mosdei | aretz
+vaiyir'ashu | mosdei | aretz
 
 24:19
 ro'ah | hitro'a'ah
@@ -117,12 +108,12 @@ aretz
 24:20
 noa | tanua | eretz | kashikor
 vehitnodah | kamelunah | vekhavad | aleiha | pish'ah
-venafelah | velo | tosif | kum
+venafelah
+velo | tosif | kum
 
 24:21
 vehayah | baiyom | hahu
-yifkod | Yahweh | al | tzeva | hamarom
-bamarom
+yifkod | Yahweh | al | tzeva | hamarom | bamarom
 ve'al | malkhei | ha'adamah
 al | ha'adamah
 

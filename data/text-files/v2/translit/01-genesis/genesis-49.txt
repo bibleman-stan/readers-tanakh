@@ -1,7 +1,6 @@
 49:1
 vaiyikra | Ya'ako
-el | banav
-vaiyomer | he'asefu | ve'agidah | lakhem | et | asher | yikra | etkhem
+el | banav | vaiyomer | he'asefu | ve'agidah | lakhem | et | asher | yikra | etkhem
 be'acharit | haiyamim
 
 49:2
@@ -13,24 +12,20 @@ el | Yisra'el | avikhem
 49:3
 Re'uven | bekhori | atah | kochi
 vereshit | oni
-yeter | se'et
-veyeter | az
+yeter | se'et | veyeter | az
 
 49:4
 pachaz | kamayim | al | totar
 ki | alita
 mishkevei | avikha
-az | chilalta
-yetzu'i | alah
+az | chilalta | yetzu'i | alah
 
 49:5
-Shim'on | Velevi
-achim
+Shim'on | Velevi | achim
 kelei | chamas | mekheroteihem
 
 49:6
-besodam | al | tavo | nafshi
-bikhalam
+besodam | al | tavo | nafshi | bikhalam
 al | techad | kevodi
 ki | ve'apam | haregu | ish | uvirtzonam
 ikeru | shor
@@ -44,13 +39,12 @@ va'afitzem | Beyisra'el
 
 49:8
 Yehudah | atah | yodukha | acheikha
-yadekha | be'oref | oyeveikha
-yishtachavu | lekha
+yadekha | be'oref | oyeveikha | yishtachavu | lekha
 benei | avikha
 
 49:9
-gur | aryeh | Yehudah
-miteref | beni | alita | kara | ravatz | ke'aryeh | ukhelavi
+gur | aryeh | Yehudah | miteref
+beni | alita | kara | ravatz | ke'aryeh | ukhelavi
 mi | yekimenu
 
 49:10
@@ -60,8 +54,7 @@ yikehat | amim
 
 49:11
 oseri | lagefen | iro | velasorekah
-beni | atono
-kibes | baiyayin | levusho | uvedam | anavim
+beni | atono | kibes | baiyayin | levusho | uvedam | anavim
 suto
 
 49:12
@@ -71,26 +64,21 @@ chakhlili | einayim | miyayin | uleven | shinayim | mechalav
 Zevulun
 lechof | yamim
 yishkon
-vehu | lechof | oniyot
-veyarkhato
+vehu | lechof | oniyot | veyarkhato
 al | Tzidon
 
 49:14
 Yisoshkhar
-chamor | garem
-rovetz | bein | hamishpetayim
+chamor | garem | rovetz | bein | hamishpetayim
 
 49:15
-vaiyar | menuchah | ki | tov | ve'et | ha'aretz
-ki | na'emah
+vaiyar | menuchah | ki | tov
+ve'et | ha'aretz | ki | na'emah
 vaiyet | shikhmo | lisbol
-vayhi
-lemas | oved
+vayhi | lemas | oved
 
 49:16
-Dan
-yadin | amo
-ke'achad
+Dan | yadin | amo | ke'achad
 shivtei | Yisra'el
 
 49:17
@@ -117,8 +105,7 @@ vehu | yiten | ma'adanei | melekh
 49:21
 Naftali
 aiyalah | sheluchah
-hanoten
-imrei | shafer
+hanoten | imrei | shafer
 
 49:22
 ben | porat | Yosef
@@ -129,8 +116,7 @@ alei | shur
 
 49:23
 vaymararuhu
-varobu
-vaiyistemuhu
+varobu | vaiyistemuhu
 ba'alei | chitzim
 
 49:24
@@ -138,35 +124,30 @@ vateshev | be'eitan | kashto
 vaiyafozu
 zero'ei | yadav
 midei | avir | Ya'ako
-misham | ro'eh
-even | Yisra'el
+misham | ro'eh | even | Yisra'el
 
 49:25
 me'el | avikha | veya'zereka | ve'et | Shadai | vivarekheka
 birkhot | shamayim | me'al
-birkhot | tehom
-rovetzet | tachat | birkhot | shadayim
+birkhot | tehom | rovetzet | tachat | birkhot | shadayim
 varacham
 
 49:26
 birkhot | avikha | gaveru | al | birkhot | horai
 ad | ta'avat
 giv'ot | olam
-tihyein | lerosh | Yosef
-ulekadekod | nezir | echav
+tihyein | lerosh | Yosef | ulekadekod
+nezir | echav
 
 49:27
-Binyamin | ze'ev | yitraf
-baboker
-yokhal | ad | vela'erev
-yechalek | shalal
+Binyamin | ze'ev | yitraf | baboker
+yokhal | ad | vela'erev | yechalek | shalal
 
 49:28
 kol | eleh | shivtei | Yisra'el
 sheneim | asar
 vezot | asher | diber | lahem | avihem | vayvarekh | otam
-ish | asher | kevirkhato
-berakh | otam
+ish | asher | kevirkhato | berakh | otam
 
 49:29
 vaytzav | otam | vaiyomer | alehem | ani | ne'esaf | el | ami
@@ -183,8 +164,7 @@ la'achuzat | kaver
 
 49:31
 shamah | kaveru | et | Avraham | ve'et | Sarah | ishto
-shamah | kaveru | et | Yitzchak
-ve'et
+shamah | kaveru | et | Yitzchak | ve'et
 Rivkah | ishto
 veshamah | kavarti
 et | Le'ah
@@ -195,6 +175,5 @@ mikneh | hasadeh | vehame'arah | asher | bo | me'et | benei | Chet
 49:33
 vaykhal | Ya'ako | letzavot | et | banav
 vaiye'esof | raglav
-el | hamitah
-vaiyigva
+el | hamitah | vaiyigva
 vaiye'asef | el | amav

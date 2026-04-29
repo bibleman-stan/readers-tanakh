@@ -1,7 +1,6 @@
 13:1
 kedaber | Efrayim | retet
-nasa | hu | Beyisra'el
-vaiye'sham | baba'al
+nasa | hu | Beyisra'el | vaiye'sham | baba'al
 vaiyamot
 
 13:2
@@ -13,24 +12,20 @@ agalim
 yishakun
 
 13:3
-lakhen | yihyu | ka'anan | boker
-vekhatal | mashkim | holekh
-kemotz | yeso'er | migoren
-ukhe'ashan | me'arubah
+lakhen | yihyu | ka'anan | boker | vekhatal | mashkim | holekh
+kemotz | yeso'er | migoren | ukhe'ashan | me'arubah
 
 13:4
-ve'anokhi | Yahweh | eloheikha
-me'eretz | Mitzrayim
-velohim | zulati | lo | teda | umoshia | ayin | bilti
+ve'anokhi | Yahweh | eloheikha | me'eretz | Mitzrayim
+velohim | zulati | lo | teda
+umoshia | ayin | bilti
 
 13:5
-ani | yeda'tikha
-bamidbar | be'eretz | tal'uvot
+ani | yeda'tikha | bamidbar | be'eretz
+tal'uvot
 
 13:6
-kemar'itam | vaiyisba'u
-save'u
-vaiyarom | libam
+kemar'itam | vaiyisba'u | save'u | vaiyarom | libam
 al | ken | shekhechuni
 
 13:7
@@ -40,10 +35,8 @@ al | derekh | ashur
 13:8
 efgeshem | kedo | shakul
 ve'ekra
-segor | libam
-ve'okhelem | sham | kelavi
-chaiyat | hasadeh
-tevake'em
+segor | libam | ve'okhelem | sham | kelavi
+chaiyat | hasadeh | tevake'em
 
 13:9
 shichetkha | Yisra'el
@@ -51,14 +44,12 @@ ki | vi | ve'ezrekha
 
 13:10
 ehi | malkekha | efo
-veyoshi'akha
-bekhol | areikha
+veyoshi'akha | bekhol | areikha
 veshofeteikha | asher | amarta
 tenah | li | melekh | vesarim
 
 13:11
-eten | lekha | melekh | be'api
-ve'ekach | be'evrati
+eten | lekha | melekh | be'api | ve'ekach | be'evrati
 
 13:12
 tzarur | avon | Efrayim

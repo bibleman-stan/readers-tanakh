@@ -8,24 +8,20 @@ veha'al | et | hatzfarde'im
 al | eretz | Mitzrayim
 
 8:2
-vaiyet | Aharon | et | yado
-al | meimei | Mitzrayim
+vaiyet | Aharon | et | yado | al | meimei | Mitzrayim
 vata'al | hatzefardea
-vatekhas
-et | eretz | Mitzrayim
+vatekhas | et | eretz | Mitzrayim
 
 8:3
-vaiya'asu | khen | hachartumim
-belateihem | vaiya'alu | et | hatzfarde'im
+vaiya'asu | khen | hachartumim | belateihem
+vaiya'alu | et | hatzfarde'im
 al | eretz | Mitzrayim
 
 8:4
 vaiyikra | far'oh | Lemosheh | Ule'aharon | vaiyomer | ha'tiru | el | Yahweh
-veyaser | hatzfarde'im
-mimeni | ume'ami
+veyaser | hatzfarde'im | mimeni | ume'ami
 va'ashalechah | et | ha'am
-veyizbechu
-Layahweh
+veyizbechu | Layahweh
 
 8:5
 vaiyomer | Mosheh | lefar'oh | hitpa'er | alai
@@ -35,8 +31,8 @@ rak | Bay'or
 tisha'arnah
 
 8:6
-vaiyomer
-lemachar | vaiyomer | kidvarekha
+vaiyomer | lemachar
+vaiyomer | kidvarekha
 lema'an | teda
 ki | ein
 Kayahweh | eloheinu
@@ -53,22 +49,19 @@ al | devar | hatzfarde'im
 asher | sam | lefar'oh
 
 8:9
-vaiya'as | Yahweh
-kidvar | Mosheh | vaiyamutu | hatzfarde'im
-min | habatim | min | hachatzerot | umin | hasadot
+vaiya'as | Yahweh | kidvar | Mosheh
+vaiyamutu | hatzfarde'im | min | habatim | min | hachatzerot | umin | hasadot
 
 8:10
 vaiyitzberu | otam
-chomarim | chomarim
-vativ'ash
+chomarim | chomarim | vativ'ash
 ha'aretz
 
 8:11
 vaiyar | par'oh | ki | hayetah | harevachah
 vehakhbed | et | libo
 velo | shama
-alehem
-ka'asher | diber | Yahweh
+alehem | ka'asher | diber | Yahweh
 
 8:12
 vaiyomer | Yahweh | el | Mosheh
@@ -81,8 +74,7 @@ vehayah | lekhinim | bekhol | eretz | Mitzrayim
 8:13
 vaiya'asu | khen | vaiyet | Aharon | et | yado | vematehu | vaiyakh | et | afar | ha'aretz
 vatehi | hakinam | ba'adam | uvabehemah
-kol | afar | ha'aretz | hayah | khinim
-bekhol | eretz | Mitzrayim
+kol | afar | ha'aretz | hayah | khinim | bekhol | eretz | Mitzrayim
 
 8:14
 vaiya'asu | khen | hachartumim | belateihem | lehotzi | et | hakinim
@@ -92,8 +84,7 @@ vatehi | hakinam | ba'adam | uvabehemah
 8:15
 vaiyomeru | hachartumim | el | par'oh
 etzba | elohim
-hi
-vaiyechezak | lev | par'oh | velo | shama | alehem
+hi | vaiyechezak | lev | par'oh | velo | shama | alehem
 ka'asher | diber | Yahweh
 
 8:16
@@ -127,14 +118,12 @@ ha'ot | hazeh
 vaiya'as | Yahweh | ken
 vaiyavo | aro | kaved
 beitah | far'oh | uveit | avadav
-uvekhol | eretz | Mitzrayim | tishachet | ha'aretz
-mipenei | he'aro
+uvekhol | eretz | Mitzrayim | tishachet | ha'aretz | mipenei | he'aro
 
 8:21
 vaiyikra | far'oh
 el | Mosheh | Ule'aharon
-vaiyomer | lekhu | zivchu | leloheikhem
-ba'aretz
+vaiyomer | lekhu | zivchu | leloheikhem | ba'aretz
 
 8:22
 vaiyomer | Mosheh | lo | nakhon | la'asot | ken
@@ -147,23 +136,19 @@ velo | yiskelunu
 8:23
 derekh | sheloshet | yamim
 nelekh | bamidbar
-vezavachnu | Layahweh | eloheinu
-ka'asher
+vezavachnu | Layahweh | eloheinu | ka'asher
 yomar | eleinu
 
 8:24
 vaiyomer | par'oh | anokhi | ashalach | etkhem | uzevachtem | Layahweh | eloheikhem | bamidbar
-rak | harchek | lo | tarchiku
-lalekhet
+rak | harchek | lo | tarchiku | lalekhet
 ha'tiru | ba'adi
 
 8:25
 vaiyomer | Mosheh | hineh | anokhi | yotze | me'imokh | veha'tarti | el | Yahweh
 vesar | he'aro | mipar'oh | me'avadav | ume'amo | machar
 rak | al | yosef | par'oh | hatel
-levilti | shalach | et | ha'am
-lizboach
-Layahweh
+levilti | shalach | et | ha'am | lizboach | Layahweh
 
 8:26
 vaiyetze | Mosheh
@@ -172,8 +157,7 @@ el | Yahweh
 
 8:27
 vaiya'as | Yahweh | kidvar | Mosheh
-vaiyasar | he'aro
-mipar'oh | me'avadav | ume'amo
+vaiyasar | he'aro | mipar'oh | me'avadav | ume'amo
 lo | Nish'ar
 echad
 

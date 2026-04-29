@@ -34,8 +34,7 @@ parokhet | hakodesh
 venatan | hakohen | min | hadam | al | karnot | mizbach | ketoret | hasamim | lifnei | Yahweh
 asher | be'ohel | mo'ed
 ve'et | kol | dam | hapar | yishpokh | el | yesod | mizbach | ha'olah
-asher | petach
-ohel | mo'ed
+asher | petach | ohel | mo'ed
 
 4:8
 ve'et | kol | chelev | par | hachatat
@@ -46,17 +45,15 @@ ve'et | kol | hachelev | asher | al | hakerev
 ve'et | shetei | hakelayot
 ve'et | hachelev | asher | aleihen | asher | al | hakesalim
 ve'et | haiyoteret | al | hakaved
-al | hakelayot
-yesirenah
+al | hakelayot | yesirenah
 
 4:10
-ka'asher | yuram
-mishor | zevach | hashelamim
+ka'asher | yuram | mishor
+zevach | hashelamim
 vehiktiram | hakohen | al | mizbach | ha'olah
 
 4:11
-ve'et | or | hapar | ve'et | kol | besaro
-al | rosho
+ve'et | or | hapar | ve'et | kol | besaro | al | rosho
 ve'al | kera'av
 vekirbo
 ufirsho
@@ -69,8 +66,8 @@ yisaref
 
 4:13
 ve'im | kol | adat | Yisra'el | yishgu
-vene'lam | davar
-me'einei | hakahal
+vene'lam | davar | me'einei
+hakahal
 ve'asu | achat | mikol | mitzvot | Yahweh | asher | lo | te'aseinah
 ve'ashemu
 
@@ -78,9 +75,7 @@ ve'ashemu
 venod'ah | hachatat | asher | chate'u
 aleiha
 vehikrivu | hakahal | par | ben | bakar | lechatat
-vehevi'u | oto
-lifnei
-ohel | mo'ed
+vehevi'u | oto | lifnei | ohel | mo'ed
 
 4:15
 vesamekhu | ziknei | ha'edah | et | yedeihem | al | rosh | hapar
@@ -93,15 +88,14 @@ vehevi | hakohen | hamashiach | midam | hapar
 el | ohel | mo'ed
 
 4:17
-vetaval | hakohen | etzba'o
-min | hadam | vehizah | sheva | pe'amim | lifnei | Yahweh | et
+vetaval | hakohen | etzba'o | min | hadam
+vehizah | sheva | pe'amim | lifnei | Yahweh | et
 penei | haparokhet
 
 4:18
 umin | hadam | yiten | al | karnot | hamizbeach | asher | lifnei | Yahweh | asher | be'ohel | mo'ed
 ve'et | kol | hadam | yishpokh | el | yesod | mizbach | ha'olah
-asher | petach
-ohel | mo'ed
+asher | petach | ohel | mo'ed
 
 4:19
 ve'et | kol | chelbo
@@ -112,16 +106,13 @@ hamizbechah
 4:20
 ve'asah | lapar
 ka'asher | asah | lefar | hachatat
-ken
-ya'aseh | lo
-vekhiper | alehem | hakohen
-venislach | lahem
+ken | ya'aseh | lo
+vekhiper | alehem | hakohen | venislach | lahem
 
 4:21
 vehotzi | et | hapar | el | michutz | lamachaneh
 vesaraf | oto | ka'asher | saraf
-et
-hapar | harishon
+et | hapar | harishon
 chatat | hakahal | hu
 
 4:22
@@ -131,8 +122,7 @@ ve'asah | achat | mikol | mitzvot | Yahweh | elohav | asher | lo | te'aseinah | 
 ve'ashem
 
 4:23
-ov | hoda | elav | chatato | asher | chata
-bah
+ov | hoda | elav | chatato | asher | chata | bah
 vehevi | et | karebano | se'ir | izim
 zakhar | tamim
 
@@ -146,13 +136,11 @@ hu
 4:25
 velakach | hakohen | midam | hachatat | be'etzba'o
 venatan
-al | karnot | mizbach | ha'olah
-ve'et | damo | yishpokh
+al | karnot | mizbach | ha'olah | ve'et | damo | yishpokh
 el | yesod | mizbach | ha'olah
 
 4:26
-ve'et | kol | chelbo | yaktir | hamizbechah
-kechelev
+ve'et | kol | chelbo | yaktir | hamizbechah | kechelev
 zevach | hashelamim | vekhiper | alav | hakohen | mechatato
 venislach | lo
 
@@ -175,23 +163,20 @@ veshachat | et | hachatat | bimkom
 ha'olah
 
 4:30
-velakach | hakohen | midamah | be'etzba'o
-venatan
-al | karnot | mizbach | ha'olah
-ve'et | kol | damah | yishpokh
+velakach | hakohen | midamah | be'etzba'o | venatan
+al | karnot | mizbach | ha'olah | ve'et | kol | damah | yishpokh
 el | yesod
 hamizbeach
 
 4:31
 ve'et | kol | chelbah | yasir | ka'asher | husar | chelev | me'al | zevach | hashelamim
 vehiktir | hakohen | hamizbechah
-lereiach | nichoach
-Layahweh | vekhiper | alav | hakohen
-venislach | lo
+lereiach | nichoach | Layahweh
+vekhiper | alav | hakohen | venislach | lo
 
 4:32
-ve'im | keves | yavi | karebano
-lechatat | nekevah | temimah
+ve'im | keves | yavi | karebano | lechatat
+nekevah | temimah
 yevi'enah
 
 4:33
@@ -202,8 +187,7 @@ veshachat | otah | lechatat | bimkom | asher | yishchat | et | ha'olah
 4:34
 velakach | hakohen | midam | hachatat | be'etzba'o
 venatan
-al | karnot | mizbach | ha'olah
-ve'et | kol | damah | yishpokh
+al | karnot | mizbach | ha'olah | ve'et | kol | damah | yishpokh
 el | yesod
 hamizbeach
 

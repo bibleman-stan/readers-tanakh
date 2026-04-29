@@ -1,8 +1,6 @@
 50:1
 hadavar | asher | diber | Yahweh | el | Bavel
-el | eretz | Kasdim
-beyad
-Yirmeyahu | hanavi
+el | eretz | Kasdim | beyad | Yirmeyahu | hanavi
 
 50:2
 hagidu | vagoyim | vehashmi'u | use'u | nes
@@ -15,8 +13,7 @@ giluleiha
 
 50:3
 ki | alah | aleiha | goy | mitzafon | hu | yashit | et | artzah | leshamah
-velo | yihyeh | yoshev
-bah | me'adam | ve'ad | behemah
+velo | yihyeh | yoshev | bah | me'adam | ve'ad | behemah
 nadu | halakhu
 
 50:4
@@ -30,7 +27,9 @@ yevakeshu
 50:5
 Tziyon | yish'alu
 derekh
-henah | feneihem | bo'u | venilvu | el | Yahweh | berit | olam
+henah | feneihem
+bo'u | venilvu | el | Yahweh
+berit | olam
 lo | tishakheach
 
 50:6
@@ -61,22 +60,19 @@ chitzav | kegibor | mashkil | lo | yashuv
 reikam
 
 50:10
-vehayetah | Khasdim
-leshalal
+vehayetah | Khasdim | leshalal
 kol | sholeleiha | yisba'u
 ne'um | Yahweh
 
 50:11
 ki | tismechi | ki | ta'alzi
-shosei
-nachalati
+shosei | nachalati
 ki | tafushi | ke'eglah | dashah
 vetitzhali | ka'abirim
 
 50:12
 booshah | imekhem | me'od | chaferah | yoladtekhem
-hineh | acharit | goyim
-midbar
+hineh | acharit | goyim | midbar
 tziyah | va'aravah
 
 50:13
@@ -115,14 +111,12 @@ yanusu
 seh | fezurah | Yisra'el
 arayot | hidichu
 harishon | akhalo | melekh | Ashur
-vezeh | ha'acharon | itzemo
-Nevukhadretzar
-melekh | Bavel
+vezeh | ha'acharon | itzemo | Nevukhadretzar | melekh | Bavel
 
 50:18
 lakhen | koh | amar | Yahweh | tzeva'ot | elohei | Yisra'el
-hini | foked | el | melekh | Bavel
-ve'el | artzo | ka'asher | pakadti
+hini | foked | el | melekh | Bavel | ve'el | artzo
+ka'asher | pakadti
 el | melekh | Ashur
 
 50:19
@@ -140,8 +134,7 @@ ki | eslach
 la'asher | ash'ir
 
 50:21
-al | ha'aretz | Meratayim | aleh | aleiha
-ve'el | yoshevei
+al | ha'aretz | Meratayim | aleh | aleiha | ve'el | yoshevei
 Pekod
 charo | vehacharem | achareihem | ne'um | Yahweh
 va'aseh | kekhol | asher | tzivitikha
@@ -155,13 +148,11 @@ gadol
 eikh | Nigda | vaiyishaver
 patish
 kol | ha'aretz
-eikh | hayetah | leshamah | Bavel
-bagoyim
+eikh | hayetah | leshamah | Bavel | bagoyim
 
 50:24
 yakosheti | lakh | vegam | Nilkadt | Bavel
-ve'at
-lo | yada'at
+ve'at | lo | yada'at
 Nimtzet | vegam | Nitpast
 ki | Bayahweh
 hitgarit
@@ -179,16 +170,13 @@ al | tehi | lah
 she'erit
 
 50:27
-chirvu | kol | pareiha
-yeredu
-latavach
+chirvu | kol | pareiha | yeredu | latavach
 ho | aleihem
 ki | va | yomam
 et | pekudatam
 
 50:28
-kol | nasim | ufeletim
-me'eretz | Bavel
+kol | nasim | ufeletim | me'eretz | Bavel
 lehagid | Betziyon | et | nikmat | Yahweh | eloheinu
 nikmat
 heikhalo
@@ -201,8 +189,7 @@ ki | el | Yahweh | zadah
 el | kedoosh | Yisra'el
 
 50:30
-lakhen | yipelu | vachureiha
-birchoteiha
+lakhen | yipelu | vachureiha | birchoteiha
 vekhol | anshei | milchamtah | yidamu | baiyom | hahu
 ne'um | Yahweh
 
@@ -213,23 +200,20 @@ ki | ba | yomkha
 et | pekadticha
 
 50:32
-vekhashal | zadon | venafal
-ve'ein | lo | mekim | vehitzati | esh | be'arav
-ve'akhelah
+vekhashal | zadon | venafal | ve'ein | lo
+mekim | vehitzati | esh | be'arav | ve'akhelah
 kol | sevivotav
 
 50:33
 koh | amar | Yahweh | tzeva'ot
-ashukim | benei | Yisra'el | uvenei | Yehudah
-yachdav
+ashukim | benei | Yisra'el | uvenei | Yehudah | yachdav
 vekhol | shoeihem | hecheziku | vam | me'anu | shalecham
 
 50:34
 go'alam | chazak | Yahweh | tzeva'ot | shemo
 riv | yariv | et | rivam
 lema'an | hirgia | et | ha'aretz
-vehirgiz
-leyoshevei | Vavel
+vehirgiz | leyoshevei | Vavel
 
 50:35
 cherev | al | Kasdim
@@ -239,8 +223,7 @@ ve'el | sareiha
 ve'el | chakhameiha
 
 50:36
-cherev | el | habadim
-veno'alu
+cherev | el | habadim | veno'alu
 cherev | el | giboreiha
 vachatu
 
@@ -250,35 +233,30 @@ vehayu | lenashim
 cherev | el | otzroteiha | uvuzazu
 
 50:38
-chorev | el | meimeiha
-veyaveshu
+chorev | el | meimeiha | veyaveshu
 ki | eretz | pesilim | hi | uva'eimim
 yitholalu
 
 50:39
 lakhen | yeshevu | tziyim | et | iyim | veyashevu | vah
-benot | ya'anah
-velo | teshev | od | lanetzach
+benot | ya'anah | velo | teshev | od | lanetzach
 velo | tishkon
 ad | dor | vador
 
 50:40
 kemahpekhat | elohim | et | Sedom | ve'et | Amorah | ve'et | shekheneiha
-ne'um | Yahweh
-lo | yeshev | sham | ish | velo | yagur | bah
+ne'um | Yahweh | lo | yeshev | sham | ish | velo | yagur | bah
 ben | adam
 
 50:41
-hineh | am | ba
-mitzafon | vegoy | gadol | umelakhim | rabim
-ye'oru
-miyarketei | aretz
+hineh | am | ba | mitzafon
+vegoy | gadol | umelakhim | rabim
+ye'oru | miyarketei | aretz
 
 50:42
 keshet | vekhidon | yachaziku | akhzari | hemah | velo | yerachemu
 kolam | kaiyam | yehemeh
-ve'al | susim
-yirkavu
+ve'al | susim | yirkavu
 arukh | ke'ish | lamilchamah
 alayikh
 bat | Bavel
@@ -292,11 +270,10 @@ kaiyoledah
 
 50:44
 hineh | ke'aryeh | ya'aleh | mige'on | Haiyarden | el | neveh | eitan
-ki | argi'ah | arutzem | me'aleiha
-umi | vachur | eleiha | efkod
+ki | argi'ah | arutzem | me'aleiha | umi | vachur
+eleiha | efkod
 ki | mi | khamoni | umi | yo'ideni
-umi | zeh | ro'eh | asher | ya'amod
-lefanai
+umi | zeh | ro'eh | asher | ya'amod | lefanai
 
 50:45
 lakhen | shim'u | atzat | Yahweh | asher | ya'atz | el | Bavel

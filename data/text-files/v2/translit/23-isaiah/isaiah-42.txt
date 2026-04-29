@@ -1,20 +1,18 @@
 42:1
-hen | avdi | etmokh | bo
-bechiri
+hen | avdi | etmokh | bo | bechiri
 ratzetah | nafshi
-natati | ruchi | alav
-mishpat | lagoyim | yotzi
+natati | ruchi | alav | mishpat
+lagoyim | yotzi
 
 42:2
-lo | yitz'ak
-velo | yisa | velo | yashmia | bachutz
+lo | yitz'ak | velo | yisa | velo | yashmia | bachutz
 kolo
 
 42:3
 kaneh | ratzutz | lo | yishbor
 ufishtah | khehah
-lo | yekhabbenah
-le'emet | yotzi | mishpat
+lo | yekhabbenah | le'emet
+yotzi | mishpat
 
 42:4
 lo | yikhheh | velo | yarutz
@@ -53,8 +51,7 @@ vachadashot | ani | magid | beterem | titzmachnah
 ashmi | etkhem
 
 42:10
-shiru | Layahweh | shir | chadash
-tehilato
+shiru | Layahweh | shir | chadash | tehilato
 miktzeh | ha'aretz | yordei | haiyam | umelo'o
 iyim
 veyosheveihem
@@ -63,21 +60,19 @@ veyosheveihem
 yis'u | midbar | ve'arav
 chatzerim
 teshev | Kedar
-yaronu | yoshevei | sela
-merosh | harim | yitzvachu
+yaronu | yoshevei | sela | merosh | harim
+yitzvachu
 
 42:12
-yasimu | Layahweh
-kavod
+yasimu | Layahweh | kavod
 utehilato
 ba'iyim | yagidu
 
 42:13
-Yahweh | kagibor | yetze
-ke'ish | milchamot | ya'ir | kin'ah
+Yahweh | kagibor | yetze | ke'ish | milchamot
+ya'ir | kin'ah
 yaria | af | yatzriach
-al | oyevav
-yitgabar
+al | oyevav | yitgabar
 
 42:14
 hechesheiti | me'olam | acharish
@@ -88,8 +83,7 @@ yachad
 
 42:15
 achariv | harim | ugeva'ot
-vekhol | esbam
-ovish
+vekhol | esbam | ovish
 vesamti | neharot | la'iyim
 va'agamim
 ovish
@@ -116,8 +110,7 @@ habitu | lir'ot
 42:19
 mi | iver | ki | im | avdi
 vecheresh
-kemal'akhi | eshlach
-mi | iver | kimshulam
+kemal'akhi | eshlach | mi | iver | kimshulam
 ve'iver
 ke'eved | Yahweh
 
@@ -151,6 +144,6 @@ betorato
 
 42:25
 vaiyishpokh | alav | chemah | apo
-ve'ezuz
-milchamah | vatelahatehu | misaviv | velo | yada
-vativ'ar | bo | velo | yasim | al | lev
+ve'ezuz | milchamah | vatelahatehu | misaviv | velo | yada
+vativ'ar | bo
+velo | yasim | al | lev

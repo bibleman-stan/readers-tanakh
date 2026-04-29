@@ -4,8 +4,7 @@ hinave
 el | harei | Yisra'el
 ve'amarta
 harei | Yisra'el
-shim'u
-devar | Yahweh
+shim'u | devar | Yahweh
 
 36:2
 koh | amar | Adonai | Yahweh
@@ -21,9 +20,7 @@ vate'alu | al | sefat | lashon
 vedibat | am
 
 36:4
-lakhen | harei | Yisra'el
-shim'u
-devar | Adonai | Yahweh
+lakhen | harei | Yisra'el | shim'u | devar | Adonai | Yahweh
 koh | amar | Adonai | Yahweh | leharim | velageva'ot | la'afikim | velage'ayot | velechoravot | hashomemot | vele'arim | hane'ezavot
 asher | hayu | levaz | ulela'ag
 lish'erit | hagoyim | asher | misaviv
@@ -38,13 +35,11 @@ lema'an | migrashah | lavaz
 36:6
 lakhen | hinave | al | admat | Yisra'el
 ve'amarta | leharim | velageva'ot | la'afikim | velage'ayot | koh | amar | Adonai | Yahweh | hini | vekin'ati | uvachamati | dibarti
-ya'an | kelimat | goyim
-nesatem
+ya'an | kelimat | goyim | nesatem
 
 36:7
 lakhen | koh | amar | Adonai | Yahweh
-ani
-nasati | et | yadi
+ani | nasati | et | yadi
 im | lo | hagoyim | asher | lakhem | misaviv | hemah
 kelimatam | yisa'u
 
@@ -52,8 +47,7 @@ kelimatam | yisa'u
 ve'atem | harei | Yisra'el | anpekhem | titenu
 uferyekhem | tis'u
 le'ami | Yisra'el
-ki | kerevu
-lavo
+ki | kerevu | lavo
 
 36:9
 ki
@@ -65,10 +59,8 @@ venizra'tem
 36:10
 vehirbeiti | aleikhem | adam
 kol | beit | Yisra'el
-kuloh
-venoshevu | he'arim
-vehechoravot
-tibaneinah
+kuloh | venoshevu | he'arim
+vehechoravot | tibaneinah
 
 36:11
 vehirbeiti | aleikhem | adam | uvehemah
@@ -79,14 +71,11 @@ ki | ani | Yahweh
 
 36:12
 veholakhti | aleikhem | adam | et | ami | Yisra'el | vireshukha
-vehayita | lahem
-lenachalah | velo | tosif | od
-leshakelam
+vehayita | lahem | lenachalah | velo | tosif | od | leshakelam
 
 36:13
 koh | amar | Adonai | Yahweh
-ya'an | omerim | lakhem
-okhelet | adam
+ya'an | omerim | lakhem | okhelet | adam
 ati | umeshakelet | goyekh
 hayit
 
@@ -111,10 +100,9 @@ elai | lemor
 
 36:17
 ben | adam | beit | Yisra'el | yoshevim | al | admatam
-vaytame'u | otah
-bedarkam | uva'alilotam | ketum'at | hanidah
-hayetah | darkam
-lefanai
+vaytame'u | otah | bedarkam
+uva'alilotam | ketum'at | hanidah
+hayetah | darkam | lefanai
 
 36:18
 va'eshpokh | chamati | aleihem
@@ -124,14 +112,13 @@ time'uha
 
 36:19
 va'afitz | otam | bagoyim
-vaiyizaru
-ba'aratzot | kedarkam | vekha'alilotam
+vaiyizaru | ba'aratzot | kedarkam | vekha'alilotam
 shefatim
 
 36:20
 vaiyavo | el | hagoyim | asher | ba'u | sham
-vaychalelu
-et | shem | kodshi | be'emor | lahem | am | Yahweh | eleh | ume'artzo
+vaychalelu | et | shem | kodshi
+be'emor | lahem | am | Yahweh | eleh | ume'artzo
 yatza'u
 
 36:21
@@ -144,8 +131,7 @@ asher | ba'u | shamah
 lakhen | emor | leveit | Yisra'el | koh | amar | Adonai | Yahweh
 lo | lema'ankhem | ani | oseh
 beit | Yisra'el
-ki | im | leshem | kodshi | asher | chilaltem
-bagoyim
+ki | im | leshem | kodshi | asher | chilaltem | bagoyim
 asher | batem | sham
 
 36:23
@@ -168,68 +154,60 @@ ataher | etkhem
 venatati | lakhem | lev | chadash
 veruach | chadashah
 eten | bekirbekhem
-vahasiroti | et | lev | ha'even | mibesarkhem | venatati | lakhem | lev | basar
+vahasiroti | et | lev | ha'even | mibesarkhem | venatati | lakhem
+lev | basar
 
 36:27
-ve'et | ruchi
-eten | bekirbekhem
+ve'et | ruchi | eten | bekirbekhem
 ve'asiti | et | asher | bechukai | telekhu
 umishpatai | tishmeru
 va'asitem
 
 36:28
-vishavtem | ba'aretz | asher | natati
-la'avoteikhem
-vihyitem | li | le'am
-ve'anokhi
-ehyeh | lakhem
-lelohim
+vishavtem | ba'aretz | asher | natati | la'avoteikhem
+vihyitem | li | le'am | ve'anokhi
+ehyeh | lakhem | lelohim
 
 36:29
-vehosha'ti | etkhem
-mikol
+vehosha'ti | etkhem | mikol
 tum'oteikhem
 vekarati | el | hadagan | vehirbeiti | oto | velo | eten | aleikhem
 ra'av
 
 36:30
-vehirbeiti | et | peri | ha'etz
-utenuvat
+vehirbeiti | et | peri | ha'etz | utenuvat
 hasadeh
 lema'an | asher | lo | tikchu | od | cherpat | ra'av
 bagoyim
 
 36:31
 uzekhartem | et | darkheikhem | hara'im | uma'aleikhem | asher | lo | tovim
-unekototem | bifneikhem | al | avonoteikhem
+unekototem | bifneikhem
+al | avonoteikhem
 ve'al
 to'avoteikhem
 
 36:32
 lo | lema'ankhem | ani | oseh | ne'um | Adonai | Yahweh
-yivada
-lakhem | booshu | vehikalmu | midarkheikhem | beit | Yisra'el
+yivada | lakhem
+booshu | vehikalmu | midarkheikhem | beit | Yisra'el
 
 36:33
 koh | amar | Adonai | Yahweh
-beyom | tahari | etkhem
-mikol
+beyom | tahari | etkhem | mikol
 avonoteikhem
 vehoshavti | et | he'arim
 venivnu
 hechoravot
 
 36:34
-veha'aretz | haneshamah
-te'aved
-tachat | asher | hayetah | shemamah
-le'einei
+veha'aretz | haneshamah | te'aved
+tachat | asher | hayetah | shemamah | le'einei
 kol | over
 
 36:35
 ve'ameru | ha'aretz | halezu | haneshamah
-hayetah
-kegan | Eden
+hayetah | kegan | Eden
 vehe'arim | hechorevot | vehanshamot | vehaneherasot
 betzurot | yashavu
 
@@ -243,12 +221,12 @@ dibarti | ve'asiti
 
 36:37
 koh | amar | Adonai | Yahweh
-od | zot | idaresh | leveit | Yisra'el
-la'asot | lahem | arbeh | otam | katzon
+od | zot | idaresh | leveit | Yisra'el | la'asot | lahem
+arbeh | otam | katzon
 adam
 
 36:38
 ketzon | kadashim | ketzon | Yerushalim | bemo'adeiha
-ken | tihyeinah | he'arim | hechorevot
-mele'ot | tzon | adam | veyade'u
+ken | tihyeinah | he'arim | hechorevot | mele'ot
+tzon | adam | veyade'u
 ki | ani | Yahweh

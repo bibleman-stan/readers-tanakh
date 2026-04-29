@@ -9,8 +9,7 @@ lemateh | Yehudah
 
 31:3
 va'amale | oto
-ruach | elohim
-bechakhemah | uvitvunah | uveda'at | uvekhol | melakhah
+ruach | elohim | bechakhemah | uvitvunah | uveda'at | uvekhol | melakhah
 
 31:4
 lachsho | machashavot | la'asot | bazahav | uvakesef | uvanechoshet
@@ -23,38 +22,29 @@ la'asot | bekhol | melakhah
 va'ani | hineh | natati | ito | et | Oholi'av | ben | Achisamokh | lemateh | Dan
 uvelev | kol | chakham | lev | natati | chokhmah
 ve'asu
-et
-kol | asher | tzivitikha
+et | kol | asher | tzivitikha
 
 31:7
 et | ohel | mo'ed | ve'et | ha'aron | la'edut
 ve'et | hakaporet | asher | alav
-ve'et
-kol | kelei | ha'ohel
+ve'et | kol | kelei | ha'ohel
 
 31:8
-ve'et | hashulchan | ve'et | kelav
-ve'et | hamenorah | hatehorah
-ve'et | kol | keleiha
-ve'et | mizbach | haketoret
+ve'et | hashulchan | ve'et | kelav | ve'et | hamenorah | hatehorah
+ve'et | kol | keleiha | ve'et | mizbach | haketoret
 
 31:9
 ve'et | mizbach | ha'olah
-ve'et | kol | kelav
-ve'et | hakiyor
-ve'et | kano
+ve'et | kol | kelav | ve'et | hakiyor | ve'et | kano
 
 31:10
-ve'et
-bigdei | haserad
+ve'et | bigdei | haserad
 ve'et | bigdei | hakodesh | Le'aharon | hakohen
-ve'et | bigdei | vanav
-lekhahen
+ve'et | bigdei | vanav | lekhahen
 
 31:11
-ve'et | shemen | hamishchah | ve'et | ketoret | hasamim
-lakodesh | kekhol | asher | tzivitikha
-ya'asu
+ve'et | shemen | hamishchah | ve'et | ketoret | hasamim | lakodesh
+kekhol | asher | tzivitikha | ya'asu
 
 31:12
 vaiyomer | Yahweh
@@ -62,12 +52,10 @@ el | Mosheh | lemor
 
 31:13
 ve'atah | daber | el | benei | Yisra'el | lemor
-akh | et | shabetotai
-tishmoru
+akh | et | shabetotai | tishmoru
 ki | ot | hi | beini | uveineikhem | ledoroteikhem
 lada'at
-ki | ani | Yahweh
-mekadishkhem
+ki | ani | Yahweh | mekadishkhem
 
 31:14
 ushemartem | et | hashabat
@@ -78,20 +66,17 @@ venikhretah | hanefesh | hahiv | mikerev | ameiha
 
 31:15
 sheshet | yamim | ye'aseh | melakhah
-uvaiyom | hashevi'i | shabat | shabaton | kodesh
-Layahweh
+uvaiyom | hashevi'i | shabat | shabaton | kodesh | Layahweh
 kol | ha'oseh | melakhah | beyom | hashabat
 mot | yumat
 
 31:16
 veshameru | venei | Yisra'el
-et | hashabat
-la'asot | et | hashabat | ledorotam | berit | olam
+et | hashabat | la'asot | et | hashabat | ledorotam | berit | olam
 
 31:17
 beini | uvein | benei | Yisra'el
-ot | hi
-le'olam
+ot | hi | le'olam
 ki | sheshet | yamim | asah | Yahweh | et | hashamayim | ve'et | ha'aretz
 uvaiyom | hashevi'i
 shavat
@@ -99,5 +84,4 @@ vaiyinafash
 
 31:18
 vaiyiten | el | Mosheh | kekhaloto | ledaber | ito | behar | Sinai
-shenei | luchot | ha'edut | luchot | even | ketuvim
-be'etzba | elohim
+shenei | luchot | ha'edut | luchot | even | ketuvim | be'etzba | elohim

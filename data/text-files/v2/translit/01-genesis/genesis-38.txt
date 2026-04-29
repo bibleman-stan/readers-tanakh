@@ -6,8 +6,7 @@ ushemo | Chirah
 
 38:2
 vaiyar | sham | Yehudah | bat | ish | kena'ani
-ushemo | Shua
-vaiyikacheha
+ushemo | Shua | vaiyikacheha
 vaiyavo | eleiha
 
 38:3
@@ -29,8 +28,7 @@ Shelah
 vehayah | Vikhziv | belidtah | oto
 
 38:6
-vaiyikach | Yehudah | ishah
-Le'er | bekhoro
+vaiyikach | Yehudah | ishah | Le'er | bekhoro
 ushemah
 Tamar
 
@@ -45,16 +43,13 @@ Yahweh
 vaiyomer | Yehudah | Le'onan
 bo | el | eshet | achikha
 veyabem | otah
-vehakem | zera
-le'achikha
+vehakem | zera | le'achikha
 
 38:9
 vaiyeda | Onan
-ki | lo | lo
-yihyeh | hazara
+ki | lo | lo | yihyeh | hazara
 vehayah | im | ba | el | eshet | achiv | veshichet | artzah
-levilti | neton | zera
-le'achiv
+levilti | neton | zera | le'achiv
 
 38:10
 vaiyera | be'einei | Yahweh | asher | asah
@@ -64,8 +59,7 @@ gam | oto
 38:11
 vaiyomer | Yehudah | Letamar | kalato | shevi | almanah | veit | avikh | ad | yigdal | Shelah | veni
 ki | amar
-pen | yamut | gam | hu | ke'echav
-vatelekh | Tamar
+pen | yamut | gam | hu | ke'echav | vatelekh | Tamar
 vateshev
 beit | aviha
 
@@ -77,8 +71,7 @@ vaiyinachem | Yehudah | vaiya'al | al | gozazei | tzono | hu | Vechirah | re'ehu
 Timnatah
 
 38:13
-vaiyugad | Letamar
-lemor
+vaiyugad | Letamar | lemor
 hineh | chamikh | oleh | Timnatah
 lagoz | tzono
 
@@ -86,13 +79,11 @@ lagoz | tzono
 vatasar | bigdei | almenutah | me'aleiha | vatekhas | batza'if | vatit'alaf
 vateshev | befetach | Einayim | asher | al | derekh | Timnatah
 ki | ra'atah | ki | gadal | Shelah
-vehiv | lo | Nitenah | lo
-le'ishah
+vehiv | lo | Nitenah | lo | le'ishah
 
 38:15
 vaiyir'eha | Yehudah
-vaiyachsheveha
-lezonah
+vaiyachsheveha | lezonah
 ki | khisetah
 paneiha
 
@@ -101,13 +92,13 @@ vaiyet | eleiha | el | haderekh | vaiyomer | havah | na | avo | elayikh
 ki | lo | yada
 ki | khalato
 hi
-vatomer | mah | titen | li | ki | tavo
+vatomer | mah | titen | li
+ki | tavo
 elai
 
 38:17
 vaiyomer
-anokhi | ashalach | gedi | izim
-min | hatzon | vatomer
+anokhi | ashalach | gedi | izim | min | hatzon | vatomer
 im | titen | eravon
 ad | shalchekha
 
@@ -119,7 +110,8 @@ vatahar | lo
 
 38:19
 vatakom | vatelekh
-vatasar | tze'ifah | me'aleiha | vatilbash
+vatasar | tze'ifah | me'aleiha
+vatilbash
 bigdei | almenutah
 
 38:20
@@ -130,61 +122,54 @@ lakachat | ha'eravon | miyad | ha'ishah | velo | metza'ah
 vaiyish'al | et | anshei | mekomah | lemor
 aiyeh | hakedeshah | hi | Va'einayim
 al | hadarekh
-vaiyomeru
-lo | hayetah | vazeh
+vaiyomeru | lo | hayetah | vazeh
 kedeshah
 
 38:22
 vaiyashov | el | Yehudah
-vaiyomer
-lo | metzatiha | vegam | anshei | hamakom | ameru
-lo | hayetah | vazeh
+vaiyomer | lo | metzatiha
+vegam | anshei | hamakom | ameru | lo | hayetah | vazeh
 kedeshah
 
 38:23
 vaiyomer | Yehudah | tikach | lah
 pen | nihyeh | lavuz
-hineh | shalachti | hagedi | hazeh
-ve'atah | lo | metzatah
+hineh | shalachti | hagedi | hazeh | ve'atah
+lo | metzatah
 
 38:24
 vayhi | kemishlosh | chodashim | vaiyugad | Lihudah | lemor | zanetah | Tamar | kalatekha
 vegam | hineh | harah | liznunim
 vaiyomer | Yehudah
-hotzi'uha
-vetisaref
+hotzi'uha | vetisaref
 
 38:25
 hi | mutzet | vehi | shalchah | el | chamiha | lemor
 le'ish | asher | eleh | lo
 anokhi
 harah
-vatomer | haker | na | lemi | hachotemet | vehapetilim | vehammateh
+vatomer | haker | na
+lemi | hachotemet | vehapetilim | vehammateh
 ha'eleh
 
 38:26
 vaiyaker | Yehudah | vaiyomer | tzadekah | mimeni
-ki | al | ken | lo | netatiha
-Leshelah | veni | velo | yasaf | od
-leda'tah
+ki | al | ken | lo | netatiha | Leshelah | veni | velo | yasaf | od | leda'tah
 
 38:27
-vayhi
-be'et | lidtah
-vehineh | te'omim
-bevitnah
+vayhi | be'et | lidtah
+vehineh | te'omim | bevitnah
 
 38:28
 vayhi | velidtah
 vaiyiten | yad
 vatikach | hamyaledet | vatikshor | al | yado | shani | lemor
-zeh
-yatza | rishonah
+zeh | yatza | rishonah
 
 38:29
 vayhi | kemeshiv | yado | vehineh | yatza | achiv
-vatomer | mah | paratzta | aleikha | paretz
-vaiyikra | shemo
+vatomer | mah | paratzta
+aleikha | paretz | vaiyikra | shemo
 Paretz
 
 38:30

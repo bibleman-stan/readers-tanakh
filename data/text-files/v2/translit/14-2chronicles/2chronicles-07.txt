@@ -6,9 +6,7 @@ ukhevod | Yahweh
 male | et | habayit
 
 7:2
-velo | yakhelu | hakohanim
-lavo
-el | beit | Yahweh
+velo | yakhelu | hakohanim | lavo | el | beit | Yahweh
 ki | male | khevod | Yahweh
 et | beit | Yahweh
 
@@ -44,8 +42,7 @@ omedim
 
 7:7
 vaykadesh | Shelomoh | et | tokh | hechatzer | asher | lifnei | veit | Yahweh
-ki | asah | sham | ha'olot
-ve'et
+ki | asah | sham | ha'olot | ve'et
 chelvei | hashelamim
 ki | mizbach | hanechoshet | asher | asah | Shelomoh
 lo | yakhol | lehakhil | et | ha'olah | ve'et | haminchah
@@ -66,8 +63,7 @@ shiv'at | yamim
 
 7:10
 uveyom | esrim | usheloshah | lachodesh | hashevi'i
-shilach | et | ha'am
-le'oholeihem
+shilach | et | ha'am | le'oholeihem
 semechim | vetoei | lev
 al | hatovah | asher | asah | Yahweh | Ledavid | Velishlomoh
 Uleyisra'el
@@ -80,8 +76,8 @@ ve'et | kol | haba | al | lev | Shelomoh | la'asot | beveit | Yahweh | uveveito
 hitzliach
 
 7:12
-vaiyera | Yahweh | el | Shelomoh
-balayelah | vaiyomer | lo | shama'ti | et | tefilatekha
+vaiyera | Yahweh | el | Shelomoh | balayelah
+vaiyomer | lo | shama'ti | et | tefilatekha
 uvacharti | bamakom | hazeh | li
 leveit | zavach
 
@@ -89,23 +85,19 @@ leveit | zavach
 hen | e'etzor | hashamayim | velo | yihyeh | matar
 vehen | atzaveh | al | chagav
 le'ekhol | ha'aretz
-ve'im | ashalach | dever
-be'ami
+ve'im | ashalach | dever | be'ami
 
 7:14
 veyikane'u | ami | asher | Nikra | shemi | aleihem | veyitpalu | vivakshu | fanai
-veyashuvu
-midarkheihem | hara'im
+veyashuvu | midarkheihem | hara'im
 va'ani | eshma | min | hashamayim
 ve'eslach | lechatatam
-ve'erpa
-et | artzam
+ve'erpa | et | artzam
 
 7:15
 atah | einai | yihyu | fetuchot
 ve'azenai
-kashuvot
-litfilat
+kashuvot | litfilat
 hamakom | hazeh
 
 7:16
@@ -128,8 +120,7 @@ lo | yikaret | lekha | ish | moshel | Beyisra'el
 
 7:19
 ve'im | teshuvun | atem
-va'azavtem | chukotai | umitzvotai | asher | natati
-lifneikhem
+va'azavtem | chukotai | umitzvotai | asher | natati | lifneikhem
 vahalakhtem | va'avadtem | elohim | acherim
 vehishtachavitem | lahem
 
@@ -137,8 +128,7 @@ vehishtachavitem | lahem
 unetashtim | me'al | admati | asher | natati | lahem
 ve'et | habayit | hazeh | asher | hikdashti | lishmi
 ashlikh
-me'al | panai
-ve'ettenenu | lemashal | velishninah | bekhol | ha'amim
+me'al | panai | ve'ettenenu | lemashal | velishninah | bekhol | ha'amim
 
 7:21
 vehabayit | hazeh | asher | hayah | elyon

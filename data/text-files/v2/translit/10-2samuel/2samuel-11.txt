@@ -14,10 +14,9 @@ tovat | mar'eh | me'od
 
 11:3
 vaiyishlach | David
-vaiyidrosh
-la'ishah | vaiyomer | halo | zot | Bat | Sheva | bat | Eli'am
-eshet
-Uriyah | hachiti
+vaiyidrosh | la'ishah
+vaiyomer | halo | zot | Bat | Sheva | bat | Eli'am
+eshet | Uriyah | hachiti
 
 11:4
 vaiyishlach | David | mal'akhim | vaiyikacheha | vatavo | elav | vaiyishkav | imah
@@ -26,16 +25,14 @@ el | beitah
 
 11:5
 vatahar
-ha'ishah
-vatishlach | vataged | Ledavid
+ha'ishah | vatishlach | vataged | Ledavid
 vatomer
 harah | anokhi
 
 11:6
 vaiyishlach | David | el | Yo'av
 shelach | elai | et | Uriyah
-hachiti
-vaiyishlach | Yo'av | et | Uriyah
+hachiti | vaiyishlach | Yo'av | et | Uriyah
 el | David
 
 11:7
@@ -50,8 +47,7 @@ vaiyomer | David | Le'uriyah
 red | leveitekha
 urechatz | ragleikha
 vaiyetze | Uriyah | mibeit | hamelekh
-vatetze | acharav
-mas'at | hamelekh
+vatetze | acharav | mas'at | hamelekh
 
 11:9
 vaiyishkav | Uriyah | petach | beit | hamelekh | et
@@ -77,8 +73,7 @@ et | hadavar | hazeh
 11:12
 vaiyomer | David | el | Uriyah | shev | bazeh | gam | haiyom
 umachar | ashalecheka
-vaiyeshev | Uriyah | Virushalim | baiyom | hahu
-umimochorat
+vaiyeshev | Uriyah | Virushalim | baiyom | hahu | umimochorat
 
 11:13
 vaiyikra | lo | David | vaiyokhal | lefanav | vaiyeshet
@@ -90,29 +85,26 @@ lo | yarad
 11:14
 vayhi | vaboker
 vaiyikhto | David | sefer
-el | Yo'av
-vaiyishlach
+el | Yo'av | vaiyishlach
 beyad | Uriyah
 
 11:15
-vaiyikhto | basefer
-lemor
+vaiyikhto | basefer | lemor
 havu | et | Uriyah | el | mul | penei | hamilchamah | hachazakah
 veshavtem | me'acharav | venikah | vamet
 
 11:16
 vayhi
 bishmor | Yo'av
-el | ha'ir
-vaiyiten | et | Uriyah
+el | ha'ir | vaiyiten | et | Uriyah
 el | hamakom | asher | yada
 ki | anshei | chayil
 sham
 
 11:17
 vaiyetze'u | anshei | ha'ir | vaiyilachamu | et | Yo'av
-vaiyipol | min | ha'am
-me'avdei | David | vaiyamot
+vaiyipol | min | ha'am | me'avdei | David
+vaiyamot
 gam | Uriyah | hachiti
 
 11:18
@@ -122,64 +114,54 @@ vaiyaged | Ledavid | et | kol | divrei
 hamilchamah
 
 11:19
-vaytzav | et | hamal'akh
-lemor | kekhalotkha | et | kol | divrei | hamilchamah
+vaytzav | et | hamal'akh | lemor
+kekhalotkha | et | kol | divrei | hamilchamah
 ledaber | el | hamelekh
 
 11:20
 vehayah | im | ta'aleh | chamat | hamelekh
 ve'amar | lekha
-madua | Nigashtem | el | ha'ir
-lehilachem
+madua | Nigashtem | el | ha'ir | lehilachem
 halo | yeda'tem | et | asher | yoru
 me'al | hachomah
 
 11:21
 mi | hikah | et | Avimelekh | ben | Yerubeshet | halo | ishah | hishlikhah | alav | pelach | rekhev | me'al | hachomah | vaiyamot | Betevetz
 lamah | Nigashtem
-el | hachomah
-ve'amarta
+el | hachomah | ve'amarta
 gam | avdekha | Uriyah | hachiti
 met
 
 11:22
 vaiyelekh
-hamal'akh
-vaiyavo | vaiyaged | Ledavid | et | kol | asher | shelacho
-Yo'av
+hamal'akh | vaiyavo | vaiyaged | Ledavid | et | kol | asher | shelacho | Yo'av
 
 11:23
 vaiyomer | hamal'okh | el | David
-ki | gaveru | aleinu | ha'anashim
-vaiyetze'u | eleinu
-hasadeh
-vanihyeh | aleihem
+ki | gaveru | aleinu | ha'anashim | vaiyetze'u | eleinu
+hasadeh | vanihyeh | aleihem
 ad | petach | hasha'ar
 
 11:24
 vaiyore'u | hamor'im | el | avadekha | me'al | hachomah
-vaiyamutu
-me'avdei | hamelekh
+vaiyamutu | me'avdei | hamelekh
 vegam | avdekha | Uriyah | hachiti
 met
 
 11:25
 vaiyomer | David | el | hamal'akh | koh | tomar | el | Yo'av | al | yera | be'eineikha | et | hadavar | hazeh
-ki | khazoh | vekhazeh
-tokhal | hecharev
+ki | khazoh | vekhazeh | tokhal | hecharev
 hachazek | milchamtekha | el | ha'ir | veharesah
 vechazekehu
 
 11:26
 vatishma | eshet | Uriyah
-ki | met
-Uriyah | ishah
+ki | met | Uriyah | ishah
 vatispod
 al | ba'lah
 
 11:27
 vaiya'avor | ha'evel | vaiyishlach | David | vaiya'asfah | el | beito | vatehi | lo | le'ishah
 vateled | lo
-ben
-vaiyera | hadavar | asher | asah | David
+ben | vaiyera | hadavar | asher | asah | David
 be'einei | Yahweh

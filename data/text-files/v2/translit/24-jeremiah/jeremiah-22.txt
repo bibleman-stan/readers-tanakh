@@ -3,8 +3,7 @@ koh | amar | Yahweh
 red
 beit | melekh | Yehudah
 vedibarta | sham
-et | hadavar
-hazeh
+et | hadavar | hazeh
 
 22:2
 ve'amarta | shema | devar | Yahweh
@@ -44,8 +43,7 @@ arim
 lo | Noshavah
 
 22:7
-vekidashti | aleikha | mashchitim | ish | vekhelav
-vekharetu | mivchar | arazeikha
+vekidashti | aleikha | mashchitim | ish | vekhelav | vekharetu | mivchar | arazeikha
 vehipilu
 al | ha'esh
 
@@ -57,33 +55,34 @@ al | meh | asah | Yahweh | kakhah
 la'ir | hagedolah | hazot
 
 22:9
-ve'ameru | al | asher | azevu
+ve'ameru
+al | asher | azevu
 et | berit | Yahweh | eloheihem
 vaiyishtachavu | lelohim | acherim
 vaiya'avdum
 
 22:10
-al | tivku | lemet
-ve'al | tanudu | lo | bekhu | vakho | laholekh
+al | tivku | lemet | ve'al | tanudu
+lo | bekhu | vakho | laholekh
 ki | lo | yashuv | od
 vera'ah
 et | eretz | moladto
 
 22:11
 ki | khoh | amar | Yahweh | el | Shalum | ben | Yoshiyahu | melekh | Yehudah | hamolekh | tachat | Yoshiyahu | aviv
-asher | yatza
-min | hamakom | hazeh | lo | yashuv | sham
+asher | yatza | min | hamakom | hazeh
+lo | yashuv | sham
 od
 
 22:12
 ki | bimkom | asher | higlu | oto
 sham | yamut
-ve'et | ha'aretz | hazot | lo | yir'eh | od
+ve'et | ha'aretz | hazot
+lo | yir'eh | od
 
 22:13
 ho | boneh | veito | belo | tzedek
-va'aliyotav
-belo | mishpat | bere'ehu | ya'avod | chinam
+va'aliyotav | belo | mishpat | bere'ehu | ya'avod | chinam
 ufo'alo | lo | yiten | lo
 
 22:14
@@ -108,21 +107,18 @@ ki | ein | eineikha | velibekha
 ki
 im | al | bitz'ekha
 ve'al | dam | hanaki | lishpokh
-ve'al | ha'oshek | ve'al | hamerutzah
-la'asot
+ve'al | ha'oshek | ve'al | hamerutzah | la'asot
 
 22:18
 lakhen | koh | amar | Yahweh | el | Yehoyakim | ben | Yoshiyahu | melekh | Yehudah
 lo | yispedu | lo
 ho | achi
-veho | achot
-lo | yispedu | lo
+veho | achot | lo | yispedu | lo
 ho | adon
 veho | hodo
 
 22:19
-kevurat | chamor
-yikaver
+kevurat | chamor | yikaver
 sachov | vehashlekh | mehal'ah | lesha'arei | Yerushalim
 
 22:20
@@ -138,11 +134,9 @@ lo | eshma
 zeh | darkekh | mine'urayikh | ki | lo | shama'at | bekoli
 
 22:22
-kol | ro'ayikh | tir'eh | ruach
-ume'ahavayikh
+kol | ro'ayikh | tir'eh | ruach | ume'ahavayikh
 bashevi | yelekhu
-ki | az | tevoshi | venikhlamt
-mikol
+ki | az | tevoshi | venikhlamt | mikol
 ra'atekh
 
 22:23
@@ -155,13 +149,12 @@ chai | ani | ne'um | Yahweh
 ki | im | yihyeh | Kaneyahu | ven | Yehoyakim | melekh | Yehudah
 chotam
 al | yad | yemini
-ki | misham
-etekenka
+ki | misham | etekenka
 
 22:25
 unetatikha | beyad | mevakshei | nafshekha
-uveyad | asher | atah | yagor
-mipeneihem | uveyad | Nevukhadretzar | melekh | Bavel
+uveyad | asher | atah | yagor | mipeneihem
+uveyad | Nevukhadretzar | melekh | Bavel
 uveyad | hakasdim
 
 22:26

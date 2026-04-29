@@ -1,0 +1,29 @@
+name: m2_5_verb_participle_complement
+rule: M2
+subcase: verb_participle_complement
+severity: STRONG-MERGE-CANDIDATE
+description: |
+  Periphrastic / verb + participial complement: finite verb (typically היה /
+  יהיה) on line N followed by a bare participle on line N+1. The two form
+  a compound predicate per WO §37.6.1.
+
+  Example (Gen 4:2):
+    line N:    וְקַיִן הָיָה
+    line N+1:  עֹבֵד אֲדָמָה
+    merge:     וְקַיִן הָיָה עֹבֵד אֲדָמָה ("and Cain was a tiller of soil")
+
+trigger:
+  line_n_anywhere:
+    has_finite_verb: true
+  line_n1_first_token:
+    morphology: bare_participle
+  line_n1_anywhere:
+    has_finite_verb: false
+  combined_max_prosodic_words: 7
+
+guards:
+  - poetic_register
+  - heavy_participial_complement   # don't merge if participle has heavy DO+PP
+
+annotation_template: "Verb + participial complement ({pwc} prosodic words)"
+suggested_action: MERGE

@@ -23,21 +23,18 @@ mei | afesayim
 
 47:4
 vaiyamod | elef
-vaiya'avireni | vamayim
-mayim | birkayim | vaiyamod | elef
-vaiya'avireni
-mei | matenayim
+vaiya'avireni | vamayim | mayim | birkayim
+vaiyamod | elef
+vaiya'avireni | mei | matenayim
 
 47:5
-vaiyamod | elef | nachal | asher | lo | ukhal
-la'avor
+vaiyamod | elef | nachal | asher | lo | ukhal | la'avor
 ki | ga'u | hamayim | mei | sachu
 nachal | asher | lo | ye'aver
 
 47:6
 vaiyomer | elai
-hara'ita | ven | adam
-vaiyolikheni | vayshiveni
+hara'ita | ven | adam | vaiyolikheni | vayshiveni
 sefat | hanachal
 
 47:7
@@ -106,20 +103,17 @@ Chatzer | Hatikhon | asher | el | gevul | Chavran
 vehayah | gevul | min | haiyam | Chatzar | Einon | gevul | Damesek
 vetzafon | tzafonah
 ugevul | Chamat
-ve'et
-pe'at | tzafon
+ve'et | pe'at | tzafon
 
 47:18
 ufe'at | kadim | mibein | Chavran | umibein | Damesek | umibein | Hagil'ad | umibein | eretz | Yisra'el | Haiyarden
 migevul | al | haiyam | hakadmoni | tamodu
-ve'et
-pe'at | kadimah
+ve'et | pe'at | kadimah
 
 47:19
-ufe'at | negev | teimanah
-Mitamar | ad | mei | merivot | Kadesh | nachalah
-el | haiyam | hagadol
-ve'et | pe'at | teimanah
+ufe'at | negev | teimanah | Mitamar | ad | mei | merivot | Kadesh
+nachalah
+el | haiyam | hagadol | ve'et | pe'at | teimanah
 negbah
 
 47:20
@@ -138,8 +132,7 @@ lakhem | ulehagerim | hagarim | betokhkhem
 asher | holidu | vanim
 betokhkhem
 vehayu | lakhem | ke'ezrach | bivnei | Yisra'el
-itekhem | yipelu | venachalah
-betokh
+itekhem | yipelu | venachalah | betokh
 shivtei | Yisra'el
 
 47:23

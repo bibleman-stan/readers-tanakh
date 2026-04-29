@@ -1,9 +1,7 @@
 9:1
 al | tismach | Yisra'el | el | gil | ka'amim
-ki | zanita
-me'al | eloheikha
-ahavta | etnan
-al
+ki | zanita | me'al | eloheikha
+ahavta | etnan | al
 kol | garenot | dagan
 
 9:2
@@ -14,14 +12,13 @@ yekhachesh | bah
 
 9:3
 lo | yeshevu | be'eretz | Yahweh
-veshav | Efrayim | Mitzrayim
-Uve'ashur | tame | yokhelu
+veshav | Efrayim | Mitzrayim | Uve'ashur
+tame | yokhelu
 
 9:4
 lo | yisekhu | Layahweh | yayin | velo | ye'ervu | lo
 zivcheihem | kelechem | onim | lahem
-kol | okhelav
-yitama'u
+kol | okhelav | yitama'u
 ki | lachmam | lenafsham
 lo | yavo
 beit | Yahweh
@@ -41,14 +38,12 @@ choach | be'oholeihem
 ba'u | yemei | hapekudah | ba'u | yemei | hashilum
 yede'u
 Yisra'el
-evil | hanavi | meshuga | ish | haruach
-al | ro | avonekha
+evil | hanavi | meshuga | ish | haruach | al | ro | avonekha
 verabah | mastemah
 
 9:8
 tzopeh | Efrayim
-im | elohai
-navi | pach | yakovosh | al | kol | derakhav
+im | elohai | navi | pach | yakovosh | al | kol | derakhav
 mastemah | beveit | elohav
 
 9:9
@@ -64,13 +59,11 @@ kevikurah | vit'enah | bereshitah
 ra'iti
 avoteikhem
 hemah | ba'u | Va'al | Pe'or | vaiyinazeru | laboshet
-vaiyihyu | shikutzim
-ke'ohovam
+vaiyihyu | shikutzim | ke'ohovam
 
 9:11
-Efrayim
-ka'of | yit'ofef | kevodam
-miledah | umibeten | umeherayon
+Efrayim | ka'of
+yit'ofef | kevodam | miledah | umibeten | umeherayon
 
 9:12
 ki | im | yegadelu | et | beneihem
@@ -78,12 +71,11 @@ veshikaltim | me'adam | ki | gam | o | lahem | besuri | mehem
 
 9:13
 Efrayim | ka'asher | ra'iti | Letzor
-shetulah | venaveh
-Ve'efrayim | lehotzi | el | horeg | banav
+shetulah | venaveh | Ve'efrayim | lehotzi | el | horeg | banav
 
 9:14
-ten | lahem | Yahweh
-mah | titen | ten | lahem | rechem | mashkil | veshadayim
+ten | lahem | Yahweh | mah | titen
+ten | lahem | rechem | mashkil | veshadayim
 tzomekim
 
 9:15
@@ -103,5 +95,4 @@ vehemati | machamadei | vitnam
 9:17
 yim'asem | elohai
 ki | lo | shame'u | lo
-veyihyu | nodedim
-bagoyim
+veyihyu | nodedim | bagoyim

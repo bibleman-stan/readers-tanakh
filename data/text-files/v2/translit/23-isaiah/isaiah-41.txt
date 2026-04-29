@@ -1,6 +1,6 @@
 41:1
-hacharishu | elai | iyim
-ule'umim | yachalifu | khoach
+hacharishu | elai | iyim | ule'umim
+yachalifu | khoach
 yigeshu | az | yedaberu
 yachdav
 lamishpat | nikravah
@@ -20,26 +20,19 @@ lo | yavo
 41:4
 mi | fa'al | ve'asah
 kore | hadorot | merosh | ani | Yahweh | rishon
-ve'et | acharonim
-ani | hu
+ve'et | acharonim | ani | hu
 
 41:5
 ra'u | iyim | veyira'u
-ketzot | ha'aretz
-yecheradu
-karevu
-vaiye'etayun
+ketzot | ha'aretz | yecheradu
+karevu | vaiye'etayun
 
 41:6
-ish | et | re'ehu
-ya'zoru
-ule'achiv
+ish | et | re'ehu | ya'zoru | ule'achiv
 yomar | chazak
 
 41:7
-vaychazek | charash | et | tzoref
-machalik | patish
-et | holem | pa'am
+vaychazek | charash | et | tzoref | machalik | patish | et | holem | pa'am
 omer | ladevek | tov | hu
 vaychazekehu | vemasmerim
 lo | yimot
@@ -47,12 +40,10 @@ lo | yimot
 41:8
 ve'atah | Yisra'el | avdi
 Ya'ako | asher | bechartikha
-zera
-Avraham | ohavi
+zera | Avraham | ohavi
 
 41:9
-asher | hechezakticha | miktzot | ha'aretz
-ume'atzileiha
+asher | hechezakticha | miktzot | ha'aretz | ume'atzileiha
 keraticha
 va'omar | lekha | avdi | atah | bechartikha | velo | me'astikha
 
@@ -71,8 +62,8 @@ anshei | rivekha
 
 41:12
 tevakshem | velo | timtza'em
-anshei
-matzutekha | yihyu | khe'ayin | ukhe'efes
+anshei | matzutekha
+yihyu | khe'ayin | ukhe'efes
 anshei | milchamtekha
 
 41:13
@@ -82,8 +73,8 @@ ha'omer | lekha | al | tira
 ani | azartikha
 
 41:14
-al | tire'i | tola'at | Ya'ako
-metei | Yisra'el
+al | tire'i | tola'at | Ya'ako | metei
+Yisra'el
 ani | azartikh | ne'um | Yahweh
 vego'alekh
 kedoosh | Yisra'el
@@ -97,15 +88,13 @@ kamotz | tasim
 
 41:16
 tizrem | veruach | tisa'em
-use'arah
-tafitz | otam
+use'arah | tafitz | otam
 ve'atah | tagil | Bayahweh
 bikdoosh | Yisra'el
 tithalal
 
 41:17
-ha'aniyim | veha'evyonim | mevakshim | mayim | va'ayin
-leshonam
+ha'aniyim | veha'evyonim | mevakshim | mayim | va'ayin | leshonam
 batzama | nashatah
 ani | Yahweh | e'enem
 elohei | Yisra'el
@@ -127,8 +116,7 @@ yachdav
 lema'an | yir'u | veyede'u | veyasimu | veyaskilu | yachdav
 ki | yad | Yahweh
 asetah | zot
-ukedoosh | Yisra'el
-bera'ah
+ukedoosh | Yisra'el | bera'ah
 
 41:21
 karevu | rivkhem
@@ -144,8 +132,7 @@ o | haba'ot
 hashmi'unu
 
 41:23
-hagidu | ha'otiyot | le'achor
-venede'ah
+hagidu | ha'otiyot | le'achor | venede'ah
 ki | elohim
 atem
 af | teitivu | vetare'u
@@ -158,15 +145,14 @@ me'afa | to'evah
 yivchar | bakhem
 
 41:25
-ha'iroti | mitzafon | vaiyat
-mimizrach | shemesh | yikra | vishmi
+ha'iroti | mitzafon | vaiyat | mimizrach | shemesh
+yikra | vishmi
 veyavo | seganim | kemov | chomer
 ukhemo | yotzer
 yirmos | tit
 
 41:26
-mi | higid | merosh | veneda'ah | umilefanim
-venomar | tzadik
+mi | higid | merosh | veneda'ah | umilefanim | venomar | tzadik
 af | ein | magid | af | ein | mashmia
 af | ein | shomea
 imreikhem
@@ -183,6 +169,5 @@ veyashivu | davar
 
 41:29
 hen | kulam
-aven | efes
-ma'aseihem | ruach | vatohu
+aven | efes | ma'aseihem | ruach | vatohu
 niskeihem

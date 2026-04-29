@@ -5,8 +5,7 @@ vekhol
 shivtei | Yisra'el
 
 9:2
-vegam | Chamat
-tigbol | bah
+vegam | Chamat | tigbol | bah
 Tzor | Vetzidon
 ki | chokhmah | me'od
 
@@ -25,11 +24,11 @@ ba'esh | te'akhel
 9:5
 tere | Ashkelon | vetira | Ve'azah | vetachil | me'od | Ve'ekron
 ki | hovish | mebatah | ve'avad | melekh | Me'azah
-Ve'ashkelon | lo | teshev
+Ve'ashkelon
+lo | teshev
 
 9:6
-veyashav | mamzer
-Be'ashdod
+veyashav | mamzer | Be'ashdod
 vehikhrati
 ge'on | pelishtim
 
@@ -42,8 +41,7 @@ kivusi
 
 9:8
 vechaniti | leveiti | mitzavah | me'over | umishav | velo | ya'avor | aleihem | od
-noges
-ki | atah | ra'iti | ve'einai
+noges | ki | atah | ra'iti | ve'einai
 
 9:9
 gili | me'od | bat | Tziyon | hari'i | bat | Yerushalim
@@ -56,17 +54,15 @@ ben | atonot
 
 9:10
 vehikhrati | rekhev | Me'efrayim | vesus | Mirushalim
-venikhretah | keshet | milchamah | vediber | shalom
-lagoyim | umashelo | miyam | ad | yam | uminahar
+venikhretah | keshet | milchamah
+vediber | shalom | lagoyim | umashelo | miyam | ad | yam | uminahar
 ad | afsei | aretz
 
 9:11
-gam | at | bedam | beritekh | shilachti | asirayikh | mibor | ein | mayim
-bo
+gam | at | bedam | beritekh | shilachti | asirayikh | mibor | ein | mayim | bo
 
 9:12
-shuvu | levitzaron
-asirei
+shuvu | levitzaron | asirei
 hatikvah
 gam | haiyom | magid | mishneh | ashiv | lakh
 
@@ -80,8 +76,7 @@ vesamtikh | kecherev | gibor
 9:14
 Vayahweh | aleihem | yera'eh
 veyatza | khabarak
-chitzo
-Vadonai | Yahweh | bashofar | yitka
+chitzo | Vadonai | Yahweh | bashofar | yitka
 vehalakh
 besa'arot | teiman
 
@@ -93,8 +88,8 @@ veshatu | hamu | kemov | yayin | umal'u | kamizrak | kezaviyot | mizbeach
 9:16
 vehoshi'am | Yahweh | eloheihem | baiyom | hahu
 ketzon | amo
-ki | avnei | nezer
-mitnosot | al | admato
+ki | avnei | nezer | mitnosot
+al | admato
 
 9:17
 ki | mah | tuvo | umah | yafeyo

@@ -1,22 +1,18 @@
 24:1
-vaiyosef | af | Yahweh
-lacharot
-Beyisra'el
+vaiyosef | af | Yahweh | lacharot | Beyisra'el
 vaiyaset | et | David | bahem | lemor
-lekh | meneh | et | Yisra'el
-ve'et | Yehudah
+lekh | meneh | et | Yisra'el | ve'et | Yehudah
 
 24:2
 vaiyomer | hamelekh | el | Yo'av | sar | hachayil | asher | ito | shut | na | bekhol | shivtei | Yisra'el | Midan | ve'ad | Be'er | Sheva | ufikdu
-et | ha'am
-veyada'ti | et
-mispar | ha'am
+et | ha'am | veyada'ti | et | mispar | ha'am
 
 24:3
 vaiyomer | Yo'av | el | hamelekh | veyosef | Yahweh | eloheikha | el | ha'am | kahem | vekhahem | me'ah | fe'amim
 ve'einei | adoni | hamelekh
 ro'ot
-vadoni | hamelekh | lamah | chafetz | badavar | hazeh
+vadoni | hamelekh
+lamah | chafetz | badavar | hazeh
 
 24:4
 vaiyechezak | devar | hamelekh | el | Yo'av
@@ -34,8 +30,7 @@ ve'el | Ya'zer
 24:6
 vaiyavo'u | Hagil'adah
 ve'el | eretz | Tachtim
-Chadeshi
-vaiyavo'u | Danah | Ya'an | vesaviv
+Chadeshi | vaiyavo'u | Danah | Ya'an | vesaviv
 el | Tzidon
 
 24:7
@@ -46,8 +41,7 @@ vaiyetze'u | el | Negev | Yehudah
 Be'er | Shava
 
 24:8
-vaiyashutu
-bekhol | ha'aretz
+vaiyashutu | bekhol | ha'aretz
 vaiyavo'u | miktzeh | tish'ah | chodashim | ve'esrim | yom
 Yerushalim
 
@@ -65,22 +59,16 @@ safar | et | ha'am
 vaiyomer | David | el | Yahweh | chatati | me'od | asher | asiti
 ve'atah | Yahweh
 ha'aver | na | et | avon | avdekha
-ki | Niskalti
-me'od
+ki | Niskalti | me'od
 
 24:11
-vaiyakom | David
-baboker
-udevar | Yahweh | hayah | el | Gad | hanavi
-chozeh | David
-lemor
+vaiyakom | David | baboker
+udevar | Yahweh | hayah | el | Gad | hanavi | chozeh | David | lemor
 
 24:12
 halokh | vedibarta | el | David | koh | amar | Yahweh
-shalosh | anokhi
-notel | aleikha
-bechar | lekha | achat | mehem
-ve'e'eseh | lakh
+shalosh | anokhi | notel | aleikha
+bechar | lekha | achat | mehem | ve'e'eseh | lakh
 
 24:13
 vaiyavo | Gad | el | David
@@ -96,8 +84,8 @@ uveyad | adam
 al | epolah
 
 24:15
-vaiyiten | Yahweh | dever | Beyisra'el
-mehaboker | ve'ad | et | mo'ed
+vaiyiten | Yahweh | dever | Beyisra'el | mehaboker
+ve'ad | et | mo'ed
 vaiyamot | min | ha'am | Midan | ve'ad | Be'er | Sheva | shiv'im | elef | ish
 
 24:16
@@ -110,7 +98,8 @@ Ha'ornah | hayvusi
 
 24:17
 vaiyomer | David | el | Yahweh | bir'oto | et | hamal'akh | hamakeh | va'am | vaiyomer | hineh | anokhi | haro'eh | chatati | ve'anokhi | he'eveiti
-ve'eleh | hatzon | meh | asu
+ve'eleh | hatzon
+meh | asu
 tehi | na | yadekha | bi | uveveit | avi
 
 24:18
@@ -120,8 +109,8 @@ vaiyomer | lo | aleh | hakem | Layahweh | mizbeach
 begoren | Araneyah | hayvusi
 
 24:19
-vaiya'al | David | kidvar | Gad
-ka'asher | tzivah | Yahweh
+vaiya'al | David | kidvar | Gad | ka'asher
+tzivah | Yahweh
 
 24:20
 vaiyashkef | Aravnah | vaiyar | et | hamelekh | ve'et | avadav
@@ -136,19 +125,18 @@ vaiyomer | Aravnah
 madua | ba | adoni | hamelekh
 el | avdo
 vaiyomer | David | liknot | me'imekha | et | hagoren | livnot | mizbeach | Layahweh
-vete'atzar | hamagefah | me'al | ha'am
+vete'atzar | hamagefah
+me'al | ha'am
 
 24:22
 vaiyomer | Aravnah | el | David
 yikach | veya'al | adoni | hamelekh
-hatov | be'ayno
-re'eh | habakar | la'olah
-vehammorigim | ukhelei | habakar
-la'etzim
+hatov | be'ayno | re'eh | habakar | la'olah
+vehammorigim | ukhelei | habakar | la'etzim
 
 24:23
-hakol | natan | Aravnah | hamelekh
-lamelekh | vaiyomer | Aravnah | el | hamelekh
+hakol | natan | Aravnah | hamelekh | lamelekh
+vaiyomer | Aravnah | el | hamelekh
 Yahweh | eloheikha
 yirtzekha
 
@@ -156,14 +144,12 @@ yirtzekha
 vaiyomer | hamelekh | el | Aravnah | lo | ki | kano | ekneh | me'otkha | bimchir
 velo | a'aleh | Layahweh | elohai
 olot | chinam
-vaiyiken | David | et | hagoren | ve'et | habakar
-bekhesef
+vaiyiken | David | et | hagoren | ve'et | habakar | bekhesef
 shekalim | chamishim
 
 24:25
 vaiyiven | sham | David | mizbeach | Layahweh
 vaiya'al | olot
-ushelamim
-vaiye'ater | Yahweh | la'aretz
+ushelamim | vaiye'ater | Yahweh | la'aretz
 vate'atzar | hamagefah
 me'al | Yisra'el

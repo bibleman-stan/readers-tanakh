@@ -11,24 +11,25 @@ o | nefesh | asher | tiga | bekhol | davar | tame
 o | venivlat | chaiyah | teme'ah | o | benivlat | behemah | teme'ah
 o | benivlat
 sheretz | tame
-vene'lam | mimenu | vehu | tame
+vene'lam | mimenu
+vehu | tame
 ve'ashem
 
 5:3
 o | khi | yiga | betum'at | adam | lekhol | tum'ato
-asher | yitma
-bah
-vene'lam | mimenu | vehu | yada
+asher | yitma | bah
+vene'lam | mimenu
+vehu | yada
 ve'ashem
 
 5:4
 o | nefesh | ki | tishava | levate | visfatayim | lehara | o | leheitiv | lekhol | asher | yevate | ha'adam | bishvu'ah
-vene'lam | mimenu | vehu | yada | ve'ashem
-le'achat | me'eleh
+vene'lam | mimenu
+vehu | yada | ve'ashem | le'achat | me'eleh
 
 5:5
-vehayah | khi | ye'sham
-le'achat | me'eleh | vehitvadah | asher | chata
+vehayah | khi | ye'sham | le'achat | me'eleh
+vehitvadah | asher | chata
 aleiha
 
 5:6
@@ -57,8 +58,8 @@ chatat
 hu
 
 5:10
-ve'et | hasheni | ya'aseh | olah
-kamishpat | vekhiper | alav | hakohen | mechatato | asher | chata
+ve'et | hasheni | ya'aseh | olah | kamishpat
+vekhiper | alav | hakohen | mechatato | asher | chata
 venislach | lo
 
 5:11
@@ -93,8 +94,7 @@ le'asham
 
 5:16
 ve'et | asher | chata | min | hakodesh | yeshalem | ve'et | chamishito | yosef | alav
-venatan | oto
-lakohen
+venatan | oto | lakohen
 vehakohen | yekhaper | alav | be'eil | ha'asham
 venislach | lo
 
@@ -113,25 +113,22 @@ venislach | lo
 5:19
 asham
 hu
-ashom | asham
-Layahweh
+ashom | asham | Layahweh
 
 5:20
 vaydaber | Yahweh
 el | Mosheh | lemor
 
 5:21
-nefesh | ki | techeta
-uma'alah | ma'al | Bayahweh
-vekhichesh | ba'amito | befikadon | ov | vitsumet | yad | o | vegazel
+nefesh | ki | techeta | uma'alah | ma'al
+Bayahweh | vekhichesh | ba'amito | befikadon | ov | vitsumet | yad | o | vegazel
 o
 ashak | et | amito
 
 5:22
 ov | matza | avedah | vekhichesh | bah
 venishba | al | shaker
-al | achat | mikol | asher | ya'aseh | ha'adam
-lachato | vahenah
+al | achat | mikol | asher | ya'aseh | ha'adam | lachato | vahenah
 
 5:23
 vehayah | ki | yecheta | ve'ashem
@@ -143,19 +140,16 @@ o | et | ha'avedah | asher | matza
 5:24
 o | mikol | asher | yishava | alav | lasheker
 veshilam | oto | berosho
-vachamishitav
-yosef | alav
+vachamishitav | yosef | alav
 la'asher | hu | lo | yitenenu
 beyom | ashmato
 
 5:25
-ve'et | ashamo | yavi
-Layahweh
+ve'et | ashamo | yavi | Layahweh
 ayil | tamim | min | hatzon | be'erkekha | le'asham
 el | hakohen
 
 5:26
 vekhiper | alav | hakohen | lifnei | Yahweh
 venislach | lo
-al | achat | mikol | asher | ya'aseh
-le'ashmah | vah
+al | achat | mikol | asher | ya'aseh | le'ashmah | vah

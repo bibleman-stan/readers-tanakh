@@ -3,8 +3,7 @@ anah | Nevukhadnetzar | sheleh | haveit | beveiti
 vera'nan | beheikheli
 
 4:2
-chelem | chazeit
-vidachalinani
+chelem | chazeit | vidachalinani
 veharhorin | al | mishkevi
 vechezvei | reshi
 yevahalunani
@@ -16,8 +15,7 @@ di | feshar | chelma
 yehod'unani
 
 4:4
-bedayin | alalin | chartumaiya | ashefaiya
-kasdai
+bedayin | alalin | chartumaiya | ashefaiya | kasdai
 vegazeraiya
 vechelma | amar | anah | kodameihon
 ufishreh | la | mehod'in | li
@@ -31,8 +29,7 @@ kadamohi | amret
 4:6
 Beleteshatzar | rav | chartumaiya
 di | anah | yid'et | di | ruach | elahin | kadishin | bakh
-vekhol | raz
-la | anes | lakh
+vekhol | raz | la | anes | lakh
 chezvei | chelmi | di | chazeit | ufishreh
 emar
 
@@ -58,7 +55,8 @@ umineh | yitezin | kol | bisra
 4:10
 chazeh | haveit | bechezvei | reshi
 al | mishkevi
-va'alu | ir | vekadish | min | shemaiya | nachit
+va'alu | ir | vekadish | min | shemaiya
+nachit
 
 4:11
 kare | vechayil | vekhen | amar | godu | ilana | vekatzitzu | anfohi
@@ -67,8 +65,8 @@ uvadaru | inbeh
 tenud | cheiveta | min | tachtohi | vetziperaiya | min | anfohi
 
 4:12
-beram | ikar | shareshohi | be'ar'a | shevuku | uve'esur | di | farzel | unechash
-bedit'a
+beram | ikar | shareshohi | be'ar'a | shevuku
+uve'esur | di | farzel | unechash | bedit'a
 di | vara
 uvetal | shemaiya | yitztaba
 ve'im | cheivta | chalakeh
@@ -77,15 +75,13 @@ ba'asav | ar'a
 4:13
 liveh | min | enosha | yeshanon
 ulevav | cheivah | yityehiv | leh
-veshiv'ah | idanin
-yachlefun | alohi
+veshiv'ah | idanin | yachlefun | alohi
 
 4:14
 bigzerat | irin | pitgama | umemar | kadishin
 she'eleta
 ad | divrat | di | yinde'un | chaiyaiya | di | shalit | ilaya | bemalkhut | enosha | uleman | di | yitzbe | yiteninah
-ushefal | anashim
-yekim | alaiyah
+ushefal | anashim | yekim | alaiyah
 
 4:15
 denah | chelma | chazeit
@@ -97,25 +93,22 @@ di | ruach | elahin | kadishin | bakh
 
 4:16
 edayin | Daniyel | di | shemeh | Beleteshatzar | eshtomam | kesha'ah | chadah
-vera'yonohi
-yevahaluneh
+vera'yonohi | yevahaluneh
 aneh | malka | ve'amar | Beleteshatzar | chelma | ufishre | al | yevahalakh
-aneh | Veleteshatzar | ve'amar
-mare'i
+aneh | Veleteshatzar | ve'amar | mare'i
 chelma | lesane'ayikh
 ufishreh | le'arayikh
 
 4:17
 ilana | di | chazayta
-di | revah
-utekif
+di | revah | utekif
 verumeh | yimte | lishmaiya
 vachazoteh | lekhol | ar'a
 
 4:18
 ve'afeyeh | shapir | ve'inbeh | sagi | umazon | lekhola- | veh
-techotohi | tedur | cheivat | bara
-uve'anfohi | yishkenan
+techotohi | tedur | cheivat | bara | uve'anfohi
+yishkenan
 tziparei | shemaiya
 
 4:19
@@ -130,8 +123,7 @@ vedi | chazah | malka | ir | vekadish | nachit | min | shemaiya | ve'amar | godu
 uve'esur | di | farzel | unechash | bedit'a
 di | vara
 uvetal | shemaiya | yitztaba | ve'im | cheivat | bara | chalakeh
-ad | di | shiv'ah | idanin
-yachlefun | alohi
+ad | di | shiv'ah | idanin | yachlefun | alohi
 
 4:21
 denah | fishra | malka | ugezerat | ilaya | hi
@@ -140,8 +132,7 @@ al | mar'i | malka
 
 4:22
 velakh | taredin | min | anasha | ve'im | cheivat | bara | leheveh | medorakh | ve'isba | khetorin | lakh | yeta'amun | umital | shemaiya | lakh | metzabe'in
-veshiv'ah | idanin
-yachlefun | alayikh
+veshiv'ah | idanin | yachlefun | alayikh
 ad | di | tinda | di | shalit | ilaya | bemalkhut | anasha
 uleman | di | yitzbe
 yiteninah
@@ -158,8 +149,7 @@ lahen | malka | milki | yishpar | alayikh
 vachatayakh | betzidkah | feruk
 va'avayatakh
 bemichan | anayin
-hen | teheve | arkhah
-lishlevetakh
+hen | teheve | arkhah | lishlevetakh
 
 4:25
 kola | meta
@@ -177,13 +167,12 @@ di | anah | venaytah | leveit | malkhu | bitkaf | chisni | velikar | hadri
 
 4:28
 od | mileta | befum | malka | kal | min | shemaiya | nefal
-lakh | amerin | Nevukhadnetzar | malka
-malkhutah | adat | minakh
+lakh | amerin | Nevukhadnetzar | malka | malkhutah
+adat | minakh
 
 4:29
 umin | anasha | lakh | taredin | ve'im | cheivat | bara | medorakh | isba | khetorin | lakh | yeta'amun
-veshiv'ah | idanin
-yachlefun | alayikh
+veshiv'ah | idanin | yachlefun | alayikh
 ad | di | tinda | di | shalit | ilaya | bemalkhut | anasha
 uleman | di | yitzbe
 yiteninah
@@ -223,8 +212,7 @@ husefat | li
 
 4:34
 ke'an | anah | Nevukhadnetzar | meshabach | umeromem | umehadar | lemelekh | shemaiya
-di | khol | ma'avadohi | keshot
-ve'orechateh
+di | khol | ma'avadohi | keshot | ve'orechateh
 din
 vedi | mahlekhin | begevah
 yakhil | lehashpalah

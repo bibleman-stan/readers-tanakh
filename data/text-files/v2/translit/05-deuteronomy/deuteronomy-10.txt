@@ -6,14 +6,13 @@ ve'asita | lekha
 aron | etz
 
 10:2
-ve'ekhto | al | haluchot
-et | hadevarim | asher | hayu | al | haluchot | harishonim | asher | shibarta
+ve'ekhto | al | haluchot | et | hadevarim
+asher | hayu | al | haluchot | harishonim | asher | shibarta
 vesamtam | ba'aron
 
 10:3
 va'a'as | aron | atzei | shitim
-va'efsol | shenei | luchot | avanim
-karishonim
+va'efsol | shenei | luchot | avanim | karishonim
 va'a'al | haharah
 ushenei | haluchot | beyadi
 
@@ -24,13 +23,14 @@ beyom | hakahal | vaiyitenem | Yahweh
 elai
 
 10:5
-va'efen | va'ered | min | hahar | va'asim | et | haluchot | ba'aron | asher | asiti
+va'efen | va'ered | min | hahar
+va'asim | et | haluchot | ba'aron | asher | asiti
 vaiyihyu | sham
 ka'asher | tzivani | Yahweh
 
 10:6
-uvenei | Yisra'el | nase'u | Mibe'erot | Benei | Ya'akan
-Moserah | sham | met | Aharon | vaiyikaver | sham
+uvenei | Yisra'el | nase'u | Mibe'erot | Benei | Ya'akan | Moserah
+sham | met | Aharon | vaiyikaver | sham
 vaykhahen | El'azar | beno
 tachtav
 
@@ -38,8 +38,7 @@ tachtav
 misham | nase'u
 Hagudgodah
 umin | Hagudgodah | Yatevatah
-eretz
-nachalei | mayim
+eretz | nachalei | mayim
 
 10:8
 ba'et | hahiv | hivdil | Yahweh | et | shevet | halevi
@@ -51,16 +50,13 @@ haiyom | hazeh
 
 10:9
 al | ken | lo | hayah | Lelevi | chelek | venachalah
-im | echav
-Yahweh | hu | nachalato
-ka'asher | diber | Yahweh | eloheikha
-lo
+im | echav | Yahweh | hu | nachalato
+ka'asher | diber | Yahweh | eloheikha | lo
 
 10:10
 ve'anokhi | amadti | vahar | kaiyamim | harishonim
 arba'im | yom
-ve'arba'im
-layelah
+ve'arba'im | layelah
 vaiyishma | Yahweh | elai | gam | bapa'am | hahiv
 lo | avah | Yahweh
 hashchitekha
@@ -77,13 +73,11 @@ ve'atah | Yisra'el
 mah | Yahweh | eloheikha
 sho'el | me'imakh
 ki | im | leyir'ah | et | Yahweh | eloheikha | lalekhet | bekhol | derakhav | ule'ahavah | oto
-vela'avod | et | Yahweh | eloheikha
-bekhol | levavekha | uvekhol | nafshekha
+vela'avod | et | Yahweh | eloheikha | bekhol | levavekha | uvekhol | nafshekha
 
 10:13
 lishmor | et | mitzvot | Yahweh | ve'et | chukotav | asher | anokhi | metzavekha
-haiyom
-letov | lakh
+haiyom | letov | lakh
 
 10:14
 hen | Layahweh | eloheikha
@@ -100,16 +94,14 @@ kaiyom | hazeh
 
 10:16
 umaltem
-et
-arelat | levavkhem
+et | arelat | levavkhem
 ve'arepekhem
 lo | takshu
 od
 
 10:17
 ki | Yahweh | eloheikhem
-hu | elohei | ha'elohim
-va'adonei
+hu | elohei | ha'elohim | va'adonei
 ha'adonim
 ha'el | hagadol | hagibor | vehanora | asher | lo | yisa | fanim
 velo | yikach
@@ -118,18 +110,18 @@ shochad
 10:18
 oseh | mishpat | yatom
 ve'almanah
-ve'ohev | ger | latet | lo | lechem | vesimlah
+ve'ohev | ger | latet | lo
+lechem | vesimlah
 
 10:19
-va'ahavtem
-et | hager
+va'ahavtem | et | hager
 ki | gerim | heyitem | be'eretz | Mitzrayim
 
 10:20
 et | Yahweh | eloheikha | tira
 oto | ta'avod
-uvo | tidbak
-uvishmo | tishavea
+uvo | tidbak | uvishmo
+tishavea
 
 10:21
 hu | tehilatekha

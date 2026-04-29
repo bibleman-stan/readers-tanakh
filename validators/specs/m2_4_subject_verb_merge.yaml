@@ -1,0 +1,29 @@
+name: m2_4_subject_verb_merge
+rule: M2
+subcase: subject_verb_merge
+severity: STRONG-MERGE-CANDIDATE
+description: |
+  Short subject NP (1 prosodic word, no finite verb) + line N+1 starting with
+  a finite verb. Subject and predicate form the clause nucleus per WO §10
+  / JM §125 — they must not be split when both lines are short.
+
+  Example (Gen 4:2):
+    line N:    וְקַיִן              (single-word subject NP, no verb)
+    line N+1:  הָיָה               (finite verb starting line)
+    merge:     וְקַיִן הָיָה        ("and Cain was")
+
+trigger:
+  line_n_anywhere:
+    has_finite_verb: false        # line N is bare subject (no verb yet)
+  line_n1_first_token:
+    morphology: finite_verb       # finite verb begins line N+1
+  combined_max_prosodic_words: 5
+
+guards:
+  - poetic_register
+  - prev_line_incomplete          # only fire when prev clause is complete
+                                   # (line N is genuinely a new subject NP,
+                                   #  not a stranded modifier)
+
+annotation_template: "Subject NP + verb merge ({pwc} prosodic words)"
+suggested_action: MERGE

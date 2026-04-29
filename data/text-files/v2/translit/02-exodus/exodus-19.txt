@@ -1,12 +1,11 @@
 19:1
-bachodesh | hashelishi
-letzet | benei | Yisra'el | me'eretz | Mitzrayim | baiyom | hazeh | ba'u
-midbar | Sinai
+bachodesh | hashelishi | letzet | benei | Yisra'el | me'eretz | Mitzrayim | baiyom | hazeh
+ba'u | midbar | Sinai
 
 19:2
 vaiyis'u | Merefidim | vaiyavo'u | midbar | Sinai
-vaiyachanu
-bamidbar | vaiyichan | sham | Yisra'el
+vaiyachanu | bamidbar
+vaiyichan | sham | Yisra'el
 neged | hahar
 
 19:3
@@ -18,8 +17,7 @@ vetageid
 livnei | Yisra'el
 
 19:4
-atem | re'item | asher | asiti
-Lemitzrayim
+atem | re'item | asher | asiti | Lemitzrayim
 va'esa | etkhem | al | kanfei | nesharim
 va'avi | etkhem
 elai
@@ -27,8 +25,7 @@ elai
 19:5
 ve'atah | im | shamoa | tishme'u | bekoli
 ushemartem
-et | beriti
-vihyitem | li | segulah | mikol | ha'amim | ki | li
+et | beriti | vihyitem | li | segulah | mikol | ha'amim | ki | li
 kol | ha'aretz
 
 19:6
@@ -54,8 +51,7 @@ el | Yahweh
 19:9
 vaiyomer | Yahweh | el | Mosheh | hineh | anokhi | ba | eleikha | be'av | he'anan
 ba'avur | yishma | ha'am | bedaberi | imakh
-vegam | bekha
-ya'aminu | le'olam
+vegam | bekha | ya'aminu | le'olam
 vaiyaged | Mosheh | et | divrei | ha'am
 el | Yahweh
 
@@ -87,8 +83,7 @@ ya'alu | vahar
 
 19:14
 vaiyered | Mosheh | min | hahar
-el | ha'am
-vaykadesh | et | ha'am
+el | ha'am | vaykadesh | et | ha'am
 vaykhabesu
 simlotam
 
@@ -105,23 +100,21 @@ vekol | shofar
 chazak | me'od | vaiyecherad | kol | ha'am | asher | bamachaneh
 
 19:17
-vaiyotze | Mosheh | et | ha'am | likrat | ha'elohim
-min | hamachaneh | vaiyityatzevu
+vaiyotze | Mosheh | et | ha'am | likrat | ha'elohim | min | hamachaneh
+vaiyityatzevu
 betachtit | hahar
 
 19:18
 vehar | Sinai | ashan | kulo
-mipenei | asher | yarad | alav | Yahweh
-ba'esh | vaiya'al | ashano | ke'eshen | hakivshan
-vaiyecherad | kol | hahar
-me'od
+mipenei | asher | yarad | alav | Yahweh | ba'esh
+vaiya'al | ashano | ke'eshen | hakivshan
+vaiyecherad | kol | hahar | me'od
 
 19:19
 vayhi | kol | hashofar
 holekh
 vechazek | me'od | Mosheh | yedaber
-veha'elohim
-ya'anenu | vekol
+veha'elohim | ya'anenu | vekol
 
 19:20
 vaiyered | Yahweh | al | har | Sinai
@@ -134,18 +127,15 @@ vaiyomer | Yahweh | el | Mosheh
 red
 ha'ed | ba'am
 pen | yehersu | el | Yahweh | lir'ot
-venafal | mimenu | rav
+venafal | mimenu
+rav
 
 19:22
-vegam | hakohanim | hanigashim | el | Yahweh
-yitkadashu
-pen | yifrotz | bahem
-Yahweh
+vegam | hakohanim | hanigashim | el | Yahweh | yitkadashu
+pen | yifrotz | bahem | Yahweh
 
 19:23
-vaiyomer | Mosheh | el | Yahweh
-lo | yukhal | ha'am
-la'alot
+vaiyomer | Mosheh | el | Yahweh | lo | yukhal | ha'am | la'alot
 el | har | Sinai
 ki | atah | ha'edotah | banu | lemor
 hagbel | et | hahar
@@ -153,13 +143,11 @@ vekidashto
 
 19:24
 vaiyomer | elav | Yahweh | lekh | red
-ve'alita | atah
-Ve'aharon | imakh
+ve'alita | atah | Ve'aharon | imakh
 vehakohanim | veha'am | al | yehersu | la'alot | el | Yahweh
 pen | yifrotz | bam
 
 19:25
 vaiyered | Mosheh
-el | ha'am
-vaiyomer
+el | ha'am | vaiyomer
 alehem

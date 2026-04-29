@@ -7,12 +7,10 @@ daber | el | benei | Yisra'el
 ve'amarta
 alehem
 ish | ov | ishah | ki | yafli | lindor | neder | nazir
-lehazir
-Layahweh
+lehazir | Layahweh
 
 6:3
-miyayin | veshekhar | yazir
-chometz | yayin | vechometz | shekhar
+miyayin | veshekhar | yazir | chometz | yayin | vechometz | shekhar
 lo | yishteh
 vekhol | mishrat | anavim | lo | yishteh
 va'anavim | lachim | viveshim
@@ -31,8 +29,7 @@ gadel | pera
 se'ar | rosho
 
 6:6
-kol | yemei | haziro
-Layahweh
+kol | yemei | haziro | Layahweh
 al | nefesh | met
 lo | yavo
 
@@ -43,8 +40,7 @@ al | rosho
 
 6:8
 kol | yemei | nizro
-kadosh | hu
-Layahweh
+kadosh | hu | Layahweh
 
 6:9
 vekhi | yamut | met | alav | befeta | pit'om
@@ -58,19 +54,17 @@ uvaiyom | hashemini | yavi | shetei | torim
 o | shenei
 benei | yonah
 el | hakohen
-el | petach
-ohel | mo'ed
+el | petach | ohel | mo'ed
 
 6:11
-ve'asah | hakohen | echad | lechatat | ve'echad | le'olah | vekhiper | alav
-me'asher | chata
+ve'asah | hakohen | echad | lechatat | ve'echad | le'olah
+vekhiper | alav | me'asher | chata
 al | hanafesh
 vekidash | et | rosho | baiyom | hahu
 
 6:12
 vehizir | Layahweh | et | yemei | nizro
-vehevi | keves | ben | shenato
-le'asham
+vehevi | keves | ben | shenato | le'asham
 vehaiyamim | harishonim | yipelu
 ki | tame
 nizro
@@ -80,35 +74,28 @@ vezot | torat
 hanazir
 beyom | melot | yemei | nizro
 yavi | oto
-el | petach
-ohel | mo'ed
+el | petach | ohel | mo'ed
 
 6:14
 vehikriv | et | karebano | Layahweh | keves | ben | shenato | tamim | echad | le'olah
-vekhavsah | achat | bat | shenatah | temimah
-lechatat
-ve'ayil | echad | tamim
-lishlamim
+vekhavsah | achat | bat | shenatah | temimah | lechatat
+ve'ayil | echad | tamim | lishlamim
 
 6:15
 vesal | matzot | solet | chalot | belulot | bashemen
-urekikei | matzot | meshuchim | bashamen
-uminchatam
+urekikei | matzot | meshuchim | bashamen | uminchatam
 veniskeihem
 
 6:16
 vehikriv | hakohen
 lifnei | Yahweh
-ve'asah | et | chatato
-ve'et | olato
+ve'asah | et | chatato | ve'et | olato
 
 6:17
-ve'et | ha'ayil | ya'aseh | zevach | shelamim | Layahweh
-al
+ve'et | ha'ayil | ya'aseh | zevach | shelamim | Layahweh | al
 sal | hamatzot
 ve'asah | hakohen
-et | minchato
-ve'et | nisko
+et | minchato | ve'et | nisko
 
 6:18
 vegilach | hanazir | petach | ohel | mo'ed
@@ -121,7 +108,8 @@ zevach | hashelamim
 6:19
 velakach | hakohen | et | hazeroa | beshelah | min | ha'ayil
 vechalat | matzah | achat | min | hasal | urekik | matzah
-echad | venatan | al | kapei | hanazir
+echad
+venatan | al | kapei | hanazir
 achar
 hitgalecho | et | nizro
 
@@ -137,8 +125,7 @@ yayin
 zot | torat | hanazir | asher | yidor
 karebano | Layahweh | al | nizro | milevad | asher | tasig | yado
 kefi | nidro | asher | yidor
-ken | ya'aseh
-al
+ken | ya'aseh | al
 torat | nizro
 
 6:22
@@ -149,8 +136,7 @@ el | Mosheh | lemor
 daber | el | Aharon | ve'el | banav | lemor
 koh | tevarakhu
 et | benei | Yisra'el
-amor
-lahem
+amor | lahem
 
 6:24
 yevarekhkha | Yahweh

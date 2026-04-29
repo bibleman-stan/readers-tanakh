@@ -1,8 +1,7 @@
 6:1
 ho | hasha'ananim | Betziyon
 vehabotechim | behar | Shomeron
-nekuvei | reshit | hagoyim
-uva'u | lahem
+nekuvei | reshit | hagoyim | uva'u | lahem
 beit | Yisra'el
 
 6:2
@@ -21,12 +20,12 @@ shevet | chamas
 hashokhevim | al | mitot | shen
 useruchim
 al | arsotam
-ve'okhelim | karim | mitzon | va'agalim | mitokh | marbek
+ve'okhelim | karim | mitzon
+va'agalim | mitokh | marbek
 
 6:5
 haporetim
-al | pi | hanavel
-Kedavid
+al | pi | hanavel | Kedavid
 chashevu | lahem
 kelei | shir
 
@@ -70,15 +69,13 @@ vehabayit | hakaton | beki'im
 6:12
 hayrutzun | basela | susim
 im | yacharoosh | babekarim
-ki | hafakhtem | lerosh | mishpat | uferi | tzedakah
-lela'anah
+ki | hafakhtem | lerosh | mishpat | uferi | tzedakah | lela'anah
 
 6:13
 hasemechim
 Lelo | Davar
 ha'omerim
-halo | vechazekenu
-lakachnu | lanu
+halo | vechazekenu | lakachnu | lanu
 Karnayim
 
 6:14

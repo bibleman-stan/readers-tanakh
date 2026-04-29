@@ -5,10 +5,8 @@ el | acheihem
 haiyehudim
 
 5:2
-veyesh | asher | omerim
-baneinu | uvenoteinu
-anachnu | rabim
-venikchah | dagan
+veyesh | asher | omerim | baneinu | uvenoteinu
+anachnu | rabim | venikchah | dagan
 venokhelah | venichyeh
 
 5:3
@@ -18,8 +16,7 @@ anachnu | orevim
 venikchah | dagan | bara'av
 
 5:4
-veyesh | asher | omerim
-lavinu | khesef
+veyesh | asher | omerim | lavinu | khesef
 lemidat | hamelekh
 sedoteinu | ukherameinu
 
@@ -29,10 +26,8 @@ vehineh | anachnu | khoeshim | et | baneinu | ve'et | benoteinu | la'avadim | ve
 usedoteinu | ukherameinu | la'acherim
 
 5:6
-vaiyichar | li
-me'od | ka'asher | shama'ti | et | za'akatam
-ve'et
-hadevarim | ha'eleh
+vaiyichar | li | me'od | ka'asher | shama'ti | et | za'akatam
+ve'et | hadevarim | ha'eleh
 
 5:7
 vaiyimalekh | libi | alai | va'arivah | et | hachorim | ve'et | haseganim
@@ -45,15 +40,15 @@ kehilah | gedolah
 va'omerah | lahem | anachnu | kaninu | et | acheinu | haiyehudim | hanimkarim | lagoyim | kedei | vanu
 vegam | atem | timkeru | et | acheikhem
 venimkeru | lanu
-vaiyacharishu
-velo | matze'u | davar
+vaiyacharishu | velo | matze'u
+davar
 
 5:9
 vaiyomer
 lo | tov | hadavar
 asher | atem | osim
-halo | beyir'at | eloheinu | telekhu
-mecherpat | hagoyim | oyveinu
+halo | beyir'at | eloheinu | telekhu | mecherpat
+hagoyim | oyveinu
 
 5:10
 vegam | ani | achai | une'arai
@@ -67,12 +62,11 @@ noshim | bahem
 
 5:12
 vaiyomeru | nashiv | umehem | lo | nevakesh
-ken | na'aseh
-ka'asher
+ken | na'aseh | ka'asher
 atah | omer
 va'ekra | et | hakohanim
-va'ashbi'em
-la'asot | kadavar | hazeh
+va'ashbi'em | la'asot
+kadavar | hazeh
 
 5:13
 gam | chatzeni | na'arti | va'omerah | kakhah | yena'er | ha'elohim | et | kol | ha'ish | asher | lo | yakim | et | hadavar | hazeh | mibeito | umigi'o
@@ -85,14 +79,16 @@ kadavar | hazeh
 5:14
 gam | miyom | asher | tzivah | oti | lihyot | pecham | be'eretz | Yehudah
 mishenat | esrim | ve'ad | shenat | sheloshim | ushetayim | Le'artachshast | hamelekh
-shanim | sheteim | esreh | ani | ve'achai | lechem | hapechah
+shanim | sheteim | esreh
+ani | ve'achai
+lechem | hapechah
 lo | akhalti
 
 5:15
 vehapachot | harishonim | asher | lefanai | hikhbidu | al | ha'am | vaiyikchu | mehem | belechem | vayayin | achar | kesef | shekalim | arba'im
 gam | na'areihem
-shaltu | al | ha'am
-va'ani | lo | asiti | khen | mipenei | yir'at | elohim
+shaltu | al | ha'am | va'ani | lo | asiti | khen
+mipenei | yir'at | elohim
 
 5:16
 vegam | bimlekhet | hachomah | hazot | hechezakti
@@ -107,14 +103,12 @@ al | shulchani
 
 5:18
 va'asher | hayah | na'aseh | leyom | echad | shor | echad | tzon | shesh | berurot | vetziporim | Na'asu | li
-uvein | aseret | yamim | bekhol | yayin
-leharbeh
+uvein | aseret | yamim | bekhol | yayin | leharbeh
 ve'im | zeh | lechem | hapechah | lo | vikashti
 ki | khavedah | ha'avodah
 al | ha'am | hazeh
 
 5:19
-zakherah | li | elohai
-letovah
+zakherah | li | elohai | letovah
 kol | asher | asiti
 al | ha'am | hazeh

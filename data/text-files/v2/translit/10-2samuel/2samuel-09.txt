@@ -1,8 +1,8 @@
 9:1
 vaiyomer | David
 hakhi | yesh | od | asher | Notar
-leveit | Sha'ul
-ve'e'eseh | imo | chesed | ba'avur | Yehonatan
+leveit | Sha'ul | ve'e'eseh | imo | chesed
+ba'avur | Yehonatan
 
 9:2
 uleveit | Sha'ul | eved | ushemo | Tziva | vaiyikre'u | lo
@@ -13,8 +13,7 @@ vaiyomer | avdekha
 9:3
 vaiyomer | hamelekh | ha'efes | od | ish | leveit | Sha'ul
 ve'e'eseh | imo
-chesed | elohim
-vaiyomer | Tziva | el | hamelekh
+chesed | elohim | vaiyomer | Tziva | el | hamelekh
 od | ben | Lihonatan
 nekheh | raglayim
 
@@ -42,8 +41,7 @@ hineh | avdekha
 9:7
 vaiyomer | lo | David | al | tira | ki | asoh | e'eseh | imekha | chesed | ba'avur | Yehonatan | avikha
 vahashivoti | lekha
-et | kol | sedeh
-Sha'ul | avikha
+et | kol | sedeh | Sha'ul | avikha
 ve'atah | tokhal | lechem | al | shulchani
 tamid
 
@@ -58,8 +56,7 @@ el | hakelev | hamet | asher | kamoni
 vaiyikra | hamelekh | el | Tziva | na'ar | Sha'ul
 vaiyomer | elav
 kol | asher | hayah | Lesha'ul | ulekhol | beito
-natati
-leven | adoneikha
+natati | leven | adoneikha
 
 9:10
 ve'avadta | lo | et | ha'adamah | atah | uvaneikha | va'avadeikha | veheveta | vehayah | leven | adoneikha | lechem | va'akhalo
@@ -71,8 +68,7 @@ ve'esrim | avadim
 9:11
 vaiyomer | Tziva | el | hamelekh
 kekhol | asher | yetzaveh | adoni | hamelekh | et | avdo
-ken
-ya'aseh | avdekha
+ken | ya'aseh | avdekha
 Umefivoshet | okhel | al | shulchani | ke'achad | mibenei | hamelekh
 
 9:12
@@ -83,6 +79,5 @@ avadim | Limfivoshet
 9:13
 Umefivoshet | yoshev | Birushalim
 ki | al | shulchan | hamelekh | tamid
-hu | okhel
-vehu | piseach
+hu | okhel | vehu | piseach
 shetei | raglav

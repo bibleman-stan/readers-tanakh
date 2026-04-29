@@ -1,10 +1,7 @@
 3:1
-vaiyar'eni | et | Yehoshua | hakohen | hagadol
-omed
-lifnei
+vaiyar'eni | et | Yehoshua | hakohen | hagadol | omed | lifnei
 mal'akh | Yahweh
-vehasatan | omed | al | yemino
-lesitno
+vehasatan | omed | al | yemino | lesitno
 
 3:2
 vaiyomer | Yahweh | el | hasatan | yig'ar | Yahweh | bekha | hasatan
@@ -34,16 +31,14 @@ umal'akh | Yahweh
 omed
 
 3:6
-vaiya'ad | mal'akh | Yahweh
-Bihoshua
-lemor
+vaiya'ad | mal'akh | Yahweh | Bihoshua | lemor
 
 3:7
 koh | amar | Yahweh | tzeva'ot | im | bidrakhai | telekh | ve'im | et | mishmarti | tishmor
 vegam | atah | tadin | et | beiti
-vegam
-tishmor | et | chatzerai
-venatati | lekha | mahlekhim | bein | ha'omedim | ha'eleh
+vegam | tishmor | et | chatzerai
+venatati | lekha | mahlekhim
+bein | ha'omedim | ha'eleh
 
 3:8
 shema | na | Yehoshua | hakohen | hagadol | atah | vere'eikha | haiyoshevim | lefaneikha

@@ -10,19 +10,17 @@ kol | hanimtza | katuv | basefer
 verabim
 miyeshenei | admat | afar
 yakitzu
-eleh | lechaiyei | olam
-ve'eleh | lacharafot | ledir'on | olam
+eleh | lechaiyei | olam | ve'eleh | lacharafot
+ledir'on | olam
 
 12:3
-vehamaskilim
-yazhiru
+vehamaskilim | yazhiru
 kezohar | harakia | umatzdikei | harabim | kakokhavim
 le'olam | va'ed
 
 12:4
 ve'atah | Daniyel | setom | hadevarim | vachatom | hasefer
-ad | et | ketz
-yeshotetu | rabim
+ad | et | ketz | yeshotetu | rabim
 vetirbeh | hada'at
 
 12:5
@@ -72,14 +70,15 @@ yavinu
 ume'et | husar | hatamid | velatet
 shikutz | shomem
 yamim
-elef | matayim | vetish'im
+elef
+matayim | vetish'im
 
 12:12
 ashrei | hamchakeh
-veyagia
-leyamim
+veyagia | leyamim
 elef | shelosh | me'ot | sheloshim | vachamishah
 
 12:13
 ve'atah | lekh | laketz
-vetanuach | veta'amod | legoralekha | leketz | haiyamin
+vetanuach | veta'amod | legoralekha
+leketz | haiyamin

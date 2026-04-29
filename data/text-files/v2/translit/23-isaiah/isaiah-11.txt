@@ -1,6 +1,5 @@
 11:1
-veyatza | choter
-migeza | Yishai
+veyatza | choter | migeza | Yishai
 venetzer
 misharashav | yifreh
 
@@ -25,24 +24,21 @@ vehikah | eretz | beshevet | piv | uveruach | sefatav
 yamit | rasha
 
 11:5
-vehayah | tzedek
-ezor | matenav
-veha'emunah
-ezor | chalatzav
+vehayah | tzedek | ezor | matenav
+veha'emunah | ezor | chalatzav
 
 11:6
-vegar | ze'ev | im | keves
-venamer
+vegar | ze'ev | im | keves | venamer
 im | gedi | yirbatz
 ve'egel | ukhefir | umeri | yachdav
-vena'ar | katon
-noheg | bam
+vena'ar | katon | noheg | bam
 
 11:7
 ufarah | vado | tir'einah
 yachdav
 yirbetzu | yaldeihen
-ve'aryeh | kabakar | yokhal | teven
+ve'aryeh
+kabakar | yokhal | teven
 
 11:8
 veshi'asha | yonek
@@ -74,8 +70,8 @@ haiyam
 venasa | nes | lagoyim
 ve'asaf
 nidchei | Yisra'el
-unefutzot | Yehudah | yekabetz
-me'arba | kanfot | ha'aretz
+unefutzot | Yehudah | yekabetz | me'arba
+kanfot | ha'aretz
 
 11:13
 vesarah | kin'at | Efrayim
@@ -86,11 +82,9 @@ Vihudah
 lo | yatzor | et | Efrayim
 
 11:14
-ve'afu | vekhatef | pelishtim | yamah
-yachdav
+ve'afu | vekhatef | pelishtim | yamah | yachdav
 yavozu | et | benei | kedem
-Edom | Umo'av | mishloch | yadam
-uvenei | Amon | mishma'tam
+Edom | Umo'av | mishloch | yadam | uvenei | Amon | mishma'tam
 
 11:15
 vehecherim | Yahweh | et | leshon | yom | Mitzrayim
@@ -100,6 +94,6 @@ vehikahu | leshiv'ah | nechalim
 vehidrikh | bane'alim
 
 11:16
-vehayetah | mesilah | lish'ar | amo | asher | yisha'er
-Me'ashur | ka'asher | hayetah | Leyisra'el
+vehayetah | mesilah | lish'ar | amo | asher | yisha'er | Me'ashur
+ka'asher | hayetah | Leyisra'el
 beyom | aloto | me'eretz | Mitzrayim

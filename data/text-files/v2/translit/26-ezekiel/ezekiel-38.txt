@@ -5,7 +5,8 @@ elai | lemor
 38:2
 ben | adam | sim | paneikha | el | Goyg | eretz | Hamagog
 nesi
-rosh | Meshekh | Vetuval
+rosh
+Meshekh | Vetuval
 vehinave
 alav
 
@@ -15,11 +16,11 @@ koh | amar
 Adonai | Yahweh
 hini | eleikha | Gog
 nesi
-rosh | Meshekh | Vetuval
+rosh
+Meshekh | Vetuval
 
 38:4
-veshoavtikha
-venatati | chachim | bilchayeikha
+veshoavtikha | venatati | chachim | bilchayeikha
 vehotzeti | otkha | ve'et | kol | cheilekha | susim | ufarashim | levushei | mikhlol | kulam
 kahal | rav | tzinah | umagen
 tofesei | charavot
@@ -34,8 +35,7 @@ kulam | magen | vekhova
 Gomer | vekhol | agapeiha
 beit | Togarmah
 yarketei | tzafon
-ve'et | kol | agapav
-amim | rabim
+ve'et | kol | agapav | amim | rabim
 itakh
 
 38:7
@@ -43,17 +43,14 @@ hikon | vehakhen | lekha
 atah
 vekhol | kehalecha
 hanikhalim | aleikha
-vehayita | lahem
-lemishmar
+vehayita | lahem | lemishmar
 
 38:8
 miyamim | rabim | tipaked
 be'acharit | hashanim | tavo | el | eretz | meshovevet | mecherev | mekubetzet | me'amim | rabim
 al | harei | Yisra'el
-asher | hayu | lecharebah
-tamid
-vehi | me'amim | hutza'ah
-veyashevu | lavetach
+asher | hayu | lecharebah | tamid
+vehi | me'amim | hutza'ah | veyashevu | lavetach
 kulam
 
 38:9
@@ -71,8 +68,7 @@ vechashavta | machashevet | ra'ah
 38:11
 ve'amarta | e'eleh | al | eretz | perazot
 avo | hashoketim
-yoshevei
-lavetach
+yoshevei | lavetach
 kulam | yoshevim | be'ein | chomah | uveriach | udelatayim | ein | lahem
 
 38:12
@@ -92,8 +88,7 @@ lishlol
 shalal | gadol
 
 38:14
-lakhen | hinave | ven | adam
-ve'amarta | Legog
+lakhen | hinave | ven | adam | ve'amarta | Legog
 koh | amar
 Adonai | Yahweh
 halo | baiyom | hahu | beshevet | ami | Yisra'el | lavetach
@@ -109,8 +104,7 @@ kahal | gadol
 vechayil | rav
 
 38:16
-ve'alita | al | ami | Yisra'el
-ke'anan
+ve'alita | al | ami | Yisra'el | ke'anan
 lekhasot | ha'aretz
 be'acharit | haiyamim | tihyeh | vahavi'otikha | al | artzi
 lema'an | da'at | hagoyim | oti | behikadeshi | vekha | le'eineihem
@@ -126,8 +120,7 @@ aleihem
 vehayah | baiyom | hahu | beyom | bo | Goyg | al | admat | Yisra'el
 ne'um
 Adonai | Yahweh
-ta'aleh | chamati
-be'api
+ta'aleh | chamati | be'api
 
 38:19
 uvekin'ati | ve'esh | evrati
@@ -155,9 +148,6 @@ vegeshem | shotef | ve'avnei | elgavish | esh | vegaferit | amtir | alav | ve'al
 ve'al | amim | rabim | asher | ito
 
 38:23
-vehitgadilti | vehitkadishti
-venoda'ti
-le'einei
-goyim | rabim
-veyade'u
+vehitgadilti | vehitkadishti | venoda'ti | le'einei
+goyim | rabim | veyade'u
 ki | ani | Yahweh

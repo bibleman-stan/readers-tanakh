@@ -1,23 +1,20 @@
 7:1
 vayhi | ka'asher | Nivnetah | hachomah
 va'a'amid
-hadelatot
-vaiyipakedu | hasho'arim | vehamshorerim
+hadelatot | vaiyipakedu | hasho'arim | vehamshorerim
 vehalviyim
 
 7:2
 va'atzaveh | et | Chanani | achi | ve'et | Chananyah | sar | habirah
 al | Yerushalim
-ki | hu | ke'ish | emet | veyare | et | ha'elohim
-merabim
+ki | hu | ke'ish | emet | veyare | et | ha'elohim | merabim
 
 7:3
 vaiyomer | lahem | lo | yipatechu | sha'arei | Yerushalim | ad | chom | hashemesh
 ve'ad | hem | omedim | yagifu | hadelatot
 ve'echozu
 veha'ameid | mishmerot | yoshevei | Yerushalim
-ish | bemishmaro
-ve'ish | neged | beito
+ish | bemishmaro | ve'ish | neged | beito
 
 7:4
 veha'ir | rachavat | yadayim | ugedolah
@@ -32,14 +29,14 @@ va'emtza | katuv | bo
 
 7:6
 eleh | benei | hamedinah | ha'olim | mishevi | hagolah | asher | heglah
-Nevukhadnetzar
-melekh | Bavel | vaiyashuvu | Lirushalim | Velihudah
+Nevukhadnetzar | melekh | Bavel
+vaiyashuvu | Lirushalim | Velihudah
 ish | le'iro
 
 7:7
 haba'im | im | Zerubavel | Yeshua | Nechemyah | Azaryah | Ra'amyah | Nachamani | Maredokhai | Bilshan | Misperet | Bigvai
-Nechum | Ba'anah
-mispar | anshei
+Nechum | Ba'anah | mispar
+anshei
 am | Yisra'el
 
 7:8
@@ -58,8 +55,7 @@ benei | Fachat | Mo'av | livnei | Yeshua | Veyo'av
 alpayim | ushemoneh | me'ot | shemonah | asar
 
 7:12
-benei | Eilam
-elef | matayim | chamishim | ve'arba'ah
+benei | Eilam | elef | matayim | chamishim | ve'arba'ah
 
 7:13
 benei | Zatu | shemoneh | me'ot | arba'im | vachamishah
@@ -97,8 +93,7 @@ benei | Chashum
 shelosh | me'ot | esrim | ushemonah
 
 7:23
-benei | Vetzai
-shelosh | me'ot | esrim | ve'arba'ah
+benei | Vetzai | shelosh | me'ot | esrim | ve'arba'ah
 
 7:24
 benei | Charif | me'ah | sheneim | asar
@@ -107,12 +102,10 @@ benei | Charif | me'ah | sheneim | asar
 benei | Giv'on | tish'im | vachamishah
 
 7:26
-anshei | Veit | Lechem | Unetofah
-me'ah | shemonim | ushemonah
+anshei | Veit | Lechem | Unetofah | me'ah | shemonim | ushemonah
 
 7:27
-anshei | Anatot
-me'ah | esrim | ushemonah
+anshei | Anatot | me'ah | esrim | ushemonah
 
 7:28
 anshei | Veit | Azmavet
@@ -127,12 +120,10 @@ anshei | Haramah | Vagava
 shesh | me'ot | esrim | ve'echad
 
 7:31
-anshei | Mikhmas
-me'ah | ve'esrim | ushenayim
+anshei | Mikhmas | me'ah | ve'esrim | ushenayim
 
 7:32
-anshei | Veit | El | Veha'ai
-me'ah | esrim | usheloshah
+anshei | Veit | El | Veha'ai | me'ah | esrim | usheloshah
 
 7:33
 anshei | Nevo | acher
@@ -254,35 +245,29 @@ al | shemam
 7:64
 eleh | bikshu | khetavam | hamityachsim
 velo | Nimtza
-vaygo'alu
-min | hakehunah
+vaygo'alu | min | hakehunah
 
 7:65
-vaiyomer | hatirshata | lahem | asher | lo | yokhelu
-mikodesh | hakodashim
+vaiyomer | hatirshata | lahem | asher | lo | yokhelu | mikodesh | hakodashim
 ad | amod | hakohen
 le'urim | vetumim
 
 7:66
-kol | hakahal | ke'echad
-arba | ribo
+kol | hakahal | ke'echad | arba | ribo
 alpayim | shelosh | me'ot | veshishim
 
 7:67
 milevad | avdeihem | ve'amhoteihem | eleh | shiv'at | alafim | shelosh | me'ot | sheloshim | veshiv'ah
-velahem | meshorarim | umeshorarot
-matayim
+velahem | meshorarim | umeshorarot | matayim
 suseihem | sheva | me'ot | sheloshim | veshishah | pirdeihem | matayim | ve'arba'im | vachamishah
 
 7:68
-gemalim
-arba | me'ot | sheloshim | vachamishah
+gemalim | arba | me'ot | sheloshim | vachamishah
 chamorim
 sheshet | alafim | sheva | me'ot | ve'esrim
 
 7:69
-umiktzat | rashei | ha'avot | natenu
-lamelakhah
+umiktzat | rashei | ha'avot | natenu | lamelakhah
 hatirshata | natan | la'otzar | zahav | darkemonim | elef | mizrakot | chamishim | katenot | kohanim
 sheloshim | vachamesh | me'ot
 
@@ -302,5 +287,4 @@ shishim | veshiv'ah
 7:72
 vaiyeshevu | hakohanim | vehalviyim | vehasho'arim | vehamshorerim | umin | ha'am | vehanetinim | vekhol | Yisra'el
 be'areihem | vaiyiga | hachodesh | hashevi'i
-uvenei | Yisra'el
-be'areihem
+uvenei | Yisra'el | be'areihem

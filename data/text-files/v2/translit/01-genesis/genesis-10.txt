@@ -8,8 +8,7 @@ achar | hamabul
 10:2
 benei | Yefet
 Gomer | Umagog | Umadai
-Veyavan | Vetuval
-Umeshekh
+Veyavan | Vetuval | Umeshekh
 Vetiras
 
 10:3
@@ -19,14 +18,12 @@ Ashkanaz | Verifat
 Vetogarmah
 
 10:4
-uvenei | Yavan | Elishah | Vetarshish
-Kitim
+uvenei | Yavan | Elishah | Vetarshish | Kitim
 Vedodanim
 
 10:5
 me'eleh | Nifredu | iyei | hagoyim | be'artzotam
-ish
-lilshono | lemishpechotam | begoyehem
+ish | lilshono | lemishpechotam | begoyehem
 
 10:6
 uvenei
@@ -64,43 +61,36 @@ ve'et | Rechovot | Ir
 ve'et | Kalach
 
 10:12
-ve'et | Resen
-bein | Ninveh
+ve'et | Resen | bein | Ninveh
 uvein | Kalach
 hi
 ha'ir | hagedolah
 
 10:13
-Umitzrayim | yalad | et | Ludim | ve'et | anamim | ve'et | Lehavim
-ve'et | Naftuchim
+Umitzrayim | yalad | et | Ludim | ve'et | anamim | ve'et | Lehavim | ve'et | Naftuchim
 
 10:14
 ve'et | Patrusim | ve'et | Kasluchim | asher | yatze'u | misham | pelishtim
 ve'et | kaftorim
 
 10:15
-Ukhena'an | yalad | et | Tzidon | bekhoro
-ve'et | Chet
+Ukhena'an | yalad | et | Tzidon | bekhoro | ve'et | Chet
 
 10:16
-ve'et | hayvusi | ve'et | ha'emori
-ve'et
-hagirgashi
+ve'et | hayvusi | ve'et | ha'emori | ve'et | hagirgashi
 
 10:17
-ve'et | hachivi | ve'et | ha'arki
-ve'et | hasini
+ve'et | hachivi | ve'et | ha'arki | ve'et | hasini
 
 10:18
-ve'et | ha'arvadi | ve'et | hatzemari
-ve'et | hachamati
-ve'achar | Nafotzu
-mishpechot | hakena'ani
+ve'et | ha'arvadi | ve'et | hatzemari | ve'et | hachamati | ve'achar | Nafotzu | mishpechot
+hakena'ani
 
 10:19
 vayhi | gevul | hakena'ani | Mitzidon
 bo'akhah | Gerarah
-ad | Azah | bo'akhah | Sedomah | Va'amorah | Ve'admah | Utzevoyim
+ad | Azah
+bo'akhah | Sedomah | Va'amorah | Ve'admah | Utzevoyim
 ad | Lasha
 
 10:20
@@ -114,9 +104,8 @@ achi
 Yefet | hagadol
 
 10:22
-benei | Shem
-Eilam | Ve'ashur
-Ve'arpakhshad | Velud | Va'aram
+benei | Shem | Eilam | Ve'ashur | Ve'arpakhshad
+Velud | Va'aram
 
 10:23
 uvenei
@@ -134,32 +123,25 @@ yalad | et | Ever
 Ul'ever | yulad
 shenei | vanim
 shem | ha'echad | Peleg | ki | veyamav | Niflegah | ha'aretz
-veshem | achiv
-Yaketan
+veshem | achiv | Yaketan
 
 10:26
 Veyaketan | yalad | et | Almodad
-ve'et | Shalef
-ve'et | Chatzarmavet
-ve'et | Yarach
+ve'et | Shalef | ve'et | Chatzarmavet | ve'et | Yarach
 
 10:27
-ve'et | Hadoram | ve'et | Uzal
-ve'et | Diklah
+ve'et | Hadoram | ve'et | Uzal | ve'et | Diklah
 
 10:28
-ve'et | Oval | ve'et | Avima'el
-ve'et | Sheva
+ve'et | Oval | ve'et | Avima'el | ve'et | Sheva
 
 10:29
-ve'et | Ofir | ve'et | Chavilah
-ve'et | Yovav
-kol | eleh
+ve'et | Ofir | ve'et | Chavilah | ve'et | Yovav | kol | eleh
 benei | Yaketan
 
 10:30
-vayhi | moshavam
-Mimesha | bo'akhah | Sefarah
+vayhi | moshavam | Mimesha
+bo'akhah | Sefarah
 har | hakedem
 
 10:31

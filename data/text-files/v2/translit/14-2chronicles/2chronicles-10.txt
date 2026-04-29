@@ -5,16 +5,14 @@ ki | Shekhem | ba'u | khol | Yisra'el | lehamlikh | oto
 
 10:2
 vayhi | kishmoa | Yarave'am | ben | Nevat | vehu | Vemitzrayim | asher | barach
-mipenei | Shelomoh | hamelekh | vaiyashov | Yarave'am
-Mimitzrayim
+mipenei | Shelomoh | hamelekh
+vaiyashov | Yarave'am | Mimitzrayim
 
 10:3
 vaiyishlechu | vaiyikre'u | lo
 vaiyavo | Yarave'am
-vekhol | Yisra'el
-vaydaberu
-el | Rechav'am
-lemor
+vekhol | Yisra'el | vaydaberu
+el | Rechav'am | lemor
 
 10:4
 avikha
@@ -24,16 +22,14 @@ vena'avdeka
 
 10:5
 vaiyomer | alehem | od | sheloshet | yamim
-veshuvu | elai
-vaiyelekh
+veshuvu | elai | vaiyelekh
 ha'am
 
 10:6
 vaiyiva'atz | hamelekh | Rechav'am | et | hazekenim | asher | hayu | omedim | lifnei | Shelomoh | aviv
-bihyoto | chai
-lemor
-eikh | atem | no'atzim
-lehashiv | la'om | hazeh | davar
+bihyoto | chai | lemor
+eikh | atem | no'atzim | lehashiv | la'om | hazeh
+davar
 
 10:7
 vaydaberu | elav | lemor | im | tihyeh | letov | leha'am | hazeh | uretzitam
@@ -45,13 +41,11 @@ kol | haiyamim
 10:8
 vaiya'azo | et | atzat | hazekenim | asher | ye'atzuhu
 vaiyiva'atz | et | hayladim | asher | gadelu | ito
-ha'omedim
-lefanav
+ha'omedim | lefanav
 
 10:9
 vaiyomer | alehem | mah | atem | no'atzim
-venashiv | davar
-et | ha'am | hazeh | asher | diberu | elai | lemor
+venashiv | davar | et | ha'am | hazeh | asher | diberu | elai | lemor
 hakel | min | ha'ol | asher | natan | avikha
 aleinu
 
@@ -77,9 +71,7 @@ shuvu | elai | baiyom | hashelishi
 
 10:13
 vaiya'anem | hamelekh
-kashah
-vaiya'azo | hamelekh | Rechav'am | et
-atzat | hazekenim
+kashah | vaiya'azo | hamelekh | Rechav'am | et | atzat | hazekenim
 
 10:14
 vaydaber | alehem | ka'atzat | hayladim | lemor
@@ -101,9 +93,7 @@ ben | Nevat
 vekhol | Yisra'el | ki | lo | shama | hamelekh | lahem
 vaiyashivu | ha'am | et | hamelekh | lemor | mah | lanu | chelek | Bedavid | velo | nachalah | beven | Yishai | ish | le'ohaleikha | Yisra'el
 atah | re'eh | veitekha
-David
-vaiyelekh | kol | Yisra'el
-le'ohalav
+David | vaiyelekh | kol | Yisra'el | le'ohalav
 
 10:17
 uvenei | Yisra'el
@@ -116,8 +106,7 @@ Rechav'am
 vaiyishlach | hamelekh | Rechav'am | et | Hadoram | asher | al | hamas
 vaiyirgemu | vo | venei | Yisra'el | even
 vaiyamot
-vehamelekh | Rechav'am | hit'ametz | la'alot | bamerkavah
-lanus
+vehamelekh | Rechav'am | hit'ametz | la'alot | bamerkavah | lanus
 Yerushalim
 
 10:19

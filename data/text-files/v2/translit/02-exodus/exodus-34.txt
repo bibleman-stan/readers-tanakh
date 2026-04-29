@@ -1,12 +1,10 @@
 34:1
 vaiyomer | Yahweh | el | Mosheh
-pesol | lekha | shenei | luchot | avanim
-karishonim | vekhatavti | al | haluchot
+pesol | lekha | shenei | luchot | avanim | karishonim | vekhatavti | al | haluchot
 et | hadevarim | asher | hayu | al | haluchot | harishonim | asher | shibarta
 
 34:2
-vehyeh | nakhon
-laboker
+vehyeh | nakhon | laboker
 ve'alita | vaboker | el | har | Sinai
 venitzavta | li | sham
 al | rosh | hahar
@@ -21,16 +19,13 @@ hahar | hahu
 34:4
 vaiyifsol | shenei | luchot | avanim | karishonim | vaiyashkem | Mosheh | vaboker | vaiya'al | el | har | Sinai
 ka'asher | tzivah | Yahweh
-oto
-vaiyikach | beyado
-shenei
-luchot | avanim
+oto | vaiyikach | beyado
+shenei | luchot | avanim
 
 34:5
 vaiyered | Yahweh | be'anan
 vaiyityatzev | imo
-sham
-vaiyikra | veshem
+sham | vaiyikra | veshem
 Yahweh
 
 34:6
@@ -51,8 +46,8 @@ al | shileshim
 ve'al | ribe'im
 
 34:8
-vaymaher
-Mosheh | vaiyikod | artzah
+vaymaher | Mosheh
+vaiyikod | artzah
 vaiyishtachu
 
 34:9
@@ -86,10 +81,8 @@ pen | yihyeh | lemokesh | bekirbecha
 
 34:13
 ki | et | mizbechotam | titotzun
-ve'et | matzevotam
-teshaberun
-ve'et | asherav
-tikhrotun
+ve'et | matzevotam | teshaberun
+ve'et | asherav | tikhrotun
 
 34:14
 ki | lo | tishtachaveh
@@ -102,27 +95,22 @@ hu
 pen | tikhrot | berit
 leyoshev | ha'aretz
 vezanu | acharei | eloheihem | vezavechu | leloheihem
-vekara | lekha
-ve'akhalta | mizivcho
+vekara | lekha | ve'akhalta | mizivcho
 
 34:16
 velakachta | mibenotav | levaneikha
 vezanu | venotav | acharei | eloheihen
-vehiznu | et | baneikha
-acharei | eloheihen
+vehiznu | et | baneikha | acharei | eloheihen
 
 34:17
-elohei | masekhah
-lo | ta'aseh | lakh
+elohei | masekhah | lo | ta'aseh | lakh
 
 34:18
 et | chag | hamatzot | tishmor
 shiv'at | yamim | tokhal | matzot | asher | tzivitikha
-lemo'ed
-chodesh | ha'aviv
+lemo'ed | chodesh | ha'aviv
 ki | bechodesh | ha'aviv
-yatzata
-Mimitzrayim
+yatzata | Mimitzrayim
 
 34:19
 kol | peter | rechem | li
@@ -144,8 +132,7 @@ uvaiyom | hashevi'i | tishbot
 becharish | uvakatzir | tishbot
 
 34:22
-vechag | shavu'ot | ta'aseh | lekha
-bikurei
+vechag | shavu'ot | ta'aseh | lekha | bikurei
 ketzir | chitim
 vechag | ha'asif
 tekufat
@@ -169,8 +156,8 @@ chag | hapasach
 
 34:26
 reshit | bikurei | admatekha
-tavi
-beit | Yahweh | eloheikha
+tavi | beit
+Yahweh | eloheikha
 lo | tevashel | gedi | bachalev | imo
 
 34:27
@@ -201,8 +188,8 @@ migeshet | elav
 
 34:31
 vaiyikra | alehem | Mosheh
-vaiyashuvu | elav | Aharon | vekhol | hanesi'im
-ba'edah | vaydaber | Mosheh
+vaiyashuvu | elav | Aharon | vekhol | hanesi'im | ba'edah
+vaydaber | Mosheh
 alehem
 
 34:32
@@ -212,17 +199,13 @@ vaytzavem | et | kol | asher | diber | Yahweh | ito
 behar | Sinai
 
 34:33
-vaykhal | Mosheh
-midaber
-itam
-vaiyiten | al | panav
-masveh
+vaykhal | Mosheh | midaber
+itam | vaiyiten | al | panav | masveh
 
 34:34
 uvevo | Mosheh | lifnei | Yahweh | ledaber | ito
 yasir | et | hamasveh
-ad | tzeto
-veyatza | vediber | el | benei | Yisra'el | et | asher | yetzuveh
+ad | tzeto | veyatza | vediber | el | benei | Yisra'el | et | asher | yetzuveh
 
 34:35
 vera'u | venei | Yisra'el | et | penei | Mosheh

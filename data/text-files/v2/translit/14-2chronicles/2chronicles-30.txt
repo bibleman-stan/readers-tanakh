@@ -1,13 +1,10 @@
 30:1
 vaiyishlach | Yechizkiyahu | al | kol | Yisra'el | Vihudah | vegam | igerot | katav | al | Efrayim | Umenasheh
-lavo | leveit | Yahweh | Birushalim
-la'asot | pesach
-Layahweh
+lavo | leveit | Yahweh | Birushalim | la'asot | pesach | Layahweh
 elohei | Yisra'el
 
 30:2
-vaiyiva'atz | hamelekh | vesarav | vekhol | hakahal
-Birushalim
+vaiyiva'atz | hamelekh | vesarav | vekhol | hakahal | Birushalim
 la'asot | hapesach | bachodesh | hasheni
 
 30:3
@@ -17,20 +14,17 @@ ki | hakohanim | lo | hitkadeshu | lemadai
 veha'am | lo | Ne'esfu | Lirushalim
 
 30:4
-vaiyishar | hadavar
-be'einei | hamelekh | uve'einei
+vaiyishar | hadavar | be'einei | hamelekh | uve'einei
 kol | hakahal
 
 30:5
 vaiya'amidu | davar | leha'avir | kol | bekhol | Yisra'el | Mibe'er | Sheva | ve'ad | Dan
-lavo | la'asot | pesach | Layahweh | elohei | Yisra'el
-Birushalim
+lavo | la'asot | pesach | Layahweh | elohei | Yisra'el | Birushalim
 ki | lo | laro | asu | kakatuv
 
 30:6
 vaiyelekhu | haratzim | ba'igerot | miyad | hamelekh | vesarav | bekhol | Yisra'el | Vihudah
-ukhemitzvat | hamelekh
-lemor
+ukhemitzvat | hamelekh | lemor
 benei | Yisra'el | shuvu | el | Yahweh | elohei | Avraham | Yitzchak | Veyisra'el
 veyasho | el | hapeleitah
 hanish'eret | lakhem | mikaf
@@ -38,16 +32,13 @@ malkhei | Ashur
 
 30:7
 ve'al | tihyu | ka'avoteikhem | vekha'acheikhem | asher | ma'alu | Bayahweh
-elohei | avoteihem
-vaiyitenem | leshamah
-ka'asher
+elohei | avoteihem | vaiyitenem | leshamah | ka'asher
 atem | ro'im
 
 30:8
 atah | al | takshu | arepekhem | ka'avoteikhem
 tenu | yad | Layahweh | uvo'u | lemikdasho | asher | hikdish | le'olam
-ve'ivdu | et | Yahweh | eloheikhem
-veyasho | mikem
+ve'ivdu | et | Yahweh | eloheikhem | veyasho | mikem
 charon | apo
 
 30:9
@@ -61,15 +52,11 @@ elav
 
 30:10
 vaiyihyu | haratzim | oerim | me'ir | la'ir | be'eretz | Efrayim | Umenasheh
-ve'ad | Zevulun
-vaiyihyu | maschikim | aleihem
-umal'igim | bam
+ve'ad | Zevulun | vaiyihyu | maschikim | aleihem | umal'igim | bam
 
 30:11
-akh | anashim | Me'asher | Umenasheh | Umizevulun
-Nikhne'u
-vaiyavo'u
-Lirushalim
+akh | anashim | Me'asher | Umenasheh | Umizevulun | Nikhne'u
+vaiyavo'u | Lirushalim
 
 30:12
 gam | Bihudah | hayetah | yad | ha'elohim
@@ -96,8 +83,8 @@ vaiyavi'u | olot
 beit | Yahweh
 
 30:16
-vaiya'amdu | al | amedam | kemishpatam
-ketorat | Mosheh | ish | ha'elohim
+vaiya'amdu | al | amedam | kemishpatam | ketorat
+Mosheh | ish | ha'elohim
 hakohanim | zorekim | et | hadam | miyad
 halviyim
 
@@ -108,8 +95,7 @@ Layahweh
 
 30:18
 ki | marbit | ha'am | rabat | Me'efrayim | Umenasheh | Yisoshkhar | Uzevulun | lo | hiteharu
-ki | akhelu | et | hapesach
-belo | khakatuv
+ki | akhelu | et | hapesach | belo | khakatuv
 ki | hitpalel | Yechizkiyahu | aleihem | lemor
 Yahweh | hatov
 yekhaper | be'ad
@@ -131,27 +117,21 @@ Layahweh
 
 30:22
 vaydaber | Yechizkiyahu | al | lev | kol | halviyim
-hamaskilim | sekhel | tov
-Layahweh
-vaiyokhelu | et | hamo'ed | shiv'at | haiyamim
-mezabechim | zivchei | shelamim | umitvadim
-Layahweh
-elohei | avoteihem
+hamaskilim | sekhel | tov | Layahweh
+vaiyokhelu | et | hamo'ed | shiv'at | haiyamim | mezabechim | zivchei | shelamim
+umitvadim | Layahweh | elohei | avoteihem
 
 30:23
-vaiyiva'atzu | kol | hakahal
-la'asot
+vaiyiva'atzu | kol | hakahal | la'asot
 shiv'at | yamim
-acherim
-vaiya'asu | shiv'at | yamim
+acherim | vaiya'asu | shiv'at | yamim
 simchah
 
 30:24
 ki | Chizkiyahu | melekh | Yehudah | herim | lakahal | elef | parim | veshiv'at | alafim | tzon
 vehasarim | herimu | lakahal | parim | elef | vetzon
 aseret | alafim
-vaiyitkadeshu | khohanim
-laro
+vaiyitkadeshu | khohanim | laro
 
 30:25
 vaiyismechu | kol | kehal | Yehudah | vehakohanim | vehalviyim
@@ -166,7 +146,5 @@ lo | khazot | Birushalim
 
 30:27
 vaiyakumu | hakohanim | halviyim | vayvarakhu | et | ha'am
-vaiyishama
-bekolam
-vatavo | tefilatam | lim'on | kadesho
-lashamayim
+vaiyishama | bekolam
+vatavo | tefilatam | lim'on | kadesho | lashamayim

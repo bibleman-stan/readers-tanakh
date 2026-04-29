@@ -1,8 +1,7 @@
 9:1
 ukhekhalot | eleh | Nigeshu | elai | hasarim | lemor
-lo | Nivdelu | ha'am | Yisra'el | vehakohanim | vehalviyim
-me'amei | ha'aratzot
-keto'avoteihem | lakena'ani | hachiti | haperizi | hayvusi | ha'amoni | hamo'avi
+lo | Nivdelu | ha'am | Yisra'el | vehakohanim | vehalviyim | me'amei
+ha'aratzot | keto'avoteihem | lakena'ani | hachiti | haperizi | hayvusi | ha'amoni | hamo'avi
 hamitzri
 veha'emori
 
@@ -22,7 +21,8 @@ va'eshevah | meshomem
 9:4
 ve'elai | ye'asefu | kol | chared | bedivrei | elohei | Yisra'el
 al | ma'al | hagolah
-va'ani | yoshev | meshomem | ad
+va'ani | yoshev | meshomem
+ad
 leminchat | ha'arev
 
 9:5
@@ -33,8 +33,7 @@ el | Yahweh | elohai
 
 9:6
 va'omerah | elohai | bosheti | Venikhlamti
-leharim | elohai | panai
-eleikha
+leharim | elohai | panai | eleikha
 ki | avonoteinu | ravu | lema'lah | rosh
 ve'ashmatenu | gadelah
 ad | lashamayim
@@ -49,8 +48,7 @@ kehaiyom | hazeh
 9:8
 ve'atah | kim'at | rega | hayetah | techinah | me'et | Yahweh | eloheinu | lehash'ir | lanu | peleitah
 velatet | lanu | yated | bimkom | kadesho
-leha'ir | eineinu | eloheinu
-uletitenu | michyah | me'at | be'avdutenu
+leha'ir | eineinu | eloheinu | uletitenu | michyah | me'at | be'avdutenu
 
 9:9
 ki | avadim | anachnu | uve'avdutenu | lo | azavanu
@@ -59,8 +57,7 @@ vaiyat | aleinu | chesed | lifnei | malkhei | Faras | latet | lanu | michyah | l
 velatet | lanu | gader | Bihudah | Uvirushalim
 
 9:10
-ve'atah | mah | nomar | eloheinu
-acharei | zot
+ve'atah | mah | nomar | eloheinu | acharei | zot
 ki | azavnu | mitzvoteikha
 
 9:11
@@ -68,8 +65,7 @@ asher | tzivita | beyad | avadeikha | hanevi'im | lemor
 ha'aretz | asher | atem | ba'im | lerishtah
 eretz | nidah | hi | benidat
 amei | ha'aratzot
-beto'avoteihem | asher | mil'uha | mipeh | el | peh
-betum'atam
+beto'avoteihem | asher | mil'uha | mipeh | el | peh | betum'atam
 
 9:12
 ve'atah | benoteikhem | al | titenu | livneihem | uvenoteihem | al | tis'u | livneikhem

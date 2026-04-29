@@ -1,7 +1,6 @@
 18:1
 hadavar | asher | hayah | el | Yirmeyahu
-me'et | Yahweh
-lemor
+me'et | Yahweh | lemor
 
 18:2
 kum | veyaradta
@@ -10,15 +9,15 @@ veshamah
 ashmi'akha | et | devarai
 
 18:3
-va'ered | beit | haiyotzer
+va'ered
+beit | haiyotzer
 [—] | vehineh-hu | oseh | melakhah | al | ha'avenayim
 
 18:4
 venishchat | hakeli | asher | hu | oseh | bachomer
 beyad | haiyotzer
 veshav | vaiya'asehu | keli | acher
-ka'asher | yashar | be'einei | haiyotzer
-la'asot
+ka'asher | yashar | be'einei | haiyotzer | la'asot
 
 18:5
 vayhi | devar | Yahweh
@@ -34,24 +33,20 @@ beit | Yisra'el
 18:7
 rega | adaber
 al | goy
-ve'al | mamlakhah
-lintoosh | velintotz | uleha'avid
+ve'al | mamlakhah | lintoosh | velintotz | uleha'avid
 
 18:8
 veshav | hagoy | hahu | mera'ato | asher | dibarti
 alav
-venichamti | al | hara'ah | asher | chashavti
-la'asot | lo
+venichamti | al | hara'ah | asher | chashavti | la'asot | lo
 
 18:9
 verega | adaber
 al | goy
-ve'al | mamlakhah
-livnot | velintoa
+ve'al | mamlakhah | livnot | velintoa
 
 18:10
-ve'asah | hara'ah | be'einai
-levilti
+ve'asah | hara'ah | be'einai | levilti
 shemoa | bekoli
 venichamti | al | hatovah | asher | amarti
 leheitiv | oto
@@ -73,10 +68,8 @@ na'aseh
 18:13
 lakhen | koh | amar | Yahweh
 sha'alu | na | bagoyim
-mi | shama
-ka'eleh
-sha'arurit | asetah | me'od | betulat
-Yisra'el
+mi | shama | ka'eleh
+sha'arurit | asetah | me'od | betulat | Yisra'el
 
 18:14
 haya'azo | mitzur | sadai
@@ -118,8 +111,7 @@ lekol | yerivai
 
 18:20
 hayshulam | tachat | tovah | ra'ah
-ki | kharu | shuchah
-lenafshi
+ki | kharu | shuchah | lenafshi
 zekhor | amedi | lefaneikha | ledaber | aleihem | tovah
 lehashiv | et | chamatekha | mehem
 

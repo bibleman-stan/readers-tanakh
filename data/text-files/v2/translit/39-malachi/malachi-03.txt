@@ -1,6 +1,5 @@
 3:1
-hini | sholeach | mal'akhi | ufinah | derekh
-lefanai
+hini | sholeach | mal'akhi | ufinah | derekh | lefanai
 ufit'om | yavo | el | heikhalo | ha'adon | asher | atem | mevakshim | umal'akh | haberit | asher | atem | chafetzim | hineh | va
 amar
 Yahweh | tzeva'ot
@@ -31,8 +30,8 @@ Yahweh | tzeva'ot
 
 3:6
 ki | ani | Yahweh
-lo | shaniti
-ve'atem | benei | Ya'ako | lo | khelitem
+lo | shaniti | ve'atem | benei | Ya'ako
+lo | khelitem
 
 3:7
 lemimei | avoteikhem | sartem | mechukai | velo | shemartem
@@ -44,13 +43,13 @@ bameh | nashuv
 
 3:8
 hayikba | adam | elohim | ki | atem | koe'im | oti
-va'amartem | bameh | keva'anucha
+va'amartem
+bameh | keva'anucha
 hama'aser
 vehaterumah
 
 3:9
-bame'erah | atem | ne'arim
-ve'oti
+bame'erah | atem | ne'arim | ve'oti
 atem | koe'im
 hagoy
 kulo
@@ -77,15 +76,14 @@ amar
 Yahweh | tzeva'ot
 
 3:13
-chazeku | alai | divreikhem
-amar | Yahweh
-va'amartem | mah | Nidbarnu | aleikha
+chazeku | alai | divreikhem | amar | Yahweh
+va'amartem | mah | Nidbarnu
+aleikha
 
 3:14
 amartem
 shav
-avod | elohim
-umah | betza | ki | shamarnu | mishmarto
+avod | elohim | umah | betza | ki | shamarnu | mishmarto
 vekhi | halakhnu | kedoranit | mipenei | Yahweh | tzeva'ot
 
 3:15
@@ -96,15 +94,13 @@ vaiyimaletu
 
 3:16
 az | Nidberu | yir'ei | Yahweh
-ish | et | re'ehu
-vaiyakshev | Yahweh | vaiyishma
+ish | et | re'ehu | vaiyakshev | Yahweh | vaiyishma
 vaiyikatev | sefer | zikaron | lefanav | leyir'ei | Yahweh
 ulechoshevei
 shemo
 
 3:17
-vehayu | li | amar | Yahweh | tzeva'ot
-laiyom | asher | ani
+vehayu | li | amar | Yahweh | tzeva'ot | laiyom | asher | ani
 oseh | segulah
 vechamalti | aleihem
 ka'asher | yachmol | ish
@@ -112,14 +108,11 @@ al | beno
 ha'oved | oto
 
 3:18
-veshavtem | ure'item | bein | tzadik
-lerasha
-bein | oved | elohim
-la'asher | lo | avado
+veshavtem | ure'item | bein | tzadik | lerasha
+bein | oved | elohim | la'asher | lo | avado
 
 3:19
-ki | hineh | haiyom | ba
-bo'er | katanur
+ki | hineh | haiyom | ba | bo'er | katanur
 vehayu | khol | zedim | vekhol | oseh | rish'ah | kash
 velihat | otam | haiyom | haba | amar | Yahweh | tzeva'ot
 asher | lo | ya'azo | lahem
@@ -127,8 +120,8 @@ shoresh | ve'anaf
 
 3:20
 vezarechah | lakhem | yir'ei | shemi | shemesh | tzedakah
-umarpe | bikhnafeiha | vitzatem | ufishtem
-ke'eglei | marbek
+umarpe | bikhnafeiha
+vitzatem | ufishtem | ke'eglei | marbek
 
 3:21
 ve'asotem | resha'im
@@ -144,8 +137,7 @@ chukim | umishpatim
 
 3:23
 hineh | anokhi | sholeach | lakhem
-et
-Eliyah | hanavi
+et | Eliyah | hanavi
 lifnei | bo | yom | Yahweh | hagadol
 vehanora
 

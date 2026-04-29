@@ -10,8 +10,8 @@ resh | milin | amar
 aneh | Daniyel | ve'amar
 chazeh | haveit | bechezvi
 im | leilya
-va'aru | arba | ruchei | shemaiya
-megichan | leyama | raba
+va'aru | arba | ruchei | shemaiya | megichan
+leyama | raba
 
 7:3
 ve'arba | cheivan | ravrevan
@@ -22,23 +22,20 @@ da | min | da
 kadmayeta | khe'aryeh
 vegapin | di | neshar | lah
 chazeh | haveit | ad | di | meritu | gapaih | unetilat | min | ar'a | ve'al | raglayin | ke'enash | hokimat
-ulevav | enash
-yehiv | lah
+ulevav | enash | yehiv | lah
 
 7:5
 va'aru | cheivah | ochori | tinyanah | dameyah | ledo | velistar | chad | hokimat
-utelat | il'in | befumah | bein | shinaiyah
+utelat | il'in | befumah
+bein | shinaiyah
 vekhen | amerin | lah
-kumi | akhuli
-besar | sagi
+kumi | akhuli | besar | sagi
 
 7:6
 batar | denah | chazeh | haveit | va'aru | ochori | kinmar
 velah | gapin | arba | di | of
-al | gabaiyah
-ve'arbe'ah | reshin | lecheiveta
-veshaltan
-yehiv | lah
+al | gabaiyah | ve'arbe'ah | reshin | lecheiveta
+veshaltan | yehiv | lah
 
 7:7
 batar | denah | chazeh | haveit | bechezvei | leilya | va'aru | cheivah | revi'ayah | dechilah | ve'eimetani | vetakifa | yatira | veshinayin | di | farzel | lah | ravrevan
@@ -50,8 +47,8 @@ vekarnayin | asar | lah
 7:8
 mistakal | haveit | bekarnaiya | va'alu | keren | ochori | ze'eirah | silkat | beineihon
 utelat | min | karnaiya | kadmayata
-et'akaru
-min | kodamaiyah | va'alu | aynin | ke'aynei | anasha | bekarna- | da
+et'akaru | min | kodamaiyah
+va'alu | aynin | ke'aynei | anasha | bekarna- | da
 ufum | memalil | ravrevan
 
 7:9
@@ -87,7 +84,8 @@ ad | zeman | ve'idan
 
 7:13
 chazeh | haveit | bechezvei | leilya
-va'aru | im | ananei | shemaiya | kevar | enash
+va'aru | im | ananei | shemaiya
+kevar | enash
 ateh | havah
 ve'ad | atik | yomaiya | metah
 ukedamohi
@@ -97,20 +95,17 @@ hakrevuhi
 veleh | yehiv | shaltan | vikar | umalkhu
 vekhol | amaiya | umaiya | velishanaiya
 leh | yiflechun
-shaltaneh | shaltan | alam | di | la | ye'deh
-umalkhuteh
+shaltaneh | shaltan | alam | di | la | ye'deh | umalkhuteh
 di | la | titchabal
 
 7:15
 etkeriyat | ruchi | anah | Daniyel
 bego | nidneh
-vechezvei | reshi
-yevahalunani
+vechezvei | reshi | yevahalunani
 
 7:16
 kirvet | al | chad | min | ka'amaiya | veyatziva | ev'e | mineh
-al | kol | denah
-va'amar | li
+al | kol | denah | va'amar | li
 ufeshar | milaiya | yehod'inani
 
 7:17
@@ -139,7 +134,8 @@ ushe'ara | beraglaih | rafesah
 7:20
 ve'al | karnaiya | asar | di | vereshah
 ve'ochori | di | silkat
-unefalu | min | kodamaiyah | telat
+unefalu | min | kodamaiyah
+telat
 vekarna | diken | ve'aynin | lah | vefum | memalil | ravrevan
 vechezvah
 rav | min | chavratah
@@ -149,8 +145,7 @@ chazeh | haveit
 vekarna | diken
 avedah | kerav
 im | kadishin
-veyakhelah
-lehon
+veyakhelah | lehon
 
 7:22
 ad | di | atah | atik | yomaiya
@@ -163,8 +158,8 @@ hechesinu | kadishin
 ken | amar
 cheiveta | revi'ayeta
 malkhu | revi'aya | teheve | ve'ar'a
-di | tishne
-min | kol | malkhevata | vetekhul | kol | ar'a
+di | tishne | min | kol | malkhevata
+vetekhul | kol | ar'a
 utedushinah
 vetaddekinah
 
@@ -172,7 +167,8 @@ vetaddekinah
 vekarnaiya | asar | minah | malkhutah
 asrah | malkhin | yekumun
 ve'ochoran | yekum | achareihon | vehu | yishne | min | kadmaye
-utelatah | malkhin | yehashpil
+utelatah | malkhin
+yehashpil
 
 7:25
 umilin | letzad | ilaya | yemalil
@@ -185,14 +181,12 @@ ufelag | idan
 7:26
 vedina
 yitiv
-veshaltaneh | yeha'don
-lehashmadah | ulehoadah
+veshaltaneh | yeha'don | lehashmadah | ulehoadah
 ad | sofa
 
 7:27
 umalkhutah | veshaltana | urevuta | di | malkhevat | techot | kol | shemaiya
-yehivat
-le'am
+yehivat | le'am
 kadishei | elyonin | malkhuteh | malkhut | alam
 vekhol | shaltanaiya
 leh | yiflechun

@@ -4,8 +4,7 @@ el | Mosheh | lemor
 
 13:2
 shelach | lekha | anashim | veyaturu | et | eretz | Kena'an
-asher | ani | noten
-livnei | Yisra'el
+asher | ani | noten | livnei | Yisra'el
 ish | echad | ish | echad | lemateh | avotav | tishlachu
 kol | nasi | vahem
 
@@ -52,8 +51,8 @@ Gadi'el
 ben | Sodi
 
 13:11
-lemateh | Yosef
-lemateh | Menasheh | Gadi
+lemateh | Yosef | lemateh | Menasheh
+Gadi
 ben | Susi
 
 13:12
@@ -82,9 +81,7 @@ vaiyikra | Mosheh | Lehoshea | bin | Nun
 Yehoshua
 
 13:17
-vaiyishlach | otam | Mosheh
-latur
-et | eretz | Kena'an
+vaiyishlach | otam | Mosheh | latur | et | eretz | Kena'an
 vaiyomer | alehem | alu | zeh | Banegev
 va'alitem
 et | hahar
@@ -111,22 +108,20 @@ yemei | bikurei | anavim
 
 13:21
 vaiya'alu
-vaiyaturu | et | ha'aretz
-mimidbar | Tzin | ad | Recho | levo | Chamat
+vaiyaturu | et | ha'aretz | mimidbar | Tzin | ad | Recho
+levo | Chamat
 
 13:22
 vaiya'alu | Vanegev | vaiyavo | ad | Chevron
 vesham | Achiman | Sheshai | Vetalmai
 yelidei
 ha'anak
-Vechevron | sheva | shanim | Nivnetah
-lifnei
+Vechevron | sheva | shanim | Nivnetah | lifnei
 Tzo'an | Mitzrayim
 
 13:23
 vaiyavo'u | ad | Nachal | Eshkol | vaiyikhretu | misham | zemorah | ve'eshkol | anavim | echad
-vaiyisa'uhu | vamot
-bishnayim | umin | harimonim | umin | hate'enim
+vaiyisa'uhu | vamot | bishnayim | umin | harimonim | umin | hate'enim
 
 13:24
 lamakom | hahu | kara | Nachal | Eshkol
@@ -135,18 +130,16 @@ asher | karetu | misham
 benei | Yisra'el
 
 13:25
-vaiyashuvu
-mitur | ha'aretz | miketz | arba'im | yom
+vaiyashuvu | mitur | ha'aretz | miketz
+arba'im | yom
 
 13:26
 vaiyelekhu | vaiyavo'u | el | Mosheh | ve'el | Aharon | ve'el | kol | adat | benei | Yisra'el | el | midbar | Paran
-Kadeshah
-vaiyashivu | otam | davar | ve'et | kol | ha'edah
+Kadeshah | vaiyashivu | otam | davar | ve'et | kol | ha'edah
 vaiyar'um | et | peri | ha'aretz
 
 13:27
-vaysaperu | lo | vaiyomeru
-banu
+vaysaperu | lo | vaiyomeru | banu
 el | ha'aretz | asher | shelachtanu
 vegam | zavat | chalav | udevash | hi
 vezeh | piryah
@@ -169,8 +162,7 @@ yad | Haiyarden
 vaiyahas | Kalev | et | ha'am
 el | Mosheh
 vaiyomer | aloh | na'aleh | veyarashnu | otah
-ki | yakhol | nukhal
-lah
+ki | yakhol | nukhal | lah
 
 13:31
 veha'anashim | asher | alu | imo | ameru
@@ -180,11 +172,9 @@ ki | chazak | hu | mimenu
 
 13:32
 vaiyotzi'u | dibat | ha'aretz | asher | taru | otah
-el | benei | Yisra'el
-lemor
+el | benei | Yisra'el | lemor
 ha'aretz | asher | avarnu | vah | latur | otah | eretz | okhelet | yosheveiha | hi
-vekhol | ha'am | asher | ra'inu | vetokhah
-anshei | midot
+vekhol | ha'am | asher | ra'inu | vetokhah | anshei | midot
 
 13:33
 vesham | ra'inu | et | hanefilim | benei | anak | min | hanefilim

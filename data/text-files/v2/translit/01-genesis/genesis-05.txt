@@ -3,27 +3,23 @@ zeh | sefer
 toldot
 Adam
 beyom | bero | elohim | adam
-bidmut | elohim
-asah | oto
+bidmut | elohim | asah | oto
 
 5:2
-zakhar | unekevah
-bera'am
-vayvarekh | otam | vaiyikra | et | shemam | adam
-beyom | hibare'am
+zakhar | unekevah | bera'am
+vayvarekh | otam | vaiyikra | et | shemam | adam | beyom | hibare'am
 
 5:3
 vaychi | Adam | sheloshim | ume'at | shanah
-vaiyoled | bidmuto
-ketzalmo | vaiyikra | et | shemo
+vaiyoled | bidmuto | ketzalmo
+vaiyikra | et | shemo
 Shet
 
 5:4
 vaiyihyu | yemei | Adam | acharei | holido | et | Shet
 shemoneh | me'ot
 shanah
-vaiyoled | banim
-uvanot
+vaiyoled | banim | uvanot
 
 5:5
 vaiyihyu | kol | yemei | Adam | asher | chai
@@ -40,14 +36,12 @@ vaiyoled | et | Enoosh
 5:7
 vaychi | Shet | acharei | holido | et | Enoosh
 sheva | shanim | ushemoneh | me'ot | shanah
-vaiyoled | banim
-uvanot
+vaiyoled | banim | uvanot
 
 5:8
 vaiyihyu | kol | yemei | Shet
-sheteim | esreh | shanah
-utesha | me'ot | shanah
-vaiyamot
+sheteim | esreh | shanah | utesha | me'ot
+shanah | vaiyamot
 
 5:9
 vaychi | Enoosh
@@ -58,30 +52,27 @@ vaiyoled | et | Keinan
 vaychi | Enoosh | acharei | holido | et | Keinan
 chamesh | esreh | shanah
 ushemoneh | me'ot | shanah
-vaiyoled | banim
-uvanot
+vaiyoled | banim | uvanot
 
 5:11
 vaiyihyu | kol | yemei | Enoosh
-chamesh | shanim | utesha | me'ot | shanah
-vaiyamot
+chamesh | shanim | utesha | me'ot
+shanah | vaiyamot
 
 5:12
 vaychi | Keinan
-shiv'im | shanah
-vaiyoled | et | Mahalal'el
+shiv'im | shanah | vaiyoled | et | Mahalal'el
 
 5:13
 vaychi | Keinan | acharei | holido | et | Mahalal'el
 arba'im | shanah
 ushemoneh | me'ot | shanah
-vaiyoled | banim
-uvanot
+vaiyoled | banim | uvanot
 
 5:14
 vaiyihyu | kol | yemei | Keinan
-eser | shanim | utesha | me'ot | shanah
-vaiyamot
+eser | shanim | utesha | me'ot
+shanah | vaiyamot
 
 5:15
 vaychi | Mahalal'el
@@ -92,14 +83,12 @@ vaiyoled | et | Yared
 vaychi | Mahalal'el | acharei | holido | et | Yered
 sheloshim | shanah
 ushemoneh | me'ot | shanah
-vaiyoled | banim
-uvanot
+vaiyoled | banim | uvanot
 
 5:17
 vaiyihyu | kol | yemei | Mahalal'el
 chamesh | vetish'im | shanah
-ushemoneh | me'ot | shanah
-vaiyamot
+ushemoneh | me'ot | shanah | vaiyamot
 
 5:18
 vaychi | Yered
@@ -109,14 +98,12 @@ vaiyoled | et | Chanokh
 5:19
 vaychi | Yered | acharei | holido | et | Chanokh
 shemoneh | me'ot | shanah
-vaiyoled | banim
-uvanot
+vaiyoled | banim | uvanot
 
 5:20
 vaiyihyu | kol | yemei | Yered
-shetayim | veshishim | shanah
-utesha | me'ot | shanah
-vaiyamot
+shetayim | veshishim | shanah | utesha | me'ot
+shanah | vaiyamot
 
 5:21
 vaychi | Chanokh
@@ -127,8 +114,7 @@ vaiyoled | et | Metushalach
 5:22
 vaiyithalekh | Chanokh | et | ha'elohim | acharei | holido | et | Metushelach
 shelosh | me'ot | shanah
-vaiyoled | banim
-uvanot
+vaiyoled | banim | uvanot
 
 5:23
 vayhi
@@ -139,8 +125,7 @@ ushelosh | me'ot | shanah
 5:24
 vaiyithalekh | Chanokh | et | ha'elohim
 ve'einenu
-ki | lakach | oto
-elohim
+ki | lakach | oto | elohim
 
 5:25
 vaychi | Metushelach
@@ -151,14 +136,12 @@ vaiyoled | et | Lamekh
 vaychi | Metushelach | acharei | holido | et | Lemekh
 shetayim | ushemonim | shanah
 usheva | me'ot | shanah
-vaiyoled | banim
-uvanot
+vaiyoled | banim | uvanot
 
 5:27
 vaiyihyu | kol | yemei | Metushelach
-tesha | veshishim | shanah
-utesha | me'ot | shanah
-vaiyamot
+tesha | veshishim | shanah | utesha | me'ot
+shanah | vaiyamot
 
 5:28
 vaychi | Lemekh
@@ -167,10 +150,8 @@ vaiyoled
 ben
 
 5:29
-vaiyikra | et | shemo | Noach
-lemor
-zeh | yenachamenu | mima'asenu | ume'itzevon | yadeinu
-min | ha'adamah | asher | ererah
+vaiyikra | et | shemo | Noach | lemor
+zeh | yenachamenu | mima'asenu | ume'itzevon | yadeinu | min | ha'adamah | asher | ererah
 Yahweh
 
 5:30
@@ -178,8 +159,7 @@ vaychi | Lemekh | acharei | holido | et | Noach
 chamesh | vetish'im | shanah
 vachamesh | me'ot
 shanah
-vaiyoled | banim
-uvanot
+vaiyoled | banim | uvanot
 
 5:31
 vayhi | kol | yemei | Lemekh
@@ -190,4 +170,5 @@ vaiyamot
 5:32
 vayhi | Noach
 ben | chamesh | me'ot | shanah
-vaiyoled | Noach | et | Shem | et | Cham | ve'et | Yafet
+vaiyoled | Noach | et | Shem
+et | Cham | ve'et | Yafet

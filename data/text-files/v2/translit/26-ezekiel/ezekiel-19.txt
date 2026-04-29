@@ -1,7 +1,6 @@
 19:1
 ve'atah | sa | kinah
-el | nesi'ei
-Yisra'el
+el | nesi'ei | Yisra'el
 
 19:2
 ve'amarta | mah | imekha | leviya
@@ -10,7 +9,8 @@ ravatzah | betokh | kefirim
 ribetah | gureiha
 
 19:3
-vata'al | echad | migureiha | kefir | hayah
+vata'al | echad | migureiha
+kefir | hayah
 vaiyilmad | litrof | teref
 adam | akhal
 
@@ -24,7 +24,8 @@ el | eretz | Mitzrayim
 vatere | ki | Nochalah
 avedah
 tikvatah
-vatikach | echad | migureiha | kefir | samatehu
+vatikach | echad | migureiha
+kefir | samatehu
 
 19:6
 vaiyithalekh | betokh | arayot
@@ -36,18 +37,18 @@ adam | akhal
 vaiyeda | almenotav
 ve'areihem
 hecheriv
-vatesham | eretz | umelo'ah | mikol | sha'agato
+vatesham | eretz | umelo'ah | mikol
+sha'agato
 
 19:8
-vaiyitenu | alav | goyim | saviv
-mimedinot | vaiyifresu | alav | rishtam
+vaiyitenu | alav | goyim | saviv | mimedinot
+vaiyifresu | alav | rishtam
 beshachtam | Nitpas
 
 19:9
 vaiyitenuhu | vasugar | bachachim
 vayvi'uhu
-el | melekh | Bavel
-yevi'uhu | bametzodot
+el | melekh | Bavel | yevi'uhu | bametzodot
 lema'an | lo | yishama | kolo | od
 el | harei | Yisra'el
 
@@ -55,15 +56,12 @@ el | harei | Yisra'el
 imekha | khagefen | bedamekha
 al | mayim | shetulah
 poriyah | va'anefah
-hayetah
-mimayim | rabim
+hayetah | mimayim | rabim
 
 19:11
 vaiyihyu | lah | matot | oz | el | shivtei | moshelim
 vatigbah | komato
-al | bein | avotim
-vaiyera | vegaveho
-bero
+al | bein | avotim | vaiyera | vegaveho | bero
 daliyotav
 
 19:12

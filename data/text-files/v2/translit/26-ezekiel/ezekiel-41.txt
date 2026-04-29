@@ -8,14 +8,13 @@ rochav | ha'ohel
 verochav | hapetach | eser | amot
 vekhitfot | hapetach
 chamesh | amot | mipo
-vechamesh | amot
-mipo | vaiyamod | areko | arba'im | amah
+vechamesh | amot | mipo
+vaiyamod | areko | arba'im | amah
 verochav
 esrim | amah
 
 41:3
-uva | lifnimah
-vaiyamod | eil | hapetach
+uva | lifnimah | vaiyamod | eil | hapetach
 shetayim | amot
 vehapetach | shesh | amot
 verochav | hapetach
@@ -23,10 +22,8 @@ sheva | amot
 
 41:4
 vaiyamod | et | areko | esrim | amah | verochav | esrim | amah
-el | penei | haheikhal
-vaiyomer | elai
-zeh
-kodesh | hakodashim
+el | penei | haheikhal | vaiyomer | elai
+zeh | kodesh | hakodashim
 
 41:5
 vaiyamod | kir | habayit
@@ -36,16 +33,12 @@ saviv
 
 41:6
 vehatzela'ot | tzela | el | tzela | shaloosh | usheloshim | pe'amim | uva'ot | bakir | asher | labayit | latzela'ot | saviv | saviv
-lihyot | achuzim
-velo | yihyu | achuzim
-bekir | habayit
+lihyot | achuzim | velo | yihyu | achuzim | bekir | habayit
 
 41:7
 verachavah | venasevah | lema'lah | lema'lah | latzela'ot | ki | musav | habayit | lema'lah | lema'lah | saviv | saviv | labayit
-al | ken | rochav | labayit
-lema'elah
-vekhen | hatachtonah | ya'aleh | al | ha'elyonah
-latikhonah
+al | ken | rochav | labayit | lema'elah
+vekhen | hatachtonah | ya'aleh | al | ha'elyonah | latikhonah
 
 41:8
 vera'iti | labayit | goah | saviv | saviv
@@ -67,8 +60,7 @@ ufetach | hatzela | lamunach
 petach | echad | derekh | hatzafon
 ufetach | echad | ladarom
 verochav | mekom | hamunach
-chamesh | amot
-saviv | saviv
+chamesh | amot | saviv | saviv
 
 41:12
 vehabinyan | asher | el | penei | hagizrah | pe'at | derekh | haiyam | rochav | shiv'im | amah
@@ -77,10 +69,8 @@ ve'areko
 tish'im | amah
 
 41:13
-umadad | et | habayit
-orekh | me'ah | amah
-vehagizrah | vehabinyah | vekiroteiha
-orekh | me'ah | amah
+umadad | et | habayit | orekh | me'ah | amah
+vehagizrah | vehabinyah | vekiroteiha | orekh | me'ah | amah
 
 41:14
 verochav | penei | habayit | vehagizrah | lakadim | me'ah | amah
@@ -103,11 +93,9 @@ al | me'al | hapetach | ve'ad | habayit | hapenimi | velachutz | ve'el | kol | h
 midot
 
 41:18
-ve'asui | keruvim
-vetimorim
+ve'asui | keruvim | vetimorim
 vetimorah | bein | keruv | likhruv
-ushenayim | panim
-lakeruv
+ushenayim | panim | lakeruv
 
 41:19
 ufenei | adam | el | hatimorah | mipo
@@ -129,8 +117,7 @@ hamar'eh | kamar'eh
 41:22
 hamizbeach | etz | shalovosh | amot | gavoah | ve'areko | shetayim | amot | umiktzo'otav | lo
 ve'areko | vekirotav
-etz
-vaydaber | elai
+etz | vaydaber | elai
 zeh | hashulchan | asher | lifnei | Yahweh
 
 41:23
@@ -139,8 +126,7 @@ ushetayim | delatot | laheikhal | velakodesh
 41:24
 ushetayim | delatot | ladelatot
 shetayim | musabot | delatot
-shetayim | ledelet | echat | ushetei | delatot
-la'acheret
+shetayim | ledelet | echat | ushetei | delatot | la'acheret
 
 41:25
 va'asuyah | aleihen | el | daltot | haheikhal | keruvim | vetimorim

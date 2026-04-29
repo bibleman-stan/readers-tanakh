@@ -7,8 +7,7 @@ damim
 im | zarechah | hashemesh | alav
 damim | lo
 shalem | yeshalem
-im | ein | lo
-venimkar | bignevato
+im | ein | lo | venimkar | bignevato
 
 22:3
 im | himatze | timatze | veyado | hagenevah | mishor | ad | chamor | ad | seh
@@ -63,9 +62,8 @@ velakach | be'alav
 velo | yeshalem
 
 22:11
-ve'im | gano | yiganev
-me'imo | yeshalem
-liv'alav
+ve'im | gano | yiganev | me'imo
+yeshalem | liv'alav
 
 22:12
 im | tarof | yitaref
@@ -75,27 +73,23 @@ lo | yeshalem
 
 22:13
 vekhi | yish'al | ish | me'im | re'ehu
-venishbar | ov | met | be'alav | ein | imo
+venishbar | ov | met
+be'alav | ein | imo
 shalem | yeshalem
 
 22:14
 im | be'alav | imo
 lo | yeshalem
-im | sakhir | hu
-ba
-biskharo
+im | sakhir | hu | ba | biskharo
 
 22:15
 vekhi | yefateh | ish | betulah | asher | lo | orasah
 veshakhav | imah
-mahor | yimharenah | lo
-le'ishah
+mahor | yimharenah | lo | le'ishah
 
 22:16
-im | ma'en | yema'en | aviha
-letitah | lo
-kesef | yishkol
-kemohar
+im | ma'en | yema'en | aviha | letitah | lo
+kesef | yishkol | kemohar
 habetulot
 
 22:17
@@ -106,10 +100,7 @@ kol | shokhev | im | behemah
 mot | yumat
 
 22:19
-zoveach | la'elohim
-yochoram
-bilti | Layahweh
-levado
+zoveach | la'elohim | yochoram | bilti | Layahweh | levado
 
 22:20
 veger | lo | toneh
@@ -129,10 +120,9 @@ tza'akato
 
 22:23
 vecharah | api
-veharagti | etkhem
-becharev
-vehayu | nesheikhem | almanot
-uveneikhem | yetomim
+veharagti | etkhem | becharev
+vehayu | nesheikhem | almanot | uveneikhem
+yetomim
 
 22:24
 im | kesef | talveh | et | ami | et | he'ani | imakh
@@ -147,8 +137,7 @@ teshivenu | lo
 
 22:26
 ki | hi | khesuto | levadah
-hi | simlato
-le'oro
+hi | simlato | le'oro
 bameh | yishkav
 vehayah | ki | yitz'ak | elai
 veshama'ti
@@ -157,22 +146,20 @@ ki | chanun | ani
 22:27
 elohim
 lo | tekalel
-venasi | ve'amekha | lo | ta'or
+venasi | ve'amekha
+lo | ta'or
 
 22:28
-mele'atekha | vedim'akha | lo | te'acher
-bekhor | baneikha
+mele'atekha | vedim'akha | lo | te'acher | bekhor | baneikha
 titen | li
 
 22:29
-ken | ta'aseh | leshorekha
-letzonekha
+ken | ta'aseh | leshorekha | letzonekha
 shiv'at | yamim | yihyeh | im | imo
 baiyom | hashemini | titenov | li
 
 22:30
 ve'anshei | kodesh
 tihyun | li
-uvasar | basadeh | terefah | lo | tokhelu
-lakelev
+uvasar | basadeh | terefah | lo | tokhelu | lakelev
 tashlikhun | oto

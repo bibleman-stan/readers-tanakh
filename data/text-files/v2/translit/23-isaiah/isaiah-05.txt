@@ -1,7 +1,6 @@
 5:1
 ashirah | na | lididi
-shirat | dodi
-lekharmo
+shirat | dodi | lekharmo
 kerem | hayah | lididi
 bekeren | ben | shamen
 
@@ -34,16 +33,14 @@ vehayah | lemirmas
 va'ashitehu | vatah | lo | yizamer | velo | ye'ader
 ve'alah | shamir
 vashayit
-ve'al | he'avim | atzaveh
-mehamtir | alav | matar
+ve'al | he'avim | atzaveh | mehamtir | alav | matar
 
 5:7
 ki | kherem | Yahweh | tzeva'ot | beit | Yisra'el
 ve'ish | Yehudah
 neta
 sha'ashu'av
-vaykav | lemishpat | vehineh | mispach
-litzdakah
+vaykav | lemishpat | vehineh | mispach | litzdakah
 vehineh | tze'akah
 
 5:8
@@ -60,21 +57,17 @@ gedolim | vetovim
 me'ein | yoshev
 
 5:10
-ki | aseret | tzimdei | kherem
-ya'asu
-bat | echat | vezera | chomer
-ya'aseh | eifah
+ki | aseret | tzimdei | kherem | ya'asu
+bat | echat | vezera | chomer | ya'aseh | eifah
 
 5:11
 ho | mashkimei | vaboker
-shekhar | yirdofu
-me'acharei | vaneshef
-yayin
-yadlikem
+shekhar | yirdofu | me'acharei | vaneshef
+yayin | yadlikem
 
 5:12
-vehayah | khinor | vanevel | tof | vechalil | vayayin
-mishteihem | ve'et | po'al | Yahweh | lo | yabitu
+vehayah | khinor | vanevel | tof | vechalil | vayayin | mishteihem
+ve'et | po'al | Yahweh | lo | yabitu
 uma'aseh | yadav
 lo | ra'u
 
@@ -92,15 +85,11 @@ ve'alez | bah
 5:15
 vaiyishach | adam
 vaiyishpal | ish
-ve'einei | gevohim
-tishpalnah
+ve'einei | gevohim | tishpalnah
 
 5:16
-vaiyigbah | Yahweh | tzeva'ot
-bamishpat
-veha'el | hakadoosh
-nikdash
-bitzdakah
+vaiyigbah | Yahweh | tzeva'ot | bamishpat
+veha'el | hakadoosh | nikdash | bitzdakah
 
 5:17
 vera'u | khevasim | kedaveram
@@ -123,8 +112,7 @@ samim | choshekh | le'or | ve'or | lechoshekh
 samim | mar | lematok | umatok | lemar
 
 5:21
-ho | chakhamim | be'eineihem
-veneged | peneihem
+ho | chakhamim | be'eineihem | veneged | peneihem
 nevonim
 
 5:22
@@ -156,7 +144,8 @@ ve'od
 yado | netuyah
 
 5:26
-venasa | nes | lagoyim | merachok | vesharak | lo | miktzeh | ha'aretz
+venasa | nes | lagoyim | merachok
+vesharak | lo | miktzeh | ha'aretz
 vehineh | meherah | kal | yavo
 
 5:27
@@ -182,8 +171,7 @@ veyaflit
 ve'ein | matzil
 
 5:30
-veyinhom | alav | baiyom | hahu
-kenahamat | yam
+veyinhom | alav | baiyom | hahu | kenahamat | yam
 venibat | la'aretz | vehineh | choshekh
 tzar | va'or
 chashakh | ba'arifeiha

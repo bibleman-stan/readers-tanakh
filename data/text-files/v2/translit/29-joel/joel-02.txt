@@ -6,7 +6,8 @@ ki | va | yom | Yahweh
 ki | karov
 
 2:2
-yom | choshekh | va'afelah | yom | anan | va'arafel | keshachar
+yom | choshekh | va'afelah | yom | anan | va'arafel
+keshachar
 parus | al | heharim
 am | rav | ve'atzum
 kamohu | lo | Nihyah | min | ha'olam
@@ -15,9 +16,7 @@ ad | shenei
 dor | vador
 
 2:3
-lefanav | akhelah | esh
-ve'acharav
-telahet | lehavah
+lefanav | akhelah | esh | ve'acharav | telahet | lehavah
 kegan | Eden | ha'aretz | lefanav | ve'acharav | midbar | shemamah
 vegam | peleitah | lo | hayetah | lo
 
@@ -44,22 +43,20 @@ orechotam
 
 2:8
 ve'ish | achiv | lo | yidchakun
-gever | bimsilato
-yelekhun
+gever | bimsilato | yelekhun
 uve'ad | hashelach | yipolu
 lo | yivtza'u
 
 2:9
 ba'ir | yashoku | bachomah | yerutzun | babatim | ya'alu
-be'ad | hachalonim | yavo'u
-kaganav
+be'ad | hachalonim | yavo'u | kaganav
 
 2:10
 lefanav | ragezah | eretz
 ra'ashu
 shamayim
-shemesh | veyareach | kadaru
-vekhokhavim | asefu | nageham
+shemesh | veyareach | kadaru | vekhokhavim
+asefu | nageham
 
 2:11
 Vayahweh | natan | kolo | lifnei | cheilo
@@ -83,13 +80,11 @@ al | hara'ah
 2:14
 mi | yodea | yashuv | venicham
 vehish'ir | acharav | berakhah
-minchah | vanesekh
-Layahweh
+minchah | vanesekh | Layahweh
 eloheikhem
 
 2:15
-tik'u | shofar
-Betziyon
+tik'u | shofar | Betziyon
 kadeshu | tzom
 kir'u | atzarah
 
@@ -97,8 +92,7 @@ kir'u | atzarah
 isfu | am | kadeshu | kahal | kivtzu | zekenim
 isfu | olalim
 veyonekei
-shadayim
-yetze | chatan | mechedro
+shadayim | yetze | chatan | mechedro
 vekhalah | mechupatah
 
 2:17
@@ -110,16 +104,15 @@ aiyeh
 eloheihem
 
 2:18
-vaykane | Yahweh
-le'artzo | vaiyachmol
+vaykane | Yahweh | le'artzo
+vaiyachmol
 al | amo
 
 2:19
 vaiya'an | Yahweh | vaiyomer | le'amo | hini | sholeach | lakhem | et | hadagan | vehatiroosh | vehaiyitzhar
 useva'tem
 oto
-velo | eten | etkhem | od | cherpah
-bagoyim
+velo | eten | etkhem | od | cherpah | bagoyim
 
 2:20
 ve'et | hatzefoni | archik | me'aleikhem | vehidachtiv | el | eretz | tziyah | ushemamah
@@ -127,30 +120,24 @@ et | panav | el | haiyam | hakadmoni
 vesofo
 el | haiyam | ha'acharon
 ve'alah | va'esho | veta'al | tzachanato
-ki | higdil
-la'asot
+ki | higdil | la'asot
 
 2:21
-al | tir'i
-adamah
+al | tir'i | adamah
 gili | usemachi
-ki | higdil | Yahweh
-la'asot
+ki | higdil | Yahweh | la'asot
 
 2:22
 al | tire'u | bahamot | sadai
 ki | dashe'u
 ne'ot | midbar
-ki | etz | nasa | firyo
-te'enah | vagefen
+ki | etz | nasa | firyo | te'enah | vagefen
 natenu | cheilam
 
 2:23
 uvenei | Tziyon | gilu | vesimchu | Bayahweh | eloheikhem
-ki | natan | lakhem | et | hamoreh
-litzdakah
-vaiyored | lakhem | geshem | moreh | umalkoosh
-barishon
+ki | natan | lakhem | et | hamoreh | litzdakah
+vaiyored | lakhem | geshem | moreh | umalkoosh | barishon
 
 2:24
 umal'u | hagoranot | bar
@@ -161,17 +148,14 @@ tiroosh | veyitzhar
 veshilamti | lakhem | et | hashanim | asher | akhal | ha'arbeh
 haiyelek
 vehechasil | vehagazam
-cheili | hagadol | asher | shilachti
-bakhem
+cheili | hagadol | asher | shilachti | bakhem
 
 2:26
 va'akhaltem | akhol | vesavoa
 vehilaltem | et | shem | Yahweh | eloheikhem
-asher | asah | imakhem | lehafli | velo | yevoshu | ami
-le'olam
+asher | asah | imakhem | lehafli | velo | yevoshu | ami | le'olam
 
 2:27
 vida'tem | ki | vekerev | Yisra'el | ani
 va'ani | Yahweh | eloheikhem
-ve'ein | od | velo | yevoshu | ami
-le'olam
+ve'ein | od | velo | yevoshu | ami | le'olam

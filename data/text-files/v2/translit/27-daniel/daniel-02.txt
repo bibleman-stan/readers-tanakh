@@ -1,9 +1,7 @@
 2:1
 uvishnat | shetayim | lemalkhut | Nevukhadnetzar | chalam | Nevukhadnetzar
-chalomot
-vatitpa'em | rucho
-ushenato
-Nihyetah | alav
+chalomot | vatitpa'em | rucho
+ushenato | Nihyetah | alav
 
 2:2
 vaiyomer | hamelekh | likro | lachartumim | vela'ashafim | velamkhashefim | velakasdim
@@ -15,61 +13,51 @@ lifnei | hamelekh
 
 2:3
 vaiyomer | lahem | hamelekh
-chalom | chalameti
-vatipa'em | ruchi
-lada'at
-et | hachalom
+chalom | chalameti | vatipa'em | ruchi | lada'at | et | hachalom
 
 2:4
 vaydaberu | hakasdim | lamelekh
-aramit
-malka | le'almin | cheyi
+aramit | malka | le'almin | cheyi
 emar | chelma | le'avdayikh
 ufishra | nechave
 
 2:5
-aneh | malka | ve'amar | lekhasda'ei
-mileta | mini | azda
+aneh | malka | ve'amar | lekhasda'ei | mileta
+mini | azda
 hen | la | tehod'unani | chelma | ufishreh
 hadamin | tit'avdun
-uvateikhon
-nevali | yitesamun
+uvateikhon | nevali | yitesamun
 
 2:6
 vehen | chelma | ufishreh | tehachavon
 matenan | unevizbah | vikar | sagi
-tekabelun
-min | kodamai | lahen
+tekabelun | min | kodamai | lahen
 chelma | ufishreh
 hachavoni
 
 2:7
 ano | tinyanut
-ve'amerin | malka | chelma | yemar | le'avdohi
+ve'amerin | malka
+chelma | yemar | le'avdohi
 ufishrah | nehachaveh
 
 2:8
 aneh | malka | ve'amar
 min | yatziv | yada | anah
-di | idana
-antun | zavenin
+di | idana | antun | zavenin
 kol | kovel | di | chazeiton
-di | azda
-mini | mileta
+di | azda | mini | mileta
 
 2:9
 di | hen | chelma | la | tehod'unani | chadah | hi | datekhon | umilah | khidvah | ushechitah | hazmintun | lememar | kadamai
-ad | di | idana
-yishtane
-lahen | chelma | emaru | li
-ve'inda
-di | fishreh
-tehachavunani
+ad | di | idana | yishtane
+lahen | chelma | emaru | li | ve'inda
+di | fishreh | tehachavunani
 
 2:10
-ano | khasdai | kodom | malka | ve'amerin | la | itai | anash | al | yabeshta
-di | milat | malka | yukhal
-lehachavayah
+ano | khasdai | kodom | malka | ve'amerin
+la | itai | anash | al | yabeshta
+di | milat | malka | yukhal | lehachavayah
 kol | kovel | di | kol | melekh | rav | veshalit
 milah | khidnah | la | she'el | lekhol | charttom
 ve'ashaf | vekhasdai
@@ -100,9 +88,7 @@ di | malka | di | nefak | lekatalah | lechakimei | Bavel
 2:15
 aneh | ve'amar | Le'aryokh | shalita | di | malka
 al | mah | data | mehachtzefah | min | kodam | malka
-edayin | mileta
-hoda | Aryokh
-Ledaniyel
+edayin | mileta | hoda | Aryokh | Ledaniyel
 
 2:16
 Vedaniyel | al
@@ -123,8 +109,7 @@ chakimei | Vavel
 
 2:19
 edayin | Ledaniyel | bechezva | di | leilya
-razah | gali
-edayin | Daniyel
+razah | gali | edayin | Daniyel
 barikh
 le'elah | shemaiya
 
@@ -136,8 +121,7 @@ di | leh | hi
 
 2:21
 vehu | mehashne | idanaiya | vezimnaiya | meha'deh | malkhin
-umehakeim | malkhin | yahev | chakhemeta | lechakimin | umande'a
-leyade'ei | vinah
+umehakeim | malkhin | yahev | chakhemeta | lechakimin | umande'a | leyade'ei | vinah
 
 2:22
 hu | gale | amikata | umesaterata
@@ -147,8 +131,7 @@ imeh | shere
 
 2:23
 lakh | elah | avahati | mehode | umeshabach | anah
-di | chakhemeta | ugevureta
-yehavt | li
+di | chakhemeta | ugevureta | yehavt | li
 ukhe'an | hoda'tani | di | ve'eina | minakh
 di | milat | malka | hoda'tena
 
@@ -178,13 +161,11 @@ aneh | Daniyel | kodam | malka
 ve'amar
 razah | di | malka | sha'el
 la | chakimin | ashefin | chartumin | gazerin
-yakhelin
-lehachavayah | lemalka
+yakhelin | lehachavayah | lemalka
 
 2:28
 beram | itai | elah | bishmaiya | gale | razin
-vehoda | lemalka | Nevukhadnetzar
-mah | di | leheve
+vehoda | lemalka | Nevukhadnetzar | mah | di | leheve
 be'acharit | yomaiya
 chelmakh | vechezvei | reshakh | al | mishkevakh
 denah | hu
@@ -199,8 +180,7 @@ va'anah | la | vechakhemah | di | itai | bi | min | kol | chaiyaiya
 raza | denah
 geli | li
 lahen | al | divrat | di | fishra | lemalka | yehod'un
-vera'yonei | livakh
-tinda
+vera'yonei | livakh | tinda
 
 2:31
 antah | malka | chazeh | havayta | va'alu | tzelem | chad | sagi
@@ -256,12 +236,10 @@ di | dahava
 2:39
 uvaterakh | tekum | malkhu | ochori | ara | minakh
 umalkhu | telitaya | ochori | di | nechasha
-di | tishlat
-bekhol | ar'a
+di | tishlat | bekhol | ar'a
 
 2:40
-umalkhu | revi'ayah | teheve | takifah
-kefarzela
+umalkhu | revi'ayah | teheve | takifah | kefarzela
 kol | kovel | di | farzela | mehadek | vechashel | kola
 ukhefarzela | di | mera'a | kol | ilein
 tadik | veteroa
@@ -274,14 +252,14 @@ kol | kovel | di | chazaytah
 parzela | me'arav | bachasaf | tina
 
 2:42
-ve'etzbe'at | raglaiya | minehon | parzel | uminehon | chasaf
-min | ketzat | malkhuta | teheveh | takifah
-uminah | teheveh | tevirah
+ve'etzbe'at | raglaiya | minehon | parzel
+uminehon | chasaf
+min | ketzat | malkhuta | teheveh | takifah | uminah
+teheveh | tevirah
 
 2:43
 vedi | chazayta | parzela | me'arav | bachasaf | tina
-mit'arevin | lehevon | bizra | anasha
-vela | lehevon | davekin
+mit'arevin | lehevon | bizra | anasha | vela | lehevon | davekin
 denah | im | denah
 he | khedi | farzela | la | mit'arav | im | chaspa
 
@@ -290,8 +268,8 @@ uveyomeihon | di | malkhaiya | inun | yekim | elah | shemaiya | malkhu | di | le
 umalkhutah
 le'am | ochoran
 la | tishtevik
-tadik | vetaseif | kol | ilein | malkhevata | vehi
-tekum | le'almaiya
+tadik | vetaseif | kol | ilein | malkhevata
+vehi | tekum | le'almaiya
 
 2:45
 kol | kovel | di | chazayta | di | mitura | itgezeret | even | di | la | vidayin | vehadeket | parzela | nechasha | chaspa | kaspa | vedahava
@@ -301,17 +279,15 @@ veyatziv | chelma
 umeheiman | pishreh
 
 2:46
-bedayin | malka | Nevukhadnetzar | nefal | al | anpohi
-Uledaniyel
-segid | uminchah | venichochin
-amar
-lenasakhah | leh
+bedayin | malka | Nevukhadnetzar | nefal | al | anpohi | Uledaniyel
+segid
+uminchah | venichochin
+amar | lenasakhah | leh
 
 2:47
 aneh | malka | Ledaniyel | ve'amar | min | keshot | di | elahakhon | hu | elah | elahin | umare | malkhin
 vegaleh | razin
-di | yekheleta
-lemigle
+di | yekheleta | lemigle
 razah | denah
 
 2:48

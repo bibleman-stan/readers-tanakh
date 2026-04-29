@@ -1,15 +1,13 @@
 10:1
 vayhi | acharei | khen
-vaiyamot
-melekh | benei | Amon
-vaiyimlokh | Chanun | beno
+vaiyamot | melekh
+benei | Amon | vaiyimlokh | Chanun | beno
 tachtav
 
 10:2
 vaiyomer | David | e'eseh | chesed | im | Chanun | ben | Nachash | ka'asher | asah | aviv | imadi | chesed
 vaiyishlach | David | lenachamo | beyad | avadav
-el | aviv
-vaiyavo'u | avdei | David
+el | aviv | vaiyavo'u | avdei | David
 eretz | benei | Amon
 
 10:3
@@ -22,20 +20,17 @@ eleikha
 10:4
 vaiyikach | Chanun | et | avdei | David | vaygalach | et | chatzi | zekanam
 vaiyikhrot | et | madveihem | bachetzi
-ad | shetoteihem
-vayshalechem
+ad | shetoteihem | vayshalechem
 
 10:5
 vaiyagidu | Ledavid | vaiyishlach | likratam
-ki | hayu | ha'anashim
-nikhlamim | me'od | vaiyomer | hamelekh | shevu | Virecho
+ki | hayu | ha'anashim | nikhlamim | me'od | vaiyomer | hamelekh | shevu | Virecho
 ad | yetzamach | zekankhem
 veshavtem
 
 10:6
 vaiyir'u | benei | Amon
-ki | Niv'ashu
-Bedavid
+ki | Niv'ashu | Bedavid
 vaiyishlechu | venei | Amon | vaiyiskeru | et | Aram | Beit | Rechov | ve'et | Aram | Tzova | esrim | elef | ragli
 ve'et | melekh | Ma'akhah | elef | ish
 ve'ish | Tov
@@ -43,8 +38,7 @@ sheneim | asar | elef | ish
 
 10:7
 vaiyishma
-David
-vaiyishlach | et | Yo'av
+David | vaiyishlach | et | Yo'av
 ve'et | kol | hatzava
 hagiborim
 
@@ -52,22 +46,21 @@ hagiborim
 vaiyetze'u | benei | Amon
 vaiya'arkhu | milchamah
 petach | hasha'ar
-Va'aram | Tzova | Urechov | ve'ish | Tov | Uma'akhah
-levadam | basadeh
+Va'aram | Tzova | Urechov | ve'ish | Tov | Uma'akhah | levadam
+basadeh
 
 10:9
-vaiyar | Yo'av | ki | hayetah | elav | penei | hamilchamah
-mipanim | ume'achor
-vaiyivchar | mikol | bechurei | Beyisra'el
+vaiyar | Yo'av | ki | hayetah | elav | penei | hamilchamah | mipanim
+ume'achor | vaiyivchar | mikol | bechurei | Beyisra'el
 vaiya'arokh
 likrat | Aram
 
 10:10
 ve'et | yeter | ha'am
-natan
-beyad | Avshai | achiv
-vaiya'arokh
-likrat | benei | Amon
+natan | beyad
+Avshai | achiv
+vaiya'arokh | likrat
+benei | Amon
 
 10:11
 vaiyomer | im | techezak | Aram | mimeni
@@ -77,15 +70,12 @@ vehalakhti | lehoshia | lakh
 
 10:12
 chazak | venitchazak | be'ad | amenu | uve'ad
-arei | eloheinu
-Vayahweh
-ya'aseh | hatov
-be'einav
+arei | eloheinu | Vayahweh
+ya'aseh | hatov | be'einav
 
 10:13
-vaiyigash | Yo'av | veha'am | asher | imo
-lamilchamah | Ba'aram | vaiyanusu
-mipanav
+vaiyigash | Yo'av | veha'am | asher | imo | lamilchamah
+Ba'aram | vaiyanusu | mipanav
 
 10:14
 uvenei | Amon | ra'u | ki | nas | Aram
@@ -112,8 +102,7 @@ Veshovakh | sar | tzeva | Hadad'ezer | lifneihem
 10:17
 vaiyugad | Ledavid | vaiye'esof | et | kol | Yisra'el | vaiya'avor | et | Haiyarden
 vaiyavo
-Chelamah
-vaiya'arkhu | Aram | likrat | David
+Chelamah | vaiya'arkhu | Aram | likrat | David
 vaiyilachamu
 imo
 
