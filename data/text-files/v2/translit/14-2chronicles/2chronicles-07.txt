@@ -7,8 +7,7 @@ male | et | habayit
 
 7:2
 velo | yakhelu | hakohanim | lavo | el | beit | Yahweh
-ki | male | khevod | Yahweh
-et | beit | Yahweh
+ki | male | khevod | Yahweh | et | beit | Yahweh
 
 7:3
 vekhol | benei | Yisra'el | ro'im | beredet | ha'esh
@@ -19,9 +18,7 @@ ki | le'olam
 chasdo
 
 7:4
-vehamelekh
-vekhol | ha'am
-zoechim | zevach
+vehamelekh | vekhol | ha'am | zoechim | zevach
 lifnei | Yahweh
 
 7:5
@@ -29,15 +26,13 @@ vaiyizbach | hamelekh | Shelomoh | et | zevach | habakar | esrim | ushenayim | e
 me'ah | ve'esrim
 alef
 vaiyachnekhu | et | beit | ha'elohim
-hamelekh
-vekhol | ha'am
+hamelekh | vekhol | ha'am
 
 7:6
 vehakohanim | al | mishmerotam | omedim | vehalviyim | bikhlei | shir | Yahweh | asher | asah | David | hamelekh | lehodot | Layahweh | ki | le'olam | chasdo
 behalel | David | beyadam
 vehakohanim | machatzotzerim | negdam
-vekhol | Yisra'el
-omedim
+vekhol | Yisra'el | omedim
 
 7:7
 vaykadesh | Shelomoh | et | tokh | hechatzer | asher | lifnei | veit | Yahweh
@@ -79,8 +74,7 @@ leveit | zavach
 7:13
 hen | e'etzor | hashamayim | velo | yihyeh | matar
 vehen | atzaveh | al | chagav
-le'ekhol | ha'aretz
-ve'im | ashalach | dever | be'ami
+le'ekhol | ha'aretz | ve'im | ashalach | dever | be'ami
 
 7:14
 veyikane'u | ami | asher | Nikra | shemi | aleihem | veyitpalu | vivakshu | fanai
@@ -133,5 +127,4 @@ ve'ameru | al | asher | azevu | et | Yahweh | elohei | avoteihem | asher | hotzi
 vaiyachaziku | belohim | acherim
 vaiyishtachavu | lahem
 vaiya'avdum
-al | ken | hevi | aleihem | et | kol | hara'ah
-hazot
+al | ken | hevi | aleihem | et | kol | hara'ah | hazot

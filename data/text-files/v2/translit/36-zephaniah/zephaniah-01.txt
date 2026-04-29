@@ -1,8 +1,6 @@
 1:1
-devar | Yahweh | asher | hayah | el | Tzefanyah | ben | Kushi | ven | Gedalyah
-ben | Amaryah
-ben | Chizkiyah | bimei | Yoshiyahu | ven | Amon
-melekh | Yehudah
+devar | Yahweh | asher | hayah | el | Tzefanyah | ben | Kushi | ven | Gedalyah | ben | Amaryah
+ben | Chizkiyah | bimei | Yoshiyahu | ven | Amon | melekh | Yehudah
 
 1:2
 asof | asef | kol | me'al | penei | ha'adamah
@@ -38,8 +36,7 @@ hikdish | keru'av
 
 1:8
 vehayah | beyom | zevach | Yahweh
-ufakadti | al | hasarim | ve'al | benei | hamelekh | ve'al | kol | haloeshim
-malbush | nakheri
+ufakadti | al | hasarim | ve'al | benei | hamelekh | ve'al | kol | haloeshim | malbush | nakheri
 
 1:9
 ufakadti | al | kol | hadoleg | al | hamiftan
@@ -99,6 +96,4 @@ veshupakh | damam | ke'afar | ulechumam | kagelalim
 1:18
 gam | kaspam | gam | zehavam | lo | yukhal | lehatzilam | beyom | evrat | Yahweh
 uve'esh | kin'ato | te'akhel
-kol | ha'aretz
-ki | khalah | akh | nivhalah | ya'aseh | et | kol | yoshevei
-ha'aretz
+kol | ha'aretz | ki | khalah | akh | nivhalah | ya'aseh | et | kol | yoshevei | ha'aretz

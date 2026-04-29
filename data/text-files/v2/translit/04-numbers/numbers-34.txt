@@ -75,8 +75,7 @@ vachatzi | hamateh
 
 34:14
 ki | lakechu | mateh | venei | har'uveni | leveit | avotam
-umateh | venei | hagadi
-leveit | avotam
+umateh | venei | hagadi | leveit | avotam
 vachatzi | mateh | Menasheh | lakechu | nachalatam
 
 34:15
@@ -121,13 +120,11 @@ ulemateh | venei | Dan | nasi | Buki
 ben | Yageli
 
 34:23
-livnei | Yosef | lemateh | venei | Menasheh | nasi
-Chani'el
+livnei | Yosef | lemateh | venei | Menasheh | nasi | Chani'el
 ben | Efod
 
 34:24
-ulemateh | venei | Efrayim | nasi
-Kemu'el
+ulemateh | venei | Efrayim | nasi | Kemu'el
 ben | Shiftan
 
 34:25
@@ -135,8 +132,7 @@ ulemateh | venei | Zevulun | nasi | Elitzafan
 ben | Parnakh
 
 34:26
-ulemateh | venei | Yisoshkhar | nasi
-Palti'el
+ulemateh | venei | Yisoshkhar | nasi | Palti'el
 ben | Azan
 
 34:27
@@ -144,8 +140,7 @@ ulemateh | venei | Asher | nasi | Achihud
 ben | Shelomi
 
 34:28
-ulemateh | venei | Naftali | nasi
-Pedah'el
+ulemateh | venei | Naftali | nasi | Pedah'el
 ben | Amihud
 
 34:29

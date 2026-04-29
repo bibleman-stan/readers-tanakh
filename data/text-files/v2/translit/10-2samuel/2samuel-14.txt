@@ -1,12 +1,10 @@
 14:1
 vaiyeda
-Yo'av | ben | Tzeruyah
-ki | lev | hamelekh | al | Avshalom
+Yo'av | ben | Tzeruyah | ki | lev | hamelekh | al | Avshalom
 
 14:2
 vaiyishlach | Yo'av | Teko'ah
-vaiyikach | misham
-ishah | chakhamah
+vaiyikach | misham | ishah | chakhamah
 vaiyomer | eleiha | hit'abeli | na | velivshi | na | vigdei | evel | ve'al | tasukhi | shemen
 vehayit | ke'ishah | zeh | yamim | rabim | mit'abelet | al | met
 
@@ -50,9 +48,7 @@ naki
 
 14:10
 vaiyomer
-hamelekh
-hamdaber | elayikh | vahaveto | elai | velo | yosif | od
-laga'at | bakh
+hamelekh | hamdaber | elayikh | vahaveto | elai | velo | yosif | od | laga'at | bakh
 
 14:11
 vatomer | yizkor | na | hamelekh | et | Yahweh | eloheikha | meharvit | go'el | hadam | leshachet
@@ -110,12 +106,11 @@ hayad | Yo'av | itakh | bekhol | zot
 vata'an | ha'ishah | vatomer | chei | nafshekha | adoni | hamelekh | im | ish | lehemin | ulehasmil | mikol | asher | diber | adoni | hamelekh
 ki | avdekha | Yo'av | hu | tzivani
 vehu | sam | befi | shifchatekha
-et | kol | hadevarim
-ha'eleh
+et | kol | hadevarim | ha'eleh
 
 14:20
-leva'avur | sabev | et | penei | hadavar
-asah | avdekha | Yo'av | et | hadavar | hazeh
+leva'avur | sabev | et | penei | hadavar | asah | avdekha | Yo'av
+et | hadavar | hazeh
 vadoni | chakham | kechakhemat | mal'akh | ha'elohim | lada'at
 et | kol | asher | ba'aretz
 
@@ -129,8 +124,7 @@ et | Avshalom
 vaiyipol | Yo'av | el | panav | artzah | vaiyishtachu
 vayvarekh | et | hamelekh
 vaiyomer | Yo'av | haiyom | yada | avdekha | ki | matzati | chen | be'eineikha | adoni | hamelekh
-asher | asah | hamelekh
-et | devar | avdekh
+asher | asah | hamelekh | et | devar | avdekh
 
 14:23
 vaiyakom | Yo'av
@@ -140,11 +134,9 @@ Yerushalim
 
 14:24
 vaiyomer | hamelekh | yiso | el | beito
-ufanai
-lo | yir'eh
+ufanai | lo | yir'eh
 vaiyiso | Avshalom | el | beito
-ufenei | hamelekh
-lo | ra'ah
+ufenei | hamelekh | lo | ra'ah
 
 14:25
 Ukhe'avshalom | lo | hayah | ish | yapeh | bekhol | Yisra'el | lehalel | me'od | mikaf | raglo | ve'ad | kadekodo | lo | hayah | vo
@@ -166,8 +158,7 @@ yefat | mar'eh
 14:28
 vaiyeshev | Avshalom | Birushalim
 shenatayim | yamim
-ufenei | hamelekh
-lo | ra'ah
+ufenei | hamelekh | lo | ra'ah
 
 14:29
 vaiyishlach | Avshalom | el | Yo'av | lishloach | oto | el | hamelekh

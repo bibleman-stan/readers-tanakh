@@ -38,9 +38,9 @@ sheva | shanim | ushemoneh | me'ot | shanah
 vaiyoled | banim | uvanot
 
 5:8
-vaiyihyu | kol | yemei | Shet
-sheteim | esreh | shanah | utesha | me'ot
-shanah | vaiyamot
+vaiyihyu | kol | yemei | Shet | sheteim | esreh | shanah
+utesha | me'ot | shanah
+vaiyamot
 
 5:9
 vaychi | Enoosh
@@ -100,9 +100,9 @@ shemoneh | me'ot | shanah
 vaiyoled | banim | uvanot
 
 5:20
-vaiyihyu | kol | yemei | Yered
-shetayim | veshishim | shanah | utesha | me'ot
-shanah | vaiyamot
+vaiyihyu | kol | yemei | Yered | shetayim | veshishim | shanah
+utesha | me'ot | shanah
+vaiyamot
 
 5:21
 vaychi | Chanokh
@@ -116,8 +116,7 @@ shelosh | me'ot | shanah
 vaiyoled | banim | uvanot
 
 5:23
-vayhi
-kol | yemei | Chanokh
+vayhi | kol | yemei | Chanokh
 chamesh | veshishim | shanah
 ushelosh | me'ot | shanah
 
@@ -161,10 +160,8 @@ vachamesh | me'ot | shanah
 vaiyoled | banim | uvanot
 
 5:31
-vayhi | kol | yemei | Lemekh
-sheva | veshiv'im | shanah
-usheva | me'ot | shanah
-vaiyamot
+vayhi | kol | yemei | Lemekh | sheva | veshiv'im | shanah
+usheva | me'ot | shanah | vaiyamot
 
 5:32
 vayhi | Noach

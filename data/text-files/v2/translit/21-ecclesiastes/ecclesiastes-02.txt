@@ -31,8 +31,7 @@ tzomeach | etzim
 
 2:7
 kaniti | avadim | ushefachot
-uvenei | vayit
-hayah | li
+uvenei | vayit | hayah | li
 gam | mikneh | vakar | vatzon | harbeh | hayah | li
 mikol | shehayu | lefanai | Birushalim
 
@@ -49,8 +48,9 @@ amedah | li
 
 2:10
 vekhol | asher | sha'alu | einai
-lo | atzalti | mehem | lo | mana'ti | et | libi | mikol | simchah | ki | libi | sameach | mikol | amali
-vezeh | hayah | chelki | mikol | amali
+lo | atzalti | mehem
+lo | mana'ti | et | libi | mikol | simchah | ki | libi | sameach | mikol | amali | vezeh | hayah | chelki
+mikol | amali
 
 2:11
 ufaniti | ani | bekhol | ma'asai | she'asu | yadai | uve'amal
@@ -62,8 +62,7 @@ tachat | hashamesh
 ufaniti | ani | lir'ot | chokhmah
 veholelot
 vesikhlut
-ki | meh | ha'adam | sheiyavo | acharei | hamelekh
-et | asher | kevar
+ki | meh | ha'adam | sheiyavo | acharei | hamelekh | et | asher | kevar
 asuhu
 
 2:13
@@ -105,15 +104,13 @@ sheiyihyeh | acharai
 
 2:19
 umi | yodea | hechakham | yihyeh | o | sakhal
-veyishlat | bekhol | amali
-she'amalti | veshechakhamti | tachat | hashamesh
+veyishlat | bekhol | amali | she'amalti | veshechakhamti | tachat | hashamesh
 gam | zeh
 havel
 
 2:20
 vesaboti | ani
-leya'esh | et | libi | al | kol | he'amal
-she'amalti | tachat | hashamesh
+leya'esh | et | libi | al | kol | he'amal | she'amalti | tachat | hashamesh
 
 2:21
 ki | yesh | adam | she'amalo | bechakhemah | uveda'at | uvekhishron

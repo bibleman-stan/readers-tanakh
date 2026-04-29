@@ -5,9 +5,9 @@ vaiyatzar | aleiha
 
 1:2
 vaiyiten | Adonai | beyado | et | Yehoyakim | melekh | Yehudah | umiktzat | kelei | veit | ha'elohim
-vayvi'em | eretz | Shin'ar
-beit | elohav | ve'et | hakelim | hevi
-beit | otzar | elohav
+vayvi'em | eretz | Shin'ar | beit | elohav
+ve'et | hakelim | hevi | beit
+otzar | elohav
 
 1:3
 vaiyomer | hamelekh | Le'ashpenaz
@@ -16,8 +16,8 @@ lehavi | mibenei | Yisra'el | umizera | hamelukhah | umin | hapartemim
 
 1:4
 yeladim | asher | ein | bahem | kol | me'um | vetovei | mar'eh | umaskilim | bekhol | chokhmah | veyode'ei | da'at | umevinei | mada
-va'asher | koach | bahem | la'amod | beheikhal | hamelekh
-ulalamedam | sefer | uleshon | Kasdim
+va'asher | koach | bahem | la'amod
+beheikhal | hamelekh | ulalamedam | sefer | uleshon | Kasdim
 
 1:5
 vayman | lahem | hamelekh | devar | yom | beyomo | mipat | bag | hamelekh | umiyein | mishtav
@@ -65,8 +65,7 @@ umayim | venishteh
 1:13
 veyera'u | lefaneikha | mar'einu | umar'eh | hayladim
 ha'okhelim
-et | patbag | hamelekh
-vekha'asher | tir'eh
+et | patbag | hamelekh | vekha'asher | tir'eh
 aseh | im | avadeikha
 
 1:14
@@ -87,8 +86,7 @@ zere'onim
 1:17
 vehayladim | ha'eleh | arba'tam
 natan | lahem | ha'elohim | mada | vehaskel | bekhol | sefer | vechakhemah
-Vedaniyel | hevin | bekhol | chazon
-vachalomot
+Vedaniyel | hevin | bekhol | chazon | vachalomot
 
 1:18
 ulemiktzat | haiyamim
@@ -101,8 +99,9 @@ velo | Nimtza | mikulam | Kedaniyel | Chananyah | Misha'el | Va'azaryah
 vaiya'amdu | lifnei | hamelekh
 
 1:20
-vekhol | devar | chakhemat | binah | asher | bikesh | mehem | hamelekh
-vaiyimtza'em | eser | yadot | al | kol | hachartumim | ha'ashafim | asher | bekhol | malkhuto
+vekhol | devar | chakhemat | binah | asher | bikesh | mehem
+hamelekh | vaiyimtza'em | eser | yadot | al | kol | hachartumim | ha'ashafim
+asher | bekhol | malkhuto
 
 1:21
 vayhi | Daniyel | ad | shenat | achat | Lekhoresh | hamelekh

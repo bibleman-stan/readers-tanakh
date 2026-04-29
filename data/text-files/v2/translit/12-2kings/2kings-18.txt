@@ -1,7 +1,7 @@
 18:1
 vayhi | bishnat | shalosh | Lehoshea | ben | Elah
-melekh | Yisra'el | malakh | Chizkiyah | ven | Achaz
-melekh | Yehudah
+melekh | Yisra'el
+malakh | Chizkiyah | ven | Achaz | melekh | Yehudah
 
 18:2
 ben | esrim | vechamesh | shanah | hayah | vemalekho
@@ -42,8 +42,7 @@ mimigdal | notzrim | ad | ir | mivtzar
 
 18:9
 vayhi | bashanah | harevi'it | lamelekh | Chizkiyahu
-hi | hashanah | hashevi'it | Lehoshea | ben | Elah
-melekh | Yisra'el
+hi | hashanah | hashevi'it | Lehoshea | ben | Elah | melekh | Yisra'el
 alah | Shalman'eser | melekh | Ashur | al | Shomeron
 vaiyatzar | aleiha
 
@@ -96,8 +95,7 @@ sedeh | khoves
 18:18
 vaiyikre'u | el | hamelekh
 vaiyetze | alehem | Elyakim | ben | Chilkiyahu | asher | al | habayit
-Veshevnah | hasofer | Veyo'ach | ben | Asaf
-hamazkir
+Veshevnah | hasofer | Veyo'ach | ben | Asaf | hamazkir
 
 18:19
 vaiyomer | alehem | rav | shakeh
@@ -150,8 +148,7 @@ be'azenei | ha'am | asher | al | hachomah
 
 18:27
 vaiyomer | aleihem | rav | shakeh | ha'al | adoneikha | ve'eleikha | shelachani | adoni
-ledaber
-et | hadevarim | ha'eleh
+ledaber | et | hadevarim | ha'eleh
 halo | al | ha'anashim | haiyoshevim | al | hachomah
 le'ekhol | et | chareihem | velishtot | et | mimei ragleihem | imakhem
 
@@ -194,8 +191,7 @@ yatzilenu
 
 18:33
 hahatzel | hitzilu | elohei | hagoyim
-ish | et | artzo | miyad
-melekh | Ashur
+ish | et | artzo | miyad | melekh | Ashur
 
 18:34
 aiyeh | elohei | Chamat | Ve'arpad | aiyeh | elohei | Sefarvayim
@@ -208,8 +204,7 @@ asher | hitzilu | et | artzam | miyadi
 ki | yatzil | Yahweh | et | Yerushalim | miyadi
 
 18:36
-vehecherishu | ha'am
-velo | anu | oto
+vehecherishu | ha'am | velo | anu | oto
 davar | ki | mitzvat | hamelekh | hi | lemor
 lo | ta'anuhu
 

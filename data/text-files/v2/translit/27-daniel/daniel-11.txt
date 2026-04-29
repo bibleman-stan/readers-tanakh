@@ -13,8 +13,8 @@ ve'amad | melekh | gibor
 umashal | mishal | rav | ve'asah | kirtzono
 
 11:4
-ukhe'amedo | tishaver | malkhuto | vetechatz | le'arba
-ruchot | hashamayim | velo | le'acharito | velo | khemashelo | asher | mashal
+ukhe'amedo | tishaver | malkhuto | vetechatz | le'arba | ruchot | hashamayim
+velo | le'acharito | velo | khemashelo | asher | mashal
 ki | tinatesh | malkhuto | vela'acherim | milevad | eleh
 
 11:5
@@ -36,8 +36,7 @@ vehechezik
 11:8
 vegam | eloheihem | im | nesikheihem | im | kelei | chemdatam | kesef | vezahav | bashevi
 yavi | Mitzrayim
-vehu | shanim | ya'amod | mimelekh
-hatzafon
+vehu | shanim | ya'amod | mimelekh | hatzafon
 
 11:9
 uva | bemalkhut | melekh | hanegev
@@ -81,8 +80,7 @@ ve'am | mivcharav | ve'ein | koach | la'amod
 
 11:16
 veya'as | haba | elav | kirtzono
-ve'ein | omed | lefanav | veya'amod | be'eretz | hatzevi
-vekhalah | veyado
+ve'ein | omed | lefanav | veya'amod | be'eretz | hatzevi | vekhalah | veyado
 
 11:17
 veyasem | panav | lavo | betokef | kol | malkhuto | visharim | imo | ve'asah
@@ -240,5 +238,6 @@ veyatza | bechema | gedolah | lehashmid | ulehacharim
 rabim
 
 11:45
-veyita | oholei | apadno | bein | yamim | lehar | tzevi | kodesh
-uva | ad | kitzo | ve'ein | ozer | lo
+veyita | oholei | apadno | bein | yamim
+lehar | tzevi | kodesh | uva | ad | kitzo
+ve'ein | ozer | lo

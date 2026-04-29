@@ -1,6 +1,6 @@
 36:1
-vaiyikrevu | rashei | ha'avot | lemishpachat | benei | Gil'ad | ben | Makhir | ben | Menasheh
-mimishpechot | benei | Yosef
+vaiyikrevu | rashei | ha'avot | lemishpachat | benei | Gil'ad | ben | Makhir | ben | Menasheh | mimishpechot
+benei | Yosef
 vaydaberu | lifnei | Mosheh | velifnei | hanesi'im
 rashei | avot
 livnei | Yisra'el
@@ -29,8 +29,7 @@ nachalatan
 36:5
 vaytzav | Mosheh | et | benei | Yisra'el
 al | pi | Yahweh | lemor
-ken | mateh | venei | Yosef
-doerim
+ken | mateh | venei | Yosef | doerim
 
 36:6
 zeh | hadavar | asher | tzivah | Yahweh | livnot | Tzelafechad | lemor
@@ -66,8 +65,7 @@ vatihyeinah | Machlah | Tirtzah | Vechagelah | Umilkah | Veno'ah
 benot | Tzelafechad | livnei | dodeihen | lenashim
 
 36:12
-mimishpechot | benei | Menasheh | ven | Yosef
-hayu | lenashim
+mimishpechot | benei | Menasheh | ven | Yosef | hayu | lenashim
 vatehi | nachalatan | al | mateh
 mishpachat | avihen
 

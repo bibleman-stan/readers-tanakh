@@ -5,8 +5,7 @@ vaydaber | Yahweh | el | Mosheh | behar | Sinai | lemor
 daber | el | benei | Yisra'el | ve'amarta | alehem | ki | tavo'u | el | ha'aretz
 asher | ani
 noten | lakhem
-veshavtah | ha'aretz
-shabat | Layahweh
+veshavtah | ha'aretz | shabat | Layahweh
 
 25:3
 shesh | shanim | tizra | sadekha
@@ -14,8 +13,8 @@ veshesh | shanim | tizmor | karmekha
 ve'asafta | et | tevu'atah
 
 25:4
-uvashanah | hashevi'it | shabat | shabaton | yihyeh | la'aretz
-shabat | Layahweh
+uvashanah | hashevi'it | shabat | shabaton | yihyeh | la'aretz | shabat
+Layahweh
 sadekha | lo | tizra | vekharmekha
 lo | tizmor
 
@@ -47,8 +46,7 @@ ta'aviru | shofar | bekhol | artzekhem
 
 25:10
 vekidashtem | et | shenat | hachamishim | shanah
-ukeratem | deror | ba'aretz | lekhol | yosheveiha
-yovel | hi | tihyeh | lakhem
+ukeratem | deror | ba'aretz | lekhol | yosheveiha | yovel | hi | tihyeh | lakhem
 veshavtem | ish | el | achuzato | ve'ish | el | mishpachto
 tashuvu
 
@@ -103,8 +101,7 @@ velo | ne'esof | et | tevu'atenu
 
 25:21
 vetziviti | et | birkhati | lakhem | bashanah | hashishit
-ve'asat | et | hatevu'ah | lishlosh
-hashanim
+ve'asat | et | hatevu'ah | lishlosh | hashanim
 
 25:22
 uzera'tem | et | hashanah | hasheminit | va'akhaltem | min | hatevu'ah | yashan
@@ -115,8 +112,7 @@ yashan
 25:23
 veha'aretz | lo | timakher | litzmitut
 ki | li
-ha'aretz
-ki | gerim | vetoshavim | atem
+ha'aretz | ki | gerim | vetoshavim | atem
 imadi
 
 25:24
@@ -157,8 +153,7 @@ ledorotav
 lo | yetze | baiyovel
 
 25:31
-uvatei | hachatzerim | asher | ein | lahem | chomah | saviv | al | sedeh | ha'aretz
-yechashev
+uvatei | hachatzerim | asher | ein | lahem | chomah | saviv | al | sedeh | ha'aretz | yechashev
 ge'ulah | tihyeh | lo | uvaiyovel
 yetze
 

@@ -23,11 +23,9 @@ ki | va | Sha'ul | el | nakhon
 26:5
 vaiyakom | David | vaiyavo | el | hamakom | asher | chanah | sham | Sha'ul
 vaiyar | David | et | hamakom | asher | shakhav | sham | Sha'ul
-Ve'avner | ben | Ner
-sar | tzeva'o
+Ve'avner | ben | Ner | sar | tzeva'o
 Vesha'ul | shokhev | bama'gal
-veha'am
-chonim | sevivotov
+veha'am | chonim | sevivotov
 
 26:6
 vaiya'an | David | vaiyomer | el | Achimelekh | hachiti | ve'el | Avishai | ben | Tzeruyah | achi | Yo'av | lemor
@@ -39,8 +37,7 @@ ered | imakh
 26:7
 vaiyavo | David | Va'avishai | el | ha'am | laylah
 vehineh | Sha'ul | shokhev | yashen | bama'gal
-vachanito | me'ukhah | va'aretz | mera'ashotov | Ve'avner | veha'am
-shokhevim
+vachanito | me'ukhah | va'aretz | mera'ashotov | Ve'avner | veha'am | shokhevim
 sevivotov
 
 26:8
@@ -89,8 +86,7 @@ karata | el | hamelekh
 26:15
 vaiyomer | David | el | Avner | halo | ish | atah | umi | khamokha | Beyisra'el
 velamah | lo | shamarta | el | adoneikha
-hamelekh
-ki | va | achad | ha'am | lehashchit
+hamelekh | ki | va | achad | ha'am | lehashchit
 et | hamelekh | adoneikha
 
 26:16
@@ -135,8 +131,7 @@ harbeh | me'od
 
 26:22
 vaiya'an | David | vaiyomer
-hineh | hachanit | hamelekh
-veya'avor | echad | mehane'arim
+hineh | hachanit | hamelekh | veya'avor | echad | mehane'arim
 veyikacheha
 
 26:23

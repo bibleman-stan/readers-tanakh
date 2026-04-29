@@ -1,0 +1,32 @@
+name: m5_bare_wayehi_attached
+rule: M5
+subcase: bare_wayehi_attached
+severity: STRONG-MERGE-CANDIDATE
+description: |
+  Bare וַיְהִי alone on a line cannot stand alone — it's a narrative-frame
+  particle introducing a temporal/circumstantial clause. The next line
+  carries the temporal protasis ("when X..." / "after X..." / "in the day...")
+  and must merge with the wayehi.
+
+  Sibling pattern to h13_c (bare DO marker forward-merge) and h13 (bare
+  subordinator) — same single-token-line stranding family.
+
+  Examples (audited 2026-04-29 across Waves 2-3):
+    Gen 4:3:    וַיְהִי / מִקֵּץ יָמִים
+    Josh 3:2:   וַיְהִי / מִקְצֵה...
+    Judg 11:4:  וַיְהִי / מִיָּמִים
+    Judg 11:5:  וַיְהִי / כַּאֲשֶׁר נִלְחֲמוּ
+    2 Kgs 4:18: וַיְהִי / הַיּוֹם
+
+trigger:
+  line_n_first_token:
+    skeleton_in: [ויהי, ויהיה, והיה]
+  line_n_last_token:
+    skeleton_in: [ויהי, ויהיה, והיה]   # single-token line
+  combined_max_prosodic_words: 8
+
+guards:
+  - poetic_register
+
+annotation_template: "Bare ויהי forward-merge to temporal protasis ({pwc} prosodic words)"
+suggested_action: MERGE

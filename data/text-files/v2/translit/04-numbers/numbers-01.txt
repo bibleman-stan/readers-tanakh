@@ -18,8 +18,7 @@ atah | Ve'aharon
 1:4
 ve'itekhem | yihyu
 ish | ish | lamateh
-ish | rosh | leveit | avotav
-hu
+ish | rosh | leveit | avotav | hu
 
 1:5
 ve'eleh | shemot | ha'anashim | asher | ya'amdu
@@ -234,8 +233,7 @@ sheloshah | vachamishim | elef | ve'arba | me'ot
 1:44
 eleh | hapekudim | asher | pakad | Mosheh | Ve'aharon | unesi'ei | Yisra'el
 sheneim | asar | ish
-ish | echad | leveit | avotav
-hayu
+ish | echad | leveit | avotav | hayu
 
 1:45
 vaiyihyu | kol | pekudei | venei | Yisra'el
@@ -243,8 +241,7 @@ leveit | avotam | miben | esrim | shanah | vama'lah
 kol | yotze | tzava | Beyisra'el
 
 1:46
-vaiyihyu | kol | hapekudim
-shesh | me'ot | elef
+vaiyihyu | kol | hapekudim | shesh | me'ot | elef
 usheloshet | alafim | vachamesh | me'ot | vachamishim
 
 1:47
@@ -280,8 +277,8 @@ benei | Yisra'el
 ish | al | machanehu | ve'ish | al | diglo | letziv'otam
 
 1:53
-vehalviyim | yachanu | saviv | lemishkan | ha'edut
-velo | yihyeh | ketzef | al | adat
+vehalviyim | yachanu | saviv | lemishkan | ha'edut | velo | yihyeh | ketzef
+al | adat
 benei | Yisra'el
 veshameru | halviyim
 et | mishmeret | mishkan | ha'edut

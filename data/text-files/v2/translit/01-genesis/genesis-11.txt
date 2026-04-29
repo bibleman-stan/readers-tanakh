@@ -1,6 +1,6 @@
 11:1
-vayhi | khol | ha'aretz
-safah | echat | udevarim | achadim
+vayhi | khol | ha'aretz | safah | echat | udevarim
+achadim
 
 11:2
 vayhi | benase'am | mikedem
@@ -36,14 +36,13 @@ ish
 sefat | re'ehu
 
 11:8
-vaiyafetz | Yahweh | otam | misham
-al | penei | khol | ha'aretz | vaiyachdelu | livnot | ha'ir
+vaiyafetz | Yahweh | otam | misham | al | penei | khol | ha'aretz
+vaiyachdelu | livnot | ha'ir
 
 11:9
 al | ken | kara | shemah | Bavel
 ki | sham | balal | Yahweh
-sefat | kol | ha'aretz
-umisham | hefitzam | Yahweh | al | penei
+sefat | kol | ha'aretz | umisham | hefitzam | Yahweh | al | penei
 kol | ha'aretz
 
 11:10
@@ -147,8 +146,7 @@ Terach | aviv | be'eretz | moladto | Be'ur | Kasdim
 vaiyikach | Avram | Venachor | lahem
 nashim
 shem | eshet | Avram | Sarai | veshem | eshet | Nachor | Milkah
-bat | Haran | avi | Milkah
-va'avi | Yiskah
+bat | Haran | avi | Milkah | va'avi | Yiskah
 
 11:30
 vatehi | Sarai | akarah | ein | lah | valad
@@ -162,6 +160,5 @@ vaiyavo'u | ad | Charan
 vaiyeshevu | sham
 
 11:32
-vaiyihyu | yemei | Terach
-chamesh | shanim | umatayim | shanah
+vaiyihyu | yemei | Terach | chamesh | shanim | umatayim | shanah
 vaiyamot | Terach | Becharan

@@ -1,6 +1,6 @@
 10:1
-ve'eleh | toldot | benei | Noach
-Shem | Cham | Vayafet
+ve'eleh | toldot | benei | Noach | Shem
+Cham | Vayafet
 vaiyivaldu | lahem | banim
 achar | hamabul
 
@@ -45,8 +45,7 @@ lifnei | Yahweh
 10:10
 vatehi | reshit | mamlakhto | Bavel
 Ve'erekh
-Ve'akad | Vekhalneh | be'eretz
-Shin'ar
+Ve'akad | Vekhalneh | be'eretz | Shin'ar
 
 10:11
 min | ha'aretz | hahiv | yatza | Ashur | vaiyiven | et | Ninveh
@@ -93,8 +92,7 @@ eleh | venei | Cham | lemishpechotam | lilshonotam | be'artzotam | begoyehem
 10:21
 Ulshem | yulad
 gam | hu
-avi | kol | benei | Ever
-achi | Yefet | hagadol
+avi | kol | benei | Ever | achi | Yefet | hagadol
 
 10:22
 benei | Shem | Eilam | Ve'ashur | Ve'arpakhshad
@@ -114,8 +112,8 @@ yalad | et | Ever
 10:25
 Ul'ever | yulad
 shenei | vanim
-shem | ha'echad | Peleg | ki | veyamav | Niflegah | ha'aretz
-veshem | achiv | Yaketan
+shem | ha'echad | Peleg | ki | veyamav | Niflegah | ha'aretz | veshem | achiv
+Yaketan
 
 10:26
 Veyaketan | yalad | et | Almodad
@@ -134,8 +132,7 @@ ve'et | Sheva
 10:29
 ve'et | Ofir | ve'et | Chavilah
 ve'et | Yovav
-kol | eleh
-benei | Yaketan
+kol | eleh | benei | Yaketan
 
 10:30
 vayhi | moshavam | Mimesha | bo'akhah | Sefarah
@@ -146,5 +143,4 @@ eleh | venei | Shem | lemishpechotam | lilshonotam | be'artzotam | legoyehem
 
 10:32
 eleh | mishpechot | benei | Noach | letoldotam | begoyehem
-ume'eleh | Nifredu | hagoyim | ba'aretz
-achar | hamabul
+ume'eleh | Nifredu | hagoyim | ba'aretz | achar | hamabul

@@ -18,12 +18,10 @@ asher | sham | moshav | semel
 hakin'ah | hamakneh
 
 8:4
-vehineh | sham | kevod
-elohei | Yisra'el | kamar'eh | asher | ra'iti | babik'ah
+vehineh | sham | kevod | elohei | Yisra'el | kamar'eh | asher | ra'iti | babik'ah
 
 8:5
-vaiyomer | elai | ben | adam
-sa | na | eineikha
+vaiyomer | elai | ben | adam | sa | na | eineikha
 derekh | tzafonah
 va'esa | einai | derekh | tzafonah
 vehineh | mitzafon | lesha'ar | hamizbeach
@@ -43,8 +41,8 @@ el | petach | hechatzer | va'er'eh
 vehineh | chor | echad | bakir
 
 8:8
-vaiyomer | elai | ben | adam
-chator | na | vakir | va'echtor | bakir
+vaiyomer | elai | ben | adam | chator | na | vakir
+va'echtor | bakir
 vehineh | petach | echad
 
 8:9
@@ -54,8 +52,7 @@ poh
 8:10
 va'avo | va'er'eh
 vehineh | khol | tavnit | remes | uvehemah | sheketz
-vekhol | gilulei
-beit | Yisra'el | mechukeh | al | hakir | saviv | saviv
+vekhol | gilulei | beit | Yisra'el | mechukeh | al | hakir | saviv | saviv
 
 8:11
 veshiv'im | ish | miziknei | veit | Yisra'el | Veya'azanyahu | ven | Shafan | omed | betokham | omedim | lifneihem
@@ -64,8 +61,7 @@ va'atar | anan | haketoret
 oleh
 
 8:12
-vaiyomer | elai | hara'ita | ven | adam
-asher | ziknei | veit | Yisra'el | osim | bachoshekh
+vaiyomer | elai | hara'ita | ven | adam | asher | ziknei | veit | Yisra'el | osim | bachoshekh
 ish | bechadrei | maskito
 ki | omerim | ein | Yahweh | ro'eh | otanu
 azav | Yahweh | et | ha'aretz

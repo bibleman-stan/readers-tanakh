@@ -23,8 +23,7 @@ yeshalem
 22:5
 ki | tetze | esh | umatze'ah | kotzim | vene'ekhal | gadish
 o | hakamah
-o | hasadeh
-shalem | yeshalem
+o | hasadeh | shalem | yeshalem
 hamav'ir
 et | habe'erah
 
@@ -47,8 +46,7 @@ devar | sheneihem | asher | yarshi'un | elohim
 yeshalem | shenayim | lere'ehu
 
 22:9
-ki | yiten | ish | el | re'ehu | chamor | ov | shor | ov | seh | vekhol | behemah
-lishmor
+ki | yiten | ish | el | re'ehu | chamor | ov | shor | ov | seh | vekhol | behemah | lishmor
 umet | ov | Nishbar | ov | Nishbah | ein | ro'eh
 
 22:10
@@ -88,8 +86,7 @@ habetulot
 mekhashefah | lo | techaiyeh
 
 22:18
-kol | shokhev | im | behemah
-mot | yumat
+kol | shokhev | im | behemah | mot | yumat
 
 22:19
 zoveach | la'elohim | yochoram | bilti | Layahweh | levado
@@ -142,8 +139,8 @@ titen | li
 
 22:29
 ken | ta'aseh | leshorekha | letzonekha
-shiv'at | yamim | yihyeh | im | imo
-baiyom | hashemini | titenov | li
+shiv'at | yamim | yihyeh | im | imo | baiyom | hashemini
+titenov | li
 
 22:30
 ve'anshei | kodesh

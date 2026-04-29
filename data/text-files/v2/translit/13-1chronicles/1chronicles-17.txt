@@ -1,6 +1,5 @@
 17:1
-vayhi
-ka'asher | yashav | David | beveito
+vayhi | ka'asher | yashav | David | beveito
 vaiyomer | David | el | Natan | hanavi | hineh | anokhi | yoshev | beveit | ha'arazim
 va'aron | berit | Yahweh
 tachat | yeri'ot
@@ -11,8 +10,8 @@ kol | asher | bilvavekha | aseh
 ki | ha'elohim | imakh
 
 17:3
-vayhi
-balaylah | hahu | vayhi | devar | elohim | el | Natan | lemor
+vayhi | balaylah | hahu
+vayhi | devar | elohim | el | Natan | lemor
 
 17:4
 lekh | ve'amarta | el | David | avdi | koh
@@ -20,13 +19,12 @@ amar | Yahweh
 lo | atah | tivneh | li | habayit | lashavet
 
 17:5
-ki | lo | yashavti | bevayit
-min | haiyom | asher | he'eleiti | et | Yisra'el | ad | haiyom | hazeh
+ki | lo | yashavti | bevayit | min | haiyom | asher | he'eleiti | et | Yisra'el
+ad | haiyom | hazeh
 va'ehyeh | me'ohel | el | ohel | umimishkan
 
 17:6
-bekhol | asher | hithalakhti | bekhol | Yisra'el
-hadavar | dibarti | et | achad | shofetei | Yisra'el
+bekhol | asher | hithalakhti | bekhol | Yisra'el | hadavar | dibarti | et | achad | shofetei | Yisra'el
 asher | tziviti | lir'ot | et | ami | lemor
 lamah | lo | venitem | li
 beit | arazim
@@ -62,9 +60,8 @@ et | malkhuto
 hu | yivneh | li | bayit | vekhonanti | et | kis'o | ad | olam
 
 17:13
-ani | ehyeh | lo | le'av
-vehu | yihyeh | li | leven
-vechasdi | lo | asir | me'imo | ka'asher | hasiroti
+ani | ehyeh | lo | le'av | vehu
+yihyeh | li | leven | vechasdi | lo | asir | me'imo | ka'asher | hasiroti
 me'asher | hayah | lefaneikha
 
 17:14
@@ -72,8 +69,7 @@ veha'amadtihu | beveiti | uvemalkhuti | ad | ha'olam | vekhis'o
 yihyeh | nakhon | ad | olam
 
 17:15
-kekhol | hadevarim | ha'eleh | ukhekhol
-hechazon | hazeh
+kekhol | hadevarim | ha'eleh | ukhekhol | hechazon | hazeh
 ken | diber | Natan | el | David
 
 17:16
@@ -97,8 +93,7 @@ et | avdekha | yada'eta
 17:19
 Yahweh | ba'avur | avdekha | ukhelibekha
 asita
-et | kol | hagedulah
-hazot | lehodia
+et | kol | hagedulah | hazot | lehodia
 et | kol | hagedulot
 
 17:20

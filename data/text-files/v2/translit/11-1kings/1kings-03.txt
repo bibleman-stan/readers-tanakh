@@ -94,8 +94,8 @@ va'eled | imah | babayit
 vayhi | baiyom | hashelishi | lelidti
 vateled
 gam | ha'ishah | hazot
-va'anachnu | yachdav | ein | zar | itanu | babayit
-zulati | shetayim | anachnu | babayit
+va'anachnu | yachdav | ein | zar | itanu | babayit | zulati | shetayim | anachnu
+babayit
 
 3:19
 vaiyamot | ben | ha'ishah | hazot | layelah | asher | shakhevah | alav
@@ -123,12 +123,11 @@ zeh | beni | hachai | uvenekh | hamet
 vezot | omeret | lo | khi | benekh | hamet | uveni | hechai
 
 3:24
-vaiyomer | hamelekh
-kechu | li | charev | vaiyavi'u | hacherev | lifnei | hamelekh
+vaiyomer | hamelekh | kechu | li | charev
+vaiyavi'u | hacherev | lifnei | hamelekh
 
 3:25
-vaiyomer | hamelekh
-gizru | et | haiyeled | hachai | lishnayim
+vaiyomer | hamelekh | gizru | et | haiyeled | hachai | lishnayim
 utenu | et | hachatzi | le'achat
 ve'et | hachatzi | le'echat
 
@@ -148,6 +147,5 @@ imo
 
 3:28
 vaiyishme'u | khol | Yisra'el | et | hamishpat | asher | shafat | hamelekh
-vaiyir'u | mipenei | hamelekh
-ki | ra'u
+vaiyir'u | mipenei | hamelekh | ki | ra'u
 ki | chakhemat | elohim | bekirbo | la'asot | mishpat

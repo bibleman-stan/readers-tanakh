@@ -8,10 +8,8 @@ rishon | hu | lakhem | lechadeshei
 hashanah
 
 12:3
-daberu | el | kol | adat | Yisra'el | lemor | be'asor
-lachodesh | hazeh
-veyikchu | lahem | ish | seh | leveit | avot
-seh | labayit
+daberu | el | kol | adat | Yisra'el | lemor | be'asor | lachodesh | hazeh
+veyikchu | lahem | ish | seh | leveit | avot | seh | labayit
 
 12:4
 ve'im | yim'at | habayit | mihyot | miseh
@@ -86,8 +84,8 @@ miyom | harishon | ad | yom | hashevi'i
 uvaiyom | harishon | mikra | kodesh | uvaiyom | hashevi'i
 mikra | kodesh | yihyeh | lakhem
 kol | melakhah | lo | ye'aseh | vahem
-akh | asher | ye'akhel | lekhol | nefesh
-hu | levado | ye'aseh | lakhem
+akh | asher | ye'akhel | lekhol | nefesh | hu | levado
+ye'aseh | lakhem
 
 12:17
 ushemartem | et | hamatzot
@@ -137,8 +135,8 @@ vehayah | ki | tavo'u | el | ha'aretz | asher | yiten | Yahweh | lakhem
 ka'asher | diber | ushemartem | et | ha'avodah | hazot
 
 12:26
-vehayah
-ki | yomeru | aleikhem | beneikhem | mah | ha'avodah | hazot | lakhem
+vehayah | ki | yomeru | aleikhem | beneikhem | mah | ha'avodah | hazot
+lakhem
 
 12:27
 va'amartem | zevach | pesach | hu | Layahweh | asher | pasach | al | batei | venei | Yisra'el | Bemitzrayim
@@ -246,8 +244,7 @@ ya'asu | oto
 12:48
 vekhi | yagur | itekha | ger | ve'asah | fesach | Layahweh
 himol | lo | khol | zakhar | ve'az | yikrav | la'asoto
-vehayah | ke'ezrach | ha'aretz
-vekhol | arel | lo | yokhal | bo
+vehayah | ke'ezrach | ha'aretz | vekhol | arel | lo | yokhal | bo
 
 12:49
 torah | achat | yihyeh | la'ezrach | velager

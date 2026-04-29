@@ -14,8 +14,7 @@ vaiyisa | lo | Yehoyada
 nashim | shetayim | vaiyoled | banim | uvanot
 
 24:4
-vayhi
-achareikhen
+vayhi | achareikhen
 hayah | im | lev | Yo'ash | lechadesh
 et | beit | Yahweh
 
@@ -29,29 +28,27 @@ halviyim
 vaiyikra | hamelekh | Lihoyada | harosh
 vaiyomer | lo | madua | lo | darashta | al | halviyim
 lehavi | Mihudah | Umirushalim | et | mas'at | Mosheh | eved | Yahweh
-vehakahal | Leyisra'el | le'ohel
-ha'edut
+vehakahal | Leyisra'el
+le'ohel | ha'edut
 
 24:7
 ki | Atalyahu | hamirsha'at | baneiha | faretzu
 et | beit | ha'elohim
-vegam | kol | kadeshei | veit | Yahweh
-asu | labe'alim
+vegam | kol | kadeshei | veit | Yahweh | asu | labe'alim
 
 24:8
 vaiyomer | hamelekh
 vaiya'asu
 aron | echad
-vaiyitenuhu | besha'ar | beit | Yahweh
-chutzah
+vaiyitenuhu | besha'ar | beit | Yahweh | chutzah
 
 24:9
 vaiyitenu | kol | Bihudah | Uvirushalim | lehavi | Layahweh | mas'at | Mosheh | eved | ha'elohim | al | Yisra'el
 bamidbar
 
 24:10
-vaiyismechu | khol | hasarim
-vekhol | ha'am | vaiyavi'u | vaiyashlikhu | la'aron | ad | lekhaleh
+vaiyismechu | khol | hasarim | vekhol | ha'am
+vaiyavi'u | vaiyashlikhu | la'aron | ad | lekhaleh
 
 24:11
 vayhi | be'et | yavi | et | ha'aron | el | pekudat | hamelekh | beyad | halviyim
@@ -86,8 +83,8 @@ vaiyamot
 ben | me'ah | usheloshim | shanah | bemoto
 
 24:16
-vaiyikberuhu | ve'ir | David | im | hamelakhim
-ki | asah | tovah | Beyisra'el | ve'im | ha'elohim | uveito
+vaiyikberuhu | ve'ir | David | im | hamelakhim | ki | asah | tovah | Beyisra'el | ve'im | ha'elohim
+uveito
 
 24:17
 ve'acharei | mot | Yehoyada | ba'u | sarei | Yehudah
@@ -126,8 +123,7 @@ veyidrosh
 24:23
 vayhi | litkufat | hashanah | alah | alav | cheil | Aram
 vaiyavo'u | el | Yehudah | Virushalim
-vaiyashchitu | et | kol | sarei | ha'am | me'am
-vekhol | shelalam | shilechu
+vaiyashchitu | et | kol | sarei | ha'am | me'am | vekhol | shelalam | shilechu
 lemelekh | Darmasek
 
 24:24
@@ -148,8 +144,7 @@ vaiyikberuhu | be'ir | David | velo | kevaruhu | bekivrot | hamelakhim
 ve'eleh
 hamitkasherim | alav | Zavad | ben | Shim'at | ha'amonit
 Vihozavad
-ben | Shimrit
-hamo'avit
+ben | Shimrit | hamo'avit
 
 24:27
 uvanav | yerev | hamasa | alav | visod | beit | ha'elohim

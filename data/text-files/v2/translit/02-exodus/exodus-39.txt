@@ -1,6 +1,6 @@
 39:1
-umin | hatekhelet | veha'argaman | vetola'at | hashani
-asu | vigdei | serad | lesharet | bakodesh
+umin | hatekhelet | veha'argaman | vetola'at | hashani | asu | vigdei | serad
+lesharet | bakodesh
 vaiya'asu | et | bigdei | hakodesh | asher | Le'aharon
 ka'asher | tzivah | Yahweh | et | Mosheh
 
@@ -11,8 +11,7 @@ zahav | tekhelet | ve'argaman | vetola'at | shani | veshesh | mashezar
 39:3
 vayrake'u | et | pachei | hazahav | vekitzetz | petilim
 la'asot | betokh | hatekhelet | uvetokh | ha'argaman
-uvetokh | tola'at | hashani | uvetokh | hashesh | ma'aseh
-choshev
+uvetokh | tola'at | hashani | uvetokh | hashesh | ma'aseh | choshev
 
 39:4
 ketefot | asu | lo
@@ -72,8 +71,7 @@ tahor
 
 39:16
 vaiya'asu | shetei | mishbetzot | zahav
-ushetei
-tabe'ot | zahav
+ushetei | tabe'ot | zahav
 vaiyitenu | et | shetei | hataba'ot | al | shenei
 ketzot | hachoshen
 
@@ -170,8 +168,7 @@ ve'et | mikhseh
 orot | hatechashim | ve'et | parokhet | hamasakh
 
 39:35
-et | aron | ha'edut
-ve'et | badav
+et | aron | ha'edut | ve'et | badav
 ve'et | hakaporet
 
 39:36

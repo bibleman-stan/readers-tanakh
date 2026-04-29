@@ -4,8 +4,7 @@ vaytzav | et | Shelomoh | veno | lemor
 
 2:2
 anokhi | holekh | bederekh
-kol | ha'aretz
-vechazakta
+kol | ha'aretz | vechazakta
 vehayita | le'ish
 
 2:3
@@ -18,8 +17,8 @@ sham
 
 2:4
 lema'an | yakim | Yahweh | et | devaro | asher | diber | alai | lemor
-im | yishmeru | vaneikha | et | darkam | lalekhet | lefanai | be'emet | bekhol | levavam
-uvekhol | nafsham | lemor | lo | yikaret | lekha | ish | me'al | kise | Yisra'el
+im | yishmeru | vaneikha | et | darkam | lalekhet | lefanai | be'emet | bekhol | levavam | uvekhol | nafsham | lemor
+lo | yikaret | lekha | ish | me'al | kise | Yisra'el
 
 2:5
 vegam | atah | yada'ta | et | asher | asah | li | Yo'av | ben | Tzeruyah | asher | asah | lishnei | sarei | tziv'ot | Yisra'el | Le'avner | ben | Ner | Vela'amasa | ven | Yeter | vaiyahargem
@@ -59,9 +58,7 @@ vaiyikaver | be'ir | David
 2:11
 vehaiyamim | asher | malakh | David | al | Yisra'el
 arba'im | shanah
-Bechevron | malakh | sheva | shanim | Uvirushalim | malakh
-sheloshim | veshalosh
-shanim
+Bechevron | malakh | sheva | shanim | Uvirushalim | malakh | sheloshim | veshalosh | shanim
 
 2:12
 Ushelomoh | yashav | al | kise
@@ -83,8 +80,8 @@ daber
 2:15
 vaiyomer | at | yada'at | ki | li | hayetah | hamelukhah
 ve'alai | samu | khol | Yisra'el | peneihem | limlokh
-vatiso | hamelukhah | vatehi | le'achi
-ki | Meyahweh | hayetah | lo
+vatiso | hamelukhah | vatehi | le'achi | ki | Meyahweh
+hayetah | lo
 
 2:16
 ve'atah | she'elah | achat | anokhi | sho'el | me'itakh | al | tashivi
@@ -92,16 +89,12 @@ et | panai
 vatomer | elav | daber
 
 2:17
-vaiyomer | imri | na | Lishlomoh | hamelekh
-ki | lo | yashiv
-et | panayikh
+vaiyomer | imri | na | Lishlomoh | hamelekh | ki | lo | yashiv | et | panayikh
 veyiten | li | et | Avishag | hashunamit | le'ishah
 
 2:18
-vatomer | Bat | Sheva
-tov
-anokhi
-adaber | aleikha | el | hamelekh
+vatomer | Bat | Sheva | tov
+anokhi | adaber | aleikha | el | hamelekh
 
 2:19
 vatavo | Vat | Sheva | el | hamelekh | Shelomoh | ledaber | lo | al | Adoniyahu
@@ -213,8 +206,7 @@ ve'et | Tzadok | hakohen | natan | hamelekh | tachat | Evyatar
 vaiyishlach | hamelekh | vaiyikra | Leshim'i
 vaiyomer | lo | beneh | lekha | vayit | Birushalim
 veyashavta
-sham | velo | tetze | misham
-aneh | va'anah
+sham | velo | tetze | misham | aneh | va'anah
 
 2:37
 vehayah | beyom | tzetekha | ve'avarta | et | nachal | Kidron
@@ -224,15 +216,15 @@ damekha | yihyeh | veroshekha
 
 2:38
 vaiyomer | Shim'i | lamelekh | tov | hadavar
-ka'asher | diber | adoni | hamelekh
-ken | ya'aseh | avdekha
+ka'asher | diber | adoni | hamelekh | ken
+ya'aseh | avdekha
 vaiyeshev | Shim'i | Birushalim
 yamim | rabim
 
 2:39
 vayhi | miketz | shalosh | shanim
-vaiyivrechu | shenei | avadim | Leshim'i | el | Akhish | ben | Ma'akhah
-melekh | Gat | vaiyagidu | Leshim'i | lemor
+vaiyivrechu | shenei | avadim | Leshim'i | el | Akhish | ben | Ma'akhah | melekh | Gat
+vaiyagidu | Leshim'i | lemor
 hineh | avadeikha | Begat
 
 2:40
@@ -250,8 +242,7 @@ vaiyishlach | hamelekh | vaiyikra | Leshim'i | vaiyomer | elav | halo | hishba't
 beyom | tzetekha | vehalakhta | aneh | va'anah
 yadoa | teda
 ki | mot | tamut
-vatomer | elai | tov | hadavar
-shama'eti
+vatomer | elai | tov | hadavar | shama'eti
 
 2:43
 umadua | lo | shamarta | et | shevu'at | Yahweh

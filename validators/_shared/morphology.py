@@ -414,6 +414,68 @@ COMMON_ADJ_STEMS = {
 ADJ_PLURAL_SUFFIXES = ("ים", "ות", "ה")
 
 
+# Construct-head skeletons — high-frequency words that commonly head a
+# construct chain. When such a word ends a line and the nomen rectum is on
+# the next line, h16_c fires (Layer-1 stranding violation).
+#
+# IMPORTANT: list bare skeletons only — vav/bound-prep prefixes are stripped
+# algorithmically by is_construct_head_token, so DON'T enumerate prefix variants.
+CONSTRUCT_HEAD_SKELETONS = {
+    # Plural masc construct (-ei suffix)
+    "יושבי", "אנשי", "בני", "ימי", "שני", "אבי", "אחי", "מלכי", "זקני",
+    "שרי", "ראשי", "אלוני", "אילני", "מפריסי", "מעלי", "פני",
+    # Singular fem construct (-t suffix)
+    "חמת", "אשת", "בת", "מלכת", "תורת", "עדת", "מצות", "פחת", "פחות",
+    "מלכות", "מקצה", "תחלת", "ראשית", "אחרית",
+    # Singular masc construct (often = absolute)
+    "כל", "בית", "אהל", "יד", "פי", "שם", "דבר", "מקום", "הר", "עם",
+    "גוי", "שדה", "יום", "ראש", "ארון", "מצוה", "רוח", "ארץ", "עיר",
+    "בן", "אב", "אח", "מלך", "נשיא", "נגיד", "אדון", "אביר", "אלון",
+    "אלוה", "כבוד", "פני",
+    # Quantifier-construct
+    "שני", "שתי", "שלשת", "שלש", "ארבעת", "ארבע", "חמשת", "חמש",
+    "ששת", "שש", "שבעת", "שבע", "שמנת", "שמנה", "תשעת", "תשע",
+    "עשרת", "עשר",
+}
+
+BOUND_PREP_STRIPS = ("ב", "ל", "כ", "מ", "ה")  # bound preps + article
+
+
+def is_construct_head_token(token: str) -> bool:
+    """True if token is a construct-state head (algorithmic strip + closed list).
+
+    Strategy:
+      1. Get skeleton (handle maqqef by checking head sub-token only).
+      2. Try direct match against CONSTRUCT_HEAD_SKELETONS.
+      3. Strip leading vav, retry.
+      4. Strip leading bound-prep / article, retry.
+      5. Strip leading vav + bound-prep / article, retry.
+
+    This generalization catches בְּבֵית, מִבֵּית, וּבְבֵית, וְאַנְשֵׁי, etc. without
+    requiring every prefix variant in the closed list.
+    """
+    if MAQQEF in token:
+        head = token.split(MAQQEF, 1)[0]
+        s = skel(head)
+    else:
+        s = skel(token)
+    if not s:
+        return False
+    if s in CONSTRUCT_HEAD_SKELETONS:
+        return True
+    # Strip leading vav
+    if len(s) >= 2 and s[0] == "ו":
+        if s[1:] in CONSTRUCT_HEAD_SKELETONS:
+            return True
+        # Strip vav + bound-prep / article
+        if len(s) >= 3 and s[1] in BOUND_PREP_STRIPS and s[2:] in CONSTRUCT_HEAD_SKELETONS:
+            return True
+    # Strip leading bound-prep / article
+    if len(s) >= 2 and s[0] in BOUND_PREP_STRIPS and s[1:] in CONSTRUCT_HEAD_SKELETONS:
+        return True
+    return False
+
+
 def is_definite_adjective_token(token: str) -> bool:
     """True if token is article-marked + adjective stem.
 

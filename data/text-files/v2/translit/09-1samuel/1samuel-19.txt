@@ -1,7 +1,6 @@
 19:1
 vaydaber | Sha'ul | el | Yonatan | beno | ve'el | kol | avadav | lehamit | et | David
-Vihonatan | ben | Sha'ul
-chafetz | Bedavid | me'od
+Vihonatan | ben | Sha'ul | chafetz | Bedavid | me'od
 
 19:2
 vaiyaged | Yehonatan | Ledavid | lemor | mevakesh | Sha'ul | avi | lahamitekha
@@ -35,8 +34,8 @@ im | yumat
 
 19:7
 vaiyikra | Yehonatan | Ledavid
-vaiyaged | lo | Yehonatan | et | kol | hadevarim
-ha'eleh | vaiyave | Yehonatan | et | David | el | Sha'ul
+vaiyaged | lo | Yehonatan | et | kol | hadevarim | ha'eleh
+vaiyave | Yehonatan | et | David | el | Sha'ul
 vayhi | lefanav | ke'etmol | shilshom
 
 19:8
@@ -134,6 +133,5 @@ ad | bo'o | Benoit | Baramah
 vaiyifshat | gam | hu | begadav | vaiyitnabe | gam | hu | lifnei | Shemu'el
 vaiyipol | arom
 kol | haiyom | hahu
-vekhol | halayelah
-al | ken | yomeru
+vekhol | halayelah | al | ken | yomeru
 hagam | Sha'ul | banevi'im

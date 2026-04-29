@@ -12,8 +12,8 @@ tovat | mar'eh | me'od
 11:3
 vaiyishlach | David
 vaiyidrosh | la'ishah
-vaiyomer | halo | zot | Bat | Sheva | bat | Eli'am
-eshet | Uriyah | hachiti
+vaiyomer | halo | zot | Bat | Sheva | bat | Eli'am | eshet
+Uriyah | hachiti
 
 11:4
 vaiyishlach | David | mal'akhim | vaiyikacheha | vatavo | elav | vaiyishkav | imah | vehi | mitkadeshet
@@ -32,8 +32,7 @@ hachiti | vaiyishlach | Yo'av | et | Uriyah | el | David
 
 11:7
 vaiyavo | Uriyah
-elav | vaiyish'al | David | lishlom | Yo'av | velishlom | ha'am
-velishlom
+elav | vaiyish'al | David | lishlom | Yo'av | velishlom | ha'am | velishlom
 hamilchamah
 
 11:8
@@ -84,12 +83,10 @@ havu | et | Uriyah | el | mul | penei | hamilchamah | hachazakah
 veshavtem | me'acharav | venikah | vamet
 
 11:16
-vayhi
-bishmor | Yo'av | el | ha'ir
-vaiyiten | et | Uriyah
+vayhi | bishmor | Yo'av
+el | ha'ir | vaiyiten | et | Uriyah
 el | hamakom | asher | yada
-ki | anshei | chayil
-sham
+ki | anshei | chayil | sham
 
 11:17
 vaiyetze'u | anshei | ha'ir | vaiyilachamu | et | Yo'av

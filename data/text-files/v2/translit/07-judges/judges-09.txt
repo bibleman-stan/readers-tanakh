@@ -12,8 +12,8 @@ ki | atzmekhem | uvesarkhem
 ani
 
 9:3
-vaydaberu | achei | imo | alav | be'azenei | kol | ba'alei | Shekhem | et | kol | hadevarim
-ha'eleh | vaiyet | libam | acharei | Avimelekh
+vaydaberu | achei | imo | alav | be'azenei | kol | ba'alei | Shekhem | et | kol | hadevarim | ha'eleh
+vaiyet | libam | acharei | Avimelekh
 ki | ameru
 achinu | hu
 
@@ -43,8 +43,8 @@ vaiyomer | lahem | shim'u | elai | ba'alei | Shekhem
 veyishma | aleikhem | elohim
 
 9:8
-halokh | halekhu | ha'etzim | limshoach | aleihem | melekh
-vaiyomeru | lazayit | melokhah | aleinu
+halokh | halekhu | ha'etzim | limshoach | aleihem | melekh | vaiyomeru | lazayit
+melokhah | aleinu
 
 9:9
 vaiyomer | lahem | hazayit
@@ -100,10 +100,8 @@ ki | achikhem
 hu
 
 9:19
-ve'im | be'emet | uvetamim | asitem | im | Yeruba'al | ve'im | beito
-haiyom | hazeh
-simchu | Ba'avimelekh
-veyismach | gam | hu | bakhem
+ve'im | be'emet | uvetamim | asitem | im | Yeruba'al | ve'im | beito | haiyom | hazeh
+simchu | Ba'avimelekh | veyismach | gam | hu | bakhem
 
 9:20
 ve'im | ayin
@@ -130,8 +128,7 @@ vaiyivgedu | va'alei | Shekhem | Ba'avimelekh
 9:24
 lavo
 chamas
-shiv'im | benei | Yeruba'al
-vedamam | lasum | al | Avimelekh | achihem | asher | harag | otam
+shiv'im | benei | Yeruba'al | vedamam | lasum | al | Avimelekh | achihem | asher | harag | otam
 ve'al | ba'alei | Shekhem
 asher | chizeku | et | yadav | laharog | et | echav
 
@@ -154,8 +151,7 @@ vaykalu | et | Avimelekh
 
 9:28
 vaiyomer | Ga'al | ben | Eved | mi | Avimelekh | umi | Shekhem | ki | na'avdenu
-halo | ven | Yeruba'al
-Uzevul | pekido
+halo | ven | Yeruba'al | Uzevul | pekido
 ivdu | et | anshei | Chamor | avi | Shekhem | umadua
 na'avdenu | anachenu
 
@@ -198,13 +194,11 @@ arba'ah | rashim
 vaiyetze | Ga'al | ben | Eved
 vaiya'amod
 petach
-sha'ar | ha'ir
-vaiyakom | Avimelekh | veha'am | asher | ito | min | hama'rav
+sha'ar | ha'ir | vaiyakom | Avimelekh | veha'am | asher | ito | min | hama'rav
 
 9:36
 vaiyar | Ga'al | et | ha'am | vaiyomer | el | Zevul
-hineh | am | yored | merashei
-heharim
+hineh | am | yored | merashei | heharim
 vaiyomer | elav | Zevul | et | tzel | heharim | atah | ro'eh
 ka'anashim
 
@@ -212,9 +206,8 @@ ka'anashim
 vaiyosef | od | Ga'al | ledaber
 vaiyomer
 hineh | am | yordim | me'im
-tabur | ha'aretz
-verosh | echad | ba | miderekh
-elon | me'onim
+tabur | ha'aretz | verosh | echad | ba
+miderekh | elon | me'onim
 
 9:38
 vaiyomer | elav | Zevul | aiyeh | efo | fikha | asher | tomar
@@ -238,22 +231,19 @@ vaygaresh | Zevul | et | Ga'al | ve'et | echav | mishevet | Bishkhem
 
 9:42
 vayhi | mimochorat
-vaiyetze | ha'am
-hasadeh | vaiyagidu | La'avimelekh
+vaiyetze | ha'am | hasadeh
+vaiyagidu | La'avimelekh
 
 9:43
 vaiyikach | et | ha'am | vaiyechetzem | lishloshah | rashim
-vaiye'ero | basadeh
-vaiyar | vehineh | ha'am | yotze | min | ha'ir
+vaiye'ero | basadeh | vaiyar | vehineh | ha'am | yotze | min | ha'ir
 vaiyakom | aleihem | vaiyakem
 
 9:44
 Va'avimelekh | veharashim | asher | imo | pashetu
 vaiya'amdu
 petach
-sha'ar | ha'ir
-ushenei | harashim | pashetu | al | kol | asher | basadeh
-vaiyakum
+sha'ar | ha'ir | ushenei | harashim | pashetu | al | kol | asher | basadeh | vaiyakum
 
 9:45
 Va'avimelekh | nilcham | ba'ir | kol | haiyom | hahu

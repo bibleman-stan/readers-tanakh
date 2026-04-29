@@ -1,6 +1,5 @@
 2:1
-vaykhulu | hashamayim | veha'aretz
-vekhol | tzeva'am
+vaykhulu | hashamayim | veha'aretz | vekhol | tzeva'am
 
 2:2
 vaykhal | elohim | baiyom | hashevi'i | melakhto | asher | asah
@@ -19,8 +18,7 @@ beyom | asot | Yahweh | elohim
 eretz | veshamayim
 
 2:5
-vekhol | siach | hasadeh | terem | yihyeh | va'aretz
-vekhol | esev | hasadeh
+vekhol | siach | hasadeh | terem | yihyeh | va'aretz | vekhol | esev | hasadeh
 terem | yitzmach
 ki | lo | himtir | Yahweh | elohim | al | ha'aretz
 ve'adam | ayin | la'avod
@@ -70,8 +68,7 @@ sham | habedolach
 ve'even | hashoham
 
 2:13
-veshem | hanahar | hasheni
-Gichon
+veshem | hanahar | hasheni | Gichon
 hu | hasovev
 et | kol | eretz | Kush
 

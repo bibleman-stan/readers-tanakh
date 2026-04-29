@@ -1,7 +1,6 @@
 16:1
 bishnat | sheva | esreh | shanah | Lefekach
-ben | Remalyahu | malakh | Achaz | ben | Yotam
-melekh | Yehudah
+ben | Remalyahu | malakh | Achaz | ben | Yotam | melekh | Yehudah
 
 16:2
 ben | esrim | shanah | Achaz | bemalekho
@@ -39,8 +38,7 @@ hakomim | alai
 
 16:8
 vaiyikach | Achaz | et | hakesef | ve'et | hazahav | hanimtza | beit | Yahweh
-uve'otzerot | beit | hamelekh | vaiyishlach | lemelekh | Ashur
-shochad
+uve'otzerot | beit | hamelekh | vaiyishlach | lemelekh | Ashur | shochad
 
 16:9
 vaiyishma | elav | melekh | Ashur
@@ -62,8 +60,7 @@ ad | bo | hamelekh | Achaz | Midamasek
 
 16:12
 vaiyavo | hamelekh | Midamesek
-vaiyar | hamelekh
-et | hamizbeach
+vaiyar | hamelekh | et | hamizbeach
 vaiyikrav | hamelekh | al | hamizbeach
 vaiya'al | alav
 
@@ -81,8 +78,7 @@ tzafonah
 
 16:15
 vaytzavuh | hamelekh | Achoz | et | Uriyah | hakohen | lemor | al | hamizbeach | hagadol | hakter | et | olat | haboker | ve'et | minchat | ha'erev | ve'et | olat | hamelekh | ve'et | minchato | ve'et | olat | kol | am | ha'aretz | uminchatam | veniskeihem
-vekhol | dam | olah | vekhol | dam | zevach
-alav | tizrok
+vekhol | dam | olah | vekhol | dam | zevach | alav | tizrok
 umizbach | hanechoshet | yihyeh | li | levaker
 
 16:16
@@ -108,6 +104,6 @@ lemalkhei | Yehudah
 
 16:20
 vaiyishkav | Achaz | im | avotav
-vaiyikaver | im | avotav
-be'ir | David | vaiyimlokh | Chizkiyahu | veno
+vaiyikaver | im | avotav | be'ir | David
+vaiyimlokh | Chizkiyahu | veno
 tachtav

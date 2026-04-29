@@ -2,8 +2,7 @@
 vayhi | devar | Yahweh | elai | lemor
 
 30:2
-ben | adam
-hinave | ve'amarta
+ben | adam | hinave | ve'amarta
 koh | amar | Adonai | Yahweh
 heililu
 hah | laiyom
@@ -52,19 +51,16 @@ ki | hineh | ba'ah
 
 30:10
 koh | amar | Adonai | Yahweh
-vehishbati | et | hamon | Mitzrayim | beyad
-Nevukhadretzar | melekh | Bavel
+vehishbati | et | hamon | Mitzrayim | beyad | Nevukhadretzar | melekh | Bavel
 
 30:11
 hu | ve'amo | ito | aritzei | goyim | muva'im
-leshachet | ha'aretz
-veheriku | charvotam | al | Mitzrayim | umal'u | et | ha'aretz
+leshachet | ha'aretz | veheriku | charvotam | al | Mitzrayim | umal'u | et | ha'aretz
 chalal
 
 30:12
-venatati | ye'orim | charavah | umakharti | et | ha'aretz | beyad | ra'im
-vahashimoti | eretz | umelo'ah | beyad | zarim
-ani | Yahweh
+venatati | ye'orim | charavah | umakharti | et | ha'aretz
+beyad | ra'im | vahashimoti | eretz | umelo'ah | beyad | zarim | ani | Yahweh
 dibarti
 
 30:13
@@ -112,14 +108,12 @@ beshiv'ah | lachodesh
 hayah | devar | Yahweh | elai | lemor
 
 30:21
-ben | adam
-et | zeroa | par'oh | melekh | Mitzrayim | shavareti
+ben | adam | et | zeroa | par'oh | melekh | Mitzrayim | shavareti
 vehineh | lo | chubeshah | latet | refu'ot | lasum | chitul | lechaveshah | lechazekah
 litpos | becharev
 
 30:22
-lakhen | koh | amar | Adonai | Yahweh | hini | el | par'oh | melekh | Mitzrayim
-veshavarti | et | zero'otav
+lakhen | koh | amar | Adonai | Yahweh | hini | el | par'oh | melekh | Mitzrayim | veshavarti | et | zero'otav
 et | hachazakah
 ve'et | hanishbaret
 vehipalti | et | hacherev | miyado

@@ -129,8 +129,7 @@ uvetulah
 venipatzti | vekha | ro'eh | ve'edro
 venipatzti | vekha
 ikar | vetzimdo | venipatzti | vekha
-pachot
-useganim
+pachot | useganim
 
 51:24
 veshilamti | Levavel | ulekhol | yoshevei | Khasdim | et | kol | ra'atam | asher | asu | Vetziyon
@@ -245,8 +244,7 @@ haiyam | bahamon | galav | Nikhsatah
 51:43
 hayu | areiha | leshamah
 eretz | tziyah | va'aravah
-eretz | lo | yeshev | bahen | kol | ish
-velo | ya'avor | bahen
+eretz | lo | yeshev | bahen | kol | ish | velo | ya'avor | bahen
 ben | adam
 
 51:44
@@ -262,15 +260,13 @@ ish | et | nafsho | mecharon | af | Yahweh
 
 51:46
 ufen | yerakh | levavkhem | vetire'u | bashemu'ah
-hanishma'at | ba'aretz
-uva | vashanah | hashemu'ah | ve'acharav | bashanah | hashemu'ah
+hanishma'at | ba'aretz | uva | vashanah | hashemu'ah | ve'acharav | bashanah | hashemu'ah
 vechamas | ba'aretz | umoshel | al | moshel
 
 51:47
 lakhen | hineh | yamim | ba'im
 ufakadti | al | pesilei | Vavel
-vekhol | artzah
-tevoosh
+vekhol | artzah | tevoosh
 vekhol | chalaleiha | yipelu | vetokhah
 
 51:48
@@ -299,8 +295,7 @@ beit | Yahweh
 51:52
 lakhen | hineh | yamim | ba'im | ne'um | Yahweh
 ufakadti | al | pesileiha
-uvekhol | artzah
-ye'enok | chalal
+uvekhol | artzah | ye'enok | chalal
 
 51:53
 ki | ta'aleh | Vavel | hashamayim
@@ -357,8 +352,7 @@ haketuvim | el | Bavel
 vaiyomer | Yirmeyahu | el | Serayah | kevo'akha | Vavel
 vera'ita
 vekarata
-et | kol | hadevarim
-ha'eleh
+et | kol | hadevarim | ha'eleh
 
 51:62
 ve'amarta | Yahweh | atah | dibarta | el | hamakom | hazeh | lehakhrito

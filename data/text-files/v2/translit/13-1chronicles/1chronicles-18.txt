@@ -10,8 +10,8 @@ vaiyihyu | Mo'av | avadim | Ledavid
 nose'ei | minchah
 
 18:3
-vaiyakh | David | et | Hadad'ezer | melekh | Tzovah
-Chamatah | belekhto | lehatziv | yado | binhar | Perat
+vaiyakh | David | et | Hadad'ezer | melekh | Tzovah | Chamatah
+belekhto | lehatziv | yado | binhar | Perat
 
 18:4
 vaiyilkod | David | mimenu | elef | rekhev | veshiv'at | alafim | parashim
@@ -55,8 +55,8 @@ vekhol | kelei | zahav | vakhesef | unechoshet
 
 18:11
 gam | otam | hikdish | hamelekh | David | Layahweh | im | hakesef | vehazahav
-asher | nasa | mikol | hagoyim
-Me'edom | Umimo'av | umibenei | Amon | umipelishtim | Ume'amalek
+asher | nasa | mikol | hagoyim | Me'edom | Umimo'av | umibenei | Amon | umipelishtim
+Ume'amalek
 
 18:12
 Ve'avshai | ben | Tzeruyah | hikah | et | Edom | Begei | Hamelach
@@ -64,9 +64,8 @@ shemonah | asar | alef
 
 18:13
 vaiyasem | Be'edom | netzivim
-vaiyihyu | khol | Edom
-avadim | Ledavid | vaiyoosha | Yahweh | et | David
-bekhol | asher | halakh
+vaiyihyu | khol | Edom | avadim | Ledavid
+vaiyoosha | Yahweh | et | David | bekhol | asher | halakh
 
 18:14
 vaiyimlokh | David | al | kol | Yisra'el

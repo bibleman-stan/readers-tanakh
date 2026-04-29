@@ -4,8 +4,8 @@ el | gevul | Edom | midbar | Tzin | negbah
 miktzeh | teiman
 
 15:2
-vayhi | lahem | gevul | negev | miktzeh
-yam | hamelach | min | halashon | haponeh | negbah
+vayhi | lahem | gevul | negev | miktzeh | yam | hamelach | min | halashon
+haponeh | negbah
 
 15:3
 veyatza | el | minegev | Lema'aleh | Akrabim | ve'avar | Tzinah
@@ -24,8 +24,7 @@ gevul | negev
 15:5
 ugevul | kedemah | yam | hamelach | ad | ketzeh
 Haiyarden
-ugevul | lif'at | tzafonah | mileshon | haiyam | miktzeh
-Haiyarden
+ugevul | lif'at | tzafonah | mileshon | haiyam | miktzeh | Haiyarden
 
 15:6
 ve'alah | hagevul | Beit | Chagelah
@@ -96,8 +95,8 @@ asher | yakeh | et | Kiryat | Sefer | ulekhadah
 venatati | lo | et | Akhsah | viti | le'ishah
 
 15:17
-vaiyilkedah | Ateni'el | ben | Kenaz
-achi | Khalev | vaiyiten | lo | et | Akhsah | vito | le'ishah
+vaiyilkedah | Ateni'el | ben | Kenaz | achi | Khalev
+vaiyiten | lo | et | Akhsah | vito | le'ishah
 
 15:18
 vayhi | bevo'ah | vatesitehu | lish'ol | me'et | aviha | sadeh
@@ -158,8 +157,7 @@ Vesansanah
 15:32
 Uleva'ot | Veshilchim
 Ve'ayin | Verimon
-kol | arim | esrim | vatesha
-vechatzreihen
+kol | arim | esrim | vatesha | vechatzreihen
 
 15:33
 bashefelah | Eshta'ol | Vetzare'ah | Ve'ashnah
@@ -177,8 +175,7 @@ Va'azekah
 Vesha'arayim | Va'aditayim
 Vehagederah
 Ugederotayim
-arim | arba | esreh
-vechatzreihen
+arim | arba | esreh | vechatzreihen
 
 15:37
 Tzenan | Vachadashah
@@ -197,8 +194,7 @@ Vekhabon | Velachmas | Vekhitlish
 15:41
 Ugederot
 Beit | Dagon | Vena'amah | Umakedah
-arim | shesh | esreh
-vechatzreihen
+arim | shesh | esreh | vechatzreihen
 
 15:42
 Livnah | Va'eter
@@ -269,8 +265,7 @@ Giv'ah | Vetimnah
 arim | eser | vechatzreihen
 
 15:58
-Chalchul | Beit | Tzur
-Ugedor
+Chalchul | Beit | Tzur | Ugedor
 
 15:59
 Uma'arat | Uveit | Anot | Ve'eltekon
@@ -285,8 +280,7 @@ arim | shetayim | vechatzreihen
 bamidbar | Beit | Ha'aravah | Midin | Usekhakhah
 
 15:62
-Vehanivshan | Ve'ir | Hamelach
-Ve'ein | Gedi
+Vehanivshan | Ve'ir | Hamelach | Ve'ein | Gedi
 arim | shesh | vechatzreihen
 
 15:63

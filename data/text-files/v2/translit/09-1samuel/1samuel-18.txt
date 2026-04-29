@@ -19,15 +19,13 @@ Ledavid | umadav | ve'ad | charbo | ve'ad | kashto | ve'ad | chagoro
 18:5
 vaiyetze | David | bekhol | asher | yishlachenu | Sha'ul | yaskil
 vaysimehu | Sha'ul | al | anshei | hamilchamah
-vaiyitav | be'einei | khol | ha'am
-vegam | be'einei
+vaiyitav | be'einei | khol | ha'am | vegam | be'einei
 avdei | Sha'ul
 
 18:6
 vayhi | bevo'am | beshuv | David | mehakot | et | hapelishti
 vatetzenah | hanashim | mikol | arei | Yisra'el | lashor | vehamecholot | likrat
-Sha'ul | hamelekh
-betupim | besimchah | uveshalishim
+Sha'ul | hamelekh | betupim | besimchah | uveshalishim
 
 18:7
 vata'aneinah | hanashim | hamsachakot
@@ -84,8 +82,7 @@ ki | hu | yotze | vava | lifneihem
 
 18:17
 vaiyomer | Sha'ul | el | David | hineh | viti | hagedolah | Merav | otah | eten | lekha | le'ishah
-akh | heyeh | li | leven | chayil
-vehilachem
+akh | heyeh | li | leven | chayil | vehilachem
 milchamot | Yahweh
 Vesha'ul | amar | al | tehi | yadi | bo
 utehi | vo
@@ -114,16 +111,13 @@ haiyom
 
 18:22
 vaytzav | Sha'ul | et | avadav | daberu | el | David | balat | lemor
-hineh | chafetz | bekha | hamelekh
-vekhol | avadav
-ahevukha
+hineh | chafetz | bekha | hamelekh | vekhol | avadav | ahevukha
 ve'atah | hitchaten | bamelekh
 
 18:23
 vaydaberu | avdei | Sha'ul | be'azenei | David | et | hadevarim
 ha'eleh
-vaiyomer | David | hankalah | ve'eineikhem | hitchaten | bamelekh
-ve'anokhi
+vaiyomer | David | hankalah | ve'eineikhem | hitchaten | bamelekh | ve'anokhi
 ish | rash | venikleh
 
 18:24
@@ -132,8 +126,9 @@ kadevarim | ha'eleh | diber | David
 
 18:25
 vaiyomer | Sha'ul | koh | tomeru | Ledavid | ein | chefetz | lamelekh | bemohar
-ki | beme'ah | arelot | pelishtim | lehinakem | be'oyevei | hamelekh
-Vesha'ul | chashav | lehapil | et | David | beyad | pelishtim
+ki | beme'ah | arelot | pelishtim | lehinakem
+be'oyevei | hamelekh | Vesha'ul | chashav
+lehapil | et | David | beyad | pelishtim
 
 18:26
 vaiyagidu | avadav | Ledavid | et | hadevarim | ha'eleh
@@ -143,8 +138,8 @@ bamelekh | velo | mal'u | haiyamim
 18:27
 vaiyakom | David | vaiyelekh | hu | va'anashav | vaiyakh | bapelishtim | matayim | ish
 vaiyave | David | et | areloteihem
-vaymal'um | lamelekh | lehitchaten | bamelekh
-vaiyiten | lo | Sha'ul | et | Mikhal | bito | le'ishah
+vaymal'um | lamelekh | lehitchaten
+bamelekh | vaiyiten | lo | Sha'ul | et | Mikhal | bito | le'ishah
 
 18:28
 vaiyar | Sha'ul | vaiyeda

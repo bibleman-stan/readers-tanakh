@@ -20,8 +20,8 @@ tovim | unekhochim
 veshomea | ein | lekha | me'et | hamelekh
 
 15:4
-vaiyomer | Avshalom | mi | yesimeni | shofet | ba'aretz
-ve'alai | yavo | kol | ish | asher | yihyeh | lo | riv | umishpat
+vaiyomer | Avshalom | mi | yesimeni | shofet
+ba'aretz | ve'alai | yavo | kol | ish | asher | yihyeh | lo | riv | umishpat
 vehitzdaktiv
 
 15:5
@@ -30,9 +30,8 @@ veshalach | et | yado | vehechezik | lo
 venashak | lo
 
 15:6
-vaiya'as | Avshalom | kadavar | hazeh | lekhol | Yisra'el
-asher | yavo'u | lamishpat | el | hamelekh
-vayganev | Avshalom | et | lev
+vaiya'as | Avshalom | kadavar | hazeh | lekhol | Yisra'el | asher | yavo'u | lamishpat
+el | hamelekh | vayganev | Avshalom | et | lev
 anshei | Yisra'el
 
 15:7
@@ -87,8 +86,8 @@ maharu | lalekhet | pen | yemaher | vehisiganu | vehidiach | aleinu | et | hara'
 vehikah | ha'ir | lefi | charev
 
 15:15
-vaiyomeru | avdei | hamelekh | el | hamelekh | kekhol | asher | yivchar | adoni | hamelekh
-hineh | avadeikha
+vaiyomeru | avdei | hamelekh | el | hamelekh
+kekhol | asher | yivchar | adoni | hamelekh | hineh | avadeikha
 
 15:16
 vaiyetze | hamelekh | vekhol | beito | beraglav
@@ -101,9 +100,7 @@ vaiya'amdu | beit | hamerchak
 
 15:18
 vekhol | avadav | oerim | al | yado
-vekhol | hakereti
-vekhol | hapeleti
-vekhol | hagitim | shesh | me'ot | ish | asher | ba'u | veraglo | Migat
+vekhol | hakereti | vekhol | hapeleti | vekhol | hagitim | shesh | me'ot | ish | asher | ba'u | veraglo | Migat
 oerim | al | penei | hamelekh
 
 15:19
@@ -127,13 +124,11 @@ ki | sham | yihyeh | avdekha
 15:22
 vaiyomer | David | el | Itai
 lekh | va'avor
-vaiya'avor | Itai | hagiti | vekhol | anashav
-vekhol | hataf | asher | ito
+vaiya'avor | Itai | hagiti | vekhol | anashav | vekhol | hataf | asher | ito
 
 15:23
 vekhol | ha'aretz | bokhim | kol | gadol
-vekhol | ha'am
-oerim
+vekhol | ha'am | oerim
 vehamelekh | over | benachal | Kidron
 vekhol | ha'am | oerim | al | penei | derekh
 et | hamidbar
@@ -147,8 +142,7 @@ Evyatar | ad | tom | kol | ha'am | la'avor | min | ha'ir
 15:25
 vaiyomer | hamelekh | Letzadok
 hashev | et | aron | ha'elohim
-ha'ir
-im | emtza | chen | be'einei | Yahweh
+ha'ir | im | emtza | chen | be'einei | Yahweh
 veheshivani
 vehir'ani | oto
 ve'et | navehu

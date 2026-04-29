@@ -91,16 +91,14 @@ karov | eid | Mo'av | lavo
 vera'ato | miharah | me'od
 
 48:17
-nudu | lo | kol | sevivav
-vekhol | yode'ei | shemo
+nudu | lo | kol | sevivav | vekhol | yode'ei | shemo
 imru | eikhah | Nishbar | mateh | oz | makel
 tif'arah
 
 48:18
 redi | mikavod | vushevei | vatzama
 yoshevet
-bat | Divon
-ki | shoded | Mo'av | alah | vakh
+bat | Divon | ki | shoded | Mo'av | alah | vakh
 shichet | mivtzarayikh
 
 48:19
@@ -202,8 +200,7 @@ avadu
 
 48:37
 ki | khol | rosh | karechah
-vekhol | zakan
-geru'ah | al | kol | yadayim | gedudot | ve'al | matenayim
+vekhol | zakan | geru'ah | al | kol | yadayim | gedudot | ve'al | matenayim
 sak
 
 48:38
@@ -230,13 +227,11 @@ kelev
 ishah | metzerah
 
 48:42
-venishmad | Mo'av | me'am
-ki | al | Yahweh
+venishmad | Mo'av | me'am | ki | al | Yahweh
 higdil
 
 48:43
-pachad | vafachat
-vafach
+pachad | vafachat | vafach
 aleikha | yoshev | Mo'av
 ne'um | Yahweh
 
@@ -254,8 +249,7 @@ vekadekod | benei | sha'on
 
 48:46
 o | lekha | Mo'av
-avad | am | Kemoosh
-ki | lukechu | vaneikha | bashevi | uvenoteikha | bashivyah
+avad | am | Kemoosh | ki | lukechu | vaneikha | bashevi | uvenoteikha | bashivyah
 
 48:47
 veshavti | shevut | Mo'av | be'acharit | haiyamim

@@ -4,9 +4,7 @@ vaydaber | Yahweh | el | Mosheh | lemor
 5:2
 tzav | et | benei | Yisra'el
 vishalechu | min | hamachaneh
-kol | tzarua
-vekhol | zav
-vekhol | tame | lanafesh
+kol | tzarua | vekhol | zav | vekhol | tame | lanafesh
 
 5:3
 mizakhar | ad | nekevah | teshalechu | el | michutz | lamachaneh | teshalechum
@@ -167,8 +165,7 @@ venitma'ah
 o | ish | asher | ta'avor | alav | ruach | kin'ah
 vekine | et | ishto
 vehe'emid | et | ha'ishah | lifnei | Yahweh
-ve'asah | lah | hakohen | et | kol | hatorah
-hazot
+ve'asah | lah | hakohen | et | kol | hatorah | hazot
 
 5:31
 venikah | ha'ish | me'avon

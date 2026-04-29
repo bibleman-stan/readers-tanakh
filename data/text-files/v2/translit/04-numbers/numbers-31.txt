@@ -35,8 +35,8 @@ kol | zakhar
 
 31:8
 ve'et | malkhei | Midyan | haregu | al | chaleihem | et | Evi | ve'et | Rekem | ve'et | Tzur | ve'et | Chur | ve'et | Reva
-chameshet | malkhei | Midyan | ve'et | Bil'am | ben | Be'or
-haregu | becharev
+chameshet | malkhei | Midyan
+ve'et | Bil'am | ben | Be'or | haregu | becharev
 
 31:9
 vaiyishbu | venei | Yisra'el | et | neshei | Midyan
@@ -45,8 +45,7 @@ ve'et | kol | behemtam | ve'et | kol | miknehem | ve'et | kol | cheilam | bazazu
 
 31:10
 ve'et | kol | areihem | bemooshevotam
-ve'et | kol | tirotam
-sarefu | ba'esh
+ve'et | kol | tirotam | sarefu | ba'esh
 
 31:11
 vaiyikchu | et | kol | hashalal
@@ -94,8 +93,7 @@ ushevikhem
 
 31:20
 vekhol | beged | vekhol | keli | or | vekhol | ma'aseh | izim
-vekhol | keli | etz
-titchata'u
+vekhol | keli | etz | titchata'u
 
 31:21
 vaiyomer | El'azar | hakohen | el | anshei | hatzava
@@ -171,8 +169,7 @@ alef
 31:35
 venefesh | adam | min | hanashim | asher | lo | yade'u
 mishkav | zakhar
-kol | nefesh
-shenayim | usheloshim
+kol | nefesh | shenayim | usheloshim
 alef
 
 31:36
@@ -270,5 +267,4 @@ vaiyikach | Mosheh | Ve'el'azar | hakohen | et | hazahav
 me'et | sarei | ha'alafim
 vehame'ot
 vaiyavi'u | oto | el | ohel | mo'ed
-zikaron | livnei | Yisra'el
-lifnei | Yahweh
+zikaron | livnei | Yisra'el | lifnei | Yahweh

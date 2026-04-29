@@ -1,7 +1,6 @@
 25:1
 hadavar | asher | hayah | al | Yirmeyahu | al | kol | am | Yehudah | bashanah | harevi'it
-Lihoyakim | ben | Yoshiyahu
-melekh | Yehudah
+Lihoyakim | ben | Yoshiyahu | melekh | Yehudah
 hi | hashanah | harishonit | Linvukhadretzar | melekh | Bavel
 
 25:2
@@ -10,8 +9,7 @@ ve'el | kol | yoshevei | Yerushalim | lemor
 
 25:3
 min | shelosh | esreh | shanah | Leyoshiyahu | ven | Amon | melekh | Yehudah | ve'ad | haiyom | hazeh | zeh | shalosh | ve'esrim | shanah
-hayah | devar | Yahweh | elai | va'adaber | aleikhem | ashkeim | vedaber
-velo | shema'tem
+hayah | devar | Yahweh | elai | va'adaber | aleikhem | ashkeim | vedaber | velo | shema'tem
 
 25:4
 veshalach | Yahweh | aleikhem | et | kol | avadav | hanevi'im | hashkem | veshaloach
@@ -102,8 +100,7 @@ ve'et | kol | amo
 
 25:20
 ve'et | kol | ha'erev
-ve'et | kol | malkhei
-eretz | Ha'utz
+ve'et | kol | malkhei | eretz | Ha'utz
 ve'et | kol | malkhei | eretz | pelishtim
 ve'et | Ashkelon | ve'et | Azah | ve'et | Ekron
 ve'et | she'erit | Ashdod
@@ -150,20 +147,17 @@ ki | hineh | va'ir | asher | Nikra | shemi | aleiha | anokhi | mechel | lehara
 ve'atem
 hinakeh | tinaku
 lo | tinaku
-ki | cherev | ani | kore | al | kol | yoshevei | ha'aretz
-ne'um | Yahweh | tzeva'ot
+ki | cherev | ani | kore | al | kol | yoshevei | ha'aretz | ne'um
+Yahweh | tzeva'ot
 
 25:30
-ve'atah | tinave | aleihem | et | kol | hadevarim
-ha'eleh
+ve'atah | tinave | aleihem | et | kol | hadevarim | ha'eleh
 ve'amarta | aleihem | Yahweh | mimarom | yish'ag | umime'on | kadesho | yiten | kolo
 sha'og | yish'ag | al | navehu
-heidad | kedorekhim | ya'aneh | el | kol | yoshevei
-ha'aretz
+heidad | kedorekhim | ya'aneh | el | kol | yoshevei | ha'aretz
 
 25:31
-ba | sha'on | ad | ketzeh | ha'aretz
-ki | riv | Layahweh | bagoyim
+ba | sha'on | ad | ketzeh | ha'aretz | ki | riv | Layahweh | bagoyim
 nishpat | hu | lekhol | basar
 haresha'im | netanam | lacherev
 ne'um | Yahweh
@@ -176,8 +170,7 @@ ye'or | miyarketei | aretz
 
 25:33
 vehayu | chalei | Yahweh | baiyom | hahu | miktzeh | ha'aretz
-ve'ad | ketzeh | ha'aretz
-lo | yisafedu | velo | ye'asefu | velo | yikaveru
+ve'ad | ketzeh | ha'aretz | lo | yisafedu | velo | ye'asefu | velo | yikaveru
 ledomen | al | penei | ha'adamah | yihyu
 
 25:34

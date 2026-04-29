@@ -3,8 +3,8 @@ ve'eleh | toldot | Aharon | Umosheh
 beyom | diber | Yahweh | et | Mosheh | behar | Sinai
 
 3:2
-ve'eleh | shemot | benei | Aharon
-habekhor | Nadav | Va'avihu
+ve'eleh | shemot | benei | Aharon | habekhor | Nadav
+Va'avihu
 El'azar
 Ve'itamar
 
@@ -84,8 +84,7 @@ Gereshon
 Ukehat | Umerari
 
 3:18
-ve'eleh | shemot | benei | Gereshon | lemishpechotam | Livni
-Veshim'i
+ve'eleh | shemot | benei | Gereshon | lemishpechotam | Livni | Veshim'i
 
 3:19
 uvenei | Kehat | lemishpechotam | Amram | Veyitzhar
@@ -138,8 +137,8 @@ mishpechot | benei | Kehat | yachanu
 al | yerekh | hamishkan | teimanah
 
 3:30
-unesi | veit | av
-lemishpechot | hakehati | Elitzafan
+unesi | veit | av | lemishpechot | hakehati
+Elitzafan
 ben | Uzi'el
 
 3:31
@@ -166,15 +165,13 @@ sheshet | alafim | umatayim
 3:35
 unesi | veit | av | lemishpechot | Merari
 Tzuri'el
-ben | Avichayil
-al | yerekh | hamishkan | yachanu
+ben | Avichayil | al | yerekh | hamishkan | yachanu
 tzafonah
 
 3:36
 ufekudat | mishmeret | benei | Merari | karshei | hamishkan | uverichav
 ve'amudav | va'adanav
-vekhol | kelav
-vekhol | avodato
+vekhol | kelav | vekhol | avodato
 
 3:37
 ve'amudei | hechatzer | saviv | ve'adneihem

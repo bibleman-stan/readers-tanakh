@@ -1,6 +1,6 @@
 8:1
-bishnat | shaloosh | lemalkhut | Beleshatzar | hamelekh
-chazon | Nir'ah | elai | ani | Daniyel
+bishnat | shaloosh | lemalkhut
+Beleshatzar | hamelekh | chazon | Nir'ah | elai | ani | Daniyel
 acharei | Hanir'ah | elai | batechilah
 
 8:2
@@ -25,8 +25,7 @@ vehigdil
 
 8:5
 va'ani | hayiti | mevin | vehineh | tzefir | ha'izim | ba | min | hama'arav | al | penei | khol | ha'aretz
-ve'ein | nogea | ba'aretz
-vehatzafir
+ve'ein | nogea | ba'aretz | vehatzafir
 keren | chazut | bein | einav
 
 8:6
@@ -44,8 +43,7 @@ velo | hayah | matzil | la'ayil | miyado
 utzefir | ha'izim
 higdil | ad | me'od
 ukhe'atzemo | Nishberah | hakeren | hagedolah
-vata'alenah | chazut | arba | tachteiha | le'arba
-ruchot | hashamayim
+vata'alenah | chazut | arba | tachteiha | le'arba | ruchot | hashamayim
 
 8:9
 umin | ha'achat | mehem | yatza | keren | achat
@@ -96,9 +94,7 @@ et | hamar'eh
 vaiyavo | etzel | amedi
 uvevo'o | Niv'ati
 va'epelah | al | panai
-vaiyomer | elai | haven | ben | adam
-ki
-le'et | ketz | hechazon
+vaiyomer | elai | haven | ben | adam | ki | le'et | ketz | hechazon
 
 8:18
 uvedabero | imi | Nirdamti | al | panai | aretzah | vaiyiga | bi

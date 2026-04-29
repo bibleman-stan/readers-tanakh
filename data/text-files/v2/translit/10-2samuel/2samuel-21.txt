@@ -33,29 +33,25 @@ mehityatzev | bekhol | gevul | Yisra'el
 yenaton | lanu | shiv'ah | anashim | mibanav
 vehoka'anum | Layahweh | Begiv'at | Sha'ul
 bechir | Yahweh
-vaiyomer | hamelekh
-ani | eten
+vaiyomer | hamelekh | ani | eten
 
 21:7
 vaiyachmol | hamelekh | al | Mefi | Voshet
-ben | Yehonatan | ben | Sha'ul
-al | shevu'at | Yahweh | asher | beinotam
+ben | Yehonatan | ben | Sha'ul | al | shevu'at | Yahweh | asher | beinotam
 bein | David | uvein | Yehonatan | ben | Sha'ul
 
 21:8
 vaiyikach | hamelekh | etosh | shenei | benei | Ritzpah | vat | Aiyah | asher | yaldah | Lesha'ul
 et | Armoni
 ve'et | Mefivoshet
-ve'et | chameshet | benei | Mikhal | bat | Sha'ul | asher | yaldah | Le'adri'el | ben | Barzilai
-hamecholati
+ve'et | chameshet | benei | Mikhal | bat | Sha'ul | asher | yaldah | Le'adri'el | ben | Barzilai | hamecholati
 
 21:9
 vaiyitenem | beyad | hagiv'onim | vaiyoki'um | bahar | lifnei | Yahweh
 vaiyipelu | shiva'tayim
 yachad
 vehem | humtu | bimei | katzir | barishonim
-bitechilat
-ketzir | se'orim
+bitechilat | ketzir | se'orim
 
 21:10
 vatikach | Ritzpah | vat | Aiyah | et | hasak | vatatehu | lah | el | hatzur | mitechilat | katzir
@@ -64,8 +60,7 @@ velo | natenah | of | hashamayim | lanuach | aleihem | yomam
 ve'et | chaiyat | hasadeh | layelah
 
 21:11
-vaiyugad | Ledavid | et | asher | asetah | Ritzpah | vat | Aiyah
-pilegesh | Sha'ul
+vaiyugad | Ledavid | et | asher | asetah | Ritzpah | vat | Aiyah | pilegesh | Sha'ul
 
 21:12
 vaiyelekh | David | vaiyikach | et | atzmot | Sha'ul | ve'et | atzmot | Yehonatan | beno
@@ -84,8 +79,7 @@ hamuka'im
 vaiyikberu | et | atzmot | Sha'ul | Vihonaton | beno | be'eretz | Binyamin | Betzela | bekever | Kish | aviv
 vaiya'asu
 kol | asher | tzivah
-hamelekh
-vaiye'ater | elohim | la'aretz | acharei | khen
+hamelekh | vaiye'ater | elohim | la'aretz | acharei | khen
 
 21:15
 vatehi | od | milchamah | lapelishtim | et | Yisra'el
@@ -126,8 +120,7 @@ vegam | hu | yulad | Leharafah
 21:21
 vaycharef | et | Yisra'el
 vaiyakehu | Yehonatan
-ben | Shim'i
-achi | David
+ben | Shim'i | achi | David
 
 21:22
 et | arba'at | eleh | yuledu | Leharafah | Begat

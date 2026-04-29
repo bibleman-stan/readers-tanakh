@@ -55,10 +55,8 @@ vediber | im | Mosheh
 
 33:10
 vera'ah | khol | ha'am | et | amud | he'anan | omed
-petach | ha'ohel
-vekam | kol | ha'am | vehishtachavu
-ish
-petach | oholo
+petach | ha'ohel | vekam | kol | ha'am | vehishtachavu
+ish | petach | oholo
 
 33:11
 vediber | Yahweh | el | Mosheh | panim | el | panim
@@ -70,8 +68,7 @@ lo | yamish | mitokh | ha'ohel
 33:12
 vaiyomer | Mosheh | el | Yahweh | re'eh | atah | omer | elai | ha'al | et | ha'am | hazeh
 ve'atah | lo | hoda'tani | et | asher | tishlach
-imi | ve'atah | amarta | yeda'tikha | veshem
-vegam | matzata | chen | be'einai
+imi | ve'atah | amarta | yeda'tikha | veshem | vegam | matzata | chen | be'einai
 
 33:13
 ve'atah | im | na | matzati | chen | be'eineikha | hodi'eni | na | et | derakhekha
@@ -129,5 +126,4 @@ vesakoti | khapi | aleikha | ad | averi
 vahasiroti | et | kapi
 vera'ita
 et | achorai
-ufanai
-lo | yera'u
+ufanai | lo | yera'u

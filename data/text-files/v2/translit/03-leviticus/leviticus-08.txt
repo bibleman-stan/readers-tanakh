@@ -9,8 +9,7 @@ ve'et | par | hachatat | ve'et | shenei | ha'eilim
 ve'et | sal | hamatzot
 
 8:3
-ve'et | kol | ha'edah
-hakhel | el | petach | ohel | mo'ed
+ve'et | kol | ha'edah | hakhel | el | petach | ohel | mo'ed
 
 8:4
 vaiya'as | Mosheh
@@ -19,8 +18,7 @@ oto | vatikahel | ha'edah | el | petach | ohel | mo'ed
 
 8:5
 vaiyomer | Mosheh | el | ha'edah
-zeh | hadavar
-asher | tzivah | Yahweh | la'asot
+zeh | hadavar | asher | tzivah | Yahweh | la'asot
 
 8:6
 vaiyakrev | Mosheh | et | Aharon
@@ -110,10 +108,8 @@ vaiyakter | Mosheh | et | kol | ha'ayil | hamizbechah | olah | hu | lereiach | n
 ka'asher | tzivah | Yahweh | et | Mosheh
 
 8:22
-vaiyakrev | et | ha'ayil | hasheni
-eil | hamilu'im
-vaiyismekhu | Aharon | uvanav | et | yedeihem
-al | rosh | ha'ayil
+vaiyakrev | et | ha'ayil | hasheni | eil | hamilu'im
+vaiyismekhu | Aharon | uvanav | et | yedeihem | al | rosh | ha'ayil
 
 8:23
 vaiyishchat | vaiyikach | Mosheh | midamo
@@ -191,5 +187,5 @@ ki | khen
 tzuveiti
 
 8:36
-vaiya'as | Aharon | uvanav | et | kol | hadevarim
-asher | tzivah | Yahweh | beyad | Mosheh
+vaiya'as | Aharon | uvanav | et | kol | hadevarim | asher | tzivah | Yahweh
+beyad | Mosheh

@@ -27,12 +27,10 @@ avikha | ve'acheikha
 ba'u | eleikha
 
 47:6
-eretz | Mitzrayim | lefaneikha | hi | bemeitav | ha'aretz
-hoshev | et | avikha
+eretz | Mitzrayim | lefaneikha | hi | bemeitav | ha'aretz | hoshev | et | avikha
 ve'et | acheikha
 yeshevu | be'eretz | Goshen
-ve'im | yada'ta | veyesh | bam | anshei | chayil
-vesamtam | sarei | mikneh | al | asher | li
+ve'im | yada'ta | veyesh | bam | anshei | chayil | vesamtam | sarei | mikneh | al | asher | li
 
 47:7
 vaiyave | Yosef | et | Ya'ako | aviv
@@ -64,8 +62,9 @@ vaykhalkel | Yosef | et | aviv | ve'et | echav
 ve'et | kol | beit | aviv | lechem | lefi | hataf
 
 47:13
-velechem | ein | bekhol | ha'aretz
-ki | khaved | hara'av | me'od | vatelah | eretz | Mitzrayim | ve'eretz | Kena'an | mipenei | hara'av
+velechem | ein | bekhol | ha'aretz | ki | khaved | hara'av
+me'od | vatelah | eretz | Mitzrayim | ve'eretz | Kena'an
+mipenei | hara'av
 
 47:14
 vaylaket | Yosef | et | kol | hakesef | hanimtza | ve'eretz | Mitzrayim | uve'eretz | Kena'an
@@ -141,8 +140,7 @@ vehayinu | avadim | lefar'oh
 
 47:26
 vaiyasem | otah | Yosef | lechok | ad | haiyom | hazeh | al | admat | Mitzrayim | lefar'oh
-lachomesh
-rak | admat | hakohanim | levadam
+lachomesh | rak | admat | hakohanim | levadam
 lo | hayetah | lefar'oh
 
 47:27

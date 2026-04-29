@@ -1,14 +1,11 @@
 16:1
 vaiyikach | Korach
-ben | Yitzhar | ben | Kehat
-ben | Levi
-Vedatan | Va'aviram | benei | Eli'av | Ve'on | ben | Pelet
-benei | Re'uven
+ben | Yitzhar | ben | Kehat | ben | Levi
+Vedatan | Va'aviram | benei | Eli'av | Ve'on | ben | Pelet | benei | Re'uven
 
 16:2
 vaiyakumu | lifnei | Mosheh
-va'anashim | mibenei | Yisra'el
-chamishim | umatayim
+va'anashim | mibenei | Yisra'el | chamishim | umatayim
 nesi'ei | edah | keri'ei | mo'ed
 anshei | shem
 
@@ -54,13 +51,11 @@ vela'amod | lifnei | ha'edah | lesharetam
 
 16:10
 vaiyakrev | otekha
-ve'et | kol | acheikha | venei | Levi
-itakh | uvikashtem
+ve'et | kol | acheikha | venei | Levi | itakh | uvikashtem
 gam | kehunah
 
 16:11
-lakhen | atah | vekhol | adatekha
-hano'adim | al | Yahweh
+lakhen | atah | vekhol | adatekha | hano'adim | al | Yahweh
 Ve'aharon | mah | hu
 ki | tilonu | alav
 
@@ -90,8 +85,7 @@ et | achad | mehem
 
 16:16
 vaiyomer | Mosheh | el | Korach
-atah | vekhol | adatekha
-heyu
+atah | vekhol | adatekha | heyu
 lifnei | Yahweh
 atah | vahem | Ve'aharon | machar
 
@@ -153,8 +147,7 @@ vetapam
 vaiyomer | Mosheh
 bezot | tede'un
 ki | Yahweh | shelachani | la'asot
-et | kol | hama'asim
-ha'eleh
+et | kol | hama'asim | ha'eleh
 ki | lo | milibi
 
 16:29
@@ -170,8 +163,8 @@ she'olah | vida'tem
 ki | ni'atzu | ha'anashim | ha'eleh | et | Yahweh
 
 16:31
-vayhi | kekhaloto | ledaber | et | kol | hadevarim
-ha'eleh | vatibaka | ha'adamah | asher | tachteihem
+vayhi | kekhaloto | ledaber | et | kol | hadevarim | ha'eleh
+vatibaka | ha'adamah | asher | tachteihem
 
 16:32
 vatiftach | ha'aretz | et | piha

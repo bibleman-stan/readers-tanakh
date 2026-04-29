@@ -1,25 +1,18 @@
 7:1
 ve'achar | hadevarim | ha'eleh | bemalkhut
-Artachshast | melekh | Paras
-Ezra | ben | Serayah
-ben | Azaryah
-ben | Chilkiyah
+Artachshast | melekh | Paras | Ezra | ben | Serayah | ben | Azaryah | ben | Chilkiyah
 
 7:2
-ben | Shalum | ben | Tzadok
-ben | Achituv
+ben | Shalum | ben | Tzadok | ben | Achituv
 
 7:3
-ben | Amaryah | ven | Azaryah
-ben | Merayot
+ben | Amaryah | ven | Azaryah | ben | Merayot
 
 7:4
-ben | Zerachyah | ven | Uzi
-ben | Buki
+ben | Zerachyah | ven | Uzi | ben | Buki
 
 7:5
-ben | Avishua | ben | Pinechas | ben | El'azar
-ben | Aharon | hakohen
+ben | Avishua | ben | Pinechas | ben | El'azar | ben | Aharon | hakohen
 harosh
 
 7:6
@@ -39,8 +32,7 @@ vaiyavo | Yerushalim | bachodesh | hachamishi | hi | shenat | hashevi'it | lamel
 ki | be'echad | lachodesh | harishon | hu | yesud
 hama'alah | Mibavel
 uve'echad | lachodesh | hachamishi | ba | el | Yerushalim
-keyad | elohav
-hatovah | alav
+keyad | elohav | hatovah | alav
 
 7:10
 ki | Ezra | hekhin | levavo
@@ -120,8 +112,7 @@ di | la | khetav
 
 7:23
 kol | di | min | ta'am | elah | shemaiya
-yit'aved | adrazda | leveit
-elah | shemaiya
+yit'aved | adrazda | leveit | elah | shemaiya
 di | lemah | leheve | ketzaf | al | malkhut | malka | uvenohi
 
 7:24
@@ -131,8 +122,7 @@ mindah | velo | vahalakh | la | shalit | lemirme | aleihom
 
 7:25
 ve'ant | Ezra | kechakhemat | elahakh | di | vidokh | meni | shafetin | vedaiyanin | di | lehevon | da'anin | lekhol | amah | di | ba'avar | naharah
-lekhol | yade'ei
-datei | elahakh
+lekhol | yade'ei | datei | elahakh
 vedi | la | yada
 tehod'un
 
@@ -150,7 +140,6 @@ et | beit | Yahweh | asher | Birushalim
 
 7:28
 ve'alai | hitah | chesed | lifnei | hamelekh | veyo'atzav
-ulekhol | sarei | hamelekh
-hagiborim
+ulekhol | sarei | hamelekh | hagiborim
 va'ani | hitchazakti | keyad | Yahweh | elohai | alai | va'ekbetzah | Miyisra'el | rashim
 la'alot | imi

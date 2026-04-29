@@ -1,6 +1,5 @@
 44:1
-hadavar | asher | hayah | el | Yirmeyahu | el | kol | haiyehudim
-haiyoshevim | be'eretz | Mitzrayim
+hadavar | asher | hayah | el | Yirmeyahu | el | kol | haiyehudim | haiyoshevim | be'eretz | Mitzrayim
 haiyoshevim | Bemigdol | Uvetachpanches | Uvenof | uve'eretz | Patros
 lemor
 
@@ -135,8 +134,7 @@ kaiyom | hazeh
 44:24
 vaiyomer | Yirmeyahu | el | kol | ha'am
 ve'el | kol | hanashim
-shim'u | devar | Yahweh
-kol | Yehudah | asher | be'eretz | Mitzrayim
+shim'u | devar | Yahweh | kol | Yehudah | asher | be'eretz | Mitzrayim
 
 44:25
 koh | amar | Yahweh | tzeva'ot | elohei | Yisra'el | lemor | atem | unesheikhem | vatedaberenah | befikhem | uvideikhem | miletem | lemor
@@ -146,9 +144,7 @@ hakeim | takimenah | et | nidreikhem
 ve'asoh | ta'aseinah | et | nidreikhem
 
 44:26
-lakhen | shim'u | devar | Yahweh
-kol | Yehudah
-haiyoshevim | be'eretz | Mitzrayim
+lakhen | shim'u | devar | Yahweh | kol | Yehudah | haiyoshevim | be'eretz | Mitzrayim
 hini | Nishba'ti | bishmi | hagadol | amar | Yahweh
 im | yihyeh | od | shemi | nikra | befi | kol | ish | Yehudah | omer | chai | Adonai | Yahweh
 bekhol | eretz | Mitzrayim
@@ -172,7 +168,6 @@ ki | kom | yakumu | devarai | aleikhem | lera'ah
 
 44:30
 koh | amar | Yahweh | hini | noten | et | par'oh | Chafera | melekh | Mitzrayim | beyad | oyevav
-uveyad
-mevakshei | nafsho
+uveyad | mevakshei | nafsho
 ka'asher | natati | et | Tzidkiyahu | melekh | Yehudah | beyad | Nevukhadretzar | melekh | Bavel | oyevo
 umevakesh | nafsho

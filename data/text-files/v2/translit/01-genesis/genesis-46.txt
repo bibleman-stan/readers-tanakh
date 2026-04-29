@@ -37,8 +37,7 @@ vekhol | zar'o | ito
 
 46:7
 banav | uvenei | vanav | ito | benotav | uvenot | banav
-vekhol | zar'o
-hevi | ito | Mitzrayemah
+vekhol | zar'o | hevi | ito | Mitzrayemah
 
 46:8
 ve'eleh | shemot | benei | Yisra'el | haba'im | Mitzraymah
@@ -66,8 +65,7 @@ Kehat | Umerari
 uvenei | Yehudah | Er | Ve'onan | Veshelah
 Vaferetz | Vazarach
 vaiyamot | Er | Ve'onan | be'eretz | Kena'an
-vaiyihyu | venei | Feretz
-Chetzron | Vechamul
+vaiyihyu | venei | Feretz | Chetzron | Vechamul
 
 46:13
 uvenei | Yisoshkhar | Tola | Ufuvah | Veyov | Veshimron
@@ -95,8 +93,7 @@ Chever | Umalki'el
 
 46:18
 eleh | benei | Zilpah
-asher | natan | Lavan
-Lele'ah | vito
+asher | natan | Lavan | Lele'ah | vito
 vateled | et | eleh | Leya'ako
 shesh | esreh | nafesh
 
@@ -119,24 +116,20 @@ eleh | benei | Rachel | asher | yulad | Leya'ako
 kol | nefesh | arba'ah | asar
 
 46:23
-uvenei | Dan
-Chushim
+uvenei | Dan | Chushim
 
 46:24
 uvenei | Naftali | Yachtze'el | Veguni | Veyetzer | Veshilem
 
 46:25
 eleh | benei | Vilhah
-asher | natan | Lavan
-Lerachel | bito
+asher | natan | Lavan | Lerachel | bito
 vateled | et | eleh | Leya'ako
 kol | nefesh | shiv'ah
 
 46:26
 kol | hanefesh | haba'ah | Leya'ako | Mitzraymah | yotze'ei | yerekho | milevad
-neshei | venei | Ya'ako
-kol | nefesh
-shishim | vashesh
+neshei | venei | Ya'ako | kol | nefesh | shishim | vashesh
 
 46:27
 uvenei | Yosef | asher | yulad | lo | Vemitzrayim
@@ -165,8 +158,7 @@ ki | odkha | chai
 vaiyomer | Yosef | el | echav | ve'el | beit | aviv
 e'eleh
 ve'agidah | lefar'oh
-ve'omerah | elav | achai | uveit | avi | asher | be'eretz | Kena'an
-ba'u | elai
+ve'omerah | elav | achai | uveit | avi | asher | be'eretz | Kena'an | ba'u | elai
 
 46:32
 veha'anashim | ro'ei | tzon
@@ -175,10 +167,8 @@ vetzonam | uvekaram | vekhol | asher | lahem
 hevi'u
 
 46:33
-vehayah
-ki | yikra | lakhem
-par'oh
-ve'amar | mah | ma'aseikhem
+vehayah | ki | yikra | lakhem
+par'oh | ve'amar | mah | ma'aseikhem
 
 46:34
 va'amartem | anshei | mikneh | hayu | avadeikha | mine'ureinu | ve'ad | atah

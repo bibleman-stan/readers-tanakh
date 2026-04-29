@@ -73,10 +73,8 @@ habarad
 
 10:13
 vaiyet | Mosheh | et | matehu | al | eretz | Mitzrayim
-Vayahweh | nihag | ruach | kadim | ba'aretz
-kol | haiyom | hahu
-vekhol | halayelah
-haboker | hayah
+Vayahweh | nihag | ruach | kadim | ba'aretz | kol | haiyom | hahu
+vekhol | halayelah | haboker | hayah
 veruach | hakadim | nasa | et | ha'arbeh
 
 10:14
@@ -157,8 +155,9 @@ shamah
 vaychazek | Yahweh | et | lev | par'oh | velo | avah | leshalecham
 
 10:28
-vaiyomer | lo | far'oh | lekh | me'alai | hishamer | lekha | el | tosef | re'ot | panai
-ki | beyom | re'otekha | fanai | tamut
+vaiyomer | lo | far'oh | lekh | me'alai
+hishamer | lekha | el | tosef | re'ot | panai | ki | beyom | re'otekha | fanai
+tamut
 
 10:29
 vaiyomer | Mosheh

@@ -11,14 +11,12 @@ usheloshim | amah
 komato
 
 6:3
-veha'ulam | al | penei | heikhal | habayit
-esrim | amah | areko | al | penei
-rochav | habayit
-eser | ba'amah | rachebo | al | penei | habayit
+veha'ulam | al | penei | heikhal | habayit | esrim | amah | areko
+al | penei
+rochav | habayit | eser | ba'amah | rachebo | al | penei | habayit
 
 6:4
-vaiya'as | labayit
-chalonei
+vaiya'as | labayit | chalonei
 shekufim | atumim
 
 6:5
@@ -41,8 +39,7 @@ Nivnah | umakavot | vehagarzen | kol | keli | varzel
 lo | Nishma | babayit | behibanoto
 
 6:8
-petach | hatzela | hatikhonah | el | ketef | habayit
-haymanit
+petach | hatzela | hatikhonah | el | ketef | habayit | haymanit
 uvelulim | ya'alu | al | hatikhonah | umin | hatikhonah | el | hashelishim
 
 6:9
@@ -78,8 +75,7 @@ vaykhalehu
 6:15
 vaiyiven | et | kirot | habayit | mibaytah | betzal'ot | arazim
 mikarka | habayit | ad | kirot | hasipun
-tzipah | etz | mibayit
-vaytzaf | et | karka | habayit | betzal'ot | beroshim
+tzipah | etz | mibayit | vaytzaf | et | karka | habayit | betzal'ot | beroshim
 
 6:16
 vaiyiven | et | esrim | amah | miyarkotei | habayit | betzal'ot | arazim
@@ -118,8 +114,7 @@ vaytzapehu
 zahav
 
 6:22
-ve'et | kol | habayit | tzipah | zahav | ad | tom | kol | habayit
-vekhol | hamizbeach | asher | ladevir
+ve'et | kol | habayit | tzipah | zahav | ad | tom | kol | habayit | vekhol | hamizbeach | asher | ladevir
 tzipah | zahav
 
 6:23
@@ -147,9 +142,8 @@ hakeruv | hasheni
 
 6:27
 vaiyiten | et | hakeruvim | betokh | habayit | hapenimi | vaiyifresu | et | kanfei | hakeruvim
-vatiga | kenaf | ha'echad | bakir | ukhenaf | hakeruv | hasheni
-noga'at | bakir | hasheni | vekhanfeihem | el | tokh | habayit
-noge'ot | kanaf | el | kanaf
+vatiga | kenaf | ha'echad | bakir | ukhenaf | hakeruv | hasheni | noga'at
+bakir | hasheni | vekhanfeihem | el | tokh | habayit | noge'ot | kanaf | el | kanaf
 
 6:28
 vaytzaf | et | hakeruvim
@@ -161,8 +155,7 @@ ufeturei
 tzitzim | milifnim | velachitzon
 
 6:30
-ve'et | karka | habayit
-tzipah | zahav | lifnimah | velachitzon
+ve'et | karka | habayit | tzipah | zahav | lifnimah | velachitzon
 
 6:31
 ve'et | petach | hadevir
@@ -206,7 +199,5 @@ Ziv
 
 6:38
 uvashanah | ha'achat | esreh | beyerach | Bul | hu | hachodesh | hashemini
-kalah | habayit | lekhol | devarav
-ulekhol | mishpatov
-vaiyivnehu
+kalah | habayit | lekhol | devarav | ulekhol | mishpatov | vaiyivnehu
 sheva | shanim

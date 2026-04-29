@@ -45,8 +45,7 @@ yechat | Efrayim | me'am
 7:9
 verosh | Efrayim | Shomeron
 verosh | Shomeron
-ben | Remalyahu
-im | lo | ta'aminu
+ben | Remalyahu | im | lo | ta'aminu
 ki
 lo | te'amenu
 
@@ -76,8 +75,8 @@ gam | et | elohai
 7:14
 lakhen | yiten | Adonai | hu | lakhem
 ot
-hineh | ha'almah | harah | veyoledet | ben
-vekarat | shemo | Imanu | El
+hineh | ha'almah | harah | veyoledet | ben | vekarat | shemo
+Imanu | El
 
 7:15
 chem'ah | udevash
@@ -110,8 +109,8 @@ vegam | et | hazakan
 tispeh
 
 7:21
-vehayah
-baiyom | hahu | yechaiyeh | ish | eglat | bakar
+vehayah | baiyom | hahu
+yechaiyeh | ish | eglat | bakar
 ushetei | tzon
 
 7:22

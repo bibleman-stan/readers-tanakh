@@ -4,8 +4,7 @@ vayhi | devar | Yahweh | elai | lemor
 21:2
 ben | adam | sim | paneikha | derekh | teimanah
 vehatef | el | darom
-vehinave | el | ya'ar | hasadeh
-Negev
+vehinave | el | ya'ar | hasadeh | Negev
 
 21:3
 ve'amarta | leya'ar | Hanegev
@@ -15,9 +14,8 @@ koh | amar | Adonai | Yahweh | hini | matzit | bekha | esh | ve'akhelah | vekha 
 venitzrevu | vah | kol | panim | minegev | tzafonah
 
 21:4
-vera'u | kol | basar
-ki | ani | Yahweh | bi'artiha | lo
-tikhbeh
+vera'u | kol | basar | ki | ani | Yahweh
+bi'artiha | lo | tikhbeh
 
 21:5
 va'omar
@@ -49,8 +47,7 @@ hotzeti | charbi | mita'rah | lo | tashuv
 od
 
 21:11
-ve'atah | ven | adam
-he'anach | beshivron | matenayim | uvimrirut
+ve'atah | ven | adam | he'anach | beshivron | matenayim | uvimrirut
 te'anach | le'eineihem
 
 21:12
@@ -64,8 +61,8 @@ ne'um | Adonai | Yahweh
 vayhi | devar | Yahweh | elai | lemor
 
 21:14
-ben | adam
-hinave | ve'amarta | koh | amar | Adonai | emor
+ben | adam | hinave | ve'amarta
+koh | amar | Adonai | emor
 cherev | cherev | huchadah
 vegam | merutah
 
@@ -79,8 +76,7 @@ vaiyiten | otah | lemaretah | litpos | bakaf
 hi | huchadah | cherev | vehi | moratah | latet | otah | beyad | horeg
 
 21:17
-ze'ak | veheilel | ben | adam
-ki | hi | haitah | ve'ami
+ze'ak | veheilel | ben | adam | ki | hi | haitah | ve'ami
 hi
 bekhol | nesi'ei | Yisra'el | megurei | el | cherev | hayu | et | ami
 lakhen | sefok | el | yarekh
@@ -91,16 +87,14 @@ im | gam | shevet | mo'eset | lo | yihyeh
 ne'um | Adonai | Yahweh
 
 21:19
-ve'atah | ven | adam
-hinave
+ve'atah | ven | adam | hinave
 vehakh | kaf | el | kaf
 vetikafel | cherev | shelishitah | cherev | chalalim
 hi | cherev | chalal | hagadol
 hachoderet | lahem
 
 21:20
-lema'an | lamug | lev | veharbeh | hamikhsholim | al | kol | sha'areihem
-natati
+lema'an | lamug | lev | veharbeh | hamikhsholim | al | kol | sha'areihem | natati
 ivchat | charev
 ach | asuyah | levarak | me'utah | letavach
 
@@ -195,7 +189,7 @@ afiach | alayikh | unetatikh | beyad | anashim | bo'arim
 charashei | mashchit
 
 21:37
-la'esh | tihyeh | le'okhlah | damekh | yihyeh | betokh | ha'aretz
-lo | tizakheri
+la'esh | tihyeh | le'okhlah | damekh | yihyeh
+betokh | ha'aretz | lo | tizakheri
 ki | ani | Yahweh
 dibarti

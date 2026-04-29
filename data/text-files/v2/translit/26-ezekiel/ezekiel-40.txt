@@ -1,8 +1,7 @@
 40:1
 be'esrim | vechamesh | shanah | legalutenu | berosh | hashanah | be'asor | lachodesh | be'arba | esreh | shanah
 achar | asher | huketah
-ha'ir
-be'etzem | haiyom | hazeh | hayetah | alai | yad | Yahweh
+ha'ir | be'etzem | haiyom | hazeh | hayetah | alai | yad | Yahweh
 vaiyave | oti
 shamah
 
@@ -72,8 +71,7 @@ veshesh | amot | mipo
 40:13
 vaiyamod | et | hasha'ar | migag | hata | legago
 rochav
-esrim | vechamesh
-amot
+esrim | vechamesh | amot
 petach
 neged | patach
 
@@ -170,8 +168,7 @@ ha'eleh
 40:29
 veta'ov | ve'eilov | ve'elamov | kamidot | ha'eleh
 vechalonot | lo | ule'elamov | saviv | saviv | chamishim | amah | orekh | verochav
-esrim | vechamesh
-amot
+esrim | vechamesh | amot
 
 40:30
 ve'elamot | saviv | saviv | orekh | chamesh | ve'esrim | amah
@@ -254,8 +251,7 @@ umichutzah | lasha'ar | hapenimi | lishkhot | sharim | bechatzer | hapenimi | as
 ufeneihem
 derekh | hadarom
 echad | el | ketef | sha'ar | hakadim
-penei
-derekh | hatzafon
+penei | derekh | hatzafon
 
 40:45
 vaydaber | elai | zoh | halishkah | asher | paneiha | derekh | hadarom

@@ -1,8 +1,7 @@
 15:1
 bishnat | esrim | vasheva | shanah | Leyarave'am
 melekh | Yisra'el
-malakh | Azaryah | ven | Amatzyah
-melekh | Yehudah
+malakh | Azaryah | ven | Amatzyah | melekh | Yehudah
 
 15:2
 ben | shesh | esreh | shanah | hayah | vemalekho
@@ -34,8 +33,8 @@ lemalkhei | Yehudah
 
 15:7
 vaiyishkav | Azaryah | im | avotav
-vaiyikberu | oto | im | avotav
-be'ir | David | vaiyimlokh | Yotam | beno
+vaiyikberu | oto | im | avotav | be'ir | David
+vaiyimlokh | Yotam | beno
 tachtav
 
 15:8
@@ -70,8 +69,8 @@ al | kise | Yisra'el
 vayhi | khen
 
 15:13
-Shalum | ben | Yaveish | malakh
-bishnat | sheloshim | vatesha | shanah | Le'uziyah
+Shalum | ben | Yaveish | malakh | bishnat | sheloshim | vatesha | shanah
+Le'uziyah
 melekh | Yehudah
 vaiyimlokh | yerach | yamim | Beshomeron
 
@@ -205,8 +204,7 @@ asah
 15:35
 rak | habamot | lo | saru
 od | ha'am | mezabechim | umekaterim | babamot
-hu | banah | et | sha'ar | beit | Yahweh
-ha'elyon
+hu | banah | et | sha'ar | beit | Yahweh | ha'elyon
 
 15:36
 veyeter | divrei | Yotam | asher | asah

@@ -22,9 +22,7 @@ vaiye'esof | David | et | benei | Aharon
 ve'et | halviyim
 
 15:5
-livnei
-Kehat
-Uri'el | hasar
+livnei | Kehat | Uri'el | hasar
 ve'echav | me'ah | ve'esrim
 
 15:6
@@ -32,9 +30,7 @@ livnei | Merari | Asayah | hasar
 ve'echav | matayim | ve'esrim
 
 15:7
-livnei
-Gereshom
-Yo'el | hasar
+livnei | Gereshom | Yo'el | hasar
 ve'echav | me'ah | usheloshim
 
 15:8
@@ -43,14 +39,11 @@ Shema'yah | hasar
 ve'echav | matayim
 
 15:9
-livnei
-Chevron
-Eli'el | hasar
+livnei | Chevron | Eli'el | hasar
 ve'echav | shemonim
 
 15:10
-livnei
-Uzi'el
+livnei | Uzi'el
 Aminadav | hasar
 ve'echav | me'ah | usheneim | asar
 
@@ -91,8 +84,7 @@ bikhlei | shir | nevalim | vekhinorot | umetziltayim | mashmi'im | leharim | bek
 15:17
 vaiya'amidu | halviyim | et | Heiman | ben | Yo'el | umin | echav
 Asaf
-ben | Berekhyahu
-umin | benei | Merari | acheihem
+ben | Berekhyahu | umin | benei | Merari | acheihem
 Eitan
 ben | Kushayahu
 

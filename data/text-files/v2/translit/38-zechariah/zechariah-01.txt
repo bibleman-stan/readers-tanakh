@@ -1,7 +1,7 @@
 1:1
 bachodesh | hashemini | bishnat | shetayim | Ledareyavesh
-hayah | devar | Yahweh | el | Zekharyah | ben | Berekhyah
-ben | Ido | hanavi | lemor
+hayah | devar | Yahweh | el | Zekharyah | ben | Berekhyah | ben | Ido | hanavi
+lemor
 
 1:2
 katzaf | Yahweh | al | avoteikhem
@@ -36,8 +36,8 @@ asah | itanu
 1:7
 beyom | esrim | ve'arba'ah | le'ashtei | asar | chodesh | hu | chodesh | Shevat
 bishnat | shetayim | Ledareyavesh
-hayah | devar | Yahweh | el | Zekharyah | ben | Berekhyahu
-ben | Ido | hanavi | lemor
+hayah | devar | Yahweh | el | Zekharyah | ben | Berekhyahu | ben | Ido | hanavi
+lemor
 
 1:8
 ra'iti | halaylah | vehineh | ish | rokhev | al | sus | adom
@@ -57,9 +57,7 @@ eleh | asher | shalach | Yahweh | lehithalekh | ba'aretz
 1:11
 vaiya'anu | et | mal'akh | Yahweh | ha'omed | bein | hahadasim
 vaiyomeru
-hithalakhnu | va'aretz
-vehineh | khol | ha'aretz
-yoshevet | veshokatet
+hithalakhnu | va'aretz | vehineh | khol | ha'aretz | yoshevet | veshokatet
 
 1:12
 vaiya'an | mal'akh | Yahweh | vaiyomar
