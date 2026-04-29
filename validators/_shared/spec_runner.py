@@ -135,9 +135,21 @@ def _check_morphology(tok: str, morph: str) -> bool:
         return not M.is_finite_verb_token(tok) and not M._matches_prep_only(tok) if hasattr(M, "_matches_prep_only") else not M.is_finite_verb_token(tok)
     if morph == "prep":
         s = M.skel(tok)
-        return s in M.PREP_SKELETONS or (
-            len(s) >= 2 and s[0] in M.BOUND_PREP_PREFIXES and not M.is_finite_verb_skel(s)
-        )
+        if s in M.PREP_SKELETONS:
+            return True
+        if len(s) >= 2 and s[0] in M.BOUND_PREP_PREFIXES and not M.is_finite_verb_skel(s):
+            if s[:2] in M.NON_PREP_2CHAR_PREFIX:
+                return False
+            return True
+        # vav-prefix tolerance — וְ + bound-prep + stem (e.g., וְלַחֹשֶׁךְ, וּבֵין)
+        # Inner stem must not be a finite verb (rules out vav-conjunction + verb).
+        if len(s) >= 3 and s[0] == "ו" and s[1] in M.BOUND_PREP_PREFIXES:
+            inner = s[1:]
+            if inner not in M.QATAL_COMMON and not M.is_finite_verb_skel(inner):
+                if inner[:2] in M.NON_PREP_2CHAR_PREFIX:
+                    return False
+                return True
+        return False
     if morph == "compound_prep":
         return M.skel(tok) in M.PREP_SKELETONS
     if morph == "bare_participle":
@@ -260,6 +272,21 @@ def _g_cross_verse(l_n, l_n1, ctx):
     return False
 
 
+@_register_guard("prev_line_incomplete")
+def _g_prev_incomplete(l_n, l_n1, ctx):
+    """Fire (block emission) if line N-1 lacks a finite verb.
+
+    Use case: distinguishes genuine fronting (prev clause is complete; line N
+    is a fronted constituent for the NEXT clause) from stranded modifier
+    (prev clause is incomplete; line N is extending it, not fronting).
+    Without prev context (verse start), don't block — let other guards decide.
+    """
+    prev = ctx.get("prev_line", "")
+    if not prev:
+        return False
+    return not M.has_finite_verb(prev)
+
+
 @_register_guard("m2_pp_prep_mismatch")
 def _g_m2_prep(l_n, l_n1, ctx):
     """Block emission when next-line prep is not in the M2 verb's allowed-prep set.
@@ -364,11 +391,13 @@ class SpecRunner:
                 l_n = lines[i]
                 l_n1 = lines[i + 1]
                 lookahead = lines[i + 2] if i + 2 < len(lines) else ""
+                prev_line = lines[i - 1] if i >= 1 else ""
                 ctx = {
                     "book": book_dir.name,
                     "chapter": chapter,
                     "verse": verse,
                     "lookahead": lookahead,
+                    "prev_line": prev_line,
                     "line_idx_in_verse": i,
                 }
                 for spec in self.specs:

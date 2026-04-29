@@ -667,9 +667,14 @@ def process_chapter(
     v2_line_count = len(mutated_lines)
 
     # Divergence guard — only relevant when not dry-running and v2/he already exists.
+    # When spec_runner (apply_specs.py) has mutated v2/he beyond what v1 + adopted
+    # validators can re-derive, PRESERVE the existing v2/he and continue the cascade.
+    # The downstream pipeline (propagate_editorial_layers, glosses, build) reads v2
+    # as input, so preserving it is the correct behavior — not an abort.
     diverged = False
     divergent_lines: list[str] = []
     v2_file = v2_path_for(chapter_file, book)
+    should_write_v2 = True
 
     if not dry_run and not report_only and v2_file.exists():
         diverged, divergent_lines = check_divergence(
@@ -677,29 +682,11 @@ def process_chapter(
         )
         if diverged and not force:
             print(
-                f"  [ABORT] {chapter_stem}: v2/he file exists with hand-edits "
-                f"not derivable from v1 + mechanical apply.",
+                f"  [PRESERVE] {chapter_stem}: v2/he has merges beyond v1+adopted_validators "
+                f"({len(divergent_lines)} divergent lines). Keeping existing v2/he as source of truth.",
                 file=sys.stderr,
             )
-            print(
-                f"    Use --force to override (DESTRUCTIVE — hand-edits will be lost).",
-                file=sys.stderr,
-            )
-            print("    Divergent lines:", file=sys.stderr)
-            for dl in divergent_lines[:20]:  # Limit output
-                print(dl, file=sys.stderr)
-            if len(divergent_lines) > 20:
-                print(f"    ... ({len(divergent_lines) - 20} more lines)", file=sys.stderr)
-            return {
-                "chapter": chapter_stem,
-                "v1_lines": v1_line_count,
-                "v2_lines": v2_line_count,
-                "applied": len(applied_changes),
-                "review": len(review_findings),
-                "conflicts": len(conflicts),
-                "aborted": True,
-                "diverged": True,
-            }
+            should_write_v2 = False  # don't overwrite spec-driven merges
 
     report_text = build_chapter_report(
         book=book,
@@ -712,7 +699,7 @@ def process_chapter(
         timestamp=timestamp,
     )
 
-    if not dry_run and not report_only:
+    if not dry_run and not report_only and should_write_v2:
         # Write v2/he output.
         out_dir = V2_DIR / book
         out_dir.mkdir(parents=True, exist_ok=True)

@@ -164,8 +164,49 @@ def is_finite_verb_skel(skeleton: str) -> bool:
     return False
 
 
+HOLAM = "ֹ"  # ֹ — niqqud holam (signals qal active participle CōCēC pattern)
+
+
+def _first_vowel_is_holam(token: str) -> bool:
+    """True if the first niqqud after the first Hebrew consonant is holam.
+
+    Distinguishes qal active participle (CōCēC, e.g., עֹשֶׂה "doing/maker")
+    from qal qatal (CāCaC, e.g., עָשָׂה "he did") — same consonant skeleton,
+    different finite/non-finite status. Holam-first is participle (or infinitive-
+    construct without prefix), neither of which is finite.
+    """
+    found_first_consonant = False
+    for ch in token:
+        cp = ord(ch)
+        if 0x05D0 <= cp <= 0x05EA:  # Hebrew letter
+            if found_first_consonant:
+                return False  # hit second consonant before any vowel
+            found_first_consonant = True
+        elif found_first_consonant and 0x05B0 <= cp <= 0x05BD:  # niqqud
+            return cp == 0x05B9
+    return False
+
+
 def is_finite_verb_token(token: str) -> bool:
-    """True if the token (raw, with niqqud/te'amim) parses as a finite verb."""
+    """True if the token (raw, with niqqud/te'amim) parses as a finite verb.
+
+    Niqqud-aware participle exclusion: holam after first consonant marks the
+    qal active participle (or qal infinitive construct), neither finite —
+    rules out עֹשֶׂה, רֹמֵשׂ, יֹשֵׁב, etc. that share skel with their qatal cousins.
+
+    Maqqef-joined compounds: check only the first sub-token. The skel() of a
+    full compound like אֶת־כָּל־יֶרֶק collapses to "אתכלירק" which spuriously
+    matches the YIQTOL-prefix heuristic via the leading א. Splitting at maqqef
+    isolates the head morpheme (here the DO marker את) so the check sees only
+    "את", which correctly fails the prefix-verb test (length-2).
+    """
+    if MAQQEF in token:
+        first_sub = token.split(MAQQEF, 1)[0]
+        if _first_vowel_is_holam(first_sub):
+            return False
+        return is_finite_verb_skel(skel(first_sub))
+    if _first_vowel_is_holam(token):
+        return False
     return is_finite_verb_skel(skel(token))
 
 
