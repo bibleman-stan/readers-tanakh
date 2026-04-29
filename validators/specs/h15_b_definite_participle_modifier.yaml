@@ -1,0 +1,97 @@
+name: h15_b_definite_participle_modifier
+rule: H15
+subcase: definite_participle_modifier
+severity: STRONG-MERGE-CANDIDATE
+description: |
+  Asyndetic relative clause: article-marked participle on line N+1 modifies
+  the article-marked noun ending line N. No overt relative pronoun (אֲשֶׁר);
+  Hebrew uses ה + participle for restrictive attribution.
+
+  Closed-list approach (per canon §1 hybrid policy — niqqud-blind, lexical):
+  catches the most common ה-prefixed qal active participles + m-prefix
+  participles in narrative.
+
+  Audited 2026-04-29 (Stan flag, Gen 1:26):
+    line N:    וְיִרְדּוּ ... וּבְכָל־הָרֶמֶשׂ
+    line N+1:  הָרֹמֵשׂ עַל־הָאָרֶץ׃
+    merge:     ... וּבְכָל־הָרֶמֶשׂ הָרֹמֵשׂ עַל־הָאָרֶץ׃
+
+trigger:
+  line_n1_first_token:
+    skeleton_in:
+      # Qal active participle (CoCeC pattern, ה-prefix)
+      - "הרמש"      # the creeping
+      - "הרומש"
+      - "הרמשת"
+      - "הרומשת"
+      - "ההלך"      # the going
+      - "ההלכת"
+      - "היושב"     # the sitting/dwelling
+      - "היושבת"
+      - "היושבים"
+      - "הבא"       # the coming
+      - "הבאה"
+      - "הבאים"
+      - "היורד"     # the descending
+      - "היורדת"
+      - "היורדים"
+      - "העלה"      # the going up
+      - "העלים"
+      - "הזרע"      # the sowing
+      - "הזורע"
+      - "השמע"      # the hearing
+      - "השומע"
+      - "הראה"      # the seeing
+      - "הרואה"
+      - "האמר"      # the saying
+      - "האמרים"
+      - "האכל"      # the eating
+      - "האכלים"
+      - "השתה"      # the drinking
+      - "השתים"
+      - "הקרא"      # the calling/reading
+      - "הקרב"      # the approaching
+      - "הקרבים"
+      - "העשה"      # the doing/making
+      - "העשים"
+      - "העושה"
+      - "השרת"      # the serving
+      - "השמר"      # the keeping/guarding
+      - "השמרים"
+      - "הנשא"      # the carrying
+      - "הנשאים"
+      - "הלוקח"     # the taking
+      - "הלקח"
+      - "הנתן"      # the giving
+      - "הנותן"
+      - "הנופל"     # the falling
+      - "הנפל"
+      - "הסבב"      # the surrounding
+      - "הסובב"
+      # m-prefix participles (piel / hifil / etc.) — ה + מ + ...
+      - "המדבר"     # the speaking
+      - "המדברת"
+      - "המדברים"
+      - "המבקש"     # the seeking
+      - "המבקשים"
+      - "המהלך"     # the walking
+      - "המהלכים"
+      - "המבדיל"    # the dividing
+      - "המנהיג"
+      - "המכה"      # the striking
+      - "המכים"
+      - "המאכל"     # the feeding
+      - "המביא"     # the bringing
+      - "המוציא"    # the bringing out
+      - "המודיע"
+      - "המכבד"     # the honoring
+      - "המקדש"     # the sanctifying
+  line_n1_anywhere:
+    has_finite_verb: false
+  combined_max_prosodic_words: 12
+
+guards:
+  - poetic_register
+
+annotation_template: "Asyndetic relative — definite participle modifier ({pwc} prosodic words)"
+suggested_action: MERGE
