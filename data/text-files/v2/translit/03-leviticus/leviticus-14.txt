@@ -301,11 +301,9 @@ ad | ha'arev
 
 14:47
 vehashokhev | babayit
-yekhabes
-et | begadav
+yekhabes | et | begadav
 veha'okhel | babayit
-yekhabes
-et | begadav
+yekhabes | et | begadav
 
 14:48
 ve'im | bo | yavo | hakohen | vera'ah | vehineh | lo | fasah | hanega | babayit
@@ -329,8 +327,7 @@ al | mayim | chaiyim
 
 14:51
 velakach | et | etz | ha'erez | ve'et | ha'ezo | ve'et | sheni | hatola'at | ve'et | hatzipor | hachaiyah
-vetaval | otam | bedam | hatzipor | hashechutah | uvamayim
-hachaiyim
+vetaval | otam | bedam | hatzipor | hashechutah | uvamayim | hachaiyim
 vehizah | el | habayit
 sheva | pe'amim
 

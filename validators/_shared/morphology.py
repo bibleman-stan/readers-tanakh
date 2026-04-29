@@ -249,6 +249,56 @@ def line_starts_with_prep(line: str) -> tuple[bool, Optional[str]]:
     return (False, None)
 
 
+# Direct-object marker — אֵת standalone or maqqef-joined (אֶת־...)
+def is_do_marker_token(token: str) -> bool:
+    """True if the token IS the DO marker אֵת — standalone or maqqef-bound.
+
+    Distinguishes DO marker את from אַתָּה (you, ms = "אתה" skeleton),
+    אִתִּי (with me = "אתי") etc., which would all start with the same
+    consonants but skel as longer strings.
+    """
+    if MAQQEF in token:
+        first_sub = token.split(MAQQEF, 1)[0]
+        return skel(first_sub) == "את"
+    return skel(token) == "את"
+
+
+# Definite adjective — article-marked single-word adjective (heuristic).
+# Common patterns: הַגָּדוֹל, הַגְּדוֹלָה, הַגְּדֹלִים, הַגְּדֹלוֹת.
+# Conservative: requires single-token, ה- prefix, no further structure markers.
+COMMON_ADJ_STEMS = {
+    "גדול", "גדל", "קטן", "קטון", "טוב", "רע", "רב", "מעט", "חדש", "ישן",
+    "זקן", "צעיר", "חכם", "סכל", "כסיל", "צדיק", "רשע", "ישר", "תמים",
+    "קדוש", "טהור", "טמא", "חזק", "חלש", "אמת", "שקר", "נורא", "יקר",
+    "קשה", "קל", "ארך", "קצר", "רחב", "צר", "עמק", "גבה", "נמוך", "שלם",
+    "ראשון", "אחרון", "אחר", "שני", "שלישי", "אחד", "מלא", "ריק", "חי", "מת",
+    "כבד", "ברוך", "ארור", "פלאי",
+}
+
+ADJ_PLURAL_SUFFIXES = ("ים", "ות", "ה")
+
+
+def is_definite_adjective_token(token: str) -> bool:
+    """True if token is article-marked + adjective stem.
+
+    Pattern: ה + (adjective stem) [+ plural/feminine suffix]. Article-prefix
+    distinguishes attributive from predicative position; stem-list keeps the
+    heuristic conservative.
+    """
+    s = skel(token)
+    if not s.startswith("ה") or len(s) < 4:
+        return False
+    rest = s[1:]
+    # Try exact match against adj stems
+    if rest in COMMON_ADJ_STEMS:
+        return True
+    # Try stripping plural/feminine suffix
+    for suffix in ADJ_PLURAL_SUFFIXES:
+        if rest.endswith(suffix) and rest[:-len(suffix)] in COMMON_ADJ_STEMS:
+            return True
+    return False
+
+
 def line_starts_with_le_infinitive(line: str) -> bool:
     """True if first token is לְ + infinitive-construct.
 

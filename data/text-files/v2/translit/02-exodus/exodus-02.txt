@@ -1,7 +1,6 @@
 2:1
 vaiyelekh | ish
-mibeit | Levi | vaiyikach
-et | bat | Levi
+mibeit | Levi | vaiyikach | et | bat | Levi
 
 2:2
 vatahar | ha'ishah
@@ -111,8 +110,7 @@ tzon | avihen
 vaiyavo'u | haro'im
 vaygareshum
 vaiyakom | Mosheh | vaiyooshi'an
-vaiyashk
-et | tzonam
+vaiyashk | et | tzonam
 
 2:18
 vatavonah
@@ -126,8 +124,7 @@ haiyom
 vatomarna
 ish | mitzri | hitzilanu | miyad | haro'im
 vegam | daloh | dalah | lanu
-vaiyashk
-et | hatzon
+vaiyashk | et | hatzon
 
 2:20
 vaiyomer | el | benotav
@@ -155,11 +152,8 @@ vaiyiz'aku
 vata'al | shav'atam | el | ha'elohim | min | ha'avodah
 
 2:24
-vaiyishma | elohim
-et | na'akatam
-vaiyizkor | elohim | et | berito
-et | Avraham
-et | Yitzchak | ve'et | Ya'ako
+vaiyishma | elohim | et | na'akatam
+vaiyizkor | elohim | et | berito | et | Avraham | et | Yitzchak | ve'et | Ya'ako
 
 2:25
 vaiyar | elohim

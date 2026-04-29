@@ -35,8 +35,7 @@ and he died
 5:6
 and he lived | Seth
 five | years | and one hundred | year[s]
-and he fathered
-[obj.] | Enosh
+and he fathered | [obj.] | Enosh
 
 5:7
 and he lived | Seth | after | fathered he | [obj.] | Enosh
@@ -53,8 +52,7 @@ and he died
 5:9
 and he lived | Enosh
 ninety | year[s]
-and he fathered
-[obj.] | Kenan
+and he fathered | [obj.] | Kenan
 
 5:10
 and he lived | Enosh | after | fathered he | [obj.] | Kenan
@@ -71,8 +69,7 @@ and he died
 5:12
 and he lived | Kenan
 seventy | year[s]
-and he fathered
-[obj.] | Mahalalel
+and he fathered | [obj.] | Mahalalel
 
 5:13
 and he lived | Kenan | after | fathered he | [obj.] | Mahalalel
@@ -89,8 +86,7 @@ and he died
 5:15
 and he lived | Mahalalel
 five | years | and sixty | year[s]
-and he fathered
-[obj.] | Jared
+and he fathered | [obj.] | Jared
 
 5:16
 and he lived | Mahalalel | after | fathered he | [obj.] | Jared
@@ -108,8 +104,7 @@ and he died
 5:18
 and he lived | Jared
 two | and sixty | year[s] | and one hundred | year[s]
-and he fathered
-[obj.] | Enoch
+and he fathered | [obj.] | Enoch
 
 5:19
 and he lived | Jared | after | fathered he | [obj.] | Enoch
@@ -127,8 +122,7 @@ and he died
 and he lived | Enoch
 five | and sixty
 year[s]
-and he fathered
-[obj.] | Methuselah
+and he fathered | [obj.] | Methuselah
 
 5:22
 and he walked about | Enoch | with | God | after | fathered he | [obj.] | Methuselah
@@ -143,8 +137,7 @@ five | and sixty | year[s]
 and three | hundred | year[s]
 
 5:24
-and he walked about | Enoch
-with | God
+and he walked about | Enoch | with | God
 and not [was] he
 for | he took | him
 God
@@ -152,8 +145,7 @@ God
 5:25
 and he lived | Methuselah
 seven | and eighty | year[s] | and one hundred | year[s]
-and he fathered
-[obj.] | Lamech
+and he fathered | [obj.] | Lamech
 
 5:26
 and he lived | Methuselah | after | fathered he | [obj.] | Lamech
@@ -198,6 +190,4 @@ and he died
 5:32
 and he was | Noah
 a son of | five | hundred | year[s]
-and he fathered | Noah
-[obj.] | Shem
-[obj.] | Ham | and | Japheth
+and he fathered | Noah | [obj.] | Shem | [obj.] | Ham | and | Japheth

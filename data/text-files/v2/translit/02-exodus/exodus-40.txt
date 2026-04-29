@@ -3,8 +3,7 @@ vaydaber | Yahweh
 el | Mosheh | lemor
 
 40:2
-beyom | hachodesh | harishon | be'echad | lachodesh | takim
-et | mishkan
+beyom | hachodesh | harishon | be'echad | lachodesh | takim | et | mishkan
 ohel | mo'ed
 
 40:3
@@ -101,16 +100,13 @@ hamishkan
 40:18
 vaiyakem | Mosheh | et | hamishkan | vaiyiten | et | adanav
 vaiyasem | et | kerashav
-vaiyiten
-et | berichav
-vaiyakem
-et | amudav
+vaiyiten | et | berichav
+vaiyakem | et | amudav
 
 40:19
 vaiyifros | et | ha'ohel | al | hamishkan
 vaiyasem | et | mikhseh | ha'ohel | alav
-milma'elah | ka'asher | tzivah | Yahweh
-et | Mosheh
+milma'elah | ka'asher | tzivah | Yahweh | et | Mosheh
 
 40:20
 vaiyikach | vaiyiten | et | ha'edut | el | ha'aron
@@ -124,8 +120,7 @@ vaiyave | et | ha'aron | el | hamishkan
 vaiyasem | et | parokhet | hamasakh
 vaiyasekh
 al | aron | ha'edut
-ka'asher | tzivah | Yahweh
-et | Mosheh
+ka'asher | tzivah | Yahweh | et | Mosheh
 
 40:22
 vaiyiten | et | hashulchan | be'ohel | mo'ed
@@ -136,8 +131,7 @@ laparokhet
 40:23
 vaiya'arokh | alav | erekh | lechem
 lifnei | Yahweh
-ka'asher | tzivah | Yahweh
-et | Mosheh
+ka'asher | tzivah | Yahweh | et | Mosheh
 
 40:24
 vaiyasem | et | hamenorah | be'ohel | mo'ed
@@ -148,8 +142,7 @@ negbah
 40:25
 vaiya'al | hanerot
 lifnei | Yahweh
-ka'asher | tzivah | Yahweh
-et | Mosheh
+ka'asher | tzivah | Yahweh | et | Mosheh
 
 40:26
 vaiyasem | et | mizbach | hazahav
@@ -159,8 +152,7 @@ haparokhet
 40:27
 vaiyakter | alav
 ketoret | samim
-ka'asher | tzivah | Yahweh
-et | Mosheh
+ka'asher | tzivah | Yahweh | et | Mosheh
 
 40:28
 vaiyasem | et | masakh | hapetach
@@ -172,8 +164,7 @@ sam
 petach
 mishkan | ohel | mo'ed
 vaiya'al | alav | et | ha'olah | ve'et | haminchah
-ka'asher | tzivah | Yahweh
-et | Mosheh
+ka'asher | tzivah | Yahweh | et | Mosheh
 
 40:30
 vaiyasem | et | hakiyor
@@ -189,16 +180,13 @@ ve'et | ragleihem
 
 40:32
 bevo'am | el | ohel | mo'ed | uvekarevatam | el | hamizbeach | yirchatzu
-ka'asher | tzivah | Yahweh
-et | Mosheh
+ka'asher | tzivah | Yahweh | et | Mosheh
 
 40:33
 vaiyakem | et | hechatzer | saviv | lamishkan | velamizbeach
-vaiyiten
-et | masakh
+vaiyiten | et | masakh
 sha'ar | hechatzer
-vaykhal | Mosheh
-et | hamelakhah
+vaykhal | Mosheh | et | hamelakhah
 
 40:34
 vaykhas | he'anan

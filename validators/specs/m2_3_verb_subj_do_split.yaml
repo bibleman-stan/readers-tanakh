@@ -1,0 +1,28 @@
+name: m2_3_verb_subj_do_split
+rule: M2
+subcase: verb_subj_do_split
+severity: STRONG-MERGE-CANDIDATE
+description: |
+  Verb-clause-head + DO-NP split. Line N contains a finite verb (subject NP
+  may follow on same line), line N+1 starts with אֵת (the direct-object marker,
+  standalone or maqqef-joined). Per WO §10.3 / JM §125, verb and DO form a
+  tight nucleus.
+
+  Example (Gen 1:21):
+    line N:    וַיִּבְרָא אֱלֹהִים        (verb + subject)
+    line N+1:  אֶת־הַתַּנִּינִם           (DO marker + NP)
+    merge:     וַיִּבְרָא אֱלֹהִים אֶת־הַתַּנִּינִם
+
+trigger:
+  line_n_anywhere:
+    has_finite_verb: true
+  line_n1_first_token:
+    morphology: do_marker
+  combined_max_prosodic_words: 7
+
+guards:
+  - poetic_register
+  - both_lines_have_finite_verb   # if both clauses are independent, don't merge
+
+annotation_template: "Verb-clause + DO-NP merge ({pwc} prosodic words)"
+suggested_action: MERGE

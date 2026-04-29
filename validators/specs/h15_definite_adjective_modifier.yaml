@@ -1,0 +1,28 @@
+name: h15_definite_adjective_modifier
+rule: H15
+subcase: definite_adjective_modifier
+severity: STRONG-MERGE-CANDIDATE
+description: |
+  Single article-marked adjective on its own line, modifying the noun ending
+  the previous line. Common pattern in narrative — definite-attributive
+  agreement collapses noun + adj into one NP.
+
+  Example (Gen 1:21):
+    line N:    אֶת־הַתַּנִּינִם
+    line N+1:  הַגְּדֹלִים          (definite adjective, single token)
+    merge:     אֶת־הַתַּנִּינִם הַגְּדֹלִים
+
+trigger:
+  line_n1_first_token:
+    morphology: definite_adjective
+  line_n1_last_token:
+    morphology: definite_adjective   # same token (single-prosodic-word line)
+  line_n1_anywhere:
+    has_finite_verb: false
+  combined_max_prosodic_words: 7
+
+guards:
+  - poetic_register
+
+annotation_template: "Definite-adjective modifier merge ({pwc} prosodic words)"
+suggested_action: MERGE

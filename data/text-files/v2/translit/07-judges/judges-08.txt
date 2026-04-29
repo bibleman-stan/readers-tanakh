@@ -107,8 +107,7 @@ anshei | Sukot
 8:17
 ve'et | migdal | Penu'el
 natatz
-vaiyaharog
-et | anshei | ha'ir
+vaiyaharog | et | anshei | ha'ir
 
 8:18
 vaiyomer | el | Zevach | ve'el | Tzalmuna
@@ -224,9 +223,7 @@ vaiyasimu | lahem | Ba'al | Berit
 lelohim
 
 8:34
-velo | zakheru | benei | Yisra'el
-et | Yahweh
-eloheihem
+velo | zakheru | benei | Yisra'el | et | Yahweh | eloheihem
 hamatzil | otam | miyad | kol | oyeveihem
 misaviv
 

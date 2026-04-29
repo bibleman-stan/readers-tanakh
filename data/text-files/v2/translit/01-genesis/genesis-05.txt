@@ -35,8 +35,7 @@ vaiyamot
 5:6
 vaychi | Shet
 chamesh | shanim | ume'at | shanah
-vaiyoled
-et | Enoosh
+vaiyoled | et | Enoosh
 
 5:7
 vaychi | Shet | acharei | holido | et | Enoosh
@@ -53,8 +52,7 @@ vaiyamot
 5:9
 vaychi | Enoosh
 tish'im | shanah
-vaiyoled
-et | Keinan
+vaiyoled | et | Keinan
 
 5:10
 vaychi | Enoosh | acharei | holido | et | Keinan
@@ -71,8 +69,7 @@ vaiyamot
 5:12
 vaychi | Keinan
 shiv'im | shanah
-vaiyoled
-et | Mahalal'el
+vaiyoled | et | Mahalal'el
 
 5:13
 vaychi | Keinan | acharei | holido | et | Mahalal'el
@@ -89,8 +86,7 @@ vaiyamot
 5:15
 vaychi | Mahalal'el
 chamesh | shanim | veshishim | shanah
-vaiyoled
-et | Yared
+vaiyoled | et | Yared
 
 5:16
 vaychi | Mahalal'el | acharei | holido | et | Yered
@@ -108,8 +104,7 @@ vaiyamot
 5:18
 vaychi | Yered
 shetayim | veshishim | shanah | ume'at | shanah
-vaiyoled
-et | Chanokh
+vaiyoled | et | Chanokh
 
 5:19
 vaychi | Yered | acharei | holido | et | Chanokh
@@ -127,8 +122,7 @@ vaiyamot
 vaychi | Chanokh
 chamesh | veshishim
 shanah
-vaiyoled
-et | Metushalach
+vaiyoled | et | Metushalach
 
 5:22
 vaiyithalekh | Chanokh | et | ha'elohim | acharei | holido | et | Metushelach
@@ -143,8 +137,7 @@ chamesh | veshishim | shanah
 ushelosh | me'ot | shanah
 
 5:24
-vaiyithalekh | Chanokh
-et | ha'elohim
+vaiyithalekh | Chanokh | et | ha'elohim
 ve'einenu
 ki | lakach | oto
 elohim
@@ -152,8 +145,7 @@ elohim
 5:25
 vaychi | Metushelach
 sheva | ushemonim | shanah | ume'at | shanah
-vaiyoled
-et | Lamekh
+vaiyoled | et | Lamekh
 
 5:26
 vaychi | Metushelach | acharei | holido | et | Lemekh
@@ -198,6 +190,4 @@ vaiyamot
 5:32
 vayhi | Noach
 ben | chamesh | me'ot | shanah
-vaiyoled | Noach
-et | Shem
-et | Cham | ve'et | Yafet
+vaiyoled | Noach | et | Shem | et | Cham | ve'et | Yafet

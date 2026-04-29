@@ -163,6 +163,10 @@ def _check_morphology(tok: str, morph: str) -> bool:
         return M.skel(tok) in M.VOCATIVE_PARTICLES
     if morph == "m2_pp_verb":
         return M.is_m2_pp_verb_token(tok)
+    if morph == "do_marker":
+        return M.is_do_marker_token(tok)
+    if morph == "definite_adjective":
+        return M.is_definite_adjective_token(tok)
     return False
 
 

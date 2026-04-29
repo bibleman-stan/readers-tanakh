@@ -69,15 +69,13 @@ yovel | hi | shenat | hachamishim | shanah
 tihyeh | lakhem
 lo | tizra'u
 velo | tiktzeru | et | seficheiha
-velo | tivtzeru
-et | nezireiha
+velo | tivtzeru | et | nezireiha
 
 25:12
 ki | yovel | hi
 kodesh
 tihyeh | lakhem
-min | hasadeh | tokhelu
-et | tevu'atah
+min | hasadeh | tokhelu | et | tevu'atah
 
 25:13
 bishnat | haiyovel | hazot | tashuvu
@@ -122,8 +120,7 @@ aleiha
 25:20
 vekhi | tomeru | mah | nokhal | bashanah | hashevi'it
 hen | lo | nizra
-velo | ne'esof
-et | tevu'atenu
+velo | ne'esof | et | tevu'atenu
 
 25:21
 vetziviti | et | birkhati | lakhem | bashanah | hashishit
@@ -322,8 +319,7 @@ mikesef | miknato
 25:52
 ve'im | me'at | Nish'ar | bashanim | ad | shenat | haiyovel
 vechishav | lo | kefi | shanav
-yashiv
-et | ge'ulato
+yashiv | et | ge'ulato
 
 25:53
 kiskhir | shanah | beshanah | yihyeh | imo
