@@ -7,7 +7,8 @@ For the given book (or all books with --all-books), runs sequentially:
 1. scripts/apply_validators.py --book <book>  (skipped if missing; non-zero exit aborts chain)
 2. scripts/propagate_editorial_layers.py --book <book>
 3. scripts/generate_english_glosses.py --book <book>
-4. (optional) scripts/build_books.py --book <book_short>  (if --build flag passed)
+4. scripts/normalize_english_gloss.py --book <book>
+5. (optional) scripts/build_books.py --book <book_short>  (if --build flag passed)
 
 Each subprocess invocation includes PYTHONIOENCODING=utf-8 env var.
 
@@ -163,6 +164,7 @@ def process_book(book, build=False, dry_run=False):
         ("apply_validators.py", True),   # (script_name, skip_missing)
         ("propagate_editorial_layers.py", False),
         ("generate_english_glosses.py", False),
+        ("normalize_english_gloss.py", False),
     ]
 
     for script_name, skip_missing in steps:
