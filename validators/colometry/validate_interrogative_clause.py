@@ -160,10 +160,18 @@ def last_content_token(line: str) -> str | None:
 # ---------------------------------------------------------------------------
 
 # Interrogative particles (consonant-only after stripping niqqud + te'amim)
-# הֲ / הַ + prefix (often heh interrogative marker)
+# Note: bare "ה" is NOT included. The interrogative heh is a prefix morpheme
+# attached to the following word (הֲשָׁמַרְתָּ, הֲיֵשׁ etc.) — it never appears
+# as a standalone word-final token in prose. Including bare "ה" would fire on
+# any maqqef-split token whose last segment is a ה-final form (articles,
+# pronominal suffixes, directional he). Removed per overfire audit 2026-04-28.
+#
+# "אם" is retained but severity is capped at REVIEW-REQUIRED (never STRONG)
+# because אם is genuinely ambiguous: interrogative, conditional, and
+# asseverative/oath (e.g., Gen 14:23 "אִם מִחוּט וְעַד שְׂרוֹךְ נַעַל").
+# The severity cap is applied at finding-emit time below.
 INTERROGATIVE_PARTICLES = {
-    "ה",      # simple heh interrogative (treats as particle when word-final)
-    "אם",     # אִם (often in question contexts)
+    "אם",     # אִם (often in question contexts — capped at REVIEW-REQUIRED)
     "מי",     # מִי (who)
     "מה",     # מָה (what)
     "מתי",    # מָתַי (when)
@@ -173,24 +181,23 @@ INTERROGATIVE_PARTICLES = {
     "מדוע",   # מַדּוּעַ (why)
 }
 
-# Additional heh patterns — heh as interrogative prefix (common in prose)
-# Examples: הִשְׁמַרְתָּ (did you guard), הַיָּשְׁבוּ (did they sit)
-# Detection: word starts with heh + consonant + vowel pattern suggesting finite verb
+# Particles for which STRONG-MERGE-CANDIDATE is appropriate (genuine
+# interrogative particles with no asseverative/oath ambiguity)
+STRONG_ELIGIBLE_PARTICLES = {
+    "מי", "מה", "מתי", "איה", "איך", "למה", "מדוע",
+}
 
 
 def looks_like_interrogative_particle(bare: str) -> bool:
     """Heuristic: does this bare skeleton look like an interrogative particle?
 
-    Matches:
-      - Direct particles: מי, מה, מתי, איה, איך, למה, מדוע, אם
-      - Bare heh (word-final or standalone): ה
+    Matches direct particles (מי, מה, מתי, איה, איך, למה, מדוע, אם).
+    Bare "ה" is excluded — the interrogative heh is always a prefix morpheme,
+    not a standalone token; including it caused maqqef-split overfire.
     """
     if not bare:
         return False
     if bare in INTERROGATIVE_PARTICLES:
-        return True
-    # Bare heh as standalone interrogative marker (rare but valid)
-    if bare == "ה" and len(bare) == 1:
         return True
     return False
 
@@ -424,7 +431,11 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
 
         # --- Determine severity based on combined prosodic word count ---
         combined_words = prosodic_word_count(line) + prosodic_word_count(next_line)
-        if combined_words <= 6:
+        if combined_words <= 6 and particle in STRONG_ELIGIBLE_PARTICLES:
+            # STRONG only for unambiguous interrogative particles (מי, מה, etc.).
+            # "אם" is capped at REVIEW-REQUIRED because it is genuinely ambiguous:
+            # conditional, asseverative/oath (Gen 14:23), and interrogative uses
+            # are all attested and not distinguishable by surface syntax alone.
             severity = "STRONG-MERGE-CANDIDATE"
         else:
             severity = "REVIEW-REQUIRED"
