@@ -149,6 +149,8 @@ def _check_morphology(tok: str, morph: str) -> bool:
         return M.skel(tok) in M.DISCOURSE_PARTICLES
     if morph == "vocative_particle":
         return M.skel(tok) in M.VOCATIVE_PARTICLES
+    if morph == "m2_pp_verb":
+        return M.is_m2_pp_verb_token(tok)
     return False
 
 
@@ -256,6 +258,32 @@ def _g_both_verbs(l_n, l_n1, ctx):
 def _g_cross_verse(l_n, l_n1, ctx):
     # always False — engine already verse-scopes; this guard is a no-op marker
     return False
+
+
+@_register_guard("m2_pp_prep_mismatch")
+def _g_m2_prep(l_n, l_n1, ctx):
+    """Block emission when next-line prep is not in the M2 verb's allowed-prep set.
+
+    Fires (True = block) when the first prep of l_n1 is not among the
+    prepositions that the M2 verb on the last token of l_n governs.
+    """
+    last = M.last_content_token(l_n)
+    if not last:
+        return True  # no verb token found → block
+    allowed = M.m2_pp_verb_allowed_preps(last)
+    if not allowed:
+        return True  # not an M2 verb → block
+    first_n1 = M.first_content_token(l_n1)
+    if not first_n1:
+        return True
+    prep_skel = M.skel(first_n1)
+    # Standalone prep skeleton match (e.g., "אל")
+    if prep_skel in allowed:
+        return False  # match → don't block
+    # Bound-prep single-letter prefix match (e.g., "ל" from "לְ")
+    if prep_skel and prep_skel[0] in allowed:
+        return False
+    return True  # no match → block
 
 
 def _guard_fires(guard, l_n: str, l_n1: str, ctx: dict[str, Any]) -> bool:

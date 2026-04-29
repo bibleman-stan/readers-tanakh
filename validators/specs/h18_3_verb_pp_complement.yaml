@@ -1,0 +1,32 @@
+name: h18_3_verb_pp_complement
+rule: H18.3
+subcase: verb_pp_complement_split
+severity: STRONG-MERGE-CANDIDATE
+description: |
+  Finite verb + obligatory PP-complement split. Line ends with an M2-class verb
+  (closed list: שמע ל/אל, נשא אל, פנה אל, קרא אל/ל, זעק אל, התפלל אל) and the
+  next line begins with the governed preposition. Per H18.3 / M2 corpus extension:
+  the PP-complement is a grammatical obligatory argument of the verb — clause nucleus.
+  Audit basis: 9/9 TP rate corpus-wide (Gen 31:4, Lev 1:1, Deut 31:18, 2 Kgs 4:33/20:2,
+  Neh 9:16, Isa 38:2, Ezek 18:6/15) — meets canon §7.4 ≥80% threshold.
+
+trigger:
+  line_n_last_token:
+    morphology: m2_pp_verb
+  line_n1_first_token:
+    morphology: prep
+  line_n1_anywhere:
+    has_finite_verb: false
+  combined_max_prosodic_words: 8
+
+guards:
+  - m2_pp_prep_mismatch
+  - poetic_register
+  - vocative_position
+  - discourse_particle_on_next_line
+  - casus_pendens
+  - heavy_subject
+  - both_lines_have_finite_verb
+
+annotation_template: "H18.3 verb + obligatory PP-complement split (combined {pwc} prosodic words)"
+suggested_action: MERGE

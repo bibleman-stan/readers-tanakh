@@ -36,8 +36,11 @@ informational defensibility-capture (Rule H8) — the trigger must remain
 syntactic.
 
 SEVERITY:
-All findings emit at severity REVIEW-REQUIRED. Promotion to STRONG awaits
-≥80% editor agreement per canon §7.4 adoption protocol.
+H18.1 and H18.2 emit at REVIEW-REQUIRED (awaiting ≥80% editor agreement per
+canon §7.4 adoption protocol). H18.3 emits at STRONG-MERGE-CANDIDATE — promoted
+via YAML spec validators/specs/h18_3_verb_pp_complement.yaml after 9/9 TP rate
+corpus survey (100%) met the §7.4 threshold. The H18.3 branch here is
+SUPERSEDED by that spec; it remains for corpus-audit cross-reference only.
 
 FORCED-NO-MERGE GUARDS (skip BEFORE emitting):
   1. Poetic register — is_poetic_register(book, chapter, verse) → skip.
@@ -1162,13 +1165,20 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
                 f"({combined_words} prosodic words combined)"
             )
 
+        # H18.3 is promoted to STRONG-MERGE-CANDIDATE (YAML spec h18_3_verb_pp_complement.yaml);
+        # H18.1 and H18.2 remain REVIEW-REQUIRED pending further adoption measurement.
+        finding_severity = (
+            "STRONG-MERGE-CANDIDATE" if subcase == "verb_pp_complement_split"
+            else "REVIEW-REQUIRED"
+        )
+
         findings.append({
             "file_path": path,
             "file_rel": str(path.relative_to(REPO_ROOT)).replace("\\", "/"),
             "line_num": line_no,
             "next_line_num": next_line_no,
             "rule": "H18/clause-nucleus-split",
-            "severity": "REVIEW-REQUIRED",
+            "severity": finding_severity,
             "subcase": subcase,
             "book": book,
             "chapter": chapter,
