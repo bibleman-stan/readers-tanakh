@@ -1,6 +1,5 @@
 2:1
-vayhi | devar | Yahweh
-elai | lemor
+vayhi | devar | Yahweh | elai | lemor
 
 2:2
 halokh | vekarata | ve'azenei | Yerushalim | lemor | koh | amar | Yahweh
@@ -12,8 +11,7 @@ kelulotayikh | lekhtekh | acharai | bamidbar | be'eretz | lo | zeru'ah
 kodesh | Yisra'el | Layahweh
 reshit | tevu'ato
 kol | okhelav | ye'shamu
-ra'ah | tavo | aleihem
-ne'um | Yahweh
+ra'ah | tavo | aleihem | ne'um | Yahweh
 
 2:4
 shim'u | devar | Yahweh
@@ -59,8 +57,7 @@ hen | hayetah | kazot
 
 2:11
 haheimir | goy | elohim
-vehemah | lo | elohim
-ve'ami | hemir | kevodo
+vehemah | lo | elohim | ve'ami | hemir | kevodo
 belo | yo'il
 
 2:12
@@ -75,12 +72,11 @@ hamayim
 
 2:14
 ha'eved | Yisra'el
-im | yelid | bayit
-hu | madua | hayah | lavaz
+im | yelid | bayit | hu
+madua | hayah | lavaz
 
 2:15
-alav | yish'agu | khefirim
-natenu
+alav | yish'agu | khefirim | natenu
 kolam | vaiyashitu | artzo | leshamah
 arav | Nitzetah | mibeli | yoshev
 
@@ -103,8 +99,7 @@ teyaserekh | ra'atekh | umeshuvotayikh | tokhichukh
 ude'i | ure'i | ki | ra | vamar
 azevekh
 et | Yahweh | elohayikh
-velo | fachdati | elayikh
-ne'um | Adonai | Yahweh | tzeva'ot
+velo | fachdati | elayikh | ne'um | Adonai | Yahweh | tzeva'ot
 
 2:20
 ki | me'olam | shavarti | ulekh | nitakti | mosrotayikh
@@ -121,8 +116,7 @@ hagefen | nakheriyah
 
 2:22
 ki | im | tekhabesi | baneter | vetarbi | lakh
-borit | nikhtam | avonekh | lefanai | ne'um
-Adonai | Yahweh
+borit | nikhtam | avonekh | lefanai | ne'um | Adonai | Yahweh
 
 2:23
 eikh | tomri | lo | Nitmeti | acharei | habe'alim | lo | halakhti
@@ -162,9 +156,7 @@ hayu | eloheikha
 Yehudah
 
 2:29
-lamah | tarivu
-elai
-kulekhem | pesha'tem | bi
+lamah | tarivu | elai | kulekhem | pesha'tem | bi
 ne'um | Yahweh
 
 2:30
@@ -179,10 +171,8 @@ madua | ameru | ami | radnu
 lo | navo | od | eleikha
 
 2:32
-hatishkach | betulah | edyah
-kalah
-kishureiha
-ve'ami | shekhechuni
+hatishkach | betulah | edyah | kalah
+kishureiha | ve'ami | shekhechuni
 yamim | ein | mispar
 
 2:33
@@ -198,8 +188,8 @@ ki | al | kol | eleh
 
 2:35
 vatomeri | ki | Nikeiti
-akh | shav | apo | mimeni
-hini | nishpat | otakh | al | amerekh | lo | chatati
+akh | shav | apo | mimeni | hini | nishpat | otakh | al | amerekh
+lo | chatati
 
 2:36
 mah | tezeli | me'od | leshanot | et | darkekh

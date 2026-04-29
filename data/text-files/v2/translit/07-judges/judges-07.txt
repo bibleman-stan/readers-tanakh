@@ -24,8 +24,8 @@ vaiyomer | Yahweh | el | Gid'on | od | ha'am | rav | hored | otam | el | hamayim
 ve'etzrefenu | lekha
 sham
 vehayah | asher | omar | eleikha | zeh | yelekh | itakh | hu | yelekh | itakh
-vekhol | asher | omar | eleikha | zeh | lo | yelekh | imakh
-hu | lo | yelekh
+vekhol | asher | omar | eleikha | zeh | lo | yelekh | imakh | hu
+lo | yelekh
 
 7:5
 vaiyored | et | ha'am | el | hamayim
@@ -100,8 +100,7 @@ vaiyiten | shofarot | beyad | kulam | vekhadim | rekim | velapidim
 betokh | hakadim
 
 7:17
-vaiyomer | aleihem
-mimeni | tir'u
+vaiyomer | aleihem | mimeni | tir'u
 vekhen | ta'asu
 vehineh | anokhi | va | biktzeh | hamachaneh
 vehayah | kha'asher | e'eseh

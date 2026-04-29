@@ -25,8 +25,8 @@ Ramot | Gil'ad
 9:5
 vaiyavo | vehineh | sarei | hachayil | yoshevim
 vaiyomer
-davar | li | eleikha
-hasar | vaiyomer | Yehu | el | mi | mikulanu
+davar | li | eleikha | hasar
+vaiyomer | Yehu | el | mi | mikulanu
 vaiyomer
 eleikha | hasar
 
@@ -63,9 +63,7 @@ vaiyanos
 Veyehu | yatza | el | avdei | adonav
 vaiyomer | lo | hashalom
 madua | ba | hamshuga | hazeh
-eleikha
-vaiyomer | aleihem
-atem | yeda'tem | et | ha'ish
+eleikha | vaiyomer | aleihem | atem | yeda'tem | et | ha'ish
 ve'et | sicho
 
 9:12
@@ -76,8 +74,8 @@ koh | amar | Yahweh | meshachtikha | lemelekh | el | Yisra'el
 
 9:13
 vaymaharu | vaiyikchu | ish | bigdo
-vaiyasimu | tachtav
-el | gerem | hama'alot | vaiyitke'u | bashofar
+vaiyasimu | tachtav | el | gerem | hama'alot
+vaiyitke'u | bashofar
 vaiyomeru
 malakh | Yehu
 
@@ -116,8 +114,7 @@ velo | shav
 
 9:19
 vaiyishlach | rokhev | sus | sheni
-vaiyavo | alehem
-vaiyomer | koh | amar | hamelekh
+vaiyavo | alehem | vaiyomer | koh | amar | hamelekh
 shalom | vaiyomer | Yehu | mah | lekha | uleshalom
 so | el | acharai
 
@@ -157,8 +154,7 @@ vaiyikhra | berikhbo
 9:25
 vaiyomer | el | Bidkar | shelosho
 sa | hashlikhehu | bechelkat
-sedeh
-Navot | haiyizre'eli
+sedeh | Navot | haiyizre'eli
 ki | zekhor | ani | va'atah | et | rokhevim | tzemadim | acharei | Ach'av | aviv
 Vayahweh | nasa | alav | et | hamasa
 hazeh
@@ -205,8 +201,7 @@ horeg | adonav
 9:32
 vaiyisa | fanav | el | hachalon
 vaiyomer | mi | iti | mi
-vaiyashkifu | elav
-shenayim | sheloshah | sarisim
+vaiyashkifu | elav | shenayim | sheloshah | sarisim
 
 9:33
 vaiyomer | shimtuh

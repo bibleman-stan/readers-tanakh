@@ -208,8 +208,7 @@ benei | Varkos | benei | Sisra | benei | Tamach
 benei | Netziach | benei | Chatifa
 
 7:57
-benei
-avdei | Shelomoh | benei | Sotai | benei | soferet | benei | Ferida
+benei | avdei | Shelomoh | benei | Sotai | benei | soferet | benei | Ferida
 
 7:58
 benei | Ya'la | venei | Darkon | benei | Gidel
@@ -219,8 +218,7 @@ benei | Shefatyah | venei | Chatil | benei | Pokheret | Hatzevayim
 benei | Amon
 
 7:60
-kol | hanetinim | uvenei
-avdei | Shelomoh
+kol | hanetinim | uvenei | avdei | Shelomoh
 shelosh | me'ot | tish'im | ushenayim
 
 7:61

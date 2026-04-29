@@ -1,6 +1,5 @@
 12:1
-vayhi | devar | Yahweh
-elai | lemor
+vayhi | devar | Yahweh | elai | lemor
 
 12:2
 ben | adam | betokh | beit | hameri
@@ -50,9 +49,7 @@ beit | hameri | mah
 atah | oseh
 
 12:10
-emor | aleihem
-koh | amar
-Adonai | Yahweh
+emor | aleihem | koh | amar | Adonai | Yahweh
 hanasi | hamasa | hazeh | Birushalam
 vekhol | beit | Yisra'el
 asher | hemah | vetokham
@@ -94,8 +91,7 @@ veyade'u
 ki | ani | Yahweh
 
 12:17
-vayhi | devar | Yahweh
-elai | lemor
+vayhi | devar | Yahweh | elai | lemor
 
 12:18
 ben | adam | lachmekha
@@ -117,8 +113,7 @@ vida'tem
 ki | ani | Yahweh
 
 12:21
-vayhi | devar | Yahweh
-elai | lemor
+vayhi | devar | Yahweh | elai | lemor
 
 12:22
 ben | adam | mah | hamashal | hazeh | lakhem
@@ -131,8 +126,7 @@ kol | chazon
 lakhen | emor | aleihem | koh | amar | Adonai | Yahweh
 hishbati | et | hamashal | hazeh
 velo | yimshelu | oto | od | Beyisra'el
-ki | im | daber | aleihem
-karevu | haiyamim
+ki | im | daber | aleihem | karevu | haiyamim
 udevar
 kol | chazon
 
@@ -145,12 +139,10 @@ ki | ani | Yahweh | adaber | et | asher | adaber | davar | veye'aseh
 lo | timashekh
 od
 ki | vimeikhem | beit | hameri | adaber | davar | va'asitiv
-ne'um
-Adonai | Yahweh
+ne'um | Adonai | Yahweh
 
 12:26
-vayhi | devar | Yahweh
-elai | lemor
+vayhi | devar | Yahweh | elai | lemor
 
 12:27
 ben | adam | hineh | veit | Yisra'el | omerim
@@ -161,5 +153,4 @@ hu | niba
 lakhen | emor | aleihem | koh | amar | Adonai | Yahweh
 lo | timashekh | od
 kol | devarai | asher | adaber | davar | veye'aseh
-ne'um
-Adonai | Yahweh
+ne'um | Adonai | Yahweh

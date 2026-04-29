@@ -42,10 +42,8 @@ unetatihu | beyadekha
 
 4:8
 vaiyomer | eleiha | Barak
-im | telekhi | imi
-vehalakheti
-ve'im | lo | telekhi | imi
-lo | elekh
+im | telekhi | imi | vehalakheti
+ve'im | lo | telekhi | imi | lo | elekh
 
 4:9
 vatomer | halokh | elekh | imakh | efes | ki | lo | tihyeh | tif'artekha | al | haderekh | asher | atah | holekh
@@ -57,8 +55,7 @@ Kedshah
 vaiyaz'ek | Barak | et | Zevulun | ve'et | Naftali | Kedshah
 vaiya'al | beraglav
 aseret | alfei
-ish | vata'al | imo
-Devorah
+ish | vata'al | imo | Devorah
 
 4:11
 Vechever | hakeini | nifrad | Mikayin | mibenei | Chovav
@@ -77,8 +74,7 @@ ve'et | kol | ha'am | asher | ito | Mecharoshet | Hagoyim | el | nachal | Kishon
 4:14
 vatomer | Devorah | el | Barak | kum | ki | zeh | haiyom | asher | natan | Yahweh | et | Sisera | beyadekha
 halo | Yahweh
-yatza | lefaneikha
-vaiyered | Barak | mehar | Tavor
+yatza | lefaneikha | vaiyered | Barak | mehar | Tavor
 va'aseret | alafim | ish
 acharav
 
@@ -95,15 +91,13 @@ lo | Nish'ar | ad | echad
 
 4:17
 Vesisera | nas | beraglav | el | ohel | Ya'el
-eshet
-Chever | hakeini
-ki | shalom | bein | Yavin | melekh | Chatzor | uvein | beit
-Chever | hakeini
+eshet | Chever | hakeini
+ki | shalom | bein | Yavin | melekh | Chatzor | uvein | beit | Chever | hakeini
 
 4:18
 vatetze | Ya'el | likrat | Sisera
-vatomer | elav | surah | adoni | surah | elai
-al | tira | vaiyasar | eleiha | ha'ohelah
+vatomer | elav | surah | adoni | surah | elai | al | tira
+vaiyasar | eleiha | ha'ohelah
 vatekhasehu | basemikhah
 
 4:19
@@ -113,8 +107,7 @@ vatiftach | et | nod | hechalav | vatashkehu
 vatekhasehu
 
 4:20
-vaiyomer | eleiha
-amod
+vaiyomer | eleiha | amod
 petach | ha'ohel
 vehayah | im | ish | yavo | ushe'elekh | ve'amar | hayesh | poh | ish
 ve'amart | ayin
@@ -131,8 +124,7 @@ vehineh | Varak | rodef | et | Sisera
 vatetze | Ya'el | likrato
 vatomer | lo
 lekh | ve'ar'eka | et | ha'ish
-asher | atah | mevakesh | vaiyavo | eleiha
-vehineh | Sisera | nofel | met
+asher | atah | mevakesh | vaiyavo | eleiha | vehineh | Sisera | nofel | met
 vehaiyated | berakato
 
 4:23

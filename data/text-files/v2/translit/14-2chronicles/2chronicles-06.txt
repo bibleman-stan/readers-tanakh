@@ -20,8 +20,7 @@ uveyadav | mile | lemor
 min | haiyom | asher | hotzeti | et | ami | me'eretz | Mitzrayim
 lo | vacharti | ve'ir | mikol | shivtei | Yisra'el
 livnot | bayit | lihyot | shemi
-sham
-velo | vacharti | ve'ish
+sham | velo | vacharti | ve'ish
 lihyot | nagid
 al | ami | Yisra'el
 
@@ -32,8 +31,7 @@ al | ami | Yisra'el
 
 6:7
 vayhi | im | levav
-David | avi | livnot | bayit
-leshem | Yahweh | elohei | Yisra'el
+David | avi | livnot | bayit | leshem | Yahweh | elohei | Yisra'el
 
 6:8
 vaiyomer | Yahweh | el | David | avi
@@ -80,8 +78,8 @@ shomer | haberit | vehachesed | la'avadeikha
 haholekhim | lefaneikha | bekhol | libam
 
 6:15
-asher | shamarta | le'avdekha | David | avi
-et | asher | dibarta | lo
+asher | shamarta | le'avdekha | David | avi | et | asher | dibarta
+lo
 vatedaber | befikha | uveyadekha | mileta
 kaiyom | hazeh
 
@@ -183,8 +181,7 @@ hanetuyah | uva'u | vehitpalu | el | habayit | hazeh
 6:33
 ve'atah | tishma | min | hashamayim | mimekhon | shivtekha
 ve'asita
-kekhol | asher | yikra | eleikha
-hanakheri
+kekhol | asher | yikra | eleikha | hanakheri
 lema'an | yede'u | khol | amei | ha'aretz | et | shemekha | uleyir'ah | otekha | ke'amekha | Yisra'el
 velada'at
 ki | shimkha | Nikra | al | habayit | hazeh | asher | baniti

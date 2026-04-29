@@ -7,9 +7,7 @@ Kehat | Umerari
 ve'eleh | shemot | benei | Gereshom | Livni | Veshim'i
 
 6:3
-uvenei
-Kehat
-Amram | Veyitzhar
+uvenei | Kehat | Amram | Veyitzhar
 Vechevron
 Ve'uzi'el
 
@@ -26,8 +24,7 @@ Yo'ach | beno | Ido | veno
 Zerach | beno | Ye'aterai | beno
 
 6:7
-benei
-Kehat
+benei | Kehat
 Aminadav | beno
 Korach | beno
 Asir | beno

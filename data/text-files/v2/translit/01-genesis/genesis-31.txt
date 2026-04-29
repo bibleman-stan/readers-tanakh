@@ -11,8 +11,7 @@ vehineh | einenu | imo | kitmol | shilshom
 31:3
 vaiyomer | Yahweh | el | Ya'ako
 shuv | el | eretz | avoteikha | ulemoladtekha
-ve'ehyeh
-imakh
+ve'ehyeh | imakh
 
 31:4
 vaiyishlach | Ya'ako
@@ -22,8 +21,7 @@ hasadeh | el | tzono
 31:5
 vaiyomer | lahen | ro'eh | anokhi | et | penei | avikhen
 ki | einenu | elai | kitmol | shilshom
-velohei | avi
-hayah
+velohei | avi | hayah
 imadi
 
 31:6
@@ -72,8 +70,7 @@ oseh | lakh
 
 31:13
 anokhi | ha'el | Beit | El | asher | mashachta | sham | matzevah
-asher | nadarta | li | sham
-neder
+asher | nadarta | li | sham | neder
 atah | kum | tze | min | ha'aretz | hazot
 veshuv | el | eretz | moladtekha
 
@@ -90,8 +87,7 @@ ki | mekharanu | vaiyokhal | gam | akhol | et | kaspenu
 31:16
 ki | khol | ha'osher | asher | hitzil | elohim | me'avinu
 lanu | hu | ulevaneinu
-ve'atah | kol | asher | amar | elohim | eleikha
-aseh
+ve'atah | kol | asher | amar | elohim | eleikha | aseh
 
 31:17
 vaiyakom
@@ -111,7 +107,8 @@ vatigno | Rachel | et | haterafim | asher | le'aviha
 
 31:20
 vaiyigno | Ya'ako | et | lev | Lavan
-ha'arami | al | beli | higid | lo
+ha'arami
+al | beli | higid | lo
 ki | voreach | hu
 
 31:21
@@ -126,12 +123,8 @@ vaiyugad | Lelavan | baiyom | hashelishi
 ki | varach | Ya'ako
 
 31:23
-vaiyikach | et | echav | imo
-vaiyirdof | acharav
-derekh
-shiv'at | yamim
-vaiyadbek | oto
-behar | Hagil'ad
+vaiyikach | et | echav | imo | vaiyirdof | acharav | derekh
+shiv'at | yamim | vaiyadbek | oto | behar | Hagil'ad
 
 31:24
 vaiyavo | elohim | el | Lavan | ha'arami
@@ -162,9 +155,7 @@ velo | netashtani | lenashek | levanai | velivnotai
 atah | hiskalta | aso
 
 31:29
-yesh | le'el | yadi
-la'asot | imakhem
-ra
+yesh | le'el | yadi | la'asot | imakhem | ra
 velohei | avikhem | emesh | amar | elai | lemor | hishamer | lekha | midaber | im | Ya'ako
 mitov | ad | ra
 
@@ -196,8 +187,7 @@ vaiyavo | be'ohel | Rachel
 
 31:34
 Verachel | lakechah | et | haterafim | vatesimem | bekhar | hagamal
-vateshev | aleihem
-vaymashesh | Lavan | et | kol | ha'ohel
+vateshev | aleihem | vaymashesh | Lavan | et | kol | ha'ohel
 velo | matza
 
 31:35
@@ -214,23 +204,20 @@ ki | dalakta | acharai
 
 31:37
 ki | mishashta | et | kol | kelai | mah | matzata | mikol | kelei | veitekha
-sim | koh | neged | achai
-ve'acheikha
+sim | koh | neged | achai | ve'acheikha
 veyokhichu
 bein | sheneinu
 
 31:38
-zeh | esrim | shanah | anokhi | imakh
-recheleikha | ve'izeikha | lo | shikelu
+zeh | esrim | shanah | anokhi | imakh | recheleikha | ve'izeikha
+lo | shikelu
 ve'eilei | tzonekha
 lo | akhalti
 
 31:39
-terefah | lo | heveti | eleikha
-anokhi | achattenah | miyadi
-tevakshenah
-genuvti | yom
-ugenuvti | layelah
+terefah | lo | heveti | eleikha | anokhi | achattenah
+miyadi | tevakshenah
+genuvti | yom | ugenuvti | layelah
 
 31:40
 hayiti | vaiyom | akhalani | chorev
@@ -279,15 +266,13 @@ Gal'ed
 
 31:48
 vaiyomer | Lavan
-hagal | hazeh | ed | beini | uveinekha
-haiyom
+hagal | hazeh | ed | beini | uveinekha | haiyom
 al | ken | kara | shemo
 Gal'ed
 
 31:49
 Vehamitzpah | asher | amar
-yitzef | Yahweh | beini | uveinekha
-ki | nisater
+yitzef | Yahweh | beini | uveinekha | ki | nisater
 ish | mere'ehu
 
 31:50
@@ -309,8 +294,8 @@ ve'im | atah | lo | ta'avor | elai | et | hagal | hazeh | ve'et | hamatzevah | h
 lera'ah
 
 31:53
-elohei | Avraham | velohei | Nachor | yishpetu | veineinu
-elohei | avihem
+elohei | Avraham | velohei | Nachor | yishpetu | veineinu | elohei
+avihem
 vaiyishava | Ya'ako | befachad
 aviv | Yitzchak
 

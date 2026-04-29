@@ -37,8 +37,8 @@ shalom
 25:7
 ve'atah | shama'ti
 ki | gozezim | lakh
-atah | haro'im | asher | lekha | hayu | imanu
-lo | hekhlamnum | velo | Nifkad | lahem | me'umah | kol | yemei
+atah | haro'im | asher | lekha | hayu | imanu | lo | hekhlamnum | velo | Nifkad | lahem | me'umah
+kol | yemei
 heyotam | Bakarmel
 
 25:8
@@ -79,8 +79,7 @@ vaiya'alu | acharei | David | ke'arba | me'ot | ish
 umatayim | yashevu | al | hakelim
 
 25:14
-Vela'avigayil | eshet | Naval
-higid | na'ar | echad | mehane'arim | lemor
+Vela'avigayil | eshet | Naval | higid | na'ar | echad | mehane'arim | lemor
 hineh | shalach | David | mal'akhim | mehamidbar | levarekh | et | adoneinu
 vaiya'at | bahem
 
@@ -90,8 +89,7 @@ tovim | lanu | me'od | velo | hakhelamnu | velo | fakadnu | me'umah
 kol | yemei | hithalakhnu | itam | bihyotenu | basadeh
 
 25:16
-chomah | hayu | aleinu
-gam | laylah
+chomah | hayu | aleinu | gam | laylah
 gam | yomam
 kol | yemei | heyotenu | imam
 ro'im | hatzon
@@ -138,14 +136,12 @@ aretz
 vatipol | al | raglav
 vatomer | bi | ani | adoni
 he'avon | utedaber | na | amatekha | be'azeneikha
-ushema
-et | divrei | amatekha
+ushema | et | divrei | amatekha
 
 25:25
 al | na | yasim | adoni | et | libo | el | ish | habeliya'al | hazeh | al | Naval | ki | khishmo | ken | hu
-Naval | shemo | unevalah
-imo
-va'ani | amatekha | lo | ra'iti | et | na'arei | adoni | asher | shalacheta
+Naval | shemo | unevalah | imo | va'ani | amatekha
+lo | ra'iti | et | na'arei | adoni | asher | shalacheta
 
 25:26
 ve'atah | adoni | chai | Yahweh | vechei | nafshekha | asher | mena'akha | Yahweh | mibo | vedamim
@@ -173,8 +169,7 @@ ve'et | nefesh | oyeveikha | yekalle'enah | betokh | kaf | hakala
 
 25:30
 vehayah | ki | ya'aseh | Yahweh | ladoni | kekhol | asher | diber | et | hatovah
-aleikha
-vetzivekha | lenagid | al | Yisra'el
+aleikha | vetzivekha | lenagid | al | Yisra'el
 
 25:31
 velo | tihyeh | zot | lekha | lefukah | ulemikhshol | lev | ladoni | velishpokh | dam | chinam

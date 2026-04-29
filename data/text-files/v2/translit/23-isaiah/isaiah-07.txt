@@ -1,13 +1,11 @@
 7:1
 vayhi | bimei | Achoz | ben | Yotam | ben | Uziyahu | melekh | Yehudah | alah | Retzin | melekh | Arom | Ufekach | ben | Remalyahu | melekh | Yisra'el | Yerushalim
-lamilchamah
-aleiha | velo | yakhol | lehilachem | aleiha
+lamilchamah | aleiha | velo | yakhol | lehilachem | aleiha
 
 7:2
 vaiyugad | leveit | David | lemor
 nachah | Aram | al | Efrayim
-vaiyana | levavo | ulevav | amo
-kenoa | atzei | ya'ar | mipenei | ruach
+vaiyana | levavo | ulevav | amo | kenoa | atzei | ya'ar | mipenei | ruach
 
 7:3
 vaiyomer | Yahweh | el | Yesha'yahu
@@ -32,8 +30,7 @@ Efrayim | uven | Remalyahu | lemor
 7:6
 na'aleh | Vihudah | unekitzenah
 venavki'enah
-eleinu
-venamlikh | melekh | betokhah | et | ben | Tave'al
+eleinu | venamlikh | melekh | betokhah | et | ben | Tave'al
 
 7:7
 koh | amar | Adonai | Yahweh | lo | takum
@@ -80,8 +77,7 @@ gam | et | elohai
 lakhen | yiten | Adonai | hu | lakhem
 ot
 hineh | ha'almah | harah | veyoledet | ben
-vekarat | shemo
-Imanu | El
+vekarat | shemo | Imanu | El
 
 7:15
 chem'ah | udevash
@@ -104,8 +100,7 @@ ye'orei | Mitzrayim | veladevorah | asher | be'eretz | Ashur
 
 7:19
 uva'u | venachu | khulam | benachalei | habatot | uvinkikei
-hasela'im | uvekhol | hana'atzutzim | uvekhol
-hanahalolim
+hasela'im | uvekhol | hana'atzutzim | uvekhol | hanahalolim
 
 7:20
 baiyom | hahu | yegalach | Adonai | beta'ar | hasekhirah | be'evrei | nahar | bemelekh | Ashur
@@ -115,8 +110,8 @@ vegam | et | hazakan
 tispeh
 
 7:21
-vehayah | baiyom | hahu
-yechaiyeh | ish | eglat | bakar
+vehayah
+baiyom | hahu | yechaiyeh | ish | eglat | bakar
 ushetei | tzon
 
 7:22
@@ -137,6 +132,5 @@ ki | shamir | vashayit | tihyeh | khol | ha'aretz
 7:25
 vekhol | heharim | asher | bama'der | ye'aderun
 lo | tavo | shamah | yir'at
-shamir | vashayit
-vehayah | lemishlach | shor | ulemirmas
+shamir | vashayit | vehayah | lemishlach | shor | ulemirmas
 seh

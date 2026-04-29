@@ -1,20 +1,17 @@
 7:1
-vayhi | devar | Yahweh
-elai | lemor
+vayhi | devar | Yahweh | elai | lemor
 
 7:2
 ve'atah | ven | adam | koh | amar | Adonai | Yahweh | le'admat | Yisra'el
 ketz | ba | haketz | al | arba'at | kanfot | ha'aretz
 
 7:3
-atah | haketz | alayikh
-veshilachti | api | bakh
+atah | haketz | alayikh | veshilachti | api | bakh
 ushefatikh | kidrakhayikh
 venatati | alayikh | et | kol | to'avotayikh
 
 7:4
-velo | tachos | eini | alayikh
-velo | echmol
+velo | tachos | eini | alayikh | velo | echmol
 ki | derakhayikh | alayikh | eten | veto'avotayikh | betokhekh | tihyeina
 vida'tem
 ki | ani | Yahweh
@@ -27,20 +24,16 @@ hineh | va'ah
 7:6
 ketz | ba
 ba | haketz
-hekitz | elayikh
-hineh | ba'ah
+hekitz | elayikh | hineh | ba'ah
 
 7:7
-ba'ah | hatzefirah | eleikha
-yoshev | ha'aretz
+ba'ah | hatzefirah | eleikha | yoshev | ha'aretz
 ba | ha'et | karov | haiyom | mehumah
 velo | hed | harim
 
 7:8
-atah | mikarov | eshpokh | chamati | alayikh
-vekhileiti | api | bakh
-ushefatikh | kidrakhayikh
-venatati | alayikh | et | kol | to'avotayikh
+atah | mikarov | eshpokh | chamati | alayikh | vekhileiti | api | bakh
+ushefatikh | kidrakhayikh | venatati | alayikh | et | kol | to'avotayikh
 
 7:9
 velo | tachos | eini
@@ -123,8 +116,7 @@ unetativ | beyad | hazarim | lavaz | ulerish'ei | ha'aretz | leshalal
 vechilluhu
 
 7:22
-vahasiboti | fanai | mehem
-vechilelu
+vahasiboti | fanai | mehem | vechilelu
 et | tzefuni
 uva'u | vah | paritzim
 vechileluha

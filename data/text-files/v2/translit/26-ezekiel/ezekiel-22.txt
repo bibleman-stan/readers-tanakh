@@ -1,6 +1,5 @@
 22:1
-vayhi | devar | Yahweh
-elai | lemor
+vayhi | devar | Yahweh | elai | lemor
 
 22:2
 ve'atah | ven | adam
@@ -65,8 +64,7 @@ shochad | lakechu | vakh
 lema'an | shefokh | dam
 neshekh | vetarbit | lakachat | vatevatze'i | re'ayikh | ba'oshek
 ve'oti | shakhachat
-ne'um
-Adonai | Yahweh
+ne'um | Adonai | Yahweh
 
 22:13
 vehineh | hikeiti | khapi | el | bitz'ekh | asher | asit | ve'al | damekh
@@ -91,8 +89,7 @@ veyada'at
 ki | ani | Yahweh
 
 22:17
-vayhi | devar | Yahweh
-elai | lemor
+vayhi | devar | Yahweh | elai | lemor
 
 22:18
 ben | adam
@@ -114,8 +111,7 @@ ken | ekbotz | be'api | uvachamati
 vehinachti | vehitakhti | etkhem
 
 22:21
-vekhinasti | etkhem | venafachti | aleikhem
-be'esh | evrati | venitakhtem
+vekhinasti | etkhem | venafachti | aleikhem | be'esh | evrati | venitakhtem
 betokhah
 
 22:22
@@ -123,12 +119,10 @@ kehitukh | kesef | betokh | kur
 ken
 tutekhu | vetokhah
 vida'tem | ki | ani | Yahweh
-shafakhti | chamati
-aleikhem
+shafakhti | chamati | aleikhem
 
 22:23
-vayhi | devar | Yahweh
-elai | lemor
+vayhi | devar | Yahweh | elai | lemor
 
 22:24
 ben | adam | emor | lah | at | eretz | lo | metoharah
@@ -176,5 +170,4 @@ levilti | shachatah | velo | matzati
 va'eshpokh | aleihem | za'mi | be'esh | evrati
 kilitim
 darkam | berosham | natati
-ne'um
-Adonai | Yahweh
+ne'um | Adonai | Yahweh

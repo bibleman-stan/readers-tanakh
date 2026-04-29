@@ -19,9 +19,9 @@ description: |
 
 trigger:
   line_n_last_token:
-    skeleton_in: [אני, נאם, כה, אמר, דבר]
+    skeleton_in: [אני, נאם, כה, אמר, דבר, אדני]
   line_n1_first_token:
-    skeleton_in: [יהוה, אמר]
+    skeleton_in: [יהוה, יהוה־צבאות, יהוהצבאות, אמר, אדני, אדני־יהוה]
   combined_max_prosodic_words: 6
 
 guards:

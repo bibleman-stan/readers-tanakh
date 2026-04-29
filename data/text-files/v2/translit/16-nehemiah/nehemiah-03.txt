@@ -123,8 +123,7 @@ mipetach | beit | Elyashiv | ve'ad | takhlit
 beit | Elyashiv
 
 3:22
-ve'acharav | hecheziku | hakohanim
-anshei | hakikar
+ve'acharav | hecheziku | hakohanim | anshei | hakikar
 
 3:23
 acharav | hechezik | Binyamin | Vechashuv | neged | beitam
@@ -137,8 +136,7 @@ mibeit | Azaryah | ad | hamiktzoa | ve'ad | hapinah
 3:25
 Palal | ben | Uzai | mineged | hamiktzoa
 vehamigdal | haiyotze | mibeit | hamelekh | ha'elyon | asher | lachatzar | hamatarah
-acharav
-Pedayah | ven | Par'osh
+acharav | Pedayah | ven | Par'osh
 
 3:26
 vehanetinim
@@ -162,8 +160,8 @@ sha'ar | Hamizrach
 
 3:30
 achareiv | hechezik | Chananyah | ven | Shelemyah | Vechanun | ben | Tzalaf | hashishi
-midah | sheni
-acharav | hechezik | Meshulam | ben | Berekhyah | neged | nishkato
+midah | sheni | acharav | hechezik | Meshulam | ben | Berekhyah
+neged | nishkato
 
 3:31
 achareiv | hechezik | Malkiyah | ben | hatzorefi | ad | beit | hanetinim

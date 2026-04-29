@@ -4,17 +4,14 @@ ba'u | anashim | miziknei | Yisra'el
 lidrosh | et | Yahweh | vaiyeshevu | lefanai
 
 20:2
-vayhi | devar | Yahweh
-elai | lemor
+vayhi | devar | Yahweh | elai | lemor
 
 20:3
-ben | adam | daber | et | ziknei | Yisra'el | ve'amarta | alehem
-koh | amar | Adonai | Yahweh
+ben | adam | daber | et | ziknei | Yisra'el | ve'amarta | alehem | koh | amar | Adonai | Yahweh
 halidrosh | oti
 atem | ba'im
 chai | ani | im | idaresh | lakhem
-ne'um
-Adonai | Yahweh
+ne'um | Adonai | Yahweh
 
 20:4
 hatishpot | otam
@@ -42,8 +39,7 @@ uvegilulei | Mitzrayim | al | titama'u
 ani | Yahweh | eloheikhem
 
 20:8
-vaiyamru | vi | velo | avu | lishmoa | elai
-ish | et | shikutzei | eineihem | lo | hishlikhu
+vaiyamru | vi | velo | avu | lishmoa | elai | ish | et | shikutzei | eineihem | lo | hishlikhu
 ve'et | gilulei | Mitzrayim
 lo | azavu
 va'omar | lishpokh | chamati | aleihem | lekhalot | api | bahem
@@ -148,9 +144,7 @@ lema'an | asher | yede'u | asher | ani | Yahweh
 
 20:27
 lakhen | daber | el | beit | Yisra'el | ben | adam
-ve'amarta | aleihem
-koh | amar
-Adonai | Yahweh
+ve'amarta | aleihem | koh | amar | Adonai | Yahweh
 od | zot | gidefu | oti | avoteikhem | bema'alam | bi
 ma'al
 
@@ -164,8 +158,8 @@ vaiyasikhu | sham | et | niskeihem
 20:29
 va'omar | alehem | mah | habamah
 asher | atem | haba'im
-sham
-vaiyikare | shemah | bamah | ad | haiyom | hazeh
+sham | vaiyikare | shemah | bamah
+ad | haiyom | hazeh
 
 20:30
 lakhen | emor | el | beit | Yisra'el | koh | amar | Adonai | Yahweh
@@ -190,8 +184,7 @@ etz | va'aven
 
 20:33
 chai | ani
-ne'um
-Adonai | Yahweh
+ne'um | Adonai | Yahweh
 im | lo | beyad | chazakah | uvizroa | netuyah | uvechemah | shefukhah
 emlokh | aleikhem
 
@@ -203,15 +196,13 @@ shefukhah
 
 20:35
 veheveti | etkhem | el | midbar
-ha'amim | venishpati | itekhem | sham
-panim | el | panim
+ha'amim | venishpati | itekhem | sham | panim | el | panim
 
 20:36
 ka'asher | Nishpati | et | avoteikhem | bemidbar
 eretz | Mitzrayim
 ken | ishafet | itekhem
-ne'um
-Adonai | Yahweh
+ne'um | Adonai | Yahweh
 
 20:37
 veha'avarti | etkhem | tachat | hashavet
@@ -229,8 +220,8 @@ ki | ani | Yahweh
 ve'atem | beit | Yisra'el | koh | amar | Adonai | Yahweh | ish | gilulav | lekhu | avodu
 ve'achar
 im | einkhem
-shome'im | elai
-ve'et | shem | kodshi | lo | techalelu | od | bematenoteikhem | uvegiluleikhem
+shome'im | elai | ve'et | shem | kodshi | lo | techalelu | od
+bematenoteikhem | uvegiluleikhem
 
 20:40
 ki | vehar | kodshi | behar | merom | Yisra'el | ne'um | Adonai | Yahweh
@@ -259,5 +250,4 @@ bam | unekototem | bifneikhem | bekhol | ra'oteikhem | asher | asitem
 vida'tem | ki | ani | Yahweh
 ba'asoti | itekhem | lema'an | shemi
 lo | khedarkheikhem | hara'im | vekha'aliloteikhem | hanishchatot | beit | Yisra'el
-ne'um
-Adonai | Yahweh
+ne'um | Adonai | Yahweh

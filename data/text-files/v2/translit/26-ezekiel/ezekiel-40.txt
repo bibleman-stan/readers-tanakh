@@ -14,8 +14,7 @@ vaynicheni | el | har | gavoah | me'od | ve'alav | kemivneh | ir | minegev
 
 40:3
 vaiyavei | oti | shamah | vehineh | ish | mar'ehu | kemar'eh | nechoshet
-ufetil | pishtim | beyado
-ukeneh | hamidah
+ufetil | pishtim | beyado | ukeneh | hamidah
 vehu | omed | basha'ar
 
 40:4
@@ -153,8 +152,9 @@ chamesh | ve'esrim
 amah
 
 40:26
-uma'alot | shiv'ah | olotov | ve'elamov | lifneihem
-vetimorim | lo | echad | mipo | ve'echad | mipo | el | eilov
+uma'alot | shiv'ah | olotov | ve'elamov
+lifneihem | vetimorim | lo | echad | mipo | ve'echad | mipo
+el | eilov
 
 40:27
 vesha'ar | lechatzer | hapenimi
@@ -217,8 +217,7 @@ ushemoneh | ma'alot | ma'alov
 40:38
 velishkah | ufitchah | be'eilim
 hashe'arim
-sham
-yadichu | et | ha'olah
+sham | yadichu | et | ha'olah
 
 40:39
 uve'ulam | hasha'ar | shenayim | shulchanot | mipo
@@ -259,9 +258,7 @@ penei
 derekh | hatzafon
 
 40:45
-vaydaber
-elai
-zoh | halishkah | asher | paneiha | derekh | hadarom
+vaydaber | elai | zoh | halishkah | asher | paneiha | derekh | hadarom
 lakohanim
 shomerei | mishmeret | habayit
 
@@ -287,7 +284,6 @@ veshalosh | amot | mipo
 40:49
 orekh | ha'ulam | esrim | amah | verochav | ashtei | esreh | amah
 uvama'alot | asher | ya'alu
-elav
-ve'amudim | el | ha'eilim
+elav | ve'amudim | el | ha'eilim
 echad | mipoh
 ve'echad | mipoh

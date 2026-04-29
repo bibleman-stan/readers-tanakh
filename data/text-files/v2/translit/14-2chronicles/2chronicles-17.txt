@@ -1,7 +1,6 @@
 17:1
 vaiyimlokh | Yehoshafat | beno
-tachtav
-vaiyitchazek | al | Yisra'el
+tachtav | vaiyitchazek | al | Yisra'el
 
 17:2
 vaiyiten | chayil
@@ -42,8 +41,7 @@ ve'imahem | Elishama | Vihoram
 hakohanim
 
 17:9
-vaylamedu | Bihudah
-ve'imahem | sefer
+vaylamedu | Bihudah | ve'imahem | sefer
 torat | Yahweh
 vaiyasobu | bekhol | arei | Yehudah
 vaylamedu | ba'am
@@ -77,24 +75,20 @@ ve'imo | giborei | chayil
 shelosh | me'ot | alef
 
 17:15
-ve'al | yado | Yehochanan | hasar
-ve'imo | matayim | ushemonim
+ve'al | yado | Yehochanan | hasar | ve'imo | matayim | ushemonim
 alef
 
 17:16
 ve'al | yado | Amasyah | ven | Zikhri
-hamitnadev | Layahweh
-ve'imo | matayim | elef | gibor | chayil
+hamitnadev | Layahweh | ve'imo | matayim | elef | gibor | chayil
 
 17:17
 umin | Binyamin
 gibor | chayil
-Elyada
-ve'imo | noshekei | keshet | umagen | matayim | alef
+Elyada | ve'imo | noshekei | keshet | umagen | matayim | alef
 
 17:18
-ve'al | yado | Yehozavad
-ve'imo | me'ah | ushemonim | elef | chalutzei | tzava
+ve'al | yado | Yehozavad | ve'imo | me'ah | ushemonim | elef | chalutzei | tzava
 
 17:19
 eleh

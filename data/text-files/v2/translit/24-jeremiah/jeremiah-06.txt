@@ -42,10 +42,8 @@ choli | umakah
 
 6:8
 hivaseri | Yerushalim
-pen | teka | nafshi | mimekh
-pen | asimekh | shemamah
-eretz
-lo | Noshavah
+pen | teka | nafshi | mimekh | pen | asimekh | shemamah
+eretz | lo | Noshavah
 
 6:9
 koh | amar | Yahweh | tzeva'ot
@@ -137,9 +135,7 @@ ye'or | miyarketei | aretz
 keshet | vekhidon | yachaziku | akhzari | hu | velo | yerachemu
 kolam | kaiyam | yehemeh | ve'al | susim
 yirkavu
-arukh | ke'ish | lamilchamah
-alayikh
-bat | Tziyon
+arukh | ke'ish | lamilchamah | alayikh | bat | Tziyon
 
 6:24
 shama'nu | et | shame'o
@@ -157,8 +153,7 @@ bat | ami | chigri | sak | vehitpaleshi | va'efer
 evel | yachid | asi | lakh | mispad
 tamrurim
 ki | fit'om
-yavo | hashoded
-aleinu
+yavo | hashoded | aleinu
 
 6:27
 bachon | netatikha | ve'ami | mivtzar | veteda | uvachanta | et | darkam

@@ -1,7 +1,6 @@
 29:1
 bashanah | ha'asirit | ba'asiri | bishneim | asar | lachodesh
-hayah | devar | Yahweh
-elai | lemor
+hayah | devar | Yahweh | elai | lemor
 
 29:2
 ben | adam
@@ -47,13 +46,12 @@ kol | matenayim
 
 29:8
 lakhen | koh | amar | Adonai | Yahweh
-hini | mevi | alayikh
-charev
-vehikhrati | mimekh
-adam | uvehemah
+hini | mevi | alayikh | charev
+vehikhrati | mimekh | adam | uvehemah
 
 29:9
-vehayetah | eretz | Mitzrayim | lishmamah | vecharebah | veyade'u
+vehayetah | eretz | Mitzrayim | lishmamah | vecharebah
+veyade'u
 ki | ani | Yahweh
 ya'an | amar | Ye'or | li
 va'ani | asiti
@@ -76,8 +74,7 @@ vahafitzoti | et | Mitzrayim | bagoyim
 vezeritim | ba'aratzot
 
 29:13
-ki | koh | amar
-Adonai | Yahweh
+ki | koh | amar | Adonai | Yahweh
 miketz | arba'im | shanah | akabetz | et | Mitzrayim | min | ha'amim
 asher | Nafotzu | shamah
 
@@ -94,15 +91,13 @@ redot | bagoyim
 
 29:16
 velo | yihyeh | od | leveit | Yisra'el | lemivtach | mazkir | avon
-bifnotam | achareihem
-veyade'u
-ki | ani
-Adonai | Yahweh
+bifnotam | achareihem | veyade'u
+ki | ani | Adonai | Yahweh
 
 29:17
 vayhi | be'esrim | vasheva | shanah | barishon
-be'echad | lachodesh | hayah | devar | Yahweh
-elai | lemor
+be'echad | lachodesh
+hayah | devar | Yahweh | elai | lemor
 
 29:18
 ben | adam | Nevukhadretzar | melekh | Bavel | he'evid | et | cheilo | avodah | gedolah | el | Tzor
@@ -119,8 +114,7 @@ vehayetah | sakhar | lecheilo
 29:20
 pe'ulato | asher | avad | bah | natati | lo
 et | eretz | Mitzrayim | asher | asu | li
-ne'um
-Adonai | Yahweh
+ne'um | Adonai | Yahweh
 
 29:21
 baiyom | hahu | atzmiach | keren | leveit | Yisra'el

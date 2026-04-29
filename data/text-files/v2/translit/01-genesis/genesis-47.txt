@@ -41,8 +41,7 @@ lifnei | far'oh | vayvarekh | Ya'ako | et | par'oh
 
 47:8
 vaiyomer | par'oh | el | Ya'ako | kamah
-yemei
-shenei | chaiyeikha
+yemei | shenei | chaiyeikha
 
 47:9
 vaiyomer | Ya'ako | el | par'oh
@@ -109,8 +108,7 @@ veha'adamah | lo | tesham
 47:20
 vaiyiken | Yosef | et | kol | admat | Mitzrayim | lefar'oh
 ki | makheru | Mitzrayim | ish | sadehu
-ki | chazak | alehem
-hara'av
+ki | chazak | alehem | hara'av
 vatehi | ha'aretz | lefar'oh
 
 47:21
@@ -131,7 +129,8 @@ uzera'tem
 et | ha'adamah
 
 47:24
-vehayah | batevu'ot | unetatem | chamishit | lefar'oh
+vehayah | batevu'ot
+unetatem | chamishit | lefar'oh
 ve'arba | haiyadot | yihyeh | lakhem | lezera | hasadeh | ule'akhelekhem | vela'asher | bevateikhem
 vele'ekhol | letapekhem
 

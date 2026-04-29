@@ -1,7 +1,5 @@
 3:1
-vaiyomer | elai
-ben | adam
-et | asher | timtza
+vaiyomer | elai | ben | adam | et | asher | timtza
 ekhol
 ekhol | et | hamegilah | hazot
 velekh | daber
@@ -14,14 +12,11 @@ vaiya'akhileni | et | hamegilah | hazot
 3:3
 vaiyomer | elai | ben | adam | bitnekha | ta'akhel | ume'eikha | temale | et | hamegilah | hazot
 asher | ani
-noten | eleikha
-va'okhelah
+noten | eleikha | va'okhelah
 vatehi | befi | kidvash | lematok
 
 3:4
-vaiyomer
-elai
-ben | adam | lekh | bo | el | beit | Yisra'el
+vaiyomer | elai | ben | adam | lekh | bo | el | beit | Yisra'el
 vedibarta | vidvarai | aleihem
 
 3:5
@@ -37,10 +32,8 @@ im | lo | aleihem | shelachtikha
 hemah | yishme'u | eleikha
 
 3:7
-uveit | Yisra'el | lo | yovu | lishmoa | eleikha
-ki | einam | ovim
-lishmoa | elai
-ki | kol | beit | Yisra'el
+uveit | Yisra'el | lo | yovu | lishmoa | eleikha | ki | einam | ovim
+lishmoa | elai | ki | kol | beit | Yisra'el
 chizkei | metzach | ukeshei | lev
 hemah
 
@@ -55,18 +48,13 @@ ki | beit | meri
 hemah
 
 3:10
-vaiyomer
-elai
-ben | adam
-et | kol | devarai | asher | adaber | eleikha
-kach | bilvavekha
+vaiyomer | elai | ben | adam
+et | kol | devarai | asher | adaber | eleikha | kach | bilvavekha
 uve'azeneikha | shema
 
 3:11
-velekh | bo | el | hagolah | el | benei | amekha
-vedibarta | aleihem | ve'amarta | aleihem
-koh | amar
-Adonai | Yahweh
+velekh | bo | el | hagolah | el | benei | amekha | vedibarta | aleihem | ve'amarta | aleihem
+koh | amar | Adonai | Yahweh
 im | yishme'u | ve'im | yechdalu
 
 3:12
@@ -84,8 +72,7 @@ ra'ash | gadol
 veruach | nesa'atni
 vatikacheni
 va'elekh | mar | bachamat | ruchi
-veyad | Yahweh | alai
-chazakah
+veyad | Yahweh | alai | chazakah
 
 3:15
 va'avo | el | hagolah | Tel | Aviv | haiyoshevim | el | nehar | Kevar | va'asher
@@ -94,8 +81,8 @@ va'eshev | sham | shiv'at | yamim | mashmim | betokham
 
 3:16
 vayhi | miktzeh
-shiv'at | yamim | vayhi | devar | Yahweh
-elai | lemor
+shiv'at | yamim
+vayhi | devar | Yahweh | elai | lemor
 
 3:17
 ben | adam
@@ -120,8 +107,7 @@ ve'atah | et | nafshekha | hitzalta
 
 3:20
 uveshuv | tzadik | mitzidko | ve'asah | avel
-venatati | mikhshol | lefanav
-hu | yamut
+venatati | mikhshol | lefanav | hu | yamut
 ki | lo | hizharto | bechatato | yamut
 velo | tizakharna | tzidkotav | asher | asah
 vedamo
@@ -134,8 +120,7 @@ chayo | yichyeh | ki | nizhar
 ve'atah | et | nafshekha | hitzalta
 
 3:22
-vatehi | alai | sham
-yad | Yahweh
+vatehi | alai | sham | yad | Yahweh
 vaiyomer | elai | kum | tze | el | habik'ah
 vesham | adaber | otakh
 
@@ -147,8 +132,8 @@ va'epol | al | panai
 3:24
 vatavo | vi | ruach
 vata'amideni | al | raglai
-vaydaber | oti | vaiyomer | elai
-bo | hisager | betokh | beitekha
+vaydaber | oti | vaiyomer | elai | bo | hisager
+betokh | beitekha
 
 3:25
 ve'atah | ven | adam | hineh | natenu | aleikha | avotim
@@ -162,9 +147,7 @@ ki | beit | meri
 hemah
 
 3:27
-uvedaberi | otkha | eftach | et | pikha | ve'amarta | aleihem
-koh | amar
-Adonai | Yahweh
+uvedaberi | otkha | eftach | et | pikha | ve'amarta | aleihem | koh | amar | Adonai | Yahweh
 hashomea | yishma | vehechadel | yechdal
 ki | beit | meri
 hemah

@@ -6,14 +6,11 @@ sefu | shanah | al | shanah
 chagim | yinkofu
 
 29:2
-vahatzikoti | La'ari'el
-vehayetah | ta'aniyah | va'aniyah
+vahatzikoti | La'ari'el | vehayetah | ta'aniyah | va'aniyah
 vehayetah | li | Ka'ari'el
 
 29:3
-vechaniti | khadur
-alayikh
-vetzarti | alayikh | mutzav
+vechaniti | khadur | alayikh | vetzarti | alayikh | mutzav
 vahakimoti | alayikh | metzurot
 
 29:4
@@ -91,8 +88,9 @@ tistatar
 
 29:15
 ho | hama'amikim | Meyahweh | lastir | etzah
-vehayah | vemachshokh | ma'aseihem | vaiyomeru
-mi | ro'enu | umi | yod'enu
+vehayah | vemachshokh | ma'aseihem
+vaiyomeru | mi | ro'enu
+umi | yod'enu
 
 29:16
 hafkekhem
@@ -144,5 +142,5 @@ ve'et | elohei | Yisra'el
 ya'aritzu
 
 29:24
-veyade'u | to'ei | ruach | binah
-verognim | yilmedu | lekach
+veyade'u | to'ei | ruach | binah | verognim
+yilmedu | lekach

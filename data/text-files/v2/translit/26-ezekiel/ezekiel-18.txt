@@ -1,6 +1,5 @@
 18:1
-vayhi | devar | Yahweh
-elai | lemor
+vayhi | devar | Yahweh | elai | lemor
 
 18:2
 mah | lakhem | atem | moshelim | et | hamashal | hazeh
@@ -10,8 +9,7 @@ veshinei | habanim | tikheinah
 
 18:3
 chai | ani
-ne'um
-Adonai | Yahweh
+ne'um | Adonai | Yahweh
 im | yihyeh | lakhem | od | meshol | hamashal | hazeh | Beyisra'el
 
 18:4
@@ -22,8 +20,8 @@ hi | tamut
 
 18:5
 ve'ish
-ki | yihyeh | tzadik
-ve'asah | mishpat | utzedakah
+ki | yihyeh | tzadik | ve'asah | mishpat
+utzedakah
 
 18:6
 el | heharim | lo | akhal | ve'einav | lo | nasa | el | gilulei
@@ -49,8 +47,7 @@ mishpat | emet | ya'aseh | bein | ish | le'ish
 18:9
 bechukotai | yehalekh | umishpatai | shamar | la'asot | emet
 tzadik | hu | chayoh | yichyeh
-ne'um
-Adonai | Yahweh
+ne'um | Adonai | Yahweh
 
 18:10
 veholid | ben | paritz
@@ -128,8 +125,8 @@ alav | tihyeh
 
 18:21
 veharasha | ki | yashuv | mikol | chatatov | asher | asah
-veshamar | et | kol | chukotai
-ve'asah | mishpat | utzedakah
+veshamar | et | kol | chukotai | ve'asah | mishpat
+utzedakah
 chayoh | yichyeh
 lo | yamut
 
@@ -140,8 +137,7 @@ betzidkato | asher | asah | yichyeh
 
 18:23
 hechafotz | echpotz | mot | rasha
-ne'um
-Adonai | Yahweh
+ne'um | Adonai | Yahweh
 halo | beshuvo | miderakhav | vechayah
 
 18:24
@@ -163,8 +159,7 @@ lo | yitakhenu
 
 18:26
 beshuv | tzadik | mitzidkato | ve'asah | avel
-umet | aleihem | be'avlo | asher | asah
-yamut
+umet | aleihem | be'avlo | asher | asah | yamut
 
 18:27
 uveshuv | rasha | merish'ato | asher | asah
@@ -188,8 +183,7 @@ lo | yitakhen
 
 18:30
 lakhen | ish | kidrakhav | eshpot | etkhem | beit | Yisra'el
-ne'um
-Adonai | Yahweh
+ne'um | Adonai | Yahweh
 shuvu | vehashivu | mikol | pish'eikhem | velo | yihyeh | lakhem | lemikhshol
 avon
 
@@ -202,7 +196,6 @@ beit | Yisra'el
 
 18:32
 ki | lo | echpotz | bemot | hamet
-ne'um
-Adonai | Yahweh
+ne'um | Adonai | Yahweh
 vehashivu
 vichyu

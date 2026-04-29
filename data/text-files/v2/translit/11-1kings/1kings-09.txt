@@ -12,8 +12,7 @@ ka'asher | Nir'ah | elav | Begiv'on
 vaiyomer | Yahweh | elav | shama'ti | et | tefilatekha | ve'et | techinatekha | asher | hitchanantah | lefanai
 hikdashti | et | habayit | hazeh | asher | banitah
 lasum | shemi | sham | ad | olam
-vehayu | einai | velibi | sham
-kol | haiyamim
+vehayu | einai | velibi | sham | kol | haiyamim
 
 9:4
 ve'atah | im | telekh | lefanai | ka'asher | halakh | David | avikha | betom | levav | uveyosher
@@ -28,20 +27,19 @@ lo | yikaret | lekha | ish | me'al | kise | Yisra'el
 
 9:6
 im | shov | teshuvun | atem | uveneikhem | me'acharai | velo | tishmeru | mitzvotai | chukotai
-asher | natati | lifneikhem
-vahalakhtem | va'avadtem | elohim | acherim
+asher | natati | lifneikhem | vahalakhtem | va'avadtem | elohim | acherim
 vehishtachavitem | lahem
 
 9:7
 vehikhrati | et | Yisra'el | me'al | penei | ha'adamah | asher | natati | lahem
 ve'et | habayit | asher | hikdashti | lishmi
-ashalach | me'al | panai
+ashalach
+me'al | panai
 vehayah | Yisra'el | lemashal | velishninah | bekhol | ha'amim
 
 9:8
 vehabayit | hazeh | yihyeh | elyon
-kol | over | alav
-yishom | vesharak
+kol | over | alav | yishom | vesharak
 ve'ameru | al | meh | asah | Yahweh | kakhah
 la'aretz | hazot | velabayit | hazeh
 
@@ -74,8 +72,8 @@ velo | yasheru | be'einav
 9:13
 vaiyomer | mah | he'arim | ha'eleh
 asher | natatah | li
-achi
-vaiyikra | lahem | eretz | Kavul | ad | haiyom | hazeh
+achi | vaiyikra | lahem | eretz | Kavul
+ad | haiyom | hazeh
 
 9:14
 vaiyishlach | Chiram | lamelekh | me'ah | ve'esrim | kikar | zahav
@@ -106,8 +104,7 @@ ve'et | kol | arei | hamiskenot | asher | hayu | Lishlomoh
 ve'et | arei | harekhev
 ve'et | arei | haparashim
 ve'et | cheshek | Shelomoh | asher | chashak | livnot | Birushalim | Uvalevanon
-uvekhol
-eretz | memshalto
+uvekhol | eretz | memshalto
 
 9:20
 kol | ha'om | hanotar | min | ha'emori | hachiti | haperizi | hachivi | vehayvusi
@@ -138,8 +135,7 @@ az | banah | et | hamilo
 9:25
 vehe'elah | Shelomoh | shalosh | pe'amim | bashanah | olot | ushelamim | al | hamizbeach | asher | banah | Layahweh
 vehakteir | ito | asher | lifnei | Yahweh
-veshilam
-et | habayit
+veshilam | et | habayit
 
 9:26
 vo'oni | asah | hamelekh | Shelomoh | Be'etzyon | Gever | asher | et | Elot | al | sefat | yam | suf

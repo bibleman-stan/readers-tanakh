@@ -26,8 +26,7 @@ harosh
 hu | Ezra | alah | Mibavel
 vehu | sofer | mahir | betorat | Mosheh
 asher | natan | Yahweh | elohei | Yisra'el
-vaiyiten | lo | hamelekh | keyad | Yahweh | elohav | alav
-kol | bakashato
+vaiyiten | lo | hamelekh | keyad | Yahweh | elohav | alav | kol | bakashato
 
 7:7
 vaiya'alu | mibenei | Yisra'el | umin | hakohanim | vehalviyim | vehamshorerim | vehasho'arim | vehanetinim
@@ -127,10 +126,8 @@ di | lemah | leheve | ketzaf | al | malkhut | malka | uvenohi
 
 7:24
 ulekhom | mehod'in | di | khol | kahanaiya | velevaye | zamaraiya | tara'aiya | netinaiya
-ufalechei | beit
-elaha | denah | mindah | velo | vahalakh
-la | shalit
-lemirme | aleihom
+ufalechei | beit | elaha | denah
+mindah | velo | vahalakh | la | shalit | lemirme | aleihom
 
 7:25
 ve'ant | Ezra | kechakhemat | elahakh | di | vidokh | meni | shafetin | vedaiyanin | di | lehevon | da'anin | lekhol | amah | di | ba'avar | naharah
@@ -155,6 +152,5 @@ et | beit | Yahweh | asher | Birushalim
 ve'alai | hitah | chesed | lifnei | hamelekh | veyo'atzav
 ulekhol | sarei | hamelekh
 hagiborim
-va'ani | hitchazakti | keyad | Yahweh | elohai | alai
-va'ekbetzah | Miyisra'el | rashim
+va'ani | hitchazakti | keyad | Yahweh | elohai | alai | va'ekbetzah | Miyisra'el | rashim
 la'alot | imi

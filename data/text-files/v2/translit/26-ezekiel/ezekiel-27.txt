@@ -1,6 +1,5 @@
 27:1
-vayhi | devar | Yahweh
-elai | lemor
+vayhi | devar | Yahweh | elai | lemor
 
 27:2
 ve'atah | ven | adam
@@ -26,9 +25,7 @@ yafeyekh
 27:5
 beroshim | Misenir | banu | lakh
 et | kol | luchotayim
-erez | Milevanon | lakachu
-la'asot | toren
-alayikh
+erez | Milevanon | lakachu | la'asot | toren | alayikh
 
 27:6
 alonim | Mibashon
@@ -104,7 +101,8 @@ vetzemer | Tzachar
 
 27:19
 Vedan | Veyavan | Me'uzal | be'izvonayikh
-natanu | barzel | ashot | kidah | vekaneh | bema'aravekh
+natanu
+barzel | ashot | kidah | vekaneh | bema'aravekh
 hayah
 
 27:20
@@ -173,8 +171,7 @@ uvakhu | elayikh | bemar | nefesh | misped | mar
 
 27:32
 venase'u | elayikh | benihem | kinah
-vekonu
-alayikh | mi | Khetzor | kedumah | betokh | haiyam
+vekonu | alayikh | mi | Khetzor | kedumah | betokh | haiyam
 
 27:33
 betzet | izvonayikh | miyamim | hisba'at
@@ -187,13 +184,11 @@ betokhekh | nafalu
 
 27:35
 kol | yoshevei | ha'iyim
-shamemu
-alayikh | umalkheihem | sa'aru | sa'ar
+shamemu | alayikh | umalkheihem | sa'aru | sa'ar
 ra'amu
 panim
 
 27:36
 socharim | ba'amim
-shareku
-alayikh | balahot | hayit
+shareku | alayikh | balahot | hayit
 ve'einekh | ad | olam

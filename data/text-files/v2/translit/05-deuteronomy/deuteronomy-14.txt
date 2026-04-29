@@ -55,8 +55,8 @@ tame | hu | lakhem
 kol | tzipor | tehorah | tokhelu
 
 14:12
-vezeh | asher | lo | tokhelu | mehem
-hanesher | vehaperes
+vezeh | asher | lo | tokhelu
+mehem | hanesher | vehaperes
 veha'azeniyah
 
 14:13
@@ -114,8 +114,7 @@ kol | haiyamim
 vekhi | yirbeh | mimekha | haderekh | ki | lo | tukhal | se'eto
 ki | yirchak | mimekha | hamakom | asher | yivchar | Yahweh | eloheikha
 lasum | shemo
-sham
-ki | yevarekhkha
+sham | ki | yevarekhkha
 Yahweh | eloheikha
 
 14:25
@@ -135,8 +134,7 @@ atah | uveitekha
 14:27
 vehalevi | asher | bish'areikha
 lo | ta'azvenu
-ki | ein | lo | chelek | venachalah
-imakh
+ki | ein | lo | chelek | venachalah | imakh
 
 14:28
 miktzeh | shalosh | shanim | totzi | et | kol | ma'sar | tevu'atekha | bashanah | hahiv

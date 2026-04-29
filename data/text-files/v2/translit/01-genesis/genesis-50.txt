@@ -1,8 +1,7 @@
 50:1
 vaiyipol | Yosef
 al | penei | aviv
-vaiyevek | alav
-vaiyishak | lo
+vaiyevek | alav | vaiyishak | lo
 
 50:2
 vaytzav | Yosef | et | avadav | et | harofe'im | lachanot | et | aviv
@@ -36,8 +35,7 @@ par'oh | aleh | ukevor | et | avikha | ka'asher | hishbi'ekha
 vaiya'al | Yosef
 likbor | et | aviv
 vaiya'alu | ito | kol | avdei | far'oh | ziknei | veito
-vekhol
-ziknei | eretz | Mitzrayim
+vekhol | ziknei | eretz | Mitzrayim
 
 50:8
 vekhol | beit | Yosef
@@ -47,16 +45,14 @@ rak | tapam | vetzonam | uvekaram
 azevu | be'eretz | Goshen
 
 50:9
-vaiya'al | imo
-gam | rekhev
-gam | parashim
-vayhi | hamachaneh
+vaiya'al | imo | gam | rekhev
+gam | parashim | vayhi | hamachaneh
 kaved | me'od
 
 50:10
 vaiyavo'u | ad | goren | Ha'atad | asher | be'ever | Haiyarden
-vaiyispedu | sham | misped | gadol | vekhaved
-me'od | vaiya'as | le'aviv | evel
+vaiyispedu | sham
+misped | gadol | vekhaved | me'od | vaiya'as | le'aviv | evel
 shiv'at | yamim
 
 50:11
@@ -102,8 +98,7 @@ bedaberam | elav
 
 50:18
 vaiyelekhu | gam | echav
-vaiyipelu | lefanav
-vaiyomeru
+vaiyipelu | lefanav | vaiyomeru
 hinenu | lekha | la'avadim
 
 50:19
@@ -113,8 +108,7 @@ ani
 
 50:20
 ve'atem
-chashavtem | alai
-ra'ah
+chashavtem | alai | ra'ah
 elohim | chashavah | letovah
 lema'an | asoh | kaiyom | hazeh | lehachayot | am | rav
 
@@ -133,8 +127,7 @@ vaychi | Yosef | me'ah | va'eser
 shanim
 
 50:23
-vaiyar | Yosef | Le'efrayim | benei
-shileshim | gam | benei | Makhir | ben | Menasheh
+vaiyar | Yosef | Le'efrayim | benei | shileshim | gam | benei | Makhir | ben | Menasheh
 yuledu
 al | birkei | Yosef
 

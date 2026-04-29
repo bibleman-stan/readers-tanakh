@@ -42,8 +42,8 @@ vehoter
 36:8
 vaiya'asu | khol | chakham | lev | be'osei | hamelakhah | et | hamishkan
 eser | yeri'ot
-shesh | mashezar | utekhelet | ve'argaman | vetola'at | shani
-keruvim | ma'aseh | choshev | asah | otam
+shesh | mashezar | utekhelet | ve'argaman | vetola'at | shani | keruvim | ma'aseh | choshev
+asah | otam
 
 36:9
 orekh | hayri'ah | ha'achat | shemoneh | ve'esrim | ba'amah
@@ -122,8 +122,7 @@ hakeresh | ha'echad
 36:22
 shetei | yadot | lakeresh | ha'echad | meshulavot
 achat | el | echat
-ken | asah | lekhol
-karshei | hamishkan
+ken | asah | lekhol | karshei | hamishkan
 
 36:23
 vaiya'as | et | hakerashim | lamishkan
@@ -195,8 +194,8 @@ zahav
 
 36:35
 vaiya'as | et | haparokhet
-tekhelet | ve'argaman | vetola'at | shani
-veshesh | mashezar | ma'aseh | choshev | asah | otah | keruvim
+tekhelet | ve'argaman | vetola'at | shani | veshesh | mashezar
+ma'aseh | choshev | asah | otah | keruvim
 
 36:36
 vaiya'as | lah | arba'ah | amudei | shitim
@@ -208,8 +207,8 @@ arba'ah | adnei | khasef
 
 36:37
 vaiya'as | masokh | lefetach | ha'ohel
-tekhelet | ve'argaman | vetola'at | shani
-veshesh | mashezar | ma'aseh | rokem
+tekhelet | ve'argaman | vetola'at | shani | veshesh | mashezar
+ma'aseh | rokem
 
 36:38
 ve'et | amudav | chamishah | ve'et | vaveihem

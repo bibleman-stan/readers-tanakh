@@ -190,8 +190,7 @@ benei | Varkos | benei | Sisra | benei | Tamach
 benei | Netziach | benei | Chatifa
 
 2:55
-benei
-avdei | Shelomoh | benei | Sotai | benei | hasoferet | benei | Feruda
+benei | avdei | Shelomoh | benei | Sotai | benei | hasoferet | benei | Feruda
 
 2:56
 benei | Ya'lah | venei | Darkon | benei | Gidel
@@ -200,8 +199,7 @@ benei | Ya'lah | venei | Darkon | benei | Gidel
 benei | Shefatyah | venei | Chatil | benei | Pokheret | Hatzevayim | benei | Ami
 
 2:58
-kal | hanetinim | uvenei
-avdei | Shelomoh
+kal | hanetinim | uvenei | avdei | Shelomoh
 shelosh | me'ot | tish'im | ushenayim
 
 2:59

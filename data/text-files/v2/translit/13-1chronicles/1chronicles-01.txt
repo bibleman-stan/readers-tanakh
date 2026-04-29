@@ -9,8 +9,7 @@ Keinan | Mahalal'el | Yared
 Chanokh | Metushelach | Lamekh
 
 1:4
-Noach | Shem
-Cham | Vayafet
+Noach | Shem | Cham | Vayafet
 
 1:5
 benei | Yefet
@@ -19,18 +18,14 @@ Veyavan | Vetuval | Umeshekh
 Vetiras
 
 1:6
-uvenei
-Gomer
-Ashkanaz | Vedifat
-Vetogarmah
+uvenei | Gomer | Ashkanaz | Vedifat | Vetogarmah
 
 1:7
 uvenei | Yavan | Elishah | Vetarshishah | Kitim
 Verodanim
 
 1:8
-benei
-Cham | Kush | Umitzrayim
+benei | Cham | Kush | Umitzrayim
 Put | Ukhena'an
 
 1:9
@@ -75,7 +70,8 @@ Vegeter | Vameshekh
 1:18
 Ve'arpakhshad
 yalad | et | Shalach
-Veshelach | yalad | et | Ever
+Veshelach
+yalad | et | Ever
 
 1:19
 Ule'ever | yulad
@@ -153,9 +149,7 @@ benei | Yitzchak
 Esav | Veyisra'el
 
 1:35
-benei
-Esav
-Elifaz | Re'u'el | Vi'ush
+benei | Esav | Elifaz | Re'u'el | Vi'ush
 Veya'lam | Vekorach
 
 1:36
@@ -163,8 +157,7 @@ benei | Elifaz | Teiman | Ve'omar | Tzefi | Vega'tam
 Kenaz | Vetimna | Va'amalek
 
 1:37
-benei
-Re'u'el
+benei | Re'u'el
 Nachat | Zerach
 Shamah | Umizah
 
@@ -206,14 +199,12 @@ Dinhavah
 
 1:44
 vaiyamot | Bala
-vaiyimlokh | tachtav
-Yovav | ben | Zerach | Mibatzerah
+vaiyimlokh | tachtav | Yovav | ben | Zerach | Mibatzerah
 
 1:45
 vaiyamot
 Yovav
-vaiyimlokh | tachtav
-Chusham | me'eretz | hateimani
+vaiyimlokh | tachtav | Chusham | me'eretz | hateimani
 
 1:46
 vaiyamot
@@ -224,13 +215,11 @@ Ayot
 
 1:47
 vaiyamot
-Hadad | vaiyimlokh | tachtav
-Samlah | Mimasrekah
+Hadad | vaiyimlokh | tachtav | Samlah | Mimasrekah
 
 1:48
 vaiyamot
-Samlah | vaiyimlokh | tachtav
-Sha'ul | Merechovot | Hanahar
+Samlah | vaiyimlokh | tachtav | Sha'ul | Merechovot | Hanahar
 
 1:49
 vaiyamot

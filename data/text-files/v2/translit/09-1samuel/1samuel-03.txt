@@ -1,13 +1,10 @@
 3:1
-vehana'ar | Shemu'el | mesharet | et | Yahweh
-lifnei | Eli
+vehana'ar | Shemu'el | mesharet | et | Yahweh | lifnei | Eli
 udevar | Yahweh | hayah | yakar | baiyamim | hahem | ein | chazon
 nifratz
 
 3:2
-vayhi | baiyom | hahu
-Ve'eli
-shokhev | bimkomo
+vayhi | baiyom | hahu | Ve'eli | shokhev | bimkomo
 ve'einov | hechelu | khehot
 lo | yukhal | lir'ot
 
@@ -41,20 +38,18 @@ shuv | shekhav
 Ushemu'el
 terem
 yada | et | Yahweh
-veterem | yigaleh | elav
-devar | Yahweh
+veterem | yigaleh | elav | devar | Yahweh
 
 3:8
 vaiyosef | Yahweh | kero | Shemu'el | bashelishit
 vaiyakom | vaiyelekh | el | Eli
 vaiyomer | hini
-ki | karata | li | vaiyaven | Eli
-ki | Yahweh | kore | lana'ar
+ki | karata | li
+vaiyaven | Eli | ki | Yahweh | kore | lana'ar
 
 3:9
 vaiyomer | Eli | Lishmu'el | lekh | shekhav
-vehayah | im | yikra | eleikha
-ve'amarta | daber | Yahweh
+vehayah | im | yikra | eleikha | ve'amarta | daber | Yahweh
 ki | shomea
 avdekha
 vaiyelekh | Shemu'el
@@ -63,8 +58,7 @@ vaiyishkav | bimkomo
 3:10
 vaiyavo | Yahweh | vaiyityatzav
 vaiyikra | khefa'am | befa'am
-Shemu'el | Shemu'el | vaiyomer | Shemu'el | daber
-ki | shomea
+Shemu'el | Shemu'el | vaiyomer | Shemu'el | daber | ki | shomea
 avdekha
 
 3:11
@@ -85,8 +79,7 @@ ki | shofet | ani | et | beito | ad | olam
 ba'avon | asher | yada | ki | mekalim | lahem | banav | velo | khihah | bam
 
 3:14
-velakhen | Nishba'ti | leveit | Eli
-im | yitkaper | avon | beit | Eli | bezevach | uveminchah | ad | olam
+velakhen | Nishba'ti | leveit | Eli | im | yitkaper | avon | beit | Eli | bezevach | uveminchah | ad | olam
 
 3:15
 vaiyishkav | Shemu'el | ad | haboker
@@ -100,9 +93,8 @@ Shemu'el | beni | vaiyomer
 hineni
 
 3:17
-vaiyomer | mah | hadavar | asher | diber | eleikha
-al | na | tekhached | mimeni
-koh | ya'aseh | lekha | elohim | vekhoh | yosif
+vaiyomer | mah | hadavar | asher | diber | eleikha | al | na | tekhached
+mimeni | koh | ya'aseh | lekha | elohim | vekhoh | yosif
 im | tekhached | mimeni | davar | mikol | hadavar
 asher | diber | eleikha
 
@@ -114,8 +106,7 @@ hatov | be'einav | ya'aseh
 
 3:19
 vaiyigdal
-Shemu'el | Vayahweh | hayah | imo
-velo | hipil | mikol | devarav | aretzah
+Shemu'el | Vayahweh | hayah | imo | velo | hipil | mikol | devarav | aretzah
 
 3:20
 vaiyeda | kol | Yisra'el | Midan | ve'ad | Be'er | Shava

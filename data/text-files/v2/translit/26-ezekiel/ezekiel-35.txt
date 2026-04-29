@@ -1,18 +1,15 @@
 35:1
-vayhi | devar | Yahweh
-elai | lemor
+vayhi | devar | Yahweh | elai | lemor
 
 35:2
 ben | adam
 sim | paneikha | al | har | Se'ir
-vehinave
-alav
+vehinave | alav
 
 35:3
 ve'amarta | lo | koh | amar | Adonai | Yahweh
-hini | eleikha
-har | Se'ir | venatiti | yadi | aleikha
-unetatikha
+hini | eleikha | har | Se'ir
+venatiti | yadi | aleikha | unetatikha
 shemamah | umeshamah
 
 35:4
@@ -74,8 +71,7 @@ lanu | Nitenu | le'okhlah
 
 35:13
 vatagdilu | alai | befikhem
-veha'tartem | alai
-divreikhem
+veha'tartem | alai | divreikhem
 ani
 shama'eti
 

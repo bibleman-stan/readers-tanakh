@@ -23,7 +23,8 @@ im | lo
 vehayah | baiyom | hashishi
 vehekhinu
 et | asher | yavi'u
-vehayah | mishneh | al | asher | yilketu
+vehayah | mishneh
+al | asher | yilketu
 yom | yom
 
 16:6
@@ -35,8 +36,7 @@ ki | Yahweh | hotzi | etkhem | me'eretz | Mitzrayim
 16:7
 uvoker | ure'item | et | kevod | Yahweh | beshame'o | et | telunoteikhem
 al | Yahweh | venachnu | mah
-ki | talonu
-aleinu
+ki | talonu | aleinu
 
 16:8
 vaiyomer | Mosheh | betet | Yahweh | lakhem | ba'erev | basar | le'ekhol | velechem | baboker | lisboa
@@ -83,12 +83,11 @@ dak | kakefor | al | ha'aretz
 16:15
 vaiyir'u | venei | Yisra'el | vaiyomeru | ish | el | achiv | man | hu
 ki | lo | yade'u | mah | hu
-vaiyomer | Mosheh | alehem
-hu | halechem | asher | natan | Yahweh | lakhem | le'okhlah
+vaiyomer | Mosheh | alehem | hu | halechem
+asher | natan | Yahweh | lakhem | le'okhlah
 
 16:16
-zeh | hadavar | asher | tzivah | Yahweh | liktu | mimenu
-ish
+zeh | hadavar | asher | tzivah | Yahweh | liktu | mimenu | ish
 lefi | akhelo
 omer | lagulgolet | mispar | nafshoteikhem
 ish | la'asher | be'oholo | tikachu
@@ -107,8 +106,7 @@ ish | lefi | akhelo | lakatu
 
 16:19
 vaiyomer | Mosheh
-alehem
-ish | al | yoter | mimenu | ad | boker
+alehem | ish | al | yoter | mimenu | ad | boker
 
 16:20
 velo | shame'u | el | Mosheh | vaiyotiru | anashim | mimenu | ad | boker

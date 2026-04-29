@@ -73,7 +73,8 @@ patar
 41:13
 vayhi | ka'asher | patar | lanu
 ken | hayah
-oti | heshiv | al | kani | ve'oto | talah
+oti | heshiv | al | kani
+ve'oto | talah
 
 41:14
 vaiyishlach | par'oh | vaiyikra | et | Yosef
@@ -198,9 +199,8 @@ veyitzberu | var | tachat | yad | par'oh | okhel | be'arim
 veshamaru
 
 41:36
-vehayah | ha'okhel | lefikadon | la'aretz
-lesheva | shenei | hara'av | asher | tihyeina
-be'eretz | Mitzrayim
+vehayah | ha'okhel | lefikadon | la'aretz | lesheva | shenei | hara'av
+asher | tihyeina | be'eretz | Mitzrayim
 velo | tikaret | ha'aretz | bara'av
 
 41:37
@@ -236,8 +236,7 @@ vaiyasem | revid | hazahav | al | tzavaro
 
 41:43
 vaiyarkev | oto | bemirkevet | hamishneh | asher | lo
-vaiyikre'u | lefanav
-avrekh
+vaiyikre'u | lefanav | avrekh
 venaton | oto | al | kol | eretz | Mitzrayim
 
 41:44

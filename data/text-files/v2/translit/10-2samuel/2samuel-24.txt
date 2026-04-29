@@ -62,8 +62,9 @@ udevar | Yahweh | hayah | el | Gad | hanavi | chozeh | David | lemor
 
 24:12
 halokh | vedibarta | el | David | koh | amar | Yahweh
-shalosh | anokhi | notel | aleikha
-bechar | lekha | achat | mehem | ve'e'eseh | lakh
+shalosh | anokhi
+notel | aleikha | bechar | lekha | achat | mehem
+ve'e'eseh | lakh
 
 24:13
 vaiyavo | Gad | el | David
@@ -106,9 +107,7 @@ tzivah | Yahweh
 
 24:20
 vaiyashkef | Aravnah | vaiyar | et | hamelekh | ve'et | avadav
-oerim
-alav
-vaiyetze | Aravnah
+oerim | alav | vaiyetze | Aravnah
 vaiyishtachu | lamelekh | apav
 aretzah
 

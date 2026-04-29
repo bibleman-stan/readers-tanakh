@@ -41,8 +41,8 @@ vaiyetze | aleihem | Zerach | hakushi | bechayil | elef | alafim | umarkavot
 shelosh | me'ot | vaiyavo | ad | Mareshah
 
 14:9
-vaiyetze | Asa | lefanav
-vaiya'arkhu | milchamah | begei | Tzefatah | Lemareshah
+vaiyetze | Asa | lefanav | vaiya'arkhu | milchamah
+begei | Tzefatah | Lemareshah
 
 14:10
 vaiyikra | Asa | el | Yahweh | elohav | vaiyomar
@@ -50,9 +50,7 @@ Yahweh | ein | imekha | la'zor | bein | rav | le'ein | koach
 azerenu | Yahweh | eloheinu | ki | aleikha | Nish'anu | uveshimkha | vanu
 al | hehamon
 hazeh
-Yahweh | eloheinu | atah
-al | ya'tzor | imekha
-enoosh
+Yahweh | eloheinu | atah | al | ya'tzor | imekha | enoosh
 
 14:11
 vaiyigof | Yahweh | et | hakushim | lifnei | Asa
@@ -68,8 +66,7 @@ harbeh | me'od
 
 14:13
 vaiyaku | et | kol | he'arim | sevivot | Gerar
-ki | hayah | fachad | Yahweh
-aleihem | vaiyavozu | et | kol | he'arim
+ki | hayah | fachad | Yahweh | aleihem | vaiyavozu | et | kol | he'arim
 ki | vizah | rabah
 hayetah | vahem
 

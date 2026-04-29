@@ -6,8 +6,7 @@ tzav | et | benei | Yisra'el
 vishalechu | min | hamachaneh
 kol | tzarua
 vekhol | zav
-vekhol
-tame | lanafesh
+vekhol | tame | lanafesh
 
 5:3
 mizakhar | ad | nekevah | teshalechu | el | michutz | lamachaneh | teshalechum
@@ -33,15 +32,12 @@ hanefesh | hahiv
 5:7
 vehitvadu | et | chatatam | asher | asu
 veheshiv | et | ashamo | berosho
-vachamishito | yosef | alav
-venatan | la'asher
+vachamishito | yosef | alav | venatan | la'asher
 asham | lo
 
 5:8
-ve'im | ein | la'ish | go'el | lehashiv | ha'asham | elav
-ha'asham | hamushav | Layahweh | lakohen
-milevad | eil | hakipurim | asher | yekhaper | bo
-alav
+ve'im | ein | la'ish | go'el | lehashiv | ha'asham | elav | ha'asham | hamushav | Layahweh
+lakohen | milevad | eil | hakipurim | asher | yekhaper | bo | alav
 
 5:9
 vekhol | terumah | lekhol | kadeshei | venei | Yisra'el | asher | yakrivu | lakohen
@@ -59,8 +55,8 @@ vaydaber | Yahweh | el | Mosheh | lemor
 5:12
 daber | el | benei | Yisra'el
 ve'amarta
-alehem
-ish | ish | ki | tisteh | ishto | uma'alah | vo | ma'al
+alehem | ish | ish | ki | tisteh | ishto
+uma'alah | vo | ma'al
 
 5:13
 veshakhav | ish | otah | shikhvat | zera
@@ -79,8 +75,7 @@ lo | Nitma'ah
 
 5:15
 vehevi | ha'ish | et | ishto | el | hakohen
-vehevi | et | karebanah | aleiha
-asirit | ha'eifah
+vehevi | et | karebanah | aleiha | asirit | ha'eifah
 kemach | se'orim
 lo | yitzok | alav | shemen | velo | yiten | alav | levonah
 ki | minchat | kena'ot | hu | minchat | zikaron | mazkeret | avon
@@ -132,7 +127,8 @@ ve'amerah | ha'ishah
 amen | amen
 
 5:23
-vekhatav | et | ha'alot | ha'eleh | hakohen | basefer | umachah | el | mei | hamarim
+vekhatav | et | ha'alot | ha'eleh | hakohen | basefer
+umachah | el | mei | hamarim
 
 5:24
 vehishkah | et | ha'ishah
@@ -140,16 +136,13 @@ et | mei | hamarim
 ham'ararim | uva'u | vah | hamayim | ham'ararim | lemarim
 
 5:25
-velakach | hakohen | miyad | ha'ishah
-et | minchat | hakena'ot
+velakach | hakohen | miyad | ha'ishah | et | minchat | hakena'ot
 vehenif | et | haminchah | lifnei | Yahweh
 vehikriv | otah | el | hamizbeach
 
 5:26
-vekamatz | hakohen | min | haminchah | et | azkaratah
-vehiktir
-hamizbechah
-ve'achar | yashkeh | et | ha'ishah | et | hamayim
+vekamatz | hakohen | min | haminchah | et | azkaratah | vehiktir
+hamizbechah | ve'achar | yashkeh | et | ha'ishah | et | hamayim
 
 5:27
 vehishkah | et | hamayim | vehayetah | im | Nitme'ah | vatim'ol | ma'al | be'ishah
@@ -167,16 +160,14 @@ veniketah
 venizre'ah | zara
 
 5:29
-zot | torat
-hakena'ot | asher | tisteh | ishah | tachat | ishah
+zot | torat | hakena'ot | asher | tisteh | ishah | tachat | ishah
 venitma'ah
 
 5:30
 o | ish | asher | ta'avor | alav | ruach | kin'ah
 vekine | et | ishto
 vehe'emid | et | ha'ishah | lifnei | Yahweh
-ve'asah | lah | hakohen
-et | kol | hatorah
+ve'asah | lah | hakohen | et | kol | hatorah
 hazot
 
 5:31

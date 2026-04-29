@@ -4,8 +4,7 @@ vehukah | vamet | ein | lo
 damim
 
 22:2
-im | zarechah | hashemesh | alav
-damim | lo
+im | zarechah | hashemesh | alav | damim | lo
 shalem | yeshalem
 im | ein | lo | venimkar | bignevato
 
@@ -54,8 +53,8 @@ umet | ov | Nishbar | ov | Nishbah | ein | ro'eh
 
 22:10
 shevu'at | Yahweh | tihyeh | bein | sheneihem
-im | lo | shalach | yado | bimlekhet | re'ehu
-velakach | be'alav
+im | lo | shalach | yado
+bimlekhet | re'ehu | velakach | be'alav
 velo | yeshalem
 
 22:11
@@ -73,14 +72,12 @@ venishbar | ov | met
 be'alav | ein | imo | shalem | yeshalem
 
 22:14
-im | be'alav | imo
-lo | yeshalem
+im | be'alav | imo | lo | yeshalem
 im | sakhir | hu | ba | biskharo
 
 22:15
 vekhi | yefateh | ish | betulah | asher | lo | orasah
-veshakhav | imah
-mahor | yimharenah | lo | le'ishah
+veshakhav | imah | mahor | yimharenah | lo | le'ishah
 
 22:16
 im | ma'en | yema'en | aviha | letitah | lo
@@ -109,8 +106,7 @@ lo | te'anun
 22:22
 im | aneh | te'aneh
 oto
-ki | im | tza'ok | yitz'ak | elai
-shamoa | eshma
+ki | im | tza'ok | yitz'ak | elai | shamoa | eshma
 tza'akato
 
 22:23
@@ -121,8 +117,7 @@ yetomim
 
 22:24
 im | kesef | talveh | et | ami | et | he'ani | imakh | lo | tihyeh | lo
-kenosheh | lo | tesimun | alav
-neshekh
+kenosheh | lo | tesimun | alav | neshekh
 
 22:25
 im | chavol | tachbol
@@ -133,8 +128,7 @@ teshivenu | lo
 ki | hi | khesuto | levadah
 hi | simlato | le'oro
 bameh | yishkav
-vehayah | ki | yitz'ak | elai
-veshama'ti
+vehayah | ki | yitz'ak | elai | veshama'ti
 ki | chanun | ani
 
 22:27

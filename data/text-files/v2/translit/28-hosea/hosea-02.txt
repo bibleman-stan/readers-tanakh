@@ -11,8 +11,7 @@ ki | gadol
 yom | Yizre'el
 
 2:3
-imru | la'acheikhem
-ami | vela'achoteikhem
+imru | la'acheikhem | ami | vela'achoteikhem
 ruchamah
 
 2:4
@@ -106,7 +105,8 @@ vikhyom
 alotah | me'eretz | Mitzrayim
 
 2:18
-vehayah | vaiyom | hahu | ne'um | Yahweh | tikre'i
+vehayah | vaiyom | hahu | ne'um | Yahweh
+tikre'i
 ishi
 velo | tikre'i | li | od | ba'li
 

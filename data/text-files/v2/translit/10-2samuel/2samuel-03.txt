@@ -1,7 +1,8 @@
 3:1
 vatehi | hamilchamah | arukah | bein | beit | Sha'ul
 uvein | beit | David
-Vedavid | holekh | vechazek | uveit | Sha'ul
+Vedavid | holekh | vechazek
+uveit | Sha'ul
 holekhim | vedalim
 
 3:2
@@ -11,8 +12,7 @@ haiyizre'elit
 
 3:3
 umishnehu | Khil'av | La'avigel
-eshet
-Naval | hakarmeli
+eshet | Naval | hakarmeli
 vehashelishi | Avshalom | ben | Ma'akhah
 bat | Talmai | melekh | Geshur
 
@@ -64,8 +64,7 @@ oto
 3:12
 vaiyishlach | Avner | mal'akhim | el | David | tachatov | lemor | lemi | aretz
 lemor | karetah | veritekha | iti
-vehineh | yadi | imakh
-lehasev | eleikha | et | kol | Yisra'el
+vehineh | yadi | imakh | lehasev | eleikha | et | kol | Yisra'el
 
 3:13
 vaiyomer | tov
@@ -85,8 +84,7 @@ vaiyikacheha | me'im | ish | me'im
 Palti'el | ben | Lush
 
 3:16
-vaiyelekh | itah | ishah | halokh | uvakhoh | achareiha
-ad | Bachurim
+vaiyelekh | itah | ishah | halokh | uvakhoh | achareiha | ad | Bachurim
 vaiyomer | elav | Avner | lekh | shuv
 vaiyasho
 
@@ -94,8 +92,7 @@ vaiyasho
 udevar | Avner | hayah
 im | ziknei | Yisra'el | lemor
 gam | temol | gam | shilshom
-heyitem | mevakshim | et | David | lemelekh
-aleikhem
+heyitem | mevakshim | et | David | lemelekh | aleikhem
 
 3:18
 ve'atah | asu
@@ -139,8 +136,8 @@ vaiyelekh | beshalom
 3:24
 vaiyavo | Yo'av | el | hamelekh
 vaiyomer | meh | asitah
-hineh | va | Avner | eleikha
-lamah | zeh | shilachto | vaiyelekh | halokh
+hineh | va | Avner | eleikha | lamah | zeh | shilachto
+vaiyelekh | halokh
 
 3:25
 yada'ta | et | Avner | ben | Ner

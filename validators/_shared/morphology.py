@@ -139,6 +139,13 @@ QATAL_COMMON = {
     # narrative-frequent action verbs
     "הרג", "גרש", "חטא", "סלח", "חזק", "שלם", "כבד", "תם", "נשא", "ענש",
     "שאה", "שעה", "השע", "שאל",
+    # Hifil qatal forms (audited Lev 1:6 'וְהִפְשִׁיט', Lev 16:7 'וְלָקַח').
+    # Weqatal pattern ו+verb is detected by checking inner skel against this list
+    # in the wayyiqtol/weqatal branch of is_finite_verb_skel.
+    "הפשיט", "הוציא", "הוצא", "הודיע", "הניח", "הוסיף", "הקריב", "הציל",
+    "הראה", "הזכיר", "הסיר", "הקריב", "הקטיר", "הקדיש", "הסתיר", "הכיר",
+    "המית", "החיה", "הכה", "הודה", "הושיע", "הגיד", "השיב", "הוריד",
+    "הקים", "הביא", "הוציא", "הסיע",
 }
 
 
@@ -213,6 +220,14 @@ def is_finite_verb_skel(skeleton: str) -> bool:
         if inner in YIQTOL_KNOWN_NOUNS:
             return False
         return True
+    # Weqatal — ו + qatal verb stem (audited Lev 1:6 וְהִפְשִׁיט / Lev 16:7 וְלָקַח).
+    # If the inner skeleton (without vav) is in QATAL_COMMON, treat as weqatal.
+    # Vav-prefixed nouns are filtered via YIQTOL_KNOWN_NOUNS membership above
+    # (already handled for the wayyiqtol case).
+    if len(skeleton) >= 4 and skeleton[0] == "ו":
+        inner = skeleton[1:]
+        if inner in QATAL_COMMON:
+            return True
     # yiqtol — single-prefix + 3-letter root skeleton
     # Pattern: prefix (י/ת/א/נ) + root consonants ≥ 3 total chars
     # Uses module-level YIQTOL_KNOWN_NOUNS (also reused by wayyiqtol filter above).
@@ -290,6 +305,25 @@ PREP_SKELETONS = {
     "מעל", "מתחת", "עלפני", "מלפני", "מפני", "מאת", "בעד", "נגד",
     "אצל", "מאחרי", "בקרב", "בעבר", "מנגד", "סביב", "מסביב", "סביבות",
     "עם", "עד", "כמו", "מתוך", "מבין",
+    # Prep + pronominal suffix common forms (Num 6:2 'אֲלֵהֶם' audit gap):
+    # אֵל-suffix
+    "אלי", "אליו", "אליה", "אליך", "אלינו", "אליכם", "אליכן", "אלהם", "אלהן", "אליהם", "אליהן",
+    # עַל-suffix
+    "עלי", "עליו", "עליה", "עליך", "עלינו", "עליכם", "עליכן", "עלהם", "עליהם", "עליהן",
+    # מִן + suffix (rare; usually maqqef-bound)
+    "ממני", "ממנו", "ממנה", "ממך", "ממנו", "מכם", "מהם", "מהן",
+    # תַחַת-suffix
+    "תחתי", "תחתיו", "תחתיה", "תחתיך", "תחתיהם",
+    # לִפְנֵי-suffix
+    "לפני", "לפניו", "לפניה", "לפניך", "לפנינו", "לפניכם", "לפניהם",
+    # אַחֲרֵי-suffix
+    "אחרי", "אחריו", "אחריה", "אחריך", "אחרינו", "אחריכם", "אחריהם",
+    # בֵּין-suffix
+    "ביני", "בינו", "בינה", "בינך", "בינינו", "בינהם", "בינכם",
+    # עִם-suffix
+    "עמי", "עמו", "עמה", "עמך", "עמנו", "עמכם", "עמהם",
+    # עַד-suffix
+    "עדי", "עדיו", "עדיה", "עדיך", "עדינו", "עדיכם", "עדיהם",
 }
 
 BOUND_PREP_PREFIXES = ("ב", "ל", "כ", "מ")

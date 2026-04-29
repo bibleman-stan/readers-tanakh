@@ -29,8 +29,7 @@ ve'et | haperizi
 1:6
 vaiyanos | Adoni | Vezek
 vaiyirdefu
-acharav
-vaiyochazu | oto
+acharav | vaiyochazu | oto
 vaykatzetzu
 et | behonot | yadav
 veraglav
@@ -140,8 +139,7 @@ veshem | ha'ir | lefanim | Luz
 vaiyir'u | hashomerim
 ish | yotze | min | ha'ir
 vaiyomeru | lo | har'enu | na | et | mevo | ha'ir
-ve'asinu | imekha
-chased
+ve'asinu | imekha | chased
 
 1:25
 vaiyar'em | et | mevo | ha'ir
@@ -151,8 +149,7 @@ shilechu
 
 1:26
 vaiyelekh | ha'ish
-eretz
-hachitim
+eretz | hachitim
 vaiyiven | ir | vaiyikra | shemah | Luz
 hu | shemah | ad | haiyom | hazeh
 

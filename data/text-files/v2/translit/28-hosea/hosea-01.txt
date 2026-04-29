@@ -16,8 +16,7 @@ bat | Divlayim | vatahar | vateled | lo
 ben
 
 1:4
-vaiyomer | Yahweh | elav
-kera | shemo
+vaiyomer | Yahweh | elav | kera | shemo
 Yizre'el
 ki | od | me'at | ufakadti | et | demei | Yizre'el | al | beit | Yehu
 vehishbati | mamlekhut | beit | Yisra'el
@@ -47,6 +46,5 @@ vateled | ben
 
 1:9
 vaiyomer
-kera | shemo | Lo | Ami
-ki | atem | lo | ami
-ve'anokhi | lo | ehyeh | lakhem
+kera | shemo | Lo | Ami | ki | atem | lo | ami | ve'anokhi
+lo | ehyeh | lakhem

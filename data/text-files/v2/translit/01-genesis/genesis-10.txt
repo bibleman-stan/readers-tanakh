@@ -1,7 +1,6 @@
 10:1
 ve'eleh | toldot | benei | Noach
-Shem
-Cham | Vayafet
+Shem | Cham | Vayafet
 vaiyivaldu | lahem | banim
 achar | hamabul
 
@@ -12,10 +11,7 @@ Veyavan | Vetuval | Umeshekh
 Vetiras
 
 10:3
-uvenei
-Gomer
-Ashkanaz | Verifat
-Vetogarmah
+uvenei | Gomer | Ashkanaz | Verifat | Vetogarmah
 
 10:4
 uvenei | Yavan | Elishah | Vetarshish | Kitim
@@ -26,8 +22,7 @@ me'eleh | Nifredu | iyei | hagoyim | be'artzotam
 ish | lilshono | lemishpechotam | begoyehem
 
 10:6
-uvenei
-Cham | Kush | Umitzrayim
+uvenei | Cham | Kush | Umitzrayim
 Ufut | Ukhena'an
 
 10:7
@@ -99,23 +94,22 @@ eleh | venei | Cham | lemishpechotam | lilshonotam | be'artzotam | begoyehem
 Ulshem | yulad
 gam | hu
 avi | kol | benei | Ever
-achi
-Yefet | hagadol
+achi | Yefet | hagadol
 
 10:22
 benei | Shem | Eilam | Ve'ashur | Ve'arpakhshad
 Velud | Va'aram
 
 10:23
-uvenei
-Aram
+uvenei | Aram
 Utz | Vechul
 Vegeter | Vamash
 
 10:24
 Ve'arpakhshad
 yalad | et | Shalach
-Veshelach | yalad | et | Ever
+Veshelach
+yalad | et | Ever
 
 10:25
 Ul'ever | yulad

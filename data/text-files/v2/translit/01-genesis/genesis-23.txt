@@ -1,7 +1,6 @@
 23:1
 vaiyihyu | chaiyei | Sarah | me'ah | shanah | ve'esrim | shanah
-vesheva | shanim | shenei
-chaiyei | Sarah
+vesheva | shanim | shenei | chaiyei | Sarah
 
 23:2
 vatamot | Sarah | Bekiryat | Arba | hi | Chevron
@@ -12,10 +11,8 @@ vaiyakom | Avraham | me'al | penei | meto
 vaydaber | el | benei | Chet | lemor
 
 23:4
-ger | vetoshav | anokhi
-imakhem
-tenu | li | achuzat | kever | imakhem
-ve'ekberah | meti | milefanai
+ger | vetoshav | anokhi | imakhem | tenu | li | achuzat | kever | imakhem | ve'ekberah | meti
+milefanai
 
 23:5
 vaiya'anu | venei | Chet | et | Avraham | lemor | lo
@@ -58,8 +55,7 @@ vaiyishtachu | Avraham | lifnei | am | ha'aretz
 vaydaber | el | Efron | be'azenei | am | ha'aretz | lemor
 akh | im | atah | lu
 shema'eni
-natati | kesef | hasadeh | kach | mimeni
-ve'ekberah | et | meti
+natati | kesef | hasadeh | kach | mimeni | ve'ekberah | et | meti
 shamah
 
 23:14

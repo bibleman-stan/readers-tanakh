@@ -16,8 +16,7 @@ gam | ha'ish | Mosheh | gadol | me'od | be'eretz | Mitzrayim
 be'einei | avdei | far'oh | uve'einei | ha'am
 
 11:4
-vaiyomer | Mosheh | koh
-amar | Yahweh | kachatzot | halaylah
+vaiyomer | Mosheh | koh | amar | Yahweh | kachatzot | halaylah
 ani | yotze | betokh | Mitzrayim
 
 11:5
@@ -27,8 +26,7 @@ vekhol | bekhor | behemah
 
 11:6
 vehayetah | tze'akah | gedolah | bekhol | eretz | Mitzrayim
-asher | kamohu | lo | Nihyatah | vekhamohu
-lo | tosif
+asher | kamohu | lo | Nihyatah | vekhamohu | lo | tosif
 
 11:7
 ulekhol | benei | Yisra'el | lo | yecheratz | kelev | leshono | leme'ish
@@ -45,8 +43,8 @@ vaiyetze | me'im | par'oh | bochori | af
 
 11:9
 vaiyomer | Yahweh | el | Mosheh
-lo | yishma | aleikhem
-par'oh | lema'an | revot | moftai | be'eretz | Mitzrayim
+lo | yishma | aleikhem | par'oh
+lema'an | revot | moftai | be'eretz | Mitzrayim
 
 11:10
 Umosheh | Ve'aharon | asu | et | kol | hamofetim | ha'eleh

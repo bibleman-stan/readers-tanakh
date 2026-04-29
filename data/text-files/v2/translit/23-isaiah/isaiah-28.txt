@@ -5,7 +5,8 @@ halumei | yayin
 
 28:2
 hineh | chazak | ve'amitz | Ladonai | kezerem | barad
-sa'ar | katev | kezerem | mayim | kabirim | shotefim | hiniach | la'aretz
+sa'ar | katev
+kezerem | mayim | kabirim | shotefim | hiniach | la'aretz
 beyad
 
 28:3
@@ -21,8 +22,7 @@ yivla'enah
 
 28:5
 baiyom | hahu | yihyeh | Yahweh | tzeva'ot | la'ateret | tzevi
-velitzfirat | tif'arah | lish'ar
-amo
+velitzfirat | tif'arah | lish'ar | amo
 
 28:6
 uleruach | mishpat | laiyoshev | al | hamishpat | veligvurah | meshivei | milchamah | sha'erah
@@ -48,8 +48,7 @@ gemulei | mechalav | atikei | mishadayim
 ki | tzav | latzav | tzav | latzav
 kav | lakav
 kav | lakav
-ze'eir | sham
-ze'eir | sham
+ze'eir | sham | ze'eir | sham
 
 28:11
 ki | bela'agei | safah | uvelashon | acheret
@@ -64,9 +63,7 @@ shemoa
 
 28:13
 vehayah | lahem | devar | Yahweh | tzav | latzav | tzav | latzav | kav | lakav | kav | lakav
-ze'eir | sham
-ze'eir | sham
-lema'an | yelekhu | vekhashelu | achor | venishbaru
+ze'eir | sham | ze'eir | sham | lema'an | yelekhu | vekhashelu | achor | venishbaru
 venokshu
 venilkadu
 
@@ -104,7 +101,8 @@ vihyitem | lo | lemirmas
 28:19
 midei | avero | yikach | etkhem
 ki | vaboker | baboker | ya'avor | baiyom | uvalayelah
-vehayah | rak | zeva'ah | havin | shemu'ah
+vehayah | rak | zeva'ah
+havin | shemu'ah
 
 28:20
 ki | katzar | hamatza | mehistarea | vehammasekhah | tzarah | kehitkanes

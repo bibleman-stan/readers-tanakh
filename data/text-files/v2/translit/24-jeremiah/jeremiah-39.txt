@@ -1,7 +1,6 @@
 39:1
 bashanah | hateshi'it | Letzidkiyahu | melekh | Yehudah | bachodesh | ha'asiri | ba | Nevukhadretzar | melekh | Bavel | vekhol | cheilo | el | Yerushalim
-vaiyatzuru
-aleiha
+vaiyatzuru | aleiha
 
 39:2
 be'ashtei | esreh | shanah | Letzidkiyahu | bachodesh | harevi'i
@@ -58,17 +57,16 @@ vaytzav | Nevukhadretzar | melekh | Bavel | al | Yirmeyahu
 beyad | Nevuzar'adan | rav | tabachim | lemor
 
 39:12
-kachenu | ve'eineikha | sim | alav
-ve'al | ta'as | lo | me'umah | ra
-ki | ka'asher | yedaber | eleikha
-ken | aseh | imo
+kachenu | ve'eineikha | sim | alav | ve'al | ta'as | lo
+me'umah | ra
+ki | ka'asher | yedaber | eleikha | ken
+aseh | imo
 
 39:13
 vaiyishlach | Nevuzar'adan | rav | tabachim | Unevushazban | rav | saris
 Veneregal | Sar | Etzer
 rav | mag
-vekhol
-rabei | melekh | Bavel
+vekhol | rabei | melekh | Bavel
 
 39:14
 vaiyishlechu | vaiyikchu | et | Yirmeyahu | mechatzar | hamatarah | vaiyitenu | oto | el | Gedalyahu | ben | Achikam | ben | Shafan
@@ -90,7 +88,8 @@ velo | tinaten | beyad | ha'anashim
 asher | atah | yagor | mipeneihem
 
 39:18
-ki | malet | amaletkha | uvacherev | lo | tipol
+ki | malet | amaletkha | uvacherev
+lo | tipol
 vehayetah | lekha | nafshekha | leshalal
 ki | vatachta | bi
 ne'um | Yahweh

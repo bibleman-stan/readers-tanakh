@@ -1,6 +1,5 @@
 15:1
-vayhi | devar | Yahweh
-elai | lemor
+vayhi | devar | Yahweh | elai | lemor
 
 15:2
 ben | adam | mah | yihyeh | etz | hagefen | mikol | etz | hazemorah | asher | hayah
@@ -8,9 +7,7 @@ ba'atzei | haiya'ar
 
 15:3
 hayukach | mimenu | etz | la'asot | limlakhah
-im | yikchu | mimenu | yated
-litlot | alav
-kol | keli
+im | yikchu | mimenu | yated | litlot | alav | kol | keli
 
 15:4
 hineh | la'esh | Nitan | le'okhlah | et | shenei | ketzotav | akhelah | ha'esh | vetokho | Nachar
@@ -38,5 +35,4 @@ vida'tem | ki | ani | Yahweh | besumi | et | panai | bahem
 15:8
 venatati | et | ha'aretz
 shemamah
-ya'an | ma'alu | ma'al | ne'um
-Adonai | Yahweh
+ya'an | ma'alu | ma'al | ne'um | Adonai | Yahweh

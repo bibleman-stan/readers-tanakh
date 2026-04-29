@@ -20,8 +20,7 @@ pen | akhelkha | badarekh
 33:4
 vaiyishma | ha'am | et | hadavar | hara | hazeh
 vaiyit'abalu
-velo | shatu | ish | edyo
-alav
+velo | shatu | ish | edyo | alav
 
 33:5
 vaiyomer | Yahweh | el | Mosheh | emor | el | benei | Yisra'el | atem | am | kesheh | oref
@@ -50,7 +49,8 @@ ha'ohelah
 33:9
 vehayah | kevo | Mosheh | ha'ohelah
 yered | amud | he'anan
-ve'amad | petach | ha'ohel
+ve'amad
+petach | ha'ohel
 vediber | im | Mosheh
 
 33:10
@@ -78,8 +78,7 @@ ve'atah | im | na | matzati | chen | be'eineikha | hodi'eni | na | et | derakhek
 ve'eda'akha
 lema'an | emtza | chen | be'eineikha
 ure'eh
-ki | amekha
-hagoy | hazeh
+ki | amekha | hagoy | hazeh
 
 33:14
 vaiyomar
@@ -88,13 +87,11 @@ vahanichoti | lakh
 
 33:15
 vaiyomer
-elav
-im | ein | paneikha | holekhim | al | ta'alenu | mizeh
+elav | im | ein | paneikha | holekhim | al | ta'alenu | mizeh
 
 33:16
-uvameh | yivada | efo | ki | matzati | chen | be'eineikha | ani | ve'amekha
-halo | belekhtekha | imanu
-venifleinu | ani | ve'amekha | mikol | ha'am | asher | al | penei | ha'adamah
+uvameh | yivada | efo | ki | matzati | chen | be'eineikha | ani | ve'amekha | halo
+belekhtekha | imanu | venifleinu | ani | ve'amekha | mikol | ha'am | asher | al | penei | ha'adamah
 
 33:17
 vaiyomer | Yahweh | el | Mosheh
@@ -109,8 +106,7 @@ et | kevodekha
 
 33:19
 vaiyomer | ani | a'avir | kol | tuvi | al | paneikha
-vekarati | veshem | Yahweh | lefaneikha
-vechanoti | et | asher | achon
+vekarati | veshem | Yahweh | lefaneikha | vechanoti | et | asher | achon
 verichamti
 et | asher | arachem
 
@@ -122,9 +118,7 @@ vachai
 
 33:21
 vaiyomer | Yahweh
-hineh | makom
-iti
-venitzavta | al | hatzur
+hineh | makom | iti | venitzavta | al | hatzur
 
 33:22
 vehayah | ba'avor | kevodi

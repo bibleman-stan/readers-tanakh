@@ -59,8 +59,7 @@ shiv'ah | asar | elef | umatayim
 yotze'ei | tzava | lamilchamah
 
 7:12
-Veshupim | Vechupim | benei | Ir
-Chushim | benei | Acher
+Veshupim | Vechupim | benei | Ir | Chushim | benei | Acher
 
 7:13
 benei | Naftali | Yachatzi'el | Veguni | Veyetzer | Veshalum
@@ -177,8 +176,7 @@ eleh
 benei | Yaflet
 
 7:34
-uvenei
-Shamer
+uvenei | Shamer
 Achi | Verohagah
 Veyachbah | Va'aram
 
@@ -189,8 +187,7 @@ Tzofach | Veyimna
 Veshelesh | Ve'amal
 
 7:36
-benei
-Tzofach
+benei | Tzofach
 Suach | Vecharnefer | Veshu'al
 Uveri | Veyimrah
 
@@ -201,15 +198,13 @@ Betzer | Vahod | Veshama | Veshilshah | Veyitran | Uve'era
 uvenei | Yeter | Yefuneh | Ufispah | Va'ra
 
 7:39
-uvenei
-Ula
+uvenei | Ula
 Arach | Vechani'el
 Veritzya
 
 7:40
 kol | eleh | venei | Asher | rashei | veit | ha'avot | berurim | giborei | chayalim
-rashei
-hanesi'im
+rashei | hanesi'im
 vehityachsam | batzava | bamilchamah
 misparam | anashim
 esrim | veshishah

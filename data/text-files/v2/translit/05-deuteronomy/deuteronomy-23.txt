@@ -54,7 +54,8 @@ mikereh | layelah | veyatza | el | michutz | lamachaneh
 lo | yavo | el | tokh | hamachaneh
 
 23:12
-vehayah | lifnot | erev | yirchatz | bamayim | ukhevo | hashemesh
+vehayah | lifnot | erev
+yirchatz | bamayim | ukhevo | hashemesh
 yavo | el | tokh | hamachaneh
 
 23:13
@@ -70,13 +71,13 @@ veshavta | vekhisita | et | tze'atekha
 
 23:15
 ki | Yahweh | eloheikha | mithalekh | bekerev | machanekha | lehatzilekha | velatet | oyeveikha | lefaneikha
-vehayah | machaneikha | kadoosh
-velo | yir'eh | vekha | ervat | davar
-veshav | me'achareikha
+vehayah | machaneikha
+kadoosh
+velo | yir'eh | vekha | ervat | davar | veshav | me'achareikha
 
 23:16
-lo | tasgir | eved | el | adonav | asher | yinatzel | eleikha
-me'im | adonav
+lo | tasgir | eved | el | adonav
+asher | yinatzel | eleikha | me'im | adonav
 
 23:17
 imekha | yeshev | bekirbecha | bamakom | asher | yivchar | be'achad | she'areikha
@@ -109,7 +110,8 @@ asher | atah | va | shamah | lerishtah
 ki | tidor | neder | Layahweh | eloheikha
 lo | te'acher | leshalemo
 ki | darosh | yidreshenu | Yahweh | eloheikha | me'imakh
-vehayah | vekha | chet
+vehayah | vekha
+chet
 
 23:23
 vekhi | techdal | lindor | lo | yihyeh | vekha

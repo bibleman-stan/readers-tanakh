@@ -49,8 +49,7 @@ vaiyomer | Yahweh | el | Kayin
 ei
 Hevel | achikha
 vaiyomer | lo | yada'ti
-hashomer | achi
-anokhi
+hashomer | achi | anokhi
 
 4:10
 vaiyomer | meh | asita
@@ -74,7 +73,8 @@ gadol | avoni | mineso
 hen | gerashta | oti | haiyom | me'al | penei | ha'adamah | umipaneikha
 esater
 vehayiti | na | vanad | ba'aretz
-vehayah | khol | motze'i | yahargeni
+vehayah | khol | motze'i
+yahargeni
 
 4:15
 vaiyomer | lo | Yahweh | lakhen | kol | horeg | Kayin
@@ -113,14 +113,12 @@ Tzilah
 4:20
 vateled | Adah | et | Yaval
 hu | hayah
-avi
-yoshev | ohel | umikneh
+avi | yoshev | ohel | umikneh
 
 4:21
 veshem | achiv | Yuval
 hu | hayah
-avi
-kol | tofes | kinor
+avi | kol | tofes | kinor
 ve'ugav
 
 4:22

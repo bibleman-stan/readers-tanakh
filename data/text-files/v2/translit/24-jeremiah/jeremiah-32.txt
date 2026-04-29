@@ -32,8 +32,7 @@ lo | tatzlichu
 32:6
 vaiyomer
 Yirmeyahu
-hayah | devar | Yahweh
-elai | lemor
+hayah | devar | Yahweh | elai | lemor
 
 32:7
 hineh | Chanam'el | ben | Shalum | dodekha
@@ -94,14 +93,13 @@ lemor
 ahah | Adonai | Yahweh
 hineh | atah | asita | et | hashamayim | ve'et | ha'aretz | bekhochakha | hagadol
 uvizro'akha
-hanetuyah | lo | yipale | mimekha
-kol | davar
+hanetuyah | lo | yipale | mimekha | kol | davar
 
 32:18
 oseh | chesed | la'alafim
 umeshalem | avon | avot | el | cheik | beneihem
-achareihem
-ha'el | hagadol | hagibor | Yahweh | tzeva'ot
+achareihem | ha'el | hagadol | hagibor
+Yahweh | tzeva'ot
 shemo
 
 32:19
@@ -113,8 +111,7 @@ vekhifri | ma'alalav
 
 32:20
 ashersa | samta | otot | umofetim | be'eretz | Mitzrayim | ad | haiyom | hazeh | Uveyisra'el | uva'adam
-vata'aseh | lekha | shem
-kaiyom | hazeh
+vata'aseh | lekha | shem | kaiyom | hazeh
 
 32:21
 vatotze | et | amekha | et | Yisra'el | me'eretz | Mitzrayim
@@ -135,10 +132,8 @@ hazot
 
 32:24
 hineh | hasolelot | ba'u | ha'ir | lelakhedah
-veha'ir | Nitenah | beyad | hakasdim | hanilchamim | aleiha
-mipenei | hacherev | vehara'av
-vehadaver
-va'asher | dibarta | hayah
+veha'ir | Nitenah | beyad | hakasdim | hanilchamim | aleiha | mipenei | hacherev | vehara'av
+vehadaver | va'asher | dibarta | hayah
 vehinekha | ro'eh
 
 32:25
@@ -230,8 +225,7 @@ ve'et | yir'ati | eten | bilvavam | levilti
 sur | me'alai
 
 32:41
-vesasti | aleihem
-lehetiv | otam
+vesasti | aleihem | lehetiv | otam
 uneta'tim | ba'aretz | hazot | be'emet | bekhol | libi
 uvekhol | nafshi
 

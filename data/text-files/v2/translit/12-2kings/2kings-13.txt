@@ -80,16 +80,14 @@ vaiyikaver | Yo'ash | Beshomeron | im | malkhei | Yisra'el
 13:14
 Ve'elisha | chalah | et | chalyo | asher | yamut | bo
 vaiyered | elav | Yo'ash | melekh | Yisra'el | vaiyevek | al | panav | vaiyomar
-avi | avi
-rekhev | Yisra'el
+avi | avi | rekhev | Yisra'el
 ufarashav
 
 13:15
 vaiyomer | lo | Elisha
 kach
 keshet | vechitzim
-vaiyikach | elav
-keshet | vechitzim
+vaiyikach | elav | keshet | vechitzim
 
 13:16
 vaiyomer | lemelekh | Yisra'el | harkev | yadekha | al | hakeshet
@@ -136,8 +134,7 @@ et | Yisra'el
 kol | yemei | Yeho'achaz
 
 13:23
-vaiyachan | Yahweh | otam | vayrachamem | vaiyifen | aleihem
-lema'an | berito
+vaiyachan | Yahweh | otam | vayrachamem | vaiyifen | aleihem | lema'an | berito
 et | Avraham
 Yitzchak | Veya'ako
 velo | avah | hashchitam

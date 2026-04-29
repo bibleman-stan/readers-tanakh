@@ -59,11 +59,8 @@ avi | ha'ezri
 Vegid'on | beno | chovet | chitim | bagat | lehanis | mipenei | Midyan
 
 6:12
-vaiyera | elav
-mal'akh | Yahweh
-vaiyomer | elav
-Yahweh | imekha
-gibor | hechayil
+vaiyera | elav | mal'akh | Yahweh
+vaiyomer | elav | Yahweh | imekha | gibor | hechayil
 
 6:13
 vaiyomer | elav | Gid'on | bi | adoni
@@ -87,26 +84,20 @@ ve'anokhi | hatza'ir | beveit | avi
 
 6:16
 vaiyomer | elav | Yahweh
-ki | ehyeh
-imakh
-vehikita | et | Midyan | ke'ish | echad
+ki | ehyeh | imakh | vehikita | et | Midyan | ke'ish | echad
 
 6:17
-vaiyomer | elav
-im | na | matzati | chen | be'eineikha
+vaiyomer | elav | im | na | matzati | chen | be'eineikha
 ve'asita | li | ot
 sha'atah | medaber | imi
 
 6:18
-al | na | tamush | mizeh | ad | bo'i | eleikha
-vehotzeti | et | minchati
-vehinachti | lefaneikha
-vaiyomar
+al | na | tamush | mizeh | ad | bo'i | eleikha | vehotzeti | et | minchati
+vehinachti | lefaneikha | vaiyomar
 anokhi | eshev | ad | shuvekha
 
 6:19
-Vegid'on | ba | vaiya'as | gedi | izim | ve'eifat | kemach | matzot
-habasar | sam | basal
+Vegid'on | ba | vaiya'as | gedi | izim | ve'eifat | kemach | matzot | habasar | sam | basal
 vehamarak
 sam | baparur
 vaiyotze | elav | el | tachat | ha'elah
@@ -160,8 +151,7 @@ veha'alita | olah | ba'atzei | ha'asherah | asher | tikhrot
 6:27
 vaiyikach | Gid'on | asarah | anashim | me'avadav
 vaiya'as
-ka'asher | diber | elav
-Yahweh
+ka'asher | diber | elav | Yahweh
 vayhi | ka'asher | yare | et | beit | aviv | ve'et | anshei | ha'ir | me'asot | yomam
 vaiya'as | layelah
 
@@ -183,7 +173,8 @@ hadavar | hazeh
 
 6:30
 vaiyomeru | anshei | ha'ir | el | Yo'ash
-hotze | et | binkha | veyamot
+hotze | et | binkha
+veyamot
 ki | natatz | et | mizbach | haba'al
 vekhi | kharat
 ha'asherah | asher | alav
@@ -214,8 +205,8 @@ vaiyiza'ek | Avi'ezer
 acharav
 
 6:35
-umal'akhim | shalach | bekhol | Menasheh | vaiyiza'ek | gam | hu | acharav
-umal'akhim | shalach | Be'asher | Uvizvulun | Uvenaftali
+umal'akhim | shalach | bekhol | Menasheh | vaiyiza'ek | gam | hu
+acharav | umal'akhim | shalach | Be'asher | Uvizvulun | Uvenaftali
 vaiya'alu | likratam
 
 6:36

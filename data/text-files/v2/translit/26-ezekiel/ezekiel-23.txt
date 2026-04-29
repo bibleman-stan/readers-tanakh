@@ -1,6 +1,5 @@
 23:1
-vayhi | devar | Yahweh
-elai | lemor
+vayhi | devar | Yahweh | elai | lemor
 
 23:2
 ben | adam
@@ -18,16 +17,14 @@ betuleihen
 23:4
 ushemotan | Oholah | hagedolah | Ve'oholivah | achotah
 vatihyeinah | li
-vateladnah | banim | uvanot
-ushemotan
+vateladnah | banim | uvanot | ushemotan
 Shomeron | Oholah
 Virushalim
 Oholivah
 
 23:5
 vatizen | Oholah
-tachtai
-vata'gav | al | me'ahaveiha | el | Ashur
+tachtai | vata'gav | al | me'ahaveiha | el | Ashur
 kerovim
 
 23:6
@@ -46,13 +43,11 @@ ve'et | taznuteiha | Mimitzrayim | lo | azavah
 ki | otah | shakhevu | vin'ureiha
 vehemah | isu
 dadei | vetuleiha
-vaiyishpekhu | taznutam
-aleiha
+vaiyishpekhu | taznutam | aleiha
 
 23:9
 lakhen | netatiha | beyad | me'ahaveiha
-beyad | benei | Ashur | asher | agevah
-aleihem
+beyad | benei | Ashur | asher | agevah | aleihem
 
 23:10
 hemah | gilu | ervatah | baneiha | uvenoteiha | lakachu
@@ -63,8 +58,7 @@ asu | vah
 
 23:11
 vatere | achotah | Oholivah
-vatashchet | agvatah | mimenah
-ve'et | taznuteiha | mizenunei
+vatashchet | agvatah | mimenah | ve'et | taznuteiha | mizenunei
 achotah
 
 23:12
@@ -91,8 +85,8 @@ demut | benei | Vavel | Kasdim
 eretz | moladtam
 
 23:16
-vata'gavh | aleihem
-lemar'eh | eineiha | vatishlach | mal'akhim | aleihem | Kasdimah
+vata'gavh | aleihem | lemar'eh | eineiha
+vatishlach | mal'akhim | aleihem | Kasdimah
 
 23:17
 vaiyavo'u | eleiha | venei | Vavel | lemishkav | dodim
@@ -122,9 +116,8 @@ ba'sot | Mimitzrayim | dadayikh | lema'an | shedei | ne'urayikh
 
 23:22
 lakhen | Oholivah | koh | amar | Adonai | Yahweh
-hini | me'ir | et | me'ahavayikh | alayikh
-et | asher | nake'ah | nafshekh | mehem
-vahavetim | alayikh | misaviv
+hini | me'ir | et | me'ahavayikh | alayikh | et | asher | nake'ah | nafshekh
+mehem | vahavetim | alayikh | misaviv
 
 23:23
 benei | Vavel | vekhol | Kasdim | Pekod | Veshoa | Vekoa
@@ -193,8 +186,7 @@ achotekh | Shomeron
 veshatit | otah | umatzit | ve'et | charaseiha | tegaremi
 veshadayikh | tenateki
 ki | ani | dibarti
-ne'um
-Adonai | Yahweh
+ne'um | Adonai | Yahweh
 
 23:35
 lakhen | koh | amar | Adonai | Yahweh
@@ -203,10 +195,8 @@ vatashlikhi | oti | acharei | gavekh
 vegam | at | se'i | zimatekh | ve'et | taznutayikh
 
 23:36
-vaiyomer | Yahweh | elai
-ben | adam
-hatishpot | et | Oholah
-ve'et | Oholivah
+vaiyomer | Yahweh | elai | ben | adam
+hatishpot | et | Oholah | ve'et | Oholivah
 vehaged | lahen
 et | to'avoteihen
 
@@ -237,8 +227,7 @@ ve'adit | edi
 
 23:41
 veyashavt | al | mitah | khevudah
-veshulchan | arukh | lefaneiha
-uketareti | veshamni
+veshulchan | arukh | lefaneiha | uketareti | veshamni
 samt | aleiha
 
 23:42
@@ -256,8 +245,7 @@ vahi
 23:44
 vaiyavo | eleiha | kevo | el | ishah | zonah
 ken | ba'u | el | Oholah | ve'el | Oholivah
-ishot
-hazimah
+ishot | hazimah
 
 23:45
 va'anashim | tzadikim | hemah | yishpetu | othem | mishpat | no'afot
@@ -266,8 +254,7 @@ shofekhot | dam
 ki | no'afot | henah | vedam | bideihen
 
 23:46
-ki | koh | amar
-Adonai | Yahweh
+ki | koh | amar | Adonai | Yahweh
 ha'aleh | aleihem | kahal | venaton | ethen | leza'avah | velavaz
 
 23:47
@@ -282,8 +269,7 @@ vehishbati | zimah | min | ha'aretz | venivaseru | kol | hanashim
 velo | ta'aseinah | kezimatkhenah
 
 23:49
-venatenu | zimatkhenah | aleikhen
-vachata'ei | giluleikhen | tisenah
+venatenu | zimatkhenah | aleikhen | vachata'ei | giluleikhen
+tisenah
 vida'tem
-ki | ani
-Adonai | Yahweh
+ki | ani | Adonai | Yahweh

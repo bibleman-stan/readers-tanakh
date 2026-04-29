@@ -2,8 +2,9 @@
 vaydaber | Yahweh | el | Mosheh | behar | Sinai | lemor
 
 25:2
-daber | el | benei | Yisra'el | ve'amarta | alehem
-ki | tavo'u | el | ha'aretz | asher | ani | noten | lakhem
+daber | el | benei | Yisra'el | ve'amarta | alehem | ki | tavo'u | el | ha'aretz
+asher | ani
+noten | lakhem
 veshavtah | ha'aretz
 shabat | Layahweh
 
@@ -27,8 +28,7 @@ shenat | shabaton | yihyeh | la'aretz
 25:6
 vehaytah | shabat | ha'aretz | lakhem | le'okhlah | lekha
 ule'avdekha | vela'amatekha | veliskhirekha | ultoshavekha
-hagarim
-imakh
+hagarim | imakh
 
 25:7
 velivhemtekha | velachaiyah | asher | be'artzekha
@@ -94,8 +94,7 @@ va'asitem | otam | vishavtem | al | ha'aretz | lavetach
 25:19
 venatnah | ha'aretz | piryah
 va'akhaltem | lasoa
-vishavtem | lavetach
-aleiha
+vishavtem | lavetach | aleiha
 
 25:20
 vekhi | tomeru | mah | nokhal | bashanah | hashevi'it
@@ -124,21 +123,20 @@ imadi
 uvekhol | eretz | achuzatkhem | ge'ulah | titenu | la'aretz
 
 25:25
-ki | yamukh | achikha
-umakhar | me'achuzato | uva | go'alo | hakaro | elav
-vega'al
-et | mikar | achiv
+ki | yamukh | achikha | umakhar
+me'achuzato | uva | go'alo | hakaro | elav | vega'al | et | mikar | achiv
 
 25:26
 ve'ish
 ki | lo | yihyeh | lo
 go'el
 vehisigah | yado
-umatza | kedei | ge'ulato
+umatza
+kedei | ge'ulato
 
 25:27
-vechishav | et | shenei | mikaro | veheshiv | et | ha'odef
-la'ish | asher | makhar | lo
+vechishav | et | shenei | mikaro
+veheshiv | et | ha'odef | la'ish | asher | makhar | lo
 veshav | la'achuzato
 
 25:28
@@ -150,8 +148,7 @@ veshav | la'achuzato
 25:29
 ve'ish | ki | yimkor | beit | moshav | ir | chomah
 vehaytah | ge'ulato | ad | tom
-shenat | mikaro | yamim
-tihyeh | ge'ulato
+shenat | mikaro | yamim | tihyeh | ge'ulato
 
 25:30
 ve'im | lo | yiga'el | ad | melot | lo | shanah | temimah
@@ -183,16 +180,12 @@ lo | yimakher
 ki | achuzat | olam | hu | lahem
 
 25:35
-vekhi | yamukh | achikha | umatah | yado
-imakh
-vehechezakta | bo
-ger | vetoshav | vachai
-imakh
+vekhi | yamukh | achikha | umatah | yado | imakh | vehechezakta | bo
+ger | vetoshav | vachai | imakh
 
 25:36
 al | tikach | me'ito | neshekh | vetarbit | veyareta
-me'eloheikha | vechei | achikha
-imakh
+me'eloheikha | vechei | achikha | imakh
 
 25:37
 et | kaspekha | lo | titen | lo | beneshekh | uvemarbit
@@ -208,13 +201,11 @@ vekhi | yamukh | achikha | imakh | venimkar | lakh | lo | ta'avod | bo
 avodat | aved
 
 25:40
-kesakhir | ketoshav | yihyeh | imakh
-ad | shenat | haiyovel | ya'avod | imakh
+kesakhir | ketoshav | yihyeh | imakh | ad | shenat | haiyovel | ya'avod | imakh
 
 25:41
 veyatza | me'imakh
-hu | uvanav | imo
-veshav | el | mishpachto
+hu | uvanav | imo | veshav | el | mishpachto
 ve'el | achuzat | avotav
 yashuv
 
@@ -243,11 +234,8 @@ bahem | ta'avodu | uve'acheikhem | benei | Yisra'el | ish | be'achiv
 lo | tirdeh | vo | befarekh
 
 25:47
-vekhi | tasig | yad | ger | vetoshav | imakh
-umakh | achikha
-imo
-venimkar | leger | toshav | imakh
-o | le'eker | mishpachat | ger
+vekhi | tasig | yad | ger | vetoshav | imakh | umakh | achikha
+imo | venimkar | leger | toshav | imakh | o | le'eker | mishpachat | ger
 
 25:48
 acharei | Nimkar | ge'ulah | tihyeh | lo
@@ -259,7 +247,8 @@ ov | mishe'er | besaro | mimishpachto | yig'alenu
 ov | hisigah | yado | venig'al
 
 25:50
-vechishav | im | konehu | mishenat | himakherov | lo | ad | shenat | haiyovel
+vechishav | im | konehu | mishenat | himakherov | lo
+ad | shenat | haiyovel
 vehayah | kesef | mikaro | bemispar | shanim | kimei | sakhir
 yihyeh | imo
 
@@ -269,11 +258,11 @@ lefihen | yashiv | ge'ulato | mikesef | miknato
 
 25:52
 ve'im | me'at | Nish'ar | bashanim | ad | shenat | haiyovel
-vechishav | lo | kefi | shanav | yashiv | et | ge'ulato
+vechishav | lo
+kefi | shanav | yashiv | et | ge'ulato
 
 25:53
-kiskhir | shanah | beshanah | yihyeh | imo
-lo | yirdenu | beferekh | le'eineikha
+kiskhir | shanah | beshanah | yihyeh | imo | lo | yirdenu | beferekh | le'eineikha
 
 25:54
 ve'im | lo | yiga'el | be'eleh

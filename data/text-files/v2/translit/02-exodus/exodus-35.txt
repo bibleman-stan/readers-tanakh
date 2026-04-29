@@ -1,9 +1,7 @@
 35:1
 vaiyakhel | Mosheh | et | kol | adat | benei | Yisra'el
-vaiyomer | alehem
-eleh | hadevarim
-asher | tzivah | Yahweh
-la'asot | otam
+vaiyomer | alehem | eleh | hadevarim
+asher | tzivah | Yahweh | la'asot | otam
 
 35:2
 sheshet | yamim | te'aseh | melakhah
@@ -26,8 +24,7 @@ yevi'eha | et | terumat | Yahweh
 zahav | vakhesef | unechoshet
 
 35:6
-utekhelet | ve'argaman | vetola'at | shani
-veshesh | ve'izim
+utekhelet | ve'argaman | vetola'at | shani | veshesh | ve'izim
 
 35:7
 ve'orot | eilim | me'adamim | ve'orot | techashim
@@ -111,8 +108,7 @@ kol | nediv | lev | hevi'u | chach | vanezem | vetaba'at | vekhumaz | kol | keli
 vekhol | ish | asher | henif | tenufat | zahav | Layahweh
 
 35:23
-vekhol | ish | asher | Nimtza | ito | tekhelet | ve'argaman | vetola'at | shani
-veshesh | ve'izim
+vekhol | ish | asher | Nimtza | ito | tekhelet | ve'argaman | vetola'at | shani | veshesh | ve'izim
 ve'orot | eilim | me'adamim | ve'orot | techashim
 hevi'u
 

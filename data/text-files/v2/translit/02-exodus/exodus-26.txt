@@ -1,8 +1,8 @@
 26:1
 ve'et | hamishkan | ta'aseh
 eser | yeri'ot
-shesh | mashezar | utekhelet | ve'argaman | vetola'at | shani
-keruvim | ma'aseh | choshev | ta'aseh | otam
+shesh | mashezar | utekhelet | ve'argaman | vetola'at | shani | keruvim | ma'aseh | choshev
+ta'aseh | otam
 
 26:2
 orekh | hayri'ah | ha'achat | shemoneh | ve'esrim | ba'amah
@@ -96,8 +96,7 @@ hakeresh | ha'echad
 26:17
 shetei | yadot | lakeresh | ha'echad | meshulavot
 ishah | el | achotah
-ken | ta'aseh | lekhol
-karshei | hamishkan
+ken | ta'aseh | lekhol | karshei | hamishkan
 
 26:18
 ve'asita | et | hakerashim | lamishkan
@@ -171,8 +170,8 @@ vahakemota
 et | hamishkan | kemishpato | asher | hare'eita | bahar
 
 26:31
-ve'asita | farokhet | tekhelet | ve'argaman | vetola'at | shani
-veshesh | mashezar | ma'aseh | choshev | ya'aseh | otah | keruvim
+ve'asita | farokhet | tekhelet | ve'argaman | vetola'at | shani | veshesh | mashezar
+ma'aseh | choshev | ya'aseh | otah | keruvim
 
 26:32
 venatatah | otah | al | arba'ah | amudei | shitim | metzupim | zahav
@@ -199,8 +198,8 @@ titen | al | tzela | tzafon
 
 26:36
 ve'asita | masokh | lefetach | ha'ohel
-tekhelet | ve'argaman | vetola'at | shani
-veshesh | mashezar | ma'aseh | rokem
+tekhelet | ve'argaman | vetola'at | shani | veshesh | mashezar
+ma'aseh | rokem
 
 26:37
 ve'asita | lamasakh | chamishah | amudei | shitim

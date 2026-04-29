@@ -1,7 +1,6 @@
 1:1
 vaiyitchazek | Shelomoh | ven | David | al | malkhuto
-Vayahweh | elohav | imo
-vaygadelehu | lema'elah
+Vayahweh | elohav | imo | vaygadelehu | lema'elah
 
 1:2
 vaiyomer | Shelomoh | lekhol | Yisra'el | lesarei | ha'alafim | vehame'ot | velashofetim | ulekhol | nasi | lekhol | Yisra'el
@@ -36,15 +35,14 @@ she'al | mah | eten | lakh
 
 1:8
 vaiyomer | Shelomoh | lelohim
-atah | asita | im | David | avi
-chesed | gadol
+atah | asita | im | David | avi | chesed | gadol
 vehimlakhtani
 tachtav
 
 1:9
 atah | Yahweh | elohim
-ye'amen | devarekha | im | David | avi
-ki | atah | himlakhtani | al | am
+ye'amen | devarekha | im | David | avi | ki | atah | himlakhtani
+al | am
 rav | ka'afar | ha'aretz
 
 1:10
@@ -56,15 +54,13 @@ ki | mi | yishpot | et | amekha | hazeh | hagadol
 1:11
 vaiyomer | elohim | Lishlomoh | ya'an | asher | hayetah | zot | im | levavekha | velosha | sha'alta | osher | nekhasim | vekhavod | ve'et | nefesh | sone'eikha
 vegam | yamim | rabim | lo | sha'aleta
-vatish'al | lekha | chokhmah | umada | asher | tishpot | et | ami | asher | himlakhtikha
-alav
+vatish'al | lekha | chokhmah | umada | asher | tishpot | et | ami
+asher | himlakhtikha | alav
 
 1:12
 hachakhemah | vehammada | natun | lakh
 ve'osher | unekhasim | vekhavod | eten | lakh
-asher | lo | hayah | khen | lamelakhim | asher | lefaneikha
-ve'achareikha
-lo | yihyeh | ken
+asher | lo | hayah | khen | lamelakhim | asher | lefaneikha | ve'achareikha | lo | yihyeh | ken
 
 1:13
 vaiyavo | Shelomoh | labamah | asher | Begiv'on | Yerushalim | milifnei | ohel | mo'ed | vaiyimlokh
@@ -92,5 +88,4 @@ vekhen | lekhol | malkhei | hachitim | umalkhei | Aram
 beyadam | yotzi'u
 
 1:18
-vaiyomer | Shelomoh | livnot | bayit | leshem | Yahweh | uvayit
-lemalkhuto
+vaiyomer | Shelomoh | livnot | bayit | leshem | Yahweh | uvayit | lemalkhuto

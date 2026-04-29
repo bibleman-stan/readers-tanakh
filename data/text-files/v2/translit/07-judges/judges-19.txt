@@ -13,8 +13,8 @@ yamim | arba'ah | chodashim
 
 19:3
 vaiyakom | ishah | vaiyelekh | achareiha | ledaber | al | libah | lahashivoh
-vena'aro | imo
-vetzemed | chamorim | vatevi'ehu | beit | aviha
+vena'aro | imo | vetzemed | chamorim
+vatevi'ehu | beit | aviha
 vaiyir'ehu | avi | hana'arah
 vaiyismach | likrato
 
@@ -60,10 +60,8 @@ vehalakhta | le'ohalekha
 19:10
 velo | avah | ha'ish | lalun
 vaiyakom | vaiyelekh | vaiyavo | ad | nokhach | Yevus
-hi | Yerushalim
-ve'imo | tzemed | chamorim | chavushim
-ufilagsho
-imo
+hi | Yerushalim | ve'imo | tzemed | chamorim | chavushim
+ufilagsho | imo
 
 19:11
 hem | im | Yevus
@@ -119,9 +117,7 @@ im | avadeikha | ein | machsor | kol | davar
 
 19:20
 vaiyomer | ha'ish | hazaken | shalom | lakh
-rak | kol | machsorkha
-alai
-rak | barechov | al | talan
+rak | kol | machsorkha | alai | rak | barechov | al | talan
 
 19:21
 vayvi'ehu | leveito
@@ -135,7 +131,8 @@ hemah | meitivim | et | libam
 vehineh | anshei | ha'ir | anshei | venei | veliya'al | Nasabu | et | habayit
 mitdapekim | al | hadalet
 vaiyomeru | el | ha'ish | ba'al | habayit | hazaken | lemor
-hotze | et | ha'ish | asher | ba | el | beitekha | veneda'enu
+hotze | et | ha'ish | asher | ba | el | beitekha
+veneda'enu
 
 19:23
 vaiyetze | aleihem | ha'ish | ba'al | habayit
@@ -147,14 +144,12 @@ et | hanevalah | hazot
 hineh | viti | habetulah | ufilagshehu | otzi'ah | na | otam | ve'anu | otam
 va'asu | lahem | hatov | be'eineikhem
 vela'ish | hazeh | lo | ta'asu
-devar
-hanevalah | hazot
+devar | hanevalah | hazot
 
 19:25
 velo | avu | ha'anashim | lishmoa | lo
 vaiyachazek | ha'ish | befilagsho
-vaiyotze | aleihem
-hachutz
+vaiyotze | aleihem | hachutz
 vaiyede'u | otah | vaiyit'alelu | vah | kol | halaylah | ad | haboker
 vayshalechuha | ka'alot | hashachar
 
@@ -186,5 +181,4 @@ gevul | Yisra'el
 19:30
 vehayah | khol | haro'eh | ve'amar | lo | Nihyetah | velo | Nir'atah | kazot
 lemiyom | alot | benei | Yisra'el | me'eretz | Mitzrayim | ad | haiyom | hazeh
-simu | lakhem | aleiha
-utzu | vedaberu
+simu | lakhem | aleiha | utzu | vedaberu

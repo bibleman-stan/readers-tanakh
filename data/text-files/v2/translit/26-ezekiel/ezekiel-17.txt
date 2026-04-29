@@ -1,6 +1,5 @@
 17:1
-vayhi | devar | Yahweh
-elai | lemor
+vayhi | devar | Yahweh | elai | lemor
 
 17:2
 ben | adam
@@ -28,8 +27,8 @@ tzaftzafah
 samo
 
 17:6
-vaiyitzmach | vayhi | legefen | sorachat | shiflat | komah | lifnot | daliyotav | elav
-vesharashav | tachtav | yihyu
+vaiyitzmach | vayhi | legefen | sorachat | shiflat | komah | lifnot | daliyotav | elav | vesharashav
+tachtav | yihyu
 vatehi | legefen
 vata'as | badim
 vateshalach
@@ -62,8 +61,7 @@ halo | khega'at | bah | ruach | hakadim | tivash | yavosh
 al | arugot | tzimchah | tivash
 
 17:11
-vayhi | devar | Yahweh
-elai | lemor
+vayhi | devar | Yahweh | elai | lemor
 
 17:12
 emor | na | leveit | hameri

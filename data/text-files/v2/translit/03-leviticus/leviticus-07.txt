@@ -1,6 +1,5 @@
 7:1
-vezot | torat
-ha'asham | kodesh | kadashim
+vezot | torat | ha'asham | kodesh | kadashim
 hu
 
 7:2
@@ -57,8 +56,7 @@ lekhol | benei | Aharon | tihyeh
 ish | ke'achiv
 
 7:11
-vezot | torat
-zevach | hashelamim | asher | yakriv | Layahweh
+vezot | torat | zevach | hashelamim | asher | yakriv | Layahweh
 
 7:12
 im | al | todah | yakrivenu
@@ -71,7 +69,8 @@ al | chalot | lechem | chametz | yakriv
 karebano | al | zevach | todat | shelamav
 
 7:14
-vehikriv | mimenu | echad | mikol | korban | terumah | Layahweh
+vehikriv | mimenu | echad | mikol | korban
+terumah | Layahweh
 lakohen | hazorek | et | dam | hashelamim
 lo | yihyeh
 
@@ -103,9 +102,7 @@ yokhal | basar
 
 7:20
 vehanefesh | asher | tokhal | basar | mizevach | hashelamim | asher | Layahweh
-vetum'ato
-alav
-venikhretah | hanefesh | hahiv | me'ameiha
+vetum'ato | alav | venikhretah | hanefesh | hahiv | me'ameiha
 
 7:21
 venefesh | ki | tiga | bekhol | tame | betum'at | adam | o | bivhemah | teme'ah | o | bekhol | sheketz | tame
@@ -152,8 +149,7 @@ lifnei | Yahweh
 
 7:31
 vehiktir | hakohen | et | hachelev
-hamizbechah
-vehayah | hechazeh | Le'aharon | ulevanav
+hamizbechah | vehayah | hechazeh | Le'aharon | ulevanav
 
 7:32
 ve'et | shok | haiyamin
@@ -172,7 +168,8 @@ me'et | benei | Yisra'el
 
 7:35
 zot | mishchat | Aharon | umishchat | banav | me'ishei
-Yahweh | beyom | hikriv | otam | lekhahen | Layahweh
+Yahweh
+beyom | hikriv | otam | lekhahen | Layahweh
 
 7:36
 asher | tzivah | Yahweh | latet | lahem | beyom | mashecho | otam

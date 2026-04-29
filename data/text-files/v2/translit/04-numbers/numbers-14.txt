@@ -36,9 +36,9 @@ tovah | ha'aretz | me'od | me'od
 
 14:8
 im | chafetz | banu | Yahweh
-vehevi | otanu | el | ha'aretz | hazot | unetanah | lanu
-eretz
-asher | hi | zavat | chalav
+vehevi | otanu | el | ha'aretz | hazot
+unetanah | lanu
+eretz | asher | hi | zavat | chalav
 udevash
 
 14:9
@@ -120,9 +120,10 @@ vekhol | mena'atzai
 lo | yir'uha
 
 14:24
-ve'avdi | Khalev | ekev | hayetah | ruach | acheret | imo
-vaymale | acharai | vahavi'otiv | el | ha'aretz | asher | ba | shamah
-vezar'o | yorishenah
+ve'avdi | Khalev | ekev | hayetah | ruach | acheret | imo | vaymale
+acharai | vahavi'otiv | el | ha'aretz | asher | ba | shamah
+vezar'o
+yorishenah
 
 14:25
 veha'amalki | vehakena'ani | yoshev | ba'emek
@@ -135,9 +136,7 @@ el | Mosheh | ve'el | Aharon | lemor
 
 14:27
 ad | matai | la'edah | hara'ah | hazot | asher | hemah | malinim
-alai
-et | telunot | benei | Yisra'el | asher | hemah | malinim | alai
-shama'eti
+alai | et | telunot | benei | Yisra'el | asher | hemah | malinim | alai | shama'eti
 
 14:28
 emor | alehem | chai | ani | ne'um | Yahweh
@@ -147,8 +146,7 @@ e'eseh | lakhem
 
 14:29
 bamidbar | hazeh | yipelu | figreikhem | vekhol | pekudeikhem | lekhol | misparkhem
-miben | esrim | shanah | vama'elah | asher | halinotem
-alai
+miben | esrim | shanah | vama'elah | asher | halinotem | alai
 
 14:30
 im | atem | tavo'u | el | ha'aretz | asher | nasati | et | yadi
@@ -180,9 +178,7 @@ vida'tem | et | tenu'ati
 14:35
 ani | Yahweh | dibarti
 im | lo | zot | e'eseh | lekhol | ha'edah | hara'ah | hazot
-hano'adim
-alai
-bamidbar | hazeh | yitamu
+hano'adim | alai | bamidbar | hazeh | yitamu
 vesham | yamutu
 
 14:36
@@ -227,11 +223,9 @@ al | ta'alu | ki | ein | Yahweh | bekirbekhem
 velo | tinagefu | lifnei | oyeveikhem
 
 14:43
-ki | ha'amalki | vehakena'ani | sham | lifneikhem
-unefaltem | becharev
+ki | ha'amalki | vehakena'ani | sham | lifneikhem | unefaltem | becharev
 ki | al | ken | shavtem | me'acharei | Yahweh
-velo | yihyeh | Yahweh
-imakhem
+velo | yihyeh | Yahweh | imakhem
 
 14:44
 vaiya'pilu | la'alot

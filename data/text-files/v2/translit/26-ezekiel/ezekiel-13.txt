@@ -1,6 +1,5 @@
 13:1
-vayhi | devar | Yahweh
-elai | lemor
+vayhi | devar | Yahweh | elai | lemor
 
 13:2
 ben | adam
@@ -39,9 +38,7 @@ va'ani | lo | dibarti
 lakhen | koh | amar | Adonai | Yahweh
 ya'an | daberkhem | shav
 vachazitem | kazav
-lakhen | hini | aleikhem
-ne'um
-Adonai | Yahweh
+lakhen | hini | aleikhem | ne'um | Adonai | Yahweh
 
 13:9
 vehayetah | yadi | el | hanevi'im | hachozim | shav | vehakosemim | kazav
@@ -49,8 +46,7 @@ besod | ami | lo | yihyu | uvikhtav | beit | Yisra'el | lo | yikatevu
 ve'el | admat | Yisra'el
 lo | yavo'u
 vida'tem
-ki | ani
-Adonai | Yahweh
+ki | ani | Adonai | Yahweh
 
 13:10
 ya'an | uveya'an | hit'u | et | ami | lemor | shalom | ve'ein | shalom
@@ -66,8 +62,7 @@ veruach | se'arot | tevakea
 
 13:12
 vehineh | nafal | hakir
-halo | ye'amer | aleikhem
-aiyeh | hatiach | asher | tachtem
+halo | ye'amer | aleikhem | aiyeh | hatiach | asher | tachtem
 
 13:13
 lakhen | koh | amar | Adonai | Yahweh | uvika'ti | ruach | se'arot
@@ -94,13 +89,11 @@ nevi'ei | Yisra'el | hanibe'im | el | Yerushalim
 vehachozim | lah
 chazon | shalom
 ve'ein | shalom
-ne'um
-Adonai | Yahweh
+ne'um | Adonai | Yahweh
 
 13:17
-ve'atah | ven | adam | sim | paneikha | el | benot | amekha
-hamitnabe'ot | milibehen | vehinave
-aleihen
+ve'atah | ven | adam | sim | paneikha | el | benot | amekha | hamitnabe'ot
+milibehen | vehinave | aleihen
 
 13:18
 ve'amarta | koh | amar | Adonai | Yahweh | ho | limtaperot | kesatot | al | kol | atzilei | yadai | ve'osot | hamispachot | al | rosh | kol | komah

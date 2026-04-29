@@ -47,11 +47,12 @@ shatu | ha'am | velaketu | vetachanu | varechayim | o | dakhu | bamedokhah
 uvishelu | baparur
 ve'asu | oto
 ugot
-vehayah | ta'mo | keta'am | leshad | hashamen
+vehayah | ta'mo | keta'am
+leshad | hashamen
 
 11:9
-uveredet | hatal | al | hamachaneh | layelah | yered | haman
-alav
+uveredet | hatal | al | hamachaneh | layelah
+yered | haman | alav
 
 11:10
 vaiyishma | Mosheh | et | ha'am | bokheh | lemishpechotav
@@ -63,8 +64,7 @@ ra
 11:11
 vaiyomer | Mosheh | el | Yahweh | lamah | hare'ota | le'avdekha
 velamah | lo | matzati | chen | be'eineikha
-lasum | et | masa | kol | ha'am | hazeh
-alai
+lasum | et | masa | kol | ha'am | hazeh | alai
 
 11:12
 he'anokhi | hariti | et | kol | ha'am | hazeh
@@ -93,14 +93,11 @@ vaiyomer | Yahweh | el | Mosheh | esfah | li | shiv'im | ish | miziknei | Yisra'
 asher | yada'ta
 ki | hem | ziknei | ha'am
 veshoterav | velakachta | otam | el | ohel | mo'ed
-vehityatzevu | sham
-imakh
+vehityatzevu | sham | imakh
 
 11:17
 veyaradti | vedibarti | imekha | sham
-ve'atzalti | min | haruach | asher | aleikha
-vesamti | aleihem
-venase'u | itekha | bemasa | ha'am
+ve'atzalti | min | haruach | asher | aleikha | vesamti | aleihem | venase'u | itekha | bemasa | ha'am
 velo | tisa | atah | levadekha
 
 11:18
@@ -149,8 +146,7 @@ vaiya'amed | otam
 sevivot | ha'ohel
 
 11:25
-vaiyered | Yahweh | be'anan | vaydaber | elav
-vaiyatzel | min | haruach | asher | alav
+vaiyered | Yahweh | be'anan | vaydaber | elav | vaiyatzel | min | haruach | asher | alav
 vaiyiten | al | shiv'im | ish
 hazekenim | vayhi | kenoach | aleihem | haruach
 vaiyitnabe'u
@@ -177,8 +173,7 @@ kela'em
 vaiyomer | lo | Mosheh
 hamkane | atah | li
 umi | yiten | kol | am | Yahweh | nevi'im
-ki | yiten | Yahweh | et | rucho
-aleihem
+ki | yiten | Yahweh | et | rucho | aleihem
 
 11:30
 vaiye'asef | Mosheh | el | hamachaneh

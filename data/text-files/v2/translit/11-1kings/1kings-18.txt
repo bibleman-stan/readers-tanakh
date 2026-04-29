@@ -1,9 +1,8 @@
 18:1
 vayhi | yamim | rabim
-udevar | Yahweh | hayah | el | Eliyahu | bashanah | hashelishit
-lemor | lekh | hera'eh | el | Ach'av
-ve'etenah | matar
-al | penei | ha'adamah
+udevar | Yahweh | hayah | el | Eliyahu | bashanah | hashelishit | lemor
+lekh | hera'eh | el | Ach'av
+ve'etenah | matar | al | penei | ha'adamah
 
 18:2
 vaiyelekh | Eliyahu | lehera'ot | el | Ach'av
@@ -77,8 +76,8 @@ vaharagani
 
 18:15
 vaiyomer | Eliyahu
-chai | Yahweh | tzeva'ot | asher | amadti | lefanav
-ki | haiyom | era'eh | elav
+chai | Yahweh | tzeva'ot | asher | amadti
+lefanav | ki | haiyom | era'eh | elav
 
 18:16
 vaiyelekh | Oadyahu | likrat | Ach'av
@@ -88,8 +87,7 @@ likrat | Eliyahu
 
 18:17
 vayhi | kir'ot | Ach'av | et | Eliyahu
-vaiyomer | Ach'av | elav
-ha'atah | zeh
+vaiyomer | Ach'av | elav | ha'atah | zeh
 okher | Yisra'el
 
 18:18
@@ -112,10 +110,9 @@ vaiyikbotz | et | hanevi'im | el | har | Hakarmel
 
 18:21
 vaiyigash | Eliyahu | el | kol | ha'am | vaiyomer | ad | matai | atem | posechim | al | shetei | hase'ipim
-im | Yahweh | ha'elohim | lekhu | acharav
-ve'im | haba'al
-lekhu | acharav
-velo | anu | ha'am | oto | davar
+im | Yahweh | ha'elohim | lekhu | acharav | ve'im | haba'al
+lekhu | acharav | velo | anu | ha'am | oto
+davar
 
 18:22
 vaiyomer | Eliyahu | el | ha'am
@@ -161,8 +158,7 @@ veyikatz
 
 18:28
 vaiyikre'u | bekol | gadol
-vaiyitgodedu | kemishpatam | bacharavot | uvaremachim | ad | shefokh | dam
-aleihem
+vaiyitgodedu | kemishpatam | bacharavot | uvaremachim | ad | shefokh | dam | aleihem
 
 18:29
 vayhi | ka'avor | hatzohorayim
@@ -171,10 +167,8 @@ ve'ein | kol | ve'ein | oneh
 ve'ein | kashev
 
 18:30
-vaiyomer | Eliyahu | lekhol | ha'am | geshu | elai
-vaiyigeshu | khol | ha'am
-elav
-vayrape | et | mizbach | Yahweh
+vaiyomer | Eliyahu | lekhol | ha'am | geshu | elai | vaiyigeshu | khol | ha'am
+elav | vayrape | et | mizbach | Yahweh
 heharus
 
 18:31
@@ -233,8 +227,7 @@ Yahweh
 hu | ha'elohim
 
 18:40
-vaiyomer | Eliyahu | lahem | tifsu | et | nevi'ei | haba'al | ish | al | yimalet | mehem
-vaiyitpesum
+vaiyomer | Eliyahu | lahem | tifsu | et | nevi'ei | haba'al | ish | al | yimalet | mehem | vaiyitpesum
 vaiyoridem | Eliyahu | el | nachal | Kishon
 vaiyishchatem
 sham

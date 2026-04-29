@@ -9,8 +9,7 @@ Kenan | Mahalalel | Jared
 Enoch | Methuselah | Lamech
 
 1:4
-Noah | Shem
-Ham | and Japheth
+Noah | Shem | Ham | and Japheth
 
 1:5
 [the] sons of | Japheth
@@ -19,18 +18,14 @@ and Javan | and Tubal | and Meshech
 and Tiras
 
 1:6
-and [the] sons of
-Gomer
-Ashkenaz | and Diphath
-and Togarmah
+and [the] sons of | Gomer | Ashkenaz | and Diphath | and Togarmah
 
 1:7
 and [the] sons of | Javan | [were] Elishah | and Tarshish | Kittim
 and Rodanim
 
 1:8
-[the] sons of
-Ham | Cush | and Mizraim
+[the] sons of | Ham | Cush | and Mizraim
 Put | and Canaan
 
 1:9
@@ -75,7 +70,8 @@ and Gether | and Meshech
 1:18
 and Arphaxad
 he fathered | [obj.] | Shelah
-and Shelah | he fathered | [obj.] | Eber
+and Shelah
+he fathered | [obj.] | Eber
 
 1:19
 and to Eber | it was born
@@ -153,9 +149,7 @@ and he fathered | Abraham | [obj.] | Isaac
 Esau | and Israel
 
 1:35
-[the] sons of
-Esau
-Eliphaz | Reuel | and Jeush
+[the] sons of | Esau | Eliphaz | Reuel | and Jeush
 and Jalam | and Korah
 
 1:36
@@ -163,8 +157,7 @@ and Jalam | and Korah
 Kenaz | and Timna | and Amalek
 
 1:37
-[the] sons of
-Reuel
+[the] sons of | Reuel
 Nahath | Zerah
 Shammah | and Mizzah
 
@@ -206,14 +199,12 @@ and [the] name of | city his
 
 1:44
 and he died | Bela
-and he reigned | in place of him
-Jobab | [the] son of | Zerah | from Bozrah
+and he reigned | in place of him | Jobab | [the] son of | Zerah | from Bozrah
 
 1:45
 and he died
 Jobab
-and he reigned | in place of him
-Husham | from [the] land of | the Temanite[s]
+and he reigned | in place of him | Husham | from [the] land of | the Temanite[s]
 
 1:46
 and he died
@@ -224,13 +215,11 @@ and [the] name of | city his
 
 1:47
 and he died
-Hadad | and he reigned | in place of him
-Samlah | from Masrekah
+Hadad | and he reigned | in place of him | Samlah | from Masrekah
 
 1:48
 and he died
-Samlah | and he reigned | in place of him
-Shaul | from Rehoboth | the river
+Samlah | and he reigned | in place of him | Shaul | from Rehoboth | the river
 
 1:49
 and he died

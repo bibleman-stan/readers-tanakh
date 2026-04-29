@@ -11,12 +11,10 @@ nikhcho | tachanu | al | haiyam
 14:3
 ve'amar | par'oh | livnei | Yisra'el
 nevukhim | hem | ba'aretz
-sagar | aleihem
-hamidbar
+sagar | aleihem | hamidbar
 
 14:4
-vechizakti | et | lev | par'oh | veradaf | achareihem
-ve'ikavedah | befar'oh | uvekhol | cheilo
+vechizakti | et | lev | par'oh | veradaf | achareihem | ve'ikavedah | befar'oh | uvekhol | cheilo
 veyade'u | Mitzrayim
 ki | ani | Yahweh
 vaiya'asu | khen
@@ -36,8 +34,7 @@ lakach | imo
 
 14:7
 vaiyikach | shesh | me'ot | rekhev | bachur
-vekhol
-rekhev | Mitzrayim
+vekhol | rekhev | Mitzrayim
 veshalishim | al | kulo
 
 14:8
@@ -54,8 +51,7 @@ vecheilo | al | Pi | Hachirot
 lifnei | Ba'al | Tzefon
 
 14:10
-ufar'oh
-hikriv
+ufar'oh | hikriv
 vaiyis'u | venei | Yisra'el | et | eineihem | vehineh | Mitzrayim | nosea | achareihem | vaiyire'u | me'od | vaiyitz'aku | venei | Yisra'el
 el | Yahweh
 
@@ -95,8 +91,7 @@ uveka'ehu | veyavo'u | venei | Yisra'el | betokh | haiyam | baiyabashah
 14:17
 va'ani | hini | mechazek | et | lev | Mitzrayim
 veyavo'u
-achareihem
-ve'ikavedah | befar'oh | uvekhol | cheilo | berikhbo | uvefarashav
+achareihem | ve'ikavedah | befar'oh | uvekhol | cheilo | berikhbo | uvefarashav
 
 14:18
 veyade'u | Mitzrayim
@@ -127,8 +122,7 @@ vaiyavo'u | venei | Yisra'el | betokh | haiyam | baiyabashah
 vehamayim | lahem | chomah | miminam | umisemolam
 
 14:23
-vaiyirdefu | Mitzrayim | vaiyavo'u | achareihem
-kol | sus | par'oh
+vaiyirdefu | Mitzrayim | vaiyavo'u | achareihem | kol | sus | par'oh
 rikhbo
 ufarashav | el | tokh
 haiyam
