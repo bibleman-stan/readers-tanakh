@@ -88,7 +88,12 @@ trigger:
       - "המקדש"     # the sanctifying
   line_n1_anywhere:
     has_finite_verb: false
-  combined_max_prosodic_words: 12
+  combined_max_prosodic_words: 8         # tightened 2026-04-29 — Stan flag:
+                                          # cap=12 over-merged Gen 1:26 onto an
+                                          # already-too-long enumeration line.
+                                          # Atomic-thought principle: relative-
+                                          # clause attachment is correct ONLY if
+                                          # the head-line is itself short.
 
 guards:
   - poetic_register
