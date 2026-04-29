@@ -1,0 +1,44 @@
+name: h1_demonstrative_np_strand
+rule: H1
+subcase: demonstrative_np_strand
+severity: STRONG-MERGE-CANDIDATE
+description: |
+  H1 Demonstrative NP Strand — line N+1 begins with a demonstrative pronoun
+  (הַזֶּה, הַהוּא, הָאֵלֶּה, הַהֵם, הַהִיא, זֶה, אֵלֶּה, הוּא, הִיא, הֵם, הֵן)
+  functioning as an adjectival modifier stranded from its head NP on line N.
+  Line N's last token must start with ה (article prefix) — heuristic for
+  article-marked NP head. Tight morphosyntactic bond: demonstrative + NP
+  must remain on the same line.
+
+trigger:
+  line_n_last_token:
+    skeleton_starts_with:
+      - "ה"
+  line_n1_first_token:
+    skeleton_in:
+      - "הזה"
+      - "הזאת"
+      - "הזו"
+      - "האלה"
+      - "האלו"
+      - "ההוא"
+      - "ההיא"
+      - "ההם"
+      - "ההן"
+      - "זה"
+      - "זאת"
+      - "זו"
+      - "אלה"
+      - "אלו"
+      - "הוא"
+      - "היא"
+      - "הם"
+      - "הן"
+  line_n1_anywhere:
+    has_finite_verb: false
+
+guards:
+  - poetic_register
+
+annotation_template: "H1 demonstrative pronoun stranded from article-marked NP head (combined {pwc} prosodic words)"
+suggested_action: MERGE

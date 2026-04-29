@@ -1,0 +1,27 @@
+name: h13_b_trailing_relative
+rule: H13
+subcase: trailing_relative
+severity: STRONG-MERGE-CANDIDATE
+description: |
+  Cascade companion to h13_bare_subordinator and h12_relative_clause_attachment.
+  When line N ends with אֲשֶׁר and line N+1 is the relative-clause body, the two
+  must merge.
+
+  Three-rule cascade for stranded relative-clause patterns (e.g., Gen 1:7 lines
+  38-40):
+    pass 1: h12 fires (NP + אשר) → "head אשר"
+            h13 fires (אשר + body) → "אשר body"
+            (whichever line-pair the engine reaches first wins)
+    pass 2: whichever didn't fire — h13_b closes by attaching the trailing אשר
+            to its body, OR h12 attaches the now-merged "אשר body" to the head.
+
+trigger:
+  line_n_last_token:
+    skeleton_in: [אשר]
+  combined_max_prosodic_words: 10
+
+guards:
+  - poetic_register
+
+annotation_template: "Trailing relative pronoun forward-merge ({pwc} prosodic words)"
+suggested_action: MERGE

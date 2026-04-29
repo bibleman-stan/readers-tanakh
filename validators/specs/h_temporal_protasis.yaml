@@ -1,0 +1,25 @@
+name: h_temporal_protasis
+rule: H-temp
+subcase: temporal_protasis
+severity: STRONG-MERGE-CANDIDATE
+description: |
+  Temporal Protasis Integrity — line N ends with a temporal construct form
+  (בַּיּוֹם, בָּעֵת, בְּחֹדֶשׁ, בִּשְׁנַת, בְּשָׁנָה) and line N+1 carries the
+  bound NP that completes the temporal PP. These form a single temporal-PP
+  unit and must stay together as one colon. High-confidence; formulaic.
+  Guard: poetic register.
+
+trigger:
+  line_n_last_token:
+    skeleton_in:
+      - "ביום"
+      - "בעת"
+      - "בחדש"
+      - "בשנת"
+      - "בשנה"
+
+guards:
+  - poetic_register
+
+annotation_template: "H-temp temporal construct stranded from bound NP (combined {pwc} prosodic words)"
+suggested_action: MERGE

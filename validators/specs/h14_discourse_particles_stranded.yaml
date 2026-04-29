@@ -1,0 +1,22 @@
+name: h14_discourse_particles_stranded
+rule: H14
+subcase: discourse_particle_stranded_at_line_end
+severity: STRONG-MERGE-CANDIDATE
+description: |
+  H14 Discourse Particles — a discourse particle (הִנֵּה, וְעַתָּה, עַתָּה, לָכֵן,
+  עַל־כֵּן, אָז, אַף, גַּם, רַק, אָכֵן) stranded at the END of line N.
+  Particles are sentence-introducing/topic-shifting markers that lead content;
+  they must not trail the prior clause. Merge: bring the particle onto the
+  next line so it leads its governed content.
+  Note: differs from m3_bare_discourse_particle (particle alone on its OWN line);
+  this triggers on particle as the LAST token of an otherwise-populated line.
+
+trigger:
+  line_n_last_token:
+    morphology: discourse_particle
+
+guards:
+  - poetic_register
+
+annotation_template: "H14 discourse particle stranded at line end — should lead next-line content (combined {pwc} prosodic words)"
+suggested_action: MERGE

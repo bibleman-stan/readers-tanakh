@@ -1,0 +1,31 @@
+name: h11_2_mid_verse_short_fronting
+rule: H11
+subcase: mid_verse_short_fronting
+severity: STRONG-MERGE-CANDIDATE
+description: |
+  Mid-verse fronting paradox: short bare PP + short main clause should merge.
+  Same logic as h11_short_verse_fronting but mid-verse, not at verse start.
+
+  Tightened relative to h11:
+    - line N+1 must start with a finite verb (not just contain one) — rules out
+      formulaic refrains like "וַיְהִי־כֵן" appearing on N+1 by accident
+    - combined max 5 prosodic words (vs 6 in h11) — mid-verse merges should be
+      tighter since adjacent material is more likely to belong elsewhere
+
+trigger:
+  line_n_first_token:
+    morphology: prep              # bound prep, compound prep, or vav-prefixed prep
+  line_n_anywhere:
+    has_finite_verb: false        # line N is a bare PP, not already a clause
+  line_n1_first_token:
+    morphology: finite_verb       # main clause begins immediately with verb
+  line_n1_anywhere:
+    has_finite_verb: true
+  combined_max_prosodic_words: 5
+
+guards:
+  - poetic_register
+  - prev_line_incomplete   # only genuine fronting — prev clause must be complete
+
+annotation_template: "Mid-verse fronting paradox: short PP + main clause (combined {pwc} prosodic words)"
+suggested_action: MERGE

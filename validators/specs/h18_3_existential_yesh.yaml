@@ -1,0 +1,25 @@
+name: h18_3_existential_yesh
+rule: H18.ext
+subcase: existential_yesh
+severity: STRONG-MERGE-CANDIDATE
+description: |
+  H18 extension — Existential יֵשׁ + subject NP split. Line N ends with יֵשׁ
+  (positive existential predicate); line N+1 carries the subject NP. The
+  yesh + subject is a verbless-clause nucleus: one atomic thought-unit.
+  Guards: poetic register, casus pendens (resumptive suffix on line N+2),
+  and heavy subject on line N.
+
+trigger:
+  line_n_last_token:
+    skeleton_in:
+      - "יש"
+  line_n1_anywhere:
+    has_finite_verb: false
+
+guards:
+  - poetic_register
+  - casus_pendens
+  - heavy_subject
+
+annotation_template: "H18.ext existential יֵשׁ stranded from subject NP (combined {pwc} prosodic words)"
+suggested_action: MERGE

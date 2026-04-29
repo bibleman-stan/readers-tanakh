@@ -1,0 +1,24 @@
+name: h_quantifier_scope
+rule: H-quant
+subcase: quantifier_scope
+severity: STRONG-MERGE-CANDIDATE
+description: |
+  Quantifier Scope Integrity — line N ends with a quantifier (כָּל, רַב, מְעַט,
+  מְאֹד, יֶתֶר); line N+1 carries the scope-NP. The quantifier + scope NP is
+  morphosyntactically tight (often maqqef-bound: כָּל־ stranded from noun).
+  Guard: poetic register.
+
+trigger:
+  line_n_last_token:
+    skeleton_in:
+      - "כל"
+      - "רב"
+      - "מעט"
+      - "מאד"
+      - "יתר"
+
+guards:
+  - poetic_register
+
+annotation_template: "H-quant quantifier stranded from scope-NP (combined {pwc} prosodic words)"
+suggested_action: MERGE

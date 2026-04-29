@@ -1,0 +1,23 @@
+name: h_woe_chain
+rule: H-woe
+subcase: woe_chain_opening
+severity: REVIEW-REQUIRED
+description: |
+  Woe-Chain Handling (Authorial Asymmetry Principle, canon §1 + §4 justification 4) —
+  line N begins with הוֹי or אוֹי (prophetic woe particle); line N+1 carries woe
+  content. Woe-chains exhibit intentional asymmetric expansion (some woes = short
+  classical commata, others = expanded oracle blocks). Detection is mechanical;
+  assessment of asymmetric expansion requires editorial judgment. REVIEW-REQUIRED.
+  Guard: poetic register (Sifrei Emet).
+
+trigger:
+  line_n_first_token:
+    skeleton_in:
+      - "הוי"
+      - "אוי"
+
+guards:
+  - poetic_register
+
+annotation_template: "H-woe prophetic woe-particle chain — woe opening on line N (combined {pwc} prosodic words); review for asymmetric expansion vs. classical-comma standalone"
+suggested_action: REVIEW

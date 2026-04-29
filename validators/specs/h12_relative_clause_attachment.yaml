@@ -1,0 +1,22 @@
+name: h12_relative_clause_attachment
+rule: H12
+subcase: relative_clause_attachment
+severity: STRONG-MERGE-CANDIDATE
+description: |
+  Relative clause attaches to its head noun. When line N+1 begins with אֲשֶׁר
+  (relative pronoun), bring the relative clause up onto line N — they form a
+  single complex NP.
+
+  Per WO §19.3 / JM §158, the relative clause is syntactically subordinate to
+  its antecedent. Standard prose pattern.
+
+trigger:
+  line_n1_first_token:
+    skeleton_in: [אשר]
+  combined_max_prosodic_words: 8
+
+guards:
+  - poetic_register
+
+annotation_template: "Relative clause attachment to NP head ({pwc} prosodic words)"
+suggested_action: MERGE

@@ -1,0 +1,22 @@
+name: hsub_lemaan_subordinator
+rule: H-sub
+subcase: lemaan_subordinator
+severity: STRONG-MERGE-CANDIDATE
+description: |
+  Subordinator bond — לְמַעַן (purpose subordinator "in order that / for the sake
+  of") stranded at the end of line N. The subordinator must not be split from
+  its clause. Combined pair must be short (≤8 prosodic words); longer purpose
+  clauses may legitimately stand as independent cola.
+  Guard: poetic register.
+
+trigger:
+  line_n_last_token:
+    skeleton_in:
+      - "למען"
+  combined_max_prosodic_words: 8
+
+guards:
+  - poetic_register
+
+annotation_template: "H-sub לְמַעַן subordinator stranded from purpose clause (combined {pwc} prosodic words)"
+suggested_action: MERGE

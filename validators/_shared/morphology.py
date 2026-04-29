@@ -143,13 +143,22 @@ def is_finite_verb_skel(skeleton: str) -> bool:
     #   - prepositions starting with ת: — rare false positive, accept
     # This detects תהיו (2mp yiqtol), ישטמנו (3ms + suffix), etc.
     YIQTOL_KNOWN_NOUNS = {
+        # י-initial nouns
         "יד", "ים", "יום", "ין", "יין", "יין", "יער", "יען",
+        "ירא", "ירה",  # fear/shoot (can be noun in some forms)
+        # א-initial common nouns (not verbs)
+        "אדני", "אדנינו", "אדניך", "אדניכם", "אדניהם",
+        "אחי", "אחיו", "אחיך", "אחינו", "אחיכם",
+        "אנחנו", "אנכי", "אני",
+        "ארצי", "ארצנו", "ארצו", "ארצם",
+        # ת-initial nouns
         "תורה", "תפלה", "תבל", "תנין",
+        "תורת", "תורתו", "תורתך",
     }
     if len(skeleton) >= 3 and skeleton[0] in YIQTOL_PREFIXES:
-        if skeleton not in YIQTOL_KNOWN_NOUNS and not skeleton.startswith("יש"):
+        # Exclude only the 2-char existential יש (skeleton = "יש")
+        if skeleton not in YIQTOL_KNOWN_NOUNS and skeleton != "יש":
             # Rough heuristic: accept if it's ≥ 4 chars (prefix + 3-root)
-            # or if it has suffix vowel marking (detected by suffix chars)
             if len(skeleton) >= 4:
                 return True
     return False
@@ -174,6 +183,12 @@ PREP_SKELETONS = {
 }
 
 BOUND_PREP_PREFIXES = ("ב", "ל", "כ", "מ")
+
+# Tokens starting with a bound-prep letter that are NOT prep-headed.
+# Critical for maqqef-joined tokens like כִּי־טוֹב (subordinator + adj),
+# כָּל־הָאָרֶץ (quantifier + NP), בֶּן־אָדָם (construct head + NP).
+# Without this, the bound-prep heuristic misclassifies them as PP-headed.
+NON_PREP_2CHAR_PREFIX = {"כי", "כל", "כן", "בן", "בת"}
 
 
 def line_starts_with_prep(line: str) -> tuple[bool, Optional[str]]:
@@ -268,7 +283,7 @@ def line_ends_in_np(line: str) -> bool:
 
 # ─── guard helpers ──────────────────────────────────────────────────
 
-DISCOURSE_PARTICLES = {"הנה", "אף", "עלכן", "לכן", "ועתה", "אז", "עתה", "לכן"}
+DISCOURSE_PARTICLES = {"הנה", "אף", "עלכן", "לכן", "ועתה", "אז", "עתה", "גם", "רק", "אכן"}
 
 VOCATIVE_PARTICLES = {"הוי", "אוי", "אהה", "אנא"}
 

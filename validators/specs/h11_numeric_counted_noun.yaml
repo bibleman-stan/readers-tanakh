@@ -1,0 +1,53 @@
+name: h11_numeric_counted_noun
+rule: H11.ext
+subcase: numeric_counted_noun
+severity: STRONG-MERGE-CANDIDATE
+description: |
+  H11 extension — Numeral stranded from counted noun. Line N ends with a
+  numeral skeleton; line N+1 carries the counted noun (NP head). The
+  numeral + counted noun form a single prosodic unit. Guard: poetic register;
+  next-line finite verb (numeral + new clause, not noun attachment).
+
+trigger:
+  line_n_last_token:
+    skeleton_in:
+      - "אחד"
+      - "אחת"
+      - "שנים"
+      - "שתים"
+      - "שלשה"
+      - "שלש"
+      - "ארבעה"
+      - "ארבע"
+      - "חמשה"
+      - "חמש"
+      - "ששה"
+      - "שש"
+      - "שבעה"
+      - "שבע"
+      - "שמנה"
+      - "תשעה"
+      - "תשע"
+      - "עשרה"
+      - "עשר"
+      - "עשרים"
+      - "שלשים"
+      - "ארבעים"
+      - "חמשים"
+      - "שישים"
+      - "שבעים"
+      - "שמונים"
+      - "תשעים"
+      - "מאה"
+      - "מאות"
+      - "אלף"
+      - "אלפים"
+      - "רבבה"
+  line_n1_anywhere:
+    has_finite_verb: false
+
+guards:
+  - poetic_register
+
+annotation_template: "H11.ext numeral stranded from counted noun (combined {pwc} prosodic words)"
+suggested_action: MERGE

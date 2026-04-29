@@ -1,0 +1,30 @@
+name: h9_divine_title_appositive
+rule: H9
+subcase: divine_title_appositive
+severity: STRONG-MERGE-CANDIDATE
+description: |
+  H9 Divine-Title Appositive — line N ends with יהוה, אלהים, or אדני;
+  line N+1 begins with a recognized divine-title appositive (צבאות, אלהים,
+  אלהי, אלהינו, אלהיך, אלהיכם, אלהיהם, אלהיו). Compound divine names in
+  referencing context (already-established identity) should merge. STRONG
+  default: most divine-title appositives are referencing, not introducing.
+
+trigger:
+  line_n_last_token:
+    skeleton_in:
+      - "יהוה"
+      - "אלהים"
+      - "אדני"
+  line_n1_first_token:
+    skeleton_in:
+      - "צבאות"
+      - "אלהים"
+      - "אלהי"
+      - "אלהינו"
+      - "אלהיך"
+      - "אלהיכם"
+      - "אלהיהם"
+      - "אלהיו"
+
+annotation_template: "H9 divine-title appositive split — compound divine name across line boundary (combined {pwc} prosodic words)"
+suggested_action: MERGE

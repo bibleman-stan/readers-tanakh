@@ -1,0 +1,20 @@
+name: h9_relative_pronoun_strand
+rule: H9-rel
+subcase: relative_pronoun_strand_asher
+severity: REVIEW-REQUIRED
+description: |
+  H9 extension — אֲשֶׁר relative pronoun stranded from NP head. Line N+1
+  begins with אֲשֶׁר (standalone relative pronoun). Short relative clauses may
+  merge upward per justification 5; long ones stay separate. Surfaces
+  candidates; editor judges per three forces. Guard: poetic register.
+
+trigger:
+  line_n1_first_token:
+    skeleton_in:
+      - "אשר"
+
+guards:
+  - poetic_register
+
+annotation_template: "H9-rel אֲשֶׁר relative pronoun stranded from NP head (combined {pwc} prosodic words)"
+suggested_action: REVIEW

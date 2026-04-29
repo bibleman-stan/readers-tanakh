@@ -1,0 +1,25 @@
+name: h1_negative_existential_ein
+rule: H1-ext
+subcase: negative_existential_ein
+severity: STRONG-MERGE-CANDIDATE
+description: |
+  H1 extension — Negative existential אֵין stranded across a line break.
+  Two patterns:
+    Pattern A (most common in prose): line N ends with NP, line N+1 begins with
+      אֵין. The NP is the subject; אֵין is the negation predicate. These form
+      a verbless-clause nucleus and must not be split.
+    Pattern B: line N ends with אֵין, line N+1 carries the subject NP.
+  Both patterns are Layer 1 negation-stranding REQUIRED-MERGE territory.
+  Guard: poetic register (Sifrei Emet bicolon parallelism risk).
+  This spec captures Pattern A (the dominant prose pattern).
+
+trigger:
+  line_n1_first_token:
+    skeleton_in:
+      - "אין"
+
+guards:
+  - poetic_register
+
+annotation_template: "H1.ext NP + אֵין negation-stranding split — subject NP ends line N, אֵין leads line N+1 (combined {pwc} prosodic words)"
+suggested_action: MERGE

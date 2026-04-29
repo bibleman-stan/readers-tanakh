@@ -1,0 +1,27 @@
+name: hsub2_pen_subordinator
+rule: H-sub2
+subcase: pen_subordinator
+severity: STRONG-MERGE-CANDIDATE
+description: |
+  Subordinator bond — frozen-phrase subordinators (פֶּן, לְמַעַן, אַחֲרֵי, עַל־כֵּן,
+  יַעַן, בִּגְלַל, בִּשְׁבִיל, בַּעֲבוּר) stranded at the end of line N.
+  These subordinators form frozen phrases with their content clause and must not
+  be split across lines. Guard: poetic register.
+
+trigger:
+  line_n_last_token:
+    skeleton_in:
+      - "פן"
+      - "למען"
+      - "אחרי"
+      - "עלכן"
+      - "יען"
+      - "בגלל"
+      - "בשביל"
+      - "בעבור"
+
+guards:
+  - poetic_register
+
+annotation_template: "H-sub2 subordinator stranded from clause content (combined {pwc} prosodic words)"
+suggested_action: MERGE

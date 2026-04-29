@@ -1,0 +1,28 @@
+name: h13_bare_subordinator
+rule: H13
+subcase: bare_subordinator
+severity: STRONG-MERGE-CANDIDATE
+description: |
+  Bare subordinator (אֲשֶׁר alone on a line) cannot stand alone — it's a
+  syntactic glue word that must introduce a clause or NP. Merge forward into
+  its complement.
+
+  Triggered when the entire line consists of just אֲשֶׁר (first and last
+  content tokens are both the relative pronoun, i.e., it's a single-token line).
+
+  This is a cascade-helper rule: when the relative clause itself is split
+  across two lines (אֲשֶׁר on one, complement on the next), this fires first
+  to assemble the relative clause, then h12 attaches it to the head noun.
+
+trigger:
+  line_n_first_token:
+    skeleton_in: [אשר]
+  line_n_last_token:
+    skeleton_in: [אשר]
+  combined_max_prosodic_words: 10
+
+guards:
+  - poetic_register
+
+annotation_template: "Bare subordinator forward-merge ({pwc} prosodic words)"
+suggested_action: MERGE

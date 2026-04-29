@@ -1,0 +1,28 @@
+name: h20_conditional_im
+rule: H20
+subcase: conditional_im
+severity: REVIEW-REQUIRED
+description: |
+  H20 Conditional Protasis-Apodosis Structure — line N begins with a conditional
+  particle (אִם, לוּ, לוּלֵא, לוּלֵי) and carries a finite verb (protasis); line N+1
+  is the apodosis (no finite verb). Short combined pairs (≤8 prosodic words) are
+  merge candidates. Justification 5: atomic clause integrity.
+
+trigger:
+  line_n_first_token:
+    skeleton_in:
+      - "אם"
+      - "לו"
+      - "לולא"
+      - "לולי"
+  line_n_anywhere:
+    has_finite_verb: true
+  line_n1_anywhere:
+    has_finite_verb: false
+  combined_max_prosodic_words: 8
+
+guards:
+  - poetic_register
+
+annotation_template: "H20 conditional protasis-apodosis split — conditional particle at line start, apodosis on next line (combined {pwc} prosodic words)"
+suggested_action: REVIEW

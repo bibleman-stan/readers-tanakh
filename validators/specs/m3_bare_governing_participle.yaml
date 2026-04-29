@@ -1,0 +1,23 @@
+name: m3_bare_governing_participle
+rule: M3
+subcase: bare_governing_participle
+severity: STRONG-MERGE-CANDIDATE
+description: |
+  M3 Bare-Governor Indivisibility — bare active/passive participle on line N
+  with complement (PP, direct object, or clause marker) leading line N+1.
+  The bare participle fails the atomic-thought test: it is grammatical machinery
+  awaiting content and must merge with its complement.
+
+trigger:
+  line_n_last_token:
+    morphology: bare_participle
+  line_n_anywhere:
+    has_finite_verb: false
+  combined_max_prosodic_words: 6
+
+guards:
+  - poetic_register
+  - heavy_participial_complement
+
+annotation_template: "M3 bare governing participle stranded from complement (combined {pwc} prosodic words)"
+suggested_action: MERGE

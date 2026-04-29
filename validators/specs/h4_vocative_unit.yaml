@@ -1,0 +1,22 @@
+name: h4_vocative_unit
+rule: H4
+subcase: vocative_unit_split
+severity: STRONG-MERGE-CANDIDATE
+description: |
+  H4 Vocative Unit Split — line N ends with an address particle (הוֹי, אוֹי,
+  אֲהָהּ, אָנָּא); line N+1 begins with the vocative NP head. The address
+  particle + vocative NP is a single multi-word unit and must not be split.
+  Note: the vocative_position guard in the spec engine checks if line N is a
+  vocative line (particle at START); here we use skeleton_in on the LAST token
+  to detect the particle-at-end pattern (distinct use case).
+
+trigger:
+  line_n_last_token:
+    skeleton_in:
+      - "הוי"
+      - "אוי"
+      - "אהה"
+      - "אנא"
+
+annotation_template: "H4 address particle stranded from vocative NP (combined {pwc} prosodic words)"
+suggested_action: MERGE
