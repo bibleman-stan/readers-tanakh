@@ -64,31 +64,34 @@ vaiyoled | et | Shalach
 
 11:13
 vaychi | Arpakhshad | acharei | holido | et | Shelach
-shalosh | shanim | ve'arba | me'ot
-shanah | vaiyoled | banim | uvanot
+shalosh | shanim | ve'arba | me'ot | shanah
+vaiyoled | banim | uvanot
 
 11:14
 Veshelach | chai
-sheloshim | shanah | vaiyoled | et | Ever
+sheloshim | shanah
+vaiyoled | et | Ever
 
 11:15
 vaychi | Shelach | acharei | holido | et | Ever
-shalosh | shanim | ve'arba | me'ot
-shanah | vaiyoled | banim | uvanot
+shalosh | shanim | ve'arba | me'ot | shanah
+vaiyoled | banim | uvanot
 
 11:16
 vaychi | Ever
 arba | usheloshim
-shanah | vaiyoled | et | Paleg
+shanah
+vaiyoled | et | Paleg
 
 11:17
 vaychi | Ever | acharei | holido | et | Peleg
-sheloshim | shanah | ve'arba | me'ot
-shanah | vaiyoled | banim | uvanot
+sheloshim | shanah | ve'arba | me'ot | shanah
+vaiyoled | banim | uvanot
 
 11:18
 vaychi | Feleg
-sheloshim | shanah | vaiyoled | et | Re'u
+sheloshim | shanah
+vaiyoled | et | Re'u
 
 11:19
 vaychi | Feleg | acharei | holido | et | Re'u
@@ -108,7 +111,8 @@ vaiyoled | banim | uvanot
 
 11:22
 vaychi | Serug
-sheloshim | shanah | vaiyoled | et | Nachor
+sheloshim | shanah
+vaiyoled | et | Nachor
 
 11:23
 vaychi | Serug | acharei | holido | et | Nachor | matayim | shanah
@@ -127,8 +131,8 @@ vaiyoled | banim | uvanot
 
 11:26
 vaychi | Terach
-shiv'im | shanah | vaiyoled | et | Avram | et | Nachor
-ve'et | Haran
+shiv'im | shanah
+vaiyoled | et | Avram | et | Nachor | ve'et | Haran
 
 11:27
 ve'eleh | toldot | Terach

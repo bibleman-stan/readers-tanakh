@@ -29,6 +29,7 @@ guards:
   - poetic_register
   - next_line_is_vav_coord_pp       # block re-absorbing vav-coord PPs S1 split out
   - next_line_is_vav_coord_np     # block re-absorbing post-S2-split coord-NP enumeration members
+  - next_line_is_wayyiqtol      # block re-absorbing post-S3-split wayyiqtol-headed lines
 
 annotation_template: "Short PP completion attaches backward ({pwc} prosodic words)"
 suggested_action: MERGE

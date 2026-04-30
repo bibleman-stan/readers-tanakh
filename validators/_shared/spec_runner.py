@@ -340,6 +340,19 @@ def _g_next_vav_coord_pp(l_n, l_n1, ctx):
     return M.is_vav_coord_pp_head(first)
 
 
+@_register_guard("next_line_is_wayehi_ken")
+def _g_next_wayehi_ken(l_n, l_n1, ctx):
+    """Fire (block emission) if line N+1 starts with the discourse formula
+    וַיְהִי־כֵן. The formula is its own atomic thought (canon §1, S3 pattern 1)
+    and merge specs that legitimately fire on (PP, finite-verb) pairs (e.g.
+    h11_2 mid-verse short-fronting) must not absorb it.
+    """
+    first = M.first_content_token(l_n1)
+    if not first:
+        return False
+    return M.is_wayehi_ken_token(first)
+
+
 @_register_guard("next_line_is_vav_coord_np")
 def _g_next_vav_coord_np(l_n, l_n1, ctx):
     """Fire (block emission) if line N+1's first token is a vav-coord NP head.
@@ -358,21 +371,23 @@ def _g_next_vav_coord_np(l_n, l_n1, ctx):
 def _g_next_wayyiqtol(l_n, l_n1, ctx):
     """Fire (block emission) if line N+1's first token is a wayyiqtol.
 
-    Use case: prevents merge specs (m5, m4, m2_4, m2_6, etc.) from
-    re-absorbing wayyiqtol-headed lines that S3 has just split out from
-    cross-clause material. Symmetric counterpart to next_line_is_vav_coord_pp
-    for the S3 split direction.
+    Use case: prevents merge specs from re-absorbing wayyiqtol-headed lines
+    that S3 has just split out from cross-clause material. Symmetric
+    counterpart to next_line_is_vav_coord_pp for the S3 split direction.
 
-    Implementation: reuses M.YIQTOL_PREFIXES and M.YIQTOL_KNOWN_NOUNS
-    so the guard is symmetric-by-construction with S3's trigger
-    (wayyiqtol_mid_line_split_positions) — both move together when the
-    lexicon is updated.
+    Implementation: skel-based detection (broad). The niqqud-aware
+    is_wayyiqtol_token misses dagesh-omitting wayyiqtols like וַיְהִי
+    (the most common wayyiqtol form), so the guard uses the broader skel
+    check that mirrors S3's _is_wayyiqtol_skel_at trigger (vav + YIQTOL
+    prefix consonant + length-4-floor + YIQTOL_KNOWN_NOUNS exclusion).
     """
     first = M.first_content_token(l_n1)
     if not first:
         return False
+    if M.MAQQEF in first:
+        first = first.split(M.MAQQEF, 1)[0]
     s = M.skel(first)
-    if len(s) < 3 or s[0] != "ו" or s[1] not in M.YIQTOL_PREFIXES:
+    if len(s) < 4 or s[0] != "ו" or s[1] not in M.YIQTOL_PREFIXES:
         return False
     inner = s[1:]
     if inner in M.YIQTOL_KNOWN_NOUNS:
@@ -649,6 +664,11 @@ def _evaluate_line_trigger(spec: Spec, line: str, ctx: dict[str, Any]) -> list[i
     # wayyiqtol_mid_line: true — split before each wayyiqtol that appears at position > 0
     if line_anywhere.get("wayyiqtol_mid_line"):
         return M.wayyiqtol_mid_line_split_positions(line)
+
+    # closed_list_clause_boundary_wayyiqtol: true — split before each wayyiqtol
+    # whose immediate prior token matches one of S3's closed-list closer patterns
+    if line_anywhere.get("closed_list_clause_boundary_wayyiqtol"):
+        return M.closed_list_clause_boundary_split_positions(line)
 
     return []
 

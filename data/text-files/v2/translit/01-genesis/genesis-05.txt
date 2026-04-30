@@ -55,12 +55,13 @@ vaiyoled | banim | uvanot
 
 5:11
 vaiyihyu | kol | yemei | Enoosh
-chamesh | shanim | utesha | me'ot
-shanah | vaiyamot
+chamesh | shanim | utesha | me'ot | shanah
+vaiyamot
 
 5:12
 vaychi | Keinan
-shiv'im | shanah | vaiyoled | et | Mahalal'el
+shiv'im | shanah
+vaiyoled | et | Mahalal'el
 
 5:13
 vaychi | Keinan | acharei | holido | et | Mahalal'el
@@ -70,8 +71,8 @@ vaiyoled | banim | uvanot
 
 5:14
 vaiyihyu | kol | yemei | Keinan
-eser | shanim | utesha | me'ot
-shanah | vaiyamot
+eser | shanim | utesha | me'ot | shanah
+vaiyamot
 
 5:15
 vaychi | Mahalal'el
@@ -87,7 +88,8 @@ vaiyoled | banim | uvanot
 5:17
 vaiyihyu | kol | yemei | Mahalal'el
 chamesh | vetish'im | shanah
-ushemoneh | me'ot | shanah | vaiyamot
+ushemoneh | me'ot | shanah
+vaiyamot
 
 5:18
 vaychi | Yered
@@ -139,8 +141,8 @@ vaiyoled | banim | uvanot
 
 5:27
 vaiyihyu | kol | yemei | Metushelach
-tesha | veshishim | shanah | utesha | me'ot
-shanah | vaiyamot
+tesha | veshishim | shanah | utesha | me'ot | shanah
+vaiyamot
 
 5:28
 vaychi | Lemekh
@@ -162,7 +164,8 @@ vaiyoled | banim | uvanot
 
 5:31
 vayhi | kol | yemei | Lemekh | sheva | veshiv'im | shanah
-usheva | me'ot | shanah | vaiyamot
+usheva | me'ot | shanah
+vaiyamot
 
 5:32
 vayhi | Noach

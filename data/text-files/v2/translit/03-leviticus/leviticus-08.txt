@@ -21,8 +21,7 @@ vaiyomer | Mosheh | el | ha'edah
 zeh | hadavar | asher | tzivah | Yahweh | la'asot
 
 8:6
-vaiyakrev | Mosheh | et | Aharon
-ve'et | banav
+vaiyakrev | Mosheh | et | Aharon | ve'et | banav
 vaiyirchatz | otam | bamayim
 
 8:7
@@ -34,8 +33,7 @@ vaiye'pod | lo | bo
 
 8:8
 vaiyasem | alav | et | hachoshen
-vaiyiten | el | hachoshen | et | ha'urim
-ve'et | hatumim
+vaiyiten | el | hachoshen | et | ha'urim | ve'et | hatumim
 
 8:9
 vaiyasem | et | hamitznefet | al | rosho
@@ -44,8 +42,7 @@ ka'asher | tzivah | Yahweh | et | Mosheh
 
 8:10
 vaiyikach | Mosheh | et | shemen | hamishchah
-vaiyimshach | et | hamishkan
-ve'et | kol | asher | bo
+vaiyimshach | et | hamishkan | ve'et | kol | asher | bo
 vaykadesh
 otam
 
@@ -70,13 +67,11 @@ par | hachatat
 
 8:15
 vaiyishchat | vaiyikach | Mosheh | et | hadam | vaiyiten | al | karnot | hamizbeach | saviv | be'etzba'o
-vaychate | et | hamizbeach
-ve'et | hadam | yatzak | el | yesod | hamizbeach
+vaychate | et | hamizbeach | ve'et | hadam | yatzak | el | yesod | hamizbeach
 vaykadeshehu | lekhaper | alav
 
 8:16
-vaiyikach | et | kol | hachelev | asher | al | hakerev
-ve'et | yoteret | hakaved
+vaiyikach | et | kol | hachelev | asher | al | hakerev | ve'et | yoteret | hakaved
 ve'et | shetei | hakelayot
 ve'et | chelbehen
 vaiyakter | Mosheh
@@ -97,9 +92,7 @@ vaiyizrok | Mosheh | et | hadam | al | hamizbeach | saviv
 
 8:20
 ve'et | ha'ayil
-nitach | lintachav | vaiyakter | Mosheh | et | harosh
-ve'et | hanetachim
-ve'et | hapader
+nitach | lintachav | vaiyakter | Mosheh | et | harosh | ve'et | hanetachim | ve'et | hapader
 
 8:21
 ve'et | hakerev | ve'et | hakera'ayim
@@ -160,8 +153,7 @@ umin | hadam | asher | al | hamizbeach
 vaiyaz | al | Aharon | al | begadav
 ve'al | banav
 ve'al | bigdei | vanav
-ito | vaykadesh | et | Aharon | et | begadav
-ve'et | banav | ve'et | bigdei | vanav
+ito | vaykadesh | et | Aharon | et | begadav | ve'et | banav | ve'et | bigdei | vanav
 ito
 
 8:31

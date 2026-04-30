@@ -709,6 +709,131 @@ def is_vav_coord_np_head(token: str) -> bool:
     return True
 
 
+# ─── S3 closed-list clause-boundary helpers (atomic-thought separation) ───
+#
+# S3 fires only on a closed list of recognized "previous content closes;
+# wayyiqtol opens fresh clause" signatures. Per canon §1: Hebrew narrative IS
+# a wayyiqtol chain; default-MERGE direction means "do not split chain-internal
+# wayyiqtols" (Rule H3 governs at v1→v2 layer). S3 is a line-internal fixer for
+# the rare cases where v1 baseline glued a wayyiqtol onto a closing fragment.
+
+# Pattern 1: discourse-formula closer וַיְהִי־כֵן (and-it-was-so) — Gen 1 day-formula
+WAYEHI_KEN_SKELS = {"ויהיכן"}
+
+# Pattern 2: year-formula closer + begetting/dying wayyiqtol (Gen 5, Gen 11 genealogies)
+YEAR_NOUN_SKELS = {"שנה", "שנים", "שנת"}
+BEGETTING_DYING_WAYYIQTOL_SKELS = {"ויולד", "וימת", "ויחי", "וימתו"}
+
+# Pattern 3: species-formula closer לְמִינ-X (Gen 1 creation account)
+# Closed list of למין + 3rd-person possessive suffix forms
+SPECIES_FORMULA_SKELS = {
+    "למינה", "למינו", "למינהו", "למינהם", "למיניהם",
+    "למיניה", "למיניהן", "למינך",
+}
+
+
+def _is_wayyiqtol_skel_at(token: str) -> bool:
+    """Helper: True if token's skel matches the wayyiqtol consonant pattern.
+    More permissive than is_wayyiqtol_token (no niqqud requirement) since S3
+    needs to detect wayyiqtol presence on tokens like וַיְהִי-without-dagesh.
+    """
+    if MAQQEF in token:
+        s = skel(token.split(MAQQEF, 1)[0])
+    else:
+        s = skel(token)
+    if len(s) < 4 or s[0] != "ו" or s[1] not in YIQTOL_PREFIXES:
+        return False
+    inner = s[1:]
+    if inner in YIQTOL_KNOWN_NOUNS:
+        return False
+    return True
+
+
+def _skel_head(token: str) -> str:
+    """Skel of the first sub-token (before any maqqef). Used for closed-list
+    matches that should ignore maqqef-bound suffixes."""
+    if MAQQEF in token:
+        return skel(token.split(MAQQEF, 1)[0])
+    return skel(token)
+
+
+def is_wayehi_ken_token(token: str) -> bool:
+    """True if token matches the discourse formula וַיְהִי־כֵן.
+
+    Pattern 1: the formula is a single semantic unit ("and-it-was-so") that
+    closes a Gen-1-style creation-account day or directive.
+    """
+    # The full skel including maqfef-joined כן is "ויהיכן"
+    s_full = skel(token)
+    if s_full in WAYEHI_KEN_SKELS:
+        return True
+    # Or with sof-pasuq / paseq / other punctuation — strip and re-check
+    s_stripped = "".join(c for c in s_full if 0x05D0 <= ord(c) <= 0x05EA)
+    return s_stripped in WAYEHI_KEN_SKELS
+
+
+def is_species_formula_token(token: str) -> bool:
+    """True if token is לְמִינָהּ / לְמִינוֹ / לְמִינֵהֶם / etc. — the species-
+    closure formula in Gen-1-style creation accounts.
+
+    Pattern 3 closer: when this token immediately precedes a wayyiqtol, the
+    wayyiqtol opens a new clause (and the prior content closes the species-
+    list).
+    """
+    return _skel_head(token) in SPECIES_FORMULA_SKELS
+
+
+def is_year_noun_token(token: str) -> bool:
+    """True if token is שָׁנָה / שָׁנִים / שְׁנַת (year noun). Pattern 2 closer
+    for genealogical sub-clauses."""
+    return _skel_head(token) in YEAR_NOUN_SKELS
+
+
+def is_begetting_or_dying_wayyiqtol(token: str) -> bool:
+    """True if token is a wayyiqtol from the closed lexical set governing
+    genealogical clause-heads: וַיּוֹלֶד, וַיָּמָת, וַיְחִי, וַיָּמֻתוּ.
+    Pattern 2 opener — when paired with a year-noun closer, marks a fresh
+    clause boundary."""
+    return _skel_head(token) in BEGETTING_DYING_WAYYIQTOL_SKELS
+
+
+def closed_list_clause_boundary_split_positions(line: str) -> list[int]:
+    """S3 trigger function: return wayyiqtol token positions where the closed-
+    list closer-signature criteria are met. Returns [] if no closer signature
+    matches anywhere on the line.
+
+    Closed signatures (split BEFORE the wayyiqtol):
+      Pattern 1: current token = וַיְהִי־כֵן (with non-verb prior content)
+      Pattern 2: prior token = year noun + current token = begetting/dying wayyiqtol
+      Pattern 3: prior token = species formula (לְמִינ-X) + current token = any wayyiqtol
+
+    Empty-list-by-default is the discipline lever that prevents S3 over-firing
+    on the wayyiqtol-chain narrative engine.
+    """
+    toks = tokens(line)
+    if len(toks) < 2:
+        return []
+    positions: list[int] = []
+    for i in range(1, len(toks)):
+        cur = toks[i]
+        prev = toks[i - 1]
+        if not _is_wayyiqtol_skel_at(cur):
+            continue
+        # Pattern 1: ויהי־כן is its own atomic thought; split before it
+        if is_wayehi_ken_token(cur):
+            positions.append(i)
+            continue
+        # Pattern 3: species-formula closer + wayyiqtol opens fresh clause
+        if is_species_formula_token(prev):
+            positions.append(i)
+            continue
+        # Pattern 2: year-noun closer + begetting/dying wayyiqtol opens
+        if is_year_noun_token(prev) and is_begetting_or_dying_wayyiqtol(cur):
+            positions.append(i)
+            continue
+    return positions
+
+
 def coordinated_np_split_positions(line: str) -> list[int]:
     """Return token indices in `line` where a SPLIT should be inserted to break
     a coordinated-NP enumeration into one-NP-per-line. Returns empty list if
