@@ -23,6 +23,7 @@ trigger:
 guards:
   - poetic_register
   - next_line_is_vav_coord_pp     # block re-absorbing post-S1-split coord-PP enumeration members
+  - next_line_is_vav_coord_np     # block re-absorbing post-S2-split coord-NP enumeration members
 
 annotation_template: "Line-final bare DO marker stranded ({pwc} prosodic words)"
 suggested_action: MERGE

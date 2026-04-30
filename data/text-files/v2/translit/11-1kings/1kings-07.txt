@@ -140,7 +140,10 @@ eser | ba'amah | makifim | et | haiyam | saviv | shenei | turim | hapeka'im
 yetzukim | bitzukato
 
 7:25
-omed | al | shenei | asar | bakar | sheloshah | fonim | tzafonah | usheloshah | fonim | yamah | usheloshah | ponim | negbah | usheloshah | ponim | mizrachah
+omed | al | shenei | asar | bakar | sheloshah | fonim | tzafonah
+usheloshah | fonim | yamah
+usheloshah | ponim | negbah
+usheloshah | ponim | mizrachah
 vehaiyam | aleihem | milma'elah
 vekhol | achoreihem | bayetah
 
@@ -192,8 +195,10 @@ amah
 vachatzi | ha'amah
 
 7:33
-uma'aseh | ha'ofanim | kema'aseh | ofan | hamerkavah
-yedotam | vegabeihem | vechishukeihem | vechishureihem
+uma'aseh | ha'ofanim | kema'aseh | ofan | hamerkavah | yedotam
+vegabeihem
+vechishukeihem
+vechishureihem
 hakol | mutzak
 
 7:34
@@ -280,7 +285,11 @@ vehaperach | vehanerot | vehamelkachayim
 zahav
 
 7:50
-vehassipot | vehamzamerot | vehamizrakot | vehakkapot | vehamachtot
+vehassipot
+vehamzamerot
+vehamizrakot
+vehakkapot
+vehamachtot
 zahav | sagur
 vehapotot | ledaltot | habayit | hapenimi | lekodesh | hakodashim | ledaltei | habayit | laheikhal
 zahav

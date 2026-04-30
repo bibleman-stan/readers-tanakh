@@ -1,5 +1,9 @@
 28:1
-vaiyakhel | David | et | kol | sarei | Yisra'el | sarei | hashevatim | vesarei | hamachlekot | hamsharetim | et | hamelekh | vesarei | ha'alafim | vesarei | hame'ot | vesarei | khol | rekhush | umikneh | lamelekh
+vaiyakhel | David | et | kol | sarei | Yisra'el | sarei | hashevatim
+vesarei | hamachlekot | hamsharetim | et | hamelekh
+vesarei | ha'alafim
+vesarei | hame'ot
+vesarei | khol | rekhush | umikneh | lamelekh
 ulevanav | im | hasarisim | vehaggiborim
 ulekhol | gibor | chayil | el | Yerushalim
 
@@ -63,7 +67,10 @@ re'eh | atah | ki | Yahweh | bachar | bekha | livnot | bayit | lamikdash
 chazak | va'aseh
 
 28:11
-vaiyiten | David | Lishlomoh | veno | et | tavnit | ha'ulam | ve'et | batav | veganzakav | va'aliyotav | vachadarav | hapenimim
+vaiyiten | David | Lishlomoh | veno | et | tavnit | ha'ulam | ve'et | batav
+veganzakav
+va'aliyotav
+vachadarav | hapenimim
 uveit | hakaporet
 
 28:12

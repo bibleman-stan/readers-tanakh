@@ -340,6 +340,20 @@ def _g_next_vav_coord_pp(l_n, l_n1, ctx):
     return M.is_vav_coord_pp_head(first)
 
 
+@_register_guard("next_line_is_vav_coord_np")
+def _g_next_vav_coord_np(l_n, l_n1, ctx):
+    """Fire (block emission) if line N+1's first token is a vav-coord NP head.
+
+    Symmetric counterpart to next_line_is_vav_coord_pp for the S2 split
+    direction. Prevents merge specs from re-absorbing post-S2-split
+    coordinated-NP enumeration members.
+    """
+    first = M.first_content_token(l_n1)
+    if not first:
+        return False
+    return M.is_vav_coord_np_head(first)
+
+
 @_register_guard("next_line_is_wayyiqtol")
 def _g_next_wayyiqtol(l_n, l_n1, ctx):
     """Fire (block emission) if line N+1's first token is a wayyiqtol.
@@ -620,6 +634,14 @@ def _evaluate_line_trigger(spec: Spec, line: str, ctx: dict[str, Any]) -> list[i
     if "coordinated_pp_count" in line_anywhere:
         cond = line_anywhere["coordinated_pp_count"]
         positions = M.coordinated_pp_split_positions(line)
+        if "min" in cond and not positions:
+            return []
+        return positions
+
+    # coordinated_np_count: {min: N} — count vav-coord NP heads (S2 enumeration)
+    if "coordinated_np_count" in line_anywhere:
+        cond = line_anywhere["coordinated_np_count"]
+        positions = M.coordinated_np_split_positions(line)
         if "min" in cond and not positions:
             return []
         return positions

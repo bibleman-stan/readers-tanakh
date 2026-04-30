@@ -293,6 +293,7 @@ def _first_vowel_and_next_consonant(token: str) -> tuple[str | None, str | None,
     common false-positive classes.
     """
     found_first_consonant = False
+    first_consonant = None
     vowel = None
     next_consonant = None
     next_has_dagesh = False
@@ -303,6 +304,7 @@ def _first_vowel_and_next_consonant(token: str) -> tuple[str | None, str | None,
         if 0x05D0 <= cp <= 0x05EA:  # Hebrew letter
             if not found_first_consonant:
                 found_first_consonant = True
+                first_consonant = ch
             elif vowel is not None and next_consonant is None:
                 next_consonant = ch
                 # Scan forward for dagesh on this consonant. TAHOT Unicode order
@@ -319,7 +321,17 @@ def _first_vowel_and_next_consonant(token: str) -> tuple[str | None, str | None,
                     j += 1
                 return (vowel, next_consonant, next_has_dagesh)
         elif found_first_consonant and vowel is None and 0x05B0 <= cp <= 0x05BD:
-            vowel = ch
+            if cp == 0x05BC:
+                # Dagesh: usually gemination of NEXT consonant, NOT a vowel.
+                # Exception: vav + dagesh = shuruk (the וּ vowel itself, marking
+                # vav-conjunction or "and-" with following labial/sheva). Treat
+                # the dagesh AS the vav's vowel so callers don't read past it
+                # to the next consonant's vowel.
+                if first_consonant == "ו":
+                    vowel = ch
+                # else: skip — dagesh on non-vav first consonant is gemination
+            else:
+                vowel = ch
         i += 1
     return (vowel, next_consonant, next_has_dagesh)
 
@@ -520,17 +532,50 @@ def is_bare_do_marker_token(token: str) -> bool:
     return s == "את" or s == "ואת"
 
 
+def _mem_after_vav_is_min_prep(token: str) -> bool:
+    """True if token's mem (after leading vav) bears the מן-prep niqqud
+    signature: hireq + dagesh on next consonant.
+
+    Distinguishes vav-prep (וּמִן-X) from vav-noun (וּמָגוֹג, וּמָדַי, וּמֶלֶךְ).
+    Required because skel-only check `s[1]=='מ'` matches both classes; the
+    latter triggered S1 false-fires on NP-enumeration lines (Gen 10:2 sons-
+    of-Yepheth, etc.).
+    """
+    t = strip_teamim(token)
+    if not t.startswith("ו") or len(t) < 2:
+        return False
+    # Skip past vav and its niqqud/dagesh (shuruk = vav + dagesh) to reach mem
+    i = 1
+    while i < len(t):
+        cp = ord(t[i])
+        if 0x05D0 <= cp <= 0x05EA:
+            break
+        i += 1
+    if i >= len(t) or t[i] != "מ":
+        return False
+    # Now check mem's niqqud + next-consonant-dagesh
+    sub = t[i:]
+    vowel, _, next_dagesh = _first_vowel_and_next_consonant(sub)
+    return vowel == HIREQ and next_dagesh
+
+
 def is_vav_coord_pp_head(token: str) -> bool:
     """True if token is a vav-prefixed PP head — וְאֶל, וְעַל, וְעִם, וּבְ-NN, וּלְ-NN, וּכְ-NN, וּמְ-NN.
 
     Used by S1 (coordinated-PP enumeration split). A vav-coord PP head
     introduces a new coordinated-PP member in a list.
+
+    Niqqud-aware mem-discrimination (2026-04-29): when prefix is mem, requires
+    the מן-prep signature (hireq + dagesh-on-next-consonant) to disambiguate
+    מן-prep from vav + mem-noun (proper noun, mem-prefix common noun).
     """
     if MAQQEF in token:
         head = token.split(MAQQEF, 1)[0]
         s = skel(head)
+        head_token = head
     else:
         s = skel(token)
+        head_token = token
     if len(s) < 2 or s[0] != "ו":
         return False
     # vav + free prep stem (וְאֶל / וְעַל / וְעִם / וְתַחַת / ...)
@@ -539,8 +584,12 @@ def is_vav_coord_pp_head(token: str) -> bool:
     # vav + bound prep + 1+ chars (ובדגת / ובעוף / ובכל / ולכל / ...)
     if len(s) >= 3 and s[1] in BOUND_PREP_PREFIXES:
         inner = s[1:]
-        if inner not in QATAL_COMMON and not is_finite_verb_skel(inner):
-            return True
+        if inner in QATAL_COMMON or is_finite_verb_skel(inner):
+            return False
+        # Mem ambiguity: only count as vav-PP if mem bears the מן-prep signature
+        if s[1] == "מ" and not _mem_after_vav_is_min_prep(head_token):
+            return False
+        return True
     return False
 
 
@@ -622,6 +671,67 @@ def coordinated_pp_split_positions(line: str) -> list[int]:
         return []
     # Filter position 0 — splitting BEFORE the first token of a line is meaningless.
     return [i for i in vav_coord_indices if i > 0]
+
+
+# Vav-prefixed non-NP particles — exclusion list for is_vav_coord_np_head.
+# These are common vav-conjunction + particle/negation/etc. that share the
+# vav-prefix shape but are NOT NP heads.
+VAV_NON_NP_PARTICLES = {
+    "ולא", "וכי", "ואם", "ואך", "ואף", "וגם", "והנה", "והיה",
+    "ואיך", "ואין", "ואל", "ואדם",
+    # Note: "ואל" is also caught by is_vav_coord_pp_head; the explicit listing
+    # here is defensive.
+}
+
+
+def is_vav_coord_np_head(token: str) -> bool:
+    """True if token is vav + NP head (proper noun, def-art noun, construct
+    head, or bare common noun). Used by S2 (coordinated-NP enumeration split).
+
+    Conservative: relies on negative exclusion of (vav-prep, vav-DO-marker,
+    vav-finite-verb, vav-non-NP-particle) plus length floor.
+    """
+    s = skel(token)
+    if not s.startswith("ו") or len(s) < 3:
+        return False
+    # Exclude vav-prep (S1 territory)
+    if is_vav_coord_pp_head(token):
+        return False
+    # Exclude vav-DO-marker (וְאֵת, with or without maqqef-joined complement)
+    if s.startswith("ואת"):
+        return False
+    # Exclude vav-finite-verb (wayyiqtol, weqatal)
+    if is_finite_verb_token(token):
+        return False
+    # Exclude vav-particles (closed list)
+    if s in VAV_NON_NP_PARTICLES:
+        return False
+    return True
+
+
+def coordinated_np_split_positions(line: str) -> list[int]:
+    """Return token indices in `line` where a SPLIT should be inserted to break
+    a coordinated-NP enumeration into one-NP-per-line. Returns empty list if
+    the line has fewer than 4 NP heads (no enumeration to split — the min:4
+    threshold is intentionally one notch more conservative than S1's min:3 to
+    dodge triadic bonded-triplet false positives like Patriarchs / heaven and
+    earth).
+
+    Algorithm: count vav-coord-NP heads. ≥3 vav-coord-NPs (= ≥4 total NP
+    members including the initial governor's first NP) returns the split
+    positions; below threshold returns [].
+    """
+    toks = tokens(line)
+    if len(toks) < 4:
+        return []
+    vav_np_positions: list[int] = []
+    for i, tok in enumerate(toks):
+        if i > 0 and is_vav_coord_np_head(tok):
+            vav_np_positions.append(i)
+    # Need ≥3 vav-coord-NPs (= ≥4 total enumeration members)
+    if len(vav_np_positions) < 3:
+        return []
+    return vav_np_positions
 
 
 def is_bare_prep_token(token: str) -> bool:

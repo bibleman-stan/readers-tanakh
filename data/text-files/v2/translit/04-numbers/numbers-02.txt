@@ -84,8 +84,10 @@ ufekudeihem
 chamishah | ve'arba'im | elef | veshesh | me'ot | vachamishim
 
 2:16
-kal | hapekudim | lemachaneh | Re'uven | me'at | elef | ve'echad | vachamishim | elef | ve'arba | me'ot | vachamishim
-letziv'otam
+kal | hapekudim | lemachaneh | Re'uven | me'at | elef
+ve'echad
+vachamishim | elef | ve'arba | me'ot
+vachamishim | letziv'otam
 usheniyim
 yisa'u
 
@@ -168,7 +170,10 @@ veshesh | me'ot | la'acharonah | yis'u | ledigleihem
 2:32
 eleh | pekudei | venei | Yisra'el | leveit | avotam
 kol | pekudei | hamachanot | letziv'otam
-shesh | me'ot | elef | usheloshet | alafim | vachamesh | me'ot | vachamishim
+shesh | me'ot | elef
+usheloshet | alafim
+vachamesh | me'ot
+vachamishim
 
 2:33
 vehalviyim | lo | hatepakedu

@@ -18,7 +18,10 @@ eser | ba'amah | makifim | et | haiyam | saviv | shenayim | turim | habakar
 yetzukim | bemutzakto
 
 4:4
-omed | al | sheneim | asar | bakar | sheloshah | fonim | tzafonah | usheloshah | fonim | yamah | usheloshah | ponim | negbah | usheloshah | ponim | mizrachah
+omed | al | sheneim | asar | bakar | sheloshah | fonim | tzafonah
+usheloshah | fonim | yamah
+usheloshah | ponim | negbah
+usheloshah | ponim | mizrachah
 vehaiyam | aleihem | milma'elah
 vekhol | achoreihem | bayetah
 
@@ -112,7 +115,10 @@ zahav
 hu | mikhlot | zahav
 
 4:22
-vehamzamerot | vehamizrakot | vehakkapot | vehamachtot
+vehamzamerot
+vehamizrakot
+vehakkapot
+vehamachtot
 zahav | sagur
 ufetach | habayit | daltotav | hapenimiyot | lekodesh | hakodashim | vedaltei | habayit | laheikhal
 zahav

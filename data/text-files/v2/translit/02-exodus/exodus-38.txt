@@ -126,15 +126,18 @@ vayhi | zehav | hatenufah | tesha | ve'esrim | kikar
 usheva | me'ot | usheloshim | shekel | beshekel | hakodesh
 
 38:25
-vekhesef | pekudei | ha'edah | me'at | kikar
-ve'elef | usheva | me'ot | vachamishah | veshiv'im | shekel
-beshekel | hakodesh
+vekhesef | pekudei | ha'edah | me'at | kikar | ve'elef
+usheva | me'ot
+vachamishah
+veshiv'im | shekel | beshekel | hakodesh
 
 38:26
 beka | lagulgolet | machatzit | hashekel | beshekel | hakodesh
 lekhol | ha'over | al | hapekudim | miben | esrim | shanah
-vama'lah
-leshesh | me'ot | elef | usheloshet | alafim | vachamesh | me'ot | vachamishim
+vama'lah | leshesh | me'ot | elef
+usheloshet | alafim
+vachamesh | me'ot
+vachamishim
 
 38:27
 vayhi | me'at | kikar | hakesef
@@ -142,7 +145,10 @@ latzeket | et | adnei | hakodesh | ve'et
 adnei | haparokhet | me'at | adanim | lim'at | hakikar | kikar | la'aden
 
 38:28
-ve'et | ha'elef | usheva | hame'ot | vachamishah | veshiv'im
+ve'et | ha'elef
+usheva | hame'ot
+vachamishah
+veshiv'im
 asah | vavim | la'amudim
 vetzipah | rasheihem
 vechishak | otam
