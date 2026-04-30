@@ -3,8 +3,7 @@ vaydaber | Yahweh | el | Mosheh | lemor
 
 27:2
 daber | el | benei | Yisra'el | ve'amarta | alehem | ish
-ki | yafli
-neder
+ki | yafli | neder
 be'erkekha | nefashot | Layahweh
 
 27:3
@@ -15,14 +14,11 @@ beshekel | hakodesh
 
 27:4
 ve'im | nekevah
-hi | vehayah | erkekha
-sheloshim | shakel
+hi | vehayah | erkekha | sheloshim | shakel
 
 27:5
 ve'im | miben | chamesh | shanim | ve'ad | ben | esrim | shanah
-vehayah | erkekha | hazakhar
-esrim | shekalim | velanekevah
-aseret | shekalim
+vehayah | erkekha | hazakhar | esrim | shekalim | velanekevah | aseret | shekalim
 
 27:6
 ve'im | miben | chodesh | ve'ad | ben | chamesh | shanim
@@ -32,9 +28,7 @@ sheloshet | shekalim | kasef
 
 27:7
 ve'im | miben | shishim | shanah | vama'lah | im | zakhar
-vehayah | erkekha
-chamishah | asar | shakel | velanekevah
-asarah | shekalim
+vehayah | erkekha | chamishah | asar | shakel | velanekevah | asarah | shekalim
 
 27:8
 ve'im | makh | hu | me'erkekha
@@ -42,8 +36,7 @@ vehe'emido | lifnei | hakohen
 vehe'erikh | oto
 hakohen
 al | pi | asher | tasig | yad | hanoder
-ya'arikhenu
-hakohen
+ya'arikhenu | hakohen
 
 27:9
 ve'im | behemah | asher | yakrivu | mimenah | korban | Layahweh
@@ -85,8 +78,7 @@ veyasaf | chamishit | kesef | erkekha | alav | vehayah | lo
 
 27:16
 ve'im | misedeh | achuzato | yakdish | ish | Layahweh
-vehayah | erkekha | lefi | zar'o
-zera | chomer | se'orim | bachamishim
+vehayah | erkekha | lefi | zar'o | zera | chomer | se'orim | bachamishim
 shekel | kasef
 
 27:17
@@ -99,15 +91,13 @@ vechishav | lo | hakohen | et | hakesef | al | pi | hashanim | hanotarot | ad | 
 venigra | me'erkekha
 
 27:19
-ve'im | ga'ol | yig'al | et | hasadeh | hamakdish
-oto
+ve'im | ga'ol | yig'al | et | hasadeh | hamakdish | oto
 veyasaf | chamishit | kesef | erkekha | alav | vekam | lo
 
 27:20
 ve'im | lo | yig'al | et | hasadeh
 ve'im | makhar | et | hasadeh | le'ish | acher
-lo | yiga'el
-od
+lo | yiga'el | od
 
 27:21
 vehayah | hasadeh | betzeto | vaiyovel | kodesh | Layahweh
@@ -146,8 +136,7 @@ akh | kol | cherem | asher | yacharim | ish | Layahweh | mikol | asher | lo | me
 uvehemah
 umisedeh | achuzato
 lo | yimakher
-velo | yiga'el
-kol | cherem | kodesh | kadashim | hu | Layahweh
+velo | yiga'el | kol | cherem | kodesh | kadashim | hu | Layahweh
 
 27:29
 kol | cherem | asher | yochoram | min | ha'adam
@@ -160,8 +149,7 @@ Layahweh
 hu | kodesh | Layahweh
 
 27:31
-ve'im | ga'ol | yig'al | ish | mima'asro
-chamishito | yosef | alav
+ve'im | ga'ol | yig'al | ish | mima'asro | chamishito | yosef | alav
 
 27:32
 vekhol | ma'sar | bakar | vatzon

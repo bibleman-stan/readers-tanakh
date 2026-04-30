@@ -10,14 +10,13 @@ uvo | yithalalu
 
 4:3
 ki | khoh | amar | Yahweh | le'ish | Yehudah | Velirushalim
-niru | lakhem
-nir | ve'al | tizre'u | el | kotzim
+niru | lakhem | nir
+ve'al | tizre'u | el | kotzim
 
 4:4
 himolu | Layahweh | vehasiru | arelot | levavkhem
 ish | Yehudah
-veyoshevei | Yerushalim
-pen | tetze | kha'esh | chamati
+veyoshevei | Yerushalim | pen | tetze | kha'esh | chamati
 uva'arah | ve'ein | mekhabeh | mipenei | roa | ma'aleikhem
 
 4:5
@@ -33,8 +32,7 @@ ki | ra'ah | anokhi | mevi | mitzafon
 veshever | gadol
 
 4:7
-alah | aryeh | misubekho | umashchit | goyim
-nasa
+alah | aryeh | misubekho | umashchit | goyim | nasa
 yatza | mimekomo | lasum | artzekh | leshamah
 arayikh | titzeinah
 me'ein | yoshev
@@ -45,9 +43,8 @@ sifdu | veheililu
 ki | lo | shav | charon | af | Yahweh | mimenu
 
 4:9
-vehayah | vaiyom | hahu | ne'um | Yahweh
-yovad | lev | hamelekh | velev | hasarim
-venashamu | hakohanim
+vehayah | vaiyom | hahu | ne'um | Yahweh | yovad | lev | hamelekh
+velev | hasarim | venashamu | hakohanim
 vehanevi'im | yitmahu
 
 4:10
@@ -89,8 +86,7 @@ umashmia | aven | mehar | Efrayim
 4:16
 hazkiru | lagoyim | hineh | hashmi'u | al | Yerushalim
 notzerim | ba'im | me'eretz | hamerchak
-vaiyitenu | al | arei | Yehudah
-kolam
+vaiyitenu | al | arei | Yehudah | kolam
 
 4:17
 keshomerei | sadai
@@ -109,22 +105,19 @@ ki | kol | shofar | shama'ti | nafshi
 teru'at | milchamah
 
 4:20
-shever | al | shever | Nikra
-ki | shudedah
+shever | al | shever | Nikra | ki | shudedah
 kol | ha'aretz | pit'om | shudedu | ohalai
 rega
 yeri'otai
 
 4:21
-ad | matai | er'eh | nes | eshme'ah
-kol | shofar
+ad | matai | er'eh | nes | eshme'ah | kol | shofar
 
 4:22
 ki | evil | ami | oti | lo | yada'u
 banim | sekhalim | hemah
-velo | nevonim
-hemah
-chakhamim | hemah | lehara | uleheitiv
+velo | nevonim | hemah | chakhamim | hemah | lehara
+uleheitiv
 lo | yada'u
 
 4:23
@@ -152,8 +145,7 @@ vekhol | arav | Nitetzu | mipenei | Yahweh | mipenei | charon | apo
 
 4:27
 ki | khoh | amar | Yahweh
-shemamah | tihyeh
-kol | ha'aretz | vekhalah
+shemamah | tihyeh | kol | ha'aretz | vekhalah
 lo | e'eseh
 
 4:28
@@ -167,8 +159,7 @@ mikol | parash | veromeh | keshet | borachat | kol | ha'ir | ba'u | be'avim
 uvakefim
 alu
 kol | ha'ir | azuvah
-ve'ein | yoshev | bahen
-ish
+ve'ein | yoshev | bahen | ish
 
 4:30
 ve'ati | shadud | mah | ta'asi | ki | tilbeshi | shani | ki | ta'di | adi | zahav | ki | tikre'i | vapukh | einayikh
@@ -178,6 +169,4 @@ nafshekh | yevakeshu
 4:31
 ki | kol | kecholah | shama'ti | tzarah | kemavkirah
 kol | bat | Tziyon | tityapeach
-tefares | kapeiha
-o | na | li
-ki | ayefah | nafshi | lehoregim
+tefares | kapeiha | o | na | li | ki | ayefah | nafshi | lehoregim

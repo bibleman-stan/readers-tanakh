@@ -1,8 +1,6 @@
 11:1
 vehamelekh | Shelomoh | ahav | nashim | nakheriyot | rabot | ve'et | bat | par'oh
-mo'aviyot | amoniyot | adomiyot
-tzedeniyot
-chitiyot
+mo'aviyot | amoniyot | adomiyot | tzedeniyot | chitiyot
 
 11:2
 min | hagoyim | asher | amar | Yahweh | el | benei | Yisra'el | lo | tavo'u | vahem | vehem | lo | yavo'u | vakhem
@@ -16,20 +14,16 @@ shelosh | me'ot | vaiyatu | nashav | et | libo
 11:4
 vayhi | le'et | ziknat | Shelomoh
 nashav | hitu | et | levavo | acharei | elohim | acherim
-velo | hayah | levavo | shalem | im | Yahweh | elohav
-kilvav
-David | aviv
+velo | hayah | levavo | shalem | im | Yahweh | elohav | kilvav | David | aviv
 
 11:5
-vaiyelekh | Shelomoh | acharei | Ashtoret
-elohei
+vaiyelekh | Shelomoh | acharei | Ashtoret | elohei
 tzidonim | ve'acharei | Milkom | shikutz
 amonim
 
 11:6
 vaiya'as | Shelomoh | hara | be'einei | Yahweh
-velo | mile | acharei | Yahweh
-Kedavid | aviv
+velo | mile | acharei | Yahweh | Kedavid | aviv
 
 11:7
 az | yivneh | Shelomoh | bamah | Likhmovosh | shikutz | Mo'av
@@ -47,8 +41,7 @@ Hanir'ah | elav | pa'amayim
 
 11:10
 vetzivah | elav | al | hadavar | hazeh | levilti | lekhet
-acharei | elohim | acherim | velo | shamar | et | asher | tzivah
-Yahweh
+acharei | elohim | acherim | velo | shamar | et | asher | tzivah | Yahweh
 
 11:11
 vaiyomer | Yahweh | Lishlomoh | ya'an | asher | hayetah | zot | imakh
@@ -61,8 +54,7 @@ akh | beyameikha | lo | e'esenah | lema'an | David | avikha | miyad | binkha
 ekra'enah
 
 11:13
-rak | et | kol | hamamlakhah | lo | ekra
-shevet | echad | eten | livnekha
+rak | et | kol | hamamlakhah | lo | ekra | shevet | echad | eten | livnekha
 lema'an | David | avdi
 ulema'an | Yerushalim | asher | bachareti
 
@@ -87,8 +79,7 @@ na'ar | katan
 
 11:18
 vaiyakumu | Mimidyan
-vaiyavo'u
-Paran
+vaiyavo'u | Paran
 vaiyikchu | anashim | imam | Miparan | vaiyavo'u | Mitzrayim | el | par'oh | melekh | Mitzrayim
 vaiyiten | lo | vayit
 velechem | amar | lo
@@ -138,8 +129,7 @@ eved | Lishlomoh | vaiyarem | yad | bamelekh
 
 11:27
 vezeh | hadavar | asher | herim | yad | bamelekh | Shelomoh | banah | et | hamilo
-sagar | et | peretz
-ir | David | aviv
+sagar | et | peretz | ir | David | aviv
 
 11:28
 veha'ish | Yarave'am
@@ -158,9 +148,7 @@ vaiyitpos | Achiyah | basalmah | hachadashah | asher | alav | vaiyikra'eha
 sheneim | asar | kera'im
 
 11:31
-vaiyomer | Leyarave'am
-kach | lekha
-asarah | kera'im
+vaiyomer | Leyarave'am | kach | lekha | asarah | kera'im
 ki | khoh | amar | Yahweh | elohei | Yisra'el | hini | korea | et | hamamlakhah | miyad | Shelomoh
 venatati | lekha | et | asarah | hashevatim
 
@@ -196,23 +184,20 @@ lasum | shemi
 sham
 
 11:37
-ve'otekha | ekach | umalakhta | bekhol | asher | te'aveh
-nafshekha
+ve'otekha | ekach | umalakhta | bekhol | asher | te'aveh | nafshekha
 vehayita | melekh | al | Yisra'el
 
 11:38
 vehayah | im | tishma | et | kol | asher | atzavekha
 vehalakhta | vidrakhai | ve'asita | haiyashar | be'einai | lishmor | chukotai
 umitzvotai
-ka'asher | asah
-David | avdi
+ka'asher | asah | David | avdi
 vehayiti | imakh
 uvaniti | lekha | vayit | ne'eman | ka'asher | baniti | Ledavid
 venatati | lekha | et | Yisra'el
 
 11:39
-va'aneh | et | zera | David | lema'an | zot
-akh | lo | khol | haiyamim
+va'aneh | et | zera | David | lema'an | zot | akh | lo | khol | haiyamim
 
 11:40
 vayvakesh | Shelomoh
@@ -232,7 +217,6 @@ arba'im | shanah
 
 11:43
 vaiyishkav | Shelomoh | im | avotav
-vaiyikaver | be'ir
-David | aviv
+vaiyikaver | be'ir | David | aviv
 vaiyimlokh | Rechav'am | beno
 tachtav

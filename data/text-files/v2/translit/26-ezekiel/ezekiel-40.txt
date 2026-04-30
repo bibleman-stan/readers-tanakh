@@ -71,14 +71,12 @@ shesh | amot | mipo
 veshesh | amot | mipo
 
 40:13
-vaiyamod | et | hasha'ar | migag | hata | legago
-rochav
+vaiyamod | et | hasha'ar | migag | hata | legago | rochav
 esrim | vechamesh | amot
 petach | neged | patach
 
 40:14
-vaiya'as | et | eilim
-shishim | amah | ve'el | eil | hechatzer
+vaiya'as | et | eilim | shishim | amah | ve'el | eil | hechatzer
 hasha'ar | saviv | saviv
 
 40:15
@@ -95,8 +93,7 @@ ve'el | ayil
 timorim
 
 40:17
-vayvi'eni | el | hechatzer | hachitzonah
-vehineh | leshakhot | veritzfah
+vayvi'eni | el | hechatzer | hachitzonah | vehineh | leshakhot | veritzfah
 asui | lechatzer | saviv | saviv | sheloshim | leshakhot | el | haritzfah
 
 40:18
@@ -118,8 +115,7 @@ verachebo
 
 40:21
 veta'ov | sheloshah | mipo | usheloshah | mipo
-ve'eilov | ve'elamov | hayah | kemidat
-hasha'ar | harishon
+ve'eilov | ve'elamov | hayah | kemidat | hasha'ar | harishon
 chamishim | amah | areko
 verochav
 chamesh | ve'esrim | ba'amah
@@ -140,8 +136,7 @@ me'ah | amah
 vaiyolikheni | derekh | hadarom
 vehineh | sha'ar
 derekh | hadarom
-umadad | eilov | ve'eilamov | kamidot
-ha'eleh
+umadad | eilov | ve'eilamov | kamidot | ha'eleh
 
 40:25
 vechalonim | lo
@@ -152,8 +147,7 @@ chamesh | ve'esrim | amah
 
 40:26
 uma'alot | shiv'ah | olotov | ve'elamov
-lifneihem | vetimorim | lo | echad | mipo | ve'echad | mipo
-el | eilov
+lifneihem | vetimorim | lo | echad | mipo | ve'echad | mipo | el | eilov
 
 40:27
 vesha'ar | lechatzer | hapenimi
@@ -163,8 +157,7 @@ me'ah | amot
 
 40:28
 vayvi'eni | el | chatzer | hapenimi
-besha'ar | hadarom | vaiyamod | et | hasha'ar | hadarom | kamidot
-ha'eleh
+besha'ar | hadarom | vaiyamod | et | hasha'ar | hadarom | kamidot | ha'eleh
 
 40:29
 veta'ov | ve'eilov | ve'elamov | kamidot | ha'eleh
@@ -184,8 +177,7 @@ uma'alot | shemoneh | ma'alov
 
 40:32
 vayvi'eni | el | hechatzer | hapenimi
-derekh | hakadim | vaiyamod | et | hasha'ar | kamidot
-ha'eleh
+derekh | hakadim | vaiyamod | et | hasha'ar | kamidot | ha'eleh
 
 40:33
 veta'ov | ve'elov | ve'elamov | kamidot | ha'eleh
@@ -288,6 +280,5 @@ veshalosh | amot | mipo
 40:49
 orekh | ha'ulam | esrim | amah | verochav | ashtei | esreh | amah
 uvama'alot | asher | ya'alu
-elav | ve'amudim | el | ha'eilim
-echad | mipoh
+elav | ve'amudim | el | ha'eilim | echad | mipoh
 ve'echad | mipoh

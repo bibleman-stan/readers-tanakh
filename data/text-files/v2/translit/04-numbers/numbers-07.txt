@@ -36,8 +36,7 @@ natan | livnei | Gereshon | kefi | avodatam
 7:8
 ve'et | arba | ha'agalot | ve'et | shemonat | habakar
 natan | livnei | Merari | kefi | avodatam
-beyad | Itamar
-ben | Aharon | hakohen
+beyad | Itamar | ben | Aharon | hakohen
 
 7:9
 velivnei | Kehat | lo | natan
@@ -75,8 +74,7 @@ se'ir | izim | echad | lechatat
 
 7:17
 ulezevach | hashelamim | bakar | shenayim | eilim | chamishah | atudim | chamishah | kevasim | benei | shanah | chamishah
-zeh | kareban | Nachshon
-ben | Aminadav
+zeh | kareban | Nachshon | ben | Aminadav
 
 7:18
 baiyom | hasheni | hikriv | Netan'el | ben | Tzu'ar | nesi | Yisoshkhar
@@ -99,12 +97,10 @@ se'ir | izim | echad | lechatat
 
 7:23
 ulezevach | hashelamim | bakar | shenayim | eilim | chamishah | atudim | chamishah | kevasim | benei | shanah | chamishah
-zeh | kareban | Netan'el
-ben | Tzu'ar
+zeh | kareban | Netan'el | ben | Tzu'ar
 
 7:24
-baiyom | hashelishi | nasi | livnei | Zevulun | Eli'av
-ben | Chelon
+baiyom | hashelishi | nasi | livnei | Zevulun | Eli'av | ben | Chelon
 
 7:25
 karebano | ka'arat | kesef | achat | sheloshim | ume'ah | mishkalah
@@ -124,12 +120,10 @@ se'ir | izim | echad | lechatat
 
 7:29
 ulezevach | hashelamim | bakar | shenayim | eilim | chamishah | atudim | chamishah | kevasim | benei | shanah | chamishah
-zeh | kareban | Eli'av
-ben | Chelon
+zeh | kareban | Eli'av | ben | Chelon
 
 7:30
-baiyom | harevi'i | nasi | livnei | Re'uven | Elitzur
-ben | Shedei'ur
+baiyom | harevi'i | nasi | livnei | Re'uven | Elitzur | ben | Shedei'ur
 
 7:31
 karebano | ka'arat | kesef | achat | sheloshim | ume'ah | mishkalah
@@ -149,13 +143,10 @@ se'ir | izim | echad | lechatat
 
 7:35
 ulezevach | hashelamim | bakar | shenayim | eilim | chamishah | atudim | chamishah | kevasim | benei | shanah | chamishah
-zeh | kareban | Elitzur
-ben | Shedei'ur
+zeh | kareban | Elitzur | ben | Shedei'ur
 
 7:36
-baiyom | hachamishi | nasi | livnei | Shim'on
-Shelumi'el
-ben | Tzurishadai
+baiyom | hachamishi | nasi | livnei | Shim'on | Shelumi'el | ben | Tzurishadai
 
 7:37
 karebano | ka'arat | kesef | achat | sheloshim | ume'ah | mishkalah
@@ -178,8 +169,7 @@ ulezevach | hashelamim | bakar | shenayim | eilim | chamishah | atudim | chamish
 ben | Tzurishadai
 
 7:42
-baiyom | hashishi | nasi | livnei | Gad | Elyasaf
-ben | De'u'el
+baiyom | hashishi | nasi | livnei | Gad | Elyasaf | ben | De'u'el
 
 7:43
 karebano | ka'arat | kesef | achat | sheloshim | ume'ah | mishkalah
@@ -199,12 +189,10 @@ se'ir | izim | echad | lechatat
 
 7:47
 ulezevach | hashelamim | bakar | shenayim | eilim | chamishah | atudim | chamishah | kevasim | benei | shanah | chamishah
-zeh | kareban | Elyasaf
-ben | De'u'el
+zeh | kareban | Elyasaf | ben | De'u'el
 
 7:48
-baiyom | hashevi'i | nasi | livnei | Efrayim | Elishama
-ben | Amihud
+baiyom | hashevi'i | nasi | livnei | Efrayim | Elishama | ben | Amihud
 
 7:49
 karebano | ka'arat | kesef | achat | sheloshim | ume'ah | mishkalah
@@ -224,12 +212,10 @@ se'ir | izim | echad | lechatat
 
 7:53
 ulezevach | hashelamim | bakar | shenayim | eilim | chamishah | atudim | chamishah | kevasim | benei | shanah | chamishah
-zeh | kareban | Elishama
-ben | Amihud
+zeh | kareban | Elishama | ben | Amihud
 
 7:54
-baiyom | hashemini | nasi | livnei | Menasheh | Gamli'el
-ben | Pedah | Tzur
+baiyom | hashemini | nasi | livnei | Menasheh | Gamli'el | ben | Pedah | Tzur
 
 7:55
 karebano | ka'arat | kesef | achat | sheloshim | ume'ah | mishkalah
@@ -252,8 +238,7 @@ ulezevach | hashelamim | bakar | shenayim | eilim | chamishah | atudim | chamish
 ben | Pedah tzur
 
 7:60
-baiyom | hateshi'i | nasi | livnei | Vinyamin | Avidan
-ben | Gid'oni
+baiyom | hateshi'i | nasi | livnei | Vinyamin | Avidan | ben | Gid'oni
 
 7:61
 karebano | ka'arat | kesef | achat | sheloshim | ume'ah | mishkalah
@@ -273,12 +258,10 @@ se'ir | izim | echad | lechatat
 
 7:65
 ulezevach | hashelamim | bakar | shenayim | eilim | chamishah | atudim | chamishah | kevasim | benei | shanah | chamishah
-zeh | kareban | Avidan
-ben | Gid'oni
+zeh | kareban | Avidan | ben | Gid'oni
 
 7:66
-baiyom | ha'asiri | nasi | livnei | Dan | Achi'ezer
-ben | Ammishadai
+baiyom | ha'asiri | nasi | livnei | Dan | Achi'ezer | ben | Ammishadai
 
 7:67
 karebano | ka'arat | kesef | achat | sheloshim | ume'ah | mishkalah
@@ -298,8 +281,7 @@ se'ir | izim | echad | lechatat
 
 7:71
 ulezevach | hashelamim | bakar | shenayim | eilim | chamishah | atudim | chamishah | kevasim | benei | shanah | chamishah
-zeh | kareban | Achi'ezer
-ben | Ammishadai
+zeh | kareban | Achi'ezer | ben | Ammishadai
 
 7:72
 beyom | ashtei | asar | yom | nasi | livnei | Asher | Pag'i'el
@@ -327,8 +309,7 @@ ben | Akheran
 
 7:78
 beyom | sheneim | asar | yom | nasi | livnei | Naftali
-Achira
-ben | Einan
+Achira | ben | Einan
 
 7:79
 karebano | ka'arat | kesef | achat | sheloshim | ume'ah | mishkalah
@@ -348,8 +329,7 @@ se'ir | izim | echad | lechatat
 
 7:83
 ulezevach | hashelamim | bakar | shenayim | eilim | chamishah | atudim | chamishah | kevasim | benei | shanah | chamishah
-zeh | kareban | Achira
-ben | Einan
+zeh | kareban | Achira | ben | Einan
 
 7:84
 zot | chanukat | hamizbeach | beyom | himashach | oto | me'et | nesi'ei | Yisra'el

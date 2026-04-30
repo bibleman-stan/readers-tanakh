@@ -1,19 +1,15 @@
 46:1
 vaiyisa | Yisra'el | vekhol | asher | lo
 vaiyavo
-Be'erah | Shava | vaiyizbach | zevachim
-lelohei | aviv | Yitzchak
+Be'erah | Shava | vaiyizbach | zevachim | lelohei | aviv | Yitzchak
 
 46:2
 vaiyomer | elohim | Leyisra'el | bemar'ot | halaylah
-vaiyomer
-Ya'ako | Ya'ako
-vaiyomer
-hineni
+vaiyomer | Ya'ako | Ya'ako
+vaiyomer | hineni
 
 46:3
-vaiyomer
-anokhi | ha'el
+vaiyomer | anokhi | ha'el
 elohei | avikha | al | tira | meredah | Mitzraymah
 ki | legoy | gadol | asimekha | sham
 
@@ -30,8 +26,7 @@ laset | oto
 
 46:6
 vaiyikchu | et | mikneihem | ve'et | rekhusham | asher | rakheshu | be'eretz | Kena'an
-vaiyavo'u | Mitzrayemah
-Ya'ako
+vaiyavo'u | Mitzrayemah | Ya'ako
 vekhol | zar'o | ito
 
 46:7
@@ -88,14 +83,12 @@ Ve'ar'eli
 
 46:17
 uvenei | Asher | Yimnah | Veyishvah | Veyishvi | Uveri'ah
-Veserach | achotam | uvenei | Veri'ah
-Chever | Umalki'el
+Veserach | achotam | uvenei | Veri'ah | Chever | Umalki'el
 
 46:18
 eleh | benei | Zilpah
 asher | natan | Lavan | Lele'ah | vito
-vateled | et | eleh | Leya'ako
-shesh | esreh | nafesh
+vateled | et | eleh | Leya'ako | shesh | esreh | nafesh
 
 46:19
 benei | Rachel | eshet | Ya'ako | Yosef | Uvinyamin
@@ -125,8 +118,7 @@ uvenei | Naftali | Yachtze'el | Veguni | Veyetzer | Veshilem
 46:25
 eleh | benei | Vilhah
 asher | natan | Lavan | Lerachel | bito
-vateled | et | eleh | Leya'ako
-kol | nefesh | shiv'ah
+vateled | et | eleh | Leya'ako | kol | nefesh | shiv'ah
 
 46:26
 kol | hanefesh | haba'ah | Leya'ako | Mitzraymah | yotze'ei | yerekho | milevad
@@ -146,8 +138,7 @@ artzah | Goshen
 vaiye'sor | Yosef | merkavto
 vaiya'al | likrat | Yisra'el | aviv
 Goshenah | vaiyera | elav | vaiyipol | al | tzavarav
-vaiyevek | al | tzavarav
-od
+vaiyevek | al | tzavarav | od
 
 46:30
 vaiyomer | Yisra'el | el | Yosef
@@ -178,6 +169,4 @@ va'amartem | anshei | mikneh | hayu | avadeikha | mine'ureinu
 ve'ad | atah
 gam | anachnu
 gam | avoteinu
-ba'avur | teshevu | be'eretz | Goshen
-ki | to'avat | Mitzrayim
-kol | ro'eh | tzon
+ba'avur | teshevu | be'eretz | Goshen | ki | to'avat | Mitzrayim | kol | ro'eh | tzon

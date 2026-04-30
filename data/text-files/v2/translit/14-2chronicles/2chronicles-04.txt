@@ -3,8 +3,7 @@ vaiya'as | mizbach | nechoshet
 esrim | amah | areko
 ve'esrim | amah
 rachebo
-ve'eser | amot
-komato
+ve'eser | amot | komato
 
 4:2
 vaiya'as | et | haiyam | mutzak
@@ -42,13 +41,11 @@ vehaiyam | lerachetzah | lakohanim | bo
 
 4:7
 vaiya'as | et | menorot | hazahav | eser | kemishpatam
-vaiyiten | baheikhal
-chamesh | miyamin | vechamesh | misemol
+vaiyiten | baheikhal | chamesh | miyamin | vechamesh | misemol
 
 4:8
 vaiya'as | shulchanot | asarah
-vaiyanach | baheikhal
-chamishah | miyamin | vachamishah | misemol
+vaiyanach | baheikhal | chamishah | miyamin | vachamishah | misemol
 vaiya'as | mizrekei | zahav | me'ah
 
 4:9
@@ -102,8 +99,7 @@ ve'et | mizbach | hazahav
 ve'et | hashulchanot | va'aleihem | lechem | hapanim
 
 4:20
-ve'et | hamenorot | veneroteihem | leva'aram | kamishpat | lifnei | hadevir
-zahav | sagur
+ve'et | hamenorot | veneroteihem | leva'aram | kamishpat | lifnei | hadevir | zahav | sagur
 
 4:21
 vehaperach | vehanerot | vehamelkachayim

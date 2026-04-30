@@ -1,6 +1,5 @@
 14:1
-vaiya'as | Asa | hatov | vehaiyashar | be'einei
-Yahweh | elohav
+vaiya'as | Asa | hatov | vehaiyashar | be'einei | Yahweh | elohav
 
 14:2
 vaiyasar | et | mizbechot | hanekhar
@@ -8,8 +7,8 @@ vehabamot | vayshaber | et | hamatzevot
 vaygada | et | ha'asherim
 
 14:3
-vaiyomer | Lihudah | lidroosh | et | Yahweh
-elohei | avoteihem | vela'asot
+vaiyomer | Lihudah | lidroosh | et | Yahweh | elohei | avoteihem
+vela'asot
 hatorah | vehamitzvah
 
 14:4
@@ -48,22 +47,19 @@ begei | Tzefatah | Lemareshah
 14:10
 vaiyikra | Asa | el | Yahweh | elohav | vaiyomar
 Yahweh | ein | imekha | la'zor | bein | rav | le'ein | koach
-azerenu | Yahweh | eloheinu | ki | aleikha | Nish'anu | uveshimkha | vanu
-al | hehamon
+azerenu | Yahweh | eloheinu | ki | aleikha | Nish'anu
+uveshimkha | vanu | al | hehamon
 hazeh
 Yahweh | eloheinu | atah | al | ya'tzor | imekha | enoosh
 
 14:11
 vaiyigof | Yahweh | et | hakushim | lifnei | Asa
-velifnei | Yehudah | vaiyanusu
-hakushim
+velifnei | Yehudah | vaiyanusu | hakushim
 
 14:12
 vaiyirdefem | Asa | veha'am | asher | imo | ad | Ligrar
-vaiyipol | mikushim | le'ein | lahem | michyah
-ki | Nishberu | lifnei | Yahweh
-velifnei | machanehu | vaiyis'u | shalal
-harbeh | me'od
+vaiyipol | mikushim | le'ein | lahem | michyah | ki | Nishberu | lifnei | Yahweh
+velifnei | machanehu | vaiyis'u | shalal | harbeh | me'od
 
 14:13
 vaiyaku | et | kol | he'arim | sevivot | Gerar
@@ -74,5 +70,4 @@ hayetah | vahem
 14:14
 vegam | oholei | mikneh | hiku
 vaiyishbu | tzon | laro | ugemalim
-vaiyashuvu
-Yerushalim
+vaiyashuvu | Yerushalim

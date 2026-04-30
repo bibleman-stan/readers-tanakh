@@ -1,6 +1,5 @@
 36:1
-ve'eleh | toledot | Esav
-hu | Edom
+ve'eleh | toledot | Esav | hu | Edom
 
 36:2
 Esav | lakach | et | nashav | mibenot | Kena'an
@@ -28,37 +27,28 @@ ki | hayah | rekhusham | rav | mishevet | yachdav
 velo | yakhelah | eretz | megureihem | laset | otam | mipenei | mikneihem
 
 36:8
-vaiyeshev | Esav | behar | Se'ir
-Esav
-hu | Edom
+vaiyeshev | Esav | behar | Se'ir | Esav | hu | Edom
 
 36:9
-ve'eleh | toledot | Esav
-avi | Edom | behar | Se'ir
+ve'eleh | toledot | Esav | avi | Edom | behar | Se'ir
 
 36:10
 eleh
-shemot | benei | Esav | Elifaz | ben | Adah | eshet | Esav
-Re'u'el
+shemot | benei | Esav | Elifaz | ben | Adah | eshet | Esav | Re'u'el
 ben | Basemat | eshet | Esav
 
 36:11
 vaiyihyu
 benei | Elifaz
-Teiman | Omar
-Tzefo | Vega'tam
+Teiman | Omar | Tzefo | Vega'tam
 Ukenaz
 
 36:12
 Vetimna | hayetah | filegesh | Le'elifaz | ben | Esav
-vateled | Le'elifaz | et | Amalek
-eleh | benei | Adah
-eshet | Esav
+vateled | Le'elifaz | et | Amalek | eleh | benei | Adah | eshet | Esav
 
 36:13
-ve'eleh | benei | Re'u'el
-Nachat | Vazerach
-Shamah | Umizah
+ve'eleh | benei | Re'u'el | Nachat | Vazerach | Shamah | Umizah
 eleh | hayu | benei | Vasemat
 eshet | Esav
 
@@ -76,16 +66,14 @@ aluf | Kenaz
 36:16
 aluf | Korach | aluf | Ga'tam
 aluf | Amalek
-eleh | alufei | Elifaz | be'eretz | Edom
-eleh | benei | Adah
+eleh | alufei | Elifaz | be'eretz | Edom | eleh | benei | Adah
 
 36:17
 ve'eleh | benei | Re'u'el | ben | Esav
 aluf | Nachat | aluf | Zerach
 aluf | Shamah
 aluf | Mizah
-eleh | alufei | Re'u'el | be'eretz | Edom
-eleh | benei | Vasemat
+eleh | alufei | Re'u'el | be'eretz | Edom | eleh | benei | Vasemat
 eshet | Esav
 
 36:18
@@ -95,8 +83,7 @@ aluf | Korach
 eleh | alufei | Oholivamah | bat | Anah | eshet | Esav
 
 36:19
-eleh | venei | Esav | ve'eleh | alufeihem
-hu | Edom
+eleh | venei | Esav | ve'eleh | alufeihem | hu | Edom
 
 36:20
 eleh | venei | Se'ir | hachori
@@ -116,8 +103,7 @@ va'achot | Lotan
 Timna
 
 36:23
-ve'eleh | benei | Shoval
-Alvan | Umanachat
+ve'eleh | benei | Shoval | Alvan | Umanachat
 Ve'eival
 Shefo
 Ve'onam
@@ -126,13 +112,11 @@ Ve'onam
 ve'eleh | venei | Tziv'on
 Ve'aiyah | Va'anah
 hu | Anah | asher | matza | et | haiyemim | bamidbar
-bir'oto | et | hachamorim
-Letziv'on | aviv
+bir'oto | et | hachamorim | Letziv'on | aviv
 
 36:25
 ve'eleh | venei | Anah | Dishon
-Ve'oholivamah
-bat | Anah
+Ve'oholivamah | bat | Anah
 
 36:26
 ve'eleh | benei | Dishan
@@ -162,9 +146,7 @@ ve'eleh | hamelakhim | asher | malkhu
 be'eretz | Edom | lifnei | melokh | melekh | livnei | Yisra'el
 
 36:32
-vaiyimlokh | Be'edom | Bela
-ben | Be'or | veshem | iro
-Dinhavah
+vaiyimlokh | Be'edom | Bela | ben | Be'or | veshem | iro | Dinhavah
 
 36:33
 vaiyamot | Bala
@@ -176,8 +158,7 @@ Yovav
 vaiyimlokh | tachtav | Chusham | me'eretz | hateimani
 
 36:35
-vaiyamot
-Chusham
+vaiyamot | Chusham
 vaiyimlokh | tachtav | Hadad | ben | Bedad | hamakeh | et | Midyan | bisdeh | Mo'av
 veshem | iro
 Avit
@@ -192,8 +173,7 @@ Samlah | vaiyimlokh | tachtav | Sha'ul | Merechovot | Hanahar
 
 36:38
 vaiyamot
-Sha'ul | vaiyimlokh | tachtav | Ba'al | Chanan
-ben | Akhbor
+Sha'ul | vaiyimlokh | tachtav | Ba'al | Chanan | ben | Akhbor
 
 36:39
 vaiyamat | Ba'al | Chanan | ben | Akhbor
@@ -218,6 +198,5 @@ aluf | Mivtzar
 36:43
 aluf | Magdi'el
 aluf | Iram
-eleh | alufei | Edom | lemoshevotam | be'eretz | achuzatam
-hu | Esav
+eleh | alufei | Edom | lemoshevotam | be'eretz | achuzatam | hu | Esav
 avi | Edom

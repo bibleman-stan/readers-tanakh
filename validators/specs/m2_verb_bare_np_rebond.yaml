@@ -1,0 +1,46 @@
+name: m2_verb_bare_np_rebond
+rule: M2
+subcase: verb_bare_np_rebond
+severity: STRONG-MERGE-CANDIDATE
+description: |
+  Wave 6 audit pattern 3 (most common single failure class). Finite verb on
+  line N, short bare NP on line N+1 — interpretable as either bare direct
+  object (Josh 1:11: הָכִינוּ לָכֶם / צֵידָה — accusative without את per
+  JM §125b / WO §10.2.1c) OR postposed subject in VSO order (2 Kgs 23:1:
+  וַיִּשְׁלַח / הַמֶּלֶךְ).
+
+  Both interpretations license merge — they form one clause-nucleus. Per
+  canon §1, the clause nucleus (subject + verb + obligatory complement) is
+  one atomic thought.
+
+  Trigger combines both cases (disjoint from existing m2_3 [את-marked DO],
+  m2_4 [subject + verb], m2_6 [PP recipient]):
+    - line N has finite verb (anywhere)
+    - line N+1 starts with bare-NP token (no DO marker, no prep, no verb,
+      no particle, no vav-coord-anything)
+    - line N+1 has no finite verb
+    - line N+1 is short (≤4 prosodic words — substantive subjects/objects
+      of ≥5 words earn their own colon per structural justification 5)
+    - combined ≤8 PWC
+
+  Audited 2026-04-30 (Wave 6, Former Prophets + Torah audit reports).
+  Resolves: Josh 1:11, 2 Kgs 23:1, Gen 22:1 + 37:4 fragmentation residue.
+
+trigger:
+  line_n_anywhere:
+    has_finite_verb: true
+  line_n1_first_token:
+    morphology: bare_noun
+  line_n1_anywhere:
+    has_finite_verb: false
+  line_n1_max_prosodic_words: 4
+  combined_max_prosodic_words: 8
+
+guards:
+  - poetic_register
+  - next_line_is_vav_coord_pp     # block re-absorbing post-S1-split coord-PP enumeration members
+  - next_line_is_vav_coord_np     # block re-absorbing post-S2-split coord-NP enumeration members
+  - next_line_is_wayyiqtol        # block re-absorbing post-S3-split wayyiqtol-headed lines
+
+annotation_template: "M2 verb + bare-NP rebond (combined {pwc} prosodic words)"
+suggested_action: MERGE

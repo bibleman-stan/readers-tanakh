@@ -54,13 +54,11 @@ vehikhrati | otah | mikerev | amah
 
 17:11
 ki | nefesh | habasar | badam | hi
-va'ani | netativ | lakhem | al | hamizbeach | lekhaper | al | nafshoteikhem
-ki | hadam | hu
+va'ani | netativ | lakhem | al | hamizbeach | lekhaper | al | nafshoteikhem | ki | hadam | hu
 banefesh | yekhaper
 
 17:12
-al | ken | amarti | livnei | Yisra'el
-kol | nefesh | mikem | lo | tokhal | dam
+al | ken | amarti | livnei | Yisra'el | kol | nefesh | mikem | lo | tokhal | dam
 vehager | hagar | betokhkhem | lo | yokhal | dam
 
 17:13
@@ -70,8 +68,7 @@ veshafakh | et | damo | vekhisahu | be'afar
 
 17:14
 ki | nefesh | kol | basar | damo | venafsho | hu
-va'omar | livnei | Yisra'el
-dam | kol | basar | lo | tokhelu
+va'omar | livnei | Yisra'el | dam | kol | basar | lo | tokhelu
 ki | nefesh | kol | basar | damo | hi
 kol | okhelav | yikaret
 
@@ -84,5 +81,4 @@ vetaher
 17:16
 ve'im | lo | yekhabes | uvesaro
 lo | yirchatz
-venasa
-avono
+venasa | avono

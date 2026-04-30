@@ -1,7 +1,6 @@
 50:1
 vaiyipol | Yosef
-al | penei | aviv
-vaiyevek | alav | vaiyishak | lo
+al | penei | aviv | vaiyevek | alav | vaiyishak | lo
 
 50:2
 vaytzav | Yosef | et | avadav | et | harofe'im | lachanot | et | aviv
@@ -10,8 +9,7 @@ vaiyachantu | harofe'im | et | Yisra'el
 50:3
 vaiyimle'u | lo | arba'im | yom
 ki | ken | yimle'u
-yemei | hachanutim | vaiyivku | oto | Mitzrayim
-shiv'im | yom
+yemei | hachanutim | vaiyivku | oto | Mitzrayim | shiv'im | yom
 
 50:4
 vaiya'avru | yemei | vekhito
@@ -56,18 +54,15 @@ shiv'at | yamim
 
 50:11
 vaiyar | yoshev | ha'aretz | hakena'ani | et | ha'evel | begoren | Ha'atad
-vaiyomeru
-evel | kaved | zeh | Lemitzrayim
+vaiyomeru | evel | kaved | zeh | Lemitzrayim
 al | ken | kara | shemah | Avel | Mitzrayim | asher | be'ever | Haiyarden
 
 50:12
-vaiya'asu | vanav | lo
-ken | ka'asher | tzivam
+vaiya'asu | vanav | lo | ken | ka'asher | tzivam
 
 50:13
 vaiyis'u | oto | vanav | artzah | Kena'an
-vaiyikberu | oto | bim'arat
-sedeh | Hamakhpelah
+vaiyikberu | oto | bim'arat | sedeh | Hamakhpelah
 asher | kanah | Avraham | et | hasadeh | la'achuzat | kever | me'et | Efron | hachiti
 al | penei | Mamre
 
@@ -78,10 +73,8 @@ vekhol | ha'olim | ito | likbor | et | aviv | acharei | kavero | et | aviv
 50:15
 vaiyir'u | achei | Yosef | ki | met | avihem
 vaiyomeru
-lu | yistemenu
-Yosef
-vehashev | yashiv | lanu | et | kol | hara'ah | asher | gamalnu
-oto
+lu | yistemenu | Yosef
+vehashev | yashiv | lanu | et | kol | hara'ah | asher | gamalnu | oto
 
 50:16
 vaytzavu | el | Yosef | lemor
@@ -97,13 +90,10 @@ bedaberam | elav
 
 50:18
 vaiyelekhu | gam | echav
-vaiyipelu | lefanav | vaiyomeru
-hinenu | lekha | la'avadim
+vaiyipelu | lefanav | vaiyomeru | hinenu | lekha | la'avadim
 
 50:19
-vaiyomer | alehem | Yosef | al | tira'u
-ki | hatachat | elohim
-ani
+vaiyomer | alehem | Yosef | al | tira'u | ki | hatachat | elohim | ani
 
 50:20
 ve'atem
@@ -118,8 +108,7 @@ vaynachem | otam
 vaydaber | al | libam
 
 50:22
-vaiyeshev | Yosef | Bemitzrayim
-hu
+vaiyeshev | Yosef | Bemitzrayim | hu
 uveit | aviv
 vaychi | Yosef | me'ah | va'eser | shanim
 

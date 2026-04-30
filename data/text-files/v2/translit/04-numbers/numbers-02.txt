@@ -10,8 +10,7 @@ benei | Yisra'el | mineged | saviv | le'ohel | mo'ed | yachanu
 2:3
 vehachonim | kedemah | mizrachah | degel | machaneh | Yehudah
 letziv'otam | venasi | livnei | Yehudah
-Nachshon
-ben | Aminadav
+Nachshon | ben | Aminadav
 
 2:4
 utzeva'o
@@ -21,8 +20,7 @@ arba'ah | veshiv'im | elef | veshesh | me'ot
 2:5
 vehachonim | alav | mateh | Yisoshkhar
 venasi | livnei | Yisoshkhar
-Netan'el
-ben | Tzu'ar
+Netan'el | ben | Tzu'ar
 
 2:6
 utzeva'o
@@ -34,8 +32,7 @@ ve'arba | me'ot
 mateh
 Zevulun
 venasi | livnei | Zevulun
-Eli'av
-ben | Chelon
+Eli'av | ben | Chelon
 
 2:8
 utzeva'o
@@ -52,8 +49,7 @@ yisa'u
 2:10
 degel | machaneh | Re'uven | teimanah | letziv'otam
 venasi | livnei | Re'uven
-Elitzur
-ben | Shedei'ur
+Elitzur | ben | Shedei'ur
 
 2:11
 utzeva'o
@@ -62,9 +58,7 @@ shishah | ve'arba'im | elef | vachamesh | me'ot
 
 2:12
 vehachonim | alav | mateh | Shim'on
-venasi | livnei | Shim'on
-Shelumi'el
-ben | Tzuri | Shadai
+venasi | livnei | Shim'on | Shelumi'el | ben | Tzuri | Shadai
 
 2:13
 utzeva'o
@@ -75,8 +69,7 @@ tish'ah | vachamishim | elef | ushelosh | me'ot
 vemateh
 Gad
 venasi | livnei | Gad
-Elyasaf
-ben | Re'u'el
+Elyasaf | ben | Re'u'el
 
 2:15
 utzeva'o
@@ -93,14 +86,12 @@ yisa'u
 
 2:17
 venasa | ohel | mo'ed | machaneh | halviyim | betokh | hamachanot
-ka'asher | yachanu | ken | yisa'u
-ish | al | yado | ledigleihem
+ka'asher | yachanu | ken | yisa'u | ish | al | yado | ledigleihem
 
 2:18
 degel | machaneh | Efrayim | letziv'otam
 yamah | venasi | livnei | Efrayim
-Elishama
-ben | Amihud
+Elishama | ben | Amihud
 
 2:19
 utzeva'o
@@ -108,9 +99,7 @@ ufekudeihem
 arba'im | elef | vachamesh | me'ot
 
 2:20
-ve'alav | mateh | Menasheh | venasi | livnei | Menasheh
-Gamli'el
-ben | Pedahtzur
+ve'alav | mateh | Menasheh | venasi | livnei | Menasheh | Gamli'el | ben | Pedahtzur
 
 2:21
 utzeva'o
@@ -118,8 +107,7 @@ ufekudeihem
 shenayim | usheloshim | elef | umatayim
 
 2:22
-umateh | Binyamin | venasi | livnei | Vinyamin | Avidan
-ben | Gid'oni
+umateh | Binyamin | venasi | livnei | Vinyamin | Avidan | ben | Gid'oni
 
 2:23
 utzeva'o
@@ -136,8 +124,7 @@ yisa'u
 2:25
 degel | machaneh | Dan | tzafonah | letziv'otam
 venasi | livnei | Dan
-Achi'ezer
-ben | Ammishadai
+Achi'ezer | ben | Ammishadai
 
 2:26
 utzeva'o
@@ -154,8 +141,7 @@ ufekudeihem
 echad | ve'arba'im | elef | vachamesh | me'ot
 
 2:29
-umateh | Naftali | venasi | livnei | Naftali | Achira
-ben | Einan
+umateh | Naftali | venasi | livnei | Naftali | Achira | ben | Einan
 
 2:30
 utzeva'o
@@ -168,8 +154,7 @@ kol | hapekudim | lemachaneh | Dan | me'at | elef | veshiv'ah | vachamishim | el
 veshesh | me'ot | la'acharonah | yis'u | ledigleihem
 
 2:32
-eleh | pekudei | venei | Yisra'el | leveit | avotam
-kol | pekudei | hamachanot | letziv'otam
+eleh | pekudei | venei | Yisra'el | leveit | avotam | kol | pekudei | hamachanot | letziv'otam
 shesh | me'ot | elef
 usheloshet | alafim
 vachamesh | me'ot
@@ -182,6 +167,5 @@ ka'asher | tzivah | Yahweh | et | Mosheh
 2:34
 vaiya'asu | benei | Yisra'el
 kekhol | asher | tzivah | Yahweh | et | Mosheh | ken | chanu | ledigleihem
-vekhen | nasa'u
-ish | lemishpechotav
+vekhen | nasa'u | ish | lemishpechotav
 al | beit | avotav

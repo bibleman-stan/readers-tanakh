@@ -179,6 +179,18 @@ YIQTOL_KNOWN_NOUNS = {
     "אחד", "אחת", "אחור", "אחרי", "אחרית",
     "אחי", "אחיו", "אחיך", "אחינו", "אחיכם", "אחים",
     "אנחנו", "אנכי", "אני",
+    # 2nd-person pronouns (אַתָּה / אַתֶּם / אַתֶּן etc. + suffixed forms)
+    "אתה", "אתם", "אתן", "אתי", "אתנו", "אתכם", "אתכן",
+    # Reflexive / suffixed-possessive forms
+    "אבי", "אביו", "אביך", "אבינו", "אביכם", "אביהם", "אבותינו", "אבותיכם", "אבותיהם",
+    # Common α-particles / interrogatives
+    "איפה", "איככה",
+    # Common ת-prefix nouns that match the yiqtol skel heuristic
+    "תשוקה", "תשוקת", "תשוקתו", "תשוקתי", "תשוקתך", "תשוקתם",
+    "תפוח", "תפוחים", "תועבה", "תועבת", "תועבותם",
+    "תרדמה", "תכלית", "תרבית", "תרועה", "תהלוכת",
+    "תכלת",  # already covered above; defensive duplicate ok
+    "תכונה", "תקופה", "תקופת",
     "ארצי", "ארצנו", "ארצו", "ארצם", "ארצך", "ארצכם", "ארצהם",
     "ארץ", "ארצות",
     "אילון", "אכזב", "אכזרי", "אסיר", "אסירי",
@@ -1042,6 +1054,47 @@ def is_construct_head_token(token: str) -> bool:
     if len(s) >= 2 and s[0] in BOUND_PREP_STRIPS and s[1:] in CONSTRUCT_HEAD_SKELETONS:
         return True
     return False
+
+
+def is_bare_noun_token(token: str) -> bool:
+    """True if token is a noun-like content word (NP head / proper noun /
+    pronoun / common noun) — NOT a verb, prep, DO marker, particle, or
+    conjunction-only token.
+
+    Used by m2_verb_bare_np_rebond to detect stranded bare-NP direct objects
+    or postposed subjects after a verb-line. Excludes tokens already covered
+    by other merge specs (PP head → S1/h-rules; vav-coord NP → S2 territory).
+    """
+    if not token:
+        return False
+    s = skel(token)
+    if not s:
+        return False
+    if is_finite_verb_token(token):
+        return False
+    if is_do_marker_token(token):
+        return False
+    # Direct prep / vav-prep / bound-prep
+    if s in PREP_SKELETONS:
+        return False
+    if len(s) >= 3 and s[0] == "ו" and s[1:] in PREP_SKELETONS:
+        return False
+    if is_bare_prep_token(token):
+        return False
+    if is_vav_coord_pp_head(token):
+        return False
+    if is_vav_coord_np_head(token):
+        return False  # let S2-direction guards handle these
+    # Particles / discourse markers
+    if s in DISCOURSE_PARTICLES:
+        return False
+    if s in VOCATIVE_PARTICLES:
+        return False
+    # Bound-prep + content (e.g. בְּעִיר) — not a bare noun
+    if len(s) >= 2 and s[0] in BOUND_PREP_PREFIXES and not is_finite_verb_skel(s):
+        if s[:2] not in NON_PREP_2CHAR_PREFIX:
+            return False
+    return True
 
 
 def is_definite_adjective_token(token: str) -> bool:

@@ -10,15 +10,11 @@ haponeh | negbah
 veyatza | el | minegev | Lema'aleh | Akrabim | ve'avar | Tzinah
 ve'alah | minegev | Lekadesh | Barnea
 ve'avar | Chetzron | ve'alah | Adarah
-venasav
-Hakarka'ah
+venasav | Hakarka'ah
 
 15:4
 ve'avar | Atzmonah | veyatza | nachal | Mitzrayim
-vehayah | totze'ot | hagevul
-yamah
-zeh | yihyeh | lakhem
-gevul | negev
+vehayah | totze'ot | hagevul | yamah | zeh | yihyeh | lakhem | gevul | negev
 
 15:5
 ugevul | kedemah | yam | hamelach | ad | ketzeh
@@ -28,9 +24,7 @@ ugevul | lif'at | tzafonah | mileshon | haiyam | miktzeh | Haiyarden
 15:6
 ve'alah | hagevul | Beit | Chagelah
 ve'avar | mitzefon | Leveit | Ha'aravah
-ve'alah | hagevul
-even | Bohan
-ben | Re'uven
+ve'alah | hagevul | even | Bohan | ben | Re'uven
 
 15:7
 ve'alah | hagevul | Devirah | me'emek | Akhor
@@ -49,8 +43,7 @@ tzafonah
 15:9
 veta'ar | hagevul | merosh | hahar | el | ma'yan | mei | Neftoach
 veyatza
-el | arei | har | Efron | veta'ar | hagevul | Ba'alah
-hi
+el | arei | har | Efron | veta'ar | hagevul | Ba'alah | hi
 Kiryat | Ye'arim
 
 15:10
@@ -63,8 +56,7 @@ ve'avar | Timnah
 veyatza | hagevul | el | ketef | Ekron | tzafonah
 veta'ar | hagevul | Shikeronah
 ve'avar | har | Haba'alah | veyatza | Yavne'el
-vehayu | totze'ot | hagevul
-yamah
+vehayu | totze'ot | hagevul | yamah
 
 15:12
 ugevul | yam
@@ -80,17 +72,14 @@ et | Kiryat | Arba | avi | ha'anak | hi | Chevron
 15:14
 vaiyoresh | misham | Kalev | et | sheloshah | benei | ha'anak
 et | Sheshai | ve'et | Achiman | ve'et | Talmai
-yelidei
-ha'anak
+yelidei | ha'anak
 
 15:15
 vaiya'al | misham | el | yoshevei
-Devir | veshem | Devir | lefanim
-Kiryat | Sefer
+Devir | veshem | Devir | lefanim | Kiryat | Sefer
 
 15:16
-vaiyomer | Kalev
-asher | yakeh | et | Kiryat | Sefer | ulekhadah
+vaiyomer | Kalev | asher | yakeh | et | Kiryat | Sefer | ulekhadah
 venatati | lo | et | Akhsah | viti | le'ishah
 
 15:17
@@ -104,8 +93,7 @@ me'al | hachamor | vaiyomer | lah | Kalev | mah | lakh
 
 15:19
 vatomer | tenah | li | verakhah | ki | eretz | Hanegev | netatani
-venatatah | li
-gulot | mayim
+venatatah | li | gulot | mayim
 vaiyiten | lah | et | gulot | iliyot
 ve'et | gulot | tachtiyot
 
@@ -113,8 +101,7 @@ ve'et | gulot | tachtiyot
 zot | nachalat | mateh | venei | Yehudah | lemishpechotam
 
 15:21
-vaiyihyu | he'arim | miktzeh | lemateh | venei | Yehudah
-el | gevul | Edom | Banegbah
+vaiyihyu | he'arim | miktzeh | lemateh | venei | Yehudah | el | gevul | Edom | Banegbah
 Kavtze'el | Ve'eder | Veyagur
 
 15:22
@@ -166,8 +153,7 @@ Vezanoach | Ve'ein | Ganim | Tapuach
 Veha'einam
 
 15:35
-Yarmut | Va'adulam
-Sokhoh
+Yarmut | Va'adulam | Sokhoh
 Va'azekah
 
 15:36
@@ -192,8 +178,7 @@ Vekhabon | Velachmas | Vekhitlish
 
 15:41
 Ugederot
-Beit | Dagon | Vena'amah | Umakedah
-arim | shesh | esreh | vechatzreihen
+Beit | Dagon | Vena'amah | Umakedah | arim | shesh | esreh | vechatzreihen
 
 15:42
 Livnah | Va'eter
@@ -204,8 +189,7 @@ Veyiftach | Ve'ashnah
 Unetziv
 
 15:44
-Uke'ilah | Ve'akhziv | Umareshah
-arim | tesha | vechatzreihen
+Uke'ilah | Ve'akhziv | Umareshah | arim | tesha | vechatzreihen
 
 15:45
 Ekron | uvenoteiha
@@ -216,8 +200,7 @@ Me'ekron | vayamah | kol | asher | al | yad | Ashdod
 vechatzreihen
 
 15:47
-Ashdod | benoteiha | vachatzereiha | Azah | benoteiha | vachatzereiha
-ad | nachal | Mitzrayim
+Ashdod | benoteiha | vachatzereiha | Azah | benoteiha | vachatzereiha | ad | nachal | Mitzrayim
 vehaiyam | hagavol
 ugevul
 
@@ -260,15 +243,13 @@ Vezanoach
 
 15:57
 hakayin
-Giv'ah | Vetimnah
-arim | eser | vechatzreihen
+Giv'ah | Vetimnah | arim | eser | vechatzreihen
 
 15:58
 Chalchul | Beit | Tzur | Ugedor
 
 15:59
-Uma'arat | Uveit | Anot | Ve'eltekon
-arim | shesh | vechatzreihen
+Uma'arat | Uveit | Anot | Ve'eltekon | arim | shesh | vechatzreihen
 
 15:60
 Kiryat | Ba'al | hi | Kiryat | Ye'arim

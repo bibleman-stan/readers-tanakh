@@ -5,8 +5,7 @@ ve'el | El'azar | ben | Aharon | hakohen | lemor
 26:2
 se'u | et | rosh | kol | adat | benei | Yisra'el | miben | esrim | shanah
 vama'lah
-leveit | avotam
-kol | yotze | tzava | Beyisra'el
+leveit | avotam | kol | yotze | tzava | Beyisra'el
 
 26:3
 vaydaber | Mosheh | Ve'el'azar | hakohen | otam | Be'arvot | Mo'av
@@ -121,8 +120,7 @@ eleh | benei | Gil'ad | I'ezer | mishpachat | ha'i'ezri
 Lechelek | mishpachat | hachelki
 
 26:31
-Ve'asri'el | mishpachat
-ha'asri'eli
+Ve'asri'el | mishpachat | ha'asri'eli
 Veshekhem | mishpachat | hashikhmi
 
 26:32
@@ -145,8 +143,7 @@ eleh | venei | Efrayim | lemishpechotam | Leshutelach | mishpachat | hashutalchi
 Levekher | mishpachat | habakhri | Letachan | mishpachat | hatachani
 
 26:36
-ve'eleh | benei | Shutalach | Le'eran | mishpachat
-ha'erani
+ve'eleh | benei | Shutalach | Le'eran | mishpachat | ha'erani
 
 26:37
 eleh | mishpechot | benei | Efrayim | lifkudeihem
@@ -162,8 +159,7 @@ Lishfufam | mishpachat | hashufami | Lechufam | mishpachat | hachufami
 
 26:40
 vaiyihyu | venei | Vela
-Ard | Vena'aman | Le'ard | mishpachat | ha'ardi | Lena'aman | mishpachat
-hana'ami
+Ard | Vena'aman | Le'ard | mishpachat | ha'ardi | Lena'aman | mishpachat | hana'ami
 
 26:41
 eleh | venei | Vinyamin | lemishpechotam
@@ -218,8 +214,7 @@ vaydaber | Yahweh | el | Mosheh | lemor
 la'eleh | techalek | ha'aretz | benachalah | bemispar | shemot
 
 26:54
-larav | tarbeh | nachalato | velam'at | tam'it
-nachalato
+larav | tarbeh | nachalato | velam'at | tam'it | nachalato
 ish | lefi | fekudav
 yutan
 nachalato
@@ -229,8 +224,7 @@ akh | begoral | yechalek | et | ha'aretz | lishmot | matot | avotam
 yinchalu
 
 26:56
-al | pi | hagoral | techalek
-nachalato | bein | rav | lim'at
+al | pi | hagoral | techalek | nachalato | bein | rav | lim'at
 
 26:57
 ve'eleh | fekudei | halevi | lemishpechotam | Legereshon | mishpachat | hagereshuni

@@ -14,8 +14,7 @@ ani
 9:3
 vaydaberu | achei | imo | alav | be'azenei | kol | ba'alei | Shekhem | et | kol | hadevarim | ha'eleh
 vaiyet | libam | acharei | Avimelekh
-ki | ameru
-achinu | hu
+ki | ameru | achinu | hu
 
 9:4
 vaiyitenu | lo | shiv'im | kesef | mibeit | Ba'al | Berit
@@ -25,8 +24,7 @@ acharav
 
 9:5
 vaiyavo | veit | aviv | Aferatah
-vaiyaharog | et | echav | benei | Yeruba'al | shiv'im | ish
-al | even | echat
+vaiyaharog | et | echav | benei | Yeruba'al | shiv'im | ish | al | even | echat
 vaiyivater | Yotam | ben | Yeruba'al | hakaton
 ki | Nechba
 
@@ -47,8 +45,7 @@ halokh | halekhu | ha'etzim | limshoach | aleihem | melekh | vaiyomeru | lazayit
 melokhah | aleinu
 
 9:9
-vaiyomer | lahem | hazayit
-hechodalti | et | dishni
+vaiyomer | lahem | hazayit | hechodalti | et | dishni
 asher | bi | yekhabedu | elohim
 va'anashim
 vehalakhti | lanua | al | ha'etzim
@@ -57,17 +54,14 @@ vehalakhti | lanua | al | ha'etzim
 vaiyomeru | ha'etzim | late'enah | lekhi | at | malekhi | aleinu
 
 9:11
-vatomer | lahem | hate'enah
-hechodalti | et | mateki | ve'et | tenuvati | hatovah
+vatomer | lahem | hate'enah | hechodalti | et | mateki | ve'et | tenuvati | hatovah
 vehalakhti | lanua | al | ha'etzim
 
 9:12
 vaiyomeru | ha'etzim | lagafen | lekhi | at | malokhi | aleinu
 
 9:13
-vatomer | lahem | hagefen
-hechodalti | et | tiroshi
-hamsameach | elohim
+vatomer | lahem | hagefen | hechodalti | et | tiroshi | hamsameach | elohim
 va'anashim
 vehalakhti | lanua | al | ha'etzim
 
@@ -83,8 +77,8 @@ tetze | esh | min | ha'atad | vetokhal | et | arzei | Halevanon
 
 9:16
 ve'atah | im | be'emet | uvetamim | asitem | vatamlikhu | et | Avimelekh
-ve'im | tovah | asitem | im | Yeruba'al | ve'im | beito | ve'im | kigmul | yadav
-asitem | lo
+ve'im | tovah | asitem | im | Yeruba'al
+ve'im | beito | ve'im | kigmul | yadav | asitem | lo
 
 9:17
 asher | Nilcham | avi | aleikhem | vaiyashlekh | et | nafsho | mineged | vaiyatzel | etkhem
@@ -92,11 +86,8 @@ miyad | Midyan
 
 9:18
 ve'atem | kamtem | al | beit | avi | haiyom
-vatahargu | et | banav | shiv'im | ish
-al | even | echat
-vatamlikhu | et | Avimelekh | ben | amato | al | ba'alei | Shekhem
-ki | achikhem
-hu
+vatahargu | et | banav | shiv'im | ish | al | even | echat
+vatamlikhu | et | Avimelekh | ben | amato | al | ba'alei | Shekhem | ki | achikhem | hu
 
 9:19
 ve'im | be'emet
@@ -118,8 +109,7 @@ vaiyelekh | Be'erah
 vaiyeshev | sham | mipenei | Avimelekh | achiv
 
 9:22
-vaiyasar | Avimelekh | al | Yisra'el
-shalosh | shanim
+vaiyasar | Avimelekh | al | Yisra'el | shalosh | shanim
 
 9:23
 vaiyishlach | elohim | ruach | ra'ah | bein | Avimelekh
@@ -164,12 +154,10 @@ vatze'ah
 
 9:30
 vaiyishma | Zevul | sar | ha'ir | et | divrei
-Ga'al | ben | Aved | vaiyichar
-apo
+Ga'al | ben | Aved | vaiyichar | apo
 
 9:31
-vaiyishlach | mal'akhim | el | Avimelekh
-betaremah | lemor
+vaiyishlach | mal'akhim | el | Avimelekh | betaremah | lemor
 hineh | Ga'al | ben | Eved | ve'echav | ba'im | Shekhemah
 vehinam | tzarim | et | ha'ir | aleikha
 
@@ -255,9 +243,7 @@ vaiyishme'u
 kal | ba'alei | migdal | Shekhem | vaiyavo'u | el | tzeriach | beit | El | Berit
 
 9:47
-vaiyugad | La'avimelekh
-ki | hitkabetzu
-kal | ba'alei | migdal | Shekhem
+vaiyugad | La'avimelekh | ki | hitkabetzu | kal | ba'alei | migdal | Shekhem
 
 9:48
 vaiya'al | Avimelekh | har | Tzalmon | hu | vekhol | ha'am | asher | ito
@@ -270,8 +256,7 @@ asu | khamoni
 9:49
 vaiyikhretu | gam | kol | ha'am | ish | sokhoh | vaiyelekhu | acharei | Avimelekh | vaiyasimu | al | hatzeriach
 vaiyatzitu | aleihem | et | hatzeriach | ba'esh
-vaiyamutu | gam | kol | anshei | migdal | Shekhem | ke'elef
-ish | ve'ishah
+vaiyamutu | gam | kol | anshei | migdal | Shekhem | ke'elef | ish | ve'ishah
 
 9:50
 vaiyelekh | Avimelekh | el | Tevetz
@@ -304,8 +289,7 @@ vaiyamot
 9:55
 vaiyir'u | ish | Yisra'el
 ki | met | Avimelekh
-vaiyelekhu
-ish | limkomo
+vaiyelekhu | ish | limkomo
 
 9:56
 vaiyashev | elohim | et | ra'at | Avimelekh | asher | asah | le'aviv
@@ -315,5 +299,4 @@ et | shiv'im | echav
 9:57
 ve'et | kol | ra'at | anshei | Shekhem
 heshiv | elohim | berosham
-vatavo | aleihem | kilalat
-Yotam | ben | Yeruba'al
+vatavo | aleihem | kilalat | Yotam | ben | Yeruba'al

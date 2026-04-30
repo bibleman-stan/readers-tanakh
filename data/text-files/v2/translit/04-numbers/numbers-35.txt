@@ -4,10 +4,8 @@ al | Yarden | Yerecho | lemor
 
 35:2
 tzav | et | benei | Yisra'el
-venatenu | lalviyim | minachalat | achuzatam
-arim | lashavet
-umigrash | le'arim | sevivoteihem
-titenu | lalviyim
+venatenu | lalviyim | minachalat | achuzatam | arim | lashavet
+umigrash | le'arim | sevivoteihem | titenu | lalviyim
 
 35:3
 vehayu | he'arim | lahem | lashavet
@@ -26,11 +24,9 @@ veha'ir | batavekh | zeh | yihyeh | lahem | migreshei | he'arim
 
 35:6
 ve'et | he'arim | asher | titenu | lalviyim | et | shesh | arei | hamiklat
-asher | titenu | lanus | shamah
-harotzeach
+asher | titenu | lanus | shamah | harotzeach
 va'aleihem | titenu
-arba'im | ushetayim
-ir
+arba'im | ushetayim | ir
 
 35:7
 kol | he'arim | asher | titenu | lalviyim
@@ -41,8 +37,7 @@ ethen | ve'et | migresheihen
 vehe'arim | asher | titenu | me'achuzat | benei | Yisra'el
 me'et | harav | tarbu
 ume'et | ham'at | tam'itu
-ish | kefi | nachalato | asher | yinchalu
-yiten | me'arav | lalviyim
+ish | kefi | nachalato | asher | yinchalu | yiten | me'arav | lalviyim
 
 35:9
 vaydaber | Yahweh | el | Mosheh | lemor
@@ -60,8 +55,7 @@ venas | shamah | rotzeach | makeh | nefesh | bishgagah
 
 35:12
 vehayu | lakhem | he'arim | lemiklat | migo'el
-velo | yamut | harotzeach
-ad | amedo | lifnei | ha'edah | lamishpat
+velo | yamut | harotzeach | ad | amedo | lifnei | ha'edah | lamishpat
 
 35:13
 vehe'arim | asher | titenu
@@ -77,25 +71,21 @@ arei | miklat | tihyeinah
 livnei | Yisra'el
 velager
 velatoshav | betokham
-tihyeinah | shesh | he'arim | ha'eleh | lemiklat | lanus | shamah
-kol | makeh | nefesh | bishgagah
+tihyeinah | shesh | he'arim | ha'eleh | lemiklat | lanus | shamah | kol | makeh | nefesh | bishgagah
 
 35:16
 ve'im | bikhli | varzel | hikahu | vaiyamot | rotzeach | hu
-mot | yumat
-harotzeach
+mot | yumat | harotzeach
 
 35:17
 ve'im | be'even | yad | asher | yamut | bah | hikahu | vaiyamot
 rotzeach | hu
-mot | yumat
-harotzeach
+mot | yumat | harotzeach
 
 35:18
 o | bikhli | etz | yad | asher | yamut | bo | hikahu | vaiyamot
 rotzeach | hu
-mot | yumat
-harotzeach
+mot | yumat | harotzeach
 
 35:19
 go'el | hadam
@@ -134,10 +124,8 @@ veyashav | bah | ad | mot | hakohen | hagadol
 asher | mashach | oto | beshemen | hakodesh
 
 35:26
-ve'im | yatzo | yetze
-harotzeach
-et | gevul | ir | miklato | asher | yanus
-shamah
+ve'im | yatzo | yetze | harotzeach
+et | gevul | ir | miklato | asher | yanus | shamah
 
 35:27
 umatza | oto | go'el | hadam | michutz | ligvul

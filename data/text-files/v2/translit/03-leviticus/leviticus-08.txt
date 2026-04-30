@@ -43,12 +43,10 @@ ka'asher | tzivah | Yahweh | et | Mosheh
 8:10
 vaiyikach | Mosheh | et | shemen | hamishchah
 vaiyimshach | et | hamishkan | ve'et | kol | asher | bo
-vaykadesh
-otam
+vaykadesh | otam
 
 8:11
-vaiyaz | mimenu | al | hamizbeach
-sheva | pe'amim
+vaiyaz | mimenu | al | hamizbeach | sheva | pe'amim
 vaiyimshach | et | hamizbeach | ve'et | kol | kelav | ve'et | hakiyor | ve'et | kano | lekadesham
 
 8:12
@@ -73,8 +71,7 @@ vaykadeshehu | lekhaper | alav
 vaiyikach | et | kol | hachelev | asher | al | hakerev | ve'et | yoteret | hakaved
 ve'et | shetei | hakelayot
 ve'et | chelbehen
-vaiyakter | Mosheh
-hamizbechah
+vaiyakter | Mosheh | hamizbechah
 
 8:17
 ve'et | hapar | ve'et | oro | ve'et | besaro | ve'et | pirsho
@@ -135,8 +132,7 @@ lifnei | Yahweh
 8:28
 vaiyikach | Mosheh | otam | me'al | kapeihem
 vaiyakter | hamizbechah | al | ha'olah
-milu'im | hem | lereiach | nichoach
-isheh | hu | Layahweh
+milu'im | hem | lereiach | nichoach | isheh | hu | Layahweh
 
 8:29
 vaiyikach | Mosheh | et | hechazeh
@@ -150,8 +146,7 @@ umin | hadam | asher | al | hamizbeach
 vaiyaz | al | Aharon | al | begadav
 ve'al | banav
 ve'al | bigdei | vanav
-ito | vaykadesh | et | Aharon | et | begadav | ve'et | banav | ve'et | bigdei | vanav
-ito
+ito | vaykadesh | et | Aharon | et | begadav | ve'et | banav | ve'et | bigdei | vanav | ito
 
 8:31
 vaiyomer | Mosheh | el | Aharon
@@ -177,9 +172,7 @@ baiyom | hazeh | tzivah | Yahweh | la'asot | lekhaper | aleikhem
 8:35
 ufetach | ohel | mo'ed | teshevu | yomam | valaylah | shiv'at | yamim
 ushemartem | et | mishmeret | Yahweh
-velo | tamutu
-ki | khen
-tzuveiti
+velo | tamutu | ki | khen | tzuveiti
 
 8:36
 vaiya'as | Aharon | uvanav | et | kol | hadevarim | asher | tzivah | Yahweh

@@ -1,8 +1,7 @@
 5:1
 uvenei | Re'uven | bekhor | Yisra'el | ki | hu | habekhor
 uvechalelo | yetzu'ei | aviv
-Nitenah | bekhorato | livnei | Yosef
-ben | Yisra'el
+Nitenah | bekhorato | livnei | Yosef | ben | Yisra'el
 velo | lehityaches | labekhorah
 
 5:2
@@ -36,8 +35,7 @@ Uvela | ben | Azaz | ben | Shema | ben | Yo'el | hu | yoshev | Ba'aro'er
 ve'ad | Nevo | Uva'al | Me'on
 
 5:9
-velamizrach | yashav | ad | levo | midbarah | lemin | hanahar
-Perat
+velamizrach | yashav | ad | levo | midbarah | lemin | hanahar | Perat
 ki | mikneihem | ravu | be'eretz | Gil'ad
 
 5:10
@@ -79,8 +77,7 @@ uvimei | Yarave'am | melekh | Yisra'el
 benei | Re'uven | vegadi | vachatzi | shevet | Menasheh | min | benei | chayil
 anashim | nose'ei | magen | vecherev | vedorekhei | keshet
 ulemudei | milchamah
-arba'im | ve'arba'ah | elef | usheva | me'ot | veshishim
-yotze'ei | tzava
+arba'im | ve'arba'ah | elef | usheva | me'ot | veshishim | yotze'ei | tzava
 
 5:19
 vaiya'asu | milchamah | im | hahagri'im
@@ -91,8 +88,7 @@ Venodav
 vaiye'azeru | aleihem | vaiyinatenu | veyadam | hahagri'im
 vekhol | she'imahem
 ki | lelohim | za'aku | bamilchamah
-vena'tor | lahem
-ki | vatechu | vo
+vena'tor | lahem | ki | vatechu | vo
 
 5:21
 vaiyishbu | mikneihem | gemaleihem | chamishim | elef
@@ -102,8 +98,7 @@ vachamorim
 alpayim | venefesh | adam | me'ah | alef
 
 5:22
-ki | chalalim | rabim | nafalu
-ki | meha'elohim | hamilchamah
+ki | chalalim | rabim | nafalu | ki | meha'elohim | hamilchamah
 vaiyeshevu | tachteihem | ad | hagolah
 
 5:23
@@ -111,19 +106,16 @@ uvenei | chatzi | shevet | Menasheh | yashevu
 ba'aretz | Mibashan | ad | Ba'al | Chermon | Usenir | vehar | Chermon | hemah | ravu
 
 5:24
-ve'eleh
-rashei | veit | avotam
+ve'eleh | rashei | veit | avotam
 Ve'efer | Veyish'i | Ve'eli'el
 Ve'azri'el
 Veyirmeyah
 Vehodavyah | Veyachdi'el | anashim | giborei | chayil
-anshei | shemot
-rashim
+anshei | shemot | rashim
 leveit | avotam
 
 5:25
-vaiyim'alu | belohei
-avoteihem
+vaiyim'alu | belohei | avoteihem
 vaiyiznu | acharei | elohei | amei | ha'aretz | asher | hishmid | elohim | mipeneihem
 
 5:26
@@ -150,8 +142,7 @@ uvenei | Amram | Aharon
 Umosheh
 Umiryam
 uvenei | Aharon
-Nadav | Va'avihu
-El'azar
+Nadav | Va'avihu | El'azar
 Ve'itamar
 
 5:30
@@ -160,8 +151,7 @@ Pinchas
 holid | et | Avishua
 
 5:31
-Va'avishua | holid | et | Buki | Uvuki
-holid | et | Uzi
+Va'avishua | holid | et | Buki | Uvuki | holid | et | Uzi
 
 5:32
 Ve'uzi | holid | et | Zerachyah
@@ -169,8 +159,7 @@ Uzerachyah
 holid | et | Merayot
 
 5:33
-Merayot | holid | et | Amaryah | Va'amaryah
-holid | et | Achituv
+Merayot | holid | et | Amaryah | Va'amaryah | holid | et | Achituv
 
 5:34
 Va'achituv | holid | et | Tzadok
@@ -189,8 +178,7 @@ hu | asher | kihen | babayit | asher | banah | Shelomoh | Birushalim
 
 5:37
 vaiyoled | Azaryah | et | Amaryah
-Va'amaryah
-holid | et | Achituv
+Va'amaryah | holid | et | Achituv
 
 5:38
 Va'achituv | holid | et | Tzadok

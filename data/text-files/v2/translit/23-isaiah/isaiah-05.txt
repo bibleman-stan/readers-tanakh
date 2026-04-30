@@ -1,8 +1,6 @@
 5:1
-ashirah | na | lididi
-shirat | dodi | lekharmo
-kerem | hayah | lididi
-bekeren | ben | shamen
+ashirah | na | lididi | shirat | dodi | lekharmo
+kerem | hayah | lididi | bekeren | ben | shamen
 
 5:2
 vay'azekehu | vaysakelehu | vaiyita'ehu | sorek
@@ -14,8 +12,7 @@ vaiya'as | be'ushim
 
 5:3
 ve'atah | yoshev | Yerushalim
-ve'ish | Yehudah
-shiftu | na | beini
+ve'ish | Yehudah | shiftu | na | beini
 uvein | karmi
 
 5:4
@@ -36,11 +33,8 @@ ve'al | he'avim | atzaveh | mehamtir | alav | matar
 
 5:7
 ki | kherem | Yahweh | tzeva'ot | beit | Yisra'el
-ve'ish | Yehudah
-neta
-sha'ashu'av
-vaykav | lemishpat | vehineh | mispach | litzdakah
-vehineh | tze'akah
+ve'ish | Yehudah | neta | sha'ashu'av
+vaykav | lemishpat | vehineh | mispach | litzdakah | vehineh | tze'akah
 
 5:8
 ho | magi'ei | vayit | bevayit | sadeh | vesadeh
@@ -48,8 +42,7 @@ yakrivu | ad | efes | makom | vehushavtem | levadekhem | bekerev | ha'aretz
 
 5:9
 be'azenai | Yahweh | tzeva'ot
-im | lo | batim | rabim | leshamah | yihyu
-gedolim | vetovim
+im | lo | batim | rabim | leshamah | yihyu | gedolim | vetovim
 me'ein | yoshev
 
 5:10
@@ -107,8 +100,7 @@ veneda'ah
 
 5:20
 ho | ha'omerim | lara | tov | velatov | ra
-samim | choshekh | le'or | ve'or | lechoshekh
-samim | mar | lematok
+samim | choshekh | le'or | ve'or | lechoshekh | samim | mar | lematok
 umatok | lemar
 
 5:21
@@ -169,5 +161,4 @@ ve'ein | matzil
 5:30
 veyinhom | alav | baiyom | hahu | kenahamat | yam
 venibat | la'aretz | vehineh | choshekh
-tzar | va'or
-chashakh | ba'arifeiha
+tzar | va'or | chashakh | ba'arifeiha

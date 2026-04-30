@@ -6,21 +6,15 @@ ta'aseh | otam
 
 26:2
 orekh | hayri'ah | ha'achat | shemoneh | ve'esrim | ba'amah
-verochav | arba | ba'amah
-hayri'ah
-ha'echat | midah | achat | lekhol | hayri'ot
+verochav | arba | ba'amah | hayri'ah | ha'echat | midah | achat | lekhol | hayri'ot
 
 26:3
-chamesh | hayri'ot | tihyeina | choerot
-ishah | el | achotah
-vechamesh | yeri'ot | choerot
-ishah | el | achotah
+chamesh | hayri'ot | tihyeina | choerot | ishah | el | achotah
+vechamesh | yeri'ot | choerot | ishah | el | achotah
 
 26:4
 ve'asita | lul'ot | tekhelet | al | sefat | hayri'ah | ha'echat | mikatzah | bachovaret
-vekhen | ta'aseh | bisfat | hayri'ah
-hakitzonah | bamachberet
-hashenit
+vekhen | ta'aseh | bisfat | hayri'ah | hakitzonah | bamachberet | hashenit
 
 26:5
 chamishim | lula'ot | ta'aseh | bayri'ah | ha'echat
@@ -31,8 +25,7 @@ ishah | el | achotah
 ve'asita
 chamishim | karsei | zahav
 vechibarta | et | hayri'ot | ishah | el | achotah | bakerasim
-vehayah | hamishkan
-echad
+vehayah | hamishkan | echad
 
 26:7
 ve'asita | yeri'ot | izim | le'ohel | al | hamishkan
@@ -41,8 +34,7 @@ ta'aseh | otam
 
 26:8
 orekh | hayri'ah | ha'achat | sheloshim | ba'amah
-verochav | arba | ba'amah
-hayri'ah
+verochav | arba | ba'amah | hayri'ah
 ha'echat | midah | achat | le'ashtei | esreh
 yeri'ot
 
@@ -60,8 +52,7 @@ hachoveret
 hashenit
 
 26:11
-ve'asita | karsei | nechoshet
-chamishim | veheveta | et | hakerasim | balula'ot
+ve'asita | karsei | nechoshet | chamishim | veheveta | et | hakerasim | balula'ot
 vechibarta | et | ha'ohel | vehayah | echad
 
 26:12
@@ -86,13 +77,10 @@ omedim
 
 26:16
 eser | amot | orekh | hakaresh
-ve'amah | vachatzi | ha'amah
-rochav
-hakeresh | ha'echad
+ve'amah | vachatzi | ha'amah | rochav | hakeresh | ha'echad
 
 26:17
-shetei | yadot | lakeresh | ha'echad | meshulavot
-ishah | el | achotah
+shetei | yadot | lakeresh | ha'echad | meshulavot | ishah | el | achotah
 ken | ta'aseh | lekhol | karshei | hamishkan
 
 26:18
@@ -120,17 +108,14 @@ ushenei | adanim | tachat | hakeresh | ha'echad
 26:22
 uleyarketei | hamishkan
 yamah
-ta'aseh
-shishah | kerashim
+ta'aseh | shishah | kerashim
 
 26:23
-ushenei | kerashim | ta'aseh | limkutz'ot
-hamishkan | baiyarkhatayim
+ushenei | kerashim | ta'aseh | limkutz'ot | hamishkan | baiyarkhatayim
 
 26:24
 veyihyu | to'amim | milematah
-veyachdav | yihyu | tamim | al | rosho | el | hataba'at
-ha'echat
+veyachdav | yihyu | tamim | al | rosho | el | hataba'at | ha'echat
 ken | yihyeh | lishneihem
 lishnei | hamiktzo'ot | yihyu
 
@@ -157,8 +142,7 @@ yamah
 vehaberiach | hatikhon | betokh | hakerashim | mavriach | min | hakatzeh | el | hakatzeh
 
 26:29
-ve'et | hakerashim | tetzapeh | zahav | ve'et | tabe'oteihem | ta'aseh | zahav
-batim | laberichim
+ve'et | hakerashim | tetzapeh | zahav | ve'et | tabe'oteihem | ta'aseh | zahav | batim | laberichim
 vetzipita | et | haberichim
 zahav
 
@@ -184,8 +168,7 @@ vehivdilah | haparokhet | lakhem | bein | hakodesh
 uvein | kodesh | hakodashim
 
 26:34
-venatata | et | hakaporet | al | aron | ha'edut | bekodesh
-hakodashim
+venatata | et | hakaporet | al | aron | ha'edut | bekodesh | hakodashim
 
 26:35
 vesamta | et | hashulchan | michutz | laparokhet
@@ -203,6 +186,5 @@ ve'asita | lamasakh | chamishah | amudei | shitim
 vetzipita | otam | zahav
 vaveihem
 zahav
-veyatzakta | lahem
-chamishah
+veyatzakta | lahem | chamishah
 adnei | nechoshet

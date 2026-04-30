@@ -73,17 +73,14 @@ uva | lifnei | Yahweh | el | petach | ohel | mo'ed
 unetanam | el | hakohen
 
 15:15
-ve'asah | otam | hakohen
-echad | chatat
+ve'asah | otam | hakohen | echad | chatat
 veha'echad
 olah
 vekhiper | alav | hakohen | lifnei | Yahweh | mizovo
 
 15:16
-ve'ish
-ki | tetze | mimenu | shikhvat | zara
-verachatz | bamayim | et | kol | besaro
-vetame | ad | ha'arev
+ve'ish | ki | tetze | mimenu | shikhvat | zara
+verachatz | bamayim | et | kol | besaro | vetame | ad | ha'arev
 
 15:17
 vekhol | beged
@@ -92,8 +89,7 @@ vekhubas | bamayim
 vetame | ad | ha'arev
 
 15:18
-ve'ishah | asher | yishkav | ish | otah
-shikhvat | zara
+ve'ishah | asher | yishkav | ish | otah | shikhvat | zara
 verachatzu | vamayim
 vetame'u | ad | ha'arev
 
@@ -129,8 +125,7 @@ vekhol | hamishkav | asher | yishkav | alav | yitma
 15:25
 ve'ishah | ki | yazuv | zov | damah | yamim | rabim | belo | et | nidatah
 o | khi | tazuv | al | nidatah
-kol | yemei | zov | tum'atah | kimei | nidatah | tihyeh
-teme'ah | hi
+kol | yemei | zov | tum'atah | kimei | nidatah | tihyeh | teme'ah | hi
 
 15:26
 kol | hamishkav | asher | tishkav | alav | kol | yemei | zovah
@@ -155,8 +150,7 @@ o | shenei | benei | yonah
 vehevi'ah | otam | el | hakohen | el | petach | ohel | mo'ed
 
 15:30
-ve'asah | hakohen | et | ha'echad | chatat | ve'et | ha'echad
-olah
+ve'asah | hakohen | et | ha'echad | chatat | ve'et | ha'echad | olah
 vekhiper | aleiha | hakohen | lifnei | Yahweh | mizov
 tum'atah
 

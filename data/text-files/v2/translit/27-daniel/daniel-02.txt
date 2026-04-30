@@ -31,9 +31,7 @@ uvateikhon | nevali | yitesamun
 2:6
 vehen | chelma | ufishreh | tehachavon
 matenan | unevizbah | vikar | sagi
-tekabelun | min | kodamai | lahen
-chelma | ufishreh
-hachavoni
+tekabelun | min | kodamai | lahen | chelma | ufishreh | hachavoni
 
 2:7
 ano | tinyanut
@@ -44,8 +42,7 @@ ufishrah | nehachaveh
 2:8
 aneh | malka | ve'amar
 min | yatziv | yada | anah
-di | idana | antun | zavenin
-kol | kovel | di | chazeiton
+di | idana | antun | zavenin | kol | kovel | di | chazeiton
 di | azda | mini | mileta
 
 2:9
@@ -142,16 +139,13 @@ ha'eleni | kodam | malka | ufishra
 lemalka | achave
 
 2:25
-edayin | Aryokh | behitbehalah
-han'el | Ledaniyel
-kodam | malka
+edayin | Aryokh | behitbehalah | han'el | Ledaniyel | kodam | malka
 vekhen | amar | leh | di | hashkachat | gevar | min | benei | galuta | di | Yehud
 di | fishra
 lemalka | yehoda
 
 2:26
-aneh | malka | ve'amar | Ledaniyel
-di | shemeh | Beleteshatzar
+aneh | malka | ve'amar | Ledaniyel | di | shemeh | Beleteshatzar
 ha'itayikh | kahel | lehoda'utani | chelma | di | chazeit
 ufishreh
 
@@ -165,9 +159,7 @@ yakhelin | lehachavayah | lemalka
 2:28
 beram | itai | elah | bishmaiya | gale | razin
 vehoda | lemalka | Nevukhadnetzar | mah | di | leheve
-be'acharit | yomaiya
-chelmakh | vechezvei | reshakh | al | mishkevakh
-denah | hu
+be'acharit | yomaiya | chelmakh | vechezvei | reshakh | al | mishkevakh | denah | hu
 
 2:29
 antah | malka | ra'yonokh | al | mishkevakh | seliku | mah | di | leheve
@@ -175,16 +167,14 @@ acharei | denah
 vegale | razaiya | hod'akh | mah | di | leheve
 
 2:30
-va'anah | la | vechakhemah | di | itai | bi | min | kol | chaiyaiya
-raza | denah
+va'anah | la | vechakhemah | di | itai | bi | min | kol | chaiyaiya | raza | denah
 geli | li
 lahen | al | divrat | di | fishra | lemalka | yehod'un
 vera'yonei | livakh | tinda
 
 2:31
 antah | malka | chazeh | havayta | va'alu | tzelem | chad | sagi
-tzalma | diken | rav | veziveh | yatir
-ka'em | lekavelakh
+tzalma | diken | rav | veziveh | yatir | ka'em | lekavelakh
 vereveh
 dechil
 
@@ -192,8 +182,7 @@ dechil
 hu | tzalma | resheh | di | dehav | tav
 chadohi | udera'ohi
 di | khesaf
-me'ohi | veyarkhateh
-di | nechash
+me'ohi | veyarkhateh | di | nechash
 
 2:33
 shakohi
@@ -223,8 +212,7 @@ nemar | kodom | malka
 
 2:37
 antah | malka | melekh | malkhaiya | di | elah | shemaiya
-malkhuta | chisna | vetakepa | vikara
-yehav | lakh
+malkhuta | chisna | vetakepa | vikara | yehav | lakh
 
 2:38
 uvekhol | di | da'arin | benei | anasha | cheivat | bara | ve'of | shemaiya | yehav | bidakh
@@ -287,8 +275,7 @@ amar | lenasakhah | leh
 aneh | malka | Ledaniyel | ve'amar | min | keshot | di | elahakhon | hu | elah | elahin
 umare | malkhin
 vegaleh | razin
-di | yekheleta | lemigle
-razah | denah
+di | yekheleta | lemigle | razah | denah
 
 2:48
 edayin | malka | Ledaniyel | rabi

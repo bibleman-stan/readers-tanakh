@@ -25,8 +25,7 @@ lekaleka
 23:6
 velo | avah | Yahweh | eloheikha | lishmoa | el | Bil'am
 vaiyahafokh | Yahweh | eloheikha | lekha | et | hakelalah | livrakhah
-ki | ahevekha
-Yahweh | eloheikha
+ki | ahevekha | Yahweh | eloheikha
 
 23:7
 lo | tidrosh | shelomam
@@ -34,9 +33,7 @@ vetoatam
 kol | yameikha | le'olam
 
 23:8
-lo | teta'ev | adomi
-ki | achikha
-hu | lo | teta'ev | mitzri | ki | ger
+lo | teta'ev | adomi | ki | achikha | hu | lo | teta'ev | mitzri | ki | ger
 hayita | ve'artzo
 
 23:9
@@ -55,13 +52,12 @@ lo | yavo | el | tokh | hamachaneh
 
 23:12
 vehayah | lifnot | erev
-yirchatz | bamayim | ukhevo | hashemesh
-yavo | el | tokh | hamachaneh
+yirchatz | bamayim
+ukhevo | hashemesh | yavo | el | tokh | hamachaneh
 
 23:13
 veyad | tihyeh | lekha | michutz | lamachaneh
-veyatzata | shamah
-chutz
+veyatzata | shamah | chutz
 
 23:14
 veyated | tihyeh | lekha | al | azenekha
@@ -71,8 +67,7 @@ veshavta | vekhisita | et | tze'atekha
 
 23:15
 ki | Yahweh | eloheikha | mithalekh | bekerev | machanekha | lehatzilekha
-velatet | oyeveikha | lefaneikha | vehayah | machaneikha
-kadoosh
+velatet | oyeveikha | lefaneikha | vehayah | machaneikha | kadoosh
 velo | yir'eh | vekha | ervat | davar | veshav | me'achareikha
 
 23:16
@@ -123,8 +118,8 @@ befikha
 
 23:25
 ki | tavo | bekherem | re'ekha
-ve'akhalta | anavim | kenafshekha
-save'ekha | ve'el | kelyekha | lo | titen
+ve'akhalta | anavim | kenafshekha | save'ekha
+ve'el | kelyekha | lo | titen
 
 23:26
 ki | tavo | bekamat | re'ekha

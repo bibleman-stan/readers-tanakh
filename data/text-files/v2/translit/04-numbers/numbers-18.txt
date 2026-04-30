@@ -67,15 +67,12 @@ yokhal | oto
 
 18:12
 kol | chelev | yitzhar
-vekhol | chelev | tiroosh | vedagan
-reshitam | asher | yitenu | Layahweh
+vekhol | chelev | tiroosh | vedagan | reshitam | asher | yitenu | Layahweh
 lekha | netatim
 
 18:13
 bikurei | kol | asher | be'artzam | asher | yavi'u | Layahweh
-lekha | yihyeh
-kol | tahor | beveitekha
-yokhalenu
+lekha | yihyeh | kol | tahor | beveitekha | yokhalenu
 
 18:14
 kol | cherem | Beyisra'el
@@ -132,8 +129,7 @@ laset | chet | lamut
 18:23
 ve'avad | halevi | hu | et | avodat | ohel | mo'ed
 vehem
-yis'u | avonam
-chukat | olam | ledoroteikhem
+yis'u | avonam | chukat | olam | ledoroteikhem
 uvetokh | benei | Yisra'el
 lo | yinchalu
 nachalah
@@ -162,8 +158,7 @@ vekhamle'ah | min | haiyakev
 18:28
 ken | tarimu | gam | atem | terumat | Yahweh | mikol | ma'seroteikhem
 asher | tikchu | me'et | benei | Yisra'el
-unetatem | mimenu | et | terumat | Yahweh | Le'aharon
-hakohen
+unetatem | mimenu | et | terumat | Yahweh | Le'aharon | hakohen
 
 18:29
 mikol | matenoteikhem | tarimu | et | kol | terumat | Yahweh
@@ -175,8 +170,8 @@ alehem | baharimkhem | et | chelbo | mimenu | venechshav | lalviyim
 kitvu'at | goren | vekhitvu'at | yakev
 
 18:31
-va'akhaltem | oto | bekhol | makom | atem | uveitkhem
-ki | sakhar | hu | lakhem
+va'akhaltem | oto | bekhol | makom | atem
+uveitkhem | ki | sakhar | hu | lakhem
 chelef | avodatkhem | be'ohel | mo'ed
 
 18:32

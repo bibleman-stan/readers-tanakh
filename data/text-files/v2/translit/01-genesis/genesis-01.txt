@@ -11,20 +11,16 @@ vaiyomer | elohim
 yehi | or | vayhi | or
 
 1:4
-vaiyar | elohim | et | ha'or
-ki | tov
-vaiyavdel | elohim
-bein | ha'or | uvein | hachoshekh
+vaiyar | elohim | et | ha'or | ki | tov
+vaiyavdel | elohim | bein | ha'or | uvein | hachoshekh
 
 1:5
 vaiyikra | elohim | la'or | yom | velachoshekh
 kara | lailah
-vayhi | erev | vayhi | voker
-yom | echad
+vayhi | erev | vayhi | voker | yom | echad
 
 1:6
-vaiyomer | elohim
-yehi | rakia | betokh | hamayim
+vaiyomer | elohim | yehi | rakia | betokh | hamayim
 vihi | mavdil | bein | mayim | lamayim
 
 1:7
@@ -35,24 +31,20 @@ vayhi | khen
 
 1:8
 vaiyikra | elohim | larakia
-shamayim | vayhi | erev | vayhi | voker
-yom | sheni
+shamayim | vayhi | erev | vayhi | voker | yom | sheni
 
 1:9
 vaiyomer | elohim | yikavu | hamayim | mitachat | hashamayim | el | makom | echad
-vetera'eh
-haiyabashah
+vetera'eh | haiyabashah
 vayhi | khen
 
 1:10
 vaiyikra | elohim | laiyabashah | eretz | ulemikveh | hamayim
 kara | yamim
-vaiyar | elohim
-ki | tov
+vaiyar | elohim | ki | tov
 
 1:11
-vaiyomer | elohim | tadshe | ha'aretz | deshe
-esev | mazria | zera
+vaiyomer | elohim | tadshe | ha'aretz | deshe | esev | mazria | zera
 etz | peri | oseh | peri | lemino | asher | zar'ov | vo
 al | ha'aretz
 vayhi | khen
@@ -60,12 +52,10 @@ vayhi | khen
 1:12
 vatotze | ha'aretz | deshe | esev | mazria | zera | leminehu
 ve'etz | oseh | peri | asher | zar'ov | vo | leminehu
-vaiyar | elohim
-ki | tov
+vaiyar | elohim | ki | tov
 
 1:13
-vayhi | erev | vayhi | voker
-yom | shelishi
+vayhi | erev | vayhi | voker | yom | shelishi
 
 1:14
 vaiyomer | elohim | yehi | me'orot | birkia | hashamayim | lehavdil
@@ -92,25 +82,20 @@ velimshol | baiyom
 uvalaylah
 ulahavdil | bein | ha'or
 uvein | hachoshekh
-vaiyar | elohim
-ki | tov
+vaiyar | elohim | ki | tov
 
 1:19
-vayhi | erev | vayhi | voker
-yom | revi'i
+vayhi | erev | vayhi | voker | yom | revi'i
 
 1:20
 vaiyomer | elohim
-yishretzu | hamayim
-sheretz
-nefesh | chaiyah
+yishretzu | hamayim | sheretz | nefesh | chaiyah
 ve'of | ye'ofef | al | ha'aretz | al | penei | rekia | hashamayim
 
 1:21
 vaiyivra | elohim | et | hataninim | hagedolim
 ve'et | kol | nefesh | hachaiyah | haromeset | asher | sharetzu | hamayim | leminehem | ve'et | kol | of | kanaf | leminehu
-vaiyar | elohim
-ki | tov
+vaiyar | elohim | ki | tov
 
 1:22
 vayvarekh | otam | elohim | lemor
@@ -119,8 +104,7 @@ veha'of
 yirev | ba'aretz
 
 1:23
-vayhi | erev | vayhi | voker
-yom | chamishi
+vayhi | erev | vayhi | voker | yom | chamishi
 
 1:24
 vaiyomer | elohim | totze | ha'aretz | nefesh | chaiyah | leminah
@@ -130,8 +114,7 @@ vayhi | khen
 1:25
 vaiya'as | elohim | et | chaiyat | ha'aretz | leminah | ve'et | habehemah | leminah
 ve'et | kol | remes | ha'adamah | leminehu
-vaiyar | elohim
-ki | tov
+vaiyar | elohim | ki | tov
 
 1:26
 vaiyomer | elohim
@@ -168,5 +151,4 @@ vayhi | khen
 
 1:31
 vaiyar | elohim | et | kol | asher | asah
-vehineh | tov | me'od | vayhi | erev | vayhi | voker
-yom | hashishi
+vehineh | tov | me'od | vayhi | erev | vayhi | voker | yom | hashishi

@@ -1,7 +1,6 @@
 11:1
 ki | na'ar | Yisra'el
-va'ohavehu | Umimitzrayim
-karati | livni
+va'ohavehu | Umimitzrayim | karati | livni
 
 11:2
 kare'u | lahem
@@ -9,10 +8,8 @@ ken | halekhu | mipeneihem | labe'alim | yezabechu
 velapesilim | yekaterun
 
 11:3
-ve'anokhi | tirgalti | Le'efrayim
-kacham | al | zero'otav
-velo | yade'u
-ki | refatim
+ve'anokhi | tirgalti | Le'efrayim | kacham | al | zero'otav
+velo | yade'u | ki | refatim
 
 11:4
 bechavlei | adam | emshekhem | ba'avotot | ahavah
@@ -30,8 +27,7 @@ ve'akhalah | mimo'atzoteihem
 
 11:7
 ve'ami | telu'im | limshuvati
-ve'el | al | yikra'uhu
-yachad
+ve'el | al | yikra'uhu | yachad
 lo | yeromem
 
 11:8

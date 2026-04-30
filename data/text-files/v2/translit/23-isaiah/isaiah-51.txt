@@ -58,8 +58,7 @@ halo | at | hi | hamachtzevet | Rahav | mecholelet | tanin
 
 51:10
 halo | at | hi | hamacharevet | yam | mei
-tehom | rabah
-hasamah | ma'amakei | yam | derekh
+tehom | rabah | hasamah | ma'amakei | yam | derekh
 la'avor | ge'ulim
 
 51:11
@@ -77,8 +76,7 @@ umiben | adam | chatzir | yinaten
 vatishkach | Yahweh | osekha | noteh | shamayim | veyosed | aretz
 vatefached | tamid | kol | haiyom | mipenei | chamat | hametzik
 ka'asher | konen | lehashchit
-ve'aiyeh
-chamat | hametzik
+ve'aiyeh | chamat | hametzik
 
 51:14
 mihar | tzo'eh | lehipateach
@@ -87,9 +85,7 @@ velo | yechsar | lachmo
 
 51:15
 ve'anokhi | Yahweh | eloheikha
-roga | haiyam | vaiyehemu
-galav | Yahweh | tzeva'ot
-shemo
+roga | haiyam | vaiyehemu | galav | Yahweh | tzeva'ot | shemo
 
 51:16
 va'asim | devarai | befikha
@@ -109,8 +105,7 @@ ve'ein | machazik | beyadah | mikol | banim | gidelah
 
 51:19
 shetayim | henah | kore'otayikh | mi
-yanud | lakh
-hashod
+yanud | lakh | hashod
 vehashever
 vehara'av
 vehacherev

@@ -29,8 +29,7 @@ eleh | hem | rashei | avot | leyooshevei | Geva
 vaiyaglum | el | Manachat
 
 8:7
-Vena'aman | Va'achiyah | Vegera
-hu | heglam
+Vena'aman | Va'achiyah | Vegera | hu | heglam
 veholid | et | Uza
 ve'et | Achichud
 
@@ -52,8 +51,7 @@ rashei | avot
 Umechushim | holid | et | Avituv | ve'et | Elpa'al
 
 8:12
-uvenei | Elpa'al
-Ever | Umish'am
+uvenei | Elpa'al | Ever | Umish'am
 Vashamed
 hu | banah | et | Ono | ve'et | Lod | uvenoteiha
 
@@ -117,9 +115,7 @@ Veya'areshyah | Ve'eliyah | Vezikhri
 benei | Yerocham
 
 8:28
-eleh | rashei | avot | letoledotam
-rashim
-eleh
+eleh | rashei | avot | letoledotam | rashim | eleh
 yashevu | Virushalim
 
 8:29
@@ -179,8 +175,7 @@ kol | eleh | benei | Atzal
 8:39
 uvenei | Eshek | achiv | Ulam | bekhoro
 Ye'ush | hasheni
-Ve'elifelet
-hashelishi
+Ve'elifelet | hashelishi
 
 8:40
 vaiyihyu | venei | Ulom | anashim | giborei | chayil | dorekhei | keshet

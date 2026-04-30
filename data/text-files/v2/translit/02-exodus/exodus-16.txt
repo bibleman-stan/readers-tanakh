@@ -18,8 +18,7 @@ lehamit | et | kol | hakahal | hazeh | bara'av
 vaiyomer | Yahweh | el | Mosheh
 hini | mamtir | lakhem | lechem | min | hashamayim
 veyatza | ha'am | velaketu | devar | yom | beyomo
-lema'an | anassenu | hayelekh | betorati
-im | lo
+lema'an | anassenu | hayelekh | betorati | im | lo
 
 16:5
 vehayah | baiyom | hashishi
@@ -43,14 +42,11 @@ ki | talonu | aleinu
 vaiyomer | Mosheh | betet | Yahweh | lakhem | ba'erev | basar | le'ekhol
 velechem | baboker | lisboa | bishmoa | Yahweh | et | telunoteikhem
 asher | atem | malinim | alav | venachnu | mah
-lo | aleinu | telunoteikhem
-ki | al | Yahweh
+lo | aleinu | telunoteikhem | ki | al | Yahweh
 
 16:9
 vaiyomer | Mosheh | el | Aharon
-emor | el | kol | adat | benei | Yisra'el
-kirvu
-lifnei | Yahweh
+emor | el | kol | adat | benei | Yisra'el | kirvu | lifnei | Yahweh
 ki | shama | et | telunoteikhem
 
 16:10
@@ -65,8 +61,7 @@ vaydaber | Yahweh | el | Mosheh | lemor
 shama'ti | et | telunot | benei | Yisra'el
 daber | alehem | lemor | bein | ha'arbayim | tokhelu | vasar
 uvaboker | tisbe'u | lachem
-vida'tem
-ki | ani | Yahweh | eloheikhem
+vida'tem | ki | ani | Yahweh | eloheikhem
 
 16:13
 vayhi | va'erev
@@ -75,8 +70,7 @@ vatekhas | et | hamachaneh
 uvaboker | hayetah | shikhvat | hatal | saviv | lamachaneh
 
 16:14
-vata'al
-shikhvat | hatal
+vata'al | shikhvat | hatal
 vehineh | al | penei | hamidbar | dak | mechuspas
 dak | kakefor | al | ha'aretz
 
@@ -94,8 +88,7 @@ ish | la'asher | be'oholo | tikachu
 
 16:17
 vaiya'asu | khen
-benei | Yisra'el | vaiyilketu
-hamarbeh
+benei | Yisra'el | vaiyilketu | hamarbeh
 vehamam'it
 
 16:18
@@ -114,8 +107,7 @@ vaiyiv'ash
 vaiyiktzof | alehem | Mosheh
 
 16:21
-vaiyilketu | oto | baboker | baboker
-ish
+vaiyilketu | oto | baboker | baboker | ish
 kefi | akhelo
 vecham | hashemesh | venamas
 
@@ -185,8 +177,7 @@ vaiyanichehu | Aharon | lifnei | ha'edut | lemishmaret
 16:35
 uvenei | Yisra'el | akhelu | et | haman | arba'im | shanah | ad | bo'am
 el | eretz | noshavet
-et | haman | akhelu | ad | bo'am | el | ketzeh
-eretz | Kena'an
+et | haman | akhelu | ad | bo'am | el | ketzeh | eretz | Kena'an
 
 16:36
 veha'omer

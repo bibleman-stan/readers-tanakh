@@ -1,6 +1,5 @@
 11:1
-vaiyikavetzu | khol | Yisra'el | el | David
-Chevronah | lemor
+vaiyikavetzu | khol | Yisra'el | el | David | Chevronah | lemor
 hineh | atzmekha | uvesarekha
 anachenu
 
@@ -18,8 +17,7 @@ vaiyimshechu | et | David | lemelekh | al | Yisra'el
 kidvar | Yahweh | beyad | Shemu'el
 
 11:4
-vaiyelekh | David | vekhol | Yisra'el | Yerushalim
-hi | Yevus
+vaiyelekh | David | vekhol | Yisra'el | Yerushalim | hi | Yevus
 vesham | hayvusi
 yoshevei
 ha'aretz
@@ -27,9 +25,7 @@ ha'aretz
 11:5
 vaiyomeru | yoshevei | Yevus | Ledavid
 lo | tavo
-henah | vaiyilkod | David | et | metzudat | Tziyon
-hi
-ir | David
+henah | vaiyilkod | David | et | metzudat | Tziyon | hi | ir | David
 
 11:6
 vaiyomer | David
@@ -39,8 +35,7 @@ vaiya'al | barishonah | Yo'av | ben | Tzeruyah
 vayhi | lerosh
 
 11:7
-vaiyeshev | David | bamtzad | al | ken | kare'u | lo
-ir | David
+vaiyeshev | David | bamtzad | al | ken | kare'u | lo | ir | David
 
 11:8
 vaiyiven | ha'ir | misaviv | min | hamilo
@@ -124,8 +119,8 @@ vaiyigzol | et | hachanit | miyad | hamitzri
 vaiyahargehu | bachanito
 
 11:24
-eleh | asah | Benayahu
-ben | Yehoyada | velov | shem | bishloshah | hagiborim
+eleh | asah | Benayahu | ben | Yehoyada
+velov | shem | bishloshah | hagiborim
 
 11:25
 min | hasheloshim | hino | nikhbad | hu | ve'el | hasheloshah
@@ -143,8 +138,7 @@ Cheletz
 hapeloni
 
 11:28
-Ira | ven | Ikesh | hateko'i | Avi'ezer
-ha'anetoti
+Ira | ven | Ikesh | hateko'i | Avi'ezer | ha'anetoti
 
 11:29
 Sibekhai | hachushati
@@ -156,16 +150,13 @@ Mahrai | hanetofati
 Cheled | ben | Ba'anah | hanetofati
 
 11:31
-Itai | ben | Rivai | migiv'at | benei | Vinyamin | Benayah
-hapir'atoni
+Itai | ben | Rivai | migiv'at | benei | Vinyamin | Benayah | hapir'atoni
 
 11:32
-Churai | minachalei | Ga'ash | Avi'el
-ha'arvati
+Churai | minachalei | Ga'ash | Avi'el | ha'arvati
 
 11:33
-Azmavet | habacharumi | Elyachba
-hasha'alvoni
+Azmavet | habacharumi | Elyachba | hasha'alvoni
 
 11:34
 benei | Hashem | hagizoni | Yonatan | ben | Shageh | haharari
@@ -179,20 +170,15 @@ Chefer | hamekherati | Achiyah
 hapeloni
 
 11:37
-Chetzro | hakarmeli | Na'arai
-ben | Ezbai
+Chetzro | hakarmeli | Na'arai | ben | Ezbai
 
 11:38
-Yo'el | achi | Natan | Mivchar
-ben | Hagri
+Yo'el | achi | Natan | Mivchar | ben | Hagri
 
 11:39
 Tzelek
 ha'amoni
-Nachrai | haberoti
-nose
-kelei
-Yo'av | ben | Tzeruyah
+Nachrai | haberoti | nose | kelei | Yo'av | ben | Tzeruyah
 
 11:40
 Ira | haiyitri
@@ -200,16 +186,13 @@ Garev
 haiyitri
 
 11:41
-Uriyah | hachiti
-Zavad
-ben | Achlai
+Uriyah | hachiti | Zavad | ben | Achlai
 
 11:42
 Adina | ven | Shiza | hor'uveni | rosh | lor'uveni | ve'alav | sheloshim
 
 11:43
-Chanan | ben | Ma'akhah | Veyoshafat
-hamitni
+Chanan | ben | Ma'akhah | Veyoshafat | hamitni
 
 11:44
 Uziya
@@ -218,17 +201,14 @@ Shama | Vi'u'el | benei | Chotam | ha'aro'eri
 
 11:45
 Yedi'a'el | ben | Shimri
-Veyocha | achiv
-hatitzi
+Veyocha | achiv | hatitzi
 
 11:46
 Eli'el | hamachavim
 Virivai | Veyoshavyah
 benei | Elna'am
-Veyitmah
-hamo'avi
+Veyitmah | hamo'avi
 
 11:47
 Eli'el | Ve'oved
-Veya'asi'el
-Hametzoayah
+Veya'asi'el | Hametzoayah

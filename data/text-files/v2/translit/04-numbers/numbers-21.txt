@@ -1,8 +1,6 @@
 21:1
 vaiyishma | hakena'ani | melekh | Arad | yoshev | Hanegev
-ki | ba | Yisra'el
-derekh
-Ha'atarim
+ki | ba | Yisra'el | derekh | Ha'atarim
 vaiyilachem | Beyisra'el
 vaiyishb | mimenu | shevi
 
@@ -27,8 +25,7 @@ vatiktzar | nefesh | ha'am | badarekh
 vaydaber | ha'am | belohim
 Uvemosheh | lamah | he'elitunu | Mimitzrayim | lamut | bamidbar
 ki | ein | lechem | ve'ein | mayim
-venafshenu | katzah | balechem
-hakelokel
+venafshenu | katzah | balechem | hakelokel
 
 21:6
 vayshalach | Yahweh | ba'am | et | hanechashim | haserafim
@@ -68,8 +65,7 @@ misham | nasa'u | vaiyachanu | benachal | Zared
 
 21:13
 misham | nasa'u
-vaiyachanu | me'ever | Arnon | asher | bamidbar
-haiyotze | migevul | ha'emori
+vaiyachanu | me'ever | Arnon | asher | bamidbar | haiyotze | migevul | ha'emori
 ki | Arnon | gevul | Mo'av | bein | Mo'av
 uvein | ha'emori
 
@@ -88,9 +84,7 @@ hi | habe'er | asher | amar | Yahweh | Lemosheh
 esof | et | ha'am | ve'etenah | lahem | mayim
 
 21:17
-az | yashir | Yisra'el | et | hashirah
-hazot | ali | ve'er
-enu | lah
+az | yashir | Yisra'el | et | hashirah | hazot | ali | ve'er | enu | lah
 
 21:18
 be'er | chafaruha | sarim | karuha | nedivei | ha'am | bimchokek
@@ -125,8 +119,7 @@ vaiyilachem | Beyisra'el
 
 21:24
 vaiyakehu | Yisra'el | lefi | charev
-vaiyirash | et | artzo | Me'arnon | ad | Yabok | ad | benei | Amon
-ki | az
+vaiyirash | et | artzo | Me'arnon | ad | Yabok | ad | benei | Amon | ki | az
 gevul | benei | Amon
 
 21:25
@@ -142,8 +135,7 @@ vaiyikach | et | kol | artzo | miyado | ad | Arnon
 
 21:27
 al | ken | yomeru | hamoshelim | bo'u | Cheshbon
-tibaneh | vetikonen
-ir | Sichon
+tibaneh | vetikonen | ir | Sichon
 
 21:28
 ki | esh | yatze'ah | Mecheshbon | lehavah | mikiryat | Sichon
@@ -154,8 +146,7 @@ bamot | Arnon
 o | lekha | Mo'av | avadta
 am | Kemoosh | natan | banav | peleitim
 uvenotav | bashevit
-lemelekh | emori
-Sichon
+lemelekh | emori | Sichon
 
 21:30
 vaniram | avad | Cheshbon | ad | Divon
@@ -170,9 +161,7 @@ vaiyilkedu | benoteiha
 vaiyiresh | et | ha'emori | asher | sham
 
 21:33
-vaiyifnu | vaiya'alu
-derekh
-Habashan
+vaiyifnu | vaiya'alu | derekh | Habashan
 vaiyetze | Og | melekh | Habashan | likratam | hu
 vekhol | amo | lamilchamah | Edre'i
 

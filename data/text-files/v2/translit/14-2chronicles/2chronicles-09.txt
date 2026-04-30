@@ -37,8 +37,7 @@ yasafta | al | hashemu'ah | asher | shama'eti
 
 9:7
 ashrei | anasheikha
-ve'ashrei
-avadeikha | eleh
+ve'ashrei | avadeikha | eleh
 ha'omedim | lefaneikha | tamid
 veshome'im
 et | chakhematekha
@@ -52,8 +51,7 @@ vaiyitenkha | aleihem | lemelekh | la'asot | mishpat | utzedakah
 9:9
 vatiten | lamelekh | me'ah | ve'esrim | kikar | zahav
 uvesamim | laro | me'od | ve'even | yekarah
-velo | hayah | kabosem | hahu
-asher | natenah | malkat | Sheva | lamelekh | Shelomoh
+velo | hayah | kabosem | hahu | asher | natenah | malkat | Sheva | lamelekh | Shelomoh
 
 9:10
 vegam | avdei | Chiram | ve'avdei | Shelomoh
@@ -69,8 +67,7 @@ velo | Nir'u | khahem | lefanim | be'eretz | Yehudah
 9:12
 vehamelekh | Shelomoh | natan | lemalkat | Sheva | et | kol | cheftzah | asher | sha'alah
 milevad | asher | hevi'ah | el | hamelekh
-vatahafokh | vatelekh | le'artzah
-hi | va'avadeiha
+vatahafokh | vatelekh | le'artzah | hi | va'avadeiha
 
 9:13
 vayhi | mishkal | hazahav
@@ -82,11 +79,9 @@ vekhol | malkhei | Arav | ufachot | ha'aretz | mevi'im | zahav
 vakhesef | Lishlomoh
 
 9:15
-vaiya'as | hamelekh | Shelomoh | matayim | tzinah
-zahav | shachut
+vaiya'as | hamelekh | Shelomoh | matayim | tzinah | zahav | shachut
 shesh | me'ot | zahav | shachut
-ya'aleh
-al | hatzinah | ha'echat
+ya'aleh | al | hatzinah | ha'echat
 
 9:16
 ushelosh | me'ot | maginim | zahav | shachut
@@ -96,16 +91,14 @@ al | hamagen | ha'echat | vaiyitenem | hamelekh | beveit | ya'ar | Halevanon
 
 9:17
 vaiya'as | hamelekh | kise | shen
-gadol | vaytzapehu
-zahav | tahor
+gadol | vaytzapehu | zahav | tahor
 
 9:18
 veshesh | ma'alot | lakise
 vekhevesh | bazahav | lakise | mo'ochazim
-veyadot | mizeh | umizeh
-al | mekom | hashavet
-ushenayim | arayot
-omedim | etzel | haiyadot
+veyadot | mizeh
+umizeh | al | mekom | hashavet
+ushenayim | arayot | omedim | etzel | haiyadot
 
 9:19
 usheneim | asar | arayot | omedim | sham | al | shesh | hama'alot
@@ -164,8 +157,7 @@ harishonim
 veha'acharonim
 halo | hem | ketuvim | al | divrei | Natan | hanavi
 ve'al | nevu'at | Achiyah | hashiloni
-uvachazot | Ye'di | hachozeh | al | Yarave'am
-ben | Nevat
+uvachazot | Ye'di | hachozeh | al | Yarave'am | ben | Nevat
 
 9:30
 vaiyimlokh | Shelomoh | Virushalim | al | kol | Yisra'el
@@ -173,7 +165,6 @@ arba'im | shanah
 
 9:31
 vaiyishkav | Shelomoh | im | avotav
-vaiyikberuhu | be'ir
-David | aviv
+vaiyikberuhu | be'ir | David | aviv
 vaiyimlokh | Rechav'am | beno
 tachtav

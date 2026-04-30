@@ -1,7 +1,6 @@
 10:1
 bishnat | shaloosh | Lekhoresh | melekh | Paras
-davar | Niglah | Ledaniyel
-asher | Nikra | shemo | Beleteshatzar
+davar | Niglah | Ledaniyel | asher | Nikra | shemo | Beleteshatzar
 ve'emet | hadavar | vetzava | gadol | uvin | et | hadavar
 uvinah | lo | bamar'eh
 
@@ -21,8 +20,7 @@ uveyom | esrim | ve'arba'ah | lachodesh | harishon
 va'ani | hayiti | al | yad | hanahar | hagadol | hu | Chidakel
 
 10:5
-va'esa | et | einai | va'ere
-vehineh | ish | echad | lavush | badim
+va'esa | et | einai | va'ere | vehineh | ish | echad | lavush | badim
 umatenav | chagurim
 bekhetem | Ufaz
 
@@ -104,8 +102,7 @@ vaychazekeni
 vaiyomer | al | tira | ish | chamudot | shalom | lakh
 chazak | vachazak
 ubedabero | imi | hitchazakti
-va'omerah | yedaber | adoni
-ki | chizaktani
+va'omerah | yedaber | adoni | ki | chizaktani
 
 10:20
 vaiyomer | hayada'ta | lamah | bati | eleikha | ve'atah | ashuv
@@ -115,6 +112,5 @@ vehineh | sar | Yavan | ba
 
 10:21
 aval | agid | lekha | et | harashum | bikhtav
-emet | ve'ein | echad | mitchazek | imi | al | eleh
-ki | im | Mikha'el
+emet | ve'ein | echad | mitchazek | imi | al | eleh | ki | im | Mikha'el
 sarkhem

@@ -12,19 +12,15 @@ kol | zakhar | legulgelotam
 1:3
 miben | esrim | shanah | vama'lah
 kol | yotze | tzava | Beyisra'el
-tifkedu | otam | letziv'otam
-atah | Ve'aharon
+tifkedu | otam | letziv'otam | atah | Ve'aharon
 
 1:4
-ve'itekhem | yihyu
-ish | ish | lamateh
+ve'itekhem | yihyu | ish | ish | lamateh
 ish | rosh | leveit | avotav | hu
 
 1:5
-ve'eleh | shemot | ha'anashim | asher | ya'amdu
-itekhem | Lir'uven
-Elitzur
-ben | Shedei'ur
+ve'eleh | shemot | ha'anashim | asher | ya'amdu | itekhem | Lir'uven
+Elitzur | ben | Shedei'ur
 
 1:6
 Leshim'on
@@ -32,30 +28,22 @@ Shelumi'el
 ben | Tzurishadai
 
 1:7
-Lihudah | Nachshon
-ben | Aminadav
+Lihudah | Nachshon | ben | Aminadav
 
 1:8
-Leyisoshkhar | Netan'el
-ben | Tzu'ar
+Leyisoshkhar | Netan'el | ben | Tzu'ar
 
 1:9
-Lizvulun | Eli'av
-ben | Chelon
+Lizvulun | Eli'av | ben | Chelon
 
 1:10
-livnei | Yosef | Le'efrayim | Elishama
-ben | Amihud | Limnasheh
-Gamli'el
-ben | Pedahtzur
+livnei | Yosef | Le'efrayim | Elishama | ben | Amihud | Limnasheh | Gamli'el | ben | Pedahtzur
 
 1:11
-Levinyamin | Avidan
-ben | Gid'oni
+Levinyamin | Avidan | ben | Gid'oni
 
 1:12
-Ledan | Achi'ezer
-ben | Ammishadai
+Ledan | Achi'ezer | ben | Ammishadai
 
 1:13
 Le'asher
@@ -63,18 +51,15 @@ Pag'i'el
 ben | Akheran
 
 1:14
-Legad | Elyasaf
-ben | De'u'el
+Legad | Elyasaf | ben | De'u'el
 
 1:15
-Lenaftali | Achira
-ben | Einan
+Lenaftali | Achira | ben | Einan
 
 1:16
 eleh | keri'ei | ha'edah | nesi'ei
 matot | avotam
-rashei | alfei | Yisra'el
-hem
+rashei | alfei | Yisra'el | hem
 
 1:17
 vaiyikach | Mosheh
@@ -89,8 +74,7 @@ vama'lah | legulgelotam
 ka'asher | tzivah | Yahweh | et | Mosheh | vaiyifkedem | bemidbar | Sinai
 
 1:20
-vaiyihyu | venei | Re'uven | bekhor | Yisra'el
-toldotam | lemishpechotam
+vaiyihyu | venei | Re'uven | bekhor | Yisra'el | toldotam | lemishpechotam
 leveit | avotam | bemispar | shemot | legulgelotam
 kol | zakhar | miben | esrim | shanah | vama'lah
 kol | yotze | tzava
@@ -103,8 +87,7 @@ shishah | ve'arba'im | elef | vachamesh | me'ot
 1:22
 livnei | Shim'on
 toldotam | lemishpechotam
-leveit | avotam
-pekudav | bemispar | shemot | legulgelotam
+leveit | avotam | pekudav | bemispar | shemot | legulgelotam
 kol | zakhar | miben | esrim | shanah | vama'lah
 kol | yotze | tzava
 
@@ -140,9 +123,7 @@ lemateh | Yehudah
 arba'ah | veshiv'im | elef | veshesh | me'ot
 
 1:28
-livnei | Yisoshkhar
-toldotam | lemishpechotam
-leveit | avotam
+livnei | Yisoshkhar | toldotam | lemishpechotam | leveit | avotam
 bemispar | shemot | miben | esrim | shanah
 vama'lah
 kol | yotze | tzava
@@ -227,9 +208,7 @@ pekudeihem
 lemateh | Asher | echad | ve'arba'im | elef | vachamesh | me'ot
 
 1:42
-benei | Naftali
-toldotam | lemishpechotam
-leveit | avotam
+benei | Naftali | toldotam | lemishpechotam | leveit | avotam
 bemispar | shemot | miben | esrim | shanah
 vama'lah
 kol | yotze | tzava
@@ -276,10 +255,8 @@ vesaviv | lamishkan | yachanu
 
 1:51
 uvinsoa | hamishkan | yoridu | oto | halviyim
-uvachanot | hamishkan | yakimu | oto
-halviyim
-vehazar | hakarev
-yumat
+uvachanot | hamishkan | yakimu | oto | halviyim
+vehazar | hakarev | yumat
 
 1:52
 vechanu
@@ -294,5 +271,4 @@ et | mishmeret | mishkan | ha'edut
 
 1:54
 vaiya'asu | benei | Yisra'el
-kekhol | asher | tzivah | Yahweh | et | Mosheh
-ken | asu
+kekhol | asher | tzivah | Yahweh | et | Mosheh | ken | asu

@@ -5,26 +5,22 @@ leveit | Sha'ul | ve'e'eseh | imo | chesed
 ba'avur | Yehonatan
 
 9:2
-uleveit | Sha'ul | eved | ushemo | Tziva | vaiyikre'u | lo
-el | David
+uleveit | Sha'ul | eved | ushemo | Tziva | vaiyikre'u | lo | el | David
 vaiyomer | hamelekh | elav | ha'atah | Tziva
 vaiyomer | avdekha
 
 9:3
 vaiyomer | hamelekh | ha'efes | od | ish | leveit | Sha'ul
 ve'e'eseh | imo | chesed | elohim
-vaiyomer | Tziva | el | hamelekh | od | ben | Lihonatan
-nekheh | raglayim
+vaiyomer | Tziva | el | hamelekh | od | ben | Lihonatan | nekheh | raglayim
 
 9:4
-vaiyomer | lo | hamelekh
-eifoh | hu
+vaiyomer | lo | hamelekh | eifoh | hu
 vaiyomer | Tziva | el | hamelekh
 hineh | hu | beit | Makhir | ben | Ami'el | Belo | Devar
 
 9:5
-vaiyishlach
-hamelekh | David
+vaiyishlach | hamelekh | David
 vaiyikachehu | mibeit | Makhir | ben | Ami'el
 Milo | Devar
 
@@ -72,6 +68,5 @@ vekhol | moshav | beit | Tziva | avadim | Limfivoshet
 
 9:13
 Umefivoshet | yoshev | Birushalim
-ki | al | shulchan | hamelekh | tamid
-hu | okhel | vehu | piseach
+ki | al | shulchan | hamelekh | tamid | hu | okhel | vehu | piseach
 shetei | raglav

@@ -1,8 +1,7 @@
 2:1
 ve'eleh | benei | hamedinah | ha'olim | mishevi | hagolah
 asher | heglah | Nevukhadnetzor | melekh | Bavel | Levavel
-vaiyashuvu | Lirushalim | Vihudah
-ish | le'iro
+vaiyashuvu | Lirushalim | Vihudah | ish | le'iro
 
 2:2
 asher | ba'u | im | Zerubavel | Yeshua | Nechemyah | Serayah | Re'elayah | Maredokhai | Bilshan | Mispar | Bigvai
@@ -45,8 +44,7 @@ benei | Azgad
 elef | matayim | esrim | ushenayim
 
 2:13
-benei | Adonikam
-shesh | me'ot | shishim | veshishah
+benei | Adonikam | shesh | me'ot | shishim | veshishah
 
 2:14
 benei | Vigvai | alpayim | chamishim | veshishah
@@ -74,8 +72,7 @@ benei | Gibar | tish'im | vachamishah
 benei | Veit | Lachem | me'ah | esrim | usheloshah
 
 2:22
-anshei | Netofah
-chamishim | veshishah
+anshei | Netofah | chamishim | veshishah
 
 2:23
 anshei | Anatot | me'ah | esrim | ushemonah
@@ -114,8 +111,7 @@ benei | Charim
 shelosh | me'ot | ve'esrim
 
 2:33
-benei | Lod | Chadid | Ve'ono
-sheva | me'ot | esrim | vachamishah
+benei | Lod | Chadid | Ve'ono | sheva | me'ot | esrim | vachamishah
 
 2:34
 benei | Yerecho | shelosh | me'ot | arba'im | vachamishah
@@ -125,12 +121,10 @@ benei | Sena'ah | sheloshet | alafim | veshesh | me'ot | usheloshim
 
 2:36
 hakohanim
-benei | Yeda'yah | leveit | Yeshua
-tesha | me'ot | shiv'im | usheloshah
+benei | Yeda'yah | leveit | Yeshua | tesha | me'ot | shiv'im | usheloshah
 
 2:37
-benei | Imer
-elef | chamishim | ushenayim
+benei | Imer | elef | chamishim | ushenayim
 
 2:38
 benei | Fashchur | elef | matayim | arba'im | veshiv'ah
@@ -203,12 +197,10 @@ shelosh | me'ot | tish'im | ushenayim
 2:59
 ve'eleh | ha'olim | Mitel | Melach | Tel | Charsha
 Keruv | Adan | Imer
-velo | yakhelu | lehagid | beit | avotam | vezar'am
-im | Miyisra'el | hem
+velo | yakhelu | lehagid | beit | avotam | vezar'am | im | Miyisra'el | hem
 
 2:60
-benei | Delayah | venei | Toiyah | benei | Nekoda
-shesh | me'ot | chamishim | ushenayim
+benei | Delayah | venei | Toiyah | benei | Nekoda | shesh | me'ot | chamishim | ushenayim
 
 2:61
 umibenei | hakohanim | benei | Choaiyah | benei | Hakotz
@@ -240,8 +232,7 @@ sheva | me'ot | sheloshim | veshishah
 pirdeihem | matayim | arba'im | vachamishah
 
 2:67
-gemaleihem | arba | me'ot | sheloshim | vachamishah
-chamorim
+gemaleihem | arba | me'ot | sheloshim | vachamishah | chamorim
 sheshet | alafim | sheva | me'ot | ve'esrim
 
 2:68

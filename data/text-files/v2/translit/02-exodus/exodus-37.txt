@@ -1,9 +1,7 @@
 37:1
-vaiya'as | Betzal'el | et | ha'aron
-atzei | shitim
+vaiya'as | Betzal'el | et | ha'aron | atzei | shitim
 amatayim | vachetzi | areko | ve'amah | vachetzi | rachebo
-ve'amah | vachetzi
-komato
+ve'amah | vachetzi | komato
 
 37:2
 vaytzapehu | zahav | tahor | mibayit | umichutz
@@ -17,8 +15,7 @@ hashenit
 
 37:4
 vaiya'as | badei
-atzei | shitim | vaytzaf | otam
-zahav
+atzei | shitim | vaytzaf | otam | zahav
 
 37:5
 vaiyave | et | habadim | bataba'ot | al | tzal'ot | ha'aron | laset
@@ -27,12 +24,10 @@ et | ha'aron
 37:6
 vaiya'as | kaporet
 zahav | tahor | amatayim | vachetzi | arekah
-ve'amah | vachetzi
-rachebah
+ve'amah | vachetzi | rachebah
 
 37:7
-vaiya'as | shenei | kheruvim
-zahav
+vaiya'as | shenei | kheruvim | zahav
 mikshah | asah | otam | mishenei | ketzot | hakaporet
 
 37:8
@@ -48,15 +43,12 @@ hayu
 penei | hakeruvim
 
 37:10
-vaiya'as | et | hashulchan
-atzei | shitim
+vaiya'as | et | hashulchan | atzei | shitim
 amatayim | areko | ve'amah | rachebo
-ve'amah | vachetzi
-komato
+ve'amah | vachetzi | komato
 
 37:11
-vaytzaf | oto
-zahav | tahor
+vaytzaf | oto | zahav | tahor
 vaiya'as | lo | zer | zahav | saviv
 
 37:12
@@ -77,9 +69,7 @@ et | hashulchan
 
 37:15
 vaiya'as | et | habadim | atzei | shitim
-vaytzaf | otam
-zahav | laset
-et | hashulchan
+vaytzaf | otam | zahav | laset | et | hashulchan
 
 37:16
 vaiya'as | et | hakelim | asher | al | hashulchan | et | ke'arotav | ve'et | kapotav | ve'et | menakiyotav
@@ -88,8 +78,7 @@ zahav
 tahor
 
 37:17
-vaiya'as | et | hamenorah
-zahav | tahor
+vaiya'as | et | hamenorah | zahav | tahor
 mikshah | asah | et | hamenorah | yerekhah | vekanah
 gevi'eiha | kaftoreiha | uferacheiha | mimenah | hayu
 
@@ -120,16 +109,13 @@ kaftoreihem | ukenotam | mimenah | hayu
 kulah | mikshah | achat | zahav | tahor
 
 37:23
-vaiya'as | et | neroteiha
-shiv'ah | umalkacheiha | umachtoteiha
-zahav | tahor
+vaiya'as | et | neroteiha | shiv'ah | umalkacheiha | umachtoteiha | zahav | tahor
 
 37:24
 kikar | zahav | tahor | asah | otah | ve'et | kol | keleiha
 
 37:25
-vaiya'as | et | mizbach | haketoret
-atzei | shitim
+vaiya'as | et | mizbach | haketoret | atzei | shitim
 amah | areko | ve'amah | rachebo | ravua | ve'amatayim | komato
 mimenu | hayu | karnotav
 
@@ -144,8 +130,7 @@ laset | oto | bahem
 
 37:28
 vaiya'as | et | habadim
-atzei | shitim | vaytzaf | otam
-zahav
+atzei | shitim | vaytzaf | otam | zahav
 
 37:29
 vaiya'as | et | shemen | hamishchah | kodesh | ve'et | ketoret | hasamim

@@ -1,6 +1,5 @@
 1:1
-vayhi | acharei | mot | Mosheh
-eved | Yahweh
+vayhi | acharei | mot | Mosheh | eved | Yahweh
 vaiyomer | Yahweh | el | Yehoshua | bin | Nun | mesharet | Mosheh | lemor
 
 1:2
@@ -16,8 +15,7 @@ lakhem | netativ | ka'asher | dibarti | el | Mosheh
 1:4
 mehamidbar | Vehalevanon | hazeh | ve'ad | hanahar | hagadol | nehar | Perat | kol | eretz | hachitim
 ve'ad | haiyam | hagadol | mevo | hashamesh
-yihyeh
-gevulekhem
+yihyeh | gevulekhem
 
 1:5
 lo | yityatzev | ish | lefaneikha | kol | yemei | chaiyeikha
@@ -85,8 +83,7 @@ be'ever | Haiyarden | mizrach | hashamesh
 1:16
 vaiya'anu | et | Yehoshua | lemor
 kol | asher | tzivitanu | na'aseh
-ve'el | kol | asher | tishlachenu
-nelekh
+ve'el | kol | asher | tishlachenu | nelekh
 
 1:17
 kekhol | asher | shama'nu | el | Mosheh

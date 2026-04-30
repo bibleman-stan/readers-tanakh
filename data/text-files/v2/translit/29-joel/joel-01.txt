@@ -1,6 +1,5 @@
 1:1
-devar | Yahweh | asher | hayah | el | Yo'el
-ben | Petu'el
+devar | Yahweh | asher | hayah | el | Yo'el | ben | Petu'el
 
 1:2
 shim'u | zot | hazekenim
@@ -17,9 +16,7 @@ ledor | acher
 1:4
 yeter | hagazam | akhal | ha'arbeh
 veyeter | ha'arbeh
-akhal | haiyalek | veyeter | haiyelek
-akhal
-hechasil
+akhal | haiyalek | veyeter | haiyelek | akhal | hechasil
 
 1:5
 hakitzu | shikorim | uvekhu
@@ -35,22 +32,17 @@ umetale'ot | lavi | lo
 
 1:7
 sam | gafni | leshamah | ute'enati | liktzafah
-chasof | chasafah | vehishlikh
-hilbinu
-sarigeiha
+chasof | chasafah | vehishlikh | hilbinu | sarigeiha
 
 1:8
 eli | kivtulah | chagurat | sak | al | ba'al | ne'ureiha
 
 1:9
 hakherat | minchah | vanesekh
-mibeit | Yahweh | avelu | hakohanim | mesharetei
-Yahweh
+mibeit | Yahweh | avelu | hakohanim | mesharetei | Yahweh
 
 1:10
-shudad | sadeh | avelah
-adamah
-ki | shudad | dagan
+shudad | sadeh | avelah | adamah | ki | shudad | dagan
 hovish | tiroosh
 umlal | yitzhar
 
@@ -90,9 +82,7 @@ simchah | vagil
 
 1:17
 aveshu | ferudot | tachat | megrefoteihem | Nashamu | otzarot
-Nehersu | mamegurot
-ki | hovish
-dagan
+Nehersu | mamegurot | ki | hovish | dagan
 
 1:18
 mah | Ne'enchah | vehemah | Navokhu | edrei | vakar

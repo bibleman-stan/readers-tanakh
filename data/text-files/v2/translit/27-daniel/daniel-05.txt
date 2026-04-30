@@ -1,34 +1,29 @@
 5:1
 Beleshatzar | malka | avad | lechem | rav | leravrevanohi
 alaf
-velokovel | alpa
-chamra | shateh
+velokovel | alpa | chamra | shateh
 
 5:2
 Beleshatzar | amar | bit'em | chamra | lehaytayah | lemanei | dahava
 vekhaspa
-di | hanpek | Nevukhadnetzar | avuhi | min | heikhla
-di | Virushelem
-veyishton | behon | malka | veravrevanohi
-shegelateh | ulechenateh
+di | hanpek | Nevukhadnetzar | avuhi | min | heikhla | di | Virushelem
+veyishton | behon | malka | veravrevanohi | shegelateh
+ulechenateh
 
 5:3
 bedayin | haytiv | manei | dahava
-di | hanpiku | min | heikhla | di | veit | elaha
-di | Virushelem
-ve'ishtiv | behon | malka | veravrevanohi
-shegelateh | ulechenateh
+di | hanpiku | min | heikhla | di | veit | elaha | di | Virushelem
+ve'ishtiv | behon | malka | veravrevanohi | shegelateh
+ulechenateh
 
 5:4
-ishtiv
-chamra
+ishtiv | chamra
 veshabachu | lelahei | dahava | vekhaspa | nechasha | farzela
 a'a | ve'avna
 
 5:5
 bah | sha'atah | nefaku | etzbe'an | di | yad | enash
-vekhatevan | lokovel | nevrashta | al | gira
-di | khetal | heikhla
+vekhatevan | lokovel | nevrashta | al | gira | di | khetal | heikhla
 di | malka | umalka | chazeh
 pas | yedah
 di | khatevah
@@ -48,8 +43,7 @@ vetalti | vemalkhuta
 yishlat
 
 5:8
-edayin | alalin
-kol | chakimei | malka
+edayin | alalin | kol | chakimei | malka
 vela | khahalin | ketava | lemikre
 ufishrah | lehoda'ah | lemalka
 
@@ -62,14 +56,12 @@ veravrevanohi | mishtabeshin
 5:10
 malketa | lokovel | milei | malka | veravrevanohi
 leveit | mishteya | alalat
-anat | malketa | va'ameret | malka | le'almin | cheyi
-al | yevahalukh | ra'yonakh
+anat | malketa | va'ameret | malka | le'almin | cheyi | al | yevahalukh | ra'yonakh
 vezivaikh | al | yishtano
 
 5:11
 itai | gevar | bemalkhutakh | di | ruach | elahin | kadishin | beh
-uveyomei | avukh | nahiru | vesakheletanu | vechakhemah | kechakhemat | elahin
-hishtekhachat | beh
+uveyomei | avukh | nahiru | vesakheletanu | vechakhemah | kechakhemat | elahin | hishtekhachat | beh
 umalka | Nevukhadnetzar | avukh
 rav | chartumin | ashefin | kasda'in | gazerin
 hakimeh | avukh | malka
@@ -92,8 +84,7 @@ di | hayti | malka | avi | min | Yehud
 5:14
 veshim'et | alayikh
 di | ruach | elahin | bakh
-venahiru | vesakheletanu | vechakhemah | yatirah
-hishtekhachat | bakh
+venahiru | vesakheletanu | vechakhemah | yatirah | hishtekhachat | bakh
 
 5:15
 ukhe'an | hu'alu | kadamai | chakimaiya | ashefaiya
@@ -102,8 +93,7 @@ ufishreh | lehoda'utani
 vela | khahalin | peshar | mileta | lehachavayah
 
 5:16
-va'anah | shim'et | alayikh
-di | tukhal | pishrin | lemifshar
+va'anah | shim'et | alayikh | di | tukhal | pishrin | lemifshar
 vekitrin | lemishre
 ke'an | hen | tukhal | ketava | lemikre | ufishreh | lehoda'utani
 argevana | tilbash | vehamonkha | di | dahava | al | tzaverakh
@@ -118,14 +108,12 @@ ufishra | ahod'ineh
 
 5:18
 antah | malka | elaha | ilaya
-malkhuta | urevuta | vikara | vehadrah
-yehav
+malkhuta | urevuta | vikara | vehadrah | yehav
 Linvukhadnetzar | avukh
 
 5:19
 umin | revuta | di | yehav | leh
-kol | amaiya | umaiya | velishanaiya
-havo | za'a'in | vedachalin | min | kodamohi
+kol | amaiya | umaiya | velishanaiya | havo | za'a'in | vedachalin | min | kodamohi
 di | havah | tzave | hava | katel | vedi | havah | tzave | havah | mache
 vedi | havah | tzave | havah | marim | vedi | havah | tzave
 havah | mashpil
@@ -134,8 +122,7 @@ havah | mashpil
 ukhedi | rim | liveh
 verucheh
 tikfat | lahazadah
-hanechat | min | karese | malkhuteh | vikarah
-he'diyu | mineh
+hanechat | min | karese | malkhuteh | vikarah | he'diyu | mineh
 
 5:21
 umin | benei | anasha | terid
@@ -157,8 +144,7 @@ ulemanaiya | di | vayteh | haytiv | kadamayikh | ve'antah | veravrevanayikh | sh
 ulechenatokh | chamra | shatayin | behon
 velelahei | khaspa- | vedahava | nechasha | farzela | a'a | ve'avna | di | la | chazayin
 vela | shame'in
-vela | yade'in
-shabachta
+vela | yade'in | shabachta
 velelaha | di | nishmetakh | bideh
 vekhol | orechatakh | leh | la | hadarta
 

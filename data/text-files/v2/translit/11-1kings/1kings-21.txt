@@ -32,11 +32,9 @@ o | im | chafetz | atah | etenah | lekha | kherem
 tachtav | vaiyomer | lo | eten | lekha | et | karmi
 
 21:7
-vatomer | elav | Izevel | ishto
-atah
+vatomer | elav | Izevel | ishto | atah
 atah | ta'aseh | melukhah | al | Yisra'el
-kum | ekhol | lechem | veyitav | libekha
-ani | eten | lekha
+kum | ekhol | lechem | veyitav | libekha | ani | eten | lekha
 et | kerem
 Navot | haiyizre'eli
 
@@ -49,8 +47,7 @@ haiyoshevim
 et | Navot
 
 21:9
-vatikhto | basefarim | lemor
-kir'u | tzom
+vatikhto | basefarim | lemor | kir'u | tzom
 vehoshivu | et | Navot | berosh | ha'am
 
 21:10
@@ -87,8 +84,7 @@ vayhi | kishmoa | Izevel
 ki | sukal | Navot
 vaiyamot
 vatomer | Izevel | el | Ach'av | kum | resh | et | kerem | Navot | haiyizre'eli | asher | me'en | latet | lekha | vekhesef
-ki | ein | Navot | chai
-ki | met
+ki | ein | Navot | chai | ki | met
 
 21:16
 vayhi | kishmoa | Ach'av
@@ -100,24 +96,18 @@ vayhi | devar | Yahweh | el | Eliyahu | hatishbi | lemor
 
 21:18
 kum | red | likrat | Ach'av | melekh | Yisra'el | asher | Beshomeron
-hineh | bekherem | Navot
-asher | yarad | sham | lerishto
+hineh | bekherem | Navot | asher | yarad | sham | lerishto
 
 21:19
-vedibarta | elav | lemor | koh | amar | Yahweh
-haratzachta
+vedibarta | elav | lemor | koh | amar | Yahweh | haratzachta
 vegam | yarasheta
 vedibarta | elav | lemor | koh | amar | Yahweh
 bimkom | asher | lakeku | hakelavim | et | dam | Navot
-yaloku | hakelavim | et | damekha
-gam | atah
+yaloku | hakelavim | et | damekha | gam | atah
 
 21:20
-vaiyomer | Ach'av | el | Eliyahu
-hamtzatani
-oyevi
-vaiyomer | matzati
-ya'an | hitmakerkha
+vaiyomer | Ach'av | el | Eliyahu | hamtzatani | oyevi
+vaiyomer | matzati | ya'an | hitmakerkha
 la'asot | hara | be'einei | Yahweh
 
 21:21
@@ -132,8 +122,7 @@ Ba'sha | ven | Achiyah | el | haka'as | asher | hikh'asta
 vatachati | et | Yisra'el
 
 21:23
-vegam | Le'izevel | diber | Yahweh | lemor
-hakelavim | yokhelu | et | Izevel
+vegam | Le'izevel | diber | Yahweh | lemor | hakelavim | yokhelu | et | Izevel
 bechel | Yizre'el
 
 21:24
@@ -157,8 +146,7 @@ vayhi | khishmoa | Ach'av | et | hadevarim | ha'eleh | vaiyikra | begadav
 vaiyasem | sak | al | besaro
 vaiyatzom
 vaiyishkav | basak
-vayhalekh
-at
+vayhalekh | at
 
 21:28
 vayhi | devar | Yahweh | el | Eliyahu | hatishbi | lemor

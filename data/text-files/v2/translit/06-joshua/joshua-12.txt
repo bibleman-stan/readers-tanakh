@@ -66,16 +66,14 @@ melekh | Yerushalim | echad | melekh | Chevron
 echad
 
 12:11
-melekh | Yarmut | echad | melekh | Lakhish
-echad
+melekh | Yarmut | echad | melekh | Lakhish | echad
 
 12:12
 melekh | Eglon | echad | melekh | Gezer
 echad
 
 12:13
-melekh | Devir | echad | melekh | Geder
-echad
+melekh | Devir | echad | melekh | Geder | echad
 
 12:14
 melekh | Charemah | echad | melekh | Arad
@@ -101,12 +99,10 @@ melekh | Madon | echad | melekh | Chatzor
 echad
 
 12:20
-melekh | Shimron | Mer'on | echad | melekh | Akhshaf
-echad
+melekh | Shimron | Mer'on | echad | melekh | Akhshaf | echad
 
 12:21
-melekh | Ta'nakh | echad | melekh | Megido
-echad
+melekh | Ta'nakh | echad | melekh | Megido | echad
 
 12:22
 melekh | Kedesh | echad | melekh | Yakeno'am | Lakarmel
@@ -118,5 +114,4 @@ echad | melekh | Goyim | Legilgal
 echad
 
 12:24
-melekh | Tirtzah
-echad | kol | melakhim | sheloshim | ve'echad
+melekh | Tirtzah | echad | kol | melakhim | sheloshim | ve'echad

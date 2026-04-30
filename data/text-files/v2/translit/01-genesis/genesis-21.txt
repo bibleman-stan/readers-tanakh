@@ -10,14 +10,11 @@ asher | diber | oto
 elohim
 
 21:3
-vaiyikra | Avraham | et | shem | beno | Hanolad | lo | asher | yaldah | lo | Sarah
-Yitzchak
+vaiyikra | Avraham | et | shem | beno | Hanolad | lo | asher | yaldah | lo | Sarah | Yitzchak
 
 21:4
-vaiyamol | Avraham | et | Yitzchak | beno
-ben | shemonat | yamim
-ka'asher | tzivah | oto
-elohim
+vaiyamol | Avraham | et | Yitzchak | beno | ben | shemonat | yamim
+ka'asher | tzivah | oto | elohim
 
 21:5
 Ve'avraham
@@ -26,14 +23,10 @@ et | Yitzchak | beno
 
 21:6
 vatomer | Sarah
-tzechok | asah | li
-elohim
-kol | hashomea | yitzchak | li
+tzechok | asah | li | elohim | kol | hashomea | yitzchak | li
 
 21:7
-vatomer | mi | milel | Le'avraham
-heinikah | vanim
-Sarah
+vatomer | mi | milel | Le'avraham | heinikah | vanim | Sarah
 ki | yaladti | ven | lizkunav
 
 21:8
@@ -58,14 +51,11 @@ vaiyomer | elohim | el | Avraham | al | yera | be'eineikha | al | hana'ar
 ve'al | amatekha
 kol | asher | tomar | eleikha | Sarah
 shema | bekolah
-ki | Veyitzchak | yikare | lekha
-zara
+ki | Veyitzchak | yikare | lekha | zara
 
 21:13
 vegam | et | ben | ha'amah
-legoy | asimenu
-ki | zar'akha
-hu
+legoy | asimenu | ki | zar'akha | hu
 
 21:14
 vaiyashkem | Avraham | baboker | vaiyikach | lechem | vechemat | mayim | vaiyiten | el | Hagor | sam | al | shikhmah | ve'et | haiyeled
@@ -152,16 +142,13 @@ mah | henah | sheva | kevasot | ha'eleh | asher | hitzavta
 levadanah
 
 21:30
-vaiyomer
-ki | et | sheva | kevasot
-tikach | miyadi | ba'avur | tihyeh | li | le'edah
-ki | chafarti
+vaiyomer | ki | et | sheva | kevasot
+tikach | miyadi | ba'avur | tihyeh | li | le'edah | ki | chafarti
 et | habe'er | hazot
 
 21:31
 al | ken | kara | lamakom | hahu | Be'er | Shava
-ki | sham | Nishbe'u
-sheneihem
+ki | sham | Nishbe'u | sheneihem
 
 21:32
 vaiyikhretu | verit
@@ -173,5 +160,4 @@ vaiyita | eshel
 Biv'er | Shava | vaiyikra | sham | beshem | Yahweh | el | olam
 
 21:34
-vaiyagor | Avraham | be'eretz | pelishtim
-yamim | rabim
+vaiyagor | Avraham | be'eretz | pelishtim | yamim | rabim

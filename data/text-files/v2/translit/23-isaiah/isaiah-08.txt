@@ -1,9 +1,6 @@
 8:1
-vaiyomer | Yahweh | elai | kach | lekha
-gilayon | gadol
-ukheto | alav | becheret | enoosh
-lemaher | shalal
-chash | baz
+vaiyomer | Yahweh | elai | kach | lekha | gilayon | gadol
+ukheto | alav | becheret | enoosh | lemaher | shalal | chash | baz
 
 8:2
 ve'a'idah | li
@@ -54,8 +51,8 @@ vachotu
 
 8:10
 utzu | etzah | vetufar
-daberu | davar | velo | yakum
-ki | imanu | el
+daberu | davar
+velo | yakum | ki | imanu | el
 
 8:11
 ki | khoh | amar | Yahweh | elai | kechezkat | haiyad
@@ -87,8 +84,7 @@ venokshu
 venilkadu
 
 8:16
-tzor | te'udah
-chatom | torah | belimudai
+tzor | te'udah | chatom | torah | belimudai
 
 8:17
 vechikiti | Layahweh

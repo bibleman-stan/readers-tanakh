@@ -5,8 +5,7 @@ vayhi | devar | Yahweh | elai | lemor
 ben | adam | emor | lingid | Tzor | koh | amar | Adonai | Yahweh | ya'an | gavah | libekha | vatomer | el | ani
 moshav | elohim | yashavti
 belev | yamim | ve'atah | adam | velo | el
-vatiten | libekha
-kelev | elohim
+vatiten | libekha | kelev | elohim
 
 28:3
 hineh | chakham | atah | Midani'el
@@ -24,8 +23,7 @@ hirbita | cheilekha
 vaiyigbah | levavekha | becheilekha
 
 28:6
-lakhen | koh | amar | Adonai | Yahweh
-ya'an | titekha | et | levavekha
+lakhen | koh | amar | Adonai | Yahweh | ya'an | titekha | et | levavekha
 kelev | elohim
 
 28:7
@@ -41,8 +39,7 @@ lashachat | yoridukha
 vamatah | memotei | chalal | belev | yamim
 
 28:9
-he'amor | tomar | elohim | ani | lifnei | horegekha
-ve'atah | adam
+he'amor | tomar | elohim | ani | lifnei | horegekha | ve'atah | adam
 velo | el | beyad | mechaleikha
 
 28:10
@@ -69,8 +66,7 @@ beyom | hibara'akha | konanu
 28:14
 at | keruv | mishach | hasokhekh
 unetatikha | behar | kodesh | elohim | hayita
-betokh | avnei | esh
-hithalakheta
+betokh | avnei | esh | hithalakheta
 
 28:15
 tamim | atah | bidrakheikha | miyom | hibare'akh | ad | Nimtza | avlatah
@@ -89,8 +85,7 @@ lera'avah | vakh
 28:18
 mero | avoneikha | be'evel | rekhulatekha
 chilalta | mikdasheicha | va'otzi | esh | mitokhkha | hi | akhalatkha
-va'etenkha | le'efer | al | ha'aretz | le'einei
-kol | ro'eikha
+va'etenkha | le'efer | al | ha'aretz | le'einei | kol | ro'eikha
 
 28:19
 kol | yod'eikha | ba'amim
@@ -106,8 +101,7 @@ vehinave | aleiha
 
 28:22
 ve'amarta | koh | amar | Adonai | Yahweh
-hini | alayikh | Tzidon | venikhbadti
-betokhekh
+hini | alayikh | Tzidon | venikhbadti | betokhekh
 veyade'u | ki | ani | Yahweh | ba'asoti | vah | shefatim
 venikdashti | vah
 
@@ -121,8 +115,7 @@ velo | yihyeh | od | leveit | Yisra'el | silon | mam'ir | vekotz | makh'iv
 mikol | sevivotam
 hashatim
 otam
-veyade'u
-ki | ani | Adonai | Yahweh
+veyade'u | ki | ani | Adonai | Yahweh
 
 28:25
 koh | amar | Adonai | Yahweh
@@ -135,5 +128,4 @@ veyashevu | aleiha | lavetach
 uvanu | vatim | venate'u | kheramim
 veyashevu | lavetach
 ba'asoti | shefatim | bekhol | hashatim | otam | misevivotam
-veyade'u
-ki | ani | Yahweh | eloheihem
+veyade'u | ki | ani | Yahweh | eloheihem

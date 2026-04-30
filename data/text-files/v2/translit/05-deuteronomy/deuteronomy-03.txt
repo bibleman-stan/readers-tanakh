@@ -1,7 +1,5 @@
 3:1
-vanefen | vana'al
-derekh
-Habashan
+vanefen | vana'al | derekh | Habashan
 vaiyetze | Og | melekh | Habashan | likratenu | hu
 vekhol | amo | lamilchamah | Edre'i
 
@@ -13,8 +11,7 @@ asher | yoshev | Becheshbon
 
 3:3
 vaiyiten | Yahweh | eloheinu | beyadenu | gam | et | Og | melekh | Habashan | ve'et | kol | amo
-vanakehu | ad | bilti | hish'ir | lo
-sarid
+vanakehu | ad | bilti | hish'ir | lo | sarid
 
 3:4
 vanilkod | et | kol | arav | ba'et | hahiv
@@ -40,22 +37,17 @@ vekhol | habehemah | ushelal | he'arim | bazonu | lanu
 3:8
 vanikach | ba'et | hahiv | et | ha'aretz
 miyad | shenei | malkhei | ha'emori | asher | be'ever | Haiyarden
-minachal | Arnon
-ad | har | Chermon
+minachal | Arnon | ad | har | Chermon
 
 3:9
-tzidonim | yikre'u | Lechermon
-Siryon
-veha'emori
-yikre'u | lo
-Senir
+tzidonim | yikre'u | Lechermon | Siryon
+veha'emori | yikre'u | lo | Senir
 
 3:10
 kol | arei | hamishor
 vekhol | Hagil'ad
 vekhol | Habashan | ad | Salkhah
-Ve'edre'i
-arei | mamlekhet | Og | Babashan
+Ve'edre'i | arei | mamlekhet | Og | Babashan
 
 3:11
 ki | rak | Og | melekh | Habashan | Nish'ar | miyeter | harefa'im
@@ -71,10 +63,8 @@ natati | laru'uveni | velagadi
 
 3:13
 veyeter | Hagil'ad | vekhol | Habashan | mamlekhet | Og
-natati | lachatzi
-shevet | hamnasheh
-kol | chevel | Ha'argo | lekhol | Habashan | hahu | yikare
-eretz | refa'im
+natati | lachatzi | shevet | hamnasheh
+kol | chevel | Ha'argo | lekhol | Habashan | hahu | yikare | eretz | refa'im
 
 3:14
 Ya'ir | ben | Menasheh | lakach | et | kol | chevel | Argo | ad | gevul | hageshuri
@@ -104,8 +94,7 @@ chalutzim | ta'avru | lifnei | acheikhem | benei | Yisra'el | kol | benei | chay
 
 3:19
 rak | nesheikhem | vetapekhem | umiknekhem
-yada'ti
-ki | mikneh | rav | lakhem
+yada'ti | ki | mikneh | rav | lakhem
 yeshevu | be'areikhem | asher | natati | lakhem
 
 3:20
@@ -120,9 +109,7 @@ eineikha | haro'ot | et | kol | asher | asah | Yahweh | eloheikhem | lishnei | h
 ken | ya'aseh | Yahweh | lekhol | hamamlakhot | asher | atah | over | shamah
 
 3:22
-lo | tira'um | ki | Yahweh | eloheikhem
-hu
-hanilcham | lakhem
+lo | tira'um | ki | Yahweh | eloheikhem | hu | hanilcham | lakhem
 
 3:23
 va'etchanan | el | Yahweh | ba'et | hahiv | lemor

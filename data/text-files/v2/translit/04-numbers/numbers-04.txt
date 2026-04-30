@@ -111,15 +111,13 @@ vametu
 vaydaber | Yahweh | el | Mosheh | lemor
 
 4:22
-naso | et | rosh | benei | Gereshon
-gam | hem
+naso | et | rosh | benei | Gereshon | gam | hem
 leveit | avotam | lemishpechotam
 
 4:23
 miben | sheloshim | shanah
 vama'lah | ad | ben | chamishim | shanah
-tifkod | otam
-kol | haba | litzvo | tzava
+tifkod | otam | kol | haba | litzvo | tzava
 la'avod | avodah | be'ohel | mo'ed
 
 4:24
@@ -148,8 +146,7 @@ et | kol | masa'am
 4:28
 zot | avodat | mishpechot | benei | hagereshuni | be'ohel | mo'ed
 umishmartam
-beyad | Itamar
-ben | Aharon | hakohen
+beyad | Itamar | ben | Aharon | hakohen
 
 4:29
 benei | Merari | lemishpechotam | leveit | avotam | tifkod | otam
@@ -158,9 +155,7 @@ benei | Merari | lemishpechotam | leveit | avotam | tifkod | otam
 miben | sheloshim | shanah
 vama'lah
 ve'ad | ben | chamishim | shanah
-tifkedem
-kol | haba | latzava | la'avod
-et | avodat | ohel | mo'ed
+tifkedem | kol | haba | latzava | la'avod | et | avodat | ohel | mo'ed
 
 4:31
 vezot | mishmeret | masa'am | lekhol | avodatam | be'ohel | mo'ed | karshei | hamishkan
@@ -175,8 +170,7 @@ uveshemot | tifkedu | et | kelei | mishmeret | masa'am
 
 4:33
 zot | avodat | mishpechot | benei | Merari | lekhol | avodatam
-be'ohel | mo'ed | beyad | Itamar
-ben | Aharon | hakohen
+be'ohel | mo'ed | beyad | Itamar | ben | Aharon | hakohen
 
 4:34
 vaiyifkod | Mosheh | Ve'aharon | unesi'ei | ha'edah | et | benei | hakehati
@@ -249,8 +243,7 @@ ve'ad | ben | chamishim | shanah
 kol | haba | la'avod | avodat | avodah | va'avodat | masa | be'ohel | mo'ed
 
 4:48
-vaiyihyu
-pekudeihem
+vaiyihyu | pekudeihem
 shemonat | alafim | vachamesh | me'ot | ushemonim
 
 4:49

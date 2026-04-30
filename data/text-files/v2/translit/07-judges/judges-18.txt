@@ -7,11 +7,9 @@ ki | lo | nafelah | lo | ad | haiyom | hahu | betokh | shivtei | Yisra'el | bena
 vaiyishlechu | venei | Dan | mimishpachtam | chamishah | anashim | miktzotam | anashim | benei | chayil | Mitzare'ah
 Ume'eshta'ol | leragel | et | ha'aretz
 ulechakerah
-vaiyomeru | alehem | lekhu
-chikru | et | ha'aretz
+vaiyomeru | alehem | lekhu | chikru | et | ha'aretz
 vaiyavo'u | har | Efrayim | ad | beit | Mikhah
-vaiyalinu
-sham
+vaiyalinu | sham
 
 18:3
 hemah | im | beit | Mikhah | vehemah | hikiru
@@ -30,13 +28,10 @@ va'ehi | lo | lekhohen
 18:5
 vaiyomeru | lo
 she'al | na | velohim
-venede'ah
-hatatzliach | darkenu | asher | anachnu
-holekhim | aleiha
+venede'ah | hatatzliach | darkenu | asher | anachnu | holekhim | aleiha
 
 18:6
-vaiyomer | lahem | hakohen | lekhu | leshalom
-nokhach | Yahweh
+vaiyomer | lahem | hakohen | lekhu | leshalom | nokhach | Yahweh
 darkekhem | asher | telekhu | vah
 
 18:7
@@ -107,8 +102,7 @@ kelei | hamilchamah
 18:18
 ve'eleh | ba'u | beit | Mikhah
 vaiyikchu | et | pesel | ha'efod | ve'et | haterafim | ve'et | hamasekhah
-vaiyomer | aleihem | hakohen | mah | atem
-osim
+vaiyomer | aleihem | hakohen | mah | atem | osim
 
 18:19
 vaiyomeru | lo | hacharesh | sim | yadekha | al | pikha

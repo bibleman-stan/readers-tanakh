@@ -8,10 +8,8 @@ zot | ha'aretz | asher | tipol | lakhem | benachalah
 eretz | Kena'an | ligvuloteiha
 
 34:3
-vehayah | lakhem | pe'at | negev | mimidbar | Tzin
-al | yedei | Edom
-vehayah | lakhem | gevul | negev | miktzeh | yom | hamelach
-kedemah
+vehayah | lakhem | pe'at | negev | mimidbar | Tzin | al | yedei | Edom
+vehayah | lakhem | gevul | negev | miktzeh | yom | hamelach | kedemah
 
 34:4
 venasav | lakhem | hagevul | minegev | Lema'aleh | Akrabim | ve'avar | Tzinah
@@ -22,8 +20,7 @@ ve'avar | Atzmonah
 34:5
 venasav | hagevul | Me'atzmon
 nachlah | Mitzrayim
-vehayu | totz'otav
-haiyamah
+vehayu | totz'otav | haiyamah
 
 34:6
 ugevul | yam
@@ -35,20 +32,15 @@ gevul | yam
 34:7
 vezeh | yihyeh | lakhem
 gevul | tzafon | min | haiyam | hagadol
-teta'u | lakhem
-Hor | hahar
+teta'u | lakhem | Hor | hahar
 
 34:8
 Mehor | hahar | teta'u
-levo | Chamat | vehayu | totz'ot | hagevul
-Tzedadah
+levo | Chamat | vehayu | totz'ot | hagevul | Tzedadah
 
 34:9
 veyatza | hagevul | Zifronah
-vehayu | totz'otav
-Chatzar | Einan
-zeh | yihyeh | lakhem
-gevul | tzafon
+vehayu | totz'otav | Chatzar | Einan | zeh | yihyeh | lakhem | gevul | tzafon
 
 34:10
 vehit'avitem | lakhem
@@ -57,13 +49,11 @@ Shefamah
 
 34:11
 veyarad | hagevul | Mishefam | Harivlah | mikedem | La'ayin
-veyarad | hagevul | umachah | al | ketef | yom | Kineret
-kedemah
+veyarad | hagevul | umachah | al | ketef | yom | Kineret | kedemah
 
 34:12
 veyarad | hagevul | Haiyardenah
-vehayu | totz'otav
-yam | hamelach
+vehayu | totz'otav | yam | hamelach
 zot | tihyeh | lakhem | ha'aretz | ligvuloteiha | saviv
 
 34:13
@@ -80,8 +70,7 @@ vachatzi | mateh | Menasheh | lakechu | nachalatam
 34:15
 shenei | hamatot
 vachatzi | hamateh
-lakechu | nachalatam | me'ever | Leyarden | Yerecho
-kedemah | mizrachah
+lakechu | nachalatam | me'ever | Leyarden | Yerecho | kedemah | mizrachah
 
 34:16
 vaydaber | Yahweh | el | Mosheh | lemor
@@ -98,11 +87,7 @@ venasi | echad | nasi | echad | mimateh
 tikchu | linchol | et | ha'aretz
 
 34:19
-ve'eleh
-shemot | ha'anashim
-lemateh | Yehudah
-Kalev
-ben | Yefuneh
+ve'eleh | shemot | ha'anashim | lemateh | Yehudah | Kalev | ben | Yefuneh
 
 34:20
 ulemateh | benei | Shim'on
@@ -110,36 +95,28 @@ Shemu'el
 ben | Amihud
 
 34:21
-lemateh | Vinyamin | Elidad
-ben | Kislon
+lemateh | Vinyamin | Elidad | ben | Kislon
 
 34:22
-ulemateh | venei | Dan | nasi | Buki
-ben | Yageli
+ulemateh | venei | Dan | nasi | Buki | ben | Yageli
 
 34:23
-livnei | Yosef | lemateh | venei | Menasheh | nasi | Chani'el
-ben | Efod
+livnei | Yosef | lemateh | venei | Menasheh | nasi | Chani'el | ben | Efod
 
 34:24
-ulemateh | venei | Efrayim | nasi | Kemu'el
-ben | Shiftan
+ulemateh | venei | Efrayim | nasi | Kemu'el | ben | Shiftan
 
 34:25
-ulemateh | venei | Zevulun | nasi | Elitzafan
-ben | Parnakh
+ulemateh | venei | Zevulun | nasi | Elitzafan | ben | Parnakh
 
 34:26
-ulemateh | venei | Yisoshkhar | nasi | Palti'el
-ben | Azan
+ulemateh | venei | Yisoshkhar | nasi | Palti'el | ben | Azan
 
 34:27
-ulemateh | venei | Asher | nasi | Achihud
-ben | Shelomi
+ulemateh | venei | Asher | nasi | Achihud | ben | Shelomi
 
 34:28
-ulemateh | venei | Naftali | nasi | Pedah'el
-ben | Amihud
+ulemateh | venei | Naftali | nasi | Pedah'el | ben | Amihud
 
 34:29
 eleh | asher | tzivah | Yahweh

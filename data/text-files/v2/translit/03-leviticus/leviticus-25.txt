@@ -66,13 +66,11 @@ tihyeh | lakhem | min | hasadeh
 tokhelu | et | tevu'atah
 
 25:13
-bishnat | haiyovel | hazot | tashuvu
-ish | el | achuzato
+bishnat | haiyovel | hazot | tashuvu | ish | el | achuzato
 
 25:14
 vekhi | timkeru | mikar | la'amitekha
-o | kanoh | miyad | amitekha | al | tonu
-ish | et | achiv
+o | kanoh | miyad | amitekha | al | tonu | ish | et | achiv
 
 25:15
 bemispar | shanim | achar | haiyovel | tikneh
@@ -81,8 +79,7 @@ me'et | amitekha | bemispar | shenei | tevu'ot | yimkor | lakh
 25:16
 lefi | ro | hashanim | tarbeh | miknato
 ulefi | me'ot | hashanim | tam'it
-miknato | ki | mispar | tevu'ot
-hu | mokher | lakh
+miknato | ki | mispar | tevu'ot | hu | mokher | lakh
 
 25:17
 velo | tonu | ish | et | amito | veyareta
@@ -109,14 +106,11 @@ ve'asat | et | hatevu'ah | lishlosh | hashanim
 25:22
 uzera'tem | et | hashanah | hasheminit | va'akhaltem | min | hatevu'ah | yashan
 ad | hashanah | hateshi'it | ad | bo | tevu'atah
-tokhelu
-yashan
+tokhelu | yashan
 
 25:23
-veha'aretz | lo | timakher | litzmitut
-ki | li
-ha'aretz | ki | gerim | vetoshavim | atem
-imadi
+veha'aretz | lo | timakher | litzmitut | ki | li
+ha'aretz | ki | gerim | vetoshavim | atem | imadi
 
 25:24
 uvekhol | eretz | achuzatkhem | ge'ulah | titenu | la'aretz
@@ -127,11 +121,8 @@ me'achuzato | uva | go'alo | hakaro | elav | vega'al | et | mikar | achiv
 
 25:26
 ve'ish
-ki | lo | yihyeh | lo
-go'el
-vehisigah | yado
-umatza
-kedei | ge'ulato
+ki | lo | yihyeh | lo | go'el
+vehisigah | yado | umatza | kedei | ge'ulato
 
 25:27
 vechishav | et | shenei | mikaro
@@ -174,8 +165,7 @@ betokh | benei | Yisra'el
 
 25:34
 usedeh | migrash | areihem
-lo | yimakher
-ki | achuzat | olam | hu | lahem
+lo | yimakher | ki | achuzat | olam | hu | lahem
 
 25:35
 vekhi | yamukh | achikha
@@ -197,15 +187,13 @@ asher | hotzeti | etkhem | me'eretz | Mitzrayim
 latet | lakhem | et | eretz | Kena'an | lihyot | lakhem | lelohim
 
 25:39
-vekhi | yamukh | achikha | imakh | venimkar | lakh | lo | ta'avod | bo
-avodat | aved
+vekhi | yamukh | achikha | imakh | venimkar | lakh | lo | ta'avod | bo | avodat | aved
 
 25:40
 kesakhir | ketoshav | yihyeh | imakh | ad | shenat | haiyovel | ya'avod | imakh
 
 25:41
-veyatza | me'imakh
-hu
+veyatza | me'imakh | hu
 uvanav | imo | veshav | el | mishpachto
 ve'el | achuzat | avotav
 yashuv
@@ -274,5 +262,4 @@ uvanav | imo
 25:55
 ki | li | venei | Yisra'el | avadim
 avadai | hem
-asher | hotzeti | otam | me'eretz | Mitzrayim
-ani | Yahweh | eloheikhem
+asher | hotzeti | otam | me'eretz | Mitzrayim | ani | Yahweh | eloheikhem

@@ -22,8 +22,7 @@ mitum'atah | vatashov | el | beitah
 11:5
 vatahar
 ha'ishah | vatishlach | vataged | Ledavid
-vatomer
-harah | anokhi
+vatomer | harah | anokhi
 
 11:6
 vaiyishlach | David | el | Yo'av
@@ -38,8 +37,7 @@ velishlom
 hamilchamah
 
 11:8
-vaiyomer | David | Le'uriyah
-red | leveitekha
+vaiyomer | David | Le'uriyah | red | leveitekha
 urechatz | ragleikha
 vaiyetze | Uriyah | mibeit | hamelekh
 vatetze | acharav | mas'at | hamelekh
@@ -103,8 +101,7 @@ vaiyamot
 gam | Uriyah | hachiti
 
 11:18
-vaiyishlach
-Yo'av
+vaiyishlach | Yo'av
 vaiyaged | Ledavid | et | kol | divrei | hamilchamah
 
 11:19
@@ -126,8 +123,7 @@ met
 
 11:22
 vaiyelekh
-hamal'akh | vaiyavo | vaiyaged | Ledavid | et | kol | asher | shelacho
-Yo'av
+hamal'akh | vaiyavo | vaiyaged | Ledavid | et | kol | asher | shelacho | Yo'av
 
 11:23
 vaiyomer | hamal'okh | el | David
@@ -141,8 +137,8 @@ met
 
 11:25
 vaiyomer | David | el | hamal'akh | koh | tomar | el | Yo'av | al | yera | be'eineikha | et | hadavar | hazeh
-ki | khazoh | vekhazeh | tokhal | hecharev
-hachazek | milchamtekha | el | ha'ir | veharesah
+ki | khazoh
+vekhazeh | tokhal | hecharev | hachazek | milchamtekha | el | ha'ir | veharesah
 vechazekehu
 
 11:26

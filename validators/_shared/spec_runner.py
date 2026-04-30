@@ -202,6 +202,8 @@ def _check_morphology(tok: str, morph: str) -> bool:
         return M.is_numeral_token(tok)
     if morph == "numeral_or_unit_noun":
         return M.is_numeral_token(tok) or M.is_numeral_governed_noun(tok)
+    if morph == "bare_noun":
+        return M.is_bare_noun_token(tok)
     return False
 
 

@@ -37,8 +37,7 @@ Bayahweh | vehayah | Yahweh | mivtacho
 vehayah | ke'etz | shatul | al | mayim
 ve'al | yuval | yeshalach | sharashav
 velo | yira | ki | yavo | chom
-vehayah | alehu
-ra'anan
+vehayah | alehu | ra'anan
 uvishnat | batzoret | lo | yid'ag
 velo | yamish | me'asot | peri
 
@@ -51,8 +50,9 @@ ani | Yahweh | choker | lev | bochen | kelayot
 velatet | le'ish | kedarkov | kifri | ma'alalav
 
 17:11
-kore | dagar | velo | yalad
-oseh | osher | velo | vemishpat
+kore | dagar
+velo | yalad | oseh | osher
+velo | vemishpat
 bachatzi | yomov | ya'azvenu | uve'acharito
 yihyeh | naval
 
@@ -67,8 +67,7 @@ ki | azevu | mekor | mayim | chaiyim | et | Yahweh
 17:14
 refa'eni | Yahweh | ve'erafe
 hoshi'eni | ve'ivashe'ah
-ki | tehilati
-atah
+ki | tehilati | atah
 
 17:15
 hineh | hemah
@@ -87,8 +86,7 @@ al | tihyeh | li | limchitah | machasi | atah | beyom | ra'ah
 yevoshu | rodefai | ve'al | evoshah | ani
 yechatu | hemah
 ve'al | echatah
-ani | havi | aleihem | yom | ra'ah | umishneh | shibaron
-shaverem
+ani | havi | aleihem | yom | ra'ah | umishneh | shibaron | shaverem
 
 17:19
 koh | amar | Yahweh | elai | halokh | ve'amadta | besha'ar | benei | haam
@@ -102,8 +100,7 @@ vekhol | Yehudah
 vekhol | yoshevei | Yerushalim | haba'im | bashe'arim | ha'eleh
 
 17:21
-koh | amar | Yahweh
-hishameru | benafshoteikhem
+koh | amar | Yahweh | hishameru | benafshoteikhem
 ve'al | tis'u | masa | beyom | hashabat
 vahavetem | besha'arei | Yerushalim
 
@@ -116,8 +113,8 @@ et | avoteikhem
 17:23
 velo | shame'u | velo | hitu
 et | azenam
-vaiyakshu | et | arepam | levilti | shomea | ulevilti
-kachat | musar
+vaiyakshu | et | arepam | levilti | shomea
+ulevilti | kachat | musar
 
 17:24
 vehayah | im | shamoa | tishme'un | elai | ne'um | Yahweh

@@ -19,8 +19,7 @@ ve'el | Yafia | melekh | Lakhish
 ve'el | Devir | melekh | Eglon | lemor
 
 10:4
-alu | elai | ve'izruni | venakeh | et | Giv'on
-ki | hishlimah | et | Yehoshua | ve'et | benei | Yisra'el
+alu | elai | ve'izruni | venakeh | et | Giv'on | ki | hishlimah | et | Yehoshua | ve'et | benei | Yisra'el
 
 10:5
 vaiye'asefu | vaiya'alu | chameshet | malkhei | ha'emori | melekh | Yerushalim | melekh | Chevron | melekh | Yarmut | melekh | Lakhish | melekh | Eglon
@@ -32,8 +31,7 @@ vaiyilachamu | aleiha
 vaiyishlechu | anshei | Giv'on | el | Yehoshua | el | hamachaneh | Hagilgalah | lemor
 al | teref | yadeikha | me'avadeikha
 aleh | eleinu | meherah | vehoshi'ah | lanu | ve'azerenu
-ki | Nikbetzu | eleinu | kol | malkhei | ha'emori
-yoshevei | hahar
+ki | Nikbetzu | eleinu | kol | malkhei | ha'emori | yoshevei | hahar
 
 10:7
 vaiya'al | Yehoshua | min | Hagilgal | hu
@@ -45,8 +43,7 @@ vaiyomer | Yahweh | el | Yehoshua | al | tira | mehem | ki | veyadekha
 netatim | lo | ya'amod | ish | mehem | befaneikha
 
 10:9
-vaiyavo | aleihem | Yehoshua
-pit'om
+vaiyavo | aleihem | Yehoshua | pit'om
 kol | halaylah | alah | min | Hagilgal
 
 10:10
@@ -57,8 +54,7 @@ vaiyakem | ad | Azekah | ve'ad | Makedah
 
 10:11
 vayhi | benusam | mipenei | Yisra'el | hem | bemorad | Beit | Choron | Vayahweh | hishlikh | aleihem | avanim | gedolot | min | hashamayim | ad | Azekah
-vaiyamutu
-rabim | asher | metu | be'avnei | habarad
+vaiyamutu | rabim | asher | metu | be'avnei | habarad
 me'asher | haregu | benei | Yisra'el | becharev
 
 10:12
@@ -85,8 +81,7 @@ vekhol | Yisra'el | imo | el | hamachaneh
 Hagilgalah
 
 10:16
-vaiyanusu
-chameshet | hamelakhim | ha'eleh
+vaiyanusu | chameshet | hamelakhim | ha'eleh
 vaiyechave'u | vame'arah | Bemakedah
 
 10:17
@@ -116,9 +111,7 @@ vaiyashuvu | khol | ha'am | el | hamachaneh | el | Yehoshua | Makedah | beshalom
 lo | charatz | livnei | Yisra'el | le'ish | et | leshono
 
 10:22
-vaiyomer | Yehoshua
-pitchu
-et | pi | hame'arah
+vaiyomer | Yehoshua | pitchu | et | pi | hame'arah
 vehotzi'u | elai | et | chameshet | hamelakhim | ha'eleh | min | hame'arah
 
 10:23
@@ -150,8 +143,7 @@ vaiyihyu | teluyim | al | ha'etzim | ad | ha'arev
 10:27
 vayhi | le'et | bo | hashemesh | tzivah | Yehoshua | vaiyoridum | me'al | ha'etzim
 vaiyashlikhum | el | hame'arah | asher | Nechbe'u | sham
-vaiyasimu | avanim | gedolot | al | pi | hame'arah | ad | etzem
-haiyom | hazeh
+vaiyasimu | avanim | gedolot | al | pi | hame'arah | ad | etzem | haiyom | hazeh
 
 10:28
 ve'et | Makedah | lakhad | Yehoshua | baiyom | hahu | vaiyakeha | lefi | cherev | ve'et | malkah
@@ -179,13 +171,11 @@ vaiyichan | aleiha | vaiyilachem | bah
 
 10:32
 vaiyiten | Yahweh | et | Lakhish | beyad | Yisra'el | vaiyilkedah | baiyom | hasheni
-vaiyakeha | lefi | cherev | ve'et | kol | hanefesh
-asher | bah | kekhol | asher | asah | Lelivnah
+vaiyakeha | lefi | cherev | ve'et | kol | hanefesh | asher | bah | kekhol | asher | asah | Lelivnah
 
 10:33
 az | alah | Horam | melekh | Gezer | la'zor | et | Lakhish
-vaiyakehu | Yehoshua | ve'et | amo | ad | bilti | hish'ir | lo
-sarid
+vaiyakehu | Yehoshua | ve'et | amo | ad | bilti | hish'ir | lo | sarid
 
 10:34
 vaiya'avor | Yehoshua
@@ -204,8 +194,7 @@ Chevronah | vaiyilachamu | aleiha
 
 10:37
 vaiyilkeduha | vaiyakuha | lefi | cherev | ve'et | malkah | ve'et | kol | areiha | ve'et | kol | hanefesh | asher | bah | lo | hish'ir | sarid
-kekhol | asher | asah | Le'eglon | vaiyacharem | otah | ve'et | kol | hanefesh
-asher | bah
+kekhol | asher | asah | Le'eglon | vaiyacharem | otah | ve'et | kol | hanefesh | asher | bah
 
 10:38
 vaiyashov | Yehoshua | vekhol | Yisra'el | imo | Devirah
@@ -213,8 +202,7 @@ vaiyilachem | aleiha
 
 10:39
 vaiyilkedah | ve'et | malkah | ve'et | kol | areiha | vaiyakum | lefi | cherev
-vaiyacharimu | et | kol | nefesh | asher | bah | lo | hish'ir
-sarid
+vaiyacharimu | et | kol | nefesh | asher | bah | lo | hish'ir | sarid
 ka'asher | asah | Lechevron | ken | asah | Lidvirah
 ulemalkah
 vekha'asher | asah | Lelivnah
@@ -227,8 +215,7 @@ vehashefelah
 veha'ashedot | ve'et | kol | malkheihem | lo | hish'ir
 sarid
 ve'et | kol | haneshamah | hecherim
-ka'asher | tzivah
-Yahweh | elohei | Yisra'el
+ka'asher | tzivah | Yahweh | elohei | Yisra'el
 
 10:41
 vaiyakem | Yehoshua | Mikadesh | Barnea

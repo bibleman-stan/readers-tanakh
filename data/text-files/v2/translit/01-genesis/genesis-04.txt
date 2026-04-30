@@ -1,9 +1,7 @@
 4:1
 veha'adam | yada | et | Chavah | ishto
 vatahar | vateled | et | Kayin
-vatomer
-kaniti | ish
-et | Yahweh
+vatomer | kaniti | ish | et | Yahweh
 
 4:2
 vatosef | laledet | et | achiv | et | Havel
@@ -22,8 +20,7 @@ ve'el | minchato
 4:5
 ve'el | Kayin
 ve'el | minchato | lo | sha'ah
-vaiyichar | Lekayin | me'od | vaiyipelu
-panav
+vaiyichar | Lekayin | me'od | vaiyipelu | panav
 
 4:6
 vaiyomer | Yahweh | el | Kayin
@@ -33,26 +30,21 @@ velamah | nafelu | faneikha
 4:7
 halo | im | teitiv | se'et
 ve'im | lo | teitiv | lapetach
-chatat | rovetz | ve'eleikha | teshukato
-ve'atah
+chatat | rovetz | ve'eleikha | teshukato | ve'atah
 timshol | bo
 
 4:8
-vaiyomer | Kayin
-el | Hevel | achiv
+vaiyomer | Kayin | el | Hevel | achiv
 nelekhah | hasadeh | vayhi | bihyotam | basadeh
 vaiyakom | Kayin | el | Hevel | achiv
 vaiyahargehu
 
 4:9
-vaiyomer | Yahweh | el | Kayin
-ei
-Hevel | achikha
+vaiyomer | Yahweh | el | Kayin | ei | Hevel | achikha
 vaiyomer | lo | yada'ti | hashomer | achi | anokhi
 
 4:10
-vaiyomer | meh | asita
-kol | demei | achikha
+vaiyomer | meh | asita | kol | demei | achikha
 tzo'akim | elai | min | ha'adamah
 
 4:11
@@ -65,8 +57,7 @@ na | vanad
 tihyeh | va'aretz
 
 4:13
-vaiyomer | Kayin | el | Yahweh
-gadol | avoni | mineso
+vaiyomer | Kayin | el | Yahweh | gadol | avoni | mineso
 
 4:14
 hen | gerashta | oti | haiyom | me'al | penei | ha'adamah | umipaneikha
@@ -76,12 +67,8 @@ vehayah | khol | motze'i
 yahargeni
 
 4:15
-vaiyomer | lo | Yahweh | lakhen | kol | horeg | Kayin
-shiv'atayim
-yukam
-vaiyasem | Yahweh | Lekayin | ot
-levilti | hakot | oto
-kol | motze'o
+vaiyomer | lo | Yahweh | lakhen | kol | horeg | Kayin | shiv'atayim | yukam
+vaiyasem | Yahweh | Lekayin | ot | levilti | hakot | oto | kol | motze'o
 
 4:16
 vaiyetze | Kayin
@@ -101,21 +88,17 @@ Umechiya'el | yalad | et | Metusha'el | Umetusha'el
 yalad | et | Lamekh
 
 4:19
-vaiyikach | lo | Lemekh
-shetei | nashim
-shem | ha'achat | Adah
+vaiyikach | lo | Lemekh | shetei | nashim | shem | ha'achat | Adah
 veshem | hashenit
 Tzilah
 
 4:20
 vateled | Adah | et | Yaval
-hu | hayah
-avi | yoshev | ohel | umikneh
+hu | hayah | avi | yoshev | ohel | umikneh
 
 4:21
 veshem | achiv | Yuval
-hu | hayah
-avi | kol | tofes | kinor
+hu | hayah | avi | kol | tofes | kinor
 ve'ugav
 
 4:22
@@ -139,13 +122,11 @@ shiv'im | veshiv'ah
 4:25
 vaiyeda | Adam | od | et | ishto
 vateled | ben
-vatikra | et | shemo
-Shet
+vatikra | et | shemo | Shet
 ki | shat | li | elohim | zera | acher | tachat | Hevel
 ki | harago
 Kayin
 
 4:26
-Ulshet | gam | hu | yulad | ben | vaiyikra | et | shemo
-Enoosh
+Ulshet | gam | hu | yulad | ben | vaiyikra | et | shemo | Enoosh
 az | huchal | likro | beshem | Yahweh

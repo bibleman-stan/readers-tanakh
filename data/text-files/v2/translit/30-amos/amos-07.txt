@@ -1,7 +1,6 @@
 7:1
 koh | hir'ani | Adonai | Yahweh
-vehineh | yotzer | goyai
-bitchilat | alot | halakesh
+vehineh | yotzer | goyai | bitchilat | alot | halakesh
 vehineh | lekesh
 achar
 gizei | hamelekh
@@ -9,10 +8,7 @@ gizei | hamelekh
 7:2
 vehayah | im | kilah | le'ekhol | et | esev | ha'aretz
 va'omar | Adonai | Yahweh | selach | na
-mi | yakum
-Ya'ako
-ki | katon
-hu
+mi | yakum | Ya'ako | ki | katon | hu
 
 7:3
 Nicham | Yahweh | al | zot
@@ -28,10 +24,7 @@ ve'akhelah | et | hachelek
 
 7:5
 va'omar | Adonai | Yahweh | chadal | na
-mi | yakum
-Ya'ako
-ki | katon
-hu
+mi | yakum | Ya'ako | ki | katon | hu
 
 7:6
 Nicham | Yahweh | al | zot
@@ -45,8 +38,7 @@ anakh
 
 7:8
 vaiyomer | Yahweh | elai | mah | atah | ro'eh | Amos
-va'omar
-anakh
+va'omar | anakh
 vaiyomer | Adonai | hini | sam | anokh | bekerev | ami | Yisra'el
 lo | osif | od
 avor | lo

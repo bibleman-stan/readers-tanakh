@@ -1,6 +1,5 @@
 11:1
-vayhi | ha'am | kemit'onenim
-ra | be'azenei | Yahweh
+vayhi | ha'am | kemit'onenim | ra | be'azenei | Yahweh
 vaiyishma | Yahweh | vaiyichar | apo
 vativ'ar | bam | esh | Yahweh
 vatokhal | biktzeh | hamachaneh
@@ -8,14 +7,11 @@ vatokhal | biktzeh | hamachaneh
 11:2
 vaiyitz'ak | ha'am | el | Mosheh
 vaiyitpalel | Mosheh | el | Yahweh
-vatishka
-ha'esh
+vatishka | ha'esh
 
 11:3
 vaiyikra | shem | hamakom | hahu
-Tav'erah
-ki | va'arah | vam
-esh | Yahweh
+Tav'erah | ki | va'arah | vam | esh | Yahweh
 
 11:4
 vehasafsuf | asher | bekirbo
@@ -55,8 +51,7 @@ uveredet | hatal | al | hamachaneh | layelah
 yered | haman | alav
 
 11:10
-vaiyishma | Mosheh | et | ha'am | bokheh | lemishpechotav
-ish
+vaiyishma | Mosheh | et | ha'am | bokheh | lemishpechotav | ish
 lefetach | oholo
 vaiyichar | af | Yahweh | me'od
 uve'einei | Mosheh
@@ -92,8 +87,7 @@ ve'al | er'eh | bera'ati
 
 11:16
 vaiyomer | Yahweh | el | Mosheh | esfah | li | shiv'im | ish | miziknei | Yisra'el
-asher | yada'ta
-ki | hem | ziknei | ha'am | veshoterav
+asher | yada'ta | ki | hem | ziknei | ha'am | veshoterav
 velakachta | otam | el | ohel | mo'ed | vehityatzevu | sham | imakh
 
 11:17
@@ -123,8 +117,7 @@ vativku | lefanav | lemor
 lamah | zeh | yatzanu | Mimitzrayim
 
 11:21
-vaiyomer | Mosheh
-shesh | me'ot | elef | ragli
+vaiyomer | Mosheh | shesh | me'ot | elef | ragli
 ha'am | asher | anokhi | bekirbo
 ve'atah | amarta | basar | eten | lahem
 ve'akhelu | chodesh | yamim
@@ -143,8 +136,7 @@ atah | tir'eh | hayikrecha | devari | im | lo
 11:24
 vaiyetze | Mosheh | vaydaber | el | ha'am | et | divrei | Yahweh
 vaiye'esof | shiv'im | ish | miziknei | ha'am
-vaiya'amed | otam
-sevivot | ha'ohel
+vaiya'amed | otam | sevivot | ha'ohel
 
 11:25
 vaiyered | Yahweh | be'anan | vaydaber | elav | vaiyatzel | min | haruach | asher | alav
@@ -167,19 +159,15 @@ Umeidad | mitnabe'im | bamachaneh
 
 11:28
 vaiya'an | Yehoshua | bin | Nun | mesharet | Mosheh | mibechurav
-vaiyomar
-adoni | Mosheh
-kela'em
+vaiyomar | adoni | Mosheh | kela'em
 
 11:29
-vaiyomer | lo | Mosheh
-hamkane | atah | li
+vaiyomer | lo | Mosheh | hamkane | atah | li
 umi | yiten | kol | am | Yahweh | nevi'im
 ki | yiten | Yahweh | et | rucho | aleihem
 
 11:30
-vaiye'asef | Mosheh | el | hamachaneh
-hu
+vaiye'asef | Mosheh | el | hamachaneh | hu
 veziknei | Yisra'el
 
 11:31
@@ -204,9 +192,7 @@ vaiyakh | Yahweh | ba'am | makah
 rabah | me'od
 
 11:34
-vaiyikra | et | shem | hamakom | hahu
-Kivrot | Hata'avah
-ki | sham | kaveru
+vaiyikra | et | shem | hamakom | hahu | Kivrot | Hata'avah | ki | sham | kaveru
 et | ha'am | hamit'avim
 
 11:35

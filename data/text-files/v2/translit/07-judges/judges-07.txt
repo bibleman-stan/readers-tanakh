@@ -4,8 +4,7 @@ vaiyachanu | al | Ein | Charod
 umachaneh | Midyan | hayah | lo | mitzafon | migiv'at | Hamoreh | ba'emek
 
 7:2
-vaiyomer | Yahweh | el | Gid'on
-rav | ha'am | asher | itakh
+vaiyomer | Yahweh | el | Gid'on | rav | ha'am | asher | itakh
 mititi | et | Midyan | beyadam
 pen | yitpa'er | alai | Yisra'el | lemor
 yadi
@@ -21,8 +20,7 @@ Nish'aru
 
 7:4
 vaiyomer | Yahweh | el | Gid'on | od | ha'am | rav | hored | otam | el | hamayim
-ve'etzrefenu | lekha
-sham
+ve'etzrefenu | lekha | sham
 vehayah | asher | omar | eleikha | zeh | yelekh | itakh | hu | yelekh | itakh
 vekhol | asher | omar | eleikha | zeh | lo | yelekh | imakh | hu
 lo | yelekh
@@ -33,16 +31,14 @@ vaiyomer | Yahweh | el | Gid'on | kol | asher | yalok | bilshono | min | hamayim
 vekhol | asher | yikhra | al | birkav | lishtot
 
 7:6
-vayhi | mispar | hamalakim | beyadam | el | pihem
-shelosh | me'ot | ish
+vayhi | mispar | hamalakim | beyadam | el | pihem | shelosh | me'ot | ish
 vekhol | yeter | ha'am | kare'u | al | birkheihem
 lishtot | mayim
 
 7:7
 vaiyomer | Yahweh | el | Gid'on | bishlosh | me'ot | ha'ish | hamalakim | oshia | etkhem
 venatati | et | Midyan | beyadekha
-vekhol | ha'am | yelekhu
-ish | limkomo
+vekhol | ha'am | yelekhu | ish | limkomo
 
 7:8
 vaiyikchu | et | tzedah | ha'am | beyadam | ve'et | shofroteihem | ve'et | kol | ish | Yisra'el | shilach | ish | le'ohalav
@@ -52,9 +48,7 @@ hayah | lo | mitachat | ba'emek
 
 7:9
 vayhi | balaylah | hahu
-vaiyomer | elav | Yahweh
-kum
-red | bamachaneh
+vaiyomer | elav | Yahweh | kum | red | bamachaneh
 ki | netativ | beyadekha
 
 7:10
@@ -64,8 +58,7 @@ red | atah | Ufurah | na'arkha | el | hamachaneh
 7:11
 veshama'ta | mah | yedaberu | ve'achar | techezaknah | yadeikha
 veyaradta | bamachaneh
-vaiyered | hu | Ufurah | na'aro
-el | ketzeh | hachamushim | asher | bamachaneh
+vaiyered | hu | Ufurah | na'aro | el | ketzeh | hachamushim | asher | bamachaneh
 
 7:12
 Umidyan | Va'amalek
@@ -93,8 +86,7 @@ vaiyomer | kumu
 ki | natan | Yahweh | beyedkhem | et | machaneh | Midyan
 
 7:16
-vaiyachatz | et | shelosh | me'ot | ha'ish
-sheloshah | rashim
+vaiyachatz | et | shelosh | me'ot | ha'ish | sheloshah | rashim
 vaiyiten | shofarot | beyad | kulam
 vekhadim | rekim
 velapidim | betokh | hakadim
@@ -107,8 +99,7 @@ vehayah | kha'asher | e'eseh
 ken | ta'asun
 
 7:18
-vetaka'ti | bashofar
-anokhi
+vetaka'ti | bashofar | anokhi
 vekhol | asher | iti
 uteka'tem | bashofarot | gam | atem | sevivot | kol | hamachaneh
 va'amartem | Layahweh | Ulegid'on
@@ -123,8 +114,8 @@ venafotz | hakadim | asher | beyadam
 7:20
 vaiyitke'u | sheloshet | harashim | bashofarot | vaiyishberu | hakadim
 vaiyachaziku | veyad | sem'olam | balapidim
-uveyad | yeminam | hashofarot | litkoa | vaiyikre'u
-cherev | Layahweh | Ulegid'on
+uveyad | yeminam | hashofarot | litkoa | vaiyikre'u | cherev | Layahweh
+Ulegid'on
 
 7:21
 vaiya'amdu | ish | tachtav | saviv | lamachaneh

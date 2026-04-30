@@ -1,7 +1,7 @@
 8:1
 vaiyomer | Yahweh | el | Mosheh
-emor | el | Aharon | neteh | et | yadekha | bematekha | al | haneharot
-al | hay'orim | ve'al | ha'agamim
+emor | el | Aharon | neteh | et | yadekha | bematekha | al | haneharot | al | hay'orim
+ve'al | ha'agamim
 veha'al | et | hatzfarde'im | al | eretz | Mitzrayim
 
 8:2
@@ -30,9 +30,7 @@ tisha'arnah
 
 8:6
 vaiyomer | lemachar
-vaiyomer | kidvarekha | lema'an | teda
-ki | ein
-Kayahweh | eloheinu
+vaiyomer | kidvarekha | lema'an | teda | ki | ein | Kayahweh | eloheinu
 
 8:7
 vesaru | hatzfarde'im | mimekha
@@ -54,8 +52,7 @@ umin | hasadot
 
 8:10
 vaiyitzberu | otam
-chomarim | chomarim | vativ'ash
-ha'aretz
+chomarim | chomarim | vativ'ash | ha'aretz
 
 8:11
 vaiyar | par'oh | ki | hayetah | harevachah
@@ -66,8 +63,7 @@ diber | Yahweh
 
 8:12
 vaiyomer | Yahweh | el | Mosheh
-emor | el | Aharon
-neteh | et | matekha
+emor | el | Aharon | neteh | et | matekha
 vehakh
 et | afar | ha'aretz | vehayah | lekhinim | bekhol | eretz | Mitzrayim
 
@@ -111,8 +107,7 @@ ki | ani | Yahweh | bekerev | ha'aretz
 
 8:19
 vesamti | fedut | bein | ami
-uvein | amekha | lemachar | yihyeh
-ha'ot | hazeh
+uvein | amekha | lemachar | yihyeh | ha'ot | hazeh
 
 8:20
 vaiya'as | Yahweh | ken
@@ -156,8 +151,7 @@ me'im | par'oh | vaiye'tar | el | Yahweh
 vaiya'as | Yahweh | kidvar | Mosheh
 vaiyasar | he'aro | mipar'oh | me'avadav
 ume'amo
-lo | Nish'ar
-echad
+lo | Nish'ar | echad
 
 8:28
 vaiyakhbed | par'oh | et | libo

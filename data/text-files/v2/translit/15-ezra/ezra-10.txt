@@ -58,8 +58,7 @@ vehibadelu | me'amei | ha'aretz | umin | hanashim
 hanakheriyot
 
 10:12
-vaiya'nu | khol | hakahal | vaiyomeru
-kol | gadol
+vaiya'nu | khol | hakahal | vaiyomeru | kol | gadol
 ken | kedivreikha | aleinu | la'asot
 
 10:13
@@ -84,15 +83,12 @@ azarum
 vaiya'asu | khen | benei | hagolah
 vaiyibadelu | Ezra | hakohen | anashim | rashei | ha'avot | leveit | avotam
 vekhulam | beshemot
-vaiyeshevu | beyom | echad | lachodesh | ha'asiri | ledaryoosh
-hadavar
+vaiyeshevu | beyom | echad | lachodesh | ha'asiri | ledaryoosh | hadavar
 
 10:17
 vaykhalu | vakol
-anashim
-hahoshivu
-nashim | nakheriyot
-ad | yom | echad | lachodesh | harishon
+anashim | hahoshivu
+nashim | nakheriyot | ad | yom | echad | lachodesh | harishon
 
 10:18
 vaiyimatze | mibenei | hakohanim | asher | hoshivu
@@ -106,8 +102,7 @@ vaiyitenu | yadam
 lehotzi | nesheihem | va'ashemim | eil | tzon | al | ashmatam
 
 10:20
-umibenei | Imer
-Chanani
+umibenei | Imer | Chanani
 Uzevadyah
 
 10:21
@@ -121,8 +116,7 @@ Yozavad
 Ve'el'asah
 
 10:23
-umin | halviyim | Yozavad | Veshim'i | Vekelayah | hu | Kelita
-Petachyah | Yehudah
+umin | halviyim | Yozavad | Veshim'i | Vekelayah | hu | Kelita | Petachyah | Yehudah
 Ve'eli'ezer
 
 10:24
@@ -145,8 +139,7 @@ Vezavad
 Va'aziza
 
 10:28
-umibenei | Bevai | Yehochanan | Chananyah
-Zabai | Atlai
+umibenei | Bevai | Yehochanan | Chananyah | Zabai | Atlai
 
 10:29
 umibenei | Bani | Meshulam | Malukh
@@ -161,16 +154,14 @@ Uvinui
 Umenasheh
 
 10:31
-uvenei | Charim | Eli'ezer | Yishiyah | Malkiyah
-Shema'yah | Shim'on
+uvenei | Charim | Eli'ezer | Yishiyah | Malkiyah | Shema'yah | Shim'on
 
 10:32
 Beneyamin | Malukh | Shemaryah
 
 10:33
 mibenei | Chashum | Matenai | Matatah | Zavad | Elifelet
-Yeremai | Menasheh
-Shim'i
+Yeremai | Menasheh | Shim'i
 
 10:34
 mibenei | Vani | Ma'adai | Amram | Ve'u'el
@@ -202,8 +193,7 @@ Azar'el | Veshelemyahu
 Shemaryah
 
 10:42
-Shalum | Amaryah
-Yosef
+Shalum | Amaryah | Yosef
 
 10:43
 mibenei | Nevo | Ye'i'el | Matityah | Zavad | Zevina

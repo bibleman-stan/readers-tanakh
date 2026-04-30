@@ -29,8 +29,8 @@ va'emtza | katuv | bo
 7:6
 eleh | benei | hamedinah | ha'olim | mishevi | hagolah | asher | heglah
 Nevukhadnetzar | melekh | Bavel
-vaiyashuvu | Lirushalim | Velihudah
-ish | le'iro
+vaiyashuvu | Lirushalim
+Velihudah | ish | le'iro
 
 7:7
 haba'im | im | Zerubavel | Yeshua | Nechemyah | Azaryah | Ra'amyah | Nachamani | Maredokhai | Bilshan | Misperet | Bigvai
@@ -73,8 +73,7 @@ shesh | me'ot | esrim | ushemonah
 benei | Azgad | alpayim | shelosh | me'ot | esrim | ushenayim
 
 7:18
-benei | Adonikam
-shesh | me'ot | shishim | veshiv'ah
+benei | Adonikam | shesh | me'ot | shishim | veshiv'ah
 
 7:19
 benei | Vigvai | alpayim | shishim | veshiv'ah
@@ -113,8 +112,7 @@ anshei | Kiryat | Ye'arim | Kefirah | Uve'erot
 sheva | me'ot | arba'im | usheloshah
 
 7:30
-anshei | Haramah | Vagava
-shesh | me'ot | esrim | ve'echad
+anshei | Haramah | Vagava | shesh | me'ot | esrim | ve'echad
 
 7:31
 anshei | Mikhmas | me'ah | ve'esrim | ushenayim
@@ -123,8 +121,7 @@ anshei | Mikhmas | me'ah | ve'esrim | ushenayim
 anshei | Veit | El | Veha'ai | me'ah | esrim | usheloshah
 
 7:33
-anshei | Nevo | acher
-chamishim | ushenayim
+anshei | Nevo | acher | chamishim | ushenayim
 
 7:34
 benei | Eilam | acher
@@ -138,20 +135,17 @@ shelosh | me'ot | ve'esrim
 benei | Yerecho | shelosh | me'ot | arba'im | vachamishah
 
 7:37
-benei | Lod | Chadid | Ve'ono
-sheva | me'ot | ve'esrim | ve'echad
+benei | Lod | Chadid | Ve'ono | sheva | me'ot | ve'esrim | ve'echad
 
 7:38
 benei | Sena'ah | sheloshet | alafim | tesha | me'ot | usheloshim
 
 7:39
 hakohanim
-benei | Yeda'yah | leveit | Yeshua
-tesha | me'ot | shiv'im | usheloshah
+benei | Yeda'yah | leveit | Yeshua | tesha | me'ot | shiv'im | usheloshah
 
 7:40
-benei | Imer
-elef | chamishim | ushenayim
+benei | Imer | elef | chamishim | ushenayim
 
 7:41
 benei | Fashchur | elef | matayim | arba'im | veshiv'ah
@@ -221,8 +215,7 @@ shelosh | me'ot | tish'im | ushenayim
 7:61
 ve'eleh | ha'olim | Mitel | Melach | Tel | Charsha
 Keruv | Adon | Ve'imer
-velo | yakhelu | lehagid | beit | avotam | vezar'am
-im | Miyisra'el | hem
+velo | yakhelu | lehagid | beit | avotam | vezar'am | im | Miyisra'el | hem
 
 7:62
 benei | Delayah | venei | Toiyah | benei | Nekoda
@@ -254,8 +247,7 @@ umeshorarot | matayim
 suseihem | sheva | me'ot | sheloshim | veshishah | pirdeihem | matayim | ve'arba'im | vachamishah
 
 7:68
-gemalim | arba | me'ot | sheloshim | vachamishah
-chamorim
+gemalim | arba | me'ot | sheloshim | vachamishah | chamorim
 sheshet | alafim | sheva | me'ot | ve'esrim
 
 7:69
@@ -264,9 +256,7 @@ hatirshata | natan | la'otzar | zahav | darkemonim | elef | mizrakot | chamishim
 sheloshim | vachamesh | me'ot
 
 7:70
-umerashei | ha'avot | natenu | le'otzar | hamelakhah
-zahav
-darkemonim
+umerashei | ha'avot | natenu | le'otzar | hamelakhah | zahav | darkemonim
 shetei | ribot | vekhesef
 manim | alpayim | umatayim
 

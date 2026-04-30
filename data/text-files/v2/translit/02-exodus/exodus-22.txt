@@ -1,7 +1,6 @@
 22:1
 im | bamachteret | yimatze | haganav
-vehukah | vamet | ein | lo
-damim
+vehukah | vamet | ein | lo | damim
 
 22:2
 im | zarechah | hashemesh | alav | damim | lo
@@ -9,10 +8,8 @@ shalem | yeshalem
 im | ein | lo | venimkar | bignevato
 
 22:3
-im | himatze | timatze | veyado | hagenevah | mishor | ad | chamor | ad | seh
-chaiyim
-shenayim
-yeshalem
+im | himatze | timatze | veyado | hagenevah | mishor | ad | chamor | ad | seh | chaiyim
+shenayim | yeshalem
 
 22:4
 ki | yav'er | ish | sadeh | ov | kherem
@@ -22,11 +19,8 @@ umeitav | karmo
 yeshalem
 
 22:5
-ki | tetze | esh | umatze'ah | kotzim | vene'ekhal | gadish
-o | hakamah
-o | hasadeh | shalem | yeshalem
-hamav'ir
-et | habe'erah
+ki | tetze | esh | umatze'ah | kotzim | vene'ekhal | gadish | o | hakamah
+o | hasadeh | shalem | yeshalem | hamav'ir | et | habe'erah
 
 22:6
 ki | yiten | ish | el | re'ehu | kesef | ov | khelim | lishmor
@@ -81,8 +75,7 @@ veshakhav | imah | mahor | yimharenah | lo | le'ishah
 
 22:16
 im | ma'en | yema'en | aviha | letitah | lo
-kesef | yishkol | kemohar
-habetulot
+kesef | yishkol | kemohar | habetulot
 
 22:17
 mekhashefah | lo | techaiyeh
@@ -95,18 +88,15 @@ zoveach | la'elohim | yochoram | bilti | Layahweh | levado
 
 22:20
 veger | lo | toneh
-velo | tilchatzenu
-ki | gerim | heyitem | be'eretz | Mitzrayim
+velo | tilchatzenu | ki | gerim | heyitem | be'eretz | Mitzrayim
 
 22:21
 kol | almanah | veyatom
 lo | te'anun
 
 22:22
-im | aneh | te'aneh
-oto
-ki | im | tza'ok | yitz'ak | elai | shamoa | eshma
-tza'akato
+im | aneh | te'aneh | oto
+ki | im | tza'ok | yitz'ak | elai | shamoa | eshma | tza'akato
 
 22:23
 vecharah | api
@@ -119,16 +109,14 @@ im | kesef | talveh | et | ami | et | he'ani | imakh | lo | tihyeh | lo
 kenosheh | lo | tesimun | alav | neshekh
 
 22:25
-im | chavol | tachbol
-salmat | re'ekha | ad | bo | hashemesh
+im | chavol | tachbol | salmat | re'ekha | ad | bo | hashemesh
 teshivenu | lo
 
 22:26
 ki | hi | khesuto | levadah
 hi | simlato | le'oro
 bameh | yishkav
-vehayah | ki | yitz'ak | elai | veshama'ti
-ki | chanun | ani
+vehayah | ki | yitz'ak | elai | veshama'ti | ki | chanun | ani
 
 22:27
 elohim
@@ -136,8 +124,7 @@ lo | tekalel
 venasi | ve'amekha | lo | ta'or
 
 22:28
-mele'atekha | vedim'akha | lo | te'acher | bekhor | baneikha
-titen | li
+mele'atekha | vedim'akha | lo | te'acher | bekhor | baneikha | titen | li
 
 22:29
 ken | ta'aseh | leshorekha | letzonekha

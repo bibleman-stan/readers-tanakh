@@ -41,8 +41,7 @@ vesafun | ba'erez | mehakarka | ad | hakarka
 uveito | asher | yeshev | sham | chatzer | ha'acheret | mibeit | la'ulam
 kama'aseh | hazeh
 hayah
-uvayit | ya'aseh | levat | par'oh | asher | lakach | Shelomoh | ka'ulam
-hazeh
+uvayit | ya'aseh | levat | par'oh | asher | lakach | Shelomoh | ka'ulam | hazeh
 
 7:9
 kol | eleh | avanim | yekarot | kemidot | gazit | megorarot | bamegerah
@@ -89,9 +88,7 @@ et | ha'amud | hasheni
 ushetei | khotarot | asah | latet | al | rashei | ha'amudim
 mutzak | nechoshet
 chamesh | amot | komat | hakoteret | ha'echat
-vechamesh | amot
-komat
-hakoteret | hashenit
+vechamesh | amot | komat | hakoteret | hashenit
 
 7:17
 sevakhim | ma'aseh | sevakhah | gedilim | ma'aseh | sharsherot
@@ -103,8 +100,7 @@ lakoteret | hashenit
 7:18
 vaiya'as | et | ha'amudim
 ushenei | turim | saviv | al | hasevakhah | ha'echat | lekhasot | et | hakotarot | asher | al | rosh | harimonim
-vekhen | asah | lakoteret
-hashenit
+vekhen | asah | lakoteret | hashenit
 
 7:19
 vekhotarot | asher | al | rosh | ha'amudim | ma'aseh
@@ -117,8 +113,7 @@ gam | mima'al | mile'umat | habeten | asher | le'ever | hasevakhah
 veharimonim | matayim | turim | saviv | al | hakoteret | hashenit
 
 7:21
-vaiyakem | et | ha'amudim | le'ulam
-haheikhal
+vaiyakem | et | ha'amudim | le'ulam | haheikhal
 vaiyakem | et | ha'amud | haymani | vaiyikra | et | shemo | Yakhin
 vaiyakem | et | ha'amud | hasemali
 vaiyikra | et | shemo | Bo'az
@@ -202,9 +197,7 @@ hakol | mutzak
 
 7:34
 ve'arba | ketefot
-el | arba | pinot
-hamekhonah
-ha'echat | min | hamekhonah | ketefeiha
+el | arba | pinot | hamekhonah | ha'echat | min | hamekhonah | ketefeiha
 
 7:35
 uverosh | hamekhonah | chatzi | ha'amah | komah
@@ -228,8 +221,7 @@ arba'im | bat | yakhil | hakiyor | ha'echad | arba | ba'amah | hakiyor | ha'echa
 kiyor | echad | al | hamekhonah | ha'achat | le'eser | hamekhonot
 
 7:39
-vaiyiten | et | hamekhonot
-chamesh | al | ketef | habayit | miyamin
+vaiyiten | et | hamekhonot | chamesh | al | ketef | habayit | miyamin
 vechamesh | al | ketef | habayit | misemolo
 ve'et | haiyam | natan | miketef | habayit | haymanit | kedemah
 mimul | negev
