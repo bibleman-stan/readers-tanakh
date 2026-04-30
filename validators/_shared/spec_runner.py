@@ -198,6 +198,10 @@ def _check_morphology(tok: str, morph: str) -> bool:
         return M.is_construct_head_token(tok)
     if morph == "definite_adjective":
         return M.is_definite_adjective_token(tok)
+    if morph == "numeral":
+        return M.is_numeral_token(tok)
+    if morph == "numeral_or_unit_noun":
+        return M.is_numeral_token(tok) or M.is_numeral_governed_noun(tok)
     return False
 
 

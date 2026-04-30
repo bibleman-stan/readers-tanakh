@@ -559,6 +559,65 @@ def _mem_after_vav_is_min_prep(token: str) -> bool:
     return vowel == HIREQ and next_dagesh
 
 
+# ─── Compound-numeral chain detection (M.num spec) ────────────────────
+#
+# Wave 6 audit revealed compound numeral phrases (Gen 5 / Gen 11 lifespans,
+# Num 1 / Ezra 2 / 1 Chr census counts) fragmented across lines because the
+# te'amim baseline imposes disjunctive accents on each numeral component.
+# Per canon §1, a compound count is one atomic thought.
+
+CARDINAL_STEMS: frozenset[str] = frozenset({
+    # Units 1-10 (m/f pairs)
+    "אחד", "אחת", "שנים", "שתים", "שלשה", "שלש", "ארבעה", "ארבע",
+    "חמשה", "חמש", "ששה", "שש", "שבעה", "שבע", "שמנה", "תשעה", "תשע",
+    "עשרה", "עשר",
+    # Tens
+    "עשרים", "שלשים", "ארבעים", "חמשים", "ששים", "שבעים", "שמנים", "תשעים",
+    # Hundreds / thousands / ten-thousands
+    "מאה", "מאות", "מאתים", "אלף", "אלפים", "אלפי", "רבבה", "רבבות",
+    # Construct forms
+    "חמשת", "שלשת", "ארבעת", "ששת", "שבעת", "שמנת", "תשעת", "עשרת", "מאת",
+    "שני", "שתי",  # construct dual forms
+})
+
+UNIT_NOUNS: frozenset[str] = frozenset({
+    # Time
+    "שנה", "שנים", "שנת", "יום", "ימים", "ימי", "חדש", "חדשים", "חדשי",
+    # People / census
+    "איש", "אנשים", "גבר", "גברים", "נפש", "נפשות",
+    # Measurement
+    "אמה", "אמות", "אמת", "כר", "כרים", "כור", "סאה",
+    # Military / division
+    "ראש", "ראשים",
+    # Valuables (weight counts)
+    "כסף", "זהב", "שקל", "שקלים", "ככר", "ככרים",
+})
+
+
+def is_numeral_token(token: str) -> bool:
+    """True if token is a cardinal numeral stem (with or without vav prefix,
+    with or without maqfef-joined material). Strips leading vav so וּמְאַת,
+    וּשְׁלֹשִׁים, וְאַרְבָּעִים all match. Does NOT match ordinals.
+    """
+    tok = token.split(MAQQEF, 1)[0] if MAQQEF in token else token
+    s = skel(tok)
+    if not s:
+        return False
+    if s in CARDINAL_STEMS:
+        return True
+    if s.startswith("ו") and s[1:] in CARDINAL_STEMS:
+        return True
+    return False
+
+
+def is_numeral_governed_noun(token: str) -> bool:
+    """True if token is a unit noun governed by a numeral (שָׁנָה, יוֹם,
+    אַמָּה, אִישׁ, שֶׁקֶל, etc.). Maqfef-joined head used for check.
+    """
+    tok = token.split(MAQQEF, 1)[0] if MAQQEF in token else token
+    return skel(tok) in UNIT_NOUNS
+
+
 def is_vav_coord_pp_head(token: str) -> bool:
     """True if token is a vav-prefixed PP head — וְאֶל, וְעַל, וְעִם, וּבְ-NN, וּלְ-NN, וּכְ-NN, וּמְ-NN.
 

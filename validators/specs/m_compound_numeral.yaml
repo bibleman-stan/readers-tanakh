@@ -1,0 +1,42 @@
+name: m_compound_numeral
+rule: M.num
+subcase: compound_numeral_chain
+severity: STRONG-MERGE-CANDIDATE
+description: |
+  Compound-numeral chain split — line N ends with a numeral token and line N+1
+  begins with a numeral or numeral-governed unit noun. These lines form a single
+  atomic count (one proposition per canon §1).
+
+  Covers chain extension (numeral → numeral, e.g. אַלְפַּיִם / מֵאָה), chain
+  terminus (numeral → unit noun, e.g. מֵאָה / שָׁנִים), and vav-prefixed numeral
+  continuation (וּמְאַת stripped by is_numeral_token).
+
+  Corpus anchors per Wave 6 audit (2026-04-30):
+    - Gen 5 / Gen 11 genealogy lifespans (חָמֵשׁ שָׁנִים וּמְאַת שָׁנָה)
+    - Num 1 / Num 26 census totals
+    - Ezra 2 / Neh 7 returnee lists (chain case: אַלְפַּיִם / מֵאָה / שִׁבְעִים)
+    - 1 Chr 23-27 division counts
+
+  Three-line chains converge across two cascade passes (pass 1 merges N+N+1,
+  pass 2 merges merged-line + N+2). The split-then-merge engine ordering and
+  the M.num pair-trigger semantics handle this naturally.
+
+  Diagnosis (2026-04-30): te'amim baseline is the source of these splits, not
+  S1/S2 over-firing — confirmed via is_vav_coord_pp_head trace on וּמְאַת.
+  Fix is merge-time only.
+
+trigger:
+  line_n_last_token:
+    morphology: numeral
+  line_n1_first_token:
+    morphology: numeral_or_unit_noun
+  combined_max_prosodic_words: 10
+
+guards:
+  - poetic_register             # suppress in Sifrei Emet
+  - next_line_is_vav_coord_pp   # post-S1 split product → do not re-absorb
+  - next_line_is_vav_coord_np   # post-S2 split product → do not re-absorb
+  - next_line_is_wayyiqtol      # post-S3 clause-head → do not re-absorb
+
+annotation_template: "M.num compound-numeral chain (combined {pwc} prosodic words)"
+suggested_action: MERGE
