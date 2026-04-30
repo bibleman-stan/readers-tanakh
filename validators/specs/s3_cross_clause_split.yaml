@@ -1,0 +1,33 @@
+name: s3_cross_clause_split
+rule: S3
+subcase: cross_clause_split
+severity: STRONG-SPLIT-CANDIDATE
+mode: line
+
+description: |
+  Cross-clause merge on a single line — line carries finite verbs from two
+  distinct clauses. Per canon §1 generative principle: every finite verb anchors
+  an atomic thought. Two finite verbs on one line means two atomic thoughts
+  unless they form a compound predicate with shared subject (compound-verb
+  construction, which is M-territory not S-territory).
+
+  Example (Gen 1:24 L3 audited 2026-04-29):
+    Before: בְּהֵמָה וָרֶמֶשׂ וְחַֽיְתוֹ־אֶרֶץ לְמִינָהּ וַיְהִי־כֵן׃
+    After:  בְּהֵמָה וָרֶמֶשׂ וְחַֽיְתוֹ־אֶרֶץ לְמִינָהּ
+            וַיְהִי־כֵן׃
+    (the discourse formula 'וַיְהִי־כֵן' is its own atomic thought)
+
+  Example (Gen 11:13/11:15 audit pattern):
+    Before: שָׁנָה וַיּוֹלֶד בָּנִים וּבָנוֹת
+    After:  שָׁנָה
+            וַיּוֹלֶד בָּנִים וּבָנוֹת
+
+trigger:
+  line_anywhere:
+    wayyiqtol_mid_line: true   # special trigger — uses wayyiqtol_mid_line_split_positions
+
+guards:
+  - poetic_register
+
+annotation_template: "S3 cross-clause split — multiple finite verbs on one line ({pwc} prosodic words)"
+suggested_action: SPLIT_AT_FINITE_VERB_BOUNDARY

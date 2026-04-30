@@ -33,6 +33,8 @@ guards:
   - next_line_is_verb_initial       # if lookahead is verb-initial, line N+1 is
                                      # fronting for that clause, not a complement
                                      # of line N (Gen 1:27 'בצלם אלהים / ברא אתו')
+  - next_line_is_vav_coord_pp       # block re-absorbing a vav-coord PP that S1
+                                     # split out of an enumeration (oscillation)
 
 annotation_template: "Verb (+subj) + PP-recipient merge ({pwc} prosodic words)"
 suggested_action: MERGE

@@ -37,9 +37,9 @@ from .poetic_register import is_poetic_register
 class Finding:
     file: str
     line: int                 # 1-based line index in the chapter file
-    rule: str                 # e.g., "M2", "H18.1"
+    rule: str                 # e.g., "M2", "H18.1", "S1"
     subcase: str              # e.g., "verb_et_strand"
-    severity: str             # STRONG-MERGE-CANDIDATE | REVIEW-REQUIRED | MALFORMED
+    severity: str             # STRONG-MERGE-CANDIDATE | STRONG-SPLIT-CANDIDATE | REVIEW-REQUIRED | MALFORMED
     book: str
     chapter: int
     verse: int
@@ -48,6 +48,9 @@ class Finding:
     prosodic_word_count: int
     annotation: str
     suggested_action: str
+    # SPLIT-mode only: token indices in prior_line where new line breaks should be inserted.
+    # Empty list for MERGE findings.
+    split_positions: list = field(default_factory=list)
 
     def to_text(self) -> str:
         tag = "[MALFORMED]" if self.severity == "MALFORMED" else "[DEVIATION]"
@@ -71,6 +74,7 @@ class Finding:
             "prosodic_word_count": self.prosodic_word_count,
             "annotation": self.annotation,
             "suggested_action": self.suggested_action,
+            "split_positions": self.split_positions,
         }
 
 
@@ -85,6 +89,7 @@ class Spec:
     guards: list = field(default_factory=list)
     annotation_template: str = ""
     suggested_action: str = ""
+    mode: str = "pair"  # "pair" (default; line N + line N+1), "line" (single line — splits)
 
     @classmethod
     def from_dict(cls, d: dict[str, Any]) -> "Spec":
@@ -98,6 +103,7 @@ class Spec:
             guards=d.get("guards", []),
             annotation_template=d.get("annotation_template", ""),
             suggested_action=d.get("suggested_action", "MERGE"),
+            mode=d.get("mode", "pair"),
         )
 
 
@@ -314,6 +320,20 @@ def _g_n_starts_do(l_n, l_n1, ctx):
     return M.is_do_marker_token(first)
 
 
+@_register_guard("next_line_is_vav_coord_pp")
+def _g_next_vav_coord_pp(l_n, l_n1, ctx):
+    """Fire (block emission) if line N+1's first token is a vav-coordinated PP head.
+
+    Use case: prevents merge specs (m2_6, h14, etc.) from re-absorbing
+    coordinated-PP members that S1 has just split out of an enumeration.
+    Without this guard, splits and merges oscillate (split → merge → split → ...).
+    """
+    first = M.first_content_token(l_n1)
+    if not first:
+        return False
+    return M.is_vav_coord_pp_head(first)
+
+
 @_register_guard("next_line_is_verb_initial")
 def _g_next_verb_initial(l_n, l_n1, ctx):
     """Fire (block) if the line AFTER the candidate pair (lookahead) starts with
@@ -449,6 +469,7 @@ class SpecRunner:
                     within_idx += 1
 
         for (chapter, verse), lines in verses:
+            # Pair-mode pass — line N + line N+1 (existing merge logic)
             for i in range(len(lines) - 1):
                 l_n = lines[i]
                 l_n1 = lines[i + 1]
@@ -463,6 +484,8 @@ class SpecRunner:
                     "line_idx_in_verse": i,
                 }
                 for spec in self.specs:
+                    if spec.mode != "pair":
+                        continue  # line-mode specs handled below
                     if rule_filter and spec.rule != rule_filter and spec.name != rule_filter:
                         continue
                     if severity_filter and spec.severity != severity_filter:
@@ -497,7 +520,83 @@ class SpecRunner:
                         annotation=annotation,
                         suggested_action=spec.suggested_action,
                     ))
+
+            # Line-mode pass — single-line proposition-counting (splits)
+            for i, line in enumerate(lines):
+                ctx = {
+                    "book": book_dir.name,
+                    "chapter": chapter,
+                    "verse": verse,
+                    "line_idx_in_verse": i,
+                    "lookahead": lines[i + 1] if i + 1 < len(lines) else "",
+                    "prev_line": lines[i - 1] if i >= 1 else "",
+                }
+                for spec in self.specs:
+                    if spec.mode != "line":
+                        continue
+                    if rule_filter and spec.rule != rule_filter and spec.name != rule_filter:
+                        continue
+                    if severity_filter and spec.severity != severity_filter:
+                        continue
+                    split_positions = _evaluate_line_trigger(spec, line, ctx)
+                    if not split_positions:
+                        continue
+                    # Run guards (line-mode guards receive line, [], ctx)
+                    skipped = False
+                    for guard in spec.guards:
+                        if _guard_fires(guard, line, "", ctx):
+                            skipped = True
+                            break
+                    if skipped:
+                        continue
+                    pwc = M.prosodic_word_count(line)
+                    annotation = spec.annotation_template or spec.description or spec.subcase
+                    annotation = annotation.format(
+                        prior=line, next="", pwc=pwc, rule=spec.rule
+                    )
+                    rel_path = str(ch_file.relative_to(Path.cwd())) if ch_file.is_absolute() else str(ch_file)
+                    findings.append(Finding(
+                        file=rel_path.replace("\\", "/"),
+                        line=line_offsets.get((chapter, verse, i), 0),
+                        rule=spec.rule,
+                        subcase=spec.subcase,
+                        severity=spec.severity,
+                        book=book_dir.name,
+                        chapter=chapter,
+                        verse=verse,
+                        prior_line=line,
+                        next_line="",
+                        prosodic_word_count=pwc,
+                        annotation=annotation,
+                        suggested_action=spec.suggested_action,
+                        split_positions=split_positions,
+                    ))
         return findings
+
+
+def _evaluate_line_trigger(spec: Spec, line: str, ctx: dict[str, Any]) -> list[int]:
+    """Evaluate a line-mode spec's trigger; return split-position token-indices.
+
+    Returns:
+      [] if trigger doesn't fire
+      [pos1, pos2, ...] of token indices where new line breaks should be inserted
+    """
+    t = spec.trigger
+    line_anywhere = t.get("line_anywhere", {})
+
+    # coordinated_pp_count: {min: N} — count vav-coord PP heads + initial bare PP
+    if "coordinated_pp_count" in line_anywhere:
+        cond = line_anywhere["coordinated_pp_count"]
+        positions = M.coordinated_pp_split_positions(line)
+        if "min" in cond and not positions:
+            return []
+        return positions
+
+    # wayyiqtol_mid_line: true — split before each wayyiqtol that appears at position > 0
+    if line_anywhere.get("wayyiqtol_mid_line"):
+        return M.wayyiqtol_mid_line_split_positions(line)
+
+    return []
 
 
 # ─── small helpers used by Spec evaluation ──────────────────────────

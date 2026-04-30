@@ -98,45 +98,133 @@ def merge_lines(text: str, findings: list[Finding]) -> tuple[str, int]:
     return "\n".join(out_lines) + ("\n" if text.endswith("\n") else ""), n_merges
 
 
+def split_lines(text: str, findings: list[Finding]) -> tuple[str, int]:
+    """Apply STRONG-SPLIT findings to chapter text. Returns (new_text, n_splits).
+
+    Each finding identifies a single line + token positions where new line breaks
+    should be inserted, splitting one line into N pieces. Splits operate on
+    matching (chapter, verse, line_text) keys.
+    """
+    split_directives: dict[tuple[int, int, str], list[int]] = {}
+    for f in findings:
+        if f.severity != "STRONG-SPLIT-CANDIDATE":
+            continue
+        if not f.split_positions:
+            continue
+        key = (f.chapter, f.verse, f.prior_line)
+        # If multiple specs request splits on the same line, union their positions
+        existing = split_directives.get(key, [])
+        merged_positions = sorted(set(existing) | set(f.split_positions))
+        split_directives[key] = merged_positions
+
+    if not split_directives:
+        return text, 0
+
+    out_lines: list[str] = []
+    cur_ref = None
+    n_splits = 0
+    raw_lines = text.splitlines()
+    for raw in raw_lines:
+        stripped = raw.strip()
+        if not stripped:
+            out_lines.append(raw)
+            continue
+        if M.VERSE_REF_RE.match(stripped):
+            ch_s, vs_s = stripped.split(":")
+            cur_ref = (int(ch_s), int(vs_s))
+            out_lines.append(raw)
+            continue
+        if cur_ref is None:
+            out_lines.append(raw)
+            continue
+        key = (cur_ref[0], cur_ref[1], stripped)
+        if key in split_directives:
+            positions = split_directives[key]
+            toks = stripped.split()
+            # Build N new lines by carving at split positions
+            chunks: list[list[str]] = []
+            start = 0
+            for pos in positions:
+                if pos <= start or pos >= len(toks):
+                    continue
+                chunks.append(toks[start:pos])
+                start = pos
+            chunks.append(toks[start:])
+            for chunk in chunks:
+                if chunk:
+                    out_lines.append(" ".join(chunk))
+            n_splits += len(chunks) - 1  # N chunks = N-1 splits
+        else:
+            out_lines.append(raw)
+
+    return "\n".join(out_lines) + ("\n" if text.endswith("\n") else ""), n_splits
+
+
 def apply_to_book(corpus_dir: Path, runner: SpecRunner, book_dir_name: str,
                   dry_run: bool, verbose: bool) -> tuple[int, int]:
-    """Apply spec-driven STRONG merges to a single book until convergence.
-    Returns (total_merges, n_passes)."""
+    """Apply spec-driven SPLITS then MERGES to a single book until convergence.
+
+    Per-pass ordering invariant: SPLITS run first within each pass, then MERGES.
+    Reasoning: a merge that fires on a cumulatively-merged line cements the
+    wrong grouping. Splits decompose first; merges then legitimately re-bond
+    bonded pairs / clause-nucleus components on the now-correctly-decomposed lines.
+
+    Returns (total_changes, n_passes) where total_changes counts splits + merges.
+    """
     book_dir = corpus_dir / book_dir_name
     if not book_dir.is_dir():
         print(f"[skip] {book_dir_name}: not a directory", file=sys.stderr)
         return (0, 0)
 
-    total_merges = 0
+    total_changes = 0
     passes = 0
     while True:
         passes += 1
-        findings = runner.run_corpus(corpus_dir, book_filter=book_dir_name,
-                                      severity_filter="STRONG-MERGE-CANDIDATE")
-        if not findings:
-            break
-        # group by chapter file
-        by_file: dict[Path, list[Finding]] = defaultdict(list)
-        for f in findings:
-            by_file[Path(f.file)].append(f)
 
+        # ── PHASE A: SPLITS ─────────────────────────────────────────────
+        split_findings = runner.run_corpus(corpus_dir, book_filter=book_dir_name,
+                                            severity_filter="STRONG-SPLIT-CANDIDATE")
+        pass_splits = 0
+        if split_findings:
+            by_file: dict[Path, list[Finding]] = defaultdict(list)
+            for f in split_findings:
+                by_file[Path(f.file)].append(f)
+            for ch_file, ch_findings in by_file.items():
+                full_path = ROOT / ch_file
+                text = full_path.read_text(encoding="utf-8")
+                new_text, n = split_lines(text, ch_findings)
+                if n > 0:
+                    if not dry_run:
+                        full_path.write_text(new_text, encoding="utf-8")
+                    pass_splits += n
+                    if verbose:
+                        print(f"  pass {passes} SPLIT {ch_file}: {n}", file=sys.stderr)
+
+        # ── PHASE B: MERGES ─────────────────────────────────────────────
+        merge_findings = runner.run_corpus(corpus_dir, book_filter=book_dir_name,
+                                            severity_filter="STRONG-MERGE-CANDIDATE")
         pass_merges = 0
-        for ch_file, ch_findings in by_file.items():
-            full_path = ROOT / ch_file
-            text = full_path.read_text(encoding="utf-8")
-            new_text, n = merge_lines(text, ch_findings)
-            if n > 0:
-                if not dry_run:
-                    full_path.write_text(new_text, encoding="utf-8")
-                pass_merges += n
-                if verbose:
-                    print(f"  pass {passes} {ch_file}: {n} merges", file=sys.stderr)
+        if merge_findings:
+            by_file: dict[Path, list[Finding]] = defaultdict(list)
+            for f in merge_findings:
+                by_file[Path(f.file)].append(f)
+            for ch_file, ch_findings in by_file.items():
+                full_path = ROOT / ch_file
+                text = full_path.read_text(encoding="utf-8")
+                new_text, n = merge_lines(text, ch_findings)
+                if n > 0:
+                    if not dry_run:
+                        full_path.write_text(new_text, encoding="utf-8")
+                    pass_merges += n
+                    if verbose:
+                        print(f"  pass {passes} MERGE {ch_file}: {n}", file=sys.stderr)
 
-        total_merges += pass_merges
-        if pass_merges == 0:
+        pass_total = pass_splits + pass_merges
+        total_changes += pass_total
+        if pass_total == 0:
             break
 
-    return (total_merges, passes)
+    return (total_changes, passes)
 
 
 def main():

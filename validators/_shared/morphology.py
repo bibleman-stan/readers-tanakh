@@ -380,6 +380,110 @@ def is_bare_do_marker_token(token: str) -> bool:
     return s == "את" or s == "ואת"
 
 
+def is_vav_coord_pp_head(token: str) -> bool:
+    """True if token is a vav-prefixed PP head — וְאֶל, וְעַל, וְעִם, וּבְ-NN, וּלְ-NN, וּכְ-NN, וּמְ-NN.
+
+    Used by S1 (coordinated-PP enumeration split). A vav-coord PP head
+    introduces a new coordinated-PP member in a list.
+    """
+    if MAQQEF in token:
+        head = token.split(MAQQEF, 1)[0]
+        s = skel(head)
+    else:
+        s = skel(token)
+    if len(s) < 2 or s[0] != "ו":
+        return False
+    # vav + free prep stem (וְאֶל / וְעַל / וְעִם / וְתַחַת / ...)
+    if s[1:] in PREP_SKELETONS:
+        return True
+    # vav + bound prep + 1+ chars (ובדגת / ובעוף / ובכל / ולכל / ...)
+    if len(s) >= 3 and s[1] in BOUND_PREP_PREFIXES:
+        inner = s[1:]
+        if inner not in QATAL_COMMON and not is_finite_verb_skel(inner):
+            return True
+    return False
+
+
+def is_bare_prep_head(token: str) -> bool:
+    """True if token starts a PP without vav-conjunction — בִדְגַת / לְ-NN / בְּ-NN / מִן /
+    אֶל / עַל. Used by S1 to count the FIRST PP in an enumeration (no vav prefix).
+    """
+    if MAQQEF in token:
+        head = token.split(MAQQEF, 1)[0]
+        s = skel(head)
+    else:
+        s = skel(token)
+    if not s:
+        return False
+    if s in PREP_SKELETONS:
+        return True
+    # bound prep + ≥1 char stem (not a verb)
+    if len(s) >= 2 and s[0] in BOUND_PREP_PREFIXES and not is_finite_verb_skel(s):
+        if s[:2] in NON_PREP_2CHAR_PREFIX:
+            return False
+        return True
+    return False
+
+
+def wayyiqtol_mid_line_split_positions(line: str) -> list[int]:
+    """Return token indices in `line` where a SPLIT should be inserted before
+    a mid-line wayyiqtol (a wayyiqtol token at position > 0).
+
+    Use case: S3 — cross-clause merge on one line. A wayyiqtol always opens a
+    new clause; if it appears mid-line, the prior tokens form the previous
+    clause's closing material (often a closing formula like 'שָׁנָה' completing
+    a year-formula, or content + 'וַיְהִי־כֵן' day-formula closer). Split
+    before each non-initial wayyiqtol.
+
+    Returns empty list if no wayyiqtol appears mid-line.
+    """
+    toks = tokens(line)
+    if len(toks) < 2:
+        return []
+    positions = []
+    for i, t in enumerate(toks):
+        if i == 0:
+            continue
+        s = skel(t)
+        # wayyiqtol: ו + (י|ת|א|נ) + verb stem
+        if (
+            len(s) >= 3
+            and s[0] == "ו"
+            and s[1] in YIQTOL_PREFIXES
+        ):
+            inner = s[1:]
+            if inner in YIQTOL_KNOWN_NOUNS:
+                continue  # vav+noun, not wayyiqtol
+            positions.append(i)
+    return positions
+
+
+def coordinated_pp_split_positions(line: str) -> list[int]:
+    """Return token indices in `line` where a SPLIT should be inserted to break
+    a coordinated-PP enumeration into one-PP-per-line. Returns empty list if
+    the line has fewer than 3 PP heads (no enumeration to split).
+
+    Algorithm: walk tokens; tag each as PP-head (initial bare-PP) or
+    vav-coord-PP-head; if total PP-heads ≥ 3, return token indices of every
+    vav-coord-PP-head (split-before positions).
+    """
+    toks = tokens(line)
+    if len(toks) < 4:
+        return []
+    pp_indices: list[int] = []
+    vav_coord_indices: list[int] = []
+    for i, tok in enumerate(toks):
+        if is_vav_coord_pp_head(tok):
+            pp_indices.append(i)
+            vav_coord_indices.append(i)
+        elif is_bare_prep_head(tok):
+            pp_indices.append(i)
+    if len(pp_indices) < 3:
+        return []
+    # Filter position 0 — splitting BEFORE the first token of a line is meaningless.
+    return [i for i in vav_coord_indices if i > 0]
+
+
 def is_bare_prep_token(token: str) -> bool:
     """True only if the token is a BARE preposition with no maqqef-joined
     complement — i.e., the prep is stranded awaiting its noun on the next line.

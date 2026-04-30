@@ -1,0 +1,37 @@
+name: s1_coordinated_pp_enumeration
+rule: S1
+subcase: coordinated_pp_enumeration
+severity: STRONG-SPLIT-CANDIDATE
+mode: line
+
+description: |
+  Coordinated-PP enumeration under one governing verb on a single line — splits
+  into one PP per cola. Per canon §1 generative principle ("each proposition
+  splits by default") and §1 structural-justification 1 (formally-marked
+  parallel series, each member its own beat).
+
+  Trigger: line contains ≥3 PP heads (initial bare PP + vav-coord PP heads).
+  Action: insert line break before each vav-coord PP token.
+
+  Concrete example (Gen 1:26 L134):
+    Before: וְיִרְדּוּ בִדְגַת הַיָּם וּבְעוֹף הַשָּׁמַיִם וּבַבְּהֵמָה וּבְכָל־הָאָרֶץ וּבְכָל־הָרֶמֶשׂ
+    After:  וְיִרְדּוּ בִדְגַת הַיָּם
+            וּבְעוֹף הַשָּׁמַיִם
+            וּבַבְּהֵמָה
+            וּבְכָל־הָאָרֶץ
+            וּבְכָל־הָרֶמֶשׂ
+    (h15_b then attaches the relative clause הָרֹמֵשׂ עַל־הָאָרֶץ to וּבְכָל־הָרֶמֶשׂ
+     in the next merge pass — split-then-merge ordering.)
+
+  Architectural note (2026-04-29): first SPLIT-mode spec; uses the line-mode
+  evaluator and STRONG-SPLIT-CANDIDATE severity newly added to spec_runner.
+
+trigger:
+  line_anywhere:
+    coordinated_pp_count: { min: 3 }
+
+guards:
+  - poetic_register
+
+annotation_template: "S1 coordinated-PP enumeration ({pwc} prosodic words; split into one PP per cola)"
+suggested_action: SPLIT_AT_VAV_PP_BOUNDARIES
