@@ -652,6 +652,18 @@ def is_numeral_governed_noun(token: str) -> bool:
     return skel(tok) in UNIT_NOUNS
 
 
+# Vav + bound-prep skel patterns that look like PPs but are NOT (particles,
+# negations, interrogatives). Audit-driven exclusion list (Wave 6 + scanner
+# false-positive sweep 2026-04-30).
+VAV_BOUND_PREP_NON_PP_FALSE_POSITIVES = {
+    "ולא",      # vav + negation לֹא ("and not")
+    "ולכן",     # vav + adverb לָכֵן ("and therefore")
+    "ולמה",     # vav + interrogative לָמָּה ("and why")
+    "ולוא",     # vav + spelling variant לוֹא (older spelling of לֹא)
+    "ולוּ",     # vav + לוּ ("and if/would-that") — particle
+}
+
+
 def is_vav_coord_pp_head(token: str) -> bool:
     """True if token is a vav-prefixed PP head — וְאֶל, וְעַל, וְעִם, וּבְ-NN, וּלְ-NN, וּכְ-NN, וּמְ-NN.
 
@@ -661,6 +673,10 @@ def is_vav_coord_pp_head(token: str) -> bool:
     Niqqud-aware mem-discrimination (2026-04-29): when prefix is mem, requires
     the מן-prep signature (hireq + dagesh-on-next-consonant) to disambiguate
     מן-prep from vav + mem-noun (proper noun, mem-prefix common noun).
+
+    Particle-exclusion (2026-04-30 scanner audit): vav+bound-prep tokens that
+    are negations/adverbs/interrogatives (וְלֹא, וְלָכֵן, וְלָמָּה) are not PP
+    heads — closed-list exclusion via VAV_BOUND_PREP_NON_PP_FALSE_POSITIVES.
     """
     if MAQQEF in token:
         head = token.split(MAQQEF, 1)[0]
@@ -670,6 +686,9 @@ def is_vav_coord_pp_head(token: str) -> bool:
         s = skel(token)
         head_token = token
     if len(s) < 2 or s[0] != "ו":
+        return False
+    # Closed-list exclusion: vav+bound-prep+particle (not a PP)
+    if s in VAV_BOUND_PREP_NON_PP_FALSE_POSITIVES:
         return False
     # vav + free prep stem (וְאֶל / וְעַל / וְעִם / וְתַחַת / ...)
     if s[1:] in PREP_SKELETONS:
