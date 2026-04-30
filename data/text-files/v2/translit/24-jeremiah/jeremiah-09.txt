@@ -9,7 +9,8 @@ gaveru | va'aretz | ki | mera'ah | el | ra'ah | yatza'u | ve'oti | lo | yada'u
 ne'um | Yahweh
 
 9:3
-ish | mere'ehu | hishameru | ve'al | kol | ach | al | tivtachu
+ish | mere'ehu | hishameru
+ve'al | kol | ach | al | tivtachu
 ki | khol | ach | akov | ya'ko
 vekhol | rea | rakhil | yahalokh
 
@@ -43,9 +44,11 @@ lo | titnakem
 nafshi
 
 9:9
-al | heharim | esa | vekhi | vanehi | ve'al | ne'ot | midbar | kinah
+al | heharim | esa | vekhi | vanehi
+ve'al | ne'ot | midbar | kinah
 ki | Nitzetu | mibeli | ish | over | velo | shame'u
-kol | mikneh | me'of | hashamayim | ve'ad | behemah
+kol | mikneh | me'of | hashamayim
+ve'ad | behemah
 nadedu
 halakhu
 
@@ -63,12 +66,13 @@ Nitzetah | khamidbar | mibeli
 over
 
 9:12
-vaiyomer | Yahweh | al | azevam | et | torati | asher | natati | lifneihem | velo | shame'u | vekoli
+vaiyomer | Yahweh | al | azevam | et | torati | asher | natati | lifneihem
+velo | shame'u | vekoli
 velo | halkhu | vah
 
 9:13
-vaiyelekhu | acharei | sherirut | libam | ve'acharei | habe'alim | asher | limedum
-avotam
+vaiyelekhu | acharei | sherirut | libam
+ve'acharei | habe'alim | asher | limedum | avotam
 
 9:14
 lakhen | koh | amar | Yahweh | tzeva'ot | elohei | Yisra'el
@@ -84,8 +88,7 @@ ad | kaloti | otam
 9:16
 koh | amar | Yahweh | tzeva'ot
 hitbonu | vekir'u | lamkonot | utevo'einah
-ve'el | hachakhamot | shilchu
-vetavonah
+ve'el | hachakhamot | shilchu | vetavonah
 
 9:17
 utemaherenah
@@ -110,9 +113,8 @@ be'armenoteinu | lehakhrit | olal | michutz | bachurim | merechovot
 
 9:21
 daber | koh | ne'um | Yahweh
-venafelah | nivlat | ha'adam | kedomen
-al | penei | hasadeh | ukhe'amir | me'acharei | hakotzer
-ve'ein | me'asef
+venafelah | nivlat | ha'adam | kedomen | al | penei | hasadeh
+ukhe'amir | me'acharei | hakotzer | ve'ein | me'asef
 
 9:22
 koh | amar | Yahweh | al | yithalel | chakham | bechakhemato
@@ -130,7 +132,11 @@ ne'um | Yahweh
 ufakadti | al | kol | mul | be'arelah
 
 9:25
-al | Mitzrayim | ve'al | Yehudah | ve'al | Edom | ve'al | benei | Amon | ve'al | Mo'av
+al | Mitzrayim
+ve'al | Yehudah
+ve'al | Edom
+ve'al | benei | Amon
+ve'al | Mo'av
 ve'al | kol | ketzutzei | fe'ah
 haiyoshevim | bamidbar
 ki | khol | hagoyim | arelim

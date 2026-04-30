@@ -38,8 +38,8 @@ kadashai | bazit | ve'et | shabetotai
 chilalet
 
 22:9
-anshei | rakhil | hayu | vakh
-lema'an | shefokh | dam | ve'el | heharim | akhelu | vakh
+anshei | rakhil | hayu | vakh | lema'an | shefokh | dam
+ve'el | heharim | akhelu | vakh
 zimah
 asu | vetokhekh
 
@@ -64,8 +64,8 @@ ve'oti | shakhachat
 ne'um | Adonai | Yahweh
 
 22:13
-vehineh | hikeiti | khapi | el | bitz'ekh | asher | asit | ve'al | damekh
-asher | hayu
+vehineh | hikeiti | khapi | el | bitz'ekh | asher | asit
+ve'al | damekh | asher | hayu
 betokhekh
 
 22:14
@@ -90,7 +90,9 @@ vayhi | devar | Yahweh | elai | lemor
 
 22:18
 ben | adam | hayu | li | veit | Yisra'el | lesug
-kulam | nechoshet | uvedil | uvarzel | ve'oferet | betokh | kur
+kulam | nechoshet
+uvedil
+uvarzel | ve'oferet | betokh | kur
 sigim | kesef
 hayu
 
@@ -101,8 +103,9 @@ lakhen | hini | kovetz | etkhem | el | tokh
 Yerushalim
 
 22:20
-kevutzat | kesef | unechoshet | uvarzel | ve'oferet | uvedil | el | tokh | kur
-lafachat | alav | esh | lehantikh
+kevutzat | kesef | unechoshet
+uvarzel | ve'oferet
+uvedil | el | tokh | kur | lafachat | alav | esh | lehantikh
 ken | ekbotz | be'api | uvachamati
 vehinachti | vehitakhti | etkhem
 
@@ -133,8 +136,9 @@ hirbu | vetokhah
 
 22:26
 kohaneiha | chamesu | torati | vaychalelu | kadashai
-bein | kodesh | lechol | lo | hivdilu | uvein | hatame | letahor
-lo | hodi'u | umishabetotai | he'limu | eineihem
+bein | kodesh | lechol | lo | hivdilu
+uvein | hatame | letahor | lo | hodi'u
+umishabetotai | he'limu | eineihem
 va'echal
 betokham
 
@@ -160,7 +164,8 @@ ve'et | hager | asheku | belo | mishpat
 
 22:30
 va'avakesh | mehem | ish | goder | gader | ve'omed | baperetz | lefanai | be'ad | ha'aretz
-levilti | shachatah | velo | matzati
+levilti | shachatah
+velo | matzati
 
 22:31
 va'eshpokh | aleihem | za'mi | be'esh | evrati

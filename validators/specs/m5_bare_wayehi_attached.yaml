@@ -27,6 +27,7 @@ trigger:
 
 guards:
   - poetic_register
+  - next_line_is_wayyiqtol       # block re-absorbing post-S3-split wayyiqtol-headed lines
 
 annotation_template: "Bare ויהי forward-merge to temporal protasis ({pwc} prosodic words)"
 suggested_action: MERGE

@@ -61,8 +61,7 @@ umah | bakashatekh | od | vete'as
 9:13
 vatomer | Ester | im | al | hamelekh | tov
 yinaten | gam | machar | laiyehudim | asher | Beshushan | la'asot
-kedat | haiyom | ve'et | aseret | benei | Haman
-yitlu | al | ha'etz
+kedat | haiyom | ve'et | aseret | benei | Haman | yitlu | al | ha'etz
 
 9:14
 vaiyomer | hamelekh | lehe'asot | ken
@@ -72,7 +71,8 @@ ve'et | aseret | benei | Haman | talu
 9:15
 vaiyikahalu | haiyehudiyim | asher | Beshushan | gam | beyom | arba'ah | asar | lechodesh | Adar
 vaiyahargu | Veshushan
-shelosh | me'ot | ish | uvabbizah | lo | shalechu
+shelosh | me'ot | ish
+uvabbizah | lo | shalechu
 et | yadam
 
 9:16
@@ -99,7 +99,8 @@ yom | mishteh | vesimchah
 al | ken | haiyehudim | haperozim | haiyoshevim | be'arei | haperazot
 osim | et | yom | arba'ah | asar | lechodesh | Adar
 simchah | umishteh
-veyom | tov | umishloach | manot | ish | lere'ehu
+veyom | tov
+umishloach | manot | ish | lere'ehu
 
 9:20
 vaiyikhto | Maredokhai | et | hadevarim
@@ -118,7 +119,8 @@ vehachodesh | asher | Nehpakh | lahem | miyagoyn | lesimchah
 ume'evel
 leyom | tov
 la'asot | otam | yemei | mishteh | vesimchah
-umishloach | manot | ish | lere'ehu | umatanot | la'evyonim
+umishloach | manot | ish | lere'ehu
+umatanot | la'evyonim
 
 9:23
 vekibel | haiyehudim
@@ -144,13 +146,16 @@ umah | higia
 aleihem
 
 9:27
-kiyemu | vekibel | haiyehudim | aleihem | ve'al | zar'am | ve'al | kol | hanilvim | aleihem | velo | ya'avor
+kiyemu | vekibel | haiyehudim | aleihem
+ve'al | zar'am
+ve'al | kol | hanilvim | aleihem
+velo | ya'avor
 lihyot | osim | et | shenei | haiyamim | ha'eleh | kikhtavam
 vekhizmanam | bekhol | shanah | veshanah
 
 9:28
-vehaiyamim | ha'eleh | nizkarim | vena'asim | bekhol | dor | vador | mishpachah | umishpachah
-medinah | umedinah
+vehaiyamim | ha'eleh | nizkarim | vena'asim | bekhol | dor | vador | mishpachah
+umishpachah | medinah | umedinah
 ve'ir | va'ir | vimei | hapurim | ha'eleh | lo | ya'avru | mitokh | haiyehudim
 vezikhram | lo | yasuf | mizar'am
 
@@ -160,13 +165,15 @@ lekaiyem | et | igeret | hapurim | hazot
 hashenit
 
 9:30
-vaiyishlach | sefarim | el | kol | haiyehudim | el | sheva | ve'esrim | ume'ah | medinah
+vaiyishlach | sefarim | el | kol | haiyehudim | el | sheva | ve'esrim
+ume'ah | medinah
 malkhut | Achashveroosh
 divrei | shalom | ve'emet
 
 9:31
 lekaiyem | et | yemei | hapurim | ha'eleh | bizmaneihem | ka'asher | kiyam | aleihem | Maredokhai | haiyehudi | Ve'ester | hamalkah
-vekha'asher | kiyemu | al | nafsham | ve'al | zar'am
+vekha'asher | kiyemu | al | nafsham
+ve'al | zar'am
 divrei | hatzomot
 veza'akatam
 

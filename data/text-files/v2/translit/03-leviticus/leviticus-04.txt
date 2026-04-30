@@ -91,8 +91,7 @@ ve'et | kol | hadam | yishpokh | el | yesod | mizbach | ha'olah
 asher | petach | ohel | mo'ed
 
 4:19
-ve'et | kol | chelbo
-yarim | mimenu | vehiktir
+ve'et | kol | chelbo | yarim | mimenu | vehiktir
 hamizbechah
 
 4:20
@@ -132,7 +131,8 @@ ve'et | damo | yishpokh | el | yesod | mizbach | ha'olah
 
 4:26
 ve'et | kol | chelbo | yaktir | hamizbechah | kechelev
-zevach | hashelamim | vekhiper | alav | hakohen | mechatato
+zevach | hashelamim
+vekhiper | alav | hakohen | mechatato
 venislach | lo
 
 4:27

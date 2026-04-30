@@ -4,11 +4,13 @@ hayah | hadavar | hazeh | el | Yirmeyah
 me'et | Yahweh | lemor
 
 27:2
-koh | amar | Yahweh | elai | aseh | lekha | moserot | umotot
-unetatam | al | tzavarekha
+koh | amar | Yahweh | elai | aseh | lekha | moserot
+umotot | unetatam | al | tzavarekha
 
 27:3
-veshilachtam | el | melekh | Edom | ve'el | melekh | Mo'av | ve'el | melekh | benei | Amon
+veshilachtam | el | melekh | Edom
+ve'el | melekh | Mo'av
+ve'el | melekh | benei | Amon
 ve'el | melekh | Tzor
 ve'el | melekh | Tzidon
 beyad | mal'akhim | haba'im | Yerushalim | el | Tzidkiyahu
@@ -41,11 +43,15 @@ gedolim
 27:8
 vehayah | hagoy | vehamamlakhah | asher | lo | ya'avdu | oto | et | Nevukhadnetzar | melekh | Bavel
 ve'et | asher | lo | yiten | et | tzavaro | be'ol | melekh | Bavel
-bacherev | uvara'av | uvadever | efkod | al | hagoy | hahu | ne'um | Yahweh
+bacherev
+uvara'av
+uvadever | efkod | al | hagoy | hahu | ne'um | Yahweh
 ad | tumi | otam | beyado
 
 27:9
-ve'atem | al | tishme'u | el | nevi'eikhem | ve'el | kosemeikhem | ve'el | chalomoteikhem
+ve'atem | al | tishme'u | el | nevi'eikhem
+ve'el | kosemeikhem
+ve'el | chalomoteikhem
 ve'el | oneneikhem
 ve'el | kashafeikhem
 asher | hem | omerim | aleikhem | lemor
@@ -67,11 +73,13 @@ veyashav | bah
 
 27:12
 ve'el | Tzidkiyah | melekh | Yehudah | dibarti | kekhol | hadevarim | ha'eleh | lemor
-havi'u | et | tzavereikhem | be'ol | melekh | Bavel | ve'ivdu | oto | ve'amo | vichyu
+havi'u | et | tzavereikhem | be'ol | melekh | Bavel | ve'ivdu | oto
+ve'amo | vichyu
 
 27:13
-lamah | tamutu | atah | ve'amekha | bacherev
-bara'av | uvadaver | ka'asher | diber | Yahweh
+lamah | tamutu | atah
+ve'amekha | bacherev | bara'av
+uvadaver | ka'asher | diber | Yahweh
 el | hagoy | asher | lo | ya'avod
 et | melekh | Bavel
 
@@ -91,7 +99,8 @@ vehanevi'im
 hanibe'im | lakhem
 
 27:16
-ve'el | hakohanim | ve'el | kol | ha'am | hazeh | dibarti | lemor | koh | amar | Yahweh
+ve'el | hakohanim
+ve'el | kol | ha'am | hazeh | dibarti | lemor | koh | amar | Yahweh
 al | tishme'u | el | divrei | nevi'eikhem | hanibe'im | lakhem | lemor
 hineh | khelei | veit | Yahweh | mushavim | Mibavelah
 atah | meherah | ki | sheker
@@ -107,13 +116,15 @@ charebah
 27:18
 ve'im | nevi'im | hem
 ve'im | yesh | devar | Yahweh | itam
-yifge'u | na | Bayahweh | tzeva'ot
-levilti | vo'u | hakelim | hanotarim | beveit | Yahweh | uveit | melekh | Yehudah | Uvirushalim
-Bavelah
+yifge'u | na | Bayahweh | tzeva'ot | levilti | vo'u | hakelim | hanotarim | beveit | Yahweh
+uveit | melekh | Yehudah
+Uvirushalim | Bavelah
 
 27:19
 ki | khoh | amar | Yahweh | tzeva'ot | el | ha'amudim
-ve'al | haiyam | ve'al | hamekhonot | ve'al | yeter | hakelim
+ve'al | haiyam
+ve'al | hamekhonot
+ve'al | yeter | hakelim
 hanotarim | ba'ir | hazot
 
 27:20
@@ -125,8 +136,8 @@ Virushalim
 27:21
 ki | khoh | amar | Yahweh | tzeva'ot
 elohei | Yisra'el
-al | hakelim | hanotarim | beit | Yahweh | uveit | melekh | Yehudah
-Virushalim
+al | hakelim | hanotarim | beit | Yahweh
+uveit | melekh | Yehudah | Virushalim
 
 27:22
 Bavelah | yuva'u | veshamah | yihyu

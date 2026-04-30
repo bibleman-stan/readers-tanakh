@@ -22,8 +22,8 @@ verosh | Dagon | ushetei | kapot | yadav | kerutot | el | hamiftan
 rak | Dagon | Nish'ar | alav
 
 5:5
-al | ken | lo | yidrekhu | khohanei | Dagon | vekhol | haba'im | beit | Dagon | al | miftan | Dagon
-Be'ashdod | ad | haiyom | hazeh
+al | ken | lo | yidrekhu | khohanei | Dagon
+vekhol | haba'im | beit | Dagon | al | miftan | Dagon | Be'ashdod | ad | haiyom | hazeh
 
 5:6
 vatikhbad | yad | Yahweh | el | ha'ashdodim
@@ -46,7 +46,8 @@ elohei | Yisra'el
 
 5:9
 vayhi | acharei | hesabu | oto | vatehi | yad | Yahweh | ba'ir | mehumah | gedolah | me'od | vaiyakh | et | anshei | ha'ir
-mikaton | ve'ad | gadol | vaiyisateru | lahem
+mikaton
+ve'ad | gadol | vaiyisateru | lahem
 ofalim
 
 5:10

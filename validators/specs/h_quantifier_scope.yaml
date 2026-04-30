@@ -19,6 +19,7 @@ trigger:
 
 guards:
   - poetic_register
+  - next_line_is_vav_coord_pp     # block re-absorbing post-S1-split coord-PP enumeration members
 
 annotation_template: "H-quant quantifier stranded from scope-NP (combined {pwc} prosodic words)"
 suggested_action: MERGE

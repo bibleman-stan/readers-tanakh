@@ -28,6 +28,7 @@ guards:
                                    # the prior clause (e.g., אֶת־חַוָּה אִשְׁתּוֹ
                                    # following וְהָאָדָם יָדַע) — these are
                                    # complement chains, not new subjects
+  - next_line_is_wayyiqtol       # block re-absorbing post-S3-split wayyiqtol-headed lines
 
 annotation_template: "Subject NP + verb merge ({pwc} prosodic words)"
 suggested_action: MERGE

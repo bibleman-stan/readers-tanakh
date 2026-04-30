@@ -6,9 +6,9 @@ Kedarela'omer | melekh | Eilam | Vetid'al | melekh | Goyim
 
 14:2
 asu | milchamah | et | Bera | melekh | Sedom
-ve'et | Birsha
-melekh | Amorah
-Shin'av | melekh | Admah | Veshem'ever | melekh | Tzevoyim | umelekh | Bela
+ve'et | Birsha | melekh | Amorah
+Shin'av | melekh | Admah | Veshem'ever | melekh | Tzevoyim
+umelekh | Bela
 hi | Tzo'ar
 
 14:3
@@ -40,7 +40,10 @@ vegam | et | ha'emori
 haiyoshev | Bechatzon | Tamar
 
 14:8
-vaiyetze | melekh | Sedom | umelekh | Amorah | umelekh | Admah | umelekh | Tzevoyim
+vaiyetze | melekh | Sedom
+umelekh | Amorah
+umelekh | Admah
+umelekh | Tzevoyim
 umelekh | Bela
 hi | Tzo'ar
 vaiya'arkhu | itam | milchamah | be'emek
@@ -126,7 +129,9 @@ harimoti | yadi | el | Yahweh | el | elyon | koneh
 shamayim | va'aretz
 
 14:23
-im | michut | ve'ad | serokh | na'al | ve'im | ekach | mikol | asher | lakh | velo | tomar
+im | michut
+ve'ad | serokh | na'al | ve'im | ekach | mikol | asher | lakh
+velo | tomar
 ani
 he'esharti | et | Avram
 

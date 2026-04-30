@@ -1,6 +1,7 @@
 25:1
 vayhi | vishnat | hateshi'it | lemalekho | bachodesh | ha'asiri | be'asor | lachodesh
-ba | Nevukhadnetzar | melekh | Bavel | hu | vekhol | cheilo | al | Yerushalim
+ba | Nevukhadnetzar | melekh | Bavel | hu
+vekhol | cheilo | al | Yerushalim
 vaiyichan | aleiha | vaiyivnu | aleiha | dayek | saviv
 
 25:2
@@ -8,11 +9,12 @@ vatavo | ha'ir | bamatzor
 ad | ashtei | esreh | shanah | lamelekh | Tzidkiyahu
 
 25:3
-bachodesh | harevi'i | betish'ah | lachodesh | vaiyechezak | hara'av
-ba'ir | velo | hayah | lechem | le'am | ha'aretz
+bachodesh | harevi'i | betish'ah | lachodesh | vaiyechezak | hara'av | ba'ir
+velo | hayah | lechem | le'am | ha'aretz
 
 25:4
-vatibaka | ha'ir | vekhol | anshei | hamilchamah | halaylah | derekh | sha'ar | bein | hachomotayim | asher | al | gan | hamelekh
+vatibaka | ha'ir
+vekhol | anshei | hamilchamah | halaylah | derekh | sha'ar | bein | hachomotayim | asher | al | gan | hamelekh
 vekhasdim | al | ha'ir | saviv | vaiyelekh
 derekh | Ha'aravah
 
@@ -41,8 +43,7 @@ Yerushalim
 
 25:9
 vaiyisrof | et | beit | Yahweh
-ve'et | beit | hamelekh
-ve'et | kol | batei | Yerushalim | ve'et | kol | beit | gadol
+ve'et | beit | hamelekh | ve'et | kol | batei | Yerushalim | ve'et | kol | beit | gadol
 saraf | ba'esh
 
 25:10
@@ -84,8 +85,7 @@ usevakhah | verimonim | al | hakoteret | saviv | hakol | nechoshet
 vekha'eleh | la'amud | hasheni | al | hasevakhah
 
 25:18
-vaiyikach | rav | tabachim | et | Serayah | kohen | harosh
-ve'et | Tzefanyahu | kohen | mishneh
+vaiyikach | rav | tabachim | et | Serayah | kohen | harosh | ve'et | Tzefanyahu | kohen | mishneh
 ve'et | sheloshet
 shomerei | hasaf
 

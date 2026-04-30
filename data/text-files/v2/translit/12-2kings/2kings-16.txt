@@ -33,7 +33,8 @@ vaiyeshevu | sham | ad | haiyom | hazeh
 vaiyishlach | Achaz | mal'akhim | el | Tiglat | Peleser | melekh | Ashur | lemor
 avdekha | uvinkha
 ani
-aleh | vehoshi'eni | mikaf | melekh | Aram | umikaf | melekh | Yisra'el
+aleh | vehoshi'eni | mikaf | melekh | Aram
+umikaf | melekh | Yisra'el
 hakomim | alai
 
 16:8
@@ -44,8 +45,7 @@ uve'otzerot | beit | hamelekh | vaiyishlach | lemelekh | Ashur | shochad
 vaiyishma | elav | melekh | Ashur
 vaiya'al | melekh | Ashur | el | Damesek | vaiyitpeseha
 vaiyagleha
-Kirah | ve'et | Retzin
-hemit
+Kirah | ve'et | Retzin | hemit
 
 16:10
 vaiyelekh | hamelekh | Achaz | likrat | Tiglat | Pil'eser | melekh | Ashur | Dumesek
@@ -77,8 +77,10 @@ vaiyiten | oto | al | yerekh | hamizbeach
 tzafonah
 
 16:15
-vaytzavuh | hamelekh | Achoz | et | Uriyah | hakohen | lemor | al | hamizbeach | hagadol | hakter | et | olat | haboker | ve'et | minchat | ha'erev | ve'et | olat | hamelekh | ve'et | minchato | ve'et | olat | kol | am | ha'aretz | uminchatam | veniskeihem
-vekhol | dam | olah | vekhol | dam | zevach | alav | tizrok
+vaytzavuh | hamelekh | Achoz | et | Uriyah | hakohen | lemor | al | hamizbeach | hagadol | hakter | et | olat | haboker | ve'et | minchat | ha'erev | ve'et | olat | hamelekh | ve'et | minchato | ve'et | olat | kol | am | ha'aretz
+uminchatam | veniskeihem
+vekhol | dam | olah
+vekhol | dam | zevach | alav | tizrok
 umizbach | hanechoshet | yihyeh | li | levaker
 
 16:16

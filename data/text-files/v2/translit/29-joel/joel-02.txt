@@ -12,12 +12,14 @@ ve'acharav | lo | yosef | ad | shenei
 dor | vador
 
 2:3
-lefanav | akhelah | esh | ve'acharav | telahet | lehavah
-kegan | Eden | ha'aretz | lefanav | ve'acharav | midbar | shemamah
+lefanav | akhelah | esh
+ve'acharav | telahet | lehavah | kegan | Eden | ha'aretz | lefanav
+ve'acharav | midbar | shemamah
 vegam | peleitah | lo | hayetah | lo
 
 2:4
-kemar'eh | susim | mar'ehu | ukhefarashim | ken | yerutzun
+kemar'eh | susim | mar'ehu
+ukhefarashim | ken | yerutzun
 
 2:5
 kekol | markavot | al | rashei | heharim | yerakedun
@@ -60,7 +62,10 @@ ki | gadol | yom | Yahweh | venora | me'od | umi | yekhilenu
 
 2:12
 vegam | atah | ne'um | Yahweh
-shuvu | adai | bekhol | levavkhem | uvetzom | uvevekhi | uvemisped
+shuvu | adai | bekhol | levavkhem
+uvetzom
+uvevekhi
+uvemisped
 
 2:13
 vekir'u | levavkhem | ve'al | bigdeikhem
@@ -90,7 +95,8 @@ vekhalah | mechupatah
 2:17
 bein | ha'ulam | velamizbeach | yivku | hakohanim
 mesharetei | Yahweh
-veyomeru | chusah | Yahweh | al | amekha | ve'al | titen | nachalatekha | lecherpah | limshol | bam | goyim
+veyomeru | chusah | Yahweh | al | amekha
+ve'al | titen | nachalatekha | lecherpah | limshol | bam | goyim
 lamah | yomeru | va'amim
 aiyeh
 eloheihem
@@ -129,7 +135,8 @@ natenu | cheilam
 2:23
 uvenei | Tziyon | gilu | vesimchu | Bayahweh | eloheikhem
 ki | natan | lakhem | et | hamoreh | litzdakah
-vaiyored | lakhem | geshem | moreh | umalkoosh | barishon
+vaiyored | lakhem | geshem | moreh
+umalkoosh | barishon
 
 2:24
 umal'u | hagoranot | bar

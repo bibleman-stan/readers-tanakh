@@ -20,8 +20,8 @@ vaiya'as | labayit | chalonei
 shekufim | atumim
 
 6:5
-vaiyiven | al | kir | habayit | yatzoa | saviv | et | kirot | habayit | saviv | laheikhal | veladevir
-vaiya'as | tzela'ot | saviv
+vaiyiven | al | kir | habayit | yatzoa | saviv | et | kirot | habayit | saviv | laheikhal
+veladevir | vaiya'as | tzela'ot | saviv
 
 6:6
 haiyatzoa | hatachtonah | chamesh | ba'amah | rachebah | vehatikhonah | shesh | ba'amah | rachebah
@@ -40,7 +40,8 @@ lo | Nishma | babayit | behibanoto
 
 6:8
 petach | hatzela | hatikhonah | el | ketef | habayit | haymanit
-uvelulim | ya'alu | al | hatikhonah | umin | hatikhonah | el | hashelishim
+uvelulim | ya'alu | al | hatikhonah
+umin | hatikhonah | el | hashelishim
 
 6:9
 vaiyiven | et | habayit
@@ -128,7 +129,8 @@ komato
 vechamesh | amot | kenaf | hakeruv | ha'echat
 vechamesh | amot | kenaf | hakeruv
 hashenit
-eser | amot | miktzot | kenafav | ve'ad | ketzot | kenafav
+eser | amot | miktzot | kenafav
+ve'ad | ketzot | kenafav
 
 6:25
 ve'eser | ba'amah
@@ -142,8 +144,10 @@ hakeruv | hasheni
 
 6:27
 vaiyiten | et | hakeruvim | betokh | habayit | hapenimi | vaiyifresu | et | kanfei | hakeruvim
-vatiga | kenaf | ha'echad | bakir | ukhenaf | hakeruv | hasheni | noga'at
-bakir | hasheni | vekhanfeihem | el | tokh | habayit | noge'ot | kanaf | el | kanaf
+vatiga | kenaf | ha'echad | bakir
+ukhenaf | hakeruv | hasheni | noga'at
+bakir | hasheni
+vekhanfeihem | el | tokh | habayit | noge'ot | kanaf | el | kanaf
 
 6:28
 vaytzaf | et | hakeruvim

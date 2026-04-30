@@ -44,8 +44,7 @@ vaiyamot | sham
 1:8
 vaiyilachamu | venei | Yehudah | Birushalim
 vaiyilkedu | otah
-vaiyakuha | lefi | charev
-ve'et | ha'ir
+vaiyakuha | lefi | charev | ve'et | ha'ir
 shilechu | va'esh
 
 1:9
@@ -139,8 +138,7 @@ vaiyomeru | lo | har'enu | na | et | mevo | ha'ir | ve'asinu | imekha | chased
 
 1:25
 vaiyar'em | et | mevo | ha'ir
-vaiyaku | et | ha'ir | lefi | charev
-ve'et | ha'ish | ve'et | kol | mishpachto
+vaiyaku | et | ha'ir | lefi | charev | ve'et | ha'ish | ve'et | kol | mishpachto
 shilechu
 
 1:26
@@ -195,9 +193,10 @@ haharah
 ki | lo | netano | laredet | la'emek
 
 1:35
-vaiyo'el | ha'emori | lashevet | behar | Cheres | Be'aiyalon | Uvesha'alvim
-vatikhbad | yad | beit | Yosef
+vaiyo'el | ha'emori | lashevet | behar | Cheres | Be'aiyalon
+Uvesha'alvim | vatikhbad | yad | beit | Yosef
 vaiyihyu | lamas
 
 1:36
-ugevul | ha'emori | Mima'aleh | Akrabim | Mehasela | vama'elah
+ugevul | ha'emori | Mima'aleh | Akrabim | Mehasela
+vama'elah

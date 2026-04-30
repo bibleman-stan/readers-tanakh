@@ -1,7 +1,8 @@
 9:1
 vayhi | baiyom | hashemini
-kara | Mosheh | Le'aharon | ulevanav | uleziknei
-Yisra'el
+kara | Mosheh | Le'aharon
+ulevanav
+uleziknei | Yisra'el
 
 9:2
 vaiyomer | el | Aharon | kach | lekha | egel | ben | bakar | lechatat | ve'ayil | le'olah
@@ -12,11 +13,12 @@ lifnei | Yahweh
 9:3
 ve'el | benei | Yisra'el | tedaber | lemor
 kechu | se'ir | izim | lechatat
-ve'egel | vakheves | benei | shanah | temimim | le'olah
+ve'egel
+vakheves | benei | shanah | temimim | le'olah
 
 9:4
-veshor | va'ayil | lishlamim | lizboach | lifnei | Yahweh | uminchah
-belulah | vashamen
+veshor | va'ayil | lishlamim | lizboach | lifnei | Yahweh
+uminchah | belulah | vashamen
 ki | haiyom | Yahweh
 Nir'ah | aleikhem
 
@@ -33,9 +35,9 @@ veyera | aleikhem | kevod | Yahweh
 
 9:7
 vaiyomer | Mosheh | el | Aharon | kerav | el | hamizbeach | va'aseh | et | chatatekha | ve'et | olatekha
-vekhaper | ba'adkha | uve'ad | ha'am
-va'aseh | et | kareban | ha'am | vekhaper | ba'adam | ka'asher
-tzivah | Yahweh
+vekhaper | ba'adkha
+uve'ad | ha'am | va'aseh | et | kareban | ha'am
+vekhaper | ba'adam | ka'asher | tzivah | Yahweh
 
 9:8
 vaiyikrav | Aharon | el | hamizbeach
@@ -44,8 +46,7 @@ asher | lo
 
 9:9
 vaiyakrivu | benei | Aharon | et | hadam | elav | vaiyitbol | etzba'o | badam
-vaiyiten
-al | karnot | hamizbeach | ve'et | hadam | yatzak | el | yesod
+vaiyiten | al | karnot | hamizbeach | ve'et | hadam | yatzak | el | yesod
 hamizbeach
 
 9:10

@@ -4,7 +4,9 @@ vaydaber | Yahweh | el | Mosheh | lemor
 5:2
 tzav | et | benei | Yisra'el
 vishalechu | min | hamachaneh
-kol | tzarua | vekhol | zav | vekhol | tame | lanafesh
+kol | tzarua
+vekhol | zav
+vekhol | tame | lanafesh
 
 5:3
 mizakhar | ad | nekevah | teshalechu | el | michutz | lamachaneh | teshalechum
@@ -75,7 +77,8 @@ lo | Nitma'ah
 vehevi | ha'ish | et | ishto | el | hakohen
 vehevi | et | karebanah | aleiha | asirit | ha'eifah
 kemach | se'orim
-lo | yitzok | alav | shemen | velo | yiten | alav | levonah
+lo | yitzok | alav | shemen
+velo | yiten | alav | levonah
 ki | minchat | kena'ot | hu | minchat | zikaron | mazkeret | avon
 
 5:16
@@ -113,14 +116,15 @@ ishekh
 5:21
 vehishbia | hakohen | et | ha'ishah | bishvu'at | ha'alah
 ve'amar | hakohen | la'ishah
-yiten | Yahweh | otakh | le'alah | velishvu'ah | betokh | amekh
-betet | Yahweh | et | yerekhekh | nofelet
+yiten | Yahweh | otakh | le'alah
+velishvu'ah | betokh | amekh | betet | Yahweh | et | yerekhekh | nofelet
 ve'et | bitnekh
 tzavah
 
 5:22
 uva'u | hamayim | ham'arerim | ha'eleh | beme'ayikh
-latzbot | beten | velanpil | yarekh
+latzbot | beten
+velanpil | yarekh
 ve'amerah | ha'ishah
 amen | amen
 
@@ -131,7 +135,8 @@ umachah | el | mei | hamarim
 5:24
 vehishkah | et | ha'ishah
 et | mei | hamarim
-ham'ararim | uva'u | vah | hamayim | ham'ararim | lemarim
+ham'ararim
+uva'u | vah | hamayim | ham'ararim | lemarim
 
 5:25
 velakach | hakohen | miyad | ha'ishah | et | minchat | hakena'ot

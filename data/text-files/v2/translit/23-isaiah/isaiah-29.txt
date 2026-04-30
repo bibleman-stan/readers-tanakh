@@ -16,8 +16,8 @@ vahakimoti | alayikh | metzurot
 29:4
 veshafalt | me'eretz | tedaberi | ume'afar
 tishach | imratekh
-vehayah | ke'ov | me'eretz | kolekh | ume'afar
-imratekh | tetzaftzef
+vehayah | ke'ov | me'eretz | kolekh
+ume'afar | imratekh | tetzaftzef
 
 29:5
 vehayah | ke'avak | dak
@@ -25,7 +25,8 @@ hamon | zarayikh | ukhemotz | over | hamon | aritzim
 vehayah | lefeta | pit'om
 
 29:6
-me'im | Yahweh | tzeva'ot | tipaked | bera'am | uvera'ash
+me'im | Yahweh | tzeva'ot | tipaked | bera'am
+uvera'ash
 vekol | gadol
 sufah | use'arah | velahav
 esh | okhelah
@@ -54,8 +55,7 @@ na'u | velo | shekhar
 
 29:10
 ki | nasakh | aleikhem | Yahweh | ruach | tardemah
-vay'atzem | et | eineikhem
-et | hanevi'im | ve'et | rasheikhem | hachozim | kisah
+vay'atzem | et | eineikhem | et | hanevi'im | ve'et | rasheikhem | hachozim | kisah
 
 29:11
 vatehi | lakhem | chazut | hakol | kedivrei | hasefer | hechatum
@@ -74,7 +74,9 @@ sefer
 
 29:13
 vaiyomer | Adonai | ya'an | ki | Nigash | ha'am | hazeh
-befiv | uvisfatav | kibeduni | velibo
+befiv
+uvisfatav | kibeduni
+velibo
 richak | mimeni | vatehi | yir'atam | oti
 mitzvat | anashim | melumadah
 
@@ -122,7 +124,8 @@ venikhretu
 kol | shokedei | aven
 
 29:21
-machati'ei | adam | bedavar | velamokhiach | basha'ar | yekoshun
+machati'ei | adam | bedavar
+velamokhiach | basha'ar | yekoshun
 vaiyatu | vatohu
 tzadik
 

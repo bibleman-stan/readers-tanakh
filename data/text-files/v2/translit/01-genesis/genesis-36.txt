@@ -8,16 +8,14 @@ et | Adah | bat | Eilon | hachiti
 ve'et | Oholivamah | bat | Anah | bat | Tziv'on | hachivi
 
 36:3
-ve'et | Basemat | bat | Yishma'el
-achot | Nevayot
+ve'et | Basemat | bat | Yishma'el | achot | Nevayot
 
 36:4
 vateled | Adah | Le'esav | et | Elifaz | Uvasemat
 yaldah | et | Re'u'el
 
 36:5
-Ve'oholivamah | yaldah
-et | Ye'ush | ve'et | Ya'lam
+Ve'oholivamah | yaldah | et | Ye'ush | ve'et | Ya'lam
 ve'et | Korach
 eleh | benei | Esav | asher | yuledu | lo | be'eretz | Kena'an
 
@@ -67,8 +65,7 @@ eshet | Esav
 
 36:14
 ve'eleh | hayu | benei | Oholivamah | vat | Anah | bat | Tziv'on | eshet | Esav
-vateled | Le'esav
-et | Ye'ush | ve'et | Ya'lam
+vateled | Le'esav | et | Ye'ush | ve'et | Ya'lam
 ve'et | Korach
 
 36:15

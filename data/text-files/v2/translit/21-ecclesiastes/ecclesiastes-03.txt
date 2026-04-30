@@ -69,7 +69,8 @@ hi
 
 3:14
 yada'ti | ki | kol | asher | ya'aseh | ha'elohim | hu | yihyeh | le'olam
-alav | ein | lehosif | umimenu | ein | ligroa
+alav | ein | lehosif
+umimenu | ein | ligroa
 veha'elohim | asah
 sheiyir'u | milefanav
 
@@ -84,8 +85,7 @@ mekom | hamishpat | shamah | haresha | umekom | hatzedek
 shamah | harasha
 
 3:17
-amarti | ani | belibi
-et | hatzadik | ve'et | harasha
+amarti | ani | belibi | et | hatzadik | ve'et | harasha
 yishpot
 ha'elohim
 ki | et | lekhol | chefetz | ve'al | kol | hama'aseh | sham
@@ -96,10 +96,11 @@ ha'elohim | velir'ot
 shehem | behemah | hemah | lahem
 
 3:19
-ki | mikreh | venei | ha'adam | umikreh | habehemah | umikreh | echad | lahem
-kemot | zeh | ken | mot | zeh
-veruach | echad | lakol | umotar | ha'adam | min | habehemah | ayin | ki | hakol
-havel
+ki | mikreh | venei | ha'adam
+umikreh | habehemah
+umikreh | echad | lahem | kemot | zeh | ken | mot | zeh
+veruach | echad | lakol
+umotar | ha'adam | min | habehemah | ayin | ki | hakol | havel
 
 3:20
 hakol | holekh | el | makom | echad

@@ -15,8 +15,8 @@ uvaiyom | hashemini | yimol | besar | arelato
 
 12:4
 usheloshim | yom | usheloshet | yamim
-teshev | bidmei | tohorah
-bekhol | kodesh | lo | tiga | ve'el | hamikdash | lo | tavo | ad | melot
+teshev | bidmei | tohorah | bekhol | kodesh | lo | tiga
+ve'el | hamikdash | lo | tavo | ad | melot
 yemei | tohorah
 
 12:5
@@ -31,8 +31,8 @@ tavi | keves | ben | shenato | le'olah
 uven | yonah | ov | tor | lechatat | el | petach | ohel | mo'ed | el | hakohen
 
 12:7
-vehikrivo | lifnei | Yahweh | vekhiper | aleiha | vetaharah
-mimekor | dameiha
+vehikrivo | lifnei | Yahweh
+vekhiper | aleiha | vetaharah | mimekor | dameiha
 zot | torat | haiyoledet | lazakhar
 o | lanekevah
 
@@ -40,5 +40,6 @@ o | lanekevah
 ve'im | lo | timtza | yadah | dei | seh
 velakechah | shetei | torim | o | shenei | benei | yonah
 echad | le'olah
-ve'echad | lechatat | vekhiper | aleiha | hakohen
+ve'echad | lechatat
+vekhiper | aleiha | hakohen
 vetaherah

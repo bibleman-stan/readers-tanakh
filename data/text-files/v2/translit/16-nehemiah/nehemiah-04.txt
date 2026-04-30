@@ -4,12 +4,13 @@ ki | hechelu | haperutzim | lehisatem
 vaiyichar | lahem | me'od
 
 4:2
-vaiyiksheru | khulam | yachdav | lavo
-lehilachem | Birushalim | vela'asot | lo | to'ah
+vaiyiksheru | khulam | yachdav | lavo | lehilachem | Birushalim
+vela'asot | lo | to'ah
 
 4:3
 vanitpalel | el | eloheinu
-vana'amid | mishmar | aleihem | yomam | valaylah | mipeneihem
+vana'amid | mishmar | aleihem | yomam
+valaylah | mipeneihem
 
 4:4
 vaiyomer | Yehudah | kashal | koach | hasabal
@@ -34,9 +35,11 @@ va'a'amid | et | ha'am | lemishpachot | im | charvoteihem | ramecheihem
 vekashetoteihem
 
 4:8
-va'ere | va'akum | va'omar | el | hachorim | ve'el | haseganim | ve'el | yeter | ha'am | al | tire'u
-mipeneihem | et | Adonai | hagadol | vehanora | zekhoru
-vehilachamu | al | acheikhem | beneikhem | uvenoteikhem
+va'ere | va'akum | va'omar | el | hachorim
+ve'el | haseganim
+ve'el | yeter | ha'am | al | tire'u | mipeneihem | et | Adonai | hagadol | vehanora | zekhoru
+vehilachamu | al | acheikhem | beneikhem
+uvenoteikhem
 nesheikhem
 uvateikhem
 
@@ -64,7 +67,9 @@ ish | charbo | asurim | al | matenav | uvonim
 vehatokea | bashofar | etzli
 
 4:13
-va'omar | el | hachorim | ve'el | haseganim | ve'el | yeter | ha'am | hamelakhah | harbeh
+va'omar | el | hachorim
+ve'el | haseganim
+ve'el | yeter | ha'am | hamelakhah | harbeh
 urechavah
 va'anachnu | nifradim | al | hachomah
 rechokim

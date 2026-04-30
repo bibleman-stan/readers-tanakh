@@ -1,6 +1,7 @@
 2:1
 vayhi | bechodesh | Nisan | shenat | esrim | Le'artachshast | hamelekh | yayin | lefanav
-va'esa | et | haiyayin | va'etenah | lamelekh | velo | hayiti | ra | lefanav
+va'esa | et | haiyayin | va'etenah | lamelekh
+velo | hayiti | ra | lefanav
 
 2:2
 vaiyomer | li | hamelekh | madua | paneikha | ra'im | ve'atah | einekha | choleh | ein | zeh
@@ -38,7 +39,8 @@ igerot | yitenu | li | al | pachavot
 ever | Hanahar | asher | ya'aviruni | ad | asher | avo | el | Yehudah
 
 2:8
-ve'igeret | el | Asaf | shomer | hapardes | asher | lamelekh | asher | yiten | li | etzim | lekarot | et | sha'arei | habirah | asher | labayit | ulechomat | ha'ir
+ve'igeret | el | Asaf | shomer | hapardes | asher | lamelekh | asher | yiten | li | etzim | lekarot | et | sha'arei | habirah | asher | labayit
+ulechomat | ha'ir
 velabayit | asher | avo | elav | vaiyiten | li | hamelekh | keyad | elohai | hatovah | alai
 
 2:9
@@ -61,13 +63,14 @@ va'ehi | sham
 yamim | sheloshah
 
 2:12
-va'akum | laylah | ani | va'anashim | me'at | imi | velo | higadti | le'adam
-mah | elohai | noten | el | libi | la'asot
-Lirushalim | uvehemah | ein | imi | ki | im | habehemah | asher | ani
+va'akum | laylah | ani | va'anashim | me'at | imi
+velo | higadti | le'adam | mah | elohai | noten | el | libi | la'asot | Lirushalim
+uvehemah | ein | imi | ki | im | habehemah | asher | ani
 rokhev | bah
 
 2:13
-va'etze'ah | vesha'ar | hagai | laylah | ve'el | penei | Ein | Hatanin
+va'etze'ah | vesha'ar | hagai | laylah
+ve'el | penei | Ein | Hatanin
 ve'el | sha'ar
 ha'ashpot
 va'ehi | sover | bechomot | Yerushalim | asher | hem ferutzim
@@ -88,8 +91,11 @@ va'ashuv
 2:16
 vehaseganim | lo | yade'u | anah | halakhti | umah
 ani | oseh
-velaiyehudim | velakohanim | velachorim | velaseganim | uleyeter | oseh | hamelakhah | ad | ken
-lo | higadti
+velaiyehudim
+velakohanim
+velachorim
+velaseganim
+uleyeter | oseh | hamelakhah | ad | ken | lo | higadti
 
 2:17
 va'omar | alehem | atem | ro'im | hara'ah | asher | anachnu | vah

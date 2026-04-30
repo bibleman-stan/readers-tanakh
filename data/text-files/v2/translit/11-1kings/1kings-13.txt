@@ -41,8 +41,9 @@ use'adah | ve'etenah | lekha | matat
 
 13:8
 vaiyomer | ish | ha'elohim | el | hamelekh
-im | titen | li | et | chatzi | veitekha | lo | avo
-imakh | velo | okhal | lechem | velo | eshteh | mayim
+im | titen | li | et | chatzi | veitekha | lo | avo | imakh
+velo | okhal | lechem
+velo | eshteh | mayim
 bamakom | hazeh
 
 13:9
@@ -86,8 +87,10 @@ vaiyomer | elav | lekh | iti
 habayetah | ve'ekhol | lachem
 
 13:16
-vaiyomer | lo | ukhal | lashuv | itakh | velavo | itakh
-velo | okhal | lechem | velo | eshteh | itekha | mayim | bamakom | hazeh
+vaiyomer | lo | ukhal | lashuv | itakh
+velavo | itakh
+velo | okhal | lechem
+velo | eshteh | itekha | mayim | bamakom | hazeh
 
 13:17
 ki | davar | elai | bidvar | Yahweh | lo | tokhal | lechem
@@ -136,8 +139,7 @@ veha'aryeh | omed | etzel | hanevelah
 
 13:25
 vehineh | anashim | oerim | vaiyir'u | et | hanevelah | mushlekhet | baderekh
-ve'et | ha'aryeh | omed
-etzel | hanevelah
+ve'et | ha'aryeh | omed | etzel | hanevelah
 vaiyavo'u | vaydaberu | va'ir | asher | hanavi | hazaken
 yoshev | bah
 
@@ -164,7 +166,8 @@ et | hachamor
 13:29
 vaiyisa | hanavi | et | nivlat | ish | ha'elohim | vaiyanichehu | el | hachamor
 vayshivehu
-vaiyavo | el | ir | hanavi | hazaken | lispod | ulekavero
+vaiyavo | el | ir | hanavi | hazaken | lispod
+ulekavero
 
 13:30
 vaiyanach | et | nivlato | bekivro
@@ -180,7 +183,8 @@ et | atzmotai
 
 13:32
 ki | hayoh | yihyeh | hadavar | asher | kara | bidvar | Yahweh
-al | hamizbeach | asher | Beveit | El | ve'al | kol | batei | habamot | asher | be'arei | Shomeron
+al | hamizbeach | asher | Beveit | El
+ve'al | kol | batei | habamot | asher | be'arei | Shomeron
 
 13:33
 achar | hadavar | hazeh
@@ -191,4 +195,6 @@ vihi | kohanei | vamot
 
 13:34
 vayhi | badavar | hazeh | lechatat
-beit | Yarave'am | ulehakhchid | ulehashmid | me'al | penei | ha'adamah
+beit | Yarave'am
+ulehakhchid
+ulehashmid | me'al | penei | ha'adamah

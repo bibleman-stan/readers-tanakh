@@ -5,7 +5,8 @@ vaiyaku | et | Tziklag
 vaiyisrefu | otah | ba'esh
 
 30:2
-vaiyishbu | et | hanashim | asher | bah | mikaton | ve'ad | gadol | lo | hemitu
+vaiyishbu | et | hanashim | asher | bah | mikaton
+ve'ad | gadol | lo | hemitu
 ish | vaiyinhagu
 vaiyelekhu | ledarkam
 
@@ -63,7 +64,8 @@ vaiyashkuhu | mayim
 30:12
 vaiyitenu | lo | felach | develah | ushenei | tzimukim | vaiyokhal
 vatashov | rucho
-elav | ki | lo | akhal | lechem | velo | shatah | mayim
+elav | ki | lo | akhal | lechem
+velo | shatah | mayim
 sheloshah | yamim
 usheloshah | leilot
 
@@ -76,7 +78,9 @@ vaiya'azveni | adoni | ki | chaliti
 haiyom | sheloshah
 
 30:14
-anachnu | pashatnu | Negev | hakereti | ve'al | asher | Lihudah | ve'al | Negev | Kalev
+anachnu | pashatnu | Negev | hakereti
+ve'al | asher | Lihudah
+ve'al | Negev | Kalev
 ve'et | Tziklag
 sarafnu | va'esh
 
@@ -94,18 +98,22 @@ asher | lakechu | me'eretz | pelishtim
 ume'eretz | Yehudah
 
 30:17
-vaiyakem | David | mehaneshef | ve'ad | ha'erev | lemochoratam
+vaiyakem | David | mehaneshef
+ve'ad | ha'erev | lemochoratam
 velo | Nimlat | mehem | ish
 ki | im | arba | me'ot | ish | na'ar | asher | rakhevu | al | hagemalim
 vaiyanusu
 
 30:18
 vaiyatzel | David | et | kol | asher | lakechu
-Amalek | ve'et | shetei | nashav
-hitzil | David
+Amalek | ve'et | shetei | nashav | hitzil | David
 
 30:19
-velo | Ne'dar | lahem | min | hakaton | ve'ad | hagadol | ve'ad | banim | uvanot | umishalal
+velo | Ne'dar | lahem | min | hakaton
+ve'ad | hagadol
+ve'ad | banim
+uvanot
+umishalal
 ve'ad | kol | asher | lakechu | lahem
 hakol | heshiv | David
 
@@ -123,7 +131,8 @@ ha'am | asher | ito | vaiyigash | David | et | ha'am
 vaiyish'al | lahem | leshalom
 
 30:22
-vaiya'an | kol | ish | ra | uveliya'al | meha'anashim | asher | halekhu | im | David
+vaiya'an | kol | ish | ra
+uveliya'al | meha'anashim | asher | halekhu | im | David
 vaiyomeru | ya'an | asher | lo | halekhu | imi | lo | niten | lahem
 mehashalal | asher | hitzalnu
 ki | im | ish | et | ishto | ve'et | banav
@@ -137,12 +146,14 @@ vaiyiten | et | hagedud | haba | aleinu | beyadenu
 
 30:24
 umi | yishma | lakhem | ladavar | hazeh
-ki | kechelek | haiyored | bamilchamah | ukhechelek | haiyoshev | al | hakelim
+ki | kechelek | haiyored | bamilchamah
+ukhechelek | haiyoshev | al | hakelim
 yachdav | yachaloku
 
 30:25
 vayhi | mehaiyom | hahu | vama'elah
-vaysimeha | lechok | ulemishpat | Leyisra'el | ad | haiyom | hazeh
+vaysimeha | lechok
+ulemishpat | Leyisra'el | ad | haiyom | hazeh
 
 30:26
 vaiyavo | David | el | Tziklag
@@ -150,16 +161,24 @@ vayshalach | mehashalal | leziknei | Yehudah | lere'ehu | lemor
 hineh | lakhem | berakhah | mishelal | oyevei | Yahweh
 
 30:27
-la'asher | Beveit | El | vela'asher | Beramot | Negev | vela'asher | Beyatir
+la'asher | Beveit | El
+vela'asher | Beramot | Negev
+vela'asher | Beyatir
 
 30:28
-vela'asher | Ba'aro'er | vela'asher | Besifmot | vela'asher | Be'eshtemoa
+vela'asher | Ba'aro'er
+vela'asher | Besifmot
+vela'asher | Be'eshtemoa
 
 30:29
-vela'asher | Berakhal | vela'asher | be'arei | haiyerachme'eli | vela'asher | be'arei | hakeini
+vela'asher | Berakhal
+vela'asher | be'arei | haiyerachme'eli
+vela'asher | be'arei | hakeini
 
 30:30
-vela'asher | Becharemah | vela'asher | Bevor | Ashan | vela'asher | Ba'atakh
+vela'asher | Becharemah
+vela'asher | Bevor | Ashan
+vela'asher | Ba'atakh
 
 30:31
 vela'asher | Bechevron

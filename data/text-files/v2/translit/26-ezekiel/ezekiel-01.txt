@@ -14,8 +14,8 @@ al | nehar | Kevar | vatehi | alav | sham | yad | Yahweh
 
 1:4
 va'ere | vehineh | ruach | se'arah | ba'ah | min | hatzafon | anan | gadol | ve'esh | mitlakachat
-venogah | lo | saviv | umitokhah | ke'ein | hachashmal
-mitokh | ha'esh
+venogah | lo | saviv
+umitokhah | ke'ein | hachashmal | mitokh | ha'esh
 
 1:5
 umitokhah
@@ -50,7 +50,8 @@ ufenei | shor | mehasemol | le'arba'tan
 ufenei | nesher | le'arba'tan
 
 1:11
-ufeneihem | vekhanfeihem | perudot | milma'elah | le'ish | shetayim | choerot | ish
+ufeneihem
+vekhanfeihem | perudot | milma'elah | le'ish | shetayim | choerot | ish
 ushetayim | mekhasot | et | geviyoteihenah
 
 1:12
@@ -76,8 +77,11 @@ vehineh | ofan | echad | ba'aretz | etzel | hachaiyot
 le'arba'at | panav
 
 1:16
-mar'eh | ha'ofanim | uma'aseihem | ke'ein | tarshish
-udemut | echad | le'arba'tan | umar'eihem | uma'aseihem
+mar'eh | ha'ofanim
+uma'aseihem | ke'ein | tarshish
+udemut | echad | le'arba'tan
+umar'eihem
+uma'aseihem
 ka'asher | yihyeh | ha'ofan
 betokh | ha'ofan
 
@@ -113,8 +117,8 @@ hakerach | hanora | natui | al | rasheihem | milma'elah
 
 1:23
 vetachat | harakia | kanfeihem | yesharot
-ishah | el | achotah
-le'ish | shetayim | mekhasot | lahenah | ule'ish | shetayim | mekhasot | lahenah
+ishah | el | achotah | le'ish | shetayim | mekhasot | lahenah
+ule'ish | shetayim | mekhasot | lahenah
 et | geviyoteihem
 
 1:24
@@ -134,7 +138,9 @@ demut | kemar'eh | adam | alav | milma'elah
 
 1:27
 va'ere | ke'ein | chashmal | kemar'eh | esh | beit | lah | saviv | mimar'eh | matenav
-ulema'elah | umimar'eh | matenav | ulematah
+ulema'elah
+umimar'eh | matenav
+ulematah
 ra'iti | kemar'eh | esh
 venogah | lo | saviv
 

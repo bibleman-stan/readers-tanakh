@@ -30,12 +30,15 @@ ve'orot | eilim | me'adamim | ve'orot | techashim
 va'atzei | sitim
 
 35:8
-veshemen | lama'or | uvesamim | leshemen | hamishchah | veliktoret
+veshemen | lama'or
+uvesamim | leshemen | hamishchah
+veliktoret
 hasamim
 
 35:9
 ve'avnei | shoham
-ve'avnei | milu'im | la'efod | velachoshen
+ve'avnei | milu'im | la'efod
+velachoshen
 
 35:10
 vekhol | chakham | lev | bakhem
@@ -96,7 +99,8 @@ vaiyetze'u | kol | adat | benei | Yisra'el | milifnei | Mosheh
 35:21
 vaiyavo'u
 kol | ish | asher | nesa'o | libo
-vekhol | asher | nadevah | rucho | oto | hevi'u | et | terumat | Yahweh | limlekhet | ohel | mo'ed | ulekhol | avodato
+vekhol | asher | nadevah | rucho | oto | hevi'u | et | terumat | Yahweh | limlekhet | ohel | mo'ed
+ulekhol | avodato
 ulevigdei
 hakodesh
 
@@ -119,8 +123,7 @@ hevi'u
 
 35:25
 vekhol | ishah | chakhmat | lev | beyadeiha | tavu
-vaiyavi'u | matveh | et | hatekhelet | ve'et | ha'argaman | et | tola'at | hashani
-ve'et | hashesh
+vaiyavi'u | matveh | et | hatekhelet | ve'et | ha'argaman | et | tola'at | hashani | ve'et | hashesh
 
 35:26
 vekhol | hanashim | asher | nasa | liban | otanah | bechakhemah
@@ -134,7 +137,9 @@ ve'et | avnei | hamilu'im | la'efod | velachoshen
 
 35:28
 ve'et | habosem
-ve'et | hashamen | lema'or | uleshemen | hamishchah | veliktoret
+ve'et | hashamen | lema'or
+uleshemen | hamishchah
+veliktoret
 hasamim
 
 35:29
@@ -153,11 +158,13 @@ ruach | elohim | bechakhemah | bitvunah | uveda'at
 uvekhol | melakhah
 
 35:32
-velachsho | machashavot | la'asot | bazahav | uvakesef | uvanechoshet
+velachsho | machashavot | la'asot | bazahav
+uvakesef
+uvanechoshet
 
 35:33
-uvacharoshet | even | lemalot | uvacharoshet | etz
-la'asot | bekhol | melekhet | machashavet
+uvacharoshet | even | lemalot
+uvacharoshet | etz | la'asot | bekhol | melekhet | machashavet
 
 35:34
 ulehorot | natan | belibo | hu | Ve'oholi'av | ben | Achisamakh | lemateh | Dan

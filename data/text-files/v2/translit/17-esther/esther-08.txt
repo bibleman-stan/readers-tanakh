@@ -22,8 +22,8 @@ vatakom | Ester
 vata'amod | lifnei | hamelekh
 
 8:5
-vatomer | im | al | hamelekh | tov | ve'im | matzati | chen | lefanav | vekhasher | hadavar | lifnei | hamelekh
-vetovah | ani | be'einav
+vatomer | im | al | hamelekh | tov | ve'im | matzati | chen | lefanav
+vekhasher | hadavar | lifnei | hamelekh | vetovah | ani | be'einav
 yikatev | lehashiv | et | hasefarim | machashevet | Haman | ben | Hamedata | ha'agagi
 asher | katav | le'abed | et | haiyehudim | asher | bekhol | medinot | hamelekh
 
@@ -44,8 +44,13 @@ betaba'at | hamelekh | ki | khetav | asher | nikhtav | beshem | hamelekh | venac
 
 8:9
 vaiyikare'u | soferei | hamelekh | ba'et | hahi | bachodesh | hashelishi | hu | chodesh | Sivan | bishloshah | ve'esrim | bo
-vaiyikatev | kekhol | asher | tzivah | Maredokhai | el | haiyehudim | ve'el | ha'achashdarpenim | vehapachot | vesarei | hamedinot | asher | Mehodu | ve'ad | Kush | sheva | ve'esrim | ume'ah | medinah
-medinah | umedinah | kikhtavah | ve'am | va'am | kilshono
+vaiyikatev | kekhol | asher | tzivah | Maredokhai | el | haiyehudim
+ve'el | ha'achashdarpenim | vehapachot | vesarei | hamedinot | asher | Mehodu
+ve'ad | Kush | sheva | ve'esrim
+ume'ah | medinah | medinah
+umedinah | kikhtavah
+ve'am
+va'am | kilshono
 ve'el | haiyehudim | kikhtavam
 vekhilshonam
 
@@ -57,8 +62,11 @@ vaiyishlach | sefarim | beyad | haratzim | basusim | rokhevei | harekhesh | ha'a
 benei | haramakhim
 
 8:11
-asher | natan | hamelekh | laiyehudim | asher | bekhol | ir | va'ir | lehikahel | vela'amod | al | nafsham
-lehashmid | velaharog | ule'abed | et | kol | cheil | am | umedinah | hatzarim | otam
+asher | natan | hamelekh | laiyehudim | asher | bekhol | ir | va'ir | lehikahel
+vela'amod | al | nafsham | lehashmid
+velaharog
+ule'abed | et | kol | cheil | am
+umedinah | hatzarim | otam
 taf | venashim
 ushelalam | lavoz
 
@@ -68,9 +76,10 @@ bishloshah | asar | lechodesh | sheneim | asar
 hu | chodesh | Adar
 
 8:13
-patshegen | haketav | lehinaten | dat | bekhol | medinah | umedinah
-galui | lekhol | ha'amim | velihyot | haiyehudiyim | atudim | laiyom | hazeh | lehinakem
-me'oyeveihem
+patshegen | haketav | lehinaten | dat | bekhol | medinah
+umedinah
+galui | lekhol | ha'amim
+velihyot | haiyehudiyim | atudim | laiyom | hazeh | lehinakem | me'oyeveihem
 
 8:14
 haratzim | rokhevei | harekhesh | ha'achashteranim
@@ -92,7 +101,9 @@ vesason
 vikar
 
 8:17
-uvekhol | medinah | umedinah | uvekhol | ir | va'ir | mekom | asher | devar | hamelekh | vedato | magia
+uvekhol | medinah
+umedinah
+uvekhol | ir | va'ir | mekom | asher | devar | hamelekh | vedato | magia
 simchah | vesason | laiyehudim | mishteh
 veyom | tov | verabim | me'amei | ha'aretz | mityahadim
 ki | nafal | pachad | haiyehudim | aleihem

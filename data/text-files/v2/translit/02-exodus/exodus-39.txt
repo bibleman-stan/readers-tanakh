@@ -10,8 +10,10 @@ zahav | tekhelet | ve'argaman | vetola'at | shani | veshesh | mashezar
 
 39:3
 vayrake'u | et | pachei | hazahav | vekitzetz | petilim
-la'asot | betokh | hatekhelet | uvetokh | ha'argaman
-uvetokh | tola'at | hashani | uvetokh | hashesh | ma'aseh | choshev
+la'asot | betokh | hatekhelet
+uvetokh | ha'argaman
+uvetokh | tola'at | hashani
+uvetokh | hashesh | ma'aseh | choshev
 
 39:4
 ketefot | asu | lo
@@ -127,11 +129,11 @@ pa'amon | verimon | pa'amon | verimon | al | shulei | hame'il | saviv | lesharet
 ka'asher | tzivah | Yahweh | et | Mosheh
 
 39:27
-vaiya'asu | et | hakatenot | shesh | ma'aseh | oreg | Le'aharon | ulevanav
+vaiya'asu | et | hakatenot | shesh | ma'aseh | oreg | Le'aharon
+ulevanav
 
 39:28
-ve'et | hamitznefet | shesh
-ve'et | pa'arei | hamigba'ot
+ve'et | hamitznefet | shesh | ve'et | pa'arei | hamigba'ot
 shesh | ve'et | mikhnesei | habad
 shesh | mashezar
 

@@ -36,7 +36,9 @@ Ya'ako
 vekhol | zar'o | ito
 
 46:7
-banav | uvenei | vanav | ito | benotav | uvenot | banav
+banav
+uvenei | vanav | ito | benotav
+uvenot | banav
 vekhol | zar'o | hevi | ito | Mitzrayemah
 
 46:8
@@ -107,7 +109,8 @@ et | Menasheh
 ve'et | Efrayim
 
 46:21
-uvenei | Vinyamin | Bela | Vavekher | Ve'ashbel
+uvenei | Vinyamin | Bela
+Vavekher | Ve'ashbel
 Gera | Vena'aman
 Echi | Varosh | Mupim | Vechupim | Va'ared
 
@@ -158,12 +161,15 @@ ki | odkha | chai
 vaiyomer | Yosef | el | echav | ve'el | beit | aviv
 e'eleh
 ve'agidah | lefar'oh
-ve'omerah | elav | achai | uveit | avi | asher | be'eretz | Kena'an | ba'u | elai
+ve'omerah | elav | achai
+uveit | avi | asher | be'eretz | Kena'an | ba'u | elai
 
 46:32
 veha'anashim | ro'ei | tzon
 ki | anshei | mikneh | hayu
-vetzonam | uvekaram | vekhol | asher | lahem
+vetzonam
+uvekaram
+vekhol | asher | lahem
 hevi'u
 
 46:33
@@ -171,7 +177,8 @@ vehayah | ki | yikra | lakhem
 par'oh | ve'amar | mah | ma'aseikhem
 
 46:34
-va'amartem | anshei | mikneh | hayu | avadeikha | mine'ureinu | ve'ad | atah
+va'amartem | anshei | mikneh | hayu | avadeikha | mine'ureinu
+ve'ad | atah
 gam | anachnu
 gam | avoteinu
 ba'avur | teshevu | be'eretz | Goshen

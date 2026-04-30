@@ -4,7 +4,8 @@ vaiyimlokh | Aviyah | al | Yehudah
 
 13:2
 shaloosh | shanim | malakh | Birushalim
-veshem | imo | Mikhayahu | vat | Uri'el | min | Giv'ah | umilchamah | hayetah | bein | Aviyah
+veshem | imo | Mikhayahu | vat | Uri'el | min | Giv'ah
+umilchamah | hayetah | bein | Aviyah
 uvein | Yarave'am
 
 13:3
@@ -22,7 +23,8 @@ shema'uni | Yarave'am | vekhol | Yisra'el
 13:5
 halo | lakhem | lada'at
 ki | Yahweh | elohei | Yisra'el | natan | mamlakhah | Ledavid | al | Yisra'el
-le'olam | lo | ulevanav | berit | melach
+le'olam | lo
+ulevanav | berit | melach
 
 13:6
 vaiyakom | Yarave'am | ben | Nevat | eved
@@ -54,7 +56,10 @@ vekhohanim | mesharetim | Layahweh | benei | Aharon
 vehalviyim | bamlakhet
 
 13:11
-umaktirim | Layahweh | olot | baboker | baboker | uva'erev | ba'erev | uketoret | samim | uma'arekhet | lechem | al | hashulchan | hatahor | umenorat | hazahav | veneroteiha | leva'er | ba'erev | ba'erev
+umaktirim | Layahweh | olot | baboker | baboker
+uva'erev | ba'erev | uketoret | samim
+uma'arekhet | lechem | al | hashulchan | hatahor
+umenorat | hazahav | veneroteiha | leva'er | ba'erev | ba'erev
 ki | shomerim | anachnu
 et | mishmeret
 Yahweh | eloheinu
@@ -62,7 +67,8 @@ ve'atem
 azavtem | oto
 
 13:12
-vehineh | imanu | varosh | ha'elohim | vekhohanav | vachatzotzerot | hateru'ah
+vehineh | imanu | varosh | ha'elohim
+vekhohanav | vachatzotzerot | hateru'ah
 leharia | aleikhem | benei | Yisra'el | al | tilachamu | im | Yahweh | elohei | avoteikhem
 ki | lo | tatzlichu
 
@@ -89,7 +95,8 @@ mipenei | Yehudah
 vaiyitenem | elohim | beyadam
 
 13:17
-vaiyaku | vahem | Aviyah | ve'amo | makah | rabah
+vaiyaku | vahem | Aviyah
+ve'amo | makah | rabah
 vaiyipelu | chalalim | Miyisra'el
 chamesh | me'ot | elef | ish | bachur
 
@@ -101,8 +108,7 @@ elohei | avoteihem
 
 13:19
 vaiyirdof | Aviyah | acharei | Yarave'am
-vaiyilkod | mimenu | arim
-et | Beit | El | ve'et | benoteiha
+vaiyilkod | mimenu | arim | et | Beit | El | ve'et | benoteiha
 ve'et | Yeshanah
 ve'et | benoteiha
 ve'et | Efron | uvenoteiha

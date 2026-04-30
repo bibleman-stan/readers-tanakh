@@ -6,7 +6,8 @@ Nadav | Va'avihu | El'azar | Ve'itamar
 benei | Aharon
 
 28:2
-ve'asita | vigdei | kodesh | Le'aharon | achikha | lekhavod | uletif'aret
+ve'asita | vigdei | kodesh | Le'aharon | achikha | lekhavod
+uletif'aret
 
 28:3
 ve'atah | tedaber | el | kol | chakhmei | lev | asher | miletiv
@@ -17,14 +18,14 @@ ve'asu | et | bigdei | Aharon | lekadesho | lekhahanov | li
 ve'eleh | habegadim | asher | ya'asu | choshen | ve'efod | ume'il
 ukhetonet | tashbetz
 mitznefet | ve'avnet
-ve'asu | vigdei | kodesh | Le'aharon | achikha | ulevanav | lekhahanov | li
+ve'asu | vigdei | kodesh | Le'aharon | achikha
+ulevanav | lekhahanov | li
 
 28:5
 vehem | yikchu | et | hazahav
 ve'et | hatekhelet
 ve'et | ha'argaman
-ve'et | tola'at | hashani
-ve'et | hashesh
+ve'et | tola'at | hashani | ve'et | hashesh
 
 28:6
 ve'asu
@@ -174,7 +175,8 @@ verimon | al | shulei | hame'il | saviv
 
 28:35
 vehayah | al | Aharon | lesharet
-venishma | kolo | bevo'o | el | hakodesh | lifnei | Yahweh | uvetzeto
+venishma | kolo | bevo'o | el | hakodesh | lifnei | Yahweh
+uvetzeto
 velo | yamut
 
 28:36
@@ -200,7 +202,8 @@ mitznefet | shesh | ve'avnet | ta'aseh | ma'aseh | rokem
 28:40
 velivnei | Aharon | ta'aseh | khutonot
 ve'asita | lahem | avnetim
-umigba'ot | ta'aseh | lahem | lekhavod | uletif'aret
+umigba'ot | ta'aseh | lahem | lekhavod
+uletif'aret
 
 28:41
 vehilbashta | otam | et | Aharon | achikha | ve'et | banav
@@ -208,11 +211,12 @@ ito | umashachta | otam | umileta | et | yadam | vekidashta | otam
 vekhihanu | li
 
 28:42
-va'aseh | lahem | mikhnesei | vad | lekhasot
-besar | ervah | mimatenayim | ve'ad | yerekhayim | yihyu
+va'aseh | lahem | mikhnesei | vad | lekhasot | besar | ervah | mimatenayim
+ve'ad | yerekhayim | yihyu
 
 28:43
-vehayu | al | Aharon | ve'al | banav | bevo'am | el | ohel | mo'ed | o | vegishtam | el | hamizbeach | lesharet | bakodesh
+vehayu | al | Aharon
+ve'al | banav | bevo'am | el | ohel | mo'ed | o | vegishtam | el | hamizbeach | lesharet | bakodesh
 velo | yis'u | avon | vametu
 chukat | olam | lo
 ulezar'o | acharav

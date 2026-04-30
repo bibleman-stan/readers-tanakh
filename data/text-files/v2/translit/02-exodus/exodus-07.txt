@@ -35,8 +35,8 @@ ben | shalosh | ushemonim
 shanah | bedaberam | el | par'oh
 
 7:8
-vaiyomer | Yahweh
-el | Mosheh | ve'el | Aharon | lemor
+vaiyomer | Yahweh | el | Mosheh
+ve'el | Aharon | lemor
 
 7:9
 ki | yedaber | alekhem | par'oh | lemor
@@ -95,9 +95,13 @@ vehadagah | asher | Bay'or | tamut
 uva'ash | Hay'or | venil'u | Mitzrayim | lishtot | mayim | min | Hay'or
 
 7:19
-vaiyomer | Yahweh | el | Mosheh | emor | el | Aharon | kach | matekha | uneteh | yadekha | al | meimei | Mitzrayim | al | naharotam | al | ye'oreihem | ve'al | agmeihem | ve'al | kol | mikveh | meimeihem
+vaiyomer | Yahweh | el | Mosheh | emor | el | Aharon | kach | matekha | uneteh | yadekha | al | meimei | Mitzrayim | al | naharotam | al | ye'oreihem
+ve'al | agmeihem
+ve'al | kol | mikveh | meimeihem
 veyihyu | dam
-vehayah | dam | bekhol | eretz | Mitzrayim | uva'etzim | uva'avanim
+vehayah | dam | bekhol | eretz | Mitzrayim
+uva'etzim
+uva'avanim
 
 7:20
 vaiya'asu | khen | Mosheh | Ve'aharon | ka'asher | tzivah | Yahweh | vaiyarem | bamateh | vaiyakh | et | hamayim | asher | Bay'or
@@ -112,7 +116,8 @@ min | Hay'or | vayhi | hadam | bekhol | eretz | Mitzrayim
 
 7:22
 vaiya'asu | khen | chartumei | Mitzrayim | belateihem
-vaiyechezak | lev | par'oh | velo | shama | alehem | ka'asher
+vaiyechezak | lev | par'oh
+velo | shama | alehem | ka'asher
 diber | Yahweh
 
 7:23
@@ -144,10 +149,16 @@ hineh | anokhi | nogef | et | kol | gevulekha | batzfarde'im
 
 7:28
 vesharatz | Hay'or | tzefarde'im
-ve'alu | uva'u | beveitekha | uvachadar | mishkavekha
-ve'al | mitatekha | uveveit | avadeikha | uve'amekha
+ve'alu
+uva'u | beveitekha
+uvachadar | mishkavekha
+ve'al | mitatekha
+uveveit | avadeikha
+uve'amekha
 uvetanureikha | uvemish'aroteikha
 
 7:29
-uvekhah | uve'amekha | uvekhol | avadeikha | ya'alu
+uvekhah
+uve'amekha
+uvekhol | avadeikha | ya'alu
 hatzfarde'im

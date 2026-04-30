@@ -1,6 +1,5 @@
 9:1
-vayhi | kekhalot | Shelomoh
-livnot | et | beit | Yahweh | ve'et | beit | hamelekh
+vayhi | kekhalot | Shelomoh | livnot | et | beit | Yahweh | ve'et | beit | hamelekh
 ve'et | kol | cheshek | Shelomoh | asher | chafetz | la'asot
 
 9:2
@@ -15,7 +14,8 @@ lasum | shemi | sham | ad | olam
 vehayu | einai | velibi | sham | kol | haiyamim
 
 9:4
-ve'atah | im | telekh | lefanai | ka'asher | halakh | David | avikha | betom | levav | uveyosher
+ve'atah | im | telekh | lefanai | ka'asher | halakh | David | avikha | betom | levav
+uveyosher
 la'asot | kekhol | asher | tzivitikha
 chukai | umishpatai
 tishmor
@@ -26,7 +26,9 @@ ka'asher | dibarti | al | David | avikha | lemor
 lo | yikaret | lekha | ish | me'al | kise | Yisra'el
 
 9:6
-im | shov | teshuvun | atem | uveneikhem | me'acharai | velo | tishmeru | mitzvotai | chukotai
+im | shov | teshuvun | atem
+uveneikhem | me'acharai
+velo | tishmeru | mitzvotai | chukotai
 asher | natati | lifneikhem | vahalakhtem | va'avadtem | elohim | acherim
 vehishtachavitem | lahem
 
@@ -34,7 +36,8 @@ vehishtachavitem | lahem
 vehikhrati | et | Yisra'el | me'al | penei | ha'adamah | asher | natati | lahem
 ve'et | habayit | asher | hikdashti | lishmi
 ashalach
-me'al | panai | vehayah | Yisra'el | lemashal | velishninah | bekhol | ha'amim
+me'al | panai | vehayah | Yisra'el | lemashal
+velishninah | bekhol | ha'amim
 
 9:8
 vehabayit | hazeh | yihyeh | elyon
@@ -57,7 +60,9 @@ et | beit | Yahweh
 ve'et | beit | hamelekh
 
 9:11
-Chiram | melekh | Tzor | nisa | et | Shelomoh | ba'atzei | arazim | uva'atzei | veroshim | uvazahav
+Chiram | melekh | Tzor | nisa | et | Shelomoh | ba'atzei | arazim
+uva'atzei | veroshim
+uvazahav
 lekhol | cheftzo | az | yiten | hamelekh | Shelomoh | Lechiram | esrim | ir
 be'eretz | Hagalil
 
@@ -83,8 +88,7 @@ ve'et | Gazer
 
 9:16
 par'oh | melekh | Mitzrayim | alah | vaiyilkod | et | Gezer | vaiyisrefah | ba'esh
-ve'et | hakena'ani | haiyoshev | ba'ir
-harag
+ve'et | hakena'ani | haiyoshev | ba'ir | harag
 vaiyitenah | shiluchim | levito
 eshet | Shelomoh
 
@@ -100,7 +104,8 @@ ve'et | Ba'alat | ve'et | Tamar | bamidbar | ba'aretz
 ve'et | kol | arei | hamiskenot | asher | hayu | Lishlomoh
 ve'et | arei | harekhev
 ve'et | arei | haparashim
-ve'et | cheshek | Shelomoh | asher | chashak | livnot | Birushalim | Uvalevanon
+ve'et | cheshek | Shelomoh | asher | chashak | livnot | Birushalim
+Uvalevanon
 uvekhol | eretz | memshalto
 
 9:20

@@ -23,6 +23,7 @@ trigger:
 guards:
   - poetic_register
   - both_lines_have_finite_verb   # if both clauses are independent, don't merge
+  - next_line_is_wayyiqtol       # block re-absorbing post-S3-split wayyiqtol-headed lines
 
 annotation_template: "Verb-clause + DO-NP merge ({pwc} prosodic words)"
 suggested_action: MERGE

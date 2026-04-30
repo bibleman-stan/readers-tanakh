@@ -4,14 +4,15 @@ Menasheh | ven | Yosef | ve'eleh | shemot | benotav | Machlah | No'ah
 Vechagelah | Umilkah | Vetirtzah
 
 27:2
-vata'amodenah | lifnei | Mosheh | velifnei | El'azar | hakohen
+vata'amodenah | lifnei | Mosheh
+velifnei | El'azar | hakohen
 velifnei | hanesi'im
 vekhol | ha'edah | petach | ohel | mo'ed | lemor
 
 27:3
 avinu | met | bamidbar
-vehu | lo | hayah | betokh | ha'edah | hano'adim | al | Yahweh | ba'adat | Korach
-ki | vechet'o | met | uvanim | lo | hayu | lo
+vehu | lo | hayah | betokh | ha'edah | hano'adim | al | Yahweh | ba'adat | Korach | ki | vechet'o | met
+uvanim | lo | hayu | lo
 
 27:4
 lamah | yigara | shem | avinu | mitokh | mishpachto
@@ -98,7 +99,9 @@ kol | adat | benei | Yisra'el
 velifnei | El'azar | hakohen | ya'amod
 vesha'al | lo | bemishpat | ha'urim
 lifnei | Yahweh
-al | piv | yetze'u | ve'al | piv | yavo'u | hu | vekhol | benei | Yisra'el | ito
+al | piv | yetze'u
+ve'al | piv | yavo'u | hu
+vekhol | benei | Yisra'el | ito
 vekhol | ha'edah
 
 27:22

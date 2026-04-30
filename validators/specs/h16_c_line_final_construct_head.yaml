@@ -32,6 +32,7 @@ trigger:
 guards:
   - poetic_register
   - both_lines_have_finite_verb   # if both have finite verbs, independent clauses
+  - next_line_is_vav_coord_pp     # block re-absorbing post-S1-split coord-PP enumeration members
 
 annotation_template: "Line-final construct head stranded ({pwc} prosodic words)"
 suggested_action: MERGE

@@ -9,7 +9,8 @@ Dan | echad
 ve'al | gevul | Dan | mipe'at | kadim | ad | pe'at | yamah | Asher | echad
 
 48:3
-ve'al | gevul | Asher | mipe'at | kadimah | ve'ad | pe'at | yamah
+ve'al | gevul | Asher | mipe'at | kadimah
+ve'ad | pe'at | yamah
 Naftali | echad
 
 48:4
@@ -21,7 +22,8 @@ ve'al | gevul | Menasheh | mipe'at | kadimah | ad | pe'at | yamah
 Efrayim | echad
 
 48:6
-ve'al | gevul | Efrayim | mipe'at | kadim | ve'ad | pe'at | yamah
+ve'al | gevul | Efrayim | mipe'at | kadim
+ve'ad | pe'at | yamah
 Re'uven | echad
 
 48:7
@@ -67,7 +69,9 @@ aseret | alafim | kol | orekh | chamishah | ve'esrim | elef | verochav
 aseret | alafim
 
 48:14
-velo | yimkeru | mimenu | velo | yamer | velo | ya'avur
+velo | yimkeru | mimenu
+velo | yamer
+velo | ya'avur
 reshit | ha'aretz | ki | kodesh | Layahweh
 
 48:15
@@ -82,8 +86,8 @@ umipe'at | kadim | chamesh | me'ot | ve'arba'at | alafim | ufe'at | yamah
 chamesh | me'ot | ve'arba'at | alafim
 
 48:17
-vehayah | migrash | la'ir | tzafonah | chamishim | umatayim
-venegbah
+vehayah | migrash | la'ir | tzafonah | chamishim
+umatayim | venegbah
 chamishim | umatayim
 vekadimah | chamishim | umatayim
 veyamah
@@ -108,14 +112,18 @@ revi'it | tarimu | et | terumat | hakodesh | el | achuzat
 ha'ir
 
 48:21
-vehanotar | lanasi | mizeh | umizeh | litrumat | hakodesh | vela'achuzat | ha'ir | el | penei | chamishah | ve'esrim | elef | terumah | ad | gevul | kadimah
+vehanotar | lanasi | mizeh
+umizeh | litrumat | hakodesh
+vela'achuzat | ha'ir | el | penei | chamishah | ve'esrim | elef | terumah | ad | gevul | kadimah
 veyamah | al | penei | chamishah | ve'esrim | elef | al | gevul | yamah
 le'umat | chalakim | lanasi | vehayetah | terumat | hakodesh
 umikdash | habayit | betokho
 
 48:22
-ume'achuzat | halviyim | ume'achuzat | ha'ir | betokh | asher | lanasi | yihyeh
-bein | gevul | Yehudah | uvein | gevul | Binyamin
+ume'achuzat | halviyim
+ume'achuzat | ha'ir | betokh | asher | lanasi | yihyeh
+bein | gevul | Yehudah
+uvein | gevul | Binyamin
 lanasi | yihyeh
 
 48:23

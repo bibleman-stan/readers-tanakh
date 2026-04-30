@@ -7,7 +7,8 @@ chayil
 9:2
 velov | hayah | ven | ushemo | Sha'ul | bachur | vatov
 ve'ein | ish | mibenei | Yisra'el
-tov | mimenu | mishikhmo | vama'lah
+tov | mimenu | mishikhmo
+vama'lah
 gavoah | mikol | ha'am
 
 9:3
@@ -18,9 +19,10 @@ vekum | lekh | bakesh
 et | ha'atonot
 
 9:4
-vaiya'avor | behar | Efrayim | vaiya'avor | be'eretz | Shalishah | velo | matza'u
-vaiya'avru | ve'eretz | Sha'alim | va'ayin
-vaiya'avor | be'eretz | yemini | velo | matza'u
+vaiya'avor | behar | Efrayim | vaiya'avor | be'eretz | Shalishah
+velo | matza'u | vaiya'avru | ve'eretz | Sha'alim | va'ayin
+vaiya'avor | be'eretz | yemini
+velo | matza'u
 
 9:5
 hemah | ba'u | be'eretz | Tzuf
@@ -38,7 +40,8 @@ ulai | yagid | lanu | et | darkenu
 asher | halakhnu | aleiha
 
 9:7
-vaiyomer | Sha'ul | lena'aro | vehineh | nelekh | umah | navi | la'ish
+vaiyomer | Sha'ul | lena'aro | vehineh | nelekh
+umah | navi | la'ish
 ki | halechem | azal | mikeleinu | uteshurah | ein | lehavi
 le'ish | ha'elohim | mah | itanu
 
@@ -96,7 +99,8 @@ et | ozen | Shemu'el
 yom | echad | lifnei | vo | Sha'ul | lemor
 
 9:16
-ka'et | machar | eshlach | eleikha | ish | me'eretz | Binyamin | umeshachto | lenagid | al | ami | Yisra'el
+ka'et | machar | eshlach | eleikha | ish | me'eretz | Binyamin
+umeshachto | lenagid | al | ami | Yisra'el
 vehoshia | et | ami | miyad | pelishtim
 ki | ra'iti | et | ami
 ki | ba'ah | tza'akato | elai
@@ -124,11 +128,13 @@ vela'atonot | ha'oedot | lekha | haiyom | sheloshet | haiyamim
 al | tasem | et | libekha | lahem
 ki | Nimtza'u
 ulemi | kol | chemdat | Yisra'el
-halo | lekha | ulekhol | beit | avikha
+halo | lekha
+ulekhol | beit | avikha
 
 9:21
 vaiya'an | Sha'ul | vaiyomer | halo | ven | yemini | anokhi | mikatanei | shivtei | Yisra'el
-umishpachti | hatze'irah | mikol | mishpechot | shivtei | Vinyamin | velamah | dibarta | elai | kadavar | hazeh
+umishpachti | hatze'irah | mikol | mishpechot | shivtei | Vinyamin
+velamah | dibarta | elai | kadavar | hazeh
 
 9:22
 vaiyikach | Shemu'el | et | Sha'ul | ve'et | na'aro

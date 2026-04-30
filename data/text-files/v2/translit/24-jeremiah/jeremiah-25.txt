@@ -8,8 +8,10 @@ asher | diber | Yirmeyahu | hanavi | al | kol | am | Yehudah
 ve'el | kol | yoshevei | Yerushalim | lemor
 
 25:3
-min | shelosh | esreh | shanah | Leyoshiyahu | ven | Amon | melekh | Yehudah | ve'ad | haiyom | hazeh | zeh | shalosh | ve'esrim | shanah
-hayah | devar | Yahweh | elai | va'adaber | aleikhem | ashkeim | vedaber | velo | shema'tem
+min | shelosh | esreh | shanah | Leyoshiyahu | ven | Amon | melekh | Yehudah
+ve'ad | haiyom | hazeh | zeh | shalosh | ve'esrim | shanah
+hayah | devar | Yahweh | elai | va'adaber | aleikhem | ashkeim | vedaber
+velo | shema'tem
 
 25:4
 veshalach | Yahweh | aleikhem | et | kol | avadav | hanevi'im | hashkem | veshaloach
@@ -17,13 +19,16 @@ velo | shema'tem
 velo | hititem | et | azenekhem | lishmoa
 
 25:5
-lemor | shuvu | na | ish | midarko | hara'ah | umeroa | ma'aleikhem
+lemor | shuvu | na | ish | midarko | hara'ah
+umeroa | ma'aleikhem
 ushevu | al | ha'adamah | asher | natan | Yahweh | lakhem
 vela'avoteikhem | lemin | olam | ve'ad | olam
 
 25:6
-ve'al | telekhu | acharei | elohim | acherim | le'avedam | ulehishtachavot | lahem
-velo | takh'isu | oti | bema'aseh | yedeikhem | velo | ara | lakhem
+ve'al | telekhu | acharei | elohim | acherim | le'avedam
+ulehishtachavot | lahem
+velo | takh'isu | oti | bema'aseh | yedeikhem
+velo | ara | lakhem
 
 25:7
 velo | shema'tem | elai | ne'um | Yahweh
@@ -35,10 +40,15 @@ ya'an | asher | lo | shema'tem
 et | devarai
 
 25:9
-hini | sholeach | velakachti | et | kol | mishpechot | tzafon | ne'um | Yahweh | ve'el | Nevukhadretzar | melekh | Bavel | avdi
-vahavi'otim | al | ha'aretz | hazot | ve'al | yosheveiha | ve'al | kol | hagoyim | ha'eleh
-saviv | vehacharamtim
-vesamtim | leshamah | velishrekah | ulecharevot
+hini | sholeach
+velakachti | et | kol | mishpechot | tzafon | ne'um | Yahweh
+ve'el | Nevukhadretzar | melekh | Bavel | avdi
+vahavi'otim | al | ha'aretz | hazot
+ve'al | yosheveiha
+ve'al | kol | hagoyim | ha'eleh | saviv | vehacharamtim
+vesamtim | leshamah
+velishrekah
+ulecharevot
 olam
 
 25:10
@@ -54,7 +64,8 @@ ve'avedu | hagoyim | ha'eleh | et | melekh | Bavel
 shiv'im | shanah
 
 25:12
-vehayah | khimlot | shiv'im | shanah | efkod | al | melekh | Bavel | ve'al | hagoy | hahu | ne'um | Yahweh | et | avonam
+vehayah | khimlot | shiv'im | shanah | efkod | al | melekh | Bavel
+ve'al | hagoy | hahu | ne'um | Yahweh | et | avonam
 ve'al | eretz | Kasdim
 vesamti | oto | leshimot | olam
 
@@ -90,8 +101,8 @@ aleihem
 
 25:18
 et | Yerushalim | ve'et | arei | Yehudah
-ve'et | melakheiha | et | sareiha
-latet | otam | lecharebah | leshamah | lishrekah | veliklalah
+ve'et | melakheiha | et | sareiha | latet | otam | lecharebah | leshamah | lishrekah
+veliklalah
 kaiyom | hazeh
 
 25:19
@@ -99,8 +110,7 @@ et | par'oh | melekh | Mitzrayim | ve'et | avadav | ve'et | sarav
 ve'et | kol | amo
 
 25:20
-ve'et | kol | ha'erev
-ve'et | kol | malkhei | eretz | Ha'utz
+ve'et | kol | ha'erev | ve'et | kol | malkhei | eretz | Ha'utz
 ve'et | kol | malkhei | eretz | pelishtim
 ve'et | Ashkelon | ve'et | Azah | ve'et | Ekron
 ve'et | she'erit | Ashdod
@@ -110,8 +120,7 @@ et | Edom | ve'et | Mo'av
 ve'et | benei | Amon
 
 25:22
-ve'et | kol | malkhei | Tzor
-ve'et | kol | malkhei | Tzidon
+ve'et | kol | malkhei | Tzor | ve'et | kol | malkhei | Tzidon
 ve'et | malkhei | ha'i | asher | be'ever | haiyam
 
 25:23
@@ -152,7 +161,8 @@ Yahweh | tzeva'ot
 
 25:30
 ve'atah | tinave | aleihem | et | kol | hadevarim | ha'eleh
-ve'amarta | aleihem | Yahweh | mimarom | yish'ag | umime'on | kadesho | yiten | kolo
+ve'amarta | aleihem | Yahweh | mimarom | yish'ag
+umime'on | kadesho | yiten | kolo
 sha'og | yish'ag | al | navehu
 heidad | kedorekhim | ya'aneh | el | kol | yoshevei | ha'aretz
 
@@ -170,7 +180,9 @@ ye'or | miyarketei | aretz
 
 25:33
 vehayu | chalei | Yahweh | baiyom | hahu | miktzeh | ha'aretz
-ve'ad | ketzeh | ha'aretz | lo | yisafedu | velo | ye'asefu | velo | yikaveru
+ve'ad | ketzeh | ha'aretz | lo | yisafedu
+velo | ye'asefu
+velo | yikaveru
 ledomen | al | penei | ha'adamah | yihyu
 
 25:34

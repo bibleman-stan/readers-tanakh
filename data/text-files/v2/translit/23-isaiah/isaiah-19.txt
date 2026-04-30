@@ -1,7 +1,8 @@
 19:1
 masa | Mitzrayim
 hineh | Yahweh | rokhev | al | av | kal | uva | Mitzrayim
-vena'u | elilei | Mitzrayim | mipanav | ulevav | Mitzrayim
+vena'u | elilei | Mitzrayim | mipanav
+ulevav | Mitzrayim
 yimas | bekirbo
 
 19:2
@@ -105,11 +106,12 @@ venishba'ot | Layahweh | tzeva'ot
 Ir | Haheres | ye'amer | le'echat
 
 19:19
-baiyom | hahu | yihyeh | mizbeach | Layahweh | betokh | eretz | Mitzrayim | umatzevah | etzel | gevulah
-Layahweh
+baiyom | hahu | yihyeh | mizbeach | Layahweh | betokh | eretz | Mitzrayim
+umatzevah | etzel | gevulah | Layahweh
 
 19:20
-vehayah | le'ot | ule'ed | Layahweh | tzeva'ot | be'eretz | Mitzrayim
+vehayah | le'ot
+ule'ed | Layahweh | tzeva'ot | be'eretz | Mitzrayim
 ki | yitz'aku | el | Yahweh | mipenei | lochatzim
 veyishlach | lahem | moshia | varav
 vehitzilam
@@ -129,7 +131,8 @@ urefa'am
 
 19:23
 baiyom | hahu | tihyeh | mesilah | Mimitzrayim | Ashurah
-uva | Ashur | Bemitzrayim | Umitzrayim | Be'ashur
+uva | Ashur | Bemitzrayim
+Umitzrayim | Be'ashur
 ve'avedu | Mitzrayim
 et | Ashur
 
@@ -139,6 +142,7 @@ Ule'ashur | berakhah | bekerev | ha'aretz
 
 19:25
 asher | berakho | Yahweh | tzeva'ot | lemor
-barukh | ami | Mitzrayim | uma'aseh | yadai | Ashur
+barukh | ami | Mitzrayim
+uma'aseh | yadai | Ashur
 venachalati
 Yisra'el

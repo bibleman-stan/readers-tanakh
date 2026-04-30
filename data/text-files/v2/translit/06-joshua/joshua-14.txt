@@ -29,8 +29,8 @@ vaiyachleku | et | ha'aretz
 14:6
 vaiyigeshu | venei | Yehudah | el | Yehoshua | Bagilgal
 vaiyomer | elav | Kalev | ben | Yefuneh | hakenizi
-atah | yada'ta | et | hadavar | asher | diber | Yahweh | el | Mosheh | ish | ha'elohim | al | odotai | ve'al | odoteikha
-Bekadesh | Barnea
+atah | yada'ta | et | hadavar | asher | diber | Yahweh | el | Mosheh | ish | ha'elohim | al | odotai
+ve'al | odoteikha | Bekadesh | Barnea
 
 14:7
 ben | arba'im | shanah | anokhi | bishloach | Mosheh | eved | Yahweh | oti | Mikadesh | Barnea
@@ -45,7 +45,8 @@ acharei | Yahweh | elohai
 14:9
 vaiyishava | Mosheh | baiyom | hahu | lemor
 im | lo | ha'aretz | asher | darekhah | raglekha | bah
-lekha | tihyeh | lenachalah | ulevaneikha | ad | olam
+lekha | tihyeh | lenachalah
+ulevaneikha | ad | olam
 ki | mileta | acharei | Yahweh | elohai
 
 14:10
@@ -57,7 +58,10 @@ shanah
 
 14:11
 odeni | haiyom | chazak | ka'asher | beyom | sheloach | oti | Mosheh
-kekhochi | az | ukhekhochi | atah | lamilchamah | velatzet | velavo
+kekhochi | az
+ukhekhochi | atah | lamilchamah
+velatzet
+velavo
 
 14:12
 ve'atah | tenah | li | et | hahar | hazeh

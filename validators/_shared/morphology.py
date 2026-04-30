@@ -211,8 +211,10 @@ def is_finite_verb_skel(skeleton: str) -> bool:
     # wayyiqtol prefix — ו + (י|ת|א|נ) + verb stem
     # Covers: וי (3ms/3mp/2fp), ות (3fs/2ms/2fp/2mp), וא (1cs), ון (1cp)
     # Filter: if inner skeleton is in YIQTOL_KNOWN_NOUNS, it's vav+noun, not wayyiqtol.
+    # Length floor: shortest real wayyiqtol skel is 4 (וַיְהִי = "ויהי"); len-3 false-
+    # matches "ואל" (vav-prep אֶל), "ואת" (vav-DO-marker), etc. as wayyiqtol.
     if (
-        len(skeleton) >= 3
+        len(skeleton) >= 4
         and skeleton[0] == "ו"
         and skeleton[1] in YIQTOL_PREFIXES
     ):
@@ -634,6 +636,8 @@ M_PREFIX_NON_PARTICIPLE = {
     "מה", "מי", "מן", "מתי", "מאד", "מאז", "מבית", "מחוץ",
     "מעם", "מאת", "מצרים", "מואב", "משה", "מלך", "מקום", "מדבר",
     "מים", "מים", "מעי", "מעיים", "מאד", "מלאך", "מצוה", "מעל",
+    # מן-prep + adjective (1 Sam 5:9 audited 2026-04-29):
+    "מקטן", "מגדול", "מטף", "מזקן", "מקצה",
 }
 
 

@@ -70,7 +70,9 @@ yom | shelishi
 1:14
 vaiyomer | elohim | yehi | me'orot | birkia | hashamayim | lehavdil
 bein | haiyom | uvein | halayelah
-vehayu | le'otot | ulemo'adim | uleyamim
+vehayu | le'otot
+ulemo'adim
+uleyamim
 veshanim
 
 1:15
@@ -86,7 +88,10 @@ ve'et | hakokhavim
 vaiyiten | otam | elohim | birkia | hashamayim | leha'ir | al | ha'aretz
 
 1:18
-velimshol | baiyom | uvalaylah | ulahavdil | bein | ha'or | uvein | hachoshekh
+velimshol | baiyom
+uvalaylah
+ulahavdil | bein | ha'or
+uvein | hachoshekh
 vaiyar | elohim
 ki | tov
 
@@ -131,8 +136,11 @@ ki | tov
 1:26
 vaiyomer | elohim
 na'aseh | adam | betzalmenu | kidmutenu
-veyirdu | vidgat | haiyam | uve'of | hashamayim | uvabehemah | uvekhol | ha'aretz | uvekhol | haremes
-haromes | al | ha'aretz
+veyirdu | vidgat | haiyam
+uve'of | hashamayim
+uvabehemah
+uvekhol | ha'aretz
+uvekhol | haremes | haromes | al | ha'aretz
 
 1:27
 vaiyivra | elohim | et | ha'adam | betzalmo
@@ -152,7 +160,9 @@ ve'et | kol | ha'etz | asher | bo | feri | etz | zorea | zara
 lakhem | yihyeh | le'okhlah
 
 1:30
-ulekhol | chaiyat | ha'aretz | ulekhol | of | hashamayim | ulekhol | romes | al | ha'aretz | asher | bo | nefesh | chaiyah
+ulekhol | chaiyat | ha'aretz
+ulekhol | of | hashamayim
+ulekhol | romes | al | ha'aretz | asher | bo | nefesh | chaiyah
 et | kol | yerek | esev | le'okhlah
 vayhi | khen
 

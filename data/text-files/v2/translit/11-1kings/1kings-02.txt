@@ -8,8 +8,8 @@ kol | ha'aretz | vechazakta
 vehayita | le'ish
 
 2:3
-veshamarta | et | mishmeret | Yahweh | eloheikha | lalekhet | bidrakhav | lishmor | chukotav | mitzvotav | umishpatav | ve'edevotav
-kakatuv
+veshamarta | et | mishmeret | Yahweh | eloheikha | lalekhet | bidrakhav | lishmor | chukotav | mitzvotav
+umishpatav | ve'edevotav | kakatuv
 betorat | Mosheh
 lema'an | taskil | et | kol | asher | ta'aseh
 ve'et | kol | asher | tifneh
@@ -17,11 +17,13 @@ sham
 
 2:4
 lema'an | yakim | Yahweh | et | devaro | asher | diber | alai | lemor
-im | yishmeru | vaneikha | et | darkam | lalekhet | lefanai | be'emet | bekhol | levavam | uvekhol | nafsham | lemor
+im | yishmeru | vaneikha | et | darkam | lalekhet | lefanai | be'emet | bekhol | levavam
+uvekhol | nafsham | lemor
 lo | yikaret | lekha | ish | me'al | kise | Yisra'el
 
 2:5
-vegam | atah | yada'ta | et | asher | asah | li | Yo'av | ben | Tzeruyah | asher | asah | lishnei | sarei | tziv'ot | Yisra'el | Le'avner | ben | Ner | Vela'amasa | ven | Yeter | vaiyahargem
+vegam | atah | yada'ta | et | asher | asah | li | Yo'av | ben | Tzeruyah | asher | asah | lishnei | sarei | tziv'ot | Yisra'el | Le'avner | ben | Ner
+Vela'amasa | ven | Yeter | vaiyahargem
 vaiyasem | demei | milchamah | beshalom
 vaiyiten | demei | milchamah | bachagorato | asher | bematenav
 uvena'alo | asher | beraglav
@@ -58,7 +60,8 @@ vaiyikaver | be'ir | David
 2:11
 vehaiyamim | asher | malakh | David | al | Yisra'el
 arba'im | shanah
-Bechevron | malakh | sheva | shanim | Uvirushalim | malakh | sheloshim | veshalosh | shanim
+Bechevron | malakh | sheva | shanim
+Uvirushalim | malakh | sheloshim | veshalosh | shanim
 
 2:12
 Ushelomoh | yashav | al | kise
@@ -116,9 +119,13 @@ yutan
 et | Avishag | hashunamit | La'adoniyahu | achikha | le'ishah
 
 2:22
-vaiya'an | hamelekh | Shelomoh | vaiyomer | le'imo | velamah | at | sho'elet | et | Avishag | hashunamit | La'adoniyahu
+vaiya'an | hamelekh | Shelomoh | vaiyomer | le'imo
+velamah | at | sho'elet | et | Avishag | hashunamit | La'adoniyahu
 vesha'ali | lo | et | hamelukhah
-ki | hu | achi | hagadol | mimeni | velo | Ule'evyatar | hakohen | Uleyo'av
+ki | hu | achi | hagadol | mimeni
+velo
+Ule'evyatar | hakohen
+Uleyo'av
 ben | Tzeruyah
 
 2:23
@@ -184,12 +191,15 @@ veheshiv | Yahweh | et | damo | al | rosho | asher | paga | bishnei | anashim | 
 ve'avi | David
 lo | yada
 et | Avner | ben | Ner | sar | tzeva | Yisra'el
-ve'et | Amasa | ven | Yeter
-sar | tzeva | Yehudah
+ve'et | Amasa | ven | Yeter | sar | tzeva | Yehudah
 
 2:33
-veshavu | demeihem | berosh | Yo'av | uverosh | zar'o | le'olam
-Uledavid | ulezar'o | uleveito | ulekhis'o | yihyeh | shalom | ad | olam
+veshavu | demeihem | berosh | Yo'av
+uverosh | zar'o | le'olam
+Uledavid
+ulezar'o
+uleveito
+ulekhis'o | yihyeh | shalom | ad | olam
 me'im | Yahweh
 
 2:34

@@ -1,5 +1,6 @@
 5:1
-al | tevahel | al | pikha | velibekha | al | yemaher | lehotzi | davar | lifnei | ha'elohim
+al | tevahel | al | pikha
+velibekha | al | yemaher | lehotzi | davar | lifnei | ha'elohim
 ki | ha'elohim | bashamayim | ve'atah | al | ha'aretz
 al | ken | yihyu | devareikha | me'atim
 
@@ -74,7 +75,8 @@ veholid | ben | ve'ein | beyado | me'umah
 
 5:14
 ka'asher | yatza | mibeten | imo
-arom | yashuv | lalekhet | kesheba | ume'umah | lo | yisa | va'amalo
+arom | yashuv | lalekhet | kesheba
+ume'umah | lo | yisa | va'amalo
 sheiyolekh | beyado
 
 5:15
@@ -89,11 +91,13 @@ gam | kol | yamav | bachoshekh | yokhel | vekha'as | harbeh
 vechalyo | vakatzef
 
 5:17
-hineh | asher | ra'iti | ani | tov | asher | yapeh | le'ekhol | velishtot | velir'ot | tovah | bekhol | amalo | sheiya'amol | tachat | hashemesh | mispar | yemei | chaiyav | asher | natan | lo | ha'elohim
+hineh | asher | ra'iti | ani | tov | asher | yapeh | le'ekhol | velishtot
+velir'ot | tovah | bekhol | amalo | sheiya'amol | tachat | hashemesh | mispar | yemei | chaiyav | asher | natan | lo | ha'elohim
 ki | hu | chelko
 
 5:18
-gam | kal | ha'adam | asher | natan | lo | ha'elohim | osher | unekhasim | vehishlito | le'ekhol | mimenu | velaset | et | chelko
+gam | kal | ha'adam | asher | natan | lo | ha'elohim | osher | unekhasim | vehishlito | le'ekhol | mimenu
+velaset | et | chelko
 velismoach | ba'amalo
 zoh | matat | elohim
 hi

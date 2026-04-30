@@ -12,8 +12,9 @@ asher | sam | lo | baderekh | ba'aloto | Mimitzrayim
 
 15:3
 atah | lekh | vehikitah | et | Amalek | vehacharamtem | et | kol | asher | lo
-velo | tachmol | alav | vehematah | me'ish | ad | ishah | me'olel | ve'ad | yonek | mishor | ve'ad | seh
-migamal | ve'ad | chamor
+velo | tachmol | alav | vehematah | me'ish | ad | ishah | me'olel
+ve'ad | yonek | mishor
+ve'ad | seh | migamal | ve'ad | chamor
 
 15:4
 vayshama | Sha'ul | et | ha'am
@@ -40,7 +41,10 @@ ve'et | kol | ha'am
 hecherim | lefi | charev
 
 15:9
-vaiyachmol | Sha'ul | veha'am | al | Agag | ve'al | meitav | hatzon | vehabakar | vehamishnim | ve'al | hakarim | ve'al | kol | hatov
+vaiyachmol | Sha'ul | veha'am | al | Agag
+ve'al | meitav | hatzon | vehabakar | vehamishnim
+ve'al | hakarim
+ve'al | kol | hatov
 velo | avu
 hacharimam
 vekhol | hamelakhah | nemivzah | venames
@@ -162,7 +166,8 @@ ki | lo | adam | hu | lehinachem
 
 15:30
 vaiyomer | chatati
-atah | kabedeni | na | neged | ziknei | ami | veneged | Yisra'el
+atah | kabedeni | na | neged | ziknei | ami
+veneged | Yisra'el
 veshuv | imi | vehishtachaveiti
 Layahweh | eloheikha
 

@@ -34,11 +34,13 @@ etzli
 43:7
 vaiyomer | elai | ben | adam | et | mekom | kis'i | ve'et | mekom | kapot | raglai
 asher | eshkon | sham | betokh | benei | Yisra'el | le'olam
-velo | yetame'u | od | beit | Yisra'el | shem | kodshi | hemah | umalkheihem | biznutam
+velo | yetame'u | od | beit | Yisra'el | shem | kodshi | hemah
+umalkheihem | biznutam
 uvefigrei | malkheihem | bamotam
 
 43:8
-betitam | sipam | et | sipi | umezuzatam | etzel | mezuzati
+betitam | sipam | et | sipi
+umezuzatam | etzel | mezuzati
 vehakir | beini | uveineihem
 vetime'u | et | shem | kodshi | beto'avotam | asher | asu
 va'akhal | otam | be'api
@@ -51,7 +53,12 @@ atah | ven | adam | haged | et | beit | Yisra'el | et | habayit
 veyikalmu | me'avonoteihem | umadedu | et | takhenit
 
 43:11
-ve'im | Nikhlemu | mikol | asher | asu | tzurat | habayit | utekhunato | umotza'av | umoa'av | vekhol | tzurotav | ve'et | kol | chukotav | vekhol | tzurotaiv | vekhol | torotov | hoda | otam
+ve'im | Nikhlemu | mikol | asher | asu | tzurat | habayit | utekhunato
+umotza'av
+umoa'av
+vekhol | tzurotav | ve'et | kol | chukotav
+vekhol | tzurotaiv
+vekhol | torotov | hoda | otam
 ukheto | le'eineihem
 veyishmeru | et | kol | tzurato | ve'et | kol | chukotav
 ve'asu | otam
@@ -89,7 +96,8 @@ ravua | el | arba'at | reva'av
 43:17
 veha'azarah | arba | esreh | orekh | be'arba | esreh | rochav
 el | arba'at | reva'eiha
-vehagevul | saviv | otah | chatzi | ha'amah | vehacheik | lah | amah | saviv | uma'alotehu
+vehagevul | saviv | otah | chatzi | ha'amah | vehacheik | lah | amah | saviv
+uma'alotehu
 penot | kadim
 
 43:18
@@ -103,8 +111,10 @@ leshareteni
 par | ben | bakar | lechatat
 
 43:20
-velakachta | midamo | venatatah | al | arba | karnotav | ve'el | arba | pinot | ha'azarah
-ve'el | hagevul | saviv | vechiteta | oto | vekhipartahu
+velakachta | midamo | venatatah | al | arba | karnotav
+ve'el | arba | pinot | ha'azarah
+ve'el | hagevul | saviv | vechiteta | oto
+vekhipartahu
 
 43:21
 velakachta

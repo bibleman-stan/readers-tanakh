@@ -15,8 +15,8 @@ va'anavim | lachim | viveshim | lo | yokhel
 
 6:4
 kol | yemei | nizro
-mikol | asher | ye'aseh | migefen | haiyayin | mechartzanim | ve'ad | zag
-lo | yokhel
+mikol | asher | ye'aseh | migefen | haiyayin | mechartzanim
+ve'ad | zag | lo | yokhel
 
 6:5
 kol | yemei | neder | nizro
@@ -31,7 +31,9 @@ al | nefesh | met
 lo | yavo
 
 6:7
-le'aviv | ule'imo | le'achiv | ule'achoto | lo | yitama | lahem | bemotam
+le'aviv
+ule'imo | le'achiv
+ule'achoto | lo | yitama | lahem | bemotam
 ki | nezer | elohav | al | rosho
 
 6:8
@@ -74,7 +76,8 @@ ve'ayil | echad | tamim | lishlamim
 
 6:15
 vesal | matzot | solet | chalot | belulot | bashemen
-urekikei | matzot | meshuchim | bashamen | uminchatam
+urekikei | matzot | meshuchim | bashamen
+uminchatam
 veniskeihem
 
 6:16
@@ -121,7 +124,8 @@ ken | ya'aseh | al | torat | nizro
 vaydaber | Yahweh | el | Mosheh | lemor
 
 6:23
-daber | el | Aharon | ve'el | banav | lemor
+daber | el | Aharon
+ve'el | banav | lemor
 koh | tevarakhu
 et | benei | Yisra'el
 amor | lahem

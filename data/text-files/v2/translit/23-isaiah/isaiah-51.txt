@@ -1,13 +1,13 @@
 51:1
 shim'u | elai | rodefei | tzedek
 mevakshei | Yahweh
-habitu | el | tzur | chutzavtem | ve'el | makevet | bor
+habitu | el | tzur | chutzavtem
+ve'el | makevet | bor
 nukartem
 
 51:2
 habitu | el | Avraham | avikhem
-ve'el | Sarah
-techolelkhem
+ve'el | Sarah | techolelkhem
 ki | echad | kerativ | va'avarekhehu
 ve'arbehu
 
@@ -20,7 +20,8 @@ todah
 vekol | zimrah
 
 51:4
-hakshivu | elai | ami | ule'umi | elai | ha'azinu
+hakshivu | elai | ami
+ule'umi | elai | ha'azinu
 ki | torah | me'iti | tetze | umishpati
 le'or | amim
 argia
@@ -30,8 +31,7 @@ karov | tzidki | yatza | yish'i
 uzero'ai
 amim | yishpotu
 elai | iyim | yekavu
-ve'el | zero'i
-yeyachelun
+ve'el | zero'i | yeyachelun
 
 51:6
 se'u | lashamayim | eineikhem | vehabitu | el | ha'aretz | mitachat | ki | shamayim | ke'ashan | Nimlachu | veha'aretz | kabeged | tivleh
@@ -42,7 +42,8 @@ vetzidkati | lo | techat
 
 51:7
 shim'u | elai | yode'ei | tzedek | am | torati | velibam
-al | tire'u | cherpat | enoosh | umigidufotam | al | techatu
+al | tire'u | cherpat | enoosh
+umigidufotam | al | techatu
 
 51:8
 ki | khabeged | yokhlem | ash | vekhatzemer
@@ -93,8 +94,11 @@ galav | Yahweh | tzeva'ot
 shemo
 
 51:16
-va'asim | devarai | befikha | uvetzel | yadi | kisitikha
-lintoa | shamayim | velisod | aretz | velemor | Letziyon | ami | atah
+va'asim | devarai | befikha
+uvetzel | yadi | kisitikha
+lintoa | shamayim
+velisod | aretz
+velemor | Letziyon | ami | atah
 
 51:17
 hit'ori | hit'ori | kumi | Yerushalim | asher | shatit | miyad | Yahweh
@@ -129,4 +133,5 @@ od
 51:23
 vesamtiha | beyad | mogayikh | asher | ameru | lenafshekh
 shechi | vena'avorah
-vatasimi | kha'aretz | gevekh | vekhachutz | la'oerim
+vatasimi | kha'aretz | gevekh
+vekhachutz | la'oerim

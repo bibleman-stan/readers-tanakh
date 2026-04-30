@@ -7,8 +7,7 @@ bimkom | asher | yishchatu | et | ha'olah | yishchatu | et | ha'asham
 ve'et | damo | yizrok | al | hamizbeach | saviv
 
 7:3
-ve'et | kol | chelbo
-yakriv | mimenu | et | ha'alyah
+ve'et | kol | chelbo | yakriv | mimenu | et | ha'alyah
 ve'et | hachelev
 hamkhaseh | et | hakerev
 
@@ -125,7 +124,8 @@ asher | yakriv | mimenah | isheh | Layahweh
 venikhretah | hanefesh | ha'okhelet | me'ameiha
 
 7:26
-vekhol | dam | lo | tokhelu | bekhol | moshevoteikhem | la'of | velabehemah
+vekhol | dam | lo | tokhelu | bekhol | moshevoteikhem | la'of
+velabehemah
 
 7:27
 kol | nefesh | asher | tokhal | kol | dam | venikhretah | hanefesh | hahiv | me'ameiha
@@ -159,12 +159,13 @@ lo | tihyeh | shok | haiyamin | lemanah
 7:34
 ki | et | chazeh | hatenufah | ve'et | shok | haterumah | lakachti | me'et | benei | Yisra'el
 mizivchei | shalmeihem
-va'eten | otom | Le'aharon | hakohen | ulevanav | lechok | olam
+va'eten | otom | Le'aharon | hakohen
+ulevanav | lechok | olam
 me'et | benei | Yisra'el
 
 7:35
-zot | mishchat | Aharon | umishchat | banav | me'ishei
-Yahweh
+zot | mishchat | Aharon
+umishchat | banav | me'ishei | Yahweh
 beyom | hikriv | otam | lekhahen | Layahweh
 
 7:36
@@ -173,7 +174,11 @@ me'et | benei | Yisra'el
 chukat | olam | ledorotam
 
 7:37
-zot | hatorah | la'olah | laminchah | velachatat | vela'asham | velammilu'im | ulezevach
+zot | hatorah | la'olah | laminchah
+velachatat
+vela'asham
+velammilu'im
+ulezevach
 hashelamim
 
 7:38

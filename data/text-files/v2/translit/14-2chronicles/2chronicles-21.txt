@@ -11,8 +11,9 @@ Ushefatyahu
 kol | eleh | benei | Yehoshafat | melekh | Yisra'el
 
 21:3
-vaiyiten | lahem | avihem | matanot | rabot | lekhesef | ulezahav | ulemigdanot
-im | arei | metzurot | Bihudah
+vaiyiten | lahem | avihem | matanot | rabot | lekhesef
+ulezahav
+ulemigdanot | im | arei | metzurot | Bihudah
 ve'et | hamamlakhah | natan | Lihoram
 ki | hu | habekhor
 
@@ -35,7 +36,8 @@ be'einei | Yahweh
 21:7
 velo | avah | Yahweh | lehashchit | et | beit | David | lema'an | haberit
 asher | karat | Ledavid
-vekha'asher | amar | latet | lo | nir | ulevanav
+vekha'asher | amar | latet | lo | nir
+ulevanav
 kol | haiyamim
 
 21:8
@@ -62,7 +64,8 @@ vaiyadach | et | Yehudah
 21:12
 vaiyavo | elav | mikhtav | Me'eliyahu | hanavi | lemor
 koh | amar | Yahweh | elohei | David | avikha
-tachat | asher | lo | halakhta | bedarkhei | Yehoshafat | avikha | uvedarkhei
+tachat | asher | lo | halakhta | bedarkhei | Yehoshafat | avikha
+uvedarkhei
 Asa | melekh | Yehudah
 
 21:13
@@ -94,7 +97,8 @@ keton | banav
 ve'acharei | kol | zot | negafo | Yahweh | beme'av | locholi | le'ein | marpe
 
 21:19
-vayhi | leyamim | miyamim | ukhe'et | tzet | haketz | leyamim | shenayim | yatze'u | me'av | im | chalyo
+vayhi | leyamim | miyamim
+ukhe'et | tzet | haketz | leyamim | shenayim | yatze'u | me'av | im | chalyo
 vaiyamot
 betachalu'im | ra'im
 velo | asu | lo | amo | serefah
@@ -104,4 +108,5 @@ kisrefat | avotav
 ben | sheloshim | ushetayim | hayah | vemalekho
 ushemoneh | shanim | malakh | Birushalim
 vaiyelekh | belo | chemdah
-vaiyikberuhu | be'ir | David | velo | bekivrot | hamelakhim
+vaiyikberuhu | be'ir | David
+velo | bekivrot | hamelakhim

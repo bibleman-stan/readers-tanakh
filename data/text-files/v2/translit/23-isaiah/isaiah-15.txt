@@ -4,14 +4,14 @@ ki | beleil | shudad | Ar | Mo'av | Nidmah
 ki | beleil | shudad | Kir | Mo'av | Nidmah
 
 15:2
-alah | habayit | Vedivon | habamot | levekhi
-al | Nevo | ve'al | Meideva | Mo'av | yeyelil | bekhol | roshav | karechah
+alah | habayit | Vedivon | habamot | levekhi | al | Nevo
+ve'al | Meideva | Mo'av | yeyelil | bekhol | roshav | karechah
 kol | zakan | geru'ah
 
 15:3
 bechutzotav
-chageru | sak
-al | gagoteiha | uvirchoteiha | kuloh | yeyelil | yored | babekhi
+chageru | sak | al | gagoteiha
+uvirchoteiha | kuloh | yeyelil | yored | babekhi
 
 15:4
 vatiz'ak | Cheshbon | Ve'el'aleh | ad | Yahatz
@@ -48,5 +48,6 @@ Uve'er | Eilim | yilatah
 ki | mei | Dimon | mal'u | dam
 ki | ashit | al | Dimon
 nosafot
-lifleitat | Mo'av | aryeh | velish'erit
+lifleitat | Mo'av | aryeh
+velish'erit
 adamah

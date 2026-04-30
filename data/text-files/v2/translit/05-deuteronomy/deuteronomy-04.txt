@@ -49,7 +49,8 @@ asher | anokhi | noten | lifneikhem | haiyom
 4:9
 rak | hishamer | lekha | ushemor | nafshekha | me'od | pen | tishkach | et | hadevarim | asher | ra'u | eineikha | ufen | yasuru | milevavekha
 kol | yemei | chaiyeikha
-vehoda'tam | levaneikha | velivnei | vaneikha
+vehoda'tam | levaneikha
+velivnei | vaneikha
 
 4:10
 yom | asher | amadta | lifnei | Yahweh | eloheikha | Bechorev
@@ -78,8 +79,8 @@ luchot | avanim
 4:14
 ve'oti | tzivah | Yahweh | ba'et | hahiv
 lelamed | etkhem
-chukim | umishpatim | la'asotekhem | otam | ba'aretz
-asher | atem | oerim | shamah | lerishtah
+chukim
+umishpatim | la'asotekhem | otam | ba'aretz | asher | atem | oerim | shamah | lerishtah
 
 4:15
 venishmartem | me'od | lenafshoteikhem
@@ -137,7 +138,8 @@ esh | okhelah
 hu | el | kana
 
 4:25
-ki | tolid | banim | uvenei | vanim | venoshantem
+ki | tolid | banim
+uvenei | vanim | venoshantem
 ba'aretz | vehishchatem | va'asitem | pesel | temunat | kol | va'asitem | hara | be'einei | Yahweh | eloheikha | lehakh'iso
 
 4:26
@@ -158,7 +160,8 @@ velo | yokhlun
 velo | yerichun
 
 4:29
-uvikashtem | misham | et | Yahweh | eloheikha | umatzata
+uvikashtem | misham | et | Yahweh | eloheikha
+umatzata
 ki | tidreshenu | bekhol | levavekha | uvekhol | nafshekha
 
 4:30
@@ -186,7 +189,11 @@ vaiyechi
 
 4:34
 o | hanisah | elohim | lavo | lakachat | lo | goy | mikerev | goy
-bemasot | be'otot | uvemoftim | uvemilchamah | uveyad | chazakah | uvizroa | netuyah
+bemasot | be'otot
+uvemoftim
+uvemilchamah
+uveyad | chazakah
+uvizroa | netuyah
 uvemora'im
 gedolim
 kekhol | asher | asah | lakhem | Yahweh | eloheikhem | Bemitzrayim
@@ -198,7 +205,8 @@ ki | Yahweh
 hu | ha'elohim | ein | od | milvado
 
 4:36
-min | hashamayim | hishmi'akha | et | kolo | leyasereka | ve'al | ha'aretz | her'akha | et | isho | hagedolah
+min | hashamayim | hishmi'akha | et | kolo | leyasereka
+ve'al | ha'aretz | her'akha | et | isho | hagedolah
 udevarav | shama'ta | mitokh | ha'esh
 
 4:37
@@ -218,7 +226,8 @@ ve'al | ha'aretz | mitachat | ein | od
 4:40
 veshamarta | et | chukav | ve'et | mitzvotav | asher | anokhi | metzavekha | haiyom
 asher | yitav | lekha | ulevaneikha
-achareikha | ulema'an | ta'arikh | yamim | al | ha'adamah
+achareikha
+ulema'an | ta'arikh | yamim | al | ha'adamah
 asher | Yahweh | eloheikha | noten | lekha
 kol | haiyamim
 
@@ -250,8 +259,8 @@ betzetam | Mimitzrayim
 4:46
 be'ever | Haiyarden | bagay | mul | Beit | Pe'or
 be'eretz | Sichon | melekh | ha'emori | asher | yoshev
-Becheshbon | asher | hikah | Mosheh | uvenei | Yisra'el
-betzetam | Mimitzrayim
+Becheshbon | asher | hikah | Mosheh
+uvenei | Yisra'el | betzetam | Mimitzrayim
 
 4:47
 vaiyireshu | et | artzo | ve'et | eretz | Og | melekh | Habashan | shenei | malkhei | ha'emori
@@ -259,8 +268,10 @@ asher | be'ever | Haiyarden
 mizrach | shamesh
 
 4:48
-Me'aro'er | asher | al | sefat | nachal | Arnon | ve'ad | har | Si'on
+Me'aro'er | asher | al | sefat | nachal | Arnon
+ve'ad | har | Si'on
 hu | Chermon
 
 4:49
-vekhol | Ha'aravah | ever | Haiyarden | mizrachah | ve'ad | yam | Ha'aravah | tachat | ashdot | Hapisgah
+vekhol | Ha'aravah | ever | Haiyarden | mizrachah
+ve'ad | yam | Ha'aravah | tachat | ashdot | Hapisgah

@@ -15,12 +15,14 @@ gadol | mikol | benei | kedem
 
 1:4
 vehalekhu | vanav | ve'asu | mishteh | beit | ish | yomo
-veshalechu | vekare'u | lishloshet | achyoteihem | le'ekhol | velishtot | imahem
+veshalechu | vekare'u | lishloshet | achyoteihem | le'ekhol
+velishtot | imahem
 
 1:5
 vayhi | ki | hikifu | yemei | hamishteh | vaiyishlach | Iyov | vaykadeshem | vehishkim | baboker | vehe'elah | olot | mispar | kulam
 ki | amar | Iyov
-ulai | chate'u | vanai | uverakhu | elohim | bilvavam
+ulai | chate'u | vanai
+uverakhu | elohim | bilvavam
 kakhah | ya'aseh | Iyov
 kol | haiyamim
 
@@ -32,7 +34,8 @@ betokham
 
 1:7
 vaiyomer | Yahweh | el | hasatan | me'ayin | tavo
-vaiya'an | hasatan | et | Yahweh | vaiyomar | mishut | ba'aretz | umehithalekh | bah
+vaiya'an | hasatan | et | Yahweh | vaiyomar | mishut | ba'aretz
+umehithalekh | bah
 
 1:8
 vaiyomer | Yahweh | el | hasatan
@@ -47,8 +50,10 @@ hachinam | yare | Iyov
 elohim
 
 1:10
-halo | at | sakhta | va'ado | uve'ad | beito | uve'ad | kol | asher | lo | misaviv
-ma'aseh | yadav | berakhta | umiknehu
+halo | at | sakhta | va'ado
+uve'ad | beito
+uve'ad | kol | asher | lo | misaviv | ma'aseh | yadav | berakhta
+umiknehu
 paratz | ba'aretz
 
 1:11
@@ -62,8 +67,9 @@ yadekha | vaiyetze | hasatan | me'im
 penei | Yahweh
 
 1:13
-vayhi | haiyom | uvanav | uvenotav | okhelim | veshotim | yayin | beveit
-achihem | habekhor
+vayhi | haiyom
+uvanav
+uvenotav | okhelim | veshotim | yayin | beveit | achihem | habekhor
 
 1:14
 umal'akh | ba | el | Iyov | vaiyomar
@@ -90,8 +96,8 @@ ve'et | hane'arim
 hiku | lefi | charev | va'imaltah | rak | ani | levadi | lehagid | lakh
 
 1:18
-ad | zeh | medaber | vezeh | ba | vaiyomar
-baneikha | uvenoteikha | okhelim | veshotim | yayin | beveit | achihem | habekhor
+ad | zeh | medaber | vezeh | ba | vaiyomar | baneikha
+uvenoteikha | okhelim | veshotim | yayin | beveit | achihem | habekhor
 
 1:19
 vehineh | ruach | gedolah | ba'ah | me'ever | hamidbar | vaiyiga | be'arba | pinot | habayit

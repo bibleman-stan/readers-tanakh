@@ -1,6 +1,6 @@
 19:1
-vaydaber | Yahweh
-el | Mosheh | ve'el | Aharon | lemor
+vaydaber | Yahweh | el | Mosheh
+ve'el | Aharon | lemor
 
 19:2
 zot | chukat | hatorah
@@ -63,7 +63,8 @@ ve'im | lo | yitchata | baiyom | hashelishi | uvaiyom | hashevi'i
 lo | yithar
 
 19:13
-kal | hanogea | bemet | benefesh | ha'adam | asher | yamut | velo | yitchata | et | mishkan | Yahweh | time
+kal | hanogea | bemet | benefesh | ha'adam | asher | yamut
+velo | yitchata | et | mishkan | Yahweh | time
 venikhretah | hanefesh | hahiv | Miyisra'el
 ki | mei | nidah | lo | zorak | alav | tame | yihyeh
 od
@@ -72,7 +73,8 @@ tum'ato | vo
 19:14
 zot | hatorah
 adam
-ki | yamut | be'ohel | kol | haba | el | ha'ohel | vekhol | asher | ba'ohel | yitma
+ki | yamut | be'ohel | kol | haba | el | ha'ohel
+vekhol | asher | ba'ohel | yitma
 shiv'at | yamim
 
 19:15
@@ -93,14 +95,18 @@ venatan | alav | mayim | chaiyim | el | keli
 
 19:18
 velakach | ezov | vetaval | bamayim | ish | tahor
-vehizah | al | ha'ohel | ve'al | kol | hakelim | ve'al | hanefashot
-asher | hayu | sham | ve'al | hanogea | ba'etzem | o | vechalal
+vehizah | al | ha'ohel
+ve'al | kol | hakelim
+ve'al | hanefashot | asher | hayu | sham
+ve'al | hanogea | ba'etzem | o | vechalal
 o | vamet
 o | vakaver
 
 19:19
-vehizah | hatahor | al | hatame | baiyom | hashelishi | uvaiyom | hashevi'i
-vechite'o | baiyom | hashevi'i | vekhibes | begadav | verachatz | bamayim
+vehizah | hatahor | al | hatame | baiyom | hashelishi
+uvaiyom | hashevi'i
+vechite'o | baiyom | hashevi'i
+vekhibes | begadav | verachatz | bamayim
 vetaher | ba'arev
 
 19:20

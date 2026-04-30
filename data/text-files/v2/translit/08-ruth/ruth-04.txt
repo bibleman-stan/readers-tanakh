@@ -18,8 +18,8 @@ makherah | No'omi
 hashavah | misedeh | Mo'av
 
 4:4
-va'ani | amarti | egleh | azenekha | lemor | keneh | neged | haiyoshevim | veneged | ziknei | ami
-im | tig'al | ge'al
+va'ani | amarti | egleh | azenekha | lemor | keneh | neged | haiyoshevim
+veneged | ziknei | ami | im | tig'al | ge'al
 ve'im | lo | yig'al | hagidah | li | ve'eda | ki | ein | zulatekha | lig'ol
 ve'anokhi | achareikha | vaiyomer
 anokhi | eg'al
@@ -37,8 +37,8 @@ ge'al | lekha | atah | et | ge'ulati
 ki | lo | ukhal | lig'ol
 
 4:7
-vezot | lefanim | Beyisra'el | al | hage'ulah | ve'al | hatemurah | lekaiyem | kol | davar
-shalaf | ish | na'alo
+vezot | lefanim | Beyisra'el | al | hage'ulah
+ve'al | hatemurah | lekaiyem | kol | davar | shalaf | ish | na'alo
 venatan | lere'ehu
 vezot | hate'udah | Beyisra'el
 
@@ -49,21 +49,23 @@ vaiyishlof
 na'alo
 
 4:9
-vaiyomer | Bo'az | lazekenim | vekhol | ha'am | edim | atem | haiyom
-ki | kaniti | et | kol | asher | Le'elimelekh
+vaiyomer | Bo'az | lazekenim
+vekhol | ha'am | edim | atem | haiyom | ki | kaniti | et | kol | asher | Le'elimelekh
 ve'et | kol | asher | Lekhilyon | Umachlon
 miyad | No'omi
 
 4:10
 vegam | et | Rut | hamo'aviyah | eshet | Machlon | kaniti | li | le'ishah | lehakim | shem | hamet | al | nachalato
-velo | yikaret | shem | hamet | me'im | echav | umisha'ar | mekomo
+velo | yikaret | shem | hamet | me'im | echav
+umisha'ar | mekomo
 edim | atem
 haiyom
 
 4:11
 vaiyomeru | kol | ha'am | asher | basha'ar | vehazekenim
 edim
-yiten | Yahweh | et | ha'ishah | haba'ah | el | beitekha | Kerachel | Ukhele'ah | asher | banu | sheteihem | et | beit | Yisra'el
+yiten | Yahweh | et | ha'ishah | haba'ah | el | beitekha | Kerachel
+Ukhele'ah | asher | banu | sheteihem | et | beit | Yisra'el
 va'aseh | chayil | Be'efratah
 ukera | shem | Beveit | Lachem
 
@@ -85,7 +87,8 @@ barukh | Yahweh | asher | lo | hishbit | lakh | go'el
 haiyom | veyikare | shemo | Beyisra'el
 
 4:15
-vehayah | lokh | lemeshiv | nefesh | ulekhalkel | et | seivatekh
+vehayah | lokh | lemeshiv | nefesh
+ulekhalkel | et | seivatekh
 ki | khalatekh | asher | ahevatekh | yeladatu
 asher | hi | toah | lakh | mishiv'ah | banim
 

@@ -18,5 +18,8 @@ trigger:
       - "אהה"
       - "אנא"
 
+guards:
+  - next_line_is_vav_coord_pp     # block re-absorbing post-S1-split coord-PP enumeration members
+
 annotation_template: "H4 address particle stranded from vocative NP (combined {pwc} prosodic words)"
 suggested_action: MERGE

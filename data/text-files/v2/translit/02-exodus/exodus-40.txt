@@ -54,7 +54,8 @@ ohel | mo'ed | verachatzta | otam | bamayim
 40:13
 vehilbashta | et | Aharon
 et | bigdei | hakodesh
-umashachta | oto | vekidashta | oto | vekhihen | li
+umashachta | oto | vekidashta | oto
+vekhihen | li
 
 40:14
 ve'et | banav
@@ -62,8 +63,8 @@ takriv
 vehilbashta | otam | kutonot
 
 40:15
-umashachta | otam | ka'asher | mashachta | et | avihem | vekhihanu
-li
+umashachta | otam | ka'asher | mashachta | et | avihem
+vekhihanu | li
 vehayetah | lihyot | lahem | mashechatam | likhhunat | olam
 ledorotam
 
@@ -145,12 +146,13 @@ Ve'aharon | uvanav | et | yedeihem
 ve'et | ragleihem
 
 40:32
-bevo'am | el | ohel | mo'ed | uvekarevatam | el | hamizbeach | yirchatzu
+bevo'am | el | ohel | mo'ed
+uvekarevatam | el | hamizbeach | yirchatzu
 ka'asher | tzivah | Yahweh | et | Mosheh
 
 40:33
-vaiyakem | et | hechatzer | saviv | lamishkan | velamizbeach
-vaiyiten | et | masakh
+vaiyakem | et | hechatzer | saviv | lamishkan
+velamizbeach | vaiyiten | et | masakh
 sha'ar | hechatzer | vaykhal | Mosheh | et | hamelakhah
 
 40:34

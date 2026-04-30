@@ -3,8 +3,8 @@ vaydaber | Yahweh | el | Mosheh | lemor
 
 20:2
 ve'el | benei | Yisra'el | tomar
-ish | ish | mibenei | Yisra'el | umin | hager | hagar | Beyisra'el | asher | yiten | mizar'o | Lamolekh
-mot | yumat
+ish | ish | mibenei | Yisra'el
+umin | hager | hagar | Beyisra'el | asher | yiten | mizar'o | Lamolekh | mot | yumat
 am | ha'aretz | yirgemuhu | va'aven
 
 20:3
@@ -23,7 +23,8 @@ vehikhrati | oto | ve'et | kol | hazonim | acharav | liznot | acharei | Hamolekh
 mikerev | amam
 
 20:6
-vehanefesh | asher | tifneh | el | ha'ovot | ve'el | haiyide'onim | liznot
+vehanefesh | asher | tifneh | el | ha'ovot
+ve'el | haiyide'onim | liznot
 achareihem | venatati | et | panai | banefesh | hahiv
 vehikhrati | oto | mikerev | amo
 
@@ -143,9 +144,11 @@ ani | Yahweh | eloheikhem
 asher | hivdalti | etkhem | min | ha'amim
 
 20:25
-vehivdaltem | bein | habehemah | hatehorah | lateme'ah | uvein | ha'of | hatame
-latahor
-velo | teshaketzu | et | nafshoteikhem | babehemah | uva'of | uvekhol | asher | tirmos | ha'adamah
+vehivdaltem | bein | habehemah | hatehorah | lateme'ah
+uvein | ha'of | hatame | latahor
+velo | teshaketzu | et | nafshoteikhem | babehemah
+uva'of
+uvekhol | asher | tirmos | ha'adamah
 asher | hivdalti | lakhem | letame
 
 20:26

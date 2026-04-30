@@ -3,11 +3,12 @@ uvenei | Re'uven | bekhor | Yisra'el | ki | hu | habekhor
 uvechalelo | yetzu'ei | aviv
 Nitenah | bekhorato
 livnei | Yosef
-ben | Yisra'el | velo | lehityaches | labekhorah
+ben | Yisra'el
+velo | lehityaches | labekhorah
 
 5:2
-ki | Yehudah | gavar | be'echav | ulenagid | mimenu | vehabekhorah
-Leyosef
+ki | Yehudah | gavar | be'echav
+ulenagid | mimenu | vehabekhorah | Leyosef
 
 5:3
 benei | Re'uven | bekhor | Yisra'el
@@ -52,7 +53,8 @@ Yo'el | harosh | Veshafam
 hamishneh | Veya'nai | Veshafat | Babashan
 
 5:13
-va'acheihem | leveit | avoteihem | Mikha'el | Umeshulam | Vesheva | Veyorai | Veya'kan | Vezia | Va'ever
+va'acheihem | leveit | avoteihem | Mikha'el
+Umeshulam | Vesheva | Veyorai | Veya'kan | Vezia | Va'ever
 shiv'ah
 
 5:14
@@ -63,12 +65,13 @@ ben | Buz
 Achi | ben | Avdi'el | ben | Guni | rosh | leveit | avotam
 
 5:16
-vaiyeshevu | Bagil'ad | Babashan | uvivnoteiha
+vaiyeshevu | Bagil'ad | Babashan
+uvivnoteiha
 uvekhol | migreshei | Sharon | al | totz'otam
 
 5:17
-kulam | hityachsu | bimei | Yotam | melekh | Yehudah | uvimei
-Yarave'am | melekh | Yisra'el
+kulam | hityachsu | bimei | Yotam | melekh | Yehudah
+uvimei | Yarave'am | melekh | Yisra'el
 
 5:18
 benei | Re'uven | vegadi | vachatzi | shevet | Menasheh | min | benei | chayil
@@ -118,7 +121,9 @@ asher | hishmid | elohim | mipeneihem
 
 5:26
 vaiya'ar | elohei | Yisra'el | et | ruach | Pul | melekh | Ashur | ve'et | ruach | Tilegat | Pilneser | melekh | Ashur
-vaiyaglem | lor'uveni | velagadi | velachatzi
+vaiyaglem | lor'uveni
+velagadi
+velachatzi
 shevet | Menasheh
 vayvi'em | Lachlach | Vechavor | Vehara | unehar | Gozan
 ad | haiyom | hazeh
@@ -134,7 +139,9 @@ Vechevron
 Ve'uzi'el
 
 5:29
-uvenei | Amram | Aharon | Umosheh | Umiryam
+uvenei | Amram | Aharon
+Umosheh
+Umiryam
 uvenei | Aharon
 Nadav | Va'avihu
 El'azar

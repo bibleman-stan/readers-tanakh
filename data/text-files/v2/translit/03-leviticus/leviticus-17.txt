@@ -2,7 +2,9 @@
 vaydaber | Yahweh | el | Mosheh | lemor
 
 17:2
-daber | el | Aharon | ve'el | banav | ve'el | kol | benei | Yisra'el
+daber | el | Aharon
+ve'el | banav
+ve'el | kol | benei | Yisra'el
 ve'amarta
 aleihem | zeh | hadavar
 asher | tzivah | Yahweh | lemor
@@ -35,7 +37,8 @@ velo | yizbechu | od | et | zivcheihem | lase'irim | asher | hem | zonim
 achareihem | chukat | olam | tihyeh | zot | lahem | ledorotam
 
 17:8
-va'alehem | tomar | ish | ish | mibeit | Yisra'el | umin | hager
+va'alehem | tomar | ish | ish | mibeit | Yisra'el
+umin | hager
 asher | yagur | betokham
 asher | ya'aleh | olah
 ov | zavach
@@ -74,7 +77,8 @@ ki | nefesh | kol | basar | damo | hi
 kol | okhelav | yikaret
 
 17:15
-vekhol | nefesh | asher | tokhal | nevelah | uterefah | ba'ezrach | uvager
+vekhol | nefesh | asher | tokhal | nevelah | uterefah | ba'ezrach
+uvager
 vekhibes | begadav | verachatz | bamayim | vetame | ad | ha'erev
 vetaher
 

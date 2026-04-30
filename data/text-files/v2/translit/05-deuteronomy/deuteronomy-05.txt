@@ -16,7 +16,8 @@ ki | itanu | anachnu | eleh | foh | haiyom | kulanu | chaiyim
 panim | befanim | diber | Yahweh | imakhem | bahar | mitokh | ha'esh
 
 5:5
-anokhi | omed | bein | Yahweh | uveineikhem | ba'et | hahiv | lehagid | lakhem
+anokhi | omed | bein | Yahweh
+uveineikhem | ba'et | hahiv | lehagid | lakhem
 et | devar | Yahweh
 ki | yeretem | mipenei | ha'esh
 velo | alitem | bahar | lemor
@@ -33,12 +34,16 @@ lo | ta'aseh | lekha | fesel | kol | temunah | asher | bashamayim | mima'al
 va'asher | ba'aretz | mitachat | va'asher | bamayim | mitachat | la'aretz
 
 5:9
-lo | tishtachaveh | lahem | velo | ta'avedem
+lo | tishtachaveh | lahem
+velo | ta'avedem
 ki | anokhi | Yahweh | eloheikha | el | kana
-poked | avon | avot | al | banim | ve'al | shileshim | ve'al | ribe'im | lesone'ai
+poked | avon | avot | al | banim
+ve'al | shileshim
+ve'al | ribe'im | lesone'ai
 
 5:10
-ve'oseh | chesed | la'alafim | le'ohavai | uleshomerei | mitzvoi
+ve'oseh | chesed | la'alafim | le'ohavai
+uleshomerei | mitzvoi
 
 5:11
 lo | tisa | et | shem | Yahweh | eloheikha | lashav
@@ -58,7 +63,9 @@ kla | melakhtekha
 veyom | hashevi'i
 shabat
 Layahweh | eloheikha
-lo | ta'aseh | khol | melakhah | atah | uvinkha | uvitekha | ve'avdekha | va'amatekha | veshorkha | vachamorekha | vekhol | behemtekha | vegerekha | asher | bish'areikha
+lo | ta'aseh | khol | melakhah | atah
+uvinkha | uvitekha | ve'avdekha | va'amatekha | veshorkha | vachamorekha
+vekhol | behemtekha | vegerekha | asher | bish'areikha
 lema'an | yanuach | avdekha | va'amatekha | kamokha
 
 5:15
@@ -70,8 +77,8 @@ al | ken | tzivekha | Yahweh | eloheikha | la'asot | et | yom | hashabat
 5:16
 kabed | et | avikha | ve'et | imekha
 ka'asher | tzivekha | Yahweh | eloheikha
-lema'an | ya'arikhun | yameikha | ulema'an | yitav | lakh
-al | ha'adamah
+lema'an | ya'arikhun | yameikha
+ulema'an | yitav | lakh | al | ha'adamah
 asher | Yahweh | eloheikha | noten | lakh
 
 5:17
@@ -135,8 +142,10 @@ heitivu
 kol | asher | diberu
 
 5:29
-mi | yiten | vehayah | levavam | zeh | lahem | leyir'ah | oti | velishmor | et | kol | mitzvotai
-kol | haiyamim | lema'an | yitav | lahem | velivneihem | le'olam
+mi | yiten | vehayah | levavam | zeh | lahem | leyir'ah | oti
+velishmor | et | kol | mitzvotai
+kol | haiyamim | lema'an | yitav | lahem
+velivneihem | le'olam
 
 5:30
 lekh | emor | lahem

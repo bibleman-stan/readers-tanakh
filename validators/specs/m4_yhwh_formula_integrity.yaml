@@ -26,6 +26,7 @@ trigger:
 
 guards:
   - poetic_register
+  - next_line_is_wayyiqtol       # block re-absorbing post-S3-split wayyiqtol-headed lines
 
 annotation_template: "YHWH-speech formula split ({pwc} prosodic words)"
 suggested_action: MERGE

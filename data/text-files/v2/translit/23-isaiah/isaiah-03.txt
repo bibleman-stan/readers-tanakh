@@ -1,7 +1,8 @@
 3:1
-ki | hineh | ha'adon | Yahweh | tzeva'ot | mesir | Mirushalim | Umihudah
-mash'en | umash'enah
-kol | mish'an | lechem | vekhol | mish'an | mayim
+ki | hineh | ha'adon | Yahweh | tzeva'ot | mesir | Mirushalim
+Umihudah | mash'en | umash'enah
+kol | mish'an | lechem
+vekhol | mish'an | mayim
 
 3:2
 gibor | ve'ish | milchamah
@@ -32,7 +33,8 @@ tihyeh | lanu
 vehamakhshelah | hazot | tachat | yadekha
 
 3:7
-yisa | vaiyom | hahu | lemor | lo | ehyeh | chovesh | uveveiti | ein | lechem
+yisa | vaiyom | hahu | lemor | lo | ehyeh | chovesh
+uveveiti | ein | lechem
 ve'ein | simlah
 lo | tesimuni
 ketzin | am
@@ -41,7 +43,8 @@ ketzin | am
 ki | khashelah | Yerushalim
 Vihudah
 nafal
-ki | leshonam | uma'aleihem | el | Yahweh | lamrot
+ki | leshonam
+uma'aleihem | el | Yahweh | lamrot
 enei | khevodo
 
 3:9
@@ -119,7 +122,9 @@ vehatzenifot
 veharedidim
 
 3:24
-vehayah | tachat | bosem | mak | yihyeh | vetachat | chagorah | nikpah | vetachat | ma'aseh | miksheh | karechah
+vehayah | tachat | bosem | mak | yihyeh
+vetachat | chagorah | nikpah
+vetachat | ma'aseh | miksheh | karechah
 vetachat | petigil | machagoret | sak
 ki | tachat
 yofi

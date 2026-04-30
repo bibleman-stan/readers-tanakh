@@ -11,7 +11,8 @@ ki | gadol
 yom | Yizre'el
 
 2:3
-imru | la'acheikhem | ami | vela'achoteikhem
+imru | la'acheikhem | ami
+vela'achoteikhem
 ruchamah
 
 2:4
@@ -38,8 +39,8 @@ hemah
 ki | zanetah | imam
 hovishah
 horatam
-ki | amerah | elekhah | acharei | me'ahavai | notenei | lachmi | umeimai
-tzamri | ufishti
+ki | amerah | elekhah | acharei | me'ahavai | notenei | lachmi
+umeimai | tzamri | ufishti
 shamni
 veshikuyai
 
@@ -63,8 +64,8 @@ vehatiroosh | vehaiyitzhar | vekhesef | hirbeiti | lah | vezahav
 asu | laba'al
 
 2:11
-lakhen | ashuv | velakachti | degani | be'ito
-vetiroshi | bemo'ado
+lakhen | ashuv
+velakachti | degani | be'ito | vetiroshi | bemo'ado
 vehitzalti | tzamri | ufishti | lekhasot
 et | ervatah
 
@@ -95,8 +96,7 @@ lakhen | hineh | anokhi | mefateiha | veholakhtiha | hamidbar
 vedibarti | al | libah
 
 2:17
-venatati | lah | et | kerameiha | misham
-ve'et | emek | Akhor | lefetach | tikvah
+venatati | lah | et | kerameiha | misham | ve'et | emek | Akhor | lefetach | tikvah
 ve'anetah | shamah | kimei | ne'ureiha
 vikhyom | alotah | me'eretz | Mitzrayim
 
@@ -120,7 +120,10 @@ vehishkavtim | lavetach
 
 2:21
 ve'erastikh | li | le'olam
-ve'erastikh | li | betzedek | uvemishpat | uvechesed | uverachamim
+ve'erastikh | li | betzedek
+uvemishpat
+uvechesed
+uverachamim
 
 2:22
 ve'erastikh | li | be'emunah

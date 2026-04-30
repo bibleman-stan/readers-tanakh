@@ -18,15 +18,14 @@ beyom | asot | Yahweh | elohim
 eretz | veshamayim
 
 2:5
-vekhol | siach | hasadeh | terem | yihyeh | va'aretz | vekhol | esev | hasadeh
-terem | yitzmach
+vekhol | siach | hasadeh | terem | yihyeh | va'aretz
+vekhol | esev | hasadeh | terem | yitzmach
 ki | lo | himtir | Yahweh | elohim | al | ha'aretz
 ve'adam | ayin | la'avod
 et | ha'adamah
 
 2:6
-ve'ed
-ya'aleh | min | ha'aretz
+ve'ed | ya'aleh | min | ha'aretz
 vehishkah
 et | kol | penei | ha'adamah
 
@@ -80,7 +79,8 @@ vehanahar | harevi'i | hu | Ferat
 
 2:15
 vaiyikach | Yahweh | elohim | et | ha'adam
-vaiyanichehu | vegan | Eden | le'avedah | uleshamerah
+vaiyanichehu | vegan | Eden | le'avedah
+uleshamerah
 
 2:16
 vaytzav | Yahweh | elohim | al | ha'adam | lemor | mikol | etz | hagan
@@ -101,8 +101,10 @@ vekhol | asher | yikra | lo | ha'adam | nefesh | chaiyah
 hu | shemo
 
 2:20
-vaiyikra | ha'adam | shemot | lekhol | habehemah | ule'of | hashamayim | ulekhol
-chaiyat | hasadeh | Ule'adam | lo | matza | ezer | kenegdo
+vaiyikra | ha'adam | shemot | lekhol | habehemah
+ule'of | hashamayim
+ulekhol | chaiyat | hasadeh
+Ule'adam | lo | matza | ezer | kenegdo
 
 2:21
 vaiyapel | Yahweh | elohim | tardemah | al | ha'adam

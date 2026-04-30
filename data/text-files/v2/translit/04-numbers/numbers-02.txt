@@ -1,6 +1,6 @@
 2:1
-vaydaber | Yahweh
-el | Mosheh | ve'el | Aharon | lemor
+vaydaber | Yahweh | el | Mosheh
+ve'el | Aharon | lemor
 
 2:2
 ish | al | diglo | ve'otot | leveit | avotam
@@ -126,8 +126,8 @@ chamishah | usheloshim | elef
 ve'arba | me'ot
 
 2:24
-kal | hapekudim | lemachaneh | Efrayim | me'at | elef | ushemonat | alafim | ume'ah
-letziv'otam
+kal | hapekudim | lemachaneh | Efrayim | me'at | elef | ushemonat | alafim
+ume'ah | letziv'otam
 ushelishim
 yisa'u
 
@@ -178,6 +178,7 @@ ka'asher | tzivah | Yahweh | et | Mosheh
 2:34
 vaiya'asu
 benei | Yisra'el
-kekhol | asher | tzivah | Yahweh | et | Mosheh | ken | chanu | ledigleihem | vekhen | nasa'u
+kekhol | asher | tzivah | Yahweh | et | Mosheh | ken | chanu | ledigleihem
+vekhen | nasa'u
 ish | lemishpechotav
 al | beit | avotav

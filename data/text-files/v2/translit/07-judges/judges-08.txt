@@ -52,7 +52,8 @@ etotz
 et | hamigdal | hazeh
 
 8:10
-Vezevach | Vetzalmuna | Bakarkor | umachaneihem | imam | kachameshet | asar | elef | kol | hanotarim
+Vezevach | Vetzalmuna | Bakarkor
+umachaneihem | imam | kachameshet | asar | elef | kol | hanotarim
 mikol | machaneh | venei | kedem | vehanofelim | me'ah | ve'esrim | elef | ish
 sholef | charev
 
@@ -86,8 +87,7 @@ asher | cheraftem | oti | lemor | hakhaf | Zevach | Vetzalmuna | atah | beyadekh
 ki | niten | la'anasheikha | haiye'efim | lachem
 
 8:16
-vaiyikach | et | ziknei | ha'ir
-ve'et | kotzei | hamidbar
+vaiyikach | et | ziknei | ha'ir | ve'et | kotzei | hamidbar
 ve'et | habarkonim
 vaiyoda | bahem | et | anshei | Sukot
 
@@ -150,14 +150,15 @@ nezem | shelalo
 
 8:26
 vayhi | mishkal | nizmei | hazahav | asher | sha'al
-elef | usheva | me'ot | zahav
-levad | min | hasaharonim | vehanetifot | uvigdei | ha'argaman | she'al | malkhei | Midyan
+elef | usheva | me'ot | zahav | levad | min | hasaharonim | vehanetifot
+uvigdei | ha'argaman | she'al | malkhei | Midyan
 ulevad | min | ha'anakot | asher | betzaverei | gemaleihem
 
 8:27
 vaiya'as | oto | Gid'on | le'efod | vaiyatzeg | oto | ve'iro | Be'aferah
 vaiyiznu | khol | Yisra'el | acharav | sham
-vayhi | Legid'on | uleveito | lemokesh
+vayhi | Legid'on
+uleveito | lemokesh
 
 8:28
 vaiyikana | Midyan | lifnei | benei | Yisra'el

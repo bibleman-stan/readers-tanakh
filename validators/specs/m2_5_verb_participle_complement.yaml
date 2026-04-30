@@ -24,6 +24,7 @@ trigger:
 guards:
   - poetic_register
   - heavy_participial_complement   # don't merge if participle has heavy DO+PP
+  - next_line_is_wayyiqtol       # block re-absorbing post-S3-split wayyiqtol-headed lines
 
 annotation_template: "Verb + participial complement ({pwc} prosodic words)"
 suggested_action: MERGE

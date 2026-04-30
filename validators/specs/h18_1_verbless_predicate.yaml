@@ -23,6 +23,7 @@ guards:
   - heavy_subject
   - le_infinitive_on_next_line
   - both_lines_have_finite_verb
+  - next_line_is_vav_coord_pp   # block re-absorbing post-S1-split coord-PP enumeration members
 
 annotation_template: "H18.1 verbless subj-pred split (combined {pwc} prosodic words)"
 suggested_action: MERGE

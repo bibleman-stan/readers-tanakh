@@ -1,7 +1,8 @@
 9:1
 vaiyelekh | Avimelekh | ben | Yeruba'al | Shekhemah | el | achei
 imo
-vaydaber | aleihem | ve'el | kol | mishpachat | beit | avi | imo | lemor
+vaydaber | aleihem
+ve'el | kol | mishpachat | beit | avi | imo | lemor
 
 9:2
 daberu | na | be'azenei | khol | ba'alei | Shekhem | mah | tov | lakhem
@@ -83,8 +84,7 @@ tetze | esh | min | ha'atad | vetokhal | et | arzei | Halevanon
 
 9:16
 ve'atah | im | be'emet | uvetamim | asitem | vatamlikhu | et | Avimelekh
-ve'im | tovah | asitem | im | Yeruba'al | ve'im | beito
-ve'im | kigmul | yadav
+ve'im | tovah | asitem | im | Yeruba'al | ve'im | beito | ve'im | kigmul | yadav
 asitem | lo
 
 9:17
@@ -100,15 +100,17 @@ ki | achikhem
 hu
 
 9:19
-ve'im | be'emet | uvetamim | asitem | im | Yeruba'al | ve'im | beito | haiyom | hazeh
+ve'im | be'emet
+uvetamim | asitem | im | Yeruba'al
+ve'im | beito | haiyom | hazeh
 simchu | Ba'avimelekh | veyismach | gam | hu | bakhem
 
 9:20
 ve'im | ayin
 tetze | esh | Me'avimelekh | vetokhal | et | ba'alei | Shekhem
 ve'et | beit | milo
-vetetze | esh | miba'alei | Shekhem | umibeit | milo
-vetokhal | et | Avimelekh
+vetetze | esh | miba'alei | Shekhem
+umibeit | milo | vetokhal | et | Avimelekh
 
 9:21
 vaiyanos | Yotam
@@ -122,7 +124,8 @@ shalosh | shanim
 
 9:23
 vaiyishlach | elohim | ruach | ra'ah
-bein | Avimelekh | uvein | ba'alei | Shekhem
+bein | Avimelekh
+uvein | ba'alei | Shekhem
 vaiyivgedu | va'alei | Shekhem | Ba'avimelekh
 
 9:24
@@ -296,7 +299,8 @@ al | rosh | Avimelekh
 vataritz | et | gulgalto
 
 9:54
-vaiyikra | meherah | el | hana'ar | nose | khelav | vaiyomer | lo | shelof | charbekha | umoteni
+vaiyikra | meherah | el | hana'ar | nose | khelav | vaiyomer | lo | shelof | charbekha
+umoteni
 pen | yomeru | li
 ishah | haragatehu
 vaiyidkerehu | na'aro

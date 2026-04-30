@@ -55,8 +55,8 @@ Yisra'el
 14:11
 vaiyomer | Yahweh | el | Mosheh
 ad | anah | yena'atzuni
-ha'am | hazeh | ve'ad | anah | lo | ya'aminu | vi
-bekhol | ha'otot | asher | asiti | bekirbo
+ha'am | hazeh
+ve'ad | anah | lo | ya'aminu | vi | bekhol | ha'otot | asher | asiti | bekirbo
 
 14:12
 akkenu | vadever
@@ -72,8 +72,8 @@ ki | he'elita | vekhochakha | et | ha'am | hazeh | mikirbo
 ve'ameru | el | yoshev | ha'aretz | hazot
 shame'u | ki | atah | Yahweh | bekerev | ha'am | hazeh
 asher | ayin | be'ayin | Nir'ah | atah | Yahweh | va'ananekha | omed | alehem
-uve'amud | anan | atah | holekh | lifneihem | yomam | uve'amud | esh
-layelah
+uve'amud | anan | atah | holekh | lifneihem | yomam
+uve'amud | esh | layelah
 
 14:15
 vehematah | et | ha'am | hazeh | ke'ish | echad
@@ -92,11 +92,13 @@ Yahweh | erekh | apayim | verav | chesed
 nose | avon
 vafasha
 venakeh | lo | yenakeh
-poked | avon | avot | al | banim | al | shileshim | ve'al | ribe'im
+poked | avon | avot | al | banim | al | shileshim
+ve'al | ribe'im
 
 14:19
 selach | na | la'avon | ha'am | hazeh | kegodel | chasdekha
-vekha'asher | nasatah | la'am | hazeh | Mimitzrayim | ve'ad | henah
+vekha'asher | nasatah | la'am | hazeh | Mimitzrayim
+ve'ad | henah
 
 14:20
 vaiyomer | Yahweh
@@ -129,8 +131,8 @@ machar | penu | use'u | lakhem | hamidbar
 derekh | yam | suf
 
 14:26
-vaydaber | Yahweh
-el | Mosheh | ve'el | Aharon | lemor
+vaydaber | Yahweh | el | Mosheh
+ve'el | Aharon | lemor
 
 14:27
 ad | matai | la'edah | hara'ah | hazot | asher | hemah | malinim
@@ -143,7 +145,8 @@ ken
 e'eseh | lakhem
 
 14:29
-bamidbar | hazeh | yipelu | figreikhem | vekhol | pekudeikhem | lekhol | misparkhem | miben | esrim | shanah
+bamidbar | hazeh | yipelu | figreikhem
+vekhol | pekudeikhem | lekhol | misparkhem | miben | esrim | shanah
 vama'elah | asher | halinotem | alai
 
 14:30
@@ -225,7 +228,8 @@ velo | yihyeh | Yahweh | imakhem
 
 14:44
 vaiya'pilu | la'alot
-el | rosh | hahar | va'aron | berit | Yahweh | Umosheh
+el | rosh | hahar | va'aron | berit | Yahweh
+Umosheh
 lo | mashu | mikerev | hamachaneh
 
 14:45

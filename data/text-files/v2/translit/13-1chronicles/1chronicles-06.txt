@@ -12,7 +12,8 @@ Vechevron
 Ve'uzi'el
 
 6:4
-benei | Merari | Machli | Umushi
+benei | Merari | Machli
+Umushi
 ve'eleh | mishpechot | halevi | la'avoteihem
 
 6:5
@@ -127,8 +128,10 @@ va'acheihem
 halviyim | netunim | lekhol | avodat | mishkan | beit | ha'elohim
 
 6:34
-Ve'aharon | uvanav | maktirim | al | mizbach | ha'olah | ve'al | mizbach | haketoret
-lekhol | melekhet | kodesh | hakodashim | ulekhaper | al | Yisra'el
+Ve'aharon
+uvanav | maktirim | al | mizbach | ha'olah
+ve'al | mizbach | haketoret | lekhol | melekhet | kodesh | hakodashim
+ulekhaper | al | Yisra'el
 kekhol | asher | tzivah | Mosheh
 eved | ha'elohim
 
@@ -160,13 +163,11 @@ ve'et | migrasheiha
 sevivoteiha
 
 6:41
-ve'et | sedeh | ha'ir
-ve'et | chatzereiha
+ve'et | sedeh | ha'ir | ve'et | chatzereiha
 natenu | Lekhalev | ben | Yefuneh
 
 6:42
-velivnei | Aharon | natenu | et | arei | hamiklat
-et | Chevron | ve'et | Livnah
+velivnei | Aharon | natenu | et | arei | hamiklat | et | Chevron | ve'et | Livnah
 ve'et | migrasheiha
 ve'et | Yatir | ve'et | Eshtemoa
 ve'et | migrasheiha
@@ -191,12 +192,17 @@ velivnei | Kehat | hanotarim | mimishpachat | hamateh | mimachatzit | mateh | ch
 arim | aser
 
 6:47
-velivnei | Gereshom | lemishpechotam | mimateh | Yisoshkhor | umimateh | Asher | umimateh | Naftali | umimateh | Menasheh | Babashan
+velivnei | Gereshom | lemishpechotam | mimateh | Yisoshkhor
+umimateh | Asher
+umimateh | Naftali
+umimateh | Menasheh | Babashan
 arim
 shelosh | esreh
 
 6:48
-livnei | Merari | lemishpechotam | mimateh | Re'uven | umimateh | Gad | umimateh | Zevulun | bagoral
+livnei | Merari | lemishpechotam | mimateh | Re'uven
+umimateh | Gad
+umimateh | Zevulun | bagoral
 arim
 sheteim | esreh
 
@@ -205,8 +211,9 @@ vaiyitenu | venei | Yisra'el | lalviyim | et | he'arim
 ve'et | migresheihem
 
 6:50
-vaiyitenu | vagoral | mimateh | venei | Yehudah | umimateh | venei | Shim'on | umimateh
-benei | Vinyamin
+vaiyitenu | vagoral | mimateh | venei | Yehudah
+umimateh | venei | Shim'on
+umimateh | benei | Vinyamin
 et | he'arim | ha'eleh
 asher | yikre'u | ethem | beshemot
 

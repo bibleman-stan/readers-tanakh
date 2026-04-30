@@ -16,8 +16,8 @@ az | ye'esof | oto | mitzara'to
 
 5:4
 vaiyavo
-vaiyaged | ladonav | lemor
-kazot | vekhazot | diberah | hana'arah | asher | me'eretz | Yisra'el
+vaiyaged | ladonav | lemor | kazot
+vekhazot | diberah | hana'arah | asher | me'eretz | Yisra'el
 
 5:5
 vaiyomer | melekh | Aram | lekh | bo
@@ -33,7 +33,8 @@ ve'atah | kevo | hasefer | hazeh | eleikha | hineh | shalachti | eleikha | et | 
 va'asafto | mitzara'to
 
 5:7
-vayhi | kikro | melekh | Yisra'el | et | hasefer | vaiyikra | begadav | vaiyomer | ha'elohim | ani | lehamit | ulehachayot
+vayhi | kikro | melekh | Yisra'el | et | hasefer | vaiyikra | begadav | vaiyomer | ha'elohim | ani | lehamit
+ulehachayot
 ki | zeh | sholeach | elai | le'esof | ish
 mitzara'to | ki | akh | de'u | na | ure'u
 ki | mit'aneh | hu | li
@@ -78,7 +79,8 @@ vaiyashov | besaro | kivsar | na'ar | katon
 vaiyithar
 
 5:15
-vaiyashav | el | ish | ha'elohim | hu | vekhol | machanehu | vaiyavo | vaiya'amod | lefanav
+vaiyashav | el | ish | ha'elohim | hu
+vekhol | machanehu | vaiyavo | vaiya'amod | lefanav
 vaiyomer | hineh | na | yada'ti | ki | ein | elohim | bekhol | ha'aretz | ki
 im | Beyisra'el
 ve'atah | kach | na | verakhah | me'et | avdekha
@@ -110,7 +112,8 @@ vaiyelekh | me'ito | kivrat | aretz
 vaiyomer | Geichazi | na'ar | Elisha | ish | ha'elohim
 hineh | chasakh | adoni | et | Na'aman | ha'arami | hazeh | mikachat | miyado
 et | asher | hevi
-chai | Yahweh | ki | im | ratzti | acharav | velakachti | me'ito | me'umah
+chai | Yahweh | ki | im | ratzti | acharav
+velakachti | me'ito | me'umah
 
 5:21
 vaiyirdof | Geichazi
@@ -149,7 +152,8 @@ aneh | va'anah
 5:26
 vaiyomer | elav | lo | libi | halakh
 ka'asher | hafakh | ish | me'al | merkavto | likratecha
-ha'et | lakachat | et | hakesef | velakachat | begadim
+ha'et | lakachat | et | hakesef
+velakachat | begadim
 vezeitim | ukheramim | vetzon | uvakar
 va'avadim
 ushefachot

@@ -5,8 +5,8 @@ ufar'oh | cholem | vehineh | omed | al | Hay'or
 
 41:2
 vehineh | min | Hay'or | olot | sheva | parot
-yefot | mar'eh | uveri'ot | basar
-vatir'einah | ba'achu
+yefot | mar'eh
+uveri'ot | basar | vatir'einah | ba'achu
 
 41:3
 vehineh | sheva | parot | acherot | olot | achareihen | min | Hay'or
@@ -116,7 +116,8 @@ et | sheva | haparot | harishonot
 haberi'ot
 
 41:21
-vatavonah | el | kirbenah | velo | Noda | ki | va'u | el | kirbenah
+vatavonah | el | kirbenah
+velo | Noda | ki | va'u | el | kirbenah
 umar'eihen | ra | ka'asher
 batechilah
 va'ikatz
@@ -240,8 +241,7 @@ venaton | oto | al | kol | eretz | Mitzrayim
 41:44
 vaiyomer | par'oh | el | Yosef
 ani | far'oh
-uvil'adeikha | lo | yarim | ish | et | yado | ve'et | raglo
-bekhol | eretz | Mitzrayim
+uvil'adeikha | lo | yarim | ish | et | yado | ve'et | raglo | bekhol | eretz | Mitzrayim
 
 41:45
 vaiyikra | far'oh | shem | Yosef | Tzafenat | Pa'neach
@@ -277,8 +277,7 @@ ki | nashani | elohim | et | kol | amali
 ve'et | kol | beit | avi
 
 41:52
-ve'et | shem | hasheni
-kara | Efrayim
+ve'et | shem | hasheni | kara | Efrayim
 ki | hifrani | elohim | be'eretz | aneyi
 
 41:53
@@ -288,8 +287,8 @@ sheva | shenei | hasava | asher | hayah | be'eretz | Mitzrayim
 41:54
 vatechileinah | sheva | shenei | hara'av | lavo | ka'asher
 amar | Yosef
-vayhi | ra'av | bekhol | ha'aratzot | uvekhol | eretz | Mitzrayim
-hayah | lachem
+vayhi | ra'av | bekhol | ha'aratzot
+uvekhol | eretz | Mitzrayim | hayah | lachem
 
 41:55
 vatir'av | kol | eretz | Mitzrayim

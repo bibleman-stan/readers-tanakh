@@ -1,7 +1,7 @@
 13:1
 et | kol | hadavar | asher | anokhi | metzaveh | etkhem
-oto | tishmeru | la'asot
-lo | tosef | alav | velo | tigra | mimenu
+oto | tishmeru | la'asot | lo | tosef | alav
+velo | tigra | mimenu
 
 13:2
 ki | yakum | bekirbecha | navi
@@ -19,7 +19,8 @@ vena'avedem
 lo | tishma | el | divrei | hanavi | hahu
 o | el | cholem | hachalom | hahu
 ki | menaseh | Yahweh | eloheikhem | etkhem
-lada'at | hayishkhem | ohavim | et | Yahweh | eloheikhem | bekhol | levavkhem | uvekhol | nafshekhem
+lada'at | hayishkhem | ohavim | et | Yahweh | eloheikhem | bekhol | levavkhem
+uvekhol | nafshekhem
 
 13:5
 acharei | Yahweh | eloheikhem | telekhu | ve'oto | tira'u
@@ -30,7 +31,8 @@ uvo | tidbakun
 13:6
 vehanavi | hahu | o | cholem | hachalom | hahu | yumat | ki | diber | sarah | al | Yahweh | eloheikhem | hamotzi | etkhem | me'eretz | Mitzrayim | vehapodekha | mibeit | avadim
 lehadichakha | min | haderekh | asher | tzivekha | Yahweh | eloheikha
-lalekhet | bah | uvi'arta | hara | mikirbecha
+lalekhet | bah
+uvi'arta | hara | mikirbecha
 
 13:7
 ki | yesitekha | achikha | ven | imekha | ov | vinkha | ov | vitekha | o | eshet | cheikecha | o | re'akha | asher | kenafshekha
@@ -40,11 +42,16 @@ atah | va'avoteikha
 
 13:8
 me'elohei | ha'amim | asher | sevivoteikhem | hakerovim | eleikha | o
-harechokim | mimeka | miktzeh | ha'aretz | ve'ad | ketzeh | ha'aretz
+harechokim | mimeka | miktzeh | ha'aretz
+ve'ad | ketzeh | ha'aretz
 
 13:9
-lo | toveh | lo | velo | tishma
-elav | velo | tachos | einekha | alav | velo | tachmol | velo | tekhaseh | alav
+lo | toveh | lo
+velo | tishma
+elav
+velo | tachos | einekha | alav
+velo | tachmol
+velo | tekhaseh | alav
 
 13:10
 ki | harog | tahargenu

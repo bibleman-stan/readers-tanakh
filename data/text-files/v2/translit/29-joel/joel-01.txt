@@ -9,7 +9,9 @@ kol | yoshevei | ha'aretz | hehayetah | zot | bimeikhem | ve'im
 bimei | avoteikhem
 
 1:3
-aleiha | livneikhem | saperu | uveneikhem | livneihem | uveneihem
+aleiha | livneikhem | saperu
+uveneikhem | livneihem
+uveneihem
 ledor | acher
 
 1:4
@@ -28,7 +30,8 @@ ki | Nikhrat | mipikhem
 1:6
 ki | goy | alah | al | artzi
 atzum | ve'ein | mispar
-shinav | shinei | aryeh | umetale'ot | lavi | lo
+shinav | shinei | aryeh
+umetale'ot | lavi | lo
 
 1:7
 sam | gafni | leshamah | ute'enati | liktzafah
@@ -53,7 +56,8 @@ hovish | tiroosh
 umlal | yitzhar
 
 1:11
-hovishu | ikarim | heililu | koremim | al | chitah | ve'al | se'orah
+hovishu | ikarim | heililu | koremim | al | chitah
+ve'al | se'orah
 ki | avad
 ketzir | sadeh
 
@@ -100,11 +104,11 @@ Ne'shamu
 
 1:19
 eleikha | Yahweh | ekra
-ki | esh | akhelah | ne'ot | midbar | velehavah | lihatah
+ki | esh | akhelah | ne'ot | midbar
+velehavah | lihatah
 kol | atzei | hasadeh
 
 1:20
 gam | bahamot | sadeh | ta'arog | eleikha | ki | yaveshu | afikei | mayim
-ve'esh
-akhelah
+ve'esh | akhelah
 ne'ot | hamidbar

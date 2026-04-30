@@ -38,7 +38,8 @@ uvegilulei | Mitzrayim | al | titama'u
 ani | Yahweh | eloheikhem
 
 20:8
-vaiyamru | vi | velo | avu | lishmoa | elai | ish | et | shikutzei | eineihem | lo | hishlikhu
+vaiyamru | vi
+velo | avu | lishmoa | elai | ish | et | shikutzei | eineihem | lo | hishlikhu
 ve'et | gilulei | Mitzrayim
 lo | azavu
 va'omar | lishpokh | chamati | aleihem | lekhalot | api | bahem
@@ -93,7 +94,8 @@ velo | asiti | otam | kalah | bamidbar
 20:18
 va'omar | el | beneihem | bamidbar
 bechukei | avoteikhem | al | telekhu
-ve'et | mishpeteihem | al | tishmoru | uvegiluleihem | al | titama'u
+ve'et | mishpeteihem | al | tishmoru
+uvegiluleihem | al | titama'u
 
 20:19
 ani | Yahweh | eloheikhem | bechukotai | lekhu
@@ -103,7 +105,8 @@ va'asu | otam
 20:20
 ve'et | shabetotai
 kadeshu
-vehayu | le'ot | beini | uveineikhem | lada'at
+vehayu | le'ot | beini
+uveineikhem | lada'at
 ki | ani | Yahweh | eloheikhem
 
 20:21
@@ -184,13 +187,16 @@ etz | va'aven
 20:33
 chai | ani
 ne'um | Adonai | Yahweh
-im | lo | beyad | chazakah | uvizroa | netuyah | uvechemah | shefukhah
-emlokh | aleikhem
+im | lo | beyad | chazakah
+uvizroa | netuyah
+uvechemah | shefukhah | emlokh | aleikhem
 
 20:34
 vehotzeti | etkhem | min | ha'amim
 vekibatzti | etkhem | min | ha'aratzot | asher | Nefotzotem | bam
-beyad | chazakah | uvizroa | netuyah | uvechemah
+beyad | chazakah
+uvizroa | netuyah
+uvechemah
 shefukhah
 
 20:35
@@ -246,6 +252,6 @@ bam | unekototem | bifneikhem | bekhol | ra'oteikhem | asher | asitem
 
 20:44
 vida'tem | ki | ani | Yahweh
-ba'asoti | itekhem | lema'an | shemi
-lo | khedarkheikhem | hara'im | vekha'aliloteikhem | hanishchatot | beit | Yisra'el
+ba'asoti | itekhem | lema'an | shemi | lo | khedarkheikhem | hara'im
+vekha'aliloteikhem | hanishchatot | beit | Yisra'el
 ne'um | Adonai | Yahweh

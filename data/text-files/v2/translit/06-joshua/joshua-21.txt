@@ -1,13 +1,12 @@
 21:1
-vaiyigeshu | rashei | avot | halviyim
-el | El'azar | hakohen | ve'el | Yehoshua
+vaiyigeshu | rashei | avot | halviyim | el | El'azar | hakohen | ve'el | Yehoshua
 bin | Nun | ve'el | rashei | avot | hamatot
 livnei | Yisra'el
 
 21:2
 vaydaberu | aleihem | Beshiloh | be'eretz | Kena'an | lemor
-Yahweh | tzivah | veyad | Mosheh | latet | lanu | arim | lashavet | umigresheihen
-livhemtenu
+Yahweh | tzivah | veyad | Mosheh | latet | lanu | arim | lashavet
+umigresheihen | livhemtenu
 
 21:3
 vaiyitenu | venei | Yisra'el | lalviyim | minachalatam
@@ -17,21 +16,30 @@ ve'et | migresheihen
 21:4
 vaiyetze | hagoral
 lemishpechot | hakehati
-vayhi | livnei | Aharon | hakohen | min | halviyim | mimateh | Yehudah | umimateh | hashim'oni | umimateh | Vinyamin | bagoral
+vayhi | livnei | Aharon | hakohen | min | halviyim | mimateh | Yehudah
+umimateh | hashim'oni
+umimateh | Vinyamin | bagoral
 arim
 shelosh | esreh
 
 21:5
-velivnei | Kehat | hanotarim | mimishpechot | mateh | Efrayim | umimateh | Dan | umechatzi | mateh | Menasheh | bagoral
+velivnei | Kehat | hanotarim | mimishpechot | mateh | Efrayim
+umimateh | Dan
+umechatzi | mateh | Menasheh | bagoral
 arim | aser
 
 21:6
-velivnei | Gereshon | mimishpechot | mateh | Yisoshkhar | umimateh | Asher | umimateh | Naftali | umechatzi | mateh | Menasheh | Vabashan | bagoral
+velivnei | Gereshon | mimishpechot | mateh | Yisoshkhar
+umimateh | Asher
+umimateh | Naftali
+umechatzi | mateh | Menasheh | Vabashan | bagoral
 arim
 shelosh | esreh
 
 21:7
-livnei | Merari | lemishpechotam | mimateh | Re'uven | umimateh | Gad | umimateh | Zevulun
+livnei | Merari | lemishpechotam | mimateh | Re'uven
+umimateh | Gad
+umimateh | Zevulun
 arim
 sheteim | esreh
 
@@ -41,7 +49,8 @@ ve'et | migresheihen
 ka'asher | tzivah | Yahweh | beyad | Mosheh | bagoral
 
 21:9
-vaiyitenu | mimateh | benei | Yehudah | umimateh | benei | Shim'on | et | he'arim | ha'eleh
+vaiyitenu | mimateh | benei | Yehudah
+umimateh | benei | Shim'on | et | he'arim | ha'eleh
 asher | yikra | ethen | beshem
 
 21:10
@@ -56,8 +65,7 @@ ve'et | migrasheha
 sevivoteiha
 
 21:12
-ve'et | sedeh | ha'ir
-ve'et | chatzereiha
+ve'et | sedeh | ha'ir | ve'et | chatzereiha
 natenu | Lekhalev | ben | Yefuneh | ba'achuzato
 
 21:13
@@ -134,7 +142,8 @@ arim
 shetayim
 
 21:26
-kol | arim | eser | umigresheihen | lemishpechot | benei | Kehat | hanotarim
+kol | arim | eser
+umigresheihen | lemishpechot | benei | Kehat | hanotarim
 
 21:27
 velivnei | Gereshon | mimishpechot | halviyim

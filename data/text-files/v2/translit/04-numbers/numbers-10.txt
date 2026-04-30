@@ -4,7 +4,8 @@ vaydaber | Yahweh | el | Mosheh | lemor
 10:2
 aseh | lekha | shetei | chatzotzrot | kesef | mikshah
 ta'aseh | otam
-vehayu | lekha | lemikra | ha'edah | ulemasa
+vehayu | lekha | lemikra | ha'edah
+ulemasa
 et | hamachanot
 
 10:3
@@ -12,8 +13,7 @@ vetake'u | bahen
 veno'adu | eleikha | kol | ha'edah | el | petach | ohel | mo'ed
 
 10:4
-ve'im | be'achat
-yitka'u
+ve'im | be'achat | yitka'u
 veno'adu | eleikha | hanesi'im
 rashei | alfei | Yisra'el
 
@@ -47,8 +47,11 @@ vanizkartem | lifnei | Yahweh | eloheikhem
 venosha'tem | me'oyeveikhem
 
 10:10
-uveyom | simchatkhem | uvemo'adeikhem | uverashei | chadesheikhem
-uteka'tem | bachatzotzerot | al | oloteikhem | ve'al | zivchei | shalmeikhem
+uveyom | simchatkhem
+uvemo'adeikhem
+uverashei | chadesheikhem
+uteka'tem | bachatzotzerot | al | oloteikhem
+ve'al | zivchei | shalmeikhem
 vehayu | lakhem | lezikaron | lifnei | eloheikhem
 ani | Yahweh | eloheikhem
 
@@ -80,13 +83,14 @@ ben | Chelon
 10:17
 vehurad
 hamishkan
-venase'u | venei | Gereshon | uvenei | Merari
+venase'u | venei | Gereshon
+uvenei | Merari
 nose'ei
 hamishkan
 
 10:18
-venasa | degel | machaneh | Re'uven | letziv'otam | ve'al | tzeva'o
-Elitzur
+venasa | degel | machaneh | Re'uven | letziv'otam
+ve'al | tzeva'o | Elitzur
 ben | Shedei'ur
 
 10:19
@@ -104,8 +108,8 @@ nose'ei | hamikdash
 vehekimu | et | hamishkan | ad | bo'am
 
 10:22
-venasa | degel | machaneh | venei | Efrayim | letziv'otam | ve'al | tzeva'o
-Elishama
+venasa | degel | machaneh | venei | Efrayim | letziv'otam
+ve'al | tzeva'o | Elishama
 ben | Amihud
 
 10:23
@@ -117,8 +121,8 @@ ve'al | tzeva | mateh | benei | Vinyamin | Avidan
 ben | Gid'oni
 
 10:25
-venasa | degel | machaneh | venei | Dan | me'asef | lekhol | hamachanot | letziv'otam | ve'al | tzeva'o
-Achi'ezer
+venasa | degel | machaneh | venei | Dan | me'asef | lekhol | hamachanot | letziv'otam
+ve'al | tzeva'o | Achi'ezer
 ben | Ammishadai
 
 10:26

@@ -35,6 +35,7 @@ guards:
                                      # of line N (Gen 1:27 'בצלם אלהים / ברא אתו')
   - next_line_is_vav_coord_pp       # block re-absorbing a vav-coord PP that S1
                                      # split out of an enumeration (oscillation)
+  - next_line_is_wayyiqtol       # block re-absorbing post-S3-split wayyiqtol-headed lines
 
 annotation_template: "Verb (+subj) + PP-recipient merge ({pwc} prosodic words)"
 suggested_action: MERGE

@@ -240,6 +240,12 @@ def _matches_trigger(spec: Spec, l_n: str, l_n1: str, ctx: dict[str, Any]) -> bo
         total = M.prosodic_word_count(l_n) + M.prosodic_word_count(l_n1)
         if total < t["combined_min_prosodic_words"]:
             return False
+    if "line_n_max_prosodic_words" in t:
+        if M.prosodic_word_count(l_n) > t["line_n_max_prosodic_words"]:
+            return False
+    if "line_n1_max_prosodic_words" in t:
+        if M.prosodic_word_count(l_n1) > t["line_n1_max_prosodic_words"]:
+            return False
     if "line_n_is_verse_start" in t:
         if t["line_n_is_verse_start"] != (ctx.get("line_idx_in_verse") == 0):
             return False
@@ -332,6 +338,32 @@ def _g_next_vav_coord_pp(l_n, l_n1, ctx):
     if not first:
         return False
     return M.is_vav_coord_pp_head(first)
+
+
+@_register_guard("next_line_is_wayyiqtol")
+def _g_next_wayyiqtol(l_n, l_n1, ctx):
+    """Fire (block emission) if line N+1's first token is a wayyiqtol.
+
+    Use case: prevents merge specs (m5, m4, m2_4, m2_6, etc.) from
+    re-absorbing wayyiqtol-headed lines that S3 has just split out from
+    cross-clause material. Symmetric counterpart to next_line_is_vav_coord_pp
+    for the S3 split direction.
+
+    Implementation: reuses M.YIQTOL_PREFIXES and M.YIQTOL_KNOWN_NOUNS
+    so the guard is symmetric-by-construction with S3's trigger
+    (wayyiqtol_mid_line_split_positions) — both move together when the
+    lexicon is updated.
+    """
+    first = M.first_content_token(l_n1)
+    if not first:
+        return False
+    s = M.skel(first)
+    if len(s) < 3 or s[0] != "ו" or s[1] not in M.YIQTOL_PREFIXES:
+        return False
+    inner = s[1:]
+    if inner in M.YIQTOL_KNOWN_NOUNS:
+        return False
+    return True
 
 
 @_register_guard("next_line_is_verb_initial")

@@ -1,5 +1,6 @@
 19:1
-vaydaber | Sha'ul | el | Yonatan | beno | ve'el | kol | avadav | lehamit | et | David
+vaydaber | Sha'ul | el | Yonatan | beno
+ve'el | kol | avadav | lehamit | et | David
 Vihonatan | ben | Sha'ul | chafetz | Bedavid | me'od
 
 19:2
@@ -50,14 +51,14 @@ vachanito | beyado
 Vedavid | menagen | beyad
 
 19:10
-vayvakesh | Sha'ul | lehakot | bachanit | Bedavid | uvakir
-vaiyiftar | mipenei | Sha'ul
+vayvakesh | Sha'ul | lehakot | bachanit | Bedavid
+uvakir | vaiyiftar | mipenei | Sha'ul
 vaiyakh | et | hachanit | bakir
 Vedavid | nas | vaiyimalet | balaylah | hu
 
 19:11
-vaiyishlach | Sha'ul | mal'akhim | el | beit | David | leshamero | velahamito
-baboker
+vaiyishlach | Sha'ul | mal'akhim | el | beit | David | leshamero
+velahamito | baboker
 vataged | Ledavid | Mikhal | ishto | lemor
 im | einekha | memalet | et | nafshekha | halaylah | machar
 atah | mumat
@@ -82,7 +83,8 @@ ha'alu | oto | vamitah | elai | lahamito
 
 19:16
 vaiyavo'u | hamal'akhim
-vehineh | haterafim | el | hamitah | ukhevir | ha'izim | mera'ashotav
+vehineh | haterafim | el | hamitah
+ukhevir | ha'izim | mera'ashotav
 
 19:17
 vaiyomer | Sha'ul | el | Mikhal | lamah | kakhah | rimitini

@@ -8,7 +8,12 @@ Hagil'ad | Vehabashan
 
 17:2
 vayhi | livnei | Menasheh | hanotarim | lemishpechotam
-livnei | Avi'ezer | velivnei | Chelek | velivnei | Asri'el | velivnei | Shekhem | velivnei | Chefer | velivnei | Shemida
+livnei | Avi'ezer
+velivnei | Chelek
+velivnei | Asri'el
+velivnei | Shekhem
+velivnei | Chefer
+velivnei | Shemida
 eleh | benei | Menasheh | ben | Yosef | hazekharim | lemishpechotam
 
 17:3
@@ -19,7 +24,9 @@ Machlah | Veno'ah
 Chagelah | Milkah | Vetirtzah
 
 17:4
-vatikravnah | lifnei | El'azar | hakohen | velifnei | Yehoshua | bin | Nun | velifnei | hanesi'im | lemor
+vatikravnah | lifnei | El'azar | hakohen
+velifnei | Yehoshua | bin | Nun
+velifnei | hanesi'im | lemor
 Yahweh | tzivah | et | Mosheh
 latet | lanu | nachalah
 betokh | acheinu
@@ -55,11 +62,16 @@ haiyamah
 negbah | Le'efrayim | vetzafonah | Limnasheh
 vayhi | haiyam
 gevulo
-Uve'asher | yifge'un | mitzafon | Uveyisoshkhar | mimizrach
+Uve'asher | yifge'un | mitzafon
+Uveyisoshkhar | mimizrach
 
 17:11
-vayhi | Limnasheh | Beyisoshkhar | Uve'asher | Beit | She'an | uvenoteiha | Veyivle'am | uvenoteiha | ve'et | yoshevei | Dor | uvenoteiha | veyoshevei | Ein | Dor | uvenoteiha
-veyoshevei | Ta'nakh | uvenoteiha
+vayhi | Limnasheh | Beyisoshkhar
+Uve'asher | Beit | She'an
+uvenoteiha | Veyivle'am
+uvenoteiha | ve'et | yoshevei | Dor
+uvenoteiha | veyoshevei | Ein | Dor
+uvenoteiha | veyoshevei | Ta'nakh | uvenoteiha
 veyoshevei | Megido | uvenoteiha
 sheloshet | hanafet
 
@@ -87,13 +99,16 @@ har | Efrayim
 
 17:16
 vaiyomeru | benei | Yosef | lo | yimatze | lanu
-hahar | verekhev | barzel | bekhol | hakena'ani | haiyoshev | be'eretz | ha'emek
-la'asher | Beveit | She'an | uvenoteiha | vela'asher
+hahar | verekhev | barzel | bekhol | hakena'ani | haiyoshev | be'eretz | ha'emek | la'asher | Beveit | She'an
+uvenoteiha
+vela'asher
 be'emek | Yizre'el
 
 17:17
-vaiyomer | Yehoshua | el | beit | Yosef | Le'efrayim | Velimnasheh
-lemor | am | rav | atah | vekhoach | gadol | lakh | lo | yihyeh | lekha
+vaiyomer | Yehoshua | el | beit | Yosef | Le'efrayim
+Velimnasheh
+lemor | am | rav | atah
+vekhoach | gadol | lakh | lo | yihyeh | lekha
 goral | echad
 
 17:18

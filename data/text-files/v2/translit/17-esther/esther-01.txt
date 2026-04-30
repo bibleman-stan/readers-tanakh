@@ -21,7 +21,8 @@ yamim | rabim
 shemonim | ume'at | yom
 
 1:5
-uvimlot | haiyamim | ha'eleh | asah | hamelekh | lekhol | ha'am | hanimtze'im | Beshushan | habirah | lemigadol | ve'ad | katan | mishteh
+uvimlot | haiyamim | ha'eleh | asah | hamelekh | lekhol | ha'am | hanimtze'im | Beshushan | habirah | lemigadol
+ve'ad | katan | mishteh
 shiv'at | yamim | bachatzar
 ginat | bitan
 hamelekh
@@ -29,7 +30,8 @@ hamelekh
 1:6
 chur | karpas | utekhelet | achuz | bechavlei | vutz | ve'argaman
 al | gelilei | khesef
-ve'amudei | shesh | mitot | zahav | vakhesef | al | ritzfat | bahat | vashesh
+ve'amudei | shesh | mitot | zahav
+vakhesef | al | ritzfat | bahat | vashesh
 vedar | vesocharet
 
 1:7
@@ -48,7 +50,8 @@ asetah | mishteh | nashim | beit | hamalkhut | asher | lamelekh | Achashveroosh
 
 1:10
 baiyom | hashevi'i | ketov | lev | hamelekh | baiyayin
-amar | Limhumon | Bizeta | Charvona | Bigta | Va'avagta | Zetar | Vekharkas
+amar | Limhumon | Bizeta | Charvona | Bigta | Va'avagta | Zetar
+Vekharkas
 shiv'at | hasarisim
 hamsharetim
 et | penei
@@ -84,15 +87,18 @@ vaiyomer | Mumekhan | lifnei | hamelekh | vehasarim
 lo | al | hamelekh | levado
 avetah
 Vashti | hamalkah
-ki | al | kol | hasarim | ve'al | kol | ha'amim | asher | bekhol | medinot | hamelekh | Achashveroosh
+ki | al | kol | hasarim
+ve'al | kol | ha'amim | asher | bekhol | medinot | hamelekh | Achashveroosh
 
 1:17
 ki | yetze | devar | hamalkah | al | kol | hanashim | lehavzot | ba'leihen | be'eineihen
-be'ameram | hamelekh | Achashveroosh | amar | lehavi | et | Vashti | hamalkah | lefanav | velo | va'ah
+be'ameram | hamelekh | Achashveroosh | amar | lehavi | et | Vashti | hamalkah | lefanav
+velo | va'ah
 
 1:18
 vehaiyom | hazeh | tomarnah | sarot | Paras | Umadai | asher | shame'u | et | devar | hamalkah
-lekhol | sarei | hamelekh | ukhedai | bizayon | vakatzef
+lekhol | sarei | hamelekh
+ukhedai | bizayon | vakatzef
 
 1:19
 im | al | hamelekh | tov | yetze | devar | malkhut | milefanav
@@ -105,13 +111,16 @@ hatovah | mimenah
 venishma | pitgam | hamelekh | asher | ya'aseh | bekhol | malkhuto
 ki | rabah
 hi
-vekhol | hanashim | yitenu | yekar | leva'leihen | lemigadol | ve'ad | katan
+vekhol | hanashim | yitenu | yekar | leva'leihen | lemigadol
+ve'ad | katan
 
 1:21
 vaiyitav | hadavar | be'einei | hamelekh | vehasarim
 vaiya'as | hamelekh | kidvar | Memukhan
 
 1:22
-vaiyishlach | sefarim | el | kol | medinot | hamelekh | el | medinah | umedinah | kikhtavah
-ve'el | am | va'am | kilshono
-lihyot | kol | ish | sorer | beveito | umedaber | kilshon | amo
+vaiyishlach | sefarim | el | kol | medinot | hamelekh | el | medinah
+umedinah | kikhtavah
+ve'el | am
+va'am | kilshono | lihyot | kol | ish | sorer | beveito
+umedaber | kilshon | amo

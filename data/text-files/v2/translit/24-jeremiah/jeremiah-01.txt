@@ -15,7 +15,8 @@ ad | gelot | Yerushalim | bachodesh | hachamishi
 vayhi | devar | Yahweh | elai | lemor
 
 1:5
-beterem | etzorkha | vabeten | yeda'tikha | uveterem | tetze | merechem
+beterem | etzorkha | vabeten | yeda'tikha
+uveterem | tetze | merechem
 hikdashticha
 navi | lagoyim
 netatikha
@@ -42,8 +43,12 @@ vaiyaga | al | pi
 vaiyomer | Yahweh | elai | hineh | natati | devarai | befikha
 
 1:10
-re'eh | hifkadticha | haiyom | hazeh | al | hagoyim | ve'al | hamamlakhot
-lintoosh | velintotz | uleha'avid | velaharos | livnot | velintoa
+re'eh | hifkadticha | haiyom | hazeh | al | hagoyim
+ve'al | hamamlakhot | lintoosh
+velintotz
+uleha'avid
+velaharos | livnot
+velintoa
 
 1:11
 vayhi | devar | Yahweh | elai | lemor | mah | atah | ro'eh
@@ -67,7 +72,8 @@ al | kol | yoshevei | ha'aretz
 1:15
 ki | hini | kore | lekhol | mishpechot | mamlekhot | tzafonah
 ne'um | Yahweh
-uva'u | venatenu | ish | kis'o | petach | sha'arei | Yerushalim | ve'al | kol | chomoteiha | saviv
+uva'u | venatenu | ish | kis'o | petach | sha'arei | Yerushalim
+ve'al | kol | chomoteiha | saviv
 ve'al | kol | arei | Yehudah
 
 1:16
@@ -82,11 +88,13 @@ atzaveka | al | techat | mipeneihem
 pen | achitekha | lifneihem
 
 1:18
-va'ani | hineh | netatikha | haiyom | le'ir | mivtzar | ule'amud | barzel | ulechomot | nechoshet
-al | kol | ha'aretz
+va'ani | hineh | netatikha | haiyom | le'ir | mivtzar
+ule'amud | barzel
+ulechomot | nechoshet | al | kol | ha'aretz
 lemalkhei | Yehudah | lesareiha | lekhohaneiha
 ule'am | ha'aretz
 
 1:19
-venilchamu | eleikha | velo | yukhelu | lakh
+venilchamu | eleikha
+velo | yukhelu | lakh
 ki | itekha | ani | ne'um | Yahweh | lehatzilekha

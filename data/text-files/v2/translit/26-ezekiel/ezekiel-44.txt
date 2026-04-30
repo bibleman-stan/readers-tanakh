@@ -25,9 +25,10 @@ et | beit | Yahweh
 va'epol | el | panai
 
 44:5
-vaiyomer | elai | Yahweh | ben | adam | sim | libekha | ure'eh | ve'eineikha | uve'azeneikha | shema | et | kol | asher | ani | medaber | otakh
-lekhol | chukot | beit | Yahweh | ulekhol | torotov | vesamta | libekha | limvo | habayit | bekhol
-motza'ei | hamikdash
+vaiyomer | elai | Yahweh | ben | adam | sim | libekha | ure'eh | ve'eineikha
+uve'azeneikha | shema | et | kol | asher | ani | medaber | otakh
+lekhol | chukot | beit | Yahweh
+ulekhol | torotov | vesamta | libekha | limvo | habayit | bekhol | motza'ei | hamikdash
 
 44:6
 ve'amarta | el | meri | el | beit | Yisra'el
@@ -56,7 +57,8 @@ venase'u
 avonam
 
 44:11
-vehayu | vemikdashi | mesharetim | pekudot | el | sha'arei | habayit | umesharetim
+vehayu | vemikdashi | mesharetim | pekudot | el | sha'arei | habayit
+umesharetim
 et | habayit
 hemah | yishchatu | et | ha'olah | ve'et | hazevach | la'am
 vehemah | ya'amdu | lifneihem | lesharetam
@@ -69,7 +71,8 @@ venase'u
 avonam
 
 44:13
-velo | yigeshu | elai | lekhahen | li | velageshet | al | kol | kadashai | el | kadeshei
+velo | yigeshu | elai | lekhahen | li
+velageshet | al | kol | kadashai | el | kadeshei
 hakedashim
 venase'u | kelimatam
 veto'avotam | asher | asu
@@ -93,7 +96,8 @@ et | mishmarti
 44:17
 vehayah | bevo'am | el | sha'arei | hechatzer | hapenimit
 bigdei | fishtim | yilbashu
-velo | ya'aleh | aleihem | tzemer | besharetam | besha'arei | hechatzer | hapenimit | vavayetah
+velo | ya'aleh | aleihem | tzemer | besharetam | besha'arei | hechatzer | hapenimit
+vavayetah
 
 44:18
 pa'arei | fishtim | yihyu | al | rosham
@@ -124,8 +128,8 @@ veha'almanah | asher | tihyeh | almanah | mikohen
 yikachu
 
 44:23
-ve'et | ami | yoru | bein | kodesh
-lechol | uvein | tame | letahor | yodi'um
+ve'et | ami | yoru | bein | kodesh | lechol
+uvein | tame | letahor | yodi'um
 
 44:24
 ve'al | riv | hemah | ya'amdu | lishpot | bemishpatai | yishfetuhu
@@ -135,7 +139,11 @@ yekadeshu
 
 44:25
 ve'el | met | adam | lo | yavo | letame'ah
-ki | im | le'av | ule'em | uleven | ulevat | le'ach | ule'achot | asher | lo | hayetah | le'ish
+ki | im | le'av
+ule'em
+uleven
+ulevat | le'ach
+ule'achot | asher | lo | hayetah | le'ish
 yitama'u
 
 44:26
@@ -168,5 +176,6 @@ lakohanim | yihyeh
 vereshit | arisoteikhem | titenu | lakohen | lehaniach | berakhah | el | beitekha
 
 44:31
-kol | nevelah | uterefah | min | ha'of | umin | habehemah | lo | yokhelu
+kol | nevelah | uterefah | min | ha'of
+umin | habehemah | lo | yokhelu
 hakohanim

@@ -35,10 +35,12 @@ Kedavid | aviv
 
 11:7
 az | yivneh | Shelomoh | bamah | Likhmovosh | shikutz | Mo'av
-bahar | asher | al | penei | Yerushalim | Ulemolekh | shikutz | benei | Amon
+bahar | asher | al | penei | Yerushalim
+Ulemolekh | shikutz | benei | Amon
 
 11:8
-vekhen | asah | lekhol | nashav | hanakheriyot | maktirot | umezabechot | leloheihen
+vekhen | asah | lekhol | nashav | hanakheriyot | maktirot
+umezabechot | leloheihen
 
 11:9
 vaiyit'anaf | Yahweh | Bishlomoh
@@ -90,7 +92,8 @@ vaiyakumu | Mimidyan
 vaiyavo'u
 Paran
 vaiyikchu | anashim | imam | Miparan | vaiyavo'u | Mitzrayim | el | par'oh | melekh | Mitzrayim
-vaiyiten | lo | vayit | velechem | amar | lo
+vaiyiten | lo | vayit
+velechem | amar | lo
 ve'eretz | natan | lo
 
 11:19
@@ -104,8 +107,8 @@ vatigmelehu | Tachpenes | betokh | beit | par'oh
 vayhi | Genuvat | beit | par'oh | betokh | benei | far'oh
 
 11:21
-Vahadad | shama | Bemitzrayim | ki | shakhav | David | im | avotav | vekhi | met
-Yo'av | sar | hatzava
+Vahadad | shama | Bemitzrayim | ki | shakhav | David | im | avotav
+vekhi | met | Yo'av | sar | hatzava
 vaiyomer | Hadad | el | par'oh
 shalecheni | ve'elekh | el | artzi
 
@@ -172,8 +175,11 @@ ha'ir | asher | bacharti | vah | mikol | shivtei | Yisra'el
 
 11:33
 ya'an | asher | azavuni | vaiyishtachavu | Le'ashtoret | elohei | tzidonin
-Likhmovosh | elohei | Mo'av | Ulemilkom
-elohei | venei | Amon | velo | halekhu | vidrakhai | la'asot | haiyashar | be'einai | vechukotai | umishpatai
+Likhmovosh | elohei | Mo'av
+Ulemilkom
+elohei | venei | Amon
+velo | halekhu | vidrakhai | la'asot | haiyashar | be'einai | vechukotai
+umishpatai
 Kedavid | aviv
 
 11:34
@@ -201,10 +207,12 @@ vehayita | melekh | al | Yisra'el
 
 11:38
 vehayah | im | tishma | et | kol | asher | atzavekha
-vehalakhta | vidrakhai | ve'asita | haiyashar | be'einai | lishmor | chukotai | umitzvotai
+vehalakhta | vidrakhai | ve'asita | haiyashar | be'einai | lishmor | chukotai
+umitzvotai
 ka'asher | asah
 David | avdi
-vehayiti | imakh | uvaniti | lekha | vayit | ne'eman | ka'asher | baniti | Ledavid
+vehayiti | imakh
+uvaniti | lekha | vayit | ne'eman | ka'asher | baniti | Ledavid
 venatati | lekha | et | Yisra'el
 
 11:39

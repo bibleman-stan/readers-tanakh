@@ -13,7 +13,8 @@ otah
 tokhelu
 
 11:4
-akh | et | zeh | lo | tokhelu | mima'alei | hagerah | umimafrisei | haparsah
+akh | et | zeh | lo | tokhelu | mima'alei | hagerah
+umimafrisei | haparsah
 et | hagamol | ki | ma'aleh | gerah | hu | ufarsah | einenu | mafris
 tame | hu | lakhem
 
@@ -35,23 +36,24 @@ gerah | lo | yigar
 tame | hu | lakhem
 
 11:8
-mibesaram | lo | tokhelu | uvenivlatam | lo | tiga'u
+mibesaram | lo | tokhelu
+uvenivlatam | lo | tiga'u
 teme'im | hem | lakhem
 
 11:9
 et | zeh | tokhelu | mikol | asher | bamayim
-kol | asher | lo | senapir | vekaskeset | bamayim | baiyamim | uvanechalim
+kol | asher | lo | senapir | vekaskeset | bamayim | baiyamim
+uvanechalim
 otam | tokhelu
 
 11:10
-vekhol | asher | ein | lo | senapir | vekaskeset | baiyamim | uvanechalim
-mikol | sheretz | hamayim
+vekhol | asher | ein | lo | senapir | vekaskeset | baiyamim
+uvanechalim | mikol | sheretz | hamayim
 umikol | nefesh | hachaiyah | asher | bamayim
 sheketz | hem | lakhem
 
 11:11
-vesheketz | yihyu | lakhem
-mibesaram | lo | tokhelu | ve'et | nivlatam
+vesheketz | yihyu | lakhem | mibesaram | lo | tokhelu | ve'et | nivlatam
 teshaketzu
 
 11:12
@@ -175,7 +177,8 @@ uteme'im
 yihyu | lakhem
 
 11:36
-akh | ma'yan | uvor | mikveh | mayim | yihyeh | tahor
+akh | ma'yan
+uvor | mikveh | mayim | yihyeh | tahor
 venogea | benivlatam
 yitma
 
@@ -206,7 +209,8 @@ sheketz | hu
 lo | ye'akhel
 
 11:42
-kol | holekh | al | gachon | vekhol | holekh | al | arba | ad | kol | marbeh | raglayim
+kol | holekh | al | gachon
+vekhol | holekh | al | arba | ad | kol | marbeh | raglayim
 lekhol | hasheretz | hashoretz | al | ha'aretz
 lo | tokhlum
 ki | sheketz | hem
@@ -236,6 +240,7 @@ vekhol | nefesh | hachaiyah | haromeset | bamayim
 ulekhol | nefesh | hashoretzet | al | ha'aretz
 
 11:47
-lehavdil | bein | hatame | uvein | hatahor
+lehavdil | bein | hatame
+uvein | hatahor
 uvein | hachaiyah | hane'ekhelet
 uvein | hachaiyah | asher | lo | te'akhel

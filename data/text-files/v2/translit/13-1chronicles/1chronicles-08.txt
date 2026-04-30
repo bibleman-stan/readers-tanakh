@@ -40,8 +40,7 @@ Chushim | ve'et | Ba'ara
 nashav
 
 8:9
-vaiyoled | min | Chodesh | ishto
-et | Yovav | ve'et | Tzivya
+vaiyoled | min | Chodesh | ishto | et | Yovav | ve'et | Tzivya
 ve'et | Meisha
 ve'et | Malkam
 
@@ -94,7 +93,8 @@ Ve'eli'enai | Vetziletai
 Ve'eli'el
 
 8:21
-Va'adayah | Uverayah | Veshimrat | benei | Shim'i
+Va'adayah
+Uverayah | Veshimrat | benei | Shim'i
 
 8:22
 Veyishpan | Va'ever
@@ -153,11 +153,13 @@ ve'et | Avinadav
 ve'et | Eshba'al
 
 8:34
-uven | Yehonatan | Meriv | Ba'al | Umeriv | Ba'al
+uven | Yehonatan | Meriv | Ba'al
+Umeriv | Ba'al
 holid | et | Mikhah
 
 8:35
-uvenei | Mikhah | Piton | Vamelekh | Veta'rea | Ve'achaz
+uvenei | Mikhah | Piton
+Vamelekh | Veta'rea | Ve'achaz
 
 8:36
 Ve'achaz | holid | et | Yeho'adah
@@ -185,6 +187,7 @@ Ve'elifelet
 hashelishi
 
 8:40
-vaiyihyu | venei | Ulom | anashim | giborei | chayil | dorekhei | keshet | umarbim | banim | uvenei | vanim
-me'ah | vachamishim
+vaiyihyu | venei | Ulom | anashim | giborei | chayil | dorekhei | keshet
+umarbim | banim
+uvenei | vanim | me'ah | vachamishim
 kol | eleh | mibenei | Vinyamin

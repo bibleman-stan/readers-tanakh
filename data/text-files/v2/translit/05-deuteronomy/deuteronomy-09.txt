@@ -1,7 +1,8 @@
 9:1
 shema | Yisra'el | atah | over | haiyom | et | Haiyarden
 lavo | lareshet | goyim
-gedolim | va'atzumim | mimeka | arim | gedolot | uvetzurot | bashamayim
+gedolim | va'atzumim | mimeka | arim | gedolot
+uvetzurot | bashamayim
 
 9:2
 am | gadol | varam | benei | anakim
@@ -20,7 +21,8 @@ et | ha'aretz | hazot | uverish'at | hagoyim | ha'eleh
 Yahweh | morisham | mipaneikha
 
 9:5
-lo | vetzidkatecha | uveyosher | levavekha | atah | va
+lo | vetzidkatecha
+uveyosher | levavekha | atah | va
 lareshet | et | artzam
 ki | berish'at | hagoyim | ha'eleh | Yahweh | eloheikha | morisham | mipaneikha
 ulema'an | hakim | et | hadavar | asher | Nishba | Yahweh | la'avoteikha
@@ -46,7 +48,8 @@ lehashmid | etkhem
 9:9
 ba'aloti | haharah | lakachat | luchot | ha'avanim | luchot | haberit
 asher | karat | Yahweh | imakhem | va'eshev | bahar | arba'im | yom | ve'arba'im | laylah
-lechem | lo | akhalti | umayim | lo | shatiti
+lechem | lo | akhalti
+umayim | lo | shatiti
 
 9:10
 vaiyiten | Yahweh | elai | et | shenei | luchot | ha'avanim | ketuvim
@@ -95,8 +98,8 @@ va'ashaberem | le'eineikhem
 
 9:18
 va'etnapal | lifnei | Yahweh | karishonah | arba'im | yom | ve'arba'im | laylah
-lechem | lo | akhalti | umayim
-lo | shatiti | al | kol | chatatkhem | asher | chatatem
+lechem | lo | akhalti
+umayim | lo | shatiti | al | kol | chatatkhem | asher | chatatem
 la'asot | hara | be'einei | Yahweh | lehakh'iso
 
 9:19
@@ -123,7 +126,8 @@ et | Yahweh
 uvishloach | Yahweh | etkhem | Mikadesh | Barnea | lemor
 alu | ureshu | et | ha'aretz | asher | natati
 lakhem | vatamru | et | pi | Yahweh | eloheikhem
-velo | he'emantem | lo | velo | shema'tem | bekolo
+velo | he'emantem | lo
+velo | shema'tem | bekolo
 
 9:24
 mamrim | heyitem | im | Yahweh | miyom | da'ti | etkhem
@@ -154,5 +158,6 @@ umisin'ato | otam
 hotzi'am | lahamitam | bamidbar
 
 9:29
-vehem | amekha | venachalatekha | asher | hotzeta | bekhochakha | hagadol | uvizro'akha
+vehem | amekha | venachalatekha | asher | hotzeta | bekhochakha | hagadol
+uvizro'akha
 hanetuyah

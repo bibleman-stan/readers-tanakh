@@ -25,6 +25,8 @@ from collections import defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+
+MAX_PASSES = 25
 sys.path.insert(0, str(ROOT))
 
 from validators._shared.spec_runner import SpecRunner, Finding  # noqa: E402
@@ -161,7 +163,8 @@ def split_lines(text: str, findings: list[Finding]) -> tuple[str, int]:
 
 
 def apply_to_book(corpus_dir: Path, runner: SpecRunner, book_dir_name: str,
-                  dry_run: bool, verbose: bool) -> tuple[int, int]:
+                  dry_run: bool, verbose: bool,
+                  ) -> tuple[int, int, dict[tuple[str, int, int], list[tuple[int, str]]]]:
     """Apply spec-driven SPLITS then MERGES to a single book until convergence.
 
     Per-pass ordering invariant: SPLITS run first within each pass, then MERGES.
@@ -169,17 +172,31 @@ def apply_to_book(corpus_dir: Path, runner: SpecRunner, book_dir_name: str,
     wrong grouping. Splits decompose first; merges then legitimately re-bond
     bonded pairs / clause-nucleus components on the now-correctly-decomposed lines.
 
-    Returns (total_changes, n_passes) where total_changes counts splits + merges.
+    Returns (total_changes, n_passes, per_verse_touch_count).
+    per_verse_touch_count: (book, chapter, verse) → [(pass_num, spec_name), ...]
     """
     book_dir = corpus_dir / book_dir_name
     if not book_dir.is_dir():
         print(f"[skip] {book_dir_name}: not a directory", file=sys.stderr)
-        return (0, 0)
+        return (0, 0, {})
+
+    # Safety net 1: per-verse mutation history
+    per_verse_touch_count: dict[tuple[str, int, int], list[tuple[int, str]]] = defaultdict(list)
 
     total_changes = 0
     passes = 0
     while True:
         passes += 1
+
+        # Safety net 1: hard cap
+        if passes > MAX_PASSES:
+            hot = [(k, v) for k, v in per_verse_touch_count.items() if len(v) > 5]
+            hot.sort(key=lambda x: -len(x[1]))
+            print(f"[RUNAWAY] {book_dir_name}: exceeded MAX_PASSES={MAX_PASSES}", file=sys.stderr)
+            for (book, ch, vs), touches in hot[:10]:
+                last5 = touches[-5:]
+                print(f"  {book} {ch}:{vs} touched {len(touches)}x — last 5: {last5}", file=sys.stderr)
+            sys.exit(2)
 
         # ── PHASE A: SPLITS ─────────────────────────────────────────────
         split_findings = runner.run_corpus(corpus_dir, book_filter=book_dir_name,
@@ -189,6 +206,8 @@ def apply_to_book(corpus_dir: Path, runner: SpecRunner, book_dir_name: str,
             by_file: dict[Path, list[Finding]] = defaultdict(list)
             for f in split_findings:
                 by_file[Path(f.file)].append(f)
+                spec_name = getattr(f, "spec_name", getattr(f, "rule", "unknown"))
+                per_verse_touch_count[(book_dir_name, f.chapter, f.verse)].append((passes, spec_name))
             for ch_file, ch_findings in by_file.items():
                 full_path = ROOT / ch_file
                 text = full_path.read_text(encoding="utf-8")
@@ -208,6 +227,8 @@ def apply_to_book(corpus_dir: Path, runner: SpecRunner, book_dir_name: str,
             by_file: dict[Path, list[Finding]] = defaultdict(list)
             for f in merge_findings:
                 by_file[Path(f.file)].append(f)
+                spec_name = getattr(f, "spec_name", getattr(f, "rule", "unknown"))
+                per_verse_touch_count[(book_dir_name, f.chapter, f.verse)].append((passes, spec_name))
             for ch_file, ch_findings in by_file.items():
                 full_path = ROOT / ch_file
                 text = full_path.read_text(encoding="utf-8")
@@ -224,7 +245,22 @@ def apply_to_book(corpus_dir: Path, runner: SpecRunner, book_dir_name: str,
         if pass_total == 0:
             break
 
-    return (total_changes, passes)
+    # Safety net 2: post-convergence idempotency assertion (severity_filter is
+    # single-string in spec_runner, so we run twice and combine)
+    leftover_m = runner.run_corpus(corpus_dir, book_filter=book_dir_name,
+                                    severity_filter="STRONG-MERGE-CANDIDATE")
+    leftover_s = runner.run_corpus(corpus_dir, book_filter=book_dir_name,
+                                    severity_filter="STRONG-SPLIT-CANDIDATE")
+    leftover = leftover_m + leftover_s
+    if leftover:
+        print("NON-IDEMPOTENT CONVERGENCE: cascade reported clean but spec re-emits findings",
+              file=sys.stderr)
+        for f in leftover[:5]:
+            print(f"  file={f.file} line={getattr(f,'line','-')} rule={getattr(f,'rule','-')} "
+                  f"prior_line={getattr(f,'prior_line','-')!r}", file=sys.stderr)
+        sys.exit(3)
+
+    return (total_changes, passes, dict(per_verse_touch_count))
 
 
 def main():
@@ -257,15 +293,22 @@ def main():
                 print(f"[error] no book matching '{args.book}'", file=sys.stderr)
                 return 2
             target = matched[0]
-        n_merges, passes = apply_to_book(corpus_dir, runner, target,
-                                          args.dry_run, args.verbose)
-        grand_total += n_merges
-        action = "would merge" if args.dry_run else "merged"
-        print(f"{target}: {action} {n_merges} line pairs across {passes} passes")
+        n_changes, passes, touch_map = apply_to_book(corpus_dir, runner, target,
+                                                      args.dry_run, args.verbose)
+        grand_total += n_changes
+        action = "would change" if args.dry_run else "changed"
+        max_touches = max((len(v) for v in touch_map.values()), default=0)
+        if max_touches:
+            hottest = max(touch_map, key=lambda k: len(touch_map[k]))
+            _, hch, hvs = hottest
+            touch_summary = f"; max verse touches: {max_touches} ({hch}:{hvs})"
+        else:
+            touch_summary = ""
+        print(f"{target}: {action} {n_changes} lines across {passes} passes{touch_summary}")
         if args.book:
             break  # single-book mode
 
-    print(f"\nGrand total: {grand_total} merges {'(dry-run)' if args.dry_run else ''}")
+    print(f"\nGrand total: {grand_total} changes {'(dry-run)' if args.dry_run else ''}")
     return 0
 
 

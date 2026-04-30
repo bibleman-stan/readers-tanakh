@@ -10,8 +10,8 @@ nokhel
 
 3:3
 umiperi | ha'etz | asher | betokh | hagan
-amar | elohim | lo | tokhelu | mimenu | velo | tige'u
-bo
+amar | elohim | lo | tokhelu | mimenu
+velo | tige'u | bo
 pen | temutun
 
 3:4
@@ -27,7 +27,8 @@ yode'ei
 tov | vara
 
 3:6
-vatere | ha'ishah | ki | tov | ha'etz | lema'akhal | vekhi | ta'avah | hu | la'einayim | venechmad | ha'etz | lehaskil
+vatere | ha'ishah | ki | tov | ha'etz | lema'akhal
+vekhi | ta'avah | hu | la'einayim | venechmad | ha'etz | lehaskil
 vatikach | mipiryo
 vatokhal
 vatiten | gam | le'ishah | imah | vaiyokhal
@@ -78,12 +79,15 @@ hanachash | hishi'ani | va'okhel
 
 3:14
 vaiyomer | Yahweh | elohim | el | hanachash | ki | asita | zot
-arur | atah | mikol | habehemah | umikol | chaiyat | hasadeh | al | gechonekha | telekh
+arur | atah | mikol | habehemah
+umikol | chaiyat | hasadeh | al | gechonekha | telekh
 ve'afar | tokhal
 kol | yemei | chaiyeikha
 
 3:15
-ve'eivah | ashit | beinekha | uvein | ha'ishah | uvein | zar'akha
+ve'eivah | ashit | beinekha
+uvein | ha'ishah
+uvein | zar'akha
 uvein | zar'ah
 hu | yeshufekha | rosh
 ve'atah
@@ -120,8 +124,8 @@ ki | hi | hayetah
 em | kol | chai
 
 3:21
-vaiya'as | Yahweh | elohim | Le'adam | ul'ishto | katenot | or
-vaiyalbishem
+vaiya'as | Yahweh | elohim | Le'adam
+ul'ishto | katenot | or | vaiyalbishem
 
 3:22
 vaiyomer | Yahweh | elohim | hen | ha'adam | hayah | ke'achad | mimenu | lada'at

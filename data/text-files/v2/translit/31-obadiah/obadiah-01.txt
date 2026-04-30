@@ -58,8 +58,8 @@ venakherim | ba'u | sha'arov | ve'al | Yerushalim | yadu | goral
 gam | atah | ke'achad | mehem
 
 1:12
-ve'al | tere | veyom | achikha | beyom | nakhero | ve'al | tismach | livnei | Yehudah
-beyom | avedam
+ve'al | tere | veyom | achikha | beyom | nakhero
+ve'al | tismach | livnei | Yehudah | beyom | avedam
 ve'al | tagdel | pikha | beyom | tzarah
 
 1:13
@@ -69,8 +69,8 @@ ve'al | tishlachnah | vecheilo
 beyom | eido
 
 1:14
-ve'al | ta'amod | al | haperek | lehakhrit | et | pelitav | ve'al | tasger | seridav
-beyom | tzarah
+ve'al | ta'amod | al | haperek | lehakhrit | et | pelitav
+ve'al | tasger | seridav | beyom | tzarah
 
 1:15
 ki | karov | yom | Yahweh | al | kol | hagoyim
@@ -90,7 +90,9 @@ uvehar | Tziyon | tihyeh | feleitah | vehayah | kodesh
 veyareshu | beit | Ya'ako | et | morasheihem
 
 1:18
-vehayah | veit | Ya'ako | esh | uveit | Yosef | lehavah | uveit | Esav | lekash
+vehayah | veit | Ya'ako | esh
+uveit | Yosef | lehavah
+uveit | Esav | lekash
 vedalku | vahem | va'akhalum
 velo | yihyeh | sarid | leveit | Esav
 ki | Yahweh | diber

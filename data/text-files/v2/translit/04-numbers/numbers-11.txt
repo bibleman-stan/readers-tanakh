@@ -43,7 +43,8 @@ hu
 ve'eino | ke'ein | habedolach
 
 11:8
-shatu | ha'am | velaketu | vetachanu | varechayim | o | dakhu | bamedokhah
+shatu | ha'am
+velaketu | vetachanu | varechayim | o | dakhu | bamedokhah
 uvishelu | baparur
 ve'asu | oto
 ugot
@@ -58,7 +59,8 @@ yered | haman | alav
 vaiyishma | Mosheh | et | ha'am | bokheh | lemishpechotav
 ish
 lefetach | oholo
-vaiyichar | af | Yahweh | me'od | uve'einei | Mosheh
+vaiyichar | af | Yahweh | me'od
+uve'einei | Mosheh
 ra
 
 11:11
@@ -86,7 +88,8 @@ ki | khaved | mimeni
 
 11:15
 ve'im | kakhah | at | oseh | li | haregeni | na | harog
-im | matzati | chen | be'eineikha | ve'al | er'eh | bera'ati
+im | matzati | chen | be'eineikha
+ve'al | er'eh | bera'ati
 
 11:16
 vaiyomer | Yahweh | el | Mosheh | esfah | li | shiv'im | ish | miziknei | Yisra'el
@@ -96,8 +99,8 @@ velakachta | otam | el | ohel | mo'ed | vehityatzevu | sham | imakh
 
 11:17
 veyaradti | vedibarti | imekha | sham
-ve'atzalti | min | haruach | asher | aleikha | vesamti | aleihem
-venase'u | itekha | bemasa | ha'am | velo | tisa | atah | levadekha
+ve'atzalti | min | haruach | asher | aleikha | vesamti | aleihem | venase'u | itekha | bemasa | ha'am
+velo | tisa | atah | levadekha
 
 11:18
 ve'el | ha'am | tomar | hitkadeshu | lemachar | va'akhaltem | basar
@@ -108,7 +111,9 @@ va'akhaltem
 
 11:19
 lo | yom | echad | tokhlun | velo | yomayim
-velo | chamishah | yamim | velo | asarah | yamim | velo
+velo | chamishah | yamim
+velo | asarah | yamim
+velo
 esrim | yom
 
 11:20
@@ -160,7 +165,8 @@ ha'ohelah | vaiyitnabe'u | bamachaneh
 vaiyarotz | hana'ar
 vaiyaged | Lemosheh
 vaiyomar
-Eldad | Umeidad | mitnabe'im | bamachaneh
+Eldad
+Umeidad | mitnabe'im | bamachaneh
 
 11:28
 vaiya'an | Yehoshua | bin | Nun | mesharet | Mosheh | mibechurav
@@ -181,8 +187,9 @@ veziknei | Yisra'el
 
 11:31
 veruach | nasa | me'et | Yahweh | vaiyagoz | salvim | min | haiyam
-vaiyitosh | al | hamachaneh | kederekh | yom | koh | ukhederekh | yom | koh
-sevivot | hamachaneh | ukhe'amatayim | al | penei | ha'aretz
+vaiyitosh | al | hamachaneh | kederekh | yom | koh
+ukhederekh | yom | koh | sevivot | hamachaneh
+ukhe'amatayim | al | penei | ha'aretz
 
 11:32
 vaiyakom | ha'am | kol | haiyom | hahu | vekhol | halaylah | vekhol | yom | hamochorat | vaiya'asfu | et | haselav

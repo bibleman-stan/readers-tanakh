@@ -1,5 +1,6 @@
 12:1
-vaiyomer | Yahweh | el | Mosheh | ve'el | Aharon | be'eretz | Mitzrayim | lemor
+vaiyomer | Yahweh | el | Mosheh
+ve'el | Aharon | be'eretz | Mitzrayim | lemor
 
 12:2
 hachodesh | hazeh | lakhem
@@ -20,8 +21,8 @@ takhosu | al | haseh
 
 12:5
 seh | tamim | zakhar | ben | shanah
-yihyeh | lakhem | min | hakevasim | umin | ha'izim
-tikachu
+yihyeh | lakhem | min | hakevasim
+umin | ha'izim | tikachu
 
 12:6
 vehayah | lakhem | lemishmeret
@@ -39,7 +40,8 @@ tzeli | esh | umatzot | al | merorim
 yokheluhu
 
 12:9
-al | tokhelu | mimenu | na | uvashel | mevushal | bamayim
+al | tokhelu | mimenu | na
+uvashel | mevushal | bamayim
 ki | im | tzeli | esh
 rosho | al | kera'av | ve'al | kirbo
 
@@ -50,13 +52,14 @@ ba'esh | tisrofu
 
 12:11
 vekhakhah | tokhelu | oto | mateneikhem | chagurim
-na'aleikhem | beragleikhem | umakelkhem | beyedkhem
-va'akhaltem | oto | bechipazon
+na'aleikhem | beragleikhem
+umakelkhem | beyedkhem | va'akhaltem | oto | bechipazon
 pesach | hu | Layahweh
 
 12:12
 ve'avarti | ve'eretz | Mitzrayim | balaylah | hazeh
-vehikeiti | khol | bekhor | be'eretz | Mitzrayim | me'adam | ve'ad | behemah
+vehikeiti | khol | bekhor | be'eretz | Mitzrayim | me'adam
+ve'ad | behemah
 uvekhol | elohei | Mitzrayim | e'eseh | shefatim
 ani | Yahweh
 
@@ -81,7 +84,8 @@ ki | kol | okhel | chametz | venikhretah | hanefesh | hahiv | Miyisra'el
 miyom | harishon | ad | yom | hashevi'i
 
 12:16
-uvaiyom | harishon | mikra | kodesh | uvaiyom | hashevi'i
+uvaiyom | harishon | mikra | kodesh
+uvaiyom | hashevi'i
 mikra | kodesh | yihyeh | lakhem
 kol | melakhah | lo | ye'aseh | vahem
 akh | asher | ye'akhel | lekhol | nefesh | hu | levado
@@ -117,7 +121,8 @@ veshachatu | hapasach
 
 12:22
 ulekachtem | agudat | ezov | utevaltem | badam | asher | basaf
-vehiga'tem | el | hamashkof | ve'el | shetei | hamezuzot | min | hadam | asher | basaf
+vehiga'tem | el | hamashkof
+ve'el | shetei | hamezuzot | min | hadam | asher | basaf
 ve'atem | lo | tetze'u | ish | mipetach | beito | ad | boker
 
 12:23
@@ -128,7 +133,8 @@ velo | yiten | hamashchit | lavo | el | bateikhem | lingof
 
 12:24
 ushemartem
-et | hadavar | hazeh | lechok | lekha | ulevaneikha | ad | olam
+et | hadavar | hazeh | lechok | lekha
+ulevaneikha | ad | olam
 
 12:25
 vehayah | ki | tavo'u | el | ha'aretz | asher | yiten | Yahweh | lakhem
@@ -157,16 +163,20 @@ asher | beveit | habor
 vekhol | bekhor | behemah
 
 12:30
-vaiyakom | par'oh | laylah | hu | vekhol | avadav | vekhol | Mitzrayim
-vatehi | tze'akah | gedolah | Bemitzrayim
+vaiyakom | par'oh | laylah | hu
+vekhol | avadav
+vekhol | Mitzrayim | vatehi | tze'akah | gedolah | Bemitzrayim
 ki | ein | bayit | asher | ein | sham | met
 
 12:31
-vaiyikra | Lemosheh | Ule'aharon | laylah | vaiyomer | kumu | tze'u | mitokh | ami | gam | atem
+vaiyikra | Lemosheh
+Ule'aharon | laylah | vaiyomer | kumu | tze'u | mitokh | ami | gam | atem
 gam | benei | Yisra'el | ulekhu | ivdu | et | Yahweh | kedaberkhem
 
 12:32
-gam | tzonkhem | gam | bekarkhem | kechu | ka'asher | dibartem | valekhu | uverakhtem
+gam | tzonkhem | gam | bekarkhem | kechu | ka'asher | dibartem
+valekhu
+uverakhtem
 gam | oti
 
 12:33
@@ -195,12 +205,14 @@ Sukotah | keshesh | me'ot | elef | ragli | hagevarim | levad | mitaf
 
 12:38
 vegam | erev | rav | alah | itam
-vetzon | uvakar | mikneh | kaved | me'od
+vetzon
+uvakar | mikneh | kaved | me'od
 
 12:39
 vaiyofu | et | habatzek | asher | hotzi'u | Mimitzrayim | ugot | matzot
 ki | lo | chametz
-ki | goreshu | Mimitzrayim | velo | yakhelu | lehitmahmeah
+ki | goreshu | Mimitzrayim
+velo | yakhelu | lehitmahmeah
 vegam | tzedah | lo | asu | lahem
 
 12:40
@@ -225,7 +237,8 @@ chukat | hapasach
 kol | ben | nekhar | lo | yokhal | bo
 
 12:44
-vekhol | eved | ish | miknat | kasef | umaltah | oto
+vekhol | eved | ish | miknat | kasef
+umaltah | oto
 az | yokhal | bo
 
 12:45
@@ -244,7 +257,8 @@ ya'asu | oto
 12:48
 vekhi | yagur | itekha | ger | ve'asah | fesach | Layahweh
 himol | lo | khol | zakhar | ve'az | yikrav | la'asoto
-vehayah | ke'ezrach | ha'aretz | vekhol | arel | lo | yokhal | bo
+vehayah | ke'ezrach | ha'aretz
+vekhol | arel | lo | yokhal | bo
 
 12:49
 torah | achat | yihyeh | la'ezrach | velager

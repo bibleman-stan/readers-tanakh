@@ -11,7 +11,8 @@ ki | tishma | bekol
 Yahweh | eloheikha
 
 28:3
-barukh | atah | ba'ir | uvarukh | atah | basadeh
+barukh | atah | ba'ir
+uvarukh | atah | basadeh
 
 28:4
 barukh | peri | vitnekha | uferi | admatekha
@@ -23,15 +24,18 @@ ve'ashterot | tzonekha
 barukh | tan'akha | umish'artekha
 
 28:6
-barukh | atah | bevo'ekha | uvarukh | atah | betzetekha
+barukh | atah | bevo'ekha
+uvarukh | atah | betzetekha
 
 28:7
 yiten | Yahweh | et | oyeveikha | hakamim | aleikha | nigafim
-lefaneikha | bederekh | echad | yetze'u | eleikha | uveshiv'ah | derakhim | yanusu | lefaneikha
+lefaneikha | bederekh | echad | yetze'u | eleikha
+uveshiv'ah | derakhim | yanusu | lefaneikha
 
 28:8
 yetzav | Yahweh | itekha | et | haberakhah | ba'asameikha
-uvekhol | mishlach | yadekha | uverakhkha | ba'aretz | asher | Yahweh | eloheikha | noten | lakh
+uvekhol | mishlach | yadekha
+uverakhkha | ba'aretz | asher | Yahweh | eloheikha | noten | lakh
 
 28:9
 yekimecha | Yahweh | lo | le'am | kadoosh | ka'asher
@@ -44,7 +48,8 @@ vera'u | kol | amei | ha'aretz | ki | shem | Yahweh
 Nikra | aleikha | veyare'u | mimeka
 
 28:11
-vehotirkha | Yahweh | letovah | bifri | vitnekha | uvifri | vehamtekha
+vehotirkha | Yahweh | letovah | bifri | vitnekha
+uvifri | vehamtekha
 uvifri | admatekha | al | ha'adamah
 asher | Nishba | Yahweh | la'avoteikha | latet | lakh
 
@@ -57,7 +62,8 @@ ve'atah
 lo | tilveh
 
 28:13
-unetanekha | Yahweh | lerosh | velo | lezanav
+unetanekha | Yahweh | lerosh
+velo | lezanav
 vehayita | rak | lema'lah
 velo | tihyeh | lematah
 ki | tishma | el | mitzvot | Yahweh | eloheikha | asher | anokhi | metzavekha | haiyom
@@ -93,9 +99,8 @@ ve'arur | atah | betzetekha
 
 28:20
 yeshalach | Yahweh | bekha | et | hame'erah | et | hamehumah | ve'et | hamig'eret
-bekhol | mishlach | yadekha | asher | ta'aseh
-ad | hishamedkha | ve'ad | avadekha | maher | mipenei | roa | ma'alaleikha
-asher | azavtani
+bekhol | mishlach | yadekha | asher | ta'aseh | ad | hishamedkha
+ve'ad | avadekha | maher | mipenei | roa | ma'alaleikha | asher | azavtani
 
 28:21
 yadbek | Yahweh | bekha | et | hadaver
@@ -103,7 +108,11 @@ ad | kaloto | otekha | me'al | ha'adamah
 asher | atah | va | shamah | lerishtah
 
 28:22
-yakekhah | Yahweh | bashachefet | uvakkadachat | uvaddaleket | uvacharchur | uvacherev
+yakekhah | Yahweh | bashachefet
+uvakkadachat
+uvaddaleket
+uvacharchur
+uvacherev
 uvashshidafon | uvaiyerakon
 uredafukha
 ad | avedekha
@@ -119,7 +128,8 @@ min | hashamayim | yered | aleikha | ad | hishamedakh
 
 28:25
 yitenkha | Yahweh | nigaf | lifnei | oyeveikha
-bederekh | echad | tetze | elav | uveshiv'ah | derakhim
+bederekh | echad | tetze | elav
+uveshiv'ah | derakhim
 tanus | lefanav | vehayita | leza'avah | lekhol | mamlekhot | ha'aretz
 
 28:26
@@ -127,7 +137,9 @@ vehayetah | nivlatekha | lema'akhal | lekhol | of | hashamayim
 ulevehemat | ha'aretz | ve'ein | macharid
 
 28:27
-yakekhah | Yahweh | bishchin | Mitzrayim | uvo'ofalim | uvagarav
+yakekhah | Yahweh | bishchin | Mitzrayim
+uvo'ofalim
+uvagarav
 uvechares | asher | lo | tukhal | leherafe
 
 28:28
@@ -146,19 +158,22 @@ velo | teshev | bo | kerem | tita
 velo | techallelenu
 
 28:31
-shorkha | tavuach | le'eineikha | velo | tokhal | mimenu | chamorekha | gazul | milefaneikha
+shorkha | tavuach | le'eineikha
+velo | tokhal | mimenu | chamorekha | gazul | milefaneikha
 velo | yashuv | lakh
 tzonekha | netunot | le'oyeveikha
 ve'ein | lekha | moshia
 
 28:32
-baneikha | uvenoteikha | netunim | le'am | acher | ve'eineikha | ro'ot
+baneikha
+uvenoteikha | netunim | le'am | acher | ve'eineikha | ro'ot
 vekhalot | aleihem | kol | haiyom
 ve'ein | le'el
 yadekha
 
 28:33
-peri | admatekha | vekhol | yegi'akha | yokhal | am | asher | lo | yada'eta
+peri | admatekha
+vekhol | yegi'akha | yokhal | am | asher | lo | yada'eta
 vehayita | rak | ashuk | veratzutz
 kol | haiyamim
 
@@ -166,8 +181,10 @@ kol | haiyamim
 vehayita | meshuga | mimar'eh | eineikha | asher | tir'eh
 
 28:35
-yakekhah | Yahweh | bishchin | ra | al | habirkayim | ve'al | hashokayim | asher | lo | tukhal
-leherafe | mikaf | raglekha | ve'ad | kadekodecha
+yakekhah | Yahweh | bishchin | ra | al | habirkayim
+ve'al | hashokayim | asher | lo | tukhal
+leherafe | mikaf | raglekha
+ve'ad | kadekodecha
 
 28:36
 yolekh | Yahweh | otekha | ve'et | malkekha | asher | takim | aleikha | el | goy
@@ -177,7 +194,8 @@ ve'avadta | sham | elohim | acherim
 etz | va'aven
 
 28:37
-vehayita | leshamah | lemashal | velishninah | bekhol | ha'amim
+vehayita | leshamah | lemashal
+velishninah | bekhol | ha'amim
 asher | yenahegkha | Yahweh
 shamah
 
@@ -227,7 +245,9 @@ ki | lo | shama'ta | bekol | Yahweh | eloheikha
 lishmor | mitzvotav | vechukotav | asher | tzivakh
 
 28:46
-vehayu | vekha | le'ot | ulemofet | uvezar'akha | ad | olam
+vehayu | vekha | le'ot
+ulemofet
+uvezar'akha | ad | olam
 
 28:47
 tachat | asher | lo | avadta | et | Yahweh | eloheikha | besimchah
@@ -235,8 +255,10 @@ uvetuv | levav | mero
 kol
 
 28:48
-ve'avadta | et | oyeveikha | asher | yeshallechenu | Yahweh | bakh
-bera'av | uvetzama | uve'eirom | uvechoser | kol | venatan | ol | barzel | al | tzavarekha
+ve'avadta | et | oyeveikha | asher | yeshallechenu | Yahweh | bakh | bera'av
+uvetzama
+uve'eirom
+uvechoser | kol | venatan | ol | barzel | al | tzavarekha
 ad | hishmido
 otakh
 
@@ -263,31 +285,36 @@ asher | atah | boteach | bahen | bekhol | artzekha | vehetzar | lekha | bekhol |
 asher | natan | Yahweh | eloheikha | lakh
 
 28:53
-ve'akhalta | feri | vitnekha | besar | baneikha | uvenoteikha | asher | natan | lekha
+ve'akhalta | feri | vitnekha | besar | baneikha
+uvenoteikha | asher | natan | lekha
 Yahweh | eloheikha | bematzor | uvematzok
 asher | yatzik | lekha
 oyevekha
 
 28:54
 ha'ish | harakh | bekha
-vehe'anog | me'od | tera | eino | ve'achiv | uve'eshet | cheiko | uveyeter | banav
-asher | yotir
+vehe'anog | me'od | tera | eino | ve'achiv
+uve'eshet | cheiko
+uveyeter | banav | asher | yotir
 
 28:55
 mitet | le'achad | mehem | mibesar | banav | asher | yokhel
 mibeli | hish'ir | lo
-kol | bematzor | uvematzok | asher | yatzik | lekha | oyivkha | bekhol | she'areikha
+kol | bematzor
+uvematzok | asher | yatzik | lekha | oyivkha | bekhol | she'areikha
 
 28:56
 harakah | vekha | veha'anugah | asher | lo | nisetah | khaf | raglah | hatzeg | al | ha'aretz
 mehit'aneg | umerokh
-tera | einah | be'ish | cheikah | uvivnah | uvevitah
+tera | einah | be'ish | cheikah
+uvivnah
+uvevitah
 
 28:57
-uveshilyatah | haiyotzet | mibein | ragleiha | uvevaneiha | asher | teled
-ki | tokhlem | bechoser | kol | basater
-bematzor | uvematzok | asher | yatzik | lekha | oyivkha
-bish'areikha
+uveshilyatah | haiyotzet | mibein | ragleiha
+uvevaneiha | asher | teled
+ki | tokhlem | bechoser | kol | basater | bematzor
+uvematzok | asher | yatzik | lekha | oyivkha | bish'areikha
 
 28:58
 im | lo | tishmor | la'asot | et | kol | divrei | hatorah | hazot
@@ -306,8 +333,8 @@ veheshiv | bekha | et | kol | madveh | Mitzrayim | asher | yagoreta
 mipeneihem | vedaveku | bakh
 
 28:61
-gam | kol | choli | vekhol | makah | asher | lo | khatuv
-besefer
+gam | kol | choli
+vekhol | makah | asher | lo | khatuv | besefer
 hatorah | hazot
 ya'lem | Yahweh | aleikha | ad | hishamedakh
 
@@ -318,14 +345,16 @@ ki | lo | shama'ta | bekol
 Yahweh | eloheikha
 
 28:63
-vehayah | ka'asher | sas | Yahweh | aleikhem | leheitiv | etkhem | uleharbot | etkhem
+vehayah | ka'asher | sas | Yahweh | aleikhem | leheitiv | etkhem
+uleharbot | etkhem
 ken | yasis | Yahweh | aleikhem | leha'avid | etkhem
 ulehashmid | etkhem
 venisachtem | me'al | ha'adamah
 asher | atah | va | shamah | lerishtah
 
 28:64
-vehefitzekha | Yahweh | bekhol | ha'amim | miktzeh | ha'aretz | ve'ad | ketzeh | ha'aretz
+vehefitzekha | Yahweh | bekhol | ha'amim | miktzeh | ha'aretz
+ve'ad | ketzeh | ha'aretz
 ve'avadta | sham | elohim | acherim | asher | lo | yada'ta | atah | va'avoteikha
 etz | va'aven
 
@@ -342,15 +371,16 @@ mineged | ufachadta | laylah | veyomam
 velo | ta'amin | bechaiyeikha
 
 28:67
-baboker | tomar | mi | yiten | erev | uva'erev | tomar
-mi | yiten | boker
+baboker | tomar | mi | yiten | erev
+uva'erev | tomar | mi | yiten | boker
 mipachad | levavekha | asher | tifchad
 umimar'eh | eineikha | asher | tir'eh
 
 28:68
 veheshivekha | Yahweh | Mitzrayim | bo'oniyot
 baderekh | asher | amarti | lekha | lo | tosif | od | lir'otah
-vehitmakartem | sham | le'oyeveikha | la'avadim | velishfachot
+vehitmakartem | sham | le'oyeveikha | la'avadim
+velishfachot
 ve'ein | koneh
 
 28:69

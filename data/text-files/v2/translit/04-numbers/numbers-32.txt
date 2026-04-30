@@ -1,5 +1,6 @@
 32:1
-umikneh | rav | hayah | livnei | Re'uven | velivnei | Gad | atzum | me'od | vaiyir'u | et | eretz | Ya'zer | ve'et | eretz | Gil'ad
+umikneh | rav | hayah | livnei | Re'uven
+velivnei | Gad | atzum | me'od | vaiyir'u | et | eretz | Ya'zer | ve'et | eretz | Gil'ad
 vehineh | hamakom | mekom | mikneh
 
 32:2
@@ -14,7 +15,8 @@ Usevam | Unevo | Uve'on
 
 32:4
 ha'aretz | asher | hikah | Yahweh | lifnei | adat | Yisra'el
-eretz | mikneh | hi | vela'avadeikha | mikneh
+eretz | mikneh | hi
+vela'avadeikha | mikneh
 
 32:5
 vaiyomeru | im | matzanu | chen | be'eineikha
@@ -22,7 +24,8 @@ yutan | et | ha'aretz | hazot | la'avadeikha | la'achuzah | al | ta'avirenu
 et | Haiyarden
 
 32:6
-vaiyomer | Mosheh | livnei | Gad | velivnei | Re'uven
+vaiyomer | Mosheh | livnei | Gad
+velivnei | Re'uven
 ha'acheikhem | yavo'u | lamilchamah
 ve'atem
 teshevu | foh
@@ -47,7 +50,8 @@ vaiyichar | af | Yahweh
 baiyom | hahu | vaiyishava | lemor
 
 32:11
-im | yir'u | ha'anashim | ha'olim | Mimitzrayim | miben | esrim | shanah | vama'lah
+im | yir'u | ha'anashim | ha'olim | Mimitzrayim | miben | esrim | shanah
+vama'lah
 et | ha'adamah | asher | Nishba'ti | Le'avraham | Leyitzchak
 Uleya'ako
 ki | lo | mil'u | acharai
@@ -123,7 +127,8 @@ ugederot | letzona'akhem
 vehaiyotze | mipikhem | ta'asu
 
 32:25
-vaiyomer | benei | Gad | uvenei | Re'uven | el | Mosheh | lemor
+vaiyomer | benei | Gad
+uvenei | Re'uven | el | Mosheh | lemor
 avadeikha | ya'asu | ka'asher | adoni | metzaveh
 
 32:26
@@ -141,7 +146,8 @@ ve'et | rashei | avot | hamatot
 livnei | Yisra'el
 
 32:29
-vaiyomer | Mosheh | alehem | im | ya'avru | venei | Gad | uvenei | Re'uven | itekhem | et | Haiyarden | kol | chalutz | lamilchamah | lifnei | Yahweh
+vaiyomer | Mosheh | alehem | im | ya'avru | venei | Gad
+uvenei | Re'uven | itekhem | et | Haiyarden | kol | chalutz | lamilchamah | lifnei | Yahweh
 venikhbeshah | ha'aretz | lifneikhem | unetatem | lahem | et | eretz | Hagil'ad | la'achuzah
 
 32:30
@@ -150,7 +156,8 @@ itekhem
 venochazu | vetokhekhem | be'eretz | Kena'an
 
 32:31
-vaiya'anu | venei | Gad | uvenei | Re'uven | lemor | et | asher | diber | Yahweh | el | avadeikha
+vaiya'anu | venei | Gad
+uvenei | Re'uven | lemor | et | asher | diber | Yahweh | el | avadeikha
 ken | na'aseh
 
 32:32
@@ -158,7 +165,9 @@ nachnu | na'avor | chalutzim | lifnei | Yahweh
 eretz | Kena'an | ve'itanu | achuzat | nachalatenu | me'ever | Laiyarden
 
 32:33
-vaiyiten | lahem | Mosheh | livnei | Gad | velivnei | Re'uven | velachatzi | shevet | Menasheh | ven | Yosef | et | mamlekhet | Sichon | melekh | ha'emori
+vaiyiten | lahem | Mosheh | livnei | Gad
+velivnei | Re'uven
+velachatzi | shevet | Menasheh | ven | Yosef | et | mamlekhet | Sichon | melekh | ha'emori
 ve'et | mamlekhet
 Og | melekh | Habashan
 ha'aretz | le'areiha | bigvulot
@@ -185,8 +194,7 @@ ve'et | El'ale
 ve'et | Kiryatayim
 
 32:38
-ve'et | Nevo | ve'et | Ba'al | Me'on | musabot | shem
-ve'et | Sivmah
+ve'et | Nevo | ve'et | Ba'al | Me'on | musabot | shem | ve'et | Sivmah
 vaiyikre'u | veshemot | et | shemot | he'arim | asher | banu
 
 32:39

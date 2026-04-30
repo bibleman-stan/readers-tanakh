@@ -1,6 +1,8 @@
 1:1
 eleh | hadevarim | asher | diber | Mosheh | el | kol | Yisra'el | be'ever | Haiyarden
-bamidbar | Ba'aravah | mol | Suf | bein | Paran | uvein | Tofel | Velavan | Vachatzerot
+bamidbar | Ba'aravah | mol | Suf | bein | Paran
+uvein | Tofel
+Velavan | Vachatzerot
 Vedi | Zahav
 
 1:2
@@ -28,14 +30,19 @@ Yahweh | eloheinu | diber | eleinu | Bechorev | lemor
 rav | lakhem | shevet | bahar | hazeh
 
 1:7
-penu | use'u | lakhem | uvo'u | har | ha'emori | ve'el | kol | shekhenav
-Ba'aravah | vahar | uvashefelah | Uvanegev | uvechof | haiyam
+penu | use'u | lakhem
+uvo'u | har | ha'emori
+ve'el | kol | shekhenav | Ba'aravah | vahar
+uvashefelah
+Uvanegev
+uvechof | haiyam
 eretz | hakena'ani | Vehalevanon | ad | hanahar | hagadol
 nehar | Perat
 
 1:8
 re'eh | natati | lifneikhem | et | ha'aretz | bo'u | ureshu | et | ha'aretz
-asher | Nishba | Yahweh | la'avoteikhem | Le'avraham | Leyitzchak | Uleya'ako | latet | lahem
+asher | Nishba | Yahweh | la'avoteikhem | Le'avraham | Leyitzchak
+Uleya'ako | latet | lahem
 ulezar'am | achareihem
 
 1:9
@@ -74,7 +81,8 @@ leshivteikhem
 
 1:16
 va'atzaveh | et | shofeteikhem | ba'et | hahiv | lemor
-shamoa | bein | acheikhem | ushefatem | tzedek | bein | ish | uvein | achiv
+shamoa | bein | acheikhem | ushefatem | tzedek | bein | ish
+uvein | achiv
 uvein | gero
 
 1:17
@@ -143,7 +151,8 @@ ra'inu | sham
 
 1:29
 va'omar
-alekhem | lo | ta'artzun | velo | tir'un | mehem
+alekhem | lo | ta'artzun
+velo | tir'un | mehem
 
 1:30
 Yahweh | eloheikhem | haholekh | lifneikhem | hu
@@ -194,7 +203,8 @@ oto | chazek
 ki | hu | yanchilenah | et | Yisra'el
 
 1:39
-vetapekhem | asher | amartem | lavaz | yihyeh | uveneikhem | asher | lo | yade'u | haiyom | tov | vara
+vetapekhem | asher | amartem | lavaz | yihyeh
+uveneikhem | asher | lo | yade'u | haiyom | tov | vara
 hemah | yavo'u | shamah
 velahem | ettenenah
 vehem | yirashuha
@@ -213,7 +223,8 @@ vatachgeru | ish | et | kelei | milchamto
 vatahinu | la'alot | haharah
 
 1:42
-vaiyomer | Yahweh | elai | emor | lahem | lo | ta'alu | velo | tilachamu
+vaiyomer | Yahweh | elai | emor | lahem | lo | ta'alu
+velo | tilachamu
 ki | eineni | bekirbekhem
 velo | tinagefu | lifnei | oyeveikhem
 

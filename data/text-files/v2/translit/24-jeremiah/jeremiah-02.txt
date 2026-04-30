@@ -41,13 +41,13 @@ hakohanim | lo | ameru | aiyeh | Yahweh
 vetofesei | hatorah | lo | yeda'uni
 veharo'im
 pashe'u | vi
-vehanevi'im | Nibe'u | vaba'al | ve'acharei | lo | yo'ilu
+vehanevi'im | Nibe'u | vaba'al
+ve'acharei | lo | yo'ilu
 halakhu
 
 2:9
 lakhen | od | ariv | itekhem
-ne'um | Yahweh | ve'et | benei | veneikhem
-ariv
+ne'um | Yahweh | ve'et | benei | veneikhem | ariv
 
 2:10
 ki | ivru | iyei | Khitiyim | ure'u
@@ -56,7 +56,8 @@ hen | hayetah | kazot
 
 2:11
 haheimir | goy | elohim
-vehemah | lo | elohim | ve'ami | hemir | kevodo
+vehemah | lo | elohim
+ve'ami | hemir | kevodo
 belo | yo'il
 
 2:12
@@ -142,7 +143,9 @@ hemah | malkheihem | sareihem | vekhohaneihem | unevi'eihem
 
 2:27
 omerim | la'etz | avi | atah | vela'even | at | yelidtinu
-ki | fanu | elai | oref | velo | fanim | uve'et | ra'atam | yomeru
+ki | fanu | elai | oref
+velo | fanim
+uve'et | ra'atam | yomeru
 kumah
 vehoshi'enu
 

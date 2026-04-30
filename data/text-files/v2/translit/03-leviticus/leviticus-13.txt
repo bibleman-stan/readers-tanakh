@@ -1,6 +1,6 @@
 13:1
-vaydaber | Yahweh
-el | Mosheh | ve'el | Aharon | lemor
+vaydaber | Yahweh | el | Mosheh
+ve'el | Aharon | lemor
 
 13:2
 adam | ki | yihyeh | ve'or | besaro | se'et | ov | sapachat | o | vaheret
@@ -10,7 +10,8 @@ vehuva | el | Aharon | hakohen
 o | el | achad | mibanav | hakohanim
 
 13:3
-vera'ah | hakohen | et | hanega | be'or | habasor | vese'ar | banega | hafakh | lavan | umar'eh | hanega | amok | me'or | besaro
+vera'ah | hakohen | et | hanega | be'or | habasor | vese'ar | banega | hafakh | lavan
+umar'eh | hanega | amok | me'or | besaro
 nega | tzara'at
 hu
 vera'ahu | hakohen
@@ -32,7 +33,8 @@ shenit
 vera'ah | hakohen | oto | baiyom | hashevi'i | shenit
 vehineh | kehah | hanega
 velo | fasah | hanega | ba'or
-vetiharo | hakohen | mispachat | hi | vekhibes | begadav
+vetiharo | hakohen | mispachat | hi
+vekhibes | begadav
 vetaher
 
 13:7
@@ -54,7 +56,8 @@ vehuva | el | hakohen
 vera'ah | hakohen | vehineh | se'et | levanah | ba'or
 vehi
 hafekhah
-se'ar | lavan | umichyat | basar | chai | bas'et
+se'ar | lavan
+umichyat | basar | chai | bas'et
 
 13:11
 tzara'at | noshenet | hi | be'or | besaro
@@ -137,7 +140,8 @@ vehayetah | michyat | hamikhvah | baheret | levanah | adamdemet
 o | levanah
 
 13:25
-vera'ah | otah | hakohen | vehineh | Nehpakh | se'ar | lavan | babaheret | umar'eha | amok | min | ha'or
+vera'ah | otah | hakohen | vehineh | Nehpakh | se'ar | lavan | babaheret
+umar'eha | amok | min | ha'or
 tzara'at | hi | bamikhvah
 parachah
 vetime | oto | hakohen
@@ -231,8 +235,7 @@ kereach | hu
 tahor | hu
 
 13:41
-ve'im | mipe'at | panav
-yimaret
+ve'im | mipe'at | panav | yimaret
 rosho
 gibeach | hu
 tahor | hu
@@ -273,7 +276,8 @@ nega | tzara'at | beveged | tzemer
 o | beveged | pishtim
 
 13:48
-o | vishti | o | ve'erev | lapishtim | velatzamer
+o | vishti | o | ve'erev | lapishtim
+velatzamer
 o | ve'or
 o | bekhol | melekhet | or
 

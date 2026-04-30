@@ -15,7 +15,8 @@ veshav | Efrayim | Mitzrayim | Uve'ashur
 tame | yokhelu
 
 9:4
-lo | yisekhu | Layahweh | yayin | velo | ye'ervu | lo
+lo | yisekhu | Layahweh | yayin
+velo | ye'ervu | lo
 zivcheihem | kelechem | onim | lahem
 kol | okhelav | yitama'u
 ki | lachmam | lenafsham
@@ -23,7 +24,8 @@ lo | yavo
 beit | Yahweh
 
 9:5
-mah | ta'asu | leyom | mo'ed | uleyom | chag | Yahweh
+mah | ta'asu | leyom | mo'ed
+uleyom | chag | Yahweh
 
 9:6
 ki | hineh | halekhu | mishod
@@ -58,7 +60,9 @@ vaiyihyu | shikutzim | ke'ohovam
 
 9:11
 Efrayim | ka'of
-yit'ofef | kevodam | miledah | umibeten | umeherayon
+yit'ofef | kevodam | miledah
+umibeten
+umeherayon
 
 9:12
 ki | im | yegadelu | et | beneihem
