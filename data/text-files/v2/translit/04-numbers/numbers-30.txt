@@ -1,11 +1,9 @@
 30:1
-vaiyomer | Mosheh
-el | benei | Yisra'el
+vaiyomer | Mosheh | el | benei | Yisra'el
 kekhol | asher | tzivah | Yahweh | et | Mosheh
 
 30:2
-vaydaber | Mosheh | el | rashei | hamatot
-livnei | Yisra'el | lemor
+vaydaber | Mosheh | el | rashei | hamatot | livnei | Yisra'el | lemor
 zeh | hadavar | asher | tzivah | Yahweh
 
 30:3
@@ -47,8 +45,7 @@ yakumu
 ve'im | beyom | shemoa | ishah | yani | otah
 vehefer | et | nidrah | asher | aleiha | ve'et | mivta | sefateiha
 asher | aserah | al | nafshah
-Vayahweh
-yislach | lah
+Vayahweh | yislach | lah
 
 30:10
 veneder | almanah
@@ -70,8 +67,7 @@ yakum
 ve'im | hafer | yafer | otam | ishah | beyom | shame'o
 kol | motza | sefateiha | lindareiha | ule'isar | nafshah
 lo | yakum
-ishah | haferam | Vayahweh
-yislach | lah
+ishah | haferam | Vayahweh | yislach | lah
 
 30:14
 kol | neder | vekhol | shevu'at | isar

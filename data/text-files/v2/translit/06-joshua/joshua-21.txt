@@ -1,7 +1,6 @@
 21:1
 vaiyigeshu | rashei | avot | halviyim | el | El'azar | hakohen | ve'el | Yehoshua
-bin | Nun | ve'el | rashei | avot | hamatot
-livnei | Yisra'el
+bin | Nun | ve'el | rashei | avot | hamatot | livnei | Yisra'el
 
 21:2
 vaydaberu | aleihem | Beshiloh | be'eretz | Kena'an | lemor
@@ -79,8 +78,7 @@ ve'et | migrasheha
 
 21:15
 ve'et | Cholon | ve'et | migrasheha
-ve'et | Devir
-ve'et | migrasheha
+ve'et | Devir | ve'et | migrasheha
 
 21:16
 ve'et | Ayin | ve'et | migrasheha | ve'et | Yutah | ve'et | migrasheha | et | Beit | Shemesh
@@ -241,6 +239,5 @@ velo | amad | ish | bifneihem | mikol | oyeveihem | et | kol | oyeveihem | natan
 
 21:45
 lo | nafal | davar | mikol | hadavar | hatov
-asher | diber | Yahweh
-el | beit | Yisra'el
+asher | diber | Yahweh | el | beit | Yisra'el
 hakol | ba

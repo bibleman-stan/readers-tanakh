@@ -1,13 +1,10 @@
 22:1
 koh | amar | Yahweh
-red
-beit | melekh | Yehudah
-vedibarta | sham | et | hadavar
-hazeh
+red | beit | melekh | Yehudah
+vedibarta | sham | et | hadavar | hazeh
 
 22:2
-ve'amarta | shema | devar | Yahweh
-melekh | Yehudah
+ve'amarta | shema | devar | Yahweh | melekh | Yehudah
 haiyoshev | al | kise | David
 atah | va'avadeikha | ve'amekha | haba'im | bashe'arim | ha'eleh
 
@@ -18,8 +15,7 @@ veger | yatom | ve'almanah | al | tonu | al | tachmosu
 vedam | naki | al | tishpekhu | bamakom | hazeh
 
 22:4
-ki | im | aso | ta'asu | et | hadavar
-hazeh
+ki | im | aso | ta'asu | et | hadavar | hazeh
 uva'u | vesha'arei | habayit | hazeh | melakhim | yoshevim | Ledavid | al | kis'o | rokhevim | barekhev
 uvasusim
 hu | ve'avdav | ve'amo
@@ -50,8 +46,7 @@ ve'ameru | ish | el | re'ehu
 al | meh | asah | Yahweh | kakhah | la'ir | hagedolah | hazot
 
 22:9
-ve'ameru | al | asher | azevu
-et | berit | Yahweh | eloheihem
+ve'ameru | al | asher | azevu | et | berit | Yahweh | eloheihem
 vaiyishtachavu | lelohim | acherim
 vaiya'avdum
 

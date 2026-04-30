@@ -1,13 +1,11 @@
 2:1
-eleh
-benei | Yisra'el
+eleh | benei | Yisra'el
 Re'uven | Shim'on | Levi | Vihudah
 Yisoshkhar
 Uzevulun
 
 2:2
-Dan | Yosef | Uvinyamin
-Naftali
+Dan | Yosef | Uvinyamin | Naftali
 Gad | Ve'asher
 
 2:3
@@ -228,7 +226,10 @@ Vecharan
 holid | et | Gazez
 
 2:47
-uvenei | Yahedai | Regem | Veyotam | Vegeishan | Vafelet
+uvenei | Yahedai | Regem
+Veyotam
+Vegeishan
+Vafelet
 Ve'eifah | Vasha'af
 
 2:48
@@ -265,8 +266,7 @@ veha'eshta'uli
 
 2:54
 benei | Salma | Beit | Lechem | unetofati
-Atrot
-Beit | Yo'av
+Atrot | Beit | Yo'av
 vachatzi | hamanachti
 hatzare'i
 

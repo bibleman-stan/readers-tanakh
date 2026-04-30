@@ -16,8 +16,7 @@ vaiyitenem | beyad | Chaza'el | melekh | Aram
 uveyad | Ben | Hadad | ben | Chaza'el | kol | haiyamim
 
 13:4
-vaychal | Yeho'achaz
-et | penei | Yahweh
+vaychal | Yeho'achaz | et | penei | Yahweh
 vaiyishma | elav | Yahweh
 ki | ra'ah | et | lachatz | Yisra'el
 ki | lachatz | otam | melekh | Aram
@@ -52,14 +51,12 @@ vaiyimlokh | Yo'ash | beno
 tachtav
 
 13:10
-bishnat | sheloshim | vasheva | shanah | Leyo'ash
-melekh | Yehudah
+bishnat | sheloshim | vasheva | shanah | Leyo'ash | melekh | Yehudah
 malakh | Yeho'ash | ben | Yeho'achaz | al | Yisra'el | Beshomeron
 shesh | esreh | shanah
 
 13:11
-vaiya'aseh | hara
-be'einei | Yahweh
+vaiya'aseh | hara | be'einei | Yahweh
 lo | sar | mikol | chatot | Yarave'am | ben | Nevat | asher | hecheti | et | Yisra'el
 bah | halakh
 
@@ -71,8 +68,7 @@ lemalkhei | Yisra'el
 
 13:13
 vaiyishkav | Yo'ash | im | avotav
-Veyarave'am
-yashav | al | kis'o
+Veyarave'am | yashav | al | kis'o
 vaiyikaver | Yo'ash | Beshomeron | im | malkhei | Yisra'el
 
 13:14
@@ -146,5 +142,4 @@ tachtav
 vaiyashov | Yeho'ash | ben | Yeho'achaz | vaiyikach | et | he'arim | miyad | Ben | Hadad | ben | Chaza'el
 asher | lakach | miyad | Yeho'achaz | aviv | bamilchamah
 shalosh | pe'amim | hikahu | Yo'ash
-vaiyashev
-et | arei | Yisra'el
+vaiyashev | et | arei | Yisra'el

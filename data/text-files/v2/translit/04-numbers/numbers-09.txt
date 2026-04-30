@@ -17,8 +17,7 @@ vaydaber | Mosheh | el | benei | Yisra'el | la'asot | hapasach
 vaiya'asu | et | hapesach | barishon | be'arba'ah | asar | yom | lachodesh | bein | ha'arbayim
 bemidbar | Sinai
 kekhol | asher | tzivah | Yahweh | et | Mosheh
-ken | asu
-benei | Yisra'el
+ken | asu | benei | Yisra'el
 
 9:6
 vayhi | anashim | asher | hayu | teme'im | lenefesh | adam
@@ -34,8 +33,7 @@ betokh | benei | Yisra'el
 
 9:8
 vaiyomer | alehem | Mosheh
-imdu | ve'eshme'ah
-mah | yetzaveh | Yahweh | lakhem
+imdu | ve'eshme'ah | mah | yetzaveh | Yahweh | lakhem
 
 9:9
 vaydaber | Yahweh | el | Mosheh | lemor
@@ -88,13 +86,11 @@ ve'acharei | khen
 yis'u
 benei | Yisra'el
 uvimkom | asher | yishkon | sham | he'anan
-sham | yachanu
-benei | Yisra'el
+sham | yachanu | benei | Yisra'el
 
 9:18
 al | pi | Yahweh | yis'u | benei | Yisra'el
-ve'al | pi | Yahweh
-yachanu
+ve'al | pi | Yahweh | yachanu
 kol | yemei | asher | yishkon | he'anan | al | hamishkan
 yachanu
 
@@ -107,8 +103,7 @@ velo | yisa'u
 9:20
 veyesh | asher | yihyeh | he'anan | yamim | mispar | al | hamishkan
 al | pi | Yahweh | yachanu
-ve'al | pi | Yahweh
-yisa'u
+ve'al | pi | Yahweh | yisa'u
 
 9:21
 veyesh | asher | yihyeh | he'anan | me'erev | ad | boker
@@ -125,5 +120,4 @@ yisa'u
 
 9:23
 al | pi | Yahweh | yachanu | ve'al | pi | Yahweh | yisa'u
-et | mishmeret | Yahweh | shamaru
-al | pi | Yahweh | beyad | Mosheh
+et | mishmeret | Yahweh | shamaru | al | pi | Yahweh | beyad | Mosheh

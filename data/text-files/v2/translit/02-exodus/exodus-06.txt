@@ -44,8 +44,7 @@ venatati | otah | lakhem | morashah
 ani | Yahweh
 
 6:9
-vaydaber | Mosheh | ken
-el | benei | Yisra'el
+vaydaber | Mosheh | ken | el | benei | Yisra'el
 velo | shame'u | el | Mosheh | mikotzer | ruach
 ume'avodah
 kashah
@@ -58,8 +57,7 @@ bo | daber | el | par'oh | melekh | Mitzrayim
 vishalach | et | benei | Yisra'el | me'artzo
 
 6:12
-vaydaber | Mosheh
-lifnei | Yahweh | lemor
+vaydaber | Mosheh | lifnei | Yahweh | lemor
 hen | benei | Yisra'el | lo | shame'u | elai | ve'eikh | yishma'eni | far'oh
 va'ani
 aral | sefatayim
@@ -149,7 +147,6 @@ daber | el | par'oh | melekh | Mitzrayim | et | kol | asher | ani
 dover | eleikha
 
 6:30
-vaiyomer | Mosheh
-lifnei | Yahweh
+vaiyomer | Mosheh | lifnei | Yahweh
 hen | ani | aral | sefatayim | ve'eikh
 yishma | elai | par'oh

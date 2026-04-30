@@ -120,8 +120,9 @@ ve'el | Yahtzah
 ve'al | Mofa'at
 
 48:22
-ve'al | Divon | ve'al | Nevo | ve'al | Beit
-Divlatayim
+ve'al | Divon
+ve'al | Nevo
+ve'al | Beit | Divlatayim
 
 48:23
 ve'al | Kiryatayim

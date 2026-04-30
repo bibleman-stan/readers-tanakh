@@ -11,17 +11,14 @@ hechayil
 
 6:3
 vesabotem | et | ha'ir | kol | anshei | hamilchamah
-hakeif | et | ha'ir
-pa'am | echat
+hakeif | et | ha'ir | pa'am | echat
 koh | ta'aseh
 sheshet | yamim
 
 6:4
 veshiv'ah | khohanim | yis'u | shiv'ah | shofrot | haiyovlim | lifnei | ha'aron
-uvaiyom | hashevi'i | tasobu | et | ha'ir
-sheva | pe'amim
-vehakohanim
-yitke'u | bashofarot
+uvaiyom | hashevi'i | tasobu | et | ha'ir | sheva | pe'amim
+vehakohanim | yitke'u | bashofarot
 
 6:5
 vehayah | bimshokh | bekeren | haiyovel | keshame'akhem | et | kol | hashofar
@@ -37,8 +34,7 @@ veshiv'ah | khohanim | yis'u | shiv'ah | shofrot | yovlim
 lifnei | aron | Yahweh
 
 6:7
-vaiyomeru | el | ha'am
-ivru
+vaiyomeru | el | ha'am | ivru
 vesobu | et | ha'ir
 vehechalutz
 ya'avor | lifnei | aron | Yahweh
@@ -64,16 +60,14 @@ ad | yom | ameri | aleikhem | hari'u
 vahari'otem
 
 6:11
-vaiyasev | aron | Yahweh | et | ha'ir
-hakef
+vaiyasev | aron | Yahweh | et | ha'ir | hakef
 pa'am | echat
 vaiyavo'u | hamachaneh
 vaiyalinu | bamachaneh
 
 6:12
 vaiyashkem | Yehoshua | baboker
-vaiyis'u | hakohanim
-et | aron | Yahweh
+vaiyis'u | hakohanim | et | aron | Yahweh
 
 6:13
 veshiv'ah | hakohanim | nose'im | shiv'ah | shofrot | haiyoelim | lifnei | aron | Yahweh
@@ -92,8 +86,7 @@ vayhi | baiyom | hashevi'i | vaiyashkimu | ka'alot | hashachar
 vaiyasobu | et | ha'ir | kamishpat | hazeh
 sheva | pe'amim
 rak | baiyom | hahu
-savevu | et | ha'ir
-sheva | pe'amim
+savevu | et | ha'ir | sheva | pe'amim
 
 6:16
 vayhi | bapa'am | hashevi'it

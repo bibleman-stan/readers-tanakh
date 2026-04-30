@@ -22,13 +22,11 @@ min | haiyom | asher | hotzeti | et | ami | me'eretz | Mitzrayim
 lo | vacharti | ve'ir | mikol | shivtei | Yisra'el
 livnot | bayit | lihyot | shemi
 sham | velo | vacharti | ve'ish
-lihyot | nagid
-al | ami | Yisra'el
+lihyot | nagid | al | ami | Yisra'el
 
 6:6
 va'evchar | Birushalim | lihyot | shemi
-sham | va'evchar | Bedavid | lihyot
-al | ami | Yisra'el
+sham | va'evchar | Bedavid | lihyot | al | ami | Yisra'el
 
 6:7
 vayhi | im | levav | David | avi | livnot | bayit
@@ -49,14 +47,11 @@ hu | yivneh | habayit | lishmi
 6:10
 vaiyakem | Yahweh | et | devaro | asher | diber
 va'akum | tachat | David | avi | va'eshev | al | kise | Yisra'el | ka'asher | diber | Yahweh
-va'evneh | habayit
-leshem | Yahweh | elohei | Yisra'el
+va'evneh | habayit | leshem | Yahweh | elohei | Yisra'el
 
 6:11
-va'asim | sham | et | ha'aron
-asher | sham
-berit | Yahweh | asher | karat
-im | benei | Yisra'el
+va'asim | sham | et | ha'aron | asher | sham
+berit | Yahweh | asher | karat | im | benei | Yisra'el
 
 6:12
 vaiya'amod | lifnei | mizbach | Yahweh | neged | kol | kehal | Yisra'el
@@ -108,8 +103,7 @@ ve'el | hatefilah | asher | avdekha | mitpalel | lefaneikha
 lihyot | eineikha | fetuchot | el | habayit | hazeh | yomam
 valaylah
 el | hamakom | asher | amarta | lasum | shimkha
-sham | lishmoa | el | hatefilah | asher | yitpalel | avdekha | el | hamakom
-hazeh
+sham | lishmoa | el | hatefilah | asher | yitpalel | avdekha | el | hamakom | hazeh
 
 6:21
 veshama'ta | el | tachanunei | avdekha | ve'amekha | Yisra'el | asher | yitpalu
@@ -135,8 +129,7 @@ vehitpalu | vehitchanenu | lefaneikha | babayit | hazeh
 
 6:25
 ve'atah | tishma | min | hashamayim
-vesalachta | lechatat
-amekha | Yisra'el
+vesalachta | lechatat | amekha | Yisra'el
 vahasheivotam | el | ha'adamah
 asher | natatah | lahem | vela'avoteihem
 

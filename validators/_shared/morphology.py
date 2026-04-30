@@ -195,6 +195,28 @@ YIQTOL_KNOWN_NOUNS = {
     "תורת", "תורתו", "תורתך",
     "תהלה", "תהלות", "תפלת", "תפלתי", "תפלתך",
     "תכלת", "תולדות", "תולדת", "תולדתם",
+    # ── Biblical proper nouns (α/י/נ/ת-prefix that match wayyiqtol/yiqtol skel)
+    # Audit-driven additions 2026-04-30 (Wave 6 — Judg 4:1 וְאֵהוּד etc.)
+    # Aleph-prefix proper nouns
+    "אהוד", "אברהם", "אברם", "אהרן", "אדם", "אדום", "אסא",
+    "אבימלך", "אבישי", "אבנר", "אבשלום", "אחז", "אחאב", "אחזיהו", "אחיה",
+    "אילון", "אלעזר", "אליהו", "אלישע", "אליעזר", "אלימלך", "אסיר",
+    "אסנת", "אספסף", "אפרים", "ארם", "אשור", "אסתר",
+    # The divine name (massive missing — caused has_finite_verb FP on every YHWH instance)
+    "יהוה",
+    # Yod-prefix proper nouns
+    "יעקב", "יצחק", "יוסף", "יהודה", "ישראל", "ירדן", "ירושלם", "ירושלים",
+    "יבוס", "יחזקאל", "יואב", "יואל", "יואש", "יואחז", "יוחנן", "יורם",
+    "יותם", "יהושע", "יהויקים", "יהויכין", "יהויקין", "יהויעדה", "יהויריב",
+    "ירמיהו", "ירמיה", "ישעיהו", "ישעיה", "ירבעם", "יבל", "יבין",
+    "יפת", "יוון", "יון", "יהוא", "יהוידע", "יהורם", "יהושפט",
+    # Tav-prefix proper nouns
+    "תרח", "תרשיש", "תיכון", "תקוע", "תמר", "תימן", "תרגום", "תפסח",
+    "תרחקה", "תרבית", "תהום", "תהומות", "תיכן", "תרגומה", "תרגומו",
+    "תירס",  # son of Yepheth (Gen 10:2 audit)
+    # Nun-prefix proper nouns
+    "נח", "נבט", "נבל", "נדב", "נחור", "נחמיה", "נעמי", "נמרוד",
+    "נתן", "נחושת", "נחל", "נחלי", "נחלת",
 }
 
 
@@ -962,8 +984,12 @@ CONSTRUCT_HEAD_SKELETONS = {
     # Plural masc construct (-ei suffix)
     "יושבי", "אנשי", "בני", "ימי", "שני", "אבי", "אחי", "מלכי", "זקני",
     "שרי", "ראשי", "אלוני", "אילני", "מפריסי", "מעלי", "פני",
+    "דברי", "מצוי", "חקי", "פקודי", "משפטי", "עדותי", "אהבי",
+    "הררי", "מימי", "מעיני", "תהומות", "ערי",
+    # Plural fem construct (-ot suffix, e.g. מִצְוֹת construct of plural מצוות)
+    "מצות", "תורות", "חקות", "עדות", "ברכות", "מצוותי", "אבותי",
     # Singular fem construct (-t suffix)
-    "חמת", "אשת", "בת", "מלכת", "תורת", "עדת", "מצות", "פחת", "פחות",
+    "חמת", "אשת", "בת", "מלכת", "תורת", "עדת", "פחת", "פחות",
     "מלכות", "מקצה", "תחלת", "ראשית", "אחרית",
     "פתח",     # opening of (recurs Lev-Num as 'פתח אהל מועד')
     # Singular masc construct (often = absolute)
@@ -984,18 +1010,21 @@ def is_construct_head_token(token: str) -> bool:
     """True if token is a construct-state head (algorithmic strip + closed list).
 
     Strategy:
-      1. Get skeleton (handle maqqef by checking head sub-token only).
+      1. Get skeleton; for maqqef compounds, check the LAST sub-token (the
+         rightmost element is the awaiting-rectum head, e.g. אֶת־מִצְוֹת = DO+head;
+         a closed chain like מִצְוַת־יְהוָה would have יהוה as last → not a head).
       2. Try direct match against CONSTRUCT_HEAD_SKELETONS.
       3. Strip leading vav, retry.
       4. Strip leading bound-prep / article, retry.
       5. Strip leading vav + bound-prep / article, retry.
 
-    This generalization catches בְּבֵית, מִבֵּית, וּבְבֵית, וְאַנְשֵׁי, etc. without
-    requiring every prefix variant in the closed list.
+    This generalization catches בְּבֵית, מִבֵּית, וּבְבֵית, וְאַנְשֵׁי, אֶת־מִצְוֹת, etc.
+    without requiring every prefix variant in the closed list.
     """
     if MAQQEF in token:
-        head = token.split(MAQQEF, 1)[0]
-        s = skel(head)
+        # Check the LAST sub-token (rightmost = awaiting-rectum head if construct-shaped)
+        last = token.rsplit(MAQQEF, 1)[-1]
+        s = skel(last)
     else:
         s = skel(token)
     if not s:

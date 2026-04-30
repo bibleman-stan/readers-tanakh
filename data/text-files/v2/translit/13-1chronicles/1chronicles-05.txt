@@ -1,8 +1,7 @@
 5:1
 uvenei | Re'uven | bekhor | Yisra'el | ki | hu | habekhor
 uvechalelo | yetzu'ei | aviv
-Nitenah | bekhorato
-livnei | Yosef
+Nitenah | bekhorato | livnei | Yosef
 ben | Yisra'el
 velo | lehityaches | labekhorah
 
@@ -114,7 +113,10 @@ ba'aretz | Mibashan | ad | Ba'al | Chermon | Usenir | vehar | Chermon | hemah | 
 5:24
 ve'eleh
 rashei | veit | avotam
-Ve'efer | Veyish'i | Ve'eli'el | Ve'azri'el | Veyirmeyah | Vehodavyah | Veyachdi'el | anashim | giborei | chayil
+Ve'efer | Veyish'i | Ve'eli'el
+Ve'azri'el
+Veyirmeyah
+Vehodavyah | Veyachdi'el | anashim | giborei | chayil
 anshei | shemot
 rashim
 leveit | avotam
@@ -122,8 +124,7 @@ leveit | avotam
 5:25
 vaiyim'alu | belohei
 avoteihem
-vaiyiznu | acharei | elohei | amei | ha'aretz
-asher | hishmid | elohim | mipeneihem
+vaiyiznu | acharei | elohei | amei | ha'aretz | asher | hishmid | elohim | mipeneihem
 
 5:26
 vaiya'ar | elohei | Yisra'el | et | ruach | Pul | melekh | Ashur | ve'et | ruach | Tilegat | Pilneser | melekh | Ashur
@@ -207,7 +208,5 @@ Userayah
 holid | et | Yehotzadak
 
 5:41
-Vihotzadak | halakh
-behaglot | Yahweh | et | Yehudah
-Virushalim | beyad
-Nevukhadnetzar
+Vihotzadak | halakh | behaglot | Yahweh | et | Yehudah
+Virushalim | beyad | Nevukhadnetzar

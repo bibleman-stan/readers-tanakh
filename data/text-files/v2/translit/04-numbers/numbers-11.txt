@@ -1,7 +1,6 @@
 11:1
 vayhi | ha'am | kemit'onenim
-ra
-be'azenei | Yahweh
+ra | be'azenei | Yahweh
 vaiyishma | Yahweh | vaiyichar | apo
 vativ'ar | bam | esh | Yahweh
 vatokhal | biktzeh | hamachaneh
@@ -138,10 +137,8 @@ umatza | lahem
 
 11:23
 vaiyomer | Yahweh | el | Mosheh
-hayad | Yahweh
-tiktzar
-atah | tir'eh | hayikrecha | devari
-im | lo
+hayad | Yahweh | tiktzar
+atah | tir'eh | hayikrecha | devari | im | lo
 
 11:24
 vaiyetze | Mosheh | vaydaber | el | ha'am | et | divrei | Yahweh
@@ -210,8 +207,7 @@ rabah | me'od
 vaiyikra | et | shem | hamakom | hahu
 Kivrot | Hata'avah
 ki | sham | kaveru
-et | ha'am
-hamit'avim
+et | ha'am | hamit'avim
 
 11:35
 Mikivrot | Hata'avah | nase'u | ha'am | Chatzerot
