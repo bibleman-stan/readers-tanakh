@@ -709,17 +709,51 @@ def pass4_whitespace(line: str) -> str:
     return re.sub(r"\s+", " ", line).strip()
 
 
+# Final-pass invariant guarantee — collapse artifact doublings injected by
+# any prior pass (or stale upstream gloss). Closed-list of genuine Hebrew
+# geminate constructions are preserved. Per Design D 2026-04-30 + Stan's
+# 2026-04-30 directive: guarantee invariants at the FINAL pass, don't
+# debug upstream when downstream-fix-loop is shorter.
+
+_GENUINE_DOUBLINGS_FINAL = frozenset({
+    'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten',
+    'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty',
+    'hundred', 'thousand',
+    'very', 'muchness',
+    'go', 'arise', 'awake', 'come', 'pass', 'turn', 'return',
+    'day', 'days', 'year', 'years',
+    'seed',
+})
+
+_DOUBLED_WORD_RE_FINAL = re.compile(r'\b(\w+)\b \1\b', re.IGNORECASE)
+
+
+def pass5_dedup(line: str) -> str:
+    """Collapse consecutive identical tokens unless genuine geminate."""
+    def _replace(m):
+        if m.group(1).lower() in _GENUINE_DOUBLINGS_FINAL:
+            return m.group(0)
+        return m.group(1)
+    while _DOUBLED_WORD_RE_FINAL.search(line):
+        new_line = _DOUBLED_WORD_RE_FINAL.sub(_replace, line)
+        if new_line == line:
+            break
+        line = new_line
+    return line
+
+
 # ---------------------------------------------------------------------------
 # Chapter processor
 # ---------------------------------------------------------------------------
 
 def normalize_line(line: str, in_poetic: bool) -> str:
-    """Apply all four passes in order to a single gloss line."""
+    """Apply all five passes in order to a single gloss line."""
     s = line
     s = pass1_suffix_reorder(s)
     s = pass2_construct_of(s)
     s = pass3_vs_reorder(s, in_poetic)
     s = pass4_whitespace(s)
+    s = pass5_dedup(s)
     return s
 
 

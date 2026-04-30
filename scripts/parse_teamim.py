@@ -594,6 +594,55 @@ def naturalize_hebrew_gloss(text, word_units=None):
         text = re.sub(rf'\b(\w+) {adj}\b', repl, text)
 
     text = re.sub(r'\s+', ' ', text).strip()
+    text = deduplicate_gloss(text)
+    return text
+
+
+# Hebrew geminate constructions that legitimately produce doubled English
+# tokens — distributive numerals, emphatic imperatives, superlative
+# intensifiers, time-distributives, botanical descriptors. Must NOT be
+# collapsed by deduplicate_gloss(). Closed list per Design D 2026-04-30.
+GENUINE_DOUBLINGS = frozenset({
+    # Distributive numerals (שְׁנַיִם שְׁנַיִם "in pairs", etc.)
+    'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten',
+    'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty',
+    'hundred', 'thousand',
+    # Superlative intensifiers (מְאֹד מְאֹד)
+    'very', 'muchness',
+    # Emphatic imperatives (לֵךְ לֵךְ, קוּם קוּם, etc.)
+    'go', 'arise', 'awake', 'come', 'pass', 'turn', 'return',
+    # Distributive time (יוֹם יוֹם "day by day", etc.)
+    'day', 'days', 'year', 'years',
+    # Botanical distributive (זֶרַע זֶרַע "seed-bearing")
+    'seed',
+})
+
+_DOUBLED_WORD_RE = re.compile(r'\b(\w+)\b \1\b', re.IGNORECASE)
+
+
+def deduplicate_gloss(text: str) -> str:
+    """Collapse consecutive identical tokens unless they are genuine Hebrew
+    geminate constructions (distributive, emphatic, superlative).
+
+    Loop until stable to handle 3+ peat sequences ("he he he said" → "he said").
+
+    Wave 6 audit (2026-04-30): root cause of ~3,154 DOUBLED_TOKEN findings
+    in eng-gloss readability scanner. TAHOT interlinear emits both an explicit
+    independent pronoun and the verb's inflected-subject gloss in the same
+    colon (הִוא נָתְנָה → "she she gave"); naturalize_hebrew_gloss VSO-pronoun-
+    drop misses this because the verb is followed by a verb-encoded subject
+    rather than a nominal subject.
+    """
+    def _replace(m):
+        tok = m.group(1).lower()
+        if tok in GENUINE_DOUBLINGS:
+            return m.group(0)   # preserve genuine doubling
+        return m.group(1)       # collapse artifact
+    while _DOUBLED_WORD_RE.search(text):
+        new_text = _DOUBLED_WORD_RE.sub(_replace, text)
+        if new_text == text:
+            break  # stuck on genuine doublings only
+        text = new_text
     return text
 
 

@@ -35,6 +35,10 @@ import sys
 import unicodedata
 from pathlib import Path
 
+# Local: deduplicate_gloss for defense-in-depth eng-gloss artifact collapse
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from parse_teamim import deduplicate_gloss  # noqa: E402
+
 REPO_ROOT = Path(__file__).resolve().parent.parent
 TEXT_DIR = REPO_ROOT / "data" / "text-files"
 
@@ -244,6 +248,9 @@ def propagate_chapter(book: str, chapter_filename: str, dry_run: bool) -> tuple[
                 gloss_text = synth_gloss(inter_slice)
                 stats["split_cola"] += 1
 
+            # Defense-in-depth: collapse artifact doublings created by
+            # cross-cola joins or stale v1 files (Design D 2026-04-30).
+            gloss_text = deduplicate_gloss(gloss_text)
             ed_gloss_lines.append(gloss_text)
             cursor += n
             stats["ed_cola"] += 1
