@@ -263,13 +263,146 @@ def _first_vowel_is_holam(token: str) -> bool:
     return False
 
 
-## Note: niqqud-policy per canon §1 (2026-04-29). Hybrid approach:
+## Note: niqqud-policy per canon §1 (2026-04-29 + extension 2026-04-29-pm).
+## Hybrid approach:
 ##   - Niqqud-AWARE checks are reserved for morpho-lexical patterns that cannot be
 ##     enumerated lexically (qal active participle CōCēC — every active verb has one,
-##     too many to list). The _first_vowel_is_holam check is the only one of these.
+##     too many to list). _first_vowel_is_holam was the seed; is_mem_prefix_participle
+##     and is_wayyiqtol_token extend the same hybrid policy to handle whack-a-mole
+##     false-positive classes (mem-prep + adjective; vav-conjunction + alpha-noun).
 ##   - All other α-/ת-/נ-prefix-noun-vs-verb disambiguations use lexical exclusion
 ##     via YIQTOL_KNOWN_NOUNS (consonant-skeleton-anchored). Niqqud is NOT a
 ##     break-licensing criterion at any layer.
+
+# Niqqud codepoint constants (used by mem-prefix + wayyiqtol disambiguation)
+SHEVA = "ְ"
+HIREQ = "ִ"
+PATAH = "ַ"
+QAMATS = "ָ"
+DAGESH = "ּ"
+TAV = "ת"
+
+
+def _first_vowel_and_next_consonant(token: str) -> tuple[str | None, str | None, bool]:
+    """Walk a token; return (first_vowel_after_first_consonant,
+    second_consonant, second_consonant_has_dagesh).
+
+    Returns (None, None, False) if the structure isn't found (unpointed,
+    too-short, etc.). Used by is_mem_prefix_participle and is_wayyiqtol_token
+    to inspect the niqqud signature distinguishing participle/wayyiqtol from
+    common false-positive classes.
+    """
+    found_first_consonant = False
+    vowel = None
+    next_consonant = None
+    next_has_dagesh = False
+    i = 0
+    while i < len(token):
+        ch = token[i]
+        cp = ord(ch)
+        if 0x05D0 <= cp <= 0x05EA:  # Hebrew letter
+            if not found_first_consonant:
+                found_first_consonant = True
+            elif vowel is not None and next_consonant is None:
+                next_consonant = ch
+                # Scan forward for dagesh on this consonant. TAHOT Unicode order
+                # is consonant + niqqud + dagesh (vowel-before-dagesh), so peek
+                # past niqqud until we find dagesh OR another consonant.
+                j = i + 1
+                while j < len(token):
+                    cp_j = ord(token[j])
+                    if cp_j == 0x05BC:  # dagesh
+                        next_has_dagesh = True
+                        break
+                    if 0x05D0 <= cp_j <= 0x05EA:  # next consonant — stop scan
+                        break
+                    j += 1
+                return (vowel, next_consonant, next_has_dagesh)
+        elif found_first_consonant and vowel is None and 0x05B0 <= cp <= 0x05BD:
+            vowel = ch
+        i += 1
+    return (vowel, next_consonant, next_has_dagesh)
+
+
+def is_mem_prefix_participle(token: str) -> bool:
+    """Niqqud-aware: classify a mem-initial token as participle vs noun/prep.
+
+    Replaces the crude `len(skel) >= 4 and starts-with-mem and not finite-verb`
+    heuristic that whack-a-moled against מן-prep + adjective (מִקָּטֹן),
+    proper nouns (מַתַּנְיָה), and qamats-mem nouns (מָקוֹם).
+
+    Pattern table:
+      מ + sheva   + C        → piel/pual ptcp        → True
+      מ + patah   + C (with hiphil shape signature)  → True
+      מ + qamats  + C (with hophal shape signature)  → True (low confidence)
+      מ + hireq   + ת        → hithpael ptcp         → True
+      מ + hireq   + C+dagesh → מן-prep + assim. nun  → False (the key fix)
+      מ + hireq   + C (no dagesh, non-tav)           → False (mem-noun, fall through)
+
+    Fail-soft: returns False on unpointed / partial-niqqud / structural-bail.
+    """
+    t = strip_teamim(token)
+    if not t or t[0] != "מ":
+        return False
+    vowel, next_c, next_dagesh = _first_vowel_and_next_consonant(t)
+    if vowel is None or next_c is None:
+        return False
+    # mem-hireq + dagesh = מן-prep with assimilated nun (the false-positive fix)
+    if vowel == HIREQ and next_dagesh:
+        return False
+    # hithpael: mem-hireq + tav root marker
+    if vowel == HIREQ and next_c == TAV:
+        return True
+    # piel/pual: mem-sheva
+    if vowel == SHEVA:
+        return True
+    # hiphil: mem-patah; require ptcp shape (mem + ≥3 root letters)
+    if vowel == PATAH:
+        return len(skel(t)) >= 4
+    # hophal: mem-qamats; narrow guard (suffix shape OR strict length-4)
+    # to dodge qamats-mem nouns like מָקוֹם, מָגֵן.
+    if vowel == QAMATS:
+        s = skel(t)
+        if s.endswith(("ת", "ים", "ות")) or len(s) == 4:
+            return True
+        return False
+    # mem-hireq + non-tav, no dagesh: fall through (mem-noun or partial-niqqud)
+    return False
+
+
+def is_wayyiqtol_token(token: str) -> bool:
+    """Niqqud-aware: True only if token bears wayyiqtol signature
+       vav + patah + (yiqtol-prefix consonant) + dagesh.
+
+    Replaces the bare consonant-skeleton heuristic for wayyiqtol detection,
+    which false-matched ואל / ואת / וְאַבְרָהָם / etc. as wayyiqtols.
+
+    Maqqef-joined compounds: check only the first sub-token (vav-prefix
+    binds to the first head morpheme).
+
+    Known FN: 1cs wayyiqtol with א-prefix (וָאֹמַר) lengthens vav to qamats
+    and rejects dagesh on guttural; this branch returns False. Caller's
+    skel-fallback (is_finite_verb_skel) catches it via the YIQTOL_PREFIXES
+    consonant pattern.
+    """
+    t = strip_teamim(token)
+    if MAQQEF in t:
+        t = t.split(MAQQEF, 1)[0]
+    if len(t) < 4 or t[0] != "ו":
+        return False
+    # vav must carry patah (wayyiqtol) — sheva (vav-conj) and qamats (וּ) reject
+    vowel, next_c, next_dagesh = _first_vowel_and_next_consonant(t)
+    if vowel != PATAH or next_c is None:
+        return False
+    # next consonant must be a yiqtol prefix
+    if next_c not in YIQTOL_PREFIXES:
+        return False
+    # dagesh on prefix consonant is definitional for wayyiqtol (excluding the
+    # 1cs א-prefix case noted in docstring — already filtered by patah-check
+    # because 1cs wayyiqtol uses qamats, not patah)
+    if not next_dagesh:
+        return False
+    return True
 
 
 def is_finite_verb_token(token: str) -> bool:
@@ -289,9 +422,14 @@ def is_finite_verb_token(token: str) -> bool:
         first_sub = token.split(MAQQEF, 1)[0]
         if _first_vowel_is_holam(first_sub):
             return False
+        # Niqqud-aware wayyiqtol short-circuit (catches what skel-heuristic misses)
+        if is_wayyiqtol_token(first_sub):
+            return True
         return is_finite_verb_skel(skel(first_sub))
     if _first_vowel_is_holam(token):
         return False
+    if is_wayyiqtol_token(token):
+        return True
     return is_finite_verb_skel(skel(token))
 
 
@@ -642,18 +780,26 @@ M_PREFIX_NON_PARTICIPLE = {
 
 
 def line_starts_with_participle(line: str) -> bool:
-    """True if first content token bears participial morphology (any binyan)."""
+    """True if first content token bears participial morphology (any binyan).
+
+    2026-04-29 rewrite: delegates to niqqud-aware is_mem_prefix_participle for
+    the mem-prefix branch (was crude `len ≥ 4 + starts-with-mem + not-verb`,
+    which whack-a-moled). M_PREFIX_NON_PARTICIPLE retained as fail-soft fallback
+    for unpointed/partial-niqqud edge cases.
+    """
     tok = first_content_token(line)
     if not tok:
         return False
     s = skel(tok)
     if s in M_PREFIX_NON_PARTICIPLE:
         return False
-    # m-prefix derived stems
-    if s.startswith("מ") and len(s) >= 4 and not is_finite_verb_skel(s):
-        return True
-    # qal active CoCeC — needs niqqud-aware check; te'amim must be stripped
-    # without removing vowels.
+    # mem-prefix: niqqud-aware classification
+    if s.startswith("מ"):
+        if is_mem_prefix_participle(tok):
+            return True
+        # else fall through (could still be qal-active by holam — but unusual
+        # for mem-prefix; the next check handles non-mem qal active anyway)
+    # qal active CoCeC — niqqud-aware check; te'amim stripped, vowels preserved
     if QAL_ACTIVE_PARTICIPLE_RE.match(strip_teamim(tok)):
         return True
     return False
