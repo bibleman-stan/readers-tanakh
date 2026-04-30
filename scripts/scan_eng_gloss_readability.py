@@ -126,6 +126,7 @@ def check_single_word_strand(line: str):
 
 
 CHECKERS = [
+    check_doubled_suffix_pronoun,  # specific subclass — fires before generic
     check_doubled_token,
     check_stranded_auxiliary,
     check_mangled_construct,

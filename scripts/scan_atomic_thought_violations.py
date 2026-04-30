@@ -202,10 +202,33 @@ def check_temporal_closer_plus_clause(line: str) -> dict | None:
     return None
 
 
+def check_fronted_pp_plus_verb(line: str) -> dict | None:
+    """Design O #1: vav-coord PP head at pos 0 + finite verb at pos ≥ 2 ⇒
+    chiastic fronted-PP-clause boundary missed by S3 (Gen 1:5 pattern)."""
+    toks = tokens(line)
+    if len(toks) < 3:
+        return None
+    if not is_vav_coord_pp_head(toks[0]):
+        return None
+    for i in range(2, len(toks)):
+        if is_finite_verb_token(toks[i]):
+            # If S3 already would split here, don't double-count
+            splits = closed_list_clause_boundary_split_positions(line)
+            if splits:
+                return None
+            return {
+                "pattern_class": "FRONTED_PP_PLUS_VERB",
+                "severity": "HIGH",
+                "detail": f"PP-head={toks[0]} verb={toks[i]} pos={i}",
+            }
+    return None
+
+
 # Check ordering matters: speech-intro before multi-verb so HIGH classes don't
 # double-report the same line (first match wins per line).
 CHECKS = [
     check_mid_line_speech_intro,
+    check_fronted_pp_plus_verb,
     check_multi_verb_no_s3,
     check_wayyiqtol_after_pp,
     check_fronted_pronoun_verb,
