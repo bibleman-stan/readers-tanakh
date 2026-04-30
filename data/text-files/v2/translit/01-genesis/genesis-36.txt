@@ -59,9 +59,7 @@ vateled | Le'esav | et | Ye'ush | ve'et | Ya'lam | ve'et | Korach
 36:15
 eleh | alufei | venei | Esav
 benei | Elifaz | bekhor | Esav
-aluf | Teiman | aluf | Omar
-aluf | Tzefo
-aluf | Kenaz
+aluf | Teiman | aluf | Omar | aluf | Tzefo | aluf | Kenaz
 
 36:16
 aluf | Korach | aluf | Ga'tam
@@ -69,8 +67,7 @@ aluf | Amalek
 eleh | alufei | Elifaz | be'eretz | Edom | eleh | benei | Adah
 
 36:17
-ve'eleh | benei | Re'u'el | ben | Esav
-aluf | Nachat | aluf | Zerach
+ve'eleh | benei | Re'u'el | ben | Esav | aluf | Nachat | aluf | Zerach
 aluf | Shamah
 aluf | Mizah
 eleh | alufei | Re'u'el | be'eretz | Edom | eleh | benei | Vasemat
@@ -78,8 +75,7 @@ eshet | Esav
 
 36:18
 ve'eleh | benei | Oholivamah | eshet | Esav
-aluf | Ye'ush | aluf | Ya'lam
-aluf | Korach
+aluf | Ye'ush | aluf | Ya'lam | aluf | Korach
 eleh | alufei | Oholivamah | bat | Anah | eshet | Esav
 
 36:19
@@ -131,8 +127,7 @@ Va'akan
 eleh | venei | Dishan | Utz | Va'aran
 
 36:29
-eleh | alufei | hachori
-aluf | Lotan | aluf | Shoval
+eleh | alufei | hachori | aluf | Lotan | aluf | Shoval
 aluf | Tziv'on
 aluf | Anah
 
@@ -184,12 +179,10 @@ veshem | ishto | Meheitav'el | bat | Matred | bat | Mei | Zahav
 
 36:40
 ve'eleh | shemot | alufei | Esav | lemishpechotam | limkomotam
-bishmotam | aluf | Timna | aluf | Alvah
-aluf | Yetet
+bishmotam | aluf | Timna | aluf | Alvah | aluf | Yetet
 
 36:41
-aluf | Oholivamah | aluf | Elah
-aluf | Pinon
+aluf | Oholivamah | aluf | Elah | aluf | Pinon
 
 36:42
 aluf | Kenaz | aluf | Teiman

@@ -31,8 +31,7 @@ lemalkhei | Yehudah
 15:7
 vaiyishkav | Azaryah | im | avotav
 vaiyikberu | oto | im | avotav | be'ir | David
-vaiyimlokh | Yotam | beno
-tachtav
+vaiyimlokh | Yotam | beno | tachtav
 
 15:8
 bishnat | sheloshim | ushemoneh | shanah | La'azaryahu
@@ -49,8 +48,7 @@ et | Yisra'el
 vaiyikshor | alav | Shalum | ben | Yavesh
 vaiyakehu | kaval'am | am
 vaymitehu
-vaiyimlokh
-tachtav
+vaiyimlokh | tachtav
 
 15:11
 veyeter | divrei | Zekharyah
@@ -113,8 +111,7 @@ lemalkhei | Yisra'el
 
 15:22
 vaiyishkav | Menachem | im | avotav
-vaiyimlokh | Pekachyah | veno
-tachtav
+vaiyimlokh | Pekachyah | veno | tachtav
 
 15:23
 bishnat | chamishim | shanah | La'azaryah | melekh | Yehudah
@@ -159,8 +156,7 @@ Ashurah
 15:30
 vaiyikshor | kesher | Hoshea | ben | Elah | al | Pekach | ben | Remalyahu
 vaiyakehu | vaymitehu
-vaiyimlokh
-tachtav | bishnat | esrim | Leyotam | ben | Uziyah
+vaiyimlokh | tachtav | bishnat | esrim | Leyotam | ben | Uziyah
 
 15:31
 veyeter | divrei | Fekach
@@ -201,5 +197,4 @@ ve'et | Pekach | ben | Remalyahu
 15:38
 vaiyishkav | Yotam | im | avotav
 vaiyikaver | im | avotav | be'ir | David | aviv
-vaiyimlokh | Achaz | beno
-tachtav
+vaiyimlokh | Achaz | beno | tachtav

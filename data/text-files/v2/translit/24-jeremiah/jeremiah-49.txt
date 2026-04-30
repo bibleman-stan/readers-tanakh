@@ -50,8 +50,10 @@ lo | yash'iru | olelot | im | ganavim | balaylah | hishchitu | daiyam
 49:10
 ki | ani | chasafti | et | Esav | gileiti | et | mistarav
 venechbah
-lo | yukhal
-shudad | zar'o | ve'echav | ushekhenav | ve'einenu
+lo | yukhal | shudad | zar'o
+ve'echav
+ushekhenav
+ve'einenu
 
 49:11
 azevah | yetomeikha | ani | achaiyeh
@@ -193,8 +195,7 @@ velo | yihyeh | hagoy | asher | lo | yavo | sham | nidechei | Olam
 vehachtati | et | Eilom | lifnei | oyeveihem
 velifnei | mevakshei | nafsham | veheveti | aleihem | ra'ah | et | charon | api
 ne'um | Yahweh
-veshilachti | achareihem | et | hacherev
-ad | kaloti | otam
+veshilachti | achareihem | et | hacherev | ad | kaloti | otam
 
 49:38
 vesamti | khis'i | Be'eilam

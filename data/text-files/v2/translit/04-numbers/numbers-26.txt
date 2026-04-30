@@ -4,8 +4,7 @@ ve'el | El'azar | ben | Aharon | hakohen | lemor
 
 26:2
 se'u | et | rosh | kol | adat | benei | Yisra'el | miben | esrim | shanah
-vama'lah
-leveit | avotam | kol | yotze | tzava | Beyisra'el
+vama'lah | leveit | avotam | kol | yotze | tzava | Beyisra'el
 
 26:3
 vaydaber | Mosheh | Ve'el'azar | hakohen | otam | Be'arvot | Mo'av
@@ -26,7 +25,10 @@ Lechetzron | mishpachat | hachetzroni | Lekharmi | mishpachat | hakarmi
 26:7
 eleh
 mishpechot | haru'uveni
-vaiyihyu | fekudeihem | sheloshah | ve'arba'im | elef | usheva | me'ot | usheloshim
+vaiyihyu | fekudeihem | sheloshah
+ve'arba'im | elef
+usheva | me'ot
+usheloshim
 
 26:8
 uvenei | Falu | Eli'av

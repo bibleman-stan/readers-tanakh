@@ -1,6 +1,5 @@
 7:1
-velivnei | Yisoshkhar | Tola | Ufu'ah | Yashiv | Veshimron
-arba'ah
+velivnei | Yisoshkhar | Tola | Ufu'ah | Yashiv | Veshimron | arba'ah
 
 7:2
 uvenei | Tola | Uzi | Urefayah | Viri'el | Veyachmai | Veyivsam | Ushemu'el | rashim | leveit | avotam | Letola
@@ -32,7 +31,10 @@ vehityachsam | esrim | ushenayim | elef | usheloshim
 ve'arba'ah
 
 7:8
-uvenei | Vekher | Zemirah | Veyo'ash | Ve'eli'ezer | Ve'elyo'einai | Ve'ameri | Viremot | Va'aviyah
+uvenei | Vekher | Zemirah | Veyo'ash
+Ve'eli'ezer | Ve'elyo'einai
+Ve'ameri | Viremot
+Va'aviyah
 Va'anatot
 Ve'alamet
 kol | eleh | benei | Vakher
@@ -101,8 +103,7 @@ Vetachat | beno
 7:21
 Vezavad | beno | Veshutelach | beno
 Ve'ezer | Ve'el'ad
-vaharagum | anshei | Gat | hanoladim | ba'aretz
-ki | yaredu | lakachat | et | mikneihem
+vaharagum | anshei | Gat | hanoladim | ba'aretz | ki | yaredu | lakachat | et | mikneihem
 
 7:22
 vaiyit'abel | Efrayim | avihem
@@ -201,5 +202,4 @@ Veritzya
 7:40
 kol | eleh | venei | Asher | rashei | veit | ha'avot | berurim | giborei | chayalim
 rashei | hanesi'im
-vehityachsam | batzava | bamilchamah
-misparam | anashim | esrim | veshishah | alef
+vehityachsam | batzava | bamilchamah | misparam | anashim | esrim | veshishah | alef

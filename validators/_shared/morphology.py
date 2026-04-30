@@ -191,6 +191,21 @@ YIQTOL_KNOWN_NOUNS = {
     "תרדמה", "תכלית", "תרבית", "תרועה", "תהלוכת",
     "תכלת",  # already covered above; defensive duplicate ok
     "תכונה", "תקופה", "תקופת",
+    # ── Design J lexicon expansion (2026-04-30): top-frequency
+    # skel-fallback false positives surfaced via corpus scan.
+    # Prep+suffix forms (in PREP_SKELETONS but not protected at wayyiqtol-filter):
+    "אליו", "אליך", "אליהם", "אלהם", "אליה", "אחריו",
+    "תחתיו", "אליכם", "אחריהם", "אלינו", "אחריך",
+    # Common nouns:
+    "אותם", "אלפים", "אנשי", "אנשים", "ארבע", "ארצה",
+    "ארבעים", "אחרים", "נחשת", "ארון", "ארבעה", "תמים",
+    "אלוף", "נחלה", "אותה", "אותך", "אבתם", "נשיא",
+    "אבנים", "ידיו", "אביה", "אותו", "אותי", "אבותם",
+    "אויב", "ארור", "איננו",
+    # Particles / adverbs:
+    "יחדו", "תמיד", "אולי", "יומם", "אשרי",
+    # High-frequency proper nouns (freq ≥34):
+    "יהונתן", "איוב", "נפתלי", "יחזקיהו",
     "ארצי", "ארצנו", "ארצו", "ארצם", "ארצך", "ארצכם", "ארצהם",
     "ארץ", "ארצות",
     "אילון", "אכזב", "אכזרי", "אסיר", "אסירי",
@@ -1034,7 +1049,11 @@ CONSTRUCT_HEAD_SKELETONS = {
     "עשרת", "עשר",
 }
 
-BOUND_PREP_STRIPS = ("ב", "ל", "כ", "מ", "ה")  # bound preps + article
+BOUND_PREP_STRIPS = ("ב", "ל", "כ", "מ")  # bound preps only — article ה REMOVED 2026-04-30
+# (per Design L diagnosis: stripping ה caused הָאָרֶץ/הָעָם/הַמֶּלֶךְ to test True
+# as construct heads. A definite noun cannot be in construct state — basic Hebrew
+# grammar; that combination indicates the chain is closed within the token. 186
+# of 559 h16_c misses traced to this bug.)
 
 
 def is_construct_head_token(token: str) -> bool:

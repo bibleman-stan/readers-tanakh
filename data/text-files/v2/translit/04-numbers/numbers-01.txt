@@ -5,8 +5,7 @@ lemor
 
 1:2
 se'u | et | rosh | kol | adat | benei | Yisra'el | lemishpechotam
-leveit | avotam
-bemispar | shemot
+leveit | avotam | bemispar | shemot
 kol | zakhar | legulgelotam
 
 1:3
@@ -57,8 +56,7 @@ Legad | Elyasaf | ben | De'u'el
 Lenaftali | Achira | ben | Einan
 
 1:16
-eleh | keri'ei | ha'edah | nesi'ei
-matot | avotam
+eleh | keri'ei | ha'edah | nesi'ei | matot | avotam
 rashei | alfei | Yisra'el | hem
 
 1:17
@@ -99,21 +97,22 @@ tish'ah | vachamishim | elef | ushelosh | me'ot
 1:24
 livnei | Gad
 toldotam | lemishpechotam
-leveit | avotam
-bemispar | shemot | miben | esrim | shanah
+leveit | avotam | bemispar | shemot | miben | esrim | shanah
 vama'lah
 kol | yotze | tzava
 
 1:25
 pekudeihem
 lemateh | Gad
-chamishah | ve'arba'im | elef | veshesh | me'ot | vachamishim
+chamishah
+ve'arba'im | elef
+veshesh | me'ot
+vachamishim
 
 1:26
 livnei | Yehudah
 toldotam | lemishpechotam
-leveit | avotam
-bemispar | shemot | miben | esrim | shanah
+leveit | avotam | bemispar | shemot | miben | esrim | shanah
 vama'lah
 kol | yotze | tzava
 
@@ -130,15 +129,13 @@ kol | yotze | tzava
 
 1:29
 pekudeihem
-lemateh | Yisoshkhar
-arba'ah | vachamishim | elef
+lemateh | Yisoshkhar | arba'ah | vachamishim | elef
 ve'arba | me'ot
 
 1:30
 livnei | Zevulun
 toldotam | lemishpechotam
-leveit | avotam
-bemispar | shemot | miben | esrim | shanah
+leveit | avotam | bemispar | shemot | miben | esrim | shanah
 vama'lah
 kol | yotze | tzava
 
@@ -151,8 +148,7 @@ ve'arba | me'ot
 1:32
 livnei | Yosef | livnei | Efrayim
 toldotam | lemishpechotam
-leveit | avotam
-bemispar | shemot | miben | esrim | shanah
+leveit | avotam | bemispar | shemot | miben | esrim | shanah
 vama'lah
 kol | yotze | tzava
 
@@ -174,8 +170,7 @@ shenayim | usheloshim | elef | umatayim
 1:36
 livnei | Vinyamin
 toldotam | lemishpechotam
-leveit | avotam
-bemispar | shemot | miben | esrim | shanah
+leveit | avotam | bemispar | shemot | miben | esrim | shanah
 vama'lah
 kol | yotze | tzava
 
@@ -187,8 +182,7 @@ ve'arba | me'ot
 1:38
 livnei | Dan
 toldotam | lemishpechotam
-leveit | avotam
-bemispar | shemot | miben | esrim | shanah
+leveit | avotam | bemispar | shemot | miben | esrim | shanah
 vama'lah
 kol | yotze | tzava
 
@@ -235,8 +229,7 @@ usheloshet | alafim | vachamesh | me'ot | vachamishim
 
 1:47
 vehalviyim
-lemateh | avotam
-lo | hatpakdu
+lemateh | avotam | lo | hatpakdu
 betokham
 
 1:48

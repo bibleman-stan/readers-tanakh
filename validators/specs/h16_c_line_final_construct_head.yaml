@@ -27,7 +27,7 @@ description: |
 trigger:
   line_n_last_token:
     morphology: construct_head
-  combined_max_prosodic_words: 9
+  combined_max_prosodic_words: 12
 
 guards:
   - poetic_register
