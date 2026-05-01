@@ -77,6 +77,13 @@ V1_DIR = REPO_ROOT / "data" / "text-files" / "v1" / "he-baseline"
 V2_DIR = REPO_ROOT / "data" / "text-files" / "v2" / "he"
 
 # ---------------------------------------------------------------------------
+# Shared morphology + morph-alignment helpers
+# ---------------------------------------------------------------------------
+sys.path.insert(0, str(REPO_ROOT / "validators"))
+from _shared import morphology as M   # noqa: E402
+from _shared import morph_alignment as MA  # noqa: E402
+
+# ---------------------------------------------------------------------------
 # Hebrew Unicode helpers
 # ---------------------------------------------------------------------------
 
@@ -137,6 +144,37 @@ TEMPORAL_PREFIXES = ("ב", "ל", "מ")
 # Verse-reference line pattern: optional word + digits:digits
 VERSE_REF_RE = re.compile(r"^(\S+\s+)?\d+:\d+\s*$")
 
+# Bare verse-ref pattern (used by _partition_into_verses)
+_VERSE_REF_BARE = re.compile(r"^\d+:\d+\s*$")
+
+
+# ---------------------------------------------------------------------------
+# Verse-grouping helper (mirrors validate_construct_chain.py pattern)
+# ---------------------------------------------------------------------------
+
+def _partition_into_verses(lines: list[str]) -> list[tuple[int, list[tuple[int, str]]]]:
+    """Partition file lines into per-verse groups.
+
+    Returns list of (verse_num, [(1-based_line_no, line_text), ...]) tuples.
+    """
+    groups: list[tuple[int, list[tuple[int, str]]]] = []
+    cur_verse: int | None = None
+    cur_lines: list[tuple[int, str]] = []
+    for i, raw in enumerate(lines):
+        line_no = i + 1
+        s = raw.strip()
+        m = _VERSE_REF_BARE.match(s)
+        if m:
+            if cur_verse is not None and cur_lines:
+                groups.append((cur_verse, cur_lines))
+            cur_verse = int(s.split(":")[1])
+            cur_lines = []
+        elif s and cur_verse is not None:
+            cur_lines.append((line_no, raw))
+    if cur_verse is not None and cur_lines:
+        groups.append((cur_verse, cur_lines))
+    return groups
+
 
 # ---------------------------------------------------------------------------
 # Helpers
@@ -171,6 +209,23 @@ def is_wayyiqtol_candidate(bare_token: str) -> bool:
         bare_token.startswith(WAYYIQTOL_PREFIX)
         and len(bare_token) >= WAYYIQTOL_MIN_LEN
     )
+
+
+def is_second_wayyiqtol(raw_token: str, tag_list: "list[str] | None") -> bool:
+    """Return True if raw_token (not the initial ויהי) is a finite verb.
+
+    Tag-aware primary path: delegates to M.is_finite_verb_token with tag_list
+    when tags are available.  Falls back to the surface is_wayyiqtol_candidate
+    heuristic on the bare skeleton when tags are absent.
+
+    The ויהי skeleton itself is excluded (caller strips index 0 before calling).
+    """
+    bare = strip_points(raw_token)
+    if bare in WAYEHI_SPELLINGS:
+        return False
+    if tag_list is not None:
+        return M.is_finite_verb_token(raw_token, tag_list=tag_list)
+    return is_wayyiqtol_candidate(bare)
 
 
 def has_temporal_marker(bare_tokens: list[str]) -> bool:
@@ -273,29 +328,83 @@ def is_existential_wayehi(bare_tokens: list[str], next_line_bare: list[str]) -> 
 # ---------------------------------------------------------------------------
 
 def scan_file(path: Path, verbose: bool = False) -> list[dict]:
-    """Scan one text file for Rule H16 FEF wayehi protasis violations."""
+    """Scan one text file for Rule H16 FEF wayehi protasis violations.
+
+    Uses TAHOT morph tags (via morph_alignment) when available to classify
+    tokens as finite verbs with higher accuracy. Falls back to the surface
+    is_wayyiqtol_candidate heuristic when tags are missing or verse alignment
+    fails.
+    """
     findings = []
     try:
         lines = path.read_text(encoding="utf-8").splitlines()
     except UnicodeDecodeError:
         lines = path.read_text(encoding="utf-8-sig").splitlines()
 
+    # Load TAHOT morph alignment for this chapter (None if v0/morph file absent).
+    chapter_morph = MA.load_chapter_morph(path)
+
+    # Partition all lines into per-verse groups for morph alignment.
+    verse_groups = _partition_into_verses(lines)
+
+    # Build a quick lookup: verse_num → verse_token_tags (or None on failure).
+    # verse_token_tags[line_idx][tok_idx] → list[str] of TAHOT tags.
+    verse_tag_map: dict[int, list[list[list[str]]] | None] = {}
+    if chapter_morph is not None:
+        for verse_num, verse_numbered_lines in verse_groups:
+            ortho_tags = chapter_morph.get(verse_num)
+            if ortho_tags is None:
+                verse_tag_map[verse_num] = None
+                continue
+            content_lines = [raw for _, raw in verse_numbered_lines if not is_skippable(raw)]
+            if not content_lines:
+                verse_tag_map[verse_num] = None
+                continue
+            aligned = MA.align_verse_tokens_to_tags(content_lines, ortho_tags)
+            verse_tag_map[verse_num] = aligned  # may be None on mismatch
+
+    # Build a flat index: 1-based-line-no → (verse_num, content_line_idx)
+    # so the flat scanner below can retrieve tags without re-partitioning.
+    line_to_verse_ctx: dict[int, tuple[int, int]] = {}
+    for verse_num, verse_numbered_lines in verse_groups:
+        content_lines_enumerated = [
+            (ln, raw) for ln, raw in verse_numbered_lines if not is_skippable(raw)
+        ]
+        for ci, (ln, _raw) in enumerate(content_lines_enumerated):
+            line_to_verse_ctx[ln] = (verse_num, ci)
+
+    def _tag_list_for_line_token(line_no: int, tok_idx: int) -> "list[str] | None":
+        """Return TAHOT tag list for token at position tok_idx on line_no."""
+        ctx = line_to_verse_ctx.get(line_no)
+        if ctx is None:
+            return None
+        verse_num, ci = ctx
+        vtt = verse_tag_map.get(verse_num)
+        if vtt is None:
+            return None
+        if ci < 0 or ci >= len(vtt):
+            return None
+        row = vtt[ci]
+        if tok_idx < 0 or tok_idx >= len(row):
+            return None
+        return row[tok_idx]
+
     for i, line in enumerate(lines):
         if is_skippable(line):
             continue
 
-        tokens = line.split()
-        if not tokens:
+        line_tokens = line.split()
+        if not line_tokens:
             continue
 
-        first_bare = strip_points(tokens[0])
+        first_bare = strip_points(line_tokens[0])
 
         # --- Only process lines whose FIRST token is ויהי ---
         if first_bare != WAYEHI_SKELETON:
             continue
 
         line_no = i + 1  # 1-based
-        all_bare = [strip_points(t) for t in tokens]
+        all_bare = [strip_points(t) for t in line_tokens]
 
         # --- Find the next non-skippable content line (needed for existential check) ---
         next_line_content = ""
@@ -317,18 +426,20 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
             continue
 
         # --- Check for second wayyiqtol on the SAME line (STRONG-SPLIT-CANDIDATE) ---
-        # Rest of tokens after the initial ויהי
-        rest_bare = all_bare[1:]
+        # Rest of tokens after the initial ויהי (index 0).
+        # Use tag-aware is_second_wayyiqtol: passes TAHOT tag_list when available,
+        # falls back to surface heuristic on tag miss.
         second_wayyiqtol_idx = None
-        for k, tok in enumerate(rest_bare):
-            if is_wayyiqtol_candidate(tok):
-                second_wayyiqtol_idx = k + 1  # index in all_bare
+        for k, raw_tok in enumerate(line_tokens[1:], start=1):
+            tag_list = _tag_list_for_line_token(line_no, k)
+            if is_second_wayyiqtol(raw_tok, tag_list):
+                second_wayyiqtol_idx = k
                 break
 
         if second_wayyiqtol_idx is not None:
             # There is a second wayyiqtol on the same line as ויהי.
             # The protasis and main clause are collapsed — flag STRONG-SPLIT.
-            main_verb_token = tokens[second_wayyiqtol_idx]
+            main_verb_token = line_tokens[second_wayyiqtol_idx]
             findings.append({
                 "file": path.name,
                 "file_path": path,
