@@ -54,6 +54,14 @@ V1_DIR = REPO_ROOT / "data" / "text-files" / "v1" / "he-baseline"
 V2_DIR = REPO_ROOT / "data" / "text-files" / "v2" / "he"
 
 # ---------------------------------------------------------------------------
+# Shared morph-alignment helpers (TAHOT oracle)
+# ---------------------------------------------------------------------------
+# Make _shared importable when this script is run as __main__.
+sys.path.insert(0, str(REPO_ROOT / "validators"))
+from _shared import morph_alignment as MA  # noqa: E402
+from _shared import morph_tags as MT       # noqa: E402
+
+# ---------------------------------------------------------------------------
 # Hebrew Unicode constants
 # ---------------------------------------------------------------------------
 
@@ -71,12 +79,90 @@ def strip_points(token: str) -> str:
 
 
 # ---------------------------------------------------------------------------
+# TAHOT tag helpers — FP suppression
+# ---------------------------------------------------------------------------
+# These use the LAST tag in a prosodic-word's tag_list (the syntactic head).
+
+def _head_tag(tag_list: "list[str] | None") -> "str | None":
+    """Return the last non-placeholder tag from tag_list, or None."""
+    if not tag_list:
+        return None
+    for t in reversed(tag_list):
+        if t and t != "[—]":
+            return t
+    return None
+
+
+def _tag_confirms_negation(tag_list: "list[str] | None") -> "bool | None":
+    """Return True if TAHOT confirms a negation particle (Tn*), False if it
+    confirms something else, None if no tag is available (caller uses skel).
+    """
+    ht = _head_tag(tag_list)
+    if ht is None:
+        return None
+    head = MT.head_morpheme(ht)
+    return head.startswith("Tn")
+
+
+def _tag_confirms_do_marker(tag_list: "list[str] | None") -> "bool | None":
+    """Return True if TAHOT confirms a direct-object marker (To*).
+    False if it confirms something else, None if unavailable.
+    """
+    ht = _head_tag(tag_list)
+    if ht is None:
+        return None
+    head = MT.head_morpheme(ht)
+    return head.startswith("To")
+
+
+def _tag_confirms_conjunction(tag_list: "list[str] | None") -> "bool | None":
+    """Return True if TAHOT confirms a bare conjunction (C or c morpheme head).
+    False if confirms something else, None if unavailable.
+    """
+    ht = _head_tag(tag_list)
+    if ht is None:
+        return None
+    head = MT.head_morpheme(ht)
+    # Standalone waw-conjunction: head is 'C' (coordinating conjunction)
+    # or 'c' (consecutive marker). In practice a bare ו will be HC or Hc.
+    return head in ("C", "c")
+
+
+def _tag_confirms_prep(tag_list: "list[str] | None") -> "bool | None":
+    """Return True if TAHOT confirms a standalone preposition (R* head).
+    False if confirms something else, None if unavailable.
+    """
+    ht = _head_tag(tag_list)
+    if ht is None:
+        return None
+    head = MT.head_morpheme(ht)
+    return head.startswith("R")
+
+
+def _tag_confirms_article(tag_list: "list[str] | None") -> "bool | None":
+    """Return True if TAHOT confirms a definite article (Td head).
+    False if confirms something else, None if unavailable.
+    """
+    ht = _head_tag(tag_list)
+    if ht is None:
+        return None
+    head = MT.head_morpheme(ht)
+    return head == "Td"
+
+
+# ---------------------------------------------------------------------------
 # Line-final token detectors
 # Each returns a (rule_tag, brief) tuple or None.
+# tag_list: per-ortho TAHOT morph tags for the last prosodic-word token;
+#           None when morph alignment is unavailable (graceful fallback to skel).
 # ---------------------------------------------------------------------------
 
-def check_line_final_maqqef(line: str):
-    """Maqqef at line end → maqqef-group split across lines (Rule H1)."""
+def check_line_final_maqqef(line: str, tag_list=None):
+    """Maqqef at line end → maqqef-group split across lines (Rule H1).
+
+    The maqqef is a graphical join glyph; no morphology tag is needed to
+    identify it. tag_list accepted for API uniformity but not consulted.
+    """
     stripped = line.rstrip()
     if not stripped:
         return None
@@ -100,15 +186,23 @@ def check_line_final_maqqef(line: str):
 CONJUNCTION_RE = re.compile(r"^ו$")  # ו alone after stripping points
 
 
-def check_stranded_conjunction(line: str):
-    """Conjunction prefix וְ/וַ/וּ stranded at line end (break-legality row 2)."""
+def check_stranded_conjunction(line: str, tag_list=None):
+    """Conjunction prefix וְ/וַ/וּ stranded at line end (break-legality row 2).
+
+    Tag-driven FP guard: if TAHOT says the token is NOT a conjunction (e.g.,
+    it is a verb or noun beginning with ו), suppress the finding.
+    """
     token = _last_token(line)
     if token is None:
         return None
     bare = strip_points(token)
-    if CONJUNCTION_RE.match(bare):
-        return ("L1/conjunction", "stranded conjunction prefix וְ/וַ/וּ at line end")
-    return None
+    if not CONJUNCTION_RE.match(bare):
+        return None
+    # TAHOT FP guard: if tag is available and does NOT confirm conjunction, skip.
+    tag_verdict = _tag_confirms_conjunction(tag_list)
+    if tag_verdict is False:
+        return None
+    return ("L1/conjunction", "stranded conjunction prefix וְ/וַ/וּ at line end")
 
 
 # Prepositional prefixes: מ ב כ ל — when the entire last token consists of
@@ -144,17 +238,27 @@ COMPOUND_PREP_SKELETONS = {
 }
 
 
-def check_stranded_prep_prefix(line: str):
+def check_stranded_prep_prefix(line: str, tag_list=None):
     """Prep prefix מ/ב/כ/ל stranded from object at line end (break-legality row 3).
 
     Also catches compound (multi-character) prepositions stranded from their object
     at line end — e.g. מִלִּפְנֵי / לִפְנֵי / מֵעַל etc. (Bug 4 fix).
+
+    Tag-driven FP guard: if TAHOT says the token is NOT a preposition (e.g.,
+    it is a noun or verb), suppress the finding — useful for single-letter tokens
+    such as מ that could be part of a proper name prefix or for אל when the
+    tag shows it is a divine name (Np*) rather than a preposition (R*).
     """
     token = _last_token(line)
     if token is None:
         return None
     bare = strip_points(token)
     if PREP_PREFIX_RE.match(bare):
+        # TAHOT FP guard for single-letter preps (ב/כ/ל/מ are high-confidence
+        # skel hits, but tag can confirm or suppress edge cases).
+        tag_verdict = _tag_confirms_prep(tag_list)
+        if tag_verdict is False:
+            return None
         return ("L1/prep-prefix", f"stranded prepositional prefix at line end: {token!r}")
     if bare in COMPOUND_PREP_SKELETONS:
         # False-positive guard 1: if the token ends with sof pasuq (׃) the
@@ -172,6 +276,13 @@ def check_stranded_prep_prefix(line: str):
         # means an EXACT match — already bare construct.  So sof-pasuq guard
         # above is the primary control; suffix guard is belt-and-suspenders:
         # mark stranded only if next line exists (caller handles this).
+        #
+        # TAHOT FP guard: if the tag says this is NOT a preposition (e.g., it is
+        # a noun like אל = divine name Np*), suppress. Applies to אל / על / עד
+        # which share skeletons with common nouns/names.
+        tag_verdict = _tag_confirms_prep(tag_list)
+        if tag_verdict is False:
+            return None
         return ("L1/compound-prep", f"stranded compound preposition at line end: {token!r}")
     return None
 
@@ -180,15 +291,22 @@ def check_stranded_prep_prefix(line: str):
 ARTICLE_RE = re.compile(r"^ה$")  # ה alone after stripping points
 
 
-def check_stranded_article(line: str):
-    """Definite article הַ stranded from noun at line end (break-legality row 4)."""
+def check_stranded_article(line: str, tag_list=None):
+    """Definite article הַ stranded from noun at line end (break-legality row 4).
+
+    Tag-driven FP guard: if TAHOT confirms this is NOT an article (e.g., it is
+    the interjection הַ 'behold' or a discourse particle), suppress.
+    """
     token = _last_token(line)
     if token is None:
         return None
     bare = strip_points(token)
-    if ARTICLE_RE.match(bare):
-        return ("L1/article", "stranded definite article הַ at line end")
-    return None
+    if not ARTICLE_RE.match(bare):
+        return None
+    tag_verdict = _tag_confirms_article(tag_list)
+    if tag_verdict is False:
+        return None
+    return ("L1/article", "stranded definite article הַ at line end")
 
 
 # Direct-object marker: אֵת / אֶת (also אֹת- in construct, but the isolated
@@ -196,15 +314,25 @@ def check_stranded_article(line: str):
 DOT_MARKER_RE = re.compile(r"^את$")  # את
 
 
-def check_stranded_dot_marker(line: str):
-    """Direct-object marker אֵת stranded from object at line end (break-legality row 5)."""
+def check_stranded_dot_marker(line: str, tag_list=None):
+    """Direct-object marker אֵת stranded from object at line end (break-legality row 5).
+
+    Tag-driven FP guard: TAHOT distinguishes the DO marker (To*) from the
+    pronoun אַתָּה/אַתְּ (Pp* = personal pronoun) and the preposition אֵת 'with'
+    (R*). If tag is available and is NOT To*, suppress the finding.
+    """
     token = _last_token(line)
     if token is None:
         return None
     bare = strip_points(token)
-    if DOT_MARKER_RE.match(bare):
-        return ("L1/dot-marker", "stranded direct-object marker אֵת at line end")
-    return None
+    if not DOT_MARKER_RE.match(bare):
+        return None
+    # TAHOT FP guard: pronoun אַתָּה and preposition אֵת 'with' share the
+    # consonant skeleton את — tag is authoritative here.
+    tag_verdict = _tag_confirms_do_marker(tag_list)
+    if tag_verdict is False:
+        return None
+    return ("L1/dot-marker", "stranded direct-object marker אֵת at line end")
 
 
 # Negation particles: לֹא (לא), אַל (אל), אַיִן (אין).
@@ -212,15 +340,24 @@ def check_stranded_dot_marker(line: str):
 NEGATION_RE = re.compile(r"^(לא|אל|אין)$")  # לא | אל | אין
 
 
-def check_stranded_negation(line: str):
-    """Negation לֹא/אַל/אַיִן stranded from negated word at line end (break-legality row 8)."""
+def check_stranded_negation(line: str, tag_list=None):
+    """Negation לֹא/אַל/אַיִן stranded from negated word at line end (break-legality row 8).
+
+    Tag-driven FP guard: אל is also a divine name (El, Np*) and a preposition
+    (to/toward, R*); אין can be an existential predicate rather than a negation.
+    If TAHOT confirms the tag is NOT a negation particle (Tn*), suppress.
+    """
     token = _last_token(line)
     if token is None:
         return None
     bare = strip_points(token)
-    if NEGATION_RE.match(bare):
-        return ("L1/negation", f"stranded negation particle at line end: {token!r}")
-    return None
+    if not NEGATION_RE.match(bare):
+        return None
+    # TAHOT FP guard: negation Tn* vs. proper-noun El (Np*) or prep אל (R*).
+    tag_verdict = _tag_confirms_negation(tag_list)
+    if tag_verdict is False:
+        return None
+    return ("L1/negation", f"stranded negation particle at line end: {token!r}")
 
 
 # ---------------------------------------------------------------------------
@@ -262,7 +399,39 @@ def is_skippable(line: str) -> bool:
 
 
 # ---------------------------------------------------------------------------
-# Per-file scanner
+# Verse-grouping helper (mirrors validate_construct_chain.py pattern)
+# ---------------------------------------------------------------------------
+
+_VERSE_REF_RE = re.compile(r"^\d+:\d+\s*$")
+
+
+def _partition_into_verses(lines: list) -> list:
+    """Partition file lines into per-verse groups.
+
+    Returns list of (verse_num, [(1-based line_no, raw_line), ...]) tuples.
+    Lines preceding any verse header are discarded.
+    """
+    groups = []
+    cur_verse = None
+    cur_lines = []
+    for i, raw in enumerate(lines):
+        line_no = i + 1
+        s = raw.strip()
+        m = _VERSE_REF_RE.match(s)
+        if m:
+            if cur_verse is not None and cur_lines:
+                groups.append((cur_verse, cur_lines))
+            cur_verse = int(s.split(":")[1])
+            cur_lines = []
+        elif s and cur_verse is not None:
+            cur_lines.append((line_no, raw))
+    if cur_verse is not None and cur_lines:
+        groups.append((cur_verse, cur_lines))
+    return groups
+
+
+# ---------------------------------------------------------------------------
+# Checks list
 # ---------------------------------------------------------------------------
 
 CHECKS = [
@@ -279,7 +448,7 @@ CHECKS = [
 # Maps rule_tag → (rule_id, rule_short)
 # All Layer 1 findings are STRONG-MERGE-CANDIDATE / merge_with_next per spec.
 # ---------------------------------------------------------------------------
-RULE_META: dict[str, tuple[str, str]] = {
+RULE_META: dict = {
     "H1/maqqef":         ("L1.1", "line-final maqqef — maqqef-group split"),
     "L1/conjunction":    ("L1.2", "stranded conjunction prefix"),
     "L1/prep-prefix":    ("L1.3", "stranded prepositional prefix"),
@@ -290,37 +459,93 @@ RULE_META: dict[str, tuple[str, str]] = {
 }
 
 
-def scan_file(path: Path) -> list[dict]:
-    """Scan one text file for Layer 1 line-final token violations."""
+# ---------------------------------------------------------------------------
+# Per-file scanner — verse-grouped, TAHOT-morph-aligned
+# ---------------------------------------------------------------------------
+
+def scan_file(path: Path) -> list:
+    """Scan one text file for Layer 1 line-final token violations.
+
+    Uses TAHOT morph tags (via morph_alignment) when available to suppress
+    false positives — e.g. אל as divine name vs. negation, את as pronoun
+    vs. DO marker. Falls back to skel-heuristics when tags are missing or
+    verse alignment fails.
+    """
     violations = []
     try:
-        lines = path.read_text(encoding="utf-8").splitlines()
+        raw_text = path.read_text(encoding="utf-8")
     except UnicodeDecodeError:
-        lines = path.read_text(encoding="utf-8-sig").splitlines()
+        raw_text = path.read_text(encoding="utf-8-sig")
 
-    for i, line in enumerate(lines, start=1):
-        if is_skippable(line):
+    all_lines = raw_text.splitlines()
+
+    # Load TAHOT morph alignment for this chapter (None if v0/morph file absent).
+    chapter_morph = MA.load_chapter_morph(path)
+
+    # Group file lines into per-verse buckets.
+    verse_groups = _partition_into_verses(all_lines)
+
+    for verse_num, verse_numbered_lines in verse_groups:
+        # Filter to non-empty, non-skippable content lines for morph alignment.
+        content = [(ln, raw) for ln, raw in verse_numbered_lines if not is_skippable(raw)]
+        if not content:
             continue
-        # Peek at next line to detect cross-line continuation context
-        # i is already 1-based; lines is 0-based, so lines[i] is the next line
-        next_line = lines[i] if i < len(lines) else ""
-        next_line_num = i + 1 if i < len(lines) else None
-        for check_fn in CHECKS:
-            result = check_fn(line)
-            if result:
-                rule_tag, brief = result
-                violations.append(
-                    {
-                        "file": path.name,
-                        "file_path": path,
-                        "line_num": i,
-                        "rule": rule_tag,
-                        "brief": brief,
-                        "line": line.rstrip(),
-                        "next_line_num": next_line_num,
-                        "next_line": next_line.rstrip(),
-                    }
-                )
+
+        # Build morph alignment for this verse.
+        verse_text_lines = [raw for _, raw in content]
+        verse_token_tags = None
+        if chapter_morph is not None:
+            ortho_tags = chapter_morph.get(verse_num)
+            if ortho_tags is not None:
+                verse_token_tags = MA.align_verse_tokens_to_tags(verse_text_lines, ortho_tags)
+                # Returns None on alignment mismatch → falls back to skel checks.
+
+        def _tag_list_for(line_idx: int, tok_idx: int):
+            """Return tag list for a specific token, or None on miss."""
+            if verse_token_tags is None:
+                return None
+            if line_idx < 0 or line_idx >= len(verse_token_tags):
+                return None
+            tl = verse_token_tags[line_idx]
+            if tok_idx < 0 or tok_idx >= len(tl):
+                return None
+            return tl[tok_idx]
+
+        # Scan each content line within this verse.
+        for ci, (line_no, line) in enumerate(content):
+            if is_skippable(line):
+                continue
+
+            # Determine the tag list for the last token on this line.
+            raw_tokens = line.split()
+            if raw_tokens:
+                last_tok_idx = len(raw_tokens) - 1
+                tag_list = _tag_list_for(ci, last_tok_idx)
+            else:
+                tag_list = None
+
+            # Peek at next line for cross-line context in violation record.
+            # line_no is 1-based; all_lines is 0-based → all_lines[line_no] is next.
+            next_line = all_lines[line_no] if line_no < len(all_lines) else ""
+            next_line_num = line_no + 1 if line_no < len(all_lines) else None
+
+            for check_fn in CHECKS:
+                result = check_fn(line, tag_list)
+                if result:
+                    rule_tag, brief = result
+                    violations.append(
+                        {
+                            "file": path.name,
+                            "file_path": path,
+                            "line_num": line_no,
+                            "rule": rule_tag,
+                            "brief": brief,
+                            "line": line.rstrip(),
+                            "next_line_num": next_line_num,
+                            "next_line": next_line.rstrip(),
+                        }
+                    )
+
     return violations
 
 
@@ -376,7 +601,7 @@ def main():
         print(f"No .txt files found under {base_dir}", file=sys.stderr)
         sys.exit(2)
 
-    all_violations: list[dict] = []
+    all_violations: list = []
     for path in files:
         all_violations.extend(scan_file(path))
 
@@ -400,8 +625,8 @@ def main():
                 "applied_action": "merge_with_next",
             })
 
-        by_severity: dict[str, int] = {}
-        by_tag: dict[str, int] = {}
+        by_severity: dict = {}
+        by_tag: dict = {}
         for f in findings:
             by_severity[f["severity"]] = by_severity.get(f["severity"], 0) + 1
             by_tag[f["tag"]] = by_tag.get(f["tag"], 0) + 1
