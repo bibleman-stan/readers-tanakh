@@ -1,0 +1,74 @@
+29:1
+Hc/Vhw3ms | HNpm | HVqcc | HNcmsc/Sp3ms | Hc/Vqw3ms
+
+29:2
+HPi | HVqi3ms/Sp1bs | HR/Ncmpc | HNcmsa | HR/Ncmpc | HNcmsa | HVqi3ms/Sp1bs
+
+29:3
+HR/Vhcc/Sp3ms | HNcmsc/Sp3ms | HR | HNcmsc/Sp1bs | HR/Ncfsc/Sp3ms | HVqi1cs | HNcmsa
+
+29:4
+HR/Tr | HVqp1cs | HR/Ncmpc | HNcmsc/Sp1bs | HR/Ncmsc | HNcmsa | HR | HNcmsc/Sp1bs
+
+29:5
+HR/Acmsa | HNpt | HR/Sp1bs | HNcbpc/Sp1bs | HNcmpc/Sp1bs
+
+29:6
+HR/Vqcc | HNcmpc/Sp1bs | HR/Ncfsa | HC/Ncmsa | HVqsmsa | HR/Sp1bs | HNcmpc | HNcmsa
+
+29:7
+HR/Vqcc/Sp1bs | HNcmsa | HR | HNcfsa | HRd/Ncfsa | HVhi1cs | HNcmsc/Sp1bs
+
+29:8
+HVqp3cp/Sp1bs | HNcmpa | Hc/VNq3cp | HC/Aampa | HVqp3cp | HVqp3cp
+
+29:9
+HNcmpa | HVqp3cp | HR/Ncmpa | HC/Ncfsa | HVqi3mp | HR/Ncmsc/Sp3mp
+
+29:10
+HNcmsc | HNcmpa | HVNp3cp | HC/Ncbsc/Sp3mp | HR/Ncmsc/Sp3mp | HVqp3fs
+
+29:11
+HTc | HNcfsa | HVqp3fs | Hc/Vpw3fs/Sp1bs | HC/Ncfsa | HVqp3fs | Hc/Vhw3fs/Sp1bs
+
+29:12
+HTc | HVpi1cs | HAamsa | HVprmsa | HC/Ncmsa | HC/Tn | HVqrmsa | HR/Sp3ms
+
+29:13
+HNcfsc | HVqrmsa | HR/Sp1bs | HVqi3fs | HC/Ncmsc | HNcfsa | HVhi1cs
+
+29:14
+HNcmsa | HVqp1cs | Hc/Vqw3ms/Sp1bs | HR/Ncmsa | HC/Ncmsa | HNcmsc/Sp1bs
+
+29:15
+HNcfda | HVqp1cs | HRd/Aamsa | HC/Ncfda | HRd/Aamsa | HPp1bs
+
+29:16
+HNcmsa | HPp1bs | HRd/Aampa | HC/Ncmsc | HTn | HVqp1cs | HVqi1cs/Sp3ms
+
+29:17
+Hc/Vpw1cs/Sh | HNcfpc | HNcmsa | HC/R/Ncfdc/Sp3ms | HVhi1cs | HNcmsa
+
+29:18
+Hc/Vqw1cs | HR | HNcmsc/Sp1bs | HVqi1cs | HC/Rd/Ncmsa | HVhi1cs | HNcmpa
+
+29:19
+HNcmsc/Sp1bs | HVqsmsa | HR | HNcmpa | HC/Ncmsa | HVqi3ms | HR/Ncmsc/Sp1bs
+
+29:20
+HNcbsc/Sp1ms | HAamsa | HR/Sp1bs | HC/Ncfsc/Sp1bs | HR/Ncbsc/Sp1bs | HVhi3fs
+
+29:21
+HR/Sp1bs | HVqp3cp | HC/Vpp3cp | HC/Vqu3mp | HR | HNcfsc/Sp1bs
+
+29:22
+HAcmpc | HNcmsc/Sp1bs | HTn | HVqi3mp | HC/R/Sp3mp | HVqi3fs | HNcfsc/Sp1bs
+
+29:23
+Hc/Vpq3cp | HRd/Ncmsa | HR/Sp1bs | HC/Ncmsc/Sp3mp | HVqp3cp | HR/Ncmsa
+
+29:24
+HVqi1cs | HR/Sp3mp | HTn | HVhi3mp | HC/Ncfsc | HNcmpc/Sp1bs | HTn | HVhi3mp/Sn
+
+29:25
+HVqi1cs | HNcbsc/Sp3mp | HC/Vqu1cs | HNcmsa | HC/Vqu1cs | HR/Ncmsa | HRd/Ncmsa | HR/Tr | HAampa | HVpi3ms

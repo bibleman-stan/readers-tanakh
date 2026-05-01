@@ -1,0 +1,47 @@
+2:1
+HC/Ncfsa | HTc | HVhi3fs | HNcmsc | HNcfsa | HR/Npt | HNcfsa | HVqi3ms | HNcmsc/Sp3ms | Hc/Vqq3ms | HRd/Sp3fs | HNcmsa | Hc/Vqq3ms | HRd/Sp3fs | HNcfsa
+
+2:2
+Hc/Vhq3ms/Sp3fs | HR | HNcmpc | HNpm | HTd/Ncmpa | Hc/Vqq3ms | HR/D | HNcmsc | HNcmsc/Sp3ms | HR/Ncfsc/Sp3fs | HC/R/Ncmsc/Sp3fs | HR | HNcmsc | HNcfsc/Sp3fs | Hc/Vhq3ms | HTd/Ncmsa | HTo | HNcfsc/Sp3fs | HTd/Ncmsa/Sd | HNcmsc | HNcmsc | HNcmsa | HR/Npt
+
+2:3
+HC/Td/VNrfsa | HR | HTd/Ncfsa | HR/Npm | HC/R/Ncmpc/Sp3ms | HNcmsc | HNcmpa | HR/Ncmpc | HNpt
+
+2:4
+HC/Tc | HVhi2ms | HNcmsc | HNcfsa | HNcmsc | HNcmsa | HNcfsc | HNcfpc | HNcfpa | HVqsfpa | HRd/Ncmsa | HC/Ncmpc | HNcfpa | HVqsmpa | HRd/Ncmsa
+
+2:5
+HC/Tc | HNcfsa | HR | HTd/Ncfsa | HNcmsc/Sp2ms | HNcfsa | HVqsfsa | HRd/Ncmsa | HNcfsa | HVqi3fs
+
+2:6
+HVqaa | HTo/Sp3fs | HNcmpa | Hc/Vqq2ms | HRd/Sp3fs | HNcmsa | HNcfsa | HPp3fs
+
+2:7
+HC/Tc | HNcfsc | HNcfsa | HNcmsc/Sp2ms | HNcfsa | HRd/Ncmsa | HVNi3fs
+
+2:8
+Hc/Vhq2ms | HTo | HTd/Ncfsa | HTr | HVNi3ms | HR/Tm | HR/Npt | Hc/Vhq3ms/Sp3fs | HR | HTd/Ncmsa | Hc/Vhq3ms/Sp3fs | HR | HTd/Ncmsa
+
+2:9
+Hc/Vhq3ms | HTd/Ncmsa | HR | HTd/Ncfsa | HTo | HNcfsc/Sp3fs | Hc/Vhq3ms | HTd/Ncmsa/Sd | HNcmsc | HNcmsc | HNcmsa | HR/Npt
+
+2:10
+HC/Td/VNrfsa | HR | HTd/Ncfsa | HR/Npm | HC/R/Ncmpc/Sp3ms | HNcmsc | HNcmpa | HR/Ncmpc | HNpt
+
+2:11
+HNcmsc | HTd/Ncfsa | HTr | HVhi2mp | HR/Npt | HTn | HVNi3fs | HAamsa | HTc | HNcmsc | HNcmsa | HC/Ncmsc | HNcmsa | HTn | HVhi2mp | HRd/Sp3ms | HNcmsa | HR/Npt
+
+2:12
+HNcmsc | HNcfsa | HVhi2mp | HTo/Sp3mp | HR/Npt | HC/R | HTd/Ncmsa | HTn | HVqi3mp | HR/Ncmsc | HNcmsa
+
+2:13
+HC/Ncmsc | HNcmsc | HNcfsc/Sp2ms | HRd/Ncmsa | HVqi2ms | HC/Tn | HVhi2ms | HNcmsc | HNcfsc | HNcmpc/Sp2ms | HR/R | HNcfsc/Sp2ms | HR | HNcmsc | HNcmsc/Sp2ms | HVhi2ms | HNcmsa
+
+2:14
+HC/Tc | HVhi2ms | HNcfsc | HNcmpa | HR/Npt | HNcbsa | HVqsmsa | HRd/Ncbsa | HNcmsc | HNcmsa | HVhi2ms | HTo | HNcfsc | HNcmpc/Sp2ms
+
+2:15
+Hc/Vqq2ms | HRd/Sp3fs | HNcmsa | Hc/Vqq2ms | HRd/Sp3fs | HNcfsa | HNcfsa | HPp3fs
+
+2:16
+Hc/Vhq3ms | HTd/Ncmsa | HTo | HNcfsc/Sp3fs | HR/Ncmsc/Sp3fs | HC/R/Ncmsc/Sp3fs | HR | HNcmsc | HNcfsc/Sp3fs | HNcmsa | HR/Npt

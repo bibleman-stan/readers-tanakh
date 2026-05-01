@@ -1,7 +1,7 @@
 """
 ingest_tahot.py - Convert STEPBible TAHOT TSV to v0 baseline files.
 
-For each book, produces three parallel chapter files:
+For each book, produces four parallel chapter files:
 
   v0-prose/             Hebrew (with maqqef inline; prosodic-word boundaries
                         are space-separated; orthographic-word boundaries
@@ -12,6 +12,11 @@ For each book, produces three parallel chapter files:
                         interlinear under each Hebrew word)
   v0-translit-baseline/ Modern Israeli-style transliteration, same ` | `
                         per-orthographic-word format
+  v0-morph/             TAHOT morphology codes verbatim (e.g. HR/Ncfsa,
+                        Hc/Vqw3ms), one per orthographic word, ` | ` separator.
+                        Preserves the slash-separated morpheme chain so
+                        downstream helpers can read tags directly instead of
+                        re-inferring morphology from skel heuristics.
 
 Hebrew versification primary (canon §3): when TAHOT lists English (NRSV)
 ref with parenthetical Hebrew ref, the Hebrew ref is used for filenames /
@@ -34,6 +39,7 @@ TAHOT_DIR = os.path.join(REPO_ROOT, "research", "stepbible-tahot")
 V0_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v0", "prose")
 V0_ENG_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v0", "eng-baseline")
 V0_TRANSLIT_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v0", "translit-baseline")
+V0_MORPH_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v0", "morph")
 
 # Separator between orthographic-word units in v0-eng-baseline / v0-translit
 # (one Hebrew word -> one English unit -> one translit unit)
@@ -485,6 +491,9 @@ def parse_tahot_for_book(tahot_path, book_code):
             en = clean_english(fields[3]) if len(fields) > 3 else ""
             grammar = fields[5] if len(fields) > 5 else ""
             translit = clean_translit(translit_raw, is_proper_noun(grammar))
+            # Preserve raw TAHOT morph code for the v0/morph/ layer.
+            # Empty string for rows missing field 5 (rare; keeps " | " unit count aligned).
+            morph = grammar.strip() if grammar else ""
 
             # Quirk (c): skip rows where Hebrew is empty after cleaning.
             # These are Qere/Ketiv bracket-only rows (e.g. "[ ]" English
@@ -531,16 +540,19 @@ def parse_tahot_for_book(tahot_path, book_code):
                         he_entry = sub + (MAQQEF if trailing_maqqef else "")
                         en_entry = en
                         tr_entry = translit
+                        morph_entry = morph
                         jn = trailing_maqqef
                     else:
                         he_entry = sub + MAQQEF
                         en_entry = "[—]"
                         tr_entry = "[—]"  # placeholder keeps unit counts aligned
+                        morph_entry = "[—]"
                         jn = True  # this sub-part joins into the next
                     chapters[heb_ch][heb_v].append({
                         "he": he_entry,
                         "en": en_entry,
                         "translit": tr_entry,
+                        "morph": morph_entry,
                         "joins_next": jn,
                     })
             else:
@@ -548,27 +560,30 @@ def parse_tahot_for_book(tahot_path, book_code):
                     "he": he,
                     "en": en,
                     "translit": translit,
+                    "morph": morph,
                     "joins_next": he.endswith(MAQQEF),
                 })
 
     return chapters, crosswalk
 
 
-def write_chapter_files(he_path, en_path, tr_path, chapter_num, verses):
-    """Write three parallel v0 files for one chapter.
+def write_chapter_files(he_path, en_path, tr_path, morph_path, chapter_num, verses):
+    """Write four parallel v0 files for one chapter.
 
     Hebrew is grouped at PROSODIC-word level (maqqef-joined orthographic
     words concatenated without space -- the maqqef glyph fills the join
-    visually). English and translit are stored at ORTHOGRAPHIC-word level
-    so the build can render per-word spans aligned with Hebrew.
+    visually). English, translit, and morph are stored at ORTHOGRAPHIC-word
+    level so the build can render per-word spans aligned with Hebrew and
+    downstream helpers can read TAHOT morph tags directly.
     """
-    for path in (he_path, en_path, tr_path):
+    for path in (he_path, en_path, tr_path, morph_path):
         os.makedirs(os.path.dirname(path), exist_ok=True)
 
     verse_keys = sorted(verses.keys())
     with open(he_path, "w", encoding="utf-8", newline="\n") as fh, \
          open(en_path, "w", encoding="utf-8", newline="\n") as fe, \
-         open(tr_path, "w", encoding="utf-8", newline="\n") as ft:
+         open(tr_path, "w", encoding="utf-8", newline="\n") as ft, \
+         open(morph_path, "w", encoding="utf-8", newline="\n") as fm:
         for i, v in enumerate(verse_keys):
             words = [w for w in verses[v] if w["he"] or w["en"] or w["translit"]]
 
@@ -582,17 +597,20 @@ def write_chapter_files(he_path, en_path, tr_path, chapter_num, verses):
                     he_pwords.append(w["he"])
             he_text = " ".join(he_pwords)
 
-            # English / translit: orthographic-word level
+            # English / translit / morph: orthographic-word level
             en_text = ENG_WORD_SEP.join(w["en"] for w in words)
             tr_text = ENG_WORD_SEP.join(w["translit"] for w in words)
+            morph_text = ENG_WORD_SEP.join(w.get("morph", "") for w in words)
 
             fh.write(f"{chapter_num}:{v}\n{he_text}\n")
             fe.write(f"{chapter_num}:{v}\n{en_text}\n")
             ft.write(f"{chapter_num}:{v}\n{tr_text}\n")
+            fm.write(f"{chapter_num}:{v}\n{morph_text}\n")
             if i < len(verse_keys) - 1:
                 fh.write("\n")
                 fe.write("\n")
                 ft.write("\n")
+                fm.write("\n")
 
 
 def ingest_book(book_key, fatal_on_missing=True):
@@ -624,6 +642,7 @@ def ingest_book(book_key, fatal_on_missing=True):
     he_dir = os.path.join(V0_DIR, spec["out_subdir"])
     en_dir = os.path.join(V0_ENG_DIR, spec["out_subdir"])
     tr_dir = os.path.join(V0_TRANSLIT_DIR, spec["out_subdir"])
+    morph_dir = os.path.join(V0_MORPH_DIR, spec["out_subdir"])
 
     chapter_count = 0
     verse_count = 0
@@ -633,6 +652,7 @@ def ingest_book(book_key, fatal_on_missing=True):
             os.path.join(he_dir, fn),
             os.path.join(en_dir, fn),
             os.path.join(tr_dir, fn),
+            os.path.join(morph_dir, fn),
             chapter_num,
             chapters[chapter_num],
         )
@@ -648,7 +668,7 @@ def ingest_book(book_key, fatal_on_missing=True):
 
     print(
         f"  {book_key}: {chapter_count} chapters, {verse_count} verses "
-        f"-> v0-prose / v0-eng-baseline / v0-translit-baseline"
+        f"-> v0-prose / v0-eng-baseline / v0-translit-baseline / v0-morph"
     )
     return chapter_count, verse_count
 

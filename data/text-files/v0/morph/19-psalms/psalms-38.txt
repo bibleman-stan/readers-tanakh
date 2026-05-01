@@ -1,0 +1,68 @@
+38:1
+HNcmsa | HR/Npm | HR/Vhcc
+
+38:2
+HNpt | HTn | HR/Ncmsc/Sp2ms | HVhi2ms/Sp1bs | HC/R/Ncfsc/Sp2ms | HVpi2ms/Sp1bs
+
+38:3
+HTc | HNcmpc/Sp2ms | HVNp3cp | HR/Sp1bs | Hc/Vqw3fs | HR/Sp1bs | HNcbsc/Sp2ms
+
+38:4
+HNcmsc | HNcmsa | HR/Ncmsc/Sp1bs | HR/Ncmpc | HNcmsc/Sp2ms | HNcmsc | HNcmsa | HR/Ncmpc/Sp1bs | HR/Ncmpc | HNcfsc/Sp1bs
+
+38:5
+HTc | HNcfpc/Sp1bs | HVqp3cp | HNcmsc/Sp1bs | HR/Ncmsa | HAamsa | HVqi3mp | HR/Sp1bs
+
+38:6
+HVhp3cp | HVNp3cp | HNcfpc/Sp1bs | HR/Ncmpc | HNcfsc/Sp1bs
+
+38:7
+HVNp1cs | HVqp1cs | HR | HAcmsa | HNcmsc | HTd/Ncmsa | HVqrmsa | HVpp1cs
+
+38:8
+HTc | HNcmpc/Sp1bs | HVqp3cp | HVNrmsa | HC/Ncmsc | HNcmsa | HR/Ncmsc/Sp1bs
+
+38:9
+HVNp1cs | HC/VNp1cs | HR | HAcmsa | HVqp1cs | HR/Ncfsc | HNcmsc/Sp1bs
+
+38:10
+HNpt | HAcmsc/Sp2ms | HNcmsc | HNcfsc/Sp1bs | HC/Ncfsc/Sp1bs | HR/Sp2ms | HTn | HVNp3fs
+
+38:11
+HNcmsc/Sp1bs | HVpp3ms | HVqp3ms/Sp1bs | HNcmsc/Sp1bs | HC/Ncfsc | HNcfdc/Sp1bs | HD | HPp3mp | HNcmsc | HR/Sp1bs
+
+38:12
+HVqrmpc/Sp1bs | HC/Ncmpc/Sp1bs | HR/Acmsc | HNcmsc/Sp1bs | HVqi3mp | HC/Aampc/Sp1bs | HR/Aamsa | HVqp3cp
+
+38:13
+Hc/Vpw3mp | HVprmpc | HNcfsc/Sp1bs | HC/Vqrmpc | HNcfsc/Sp1bs | HVpp3cp | HNcfpa | HC/Ncfpa | HNcmsc | HTd/Ncmsa | HVqi3mp
+
+38:14
+HC/Pp1bs | HR/Aamsa | HTn | HVqi1cs | HC/R/Aamsa | HTn | HVqi3ms | HNcmsc/Sp3ms
+
+38:15
+Hc/Vqw1cs | HR/Ncmsa | HTr | HTn | HVqrmsa | HC/Ncmsc | HR/Ncmsc/Sp3ms | HNcfpa
+
+38:16
+HTc | HR/Sp2ms | HNpt | HVhp1cs | HPp2ms | HVqi2ms | HNpt | HNcmpc/Sp1bs
+
+38:17
+HTc | HVqp1cs | HTc | HVqi3mp | HR/Sp1bs | HR/Ncbsc | HNcfsc/Sp1bs | HR/Sp1bs | HVhp3cp
+
+38:18
+HTc | HPp1bs | HR/Ncmsa | HVNrmsa | HC/Ncmsc/Sp1bs | HAcmsc/Sp1bs | HNcmsa
+
+38:19
+HTc | HNcmsc/Sp1bs | HVhi1cs | HVqi1cs | HR/Ncfsc/Sp1bs
+
+38:20
+HC/Vqrmpc/Sp1bs | HAampa | HVqp3cp | HC/Vqp3cp | HVqrmpc/Sp1bs | HNcmsa
+
+38:21
+HC/Vprmpc | HNcfsa | HNcmsc | HNcfsa | HVqi3mp/Sp1bs | HNcmsc | HVqcc/Sp1bs | HAamsa
+
+38:22
+HTn | HVqj2ms/Sp1bs | HNpt | HNcmpc/Sp1bs | HTn | HVqj2ms | HR/Sp1bs
+
+38:23
+HVqv2ms/Sh | HR/Ncfsc/Sp1bs | HNpt | HNcfsc/Sp1bs

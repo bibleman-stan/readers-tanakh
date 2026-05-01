@@ -1,0 +1,44 @@
+3:1
+HVqv2mp | HTo | HTd/Ncmsa | HTd/Tm | HTr | HVpp3ms | HNpt | HR/Sp2mp | HNcmpc | HNpl | HR | HNcmsc | HTd/Ncfsa | HTr | HVhp1cs | HR/Ncfsc | HNpl | HR/Vqcc
+
+3:2
+HD | HTo/Sp2mp | HVqp1cs | HR/Ncmsc | HNcfpc | HTd/Ncfsa | HR | HD | HVqi1cs | HR/Sp2mp | HTo | HNcmsc | HNcfpc/Sp2mp
+
+3:3
+HTi/Vqi3mp | HNcbda | HD | HNcbsa | HTc | HVNp3cp
+
+3:4
+HTi/Vqi3ms | HNcmsa | HRd/Ncmsa | HC/Ncmsa | HNcmsc | HR/Sp3ms | HTi/Vqi3ms | HNcmsa | HNcmsc/Sp3ms | HR/Ncfsc/Sp3ms | HNcbsa | HTc | HVqp3ms
+
+3:5
+HTi/Vqi3fs | HNcbsa | HR | HNcmsc | HTd/Ncfsa | HC/Ncmsa | HNcmsc | HR/Sp3fs | HTi/Vqi3ms | HNcmsa | HR | HTd/Ncfsa | HC/Vqaa | HTn | HVqi3ms
+
+3:6
+HTc | HVNi3ms | HNcmsa | HR/Ncfsa | HC/Ncmsa | HTn | HVqi3mp | HTc | HVqi3fs | HNcfsa | HR/Ncfsa | HC/Npt | HTn | HVqp3ms
+
+3:7
+HTc | HTn | HVqi3ms | HNpt | HNpt | HNcmsa | HTc | HTc | HVqp3ms | HNcmsc/Sp3ms | HR | HNcmpc/Sp3ms | HTd/Ncmpa
+
+3:8
+HNcmsa | HVqp3ms | HPi | HTn | HVqi3ms | HNpt | HNpt | HVpp3ms | HPi | HTn | HVNi3ms
+
+3:9
+HVhv2mp | HR | HNcfpa | HR/Npl | HC/R | HNcfpa | HR/Ncfsc | HNpl | HC/Vqv2mp | HVNv2mp | HR | HNcmpc | HNpl | HC/Vqv2mp | HNcfpa | HAafpa | HR/Ncmsc/Sp3fs | HC/Ncmpa | HR/Ncmsc/Sp3fs
+
+3:10
+HC/Tn | HVqp3cp | HVqcc | HAafsa | HNcmsc | HNpt | HTd/Vqrmpa | HNcmsa | HC/Ncmsa | HR/Ncfpc/Sp3mp
+
+3:11
+HR/D | HD | HVqp3ms | HNpt | HNpt | HNcmsa | HC/Ncbsc | HTd/Ncfsa | Hc/Vhq3ms | HR/Sp2fs | HNcmsc/Sp2fs | Hc/VNq3cp | HNcfpc/Sp2fs
+
+3:12
+HD | HVqp3ms | HNpt | HR/Tr | HVhi3ms | HTd/Vqrmsa | HR/Ncmsc | HTd/Ncmsa | HNcfdc | HNcfda | HC | HNcmsc | HNcfsa | HD | HVNi3mp | HNcmpc | HNpl | HTd/Vqrmpa | HR/Npl | HR/Ncfsc | HNcfsa | HC/R/Ncmsc | HNcfsa
+
+3:13
+HVqv2mp | HC/Vhv2mp | HR/Ncmsc | HNpm | HNcmsc | HNpt | HNpt | HNcmpc | HTd/Ncfpa
+
+3:14
+HTc | HR/Ncmsc | HVqcc/Sp1bs | HNcmpc | HNpl | HR/Sp3ms | Hc/Vqq1cs | HR | HNcfpc | HNpl | HNpl | Hc/VNq3cp | HNcfpc | HTd/Ncmsa | Hc/Vqq3cp | HRd/Ncfsa
+
+3:15
+Hc/Vhq1cs | HNcmsc | HTd/Ncmsa | HR | HNcmsc | HTd/Ncmsa | Hc/Vqq3cp | HNcmpc | HTd/Ncfsa | Hc/Vqq3cp | HNcmpa | HAampa | HNcmsc | HNpt

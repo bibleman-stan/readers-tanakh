@@ -1,0 +1,71 @@
+4:1
+Hc/Vqw3mp | HNcmpc | HNpl | HC/Npm | HTc | HNcmpc | HTd/Ncfsa | HVqrmpa | HNcmsa | HR/Npt | HNcmpc | HNpl
+
+4:2
+Hc/Vqw3mp | HR | HNpm | HC/R | HNcmpc | HTd/Ncfpa | Hc/Vqw3mp | HRd/Sp3mp | HVqi1cp | HRd/Sp2mp | HTc | HR/Sp2mp | HVqi1cp | HR/Ncmpc/Sp2mp | HC/Rd/Sp3ms | HPp1bp | HVqrmpa | HR/Ncmpc | HNpm | HNpm | HNcmsc | HNpl | HTd/Vhrmsa | HTo/Sp1bp | HD
+
+4:3
+Hc/Vqw3ms | HRd/Sp3mp | HNpm | HC/Npm | HC/Ncmsc | HNcmpc | HTd/Ncfpa | HR/Npl | HTn | HR/Sp2mp | HC/R/Sp1bp | HR/Vqcc | HNcmsa | HR/Ncmpc/Sp1bp | HTc | HPp1bp | HNcmsa | HVqi1cp | HR/Npt | HNcmpc | HNpl | HR/Tr | HVpp3ms/Sp1bp | HTd/Ncmsa | HNpm | HNcmsc | HNpl
+
+4:4
+Hc/Vqw3ms | HNcmsc | HTd/Ncfsa | HVprmpa | HNcbdc | HNcmsc | HNpl | HC/Vprmpa | HTo/Sp3mp | HR/Vqcc
+
+4:5
+HC/Vqrmpa | HRd/Sp3mp | HVqrmpa | HR/Vhcc | HNcfsc/Sp3mp | HNcmsc | HNcmpc | HNpm | HNcmsc | HNpl | HC/R | HNcfsc | HNpm | HNcmsc | HNpl
+
+4:6
+HC/R/Ncfsc | HNpm | HR/Ncfsc | HNcfsc/Sp3ms | HVqp3cp | HNcfsa | HR | HVqrmpc | HNpl | HC/Npl
+
+4:7
+HC/R/Ncmpc | HNpm | HVqp3ms | HNpm | HNpm | HNpm | HC/Ncmsc | HNcfpc/Sp3ms | HR | HNpm | HNcmsc | HNpl | HC/Ncmsc | HTd/Ncmsa | HVqsmsa | HAafsa | HC/VPsmsa | HAafsa
+
+4:8
+ANpm | ANcbsc | ANcbsa | AC/Npm | ANcbsd/Ta | AVqp3mp | ANcfsa | AAcbsa | AR | ANpl | AR/Npm | ANcbsd/Ta | AD
+
+4:9
+AD | ANpm | ANcbsc | ANcbsa | AC/Npm | ANcbsd/Ta | AC/Ncbsc | ANcfpc/Sp3mp | ANcmpd/Ta | AC/Ncmpd/Ta | ANcmpd/Ta | ANcmpd/Ta | ANgmpd/Ta | ANgmpd/Ta | ANgmpd/Ta | ANgmpd/Ta | ANgmpd/Ta
+
+4:10
+AC/Ncbsc | ANcmpd/Ta | AC | AVhp3ms | ANpm | AAabsd/Ta | AC/Aabsd/Ta | AC/Vhp3ms | APp3mp | AR/Ncfsa | AC | ANpl | AC/Ncbsc | ANcbsc | ANcbsd/Ta | AC/D
+
+4:11
+ATm | ANcbsc | ANcfsd/Ta | AC | AVqp3mp | AR/Sp3ms | AR | ANpm | ANcbsd/Ta | ANcmpc/Sp2ms | ANcbsc | ANcbsc | ANcbsd/Ta | AC/D
+
+4:12
+AVQrmsa | AVqi3ms | AR/Ncbsd/Ta | AC | ANgmpd/Ta | AC | AVqp3mp | AR | AR/Sp2ms | AR/Sp1bp | AVqp3mp | AR/Npl | ANcfsd/Ta | AAafsd/Ta | AC/Aafsd/Ta | AVqrmpa | AC/Ncmpd/Ta | AVep3mp | AC/Ncmpd/Ta | AVpp3mp
+
+4:13
+AD | AVQrmsa | AVqi3ms | AR/Ncbsd/Ta | AC | AC | ANcfsd/Ta | ATm | AVui3fs | AC/Ncmpd/Ta | AVvi3mp | ANcfsa | ANcbsa | AC/Ncbsa | ATn | AVqi3mp | AC/Ncmsa | ANcmpa | AVhi2ms
+
+4:14
+AD | AR/R | ANcbsa | AC | ANcbsc | ANcbsd/Ta | AVqp1cp | AC/Ncfsc | ANcbsd/Ta | ATn | AAabsa | AR/Sp1bp | AR/Vqcc | AR | ATm | AVqp1cp | AC/Vhp1cp | AR/Ncbsd/Ta
+
+4:15
+AC | AVpi3ms | AR/Ncbsc | ANcmpd/Ta | AC | ANcfsc/Sp2ms | AC/Vhu2ms | AR/Ncbsc | ANcmpd/Ta | AC/Vqu2ms | AC | ANcfsd/Ta | ATm | ANcfsa | AAafsa | AC/Vhrfsc | ANcmpa | AC/Ncfpa | AC/Ncbsa | AVqrmpa | AR/Ncbsc/Sp3fs | AR | ANcfpc | ANcbsd/Ta | AR | ATm | ANcfsd/Ta | ATm | AVHp3fs
+
+4:16
+AVhrmpa | APp1bp | AR/Ncbsd/Ta | AC | AC | ANcfsd/Ta | ATm | AVui3fs | AC/Ncmpd/Ta | AVvi3mp | AR/Ncbsa | ATm | ANcbsa | AR/Ncbsc | ANcbsd/Ta | ATn | ANcbsa | AR/Sp2ms
+
+4:17
+ANcbsd/Ta | AVqp3ms | ANcbsd/Ta | AR | ANpm | ANcbsc | ANcbsa | AC/Npm | ANcbsd/Ta | AC/Ncbsc | ANcfpc/Sp3mp | AC | AVqrmpa | AR/Npl | AC/Ncbsc | ANcbsc | ANcbsd/Ta | ANcbsa | AC/D
+
+4:18
+ANcbsd/Ta | AC | AVqp2mp | AR/Sp1bp | AVprmsa | AVQp3ms | ANcbpc/Sp1bs
+
+4:19
+AC/R/Sp1bs | AVQp3ms | ANcbsa | AC/Vpp3mp | AC/Vhp3mp | AC | ANcfsd/Ta | ATm | AR | ANcfpc | ANcbsd/Ta | AR | ANcmpa | AVMrfsa | AC/Ncbsa | AC/Ncbsa | AVurmsa | AR/Sp3fs
+
+4:20
+AC/Ncmpa | AAampa | AVqp3mp | AR | ANpl | AC/Aampa | AR/Ncbsc | ANcbsc | ANcbsd/Ta | AC/Ncfsa | ANcbsa | AC/Ncbsa | AVurmsa | AR/Sp3mp
+
+4:21
+AD | AVqv2mp | ANcbsa | AR/Vpcc | ANcmpd/Ta | ATm | AC/Ncfsd/Ta | ATm | ATn | AVui3fs | AR | ARd/Sp1bs | ANcbsd/Ta | AVui3ms
+
+4:22
+AC/Aampa | AVqv2mp | ANcbsa | AR/Vqcc | AR | ATm | AR/Pi | AVqi3ms | ANcbsd/Ta | AR/Vhcc | ANcmpa
+
+4:23
+AD | AR | AC | ANcbsc | ANcbsd/Ta | AC | ANpm | ANcbsd/Ta | AVQp3ms | ANcbsa | ANpm | AC/Npm | ANcbsd/Ta | AC/Ncfpc/Sp3mp | AVqp3mp | AR/Ncbsa | AR/Npl | AR | ANgmpd/Ta | AC/Vpp3mp | APp3mp | AR/Ncbsa | AC/Ncbsa
+
+4:24
+AR/D | AVqp3fs | ANcfsc | ANcbsc | ANcbsd/Ta | AC | AR/Npl | AC/Vqp3fs | AVqrfsa | AR | ANcfsc | AAcfda | AR/Ncfsc | ANpm | ANcbsc | ANpl

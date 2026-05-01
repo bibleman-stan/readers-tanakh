@@ -1,0 +1,53 @@
+31:1
+Hc/Vpw3ms | HNpt | HR | HNpm | HR/Vqcc
+
+31:2
+HVqv2ms | HVqp1cs | HR/Ncmsa | HNpm | HNcmsc | HNpm | HNcmsc | HNpm | HR/Ncmsc | HNpl
+
+31:3
+Hc/Vpw1cs | HTo/Sp3ms | HNcfsc | HNcmpa | HR/Ncfsa | HC/R/Ncfsa | HC/R/Ncfsa | HC/R/Ncmsc | HNcfsa
+
+31:4
+HR/Vqcc | HNcfpa | HR/Vqcc | HRd/Ncmsa | HC/Rd/Ncmsa | HC/Rd/Ncfsa
+
+31:5
+HC/R/Ncfsc | HNcfsa | HR/Vpcc | HC/R/Ncfsc | HNcmsa | HR/Vqcc | HR/Ncmsc | HNcfsa
+
+31:6
+HC/Pp1bs | HTj | HVqp1cs | HR/Sp3ms | HTo | HNpm | HNcmsc | HNpm | HR/Ncmsc | HNpl | HC/R/Ncmsc | HNcmsa | HAamsc | HNcmsa | HVqp1cs | HNcfsa | Hc/Vqq3cp | HTo | HNcmsa | HTr | HVpp1cs/Sp2ms
+
+31:7
+HTo | HNcmsc | HNcmsa | HC/To | HTd/Ncmsa | HRd/Ncfsa | HC/To | HTd/Ncfsa | HTr | HR/Sp3ms | HC/To | HNcmsc | HNcmpc | HTd/Ncmsa
+
+31:8
+HC/To | HTd/Ncmsa | HC/To | HNcmpc/Sp3ms | HC/To | HTd/Ncfsa | HTd/Aafsa | HC/To | HNcmsc | HNcmpc/Sp3fs | HC/To | HNcmsc | HTd/Ncfsa
+
+31:9
+HC/To | HNcmsc | HTd/Ncfsa | HC/To | HNcmsc | HNcmpc/Sp3ms | HC/To | HTd/Ncmsa | HC/To | HNcmsc/Sp3ms
+
+31:10
+HC/To | HNcmpc | HTd/Ncmsa | HC/To | HNcmpc | HTd/Ncmsa | HR/Npm | HTd/Ncmsa | HC/To | HNcmpc | HNcmpc/Sp3ms | HR/Vpcc
+
+31:11
+HC/To | HNcmsc | HTd/Ncfsa | HC/To | HNcfsc | HTd/Ncmpa | HRd/Ntmsa | HR/Ncmsa | HTr | HVpp1cs/Sp2ms | HVqi3mp
+
+31:12
+Hc/Vqw3ms | HNpt | HR | HNpm | HR/Vqcc
+
+31:13
+HC/Pp2ms | HVpv2ms | HR | HNcmpc | HNpl | HR/Vqcc | HD | HTo | HNcfpc/Sp1bs | HVqi2mp | HTc | HNcfsc | HPp3fs | HAcmsc/Sp1bs | HC/Acmpc/Sp2mp | HR/Ncfpc/Sp2mp | HR/Vqcc | HTc | HPp1bs | HNpt | HVprmsc/Sp2mp
+
+31:14
+Hc/Vqq2mp | HTo | HTd/Ncfsa | HTc | HNcmsc | HPp3fs | HR/Sp2mp | HVprmpc/Sp3fs | HVqaa | HVHi3ms | HTc | HNcmsc | HTd/Vqrmsa | HR/Sp3fs | HNcfsa | Hc/VNq3fs | HTd/Ncfsa | HTd/Pp3fs | HR/Ncmsc | HNcmpc/Sp3fs
+
+31:15
+HAcbsc | HNcmpa | HVNi3ms | HNcfsa | HC/Rd/Ncmsa | HTd/Aomsa | HNcfsc | HNcmsa | HNcmsa | HR/Npt | HNcmsc | HTd/Vqrmsa | HNcfsa | HR/Ncmsc | HTd/Ncfsa | HVqaa | HVHi3ms
+
+31:16
+Hc/Vqq3cp | HNcmpc | HNpl | HTo | HTd/Ncfsa | HR/Vqcc | HTo | HTd/Ncfsa | HR/Ncfpc/Sp3mp | HNcfsc | HNcmsa
+
+31:17
+HAcmsc/Sp1bs | HC/Acmsc | HNcmpc | HNpl | HNcfsc | HPp3fs | HR/Ncmsa | HTc | HAcbsc | HNcmpa | HVqp3ms | HNpt | HTo | HTd/Ncmpa | HC/To | HTd/Ncfsa | HC/Rd/Ncmsa | HTd/Aomsa | HVqp3ms | Hc/VNw3ms
+
+31:18
+Hc/Vqw3ms | HR | HNpm | HR/Vpcc/Sp3ms | HR/Vpcc | HR/Sp3ms | HR/Ncmsc | HNpl | HAcbdc | HNcfpc | HTd/Ncfsa | HNcfpc | HNcfsa | HVqsmpa | HR/Ncfsc | HNcmpa

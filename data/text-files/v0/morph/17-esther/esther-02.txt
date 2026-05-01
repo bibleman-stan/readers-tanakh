@@ -1,0 +1,68 @@
+2:1
+HAcmsc | HTd/Ncmpa | HTd/Tm | HR/Vqcc | HNcfsc | HTd/Ncmsa | HNpm | HVqp3ms | HTo | HNpf | HC/To | HTr | HVqp3fs | HC/To | HTr | HVNp3ms | HRd/Sp3fs
+
+2:2
+Hc/Vqw3mp | HNcmpc | HTd/Ncmsa | HVprmpc/Sp3ms | HVpi3mp | HRd/Ncmsa | HNcfpa | HNcfpa | HAafpc | HNcmsa
+
+2:3
+HC/Vhj3ms | HTd/Ncmsa | HNcmpa | HR/Ncmsc | HNcfpc | HNcfsc/Sp3ms | HC/Vqu3mp | HTo | HNcmsc | HNcfsa | HNcfsa | HAafsc | HNcmsa | HR | HNpl | HTd/Ncfsa | HR | HNcmsc | HTd/Ncmpa | HR | HNcbsc | HNpm | HNcmsc | HTd/Ncmsa | HVqrmsa | HTd/Ncmpa | HC/Vqaa | HNcmpc/Sp3fp
+
+2:4
+HC/Td/Ncfsa | HTr | HVqi3fs | HR/Ncfdc | HTd/Ncmsa | HVqi3fs | HNcmsc | HNpf | Hc/Vqw3ms | HTd/Ncmsa | HR/Ncfdc | HTd/Ncmsa | Hc/Vqw3ms | HD
+
+2:5
+HNcmsa | HNgmsa | HVqp3ms | HR/Npl | HTd/Ncfsa | HC/Ncmsc/Sp3ms | HNpm | HNcmsc | HNpm | HNcmsc | HNpm | HNcmsc | HNpm | HNcmsa | HNgmsa
+
+2:6
+HTr | HVHp3ms | HR/Npl | HR | HTd/Ncfsa | HTr | HVHp3fs | HR | HNpm | HNcmsc | HNpl | HTr | HVhp3ms | HNpm | HNcmsc | HNpl
+
+2:7
+Hc/Vqw3ms | HVqrmsa | HTo | HNpf | HPp3fs | HNpf | HNcfsc | HNcmsc/Sp3ms | HTc | HNcmsc | HRd/Sp3fs | HNcmsa | HC/Ncfsa | HC/Td/Ncfsa | HAafsc | HNcmsa | HC/Aafsc | HNcmsa | HC/R/Ncmsc | HNcmsc/Sp3fs | HC/Ncfsc/Sp3fs | HVqp3ms/Sp3fs | HNpm | HRd/Sp3ms | HR/Ncfsa
+
+2:8
+Hc/Vqw3ms | HR/VNcc | HNcmsc | HTd/Ncmsa | HC/Ncfsc/Sp3ms | HC/R/VNcc | HNcfpa | HAafpa | HR | HNpl | HTd/Ncfsa | HR | HNcbsc | HNpm | Hc/VNw3fs | HNpf | HR | HNcmsc | HTd/Ncmsa | HR | HNcbsc | HNpm | HVqrmsa | HTd/Ncmpa
+
+2:9
+Hc/Vqw3fs | HTd/Ncfsa | HR/Ncfdc/Sp3ms | Hc/Vqw3fs | HNcmsa | HR/Ncmpc/Sp3ms | Hc/Vpw3ms | HTo | HNcmpc/Sp3fs | HC/To | HNcfpc/Sp3fs | HR/Vqcc | HRd/Sp3fs | HC/To | HAcbsa | HTd/Ncfpa | HTd/Vqsfpa | HR/Vqcc | HRd/Sp3fs | HR/Ncmsc | HTd/Ncmsa | Hc/Vpw3ms/Sp3fs | HC/To | HNcfpc/Sp3fs | HR/Aamsc | HNcmsc | HTd/Ncmpa
+
+2:10
+HTn | HVhp3fs | HNpf | HTo | HNcmsc/Sp3fs | HC/To | HNcfsc/Sp3fs | HTc | HNpm | HVpp3ms | HRd/Sp3fs | HTr | HTn | HVhi3fs
+
+2:11
+HC/R/Ncmsc | HNcmsa | HC/Ncmsa | HNpm | HVtrmsa | HR/Ncmpc | HNcbsc | HNcmsc | HTd/Ncmpa | HR/Vqcc | HTo | HNcmsc | HNpf | HC/Pi | HVNi3ms | HRd/Sp3fs
+
+2:12
+HC/R/Vhcc | HNcmsc | HNcfsa | HC/Ncfsa | HR/Vqcc | HR | HTd/Ncmsa | HNpm | HR/Ncmsa | HVqcc | HRd/Sp3fs | HR/Ncfsc | HTd/Ncmpa | HAcbda | HAcbsc | HNcmsa | HTc | HD | HVqi3mp | HNcmpc | HNcmpc/Sp3fp | HAcbsa | HNcmpa | HR/Ncmsc | HTd/Ncmsa | HC/Acbsa | HNcmpa | HRd/Ncmpa | HC/R/Ncmpc | HTd/Ncmpa
+
+2:13
+HC/R/Tm | HTd/Ncfsa | HVqrfsa | HR | HTd/Ncmsa | HTo | HNcmsa | HTr | HVqi3fs | HVNi3ms | HRd/Sp3fs | HR/Vqcc | HRd/Sp3fs | HR/Ncmsc | HTd/Ncmpa | HR | HNcmsc | HTd/Ncmsa
+
+2:14
+HRd/Ncmsa | HPp3fs | HVqrfsa | HC/Rd/Ncmsa | HPp3fs | HVqrfsa | HR | HNcmsc | HTd/Ncmpa | HAomsa | HR | HNcbsc | HNpm | HNcmsc | HTd/Ncmsa | HVqrmsa | HTd/Ncmpa | HTn | HVqi3fs | HAcmsa | HR | HTd/Ncmsa | HTc | HTc | HVqp3ms | HRd/Sp3fs | HTd/Ncmsa | Hc/VNq3fs | HR/Ncmsa
+
+2:15
+HC/R/Vhcc | HNcmsc | HNpf | HNcfsc | HNpm | HNcmsc | HNpm | HTr | HVqp3ms | HRd/Sp3ms | HR/Ncfsa | HR/Vqcc | HR | HTd/Ncmsa | HTn | HVpp3fs | HNcmsa | HTc | HTc | HTo | HTr | HVqi3ms | HNpm | HNcmsc | HTd/Ncmsa | HVqrmsa | HTd/Ncmpa | Hc/Vqw3fs | HNpf | HVqrfsc | HNcmsa | HR/Ncfdc | HNcmsc | HVqrmpc/Sp3fs
+
+2:16
+Hc/VNw3fs | HNpf | HR | HTd/Ncmsa | HNpm | HR | HNcmsc | HNcfsc/Sp3ms | HRd/Ncmsa | HTd/Aomsa | HPp3ms | HNcmsc | HNpt | HR/Ncfsc | HAcbsa | HR/Ncfsc/Sp3ms
+
+2:17
+Hc/Vqw3ms | HTd/Ncmsa | HTo | HNpf | HR/Ncmsc | HTd/Ncmpa | Hc/Vqw3fs | HNcmsa | HC/Ncmsa | HR/Ncmpc/Sp3ms | HR/Ncmsc | HTd/Ncfpa | Hc/Vqw3ms | HNcmsc | HNcfsa | HR/Ncmsc/Sp3fs | Hc/Vhw3ms/Sp3fs | HNcmsc | HNpf
+
+2:18
+Hc/Vqw3ms | HTd/Ncmsa | HNcmsa | HAamsa | HR/Ncmsc | HNcmpc/Sp3ms | HC/Ncmpc/Sp3ms | HTo | HNcmsc | HNpf | HC/Ncfsa | HRd/Ncfpa | HVqp3ms | Hc/Vqw3ms | HNcfsa | HR/Ncbsc | HTd/Ncmsa
+
+2:19
+HC/R/VNcc | HNcfpa | HAofsa | HC/Npm | HVqrmsa | HR/Ncmsc | HTd/Ncmsa
+
+2:20
+HNcmsc | HNpf | HVhrfsa | HNcfsc/Sp3fs | HC/To | HNcmsc/Sp3fs | HR/Tr | HVpp3ms | HRd/Sp3fs | HNpm | HC/To | HNcmsc | HNpm | HNpf | HVqrfsa | HR/Tr | HVqp3fs | HR/Ncfsa | HRd/Sp3ms
+
+2:21
+HRd/Ncmpa | HTd/Pp3mp | HC/Npm | HVqrmsa | HR/Ncmsc | HTd/Ncmsa | HVqp3ms | HNpm | HC/Npm | HAcbdc | HNcmpc | HTd/Ncmsa | HR/Vqrmpc | HTd/Ncmsa | Hc/Vpw3mp | HR/Vqcc | HNcbsa | HRd/Ncmsa | HNpm
+
+2:22
+Hc/VNw3ms | HTd/Ncmsa | HR/Npm | Hc/Vhw3ms | HR/Npf | HTd/Ncfsa | Hc/Vqw3fs | HNpf | HRd/Ncmsa | HR/Ncmsc | HNpm
+
+2:23
+Hc/VPw3ms | HTd/Ncmsa | Hc/VNw3ms | Hc/VNw3mp | HAcbdc/Sp3mp | HR | HNcmsa | Hc/VNw3ms | HR/Ncmsc | HNcmpc | HTd/Ncmpa | HR/Ncmpc | HTd/Ncmsa

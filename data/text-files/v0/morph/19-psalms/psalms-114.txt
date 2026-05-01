@@ -1,0 +1,23 @@
+114:1
+HR/Vqcc | HNpl | HR/Npl | HNcmsc | HNpm | HR/Ncmsa | HVqrmsa
+
+114:2
+HVqp3fs | HNpl | HR/Ncmsc/Sp3ms | HNpl | HNcfpc/Sp3ms
+
+114:3
+HTd/Ncmsa | HVqp3ms | Hc/Vqw3ms | HTd/Npl | HVqi3ms | HR/Ncmsa
+
+114:4
+HTd/Ncmpa | HVqp3cp | HR/Ncmpa | HNcfpa | HR/Ncmpc | HNcbsa
+
+114:5
+HPi | HR/Sp2ms | HTd/Ncmsa | HTc | HVqi2ms | HTd/Npl | HVqi2ms | HR/Ncmsa
+
+114:6
+HTd/Ncmpa | HVqi2mp | HR/Ncmpa | HNcfpa | HR/Ncmpc | HNcbsa
+
+114:7
+HR/R/Ncmpc | HNcmsa | HVqv2fs | HNcfsa | HR/R/Ncmpc | HNcmsc | HNpm
+
+114:8
+HTd/Vqrmsc | HTd/Ncmsa | HNcmsc | HNcmpa | HNcmsa | HR/Ncmsc/Sp3ms | HNcmpa

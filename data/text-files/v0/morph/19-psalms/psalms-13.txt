@@ -1,0 +1,17 @@
+13:1
+HRd/Vprmsa | HNcmsa | HR/Npm
+
+13:2
+HR | HTi | HNpt | HVqi2ms/Sp1bs | HNcmsa | HR | HTi | HVhi2ms | HTo | HNcmpc/Sp2ms | HR/Sp1bs
+
+13:3
+HR | HTi | HVqi1cs | HNcfpa | HR/Ncfsc/Sp1bs | HNcmsa | HR/Ncmsc/Sp1bs | HD | HR | HTi | HVqi3ms | HVqrmsc/Sp1bs | HR/Sp1bs
+
+13:4
+HVhv2ms/Sh | HVqv2ms/Sp1bs | HNpt | HNcmpc/Sp1bs | HVhv2ms/Sh | HNcfdc/Sp1bs | HTc | HVqi1cs | HTd/Ncmsa
+
+13:5
+HTc | HVqi3ms | HVqrmsc/Sp1bs | HVqp1cs/Sp3ms | HNcmpc/Sp1bs | HVqi3mp | HTc | HVNi1cs
+
+13:6
+HC/Pp1bs | HR/Ncmsc/Sp2ms | HVqp1cs | HVqj3ms | HNcmsc/Sp1bs | HR/Ncfsc/Sp2ms | HVqc1cs | HR/Npt | HTc | HVqp3ms | HR/Sp1bs

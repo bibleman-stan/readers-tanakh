@@ -1,0 +1,128 @@
+107:1
+HVhv2mp | HR/Npt | HTc | HVqp3ms | HTc | HR/Ncmsa | HNcmsc/Sp3ms
+
+107:2
+HVqi3mp | HVqsmpc | HNpt | HTr | HVqp3ms/Sp3mp | HR/Ncbsc | HNcmsa
+
+107:3
+HC/R/Ncfpa | HVpp3ms/Sp3mp | HR/Ncmsa | HC/R/Ncmsa | HR/Ncfsa | HC/R/Ncmsa
+
+107:4
+HVqp3cp | HRd/Ncmsa | HR/Ncmsc | HNcbsa | HNcfsc | HNcmsa | HTn | HVqp3cp
+
+107:5
+HAampa | HD | HAampa | HNcfsc/Sp3mp | HR/Sp3mp | HVti3fs
+
+107:6
+Hc/Vqw3mp | HR | HNpt | HRd/Aamsa | HR/Sp3mp | HR/Ncfpc/Sp3mp | HVhi3ms/Sp3mp
+
+107:7
+Hc/Vhw3ms/Sp3mp | HR/Ncbsa | HAafsa | HR/Vqcc | HR | HNcfsc | HNcmsa
+
+107:8
+HVhi3mp | HR/Npt | HNcmsc/Sp3ms | HC/VNrfpc/Sp3ms | HR/Ncmpc | HNcmsa
+
+107:9
+HTc | HVhp3ms | HNcfsa | HVqrfsa | HC/Ncfsa | HAafsa | HVpp3ms | HAamsa
+
+107:10
+HVqrmpc | HNcmsa | HC/Ncmsa | HNcmpc | HNcmsa | HC/Ncmsa
+
+107:11
+HTc | HVhp3cp | HNcmpc | HNcmsa | HC/Ncfsc | HAamsa | HVqp3cp
+
+107:12
+Hc/Vhw3ms | HRd/Ncbsa | HNcmsc/Sp3mp | HVqp3cp | HC/Ncmsc | HVqrmsa
+
+107:13
+Hc/Vqw3mp | HR | HNpt | HRd/Aamsa | HR/Sp3mp | HR/Ncfpc/Sp3mp | HVhi3ms/Sp3mp
+
+107:14
+HVhi3ms/Sp3mp | HR/Ncmsa | HC/Ncmsa | HC/Ncfpc/Sp3mp | HVpi3ms
+
+107:15
+HVhi3mp | HR/Npt | HNcmsc/Sp3ms | HC/VNrfpc/Sp3ms | HR/Ncmpc | HNcmsa
+
+107:16
+HTc | HVpp3ms | HNcfpc | HNcfsa | HC/Ncmpc | HNcmsa | HVpp3ms
+
+107:17
+HAampa | HR/Ncbsc | HNcmsc/Sp3mp | HC/R/Ncfpc/Sp3mp | HVti3mp
+
+107:18
+HNcmsc | HNcmsa | HVpi3fs | HNcfsc/Sp3mp | Hc/Vhw3mp | HR | HNcmpc | HNcmsa
+
+107:19
+Hc/Vqw3mp | HR | HNpt | HRd/Aamsa | HR/Sp3mp | HR/Ncfpc/Sp3mp | HVhi3ms/Sp3mp
+
+107:20
+HVqi3ms | HNcmsc/Sp3ms | HC/Vqu3ms/Sp3mp | HC/Vpu3ms | HR/Ncfpc/Sp3mp
+
+107:21
+HVhi3mp | HR/Npt | HNcmsc/Sp3ms | HC/VNrfpc/Sp3ms | HR/Ncmpc | HNcmsa
+
+107:22
+HC/Vqu3mp | HNcmpc | HNcfsa | HC/Vpu3mp | HNcmpc/Sp3ms | HR/Ncfsa
+
+107:23
+HVqrmpc | HTd/Ncmsa | HR/Ncfpa | HVqrmpc | HNcfsa | HR/Ncmpa | HAampa
+
+107:24
+HPp3mp | HVqp3cp | HNcmpc | HNpt | HC/VNrfpc/Sp3ms | HR/Ncfsa
+
+107:25
+Hc/Vqw3ms | Hc/Vhw3ms | HNcfsc | HNcfsa | Hc/Vpw3fs | HNcmpc/Sp3ms
+
+107:26
+HVqi3mp | HNcmpa | HVqi3mp | HNcfpa | HNcfsc/Sp3mp | HR/Ncfsa | HVti3fs
+
+107:27
+HVqi3mp | HC/Vqu3mp | HRd/Aamsa | HC/Ncmsc | HNcfsc/Sp3mp | HVti3fs
+
+107:28
+Hc/Vqw3mp | HR | HNpt | HRd/Aamsa | HR/Sp3mp | HC/R/Ncfpc/Sp3mp | HVhi3ms/Sp3mp
+
+107:29
+HVhj3ms | HNcfsa | HR/Ncfsa | Hc/Vqw3mp | HNcmpc/Sp3mp
+
+107:30
+Hc/Vqw3mp | HTc | HVqi3mp | Hc/Vhw3ms/Sp3mp | HR | HNcmsc | HNcmsc/Sp3mp
+
+107:31
+HVhi3mp | HR/Npt | HNcmsc/Sp3ms | HC/VNrfpc/Sp3ms | HR/Ncmpc | HNcmsa
+
+107:32
+HC/Vpu3mp/Sp3ms | HR/Ncmsc | HNcmsa | HC/R/Ncmsc | HAampa | HVpi3mp/Sp3ms
+
+107:33
+HVqj3ms | HNcfpa | HR/Ncmsa | HC/Ncmpc | HNcmpa | HR/Ncmsa
+
+107:34
+HNcfsc | HNcmsa | HR/Ncfsa | HR/Ncfsc | HVqrmpc | HR/Sp3fs
+
+107:35
+HVqj3ms | HNcmsa | HR/Ncmsc | HNcmpa | HC/Ncfsc | HNcfsa | HR/Ncmpc | HNcmpa
+
+107:36
+Hc/Vhw3ms | HD | HAampa | Hc/Vpw3mp | HNcfsc | HNcmsa
+
+107:37
+Hc/Vqw3mp | HNcfpa | Hc/Vqw3mp | HNcmpa | Hc/Vqw3mp | HNcmsc | HNcfsa
+
+107:38
+Hc/Vpw3ms/Sp3mp | Hc/Vqw3mp | HAcmsa | HC/Ncfsc/Sp3mp | HTn | HVhi3ms
+
+107:39
+Hc/Vqw3mp | Hc/Vqw3mp | HR/Ncmsc | HNcfsa | HC/Ncmsa
+
+107:40
+HVqrmsa | HNcmsa | HR | HAampa | Hc/Vhw3ms/Sp3mp | HR/Ncmsa | HTn | HNcbsa
+
+107:41
+Hc/Vpw3ms | HAamsa | HR/Ncmsa | Hc/Vqw3ms | HRd/Ncbsa | HNcfpa
+
+107:42
+HVqi3mp | HAampa | HC/Vqu3mp | HC/Ncmsc | HNcfsa | HVqp3fs | HNcmsc/Sp3fs
+
+107:43
+HPi | HAamsa | HC/Vqu3ms | HTm | HC/Vtu3mp | HNcmpc | HNpt

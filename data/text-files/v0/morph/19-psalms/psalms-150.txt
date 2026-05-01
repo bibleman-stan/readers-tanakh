@@ -1,0 +1,17 @@
+150:1
+HVpv2mp | HNpm | HVpv2mp | HNcmsa | HR/Ncmsc/Sp3ms | HVpv2mp/Sp3ms | HR/Ncmsc | HNcmsc/Sp3ms
+
+150:2
+HVpv2mp/Sp3ms | HR/Ncfpc/Sp3ms | HVpv2mp/Sp3ms | HR/Ncmsc | HNcmsc/Sp3ms
+
+150:3
+HVpv2mp/Sp3ms | HR/Ncmsc | HNcmsa | HVpv2mp/Sp3ms | HR/Ncmsa | HC/Ncmsa
+
+150:4
+HVpv2mp/Sp3ms | HR/Ncmsa | HC/Ncmsa | HVpv2mp/Sp3ms | HR/Ncmpa | HC/Ncmsa
+
+150:5
+HVpv2mp/Sp3ms | HR/Ncmpc | HNcmsa | HVpv2mp/Sp3ms | HR/Ncmpc | HNcfsa
+
+150:6
+HNcmsc | HTd/Ncfsa | HVpi3fs | HNpm | HVpv2mp | HNpm

@@ -1,0 +1,50 @@
+21:1
+HNcmsc | HNcmsc | HNcmsa | HR/Ncfpa | HRd/Npl | HR/Vqcc | HR/Ncmsa | HVqp3ms | HR/Ncfsa | HVNrfsa
+
+21:2
+HNcfsa | HAafsa | HVHp3ms | HR/Sp1bs | HTd/Vqrmsa | HVqrmsa | HC/Td/Vqrmsa | HVqrmsa | HVqv2fs | HNpl | HVqv2fs | HNpl | HNcmsc | HNcfsc/Sp3fs | HVhp1cs
+
+21:3
+HR | HD | HVqp3cp | HNcmdc/Sp1bs | HNcfsa | HNcmpa | HVqp3cp/Sp1bs | HR/Ncmpc | HVqrfsa | HVNp1cs | HR/Vqcc | HVNp1cs | HR/Vqcc
+
+21:4
+HVqp3ms | HNcmsc/Sp1bs | HNcfsa | HVpp3fs/Sp1bs | HTo | HNcmsc | HNcmsc/Sp1bs | HVqp3ms | HR/Sp1bs | HR/Ncfsa
+
+21:5
+HVqaa | HTd/Ncmsa | HVqaa | HTd/Ncfsa | HVqaa | HVqaa | HVqv2mp | HTd/Ncmpa | HVqv2mp | HNcmsa
+
+21:6
+HTc | HD | HVqp3ms | HR/Sp1bs | HNpt | HVqv2ms | HVhv2ms | HTd/Vprmsa | HTr | HVqi3ms | HVhi3ms
+
+21:7
+Hc/Vqq3ms | HNcmsa | HNcmsc | HNcmpa | HNcmsc | HNcbsa | HNcmsc | HNcbsa | Hc/Vhq3ms | HNcmsa | HAamsc | HNcmsa
+
+21:8
+Hc/Vqw3ms | HNcmsa | HR | HNcmsa | HNpt | HPp1bs | HVqrmsa | HNcmsa | HD | HC/R | HNcfsc/Sp1bs | HPp1bs | HVNrmsa | HNcmsc | HTd/Ncfpa
+
+21:9
+HC/Tj | HTm | HVqp3ms | HNcmsc | HNcmsa | HNcmsc | HNcmpa | Hc/Vqw3ms | Hc/Vqw3ms | HVqp3fs | HVqp3fs | HNpl | HC/Ncmsc | HNcmpc | HNcmpc/Sp3fs | HVpp3ms | HRd/Ncfsa
+
+21:10
+HNcfsc/Sp1bs | HC/Ncmsc | HNcfsc/Sp1bs | HTr | HVqp1cs | HR/R | HNpt | HNcfpa | HNcmpc | HNpl | HVhp1cs | HRd/Sp2mp
+
+21:11
+HNcmsc | HNpl | HR/Sp1bs | HVqrmsa | HR/Npl | HVqrmsa | HPi | HR/Ncmsa | HVqrmsa | HPi | HR/Ncmsc
+
+21:12
+HVqp3ms | HVqrmsa | HVqp3ms | HNcmsa | HC/D | HNcmsa | HTc | HVqi2mp/Sn | HVqv2mp | HVqv2mp | HVqv2mp
+
+21:13
+HNcmsa | HR/Npl | HRd/Ncmsa | HR/Npl | HVqi2mp | HNcfpc | HNgmpa
+
+21:14
+HR/Vqcc | HAamsa | HVhv2mp | HNcmpa | HVqrmpc | HNcfsc | HNpl | HR/Ncmsc/Sp3ms | HVpp3cp | HVqrmsa
+
+21:15
+HTc | HR/Ncmpc | HNcfpa | HVqp3cp | HR/Ncmpc | HNcfsa | HVqsfsa | HC/R/Ncmpc | HNcfsa | HVqsfsa | HC/R/Ncmpc | HNcmsc | HNcfsa
+
+21:16
+HTc | HD | HVqp3ms | HNpt | HR/Sp1bs | HR/Acmsa | HNcfsa | HR/Ncmpc | HAamsa | Hc/Vqq3ms | HNcmsc | HNcmsc | HNpm
+
+21:17
+HC/Ncmsc | HNcmsc | HNcfsc | HNcmpc | HNcmpc | HNpm | HVqi3mp | HTc | HNpt | HNcmpc | HNpl | HVpp3ms

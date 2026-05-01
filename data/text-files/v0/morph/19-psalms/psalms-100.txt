@@ -1,0 +1,14 @@
+100:1
+HNcmsa | HR/Ncfsa | HVhv2mp | HR/Npt | HNcmsc | HTd/Ncfsa
+
+100:2
+HVqv2mp | HTo | HNpt | HR/Ncfsa | HVqv2mp | HR/Ncmpc/Sp3ms | HR/Ncfsa
+
+100:3
+HVqv2mp | HTc | HNpt | HPp3ms | HNcmpa | HPp3ms | HVqp3ms/Sp1bp | HC/R/Sp3ms | HPp1bp | HNcmsc/Sp3ms | HC/Ncbsc | HNcfsc/Sp3ms
+
+100:4
+HVqv2mp | HNcmpc/Sp3ms | HR/Ncfsa | HNcfpc/Sp3ms | HR/Ncfsa | HVhv2mp | HR/Sp3ms | HVpv2mp | HNcmsc/Sp3ms
+
+100:5
+HTc | HAamsa | HNpt | HR/Ncmsa | HNcmsc/Sp3ms | HC/R | HNcmsa | HC/Ncmsa | HNcfsc/Sp3ms

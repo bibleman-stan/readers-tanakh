@@ -1,0 +1,29 @@
+20:1
+HRd/Vprmsa | HNcmsa | HR/Npm
+
+20:2
+HVqi3ms/Sp2ms | HNpt | HR/Ncmsc | HNcfsa | HVpi3ms/Sp2ms | HNcmsc | HNcmpc | HNpm
+
+20:3
+HVqi3ms | HNcmsc/Sp2ms | HR/Ncmsa | HC/R/Npl | HVqi3ms/Sp2ms
+
+20:4
+HVqi3ms | HNcmsc | HNcfpc/Sp2ms | HC/Ncfsc/Sp2ms | HVpi3ms/Sh | HTj
+
+20:5
+HVqi3ms | HR/Sp2ms | HR/Ncmsc/Sp2ms | HC/Ncmsc | HNcfsc/Sp2ms | HVpi3ms
+
+20:6
+HVpc1cp | HR/Ncfsc/Sp2ms | HC/R/Ncmsc | HNcmpc/Sp1bp | HVqi1cp | HVpi3ms | HNpt | HNcmsc | HNcfpc/Sp2ms
+
+20:7
+HD | HVqp1cs | HTc | HVhp3ms | HNpt | HNcmsc/Sp3ms | HVqi3ms/Sp3ms | HR/Ncmpc | HNcmsc/Sp3ms | HR/Ncfpc | HNcmsc | HNcfsc/Sp3ms
+
+20:8
+HTm | HRd/Ncmsa | HC/Tm | HRd/Ncmpa | HC/Pp1bp | HR/Ncmsc | HNpt | HNcmpc/Sp1bp | HVhi1cp
+
+20:9
+HPp3mp | HVqp3cp | HC/Vqp3cp | HC/Pp1bp | HVqp1cp | Hc/Vtw1cp
+
+20:10
+HNpt | HVhv2ms/Sh | HTd/Ncmsa | HVqi3ms/Sp1bp | HR/Ncmsc | HVqcc/Sp1bp
