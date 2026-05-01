@@ -112,6 +112,14 @@ V1_DIR = REPO_ROOT / "data" / "text-files" / "v1" / "he-baseline"
 V2_DIR = REPO_ROOT / "data" / "text-files" / "v2" / "he"
 
 # ---------------------------------------------------------------------------
+# Shared morphology + morph-alignment helpers
+# ---------------------------------------------------------------------------
+# Make _shared importable when this script is run as __main__.
+sys.path.insert(0, str(REPO_ROOT / "validators"))
+from _shared import morphology as M  # noqa: E402
+from _shared import morph_alignment as MA  # noqa: E402
+
+# ---------------------------------------------------------------------------
 # Hebrew Unicode helpers
 # ---------------------------------------------------------------------------
 
@@ -251,151 +259,257 @@ def starts_with_article(bare_token: str) -> bool:
 
 
 # ---------------------------------------------------------------------------
+# Verse-grouping helper
+# ---------------------------------------------------------------------------
+
+_VERSE_REF_RE = re.compile(r"^\d+:\d+\s*$")
+
+
+def _partition_into_verses(lines: list[str]) -> list[tuple[int, int, list[tuple[int, str]]]]:
+    """Partition a list of file lines into per-verse groups.
+
+    Returns list of (verse_num, [(line_no_1based, line_text), ...]) tuples,
+    where verse_num is the verse integer from the chapter:verse header.
+    Lines that precede any verse header are discarded (blank preamble only).
+    """
+    groups: list[tuple[int, list[tuple[int, str]]]] = []
+    cur_verse: int | None = None
+    cur_lines: list[tuple[int, str]] = []
+    for i, raw in enumerate(lines):
+        line_no = i + 1
+        s = raw.strip()
+        m = _VERSE_REF_RE.match(s)
+        if m:
+            if cur_verse is not None and cur_lines:
+                groups.append((cur_verse, cur_lines))
+            cur_verse = int(s.split(":")[1])
+            cur_lines = []
+        elif s and cur_verse is not None:
+            cur_lines.append((line_no, raw))
+    if cur_verse is not None and cur_lines:
+        groups.append((cur_verse, cur_lines))
+    return groups
+
+
+# ---------------------------------------------------------------------------
 # Per-file scanner
 # ---------------------------------------------------------------------------
 
 def scan_file(path: Path, verbose: bool = False) -> list[dict]:
-    """Scan one text file for Rule H2 construct-chain split violations."""
+    """Scan one text file for Rule H2 construct-chain split violations.
+
+    Uses TAHOT morph tags (via morph_alignment) when available to classify
+    the last token of each content line as a construct-state head.  Falls
+    back to the closed-list skel-heuristics when tags are missing or the
+    verse alignment fails.
+    """
     violations = []
     try:
-        lines = path.read_text(encoding="utf-8").splitlines()
+        raw_text = path.read_text(encoding="utf-8")
     except UnicodeDecodeError:
-        lines = path.read_text(encoding="utf-8-sig").splitlines()
+        raw_text = path.read_text(encoding="utf-8-sig")
 
-    for i, line in enumerate(lines):
-        if is_skippable(line):
+    all_lines = raw_text.splitlines()
+
+    # Load TAHOT morph alignment for this chapter (None if v0/morph file absent).
+    chapter_morph = MA.load_chapter_morph(path)
+
+    # Group file lines into per-verse buckets.
+    verse_groups = _partition_into_verses(all_lines)
+
+    # Build a flat list of (line_no, line_text, verse_num) for cross-line
+    # navigation within a verse (we need prev/next line across verse groups
+    # only for the flat scan below — within-verse is the primary case).
+    # We'll process verse-by-verse and use verse_content_lines for alignment.
+
+    for verse_num, verse_numbered_lines in verse_groups:
+        # verse_numbered_lines: [(1-based line_no, raw_line), ...]
+        # Filter to non-empty, non-skippable content lines for alignment.
+        content = [(ln, raw) for ln, raw in verse_numbered_lines if not is_skippable(raw)]
+
+        if not content:
             continue
 
-        line_no = i + 1  # 1-based
+        # Build tag alignment for this verse.
+        # MA.align_verse_tokens_to_tags expects bare line strings (no line numbers).
+        verse_text_lines = [raw for _, raw in content]
+        verse_token_tags: list[list[list[str]]] | None = None
+        if chapter_morph is not None:
+            ortho_tags = chapter_morph.get(verse_num)
+            if ortho_tags is not None:
+                verse_token_tags = MA.align_verse_tokens_to_tags(verse_text_lines, ortho_tags)
+                # If alignment returned None, fall back to skel-heuristics for
+                # the whole verse.
 
-        tokens = line.split()
-        if not tokens:
-            continue
+        def _tag_list_for(line_idx: int, tok_idx: int) -> list[str] | None:
+            """Return the tag list for a specific token, or None on miss."""
+            if verse_token_tags is None:
+                return None
+            if line_idx < 0 or line_idx >= len(verse_token_tags):
+                return None
+            tl = verse_token_tags[line_idx]
+            if tok_idx < 0 or tok_idx >= len(tl):
+                return None
+            return tl[tok_idx]
 
-        last_token = tokens[-1]
-        bare_last = strip_points(last_token)
+        # Scan each content line within this verse.
+        for ci, (line_no, line) in enumerate(content):
+            tokens = line.split()
+            if not tokens:
+                continue
 
-        # Skip if line ends with sof pasuq (verse-end — no cross-verse chain here
-        # unless Rule H10 cross-verse continuity applies, which needs separate handling)
-        if has_sof_pasuq(last_token):
-            continue
+            last_token = tokens[-1]
+            bare_last = strip_points(last_token)
 
-        # Skip if last token ends with maqqef — already caught by H1/maqqef validator
-        if bare_last.endswith(MAQQEF) or last_token.endswith(MAQQEF):
-            continue
+            # Skip verse-final lines (sof pasuq) — no cross-line chain here.
+            if has_sof_pasuq(last_token):
+                continue
 
-        # Find next non-empty content line
-        next_line = ""
-        next_line_num = None
-        for j in range(i + 1, len(lines)):
-            if not is_skippable(lines[j]):
-                next_line = lines[j]
-                next_line_num = j + 1  # 1-based
-                break
+            # Skip maqqef-joined line endings — caught by H1 validator.
+            if bare_last.endswith(MAQQEF) or last_token.endswith(MAQQEF):
+                continue
 
-        if not next_line:
-            continue
+            # Find next content line (may be in next verse or same verse).
+            next_line = ""
+            next_line_num = None
+            # First look within this verse's content list.
+            if ci + 1 < len(content):
+                next_line_num, next_line = content[ci + 1]
+            else:
+                # Cross-verse: scan forward in all_lines from current position.
+                for j in range(line_no, len(all_lines)):
+                    if not is_skippable(all_lines[j]):
+                        next_line = all_lines[j]
+                        next_line_num = j + 1
+                        break
 
-        next_bare_first = first_bare_token(next_line)
-        if not next_bare_first:
-            continue
+            if not next_line:
+                continue
 
-        # --- Heuristic (b): Divine name compound ---
-        if bare_last in DIVINE_NAME_SKELETONS and next_bare_first in YHWH_COMPOUND_FOLLOWERS:
-            violations.append({
-                "file": path.name,
-                "file_path": path,
-                "line_num": line_no,
-                "rule": "H2/construct",
-                "severity": "STRONG-MERGE-CANDIDATE",
-                "subcase": "divine_name",
-                "brief": (
-                    f"compound divine name split — "
-                    f"{last_token!r} at line end, continuation {next_line.split()[0]!r} below "
-                    f"(frozen formula per break-legality.md row 7)"
-                ),
-                "line": line.rstrip(),
-                "next_line": next_line.rstrip(),
-                "next_line_num": next_line_num,
-            })
-            continue
+            next_bare_first = first_bare_token(next_line)
+            if not next_bare_first:
+                continue
 
-        # --- Heuristic (a): Definite-article rectum ---
-        if starts_with_article(next_bare_first):
-            # The next line's first token looks like an articulated noun that
-            # could be a rectum. Check that the current line's last token is
-            # a plausible regens (not itself articulated, not a particle).
-            regens_is_articulated = bare_last.startswith("ה") and len(bare_last) > 1
-            # If regens is itself articulated, it can't be in construct state
-            # (articulated nouns are in absolute state — Joüon-Muraoka §137a).
-            if not regens_is_articulated:
-                # FILTER: if the current line ends with a speech verb, the next
-                # line's ה-initial word is almost certainly speech content (an
-                # adverb like הֵיטֵב, a question particle, or a quoted clause
-                # opener) — NOT a construct rectum.  Skip the article heuristic
-                # entirely for speech-verb-final lines (Bug 3 fix).
-                if bare_last in SPEECH_VERB_SKELETONS:
-                    continue
+            # Tag list for the LAST token on this line (for construct-head check).
+            last_tok_idx = len(tokens) - 1
+            last_token_tags = _tag_list_for(ci, last_tok_idx)
 
-                # All article-heuristic findings are REVIEW-REQUIRED.
-                # The heuristic cannot distinguish genuine construct rectum from:
-                #   - paragogic/cohortative ה on imperatives (הַגִּידָה)
-                #   - ה on adverbs (הֵיטֵב)
-                #   - appositive NPs following a proper noun (הָעִיר after נִינְוֵה)
-                # Demoting to REVIEW-REQUIRED keeps findings honest and avoids
-                # misleading the apply script with false STRONG-MERGE-CANDIDATEs.
-                severity = "REVIEW-REQUIRED"
-                if bare_last in COMMON_CONSTRUCT_ENDINGS:
-                    brief = (
-                        f"possible construct chain split — known regens form {last_token!r} "
-                        f"at line end, articulated word {next_line.split()[0]!r} at next line start"
-                    )
-                else:
-                    brief = (
-                        f"possible construct chain split — {last_token!r} at line end, "
-                        f"articulated word {next_line.split()[0]!r} at next line start"
-                    )
+            # --- Heuristic (b): Divine name compound ---
+            if bare_last in DIVINE_NAME_SKELETONS and next_bare_first in YHWH_COMPOUND_FOLLOWERS:
                 violations.append({
                     "file": path.name,
                     "file_path": path,
                     "line_num": line_no,
                     "rule": "H2/construct",
-                    "severity": severity,
-                    "subcase": "article_rectum",
-                    "brief": brief,
-                    "line": line.rstrip(),
-                    "next_line": next_line.rstrip(),
-                    "next_line_num": next_line_num,
-                })
-            continue
-
-        # --- Heuristic (c): Common construct endings (non-articulated rectum) ---
-        # If current line ends with a known construct-state form but the
-        # next token is not articulated (bare rectum — e.g., divine name,
-        # proper noun, or another noun in a multi-level chain).
-        if bare_last in COMMON_CONSTRUCT_ENDINGS:
-            # Skip if next token is a conjunction or particle (different clause)
-            next_bare_stripped = strip_points(next_bare_first)
-            is_next_clause_starter = (
-                next_bare_stripped.startswith("ו")  # vav-consecutive or conjunction
-                or next_bare_stripped in {"כי", "אשר", "אם", "כן", "כה", "הנה"}
-            )
-            if not is_next_clause_starter:
-                violations.append({
-                    "file": path.name,
-                    "file_path": path,
-                    "line_num": line_no,
-                    "rule": "H2/construct",
-                    "severity": "REVIEW-REQUIRED",
-                    "subcase": "common_construct_ending",
+                    "severity": "STRONG-MERGE-CANDIDATE",
+                    "subcase": "divine_name",
                     "brief": (
-                        f"possible construct chain split — known construct form {last_token!r} "
-                        f"at line end, next-line first token {next_line.split()[0]!r}"
+                        f"compound divine name split — "
+                        f"{last_token!r} at line end, continuation {next_line.split()[0]!r} below "
+                        f"(frozen formula per break-legality.md row 7)"
                     ),
                     "line": line.rstrip(),
                     "next_line": next_line.rstrip(),
                     "next_line_num": next_line_num,
                 })
+                continue
+
+            # --- Heuristic (a): Definite-article rectum ---
+            if starts_with_article(next_bare_first):
+                # The next line's first token looks like an articulated noun that
+                # could be a rectum. Check that the current line's last token is
+                # a plausible regens (not itself articulated, not a particle).
+                regens_is_articulated = bare_last.startswith("ה") and len(bare_last) > 1
+                # If regens is itself articulated, it can't be in construct state
+                # (articulated nouns are in absolute state — Joüon-Muraoka §137a).
+                if not regens_is_articulated:
+                    # FILTER: if the current line ends with a speech verb, the next
+                    # line's ה-initial word is almost certainly speech content (an
+                    # adverb like הֵיטֵב, a question particle, or a quoted clause
+                    # opener) — NOT a construct rectum.  Skip the article heuristic
+                    # entirely for speech-verb-final lines (Bug 3 fix).
+                    if bare_last in SPEECH_VERB_SKELETONS:
+                        continue
+
+                    # All article-heuristic findings are REVIEW-REQUIRED.
+                    # The heuristic cannot distinguish genuine construct rectum from:
+                    #   - paragogic/cohortative ה on imperatives (הַגִּידָה)
+                    #   - ה on adverbs (הֵיטֵב)
+                    #   - appositive NPs following a proper noun (הָעִיר after נִינְוֵה)
+                    # Demoting to REVIEW-REQUIRED keeps findings honest and avoids
+                    # misleading the apply script with false STRONG-MERGE-CANDIDATEs.
+                    severity = "REVIEW-REQUIRED"
+                    # Tag-aware regens check: if TAHOT confirms construct state,
+                    # note it in the brief for downstream visibility.
+                    tag_confirms_construct = M.is_construct_head_token(
+                        last_token, tag_list=last_token_tags
+                    )
+                    if tag_confirms_construct:
+                        brief = (
+                            f"construct chain split (TAHOT-confirmed regens) — "
+                            f"{last_token!r} at line end, articulated word "
+                            f"{next_line.split()[0]!r} at next line start"
+                        )
+                    elif bare_last in COMMON_CONSTRUCT_ENDINGS:
+                        brief = (
+                            f"possible construct chain split — known regens form {last_token!r} "
+                            f"at line end, articulated word {next_line.split()[0]!r} at next line start"
+                        )
+                    else:
+                        brief = (
+                            f"possible construct chain split — {last_token!r} at line end, "
+                            f"articulated word {next_line.split()[0]!r} at next line start"
+                        )
+                    violations.append({
+                        "file": path.name,
+                        "file_path": path,
+                        "line_num": line_no,
+                        "rule": "H2/construct",
+                        "severity": severity,
+                        "subcase": "article_rectum",
+                        "brief": brief,
+                        "line": line.rstrip(),
+                        "next_line": next_line.rstrip(),
+                        "next_line_num": next_line_num,
+                    })
+                continue
+
+            # --- Heuristic (c): Construct-head check (non-articulated rectum) ---
+            # Tag-driven path (TAHOT oracle): M.is_construct_head_token passes
+            # tag_list to TAHOT for authoritative state-letter detection — catches
+            # construct nouns absent from the COMMON_CONSTRUCT_ENDINGS closed list
+            # (e.g. מְזוּזַת, נְאֻם, אֵין, אֱלֹהֵי).  Skel-fallback fires when tags
+            # are unavailable, preserving the original COMMON_CONSTRUCT_ENDINGS coverage.
+            is_construct = M.is_construct_head_token(last_token, tag_list=last_token_tags)
+            if is_construct:
+                # Skip if next token is a conjunction or particle (different clause)
+                next_bare_stripped = strip_points(next_bare_first)
+                is_next_clause_starter = (
+                    next_bare_stripped.startswith("ו")  # vav-consecutive or conjunction
+                    or next_bare_stripped in {"כי", "אשר", "אם", "כן", "כה", "הנה"}
+                )
+                if not is_next_clause_starter:
+                    tag_driven = last_token_tags is not None
+                    brief_prefix = (
+                        "construct chain split (TAHOT-confirmed)"
+                        if tag_driven
+                        else "possible construct chain split — known construct form"
+                    )
+                    violations.append({
+                        "file": path.name,
+                        "file_path": path,
+                        "line_num": line_no,
+                        "rule": "H2/construct",
+                        "severity": "REVIEW-REQUIRED",
+                        "subcase": "common_construct_ending",
+                        "brief": (
+                            f"{brief_prefix} {last_token!r} "
+                            f"at line end, next-line first token {next_line.split()[0]!r}"
+                        ),
+                        "line": line.rstrip(),
+                        "next_line": next_line.rstrip(),
+                        "next_line_num": next_line_num,
+                    })
 
     return violations
 

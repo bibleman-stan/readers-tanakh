@@ -64,6 +64,8 @@ V2_DIR = REPO_ROOT / "data" / "text-files" / "v2" / "he"
 # Make _shared importable when this script is run as __main__.
 sys.path.insert(0, str(REPO_ROOT / "validators"))
 from _shared.poetic_register import is_poetic_register  # noqa: E402
+from _shared import morph_alignment as MA  # noqa: E402
+from _shared import morphology as M  # noqa: E402
 
 # ---------------------------------------------------------------------------
 # Hebrew Unicode helpers
@@ -207,20 +209,29 @@ DIVINE_VOCATIVE_TAILS = {"יהוה", "יה", "אלהים", "אדני"}
 ADDRESS_PARTICLES = {"הוי", "אוי", "אהה", "אנא"}
 
 
-def is_standalone_permitted(token: str, line: str) -> bool:
+def is_standalone_permitted(
+    token: str,
+    line: str,
+    tag_list: "list[str] | None" = None,
+) -> bool:
     """Return True if this single-token line is in the standalone-permitted lexicon.
 
     Three conditions:
-      (a) Sentence-final verb — qatal 3ms/3fs/3cp from closed list.
+      (a) Sentence-final verb — any finite verb form (tag-aware via TAHOT morph
+          when available; skel-heuristic fallback when not).
       (b) Classical comma — blessing/interjection from closed list.
       (c) Vocative — divine name, address particle, or 2nd-person marker.
+
+    The `tag_list` parameter, when provided, routes condition (a) through
+    M.is_finite_verb_token's tag-driven path (TAHOT oracle), eliminating the
+    systematic FP class of nouns that share skeletons with qatal-3 forms.
     """
     bare = strip_points(token).rstrip(SOF_PASUQ)
     if not bare:
         return False
 
-    # (a) Sentence-final verb check
-    if bare in SENTENCE_FINAL_VERBS:
+    # (a) Sentence-final (finite) verb check — tag-aware primary, skel fallback
+    if M.is_finite_verb_token(token, tag_list=tag_list):
         return True
 
     # (b) Classical comma check
@@ -257,6 +268,9 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
     book = book_name_from_path(path)
     chapter_from_file = chapter_from_path(path)
 
+    # Load TAHOT morph alignment for this chapter (None if morph file absent).
+    chapter_morph = MA.load_chapter_morph(path)
+
     # Build verse-context map: line_index → (chapter, verse)
     line_to_verse: dict[int, tuple[int | None, int | None]] = {}
     cur_chapter: int | None = None
@@ -268,6 +282,36 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
             line_to_verse[i] = (cur_chapter, cur_verse)
         else:
             line_to_verse[i] = (cur_chapter, cur_verse)
+
+    # Build per-verse line groupings for alignment (verse → list of (line_idx, line))
+    verse_lines_map: dict[tuple[int | None, int | None], list[tuple[int, str]]] = {}
+    for i, line in enumerate(lines):
+        if is_skippable(line):
+            continue
+        v_ctx = line_to_verse.get(i, (None, None))
+        verse_lines_map.setdefault(v_ctx, []).append((i, line))
+
+    # Build per-verse token-tag mapping:
+    # verse_key → list[list[list[str]]]  (line → token → tag_list)
+    # None when alignment unavailable.
+    verse_token_tags_map: dict[
+        tuple[int | None, int | None],
+        "list[list[list[str]]] | None"
+    ] = {}
+    if chapter_morph is not None:
+        for v_key, idx_line_pairs in verse_lines_map.items():
+            _verse_num = v_key[1]
+            if _verse_num is None:
+                verse_token_tags_map[v_key] = None
+                continue
+            ortho_tags = chapter_morph.get(_verse_num)
+            if ortho_tags is None:
+                verse_token_tags_map[v_key] = None
+                continue
+            # align_verse_tokens_to_tags expects the content lines only (no ref lines)
+            content_only = [ln for (_, ln) in idx_line_pairs]
+            aligned = MA.align_verse_tokens_to_tags(content_only, ortho_tags)
+            verse_token_tags_map[v_key] = aligned  # may be None on mismatch
 
     for i, line in enumerate(lines):
         if is_skippable(line):
@@ -289,8 +333,25 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
 
         token = toks[0]
 
-        # Check if token is in the standalone-permitted lexicon
-        if is_standalone_permitted(token, line):
+        # Resolve tag_list for this token within its verse.
+        # The line's position within the verse determines which token-tag-list to use.
+        tag_list: "list[str] | None" = None
+        verse_token_tags = verse_token_tags_map.get(v_ctx)
+        if verse_token_tags is not None:
+            # Find this line's index within its verse content lines.
+            verse_idx_lines = verse_lines_map.get(v_ctx, [])
+            line_pos_in_verse = next(
+                (pos for pos, (li, _) in enumerate(verse_idx_lines) if li == i),
+                None,
+            )
+            if line_pos_in_verse is not None and line_pos_in_verse < len(verse_token_tags):
+                line_tok_tags = verse_token_tags[line_pos_in_verse]
+                # Single-token orphan: tok_idx == 0
+                if line_tok_tags:
+                    tag_list = line_tok_tags[0]  # list[str] for this token's ortho components
+
+        # Check if token is in the standalone-permitted lexicon (tag-aware)
+        if is_standalone_permitted(token, line, tag_list=tag_list):
             continue
 
         # Emit REVIEW-REQUIRED finding
