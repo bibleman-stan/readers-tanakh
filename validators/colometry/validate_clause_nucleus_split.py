@@ -91,6 +91,8 @@ V2_DIR = REPO_ROOT / "data" / "text-files" / "v2" / "he"
 # Make _shared importable when this script is run as __main__.
 sys.path.insert(0, str(REPO_ROOT / "validators"))
 from _shared.poetic_register import is_poetic_register  # noqa: E402
+from _shared import morph_alignment as MA  # noqa: E402
+from _shared import morphology as M  # noqa: E402
 
 # ---------------------------------------------------------------------------
 # Hebrew Unicode helpers
@@ -373,10 +375,38 @@ def looks_like_finite_verb(bare: str) -> bool:
 
 
 def line_has_finite_verb(line: str) -> bool:
-    """True if any content token on `line` looks like a finite verb."""
+    """True if any content token on `line` looks like a finite verb (skel-heuristic only).
+
+    Used by sub-functions that lack per-line tag context (e.g., vocative guard,
+    participle-complement look-ahead).  The main scan loop uses
+    `line_has_finite_verb_tagged` instead.
+    """
     for tok in content_tokens(line):
         bare = strip_points(tok)
         if looks_like_finite_verb(bare):
+            return True
+    return False
+
+
+def line_has_finite_verb_tagged(
+    line: str, token_tags: "list[list[str]] | None" = None
+) -> bool:
+    """Tag-aware finite-verb test for a full line.
+
+    If `token_tags` is provided (parallel to `content_tokens(line)`), each
+    token is tested via the TAHOT-tag primary path in M.is_finite_verb_token.
+    Falls back to skel-heuristic when token_tags is None or alignment is off.
+
+    `token_tags` is the per-token list from MA.align_verse_tokens_to_tags:
+    a list[list[str]] where index i holds the ortho-morph tag list for the
+    i-th content token on the line.
+    """
+    toks = content_tokens(line)
+    for tok_idx, tok in enumerate(toks):
+        tag_list: "list[str] | None" = None
+        if token_tags is not None and tok_idx < len(token_tags):
+            tag_list = token_tags[tok_idx]
+        if M.is_finite_verb_token(tok, tag_list=tag_list):
             return True
     return False
 
@@ -1000,6 +1030,30 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
         for pos, idx in enumerate(indices):
             line_to_verse[idx] = (ch, vs, pos, indices)
 
+    # ── TAHOT morph alignment ────────────────────────────────────────────
+    # Load once per chapter file; None when v0/morph is missing (graceful fallback).
+    chapter_morph = MA.load_chapter_morph(path)
+
+    # Build per-line-index token-tag mapping:
+    #   line_token_tags[line_idx] = list[list[str]]  (one entry per content token)
+    # Used by line_has_finite_verb_tagged to pass tag_list per token.
+    line_token_tags: dict[int, list[list[str]]] = {}
+    if chapter_morph is not None:
+        for _ch, vs, indices in verses:
+            if vs is None:
+                continue
+            ortho_tags = chapter_morph.get(vs)
+            if ortho_tags is None:
+                continue
+            verse_lines = [lines[idx] for idx in indices]
+            aligned = MA.align_verse_tokens_to_tags(verse_lines, ortho_tags)
+            if aligned is None:
+                continue  # alignment mismatch — leave these lines without tags
+            for pos, idx in enumerate(indices):
+                if pos < len(aligned):
+                    line_token_tags[idx] = aligned[pos]
+    # ─────────────────────────────────────────────────────────────────────
+
     for i, line in enumerate(lines):
         if is_skippable(line):
             continue
@@ -1034,8 +1088,12 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
             continue
 
         # --- Guard 9: both lines have a finite verb anywhere ---
-        prior_has_verb = line_has_finite_verb(line)
-        next_has_verb = line_has_finite_verb(next_line)
+        prior_has_verb = line_has_finite_verb_tagged(
+            line, token_tags=line_token_tags.get(i)
+        )
+        next_has_verb = line_has_finite_verb_tagged(
+            next_line, token_tags=line_token_tags.get(next_idx)
+        )
         if prior_has_verb and next_has_verb:
             continue
 
