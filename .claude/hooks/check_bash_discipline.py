@@ -18,10 +18,17 @@ Anti-patterns blocked:
   3. git status / git diff without summary flags — per §H3 verbose-by-default
      ingestion: default to --shortstat / --numstat / --stat / --porcelain /
      --name-only, or pipe to wc/head/grep for a count.
+  4. Cascade invocations without recent adversarial-audit evidence in the
+     transcript — per §A3 Step 0: before any non-trivial implementation,
+     dispatch ≥2 parallel Agent calls (one message, multiple Agent
+     tool_use blocks) OR declare 'Audit-skippable: <reason>'. Hook walks
+     recent transcript turns and counts Agent dispatches; if <2 found and
+     no '# audit-skippable:' prefix, the cascade is refused.
 
 Override mechanisms (visible in JSONL trace for later audit):
-  - Universal:  prefix command body with '# disciplined-allow: <reason>'
-  - Cascade-specific: prefix command body with '# split-justified: <reason>'
+  - Universal:        prefix command body with '# disciplined-allow: <reason>'
+  - Cascade-parallel: prefix command body with '# split-justified: <reason>'
+  - Audit-skippable:  prefix command body with '# audit-skippable: <reason>'
 
 Output protocol:
   Block: exit code 2, message on stderr (Claude Code surfaces this to the
@@ -39,10 +46,63 @@ from __future__ import annotations
 import json
 import re
 import sys
+from pathlib import Path
 
 
-def _violations(command: str) -> list[str]:
+def _count_recent_agent_dispatches(transcript_path: str, lookback_lines: int = 200) -> int:
+    """Count Agent tool_use entries in the most recent N JSONL transcript lines.
+
+    Walks the tail of the JSONL (transcripts grow large; we only care about
+    the recent window). Counts every assistant message's tool_use blocks
+    where name == "Agent". Returns 0 if path missing / unreadable / malformed
+    so a transcript-access failure does not falsely block the gate.
+    """
+    if not transcript_path:
+        return 0
+    p = Path(transcript_path)
+    if not p.exists():
+        return 0
+    try:
+        with p.open("rb") as fh:
+            fh.seek(0, 2)
+            size = fh.tell()
+            tail_size = min(size, 5_000_000)  # ~5MB tail
+            fh.seek(size - tail_size)
+            tail_bytes = fh.read()
+        # Decode tolerantly; partial leading line is fine — we'll skip it on parse failure.
+        tail_text = tail_bytes.decode("utf-8", errors="ignore")
+    except Exception:
+        return 0
+    lines = tail_text.splitlines()[-lookback_lines:]
+    count = 0
+    for line in lines:
+        if not line.strip():
+            continue
+        try:
+            entry = json.loads(line)
+        except Exception:
+            continue
+        if entry.get("type") != "assistant":
+            continue
+        msg = entry.get("message")
+        if not isinstance(msg, dict):
+            continue
+        content = msg.get("content")
+        if not isinstance(content, list):
+            continue
+        for block in content:
+            if (
+                isinstance(block, dict)
+                and block.get("type") == "tool_use"
+                and block.get("name") == "Agent"
+            ):
+                count += 1
+    return count
+
+
+def _violations(command: str, payload: dict | None = None) -> list[str]:
     """Return list of detected anti-pattern violations."""
+    payload = payload or {}
     violations: list[str] = []
 
     # --- Pattern 1: multi-line Python heredoc -------------------------------
@@ -92,7 +152,8 @@ def _violations(command: str) -> list[str]:
     CASCADE_RE = re.compile(
         r"(apply_specs|refresh_book|apply_validators)\.py\b[^\n]*--all-books"
     )
-    if CASCADE_RE.search(command) and "# split-justified:" not in command:
+    cascade_match = CASCADE_RE.search(command)
+    if cascade_match and "# split-justified:" not in command:
         violations.append(
             "[A2] Cascade invocation '--all-books' on main thread. Per "
             "handoffs/14-operational-protocols.md §A2 (mandatory two-phase pattern): "
@@ -103,6 +164,29 @@ def _violations(command: str) -> list[str]:
             "message, one per cluster. To override (true initial-exploration single "
             "pass only), prefix command with '# split-justified: <reason>'."
         )
+
+    # --- Pattern 4 (A3 Step 0): --all-books without recent audit evidence ---
+    # Cascade invocations are batch-boundary signals — the moment substantive
+    # implementations get applied corpus-wide. Per §A3 Step 0, these MUST be
+    # preceded by adversarial-audit dispatches (≥2 in recent transcript window).
+    if cascade_match and "# audit-skippable:" not in command:
+        n_dispatches = _count_recent_agent_dispatches(payload.get("transcript_path", ""))
+        if n_dispatches < 2:
+            violations.append(
+                f"[A3-Step0] Cascade invocation '--all-books' with insufficient "
+                f"adversarial-audit evidence in recent transcript (found "
+                f"{n_dispatches} Agent dispatch(es); need ≥2). Per "
+                f"handoffs/14-operational-protocols.md §A3 Step 0: before any "
+                f"non-trivial implementation, the FIRST tool call in your response "
+                f"must be either (a) parallel Agent dispatches for adversarial "
+                f"audit (one message, multiple Agent tool_use blocks), OR (b) a "
+                f"one-line declaration 'Audit-skippable: <reason>' citing a "
+                f"recognized trivial class (port-of-validated, mechanical-ingest, "
+                f"test/fixture, runner/glue, scratch). ACTION: (1) abort, dispatch "
+                f"≥2 parallel Agent calls in one message, let their findings inform "
+                f"the implementation, then re-run; OR (2) prefix command with "
+                f"'# audit-skippable: <reason>'."
+            )
 
     # --- Pattern 3: git status/diff without summary flags ------------------
     GIT_VERBOSE_RE = re.compile(r"\bgit\s+(?:status|diff)\b")
@@ -156,7 +240,7 @@ def main() -> int:
     if "# disciplined-allow:" in command:
         return 0
 
-    violations = _violations(command)
+    violations = _violations(command, payload)
     if not violations:
         return 0
 

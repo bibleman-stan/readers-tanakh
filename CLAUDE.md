@@ -226,6 +226,22 @@ PYTHONIOENCODING=utf-8 py -3 validators/run_all.py --update-baseline # capture n
 
 ---
 
+## Pre-implementation Adversarial-Audit Discipline (Step 0)
+
+**Before any non-trivial implementation** (new validator with classification logic, new spec, new helper in `validators/_shared/`, new mechanism, new canon rule), the **FIRST tool call** in your response must be either:
+
+(a) **Parallel Agent dispatches** for adversarial evaluation — at least 2 dimensions, in one message with multiple Agent tool_use blocks. Audit findings inform the design BEFORE any Edit/Write of substantive implementation.
+
+(b) **One-line acknowledgment** `Audit-skippable: <reason>` citing a recognized trivial class — port of already-validated sibling code (with file:line ref), mechanical ingestion-script change, test/fixture, orchestrator/runner/glue with no judgment, scratch diagnostic.
+
+**Mechanically gated** by `.claude/hooks/check_bash_discipline.py` at batch-boundary signals (`apply_specs.py --all-books`, `apply_validators.py --all-books`, `refresh_book.py --all-books`). The hook walks recent transcript turns; if zero or one Agent dispatch found in the lookback AND no `# audit-skippable:` override on the command, the cascade is refused.
+
+**Overrides** (visible in JSONL trace for later audit, use sparingly): prefix command body with `# audit-skippable: <reason>` (A3-Step0-specific) or `# disciplined-allow: <reason>` (universal).
+
+**Why this exists separately from the canon-extension gate below:** the canon-extension gate fires on commits to `private/01-method/colometry-canon.md` — too narrow. Stan repeatedly observed Claude jumping straight to implementation without auditing proposed approaches first (knowing-without-doing pattern across many feedback memories). Step 0 closes the proposal-time gap; the canon-extension gate catches the surviving artifact-time slip. See `handoffs/14-operational-protocols.md` §A3 for the full process and trivial-class definitions.
+
+---
+
 ## Pre-commit Adversarial-Audit Discipline
 
 **Before any commit that modifies `private/01-method/colometry-canon.md`, check whether the change matches a mandatory-audit trigger per canon §7.** The 12 triggers are listed in canon §7; re-read them when uncertain. If the change matches any trigger, audit evidence (hostile-agent dispatch + verdict + application) must be present in the commit message or the canon §8 Update Log entry.

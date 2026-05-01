@@ -49,6 +49,27 @@ When the task is "find and fix," each cluster agent should find AND fix in its s
 
 ### A3. When Proposing Rule or Helper Changes
 
+#### A3 Step 0 — Audit-evidence gate (mechanically enforced)
+
+Before any non-trivial implementation, the **FIRST tool call** in your response must be either:
+
+- **(a) Parallel Agent dispatches for adversarial audit** — at least 2 dimensions, in **one message** with multiple Agent tool_use blocks. The audits must complete and inform the design before any Edit/Write of the substantive implementation. The audit findings are the design input, not a post-hoc check.
+
+- **(b) Explicit acknowledgment of audit-skip**: a one-line declaration `Audit-skippable: <reason>` citing a recognized trivial class:
+  - **Port of already-validated sibling code** (with file:line reference to the source — e.g. "ported from `readers-bofm/validators/colometry/validate_doc_pointers.py`")
+  - **Mechanical ingestion-script change** (no classification logic; just plumbing data through layers)
+  - **Test or fixture file** (testing existing logic, not introducing new logic)
+  - **Orchestrator / runner / glue** with no judgment (just calls other things in sequence)
+  - **Scratch diagnostic** in `C:/tmp/`
+
+**Mechanically gated** by `.claude/hooks/check_bash_discipline.py` at batch-boundary signals (`apply_specs --all-books`, `apply_validators --all-books`, `refresh_book --all-books`). The hook walks the recent transcript turns; if **<2 Agent dispatches** are found in the lookback window AND no `# audit-skippable:` prefix is on the command, the cascade is refused. Override mechanisms (visible in the JSONL trace for later audit):
+
+- `# disciplined-allow: <reason>` — universal override (use sparingly)
+- `# split-justified: <reason>` — A2-specific (cascade-on-main-thread permitted for true initial-exploration single pass)
+- `# audit-skippable: <reason>` — A3-Step0-specific (audit not required because change is in a trivial class above)
+
+#### A3 process (what to dispatch in case (a) above)
+
 Before implementing a new colometric spec, helper, or validator:
 
 1. Generate **multiple candidate approaches** (3–5 angles), not just the first instinct
@@ -62,6 +83,8 @@ Before implementing a new colometric spec, helper, or validator:
 5. Only implement the top-ranked approach (or top 2 if complementary)
 
 This prevents building the wrong solution and having to undo it. The "I'll just try it and see" approach is exactly the pattern Stan rejected on 2026-04-30 ("i kind of expect better from you - you're a coder par excellence; think through the possible code loop issues, use some adversarial audits if need be (in parallel, obviously); surely 'throw script out there and see what happens' can't be the smartest approach?"). See `feedback_round_wheel_before_rolling.md`.
+
+**Why Step 0 has both procedural and mechanical layers:** the procedural layer (this section + CLAUDE.md hot-path) primes the cognitive default ("audit before propose"); the mechanical layer (the hook) catches drift when the cognitive default fails — exactly the same pattern used for canon-extension audits (CLAUDE.md "Pre-commit Adversarial-Audit Discipline" + `validators/hooks/commit-msg`). Directives without gates become decoration; gates without directives are friction. Both are required.
 
 ### A4. When Running Adversarial Agents
 
