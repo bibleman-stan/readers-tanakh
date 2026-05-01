@@ -1484,6 +1484,113 @@ def closed_list_clause_boundary_split_positions(line: str) -> list[int]:
     return positions
 
 
+def multi_wayyiqtol_clause_split_positions(
+    line: str,
+    tag_lists: list[list[str]] | None = None,
+) -> list[int]:
+    """S4 trigger function: return wayyiqtol token positions where a SPLIT
+    should be inserted to separate ≥2 wayyiqtols on a single line into
+    distinct clause-headed cola.
+
+    When `tag_lists` is provided (one tag-list per orthographic word in the
+    line), the TAHOT tag is the authoritative wayyiqtol classifier — the
+    skel-heuristic conflates וְאֵת (and-DO-marker, "ואת") with verb forms
+    because the skel starts with vav + א (a YIQTOL_PREFIX letter). Without
+    tags, falls back to skel.
+
+    Trigger: line carries ≥2 wayyiqtol verbs.
+    Split point: before every wayyiqtol that is not line-initial.
+
+    Suppressions (audit-B 2026-05-01):
+      - וַיְהִי temporal-frame opener: line starts with וַיְהִי (subordinating
+        narrative frame, not a coordinate clause).
+      - Hendiadys / bonded sequence: ALL tokens on the line are wayyiqtols
+        (e.g., וַיָּקָם וַיֵּלֶךְ — bonded action pair sharing semantic ATU).
+      - Shared-DO 3-token bonded pair: line is exactly W₁ W₂ X (e.g.,
+        וַיְגַלַּח וַיְחַלֵּף שִׂמְלֹתָיו — DO attaches to the second verb;
+        these are bonded action pairs, not separate ATUs).
+
+    Architectural narrowness ladder:
+      - S3 closed-list (Pattern 1-3): tightest, was needed because broad
+        mid-line-wayyiqtol caused RUNAWAY at pass 25 in initial S3 trial.
+      - S4 (this fn): mid-tightness — count-based with explicit suppressions.
+      - wayyiqtol_mid_line_split_positions (legacy): broadest, retained for
+        callers that explicitly want the unrestricted form.
+
+    Examples:
+      Gen 50:1 line 3 (post-cascade):  עַל־פְּנֵי אָבִיו וַיֵּבְךְּ עָלָיו וַיִּשַּׁק־לוֹ׃
+        wayyiqtol positions: [2, 4]
+        non-initial split positions: [2, 4]
+        result: 3 cola — [PP], [W-A + dep], [W-B + maqpef-PP]
+      Gen 41:14 line:                  וַיְגַלַּח וַיְחַלֵּף שִׂמְלֹתָיו
+        wayyiqtol positions: [0, 1] (3-token bonded pair)
+        suppressed: shared-DO bonded-pair guard
+        result: [] (no split)
+    """
+    toks = tokens(line)
+    if len(toks) < 3:
+        return []  # too short for the class
+
+    # Find all wayyiqtols. Tag-driven primary path (handles וְאֵת = "and-DO-
+    # marker" correctly as a particle, not a phantom wayyiqtol — the skel
+    # path can't disambiguate "ואת" without a hard-coded exclusion).
+    from . import morph_tags as MT  # local import to avoid cycles
+    wayy_positions: list[int] = []
+    for i, t in enumerate(toks):
+        # Try tag-driven first
+        if tag_lists is not None and i < len(tag_lists) and tag_lists[i]:
+            if any(MT.is_wayyiqtol(tag) for tag in tag_lists[i]):
+                wayy_positions.append(i)
+            continue
+        # Skel fallback
+        s = skel(t)
+        if (
+            len(s) >= 3
+            and s[0] == "ו"
+            and s[1] in YIQTOL_PREFIXES
+        ):
+            inner = s[1:]
+            if inner in YIQTOL_KNOWN_NOUNS:
+                continue  # vav+noun, not wayyiqtol
+            wayy_positions.append(i)
+
+    if len(wayy_positions) < 2:
+        return []  # need ≥2 wayyiqtols
+
+    # Suppression: וַיְהִי temporal-frame opener
+    if wayy_positions[0] == 0 and skel(toks[0]) == "ויהי":
+        return []
+
+    # Suppression: hendiadys / bonded sequence — every token is a wayyiqtol
+    if len(wayy_positions) == len(toks):
+        return []
+
+    # Suppression: shared-DO 3-token bonded pair (W₁ W₂ X)
+    if len(toks) == 3 and wayy_positions == [0, 1]:
+        return []
+
+    # Suppression: any wayyiqtol is BARE (no dependent before the next
+    # wayyiqtol AND no maqqef-bound complement). Splitting would leave a
+    # stranded bare wayyiqtol that some M-spec then re-absorbs → oscillation.
+    # Examples this catches:
+    #   Gen 22:3 line 4: וַיָּקָם וַיֵּלֶךְ אֶל־הַמָּקוֹם... — וַיָּקָם is bare
+    #     (no token between it and וַיֵּלֶךְ, no maqqef); hendiadys pair.
+    #   Gen 12:9 (and many): וַיֵּלֶךְ וַיִּסַּע — bonded movement pair.
+    #
+    # Counter-example NOT suppressed:
+    #   Gen 50:1 line 3: ...וַיֵּבְךְּ עָלָיו וַיִּשַּׁק־לוֹ׃ — וַיֵּבְךְּ has
+    #     dependent (עָלָיו); וַיִּשַּׁק־לוֹ is maqqef-bound (self-contained).
+    for i, pos in enumerate(wayy_positions):
+        next_wayy = wayy_positions[i + 1] if i + 1 < len(wayy_positions) else len(toks)
+        dep_count = next_wayy - pos - 1
+        has_maqqef_complement = MAQQEF in toks[pos]
+        if dep_count == 0 and not has_maqqef_complement:
+            return []
+
+    # Split before each non-initial wayyiqtol
+    return [p for p in wayy_positions if p > 0]
+
+
 def coordinated_np_split_positions(line: str) -> list[int]:
     """Return token indices in `line` where a SPLIT should be inserted to break
     a coordinated-NP enumeration into one-NP-per-line. Returns empty list if
@@ -1973,3 +2080,47 @@ def is_m2_pp_verb_token(token: str) -> bool:
 def m2_pp_verb_allowed_preps(token: str) -> tuple[str, ...]:
     """Return allowed prep skeletons for the given M2 verb token, or empty tuple."""
     return M2_PP_VERB_SKELETONS.get(skel(token), ())
+
+
+# ─── M2.7: motion-locus verbs taking obligatory locus PP ───────────
+#
+# Distinct from M2_PP_VERB_SKELETONS (speech verbs taking RECIPIENT PP).
+# These are MOTION/POSITION verbs whose meaning requires a LOCUS PP
+# (you can't "fall" without specifying where; you can't "be placed"
+# without specifying where). Conservative closed list — start with
+# נָפַל wayyiqtol forms only (Gen 50:1 prototype). Expand iteratively
+# after cascade-FP audit.
+#
+# Critical distinction from "optional locative" verbs (ישב / עמד / הלך):
+# the verb here is INCOMPLETE without the PP, not just enriched by it.
+# Audit basis: prototype Gen 50:1 (וַיִּפֹּל יוֹסֵף + עַל־פְּנֵי). Sweep TBD.
+MOTION_LOCUS_VERB_SKELETONS: dict[str, tuple[str, ...]] = {
+    # נָפַל + עַל / אֶל (fall onto / fall toward — obligatory locus)
+    "ויפל":    ("על", "אל"),
+    "ויפלו":   ("על", "אל"),
+    "תפל":     ("על", "אל"),
+    "תפלי":    ("על", "אל"),
+    "נפל":     ("על", "אל"),
+    "נפלו":    ("על", "אל"),
+    "נפלה":    ("על", "אל"),
+    # Future expansion candidates (not yet activated — need FP audit):
+    #   נָתַן + עַל / ב / לפני (place onto)
+    #   שָׂם / יָשֶׂם + עַל / ב / לפני (place upon)
+    #   בּוֹא + אֶל (when transitive arrival; intransitive "come" is too broad)
+}
+
+
+def is_motion_locus_verb_token(token: str, tag_list: list[str] | None = None) -> bool:
+    """True if token is a motion-locus verb requiring obligatory PP-complement
+    of LOCATION (as distinct from speech-verbs taking recipient PP, which is
+    the M2_PP_VERB_SKELETONS class).
+
+    Used by spec-runner _check_morphology('motion_locus_verb') hook to gate
+    the m2_7 motion-verb-locus-PP merge spec.
+    """
+    return skel(token) in MOTION_LOCUS_VERB_SKELETONS
+
+
+def motion_locus_verb_allowed_preps(token: str) -> tuple[str, ...]:
+    """Return allowed locus-prep skeletons for the given motion verb, or empty tuple."""
+    return MOTION_LOCUS_VERB_SKELETONS.get(skel(token), ())

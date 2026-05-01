@@ -207,6 +207,8 @@ def _check_morphology(tok: str, morph: str, tag_list: Optional[list[str]] = None
         return M.skel(tok) in M.VOCATIVE_PARTICLES
     if morph == "m2_pp_verb":
         return M.is_m2_pp_verb_token(tok)
+    if morph == "motion_locus_verb":
+        return M.is_motion_locus_verb_token(tok, tag_list=tag_list)
     if morph == "do_marker":
         return M.is_do_marker_token(tok, tag_list=tag_list)
     if morph == "bare_do_marker":
@@ -432,15 +434,30 @@ def _g_next_wayyiqtol(l_n, l_n1, ctx):
     """Fire (block emission) if line N+1's first token is a wayyiqtol.
 
     Use case: prevents merge specs from re-absorbing wayyiqtol-headed lines
-    that S3 has just split out from cross-clause material. Symmetric
+    that S3/S4 has just split out from cross-clause material. Symmetric
     counterpart to next_line_is_vav_coord_pp for the S3 split direction.
 
-    Implementation: skel-based detection (broad). The niqqud-aware
+    Implementation: TAHOT-tag-driven primary path (correctly classifies
+    forms like וָאֶתֶּן where the skel "ואתן" overlaps with the 2fp pronoun
+    `אתן` in YIQTOL_KNOWN_NOUNS, causing skel-only detection to false-
+    negative). Skel fallback for tokens without tags. The niqqud-aware
     is_wayyiqtol_token misses dagesh-omitting wayyiqtols like וַיְהִי
-    (the most common wayyiqtol form), so the guard uses the broader skel
-    check that mirrors S3's _is_wayyiqtol_skel_at trigger (vav + YIQTOL
-    prefix consonant + length-4-floor + YIQTOL_KNOWN_NOUNS exclusion).
+    (the most common wayyiqtol form), so the skel fallback is broader
+    than is_wayyiqtol_token and mirrors S3's _is_wayyiqtol_skel_at trigger
+    (vav + YIQTOL prefix consonant + length-4-floor + YIQTOL_KNOWN_NOUNS
+    exclusion).
     """
+    # Tag-driven path: check FIRST tag of FIRST token of l_n1
+    n1_tag_lists = ctx.get("line_n1_token_tags") or []
+    if n1_tag_lists and n1_tag_lists[0]:
+        from . import morph_tags as MT
+        if any(MT.is_wayyiqtol(tag) for tag in n1_tag_lists[0]):
+            return True
+        # If we have tags and none are wayyiqtol, trust the tag (don't fall back).
+        # The TAHOT tag is authoritative; skel-fallback would re-introduce the
+        # very class of FNs this fix exists to remove.
+        return False
+    # Skel fallback (no tags available)
     first = M.first_content_token(l_n1)
     if not first:
         return False
@@ -518,6 +535,40 @@ def _g_m2_prep(l_n, l_n1, ctx):
     # Bound-prep single-letter prefix match (e.g., "ל" from "לְ")
     if prep_skel and prep_skel[0] in allowed:
         return False
+    return True  # no match → block
+
+
+@_register_guard("motion_locus_prep_mismatch")
+def _g_motion_locus_prep(l_n, l_n1, ctx):
+    """Block emission when next-line prep is not in the motion-locus verb's
+    allowed locus-prep set.
+
+    Fires (True = block) when the FIRST token of l_n is a motion-locus verb
+    but the first prep of l_n1 is not among the locus prepositions the verb
+    governs (per MOTION_LOCUS_VERB_SKELETONS). Symmetric to m2_pp_prep_mismatch
+    but anchored to FIRST token of l_n (motion wayyiqtols are clause-initial)
+    rather than last token (which may be the subject NP in V+S→PP shapes
+    like Gen 50:1 וַיִּפֹּל יוֹסֵף).
+    """
+    first = M.first_content_token(l_n)
+    if not first:
+        return True
+    allowed = M.motion_locus_verb_allowed_preps(first)
+    if not allowed:
+        return True  # not a motion-locus verb → block
+    first_n1 = M.first_content_token(l_n1)
+    if not first_n1:
+        return True
+    # Maqqef-joined prep+complement (e.g., עַל־פְּנֵי): test the head sub-token
+    if M.MAQQEF in first_n1:
+        head = first_n1.split(M.MAQQEF, 1)[0]
+        prep_skel = M.skel(head)
+    else:
+        prep_skel = M.skel(first_n1)
+    if prep_skel in allowed:
+        return False  # match → don't block
+    if prep_skel and prep_skel[0] in allowed:
+        return False  # bound-prep prefix match
     return True  # no match → block
 
 
@@ -757,6 +808,14 @@ def _evaluate_line_trigger(spec: Spec, line: str, ctx: dict[str, Any]) -> list[i
     # whose immediate prior token matches one of S3's closed-list closer patterns
     if line_anywhere.get("closed_list_clause_boundary_wayyiqtol"):
         return M.closed_list_clause_boundary_split_positions(line)
+
+    # multi_wayyiqtol_count: true — split before each non-initial wayyiqtol
+    # when the line carries ≥2 wayyiqtols (S4 — see audit-B 2026-05-01).
+    # Suppressions encoded in the helper (וַיְהִי frame, hendiadys, shared-DO pair).
+    # Tag-aware: pass per-token TAHOT tag-lists so the helper distinguishes
+    # וְאֵת (and-DO-marker, particle) from genuine wayyiqtols.
+    if line_anywhere.get("multi_wayyiqtol_count"):
+        return M.multi_wayyiqtol_clause_split_positions(line, ctx.get("line_n_token_tags"))
 
     return []
 

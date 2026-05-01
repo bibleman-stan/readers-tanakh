@@ -197,6 +197,38 @@ def is_finite_verb(tag: str) -> bool:
     return aspect in _FINITE_VERB_ASPECTS
 
 
+def is_wayyiqtol(tag: str) -> bool:
+    """True if tag head is a wayyiqtol verb form specifically (V + stem + 'w').
+
+    Wayyiqtol = consecutive imperfect, the narrative-spine verb form of
+    biblical Hebrew prose. Aspect letter at index 2 == 'w'.
+
+    Distinct from is_finite_verb (which is True for ALL finite aspects);
+    callers needing wayyiqtol-specifically (e.g. multi_wayyiqtol_clause_split)
+    should use this rather than skel-heuristic that conflates וְאֵת
+    (and-DO-marker) and similar non-verb forms with V+vowel+...
+
+    >>> is_wayyiqtol('Hc/Vqw3ms')      # qal wayyiqtol — yes
+    True
+    >>> is_wayyiqtol('Hc/Vhw3ms')      # hiphil wayyiqtol — yes
+    True
+    >>> is_wayyiqtol('HVqp3ms')        # qal perfect — no
+    False
+    >>> is_wayyiqtol('HVqi3ms')        # qal imperfect — no
+    False
+    >>> is_wayyiqtol('Hc/To')          # conjunction + DO-marker (וְאֵת) — no
+    False
+    >>> is_wayyiqtol('HTo')            # bare DO-marker (אֵת) — no
+    False
+    """
+    head = head_morpheme(tag)
+    if not head or head[0] != "V":
+        return False
+    if len(head) < 3:
+        return False
+    return head[2] == "w"
+
+
 def is_construct_state(tag: str) -> bool:
     """True if tag head is a noun in CONSTRUCT state (Nc*c, Np*c).
 

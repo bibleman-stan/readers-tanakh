@@ -1,0 +1,72 @@
+name: m2_7_motion_verb_locus_pp
+rule: M2
+subcase: motion_verb_locus_pp_completion
+severity: STRONG-MERGE-CANDIDATE
+description: |
+  Motion-verb + obligatory locus PP-complement. Line N starts with a motion
+  verb whose meaning REQUIRES a locus PP (you can't "fall" without specifying
+  where); line N+1 starts with the governed locus preposition. Per WO §10.2.1:
+  obligatory PP-arguments are part of the clause nucleus and cannot be
+  separated from their governing verb.
+
+  Distinct from m2_6 (verb-subject + recipient PP for SPEECH verbs):
+    - m2_6 targets ANY finite verb on line N + recipient PP of speech verbs
+      (שמע ל / נשא אל / קרא אל etc.)
+    - this spec targets clause-INITIAL motion-locus verbs + locus PP, anchored
+      on FIRST token of line N (so V+S→PP shapes like Gen 50:1 are caught,
+      where m2_6's last_token check finds the subject)
+
+  Closed verb-class lexicon (MOTION_LOCUS_VERB_SKELETONS):
+    - נָפַל wayyiqtol forms + עַל / אֶל (fall onto / fall toward)
+
+  Future expansion candidates (commented out in lexicon, awaiting FP audit):
+    נָתַן + עַל / ב, שָׂם + עַל / ב, בּוֹא + אֶל
+
+  Example (Gen 50:1):
+    Before, line N:    וַיִּפֹּל יוֹסֵף
+            line N+1:  עַל־פְּנֵי אָבִיו
+    After:             וַיִּפֹּל יוֹסֵף עַל־פְּנֵי אָבִיו
+    Motion verb is FIRST token of line N (וַיִּפֹּל); subject (יוֹסֵף) is
+    second token. m2_6 cannot fire here because its prep-mismatch guard
+    inspects last_content_token (which is the subject NP). This spec uses
+    motion_locus_prep_mismatch which inspects FIRST token.
+
+  Architectural note (2026-05-01): designed after parallel diagnostic audit
+  (Gen 50:1 in pending.md). Initial lexicon is intentionally narrow (נפל
+  only) to validate the architecture before widening; canon §7.4 ≥80% TP
+  threshold for adoption-tier severity will gate further verb-class
+  additions.
+
+trigger:
+  line_n_first_token:
+    morphology: motion_locus_verb
+  line_n1_first_token:
+    morphology: prep
+  line_n1_anywhere:
+    has_finite_verb: false
+  combined_max_prosodic_words: 8
+
+guards:
+  - motion_locus_prep_mismatch
+  - poetic_register
+  - both_lines_have_finite_verb     # if line N+1 has its own finite verb,
+                                     # treat as separate clauses (e.g., when
+                                     # the BREAK spec hasn't yet split a
+                                     # multi-wayyiqtol line)
+  - prev_line_incomplete            # ensure line N is the new clause head
+  # Intentionally NOT next_line_is_verb_initial:
+  # m2_6 carries this guard because its broad trigger (any finite verb on
+  # line N + any prep on line N+1) admits the Gen 1:27-style pattern where
+  # line N+1 is a fronted PP for the lookahead clause. m2_7 is much tighter:
+  # the motion-verb closed list AND the prep-mismatch guard restrict the
+  # case to verbs whose locus PP is grammatically obligatory. After S4
+  # splits a multi-wayyiqtol line into separate cola, the lookahead at
+  # Gen 50:1 IS a wayyiqtol — the guard would fire and block correctly-
+  # licensed motion-verb merges.
+  - next_line_is_vav_coord_pp       # block re-absorbing post-S1-split coord-PP
+  - next_line_is_vav_coord_np       # block re-absorbing post-S2-split coord-NP
+  - next_line_is_wayyiqtol          # block re-absorbing post-S3/S4-split
+                                     # wayyiqtol-headed lines
+
+annotation_template: "Motion verb + obligatory locus PP-complement merge ({pwc} prosodic words)"
+suggested_action: MERGE
