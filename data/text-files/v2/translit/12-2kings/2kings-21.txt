@@ -40,12 +40,10 @@ asim | et | shemi | le'olam
 velo | osif | lehanid | regel | Yisra'el | min | ha'adamah
 asher | natati | la'avotam
 rak | im | yishmeru | la'asot | kekhol | asher | tzivitim
-ulekhol | hatorah | asher | tzivah | otam
-avdi | Mosheh
+ulekhol | hatorah | asher | tzivah | otam | avdi | Mosheh
 
 21:9
-velo
-shame'u
+velo | shame'u
 vaiyat'em | Menasheh | la'asot | et | hara | min | hagoyim
 asher | hishmid | Yahweh | mipenei | benei | Yisra'el
 
@@ -61,8 +59,7 @@ begilulav
 lakhen | koh | amar | Yahweh | elohei | Yisra'el
 hini | mevi | ra'ah | al | Yerushalim
 Vihudah | asher | kol | shome'ah
-titzalnah
-shetei | azenav
+titzalnah | shetei | azenav
 
 21:13
 venatiti | al | Yerushalim | et | kav | Shomeron | ve'et | mishkolet
@@ -113,8 +110,7 @@ vaiya'avod | et | hagilulim | asher | avad | aviv
 vaiyishtachu | lahem
 
 21:22
-vaiya'azo | et | Yahweh
-elohei | avotav
+vaiya'azo | et | Yahweh | elohei | avotav
 velo | halakh | bederekh | Yahweh
 
 21:23

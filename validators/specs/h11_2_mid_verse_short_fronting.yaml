@@ -27,6 +27,9 @@ guards:
   - poetic_register
   - prev_line_incomplete   # only genuine fronting — prev clause must be complete
   - next_line_is_wayehi_ken   # ויהי־כן is a discourse-formula closer (S3 pattern 1), not a main clause
+  - next_line_is_vav_coord_pp     # block re-absorbing post-S1-split coord-PP enumeration members
+  - next_line_is_vav_coord_np     # block re-absorbing post-S2-split coord-NP enumeration members
+  - next_line_is_wayyiqtol     # block re-absorbing post-S3-split wayyiqtol-headed lines
 
 annotation_template: "Mid-verse fronting paradox: short PP + main clause (combined {pwc} prosodic words)"
 suggested_action: MERGE

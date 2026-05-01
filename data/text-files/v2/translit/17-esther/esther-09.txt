@@ -2,8 +2,7 @@
 uvishneim | asar | chodesh | hu | chodesh | Adar | bishloshah | asar | yom | bo
 asher | higia | devar | hamelekh | vedato | lehe'asot
 baiyom | asher | siberu | oyevei | haiyehudim | lishlot | bahem
-venahafokh | hu | asher | yishletu | haiyehudim | hemah
-besone'eihem
+venahafokh | hu | asher | yishletu | haiyehudim | hemah | besone'eihem
 
 9:2
 Nikhalu | haiyehudim | be'areihem | bekhol | medinot | hamelekh | Ochashveroosh
@@ -24,8 +23,7 @@ ki | gadol | Maredokhai | beveit | hamelekh | veshame'o
 holekh | bekhol | hamedinot | ki | ha'ish | Maredokhai | holekh | vegadol
 
 9:5
-vaiyaku | haiyehudim | bekhol | oyeveihem
-makat | cherev | vehereg
+vaiyaku | haiyehudim | bekhol | oyeveihem | makat | cherev | vehereg
 ve'avdan
 vaiya'asu | vesone'eihem | kirtzonam
 
@@ -47,8 +45,7 @@ ve'et | Vayzata
 
 9:10
 aseret | benei | Haman | ben | Hamedata | tzorer | haiyehudim
-haragu | uvabbizah | lo | shalechu
-et | yadam
+haragu | uvabbizah | lo | shalechu | et | yadam
 
 9:11
 baiyom | hahu | ba | mispar | haharugim | Beshushan | habirah
@@ -72,14 +69,12 @@ vatinaten | dat | Beshushan | ve'et | aseret | benei | Haman | talu
 9:15
 vaiyikahalu | haiyehudiyim | asher | Beshushan | gam | beyom | arba'ah | asar | lechodesh | Adar
 vaiyahargu | Veshushan | shelosh | me'ot | ish
-uvabbizah | lo | shalechu
-et | yadam
+uvabbizah | lo | shalechu | et | yadam
 
 9:16
 ushe'ar | haiyehudim | asher | bimdinot | hamelekh | Nikhalu | ve'amod | al | nafsham | venoach | me'oyeveihem
 veharog | besone'eihem
-chamishah | veshiv'im | alef | uvabbizah | lo | shalechu
-et | yadam
+chamishah | veshiv'im | alef | uvabbizah | lo | shalechu | et | yadam
 
 9:17
 beyom | sheloshah | asar | lechodesh | Adar
@@ -118,8 +113,7 @@ umishloach | manot | ish | lere'ehu
 umatanot | la'evyonim
 
 9:23
-vekibel | haiyehudim
-et | asher | hechelu | la'asot | ve'et | asher | katav | Maredokhai | aleihem
+vekibel | haiyehudim | et | asher | hechelu | la'asot | ve'et | asher | katav | Maredokhai | aleihem
 
 9:24
 ki | Haman | ben | Hamedata | ha'agagi | tzorer | kol | haiyehudim | chashav | al | haiyehudim
@@ -156,8 +150,7 @@ lekaiyem | et | igeret | hapurim | hazot | hashenit
 
 9:30
 vaiyishlach | sefarim | el | kol | haiyehudim | el | sheva | ve'esrim
-ume'ah | medinah
-malkhut | Achashveroosh | divrei | shalom | ve'emet
+ume'ah | medinah | malkhut | Achashveroosh | divrei | shalom | ve'emet
 
 9:31
 lekaiyem | et | yemei | hapurim | ha'eleh | bizmaneihem | ka'asher | kiyam | aleihem | Maredokhai | haiyehudi | Ve'ester | hamalkah
@@ -167,7 +160,5 @@ divrei | hatzomot
 veza'akatam
 
 9:32
-uma'amar | Ester
-kiyam
-divrei | hapurim | ha'eleh
+uma'amar | Ester | kiyam | divrei | hapurim | ha'eleh
 venikhtav | basefer

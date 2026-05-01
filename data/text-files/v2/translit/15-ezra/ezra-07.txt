@@ -1,6 +1,5 @@
 7:1
-ve'achar | hadevarim | ha'eleh | bemalkhut
-Artachshast | melekh | Paras | Ezra | ben | Serayah | ben | Azaryah | ben | Chilkiyah
+ve'achar | hadevarim | ha'eleh | bemalkhut | Artachshast | melekh | Paras | Ezra | ben | Serayah | ben | Azaryah | ben | Chilkiyah
 
 7:2
 ben | Shalum | ben | Tzadok | ben | Achituv
@@ -37,8 +36,7 @@ hama'alah | Mibavel
 uve'echad | lachodesh | hachamishi | ba | el | Yerushalim | keyad | elohav | hatovah | alav
 
 7:10
-ki | Ezra | hekhin | levavo
-lidroosh | et | torat | Yahweh
+ki | Ezra | hekhin | levavo | lidroosh | et | torat | Yahweh
 vela'asot
 ulelamed | Beyisra'el
 chok | umishpat
@@ -61,8 +59,8 @@ velevaye | limhakh | Lirushelem | imakh | yehakh
 
 7:14
 kol | kovel | di | min | kodam | malka | veshiv'at | ya'atohi | sheliach
-levakara | al | Yehud | Velirushelem
-bedat | elahakh | di | vidakh
+levakara | al | Yehud
+Velirushelem | bedat | elahakh | di | vidakh
 
 7:15
 uleheivalah | kesaf | udehav
@@ -72,8 +70,7 @@ di | malka | veya'atohi | hitnadavu | le'elah | Yisra'el | di | Virushelem | mis
 vekhol | kesaf | udehav
 di | tehashkach | bekhol | medinat | Bavel
 im | hitnadavut | ama
-vekhahanaiya | mitnadevin
-leveit | elahahom | di | Virushelem
+vekhahanaiya | mitnadevin | leveit | elahahom | di | Virushelem
 
 7:17
 kol | kovel | denah | aseparna | tikne | bekhaspa | denah | torin | dikhrin | imerin
@@ -84,8 +81,7 @@ di | beit | elahakhom | di | Virushelem
 7:18
 umah | di | alayikh
 ve'al | echayikh | yitav | bish'ar | kaspa | vedahavah | leme'bad
-kir'ut | elahakhom
-ta'avdun
+kir'ut | elahakhom | ta'avdun
 
 7:19
 umanaiya | di | mityahavin | lakh | lefalechan
@@ -98,8 +94,7 @@ di | yipel | lakh | lemintan | tinten | min | beit | ginzei | malka
 7:21
 umini | anah | Artachshast | malka | sim | te'em
 lekhol | gizavraiya
-di
-ba'avar | naharah
+di | ba'avar | naharah
 di | khol | di | yish'alenkhon | Ezra | khahanah | safar | data | di | elah | shemaiya
 aseparna
 yit'avid

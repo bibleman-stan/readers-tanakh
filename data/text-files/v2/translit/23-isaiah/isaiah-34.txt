@@ -18,13 +18,11 @@ venamasu | harim | midamam
 34:4
 venamaku | kol | tzeva | hashamayim
 venagolu | khasefer | hashamayim
-vekhol | tzeva'am | yibol
-kinvol | aleh | migefen
+vekhol | tzeva'am | yibol | kinvol | aleh | migefen
 ukhenovelet | mite'enah
 
 34:5
-ki | rivetah | vashamayim
-charbi
+ki | rivetah | vashamayim | charbi
 hineh | al | Edom | tered
 ve'al | am | chermi | lemishpat
 
@@ -63,14 +61,12 @@ venatah | aleiha | kav | tohu
 ve'avnei | vohu
 
 34:12
-choreiha | ve'ein | sham
-melukhah | yikra'u
+choreiha | ve'ein | sham | melukhah | yikra'u
 vekhol | sareiha | yihyu | afes
 
 34:13
 ve'altah | armenoteiha | sirim | kimos | vachoach | bemivtzareiha
-vehayetah | neveh | tanim | chatzir
-livnot | ya'anah
+vehayetah | neveh | tanim | chatzir | livnot | ya'anah
 
 34:14
 ufageshu | tziyim | et | iyim
@@ -92,6 +88,5 @@ hu | kibetzan
 
 34:17
 vehu | hipil | lahen | goral
-veyado | chilekatah | lahem | bakav
-ad | olam | yirashuha
+veyado | chilekatah | lahem | bakav | ad | olam | yirashuha
 ledor | vador | yishkenu | vah

@@ -130,10 +130,8 @@ Ushemida | mishpachat | hashemida'i
 Vechefer | mishpachat | hachefri
 
 26:33
-Utzelafechad | ben | Chefer | lo | hayu | lo | banim
-ki | im | banot
-veshem | benot | Tzelafechad
-Machlah | Veno'ah
+Utzelafechad | ben | Chefer | lo | hayu | lo | banim | ki | im | banot
+veshem | benot | Tzelafechad | Machlah | Veno'ah
 Chagelah | Milkah | Vetirtzah
 
 26:34
@@ -217,9 +215,7 @@ la'eleh | techalek | ha'aretz | benachalah | bemispar | shemot
 
 26:54
 larav | tarbeh | nachalato | velam'at | tam'it | nachalato
-ish | lefi | fekudav
-yutan
-nachalato
+ish | lefi | fekudav | yutan | nachalato
 
 26:55
 akh | begoral | yechalek | et | ha'aretz | lishmot | matot | avotam
@@ -267,6 +263,4 @@ hakohen | asher | pakedu | et | benei | Yisra'el | bemidbar | Sinai
 26:65
 ki | amar | Yahweh | lahem
 mot | yamutu | bamidbar
-velo | Notar | mehem | ish
-ki | im | Kalev | ben | Yefuneh | Vihoshua
-bin | Nun
+velo | Notar | mehem | ish | ki | im | Kalev | ben | Yefuneh | Vihoshua | bin | Nun

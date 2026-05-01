@@ -147,8 +147,7 @@ Nadav | Va'avihu | El'azar
 Ve'itamar
 
 5:30
-El'azar | holid | et | Pinchas
-Pinchas
+El'azar | holid | et | Pinchas | Pinchas
 holid | et | Avishua
 
 5:31
@@ -156,25 +155,21 @@ Va'avishua | holid | et | Buki | Uvuki | holid | et | Uzi
 
 5:32
 Ve'uzi | holid | et | Zerachyah
-Uzerachyah
-holid | et | Merayot
+Uzerachyah | holid | et | Merayot
 
 5:33
 Merayot | holid | et | Amaryah | Va'amaryah | holid | et | Achituv
 
 5:34
 Va'achituv | holid | et | Tzadok
-Vetzadok
-holid | et | Achima'atz
+Vetzadok | holid | et | Achima'atz
 
 5:35
 Va'achima'atz | holid | et | Azaryah
-Va'azaryah
-holid | et | Yochanan
+Va'azaryah | holid | et | Yochanan
 
 5:36
-Veyochanan
-holid | et | Azaryah
+Veyochanan | holid | et | Azaryah
 hu | asher | kihen | babayit | asher | banah | Shelomoh | Birushalim
 
 5:37
@@ -183,18 +178,15 @@ Va'amaryah | holid | et | Achituv
 
 5:38
 Va'achituv | holid | et | Tzadok
-Vetzadok
-holid | et | Shalum
+Vetzadok | holid | et | Shalum
 
 5:39
 Veshalum | holid | et | Chilkiyah
-Vechilkiyah
-holid | et | Azaryah
+Vechilkiyah | holid | et | Azaryah
 
 5:40
 Va'azaryah | holid | et | Serayah
-Userayah
-holid | et | Yehotzadak
+Userayah | holid | et | Yehotzadak
 
 5:41
 Vihotzadak | halakh | behaglot | Yahweh | et | Yehudah

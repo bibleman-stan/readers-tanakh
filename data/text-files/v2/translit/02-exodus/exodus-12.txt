@@ -14,10 +14,8 @@ veyikchu | lahem | ish | seh | leveit | avot | seh | labayit
 
 12:4
 ve'im | yim'at | habayit | mihyot | miseh
-velakach | hu | ushekheno | hakaro | el | beito
-bemikhsat | nefashot
-ish | lefi | akhelo
-takhosu | al | haseh
+velakach | hu | ushekheno | hakaro | el | beito | bemikhsat | nefashot
+ish | lefi | akhelo | takhosu | al | haseh
 
 12:5
 seh | tamim | zakhar | ben | shanah
@@ -62,15 +60,12 @@ uvekhol | elohei | Mitzrayim | e'eseh | shefatim | ani | Yahweh
 12:13
 vehayah | hadam | lakhem | le'ot | al | habatim | asher | atem | sham
 vera'iti | et | hadam
-ufasachti
-alekhem
+ufasachti | alekhem
 velo | yihyeh | vakhem | negef | lemashchit | behakoti | be'eretz | Mitzrayim
 
 12:14
 vehayah | haiyom | hazeh | lakhem | lezikaron
-vechagotem | oto
-chag | Layahweh | ledoroteikhem
-chukat | olam
+vechagotem | oto | chag | Layahweh | ledoroteikhem | chukat | olam
 techaguhu
 
 12:15
@@ -89,8 +84,7 @@ ye'aseh | lakhem
 12:17
 ushemartem | et | hamatzot | ki | be'etzem | haiyom | hazeh
 hotzeti | et | tziv'oteikhem | me'eretz | Mitzrayim
-ushemartem | et | haiyom | hazeh | ledoroteikhem
-chukat | olam
+ushemartem | et | haiyom | hazeh | ledoroteikhem | chukat | olam
 
 12:18
 barishon | be'arba'ah | asar | yom | lachodesh | ba'erev
@@ -125,8 +119,7 @@ vera'ah | et | hadam | al | hamashkof | ve'al | shetei | hamezuzot
 ufasach | Yahweh | al | hapetach | velo | yiten | hamashchit | lavo | el | bateikhem | lingof
 
 12:24
-ushemartem
-et | hadavar | hazeh | lechok | lekha
+ushemartem | et | hadavar | hazeh | lechok | lekha
 ulevaneikha | ad | olam
 
 12:25
@@ -167,8 +160,7 @@ gam | benei | Yisra'el | ulekhu | ivdu | et | Yahweh | kedaberkhem
 12:32
 gam | tzonkhem | gam | bekarkhem | kechu | ka'asher | dibartem
 valekhu
-uverakhtem
-gam | oti
+uverakhtem | gam | oti
 
 12:33
 vatechezak | Mitzrayim | al | ha'am | lemaher
@@ -232,8 +224,7 @@ toshav | vesakhir | lo | yokhal | bo
 
 12:46
 bevayit | echad | ye'akhel | lo | totzi | min | habayit | min | habasar | chutzah
-ve'etzem
-lo | tishberu | vo
+ve'etzem | lo | tishberu | vo
 
 12:47
 kol | adat | Yisra'el | ya'asu | oto

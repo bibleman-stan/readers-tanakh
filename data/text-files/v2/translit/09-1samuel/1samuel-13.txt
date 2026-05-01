@@ -7,8 +7,7 @@ ve'arba'im | ushetei | shanim | malakh | al | Yisra'el
 vaiyivchar | lo | Sha'ul | sheloshet | alafim | Miyisra'el
 vaiyihyu | im | Sha'ul | alpayim | Bemikhmas
 uvehar | Beit | El | ve'elef | hayu | im | Yonatan | begiv'at | Binyamin
-veyeter | ha'am
-shilach | ish | le'ohalav
+veyeter | ha'am | shilach | ish | le'ohalav
 
 13:3
 vaiyakh | Yonatan | et | netziv | pelishtim | asher | Begeva
@@ -34,16 +33,14 @@ uvasela'im
 uvatzerichim | uvaborot
 
 13:7
-ve'ivrim | averu | et | Haiyarden
-eretz | Gad
+ve'ivrim | averu | et | Haiyarden | eretz | Gad
 Vegil'ad
 Vesha'ul | odenu | Vagilgal
 vekhol | ha'am | charedu | acharav
 
 13:8
 vaiyichel | shiv'at | yamim | lamo'ed | asher | Shemu'el
-velo | va | Shemu'el
-Hagilgal
+velo | va | Shemu'el | Hagilgal
 vaiyafetz | ha'am | me'alav
 
 13:9
@@ -77,9 +74,7 @@ ki | atah | hekhin | Yahweh | et | mamlakhtekha | el | Yisra'el | ad | olam
 13:14
 ve'atah | mamlakhtekha | lo | takum
 bikesh | Yahweh | lo | ish | kilvavo | vaytzavehu | Yahweh | lenagid | al | amo
-ki | lo | shamarta
-et | asher | tzivekha
-Yahweh
+ki | lo | shamarta | et | asher | tzivekha | Yahweh
 
 13:15
 vaiyakom | Shemu'el | vaiya'al | min | Hagilgal

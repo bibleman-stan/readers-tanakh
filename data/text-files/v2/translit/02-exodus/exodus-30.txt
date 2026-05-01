@@ -1,6 +1,5 @@
 30:1
-ve'asita | mizbeach | miktar | ketoret
-atzei | shitim
+ve'asita | mizbeach | miktar | ketoret | atzei | shitim
 ta'aseh | oto
 
 30:2
@@ -18,10 +17,8 @@ al | shenei | tzidav | vehayah | levatim | levadim
 laset | oto | bahemah
 
 30:5
-ve'asita | et | habadim
-atzei | shitim
-vetzipita | otam
-zahav
+ve'asita | et | habadim | atzei | shitim
+vetzipita | otam | zahav
 
 30:6
 venatatah | oto | lifnei | haparokhet | asher
@@ -134,9 +131,7 @@ ve'et | kano
 
 30:29
 vekidashta | otam
-vehayu
-kodesh | kadashim
-kol | hanogea | bahem
+vehayu | kodesh | kadashim | kol | hanogea | bahem
 yikdash
 
 30:30

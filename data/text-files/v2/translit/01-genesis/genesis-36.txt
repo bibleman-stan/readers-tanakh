@@ -38,9 +38,7 @@ shemot | benei | Esav | Elifaz | ben | Adah | eshet | Esav | Re'u'el
 ben | Basemat | eshet | Esav
 
 36:11
-vaiyihyu
-benei | Elifaz
-Teiman | Omar | Tzefo | Vega'tam
+vaiyihyu | benei | Elifaz | Teiman | Omar | Tzefo | Vega'tam
 Ukenaz
 
 36:12
@@ -49,16 +47,14 @@ vateled | Le'elifaz | et | Amalek | eleh | benei | Adah | eshet | Esav
 
 36:13
 ve'eleh | benei | Re'u'el | Nachat | Vazerach | Shamah | Umizah
-eleh | hayu | benei | Vasemat
-eshet | Esav
+eleh | hayu | benei | Vasemat | eshet | Esav
 
 36:14
 ve'eleh | hayu | benei | Oholivamah | vat | Anah | bat | Tziv'on | eshet | Esav
 vateled | Le'esav | et | Ye'ush | ve'et | Ya'lam | ve'et | Korach
 
 36:15
-eleh | alufei | venei | Esav
-benei | Elifaz | bekhor | Esav
+eleh | alufei | venei | Esav | benei | Elifaz | bekhor | Esav
 aluf | Teiman | aluf | Omar | aluf | Tzefo | aluf | Kenaz
 
 36:16
@@ -90,8 +86,7 @@ Vetziv'on | Va'anah
 36:21
 Vedishon | Ve'etzer
 Vedishan
-eleh | alufei | hachori | benei | Se'ir
-be'eretz | Edom
+eleh | alufei | hachori | benei | Se'ir | be'eretz | Edom
 
 36:22
 vaiyihyu | venei | Lotan | Chori | Veheimam

@@ -36,10 +36,8 @@ Vekhush | yalad | et | Nimrod
 hu | hechel | lihyot | gibor | ba'aretz
 
 10:9
-hu | hayah | gibor | tzayid
-lifnei | Yahweh
-al | ken | ye'amar | Kenimrod | gibor | tzayid
-lifnei | Yahweh
+hu | hayah | gibor | tzayid | lifnei | Yahweh
+al | ken | ye'amar | Kenimrod | gibor | tzayid | lifnei | Yahweh
 
 10:10
 vatehi | reshit | mamlakhto | Bavel
@@ -51,8 +49,7 @@ min | ha'aretz | hahiv | yatza | Ashur | vaiyiven | et | Ninveh
 ve'et | Rechovot | Ir | ve'et | Kalach
 
 10:12
-ve'et | Resen
-bein | Ninveh | uvein | Kalach | hi | ha'ir | hagedolah
+ve'et | Resen | bein | Ninveh | uvein | Kalach | hi | ha'ir | hagedolah
 
 10:13
 Umitzrayim | yalad | et | Ludim | ve'et | anamim | ve'et | Lehavim | ve'et | Naftuchim
@@ -100,10 +97,8 @@ Utz | Vechul
 Vegeter | Vamash
 
 10:24
-Ve'arpakhshad
-yalad | et | Shalach
-Veshelach
-yalad | et | Ever
+Ve'arpakhshad | yalad | et | Shalach
+Veshelach | yalad | et | Ever
 
 10:25
 Ul'ever | yulad | shenei | vanim

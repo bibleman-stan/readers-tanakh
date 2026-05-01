@@ -2,8 +2,7 @@
 ve'atah | hakrev | eleikha | et | Aharon | achikha | ve'et | banav | ito
 mitokh | benei | Yisra'el | lekhahanov | li
 Aharon
-Nadav | Va'avihu | El'azar | Ve'itamar
-benei | Aharon
+Nadav | Va'avihu | El'azar | Ve'itamar | benei | Aharon
 
 28:2
 ve'asita | vigdei | kodesh | Le'aharon | achikha | lekhavod
@@ -15,8 +14,7 @@ ve'asu | et | bigdei | Aharon | lekadesho | lekhahanov | li
 
 28:4
 ve'eleh | habegadim | asher | ya'asu | choshen | ve'efod | ume'il
-ukhetonet | tashbetz
-mitznefet | ve'avnet
+ukhetonet | tashbetz | mitznefet | ve'avnet
 ve'asu | vigdei | kodesh | Le'aharon | achikha
 ulevanav | lekhahanov | li
 
@@ -25,8 +23,7 @@ vehem | yikchu | et | hazahav | ve'et | hatekhelet | ve'et | ha'argaman
 ve'et | tola'at | hashani | ve'et | hashesh
 
 28:6
-ve'asu
-et | ha'efod
+ve'asu | et | ha'efod
 zaho | tekhelet | ve'argaman | tola'at | shani | veshesh | mashezar
 ma'aseh | choshev
 
@@ -75,8 +72,7 @@ zaho | tekhelet | ve'argaman | vetola'at | shani | veshesh | mashezar
 ta'aseh | oto
 
 28:16
-ravua | yihyeh | kaful
-zeret | areko
+ravua | yihyeh | kaful | zeret | areko
 vezeret | rachebo
 
 28:17
@@ -101,13 +97,10 @@ pituchei | chotam | ish | al | shemo | tihyeina
 lishnei | asar | shavet
 
 28:22
-ve'asita | al | hachoshen | sharshot | gavlut | ma'aseh | avot
-zahav
-tahor
+ve'asita | al | hachoshen | sharshot | gavlut | ma'aseh | avot | zahav | tahor
 
 28:23
-ve'asita | al | hachoshen
-shetei | tabe'ot | zahav
+ve'asita | al | hachoshen | shetei | tabe'ot | zahav
 venatata | et | shetei | hataba'ot | al | shenei | ketzot | hachoshen
 
 28:24
@@ -144,8 +137,7 @@ lifnei | Yahweh
 venasa | Aharon | et | mishpat | benei | Yisra'el | al | libo | lifnei | Yahweh | tamid
 
 28:31
-ve'asita | et | me'il | ha'efod
-kelil | tekhelet
+ve'asita | et | me'il | ha'efod | kelil | tekhelet
 
 28:32
 vehayah | fi | rosho | betokho
@@ -168,8 +160,7 @@ uvetzeto
 velo | yamut
 
 28:36
-ve'asita | tzitz
-zahav | tahor
+ve'asita | tzitz | zahav | tahor
 ufitachta | alav | pituchei | chotam | kodesh | Layahweh
 
 28:37
@@ -205,6 +196,5 @@ ve'ad | yerekhayim | yihyu
 28:43
 vehayu | al | Aharon
 ve'al | banav | bevo'am | el | ohel | mo'ed | o | vegishtam | el | hamizbeach | lesharet | bakodesh
-velo | yis'u | avon | vametu
-chukat | olam | lo
+velo | yis'u | avon | vametu | chukat | olam | lo
 ulezar'o | acharav

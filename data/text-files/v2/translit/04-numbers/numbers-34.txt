@@ -24,13 +24,10 @@ vehayu | totz'otav | haiyamah
 34:6
 ugevul | yam
 vehayah | lakhem | haiyam | hagadol
-ugevul
-zeh | yihyeh | lakhem
-gevul | yam
+ugevul | zeh | yihyeh | lakhem | gevul | yam
 
 34:7
-vezeh | yihyeh | lakhem
-gevul | tzafon | min | haiyam | hagadol
+vezeh | yihyeh | lakhem | gevul | tzafon | min | haiyam | hagadol
 teta'u | lakhem | Hor | hahar
 
 34:8
@@ -42,9 +39,7 @@ veyatza | hagevul | Zifronah
 vehayu | totz'otav | Chatzar | Einan | zeh | yihyeh | lakhem | gevul | tzafon
 
 34:10
-vehit'avitem | lakhem
-ligvul | kedemah | Mechatzar | Einan
-Shefamah
+vehit'avitem | lakhem | ligvul | kedemah | Mechatzar | Einan | Shefamah
 
 34:11
 veyarad | hagevul | Mishefam | Harivlah | mikedem | La'ayin
@@ -75,8 +70,7 @@ lakechu | nachalatam | me'ever | Leyarden | Yerecho | kedemah | mizrachah
 vaydaber | Yahweh | el | Mosheh | lemor
 
 34:17
-eleh | shemot | ha'anashim
-asher | yinchalu | lakhem
+eleh | shemot | ha'anashim | asher | yinchalu | lakhem
 et | ha'aretz | El'azar | hakohen
 Vihoshua
 bin | Nun

@@ -6,8 +6,7 @@ ve'el | Aharon | lemor
 adam | ki | yihyeh | ve'or | besaro | se'et | ov | sapachat | o | vaheret
 vehayah | ve'or | besaro
 lenega | tzara'at
-vehuva | el | Aharon | hakohen
-o | el | achad | mibanav | hakohanim
+vehuva | el | Aharon | hakohen | o | el | achad | mibanav | hakohanim
 
 13:3
 vera'ah | hakohen | et | hanega | be'or | habasor | vese'ar | banega | hafakh | lavan
@@ -19,8 +18,7 @@ vetime | oto
 
 13:4
 ve'im | baheret | levanah | hi | be'or | besaro | ve'amok | ein | mar'eha | min | ha'or
-use'arah | lo | hafakh | lavan | vehisgir | hakohen | et | hanega
-shiv'at | yamim
+use'arah | lo | hafakh | lavan | vehisgir | hakohen | et | hanega | shiv'at | yamim
 
 13:5
 vera'ahu | hakohen | baiyom | hashevi'i
@@ -53,16 +51,13 @@ vehuva | el | hakohen
 
 13:10
 vera'ah | hakohen | vehineh | se'et | levanah | ba'or
-vehi
-hafekhah
-se'ar | lavan
+vehi | hafekhah | se'ar | lavan
 umichyat | basar | chai | bas'et
 
 13:11
 tzara'at | noshenet | hi | be'or | besaro
 vetime'o
-hakohen
-lo | yasgirenu
+hakohen | lo | yasgirenu
 ki | tame | hu
 
 13:12
@@ -72,8 +67,7 @@ ve'ad | raglav | lekhol | mar'eh | einei | hakohen
 
 13:13
 vera'ah | hakohen | vehineh | khisetah | hatzara'at | et | kol | besaro
-vetihar
-et | hanaga
+vetihar | et | hanaga
 kulo | hafakh | lavan | tahor | hu
 
 13:14
@@ -92,13 +86,10 @@ uva | el | hakohen
 13:17
 vera'ahu | hakohen
 vehineh | Nehpakh | hanega | lelavan
-vetihar | hakohen | et | hanega
-tahor | hu
+vetihar | hakohen | et | hanega | tahor | hu
 
 13:18
-uvasar
-ki | yihyeh | vov | ve'oro
-shechin
+uvasar | ki | yihyeh | vov | ve'oro | shechin
 venirpa
 
 13:19
@@ -128,8 +119,7 @@ vetiharo
 hakohen
 
 13:24
-o | vasar
-ki | yihyeh | ve'oro | mikhvat | esh
+o | vasar | ki | yihyeh | ve'oro | mikhvat | esh
 vehayetah | michyat | hamikhvah | baheret | levanah | adamdemet | o | levanah
 
 13:25
@@ -171,8 +161,7 @@ tzara'at | harosh | o | hazakan | hu
 13:31
 vekhi | yir'eh | hakohen | et | nega | hanetek | vehineh | ein | mar'ehu | amok | min | ha'or
 vese'ar | shachor | ein | bo
-vehisgir | hakohen | et | nega | hanetek
-shiv'at | yamim
+vehisgir | hakohen | et | nega | hanetek | shiv'at | yamim
 
 13:32
 vera'ah | hakohen | et | hanega | baiyom | hashevi'i | vehineh | lo | fasah | hanetek
@@ -182,8 +171,7 @@ se'ar | tzaho | umar'eh | hanetek | ein | amok | min | ha'or
 13:33
 vehitgalach | ve'et | hanetek
 lo | yegaleach
-vehisgir | hakohen | et | hanetek | shiv'at | yamim
-shenit
+vehisgir | hakohen | et | hanetek | shiv'at | yamim | shenit
 
 13:34
 vera'ah | hakohen | et | hanetek | baiyom | hashevi'i | vehineh | lo | fasah | hanetek | ba'or
@@ -211,8 +199,7 @@ ki | yihyeh | ve'or | besaram | beharot | beharot | levanot
 
 13:39
 vera'ah | hakohen | vehineh | ve'or | besaram | beharot | kehot | levanot
-bohak | hu | parach | ba'or
-tahor | hu
+bohak | hu | parach | ba'or | tahor | hu
 
 13:40
 ve'ish
@@ -223,8 +210,7 @@ ve'im | mipe'at | panav | yimaret | rosho | gibeach | hu
 tahor | hu
 
 13:42
-vekhi | yihyeh | vakarachat | o | vagabachat
-nega
+vekhi | yihyeh | vakarachat | o | vagabachat | nega
 lavan | adamdam | tzara'at | porachat | hi | bekarachto | o | vegabachto
 
 13:43
@@ -235,14 +221,12 @@ or | basar
 
 13:44
 ish | tzarua | hu | tame | hu
-tame | yetamme'enu | hakohen
-berosho | nig'o
+tame | yetamme'enu | hakohen | berosho | nig'o
 
 13:45
 vehatzarua | asher | bo | hanega | begadav | yihyu | ferumim | verosho | yihyeh | farua
 ve'al | safam | ya'teh
-vetame | tame
-yikra
+vetame | tame | yikra
 
 13:46
 kol | yemei | asher | hanega | bo | yitma
@@ -250,9 +234,7 @@ tame | hu
 badad | yeshev | michutz | lamachaneh | moshavo
 
 13:47
-vehabeged
-ki | yihyeh | vo
-nega | tzara'at | beveged | tzemer
+vehabeged | ki | yihyeh | vo | nega | tzara'at | beveged | tzemer
 o | beveged | pishtim
 
 13:48
@@ -269,22 +251,17 @@ vehare'ah | et | hakohen
 
 13:50
 vera'ah | hakohen | et | hanaga
-vehisgir | et | hanega
-shiv'at | yamim
+vehisgir | et | hanega | shiv'at | yamim
 
 13:51
 vera'ah | et | hanega | baiyom | hashevi'i | ki | fasah | hanega | babeged | ov | vasheti | ov | va'erev | o | va'or
-lekhol | asher | ye'aseh | ha'or | limlakhah
-tzara'at | mam'eret | hanega
+lekhol | asher | ye'aseh | ha'or | limlakhah | tzara'at | mam'eret | hanega
 tame | hu
 
 13:52
 vesaraf | et | habeged | o | et | hasheti | o | et | ha'erev | batzemer | o | vapishtim
-o | et | kol | keli | ha'or
-asher | yihyeh | vo
-hanaga
-ki | tzara'at | mam'eret | hi | ba'esh
-tisaref
+o | et | kol | keli | ha'or | asher | yihyeh | vo | hanaga
+ki | tzara'at | mam'eret | hi | ba'esh | tisaref
 
 13:53
 ve'im | yir'eh | hakohen | vehineh | lo | fasah | hanega | babeged
@@ -308,8 +285,7 @@ o | min | hasheti | o | min | ha'erev
 
 13:57
 ve'im | tera'eh | od | babeged | ov | vasheti | ov | va'erev | o | vekhol | keli | or | porachat
-hi
-ba'esh | tisrefenu | et | asher | bo | hanaga
+hi | ba'esh | tisrefenu | et | asher | bo | hanaga
 
 13:58
 vehabeged | ov | hasheti | ov | ha'erev | ov | khol | keli | ha'or | asher | tekhabes

@@ -1,6 +1,5 @@
 1:1
-divrei | Amos
-asher | hayah | vanokedim | Mitekoa
+divrei | Amos | asher | hayah | vanokedim | Mitekoa
 asher | chazah | al | Yisra'el | bimei | Uziyah | melekh | Yehudah
 uvimei | Yarave'am | ben | Yo'ash | melekh | Yisra'el
 shenatayim
@@ -13,8 +12,7 @@ veyavesh | rosh | Hakarmel
 
 1:3
 koh | amar | Yahweh | al | sheloshah | pish'ei | Damesek
-ve'al | arba'ah
-lo | ashivenu | al | dusham | bacharutzot | habarzel | et | Hagil'ad
+ve'al | arba'ah | lo | ashivenu | al | dusham | bacharutzot | habarzel | et | Hagil'ad
 
 1:4
 veshilachti | esh | beveit | Chaza'el | ve'akhelah
@@ -28,8 +26,7 @@ vegalu | am | Aram | Kirah | amar | Yahweh
 
 1:6
 koh | amar | Yahweh | al | sheloshah | pish'ei | Azah
-ve'al | arba'ah
-lo | ashivenu | al | haglotam | galut | shelemah | lehasgir | Le'edom
+ve'al | arba'ah | lo | ashivenu | al | haglotam | galut | shelemah | lehasgir | Le'edom
 
 1:7
 veshilachti | esh | bechomat | Azah | ve'akhelah
@@ -43,8 +40,7 @@ amar | Adonai | Yahweh
 
 1:9
 koh | amar | Yahweh | al | sheloshah | pish'ei | Tzor
-ve'al | arba'ah
-lo | ashivenu | al | hasgiram | galut | shelemah | Le'edom
+ve'al | arba'ah | lo | ashivenu | al | hasgiram | galut | shelemah | Le'edom
 velo | zakheru | berit | achim
 
 1:10
@@ -53,16 +49,14 @@ armenoteiha
 
 1:11
 koh | amar | Yahweh | al | sheloshah | pish'ei | Edom
-ve'al | arba'ah
-lo | ashivenu
+ve'al | arba'ah | lo | ashivenu
 al | radefo | vacherev | achiv | veshichet | rachamav
 vaiyitrof | la'ad | apo
 ve'evrato
 shemarah | netzach
 
 1:12
-veshilachti | esh
-Beteiman
+veshilachti | esh | Beteiman
 ve'akhelah
 armenot | Botzrah
 

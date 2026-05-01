@@ -26,5 +26,11 @@ trigger:
       - "אלהיהם"
       - "אלהיו"
 
+guards:
+  - poetic_register
+  - next_line_is_vav_coord_pp     # block re-absorbing post-S1-split coord-PP enumeration members
+  - next_line_is_vav_coord_np     # block re-absorbing post-S2-split coord-NP enumeration members
+  - next_line_is_wayyiqtol        # block re-absorbing post-S3-split wayyiqtol-headed lines
+
 annotation_template: "H9 divine-title appositive split — compound divine name across line boundary (combined {pwc} prosodic words)"
 suggested_action: MERGE

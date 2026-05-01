@@ -1,6 +1,5 @@
 5:1
-zeh | sefer | toldot | Adam
-beyom | bero | elohim | adam
+zeh | sefer | toldot | Adam | beyom | bero | elohim | adam
 bidmut | elohim | asah | oto
 
 5:2
@@ -74,8 +73,7 @@ ushemoneh | me'ot | shanah
 vaiyoled | banim | uvanot
 
 5:17
-vaiyihyu | kol | yemei | Mahalal'el
-chamesh | vetish'im | shanah
+vaiyihyu | kol | yemei | Mahalal'el | chamesh | vetish'im | shanah
 ushemoneh | me'ot | shanah
 vaiyamot
 
@@ -131,8 +129,7 @@ shetayim | ushemonim | shanah | ume'at | shanah
 vaiyoled | ben
 
 5:29
-vaiyikra | et | shemo | Noach | lemor
-zeh | yenachamenu | mima'asenu
+vaiyikra | et | shemo | Noach | lemor | zeh | yenachamenu | mima'asenu
 ume'itzevon | yadeinu | min | ha'adamah | asher | ererah | Yahweh
 
 5:30

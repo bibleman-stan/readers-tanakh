@@ -1,6 +1,5 @@
 6:1
-Vedareyavesh | madaya | kabel | malkhuta | kevar | shenin
-shitin | vetartein
+Vedareyavesh | madaya | kabel | malkhuta | kevar | shenin | shitin | vetartein
 
 6:2
 shefar | kodam | Dareyavesh | vahakim | al | malkhuta
@@ -22,14 +21,12 @@ lahakamuteh | al | kol | malkhuta
 edayin | sarekhaiya | va'achashdarpenaiya | havo | va'ayin | ilah | lehashkachah | Ledaniyel
 mitzad | malkhuta
 vekhol | ilah | ushechitah | la | yakhelin | lehashkachah | kol | kovel | di | meheiman | hu
-vekhol | shalu | ushechitah | la | hishtekhachat
-alohi
+vekhol | shalu | ushechitah | la | hishtekhachat | alohi
 
 6:6
 edayin | guvraiya | ilekh | amerin
 di | la | nehashkach | Ledaniyel | denah | kol | ila | lahen
-hashkachnah | alohi
-bedat | elaheh
+hashkachnah | alohi | bedat | elaheh
 
 6:7
 edayin | sarekhaiya | va'achashdarpenaiya | ilen | hargishu | al | malka
@@ -90,15 +87,13 @@ ve'ad | me'alei | shimsha
 hava | mishtadar | lehatzaluteh
 
 6:16
-bedayin | guvraiya | ilekh
-hargishu | al | malka
+bedayin | guvraiya | ilekh | hargishu | al | malka
 ve'amerin | lemalka | da | malka | di | dat | Lemadai | Ufaras
 di | khol | esar | ukeyam | di | malka | yehakeim | la | lehashnayah
 
 6:17
 bedayin | malka | amar | vehaytiv | Ledaniyel
-uremo | leguba
-di | aryavata
+uremo | leguba | di | aryavata
 aneh | malka | ve'amar | Ledaniyel
 elahakh | di | antah | palach | leh | bitdira
 hu | yesheizevinakh
@@ -114,8 +109,7 @@ di | la | tishne | tzevu | Bedaniyel
 edayin | azal | malka | leheikheleh
 uvat | tevat
 vedachavan | la | han'el | kadamohi
-veshinteh
-nadat | alohi
+veshinteh | nadat | alohi
 
 6:20
 bedayin | malka | bishparpara | yekum | benageha
@@ -124,8 +118,7 @@ leguba | di | aryavata
 azal
 
 6:21
-ukhemikreveh | leguba | Ledaniyel | bekal | atziv
-ze'ik
+ukhemikreveh | leguba | Ledaniyel | bekal | atziv | ze'ik
 aneh | malka | ve'amar | Ledaniyel | Daniyel | aved | elaha | chaiya
 elahakh | di | antah | palach | leh | bitdira | haykhil | lesheizavutakh | min | aryavata
 
@@ -140,18 +133,15 @@ chavulah | la | avdet
 
 6:24
 bedayin | malka | sagi | te'ev | alohi
-Uledaniyel
-amar | lehansakah | min | guba
+Uledaniyel | amar | lehansakah | min | guba
 vehusak | Daniyel | min | guba
-vekhol | chaval | la | hishtekhach | beh
-di
+vekhol | chaval | la | hishtekhach | beh | di
 heimin | belaheh
 
 6:25
 va'amar | malka | vehaytiv | guvraiya | ilekh | di | akhalu | kartzohi | di | Daniyel
 ulego | aryavata | remo
-inun
-beneihon | unesheihon
+inun | beneihon | unesheihon
 vela | meto | le'ar'it | guba | ad | di | shelitu | vehon | aryavata
 vekhol | garmeihon | hadiku
 
@@ -174,6 +164,5 @@ uve'ar'a
 di | sheiziv | Ledaniyel | min | yad | aryavata
 
 6:29
-Vedaniyel | denah
-hatzlach | bemalkhut | Dareyavesh
+Vedaniyel | denah | hatzlach | bemalkhut | Dareyavesh
 uvemalkhut | Koresh | paresaya

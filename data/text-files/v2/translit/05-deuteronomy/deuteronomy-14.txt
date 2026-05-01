@@ -11,8 +11,7 @@ uvekha | bachar | Yahweh | lihyot | lo | le'am | segulah
 mikol | ha'amim | asher | al | penei | ha'adamah
 
 14:3
-lo | tokhal
-kol | to'evah
+lo | tokhal | kol | to'evah
 
 14:4
 zot | habehemah | asher | tokhelu | shor | seh | khesavim
@@ -55,8 +54,7 @@ tame | hu | lakhem
 kol | tzipor | tehorah | tokhelu
 
 14:12
-vezeh | asher | lo | tokhelu
-mehem | hanesher | vehaperes
+vezeh | asher | lo | tokhelu | mehem | hanesher | vehaperes
 veha'azeniyah
 
 14:13
@@ -118,8 +116,7 @@ sham | ki | yevarekhkha | Yahweh | eloheikha
 14:25
 venatatah | bakasef
 vetzarta | hakesef | beyadekha
-vehalakhta | el | hamakom | asher | yivchar | Yahweh | eloheikha
-bo
+vehalakhta | el | hamakom | asher | yivchar | Yahweh | eloheikha | bo
 
 14:26
 venatatah | hakesef | bekhol | asher | te'aveh | nafshekha | babakar
@@ -128,12 +125,10 @@ uvaiyayin
 uvashekhar
 uvekhol | asher | tish'alekha | nafshekha
 ve'akhalta | sham | lifnei | Yahweh | eloheikha
-vesamachta
-atah | uveitekha
+vesamachta | atah | uveitekha
 
 14:27
-vehalevi | asher | bish'areikha
-lo | ta'azvenu
+vehalevi | asher | bish'areikha | lo | ta'azvenu
 ki | ein | lo | chelek | venachalah | imakh
 
 14:28
@@ -146,6 +141,5 @@ vehager
 vehaiyatom
 veha'almanah | asher | bish'areikha
 ve'akhelu
-vesave'u
-lema'an | yevarekhkha | Yahweh | eloheikha
+vesave'u | lema'an | yevarekhkha | Yahweh | eloheikha
 bekhol | ma'aseh | yadekha | asher | ta'aseh

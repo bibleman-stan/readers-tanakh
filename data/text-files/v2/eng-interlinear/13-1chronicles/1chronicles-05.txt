@@ -147,8 +147,7 @@ Nadab | and Abihu | Eleazar
 and Ithamar
 
 5:30
-Eleazar | he fathered | [obj.] | Phinehas
-Phinehas
+Eleazar | he fathered | [obj.] | Phinehas | Phinehas
 he fathered | [obj.] | Abishua
 
 5:31
@@ -156,25 +155,21 @@ and Abishua | he fathered | [obj.] | Bukki | and Bukki | he fathered | [obj.] | 
 
 5:32
 and Uzzi | he fathered | [obj.] | Zerahiah
-and Zerahiah
-he fathered | [obj.] | Meraioth
+and Zerahiah | he fathered | [obj.] | Meraioth
 
 5:33
 Meraioth | he fathered | [obj.] | Amariah | and Amariah | he fathered | [obj.] | Ahitub
 
 5:34
 and Ahitub | he fathered | [obj.] | Zadok
-and Zadok
-he fathered | [obj.] | Ahimaaz
+and Zadok | he fathered | [obj.] | Ahimaaz
 
 5:35
 and Ahimaaz | he fathered | [obj.] | Azariah
-and Azariah
-he fathered | [obj.] | Johanan
+and Azariah | he fathered | [obj.] | Johanan
 
 5:36
-and Johanan
-he fathered | [obj.] | Azariah
+and Johanan | he fathered | [obj.] | Azariah
 he | [was [the] one] who | he served as a priest | in the house | which | he had built | Solomon | in Jerusalem
 
 5:37
@@ -183,18 +178,15 @@ and Amariah | he fathered | [obj.] | Ahitub
 
 5:38
 and Ahitub | he fathered | [obj.] | Zadok
-and Zadok
-he fathered | [obj.] | Shallum
+and Zadok | he fathered | [obj.] | Shallum
 
 5:39
 and Shallum | he fathered | [obj.] | Hilkiah
-and Hilkiah
-he fathered | [obj.] | Azariah
+and Hilkiah | he fathered | [obj.] | Azariah
 
 5:40
 and Azariah | he fathered | [obj.] | Seraiah
-and Seraiah
-he fathered | [obj.] | Jehozadak
+and Seraiah | he fathered | [obj.] | Jehozadak
 
 5:41
 and Jehozadak | he went | when sent into exile | Yahweh | [obj.] | Judah

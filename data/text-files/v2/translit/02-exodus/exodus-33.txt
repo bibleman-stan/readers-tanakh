@@ -42,10 +42,8 @@ yetze | el | ohel | mo'ed | asher | michutz | lamachaneh
 33:8
 vehayah | ketzet | Mosheh | el | ha'ohel
 yakumu | kol | ha'am
-venitzevu
-ish | petach | oholo
-vehibitu | acharei | Mosheh | ad | bo'o
-ha'ohelah
+venitzevu | ish | petach | oholo
+vehibitu | acharei | Mosheh | ad | bo'o | ha'ohelah
 
 33:9
 vehayah | kevo | Mosheh | ha'ohelah
@@ -55,8 +53,7 @@ petach | ha'ohel | vediber | im | Mosheh
 
 33:10
 vera'ah | khol | ha'am | et | amud | he'anan | omed
-petach | ha'ohel | vekam | kol | ha'am | vehishtachavu
-ish | petach | oholo
+petach | ha'ohel | vekam | kol | ha'am | vehishtachavu | ish | petach | oholo
 
 33:11
 vediber | Yahweh | el | Mosheh | panim | el | panim
@@ -72,8 +69,7 @@ imi | ve'atah | amarta | yeda'tikha | veshem | vegam | matzata | chen | be'einai
 
 33:13
 ve'atah | im | na | matzati | chen | be'eineikha | hodi'eni | na | et | derakhekha
-ve'eda'akha
-lema'an | emtza | chen | be'eineikha
+ve'eda'akha | lema'an | emtza | chen | be'eineikha
 ure'eh | ki | amekha | hagoy | hazeh
 
 33:14
@@ -121,6 +117,5 @@ vesakoti | khapi | aleikha | ad | averi
 
 33:23
 vahasiroti | et | kapi
-vera'ita
-et | achorai
+vera'ita | et | achorai
 ufanai | lo | yera'u

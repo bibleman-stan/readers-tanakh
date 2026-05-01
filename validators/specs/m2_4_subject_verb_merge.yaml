@@ -29,6 +29,8 @@ guards:
                                    # following וְהָאָדָם יָדַע) — these are
                                    # complement chains, not new subjects
   - next_line_is_wayyiqtol       # block re-absorbing post-S3-split wayyiqtol-headed lines
+  - next_line_is_vav_coord_pp     # block re-absorbing post-S1-split coord-PP enumeration members
+  - next_line_is_vav_coord_np     # block re-absorbing post-S2-split coord-NP enumeration members
 
 annotation_template: "Subject NP + verb merge ({pwc} prosodic words)"
 suggested_action: MERGE

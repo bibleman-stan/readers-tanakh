@@ -40,20 +40,16 @@ Azaryah
 uvenei | Chetzron | asher | Nolad | lo | et | Yerachme'el | ve'et | Ram | ve'et | Keluvai
 
 2:10
-Veram
-holid | et | Aminadav
-Ve'aminadav | holid | et | Nachshon
-nesi | benei | Yehudah
+Veram | holid | et | Aminadav
+Ve'aminadav | holid | et | Nachshon | nesi | benei | Yehudah
 
 2:11
 Venachshon | holid | et | Salma
-Vesalma
-holid | et | Bo'az
+Vesalma | holid | et | Bo'az
 
 2:12
 Uvo'az | holid | et | Oved
-Ve'oved
-holid | et | Yishai
+Ve'oved | holid | et | Yishai
 
 2:13
 Ve'ishai | holid | et | bekhoro | et | Eli'av
@@ -73,20 +69,17 @@ Tzeruyah | Va'avigayil
 uvenei | Tzeruyah | Avshai | Veyo'av | Va'asah | El | sheloshah
 
 2:17
-Va'avigayil
-yaldah | et | Amasa
+Va'avigayil | yaldah | et | Amasa
 va'avi | Amasa
 Yeter | haiyishme'eli
 
 2:18
-Vekhalev | ben | Chetzron | holid | et | Azuvah | ishah
-ve'et | Yeri'ot
+Vekhalev | ben | Chetzron | holid | et | Azuvah | ishah | ve'et | Yeri'ot
 ve'eleh | vaneiha
 Yesher | Veshovav | Ve'ardon
 
 2:19
-vatamot
-Azuvah | vaiyikach | lo | Khalev | et | Efrat
+vatamot | Azuvah | vaiyikach | lo | Khalev | et | Efrat
 vateled | lo | et | Chur
 
 2:20
@@ -100,8 +93,7 @@ ben | shishim | shanah
 vateled | lo | et | Seguv
 
 2:22
-Useguv
-holid | et | Ya'ir
+Useguv | holid | et | Ya'ir
 vayhi | lo | esrim | veshalovosh | arim | be'eretz | Hagil'ad
 
 2:23
@@ -109,8 +101,7 @@ vaiyikach | Geshur | Va'arom | et | chavot | Ya'ir | me'itam | et | Kenat | ve'e
 shishim | ir | kol | eleh | benei | Makhir | avi | Gil'ad
 
 2:24
-ve'achar | mot | Chetzron
-Bekhalev | Efratah
+ve'achar | mot | Chetzron | Bekhalev | Efratah
 ve'eshet | Chetzron | Aviyah
 vateled | lo | et | Ashchur | avi | Tekoa
 
@@ -125,15 +116,11 @@ hi
 em | Onam
 
 2:27
-vaiyihyu | venei | Ram
-bekhor | Yerachme'el
-Ma'atz | Veyamin
+vaiyihyu | venei | Ram | bekhor | Yerachme'el | Ma'atz | Veyamin
 Va'eker
 
 2:28
-vaiyihyu | venei | Onam
-Shamai | Veyada | uvenei | Shamai
-Nadav | Va'avishur
+vaiyihyu | venei | Onam | Shamai | Veyada | uvenei | Shamai | Nadav | Va'avishur
 
 2:29
 veshem | eshet | Avishur
@@ -178,13 +165,11 @@ holid | et | Azaryah
 
 2:39
 Va'azaryah | holid | et | Chaletz
-Vecheletz
-holid | et | El'asah
+Vecheletz | holid | et | El'asah
 
 2:40
 Ve'el'asah | holid | et | Sismai
-Vesismai
-holid | et | Shalum
+Vesismai | holid | et | Shalum
 
 2:41
 Veshalum | holid | et | Yekamyah | Vikamyah | holid | et | Elishama
@@ -197,10 +182,8 @@ hu | avi | Zif | uvenei | Mareshah | avi | Chevron
 uvenei | Chevron | Korach | Vetapuach | Verekem | Vashama
 
 2:44
-Veshema | holid | et | Racham
-avi | Yareko'am
-Verekem
-holid | et | Shamai
+Veshema | holid | et | Racham | avi | Yareko'am
+Verekem | holid | et | Shamai
 
 2:45
 uven | Shamai | Ma'on | Uma'on
@@ -209,8 +192,7 @@ avi | Veit | Tzur
 2:46
 Ve'eifah | pilegesh | Kalev
 yaldah | et | Charan | ve'et | Motza | ve'et | Gazez
-Vecharan
-holid | et | Gazez
+Vecharan | holid | et | Gazez
 
 2:47
 uvenei | Yahedai | Regem
@@ -228,8 +210,7 @@ va'avi | Giv'a
 uvat | Kalev | Akhsah
 
 2:50
-eleh | hayu | benei | Khalev
-ben | Chur | bekhor | Efratah | Shoval
+eleh | hayu | benei | Khalev | ben | Chur | bekhor | Efratah | Shoval
 avi | Kiryat | Ye'arim
 
 2:51
@@ -237,8 +218,7 @@ Salma | avi | Veit | Lachem | Charef
 avi | Veit | Gader
 
 2:52
-vaiyihyu | vanim | Leshoval
-avi | Kiryat | Ye'arim
+vaiyihyu | vanim | Leshoval | avi | Kiryat | Ye'arim
 Haro'eh | Chatzi | hamenuchot
 
 2:53

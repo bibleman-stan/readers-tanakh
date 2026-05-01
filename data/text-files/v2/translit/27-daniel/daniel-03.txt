@@ -1,6 +1,5 @@
 3:1
-Nevukhadnetzar | malka | avad | tzelem | di | dehav
-rumeh | amin | shitin
+Nevukhadnetzar | malka | avad | tzelem | di | dehav | rumeh | amin | shitin
 petayeh | amin | shit
 akimeh | bevik'at | Dura | bimdinat | Bavel
 
@@ -32,8 +31,7 @@ di | hakeim
 Nevukhadnetzar | malka
 
 3:6
-uman | di | la | yipel | veyisgud | bah | sha'ata | yitreme
-legoy | atun | nura
+uman | di | la | yipel | veyisgud | bah | sha'ata | yitreme | legoy | atun | nura
 yakidta
 
 3:7
@@ -45,11 +43,8 @@ di | hakeim
 Nevukhadnetzar | malka
 
 3:8
-kol | kovel | denah | beh | zimna
-kerivu
-guvrin | kasda'in
-va'akhalu | kartzeihon
-di | yehudaye
+kol | kovel | denah | beh | zimna | kerivu | guvrin | kasda'in
+va'akhalu | kartzeihon | di | yehudaye
 
 3:9
 ano | ve'amerin | Linvukhadnetzar | malka | malka | le'almin | cheyi
@@ -57,9 +52,7 @@ ano | ve'amerin | Linvukhadnetzar | malka | malka | le'almin | cheyi
 3:10
 antah | malka | sameta | te'em
 di | khol | enash | di | yishma | kal | karna | mashrokita | kitaros | sabekha | fesanterin | vesiponeyah
-vekhol | zenei | zemara
-yipel | veyisgud
-letzelem | dahava
+vekhol | zenei | zemara | yipel | veyisgud | letzelem | dahava
 
 3:11
 uman | di | la | yipel | veyisgud | yitreme | legoy | atun | nura
@@ -75,8 +68,7 @@ uletzelem | dahava | di | hakeimeta | la | sagedin
 3:13
 bedayin | Nevukhadnetzar | birgaz | vachamah | amar | lehaytayah
 Leshadrakh | Meishakh | Va'aved | Nego | bedayin | guvraiya | ilekh
-heitayu
-kodam | malka
+heitayu | kodam | malka
 
 3:14
 aneh | Nevukhadnetzar | ve'amar | lehon | hatzda
@@ -88,16 +80,14 @@ uletzelem | dahava | di | hakeimet | la | sagedin
 ke'an | hen | iteikhon | atidin | di | ve'idana | di | tishme'un | kal | karna | mashrokita | kitaros | sabekha | pesanterin | vesumeponeyah
 vekhol | zenei | zemara | tipelun | vetisgedun | letzalma | di | avdet
 vehen | la | tisgedun
-bah | sha'atah | titremon
-legoy | atun | nura
+bah | sha'atah | titremon | legoy | atun | nura
 yakidta | uman | hu | elah
 dei | yesheizevinkhon | min | yedai
 
 3:16
 ano | Shadrakh | Meishakh | Va'aved | Nego
 ve'amerin | lemalka
-Nevukhadnetzar
-la | chashchin | anachnah | al | denah | pitgam | lahatavutakh
+Nevukhadnetzar | la | chashchin | anachnah | al | denah | pitgam | lahatavutakh
 
 3:17
 hen | itai | elahana | di | anachna | falechin | yakhil | lesheizavutana
@@ -135,9 +125,7 @@ kol | kovel | denah | min | di | milat | malka | machtzefah
 ve'atuna
 ezeh | yatira
 guvraiya | ilekh | di | hasiku | Leshadrakh | Meishakh | Va'aved | Nego
-katil | himon
-sheviva
-di | nura
+katil | himon | sheviva | di | nura
 
 3:23
 veguvraiya | ilekh | telatehon | Shadrakh | Meishakh | Va'aved | Nego
@@ -160,8 +148,7 @@ dameh | levar | elahin
 bedayin | kerev | Nevukhadnetzar | litra | atun | nura | yakidta
 aneh | ve'amar | Shadrakh | Meishakh | Va'aved | Nego | avdohi | di | elaha | ilaya
 puku | ve'eto
-bedayin | nafekin | Shadrakh | Meishakh | Va'aved | Nego
-min | go | nura
+bedayin | nafekin | Shadrakh | Meishakh | Va'aved | Nego | min | go | nura
 
 3:27
 umitkaneshin | achashdarpenaiya | signaiya | ufachavata | vehadaverei | malka
@@ -178,8 +165,7 @@ vihavu | geshmeihon | di | la | yiflechun
 vela | yisgedun | lekhol | elah | lahen | lelahahon
 
 3:29
-umini | sim | te'em
-di | khol | am | umah
+umini | sim | te'em | di | khol | am | umah
 velishan | di | yemar | shelah | al | elahahon | di | Shadrakh | Meishakh | Va'aved | Nego
 hadamin | yit'aved | uvayteh
 nevali | yishtaveh
@@ -200,6 +186,5 @@ di | avad | imi | elaha | ilaya | shefar | kadamai | lehachavayah
 
 3:33
 atohi | kemah | ravrevin
-vetimhohi
-kemah | takifin | malkhuteh | malkhut | alam
+vetimhohi | kemah | takifin | malkhuteh | malkhut | alam
 veshaltaneh | im | dar | vedar

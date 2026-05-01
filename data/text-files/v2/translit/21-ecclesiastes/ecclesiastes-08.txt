@@ -1,12 +1,10 @@
 8:1
 mi | kehechakham
-umi | yodea | pesher | davar
-chakhemat | adam | ta'ir | panav
+umi | yodea | pesher | davar | chakhemat | adam | ta'ir | panav
 ve'oz | panav | yeshune
 
 8:2
-ani | pi | melekh | shemor | ve'al | divrat
-shevu'at | elohim
+ani | pi | melekh | shemor | ve'al | divrat | shevu'at | elohim
 
 8:3
 al | tibahel | mipanav | telekh | al | ta'amod | bedavar | ra
@@ -36,8 +34,7 @@ yagid | lo
 ein | adam | shalit | baruach | likhlo | et | haruach
 ve'ein | shilton | beyom | hamavet
 ve'ein | mishlachat | bamilchamah
-velo | yemalet | resha
-et | be'alav
+velo | yemalet | resha | et | be'alav
 
 8:9
 et | kol | zeh | ra'iti | venaton | et | libi | lekhol | ma'aseh | asher | Na'asah
@@ -53,8 +50,7 @@ veyishtakechu | va'ir | asher | ken | asu | gam | zeh | havel
 
 8:11
 asher | ein | Na'asah | fitgam | ma'aseh | hara'ah | meherah
-al | ken | male | lev | benei | ha'adam | bahem
-la'asot | ra
+al | ken | male | lev | benei | ha'adam | bahem | la'asot | ra
 
 8:12
 asher | chote | oseh | ra | me'at

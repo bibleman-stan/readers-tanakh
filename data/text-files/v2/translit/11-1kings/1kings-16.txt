@@ -12,10 +12,8 @@ ve'acharei | veito
 venatati | et | beitekha | keveit | Yarave'am | ben | Nevat
 
 16:4
-hamet | Leva'sha | ba'ir | yokhelu
-hakelavim
-vehamet | lo | basadeh | yokhelu
-of | hashamayim
+hamet | Leva'sha | ba'ir | yokhelu | hakelavim
+vehamet | lo | basadeh | yokhelu | of | hashamayim
 
 16:5
 veyeter | divrei | Va'sha | va'asher | asah
@@ -33,13 +31,11 @@ vegam | beyad | Yehu | ven | Chanani | hanavi | devar | Yahweh | hayah | el | Ba
 ve'el | beito
 ve'al | kol | hara'ah | asher | asah | be'einei | Yahweh | lehakh'iso | bema'aseh | yadav
 lihyot | keveit | Yarave'am
-ve'al | asher | hikah
-oto
+ve'al | asher | hikah | oto
 
 16:8
 bishnat | esrim | vashesh | shanah | Le'asa | melekh | Yehudah
-malakh | Elah | ven | Ba'sha | al | Yisra'el | Betirtzah
-shenatayim
+malakh | Elah | ven | Ba'sha | al | Yisra'el | Betirtzah | shenatayim
 
 16:9
 vaiyikshor | alav | avdo | Zimri | sar | machatzit | harakhev
@@ -74,8 +70,7 @@ lemalkhei | Yisra'el
 
 16:15
 bishnat | esrim | vasheva | shanah | Le'asa | melekh | Yehudah
-malakh | Zimri | shiv'at | yamim
-Betirtzah
+malakh | Zimri | shiv'at | yamim | Betirtzah
 veha'am | chonim | al | Gibeton | asher | lapelishtim
 
 16:16
@@ -119,8 +114,7 @@ vaiyimlokh | Ameri
 
 16:23
 bishnat | sheloshim | ve'achat | shanah | Le'asa | melekh | Yehudah
-malakh | Ameri | al | Yisra'el
-sheteim | esreh | shanah
+malakh | Ameri | al | Yisra'el | sheteim | esreh | shanah
 Betirtzah | malakh | shesh | shanim
 
 16:24

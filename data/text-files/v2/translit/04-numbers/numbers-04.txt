@@ -17,8 +17,7 @@ zot | avodat | benei | Kehat | be'ohel | mo'ed | kodesh | hakodashim
 
 4:5
 uva | Aharon | uvanav | binsoa | hamachaneh
-vehoridu
-et | parokhet | hamasakh
+vehoridu | et | parokhet | hamasakh
 vekhisu | vah
 et | aron | ha'edut
 
@@ -34,16 +33,12 @@ alav | yihyeh
 
 4:8
 ufaresu | aleihem | beged | tola'at | shani
-vekhisu | oto | bemikhseh
-or | tachash
-vesamu
-et | badav
+vekhisu | oto | bemikhseh | or | tachash
+vesamu | et | badav
 
 4:9
 velakechu | beged | tekhelet
-vekhisu | et | menorat | hama'or | ve'et | neroteiha
-ve'et | malkacheiha
-ve'et | machtoteiha
+vekhisu | et | menorat | hama'or | ve'et | neroteiha | ve'et | malkacheiha | ve'et | machtoteiha
 ve'et | kol | kelei | shamnah | asher | yesharetu | lah | bahem
 
 4:10
@@ -52,10 +47,8 @@ or | tachash | venatenu | al | hamot
 
 4:11
 ve'al | mizbach | hazahav | yifresu | beged | tekhelet
-vekhisu | oto | bemikhseh
-or | tachash
-vesamu
-et | badav
+vekhisu | oto | bemikhseh | or | tachash
+vesamu | et | badav
 
 4:12
 velakechu | et | kol | kelei | hasharet | asher | yesharetu | vam | bakodesh | venatenu | el | beged | tekhelet
@@ -63,8 +56,7 @@ vekhisu | otam | bemikhseh
 or | tachash | venatenu | al | hamot
 
 4:13
-vedishenu
-et | hamizbeach
+vedishenu | et | hamizbeach
 ufaresu | alav | beged
 argaman
 
@@ -93,8 +85,7 @@ vaydaber | Yahweh | el | Mosheh
 ve'el | Aharon | lemor
 
 4:18
-al | takhritu
-et | shevet | mishpechot | hakehati | mitokh | halviyim
+al | takhritu | et | shevet | mishpechot | hakehati | mitokh | halviyim
 
 4:19
 vezot | asu | lahem | vechayu
@@ -140,13 +131,11 @@ ve'avadu
 al | pi | Aharon
 uvanav | tihyeh | kol | avodat | benei | hagereshuni
 lekhol | masa'am | ulekhol | avodatam
-ufekadtem | alehem | bemishmeret
-et | kol | masa'am
+ufekadtem | alehem | bemishmeret | et | kol | masa'am
 
 4:28
 zot | avodat | mishpechot | benei | hagereshuni | be'ohel | mo'ed
-umishmartam
-beyad | Itamar | ben | Aharon | hakohen
+umishmartam | beyad | Itamar | ben | Aharon | hakohen
 
 4:29
 benei | Merari | lemishpechotam | leveit | avotam | tifkod | otam

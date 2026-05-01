@@ -68,10 +68,8 @@ Ve'utz | Vechul
 Vegeter | Vameshekh
 
 1:18
-Ve'arpakhshad
-yalad | et | Shalach
-Veshelach
-yalad | et | Ever
+Ve'arpakhshad | yalad | et | Shalach
+Veshelach | yalad | et | Ever
 
 1:19
 Ule'ever | yulad | shenei | vanim
@@ -114,8 +112,7 @@ hu | Avraham
 benei | Avraham | Yitzchak | Veyishma'el
 
 1:29
-eleh | toledotam
-bekhor | Yishma'el | Nevayot
+eleh | toledotam | bekhor | Yishma'el | Nevayot
 Vekedar | Ve'adbe'el | Umivsam
 
 1:30
@@ -124,8 +121,7 @@ Mishma | Vedumah | Masa | Chadad | Veteima
 1:31
 Yetur | Nafish
 Vakedemah
-eleh | hem
-benei | Yishma'el
+eleh | hem | benei | Yishma'el
 
 1:32
 uvenei | Keturah | pilegesh | Avraham | yaldah | et | Zimran | Veyakeshan

@@ -50,8 +50,7 @@ vatikra | et | shemo | Gad
 vateled | Zilpah | shifchat | Le'ah | ben | sheni | Leya'ako
 
 30:13
-vatomer | Le'ah | be'asheri
-ki | isheruni | banot
+vatomer | Le'ah | be'asheri | ki | isheruni | banot
 vatikra | et | shemo | Asher
 
 30:14
@@ -89,8 +88,7 @@ hapa'am | yizbeleni | ishi | ki | yaladti | lo | shishah | vanim
 vatikra | et | shemo | Zevulun
 
 30:21
-ve'achar
-yaldah | bat
+ve'achar | yaldah | bat
 vatikra | et | shemah | Dinah
 
 30:22
@@ -109,8 +107,8 @@ ben | acher
 
 30:25
 vayhi | ka'asher | yaldah | Rachel | et | Yosef
-vaiyomer | Ya'ako | el | Lavan
-shalecheni | ve'elekhah | el | mekomi | ule'artzi
+vaiyomer | Ya'ako | el | Lavan | shalecheni | ve'elekhah | el | mekomi
+ule'artzi
 
 30:26
 tenah | et | nashai | ve'et | yeladai | asher | avadti | otekha | bahen
@@ -123,13 +121,11 @@ be'eineikha | Nichashti
 vayvarakheni | Yahweh | biglalekha
 
 30:28
-vaiyomar
-nakevah | sekharekha | alai | ve'etenah
+vaiyomar | nakevah | sekharekha | alai | ve'etenah
 
 30:29
 vaiyomer | elav | atah | yada'ta | et | asher | avadtikha
-ve'et | asher | hayah | miknecha
-iti
+ve'et | asher | hayah | miknecha | iti
 
 30:30
 ki | me'at | asher | hayah | lekha | lefanai | vaiyifrotz | laro
@@ -180,8 +176,7 @@ vaiyechamnah | bevo'an | lishtot
 
 30:39
 vaiyechemu | hatzon | el | hamaklot
-vateladna | hatzon
-akudim | nekudim
+vateladna | hatzon | akudim | nekudim
 utelu'im
 
 30:40

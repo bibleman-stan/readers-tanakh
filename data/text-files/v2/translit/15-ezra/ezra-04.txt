@@ -35,8 +35,7 @@ Virushalim
 
 4:7
 uvimei | Artachshasta | katav | Bishlam | Mitredat | Tave'el | ushe'ar | kenavotov
-al | Artachshasta | melekh | Paras | ukhetav | hanishtevan
-katuv | aramit
+al | Artachshasta | melekh | Paras | ukhetav | hanishtevan | katuv | aramit
 umeturgam | aramit
 
 4:8
@@ -52,8 +51,7 @@ elemaye
 
 4:10
 ushe'ar | umaiya | di | hagli | Asenapar | raba | veyakira
-vehotev | himo | bekiryah
-di | Shamerayin
+vehotev | himo | bekiryah | di | Shamerayin
 ushe'ar | avar | naharah | ukhe'enet
 
 4:11
@@ -67,16 +65,14 @@ di | yehudaye | di | seliku | min | levatakh | aleina | ato | Lirushelem
 kiryeta | maradeta
 uviyosheta | banayin
 veshuraiya | shakhlilu
-ve'ushaiya
-yachitu
+ve'ushaiya | yachitu
 
 4:13
 ke'an | yedia | leheve | lemalka
 di | hen | kiryeta | dokh | titbene
 veshuraiyah | yishtakhlelun
 mindah | velo | vahalokh | la | yintenun
-ve'apetom | malkhim
-tehanzik
+ve'apetom | malkhim | tehanzik
 
 4:14
 ke'an | kol | kovel | di | melach | heikhela | melachna
@@ -96,8 +92,7 @@ hacharevat
 4:16
 mehod'in | anachnah | lemalka
 di | hen | kiryeta | dokh | titbene
-veshuraiyah | yishtakhlelun | lokovel | denah
-chalak | ba'avar | nahara
+veshuraiyah | yishtakhlelun | lokovel | denah | chalak | ba'avar | nahara
 la | itai | lakh
 
 4:17
@@ -120,8 +115,7 @@ veshalitin | bekhol | avar | naharah
 umidah | velo | vahalakh | mityehev | lehon
 
 4:21
-ke'an | simu | te'em | levatala
-guvraiya | ilekh
+ke'an | simu | te'em | levatala | guvraiya | ilekh
 vekiryeta | dokh | la | titbene | ad | mini
 ta'ma | yitesam
 

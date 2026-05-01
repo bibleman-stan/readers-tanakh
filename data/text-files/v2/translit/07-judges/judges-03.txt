@@ -1,13 +1,11 @@
 3:1
 ve'eleh | hagoyim | asher | hiniach | Yahweh | lenasot | bam
 et | Yisra'el
-et | kol | asher | lo | yade'u
-et | kol | milchamot | Kena'an
+et | kol | asher | lo | yade'u | et | kol | milchamot | Kena'an
 
 3:2
 rak | lema'an | da'at | dorot | benei | Yisra'el | lelamedam
-milchamah | rak | asher | lefanim
-lo | yeda'um
+milchamah | rak | asher | lefanim | lo | yeda'um
 
 3:3
 chameshet | sarnei | felishtim | vekhol | hakena'ani | vehatzidoni
@@ -37,8 +35,7 @@ vaiya'avdu | et | habe'alim | ve'et | ha'asherot
 
 3:8
 vaiyichar | af | Yahweh | Beyisra'el
-vaiyimkerem | beyad | Kushan | Rish'atayim | melekh
-Aram | Naharayim
+vaiyimkerem | beyad | Kushan | Rish'atayim | melekh | Aram | Naharayim
 vaiya'avdu | venei | Yisra'el | et | Kushan | Rish'atayim | shemoneh | shanim
 
 3:9
@@ -118,8 +115,7 @@ vena'al
 
 3:24
 vehu | yatza | va'avadav | ba'u
-vaiyir'u
-vehineh | daltot | ha'aliyah | ne'ulot
+vaiyir'u | vehineh | daltot | ha'aliyah | ne'ulot
 vaiyomeru
 akh | mesikh | hu | et | raglav | bachadar | hamekerah
 

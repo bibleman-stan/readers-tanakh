@@ -1,6 +1,5 @@
 35:1
-vaydaber | Yahweh | el | Mosheh | Be'arvot | Mo'av
-al | Yarden | Yerecho | lemor
+vaydaber | Yahweh | el | Mosheh | Be'arvot | Mo'av | al | Yarden | Yerecho | lemor
 
 35:2
 tzav | et | benei | Yisra'el
@@ -28,8 +27,7 @@ asher | titenu | lanus | shamah | harotzeach
 va'aleihem | titenu | arba'im | ushetayim | ir
 
 35:7
-kol | he'arim | asher | titenu | lalviyim | arba'im | ushemoneh | ir
-ethen | ve'et | migresheihen
+kol | he'arim | asher | titenu | lalviyim | arba'im | ushemoneh | ir | ethen | ve'et | migresheihen
 
 35:8
 vehe'arim | asher | titenu | me'achuzat | benei | Yisra'el
@@ -85,8 +83,7 @@ mot | yumat | harotzeach
 
 35:19
 go'el | hadam
-hu | yamit | et | harotzeach | befig'ov | vo
-hu | yemitenu
+hu | yamit | et | harotzeach | befig'ov | vo | hu | yemitenu
 
 35:20
 ve'im | besin'ah | yehdafenu
@@ -130,8 +127,7 @@ dam
 35:28
 ki | ve'ir | miklato | yeshev | ad | mot
 hakohen | hagadol | ve'acharei | mot | hakohen | hagadol
-yashuv | harotzeach | el | eretz
-achuzato
+yashuv | harotzeach | el | eretz | achuzato
 
 35:29
 vehayu | eleh | lakhem | lechukat | mishpat | ledoroteikhem | bekhol | moshevoteikhem
@@ -141,9 +137,7 @@ kol | makeh | nefesh | lefi | edim | yirtzach | et | harotzeach
 ve'ed | echad | lo | ya'aneh | venefesh | lamut
 
 35:31
-velo | tikchu | khofer | lenefesh | rotzeach | asher | hu | rasha
-lamut
-ki | mot
+velo | tikchu | khofer | lenefesh | rotzeach | asher | hu | rasha | lamut | ki | mot
 yumat
 
 35:32
@@ -151,11 +145,9 @@ velo | tikchu | khofer | lanus | el | ir | miklato | lashuv | lashevet | ba'aret
 hakohen
 
 35:33
-velo | tachanifu | et | ha'aretz | asher | atem | bah
-ki | hadam
+velo | tachanifu | et | ha'aretz | asher | atem | bah | ki | hadam
 hu | yachanif | et | ha'aretz
-vela'aretz | lo | yekhupar | ladam | asher | shupakh | bah
-ki | im | bedam | shofekho
+vela'aretz | lo | yekhupar | ladam | asher | shupakh | bah | ki | im | bedam | shofekho
 
 35:34
 velo | tetame | et | ha'aretz | asher | atem | yoshevim | bah

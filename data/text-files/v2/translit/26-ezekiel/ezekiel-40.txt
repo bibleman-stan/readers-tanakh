@@ -32,8 +32,7 @@ kaneh | echad
 vaiyavo | el | sha'ar | asher | panav | derekh | hakadimah
 vaiya'al | bema'alotov
 vaiyamod | et | saf | hasha'ar | kaneh | echad | rochav
-ve'et | saf | echad
-kaneh | echad | rochav
+ve'et | saf | echad | kaneh | echad | rochav
 
 40:7
 vehata | kaneh | echad | orekh | vekaneh | echad | rochav
@@ -59,8 +58,7 @@ umidah | achat | la'eilim | mipoh
 umipo
 
 40:11
-vaiyamod | et | rochav | petach | hasha'ar
-eser | amot | orekh | hasha'ar
+vaiyamod | et | rochav | petach | hasha'ar | eser | amot | orekh | hasha'ar
 sheloosh | esreh | amot
 
 40:12
@@ -270,8 +268,7 @@ lifnei | habayit
 
 40:48
 vayvi'eni | el | ulam | habayit
-vaiyamod | el | ulam
-chamesh | amot | mipoh
+vaiyamod | el | ulam | chamesh | amot | mipoh
 vechamesh | amot | mipoh
 verochav | hasha'ar
 shalosh | amot | mipo
