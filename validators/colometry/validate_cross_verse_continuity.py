@@ -92,6 +92,14 @@ V1_DIR = REPO_ROOT / "data" / "text-files" / "v1" / "he-baseline"
 V2_DIR = REPO_ROOT / "data" / "text-files" / "v2" / "he"
 
 # ---------------------------------------------------------------------------
+# Shared morphology + morph-alignment helpers
+# ---------------------------------------------------------------------------
+# Make _shared importable when this script is run as __main__.
+sys.path.insert(0, str(REPO_ROOT / "validators"))
+from _shared import morphology as M   # noqa: E402
+from _shared import morph_alignment as MA  # noqa: E402
+
+# ---------------------------------------------------------------------------
 # Hebrew Unicode helpers
 # ---------------------------------------------------------------------------
 
@@ -337,10 +345,20 @@ def parse_chapter_file(path: Path) -> list[VerseBlock]:
 def analyze_verse_pair(
     verse_n: VerseBlock,
     verse_n1: VerseBlock,
+    last_token_tags: "list[str] | None" = None,
+    first_token_tags: "list[str] | None" = None,
 ) -> dict | None:
     """
     Check whether verse_n ends in a continuation-licensing pattern
     whose grammatical completion is verse_n1's opening.
+
+    Args:
+        verse_n: The earlier verse block.
+        verse_n1: The later verse block.
+        last_token_tags: TAHOT morph tag list for the LAST token of verse_n's
+            last cola (from morph_alignment). None → skel-heuristic fallback.
+        first_token_tags: TAHOT morph tag list for the FIRST token of verse_n1's
+            first cola. None → skel-heuristic fallback.
 
     Returns a finding dict if a violation is detected, else None.
     """
@@ -439,9 +457,30 @@ def analyze_verse_pair(
     # in sof pasuq at the MT level (the MT boundary is always ׃). If the
     # cola's last token does NOT carry ׃ AND the next verse starts with an
     # articulated noun, we have a cross-verse construct chain split.
+    #
+    # TAHOT tag enhancement: when last_token_tags is available, use
+    # is_construct_head_token(tag_list=...) to confirm the regens morphologically
+    # and upgrade confidence annotation in the finding brief.
     last_raw_token = last.tokens[-1] if last.tokens else ""
     if not last_raw_token.endswith(SOF_PASUQ):
         if starts_with_article(first_of_next):
+            # Tag-aware regens confirmation.
+            tag_confirms_construct = M.is_construct_head_token(
+                last_raw_token, tag_list=last_token_tags
+            )
+            if tag_confirms_construct:
+                brief_detail = (
+                    f"possible construct regens at end of {verse_n.ref} "
+                    f"(TAHOT-confirmed construct state, no sof pasuq) + "
+                    f"articulated rectum opens {verse_n1.ref}; "
+                    f"cross-verse construct chain — merge required"
+                )
+            else:
+                brief_detail = (
+                    f"possible construct regens at end of {verse_n.ref} "
+                    f"(no sof pasuq on cola) + articulated rectum opens {verse_n1.ref}; "
+                    f"cross-verse construct chain — merge required"
+                )
             return {
                 "verse_n_ref": verse_n.ref,
                 "verse_n1_ref": verse_n1.ref,
@@ -449,11 +488,8 @@ def analyze_verse_pair(
                 "first_cola_line": first.line_num,
                 "pattern": "construct-chain-cross-verse",
                 "severity": "STRONG-MERGE-CANDIDATE",
-                "brief": (
-                    f"possible construct regens at end of {verse_n.ref} "
-                    f"(no sof pasuq on cola) + articulated rectum opens {verse_n1.ref}; "
-                    f"cross-verse construct chain — merge required"
-                ),
+                "tag_confirms_construct": tag_confirms_construct,
+                "brief": brief_detail,
                 "last_cola_text": last.text,
                 "first_cola_text": first.text,
             }
@@ -517,16 +553,92 @@ def analyze_verse_pair(
 # Per-file scanner
 # ---------------------------------------------------------------------------
 
+def _get_boundary_tags(
+    chapter_morph: "dict[int, list[str]] | None",
+    verse_block: VerseBlock,
+    token_index: int,  # -1 for last token, 0 for first token
+) -> "list[str] | None":
+    """Return TAHOT tag list for a boundary token in a verse block.
+
+    Args:
+        chapter_morph: verse_num → [ortho_tag, ...] mapping from MA.load_chapter_morph.
+        verse_block: The VerseBlock whose boundary token we want.
+        token_index: -1 to get the last token of the last cola (verse N end),
+                      0 to get the first token of the first cola (verse N+1 start).
+
+    Returns:
+        The tag list for that token, or None if morph data is unavailable or
+        the alignment fails (caller falls back to skel-heuristics).
+    """
+    if chapter_morph is None or not verse_block.cola:
+        return None
+
+    verse_num_str = verse_block.ref.split(":")
+    if len(verse_num_str) != 2:
+        return None
+    try:
+        verse_num = int(verse_num_str[1])
+    except ValueError:
+        return None
+
+    ortho_tags = chapter_morph.get(verse_num)
+    if ortho_tags is None:
+        return None
+
+    # Build content lines for this verse (no blank lines, no verse-ref lines).
+    verse_lines = [c.text for c in verse_block.cola if c.text.strip()]
+    if not verse_lines:
+        return None
+
+    verse_token_tags = MA.align_verse_tokens_to_tags(verse_lines, ortho_tags)
+    if verse_token_tags is None:
+        return None
+
+    if token_index == -1:
+        # Last token of last cola: last line, last token.
+        if not verse_token_tags:
+            return None
+        last_line_tags = verse_token_tags[-1]
+        if not last_line_tags:
+            return None
+        return last_line_tags[-1]
+    else:
+        # First token (index 0) of first cola: first line, first token.
+        if not verse_token_tags:
+            return None
+        first_line_tags = verse_token_tags[0]
+        if not first_line_tags:
+            return None
+        return first_line_tags[0]
+
+
 def scan_file(path: Path, verbose: bool = False) -> list[dict]:
-    """Scan one chapter file for Rule H10 cross-verse continuity violations."""
+    """Scan one chapter file for Rule H10 cross-verse continuity violations.
+
+    Uses TAHOT morph tags (via morph_alignment) when available to classify
+    the boundary tokens (last of verse N, first of verse N+1) as construct-state
+    heads. Falls back to skel-heuristics when tags are missing or alignment fails.
+    """
     blocks = parse_chapter_file(path)
     violations = []
+
+    # Load TAHOT morph alignment for this chapter (None if v0/morph file absent).
+    chapter_morph = MA.load_chapter_morph(path)
 
     for idx in range(len(blocks) - 1):
         verse_n = blocks[idx]
         verse_n1 = blocks[idx + 1]
 
-        finding = analyze_verse_pair(verse_n, verse_n1)
+        # Retrieve boundary-token tag lists for TAHOT-aware construct detection.
+        # Graceful fallback: returns None when morph is unavailable or alignment fails.
+        last_token_tags = _get_boundary_tags(chapter_morph, verse_n, token_index=-1)
+        first_token_tags = _get_boundary_tags(chapter_morph, verse_n1, token_index=0)
+
+        finding = analyze_verse_pair(
+            verse_n, verse_n1,
+            last_token_tags=last_token_tags,
+            first_token_tags=first_token_tags,
+        )
         if finding:
             finding["file"] = path.name
             finding["file_path"] = path
