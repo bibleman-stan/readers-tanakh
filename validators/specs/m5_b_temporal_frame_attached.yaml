@@ -1,0 +1,80 @@
+name: m5_b_temporal_frame_attached
+rule: M5
+subcase: temporal_frame_attached
+severity: STRONG-MERGE-CANDIDATE
+description: |
+  Bare temporal frame (multi-token, no finite verb anywhere) attaches to its
+  governing main clause on the next line. Per canon §1 (atomic thought) and
+  §5.0 (No-Anchor Test), a line with no finite verb is grammatically
+  incomplete; the temporal frame answers "when" but completes no thought
+  by itself.
+
+  Sibling pattern to m5_bare_wayehi_attached, which covers single-token
+  bare ויהי. This spec covers MULTI-token bare temporal frames WITHOUT
+  ויהי — date formulas, chronological frames, time-anchor protases.
+
+  Stan-flagged 2026-05-01: Exo 19:1 has the temporal frame
+  בַּחֹדֶשׁ הַשְּׁלִישִׁי לְצֵאת בְּנֵי־יִשְׂרָאֵל מֵאֶרֶץ מִצְרָיִם בַּיּוֹם הַזֶּה
+  split from its governing main verb בָּאוּ — breaking the ATU. Per Stan,
+  parallel to the BoFM project's FEF (front-end frame) discovery: as the
+  ATU concept emerged it became clear these CANNOT be split — frame and
+  main clause are indivisible regardless of length. Cap set to 25 (same
+  precedent as m4_solo_speech_verb's speech-complement exemption).
+
+  Trigger: line N starts with a TEMPORAL frame opener (closed-list bound-
+  prep + temporal-noun, OR standalone temporal connective) AND has NO
+  finite verb anywhere. Line N+1 starts with a finite verb (the main
+  clause completion).
+
+  Closed lexicons (intentionally tight to start; expand iteratively):
+    - Temporal nouns (TEMPORAL_NOUN_SKELS): יום/חדש/שנה/שבת/מועד/בקר/
+      ערב/לילה/צהרים/עת + plural/construct variants
+    - Temporal connectives (TEMPORAL_CONNECTIVE_SKELS): אחרי/אחר/
+      מקץ/כאשר/בטרם/בעוד/מאז + variants
+    - Bound preps (TEMPORAL_BOUND_PREPS): ב/כ/מ/ל
+
+  FP guards (audit-C 2026-05-01):
+    - Locative fronting (בַּמָּקוֹם הַהוּא) — suppressed by tight TEMPORAL_NOUN_
+      SKELS (מָקוֹם / אֶרֶץ / הַר / בַּיִת not in lexicon).
+    - Casus pendens / topicalization — typically subject-NP, not bound-prep+
+      noun; suppressed by trigger requiring temporal-frame-opener pattern.
+    - Conditional protasis without אִם — rare in prose; poetic_register
+      guard catches Sifrei Emet cases; non-poetic prose cases rare and
+      will surface in cascade FP audit.
+
+  Examples:
+    Exo 19:1:
+      Before: בַּחֹדֶשׁ הַשְּׁלִישִׁי לְצֵאת בְּנֵי־יִשְׂרָאֵל מֵאֶרֶץ מִצְרָיִם בַּיּוֹם הַזֶּה
+              בָּאוּ מִדְבַּר סִינָי׃
+      After:  בַּחֹדֶשׁ הַשְּׁלִישִׁי לְצֵאת בְּנֵי־יִשְׂרָאֵל מֵאֶרֶץ מִצְרָיִם בַּיּוֹם הַזֶּה בָּאוּ מִדְבַּר סִינָי׃
+
+  Architectural note (2026-05-01): designed after parallel diagnostic audit
+  triad (canon-position / corpus-enumeration / cross-rule integrity).
+  Audit-B identified ~578 corpus candidates of this class shape; audit-C
+  identified locative + casus-pendens + conditional FP risks; audit-A
+  initially recommended (b) keep two cola but Stan over-rode based on the
+  No-Anchor Test (frame is grammatically incomplete → cannot be its own
+  ATU).
+
+trigger:
+  line_n_first_token:
+    morphology: temporal_frame_opener
+  line_n_anywhere:
+    has_finite_verb: false
+  line_n1_first_token:
+    morphology: finite_verb
+  combined_max_prosodic_words: 25
+
+guards:
+  - poetic_register
+  - prev_line_incomplete            # ensure line N is a fresh frame, not
+                                     # a continuation of a stranded clause
+  # Intentionally NOT next_line_is_wayyiqtol / next_line_is_vav_coord_pp /
+  # next_line_is_vav_coord_np: this spec WANTS line N+1 to be the
+  # completing main clause (typically wayyiqtol-headed). The post-S3/S4-
+  # split-protection these guards provide does not apply here — the trigger
+  # already requires line N to be a bare temporal frame, which is not a
+  # post-split residue.
+
+annotation_template: "M5b temporal frame + main clause merge ({pwc} prosodic words)"
+suggested_action: MERGE

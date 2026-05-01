@@ -209,6 +209,8 @@ def _check_morphology(tok: str, morph: str, tag_list: Optional[list[str]] = None
         return M.is_m2_pp_verb_token(tok)
     if morph == "motion_locus_verb":
         return M.is_motion_locus_verb_token(tok, tag_list=tag_list)
+    if morph == "temporal_frame_opener":
+        return M.is_temporal_frame_opener_token(tok, tag_list=tag_list)
     if morph == "do_marker":
         return M.is_do_marker_token(tok, tag_list=tag_list)
     if morph == "bare_do_marker":
@@ -785,9 +787,12 @@ def _evaluate_line_trigger(spec: Spec, line: str, ctx: dict[str, Any]) -> list[i
     line_anywhere = t.get("line_anywhere", {})
 
     # coordinated_pp_count: {min: N} — count vav-coord PP heads + initial bare PP
+    # Tag-aware: pass per-token tags so PP-head classifiers distinguish
+    # negation+verb (וְאַל־VERB) from genuine vav-prep (וְאֶל), avoiding S1
+    # over-fire that oscillates with M-class merges (Obadiah 1:13 case).
     if "coordinated_pp_count" in line_anywhere:
         cond = line_anywhere["coordinated_pp_count"]
-        positions = M.coordinated_pp_split_positions(line)
+        positions = M.coordinated_pp_split_positions(line, ctx.get("line_n_token_tags"))
         if "min" in cond and not positions:
             return []
         return positions

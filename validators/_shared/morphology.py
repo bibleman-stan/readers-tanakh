@@ -1202,11 +1202,19 @@ VAV_BOUND_PREP_NON_PP_FALSE_POSITIVES = {
 }
 
 
-def is_vav_coord_pp_head(token: str) -> bool:
+def is_vav_coord_pp_head(token: str, tag_list: list[str] | None = None) -> bool:
     """True if token is a vav-prefixed PP head — וְאֶל, וְעַל, וְעִם, וּבְ-NN, וּלְ-NN, וּכְ-NN, וּמְ-NN.
 
     Used by S1 (coordinated-PP enumeration split). A vav-coord PP head
     introduces a new coordinated-PP member in a list.
+
+    Tag-aware path (2026-05-01): when TAHOT tags are available, the token
+    must contain an `R` (preposition) marker in its morpheme chain — this
+    disambiguates skel collisions like `וְאֵל`/`וְאֶל` (and-to, prep, R)
+    vs. `וְאַל` (and-NOT, negation particle, Tn) which both have skel
+    "ואל" but differ in tag chain. Without the tag check, S1 over-fires on
+    negation+verb compounds (e.g., Obadiah 1:13 `וְאַל־תִּשְׁלַחְנָה`),
+    creating an oscillation with M-class merges that re-form the line.
 
     Niqqud-aware mem-discrimination (2026-04-29): when prefix is mem, requires
     the מן-prep signature (hireq + dagesh-on-next-consonant) to disambiguate
@@ -1216,6 +1224,19 @@ def is_vav_coord_pp_head(token: str) -> bool:
     are negations/adverbs/interrogatives (וְלֹא, וְלָכֵן, וְלָמָּה) are not PP
     heads — closed-list exclusion via VAV_BOUND_PREP_NON_PP_FALSE_POSITIVES.
     """
+    # Tag-aware authoritative check when available.
+    if tag_list:
+        from . import morph_tags as MT
+        # Token may carry multiple tags (compound). Require at least one tag
+        # whose morpheme chain contains R (prep). If no R anywhere → not a PP.
+        has_prep = False
+        for tag in tag_list:
+            chain = MT.morpheme_chain(tag)
+            if any(m and m[0] == "R" for m in chain):
+                has_prep = True
+                break
+        if not has_prep:
+            return False
     if MAQQEF in token:
         head = token.split(MAQQEF, 1)[0]
         s = skel(head)
@@ -1243,10 +1264,25 @@ def is_vav_coord_pp_head(token: str) -> bool:
     return False
 
 
-def is_bare_prep_head(token: str) -> bool:
+def is_bare_prep_head(token: str, tag_list: list[str] | None = None) -> bool:
     """True if token starts a PP without vav-conjunction — בִדְגַת / לְ-NN / בְּ-NN / מִן /
     אֶל / עַל. Used by S1 to count the FIRST PP in an enumeration (no vav prefix).
+
+    Tag-aware path (2026-05-01): when TAHOT tags are available, require
+    morpheme chain to contain `R` (preposition). Disambiguates skel
+    collisions where a bound-prep-shaped first letter is part of a non-prep
+    word (e.g., negation `אַל` skel "אל" vs. preposition `אֶל` skel "אל").
     """
+    if tag_list:
+        from . import morph_tags as MT
+        has_prep = False
+        for tag in tag_list:
+            chain = MT.morpheme_chain(tag)
+            if any(m and m[0] == "R" for m in chain):
+                has_prep = True
+                break
+        if not has_prep:
+            return False
     if MAQQEF in token:
         head = token.split(MAQQEF, 1)[0]
         s = skel(head)
@@ -1297,7 +1333,10 @@ def wayyiqtol_mid_line_split_positions(line: str) -> list[int]:
     return positions
 
 
-def coordinated_pp_split_positions(line: str) -> list[int]:
+def coordinated_pp_split_positions(
+    line: str,
+    tag_lists: list[list[str]] | None = None,
+) -> list[int]:
     """Return token indices in `line` where a SPLIT should be inserted to break
     a coordinated-PP enumeration into one-PP-per-line. Returns empty list if
     the line has fewer than 3 PP heads (no enumeration to split).
@@ -1305,6 +1344,12 @@ def coordinated_pp_split_positions(line: str) -> list[int]:
     Algorithm: walk tokens; tag each as PP-head (initial bare-PP) or
     vav-coord-PP-head; if total PP-heads ≥ 3, return token indices of every
     vav-coord-PP-head (split-before positions).
+
+    When `tag_lists` is provided (per-token TAHOT tag-lists), the PP-head
+    classifiers consume the tags to disambiguate skel collisions like
+    `וְאַל` (and-NOT, not a PP) vs. `וְאֶל` (and-TO, PP). The skel-only
+    path mistakenly counts negations + verb compounds as PP heads, producing
+    spurious S1 splits and oscillation with M-class merges.
     """
     toks = tokens(line)
     if len(toks) < 4:
@@ -1312,10 +1357,11 @@ def coordinated_pp_split_positions(line: str) -> list[int]:
     pp_indices: list[int] = []
     vav_coord_indices: list[int] = []
     for i, tok in enumerate(toks):
-        if is_vav_coord_pp_head(tok):
+        tl = tag_lists[i] if (tag_lists is not None and i < len(tag_lists)) else None
+        if is_vav_coord_pp_head(tok, tag_list=tl):
             pp_indices.append(i)
             vav_coord_indices.append(i)
-        elif is_bare_prep_head(tok):
+        elif is_bare_prep_head(tok, tag_list=tl):
             pp_indices.append(i)
     if len(pp_indices) < 3:
         return []
@@ -2124,3 +2170,93 @@ def is_motion_locus_verb_token(token: str, tag_list: list[str] | None = None) ->
 def motion_locus_verb_allowed_preps(token: str) -> tuple[str, ...]:
     """Return allowed locus-prep skeletons for the given motion verb, or empty tuple."""
     return MOTION_LOCUS_VERB_SKELETONS.get(skel(token), ())
+
+
+# ─── M5.b: temporal-frame opener (bound-prep + temporal-noun, OR temporal connective) ─
+#
+# A bare temporal frame (grammatically incomplete: no finite verb anywhere
+# on the line) is the first half of an atomic thought unit. Its main verb
+# completes the thought on the next line. Per Stan 2026-05-01: "as the ATU
+# concept came into focus, it also became clear these actually COULDN'T be
+# split" — frame and main clause are indivisible regardless of length.
+#
+# Sibling concept: m5_bare_wayehi_attached covers single-token bare ויהי.
+# This covers MULTI-token bare temporal frames without ויהי.
+#
+# Closed lexicons start tight; expand iteratively after FP audit.
+
+# Temporal-noun skels — must be paired with a bound-prep prefix to qualify.
+TEMPORAL_NOUN_SKELS: frozenset[str] = frozenset({
+    "יום", "ימים", "יומים", "יומם",
+    "חדש", "חדשים", "חדשי",
+    "שנה", "שנת", "שנים", "שני",
+    "שבת", "שבתות", "שבתון",
+    "מועד", "מועדים", "מועדי",
+    "בקר", "בקרים",
+    "ערב", "ערבים", "ערבית",
+    "לילה", "ליל", "לילות",
+    "צהרים",
+    "עת", "עתים", "עתות", "עתי",
+    "חצות", "חצי",  # midnight / half (temporal use)
+})
+
+# Standalone temporal connectives (already include their own preposition or
+# function as time-clause openers). Closed list — exclude ambiguous tokens
+# like כי (also "because", "that") and עד (also locative).
+TEMPORAL_CONNECTIVE_SKELS: frozenset[str] = frozenset({
+    "אחרי", "אחר", "אחריכן", "אחרכן",
+    "טרם", "בטרם",
+    "מקץ", "מקצה",
+    "כאשר",
+    "לפנות",  # "toward [the time of]"
+    "בעוד",   # "while still"
+    "מאז",    # "since"
+})
+
+# Bound-prep prefixes that combine with a temporal noun to form a temporal frame.
+# Single-character; appear as the first consonant of the skeleton.
+TEMPORAL_BOUND_PREPS: frozenset[str] = frozenset({"ב", "כ", "מ", "ל"})
+
+
+def is_temporal_frame_opener_token(
+    token: str,
+    tag_list: list[str] | None = None,
+) -> bool:
+    """True if token is a bound-prep + temporal-noun (e.g., בַּחֹדֶשׁ, בַּיּוֹם, מִקֵּץ)
+    OR a standalone temporal connective (אַחֲרֵי, כַּאֲשֶׁר, etc.).
+
+    Used by spec-runner _check_morphology('temporal_frame_opener') to gate
+    the m5_b temporal-frame-attached merge spec.
+
+    Tag-aware path (when available): when the TAHOT tag head is `N*` (noun)
+    AND the morpheme chain contains an `R` (preposition) marker, the skel
+    after stripping the bound-prep prefix is checked against the closed
+    temporal-noun lexicon. The tag distinguishes a true bound-prep+noun
+    pattern from look-alikes (e.g., a verb form whose skel happens to start
+    with vav+letter that resembles a bound-prep).
+    """
+    # Maqqef-bound: only inspect the head sub-token (the prep+noun half).
+    if MAQQEF in token:
+        s = skel(token.split(MAQQEF, 1)[0])
+    else:
+        s = skel(token)
+
+    # Standalone temporal connective (skel match — these are unambiguous).
+    if s in TEMPORAL_CONNECTIVE_SKELS:
+        return True
+
+    # Bound-prep + temporal-noun shape
+    if len(s) >= 2 and s[0] in TEMPORAL_BOUND_PREPS:
+        inner = s[1:]
+        if inner in TEMPORAL_NOUN_SKELS:
+            # Tag-aware confirmation when available: head should be a noun.
+            # When tags absent, accept the skel pattern (the closed noun
+            # lexicon makes this safe — "חדש" / "יום" are not verbs).
+            if tag_list:
+                from . import morph_tags as MT
+                head = MT.head_morpheme(tag_list[0]) if tag_list[0] else ""
+                if head and head[0] != "N":
+                    return False
+            return True
+
+    return False
