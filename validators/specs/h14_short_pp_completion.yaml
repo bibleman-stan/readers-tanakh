@@ -21,9 +21,14 @@ trigger:
     morphology: prep
   line_n1_last_token:
     morphology: prep
+  line_n1_max_prosodic_words: 1   # ENFORCE single-token PP (the description's
+                                  # "single-token PP" was previously not enforced
+                                  # mechanically — first==last on a 2-token line
+                                  # like "בֵּין בֵּית־אֵל" both classified as prep
+                                  # via bet-prefix FP, producing spurious matches).
   line_n1_anywhere:
     has_finite_verb: false
-  combined_max_prosodic_words: 6
+  combined_max_prosodic_words: 8
 
 guards:
   - poetic_register
