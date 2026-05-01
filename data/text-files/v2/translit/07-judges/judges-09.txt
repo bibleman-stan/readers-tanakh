@@ -78,8 +78,9 @@ ve'im | tovah | asitem | im | Yeruba'al
 ve'im | beito | ve'im | kigmul | yadav | asitem | lo
 
 9:17
-asher | Nilcham | avi | aleikhem | vaiyashlekh | et | nafsho | mineged | vaiyatzel | etkhem
-miyad | Midyan
+asher | Nilcham | avi | aleikhem
+vaiyashlekh | et | nafsho | mineged
+vaiyatzel | etkhem | miyad | Midyan
 
 9:18
 ve'atem | kamtem | al | beit | avi | haiyom
@@ -159,8 +160,7 @@ vehinam | tzarim | et | ha'ir | aleikha
 
 9:32
 ve'atah | kum | laylah | atah
-veha'am | asher | itakh
-ve'ero | basadeh
+veha'am | asher | itakh | ve'ero | basadeh
 
 9:33
 vehayah | vaboker | kizroach | hashemesh
@@ -179,7 +179,8 @@ vaiya'amod
 petach | sha'ar | ha'ir | vaiyakom | Avimelekh | veha'am | asher | ito | min | hama'rav
 
 9:36
-vaiyar | Ga'al | et | ha'am | vaiyomer | el | Zevul | hineh | am | yored | merashei | heharim
+vaiyar | Ga'al | et | ha'am
+vaiyomer | el | Zevul | hineh | am | yored | merashei | heharim
 vaiyomer | elav | Zevul | et | tzel | heharim | atah | ro'eh
 ka'anashim
 
@@ -215,7 +216,8 @@ vaiyagidu | La'avimelekh
 
 9:43
 vaiyikach | et | ha'am | vaiyechetzem | lishloshah | rashim
-vaiye'ero | basadeh | vaiyar | vehineh | ha'am | yotze | min | ha'ir
+vaiye'ero | basadeh
+vaiyar | vehineh | ha'am | yotze | min | ha'ir
 vaiyakom | aleihem | vaiyakem
 
 9:44
@@ -239,14 +241,17 @@ vaiyugad | La'avimelekh | ki | hitkabetzu | kal | ba'alei | migdal | Shekhem
 
 9:48
 vaiya'al | Avimelekh | har | Tzalmon | hu | vekhol | ha'am | asher | ito
-vaiyikach | Avimelekh | et | hakardumot | beyado | vaiyikhrot | sokhat | etzim
+vaiyikach | Avimelekh | et | hakardumot | beyado
+vaiyikhrot | sokhat | etzim
 vaiyisa'eha
 vaiyasem | al | shikhmo
 vaiyomer | el | ha'am | asher | imo | mah | re'item | asiti | maharu
 asu | khamoni
 
 9:49
-vaiyikhretu | gam | kol | ha'am | ish | sokhoh | vaiyelekhu | acharei | Avimelekh | vaiyasimu | al | hatzeriach
+vaiyikhretu | gam | kol | ha'am | ish | sokhoh
+vaiyelekhu | acharei | Avimelekh
+vaiyasimu | al | hatzeriach
 vaiyatzitu | aleihem | et | hatzeriach | ba'esh
 vaiyamutu | gam | kol | anshei | migdal | Shekhem | ke'elef | ish | ve'ishah
 
@@ -271,7 +276,8 @@ vatashlekh | ishah | achat | pelach | rekhev
 al | rosh | Avimelekh | vataritz | et | gulgalto
 
 9:54
-vaiyikra | meherah | el | hana'ar | nose | khelav | vaiyomer | lo | shelof | charbekha
+vaiyikra | meherah | el | hana'ar | nose | khelav
+vaiyomer | lo | shelof | charbekha
 umoteni | pen | yomeru | li | ishah | haragatehu
 vaiyidkerehu | na'aro
 vaiyamot

@@ -120,7 +120,8 @@ et | melekh | Eglon
 
 10:24
 vayhi | kehotzi'am | et | hamelakhim | ha'eleh | el | Yehoshua
-vaiyikra | Yehoshua | el | kol | ish | Yisra'el | vaiyomer | el | ketzinei | anshei | hamilchamah | hehalekhu | ito
+vaiyikra | Yehoshua | el | kol | ish | Yisra'el
+vaiyomer | el | ketzinei | anshei | hamilchamah | hehalekhu | ito
 kirvu | simu | et | ragleikhem | al | tzaverei | hamelakhim | ha'eleh
 vaiyikrevu
 vaiyasimu | et | ragleihem | al | tzavereihem
@@ -162,7 +163,8 @@ ka'asher | asah | lemelekh | Yericho
 10:31
 vaiya'avor | Yehoshua
 vekhol | Yisra'el | imo | Milivnah | Lakhishah
-vaiyichan | aleiha | vaiyilachem | bah
+vaiyichan | aleiha
+vaiyilachem | bah
 
 10:32
 vaiyiten | Yahweh | et | Lakhish | beyad | Yisra'el | vaiyilkedah | baiyom | hasheni
@@ -175,7 +177,9 @@ vaiyakehu | Yehoshua | ve'et | amo | ad | bilti | hish'ir | lo | sarid
 10:34
 vaiya'avor | Yehoshua
 vekhol | Yisra'el | imo | Milakhish
-Eglonah | vaiyachanu | aleiha | vaiyilachamu | aleiha
+Eglonah
+vaiyachanu | aleiha
+vaiyilachamu | aleiha
 
 10:35
 vaiyilkeduha | baiyom | hahu | vaiyakuha | lefi | cherev

@@ -24,7 +24,8 @@ vaiyakrev | Mosheh | et | Aharon | ve'et | banav
 vaiyirchatz | otam | bamayim
 
 8:7
-vaiyiten | alav | et | hakutonet | vaiyachgor | oto | ba'avnet
+vaiyiten | alav | et | hakutonet
+vaiyachgor | oto | ba'avnet
 vaiyalbesh | oto | et | hame'il
 vaiyiten | alav | et | ha'efod
 vaiyachgor | oto | becheshev | ha'efod
@@ -53,7 +54,8 @@ vaiyitzok | mishemen | hamishchah | al | rosh | Aharon
 vaiyimshach | oto | lekadesho
 
 8:13
-vaiyakrev | Mosheh | et | benei | Aharon | vaiyalbishem | kutonot | vaiyachgor | otam | avnet
+vaiyakrev | Mosheh | et | benei | Aharon | vaiyalbishem | kutonot
+vaiyachgor | otam | avnet
 vaiyachavosh | lahem | migba'ot
 ka'asher | tzivah | Yahweh | et | Mosheh
 
@@ -102,13 +104,12 @@ vaiyismekhu | Aharon | uvanav | et | yedeihem | al | rosh | ha'ayil
 8:23
 vaiyishchat | vaiyikach | Mosheh | midamo
 vaiyiten | al | tenukh | ozen | Aharon
-haymanit | ve'al | bohen | yado | haymanit | ve'al | bohen | raglo
-haymanit
+haymanit | ve'al | bohen | yado | haymanit | ve'al | bohen | raglo | haymanit
 
 8:24
-vaiyakrev | et | benei | Aharon | vaiyiten | Mosheh | min | hadam | al | tenukh | azenam | haymanit
-ve'al | bohen | yadam | haymanit | ve'al | bohen | raglam
-haymanit
+vaiyakrev | et | benei | Aharon
+vaiyiten | Mosheh | min | hadam | al | tenukh | azenam | haymanit
+ve'al | bohen | yadam | haymanit | ve'al | bohen | raglam | haymanit
 vaiyizrok | Mosheh | et | hadam | al | hamizbeach | saviv
 
 8:25

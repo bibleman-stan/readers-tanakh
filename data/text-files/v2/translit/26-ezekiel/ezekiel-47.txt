@@ -15,10 +15,8 @@ vaiyamod | elef | ba'amah
 vaiya'avireni | vamayim | mei | afesayim
 
 47:4
-vaiyamod | elef
-vaiya'avireni | vamayim | mayim | birkayim
-vaiyamod | elef
-vaiya'avireni | mei | matenayim
+vaiyamod | elef | vaiya'avireni | vamayim | mayim | birkayim
+vaiyamod | elef | vaiya'avireni | mei | matenayim
 
 47:5
 vaiyamod | elef | nachal | asher | lo | ukhal | la'avor

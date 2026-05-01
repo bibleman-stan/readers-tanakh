@@ -42,7 +42,8 @@ Verachel | ba'ah | im | hatzon | asher | le'aviha | ki | ro'ah | hi
 29:10
 vayhi | ka'asher | ra'ah | Ya'ako | et | Rachel | bat | Lavan | achi | imo
 ve'et | tzon | Lavan | achi | imo
-vaiyigash | Ya'ako | vaiyagel | et | ha'even | me'al | pi | habe'er
+vaiyigash | Ya'ako
+vaiyagel | et | ha'even | me'al | pi | habe'er
 vaiyashk | et | tzon | Lavan | achi | imo
 
 29:11
@@ -151,23 +152,28 @@ Verachel
 akarah
 
 29:32
-vatahar | Le'ah | vateled | ben
+vatahar | Le'ah
+vateled | ben
 vatikra | shemo | Re'uven
 ki | amerah | ki | ra'ah | Yahweh | be'onyi
 ki | atah | ye'ehavani | ishi
 
 29:33
-vatahar | od | vateled | ben
+vatahar | od
+vateled | ben
 vatomer | ki | shama | Yahweh | ki | senu'ah | anokhi
 vaiyiten | li
 gam | et | zeh | vatikra | shemo | Shim'on
 
 29:34
-vatahar | od | vateled | ben
+vatahar | od
+vateled | ben
 vatomer | atah | hapa'am | yilaveh | ishi | elai | ki | yaladti | lo
 sheloshah | vanim | al | ken | kara | shemo | Levi
 
 29:35
-vatahar | od | vateled | ben | vatomer | hapa'am | odeh | et | Yahweh
+vatahar | od
+vateled | ben
+vatomer | hapa'am | odeh | et | Yahweh
 al | ken | kare'ah | shemo | Yehudah
 vata'amod | miledet

@@ -67,7 +67,8 @@ oti | heshiv | al | kani
 ve'oto | talah
 
 41:14
-vaiyishlach | par'oh | vaiyikra | et | Yosef
+vaiyishlach | par'oh
+vaiyikra | et | Yosef
 vayritzuhu | min | habor
 vaygalach | vaychalef | simlotav
 vaiyavo | el | par'oh
@@ -98,8 +99,7 @@ lo | ra'iti | khahenah | bekhol | eretz | Mitzrayim | laroa
 41:20
 vatokhalnah | haparot | harakot
 vehara'ot
-et | sheva | haparot | harishonot
-haberi'ot
+et | sheva | haparot | harishonot | haberi'ot
 
 41:21
 vatavonah | el | kirbenah
@@ -265,8 +265,9 @@ vaiyomer | par'oh | lekhol | Mitzrayim | lekhu | el | Yosef
 asher | yomar | lakhem | ta'asu
 
 41:56
-vehara'av | hayah | al
-kol | penei | ha'aretz | vaiyiftach | Yosef | et | kol | asher | bahem | vaiyishbor | Lemitzrayim
+vehara'av | hayah | al | kol | penei | ha'aretz
+vaiyiftach | Yosef | et | kol | asher | bahem
+vaiyishbor | Lemitzrayim
 vaiyechezak | hara'av | be'eretz | Mitzrayim
 
 41:57

@@ -1,6 +1,7 @@
 32:1
 vaiyar | ha'am | ki | voshesh | Mosheh | laredet | min | hahar
-vaiyikahel | ha'am | al | Aharon | vaiyomeru | elav | kum | aseh | lanu | elohim | asher | yelekhu | lefaneinu
+vaiyikahel | ha'am | al | Aharon
+vaiyomeru | elav | kum | aseh | lanu | elohim | asher | yelekhu | lefaneinu
 ki | zeh | Mosheh | ha'ish | asher | he'elanu | me'eretz | Mitzrayim
 lo | yada'nu | meh | hayah | lo
 
@@ -15,7 +16,8 @@ vaiyitpareku | kol | ha'am | et | nizmei | hazahav | asher | be'azeneihem
 vaiyavi'u | el | Aharon
 
 32:4
-vaiyikach | miyadam | vaiyatzar | oto | bacheret
+vaiyikach | miyadam
+vaiyatzar | oto | bacheret
 vaiya'asehu
 egel | masekhah | vaiyomeru
 eleh | eloheikha | Yisra'el | asher | he'elukha | me'eretz | Mitzrayim
@@ -38,7 +40,9 @@ ki | shichet | amekha | asher | he'eleita | me'eretz | Mitzrayim
 
 32:8
 saru | maher | min | haderekh | asher | tzivitim
-asu | lahem | egel | masekhah | vaiyishtachavu | lo | vaiyizbechu | lo
+asu | lahem | egel | masekhah
+vaiyishtachavu | lo
+vaiyizbechu | lo
 vaiyomeru | eleh | eloheikha | Yisra'el | asher | he'elukha | me'eretz | Mitzrayim
 
 32:9
@@ -97,11 +101,13 @@ ve'ein | kol | anot | chalushah | kol | anot | anokhi | shomea
 32:19
 vayhi | ka'asher | karav | el | hamachaneh
 vaiyar | et | ha'egel | umecholot
-vaiyichar | af | Mosheh | vaiyashlekh | miyadov | et | haluchot
+vaiyichar | af | Mosheh
+vaiyashlekh | miyadov | et | haluchot
 vayshaber | otam | tachat | hahar
 
 32:20
-vaiyikach | et | ha'egel | asher | asu | vaiyisrof | ba'esh
+vaiyikach | et | ha'egel | asher | asu
+vaiyisrof | ba'esh
 vaiyitchan
 ad | asher | dak | vaiyizer | al | penei | hamayim
 vaiyashk | et | benei | Yisra'el

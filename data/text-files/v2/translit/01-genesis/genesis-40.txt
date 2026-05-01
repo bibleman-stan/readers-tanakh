@@ -51,7 +51,8 @@ hivshilu | ashkeloteiha | anavim
 
 40:11
 vekhos | par'oh | beyadi
-va'ekach | et | ha'anavim | va'eschat | otam | el | kos | par'oh
+va'ekach | et | ha'anavim
+va'eschat | otam | el | kos | par'oh
 va'eten | et | hakos | al | kaf | par'oh
 
 40:12
@@ -61,8 +62,7 @@ hem
 
 40:13
 be'od | sheloshet | yamim | yisa | far'oh | et | roshekha
-vahashivekha | al | kanekha
-venatata | khos | par'oh | beyado
+vahashivekha | al | kanekha | venatata | khos | par'oh | beyado
 kamishpat | harishon | asher | hayita | mashkehu
 
 40:14
@@ -85,9 +85,8 @@ uvasal | ha'elyon | mikol | ma'akhal | par'oh
 ma'aseh | opeh | veha'of | okhel | otam | min | hasal | me'al | roshi
 
 40:18
-vaiya'an | Yosef | vaiyomer | zeh | pitrono | sheloshet | hasalim
-sheloshet | yamim
-hem
+vaiya'an | Yosef
+vaiyomer | zeh | pitrono | sheloshet | hasalim | sheloshet | yamim | hem
 
 40:19
 be'od | sheloshet | yamim | yisa | far'oh | et | roshekha | me'aleikha

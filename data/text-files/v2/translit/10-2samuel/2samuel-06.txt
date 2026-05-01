@@ -26,8 +26,8 @@ uvetzeltzelim
 
 6:6
 vaiyavo'u | ad | goren | Nakhon
-vaiyishlach | Uza | el | aron | ha'elohim | vaiyochez | bo | ki | shametu
-habakar
+vaiyishlach | Uza | el | aron | ha'elohim
+vaiyochez | bo | ki | shametu | habakar
 
 6:7
 vaiyichar | af | Yahweh | Be'uzah
@@ -56,7 +56,8 @@ vayvarekh | Yahweh | et | Oved | Edom | ve'et | kol | beito
 vaiyugad | lamelekh | David | lemor
 berakh | Yahweh | et | beit | Oved | Edom | ve'et | kol | asher | lo
 ba'avur | aron | ha'elohim
-vaiyelekh | David | vaiya'al | et | aron | ha'elohim | mibeit | Oved | Edom | ir | David
+vaiyelekh | David
+vaiya'al | et | aron | ha'elohim | mibeit | Oved | Edom | ir | David
 besimchah
 
 6:13
@@ -82,9 +83,8 @@ umekharker | lifnei | Yahweh
 vativez | lo | belibah
 
 6:17
-vaiyavi'u | et | aron | Yahweh | vaiyatzigu | oto | bimkomo
-betokh | ha'ohel | asher | natah | lo
-David
+vaiyavi'u | et | aron | Yahweh
+vaiyatzigu | oto | bimkomo | betokh | ha'ohel | asher | natah | lo | David
 vaiya'al | David | olot | lifnei | Yahweh
 ushelamim
 
@@ -95,9 +95,7 @@ vehashelamim | vayvarekh | et | ha'am | beshem | Yahweh | tzeva'ot
 6:19
 vaychalek | lekhol | ha'am | lekhol | hamon | Yisra'el | leme'ish
 ve'ad | ishah
-le'ish | chalat | lechem | achat
-ve'eshpar | echad
-va'ashishah
+le'ish | chalat | lechem | achat | ve'eshpar | echad | va'ashishah
 echat | vaiyelekh | kol | ha'am | ish | leveito
 
 6:20

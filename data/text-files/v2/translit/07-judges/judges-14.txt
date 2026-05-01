@@ -87,7 +87,8 @@ pen | nisrof | otakh | ve'et | beit | avikh | ba'esh | halyareshenu | keratem | 
 halo
 
 14:16
-vatevek | eshet | Shimshon | alav | vatomer | rak | senetani | velo | ahavtani
+vatevek | eshet | Shimshon | alav
+vatomer | rak | senetani | velo | ahavtani
 hachidah | chadta | livnei | ami
 veli | lo | higadtah
 vaiyomer | lah | hineh | le'avi
@@ -107,7 +108,10 @@ me'ari | vaiyomer | lahem
 lule | charashtem | be'eglati | lo | metzatem | chidati
 
 14:19
-vatitzlach | alav | ruach | Yahweh | vaiyered | Ashkelon | vaiyakh | mehem | sheloshim | ish | vaiyikach | et | chalitzotam
+vatitzlach | alav | ruach | Yahweh
+vaiyered | Ashkelon
+vaiyakh | mehem | sheloshim | ish
+vaiyikach | et | chalitzotam
 vaiyiten | hachalifot | lemagidei
 hachidah | vaiyichar | apo
 vaiya'al | beit | avihu

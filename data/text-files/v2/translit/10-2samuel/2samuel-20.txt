@@ -1,6 +1,7 @@
 20:1
 vesham | Nikra | ish | beliya'al | ushemo | Sheva | ben | Bikhri | ish | yemini
-vaiyitka | bashofar | vaiyomer | ein | lanu | chelek | Bedavid
+vaiyitka | bashofar
+vaiyomer | ein | lanu | chelek | Bedavid
 velo | nachalah | lanu | beven | Yishai | ish | le'ohalav | Yisra'el
 
 20:2
@@ -59,7 +60,9 @@ umi | asher | Ledavid | acharei | Yo'av
 
 20:12
 Va'amasa | mitgolel | badam | betokh | hamesilah
-vaiyar | ha'ish | ki | amad | kol | ha'am | vaiyasev | et | Amasa | min | hamsilah | hasadeh | vaiyashlekh | alav | beged
+vaiyar | ha'ish | ki | amad | kol | ha'am
+vaiyasev | et | Amasa | min | hamsilah | hasadeh
+vaiyashlekh | alav | beged
 ka'asher | ra'ah
 kol | haba | alav | ve'amad
 
@@ -85,7 +88,8 @@ shim'u | shim'u | imru | na | el | Yo'av
 kerav | ad | henah | va'adaberah | eleikha
 
 20:17
-vaiyikrav | eleiha | vatomer | ha'ishah | ha'atah | Yo'av
+vaiyikrav | eleiha
+vatomer | ha'ishah | ha'atah | Yo'av
 vaiyomer | ani
 vatomer | lo | shema | divrei | amatekha
 vaiyomer | shomea | anokhi
@@ -115,7 +119,9 @@ me'al | ha'ir | vatomer | ha'ishah | el | Yo'av
 hineh | rosho | mushlakh | eleikha | be'ad | hachomah
 
 20:22
-vatavo | ha'ishah | el | kol | ha'am | bechakhematah | vaiyikhretu | et | rosh | Sheva | ben | Bikhri | vaiyashlikhu | el | Yo'av
+vatavo | ha'ishah | el | kol | ha'am | bechakhematah
+vaiyikhretu | et | rosh | Sheva | ben | Bikhri
+vaiyashlikhu | el | Yo'av
 vaiyitka | bashofar
 vaiyafutzu | me'al | ha'ir
 ish | le'ohalav | Veyo'av | shav | Yerushalim | el | hamelekh

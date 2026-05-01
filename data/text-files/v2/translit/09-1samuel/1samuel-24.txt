@@ -20,7 +20,8 @@ Vedavid | va'anashav | beyarketei | hame'arah | yoshevim
 vaiyomeru | anshei | David | elav | hineh | haiyom | asher | amar | Yahweh | eleikha | hineh | anokhi | noten | et | oyeveikha | beyadekha
 ve'asita | lo | ka'asher
 yitav | be'eineikha
-vaiyakom | David | vaiyikhrot | et | kenaf | hame'il | asher | Lesha'ul | balat
+vaiyakom | David
+vaiyikhrot | et | kenaf | hame'il | asher | Lesha'ul | balat
 
 24:6
 vayhi | acharei | khen
@@ -39,9 +40,11 @@ Vesha'ul | kam | mehame'arah
 vaiyelekh | badarekh
 
 24:9
-vaiyakom | David | acharei | khen | vaiyetze | mehame'arah
-vaiyikra | acharei | Sha'ul | lemor
-adoni | hamelekh | vaiyabet | Sha'ul | acharav | vaiyikod | David | apayim | artzah
+vaiyakom | David | acharei | khen
+vaiyetze | mehame'arah
+vaiyikra | acharei | Sha'ul | lemor | adoni | hamelekh
+vaiyabet | Sha'ul | acharav
+vaiyikod | David | apayim | artzah
 vaiyishtachu
 
 24:10
@@ -52,8 +55,8 @@ hineh | David | mevakesh | ra'atekha
 24:11
 hineh | haiyom | hazeh | ra'u | eineikha | et | asher | netanekha | Yahweh | haiyom | beyadi | bame'arah
 ve'amar | laharagakha
-vatachos | aleikha | va'omar | lo | eshlach | yadi | badoni | ki | meshiach | Yahweh
-hu
+vatachos | aleikha
+va'omar | lo | eshlach | yadi | badoni | ki | meshiach | Yahweh | hu
 
 24:12
 ve'avi | re'eh

@@ -10,8 +10,7 @@ vaiya'as | lo | zer | zahav | saviv
 37:3
 vaiyitzok | lo | arba | tabe'ot | zahav | al | arba | pa'amotav
 ushetei | taba'ot | al | tzal'o | ha'echat
-ushetei | taba'ot | al | tzal'o
-hashenit
+ushetei | taba'ot | al | tzal'o | hashenit
 
 37:4
 vaiya'as | badei
@@ -50,7 +49,8 @@ vaytzaf | oto | zahav | tahor
 vaiya'as | lo | zer | zahav | saviv
 
 37:12
-vaiya'as | lo | misgeret | tofach | saviv | vaiya'as | zer | zahav | lemisgarto | saviv
+vaiya'as | lo | misgeret | tofach | saviv
+vaiya'as | zer | zahav | lemisgarto | saviv
 
 37:13
 vaiyitzok | lo | arba | tabe'ot | zahav

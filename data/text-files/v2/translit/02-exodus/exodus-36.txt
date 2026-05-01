@@ -26,7 +26,8 @@ vaiyomeru | el | Mosheh | lemor | marbim | ha'am | lehavi | midei | ha'avodah | 
 asher | tzivah | Yahweh | la'asot | otah
 
 36:6
-vaytzav | Mosheh | vaiya'aviru | kol | bamachaneh | lemor
+vaytzav | Mosheh
+vaiya'aviru | kol | bamachaneh | lemor
 ish | ve'ishah | al | ya'asu | od | melakhah | litrumat | hakodesh
 vaiyikale | ha'am | mehavi
 
@@ -104,8 +105,7 @@ vaiya'as | et | hakerashim | lamishkan | esrim | kerashim | lif'at | negev | tei
 ve'arba'im | adnei | khesef
 asah | tachat | esrim | hakerashim
 shenei | adanim | tachat | hakeresh | ha'echad | lishtei | yedotav
-ushenei | adanim | tachat | hakeresh | ha'echad
-lishtei | yedotav
+ushenei | adanim | tachat | hakeresh | ha'echad | lishtei | yedotav
 
 36:25
 uletzela | hamishkan | hashenit
@@ -141,8 +141,7 @@ vaiya'as | berichei | atzei | shitim | chamishah | lekarshei | tzela | hamishkan
 
 36:32
 vachamishah | verichim
-lekarshei | tzela | hamishkan
-hashenit
+lekarshei | tzela | hamishkan | hashenit
 vachamishah | verichim | lekarshei | hamishkan | laiyarkhatayim
 yamah
 

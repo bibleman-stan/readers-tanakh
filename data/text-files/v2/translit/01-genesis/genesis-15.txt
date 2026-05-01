@@ -20,7 +20,8 @@ vehineh | devar | Yahweh | elav | lemor | lo | yirashekha | zeh
 ki | im | asher | yetze | mime'eikha | hu | yirashekha
 
 15:5
-vaiyotze | oto | hachutzah | vaiyomer | habet | na | hashamaymah | usefor | hakokhavim
+vaiyotze | oto | hachutzah
+vaiyomer | habet | na | hashamaymah | usefor | hakokhavim
 im | tukhal
 lispor | otam
 vaiyomer | lo
@@ -42,7 +43,9 @@ ve'ayil | meshulash | vetor
 vegozal
 
 15:10
-vaiyikach | lo | et | kol | eleh | vayvater | otam | batavekh | vaiyiten | ish | bitro
+vaiyikach | lo | et | kol | eleh
+vayvater | otam | batavekh
+vaiyiten | ish | bitro
 likrat | re'ehu | ve'et | hatzipor | lo | vatar
 
 15:11
