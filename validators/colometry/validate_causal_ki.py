@@ -64,6 +64,8 @@ V2_DIR = REPO_ROOT / "data" / "text-files" / "v2" / "he"
 # Make _shared importable when this script is run as __main__.
 sys.path.insert(0, str(REPO_ROOT / "validators"))
 from _shared.poetic_register import is_poetic_register  # noqa: E402
+from _shared import morph_alignment as MA               # noqa: E402
+from _shared import morphology as M                     # noqa: E402
 
 # ---------------------------------------------------------------------------
 # Hebrew Unicode helpers
@@ -272,11 +274,19 @@ def looks_like_finite_verb(bare: str) -> bool:
     return False
 
 
-def line_has_finite_verb(line: str) -> bool:
-    """True if any content token on `line` looks like a finite verb."""
-    for tok in content_tokens(line):
-        bare = strip_points(tok)
-        if looks_like_finite_verb(bare):
+def line_has_finite_verb(line: str, token_tags: "list[list[str]] | None" = None) -> bool:
+    """True if any content token on `line` looks like a finite verb.
+
+    When `token_tags` is provided (list of per-token tag-lists from TAHOT morph
+    alignment), uses M.is_finite_verb_token with tag_list for each token —
+    TAHOT-authoritative. Falls back to local heuristic when tags unavailable.
+    """
+    toks = content_tokens(line)
+    for idx, tok in enumerate(toks):
+        tag_list: "list[str] | None" = None
+        if token_tags is not None and idx < len(token_tags):
+            tag_list = token_tags[idx]
+        if M.is_finite_verb_token(tok, tag_list=tag_list):
             return True
     return False
 
@@ -334,11 +344,16 @@ def line_ends_with_cognition_speech_verb(line: str) -> bool:
 # כִּי token detection and classification
 # ---------------------------------------------------------------------------
 
-def next_line_starts_with_ki_verb(line: str) -> tuple[bool, bool]:
+def next_line_starts_with_ki_verb(
+    line: str, token_tags: "list[list[str]] | None" = None
+) -> tuple[bool, bool]:
     """Check if next line begins with כִּי + finite verb.
 
     Returns (True, is_v_consecutive) if pattern matches, (False, False) otherwise.
     is_v_consecutive is True if כִּי is preceded by vav-consecutive (וְכִּי).
+
+    `token_tags`: per-token TAHOT tag-lists for `line` (from morph alignment);
+    passed through to line_has_finite_verb for tag-aware finite-verb detection.
     """
     first = first_content_token(line)
     if not first:
@@ -361,7 +376,7 @@ def next_line_starts_with_ki_verb(line: str) -> tuple[bool, bool]:
     # The rest must be or look like nothing (bare כִּי) or be bound to it
     # (e.g., כִּיבֵית = כִּי + בֵית).  But we're looking for כִּי-clause
     # introducer, so the line should have a finite verb somewhere.
-    if not line_has_finite_verb(line):
+    if not line_has_finite_verb(line, token_tags=token_tags):
         return False, False
 
     return True, has_vav
@@ -503,6 +518,24 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
     chapter_from_file = chapter_from_path(path)
     verses = partition_into_verses(lines)
 
+    # Load TAHOT morph alignment for this chapter (None if unavailable).
+    chapter_morph = MA.load_chapter_morph(path)
+
+    # Build per-verse token-tag map: verse_num → list[list[list[str]]] (lines × tokens × tags)
+    # Indexed: verse_token_tags[verse_num][line_pos_in_verse][token_pos_in_line] = [tag, ...]
+    verse_token_tags_map: dict[int, list[list[list[str]]]] = {}
+    if chapter_morph is not None:
+        for ch, vs, indices in verses:
+            if vs is None:
+                continue
+            ortho_tags = chapter_morph.get(vs)
+            if ortho_tags is None:
+                continue
+            verse_lines = [lines[idx] for idx in indices]
+            aligned = MA.align_verse_tokens_to_tags(verse_lines, ortho_tags)
+            if aligned is not None:
+                verse_token_tags_map[vs] = aligned
+
     # Build a lookup: line_index → (chapter, verse, position_within_verse, verse_indices)
     line_to_verse: dict[int, tuple[int | None, int | None, int, list[int]]] = {}
     for ch, vs, indices in verses:
@@ -517,6 +550,7 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
         v_ctx = line_to_verse.get(i)
         chapter = v_ctx[0] if v_ctx else chapter_from_file
         verse = v_ctx[1] if v_ctx else None
+        line_pos_in_verse = v_ctx[2] if v_ctx else None
 
         line_no = i + 1  # 1-based
 
@@ -534,13 +568,34 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
             continue
         next_line = lines[next_idx]
         next_line_no = next_idx + 1
+        n_ctx = line_to_verse.get(next_idx)
+        next_pos_in_verse = n_ctx[2] if n_ctx else None
+
+        # Resolve per-line token-tag lists (None when morph unavailable or misaligned).
+        verse_tags: "list[list[list[str]]] | None" = (
+            verse_token_tags_map.get(verse) if verse is not None else None
+        )
+        cur_line_token_tags: "list[list[str]] | None" = (
+            verse_tags[line_pos_in_verse]
+            if verse_tags is not None and line_pos_in_verse is not None
+               and line_pos_in_verse < len(verse_tags)
+            else None
+        )
+        next_line_token_tags: "list[list[str]] | None" = (
+            verse_tags[next_pos_in_verse]
+            if verse_tags is not None and next_pos_in_verse is not None
+               and next_pos_in_verse < len(verse_tags)
+            else None
+        )
 
         # --- Guard: poetic register ---
         if chapter is not None and is_poetic_register(book, chapter, verse):
             continue
 
         # --- Trigger: does next line start with כִּי + finite verb? ---
-        ki_with_verb, has_vav = next_line_starts_with_ki_verb(next_line)
+        ki_with_verb, has_vav = next_line_starts_with_ki_verb(
+            next_line, token_tags=next_line_token_tags
+        )
         if not ki_with_verb:
             continue
 

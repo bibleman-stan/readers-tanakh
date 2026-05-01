@@ -49,6 +49,8 @@ V2_DIR = REPO_ROOT / "data" / "text-files" / "v2" / "he"
 # Make _shared importable when this script is run as __main__.
 sys.path.insert(0, str(REPO_ROOT / "validators"))
 from _shared.poetic_register import is_poetic_register  # noqa: E402
+from _shared import morphology as M  # noqa: E402
+from _shared import morph_alignment as MA  # noqa: E402
 
 # ---------------------------------------------------------------------------
 # Hebrew Unicode helpers
@@ -415,6 +417,23 @@ def teamim_summary(line: str) -> str:
 # Per-file scanner
 # ---------------------------------------------------------------------------
 
+def _line_has_finite_verb_tagged(line: str, token_tag_lists: "list[list[str]] | None") -> bool:
+    """True if any content token on `line` is a finite verb.
+
+    Uses TAHOT tag-aware `M.is_finite_verb_token` when `token_tag_lists` is
+    available (one tag-list per whitespace token on the line). Falls back to
+    the local skel-heuristic when tags are absent.
+    """
+    toks = content_tokens(line)
+    for tok_idx, tok in enumerate(toks):
+        tag_list: "list[str] | None" = None
+        if token_tag_lists is not None and tok_idx < len(token_tag_lists):
+            tag_list = token_tag_lists[tok_idx]
+        if M.is_finite_verb_token(tok, tag_list=tag_list):
+            return True
+    return False
+
+
 def scan_file(path: Path, verbose: bool = False) -> list[dict]:
     findings: list[dict] = []
     try:
@@ -431,6 +450,35 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
     for ch, vs, indices in verses:
         for pos, idx in enumerate(indices):
             line_to_verse[idx] = (ch, vs, pos, indices)
+
+    # Load TAHOT morph alignment for this chapter (None if v0/morph file missing).
+    chapter_morph = MA.load_chapter_morph(path)
+
+    # Build per-(verse) token-tag lookup:
+    #   verse_line_tags[(chapter, verse)] = list[per_line_token_tag_lists] | None
+    # Indexed by verse's content-line position.
+    verse_line_tags: dict[tuple[int | None, int | None], "list[list[list[str]]] | None"] = {}
+    if chapter_morph is not None:
+        for ch, vs, indices in verses:
+            ortho_tags = chapter_morph.get(vs)
+            if ortho_tags is None:
+                verse_line_tags[(ch, vs)] = None
+                continue
+            # Build list of content lines in verse order (as strings).
+            verse_content_lines = [lines[idx] for idx in indices]
+            verse_line_tags[(ch, vs)] = MA.align_verse_tokens_to_tags(
+                verse_content_lines, ortho_tags
+            )
+
+    def _get_token_tags(v_ctx, pos: int) -> "list[list[str]] | None":
+        """Return token-tag-list for a specific line within its verse, or None."""
+        if v_ctx is None:
+            return None
+        ch, vs = v_ctx[0], v_ctx[1]
+        vtl = verse_line_tags.get((ch, vs))
+        if vtl is None or pos >= len(vtl):
+            return None
+        return vtl[pos]
 
     for i, line in enumerate(lines):
         if is_skippable(line):
@@ -462,6 +510,12 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
         next_line = lines[next_idx]
         next_line_no = next_idx + 1
 
+        # Tag-list for current line and next line (None → skel-heuristic fallback).
+        cur_token_tags = _get_token_tags(v_ctx, pos_in_verse)
+        next_v_ctx = line_to_verse.get(next_idx)
+        next_pos = next_v_ctx[2] if next_v_ctx else 0
+        next_token_tags = _get_token_tags(next_v_ctx, next_pos)
+
         # --- Guard: poetic register ---
         if chapter is not None and is_poetic_register(book, chapter, verse):
             continue
@@ -476,12 +530,12 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
         # --- Guard: prior line is NOT a main clause (has no finite verb) ---
         # A circumstantial clause is peripheral to a main clause; if prior has no
         # verb, this might be a different pattern (verbless predicate, etc.)
-        if not line_has_finite_verb(line):
+        if not _line_has_finite_verb_tagged(line, cur_token_tags):
             continue
 
         # --- Guard: next line does NOT have a finite verb ---
         # Circumstantial clauses are non-verbal or participate in way that's secondary
-        if line_has_finite_verb(next_line):
+        if _line_has_finite_verb_tagged(next_line, next_token_tags):
             continue
 
         # --- Trigger: next line is a circumstantial clause (וְ + NP, not verb-initial) ---
