@@ -66,6 +66,14 @@ V1_DIR = REPO_ROOT / "data" / "text-files" / "v1" / "he-baseline"
 V2_DIR = REPO_ROOT / "data" / "text-files" / "v2" / "he"
 
 # ---------------------------------------------------------------------------
+# Shared morphology + morph-alignment helpers
+# ---------------------------------------------------------------------------
+# Make _shared importable when this script is run as __main__.
+sys.path.insert(0, str(REPO_ROOT / "validators"))
+from _shared import morphology as M  # noqa: E402
+from _shared import morph_alignment as MA  # noqa: E402
+
+# ---------------------------------------------------------------------------
 # Hebrew Unicode helpers
 # ---------------------------------------------------------------------------
 
@@ -157,16 +165,89 @@ def is_skippable(line: str) -> bool:
 
 
 # ---------------------------------------------------------------------------
+# Verse-grouping helper (mirrors validate_construct_chain.py)
+# ---------------------------------------------------------------------------
+
+_VERSE_REF_RE = re.compile(r"^\d+:\d+\s*$")
+
+
+def _partition_into_verses(lines: list[str]) -> list[tuple[int, list[tuple[int, str]]]]:
+    """Partition file lines into per-verse groups.
+
+    Returns list of (verse_num, [(1-based line_no, raw_line), ...]) tuples.
+    Lines preceding any verse header are discarded (blank preamble only).
+    """
+    groups: list[tuple[int, list[tuple[int, str]]]] = []
+    cur_verse: int | None = None
+    cur_lines: list[tuple[int, str]] = []
+    for i, raw in enumerate(lines):
+        line_no = i + 1
+        s = raw.strip()
+        m = _VERSE_REF_RE.match(s)
+        if m:
+            if cur_verse is not None and cur_lines:
+                groups.append((cur_verse, cur_lines))
+            cur_verse = int(s.split(":")[1])
+            cur_lines = []
+        elif s and cur_verse is not None:
+            cur_lines.append((line_no, raw))
+    if cur_verse is not None and cur_lines:
+        groups.append((cur_verse, cur_lines))
+    return groups
+
+
+# ---------------------------------------------------------------------------
 # Per-file scanner
 # ---------------------------------------------------------------------------
 
 def scan_file(path: Path, verbose: bool = False) -> list[dict]:
-    """Scan one text file for Rule H5 speech-intro framing violations."""
+    """Scan one text file for Rule H5 speech-intro framing violations.
+
+    Uses TAHOT morph tags (via morph_alignment) when available to classify
+    speech-verb tokens.  Falls back to the BARE_SPEECH_VERB_SKELETONS skeleton
+    heuristic when tags are missing or verse alignment fails.
+    """
     violations = []
     try:
         lines = path.read_text(encoding="utf-8").splitlines()
     except UnicodeDecodeError:
         lines = path.read_text(encoding="utf-8-sig").splitlines()
+
+    # Load TAHOT morph alignment for this chapter (None if morph file absent).
+    chapter_morph = MA.load_chapter_morph(path)
+
+    # Build a lookup: file_line_index (0-based) → [tag_list_per_token]
+    # tag_list_per_token[tok_idx] = list[str] (TAHOT tags for that token)
+    # This lets the flat line-scan below look up tags by line index.
+    line_token_tags: dict[int, list[list[str]]] = {}
+    if chapter_morph is not None:
+        verse_groups = _partition_into_verses(lines)
+        for verse_num, verse_numbered_lines in verse_groups:
+            content = [
+                (ln, raw) for ln, raw in verse_numbered_lines
+                if not is_skippable(raw)
+            ]
+            if not content:
+                continue
+            ortho_tags = chapter_morph.get(verse_num)
+            if ortho_tags is None:
+                continue
+            verse_text_lines = [raw for _, raw in content]
+            aligned = MA.align_verse_tokens_to_tags(verse_text_lines, ortho_tags)
+            if aligned is None:
+                continue
+            for ci, (ln, _raw) in enumerate(content):
+                # ln is 1-based; store at 0-based index
+                line_token_tags[ln - 1] = aligned[ci]
+
+    def _tag_list_for(line_idx: int, tok_idx: int) -> "list[str] | None":
+        """Return TAHOT tag list for (line_idx, tok_idx), or None on miss."""
+        tl = line_token_tags.get(line_idx)
+        if tl is None:
+            return None
+        if tok_idx < 0 or tok_idx >= len(tl):
+            return None
+        return tl[tok_idx]
 
     for i, line in enumerate(lines):
         if is_skippable(line):
@@ -309,9 +390,13 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
         # is propositionally empty without its complement clause on the next line.
         # This is STRONG-MERGE-CANDIDATE (not REVIEW): the merge is unambiguously
         # correct — solo speech-verbs are never editorially defensible standalone.
-        elif (
-            len(bare_tokens) == 1
-            and bare_tokens[0] in BARE_SPEECH_VERB_SKELETONS
+        # Tag-aware path: skeleton membership gates entry; M.is_finite_verb_token
+        # with TAHOT tags then confirms the token is truly a finite verb (not a
+        # homographic noun). When tags are absent, the skeleton match alone
+        # controls (skel-fallback), preserving prior behaviour.
+        elif len(bare_tokens) == 1 and bare_tokens[0] in BARE_SPEECH_VERB_SKELETONS and (
+            _tag_list_for(i, 0) is None
+            or M.is_finite_verb_token(tokens[0], tag_list=_tag_list_for(i, 0))
         ):
             next_content = ""
             next_content_line_num = None
@@ -341,7 +426,12 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
         # If the last token is a bare wayyiqtol speech verb on a multi-token line
         # (e.g., 'וַיַּעַן עֵלִי וַיֹּאמֶר'), this might be a framing situation
         # without לֵאמֹר. Lower confidence — REVIEW-REQUIRED.
-        elif bare_tokens and bare_tokens[-1] in BARE_SPEECH_VERB_SKELETONS:
+        # Tag-aware: skeleton membership gates entry; TAHOT tag confirmation
+        # suppresses FPs from non-verb homographs. Skel-fallback when tags absent.
+        elif bare_tokens and bare_tokens[-1] in BARE_SPEECH_VERB_SKELETONS and (
+            _tag_list_for(i, len(tokens) - 1) is None
+            or M.is_finite_verb_token(tokens[-1], tag_list=_tag_list_for(i, len(tokens) - 1))
+        ):
             next_content = ""
             next_content_line_num = None
             for j in range(i + 1, len(lines)):

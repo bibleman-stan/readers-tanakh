@@ -66,6 +66,8 @@ V2_DIR = REPO_ROOT / "data" / "text-files" / "v2" / "he"
 # Make _shared importable when this script is run as __main__.
 sys.path.insert(0, str(REPO_ROOT / "validators"))
 from _shared.poetic_register import is_poetic_register  # noqa: E402
+from _shared import morphology as M  # noqa: E402
+from _shared import morph_alignment as MA  # noqa: E402
 
 # ---------------------------------------------------------------------------
 # Hebrew Unicode helpers
@@ -544,6 +546,13 @@ def teamim_summary(line: str) -> str:
 # ---------------------------------------------------------------------------
 
 def scan_file(path: Path, verbose: bool = False) -> list[dict]:
+    """Scan one text file for Rule M3 bare-construct-head split violations.
+
+    Uses TAHOT morph tags (via morph_alignment) when available to classify
+    the last token of each content line as a construct-state head and to
+    detect finite-verb tokens on the current line.  Falls back to the local
+    closed-list skel-heuristics when tags are missing or verse alignment fails.
+    """
     findings: list[dict] = []
     try:
         lines = path.read_text(encoding="utf-8").splitlines()
@@ -552,13 +561,56 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
 
     book = book_name_from_path(path)
     chapter_from_file = chapter_from_path(path)
+
+    # Load TAHOT morph alignment for this chapter (None if v0/morph file absent).
+    chapter_morph = MA.load_chapter_morph(path)
+
     verses = partition_into_verses(lines)
 
-    # Build a lookup: line_index → (chapter, verse, position_within_verse)
+    # Build a lookup: line_index → (chapter, verse, position_within_verse, verse_indices)
     line_to_verse: dict[int, tuple[int | None, int | None, int, list[int]]] = {}
     for ch, vs, indices in verses:
         for pos, idx in enumerate(indices):
             line_to_verse[idx] = (ch, vs, pos, indices)
+
+    # Build per-verse content-line groupings for morph alignment.
+    # verse_key → [(file_line_idx, line_text), ...]
+    from collections import defaultdict
+    verse_content: dict[tuple, list[tuple[int, str]]] = defaultdict(list)
+    for ch, vs, indices in verses:
+        key = (ch, vs)
+        for idx in indices:
+            verse_content[key].append((idx, lines[idx]))
+
+    # Cache of token-tag alignments per verse.
+    # verse_key → list[list[list[str]]] | None
+    _verse_token_tags: dict[tuple, object] = {}
+
+    def _get_verse_token_tags(ch, vs):
+        """Return aligned token-tag grid for (ch, vs), building on first access."""
+        key = (ch, vs)
+        if key in _verse_token_tags:
+            return _verse_token_tags[key]
+        result = None
+        if chapter_morph is not None:
+            ortho_tags = chapter_morph.get(vs)
+            if ortho_tags is not None:
+                verse_lines = [raw for _, raw in verse_content[key]]
+                result = MA.align_verse_tokens_to_tags(verse_lines, ortho_tags)
+        _verse_token_tags[key] = result
+        return result
+
+    def _tag_list_for(ch, vs, line_pos_in_verse: int, tok_idx: int):
+        """Return TAHOT tag list for a specific token, or None on miss."""
+        token_tags = _get_verse_token_tags(ch, vs)
+        if token_tags is None:
+            return None
+        if line_pos_in_verse < 0 or line_pos_in_verse >= len(token_tags):
+            return None
+        tl = token_tags[line_pos_in_verse]
+        if tok_idx < 0 or tok_idx >= len(tl):
+            return None
+        return tl[tok_idx]
 
     for i, line in enumerate(lines):
         if is_skippable(line):
@@ -569,14 +621,56 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
         chapter = v_ctx[0] if v_ctx else chapter_from_file
         verse = v_ctx[1] if v_ctx else None
         pos_in_verse = v_ctx[2] if v_ctx else 0
-        verse_indices = v_ctx[3] if v_ctx else []
 
         line_no = i + 1  # 1-based
 
-        # --- Check if line ends with a construct head ---
-        is_construct, construct_skel = last_token_is_construct_head(line)
-        if not is_construct:
+        # --- Guard 1: poetic register ---
+        if chapter is not None and is_poetic_register(book, chapter, verse):
             continue
+
+        # --- Guard 2: maqqef-binding ---
+        # If the construct head is already maqqef-joined (e.g. דִּבְרֵי־יְהוָה),
+        # it is one orthographic prosodic unit and not "bare construct head split."
+        if construct_head_maqqef_bound(line):
+            continue
+
+        # --- Guard 3: relative clause or modifier PP on same line ---
+        if line_has_relative_clause_or_modifier_pp(line):
+            continue
+
+        # --- Guard 6: construct head preceded by finite verb (false positive filter) ---
+        # If a finite verb appears anywhere on the current line,
+        # the line-final token is likely acting as a clause constituent (subject/object),
+        # not a construct head. Filter out false positives from divine-name vocatives
+        # and objects after speech-act verbs.
+        # Tag-aware path: check each token via M.is_finite_verb_token(tok, tag_list=...).
+        line_toks = content_tokens(line)
+        has_verb_on_line = False
+        for tok_i, tok in enumerate(line_toks):
+            tag_list = _tag_list_for(chapter, verse, pos_in_verse, tok_i) if v_ctx else None
+            if M.is_finite_verb_token(tok, tag_list=tag_list):
+                has_verb_on_line = True
+                break
+        if has_verb_on_line:
+            continue
+
+        # --- Check if line ends with a construct head (tag-aware) ---
+        if not line_toks:
+            continue
+        last_tok = line_toks[-1]
+        last_tok_idx = len(line_toks) - 1
+        last_tok_tags = _tag_list_for(chapter, verse, pos_in_verse, last_tok_idx) if v_ctx else None
+
+        # Tag-driven primary: M.is_construct_head_token with TAHOT oracle.
+        # Skel fallback: last_token_is_construct_head (local closed list).
+        is_construct_tag = M.is_construct_head_token(last_tok, tag_list=last_tok_tags)
+        is_construct_skel, construct_skel_local = last_token_is_construct_head(line)
+
+        if not (is_construct_tag or is_construct_skel):
+            continue
+
+        # For the annotation: prefer tag-confirmed skeleton label; fall back to local.
+        construct_skel = strip_points(last_tok).rstrip("׃").rstrip("־") if is_construct_tag else construct_skel_local
 
         # --- Find next content line in the SAME verse ---
         next_idx: int | None = None
@@ -593,20 +687,6 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
         next_line = lines[next_idx]
         next_line_no = next_idx + 1
 
-        # --- Guard 1: poetic register ---
-        if chapter is not None and is_poetic_register(book, chapter, verse):
-            continue
-
-        # --- Guard 2: maqqef-binding ---
-        # If the construct head is already maqqef-joined (e.g. דִּבְרֵי־יְהוָה),
-        # it is one orthographic prosodic unit and not "bare construct head split."
-        if construct_head_maqqef_bound(line):
-            continue
-
-        # --- Guard 3: relative clause or modifier PP on same line ---
-        if line_has_relative_clause_or_modifier_pp(line):
-            continue
-
         # --- Guard 4: next line must NOT start with a preposition ---
         next_starts_prep, _ = starts_with_preposition(next_line)
         if next_starts_prep:
@@ -616,33 +696,15 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
         if first_token_looks_like_verb(next_line):
             continue
 
-        # --- Guard 6: construct head preceded by finite verb (false positive filter) ---
-        # If a finite verb appears anywhere on the current line,
-        # the line-final token is likely acting as a clause constituent (subject/object),
-        # not a construct head. Filter out false positives from divine-name vocatives
-        # and objects after speech-act verbs.
-        if line_has_finite_verb(line):
-            continue
-
         # --- Check if next line begins with a noun (rectum candidate) ---
-        # The first token should be a noun. We approximate by checking that it
-        # does NOT look like a verb, does NOT look like a preposition, does NOT
-        # look like a particle, and is not empty.
         first = first_content_token(next_line)
         if not first:
             continue
 
-        # Already checked: not a verb, not a prep. Good.
         # The bare skeleton should be non-empty (implies a noun/article).
         bare_first = strip_points(first)
         if not bare_first:
             continue
-
-        # Additional filter: if the next line begins with הַ (definite article),
-        # it is likely the rectum of a construct chain (e.g., בֵּית ה[X]).
-        # This is the most common case.  But we also accept bare nouns
-        # (no article) that follow construct heads (e.g., דְּבַר אֱלֹהִים).
-        # For now, accept both.
 
         # --- All guards passed; emit STRONG-MERGE-CANDIDATE finding ---
         prior_text = line.strip()
@@ -657,8 +719,9 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
                 f"{next_teamim or '(none)'} on rectum — informational only."
             )
 
+        tag_note = " (TAHOT-confirmed)" if is_construct_tag else " (skel-heuristic)"
         annotation = (
-            f"Bare construct-state head {construct_skel!r} without rectum "
+            f"Bare construct-state head {construct_skel!r}{tag_note} without rectum "
             "(M3 Bare-Governor Indivisibility; canon §1; JM §129; WO §9)."
             + teamim_note
         )
@@ -675,6 +738,7 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
             "rule": "M3/bare-construct-head",
             "severity": "STRONG-MERGE-CANDIDATE",
             "construct_head": construct_skel,
+            "tag_confirmed": is_construct_tag,
             "book": book,
             "chapter": chapter,
             "verse": verse,
@@ -757,6 +821,7 @@ def main():
                 "rule": f["rule"],
                 "severity": f["severity"],
                 "construct_head": f["construct_head"],
+                "tag_confirmed": f.get("tag_confirmed", False),
                 "book": f["book"],
                 "chapter": f["chapter"],
                 "verse": f["verse"],
