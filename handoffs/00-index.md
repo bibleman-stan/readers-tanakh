@@ -8,8 +8,9 @@ These documents capture project state so that any session (human or AI) can spin
 | `01-project-overview.md` | Project vision, scholarly landscape, methodological commitments, source-text rationale |
 | `03-architecture.md` | Repo structure, build pipeline (planned), private folder convention, data sources |
 | `04-editorial-workflow.md` | How a chapter goes from raw TAHOT to gold-standard reading edition |
+| `14-operational-protocols.md` | **READ THIS CAREFULLY** — work-smarter operating discipline ported from sibling projects: find-the-class fixes, mandatory two-phase pipeline pattern, parallel dispatch, adversarial testing, tools-over-bash, tanakh-specific failure modes |
 
-The slot `02-` is intentionally skipped. Methodology (the colometry canon) lives in `private/01-method/colometry-canon.md`, not in handoffs, because it is pre-publication scholarly material.
+The slots `02-` and `05-13-` are intentionally skipped. Methodology (the colometry canon) lives in `private/01-method/colometry-canon.md`, not in handoffs, because it is pre-publication scholarly material. The `14-` slot mirrors the bofm/gnt convention so the operational-protocols file occupies the same numeric position across sibling projects (an internal convention only — repos remain publicly siloed per CLAUDE.md).
 
 ---
 
@@ -59,3 +60,13 @@ Decisions locked in this session:
 **2026-04-26 update:** `data/text-files/` restructured into per-tier subfolders (v0/, v1/, v2/, v3/, v4/). Tier-name identity strings (v1-he-baseline, v2-he-syntax, etc.) unchanged; only filesystem layout. Path references in this doc updated to the new layout.
 
 **2026-04-27 update:** Tier collapse — both 2026-04-26 multi-tier updates above are superseded. The auto-apply tiers (v2-he-syntax via apply_v2, v3-he-colometry via apply_v3) are retired; the editorial gold standard moves from `v4/editorial/` to `v2/he/`; the parallel per-word layers move from `v4/{eng-interlinear,eng-gloss,translit}/` to `v2/{eng-interlinear,eng-gloss,translit}/`. Pipeline is now **v0 → v1 → v2** (3 tiers). STRONG-tagged validator findings feed the editorial work queue directly per canon §2 Mechanical-rule authority. See canon §8 entry 2026-04-27 + `03-architecture.md` + `04-editorial-workflow.md` for full updates.
+
+---
+
+### Update — 2026-04-30 — Operational protocols ported
+
+Created `handoffs/14-operational-protocols.md` by porting `readers-bofm/handoffs/14-operational-protocols.md` (which itself originated in `readers-gnt/handoffs/04-editorial-workflow.md`), adapted for tanakh specifics: 39 books, the 6 cluster groups already defined in CLAUDE.md, gold-standard chapters (Jonah 1, Gen 1, Deut 6:4-9, Ps 1, Prov 10, Gen 5/11/Ezra 2, Gen 24:38), the two-cascade-engine architecture (apply_validators + apply_specs), TAHOT-tag-driven classification (E7), and tanakh-specific failure modes from the 2026-04-30 session (cascade-on-main-thread, git-stash-bash-heredoc diff capture, ingest-the-full-git-status, two-cascade-engines confusion).
+
+CLAUDE.md updated to make `14-operational-protocols.md` MANDATORY at session start (not consult-on-trigger). Without this elevation, the discipline drifts within a session.
+
+Driver: 2026-04-30 session produced 8+ multi-line bash heredocs for one-off operations, ran the cascade on the main thread instead of dispatching parallel cluster agents, and surfaced the same workflow anti-patterns the sibling projects had already codified protocols against. The discipline existed; the tanakh project just hadn't ported the codification.

@@ -36,6 +36,7 @@ Before any substantive work, read the handoffs directory in order:
 | `handoffs/01-project-overview.md` | Vision, scholarly landscape, methodological commitments, source-text rationale |
 | `handoffs/03-architecture.md` | Repo structure, build pipeline (planned), private folder convention |
 | `handoffs/04-editorial-workflow.md` | How a chapter goes from raw TAHOT to gold-standard reading edition |
+| `handoffs/14-operational-protocols.md` | **READ THIS CAREFULLY** — codified work-smarter discipline ported from sibling projects: find-the-class fixes, mandatory two-phase pipeline pattern, parallel dispatch, adversarial testing, tools-over-bash, tanakh-specific failure modes |
 
 The methodology canon (`private/01-method/colometry-canon.md`) is the authoritative rule reference once editorial work begins. Read it before any rule-interpretation or methodology-touching work.
 
@@ -59,8 +60,9 @@ The folder is the persistent write surface for the session. Session memory evapo
 
 **MANDATORY:**
 1. This CLAUDE.md in full
-2. The most recent `private/03-sessions/yyyy-mm-dd-*/session-notes.md` (for carry-forwards and prior-session context)
-3. `git log --oneline -10`
+2. `handoffs/14-operational-protocols.md` in full — the operating-discipline file. Without this, you will drift into the failure modes it codifies (sequential dispatch, bash heredocs for recurring ops, single-agent-on-39-books cascades, spot-checking instead of testing). Re-read every wake; the patterns are easy to forget mid-session.
+3. The most recent `private/03-sessions/yyyy-mm-dd-*/session-notes.md` (for carry-forwards and prior-session context)
+4. `git log --oneline -10`
 
 **CONSULT-ON-TRIGGER:**
 - `private/01-method/colometry-canon.md` — **trigger:** ANY editorial, rule-interpretation, or methodology-touching work. **Skip when:** pure infrastructure / code / UX / deployment work with no canon touching.
