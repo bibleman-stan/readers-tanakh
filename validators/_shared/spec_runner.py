@@ -27,6 +27,8 @@ from typing import Any, Optional
 import yaml
 
 from . import morphology as M
+from . import morph_tags as MT
+from . import morph_alignment as MA
 from .poetic_register import is_poetic_register
 
 
@@ -110,18 +112,27 @@ class Spec:
 # ─── spec evaluation ────────────────────────────────────────────────
 
 
-def _matches_token(tok: Optional[str], conditions: dict[str, Any]) -> bool:
-    """Apply token-level conditions: skeleton_in / morphology / morphology_one_of."""
+def _matches_token(
+    tok: Optional[str],
+    conditions: dict[str, Any],
+    tag_list: Optional[list[str]] = None,
+) -> bool:
+    """Apply token-level conditions: skeleton_in / morphology / morphology_one_of.
+
+    `tag_list` is the per-ortho TAHOT morph tag list for this token (one tag
+    per maqqef-joined ortho-word). When present, tag-driven morphology checks
+    take precedence over skel-heuristics. None → fall back to skel-only path.
+    """
     if not tok:
         return False
     if "skeleton_in" in conditions:
         if M.skel(tok) not in set(conditions["skeleton_in"]):
             return False
     if "morphology" in conditions:
-        if not _check_morphology(tok, conditions["morphology"]):
+        if not _check_morphology(tok, conditions["morphology"], tag_list):
             return False
     if "morphology_one_of" in conditions:
-        if not any(_check_morphology(tok, m) for m in conditions["morphology_one_of"]):
+        if not any(_check_morphology(tok, m, tag_list) for m in conditions["morphology_one_of"]):
             return False
     if "skeleton_starts_with" in conditions:
         prefixes = conditions["skeleton_starts_with"]
@@ -132,9 +143,21 @@ def _matches_token(tok: Optional[str], conditions: dict[str, Any]) -> bool:
     return True
 
 
-def _check_morphology(tok: str, morph: str) -> bool:
-    """Single-morphology check by name."""
+def _check_morphology(tok: str, morph: str, tag_list: Optional[list[str]] = None) -> bool:
+    """Single-morphology check by name.
+
+    When `tag_list` is provided AND the morph type has a tag-driven
+    implementation, the tag is authoritative. Otherwise falls back to the
+    skel-heuristic path.
+    """
     if morph == "finite_verb":
+        if tag_list:
+            head_tag = MA.head_tag_for_token(tag_list)
+            if head_tag:
+                # Tag-driven: definitive. No skel fallback (the whole point of
+                # the gnt-reader-style refactor is to stop inferring when we
+                # have authoritative tags).
+                return MT.is_finite_verb(head_tag)
         return M.is_finite_verb_token(tok)
     if morph == "np_head":
         # standalone token check: not a finite verb, not a particle/prep
@@ -207,10 +230,19 @@ def _check_morphology(tok: str, morph: str) -> bool:
     return False
 
 
-def _matches_anywhere(line: str, conditions: dict[str, Any]) -> bool:
-    """Apply line-level conditions: has_finite_verb, has_resumptive_suffix, ..."""
+def _matches_anywhere(
+    line: str,
+    conditions: dict[str, Any],
+    line_tag_lists: Optional[list[list[str]]] = None,
+) -> bool:
+    """Apply line-level conditions: has_finite_verb, has_resumptive_suffix, ...
+
+    `line_tag_lists` is the per-token tag lists for this line (each token's
+    list of ortho-tags). When present, tag-driven checks override skel.
+    """
     if "has_finite_verb" in conditions:
-        if M.has_finite_verb(line) != conditions["has_finite_verb"]:
+        actual = _line_has_finite_verb(line, line_tag_lists)
+        if actual != conditions["has_finite_verb"]:
             return False
     if "has_resumptive_suffix" in conditions:
         if M.line_has_resumptive_suffix(line) != conditions["has_resumptive_suffix"]:
@@ -218,25 +250,49 @@ def _matches_anywhere(line: str, conditions: dict[str, Any]) -> bool:
     return True
 
 
+def _line_has_finite_verb(line: str, line_tag_lists: Optional[list[list[str]]]) -> bool:
+    """Tag-aware line-level finite-verb check.
+
+    If we have tags for the line, scan each token's head tag for a finite
+    verb. Otherwise fall back to the skel-based has_finite_verb.
+    """
+    if line_tag_lists:
+        for tt in line_tag_lists:
+            head = MA.head_tag_for_token(tt)
+            if head and MT.is_finite_verb(head):
+                return True
+        return False
+    return M.has_finite_verb(line)
+
+
 def _matches_trigger(spec: Spec, l_n: str, l_n1: str, ctx: dict[str, Any]) -> bool:
     t = spec.trigger
+    n_tok_tags: list[list[str]] = ctx.get("line_n_token_tags") or []
+    n1_tok_tags: list[list[str]] = ctx.get("line_n1_token_tags") or []
+
+    def _last_tag(tag_lists: list[list[str]]) -> Optional[list[str]]:
+        return tag_lists[-1] if tag_lists else None
+
+    def _first_tag(tag_lists: list[list[str]]) -> Optional[list[str]]:
+        return tag_lists[0] if tag_lists else None
+
     if "line_n_last_token" in t:
-        if not _matches_token(M.last_content_token(l_n), t["line_n_last_token"]):
+        if not _matches_token(M.last_content_token(l_n), t["line_n_last_token"], _last_tag(n_tok_tags)):
             return False
     if "line_n_first_token" in t:
-        if not _matches_token(M.first_content_token(l_n), t["line_n_first_token"]):
+        if not _matches_token(M.first_content_token(l_n), t["line_n_first_token"], _first_tag(n_tok_tags)):
             return False
     if "line_n1_first_token" in t:
-        if not _matches_token(M.first_content_token(l_n1), t["line_n1_first_token"]):
+        if not _matches_token(M.first_content_token(l_n1), t["line_n1_first_token"], _first_tag(n1_tok_tags)):
             return False
     if "line_n1_last_token" in t:
-        if not _matches_token(M.last_content_token(l_n1), t["line_n1_last_token"]):
+        if not _matches_token(M.last_content_token(l_n1), t["line_n1_last_token"], _last_tag(n1_tok_tags)):
             return False
     if "line_n_anywhere" in t:
-        if not _matches_anywhere(l_n, t["line_n_anywhere"]):
+        if not _matches_anywhere(l_n, t["line_n_anywhere"], n_tok_tags or None):
             return False
     if "line_n1_anywhere" in t:
-        if not _matches_anywhere(l_n1, t["line_n1_anywhere"]):
+        if not _matches_anywhere(l_n1, t["line_n1_anywhere"], n1_tok_tags or None):
             return False
     if "combined_max_prosodic_words" in t:
         total = M.prosodic_word_count(l_n) + M.prosodic_word_count(l_n1)
@@ -310,7 +366,9 @@ def _g_lei(l_n, l_n1, ctx):
 
 @_register_guard("both_lines_have_finite_verb")
 def _g_both_verbs(l_n, l_n1, ctx):
-    return M.has_finite_verb(l_n) and M.has_finite_verb(l_n1)
+    n_tags = ctx.get("line_n_token_tags")
+    n1_tags = ctx.get("line_n1_token_tags")
+    return _line_has_finite_verb(l_n, n_tags) and _line_has_finite_verb(l_n1, n1_tags)
 
 
 @_register_guard("cross_verse")
@@ -418,6 +476,11 @@ def _g_next_verb_initial(l_n, l_n1, ctx):
     first = M.first_content_token(lookahead)
     if not first:
         return False
+    la_tags = ctx.get("lookahead_token_tags") or []
+    if la_tags:
+        head = MA.head_tag_for_token(la_tags[0])
+        if head:
+            return MT.is_finite_verb(head)
     return M.is_finite_verb_token(first)
 
 
@@ -433,7 +496,7 @@ def _g_prev_incomplete(l_n, l_n1, ctx):
     prev = ctx.get("prev_line", "")
     if not prev:
         return False
-    return not M.has_finite_verb(prev)
+    return not _line_has_finite_verb(prev, ctx.get("prev_line_token_tags"))
 
 
 @_register_guard("m2_pp_prep_mismatch")
@@ -535,7 +598,22 @@ class SpecRunner:
                     line_offsets[(cur_ref[0], cur_ref[1], within_idx)] = line_no
                     within_idx += 1
 
+        # Load TAHOT morph alignment for this chapter (None if unavailable).
+        chapter_morph = MA.load_chapter_morph(ch_file)
+
         for (chapter, verse), lines in verses:
+            # Per-verse tag alignment: list[per_line_token_tag_lists] or None on mismatch.
+            verse_token_tags: Optional[list[list[list[str]]]] = None
+            if chapter_morph is not None:
+                ortho_tags = chapter_morph.get(verse)
+                if ortho_tags is not None:
+                    verse_token_tags = MA.align_verse_tokens_to_tags(lines, ortho_tags)
+
+            def _tags_at(idx: int) -> list[list[str]]:
+                if verse_token_tags is None or idx < 0 or idx >= len(verse_token_tags):
+                    return []
+                return verse_token_tags[idx]
+
             # Pair-mode pass — line N + line N+1 (existing merge logic)
             for i in range(len(lines) - 1):
                 l_n = lines[i]
@@ -549,6 +627,10 @@ class SpecRunner:
                     "lookahead": lookahead,
                     "prev_line": prev_line,
                     "line_idx_in_verse": i,
+                    "line_n_token_tags": _tags_at(i),
+                    "line_n1_token_tags": _tags_at(i + 1),
+                    "lookahead_token_tags": _tags_at(i + 2),
+                    "prev_line_token_tags": _tags_at(i - 1) if i >= 1 else [],
                 }
                 for spec in self.specs:
                     if spec.mode != "pair":
@@ -597,6 +679,10 @@ class SpecRunner:
                     "line_idx_in_verse": i,
                     "lookahead": lines[i + 1] if i + 1 < len(lines) else "",
                     "prev_line": lines[i - 1] if i >= 1 else "",
+                    "line_n_token_tags": _tags_at(i),
+                    "line_n1_token_tags": [],
+                    "lookahead_token_tags": _tags_at(i + 1),
+                    "prev_line_token_tags": _tags_at(i - 1) if i >= 1 else [],
                 }
                 for spec in self.specs:
                     if spec.mode != "line":
