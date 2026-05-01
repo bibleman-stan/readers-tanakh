@@ -136,8 +136,12 @@ ALL_VALIDATORS: list[tuple[str, str]] = [
 # Subprocess helper — run one validator
 # ---------------------------------------------------------------------------
 
-def run_validator(script_rel: str, book: str) -> dict | None:
-    """Invoke a validator with --json --book <book> from v1/he-baseline.
+def run_validator(script_rel: str, book: str, *, use_v2: bool = False) -> dict | None:
+    """Invoke a validator with --json --book <book>.
+
+    By default scans v1/he-baseline. When `use_v2=True`, adds `--v2` so the
+    validator scans v2/he — used by --diff-apply mode where findings are
+    computed against the current v2/he state and applied in place.
 
     Returns parsed JSON doc or None on failure.
     Validators exit 0 (clean) or 1 (findings) — both are success.
@@ -149,6 +153,8 @@ def run_validator(script_rel: str, book: str) -> dict | None:
         return None
 
     cmd = [sys.executable, str(path), "--json", "--book", book]
+    if use_v2:
+        cmd.append("--v2")
     env = {**os.environ, "PYTHONIOENCODING": "utf-8"}
 
     try:
@@ -436,9 +442,13 @@ def detect_merge_split_conflicts(
 # File-system helpers
 # ---------------------------------------------------------------------------
 
-def resolve_chapter_files(book: str) -> list[Path]:
-    """Return sorted list of .txt files for a book under v1/he-baseline."""
-    book_dir = V1_DIR / book
+def resolve_chapter_files(book: str, *, use_v2: bool = False) -> list[Path]:
+    """Return sorted list of .txt files for a book.
+
+    By default scans v1/he-baseline. When `use_v2=True`, scans v2/he —
+    used by --diff-apply mode.
+    """
+    book_dir = (V2_DIR if use_v2 else V1_DIR) / book
     if not book_dir.exists():
         return []
     return sorted(book_dir.glob("*.txt"))
@@ -655,30 +665,39 @@ def process_chapter(
     report_only: bool,
     force: bool,
     timestamp: str,
+    diff_apply: bool = False,
 ) -> dict:
-    """Apply findings to one chapter; write v2/he and reports if applicable."""
+    """Apply findings to one chapter; write v2/he and reports if applicable.
+
+    In diff-apply mode (`diff_apply=True`), `chapter_file` is the v2/he file
+    itself; findings have already been computed against the v2/he state.
+    Applying them in place adds only NEW mutations on top of the existing
+    cascade, leaving prior edits intact. Divergence check is skipped.
+    """
     chapter_stem = chapter_file.stem
-    v1_lines = chapter_file.read_text(encoding="utf-8").splitlines()
-    v1_line_count = len(v1_lines)
+    input_lines = chapter_file.read_text(encoding="utf-8").splitlines()
+    input_line_count = len(input_lines)
 
     conflicts = detect_merge_split_conflicts(strong_findings, review_findings)
 
-    mutated_lines, applied_changes = apply_mutations_to_lines(v1_lines, strong_findings)
+    mutated_lines, applied_changes = apply_mutations_to_lines(input_lines, strong_findings)
     v2_line_count = len(mutated_lines)
 
-    # Divergence guard — only relevant when not dry-running and v2/he already exists.
+    # Divergence guard — only relevant when not dry-running and v2/he already exists,
+    # AND we're NOT in diff-apply mode (where input == existing v2/he, so
+    # divergence is impossible by construction).
     # When spec_runner (apply_specs.py) has mutated v2/he beyond what v1 + adopted
     # validators can re-derive, PRESERVE the existing v2/he and continue the cascade.
     # The downstream pipeline (propagate_editorial_layers, glosses, build) reads v2
     # as input, so preserving it is the correct behavior — not an abort.
     diverged = False
     divergent_lines: list[str] = []
-    v2_file = v2_path_for(chapter_file, book)
+    v2_file = chapter_file if diff_apply else v2_path_for(chapter_file, book)
     should_write_v2 = True
 
-    if not dry_run and not report_only and v2_file.exists():
+    if not dry_run and not report_only and not diff_apply and v2_file.exists():
         diverged, divergent_lines = check_divergence(
-            v2_file, mutated_lines, v1_lines, strong_findings
+            v2_file, mutated_lines, input_lines, strong_findings
         )
         if diverged and not force:
             print(
@@ -691,7 +710,7 @@ def process_chapter(
     report_text = build_chapter_report(
         book=book,
         chapter_stem=chapter_stem,
-        v1_line_count=v1_line_count,
+        v1_line_count=input_line_count,
         v2_line_count=v2_line_count,
         applied_changes=applied_changes,
         review_items=review_findings,
@@ -714,7 +733,7 @@ def process_chapter(
 
     return {
         "chapter": chapter_stem,
-        "v1_lines": v1_line_count,
+        "v1_lines": input_line_count,
         "v2_lines": v2_line_count,
         "applied": len(applied_changes),
         "review": len(review_findings),
@@ -735,17 +754,32 @@ def process_book(
     report_only: bool,
     force: bool,
     timestamp: str,
+    diff_apply: bool = False,
 ) -> dict:
-    """Run validators and process all chapters in a book."""
-    chapter_files = resolve_chapter_files(book)
+    """Run validators and process all chapters in a book.
+
+    In diff-apply mode (`diff_apply=True`), validators are run against v2/he
+    (current state, post any prior cascades) and findings are applied IN
+    PLACE on v2/he. This bypasses the PRESERVE divergence guard and adds
+    only the new STRONG mutations the validators emit on the current state.
+    Used to push tag-aware-validator improvements into the corpus without
+    destabilizing existing edits.
+    """
+    chapter_files = resolve_chapter_files(book, use_v2=diff_apply)
     if not chapter_files:
-        print(f"  [ERROR] No .txt files found under {V1_DIR / book}", file=sys.stderr)
+        base = V2_DIR if diff_apply else V1_DIR
+        print(f"  [ERROR] No .txt files found under {base / book}", file=sys.stderr)
         return {"book": book, "error": "no chapter files", "chapters": []}
 
     adopted_names = set(ADOPTED_VALIDATORS.keys())
     print(f"\n{'='*60}")
     print(f"Book: {book}")
-    print(f"Mode: {'dry-run' if dry_run else 'report-only' if report_only else 'apply'}")
+    mode_label = (
+        "diff-apply (v2/he in-place)"
+        if diff_apply
+        else ("dry-run" if dry_run else "report-only" if report_only else "apply")
+    )
+    print(f"Mode: {mode_label}")
     print(f"Adopted validators: {sorted(adopted_names)}")
     # Show subcase restrictions for validators with per-tag subcase gates
     for vname, spec in ADOPTED_VALIDATORS.items():
@@ -755,7 +789,7 @@ def process_book(
     print(f"{'='*60}")
 
     # -----------------------------------------------------------------------
-    # Step 1: Run all validators against v1/he-baseline for this book.
+    # Step 1: Run all validators (v1/he-baseline by default; v2/he in diff-apply mode).
     # -----------------------------------------------------------------------
     print("\nRunning validators...")
     validator_outputs: list[tuple[str, dict]] = []
@@ -766,7 +800,7 @@ def process_book(
             print(f"  {validator_name}: [SKIP — script not found]")
             continue
         print(f"  {validator_name}...", end=" ", flush=True)
-        doc = run_validator(script_rel, book)
+        doc = run_validator(script_rel, book, use_v2=diff_apply)
         if doc is not None:
             for f in doc.get("findings", []):
                 f["_validator"] = validator_name
@@ -804,6 +838,7 @@ def process_book(
             report_only=report_only,
             force=force,
             timestamp=timestamp,
+            diff_apply=diff_apply,
         )
         book_stats.append(stats)
         total_applied += stats.get("applied", 0)
@@ -888,28 +923,45 @@ def main() -> None:
             "DESTRUCTIVE: hand-edits in v2/he will be lost."
         ),
     )
+    parser.add_argument(
+        "--diff-apply",
+        action="store_true",
+        default=False,
+        help=(
+            "Run validators against v2/he (current state, post any prior cascades) "
+            "and apply STRONG findings IN PLACE on v2/he. Bypasses the PRESERVE "
+            "divergence guard. Used to push tag-aware-validator improvements into "
+            "the corpus without re-running the full v1→v2 pipeline. Additive only — "
+            "cannot undo prior edits."
+        ),
+    )
     args = parser.parse_args()
 
     if args.dry_run and args.report_only:
         print("ERROR: --dry-run and --report-only are mutually exclusive.", file=sys.stderr)
         sys.exit(2)
+    if args.diff_apply and args.force:
+        print("ERROR: --diff-apply and --force are mutually exclusive (diff-apply skips divergence check).", file=sys.stderr)
+        sys.exit(2)
 
     timestamp = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
 
+    base_dir = V2_DIR if args.diff_apply else V1_DIR
+    base_label = "v2/he" if args.diff_apply else "v1/he-baseline"
     if args.all_books:
-        if not V1_DIR.exists():
-            print(f"ERROR: v1/he-baseline directory not found: {V1_DIR}", file=sys.stderr)
+        if not base_dir.exists():
+            print(f"ERROR: {base_label} directory not found: {base_dir}", file=sys.stderr)
             sys.exit(2)
-        books = sorted(d.name for d in V1_DIR.iterdir() if d.is_dir())
+        books = sorted(d.name for d in base_dir.iterdir() if d.is_dir())
         if not books:
-            print(f"ERROR: No book directories found under {V1_DIR}", file=sys.stderr)
+            print(f"ERROR: No book directories found under {base_dir}", file=sys.stderr)
             sys.exit(2)
         print(f"Processing {len(books)} book(s): {', '.join(books)}")
     else:
         book = args.book
-        if not (V1_DIR / book).exists():
+        if not (base_dir / book).exists():
             print(
-                f"ERROR: v1/he-baseline book directory not found: {V1_DIR / book}",
+                f"ERROR: {base_label} book directory not found: {base_dir / book}",
                 file=sys.stderr,
             )
             sys.exit(2)
@@ -926,6 +978,7 @@ def main() -> None:
             report_only=args.report_only,
             force=args.force,
             timestamp=timestamp,
+            diff_apply=args.diff_apply,
         )
         all_book_stats.append(result)
         grand_total_applied += result.get("total_applied", 0)
