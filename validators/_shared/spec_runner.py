@@ -151,14 +151,10 @@ def _check_morphology(tok: str, morph: str, tag_list: Optional[list[str]] = None
     skel-heuristic path.
     """
     if morph == "finite_verb":
-        if tag_list:
-            head_tag = MA.head_tag_for_token(tag_list)
-            if head_tag:
-                # Tag-driven: definitive. No skel fallback (the whole point of
-                # the gnt-reader-style refactor is to stop inferring when we
-                # have authoritative tags).
-                return MT.is_finite_verb(head_tag)
-        return M.is_finite_verb_token(tok)
+        # Tag-driven path now lives IN the helper (morphology.is_finite_verb_token
+        # accepts optional tag_list). Pass through; helper does TAHOT-oracle
+        # check first, falls back to skel only when no tag available.
+        return M.is_finite_verb_token(tok, tag_list=tag_list)
     if morph == "np_head":
         # standalone token check: not a finite verb, not a particle/prep
         return not M.is_finite_verb_token(tok) and not M._matches_prep_only(tok) if hasattr(M, "_matches_prep_only") else not M.is_finite_verb_token(tok)
@@ -218,17 +214,9 @@ def _check_morphology(tok: str, morph: str, tag_list: Optional[list[str]] = None
     if morph == "bare_prep":
         return M.is_bare_prep_token(tok)
     if morph == "construct_head":
-        if tag_list:
-            head_tag = MA.head_tag_for_token(tag_list)
-            if head_tag and head_tag != "[—]":
-                # Tag-driven: TAHOT morph code at position 4 of Nc-code is
-                # the state letter (a=absolute, c=construct, d=determined).
-                # Authoritative when present — eliminates the FN class where
-                # the construct head's skel isn't in CONSTRUCT_HEAD_SKELETONS
-                # (audit 2026-05-01: ~870 corpus-wide construct splits
-                # missed by skel-only path).
-                return MT.is_construct_state(head_tag)
-        return M.is_construct_head_token(tok)
+        # Tag-driven path now lives IN the helper (morphology.is_construct_head_token
+        # accepts optional tag_list). Pass through.
+        return M.is_construct_head_token(tok, tag_list=tag_list)
     if morph == "definite_adjective":
         return M.is_definite_adjective_token(tok)
     if morph == "numeral":

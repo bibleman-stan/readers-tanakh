@@ -931,8 +931,18 @@ def is_wayyiqtol_token(token: str) -> bool:
     return True
 
 
-def is_finite_verb_token(token: str) -> bool:
+def is_finite_verb_token(token: str, tag_list: "list[str] | None" = None) -> bool:
     """True if the token (raw, with niqqud/te'amim) parses as a finite verb.
+
+    Tag-driven primary path: if `tag_list` is provided (per-ortho TAHOT morph
+    tags for this prosodic-word token), the LAST tag's head morpheme is the
+    authoritative classifier — `V[stem][p/w/i/j/h/v/q]` heads are finite. This
+    eliminates the systematic FP class where common nouns (דבר, ואין, ואיש)
+    and weqatal/3p qatal forms get mis-classified by the skel-only heuristic.
+    See `scripts/audit_morphology_vs_tahot.py` (2026-05-01 audit) for the
+    14K FP / 18K FN class this addresses.
+
+    Skel-fallback (legacy path, used when no tag is supplied):
 
     Niqqud-aware participle exclusion: holam after first consonant marks the
     qal active participle (or qal infinitive construct), neither finite —
@@ -944,6 +954,19 @@ def is_finite_verb_token(token: str) -> bool:
     isolates the head morpheme (here the DO marker את) so the check sees only
     "את", which correctly fails the prefix-verb test (length-2).
     """
+    # ── Tag-driven primary path (TAHOT oracle) ────────────────────────
+    if tag_list:
+        # Find the LAST non-placeholder tag (head of the prosodic-word).
+        head_tag = None
+        for t in reversed(tag_list):
+            if t and t != "[—]":
+                head_tag = t
+                break
+        if head_tag is not None:
+            from . import morph_tags as _MT
+            return _MT.is_finite_verb(head_tag)
+
+    # ── Skel-fallback (when no tag available) ─────────────────────────
     if MAQQEF in token:
         first_sub = token.split(MAQQEF, 1)[0]
         if _first_vowel_is_holam(first_sub):
@@ -1521,8 +1544,19 @@ BOUND_PREP_STRIPS = ("ב", "ל", "כ", "מ")  # bound preps only — article ה 
 # of 559 h16_c misses traced to this bug.)
 
 
-def is_construct_head_token(token: str) -> bool:
-    """True if token is a construct-state head (algorithmic strip + closed list).
+def is_construct_head_token(token: str, tag_list: "list[str] | None" = None) -> bool:
+    """True if token is a construct-state head.
+
+    Tag-driven primary path: if `tag_list` is provided (per-ortho TAHOT morph
+    tags for this prosodic-word token), the LAST tag's head morpheme is the
+    authoritative classifier — TAHOT `Nc[mfb][sdpd]c` (state letter at index 4
+    is `c`) marks construct state. This eliminates the systematic FN class
+    where construct nouns absent from CONSTRUCT_HEAD_SKELETONS lexicon
+    (אלהי, תחת, אין, נאם, מזוזת, etc.) get missed entirely. See
+    `scripts/audit_morphology_vs_tahot.py` (2026-05-01 audit) for the
+    14K FN class this addresses corpus-wide.
+
+    Skel-fallback (legacy path, used when no tag is supplied):
 
     Strategy:
       1. Get skeleton; for maqqef compounds, check the LAST sub-token (the
@@ -1536,6 +1570,18 @@ def is_construct_head_token(token: str) -> bool:
     This generalization catches בְּבֵית, מִבֵּית, וּבְבֵית, וְאַנְשֵׁי, אֶת־מִצְוֹת, etc.
     without requiring every prefix variant in the closed list.
     """
+    # ── Tag-driven primary path (TAHOT oracle) ────────────────────────
+    if tag_list:
+        head_tag = None
+        for t in reversed(tag_list):
+            if t and t != "[—]":
+                head_tag = t
+                break
+        if head_tag is not None:
+            from . import morph_tags as _MT
+            return _MT.is_construct_state(head_tag)
+
+    # ── Skel-fallback (when no tag available) ─────────────────────────
     if MAQQEF in token:
         # Check the LAST sub-token (rightmost = awaiting-rectum head if construct-shaped)
         last = token.rsplit(MAQQEF, 1)[-1]
