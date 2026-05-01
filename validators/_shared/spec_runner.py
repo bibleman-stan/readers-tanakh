@@ -208,21 +208,19 @@ def _check_morphology(tok: str, morph: str, tag_list: Optional[list[str]] = None
     if morph == "m2_pp_verb":
         return M.is_m2_pp_verb_token(tok)
     if morph == "do_marker":
-        return M.is_do_marker_token(tok)
+        return M.is_do_marker_token(tok, tag_list=tag_list)
     if morph == "bare_do_marker":
         return M.is_bare_do_marker_token(tok)
     if morph == "bare_prep":
-        return M.is_bare_prep_token(tok)
+        return M.is_bare_prep_token(tok, tag_list=tag_list)
     if morph == "construct_head":
-        # Tag-driven path now lives IN the helper (morphology.is_construct_head_token
-        # accepts optional tag_list). Pass through.
         return M.is_construct_head_token(tok, tag_list=tag_list)
     if morph == "definite_adjective":
-        return M.is_definite_adjective_token(tok)
+        return M.is_definite_adjective_token(tok, tag_list=tag_list)
     if morph == "numeral":
-        return M.is_numeral_token(tok)
+        return M.is_numeral_token(tok, tag_list=tag_list)
     if morph == "numeral_or_unit_noun":
-        return M.is_numeral_token(tok) or M.is_numeral_governed_noun(tok)
+        return M.is_numeral_token(tok, tag_list=tag_list) or M.is_numeral_governed_noun(tok)
     if morph == "bare_noun":
         return M.is_bare_noun_token(tok)
     return False

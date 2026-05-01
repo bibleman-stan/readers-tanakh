@@ -1042,14 +1042,31 @@ def line_starts_with_prep(line: str) -> tuple[bool, Optional[str]]:
 
 
 # Direct-object marker — אֵת standalone or maqqef-joined (אֶת־...)
-def is_do_marker_token(token: str) -> bool:
+def is_do_marker_token(token: str, tag_list: "list[str] | None" = None) -> bool:
     """True if the token IS the DO marker אֵת — standalone, maqqef-bound, or
     vav-prefixed (וְאֵת).
 
-    Distinguishes DO marker את from אַתָּה (you, ms = "אתה" skeleton),
-    אִתִּי (with me = "אתי") etc., which would all start with the same
-    consonants but skel as longer strings.
+    Tag-driven primary path: FIRST tag's chain contains "To" (TAHOT
+    direct-object-marker code). Authoritative when present — eliminates
+    skel ambiguity with אַתָּה / אִתִּי / etc. that share consonants. For
+    maqqef compounds (`אֶת־X`), the FIRST ortho's tag is the marker; later
+    ortho-tags are the complement (Np / Nc / etc.).
+
+    Skel-fallback distinguishes DO marker את from אַתָּה (you, ms = "אתה"
+    skeleton), אִתִּי (with me = "אתי") etc.
     """
+    # ── Tag-driven primary path (TAHOT oracle) ────────────────────────
+    if tag_list:
+        first_tag = None
+        for t in tag_list:
+            if t and t != "[—]":
+                first_tag = t
+                break
+        if first_tag is not None:
+            from . import morph_tags as _MT
+            return "To" in _MT.morpheme_chain(first_tag)
+
+    # ── Skel-fallback ─────────────────────────────────────────────────
     if MAQQEF in token:
         first_sub = token.split(MAQQEF, 1)[0]
         s = skel(first_sub)
@@ -1131,11 +1148,29 @@ UNIT_NOUNS: frozenset[str] = frozenset({
 })
 
 
-def is_numeral_token(token: str) -> bool:
+def is_numeral_token(token: str, tag_list: "list[str] | None" = None) -> bool:
     """True if token is a cardinal numeral stem (with or without vav prefix,
-    with or without maqfef-joined material). Strips leading vav so וּמְאַת,
-    וּשְׁלֹשִׁים, וְאַרְבָּעִים all match. Does NOT match ordinals.
+    with or without maqfef-joined material). Does NOT match ordinals.
+
+    Tag-driven primary path: HEAD tag's head-morpheme starts with "Ac"
+    (TAHOT cardinal numeral code; ordinals are "Ao"). Authoritative when
+    present — eliminates skel false-negatives where the cardinal isn't
+    in CARDINAL_STEMS lexicon.
+
+    Skel-fallback strips leading vav so וּמְאַת, וּשְׁלֹשִׁים, וְאַרְבָּעִים all match.
     """
+    # ── Tag-driven primary path (TAHOT oracle) ────────────────────────
+    if tag_list:
+        head_tag = None
+        for t in reversed(tag_list):
+            if t and t != "[—]":
+                head_tag = t
+                break
+        if head_tag is not None:
+            from . import morph_tags as _MT
+            return _MT.head_morpheme(head_tag).startswith("Ac")
+
+    # ── Skel-fallback ─────────────────────────────────────────────────
     tok = token.split(MAQQEF, 1)[0] if MAQQEF in token else token
     s = skel(tok)
     if not s:
@@ -1474,16 +1509,38 @@ def coordinated_np_split_positions(line: str) -> list[int]:
     return vav_np_positions
 
 
-def is_bare_prep_token(token: str) -> bool:
+def is_bare_prep_token(token: str, tag_list: "list[str] | None" = None) -> bool:
     """True only if the token is a BARE preposition with no maqqef-joined
     complement — i.e., the prep is stranded awaiting its noun on the next line.
 
-    Free preps (אֶל, עַל, מִן, תַּחַת, ...) and vav-prefixed forms (וְאֶל, וְעַל, ...)
-    when standing alone (no maqqef) are stranded — line-final or line-only
-    occurrences indicate a complement that belongs on the merged line.
+    Tag-driven primary path: tag chain is exactly ["R"] (free standalone prep)
+    or [C/c, R] (vav-conjunction + free prep). Authoritative when present —
+    eliminates skel ambiguity with אַחֲרֵי/אֵלָיו/etc. that have suffix
+    morphemes the skel can't disambiguate.
+
+    Skel-fallback: free preps (אֶל, עַל, מִן, תַּחַת, ...) and vav-prefixed
+    forms (וְאֶל, וְעַל, ...) when standing alone (no maqqef).
     """
     if MAQQEF in token:
         return False
+
+    # ── Tag-driven primary path (TAHOT oracle) ────────────────────────
+    if tag_list:
+        head_tag = None
+        for t in tag_list:
+            if t and t != "[—]":
+                head_tag = t
+                break
+        if head_tag is not None:
+            from . import morph_tags as _MT
+            chain = _MT.morpheme_chain(head_tag)
+            if chain == ["R"]:
+                return True
+            if len(chain) == 2 and chain[0] in ("C", "c") and chain[1] == "R":
+                return True
+            return False
+
+    # ── Skel-fallback ─────────────────────────────────────────────────
     s = skel(token)
     if s in PREP_SKELETONS:
         return True
@@ -1646,13 +1703,36 @@ def is_bare_noun_token(token: str) -> bool:
     return True
 
 
-def is_definite_adjective_token(token: str) -> bool:
+def is_definite_adjective_token(token: str, tag_list: "list[str] | None" = None) -> bool:
     """True if token is article-marked + adjective stem.
 
-    Pattern: ה + (adjective stem) [+ plural/feminine suffix]. Article-prefix
-    distinguishes attributive from predicative position; stem-list keeps the
-    heuristic conservative.
+    Tag-driven primary path: HEAD tag's chain has "Td" (definite article)
+    morpheme AND head morpheme starts with "A" (adjective). Authoritative
+    when present — captures every TAHOT-classified definite adjective,
+    not just those whose stem appears in COMMON_ADJ_STEMS lexicon.
+
+    Skel-fallback: pattern ה + (adjective stem) [+ plural/feminine suffix].
+    Article-prefix distinguishes attributive from predicative position;
+    stem-list keeps the heuristic conservative.
     """
+    # ── Tag-driven primary path (TAHOT oracle) ────────────────────────
+    if tag_list:
+        head_tag = None
+        for t in reversed(tag_list):
+            if t and t != "[—]":
+                head_tag = t
+                break
+        if head_tag is not None:
+            from . import morph_tags as _MT
+            chain = _MT.morpheme_chain(head_tag)
+            if chain:
+                head_morph = chain[-1]
+                # Head is adjective (A...) AND chain has Td (def article) prefix
+                if head_morph.startswith("A") and any(m == "Td" for m in chain[:-1]):
+                    return True
+            return False
+
+    # ── Skel-fallback ─────────────────────────────────────────────────
     s = skel(token)
     if not s.startswith("ה") or len(s) < 4:
         return False
