@@ -1,0 +1,48 @@
+name: h18_4_nominal_predicate
+rule: H18.4
+subcase: nominal_predicate
+severity: REVIEW-REQUIRED
+description: |
+  Verbless clause where the subject NP is on line N and a single-token
+  predicate NP is on line N+1 (zero-copula equational clause). Both lines
+  together form a single verbless clause; neither is propositionally
+  complete alone.
+
+  Concrete instances (audit 2026-05-01 D4 Class C):
+    1 Sam 1:2  vv 9-10  וְשֵׁ֥ם הַשֵּׁנִ֖ית / פְּנִנָּ֑ה
+                        (and the name of the second / was Peninnah)
+    1 Sam 1:24 vv 128-9 וְהַנַּ֖עַר / נָֽעַר
+                        (and the lad / was a lad)
+
+  Distinguished from H18.1 (verbless predicate, prep-headed) by line N+1
+  shape: H18.1 fires on prep-headed N+1 (subject-NP / predicate-PP);
+  H18.4 fires on bare-noun N+1 (subject-NP / predicate-NP).
+
+  Severity REVIEW-REQUIRED until corpus sweep validates FP rate. Most
+  candidates are likely real (verbless clauses with NP predicate are
+  common in genealogies and identifications), but adjacency does not
+  always indicate copular relationship — apposition, casus pendens, and
+  enumeration can all produce the same surface shape.
+
+trigger:
+  line_n_anywhere:
+    has_finite_verb: false
+  line_n1_first_token:
+    morphology: bare_noun
+  line_n1_anywhere:
+    has_finite_verb: false
+  line_n1_max_prosodic_words: 1
+  combined_max_prosodic_words: 7
+
+guards:
+  - poetic_register
+  - vocative_position
+  - discourse_particle_on_next_line
+  - casus_pendens
+  - heavy_subject
+  - next_line_is_vav_coord_pp     # block re-absorbing post-S1-split coord-PP enumeration members
+  - next_line_is_vav_coord_np     # block re-absorbing post-S2-split coord-NP enumeration members
+  - next_line_is_wayyiqtol        # block re-absorbing post-S3-split wayyiqtol-headed lines
+
+annotation_template: "H18.4 nominal predicate detached — verbless equational clause split (combined {pwc} prosodic words)"
+suggested_action: REVIEW

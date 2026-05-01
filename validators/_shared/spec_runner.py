@@ -218,6 +218,16 @@ def _check_morphology(tok: str, morph: str, tag_list: Optional[list[str]] = None
     if morph == "bare_prep":
         return M.is_bare_prep_token(tok)
     if morph == "construct_head":
+        if tag_list:
+            head_tag = MA.head_tag_for_token(tag_list)
+            if head_tag and head_tag != "[—]":
+                # Tag-driven: TAHOT morph code at position 4 of Nc-code is
+                # the state letter (a=absolute, c=construct, d=determined).
+                # Authoritative when present — eliminates the FN class where
+                # the construct head's skel isn't in CONSTRUCT_HEAD_SKELETONS
+                # (audit 2026-05-01: ~870 corpus-wide construct splits
+                # missed by skel-only path).
+                return MT.is_construct_state(head_tag)
         return M.is_construct_head_token(tok)
     if morph == "definite_adjective":
         return M.is_definite_adjective_token(tok)

@@ -95,8 +95,13 @@ BARE_SPEECH_VERB_SKELETONS = {
     "ויאמר",    # wayyiqtol qal 3ms — and he said
     "ויאמרו",   # wayyiqtol qal 3mp — and they said
     "וידבר",    # wayyiqtol piel 3ms — and he spoke
+    "וידברו",   # wayyiqtol piel 3mp — and they spoke (audit 2026-05-01: missing)
     "ותאמר",    # wayyiqtol qal 3fs — and she said
+    "ותאמרו",   # wayyiqtol qal 2/3 fp — and you/they (f) said (missing)
+    "ותדבר",    # wayyiqtol piel 3fs — and she spoke (missing)
     "ויען",     # wayyiqtol qal 3ms — and he answered
+    "ותען",     # wayyiqtol qal 3fs — and she answered (missing)
+    "ויוסף",    # wayyiqtol hiphil 3ms — and he added/continued (idiom: ויוסף לאמר)
 }
 
 # Prophetic formula line — these get their OWN line regardless of length.
@@ -298,10 +303,44 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
                         "leemor_pos": leemor_pos,
                     })
 
-        # --- Secondary check: bare speech verb at line end (no לֵאמֹר) ---
-        # If the last token is a bare wayyiqtol speech verb and the next line
-        # has content, this might be a framing situation without לֵאמֹר.
-        # Low confidence — REVIEW-REQUIRED only.
+        # --- Solo speech-verb check: line is exactly ONE bare speech-verb token ---
+        # Per audit 2026-05-01 Class E: when an entire line is just a wayyiqtol
+        # speech verb (e.g., 1 Sam 1:18 line 92 'וַתֹּ֕אמֶר' alone), the verb
+        # is propositionally empty without its complement clause on the next line.
+        # This is STRONG-MERGE-CANDIDATE (not REVIEW): the merge is unambiguously
+        # correct — solo speech-verbs are never editorially defensible standalone.
+        elif (
+            len(bare_tokens) == 1
+            and bare_tokens[0] in BARE_SPEECH_VERB_SKELETONS
+        ):
+            next_content = ""
+            next_content_line_num = None
+            for j in range(i + 1, len(lines)):
+                if not is_skippable(lines[j]):
+                    next_content = lines[j].strip()
+                    next_content_line_num = j + 1  # 1-based
+                    break
+            if next_content:
+                violations.append({
+                    "file": path.name,
+                    "file_path": path,
+                    "line_num": line_no,
+                    "rule": "H5/speech-framing",
+                    "severity": "STRONG-MERGE-CANDIDATE",
+                    "brief": (
+                        f"solo speech verb ({tokens[-1]}) — propositionally empty; "
+                        f"merge with following complement clause"
+                    ),
+                    "line": line.rstrip(),
+                    "next_line": next_content,
+                    "next_line_num": next_content_line_num,
+                    "leemor_pos": None,
+                })
+
+        # --- Secondary check: bare speech verb at MULTI-WORD line end (no לֵאמֹר) ---
+        # If the last token is a bare wayyiqtol speech verb on a multi-token line
+        # (e.g., 'וַיַּעַן עֵלִי וַיֹּאמֶר'), this might be a framing situation
+        # without לֵאמֹר. Lower confidence — REVIEW-REQUIRED.
         elif bare_tokens and bare_tokens[-1] in BARE_SPEECH_VERB_SKELETONS:
             next_content = ""
             next_content_line_num = None

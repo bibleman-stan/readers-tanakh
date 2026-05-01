@@ -1711,6 +1711,31 @@ DISCOURSE_PARTICLES = {"הנה", "אף", "עלכן", "לכן", "ועתה", "אז
 
 VOCATIVE_PARTICLES = {"הוי", "אוי", "אהה", "אנא"}
 
+# Clause-completing adverbial / temporal particles. Distinct from
+# DISCOURSE_PARTICLES (which are sentence-introducing/topic-shifting):
+# these particles attach BACKWARD, completing the predication on line N.
+# Audit 2026-05-01 D4 Class G: e.g., 1 Sam 1:18 "וּפָנֶיהָ לֹא־הָיוּ־לָהּ" / "עוֹד".
+# Closed list — high-precision detection.
+ADVERBIAL_PARTICLES = {
+    "עוד",       # still / anymore / again
+    "שם",        # there (locative)
+    "שמה",       # thither (directional)
+    "מאד",       # very / exceedingly
+    "יחדו",      # together
+    "יחד",       # together (alt form)
+    "תמיד",      # always / continually
+    "אחר",       # afterward
+    "ככה",       # thus / so
+    "כן",        # so / thus (adverbial — distinguish from כן "yes" particle context)
+    "פה",        # here
+    "פתאם",      # suddenly
+    "מהר",       # quickly
+    "חנם",       # for nothing / in vain
+    "טרם",       # not yet / before (adverbial form, not the conjunctive)
+    "ריקם",      # empty-handed
+    "אמנם",      # indeed / truly
+}
+
 
 def line_starts_with_discourse_particle(line: str) -> bool:
     tok = first_content_token(line)

@@ -28,8 +28,7 @@ va'atzei | sitim
 35:8
 veshemen | lama'or
 uvesamim | leshemen | hamishchah
-veliktoret
-hasamim
+veliktoret | hasamim
 
 35:9
 ve'avnei | shoham
@@ -76,8 +75,7 @@ ve'et | kano
 et | kal'ei | hechatzer
 et | amudav
 ve'et | adaneiha
-ve'et | masakh
-sha'ar | hechatzer
+ve'et | masakh | sha'ar | hechatzer
 
 35:18
 et | yitdot | hamishkan | ve'et | yitdot | hechatzer
@@ -95,8 +93,7 @@ vaiyetze'u | kol | adat | benei | Yisra'el | milifnei | Mosheh
 vaiyavo'u | kol | ish | asher | nesa'o | libo
 vekhol | asher | nadevah | rucho | oto | hevi'u | et | terumat | Yahweh | limlekhet | ohel | mo'ed
 ulekhol | avodato
-ulevigdei
-hakodesh
+ulevigdei | hakodesh
 
 35:22
 vaiyavo'u | ha'anashim | al | hanashim
@@ -128,8 +125,7 @@ ve'et | avnei | hamilu'im | la'efod | velachoshen
 ve'et | habosem
 ve'et | hashamen | lema'or
 uleshemen | hamishchah
-veliktoret
-hasamim
+veliktoret | hasamim
 
 35:29
 kol | ish | ve'ishah | asher | nadav | libam | otam

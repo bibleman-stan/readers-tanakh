@@ -1,0 +1,51 @@
+name: m_adverb_stranded
+rule: M
+subcase: adverb_stranded
+severity: STRONG-MERGE-CANDIDATE
+description: |
+  Single-token clause-completing adverbial / temporal particle stranded on
+  its own line, attaching backward to complete the predication on line N.
+
+  Distinct from DISCOURSE_PARTICLES (sentence-introducing / topic-shifting,
+  forward-leading): ADVERBIAL_PARTICLES are backward-attaching and never
+  propositionally autonomous in narrative prose.
+
+  Concrete instance (audit 2026-05-01 D4 Class G):
+    1 Sam 1:18 lines 95-96:
+      וּפָנֶ֥יהָ לֹא־הָיוּ־לָ֖הּ        (and her face not they were to her)
+      עֽוֹד                              (anymore)
+                              ^ stranded — completes the negation above
+
+  Closed list of skels in `validators/_shared/morphology.py:ADVERBIAL_PARTICLES`.
+
+trigger:
+  line_n1_first_token:
+    skeleton_in:
+      - "עוד"
+      - "שם"
+      - "שמה"
+      - "מאד"
+      - "יחדו"
+      - "יחד"
+      - "תמיד"
+      - "אחר"
+      - "ככה"
+      - "כן"
+      - "פה"
+      - "פתאם"
+      - "מהר"
+      - "חנם"
+      - "טרם"
+      - "ריקם"
+      - "אמנם"
+  line_n1_max_prosodic_words: 1
+  combined_max_prosodic_words: 8
+
+guards:
+  - poetic_register
+  - next_line_is_vav_coord_pp     # block re-absorbing post-S1-split coord-PP enumeration members
+  - next_line_is_vav_coord_np     # block re-absorbing post-S2-split coord-NP enumeration members
+  - next_line_is_wayyiqtol        # block re-absorbing post-S3-split wayyiqtol-headed lines
+
+annotation_template: "Adverbial particle stranded — backward-attaches to complete prior predication ({pwc} prosodic words)"
+suggested_action: MERGE

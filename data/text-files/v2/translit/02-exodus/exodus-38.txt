@@ -13,8 +13,7 @@ ve'et | hamachtot
 kol | kelav | asah | nechoshet
 
 38:4
-vaiya'as | lamizbeach | mikhbar | ma'aseh
-reshet | nechoshet | tachat | karkubo | milematah | ad | chetzyo
+vaiya'as | lamizbeach | mikhbar | ma'aseh | reshet | nechoshet | tachat | karkubo | milematah | ad | chetzyo
 
 38:5
 vaiyitzok | arba | taba'ot | be'arba | haketzavot | lemikhbar | hanechoshet
@@ -76,8 +75,7 @@ kol | kal'ei | hechatzer | saviv | shesh | mashezar
 veha'adanim | la'amudim | nechoshet
 vavei | ha'amudim | vachashukeihem | kesef
 vetzipui | rasheihem | kasef
-vehem | mechushakim | kesef
-kol | amudei | hechatzer
+vehem | mechushakim | kesef | kol | amudei | hechatzer
 
 38:18
 umasakh | sha'ar | hechatzer | ma'aseh | rokem
@@ -154,6 +152,5 @@ ve'et | mikhbar | hanechoshet
 asher | lo | ve'et | kol | kelei | hamizbeach
 
 38:31
-ve'et | adnei | hechatzer | saviv | ve'et | adnei
-sha'ar | hechatzer
+ve'et | adnei | hechatzer | saviv | ve'et | adnei | sha'ar | hechatzer
 ve'et | kol | yitdot | hamishkan | ve'et | kol | yitdot | hechatzer | saviv
