@@ -1677,6 +1677,144 @@ def multi_wayyiqtol_clause_split_positions(
     return candidate_splits
 
 
+def obligatory_pp_complement_split_positions(
+    line: str,
+    prev_line: str = "",
+    prev_line_token_tags: list[list[str]] | None = None,
+    line_token_tags: list[list[str]] | None = None,
+) -> list[int]:
+    """S5 trigger function: return token positions where a SPLIT should be
+    inserted to extract a leading PP-complement away from a subsequent
+    wayyiqtol clause, when the leading PP is the complement of the prior
+    line's verb (V+S pattern leaves the verb stranded from its complement).
+
+    Class signature (Stan-flagged 2026-05-01, Exo 18:24 pattern):
+      Line N:    [obligatory-PP-verb wayyiqtol + bare-NP-S]
+                 (e.g., וַיִּשְׁמַע מֹשֶׁה — שמע requires ל/אל recipient)
+      Line N+1:  [bound-prep-PP] [mid-line wayyiqtol] [...]
+                 (e.g., לְקוֹל חֹתְנוֹ וַיַּעַשׂ — PP belongs to N's verb,
+                  but the line ALSO contains a fresh wayyiqtol clause)
+
+    The split extracts the leading PP into its own line, allowing the
+    follow-on M-class merge (m2_6 / m2_8) to fuse it with line N. After
+    the split, line N+1 becomes:
+      [bound-prep-PP]                ← merges back onto line N
+      [wayyiqtol-clause]             ← stays as its own ATU
+
+    Safety conditions (all must hold):
+      1. Line starts with a bound-prep token whose first sub-token is a prep
+      2. Line contains at least one wayyiqtol mid-line (position ≥ 1)
+      3. Prior line's FIRST content token is an obligatory-PP-verb
+         (in M2_PP_VERB_SKELETONS or MOTION_LOCUS_VERB_SKELETONS)
+      4. The leading prep on this line matches the prior verb's allowed-prep
+         set (same logic as m2_pp_prep_mismatch / motion_locus_prep_mismatch)
+      5. Leading PP is NOT a temporal frame (excluded by checking that the
+         post-prep noun is not in TEMPORAL_NOUN_SKELS) — those are handled
+         by m5_b which attaches frames to their main clause, not to a
+         prior verb.
+
+    Sister to m2_7's pattern: that one merges line N with the entire
+    bound-PP line N+1 when line N+1 has no other finite verb. This S5
+    handles the case where line N+1 has additional verbs that block m2_7's
+    no-finite-verb constraint — extract just the PP, then merge.
+
+    Returns split position (the wayyiqtol token index) or [] if any
+    safety condition fails.
+    """
+    toks = tokens(line)
+    if len(toks) < 3:
+        return []  # need at least: PP-token + wayyiqtol + dependent
+
+    # Condition 1: leading bound-prep
+    # Tag-aware path (when available): require the FIRST token's morpheme
+    # chain to contain `R` (preposition). Disambiguates skel collisions like
+    # `אַל` (negation, tag Tn) vs `אֶל` (prep, tag R) — same class as the
+    # is_vav_coord_pp_head fix (commit f3f771604).
+    from . import morph_tags as MT  # local import to avoid cycles
+    if line_token_tags is not None and len(line_token_tags) > 0 and line_token_tags[0]:
+        has_prep = False
+        for tag in line_token_tags[0]:
+            chain = MT.morpheme_chain(tag)
+            if any(m and m[0] == "R" for m in chain):
+                has_prep = True
+                break
+        if not has_prep:
+            return []
+    first = toks[0]
+    if MAQQEF in first:
+        first_head = first.split(MAQQEF, 1)[0]
+        first_head_skel = skel(first_head)
+    else:
+        first_head_skel = skel(first)
+    if not first_head_skel:
+        return []
+    is_bound_prep = (
+        first_head_skel in PREP_SKELETONS
+        or (len(first_head_skel) >= 2 and first_head_skel[0] in BOUND_PREP_PREFIXES
+            and first_head_skel[:2] not in NON_PREP_2CHAR_PREFIX
+            and not is_finite_verb_skel(first_head_skel))
+    )
+    if not is_bound_prep:
+        return []
+
+    # Condition 5 (early exit): exclude temporal frames — m5_b owns those
+    if first_head_skel and first_head_skel[0] in TEMPORAL_BOUND_PREPS:
+        inner = first_head_skel[1:]
+        if inner in TEMPORAL_NOUN_SKELS:
+            return []
+
+    # Condition 2: find first wayyiqtol mid-line (position ≥ 1)
+    from . import morph_tags as MT  # local import to avoid cycles
+    wayy_pos = -1
+    for i in range(1, len(toks)):
+        if line_token_tags is not None and i < len(line_token_tags) and line_token_tags[i]:
+            if any(MT.is_wayyiqtol(tag) for tag in line_token_tags[i]):
+                wayy_pos = i
+                break
+            continue
+        # skel fallback
+        s = skel(toks[i])
+        if (
+            len(s) >= 3
+            and s[0] == "ו"
+            and s[1] in YIQTOL_PREFIXES
+            and s[1:] not in YIQTOL_KNOWN_NOUNS
+        ):
+            wayy_pos = i
+            break
+    if wayy_pos == -1:
+        return []
+
+    # Condition 3: prior line's first content token is an obligatory-PP-verb
+    if not prev_line:
+        return []
+    prev_toks = tokens(prev_line)
+    if not prev_toks:
+        return []
+    prev_first = prev_toks[0]
+    is_speech_pp_verb = is_m2_pp_verb_token(prev_first)
+    is_motion_pp_verb = is_motion_locus_verb_token(prev_first)
+    if not (is_speech_pp_verb or is_motion_pp_verb):
+        return []
+
+    # Condition 4: leading prep matches prior verb's allowed-prep set
+    if is_speech_pp_verb:
+        allowed = m2_pp_verb_allowed_preps(prev_first)
+    else:
+        allowed = motion_locus_verb_allowed_preps(prev_first)
+    if not allowed:
+        return []
+    # Match: standalone prep skel OR bound-prep first-letter prefix
+    prep_match = (
+        first_head_skel in allowed
+        or (first_head_skel and first_head_skel[0] in allowed)
+    )
+    if not prep_match:
+        return []
+
+    return [wayy_pos]
+
+
 def coordinated_np_split_positions(line: str) -> list[int]:
     """Return token indices in `line` where a SPLIT should be inserted to break
     a coordinated-NP enumeration into one-NP-per-line. Returns empty list if

@@ -1,0 +1,69 @@
+name: m2_8_speech_verb_subj_pp_recipient
+rule: M2
+subcase: speech_verb_subj_pp_recipient
+severity: STRONG-MERGE-CANDIDATE
+description: |
+  Speech-recipient verb (V+S pattern) + obligatory recipient PP. Sister to
+  m2_7 (motion-locus verbs); same architecture but for the speech-verb
+  closed list (M2_PP_VERB_SKELETONS — שמע, נשא, פנה, קרא, זעק, התפלל).
+
+  Stan-flagged 2026-05-01 (Exo 18:24 pattern, post-S5 split):
+    Before:
+      וַיִּשְׁמַע מֹשֶׁה
+      לְקוֹל חֹתְנוֹ                    (post-S5 split — was line 2's leading PP)
+    After:
+      וַיִּשְׁמַע מֹשֶׁה לְקוֹל חֹתְנוֹ      [V + S + PP-recipient = one ATU]
+
+  Distinct from h18_3 (which inspects line N's LAST token for the verb
+  via `line_n_last_token: morphology: m2_pp_verb`): in V+S patterns the
+  last token of line N is the subject NP (e.g., מֹשֶׁה), not the verb.
+  m2_8 anchors on FIRST token (the wayyiqtol verb) — same architecture as
+  m2_7 anchors on FIRST motion verb.
+
+  Distinct from m2_6 (which has broad trigger `line_n_anywhere:
+  has_finite_verb: true` and no verb-class restriction): m2_8 has the
+  narrow obligatory-PP-verb closed list, enforced by `m2_pp_prep_mismatch`
+  guard. This is what allows m2_8 to safely SKIP the
+  `next_line_is_verb_initial` guard that m2_6 carries (m2_6 needs that
+  guard for the broad trigger; m2_8's tighter trigger doesn't need it).
+
+  Closed verb-class lexicon (M2_PP_VERB_SKELETONS — already exists):
+    - שמע + ל / אל
+    - נשא + אל
+    - פנה + אל
+    - קרא + אל / ל
+    - זעק + אל
+    - התפלל + אל
+
+trigger:
+  line_n_first_token:
+    morphology: m2_pp_verb
+  line_n1_first_token:
+    morphology: prep
+  line_n1_anywhere:
+    has_finite_verb: false
+  combined_max_prosodic_words: 8
+
+guards:
+  - m2_pp_prep_mismatch_first
+  - poetic_register
+  - both_lines_have_finite_verb     # if line N+1 has its own finite verb,
+                                     # treat as separate clauses (post-S5
+                                     # split removes the additional verb)
+  - prev_line_incomplete            # ensure line N is the new clause head
+  # Intentionally NOT next_line_is_verb_initial:
+  # m2_6 carries this guard because its broad trigger (any finite verb on
+  # line N + any prep on line N+1) admits the Gen 1:27-style pattern where
+  # line N+1 is a fronted PP for the lookahead clause. m2_8 is much tighter:
+  # the speech-verb closed list AND the prep-mismatch guard restrict the
+  # case to verbs whose recipient PP is grammatically obligatory. After
+  # S5 splits a multi-clause line into separate cola, the lookahead at
+  # Exo 18:24 IS a wayyiqtol — the guard would fire and block correctly-
+  # licensed obligatory-PP-recipient merges.
+  - next_line_is_vav_coord_pp       # block re-absorbing post-S1-split coord-PP
+  - next_line_is_vav_coord_np       # block re-absorbing post-S2-split coord-NP
+  - next_line_is_wayyiqtol          # block re-absorbing post-S3/S4-split
+                                     # wayyiqtol-headed lines
+
+annotation_template: "Speech verb + obligatory recipient PP merge ({pwc} prosodic words)"
+suggested_action: MERGE

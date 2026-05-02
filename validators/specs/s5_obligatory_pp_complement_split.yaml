@@ -1,0 +1,58 @@
+name: s5_obligatory_pp_complement_split
+rule: S5
+subcase: obligatory_pp_complement_split
+severity: STRONG-SPLIT-CANDIDATE
+mode: line
+
+description: |
+  Split a line that starts with a bound-prep PP and contains a mid-line
+  wayyiqtol, ONLY when the prior line's first verb is an obligatory-PP-
+  verb whose allowed-prep set matches the leading prep. The split extracts
+  the PP into its own line so the follow-on M-class merge (m2_6 / m2_8)
+  can fuse it with the prior line where it grammatically belongs.
+
+  Stan-flagged 2026-05-01 (Exo 18:24 pattern):
+    Before:
+      וַיִּשְׁמַע מֹשֶׁה                    [V + S, no complement]
+      לְקוֹל חֹתְנוֹ וַיַּעַשׂ              [PP-of-prior-V + new wayyiqtol]
+      כֹּל אֲשֶׁר אָמָר׃                  [DO of new wayyiqtol]
+    After S5 split:
+      וַיִּשְׁמַע מֹשֶׁה
+      לְקוֹל חֹתְנוֹ
+      וַיַּעַשׂ
+      כֹּל אֲשֶׁר אָמָר׃
+    After m2_8 merge (V+S+PP):
+      וַיִּשְׁמַע מֹשֶׁה לְקוֹל חֹתְנוֹ      [one ATU]
+      וַיַּעַשׂ
+      כֹּל אֲשֶׁר אָמָר׃
+
+  Sister to m2_7's pattern: m2_7 fires when line N+1 has NO additional
+  finite verb (whole line is the PP). S5 handles the harder case where
+  line N+1 carries the PP-completion AND a fresh wayyiqtol clause —
+  m2_7 / m2_6 / h18_3 are blocked by their `has_finite_verb: false`
+  trigger. S5 unblocks them by extracting just the PP.
+
+  Safety conditions (encoded in helper):
+    1. Line starts with bound-prep token
+    2. Line contains a mid-line wayyiqtol (position ≥ 1)
+    3. Prior line's first content token is an obligatory-PP-verb (in
+       M2_PP_VERB_SKELETONS for speech recipients OR
+       MOTION_LOCUS_VERB_SKELETONS for motion-locus)
+    4. Leading prep matches prior verb's allowed-prep set
+    5. Leading PP is NOT a temporal frame (m5_b territory)
+
+  Conservative narrowness: this is a CONTEXT-DEPENDENT split — it inspects
+  prev_line. The prior-verb lexicon match is the discriminator that keeps
+  it from firing on legitimate fronted PPs (Gen 1:27 בְּצֶלֶם אֱלֹהִים
+  pattern — the בְּצֶלֶם there is fronting for the same line's verb, not
+  a complement of a prior verb).
+
+trigger:
+  line_anywhere:
+    obligatory_pp_complement_split: true
+
+guards:
+  - poetic_register
+
+annotation_template: "S5 obligatory PP-complement split — extract PP from {pwc}-PWC line for merge with prior verb"
+suggested_action: SPLIT_AT_FINITE_VERB_BOUNDARY

@@ -540,6 +540,42 @@ def _g_m2_prep(l_n, l_n1, ctx):
     return True  # no match → block
 
 
+@_register_guard("m2_pp_prep_mismatch_first")
+def _g_m2_pp_prep_first(l_n, l_n1, ctx):
+    """Block emission when next-line prep is not in the M2-PP (speech) verb's
+    allowed-prep set, with the verb anchored at FIRST token of l_n.
+
+    Symmetric to m2_pp_prep_mismatch (which inspects last_content_token —
+    correct for h18_3's V→PP shape where the verb IS the last token) but
+    anchored to FIRST token for V+S→PP shapes (m2_8 — Exo 18:24
+    וַיִּשְׁמַע מֹשֶׁה / לְקוֹל חֹתְנוֹ — last token of l_n is the subject NP,
+    not the verb).
+
+    Mirrors motion_locus_prep_mismatch's first-token anchor for the
+    motion-verb closed list (M2.7 spec).
+    """
+    first = M.first_content_token(l_n)
+    if not first:
+        return True
+    allowed = M.m2_pp_verb_allowed_preps(first)
+    if not allowed:
+        return True  # not an M2-PP verb at first position → block
+    first_n1 = M.first_content_token(l_n1)
+    if not first_n1:
+        return True
+    # Maqqef-joined prep+complement (e.g., אֶל־הֶבֶל): test the head sub-token
+    if M.MAQQEF in first_n1:
+        head = first_n1.split(M.MAQQEF, 1)[0]
+        prep_skel = M.skel(head)
+    else:
+        prep_skel = M.skel(first_n1)
+    if prep_skel in allowed:
+        return False  # match → don't block
+    if prep_skel and prep_skel[0] in allowed:
+        return False  # bound-prep prefix match
+    return True  # no match → block
+
+
 @_register_guard("motion_locus_prep_mismatch")
 def _g_motion_locus_prep(l_n, l_n1, ctx):
     """Block emission when next-line prep is not in the motion-locus verb's
@@ -825,6 +861,19 @@ def _evaluate_line_trigger(spec: Spec, line: str, ctx: dict[str, Any]) -> list[i
     # וְאֵת (and-DO-marker, particle) from genuine wayyiqtols.
     if line_anywhere.get("multi_wayyiqtol_count"):
         return M.multi_wayyiqtol_clause_split_positions(line, ctx.get("line_n_token_tags"))
+
+    # obligatory_pp_complement_split: true — split a line that starts with a
+    # bound-prep PP and contains a mid-line wayyiqtol, ONLY when the prior
+    # line's first verb is an obligatory-PP-verb whose allowed-prep set
+    # matches the leading prep (S5 — Stan-flagged Exo 18:24, 2026-05-01).
+    # Context-aware via prev_line + prev_line_token_tags from ctx.
+    if line_anywhere.get("obligatory_pp_complement_split"):
+        return M.obligatory_pp_complement_split_positions(
+            line,
+            prev_line=ctx.get("prev_line", ""),
+            prev_line_token_tags=ctx.get("prev_line_token_tags"),
+            line_token_tags=ctx.get("line_n_token_tags"),
+        )
 
     return []
 
