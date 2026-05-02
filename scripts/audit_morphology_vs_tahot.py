@@ -80,26 +80,33 @@ def oracle_is_construct_head(tag: str) -> bool:
 
 
 def oracle_is_do_marker(tag: str) -> bool:
-    """TAHOT 'To' = direct object marker (אֵת, also as bound prefix in compounds)."""
-    head = MT.head_morpheme(tag)
-    return head == "To"
+    """TAHOT 'To' = direct object marker (אֵת, also as bound prefix in compounds).
+
+    Receives the FIRST ortho's tag (use_first=True in HELPERS). For maqqef
+    compounds (אֶת־X) the first tag is HTo — the marker's own entry. For bare
+    אֵת the first tag is also HTo. For וְאֵת the chain is [C, To]. Checking
+    'To' anywhere in the chain covers all three cases without false-firing on
+    complement entries.
+    """
+    return "To" in MT.morpheme_chain(tag)
 
 
 def oracle_is_bare_prep(tag: str) -> bool:
-    """Tag oracle for prepositions. TAHOT tags free preps as 'R' and bound
-    preps as part of a chain like 'R/N...'. A 'bare prep' = standalone or
-    bound-prep-headed token whose function is purely prepositional."""
+    """Tag oracle for is_bare_prep_token. Mirrors the helper's tag-driven path
+    exactly: chain must be exactly ["R"] (free standalone prep) or [C/c, R]
+    (vav-conjunction + free prep). Multi-morpheme R-headed chains like ["R",
+    "Ncmsc"] are bound-prep + noun fused words — not bare preps — and are
+    excluded here. Vav-coord-prep compounds (C/R) are included because the
+    helper's tag check accepts [C/c, R] as a bare-prep form.
+    """
     chain = MT.morpheme_chain(tag)
     if not chain:
         return False
-    # Standalone preposition (single morpheme, R)
-    if len(chain) == 1 and chain[0] == "R":
+    # Standalone free preposition
+    if chain == ["R"]:
         return True
-    # Compound prefix R + complement (R/N* etc.) — preposition function
-    if chain[0] == "R" and len(chain) >= 2:
-        return True
-    # Vav-conjunction + preposition (C/R or c/R) — also preposition function
-    if len(chain) >= 2 and chain[0] in ("C", "c") and chain[1] == "R":
+    # Vav-conjunction + free preposition (וְאֶל, וְעַל, etc.)
+    if len(chain) == 2 and chain[0] in ("C", "c") and chain[1] == "R":
         return True
     return False
 
@@ -123,14 +130,26 @@ def oracle_is_numeral(tag: str) -> bool:
 
 
 def oracle_is_bare_noun(tag: str) -> bool:
-    """Tag-oracle for is_bare_noun_token. TAHOT N (noun) head, NOT finite verb,
-    NOT DO marker, NOT preposition, NOT numeral. Common nouns AND proper nouns."""
-    head = MT.head_morpheme(tag)
-    if not head:
+    """Tag-oracle for is_bare_noun_token. Mirrors the helper's intent:
+
+    - Head morpheme is N* (noun, common or proper)
+    - NOT preceded by a bound-prep prefix (chain[0] == "R") — those are
+      preposition + noun fused words (בְּבֵית, לְמֶלֶךְ, etc.) excluded by
+      the helper's BOUND_PREP_PREFIXES check.
+    - NOT a conjunction-only prefix with a non-noun head (C or c alone).
+    - Definite-article prefixed nouns (Td/N*) are still bare nouns — the
+      article does not turn a noun into a prep or verb.
+    - Common nouns AND proper nouns both qualify.
+    """
+    chain = MT.morpheme_chain(tag)
+    if not chain:
         return False
+    head = chain[-1]
     if not head.startswith("N"):
         return False
-    # Already excludes verbs / DO / preps because head doesn't start with N for those
+    # Exclude bound-prep + noun compounds (first morpheme is R = preposition)
+    if chain[0] == "R":
+        return False
     return True
 
 
@@ -138,14 +157,17 @@ def oracle_is_bare_noun(tag: str) -> bool:
 # Helper registry — (name, helper_fn, oracle_fn)
 # ──────────────────────────────────────────────────────────────────────
 
-HELPERS: list[tuple[str, Callable[[str], bool], Callable[[str], bool]]] = [
-    ("is_finite_verb_token",       M.is_finite_verb_token,        oracle_is_finite_verb),
-    ("is_construct_head_token",    M.is_construct_head_token,     oracle_is_construct_head),
-    ("is_do_marker_token",         M.is_do_marker_token,          oracle_is_do_marker),
-    ("is_bare_prep_token",         M.is_bare_prep_token,          oracle_is_bare_prep),
-    ("is_definite_adjective_token", M.is_definite_adjective_token, oracle_is_definite_adjective),
-    ("is_numeral_token",           M.is_numeral_token,            oracle_is_numeral),
-    ("is_bare_noun_token",         M.is_bare_noun_token,          oracle_is_bare_noun),
+HELPERS: list[tuple[str, Callable[[str], bool], Callable[[str], bool], bool]] = [
+    # (name, helper_fn, oracle_fn, use_first_tag)
+    # use_first_tag=True: oracle receives the FIRST ortho's tag (leading morpheme)
+    # use_first_tag=False: oracle receives the LAST ortho's tag (syntactic head)
+    ("is_finite_verb_token",       M.is_finite_verb_token,        oracle_is_finite_verb,        False),
+    ("is_construct_head_token",    M.is_construct_head_token,     oracle_is_construct_head,     False),
+    ("is_do_marker_token",         M.is_do_marker_token,          oracle_is_do_marker,          True),
+    ("is_bare_prep_token",         M.is_bare_prep_token,          oracle_is_bare_prep,          False),
+    ("is_definite_adjective_token", M.is_definite_adjective_token, oracle_is_definite_adjective, False),
+    ("is_numeral_token",           M.is_numeral_token,            oracle_is_numeral,            False),
+    ("is_bare_noun_token",         M.is_bare_noun_token,          oracle_is_bare_noun,          False),
 ]
 
 
@@ -178,7 +200,16 @@ def _zip_verses(prose_text: str, morph_text: str):
 
 
 def iter_corpus_tokens():
-    """Yield (skel, prosodic_token, head_tag) for every token in the corpus."""
+    """Yield (tok, first_tag, head_tag) for every token in the corpus.
+
+    first_tag: FIRST non-placeholder tag in the maqqef group (the head
+               orthographic word — e.g. אֵת in אֶת־הָאָרֶץ).
+    head_tag:  LAST non-placeholder tag in the maqqef group (the syntactic
+               head morpheme of the compound — the complement).
+
+    Oracles that classify by the leading morpheme (DO-marker, bare-prep) use
+    first_tag; oracles that classify by the governing head use head_tag.
+    """
     for book_dir in sorted(V0_PROSE.iterdir()):
         if not book_dir.is_dir():
             continue
@@ -198,16 +229,23 @@ def iter_corpus_tokens():
                     if end > len(morph_tags):
                         ortho_idx = end
                         continue
-                    # head tag = LAST sub-ortho's tag (skip [—] placeholders)
+                    sub = morph_tags[ortho_idx:end]
+                    # first_tag = FIRST non-placeholder tag in the group
+                    first_tag = None
+                    for t in sub:
+                        if t and t != "[—]":
+                            first_tag = t
+                            break
+                    # head_tag = LAST non-placeholder tag in the group
                     head_tag = None
-                    for t in morph_tags[ortho_idx:end][::-1]:
+                    for t in sub[::-1]:
                         if t and t != "[—]":
                             head_tag = t
                             break
                     ortho_idx = end
                     if head_tag is None:
                         continue
-                    yield (tok, head_tag)
+                    yield (tok, first_tag or head_tag, head_tag)
 
 
 # ──────────────────────────────────────────────────────────────────────
@@ -222,20 +260,21 @@ def audit_helpers(helper_filter: str | None = None):
     fn_examples: dict[str, dict[str, str]] = defaultdict(dict)
     total_tokens = 0
 
-    for tok, head_tag in iter_corpus_tokens():
+    for tok, first_tag, head_tag in iter_corpus_tokens():
         total_tokens += 1
         skel = M.skel(tok)
         if not skel:
             continue
-        for name, helper_fn, oracle_fn in HELPERS:
+        for name, helper_fn, oracle_fn, use_first in HELPERS:
             if helper_filter and name != helper_filter:
                 continue
             try:
                 helper_result = helper_fn(tok)
             except Exception:
                 continue
+            oracle_tag = first_tag if use_first else head_tag
             try:
-                oracle_result = oracle_fn(head_tag)
+                oracle_result = oracle_fn(oracle_tag)
             except Exception:
                 continue
             if helper_result == oracle_result:
@@ -283,7 +322,7 @@ def main() -> int:
 
     # Rank helpers by total disagreements
     ranked = []
-    for name, _, _ in HELPERS:
+    for name, _, _, _ in HELPERS:
         if args.helper and name != args.helper:
             continue
         fp_total = sum(fp_counts[name].values())
