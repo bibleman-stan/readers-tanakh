@@ -1547,9 +1547,17 @@ def multi_wayyiqtol_clause_split_positions(
     Trigger: line carries ≥2 wayyiqtol verbs.
     Split point: before every wayyiqtol that is not line-initial.
 
-    Suppressions (audit-B 2026-05-01):
-      - וַיְהִי temporal-frame opener: line starts with וַיְהִי (subordinating
-        narrative frame, not a coordinate clause).
+    Suppressions (audit-B 2026-05-01; וַיְהִי refinement 2026-05-01):
+      - וַיְהִי temporal-frame opener (REFINED): line starts with וַיְהִי. The
+        SECOND wayyiqtol on the line is the main clause of the frame — that
+        SPLIT POSITION is suppressed (frame + main = one ATU per FEF/H16).
+        Splits BETWEEN subsequent wayyiqtols are still allowed (they are
+        new coordinate clauses, not part of the frame).
+        Example: Gen 29:13
+          וַיְהִי כִשְׁמֹעַ לָבָן ... וַיָּרָץ לִקְרָאתוֹ וַיְחַבֶּק־לוֹ וַיְנַשֶּׁק־לוֹ
+          wayy positions: [0, p_run, p_chab, p_nash]
+          frame+main pair: [0, p_run] — suppressed
+          splits returned: [p_chab, p_nash] — 3 cola result
       - Hendiadys / bonded sequence: ALL tokens on the line are wayyiqtols
         (e.g., וַיָּקָם וַיֵּלֶךְ — bonded action pair sharing semantic ATU).
       - Shared-DO 3-token bonded pair: line is exactly W₁ W₂ X (e.g.,
@@ -1603,10 +1611,6 @@ def multi_wayyiqtol_clause_split_positions(
     if len(wayy_positions) < 2:
         return []  # need ≥2 wayyiqtols
 
-    # Suppression: וַיְהִי temporal-frame opener
-    if wayy_positions[0] == 0 and skel(toks[0]) == "ויהי":
-        return []
-
     # Suppression: hendiadys / bonded sequence — every token is a wayyiqtol
     if len(wayy_positions) == len(toks):
         return []
@@ -1633,8 +1637,22 @@ def multi_wayyiqtol_clause_split_positions(
         if dep_count == 0 and not has_maqqef_complement:
             return []
 
-    # Split before each non-initial wayyiqtol
-    return [p for p in wayy_positions if p > 0]
+    # Default split set: before each non-initial wayyiqtol
+    candidate_splits = [p for p in wayy_positions if p > 0]
+
+    # Wayehi-frame refinement: when line starts with וַיְהִי, the second
+    # wayyiqtol is the frame's main clause (per FEF/H16 — frame + main = one
+    # ATU). Suppress that one split; allow splits between subsequent wayyiqtols.
+    # See Gen 29:13 example in the docstring above.
+    if (
+        wayy_positions[0] == 0
+        and skel(toks[0]) == "ויהי"
+        and len(wayy_positions) >= 2
+    ):
+        frame_main_position = wayy_positions[1]
+        candidate_splits = [p for p in candidate_splits if p != frame_main_position]
+
+    return candidate_splits
 
 
 def coordinated_np_split_positions(line: str) -> list[int]:
