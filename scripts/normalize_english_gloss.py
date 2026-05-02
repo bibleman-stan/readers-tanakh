@@ -457,20 +457,37 @@ def pass2_construct_of(line: str) -> str:
 NARRATIVE_VERBS = {
     # Speech
     "said", "spoke", "answered", "called", "cried", "declared", "proclaimed",
-    "told", "asked", "commanded", "swore",
+    "told", "asked", "commanded", "swore", "shouted", "whispered", "preached",
     # Perception
-    "saw", "looked", "heard", "perceived", "noticed", "watched",
+    "saw", "looked", "heard", "listened", "hearkened",
+    "perceived", "noticed", "watched", "observed",
     # Motion
     "arose", "rose", "went", "came", "returned", "departed", "fled",
+    "entered", "exited", "crossed", "passed", "approached", "drew",
+    "ascended", "descended", "traveled", "journeyed", "wandered", "sojourned",
     # Action
     "did", "made", "took", "gave", "brought", "appointed", "put", "set",
     "raised", "built", "established", "fashioned", "formed", "created",
     "sent", "killed", "struck", "smote", "saved", "delivered", "rescued",
     "judged", "ruled", "anointed", "blessed", "cursed", "consecrated",
+    "chose", "selected", "gathered", "assembled", "summoned", "called-together",
+    "wrote", "read", "taught", "instructed", "showed",
+    "served", "worshipped", "bowed", "kneeled", "prostrated",
+    "ate", "drank", "tasted", "fed",
+    "seized", "grabbed", "captured", "caught", "held", "carried", "lifted",
+    "pursued", "chased", "hunted",
+    "opened", "closed", "shut", "covered", "uncovered",
+    "broke", "tore", "split", "divided", "separated",
+    "cut", "burned", "destroyed", "demolished",
+    "loved", "hated", "rejected", "accepted",
+    "forgot", "forgave", "rebuked", "warned",
+    "numbered", "counted", "measured",
     # Mental
     "knew", "remembered", "feared", "trusted", "believed", "thought",
+    "considered", "decided", "intended", "purposed",
     # Existence
     "was", "became", "lived", "died", "dwelt", "stood", "sat", "lay",
+    "slept", "awoke", "rested", "remained",
     # Frequent narrative + Jonah-relevant
     "hurled", "appointed", "swallowed", "vomited", "prayed", "sacrificed",
     "vowed", "fell", "rowed", "stopped", "feared", "prepared",
@@ -530,6 +547,27 @@ DEFINITE_PERSON_NPS = [
 # Pattern: "and <pron> <V> <short-PP> <SUBJ>" → "and <SUBJ> <V> <short-PP>".
 SHORT_PP_AFTER_VERB = [
     "to him", "to her", "to them", "to us", "to me", "to you",
+]
+
+# English verb particles ("phrasal-verb second halves") that the gloss
+# generator emits as separate tokens after certain verbs:
+#   "sent off Moses ..."   → verb is conceptually "sent off"
+#   "went up Jacob ..."    → verb is "went up"
+#   "called out the king"  → verb is "called out"
+# Pattern in pass3: after the verb token, optionally consume one of these
+# before scanning for the subject. On reorder, particle is re-attached to
+# the verb in the canonical S-V-particle-O order.
+#
+# CRITICAL: only include particles that don't routinely appear as the head
+# of a prepositional phrase. Excluded for FP-safety:
+#   "in" — "believed in X", "trusted in X" (Gen 15:6 false-positive class)
+#   "on" — "called on the name of Yahweh"
+#   "across" / "through" — locative PPs, not particles
+#   "at" — "looked at X"
+# Borderline ("over") kept because it's strongly phrasal in motion contexts
+# ("crossed over", "passed over"); rare PP usage in narrative gloss.
+VERB_PARTICLES = [
+    "off", "up", "down", "out", "away", "back", "forth", "over",
 ]
 
 
@@ -622,6 +660,18 @@ def pass3_vs_reorder(line: str, in_poetic: bool) -> str:
 
     rest_tokens = rest.split()
 
+    # Optionally consume one verb particle ("off" / "up" / etc.) — phrasal-verb
+    # second halves emitted as separate tokens. Treat "<verb> <particle>" as
+    # one conceptual verb for reorder purposes (e.g., "sent off Moses ..." →
+    # "Moses sent off ..."). Consumed first because it's adjacent to the verb
+    # token; SHORT_PP_AFTER_VERB consumption follows for cases where both
+    # appear (rare).
+    particle_consumed = ""
+    if rest_tokens and rest_tokens[0].lower() in VERB_PARTICLES:
+        particle_consumed = rest_tokens[0]
+        rest = rest[len(particle_consumed):].lstrip()
+        rest_tokens = rest.split()
+
     # Optionally consume one short PP ("to him" / "to them" / etc.).
     short_pp_consumed = ""
     for pp in sorted(SHORT_PP_AFTER_VERB, key=len, reverse=True):
@@ -675,27 +725,30 @@ def pass3_vs_reorder(line: str, in_poetic: bool) -> str:
     # original line — would mean "to Yahweh" not "Yahweh did X". This is
     # already excluded because we matched verb directly before subj-or-pp,
     # but verify by re-checking the gap between verb and subj.
-    # (If there's a short-PP consumed, that already accounted for "to him" etc.)
-    # Defensive: if there are extra unrecognized tokens between verb and the
-    # candidate subject, skip — too risky.
+    # Account for particle / short-PP that were consumed above; whatever
+    # remains in rest_orig must start with the subject string.
     rest_orig = line[rest_start:].lstrip()
+    if particle_consumed:
+        rest_orig = rest_orig[len(particle_consumed):].lstrip()
     if short_pp_consumed:
         rest_orig = rest_orig[len(short_pp_consumed):].lstrip()
     if not rest_orig.startswith(subj_str):
         return line
 
-    # Reorder.
+    # Reorder. Re-attach particle (and/or short-PP) after the verb in
+    # canonical S-V-particle-PP-O order.
+    #   "and he sent off Moses his father-in-law"
+    #     → "and Moses sent off his father-in-law"
+    #   "and he said to him Yahweh X"
+    #     → "and Yahweh said to him X"
     after_subj = rest_orig[len(subj_str):].lstrip()
+    new = f"{lead}{subj_str} {verb}"
+    if particle_consumed:
+        new += f" {particle_consumed}"
     if short_pp_consumed:
-        # Re-attach the short-PP after the verb in canonical S-V order.
-        # "and he said to him Yahweh X" → "and Yahweh said to him X"
-        new = f"{lead}{subj_str} {verb} {short_pp_consumed}"
-        if after_subj:
-            new += f" {after_subj}"
-    else:
-        new = f"{lead}{subj_str} {verb}"
-        if after_subj:
-            new += f" {after_subj}"
+        new += f" {short_pp_consumed}"
+    if after_subj:
+        new += f" {after_subj}"
 
     return new
 
