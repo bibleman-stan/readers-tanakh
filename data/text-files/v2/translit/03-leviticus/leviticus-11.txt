@@ -21,8 +21,7 @@ tame | hu | lakhem
 11:5
 ve'et | hashafan | ki | ma'aleh | gerah | hu
 ufarsah
-lo | yafris
-tame | hu | lakhem
+lo | yafris | tame | hu | lakhem
 
 11:6
 ve'et | ha'arnevet | ki | ma'alat | gerah | hi
@@ -31,8 +30,7 @@ ufarsah | lo | hifrisah | teme'ah | hi | lakhem
 11:7
 ve'et | hachazir | ki | mafris | parsah | hu | veshosa | shesa | parsah
 vehu
-gerah | lo | yigar
-tame | hu | lakhem
+gerah | lo | yigar | tame | hu | lakhem
 
 11:8
 mibesaram | lo | tokhelu
@@ -193,8 +191,7 @@ lo | ye'akhel
 11:42
 kol | holekh | al | gachon
 vekhol | holekh | al | arba | ad | kol | marbeh | raglayim
-lekhol | hasheretz | hashoretz | al | ha'aretz | lo | tokhlum
-ki | sheketz | hem
+lekhol | hasheretz | hashoretz | al | ha'aretz | lo | tokhlum | ki | sheketz | hem
 
 11:43
 al | teshaketzu | et | nafshoteikhem | bekhol | hasheretz | hashoretz

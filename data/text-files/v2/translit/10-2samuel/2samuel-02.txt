@@ -62,8 +62,7 @@ vaiyetze | Avner | ben | Ner | ve'avdei | Ish | Boshet | ben | Sha'ul | Mimachan
 2:13
 Veyo'av | ben | Tzeruyah | ve'avdei | David | yatze'u
 vaiyifgeshum | al | berekhat | Giv'on | yachdav
-vaiyeshevu | eleh | al | haberekhah | mizeh
-ve'eleh | al | haberekhah | mizeh
+vaiyeshevu | eleh | al | haberekhah | mizeh | ve'eleh | al | haberekhah | mizeh
 
 2:14
 vaiyomer | Avner | el | Yo'av
@@ -113,7 +112,8 @@ sur | lekha | me'acharai | lamah | akkekah | artzah
 ve'eikh | esa | fanai | el | Yo'av | achikha
 
 2:23
-vayma'en | lasur | vaiyakehu | Avner | be'acharei | hachanit | el | hachomesh
+vayma'en | lasur
+vaiyakehu | Avner | be'acharei | hachanit | el | hachomesh
 vatetze | hachanit | me'acharav
 vaiyipol | sham
 vaiyamot | tachatov | vayhi | kol | haba | el | hamakom | asher | nafal | sham | Asah'el | vaiyamot
@@ -156,8 +156,7 @@ vaiyavo'u | Machanayim
 2:30
 Veyo'av | shav | me'acharei | Avner
 vaiyikbotz | et | kol | ha'am
-vaiyipakedu | me'avdei | David | tish'ah | asar | ish
-Va'asah | El
+vaiyipakedu | me'avdei | David | tish'ah | asar | ish | Va'asah | El
 
 2:31
 ve'avdei | David | hiku | Mibinyamin | uve'anshei | Avner

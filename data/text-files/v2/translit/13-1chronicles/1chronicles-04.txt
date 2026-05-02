@@ -37,8 +37,7 @@ Vekotz | holid | et | Anuv | ve'et | hatzoevah
 umishpechot | Acharchel | ben | Harum
 
 4:9
-vayhi | Ya'betz
-nikhbad | me'echav
+vayhi | Ya'betz | nikhbad | me'echav
 ve'imo | kare'ah | shemo | Ya'betz | lemor
 ki | yaladti | be'otzev
 
@@ -106,8 +105,7 @@ leveit | Ashbea
 Veyokim
 ve'anshei | Khozeva
 Veyo'ash
-Vesaraf | asher | ba'alu | Lemo'av
-Veyashuvi | Lachem
+Vesaraf | asher | ba'alu | Lemo'av | Veyashuvi | Lachem
 vehadevarim
 atikim
 
@@ -191,7 +189,8 @@ ki | min | Cham | haiyoshevim | sham | lefanim
 
 4:41
 vaiyavo'u | eleh | haketuvim | beshemot | bimei | Yechizkiyahu | melekh | Yehudah
-vaiyaku | et | oholeihem | ve'et | Hame'inim | asher | Nimtze'u | shamah | vaiyacharimum | ad | haiyom | hazeh
+vaiyaku | et | oholeihem | ve'et | Hame'inim | asher | Nimtze'u | shamah
+vaiyacharimum | ad | haiyom | hazeh
 vaiyeshevu | tachteihem | ki | mir'eh | letzonam | sham
 
 4:42

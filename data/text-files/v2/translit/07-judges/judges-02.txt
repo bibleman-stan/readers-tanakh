@@ -63,8 +63,7 @@ vaiyichar | af | Yahweh | Beyisra'el
 vaiyitenem | beyad | shosim
 vaiyashosu | otam
 vaiyimkerem | beyad | oyveihem | misaviv
-velo | yakhelu | od | la'amod
-lifnei | oyveihem
+velo | yakhelu | od | la'amod | lifnei | oyveihem
 
 2:15
 bekhol | asher | yatze'u | yad | Yahweh | hayetah | bam | lera'ah
@@ -73,7 +72,8 @@ vekha'asher | Nishba | Yahweh | lahem
 vaiyetzer | lahem | me'od
 
 2:16
-vaiyakem | Yahweh | shofetim | vaiyooshi'um | miyad | shoseihem
+vaiyakem | Yahweh | shofetim
+vaiyooshi'um | miyad | shoseihem
 
 2:17
 vegam | el | shofeteihem | lo | shame'u

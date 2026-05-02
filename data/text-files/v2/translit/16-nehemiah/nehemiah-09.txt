@@ -65,9 +65,7 @@ vehaiyam | baka'ta | lifneihem | vaiya'avru | vetokh | haiyam
 baiyabashah | ve'et | rodefeihem | hishlakhta | vimtzolot | kemov | even | bemayim | azim
 
 9:12
-uve'amud | anan
-hinchitam
-yomam
+uve'amud | anan | hinchitam | yomam
 uve'amud | esh | laylah | leha'ir | lahem
 et | haderekh | asher | yelekhu | vah
 
@@ -101,8 +99,7 @@ velo | azavtam
 9:18
 af | ki | asu | lahem | egel | masekhah | vaiyomeru
 zeh | eloheikha | asher | he'elkha
-Mimitzrayim | vaiya'asu
-ne'atzot | gedolot
+Mimitzrayim | vaiya'asu | ne'atzot | gedolot
 
 9:19
 ve'atah | berachameikha | harabim | lo | azavtam | bamidbar
@@ -146,8 +143,7 @@ vaiyit'adenu | betuvekha | hagadol
 vaiyamru | vaiyimredu | bakh | vaiyashlikhu | et | toratekha | acharei | gavam
 ve'et | nevi'eikha | haragu
 asher | he'idu | vam
-lahashivam | eleikha | vaiya'asu
-ne'atzot | gedolot
+lahashivam | eleikha | vaiya'asu | ne'atzot | gedolot
 
 9:27
 vatitenem | beyad | tzareihem
@@ -158,7 +154,8 @@ miyad | tzareihem
 
 9:28
 ukhenoach | lahem | yashuvu | la'asot | ra | lefaneikha
-vata'azvem | beyad | oyeveihem | vaiyirdu | vahem
+vata'azvem | beyad | oyeveihem
+vaiyirdu | vahem
 vaiyashuvu | vaiyiz'akucha
 ve'atah | mishamayim | tishma | vetatzilem | kerachameikha | rabot | itim
 

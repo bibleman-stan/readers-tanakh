@@ -40,12 +40,10 @@ segor | libam | ve'okhelem | sham | kelavi
 chaiyat | hasadeh | tevake'em
 
 13:9
-shichetkha | Yisra'el
-ki | vi | ve'ezrekha
+shichetkha | Yisra'el | ki | vi | ve'ezrekha
 
 13:10
-ehi | malkekha | efo
-veyoshi'akha | bekhol | areikha
+ehi | malkekha | efo | veyoshi'akha | bekhol | areikha
 veshofeteikha | asher | amarta | tenah | li | melekh | vesarim
 
 13:11
@@ -72,5 +70,4 @@ ki | hu
 ben | achim
 yafri
 yavo | kadim | ruach | Yahweh | mimidbar | oleh | veyevoosh | mekoro | veyecherav | ma'yano
-hu | yishseh
-otzar | kol | keli | chemdah
+hu | yishseh | otzar | kol | keli | chemdah

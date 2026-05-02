@@ -12,8 +12,7 @@ min | Haiyarden | ve'ad | Yerushalim
 vaiyavo | David | el | beito | Yerushalim
 vaiyikach | hamelekh | et | eser | nashim | pilagshim | asher | hiniach | lishmor | habayit | vaiyitenem | beit | mishmeret | vaykhalkelem
 va'aleihem | lo | va
-vatihyeinah | tzerurot | ad | yom | mutan
-almenut | chaiyut
+vatihyeinah | tzerurot | ad | yom | mutan | almenut | chaiyut
 
 20:4
 vaiyomer | hamelekh | el | Amasa | haz'ek | li | et | ish | Yehudah | sheloshet | yamim | ve'atah
@@ -47,7 +46,9 @@ vaiyomer | Yo'av | La'amasa | hashalom | atah
 achi | vatochez | yad | yemin | Yo'av | bizkan | Amasa | linshok | lo
 
 20:10
-Va'amasa | lo | Nishmar | bacherev | asher | beyad | Yo'av | vaiyakehu | vah | el | hachomesh | vaiyishpokh | me'av | artzah
+Va'amasa | lo | Nishmar | bacherev | asher | beyad | Yo'av
+vaiyakehu | vah | el | hachomesh
+vaiyishpokh | me'av | artzah
 velo | shanah | lo
 vaiyamot
 Veyo'av | Va'avishai | achiv

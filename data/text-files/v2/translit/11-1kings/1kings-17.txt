@@ -83,8 +83,7 @@ kidvar | Yahweh | asher | diber | beyad | Eliyahu
 
 17:17
 vayhi | achar | hadevarim | ha'eleh | chalah | ben | ha'ishah | ba'alat | habayit
-vayhi | chalyo | chazak | me'od | ad | asher | lo | Notrah | bo
-neshamah
+vayhi | chalyo | chazak | me'od | ad | asher | lo | Notrah | bo | neshamah
 
 17:18
 vatomer | el | Eliyahu | mah | li
@@ -94,7 +93,8 @@ ulehamit | et | beni
 
 17:19
 vaiyomer | eleiha | teni | li | et | benekh
-vaiyikachehu | mecheikah | vaiya'alehu | el | ha'aliyah | asher | hu | yoshev | sham
+vaiyikachehu | mecheikah
+vaiya'alehu | el | ha'aliyah | asher | hu | yoshev | sham
 vaiyashkivehu | al | mitato
 
 17:20
@@ -114,7 +114,8 @@ bekol | Eliyahu | vatashov | nefesh | haiyeled | al | kirbo
 vaiyechi
 
 17:23
-vaiyikach | Eliyahu | et | haiyeled | vaiyoridehu | min | ha'aliyah | habaytah
+vaiyikach | Eliyahu | et | haiyeled
+vaiyoridehu | min | ha'aliyah | habaytah
 vaiyitenehu | le'imo
 vaiyomer | Eliyahu
 re'i | chai | benekh

@@ -1,8 +1,7 @@
 18:1
 vayhi | yamim | rabim
 udevar | Yahweh | hayah | el | Eliyahu | bashanah | hashelishit | lemor
-lekh | hera'eh | el | Ach'av
-ve'etenah | matar | al | penei | ha'adamah
+lekh | hera'eh | el | Ach'av | ve'etenah | matar | al | penei | ha'adamah
 
 18:2
 vaiyelekh | Eliyahu | lehera'ot | el | Ach'av
@@ -14,7 +13,8 @@ Ve'oadyahu | hayah | yare | et | Yahweh | me'od
 
 18:4
 vayhi | behakhrit | Izevel | et | nevi'ei | Yahweh
-vaiyikach | Oadyahu | me'ah | nevi'im | vaiyachbi'em | chamishim | ish | bame'arah
+vaiyikach | Oadyahu | me'ah | nevi'im
+vaiyachbi'em | chamishim | ish | bame'arah
 vekhilkelam | lechem | vamayim
 
 18:5
@@ -130,9 +130,7 @@ lo | tasimu
 18:26
 vaiyikchu | et | hapar | asher | natan | lahem | vaiya'asu
 vaiyikre'u | veshem | haba'al | mehaboker
-ve'ad | hatzohorayim | lemor | haba'al | anenu
-ve'ein | kol
-ve'ein | oneh
+ve'ad | hatzohorayim | lemor | haba'al | anenu | ve'ein | kol | ve'ein | oneh
 vayfasechu | al | hamizbeach | asher | asah
 
 18:27
@@ -238,5 +236,4 @@ vaiyelekh | Yizre'elah
 18:46
 veyad | Yahweh | hayetah | el | Eliyahu
 vayshanes | matenav
-vaiyarotz | lifnei | Ach'av | ad | bo'akhah
-Yizre'elah
+vaiyarotz | lifnei | Ach'av | ad | bo'akhah | Yizre'elah

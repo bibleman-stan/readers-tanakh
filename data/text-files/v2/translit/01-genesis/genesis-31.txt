@@ -29,13 +29,11 @@ yeda'ten | ki | bekhol | kochi | avadti | et | avikhen
 31:7
 va'avikhen | hetel | bi
 vehechelif | et | maskurti | aseret | monim
-velo | netano | elohim | lehara
-imadi
+velo | netano | elohim | lehara | imadi
 
 31:8
 im | koh | yomar | nekudim | yihyeh | sekharekha
-veyaldu | khol | hatzon
-nekudim
+veyaldu | khol | hatzon | nekudim
 ve'im | koh | yomar | akudim | yihyeh | sekharekha
 veyaldu | khol | hatzon | akudim
 
@@ -225,7 +223,8 @@ vehayah | le'ed | beini
 uveinekha
 
 31:45
-vaiyikach | Ya'ako | aven | vayrimeha | matzevah
+vaiyikach | Ya'ako | aven
+vayrimeha | matzevah
 
 31:46
 vaiyomer | Ya'ako | le'echav | liktu | avanim

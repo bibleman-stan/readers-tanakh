@@ -41,8 +41,7 @@ vanefen | vana'avor | derekh | midbar | Mo'av
 vaiyomer | Yahweh | elai | el | tatzar | et | Mo'av
 ve'al | titgar | bam | milchamah
 ki | lo | eten | lekha | me'artzo | yerushah
-ki | livnei | Lot | natati | et | Ar
-yerushah
+ki | livnei | Lot | natati | et | Ar | yerushah
 
 2:10
 Ha'emim | lefanim | yashevu | vah
@@ -55,8 +54,7 @@ vehamo'avim | yikre'u | lahem | Emim
 2:12
 Uvese'ir | yashevu | hachorim | lefanim
 uvenei | Esav | yirashum | vaiyashmidum | mipeneihem
-vaiyeshevu
-tachtam
+vaiyeshevu | tachtam
 ka'asher | asah | Yisra'el | le'eretz | yerushato | asher | natan | Yahweh | lahem
 
 2:13
@@ -155,8 +153,8 @@ vaiyetze | Sichon | likratenu | hu
 vekhol | amo | lamilchamah | Yahetzah
 
 2:33
-vaiyitenehu | Yahweh | eloheinu | lefaneinu | vanakh | oto | ve'et | benov
-ve'et | kol | amo
+vaiyitenehu | Yahweh | eloheinu | lefaneinu
+vanakh | oto | ve'et | benov | ve'et | kol | amo
 
 2:34
 vanilkod | et | kol | arav | ba'et | hahiv
