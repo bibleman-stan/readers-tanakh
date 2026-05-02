@@ -226,7 +226,7 @@ def _check_morphology(tok: str, morph: str, tag_list: Optional[list[str]] = None
     if morph == "numeral_or_unit_noun":
         return M.is_numeral_token(tok, tag_list=tag_list) or M.is_numeral_governed_noun(tok)
     if morph == "bare_noun":
-        return M.is_bare_noun_token(tok)
+        return M.is_bare_noun_token(tok, tag_list=tag_list)
     return False
 
 

@@ -84,31 +84,37 @@ def oracle_is_do_marker(tag: str) -> bool:
 
     Receives the FIRST ortho's tag (use_first=True in HELPERS). For maqqef
     compounds (אֶת־X) the first tag is HTo — the marker's own entry. For bare
-    אֵת the first tag is also HTo. For וְאֵת the chain is [C, To]. Checking
-    'To' anywhere in the chain covers all three cases without false-firing on
-    complement entries.
+    אֵת the first tag is also HTo. For וְאֵת the chain is [C, To].
+
+    Excludes `R/To` (`מֵאֵת` "from-with") and `R/To/Sp*` (`מֵאוֹתוֹ`):
+    the leading R prefix makes these compound PREPOSITIONS that take a
+    complement the same way `מֵעַל` does — not DO-markers. The R-exclusion
+    is mirrored in `is_do_marker_token`'s tag-driven path.
     """
-    return "To" in MT.morpheme_chain(tag)
+    chain = MT.morpheme_chain(tag)
+    return "To" in chain and "R" not in chain
 
 
 def oracle_is_bare_prep(tag: str) -> bool:
-    """Tag oracle for is_bare_prep_token. Mirrors the helper's tag-driven path
-    exactly: chain must be exactly ["R"] (free standalone prep) or [C/c, R]
-    (vav-conjunction + free prep). Multi-morpheme R-headed chains like ["R",
-    "Ncmsc"] are bound-prep + noun fused words — not bare preps — and are
-    excluded here. Vav-coord-prep compounds (C/R) are included because the
-    helper's tag check accepts [C/c, R] as a bare-prep form.
+    """Tag oracle for is_bare_prep_token. Chain must end in `R`
+    (preposition) AND contain no `Sp*` (pronominal suffix) AND contain
+    no `Td/Td*` (definite article).
+
+    Admits monomorphemic free preps (`["R"]`), vav-coord preps (`[C/c, R]`),
+    and compound R+R preps like `מֵעַל` (`["R", "R"]`) — all equally
+    stranded when no following complement appears in the token. Excludes
+    `R/Nc*` compound preps (`לִפְנֵי`, `אַחֲרֵי`) whose construct head
+    is the complement, and `R/Sp*` / `R/Nc*/Sp*` forms whose object is
+    the internal pronominal suffix.
     """
     chain = MT.morpheme_chain(tag)
-    if not chain:
+    if not chain or chain[-1] != "R":
         return False
-    # Standalone free preposition
-    if chain == ["R"]:
-        return True
-    # Vav-conjunction + free preposition (וְאֶל, וְעַל, etc.)
-    if len(chain) == 2 and chain[0] in ("C", "c") and chain[1] == "R":
-        return True
-    return False
+    if any(m.startswith("Sp") for m in chain):
+        return False
+    if any(m == "Td" or m.startswith("Td") for m in chain):
+        return False
+    return True
 
 
 def oracle_is_definite_adjective(tag: str) -> bool:

@@ -994,19 +994,29 @@ PREP_SKELETONS = {
     "מעל", "מתחת", "עלפני", "מלפני", "מפני", "מאת", "בעד", "נגד",
     "אצל", "מאחרי", "בקרב", "בעבר", "מנגד", "סביב", "מסביב", "סביבות",
     "עם", "עד", "כמו", "מתוך", "מבין",
-    # Prep + pronominal suffix common forms (Num 6:2 'אֲלֵהֶם' audit gap):
+}
+
+# Prep + pronominal suffix forms — PP with the object internalized as a
+# pronominal suffix (אֵלָיו "to him", לְפָנַי "before me"). These are used by
+# `line_starts_with_prep` (which only asks "does this line open with a PP?")
+# but excluded from `is_bare_prep_token` (which asks the narrower question
+# "is this token a bare/stranded prep awaiting a following object?" — a prep
+# whose object is internal to itself is NOT stranded).
+PREP_WITH_SUFFIX_SKELETONS = {
     # אֵל-suffix
-    "אלי", "אליו", "אליה", "אליך", "אלינו", "אליכם", "אליכן", "אלהם", "אלהן", "אליהם", "אליהן",
+    "אלי", "אליו", "אליה", "אליך", "אלינו", "אליכם", "אליכן",
+    "אלהם", "אלהן", "אליהם", "אליהן",
     # עַל-suffix
-    "עלי", "עליו", "עליה", "עליך", "עלינו", "עליכם", "עליכן", "עלהם", "עליהם", "עליהן",
+    "עלי", "עליו", "עליה", "עליך", "עלינו", "עליכם", "עליכן",
+    "עלהם", "עליהם", "עליהן",
     # מִן + suffix (rare; usually maqqef-bound)
-    "ממני", "ממנו", "ממנה", "ממך", "ממנו", "מכם", "מהם", "מהן",
+    "ממני", "ממנו", "ממנה", "ממך", "מכם", "מהם", "מהן",
     # תַחַת-suffix
     "תחתי", "תחתיו", "תחתיה", "תחתיך", "תחתיהם",
     # לִפְנֵי-suffix
-    "לפני", "לפניו", "לפניה", "לפניך", "לפנינו", "לפניכם", "לפניהם",
+    "לפניו", "לפניה", "לפניך", "לפנינו", "לפניכם", "לפניהם",
     # אַחֲרֵי-suffix
-    "אחרי", "אחריו", "אחריה", "אחריך", "אחרינו", "אחריכם", "אחריהם",
+    "אחריו", "אחריה", "אחריך", "אחרינו", "אחריכם", "אחריהם",
     # בֵּין-suffix
     "ביני", "בינו", "בינה", "בינך", "בינינו", "בינהם", "בינכם",
     # עִם-suffix
@@ -1014,6 +1024,8 @@ PREP_SKELETONS = {
     # עַד-suffix
     "עדי", "עדיו", "עדיה", "עדיך", "עדינו", "עדיכם", "עדיהם",
 }
+
+LINE_INITIAL_PREP_SKELETONS = PREP_SKELETONS | PREP_WITH_SUFFIX_SKELETONS
 
 BOUND_PREP_PREFIXES = ("ב", "ל", "כ", "מ")
 
@@ -1032,7 +1044,7 @@ def line_starts_with_prep(line: str) -> tuple[bool, Optional[str]]:
     if not tok:
         return (False, None)
     s = skel(tok)
-    if s in PREP_SKELETONS:
+    if s in LINE_INITIAL_PREP_SKELETONS:
         return (True, s)
     # bound prep: starts with ב/ל/כ/מ + at least 1 more consonant, and is
     # NOT a known finite-verb skeleton (avoids בָּרָא = qatal "create")
@@ -1041,19 +1053,36 @@ def line_starts_with_prep(line: str) -> tuple[bool, Optional[str]]:
     return (False, None)
 
 
+# Suffixed DO-marker forms — TAHOT chain `[To, Sp*]` or `[C, To, Sp*]`.
+# E.g. אֹתוֹ (skel "אתו"), אֶתְכֶם ("אתכם"), אֹתָם ("אתם"), אוֹתוֹ ("אותו").
+# Listed as separate set so `is_bare_do_marker_token` (which wants ONLY the
+# strictly-bare marker awaiting forward-merge) is unaffected.
+# Residual collision: skel "אתה" is shared between אֹתָהּ (To/Sp3fs DO-suffix)
+# and אַתָּה (Pp2ms personal pronoun "you"); skel-fallback can't disambiguate
+# — production callers pass `tag_list` and avoid the collision.
+SUFFIXED_DO_MARKER_SKELETONS = {
+    "אתו", "אתה", "אתי", "אתם", "אתן", "אתך",
+    "אתכם", "אתכן", "אתנו", "אתהם", "אתהן",
+    "אותו", "אותה", "אותי", "אותם", "אותן", "אותך",
+    # vav-prefixed
+    "ואתו", "ואתה", "ואתי", "ואתם", "ואתן", "ואתך",
+    "ואתכם", "ואותו", "ואותה", "ואותם",
+}
+
+
 # Direct-object marker — אֵת standalone or maqqef-joined (אֶת־...)
 def is_do_marker_token(token: str, tag_list: "list[str] | None" = None) -> bool:
     """True if the token IS the DO marker אֵת — standalone, maqqef-bound, or
-    vav-prefixed (וְאֵת).
+    vav-prefixed (וְאֵת), including pronominally-suffixed forms (אֹתוֹ etc).
 
     Tag-driven primary path: FIRST tag's chain contains "To" (TAHOT
-    direct-object-marker code). Authoritative when present — eliminates
-    skel ambiguity with אַתָּה / אִתִּי / etc. that share consonants. For
-    maqqef compounds (`אֶת־X`), the FIRST ortho's tag is the marker; later
-    ortho-tags are the complement (Np / Nc / etc.).
+    direct-object-marker code) AND no "R" (preposition) precedes it.
+    The R-exclusion is required because TAHOT `R/To` chains are compound
+    PREPOSITIONS (`מֵאֵת` "from-with") that take a complement the same
+    way `מֵעַל` does — they are not DO-markers themselves.
 
-    Skel-fallback distinguishes DO marker את from אַתָּה (you, ms = "אתה"
-    skeleton), אִתִּי (with me = "אתי") etc.
+    Skel-fallback distinguishes DO marker את from אַתָּה (you, ms),
+    אִתִּי (with me) etc. Bare and suffixed forms both classify True.
     """
     # ── Tag-driven primary path (TAHOT oracle) ────────────────────────
     if tag_list:
@@ -1064,7 +1093,8 @@ def is_do_marker_token(token: str, tag_list: "list[str] | None" = None) -> bool:
                 break
         if first_tag is not None:
             from . import morph_tags as _MT
-            return "To" in _MT.morpheme_chain(first_tag)
+            chain = _MT.morpheme_chain(first_tag)
+            return "To" in chain and "R" not in chain
 
     # ── Skel-fallback ─────────────────────────────────────────────────
     if MAQQEF in token:
@@ -1072,7 +1102,9 @@ def is_do_marker_token(token: str, tag_list: "list[str] | None" = None) -> bool:
         s = skel(first_sub)
     else:
         s = skel(token)
-    return s == "את" or s == "ואת"
+    if s == "את" or s == "ואת":
+        return True
+    return s in SUFFIXED_DO_MARKER_SKELETONS
 
 
 def is_bare_do_marker_token(token: str) -> bool:
@@ -1841,16 +1873,23 @@ def coordinated_np_split_positions(line: str) -> list[int]:
 
 
 def is_bare_prep_token(token: str, tag_list: "list[str] | None" = None) -> bool:
-    """True only if the token is a BARE preposition with no maqqef-joined
-    complement — i.e., the prep is stranded awaiting its noun on the next line.
+    """True only if the token is a BARE preposition with no internal
+    complement — i.e., the prep is stranded awaiting its object on the
+    next line.
 
-    Tag-driven primary path: tag chain is exactly ["R"] (free standalone prep)
-    or [C/c, R] (vav-conjunction + free prep). Authoritative when present —
-    eliminates skel ambiguity with אַחֲרֵי/אֵלָיו/etc. that have suffix
-    morphemes the skel can't disambiguate.
+    Tag-driven primary path: tag chain ends in `R` (preposition) AND
+    contains no `Sp*` (pronominal suffix) AND contains no `Td/Td*`
+    (definite article). This admits monomorphemic free preps (`["R"]`),
+    vav-coord preps (`[C/c, R]`), AND compound R+R preps like
+    `מֵעַל` (`["R", "R"]`) — all equally stranded when no following
+    complement appears in the token. Excludes `R/Nc*` compound preps
+    (`לִפְנֵי`) whose construct head is the complement, and `R/Sp*` /
+    `R/Nc*/Sp*` forms whose object is the internal pronominal suffix.
 
     Skel-fallback: free preps (אֶל, עַל, מִן, תַּחַת, ...) and vav-prefixed
-    forms (וְאֶל, וְעַל, ...) when standing alone (no maqqef).
+    forms (וְאֶל, וְעַל, ...) when standing alone (no maqqef). Suffixed
+    prep forms (אֵלָיו, לְפָנַי) are explicitly excluded via the separate
+    PREP_WITH_SUFFIX_SKELETONS set.
     """
     if MAQQEF in token:
         return False
@@ -1865,18 +1904,22 @@ def is_bare_prep_token(token: str, tag_list: "list[str] | None" = None) -> bool:
         if head_tag is not None:
             from . import morph_tags as _MT
             chain = _MT.morpheme_chain(head_tag)
-            if chain == ["R"]:
-                return True
-            if len(chain) == 2 and chain[0] in ("C", "c") and chain[1] == "R":
-                return True
-            return False
+            if not chain or chain[-1] != "R":
+                return False
+            if any(m.startswith("Sp") for m in chain):
+                return False
+            if any(m == "Td" or m.startswith("Td") for m in chain):
+                return False
+            return True
 
     # ── Skel-fallback ─────────────────────────────────────────────────
     s = skel(token)
+    if s in PREP_WITH_SUFFIX_SKELETONS:
+        return False
     if s in PREP_SKELETONS:
         return True
     # vav-prefixed free prep: וְאֶל, וְעַל, וְעִם, ...
-    if len(s) >= 3 and s[0] == "ו" and s[1:] in PREP_SKELETONS:
+    if len(s) >= 3 and s[0] == "ו" and s[1:] in PREP_SKELETONS and s[1:] not in PREP_WITH_SUFFIX_SKELETONS:
         return True
     return False
 
@@ -1993,7 +2036,7 @@ def is_construct_head_token(token: str, tag_list: "list[str] | None" = None) -> 
     return False
 
 
-def is_bare_noun_token(token: str) -> bool:
+def is_bare_noun_token(token: str, tag_list: "list[str] | None" = None) -> bool:
     """True if token is a noun-like content word (NP head / proper noun /
     pronoun / common noun) — NOT a verb, prep, DO marker, particle, or
     conjunction-only token.
@@ -2001,22 +2044,28 @@ def is_bare_noun_token(token: str) -> bool:
     Used by m2_verb_bare_np_rebond to detect stranded bare-NP direct objects
     or postposed subjects after a verb-line. Excludes tokens already covered
     by other merge specs (PP head → S1/h-rules; vav-coord NP → S2 territory).
+
+    `tag_list` plumbs the TAHOT morph chain through to the prep / DO /
+    finite-verb checks so they can use their tag-driven primary paths
+    instead of falling back to skel heuristics — closes the FP cascade
+    where suffixed preps (אֵלָיו) or suffixed-DO (אֹתוֹ) would otherwise
+    leak through as bare nouns.
     """
     if not token:
         return False
     s = skel(token)
     if not s:
         return False
-    if is_finite_verb_token(token):
+    if is_finite_verb_token(token, tag_list=tag_list):
         return False
-    if is_do_marker_token(token):
+    if is_do_marker_token(token, tag_list=tag_list):
         return False
     # Direct prep / vav-prep / bound-prep
     if s in PREP_SKELETONS:
         return False
     if len(s) >= 3 and s[0] == "ו" and s[1:] in PREP_SKELETONS:
         return False
-    if is_bare_prep_token(token):
+    if is_bare_prep_token(token, tag_list=tag_list):
         return False
     if is_vav_coord_pp_head(token):
         return False

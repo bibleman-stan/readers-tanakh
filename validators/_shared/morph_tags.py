@@ -161,11 +161,32 @@ def is_proper_noun(tag: str) -> bool:
 #   j  jussive (short imperfect)
 #   h  cohortative (1st-person volitional)
 #   v  imperative
-_FINITE_VERB_ASPECTS = frozenset({"p", "w", "q", "i", "j", "h", "v"})
+#   u  volitional (TAHOT/OpenScriptures variant for jussive/cohortative-like
+#                   short forms — Vqu/Vhu/Vtu/Vpu); occurs in Jonah 1:11,
+#                   1:12, 3:8 (`וְיִשְׁתֹּק` Vqu3ms etc.)
+_FINITE_VERB_ASPECTS = frozenset({"p", "w", "q", "i", "j", "h", "v", "u"})
+
+
+def _last_verb_morpheme(tag: str) -> str:
+    """Return the last `V*`-headed morpheme in the chain — i.e., the verb
+    morpheme itself, ignoring trailing pronominal suffix (`Sp*`) or
+    directional-he (`d`) morphemes that come after it.
+
+    Necessary because TAHOT chains for verb+suffix forms place the suffix
+    at the END (e.g. `Hc/Vhw3mp/Sp3ms` for `וַיְטִלֻהוּ` — verb buried in
+    the middle). Plain `head_morpheme` returns the trailing `Sp*`, which
+    misclassifies these as non-verbs.
+
+    Returns empty string if no V-headed morpheme is present.
+    """
+    for m in reversed(morpheme_chain(tag)):
+        if m and m[0] == "V":
+            return m
+    return ""
 
 
 def is_finite_verb(tag: str) -> bool:
-    """True if tag head is a finite verb form (V + finite-aspect letter).
+    """True if tag's verb morpheme has a finite aspect letter.
 
     Returns False for:
       - Participles (Vqr, Vqs — r=active participle, s=passive participle)
@@ -178,6 +199,10 @@ def is_finite_verb(tag: str) -> bool:
     True
     >>> is_finite_verb('HVqv2ms')   # qal imperative — yes
     True
+    >>> is_finite_verb('Hc/Vhw3mp/Sp3ms')  # wayyiqtol + suffix DO — yes (verb buried)
+    True
+    >>> is_finite_verb('HVqu3ms')   # qal volitional (jussive-like) — yes
+    True
     >>> is_finite_verb('HVqrmsa')   # qal participle (rāʾā) — no
     False
     >>> is_finite_verb('HR/Vqcc')   # prep + qal infinitive construct — no
@@ -185,20 +210,14 @@ def is_finite_verb(tag: str) -> bool:
     >>> is_finite_verb('HNpt')      # YHWH — definitely no
     False
     """
-    head = head_morpheme(tag)
-    if not head or head[0] != "V":
+    verb = _last_verb_morpheme(tag)
+    if not verb or len(verb) < 3:
         return False
-    # Verb head structure: V + stem + aspect + ...
-    # stem letter at index 1 (q=qal, n=niphal, p=piel, h=hiphil, etc.)
-    # aspect letter at index 2
-    if len(head) < 3:
-        return False
-    aspect = head[2]
-    return aspect in _FINITE_VERB_ASPECTS
+    return verb[2] in _FINITE_VERB_ASPECTS
 
 
 def is_wayyiqtol(tag: str) -> bool:
-    """True if tag head is a wayyiqtol verb form specifically (V + stem + 'w').
+    """True if tag's verb morpheme is wayyiqtol-aspect (V + stem + 'w').
 
     Wayyiqtol = consecutive imperfect, the narrative-spine verb form of
     biblical Hebrew prose. Aspect letter at index 2 == 'w'.
@@ -212,6 +231,8 @@ def is_wayyiqtol(tag: str) -> bool:
     True
     >>> is_wayyiqtol('Hc/Vhw3ms')      # hiphil wayyiqtol — yes
     True
+    >>> is_wayyiqtol('Hc/Vhw3mp/Sp3ms') # wayyiqtol + DO-suffix (וַיְטִלֻהוּ) — yes
+    True
     >>> is_wayyiqtol('HVqp3ms')        # qal perfect — no
     False
     >>> is_wayyiqtol('HVqi3ms')        # qal imperfect — no
@@ -221,12 +242,10 @@ def is_wayyiqtol(tag: str) -> bool:
     >>> is_wayyiqtol('HTo')            # bare DO-marker (אֵת) — no
     False
     """
-    head = head_morpheme(tag)
-    if not head or head[0] != "V":
+    verb = _last_verb_morpheme(tag)
+    if not verb or len(verb) < 3:
         return False
-    if len(head) < 3:
-        return False
-    return head[2] == "w"
+    return verb[2] == "w"
 
 
 def is_construct_state(tag: str) -> bool:
