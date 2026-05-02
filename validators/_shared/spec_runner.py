@@ -810,9 +810,13 @@ def _evaluate_line_trigger(spec: Spec, line: str, ctx: dict[str, Any]) -> list[i
         return M.wayyiqtol_mid_line_split_positions(line)
 
     # closed_list_clause_boundary_wayyiqtol: true — split before each wayyiqtol
-    # whose immediate prior token matches one of S3's closed-list closer patterns
+    # whose immediate prior token matches one of S3's closed-list closer patterns.
+    # Tag-aware: pass per-token TAHOT tag-lists so the helper distinguishes
+    # וְאֵת (and-DO-marker, particle) from genuine wayyiqtols (same class as S4).
     if line_anywhere.get("closed_list_clause_boundary_wayyiqtol"):
-        return M.closed_list_clause_boundary_split_positions(line)
+        return M.closed_list_clause_boundary_split_positions(
+            line, ctx.get("line_n_token_tags")
+        )
 
     # multi_wayyiqtol_count: true — split before each non-initial wayyiqtol
     # when the line carries ≥2 wayyiqtols (S4 — see audit-B 2026-05-01).

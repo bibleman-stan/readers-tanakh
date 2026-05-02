@@ -60,50 +60,22 @@ V2_DIR = REPO_ROOT / "data" / "text-files" / "v2" / "he"
 # Make _shared importable when this script is run as __main__.
 sys.path.insert(0, str(REPO_ROOT / "validators"))
 from _shared.poetic_register import is_poetic_register  # noqa: E402
+from _shared import morphology as M  # noqa: E402
+from _shared import morph_alignment as MA  # noqa: E402
 
 # ---------------------------------------------------------------------------
-# Hebrew Unicode helpers
+# Unicode constants — sourced from shared helpers
 # ---------------------------------------------------------------------------
-
-# Hebrew points (cantillation U+0591–U+05AF + niqqud U+05B0–U+05BC, U+05C1–U+05C2,
-# U+05C4–U+05C5, U+05C7).  This regex covers the full points range.
-# We strip te'amim and niqqud while PRESERVING maqqef (U+05BE), paseq (U+05C0),
-# and sof pasuq (U+05C3) so that compound prepositions, prosodic word boundaries,
-# and verse ends remain visible.
-#
-# The range approach doesn't work (U+05BE is within [U+0591-U+05C7]), so instead
-# we explicitly list which characters to REMOVE.  We remove:
-#   - Te'amim: U+0591-U+05AF, U+05BD
-#   - Niqqud: U+05B0-U+05BC, U+05BF, U+05C1-U+05C2, U+05C4-U+05C5, U+05C7
-# We preserve:
-#   - U+05BE (maqqef / dagesh-hazar)
-#   - U+05C0 (paseq)
-#   - U+05C3 (sof pasuq)
-HEBREW_POINTS_RE = re.compile(r"[֑-ְ֯-ׇּֽֿׁׂׅׄ]")
-# Te'amim pattern — removes cantillation accents while preserving maqqef.
-TEAMIM_ONLY_RE = re.compile(r"[֑-ֽֿ]")
-
-# Niqqud pattern — removes vowel marks  
-HEBREW_NIQQUD_RE = re.compile(r"[ְ-ׇּֿׁׂׅׄ]")
-
-SOF_PASUQ = "׃"  # ׃
-# Maqqef (orthographic word-joiner)
-MAQQEF = "־"     # ־
-
-# Hebrew letters
-ALEPH = "א"
-LAMED = "ל"
-MEM = "מ"
+SOF_PASUQ = M.SOF_PASUQ
+MAQQEF = M.MAQQEF
 
 
 def strip_points(token: str) -> str:
-    """Return token with niqqud and te'amim stripped (consonant skeleton + sof pasuq + maqqef).
+    """Strip niqqud and te'amim, preserving maqqef/paseq/sof-pasuq.
 
-    Applies two passes to preserve maqqef, paseq, and sof pasuq.
+    Delegates to M.strip_apparatus (shared helper).
     """
-    result = TEAMIM_ONLY_RE.sub("", token)
-    result = HEBREW_NIQQUD_RE.sub("", result)
-    return result
+    return M.strip_apparatus(token)
 
 
 # ---------------------------------------------------------------------------
@@ -151,7 +123,7 @@ def chapter_from_path(path: Path) -> int | None:
 
 
 # ---------------------------------------------------------------------------
-# Token helpers
+# Token helpers — use shared M helpers where available
 # ---------------------------------------------------------------------------
 
 def content_tokens(line: str) -> list[str]:
@@ -182,7 +154,7 @@ def last_content_token(line: str) -> str | None:
 # ---------------------------------------------------------------------------
 
 # Oath formula skeleton patterns (after stripping points).
-# Pattern: חַי־<divine name|pronoun|royal title>
+# Pattern: חַי־<divine name|pronoun|title>
 # Common forms:
 #   חי־יהוה      (by the life of YHWH)
 #   חי־אני       (by my life)
@@ -339,7 +311,7 @@ _TEAMIM_NAME_BY_CHAR = {
     "֬": "geresh muqdam",
     "֠": "telisha gedolah",
     "֤": "pashta",
-    "֙": "pashta",
+    "֩": "pashta",
     "֡": "darga",
     "֣": "munach",
     "֥": "merkha",
@@ -369,7 +341,7 @@ def teamim_summary(line: str) -> str:
     """
     seen: list[str] = []
     for ch in line:
-        if "֑" <= ch <= "֯":
+        if "א" > ch >= "֑":
             name = _TEAMIM_NAME_BY_CHAR.get(ch)
             if name and name not in seen:
                 seen.append(name)
@@ -379,7 +351,7 @@ def teamim_summary(line: str) -> str:
 
 
 # ---------------------------------------------------------------------------
-# Per-file scanner
+# Per-file scanner — tag-aware via morph_alignment (skel fallback automatic)
 # ---------------------------------------------------------------------------
 
 def scan_file(path: Path, verbose: bool = False) -> list[dict]:
@@ -391,6 +363,12 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
 
     book = book_name_from_path(path)
     chapter_from_file = chapter_from_path(path)
+
+    # Load TAHOT morph alignment for this chapter (None if morph file absent).
+    # The oath formula trigger is purely lexical (frozen form detection), so
+    # tag data is loaded for infrastructure completeness and future guards.
+    chapter_morph = MA.load_chapter_morph(path)
+
     verses = partition_into_verses(lines)
 
     # Build a lookup: line_index → (chapter, verse, position_within_verse)
@@ -581,7 +559,7 @@ def main():
         doc = {
             "validator": "validate_oath_formula",
             "rule": "M4",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "layer": 3,
             "book": args.book or "all",
             "files_scanned": [

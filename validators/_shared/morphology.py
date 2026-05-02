@@ -1428,11 +1428,23 @@ SPECIES_FORMULA_SKELS = {
 }
 
 
-def _is_wayyiqtol_skel_at(token: str) -> bool:
-    """Helper: True if token's skel matches the wayyiqtol consonant pattern.
-    More permissive than is_wayyiqtol_token (no niqqud requirement) since S3
-    needs to detect wayyiqtol presence on tokens like וַיְהִי-without-dagesh.
+def _is_wayyiqtol_skel_at(
+    token: str,
+    tag_list: list[str] | None = None,
+) -> bool:
+    """Helper: True if token is a wayyiqtol.
+
+    When `tag_list` is provided (TAHOT tags for this orthographic word),
+    uses `morph_tags.is_wayyiqtol(tag)` as the authoritative classifier —
+    handles וְאֵת (and-DO-marker, "ואת") correctly as a particle, and
+    וָאֶתֶּן (wayyiqtol 1cs of נתן) correctly as a verb.  Without tags,
+    falls back to the skel-heuristic (more permissive; no niqqud required,
+    needed for tokens like וַיְהִי-without-dagesh).
     """
+    if tag_list is not None and tag_list:
+        from . import morph_tags as MT  # local import to avoid cycles
+        return any(MT.is_wayyiqtol(tag) for tag in tag_list)
+    # Skel fallback
     if MAQQEF in token:
         s = skel(token.split(MAQQEF, 1)[0])
     else:
@@ -1493,10 +1505,19 @@ def is_begetting_or_dying_wayyiqtol(token: str) -> bool:
     return _skel_head(token) in BEGETTING_DYING_WAYYIQTOL_SKELS
 
 
-def closed_list_clause_boundary_split_positions(line: str) -> list[int]:
+def closed_list_clause_boundary_split_positions(
+    line: str,
+    tag_lists: list[list[str]] | None = None,
+) -> list[int]:
     """S3 trigger function: return wayyiqtol token positions where the closed-
     list closer-signature criteria are met. Returns [] if no closer signature
     matches anywhere on the line.
+
+    When `tag_lists` is provided (one tag-list per orthographic word in the
+    line), the TAHOT tag drives wayyiqtol classification via
+    `_is_wayyiqtol_skel_at(token, tag_list)` — distinguishes וְאֵת
+    (and-DO-marker, particle) and וָאֶתֶּן (wayyiqtol 1cs) correctly.
+    Without tags, falls back to skel-heuristic.
 
     Closed signatures (split BEFORE the wayyiqtol):
       Pattern 1: current token = וַיְהִי־כֵן (with non-verb prior content)
@@ -1513,7 +1534,8 @@ def closed_list_clause_boundary_split_positions(line: str) -> list[int]:
     for i in range(1, len(toks)):
         cur = toks[i]
         prev = toks[i - 1]
-        if not _is_wayyiqtol_skel_at(cur):
+        cur_tag_list = tag_lists[i] if tag_lists is not None and i < len(tag_lists) else None
+        if not _is_wayyiqtol_skel_at(cur, cur_tag_list):
             continue
         # Pattern 1: ויהי־כן is its own atomic thought; split before it
         if is_wayehi_ken_token(cur):
