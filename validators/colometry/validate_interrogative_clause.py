@@ -49,6 +49,8 @@ V2_DIR = REPO_ROOT / "data" / "text-files" / "v2" / "he"
 # Make _shared importable when this script is run as __main__.
 sys.path.insert(0, str(REPO_ROOT / "validators"))
 from _shared.poetic_register import is_poetic_register  # noqa: E402
+from _shared import morphology as M  # noqa: E402
+from _shared import morph_alignment as MA  # noqa: E402
 
 # ---------------------------------------------------------------------------
 # Hebrew Unicode helpers
@@ -223,91 +225,26 @@ def line_ends_with_interrogative_particle(line: str) -> tuple[bool, str | None]:
 # Verb / NP detection for next line
 # ---------------------------------------------------------------------------
 
-# High-confidence finite-verb skeletons (same list as clause_nucleus_split)
-KNOWN_FINITE_VERB_SKELETONS = {
-    # Common qatal 3ms / 3fs / 3cp forms
-    "אמר", "אמרה", "אמרו", "אמרתי", "אמרת", "אמרנו", "אמרתם",
-    "ראה", "ראתה", "ראו", "ראיתי", "ראית", "ראינו",
-    "שמע", "שמעה", "שמעו", "שמעתי", "שמענו",
-    "ידע", "ידעה", "ידעו", "ידעתי", "ידעת", "ידענו",
-    "ברא", "בראה", "בראו",
-    "ברך", "ברכה", "ברכו", "ברכתי", "ברכת",
-    "הלך", "הלכה", "הלכו", "הלכתי", "הלכנו",
-    "נתן", "נתנה", "נתנו", "נתתי", "נתת",
-    "עשה", "עשתה", "עשו", "עשיתי", "עשית", "עשינו",
-    "היה", "היתה", "היו", "הייתי", "היית", "היינו",
-    "בא", "באה", "באו", "באתי", "באת", "באנו",
-    "קם", "קמה", "קמו", "קמתי", "קמנו",
-    "בנה", "בנתה", "בנו", "בניתי",
-    "לקח", "לקחה", "לקחו", "לקחתי",
-    "כתב", "כתבה", "כתבו", "כתבתי",
-    "כרת", "כרתה", "כרתו",
-    "מצא", "מצאה", "מצאו", "מצאתי",
-    "נשא", "נשאה", "נשאו", "נשאתי",
-    "נפל", "נפלה", "נפלו", "נפלתי",
-    "ישב", "ישבה", "ישבו", "ישבתי",
-    "עבר", "עברה", "עברו",
-    "אכל", "אכלה", "אכלו", "אכלתי",
-    "שתה", "שתתה", "שתו",
-    "מת", "מתה", "מתו", "מתי",
-    "חיה", "חיתה", "חיו",
-    "סר", "סרה", "סרו",
-    "עלה", "עלתה", "עלו", "עליתי",
-    "ירד", "ירדה", "ירדו",
-    "שב", "שבה", "שבו", "שבתי",
-    "הכה", "הכתה", "הכו",
-    "הביא", "הביאה", "הביאו",
-    "הוציא", "הוציאה", "הוציאו",
-    "הגיד", "הגידה", "הגידו",
-    "הציל", "הצילה", "הצילו",
-    "צוה", "צותה", "צוו",
-    "דבר", "דברה", "דברו",
-    "פנה", "פנתה", "פנו",
-    "נסע", "נסעה", "נסעו",
-    # Common yiqtol stems
-    "יאמר", "תאמר", "יאמרו", "תאמרו", "נאמר",
-    "ישמע", "תשמע", "ישמעו",
-    "יראה", "תראה", "יראו",
-    "יבא", "תבא", "יבאו", "יקם",
-    "יעשה", "תעשה", "יעשו",
-    "ילך", "תלך", "ילכו",
-    "יתן", "תתן", "יתנו", "אתן",
-    "יקח", "תקח", "יקחו",
-    "ישב", "תשב", "ישבו",
-    "ידע", "תדע", "ידעו",
-    "יזכר", "תזכר", "יזכרו",
-    # Common imperatives
-    "שמעו", "ראו", "לכו", "קומו", "עשו",
-    "לך", "קום", "בא", "קח", "תן",
+# Function words excluded from "NP-like" detection (prepositions + discourse
+# particles that would not complete an interrogative clause).
+_FUNCTION_WORDS = {
+    "על", "אל", "מן", "עם", "תחת", "בין",
+    "לפני", "אחרי", "מאחרי", "מלפני", "מפני", "מאת",
+    "בעד", "נגד", "מעל", "מתחת", "בתוך", "מתוך",
+    "הנה", "אף", "לכן", "ועתה", "אז", "עתה",
 }
 
-WAYYIQTOL_PREFIXES = ("וי", "ות", "ונ", "וא")
 
-
-def looks_like_finite_verb(bare: str) -> bool:
-    """Heuristic: does this bare consonant skeleton look like a finite verb?"""
-    if not bare:
-        return False
-    if bare in KNOWN_FINITE_VERB_SKELETONS:
-        return True
-    if bare.startswith(WAYYIQTOL_PREFIXES) and len(bare) >= 4 and bare not in ("ויהוה",):
-        return True
-    if MAQQEF in bare:
-        for part in bare.split(MAQQEF):
-            if not part:
-                continue
-            if part in KNOWN_FINITE_VERB_SKELETONS:
-                return True
-            if part.startswith(WAYYIQTOL_PREFIXES) and len(part) >= 4:
-                return True
-    for suf in ("תי", "תם", "תן", "נו"):
-        if bare.endswith(suf) and len(bare) >= 4:
-            return True
-    return False
-
-
-def next_line_starts_with_verb_or_np(line: str) -> bool:
+def next_line_starts_with_verb_or_np(
+    line: str,
+    tag_list: "list[list[str]] | None" = None,
+) -> bool:
     """True if line begins with verb or NP content (completing the question).
+
+    Tag-aware primary path: if `tag_list` (aligned per-token tags for this
+    line) is provided, passes the first token's tags into M.is_finite_verb_token
+    for authoritative verb classification (eliminates skel-heuristic FPs from
+    noun homographs).  Skel-fallback automatic when tags absent.
 
     Conservative: returns True if the first token looks like a finite verb
     or is a noun-like word (not obviously a preposition or discourse particle).
@@ -315,22 +252,14 @@ def next_line_starts_with_verb_or_np(line: str) -> bool:
     first = first_content_token(line)
     if not first:
         return False
-    bare = strip_points(first)
-    if not bare:
-        return False
-    # Direct verb check
-    if looks_like_finite_verb(bare):
+    # Tag-aware verb check for first token
+    first_tags = tag_list[0] if (tag_list and len(tag_list) > 0) else None
+    if M.is_finite_verb_token(first, tag_list=first_tags):
         return True
-    # Noun-phrase-like: not a preposition, not a discourse particle, not a
-    # pronoun adverb. Accept most other content words.
-    # Hard-exclude only known function words
-    FUNCTION_WORDS = {
-        "על", "אל", "מן", "עם", "תחת", "בין",
-        "לפני", "אחרי", "מאחרי", "מלפני", "מפני", "מאת",
-        "בעד", "נגד", "מעל", "מתחת", "בתוך", "מתוך",
-        "הנה", "אף", "לכן", "ועתה", "אז", "עתה",
-    }
-    if bare not in FUNCTION_WORDS:
+    # Noun-phrase-like: not a preposition, not a discourse particle.
+    # Accept most other content words (bare skel check).
+    bare = strip_points(first).replace(MAQQEF, "").replace(SOF_PASUQ, "").replace(PASEQ, "")
+    if bare not in _FUNCTION_WORDS:
         return True
     return False
 
@@ -385,6 +314,40 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
         for pos, idx in enumerate(indices):
             line_to_verse[idx] = (ch, vs, pos, indices)
 
+    # ---------------------------------------------------------------------------
+    # Morph alignment: load TAHOT morph tags for this chapter (None if absent).
+    # Builds line_token_tags: {0-based line_idx → [tag_list_per_token]}.
+    # Falls back to skel-heuristics on miss (no crash on absent morph files).
+    # ---------------------------------------------------------------------------
+    chapter_morph = MA.load_chapter_morph(path)
+
+    # verse-partitioning needed for alignment — reuse verses list above.
+    # Build a per-verse lookup: verse_num → [(1-based line_no, raw_line)]
+    line_token_tags: dict[int, list[list[str]]] = {}
+    if chapter_morph is not None:
+        # Group lines by verse for alignment (need only content lines, not skippable).
+        _verse_lines: dict[int | None, list[tuple[int, str]]] = {}
+        for ch, vs, indices in verses:
+            pairs = [(idx + 1, lines[idx]) for idx in indices]
+            _verse_lines[vs] = pairs
+        for vs, numbered_lines in _verse_lines.items():
+            content = [(ln, raw) for ln, raw in numbered_lines if not is_skippable(raw)]
+            if not content:
+                continue
+            ortho_tags = chapter_morph.get(vs)
+            if ortho_tags is None:
+                continue
+            verse_text_lines = [raw for _, raw in content]
+            aligned = MA.align_verse_tokens_to_tags(verse_text_lines, ortho_tags)
+            if aligned is None:
+                continue
+            for ci, (ln, _raw) in enumerate(content):
+                line_token_tags[ln - 1] = aligned[ci]  # store at 0-based index
+
+    def _tag_list_for(line_idx: int) -> "list[list[str]] | None":
+        """Return per-token tag lists for line_idx (0-based), or None on miss."""
+        return line_token_tags.get(line_idx)
+
     for i, line in enumerate(lines):
         if is_skippable(line):
             continue
@@ -426,7 +389,8 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
         next_line_no = next_idx + 1
 
         # --- Check if next line begins with verb or NP completing the question ---
-        if not next_line_starts_with_verb_or_np(next_line):
+        next_tags = _tag_list_for(next_idx)
+        if not next_line_starts_with_verb_or_np(next_line, tag_list=next_tags):
             continue
 
         # --- Determine severity based on combined prosodic word count ---
