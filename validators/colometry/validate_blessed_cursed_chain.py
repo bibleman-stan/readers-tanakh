@@ -47,6 +47,14 @@ V1_DIR = REPO_ROOT / "data" / "text-files" / "v1" / "he-baseline"
 V2_DIR = REPO_ROOT / "data" / "text-files" / "v2" / "he"
 
 # ---------------------------------------------------------------------------
+# Shared morphology + morph-alignment helpers
+# ---------------------------------------------------------------------------
+# Make _shared importable when this script is run as __main__.
+sys.path.insert(0, str(REPO_ROOT / "validators"))
+from _shared import morphology as M  # noqa: E402
+from _shared import morph_alignment as MA  # noqa: E402
+
+# ---------------------------------------------------------------------------
 # Hebrew Unicode helpers
 # ---------------------------------------------------------------------------
 
@@ -73,6 +81,7 @@ def strip_points(token: str) -> str:
 # ---------------------------------------------------------------------------
 
 VERSE_REF_RE = re.compile(r"^(\S+\s+)?\d+:\d+\s*$")
+_VERSE_REF_SIMPLE_RE = re.compile(r"^\d+:\d+\s*$")
 
 
 def is_skippable(line: str) -> bool:
@@ -91,6 +100,35 @@ def parse_verse_ref(line: str):
     if not m:
         return None
     return int(m.group(1)), int(m.group(2))
+
+
+# ---------------------------------------------------------------------------
+# Verse-grouping helper (mirrors validate_speech_intro_framing.py)
+# ---------------------------------------------------------------------------
+
+def _partition_into_verses(lines: list[str]) -> list[tuple[int, list[tuple[int, str]]]]:
+    """Partition file lines into per-verse groups.
+
+    Returns list of (verse_num, [(1-based line_no, raw_line), ...]) tuples.
+    Lines preceding any verse header are discarded (blank preamble only).
+    """
+    groups: list[tuple[int, list[tuple[int, str]]]] = []
+    cur_verse: int | None = None
+    cur_lines: list[tuple[int, str]] = []
+    for i, raw in enumerate(lines):
+        line_no = i + 1
+        s = raw.strip()
+        m = _VERSE_REF_SIMPLE_RE.match(s)
+        if m:
+            if cur_verse is not None and cur_lines:
+                groups.append((cur_verse, cur_lines))
+            cur_verse = int(s.split(":")[1])
+            cur_lines = []
+        elif s and cur_verse is not None:
+            cur_lines.append((line_no, raw))
+    if cur_verse is not None and cur_lines:
+        groups.append((cur_verse, cur_lines))
+    return groups
 
 
 # ---------------------------------------------------------------------------
@@ -134,16 +172,52 @@ def first_content_token(line: str) -> str | None:
     return toks[0] if toks else None
 
 
-def line_starts_with_frame(line: str) -> str | None:
-    """Return frame marker ('blessed' or 'cursed') if line starts with בָּרוּךְ or אָרוּר. Else None."""
+def _is_adjective_or_participle_tag(tag_list: "list[str] | None") -> bool:
+    """Return True if TAHOT tag confirms this token is adjective or qal passive participle.
+
+    בָּרוּךְ and אָרוּר appear in TAHOT tagged as:
+      - HVqsmsa — Verb, qal, suffix-conjugation (= qatal / QalPassPtcp), masc-sg-absolute
+      - HAamsa  — Adjective, absolute, masc-sg-absolute (less common TAHOT rendering)
+
+    The "s" in position 2 of the verb tag is TAHOT's suffix-conjugation code, which
+    covers both qatal 3ms and qal-passive-participle used predicatively.
+
+    When tags are absent, returns True so that skel-based detection controls.
+    """
+    if not tag_list:
+        return True  # no tags → skel-only path
+    from _shared import morph_tags as _MT
+    for tag in reversed(tag_list):
+        if not tag or tag == "[—]":
+            continue
+        chain = _MT.morpheme_chain(tag)
+        if not chain:
+            continue
+        head = chain[-1]
+        # Adjective (A...) OR qal-suffix-conjugation (Vqs...) — both valid for ברוך/ארור
+        if head.startswith("A") or head.startswith("Vqs"):
+            return True
+        return False
+    return True  # no parseable tag → allow skel
+
+
+def line_starts_with_frame(line: str, first_tok_tags: "list[str] | None" = None) -> str | None:
+    """Return frame marker ('blessed' or 'cursed') if line starts with בָּרוּךְ or אָרוּר.
+
+    Tag-aware primary path: skeleton membership gates entry; TAHOT tag then
+    confirms token is an adjective or qal passive participle (not a homograph
+    verbal form). Falls back to skeleton-only when tags are absent.
+    """
     first = first_content_token(line)
     if not first:
         return None
     bare = strip_points(first)
     if bare == BLESSED_SKELETON:
-        return "blessed"
+        if _is_adjective_or_participle_tag(first_tok_tags):
+            return "blessed"
     if bare == CURSED_SKELETON:
-        return "cursed"
+        if _is_adjective_or_participle_tag(first_tok_tags):
+            return "cursed"
     return None
 
 
@@ -175,6 +249,12 @@ def is_in_scope(chapter: int | None, verse: int | None) -> bool:
 # ---------------------------------------------------------------------------
 
 def scan_file(path: Path, verbose: bool = False) -> list[dict]:
+    """Scan one Deuteronomy text file for blessed/cursed chain fragmentation.
+
+    Uses TAHOT morph tags (via morph_alignment) when available to confirm that
+    אָרוּר/בָּרוּךְ tokens are adjective/passive-participle forms, not homographic
+    verbal forms. Falls back to skeleton-only heuristic when tags absent.
+    """
     findings: list[dict] = []
     try:
         lines = path.read_text(encoding="utf-8").splitlines()
@@ -187,6 +267,39 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
     # Only process Deuteronomy
     if "05-deuteronomy" not in book.lower() and "deuteronomy" not in book.lower():
         return findings
+
+    # Load TAHOT morph alignment for this chapter (None if morph file absent).
+    chapter_morph = MA.load_chapter_morph(path)
+
+    # Build a lookup: file_line_index (0-based) → [tag_list_per_token]
+    # tag_list_per_token[tok_idx] = list[str] (TAHOT tags for that token)
+    line_token_tags: dict[int, list[list[str]]] = {}
+    if chapter_morph is not None:
+        verse_groups = _partition_into_verses(lines)
+        for verse_num, verse_numbered_lines in verse_groups:
+            content = [
+                (ln, raw) for ln, raw in verse_numbered_lines
+                if not is_skippable(raw)
+            ]
+            if not content:
+                continue
+            ortho_tags = chapter_morph.get(verse_num)
+            if ortho_tags is None:
+                continue
+            verse_text_lines = [raw for _, raw in content]
+            aligned = MA.align_verse_tokens_to_tags(verse_text_lines, ortho_tags)
+            if aligned is None:
+                continue
+            for ci, (ln, _raw) in enumerate(content):
+                # ln is 1-based; store at 0-based index
+                line_token_tags[ln - 1] = aligned[ci]
+
+    def _first_tok_tags(line_idx: int) -> "list[str] | None":
+        """Return TAHOT tag list for first token of line_idx, or None on miss."""
+        tl = line_token_tags.get(line_idx)
+        if tl is None or len(tl) == 0:
+            return None
+        return tl[0]
 
     # Build a lookup: line_index → (chapter, verse)
     line_to_verse: dict[int, tuple[int | None, int | None]] = {}
@@ -210,7 +323,8 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
             continue
 
         # Check if this line is a frame marker (blessed/cursed)
-        frame_type = line_starts_with_frame(line)
+        # Tag-aware: passes TAHOT tags for first token when available; skel fallback automatic.
+        frame_type = line_starts_with_frame(line, first_tok_tags=_first_tok_tags(i))
         if frame_type is None:
             i += 1
             continue
@@ -233,7 +347,8 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
                 i += 1
                 continue
             # Check if this line is another frame marker
-            if line_starts_with_frame(lines[i]) is not None:
+            # Tag-aware: pass TAHOT tags for first token when available.
+            if line_starts_with_frame(lines[i], first_tok_tags=_first_tok_tags(i)) is not None:
                 # Next frame marker found; this content belongs to the previous frame
                 break
             # This is a content line; include it
