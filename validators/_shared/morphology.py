@@ -1118,6 +1118,139 @@ def is_bare_do_marker_token(token: str) -> bool:
     return s == "את" or s == "ואת"
 
 
+# Cognition / perception verbs (qal — knowing, hearing, seeing) used by
+# m4_e_solo_cognition_verb_clausal. Tier-1 closed list per 2026-05-02
+# audit: only ידע / שמע / ראה qal forms (deferred זכר / שכח / הבין /
+# הכיר which need stem-tag disambiguation due to skel collisions).
+# Includes qal active participle (יודע / שומע / רואה) since cognition
+# constructions frequently use participial predication.
+COGNITION_VERB_QAL_SKELETONS = {
+    # ידע "know" — qatal/yiqtol/wayyiqtol/imperative/participle (qal stems)
+    "ידעתי", "ידעת", "ידעתם", "ידעתן", "ידענו", "ידע", "ידעה", "ידעו",
+    "וידע", "ותדע", "וידעו", "ותדענה",
+    "אדע", "תדע", "תדעי", "תדעו", "תדענה", "ידע", "תדע", "ידעו", "תדענה", "נדע",
+    "דע", "דעי", "דעו", "דענה",
+    "יודע", "יודעת", "יודעים", "יודעות",
+    # שמע "hear"
+    "שמעתי", "שמעת", "שמעתם", "שמעתן", "שמענו", "שמע", "שמעה", "שמעו",
+    "וישמע", "ותשמע", "וישמעו", "ותשמענה",
+    "אשמע", "תשמע", "תשמעי", "תשמעו", "תשמענה", "ישמע", "ישמעו", "תשמענה", "נשמע",
+    "שמע", "שמעי", "שמעו", "שמענה",
+    "שומע", "שומעת", "שומעים", "שומעות",
+    # ראה "see"
+    "ראיתי", "ראית", "ראיתם", "ראיתן", "ראינו", "ראה", "ראתה", "ראו",
+    "ויראו", "ותראינה",  # ויראה / ותראה / וירא overlap with niphal "appear"
+                          # and with Gen-1 cosmogonic refrain — handled by
+                          # tag-driven qal-stem check (Vq* required)
+    "אראה", "תראה", "תראי", "תראו", "תראינה", "יראה", "יראו", "תראינה", "נראה",
+    "ראה", "ראי", "ראו", "ראינה",
+    "רואה", "רואים", "רואות",
+}
+
+
+def is_cognition_verb_qal_token(token: str, tag_list: "list[str] | None" = None) -> bool:
+    """True if token is a Tier-1 cognition/perception verb in qal stem.
+
+    Tag-driven primary path: skel must be in COGNITION_VERB_QAL_SKELETONS
+    AND head morpheme must start with "Vq" (qal verb — any aspect including
+    participle Vqr/Vqs and inf Vqc/Vqa). Authoritative when present —
+    eliminates the וירא qal-vs-niphal homograph (qal `וַיַּרְא` "and-he-saw"
+    vs niphal `וַיֵּרָא` "and-he-appeared") that pure skel-fallback can't
+    disambiguate.
+
+    Skel-fallback (no tag): just skel membership. Less safe — would
+    misclassify niphal `וַיֵּרָא` as qal "saw"; production callers should
+    pass tag_list.
+    """
+    s = skel(token)
+    if MAQQEF in token:
+        s = skel(token.split(MAQQEF)[0])
+    if s not in COGNITION_VERB_QAL_SKELETONS:
+        return False
+    if tag_list:
+        head_tag = None
+        for t in tag_list:
+            if t and t != "[—]":
+                head_tag = t
+                break
+        if head_tag is not None:
+            from . import morph_tags as _MT
+            verb = None
+            for m in reversed(_MT.morpheme_chain(head_tag)):
+                if m and m[0] == "V":
+                    verb = m
+                    break
+            if verb is None:
+                return False
+            return verb.startswith("Vq")
+    return True
+
+
+def is_inf_abs_token(token: str, tag_list: "list[str] | None" = None) -> bool:
+    """True if the token's verb morpheme is an infinitive-absolute (V*a).
+
+    Used by m_inf_abs_finite_pair (Joüon-Muraoka §123 emphatic construction —
+    `מוֹת תָּמוּת` "you shall surely die"). For maqqef-bound forms like
+    `לֹא־מוֹת` (negation + inf-abs), the LAST tag in the chain corresponds
+    to the rightmost ortho component (the inf-abs); the V-morpheme aspect
+    letter at index 2 == "a" identifies the absolute infinitive.
+
+    Tag-only — no skel-fallback (inf-abs vs construct-inf vs participle is
+    not skel-disambiguable).
+    """
+    if not tag_list:
+        return False
+    last_tag = None
+    for t in reversed(tag_list):
+        if t and t != "[—]":
+            last_tag = t
+            break
+    if last_tag is None:
+        return False
+    from . import morph_tags as _MT
+    chain = _MT.morpheme_chain(last_tag)
+    for m in reversed(chain):
+        if m and m[0] == "V":
+            return len(m) >= 3 and m[2] == "a"
+    return False
+
+
+def skel_of_last_sub(token: str) -> str:
+    """Skel of the LAST maqqef-joined sub-word (or full skel if no maqqef).
+
+    For `לֹא־מוֹת` returns `מות` (the inf-abs's skel), not `לא־מות` (which
+    would carry the negation prefix into the same-root check). Used by
+    cross-line same-root checks where the relevant verb skel is the
+    rightmost ortho-component of a maqqef compound.
+    """
+    if MAQQEF in token:
+        return skel(token.split(MAQQEF)[-1])
+    return skel(token)
+
+
+def skel_consonant_overlap(s1: str, s2: str) -> int:
+    """Count of s1's consonants that appear in s2 in the same order.
+
+    Used by the inf-abs+finite-verb same-root check (m_inf_abs_finite_pair):
+    the inf-abs and the cognate finite verb share ≥ 2 root consonants in
+    the same sequence (`מות`/`תמתון` shares מ,ת,ו order; `הרבה`/`והללתם`
+    shares only ה — different roots, blocked).
+
+    Cross-binyan pairs are handled correctly: `מות` (qal) + `יומת` (hophal,
+    "be put to death") shares מ,ת — passes the ≥2 check.
+    """
+    if not s1 or not s2:
+        return 0
+    j = 0
+    matched = 0
+    for c in s1:
+        idx = s2.find(c, j)
+        if idx >= 0:
+            matched += 1
+            j = idx + 1
+    return matched
+
+
 def _mem_after_vav_is_min_prep(token: str) -> bool:
     """True if token's mem (after leading vav) bears the מן-prep niqqud
     signature: hireq + dagesh on next consonant.

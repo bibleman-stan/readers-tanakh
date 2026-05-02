@@ -1,0 +1,66 @@
+name: m_inf_abs_finite_pair
+rule: M
+subcase: emphatic_inf_abs_finite
+severity: STRONG-MERGE-CANDIDATE
+description: |
+  Infinitive-absolute + cognate finite verb (Joüon-Muraoka §123 emphatic
+  construction). The two forms together intensify the verbal idea — `מוֹת
+  תָּמוּת` ("you-shall-surely-die"), `נָתֹן תִּתֵּן` ("you-shall-surely-
+  give"), `שָׁלֹם תְּשַׁלֵּם` ("he-shall-surely-repay"). The inf-abs and
+  the finite verb of the same root form an inseparable rhetorical unit;
+  splitting them across cola is an over-break.
+
+  Stan-flagged 2026-05-02 (Gen 3:4): `לֹא־מוֹת / תְּמֻתוּן׃` (the serpent's
+  denial of God's threat, "you-shall-surely-NOT-die"). Maqqef-bound
+  negation `לֹא־מוֹת` is one prosodic word; its TAG-CHAIN last morpheme is
+  `Vqaa` (qal absolute infinitive). Line N+1 first token `תְּמֻתוּן` has
+  finite-verb tag `Vqi2mp/Sn`. Same root (מות) → merge.
+
+  Tag-driven, not closed-list: this is an open-class construction (any
+  verb root with attested inf-abs can participate). 26+ same-stem corpus
+  pairs in v1 baseline distributed across 14 books; closed-list would
+  miss the long tail.
+
+  Same-root check via skel-consonant-overlap ≥ 2 (in-order). Filters
+  pure adverbial inf-abs cases (`הַרְבֵּה` in Ecclesiastes, TAHOT-tagged
+  Vha but functioning as "much/greatly" modifying the prior finite verb,
+  with next-line finite verb of a DIFFERENT root) and other cross-line
+  inf-abs+finite combinations where the two are not cognate.
+
+  `both_lines_have_finite_verb` guard further filters cases where line N
+  already has its own finite verb earlier on the line (the inf-abs is
+  modifying THAT verb, not bonding with line N+1's verb — Judg 14:9
+  `... וַיֵּלֶךְ הָלוֹךְ וְאָכֹל`, Eccl 5:11 etc.).
+
+  Cap: combined max 5 prosodic words. Emphatic inf-abs+finite pairs are
+  tight — typically 2-4 prosodic words combined including any
+  negation/conjunction.
+
+  Register: NO poetic_register guard — this is an idiom that appears
+  equally in poetry (Isa 19:22, Lam 1:20, Mic 1:10, Hos 4:2) and prose.
+  Joüon-Muraoka §123 examples include both registers.
+
+trigger:
+  line_n_last_token:
+    morphology: inf_abs           # head V*a per TAHOT
+  line_n1_first_token:
+    morphology: finite_verb       # any finite aspect
+  line_n_max_prosodic_words: 1    # tight: just the inf-abs (with any
+                                    # negation/conjunction maqqef-bound)
+  line_n1_max_prosodic_words: 4   # finite verb + short complement
+  combined_max_prosodic_words: 5
+
+guards:
+  - inf_abs_finite_root_mismatch  # NEW — blocks when skel-overlap < 2
+                                    # (different roots; not the §123 idiom)
+  - both_lines_have_finite_verb   # blocks when line N already has its own
+                                    # finite verb (inf-abs is modifying that
+                                    # one, not bonding with N+1's verb)
+  - prev_line_incomplete          # ensure line N is genuinely the head of
+                                    # a new clause / pair, not a fragment
+  - next_line_is_vav_coord_pp     # standard oscillation guard trio
+  - next_line_is_vav_coord_np
+  - next_line_is_wayyiqtol
+
+annotation_template: "Inf-abs + cognate finite emphatic pair ({pwc} prosodic words)"
+suggested_action: MERGE

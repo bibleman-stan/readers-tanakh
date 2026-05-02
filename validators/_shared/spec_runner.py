@@ -227,6 +227,12 @@ def _check_morphology(tok: str, morph: str, tag_list: Optional[list[str]] = None
         return M.is_numeral_token(tok, tag_list=tag_list) or M.is_numeral_governed_noun(tok)
     if morph == "bare_noun":
         return M.is_bare_noun_token(tok, tag_list=tag_list)
+    if morph == "inf_abs":
+        return M.is_inf_abs_token(tok, tag_list=tag_list)
+    if morph == "finite_verb":
+        return M.is_finite_verb_token(tok, tag_list=tag_list)
+    if morph == "cognition_verb_qal":
+        return M.is_cognition_verb_qal_token(tok, tag_list=tag_list)
     return False
 
 
@@ -247,7 +253,27 @@ def _matches_anywhere(
     if "has_resumptive_suffix" in conditions:
         if M.line_has_resumptive_suffix(line) != conditions["has_resumptive_suffix"]:
             return False
+    if "has_cognition_verb_qal" in conditions:
+        actual = _line_has_cognition_verb_qal(line, line_tag_lists)
+        if actual != conditions["has_cognition_verb_qal"]:
+            return False
     return True
+
+
+def _line_has_cognition_verb_qal(line: str, line_tag_lists: Optional[list[list[str]]]) -> bool:
+    """True if any token on the line is a Tier-1 qal cognition/perception
+    verb (ידע / שמע / ראה family) per `M.is_cognition_verb_qal_token`.
+
+    Used by m4_e_solo_cognition_verb_clausal — line N must contain a
+    cognition verb anywhere (not just first/last position) for the
+    `כי + V + S || כי + complement` Gen-3:5 shape.
+    """
+    tokens = line.split()
+    for i, tok in enumerate(tokens):
+        tag_list = line_tag_lists[i] if (line_tag_lists and i < len(line_tag_lists)) else None
+        if M.is_cognition_verb_qal_token(tok, tag_list=tag_list):
+            return True
+    return False
 
 
 def _line_has_finite_verb(line: str, line_tag_lists: Optional[list[list[str]]]) -> bool:
@@ -375,6 +401,43 @@ def _g_both_verbs(l_n, l_n1, ctx):
 def _g_cross_verse(l_n, l_n1, ctx):
     # always False — engine already verse-scopes; this guard is a no-op marker
     return False
+
+
+@_register_guard("line_n_ends_with_sof_pasuq")
+def _g_n_sof_pasuq(l_n, l_n1, ctx):
+    """Fire (block) if line N ends with sof pasuq (׃ — verse-end marker).
+
+    Sof pasuq on the verb's line is the strongest Masoretic signal that the
+    cantillation marked it as clause-final, NOT subject-pending. Used by
+    M4.d (intransitive V + postposed S): when `וַיָּמֹֽת׃` ends a verse,
+    the next verse begins a fresh clause — the bare-NP on the next content
+    line is NOT the postposed subject of the dying-verb. (See 1Kings 16:18
+    `וַיָּמֹֽת׃ | עַל־חַטֹּאתָיו` — "and-he-died." closes verse N; verse N+1
+    begins "for his sins...".)
+    """
+    return l_n.rstrip().endswith("׃")
+
+
+@_register_guard("inf_abs_finite_root_mismatch")
+def _g_inf_abs_root_mismatch(l_n, l_n1, ctx):
+    """Fire (block) when inf-abs on N's last token + finite-verb on N+1's
+    first token have skel-consonant-overlap < 2 (different roots).
+
+    Used by m_inf_abs_finite_pair to enforce the same-root requirement of
+    Joüon-Muraoka §123 emphatic construction. Filters Eccl `הַרְבֵּה`
+    adverbial cases (TAHOT-tagged Vha but functionally adverbial; next-line
+    finite verb is from a different root) and similar.
+
+    For maqqef-bound inf-abs (`לֹא־מוֹת`), uses skel of the LAST
+    sub-word (the inf-abs `מות`), not the whole compound.
+    """
+    n_last = M.last_content_token(l_n)
+    n1_first = M.first_content_token(l_n1)
+    if not n_last or not n1_first:
+        return False
+    s1 = M.skel_of_last_sub(n_last)
+    s2 = M.skel(n1_first)
+    return M.skel_consonant_overlap(s1, s2) < 2
 
 
 @_register_guard("line_n_starts_with_do_marker")
