@@ -71,6 +71,14 @@ V1_DIR = REPO_ROOT / "data" / "text-files" / "v1" / "he-baseline"
 V2_DIR = REPO_ROOT / "data" / "text-files" / "v2" / "he"
 
 # ---------------------------------------------------------------------------
+# Shared morphology + morph-alignment helpers
+# ---------------------------------------------------------------------------
+# Make _shared importable when this script is run as __main__.
+sys.path.insert(0, str(REPO_ROOT / "validators"))
+from _shared import morphology as M  # noqa: E402
+from _shared import morph_alignment as MA  # noqa: E402
+
+# ---------------------------------------------------------------------------
 # Hebrew Unicode constants
 # ---------------------------------------------------------------------------
 
@@ -81,6 +89,9 @@ HEBREW_POINTS_RE = re.compile(r"[֑-ׇ]")
 # Compound preposition consonant skeletons (after point-stripping)
 # These are multi-consonant orthographic words that must govern an object NP
 # on the same line.
+# Used as the skel-fallback when TAHOT morph tags are absent (tag path uses
+# M.is_bare_prep_token which classifies via tag chain ["R"] = standalone bare
+# prep with no pronominal suffix, eliminating FPs from suffixed forms).
 COMPOUND_PREP_SKELETONS = {
     "מלפני",    # מִלִּפְנֵי — from before (מן + לפני)
     "מפני",     # מִפְּנֵי  — from before / because of
@@ -167,20 +178,97 @@ def is_noun_phrase_start(line: str) -> bool:
 
 
 # ---------------------------------------------------------------------------
+# Verse-grouping helper (mirrors validate_speech_intro_framing.py)
+# ---------------------------------------------------------------------------
+
+_VERSE_REF_RE = re.compile(r"^\d+:\d+\s*$")
+
+
+def _partition_into_verses(lines: list[str]) -> list[tuple[int, list[tuple[int, str]]]]:
+    """Partition file lines into per-verse groups.
+
+    Returns list of (verse_num, [(1-based line_no, raw_line), ...]) tuples.
+    Lines preceding any verse header are discarded (blank preamble only).
+    """
+    groups: list[tuple[int, list[tuple[int, str]]]] = []
+    cur_verse: int | None = None
+    cur_lines: list[tuple[int, str]] = []
+    for i, raw in enumerate(lines):
+        line_no = i + 1
+        s = raw.strip()
+        m = _VERSE_REF_RE.match(s)
+        if m:
+            if cur_verse is not None and cur_lines:
+                groups.append((cur_verse, cur_lines))
+            cur_verse = int(s.split(":")[1])
+            cur_lines = []
+        elif s and cur_verse is not None:
+            cur_lines.append((line_no, raw))
+    if cur_verse is not None and cur_lines:
+        groups.append((cur_verse, cur_lines))
+    return groups
+
+
+# ---------------------------------------------------------------------------
 # Per-file scanner
 # ---------------------------------------------------------------------------
 
 def scan_file(path: Path) -> list[dict]:
-    """Scan one text file for compound-preposition object-stranding violations."""
+    """Scan one text file for compound-preposition object-stranding violations.
+
+    Uses TAHOT morph tags (via morph_alignment) when available to classify the
+    last-token on each line as a bare preposition (tag chain ["R"]) vs. a
+    suffixed/non-prep form.  This eliminates FPs from prepositions with
+    pronominal suffixes (e.g., לְפָנַי "before me") that skeleton-match a
+    compound prep skeleton but are NOT stranded.  Falls back to COMPOUND_PREP_SKELETONS
+    skeleton membership when tags are absent.
+    """
     violations = []
     try:
         lines = path.read_text(encoding="utf-8").splitlines()
     except UnicodeDecodeError:
         lines = path.read_text(encoding="utf-8-sig").splitlines()
 
-    for i, line in enumerate(lines, start=1):
+    # Load TAHOT morph alignment for this chapter (None if morph file absent).
+    chapter_morph = MA.load_chapter_morph(path)
+
+    # Build a lookup: file_line_index (0-based) → [tag_list_per_token]
+    # tag_list_per_token[tok_idx] = list[str] (TAHOT tags for that token)
+    line_token_tags: dict[int, list[list[str]]] = {}
+    if chapter_morph is not None:
+        verse_groups = _partition_into_verses(lines)
+        for verse_num, verse_numbered_lines in verse_groups:
+            content = [
+                (ln, raw) for ln, raw in verse_numbered_lines
+                if not is_skippable(raw)
+            ]
+            if not content:
+                continue
+            ortho_tags = chapter_morph.get(verse_num)
+            if ortho_tags is None:
+                continue
+            verse_text_lines = [raw for _, raw in content]
+            aligned = MA.align_verse_tokens_to_tags(verse_text_lines, ortho_tags)
+            if aligned is None:
+                continue
+            for ci, (ln, _raw) in enumerate(content):
+                # ln is 1-based; store at 0-based index
+                line_token_tags[ln - 1] = aligned[ci]
+
+    def _tag_list_for(line_idx: int, tok_idx: int) -> "list[str] | None":
+        """Return TAHOT tag list for (line_idx, tok_idx), or None on miss."""
+        tl = line_token_tags.get(line_idx)
+        if tl is None:
+            return None
+        if tok_idx < 0 or tok_idx >= len(tl):
+            return None
+        return tl[tok_idx]
+
+    for i, line in enumerate(lines):
         if is_skippable(line):
             continue
+
+        line_no = i + 1  # 1-based
 
         # Check if this line ends with a compound preposition
         token = _last_token(line)
@@ -189,33 +277,55 @@ def scan_file(path: Path) -> list[dict]:
 
         bare = strip_points(token)
 
-        # Is this token a compound preposition?
-        if bare not in COMPOUND_PREP_SKELETONS:
-            continue
+        # --- Tag-aware preposition check ---
+        # Primary path: use TAHOT tag via M.is_bare_prep_token.
+        #   - Returns True  → token is a standalone bare prep (tag chain ["R"]);
+        #                     the prep IS stranded — proceed to violation check.
+        #   - Returns False → token has a pronominal suffix, is not a prep, or is
+        #                     otherwise not bare-stranded; skip this line.
+        # Skel-fallback (tag absent): skeleton membership in COMPOUND_PREP_SKELETONS
+        # (preserves prior behaviour; covers בלתי and other non-PREP_SKELETONS items).
+        raw_tokens = line.rstrip().split()
+        last_tok_idx = len(raw_tokens) - 1 if raw_tokens else -1
+        tag_list = _tag_list_for(i, last_tok_idx)
 
-        # Check if there's a next line
-        next_line_idx = i  # i is 1-based; lines is 0-based
-        if next_line_idx >= len(lines):
-            # No next line; preposition is at EOF (unusual but not our concern here)
-            continue
+        if tag_list is not None:
+            # Tag-driven path — authoritative
+            if not M.is_bare_prep_token(token, tag_list=tag_list):
+                continue
+        else:
+            # Skel-fallback — check skeleton membership
+            if bare not in COMPOUND_PREP_SKELETONS:
+                continue
 
-        next_line = lines[next_line_idx]
+        # Check if there's a next non-empty line (scan forward past skippable lines)
+        next_line_idx = i + 1  # 0-based
+        next_line = None
+        next_line_no = None
+        for j in range(next_line_idx, len(lines)):
+            if not is_skippable(lines[j]):
+                next_line = lines[j]
+                next_line_no = j + 1  # 1-based
+                break
+
+        if next_line is None:
+            # No next content line; preposition at EOF — not our concern
+            continue
 
         # Does the next line look like it could be the object NP?
         if not is_noun_phrase_start(next_line):
-            # Next line is empty or only verse-reference; no object follows
             continue
 
-        # We have a compound preposition at line end followed by a potential NP
+        # We have a bare compound preposition at line end followed by a potential NP
         violations.append(
             {
                 "file": path.name,
                 "file_path": path,
-                "line_num": i,
+                "line_num": line_no,
                 "rule": "L1/compound-prep-object",
                 "brief": f"stranded compound preposition at line end: {token!r}",
                 "line": line.rstrip(),
-                "next_line_num": i + 1,
+                "next_line_num": next_line_no,
                 "next_line": next_line.rstrip(),
             }
         )

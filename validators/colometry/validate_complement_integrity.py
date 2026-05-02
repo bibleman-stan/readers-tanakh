@@ -87,6 +87,14 @@ V1_DIR = REPO_ROOT / "data" / "text-files" / "v1" / "he-baseline"
 V2_DIR = REPO_ROOT / "data" / "text-files" / "v2" / "he"
 
 # ---------------------------------------------------------------------------
+# Shared morphology + morph-alignment helpers
+# ---------------------------------------------------------------------------
+# Make _shared importable when this script is run as __main__.
+sys.path.insert(0, str(REPO_ROOT / "validators"))
+from _shared import morphology as M  # noqa: E402
+from _shared import morph_alignment as MA  # noqa: E402
+
+# ---------------------------------------------------------------------------
 # Hebrew Unicode helpers
 # ---------------------------------------------------------------------------
 
@@ -350,16 +358,89 @@ def has_parallel_ki_series(
 
 
 # ---------------------------------------------------------------------------
+# Verse-grouping helper (mirrors validate_speech_intro_framing.py)
+# ---------------------------------------------------------------------------
+
+_VERSE_REF_RE = re.compile(r"^\d+:\d+\s*$")
+
+
+def _partition_into_verses(lines: list[str]) -> list[tuple[int, list[tuple[int, str]]]]:
+    """Partition file lines into per-verse groups.
+
+    Returns list of (verse_num, [(1-based line_no, raw_line), ...]) tuples.
+    Lines preceding any verse header are discarded (blank preamble only).
+    """
+    groups: list[tuple[int, list[tuple[int, str]]]] = []
+    cur_verse: int | None = None
+    cur_lines: list[tuple[int, str]] = []
+    for i, raw in enumerate(lines):
+        line_no = i + 1
+        s = raw.strip()
+        m = _VERSE_REF_RE.match(s)
+        if m:
+            if cur_verse is not None and cur_lines:
+                groups.append((cur_verse, cur_lines))
+            cur_verse = int(s.split(":")[1])
+            cur_lines = []
+        elif s and cur_verse is not None:
+            cur_lines.append((line_no, raw))
+    if cur_verse is not None and cur_lines:
+        groups.append((cur_verse, cur_lines))
+    return groups
+
+
+# ---------------------------------------------------------------------------
 # Per-file scanner
 # ---------------------------------------------------------------------------
 
 def scan_file(path: Path, verbose: bool = False) -> list[dict]:
-    """Scan one text file for Rule H7 complement-integrity violations."""
+    """Scan one text file for Rule H7 complement-integrity violations.
+
+    Uses TAHOT morph tags (via morph_alignment) when available to confirm that
+    the last token on a line is actually a finite verb before checking the
+    cognition-root membership.  Falls back to skel-only cognition matching when
+    tags are absent or verse alignment fails — preserving prior behaviour.
+    """
     violations = []
     try:
         lines = path.read_text(encoding="utf-8").splitlines()
     except UnicodeDecodeError:
         lines = path.read_text(encoding="utf-8-sig").splitlines()
+
+    # Load TAHOT morph alignment for this chapter (None if morph file absent).
+    chapter_morph = MA.load_chapter_morph(path)
+
+    # Build a lookup: file_line_index (0-based) → [tag_list_per_token]
+    # tag_list_per_token[tok_idx] = list[str] (TAHOT tags for that token)
+    line_token_tags: dict[int, list[list[str]]] = {}
+    if chapter_morph is not None:
+        verse_groups = _partition_into_verses(lines)
+        for verse_num, verse_numbered_lines in verse_groups:
+            content = [
+                (ln, raw) for ln, raw in verse_numbered_lines
+                if not is_skippable(raw)
+            ]
+            if not content:
+                continue
+            ortho_tags = chapter_morph.get(verse_num)
+            if ortho_tags is None:
+                continue
+            verse_text_lines = [raw for _, raw in content]
+            aligned = MA.align_verse_tokens_to_tags(verse_text_lines, ortho_tags)
+            if aligned is None:
+                continue
+            for ci, (ln, _raw) in enumerate(content):
+                # ln is 1-based; store at 0-based index
+                line_token_tags[ln - 1] = aligned[ci]
+
+    def _tag_list_for(line_idx: int, tok_idx: int) -> "list[str] | None":
+        """Return TAHOT tag list for (line_idx, tok_idx), or None on miss."""
+        tl = line_token_tags.get(line_idx)
+        if tl is None:
+            return None
+        if tok_idx < 0 or tok_idx >= len(tl):
+            return None
+        return tl[tok_idx]
 
     for i, line in enumerate(lines):
         if is_skippable(line):
@@ -382,6 +463,17 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
         # --- Gate 2: check if last token is a cognition/volition/causative verb ---
         matched, root = is_cognition_verb(bare_last)
         if not matched:
+            continue
+
+        # --- Gate 2b: tag-aware finite-verb confirmation (suppresses FP from
+        #     nouns that happen to contain a cognition-root substring, e.g.
+        #     דָּבָר "word" containing דבר, יָד "hand" + בין constructs, etc.).
+        #     When TAHOT tags are available, we require the token to be a finite
+        #     verb before treating it as a matrix verb.  When tags are absent,
+        #     we fall through (skel-only path preserved for graceful degradation).
+        last_tok_idx = len(tokens) - 1
+        last_tok_tags = _tag_list_for(i, last_tok_idx)
+        if last_tok_tags is not None and not M.is_finite_verb_token(last_token, tag_list=last_tok_tags):
             continue
 
         # --- Gate 3: find next content line and check if it begins with כִּי ---
