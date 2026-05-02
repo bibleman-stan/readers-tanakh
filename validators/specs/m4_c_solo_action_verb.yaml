@@ -1,0 +1,88 @@
+name: m4_c_solo_action_verb
+rule: M4
+subcase: solo_action_verb
+severity: STRONG-MERGE-CANDIDATE
+description: |
+  Single-token bare wayyiqtol action-verb on its own line — propositionally
+  empty without its DO/complement on the next line. Sister to
+  m4_solo_speech_verb (which covers ויאמר / וידבר etc.) and m4_b_dibber_formula.
+
+  Stan-flagged 2026-05-01 (Exo 18:24 line 113 → 114):
+    Line 113: וַיַּעַשׂ                       (and-he-did — bare verb)
+    Line 114: כֹּל אֲשֶׁר אָמָר׃               (all that he said — DO of action)
+    After:    וַיַּעַשׂ כֹּל אֲשֶׁר אָמָר׃    [V + DO = one ATU]
+
+  Action verbs in the closed list are transitive verbs that require a DO
+  to complete the proposition: עשה (do/make), לקח (take), נתן (give —
+  when DO not recipient-PP follows), בוא-hiph (bring), נכה-hiph (strike),
+  שים (place), שלח (send — non-locus uses).
+
+  Concrete instances (visible in the corpus):
+    - Exo 18:24: וַיַּעַשׂ / כֹּל אֲשֶׁר אָמָר
+    - Common Genesis pattern: וַיַּעַשׂ / כֵּן (and-he-did so)
+    - Many others: וַיִּקַּח / X / Y where bare ויקח opens its own line
+
+  Distinct from m4_solo_speech_verb: that one targets propositionally-
+  empty SPEECH verbs whose complement is a quotation; this one targets
+  propositionally-empty ACTION verbs whose complement is a DO-NP /
+  relative-clause.
+
+  Closed list intentionally tight to start; expand iteratively after FP
+  audit. Wayyiqtol forms only (this is the bare-stranded-narrative-verb
+  shape — qatal stranded is a different class).
+
+trigger:
+  line_n_first_token:
+    skeleton_in:
+      - "ויעש"
+      - "ויעשו"
+      - "ותעש"
+      - "ותעשי"
+      - "ותעשנה"
+      - "ויקח"
+      - "ויקחו"
+      - "ותקח"
+      - "ויבא"          # hiphil "bring", AND qal "come" — qal motion case
+                         # is handled by m2_7 motion-locus; qal is intransitive
+                         # so won't be alone bare on a line very often
+      - "ויבאו"
+      - "ויכה"
+      - "ויכו"
+      - "ויתן"          # may overlap with m2_pp / motion territory; trigger
+                         # `next_line_is_*` guards prevent double-firing
+      - "ויתנו"
+      - "וישם"
+      - "וישימו"
+  line_n_last_token:
+    skeleton_in:
+      - "ויעש"
+      - "ויעשו"
+      - "ותעש"
+      - "ותעשי"
+      - "ותעשנה"
+      - "ויקח"
+      - "ויקחו"
+      - "ותקח"
+      - "ויבא"
+      - "ויבאו"
+      - "ויכה"
+      - "ויכו"
+      - "ויתן"
+      - "ויתנו"
+      - "וישם"
+      - "וישימו"
+  line_n_max_prosodic_words: 1
+  combined_max_prosodic_words: 12   # DO + modifiers may be moderately long;
+                                      # cap below speech-complement-25 because
+                                      # action DOs aren't typically extended
+                                      # quotations
+
+guards:
+  - poetic_register
+  - next_line_is_vav_coord_pp     # block re-absorbing post-S1-split coord-PP
+  - next_line_is_vav_coord_np     # block re-absorbing post-S2-split coord-NP
+  - next_line_is_wayyiqtol        # block re-absorbing post-S3/S4-split
+                                    # wayyiqtol-headed lines
+
+annotation_template: "Solo action verb stranded — propositionally empty without complement ({pwc} prosodic words combined)"
+suggested_action: MERGE
