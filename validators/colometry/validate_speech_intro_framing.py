@@ -394,10 +394,15 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
         # with TAHOT tags then confirms the token is truly a finite verb (not a
         # homographic noun). When tags are absent, the skeleton match alone
         # controls (skel-fallback), preserving prior behaviour.
+        # Cross-verse guard (2026-05-02): suppress when the verb ends with sof
+        # pasuq (׃) — the "next content" is in the FOLLOWING verse and merging
+        # would cross the verse boundary, eating the verse-reference label.
+        # Job's answering-formula (`וַיַּעַן X / וַיֹּאמַֽר׃` ending verse N,
+        # then verse N+1 begins the speech) is the canonical case.
         elif len(bare_tokens) == 1 and bare_tokens[0] in BARE_SPEECH_VERB_SKELETONS and (
             _tag_list_for(i, 0) is None
             or M.is_finite_verb_token(tokens[0], tag_list=_tag_list_for(i, 0))
-        ):
+        ) and not line.rstrip().endswith("׃"):
             next_content = ""
             next_content_line_num = None
             for j in range(i + 1, len(lines)):
