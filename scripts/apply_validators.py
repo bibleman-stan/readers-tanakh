@@ -119,6 +119,25 @@ ADOPTED_VALIDATORS: dict[str, AdoptionSpec] = {
     "validate_short_orphan_line": {
         "STRONG-MERGE-CANDIDATE",
     },
+    # ── Adopted 2026-05-04 per canon §0.2.1 cleanup sweep ──────────────
+    # Validators that have been emitting STRONG-MERGE-CANDIDATE corpus-wide
+    # but were never in ADOPTED_VALIDATORS — their STRONG findings have
+    # been sitting un-applied. Adopting closes the registry-coupling drift
+    # named in §0.2.1. Each adoption represents a designer-confidence claim:
+    # the validator emits STRONG only on patterns its author considered
+    # high-confidence (otherwise the finding would be REVIEW-REQUIRED).
+    "validate_compound_preposition_object": {"STRONG-MERGE-CANDIDATE"},
+    "validate_verb_object_bond": {"STRONG-MERGE-CANDIDATE"},
+    "validate_bare_construct_head": {"STRONG-MERGE-CANDIDATE"},
+    "validate_bare_discourse_particle": {"STRONG-MERGE-CANDIDATE"},
+    "validate_blessed_cursed_chain": {"STRONG-MERGE-CANDIDATE"},
+    "validate_bonded_pair": {"STRONG-MERGE-CANDIDATE"},
+    "validate_complement_integrity": {"STRONG-MERGE-CANDIDATE"},
+    "validate_coordinated_object": {"STRONG-MERGE-CANDIDATE"},
+    "validate_cross_verse_continuity": {"STRONG-MERGE-CANDIDATE"},
+    "validate_genealogy_uniformity": {"STRONG-MERGE-CANDIDATE"},
+    "validate_interrogative_clause": {"STRONG-MERGE-CANDIDATE"},
+    "validate_oath_formula": {"STRONG-MERGE-CANDIDATE"},
 }
 
 # ---------------------------------------------------------------------------
@@ -130,6 +149,8 @@ ADOPTED_VALIDATORS: dict[str, AdoptionSpec] = {
 ALL_VALIDATORS: list[tuple[str, str]] = [
     ("validators/syntax/validate_maqqef_integrity.py",     "validate_maqqef_integrity"),
     ("validators/syntax/validate_line_final_tokens.py",    "validate_line_final_tokens"),
+    ("validators/syntax/validate_compound_preposition_object.py", "validate_compound_preposition_object"),
+    ("validators/syntax/validate_verb_object_bond.py",     "validate_verb_object_bond"),
     ("validators/colometry/validate_speech_intro_framing.py", "validate_speech_intro_framing"),
     ("validators/colometry/validate_wayehi_protasis.py",   "validate_wayehi_protasis"),
     # Partially adopted: divine_name subcase only; article_rectum + common_construct_ending
@@ -138,7 +159,17 @@ ALL_VALIDATORS: list[tuple[str, str]] = [
     # M4/subject-pronoun-orphan STRONG-MERGE arm only — other M4 patterns
     # remain REVIEW-REQUIRED for editorial judgment.
     ("validators/colometry/validate_short_orphan_line.py", "validate_short_orphan_line"),
-    # Not yet adopted — run for reporting only:
+    # ── Adopted 2026-05-04 §0.2.1 cleanup sweep ──
+    ("validators/colometry/validate_bare_construct_head.py",   "validate_bare_construct_head"),
+    ("validators/colometry/validate_bare_discourse_particle.py", "validate_bare_discourse_particle"),
+    ("validators/colometry/validate_blessed_cursed_chain.py",  "validate_blessed_cursed_chain"),
+    ("validators/colometry/validate_bonded_pair.py",           "validate_bonded_pair"),
+    ("validators/colometry/validate_coordinated_object.py",    "validate_coordinated_object"),
+    ("validators/colometry/validate_cross_verse_continuity.py", "validate_cross_verse_continuity"),
+    ("validators/colometry/validate_genealogy_uniformity.py",  "validate_genealogy_uniformity"),
+    ("validators/colometry/validate_interrogative_clause.py",  "validate_interrogative_clause"),
+    ("validators/colometry/validate_oath_formula.py",          "validate_oath_formula"),
+    # Run for reporting only (no STRONG):
     ("validators/syntax/validate_discourse_particles.py",  "validate_discourse_particles"),
     ("validators/syntax/validate_complement_integrity.py", "validate_complement_integrity"),
 ]

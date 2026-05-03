@@ -1106,6 +1106,10 @@ def process_chapter(book: str, chapter_filename: str, dry_run: bool) -> dict:
         out_lines.append(new_line)
 
     out_text = "\n".join(out_lines)
+    # File-level cleanup: collapse 3+ consecutive newlines to 2 (i.e., at most
+    # one blank line between content blocks). Stray double-blanks between
+    # verses leak in from upstream; collapse here so the corpus is uniform.
+    out_text = re.sub(r"\n\n\n+", "\n\n", out_text)
     # Preserve original trailing-newline count exactly.
     orig_trailing = len(text) - len(text.rstrip("\n"))
     out_text = out_text.rstrip("\n") + ("\n" * orig_trailing)
