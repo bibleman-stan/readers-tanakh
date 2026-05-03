@@ -2,7 +2,8 @@
 masa | devar | Yahweh | el | Yisra'el | beyad | Mal'akhi
 
 1:2
-ahavti | etkhem | amar | Yahweh
+ahavti | etkhem
+amar | Yahweh
 va'amartem | bamah | ahavtanu
 halo | ach | Esav | Leya'ako | ne'um | Yahweh | va'ohav | et | Ya'ako
 
@@ -40,12 +41,14 @@ amar | Yahweh | tzeva'ot
 1:9
 ve'atah | chalu | na | fenei | el | vichanenu
 miyedkhem | hayetah | zot
-hayisa | mikem | panim | amar | Yahweh | tzeva'ot
+hayisa | mikem | panim
+amar | Yahweh | tzeva'ot
 
 1:10
 mi | gam | bakhem | veyisgor | delatayim
 velo | ta'iru | mizbechi | chinam
-ein | li | chefetz | bakhem | amar | Yahweh | tzeva'ot
+ein | li | chefetz | bakhem
+amar | Yahweh | tzeva'ot
 uminchah | lo | ertzeh | miyedkhem
 
 1:11
@@ -62,7 +65,8 @@ venivo
 nivzeh | akhelo
 
 1:13
-va'amartem | hineh | matela'ah | vehipachtem | oto | amar | Yahweh | tzeva'ot
+va'amartem | hineh | matela'ah | vehipachtem | oto
+amar | Yahweh | tzeva'ot
 vahavetem | gazul | ve'et | hapiseach | ve'et | hacholeh
 vahavetem | et | haminchah
 ha'ertzeh | otah | miyedkhem
