@@ -2207,6 +2207,16 @@ def is_bare_noun_token(token: str, tag_list: "list[str] | None" = None) -> bool:
         return False
     if len(s) >= 3 and s[0] == "ו" and s[1:] in PREP_SKELETONS:
         return False
+    # Suffixed prep (אֵלָיו, עָלָיו, לְפָנַי) — internalized object via Sp* suffix.
+    # is_bare_prep_token returns False for these (they're not "stranded"), so
+    # we explicitly exclude here. Closes pron-suffix tightener gap (Issue B):
+    # ~1,500+ FP/skel-fallback-noun-classifications eliminated when tag_list
+    # is absent. Tag-driven path (is_bare_prep_token + Sp* check) already
+    # handled this; the redundancy here is the skel-fallback safety net.
+    if s in PREP_WITH_SUFFIX_SKELETONS:
+        return False
+    if len(s) >= 3 and s[0] == "ו" and s[1:] in PREP_WITH_SUFFIX_SKELETONS:
+        return False
     if is_bare_prep_token(token, tag_list=tag_list):
         return False
     if is_vav_coord_pp_head(token):
