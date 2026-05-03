@@ -831,6 +831,84 @@ def pass3_vs_reorder(line: str, in_poetic: bool) -> str:
 
 
 # ---------------------------------------------------------------------------
+# Pass 7 — divine-title capitalization
+#   "god" → "God" (singular always; plural "gods" untouched)
+#   "lord" → "Lord" only in clear divine contexts (avoids capitalizing
+#            human-master "my lord" in Sarah/Abraham, servant/Laban, etc.)
+# ---------------------------------------------------------------------------
+
+# Tokens (case-folded, punctuation-stripped) that, when adjacent to "lord",
+# unambiguously mark divine reference.
+_LORD_DIVINE_PREV = {
+    "the", "says", "utterance", "yahweh", "and",  # "and lord" rare but divine
+}
+_LORD_DIVINE_NEXT = {
+    "yahweh", "yhwh",
+}
+
+# Tokens that, when preceding "god", indicate generic / foreign / negated
+# reference where capitalization would be inappropriate (Isa 44 idolatry
+# polemic, "I am the only God" exclusivity claims, etc.).
+_GOD_LOWERCASE_PREV = {
+    "a", "an", "any", "no", "not", "another", "strange", "other",
+    "false", "foreign", "every", "one",
+}
+
+# Per-token splitter that preserves non-word prefix + suffix (parens, punct).
+_TOKEN_SPLIT_RE = re.compile(r"^(\W*)(\w+)(\W*)$")
+
+
+def _strip_clean(tok: str) -> str:
+    """Lowercased, punctuation-stripped form of a token, for context lookups."""
+    return re.sub(r"[^\w-]", "", tok).lower()
+
+
+def pass7_capitalize_divine_titles(line: str) -> str:
+    """Capitalize singular 'god' → 'God' always; capitalize 'lord' → 'Lord'
+    only in clear divine contexts.
+
+    Plural 'gods' / 'lords' are left untouched (foreign-deity references).
+    Token-level pass; preserves any non-word prefix/suffix (parens, punct).
+
+    Idempotent: capitalized forms don't re-match the lowercase patterns.
+    """
+    tokens = line.split()
+    if not tokens:
+        return line
+
+    out = []
+    for i, tok in enumerate(tokens):
+        m = _TOKEN_SPLIT_RE.match(tok)
+        if not m:
+            out.append(tok)
+            continue
+        pre, word, post = m.group(1), m.group(2), m.group(3)
+        wl = word.lower()
+
+        if wl == "god":
+            prev_clean = _strip_clean(tokens[i - 1]) if i > 0 else ""
+            if prev_clean in _GOD_LOWERCASE_PREV:
+                out.append(tok)
+            else:
+                out.append(f"{pre}God{post}")
+        elif wl == "lord":
+            prev_clean = _strip_clean(tokens[i - 1]) if i > 0 else ""
+            next_clean = _strip_clean(tokens[i + 1]) if i + 1 < len(tokens) else ""
+            is_divine = (
+                prev_clean in _LORD_DIVINE_PREV
+                or next_clean in _LORD_DIVINE_NEXT
+            )
+            if is_divine:
+                out.append(f"{pre}Lord{post}")
+            else:
+                out.append(tok)
+        else:
+            out.append(tok)
+
+    return " ".join(out)
+
+
+# ---------------------------------------------------------------------------
 # Pass 4 — whitespace cleanup
 # ---------------------------------------------------------------------------
 
@@ -947,6 +1025,7 @@ def normalize_line(line: str, in_poetic: bool) -> str:
     s = line
     s = pass1_suffix_reorder(s)
     s = pass2_construct_of(s)
+    s = pass7_capitalize_divine_titles(s)  # before pass3 so "Yahweh your God" matches COMPOUND_PROPER_SUBJECTS
     s = pass3_vs_reorder(s, in_poetic)
     s = pass4_whitespace(s)
     s = pass6_v_medial_reorder(s, in_poetic)
