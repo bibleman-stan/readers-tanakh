@@ -192,12 +192,21 @@ def apply_to_book(corpus_dir: Path, runner: SpecRunner, book_dir_name: str,
         if passes > MAX_PASSES:
             hot = [(k, v) for k, v in per_verse_touch_count.items() if len(v) > 5]
             hot.sort(key=lambda x: -len(x[1]))
-            print(f"[RUNAWAY] {book_dir_name}: real oscillation — exceeded MAX_PASSES={MAX_PASSES} "
-                  f"(files were written each pass; these are genuine oscillators, not dry-run artifacts)",
-                  file=sys.stderr)
-            for (book, ch, vs), touches in hot[:10]:
-                last5 = touches[-5:]
-                print(f"  {book} {ch}:{vs} touched {len(touches)}x — last 5: {last5}", file=sys.stderr)
+            # Surface the RUNAWAY to BOTH stdout and stderr with a prominent
+            # banner so dispatchers / cluster agents / log-tailers cannot
+            # accidentally miss it. Per H5 carry-forward (handoffs/14):
+            # silent-bail on RUNAWAY exit code 2 was the failure mode.
+            banner = "=" * 70
+            for stream in (sys.stdout, sys.stderr):
+                print(banner, file=stream)
+                print(f"[RUNAWAY] {book_dir_name}: real oscillation — exceeded MAX_PASSES={MAX_PASSES}",
+                      file=stream)
+                print(f"  (files were written each pass; these are genuine oscillators, not dry-run artifacts)",
+                      file=stream)
+                for (book, ch, vs), touches in hot[:10]:
+                    last5 = touches[-5:]
+                    print(f"  {book} {ch}:{vs} touched {len(touches)}x — last 5: {last5}", file=stream)
+                print(banner, file=stream)
             sys.exit(2)
 
         # ── PHASE A: SPLITS ─────────────────────────────────────────────

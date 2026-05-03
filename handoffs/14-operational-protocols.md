@@ -333,7 +333,7 @@ This wasted a full session-arc cycle: 2026-05-02 dispatched the m4_e cognition-v
 **Discipline going forward:**
 - Dry-run is a single-pass preview. To detect oscillation, re-run without `--dry-run` against a scratch copy of the corpus (under `C:/tmp/`).
 - When investigating a "RUNAWAY" report, FIRST check whether the originating run was dry-run. If so, the verses named in the hot-list are not necessarily oscillators — they may just be the first verses any spec fires on.
-- Carry-forward (separate cycle): cluster-cascade dispatcher silently bails on apply_specs RUNAWAY exit (code 2) without surfacing the warning to human-visible output. The dispatcher prompt should explicitly capture and report `[RUNAWAY]` lines from stderr. Until fixed, post-cascade verification on a couple of representative books in the main thread (non-dry-run) is essential before assuming cluster cascades converged cleanly.
+- **Resolved 2026-05-04**: cluster-cascade silent-bail. `apply_specs.py` now prints the `[RUNAWAY]` banner to BOTH stdout and stderr, framed by a 70-char `=` separator on each side. Cluster-dispatch agents that capture stdout (the default Bash tool behavior) will see the RUNAWAY prominently. Exit code remains 2.
 
 ### H6. Verification-driven discovery is a first-class discovery method
 
