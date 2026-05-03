@@ -1486,8 +1486,11 @@ def wayyiqtol_mid_line_split_positions(line: str) -> list[int]:
             continue
         s = skel(t)
         # wayyiqtol: ו + (י|ת|א|נ) + verb stem
+        # Length floor 4 matches is_wayyiqtol_token (L730): shortest real
+        # wayyiqtol is ויהי (4 chars). At length 3, "ואל" (vav-prep אל) and
+        # "ואת" (vav-DO-marker) false-match.
         if (
-            len(s) >= 3
+            len(s) >= 4
             and s[0] == "ו"
             and s[1] in YIQTOL_PREFIXES
         ):
@@ -1785,8 +1788,11 @@ def multi_wayyiqtol_clause_split_positions(
             continue
         # Skel fallback
         s = skel(t)
+        # Length floor 4 matches is_wayyiqtol_token (L730): shortest real
+        # wayyiqtol is ויהי (4 chars). At length 3, "ואל" (vav-prep אל) and
+        # "ואת" (vav-DO-marker) false-match.
         if (
-            len(s) >= 3
+            len(s) >= 4
             and s[0] == "ו"
             and s[1] in YIQTOL_PREFIXES
         ):
@@ -1938,9 +1944,12 @@ def obligatory_pp_complement_split_positions(
                 break
             continue
         # skel fallback
+        # Length floor 4 matches is_wayyiqtol_token (L730): shortest real
+        # wayyiqtol is ויהי (4 chars). At length 3, "ואל" (vav-prep אל) and
+        # "ואת" (vav-DO-marker) false-match.
         s = skel(toks[i])
         if (
-            len(s) >= 3
+            len(s) >= 4
             and s[0] == "ו"
             and s[1] in YIQTOL_PREFIXES
             and s[1:] not in YIQTOL_KNOWN_NOUNS
