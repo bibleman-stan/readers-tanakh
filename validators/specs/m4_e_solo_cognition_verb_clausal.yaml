@@ -1,0 +1,69 @@
+name: m4_e_solo_cognition_verb_clausal
+rule: M4
+subcase: solo_cognition_verb_clausal
+severity: STRONG-MERGE-CANDIDATE
+description: |
+  Short cognition/perception clause (V-medial, opens with כי) +
+  כי-complement clause = one ATU. Mirror of m4_solo_speech_verb but for
+  cognition predicates (ידע / שמע / ראה qal) when their כי-clause object
+  appears on the next line.
+
+  Stan-flagged 2026-05-02 (Gen 3:5 line 1):
+    Line 1: כִּי יֹדֵעַ אֱלֹהִים           (for-God-knows ...)
+    Line 2: כִּי בְּיוֹם אֲכָלְכֶם מִמֶּנּוּ ...   (that in-the-day ...)
+    After:  כִּי יֹדֵעַ אֱלֹהִים כִּי בְּיוֹם אֲכָלְכֶם ...   [V + complement-clause]
+
+  The matrix "God-knows" is propositionally incomplete on its own — needs
+  the כי-complement clause that specifies what God knows. Splitting them
+  is an over-break by the No-Anchor Test (canon §5.0): line 1 lacks an
+  anchor (the embedded clause) for its propositional content.
+
+  Trigger restricts to `line N opens with כי` to:
+    (a) Distinguish from Gen-1 cosmogonic refrain (`וַיַּרְא אֱלֹהִים אֶת־X
+        / כִּי־טוֹב`) — line N opens with the verb, NOT with כי, so
+        intentionally excluded
+    (b) Anchor on the discourse marker that introduces the embedded
+        proposition (matches the prevailing pattern in v1 baseline)
+
+  Tag-driven qal-stem check on the cognition verb prevents the וירא
+  qal-vs-niphal homograph (qal "saw" vs niphal "appeared") — only qal
+  perception fires.
+
+  Tier-1 closed list (deferred זכר / שכח / הבין / הכיר which need
+  separate stem-tag disambiguation due to skel collisions; Tier-2 is
+  next-cycle work).
+
+  Promoted from deferred-oscillation 2026-05-03: Agent verification
+  proved m4_e fires 0 times on current v2 (Gen 3:5 already merged
+  by hand-edit) and fires correctly once on v1 baseline. The
+  "MAX_PASSES=25 RUNAWAY" attribution was a dry-run-mode artifact in
+  apply_specs.py (pass N reads unchanged file), not a real oscillation.
+  m4_e itself is causally innocent — promote-as-is. Real S4↔M2
+  oscillation surface is unrelated and tracked separately.
+
+trigger:
+  line_n_first_token:
+    skeleton_in: ["כי"]            # line N must open with כי
+                                     # (excludes Gen 1 וירא refrain)
+  line_n_anywhere:
+    has_cognition_verb_qal: true   # tag-driven qal-stem cognition verb
+                                     # (ידע / שמע / ראה family)
+  line_n_max_prosodic_words: 3     # short matrix: כי + V + S
+  line_n1_first_token:
+    skeleton_in: ["כי"]            # complement clause opens with כי
+  combined_max_prosodic_words: 12  # complement clauses can run moderately long
+
+guards:
+  - poetic_register
+  - prev_line_incomplete           # ensure line N is genuinely the head
+                                     # of a new clausal unit
+  - both_lines_have_finite_verb    # if N already has a finite verb
+                                     # (beyond the participle), the
+                                     # complement is for a DIFFERENT
+                                     # matrix (don't merge)
+  - next_line_is_vav_coord_pp
+  - next_line_is_vav_coord_np
+  - next_line_is_wayyiqtol
+
+annotation_template: "Solo cognition verb + כי-complement clause merge ({pwc} prosodic words)"
+suggested_action: MERGE
