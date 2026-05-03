@@ -2228,6 +2228,10 @@ def is_bare_noun_token(token: str, tag_list: "list[str] | None" = None) -> bool:
         return False
     if s in VOCATIVE_PARTICLES:
         return False
+    # Pronouns / demonstratives / subordinators / negations — top remaining
+    # skel-fallback FP class per audit (אֲשֶׁר 3,310 / כִּי 2,526 / etc.).
+    if s in NON_NOUN_SKELETONS:
+        return False
     # Bound-prep + content (e.g. בְּעִיר) — not a bare noun
     if len(s) >= 2 and s[0] in BOUND_PREP_PREFIXES and not is_finite_verb_skel(s):
         if s[:2] not in NON_PREP_2CHAR_PREFIX:
@@ -2574,6 +2578,42 @@ def line_ends_in_np(line: str) -> bool:
 DISCOURSE_PARTICLES = {"הנה", "אף", "עלכן", "לכן", "ועתה", "אז", "עתה", "גם", "רק", "אכן"}
 
 VOCATIVE_PARTICLES = {"הוי", "אוי", "אהה", "אנא"}
+
+# Skeletons that are unambiguously NON-nouns when standing as bare tokens —
+# pronouns, demonstratives, subordinators, negations, particles. The top
+# FP class for is_bare_noun_token's skel-fallback per
+# scripts/audit_morphology_vs_tahot.py: אֲשֶׁר 3,310 / כִּי 2,526 /
+# וְלֹא 922 / הוּא 796 / הַזֶּה 690 — all leak through as bare-NPs in
+# spec_runner contexts where tag_list isn't passed. Skel-fallback safety net;
+# tag-driven path (TAHOT Pp/Pd/C tags) already handles these correctly.
+NON_NOUN_SKELETONS = {
+    # Relative pronoun
+    "אשר",
+    # Independent personal pronouns
+    "הוא", "היא", "הם", "המה", "הן", "הנה",
+    "אתה", "את", "אתם", "אתן", "אתנה",
+    "אני", "אנכי", "אנחנו",
+    # Vav-prefixed personal pronouns
+    "והוא", "והיא", "והם", "והנה",
+    # Demonstratives (with and without article)
+    "זה", "זאת", "זו", "אלה", "אל",
+    "הזה", "הזאת", "האלה", "ההוא", "ההיא", "ההם", "ההנה",
+    # Vav-prefixed demonstratives
+    "וזה", "וזאת", "ואלה",
+    # Subordinators / complementizers
+    "כי", "אם", "פן", "למען", "אשר", "כאשר", "אך", "אולם",
+    # Negations
+    "לא", "אל", "ולא", "ואל", "בל", "בלי", "בלתי", "אין", "ואין",
+    # Discourse particles already in DISCOURSE_PARTICLES — listed for clarity
+    # (membership checked against this set is faster than three lookups)
+    "הנה", "אף", "ואף", "גם", "וגם", "רק", "אכן", "אז",
+    # Vocatives
+    "הוי", "אוי", "אהה", "אנא",
+    # Existential
+    "יש", "ויש",
+    # Affirmative / interjection
+    "הן", "כן", "וכן",
+}
 
 # Clause-completing adverbial / temporal particles. Distinct from
 # DISCOURSE_PARTICLES (which are sentence-introducing/topic-shifting):

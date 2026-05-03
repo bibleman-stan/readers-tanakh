@@ -360,6 +360,171 @@ def compute_h5b_short_frame_split(
 
 
 # ---------------------------------------------------------------------------
+# H5c trailing-attribution split (Isa 40:1 pattern)
+# ---------------------------------------------------------------------------
+# Detects lines where speech CONTENT precedes a post-content speech-attribution
+# (e.g., `נַחֲמ֥וּ נַחֲמ֖וּ עַמִּ֑י יֹאמַ֖ר אֱלֹהֵיכֶֽם׃`). The trailing
+# attribution `<speech-verb> <subject-NP>` is its own ATU (announcement of
+# who is speaking) and must be split from the preceding content. Distinct
+# from H5b (leading speech-frame) — H5c targets the post-content arm.
+
+# Expanded skeleton set covering qatal + yiqtol + nominal speech forms
+# that appear as trailing attributions (vs. the wayyiqtol-only set used
+# for leading frames). Includes prophetic oracle marker `נאם`.
+H5C_TRAILING_VERB_SKELETONS = frozenset({
+    "יאמר",     # yiqtol qal 3ms — he says/will say (Isa 40:1 motivating)
+    "אמר",      # qatal qal 3ms — he said
+    "יאמרו",    # yiqtol qal 3mp — they say
+    "אמרו",     # qatal qal 3mp — they said
+    "נאם",      # nominal — oracle of (also a leading prophetic formula)
+    "דבר",      # qatal qal 3ms — he spoke (also: noun "word")
+    "ידבר",     # yiqtol piel 3ms — he speaks/will speak
+})
+
+# Subordinate-clause introducers that disqualify the speech-verb as a
+# trailing attribution (it would belong to a subordinate clause instead).
+H5C_SUBORDINATE_INTRODUCERS = frozenset({
+    "כי", "פן", "למען", "אשר", "כאשר",
+})
+
+# Divine-name closed-list fallback when TAHOT subject confirmation is
+# unavailable. These are the canonical trailing-attribution subjects.
+H5C_DIVINE_NAME_SKELETONS = frozenset({
+    "יהוה",
+    "אלהים",
+    "אלהיכם",
+    "אלהינו",
+    "אלהי",
+    "אדני",
+    "צבאות",
+})
+
+
+def compute_h5c_trailing_attribution_split(
+    tokens: list[str],
+    bare_tokens: list[str],
+    line_token_tags: list[list[str]] | None,
+) -> tuple[int, str]:
+    """Compute split position for H5c trailing-attribution lines.
+
+    Returns (split_pos, mode) where:
+      - split_pos = 0  → no trailing-attribution split applies
+      - split_pos > 0  → token-index where to split (verb position)
+      - mode           → "tag-confirmed" (STRONG) | "skel-fallback" (REVIEW)
+
+    Trigger pattern (caller verifies basic length):
+      <≥2 substantive content tokens> <speech-verb> <subject-NP-tail>
+    where the speech verb sits at len(bare_tokens)-2 (1-tok tail) or
+    len(bare_tokens)-3 (2-tok tail; e.g., sof-pasuq-bearing subject).
+    """
+    n = len(bare_tokens)
+    if n < 4:
+        return 0, ""
+
+    # Strip a trailing sof-pasuq-only token if present (rare, but defensive)
+    # The sof-pasuq glyph ׃ is normally attached to the last word's te'amim,
+    # so n stays the same; no separate handling required here.
+
+    # Scan candidate verb positions: n-2 (1-tok tail) then n-3 (2-tok tail)
+    for verb_idx in (n - 2, n - 3):
+        if verb_idx < 2:
+            continue  # need ≥2 content tokens before the verb
+        verb_skel = bare_tokens[verb_idx]
+        if verb_skel not in H5C_TRAILING_VERB_SKELETONS:
+            continue
+
+        # FP guard: subordinate-clause introducer in pre-verb tokens.
+        pre_verb = bare_tokens[:verb_idx]
+        if any(t in H5C_SUBORDINATE_INTRODUCERS for t in pre_verb):
+            return 0, ""
+
+        # FP guard: leading speech-verb already handled by H5b — this line
+        # would have been routed there instead.
+        if pre_verb and pre_verb[0] in BARE_SPEECH_VERB_SKELETONS:
+            return 0, ""
+
+        # FP guard: prophetic formula `כה אמר ...` even when not at line start
+        # (e.g., `לכן כה אמר אדני יהוה`). When `כה` immediately precedes the
+        # verb, it's a leading prophetic frame, not a trailing attribution.
+        if verb_idx >= 1 and pre_verb[-1] == "כה":
+            return 0, ""
+
+        # FP guard: recipient PP follows the verb (אל־X / ל־X) — narrative
+        # leading-frame pattern (Josh 5:2 `בעת ההיא אמר יהוה אל־יהושע`).
+        # If any post-verb token is a recipient PP, this is leading not trailing.
+        for k in range(verb_idx + 1, len(tokens)):
+            ktags = line_token_tags[k] if (line_token_tags and k < len(line_token_tags)) else None
+            if _is_recipient_pp(tokens[k], tag_list=ktags):
+                return 0, ""
+
+        # Tag-confirm verb-hood (when available): rules out homograph nouns
+        # like `דבר` ("word"), `נאם` borderline cases.
+        verb_tags = None
+        if line_token_tags and verb_idx < len(line_token_tags):
+            verb_tags = line_token_tags[verb_idx]
+        if verb_tags is not None:
+            # `נאם` is a noun in TAHOT (oracle); accept it as trailing-attr
+            # head even without finite-verb confirmation.
+            if verb_skel != "נאם" and not M.is_finite_verb_token(
+                tokens[verb_idx], tag_list=verb_tags
+            ):
+                continue
+
+        # FP guard: post-verb tokens contain a finite verb (would be speech
+        # content, not subject). Tag-driven test only — skel-fallback would
+        # be too noisy here.
+        post_verb_tokens = tokens[verb_idx + 1:]
+        post_finite = False
+        if line_token_tags:
+            for k in range(verb_idx + 1, len(tokens)):
+                if k < len(line_token_tags):
+                    pt = line_token_tags[k]
+                    if pt and M.is_finite_verb_token(tokens[k], tag_list=pt):
+                        post_finite = True
+                        break
+        if post_finite:
+            continue
+
+        # Subject test: require either (a) a proper-noun (Np) head in the
+        # post-verb tail (tag-confirmed → STRONG), or (b) a divine-name skel
+        # match in the closed list (→ STRONG when also tag-Nc, REVIEW
+        # otherwise). Generic Nc alone is insufficient — too noisy
+        # (Isa 45:24 `אָמַר צְדָקוֹת וָעֹז` was a confirmed FP).
+        post_bare = bare_tokens[verb_idx + 1:]
+        divine_name_match = any(
+            pb.rstrip("׃") in H5C_DIVINE_NAME_SKELETONS for pb in post_bare
+        )
+
+        np_subject = False
+        if line_token_tags:
+            for k in range(verb_idx + 1, len(tokens)):
+                ktags = line_token_tags[k] if k < len(line_token_tags) else None
+                if not ktags:
+                    continue
+                # Look for an Np (proper noun) head morpheme in the tag chain.
+                for tag in ktags:
+                    for morpheme in tag.split("/"):
+                        m = _strip_h_prefix(morpheme)
+                        if m.startswith("Np"):
+                            np_subject = True
+                            break
+                    if np_subject:
+                        break
+                if np_subject:
+                    break
+
+        if np_subject:
+            return verb_idx, "tag-confirmed"
+
+        if divine_name_match:
+            return verb_idx, "skel-fallback"
+
+        # No subject confirmation — skip this verb_idx, try next.
+
+    return 0, ""
+
+
+# ---------------------------------------------------------------------------
 # Path-1 carve-out classifier (annotation-only — no severity change)
 # ---------------------------------------------------------------------------
 
@@ -750,6 +915,53 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
                     "leemor_pos": None,
                     "split_position": split_pos,
                     "path1_carveout": carveout,
+                })
+
+        # --- H5c trailing-attribution check: <content> + <speech-verb> + <subject-NP-tail> ---
+        # Per spec (post-Isa-40:1 audit): the post-content speech-frame is its
+        # own ATU. Distinct from H5b (leading frame) — this targets lines like
+        # `נַחֲמ֥וּ נַחֲמ֖וּ עַמִּ֑י יֹאמַ֖ר אֱלֹהֵיכֶֽם׃` where the attribution
+        # tail merges with preceding content. Skips prophetic-formula leads
+        # (כה אמר ...) — those are handled by the formula carve-out.
+        elif (
+            len(bare_tokens) >= 4
+            and not is_prophetic_formula_line(bare_tokens)
+            and bare_tokens[0] not in BARE_SPEECH_VERB_SKELETONS
+            and LEEMOR_SKELETON not in bare_tokens
+        ):
+            line_tags = line_token_tags.get(i)
+            split_pos, mode = compute_h5c_trailing_attribution_split(
+                tokens, bare_tokens, line_tags
+            )
+            if split_pos > 0:
+                # Divine-name closed list (יהוה / אלהים / אלהיכם / אדני /
+                # צבאות) is a tight sufficient filter for "post-verb token
+                # is the speaker" — these are unambiguously YHWH references
+                # in nominal-subject position. Promote to STRONG to honor
+                # mechanical-apply discipline (vs review-queue accumulation).
+                # Tag-confirmed Np remains STRONG.
+                if mode == "tag-confirmed":
+                    severity = "STRONG-SPLIT-CANDIDATE"
+                    mode_note = "tag-confirmed subject"
+                else:
+                    severity = "STRONG-SPLIT-CANDIDATE"
+                    mode_note = "divine-name closed-list subject"
+                violations.append({
+                    "file": path.name,
+                    "file_path": path,
+                    "line_num": line_no,
+                    "rule": "H5c/trailing-attribution",
+                    "severity": severity,
+                    "brief": (
+                        f"trailing speech-attribution at token {split_pos} "
+                        f"({tokens[split_pos]}) merged with preceding content "
+                        f"— split before verb per H5c [{mode_note}]"
+                    ),
+                    "line": line.rstrip(),
+                    "next_line": "",
+                    "next_line_num": None,
+                    "leemor_pos": None,
+                    "split_position": split_pos,
                 })
 
         # --- Solo speech-verb check: line is exactly ONE bare speech-verb token ---
