@@ -46,6 +46,12 @@ guards:
                                         # complete ATUs, NOT stranded bare-NP
                                         # complements. Motivating case: Isa 40:6
                                         # כָּל־הַבָּשָׂר חָצִיר.
+  - next_line_is_interrogative_clause  # Path 1 extension (§5 H5b): interrogative
+  - next_line_is_imperative_clause           # Path 1 H5b — block re-merge of propositionally-complete content
+                                        # clauses on N+1 are propositionally complete
+                                        # ATUs; מַה passes is_bare_noun_token but is
+                                        # not a stray complement. Motivating case:
+                                        # Jonah 1:6/1:8 מַה־לְּךָ נִרְדָּם.
 
 annotation_template: "M2 verb + bare-NP rebond (combined {pwc} prosodic words)"
 suggested_action: MERGE

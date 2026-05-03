@@ -2216,6 +2216,127 @@ def is_bare_noun_token(token: str, tag_list: "list[str] | None" = None) -> bool:
     return True
 
 
+INTERROGATIVE_PARTICLE_SKELETONS: frozenset[str] = frozenset({
+    "מה",    # what / why (מָה / מַה / מֶה)
+    "מי",    # who
+    "מתי",   # when
+    "איה",   # where is / where are (אַיֵּה)
+    "איך",   # how (אֵיךְ)
+    "למה",   # why (לָמָּה / לָמָה)
+    "מדוע",  # why / for what reason
+})
+
+
+def is_interrogative_clause_opener(line: str) -> bool:
+    """True if line begins with an interrogative pronoun/particle.
+
+    Interrogative clauses are propositionally complete ATUs (a Q-act
+    predicates a complete inquiry-event). M2 merge specs that target
+    'bare-NP after finite verb' must not absorb an interrogative-headed
+    clause as if it were a stray bare-NP complement.
+
+    Catches: מָה אֶקְרָא?, מִי הוּא?, לָמָה זֶּה?, מַה־לְּךָ נִרְדָּם?
+    Does NOT catch: ה- interrogative prefix (collides with definite article).
+
+    Motivating case: Jonah 1:6 / 1:8 — וַיֹּאמֶר לוֹ | מַה־לְּךָ נִרְדָּם.
+    M2 merge trigger sees מַה as bare_noun (passes exclusion checks), absorbing
+    the interrogative clause back onto the speech-frame line. Discovered via
+    Path 1 smoke-test on Latter Prophets cluster (2026-05-02).
+    """
+    toks = line.split()
+    if not toks:
+        return False
+    first = toks[0]
+    # Handle maqqef-bound interrogatives (מַה־לְּךָ → first sub-token = מַה)
+    if MAQQEF in first:
+        first_sub = first.split(MAQQEF, 1)[0]
+        return skel(first_sub) in INTERROGATIVE_PARTICLE_SKELETONS
+    return skel(first) in INTERROGATIVE_PARTICLE_SKELETONS
+
+
+def is_imperative_clause_opener(
+    line: str,
+    tag_lists: Optional[list[list[str]]] = None,
+) -> bool:
+    """True if line begins with an imperative/cohortative verb.
+
+    Imperative clauses are propositionally complete ATUs (a command
+    predicates a complete directive-event). M2 merge specs that target
+    'bare-NP after finite verb' must not absorb an imperative-headed
+    clause as if it were a stray complement.
+
+    Tag-driven primary path: TAHOT verb tag with imperative aspect (Vqv
+    qal-imperative, Vpv piel-imperative, Vhv hiphil-imperative, etc.) OR
+    cohortative aspect (Vqh / Vph / Vhh).
+
+    Skel fallback (no tag): closed list of high-frequency imperative
+    skels common in speech-content position.
+
+    Motivating case: Jonah 1:8 — וַיֹּאמְרוּ אֵלָיו | הַגִּידָה־נָּא לָנוּ.
+    Discovered via Path 1 smoke-test (2026-05-03).
+    """
+    toks = line.split()
+    if not toks:
+        return False
+    first = toks[0]
+
+    # Tag-driven path: use morph_tags helpers (handle H prefix, c/ vav-prefix,
+    # Sp* suffix-buried verb morphemes per the canonical _last_verb_morpheme).
+    if tag_lists is not None and tag_lists and tag_lists[0]:
+        from . import morph_tags as MT
+        for tag in tag_lists[0]:
+            verb = MT._last_verb_morpheme(tag)
+            if verb and len(verb) >= 3 and verb[2] in ("v", "h"):
+                # 'v' = imperative, 'h' = cohortative
+                return True
+        return False
+
+    # Skel fallback: closed list of high-frequency imperative skels
+    head = first.split(MAQQEF, 1)[0] if MAQQEF in first else first
+    return skel(head) in IMPERATIVE_OPENER_SKELETONS
+
+
+# Closed list of high-frequency imperative/cohortative skels used in
+# speech-content position. Skel-fallback only; tag-driven path is
+# authoritative when available.
+IMPERATIVE_OPENER_SKELETONS: frozenset[str] = frozenset({
+    # Motion / direction
+    "קום", "קומו", "קומי",
+    "לך", "לכו", "לכי",
+    "בא", "באו", "בואי",
+    "סור", "סורו",
+    "עלה", "עלו", "עלי",
+    "רד", "רדו",
+    "שב", "שבו", "שבי",
+    "צא", "צאו", "צאי",
+    # Speech / response
+    "שמע", "שמעו", "שמעי",
+    "ראה", "ראו", "ראי",
+    "ענה", "ענו",
+    "אמר", "אמרו", "אמרי",
+    "דבר", "דברו", "דברי",
+    "הגד", "הגידה", "הגידו", "הגידי",  # tell-imperatives (יְהַגֵּד / הִגִּיד)
+    "ספר", "ספרו",
+    # Action
+    "עשה", "עשו", "עשי",
+    "תן", "תנו", "תני",
+    "קח", "קחו", "קחי",
+    "הביא", "הביאו",
+    "שלח", "שלחו",
+    "פתח", "פתחו",
+    "סגר", "סגרו",
+    "שא", "שאו", "שאוני",
+    "הטל", "הטילני", "הטילנו",
+    # Belief / fear
+    "ירא", "יראו", "תירא",
+    "חזק", "חזקו", "חזקי",
+    "בטח", "בטחו",
+    # Cohortative
+    "נלך", "נלכה", "נעלה", "נרדה", "נראה", "נשמעה",
+    "אעבדה", "אעלה", "אדעה",
+})
+
+
 def is_verbless_predication(line: str) -> bool:
     """Detect verbless equational clauses (subject + nominal predicate).
 

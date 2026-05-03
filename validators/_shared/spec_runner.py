@@ -582,6 +582,38 @@ def _g_next_verbless_predication(l_n, l_n1, ctx):
     return M.is_verbless_predication(l_n1)
 
 
+@_register_guard("next_line_is_interrogative_clause")
+def _g_next_interrogative_clause(l_n, l_n1, ctx):
+    """Fire (block emission) if line N+1 begins with an interrogative
+    pronoun/particle. Per canon §5 H5b, interrogative-headed clauses are
+    propositionally complete ATUs; M2 merge specs must not absorb them as
+    if they were stray bare-NP complements.
+
+    Motivating case: Jonah 1:6 / 1:8 — וַיֹּאמֶר לוֹ + מַה־לְּךָ נִרְדָּם.
+    M2 trigger sees מַה as bare_noun (passes is_bare_noun_token exclusion
+    checks); the existing next_line_is_verbless_predication guard does not
+    fire because the interrogative clause has a finite verb (נִרְדָּם).
+    Discovered via Path 1 smoke-test on Latter Prophets cluster (2026-05-02).
+    """
+    return M.is_interrogative_clause_opener(l_n1)
+
+
+@_register_guard("next_line_is_imperative_clause")
+def _g_next_imperative_clause(l_n, l_n1, ctx):
+    """Fire (block emission) if line N+1 begins with an imperative or
+    cohortative verb. Per canon §5 H5b, imperative-headed clauses are
+    propositionally complete ATUs (a command predicates a complete
+    directive-event); M2 merge specs must not absorb them.
+
+    Motivating cases: Jonah 1:8 — וַיֹּאמְרוּ אֵלָיו + הַגִּידָה־נָּא לָנוּ;
+    Jonah 1:11 — וַיֹּאמְרוּ אֵלָיו + מַה־נַּעֲשֶׂה (interrog handled by sister
+    guard, but parallel structure).
+    Discovered via Path 1 smoke-test (2026-05-03).
+    """
+    n1_tag_lists = ctx.get("line_n1_token_tags") if ctx else None
+    return M.is_imperative_clause_opener(l_n1, tag_lists=n1_tag_lists)
+
+
 @_register_guard("job_answering_formula")
 def _g_job_answering_formula(l_n, l_n1, ctx):
     """Path-1 carve-out: keep the Job answering-formula intact.
