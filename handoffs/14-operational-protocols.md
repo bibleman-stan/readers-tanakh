@@ -344,7 +344,7 @@ Across multiple 2026-05-02 cycles, engine fixes uncovered latent bugs in OTHER p
 **Discipline:** when verification surfaces unexpected behavior:
 1. Bisect against the baseline (stash uncommitted changes; does the issue persist?)
 2. If yes → pre-existing latent bug, not introduced by this cycle. Open a new investigation branch, don't try to fix it inside the current cycle.
-3. If no → the current change exposed it. Decide: fix in current cycle, or defer with a documented entry in `pending.md`.
+3. If no → the current change exposed it. Decide: fix in current cycle, or defer with a documented entry in the session's pending notes.
 
 **Companion misdiagnosis-prevention discipline:** before accepting any "X is causing Y" hypothesis from a single observation, run a definitive falsification test:
 - For "spec X causes oscillation Y" → run X ALONE on the affected verse, in non-dry-run mode, against a scratch corpus. If 0 changes or single-pass convergence, X is innocent.

@@ -5,9 +5,9 @@
   "validate_bonded_pair": 6,
   "validate_canon_retirement_residue": 39,
   "validate_causal_ki": 963,
-  "validate_circumstantial_clause": 2344,
+  "validate_circumstantial_clause": 2345,
   "validate_clause_nucleus_split": 293,
-  "validate_complement_integrity": 37,
+  "validate_complement_integrity": 36,
   "validate_compound_preposition_object": 10,
   "validate_construct_chain": 2179,
   "validate_coordinated_object": 9,
@@ -19,9 +19,9 @@
   "validate_maqqef_integrity": 0,
   "validate_oath_formula": 19,
   "validate_parallel_series_uniformity": 5,
-  "validate_short_orphan_line": 3816,
+  "validate_short_orphan_line": 3819,
   "validate_short_verse_fronting": 0,
   "validate_speech_intro_framing": 517,
   "validate_verb_object_bond": 5,
-  "validate_wayehi_protasis": 278
+  "validate_wayehi_protasis": 279
 }
