@@ -113,6 +113,12 @@ ADOPTED_VALIDATORS: dict[str, AdoptionSpec] = {
     "validate_construct_chain": {
         "STRONG-MERGE-CANDIDATE": ["divine_name"],
     },
+    # M4/subject-pronoun-orphan STRONG arm only — tight pattern (1-token line
+    # is subject pronoun + tag-confirmed finite verb on next line of same verse).
+    # Other M4 findings remain REVIEW-REQUIRED for editorial judgment.
+    "validate_short_orphan_line": {
+        "STRONG-MERGE-CANDIDATE",
+    },
 }
 
 # ---------------------------------------------------------------------------
@@ -126,10 +132,12 @@ ALL_VALIDATORS: list[tuple[str, str]] = [
     ("validators/syntax/validate_line_final_tokens.py",    "validate_line_final_tokens"),
     ("validators/colometry/validate_speech_intro_framing.py", "validate_speech_intro_framing"),
     ("validators/colometry/validate_wayehi_protasis.py",   "validate_wayehi_protasis"),
-    # Not yet adopted — run for reporting only:
     # Partially adopted: divine_name subcase only; article_rectum + common_construct_ending
     # remain REVIEW-REQUIRED.
     ("validators/colometry/validate_construct_chain.py",   "validate_construct_chain"),
+    # M4/subject-pronoun-orphan STRONG-MERGE arm only — other M4 patterns
+    # remain REVIEW-REQUIRED for editorial judgment.
+    ("validators/colometry/validate_short_orphan_line.py", "validate_short_orphan_line"),
     # Not yet adopted — run for reporting only:
     ("validators/syntax/validate_discourse_particles.py",  "validate_discourse_particles"),
     ("validators/syntax/validate_complement_integrity.py", "validate_complement_integrity"),

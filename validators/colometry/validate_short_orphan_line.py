@@ -103,6 +103,19 @@ def is_skippable(line: str) -> bool:
     return False
 
 
+# Independent personal pronouns that, when standing alone on a line, are
+# subjects requiring merge with their finite-verb predicate on the next line.
+# Includes vav-prefixed forms (וְהֵמָּה, וְאַתָּה, etc.).
+SUBJECT_PRONOUN_SKELETONS = frozenset({
+    "הוא", "היא", "הם", "המה", "הן", "הנה",
+    "אני", "אנכי", "אנחנו",
+    "אתה", "את", "אתם", "אתן", "אתנה",
+    "והוא", "והיא", "והם", "והמה", "והנה", "והן",
+    "ואני", "ואנכי", "ואנחנו",
+    "ואתה", "ואת", "ואתם", "ואתן",
+})
+
+
 def parse_verse_ref(line: str):
     """If `line` is a 'C:V' verse-reference line, return (chapter, verse). Else None."""
     s = line.strip()
@@ -354,8 +367,124 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
         if is_standalone_permitted(token, line, tag_list=tag_list):
             continue
 
+        # ── STRONG-MERGE arm: subject-pronoun-orphan + finite-verb-next ──
+        # Tight pattern: 1-token line that's a subject pronoun, followed by a
+        # line whose first token is a tag-confirmed finite verb. Both within
+        # the same verse. Typical case: Jer 31:33 וְהֵמָּה / יִהְיוּ־לִי לְעָם
+        # ("and they / will be to me a people"). The subject pronoun and verb
+        # form a single clause-nucleus and must be co-located per H18.
+        bare = strip_points(token).rstrip(SOF_PASUQ).rstrip("׃")
+        if bare in SUBJECT_PRONOUN_SKELETONS:
+            # Find next non-skippable line within same verse
+            next_line_idx = None
+            for k in range(i + 1, len(lines)):
+                if is_skippable(lines[k]):
+                    if parse_verse_ref(lines[k]) is not None:
+                        break  # crossed verse boundary; abort
+                    continue
+                # Same-verse check
+                if line_to_verse.get(k, (None, None)) != v_ctx:
+                    break
+                next_line_idx = k
+                break
+            if next_line_idx is not None:
+                next_toks = content_tokens(lines[next_line_idx])
+                if next_toks:
+                    # Tag-confirm next-line first token is finite verb
+                    next_tag_list = None
+                    if verse_token_tags is not None:
+                        next_pos = next(
+                            (pos for pos, (li, _) in enumerate(verse_lines_map.get(v_ctx, []))
+                             if li == next_line_idx),
+                            None,
+                        )
+                        if next_pos is not None and next_pos < len(verse_token_tags):
+                            line_tok_tags = verse_token_tags[next_pos]
+                            if line_tok_tags:
+                                next_tag_list = line_tok_tags[0]
+                    # For maqqef-bound tokens (e.g. יִהְיוּ־לִי), the verb is the
+                    # FIRST morpheme but is_finite_verb_token's tag-path uses LAST.
+                    # Check ANY tag in the list for finite-verb classification.
+                    # Also extract verb pgn (person-gender-number) for agreement.
+                    next_first_is_verb = False
+                    next_first_is_wayyiqtol = False
+                    verb_pgn: str | None = None
+                    if next_tag_list:
+                        from _shared import morph_tags as MT
+                        for tag in next_tag_list:
+                            if tag and tag != "[—]":
+                                if MT.is_finite_verb(tag):
+                                    next_first_is_verb = True
+                                    # Extract verb pgn from morpheme like "HVqi3mp"
+                                    # → last 3 chars before any /Sp suffix
+                                    for morpheme in tag.split("/"):
+                                        m = morpheme.lstrip("Hc")
+                                        if m.startswith("V") and len(m) >= 6:
+                                            verb_pgn = m[3:6]
+                                            break
+                                if MT.is_wayyiqtol(tag):
+                                    next_first_is_wayyiqtol = True
+                                if next_first_is_verb and next_first_is_wayyiqtol:
+                                    break
+                    # Extract pronoun pgn from tag (Pp3mp / Pp1cs / etc.)
+                    pron_pgn: str | None = None
+                    if tag_list:
+                        for tag in tag_list:
+                            if tag and tag != "[—]":
+                                for morpheme in tag.split("/"):
+                                    m = morpheme.lstrip("Hc")
+                                    if m.startswith("Pp") and len(m) >= 5:
+                                        pron_pgn = m[2:5]
+                                        break
+                                if pron_pgn:
+                                    break
+                    # FP guard: wayyiqtol on next line opens a NEW clause
+                    # (Gen 20:2 הוא | וַיִּשְׁלַח, Gen 38:16 הִוא | וַתֹּאמֶר etc.).
+                    # The pronoun is then a predicate completing a prior verbless
+                    # clause, not the subject of the wayyiqtol.
+                    # FP guard: pronoun and verb must agree on person/number/gender.
+                    # Catches verbless-equation predicates + new-imperative cases:
+                    # 1 Kings 18:8 אָנִי | לֵךְ (1cs vs 2ms), 2 Kings 1:12
+                    # אָנִי | תֵּרֶד (1cs vs 3fs), etc. Imperative cs/c-marker not
+                    # always preserved across morphemes — use loose match where
+                    # gender 'b' (epicene) is permissive.
+                    # Person + number must match. Gender check skipped because
+                    # qatal-3cp is unmarked-gender (verb 'c') and matches both
+                    # 3mp and 3fp pronouns (Ezek 27:10 הֵמָּה / נָתְנוּ etc.).
+                    pgn_match = True
+                    if verb_pgn and pron_pgn:
+                        pgn_match = (
+                            verb_pgn[0] == pron_pgn[0]      # person matches
+                            and verb_pgn[2] == pron_pgn[2]  # number matches
+                        )
+                    if next_first_is_verb and not next_first_is_wayyiqtol and pgn_match:
+                        line_no = i + 1
+                        findings.append({
+                            "file_path": path,
+                            "file_rel": str(path.relative_to(REPO_ROOT)).replace("\\", "/"),
+                            "line_num": line_no,
+                            "rule": "M4/subject-pronoun-orphan",
+                            "severity": "STRONG-MERGE-CANDIDATE",
+                            "token": bare,
+                            "prior_context": "",
+                            "next_context": lines[next_line_idx].strip()[:80],
+                            "annotation": (
+                                "Subject pronoun on its own line followed by a "
+                                "tag-confirmed finite verb on next line — clause-"
+                                "nucleus integrity (H18) requires merge."
+                            ),
+                            "brief": (
+                                f"subject-pronoun orphan '{bare}' + finite verb "
+                                f"'{strip_points(next_toks[0])}' on next line — merge"
+                            ),
+                            "book": book,
+                            "chapter": chapter,
+                            "verse": verse,
+                            "text": line.strip(),
+                        })
+                        continue
+
         # Emit REVIEW-REQUIRED finding
-        bare = strip_points(token).rstrip(SOF_PASUQ)
         line_no = i + 1
         prior_context = ""
         next_context = ""
@@ -460,19 +589,30 @@ def main():
     if args.json:
         findings_json = []
         for f in all_findings:
+            sev = f["severity"]
+            applied_action = (
+                "merge_with_next" if sev == "STRONG-MERGE-CANDIDATE" else None
+            )
             findings_json.append({
                 "file": f["file_rel"],
                 "line": f["line_num"],
+                "severity": "DEVIATION",
+                "tag": sev,
+                "rule_id": "M4",
                 "rule": f["rule"],
-                "severity": f["severity"],
+                "rule_short": "fragmented atomic thought-unit",
                 "token": f["token"],
                 "book": f["book"],
                 "chapter": f["chapter"],
                 "verse": f["verse"],
+                "brief": f.get("brief", ""),
                 "text": f["text"],
+                "applied_action": applied_action,
             })
 
-        counts = {"REVIEW-REQUIRED": len(findings_json)}
+        counts: dict[str, int] = {}
+        for f in findings_json:
+            counts[f["tag"]] = counts.get(f["tag"], 0) + 1
 
         doc = {
             "validator": "validate_short_orphan_line",
@@ -487,7 +627,7 @@ def main():
             "counts": counts,
             "summary": {
                 "total_findings": len(findings_json),
-                "by_severity": {"REVIEW-REQUIRED": len(findings_json)},
+                "by_severity": counts,
                 "exit_code": exit_code,
             },
         }
