@@ -22,10 +22,12 @@ trigger:
 
 guards:
   - poetic_register
-  - both_lines_have_finite_verb   # if both clauses are independent, don't merge
-  - next_line_is_wayyiqtol       # block re-absorbing post-S3-split wayyiqtol-headed lines
-  - next_line_is_vav_coord_pp     # block re-absorbing post-S1-split coord-PP enumeration members
-  - next_line_is_vav_coord_np     # block re-absorbing post-S2-split coord-NP enumeration members
+  - both_lines_have_finite_verb         # if both clauses are independent, don't merge
+  - next_line_is_wayyiqtol              # block re-absorbing post-S3-split wayyiqtol-headed lines
+  - next_line_is_vav_coord_pp           # block re-absorbing post-S1-split coord-PP enumeration members
+  - next_line_is_vav_coord_np           # block re-absorbing post-S2-split coord-NP enumeration members
+  - next_line_is_vav_coord_do_marker    # block re-absorbing post-S4-split coord-DO continuation
+                                          # (Gen 33:2 oscillation, 2026-05-03)
 
 annotation_template: "Verb-clause + DO-NP merge ({pwc} prosodic words)"
 suggested_action: MERGE

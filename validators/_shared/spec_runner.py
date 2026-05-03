@@ -494,6 +494,24 @@ def _g_next_vav_coord_np(l_n, l_n1, ctx):
     return M.is_vav_coord_np_head(first)
 
 
+@_register_guard("next_line_is_vav_coord_do_marker")
+def _g_next_vav_coord_do_marker(l_n, l_n1, ctx):
+    """Fire (block emission) if line N+1's first token is a vav-coord DO marker
+    (וְאֵת / וְאֶת־X / וְאֹתוֹ-suffix forms).
+
+    Symmetric counterpart to next_line_is_vav_coord_pp/np for coordinated
+    DO-marker enumeration members. Prevents M2 merge specs (specifically
+    m2_3_verb_subj_do_split) from re-absorbing post-S4-split coordinated-DO
+    continuation lines and oscillating with S4 multi-wayyiqtol-clause-split
+    (Gen 33:2 / 36:6 / 1:25 / 8:1 / 10:11 / 10:14 / 11:31 / 12:5 / 14:5,
+    confirmed 2026-05-03).
+    """
+    first = M.first_content_token(l_n1)
+    if not first:
+        return False
+    return M.skel(first).startswith("ואת")
+
+
 @_register_guard("next_line_is_wayyiqtol")
 def _g_next_wayyiqtol(l_n, l_n1, ctx):
     """Fire (block emission) if line N+1's first token is a wayyiqtol.
