@@ -93,6 +93,22 @@ These traditions and editions are scholarly resources of the highest importance,
 - Sebirin — printed reading is the base; the sebirin alternative is preserved as marginal note where the Masorah records it.
 - Tiqqunei sopherim and itture sopherim — the Masorah's own annotations are preserved as marginal notes; the printed text follows the Masoretic form.
 
+### §0.2 Governing Values — The Three C's
+
+The canon and the corpus are evaluated against three governing values. These are decision criteria for canon-level revisions, spec changes, and cascade adoption — invoked when methodological tension surfaces or when an editorial judgment requires explicit ranking of priorities.
+
+**Clarity.** Each rule, principle, and operational test is articulated precisely enough that a reader can apply it without consulting the editor. Tests are named so editors and validators cite them by name. Rationale (the WHY) is documented alongside mechanics (the HOW). Ambiguity in a rule is a defect to fix, not a feature to preserve.
+
+**Consistency.** The corpus matches the canon. The canon matches itself (no internal contradictions between rules, principles, and tests). When canon and corpus diverge, either the corpus is updated (cascade) or the canon is revised — the divergence is not allowed to persist as a known unresolved tension.
+
+**Comprehensiveness.** Canon revisions apply across the full corpus, not just the verse that surfaced the issue. When a methodological insight changes one rule, the implications across the related rules and across the affected corpus are worked out and applied. Forward-only changes (where the rule changes but historical applications are not revisited) are a Category-B exception requiring explicit §7 audit, not a default mode.
+
+**Application.** When a canon revision is proposed, the proposal is evaluated against all three values. A revision that loses on consistency or comprehensiveness while gaining on clarity is generally not adopted; a revision that loses on clarity while gaining on the others is also generally not adopted. The 3 C's are co-equal — no single value dominates the others.
+
+**WHY:** Stated by Stan during the 2026-05-02 Path 1 deliberation: "we need clarity, consistency, and comprehensiveness." Codified here so that future canon decisions invoke the framework explicitly rather than re-deriving it ad hoc. The 3 C's themselves are a methodological commitment, not an operational rule — they shape how canon evolves rather than how the corpus is broken into cola.
+
+**HOW WE KNOW:** Stan-articulation in the Path 1 deliberation (2026-05-02 session-notes archive); pattern observed across prior canon decisions where the same value-trio implicitly governed (te'amim demotion 2026-04-26, tier collapse 2026-04-27, no-permission-loop discipline 2026-04-29).
+
 ---
 
 ## §1 The Framework — Proposition-First, Syntax-Constrained
@@ -473,7 +489,8 @@ Hebrew-specific rules use the H-prefix to distinguish them from sibling-canon ru
 | H2 | Construct chain default | Mechanical + judgment | Bound *nomen regens + nomen rectum*, no intervening modifier | MERGE (one prosodic unit) |
 | H3 | Vav-consecutive clause-head policy | Editorial | Wayyiqtol verb at clause head | Default own line for narrative *wayyiqtol* heads; tighter merging in fast-paced narrative sequences (see §5 H3) |
 | H4 | Vocative handling (Hebrew) | Editorial | Address particle (or contextually marked vocative — Hebrew lacks a vocative case) | Default own line; merge under apposition rule (§5 H4) |
-| H5 | Direct-speech framing default | Mechanical + judgment | *X לֵאמֹר* speech-intro frame | Short framing (≤3 prosodic words) merges with speech-opening; long framing (≥4 prosodic words, or with embedded location/recipient) gets its own line |
+| H5 | Direct-speech framing default | Mechanical + judgment | *X לֵאמֹר* speech-intro frame | Frame and quoted content occupy separate lines regardless of frame length (short-framing-default retired). Frame length governs visual display, not merge licensing. Narrow scope-economy carve-out (REVIEW-REQUIRED) for ≥4-turn dialogue chains. See §5 H5. |
+| H5b | Speech-Act Announcement Default | Mechanical | Finite speech-act verb closing a speech-intro frame, immediately followed by direct discourse | Speech-act announcement and quoted content occupy separate lines. Forced-merge exceptions: H1 (maqqef), H7 (non-speech complement), H5 scope-economy carve-out. See §5 H5b. |
 | H6 | Ketiv/Qere policy | Editorial | K/Q markers in source text | Print Qere by default; Ketiv accessible as hover/footnote (per §5 H6 sub-categories) |
 | H7 | Complement integrity (Hebrew) | Mechanical | Verb + obligatory complement (*אָמַר* + speech, *יָדַע* + כִּי-clause, etc.) | MERGE across boundary |
 | H8 | Te'amim as evidence | Principle | Always | The te'amim corroborate or disagree; they do not authorize. See §1 "The Te'amim Are Not a Structural Prior" |
@@ -540,6 +557,7 @@ Canon rules H1–H18 cite Layer 1 rows by signature. The grammatical floor lives
 | H3 (Vav-Consecutive Clause-Head Policy) | Vav-consecutive split, Coordinated clause boundary |
 | H4 (Vocative Handling) | Vocative unit split, Vocative boundary |
 | H5 (Direct-Speech Framing Default) | Speech-frame boundary |
+| H5b (Speech-Act Announcement Default) | Speech-frame boundary (same row as H5) |
 | H7 (Complement Integrity, Hebrew) | Bound enclitic split, plus verb-object integrity inherited from canon |
 | H9 (Divine-Title Appositives) | Compound divine name split, Apposition boundary |
 | H11 (Tifcha-as-Servant-of-Atnach) | All proclitic-stranding rows (conjunction / prep / article / object-marker / negation / compound-prep) |
@@ -588,6 +606,26 @@ Five named tests that editors invoke by name at candidate boundaries. They are n
 **Application context:** Generative principle (proposition boundary). Supplements the No-Anchor Test by checking *propositional completeness*, not just anchor presence. A line can carry an anchor and still not constitute a complete proposition (e.g., a participle awaiting its obligatory complement — M3 bare-governor scenario).
 
 **WHY:** The failure mode it prevents: over-splitting when an anchor is technically present but the predication is not yet closed. The period test externalizes the editor's intuition: *if a translator could end a sentence here, the line has proposition-end weight; if not, something is still dangling forward*. When the answer is no, merge with the complement (complement integrity, §1 Syntax Forbids Splits item 2; Rule H7).
+
+---
+
+#### Propositional Completeness Test
+
+**Question:** Does the candidate line predicate a complete proposition — i.e., (a) does it carry an anchor from the §1 Hebrew anchor inventory (finite verb, infinitive, predicative participle, verbless-clause subject+predicate, or substantive head independently predicated), AND (b) is that anchor's valence satisfied on the line itself (no obligatory complement awaited downstream)?
+
+**Application context:** Generative principle (§1 Generative Principle). This is the **canonical operational test for atomic thought.** It is the primary form of the Period Test and the inverse-direction form of the Completing-Predication Test, named explicitly so that editors and validators can cite it by name without invoking the surrogate diagnostics.
+
+**WHY:** A proposition is what the framework recovers (§1 Container-Not-Originator). The atomic-thought test asks whether the line predicates a complete proposition — not whether the reader has learned everything they want to know about the predicated event. The two are routinely confused, especially around speech-act announcements and short narrative wayyiqtol heads, where the *content* of what was said or what was done sits on the next line. **The reader's downstream curiosity about the content is not a propositional gap.** A finite speech-act verb (*וַיֹּאמֶר*) predicates a complete speech-event (subject + finite verb + speech-act); the quoted utterance is a separate cognitive frame, not a missing complement. The Propositional Completeness Test names this distinction so editors stop merging speech-frames into their content under the false signal that the frame is "incomplete."
+
+**Distinction from informational completeness.** Informational completeness asks: *"after reading this line, does the reader know everything they want to know about the event?"* That is **NOT a canon test.** Many propositionally complete lines are informationally incomplete by design — they predicate an event whose *content* (a speech-utterance, a divine command's specifics, a casus pendens's resumed predication) is the next atomic thought, not a grammatical extension of the current one. Informational completeness would collapse the announcement-content distinction (§1 SJ3) and over-merge wayyiqtol clause heads into their objects (against §5 H3 default own-line policy). It is not a permitted criterion for editorial decisions.
+
+**Diagnostic.**
+- (a) Anchor present? → If no, fail (No-Anchor Test fires; merge upward).
+- (b) Anchor's valence closed on this line? → If yes (no obligatory complement is awaited), the line is propositionally complete. If no (the matrix verb requires a clausal/PP complement that is grammatically obligatory — see Rule H7's verb-class table), the Completing-Predication Test fires; merge with the complement.
+- A bare governing participle (*אוֹמֵר* without speech complement, *יוֹדֵעַ* without כִּי-clause) is **not** propositionally complete — its valence is open (M3 fires).
+- A finite speech-act verb (*וַיֹּאמֶר*, *וַיְדַבֵּר*, *וַיְצַו לֵאמֹר*) **is** propositionally complete on its own. The quoted content is a distinct atomic thought (speech-act announcement per SJ3).
+
+**Cite-by-name.** "Propositional Completeness Test → split (frame is complete; speech is separate atomic thought)" or "Propositional Completeness Test → merge (matrix verb's *כִּי* complement is obligatory; valence open)."
 
 ---
 
@@ -704,16 +742,56 @@ Five named tests that editors invoke by name at candidate boundaries. They are n
 
 **Trigger.** Speech-intro frame ending in *לֵאמֹר* or in a bare *וַיֹּאמֶר* / *וַיְדַבֵּר* / *וַיַּעַן* without *לֵאמֹר* but immediately followed by speech.
 
-**Diagnostic — short vs. long framing:**
-- **Short framing (≤3 prosodic words):** *וַיֹּאמֶר לֵאמֹר*, *וַיֹּאמֶר אֵלָיו*, *וַיְדַבֵּר יְהוָה אֶל־מֹשֶׁה לֵאמֹר* (4-prosodic-word boundary case — judgment call). Short framing merges with the speech-opening cola on one line.
-- **Long framing (≥4 prosodic words, or with embedded location/recipient phrases):** *וַיְהִי דְבַר־יְהוָה אֶל־יוֹנָה בֶן־אֲמִתַּי לֵאמֹר* (Jonah 1:1), *וַיֹּאמֶר יְהוָה אֶל־מֹשֶׁה רְאֵה נָתַתִּיךָ אֱלֹהִים לְפַרְעֹה* with full recipient + situation framing. Long framing gets its own line; speech opens on next line.
+**Diagnostic.** **Speech-act announcement and quoted content are separate atomic thoughts.** A finite speech-intro frame (*X אָמַר/דִּבֶּר/עָנָה (אֶל-Y) (לֵאמֹר)*) predicates a complete speech-event — subject, finite verb, optional recipient, optional *לֵאמֹר* complementizer marking speech-onset. The quoted content is a distinct atomic thought (§1 structural justification 3). **Default: split between announcement and content, regardless of framing length.** This is the propositional-completeness reading of SJ3; it harmonizes H5 with §1.
 
-**Exception — solemnity-prefix and oracle-formula speech-intros.** Prophetic *כֹּה אָמַר יְהוָה* and oracle attribution *נְאֻם־יְהוָה* are atomic formulaic units that get their own line regardless of length. The content of the prophecy/oracle breaks to the next line.
+**Length is not a merge license.** Earlier formulations of H5 carried a "short-framing-default" merge stance (frames ≤3 prosodic words merged with speech-opening). That stance treated the framing as informationally incomplete on its own; the Propositional Completeness Test (§5.0) and §1 M3 contrast paragraph make explicit that a finite speech-act verb is propositionally complete. Frame length governs visual display of the announcement; it does not license merging announcement with content.
 
-**Example contrasts:**
-- Jonah 1:6 *וַיֹּאמֶר לוֹ* — short framing (2 prosodic words), merges with speech opening (the captain's rebuke).
-- Jonah 1:1 *וַיְהִי דְבַר־יְהוָה אֶל־יוֹנָה בֶן־אֲמִתַּי לֵאמֹר* — long framing with FEF wayehi protasis (Rule H16) + extended recipient-and-patronymic; gets its own line.
-- Jonah 1:9 *וַיֹּאמֶר אֲלֵיהֶם עִבְרִי אָנֹכִי* — short framing (2 prosodic words *וַיֹּאמֶר אֲלֵיהֶם*) merges with speech opening *עִבְרִי אָנֹכִי* on one line.
+**Scope-economy carve-out (narrow, REVIEW-REQUIRED).** A two-token bare-frame + ≤3-prosodic-word speech opening (e.g., *וַיֹּאמֶר לוֹ הִנֵּנִי*, *וַיֹּאמֶר כֵּן*, *וַיַּעַן הִנֵּנִי*) MAY be merged when the visual rhythm of the surrounding narrative dialogue chain (≥4 consecutive answer-and-response turns) makes the per-turn split visually noisy. **This is editorial judgment under §2 Category B**, not mechanical default. Validators must surface these as REVIEW-REQUIRED, not STRONG-MERGE.
+
+**Solemnity-prefix and oracle-formula speech-intros.** Prophetic *כֹּה אָמַר יְהוָה* and oracle attribution *נְאֻם־יְהוָה* are atomic formulaic units that get their own line — **same default as ordinary finite speech-frames now.** The earlier "exception" framing is retired; these are no longer exceptional.
+
+**Example contrasts (revised):**
+- Jonah 1:6 *וַיֹּאמֶר לוֹ // מַה־לְּךָ נִרְדָּם* — frame on its own line; speech opens on next. (Previously merged under short-framing-default; now split per default.)
+- Jonah 1:9 *וַיֹּאמֶר אֲלֵיהֶם // עִבְרִי אָנֹכִי* — frame on its own line; speech opens on next. (Previously merged.)
+- Jonah 1:1 *וַיְהִי דְבַר־יְהוָה אֶל־יוֹנָה בֶן־אֲמִתַּי לֵאמֹר // [v.2 speech]* — unchanged; long-framing case already split.
+
+**Connection to Rule H5b.** The split-default formalized here is restated as **Rule H5b — Speech-Act Announcement Default** for cross-rule citation clarity (§5 H5b below).
+
+### Rule H5b — Speech-Act Announcement Default
+
+**Grammatical basis.** Per §1 structural justification 3, a finite speech-act predication (*X אָמַר*, *X דִּבֶּר*, *X עָנָה*, *X צִוָּה (אֶל-Y) (לֵאמֹר)*; prophetic *כֹּה אָמַר יְהוָה*; oracle *נְאֻם־יְהוָה*) constitutes a **complete cognitive frame on its own** — the announcement of a speech-event. The quoted content is a separate atomic thought.
+
+**Trigger.** Finite speech-act verb (qatal, yiqtol, wayyiqtol, weqatal, jussive, cohortative, imperative, infinitive-construct in matrix function, participle in predicative position) heading or closing a speech-introduction frame, immediately followed by direct discourse content.
+
+**Diagnostic.** **Default: the speech-act frame and the quoted content occupy separate lines.** This applies regardless of frame length:
+- 1-token bare frame (*וַיֹּאמֶר // [content]*) → split.
+- 2-token frame (*וַיֹּאמֶר לוֹ // [content]*) → split.
+- Multi-word frame with recipient (*וַיֹּאמֶר יְהוָה אֶל־מֹשֶׁה // [content]*) → split.
+- Long frame with FEF wayehi protasis + לֵאמֹר (Jonah 1:1) → split (already covered by H16 FEF + H5b combined).
+
+**Forced-no-merge (this rule wins).** Wherever a speech-act frame and content meet, H5b mandates the split. Other rules that would merge across this boundary (any informational-completeness-style spec) are subordinate.
+
+**Forced-merge exceptions (these rules win over H5b — closed list):**
+- **H1 maqqef-group integrity** — never break inside a maqqef-group, even if the maqqef joins an embedded vocative + first content word.
+- **H7 complement integrity, NON-speech subset** — the Hebrew speech-frame is *not* the same as cognition/volition/causative + *כִּי* complementation. H7 still merges *יָדַע כִּי*, *רָאָה כִּי*, *רָצָה כִּי*, etc. with their content clauses.
+- **Scope-economy carve-out (Category B, REVIEW-REQUIRED)** — see H5 narrow exception above.
+
+**Worked examples (paradigmatic):**
+- *כֹּה אָמַר יְהוָה //* [oracle content] — manner adverb + finite verb + subject = complete predication; oracle content is a separate ATU. Split always.
+- *נְאֻם־יְהוָה //* [adjacent oracle line] — subject + nominal predicate = complete formulaic ATU. Split always.
+- *וַיְהִי דְבַר־יְהוָה אֶל יוֹנָה בֶן־אֲמִתַּי לֵאמֹר //* [Jonah 1:2 content] — full FEF prophetic-intro is one ATU per H16; speech-onset marker *לֵאמֹר* closes the frame; oracle content is separate ATU.
+- *וַיֹּאמֶר אֵלַי //* [vision content] — addressee-marked prophetic-vision frame. Frame is complete; vision content is separate.
+
+**Defensibility capture:**
+- **WHY:** A finite speech-act verb predicates a complete speech-event. The quoted utterance is the next atomic thought, not a grammatical complement of the announcement verb. Merging announcement with content collapses two cognitive frames into one and violates §1 SJ3. The pre-revision H5 short-framing-default was treating informational completeness ("the reader hasn't been told what was said yet") as if it were propositional incompleteness; the Propositional Completeness Test (§5.0) makes this distinction explicit and H5b operationalizes it.
+- **HOW WE KNOW:** §1 SJ3 prose; §1 M3 contrast paragraph which explicitly states finite speech-act formulas ARE complete predications; consistency with H3 (default own line for narrative wayyiqtol clause heads — speech-act wayyiqtol falls under the same principle); validator dashboard re-runs (post-revision) confirm cleaner separation between H5b and H7. Path 1 corpus FP/FN sample (2026-05-02): 75-78% CLEAN, with PROBLEM cases concentrated in three tractable carve-out classes (Job answering-formula, homograph guard for ויוסף/ויען/וידבר, Sifrei Emet meter).
+- **SCOPE:** All books (prose 21 + Sifrei Emet + embedded poetry). Speech-act announcement is register-invariant; the cognitive distinction holds in poetic books equally. Does NOT apply to: (a) maqqef-joined frame+content boundaries (H1 wins); (b) cognition/volition/causative *כִּי*/אֲשֶׁר complement clauses where the matrix verb's valence is unsatisfied (H7 wins, NOT speech-act predication).
+
+**Connection to other rules:**
+- **Rule H5** (revised): handles the visual length of the announcement frame and the scope-economy carve-out.
+- **Rule H3** (vav-consecutive clause-head policy): wayyiqtol speech verbs (*וַיֹּאמֶר*, *וַיְדַבֵּר*) inherit own-line default from H3; H5b reinforces and specializes for the announcement-content boundary.
+- **Rule H14** (discourse particles): speech-content frequently opens with *הִנֵּה* — H14 already places *הִנֵּה* on its own line (or leading the content line); H5b's split occurs cleanly at the announcement/content boundary regardless.
+- **Rule H16** (FEF wayehi protasis): *וַיְהִי + protasis + לֵאמֹר // content* combines H16 (protasis own line) + H5b (announcement/content split).
 
 ### Rule H6 — Ketiv/Qere Policy
 
@@ -767,7 +845,7 @@ When Ketiv and Qere differ, the Masoretes preserved both: Ketiv stands in the co
 
 | Class | Hebrew examples | Merges with complement |
 |-------|-----------------|------------------------|
-| Speech (introducing speech) | *אָמַר לֵאמֹר*, *דִּבֶּר אֵל*, *צִוָּה לֵאמֹר* | Yes (with the speech-intro per Rule H5) |
+| Speech (introducing speech) | *אָמַר לֵאמֹר*, *דִּבֶּר אֵל*, *צִוָּה לֵאמֹר* | Merges with speech-intro frame components (recipient PP, *לֵאמֹר* marker) per Rule H5; does NOT merge with quoted content per Rule H5b. |
 | Cognition | *יָדַע כִּי*, *הֵבִין כִּי*, *זָכַר כִּי*, *רָאָה כִּי*, *שָׁמַע כִּי* | Yes (verb + כִּי-clause merges) |
 | Volition | *רָצָה כִּי*, *חָפֵץ כִּי*, *בִּקֵּשׁ אֲשֶׁר* | Yes |
 | Causative | *צִוָּה אֲשֶׁר*, *גָּזַר כִּי*, *הֵכִין כִּי* | Yes |
@@ -1257,6 +1335,29 @@ Hostile audit findings on the original tifcha-servant proposal: the canon's own 
 **SCOPE:** H18 covers all books except Sifrei Emet routing + embedded-poetry list + acrostic chapters. Validator deployment is REVIEW-REQUIRED-only initially; promotion to STRONG-MERGE awaits at least one hand-edited Tanakh book beyond Jonah showing ≥80% editor-merge agreement on a specific subcase.
 
 **Audit dispatched:** six-agent parallel adversarial audit 2026-04-28; verdicts and design corrections cited above.
+
+### 2026-05-02 — Path 1: Propositional completeness as canonical atomic-thought criterion; H5 short-framing-default retired; H5b Speech-Act Announcement Default added; 3 C's codified as governing values
+
+**What landed:**
+1. New §0.2 **Governing Values — The Three C's** (clarity, consistency, comprehensiveness) codified as decision criteria for canon revisions. Stan-articulated during this session; codified to make the framework explicit for future canon work.
+2. New named operational test: **Propositional Completeness Test** (§5.0), positioned as the canonical operational form of atomic thought. Distinguishes propositional completeness (anchor + valence-closed-on-line) from **informational completeness** (whether the reader has learned everything about the event), and explicitly retires informational completeness as a canon test.
+3. **Rule H5 revised**: short-framing-default merge stance retired. Default is split between announcement frame and quoted content regardless of frame length. Length now governs visual display of the announcement, not merge licensing. Narrow scope-economy carve-out preserved as Category B / REVIEW-REQUIRED for dialogue-chain visual rhythm; mechanical merge prohibited.
+4. **New Rule H5b — Speech-Act Announcement Default** added to §3 and §5. Operationalizes §1 SJ3's "announcement and quoted content are separate cognitive frames" as a closed-list rule with explicit forced-merge exceptions (H1, H7-non-speech, narrow scope-economy carve-out). Worked examples include *כֹּה אָמַר יְהוָה*, *נְאֻם־יְהוָה*, the Jonah 1:1 FEF intro, prophetic-vision frames.
+5. §3 Quick-Reference Rule Table updated: H5 row description rewritten; H5b row added.
+6. §4.1 Rule-to-Table Mapping updated: H5b cites the same "Speech-frame boundary" Layer 1 row as H5.
+7. §5 H7 verb-class table — "Speech (introducing speech)" row rephrased to clarify: merges with speech-intro frame components (recipient PP, *לֵאמֹר* marker) per H5; does NOT merge with quoted content per H5b.
+8. **Jonah 1 (gold standard) re-edited** to apply H5b retroactively: lines 1:6, 1:9, 1:10, 1:12 split to separate speech-frames from content.
+9. Specs/validators retired/refined in this session's Commit B (separate commit): see git history for `m4_solo_speech_verb.yaml`, `validate_speech_intro_framing.py`, and ADOPTED_VALIDATORS in `apply_validators.py`.
+
+**WHY:** §1 SJ3 ("speech-act announcement... announcement and quoted content are separate cognitive frames") and §1 M3 contrast paragraph ("finite speech-act formulas... ARE complete speech-act predications — the speech act itself is the content") are load-bearing propositional-completeness commitments. Pre-revision H5's short-framing-default merge contradicted both. The `m4_solo_speech_verb` spec's "propositionally empty without its complement clause" framing extended the contradiction into the cascade engine. Stan flagged the tension surfacing on Isa 40:6 (a *וְאָמַר // קְרָא* split that the cascade was repeatedly attempting to merge under m4-solo-speech-verb but Stan's editorial judgment held as split per SJ3). The contradiction is principled, not edge-case: the canon's two stances cannot both be true. Path 1 resolves in favor of §1's propositional-completeness commitment; informational-completeness reasoning is named and retired as a non-canonical criterion. Per the newly-codified 3 C's: forward-only Path 1 fails on consistency (corpus contradicts canon) and comprehensiveness (only future edits comply); RETROACTIVE Path 1 (with carve-outs) realizes all three values.
+
+**HOW WE KNOW:** Four parallel adversarial-audit dispatches 2026-05-02 (canon revision drafter Opus, FP/FN sampling Opus on 50 stratified candidates, spec impact survey Sonnet, M2 verbless-predication audit Sonnet). FP/FN audit verdict: 75-78% CLEAN, 17-20% BORDERLINE, 3-5% PROBLEM with PROBLEM concentrated in three tractable classes (Job answering-formula, homograph guard for ויוסף/ויען/וידבר, Sifrei Emet meter). Spec impact survey identified 8 file modifications with only 5 substantive behavioral changes. Canon revision drafter produced full §1/§5/§5.0/§8 text. M2 verbless-predication audit identified a critical design flaw in the proposed `is_verbless_predication` helper (inadequate PP-prefix exclusion) and recommended 3 refinements that bring FP rate below 2%.
+
+**SCOPE:** All books — speech-act announcement is register-invariant. Affects: H5 rewrite, new H5b, §5.0 new test, §0.2 new governing-values section, §3 table, §4.1 mapping, §5 H7 row rephrasing, Jonah 1 re-edit. Specs/validators changed in Commit B: `m4_solo_speech_verb.yaml`, `validate_speech_intro_framing.py`, `apply_validators.py` ADOPTED_VALIDATORS, `m4_c_solo_action_verb.yaml`/`m4_d_*`/`m4_e_*` retag M4→M2, baseline.json reset (significant finding-count changes expected). Does NOT affect: H7 (cognition/volition/causative *כִּי* complementation — orthogonal), H18 (verbless/participial — orthogonal), H3 (wayyiqtol clause-head — H5b reinforces H3 for speech wayyiqtol), H16 (FEF protasis — combines cleanly with H5b).
+
+**Audit dispatched (per §7 multi-trigger requirement):** four parallel agents 2026-05-02 (FP/FN sampling, spec impact survey, M2 verbless integrity, canon revision drafter). Triggers fired: #1 (new named rule H5b + new named test Propositional Completeness Test + new section §0.2 Governing Values); #3 (initial framing rested on Isa 40:6 spot-evidence — full-corpus sweep dispatched as condition of codification); #5 (H5 short-framing-default is a live application being retired); #6 (validator changes under settled rule); #7 (corpus sweep of all H5-merge applications + all m4-solo-speech-verb applications, ≥5 instances expected); #12a (post-codification corpus-wide goal-fit audit scheduled as next-session first task per protocol).
+
+**Audit-status declaration (per CLAUDE.md Pre-commit Adversarial-Audit Discipline):** Audit dispatched: four parallel agents 2026-05-02 (canon revision drafter Opus, FP/FN sampling Opus, spec impact survey Sonnet, M2 verbless audit Sonnet); §8 entry above + corresponding canon edits.
 
 ---
 
