@@ -497,6 +497,63 @@ NARRATIVE_VERBS = {
     "wept", "kissed", "embraced", "bore", "conceived", "ran",
     "found", "lost", "asked", "begged", "demanded", "withheld",
     "removed", "uncovered", "revealed", "concealed",
+    # 2026-05-04 Class 2: corpus-scan surfaced perfect/wayyiqtol forms
+    # (verbs where post-verbal NP is reliably the SUBJECT, not the object —
+    # speech/motion/perception/intransitive bias to minimize V+O false positives)
+    "turned", "encamped", "fathered", "defeated", "buried",
+    "walked", "repeated", "caused", "poured", "offered",
+    "finished", "sought", "acted", "reigned",
+    "overlaid", "fought", "filled", "appeared", "placed",
+    "led", "rebelled", "began", "presented",
+    "increased", "strengthened",
+    "grew", "spoken", "rejoiced", "ceased", "hurried",
+    "clothed", "belonged", "recounted", "enquired", "inquired",
+    "given", "taken", "gone", "come", "become",
+    "left", "begotten",
+    # 2026-05-04 Class 2: yiqtol speech verbs (Isa 40:1 "he says your god")
+    "says", "speaks", "declares", "proclaims", "calls", "answers",
+    "replies", "swears", "commands", "shouts", "whispers", "preaches",
+    "tells", "asks", "cries",
+    # 2026-05-04 Class 2: yiqtol bare forms (used after will/shall aux)
+    # Speech
+    "say", "speak", "declare", "proclaim", "call", "answer", "reply",
+    "swear", "command", "shout", "preach", "tell", "ask", "cry",
+    # Perception
+    "see", "look", "hear", "listen", "perceive", "watch", "observe",
+    # Motion
+    "arise", "rise", "go", "return", "depart", "flee",
+    "enter", "exit", "cross", "pass", "approach", "draw",
+    "ascend", "descend", "travel", "journey", "wander", "sojourn",
+    # Action
+    "do", "make", "take", "give", "bring", "appoint", "put", "set",
+    "raise", "build", "establish", "fashion", "form", "create",
+    "send", "kill", "strike", "smite", "save", "deliver", "rescue",
+    "judge", "rule", "anoint", "bless", "curse", "consecrate",
+    "choose", "select", "gather", "assemble", "summon",
+    "write", "read", "teach", "instruct", "show",
+    "serve", "worship", "bow", "kneel", "prostrate",
+    "eat", "drink", "taste", "feed",
+    "seize", "grab", "capture", "catch", "hold", "carry", "lift",
+    "pursue", "chase", "hunt",
+    "open", "close", "shut", "cover",
+    "break", "tear", "split", "divide", "separate",
+    "burn", "destroy", "demolish",
+    "love", "hate", "reject", "accept",
+    "forget", "forgive", "rebuke", "warn",
+    "number", "count", "measure",
+    # Mental
+    "know", "remember", "fear", "trust", "believe", "think",
+    "consider", "decide", "intend", "purpose",
+    # Existence
+    "be", "live", "die", "dwell", "stand", "sit", "lie",
+    "sleep", "awake", "rest", "remain",
+    # Other yiqtol bare forms
+    "hurl", "swallow", "vomit", "pray", "sacrifice", "vow",
+    "fall", "row", "stop", "prepare",
+    "hide", "deceive", "stretch", "name", "spread", "plant",
+    "drive", "circumcise", "weep", "kiss", "embrace",
+    "bear", "conceive", "run", "find", "lose", "beg", "demand",
+    "withhold", "remove", "uncover", "reveal", "conceal",
 }
 
 # Closed list of proper-name subjects (one-word). Capitalization is the
@@ -632,7 +689,7 @@ def _matches_compound_proper(tokens: list[str], start: int) -> int:
 # the eyes of both of them" — without aux-handling, regex captured "were"
 # as the verb token and skipped the spec).
 _VS_OPEN_RE = re.compile(
-    r"^(and\s+)?(he|she|it|they)\s+((?:was|were|is|are|has|have|had)\s+)?(\w+)\b",
+    r"^(and\s+)?(he|she|it|they)\s+((?:was|were|is|are|has|have|had|will|shall|may|might|would|could|should)\s+)?(\w+)\b",
     re.IGNORECASE,
 )
 
