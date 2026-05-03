@@ -322,6 +322,37 @@ To compare spec findings before/after a code change, I used `git stash push → 
 
 `apply_validators.py` (standalone validators with adoption gate) and `apply_specs.py` (spec-runner findings) are two separate cascade engines. `refresh_book.py` only invokes the first. So when a spec_runner change lands, you must manually run `apply_specs --all-books` BEFORE `refresh_book --all-books --build`. This is a footgun unless you already know the architecture. **Eventual fix:** unified cascade pipeline. **Interim discipline:** a comment in CLAUDE.md (Follow-On Rebuild Cascade section) and a warning in apply_specs.py output noting that refresh_book is downstream.
 
+### H5. The dry-run cascade RUNAWAY artifact
+
+`apply_specs.py` cascades to convergence over MAX_PASSES=25 passes. Pre-2026-05-03, dry-run mode skipped writes (lines 217-218, 238-239) but the cascade loop still ran until convergence. Each pass re-read the same unchanged file from disk → identical findings → identical "would-fire" output → MAX_PASSES trip with a misleading "hot verses" report. The hot verses were the FIRST verses each spec fires on per-chapter, not actual oscillators.
+
+This wasted a full session-arc cycle: 2026-05-02 dispatched the m4_e cognition-verb spec investigation against a "Gen 3:5 RUNAWAY" that was a dry-run artifact. m4_e was perfectly innocent — fired zero times on current v2 (Gen 3:5 already merged by hand-edit) and converged in one pass on v1 baseline. The actual oscillation was S4↔M2 at Gen 33:2 et al., entirely unrelated. The session deferred m4_e on a phantom blocker.
+
+**Fixed 2026-05-03:** `apply_specs.py` now exits dry-run after pass 1 with a clear stderr note ("dry-run: pass-1-only; cascade convergence requires real writes"). The post-convergence idempotency assertion (lines 248-261) is also skipped under dry-run for the same reason. Real RUNAWAY messages clarified to "real oscillation" wording.
+
+**Discipline going forward:**
+- Dry-run is a single-pass preview. To detect oscillation, re-run without `--dry-run` against a scratch copy of the corpus (under `C:/tmp/`).
+- When investigating a "RUNAWAY" report, FIRST check whether the originating run was dry-run. If so, the verses named in the hot-list are not necessarily oscillators — they may just be the first verses any spec fires on.
+- Carry-forward (separate cycle): cluster-cascade dispatcher silently bails on apply_specs RUNAWAY exit (code 2) without surfacing the warning to human-visible output. The dispatcher prompt should explicitly capture and report `[RUNAWAY]` lines from stderr. Until fixed, post-cascade verification on a couple of representative books in the main thread (non-dry-run) is essential before assuming cluster cascades converged cleanly.
+
+### H6. Verification-driven discovery is a first-class discovery method
+
+Across multiple 2026-05-02 cycles, engine fixes uncovered latent bugs in OTHER parts of the engine — not by intent, but because cascade verification of the immediate fix exposed pre-existing FPs/FNs that had been masked. Five cycles, four latent-bug surfacings: Sp\*-tail buried-verb in `morph_tags.is_finite_verb`, missing aspect `u` in `_FINITE_VERB_ASPECTS`, cross-verse merge in `validate_speech_intro_framing`, post-cascade misdiagnosis as oscillation that turned out to be dry-run artifact (H5).
+
+**The pattern:** a "cascade & verify" step is not just confirming the immediate change works — it's a fishing trip for latent bugs. Each verification cycle should treat unexpected results as discovery opportunities, not anomalies-to-suppress.
+
+**Discipline:** when verification surfaces unexpected behavior:
+1. Bisect against the baseline (stash uncommitted changes; does the issue persist?)
+2. If yes → pre-existing latent bug, not introduced by this cycle. Open a new investigation branch, don't try to fix it inside the current cycle.
+3. If no → the current change exposed it. Decide: fix in current cycle, or defer with a documented entry in `pending.md`.
+
+**Companion misdiagnosis-prevention discipline:** before accepting any "X is causing Y" hypothesis from a single observation, run a definitive falsification test:
+- For "spec X causes oscillation Y" → run X ALONE on the affected verse, in non-dry-run mode, against a scratch corpus. If 0 changes or single-pass convergence, X is innocent.
+- For "verse V is oscillating" → run the cascade on V in non-dry-run mode against a scratch corpus and observe the actual touch count. Don't trust dry-run RUNAWAY reports (H5).
+- For "the cascade silently bailed" → check the dispatcher's actual exit code and stderr capture, not just the summary line.
+
+The 2026-05-02 m4_e investigation was based on misdiagnosis A1 ("dry-run RUNAWAY = m4_e oscillating") + A2 ("Gen 5:31 / 24:30 oscillating in committed baseline") — both falsified by 2026-05-03 verification agents in <30 minutes once the falsification tests were dispatched. The investigation work itself was useful (uncovered the dry-run artifact and the real S4↔M2 partner), but the original framing was wrong. Cheaper to falsify-first than to debug-on-a-bad-premise.
+
 ---
 
 ## I. Origin of These Protocols
