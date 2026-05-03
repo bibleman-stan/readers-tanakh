@@ -491,6 +491,12 @@ NARRATIVE_VERBS = {
     # Frequent narrative + Jonah-relevant
     "hurled", "appointed", "swallowed", "vomited", "prayed", "sacrificed",
     "vowed", "fell", "rowed", "stopped", "feared", "prepared",
+    # 2026-05-02 additions surfaced by Gen 3 eng-gloss audit
+    "hid", "deceived", "stretched", "begat", "begot", "begot",
+    "named", "spread", "planted", "drove", "lifted", "circumcised",
+    "wept", "kissed", "embraced", "bore", "conceived", "ran",
+    "found", "lost", "asked", "begged", "demanded", "withheld",
+    "removed", "uncovered", "revealed", "concealed",
 }
 
 # Closed list of proper-name subjects (one-word). Capitalization is the
@@ -618,9 +624,15 @@ def _matches_compound_proper(tokens: list[str], start: int) -> int:
 # Match the V-S clause-opening pattern. Captures:
 #   group 1: leading conjunction/article ("and " or empty)
 #   group 2: subject pronoun (he/she/it/they)
-#   group 3: verb (must be on NARRATIVE_VERBS list — checked in code)
+#   group 3: optional auxiliary (was / were / is / are / has / had / have)
+#            for passive-voice patterns like "and they were opened the eyes"
+#   group 4: main verb (must be on NARRATIVE_VERBS list — checked in code)
+# 2026-05-02: extended to optionally consume an aux verb for passive-V patterns
+# (Gen 3:7 `וַתִּפָּקַחְנָה עֵינֵי שְׁנֵיהֶם` glossed "and they were opened
+# the eyes of both of them" — without aux-handling, regex captured "were"
+# as the verb token and skipped the spec).
 _VS_OPEN_RE = re.compile(
-    r"^(and\s+)?(he|she|it|they)\s+(\w+)\b",
+    r"^(and\s+)?(he|she|it|they)\s+((?:was|were|is|are|has|have|had)\s+)?(\w+)\b",
     re.IGNORECASE,
 )
 
@@ -648,7 +660,8 @@ def pass3_vs_reorder(line: str, in_poetic: bool) -> str:
 
     lead = m.group(1) or ""    # "and " or ""
     pron = m.group(2)          # he/she/it/they
-    verb = m.group(3)          # candidate verb token
+    aux  = (m.group(3) or "").rstrip()  # "was"/"were"/etc. or ""
+    verb = m.group(4)          # candidate verb token (the content verb)
     if verb.lower() not in NARRATIVE_VERBS:
         return line
 
@@ -736,13 +749,20 @@ def pass3_vs_reorder(line: str, in_poetic: bool) -> str:
         return line
 
     # Reorder. Re-attach particle (and/or short-PP) after the verb in
-    # canonical S-V-particle-PP-O order.
+    # canonical S-V-particle-PP-O order. Auxiliary (was/were/etc.) precedes
+    # the main verb in the reorder ("and they were opened the eyes ..." →
+    # "and the eyes ... were opened").
     #   "and he sent off Moses his father-in-law"
     #     → "and Moses sent off his father-in-law"
     #   "and he said to him Yahweh X"
     #     → "and Yahweh said to him X"
+    #   "and they were opened the eyes of both of them"
+    #     → "and the eyes of both of them were opened"
     after_subj = rest_orig[len(subj_str):].lstrip()
-    new = f"{lead}{subj_str} {verb}"
+    if aux:
+        new = f"{lead}{subj_str} {aux} {verb}"
+    else:
+        new = f"{lead}{subj_str} {verb}"
     if particle_consumed:
         new += f" {particle_consumed}"
     if short_pp_consumed:

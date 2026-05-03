@@ -547,10 +547,15 @@ def aggregate_word_gloss(morph_rows: list[dict]) -> str:
         # Replace dot-notation with spaces (Cherith morpheme separator)
         # e.g. "it.came" → "it came", "(dm).that" → "(dm) that"
         g = g.replace(".", " ")
-        # Strip leading discourse-marker / complementizer tags that Cherith
-        # prepends to content glosses, e.g. "(dm) that" → "that".
-        g = re.sub(r"^\(dm\)\s*", "", g, flags=re.IGNORECASE)
-        g = re.sub(r"^\(cmp\)\s*", "", g, flags=re.IGNORECASE)
+        # Strip ALL pure-annotation bracketed tags ANYWHERE in the string.
+        # These are morphological-annotation tags from Cherith — not natural
+        # English content. Mid-string occurrences come from dot-notation
+        # like "and.(dm)" → "and (dm)" after the above replace, where the
+        # leading-only strip below would miss them. (Stan-flagged 2026-05-02
+        # Gen 3:6 line 2 `and (dm) that was a delight ...`.)
+        # Cherith census: (et) 9303, (the) 7098, (dm) 4370, (cmp) 1106 —
+        # these four cover the bulk and are unambiguous annotations.
+        g = re.sub(r"\((?:dm|cmp|et|the)\)\s*", "", g, flags=re.IGNORECASE)
         # Skip fully trivial/empty tokens (whole gloss is a tag or blank)
         g_stripped = g.strip()
         if g_stripped.lower() in EMPTY_GLOSS_TOKENS:
