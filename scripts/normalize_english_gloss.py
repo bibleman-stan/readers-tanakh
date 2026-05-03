@@ -997,6 +997,41 @@ _GENUINE_DOUBLINGS_FINAL = frozenset({
     'go', 'arise', 'awake', 'come', 'pass', 'turn', 'return',
     'day', 'days', 'year', 'years',
     'seed',
+    # 2026-05-04 Class 1: rhetorical-doubling whitelist derived from corpus
+    # scan of v0/prose Hebrew + Macula gloss lookup (187 unique Hebrew
+    # doublings → 192 unique English gloss tokens). Preserves intentional
+    # Hebrew doublings like נַחֲמוּ נַחֲמוּ (Isa 40:1 "comfort comfort"),
+    # קָדוֹשׁ קָדוֹשׁ קָדוֹשׁ (Isa 6:3 "holy holy holy"),
+    # אַבְרָהָם אַבְרָהָם (Gen 22:11 "Abraham Abraham"), etc.
+    'about', 'abraham', 'absalom', 'act', 'actually', 'aha', 'alas', 'all',
+    'altar', 'amen', 'approaching', 'ariel', 'around', 'asahel', 'ashamed',
+    'ask', 'assigned', 'back', 'bad', 'bare', 'bears', 'belonged', 'bereaved',
+    'bethel', 'bless', 'bright', 'bring', 'brothers', 'burn', 'burnt',
+    'captivity', 'cast', 'certainly', 'child', 'city', 'clans', 'clothed',
+    'comfort', 'completely', 'covering', 'creeping', 'cubit', 'death', 'deed',
+    'depart', 'destroy', 'destroyed', 'diligently', 'direction', 'ditches',
+    'draw', 'dreamed', 'eat', 'evening', 'ever', 'exalted', 'exceedingly',
+    'explicitly', 'expressly', 'extorted', 'eye', 'fallen', 'famine', 'far',
+    'father', 'favor', 'flee', 'foundation', 'foxes', 'fully', 'gains', 'get',
+    'give', 'going', 'gold', 'grace', 'great', 'guilt', 'harp', 'haughty',
+    'head', 'heaps', 'hear', 'herd', 'here', 'highly', 'holy', 'indeed',
+    'inheritance', 'inward', 'iron', 'ithiel', 'jacob', 'judge', 'just',
+    'king', 'know', 'land', 'lay', 'like', 'listen', 'little', 'living',
+    'lo-ammi', 'man', 'mene', 'morning', 'moses', 'multitudes', 'nation',
+    'noah', 'o', 'offering', 'offerings', 'only', 'out', 'own', 'parts',
+    'people', 'perez', 'perished', 'person', 'phinehas', 'pieces', 'pits',
+    'praises', 'prophets', 'provinces', 'red', 'reigned', 'righteousness',
+    'road', 'robbed', 'rod', 'rouse', 'ruin', 'sabbath', 'sacrificing',
+    'sake', 'samuel', 'say', 'seek', 'sevens', 'shem', 'shepherds',
+    'shouting', 'show', 'shut', 'silver', 'sing', 'slaughter', 'slaughtered',
+    'sojourners', 'solemnly', 'son', 'spit', 'spots', 'stew', 'stone', 'stop',
+    'strength', 'surely', 'swarming', 'sword', 'tear', 'tell', 'tenth',
+    'terah', 'thing', 'treason', 'unfaithfully', 'unjustly', 'up', 'upwards',
+    'urgently', 'utterly', 'vow', 'wage', 'wall', 'war', 'warn', 'way',
+    'weep', 'well', 'went', 'wise', 'woe', 'word', 'yahweh', 'young',
+    'yourself',
+    # Note: 'god' deliberately EXCLUDED — too generic, FP risk if any
+    # Macula glitch produces "god god" non-rhetorically.
 })
 
 _DOUBLED_WORD_RE_FINAL = re.compile(r'\b(\w+)\b \1\b', re.IGNORECASE)
