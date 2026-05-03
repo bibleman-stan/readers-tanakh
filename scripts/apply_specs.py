@@ -192,7 +192,9 @@ def apply_to_book(corpus_dir: Path, runner: SpecRunner, book_dir_name: str,
         if passes > MAX_PASSES:
             hot = [(k, v) for k, v in per_verse_touch_count.items() if len(v) > 5]
             hot.sort(key=lambda x: -len(x[1]))
-            print(f"[RUNAWAY] {book_dir_name}: exceeded MAX_PASSES={MAX_PASSES}", file=sys.stderr)
+            print(f"[RUNAWAY] {book_dir_name}: real oscillation — exceeded MAX_PASSES={MAX_PASSES} "
+                  f"(files were written each pass; these are genuine oscillators, not dry-run artifacts)",
+                  file=sys.stderr)
             for (book, ch, vs), touches in hot[:10]:
                 last5 = touches[-5:]
                 print(f"  {book} {ch}:{vs} touched {len(touches)}x — last 5: {last5}", file=sys.stderr)
@@ -245,20 +247,32 @@ def apply_to_book(corpus_dir: Path, runner: SpecRunner, book_dir_name: str,
         if pass_total == 0:
             break
 
-    # Safety net 2: post-convergence idempotency assertion (severity_filter is
-    # single-string in spec_runner, so we run twice and combine)
-    leftover_m = runner.run_corpus(corpus_dir, book_filter=book_dir_name,
-                                    severity_filter="STRONG-MERGE-CANDIDATE")
-    leftover_s = runner.run_corpus(corpus_dir, book_filter=book_dir_name,
-                                    severity_filter="STRONG-SPLIT-CANDIDATE")
-    leftover = leftover_m + leftover_s
-    if leftover:
-        print("NON-IDEMPOTENT CONVERGENCE: cascade reported clean but spec re-emits findings",
-              file=sys.stderr)
-        for f in leftover[:5]:
-            print(f"  file={f.file} line={getattr(f,'line','-')} rule={getattr(f,'rule','-')} "
-                  f"prior_line={getattr(f,'prior_line','-')!r}", file=sys.stderr)
-        sys.exit(3)
+        # Dry-run: one pass only.  Cascade convergence requires real writes;
+        # without them pass 2 reads the same file as pass 1 and loops forever,
+        # triggering a phantom RUNAWAY.  Print a note and exit the loop.
+        if dry_run:
+            print(
+                "[dry-run] pass-1-only: showing what ONE pass would do. "
+                "Cannot detect cascade convergence — re-run without --dry-run for full cascade.",
+                file=sys.stderr,
+            )
+            break
+
+    # Safety net 2: post-convergence idempotency assertion.
+    # Meaningless in dry-run (files were not written), so skip it.
+    if not dry_run:
+        leftover_m = runner.run_corpus(corpus_dir, book_filter=book_dir_name,
+                                        severity_filter="STRONG-MERGE-CANDIDATE")
+        leftover_s = runner.run_corpus(corpus_dir, book_filter=book_dir_name,
+                                        severity_filter="STRONG-SPLIT-CANDIDATE")
+        leftover = leftover_m + leftover_s
+        if leftover:
+            print("NON-IDEMPOTENT CONVERGENCE: cascade reported clean but spec re-emits findings",
+                  file=sys.stderr)
+            for f in leftover[:5]:
+                print(f"  file={f.file} line={getattr(f,'line','-')} rule={getattr(f,'rule','-')} "
+                      f"prior_line={getattr(f,'prior_line','-')!r}", file=sys.stderr)
+            sys.exit(3)
 
     return (total_changes, passes, dict(per_verse_touch_count))
 
@@ -275,6 +289,10 @@ def main():
 
     if not args.book and not args.all_books:
         ap.error("specify --book NAME or --all-books")
+
+    if args.dry_run:
+        print("[dry-run] single-pass preview only — cascade convergence requires real writes.",
+              file=sys.stderr)
 
     runner = SpecRunner(args.specs)
     corpus_dir = ROOT / args.corpus
