@@ -41,6 +41,11 @@ guards:
   - next_line_is_vav_coord_pp     # block re-absorbing post-S1-split coord-PP enumeration members
   - next_line_is_vav_coord_np     # block re-absorbing post-S2-split coord-NP enumeration members
   - next_line_is_wayyiqtol        # block re-absorbing post-S3-split wayyiqtol-headed lines
+  - next_line_is_verbless_predication  # Path 1 (§5 H5b): verbless equational
+                                        # clauses on N+1 are propositionally
+                                        # complete ATUs, NOT stranded bare-NP
+                                        # complements. Motivating case: Isa 40:6
+                                        # כָּל־הַבָּשָׂר חָצִיר.
 
 annotation_template: "M2 verb + bare-NP rebond (combined {pwc} prosodic words)"
 suggested_action: MERGE

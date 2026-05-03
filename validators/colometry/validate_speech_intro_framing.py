@@ -1,20 +1,45 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Validate canon Rule H5 — Direct-Speech Framing Default.
+Validate canon Rule H5 + Rule H5b — Direct-Speech Framing & Speech-Act
+Announcement Default.
+
+Path 1 canon revision (2026-05-02): the prior "short-framing-default merges"
+stance is RETIRED. Per §5 H5b, a finite speech-act verb predicates a complete
+speech-event; the quoted content is a distinct atomic thought (§1 SJ3 + §5.0
+Propositional Completeness Test). The default is SPLIT between announcement
+and content regardless of frame length. The previous merge-default conflated
+informational completeness ("reader hasn't been told what was said yet") with
+propositional completeness; H5b operationalizes the distinction.
+
+Adoption status (per `apply_validators.py`):
+  - STRONG-SPLIT-CANDIDATE  → adopted. Long frame combined with speech content
+                              on the same line is a clean split.
+  - STRONG-MERGE-CANDIDATE  → RETIRED for the solo-speech-verb arm. The
+                              former auto-merge of bare wayyiqtol speech-verbs
+                              with their following complement clause now emits
+                              REVIEW-REQUIRED only (see solo-speech branch
+                              below ~lines 402-428). The narrow §5 H5
+                              scope-economy carve-out (dialogue-chain visual
+                              rhythm, ≥4 consecutive turns) is editor-judged,
+                              Category B per §2.
 
 Rule H5 (canon §5 H5; Layer 3 editorial rule):
 When a speech-intro frame ends with לֵאמֹר (the bare infinitive complementizer
-marking speech onset), the frame length governs whether framing and speech-opening
-appear on the same line or separate lines:
-
-  - Short framing (≤ 3 prosodic words in the frame before לֵאמֹר):
-    Framing merges with the speech-opening cola on ONE line.
-    Violation: frame and speech-opening are on SEPARATE lines.
+marking speech onset), the frame length governs whether framing appears on its
+own line or merges with antecedent recipient/location phrase. Splitting between
+the speech-act announcement and the quoted content is independently mandated by
+H5b regardless of frame length.
 
   - Long framing (≥ 4 prosodic words, or embedded location/recipient phrase):
     Framing gets its OWN line; speech opens on the NEXT line.
     Violation: frame and speech-opening appear on the SAME line.
+    → STRONG-SPLIT-CANDIDATE (adopted).
+
+  - Short framing (≤ 2 prosodic words + לֵאמֹר):
+    Historical merge-with-speech-opening default. Per Path 1, this is
+    REVIEW-REQUIRED (no longer auto-merged); the editor decides whether
+    the H5 scope-economy carve-out applies.
 
   - Boundary case (exactly 3 prosodic words — judgment territory):
     Flag REVIEW-REQUIRED. The canon marks this as a judgment call.
@@ -129,6 +154,77 @@ def is_prophetic_formula_line(bare_tokens: list[str]) -> bool:
     if not bare_tokens:
         return False
     return bare_tokens[0] in PROPHETIC_FORMULA_SKELETONS
+
+
+# ---------------------------------------------------------------------------
+# Path-1 carve-out classifier (annotation-only — no severity change)
+# ---------------------------------------------------------------------------
+
+# Sifrei Emet poetic-register books for meter-protect carve-out.
+SIFREI_EMET_BOOK_FRAGMENTS = ("psalms", "proverbs", "job")
+
+# Homograph speech-verb skels — speech sense ambiguous without TAHOT confirmation.
+HOMOGRAPH_SPEECH_VERB_SKELETONS = {"ויוסף", "ויען", "וידבר"}
+
+
+def classify_path1_carveout(
+    line: str,
+    next_line: str,
+    book_path_str: str,
+    line_first_token_tags: "list[str] | None" = None,
+) -> str | None:
+    """Return a Path-1 carve-out tag for a solo-speech-verb finding, or None.
+
+    Carve-outs surface in the brief so the editor can quickly triage
+    REVIEW-REQUIRED findings. Categories (per canon §5 H5b + Path 1
+    FP/FN audit 2026-05-02):
+      - "job-answering-formula" : line N is a 2-token wayyiqtol-answer
+        + speaker-name pattern, line N+1 is a verse-end solo speech-verb.
+      - "homograph-unconfirmed" : first-token skel is in
+        HOMOGRAPH_SPEECH_VERB_SKELETONS and TAHOT tag does not confirm
+        speech-verb sense (or no tag is available).
+      - "sifrei-emet-meter"     : chapter is in Sifrei Emet poetic register
+        and the speech frame is short (≤4 prosodic words).
+    """
+    n_toks = line.split()
+    if not n_toks:
+        return None
+    first_skel = strip_points(n_toks[0])
+
+    # Job answering-formula: line N = 2 toks, first is wayyiqtol-answer
+    # (וַיַּעַן/וַתַּעַן), line N+1 ends with sof-pasuq + solo speech-verb.
+    if len(n_toks) == 2 and first_skel in {"ויען", "ותען"}:
+        n1_stripped = next_line.rstrip()
+        n1_toks = n1_stripped.split()
+        if (len(n1_toks) == 1
+                and n1_stripped.endswith("׃")
+                and strip_points(n1_toks[0]) in {"ויאמר", "ויאמרו", "ותאמר", "ותאמרו"}):
+            return "job-answering-formula"
+
+    # Homograph speech-verb without TAHOT confirmation
+    if first_skel in HOMOGRAPH_SPEECH_VERB_SKELETONS:
+        confirmed = False
+        if line_first_token_tags:
+            # Best-effort import (only when needed) — validator runs standalone
+            try:
+                sys.path.insert(0, str(REPO_ROOT / "validators"))
+                from _shared import morph_tags as MT  # noqa: WPS433
+                for tag in line_first_token_tags:
+                    if MT.is_finite_verb(tag):
+                        confirmed = True
+                        break
+            except Exception:
+                pass
+        if not confirmed:
+            return "homograph-unconfirmed"
+
+    # Sifrei Emet meter-protect: book path contains psalms/proverbs/job
+    book_str = book_path_str.lower().replace("\\", "/")
+    if any(frag in book_str for frag in SIFREI_EMET_BOOK_FRAGMENTS):
+        if len(n_toks) <= 4:
+            return "sifrei-emet-meter"
+
+    return None
 
 
 def count_prosodic_words(tokens: list[str]) -> int:
@@ -325,23 +421,38 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
 
             if prosodic_count <= 2:
                 # SHORT frame (≤ 2 prosodic words plus לֵאמֹר):
-                # Frame MUST merge with speech-opening on one line.
+                # Per Path 1 (§5 H5b), speech-act announcement is
+                # propositionally complete; default is SPLIT (no auto-merge).
+                # Surface as REVIEW-REQUIRED so editor can apply the §5 H5
+                # scope-economy carve-out (dialogue chain) when warranted.
                 if not has_speech_on_same_line and has_speech_on_next_line:
-                    # Frame is isolated — speech is on next line. Violation.
+                    carveout = classify_path1_carveout(
+                        line=line,
+                        next_line=next_content,
+                        book_path_str=str(path),
+                        line_first_token_tags=_tag_list_for(i, 0),
+                    )
+                    carveout_suffix = (
+                        f" [carve-out: {carveout} — likely no-action]" if carveout else ""
+                    )
                     violations.append({
                         "file": path.name,
                         "file_path": path,
                         "line_num": line_no,
                         "rule": "H5/speech-framing",
-                        "severity": "STRONG-MERGE-CANDIDATE",
+                        "severity": "REVIEW-REQUIRED",
                         "brief": (
                             f"short frame ({prosodic_count} prosodic words + לֵאמֹר) "
-                            f"isolated on its own line — merge with speech-opening below"
+                            f"isolated on its own line — REVIEW for §5 H5 "
+                            f"scope-economy carve-out (dialogue chain). Per Path 1 "
+                            f"§5 H5b, default is SPLIT."
+                            f"{carveout_suffix}"
                         ),
                         "line": line.rstrip(),
                         "next_line": next_content,
                         "next_line_num": next_content_line_num,
                         "leemor_pos": leemor_pos,
+                        "path1_carveout": carveout,
                     })
 
             elif prosodic_count == 3:
@@ -411,20 +522,33 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
                     next_content_line_num = j + 1  # 1-based
                     break
             if next_content:
+                carveout = classify_path1_carveout(
+                    line=line,
+                    next_line=next_content,
+                    book_path_str=str(path),
+                    line_first_token_tags=_tag_list_for(i, 0),
+                )
+                carveout_suffix = (
+                    f" [carve-out: {carveout} — likely no-action]" if carveout else ""
+                )
                 violations.append({
                     "file": path.name,
                     "file_path": path,
                     "line_num": line_no,
                     "rule": "H5/speech-framing",
-                    "severity": "STRONG-MERGE-CANDIDATE",
+                    "severity": "REVIEW-REQUIRED",
                     "brief": (
-                        f"solo speech verb ({tokens[-1]}) — propositionally empty; "
-                        f"merge with following complement clause"
+                        f"solo speech verb ({tokens[-1]}) — REVIEW for §5 H5 "
+                        f"scope-economy carve-out (dialogue chain). Per Path 1 "
+                        f"canon §5 H5b, speech-act announcement is propositionally "
+                        f"complete; default is SPLIT, not merge."
+                        f"{carveout_suffix}"
                     ),
                     "line": line.rstrip(),
                     "next_line": next_content,
                     "next_line_num": next_content_line_num,
                     "leemor_pos": None,
+                    "path1_carveout": carveout,
                 })
 
         # --- Secondary check: bare speech verb at MULTI-WORD line end (no לֵאמֹר) ---

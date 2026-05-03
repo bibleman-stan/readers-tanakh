@@ -3,9 +3,15 @@ rule: M4
 subcase: solo_action_verb
 severity: STRONG-MERGE-CANDIDATE
 description: |
-  Single-token bare wayyiqtol action-verb on its own line — propositionally
-  empty without its DO/complement on the next line. Sister to
-  m4_solo_speech_verb (which covers ויאמר / וידבר etc.) and m4_b_dibber_formula.
+  Single-token bare wayyiqtol action-verb on its own line whose obligatory
+  direct-object complement appears on the next line. The merge is
+  clause-nucleus integrity (M2 territory: subject + transitive verb +
+  obligatory DO = one clause-nucleus ATU per canon §1), not the retired
+  Path-1 "propositionally empty" frame. Action verbs in the closed list
+  below are transitive verbs whose valence is not satisfied without an
+  expressed DO. Sister to m4_b_dibber_formula; m4_solo_speech_verb is
+  REVIEW-REQUIRED only post-Path-1 (speech-act announcements ARE
+  propositionally complete; this spec is NOT).
 
   Stan-flagged 2026-05-01 (Exo 18:24 line 113 → 114):
     Line 113: וַיַּעַשׂ                       (and-he-did — bare verb)

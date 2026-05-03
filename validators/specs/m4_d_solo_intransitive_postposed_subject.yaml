@@ -4,12 +4,18 @@ subcase: solo_intransitive_postposed_subject
 severity: STRONG-MERGE-CANDIDATE
 description: |
   Single-token bare INTRANSITIVE wayyiqtol on its own line + postposed
-  subject (bare-NP / proper noun) on next line. V-S word order ATU bond.
+  subject (bare-NP / proper noun) on next line. V-S word order ATU bond
+  — clause-nucleus integrity (M2 territory: subject + verb = one clause-
+  nucleus ATU per canon §1), not the retired Path-1 "propositionally
+  empty" frame.
 
-  Sister to m4_c_solo_action_verb (transitive V + DO) and m4_solo_speech_verb
-  (speech V + complement). The semantic principle is the same — the line is
-  propositionally incomplete on its own — but the next-line bare-NP is the
-  verb's SUBJECT (postposed per Hebrew V-S word order), not its DO.
+  Sister to m4_c_solo_action_verb (transitive V + DO). The next-line
+  bare-NP is the verb's SUBJECT (postposed per Hebrew V-S word order),
+  binding into the same clause-nucleus as the verb. Distinct from
+  m4_solo_speech_verb (now REVIEW-REQUIRED only): speech-act announcements
+  ARE propositionally complete on their own under Path 1 §5 H5b;
+  intransitive-V + postposed-S binds because subject is the obligatory
+  argument that completes the clause-nucleus.
 
   Stan-flagged 2026-05-02 (Gen 3:1 line 2 `יְהוָה אֱלֹהִים` stranded as
   subject of relative-clause `אֲשֶׁר עָשָׂה` on prior line). Same structural

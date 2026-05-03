@@ -1,7 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Validate canon Rule H5 justification 5 — Circumstantial Clause own-line candidate.
+Validate canon §3 Structural Justification 5 — Circumstantial Clause
+own-line candidate. (Note: this validator targets §3 SJ5 — substantive-
+adjunct-as-own-focus — NOT Rule H5 / H5b speech-framing. The earlier
+"H5 justification 5" header conflated the two; corrected per Path 1
+canon revision 2026-05-02.)
 
 Pattern: vav + non-verb-initial circumstantial clause (NP/pronoun) split.
 

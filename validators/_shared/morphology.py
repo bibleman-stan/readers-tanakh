@@ -2216,6 +2216,91 @@ def is_bare_noun_token(token: str, tag_list: "list[str] | None" = None) -> bool:
     return True
 
 
+def is_verbless_predication(line: str) -> bool:
+    """Detect verbless equational clauses (subject + nominal predicate).
+
+    Per Path 1 canon §5 H5b, verbless predications are propositionally
+    complete ATUs on their own. M2 merge specs that target "bare-NP after
+    finite verb" must not absorb a verbless predication on line N+1.
+
+    Conditions (all required):
+    1. No finite verb anywhere in the line
+    2. No PP-prefix opener (line_starts_with_prep semantic, but excluding
+       NON_PREP_2CHAR_PREFIX so כָּל-X / כִּי-X don't false-positive as PP)
+    3. First token not a כִּי/אֲשֶׁר/הֲכִי subordinator (these pass
+       is_bare_noun_token but are not predicate subjects)
+    4. No vav-coord between bare nouns (rules out coordinated NPs like
+       אַבְרָם וְשָׂרַי)
+    5. First token NOT a construct head (rules out genealogy time-measures
+       like שִׁבְעַת יָמִים, construct-chain NP objects like רָאשֵׁי הֶהָרִים)
+    6. Last token IS bare-noun, NOT construct-head, NOT maqqef-bound to anything
+    7. ≥2 bare-NP tokens total
+
+    Returns True for: כָּל־הַבָּשָׂר חָצִיר (Isa 40:6 motivating case),
+    most Sifrei Emet predications. Returns False for: bare DO complements,
+    coordinated NPs, construct chains, subordinate clauses.
+    """
+    toks = line.split()
+    if len(toks) < 2:
+        return False
+
+    # Condition 1: no finite verb anywhere
+    for t in toks:
+        if is_finite_verb_token(t):
+            return False
+
+    # Condition 5: first token is not a construct head
+    if is_construct_head_token(toks[0]):
+        return False
+
+    # Condition 3: first token not a subordinator
+    first_skel = skel(toks[0])
+    if first_skel in {"כי", "כיא", "אשר", "הכי"}:
+        return False
+
+    # Condition 2: not a PP-opener (with NON_PREP_2CHAR_PREFIX exclusion).
+    # Inline because line_starts_with_prep doesn't apply the NON_PREP_2CHAR_PREFIX
+    # exclusion needed here (would mis-classify כָּל־הַבָּשָׂר as PP).
+    if MAQQEF in toks[0]:
+        s_head = skel(toks[0].split(MAQQEF, 1)[0])
+        if s_head in PREP_SKELETONS:
+            return False
+        if len(s_head) >= 3 and s_head[0] == "ו" and s_head[1:] in PREP_SKELETONS:
+            return False
+        if (len(s_head) >= 2 and s_head[0] in BOUND_PREP_PREFIXES
+                and not is_finite_verb_skel(s_head)
+                and s_head[:2] not in NON_PREP_2CHAR_PREFIX
+                and s_head != "לא"):
+            return False
+    else:
+        s_first = first_skel
+        if s_first in PREP_SKELETONS:
+            return False
+        if (len(s_first) >= 2 and s_first[0] in BOUND_PREP_PREFIXES
+                and not is_finite_verb_skel(s_first)
+                and s_first[:2] not in NON_PREP_2CHAR_PREFIX
+                and s_first != "לא"):
+            return False
+
+    # Condition 4: no vav-coord between bare-nouns (vav-prefix on a
+    # non-prep token signals coordinated NP, not predication).
+    for t in toks[1:]:
+        s = skel(t)
+        if len(s) >= 2 and s[0] == "ו" and s[1] not in BOUND_PREP_PREFIXES:
+            return False
+
+    # Condition 6: last token is bare-noun, not construct-head, not maqqef-bound
+    last_tok = toks[-1]
+    if MAQQEF in last_tok:
+        return False
+    if is_construct_head_token(last_tok):
+        return False
+    if not is_bare_noun_token(last_tok):
+        return False
+
+    return True
+
+
 def is_definite_adjective_token(token: str, tag_list: "list[str] | None" = None) -> bool:
     """True if token is article-marked + adjective stem.
 

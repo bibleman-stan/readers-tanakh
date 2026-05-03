@@ -4,19 +4,23 @@ subcase: solo_cognition_verb_clausal
 severity: STRONG-MERGE-CANDIDATE
 description: |
   Short cognition/perception clause (V-medial, opens with כי) +
-  כי-complement clause = one ATU. Mirror of m4_solo_speech_verb but for
-  cognition predicates (ידע / שמע / ראה qal) when their כי-clause object
-  appears on the next line.
+  כי-complement clause = one ATU under clause-nucleus integrity (M2
+  territory: matrix verb's obligatory clausal complement = one
+  clause-nucleus per canon §1). Distinct from m4_solo_speech_verb
+  (REVIEW-REQUIRED only post-Path-1): a cognition predicate's
+  obligatory כי-clausal-complement is part of the verb's valence and
+  binds to the matrix; a speech-act announcement's quoted utterance is
+  a separate atomic thought (§5 H5b).
 
   Stan-flagged 2026-05-02 (Gen 3:5 line 1):
     Line 1: כִּי יֹדֵעַ אֱלֹהִים           (for-God-knows ...)
     Line 2: כִּי בְּיוֹם אֲכָלְכֶם מִמֶּנּוּ ...   (that in-the-day ...)
     After:  כִּי יֹדֵעַ אֱלֹהִים כִּי בְּיוֹם אֲכָלְכֶם ...   [V + complement-clause]
 
-  The matrix "God-knows" is propositionally incomplete on its own — needs
-  the כי-complement clause that specifies what God knows. Splitting them
-  is an over-break by the No-Anchor Test (canon §5.0): line 1 lacks an
-  anchor (the embedded clause) for its propositional content.
+  The matrix "God-knows" requires the כי-complement clause — the verb's
+  valence is not satisfied without an expressed object-of-cognition.
+  This is the obligatory-complement reading of clause-nucleus integrity,
+  not the retired "propositionally empty" frame.
 
   Trigger restricts to `line N opens with כי` to:
     (a) Distinguish from Gen-1 cosmogonic refrain (`וַיַּרְא אֱלֹהִים אֶת־X

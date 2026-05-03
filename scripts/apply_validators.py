@@ -97,8 +97,12 @@ ADOPTED_VALIDATORS: dict[str, AdoptionSpec] = {
         "STRONG-SPLIT-CANDIDATE",
     },
     "validate_speech_intro_framing": {
-        "STRONG-MERGE-CANDIDATE",
-        # STRONG-SPLIT-CANDIDATE not yet adopted for this validator
+        # STRONG-MERGE-CANDIDATE retired per Path 1 canon revision (2026-05-02 §5 H5b):
+        # speech-act announcements are propositionally complete on their own.
+        # Bare wayyiqtol speech-verbs no longer auto-merge with their content.
+        # The narrow scope-economy carve-out (§5 H5 dialogue chain) is
+        # editor-driven via REVIEW-REQUIRED findings.
+        "STRONG-SPLIT-CANDIDATE",
     },
     "validate_wayehi_protasis": {
         "STRONG-MERGE-CANDIDATE",

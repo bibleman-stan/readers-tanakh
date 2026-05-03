@@ -1,28 +1,29 @@
 name: m4_solo_speech_verb
 rule: M4
 subcase: solo_speech_verb
-severity: STRONG-MERGE-CANDIDATE
+severity: REVIEW-REQUIRED
 description: |
-  Single-token bare wayyiqtol speech-verb on its own line — propositionally
-  empty without its complement clause on the next line.
+  Single-token bare wayyiqtol speech-verb on its own line. **Per Path 1
+  canon revision (2026-05-02 §5 H5b): this spec is REVIEW-REQUIRED only.**
+  A finite speech-act verb is propositionally complete on its own
+  (canon §1 SJ3, §1 M3 contrast paragraph, §5.0 Propositional
+  Completeness Test, §5 H5b). The quoted content on the next line is
+  a distinct atomic thought, not a missing complement.
 
-  Distinct from the multi-word-line speech-verb-at-end case
-  (which is REVIEW-REQUIRED in `validate_speech_intro_framing.py`):
-  this spec covers ONLY the case where the entire line consists of just
-  one wayyiqtol speech verb. That case is unambiguously a merge.
+  This spec surfaces the pattern as an editorial judgment call for the
+  narrow scope-economy carve-out in §5 H5: a bare-frame + ≤3-prosodic-
+  word speech-opening MAY merge for visual rhythm in dialogue chains
+  (≥4 consecutive turns). NOT mechanical default — Category B per §2.
 
-  Concrete instance (audit 2026-05-01 D4 Class E, target):
+  Earlier "propositionally empty without its complement clause" framing
+  conflated propositional with informational completeness; that framing
+  is retired with Path 1.
+
+  Concrete carve-out instance:
     1 Sam 1:18 lines 89-90:
       וַתֹּ֕אמֶר                                        (and she said)
       תִּמְצָ֧א שִׁפְחָתְךָ֛ חֵ֖ן בְּעֵינֶ֑יךָ            (may your maidservant find favor in your eyes)
-                ^ should merge — solo speech verb
-
-  Why a spec mirrors the standalone validator: `apply_validators.py`
-  enters PRESERVE mode on chapters where v2/he diverges from
-  v1+adopted_validators output, so new STRONG findings from the
-  standalone validator don't get applied to existing v2/he. The
-  spec_runner cascade has no PRESERVE limitation — this spec is the
-  enforcement mechanism for the class.
+    Solo speech verb in dialogue chain — REVIEW for editor scope-economy call.
 
   Closed list of speech-verb skels mirrors
   `BARE_SPEECH_VERB_SKELETONS` in `validate_speech_intro_framing.py`.
@@ -61,5 +62,5 @@ guards:
   - next_line_is_vav_coord_np     # block re-absorbing post-S2-split coord-NP enumeration members
   - next_line_is_wayyiqtol        # block re-absorbing post-S3-split wayyiqtol-headed lines
 
-annotation_template: "Solo speech verb stranded — propositionally empty without complement ({pwc} prosodic words combined)"
-suggested_action: MERGE
+annotation_template: "Solo speech verb stranded — REVIEW for §5 H5 scope-economy carve-out (dialogue chain) ({pwc} prosodic words combined)"
+suggested_action: REVIEW

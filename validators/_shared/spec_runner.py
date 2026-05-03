@@ -568,6 +568,114 @@ def _g_next_wayyiqtol(l_n, l_n1, ctx):
     return True
 
 
+@_register_guard("next_line_is_verbless_predication")
+def _g_next_verbless_predication(l_n, l_n1, ctx):
+    """Fire (block emission) if line N+1 is a complete verbless equational
+    clause (subject + nominal predicate). Per canon §5 H5b: verbless
+    predications are propositionally complete ATUs; M2 merge specs must
+    not absorb them as if they were stray bare-NP complements.
+
+    Motivating case: Isa 40:6 כָּל־הַבָּשָׂר חָצִיר ('all flesh is grass').
+    Audit verdict (2026-05-02): blocks ~1,369 firings, ~85% true positives,
+    <2% FPs (compound divine names, appositional NPs).
+    """
+    return M.is_verbless_predication(l_n1)
+
+
+@_register_guard("job_answering_formula")
+def _g_job_answering_formula(l_n, l_n1, ctx):
+    """Path-1 carve-out: keep the Job answering-formula intact.
+
+    Pattern: line N is a 2-token wayyiqtol-answer + speaker-name
+    (וַיַּעַן + speaker), followed by line N+1 = solo speech-onset
+    verse-end (וַיֹּאמַ֑ר׃ or similar). Splitting line N would isolate
+    וַיַּעַן as a 1-PW orphan that fails the propositional-completeness
+    test in the OTHER direction. Per FP/FN audit (2026-05-02), ~24
+    Job chapters use this formula.
+
+    Returns True (block split-emit) iff:
+      - line_n is exactly 2 tokens
+      - line_n[0] is a wayyiqtol "answer" verb (ויען / ותען)
+      - line_n+1 ends with sof-pasuq AND opens with a solo speech-verb
+        (ויאמר / ויאמרו / ותאמר / ותאמרו)
+    """
+    n_toks = l_n.split()
+    if len(n_toks) != 2:
+        return False
+    sk0 = M.skel(n_toks[0])
+    if sk0 not in {"ויען", "ותען"}:
+        return False
+    n1_stripped = l_n1.rstrip()
+    n1_toks = n1_stripped.split()
+    if len(n1_toks) != 1:
+        return False
+    if not n1_stripped.endswith("׃"):
+        return False
+    sk_n1 = M.skel(n1_toks[0])
+    return sk_n1 in {"ויאמר", "ויאמרו", "ותאמר", "ותאמרו"}
+
+
+@_register_guard("homograph_speech_verb_check")
+def _g_homograph_speech_verb_check(l_n, l_n1, ctx):
+    """Path-1 carve-out: TAHOT-tag homograph guard for ויוסף / ויען / וידבר.
+
+    These skels are speech-verb ONLY when the tag's first verb morpheme is
+    appropriately marked. ויוסף can be 'Joseph' (proper noun) or 'and-he-added'
+    (action verb). וידבר can be 'and-he-spoke' OR 'and-he-subdued' (homonym).
+    ויען can be 'and-he-answered' OR 'and-he-subdued'.
+
+    For the spec_runner cascade context, we check whether line N's first
+    token has a TAHOT verb tag corresponding to a speech sense.
+
+    Returns True (block split-emit) when line_n's first token is one of
+    these ambiguous skels AND its tag does NOT confirm speech-verb sense.
+    Per FP/FN audit (2026-05-02), ~30-50 false positives suppressed.
+    """
+    n_toks = l_n.split()
+    if not n_toks:
+        return False
+    first_skel = M.skel(n_toks[0])
+    if first_skel not in {"ויוסף", "ויען", "וידבר"}:
+        return False
+    n_tag_lists = ctx.get("line_n_token_tags") or []
+    if not n_tag_lists or not n_tag_lists[0]:
+        # No tag available — can't disambiguate; conservatively block
+        # to avoid false splits.
+        return True
+    tags = n_tag_lists[0]
+    # Conservative classification: if any tag for this token is a finite
+    # verb, treat the speech-verb reading as confirmed (allow split → return False).
+    # Otherwise block.
+    has_speech_verb = False
+    for tag in tags:
+        if MT.is_finite_verb(tag):
+            has_speech_verb = True
+            break
+    return not has_speech_verb
+
+
+@_register_guard("sifrei_emet_meter_protect")
+def _g_sifrei_emet_meter_protect(l_n, l_n1, ctx):
+    """Path-1 carve-out: protect Sifrei Emet bicolon meter from over-splitting.
+
+    In Sifrei Emet (Pss/Prov/Job 3:1-42:6), short merged speech-frames
+    are often part of a propositionally-tight bicolon meter. Splitting
+    them disrupts established meter without propositional gain.
+
+    Returns True (block split-emit) iff:
+      - chapter is in Sifrei Emet poetic register
+      - line_n has ≤4 prosodic words (already a tight bicolon colon)
+    """
+    book = ctx.get("book")
+    chapter = ctx.get("chapter")
+    if not book or not chapter:
+        return False
+    if not is_poetic_register(book, chapter, ctx.get("verse")):
+        return False
+    n_toks = l_n.split()
+    return len(n_toks) <= 4
+
+
 @_register_guard("next_line_is_verb_initial")
 def _g_next_verb_initial(l_n, l_n1, ctx):
     """Fire (block) if the line AFTER the candidate pair (lookahead) starts with
