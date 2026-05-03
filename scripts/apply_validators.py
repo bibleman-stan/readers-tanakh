@@ -145,6 +145,28 @@ ALL_VALIDATORS: list[tuple[str, str]] = [
 
 
 # ---------------------------------------------------------------------------
+# Adoption / registry coupling assertion (canon §0.2.1)
+# ---------------------------------------------------------------------------
+# Every entry in ADOPTED_VALIDATORS must also appear in ALL_VALIDATORS, or
+# the validator's STRONG findings are silently invisible to the strong-queue
+# aggregator (the failure mode that surfaced via Jer 31:33 on 2026-05-04).
+# Run this check at module-import so any drift is caught immediately, not at
+# next spot-check.
+def _assert_adopted_in_all_validators() -> None:
+    runnable = {name for (_, name) in ALL_VALIDATORS}
+    missing = sorted(set(ADOPTED_VALIDATORS) - runnable)
+    if missing:
+        raise SystemExit(
+            f"ERROR (canon §0.2.1 registry coupling): the following validator(s) "
+            f"are in ADOPTED_VALIDATORS but missing from ALL_VALIDATORS, so "
+            f"their STRONG findings will never reach the strong queue: "
+            f"{missing}. Add the (script_path, name) tuple to ALL_VALIDATORS."
+        )
+
+_assert_adopted_in_all_validators()
+
+
+# ---------------------------------------------------------------------------
 # Subprocess helper — run one validator
 # ---------------------------------------------------------------------------
 

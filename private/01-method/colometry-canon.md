@@ -109,6 +109,24 @@ The canon and the corpus are evaluated against three governing values. These are
 
 **HOW WE KNOW:** Stan-articulation in the Path 1 deliberation (2026-05-02 session-notes archive); pattern observed across prior canon decisions where the same value-trio implicitly governed (te'amim demotion 2026-04-26, tier collapse 2026-04-27, no-permission-loop discipline 2026-04-29).
 
+### §0.2.1 Operationalizing Consistency — Validator Adoption Discipline
+
+A validator emitting a STRONG finding does not, on its own, update the corpus. Three accumulation paths leave validator-state and corpus-state drifting apart silently:
+
+**Adoption-without-cascade.** When a new STRONG arm is added to an adopted validator (or a new validator enters `ADOPTED_VALIDATORS`), its findings sit in the queue until `apply_validators --all-books --diff-apply` is run. `refresh_book.py`'s base-mode `apply_validators` preserves any v2/he chapter that has diverged from v1 + adopted_validators (the PRESERVE branch), so newly-emitting STRONG findings cannot reach already-edited chapters via base-mode at all. PRESERVE is asymmetric — it protects hand-edits but blocks retroactive cascade.
+
+**Run-without-adoption.** `ADOPTED_VALIDATORS` and `ALL_VALIDATORS` in `scripts/apply_validators.py` are separate registries. A validator marked adopted but missing from `ALL_VALIDATORS` is never invoked — its STRONG findings are invisible to the strong-queue aggregator. Both registries must be updated in lockstep when adopting a new validator (or the registries should be unified; deferred to infrastructure work).
+
+**REVIEW-by-default for tight patterns.** A validator that emits `REVIEW-REQUIRED` for an unambiguous tight pattern leaves that pattern un-applied indefinitely — no `apply_validators` path picks up REVIEW findings. Tight patterns with high-confidence guards (closed-list discriminants, tag-confirmed agreement checks) should be promoted to `STRONG-MERGE-CANDIDATE` / `STRONG-SPLIT-CANDIDATE` so the mechanical cascade reaches them. Per the standing "mechanical apply, not review queue" discipline, REVIEW is reserved for genuinely ambiguous edges, not as a default safety setting.
+
+**Discipline.** Every cycle that adds a new STRONG arm, new STRONG-emitting validator, or promotes REVIEW→STRONG MUST be followed by `apply_validators --all-books --diff-apply` in the same commit chain. Periodic re-cascade (every several sessions) catches drift from registry-mismatch fixes, accumulated PRESERVE-state chapters, and adopted validators that have never been retroactively applied. Without this discipline, the corpus accumulates known-but-unapplied findings — consistency erodes silently and only surfaces under spot-check.
+
+**Gap-detection heuristic.** When a validator's STRONG-count rises but the corpus shows no corresponding line-count change for the same period, suspect drift. Diagnostic: dry-run `apply_validators --all-books --diff-apply`; non-zero "would-apply" count = drift to fix.
+
+**WHY:** Stan's spot-check on Jer 31:33 (וְהֵ֖מָּה orphaned from יִֽהְיוּ־לִי לְעָם) surfaced what was actually a corpus-wide gap from accumulated under-cascading: a validator emitted REVIEW-REQUIRED for the pattern; promotion to STRONG-MERGE-CANDIDATE silently failed to apply because the validator was missing from `ALL_VALIDATORS`; cluster-cascade work was partially lost when a dispatched agent ran `git reset --hard HEAD`; and several adopted validators had findings that had never reached pre-existing PRESERVE chapters. The single visible line was the tip; the gap was structural. Codifying the discipline makes the consistency value enforceable rather than aspirational.
+
+**HOW WE KNOW:** 2026-05-04 session — Jer 31:33 spot-check → three drift mechanisms diagnosed → fixes landed (M4 STRONG arm + ALL_VALIDATORS registry coupling + corpus-wide cascade). Cross-session pattern: every prior canon-revision session has had a similar "rule landed but corpus didn't catch up" footnote in carry-forwards (Path 1 H5b retroactive cascade 2026-05-03 was the largest example: 2,034 splits applied retroactively after the rule was already settled).
+
 ---
 
 ## §1 The Framework — Proposition-First, Syntax-Constrained
