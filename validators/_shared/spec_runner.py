@@ -173,6 +173,13 @@ def _check_morphology(tok: str, morph: str, tag_list: Optional[list[str]] = None
             if len(s_head) >= 2 and s_head[0] in M.BOUND_PREP_PREFIXES and not M.is_finite_verb_skel(s_head):
                 if s_head[:2] in M.NON_PREP_2CHAR_PREFIX:
                     return False
+                # לא (lamed-aleph, 2 chars) is the negation particle, NOT a bound-prep.
+                # When maqqef-joined (לֹא־X), s_head == "לא". Local exclusion here only
+                # — global fix in NON_PREP_2CHAR_PREFIX has side-effects on
+                # is_bare_noun_token's classification of לְ+א* tokens (caused the
+                # 2026-05-02 reverted-fix oscillation on Gen 27:8 / 32:19).
+                if s_head == "לא":
+                    return False
                 return True
             return False
         s = M.skel(tok)
@@ -184,6 +191,9 @@ def _check_morphology(tok: str, morph: str, tag_list: Optional[list[str]] = None
         if len(s) >= 2 and s[0] in M.BOUND_PREP_PREFIXES and not M.is_finite_verb_skel(s):
             if s[:2] in M.NON_PREP_2CHAR_PREFIX:
                 return False
+            # Symmetric לא negation guard for the non-maqqef bound-prep path.
+            if s == "לא":
+                return False
             return True
         # vav-prefix tolerance — וְ + bound-prep + stem (e.g., וְלַחֹשֶׁךְ, וּבֵין)
         # Inner stem must not be a finite verb (rules out vav-conjunction + verb).
@@ -191,6 +201,9 @@ def _check_morphology(tok: str, morph: str, tag_list: Optional[list[str]] = None
             inner = s[1:]
             if inner not in M.QATAL_COMMON and not M.is_finite_verb_skel(inner):
                 if inner[:2] in M.NON_PREP_2CHAR_PREFIX:
+                    return False
+                # Symmetric לא negation guard for the vav-prefixed path (וְלֹא forms).
+                if inner == "לא":
                     return False
                 return True
         return False
