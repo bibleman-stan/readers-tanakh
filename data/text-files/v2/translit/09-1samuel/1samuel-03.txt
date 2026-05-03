@@ -18,7 +18,8 @@ vaiyomer | hineni
 
 3:5
 vaiyarotz | el | Eli
-vaiyomer | hini | ki | karata | li
+vaiyomer
+hini | ki | karata | li
 vaiyomer | lo | karati
 shuv | shekhav
 vaiyelekh
@@ -28,8 +29,10 @@ vaiyishkav
 vaiyosef | Yahweh | kero | od | Shemu'el
 vaiyakom | Shemu'el
 vaiyelekh | el | Eli
-vaiyomer | hini | ki | karata | li
-vaiyomer | lo | karati | veni
+vaiyomer
+hini | ki | karata | li
+vaiyomer
+lo | karati | veni
 shuv | shekhav
 
 3:7
@@ -39,11 +42,13 @@ veterem | yigaleh | elav | devar | Yahweh
 3:8
 vaiyosef | Yahweh | kero | Shemu'el | bashelishit
 vaiyakom | vaiyelekh | el | Eli
-vaiyomer | hini | ki | karata | li
+vaiyomer
+hini | ki | karata | li
 vaiyaven | Eli | ki | Yahweh | kore | lana'ar
 
 3:9
-vaiyomer | Eli | Lishmu'el | lekh | shekhav
+vaiyomer | Eli
+Lishmu'el | lekh | shekhav
 vehayah | im | yikra | eleikha | ve'amarta | daber | Yahweh | ki | shomea
 avdekha
 vaiyelekh | Shemu'el
@@ -83,7 +88,8 @@ vaiyomer | Shemu'el | beni
 vaiyomer | hineni
 
 3:17
-vaiyomer | mah | hadavar | asher | diber | eleikha | al | na | tekhached
+vaiyomer
+mah | hadavar | asher | diber | eleikha | al | na | tekhached
 mimeni | koh | ya'aseh | lekha | elohim
 vekhoh | yosif
 im | tekhached | mimeni | davar | mikol | hadavar | asher | diber | eleikha

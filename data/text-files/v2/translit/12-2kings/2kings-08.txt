@@ -1,5 +1,6 @@
 8:1
-Ve'elisha | diber | el | ha'ishah | asher | hecheyah | et | benah | lemor | kumi
+Ve'elisha | diber | el | ha'ishah | asher | hecheyah | et | benah | lemor
+kumi
 ulekhi | ati
 uveitekh
 veguri
@@ -28,13 +29,15 @@ et | kol | hagedolot | asher | asah | Elisha
 vayhi | hu | mesaper | lamelekh | et | asher | hecheyah | et | hamet
 vehineh | ha'ishah | asher | hecheyah | et | benah | tzo'eket | el | hamelekh | al | beitah
 ve'al | sadah
-vaiyomer | Gechazi | adoni | hamelekh | zot | ha'ishah
+vaiyomer | Gechazi | adoni | hamelekh
+zot | ha'ishah
 vezeh | benah | asher | hecheyah | Elisha
 
 8:6
 vaiyish'al | hamelekh | la'ishah
 vatesaper | lo
-vaiyiten | lah | hamelekh | saris | echad | lemor | hasheiv | et | kol | asher | lah | ve'et | kol | tevu'ot | hasadeh
+vaiyiten | lah | hamelekh | saris | echad | lemor
+hasheiv | et | kol | asher | lah | ve'et | kol | tevu'ot | hasadeh
 miyom | azevah | et | ha'aretz | ve'ad | atah
 
 8:7
@@ -43,7 +46,8 @@ Uven | Hadad | melekh | Aram | choleh | vaiyugad | lo | lemor
 ba | ish | ha'elohim | ad | henah
 
 8:8
-vaiyomer | hamelekh | el | Chazah'el | kach | beyadekha | minchah
+vaiyomer | hamelekh | el | Chazah'el
+kach | beyadekha | minchah
 velekh | likrat | ish | ha'elohim
 vedarashta | et | Yahweh | me'oto | lemor
 ha'echyeh | mecholi | zeh
@@ -68,14 +72,17 @@ vaiyasem | ad | bosh
 vaiyevek | ish | ha'elohim
 
 8:12
-vaiyomer | Chaza'el | madua | adoni | vokheh
-vaiyomer | ki | yada'ti | et | asher | ta'aseh | livnei | Yisra'el | ra'ah | mivtzereihem | teshalach | ba'esh
+vaiyomer | Chaza'el
+madua | adoni | vokheh
+vaiyomer
+ki | yada'ti | et | asher | ta'aseh | livnei | Yisra'el | ra'ah | mivtzereihem | teshalach | ba'esh
 uvachureihem | bacherev | taharog
 ve'oleleihem | teratesh
 veharoteihem | tevakea
 
 8:13
-vaiyomer | Chazah'el | ki | mah | avdekha | hakelev
+vaiyomer | Chazah'el
+ki | mah | avdekha | hakelev
 ki | ya'aseh
 hadavar | hagadol | hazeh | vaiyomer | Elisha
 hir'ani | Yahweh | otekha | melekh | al | Aram
@@ -83,8 +90,10 @@ hir'ani | Yahweh | otekha | melekh | al | Aram
 8:14
 vaiyelekh | me'et | Elisha
 vaiyavo | el | adonav
-vaiyomer | lo | mah | amar | lekha | Elisha
-vaiyomer | amar | li
+vaiyomer | lo
+mah | amar | lekha | Elisha
+vaiyomer
+amar | li
 chayoh | tichyeh
 
 8:15

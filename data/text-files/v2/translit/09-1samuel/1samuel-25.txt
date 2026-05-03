@@ -24,7 +24,8 @@ vaiyishma | David | bamidbar | ki | gozez | Naval | et | tzono
 
 25:5
 vaiyishlach | David | asarah | ne'arim
-vaiyomer | David | lane'arim | alu | Kharmelah
+vaiyomer | David | lane'arim
+alu | Kharmelah
 uvatem | el | Naval
 ushe'eltem | lo | vishmi | leshalom
 
@@ -47,12 +48,14 @@ ulevinkha | Ledavid
 
 25:9
 vaiyavo'u | na'arei | David
-vaydaberu | el | Naval | kekhol | hadevarim | ha'eleh
+vaydaberu | el | Naval
+kekhol | hadevarim | ha'eleh
 beshem | David | vaiyanuchu
 
 25:10
 vaiya'an | Naval | et | avdei | David
-vaiyomer | mi | David
+vaiyomer
+mi | David
 umi | ven | Yishai | haiyom | rabu | avadim | hamitparetzim
 ish | mipenei | adonav
 
@@ -66,7 +69,8 @@ vaiyashuvu | vaiyavo'u
 vaiyagidu | lo | kekhol | hadevarim | ha'eleh
 
 25:13
-vaiyomer | David | la'anashav | chigru | ish | et | charbo
+vaiyomer | David | la'anashav
+chigru | ish | et | charbo
 vaiyachgeru | ish | et | charbo
 vaiyachgor | gam | David | et | charbo
 vaiya'alu | acharei | David | ke'arba | me'ot | ish
@@ -102,7 +106,8 @@ ume'ah | tzimukim | umatayim | develim
 vatasem | al | hachamorim
 
 25:19
-vatomer | lin'areiha | ivru | lefanai | hini | achareikhem | ba'ah
+vatomer | lin'areiha
+ivru | lefanai | hini | achareikhem | ba'ah
 ule'ishah | Naval | lo | higidah
 
 25:20
@@ -129,7 +134,8 @@ vatishtachu | aretz
 
 25:24
 vatipol | al | raglav
-vatomer | bi | ani | adoni | he'avon | utedaber | na | amatekha | be'azeneikha
+vatomer
+bi | ani | adoni | he'avon | utedaber | na | amatekha | be'azeneikha
 ushema | et | divrei | amatekha
 
 25:25
@@ -209,11 +215,13 @@ vaiyamot
 
 25:39
 vaiyishma | David | ki | met | Naval
-vaiyomer | barukh | Yahweh | asher | rav | et | riv | cherpati | miyad | Naval | ve'et | avdo | chasakh | mera'ah
+vaiyomer
+barukh | Yahweh | asher | rav | et | riv | cherpati | miyad | Naval | ve'et | avdo | chasakh | mera'ah
 ve'et | ra'at | Naval
 heshiv | Yahweh | berosho
 vaiyishlach | David
-vaydaber | Ba'avigayil | lekachtah | lo | le'ishah
+vaydaber
+Ba'avigayil | lekachtah | lo | le'ishah
 
 25:40
 vaiyavo'u | avdei | David | el | Avigayil
@@ -223,7 +231,8 @@ David | shelachanu | elayikh | lekachtekh | lo | le'ishah
 25:41
 vatakom
 vatishtachu | apayim | aretzah
-vatomer | hineh | amatekha | leshifchah | lirchotz | raglei | avdei | adoni
+vatomer
+hineh | amatekha | leshifchah | lirchotz | raglei | avdei | adoni
 
 25:42
 vatemaher | vatakom | Avigayil | vatirkav | al | hachamor

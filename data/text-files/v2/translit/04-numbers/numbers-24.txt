@@ -42,7 +42,8 @@ ukhelavi | mi | yekimenu | mevarakheikha | varukh | ve'orereikha | arur
 24:10
 vaiyichar | af | Balak | el | Bil'am
 vaiyispok | et | kapav
-vaiyomer | Balak | el | Bil'am | lako | oyevai | keraticha
+vaiyomer | Balak | el | Bil'am
+lako | oyevai | keraticha
 vehineh | berakhta | varekh | zeh | shalosh | pe'amim
 
 24:11
@@ -93,19 +94,22 @@ vehe'evid | sarid | me'ir
 24:20
 vaiyar | et | Amalek
 vaiyisa | meshalo
-vaiyomar | reshit | goyim | Amalek | ve'acharito | adei | oved
+vaiyomar | reshit | goyim | Amalek | ve'acharito | adei
+oved
 
 24:21
 vaiyar | et | hakeini
 vaiyisa | meshalo
-vaiyomar | eitan | moshavekha | vesim | basela | kinecha
+vaiyomar
+eitan | moshavekha | vesim | basela | kinecha
 
 24:22
 ki | im | yihyeh | leva'er | Kayin | ad | mah | Ashur | tishbeka
 
 24:23
 vaiyisa | meshalo
-vaiyomar | o | mi | yichyeh | misumo | el
+vaiyomar
+o | mi | yichyeh | misumo | el
 
 24:24
 vetzim | miyad | Kitim

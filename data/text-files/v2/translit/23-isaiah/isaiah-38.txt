@@ -1,7 +1,8 @@
 38:1
 baiyamim | hahem | chalah | Chizkiyahu | lamut
 vaiyavo | elav | Yesha'yahu | ven | Amotz | hanavi
-vaiyomer | elav | koh | amar | Yahweh | tzav | leveitekha
+vaiyomer | elav
+koh | amar | Yahweh | tzav | leveitekha
 ki | met | atah
 velo | tichyeh
 
@@ -10,7 +11,8 @@ vaiyasev | Chizkiyahu | panav | el | hakir
 vaiyitpalel | el | Yahweh
 
 38:3
-vaiyomar | anah | Yahweh | zekhor | na | et | asher | hithalakhti | lefaneikha | be'emet
+vaiyomar
+anah | Yahweh | zekhor | na | et | asher | hithalakhti | lefaneikha | be'emet
 uvelev | shalem
 vehatov | be'eineikha
 asiti
@@ -96,5 +98,6 @@ yis'u | develet | te'enim
 veyimrechu | al | hashechin | veyechi
 
 38:22
-vaiyomer | Chizkiyahu | mah | ot
+vaiyomer | Chizkiyahu
+mah | ot
 ki | e'eleh | beit | Yahweh

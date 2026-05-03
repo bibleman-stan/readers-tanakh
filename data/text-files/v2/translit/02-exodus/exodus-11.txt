@@ -1,5 +1,6 @@
 11:1
-vaiyomer | Yahweh | el | Mosheh | od | nega | echad | avi | al | par'oh
+vaiyomer | Yahweh | el | Mosheh
+od | nega | echad | avi | al | par'oh
 ve'al | Mitzrayim
 acharei | khen | yeshalach | etkhem | mizeh | keshalecho
 kalah | garesh | yegaresh | etkhem | mizeh
@@ -15,7 +16,8 @@ gam | ha'ish | Mosheh | gadol | me'od | be'eretz | Mitzrayim
 be'einei | avdei | far'oh | uve'einei | ha'am
 
 11:4
-vaiyomer | Mosheh | koh | amar | Yahweh | kachatzot | halaylah
+vaiyomer | Mosheh
+koh | amar | Yahweh | kachatzot | halaylah
 ani | yotze | betokh | Mitzrayim
 
 11:5
@@ -36,14 +38,16 @@ bein | Mitzrayim
 uvein | Yisra'el
 
 11:8
-veyaredu | khol | avadeikha | eleh | elai | vehishtachavu | li | lemor | tze | atah
+veyaredu | khol | avadeikha | eleh | elai | vehishtachavu | li | lemor
+tze | atah
 vekhol | ha'am | asher | beragleikha
 ve'acharei | khen
 etze
 vaiyetze | me'im | par'oh | bochori | af
 
 11:9
-vaiyomer | Yahweh | el | Mosheh | lo | yishma | aleikhem | par'oh
+vaiyomer | Yahweh | el | Mosheh
+lo | yishma | aleikhem | par'oh
 lema'an | revot | moftai | be'eretz | Mitzrayim
 
 11:10

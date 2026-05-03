@@ -10,7 +10,8 @@ vaiyiten | oto | al | hamahpekhet | asher | besha'ar | Binyamin | ha'elyon | ash
 20:3
 vayhi | mimochorat
 vaiyotze | Fashchur | et | Yirmeyahu | min | hamahpakhet
-vaiyomer | elav | Yirmeyahu | lo | Fashchur | kara | Yahweh | shemekha
+vaiyomer | elav | Yirmeyahu
+lo | Fashchur | kara | Yahweh | shemekha
 ki
 im | magor | misaviv
 
@@ -80,7 +81,8 @@ arur | haiyom | asher | yuladti | bo
 yom | asher | yeladatni | imi | al | yehi | varukh
 
 20:15
-arur | ha'ish | asher | bisar | et | avi | lemor | yulad | lekha
+arur | ha'ish | asher | bisar | et | avi | lemor
+yulad | lekha
 ben | zakhar | sameach | simochahu
 
 20:16

@@ -1,6 +1,5 @@
 9:1
-vayhi | khishmoa | kal | hamelakhim | asher | be'ever | Haiyarden | bahar
-uvashefelah
+vayhi | khishmoa | kal | hamelakhim | asher | be'ever | Haiyarden | bahar | uvashefelah
 uvekhol | chof | haiyam | hagadol | el | mul | Halevanon
 hachiti | veha'emori
 hakena'ani | haperizi
@@ -39,16 +38,20 @@ ve'el | ish | Yisra'el | me'eretz | rechokah | banu
 ve'atah | kirtu | lanu | verit
 
 9:7
-vaiyomeru | ish | Yisra'el | el | hachivi | ulai | bekirbi | atah | yoshev
+vaiyomeru | ish | Yisra'el | el | hachivi
+ulai | bekirbi | atah | yoshev
 ve'eikh | ekhrot | lekha | verit
 
 9:8
-vaiyomeru | el | Yehoshua | avadeikha | anachenu
-vaiyomer | alehem | Yehoshua | mi | atem
+vaiyomeru | el | Yehoshua | avadeikha
+anachenu
+vaiyomer | alehem | Yehoshua
+mi | atem
 ume'ayin | tavo'u
 
 9:9
-vaiyomeru | elav | me'eretz | rechokah | me'od | ba'u | avadeikha
+vaiyomeru | elav
+me'eretz | rechokah | me'od | ba'u | avadeikha
 leshem | Yahweh | eloheikha
 ki | shama'nu | shame'o | ve'et | kol | asher | asah | Bemitzrayim
 
@@ -58,8 +61,10 @@ be'ever | Haiyarden | Lesichon | melekh | Cheshbon
 Ule'og | melekh | Habashan | asher | Be'ashtarot
 
 9:11
-vaiyomeru | eleinu | zekeineinu
-vekhol | yoshevei | artzenu | lemor | kechu | veyedkhem | tzeidah | laderekh
+vaiyomeru | eleinu
+zekeineinu
+vekhol | yoshevei | artzenu | lemor
+kechu | veyedkhem | tzeidah | laderekh
 ulekhu | likratam
 va'amartem | aleihem | avdeikhem | anachnu
 ve'atah | kirtu | lanu | verit
@@ -125,7 +130,8 @@ leveit | elohai
 
 9:24
 vaiya'anu | et | Yehoshua
-vaiyomeru | ki | huged | hugad | la'avadeikha | et | asher | tzivah | Yahweh | eloheikha | et | Mosheh | avdo
+vaiyomeru
+ki | huged | hugad | la'avadeikha | et | asher | tzivah | Yahweh | eloheikha | et | Mosheh | avdo
 latet | lakhem | et | kol | ha'aretz
 ulehashmid | et | kol | yoshevei | ha'aretz | mipeneikhem | vanira | me'od | lenafshoteinu | mipeneikhem
 vana'aseh | et | hadavar | hazeh

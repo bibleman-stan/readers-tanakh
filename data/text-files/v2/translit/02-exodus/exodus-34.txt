@@ -1,5 +1,6 @@
 34:1
-vaiyomer | Yahweh | el | Mosheh | pesol | lekha | shenei | luchot | avanim | karishonim
+vaiyomer | Yahweh | el | Mosheh
+pesol | lekha | shenei | luchot | avanim | karishonim
 vekhatavti | al | haluchot
 et | hadevarim | asher | hayu | al | haluchot | harishonim | asher | shibarta
 
@@ -45,14 +46,16 @@ vaiyikod | artzah
 vaiyishtachu
 
 34:9
-vaiyomer | im | na | matzati | chen | be'eineikha | Adonai
+vaiyomer
+im | na | matzati | chen | be'eineikha | Adonai
 yelekh | na | Adonai | bekirbenu
 ki | am | kesheh | oref | hu
 vesalachta | la'avonenu | ulechatatenu
 unechaltanu
 
 34:10
-vaiyomer | hineh | anokhi | koret | berit
+vaiyomer
+hineh | anokhi | koret | berit
 neged | kal | amekha | e'eseh | nifla'ot | asher | lo | Nivre'u | vekhol | ha'aretz
 uvekhol | hagoyim | vera'ah | khol | ha'om | asher | atah | vekirbo | et | ma'aseh | Yahweh | ki | nora | hu
 asher | ani

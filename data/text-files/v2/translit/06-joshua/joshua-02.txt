@@ -17,7 +17,8 @@ ki | lachpor | et | kol | ha'aretz | ba'u
 2:4
 vatikach | ha'ishah | et | shenei | ha'anashim
 vatitzpeno
-vatomer | ken | ba'u | elai | ha'anashim
+vatomer
+ken | ba'u | elai | ha'anashim
 velo | yada'ti | me'ayin | hemah
 
 2:5
@@ -68,7 +69,8 @@ ve'et | kol | asher | lahem
 vehitzaltem | et | nafshoteinu | mimavet
 
 2:14
-vaiyomeru | lah | ha'anashim | nafshenu | tachteikhem | lamut
+vaiyomeru | lah | ha'anashim | nafshenu | tachteikhem
+lamut
 im | lo | tagidu | et | devarenu
 zeh | vehayah | betet | Yahweh | lanu | et | ha'aretz
 ve'asinu | imakh | chesed | ve'emet
@@ -79,7 +81,8 @@ uvachomah
 hi | yoshavet
 
 2:16
-vatomer | lahem | haharah | lekhu | pen | yifge'u | vakhem | harodefim
+vatomer | lahem | haharah
+lekhu | pen | yifge'u | vakhem | harodefim
 venachbetem | shamah | sheloshet | yamim | ad | shov | harodefim
 ve'achar | telekhu | ledarkekhem
 
@@ -104,7 +107,8 @@ ve'im | tagidi | et | devarenu | zeh
 vehayinu | nekiyim | mishevu'atekh | asher | hishba'tanu
 
 2:21
-vatomer | kedivreikhem | ken | hu
+vatomer
+kedivreikhem | ken | hu
 vateshalechem
 vaiyelekhu
 vatikshor | et | tikvat | hashani | bachalon
@@ -121,5 +125,6 @@ vaiya'avru | vaiyavo'u | el | Yehoshua
 bin | Nun | vaysaperu | lo | et | kol | hamotze'ot | otam
 
 2:24
-vaiyomeru | el | Yehoshua | ki | natan | Yahweh | beyadenu | et | kol | ha'aretz
+vaiyomeru | el | Yehoshua
+ki | natan | Yahweh | beyadenu | et | kol | ha'aretz
 vegam | Namogu | kol | yoshevei | ha'aretz | mipaneinu

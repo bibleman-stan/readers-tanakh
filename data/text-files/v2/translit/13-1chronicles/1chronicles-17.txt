@@ -1,6 +1,7 @@
 17:1
 vayhi | ka'asher | yashav | David | beveito
-vaiyomer | David | el | Natan | hanavi | hineh | anokhi | yoshev | beveit | ha'arazim
+vaiyomer | David | el | Natan
+hanavi | hineh | anokhi | yoshev | beveit | ha'arazim
 va'aron | berit | Yahweh | tachat | yeri'ot
 
 17:2
@@ -73,13 +74,15 @@ ken | diber | Natan | el | David
 vaiyavo | hamelekh | David
 vaiyeshev
 lifnei | Yahweh
-vaiyomer | mi | ani | Yahweh | elohim
+vaiyomer
+mi | ani | Yahweh | elohim
 umi | veiti
 ki | havi'otani | ad | halom
 
 17:17
 vatiktan | zot | be'eineikha | elohim
-vatedaber | al | beit | avdekha | lemerachok
+vatedaber | al | beit | avdekha
+lemerachok
 ure'itani | ketor | ha'adam | hama'alah | Yahweh | elohim
 
 17:18
@@ -125,7 +128,8 @@ livnot | lo | bayit | al | ken | matza | avdekha | lehitpalel | lefaneikha
 ve'atah | Yahweh
 atah | hu
 ha'elohim
-vatedaber | al | avdekha | hatovah | hazot
+vatedaber | al | avdekha | hatovah
+hazot
 
 17:27
 ve'atah | ho'alta | levarekh | et | beit | avdekha | lihyot | le'olam

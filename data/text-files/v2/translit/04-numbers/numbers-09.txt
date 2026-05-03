@@ -1,5 +1,6 @@
 9:1
-vaydaber | Yahweh | el | Mosheh | vemidbar | Sinai | bashanah | hashenit | letzetam | me'eretz | Mitzrayim | bachodesh | harishon
+vaydaber | Yahweh | el | Mosheh
+vemidbar | Sinai | bashanah | hashenit | letzetam | me'eretz | Mitzrayim | bachodesh | harishon
 lemor
 
 9:2
@@ -11,7 +12,8 @@ bemo'ado | kekhol | chukotav
 ukhekhkhol | mishpatav | ta'asu | oto
 
 9:4
-vaydaber | Mosheh | el | benei | Yisra'el | la'asot | hapasach
+vaydaber | Mosheh | el | benei | Yisra'el
+la'asot | hapasach
 
 9:5
 vaiya'asu | et | hapesach | barishon | be'arba'ah | asar | yom | lachodesh | bein | ha'arbayim
@@ -26,7 +28,8 @@ vaiyikrevu | lifnei | Mosheh
 velifnei | Aharon | baiyom | hahu
 
 9:7
-vaiyomeru | ha'anashim | hahemah | elav | anachnu | teme'im
+vaiyomeru | ha'anashim
+hahemah | elav | anachnu | teme'im
 lenefesh | adam
 lamah | nigara | levilti | hakriv | et | kareban | Yahweh | bemo'ado
 betokh | benei | Yisra'el

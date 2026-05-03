@@ -8,8 +8,7 @@ vaiyivaldu | lo | shiv'ah | vanim
 veshaloosh | banot
 
 1:3
-vayhi | miknehu | shiv'at | alfei | tzon | usheloshet | alfei | gemalim | vachamesh | me'ot | tzemed | bakar
-vachamesh | me'ot | atonot
+vayhi | miknehu | shiv'at | alfei | tzon | usheloshet | alfei | gemalim | vachamesh | me'ot | tzemed | bakar | vachamesh | me'ot | atonot
 va'avudah | rabah | me'od | vayhi | ha'ish | hahu | gadol | mikol | benei | kedem
 
 1:4
@@ -30,13 +29,15 @@ vaiyavo'u | benei | ha'elohim | lehityatzev | al | Yahweh
 vaiyavo | gam | hasatan | betokham
 
 1:7
-vaiyomer | Yahweh | el | hasatan | me'ayin | tavo
+vaiyomer | Yahweh | el | hasatan
+me'ayin | tavo
 vaiya'an | hasatan | et | Yahweh
 vaiyomar | mishut | ba'aretz
 umehithalekh | bah
 
 1:8
-vaiyomer | Yahweh | el | hasatan | hasamta | libekha | al | avdi | Iyov
+vaiyomer | Yahweh | el | hasatan
+hasamta | libekha | al | avdi | Iyov
 ki | ein | kamohu | ba'aretz | ish | tam | veyashar | yere | elohim
 vesar | mera
 
@@ -55,7 +56,8 @@ ve'ulam | shelach | na | yadekha
 vega | bekhol | asher | lo | im | lo | al | paneikha | yevarakheka
 
 1:12
-vaiyomer | Yahweh | el | hasatan | hineh | khol | asher | lo | beyadekha
+vaiyomer | Yahweh | el | hasatan
+hineh | khol | asher | lo | beyadekha
 rak | elav | al | tishlach
 yadekha | vaiyetze | hasatan | me'im | penei | Yahweh
 
@@ -105,7 +107,8 @@ vaiyipol | artzah
 vaiyishtachu
 
 1:21
-vaiyomer | arom | yatzati | mibeten | imi | ve'arom | ashuv | shamah
+vaiyomer
+arom | yatzati | mibeten | imi | ve'arom | ashuv | shamah
 Yahweh | natan
 Vayahweh | lakach | yehi | shem | Yahweh | mevorakh
 

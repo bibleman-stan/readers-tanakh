@@ -12,7 +12,8 @@ Ule'amnon | rea | ushemo | Yonadav
 ben | Shim'ah | achi | David | Veyonadav | ish | chakham | me'od
 
 13:4
-vaiyomer | lo | madua | atah | kakhah | dal | ben | hamelekh | baboker | baboker
+vaiyomer | lo
+madua | atah | kakhah | dal | ben | hamelekh | baboker | baboker
 halo | tagid | li
 vaiyomer | lo | Amnon
 et | Tamar | achot | Avshalom | achi | ani | ohev
@@ -29,7 +30,8 @@ ve'akhalti | miyadah
 vaiyishkav | Amnon
 vaiyitchal
 vaiyavo | hamelekh | lir'oto
-vaiyomer | Amnon | el | hamelekh | tavo | na | Tamar | achoti | utelabev | le'einai | shetei | levivot
+vaiyomer | Amnon | el | hamelekh
+tavo | na | Tamar | achoti | utelabev | le'einai | shetei | levivot
 ve'evreh | miyadah
 
 13:7
@@ -48,11 +50,13 @@ vatevashel | et | halevivot
 vatikach | et | hamasret
 vatitzok | lefanav
 vayma'en | le'ekhol
-vaiyomer | Amnon | hotzi'u | khol | ish | me'alai
+vaiyomer | Amnon
+hotzi'u | khol | ish | me'alai
 vaiyetze'u | khol | ish | me'alav
 
 13:10
-vaiyomer | Amnon | el | Tamar | havi'i | habiryah | hacheder
+vaiyomer | Amnon | el | Tamar
+havi'i | habiryah | hacheder
 ve'evreh | miyadekh
 vatikach | Tamar | et | halevivot | asher | asatah
 vatave | Le'amnon | achiha | hechaderah
@@ -60,10 +64,12 @@ vatave | Le'amnon | achiha | hechaderah
 13:11
 vatagesh | elav | le'ekhol
 vaiyachazek | bah
-vaiyomer | lah | bo'i | shikhvi | imi | achoti
+vaiyomer | lah
+bo'i | shikhvi | imi | achoti
 
 13:12
-vatomer | lo | al | achi | al | te'aneni
+vatomer | lo | al | achi
+al | te'aneni
 ki | lo | ye'aseh | khen | Beyisra'el | al | ta'aseh | et | hanevalah | hazot
 
 13:13
@@ -83,12 +89,14 @@ me'ahavah | asher | ahevah
 vaiyomer | lah | Amnon | kumi | lekhi
 
 13:16
-vatomer | lo | al | odot | hara'ah | hagedolah | hazot
+vatomer | lo | al | odot | hara'ah
+hagedolah | hazot
 me'acheret | asher | asita | imi | leshalecheni | velo | avah | lishmoa | lah
 
 13:17
 vaiyikra | et | na'aro | meshareto
-vaiyomer | shilchu | na | et | zot | me'alai | hachutzah
+vaiyomer
+shilchu | na | et | zot | me'alai | hachutzah
 une'ol | hadelet | achareiha
 
 13:18
@@ -105,7 +113,8 @@ vatelekh | halokh
 veza'akah
 
 13:20
-vaiyomer | eleiha | Avshalom | achiha | Ha'aminon | achikh | hayah | imokh
+vaiyomer | eleiha | Avshalom | achiha
+Ha'aminon | achikh | hayah | imokh
 ve'atah | achoti | hacharishi | achikh | hu | al | tashiti | et | libekh
 ladavar | hazeh
 vateshev | Tamar | veshomemah | beit | Avshalom | achiha
@@ -126,17 +135,21 @@ asher | im | Efrayim | vaiyikra | Avshalom | lekhol | benei | hamelekh
 
 13:24
 vaiyavo | Avshalom | el | hamelekh
-vaiyomer | hineh | na | gozezim | le'avdekha | yelekh | na | hamelekh | va'avadav | im | avdekha
+vaiyomer
+hineh | na | gozezim | le'avdekha | yelekh | na | hamelekh | va'avadav | im | avdekha
 
 13:25
-vaiyomer | hamelekh | el | Avshalom | al | beni | al | na | nelekh | kulanu
+vaiyomer | hamelekh | el | Avshalom | al | beni
+al | na | nelekh | kulanu
 velo | nikhbad | aleikha | vaiyifrotz | bo
 velo | avah | lalekhet
 vayvarakhehu
 
 13:26
-vaiyomer | Avshalom | valo | yelekh | na | itanu | Amnon | achi
-vaiyomer | lo | hamelekh | lamah | yelekh | imakh
+vaiyomer | Avshalom
+valo | yelekh | na | itanu | Amnon | achi
+vaiyomer | lo | hamelekh
+lamah | yelekh | imakh
 
 13:27
 vaiyifrotz | bo | Avshalom
@@ -169,7 +182,8 @@ vekhol | avadav | nitzavim | keru'ei | vegadim
 
 13:32
 vaiya'an | Yonadav | ben | Shim'ah | achi | David
-vaiyomer | al | yomar | adoni | et | kol | hane'arim | benei | hamelekh | hemitu
+vaiyomer
+al | yomar | adoni | et | kol | hane'arim | benei | hamelekh | hemitu
 ki | Amnon | levado | met
 ki | al | pi | Avshalom | hayetah | sumah | miyom | anoto | et | Tamar | achoto
 
@@ -184,10 +198,12 @@ vaiyisa | hana'ar | hatzopeh | et | eino
 vaiyar | vehineh | am | rav | holekhim | miderekh | acharav | bamorad
 vaiyavo | hatzopeh
 vaiyaged | lamelekh
-vaiyomar | anashim | ra'iti | yoredim | miderekh | Choronayim | mitzad | hahar
+vaiyomar | anashim
+ra'iti | yoredim | miderekh | Choronayim | mitzad | hahar
 
 13:35
-vaiyomer | Yonadav | el | hamelekh | hineh | venei | hamelekh | ba'u | kidvar | avdekha
+vaiyomer | Yonadav | el | hamelekh
+hineh | venei | hamelekh | ba'u | kidvar | avdekha
 ken | hayah
 
 13:36

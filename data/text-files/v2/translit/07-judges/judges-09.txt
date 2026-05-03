@@ -10,7 +10,8 @@ im | meshol | bakhem
 ish | echad | uzekhartem | ki | atzmekhem | uvesarkhem | ani
 
 9:3
-vaydaberu | achei | imo | alav | be'azenei | kol | ba'alei | Shekhem | et | kol | hadevarim | ha'eleh
+vaydaberu | achei | imo | alav
+be'azenei | kol | ba'alei | Shekhem | et | kol | hadevarim | ha'eleh
 vaiyet | libam | acharei | Avimelekh
 ki | ameru | achinu | hu
 
@@ -34,7 +35,8 @@ vaiyamlikhu | et | Avimelekh | lemelekh | im | elon | mutzav | asher | Bishkhem
 vaiyagidu | Leyotam | vaiyelekh | vaiya'amod | berosh | har | Gerizim
 vaiyisa | kolo
 vaiyikra
-vaiyomer | lahem | shim'u | elai | ba'alei | Shekhem
+vaiyomer | lahem
+shim'u | elai | ba'alei | Shekhem
 veyishma | aleikhem | elohim
 
 9:8
@@ -42,28 +44,34 @@ halokh | halekhu | ha'etzim | limshoach | aleihem | melekh | vaiyomeru | lazayit
 melokhah | aleinu
 
 9:9
-vaiyomer | lahem | hazayit | hechodalti | et | dishni
+vaiyomer | lahem | hazayit
+hechodalti | et | dishni
 asher | bi | yekhabedu | elohim
 va'anashim
 vehalakhti | lanua | al | ha'etzim
 
 9:10
-vaiyomeru | ha'etzim | late'enah | lekhi | at | malekhi | aleinu
+vaiyomeru | ha'etzim | late'enah
+lekhi | at | malekhi | aleinu
 
 9:11
-vatomer | lahem | hate'enah | hechodalti | et | mateki | ve'et | tenuvati | hatovah
+vatomer | lahem | hate'enah
+hechodalti | et | mateki | ve'et | tenuvati | hatovah
 vehalakhti | lanua | al | ha'etzim
 
 9:12
-vaiyomeru | ha'etzim | lagafen | lekhi | at | malokhi | aleinu
+vaiyomeru | ha'etzim | lagafen
+lekhi | at | malokhi | aleinu
 
 9:13
-vatomer | lahem | hagefen | hechodalti | et | tiroshi | hamsameach | elohim
+vatomer | lahem | hagefen
+hechodalti | et | tiroshi | hamsameach | elohim
 va'anashim
 vehalakhti | lanua | al | ha'etzim
 
 9:14
-vaiyomeru | khol | ha'etzim | el | ha'atad | lekh | atah | melokh | aleinu
+vaiyomeru | khol | ha'etzim | el | ha'atad
+lekh | atah | melokh | aleinu
 
 9:15
 vaiyomer | ha'atad | el | ha'etzim
@@ -138,7 +146,8 @@ vaiyokhelu | vaiyishtu
 vaykalu | et | Avimelekh
 
 9:28
-vaiyomer | Ga'al | ben | Eved | mi | Avimelekh | umi | Shekhem | ki | na'avdenu
+vaiyomer | Ga'al | ben | Eved | mi | Avimelekh | umi | Shekhem
+ki | na'avdenu
 halo | ven | Yeruba'al | Uzevul | pekido
 ivdu | et | anshei | Chamor | avi | Shekhem | umadua
 na'avdenu | anachenu
@@ -180,17 +189,21 @@ petach | sha'ar | ha'ir | vaiyakom | Avimelekh | veha'am | asher | ito | min | h
 
 9:36
 vaiyar | Ga'al | et | ha'am
-vaiyomer | el | Zevul | hineh | am | yored | merashei | heharim
-vaiyomer | elav | Zevul | et | tzel | heharim | atah | ro'eh
+vaiyomer | el | Zevul
+hineh | am | yored | merashei | heharim
+vaiyomer | elav | Zevul
+et | tzel | heharim | atah | ro'eh
 ka'anashim
 
 9:37
 vaiyosef | od | Ga'al | ledaber
-vaiyomer | hineh | am | yordim | me'im | tabur | ha'aretz | verosh | echad | ba
+vaiyomer
+hineh | am | yordim | me'im | tabur | ha'aretz | verosh | echad | ba
 miderekh | elon | me'onim
 
 9:38
-vaiyomer | elav | Zevul | aiyeh | efo | fikha | asher | tomar
+vaiyomer | elav | Zevul
+aiyeh | efo | fikha | asher | tomar
 mi | Avimelekh
 ki | na'avdenu
 halo | zeh | ha'am | asher | ma'astah | bo
@@ -246,7 +259,8 @@ vaiyikach | Avimelekh | et | hakardumot | beyado
 vaiyikhrot | sokhat | etzim
 vaiyisa'eha
 vaiyasem | al | shikhmo
-vaiyomer | el | ha'am | asher | imo | mah | re'item | asiti | maharu
+vaiyomer | el | ha'am
+asher | imo | mah | re'item | asiti | maharu
 asu | khamoni
 
 9:49
@@ -278,7 +292,8 @@ al | rosh | Avimelekh | vataritz | et | gulgalto
 
 9:54
 vaiyikra | meherah | el | hana'ar | nose | khelav
-vaiyomer | lo | shelof | charbekha
+vaiyomer | lo
+shelof | charbekha
 umoteni | pen | yomeru | li | ishah | haragatehu
 vaiyidkerehu | na'aro
 vaiyamot

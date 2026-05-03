@@ -5,7 +5,8 @@ uvimei | Yarave'am | ben | Yo'ash | melekh | Yisra'el
 
 1:2
 techilat | diber | Yahweh | Behoshea
-vaiyomer | Yahweh | el | Hoshea | lekh | kach | lekha | eshet | zenunim | veyaldei | zenunim
+vaiyomer | Yahweh | el | Hoshea
+lekh | kach | lekha | eshet | zenunim | veyaldei | zenunim
 ki | zanoh | tizneh | ha'aretz | me'acharei | Yahweh
 
 1:3
@@ -13,7 +14,8 @@ vaiyelekh | vaiyikach | et | Gomer
 bat | Divlayim | vatahar | vateled | lo | ben
 
 1:4
-vaiyomer | Yahweh | elav | kera | shemo | Yizre'el
+vaiyomer | Yahweh | elav
+kera | shemo | Yizre'el
 ki | od | me'at | ufakadti | et | demei | Yizre'el | al | beit | Yehu
 vehishbati | mamlekhut | beit | Yisra'el
 
@@ -42,5 +44,6 @@ vatahar
 vateled | ben
 
 1:9
-vaiyomer | kera | shemo | Lo | Ami | ki | atem | lo | ami | ve'anokhi
+vaiyomer
+kera | shemo | Lo | Ami | ki | atem | lo | ami | ve'anokhi
 lo | ehyeh | lakhem

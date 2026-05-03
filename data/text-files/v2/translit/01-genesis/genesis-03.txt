@@ -4,7 +4,8 @@ vaiyomer | el | ha'ishah
 af | ki | amar | elohim | lo | tokhelu | mikol | etz | hagan
 
 3:2
-vatomer | ha'ishah | el | hanachash | miperi | etz | hagan | nokhel
+vatomer | ha'ishah | el | hanachash
+miperi | etz | hagan | nokhel
 
 3:3
 umiperi | ha'etz | asher | betokh | hagan
@@ -38,15 +39,18 @@ betokh | etz | hagan
 
 3:9
 vaiyikra | Yahweh | elohim | el | ha'adam
-vaiyomer | lo | aiyekah
+vaiyomer | lo
+aiyekah
 
 3:10
-vaiyomer | et | kolecha | shama'ti | bagan
+vaiyomer | et | kolecha
+shama'ti | bagan
 va'ira | ki | eirom | anokhi
 va'echave
 
 3:11
-vaiyomer | mi | higid | lekha | ki | eirom | atah
+vaiyomer
+mi | higid | lekha | ki | eirom | atah
 hamin | ha'etz | asher | tzivitikha | levilti | akhol | mimenu
 akhalta
 
@@ -56,12 +60,14 @@ ha'ishah | asher | natatah | imadi | hi | natenah | li | min | ha'etz
 va'okhel
 
 3:13
-vaiyomer | Yahweh | elohim | la'ishah | mah | zot | asit
+vaiyomer | Yahweh | elohim | la'ishah
+mah | zot | asit
 vatomer | ha'ishah
 hanachash | hishi'ani | va'okhel
 
 3:14
-vaiyomer | Yahweh | elohim | el | hanachash | ki | asita | zot
+vaiyomer | Yahweh | elohim | el | hanachash
+ki | asita | zot
 arur | atah | mikol | habehemah
 umikol | chaiyat | hasadeh | al | gechonekha | telekh
 ve'afar | tokhal | kol | yemei | chaiyeikha
@@ -104,7 +110,8 @@ vaiya'as | Yahweh | elohim | Le'adam
 ul'ishto | katenot | or | vaiyalbishem
 
 3:22
-vaiyomer | Yahweh | elohim | hen | ha'adam | hayah | ke'achad | mimenu | lada'at
+vaiyomer | Yahweh | elohim
+hen | ha'adam | hayah | ke'achad | mimenu | lada'at
 tov | vara
 ve'atah | pen | yishlach | yado | velakach | gam | me'etz | hachaiyim
 ve'akhal

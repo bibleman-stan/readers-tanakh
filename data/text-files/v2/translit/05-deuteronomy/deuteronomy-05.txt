@@ -1,6 +1,7 @@
 5:1
 vaiyikra | Mosheh | el | kol | Yisra'el
-vaiyomer | alehem | shema | Yisra'el | et | hachukim | ve'et | hamishpatim
+vaiyomer | alehem
+shema | Yisra'el | et | hachukim | ve'et | hamishpatim
 asher | anokhi | dover | be'azeneikhem | haiyom | ulemadtem | otam
 ushemartem | la'asotam
 
@@ -106,7 +107,8 @@ vayhi | keshame'akhem | et | hakol | mitokh | hachoshekh | vehahar | bo'er | ba'
 vezikneikhem
 
 5:24
-vatomeru | hen | her'anu | Yahweh | eloheinu | et | kevodo | ve'et | gadelo
+vatomeru
+hen | her'anu | Yahweh | eloheinu | et | kevodo | ve'et | gadelo
 ve'et | kolo | shama'nu | mitokh | ha'esh
 haiyom | hazeh | ra'inu
 ki | yedaber | elohim | et | ha'adam
@@ -128,7 +130,8 @@ veshama'nu | ve'asinu
 
 5:28
 vaiyishma | Yahweh | et | kol | divreikhem | bedaberkhem | elai
-vaiyomer | Yahweh | elai | shama'ti | et | kol | divrei | ha'am | hazeh | asher | diberu | eleikha
+vaiyomer | Yahweh | elai
+shama'ti | et | kol | divrei | ha'am | hazeh | asher | diberu | eleikha
 heitivu
 kol | asher | diberu
 

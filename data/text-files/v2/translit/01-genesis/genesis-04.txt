@@ -1,7 +1,8 @@
 4:1
 veha'adam | yada | et | Chavah | ishto
 vatahar | vateled | et | Kayin
-vatomer | kaniti | ish | et | Yahweh
+vatomer
+kaniti | ish | et | Yahweh
 
 4:2
 vatosef | laledet | et | achiv | et | Havel
@@ -40,11 +41,14 @@ vaiyakom | Kayin | el | Hevel | achiv
 vaiyahargehu
 
 4:9
-vaiyomer | Yahweh | el | Kayin | ei | Hevel | achikha
-vaiyomer | lo | yada'ti | hashomer | achi | anokhi
+vaiyomer | Yahweh | el | Kayin
+ei | Hevel | achikha
+vaiyomer
+lo | yada'ti | hashomer | achi | anokhi
 
 4:10
-vaiyomer | meh | asita | kol | demei | achikha
+vaiyomer
+meh | asita | kol | demei | achikha
 tzo'akim | elai | min | ha'adamah
 
 4:11
@@ -56,7 +60,8 @@ ki | ta'avod | et | ha'adamah | lo | tosef | tet | kochah | lakh
 na | vanad | tihyeh | va'aretz
 
 4:13
-vaiyomer | Kayin | el | Yahweh | gadol | avoni | mineso
+vaiyomer | Kayin | el | Yahweh
+gadol | avoni | mineso
 
 4:14
 hen | gerashta | oti | haiyom | me'al | penei | ha'adamah | umipaneikha
@@ -66,7 +71,8 @@ vehayah | khol | motze'i
 yahargeni
 
 4:15
-vaiyomer | lo | Yahweh | lakhen | kol | horeg | Kayin | shiv'atayim | yukam
+vaiyomer | lo | Yahweh
+lakhen | kol | horeg | Kayin | shiv'atayim | yukam
 vaiyasem | Yahweh | Lekayin | ot | levilti | hakot | oto | kol | motze'o
 
 4:16
@@ -107,7 +113,8 @@ va'achot | Tuval | Kayin
 Na'amah
 
 4:23
-vaiyomer | Lemekh | lenashav | Adah | Vetzilah | shema'an | koli
+vaiyomer | Lemekh | lenashav | Adah
+Vetzilah | shema'an | koli
 neshei | Lemekh | ha'zenah | imrati
 ki | ish | haragti | lefitz'i | veyeled | lechaburati
 

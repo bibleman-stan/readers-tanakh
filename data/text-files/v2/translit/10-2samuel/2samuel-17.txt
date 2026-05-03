@@ -23,7 +23,8 @@ gam | Lechushai | ha'arki | venishme'ah | mah | befiv | gam | hu
 
 17:6
 vaiyavo | Chushai | el | Avshalom
-vaiyomer | Avshalom | elav | lemor | kadavar | hazeh | diber | Achitofel
+vaiyomer | Avshalom | elav | lemor
+kadavar | hazeh | diber | Achitofel
 hana'aseh | et | devaro | im | ayin
 atah | daber
 
@@ -32,7 +33,8 @@ vaiyomer | Chushai | el | Avshalom
 lo | tovah | ha'etzah | asher | ya'atz | Achitofel | bapa'am | hazot
 
 17:8
-vaiyomer | Chushai | atah | yada'ta | et | avikha | ve'et | anashav | ki | giborim | hemah | umarei | nefesh | hemah
+vaiyomer | Chushai
+atah | yada'ta | et | avikha | ve'et | anashav | ki | giborim | hemah | umarei | nefesh | hemah
 kedo | shakul | basadeh | ve'avikha | ish | milchamah
 velo | yalin | et | ha'am
 
@@ -73,13 +75,15 @@ Vayahweh | tzivah | lehafer | et | atzat | Achitofel | hatovah
 leva'avur | havi | Yahweh | el | Avshalom | et | hara'ah
 
 17:15
-vaiyomer | Chushai | el | Tzadok | ve'el | Evyatar | hakohanim
+vaiyomer | Chushai | el | Tzadok
+ve'el | Evyatar | hakohanim
 kazot | vekhazot | ya'atz | Achitofel | et | Avshalom
 ve'et | ziknei | Yisra'el
 vekhazot | vekhazot | ya'atzti | ani
 
 17:16
-ve'atah | shilchu | meherah | vehagidu | Ledavid | lemor | al | talen | halaylah | be'arvot | hamidbar
+ve'atah | shilchu | meherah | vehagidu | Ledavid | lemor
+al | talen | halaylah | be'arvot | hamidbar
 vegam
 avor | ta'avor
 pen | yevula | lamelekh | ulekhol | ha'am | asher | ito
@@ -108,8 +112,10 @@ velo | Noda | davar
 
 17:20
 vaiyavo'u | avdei | Avshalom | el | ha'ishah | habaytah
-vaiyomeru | aiyeh | Achima'atz | Vihonatan
-vatomer | lahem | ha'ishah | averu | mikhal | hamayim
+vaiyomeru
+aiyeh | Achima'atz | Vihonatan
+vatomer | lahem | ha'ishah
+averu | mikhal | hamayim
 vayvakshu | velo | matza'u
 vaiyashuvu | Yerushalim
 
@@ -118,7 +124,8 @@ vayhi | acharei | lekhtam | vaiya'alu | mehabe'er
 vaiyelekhu
 vaiyagidu
 lamelekh | David
-vaiyomeru | el | David | kumu | ve'ivru | meherah | et | hamayim
+vaiyomeru | el | David
+kumu | ve'ivru | meherah | et | hamayim
 ki | khakhah | ya'atz | aleikhem | Achitofel
 
 17:22
@@ -149,8 +156,7 @@ asher | ba | el | Avigal | bat | Nachash | achot | Tzeruyah | em | Yo'av
 vaiyichan | Yisra'el | Ve'avshalom | eretz | Hagil'ad
 
 17:27
-vayhi | kevo | David | Machanayemah | Veshovi | ven | Nachash | merabat | benei | Amon | Umakhir | ben | Ami'el | Milo | Devar
-Uvarzilai | hagil'adi | Merogelim
+vayhi | kevo | David | Machanayemah | Veshovi | ven | Nachash | merabat | benei | Amon | Umakhir | ben | Ami'el | Milo | Devar | Uvarzilai | hagil'adi | Merogelim
 
 17:28
 mishkav | vesapot | ukheli | yotzer

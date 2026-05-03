@@ -25,7 +25,8 @@ al | tikrevu | elav | lema'an | asher | tede'u | et | haderekh | asher | telekhu
 ki | lo | avartem | baderekh | mitemol | shilshom
 
 3:5
-vaiyomer | Yehoshua | el | ha'am | hitkadashu
+vaiyomer | Yehoshua | el | ha'am
+hitkadashu
 ki | machar | ya'aseh | Yahweh | bekirbekhem | nifla'ot
 
 3:6
@@ -45,11 +46,13 @@ kevo'akhem | ad | ketzeh | mei | Haiyarden | Baiyarden
 ta'amodu
 
 3:9
-vaiyomer | Yehoshua | el | benei | Yisra'el | goshu | henah | veshim'u
+vaiyomer | Yehoshua | el | benei | Yisra'el
+goshu | henah | veshim'u
 et | divrei | Yahweh | eloheikhem
 
 3:10
-vaiyomer | Yehoshua | bezot | tede'un | ki | el | chai | bekirbekhem
+vaiyomer | Yehoshua
+bezot | tede'un | ki | el | chai | bekirbekhem
 vehoresh | yorish | mipeneikhem | et | hakena'ani | ve'et | hachiti | ve'et | hachivi | ve'et | haperizi | ve'et | hagirgashi
 veha'emori
 vehayvusi
