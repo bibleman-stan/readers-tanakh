@@ -157,6 +157,209 @@ def is_prophetic_formula_line(bare_tokens: list[str]) -> bool:
 
 
 # ---------------------------------------------------------------------------
+# H5b short-frame-with-content split (Path 1 retroactive realization)
+# ---------------------------------------------------------------------------
+# Detects lines where a speech-verb-headed frame is merged with quoted content
+# on a single line WITHOUT לֵאמֹר (the long-frame-with-לֵאמֹר case is handled
+# by the existing primary-check arm above). Per canon §5 H5b: split.
+
+RECIPIENT_PP_HEAD_SKELS = frozenset({"אל", "ל", "את", "על", "עם"})
+PRONOMINAL_RECIPIENT_SKELS = frozenset({
+    "אליו", "אליך", "אליכם", "אליהם", "אליה", "אלי", "אלינו",
+    "לו", "לך", "לנו", "להם", "לי", "לה", "לכם", "לכן",
+    "אתו", "אתי", "אתך", "אתכם", "אתם", "אותו", "אותי", "אותך",
+    "עמו", "עמי", "עמך", "עליו", "עלי",
+})
+
+
+def _strip_h_prefix(morpheme: str) -> str:
+    return morpheme[1:] if morpheme.startswith("H") else morpheme
+
+
+def _maqqef_head_skel(tok: str) -> str:
+    head = tok.split(M.MAQQEF, 1)[0] if M.MAQQEF in tok else tok
+    return strip_points(head)
+
+
+def _is_recipient_pp(tok: str, tag_list: list[str] | None = None) -> bool:
+    """Recipient-PP head from {אל, ל, את, על, עם} (closed list) — bare or
+    maqqef-bound (אֶל־מֹשֶׁה) — OR bound-prep + fused content (לַדָּג, לְמֹשֶׁה,
+    אֶת־הָאָרֶץ); excludes locative/temporal preps like מן, עד.
+    Tag-driven gate when available.
+    """
+    s_head = _maqqef_head_skel(tok)
+    s_full = strip_points(tok)
+    # Bare or maqqef-bound recipient prep
+    if s_head in RECIPIENT_PP_HEAD_SKELS:
+        if tag_list:
+            first = _strip_h_prefix(tag_list[0].split("/")[0])
+            return first.startswith("R")
+        return True
+    # Pronominal recipient
+    if s_full in PRONOMINAL_RECIPIENT_SKELS:
+        return True
+    # Bound-prep + fused content (לַדָּג, לְמֹשֶׁה, etc.)
+    # Tag-driven gate REQUIRED for fused forms (skel ambiguous):
+    if tag_list:
+        first = _strip_h_prefix(tag_list[0].split("/")[0])
+        # Rd or R as first morpheme + skel starts with recipient-class letter
+        if first.startswith("R") and s_full and s_full[0] in {"ל", "א", "ע"}:
+            # Exclude מן/עד/אחר/תחת — these would have other first letters
+            # and don't start with ל/א/ע anyway. Also exclude אֶת- DO marker
+            # if not in recipient context (אֵת variants are already in
+            # RECIPIENT_PP_HEAD_SKELS as "את").
+            return True
+    return False
+
+
+def _is_frame_subject(tok: str, tag_list: list[str] | None = None) -> bool:
+    """Subject NP (Nc/Np), substantive participle, OR proper noun. Excludes
+    R-headed and Tj/Ti-headed tokens. Construct chains supported (no maqqef
+    block at this level — caller handles continuation).
+    """
+    if tag_list:
+        for tag in tag_list:
+            morphemes = tag.split("/")
+            first = _strip_h_prefix(morphemes[0])
+            if first.startswith("R") or first.startswith("Tj") or first.startswith("Ti"):
+                return False
+            for morpheme in morphemes:
+                m = _strip_h_prefix(morpheme)
+                if not m:
+                    continue
+                if m.startswith("Nc") or m.startswith("Np"):
+                    return True
+                if len(m) >= 3 and m[0] == "V" and m[2] == "r":
+                    return True
+        return False
+    return False  # tag-required for this validator's H5b arm
+
+
+def _is_construct_state_substantive(tag_list: list[str] | None) -> bool:
+    """Token's substantive morpheme is in construct state (ends in 'c')."""
+    if not tag_list:
+        return False
+    for tag in tag_list:
+        for morpheme in tag.split("/"):
+            m = _strip_h_prefix(morpheme)
+            if not m:
+                continue
+            if (m.startswith("Nc") or m.startswith("Np")) and m.endswith("c"):
+                return True
+            if len(m) >= 6 and m[0] == "V" and m[2] == "r" and m.endswith("c"):
+                return True
+    return False
+
+
+def _is_apposition_pronoun(tag_list: list[str] | None) -> bool:
+    """Possessive-suffixed kinship/role term (אָחִיו, אִישָׁהּ, אֲדֹנִי)."""
+    if not tag_list:
+        return False
+    for tag in tag_list:
+        morphemes = tag.split("/")
+        if len(morphemes) >= 2:
+            first = _strip_h_prefix(morphemes[0])
+            last = _strip_h_prefix(morphemes[-1])
+            if (first.startswith("Nc") or first.startswith("Np")) and last.startswith("Sp"):
+                return True
+    return False
+
+
+def _is_vav_coord_subject_continuation(tag_list: list[str] | None) -> bool:
+    """vav-conjunction + noun (וְהַשָּׂרוֹת after כָּל־הַשָּׂרִים)."""
+    if not tag_list:
+        return False
+    for tag in tag_list:
+        morphemes = tag.split("/")
+        if len(morphemes) >= 2:
+            first = _strip_h_prefix(morphemes[0])
+            second = _strip_h_prefix(morphemes[1])
+            if first == "c" and (second.startswith("Nc") or second.startswith("Np") or second.startswith("Td")):
+                return True
+    return False
+
+
+def compute_h5b_short_frame_split(
+    tokens: list[str],
+    bare_tokens: list[str],
+    line_token_tags: list[list[str]] | None,
+) -> int:
+    """Compute the split position for H5b short-frame-with-content lines.
+
+    Returns the token-index where the split should occur (frame end + 1).
+    Returns 0 if no split applies (not a candidate, or frame extends entire line).
+
+    Trigger requires (caller verifies):
+      - First token in BARE_SPEECH_VERB_SKELETONS (speech-verb-headed)
+      - LEEMOR_SKELETON NOT present (long-frame case handled elsewhere)
+      - At least 3 tokens
+    """
+    if len(tokens) < 3:
+        return 0
+
+    def tag_at(i: int) -> list[str] | None:
+        if line_token_tags and i < len(line_token_tags):
+            return line_token_tags[i]
+        return None
+
+    # Walk tokens 1..N-1, admitting up to 5 satellite slots
+    idx = 1
+    slots_filled = 0
+    saw_subject = False
+    saw_recipient = False
+    while idx < len(tokens) and slots_filled < 5:
+        tok = tokens[idx]
+        tags = tag_at(idx)
+
+        # Recipient PP slot (admit at most once)
+        if not saw_recipient and _is_recipient_pp(tok, tag_list=tags):
+            idx += 1
+            slots_filled += 1
+            saw_recipient = True
+            # Construct-chain continuation (אֶל־אִישׁ + הָאֱלֹהִים)
+            if _is_construct_state_substantive(tags) and idx < len(tokens):
+                if _is_frame_subject(tokens[idx], tag_list=tag_at(idx)):
+                    idx += 1
+                    slots_filled += 1
+            # Apposition pronoun (לְשִׁמְעוֹן + אָחִיו)
+            while idx < len(tokens) and slots_filled < 5 and _is_apposition_pronoun(tag_at(idx)):
+                idx += 1
+                slots_filled += 1
+            continue
+
+        # Subject NP slot
+        if not saw_subject and _is_frame_subject(tok, tag_list=tags):
+            idx += 1
+            slots_filled += 1
+            saw_subject = True
+            # Construct-chain continuation
+            prev_tags = tags
+            if _is_construct_state_substantive(prev_tags) and idx < len(tokens):
+                if _is_frame_subject(tokens[idx], tag_list=tag_at(idx)):
+                    idx += 1
+                    slots_filled += 1
+            # Apposition continuation
+            while idx < len(tokens) and slots_filled < 5:
+                ntag = tag_at(idx)
+                if (_is_frame_subject(tokens[idx], tag_list=ntag)
+                        or _is_vav_coord_subject_continuation(ntag)
+                        or _is_apposition_pronoun(ntag)):
+                    idx += 1
+                    slots_filled += 1
+                else:
+                    break
+            continue
+
+        break
+
+    if idx >= len(tokens):
+        return 0
+    if idx == 1 and len(tokens) - 1 < 1:
+        return 0
+    return idx
+
+
+# ---------------------------------------------------------------------------
 # Path-1 carve-out classifier (annotation-only — no severity change)
 # ---------------------------------------------------------------------------
 
@@ -495,6 +698,60 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
                         "leemor_pos": leemor_pos,
                     })
 
+        # --- H5b short-frame-with-content check: speech verb starts line, no לֵאמֹר,
+        # frame is merged with quoted content on the same line ---
+        # Per canon §5 H5b (Path 1, 2026-05-02): split between announcement
+        # frame and quoted content. Mirrors the long-frame STRONG-SPLIT arm
+        # above but for the no-לֵאמֹר case (~2,400 historic merges corpus-wide).
+        # Tag-driven: requires TAHOT alignment for accurate frame-end detection.
+        elif (
+            len(bare_tokens) >= 3
+            and bare_tokens[0] in BARE_SPEECH_VERB_SKELETONS
+            and LEEMOR_SKELETON not in bare_tokens
+            and not is_prophetic_formula_line(bare_tokens)
+            and (
+                _tag_list_for(i, 0) is None
+                or M.is_finite_verb_token(tokens[0], tag_list=_tag_list_for(i, 0))
+            )
+        ):
+            # Build per-token tag list for this line (already aligned in
+            # line_token_tags dict above).
+            line_tags = line_token_tags.get(i)
+            split_pos = compute_h5b_short_frame_split(tokens, bare_tokens, line_tags)
+            if split_pos > 0:
+                # Carve-outs: classify_path1_carveout already handles homograph,
+                # Sifrei Emet, Job answering-formula. Apply same logic.
+                carveout = classify_path1_carveout(
+                    line=line,
+                    next_line="",
+                    book_path_str=str(path),
+                    line_first_token_tags=_tag_list_for(i, 0),
+                )
+                if carveout:
+                    severity = "REVIEW-REQUIRED"
+                    suffix = f" [carve-out: {carveout} — likely no-action]"
+                else:
+                    severity = "STRONG-SPLIT-CANDIDATE"
+                    suffix = ""
+                violations.append({
+                    "file": path.name,
+                    "file_path": path,
+                    "line_num": line_no,
+                    "rule": "H5b/short-frame-content",
+                    "severity": severity,
+                    "brief": (
+                        f"speech-frame ({split_pos} tokens) merged with quoted content "
+                        f"on same line — split at token index {split_pos} per Path 1 H5b"
+                        f"{suffix}"
+                    ),
+                    "line": line.rstrip(),
+                    "next_line": "",
+                    "next_line_num": None,
+                    "leemor_pos": None,
+                    "split_position": split_pos,
+                    "path1_carveout": carveout,
+                })
+
         # --- Solo speech-verb check: line is exactly ONE bare speech-verb token ---
         # Per audit 2026-05-01 Class E: when an entire line is just a wayyiqtol
         # speech verb (e.g., 1 Sam 1:18 line 92 'וַתֹּ֕אמֶר' alone), the verb
@@ -655,17 +912,24 @@ def main():
         findings = []
         for v in all_violations:
             severity = v["severity"]
-            # Determine applied_action from severity and לֵאמֹר position
+            # Determine applied_action from severity, לֵאמֹר position, or
+            # explicit split_position (H5b short-frame arm).
             leemor_pos = v.get("leemor_pos")
+            split_pos = v.get("split_position")
             if severity == "STRONG-MERGE-CANDIDATE":
                 applied_action = "merge_with_next"
             elif severity == "STRONG-SPLIT-CANDIDATE":
-                # split_at_position_N where N is the token index of לֵאמֹר
-                applied_action = (
-                    f"split_at_position_{leemor_pos}"
-                    if leemor_pos is not None
-                    else "split_at_position_unknown"
-                )
+                # split_at_position_N: apply_validators interprets N as the
+                # 0-indexed token AFTER which to split (split happens at N+1
+                # boundary). For H5b short-frame, our split_pos is already
+                # the boundary index → subtract 1. For לֵאמֹר case, leemor_pos
+                # is the index OF לֵאמֹר; split happens after it → subtract 0.
+                if split_pos is not None:
+                    applied_action = f"split_at_position_{split_pos - 1}"
+                elif leemor_pos is not None:
+                    applied_action = f"split_at_position_{leemor_pos}"
+                else:
+                    applied_action = "split_at_position_unknown"
             else:  # REVIEW-REQUIRED
                 applied_action = None
 
