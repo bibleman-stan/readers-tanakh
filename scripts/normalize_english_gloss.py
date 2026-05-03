@@ -782,6 +782,72 @@ def pass4_whitespace(line: str) -> str:
     return re.sub(r"\s+", " ", line).strip()
 
 
+# ---------------------------------------------------------------------------
+# Pass 6 — V-medial reorder, Shape A
+#   subordinator + copula + predicative + pronoun-subject → natural English order
+# ---------------------------------------------------------------------------
+
+# Shape A trigger: "for|because|lest|though  is|was|are|were  <pred>  <pron>"
+# Reorder to: subordinator pronoun copula predicate (+ remainder).
+# Idempotent: after reorder the copula no longer immediately follows the
+# subordinator, so the pattern cannot fire a second time.
+#
+# Shapes B / C / D / E are deferred to future passes.
+
+_V_MEDIAL_SHAPE_A_RE = re.compile(
+    r"\b(for|because|lest|though)"
+    r"\s+(is|was|are|were)"
+    r"\s+(\w+(?:ing)?)"
+    r"\s+(I|he|she|they|you|we|it)\b",
+    re.IGNORECASE,
+)
+
+
+def pass6_v_medial_reorder(line: str, in_poetic: bool) -> str:
+    """Reorder V-medial subordinate clauses: sub + cop + pred + pron → sub + pron + cop + pred.
+
+    Shape A only (Shapes B/C/D/E deferred).
+
+    Pattern: ``<sub> <cop> <pred> <pron>`` → ``<sub> <pron> <cop> <pred>``
+    where:
+      - sub  ∈ {for, because, lest, though}
+      - cop  ∈ {is, was, are, were}
+      - pred = any single-word predicative adjective (bare or -ing)
+      - pron ∈ {I, he, she, it, they, you, we}
+
+    FP guard: suppress if the line contains a '?' (interrogative).
+
+    Idempotent: the reordered form ``<sub> <pron> <cop> <pred>`` does not match
+    because the copula is no longer immediately after the subordinator.
+
+    Examples:
+    >>> pass6_v_medial_reorder("for was naked I", False)
+    'for I was naked'
+    >>> pass6_v_medial_reorder("for is strong it more than us", False)
+    'for it is strong more than us'
+    >>> pass6_v_medial_reorder("for I was naked", False)
+    'for I was naked'
+    >>> pass6_v_medial_reorder("for was unclean he?", False)
+    'for was unclean he?'
+    >>> pass6_v_medial_reorder("for is holy he to his God", False)
+    'for he is holy to his God'
+    """
+    if in_poetic:
+        return line
+    if "?" in line:
+        return line
+
+    def _repl(m: re.Match) -> str:
+        sub  = m.group(1)
+        cop  = m.group(2)
+        pred = m.group(3)
+        pron = m.group(4)
+        # Preserve case of the subordinator token as found.
+        return f"{sub} {pron} {cop} {pred}"
+
+    return _V_MEDIAL_SHAPE_A_RE.sub(_repl, line)
+
+
 # Final-pass invariant guarantee — collapse artifact doublings injected by
 # any prior pass (or stale upstream gloss). Closed-list of genuine Hebrew
 # geminate constructions are preserved. Per Design D 2026-04-30 + Stan's
@@ -820,12 +886,13 @@ def pass5_dedup(line: str) -> str:
 # ---------------------------------------------------------------------------
 
 def normalize_line(line: str, in_poetic: bool) -> str:
-    """Apply all five passes in order to a single gloss line."""
+    """Apply all passes in order to a single gloss line."""
     s = line
     s = pass1_suffix_reorder(s)
     s = pass2_construct_of(s)
     s = pass3_vs_reorder(s, in_poetic)
     s = pass4_whitespace(s)
+    s = pass6_v_medial_reorder(s, in_poetic)
     s = pass5_dedup(s)
     return s
 
