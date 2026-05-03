@@ -497,6 +497,17 @@ HEBREW_ADJECTIVES = {
 _BRACKET_KEEP_RE = re.compile(r'\[([^\]]+)\]')
 _VSO_PRONOUN_RE = re.compile(r'^and (he|she|it|they)\s', re.IGNORECASE)
 
+# Bracketed tokens that are PURE annotation (no English content) — drop
+# entirely from the smooth gloss layer instead of unbracketing. The interlinear
+# layer keeps them as supplied-marker indicators; the smooth layer should not.
+# `[obj.]` is the placeholder for the Hebrew DO marker אֵת which has no
+# English equivalent (English uses word-order accusative). Stan-flagged
+# 2026-05-02 (Gen 3:8 line 1 `and they heard obj. the sound of Yahweh God ...`).
+ANNOTATION_BRACKET_DROP = {"obj.", "obj"}
+_BRACKET_DROP_RE = re.compile(
+    r'\[(' + '|'.join(re.escape(t) for t in ANNOTATION_BRACKET_DROP) + r')\]\s*'
+)
+
 
 def naturalize_hebrew_gloss(text, word_units=None):
     """Wooden-but-legible naturalizer: see parse_teamim.py docstring.
@@ -506,7 +517,18 @@ def naturalize_hebrew_gloss(text, word_units=None):
     the VSO-pronoun-drop rule can inspect the immediately-following word unit
     rather than guessing from the joined string.
     """
-    text = _BRACKET_KEEP_RE.sub(r'\1', text)
+    # Drop pure-annotation bracketed tokens BEFORE unbracketing the rest.
+    # `[obj.]` → "" (DO-marker placeholder, no English content); else leave
+    # for `_BRACKET_KEEP_RE` to unbracket. (Census: 7,073 corpus instances.)
+    text = _BRACKET_DROP_RE.sub('', text)
+    # Iterative unbracketing — handles nested cases like `[is [the] one]`
+    # which `re.sub` (non-overlapping single-pass) leaves as `is [the one]`
+    # because the inner `[the]` matches first, leaving outer brackets behind.
+    # Applied repeatedly until convergence (typical: 1-2 iterations max).
+    prev = None
+    while text != prev:
+        prev = text
+        text = _BRACKET_KEEP_RE.sub(r'\1', text)
 
     # ---- VSO pronoun-drop (SMOOTH GLOSS ONLY) --------------------------------
     # Hebrew wayyiqtol verbs in prose carry an implicit subject pronoun that

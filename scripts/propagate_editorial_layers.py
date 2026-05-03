@@ -36,8 +36,10 @@ import unicodedata
 from pathlib import Path
 
 # Local: deduplicate_gloss for defense-in-depth eng-gloss artifact collapse
+# + ANNOTATION_BRACKET_DROP for stripping `[obj.]` placeholders when
+# synthesizing gloss from interlinear (which preserves [obj.] markers).
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from parse_teamim import deduplicate_gloss  # noqa: E402
+from parse_teamim import deduplicate_gloss, ANNOTATION_BRACKET_DROP  # noqa: E402
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 TEXT_DIR = REPO_ROOT / "data" / "text-files"
@@ -107,16 +109,30 @@ def per_word_tokens(line: str) -> list[str]:
     return [t.strip() for t in line.split(ENG_WORD_SEP)]
 
 
+_ANNOT_DROP_RE = re.compile(
+    r"\[(" + "|".join(re.escape(t) for t in ANNOTATION_BRACKET_DROP) + r")\]\s*"
+)
+
+
 def synth_gloss(inter_tokens: list[str]) -> str:
     """Synthesize flowing gloss from interlinear tokens.
 
     Strips [bracketed-explanatory] markers to bare words and joins with space.
     Used only when an editorial cola partial-overlaps a v1 cola; v1 gloss
     cannot be cleanly mapped at sub-cola granularity.
+
+    Two-step bracket handling matches the smooth-gloss naturalizer in
+    parse_teamim: (1) drop pure-annotation brackets like `[obj.]` entirely,
+    (2) iterate-unbracket the rest until convergence (handles nested cases
+    like `[is [the] one]` that single-pass `re.sub` leaves as `is [the one]`).
     """
     out: list[str] = []
     for tok in inter_tokens:
-        cleaned = re.sub(r"\[([^\]]*)\]", r"\1", tok)
+        cleaned = _ANNOT_DROP_RE.sub("", tok)
+        prev = None
+        while cleaned != prev:
+            prev = cleaned
+            cleaned = re.sub(r"\[([^\]]*)\]", r"\1", cleaned)
         cleaned = re.sub(r"\s+", " ", cleaned).strip()
         if cleaned:
             out.append(cleaned)
