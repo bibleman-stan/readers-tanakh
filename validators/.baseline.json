@@ -9,7 +9,7 @@
   "validate_clause_nucleus_split": 293,
   "validate_complement_integrity": 36,
   "validate_compound_preposition_object": 10,
-  "validate_construct_chain": 2180,
+  "validate_construct_chain": 2181,
   "validate_coordinated_object": 9,
   "validate_cross_verse_continuity": 338,
   "validate_doc_pointers": 23,
@@ -21,7 +21,7 @@
   "validate_parallel_series_uniformity": 5,
   "validate_short_orphan_line": 3819,
   "validate_short_verse_fronting": 0,
-  "validate_speech_intro_framing": 2385,
+  "validate_speech_intro_framing": 2384,
   "validate_verb_object_bond": 5,
   "validate_wayehi_protasis": 279
 }
