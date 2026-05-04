@@ -98,6 +98,201 @@ V2_DIR = REPO_ROOT / "data" / "text-files" / "v2" / "he"
 sys.path.insert(0, str(REPO_ROOT / "validators"))
 from _shared import morphology as M   # noqa: E402
 from _shared import morph_alignment as MA  # noqa: E402
+from _shared import macula_constituents as MC  # noqa: E402
+from _shared.poetic_register import is_poetic_register  # noqa: E402
+
+# ---------------------------------------------------------------------------
+# Pattern (e) — Pronoun-Resumption (NEW, Macula-IR-driven)
+#
+# Detects cross-verse continuity where verse N+1 opens with a pronoun (or
+# pronominal-suffix-bearing token) whose Macula `participantref` resolves
+# to a token in verse N (or earlier within the same chapter). This is a
+# new validation capability the IR unlocks — the colometric layer alone
+# cannot see participantref bonds.
+#
+# Scope: 1,077 corpus candidates (per pre-flight scan 2026-05-05). Severity
+# gating per spot-check (~85% TP on STRONG slice, narrative discrete-pronoun,
+# distance-1):
+#
+#   STRONG  — distance-1 + discrete pronoun (pos="pronoun") + non-poetic
+#             register + verse N does NOT end with wayyiqtol
+#   REVIEW  — distance ≤ 3 OR poetic register OR suffix-only token
+#   (suppressed) — distance > 10 OR verse N ends with wayyiqtol-narrative
+#   (the wayyiqtol-tail break is a heuristic for narrative time-step
+#   progression that interrupts pronoun-resumption bonds)
+# ---------------------------------------------------------------------------
+
+
+# Project-slug ↔ filename mapping. The cross_verse validator runs on
+# data/text-files/v{1,2}/he/<book_slug>/<book>-<chapter>.txt; book_slug
+# is the parent directory name (e.g. "01-genesis").
+_BOOK_SLUG_FROM_DIR = re.compile(r"^\d{2}-[a-z0-9]+$")
+
+
+def _book_slug_from_path(path: Path) -> str | None:
+    """Return the project book-slug (e.g. '01-genesis') from a v2/he chapter
+    file path. Returns None if path doesn't conform to the expected layout."""
+    parent = path.parent.name
+    if _BOOK_SLUG_FROM_DIR.match(parent):
+        return parent
+    return None
+
+
+def _chapter_int_from_path(path: Path) -> int | None:
+    """Extract chapter number from filename like 'genesis-24.txt' or
+    'songofsongs-03.txt'."""
+    m = re.search(r"-(\d+)\.txt$", path.name, re.IGNORECASE)
+    return int(m.group(1)) if m else None
+
+
+def _verse_int_from_ref(ref: str) -> int | None:
+    """'1:24' -> 24."""
+    m = re.match(r"^\s*\d+:(\d+)\s*$", ref)
+    return int(m.group(1)) if m else None
+
+
+def _verse_n_ends_with_wayyiqtol(verse_n: "VerseBlock", book_slug: str,
+                                  chapter: int) -> bool:
+    """Heuristic: verse N's last cola contains a wayyiqtol verb.
+
+    Wayyiqtol-tail = narrative time-step continuation, which colometrically
+    breaks the resumption bond (verse N+1's pronoun is participant-tracking
+    across an event boundary, not within the same atomic-thought scope).
+    """
+    last = verse_n.last_cola
+    if not last:
+        return False
+    verse_int = _verse_int_from_ref(verse_n.ref)
+    if verse_int is None:
+        return False
+    try:
+        verse_tokens = MC.get_verse_tokens(book_slug, chapter, verse_int)
+    except (FileNotFoundError, ValueError, KeyError):
+        return False
+    if not verse_tokens:
+        return False
+    # Match the last cola to its IR tokens. Greedy from cursor 0 over all colae.
+    cursor = 0
+    matched_last: list["MC.Token"] = []
+    for cola in verse_n.cola:
+        matched_last, cursor = MC.match_sense_line_tokens(
+            verse_tokens, cola.text, start_idx=cursor)
+    return any(t.is_wayyiqtol for t in matched_last)
+
+
+def analyze_pattern_e_pronoun_resumption(
+    verse_n: "VerseBlock",
+    verse_n1: "VerseBlock",
+    book_slug: str,
+    chapter: int,
+) -> dict | None:
+    """Detect cross-verse pronoun-resumption bond via Macula participantref.
+
+    Returns a finding dict (compatible with analyze_verse_pair's output) or
+    None if no candidate / suppressed.
+    """
+    if verse_n.followed_by_paragraph_break:
+        return None
+    n1_first = verse_n1.first_cola
+    if not n1_first:
+        return None
+
+    n_verse_int = _verse_int_from_ref(verse_n.ref)
+    n1_verse_int = _verse_int_from_ref(verse_n1.ref)
+    if n_verse_int is None or n1_verse_int is None:
+        return None
+
+    try:
+        n1_tokens_all = MC.get_verse_tokens(book_slug, chapter, n1_verse_int)
+    except (FileNotFoundError, ValueError, KeyError):
+        return None
+    if not n1_tokens_all:
+        return None
+
+    # Match verse N+1's first cola to its IR tokens
+    matched_first, _ = MC.match_sense_line_tokens(n1_tokens_all, n1_first.text, start_idx=0)
+    # The "opener" — first 1-2 content tokens (matches the pre-flight scan's
+    # heuristic; agent's 2026-05-05 candidate count of 1,077 was based on
+    # this 1-2-token window).
+    openers = [t for t in matched_first if t.text.strip()][:2]
+    if not openers:
+        return None
+
+    # Find the first opener with a cross-verse antecedent
+    trigger_token: MC.Token | None = None
+    antecedents_in_n: list[MC.Token] = []
+    for tok in openers:
+        if not tok.antecedents:
+            continue
+        # Filter to antecedents that point to an EARLIER verse, not same
+        cross_verse_ants = [a for a in tok.antecedents if a.verse < n1_verse_int]
+        if not cross_verse_ants:
+            continue
+        # Prefer antecedents in verse N specifically, otherwise any earlier
+        in_n = [a for a in cross_verse_ants if a.verse == n_verse_int]
+        if in_n:
+            trigger_token = tok
+            antecedents_in_n = in_n
+            break
+        # Distance-2+ candidates fall through (will use the broader set)
+        if trigger_token is None:
+            trigger_token = tok
+            antecedents_in_n = cross_verse_ants
+
+    if trigger_token is None:
+        return None
+
+    # Distance to the closest antecedent
+    closest_ant_verse = max(a.verse for a in antecedents_in_n)
+    distance = n1_verse_int - closest_ant_verse
+
+    # Suppress: distance > 10 (long-range anaphora — almost always coincidental)
+    if distance > 10:
+        return None
+
+    # Suppress: verse N ends with wayyiqtol (narrative time-step interrupts bond)
+    if _verse_n_ends_with_wayyiqtol(verse_n, book_slug, chapter):
+        return None
+
+    # Severity gating
+    # All pattern (e) findings emit REVIEW-REQUIRED for now — the IR-driven
+    # candidate set (~1,964 corpus-wide) is new surface that needs editorial
+    # triage before any subset can be promoted to STRONG-MERGE-CANDIDATE.
+    # The pre-flight scan's spot-check showed ~85% TP on the distance-1 +
+    # discrete-pronoun + narrative slice; promotion to STRONG awaits
+    # confirmation against a larger editorial sample.
+    is_discrete_pronoun = trigger_token.is_pronoun
+    is_suffix = trigger_token.is_suffix
+    poetic = is_poetic_register(book_slug, chapter, n1_verse_int)
+    severity = "REVIEW-REQUIRED"
+
+    last_cola = verse_n.last_cola
+    n_text = last_cola.text if last_cola else ""
+    n1_text = n1_first.text
+
+    return {
+        "rule": "H10/pattern-e-pronoun-resumption",
+        "pattern": "(e) cross-verse pronoun-resumption (Macula participantref)",
+        "severity": severity,
+        "verse_n_ref": verse_n.ref,
+        "verse_n1_ref": verse_n1.ref,
+        # Same key names the existing JSON-output mode expects from analyze_verse_pair
+        "last_cola_line": last_cola.line_num if last_cola else None,
+        "first_cola_line": n1_first.line_num,
+        "trigger_text": trigger_token.text,
+        "trigger_pos": "suffix" if is_suffix else ("pronoun" if is_discrete_pronoun else trigger_token.pos),
+        "antecedent_text": antecedents_in_n[0].text,
+        "antecedent_verse": closest_ant_verse,
+        "distance": distance,
+        "applied_action": "merge_with_previous",
+        "brief": (
+            f"v{verse_n.ref} → v{verse_n1.ref}: pronoun {trigger_token.text!r} "
+            f"resumes {antecedents_in_n[0].text!r} from v{closest_ant_verse} "
+            f"(dist={distance})"
+        ),
+        "n_text": n_text,
+        "n1_text": n1_text,
+    }
 
 # ---------------------------------------------------------------------------
 # Hebrew Unicode helpers
@@ -618,6 +813,13 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
     Uses TAHOT morph tags (via morph_alignment) when available to classify
     the boundary tokens (last of verse N, first of verse N+1) as construct-state
     heads. Falls back to skel-heuristics when tags are missing or alignment fails.
+
+    Patterns (a)-(d): subordinator / construct / speech-intro at verse boundary,
+    detected via the colometric layer + morph-tag back-end.
+
+    Pattern (e): cross-verse pronoun-resumption via Macula participantref —
+    a new validation capability the IR layer unlocks. The colometric layer
+    alone cannot see participantref bonds.
     """
     blocks = parse_chapter_file(path)
     violations = []
@@ -625,12 +827,16 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
     # Load TAHOT morph alignment for this chapter (None if v0/morph file absent).
     chapter_morph = MA.load_chapter_morph(path)
 
+    # Pattern (e) needs Macula IR access; derive book-slug + chapter once.
+    book_slug = _book_slug_from_path(path)
+    chapter_int = _chapter_int_from_path(path)
+    have_ir = book_slug is not None and chapter_int is not None
+
     for idx in range(len(blocks) - 1):
         verse_n = blocks[idx]
         verse_n1 = blocks[idx + 1]
 
         # Retrieve boundary-token tag lists for TAHOT-aware construct detection.
-        # Graceful fallback: returns None when morph is unavailable or alignment fails.
         last_token_tags = _get_boundary_tags(chapter_morph, verse_n, token_index=-1)
         first_token_tags = _get_boundary_tags(chapter_morph, verse_n1, token_index=0)
 
@@ -643,6 +849,19 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
             finding["file"] = path.name
             finding["file_path"] = path
             violations.append(finding)
+
+        # Pattern (e) — additive; runs alongside analyze_verse_pair so a
+        # verse pair can match multiple patterns independently.
+        if have_ir:
+            try:
+                e_finding = analyze_pattern_e_pronoun_resumption(
+                    verse_n, verse_n1, book_slug, chapter_int)
+            except Exception:
+                e_finding = None  # IR-side failures are silent; never crash the validator
+            if e_finding:
+                e_finding["file"] = path.name
+                e_finding["file_path"] = path
+                violations.append(e_finding)
 
     return violations
 
