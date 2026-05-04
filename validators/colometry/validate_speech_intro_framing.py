@@ -128,6 +128,17 @@ LEEMOR_SKELETON = "לאמר"
 # share the same set without drift.
 from _shared.speech_verbs import BARE_SPEECH_VERB_SKELETONS  # noqa: E402
 
+# Macula constituent-query layer for H5b IR-driven frame-end detection.
+from _shared import macula_constituents as MC  # noqa: E402
+
+# Lemma-based speech-verb set (post-IR-pivot 2026-05-05). Used by the
+# H5b IR-driven detector — robust to orthographic variants the
+# BARE_SPEECH_VERB_SKELETONS set missed.
+SPEECH_VERB_LEMMAS = {
+    "אָמַר", "דָּבַר", "קָרָא", "עָנָה", "צִוָּה",
+    "סִפֵּר", "נָגַד", "שָׁאַל", "צָעַק", "זָעַק",
+}
+
 # Prophetic formula line — these get their OWN line regardless of length.
 # Consonant skeletons: כה אמר יהוה, נאם יהוה
 PROPHETIC_FORMULA_SKELETONS = {
@@ -270,12 +281,58 @@ def _is_vav_coord_subject_continuation(tag_list: list[str] | None) -> bool:
     return False
 
 
+def compute_h5b_short_frame_split_ir(line_ir_tokens: list["MC.Token"]) -> int:
+    """IR-driven H5b frame-end detection.
+
+    Replaces the slot-walking heuristic in `compute_h5b_short_frame_split`
+    with a single declarative query: the speech-verb's frame-arg A1 IS the
+    head of the quoted content. Whichever line-token shares xml_id with the
+    A1 head's xml_id is where the split occurs.
+
+    Returns the LINE-LOCAL token-index where the split should occur (= the
+    A1-head token's position within `line_ir_tokens`). Returns 0 if:
+      - line is too short
+      - first token is not a speech verb (lemma)
+      - speech verb has no A1 frame-arg
+      - A1 head is not within this line's tokens (cross-line content already)
+
+    Why this is sounder than the prior heuristic:
+    - Eliminates manual recipient-PP / subject-NP / construct-chain slot tests
+    - Disambiguates frame end vs continuation by the parser's authoritative
+      argument-structure annotation, not by heuristic walks
+    - Catches multi-token recipient PPs, complex constructs, etc. for free
+    """
+    if len(line_ir_tokens) < 3:
+        return 0
+    speech_verb = line_ir_tokens[0]
+    if not speech_verb.is_finite_verb:
+        return 0
+    if speech_verb.lemma not in SPEECH_VERB_LEMMAS:
+        return 0
+    a1_tokens = speech_verb.frame_args.get("A1") or []
+    if not a1_tokens:
+        return 0
+    a1_head = a1_tokens[0]
+    for i, tok in enumerate(line_ir_tokens):
+        if tok.xml_id == a1_head.xml_id:
+            if i == 0:
+                return 0  # speech verb IS the A1 (degenerate; no split)
+            return i
+    return 0
+
+
 def compute_h5b_short_frame_split(
     tokens: list[str],
     bare_tokens: list[str],
     line_token_tags: list[list[str]] | None,
 ) -> int:
-    """Compute the split position for H5b short-frame-with-content lines.
+    """Tag-driven H5b frame-end detection (legacy fallback for IR misses).
+
+    Walks tokens 1..N-1 using a 5-slot heuristic (recipient PP, subject NP,
+    construct-chain continuation, apposition pronoun) to estimate the
+    announcement-frame extent. Replaced by `compute_h5b_short_frame_split_ir`
+    when IR alignment is available; this remains as a fallback for chapters
+    without lowfat data or with parser gaps.
 
     Returns the token-index where the split should occur (frame end + 1).
     Returns 0 if no split applies (not a candidate, or frame extends entire line).
@@ -730,6 +787,15 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
     # tag_list_per_token[tok_idx] = list[str] (TAHOT tags for that token)
     # This lets the flat line-scan below look up tags by line index.
     line_token_tags: dict[int, list[list[str]]] = {}
+    # Parallel lookup for IR-driven H5b detection: file_line_index → [MC.Token]
+    # Built per-verse via Macula lowfat constituent-tree; populated only when
+    # the path conforms to the v1/he-baseline or v2/he layout.
+    line_ir_tokens: dict[int, list["MC.Token"]] = {}
+
+    book_slug = path.parent.name
+    chap_match = re.search(r"-(\d+)\.txt$", path.name, re.IGNORECASE)
+    chap_int = int(chap_match.group(1)) if chap_match else None
+
     if chapter_morph is not None:
         verse_groups = _partition_into_verses(lines)
         for verse_num, verse_numbered_lines in verse_groups:
@@ -740,15 +806,26 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
             if not content:
                 continue
             ortho_tags = chapter_morph.get(verse_num)
-            if ortho_tags is None:
-                continue
-            verse_text_lines = [raw for _, raw in content]
-            aligned = MA.align_verse_tokens_to_tags(verse_text_lines, ortho_tags)
-            if aligned is None:
-                continue
-            for ci, (ln, _raw) in enumerate(content):
-                # ln is 1-based; store at 0-based index
-                line_token_tags[ln - 1] = aligned[ci]
+            if ortho_tags is not None:
+                verse_text_lines = [raw for _, raw in content]
+                aligned = MA.align_verse_tokens_to_tags(verse_text_lines, ortho_tags)
+                if aligned is not None:
+                    for ci, (ln, _raw) in enumerate(content):
+                        # ln is 1-based; store at 0-based index
+                        line_token_tags[ln - 1] = aligned[ci]
+
+            # Build parallel IR alignment for the same verse.
+            if chap_int is not None:
+                try:
+                    verse_ir_tokens = MC.get_verse_tokens(book_slug, chap_int, verse_num)
+                except (FileNotFoundError, ValueError, KeyError):
+                    verse_ir_tokens = []
+                if verse_ir_tokens:
+                    cursor = 0
+                    for ci, (ln, raw) in enumerate(content):
+                        matched, cursor = MC.match_sense_line_tokens(
+                            verse_ir_tokens, raw, start_idx=cursor)
+                        line_ir_tokens[ln - 1] = matched
 
     def _tag_list_for(line_idx: int, tok_idx: int) -> "list[str] | None":
         """Return TAHOT tag list for (line_idx, tok_idx), or None on miss."""
@@ -925,10 +1002,15 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
                 or M.is_finite_verb_token(tokens[0], tag_list=_tag_list_for(i, 0))
             )
         ):
-            # Build per-token tag list for this line (already aligned in
-            # line_token_tags dict above).
-            line_tags = line_token_tags.get(i)
-            split_pos = compute_h5b_short_frame_split(tokens, bare_tokens, line_tags)
+            # IR-driven detection (post-2026-05-05 Macula pivot) when lowfat
+            # alignment is available; falls back to tag-driven slot-walker
+            # for chapters without lowfat data.
+            ir_tokens_for_line = line_ir_tokens.get(i, [])
+            if ir_tokens_for_line:
+                split_pos = compute_h5b_short_frame_split_ir(ir_tokens_for_line)
+            else:
+                line_tags = line_token_tags.get(i)
+                split_pos = compute_h5b_short_frame_split(tokens, bare_tokens, line_tags)
             if split_pos > 0:
                 # Carve-outs: classify_path1_carveout already handles homograph,
                 # Sifrei Emet, Job answering-formula. Apply same logic.
