@@ -290,6 +290,12 @@ class Token:
         return self.type_ == "qatal"
 
     @property
+    def is_weqatal(self) -> bool:
+        """Vav-consecutive perfect (apodosis-marker). Lowfat encodes this
+        natively as type="weqatal" (distinct from type="qatal")."""
+        return self.type_ == "weqatal"
+
+    @property
     def is_imperative(self) -> bool:
         return self.type_ == "imperative"
 
@@ -328,7 +334,7 @@ class Token:
     @property
     def is_finite_verb(self) -> bool:
         return self.is_verb and self.type_ in (
-            "qatal", "yiqtol", "wayyiqtol", "imperative",
+            "qatal", "weqatal", "yiqtol", "wayyiqtol", "imperative",
             "jussive", "cohortative",
         )
 
@@ -338,12 +344,12 @@ class Token:
 
     @property
     def aspect(self) -> Optional[str]:
-        """Verbal aspect (qatal / yiqtol / wayyiqtol / imperative / participle / infinitive)
-        or None for non-verbs."""
+        """Verbal aspect (qatal / weqatal / yiqtol / wayyiqtol / imperative /
+        participle / infinitive) or None for non-verbs."""
         if not self.is_verb:
             return None
-        if self.type_ in ("qatal", "yiqtol", "wayyiqtol", "imperative",
-                          "jussive", "cohortative"):
+        if self.type_ in ("qatal", "weqatal", "yiqtol", "wayyiqtol",
+                          "imperative", "jussive", "cohortative"):
             return self.type_
         if self.is_participle:
             return "participle"

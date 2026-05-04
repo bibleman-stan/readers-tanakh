@@ -131,6 +131,17 @@ def test_gen1_clauses_have_head_verbs():
         assert c.is_clause
 
 
+def test_gen1_15_weqatal_is_finite_verb():
+    """Lowfat encodes weqatal natively as type='weqatal'; the IR exposes
+    `is_weqatal` and folds weqatal into `is_finite_verb`."""
+    ch = get_chapter("01-genesis", 1)
+    v15 = ch.get_verse_sentence(15)
+    weqatal = next(t for t in v15.tokens if t.type_ == "weqatal")
+    assert weqatal.is_weqatal
+    assert weqatal.is_finite_verb
+    assert weqatal.aspect == "weqatal"
+
+
 # ---------------------------------------------------------------------------
 # Isaiah 40 — poetry, imperatives, empty-A0 frames
 # ---------------------------------------------------------------------------
