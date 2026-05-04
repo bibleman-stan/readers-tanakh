@@ -29,7 +29,8 @@ ve'al | benotav
 vaiyitchazek | David | Bayahweh | elohav
 
 30:7
-vaiyomer | David | el | Evyatar | hakohen | ben | Achimelekh | hagishah | na | li
+vaiyomer | David | el | Evyatar
+hakohen | ben | Achimelekh | hagishah | na | li
 ha'efod | vaiyagesh | Evyatar | et | ha'efod | el | David
 
 30:8
@@ -62,7 +63,8 @@ velo | shatah | mayim | sheloshah | yamim
 usheloshah | leilot
 
 30:13
-vaiyomer | lo | David | lemi | atah
+vaiyomer | lo | David
+lemi | atah
 ve'ei | mizeh
 atah
 vaiyomer | na'ar

@@ -82,7 +82,8 @@ vehamelekh | zaken | me'od | Va'avishag | hashunamit | mesharat | et | hamelekh
 1:16
 vatikod | Bat | Sheva
 vatishtachu | lamelekh
-vaiyomer | hamelekh | mah | lakh
+vaiyomer | hamelekh
+mah | lakh
 
 1:17
 vatomer | lo | adoni
@@ -226,7 +227,8 @@ vatibaka | ha'aretz | bekolam
 vaiyishma | Adoniyahu | vekhol | hakeru'im | asher | ito
 vehem | kilu | le'ekhol
 vaiyishma | Yo'av | et | kol | hashofar
-vaiyomer | madua | kol | hakiryah | homah
+vaiyomer
+madua | kol | hakiryah | homah
 
 1:42
 odenu | medaber | vehineh | Yonatan | ben | Evyatar | hakohen

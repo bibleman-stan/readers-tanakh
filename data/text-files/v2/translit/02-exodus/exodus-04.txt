@@ -31,7 +31,8 @@ elohei | Avraham | elohei | Yitzchak
 velohei | Ya'ako
 
 4:6
-vaiyomer | Yahweh | lo | od | have | na | yadekha | becheikecha
+vaiyomer | Yahweh | lo
+od | have | na | yadekha | becheikecha
 vaiyave | yado | becheiko
 vaiyotzi'ah | vehineh | yado | metzora'at | kashaleg
 
@@ -56,7 +57,8 @@ vehayu | hamayim | asher | tikach | min | Hay'or
 vehayu | ledam | baiyabashet
 
 4:10
-vaiyomer | Mosheh | el | Yahweh | bi | Adonai
+vaiyomer | Mosheh | el | Yahweh
+bi | Adonai
 lo | ish | devarim | anokhi | gam | mitemol | gam | mishilshom
 gam | me'az | daberkha | el | avdekha
 ki | khevad | peh | ukhevad | lashon | anokhi
@@ -165,7 +167,8 @@ Ve'aharon
 vaiya'asfu | et | kol | ziknei | benei | Yisra'el
 
 4:30
-vaydaber | Aharon | et | kol | hadevarim | asher | diber | Yahweh | el | Mosheh
+vaydaber | Aharon
+et | kol | hadevarim | asher | diber | Yahweh | el | Mosheh
 vaiya'as | ha'otot | le'einei | ha'am
 
 4:31

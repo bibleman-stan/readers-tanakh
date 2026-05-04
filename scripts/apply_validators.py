@@ -51,10 +51,24 @@ import argparse
 import datetime
 import json
 import os
+import re
 import subprocess
 import sys
 from collections import defaultdict
 from pathlib import Path
+
+# Verse-reference line: matches `1:1`, `12:34`, `Gen 1:1`, etc. — pure-numeric
+# verse marker that MUST NOT be absorbed into adjacent content lines on merge.
+# Cross-verse merges per canon §5 H10 require a superscript-marker preservation
+# scheme that the merge engine does not yet implement; until that exists,
+# cross-verse merges are SKIPPED here (carry-forward
+# 2026-05-04 carry-forward-cross-verse-merge-bug.md).
+VERSE_REF_LINE_RE = re.compile(r"^(\S+\s+)?\d+:\d+\s*$")
+
+
+def _is_verse_ref_line(line: str) -> bool:
+    """True if the line is purely a verse-reference marker (e.g., '1:15')."""
+    return bool(VERSE_REF_LINE_RE.match(line.strip()))
 
 # ---------------------------------------------------------------------------
 # Repo layout
@@ -409,6 +423,15 @@ def apply_mutations_to_lines(
 
             before_current = work[idx]
             before_next = work[next_idx]
+
+            # Cross-verse boundary skip: never absorb a verse-reference line
+            # into a content line. Per canon §5 H10, cross-verse merges
+            # require superscript-marker preservation; merge engine doesn't
+            # implement that yet (carry-forward), so skip the merge.
+            # Same skip if the CURRENT line is a verse-ref (defensive).
+            if _is_verse_ref_line(before_next) or _is_verse_ref_line(before_current):
+                continue
+
             merged = before_current.rstrip() + separator + before_next.lstrip()
             applied.append({
                 "finding": finding,
@@ -428,6 +451,11 @@ def apply_mutations_to_lines(
 
             before_current = work[idx]
             before_prev = work[prev_idx]
+
+            # Cross-verse boundary skip: same rationale as merge_with_next.
+            if _is_verse_ref_line(before_prev) or _is_verse_ref_line(before_current):
+                continue
+
             merged = before_prev.rstrip() + separator + before_current.lstrip()
             applied.append({
                 "finding": finding,

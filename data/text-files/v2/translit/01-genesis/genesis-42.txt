@@ -1,6 +1,7 @@
 42:1
 vaiyar | Ya'ako | ki | yesh | shever | Bemitzrayim
-vaiyomer | Ya'ako | levanav | lamah
+vaiyomer | Ya'ako | levanav
+lamah
 titra'u
 
 42:2
@@ -31,10 +32,12 @@ vaiyishtachavu | lo | apayim | aretzah
 vaiyar | Yosef | et | echav
 vaiyakirem
 vaiyitnaker | aleihem
-vaydaber | itam | kashot
+vaydaber | itam
+kashot
 vaiyomer | alehem
 me'ayin | batem
-vaiyomeru | me'eretz | Kena'an | lishbor | okhel
+vaiyomeru
+me'eretz | Kena'an | lishbor | okhel
 
 42:8
 vaiyaker | Yosef | et | echav
@@ -68,7 +71,8 @@ einenu
 
 42:14
 vaiyomer | alehem | Yosef
-hu | asher | dibarti | alekhem | lemor | meragelim | atem
+hu | asher | dibarti | alekhem | lemor
+meragelim | atem
 
 42:15
 bezot | tibachenu | chei | far'oh | im | tetze'u | mizeh
@@ -99,7 +103,8 @@ velo | tamutu
 vaiya'asu | khen
 
 42:21
-vaiyomeru | ish | el | achiv | aval | ashemim | anachnu | al | achinu
+vaiyomeru | ish | el | achiv
+aval | ashemim | anachnu | al | achinu
 asher | ra'inu | tzarat | nafsho
 behitchano | eleinu | velo | shama'enu
 al | ken | ba'ah | eleinu | hatzarah | hazot
