@@ -21,34 +21,35 @@ QUOTED CONTENT.
   announcement frame per H18 (clause-nucleus integrity — verb + argument
   structure is one unit). The split goes at the predication boundary.
 
-PATTERN DEFINITION (this validator's scope, conservative initial):
-A line where, in TAHOT tag-confirmed order:
-  1. A token bears tag `V<stem>r` (active participle, any verb stem)
-     AND the bare-skel root matches a SPEECH_PARTICIPLE_ROOTS prefix
-     (אמר, דבר, קרא, צעק, זעק).
-  2. After that participle position (skipping verb-side complements like
-     PPs and bare NPs), an imperative-verb token (V<stem>v aspect).
+PATTERN DEFINITION (IR-driven; post-2026-05-05 Macula pivot):
+A line where, in IR-confirmed order:
+  1. A token has `is_active_participle == True` AND `lemma in SPEECH_LEMMAS`.
+  2. After that participle position (skipping verb-side complements),
+     an `is_imperative == True` token.
 
 The split position is BEFORE the imperative.
 
 FP GUARDS (suppress finding):
   - poetic register (Sifrei Emet skip)
-  - subordinator before speech verb (אשר, כי, כאשר, לכן, על־כן, למען)
-  - naming-construction (token after speech verb is שם/שמו/שמה/שמם)
-  - לאמר on the same line (already H5 territory)
-  - line starts with wayyiqtol (H5b territory)
+  - participle is inside a relative clause (`Constituent.ancestor_with(wg_class="relp")`)
+  - subordinator before speech verb (אֲשֶׁר, כִּי, כַּאֲשֶׁר, לָכֵן, לְמַעַן, פֶּן)
+  - naming-construction (token after participle has `lemma == "שֵׁם"`)
+  - לאמר on the same line (already H5 territory) — detected as inf-construct
+    of אָמַר
   - כה immediately before participle (prophetic-formula territory)
   - both split halves must be ≥ 1 prosodic word (anti-trivial)
 
 SEVERITY:
-  REVIEW-REQUIRED only — initial deployment per 2026-05-04 audit verdict.
-  Corpus footprint at first-pass design is narrow (~1-handful of confirmed
-  TPs); STRONG-promotion gated on §7.4 ≥80%-on-≥5-instances threshold after
-  canary review.
+  REVIEW-REQUIRED only. Severity floor matches the prior tag-walking version.
 
-ARCHITECTURAL CONSTRAINT:
-  Tag-driven (no te'amim glyph predicates). Skel fallback for root match
-  only.
+POST-PIVOT NOTES:
+  Replaces TAHOT morpheme-chain walking (`_morpheme_chain` / `_has_active_participle`
+  / `_has_imperative`) with declarative IR Token predicates. Replaces the
+  closed-list `SPEECH_PARTICIPLE_FORMS` skel set with lemma-based detection
+  (robust to mater-lectionis and orthographic variants the form list missed).
+  Replaces hand-built subordinator-via-maqqef-split logic with IR's
+  `Constituent.ancestor_with(wg_class="relp")` (catches nested cases the
+  skel-walk couldn't).
 
 Output format:
     [DEVIATION]  file:line  H5d/participial-speech-frame  REVIEW-REQUIRED  brief
@@ -77,24 +78,40 @@ V2_DIR = REPO_ROOT / "data" / "text-files" / "v2" / "he"
 
 sys.path.insert(0, str(REPO_ROOT / "validators"))
 from _shared.poetic_register import is_poetic_register  # noqa: E402
-from _shared import morph_alignment as MA  # noqa: E402
+from _shared import macula_constituents as MC  # noqa: E402
 
 # ---------------------------------------------------------------------------
-# Hebrew Unicode helpers
+# H5d trigger constants — lemma-based (post-IR-pivot)
 # ---------------------------------------------------------------------------
 
-SOF_PASUQ = "׃"     # U+05C3
-MAQQEF = "־"        # U+05BE — preserve as structural separator (split target)
-PASEQ = "׀"         # U+05C0
-# Strip niqqud + te'amim (U+0591-U+05C7) but preserve maqqef (U+05BE),
-# sof pasuq (U+05C3), paseq (U+05C0) — these are structural markers, not points.
-HEBREW_POINTS_RE = re.compile(r"[֑-ֽֿ-ֿׁ-ׂׄ-ׇ]")
+# Speech-root lemmas (replaces SPEECH_PARTICIPLE_FORMS skel set). Matched
+# against Token.lemma when Token.is_active_participle is True.
+SPEECH_LEMMAS = frozenset({
+    "אָמַר",   # say
+    "דָּבַר",  # speak
+    "קָרָא",   # call / cry out
+    "צָעַק",   # cry out
+    "זָעַק",   # cry out
+})
+
+# Subordinator lemmas — if any of these precedes the participle on the same
+# line, the speech verb is inside a sub-clause (the "quote" is the content
+# of that sub-clause, not a standalone announcement).
+H5D_SUBORDINATOR_LEMMAS = frozenset({
+    "אֲשֶׁר", "כִּי", "כַּאֲשֶׁר", "לָכֵן", "לְמַעַן", "פֶּן", "עַל־כֵּן",
+})
+
+# Naming-construction: קרא + שם = "called the name", not "cried out".
+H5D_NAMING_LEMMAS = frozenset({"שֵׁם"})
+
+# Prophetic formula immediately before participle.
+H5D_PROPHETIC_FORMULA_LEMMAS = frozenset({"כֹּה"})
+
+# ---------------------------------------------------------------------------
+# Sense-line / verse parsing helpers
+# ---------------------------------------------------------------------------
 
 VERSE_REF_RE = re.compile(r"^(\S+\s+)?\d+:\d+\s*$")
-
-
-def strip_points(token: str) -> str:
-    return HEBREW_POINTS_RE.sub("", token)
 
 
 def is_skippable(line: str) -> bool:
@@ -128,290 +145,230 @@ def chapter_from_path(path: Path) -> int | None:
     return int(m.group(1))
 
 
-def content_tokens(line: str) -> list[str]:
-    out = []
-    for tok in line.split():
-        bare = strip_points(tok)
-        if bare in ("", SOF_PASUQ):
-            continue
-        if re.match(r"^\d+:\d+$", bare):
-            continue
-        out.append(tok)
-    return out
-
-
-def bare_skel(token: str) -> str:
-    return strip_points(token).rstrip(SOF_PASUQ)
-
-
 # ---------------------------------------------------------------------------
-# H5d trigger constants
+# IR-driven detection
 # ---------------------------------------------------------------------------
 
-# Speech-participle FORMS (consonant skeletons of common active-participle
-# forms of speech roots). Direct skeleton match — needed because many
-# participles have mater-lectionis vav/yod in the surface form (קוֹרֵא →
-# skel קורא, root only קרא).
-SPEECH_PARTICIPLE_FORMS = frozenset({
-    # אמר qal active participle: אֹמֵר / אֹמְרִים / אֹמֶרֶת — skel often retains aleph
-    "אמר", "אמרי", "אמרים", "אמרת", "אמרות",
-    "ואמר", "ואמרי", "ואמרים", "ואמרת",  # vav-prefixed
-    # דבר piel active participle: מְדַבֵּר etc.
-    "מדבר", "מדברי", "מדברים", "מדברת", "מדברות",
-    "ומדבר", "ומדברי", "ומדברים",
-    # דבר qal active participle (rare)
-    "דבר", "דברי", "דברים", "דוברי", "דוברים",  # דֹּבֵר / דֹּבְרִי
-    # קרא qal active participle: קוֹרֵא / קוֹרְאִים — vav as mater lectionis
-    "קורא", "קוראי", "קוראים", "קראת", "קוראות",
-    "וקורא", "וקוראים",
-    # צעק qal active participle: צֹעֵק (vav as mater)
-    "צעק", "צעקי", "צעקים", "צעקת", "צעקות",
-    "צועק", "צועקי", "צועקים",  # with vav-mater
-    # זעק qal active participle: זֹעֵק (vav as mater)
-    "זעק", "זעקי", "זעקים", "זעקת", "זעקות",
-    "זועק", "זועקי", "זועקים",  # with vav-mater
-})
+def line_has_leemor(tokens: list["MC.Token"]) -> bool:
+    """True if any token is an inf-construct of אָמַר (= לֵאמֹר construction).
 
-# Subordinators that disqualify (the speech verb is inside a sub-clause,
-# the "quote" is the content of the sub-clause not a standalone announcement).
-H5D_SUBORDINATORS = frozenset({
-    "אשר", "כי", "כאשר", "לכן", "למען", "פן",
-    "עלכן", "על־כן",  # על־כן with maqqef
-})
-
-# Naming-construction tokens (קרא + שם = "called the name", not "cried out").
-H5D_NAMING_TOKENS = frozenset({
-    "שם", "שמו", "שמה", "שמם", "שמן",
-})
-
-# Prophetic formula immediately before participle.
-H5D_PROPHETIC_FORMULA = frozenset({"כה"})
-
-# לאמר marker — H5 territory, not H5d.
-H5D_LEEMOR_SKELS = frozenset({"לאמר", "לאמור"})
-
-
-def _morpheme_chain(tag: str) -> list[str]:
-    """Return morpheme chain stripped of language prefix (H/c)."""
-    if not tag or tag == "[—]":
-        return []
-    # strip leading H, then split on /, then strip leading c from each
-    s = tag.lstrip("H")
-    return [m for m in s.split("/") if m]
-
-
-def _has_active_participle(tag_chain: list[str]) -> bool:
-    """True if any morpheme is V<stem>r (active participle)."""
-    for m in tag_chain:
-        ms = m.lstrip("Hc")
-        if len(ms) >= 4 and ms[0] == "V" and ms[2] == "r":
+    The לֵ prefix (preposition) and the inf-construct are separate tokens
+    in lowfat; the inf-construct itself carries lemma 'אָמַר' + type
+    'infinitive construct'.
+    """
+    for t in tokens:
+        if t.lemma == "אָמַר" and t.is_infinitive_construct:
             return True
     return False
 
 
-def _has_imperative(tag_chain: list[str]) -> bool:
-    """True if any morpheme is V<stem>v (imperative)."""
-    for m in tag_chain:
-        ms = m.lstrip("Hc")
-        if len(ms) >= 4 and ms[0] == "V" and ms[2] == "v":
+def participle_is_in_relative_clause(participle: "MC.Token") -> bool:
+    """True if the participle's enclosing constituent tree includes a
+    relative-clause ancestor (wg_class='relp' or wg_rule='relCL').
+
+    Catches nested cases that the prior skel-token-walk's maqqef-split
+    subordinator detection couldn't see — e.g., אֵת אֲשֶׁר־יְהוָה אֹמֵר where
+    the participle אֹמֵר is inside the relative clause headed by אֲשֶׁר.
+    """
+    cur = participle.parent_constituent
+    while cur is not None:
+        if cur.is_relative_clause:
             return True
+        cur = cur.parent
     return False
 
 
-def compute_h5d_split(
-    tokens: list[str],
-    bare_tokens: list[str],
-    tag_lists: list[list[str]] | None,
-) -> tuple[int, str]:
+def compute_h5d_split(tokens: list["MC.Token"]) -> tuple[int, str, "MC.Token | None", "MC.Token | None"]:
     """Compute split position for H5d participial-speech-frame line.
 
-    Returns (split_pos, mode) where:
+    Returns (split_pos, mode, participle, imperative) where:
       split_pos = 0 → no H5d split applies
-      split_pos > 0 → token-index where to split (before the imperative)
-      mode → "tag-confirmed" (REVIEW)
+      split_pos > 0 → token-INDEX (within `tokens`) before which to split
+                      (i.e., tokens[:split_pos] = announcement,
+                             tokens[split_pos:] = quoted content)
+      mode → "ir-driven" (REVIEW-REQUIRED)
+      participle, imperative → the trigger tokens, for diagnostics
     """
-    if tag_lists is None:
-        return 0, ""
     if len(tokens) < 4:
-        return 0, ""
+        return 0, "", None, None
 
-    # Find first participle of speech root.
+    # 1) Find first active participle of a speech root.
     ptcp_idx = -1
-    for i, tag_list in enumerate(tag_lists):
-        if not tag_list:
-            continue
-        chain_combined = []
-        for tag in tag_list:
-            chain_combined.extend(_morpheme_chain(tag))
-        if not _has_active_participle(chain_combined):
-            continue
-        # Form match via skel: bare_tokens[i] in closed list of speech-participle
-        # forms. Tag confirmed it's an active participle; the form-list confirms
-        # the root is a speech root. Check both raw skel and vav-stripped form.
-        bare = bare_tokens[i].split(MAQQEF, 1)[0]
-        if bare in SPEECH_PARTICIPLE_FORMS or bare.lstrip("ו") in SPEECH_PARTICIPLE_FORMS:
+    participle: MC.Token | None = None
+    for i, t in enumerate(tokens):
+        if t.is_active_participle and t.lemma in SPEECH_LEMMAS:
             ptcp_idx = i
+            participle = t
             break
+    if ptcp_idx < 0 or participle is None:
+        return 0, "", None, None
 
-    if ptcp_idx < 0:
-        return 0, ""
+    # 2) FP guard: participle is inside a relative clause.
+    if participle_is_in_relative_clause(participle):
+        return 0, "", None, None
 
-    # FP guard: subordinator anywhere before participle. Check maqqef-bound
-    # parts too (e.g., `אֵת אֲשֶׁר־יְהוָה אֹמֵר` Mic 6:1 — אשר is bound to יהוה
-    # via maqqef but still functions as a relative-clause introducer).
-    pre_ptcp = bare_tokens[:ptcp_idx]
-    for t in pre_ptcp:
-        for part in t.split(MAQQEF):
-            if part in H5D_SUBORDINATORS:
-                return 0, ""
+    # 3) FP guard: subordinator lemma anywhere before the participle.
+    pre_ptcp = tokens[:ptcp_idx]
+    if any(t.lemma in H5D_SUBORDINATOR_LEMMAS for t in pre_ptcp):
+        return 0, "", None, None
 
-    # FP guard: prophetic formula כה immediately before participle.
-    # Also check maqqef-bound first part of last pre_ptcp token.
-    if pre_ptcp:
-        last_first_part = pre_ptcp[-1].split(MAQQEF, 1)[0]
-        if last_first_part in H5D_PROPHETIC_FORMULA:
-            return 0, ""
+    # 4) FP guard: prophetic formula כֹּה immediately before the participle.
+    if pre_ptcp and pre_ptcp[-1].lemma in H5D_PROPHETIC_FORMULA_LEMMAS:
+        return 0, "", None, None
 
-    # FP guard: לאמר anywhere on the line (H5 territory).
-    if any(bare in H5D_LEEMOR_SKELS for bare in bare_tokens):
-        return 0, ""
+    # 5) FP guard: לאמר marker on the line (already H5 territory).
+    if line_has_leemor(tokens):
+        return 0, "", None, None
 
-    # FP guard: token immediately AFTER participle is a naming-construction
-    # token (קוֹרֵא שֵׁם = called the name, not crying-then-content).
-    if ptcp_idx + 1 < len(bare_tokens):
-        post = bare_tokens[ptcp_idx + 1].lstrip("ו").split(MAQQEF, 1)[0]
-        if post in H5D_NAMING_TOKENS:
-            return 0, ""
+    # 6) FP guard: token immediately AFTER participle is a naming-construction
+    #    token (קוֹרֵא שֵׁם = called the name, not crying-then-content).
+    if ptcp_idx + 1 < len(tokens):
+        next_tok = tokens[ptcp_idx + 1]
+        if next_tok.lemma in H5D_NAMING_LEMMAS:
+            return 0, "", None, None
 
-    # Find first imperative AFTER participle (skip verb-side complements).
+    # 7) Find first imperative AFTER the participle.
     imp_idx = -1
+    imperative: MC.Token | None = None
     for j in range(ptcp_idx + 1, len(tokens)):
-        if not tag_lists[j]:
-            continue
-        chain_combined = []
-        for tag in tag_lists[j]:
-            chain_combined.extend(_morpheme_chain(tag))
-        if _has_imperative(chain_combined):
+        if tokens[j].is_imperative:
             imp_idx = j
+            imperative = tokens[j]
             break
+    if imp_idx < 0 or imperative is None:
+        return 0, "", None, None
 
-    if imp_idx < 0:
-        return 0, ""
-
-    # Anti-trivial guards: both halves ≥1 prosodic word.
+    # 8) Anti-trivial: both halves ≥1 token. (imp_idx > 0 by construction; just
+    #    confirm the announcement side is non-empty after the participle.)
     if imp_idx == 0 or imp_idx >= len(tokens):
-        return 0, ""
+        return 0, "", None, None
 
-    return imp_idx, "tag-confirmed"
+    return imp_idx, "ir-driven", participle, imperative
+
+
+# ---------------------------------------------------------------------------
+# Sense-line position-mapping
+#
+# We need to map IR-detected split-position (which is a TOKEN INDEX within
+# the verse's flat token list) back to a SENSE-LINE INDEX in the v2/he file
+# (which is what an editor reads). The trigger fires when an editorial
+# sense-line spans BOTH the participle and the imperative — i.e., the split
+# would happen WITHIN a single sense-line.
+# ---------------------------------------------------------------------------
+
+def sense_line_for_token(token: "MC.Token",
+                         line_to_tokens: dict[int, list["MC.Token"]]) -> int | None:
+    """Return the line-index containing the given token, or None if not found."""
+    for line_idx, line_toks in line_to_tokens.items():
+        if any(t.xml_id == token.xml_id for t in line_toks):
+            return line_idx
+    return None
 
 
 # ---------------------------------------------------------------------------
 # Scanner
 # ---------------------------------------------------------------------------
 
+def _partition_into_verses(lines: list[str]) -> list[tuple[int | None, int | None, list[int]]]:
+    """Group line indices by verse. Returns [(chapter, verse, [line_indices]), ...]."""
+    out: list[tuple[int | None, int | None, list[int]]] = []
+    cur_ch: int | None = None
+    cur_vs: int | None = None
+    cur_idx: list[int] = []
+    for i, line in enumerate(lines):
+        ref = parse_verse_ref(line)
+        if ref is not None:
+            if cur_idx:
+                out.append((cur_ch, cur_vs, cur_idx))
+            cur_ch, cur_vs = ref
+            cur_idx = []
+            continue
+        if not line.strip():
+            continue
+        cur_idx.append(i)
+    if cur_idx:
+        out.append((cur_ch, cur_vs, cur_idx))
+    return out
+
+
 def scan_file(path: Path) -> list[dict]:
-    findings = []
+    """IR-driven scan: per verse, look for the H5d announcement/quote split
+    pattern within a SINGLE sense-line."""
+    findings: list[dict] = []
     try:
         lines = path.read_text(encoding="utf-8").splitlines()
     except UnicodeDecodeError:
         lines = path.read_text(encoding="utf-8-sig").splitlines()
 
-    book = book_name_from_path(path)
+    book_slug = book_name_from_path(path)
     chapter_from_file = chapter_from_path(path)
+    verses = _partition_into_verses(lines)
 
-    chapter_morph = MA.load_chapter_morph(path)
-    if chapter_morph is None:
-        return findings  # tag-driven only
-
-    # Build verse-context map: line_index → (chapter, verse)
-    line_to_verse: dict[int, tuple[int | None, int | None]] = {}
-    cur_chapter: int | None = None
-    cur_verse: int | None = None
-    for i, line in enumerate(lines):
-        ref = parse_verse_ref(line)
-        if ref is not None:
-            cur_chapter, cur_verse = ref
-        line_to_verse[i] = (cur_chapter, cur_verse)
-
-    # Group content lines by verse for alignment.
-    verse_lines_map: dict[tuple[int | None, int | None], list[tuple[int, str]]] = {}
-    for i, line in enumerate(lines):
-        if is_skippable(line):
-            continue
-        v_ctx = line_to_verse.get(i, (None, None))
-        verse_lines_map.setdefault(v_ctx, []).append((i, line))
-
-    # Per-verse alignment.
-    verse_aligned_map: dict[tuple[int | None, int | None], list | None] = {}
-    for v_key, idx_line_pairs in verse_lines_map.items():
-        verse_num = v_key[1]
-        if verse_num is None:
-            verse_aligned_map[v_key] = None
-            continue
-        ortho_tags = chapter_morph.get(verse_num)
-        if ortho_tags is None:
-            verse_aligned_map[v_key] = None
-            continue
-        content_only = [ln for (_, ln) in idx_line_pairs]
-        verse_aligned_map[v_key] = MA.align_verse_tokens_to_tags(content_only, ortho_tags)
-
-    for i, line in enumerate(lines):
-        if is_skippable(line):
-            continue
-        v_ctx = line_to_verse.get(i, (None, None))
-        chapter = v_ctx[0] if v_ctx[0] is not None else chapter_from_file
-        verse = v_ctx[1]
-
-        if chapter is not None and is_poetic_register(book, chapter, verse):
+    for ch, vs, indices in verses:
+        if ch is None or vs is None:
             continue
 
-        toks = content_tokens(line)
-        if len(toks) < 4:
+        # Skip Sifrei Emet (poetic register guard).
+        if is_poetic_register(book_slug, ch, vs):
             continue
 
-        bare_tokens = [bare_skel(t) for t in toks]
-
-        # Find the line's tag-list within the verse alignment.
-        aligned = verse_aligned_map.get(v_ctx)
-        if aligned is None:
+        # Pull lowfat verse tokens.
+        try:
+            verse_tokens = MC.get_verse_tokens(book_slug, ch, vs)
+        except (FileNotFoundError, ValueError, KeyError):
+            continue
+        if not verse_tokens:
             continue
 
-        verse_idx_lines = verse_lines_map.get(v_ctx, [])
-        line_pos = next(
-            (pos for pos, (li, _) in enumerate(verse_idx_lines) if li == i),
-            None,
-        )
-        if line_pos is None or line_pos >= len(aligned):
-            continue
-        line_tag_lists = aligned[line_pos]
-        if not line_tag_lists:
-            continue
-        if len(line_tag_lists) != len(toks):
-            continue  # alignment mismatch — skip
+        # Greedy-align each sense-line to the verse's tokens, building a
+        # per-line token list.
+        sense_indices = [i for i in indices if not is_skippable(lines[i])]
+        line_to_tokens: dict[int, list["MC.Token"]] = {}
+        cursor = 0
+        for idx in sense_indices:
+            matched, cursor = MC.match_sense_line_tokens(
+                verse_tokens, lines[idx], start_idx=cursor)
+            line_to_tokens[idx] = matched
 
-        split_pos, mode = compute_h5d_split(toks, bare_tokens, line_tag_lists)
-        if split_pos == 0:
-            continue
+        # Per sense-line: run H5d detection on its IR tokens.
+        for line_idx, line_tokens in line_to_tokens.items():
+            if len(line_tokens) < 4:
+                continue
+            split_pos, mode, participle, imperative = compute_h5d_split(line_tokens)
+            if split_pos == 0 or participle is None or imperative is None:
+                continue
 
-        line_no = i + 1
-        announcement = " ".join(toks[:split_pos])
-        quote_content = " ".join(toks[split_pos:])
-        findings.append({
-            "file_rel": str(path.relative_to(REPO_ROOT)).replace("\\", "/"),
-            "line_num": line_no,
-            "rule": "H5d/participial-speech-frame",
-            "severity": "REVIEW-REQUIRED",
-            "book": book,
-            "chapter": chapter,
-            "verse": verse,
-            "split_position": split_pos,
-            "announcement": announcement,
-            "quote_content": quote_content,
-            "brief": (
-                f"participial speech-frame at token {split_pos}: "
-                f"`{announcement[:40]}...` // `{quote_content[:40]}...`"
-            ),
-        })
+            # Verify the participle and imperative are BOTH on this sense-line
+            # (they will be by construction since compute_h5d_split walked
+            # only line_tokens, but defensive — and confirms a within-line
+            # split would change the file, not a no-op cross-line case).
+            ptcp_line = sense_line_for_token(participle, line_to_tokens)
+            imp_line = sense_line_for_token(imperative, line_to_tokens)
+            if ptcp_line != line_idx or imp_line != line_idx:
+                continue
+
+            line_no = line_idx + 1
+            announcement_tokens = line_tokens[:split_pos]
+            quote_tokens = line_tokens[split_pos:]
+            announcement = " ".join(t.text for t in announcement_tokens if t.text)
+            quote_content = " ".join(t.text for t in quote_tokens if t.text)
+
+            findings.append({
+                "file_rel": str(path.relative_to(REPO_ROOT)).replace("\\", "/"),
+                "line_num": line_no,
+                "rule": "H5d/participial-speech-frame",
+                "severity": "REVIEW-REQUIRED",
+                "book": book_slug,
+                "chapter": ch,
+                "verse": vs,
+                "split_position": split_pos,
+                "announcement": announcement,
+                "quote_content": quote_content,
+                "brief": (
+                    f"participial speech-frame at token {split_pos}: "
+                    f"`{announcement[:40]}...` // `{quote_content[:40]}...`"
+                ),
+            })
 
     return findings
 
@@ -472,7 +429,7 @@ def main():
         doc = {
             "validator": "validate_participial_speech_frame",
             "rule": "H5d",
-            "version": "1.0.0",
+            "version": "2.0.0-ir",
             "layer": 3,
             "book": args.book or "all",
             "files_scanned": [
@@ -489,7 +446,7 @@ def main():
         sys.exit(exit_code)
 
     print("=" * 72)
-    print(f"Rule H5d Participial Speech-Frame Split validator")
+    print(f"Rule H5d Participial Speech-Frame Split validator (IR-driven)")
     print("=" * 72)
     print(f"Files scanned : {len(files)}")
     print(f"Findings      : {len(all_findings)}")
