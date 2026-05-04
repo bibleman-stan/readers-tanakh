@@ -10,7 +10,6 @@ VALIDATORS = [
     'validators/colometry/validate_speech_intro_framing.py',
     'validators/colometry/validate_cross_verse_continuity.py',
     'validators/colometry/validate_complement_integrity.py',
-    'validators/colometry/validate_discourse_particles.py',
     'validators/colometry/validate_wayehi_protasis.py',
 ]
 

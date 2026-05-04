@@ -3,8 +3,7 @@ vayhi | ki | zaken | Yitzchak
 vatikhheina | einav | mere'ot
 vaiyikra | et | Esav | beno | hagadol
 vaiyomer | elav | beni
-vaiyomer | elav
-hineni
+vaiyomer | elav | hineni
 
 27:2
 vaiyomer
@@ -27,8 +26,10 @@ vaiyelekh | Esav | hasadeh
 latzud | tzayid | lehavi
 
 27:6
-Verivkah | amerah | el | Ya'ako | benah | lemor
-hineh | shama'ti | et | avikha | medaber | el | Esav | achikha | lemor
+Verivkah | amerah | el | Ya'ako | benah
+lemor
+hineh | shama'ti | et | avikha | medaber | el | Esav | achikha
+lemor
 
 27:7
 havi'ah | li | tzayid | va'aseh | li | mat'amim | ve'okhelah
@@ -87,8 +88,7 @@ beyad | Ya'ako | benah
 27:18
 vaiyavo | el | aviv
 vaiyomer | avi
-vaiyomer
-hineni | mi | atah | beni
+vaiyomer | hineni | mi | atah | beni
 
 27:19
 vaiyomer | Ya'ako | el | aviv
@@ -164,8 +164,7 @@ yakum | avi | veyokhal | mitzeid | beno
 ba'avur | tevarakhani | nafshekha
 
 27:32
-vaiyomer | lo | Yitzchak | aviv
-mi | atah
+vaiyomer | lo | Yitzchak | aviv | mi | atah
 vaiyomer
 ani | binkha | vekhorekha | Esav
 

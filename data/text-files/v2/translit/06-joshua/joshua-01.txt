@@ -1,6 +1,7 @@
 1:1
 vayhi | acharei | mot | Mosheh | eved | Yahweh
-vaiyomer | Yahweh | el | Yehoshua | bin | Nun | mesharet | Mosheh | lemor
+vaiyomer | Yahweh | el | Yehoshua | bin | Nun | mesharet | Mosheh
+lemor
 
 1:2
 Mosheh | avdi | met
@@ -29,7 +30,8 @@ ki | atah | tanchil | et | ha'am | hazeh | et | ha'aretz
 asher | Nishba'ti | la'avotam | latet | lahem
 
 1:7
-rak | chazak | ve'ematz | me'od | lishmor | la'asot | kekhol | hatorah | asher | tzivekha | Mosheh | avdi
+rak | chazak | ve'ematz | me'od
+lishmor | la'asot | kekhol | hatorah | asher | tzivekha | Mosheh | avdi
 al | tasur | mimenu | yamin | usemol
 lema'an | taskil | bekhol | asher | telekh
 
@@ -46,10 +48,12 @@ ve'al | techat
 ki | imekha | Yahweh | eloheikha | bekhol | asher | telekh
 
 1:10
-vaytzav | Yehoshua | et | shoterei | ha'am | lemor
+vaytzav | Yehoshua | et | shoterei | ha'am
+lemor
 
 1:11
-ivru | bekerev | hamachaneh | vetzavu | et | ha'am | lemor
+ivru | bekerev | hamachaneh | vetzavu | et | ha'am
+lemor
 hakhinu | lakhem | tzeidah
 ki | be'od | sheloshet | yamim | atem | oerim | et | Haiyarden | hazeh
 lavo | lareshet | et | ha'aretz | asher | Yahweh | eloheikhem
@@ -62,7 +66,8 @@ velachatzi | shevet | hamnasheh
 amar | Yehoshua | lemor
 
 1:13
-zakhor | et | hadavar | asher | tzivah | etkhem | Mosheh | eved | Yahweh | lemor
+zakhor | et | hadavar | asher | tzivah | etkhem | Mosheh | eved | Yahweh
+lemor
 Yahweh | eloheikhem | meniach | lakhem
 venatan | lakhem | et | ha'aretz | hazot
 

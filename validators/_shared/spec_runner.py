@@ -574,6 +574,37 @@ def _g_next_purpose_infinitive(l_n, l_n1, ctx):
     return False
 
 
+@_register_guard("line_n_is_purpose_infinitive")
+def _g_line_n_purpose_infinitive(l_n, l_n1, ctx):
+    """Fire (block) if line N's first content token is a לְ + infinitive-
+    construct (R + V?c morpheme pattern).
+
+    Sibling of `next_line_is_purpose_infinitive` but operates on line N
+    rather than line N+1. Required by H11 family specs whose trigger
+    anchors the orphan AS line N (e.g., h11_2_mid_verse_short_fronting
+    fires on N first-token=prep + N+1 first-token=finite_verb — when N
+    is a purpose-inf orphan, the spec wrongly merges it with the next
+    matrix verb). 2026-05-04 S7 RUNAWAY trace at Gen 38:24, 42:3, 45:16.
+    """
+    n_tag_lists = ctx.get("line_n_token_tags") or []
+    if not n_tag_lists or not n_tag_lists[0]:
+        return False
+    for tag in n_tag_lists[0]:
+        if not tag or tag == "[—]":
+            continue
+        morphemes = tag.split("/")
+        has_R = any(m.lstrip("Hc").startswith("R") for m in morphemes)
+        has_inf_c = any(
+            len(m.lstrip("Hc")) >= 4
+            and m.lstrip("Hc")[0] == "V"
+            and m.lstrip("Hc")[2] == "c"
+            for m in morphemes
+        )
+        if has_R and has_inf_c:
+            return True
+    return False
+
+
 @_register_guard("next_line_is_wayyiqtol")
 def _g_next_wayyiqtol(l_n, l_n1, ctx):
     """Fire (block emission) if line N+1's first token is a wayyiqtol.

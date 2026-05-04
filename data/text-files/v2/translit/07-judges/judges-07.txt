@@ -4,15 +4,16 @@ vaiyachanu | al | Ein | Charod
 umachaneh | Midyan | hayah | lo | mitzafon | migiv'at | Hamoreh | ba'emek
 
 7:2
-vaiyomer | Yahweh | el | Gid'on
-rav | ha'am | asher | itakh
+vaiyomer | Yahweh | el | Gid'on | rav | ha'am | asher | itakh
 mititi | et | Midyan | beyadam
-pen | yitpa'er | alai | Yisra'el | lemor
+pen | yitpa'er | alai | Yisra'el
+lemor
 yadi
 hoshi'ah | li
 
 7:3
-ve'atah | kera | na | be'azenei | ha'am | lemor
+ve'atah | kera | na | be'azenei | ha'am
+lemor
 mi | yare | vechared | yasho | veyitzpor
 mehar | Hagil'ad
 vaiyashov | min | ha'am | esrim | ushenayim | elef
@@ -33,7 +34,8 @@ kol | asher | yalok | bilshono | min | hamayim | ka'asher | yalok | hakelev | ta
 vekhol | asher | yikhra | al | birkav | lishtot
 
 7:6
-vayhi | mispar | hamalakim | beyadam | el | pihem | shelosh | me'ot | ish | vekhol | yeter | ha'am | kare'u | al | birkheihem | lishtot | mayim
+vayhi | mispar | hamalakim | beyadam | el | pihem | shelosh | me'ot | ish | vekhol | yeter | ha'am | kare'u | al | birkheihem
+lishtot | mayim
 
 7:7
 vaiyomer | Yahweh | el | Gid'on
@@ -76,8 +78,7 @@ venafal | ha'ohel
 
 7:14
 vaiya'an | re'ehu
-vaiyomer | ein
-zot
+vaiyomer | ein | zot
 bilti | im | cherev | Gid'on | ben | Yo'ash | ish | Yisra'el
 natan | ha'elohim | beyado | et | Midyan | ve'et | kol | hamachaneh
 
@@ -136,7 +137,8 @@ umin | kol | Menasheh
 vaiyirdefu | acharei | Midyan
 
 7:24
-umal'akhim | shalach | Gid'on | bekhol | har | Efrayim | lemor
+umal'akhim | shalach | Gid'on | bekhol | har | Efrayim
+lemor
 redu | likrat | Midyan
 velikhdu | lahem | et | hamayim | ad | Beit | Barah | ve'et | Haiyarden
 vaiyitza'ek | kol | ish | Efrayim

@@ -7,8 +7,7 @@ se'u | et | rosh | kol | adat | benei | Yisra'el | miben | esrim | shanah
 vama'lah | leveit | avotam | kol | yotze | tzava | Beyisra'el
 
 26:3
-vaydaber | Mosheh | Ve'el'azar | hakohen | otam
-Be'arvot | Mo'av
+vaydaber | Mosheh | Ve'el'azar | hakohen | otam | Be'arvot | Mo'av
 al | Yarden | Yerecho | lemor
 
 26:4
@@ -210,7 +209,8 @@ eleh | pekudei | benei | Yisra'el
 shesh | me'ot | elef | va'alef | sheva | me'ot | usheloshim
 
 26:52
-vaydaber | Yahweh | el | Mosheh | lemor
+vaydaber | Yahweh | el | Mosheh
+lemor
 
 26:53
 la'eleh | techalek | ha'aretz | benachalah | bemispar | shemot

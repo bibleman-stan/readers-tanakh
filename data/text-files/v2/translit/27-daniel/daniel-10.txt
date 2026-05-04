@@ -31,7 +31,8 @@ vekol | devarav | kekol | hamon
 10:7
 vera'iti | ani | Daniyel | levadi | et | hamar'ah
 veha'anashim | asher | hayu | imi | lo | ra'u | et | hamar'ah
-aval | charadah | gedolah | nafelah | aleihem | vaiyivrechu | behechave
+aval | charadah | gedolah | nafelah | aleihem | vaiyivrechu
+behechave
 
 10:8
 va'ani | Nish'arti | levadi
@@ -39,7 +40,8 @@ va'er'eh | et | hamar'ah | hagedolah | hazot | velo | Nish'ar | bi | koch
 vehodi | Nehpakh | alai | lemashchit | velo | atzarti | koach
 
 10:9
-va'eshma | et | kol | devarav | ukheshame'i | et | kol | devarav
+va'eshma | et | kol | devarav
+ukheshame'i | et | kol | devarav
 va'ani | hayiti | nirdam | al | panai
 ufanai | aretzah
 

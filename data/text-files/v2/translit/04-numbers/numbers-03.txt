@@ -14,12 +14,14 @@ hameshuchim
 asher | mile | yadam | lekhahen
 
 3:4
-vaiyamot | Nadav | Va'avihu | lifnei | Yahweh | behakrivam | esh | zarah | lifnei | Yahweh | bemidbar | Sinai
+vaiyamot | Nadav | Va'avihu | lifnei | Yahweh
+behakrivam | esh | zarah | lifnei | Yahweh | bemidbar | Sinai
 uvanim | lo | hayu | lahem
 vaykhahen | El'azar | Ve'itamar | al | penei | Aharon | avihem
 
 3:5
-vaydaber | Yahweh | el | Mosheh | lemor
+vaydaber | Yahweh | el | Mosheh
+lemor
 
 3:6
 hakrev | et | mateh | Levi
@@ -27,11 +29,14 @@ veha'amadta | oto | lifnei | Aharon | hakohen
 vesheretu | oto
 
 3:7
-veshameru | et | mishmarto | ve'et | mishmeret | kol | ha'edah | lifnei | ohel | mo'ed | la'avod
+veshameru | et | mishmarto | ve'et | mishmeret | kol | ha'edah | lifnei | ohel | mo'ed
+la'avod
 et | avodat | hamishkan
 
 3:8
-veshameru | et | kol | kelei | ohel | mo'ed | ve'et | mishmeret | benei | Yisra'el | la'avod | et | avodat | hamishkan
+veshameru | et | kol | kelei | ohel | mo'ed
+ve'et | mishmeret | benei | Yisra'el
+la'avod | et | avodat | hamishkan
 
 3:9
 venatatah | et | halviyim | Le'aharon
@@ -44,7 +49,8 @@ veshameru | et | kehunatam
 vehazar | hakarev | yumat
 
 3:11
-vaydaber | Yahweh | el | Mosheh | lemor
+vaydaber | Yahweh | el | Mosheh
+lemor
 
 3:12
 va'ani | hineh | lakachti | et | halviyim | mitokh | benei | Yisra'el
@@ -58,7 +64,8 @@ me'adam | ad | behemah
 li | yihyu | ani | Yahweh
 
 3:14
-vaydaber | Yahweh | el | Mosheh | bemidbar | Sinai | lemor
+vaydaber | Yahweh | el | Mosheh | bemidbar | Sinai
+lemor
 
 3:15
 pekod | et | benei | Levi | leveit | avotam | lemishpechotam
@@ -195,7 +202,8 @@ veshiv'im
 umatayim
 
 3:44
-vaydaber | Yahweh | el | Mosheh | lemor
+vaydaber | Yahweh | el | Mosheh
+lemor
 
 3:45
 kach | et | halviyim | tachat | kol | bekhor | bivnei | Yisra'el

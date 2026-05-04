@@ -1,6 +1,5 @@
 16:1
-vaiyomer | Yahweh | el | Shemu'el
-ad | matai | atah | mit'abel | el | Sha'ul
+vaiyomer | Yahweh | el | Shemu'el | ad | matai | atah | mit'abel | el | Sha'ul
 va'ani | me'astiv | mimelokh | al | Yisra'el
 male | karnecha | shemen
 velekh | eshlachakha | el | Yishai | beit | halachmi | ki | ra'iti | bevanav | li | melekh
@@ -22,9 +21,9 @@ eleikha
 16:4
 vaiya'as | Shemu'el | et | asher | diber | Yahweh
 vaiyavo | Beit | Lachem
-vaiyecherdu | ziknei | ha'ir | likrato
-vaiyomer | shalom
-bo'ekha
+vaiyecherdu | ziknei | ha'ir
+likrato
+vaiyomer | shalom | bo'ekha
 
 16:5
 vaiyomer | shalom | lizboach
@@ -89,8 +88,7 @@ veruach | Yahweh | sarah | me'im | Sha'ul
 uvi'atatu | ruach | ra'ah | me'et | Yahweh
 
 16:15
-vaiyomeru | avdei | Sha'ul | elav
-hineh | na | ruach | elohim | ra'ah | meva'itekha
+vaiyomeru | avdei | Sha'ul | elav | hineh | na | ruach | elohim | ra'ah | meva'itekha
 
 16:16
 yomar | na | adonenu | avadeikha | lefaneikha | yevakshu
@@ -101,12 +99,12 @@ vetov | lakh
 
 16:17
 vaiyomer | Sha'ul | el | avadav
-re'u | na | li | ish | meitiv | lenagen
+re'u | na | li | ish | meitiv
+lenagen
 vahavi'otem | elai
 
 16:18
-vaiya'an | echad
-mehane'arim
+vaiya'an | echad | mehane'arim
 vaiyomer
 hineh | ra'iti | ben | Leyishai | beit | halachmi
 yodea | nagen | vegibor | chayil | ve'ish | milchamah | unevon | davar
@@ -131,7 +129,8 @@ vaiye'ehavehu | me'od
 vayhi | lo | nose | khelim
 
 16:22
-vaiyishlach | Sha'ul | el | Yishai | lemor
+vaiyishlach | Sha'ul | el | Yishai
+lemor
 ya'amod | na | David | lefanai | ki | matza | chen | be'einai
 
 16:23

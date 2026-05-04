@@ -1,5 +1,6 @@
 24:1
-vaiyar | Bil'am | ki | tov | be'einei | Yahweh | levarekh | et | Yisra'el
+vaiyar | Bil'am | ki | tov | be'einei | Yahweh
+levarekh | et | Yisra'el
 velo | halakh | kefa'am | befa'am
 likrat | nechashim
 vaiyashet | el | hamidbar | panav
@@ -52,7 +53,8 @@ amarti | kabed | akhabedkha | vehineh | mena'akha | Yahweh | mikavod
 
 24:12
 vaiyomer | Bil'am | el | Balak
-halo | gam | el | mal'akheikha | asher | shalachta | elai | dibarti | lemor
+halo | gam | el | mal'akheikha | asher | shalachta | elai | dibarti
+lemor
 
 24:13
 im | yiten | li | Valak | melo | veito | kesef | vezahav
@@ -94,8 +96,7 @@ vehe'evid | sarid | me'ir
 24:20
 vaiyar | et | Amalek
 vaiyisa | meshalo
-vaiyomar | reshit | goyim | Amalek | ve'acharito | adei
-oved
+vaiyomar | reshit | goyim | Amalek | ve'acharito | adei | oved
 
 24:21
 vaiyar | et | hakeini

@@ -68,6 +68,7 @@ trigger:
 guards:
   - poetic_register
   - prev_line_incomplete            # ensure line N is a fresh frame, not
+  - next_line_is_purpose_infinitive   # block re-absorbing post-S7 purpose-INF orphans (defensive)
                                      # a continuation of a stranded clause
   # Intentionally NOT next_line_is_wayyiqtol / next_line_is_vav_coord_pp /
   # next_line_is_vav_coord_np: this spec WANTS line N+1 to be the

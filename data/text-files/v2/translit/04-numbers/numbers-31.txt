@@ -1,12 +1,14 @@
 31:1
-vaydaber | Yahweh | el | Mosheh | lemor
+vaydaber | Yahweh | el | Mosheh
+lemor
 
 31:2
 nekom | nikmat | benei | Yisra'el | me'et | hamidyanim
 achar | te'asef | el | ameikha
 
 31:3
-vaydaber | Mosheh | el | ha'am | lemor | hechaltzu | me'itekhem | anashim | latzava
+vaydaber | Mosheh | el | ha'am
+lemor | hechaltzu | me'itekhem | anashim | latzava
 veyihyu | al | Midyan | latet | nikmat | Yahweh | Bemidyan
 
 31:4
@@ -91,8 +93,7 @@ vekhol | ma'aseh | izim
 vekhol | keli | etz | titchata'u
 
 31:21
-vaiyomer | El'azar | hakohen | el | anshei | hatzava
-haba'im | lamilchamah
+vaiyomer | El'azar | hakohen | el | anshei | hatzava | haba'im | lamilchamah
 zot | chukat | hatorah
 asher | tzivah | Yahweh | et | Mosheh
 
@@ -112,7 +113,8 @@ utehartem
 ve'achar | tavo'u | el | hamachaneh
 
 31:25
-vaiyomer | Yahweh | el | Mosheh | lemor
+vaiyomer | Yahweh | el | Mosheh
+lemor
 
 31:26
 sa | et | rosh | malkoach | hashevi | ba'adam

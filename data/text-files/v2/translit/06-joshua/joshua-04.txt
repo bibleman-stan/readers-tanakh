@@ -1,6 +1,8 @@
 4:1
-vayhi | ka'asher | tamu | khol | hagoy | la'avor | et | Haiyarden
-vaiyomer | Yahweh | el | Yehoshua | lemor
+vayhi | ka'asher | tamu | khol | hagoy
+la'avor | et | Haiyarden
+vaiyomer | Yahweh | el | Yehoshua
+lemor
 
 4:2
 kechu | lakhem | min | ha'am | sheneim | asar | anashim
@@ -25,8 +27,8 @@ veharimu | lakhem | ish | even | achat | al | shikhmo | lemispar | shivtei | ven
 
 4:6
 lema'an | tihyeh | zot | ot | bekirbekhem
-ki | yish'alun | beneikhem | machar | lemor
-mah | ha'avanim | ha'eleh | lakhem
+ki | yish'alun | beneikhem | machar
+lemor | mah | ha'avanim | ha'eleh | lakhem
 
 4:7
 va'amartem | lahem | asher | Nikhretu | meimei | Haiyarden | mipenei | aron | berit | Yahweh
@@ -48,13 +50,15 @@ vaiyihyu | sham | ad | haiyom | hazeh
 
 4:10
 vehakohanim | nose'ei | ha'aron | omedim | betokh | Haiyarden
-ad | tom | kal | hadavor | asher | tzivah | Yahweh | et | Yehoshua | ledaber | el | ha'am
+ad | tom | kal | hadavor | asher | tzivah | Yahweh | et | Yehoshua
+ledaber | el | ha'am
 kekhol | asher | tzivah | Mosheh | et | Yehoshua
 vaymaharu | ha'am
 vaiya'avoru
 
 4:11
-vayhi | ka'asher | tam | kol | ha'am | la'avor
+vayhi | ka'asher | tam | kol | ha'am
+la'avor
 vaiya'avor | aron | Yahweh | vehakohanim | lifnei | ha'am
 
 4:12
@@ -72,14 +76,16 @@ kol | Yisra'el | vaiyir'u | oto
 ka'asher | yare'u | et | Mosheh | kol | yemei | chaiyav
 
 4:15
-vaiyomer | Yahweh | el | Yehoshua | lemor
+vaiyomer | Yahweh | el | Yehoshua
+lemor
 
 4:16
 tzaveh | et | hakohanim | nose'ei | aron | ha'edut
 veya'alu | min | Haiyarden
 
 4:17
-vaytzav | Yehoshua | et | hakohanim | lemor | alu | min | Haiyarden
+vaytzav | Yehoshua | et | hakohanim
+lemor | alu | min | Haiyarden
 
 4:18
 vayhi | ka'alot | hakohanim | nose'ei | aron | berit | Yahweh | mitokh | Haiyarden | Niteku | kapot | raglei | hakohanim | el | hecharavah
@@ -95,9 +101,9 @@ ve'et | sheteim | esreh | ha'avanim | ha'eleh | asher | lakechu
 min | Haiyarden | hekim | Yehoshua | Bagilgal
 
 4:21
-vaiyomer | el | benei | Yisra'el | lemor
-asher | yish'alun | beneikhem | machar | et | avotam | lemor
-mah
+vaiyomer | el | benei | Yisra'el
+lemor | asher | yish'alun | beneikhem | machar | et | avotam
+lemor | mah
 ha'avanim | ha'eleh
 
 4:22

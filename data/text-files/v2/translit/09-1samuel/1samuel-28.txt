@@ -1,6 +1,7 @@
 28:1
 vayhi | baiyamim | hahem
-vaiyikbetzu | felishtim | et | machaneihem | latzava | lehilachem | Beyisra'el
+vaiyikbetzu | felishtim | et | machaneihem | latzava
+lehilachem | Beyisra'el
 vaiyomer | Akhish | el | David
 yadoa | teda | ki | iti | tetze | vamachaneh | atah | va'anasheikha
 
@@ -34,8 +35,7 @@ gam | bachalomot | gam | ba'urim
 gam | banevi'im
 
 28:7
-vaiyomer | Sha'ul | la'avadav
-bakeshu | li | eshet | ba'alat | ov
+vaiyomer | Sha'ul | la'avadav | bakeshu | li | eshet | ba'alat | ov
 ve'elekhah | eleiha | ve'edreshah | bah
 vaiyomeru | avadav | elav
 hineh | eshet | ba'alat | ov | Be'ein | Dor
@@ -56,12 +56,12 @@ asher | hikhrit | et | ha'ovot | ve'et | haiyide'oni | min | ha'aretz
 velamah | atah | mitnakesh | benafshi | lahamiteni
 
 28:10
-vaiyishava | lah | Sha'ul | Bayahweh | lemor
+vaiyishava | lah | Sha'ul | Bayahweh
+lemor
 chai | Yahweh | im | yikerekh | avon | badavar | hazeh
 
 28:11
-vatomer | ha'ishah
-et | mi | a'aleh | lakh
+vatomer | ha'ishah | et | mi | a'aleh | lakh
 vaiyomer | et | Shemu'el
 ha'ali | li
 
@@ -69,7 +69,8 @@ ha'ali | li
 vatere | ha'ishah | et | Shemu'el
 vatiz'ak
 bekol | gadol
-vatomer | ha'ishah | el | Sha'ul | lemor
+vatomer | ha'ishah | el | Sha'ul
+lemor
 lamah | rimitani | ve'atah | Sha'ul
 
 28:13

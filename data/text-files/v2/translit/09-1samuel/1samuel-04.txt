@@ -12,8 +12,7 @@ lifnei | felishtim | vaiyaku | vama'arakhah | basadeh | ke'arba'at | alafim | is
 
 4:3
 vaiyavo | ha'am | el | hamachaneh
-vaiyomeru
-ziknei | Yisra'el
+vaiyomeru | ziknei | Yisra'el
 lamah | negafanu | Yahweh | haiyom | lifnei | felishtim
 nikchah | eleinu | Mishiloh | et | aron | berit | Yahweh
 veyavo | vekirbenu
@@ -32,8 +31,7 @@ vatehom | ha'aretz
 
 4:6
 vaiyishme'u | felishtim | et | kol | hateru'ah
-vaiyomeru
-meh | kol | hateru'ah | hagedolah | hazot
+vaiyomeru | meh | kol | hateru'ah | hagedolah | hazot
 bemachaneh | ha'ivrim | vaiyede'u | ki | aron | Yahweh
 ba | el | hamachaneh
 
@@ -80,8 +78,7 @@ vatiz'ak | kol | ha'ir
 
 4:14
 vaiyishma | Eli | et | kol | hatze'akah
-vaiyomer
-meh | kol | hehamon | hazeh
+vaiyomer | meh | kol | hehamon | hazeh
 veha'ish | mihar | vaiyavo
 vaiyaged | Le'eli
 
@@ -123,7 +120,8 @@ ki | ven | yaladet | velo | anetah
 velo | shatah | libah
 
 4:21
-vatikra | lana'ar | I | Khavod | lemor
+vatikra | lana'ar | I | Khavod
+lemor
 galah | khavod | Miyisra'el | el | hilakach | aron | ha'elohim
 ve'el | chamiha
 ve'ishah

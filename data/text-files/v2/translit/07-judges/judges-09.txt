@@ -162,7 +162,8 @@ vaiyishma | Zevul | sar | ha'ir | et | divrei
 Ga'al | ben | Aved | vaiyichar | apo
 
 9:31
-vaiyishlach | mal'akhim | el | Avimelekh | betaremah | lemor
+vaiyishlach | mal'akhim | el | Avimelekh | betaremah
+lemor
 hineh | Ga'al | ben | Eved | ve'echav | ba'im | Shekhemah
 vehinam | tzarim | et | ha'ir | aleikha
 
@@ -188,10 +189,8 @@ petach | sha'ar | ha'ir | vaiyakom | Avimelekh | veha'am | asher | ito | min | h
 
 9:36
 vaiyar | Ga'al | et | ha'am
-vaiyomer | el | Zevul
-hineh | am | yored | merashei | heharim
-vaiyomer | elav | Zevul
-et | tzel | heharim | atah | ro'eh
+vaiyomer | el | Zevul | hineh | am | yored | merashei | heharim
+vaiyomer | elav | Zevul | et | tzel | heharim | atah | ro'eh
 ka'anashim
 
 9:37
@@ -283,7 +282,8 @@ vaiya'alu | al | gag | hamigdal
 9:52
 vaiyavo | Avimelekh | ad | hamigdal
 vaiyilachem | bo
-vaiyigash | ad | petach | hamigdal | lesarefo | va'esh
+vaiyigash | ad | petach | hamigdal
+lesarefo | va'esh
 
 9:53
 vatashlekh | ishah | achat | pelach | rekhev

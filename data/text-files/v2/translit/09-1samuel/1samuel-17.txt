@@ -111,7 +111,8 @@ vehachayil | haiyotze | el | hama'arakhah
 vehere'u | bamilchamah
 
 17:21
-vata'arokh | Yisra'el | ufelishtim | ma'arakhah | likrat | ma'arakhah
+vata'arokh | Yisra'el | ufelishtim | ma'arakhah
+likrat | ma'arakhah
 
 17:22
 vaiyitosh | David | et | hakelim | me'alav | al | yad | shomer | hakelim
@@ -139,18 +140,21 @@ ve'et | beit | aviv
 ya'aseh | chafeshi | Beyisra'el
 
 17:26
-vaiyomer | David | el | ha'anashim | ha'omedim | imo | lemor
+vaiyomer | David | el | ha'anashim | ha'omedim | imo
+lemor
 mah | ye'aseh | la'ish | asher | yakeh | et | hapelishti | halaz
 vehesir | cherpah | me'al | Yisra'el
 ki | mi | hapelishti | he'arel | hazeh
 ki | cheref | ma'arkhot | elohim | chaiyim
 
 17:27
-vaiyomer | lo | ha'am | kadavar | hazeh | lemor
+vaiyomer | lo | ha'am | kadavar | hazeh
+lemor
 koh | ye'aseh | la'ish | asher | yakenu
 
 17:28
-vaiyishma | Eli'av | achiv | hagadol | bedabero | el | ha'anashim
+vaiyishma | Eli'av | achiv | hagadol
+bedabero | el | ha'anashim
 vaiyichar | af | Eli'av | Bedavid
 vaiyomer | lamah | zeh
 yaradta
@@ -305,7 +309,8 @@ vaiyipelu | chalei | felishtim | bederekh | Sha'arayim | ve'ad | Gat
 ve'ad | Ekron
 
 17:53
-vaiyashuvu | benei | Yisra'el | midelok
+vaiyashuvu | benei | Yisra'el
+midelok
 acharei | felishtim | vaiyashosu | et | machaneihem
 
 17:54
@@ -331,5 +336,4 @@ verosh | hapelishti | beyado
 17:58
 vaiyomer | elav | Sha'ul | ben | mi
 atah | hana'ar
-vaiyomer | David | ben | avdekha | Yishai | beit
-halachmi
+vaiyomer | David | ben | avdekha | Yishai | beit | halachmi

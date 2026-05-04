@@ -38,7 +38,8 @@ vekosheshu | lahem | teven
 
 5:8
 ve'et | matkonet | halevenim | asher | hem | osim | temol | shilshom | tasimu | aleihem
-lo | tigre'u | mimenu | ki | nirpim | hem | al | ken | hem | tzo'akim | lemor
+lo | tigre'u | mimenu | ki | nirpim | hem | al | ken | hem | tzo'akim
+lemor
 nelekhah
 nizbechah | leloheinu
 
@@ -56,10 +57,12 @@ atem | lekhu | kechu | lakhem | teven | me'asher
 timtza'u | ki | ein | nigra | me'avodatkhem | davar
 
 5:12
-vaiyafetz | ha'am | bekhol | eretz | Mitzrayim | lekoshesh | kash | lateven
+vaiyafetz | ha'am | bekhol | eretz | Mitzrayim
+lekoshesh | kash | lateven
 
 5:13
-vehanogesim | atzim | lemor | kalu | ma'aseikhem | devar | yom | beyomo | ka'asher | bihyot | hateven
+vehanogesim | atzim | lemor | kalu | ma'aseikhem | devar | yom | beyomo | ka'asher
+bihyot | hateven
 
 5:14
 vaiyuku | shoterei | benei | Yisra'el | asher | samu | alehem | nogesei | far'oh
@@ -79,8 +82,7 @@ asu
 vehineh | avadeikha | mukim | vechatat | amekha
 
 5:17
-vaiyomer | nirpim | atem
-nirpim
+vaiyomer | nirpim | atem | nirpim
 al | ken | atem | omerim | nelekhah
 nizbechah | Layahweh
 
@@ -90,8 +92,8 @@ lo | yinaten | lakhem | vetokhen | levenim
 titenu
 
 5:19
-vaiyir'u | shoterei | venei | Yisra'el | otam | bera | lemor
-lo | tigre'u | milivneikhem | devar | yom | beyomo
+vaiyir'u | shoterei | venei | Yisra'el | otam | bera
+lemor | lo | tigre'u | milivneikhem | devar | yom | beyomo
 
 5:20
 vaiyifge'u | et | Mosheh | ve'et | Aharon

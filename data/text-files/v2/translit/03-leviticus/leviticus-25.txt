@@ -1,5 +1,6 @@
 25:1
-vaydaber | Yahweh | el | Mosheh | behar | Sinai | lemor
+vaydaber | Yahweh | el | Mosheh | behar | Sinai
+lemor
 
 25:2
 daber | el | benei | Yisra'el | ve'amarta | alehem | ki | tavo'u | el | ha'aretz
@@ -210,7 +211,8 @@ umimishpachtam | asher | imakhem | asher | holidu | be'artzekhem
 vehayu | lakhem | la'achuzah
 
 25:46
-vehitnachaltem | otam | livneikhem | achareikhem | lareshet | achuzah | le'olam
+vehitnachaltem | otam | livneikhem | achareikhem
+lareshet | achuzah | le'olam
 bahem | ta'avodu
 uve'acheikhem | benei | Yisra'el | ish | be'achiv | lo | tirdeh | vo | befarekh
 

@@ -1,8 +1,7 @@
 20:1
 vesham | Nikra | ish | beliya'al | ushemo | Sheva | ben | Bikhri | ish | yemini
 vaiyitka | bashofar
-vaiyomer | ein | lanu | chelek
-Bedavid
+vaiyomer | ein | lanu | chelek | Bedavid
 velo | nachalah | lanu | beven | Yishai | ish | le'ohalav | Yisra'el
 
 20:2
@@ -11,7 +10,8 @@ min | Haiyarden | ve'ad | Yerushalim
 
 20:3
 vaiyavo | David | el | beito | Yerushalim
-vaiyikach | hamelekh | et | eser | nashim | pilagshim | asher | hiniach | lishmor | habayit | vaiyitenem | beit | mishmeret | vaykhalkelem
+vaiyikach | hamelekh | et | eser | nashim | pilagshim | asher | hiniach
+lishmor | habayit | vaiyitenem | beit | mishmeret | vaykhalkelem
 va'aleihem | lo | va
 vatihyeinah | tzerurot | ad | yom | mutan | almenut | chaiyut
 
@@ -44,9 +44,9 @@ vehu | yatza
 vatipol
 
 20:9
-vaiyomer | Yo'av | La'amasa
-hashalom | atah
-achi | vatochez | yad | yemin | Yo'av | bizkan | Amasa | linshok | lo
+vaiyomer | Yo'av | La'amasa | hashalom | atah
+achi | vatochez | yad | yemin | Yo'av | bizkan | Amasa
+linshok | lo
 
 20:10
 Va'amasa | lo | Nishmar | bacherev | asher | beyad | Yo'av
@@ -73,7 +73,8 @@ kol | haba | alav | ve'amad
 
 20:13
 ka'asher | hogah | min | hamsilah
-avar | kol | ish | acharei | Yo'av | lirdof | acharei | Sheva | ben | Bikhri
+avar | kol | ish | acharei | Yo'av
+lirdof | acharei | Sheva | ben | Bikhri
 
 20:14
 vaiya'avor | bekhol | shivtei | Yisra'el | Avelah

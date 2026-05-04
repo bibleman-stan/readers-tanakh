@@ -32,6 +32,7 @@ guards:
   - next_line_is_vav_coord_pp     # block re-absorbing post-S1-split coord-PP enumeration members
   - next_line_is_vav_coord_np     # block re-absorbing post-S2-split coord-NP enumeration members
   - next_line_is_imperative_clause           # Path 1 H5b — block re-merge of propositionally-complete content
+  - next_line_is_purpose_infinitive   # block re-absorbing post-S7 purpose-INF orphans (defensive)
 
 annotation_template: "Subject NP + verb merge ({pwc} prosodic words)"
 suggested_action: MERGE

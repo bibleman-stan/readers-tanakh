@@ -10,12 +10,14 @@ rak | ha'am | mezabechim | babamot
 ki | lo | Nivnah | vayit | leshem | Yahweh | ad | haiyamim | hahem
 
 3:3
-vaiye'ehav | Shelomoh | et | Yahweh | lalekhet | bechukot | David | aviv
+vaiye'ehav | Shelomoh | et | Yahweh
+lalekhet | bechukot | David | aviv
 rak | babamot
 hu | mezabeach | umaktir
 
 3:4
-vaiyelekh | hamelekh | Giv'onah | lizboach | sham | ki | hi
+vaiyelekh | hamelekh | Giv'onah
+lizboach | sham | ki | hi
 habamah | hagedolah
 elef | olot | ya'aleh | Shelomoh | al | hamizbeach | hahu
 
@@ -42,8 +44,8 @@ ve'avdekha | betokh | amekha | asher | bachareta | am | rav | asher | lo | yiman
 velo | yisafer | mero
 
 3:9
-venatata | le'avdekha | lev | shomea | lishpot | et | amekha | lehavin
-bein | tov | lera
+venatata | le'avdekha | lev | shomea
+lishpot | et | amekha | lehavin | bein | tov | lera
 ki | mi | yukhal | lishpot | et | amekha | hakaved | hazeh
 
 3:10
@@ -55,7 +57,8 @@ vaiyomer | elohim | elav
 ya'an | asher | sha'alta | et | hadavar | hazeh
 velo | sha'alta | lekha | yamim | rabim
 velo | sha'alta | lekha | osher | velo | sha'alta | nefesh | oyeveikha
-vesha'alta | lekha | havin | lishmoa | mishpat
+vesha'alta | lekha | havin
+lishmoa | mishpat
 
 3:12
 hineh | asiti | kidvareikha
@@ -92,7 +95,8 @@ yoshevot | bevayit | echad
 va'eled | imah | babayit
 
 3:18
-vayhi | baiyom | hashelishi | lelidti | vateled | gam | ha'ishah | hazot
+vayhi | baiyom | hashelishi
+lelidti | vateled | gam | ha'ishah | hazot
 va'anachnu | yachdav | ein | zar | itanu | babayit | zulati | shetayim | anachnu | babayit
 
 3:19
@@ -109,8 +113,7 @@ vehineh | met | va'etbonen | elav | baboker
 vehineh | lo | hayah | veni | asher | yaladeti
 
 3:22
-vatomer | ha'ishah
-ha'acheret | lo | khi | beni | hachai
+vatomer | ha'ishah | ha'acheret | lo | khi | beni | hachai
 uvenekh | hamet
 vezot | omeret | lo | khi | benekh | hamet
 uveni | hechai
@@ -118,8 +121,7 @@ vatedaberenah
 lifnei | hamelekh
 
 3:23
-vaiyomer | hamelekh
-zot | omeret | zeh | beni | hachai | uvenekh | hamet
+vaiyomer | hamelekh | zot | omeret | zeh | beni | hachai | uvenekh | hamet
 vezot | omeret | lo | khi | benekh | hamet
 uveni | hechai
 
@@ -136,8 +138,7 @@ utenu | et | hachatzi | le'achat | ve'et | hachatzi | le'echat
 3:26
 vatomer | ha'ishah | asher | benah
 hachai | el | hamelekh | ki | Nikhmeru | rachameiha | al | benah
-vatomer
-bi | adoni | tenu | lah | et | haiyalud | hachai
+vatomer | bi | adoni | tenu | lah | et | haiyalud | hachai
 vehamet | al | temituhu
 vezot | omeret | gam | li | gam | lakh | lo | yihyeh | gezoru
 

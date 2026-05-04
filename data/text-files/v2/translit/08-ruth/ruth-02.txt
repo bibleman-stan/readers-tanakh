@@ -20,8 +20,7 @@ Yahweh | imakhem | vaiyomeru | lo
 yevarekhkha | Yahweh
 
 2:5
-vaiyomer | Bo'az | lena'aro | hanitzav
-al | hakotzrim | lemi | hana'arah | hazot
+vaiyomer | Bo'az | lena'aro | hanitzav | al | hakotzrim | lemi | hana'arah | hazot
 
 2:6
 vaiya'an | hana'ar | hanitzav | al | hakotzrim
@@ -37,7 +36,8 @@ zeh | shivtah | habayit | me'at
 
 2:8
 vaiyomer | Bo'az | el | Rut
-halo | shama'at | biti | al | telekhi | lilkot | besadeh | acher
+halo | shama'at | biti | al | telekhi
+lilkot | besadeh | acher
 vegam | lo | ta'avuri | mizeh
 vekhoh | tidbakin | im | na'arotai
 
@@ -51,7 +51,8 @@ veshatit | me'asher | yish'avun | hane'arim
 vatipol | al | paneiha
 vatishtachu | aretzah
 vatomer | elav
-madua | matzati | chen | be'eineikha | lehakireni
+madua | matzati | chen | be'eineikha
+lehakireni
 ve'anokhi | nakheriyah
 
 2:11
@@ -83,7 +84,8 @@ vatotar
 
 2:15
 vatakom | lelaket
-vaytzav | Bo'az | et | ne'arav | lemor
+vaytzav | Bo'az | et | ne'arav
+lemor
 gam | bein | ho'omarim | telaket
 velo | takhlimuha
 
@@ -106,19 +108,16 @@ vatomer | lah | chamotah
 eifoh | likatt | haiyom | ve'anah | asit
 yehi | makirekh | barukh
 vataged | lachamotah | et | asher | asetah | imo
-vatomer | shem | ha'ish
-asher | asiti | imo | haiyom | Bo'az
+vatomer | shem | ha'ish | asher | asiti | imo | haiyom | Bo'az
 
 2:20
-vatomer | No'omi | lekhalatah
-barukh | hu | Layahweh
+vatomer | No'omi | lekhalatah | barukh | hu | Layahweh
 asher | lo | azav | chasdo | et | hachaiyim | ve'et | hametim
 vatomer | lah | No'omi
 karov | lanu | ha'ish | migo'alenu | hu
 
 2:21
-vatomer | Rut
-hamo'aviyah
+vatomer | Rut | hamo'aviyah
 gam | ki | amar | elai | im | hane'arim | asher | li | tidbakin
 ad | im | kilu | et | kol | hakatzir | asher | li
 
@@ -128,5 +127,6 @@ tov | biti | ki | tetze'i | im | na'arotav
 velo | yifge'u | vakh | besadeh | acher
 
 2:23
-vatidbak | bena'arot | Bo'az | lelaket | ad | kelot | ketzir | hase'orim
+vatidbak | bena'arot | Bo'az
+lelaket | ad | kelot | ketzir | hase'orim
 uketzir | hachitim | vateshev | et | chamotah

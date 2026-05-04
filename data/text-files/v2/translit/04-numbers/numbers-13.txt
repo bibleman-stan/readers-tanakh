@@ -1,5 +1,6 @@
 13:1
-vaydaber | Yahweh | el | Mosheh | lemor
+vaydaber | Yahweh | el | Mosheh
+lemor
 
 13:2
 shelach | lekha | anashim | veyaturu | et | eretz | Kena'an
@@ -69,7 +70,8 @@ latur | et | ha'aretz
 vaiyikra | Mosheh | Lehoshea | bin | Nun | Yehoshua
 
 13:17
-vaiyishlach | otam | Mosheh | latur | et | eretz | Kena'an
+vaiyishlach | otam | Mosheh
+latur | et | eretz | Kena'an
 vaiyomer | alehem
 alu | zeh | Banegev
 va'alitem | et | hahar

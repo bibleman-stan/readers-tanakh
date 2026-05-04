@@ -28,7 +28,8 @@ Phase 2 additions:
 NOT adopted yet (remaining subcases):
   validate_construct_chain / article_rectum        — REVIEW-REQUIRED (lower confidence)
   validate_construct_chain / common_construct_ending — REVIEW-REQUIRED (lower confidence)
-  validate_discourse_particles     — needs multi-book evidence
+  (validate_discourse_particles was registered but never implemented;
+   functionality covered by validate_bare_discourse_particle.py instead)
   validate_complement_integrity    — needs multi-book evidence
 
 Safety: if v2/he/<book>/<chapter>.txt already exists, the script diffs
@@ -183,9 +184,8 @@ ALL_VALIDATORS: list[tuple[str, str]] = [
     ("validators/colometry/validate_genealogy_uniformity.py",  "validate_genealogy_uniformity"),
     ("validators/colometry/validate_interrogative_clause.py",  "validate_interrogative_clause"),
     ("validators/colometry/validate_oath_formula.py",          "validate_oath_formula"),
-    # Run for reporting only (no STRONG):
-    ("validators/syntax/validate_discourse_particles.py",  "validate_discourse_particles"),
-    ("validators/syntax/validate_complement_integrity.py", "validate_complement_integrity"),
+    # validate_discourse_particles removed 2026-05-04 — script never existed;
+    # functionality covered by validate_bare_discourse_particle.py.
 ]
 
 

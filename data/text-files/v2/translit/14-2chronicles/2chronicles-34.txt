@@ -34,7 +34,8 @@ uve'arei | Menasheh | Ve'efrayim | Veshim'on
 ve'ad | Naftali | becharboteihem | saviv
 
 34:7
-vaynatetz | et | hamizbechot | ve'et | ha'asherim | vehapesilim | kitat | lehedak
+vaynatetz | et | hamizbechot | ve'et | ha'asherim | vehapesilim | kitat
+lehedak
 vekhol | hachamanim | gida | bekhol | eretz | Yisra'el
 vaiyashov | Lirushalim
 
@@ -94,7 +95,8 @@ vaiyiten | Chilkiyahu | et | hasefer | el | Shafan
 
 34:16
 vaiyave | Shafan | et | hasefer | el | hamelekh
-vaiyashev | od | et | hamelekh | davar | lemor
+vaiyashev | od | et | hamelekh | davar
+lemor
 kol | asher | Nitan | beyad | avadeikha | hem | osim
 
 34:17
@@ -103,7 +105,8 @@ hanimtza | beveit | Yahweh | vaiyitenuhu | al | yad | hamufkadim
 ve'al | yad | osei | hamelakhah
 
 34:18
-vaiyaged | Shafan | hasofer | lamelekh | lemor
+vaiyaged | Shafan | hasofer | lamelekh
+lemor
 sefer | natan | li | Chilkiyahu | hakohen
 vaiyikra | vo | Shafan | lifnei | hamelekh
 
@@ -120,14 +123,13 @@ uve'ad | hanish'ar | Beyisra'el
 Uvihudah
 al | divrei | hasefer | asher | Nimtza
 ki | gedolah | chamat | Yahweh | asher | Nitekhah | vanu
-al | asher | lo | shameru | avoteinu | et | devar | Yahweh | la'asot
-kekhol | hakatuv | al | hasefer | hazeh
+al | asher | lo | shameru | avoteinu | et | devar | Yahweh
+la'asot | kekhol | hakatuv | al | hasefer | hazeh
 
 34:22
 vaiyelekh | Chilkiyahu | va'asher | hamelekh | el | Chuldah | hanevi'ah | eshet | Shalum | ben | Tokhat | ben | Chasrah | shomer | habegadim
 vehi | yoshevet | Birushalim | bamishneh
-vaydaberu | eleiha
-kazot
+vaydaberu | eleiha | kazot
 
 34:23
 vatomer | lahem
@@ -153,7 +155,8 @@ koh | tomeru | elav | koh | amar | Yahweh | elohei | Yisra'el
 hadevarim | asher | shama'eta
 
 34:27
-ya'an | rakh | levavekha | vatikana | milifnei | elohim | beshame'akha | et | devarav | al | hamakom | hazeh
+ya'an | rakh | levavekha | vatikana | milifnei | elohim
+beshame'akha | et | devarav | al | hamakom | hazeh
 ve'al | yoshevav
 vatikana | lefanai
 vatikra | et | begadeikha
@@ -178,7 +181,8 @@ vaiyikra | ve'azeneihem | et | kol | divrei | sefer | haberit | hanimtza | beit 
 
 34:31
 vaiya'amod | hamelekh | al | amedo
-vaiyikhrot | et | haberit | lifnei | Yahweh | lalekhet | acharei | Yahweh
+vaiyikhrot | et | haberit | lifnei | Yahweh
+lalekhet | acharei | Yahweh
 velishmor | et | mitzvotav | ve'edevotav | vechukav | bekhol | levavo
 uvekhol | nafsho | la'asot | et | divrei | haberit
 haketuvim | al | hasefer | hazeh
@@ -189,5 +193,6 @@ vaiya'asu | yoshevei | Yerushalim | kivrit | elohim | elohei | avoteihem
 
 34:33
 vaiyasar | Yoshiyahu | et | kol | hato'evot | mikol | ha'aratzot | asher | livnei | Yisra'el
-vaiya'aved | et | kol | hanimtza | Beyisra'el | la'avod | et | Yahweh | eloheihem
+vaiya'aved | et | kol | hanimtza | Beyisra'el
+la'avod | et | Yahweh | eloheihem
 kol | yamav | lo | saru | me'acharei | Yahweh | elohei | avoteihem

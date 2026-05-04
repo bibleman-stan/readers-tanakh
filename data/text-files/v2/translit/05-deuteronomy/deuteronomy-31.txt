@@ -36,8 +36,8 @@ vaiyikra | Mosheh | Lihoshua
 vaiyomer | elav
 le'einei | khol | Yisra'el | chazak | ve'ematz
 ki | atah | tavo | et | ha'am | hazeh | el | ha'aretz
-asher | Nishba | Yahweh | la'avotam | latet | lahem | ve'atah
-tanchilenah | otam
+asher | Nishba | Yahweh | la'avotam
+latet | lahem | ve'atah | tanchilenah | otam
 
 31:8
 Vayahweh | hu | haholekh | lefaneikha | hu | yihyeh | imakh | lo | yarpekha
@@ -50,7 +50,8 @@ vaiyitenah | el | hakohanim | benei | Levi | hanose'im | et | aron | berit | Yah
 ve'el | kol | ziknei | Yisra'el
 
 31:10
-vaytzav | Mosheh | otam | lemor
+vaytzav | Mosheh | otam
+lemor
 miketz | sheva | shanim | bemo'ed | shenat | hashemitah | bechag | hasukot
 
 31:11
@@ -82,14 +83,14 @@ vaiyera | Yahweh | ba'ohel | be'amud | anan
 vaiya'amod | amud | he'anan | al | petach | ha'ohel
 
 31:16
-vaiyomer | Yahweh | el | Mosheh
-hinekha | shokhev | im | avoteikha
+vaiyomer | Yahweh | el | Mosheh | hinekha | shokhev | im | avoteikha
 vekam | ha'am | hazeh | vezanah | acharei | elohei | nekhar | ha'aretz | asher | hu | va | shamah | bekirbo
 va'azavani
 vehefer | et | beriti | asher | karati | ito
 
 31:17
-vecharah | api | vo | vaiyom | hahu | va'azavtim | vehistarti | fanai | mehem | vehayah | le'ekhol
+vecharah | api | vo | vaiyom | hahu | va'azavtim | vehistarti | fanai | mehem | vehayah
+le'ekhol
 umetza'uhu | ra'ot | rabot
 vetzarot | ve'amar | baiyom | hahu
 halo | al | ki | ein | elohai | bekirbi | metza'uni | hara'ot | ha'eleh
@@ -134,7 +135,8 @@ ve'anokhi | ehyeh | imakh
 vayhi | kekhalot | Mosheh | likhto | et | divrei | hatorah | hazot | al | sefer | ad | tumam
 
 31:25
-vaytzav | Mosheh | et | halviyim | nose'ei | aron | berit | Yahweh | lemor
+vaytzav | Mosheh | et | halviyim | nose'ei | aron | berit | Yahweh
+lemor
 
 31:26
 lakoach | et | sefer | hatorah | hazeh
@@ -156,7 +158,8 @@ ve'a'idah | bam | et | hashamayim | ve'et | ha'aretz
 ki | yada'ti | acharei | moti | ki | hashchet | tashchitun
 vesartem | min | haderekh | asher | tziviti | etkhem
 vekarat | etkhem | hara'ah | be'acharit | haiyamim
-ki | ta'asu | et | hara | be'einei | Yahweh | lehakh'iso | bema'aseh | yedeikhem
+ki | ta'asu | et | hara | be'einei | Yahweh
+lehakh'iso | bema'aseh | yedeikhem
 
 31:30
 vaydaber | Mosheh

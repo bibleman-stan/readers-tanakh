@@ -1,5 +1,6 @@
 26:1
-vaiyavo'u | hazifim | el | Sha'ul | Hagiv'atah | lemor
+vaiyavo'u | hazifim | el | Sha'ul | Hagiv'atah
+lemor
 halo | David | mistater | begiv'at | Hachakhilah | al | penei | Hayshimon
 
 26:2
@@ -26,8 +27,7 @@ veha'am | chonim | sevivotov
 
 26:6
 vaiya'an | David
-vaiyomer | el | Achimelekh
-hachiti
+vaiyomer | el | Achimelekh | hachiti
 ve'el | Avishai | ben | Tzeruyah | achi | Yo'av | lemor
 mi | yered | iti | el | Sha'ul | el | hamachaneh
 vaiyomer | Avishai
@@ -85,11 +85,11 @@ vaiyomer
 mi | atah | karata | el | hamelekh
 
 26:15
-vaiyomer | David | el | Avner
-halo | ish | atah
+vaiyomer | David | el | Avner | halo | ish | atah
 umi | khamokha | Beyisra'el
 velamah | lo | shamarta | el | adoneikha
-hamelekh | ki | va | achad | ha'am | lehashchit | et | hamelekh | adoneikha
+hamelekh | ki | va | achad | ha'am
+lehashchit | et | hamelekh | adoneikha
 
 26:16
 lo | tov | hadavar | hazeh | asher | asita
@@ -120,7 +120,8 @@ elohim | acherim
 
 26:20
 ve'atah | al | yipol | dami | artzah | mineged | penei | Yahweh
-ki | yatza | melekh | Yisra'el | levakesh | et | par'osh | echad
+ki | yatza | melekh | Yisra'el
+levakesh | et | par'osh | echad
 ka'asher | yirdof | hakore | beharim
 
 26:21
@@ -137,7 +138,8 @@ veyikacheha
 
 26:23
 Vayahweh | yashiv | la'ish | et | tzidkato
-ve'et | emunato | asher | netanekha | Yahweh | haiyom | beyad | velo | aviti | lishloach | yadi | bimshiach | Yahweh
+ve'et | emunato | asher | netanekha | Yahweh | haiyom | beyad | velo | aviti
+lishloach | yadi | bimshiach | Yahweh
 
 26:24
 vehineh | ka'asher | gadelah | nafshekha | haiyom | hazeh | be'einai
@@ -145,8 +147,7 @@ ken | tigdal | nafshi | be'einei | Yahweh
 veyatzileni | mikol | tzarah
 
 26:25
-vaiyomer | Sha'ul | el | David
-barukh | atah | beni | David
+vaiyomer | Sha'ul | el | David | barukh | atah | beni | David
 gam | asoh | ta'aseh | vegam
 yakhol | tukhal
 vaiyelekh | David | ledarko

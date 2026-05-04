@@ -85,8 +85,7 @@ vehineh | hehamon | Namog
 vaiyelekh | vahalom
 
 14:17
-vaiyomer | Sha'ul | la'am
-asher | ito
+vaiyomer | Sha'ul | la'am | asher | ito
 pikdu | na | ure'u | mi | halakh | me'imanu
 vaiyifkedu | vehineh | ein | Yonatan | venose | khelav
 
@@ -109,7 +108,8 @@ vehineh | hayetah | cherev | ish | bere'ehu | mehumah | gedolah | me'od
 
 14:21
 veha'ivrim | hayu | lapelishtim | ke'etmol | shilshom
-asher | alu | imam | bamachaneh | saviv | vegam | hemah | lihyot | im | Yisra'el | asher | im | Sha'ul
+asher | alu | imam | bamachaneh | saviv | vegam | hemah
+lihyot | im | Yisra'el | asher | im | Sha'ul
 Veyonatan
 
 14:22
@@ -123,7 +123,8 @@ vehamilchamah | averah | et | Beit | Aven
 
 14:24
 ve'ish | Yisra'el | Nigas
-baiyom | hahu | vaiyo'el | Sha'ul | et | ha'am | lemor
+baiyom | hahu | vaiyo'el | Sha'ul | et | ha'am
+lemor
 arur | ha'ish | asher | yokhal | lechem | ad | ha'erev | venikamti | me'oyevai
 velo | ta'am | kol | ha'am | lachem
 
@@ -142,9 +143,9 @@ beya'rat | hadevash | vaiyashev | yado | el | piv
 vataronah | einav
 
 14:28
-vaiya'an | ish
-meha'am
-vaiyomer | hashbea | hishbia | avikha | et | ha'am | lemor
+vaiya'an | ish | meha'am
+vaiyomer | hashbea | hishbia | avikha | et | ha'am
+lemor
 arur | ha'ish | asher | yokhal | lechem
 haiyom | vaiya'af | ha'am
 
@@ -192,8 +193,7 @@ neredah | acharei | felishtim | laylah | venavozah | vahem | ad | or | haboker
 velo | nash'er | bahem | ish
 vaiyomeru | kol | hatov
 be'eineikha | aseh
-vaiyomer | hakohen
-nikrevah | halom | el | ha'elohim
+vaiyomer | hakohen | nikrevah | halom | el | ha'elohim
 
 14:37
 vaiyish'al | Sha'ul | belohim | ha'ered | acharei | felishtim | hatitenem

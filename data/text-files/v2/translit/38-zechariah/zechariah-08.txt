@@ -1,5 +1,6 @@
 8:1
-vayhi | devar | Yahweh | tzeva'ot | lemor
+vayhi | devar | Yahweh | tzeva'ot
+lemor
 
 8:2
 koh | amar | Yahweh | tzeva'ot | kineti | Letziyon | kin'ah | gedolah
@@ -69,7 +70,8 @@ amar | Yahweh | tzeva'ot
 velo | Nichameti
 
 8:15
-ken | shavti | zamamti | baiyamim | ha'eleh | leheitiv | et | Yerushalim
+ken | shavti | zamamti | baiyamim | ha'eleh
+leheitiv | et | Yerushalim
 ve'et | beit | Yehudah | al | tira'u
 
 8:16
@@ -82,7 +84,8 @@ ushevu'at | sheker | al | te'ehavu
 ki | et | kol | eleh | asher | saneti | ne'um | Yahweh
 
 8:18
-vayhi | devar | Yahweh | tzeva'ot | elai | lemor
+vayhi | devar | Yahweh | tzeva'ot | elai
+lemor
 
 8:19
 koh | amar | Yahweh | tzeva'ot | tzom | harevi'i
@@ -100,7 +103,8 @@ koh | amar | Yahweh | tzeva'ot
 od | asher | yavo'u | amim | veyoshevei | arim | rabot
 
 8:21
-vehalekhu | yoshevei | achat | el | achat | lemor
+vehalekhu | yoshevei | achat | el | achat
+lemor
 nelekhah | halokh | lechalot | et | penei | Yahweh
 ulevakesh
 et | Yahweh | tzeva'ot
@@ -115,5 +119,6 @@ et | penei | Yahweh
 8:23
 koh | amar | Yahweh | tzeva'ot | baiyamim | hahemah
 asher | yachaziku | asarah | anashim | mikol | leshonot | hagoyim
-vehecheziku | bikhnaf | ish | yehudi | lemor
+vehecheziku | bikhnaf | ish | yehudi
+lemor
 nelekhah | imakhem | ki | shama'nu | elohim | imakhem

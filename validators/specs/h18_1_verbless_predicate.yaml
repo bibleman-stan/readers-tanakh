@@ -26,6 +26,7 @@ guards:
   - next_line_is_vav_coord_pp   # block re-absorbing post-S1-split coord-PP enumeration members
   - next_line_is_vav_coord_np     # block re-absorbing post-S2-split coord-NP enumeration members
   - next_line_is_wayyiqtol      # block re-absorbing post-S3-split wayyiqtol-headed lines
+  - next_line_is_purpose_infinitive   # block re-absorbing post-S7 purpose-INF orphans (tag-driven, more precise than le_infinitive_on_next_line)
 
 annotation_template: "H18.1 verbless subj-pred split (combined {pwc} prosodic words)"
 suggested_action: MERGE

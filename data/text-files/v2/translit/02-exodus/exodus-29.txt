@@ -153,7 +153,8 @@ et | yadam
 
 29:30
 shiv'at | yamim | yilbasham | hakohen | tachtav | mibanav
-asher | yavo | el | ohel | mo'ed | lesharet | bakodesh
+asher | yavo | el | ohel | mo'ed
+lesharet | bakodesh
 
 29:31
 ve'et | eil | hamilu'im
@@ -165,7 +166,8 @@ ve'et | halechem | asher | basal
 petach | ohel | mo'ed
 
 29:33
-ve'akhelu | otam | asher | kupar | bahem | lemale | et | yadam
+ve'akhelu | otam | asher | kupar | bahem
+lemale | et | yadam
 lekadesh | otam
 vezar | lo | yokhal | ki | kodesh | hem
 
@@ -229,5 +231,6 @@ vehayiti | lahem | lelohim
 
 29:46
 veyade'u | ki | ani | Yahweh | eloheihem
-asher | hotzeti | otam | me'eretz | Mitzrayim | leshakheni | vetokham
+asher | hotzeti | otam | me'eretz | Mitzrayim
+leshakheni | vetokham
 ani | Yahweh | eloheihem

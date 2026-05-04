@@ -1,5 +1,6 @@
 14:1
-vaydaber | Yahweh | el | Mosheh | lemor
+vaydaber | Yahweh | el | Mosheh
+lemor
 
 14:2
 zot | tihyeh | torat | hametzora | beyom | tohorato
@@ -105,7 +106,8 @@ vetaher
 
 14:21
 ve'im | dal | hu | ve'ein | yado | maseget
-velakach | keves | echad | asham | litnufah | lekhaper | alav
+velakach | keves | echad | asham | litnufah
+lekhaper | alav
 ve'isaron | solet | echad | balul | bashemen | leminchah
 velog | shamen
 
@@ -170,11 +172,13 @@ ki | tavo'u | el | eretz | Kena'an | asher | ani | noten | lakhem
 la'achuzah | venatati | nega | tzara'at | beveit | eretz | achuzatkhem
 
 14:35
-uva | asher | lo | habayit | vehigid | lakohen | lemor
+uva | asher | lo | habayit | vehigid | lakohen
+lemor
 kenega | Nir'ah | li | babayit
 
 14:36
-vetzivah | hakohen | ufinu | et | habayit | beterem | yavo | hakohen | lir'ot | et | hanega
+vetzivah | hakohen | ufinu | et | habayit | beterem | yavo | hakohen
+lir'ot | et | hanega
 velo | yitma
 kol | asher | babayit | ve'achar | ken | yavo | hakohen
 lir'ot | et | habayit

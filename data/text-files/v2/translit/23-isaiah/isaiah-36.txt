@@ -12,8 +12,7 @@ vaiyetze | elav | Elyakim | ben | Chilkiyahu | asher | al | habayit
 Veshevna | hasofer | Veyo'ach | ben | Asaf | hamazkir
 
 36:4
-vaiyomer | aleihem
-rav | shakeh
+vaiyomer | aleihem | rav | shakeh
 imru | na | el | Chizkiyahu | koh | amar | hamelekh | hagadol | melekh | Ashur
 mah | habitachon | hazeh | asher | batacheta
 
@@ -46,7 +45,8 @@ ulefarashim
 
 36:10
 ve'atah | hamibal'adei | Yahweh
-aliti | al | ha'aretz | hazot | lehashchitah
+aliti | al | ha'aretz | hazot
+lehashchitah
 Yahweh | amar | elai | aleh | el | ha'aretz | hazot
 vehashchitah
 
@@ -77,7 +77,8 @@ koh | amar | hamelekh | al | yashi | lakhem | Chizkiyahu
 ki | lo | yukhal | lehatzil | etkhem
 
 36:15
-ve'al | yavtach | etkhem | Chizkiyahu | el | Yahweh | lemor
+ve'al | yavtach | etkhem | Chizkiyahu | el | Yahweh
+lemor
 hatzel | yatzilenu | Yahweh
 lo | tinaten | ha'ir | hazot | beyad | melekh | Ashur
 
@@ -93,7 +94,8 @@ velakachti | etkhem | el | eretz | ke'artzekhem
 eretz | dagan | vetiroosh | eretz | lechem | ukheramim
 
 36:18
-pen | yasit | etkhem | Chizkiyahu | lemor | Yahweh | yatzilenu
+pen | yasit | etkhem | Chizkiyahu
+lemor | Yahweh | yatzilenu
 hahitzilu | elohei | hagoyim | ish | et | artzo | miyad | melekh | Ashur
 
 36:19
@@ -107,7 +109,8 @@ ki | yatzil | Yahweh | et | Yerushalim | miyadi
 
 36:21
 vaiyacharishu
-velo | anu | oto | davar | ki | mitzvat | hamelekh | hi | lemor
+velo | anu | oto | davar | ki | mitzvat | hamelekh | hi
+lemor
 lo | ta'anuhu
 
 36:22

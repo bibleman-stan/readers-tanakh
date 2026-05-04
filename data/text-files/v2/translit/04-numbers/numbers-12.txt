@@ -1,12 +1,10 @@
 12:1
-vatedaber | Miryam | Ve'aharon
-Bemosheh | al | odot | ha'ishah | hakushit
+vatedaber | Miryam | Ve'aharon | Bemosheh | al | odot | ha'ishah | hakushit
 asher | lakach
 ki | ishah | khushit | lakach
 
 12:2
-vaiyomeru
-harak | akh | Bemosheh
+vaiyomeru | harak | akh | Bemosheh
 diber | Yahweh | halo
 gam | banu | diber
 vaiyishma | Yahweh
@@ -16,8 +14,7 @@ veha'ish | Mosheh
 anav | me'od | mikol | ha'adam | asher | al | penei | ha'adamah
 
 12:4
-vaiyomer | Yahweh
-pit'om | el | Mosheh
+vaiyomer | Yahweh | pit'om | el | Mosheh
 ve'el | Aharon
 ve'el | Miryam
 tze'u | shelashetekhem | el | ohel | mo'ed | vaiyetze'u | shelashetam
@@ -56,11 +53,13 @@ bi | adoni | al | na | tashet | aleinu | chatat | asher | No'alnu
 va'asher | chatanu
 
 12:12
-al | na | tehi | kamet | asher | betzeto | merechem | imo
+al | na | tehi | kamet | asher
+betzeto | merechem | imo
 vaiye'akhel | chatzi | vesaro
 
 12:13
-vaiyitz'ak | Mosheh | el | Yahweh | lemor | el | na | refa | na | lah
+vaiyitz'ak | Mosheh | el | Yahweh
+lemor | el | na | refa | na | lah
 
 12:14
 vaiyomer | Yahweh | el | Mosheh

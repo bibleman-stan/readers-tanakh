@@ -5,8 +5,8 @@ le'einei | hakohanim
 vekhol | ha'am | lemor
 
 28:2
-koh | amar | Yahweh | tzeva'ot | elohei | Yisra'el | lemor
-shavarti | et | ol | melekh | Bavel
+koh | amar | Yahweh | tzeva'ot | elohei | Yisra'el
+lemor | shavarti | et | ol | melekh | Bavel
 
 28:3
 be'od | shenatayim | yamim | ani | meshiv | el | hamakom | hazeh
@@ -24,10 +24,10 @@ hanavi | le'einei | hakohanim
 ule'einei | khol | ha'am | ha'omedim | beveit | Yahweh
 
 28:6
-vaiyomer | Yirmeyah | hanavi
-amen | ken
+vaiyomer | Yirmeyah | hanavi | amen | ken
 ya'aseh | Yahweh
-yakem | Yahweh | et | devareikha | asher | Nibeta | lehashiv | kelei | veit | Yahweh
+yakem | Yahweh | et | devareikha | asher | Nibeta
+lehashiv | kelei | veit | Yahweh
 vekhol | hagolah | Mibavel | el | hamakom | hazeh
 
 28:7
@@ -51,13 +51,15 @@ vaiyikach | Chananyah | hanavi | et | hamotah | me'al | tzavar | Yirmeyah | hana
 vaiyishberehu
 
 28:11
-vaiyomer | Chananyah | le'einei | khol | ha'am | lemor
+vaiyomer | Chananyah | le'einei | khol | ha'am
+lemor
 koh | amar | Yahweh
 kakhah | eshbor | et | ol | Nevukhadnetzar | melekh | Bavel | be'od | shenatayim | yamim
 me'al | tzavar | kol | hagoyim | vaiyelekh | Yirmeyah | hanavi | ledarko
 
 28:12
-vayhi | devar | Yahweh | el | Yirmeyah | acharei | shevor | Chananyah | hanavi | et | hamotah | me'al | tzavar | Yirmeyah | hanavi | lemor
+vayhi | devar | Yahweh | el | Yirmeyah | acharei | shevor | Chananyah | hanavi | et | hamotah | me'al | tzavar | Yirmeyah | hanavi
+lemor
 
 28:13
 halokh | ve'amarta | el | Chananyah | lemor | koh | amar | Yahweh
@@ -65,13 +67,13 @@ motot | etz | shavareta
 ve'asita | tachteihen | motot | barzel
 
 28:14
-ki | khoh | amar | Yahweh | tzeva'ot | elohei | Yisra'el | ol | barzel | natati | al | tzavar | kol | hagoyim | ha'eleh | la'avod | et | Nevukhadnetzar | melekh | Bavel
+ki | khoh | amar | Yahweh | tzeva'ot | elohei | Yisra'el | ol | barzel | natati | al | tzavar | kol | hagoyim | ha'eleh
+la'avod | et | Nevukhadnetzar | melekh | Bavel
 va'avaduhu
 vegam | et | chaiyat | hasadeh | natati | lo
 
 28:15
-vaiyomer | Yirmeyah | hanavi | el | Chananyah
-hanavi
+vaiyomer | Yirmeyah | hanavi | el | Chananyah | hanavi
 shema | na | Chananyah | lo | shelachakha | Yahweh
 ve'atah | hivtachta | et | ha'am | hazeh | al | shaker
 

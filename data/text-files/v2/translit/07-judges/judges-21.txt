@@ -23,7 +23,8 @@ ushelamim
 21:5
 vaiyomeru | benei | Yisra'el
 mi | asher | lo | alah | vakahal | mikol | shivtei | Yisra'el | el | Yahweh
-ki | hashevu'ah | hagedolah | hayetah | la'asher | lo | alah | el | Yahweh | Hamitzpah | lemor
+ki | hashevu'ah | hagedolah | hayetah | la'asher | lo | alah | el | Yahweh | Hamitzpah
+lemor
 mot | yumat
 
 21:6
@@ -63,8 +64,7 @@ asher | be'eretz | Kena'an
 
 21:13
 vaiyishlechu | kol | ha'edah
-vaydaberu | el | benei | Vinyamin
-asher | besela | Rimon
+vaydaberu | el | benei | Vinyamin | asher | besela | Rimon
 vaiyikre'u | lahem | shalom
 
 21:14
@@ -88,8 +88,7 @@ velo | yimacheh | shevet | Miyisra'el
 
 21:18
 va'anachnu | lo | nukhal | latet | lahem | nashim | mibenoteinu
-ki | Nishbe'u | venei | Yisra'el | lemor
-arur | noten | ishah | Levinyamin
+ki | Nishbe'u | venei | Yisra'el | lemor | arur | noten | ishah | Levinyamin
 
 21:19
 vaiyomeru
@@ -98,17 +97,19 @@ limsilah | ha'olah | Mibeit | El | Shekhemah
 Uminegev | Lilvonah
 
 21:20
-vaytzav | et | benei | Vinyamin | lemor | lekhu
+vaytzav | et | benei | Vinyamin
+lemor | lekhu
 va'aravtem | bakeramim
 
 21:21
-ure'item | vehineh | im | yetze'u | venot | Shilo | lachul | bamecholot
-vitzatem | min | hakeramim
+ure'item | vehineh | im | yetze'u | venot | Shilo
+lachul | bamecholot | vitzatem | min | hakeramim
 vachataftem | lakhem | ish | ishto | mibenot | Shilo
 vahalakhtem | eretz | Binyamin
 
 21:22
-vehayah | ki | yavo'u | avotam | o | acheihem | larov | eleinu | ve'amarnu | aleihem | chanunu | otam
+vehayah | ki | yavo'u | avotam | o | acheihem
+larov | eleinu | ve'amarnu | aleihem | chanunu | otam
 ki | lo | lakachnu | ish | ishto | bamilchamah
 ki | lo | atem | netatem | lahem
 ka'et | te'shamu

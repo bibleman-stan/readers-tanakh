@@ -60,8 +60,7 @@ vaykan'u | vo | echav | ve'aviv | shamar | et | hadavar
 vaiyelekhu | echav | lir'ot | et | tzon | avihem | Bishkhem
 
 37:13
-vaiyomer | Yisra'el | el | Yosef
-halo | acheikha | ro'im | Bishkhem
+vaiyomer | Yisra'el | el | Yosef | halo | acheikha | ro'im | Bishkhem
 lekhah | ve'eshlachakha | aleihem | vaiyomer | lo | hineni
 
 37:14
@@ -90,7 +89,8 @@ vaiyimtza'em | Bedotan
 
 37:18
 vaiyir'u | oto | merachok
-uveterem | yikrav | aleihem | vaiyitnakelu | oto | lahamito
+uveterem | yikrav | aleihem | vaiyitnakelu | oto
+lahamito
 
 37:19
 vaiyomeru | ish | el | achiv

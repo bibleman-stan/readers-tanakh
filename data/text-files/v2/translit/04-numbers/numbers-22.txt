@@ -45,8 +45,7 @@ ka'asher | yedaber | Yahweh | elai | vaiyeshevu | sarei | Mo'av | im | Bil'am
 
 22:9
 vaiyavo | elohim | el | Bil'am
-vaiyomer
-mi | ha'anashim | ha'eleh | imakh
+vaiyomer | mi | ha'anashim | ha'eleh | imakh
 
 22:10
 vaiyomer | Bil'am | el | ha'elohim
@@ -125,7 +124,8 @@ ushenei | ne'arav | imo
 vatere | ha'aton | et | mal'akh | Yahweh | nitzav | baderekh | vecharbo | shelufah | beyado
 vatet | ha'aton | min | haderekh
 vatelekh | basadeh
-vaiyakh | Bil'am | et | ha'aton | lehatotah | hadarekh
+vaiyakh | Bil'am | et | ha'aton
+lehatotah | hadarekh
 
 22:24
 vaiya'amod | mal'akh | Yahweh | bemish'ol | hakeramim | gader | mizeh
@@ -185,7 +185,8 @@ ve'otah | hecheyeiti
 22:34
 vaiyomer | Bil'am | el | mal'akh | Yahweh
 chatati
-ki | lo | yada'ti | ki | atah | nitzav | likrati | badarekh
+ki | lo | yada'ti | ki | atah | nitzav
+likrati | badarekh
 ve'atah | im | ra | be'eineikha | ashuvah | li
 
 22:35

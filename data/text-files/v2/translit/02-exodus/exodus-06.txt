@@ -16,7 +16,8 @@ ushemi | Yahweh
 lo | Noda'ti | lahem
 
 6:4
-vegam | hakimoti | et | beriti | itam | latet | lahem
+vegam | hakimoti | et | beriti | itam
+latet | lahem
 et | eretz | Kena'an
 et | eretz | megureihem | asher | garu | vah
 
@@ -50,14 +51,16 @@ ume'avodah
 kashah
 
 6:10
-vaydaber | Yahweh | el | Mosheh | lemor
+vaydaber | Yahweh | el | Mosheh
+lemor
 
 6:11
 bo | daber | el | par'oh | melekh | Mitzrayim
 vishalach | et | benei | Yisra'el | me'artzo
 
 6:12
-vaydaber | Mosheh | lifnei | Yahweh | lemor
+vaydaber | Mosheh | lifnei | Yahweh
+lemor
 hen | benei | Yisra'el | lo | shame'u | elai | ve'eikh | yishma'eni | far'oh
 va'ani
 aral | sefatayim
@@ -143,7 +146,8 @@ Ve'aharon
 vayhi | beyom | diber | Yahweh | el | Mosheh | be'eretz | Mitzrayim
 
 6:29
-vaydaber | Yahweh | el | Mosheh | lemor | ani | Yahweh
+vaydaber | Yahweh | el | Mosheh
+lemor | ani | Yahweh
 daber | el | par'oh | melekh | Mitzrayim | et | kol | asher | ani
 dover | eleikha
 

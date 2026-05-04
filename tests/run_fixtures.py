@@ -48,7 +48,6 @@ VALIDATOR_MAP = {
     "validate_speech_intro_framing": VALIDATORS_COLOMETRY / "validate_speech_intro_framing.py",
     "validate_construct_chain": VALIDATORS_COLOMETRY / "validate_construct_chain.py",
     "validate_wayehi_protasis": VALIDATORS_COLOMETRY / "validate_wayehi_protasis.py",
-    "validate_discourse_particles": VALIDATORS_COLOMETRY / "validate_discourse_particles.py",
     "validate_complement_integrity": VALIDATORS_COLOMETRY / "validate_complement_integrity.py",
     "validate_cross_verse_continuity": VALIDATORS_COLOMETRY / "validate_cross_verse_continuity.py",
 }

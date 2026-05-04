@@ -67,6 +67,7 @@ guards:
   - next_line_is_vav_coord_np       # block re-absorbing post-S2-split coord-NP
   - next_line_is_wayyiqtol          # block re-absorbing post-S3/S4-split
                                      # wayyiqtol-headed lines
+  - next_line_is_purpose_infinitive # block re-absorbing post-S7 purpose-INF orphans (defensive)
 
 annotation_template: "Motion verb + obligatory locus PP-complement merge ({pwc} prosodic words)"
 suggested_action: MERGE

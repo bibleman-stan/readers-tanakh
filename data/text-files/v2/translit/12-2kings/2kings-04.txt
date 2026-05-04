@@ -30,8 +30,7 @@ hem | magishim | eleiha | vehi | meitzaket
 
 4:6
 vayhi | kimlot | hakelim | vatomer | el | benah | hagishah | elai | od | keli
-vaiyomer | eleiha | ein
-od
+vaiyomer | eleiha | ein | od
 keli | vaiya'amod | hashamen
 
 4:7
@@ -44,7 +43,8 @@ tichyi | banotar
 4:8
 vayhi | haiyom | vaiya'avor | Elisha | el | Shunem | vesham | ishah | gedolah
 vatachazek | bo | le'ekhol | lachem
-vayhi | midei | avero | yasur | shamah | le'ekhol | lachem
+vayhi | midei | avero | yasur | shamah
+le'ekhol | lachem
 
 4:9
 vatomer | el | ishah
@@ -81,8 +81,7 @@ betokh | ami | anokhi | yoshavet
 4:14
 vaiyomer
 umeh | la'asot | lah
-vaiyomer | Geichazi
-aval | ben | ein | lah
+vaiyomer | Geichazi | aval | ben | ein | lah
 ve'ishah | zaken
 
 4:15
@@ -129,8 +128,7 @@ ve'arutzah | ad | ish | ha'elohim
 ve'ashuvah
 
 4:23
-vaiyomer
-madua | ati | holakhti | elav | haiyom | lo | chodesh
+vaiyomer | madua | ati | holakhti | elav | haiyom | lo | chodesh
 velo | shabat | vatomer | shalom
 
 4:24
@@ -227,7 +225,8 @@ yoshevim | lefanav | vaiyomer | lena'aro | shefot | hasir | hagedolah
 uvashel | nazid | livnei | hanevi'im
 
 4:39
-vaiyetze | echad | el | hasadeh | lelaket | orot
+vaiyetze | echad | el | hasadeh
+lelaket | orot
 vaiyimtza | gefen | sadeh
 vaylaket | mimenu | paku'ot | sadeh | melo | vigdo
 vaiyavo | vayfalach | el | sir | hanazid

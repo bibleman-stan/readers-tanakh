@@ -1,5 +1,6 @@
 23:1
-vaydaber | Yahweh | el | Mosheh | lemor
+vaydaber | Yahweh | el | Mosheh
+lemor
 
 23:2
 daber | el | benei | Yisra'el | ve'amarta | alehem | mo'adei | Yahweh
@@ -34,7 +35,8 @@ kol | melekhet | avodah
 lo | ta'asu
 
 23:9
-vaydaber | Yahweh | el | Mosheh | lemor
+vaydaber | Yahweh | el | Mosheh
+lemor
 
 23:10
 daber | el | benei | Yisra'el | ve'amarta | alehem
@@ -97,16 +99,19 @@ kol | melekhet | avodah
 lo | ta'asu | chukat | olam | bekhol | moshevoteikhem | ledoroteikhem
 
 23:22
-uvekutzrekhem | et | ketzir | artzekhem | lo | tekhaleh | pe'at | sadekha | bekutzrecha
+uvekutzrekhem | et | ketzir | artzekhem | lo | tekhaleh | pe'at | sadekha
+bekutzrecha
 veleket | ketzirecha
 lo | telaket | le'ani
 velager | ta'azo | otam | ani | Yahweh | eloheikhem
 
 23:23
-vaydaber | Yahweh | el | Mosheh | lemor
+vaydaber | Yahweh | el | Mosheh
+lemor
 
 23:24
-daber | el | benei | Yisra'el | lemor
+daber | el | benei | Yisra'el
+lemor
 bachodesh | hashevi'i | be'echad | lachodesh | yihyeh | lakhem | shabaton
 zikhron | teru'ah | mikra | kodesh
 
@@ -116,7 +121,8 @@ lo | ta'asu
 vehikravtem | isheh | Layahweh
 
 23:26
-vaydaber | Yahweh | el | Mosheh | lemor
+vaydaber | Yahweh | el | Mosheh
+lemor
 
 23:27
 akh | be'asor | lachodesh | hashevi'i | hazeh | yom | hakipurim | hu | mikra | kodesh | yihyeh | lakhem
@@ -146,11 +152,12 @@ betish'ah | lachodesh | ba'erev | me'erev | ad | erev
 tishbetu | shabatekhem
 
 23:33
-vaydaber | Yahweh | el | Mosheh | lemor
+vaydaber | Yahweh | el | Mosheh
+lemor
 
 23:34
-daber | el | benei | Yisra'el | lemor
-bachamishah | asar | yom | lachodesh | hashevi'i | hazeh
+daber | el | benei | Yisra'el
+lemor | bachamishah | asar | yom | lachodesh | hashevi'i | hazeh
 chag | hasukot | shiv'at | yamim | Layahweh
 
 23:35
@@ -165,7 +172,8 @@ lo | ta'asu
 
 23:37
 eleh | mo'adei | Yahweh
-asher | tikre'u | otam | mikra'ei | kodesh | lehakriv | isheh | Layahweh | olah
+asher | tikre'u | otam | mikra'ei | kodesh
+lehakriv | isheh | Layahweh | olah
 uminchah | zevach | unesakhim
 devar | yom | beyomo
 

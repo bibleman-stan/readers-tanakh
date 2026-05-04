@@ -44,8 +44,8 @@ hachutzah | vayhi | sham | ad | haiyom | hazeh
 
 5:10
 ein | ba'aron | rak | shenei | haluchot
-asher | natan | Mosheh | Bechorev
-asher | karat | Yahweh | im | benei | Yisra'el | betzetam | Mimitzrayim
+asher | natan | Mosheh | Bechorev | asher | karat | Yahweh | im | benei | Yisra'el
+betzetam | Mimitzrayim
 
 5:11
 vayhi | betzet | hakohanim
@@ -61,7 +61,9 @@ omedim | mizrach | lamizbeach
 ve'imahem | kohanim | leme'ah | ve'esrim | machtzeririm | bachatzotzerot
 
 5:13
-vayhi | khe'echod | lamachatzotzerim | velamshorarim | lehashmia | kol | echad | lehalel
+vayhi | khe'echod | lamachatzotzerim
+velamshorarim
+lehashmia | kol | echad | lehalel
 ulehodot | Layahweh
 ukheharim | kol | bachatzotzerot
 uvimtziltayim

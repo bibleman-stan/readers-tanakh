@@ -120,6 +120,7 @@ guards:
   - next_line_is_vav_coord_pp     # block re-absorbing post-S1-split coord-PP
   - next_line_is_vav_coord_np     # block re-absorbing post-S2-split coord-NP
   - next_line_is_wayyiqtol        # block re-absorbing post-S3/S4-split
+  - next_line_is_purpose_infinitive   # block re-absorbing post-S7 purpose-INF orphans (defensive)
                                     # wayyiqtol-headed lines
 
 annotation_template: "Solo action verb stranded — propositionally empty without complement ({pwc} prosodic words combined)"

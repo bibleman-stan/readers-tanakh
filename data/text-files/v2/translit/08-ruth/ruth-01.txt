@@ -1,7 +1,8 @@
 1:1
 vayhi | bimei | shefot | hashofetim
 vayhi | ra'av | ba'aretz
-vaiyelekh | ish | Mibeit | Lechem | Yehudah | lagur | bisdei | Mo'av
+vaiyelekh | ish | Mibeit | Lechem | Yehudah
+lagur | bisdei | Mo'av
 hu | ve'ishto
 ushenei | vanav
 
@@ -28,7 +29,8 @@ vatisha'er | ha'ishah | mishenei | yeladeiha | ume'ishah
 1:6
 vatakom | hi | vekhaloteiha
 vatashov | misedei | Mo'av | ki | shame'ah | bisdeh | Mo'av
-ki | fakad | Yahweh | et | amo | latet | lahem | lachem
+ki | fakad | Yahweh | et | amo
+latet | lahem | lachem
 
 1:7
 vatetze | min | hamakom | asher | hayetah | shamah
@@ -59,7 +61,8 @@ lamah | telakhnah | imi | ha'od | li | vanim | beme'ai
 vehayu | lakhem | la'anashim
 
 1:12
-shoenah | venotai | lekhena | ki | zakanti | mihyot | le'ish
+shoenah | venotai | lekhena | ki | zakanti
+mihyot | le'ish
 ki | amarti | yesh | li | tikvah
 gam | hayiti | halaylah | le'ish | vegam
 yaladti | vanim
@@ -82,8 +85,8 @@ hineh | shavah | yevimtekh | el | amah
 ve'el | eloheiha | shuvi | acharei | yevimtekh
 
 1:16
-vatomer | Rut
-al | tifge'i | vi | le'azevekh | lashuv | me'acharayikh
+vatomer | Rut | al | tifge'i | vi
+le'azevekh | lashuv | me'acharayikh
 ki | el | asher | telekhi | elekh | uva'asher | talini | alin
 amekh | ami | velohayikh
 elohai

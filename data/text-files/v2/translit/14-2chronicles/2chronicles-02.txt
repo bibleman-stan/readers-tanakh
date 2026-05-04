@@ -4,7 +4,8 @@ ushemonim | elef | ish | chotzev | bahar
 umenatzechim | aleihem | sheloshet | alafim | veshesh | me'ot
 
 2:2
-vaiyishlach | Shelomoh | el | Churam | melekh | Tzor | lemor
+vaiyishlach | Shelomoh | el | Churam | melekh | Tzor
+lemor
 ka'asher | asita | im | David | avi
 vatishlach | lo | arazim | livnot | lo | vayit | lashevet | bo
 
@@ -24,7 +25,8 @@ ki | gadol | eloheinu | mikol | ha'elohim
 2:5
 umi | ya'atzor | koach | livnot | lo | vayit | ki | hashamayim | ushemei | hashamayim
 lo | yekhalkeluhu
-umi | ani | asher | evneh | lo | vayit | ki | im | lehaktir | lefanav
+umi | ani | asher | evneh | lo | vayit | ki
+im | lehaktir | lefanav
 
 2:6
 ve'atah | shelach | li | ish | chakham | la'asot | bazahav
@@ -38,7 +40,8 @@ Uvirushalim | asher | hekhin | David | avi
 
 2:7
 ushelach | li | atzei | arazim | beroshim | ve'algumim | Mehalevanon
-ki | ani | yada'ti | asher | avadeikha | yod'im | likhrot
+ki | ani | yada'ti | asher | avadeikha | yod'im
+likhrot
 atzei | Levanon
 vehineh | avadai | im | avadeikha
 
@@ -55,8 +58,7 @@ batim
 esrim | alef
 
 2:10
-vaiyomer | Churam | melekh | Tzor
-bikhtav
+vaiyomer | Churam | melekh | Tzor | bikhtav
 vaiyishlach | el | Shelomoh | be'ahavat | Yahweh | et | amo
 netanekha | aleihem | melekh
 

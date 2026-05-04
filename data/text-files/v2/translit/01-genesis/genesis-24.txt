@@ -3,8 +3,7 @@ Ve'avraham | zaken | ba | baiyamim
 Vayahweh | berakh | et | Avraham | bakol
 
 24:2
-vaiyomer | Avraham | el | avdo
-zekan | beito
+vaiyomer | Avraham | el | avdo | zekan | beito
 hamoshel | bekhol | asher | lo | sim | na | yadekha | tachat | yerekhi
 
 24:3
@@ -29,7 +28,8 @@ hishamer | lekha | pen | tashiv | et | beni | shamah
 24:7
 Yahweh | elohei | hashamayim | asher | lekachani | mibeit | avi
 ume'eretz | moladti
-va'asher | diber | li | va'asher | Nishba | li | lemor
+va'asher | diber | li | va'asher | Nishba | li
+lemor
 lezar'akha | eten | et | ha'aretz | hazot
 hu | yishlach | mal'akho | lefaneikha
 velakachta | ishah | livni | misham
@@ -70,7 +70,8 @@ uvah | eda
 ki | asita | chesed | im | adoni
 
 24:15
-vayhi | hu | terem | kilah | ledaber
+vayhi | hu | terem | kilah
+ledaber
 vehineh | Rivkah | yotzet | asher | yuledah | Livtu'el | ben | Milkah
 eshet | Nachor
 achi | Avraham | vekhadah | al | shikhmah
@@ -96,11 +97,13 @@ vatashkehu
 24:19
 vatekhal | lehashkoto
 vatomer
-gam | ligmaleikha | esh'av | ad | im | kilu | lishtot
+gam | ligmaleikha | esh'av | ad | im | kilu
+lishtot
 
 24:20
 vatemaher | vate'ar | kadah | el | hashoket
-vatarotz | od | el | habe'er | lish'o
+vatarotz | od | el | habe'er
+lish'o
 vatish'av | lekhol | gemalav
 
 24:21
@@ -108,14 +111,14 @@ veha'ish | mishta'eh | lah | macharish | lada'at | hahitzliach | Yahweh | darko
 im | lo
 
 24:22
-vayhi | ka'asher | kilu | hagemalim | lishtot
+vayhi | ka'asher | kilu | hagemalim
+lishtot
 vaiyikach | ha'ish | nezem | zahav | beka
 mishkalo | ushenei | tzemidim | al | yadeiha
 asarah | zahav | mishkalam
 
 24:23
-vaiyomer | bat | mi
-at | hagidi | na | li
+vaiyomer | bat | mi | at | hagidi | na | li
 hayesh | beit | avikh | makom | lanu | lalin
 
 24:24
@@ -124,16 +127,15 @@ anokhi
 ben | Milkah | asher | yaldah | Lenachor
 
 24:25
-vatomer | elav | gam | teven | gam | mispo
-rav | imanu | gam | makom | lalun
+vatomer | elav | gam | teven | gam | mispo | rav | imanu | gam | makom
+lalun
 
 24:26
 vaiyikod | ha'ish
 vaiyishtachu | Layahweh
 
 24:27
-vaiyomer
-barukh | Yahweh | elohei | adoni | Avraham
+vaiyomer | barukh | Yahweh | elohei | adoni | Avraham
 asher | lo | azav | chasdo | va'amito | me'im | adoni
 anokhi | baderekh | nachani | Yahweh | beit | achei | adoni
 
@@ -145,7 +147,8 @@ vataged | leveit | imah | kadevarim | ha'eleh
 Ulerivkah | ach | ushemo | Lavan | vaiyarotz | Lavan | el | ha'ish | hachutzah | el | ha'ayin
 
 24:30
-vayhi | kir'ot | et | hanezem | ve'et | hatzemidim | al | yedei | achoto
+vayhi | kir'ot | et | hanezem
+ve'et | hatzemidim | al | yedei | achoto
 ukheshame'o | et | divrei | Rivkah | achoto | lemor
 koh | diber | elai | ha'ish
 vaiyavo | el | ha'ish | vehineh | omed | al | hagemalim | al | ha'ayin
@@ -217,7 +220,8 @@ holekh | aleiha
 
 24:43
 hineh | anokhi | nitzav | al | ein | hamayim
-vehayah | ha'almah | haiyotzet | lish'o
+vehayah | ha'almah | haiyotzet
+lish'o
 ve'amarti | eleiha | hashkini | na | me'at | mayim | mikadekh
 
 24:44
@@ -240,8 +244,7 @@ hishkatah
 24:47
 va'esh'al | otah
 va'omar | bat | mi | at
-vatomer | bat | Betu'el | ben | Nachor
-asher | yaldah | lo | Milkah
+vatomer | bat | Betu'el | ben | Nachor | asher | yaldah | lo | Milkah
 va'asim | hanezem | al | apah
 vehatzemidim | al | yadeiha
 
@@ -335,10 +338,9 @@ vatere | et | Yitzchak
 vatipol | me'al | hagamal
 
 24:65
-vatomer | el | ha'eved | mi | ha'ish
-halazeh | haholekh | basadeh | likratenu
-vaiyomer | ha'eved
-hu | adoni
+vatomer | el | ha'eved | mi | ha'ish | halazeh | haholekh | basadeh
+likratenu
+vaiyomer | ha'eved | hu | adoni
 vatikach | hatza'if
 vatitkas
 

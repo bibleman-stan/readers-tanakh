@@ -1,6 +1,7 @@
 24:1
 vaiyosef | af | Yahweh | lacharot | Beyisra'el
-vaiyaset | et | David | bahem | lemor
+vaiyaset | et | David | bahem
+lemor
 lekh | meneh | et | Yisra'el | ve'et | Yehudah
 
 24:2
@@ -11,15 +12,15 @@ veyada'ti | et | mispar | ha'am
 
 24:3
 vaiyomer | Yo'av | el | hamelekh
-veyosef | Yahweh | eloheikha | el | ha'am
-kahem
+veyosef | Yahweh | eloheikha | el | ha'am | kahem
 vekhahem | me'ah | fe'amim
 ve'einei | adoni | hamelekh | ro'ot
 vadoni | hamelekh | lamah | chafetz | badavar | hazeh
 
 24:4
 vaiyechezak | devar | hamelekh | el | Yo'av | ve'al | sarei | hechayil
-vaiyetze | Yo'av | vesarei | hachayil | lifnei | hamelekh | lifkod | et | ha'am | et | Yisra'el
+vaiyetze | Yo'av | vesarei | hachayil | lifnei | hamelekh
+lifkod | et | ha'am | et | Yisra'el
 
 24:5
 vaiya'avru | et | Haiyarden
@@ -58,7 +59,8 @@ ki | Niskalti | me'od
 
 24:11
 vaiyakom | David | baboker
-udevar | Yahweh | hayah | el | Gad | hanavi | chozeh | David | lemor
+udevar | Yahweh | hayah | el | Gad | hanavi | chozeh | David
+lemor
 
 24:12
 halokh | vedibarta | el | David | koh | amar | Yahweh | shalosh | anokhi
@@ -83,7 +85,8 @@ ve'ad | et | mo'ed | vaiyamot | min | ha'am | Midan
 ve'ad | Be'er | Sheva | shiv'im | elef | ish
 
 24:16
-vaiyishlach | yado | hamal'akh | Yerushalim | leshachatah
+vaiyishlach | yado | hamal'akh | Yerushalim
+leshachatah
 vaiyinachem | Yahweh | el | hara'ah
 vaiyomer | lamal'akh | hamashchit
 ba'am | rav | atah | heref | yadekha

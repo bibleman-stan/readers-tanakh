@@ -213,8 +213,7 @@ velo | Nimtza'u
 vaygo'alu | min | hakehunah
 
 2:63
-vaiyomer | hatirshata | lahem
-asher | lo | yokhelu | mikodesh | hakodashim
+vaiyomer | hatirshata | lahem | asher | lo | yokhelu | mikodesh | hakodashim
 ad | amod | kohen | le'urim
 uletumim
 
@@ -238,7 +237,8 @@ sheshet | alafim | sheva | me'ot | ve'esrim
 2:68
 umerashei | ha'avot | bevo'am
 leveit | Yahweh | asher | Birushalim
-hitnadevu | leveit | ha'elohim | leha'amido | al | mekhono
+hitnadevu | leveit | ha'elohim
+leha'amido | al | mekhono
 
 2:69
 kekhocham | natenu | le'otzar | hamelakhah

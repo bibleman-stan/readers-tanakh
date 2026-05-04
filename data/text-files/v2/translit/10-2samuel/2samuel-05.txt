@@ -1,7 +1,6 @@
 5:1
 vaiyavo'u | kol | shivtei | Yisra'el | el | David
-Chevronah | vaiyomeru | lemor
-hinu | atzmekha | uvesarekha | anachenu
+Chevronah | vaiyomeru | lemor | hinu | atzmekha | uvesarekha | anachenu
 
 5:2
 gam | etmol | gam | shilshom | bihyot | Sha'ul | melekh | aleinu | atah | hayitah | hamotzi | vehamevi
@@ -27,8 +26,8 @@ Uvirushalim | malakh | sheloshim | veshalosh | shanah | al | kol | Yisra'el | Vi
 5:6
 vaiyelekh | hamelekh | va'anashav | Yerushalim | el | hayvusi | yoshev | ha'aretz
 vaiyomer | Ledavid | lemor
-lo | tavo | henah | ki | im | hesirekha | ha'ivrim | vehapischim | lemor
-lo | yavo | David
+lo | tavo | henah | ki | im | hesirekha | ha'ivrim | vehapischim
+lemor | lo | yavo | David
 henah
 
 5:7
@@ -91,7 +90,8 @@ vaiyered | el | hametzudah
 ufelishtim | ba'u | vaiyinateshu | be'emek | Refa'im
 
 5:19
-vaiyish'al | David | Bayahweh | lemor | ha'e'eleh | el | pelishtim | hatitenem | beyadi
+vaiyish'al | David | Bayahweh
+lemor | ha'e'eleh | el | pelishtim | hatitenem | beyadi
 vaiyomer | Yahweh | el | David
 aleh | ki | naton | eten | et | hapelishtim | beyadekha
 
@@ -107,7 +107,8 @@ vaiya'azvu | sham | et | atzabeihem
 vaiyisa'em | David | va'anashav
 
 5:22
-vaiyosifu | od | pelishtim | la'alot
+vaiyosifu | od | pelishtim
+la'alot
 vaiyinateshu | be'emek | Refa'im
 
 5:23
@@ -118,8 +119,8 @@ uvata | lahem | mimul | bekha'im
 
 5:24
 vihi | keshame'akha | et | kol | tze'adah | berashei | habekha'im | az | techeratz
-ki | az | yatza | Yahweh | lefaneikha | lehakot
-bemachaneh | felishtim
+ki | az | yatza | Yahweh | lefaneikha
+lehakot | bemachaneh | felishtim
 
 5:25
 vaiya'as | David | ken

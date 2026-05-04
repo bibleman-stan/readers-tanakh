@@ -37,6 +37,7 @@ guards:
   - next_line_is_vav_coord_pp   # post-S1 split product → do not re-absorb
   - next_line_is_vav_coord_np   # post-S2 split product → do not re-absorb
   - next_line_is_wayyiqtol      # post-S3 clause-head → do not re-absorb
+  - next_line_is_purpose_infinitive   # block re-absorbing post-S7 purpose-INF orphans (defensive)
 
 annotation_template: "M.num compound-numeral chain (combined {pwc} prosodic words)"
 suggested_action: MERGE

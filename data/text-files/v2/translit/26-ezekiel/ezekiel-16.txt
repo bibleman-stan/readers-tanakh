@@ -1,5 +1,6 @@
 16:1
-vayhi | devar | Yahweh | elai | lemor
+vayhi | devar | Yahweh | elai
+lemor
 
 16:2
 ben | adam | hoda | et | Yerushalim | et | to'avoteiha
@@ -16,7 +17,8 @@ vehameleach | lo | humlachat
 vehachetel | lo | chutalet
 
 16:5
-lo | chasah | alayikh | ayin | la'asot | lakh | achat | me'eleh
+lo | chasah | alayikh | ayin
+la'asot | lakh | achat | me'eleh
 lechumlah | alayikh | vatushlekhi | el | penei | hasadeh | bego'al | nafshekh
 beyom | huledet | otakh
 
@@ -219,8 +221,7 @@ ne'um | Adonai | Yahweh
 velo | asiti | et | hazimah | al | kol | to'avotayikh
 
 16:44
-hineh | kol | hamoshel | alayikh | yimshol | lemor
-ke'imah | bitah
+hineh | kol | hamoshel | alayikh | yimshol | lemor | ke'imah | bitah
 
 16:45
 bat | imekh | at | go'elet | ishah | uvaneiha
@@ -264,7 +265,8 @@ vatetzadeki | et | achotekh | bekhol | to'avotayikh | asher | asit
 
 16:52
 gam | at | se'i | khelimatekh | asher | pilalt | la'achotekh
-bechatotayikh | asher | hit'avt | mehen | titzdaknah | mimekh | vegam | at | boshi | use'i | khelimatekh | betzadektekh
+bechatotayikh | asher | hit'avt | mehen | titzdaknah | mimekh | vegam | at | boshi | use'i | khelimatekh
+betzadektekh
 achyotekh
 
 16:53
@@ -274,7 +276,8 @@ ushevit | shevitayikh
 betokhahenah
 
 16:54
-lema'an | tis'i | khelimatekh | venikhlamt | mikol | asher | asit | benachamekh
+lema'an | tis'i | khelimatekh | venikhlamt | mikol | asher | asit
+benachamekh
 otan
 
 16:55
@@ -297,7 +300,8 @@ ne'um | Yahweh
 
 16:59
 ki | khoh | amar | Adonai | Yahweh
-ve'asit | otakh | ka'asher | asit | asher | bazit | alah | lehafer | berit
+ve'asit | otakh | ka'asher | asit | asher | bazit | alah
+lehafer | berit
 
 16:60
 vezakharti | ani | et | beriti | otakh
@@ -305,7 +309,8 @@ bimei | ne'urayikh
 vahakimoti | lakh | berit | olam
 
 16:61
-vezakhart | et | derakhayikh | venikhlamt | bekachtekh | et | achotayikh | hagedolot | mimekh | el | haketanot | mimekh
+vezakhart | et | derakhayikh | venikhlamt
+bekachtekh | et | achotayikh | hagedolot | mimekh | el | haketanot | mimekh
 venatati | ethen | lakh | levanot | velo | miberitekh
 
 16:62
@@ -314,5 +319,6 @@ veyada'at | ki | ani | Yahweh
 
 16:63
 lema'an | tizkeri | vavoshet
-velo | yihyeh | lakh | od | pitchon | peh | mipenei | kelimatekh | bekhaperi | lokh | lekhol | asher | asit
+velo | yihyeh | lakh | od | pitchon | peh | mipenei | kelimatekh
+bekhaperi | lokh | lekhol | asher | asit
 ne'um | Adonai | Yahweh

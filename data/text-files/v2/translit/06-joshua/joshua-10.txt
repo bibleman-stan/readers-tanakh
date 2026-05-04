@@ -28,8 +28,8 @@ vekhol | machaneihem | vaiyachanu | al | Giv'on
 vaiyilachamu | aleiha
 
 10:6
-vaiyishlechu | anshei | Giv'on | el | Yehoshua | el | hamachaneh | Hagilgalah | lemor
-al | teref | yadeikha | me'avadeikha
+vaiyishlechu | anshei | Giv'on | el | Yehoshua | el | hamachaneh | Hagilgalah
+lemor | al | teref | yadeikha | me'avadeikha
 aleh | eleinu | meherah | vehoshi'ah | lanu | ve'azerenu
 ki | Nikbetzu | eleinu | kol | malkhei | ha'emori | yoshevei | hahar
 
@@ -90,12 +90,14 @@ nechbe'im | bame'arah | Bemakedah
 10:18
 vaiyomer | Yehoshua
 golu | avanim | gedolot | el | pi | hame'arah
-vehafkidu | aleiha | anashim | leshameram
+vehafkidu | aleiha | anashim
+leshameram
 
 10:19
 ve'atem | al | ta'amodu
 ridfu | acharei | oyeveikhem
-vezinavtem | otam | al | titenum | lavo | el | areihem
+vezinavtem | otam | al | titenum
+lavo | el | areihem
 ki | netanam | Yahweh | eloheikhem | beyedkhem
 
 10:20
@@ -171,7 +173,8 @@ vaiyilkedah | baiyom | hasheni
 vaiyakeha | lefi | cherev | ve'et | kol | hanefesh | asher | bah | kekhol | asher | asah | Lelivnah
 
 10:33
-az | alah | Horam | melekh | Gezer | la'zor | et | Lakhish
+az | alah | Horam | melekh | Gezer
+la'zor | et | Lakhish
 vaiyakehu | Yehoshua | ve'et | amo | ad | bilti | hish'ir | lo | sarid
 
 10:34

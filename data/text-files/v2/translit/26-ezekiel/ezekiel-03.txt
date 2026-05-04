@@ -1,6 +1,5 @@
 3:1
-vaiyomer | elai | ben | adam
-et | asher | timtza
+vaiyomer | elai | ben | adam | et | asher | timtza
 ekhol
 ekhol | et | hamegilah | hazot
 velekh | daber | el | beit | Yisra'el
@@ -76,7 +75,8 @@ va'eshev | sham | shiv'at | yamim | mashmim | betokham
 
 3:16
 vayhi | miktzeh | shiv'at | yamim
-vayhi | devar | Yahweh | elai | lemor
+vayhi | devar | Yahweh | elai
+lemor
 
 3:17
 ben | adam | tzopeh | netatikha | leveit | Yisra'el

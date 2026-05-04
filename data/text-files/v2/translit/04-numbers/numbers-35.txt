@@ -1,13 +1,16 @@
 35:1
-vaydaber | Yahweh | el | Mosheh | Be'arvot | Mo'av | al | Yarden | Yerecho | lemor
+vaydaber | Yahweh | el | Mosheh | Be'arvot | Mo'av | al | Yarden | Yerecho
+lemor
 
 35:2
 tzav | et | benei | Yisra'el
-venatenu | lalviyim | minachalat | achuzatam | arim | lashavet
+venatenu | lalviyim | minachalat | achuzatam | arim
+lashavet
 umigrash | le'arim | sevivoteihem | titenu | lalviyim
 
 35:3
-vehayu | he'arim | lahem | lashavet
+vehayu | he'arim | lahem
+lashavet
 umigresheihem | yihyu | livhemtam
 velirkhusham
 ulekhol | chaiyatam
@@ -36,7 +39,8 @@ ume'et | ham'at | tam'itu
 ish | kefi | nachalato | asher | yinchalu | yiten | me'arav | lalviyim
 
 35:9
-vaydaber | Yahweh | el | Mosheh | lemor
+vaydaber | Yahweh | el | Mosheh
+lemor
 
 35:10
 daber | el | benei | Yisra'el
@@ -65,7 +69,8 @@ arei | miklat | tihyeinah
 livnei | Yisra'el
 velager
 velatoshav | betokham
-tihyeinah | shesh | he'arim | ha'eleh | lemiklat | lanus | shamah | kol | makeh | nefesh | bishgagah
+tihyeinah | shesh | he'arim | ha'eleh | lemiklat
+lanus | shamah | kol | makeh | nefesh | bishgagah
 
 35:16
 ve'im | bikhli | varzel | hikahu | vaiyamot | rotzeach | hu
@@ -136,8 +141,8 @@ kol | makeh | nefesh | lefi | edim | yirtzach | et | harotzeach
 ve'ed | echad | lo | ya'aneh | venefesh | lamut
 
 35:31
-velo | tikchu | khofer | lenefesh | rotzeach | asher | hu | rasha | lamut | ki | mot
-yumat
+velo | tikchu | khofer | lenefesh | rotzeach | asher | hu | rasha
+lamut | ki | mot | yumat
 
 35:32
 velo | tikchu | khofer | lanus | el | ir | miklato | lashuv | lashevet | ba'aretz | ad | mot | hakohen

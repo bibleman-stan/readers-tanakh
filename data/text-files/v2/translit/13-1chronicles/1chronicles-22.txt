@@ -4,8 +4,7 @@ zeh | hu | beit | Yahweh | ha'elohim
 vezeh | mizbeach | le'olah | Leyisra'el
 
 22:2
-vaiyomer | David | likhnos
-et | hagerim | asher | be'eretz | Yisra'el
+vaiyomer | David | likhnos | et | hagerim | asher | be'eretz | Yisra'el
 vaiya'amed | chotzevim | lachtzov | avnei | gazit | livnot
 beit | ha'elohim
 
@@ -35,7 +34,8 @@ vaiyomer | David | Lishlomoh
 beni | ani | hayah | im | levavi | livnot | bayit | leshem | Yahweh | elohai
 
 22:8
-vayhi | alai | devar | Yahweh | lemor
+vayhi | alai | devar | Yahweh
+lemor
 dam | laro | shafakhta | umilchamot | gedolot
 asita | lo | tivneh | vayit | lishmi | ki | damim | rabim
 shafakhta | artzah | lefanai
@@ -89,7 +89,8 @@ kum | va'aseh
 vihi | Yahweh | imakh
 
 22:17
-vaytzav | David | lekhol | sarei | Yisra'el | la'zor | Lishlomoh | veno
+vaytzav | David | lekhol | sarei | Yisra'el
+la'zor | Lishlomoh | veno
 
 22:18
 halo | Yahweh | eloheikhem | imakhem | veheniach | lakhem
@@ -98,7 +99,9 @@ venikhbeshah | ha'aretz | lifnei | Yahweh
 velifnei | amo
 
 22:19
-atah | tenu | levavkhem | venafshekhem | lidroosh | Layahweh | eloheikhem
+atah | tenu | levavkhem | venafshekhem
+lidroosh | Layahweh | eloheikhem
 vekumu
-uvenu | et | mikdash | Yahweh | ha'elohim | lehavi | et | aron | berit | Yahweh
+uvenu | et | mikdash | Yahweh | ha'elohim
+lehavi | et | aron | berit | Yahweh
 ukhelei | kodesh | ha'elohim | labayit | hanivneh | leshem | Yahweh

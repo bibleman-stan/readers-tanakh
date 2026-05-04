@@ -53,8 +53,8 @@ vatetzavehu | el | Maredokhai
 
 4:11
 kol | avdei | hamelekh
-ve'am | medinot | hamelekh | yod'im | asher | kol | ish | ve'ishah | asher | yavo | el | hamelekh | el | hechatzer | hapenimit | asher | lo | yikare | achat | dato | lehamit
-levad | me'asher | yoshit | lo | hamelekh | et | sharvit | hazahav
+ve'am | medinot | hamelekh | yod'im | asher | kol | ish | ve'ishah | asher | yavo | el | hamelekh | el | hechatzer | hapenimit | asher | lo | yikare | achat | dato
+lehamit | levad | me'asher | yoshit | lo | hamelekh | et | sharvit | hazahav
 vechayah
 va'ani | lo | Nikreti | lavo | el | hamelekh | zeh | sheloshim | yom
 
@@ -62,8 +62,7 @@ va'ani | lo | Nikreti | lavo | el | hamelekh | zeh | sheloshim | yom
 vaiyagidu | Lemaredokhai | et | divrei | Ester
 
 4:13
-vaiyomer | Maredokhai | lehashiv
-el | Ester
+vaiyomer | Maredokhai | lehashiv | el | Ester
 al | tedami | venafshekh | lehimalet | beit | hamelekh | mikol | haiyehudim
 
 4:14
@@ -73,8 +72,7 @@ ve'at | uveit | avikh | tovedu
 umi | yodea | im | le'et | kazot | higa'at | lamalkhut
 
 4:15
-vatomer | Ester | lehashiv
-el | Maredokhai
+vatomer | Ester | lehashiv | el | Maredokhai
 
 4:16
 lekh | kenos | et | kol | haiyehudim | hanimtze'im | Beshushan | vetzumu | alai

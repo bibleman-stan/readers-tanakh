@@ -93,8 +93,7 @@ im | titen | eravon | ad | shalchekha
 38:18
 vaiyomer
 mah | ha'eravon | asher | eten | lokh
-vatomer | chotamekha | ufetilekha | umatekha
-asher | beyadekha
+vatomer | chotamekha | ufetilekha | umatekha | asher | beyadekha
 vaiyiten | lah
 vaiyavo | eleiha
 vatahar | lo
@@ -109,7 +108,8 @@ vaiyishlach | Yehudah | et | gedi | ha'izim | beyad | re'ehu | ha'adulami
 lakachat | ha'eravon | miyad | ha'ishah | velo | metza'ah
 
 38:21
-vaiyish'al | et | anshei | mekomah | lemor
+vaiyish'al | et | anshei | mekomah
+lemor
 aiyeh | hakedeshah | hi | Va'einayim | al | hadarekh
 vaiyomeru
 lo | hayetah | vazeh | kedeshah
@@ -121,14 +121,13 @@ lo | metzatiha
 vegam | anshei | hamakom | ameru | lo | hayetah | vazeh | kedeshah
 
 38:23
-vaiyomer | Yehudah
-tikach | lah
+vaiyomer | Yehudah | tikach | lah
 pen | nihyeh | lavuz
 hineh | shalachti | hagedi | hazeh | ve'atah | lo | metzatah
 
 38:24
-vayhi | kemishlosh | chodashim | vaiyugad | Lihudah | lemor
-zanetah | Tamar | kalatekha
+vayhi | kemishlosh | chodashim | vaiyugad | Lihudah
+lemor | zanetah | Tamar | kalatekha
 vegam | hineh | harah | liznunim
 vaiyomer | Yehudah
 hotzi'uha | vetisaref
@@ -156,7 +155,8 @@ vayhi | be'et | lidtah | vehineh | te'omim | bevitnah
 vayhi | velidtah
 vaiyiten | yad
 vatikach | hamyaledet
-vatikshor | al | yado | shani | lemor
+vatikshor | al | yado | shani
+lemor
 zeh | yatza | rishonah
 
 38:29

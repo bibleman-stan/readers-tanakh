@@ -1,5 +1,6 @@
 3:1
-vayhi | devar | Yahweh | el | Yonah | shenit | lemor
+vayhi | devar | Yahweh | el | Yonah | shenit
+lemor
 
 3:2
 kum | lekh | el | Ninveh | ha'ir | hagedolah
@@ -29,7 +30,8 @@ vaykhas | sak
 vaiyeshev | al | ha'efer
 
 3:7
-vaiyaz'ek | vaiyomer | Benineveh | mita'am | hamelekh | ugedolav | lemor
+vaiyaz'ek | vaiyomer | Benineveh | mita'am | hamelekh | ugedolav
+lemor
 ha'adam | vehabehemah | habakar | vehatzon | al | yit'amu | me'umah | al | yir'u
 umayim | al | yishtu
 
@@ -46,5 +48,6 @@ veshav | mecharon | apo | velo | noved
 3:10
 vaiyar | ha'elohim | et | ma'aseihem | ki | shavu
 midarkam | hara'ah
-vaiyinachem | ha'elohim | al | hara'ah | asher | diber | la'asot | lahem
+vaiyinachem | ha'elohim | al | hara'ah | asher | diber
+la'asot | lahem
 velo | asah

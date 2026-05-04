@@ -1,6 +1,5 @@
 1:1
-vaydaber | Yahweh | el | Mosheh
-bemidbar | Sinai | be'ohel | mo'ed
+vaydaber | Yahweh | el | Mosheh | bemidbar | Sinai | be'ohel | mo'ed
 be'echad | lachodesh | hasheni | bashanah | hashenit | letzetam | me'eretz | Mitzrayim
 lemor
 
@@ -232,7 +231,8 @@ vehalviyim
 lemateh | avotam | lo | hatpakdu | betokham
 
 1:48
-vaydaber | Yahweh | el | Mosheh | lemor
+vaydaber | Yahweh | el | Mosheh
+lemor
 
 1:49
 akh | et | mateh | Levi | lo | tifkod

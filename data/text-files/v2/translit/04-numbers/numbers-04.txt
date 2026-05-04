@@ -16,7 +16,8 @@ kol | ba | latzava | la'asot | melakhah | be'ohel | mo'ed
 zot | avodat | benei | Kehat | be'ohel | mo'ed | kodesh | hakodashim
 
 4:5
-uva | Aharon | uvanav | binsoa | hamachaneh
+uva | Aharon | uvanav
+binsoa | hamachaneh
 vehoridu | et | parokhet | hamasakh
 vekhisu | vah
 et | aron | ha'edut
@@ -99,7 +100,8 @@ velo | yavo'u | lir'ot | kevala | et | hakodesh
 vametu
 
 4:21
-vaydaber | Yahweh | el | Mosheh | lemor
+vaydaber | Yahweh | el | Mosheh
+lemor
 
 4:22
 naso | et | rosh | benei | Gereshon | gam | hem
@@ -108,7 +110,8 @@ leveit | avotam | lemishpechotam
 4:23
 miben | sheloshim | shanah
 vama'lah | ad | ben | chamishim | shanah
-tifkod | otam | kol | haba | litzvo | tzava
+tifkod | otam | kol | haba
+litzvo | tzava
 la'avod | avodah | be'ohel | mo'ed
 
 4:24
@@ -143,7 +146,8 @@ benei | Merari | lemishpechotam | leveit | avotam | tifkod | otam
 miben | sheloshim | shanah
 vama'lah
 ve'ad | ben | chamishim | shanah
-tifkedem | kol | haba | latzava | la'avod | et | avodat | ohel | mo'ed
+tifkedem | kol | haba | latzava
+la'avod | et | avodat | ohel | mo'ed
 
 4:31
 vezot | mishmeret | masa'am | lekhol | avodatam | be'ohel | mo'ed | karshei | hamishkan

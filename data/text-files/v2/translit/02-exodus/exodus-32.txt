@@ -1,5 +1,6 @@
 32:1
-vaiyar | ha'am | ki | voshesh | Mosheh | laredet | min | hahar
+vaiyar | ha'am | ki | voshesh | Mosheh
+laredet | min | hahar
 vaiyikahel | ha'am | al | Aharon
 vaiyomeru | elav
 kum | aseh | lanu | elohim | asher | yelekhu | lefaneinu
@@ -98,12 +99,10 @@ charut | al | haluchot
 
 32:17
 vaiyishma | Yehoshua | et | kol | ha'am | bere'o
-vaiyomer | el | Mosheh | kol | milchamah
-bamachaneh
+vaiyomer | el | Mosheh | kol | milchamah | bamachaneh
 
 32:18
-vaiyomer | ein | kol
-anot | gevurah
+vaiyomer | ein | kol | anot | gevurah
 ve'ein | kol | anot | chalushah | kol | anot | anokhi | shomea
 
 32:19
@@ -148,8 +147,7 @@ ki | fera'oh | Aharon | leshimtzah | bekameihem
 
 32:26
 vaiya'amod | Mosheh | besha'ar | hamachaneh
-vaiyomer
-mi | Layahweh
+vaiyomer | mi | Layahweh
 elai | vaiye'asefu | elav | kol | benei | Levi
 
 32:27

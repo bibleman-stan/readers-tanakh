@@ -1,5 +1,6 @@
 6:1
-vayhi | vishmonim | shanah | ve'arba | me'ot | shanah | letzet | benei | Yisra'el | me'eretz | Mitzrayim | bashanah | harevi'it | bechodesh | Ziv | hu | hachodesh | hasheni
+vayhi | vishmonim | shanah | ve'arba | me'ot | shanah
+letzet | benei | Yisra'el | me'eretz | Mitzrayim | bashanah | harevi'it | bechodesh | Ziv | hu | hachodesh | hasheni
 limlokh | Shelomoh | al | Yisra'el
 vaiyiven | habayit | Layahweh
 
@@ -50,7 +51,8 @@ vaiyiven | et | haiyatzoa | al | kol | habayit | chamesh | amot
 komato | vaiye'echoz | et | habayit | ba'atzei | arazim
 
 6:11
-vayhi | devar | Yahweh | el | Shelomoh | lemor
+vayhi | devar | Yahweh | el | Shelomoh
+lemor
 
 6:12
 habayit | hazeh | asher | atah | voneh | im | telekh | bechukotai | ve'et | mishpatai | ta'aseh

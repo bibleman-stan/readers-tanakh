@@ -1,6 +1,7 @@
 3:1
 vanefen | vana'al | derekh | Habashan
-vaiyetze | Og | melekh | Habashan | likratenu | hu
+vaiyetze | Og | melekh | Habashan
+likratenu | hu
 vekhol | amo | lamilchamah | Edre'i
 
 3:2
@@ -87,8 +88,10 @@ Vehaiyarden | ugevul | Mikineret | ve'ad | yam | Ha'aravah | yam | hamelach
 tachat | ashdot | Hapisgah | mizrachah
 
 3:18
-va'atzav | etkhem | ba'et | hahiv | lemor
-Yahweh | eloheikhem | natan | lakhem | et | ha'aretz | hazot | lerishtah
+va'atzav | etkhem | ba'et | hahiv
+lemor
+Yahweh | eloheikhem | natan | lakhem | et | ha'aretz | hazot
+lerishtah
 chalutzim | ta'avru | lifnei | acheikhem | benei | Yisra'el | kol | benei | chayil
 
 3:19
@@ -103,7 +106,8 @@ be'ever | Haiyarden
 veshavtem | ish | lirushato | asher | natati | lakhem
 
 3:21
-ve'et | Yehoshua | tziveiti | ba'et | hahiv | lemor
+ve'et | Yehoshua | tziveiti | ba'et | hahiv
+lemor
 eineikha | haro'ot | et | kol | asher | asah | Yahweh | eloheikhem | lishnei | hamelakhim | ha'eleh
 ken | ya'aseh | Yahweh | lekhol | hamamlakhot | asher | atah | over | shamah
 
@@ -111,7 +115,8 @@ ken | ya'aseh | Yahweh | lekhol | hamamlakhot | asher | atah | over | shamah
 lo | tira'um | ki | Yahweh | eloheikhem | hu | hanilcham | lakhem
 
 3:23
-va'etchanan | el | Yahweh | ba'et | hahiv | lemor
+va'etchanan | el | Yahweh | ba'et | hahiv
+lemor
 
 3:24
 Adonai | Yahweh | atah | hachilota | lehar'ot | et | avdekha | et | gadelekha
