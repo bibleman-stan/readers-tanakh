@@ -58,6 +58,8 @@ V2_DIR = REPO_ROOT / "data" / "text-files" / "v2" / "he"
 # Make _shared importable
 sys.path.insert(0, str(REPO_ROOT / "validators"))
 from _shared.poetic_register import is_poetic_register  # noqa: E402
+from _shared.speech_verbs import BARE_SPEECH_VERB_SKELETONS  # noqa: E402
+from _shared import morph_alignment as MA  # noqa: E402
 
 # ---------------------------------------------------------------------------
 # Hebrew Unicode constants
@@ -287,6 +289,8 @@ def line_starts_with_et_marker(line: str) -> bool:
     """True if the first content token is the direct-object marker אֵת.
 
     Direct-object marker consonant skeleton: את (with or without maqqef-suffix).
+    Skel-only — does NOT distinguish from `אַתְּ` (2fs pronoun, same skeleton).
+    Use `first_token_is_do_marker_tag_aware` when tag alignment is available.
     """
     first = first_content_token(line)
     if first is None:
@@ -301,6 +305,56 @@ def line_starts_with_et_marker(line: str) -> bool:
             return True
     if bare == "את":
         return True
+    return False
+
+
+def first_token_is_do_marker_tag_aware(tag_list: "list[str] | None") -> bool | None:
+    """Tag-aware DO-marker discriminator.
+
+    Returns:
+      True  — first token's tag chain confirms To (DO marker אֵת)
+      False — first token's tag chain confirms Pp (personal pronoun, e.g. אַתְּ)
+      None  — tag info unavailable; caller should fall back to skel match
+
+    Discriminates the 2026-05-04 FP class: skel `את` is shared between
+    אֵת (DO marker, tag To) and אַתְּ (2fs pronoun, tag Pp2fs). Tag-driven
+    check eliminates the FP class entirely when tags are available.
+    """
+    if not tag_list:
+        return None
+    for tag in tag_list:
+        if not tag or tag == "[—]":
+            continue
+        # Strip the lang prefix (H) + check morpheme heads
+        morphemes = tag.split("/")
+        for m in morphemes:
+            stripped = m.lstrip("Hc")
+            if stripped.startswith("To"):
+                return True
+            if stripped.startswith("Pp"):
+                return False
+    return None
+
+
+def line_n_ends_with_speech_verb(line: str) -> bool:
+    """True if any content token in `line` is a wayyiqtol speech verb.
+
+    H5b speech-frame precedence guard: when line N contains a speech-event
+    verb (`וַיֹּאמֶר`, `וַיְדַבֵּר`, etc.), line N+1 starting with אֵת + content-NP
+    is a licensed H5b split (speech intro / quoted content), NOT a verb-
+    object bond violation.
+
+    Closes the 2026-05-04 FP-B class (11 corpus instances: Gen 45:27,
+    Exo 4:30, Num 11:24, Judg 9:36, 1Sam 8:10, 1Sam 10:25, 1Kgs 10:2,
+    2Kgs 20:13, 2Chr 9:1, Isa 39:2, Ezek 3:3 — all `<speech-verb> + ...
+    | אֵת <content>`).
+    """
+    for tok in content_tokens(line):
+        bare = strip_points(tok).rstrip(SOF_PASUQ)
+        # Maqqef-bound: check parts (e.g. וַיֹּאמֶר־לוֹ)
+        for part in bare.split(MAQQEF):
+            if part in BARE_SPEECH_VERB_SKELETONS:
+                return True
     return False
 
 
@@ -361,6 +415,10 @@ def scan_file(path: Path) -> list[dict]:
     chapter_from_file = chapter_from_path(path)
     verses = partition_into_verses(lines)
 
+    # Load TAHOT morph alignment (None if morph file absent — Guard A
+    # falls back to skel-only behaviour gracefully).
+    chapter_morph = MA.load_chapter_morph(path)
+
     # Build a lookup: line_index → (chapter, verse, position_within_verse, verse_line_indices)
     line_to_verse: dict[int, tuple[int | None, int | None, int, list[int]]] = {}
     for ch, vs, indices in verses:
@@ -402,8 +460,41 @@ def scan_file(path: Path) -> list[dict]:
         next_line = lines[next_idx]
         next_line_no = next_idx + 1
 
-        # --- Check if next line starts with את marker ---
+        # --- Check if next line starts with את marker (skel-only fast filter) ---
         if not line_starts_with_et_marker(next_line):
+            continue
+
+        # --- Guard A (tag-driven): suppress FP where skel `את` is actually
+        # the 2fs pronoun אַתְּ (tag Pp2fs), not the DO marker אֵת (tag To).
+        # 2026-05-04 FP class: Gen 24:23, 1Kgs 2:13.
+        if chapter_morph is not None and verse is not None:
+            ortho_tags = chapter_morph.get(verse)
+            if ortho_tags is not None:
+                # Align this verse's content lines to its token-tag sequence,
+                # then look up the FIRST token of next_line.
+                verse_content_lines = [
+                    lines[idx] for idx in verse_indices if not is_skippable(lines[idx])
+                ]
+                aligned = MA.align_verse_tokens_to_tags(verse_content_lines, ortho_tags)
+                if aligned:
+                    # Find next_line's index within the verse's content-line sequence.
+                    next_pos_in_verse = next(
+                        (k for k, idx in enumerate(verse_indices)
+                         if idx == next_idx and not is_skippable(lines[idx])),
+                        None,
+                    )
+                    if next_pos_in_verse is not None and next_pos_in_verse < len(aligned):
+                        first_tok_tags = aligned[next_pos_in_verse][0] if aligned[next_pos_in_verse] else None
+                        is_do = first_token_is_do_marker_tag_aware(first_tok_tags)
+                        if is_do is False:
+                            # Tag confirms it's a pronoun, not DO marker. Suppress.
+                            continue
+
+        # --- Guard B (H5b speech-frame precedence): suppress when line N's
+        # last verb is a wayyiqtol speech verb. Speech intro + content split
+        # is licensed by H5b discipline; verb-object bond rule does not apply.
+        # 2026-05-04 FP class: 11 instances (Gen 45:27, Exo 4:30, etc.).
+        if line_n_ends_with_speech_verb(line):
             continue
 
         # --- Guard: poetic register ---

@@ -123,19 +123,10 @@ def strip_points(token: str) -> str:
 LEEMOR_SKELETON = "לאמר"
 
 # Bare speech verbs that may introduce direct speech without לֵאמֹר.
-# Consonant skeletons (stripped): ויאמר ויאמרו ויאמרי וידבר
-BARE_SPEECH_VERB_SKELETONS = {
-    "ויאמר",    # wayyiqtol qal 3ms — and he said
-    "ויאמרו",   # wayyiqtol qal 3mp — and they said
-    "וידבר",    # wayyiqtol piel 3ms — and he spoke
-    "וידברו",   # wayyiqtol piel 3mp — and they spoke (audit 2026-05-01: missing)
-    "ותאמר",    # wayyiqtol qal 3fs — and she said
-    "ותאמרו",   # wayyiqtol qal 2/3 fp — and you/they (f) said (missing)
-    "ותדבר",    # wayyiqtol piel 3fs — and she spoke (missing)
-    "ויען",     # wayyiqtol qal 3ms — and he answered
-    "ותען",     # wayyiqtol qal 3fs — and she answered (missing)
-    "ויוסף",    # wayyiqtol hiphil 3ms — and he added/continued (idiom: ויוסף לאמר)
-}
+# Consonant skeletons (stripped). Centralised in _shared/speech_verbs.py
+# so multiple validators (this one + validate_verb_object_bond H5b guard)
+# share the same set without drift.
+from _shared.speech_verbs import BARE_SPEECH_VERB_SKELETONS  # noqa: E402
 
 # Prophetic formula line — these get their OWN line regardless of length.
 # Consonant skeletons: כה אמר יהוה, נאם יהוה
