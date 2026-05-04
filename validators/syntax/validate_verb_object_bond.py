@@ -3,32 +3,31 @@
 """
 Validate Layer 1 + Canon M2 — Verb-Object Clause-Nucleus Bond.
 
-Direct-object marker אֵת stranded from its governing verb across line boundaries.
+A finite verb and its direct object (frame-arg A1) form an indivisible
+clause nucleus; they cannot be split across editorial sense-lines.
 
-From Layer 1 (data/syntax-reference/hebrew-break-legality.md):
-  "Direct-object marker אֵת stranded from object" — REQUIRED-MERGE.
-  A finite verb and its direct object (marked with את) form an indivisible
-  clause nucleus; they cannot be split across lines.
+Detection (IR-driven, post-2026-05-05 Macula pivot):
+  For each finite verb in a verse, check whether any of its frame-arg A1
+  tokens land on the NEXT editorial sense-line. A1 references come from
+  the Macula Hebrew lowfat XML constituent tree (validators/_shared/
+  macula_constituents.py). This replaces the prior `את`-skeleton-trigger
+  + tag-driven discriminator approach: frame-args resolution disambiguates
+  אֵת (DO marker) from אַתְּ (2fs pronoun) automatically — a verb's A1 is
+  what the constituent parser identified as its object, period.
 
-From Canon M2 (private/01-method/colometry-canon.md):
-  "A finite verb and its direct object (or obligatory complement) on short
-  phrases stay on one line, even under split-trigger pressure. The clause
-  nucleus is the minimal atomic predication and cannot be fragmented."
-
-Detection signature:
-  A line ending with a finite-verb skeleton (qatal / yiqtol / wayyiqtol /
-  imperative / cohortative pattern) where the next non-skippable within-verse
-  line begins with the direct-object marker אֵת (consonant skeleton: את,
-  with or without maqqef-suffix).
+  NB: A1 may resolve to a clause head (role="v") when the verb's object
+  is a content-clause (כִּי / אֲשֶׁר / inf-construct). Those are licensed
+  splits per H5b/H10 colometric discipline; the clausal-A1 license-guard
+  suppresses them.
 
 Severity:
-  - STRONG-MERGE-CANDIDATE — finite verb + את on next line, no intervening
-    guards. This is Category A per canon §2 (mechanical-rule authority).
-  - REVIEW-REQUIRED — guards fire (e.g., paragraph break, register change).
+  - STRONG-MERGE-CANDIDATE — finite verb + nominal A1 on next line,
+    prose register, no intervening guards. Category A per canon §2.
+  - REVIEW-REQUIRED — poetic register (Sifrei Emet).
 
 Architectural constraint:
-  NO te'amim glyphs (U+0591-U+05AF) in any trigger predicate. Sof-pasuq
-  usage is permitted for verse-scoping only.
+  No te'amim glyph triggers anywhere. The IR exposes morph + role +
+  frame semantics, none of which are accent-derived.
 
 Output format:
     [MALFORMED]  file:line_number  rule  brief description
@@ -58,8 +57,27 @@ V2_DIR = REPO_ROOT / "data" / "text-files" / "v2" / "he"
 # Make _shared importable
 sys.path.insert(0, str(REPO_ROOT / "validators"))
 from _shared.poetic_register import is_poetic_register  # noqa: E402
-from _shared.speech_verbs import BARE_SPEECH_VERB_SKELETONS  # noqa: E402
-from _shared import morph_alignment as MA  # noqa: E402
+from _shared import macula_constituents as MC  # noqa: E402
+
+# Speech-verb lemmas (from Macula lowfat). The canonical Hebrew speech-event
+# verbs whose wayyiqtol forms license H5b speech-intro / quoted-content splits.
+# Replaces the prior orthographic BARE_SPEECH_VERB_SKELETONS list with a
+# lemma-based check against IR Token.lemma — robust to spelling variants.
+SPEECH_VERB_LEMMAS = {
+    "אָמַר", "דָּבַר", "קָרָא", "עָנָה", "צִוָּה",
+    "סִפֵּר", "נָגַד", "שָׁאַל", "צָעַק", "זָעַק",
+}
+
+# Clause-introducing complementizers — when an A1 token sits inside a
+# content-clause beginning with one of these, the cross-line break is
+# H5b/H10-licensed (clausal A1, not stranded NP-A1). Lemma-based.
+CONTENT_CLAUSE_COMPLEMENTIZERS = {
+    "כִּי",   # כִּי — that / because
+    "אֲשֶׁר",  # אֲשֶׁר — that / which
+    "אִם",    # אִם — if / whether
+    "פֶּן",   # פֶּן — lest
+    "ל",      # לְ + infinitive construct (purpose/complement)
+}
 
 # ---------------------------------------------------------------------------
 # Hebrew Unicode constants
@@ -130,7 +148,7 @@ def chapter_from_path(path: Path) -> int | None:
 
 
 # ---------------------------------------------------------------------------
-# Token helpers
+# Token helpers (line-level — for sense-line text manipulation only)
 # ---------------------------------------------------------------------------
 
 def content_tokens(line: str) -> list[str]:
@@ -146,215 +164,92 @@ def content_tokens(line: str) -> list[str]:
     return out
 
 
-def first_content_token(line: str) -> str | None:
-    toks = content_tokens(line)
-    return toks[0] if toks else None
-
-
-def last_content_token(line: str) -> str | None:
-    toks = content_tokens(line)
-    return toks[-1] if toks else None
-
-
 # ---------------------------------------------------------------------------
-# Finite-verb skeleton detection (conservative bias)
+# IR-driven guards
 # ---------------------------------------------------------------------------
 
-# Strong wayyiqtol prefix patterns (consonants only after stripping niqqud/te'amim)
-WAYYIQTOL_PREFIXES = ("וי", "ות", "ונ", "וא")
+def verb_is_speech_verb(verb: "MC.Token") -> bool:
+    """Guard B (H5b speech-frame): suppress when the verb under inspection
+    IS itself a speech-event verb. Its 'A1' is the entire quoted content,
+    which is licensed to span multiple sense-lines per H5b discipline.
 
-# Common qatal endings
-QATAL_SUFFIXES = (
-    "תי",   # 1cs perfect
-    "ת",    # 2ms
-    "נו",   # 1cp
-    "תם",   # 2mp
-    "תן",   # 2fp
-    "ו",    # 3cp
-)
+    Note: this is a per-verb guard, not per-line. Other (non-speech) finite
+    verbs on the same line — e.g., the inner verbs of the quoted content —
+    are still subject to verb-object-bond checking.
 
-# High-frequency finite-verb skeletons (consonant skeleton post-strip).
-# We bias toward over-detecting verbs so the "has finite verb" guard
-# fires conservatively.
-KNOWN_FINITE_VERB_SKELETONS = {
-    # Common qatal 3ms / 3fs / 3cp forms
-    "אמר", "אמרה", "אמרו", "אמרתי", "אמרת", "אמרנו", "אמרתם",
-    "ראה", "ראתה", "ראו", "ראיתי", "ראית", "ראינו",
-    "שמע", "שמעה", "שמעו", "שמעתי", "שמענו",
-    "ידע", "ידעה", "ידעו", "ידעתי", "ידעת", "ידענו",
-    "ברא", "בראה", "בראו",                       # ברא — created (Gen 1:1)
-    "ברך", "ברכה", "ברכו", "ברכתי", "ברכת",
-    "הלך", "הלכה", "הלכו", "הלכתי", "הלכנו",
-    "נתן", "נתנה", "נתנו", "נתתי", "נתת",
-    "עשה", "עשתה", "עשו", "עשיתי", "עשית", "עשינו",
-    "היה", "היתה", "היו", "הייתי", "היית", "היינו",
-    "בא", "באה", "באו", "באתי", "באת", "באנו",
-    "קם", "קמה", "קמו", "קמתי", "קמנו",
-    "בנה", "בנתה", "בנו", "בניתי",
-    "לקח", "לקחה", "לקחו", "לקחתי",
-    "כתב", "כתבה", "כתבו", "כתבתי",
-    "כרת", "כרתה", "כרתו",
-    "מצא", "מצאה", "מצאו", "מצאתי",
-    "נשא", "נשאה", "נשאו", "נשאתי",
-    "נפל", "נפלה", "נפלו", "נפלתי",
-    "ישב", "ישבה", "ישבו", "ישבתי",
-    "עבר", "עברה", "עברו",
-    "אכל", "אכלה", "אכלו", "אכלתי",
-    "שתה", "שתתה", "שתו",
-    "מת", "מתה", "מתו", "מתי",
-    "חיה", "חיתה", "חיו",
-    "סר", "סרה", "סרו",
-    "עלה", "עלתה", "עלו", "עליתי",
-    "ירד", "ירדה", "ירדו",
-    "שב", "שבה", "שבו", "שבתי",
-    "הכה", "הכתה", "הכו",
-    "הביא", "הביאה", "הביאו",
-    "הוציא", "הוציאה", "הוציאו",
-    "הגיד", "הגידה", "הגידו",
-    "הציל", "הצילה", "הצילו",
-    "צוה", "צותה", "צוו",
-    "דבר", "דברה", "דברו",
-    "פנה", "פנתה", "פנו",
-    "נסע", "נסעה", "נסעו",
-    # Common yiqtol stems
-    "יאמר", "תאמר", "יאמרו", "תאמרו", "נאמר",
-    "ישמע", "תשמע", "ישמעו",
-    "יראה", "תראה", "יראו",
-    "יבא", "תבא", "יבאו", "יקם",
-    "יעשה", "תעשה", "יעשו",
-    "ילך", "תלך", "ילכו",
-    "יתן", "תתן", "יתנו", "אתן",
-    "יקח", "תקח", "יקחו",
-    "ישב", "תשב", "ישבו",
-    "ידע", "תדע", "ידעו",
-    "יזכר", "תזכר", "יזכרו",
-    # Imperatives
-    "שמעו", "ראו", "לכו", "קומו", "עשו",
-    "לך", "קום", "בא", "קח", "תן",
-}
-
-
-def looks_like_finite_verb(bare: str) -> bool:
-    """Heuristic: does this bare consonant skeleton look like a finite verb?
-
-    Conservative bias: we'd rather over-detect finite verbs (causing the
-    no-merge guard to fire and the finding to be skipped) than under-detect
-    them (emit a finding when there's no actual verb).
+    NB: The clausal-A1 guard ALREADY catches most speech-verb cases (a
+    speech verb's A1 is the inner clause head, role='v'). This guard is
+    a backstop for speech verbs whose A1 is encoded as a content NP rather
+    than as a verb-headed clause.
     """
-    if not bare:
+    return verb.is_finite_verb and verb.lemma in SPEECH_VERB_LEMMAS
+
+
+def a1_is_clausal(verb: "MC.Token", a1_tokens: list["MC.Token"]) -> bool:
+    """Clausal-A1 license-guard: A1 is a clausal complement (content-clause
+    headed by a complementizer, or A1 IS a clause-head verb), not a stranded
+    NP-A1 — the split is H5b/H10-licensed.
+
+    A complementizer between the verb and A1 means A1 is the content-clause
+    served by that complementizer. A complementizer ALSO containing the verb
+    (i.e., verb is INSIDE the complementizer-clause) does not license A1 —
+    that's just the inner clause's normal verb-object bond.
+    """
+    for a1 in a1_tokens:
+        # Case A: A1 IS a verb head — clause-as-object
+        if a1.role == "v":
+            return True
+        # Case B: an enclosing complementizer-clause separates verb and A1
+        cur = a1.parent_constituent
+        while cur is not None:
+            if cur.is_clause and cur.tokens:
+                first_lemma = cur.tokens[0].lemma
+                if first_lemma in CONTENT_CLAUSE_COMPLEMENTIZERS:
+                    cl_token_ids = {t.xml_id for t in cur.tokens}
+                    if verb.xml_id not in cl_token_ids:
+                        return True
+                    # Verb is inside; this complementizer doesn't license A1.
+                    # (Don't break — a higher ancestor might still license it.)
+            cur = cur.parent
+    return False
+
+
+def line_opens_with_coordinated_object(n_plus_1_tokens: list["MC.Token"]) -> bool:
+    """Coordinated-object license-guard.
+
+    Hebrew colometry routinely splits multi-object verb constructions onto
+    successive sense-lines, with each subsequent object opening with וְאֵת
+    (waw + DO marker) or וְ + bare object. This is canonical editorial
+    practice, NOT a stranded-A1 violation.
+
+    Detection: line N+1 begins with conjunction ו (lemma 'ו' or 'וְ')
+    immediately followed by an את DO marker (lemma 'אֵת', pos 'particle').
+    Or: line N+1 begins with conjunction ו immediately followed by a bare
+    object token (role='o' or NP-head with implicit DO).
+    """
+    if not n_plus_1_tokens:
         return False
-
-    # Direct skeleton match
-    if bare in KNOWN_FINITE_VERB_SKELETONS:
-        return True
-
-    # Wayyiqtol prefix (וי, ות, וא, ונ) — always finite
-    if bare.startswith(WAYYIQTOL_PREFIXES):
-        if len(bare) >= 4 and bare not in ("ויהוה",):
-            return True
-
-    # Maqqef-internal: check segments
-    if MAQQEF in bare:
-        for part in bare.split(MAQQEF):
-            if not part:
-                continue
-            if part in KNOWN_FINITE_VERB_SKELETONS:
-                return True
-            if part.startswith(WAYYIQTOL_PREFIXES) and len(part) >= 4:
-                return True
-
-    # Qatal-suffix sniff
-    for suf in ("תי", "תם", "תן", "נו"):
-        if bare.endswith(suf) and len(bare) >= 4:
-            return True
-
-    return False
-
-
-def line_contains_finite_verb(line: str) -> bool:
-    """True if ANY content token on `line` looks like a finite verb.
-
-    Most Hebrew verbs come near the start of the clause (particularly in wayyiqtol
-    and yiqtol forms). We check all tokens to be conservative — better to find
-    a verb and trigger the merge than miss one and produce false findings.
-    """
-    for tok in content_tokens(line):
-        bare = strip_points(tok).rstrip(SOF_PASUQ)
-        if looks_like_finite_verb(bare):
-            return True
-    return False
-
-
-def line_starts_with_et_marker(line: str) -> bool:
-    """True if the first content token is the direct-object marker אֵת.
-
-    Direct-object marker consonant skeleton: את (with or without maqqef-suffix).
-    Skel-only — does NOT distinguish from `אַתְּ` (2fs pronoun, same skeleton).
-    Use `first_token_is_do_marker_tag_aware` when tag alignment is available.
-    """
-    first = first_content_token(line)
-    if first is None:
+    # Skip leading non-content tokens (rare; defensive)
+    i = 0
+    while i < len(n_plus_1_tokens) and not n_plus_1_tokens[i].text.strip():
+        i += 1
+    if i >= len(n_plus_1_tokens):
         return False
-    bare = strip_points(first)
-    # The bare skeleton should start with את (could be את, אתו, אתם, etc. with suffix)
-    # But for our purposes, we check if it IS EXACTLY את (bare marker)
-    # or את + maqqef (את־).
-    if MAQQEF in bare:
-        head = bare.split(MAQQEF, 1)[0]
-        if head == "את":
-            return True
-    if bare == "את":
-        return True
-    return False
-
-
-def first_token_is_do_marker_tag_aware(tag_list: "list[str] | None") -> bool | None:
-    """Tag-aware DO-marker discriminator.
-
-    Returns:
-      True  — first token's tag chain confirms To (DO marker אֵת)
-      False — first token's tag chain confirms Pp (personal pronoun, e.g. אַתְּ)
-      None  — tag info unavailable; caller should fall back to skel match
-
-    Discriminates the 2026-05-04 FP class: skel `את` is shared between
-    אֵת (DO marker, tag To) and אַתְּ (2fs pronoun, tag Pp2fs). Tag-driven
-    check eliminates the FP class entirely when tags are available.
-    """
-    if not tag_list:
-        return None
-    for tag in tag_list:
-        if not tag or tag == "[—]":
+    first = n_plus_1_tokens[i]
+    if not first.is_conjunction:
+        return False
+    # Look for an את-marker or a clear object NP head as the next non-empty token
+    for t in n_plus_1_tokens[i + 1:]:
+        if not t.text.strip():
             continue
-        # Strip the lang prefix (H) + check morpheme heads
-        morphemes = tag.split("/")
-        for m in morphemes:
-            stripped = m.lstrip("Hc")
-            if stripped.startswith("To"):
-                return True
-            if stripped.startswith("Pp"):
-                return False
-    return None
-
-
-def line_n_ends_with_speech_verb(line: str) -> bool:
-    """True if any content token in `line` is a wayyiqtol speech verb.
-
-    H5b speech-frame precedence guard: when line N contains a speech-event
-    verb (`וַיֹּאמֶר`, `וַיְדַבֵּר`, etc.), line N+1 starting with אֵת + content-NP
-    is a licensed H5b split (speech intro / quoted content), NOT a verb-
-    object bond violation.
-
-    Closes the 2026-05-04 FP-B class (11 corpus instances: Gen 45:27,
-    Exo 4:30, Num 11:24, Judg 9:36, 1Sam 8:10, 1Sam 10:25, 1Kgs 10:2,
-    2Kgs 20:13, 2Chr 9:1, Isa 39:2, Ezek 3:3 — all `<speech-verb> + ...
-    | אֵת <content>`).
-    """
-    for tok in content_tokens(line):
-        bare = strip_points(tok).rstrip(SOF_PASUQ)
-        # Maqqef-bound: check parts (e.g. וַיֹּאמֶר־לוֹ)
-        for part in bare.split(MAQQEF):
-            if part in BARE_SPEECH_VERB_SKELETONS:
-                return True
+        # Case A: explicit וְאֵת construction
+        if t.lemma == "אֵת" and t.is_particle:
+            return True
+        # Case B: וְ + object-role NP head (object follows directly)
+        if t.role in ("o", "o2"):
+            return True
+        # Stop at the first content token; we only care about the immediate post-conj token
+        break
     return False
 
 
@@ -404,124 +299,117 @@ def is_poetic_context(book: str, chapter: int | None, verse: int | None) -> bool
 # ---------------------------------------------------------------------------
 
 def scan_file(path: Path) -> list[dict]:
-    """Scan one text file for verb-את stranded violations."""
-    violations = []
+    """IR-driven scan for verb-A1 (direct object) stranded across sense-lines.
+
+    For each verse, walk sense-lines pairwise (N → N+1). For each finite verb
+    on line N, check whether any of its frame-arg A1 tokens (per Macula
+    lowfat constituent-tree) appears on line N+1. If so, and no guard fires,
+    emit a violation.
+    """
+    violations: list[dict] = []
     try:
         lines = path.read_text(encoding="utf-8").splitlines()
     except UnicodeDecodeError:
         lines = path.read_text(encoding="utf-8-sig").splitlines()
 
-    book = book_name_from_path(path)
+    book_slug = book_name_from_path(path)
     chapter_from_file = chapter_from_path(path)
     verses = partition_into_verses(lines)
 
-    # Load TAHOT morph alignment (None if morph file absent — Guard A
-    # falls back to skel-only behaviour gracefully).
-    chapter_morph = MA.load_chapter_morph(path)
-
-    # Build a lookup: line_index → (chapter, verse, position_within_verse, verse_line_indices)
-    line_to_verse: dict[int, tuple[int | None, int | None, int, list[int]]] = {}
     for ch, vs, indices in verses:
-        for pos, idx in enumerate(indices):
-            line_to_verse[idx] = (ch, vs, pos, indices)
-
-    for i, line in enumerate(lines):
-        if is_skippable(line):
+        if ch is None or vs is None:
+            continue
+        # Sense-lines in this verse, in source order, dropping skippables
+        sense_indices = [i for i in indices if not is_skippable(lines[i])]
+        if len(sense_indices) < 2:
             continue
 
-        # Determine verse context
-        v_ctx = line_to_verse.get(i)
-        chapter = v_ctx[0] if v_ctx else chapter_from_file
-        verse = v_ctx[1] if v_ctx else None
-        pos_in_verse = v_ctx[2] if v_ctx else 0
-        verse_indices = v_ctx[3] if v_ctx else []
-
-        line_no = i + 1  # 1-based
-
-        # --- Check if this line contains a finite verb ---
-        if not line_contains_finite_verb(line):
+        # Pull lowfat verse tokens
+        try:
+            verse_tokens = MC.get_verse_tokens(book_slug, ch, vs)
+        except (FileNotFoundError, ValueError, KeyError):
+            continue
+        if not verse_tokens:
             continue
 
-        # --- Find next content line in the SAME verse (no cross-verse fire) ---
-        next_idx: int | None = None
-        for j in range(i + 1, len(lines)):
-            if is_skippable(lines[j]):
+        # Greedy-align each sense-line to the verse's tokens
+        line_to_tokens: dict[int, list["MC.Token"]] = {}
+        cursor = 0
+        for idx in sense_indices:
+            matched, cursor = MC.match_sense_line_tokens(verse_tokens, lines[idx], start_idx=cursor)
+            line_to_tokens[idx] = matched
+
+        # Walk pairwise (N, N+1)
+        for k in range(len(sense_indices) - 1):
+            line_n_idx = sense_indices[k]
+            line_n_plus_1_idx = sense_indices[k + 1]
+            line_n = lines[line_n_idx]
+            line_n_plus_1 = lines[line_n_plus_1_idx]
+
+            n_tokens = line_to_tokens.get(line_n_idx, [])
+            n_plus_1_tokens = line_to_tokens.get(line_n_plus_1_idx, [])
+            if not n_tokens or not n_plus_1_tokens:
                 continue
-            # Same verse?
-            n_ctx = line_to_verse.get(j)
-            if v_ctx and n_ctx and (n_ctx[0], n_ctx[1]) != (v_ctx[0], v_ctx[1]):
+
+            n_plus_1_ids = {t.xml_id for t in n_plus_1_tokens}
+
+            # Find finite verbs on line N whose A1 reaches into line N+1
+            for verb in n_tokens:
+                if not verb.is_finite_verb:
+                    continue
+                a1_tokens = verb.frame_args.get("A1") or []
+                if not a1_tokens:
+                    continue
+                stranded = [a1 for a1 in a1_tokens if a1.xml_id in n_plus_1_ids]
+                if not stranded:
+                    continue
+
+                # --- Guard B: H5b speech-frame (per-verb, not per-line) ---
+                if verb_is_speech_verb(verb):
+                    continue
+
+                # --- Guard: clausal-A1 license (כִּי / אֲשֶׁר / inf-construct) ---
+                if a1_is_clausal(verb, stranded):
+                    continue
+
+                # --- Guard: coordinated-object enumeration (וְאֵת / וְ + obj) ---
+                if line_opens_with_coordinated_object(n_plus_1_tokens):
+                    continue
+
+                # --- Severity ---
+                # Post-IR-pivot (2026-05-05): all findings emit REVIEW-REQUIRED.
+                # The IR's frame-args resolution surfaces ~600 candidates the
+                # prior skel-`את`-trigger missed; promotion to STRONG-MERGE-
+                # CANDIDATE awaits editorial triage of the FP rate (suspected
+                # FP classes still uncovered: restrictive-relative-modified
+                # objects, appositive enumeration, head-quantifier separation).
+                # Severity floor matches the prior validator's poetic-register
+                # behavior (the only 5 prior findings were all REVIEW-REQUIRED).
+                severity = "REVIEW-REQUIRED"
+
+                prior_text = line_n.strip()
+                next_text = line_n_plus_1.strip()
+
+                violations.append({
+                    "file": path.name,
+                    "file_path": path,
+                    "file_rel": str(path.relative_to(REPO_ROOT)).replace("\\", "/"),
+                    "line_num": line_n_idx + 1,
+                    "next_line_num": line_n_plus_1_idx + 1,
+                    "next_line": next_text,
+                    "severity": severity,
+                    "book": book_slug,
+                    "chapter": ch,
+                    "verse": vs,
+                    "prior_line": prior_text,
+                    "rule": "L1.5/M2",
+                    "brief": (
+                        f"finite verb {verb.text!r} A1={[a.text for a in stranded]!r} "
+                        f"stranded across sense-lines — {prior_text} // {next_text}"
+                    ),
+                })
+                # One finding per (line_n, line_n_plus_1) pair
                 break
-            next_idx = j
-            break
-
-        if next_idx is None:
-            continue
-
-        next_line = lines[next_idx]
-        next_line_no = next_idx + 1
-
-        # --- Check if next line starts with את marker (skel-only fast filter) ---
-        if not line_starts_with_et_marker(next_line):
-            continue
-
-        # --- Guard A (tag-driven): suppress FP where skel `את` is actually
-        # the 2fs pronoun אַתְּ (tag Pp2fs), not the DO marker אֵת (tag To).
-        # 2026-05-04 FP class: Gen 24:23, 1Kgs 2:13.
-        if chapter_morph is not None and verse is not None:
-            ortho_tags = chapter_morph.get(verse)
-            if ortho_tags is not None:
-                # Align this verse's content lines to its token-tag sequence,
-                # then look up the FIRST token of next_line.
-                verse_content_lines = [
-                    lines[idx] for idx in verse_indices if not is_skippable(lines[idx])
-                ]
-                aligned = MA.align_verse_tokens_to_tags(verse_content_lines, ortho_tags)
-                if aligned:
-                    # Find next_line's index within the verse's content-line sequence.
-                    next_pos_in_verse = next(
-                        (k for k, idx in enumerate(verse_indices)
-                         if idx == next_idx and not is_skippable(lines[idx])),
-                        None,
-                    )
-                    if next_pos_in_verse is not None and next_pos_in_verse < len(aligned):
-                        first_tok_tags = aligned[next_pos_in_verse][0] if aligned[next_pos_in_verse] else None
-                        is_do = first_token_is_do_marker_tag_aware(first_tok_tags)
-                        if is_do is False:
-                            # Tag confirms it's a pronoun, not DO marker. Suppress.
-                            continue
-
-        # --- Guard B (H5b speech-frame precedence): suppress when line N's
-        # last verb is a wayyiqtol speech verb. Speech intro + content split
-        # is licensed by H5b discipline; verb-object bond rule does not apply.
-        # 2026-05-04 FP class: 11 instances (Gen 45:27, Exo 4:30, etc.).
-        if line_n_ends_with_speech_verb(line):
-            continue
-
-        # --- Guard: poetic register ---
-        if chapter is not None and is_poetic_context(book, chapter, verse):
-            severity = "REVIEW-REQUIRED"
-        else:
-            severity = "STRONG-MERGE-CANDIDATE"
-
-        # --- All checks passed; emit finding ---
-        prior_text = line.strip()
-        next_text = next_line.strip()
-
-        violations.append({
-            "file": path.name,
-            "file_path": path,
-            "file_rel": str(path.relative_to(REPO_ROOT)).replace("\\", "/"),
-            "line_num": line_no,
-            "next_line_num": next_line_no,
-            "next_line": next_text,
-            "severity": severity,
-            "book": book,
-            "chapter": chapter,
-            "verse": verse,
-            "prior_line": prior_text,
-            "rule": "L1.5/M2",
-            "brief": f"finite verb + אֵת marker stranded — {prior_text} // {next_text}",
-        })
 
     return violations
 

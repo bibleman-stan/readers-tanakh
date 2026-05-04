@@ -19,10 +19,10 @@
   "validate_maqqef_integrity": 0,
   "validate_oath_formula": 23,
   "validate_parallel_series_uniformity": 5,
-  "validate_participial_speech_frame": 9,
+  "validate_participial_speech_frame": 8,
   "validate_short_orphan_line": 4588,
   "validate_short_verse_fronting": 0,
   "validate_speech_intro_framing": 1056,
-  "validate_verb_object_bond": 5,
+  "validate_verb_object_bond": 686,
   "validate_wayehi_protasis": 357
 }
