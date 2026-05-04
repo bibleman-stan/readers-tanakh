@@ -17,6 +17,12 @@ __pycache__/
 Python/
 python_install_*.log
 
+# Captured cascade-run output (one-off redirects from apply_specs / apply_validators
+# / refresh_book runs; not editorial source-of-truth)
+refresh_log*.txt
+apply_*_log*.txt
+cascade_log*.txt
+
 # OS files
 .DS_Store
 Thumbs.db
