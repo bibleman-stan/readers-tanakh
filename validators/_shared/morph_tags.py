@@ -248,6 +248,46 @@ def is_wayyiqtol(tag: str) -> bool:
     return verb[2] == "w"
 
 
+def is_weqatal(tag: str) -> bool:
+    """True if tag is waw-conjunction + perfect-aspect verb (weqatal).
+
+    Weqatal = waw-consecutive perfect. Apodosis-of-protasis or sequential
+    modal/future continuation. Signals a NEW clause boundary (like wayyiqtol),
+    so callers using next-line tests to detect predicate-of-pronoun vs.
+    new-clause should treat weqatal next-line as new-clause.
+
+    Detected by: first morpheme is `c` (waw-conjunction; the lang-prefix
+    `H` is stripped by morpheme_chain) AND verb morpheme has aspect letter
+    'p' (perfect) or 'q' (weqatal-explicit).
+
+    Both `p` and `q` are accepted: TAHOT inconsistently tags waw-perfect
+    forms as either Vqp (plain perfect with conj prefix) or Vqq (weqatal-
+    explicit). Functionally indistinguishable in narrative discourse.
+
+    >>> is_weqatal('Hc/Vqq3ms')      # qal weqatal explicit — yes
+    True
+    >>> is_weqatal('Hc/Vqp3ms')      # qal perfect with vav — yes (functionally weqatal)
+    True
+    >>> is_weqatal('Hc/VNq3fs')      # niphal weqatal — yes
+    True
+    >>> is_weqatal('Hc/VHq3ms')      # hiphil weqatal — yes
+    True
+    >>> is_weqatal('HVqp3ms')        # qal perfect WITHOUT vav — no
+    False
+    >>> is_weqatal('Hc/Vqw3ms')      # wayyiqtol — no (different aspect)
+    False
+    >>> is_weqatal('Hc/Vqi3mp')      # waw + yiqtol — no
+    False
+    """
+    morphemes = morpheme_chain(tag)
+    if not morphemes or morphemes[0] != "c":
+        return False
+    verb = _last_verb_morpheme(tag)
+    if not verb or len(verb) < 3:
+        return False
+    return verb[2] in ("p", "q")
+
+
 def is_construct_state(tag: str) -> bool:
     """True if tag head is a noun in CONSTRUCT state (Nc*c, Np*c).
 

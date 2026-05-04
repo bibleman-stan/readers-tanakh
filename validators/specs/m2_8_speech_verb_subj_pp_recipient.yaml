@@ -64,6 +64,8 @@ guards:
   - next_line_is_vav_coord_np       # block re-absorbing post-S2-split coord-NP
   - next_line_is_wayyiqtol          # block re-absorbing post-S3/S4-split
                                      # wayyiqtol-headed lines
+  - next_line_is_purpose_infinitive # defensive block: speech verbs rarely precede
+                                     # purpose-INF, but guard against post-S7 re-merge
 
 annotation_template: "Speech verb + obligatory recipient PP merge ({pwc} prosodic words)"
 suggested_action: MERGE

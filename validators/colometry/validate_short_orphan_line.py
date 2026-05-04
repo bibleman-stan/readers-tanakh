@@ -408,6 +408,7 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
                     # Also extract verb pgn (person-gender-number) for agreement.
                     next_first_is_verb = False
                     next_first_is_wayyiqtol = False
+                    next_first_is_weqatal = False
                     verb_pgn: str | None = None
                     if next_tag_list:
                         from _shared import morph_tags as MT
@@ -424,7 +425,13 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
                                             break
                                 if MT.is_wayyiqtol(tag):
                                     next_first_is_wayyiqtol = True
-                                if next_first_is_verb and next_first_is_wayyiqtol:
+                                if MT.is_weqatal(tag):
+                                    next_first_is_weqatal = True
+                                if (
+                                    next_first_is_verb
+                                    and next_first_is_wayyiqtol
+                                    and next_first_is_weqatal
+                                ):
                                     break
                     # Extract pronoun pgn from tag (Pp3mp / Pp1cs / etc.)
                     pron_pgn: str | None = None
@@ -442,6 +449,15 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
                     # (Gen 20:2 הוא | וַיִּשְׁלַח, Gen 38:16 הִוא | וַתֹּאמֶר etc.).
                     # The pronoun is then a predicate completing a prior verbless
                     # clause, not the subject of the wayyiqtol.
+                    # FP guard: weqatal on next line is the apodosis of a protasis
+                    # whose predicate is the verbless equation ending in this
+                    # pronoun. Catches Lev 13:3 / 13:49 / Num 5:28 / 1Kgs 8:41 etc.
+                    # (`נֶגַע צָרַעַת | הוּא וְרָאָהוּ` — pronoun closes verbless
+                    # equation "it is a leprous mark"; weqatal `וְרָאָהוּ` opens
+                    # apodosis "and the priest shall examine him"). Per
+                    # 2026-05-04 borderline-audit verdict (4/6 FPs all share
+                    # this pattern; Ezek 27:10/44:29 valid merges have no waw
+                    # on next-line verb).
                     # FP guard: pronoun and verb must agree on person/number/gender.
                     # Catches verbless-equation predicates + new-imperative cases:
                     # 1 Kings 18:8 אָנִי | לֵךְ (1cs vs 2ms), 2 Kings 1:12
@@ -457,7 +473,12 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
                             verb_pgn[0] == pron_pgn[0]      # person matches
                             and verb_pgn[2] == pron_pgn[2]  # number matches
                         )
-                    if next_first_is_verb and not next_first_is_wayyiqtol and pgn_match:
+                    if (
+                        next_first_is_verb
+                        and not next_first_is_wayyiqtol
+                        and not next_first_is_weqatal
+                        and pgn_match
+                    ):
                         line_no = i + 1
                         findings.append({
                             "file_path": path,

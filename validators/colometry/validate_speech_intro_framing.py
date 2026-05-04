@@ -399,6 +399,16 @@ H5C_DIVINE_NAME_SKELETONS = frozenset({
     "צבאות",
 })
 
+# Interrogative pronouns/adverbs. When any post-verb token in an H5c-
+# candidate line is one of these, the divine name is the topic of a
+# rhetorical question inside QUOTED CONTENT, not a trailing speaker.
+# Closes Jer 2:8 class FP: הַכֹּהֲנִים לֹא אָמְרוּ אַיֵּה יְהוָה
+# ("the priests did not say, 'where is YHWH?'") — no trailing attr.
+H5C_INTERROGATIVE_BARE_SKELS = frozenset({
+    "אי", "איה", "אנה", "היכן",
+    "מה", "מי", "למה", "מתי", "איך", "איככה",
+})
+
 
 def compute_h5c_trailing_attribution_split(
     tokens: list[str],
@@ -448,6 +458,51 @@ def compute_h5c_trailing_attribution_split(
         # verb, it's a leading prophetic frame, not a trailing attribution.
         if verb_idx >= 1 and pre_verb[-1] == "כה":
             return 0, ""
+
+        # FP guard: interrogative particle in post-verb position. When any
+        # post-verb token is an interrogative, the divine name is the topic
+        # of a quoted rhetorical question, not a trailing speaker.
+        # (Jer 2:8 הַכֹּהֲנִים לֹא אָמְרוּ אַיֵּה יְהוָה class.)
+        post_bare_check = bare_tokens[verb_idx + 1:]
+        if any(
+            pb.rstrip("׃") in H5C_INTERROGATIVE_BARE_SKELS for pb in post_bare_check
+        ):
+            return 0, ""
+
+        # FP guard: pre-verb contains an infinitive-absolute. Inf-abs
+        # is a stylistic emphasis device that almost always co-occurs with
+        # speech context — its presence pre-verb signals the line is itself
+        # a speech-event description, making the trailing verb+subject the
+        # CONTENT of the speech, not a trailing attribution.
+        # (Jer 23:17 אֹמְרִים אָמוֹר ... דִּבֶּר יְהוָה class.)
+        # Tag-driven: V<stem>a aspect (a = infinitive absolute).
+        if line_token_tags:
+            inf_abs_in_pre_verb = False
+            for k in range(verb_idx):
+                if k >= len(line_token_tags):
+                    break
+                ktags = line_token_tags[k]
+                if not ktags:
+                    continue
+                for tag in ktags:
+                    if not tag or tag == "[—]":
+                        continue
+                    for morpheme in tag.split("/"):
+                        m = morpheme.lstrip("Hc")
+                        # Inf-abs morpheme: V<stem><aspect=a><...>
+                        if (
+                            len(m) >= 4
+                            and m[0] == "V"
+                            and m[2] == "a"
+                        ):
+                            inf_abs_in_pre_verb = True
+                            break
+                    if inf_abs_in_pre_verb:
+                        break
+                if inf_abs_in_pre_verb:
+                    break
+            if inf_abs_in_pre_verb:
+                return 0, ""
 
         # FP guard: recipient PP follows the verb (אל־X / ל־X) — narrative
         # leading-frame pattern (Josh 5:2 `בעת ההיא אמר יהוה אל־יהושע`).

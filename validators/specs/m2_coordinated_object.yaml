@@ -20,6 +20,7 @@ guards:
   - next_line_is_vav_coord_pp     # block re-absorbing post-S1-split coord-PP enumeration members
   - next_line_is_vav_coord_np     # block re-absorbing post-S2-split coord-NP enumeration members
   - next_line_is_wayyiqtol     # block re-absorbing post-S3-split wayyiqtol-headed lines
+  - combined_lines_s6_eligible # block re-absorbing post-S6-split waet-coord-acc-NP enumeration members
 
 annotation_template: "Coordinated DO split: את-NP // וְאֵת-NP (combined {pwc} prosodic words)"
 suggested_action: MERGE

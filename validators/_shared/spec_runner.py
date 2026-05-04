@@ -525,6 +525,55 @@ def _g_next_vav_coord_do_marker(l_n, l_n1, ctx):
     return M.skel(first).startswith("ואת")
 
 
+@_register_guard("combined_lines_s6_eligible")
+def _g_combined_s6_eligible(l_n, l_n1, ctx):
+    """Fire (block) when combining line N + line N+1 yields an S6-eligible
+    waet-coord-acc-NP pair (each member ≥3 prosodic tokens with modifier).
+
+    Prevents `m2_coordinated_object` from re-merging post-S6 splits. Bare
+    compound DOs (single-token-per-member, אֶת־X וְאֶת־Y) are NOT blocked
+    because `coordinated_acc_np_split_positions` returns [] for them — the
+    helper's own 3-token-floor IS the discriminator. The guard reuses S6's
+    own design invariant; zero FPs verified at Num 7:6 (compound DO),
+    Num 7:7 (post-S6 oscillation site), and Gen 1:16 (extended modifier).
+    """
+    combined = l_n.rstrip() + " " + l_n1.lstrip()
+    return bool(M.coordinated_acc_np_split_positions(combined))
+
+
+@_register_guard("next_line_is_purpose_infinitive")
+def _g_next_purpose_infinitive(l_n, l_n1, ctx):
+    """Fire (block) if line N+1's first content token is a לְ + infinitive-
+    construct (R + V?c morpheme pattern).
+
+    Prevents M2 merge specs (m2_6, m2_8) from re-absorbing post-S7 splits.
+    Tag-driven: requires both R (preposition) and V?c (any stem in construct
+    aspect — c at index 2 of the verb morpheme). Distinguishes לְ + inf-c
+    from plain locus PPs like לְמֶלֶךְ (Ncmsc — no V) or לְעֹבֵד (Vqr —
+    participle, not construct). Zero FPs expected.
+
+    Distinct from `le_infinitive_on_next_line` (skel-only, ל + 3-letter
+    pattern, conservative misses). This is the tag-driven precise version.
+    """
+    n1_tag_lists = ctx.get("line_n1_token_tags") or []
+    if not n1_tag_lists or not n1_tag_lists[0]:
+        return False
+    for tag in n1_tag_lists[0]:
+        if not tag or tag == "[—]":
+            continue
+        morphemes = tag.split("/")
+        has_R = any(m.lstrip("Hc").startswith("R") for m in morphemes)
+        has_inf_c = any(
+            len(m.lstrip("Hc")) >= 4
+            and m.lstrip("Hc")[0] == "V"
+            and m.lstrip("Hc")[2] == "c"
+            for m in morphemes
+        )
+        if has_R and has_inf_c:
+            return True
+    return False
+
+
 @_register_guard("next_line_is_wayyiqtol")
 def _g_next_wayyiqtol(l_n, l_n1, ctx):
     """Fire (block emission) if line N+1's first token is a wayyiqtol.

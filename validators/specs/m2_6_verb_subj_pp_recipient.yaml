@@ -37,6 +37,7 @@ guards:
                                      # split out of an enumeration (oscillation)
   - next_line_is_vav_coord_np     # block re-absorbing post-S2-split coord-NP enumeration members
   - next_line_is_wayyiqtol       # block re-absorbing post-S3-split wayyiqtol-headed lines
+  - next_line_is_purpose_infinitive # block re-absorbing post-S7-split purpose-infinitive lines
 
 annotation_template: "Verb (+subj) + PP-recipient merge ({pwc} prosodic words)"
 suggested_action: MERGE
