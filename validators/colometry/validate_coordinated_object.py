@@ -1,36 +1,67 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Validate coordinated direct-object splits.
+Validate coordinated direct-object splits (IR-driven).
 
-Detects coordinated-DO splits where a compound direct object spans two cola
-under one shared verb.
+Detects coordinated-DO splits where a single finite verb governs multiple
+direct-object tokens (Macula frame-arg A1) that themselves span multiple
+editorial sense-lines.
 
-Detection signature:
-A v2/he line ending in `אֵת` + NP (direct-object phrase) AND the next
-within-verse line beginning with `וְאֵת` + NP (conjunction + DO + NP).
-This signature catches "X // and-Y" coordinated-object splits where both
-halves serve as compound DO of a single verb on a prior line.
+This is the INVERSE of `validate_verb_object_bond`'s coordinated-object
+license-guard. verb_object_bond SUPPRESSES verb-A1-stranding findings when
+the next sense-line opens with a coordinated וְאֵת enumeration (because
+the A1 was never on line N to begin with — it's a coordinate continuation).
+This validator surfaces those same coordinated-object enumerations and
+EVALUATES whether they are colometrically appropriate (combined-weight
+guard, heavy-NP guard, poetic-register guard).
 
-Combined ≤8 prosodic words. Both lines should be NP-only (no finite verbs).
+Detection (IR-driven, post-2026-05-06 Macula pivot):
+  For each finite verb V in a verse:
+    A1 = V.frame_args["A1"]                                   (Macula lowfat)
+    Map each A1 token to its editorial sense-line index.
+    Distinct-line A1 tokens with >=2 distinct line indices ->
+        coordinated-object split. Emit a finding for the first
+        adjacent line-pair (N, N+1) that hosts split A1 tokens.
 
-Severity:
-  - STRONG-MERGE-CANDIDATE — clean coordinated-DO pattern, no guards fire
-  - REVIEW-REQUIRED — guards: poetic register (Sifrei Emet / embedded-poetry / acrostic),
-                      parallel-list scope (H17), heavy NP on either side
-                      (relative clause, ≥2 appositives), combined >8 prosodic words
+  Frame-args resolution disambiguates אֵת (DO marker) from אַתְּ (2fs pronoun)
+  automatically -- the IR knows what the constituent parser identified as
+  the verb's object. No skel-trigger; no closed-list verb skeletons; no
+  orthographic heuristics.
+
+Severity (post-IR-pivot 2026-05-06):
+  All findings emit REVIEW-REQUIRED. The IR's frame-args resolution surfaces
+  ~600 candidates the prior orthographic skel-trigger missed (20 -> ~600);
+  the IR catches multi-token A1 enumerations the אֵת ... // וְאֵת ... pattern
+  could not see (e.g., asyndetic coordination, ו-prefixed objects without
+  אֵת, multi-clausal A1 spans). Promotion to STRONG-MERGE-CANDIDATE awaits
+  editorial triage of the FP rate. Severity floor mirrors verb_object_bond
+  (commit c6bd30576) and construct_chain (5bc7d88a8) IR-port pattern.
+
+  Guard reasons (poetic-register / combined > 8 / heavy-NP) are recorded in
+  the `guard_reason` field and remain informative for downstream triage even
+  though all severities collapse to REVIEW-REQUIRED at the floor.
 
 References:
   - Canon §5 Rule M2 (verb-object clause-nucleus bond)
-  - Canon §1 Structural Justification 1 (formally-marked parallel series; compound
-    list break signals carve-out for bare "and [noun]" items)
+  - Canon §1 Structural Justification 1 (compound list break carve-out)
   - Joüon-Muraoka §137 (direct object and את)
+  - Reference IR ports: verb_object_bond (c6bd30576),
+    construct_chain (5bc7d88a8), participial_speech_frame (07974d52b)
 
-ARCHITECTURAL CONSTRAINT — NO TE'AMIM IN PREDICATES:
-All trigger logic uses Hebrew morpho-syntactic patterns ONLY. The te'amim
-Unicode range (U+0591–U+05AF) does NOT appear in any predicate that decides
-whether to fire a finding. Te'amim MAY appear in finding annotations as
-informational defensibility-capture (Rule H8) — the trigger must remain syntactic.
+Architectural constraint:
+  No te'amim glyph triggers anywhere. The IR exposes morph + role + frame
+  semantics — none accent-derived.
+
+Legacy helpers (line_ends_with_et_np, line_starts_with_ve_et_np,
+line_has_heavy_np, looks_like_finite_verb, KNOWN_FINITE_VERB_SKELETONS,
+WAYYIQTOL_PREFIXES, QATAL_SUFFIXES) remain in this file as DEAD code from
+the pre-pivot orthographic-trigger implementation; scan_file no longer
+calls them. They are retained against the (low-but-nonzero) probability
+that the IR-port misses a class the orthographic trigger uniquely caught
+(8/20 of the prior 20 baseline findings transfer cleanly via lemma-A1;
+the 12 misses are typically passive verbs and imperatives whose A1 is
+encoded as a separate clause rather than a frame-arg list — see commit
+log for details).
 
 Exit code: 0 if zero findings, 1 if findings, 2 on setup error.
 
@@ -57,6 +88,7 @@ V2_DIR = REPO_ROOT / "data" / "text-files" / "v2" / "he"
 # Make _shared importable when this script is run as __main__.
 sys.path.insert(0, str(REPO_ROOT / "validators"))
 from _shared.poetic_register import is_poetic_register  # noqa: E402
+from _shared import macula_constituents as MC  # noqa: E402
 
 # ---------------------------------------------------------------------------
 # Hebrew Unicode helpers
@@ -362,137 +394,174 @@ def partition_into_verses(lines: list[str]) -> list[tuple[int | None, int | None
 # Per-file scanner
 # ---------------------------------------------------------------------------
 
+def _a1_has_heavy_np_ir(a1_tokens: list) -> bool:
+    """Heavy-NP guard (IR-driven): any A1 token sits inside a relative clause
+    or apposition. Uses the IR's Constituent.is_relative_clause and
+    is_apposition predicates via ancestor walk -- replaces the prior
+    orthographic skel-list heuristic.
+    """
+    for tok in a1_tokens:
+        cur = tok.parent_constituent
+        while cur is not None:
+            if cur.is_relative_clause or cur.is_apposition:
+                return True
+            cur = cur.parent
+    return False
+
+
 def scan_file(path: Path, verbose: bool = False) -> list[dict]:
+    """IR-driven scan for coordinated-DO splits across editorial sense-lines.
+
+    Per verse:
+      1. Pull Macula lowfat verse tokens.
+      2. Greedy-align each editorial sense-line to its slice of verse tokens,
+         building a token_id -> sense_line_index map.
+      3. For each finite verb V in the verse, gather V.frame_args["A1"]. If A1
+         tokens span >=2 distinct sense-lines, locate the FIRST adjacent
+         line-pair (N, N+1) that both host A1 tokens and emit one finding
+         (matches the prior validator's per-pair semantics).
+      4. Apply guards (poetic register, combined > 8 prosodic words, heavy NP).
+
+    Severity floor: ALL findings emit REVIEW-REQUIRED post-IR-pivot. Mirrors
+    verb_object_bond (c6bd30576) and construct_chain (5bc7d88a8) IR-port
+    pattern -- the IR's frame-args resolution surfaces ~30x more candidates
+    than the prior orthographic skel-trigger; promotion to STRONG awaits
+    editorial triage of the FP rate. Guard reasons remain recorded in the
+    `guard_reason` field for downstream triage.
+    """
     findings: list[dict] = []
     try:
         lines = path.read_text(encoding="utf-8").splitlines()
     except UnicodeDecodeError:
         lines = path.read_text(encoding="utf-8-sig").splitlines()
 
-    book = book_name_from_path(path)
-    chapter_from_file = chapter_from_path(path)
+    book_slug = book_name_from_path(path)
     verses = partition_into_verses(lines)
 
-    # Build a lookup: line_index → (chapter, verse, position_within_verse, all verse indices)
-    line_to_verse: dict[int, tuple[int | None, int | None, int, list[int]]] = {}
     for ch, vs, indices in verses:
-        for pos, idx in enumerate(indices):
-            line_to_verse[idx] = (ch, vs, pos, indices)
-
-    for i, line in enumerate(lines):
-        if is_skippable(line):
+        if ch is None or vs is None:
+            continue
+        sense_indices = [i for i in indices if not is_skippable(lines[i])]
+        if len(sense_indices) < 2:
             continue
 
-        # Check if line ends with אֵת + NP
-        if not line_ends_with_et_np(line):
+        try:
+            verse_tokens = MC.get_verse_tokens(book_slug, ch, vs)
+        except (FileNotFoundError, ValueError, KeyError):
+            continue
+        if not verse_tokens:
             continue
 
-        # Determine verse context
-        v_ctx = line_to_verse.get(i)
-        chapter = v_ctx[0] if v_ctx else chapter_from_file
-        verse = v_ctx[1] if v_ctx else None
-        pos_in_verse = v_ctx[2] if v_ctx else 0
-        verse_indices = v_ctx[3] if v_ctx else []
+        # Greedy-align each sense-line to the verse's tokens; build
+        # token_id -> sense_line_idx (index INTO sense_indices).
+        token_to_line: dict[str, int] = {}
+        cursor = 0
+        for line_idx, src_idx in enumerate(sense_indices):
+            matched, cursor = MC.match_sense_line_tokens(
+                verse_tokens, lines[src_idx], start_idx=cursor
+            )
+            for tok in matched:
+                token_to_line[tok.xml_id] = line_idx
 
-        line_no = i + 1  # 1-based
+        emitted_pairs: set[tuple[int, int]] = set()
 
-        # --- Find next content line in the SAME verse (no cross-verse fire) ---
-        next_idx: int | None = None
-        for j in range(i + 1, len(lines)):
-            if is_skippable(lines[j]):
+        for verb in verse_tokens:
+            if not verb.is_finite_verb:
                 continue
-            # Same verse?
-            n_ctx = line_to_verse.get(j)
-            if v_ctx and n_ctx and (n_ctx[0], n_ctx[1]) != (v_ctx[0], v_ctx[1]):
-                break
-            next_idx = j
-            break
+            a1_tokens = verb.frame_args.get("A1") or []
+            if len(a1_tokens) < 2:
+                # Need >=2 A1 tokens for a coordinated-object enumeration
+                continue
 
-        if next_idx is None:
-            continue
+            a1_lines: list[tuple[int, "MC.Token"]] = []
+            for a1 in a1_tokens:
+                li = token_to_line.get(a1.xml_id)
+                if li is not None:
+                    a1_lines.append((li, a1))
 
-        next_line = lines[next_idx]
-        next_line_no = next_idx + 1
+            distinct_lines = {li for li, _ in a1_lines}
+            if len(distinct_lines) < 2:
+                continue
 
-        # Check if next line starts with וְאֵת + NP
-        if not line_starts_with_ve_et_np(next_line):
-            continue
+            # Find FIRST adjacent line-pair (N, N+1) where both lines host
+            # at least one A1 token. Matches the prior validator's per-pair
+            # detection signature (et + NP // waw-et + NP on adjacent lines).
+            line_pair: tuple[int, int] | None = None
+            for k in range(len(sense_indices) - 1):
+                if k in distinct_lines and (k + 1) in distinct_lines:
+                    line_pair = (k, k + 1)
+                    break
+            if line_pair is None:
+                # A1 tokens span non-adjacent lines -- defer to verb_object_bond
+                # / clause_nucleus_split coverage; this validator's contract is
+                # the adjacent-pair coordinated-DO pattern.
+                continue
 
-        # --- GUARD 1: poetic register ---
-        if chapter is not None and is_poetic_register(book, chapter, verse):
-            severity = "REVIEW-REQUIRED"
-            guard_reason = "poetic register (Sifrei Emet / embedded poetry / acrostic)"
-        else:
-            guard_reason = None
+            n_line_idx, n1_line_idx = line_pair
+            n_src_idx = sense_indices[n_line_idx]
+            n1_src_idx = sense_indices[n1_line_idx]
+            if (n_src_idx, n1_src_idx) in emitted_pairs:
+                continue
+            emitted_pairs.add((n_src_idx, n1_src_idx))
 
-        # --- GUARD 2: both lines are NP-only (no finite verbs) ---
-        prior_has_verb = line_has_finite_verb(line)
-        next_has_verb = line_has_finite_verb(next_line)
-        if prior_has_verb or next_has_verb:
-            continue
+            line_n = lines[n_src_idx]
+            line_n1 = lines[n1_src_idx]
 
-        # --- GUARD 3: combined ≤8 prosodic words ---
-        combined_words = prosodic_word_count(line) + prosodic_word_count(next_line)
-        if combined_words > 8:
-            if guard_reason is None:
+            # ----- guards -----
+            guard_reason: str | None = None
+
+            if is_poetic_register(book_slug, ch, vs):
+                guard_reason = "poetic register (Sifrei Emet / embedded poetry / acrostic)"
+
+            combined_words = prosodic_word_count(line_n) + prosodic_word_count(line_n1)
+            if guard_reason is None and combined_words > 8:
                 guard_reason = "combined > 8 prosodic words"
-                severity = "REVIEW-REQUIRED"
-        else:
-            if guard_reason is None:
-                severity = "STRONG-MERGE-CANDIDATE"
 
-        # --- GUARD 4: heavy NP on either side ---
-        if guard_reason is None:
-            prior_heavy = line_has_heavy_np(line)
-            next_heavy = line_has_heavy_np(next_line)
-            if prior_heavy or next_heavy:
-                guard_reason = "heavy NP (relative clause or appositives)"
-                severity = "REVIEW-REQUIRED"
+            if guard_reason is None and _a1_has_heavy_np_ir([a for _, a in a1_lines]):
+                guard_reason = "heavy NP (relative clause or apposition)"
 
-        # If we haven't determined severity yet (all guards passed or only poetic-register fired)
-        if guard_reason is None:
-            severity = "STRONG-MERGE-CANDIDATE"
-        elif guard_reason == "poetic register (Sifrei Emet / embedded poetry / acrostic)":
-            # Poetic-register guard alone makes it REVIEW-REQUIRED
+            # Severity floor: ALL findings emit REVIEW-REQUIRED post-IR-pivot.
             severity = "REVIEW-REQUIRED"
 
-        prior_text = line.strip()
-        next_text = next_line.strip()
+            a1_texts = [a.text for _, a in a1_lines]
+            prior_text = line_n.strip()
+            next_text = line_n1.strip()
 
-        annotation = (
-            "Coordinated direct object (compound DO of shared verb): "
-            "אֵת + NP // וְאֵת + NP. Canon §5 M2 (verb-object clause-nucleus bond) "
-            "and §1 Structural Justification 1 (compound list break signals) apply — "
-            "bare 'and [noun]' items merge without elided-verb signal. "
-            "(Per Joüon-Muraoka §137; Waltke-O'Connor §9.5.2.)"
-        )
+            annotation = (
+                "Coordinated direct object (compound DO of shared verb): "
+                f"verb {verb.text!r} governs A1={a1_texts!r} spanning multiple "
+                "sense-lines. Canon §5 M2 (verb-object clause-nucleus bond) "
+                "and §1 Structural Justification 1 (compound list break "
+                "signals) apply — bare 'and [noun]' items merge without "
+                "elided-verb signal. (Per Joüon-Muraoka §137; "
+                "Waltke-O'Connor §9.5.2.)"
+            )
+            if guard_reason:
+                annotation += f" Guard fired: {guard_reason}."
 
-        if guard_reason:
-            annotation += f" Guard fired: {guard_reason}."
+            brief = (
+                f"coordinated DO split — verb {verb.text!r} A1={a1_texts!r} — "
+                f"{prior_text} // {next_text} ({combined_words} prosodic words combined)"
+            )
 
-        brief = (
-            f"coordinated DO split — {prior_text} // {next_text} "
-            f"({combined_words} prosodic words combined)"
-        )
-
-        findings.append({
-            "file_path": path,
-            "file_rel": str(path.relative_to(REPO_ROOT)).replace("\\", "/"),
-            "line_num": line_no,
-            "next_line_num": next_line_no,
-            "rule": "M2/coordinated-object",
-            "severity": severity,
-            "book": book,
-            "chapter": chapter,
-            "verse": verse,
-            "prior_line": prior_text,
-            "next_line": next_text,
-            "prosodic_word_count": combined_words,
-            "annotation": annotation,
-            "suggested_action": "MERGE candidate per M2 + compound-list rule",
-            "brief": brief,
-            "guard_reason": guard_reason,
-        })
+            findings.append({
+                "file_path": path,
+                "file_rel": str(path.relative_to(REPO_ROOT)).replace("\\", "/"),
+                "line_num": n_src_idx + 1,
+                "next_line_num": n1_src_idx + 1,
+                "rule": "M2/coordinated-object",
+                "severity": severity,
+                "book": book_slug,
+                "chapter": ch,
+                "verse": vs,
+                "prior_line": prior_text,
+                "next_line": next_text,
+                "prosodic_word_count": combined_words,
+                "annotation": annotation,
+                "suggested_action": "MERGE candidate per M2 + compound-list rule",
+                "brief": brief,
+                "guard_reason": guard_reason,
+            })
 
     return findings
 
@@ -585,7 +654,7 @@ def main():
         doc = {
             "validator": "validate_coordinated_object",
             "rule": "M2/coordinated-object",
-            "version": "1.0.0",
+            "version": "2.0.0",
             "layer": 3,
             "book": args.book or "all",
             "files_scanned": [
@@ -604,7 +673,7 @@ def main():
 
     # --- Human-readable output ---
     print("=" * 72)
-    print(f"Coordinated-Object Validator — Tanakh {tier_label}")
+    print(f"Coordinated-Object Validator (IR-driven) — Tanakh {tier_label}")
     print(f"Reference: canon §5 M2 (verb-object clause-nucleus bond)")
     print("=" * 72)
     print(f"Files scanned : {len(files)}")
