@@ -132,10 +132,12 @@ bat | Haran | avi | Milkah | va'avi | Yiskah
 vatehi | Sarai | akarah | ein | lah | valad
 
 11:31
-vaiyikach | Terach | et | Avram | beno | ve'et | Lot | ben | Haran | ben | beno
+vaiyikach | Terach | et | Avram | beno
+ve'et | Lot | ben | Haran | ben | beno
 ve'et | Sarai | kalato
 eshet | Avram | beno
-vaiyetze'u | itam | Me'ur | Kasdim | lalekhet | artzah | Kena'an
+vaiyetze'u | itam | Me'ur | Kasdim
+lalekhet | artzah | Kena'an
 vaiyavo'u | ad | Charan
 vaiyeshevu | sham
 

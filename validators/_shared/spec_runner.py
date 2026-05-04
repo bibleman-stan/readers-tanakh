@@ -1067,6 +1067,17 @@ def _evaluate_line_trigger(spec: Spec, line: str, ctx: dict[str, Any]) -> list[i
             return []
         return positions
 
+    # waet_coord_acc_np: true — split waet-coord parallel-acc-NP enumeration
+    # (Gen 1:16 line 2 type). Each member ≥3 tokens (NP+modifier).
+    if line_anywhere.get("waet_coord_acc_np"):
+        return M.coordinated_acc_np_split_positions(line, ctx.get("line_n_token_tags"))
+
+    # purpose_infinitive: true — split before לְ + infinitive-construct when
+    # the matrix verb is not modal/inceptive and there are ≥2 substantive
+    # tokens between FV and INF (Gen 1:17 לְהָאִיר type).
+    if line_anywhere.get("purpose_infinitive"):
+        return M.purpose_infinitive_split_positions(line, ctx.get("line_n_token_tags"))
+
     # coordinated_np_count: {min: N} — count vav-coord NP heads (S2 enumeration)
     if "coordinated_np_count" in line_anywhere:
         cond = line_anywhere["coordinated_np_count"]

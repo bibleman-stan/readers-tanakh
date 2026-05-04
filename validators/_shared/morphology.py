@@ -1508,6 +1508,181 @@ def wayyiqtol_mid_line_split_positions(line: str) -> list[int]:
     return positions
 
 
+def coordinated_acc_np_split_positions(
+    line: str,
+    tag_lists: list[list[str]] | None = None,
+) -> list[int]:
+    """Return token indices where SPLIT should be inserted to break a
+    waet-coord parallel-accusative-NP enumeration into one ATU per cola.
+
+    Pattern (Gen 1:16 line 2 type):
+        <אֵת-NP1> <modifier1> וְאֵת <אֵת-NP2> <modifier2>  → split before וְאֵת
+
+    Each member is a complete object-with-modifier ATU per canon §1 SJ1.
+
+    Discriminator (audit 2026-05-04, 49 corpus instances, ~0 FPs):
+      - Line contains exactly 2 acc-marker tokens (one bare אֵת, one וְאֵת)
+      - Each member ≥3 prosodic tokens (NP head + ≥1 modifier — PP, adj,
+        construct chain) — distinguishes parallel propositions from
+        bare compound objects (וַיַּעַשׂ ... אֵת X וְאֵת Y where Y has
+        no modifier is a single compound object, not two ATUs).
+    """
+    toks = tokens(line)
+    if len(toks) < 6:
+        return []  # need at least 3+3 tokens
+    # Find tokens whose FIRST morpheme is To (DO marker): bare אֵת or vav-
+    # prefixed וְאֵת. May be followed by maqqef-bound NP (אֶת־X / וְאֶת־X)
+    # or stand alone with the NP as the next whitespace-separated token.
+    acc_indices: list[int] = []
+    waet_indices: list[int] = []  # vav-prefixed
+    for i, tok in enumerate(toks):
+        # Tag-aware: first morpheme is To (or c/To with vav prefix)
+        is_acc = False
+        is_waet = False
+        if tag_lists is not None and i < len(tag_lists) and tag_lists[i]:
+            first_tag = tag_lists[i][0]
+            if first_tag and first_tag != "[—]":
+                first_morpheme = first_tag.split("/")[0].lstrip("H")
+                if first_morpheme == "To":
+                    is_acc = True
+                elif first_morpheme in ("c", "C") and len(first_tag.split("/")) > 1:
+                    second = first_tag.split("/")[1].lstrip("H")
+                    if second == "To":
+                        is_acc = True; is_waet = True
+        else:
+            # Skel-only fallback
+            s_full = skel(tok)
+            s_head = s_full.split(MAQQEF, 1)[0] if MAQQEF in tok else s_full
+            if s_full.startswith("את") and (len(s_full) > 2 or s_full == "את"):
+                is_acc = True
+            elif s_full.startswith("ואת") and (len(s_full) > 3 or s_full == "ואת"):
+                is_acc = True; is_waet = True
+        if is_acc:
+            acc_indices.append(i)
+            if is_waet:
+                waet_indices.append(i)
+    if len(acc_indices) != 2 or len(waet_indices) != 1:
+        return []
+    waet_pos = waet_indices[0]
+    if waet_pos == 0:
+        return []  # waet at line-start — no preceding member
+    # Member 1: from start to waet_pos (exclusive). Member 2: from waet_pos to end.
+    member1_len = waet_pos
+    member2_len = len(toks) - waet_pos
+    if member1_len < 3 or member2_len < 3:
+        return []
+    return [waet_pos]
+
+
+# Closed list of finite verbs that take OBLIGATORY infinitive complements
+# (modal / inceptive verbs). When these are the matrix verb, the following
+# `לְ + infinitive` is part of the matrix verb's valence — NOT a separate
+# purpose-ATU — and must NOT be split off.
+MODAL_INCEPTIVE_VERB_SKELS = frozenset({
+    # אבה — willing
+    "אבה", "אבי", "ויאבה", "תאבה", "יאבו", "אבו",
+    # חל / החל — begin
+    "החל", "החלו", "ויחל", "תחל", "יחל", "החלת",
+    # כלה — finish/complete
+    "כלה", "ויכל", "ויכלו", "תכלה", "יכלה",
+    # יסף / הוסף — continue/add
+    "יסף", "יוסף", "ויסף", "ויוסף", "תוסיף", "יוסיף", "הוסיף",
+    # יכל — be able
+    "יכל", "יוכל", "תוכל", "אוכל", "יוכלו", "יכלו", "יכלתי",
+    # חפץ — desire
+    "חפץ", "חפצתי", "יחפץ", "תחפץ",
+    # בקש — seek (when infinitive complement)
+    "בקש", "ויבקש", "תבקש", "אבקש", "מבקש",
+    # מהר — hurry (when infinitive complement)
+    "מהר", "וימהר", "ימהר", "תמהר",
+    # מאן — refuse
+    "מאן", "וימאן", "ימאן", "תמאן",
+    # ידע — know-how (when inf complement)
+    # Skipped: too polysemous; ידע + לעשות "knew to do" varies by context.
+})
+
+
+def purpose_infinitive_split_positions(
+    line: str,
+    tag_lists: list[list[str]] | None = None,
+) -> list[int]:
+    """Return token indices where SPLIT should be inserted before a
+    `לְ + infinitive-construct` purpose phrase.
+
+    Pattern (Gen 1:17 type):
+        <finite-verb> <args> לְהָאִיר עַל־הָאָרֶץ
+                              ↑ split before this
+
+    The purpose-infinitive predicates a separate proposition (matrix subject
+    doing the inf action). Per canon §1 generative principle, each
+    proposition splits by default.
+
+    Tag-driven (TAHOT): infinitive identified via Vqc/Vpc/Vhc/Vnc/Vfc/Vtc
+    morphemes (any verb stem in construct form) PREFIXED with R (the ל prep).
+
+    FP guards:
+      - Skip if the line's first finite verb is on MODAL_INCEPTIVE_VERB_SKELS
+        (אבה/חל/כלה/יסף/יכל/חפץ/בקש/מהר/מאן) — these take obligatory inf
+        complements (matrix valence requires the inf, not a separate ATU).
+      - Skip if fewer than 2 substantive tokens separate the finite verb
+        from the infinitive (tight verb+inf bond, not a purpose clause).
+      - Skip if the infinitive is line-initial (already its own ATU
+        candidate; this function is for mid-line splits only).
+    """
+    if tag_lists is None:
+        return []
+    toks = tokens(line)
+    if len(toks) < 4:
+        return []
+    # Find first finite verb position (any V-aspect: p/w/i/q/v/h)
+    fv_pos = -1
+    fv_skel = ""
+    for i, tok in enumerate(toks):
+        if i >= len(tag_lists) or not tag_lists[i]:
+            continue
+        from . import morph_tags as MT
+        for tag in tag_lists[i]:
+            if tag and tag != "[—]" and MT.is_finite_verb(tag):
+                fv_pos = i
+                fv_skel = skel(tok).split(MAQQEF, 1)[0]
+                break
+        if fv_pos >= 0:
+            break
+    if fv_pos < 0:
+        return []
+    # FP guard: modal/inceptive matrix verb
+    if fv_skel in MODAL_INCEPTIVE_VERB_SKELS:
+        return []
+    # Find first preposition+infinitive-construct AFTER the finite verb
+    inf_pos = -1
+    for i in range(fv_pos + 1, len(toks)):
+        if i >= len(tag_lists) or not tag_lists[i]:
+            continue
+        for tag in tag_lists[i]:
+            if not tag or tag == "[—]":
+                continue
+            morphemes = tag.split("/")
+            # Look for R + V?c pattern (prep + infinitive construct)
+            has_R = any(m.lstrip("Hc").startswith("R") for m in morphemes)
+            has_inf_c = any(
+                len(m.lstrip("Hc")) >= 4
+                and m.lstrip("Hc")[0] == "V"
+                and m.lstrip("Hc")[2] == "c"  # construct form
+                for m in morphemes
+            )
+            if has_R and has_inf_c:
+                inf_pos = i
+                break
+        if inf_pos >= 0:
+            break
+    if inf_pos < 0:
+        return []
+    # FP guard: ≥2 substantive tokens between FV and INF
+    if inf_pos - fv_pos < 3:
+        return []
+    return [inf_pos]
+
+
 def coordinated_pp_split_positions(
     line: str,
     tag_lists: list[list[str]] | None = None,

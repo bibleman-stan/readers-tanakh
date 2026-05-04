@@ -426,7 +426,15 @@ NATURALIZE_RULES = [
     (r"\bthe city great\b",        "the great city"),
     (r"\bthe fear great\b",        "the great fear"),
     (r"\bthe day great\b",         "the great day"),
+    # Generalized: "the <noun> great" → "the great <noun>" (any single-word noun)
+    (r"\bthe (\w+) great\b",       r"the great \1"),
+    (r"\bthe (\w+) (\w+) great\b", r"the great \1 \2"),  # 2-word noun (e.g. "sea monsters")
+    (r"\ba (\w+) great\b",         r"a great \1"),
     (r"\ba day one\b",             "one day"),
+    # לֵאמֹר often glosses as stranded "to" at end of speech-frame line.
+    # Replace with "saying" when preceded by a speech verb on the same line.
+    (r"\b(blessed|said|spoke|told|commanded|cried|called|answered|asked|swore|declared|charged|warned|sworn|declared|proclaimed)\s+(\w+(?:\s+\w+){0,4})\s+to$",
+                                   r"\1 \2 saying"),
     (r"\bdays three\b",            "three days"),
     (r"\bnights three\b",          "three nights"),
     (r"\bdays forty\b",            "forty days"),

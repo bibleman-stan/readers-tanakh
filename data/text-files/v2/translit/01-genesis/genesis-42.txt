@@ -18,7 +18,8 @@ lo | shalach | Ya'ako | et | echav
 ki | amar | pen | yikra'enu | ason
 
 42:5
-vaiyavo'u | benei | Yisra'el | lishbor | betokh | haba'im
+vaiyavo'u | benei | Yisra'el
+lishbor | betokh | haba'im
 ki | hayah | hara'av | be'eretz | Kena'an
 
 42:6
@@ -99,11 +100,13 @@ vaiya'asu | khen
 
 42:21
 vaiyomeru | ish | el | achiv | aval | ashemim | anachnu | al | achinu
-asher | ra'inu | tzarat | nafsho | behitchano | eleinu | velo | shama'enu
+asher | ra'inu | tzarat | nafsho
+behitchano | eleinu | velo | shama'enu
 al | ken | ba'ah | eleinu | hatzarah | hazot
 
 42:22
-vaiya'an | Re'uven | otam | lemor | halo | amarti | aleikhem | lemor | al | techet'u | vaiyeled
+vaiya'an | Re'uven | otam
+lemor | halo | amarti | aleikhem | lemor | al | techet'u | vaiyeled
 velo | shema'tem
 vegam | damo
 hineh | nidrash
@@ -132,7 +135,8 @@ vaiyis'u | et | shivram | al | chamoreihem
 vaiyelekhu | misham
 
 42:27
-vaiyiftach | ha'echad | et | sako | latet | mispo | lachamoro | bamalon
+vaiyiftach | ha'echad | et | sako
+latet | mispo | lachamoro | bamalon
 vaiyar | et | kaspo
 vehineh | hu | befi | amtachto
 
