@@ -4,8 +4,7 @@ chalomot | vatitpa'em | rucho
 ushenato | Nihyetah | alav
 
 2:2
-vaiyomer | hamelekh | likro
-lachartumim
+vaiyomer | hamelekh | likro | lachartumim
 vela'ashafim
 velamkhashefim
 velakasdim
@@ -18,8 +17,7 @@ chalameti
 vatipa'em | ruchi | lada'at | et | hachalom
 
 2:4
-vaydaberu
-hakasdim | lamelekh
+vaydaberu | hakasdim | lamelekh
 aramit | malka | le'almin | cheyi
 emar | chelma | le'avdayikh
 ufishra | nechave
@@ -182,7 +180,8 @@ di | khesaf | me'ohi | veyarkhateh | di | nechash
 2:33
 shakohi
 di | farzel
-raglohi | minehin | di | farzel | uminehon
+raglohi | minehin | di | farzel
+uminehon
 di | chasaf
 
 2:34
@@ -222,13 +221,15 @@ kol | kovel | di | farzela | mehadek | vechashel | kola
 ukhefarzela | di | mera'a | kol | ilein | tadik | veteroa
 
 2:41
-vedi | chazaytah | raglaiya | ve'etzbe'ata | minehen | chasaf | di | fechar | uminehon | parzel
+vedi | chazaytah | raglaiya | ve'etzbe'ata | minehen | chasaf | di | fechar
+uminehon | parzel
 malkhu | feligah | teheveh
 umin | nitzbeta | di | farzela | leheve | vah
 kol | kovel | di | chazaytah | parzela | me'arav | bachasaf | tina
 
 2:42
-ve'etzbe'at | raglaiya | minehon | parzel | uminehon | chasaf
+ve'etzbe'at | raglaiya | minehon | parzel
+uminehon | chasaf
 min | ketzat | malkhuta | teheveh | takifah
 uminah | teheveh | tevirah
 

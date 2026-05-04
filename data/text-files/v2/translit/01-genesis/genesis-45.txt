@@ -80,11 +80,11 @@ vaiyevek | aleihem | ve'acharei | khen | diberu | echav | ito
 45:16
 vehakol | Nishma | beit | par'oh | lemor
 ba'u | achei | Yosef
-vaiyitav | be'einei | far'oh | uve'einei | avadav
+vaiyitav | be'einei | far'oh
+uve'einei | avadav
 
 45:17
-vaiyomer
-par'oh | el | Yosef
+vaiyomer | par'oh | el | Yosef
 emor | el | acheikha | zot | asu | ta'anu | et | be'irekhem
 ulekhu | vo'u | artzah | Kena'an
 
@@ -142,7 +142,6 @@ asher | shalach | Yosef
 laset | oto | vatechi | ruach | Ya'ako | avihem
 
 45:28
-vaiyomer | Yisra'el
-rav | od | Yosef | beni | chai
+vaiyomer | Yisra'el | rav | od | Yosef | beni | chai
 elekhah | ve'er'enu
 beterem | amut

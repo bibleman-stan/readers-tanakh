@@ -1389,6 +1389,10 @@ def is_vav_coord_pp_head(token: str, tag_list: list[str] | None = None) -> bool:
     are negations/adverbs/interrogatives (וְלֹא, וְלָכֵן, וְלָמָּה) are not PP
     heads — closed-list exclusion via VAV_BOUND_PREP_NON_PP_FALSE_POSITIVES.
     """
+    # Functional-prep override: בֵּין/וּבֵין are tagged Acmsc (adverb construct)
+    # in TAHOT but function as PP heads (between X and between Y). Closed list.
+    if skel(token).split(MAQQEF, 1)[0].lstrip("ו") == "בין":
+        return skel(token)[0] == "ו"
     # Tag-aware authoritative check when available.
     if tag_list:
         from . import morph_tags as MT
@@ -1438,6 +1442,9 @@ def is_bare_prep_head(token: str, tag_list: list[str] | None = None) -> bool:
     collisions where a bound-prep-shaped first letter is part of a non-prep
     word (e.g., negation `אַל` skel "אל" vs. preposition `אֶל` skel "אל").
     """
+    # Functional-prep override: בֵּין tagged Acmsc but functions as PP head.
+    if skel(token).split(MAQQEF, 1)[0] == "בין":
+        return True
     if tag_list:
         from . import morph_tags as MT
         has_prep = False
@@ -1524,17 +1531,41 @@ def coordinated_pp_split_positions(
         return []
     pp_indices: list[int] = []
     vav_coord_indices: list[int] = []
+    pp_head_skel: dict[int, str] = {}  # idx -> bare prep-head consonants
     for i, tok in enumerate(toks):
         tl = tag_lists[i] if (tag_lists is not None and i < len(tag_lists)) else None
         if is_vav_coord_pp_head(tok, tag_list=tl):
             pp_indices.append(i)
             vav_coord_indices.append(i)
+            # Strip leading "ו" to get the bare prep-head for same-head check
+            head = skel(tok).lstrip("ו").split(MAQQEF, 1)[0]
+            # For bound-prep + content (וְבִדְגַת), head consonant is at position 0
+            if head and head[0] in BOUND_PREP_PREFIXES:
+                pp_head_skel[i] = head[0]
+            else:
+                pp_head_skel[i] = head[:2] if len(head) >= 2 else head
         elif is_bare_prep_head(tok, tag_list=tl):
             pp_indices.append(i)
-    if len(pp_indices) < 3:
-        return []
-    # Filter position 0 — splitting BEFORE the first token of a line is meaningless.
-    return [i for i in vav_coord_indices if i > 0]
+            head = skel(tok).split(MAQQEF, 1)[0]
+            if head and head[0] in BOUND_PREP_PREFIXES:
+                pp_head_skel[i] = head[0]
+            else:
+                pp_head_skel[i] = head[:2] if len(head) >= 2 else head
+    # Threshold-3 path: ≥3 PPs always split (parallel-series enumeration)
+    if len(pp_indices) >= 3:
+        return [i for i in vav_coord_indices if i > 0]
+    # Threshold-2 same-head arm (Stan 2026-05-04 audit): when exactly 2 PPs
+    # share the same prep-head consonant, the construction is reliably parallel-
+    # series (Gen 1:28 בִּדְגַת ... וּבְעוֹף; Gen 1:4 בֵּין ... וּבֵין;
+    # Gen 19:24 עַל־סְדֹם וְעַל־עֲמֹרָה). Mixed-head 2-PP cases (Gen 7:7
+    # אִתּוֹ + אֶל־הַתֵּבָה) are typically not parallel — left for editor.
+    if (
+        len(pp_indices) == 2
+        and pp_head_skel[pp_indices[0]] == pp_head_skel[pp_indices[1]]
+        and pp_head_skel[pp_indices[0]]
+    ):
+        return [i for i in vav_coord_indices if i > 0]
+    return []
 
 
 # Vav-prefixed non-NP particles — exclusion list for is_vav_coord_np_head.

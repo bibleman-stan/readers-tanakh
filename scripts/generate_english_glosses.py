@@ -447,6 +447,15 @@ NATURALIZE_RULES = [
     (r"\band the sea stopped\b",                "and the sea stopped"),
     (r"\band he arose Yahweh\b",                "and Yahweh he hurled"),  # 1:4 special
     # -----------------------------------------------------------------------
+    # 16. Adverbial-intensifier reorder: "<adj> very" → "very <adj>"
+    # Hebrew מְאֹד typically follows the intensified word; English fronts it.
+    # Closed list of adjectives/quantifiers commonly intensified by very
+    # (audit 2026-05-04: 105 corpus pairs, top tokens great/much/many/numerous
+    # /heavy/good/strong/afraid/old/severe/high/proud/bad — all reorder cleanly;
+    # pronoun/particle FPs (me/you/she/it) deliberately excluded by closed list).
+    # -----------------------------------------------------------------------
+    (r"\b(good|great|much|many|numerous|heavy|strong|afraid|old|severe|high|proud|bad|wealthy|delicate|large|big|small|tall|short|near|far|deep|shallow|hot|cold|wet|dry|hard|soft|slow|fast|long|wide|narrow|thick|thin|loud|quiet|sweet|bitter|holy|righteous|wicked|evil|beautiful|ugly|wise|foolish|young|new|old|fat|lean|rich|poor|happy|sad|angry|ashamed|exalted|humbled|low|mighty|weak|fierce|gentle|bold|timid|patient|swift|slow|abundant|scarce|fruitful|barren|fertile|broad|tight|loose|firm|weary|tired|strong|valiant|stout|tender) very\b", r"very \1"),
+    # -----------------------------------------------------------------------
     # 15. Collapse multiple whitespace (always last)
     # -----------------------------------------------------------------------
     (r"  +", " "),

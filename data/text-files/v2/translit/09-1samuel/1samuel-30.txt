@@ -24,12 +24,12 @@ Va'avigayil | eshet | Naval | hakarmeli
 
 30:6
 vatetzer | Ledavid | me'od | ki | ameru | ha'am | lesakelo
-ki | marah | nefesh | kol | ha'am | ish | al | benov | ve'al | benotav
+ki | marah | nefesh | kol | ha'am | ish | al | benov
+ve'al | benotav
 vaiyitchazek | David | Bayahweh | elohav
 
 30:7
-vaiyomer | David | el | Evyatar
-hakohen | ben | Achimelekh | hagishah | na | li
+vaiyomer | David | el | Evyatar | hakohen | ben | Achimelekh | hagishah | na | li
 ha'efod | vaiyagesh | Evyatar | et | ha'efod | el | David
 
 30:8
@@ -62,8 +62,7 @@ velo | shatah | mayim | sheloshah | yamim
 usheloshah | leilot
 
 30:13
-vaiyomer | lo | David
-lemi | atah
+vaiyomer | lo | David | lemi | atah
 ve'ei | mizeh
 atah
 vaiyomer | na'ar
@@ -119,7 +118,8 @@ zeh | shelal | David
 30:21
 vaiyavo | David | el | matayim | ha'anashim | asher | pigeru | milekhet | acharei | David
 vaiyoshivum | benachal | Habesor
-vaiyetze'u | likrat | David | velikrat
+vaiyetze'u | likrat | David
+velikrat
 ha'am | asher | ito | vaiyigash | David | et | ha'am
 vaiyish'al | lahem | leshalom
 

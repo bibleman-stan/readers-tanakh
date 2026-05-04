@@ -612,6 +612,20 @@ SHORT_PP_AFTER_VERB = [
     "to him", "to her", "to them", "to us", "to me", "to you",
 ]
 
+# Bare object pronouns that may sit between verb and subject in V+O+S
+# (Hebrew אֹתָם/אוֹתוֹ/אֹתָהּ glossed without "to"). Pattern:
+# "and <pron> <V> <obj-pron> <SUBJ>" → "and <SUBJ> <V> <obj-pron>".
+# Audit 2026-05-04: 56 corpus instances, all true V+O+S (Gen 1:28 "and he
+# blessed them God" → "and God blessed them"). Distinct from SHORT_PP_AFTER_VERB
+# because no preposition — bare accusative pronoun.
+BARE_OBJECT_PRONOUNS_AFTER_VERB = {
+    "him", "her", "them", "me", "us",
+    # "you" intentionally EXCLUDED — too ambiguous: 2nd-person object vs
+    # the disambiguating subject pronoun cases (e.g., "and he blessed you Moses"
+    # is rare; "and he gave you Yahweh" exists but post-verb 'you' could be
+    # discourse-marker rather than accusative). Add later if audit warrants.
+}
+
 # English verb particles ("phrasal-verb second halves") that the gloss
 # generator emits as separate tokens after certain verbs:
 #   "sent off Moses ..."   → verb is conceptually "sent off"
@@ -751,6 +765,17 @@ def pass3_vs_reorder(line: str, in_poetic: bool) -> str:
             rest_tokens = rest.split()
             break
 
+    # Optionally consume one bare object pronoun (V+O+S pattern, e.g.,
+    # Gen 1:28 "and he blessed them God"). Only fires if SHORT_PP wasn't
+    # consumed (else "to them him" is double-object, not the target pattern).
+    obj_pron_consumed = ""
+    if not short_pp_consumed and rest_tokens:
+        first_lc = rest_tokens[0].lower().strip(".,;:!?")
+        if first_lc in BARE_OBJECT_PRONOUNS_AFTER_VERB:
+            obj_pron_consumed = rest_tokens[0]
+            rest = rest[len(obj_pron_consumed):].lstrip()
+            rest_tokens = rest.split()
+
     if not rest_tokens:
         return line
 
@@ -802,6 +827,8 @@ def pass3_vs_reorder(line: str, in_poetic: bool) -> str:
         rest_orig = rest_orig[len(particle_consumed):].lstrip()
     if short_pp_consumed:
         rest_orig = rest_orig[len(short_pp_consumed):].lstrip()
+    if obj_pron_consumed:
+        rest_orig = rest_orig[len(obj_pron_consumed):].lstrip()
     if not rest_orig.startswith(subj_str):
         return line
 
@@ -824,6 +851,8 @@ def pass3_vs_reorder(line: str, in_poetic: bool) -> str:
         new += f" {particle_consumed}"
     if short_pp_consumed:
         new += f" {short_pp_consumed}"
+    if obj_pron_consumed:
+        new += f" {obj_pron_consumed}"
     if after_subj:
         new += f" {after_subj}"
 

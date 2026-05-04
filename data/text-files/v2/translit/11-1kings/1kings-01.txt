@@ -31,8 +31,8 @@ velo | atzavo | aviv | miyamav | lemor | madua | kakhah | asita
 vegam | hu | tov | to'ar | me'od | ve'oto | yaldah | acharei | Avshalom
 
 1:7
-vaiyihyu | devarav
-im | Yo'av | ben | Tzeruyah | ve'im | Evyatar | hakohen
+vaiyihyu | devarav | im | Yo'av | ben | Tzeruyah
+ve'im | Evyatar | hakohen
 vaiya'zeru | acharei | Adoniyah
 
 1:8
@@ -81,8 +81,7 @@ vehamelekh | zaken | me'od | Va'avishag | hashunamit | mesharat | et | hamelekh
 1:16
 vatikod | Bat | Sheva
 vatishtachu | lamelekh
-vaiyomer | hamelekh
-mah | lakh
+vaiyomer | hamelekh | mah | lakh
 
 1:17
 vatomer | lo | adoni
@@ -168,7 +167,8 @@ yechi | adoni | hamelekh | David | le'olam
 
 1:32
 vaiyomer | hamelekh | David
-kir'u | li | Letzadok | hakohen | Ulenatan | hanavi
+kir'u | li | Letzadok | hakohen
+Ulenatan | hanavi
 Velivnayahu
 ben | Yehoyada | vaiyavo'u
 lifnei | hamelekh
@@ -225,8 +225,7 @@ vatibaka | ha'aretz | bekolam
 vaiyishma | Adoniyahu | vekhol | hakeru'im | asher | ito
 vehem | kilu | le'ekhol
 vaiyishma | Yo'av | et | kol | hashofar
-vaiyomer
-madua | kol | hakiryah | homah
+vaiyomer | madua | kol | hakiryah | homah
 
 1:42
 odenu | medaber | vehineh | Yonatan | ben | Evyatar | hakohen

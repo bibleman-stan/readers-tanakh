@@ -23,7 +23,10 @@ vaiyavo | Yerushalim
 
 21:5
 vaiyiten | Yo'av | et | mispar | mifkad | ha'am | el | David
-vayhi | khol | Yisra'el | elef | alafim | ume'ah | elef | ish | sholef | cherev | Vihudah | arba | me'ot | veshiv'im | elef | ish | sholef | charev
+vayhi | khol | Yisra'el | elef | alafim
+ume'ah | elef | ish | sholef | cherev
+Vihudah | arba | me'ot
+veshiv'im | elef | ish | sholef | charev
 
 21:6
 Velevi
@@ -36,8 +39,7 @@ hazeh | vaiyakh | et | Yisra'el
 
 21:8
 vaiyomer | David | el | ha'elohim
-chatati | me'od | asher | asiti
-et | hadavar | hazeh
+chatati | me'od | asher | asiti | et | hadavar | hazeh
 ve'atah | ha'aver | na | et | avon | avdekha
 ki | Niskalti | me'od
 
@@ -77,7 +79,8 @@ umal'akh | Yahweh | omed | im | goren | Arenan | hayvusi
 
 21:16
 vaiyisa | David | et | einav
-vaiyar | et | mal'akh | Yahweh | omed | bein | ha'aretz | uvein | hashamayim
+vaiyar | et | mal'akh | Yahweh | omed | bein | ha'aretz
+uvein | hashamayim
 vecharbo | shelufah | beyado | netuyah | al | Yerushalim
 vaiyipol | David | vehazekenim | mekhusim | basakim | al | peneihem
 
@@ -90,8 +93,7 @@ uveveit | avi
 uve'amekha | lo | lemagefah
 
 21:18
-umal'akh | Yahweh | amar | el | Gad | lemor
-Ledavid
+umal'akh | Yahweh | amar | el | Gad | lemor | Ledavid
 ki | ya'aleh | David | lehakim | mizbeach | Layahweh
 begoren | Arenan | hayvusi
 

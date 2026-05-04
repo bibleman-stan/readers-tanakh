@@ -61,9 +61,9 @@ ve'e'eseh | otkha | legoy | gadol
 32:11
 vaychal | Mosheh | et | penei | Yahweh | elohav
 vaiyomer | lamah | Yahweh
-yechereh | apekha | be'amekha
-asher | hotzeta | me'eretz | Mitzrayim
-bekhoach | gadol | uveyad | chazakah
+yechereh | apekha | be'amekha | asher | hotzeta | me'eretz | Mitzrayim
+bekhoach | gadol
+uveyad | chazakah
 
 32:12
 lamah | yomeru | Mitzrayim | lemor | bera'ah | hotzi'am | laharog | otam | beharim
@@ -98,12 +98,10 @@ charut | al | haluchot
 
 32:17
 vaiyishma | Yehoshua | et | kol | ha'am | bere'o
-vaiyomer | el | Mosheh | kol | milchamah
-bamachaneh
+vaiyomer | el | Mosheh | kol | milchamah | bamachaneh
 
 32:18
-vaiyomer | ein | kol
-anot | gevurah
+vaiyomer | ein | kol | anot | gevurah
 ve'ein | kol | anot | chalushah | kol | anot | anokhi | shomea
 
 32:19
@@ -148,8 +146,7 @@ ki | fera'oh | Aharon | leshimtzah | bekameihem
 
 32:26
 vaiya'amod | Mosheh | besha'ar | hamachaneh
-vaiyomer
-mi | Layahweh
+vaiyomer | mi | Layahweh
 elai | vaiye'asefu | elav | kol | benei | Levi
 
 32:27
@@ -188,8 +185,7 @@ ve'im | ayin | mecheni | na | misifrekha | asher | kataveta
 
 32:33
 vaiyomer | Yahweh | el | Mosheh
-mi | asher | chata | li
-emchenu | misifri
+mi | asher | chata | li | emchenu | misifri
 
 32:34
 ve'atah | lekh | necheh | et | ha'am | el | asher | dibarti | lakh

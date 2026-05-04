@@ -120,7 +120,8 @@ et | ha'izim
 
 35:27
 vehanesi'im | hevi'u | et | avnei | hashoham
-ve'et | avnei | hamilu'im | la'efod | velachoshen
+ve'et | avnei | hamilu'im | la'efod
+velachoshen
 
 35:28
 ve'et | habosem
@@ -138,8 +139,8 @@ vaiyomer | Mosheh | el | benei | Yisra'el
 re'u | kara | Yahweh | beshem | Betzal'el | ben | Uri | ven | Chur | lemateh | Yehudah
 
 35:31
-vaymale | oto
-ruach | elohim | bechakhemah | bitvunah | uveda'at
+vaymale | oto | ruach | elohim | bechakhemah | bitvunah
+uveda'at
 uvekhol | melakhah
 
 35:32
@@ -156,5 +157,7 @@ ulehorot | natan | belibo | hu | Ve'oholi'av | ben | Achisamakh | lemateh | Dan
 
 35:35
 mile | otam | chakhemat | lev | la'asot | kol | melekhet | charash | vechoshev
-verokem | batekhelet | uva'argaman | betola'at | hashani | uvashesh | ve'oreg
+verokem | batekhelet
+uva'argaman | betola'at | hashani
+uvashesh | ve'oreg
 osei | kol | melakhah | vechoshevei | machashavot

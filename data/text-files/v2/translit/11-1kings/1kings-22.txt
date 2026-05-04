@@ -76,8 +76,7 @@ im | nechdal | vaiyomer | elav | aleh | vehatzlach
 venatan | Yahweh | beyad | hamelekh
 
 22:16
-vaiyomer | elav | hamelekh
-ad | kameh | fe'amim
+vaiyomer | elav | hamelekh | ad | kameh | fe'amim
 ani | mashbi'ekha | asher | lo | tedaber | elai | rak | emet
 beshem | Yahweh
 
@@ -92,8 +91,7 @@ vaiyomer | melekh | Yisra'el | el | Yehoshafat
 halo | amarti | eleikha | lo | yitnabe | alai | tov | ki | im | ra
 
 22:19
-vaiyomer | lakhen
-shema | devar | Yahweh | ra'iti | et | Yahweh | yoshev | al | kis'o
+vaiyomer | lakhen | shema | devar | Yahweh | ra'iti | et | Yahweh | yoshev | al | kis'o
 vekhol | tzeva | hashamayim | omed | alav | mimino
 umisemolo
 
@@ -110,8 +108,7 @@ vaiyetze | haruach
 vaiya'amod | lifnei | Yahweh
 vaiyomer
 ani | afattenu
-vaiyomer | Yahweh | elav
-bamah
+vaiyomer | Yahweh | elav | bamah
 
 22:22
 vaiyomer
@@ -130,8 +127,7 @@ vaiyomer
 ei | zeh | avar | ruach | Yahweh | me'iti | ledaber | otakh
 
 22:25
-vaiyomer | Mikhayehu
-hinekha | ro'eh | baiyom | hahu
+vaiyomer | Mikhayehu | hinekha | ro'eh | baiyom | hahu
 asher | tavo | cheder | becheder | lehechaveh
 
 22:26
@@ -157,8 +153,7 @@ shim'u | amim | kulam
 vaiya'al | melekh | Yisra'el | Vihoshafat | melekh | Yehudah | Ramot | Gil'ad
 
 22:30
-vaiyomer | melekh | Yisra'el | el | Yehoshafat
-hitchapes | vavo | vamilchamah
+vaiyomer | melekh | Yisra'el | el | Yehoshafat | hitchapes | vavo | vamilchamah
 ve'atah | levash | begadeikha
 vaiyitchapes | melekh | Yisra'el
 vaiyavo | bamilchamah
@@ -270,7 +265,8 @@ bishnat | sheva | esreh | Lihoshafat | melekh | Yehudah | vaiyimlokh | al | Yisr
 22:53
 vaiya'as | hara
 be'einei | Yahweh
-vaiyelekh | bederekh | aviv | uvederekh | imo
+vaiyelekh | bederekh | aviv
+uvederekh | imo
 uvederekh | Yarave'am | ben | Nevat | asher | hecheti | et | Yisra'el
 
 22:54

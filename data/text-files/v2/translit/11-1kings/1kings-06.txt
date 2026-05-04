@@ -140,7 +140,8 @@ ufeturei
 tzitzim | milifnim | velachitzon
 
 6:30
-ve'et | karka | habayit | tzipah | zahav | lifnimah | velachitzon
+ve'et | karka | habayit | tzipah | zahav | lifnimah
+velachitzon
 
 6:31
 ve'et | petach | hadevir
@@ -149,7 +150,8 @@ asah | daltot | atzei | shamen | ha'ayil | mezuzot | chamishit
 6:32
 ushetei | daltot | atzei | shemen
 vekala | aleihem | mikle'ot | keruvim | vetimorot | ufeturei | tzitzim
-vetzipah | zahav | vaiyared | al | hakeruvim | ve'al | hatimorot | et | hazahav
+vetzipah | zahav | vaiyared | al | hakeruvim
+ve'al | hatimorot | et | hazahav
 
 6:33
 vekhen | asah | lefetach | haheikhal | mezuzot | atzei | shamen
@@ -176,4 +178,5 @@ bashanah | harevi'it | yusad | beit | Yahweh | beyerach | Ziv
 
 6:38
 uvashanah | ha'achat | esreh | beyerach | Bul | hu | hachodesh | hashemini
-kalah | habayit | lekhol | devarav | ulekhol | mishpatov | vaiyivnehu | sheva | shanim
+kalah | habayit | lekhol | devarav
+ulekhol | mishpatov | vaiyivnehu | sheva | shanim

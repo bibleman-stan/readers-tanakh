@@ -90,7 +90,8 @@ al | rosh | ha'ayil
 veshachata | et | ha'ayil
 velakachta | midamo | venatatah | al | tenukh | ozen | Aharon
 ve'al | tenukh | ozen | banav | haymanit
-ve'al | bohen | yadam | haymanit | ve'al | bohen | raglam | haymanit
+ve'al | bohen | yadam | haymanit
+ve'al | bohen | raglam | haymanit
 vezarakta | et | hadam | al | hamizbeach | saviv
 
 29:21
@@ -205,7 +206,8 @@ venesekh | revi'it | hahin | yayin | lakeves | ha'echad
 
 29:41
 ve'et | hakeves | hasheni | ta'aseh | bein | ha'arbayim
-keminchat | haboker | ukheniskah | ta'aseh | lah
+keminchat | haboker
+ukheniskah | ta'aseh | lah
 lereiach | nichoach | isheh | Layahweh
 
 29:42

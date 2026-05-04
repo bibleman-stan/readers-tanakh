@@ -3,14 +3,12 @@ vayhi | ki | yashav | hamelekh | beveito
 Vayahweh | heniach | lo | misaviv | mikol | oyevav
 
 7:2
-vaiyomer | hamelekh | el | Natan
-hanavi
+vaiyomer | hamelekh | el | Natan | hanavi
 re'eh | na | anokhi | yoshev | beveit | arazim
 va'aron | ha'elohim | yoshev | betokh | hayri'ah
 
 7:3
-vaiyomer | Natan | el | hamelekh
-kol | asher | bilvavekha
+vaiyomer | Natan | el | hamelekh | kol | asher | bilvavekha
 lekh | aseh | ki | Yahweh | imakh
 
 7:4
@@ -77,7 +75,8 @@ umamlakhtekha | ad | olam | lefaneikha | kis'akha
 yihyeh | nakhon | ad | olam
 
 7:17
-kekhol | hadevarim | ha'eleh | ukhekhol | hachizayon | hazeh
+kekhol | hadevarim | ha'eleh
+ukhekhol | hachizayon | hazeh
 ken | diber | Natan | el | David
 
 7:18
@@ -122,7 +121,8 @@ ve'atah | Yahweh | hayita | lahem | lelohim
 
 7:25
 ve'atah | Yahweh | elohim
-hadavar | asher | dibarta | al | avdekha | ve'al | beito
+hadavar | asher | dibarta | al | avdekha
+ve'al | beito
 hakem | ad | olam
 va'aseh
 ka'asher | dibarta

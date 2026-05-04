@@ -43,11 +43,13 @@ ve'amarta | el | Aharon | kach | et | matekha | vehashlekh | lifnei | far'oh | y
 vaiyavo | Mosheh | Ve'aharon | el | par'oh
 vaiya'asu | khen | ka'asher
 tzivah | Yahweh
-vaiyashlekh | Aharon | et | matehu | lifnei | far'oh | velifnei | avadav
+vaiyashlekh | Aharon | et | matehu | lifnei | far'oh
+velifnei | avadav
 vayhi | letanin
 
 7:11
-vaiyikra | gam | par'oh | lachakhamim | velamkhashefim
+vaiyikra | gam | par'oh | lachakhamim
+velamkhashefim
 vaiya'asu | gam | hem | chartumei | Mitzrayim | belahateihem | ken
 
 7:12
@@ -97,8 +99,8 @@ uva'avanim
 7:20
 vaiya'asu | khen | Mosheh | Ve'aharon | ka'asher | tzivah | Yahweh
 vaiyarem | bamateh
-vaiyakh | et | hamayim | asher | Bay'or
-le'einei | far'oh | ule'einei | avadav
+vaiyakh | et | hamayim | asher | Bay'or | le'einei | far'oh
+ule'einei | avadav
 vaiyehafekhu | kol | hamayim | asher | Bay'or | ledam
 
 7:21

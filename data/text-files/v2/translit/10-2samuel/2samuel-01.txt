@@ -14,8 +14,7 @@ vaiyishtachu
 vaiyomer | lo | David
 ei | mizeh | tavo
 vaiyomer | elav
-mimachaneh | Yisra'el
-Nimlateti
+mimachaneh | Yisra'el | Nimlateti
 
 1:4
 vaiyomer | elav | David
@@ -25,8 +24,7 @@ asher | nas | ha'am | min | hamilchamah | vegam | harbeh | nafal | min | ha'am |
 vegam | Sha'ul | Vihonatan | beno | metu
 
 1:5
-vaiyomer | David | el | hana'ar
-hamagid | lo
+vaiyomer | David | el | hana'ar | hamagid | lo
 eikh | yada'ta | ki | met | Sha'ul | Vihonatan | beno
 
 1:6
@@ -41,8 +39,7 @@ vaiyikra | elai
 va'omar | hineni
 
 1:8
-vaiyomer | li
-mi | atah
+vaiyomer | li | mi | atah
 vaiyomer | elav | amalki | anokhi
 
 1:9
@@ -74,8 +71,7 @@ ki | nafelu | becharev
 1:13
 vaiyomer | David | el | hana'ar
 hamagid | lo | ei | mizeh | atah
-vaiyomer | ben | ish | ger
-amalki | anokhi
+vaiyomer | ben | ish | ger | amalki | anokhi
 
 1:14
 vaiyomer | elav | David
@@ -124,7 +120,8 @@ vecherev | Sha'ul
 lo | tashuv | reikam
 
 1:23
-Sha'ul | Vihonatan | hane'ehavim | vehane'imim | bechaiyeihem | uvemotam
+Sha'ul | Vihonatan | hane'ehavim | vehane'imim | bechaiyeihem
+uvemotam
 lo | Nifradu | minesharim | kalu | me'arayot | gaveru
 
 1:24

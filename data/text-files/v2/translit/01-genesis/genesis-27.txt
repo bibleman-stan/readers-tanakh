@@ -3,8 +3,7 @@ vayhi | ki | zaken | Yitzchak
 vatikhheina | einav | mere'ot
 vaiyikra | et | Esav | beno | hagadol
 vaiyomer | elav | beni
-vaiyomer | elav
-hineni
+vaiyomer | elav | hineni
 
 27:2
 vaiyomer
@@ -76,7 +75,8 @@ asher | itah | babayit | vatalbesh | et | Ya'ako | benah | hakatan
 
 27:16
 ve'et | orot | gedayei | ha'izim
-hilbishah | al | yadav | ve'al | chelkat | tzavarav
+hilbishah | al | yadav
+ve'al | chelkat | tzavarav
 
 27:17
 vatiten | et | hamat'amim | ve'et | halechem | asher | asatah
@@ -85,8 +85,7 @@ beyad | Ya'ako | benah
 27:18
 vaiyavo | el | aviv
 vaiyomer | avi
-vaiyomer
-hineni | mi | atah | beni
+vaiyomer | hineni | mi | atah | beni
 
 27:19
 vaiyomer | Ya'ako | el | aviv
@@ -136,8 +135,7 @@ vaiyigash | vaiyishak | lo
 vaiyarach | et | reiach | begadav
 vayvarakhehu
 vaiyomer
-re'eh | reiach | beni | kereiach | sadeh | asher | berakho
-Yahweh
+re'eh | reiach | beni | kereiach | sadeh | asher | berakho | Yahweh
 
 27:28
 veyiten | lekha | ha'elohim | mital | hashamayim | umishmanei
@@ -162,8 +160,7 @@ yakum | avi | veyokhal | mitzeid | beno
 ba'avur | tevarakhani | nafshekha
 
 27:32
-vaiyomer | lo | Yitzchak | aviv
-mi | atah
+vaiyomer | lo | Yitzchak | aviv | mi | atah
 vaiyomer
 ani | binkha | vekhorekha | Esav
 
@@ -222,15 +219,13 @@ ufarakta | ulo | me'al | tzavarekha
 27:41
 vaiyistom | Esav | et | Ya'ako | al | haberakhah | asher | berakho | aviv
 vaiyomer | Esav
-belibo | yikrevu | yemei | evel | avi
-ve'ahargah | et | Ya'ako | achi
+belibo | yikrevu | yemei | evel | avi | ve'ahargah | et | Ya'ako | achi
 
 27:42
 vaiyugad | Lerivkah | et | divrei | Esav | benah | hagadol
 vatishlach | vatikra | Leya'ako | benah | hakatan
 vatomer | elav
-hineh | Esav | achikha
-mitnachem | lekha | leharegekha
+hineh | Esav | achikha | mitnachem | lekha | leharegekha
 
 27:43
 ve'atah | veni | shema | bekoli

@@ -42,7 +42,8 @@ ve'et | kol | areihem | bemooshevotam
 ve'et | kol | tirotam | sarefu | ba'esh
 
 31:11
-vaiyikchu | et | kol | hashalal | ve'et | kol | hamalkoach | ba'adam | uvabehemah
+vaiyikchu | et | kol | hashalal | ve'et | kol | hamalkoach | ba'adam
+uvabehemah
 
 31:12
 vaiyavi'u | el | Mosheh
@@ -90,8 +91,7 @@ vekhol | ma'aseh | izim
 vekhol | keli | etz | titchata'u
 
 31:21
-vaiyomer | El'azar | hakohen | el | anshei | hatzava
-haba'im | lamilchamah
+vaiyomer | El'azar | hakohen | el | anshei | hatzava | haba'im | lamilchamah
 zot | chukat | hatorah
 asher | tzivah | Yahweh | et | Mosheh
 
@@ -235,8 +235,8 @@ kol | keli | ma'aseh
 
 31:52
 vayhi | kol | zehav | haterumah | asher | herimu | Layahweh
-shishah | asar | elef | sheva | me'ot | vachamishim
-shakel | me'et | sarei | ha'alafim | ume'et | sarei | hame'ot
+shishah | asar | elef | sheva | me'ot | vachamishim | shakel | me'et | sarei | ha'alafim
+ume'et | sarei | hame'ot
 
 31:53
 anshei | hatzava | bazezu | ish | lo

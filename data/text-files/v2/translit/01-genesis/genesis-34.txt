@@ -58,8 +58,7 @@ ka'asher | tomeru | elai | utenu | li | et | hana'ara | le'ishah
 
 34:13
 vaiya'anu | venei | Ya'ako | et | Shekhem | ve'et | Chamor | aviv | bemirmah
-vaydaberu
-asher | time | et | Dinah | achotam
+vaydaberu | asher | time | et | Dinah | achotam
 
 34:14
 vaiyomeru | aleihem
@@ -83,7 +82,8 @@ velakachnu | et | bitenu
 vehalakhenu
 
 34:18
-vaiyitevu | divreihem | be'einei | Chamor | uve'einei | Shekhem | ben | Chamor
+vaiyitevu | divreihem | be'einei | Chamor
+uve'einei | Shekhem | ben | Chamor
 
 34:19
 velo | echar | hana'ar | la'asot | hadavar | ki | chafetz
@@ -143,8 +143,7 @@ shavu | vaiyavozu | ve'et | kol | asher | babayit
 
 34:30
 vaiyomer | Ya'ako | el | Shim'on
-ve'el | Levi | akhartem | oti
-lehav'isheni | beyoshev | ha'aretz | bakena'ani
+ve'el | Levi | akhartem | oti | lehav'isheni | beyoshev | ha'aretz | bakena'ani
 uvapperizi
 va'ani | metei | mispar | vene'esfu | alai | vehikuni
 venishmadti | ani | uveiti

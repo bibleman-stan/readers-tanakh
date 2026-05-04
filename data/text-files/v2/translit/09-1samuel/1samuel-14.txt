@@ -65,7 +65,8 @@ davar | vaiyomer | Yonatan | el | nose | khelav | aleh | acharai | ki | netanam 
 beyad | Yisra'el
 
 14:13
-vaiya'al | Yonatan | al | yadav | ve'al | raglav | venose | khelav
+vaiya'al | Yonatan | al | yadav
+ve'al | raglav | venose | khelav
 acharav | vaiyipelu | lifnei | Yonatan | venose | khelav | memotet | acharav
 
 14:14
@@ -84,8 +85,7 @@ vehineh | hehamon | Namog
 vaiyelekh | vahalom
 
 14:17
-vaiyomer | Sha'ul | la'am
-asher | ito
+vaiyomer | Sha'ul | la'am | asher | ito
 pikdu | na | ure'u | mi | halakh | me'imanu
 vaiyifkedu | vehineh | ein | Yonatan | venose | khelav
 
@@ -141,8 +141,7 @@ beya'rat | hadevash | vaiyashev | yado | el | piv
 vataronah | einav
 
 14:28
-vaiya'an | ish
-meha'am
+vaiya'an | ish | meha'am
 vaiyomer | hashbea | hishbia | avikha | et | ha'am | lemor
 arur | ha'ish | asher | yokhal | lechem
 haiyom | vaiya'af | ha'am
@@ -191,8 +190,7 @@ neredah | acharei | felishtim | laylah | venavozah | vahem | ad | or | haboker
 velo | nash'er | bahem | ish
 vaiyomeru | kol | hatov
 be'eineikha | aseh
-vaiyomer | hakohen
-nikrevah | halom | el | ha'elohim
+vaiyomer | hakohen | nikrevah | halom | el | ha'elohim
 
 14:37
 vaiyish'al | Sha'ul | belohim | ha'ered | acharei | felishtim | hatitenem

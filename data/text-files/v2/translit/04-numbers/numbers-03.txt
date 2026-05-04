@@ -34,7 +34,8 @@ et | avodat | hamishkan
 veshameru | et | kol | kelei | ohel | mo'ed | ve'et | mishmeret | benei | Yisra'el | la'avod | et | avodat | hamishkan
 
 3:9
-venatatah | et | halviyim | Le'aharon | ulevanav
+venatatah | et | halviyim | Le'aharon
+ulevanav
 netunim | netunim | hemah | lo | me'et | benei | Yisra'el
 
 3:10
@@ -105,8 +106,8 @@ umishmeret | benei | Gereshon | be'ohel | mo'ed | hamishkan
 veha'ohel | mikhsehu | umasakh | petach | ohel | mo'ed
 
 3:26
-vekal'ei | hechatzer | ve'et | masakh | petach | hechatzer | asher | al | hamishkan | ve'al | hamizbeach
-saviv | ve'et | meitarav | lekhol | avodato
+vekal'ei | hechatzer | ve'et | masakh | petach | hechatzer | asher | al | hamishkan
+ve'al | hamizbeach | saviv | ve'et | meitarav | lekhol | avodato
 
 3:27
 Velikhat | mishpachat | ha'amrami
@@ -188,7 +189,11 @@ vaiyifkod | Mosheh
 ka'asher | tzivah | Yahweh | oto | et | kol | bekhor | bivnei | Yisra'el
 
 3:43
-vayhi | khol | bekhor | zakhar | bemispar | shemot | miben | chodesh | vama'lah | lifkudeihem | shenayim | ve'esrim | elef | sheloshah | veshiv'im | umatayim
+vayhi | khol | bekhor | zakhar | bemispar | shemot | miben | chodesh
+vama'lah | lifkudeihem | shenayim
+ve'esrim | elef | sheloshah
+veshiv'im
+umatayim
 
 3:44
 vaydaber | Yahweh | el | Mosheh | lemor

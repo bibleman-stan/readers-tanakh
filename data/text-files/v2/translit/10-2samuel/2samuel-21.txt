@@ -21,12 +21,10 @@ vaiyomeru | lo
 hagiv'onim | ein | lnu | kesef | vezahav | im | Sha'ul
 ve'im | beito | ve'ein | lanu | ish | lehamit | Beyisra'el
 vaiyomer
-mah | atem | omerim
-e'eseh | lakhem
+mah | atem | omerim | e'eseh | lakhem
 
 21:5
-vaiyomeru | el | hamelekh | ha'ish
-asher | kilanu | va'asher
+vaiyomeru | el | hamelekh | ha'ish | asher | kilanu | va'asher
 dimah | lanu | Nishmadnu | mehityatzev | bekhol | gevul | Yisra'el
 
 21:6
@@ -38,7 +36,8 @@ ani | eten
 21:7
 vaiyachmol | hamelekh | al | Mefi | Voshet
 ben | Yehonatan | ben | Sha'ul | al | shevu'at | Yahweh | asher | beinotam
-bein | David | uvein | Yehonatan | ben | Sha'ul
+bein | David
+uvein | Yehonatan | ben | Sha'ul
 
 21:8
 vaiyikach | hamelekh | etosh | shenei | benei | Ritzpah | vat | Aiyah | asher | yaldah | Lesha'ul
@@ -119,4 +118,5 @@ vaiyakehu | Yehonatan | ben | Shim'i | achi | David
 
 21:22
 et | arba'at | eleh | yuledu | Leharafah | Begat
-vaiyipelu | veyad | David | uveyad | avadav
+vaiyipelu | veyad | David
+uveyad | avadav

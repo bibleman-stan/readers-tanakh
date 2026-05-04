@@ -248,7 +248,8 @@ vaykalel | hapelishti | et | David | belohav
 17:44
 vaiyomer
 hapelishti | el | David | lekhah | elai | ve'etenah | et | besarekha
-le'of | hashamayim | ulevehemat | hasadeh
+le'of | hashamayim
+ulevehemat | hasadeh
 
 17:45
 vaiyomer | David | el | hapelishti
@@ -261,12 +262,12 @@ elohei | ma'arkhot | Yisra'el | asher | cherafta
 17:46
 haiyom | hazeh | yesagerkha | Yahweh | beyadi | vehikitikha | vahasiroti | et | roshekha | me'aleikha
 venatati | peger | machaneh | felishtim | haiyom | hazeh
-le'of | hashamayim | ulechaiyat | ha'aretz | veyede'u | kol | ha'aretz | ki | yesh | elohim
-Leyisra'el
+le'of | hashamayim
+ulechaiyat | ha'aretz | veyede'u | kol | ha'aretz | ki | yesh | elohim | Leyisra'el
 
 17:47
-veyede'u | kol | hakahal | hazeh
-ki | lo | becherev | uvachanit | yehoshia | Yahweh
+veyede'u | kol | hakahal | hazeh | ki | lo | becherev
+uvachanit | yehoshia | Yahweh
 ki | Layahweh | hamilchamah | venatan | etkhem | beyadenu
 
 17:48
@@ -297,7 +298,8 @@ vaiyanusu
 
 17:52
 vaiyakumu | anshei | Yisra'el | Vihudah | vaiyari'u | vaiyirdefu | et | hapelishtim
-ad | bo'akha | Gay | ve'ad | sha'arei | Ekron
+ad | bo'akha | Gay
+ve'ad | sha'arei | Ekron
 vaiyipelu | chalei | felishtim | bederekh | Sha'arayim | ve'ad | Gat
 ve'ad | Ekron
 
@@ -328,5 +330,4 @@ verosh | hapelishti | beyado
 17:58
 vaiyomer | elav | Sha'ul | ben | mi
 atah | hana'ar
-vaiyomer | David | ben | avdekha | Yishai | beit
-halachmi
+vaiyomer | David | ben | avdekha | Yishai | beit | halachmi

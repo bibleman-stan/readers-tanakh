@@ -104,13 +104,15 @@ vaiyismekhu | Aharon | uvanav | et | yedeihem | al | rosh | ha'ayil
 
 8:23
 vaiyishchat | vaiyikach | Mosheh | midamo
-vaiyiten | al | tenukh | ozen | Aharon
-haymanit | ve'al | bohen | yado | haymanit | ve'al | bohen | raglo | haymanit
+vaiyiten | al | tenukh | ozen | Aharon | haymanit
+ve'al | bohen | yado | haymanit
+ve'al | bohen | raglo | haymanit
 
 8:24
 vaiyakrev | et | benei | Aharon
 vaiyiten | Mosheh | min | hadam | al | tenukh | azenam | haymanit
-ve'al | bohen | yadam | haymanit | ve'al | bohen | raglam | haymanit
+ve'al | bohen | yadam | haymanit
+ve'al | bohen | raglam | haymanit
 vaiyizrok | Mosheh | et | hadam | al | hamizbeach | saviv
 
 8:25
@@ -122,7 +124,8 @@ ve'et | shok | haiyamin
 
 8:26
 umisal | hamatzot | asher | lifnei | Yahweh | lakach | chalat | matzah | achat | vechalat | lechem | shemen | achat | verakik | echad
-vaiyasem | al | hachalavim | ve'al | shok | haiyamin
+vaiyasem | al | hachalavim
+ve'al | shok | haiyamin
 
 8:27
 vaiyiten | et | hakol | al | kapei | Aharon

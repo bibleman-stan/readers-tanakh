@@ -44,13 +44,10 @@ ki | avedah | Mitzrayim
 10:8
 vaiyushav | et | Mosheh | ve'et | Aharon | el | par'oh
 vaiyomer | alehem
-lekhu | ivdu
-et | Yahweh | eloheikhem | mi | vami
-haholekhim
+lekhu | ivdu | et | Yahweh | eloheikhem | mi | vami | haholekhim
 
 10:9
-vaiyomer | Mosheh
-bin'areinu
+vaiyomer | Mosheh | bin'areinu
 uvizkeneinu | nelekh | bevaneinu
 uvivnotenu | betzonenu
 uvivkarenu | nelekh | ki | chag | Yahweh | lanu
@@ -95,7 +92,8 @@ uve'esev | hasadeh | bekhol | eretz | Mitzrayim
 vaymaher | par'oh | likro | Lemosheh
 Ule'aharon
 vaiyomer
-chatati | Layahweh | eloheikhem | velakhem
+chatati | Layahweh | eloheikhem
+velakhem
 
 10:17
 ve'atah | sa | na | chatati | akh | hapa'am

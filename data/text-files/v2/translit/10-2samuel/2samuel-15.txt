@@ -7,10 +7,8 @@ ratzim | lefanav
 15:2
 vehishkim | Avshalom | ve'amad | al | yad | derekh | hasha'ar
 vayhi | kol | ha'ish | asher | yihyeh | lov | riv | lavo | el | hamelekh | lamishpat | vaiyikra | Avshalom | elav
-vaiyomer
-ei | mizeh | ir | atah
-vaiyomer
-me'achad | shivtei | Yisra'el | avdekha
+vaiyomer | ei | mizeh | ir | atah
+vaiyomer | me'achad | shivtei | Yisra'el | avdekha
 
 15:3
 vaiyomer | elav | Avshalom
@@ -96,8 +94,7 @@ vekhol | hagitim | shesh | me'ot | ish | asher | ba'u | veraglo | Migat
 oerim | al | penei | hamelekh
 
 15:19
-vaiyomer | hamelekh | el | Itai
-hagiti
+vaiyomer | hamelekh | el | Itai | hagiti
 lamah | telekh | gam | atah | itanu
 shuv | veshev | im | hamelekh | ki | nakheri | atah
 vegam | goleh | atah | limkomecha
@@ -145,8 +142,7 @@ ve'im | koh | yomar | lo | chafatzti | bakh
 hini | ya'aseh | li | ka'asher | tov | be'einav
 
 15:27
-vaiyomer | hamelekh | el | Tzadok
-hakohen | haro'eh | atah
+vaiyomer | hamelekh | el | Tzadok | hakohen | haro'eh | atah
 shuvah | ha'ir | beshalom
 Va'achima'atz | binkha | Vihonatan | ben | Evyatar | shenei | veneikhem | itekhem
 
@@ -190,7 +186,8 @@ vehefartah | li | et | atzat | Achitofel
 15:35
 vahalo | imekha | sham | Tzadok | Ve'evyatar | hakohanim
 vehayah | kol | hadavar | asher | tishma | mibeit | hamelekh
-tagid | Letzadok | Ule'evyatar | hakohanim
+tagid | Letzadok
+Ule'evyatar | hakohanim
 
 15:36
 hineh | sham | imam | shenei | veneihem
