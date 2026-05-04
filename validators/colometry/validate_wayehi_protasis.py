@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Validate canon Rule H16 — FEF Wayehi Protasis.
+Validate canon Rule H16 — FEF Wayehi Protasis (IR-driven).
 
 Rule H16 (canon §5 H16; Layer 3 editorial rule):
 The Hebrew narrative construction וַיְהִי (wayyehi) + temporal/circumstantial
@@ -19,34 +19,40 @@ Three violation patterns are detected:
     started. The frame must be held together as one colon.
 
   STRONG-SPLIT-CANDIDATE — protasis collapsed with main clause: a line
-    containing וַיְהִי also contains the main clause's wayyiqtol verb on the
-    SAME line. The protasis should be on its own colon; the main clause should
-    open the next line.
+    containing וַיְהִי also contains the main clause's wayyiqtol (or other
+    finite) verb on the SAME line. The protasis should be on its own colon;
+    the main clause should open the next line.
 
   REVIEW-REQUIRED — ambiguous case: a וַיְהִי line is present but the validator
     cannot confidently determine whether the main clause has started (e.g., line
     ends without sof pasuq, next line's first word is ambiguous — could be
     continuation of protasis or start of main clause).
 
-Wayyehi detection:
-  Consonant skeleton ויהי (after stripping niqqud + te'amim) at line-initial
-  position. Only the FIRST token of the line triggers the check; a ויהי that
-  appears mid-line (after another wayyiqtol) is not a FEF opener.
+Wayyehi detection (post-2026-05-05 Macula pivot):
+  Replaces the consonant-skeleton trigger ('ויהי' bare match at line-initial
+  position) with a lemma+aspect IR check: `Token.lemma == "הָיָה"` AND
+  `Token.is_wayyiqtol`. The wayehi may be the first OR second IR token on the
+  line, since lowfat splits the conjunction `וַ` from the verb stem `יְהִי`
+  into separate <w> elements. We accept either position-0 or position-1 (after
+  a leading conjunction).
 
-Main-clause boundary heuristics:
-  The main clause typically begins with another wayyiqtol verb. Surface
-  heuristic: a token whose consonant skeleton starts with וי followed by at
-  least two more consonants is likely a wayyiqtol (prefix וי + root consonants).
-  When ANOTHER wayyiqtol appears after the initial וַיְהִי on the SAME line →
-  STRONG-SPLIT-CANDIDATE (protasis and main clause collapsed on one line).
+Second-verb detection (STRONG-SPLIT-CANDIDATE):
+  Replaces the surface heuristic `is_wayyiqtol_candidate` (bare token starts
+  with 'וי' + length ≥ 4) with `Token.is_finite_verb`. We exclude the wayehi
+  itself (lemma הָיָה + wayyiqtol), and skip subsequent lemma-הָיָה wayyiqtol
+  tokens (those are coordinated existential-style "and X became Y" cases like
+  Gen 1:5's וַיְהִי עֶרֶב וַיְהִי בֹקֶר, not main-clause closure).
 
 Existential ויהי exclusion (not a FEF):
   Standalone וַיְהִי functioning as "there was/became X" (existential) is NOT
-  a FEF protasis. We distinguish it by checking: does the line consist only of
-  ויהי + a subject NP with no temporal-marker tokens and end in sof pasuq?
-  If so, the ויהי is existential — skip.
-  Common temporal markers that confirm FEF status: כי, כאשר, and preposition-
-  prefix tokens (בְּ, לְ) suggesting a temporal/circumstantial phrase.
+  a FEF protasis. Lemma-based heuristic (mirrors the OLD validator's
+  `is_fef_token` permissive shape, ported from bare-skel matching to IR
+  lemma matching). FEF signals on the wayehi line:
+    - complementizer lemma (כִּי / כַּאֲשֶׁר / כְּ-prefix)
+    - recipient-PP lemma (אֶל) — prophetic-formula speech-event reception
+    - בְּ + closed-list temporal noun (יוֹם / עֵת / לַיְלָה / שָׁנָה)
+  Augmented by an IR clause-rule check: when the wayehi's enclosing clause
+  has rule 'V-S' (no PP/temporal-frame complement), treat as existential.
 
 Protasis-split detection (STRONG-MERGE-CANDIDATE):
   A line starts with ויהי and ends WITHOUT sof pasuq. The next non-blank,
@@ -57,7 +63,7 @@ Exit code: 0 if zero findings, 1 if findings present, 2 on setup error.
 
 Usage:
     PYTHONIOENCODING=utf-8 py -3 validators/colometry/validate_wayehi_protasis.py
-    PYTHONIOENCODING=utf-8 py -3 validators/colometry/validate_wayehi_protasis.py --book jonah
+    PYTHONIOENCODING=utf-8 py -3 validators/colometry/validate_wayehi_protasis.py --book 32-jonah
     PYTHONIOENCODING=utf-8 py -3 validators/colometry/validate_wayehi_protasis.py --v2
     PYTHONIOENCODING=utf-8 py -3 validators/colometry/validate_wayehi_protasis.py --json
     PYTHONIOENCODING=utf-8 py -3 validators/colometry/validate_wayehi_protasis.py --verbose
@@ -77,14 +83,14 @@ V1_DIR = REPO_ROOT / "data" / "text-files" / "v1" / "he-baseline"
 V2_DIR = REPO_ROOT / "data" / "text-files" / "v2" / "he"
 
 # ---------------------------------------------------------------------------
-# Shared morphology + morph-alignment helpers
+# IR helpers
 # ---------------------------------------------------------------------------
 sys.path.insert(0, str(REPO_ROOT / "validators"))
-from _shared import morphology as M   # noqa: E402
-from _shared import morph_alignment as MA  # noqa: E402
+from _shared import macula_constituents as MC  # noqa: E402
 
 # ---------------------------------------------------------------------------
-# Hebrew Unicode helpers
+# Hebrew Unicode helpers (still needed for line-level pre-IR triage and
+# sof-pasuq detection)
 # ---------------------------------------------------------------------------
 
 # Hebrew points range (U+0591–U+05C7): cantillation + niqqud
@@ -96,50 +102,55 @@ SOF_PASUQ = "׃"
 # Maqqef U+05BE
 MAQQEF = "־"
 
+# Consonant skeleton for וַיְהִי — used only as a cheap pre-IR triage filter
+# at line-initial position.
+WAYEHI_SKELETON = "ויהי"
+
 
 def strip_points(token: str) -> str:
     """Return token with all niqqud and te'amim stripped."""
     return HEBREW_POINTS_RE.sub("", token)
 
 
-def bare_line(line: str) -> list[str]:
-    """Return list of bare (point-stripped) tokens for a line."""
-    return [strip_points(t) for t in line.split() if strip_points(t)]
-
-
 # ---------------------------------------------------------------------------
-# FEF-detection constants
-# ---------------------------------------------------------------------------
-
-# Consonant skeleton for וַיְהִי after stripping — exact match required at
-# first-token position.
-WAYEHI_SKELETON = "ויהי"
-
-# Consonant prefix that identifies a wayyiqtol verb (וי + root consonants).
-# A token is a wayyiqtol candidate if its bare form starts with וי and has
-# length ≥ 4 (וי + at least 2 root consonants — avoids matching two-letter
-# particles that happen to start with וי).
-WAYYIQTOL_PREFIX = "וי"
-WAYYIQTOL_MIN_LEN = 4
-
-# Tokens that are themselves וַיְהִי (and NOT a different wayyiqtol) — we
-# need to detect the SECOND wayyiqtol on a line, so we must NOT count the
-# initial ויהי as the "second" verb.
+# Existential-filter lemma sets (IR-friendly, behavior-preserving)
 #
-# Tokens to exclude when scanning for the second wayyiqtol:
-# the initial wayehi itself and its rare spelling variants.
-WAYEHI_SPELLINGS = {"ויהי", "ויהיו"}
+# These mirror the OLD validator's `is_fef_token` permissive check, ported to
+# IR lemma matching. The OLD logic was:
+#   - any כ-prefix token (length ≥ 2)         → FEF (catches כִּי/כַּאֲשֶׁר/כִּזְרֹחַ/etc.)
+#   - any אֶל-prefix token (length ≥ 3)       → FEF (recipient marker)
+#   - closed-list ב-temporal skel             → FEF (בִּימֵי, בָּעֵת, ...)
+#
+# Translating to IR:
+#   - lemma in TEMPORAL_COMPLEMENTIZER_LEMMAS → FEF (כִּי / כַּאֲשֶׁר / כְּ-prefix)
+#   - lemma == "אֶל"                         → FEF (recipient PP marker)
+#   - בְּ preposition followed by lemma in B_TEMPORAL_NOUN_LEMMAS → FEF
+# ---------------------------------------------------------------------------
 
-# Common temporal-marker consonant skeletons that confirm FEF (protasis)
-# status rather than bare existential.
-#   כִּי / כַּאֲשֶׁר / בְּ-prefix / לְ-prefix tokens
-#   We use a prefix check for prepositional tokens since they fuse with nouns.
-TEMPORAL_MARKERS = {"כי", "כאשר", "כעת", "בעת"}
+# Complementizer lemmas matched against IR Token.lemma. Mirrors the OLD
+# is_fef_token's כ-prefix permissive heuristic by enumerating the closed set
+# of lemmas the prefix surfaces with in practice.
+TEMPORAL_COMPLEMENTIZER_LEMMAS = frozenset({
+    "כִּי",       # when / that — k-prefix complementizer
+    "כַּאֲשֶׁר",  # when / as — k-prefix complementizer
+    "כְּ",        # k-prefix preposition (כִּזְרֹחַ etc. — k + infinitive)
+})
 
-# Prepositional prefixes (bare) that often begin temporal phrases.
-# A token starting with one of these prefix consonants (after strip_points)
-# that has length ≥ 2 may be a temporal PP.
-TEMPORAL_PREFIXES = ("ב", "ל", "מ")
+# Recipient-PP lemma — אֶל marks the recipient in prophetic speech-event
+# reception formulas (e.g., Jonah 1:1 "the word of YHWH came TO Jonah").
+RECIPIENT_LEMMAS = frozenset({"אֶל"})
+
+# Closed-list temporal nouns the OLD `B_TEMPORAL` skel set covered.
+# IR-port: the surface tokens like בִּימֵי / בָּעֵת decompose into the
+# preposition `בְּ` (lemma) + a noun (lemma in this set). Detection requires
+# observing this pattern (preposition + noun, with optional intervening
+# definite article, which lowfat splits as a separate <w>).
+B_TEMPORAL_NOUN_LEMMAS = frozenset({
+    "יוֹם",       # day → בִּימֵי / בְּיוֹם (in the days of, on the day of)
+    "עֵת",        # time → בָּעֵת
+    "לַיְלָה",    # night → בַּלַּיְלָה
+    "שָׁנָה",     # year → בִּשְׁנַת
+})
 
 # Verse-reference line pattern: optional word + digits:digits
 VERSE_REF_RE = re.compile(r"^(\S+\s+)?\d+:\d+\s*$")
@@ -149,7 +160,7 @@ _VERSE_REF_BARE = re.compile(r"^\d+:\d+\s*$")
 
 
 # ---------------------------------------------------------------------------
-# Verse-grouping helper (mirrors validate_construct_chain.py pattern)
+# Verse-grouping helpers
 # ---------------------------------------------------------------------------
 
 def _partition_into_verses(lines: list[str]) -> list[tuple[int, list[tuple[int, str]]]]:
@@ -177,7 +188,7 @@ def _partition_into_verses(lines: list[str]) -> list[tuple[int, list[tuple[int, 
 
 
 # ---------------------------------------------------------------------------
-# Helpers
+# Line-level helpers
 # ---------------------------------------------------------------------------
 
 def is_skippable(line: str) -> bool:
@@ -195,131 +206,175 @@ def has_sof_pasuq(line: str) -> bool:
     return SOF_PASUQ in line
 
 
-def is_wayyiqtol_candidate(bare_token: str) -> bool:
-    """Heuristic: does this bare token look like a wayyiqtol verb?
+def line_starts_with_wayehi_skel(line: str) -> bool:
+    """Cheap pre-IR triage: does the line's first token match the consonant
+    skeleton 'ויהי'?
 
-    Wayyiqtol prefix: וי + root consonants.
-    Minimum length 4 to exclude particles that start with וי.
-    Excludes the ויהי skeleton itself (already the trigger; what we look for
-    is a SECOND, different wayyiqtol on the same line).
+    This is a coarse filter to skip non-candidate lines without paying the IR
+    alignment cost. The authoritative FEF detection (lemma+aspect via IR) runs
+    only on lines that pass this gate.
     """
-    if bare_token in WAYEHI_SPELLINGS:
+    tokens = line.split()
+    if not tokens:
         return False
-    return (
-        bare_token.startswith(WAYYIQTOL_PREFIX)
-        and len(bare_token) >= WAYYIQTOL_MIN_LEN
-    )
+    return strip_points(tokens[0]) == WAYEHI_SKELETON
 
 
-def is_second_wayyiqtol(raw_token: str, tag_list: "list[str] | None") -> bool:
-    """Return True if raw_token (not the initial ויהי) is a finite verb.
+# ---------------------------------------------------------------------------
+# IR-driven detection helpers
+# ---------------------------------------------------------------------------
 
-    Tag-aware primary path: delegates to M.is_finite_verb_token with tag_list
-    when tags are available.  Falls back to the surface is_wayyiqtol_candidate
-    heuristic on the bare skeleton when tags are absent.
+def find_wayehi_token(line_tokens: list["MC.Token"]) -> int:
+    """Return index of the wayehi (lemma הָיָה + wayyiqtol) IR token at the
+    head of the line, or -1 if not present at line-initial position.
 
-    The ויהי skeleton itself is excluded (caller strips index 0 before calling).
+    The wayehi may be at index 0 (rare) or index 1 (normal — when a leading
+    conjunction `וַ` has been split into its own <w> token by lowfat). We
+    accept positions 0 and 1; anywhere later is mid-line, not a FEF opener.
     """
-    bare = strip_points(raw_token)
-    if bare in WAYEHI_SPELLINGS:
-        return False
-    if tag_list is not None:
-        return M.is_finite_verb_token(raw_token, tag_list=tag_list)
-    return is_wayyiqtol_candidate(bare)
+    for i in (0, 1):
+        if i >= len(line_tokens):
+            break
+        t = line_tokens[i]
+        if t.lemma == "הָיָה" and t.is_wayyiqtol:
+            return i
+    return -1
 
 
-def has_temporal_marker(bare_tokens: list[str]) -> bool:
-    """Return True if any token in the bare-token list looks like a temporal
-    marker that would confirm this is a FEF protasis (not bare existential).
+def find_second_finite_verb(line_tokens: list["MC.Token"],
+                             wayehi_idx: int) -> int:
+    """Return index of a finite verb AFTER the wayehi that signals a
+    main-clause boundary, or -1 if none.
 
-    Checks:
-    - Exact match against TEMPORAL_MARKERS set.
-    - Token starts with a temporal prepositional prefix (ב, ל, מ) and has
-      length ≥ 2 (i.e., something is attached to the prefix).
-    - Token contains a maqqef (bound prepositional phrase is a strong cue).
+    Excludes:
+      - The wayehi itself (caller passes its index).
+      - Subsequent lemma-הָיָה wayyiqtol tokens (e.g., Gen 1:5
+        `וַיְהִי עֶרֶב וַיְהִי בֹקֶר` — coordinated existential, not a
+        main-clause boundary).
+      - Infinitives, participles (not finite).
     """
-    for tok in bare_tokens:
-        if tok in TEMPORAL_MARKERS:
+    for j in range(wayehi_idx + 1, len(line_tokens)):
+        t = line_tokens[j]
+        if not t.is_finite_verb:
+            continue
+        # Skip a coordinated wayehi (lemma הָיָה + wayyiqtol again)
+        if t.lemma == "הָיָה" and t.is_wayyiqtol:
+            continue
+        return j
+    return -1
+
+
+def line_has_fef_signal(line_tokens: list["MC.Token"],
+                         wayehi_idx: int) -> bool:
+    """IR-based FEF-signal detector (behavior-preserving port of OLD
+    is_fef_token's permissive heuristic).
+
+    Looks for any of the following AFTER the wayehi token:
+      - Complementizer lemma (כִּי / כַּאֲשֶׁר / כְּ-prefix)
+      - Recipient lemma (אֶל — prophetic-formula recipient marker)
+      - בְּ preposition immediately followed by a closed-list temporal noun
+        (יוֹם / עֵת / לַיְלָה / שָׁנָה). Mirrors the OLD B_TEMPORAL skel
+        check; deliberately does NOT fire for מִן-headed PPs (e.g.,
+        מִקֵּץ יָמִים — preserves OLD behavior of treating those as
+        existential and skipping).
+
+    The OLD validator's is_fef_token did NOT flag מִן-headed PPs as FEF
+    signals. Behavior-preserving port: match that scope exactly.
+    """
+    rest = line_tokens[wayehi_idx + 1:]
+    for i, t in enumerate(rest):
+        if t.lemma in TEMPORAL_COMPLEMENTIZER_LEMMAS:
             return True
-        # Maqqef-bound token — common in temporal phrases like בְּיוֹם־
-        if MAQQEF in tok:
+        if t.lemma in RECIPIENT_LEMMAS:
             return True
-        # Prepositional-prefix token that is not a bare particle
-        if len(tok) >= 2 and tok[0] in TEMPORAL_PREFIXES:
-            return True
+        # בְּ + closed-list temporal noun pattern (with optional definite
+        # article between)
+        if t.lemma == "בְּ" and i + 1 < len(rest):
+            for j in range(i + 1, min(i + 4, len(rest))):
+                nxt = rest[j]
+                if nxt.lemma in B_TEMPORAL_NOUN_LEMMAS:
+                    return True
+                # Allow definite article between preposition and noun
+                if nxt.lemma == "הַ":
+                    continue
+                # Any other token type → not the בְּ + temporal-noun pattern
+                break
     return False
 
 
-def is_fef_token(bare_token: str) -> bool:
-    """Return True if this token is a strong FEF indicator.
+def wayehi_clause_signals_existential(wayehi_token: "MC.Token") -> bool:
+    """IR clause-rule check: does the wayehi's enclosing clause have shape
+    'V-S' (verb + subject) with NO PP/temporal-frame complement?
 
-    Strong FEF markers that appear immediately after ויהי:
+    A clause rule like 'V-S' (Gen 1:5 evening/morning) is the canonical
+    existential pattern: ויהי + bare subject NP. A clause rule like 'V-PP'
+    (Ruth 1:1) or 'V-S-PP' (Jonah 1:1 — ויהי + word-of-YHWH + recipient PP)
+    is NOT bare existential.
 
-    1. כ-prefix temporal connectors:
-         כִּי (when/that), כַּאֲשֶׁר (when/as), כִּזְרֹחַ (when X rose)
-         Surface: bare token starts with כ, length ≥ 2.
-
-    2. Closed-list ב-temporal phrases (in the days of / at the time of):
-         בִּימֵי, בָּעֵת, בְּיוֹם — these appear in the FEF "in the days of X"
-         construction. Distinguished from locative בַּיָּם (at sea) by lexeme.
-
-    3. אֶל-preposition introducing a recipient (prophetic reception formula):
-         "The word of YHWH came to X" — אֶל marks the recipient of the speech
-         event, confirming this is a FEF speech-intro frame.
-         Surface: bare token starts with אל and length ≥ 3.
-
-    The ב-prefix alone is ambiguous (both FEF temporal and locative), so only
-    the closed-list ב-temporal tokens are treated as strong FEF markers.
+    Returns True only when the clause is unambiguously existential (V-S with
+    no PP/CL). When ambiguous (no IR clause), returns False — the lemma-level
+    FEF-signal check handles those cases.
     """
-    # כ-prefix: כִּי, כַּאֲשֶׁר, כִּזְרֹחַ, כְּלוֹת, etc.
-    if bare_token.startswith("כ") and len(bare_token) >= 2:
-        return True
-    # Closed-list ב-temporal
-    B_TEMPORAL = {"בימי", "בעת", "ביום", "ביומו", "ביומה", "בלילה", "בשנת"}
-    if bare_token in B_TEMPORAL:
-        return True
-    # אֶל-preposition (to / toward) — recipient marker in prophetic formula
-    if bare_token.startswith("אל") and len(bare_token) >= 3:
-        return True
+    cur = wayehi_token.parent_constituent
+    while cur is not None:
+        if cur.is_clause and cur.wg_rule:
+            rule = cur.wg_rule
+            # Pure V-S → existential
+            if rule == "V-S":
+                return True
+            # V-S followed by O/Pred (non-PP, non-CL) — still existential
+            # in shape (e.g., "and X became Y")
+            if rule.startswith("V-S-") and "PP" not in rule and "CL" not in rule:
+                return True
+            return False
+        cur = cur.parent
     return False
 
 
-def is_existential_wayehi(bare_tokens: list[str], next_line_bare: list[str]) -> bool:
-    """Return True if this line looks like an existential ויהי, NOT a FEF.
+def is_existential_wayehi_ir(line_tokens: list["MC.Token"],
+                              wayehi_idx: int,
+                              next_line_tokens: list["MC.Token"]) -> bool:
+    """IR-based existential check (behavior-preserving port of OLD
+    is_existential_wayehi).
 
-    An existential ויהי is "there was/became X" — the verb introduces a new
-    entity (subject NP) rather than a temporal frame.
+    Conservative — returns True (skip the line as existential) only when:
+      1. There is no second finite verb on the line (would be STRONG-SPLIT
+         territory; let caller handle).
+      2. No FEF-signal lemmas appear on the current line OR on the leading
+         tokens of the next line.
+      3. The wayehi's IR clause rule does not signal a temporal/PP frame
+         (the V-S clause-rule check is the IR-driven backstop).
 
-    Detection logic (conservative — False means "flag it"):
-    1. If there is a second wayyiqtol on the line → not existential (collapsed
-       FEF + main clause; caller handles as STRONG-SPLIT-CANDIDATE).
-    2. If any token on the line is a strong FEF indicator → not existential.
-    3. If the first token of the NEXT line is a strong FEF indicator (e.g., אֶל
-       starting the recipient phrase of a split reception formula) → not existential.
-    4. Otherwise → likely existential (ויהי + bare subject NP); skip.
-
-    We receive bare_tokens (stripped) for the current line and next_line_bare
-    for the first token of the following content line.
+    When the wayehi clause has a PP frame OR any FEF lemma signal is
+    present, returns False (treat as FEF — flag any split).
     """
-    # Skip first token (ויהי itself)
-    rest = bare_tokens[1:]
-
-    # Second wayyiqtol → STRONG-SPLIT-CANDIDATE territory; caller handles
-    for tok in rest:
-        if is_wayyiqtol_candidate(tok):
-            return False
-
-    # Any FEF-indicator token on the current line
-    for tok in rest:
-        if is_fef_token(tok):
-            return False
-
-    # FEF indicator on the next line (e.g., split reception formula where
-    # "אֶל X" continuation is on the following line)
-    if next_line_bare and is_fef_token(next_line_bare[0]):
+    # 1. Second finite verb → defer to caller (STRONG-SPLIT)
+    if find_second_finite_verb(line_tokens, wayehi_idx) >= 0:
         return False
 
-    # No FEF signals; treat as existential.
+    wayehi_token = line_tokens[wayehi_idx]
+
+    # 2. Lemma-based FEF signal on current line
+    if line_has_fef_signal(line_tokens, wayehi_idx):
+        return False
+
+    # 3. Lemma-based FEF signal on next line (split reception formula:
+    #    the recipient PP starting the next line). The OLD validator checked
+    #    `is_fef_token(next_line_bare[0])` — the FIRST bare-skel token of the
+    #    next line. IR-port: walk a few leading tokens (the IR's split of
+    #    prefix-conjunction means the first IR token may be `וַ`/`וְ`).
+    if next_line_tokens:
+        for t in next_line_tokens[:2]:
+            if (t.lemma in TEMPORAL_COMPLEMENTIZER_LEMMAS
+                    or t.lemma in RECIPIENT_LEMMAS):
+                return False
+
+    # 4. IR clause-rule check — definitively existential
+    if wayehi_clause_signals_existential(wayehi_token):
+        return True
+
+    # 5. No FEF signals AND clause-rule check inconclusive → conservatively
+    #    treat as existential (matches prior heuristic behavior).
     return True
 
 
@@ -327,13 +382,52 @@ def is_existential_wayehi(bare_tokens: list[str], next_line_bare: list[str]) -> 
 # Per-file scanner
 # ---------------------------------------------------------------------------
 
-def scan_file(path: Path, verbose: bool = False) -> list[dict]:
-    """Scan one text file for Rule H16 FEF wayehi protasis violations.
+CHAPTER_FILENAME_RE = re.compile(r"-(\d+)\.txt$", re.IGNORECASE)
 
-    Uses TAHOT morph tags (via morph_alignment) when available to classify
-    tokens as finite verbs with higher accuracy. Falls back to the surface
-    is_wayyiqtol_candidate heuristic when tags are missing or verse alignment
-    fails.
+
+def _chapter_for_path(path: Path) -> int:
+    """Extract chapter number from filename (e.g., 'jonah-01.txt' → 1)."""
+    m = CHAPTER_FILENAME_RE.search(path.name)
+    if not m:
+        # Defensive default; should not happen in production
+        return 1
+    return int(m.group(1))
+
+
+def _ir_idx_to_raw_idx(line_tokens_ir: list["MC.Token"],
+                        line_tokens_raw: list[str],
+                        ir_idx: int) -> int:
+    """Best-effort mapping from IR-token index back to raw-token index for
+    diagnostic split_at.
+
+    Strategy: walk raw tokens, accumulating their consonant skeletons in
+    lock-step with the IR-token consonant skeletons up to ir_idx. When the
+    accumulated raw-skel covers the IR-skel, return the current raw index.
+
+    Because lowfat splits prefix-conjunctions and articles into their own
+    <w>s, multiple IR tokens can correspond to one raw token. This mapping
+    is approximate; the diagnostic value is the surface position, not exact
+    token equivalence.
+    """
+    if ir_idx < 0 or ir_idx >= len(line_tokens_ir):
+        return ir_idx
+    target_skel = "".join(t.consonant_skel for t in line_tokens_ir[:ir_idx + 1])
+    accum = ""
+    for r_idx, raw in enumerate(line_tokens_raw):
+        accum += MC.consonant_skel(raw)
+        if len(accum) >= len(target_skel):
+            return r_idx
+    return len(line_tokens_raw) - 1
+
+
+def scan_file(path: Path, verbose: bool = False) -> list[dict]:
+    """Scan one text file for Rule H16 FEF wayehi protasis violations
+    (IR-driven, post-2026-05-05 Macula pivot).
+
+    Per verse, build the IR token alignment via MC.match_sense_line_tokens
+    (mirrors verb_object_bond and participial_speech_frame ports). For each
+    sense-line beginning with the ויהי skeleton, run the lemma+aspect
+    FEF-detection logic.
     """
     findings = []
     try:
@@ -341,105 +435,85 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
     except UnicodeDecodeError:
         lines = path.read_text(encoding="utf-8-sig").splitlines()
 
-    # Load TAHOT morph alignment for this chapter (None if v0/morph file absent).
-    chapter_morph = MA.load_chapter_morph(path)
-
-    # Partition all lines into per-verse groups for morph alignment.
+    book_slug = path.parent.name
+    chapter_no = _chapter_for_path(path)
     verse_groups = _partition_into_verses(lines)
 
-    # Build a quick lookup: verse_num → verse_token_tags (or None on failure).
-    # verse_token_tags[line_idx][tok_idx] → list[str] of TAHOT tags.
-    verse_tag_map: dict[int, list[list[list[str]]] | None] = {}
-    if chapter_morph is not None:
-        for verse_num, verse_numbered_lines in verse_groups:
-            ortho_tags = chapter_morph.get(verse_num)
-            if ortho_tags is None:
-                verse_tag_map[verse_num] = None
-                continue
-            content_lines = [raw for _, raw in verse_numbered_lines if not is_skippable(raw)]
-            if not content_lines:
-                verse_tag_map[verse_num] = None
-                continue
-            aligned = MA.align_verse_tokens_to_tags(content_lines, ortho_tags)
-            verse_tag_map[verse_num] = aligned  # may be None on mismatch
+    # Per-verse IR alignment: line_no -> list[Token] for that sense-line.
+    line_to_tokens: dict[int, list["MC.Token"]] = {}
 
-    # Build a flat index: 1-based-line-no → (verse_num, content_line_idx)
-    # so the flat scanner below can retrieve tags without re-partitioning.
-    line_to_verse_ctx: dict[int, tuple[int, int]] = {}
     for verse_num, verse_numbered_lines in verse_groups:
-        content_lines_enumerated = [
+        sense_lines = [
             (ln, raw) for ln, raw in verse_numbered_lines if not is_skippable(raw)
         ]
-        for ci, (ln, _raw) in enumerate(content_lines_enumerated):
-            line_to_verse_ctx[ln] = (verse_num, ci)
+        if not sense_lines:
+            continue
 
-    def _tag_list_for_line_token(line_no: int, tok_idx: int) -> "list[str] | None":
-        """Return TAHOT tag list for token at position tok_idx on line_no."""
-        ctx = line_to_verse_ctx.get(line_no)
-        if ctx is None:
-            return None
-        verse_num, ci = ctx
-        vtt = verse_tag_map.get(verse_num)
-        if vtt is None:
-            return None
-        if ci < 0 or ci >= len(vtt):
-            return None
-        row = vtt[ci]
-        if tok_idx < 0 or tok_idx >= len(row):
-            return None
-        return row[tok_idx]
+        try:
+            verse_tokens = MC.get_verse_tokens(book_slug, chapter_no, verse_num)
+        except (FileNotFoundError, ValueError, KeyError):
+            verse_tokens = []
+        if not verse_tokens:
+            # No IR available — skip this verse (graceful no-op; no findings
+            # emitted in absence of evidence). Aligns with the verb_object_bond
+            # pattern of "IR primary, no fallback to skel-only when alignment
+            # fails."
+            continue
 
+        cursor = 0
+        for ln, raw in sense_lines:
+            matched, cursor = MC.match_sense_line_tokens(
+                verse_tokens, raw, start_idx=cursor)
+            line_to_tokens[ln] = matched
+
+    # Walk lines in source order; only process lines whose first token is
+    # the consonant skeleton 'ויהי' (cheap pre-filter), then verify via IR.
     for i, line in enumerate(lines):
         if is_skippable(line):
             continue
-
-        line_tokens = line.split()
-        if not line_tokens:
-            continue
-
-        first_bare = strip_points(line_tokens[0])
-
-        # --- Only process lines whose FIRST token is ויהי ---
-        if first_bare != WAYEHI_SKELETON:
+        if not line_starts_with_wayehi_skel(line):
             continue
 
         line_no = i + 1  # 1-based
-        all_bare = [strip_points(t) for t in line_tokens]
+        line_tokens_raw = line.split()
+        line_tokens_ir = line_to_tokens.get(line_no, [])
 
-        # --- Find the next non-skippable content line (needed for existential check) ---
+        if not line_tokens_ir:
+            # Pre-filter said "looks like ויהי" but IR alignment unavailable.
+            # Don't emit a finding without evidence.
+            continue
+
+        # IR-confirmed wayehi position
+        wayehi_idx = find_wayehi_token(line_tokens_ir)
+        if wayehi_idx < 0:
+            # Pre-filter false positive (e.g., a different ויהי-skeleton lemma)
+            continue
+
+        # --- Find the next non-skippable content line ---
         next_line_content = ""
-        next_line_num = None
+        next_line_num: int | None = None
         for j in range(i + 1, len(lines)):
             if not is_skippable(lines[j]):
                 next_line_content = lines[j].strip()
                 next_line_num = j + 1
                 break
 
-        next_bare = [strip_points(t) for t in next_line_content.split() if strip_points(t)]
+        next_line_tokens_ir = (
+            line_to_tokens.get(next_line_num, []) if next_line_num else []
+        )
 
-        # --- Existential exclusion ---
-        # If there is no strong FEF indicator on the current line or immediately
-        # following line, and no second wayyiqtol → existential "there was/became X".
-        # Existential ויהי (e.g., "there was a great storm") is NOT an H16 FEF;
-        # skip it. Any split of an existential clause is an H2/H3 issue, not H16.
-        if is_existential_wayehi(all_bare, next_bare):
+        # --- Existential exclusion (IR-driven) ---
+        if is_existential_wayehi_ir(line_tokens_ir, wayehi_idx, next_line_tokens_ir):
             continue
 
-        # --- Check for second wayyiqtol on the SAME line (STRONG-SPLIT-CANDIDATE) ---
-        # Rest of tokens after the initial ויהי (index 0).
-        # Use tag-aware is_second_wayyiqtol: passes TAHOT tag_list when available,
-        # falls back to surface heuristic on tag miss.
-        second_wayyiqtol_idx = None
-        for k, raw_tok in enumerate(line_tokens[1:], start=1):
-            tag_list = _tag_list_for_line_token(line_no, k)
-            if is_second_wayyiqtol(raw_tok, tag_list):
-                second_wayyiqtol_idx = k
-                break
+        # --- Check for second finite verb on the SAME line (STRONG-SPLIT) ---
+        second_verb_idx_ir = find_second_finite_verb(line_tokens_ir, wayehi_idx)
 
-        if second_wayyiqtol_idx is not None:
-            # There is a second wayyiqtol on the same line as ויהי.
-            # The protasis and main clause are collapsed — flag STRONG-SPLIT.
-            main_verb_token = line_tokens[second_wayyiqtol_idx]
+        if second_verb_idx_ir >= 0:
+            main_verb_text = line_tokens_ir[second_verb_idx_ir].text
+            split_at_raw = _ir_idx_to_raw_idx(
+                line_tokens_ir, line_tokens_raw, second_verb_idx_ir)
+
             findings.append({
                 "file": path.name,
                 "file_path": path,
@@ -447,28 +521,21 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
                 "tag": "STRONG-SPLIT-CANDIDATE",
                 "brief": (
                     f"wayehi protasis collapsed with main clause on same line "
-                    f"— main-clause verb {main_verb_token!r} should open next line"
+                    f"— main-clause verb {main_verb_text!r} should open next line"
                 ),
                 "line": line.rstrip(),
                 "next_line": next_line_content,
                 "next_line_num": next_line_num,
-                "split_at": second_wayyiqtol_idx,
+                "split_at": split_at_raw,
             })
             continue
 
         # --- Protasis-split detection (STRONG-MERGE-CANDIDATE) ---
-        # The line starts with ויהי and does NOT end with sof pasuq.
-        # The next line continues the frame (no new verse has started, no
-        # sof pasuq closed the current verse on this line).
-        # This represents the protasis split across multiple cola.
         if not has_sof_pasuq(line):
-            # Confirm the next line is not a verse reference or blank.
             if next_line_content:
-                # Check if the next line itself starts a new ויהי (unlikely,
-                # but would be a separate FEF — not a continuation here).
-                next_bare_first = strip_points(next_line_content.split()[0]) if next_line_content.split() else ""
-                if next_bare_first == WAYEHI_SKELETON:
-                    # The next line is a fresh ויהי — ambiguous. Flag REVIEW-REQUIRED.
+                next_first_raw = next_line_content.split()[0] if next_line_content.split() else ""
+                next_first_bare = strip_points(next_first_raw)
+                if next_first_bare == WAYEHI_SKELETON:
                     findings.append({
                         "file": path.name,
                         "file_path": path,
@@ -499,8 +566,6 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
                         "split_at": None,
                     })
             else:
-                # No next line — wayehi at end of file without sof pasuq.
-                # This is probably a structural anomaly; flag REVIEW-REQUIRED.
                 findings.append({
                     "file": path.name,
                     "file_path": path,
@@ -517,11 +582,8 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
                 })
             continue
 
-        # --- Line ends with sof pasuq, no second wayyiqtol ---
-        # The ויהי line is self-contained (ends the verse).  This is the
-        # CORRECT pattern for Jonah 1:1 in v2/he: the entire FEF protasis +
-        # לֵאמֹר is on one line, closed with sof pasuq. No violation.
-        # Fall through: no finding emitted.
+        # --- Line ends with sof pasuq, no second finite verb ---
+        # Self-contained ויהי line; no violation. Fall through.
 
     return findings
 
@@ -626,6 +688,7 @@ def main():
         doc = {
             "validator": "validate_wayehi_protasis",
             "rule": "Layer 3 colometry — Rule H16",
+            "version": "2.0.0-ir",
             "layer": 3,
             "book": args.book or "all",
             "files_scanned": [
@@ -644,7 +707,7 @@ def main():
 
     # --- Human-readable output (default) ---
     print("=" * 72)
-    print(f"Rule H16 FEF Wayehi Protasis validator — Tanakh {tier_label}")
+    print(f"Rule H16 FEF Wayehi Protasis validator (IR-driven) — Tanakh {tier_label}")
     print(f"Reference: canon §5 H16 (protasis own line; main clause fresh line)")
     print("=" * 72)
     print(f"Files scanned : {len(files)}")

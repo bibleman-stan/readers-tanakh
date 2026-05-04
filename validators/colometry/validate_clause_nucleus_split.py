@@ -93,6 +93,104 @@ sys.path.insert(0, str(REPO_ROOT / "validators"))
 from _shared.poetic_register import is_poetic_register  # noqa: E402
 from _shared import morph_alignment as MA  # noqa: E402
 from _shared import morphology as M  # noqa: E402
+from _shared import macula_constituents as MC  # noqa: E402
+
+# ---------------------------------------------------------------------------
+# IR-driven helpers (post-2026-05-05 Macula pivot, Wave C)
+#
+# Replace heuristic predicates with declarative IR queries when per-line
+# IR alignment is available. The legacy heuristic helpers remain as
+# fallback for chapters where lowfat alignment fails (parser gaps, etc.).
+# ---------------------------------------------------------------------------
+
+
+def line_has_finite_verb_ir(line_ir_tokens: list["MC.Token"]) -> bool:
+    """True if any token in the line is a finite verb (qatal/yiqtol/wayyiqtol/
+    imperative/jussive/cohortative). Replaces `looks_like_finite_verb` /
+    `line_has_finite_verb_tagged` heuristic."""
+    return any(t.is_finite_verb for t in line_ir_tokens)
+
+
+def starts_with_participle_ir(line_ir_tokens: list["MC.Token"]) -> bool:
+    """True if the first content token is an active or passive participle.
+    Replaces `starts_with_participle` skel-heuristic."""
+    for t in line_ir_tokens:
+        if not t.text.strip():
+            continue
+        return t.is_participle
+    return False
+
+
+def starts_with_prep_ir(line_ir_tokens: list["MC.Token"]) -> tuple[bool, str | None]:
+    """True if the first content token is a preposition. Returns (is_prep, lemma).
+    Replaces `starts_with_prep` skel-heuristic."""
+    for t in line_ir_tokens:
+        if not t.text.strip():
+            continue
+        if t.is_preposition:
+            return True, t.lemma
+        return False, None
+    return False, None
+
+
+def starts_with_le_infinitive_ir(line_ir_tokens: list["MC.Token"]) -> bool:
+    """True if the line starts with לְ (preposition lemma 'ל') + infinitive
+    construct. Replaces `starts_with_le_infinitive` skel-heuristic."""
+    content = [t for t in line_ir_tokens if t.text.strip()]
+    if len(content) < 2:
+        return False
+    if not content[0].is_preposition or content[0].lemma != "ל":
+        return False
+    return content[1].is_infinitive_construct
+
+
+def line_is_bare_participle_ir(line_ir_tokens: list["MC.Token"]) -> bool:
+    """True if the line consists primarily of a participle predicate with
+    no PP/NP complement on the same line. Heuristic but IR-grounded."""
+    content = [t for t in line_ir_tokens if t.text.strip()]
+    if not content:
+        return False
+    # Must contain at least one participle
+    has_participle = any(t.is_participle for t in content)
+    if not has_participle:
+        return False
+    # No PP-head (preposition that's not the participle's own complement marker)
+    # Loosely: bare-ish if no preposition appears anywhere in the line.
+    has_prep = any(t.is_preposition for t in content)
+    return not has_prep
+
+
+def line_has_3p_pronominal_suffix_ir(line_ir_tokens: list["MC.Token"]) -> bool:
+    """True if any token has a participantref pointing to an antecedent token
+    elsewhere in the chapter — i.e., 3rd-person resumptive suffix (casus
+    pendens material). IR replaces orthographic suffix-detection."""
+    for t in line_ir_tokens:
+        if t.is_suffix and t.antecedents:
+            return True
+    return False
+
+
+def verse_is_wayehi_with_open_protasis_ir(
+    book_slug: str, chapter: int, verse: int,
+    next_line_pos_in_verse: int,
+    verse_sense_lines: list[str],
+) -> bool:
+    """True if the verse opens with a wayehi (וַיְהִי) construction whose
+    apodosis hasn't yet appeared by `next_line_pos_in_verse`. Uses IR
+    lemma+aspect to identify the wayehi trigger."""
+    try:
+        verse_tokens = MC.get_verse_tokens(book_slug, chapter, verse)
+    except (FileNotFoundError, ValueError, KeyError):
+        return False
+    if not verse_tokens:
+        return False
+    first = verse_tokens[0]
+    if first.lemma != "הָיָה" or not first.is_wayyiqtol:
+        return False
+    # Crude: if the next-line-pos-in-verse is small (<=2), assume protasis
+    # likely still open. The exact apodosis detection is heuristic; this
+    # IR check primarily replaces the wayehi-trigger detection.
+    return next_line_pos_in_verse <= 2
 
 # ---------------------------------------------------------------------------
 # Hebrew Unicode helpers
@@ -1054,6 +1152,33 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
                     line_token_tags[idx] = aligned[pos]
     # ─────────────────────────────────────────────────────────────────────
 
+    # ── Macula IR alignment (post-2026-05-05 Wave C) ─────────────────────
+    # Build per-line-index IR-token mapping alongside line_token_tags:
+    #   line_ir_tokens[line_idx] = list[MC.Token]
+    # IR-driven helpers take precedence over heuristic ones when the line
+    # has IR tokens; legacy helpers serve as fallback otherwise.
+    line_ir_tokens: dict[int, list["MC.Token"]] = {}
+    chap_match = re.search(r"-(\d+)\.txt$", path.name, re.IGNORECASE)
+    chap_int = int(chap_match.group(1)) if chap_match else None
+    if chap_int is not None:
+        for _ch, vs, indices in verses:
+            if vs is None:
+                continue
+            try:
+                verse_tokens = MC.get_verse_tokens(book, chap_int, vs)
+            except (FileNotFoundError, ValueError, KeyError):
+                continue
+            if not verse_tokens:
+                continue
+            cursor = 0
+            for idx in indices:
+                if is_skippable(lines[idx]):
+                    continue
+                matched, cursor = MC.match_sense_line_tokens(
+                    verse_tokens, lines[idx], start_idx=cursor)
+                line_ir_tokens[idx] = matched
+    # ─────────────────────────────────────────────────────────────────────
+
     for i, line in enumerate(lines):
         if is_skippable(line):
             continue
@@ -1087,13 +1212,24 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
         if chapter is not None and is_poetic_register(book, chapter, verse):
             continue
 
+        # IR token slices for line and next_line (post-2026-05-05 Wave C).
+        ir_line = line_ir_tokens.get(i, [])
+        ir_next = line_ir_tokens.get(next_idx, [])
+
         # --- Guard 9: both lines have a finite verb anywhere ---
-        prior_has_verb = line_has_finite_verb_tagged(
-            line, token_tags=line_token_tags.get(i)
-        )
-        next_has_verb = line_has_finite_verb_tagged(
-            next_line, token_tags=line_token_tags.get(next_idx)
-        )
+        # IR-driven when alignment is available; heuristic fallback otherwise.
+        if ir_line:
+            prior_has_verb = line_has_finite_verb_ir(ir_line)
+        else:
+            prior_has_verb = line_has_finite_verb_tagged(
+                line, token_tags=line_token_tags.get(i)
+            )
+        if ir_next:
+            next_has_verb = line_has_finite_verb_ir(ir_next)
+        else:
+            next_has_verb = line_has_finite_verb_tagged(
+                next_line, token_tags=line_token_tags.get(next_idx)
+            )
         if prior_has_verb and next_has_verb:
             continue
 
@@ -1103,30 +1239,48 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
             continue
 
         # --- Guard 10: next-line prep takes ל + infinitive ---
-        if starts_with_le_infinitive(next_line):
-            continue
+        if ir_next:
+            if starts_with_le_infinitive_ir(ir_next):
+                continue
+        else:
+            if starts_with_le_infinitive(next_line):
+                continue
 
         # --- Guard 2: H4 vocative position (prior line is vocative unit) ---
+        # Vocative is editorial/contextual — IR doesn't expose; keep heuristic.
         if line_is_vocative(line):
             continue
 
         # --- Guard 3: H14 discourse particle on next line ---
+        # Discourse-particle detection is closed-list lemma matching; the
+        # existing skel-helper is precise enough.
         if starts_with_discourse_particle(next_line):
             continue
 
         # --- Guard 5: H16 FEF wayehi protasis open ---
         if v_ctx is not None:
-            verse_content_lines = [lines[idx] for idx in verse_indices]
-            if verse_is_wayehi_with_open_protasis(verse_content_lines, pos_in_verse + 1):
-                continue
+            if verse and chap_int is not None:
+                if verse_is_wayehi_with_open_protasis_ir(
+                    book, chap_int, verse, pos_in_verse + 1,
+                    [lines[idx] for idx in verse_indices],
+                ):
+                    continue
+            else:
+                verse_content_lines = [lines[idx] for idx in verse_indices]
+                if verse_is_wayehi_with_open_protasis(verse_content_lines, pos_in_verse + 1):
+                    continue
 
         # --- Guard 7: heavy subject on prior line ---
         if line_has_heavy_subject(line):
             continue
 
         # --- Determine subcase ---
-        next_is_prep, prep_skel = starts_with_prep(next_line)
-        next_is_part = starts_with_participle(next_line)
+        if ir_next:
+            next_is_prep, prep_skel = starts_with_prep_ir(ir_next)
+            next_is_part = starts_with_participle_ir(ir_next)
+        else:
+            next_is_prep, prep_skel = starts_with_prep(next_line)
+            next_is_part = starts_with_participle(next_line)
 
         subcase: str | None = None
         verb_root: str | None = None
@@ -1174,8 +1328,14 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
                 break
             nb1_idx = k
             break
-        if nb1_idx is not None and line_has_3p_pronominal_suffix(lines[nb1_idx]):
-            continue
+        if nb1_idx is not None:
+            ir_nb1 = line_ir_tokens.get(nb1_idx, [])
+            if ir_nb1:
+                if line_has_3p_pronominal_suffix_ir(ir_nb1):
+                    continue
+            else:
+                if line_has_3p_pronominal_suffix(lines[nb1_idx]):
+                    continue
 
         # --- All guards passed; emit REVIEW-REQUIRED finding ---
         prior_text = line.strip()
