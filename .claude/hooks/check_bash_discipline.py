@@ -104,6 +104,28 @@ def _count_recent_agent_dispatches(transcript_path: str, lookback_lines: int = 2
 _QUOTED_PHRASE_RE = re.compile(r'"([^"]{20,})"')
 _OVERRIDE_TOKENS = ("# disciplined-allow:", "# split-justified:", "# audit-skippable:")
 
+# Agent-tool mechanical-vocabulary trigger (per 2026-05-04 colonoscopy audit
+# §3.2 Hook (ii) — scripts-default-vs-agents). Matches prompts that describe
+# a count/list/glob/scan/check deliverable — exactly the failure surface
+# where `feedback_scripts_default_agents_only_for_judgment.md` is repeatedly
+# violated. Initial regex (2026-05-05 audit verdict) was too narrow on the
+# verb side; widened post-audit to include extraction verbs (scan, check,
+# read, look up, pull, return, retrieve) that the colonoscopy memory
+# explicitly cites as Agent-vs-script anti-patterns. Still NOT included:
+# the broader "find Z" / "tell me about Z" which routinely tag judgment
+# calls.
+_AGENT_MECHANICAL_VOCAB_RE = re.compile(
+    r"\b(count(?:\s+(?:of|all|the))?|list\s+all|list\s+every|how\s+many|"
+    r"find\s+all|glob\s+for|enumerate(?:\s+all)?|"
+    r"scan\s+(?:every|all|each|the)|"
+    r"check\s+whether|check\s+if|"
+    r"look\s+up|pull\s+(?:every|all|each|the)|"
+    r"return\s+(?:every|all|each|the))\b",
+    re.IGNORECASE,
+)
+_AGENT_PROMPT_LENGTH_THRESHOLD = 2000  # characters, not tokens
+_AGENT_BYPASS_TOKEN = "# judgment-required:"
+
 
 def _extract_recent_user_turns(transcript_path: str, lookback_lines: int = 500) -> list[str]:
     """Return text content of recent user-typed turns from JSONL transcript tail.
@@ -208,6 +230,52 @@ def _validate_override_quotes(command: str, transcript_path: str) -> str | None:
                 f"find it, the citation does not exist; do not override."
             )
     return None
+
+
+def _agent_violations(prompt: str) -> list[str]:
+    """Detect Agent dispatches that describe script-able mechanical lookups.
+
+    Per the 2026-05-04 colonoscopy audit §3.2 Hook (ii): the memory
+    `feedback_scripts_default_agents_only_for_judgment.md` was the
+    highest-recidivism memory in the inventory — violated three times
+    within 24 hours of creation. This hook converts the prose discipline
+    into a runtime gate.
+
+    Trigger: Agent prompt body length <= 2000 chars AND mechanical-vocabulary
+    regex matches (count / list all / how many / find all / glob for /
+    enumerate). Bypass: prompt body starts with `# judgment-required:
+    <reason>` — visible in the JSONL for later audit.
+    """
+    if not prompt:
+        return []
+    stripped = prompt.lstrip()
+    if stripped.startswith(_AGENT_BYPASS_TOKEN):
+        return []  # Bypass token present — agent dispatch authorized
+    if len(prompt) > _AGENT_PROMPT_LENGTH_THRESHOLD:
+        return []  # Long prompt body = likely judgment-heavy synthesis
+    m = _AGENT_MECHANICAL_VOCAB_RE.search(prompt)
+    if not m:
+        return []
+    sample = m.group(0)
+    return [
+        f"[SCRIPTS-DEFAULT] Agent dispatch with short prompt body "
+        f"({len(prompt)} chars) matches mechanical-vocabulary trigger "
+        f"('{sample}'). Per `feedback_scripts_default_agents_only_for_judgment.md` "
+        f"and the 2026-05-04 colonoscopy audit §3.2: agents are for tasks "
+        f"where judgment can't be expressed as a regex/structured query. "
+        f"Counts, lists, globs, set-membership tests are deterministic and "
+        f"should be answered by Bash/Glob/Grep or a 30-line script in "
+        f"seconds — not dispatched to a Sonnet/Haiku agent at $0.05-0.15 "
+        f"+ 60-180s wall-clock.\n\n"
+        f"ACTION: (a) re-write the deliverable as a Bash/Glob/Grep call or "
+        f"a small persistent script under `scripts/scan_*.py`; OR (b) if "
+        f"the deliverable genuinely requires judgment that regex can't "
+        f"enumerate (e.g., classifying edge cases, multi-source synthesis, "
+        f"hostile audit), prefix the prompt body with "
+        f"`{_AGENT_BYPASS_TOKEN} <reason>` explaining what judgment is "
+        f"needed. The bypass token is visible in the JSONL trace and "
+        f"reviewable by Stan; use sparingly."
+    ]
 
 
 def _violations(command: str, payload: dict | None = None) -> list[str]:
@@ -339,7 +407,29 @@ def main() -> int:
         # Malformed input — don't block the tool call.
         return 0
 
-    if payload.get("tool_name") != "Bash":
+    tool_name = payload.get("tool_name")
+
+    # ── Agent tool: scripts-default-vs-agents gate ──────────────────────────
+    if tool_name == "Agent":
+        prompt = payload.get("tool_input", {}).get("prompt", "") or ""
+        if not prompt:
+            return 0
+        violations = _agent_violations(prompt)
+        if not violations:
+            return 0
+        msg = (
+            f"\n=== PreToolUse DISCIPLINE GATE — {len(violations)} "
+            f"anti-pattern(s) detected on Agent dispatch ===\n\n"
+            + "\n\n".join(f"{i + 1}. {v}" for i, v in enumerate(violations))
+            + f"\n\nBypass (visible in JSONL): prefix the Agent prompt body with "
+            f"'{_AGENT_BYPASS_TOKEN} <reason>'.\n"
+            "Use sparingly — every override is reviewable by Stan.\n"
+        )
+        print(msg, file=sys.stderr)
+        return 2
+
+    # ── Bash tool: existing heredoc / cascade / git-verbose / A3-Step0 gates ──
+    if tool_name != "Bash":
         return 0
 
     command = payload.get("tool_input", {}).get("command", "") or ""

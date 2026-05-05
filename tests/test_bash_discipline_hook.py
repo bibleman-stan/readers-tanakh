@@ -41,6 +41,26 @@ def run_hook(command: str, transcript_path: str = "") -> tuple[int, str]:
     return proc.returncode, proc.stderr
 
 
+def run_agent_hook(prompt: str) -> tuple[int, str]:
+    """Pipe an Agent tool_input.prompt to the hook; return (exit_code, stderr)."""
+    payload = {
+        "session_id": "test",
+        "transcript_path": "",
+        "cwd": str(Path.cwd()),
+        "hook_event_name": "PreToolUse",
+        "tool_name": "Agent",
+        "tool_input": {"description": "test", "prompt": prompt},
+    }
+    proc = subprocess.run(
+        [sys.executable, str(HOOK)],
+        input=json.dumps(payload),
+        capture_output=True,
+        text=True,
+        encoding="utf-8",
+    )
+    return proc.returncode, proc.stderr
+
+
 def _make_fake_transcript(n_agent_dispatches: int) -> str:
     """Write a fake JSONL transcript containing N Agent tool_use entries.
 
@@ -278,6 +298,108 @@ TRANSCRIPT_TESTS = [
 ]
 
 
+# ------------------------------------------------------------------
+# Agent-tool fixtures: (label, prompt, expected_block, expected_pattern_id)
+# Tests the [SCRIPTS-DEFAULT] gate added 2026-05-05 per colonoscopy
+# audit §3.2 Hook (ii).
+# ------------------------------------------------------------------
+
+AGENT_TESTS = [
+    # === ALLOWS (exit 0) ===
+    (
+        "empty agent prompt allowed",
+        "",
+        False,
+        "",
+    ),
+    (
+        "long judgment-heavy prompt allowed (over length threshold)",
+        "Conduct a multi-source synthesis on the question of whether Rule H18 "
+        "should apply differently in Sifrei Emet vs prose. Read the canon, "
+        "the wickes treatise excerpts in the academic vault, and the "
+        "Macula constituent trees for Psa 1, Job 3, and Pro 1. Compare "
+        "against Wave-B audit conclusions and produce an adversarial "
+        "evaluation across at least three dimensions: (1) cross-rule "
+        "interaction risk, (2) FP rate impact on adopted validators, "
+        "(3) editorial-burden tradeoffs. " * 4,
+        False,
+        "",
+    ),
+    (
+        "judgment-required bypass allows mechanical-vocab prompt",
+        "# judgment-required: per-item editorial classification on each finding\n"
+        "List all verses where the te'amim hierarchy contradicts the "
+        "proposed merge and explain why each one is or isn't a counterexample.",
+        False,
+        "",
+    ),
+    (
+        "judgment-heavy short prompt without trigger vocab allowed",
+        "Adversarially audit the H5d implementation against the canon §5 "
+        "definition. Identify any over-extensions or under-extensions.",
+        False,
+        "",
+    ),
+    # === BLOCKS (exit 2) ===
+    (
+        "'list all' short prompt blocks",
+        "List all books that have v2/he files.",
+        True,
+        "[SCRIPTS-DEFAULT]",
+    ),
+    (
+        "'how many' short prompt blocks",
+        "How many validators are in ADOPTED_VALIDATORS?",
+        True,
+        "[SCRIPTS-DEFAULT]",
+    ),
+    (
+        "'count' short prompt blocks",
+        "Count of STRONG-MERGE-CANDIDATE findings in genesis-01.",
+        True,
+        "[SCRIPTS-DEFAULT]",
+    ),
+    (
+        "'enumerate' short prompt blocks",
+        "Enumerate all rule IDs in colometry-canon.md.",
+        True,
+        "[SCRIPTS-DEFAULT]",
+    ),
+    (
+        "'find all' short prompt blocks",
+        "Find all instances of waw-consecutive in Jonah and report verse refs.",
+        True,
+        "[SCRIPTS-DEFAULT]",
+    ),
+    (
+        "'scan every' short prompt blocks (FN gap fix 2026-05-05)",
+        "Scan every v1-he-baseline file for the string 'וְ' at line-start and "
+        "return file:line pairs.",
+        True,
+        "[SCRIPTS-DEFAULT]",
+    ),
+    (
+        "'check whether' short prompt blocks (FN gap fix)",
+        "Check whether validate_clause_nucleus_split.py is in ADOPTED_VALIDATORS.",
+        True,
+        "[SCRIPTS-DEFAULT]",
+    ),
+    (
+        "'look up' short prompt blocks (FN gap fix)",
+        "Look up the adoption-threshold percentage for validator X in "
+        "the baseline.json.",
+        True,
+        "[SCRIPTS-DEFAULT]",
+    ),
+    (
+        "'pull every' short prompt blocks (FN gap fix)",
+        "Pull every Rule H pattern from colometry-canon.md.",
+        True,
+        "[SCRIPTS-DEFAULT]",
+    ),
+]
+
+
 def main() -> int:
     passed = 0
     failed = 0
@@ -285,6 +407,35 @@ def main() -> int:
 
     for label, command, expect_block, pattern_id in TESTS:
         code, err = run_hook(command)
+        was_blocked = code == 2
+
+        ok = True
+        if was_blocked != expect_block:
+            ok = False
+            failures.append(
+                f"  [{label}] expected {'BLOCK' if expect_block else 'ALLOW'} "
+                f"but got {'BLOCK' if was_blocked else 'ALLOW'} (exit {code}). "
+                f"stderr={err.strip()[:200]!r}"
+            )
+        elif expect_block and pattern_id and pattern_id not in err:
+            ok = False
+            failures.append(
+                f"  [{label}] blocked correctly but pattern_id {pattern_id!r} not in "
+                f"stderr. stderr={err.strip()[:200]!r}"
+            )
+
+        if ok:
+            passed += 1
+            print(f"  PASS  {label}")
+        else:
+            failed += 1
+            print(f"  FAIL  {label}")
+
+    # Agent-tool [SCRIPTS-DEFAULT] fixtures
+    print()
+    print("--- Agent [SCRIPTS-DEFAULT] fixtures ---")
+    for label, prompt, expect_block, pattern_id in AGENT_TESTS:
+        code, err = run_agent_hook(prompt)
         was_blocked = code == 2
 
         ok = True
