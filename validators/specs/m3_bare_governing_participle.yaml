@@ -17,7 +17,6 @@ trigger:
   combined_max_prosodic_words: 6
 
 guards:
-  - poetic_register
   - heavy_participial_complement
   - next_line_is_vav_coord_pp     # canon §1: enumeration members are atomic; M3 must not absorb post-S1 splits
   - next_line_is_vav_coord_np     # block re-absorbing post-S2-split coord-NP enumeration members

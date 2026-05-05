@@ -31,7 +31,6 @@ trigger:
     coordinated_pp_count: { min: 3 }
 
 guards:
-  - poetic_register
 
 annotation_template: "S1 coordinated-PP enumeration ({pwc} prosodic words; split into one PP per cola)"
 suggested_action: SPLIT_AT_VAV_PP_BOUNDARIES

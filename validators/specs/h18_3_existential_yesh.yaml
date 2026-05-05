@@ -18,7 +18,6 @@ trigger:
     has_finite_verb: false
 
 guards:
-  - poetic_register
   - casus_pendens
   - heavy_subject
   - next_line_is_vav_coord_pp     # block re-absorbing post-S1-split coord-PP enumeration members

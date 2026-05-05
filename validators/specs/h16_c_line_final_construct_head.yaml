@@ -30,7 +30,6 @@ trigger:
   combined_max_prosodic_words: 12
 
 guards:
-  - poetic_register
   - both_lines_have_finite_verb   # if both have finite verbs, independent clauses
   - next_line_is_vav_coord_pp     # block re-absorbing post-S1-split coord-PP enumeration members
   - next_line_is_vav_coord_np     # block re-absorbing post-S2-split coord-NP enumeration members

@@ -27,7 +27,6 @@ trigger:
   combined_max_prosodic_words: 7
 
 guards:
-  - poetic_register
   - both_lines_have_finite_verb     # if both have verbs, treat as separate clauses
   - prev_line_incomplete            # ensure line N is the new clause head, not a stranded continuation
   - next_line_is_verb_initial       # if lookahead is verb-initial, line N+1 is

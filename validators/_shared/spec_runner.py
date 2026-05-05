@@ -29,7 +29,8 @@ import yaml
 from . import morphology as M
 from . import morph_tags as MT
 from . import morph_alignment as MA
-from .poetic_register import is_poetic_register
+# is_poetic_register import retired 2026-05-05 along with _g_poetic and
+# _g_sifrei_emet_meter_protect — see guard-retirement comments below.
 
 
 # ─── spec data structures ───────────────────────────────────────────
@@ -366,9 +367,14 @@ def _register_guard(name: str):
     return decorator
 
 
-@_register_guard("poetic_register")
-def _g_poetic(l_n, l_n1, ctx):
-    return is_poetic_register(ctx["book"], ctx["chapter"], ctx.get("verse"))
+# _g_poetic guard RETIRED 2026-05-05 (Stan re-affirmed methodology principle).
+# Per the canon's "register is calibration, not authorization" rule (CLAUDE.md
+# "Imposing vs revealing" §Layer 3), validator logic and editorial judgment
+# must be register-agnostic. The 62 specs that previously listed
+# `- poetic_register` in their guards lists had it removed in the same purge.
+# The three editorial criteria (atomic thought / single image / Hebrew syntax)
+# adjudicate uniformly across registers; if a spec over-fires in Sifrei Emet
+# the answer is to tighten its trigger, NOT to add a register exemption.
 
 
 @_register_guard("vocative_position")
@@ -766,26 +772,14 @@ def _g_homograph_speech_verb_check(l_n, l_n1, ctx):
     return not has_speech_verb
 
 
-@_register_guard("sifrei_emet_meter_protect")
-def _g_sifrei_emet_meter_protect(l_n, l_n1, ctx):
-    """Path-1 carve-out: protect Sifrei Emet bicolon meter from over-splitting.
-
-    In Sifrei Emet (Pss/Prov/Job 3:1-42:6), short merged speech-frames
-    are often part of a propositionally-tight bicolon meter. Splitting
-    them disrupts established meter without propositional gain.
-
-    Returns True (block split-emit) iff:
-      - chapter is in Sifrei Emet poetic register
-      - line_n has ≤4 prosodic words (already a tight bicolon colon)
-    """
-    book = ctx.get("book")
-    chapter = ctx.get("chapter")
-    if not book or not chapter:
-        return False
-    if not is_poetic_register(book, chapter, ctx.get("verse")):
-        return False
-    n_toks = l_n.split()
-    return len(n_toks) <= 4
+# _g_sifrei_emet_meter_protect guard RETIRED 2026-05-05 (Stan re-affirmed
+# methodology principle). The "bicolon meter protect" rationale was textbook
+# overlay-as-authorization: it suppressed split emissions in Sifrei Emet on
+# a register-membership test ("≤4 words AND poetic register → block").
+# Stan's directive: "Don't add a Sifrei Emet skip back into anything during
+# the sweep. The default action when a validator over-fires in Sifrei Emet is
+# to tighten the validator's logic against the three criteria, not to add a
+# register exemption." No specs were using this guard at retirement time.
 
 
 @_register_guard("next_line_is_verb_initial")

@@ -21,7 +21,6 @@ trigger:
 
 guards:
   - m2_pp_prep_mismatch
-  - poetic_register
   - vocative_position
   - discourse_particle_on_next_line
   - casus_pendens

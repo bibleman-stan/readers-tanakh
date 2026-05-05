@@ -40,7 +40,6 @@ trigger:
     coordinated_np_count: { min: 4 }
 
 guards:
-  - poetic_register
 
 annotation_template: "S2 coordinated-NP enumeration ({pwc} prosodic words; split into one NP per cola)"
 suggested_action: SPLIT_AT_VAV_NP_BOUNDARIES

@@ -48,7 +48,6 @@ trigger:
 
 guards:
   - motion_locus_prep_mismatch
-  - poetic_register
   - both_lines_have_finite_verb     # if line N+1 has its own finite verb,
                                      # treat as separate clauses (e.g., when
                                      # the BREAK spec hasn't yet split a

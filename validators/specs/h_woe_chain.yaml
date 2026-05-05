@@ -17,7 +17,6 @@ trigger:
       - "אוי"
 
 guards:
-  - poetic_register
 
 annotation_template: "H-woe prophetic woe-particle chain — woe opening on line N (combined {pwc} prosodic words); review for asymmetric expansion vs. classical-comma standalone"
 suggested_action: REVIEW

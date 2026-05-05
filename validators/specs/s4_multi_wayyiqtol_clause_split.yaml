@@ -53,7 +53,6 @@ trigger:
     multi_wayyiqtol_count: true
 
 guards:
-  - poetic_register
 
 annotation_template: "S4 multi-wayyiqtol clause split — ≥2 wayyiqtols each heading own ATU ({pwc} prosodic words)"
 suggested_action: SPLIT_AT_FINITE_VERB_BOUNDARY

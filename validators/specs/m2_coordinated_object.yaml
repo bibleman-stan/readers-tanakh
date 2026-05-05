@@ -14,7 +14,6 @@ trigger:
   combined_max_prosodic_words: 8
 
 guards:
-  - poetic_register
   - both_lines_have_finite_verb
   - heavy_subject
   - next_line_is_vav_coord_pp     # block re-absorbing post-S1-split coord-PP enumeration members

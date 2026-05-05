@@ -90,7 +90,6 @@ trigger:
                                     # short NP, not a full DO clause)
 
 guards:
-  - poetic_register
   - line_n_ends_with_sof_pasuq    # NEW guard — sof-pasuq on V means clause-
                                     # final cantillation; next verse begins
                                     # fresh clause (1Kgs 16:18 וַיָּמֹֽת׃ |

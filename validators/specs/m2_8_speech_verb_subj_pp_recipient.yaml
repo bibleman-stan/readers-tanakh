@@ -46,7 +46,6 @@ trigger:
 
 guards:
   - m2_pp_prep_mismatch_first
-  - poetic_register
   - both_lines_have_finite_verb     # if line N+1 has its own finite verb,
                                      # treat as separate clauses (post-S5
                                      # split removes the additional verb)

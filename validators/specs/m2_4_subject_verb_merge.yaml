@@ -20,7 +20,6 @@ trigger:
   combined_max_prosodic_words: 5
 
 guards:
-  - poetic_register
   - prev_line_incomplete          # only fire when prev clause is complete
                                    # (line N is genuinely a new subject NP,
                                    #  not a stranded modifier)

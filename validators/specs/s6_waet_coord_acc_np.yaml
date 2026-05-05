@@ -36,7 +36,6 @@ trigger:
     waet_coord_acc_np: true
 
 guards:
-  - poetic_register
 
 annotation_template: "S6 waet-coord-acc-NP split — separate parallel object-with-modifier ATUs"
 suggested_action: SPLIT_AT_FINITE_VERB_BOUNDARY

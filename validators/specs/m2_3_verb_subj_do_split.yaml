@@ -21,7 +21,6 @@ trigger:
   combined_max_prosodic_words: 7
 
 guards:
-  - poetic_register
   - both_lines_have_finite_verb         # if both clauses are independent, don't merge
   - next_line_is_wayyiqtol              # block re-absorbing post-S3-split wayyiqtol-headed lines
   - next_line_is_vav_coord_pp           # block re-absorbing post-S1-split coord-PP enumeration members

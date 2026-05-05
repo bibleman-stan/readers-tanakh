@@ -33,7 +33,6 @@ trigger:
   combined_max_prosodic_words: 10
 
 guards:
-  - poetic_register             # suppress in Sifrei Emet
   - next_line_is_vav_coord_pp   # post-S1 split product → do not re-absorb
   - next_line_is_vav_coord_np   # post-S2 split product → do not re-absorb
   - next_line_is_wayyiqtol      # post-S3 clause-head → do not re-absorb

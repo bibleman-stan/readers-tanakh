@@ -14,7 +14,6 @@ trigger:
       - "אשר"
 
 guards:
-  - poetic_register
 
 annotation_template: "H9-rel אֲשֶׁר relative pronoun stranded from NP head (combined {pwc} prosodic words)"
 suggested_action: REVIEW

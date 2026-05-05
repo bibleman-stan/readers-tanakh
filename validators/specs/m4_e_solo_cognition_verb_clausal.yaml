@@ -58,7 +58,6 @@ trigger:
   combined_max_prosodic_words: 12  # complement clauses can run moderately long
 
 guards:
-  - poetic_register
   - prev_line_incomplete           # ensure line N is genuinely the head
                                      # of a new clausal unit
   - both_lines_have_finite_verb    # if N already has a finite verb

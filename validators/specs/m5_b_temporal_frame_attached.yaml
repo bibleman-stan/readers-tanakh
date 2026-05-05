@@ -66,7 +66,6 @@ trigger:
   combined_max_prosodic_words: 25
 
 guards:
-  - poetic_register
   - prev_line_incomplete            # ensure line N is a fresh frame, not
   - next_line_is_purpose_infinitive   # block re-absorbing post-S7 purpose-INF orphans (defensive)
                                      # a continuation of a stranded clause

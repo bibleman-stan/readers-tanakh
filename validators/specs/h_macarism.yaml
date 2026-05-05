@@ -16,7 +16,6 @@ trigger:
       - "אשרי"
 
 guards:
-  - poetic_register
 
 annotation_template: "Macarism אַשְׁרֵי opening stranded from content (combined {pwc} prosodic words) — classical comma or merge candidate per editor judgment"
 suggested_action: REVIEW

@@ -47,7 +47,6 @@ trigger:
     purpose_infinitive: true
 
 guards:
-  - poetic_register
 
 annotation_template: "S7 purpose-infinitive split — separate purpose-clause ATU"
 suggested_action: SPLIT_AT_FINITE_VERB_BOUNDARY

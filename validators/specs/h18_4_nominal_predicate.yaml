@@ -35,7 +35,6 @@ trigger:
   combined_max_prosodic_words: 7
 
 guards:
-  - poetic_register
   - vocative_position
   - discourse_particle_on_next_line
   - casus_pendens
