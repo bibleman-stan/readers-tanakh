@@ -21,13 +21,17 @@ SEVERITY:
   - REVIEW-REQUIRED — guards fire or ambiguous morphology
 
 GUARDS (forced-no-merge conditions; skip BEFORE emitting):
-  1. Poetic register — is_poetic_register(book, chapter, verse) → skip (per H18.2)
-  2. Casus pendens — first line has resumptive pronoun marker (rare for single-word)
-  3. Substantive-adjunct fronting — fronted PP is long/heavy (≥2 tokens, not single-word)
-  4. Poetic parallelism register — substantive parallelistic structure detected
-  5. FEF wayehi protasis — verse starts with וַיְהִי (H16)
-  6. Heavy predicate — second line's predicate is compound verb + object (≥4 combined tokens)
-  7. Cross-verse continuation — verse is not first in a multi-verse narrative block
+  1. Casus pendens — first line has resumptive pronoun marker (rare for single-word)
+  2. Substantive-adjunct fronting — fronted PP is long/heavy (≥2 tokens, not single-word)
+  3. Poetic parallelism register — substantive parallelistic structure detected
+  4. FEF wayehi protasis — verse starts with וַיְהִי (H16)
+  5. Heavy predicate — second line's predicate is compound verb + object (≥4 combined tokens)
+  6. Cross-verse continuation — verse is not first in a multi-verse narrative block
+
+NOTE: Poetic-register skip (formerly Guard 1, citing H18.2) was removed
+  2026-05-04 methodology audit. Canon §1 fronting paradox has no register carve-out;
+  H18.2 governs clause-nucleus integrity (a different rule); attributing an H18.2
+  carve-out to this validator was overlay-as-authorization. Superseded.
 
 ARCHITECTURAL CONSTRAINT — NO TE'AMIM IN PREDICATES:
 All trigger logic uses Hebrew morpho-syntactic patterns ONLY. Te'amim Unicode range
@@ -478,9 +482,10 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
         if pos_in_verse != 0:
             continue
 
-        # Guard 1: poetic register
-        if chapter is not None and is_poetic_register(book, chapter, verse):
-            continue
+        # Guard 1 (poetic register) removed 2026-05-04 methodology audit:
+        # Canon §1 fronting paradox has no register carve-out; the prior skip
+        # cited "H18.2" (clause-nucleus integrity — a different rule entirely).
+        # Overlay-as-authorization; superseded.
 
         # Signature 1: verse is short (≤6 prosodic words total)
         total_words = count_words_in_verse(lines, verse_indices)

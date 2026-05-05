@@ -99,7 +99,6 @@ sys.path.insert(0, str(REPO_ROOT / "validators"))
 from _shared import morphology as M   # noqa: E402
 from _shared import morph_alignment as MA  # noqa: E402
 from _shared import macula_constituents as MC  # noqa: E402
-from _shared.poetic_register import is_poetic_register  # noqa: E402
 
 # ---------------------------------------------------------------------------
 # Pattern (e) — Pronoun-Resumption (NEW, Macula-IR-driven)
@@ -263,7 +262,13 @@ def analyze_pattern_e_pronoun_resumption(
     # confirmation against a larger editorial sample.
     is_discrete_pronoun = trigger_token.is_pronoun
     is_suffix = trigger_token.is_suffix
-    poetic = is_poetic_register(book_slug, chapter, n1_verse_int)
+    # Methodology: poetic-register classification is calibration, not
+    # authorization. Cross-verse pronoun-resumption is adjudicated by the
+    # three editorial criteria (atomic thought, single image, Hebrew syntax)
+    # in any register. Suppressing or demoting findings based solely on
+    # register would treat the register classification as an overlay with
+    # deterministic force — which the canon explicitly prohibits. Severity
+    # stays REVIEW-REQUIRED corpus-wide pending wider editorial sampling.
     severity = "REVIEW-REQUIRED"
 
     last_cola = verse_n.last_cola

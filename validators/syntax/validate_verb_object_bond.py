@@ -21,9 +21,19 @@ Detection (IR-driven, post-2026-05-05 Macula pivot):
   suppresses them.
 
 Severity:
-  - STRONG-MERGE-CANDIDATE — finite verb + nominal A1 on next line,
-    prose register, no intervening guards. Category A per canon §2.
-  - REVIEW-REQUIRED — poetic register (Sifrei Emet).
+  - STRONG-MERGE-CANDIDATE — finite verb + nominal A1 on next line, prose
+    register, no intervening guards, no relp-ancestor on A1 (restrictive
+    relative exclusion), N+1 does not open with wayyiqtol. Category A per
+    canon §2.
+  - REVIEW-REQUIRED — poetic register, A1 has relp ancestor (restrictive
+    relative modifies object), A1 is verbal (infinitive construct/absolute),
+    or N+1 opens with wayyiqtol.
+
+Fallback (no lowfat alignment):
+  When the Macula IR cannot resolve tokens (synthetic fixture text, missing
+  lowfat XML), the scanner falls back to the pre-IR skeleton heuristic:
+  finite-verb skeleton on line N + אֵת marker starting line N+1. Fallback
+  findings are always REVIEW-REQUIRED (skel heuristic has known FPs).
 
 Architectural constraint:
   No te'amim glyph triggers anywhere. The IR exposes morph + role +
@@ -56,7 +66,6 @@ V2_DIR = REPO_ROOT / "data" / "text-files" / "v2" / "he"
 
 # Make _shared importable
 sys.path.insert(0, str(REPO_ROOT / "validators"))
-from _shared.poetic_register import is_poetic_register  # noqa: E402
 from _shared import macula_constituents as MC  # noqa: E402
 
 # Speech-verb lemmas (from Macula lowfat). The canonical Hebrew speech-event
@@ -100,6 +109,119 @@ PASEQ = "׀"      # ׀
 def strip_points(token: str) -> str:
     """Return token with niqqud and te'amim stripped (consonant skeleton only)."""
     return HEBREW_POINTS_RE.sub("", token)
+
+
+# ---------------------------------------------------------------------------
+# Skeleton-heuristic constants (fallback path when lowfat alignment absent)
+# ---------------------------------------------------------------------------
+
+# Wayyiqtol prefix bytes (consonant skeleton) — cover ו+י, ו+ת, ו+א, ו+נ
+WAYYIQTOL_PREFIXES = ("וי", "ות", "וא", "ונ")
+
+# High-frequency finite-verb skeletons used by the skel fallback.
+# Bias toward over-detection (conservative: rather fire a false positive
+# than miss a real violation) — same strategy as the pre-IR validator.
+FINITE_VERB_SKELETONS = {
+    "אמר", "אמרה", "אמרו", "אמרתי", "אמרת", "אמרנו", "אמרתם",
+    "ראה", "ראתה", "ראו", "ראיתי", "ראית", "ראינו",
+    "שמע", "שמעה", "שמעו", "שמעתי", "שמענו",
+    "ידע", "ידעה", "ידעו", "ידעתי", "ידעת", "ידענו",
+    "ברא", "ברך", "ברכה", "ברכו",
+    "הלך", "הלכה", "הלכו", "הלכתי",
+    "נתן", "נתנה", "נתנו", "נתתי",
+    "עשה", "עשתה", "עשו", "עשיתי",
+    "היה", "היתה", "היו", "הייתי",
+    "בא", "באה", "באו", "באתי",
+    "קם", "קמה", "קמו",
+    "לקח", "לקחה", "לקחו",
+    "כתב", "כתבה", "כתבו",
+    "מצא", "מצאה", "מצאו",
+    "נשא", "נשאה", "נשאו",
+    "ישב", "ישבה", "ישבו",
+    "עבר", "עברה", "עברו",
+    "אכל", "אכלה", "אכלו",
+    "עלה", "עלתה", "עלו",
+    "ירד", "ירדה", "ירדו",
+    "צוה", "צותה", "צוו",
+    "דבר", "דברה", "דברו",
+    "יאמר", "תאמר", "יאמרו", "ישמע", "תשמע",
+    "יעשה", "תעשה", "יעשו",
+    "ילך", "תלך", "ילכו",
+    "יתן", "תתן", "יתנו",
+    "יקח", "תקח", "יקחו",
+    "ישב", "תשב", "ישבו",
+    "ידע", "תדע", "ידעו",
+}
+
+
+def _looks_like_finite_verb(bare: str) -> bool:
+    """Heuristic: does bare consonant skeleton look like a finite verb?
+
+    Conservative bias: over-detect rather than under-detect.
+    Used only in the skel-fallback path when lowfat alignment is absent.
+    """
+    if not bare:
+        return False
+    if bare in FINITE_VERB_SKELETONS:
+        return True
+    # Wayyiqtol prefix (וי, ות, וא, ונ)
+    if bare.startswith(WAYYIQTOL_PREFIXES) and len(bare) >= 4 and bare != "ויהוה":
+        return True
+    # Maqqef-internal — check each segment
+    if MAQQEF in bare:
+        for part in bare.split(MAQQEF):
+            if not part:
+                continue
+            if part in FINITE_VERB_SKELETONS:
+                return True
+            if part.startswith(WAYYIQTOL_PREFIXES) and len(part) >= 4:
+                return True
+    # Qatal-suffix sniff
+    for suf in ("תי", "תם", "תן", "נו"):
+        if bare.endswith(suf) and len(bare) >= 4:
+            return True
+    return False
+
+
+def _line_contains_finite_verb_skel(line: str) -> bool:
+    """Skel-fallback: True if any content token on `line` looks like a finite verb."""
+    for tok in content_tokens(line):
+        bare = strip_points(tok).rstrip(SOF_PASUQ)
+        if _looks_like_finite_verb(bare):
+            return True
+    return False
+
+
+def _line_starts_with_et_marker_skel(line: str) -> bool:
+    """Skel-fallback: True if the first content token is the DO-marker אֵת.
+
+    Skel-only — cannot distinguish אֵת (DO marker) from אַתְּ (2fs pronoun);
+    that known FP class is why fallback findings are always REVIEW-REQUIRED.
+
+    Note: HEBREW_POINTS_RE (which strip_points uses) includes maqqef (U+05BE),
+    so אֶת־X becomes bare 'אתX'. We check: bare exactly 'את', or bare starts
+    with 'את' followed by more consonants (maqqef-joined construction), or the
+    raw token contains MAQQEF preceded by 'את'.
+    """
+    toks = content_tokens(line)
+    if not toks:
+        return False
+    raw = toks[0]
+    bare = strip_points(raw)
+    # Exact match: bare אֵת stripped to 'את'
+    if bare == "את":
+        return True
+    # Maqqef-joined: bare is 'אתX...' (maqqef stripped by strip_points)
+    # Also catches raw-token MAQQEF check
+    if bare.startswith("את") and len(bare) > 2:
+        return True
+    # Defensive: check raw token for MAQQEF after את
+    if MAQQEF in raw:
+        head = raw.split(MAQQEF, 1)[0]
+        head_bare = strip_points(head)
+        if head_bare == "את":
+            return True
+    return False
 
 
 # ---------------------------------------------------------------------------
@@ -214,6 +336,58 @@ def a1_is_clausal(verb: "MC.Token", a1_tokens: list["MC.Token"]) -> bool:
     return False
 
 
+def a1_has_relp_ancestor(a1_token: "MC.Token") -> bool:
+    """STRONG guard: A1 token is inside a restrictive relative clause (wg_class='relp').
+
+    Restrictive-relative-modified objects ('the land that I will show you')
+    are a known false-positive class: the object is genuinely stranded, but
+    the relative clause's content may legitimately span lines. These are
+    ambiguous enough to remain REVIEW-REQUIRED.
+    """
+    cur = a1_token.parent_constituent
+    while cur is not None:
+        if cur.wg_class == "relp":
+            return True
+        cur = cur.parent
+    return False
+
+
+def a1_is_all_nominal(stranded: list["MC.Token"]) -> bool:
+    """STRONG guard: all stranded A1 tokens are nominal (noun/pronoun/suffix/particle).
+
+    Returns False if any A1 token is verbal (pos='verb'), which catches
+    infinitive-construct / infinitive-absolute A1 ('cease + to do evil') —
+    VP-complement splits that are borderline-licensed and should stay REVIEW.
+    The clausal-A1 guard already handles role='v' (clause-head A1); this
+    guard catches verbal-pos tokens with other roles (e.g., infinitives
+    assigned role='o' or role=None).
+    """
+    for a in stranded:
+        if a.pos == "verb":
+            return False
+        if a.role == "v":
+            return False
+    return True
+
+
+def n_plus_1_opens_wayyiqtol(n_plus_1_tokens: list["MC.Token"]) -> bool:
+    """STRONG guard: N+1 line opens with a wayyiqtol finite verb.
+
+    A wayyiqtol opening N+1 signals a new sequential-narrative clause head,
+    not a continuation of the verb-object bond on N. These are REVIEW-REQUIRED
+    because the stranded 'A1' may actually be an adverbial complement resolved
+    across the clause boundary by the parser (frame-arg recall artifact).
+    Skips leading conjunction tokens before inspecting the first lexical token.
+    """
+    for t in n_plus_1_tokens:
+        if not t.text.strip():
+            continue
+        if t.is_conjunction:
+            continue
+        return t.is_wayyiqtol
+    return False
+
+
 def line_opens_with_coordinated_object(n_plus_1_tokens: list["MC.Token"]) -> bool:
     """Coordinated-object license-guard.
 
@@ -284,17 +458,6 @@ def partition_into_verses(lines: list[str]) -> list[tuple[int | None, int | None
 
 
 # ---------------------------------------------------------------------------
-# Forced-no-merge guards
-# ---------------------------------------------------------------------------
-
-def is_poetic_context(book: str, chapter: int | None, verse: int | None) -> bool:
-    """Guard: is this line in a poetic register (Psalms, Proverbs, Job 3:1-42:6)?"""
-    if chapter is None or verse is None:
-        return False
-    return is_poetic_register(book, chapter, verse)
-
-
-# ---------------------------------------------------------------------------
 # Per-file scanner
 # ---------------------------------------------------------------------------
 
@@ -305,6 +468,12 @@ def scan_file(path: Path) -> list[dict]:
     on line N, check whether any of its frame-arg A1 tokens (per Macula
     lowfat constituent-tree) appears on line N+1. If so, and no guard fires,
     emit a violation.
+
+    Fallback path: when the Macula IR cannot resolve tokens for a verse
+    (unknown book slug, missing lowfat XML, empty alignment), falls back to
+    the pre-IR skeleton heuristic: finite-verb skel on N + אֵת-marker on N+1.
+    Fallback findings are always REVIEW-REQUIRED (skel cannot disambiguate
+    אֵת from אַתְּ).
     """
     violations: list[dict] = []
     try:
@@ -324,68 +493,123 @@ def scan_file(path: Path) -> list[dict]:
         if len(sense_indices) < 2:
             continue
 
-        # Pull lowfat verse tokens
+        # --- IR path: attempt to load lowfat verse tokens ---
+        verse_tokens: list["MC.Token"] = []
+        ir_available = False
         try:
             verse_tokens = MC.get_verse_tokens(book_slug, ch, vs)
+            if verse_tokens:
+                ir_available = True
         except (FileNotFoundError, ValueError, KeyError):
-            continue
-        if not verse_tokens:
-            continue
+            pass
 
-        # Greedy-align each sense-line to the verse's tokens
-        line_to_tokens: dict[int, list["MC.Token"]] = {}
-        cursor = 0
-        for idx in sense_indices:
-            matched, cursor = MC.match_sense_line_tokens(verse_tokens, lines[idx], start_idx=cursor)
-            line_to_tokens[idx] = matched
+        if ir_available:
+            # ---- IR-driven detection ----
+            # Greedy-align each sense-line to the verse's tokens
+            line_to_tokens: dict[int, list["MC.Token"]] = {}
+            cursor = 0
+            for idx in sense_indices:
+                matched, cursor = MC.match_sense_line_tokens(
+                    verse_tokens, lines[idx], start_idx=cursor
+                )
+                line_to_tokens[idx] = matched
 
-        # Walk pairwise (N, N+1)
-        for k in range(len(sense_indices) - 1):
-            line_n_idx = sense_indices[k]
-            line_n_plus_1_idx = sense_indices[k + 1]
-            line_n = lines[line_n_idx]
-            line_n_plus_1 = lines[line_n_plus_1_idx]
+            # Walk pairwise (N, N+1)
+            for k in range(len(sense_indices) - 1):
+                line_n_idx = sense_indices[k]
+                line_n_plus_1_idx = sense_indices[k + 1]
+                line_n = lines[line_n_idx]
+                line_n_plus_1 = lines[line_n_plus_1_idx]
 
-            n_tokens = line_to_tokens.get(line_n_idx, [])
-            n_plus_1_tokens = line_to_tokens.get(line_n_plus_1_idx, [])
-            if not n_tokens or not n_plus_1_tokens:
-                continue
-
-            n_plus_1_ids = {t.xml_id for t in n_plus_1_tokens}
-
-            # Find finite verbs on line N whose A1 reaches into line N+1
-            for verb in n_tokens:
-                if not verb.is_finite_verb:
-                    continue
-                a1_tokens = verb.frame_args.get("A1") or []
-                if not a1_tokens:
-                    continue
-                stranded = [a1 for a1 in a1_tokens if a1.xml_id in n_plus_1_ids]
-                if not stranded:
+                n_tokens = line_to_tokens.get(line_n_idx, [])
+                n_plus_1_tokens = line_to_tokens.get(line_n_plus_1_idx, [])
+                if not n_tokens or not n_plus_1_tokens:
                     continue
 
-                # --- Guard B: H5b speech-frame (per-verb, not per-line) ---
-                if verb_is_speech_verb(verb):
-                    continue
+                n_plus_1_ids = {t.xml_id for t in n_plus_1_tokens}
 
-                # --- Guard: clausal-A1 license (כִּי / אֲשֶׁר / inf-construct) ---
-                if a1_is_clausal(verb, stranded):
-                    continue
+                # Find finite verbs on line N whose A1 reaches into line N+1
+                for verb in n_tokens:
+                    if not verb.is_finite_verb:
+                        continue
+                    a1_tokens = verb.frame_args.get("A1") or []
+                    if not a1_tokens:
+                        continue
+                    stranded = [a1 for a1 in a1_tokens if a1.xml_id in n_plus_1_ids]
+                    if not stranded:
+                        continue
 
-                # --- Guard: coordinated-object enumeration (וְאֵת / וְ + obj) ---
-                if line_opens_with_coordinated_object(n_plus_1_tokens):
-                    continue
+                    # --- Guard B: H5b speech-frame (per-verb, not per-line) ---
+                    if verb_is_speech_verb(verb):
+                        continue
 
-                # --- Severity ---
-                # Post-IR-pivot (2026-05-05): all findings emit REVIEW-REQUIRED.
-                # The IR's frame-args resolution surfaces ~600 candidates the
-                # prior skel-`את`-trigger missed; promotion to STRONG-MERGE-
-                # CANDIDATE awaits editorial triage of the FP rate (suspected
-                # FP classes still uncovered: restrictive-relative-modified
-                # objects, appositive enumeration, head-quantifier separation).
-                # Severity floor matches the prior validator's poetic-register
-                # behavior (the only 5 prior findings were all REVIEW-REQUIRED).
-                severity = "REVIEW-REQUIRED"
+                    # --- Guard: clausal-A1 license (כִּי / אֲשֶׁר / inf-construct) ---
+                    if a1_is_clausal(verb, stranded):
+                        continue
+
+                    # --- Guard: coordinated-object enumeration (וְאֵת / וְ + obj) ---
+                    if line_opens_with_coordinated_object(n_plus_1_tokens):
+                        continue
+
+                    # --- Severity ---
+                    # Superseded by 2026-05-04 methodology audit: poetic register
+                    # removed as STRONG-promotion gate. Verb-object stranding is a
+                    # clause-nucleus syntactic phenomenon that applies in any register;
+                    # IR features (frame-args A1, no relp ancestor, no wayyiqtol-N+1)
+                    # already discriminate TP/FP without needing register input.
+                    if (
+                        a1_is_all_nominal(stranded)
+                        and not any(a1_has_relp_ancestor(a) for a in stranded)
+                        and not n_plus_1_opens_wayyiqtol(n_plus_1_tokens)
+                    ):
+                        # All STRONG criteria met:
+                        # - all stranded A1 tokens are nominal (not verbal)
+                        # - no A1 token is inside a restrictive relative clause
+                        # - N+1 does not open with a new wayyiqtol clause head
+                        severity = "STRONG-MERGE-CANDIDATE"
+                    else:
+                        # Ambiguity present: restrictive relative, infinitive A1,
+                        # or competing wayyiqtol clause on N+1
+                        severity = "REVIEW-REQUIRED"
+
+                    prior_text = line_n.strip()
+                    next_text = line_n_plus_1.strip()
+
+                    violations.append({
+                        "file": path.name,
+                        "file_path": path,
+                        "file_rel": str(path.relative_to(REPO_ROOT)).replace("\\", "/"),
+                        "line_num": line_n_idx + 1,
+                        "next_line_num": line_n_plus_1_idx + 1,
+                        "next_line": next_text,
+                        "severity": severity,
+                        "book": book_slug,
+                        "chapter": ch,
+                        "verse": vs,
+                        "prior_line": prior_text,
+                        "rule": "L1.5/M2",
+                        "brief": (
+                            f"finite verb {verb.text!r} A1={[a.text for a in stranded]!r} "
+                            f"stranded across sense-lines — {prior_text} // {next_text}"
+                        ),
+                    })
+                    # One finding per (line_n, line_n_plus_1) pair
+                    break
+
+        else:
+            # ---- Skel fallback: no lowfat alignment for this verse ----
+            # Pre-IR heuristic: finite-verb skel on N + אֵת marker on N+1.
+            # Always REVIEW-REQUIRED (skel cannot disambiguate אֵת vs אַתְּ).
+            for k in range(len(sense_indices) - 1):
+                line_n_idx = sense_indices[k]
+                line_n_plus_1_idx = sense_indices[k + 1]
+                line_n = lines[line_n_idx]
+                line_n_plus_1 = lines[line_n_plus_1_idx]
+
+                if not _line_contains_finite_verb_skel(line_n):
+                    continue
+                if not _line_starts_with_et_marker_skel(line_n_plus_1):
+                    continue
 
                 prior_text = line_n.strip()
                 next_text = line_n_plus_1.strip()
@@ -397,19 +621,17 @@ def scan_file(path: Path) -> list[dict]:
                     "line_num": line_n_idx + 1,
                     "next_line_num": line_n_plus_1_idx + 1,
                     "next_line": next_text,
-                    "severity": severity,
+                    "severity": "REVIEW-REQUIRED",
                     "book": book_slug,
                     "chapter": ch,
                     "verse": vs,
                     "prior_line": prior_text,
                     "rule": "L1.5/M2",
                     "brief": (
-                        f"finite verb {verb.text!r} A1={[a.text for a in stranded]!r} "
-                        f"stranded across sense-lines — {prior_text} // {next_text}"
+                        f"[skel-fallback] finite verb + אֵת stranded across "
+                        f"sense-lines — {prior_text} // {next_text}"
                     ),
                 })
-                # One finding per (line_n, line_n_plus_1) pair
-                break
 
     return violations
 

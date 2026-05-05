@@ -16,10 +16,12 @@ Unicode range (U+0591–U+05AF) does NOT appear in any predicate that decides
 whether to fire a finding. Te'amim MAY appear in finding annotations as
 informational defensibility-capture.
 
-REGISTER SKIP:
-Validators that should skip poetic registers use is_poetic_register(). This
-validator calls it at Guard 1 to suppress false positives in Sifrei Emet and
-embedded-poetry chapters.
+REGISTER SKIP (superseded 2026-05-04):
+The original Guard 1 skipped poetic registers via is_poetic_register(). This
+was removed by methodology audit 2026-05-04: interrogative patterns appear
+throughout poetry (Job is filled with rhetorical questions), and poetic-register
+classification is calibration, not authorization. All three editorial criteria
+(atomic thought, single image, Hebrew syntax) apply uniformly across registers.
 
 Output format:
     [DEVIATION]  file:line  interrogative-clause-split  STRONG-MERGE-CANDIDATE/REVIEW-REQUIRED  brief
@@ -361,9 +363,10 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
 
         line_no = i + 1  # 1-based
 
-        # --- Guard 1: poetic register ---
-        if chapter is not None and is_poetic_register(book, chapter, verse):
-            continue
+        # --- Guard 1: poetic register (REMOVED 2026-05-04 — superseded by methodology audit)
+        # Interrogative patterns appear throughout poetry (Job rhetorical questions etc.).
+        # Poetic-register classification is calibration, not authorization; all three
+        # editorial criteria apply uniformly across registers. Skip removed. ---
 
         # --- Check if line ends with interrogative particle ---
         ends_with_interrog, particle = line_ends_with_interrogative_particle(line)

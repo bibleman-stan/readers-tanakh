@@ -1,0 +1,9 @@
+# FIXTURE: good-01 — finite verb and אֵת DO-marker on the same line (bond intact)
+# Skel-fallback path (synthetic fixture has no lowfat alignment).
+# Rule: L1.5/M2 — verb-object clause-nucleus bond
+# Expected: 0 findings
+
+1:1
+וַיִּקַּח אֶת־הָאֶרֶץ
+בְּרֵאשִׁית בָּרָא׃
+

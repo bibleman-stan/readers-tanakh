@@ -24,7 +24,10 @@ whether to fire a finding. Te'amim MAY appear in finding annotations as
 informational defensibility-capture — the trigger must remain syntactic.
 
 FORCED-NO-MERGE GUARDS (skip BEFORE emitting):
-  1. Poetic register — is_poetic_register(book, chapter, verse) → skip.
+  1. [SUPERSEDED 2026-05-04] Poetic register skip removed — bonded-pair detection
+     applies in any register (Ps 25:10, Ps 85:11, etc. are real findings, not noise).
+     Three editorial criteria (atomic thought, single image, Hebrew syntax) are the
+     adjudicators; register is calibration only, not authorization to suppress.
   2. Different verse — cross-verse merges forbidden.
   3. One member carries a finite verb — no longer a simple N=2 noun pair.
 
@@ -416,9 +419,10 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
         next_line = lines[next_idx]
         next_line_no = next_idx + 1
 
-        # --- Guard 1: poetic register ---
-        if chapter is not None and is_poetic_register(book, chapter, verse):
-            continue
+        # --- Guard 1: poetic register skip REMOVED 2026-05-04 ---
+        # Superseded by methodology audit: bonded-pair detection applies in any
+        # register. Poetic register is calibration, not authorization to suppress.
+        # Real findings exist in Psalms (Ps 25:10, Ps 85:11, etc.).
 
         # --- Guard 3: either line has a finite verb → not a simple noun pair ---
         prior_has_verb = line_has_finite_verb(line)

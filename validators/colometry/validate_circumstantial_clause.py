@@ -52,7 +52,6 @@ V2_DIR = REPO_ROOT / "data" / "text-files" / "v2" / "he"
 
 # Make _shared importable when this script is run as __main__.
 sys.path.insert(0, str(REPO_ROOT / "validators"))
-from _shared.poetic_register import is_poetic_register  # noqa: E402
 from _shared import morphology as M  # noqa: E402
 from _shared import morph_alignment as MA  # noqa: E402
 
@@ -520,9 +519,13 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
         next_pos = next_v_ctx[2] if next_v_ctx else 0
         next_token_tags = _get_token_tags(next_v_ctx, next_pos)
 
-        # --- Guard: poetic register ---
-        if chapter is not None and is_poetic_register(book, chapter, verse):
-            continue
+        # --- Guard: poetic register --- SUPERSEDED 2026-05-04 methodology audit
+        # (overlay-as-authorization removed): circumstantial clauses occur in poetry;
+        # skipping suppressed real findings. Three editorial criteria (atomic thought,
+        # single image, Hebrew syntax) adjudicate — poetic register is calibration, not
+        # authorization. Skip removed; findings now emitted for all registers.
+        # if chapter is not None and is_poetic_register(book, chapter, verse):
+        #     continue
 
         # --- Guard: combined > 4 prosodic words (per spec: "very short") ---
         # Note: spec says merge only when very short (≤4 prosodic words combined)

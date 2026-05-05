@@ -589,8 +589,12 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
         )
 
         # --- Guard: poetic register ---
-        if chapter is not None and is_poetic_register(book, chapter, verse):
-            continue
+        # SUPERSEDED 2026-05-04 methodology audit (overlay-as-authorization removed).
+        # כִּי is pervasive in poetry; poetic register is calibration context, not a
+        # skip authorization. Findings now surface for editor judgment under the three
+        # criteria (atomic thought, single image, Hebrew syntax) like all other cola.
+        # if chapter is not None and is_poetic_register(book, chapter, verse):
+        #     continue
 
         # --- Trigger: does next line start with כִּי + finite verb? ---
         ki_with_verb, has_vav = next_line_starts_with_ki_verb(

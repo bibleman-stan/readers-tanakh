@@ -221,6 +221,95 @@ def line_starts_with_wayehi_skel(line: str) -> bool:
 
 
 # ---------------------------------------------------------------------------
+# Skeleton-heuristic fallback helpers (used when IR alignment is unavailable,
+# e.g. synthetic fixture text with no Macula lowfat coverage).
+# ---------------------------------------------------------------------------
+
+# Consonant-skeleton prefixes that signal a FEF complementizer (כ-prefix)
+_K_PREFIX_SKEL = "כ"
+
+# Consonant-skeleton prefix for recipient-PP marker (אל)
+_AL_PREFIX_SKEL = "אל"
+
+# Consonant skeletons of ב + closed-list temporal nouns (בימי, ביום, בעת,
+# בלילה, בשנת — matches the OLD B_TEMPORAL skel set).
+_B_TEMPORAL_SKELS = frozenset({"ביום", "בימי", "בעת", "בלילה", "בשנת"})
+
+# ב-prefix (matches בְּ / בַּ / בִּ etc. at token start when stripping points)
+_B_PREFIX_SKEL = "ב"
+
+# Closed-list temporal noun skeletons (preceded by ב-prefix token)
+_TEMPORAL_NOUN_SKELS = frozenset({"יום", "ימי", "עת", "לילה", "שנת", "שנה"})
+
+
+def _skel_has_fef_signal(line_tokens_raw: list[str]) -> bool:
+    """Skeleton-heuristic FEF-signal detector.
+
+    Mirrors is_fef_token's permissive heuristic from the pre-IR validator:
+      - any token (after the wayehi) whose consonant skeleton starts with כ
+        (length ≥ 2) → complementizer signal
+      - any token whose consonant skeleton starts with אל (length ≥ 3)
+        → recipient-PP signal
+      - skeleton starts with ב and is in B_TEMPORAL_SKELS, OR
+        ב-prefix token immediately followed by a temporal-noun-skel token
+        → ב + temporal-noun signal
+    """
+    # Skip index 0 (the wayehi itself)
+    for i, raw in enumerate(line_tokens_raw[1:], start=1):
+        skel = strip_points(raw).replace(MAQQEF, "")
+        if len(skel) >= 2 and skel.startswith(_K_PREFIX_SKEL):
+            return True
+        if len(skel) >= 3 and skel.startswith(_AL_PREFIX_SKEL):
+            return True
+        if skel in _B_TEMPORAL_SKELS:
+            return True
+        # ב-prefix + immediately following temporal noun
+        if skel == _B_PREFIX_SKEL and i + 1 < len(line_tokens_raw):
+            next_skel = strip_points(line_tokens_raw[i + 1]).replace(MAQQEF, "")
+            if next_skel in _TEMPORAL_NOUN_SKELS:
+                return True
+    return False
+
+
+def _skel_find_second_wayyiqtol(line_tokens_raw: list[str]) -> int:
+    """Return index of the first wayyiqtol-candidate token AFTER the wayehi,
+    or -1 if none.
+
+    Heuristic: token starts with 'וי' and length ≥ 4 (bare skeleton),
+    AND is not 'ויהי' itself (coordinated existential).
+    """
+    for i, raw in enumerate(line_tokens_raw[1:], start=1):
+        skel = strip_points(raw).replace(MAQQEF, "")
+        if (len(skel) >= 4
+                and skel.startswith("וי")
+                and skel != WAYEHI_SKELETON):
+            return i
+    return -1
+
+
+def _skel_is_existential(line_tokens_raw: list[str],
+                          next_line_tokens_raw: list[str]) -> bool:
+    """Skeleton heuristic: is this a bare existential ויהי (not a FEF)?
+
+    Conservative — returns True only when:
+      1. No second wayyiqtol candidate on this line.
+      2. No FEF-signal token on this line OR on the leading token of the next.
+    """
+    if _skel_find_second_wayyiqtol(line_tokens_raw) >= 0:
+        return False
+    if _skel_has_fef_signal(line_tokens_raw):
+        return False
+    # Check leading token(s) of next line for recipient-PP or complementizer
+    for raw in next_line_tokens_raw[:2]:
+        skel = strip_points(raw).replace(MAQQEF, "")
+        if len(skel) >= 3 and skel.startswith(_AL_PREFIX_SKEL):
+            return False
+        if len(skel) >= 2 and skel.startswith(_K_PREFIX_SKEL):
+            return False
+    return True
+
+
+# ---------------------------------------------------------------------------
 # IR-driven detection helpers
 # ---------------------------------------------------------------------------
 
@@ -479,8 +568,94 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
         line_tokens_ir = line_to_tokens.get(line_no, [])
 
         if not line_tokens_ir:
-            # Pre-filter said "looks like ויהי" but IR alignment unavailable.
-            # Don't emit a finding without evidence.
+            # IR alignment unavailable (e.g. synthetic fixture text with no
+            # Macula lowfat coverage). Fall back to skeleton-heuristic detection
+            # so that fixture tests and any unsupported books still fire correctly.
+            next_line_content = ""
+            next_line_num_fb: int | None = None
+            for j in range(i + 1, len(lines)):
+                if not is_skippable(lines[j]):
+                    next_line_content = lines[j].strip()
+                    next_line_num_fb = j + 1
+                    break
+
+            next_line_raw_tokens = next_line_content.split() if next_line_content else []
+
+            if _skel_is_existential(line_tokens_raw, next_line_raw_tokens):
+                continue
+
+            second_verb_raw_idx = _skel_find_second_wayyiqtol(line_tokens_raw)
+            if second_verb_raw_idx >= 0:
+                main_verb_text = line_tokens_raw[second_verb_raw_idx]
+                findings.append({
+                    "file": path.name,
+                    "file_path": path,
+                    "line_num": line_no,
+                    "tag": "STRONG-SPLIT-CANDIDATE",
+                    "brief": (
+                        f"wayehi protasis collapsed with main clause on same line "
+                        f"— main-clause verb {main_verb_text!r} should open next line"
+                        f" [skel-fallback]"
+                    ),
+                    "line": line.rstrip(),
+                    "next_line": next_line_content,
+                    "next_line_num": next_line_num_fb,
+                    "split_at": second_verb_raw_idx,
+                })
+                continue
+
+            if not has_sof_pasuq(line):
+                if next_line_content:
+                    next_first_bare = strip_points(
+                        next_line_content.split()[0]) if next_line_content.split() else ""
+                    if next_first_bare == WAYEHI_SKELETON:
+                        findings.append({
+                            "file": path.name,
+                            "file_path": path,
+                            "line_num": line_no,
+                            "tag": "REVIEW-REQUIRED",
+                            "brief": (
+                                f"wayehi line without sof pasuq followed by another wayehi — "
+                                f"ambiguous protasis boundary; editorial review required"
+                                f" [skel-fallback]"
+                            ),
+                            "line": line.rstrip(),
+                            "next_line": next_line_content,
+                            "next_line_num": next_line_num_fb,
+                            "split_at": None,
+                        })
+                    else:
+                        findings.append({
+                            "file": path.name,
+                            "file_path": path,
+                            "line_num": line_no,
+                            "tag": "STRONG-MERGE-CANDIDATE",
+                            "brief": (
+                                f"wayehi protasis split across lines — "
+                                f"merge continuation onto the wayehi line until main clause boundary"
+                                f" [skel-fallback]"
+                            ),
+                            "line": line.rstrip(),
+                            "next_line": next_line_content,
+                            "next_line_num": next_line_num_fb,
+                            "split_at": None,
+                        })
+                else:
+                    findings.append({
+                        "file": path.name,
+                        "file_path": path,
+                        "line_num": line_no,
+                        "tag": "REVIEW-REQUIRED",
+                        "brief": (
+                            f"wayehi line without sof pasuq and no following content — "
+                            f"anomalous; editorial review required [skel-fallback]"
+                        ),
+                        "line": line.rstrip(),
+                        "next_line": "",
+                        "next_line_num": None,
+                        "split_at": None,
+                    })
+            # sof-pasuq line with FEF signal but no second wayyiqtol → self-contained; no violation
             continue
 
         # IR-confirmed wayehi position

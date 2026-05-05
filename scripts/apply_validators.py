@@ -123,10 +123,13 @@ ADOPTED_VALIDATORS: dict[str, AdoptionSpec] = {
         "STRONG-MERGE-CANDIDATE",
         # STRONG-SPLIT-CANDIDATE not yet adopted for this validator
     },
-    # Phase 2: adopt divine_name subcase only (frozen compounds, high-confidence).
-    # article_rectum and common_construct_ending remain REVIEW-REQUIRED.
+    # Phase 2: divine_name subcase (frozen compounds, high-confidence).
+    # 2026-05-04 expansion: npofnp_split subcase now adopted — IR-driven
+    # short-chain detector (≤4 tokens, no embedded relative clause) per
+    # validator-internal STRONG criteria. article_rectum and
+    # common_construct_ending remain REVIEW-REQUIRED.
     "validate_construct_chain": {
-        "STRONG-MERGE-CANDIDATE": ["divine_name"],
+        "STRONG-MERGE-CANDIDATE": ["divine_name", "npofnp_split"],
     },
     # M4/subject-pronoun-orphan STRONG arm only — tight pattern (1-token line
     # is subject pronoun + tag-confirmed finite verb on next line of same verse).
@@ -153,6 +156,16 @@ ADOPTED_VALIDATORS: dict[str, AdoptionSpec] = {
     "validate_genealogy_uniformity": {"STRONG-MERGE-CANDIDATE"},
     "validate_interrogative_clause": {"STRONG-MERGE-CANDIDATE"},
     "validate_oath_formula": {"STRONG-MERGE-CANDIDATE"},
+    # ── Adopted 2026-05-04 post-Macula-pivot promotion sweep ──────────────
+    # Validators that previously emitted only REVIEW-REQUIRED (defensive
+    # floor inherited from the Macula IR ports) now emit STRONG tags via
+    # IR-discriminating guards (frame-args, register, clause-ancestor checks).
+    # Adoption gates the new STRONG findings into the cascade auto-apply path.
+    "validate_clause_nucleus_split": {
+        "STRONG-MERGE-CANDIDATE",
+        "STRONG-SPLIT-CANDIDATE",
+    },
+    "validate_participial_speech_frame": {"STRONG-SPLIT-CANDIDATE"},
 }
 
 # ---------------------------------------------------------------------------
@@ -184,6 +197,11 @@ ALL_VALIDATORS: list[tuple[str, str]] = [
     ("validators/colometry/validate_genealogy_uniformity.py",  "validate_genealogy_uniformity"),
     ("validators/colometry/validate_interrogative_clause.py",  "validate_interrogative_clause"),
     ("validators/colometry/validate_oath_formula.py",          "validate_oath_formula"),
+    # ── Pre-existing ADOPTED-but-missing entry, repaired 2026-05-04 ──────
+    ("validators/colometry/validate_complement_integrity.py",  "validate_complement_integrity"),
+    # ── Registered 2026-05-04 post-Macula-pivot promotion sweep ──────────
+    ("validators/colometry/validate_clause_nucleus_split.py",  "validate_clause_nucleus_split"),
+    ("validators/colometry/validate_participial_speech_frame.py", "validate_participial_speech_frame"),
     # validate_discourse_particles removed 2026-05-04 — script never existed;
     # functionality covered by validate_bare_discourse_particle.py.
 ]

@@ -43,7 +43,8 @@ corpus survey (100%) met the §7.4 threshold. The H18.3 branch here is
 SUPERSEDED by that spec; it remains for corpus-audit cross-reference only.
 
 FORCED-NO-MERGE GUARDS (skip BEFORE emitting):
-  1. Poetic register — is_poetic_register(book, chapter, verse) → skip.
+  1. Poetic register — REMOVED 2026-05-04 (overlay-as-authorization; H18 applies
+     in any register per methodology audit; is_poetic_register skip superseded).
   2. H4 vocative — prior line is a vocative unit (address particle, or short
      line ending in divine vocative).
   3. H14 discourse particle — next line starts with הִנֵּה / אַף / עַל־כֵּן /
@@ -168,6 +169,72 @@ def line_has_3p_pronominal_suffix_ir(line_ir_tokens: list["MC.Token"]) -> bool:
         if t.is_suffix and t.antecedents:
             return True
     return False
+
+
+def first_content_ir_token(line_ir_tokens: list["MC.Token"]) -> "MC.Token | None":
+    """Return the first non-whitespace IR token for the line."""
+    for t in line_ir_tokens:
+        if t.text.strip():
+            return t
+    return None
+
+
+def ir_confirms_h181_strong(
+    ir_line: list["MC.Token"],
+    ir_next: list["MC.Token"],
+) -> bool:
+    """True when IR evidence is tight enough to call an H18.1 finding STRONG.
+
+    Requirements (all must hold):
+      1. Both line slices have IR coverage (non-empty).
+      2. No participle with role='v' on the prior line — excludes cases where
+         the prior line's predicate is participial (those belong to H18.2, not
+         H18.1, and the split is between two participial predications, not
+         a clean NP-subject + PP-predicate verbless nucleus).
+      3. The prior line contains at least one noun or pronoun (a real subject
+         NP is present, not a bare particle line).
+      4. The first content token of the next line is a preposition (IR-confirmed,
+         already asserted by starts_with_prep_ir at call site — this redundant
+         check is omitted for brevity; the caller has already gated on it).
+
+    Guards 9/10/11 (finite-verb, le-infinitive, word-count) are already passed
+    by the outer scan loop before this function is called; we only add IR-specific
+    structural confidence checks here.
+    """
+    if not ir_line or not ir_next:
+        return False
+    # Check 2: no participial predicate on prior line
+    if any(t.is_participle and t.role == "v" for t in ir_line):
+        return False
+    # Check 3: prior line has at least one noun or pronoun (real subject)
+    if not any(t.pos in ("noun", "pronoun") for t in ir_line):
+        return False
+    return True
+
+
+def ir_confirms_h182_strong(
+    ir_next: list["MC.Token"],
+) -> bool:
+    """True when IR evidence is tight enough to call an H18.2 finding STRONG.
+
+    Requirements (all must hold):
+      1. ir_next is non-empty (IR coverage for the next line).
+      2. The first content token of the next line is a participle (IR-confirmed,
+         already asserted by starts_with_participle_ir at call site).
+      3. That first participle token has role='v' in the lowfat tree — explicit
+         verbal-predicate slot assignment, the highest-confidence structural
+         label available from Macula for participial predication.
+
+    When role='v' is absent the participle could be adjectival or appositive
+    (common in lists, Sifrei Emet-adjacent contexts) — those remain
+    REVIEW-REQUIRED so the editor adjudicates.
+    """
+    if not ir_next:
+        return False
+    first = first_content_ir_token(ir_next)
+    if first is None:
+        return False
+    return first.is_participle and first.role == "v"
 
 
 def verse_is_wayehi_with_open_protasis_ir(
@@ -1208,9 +1275,10 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
         next_line = lines[next_idx]
         next_line_no = next_idx + 1
 
-        # --- Guard 1: poetic register ---
-        if chapter is not None and is_poetic_register(book, chapter, verse):
-            continue
+        # --- Guard 1: poetic register --- SUPERSEDED 2026-05-04 methodology audit
+        # (overlay-as-authorization removed; H18 applies in any register — a verb
+        # stranded from its core arguments is a colometric error in prose AND poetry).
+        # Skip removed; is_poetic_register no longer consulted here.
 
         # IR token slices for line and next_line (post-2026-05-05 Wave C).
         ir_line = line_ir_tokens.get(i, [])
@@ -1383,12 +1451,28 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
                 f"({combined_words} prosodic words combined)"
             )
 
-        # H18.3 is promoted to STRONG-MERGE-CANDIDATE (YAML spec h18_3_verb_pp_complement.yaml);
-        # H18.1 and H18.2 remain REVIEW-REQUIRED pending further adoption measurement.
-        finding_severity = (
-            "STRONG-MERGE-CANDIDATE" if subcase == "verb_pp_complement_split"
-            else "REVIEW-REQUIRED"
-        )
+        # Severity assignment:
+        #
+        # H18.3 (verb_pp_complement_split) — STRONG-MERGE-CANDIDATE, promoted via
+        #   YAML spec h18_3_verb_pp_complement.yaml (100% TP on corpus survey).
+        #
+        # H18.1 (verbless_subj_pred_split) — STRONG-MERGE-CANDIDATE when IR
+        #   coverage is available AND structural checks confirm a genuine NP-subject
+        #   + PP-predicate nucleus (no participial predicate on prior line, real
+        #   subject NP present). Otherwise REVIEW-REQUIRED.
+        #
+        # H18.2 (participial_pred_split) — STRONG-MERGE-CANDIDATE when IR coverage
+        #   is available AND the first token of the next line is a participle with
+        #   role='v' in the lowfat tree (explicit verbal-predicate slot). Otherwise
+        #   REVIEW-REQUIRED.
+        if subcase == "verb_pp_complement_split":
+            finding_severity = "STRONG-MERGE-CANDIDATE"
+        elif subcase == "verbless_subj_pred_split" and ir_confirms_h181_strong(ir_line, ir_next):
+            finding_severity = "STRONG-MERGE-CANDIDATE"
+        elif subcase == "participial_pred_split" and ir_confirms_h182_strong(ir_next):
+            finding_severity = "STRONG-MERGE-CANDIDATE"
+        else:
+            finding_severity = "REVIEW-REQUIRED"
 
         findings.append({
             "file_path": path,

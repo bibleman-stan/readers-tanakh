@@ -655,7 +655,9 @@ def classify_path1_carveout(
         HOMOGRAPH_SPEECH_VERB_SKELETONS and TAHOT tag does not confirm
         speech-verb sense (or no tag is available).
       - "sifrei-emet-meter"     : chapter is in Sifrei Emet poetic register
-        and the speech frame is short (≤4 prosodic words).
+        and the speech frame is short (≤4 prosodic words). Register context
+        only — does NOT suppress or demote the finding; adjudication is by
+        the three editorial criteria, not register membership.
     """
     n_toks = line.split()
     if not n_toks:
@@ -924,7 +926,7 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
                         line_first_token_tags=_tag_list_for(i, 0),
                     )
                     carveout_suffix = (
-                        f" [carve-out: {carveout} — likely no-action]" if carveout else ""
+                        f" [carve-out: {carveout}]" if carveout else ""
                     )
                     violations.append({
                         "file": path.name,
@@ -1020,9 +1022,19 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
                     book_path_str=str(path),
                     line_first_token_tags=_tag_list_for(i, 0),
                 )
-                if carveout:
+                # Methodology fix (2026-05-04): only judgment-blocking carve-outs
+                # (homograph-unconfirmed, job-answering-formula) warrant STRONG →
+                # REVIEW demotion. "sifrei-emet-meter" is register context, not
+                # authorization — poetic register does not suppress a real finding;
+                # the three editorial criteria (atomic thought, single image, Hebrew
+                # syntax) adjudicate, not register membership.
+                SEVERITY_BLOCKING_CARVEOUTS = {"homograph-unconfirmed", "job-answering-formula"}
+                if carveout and carveout in SEVERITY_BLOCKING_CARVEOUTS:
                     severity = "REVIEW-REQUIRED"
-                    suffix = f" [carve-out: {carveout} — likely no-action]"
+                    suffix = f" [carve-out: {carveout}]"
+                elif carveout:
+                    severity = "STRONG-SPLIT-CANDIDATE"
+                    suffix = f" [carve-out: {carveout}]"
                 else:
                     severity = "STRONG-SPLIT-CANDIDATE"
                     suffix = ""
@@ -1051,6 +1063,9 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
         # `נַחֲמ֥וּ נַחֲמ֖וּ עַמִּ֑י יֹאמַ֖ר אֱלֹהֵיכֶֽם׃` where the attribution
         # tail merges with preceding content. Skips prophetic-formula leads
         # (כה אמר ...) — those are handled by the formula carve-out.
+        # When H5c finds no trailing-attribution split, falls through to the
+        # secondary line-end-speech-verb check so that patterns like
+        # `... וַיֹּאמֶר` (no subject tail) are still caught.
         elif (
             len(bare_tokens) >= 4
             and not is_prophetic_formula_line(bare_tokens)
@@ -1091,6 +1106,42 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
                     "leemor_pos": None,
                     "split_position": split_pos,
                 })
+            # --- H5c fallback: secondary line-end speech-verb check ---
+            # H5c found no trailing attribution (no subject-NP tail after verb).
+            # Still check whether the last token is a bare speech verb at line
+            # end (e.g., `וַיִּקְרַב אֵלָיו רַב הַחֹבֵל וַיֹּאמֶר`) — that
+            # pattern is caught by the secondary check but would be silently
+            # dropped without this fallback because H5c consumed the elif branch.
+            elif (
+                bare_tokens[-1] in BARE_SPEECH_VERB_SKELETONS
+                and (
+                    _tag_list_for(i, len(tokens) - 1) is None
+                    or M.is_finite_verb_token(tokens[-1], tag_list=_tag_list_for(i, len(tokens) - 1))
+                )
+            ):
+                _next_content = ""
+                _next_content_line_num = None
+                for _j in range(i + 1, len(lines)):
+                    if not is_skippable(lines[_j]):
+                        _next_content = lines[_j].strip()
+                        _next_content_line_num = _j + 1
+                        break
+                if _next_content:
+                    violations.append({
+                        "file": path.name,
+                        "file_path": path,
+                        "line_num": line_no,
+                        "rule": "H5/speech-framing",
+                        "severity": "REVIEW-REQUIRED",
+                        "brief": (
+                            f"bare speech verb at line end ({tokens[-1]}) without לֵאמֹר "
+                            f"— check if speech content follows and framing length"
+                        ),
+                        "line": line.rstrip(),
+                        "next_line": _next_content,
+                        "next_line_num": _next_content_line_num,
+                        "leemor_pos": None,
+                    })
 
         # --- Solo speech-verb check: line is exactly ONE bare speech-verb token ---
         # Per audit 2026-05-01 Class E: when an entire line is just a wayyiqtol
@@ -1126,7 +1177,7 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
                     line_first_token_tags=_tag_list_for(i, 0),
                 )
                 carveout_suffix = (
-                    f" [carve-out: {carveout} — likely no-action]" if carveout else ""
+                    f" [carve-out: {carveout}]" if carveout else ""
                 )
                 violations.append({
                     "file": path.name,

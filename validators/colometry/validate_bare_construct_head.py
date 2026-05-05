@@ -24,19 +24,41 @@ merge-override rule codified in the canon; violations are categorically
 destructive to the atomic-thought test.
 
 FORCED-NO-MERGE GUARDS (skip BEFORE emitting):
-  1. Poetic register — is_poetic_register(book, chapter, verse) → skip.
-  2. Intervening modifier — relative clause or PP modifies the construct head
+  NOTE: Poetic-register suppression was removed 2026-05-04 (methodology audit:
+  overlay-as-authorization violation). Poetic register classification is
+  calibration evidence, not authorization to suppress findings. Construct chains
+  occur in poetry (e.g. Ps 23:1 רֹעִי); the validator now applies in all registers.
+  1. Intervening modifier — relative clause or PP modifies the construct head
      itself (not the final rectum), keeping the regens with its modifier.
-  3. Maqqef-binding — the chain is internally maqqef-joined (already one
+  2. Maqqef-binding — the chain is internally maqqef-joined (already one
      prosodic unit orthographically).
-  4. Already-long chain — construct chain ≥3 levels deep with substantial
+  3. Already-long chain — construct chain ≥3 levels deep with substantial
      final rectum modifier (evaluated under structural justification 5).
 
+IR-DRIVEN PATH (post-Wave-C merge):
+When Macula lowfat data is available for a chapter, the scanner consults the
+IR before emitting:
+
+  IR-confirmed + NPofNP found → the construct_chain validator (H2/construct)
+    already covers this edge via its NPofNP split walk. Suppress here to
+    avoid double-emit; defer to validate_construct_chain.py.
+
+  IR-confirmed construct state (token.state == "construct") but NO enclosing
+    NPofNP in the IR tree → the parser missed the chain (known limitation of
+    the Macula NPofNP recall). Emit STRONG-MERGE-CANDIDATE with "(IR-confirmed
+    construct, no NPofNP parent — heuristic fallback)" annotation.
+
+  No IR data (lowfat file absent) → heuristic path unchanged; emit STRONG as
+    before.
+
+This merge eliminates the ~60-70% of findings that are genuinely redundant
+with validate_construct_chain.py, while preserving the ~15-35 parser-missed
+cases that only this validator can catch.
+
 Pattern:
-Line N ends with a bare construct-state noun from a small closed list of
-frequent construct heads (דבר, בית, בן, בת, אלהי, אדני, יהוה, מלך, רוח, יד,
-פני, אנשי, נשי, זרע, ימי, שני). Line N+1 begins with a noun (no preposition
-in front, no verb) that completes the chain.
+Line N ends with a bare construct-state noun (tag-confirmed or closed-list
+skel). Line N+1 begins with a noun (no preposition, no verb) that completes
+the chain.
 
 Output format:
     [DEVIATION]  file:line  M3/bare-construct-head  STRONG-MERGE-CANDIDATE  brief
@@ -65,9 +87,9 @@ V2_DIR = REPO_ROOT / "data" / "text-files" / "v2" / "he"
 
 # Make _shared importable when this script is run as __main__.
 sys.path.insert(0, str(REPO_ROOT / "validators"))
-from _shared.poetic_register import is_poetic_register  # noqa: E402
 from _shared import morphology as M  # noqa: E402
 from _shared import morph_alignment as MA  # noqa: E402
+from _shared import macula_constituents as MC  # noqa: E402
 
 # ---------------------------------------------------------------------------
 # Hebrew Unicode helpers
@@ -542,6 +564,129 @@ def teamim_summary(line: str) -> str:
 
 
 # ---------------------------------------------------------------------------
+# IR helpers — Macula lowfat construct-chain detection
+# ---------------------------------------------------------------------------
+
+def _collect_npofnp_constituents(constituents: list) -> list:
+    """Recursively gather all Constituent nodes where is_construct_chain == True."""
+    out: list = []
+
+    def walk(node) -> None:
+        if isinstance(node, MC.Token):
+            return
+        if node.is_construct_chain:
+            out.append(node)
+        for c in node.children:
+            walk(c)
+
+    for r in constituents:
+        walk(r)
+    return out
+
+
+def build_ir_construct_sets(
+    lines: list[str],
+    book_slug: str,
+    ch: int,
+    vs: int,
+    sense_indices: list[int],
+) -> tuple[set[tuple[int, int]], set[tuple[int, int]]]:
+    """Return (ir_confirmed_edges, npofnp_covered_edges) for one verse.
+
+    ir_confirmed_edges: (line_N_idx, line_N1_idx) pairs where the IR confirms
+        the last token on line N has state=="construct" and the next line (in
+        the same verse) begins with the token immediately following it in the
+        verse token stream.  This means the IR says: yes, the construct head
+        is here, its completion is on the next line.
+
+    npofnp_covered_edges: subset of ir_confirmed_edges where the construct
+        head's token is also inside an NPofNP constituent that spans across
+        the two lines.  validate_construct_chain.py will catch these; we
+        suppress bare_construct_head from double-emitting them.
+
+    Both sets are empty if the lowfat file is absent or alignment fails.
+    """
+    ir_confirmed: set[tuple[int, int]] = set()
+    npofnp_covered: set[tuple[int, int]] = set()
+
+    if len(sense_indices) < 2:
+        return ir_confirmed, npofnp_covered
+
+    try:
+        verse_tokens = MC.get_verse_tokens(book_slug, ch, vs)
+        verse_constituents = MC.get_verse_constituents(book_slug, ch, vs)
+    except (FileNotFoundError, ValueError, KeyError):
+        return ir_confirmed, npofnp_covered
+    if not verse_tokens:
+        return ir_confirmed, npofnp_covered
+
+    # Build token_id → sense_line_index map (greedy alignment, same as
+    # validate_construct_chain.py).
+    token_to_line: dict[str, int] = {}
+    cursor = 0
+    for sl_idx, src_idx in enumerate(sense_indices):
+        matched, cursor = MC.match_sense_line_tokens(
+            verse_tokens, lines[src_idx], start_idx=cursor
+        )
+        for tok in matched:
+            token_to_line[tok.xml_id] = sl_idx
+
+    # Also build a position-in-verse → Token map for fast next-token lookup.
+    # verse_tokens is ordered by position.
+    tok_by_pos: dict[int, "MC.Token"] = {t.position: t for t in verse_tokens}
+    max_pos = max(tok_by_pos) if tok_by_pos else 0
+
+    # Walk each consecutive sense-line pair and check whether:
+    #   (a) the last aligned token of line N is construct-state in the IR,
+    #   (b) the first aligned token of line N+1 immediately follows it in
+    #       the verse token stream (no gap — the chain is contiguous).
+    for sl_idx in range(len(sense_indices) - 1):
+        src_n = sense_indices[sl_idx]
+        src_n1 = sense_indices[sl_idx + 1]
+
+        # Collect tokens on each line via the token_to_line map.
+        toks_n = [t for t in verse_tokens if token_to_line.get(t.xml_id) == sl_idx]
+        toks_n1 = [t for t in verse_tokens if token_to_line.get(t.xml_id) == sl_idx + 1]
+        if not toks_n or not toks_n1:
+            continue
+
+        last_tok_n = toks_n[-1]
+        first_tok_n1 = toks_n1[0]
+
+        # IR-confirmed: last token of line N has state == "construct".
+        if last_tok_n.state != "construct":
+            continue
+
+        # The rectum must immediately follow (no gap between positions).
+        if first_tok_n1.position != last_tok_n.position + 1:
+            continue
+
+        edge = (src_n, src_n1)
+        ir_confirmed.add(edge)
+
+    # NPofNP coverage: find all NPofNP constituents that span across two lines.
+    npofnp_list = _collect_npofnp_constituents(verse_constituents)
+    for npofnp in npofnp_list:
+        chain_tokens = npofnp.tokens
+        if len(chain_tokens) < 2:
+            continue
+        first_chain = chain_tokens[0]
+        last_chain = chain_tokens[-1]
+        first_sl = token_to_line.get(first_chain.xml_id)
+        last_sl = token_to_line.get(last_chain.xml_id)
+        if first_sl is None or last_sl is None or first_sl == last_sl:
+            continue
+        # The NPofNP spans lines first_sl..last_sl. Cover all consecutive
+        # pairs in that span — but for our purpose just cover adjacent pairs.
+        for sl_idx in range(first_sl, last_sl):
+            src_n = sense_indices[sl_idx]
+            src_n1 = sense_indices[sl_idx + 1]
+            npofnp_covered.add((src_n, src_n1))
+
+    return ir_confirmed, npofnp_covered
+
+
+# ---------------------------------------------------------------------------
 # Per-file scanner
 # ---------------------------------------------------------------------------
 
@@ -612,6 +757,18 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
             return None
         return tl[tok_idx]
 
+    # IR construct-edge sets, cached per (chapter, verse) to avoid redundant
+    # Macula XML lookups across consecutive lines in the same verse.
+    # Each entry: (ir_confirmed_edges, npofnp_covered_edges) — both are
+    # sets of (line_N_src_idx, line_N1_src_idx) tuples.
+    _ir_cache: dict[tuple, tuple[set, set]] = {}
+
+    def _get_ir_sets(ch, vs, sense_indices):
+        key = (ch, vs)
+        if key not in _ir_cache:
+            _ir_cache[key] = build_ir_construct_sets(lines, book, ch, vs, sense_indices)
+        return _ir_cache[key]
+
     for i, line in enumerate(lines):
         if is_skippable(line):
             continue
@@ -624,17 +781,17 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
 
         line_no = i + 1  # 1-based
 
-        # --- Guard 1: poetic register ---
-        if chapter is not None and is_poetic_register(book, chapter, verse):
-            continue
-
-        # --- Guard 2: maqqef-binding ---
+        # --- Guard 1: maqqef-binding ---
+        # (Poetic-register guard removed 2026-05-04: overlay-as-authorization
+        # violation. Poetic register is calibration evidence, not authorization
+        # to suppress. The validator now applies in all registers.
+        # Superseded by 2026-05-04 methodology audit.)
         # If the construct head is already maqqef-joined (e.g. דִּבְרֵי־יְהוָה),
         # it is one orthographic prosodic unit and not "bare construct head split."
         if construct_head_maqqef_bound(line):
             continue
 
-        # --- Guard 3: relative clause or modifier PP on same line ---
+        # --- Guard 2: relative clause or modifier PP on same line ---
         if line_has_relative_clause_or_modifier_pp(line):
             continue
 
@@ -706,7 +863,27 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
         if not bare_first:
             continue
 
-        # --- All guards passed; emit STRONG-MERGE-CANDIDATE finding ---
+        # --- All guards passed; IR cross-check before emitting ---
+
+        # Pull IR edge sets for this verse (cached).
+        ir_confirmed_edges: set[tuple[int, int]] = set()
+        npofnp_covered_edges: set[tuple[int, int]] = set()
+        if v_ctx and chapter is not None and verse is not None:
+            sense_indices_for_verse = v_ctx[3]
+            ir_confirmed_edges, npofnp_covered_edges = _get_ir_sets(
+                chapter, verse, sense_indices_for_verse
+            )
+
+        edge = (i, next_idx)
+        ir_confirmed_this = edge in ir_confirmed_edges
+        npofnp_covered_this = edge in npofnp_covered_edges
+
+        # Suppress double-emit: if IR confirms NPofNP coverage, validate_construct_chain
+        # will emit this. Skip here to avoid redundant STRONG-MERGE-CANDIDATE.
+        if npofnp_covered_this:
+            continue
+
+        # --- Emit STRONG-MERGE-CANDIDATE finding ---
         prior_text = line.strip()
         next_text = next_line.strip()
 
@@ -719,7 +896,15 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
                 f"{next_teamim or '(none)'} on rectum — informational only."
             )
 
-        tag_note = " (TAHOT-confirmed)" if is_construct_tag else " (skel-heuristic)"
+        if ir_confirmed_this:
+            # IR confirms construct state but no NPofNP parent in the tree —
+            # this is a parser-missed case not covered by validate_construct_chain.
+            tag_note = " (IR-confirmed construct, no NPofNP parent — parser-missed)"
+        elif is_construct_tag:
+            tag_note = " (TAHOT-confirmed)"
+        else:
+            tag_note = " (skel-heuristic)"
+
         annotation = (
             f"Bare construct-state head {construct_skel!r}{tag_note} without rectum "
             "(M3 Bare-Governor Indivisibility; canon §1; JM §129; WO §9)."
@@ -739,6 +924,7 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
             "severity": "STRONG-MERGE-CANDIDATE",
             "construct_head": construct_skel,
             "tag_confirmed": is_construct_tag,
+            "ir_confirmed": ir_confirmed_this,
             "book": book,
             "chapter": chapter,
             "verse": verse,
@@ -822,6 +1008,7 @@ def main():
                 "severity": f["severity"],
                 "construct_head": f["construct_head"],
                 "tag_confirmed": f.get("tag_confirmed", False),
+                "ir_confirmed": f.get("ir_confirmed", False),
                 "book": f["book"],
                 "chapter": f["chapter"],
                 "verse": f["verse"],

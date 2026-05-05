@@ -1,0 +1,9 @@
+# FIXTURE: bad-01 — finite verb on line N, אֵת DO-marker on line N+1 (split)
+# Skel-fallback path (synthetic fixture has no lowfat alignment).
+# Rule: L1.5/M2 — verb-object clause-nucleus bond
+# Expected: ≥1 finding (REVIEW-REQUIRED via skel fallback)
+
+1:1
+וַיִּקַּח
+אֶת־הָאֶרֶץ׃
+

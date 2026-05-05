@@ -26,7 +26,10 @@ informational defensibility-capture (Rule H8) — the trigger must remain
 syntactic.
 
 FORCED-NO-MERGE GUARDS (skip BEFORE emitting):
-  1. Poetic register — is_poetic_register(book, chapter, verse) → skip.
+  1. Poetic register skip — SUPERSEDED 2026-05-04 methodology audit.
+     Oath formulas appear in poetry; poetic register is calibration, not
+     authorization. Three editorial criteria (atomic thought, single image,
+     Hebrew syntax) adjudicate all registers uniformly.
   2. Oath formula is interior to a larger construct-chain NP (rare but
      possible in complex titles; skip to avoid false positives).
   3. Asseveration is pure interrogative or rhetorical (אִם־כֵּן, אִם־לֹא,
@@ -414,9 +417,11 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
         if not line_starts_with_asseveration(next_line):
             continue
 
-        # --- Guard 1: poetic register ---
-        if chapter is not None and is_poetic_register(book, chapter, verse):
-            continue
+        # --- Guard 1: poetic register skip — SUPERSEDED 2026-05-04 methodology audit ---
+        # Oath formulas (חַי + divine name) appear in poetry; suppressing them there
+        # is calibration override, not editorial adjudication. Removed so that the
+        # three criteria (atomic thought, single image, Hebrew syntax) apply uniformly
+        # across all registers.  is_poetic_register import retained for other callers.
 
         # --- Guard 2: isolated asseveration (no consequence clause) ---
         # Skip if next line is ONLY the asseveration opener (אִם, אִם לֹא, etc.)

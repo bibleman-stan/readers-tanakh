@@ -45,6 +45,7 @@ VALIDATORS_COLOMETRY = REPO_ROOT / "validators" / "colometry"
 VALIDATOR_MAP = {
     "validate_maqqef_integrity": VALIDATORS_SYNTAX / "validate_maqqef_integrity.py",
     "validate_line_final_tokens": VALIDATORS_SYNTAX / "validate_line_final_tokens.py",
+    "validate_verb_object_bond": VALIDATORS_SYNTAX / "validate_verb_object_bond.py",
     "validate_speech_intro_framing": VALIDATORS_COLOMETRY / "validate_speech_intro_framing.py",
     "validate_construct_chain": VALIDATORS_COLOMETRY / "validate_construct_chain.py",
     "validate_wayehi_protasis": VALIDATORS_COLOMETRY / "validate_wayehi_protasis.py",

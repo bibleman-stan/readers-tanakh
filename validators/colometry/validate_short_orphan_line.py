@@ -67,6 +67,13 @@ from _shared.poetic_register import is_poetic_register  # noqa: E402
 from _shared import morph_alignment as MA  # noqa: E402
 from _shared import morphology as M  # noqa: E402
 
+# IR constituent-query layer — optional; graceful fallback when lowfat absent.
+try:
+    from _shared import macula_constituents as MC  # noqa: E402
+    _IR_AVAILABLE = True
+except Exception:  # pragma: no cover
+    _IR_AVAILABLE = False
+
 # ---------------------------------------------------------------------------
 # Hebrew Unicode helpers
 # ---------------------------------------------------------------------------
@@ -326,6 +333,47 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
             aligned = MA.align_verse_tokens_to_tags(content_only, ortho_tags)
             verse_token_tags_map[v_key] = aligned  # may be None on mismatch
 
+    # IR sense-line start-index map:
+    # verse_key → list of (line_idx, start_idx_in_verse_tokens)
+    # Built by walking sense-lines in order and calling match_sense_line_tokens
+    # sequentially, so each line's start_idx reflects consumed prior-line tokens.
+    # None when IR unavailable or lowfat file missing for this chapter.
+    _book_slug_for_ir = path.parent.name  # e.g. "24-jeremiah"
+    ir_line_start_map: dict[
+        tuple[int | None, int | None],
+        "list[tuple[int, int]] | None"  # list of (line_idx, start_idx)
+    ] = {}
+    if _IR_AVAILABLE and chapter_from_file is not None:
+        try:
+            # Pre-check lowfat availability for this chapter by attempting token load
+            # on a known verse or the file directly; skip if unavailable.
+            _lf_path = MC.lowfat_path(_book_slug_for_ir, chapter_from_file)
+            if _lf_path.exists():
+                for v_key, idx_line_pairs in verse_lines_map.items():
+                    _ch, _vs = v_key
+                    if _ch is None or _vs is None:
+                        ir_line_start_map[v_key] = None
+                        continue
+                    try:
+                        _vtoks = MC.get_verse_tokens(_book_slug_for_ir, _ch, _vs)
+                    except Exception:
+                        ir_line_start_map[v_key] = None
+                        continue
+                    if not _vtoks:
+                        ir_line_start_map[v_key] = None
+                        continue
+                    _si = 0
+                    _starts: list[tuple[int, int]] = []
+                    for _li, _ln in idx_line_pairs:
+                        _starts.append((_li, _si))
+                        try:
+                            _, _si = MC.match_sense_line_tokens(_vtoks, _ln.strip(), _si)
+                        except Exception:
+                            _si = 0  # reset on error; IR fallback will be skipped
+                    ir_line_start_map[v_key] = _starts
+        except Exception:
+            pass  # IR unavailable for this chapter entirely
+
     for i, line in enumerate(lines):
         if is_skippable(line):
             continue
@@ -335,9 +383,12 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
         chapter = v_ctx[0] if v_ctx[0] is not None else chapter_from_file
         verse = v_ctx[1]
 
-        # Skip poetic register
-        if chapter is not None and is_poetic_register(book, chapter, verse):
-            continue
+        # SUPERSEDED 2026-05-04 methodology audit: whole-validator poetic-register skip removed.
+        # Overlay-as-authorization is not permitted by the canon — poetic register is calibration
+        # (it informs expected rates), NOT authorization (it cannot silence a structural arm).
+        # All M4 arms (subject-pronoun, atomic-thought, weqatal) apply in any register.
+        # The atomic-thought arm may produce a higher REVIEW-REQUIRED rate in poetry; that is
+        # the editorial review surface, not a reason to suppress findings.
 
         # Check if this line is a single-token orphan
         toks = content_tokens(line)
@@ -373,8 +424,178 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
         # the same verse. Typical case: Jer 31:33 וְהֵמָּה / יִהְיוּ־לִי לְעָם
         # ("and they / will be to me a people"). The subject pronoun and verb
         # form a single clause-nucleus and must be co-located per H18.
+        #
+        # Detection hierarchy:
+        #   1. IR primary path (when lowfat alignment available):
+        #      - Pronoun confirmed via Token.pos == "pronoun"
+        #      - Clause ancestor confirmed via Constituent.ancestor_with(wg_class="cl")
+        #      - Next-line finite verb confirmed via Token.is_finite_verb
+        #      - FP guards: wayyiqtol / weqatal / PGN mismatch via IR predicates
+        #      - Cross-check: verb.referenced_subjects includes this pronoun
+        #        OR pronoun.antecedents overlap (participantref linkage)
+        #   2. Heuristic fallback (when lowfat unavailable):
+        #      - SUBJECT_PRONOUN_SKELETONS skeleton check + morph-tag finite verb
+        #      - Existing wayyiqtol / weqatal / PGN guards preserved
         bare = strip_points(token).rstrip(SOF_PASUQ).rstrip("׃")
-        if bare in SUBJECT_PRONOUN_SKELETONS:
+
+        # ── IR primary path ──
+        _ir_fired = False       # True when IR path resolved (positively or negatively)
+        _ir_strong = False      # True when IR path confirmed STRONG
+        _ir_next_line_idx: "int | None" = None
+        _ir_next_bare: "str | None" = None
+        _verse_start_idx: int = 0  # start position in verse token list for this line
+        if _IR_AVAILABLE and chapter is not None and verse is not None:
+            # Look up pre-computed start_idx for this line within its verse.
+            _ir_starts = ir_line_start_map.get(v_ctx)
+            if _ir_starts is not None:
+                for _li2, _si2 in _ir_starts:
+                    if _li2 == i:
+                        _verse_start_idx = _si2
+                        break
+            try:
+                _verse_tokens = MC.get_verse_tokens(_book_slug_for_ir, chapter, verse)
+                if _verse_tokens:
+                    # Match orphan line text to lowfat tokens using correct start_idx.
+                    _matched, _next_start = MC.match_sense_line_tokens(
+                        _verse_tokens, line.strip(), start_idx=_verse_start_idx
+                    )
+                    if _matched:
+                        # For a vav-prefixed orphan like וְהֵ֖מָּה, lowfat splits into
+                        # [conjunction('וְ'), pronoun('הֵמָּה')]. The ACTUAL pronoun
+                        # is the LAST token in the matched set.
+                        # Take the last token that has pos='pronoun'; fall back to last token.
+                        _pron_tok = _matched[-1]
+                        for _mt in reversed(_matched):
+                            if _mt.pos == "pronoun":
+                                _pron_tok = _mt
+                                break
+                        # IR fires only when we have a genuine IR pronoun identification.
+                        # If _pron_tok.pos != "pronoun", we can't reliably confirm
+                        # clause ancestry; defer to heuristic (don't set _ir_fired).
+                        _ir_pron_confirmed = _pron_tok.pos == "pronoun"
+                        if not _ir_pron_confirmed:
+                            # Heuristic fallback will handle this case
+                            pass
+                        else:
+                            # Confirm clause ancestor
+                            _pcon = _pron_tok.parent_constituent
+                            _cl_ancestor = (
+                                _pcon.ancestor_with(wg_class="cl")
+                                if _pcon is not None
+                                else None
+                            )
+                            # Also accept if the direct parent IS the clause
+                            if _cl_ancestor is None and _pcon is not None and _pcon.is_clause:
+                                _cl_ancestor = _pcon
+                            _ir_fired = True  # IR engaged; heuristic fallback suppressed
+
+                            if _cl_ancestor is not None:
+                                # Find next non-skippable line in same verse
+                                _next_idx = None
+                                for k in range(i + 1, len(lines)):
+                                    if is_skippable(lines[k]):
+                                        if parse_verse_ref(lines[k]) is not None:
+                                            break
+                                        continue
+                                    if line_to_verse.get(k, (None, None)) != v_ctx:
+                                        break
+                                    _next_idx = k
+                                    break
+                                if _next_idx is not None:
+                                    _next_content = content_tokens(lines[_next_idx])
+                                    if _next_content:
+                                        # Match next line to lowfat tokens
+                                        _next_matched, _ = MC.match_sense_line_tokens(
+                                            _verse_tokens, lines[_next_idx].strip(),
+                                            start_idx=_next_start,
+                                        )
+                                        if _next_matched:
+                                            _verb_tok = _next_matched[0]
+                                            # FP guards via IR native predicates
+                                            _is_finite = _verb_tok.is_finite_verb
+                                            _is_wayy = _verb_tok.is_wayyiqtol
+                                            _is_weq = _verb_tok.is_weqatal
+                                            # PGN agreement via IR (person / number)
+                                            _pgn_ok = True
+                                            if (
+                                                _verb_tok.person and _pron_tok.person
+                                                and _verb_tok.number and _pron_tok.number
+                                            ):
+                                                _pgn_ok = (
+                                                    _verb_tok.person == _pron_tok.person
+                                                    and _verb_tok.number == _pron_tok.number
+                                                )
+                                            # Cross-check: subjref linkage (verb references pronoun)
+                                            _has_subjref = (
+                                                _pron_tok in _verb_tok.referenced_subjects
+                                                or _pron_tok.xml_id in _verb_tok.subjref_ids
+                                            )
+                                            # Cross-check: participantref linkage (pronoun
+                                            # forward-references an antecedent in same clause).
+                                            # Accept if either subjref or same clause-ancestor.
+                                            _verb_cl = (
+                                                _verb_tok.parent_constituent.ancestor_with(wg_class="cl")
+                                                if _verb_tok.parent_constituent is not None
+                                                else None
+                                            )
+                                            if _verb_cl is None and _verb_tok.parent_constituent is not None and _verb_tok.parent_constituent.is_clause:
+                                                _verb_cl = _verb_tok.parent_constituent
+                                            _same_clause = (
+                                                _cl_ancestor is not None
+                                                and _verb_cl is not None
+                                                and _cl_ancestor is _verb_cl
+                                            )
+                                            if (
+                                                _is_finite
+                                                and not _is_wayy
+                                                and not _is_weq
+                                                and _pgn_ok
+                                                and (_has_subjref or _same_clause)
+                                            ):
+                                                _ir_strong = True
+                                                _ir_next_line_idx = _next_idx
+                                                _ir_next_bare = strip_points(_next_content[0]).rstrip(SOF_PASUQ).rstrip("׃")
+            except Exception:
+                # lowfat unavailable for this chapter / verse; fall through to heuristic
+                _ir_fired = False
+                _ir_strong = False
+
+        if _ir_strong and _ir_next_line_idx is not None:
+            line_no = i + 1
+            findings.append({
+                "file_path": path,
+                "file_rel": str(path.relative_to(REPO_ROOT)).replace("\\", "/"),
+                "line_num": line_no,
+                "rule": "M4/subject-pronoun-orphan",
+                "severity": "STRONG-MERGE-CANDIDATE",
+                "detection": "IR",
+                "token": bare,
+                "prior_context": "",
+                "next_context": lines[_ir_next_line_idx].strip()[:80],
+                "annotation": (
+                    "Subject pronoun on its own line followed by a "
+                    "lowfat-confirmed finite verb on next line — clause-"
+                    "nucleus integrity (H18) requires merge. "
+                    "(IR primary path: Constituent.ancestor_with + Token.is_finite_verb)"
+                ),
+                "brief": (
+                    f"subject-pronoun orphan '{bare}' + finite verb "
+                    f"'{_ir_next_bare}' on next line — merge [IR]"
+                ),
+                "book": book,
+                "chapter": chapter,
+                "verse": verse,
+                "text": line.strip(),
+            })
+            continue
+
+        # ── Heuristic fallback path (when IR unavailable or IR did not fire) ──
+        # Preserves the full existing logic unchanged. Suppressed when IR fired
+        # but did not confirm (avoids re-opening guards the IR already closed).
+        if _ir_fired:
+            # IR engaged but did not confirm STRONG — skip heuristic to avoid FPs.
+            pass
+        elif bare in SUBJECT_PRONOUN_SKELETONS:
             # Find next non-skippable line within same verse
             next_line_idx = None
             for k in range(i + 1, len(lines)):

@@ -12,8 +12,8 @@ license-guard. verb_object_bond SUPPRESSES verb-A1-stranding findings when
 the next sense-line opens with a coordinated וְאֵת enumeration (because
 the A1 was never on line N to begin with — it's a coordinate continuation).
 This validator surfaces those same coordinated-object enumerations and
-EVALUATES whether they are colometrically appropriate (combined-weight
-guard, heavy-NP guard, poetic-register guard).
+EVALUATES whether they are colometrically appropriate (combined-weight guard, heavy-NP guard).
+[Poetic-register guard removed 2026-05-04 — not a structural discriminant.]
 
 Detection (IR-driven, post-2026-05-06 Macula pivot):
   For each finite verb V in a verse:
@@ -28,18 +28,36 @@ Detection (IR-driven, post-2026-05-06 Macula pivot):
   the verb's object. No skel-trigger; no closed-list verb skeletons; no
   orthographic heuristics.
 
-Severity (post-IR-pivot 2026-05-06):
-  All findings emit REVIEW-REQUIRED. The IR's frame-args resolution surfaces
-  ~600 candidates the prior orthographic skel-trigger missed (20 -> ~600);
-  the IR catches multi-token A1 enumerations the אֵת ... // וְאֵת ... pattern
-  could not see (e.g., asyndetic coordination, ו-prefixed objects without
-  אֵת, multi-clausal A1 spans). Promotion to STRONG-MERGE-CANDIDATE awaits
-  editorial triage of the FP rate. Severity floor mirrors verb_object_bond
-  (commit c6bd30576) and construct_chain (5bc7d88a8) IR-port pattern.
+Severity (post-STRONG-promotion 2026-05-05):
+  Findings with NO guard fired -> STRONG-MERGE-CANDIDATE (cascade-applicable).
+  Findings with ANY guard fired -> REVIEW-REQUIRED (editorial triage required).
 
-  Guard reasons (poetic-register / combined > 8 / heavy-NP) are recorded in
-  the `guard_reason` field and remain informative for downstream triage even
-  though all severities collapse to REVIEW-REQUIRED at the floor.
+  Guard conditions that demote to REVIEW-REQUIRED:
+    1. Combined prosodic-word count > 8 -- merged line would exceed colon
+       ceiling; editorial judgement needed on where the true break belongs.
+    2. Heavy NP on A1 (relative clause or apposition) -- the A1 constituent
+       is structurally complex; merge may collapse meaningful sub-structure.
+
+  [Poetic-register guard removed 2026-05-04 per methodology audit: coordinated
+  DO is a clause-nucleus syntactic phenomenon in every register; demoting STRONG
+  findings in Sifrei Emet / embedded poetry was overlay-as-authorization.
+  Structural guards (weight, heavy-NP) alone discriminate genuinely ambiguous
+  cases.]
+
+  STRONG findings are safe to auto-apply because:
+    - IR frame-args have already disambiguated DO vs. other אֵת uses.
+    - Combined weight is within the 8-word colon ceiling.
+    - No embedded complexity (relative clause / apposition) on the A1 span.
+
+  Fallback: when lowfat XML is absent (synthetic fixture text, pre-alignment
+  chapters), MC.get_verse_tokens raises FileNotFoundError/ValueError and
+  scan_file silently skips the verse (no finding). There is NO pre-port
+  heuristic path to restore here -- the pre-pivot orthographic skel-trigger
+  (line_ends_with_et_np / line_starts_with_ve_et_np) detected only 20
+  instances vs. ~600 for the IR, and its FP rate was significantly higher;
+  restoring it as a fallback would re-introduce the FP surface the IR-pivot
+  was intended to eliminate. Fixtures for this validator must use real
+  verse refs that have lowfat coverage, or mock MC.get_verse_tokens.
 
 References:
   - Canon §5 Rule M2 (verb-object clause-nucleus bond)
@@ -87,7 +105,9 @@ V2_DIR = REPO_ROOT / "data" / "text-files" / "v2" / "he"
 
 # Make _shared importable when this script is run as __main__.
 sys.path.insert(0, str(REPO_ROOT / "validators"))
-from _shared.poetic_register import is_poetic_register  # noqa: E402
+# is_poetic_register import removed 2026-05-04: poetic register is no longer a
+# STRONG-promotion guard — structural guards (weight, heavy-NP) alone discriminate.
+# Superseded by 2026-05-04 methodology audit.
 from _shared import macula_constituents as MC  # noqa: E402
 
 # ---------------------------------------------------------------------------
@@ -422,12 +442,10 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
          (matches the prior validator's per-pair semantics).
       4. Apply guards (poetic register, combined > 8 prosodic words, heavy NP).
 
-    Severity floor: ALL findings emit REVIEW-REQUIRED post-IR-pivot. Mirrors
-    verb_object_bond (c6bd30576) and construct_chain (5bc7d88a8) IR-port
-    pattern -- the IR's frame-args resolution surfaces ~30x more candidates
-    than the prior orthographic skel-trigger; promotion to STRONG awaits
-    editorial triage of the FP rate. Guard reasons remain recorded in the
-    `guard_reason` field for downstream triage.
+    Severity: STRONG-MERGE-CANDIDATE when no guard fires; REVIEW-REQUIRED
+    when any guard fires (poetic register, combined > 8 prosodic words, or
+    heavy NP). Guard reasons are recorded in the `guard_reason` field for
+    downstream triage. The `tag` field mirrors `severity` for cascade dispatch.
     """
     findings: list[dict] = []
     try:
@@ -510,8 +528,10 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
             # ----- guards -----
             guard_reason: str | None = None
 
-            if is_poetic_register(book_slug, ch, vs):
-                guard_reason = "poetic register (Sifrei Emet / embedded poetry / acrostic)"
+            # Poetic-register guard removed 2026-05-04: superseded by methodology audit.
+            # Coordinated DO is a clause-nucleus syntactic fact in any register;
+            # weight + heavy-NP guards already discriminate genuinely ambiguous cases.
+            # overlay-as-authorization failure mode closed here.
 
             combined_words = prosodic_word_count(line_n) + prosodic_word_count(line_n1)
             if guard_reason is None and combined_words > 8:
@@ -520,8 +540,10 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
             if guard_reason is None and _a1_has_heavy_np_ir([a for _, a in a1_lines]):
                 guard_reason = "heavy NP (relative clause or apposition)"
 
-            # Severity floor: ALL findings emit REVIEW-REQUIRED post-IR-pivot.
-            severity = "REVIEW-REQUIRED"
+            # Severity: STRONG when no guard fired; REVIEW-REQUIRED otherwise.
+            # Guards: combined > 8 prosodic words, heavy NP.
+            # (poetic-register guard removed 2026-05-04 — not a structural discriminant)
+            severity = "REVIEW-REQUIRED" if guard_reason else "STRONG-MERGE-CANDIDATE"
 
             a1_texts = [a.text for _, a in a1_lines]
             prior_text = line_n.strip()
@@ -551,6 +573,7 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
                 "next_line_num": n1_src_idx + 1,
                 "rule": "M2/coordinated-object",
                 "severity": severity,
+                "tag": severity,  # explicit tag field for cascade dispatch
                 "book": book_slug,
                 "chapter": ch,
                 "verse": vs,
@@ -636,6 +659,7 @@ def main():
                 "line": f["line_num"],
                 "rule": f["rule"],
                 "severity": f["severity"],
+                "tag": f.get("tag", f["severity"]),
                 "book": f["book"],
                 "chapter": f["chapter"],
                 "verse": f["verse"],
@@ -645,6 +669,7 @@ def main():
                 "prosodic_word_count": f["prosodic_word_count"],
                 "annotation": f["annotation"],
                 "suggested_action": f["suggested_action"],
+                "guard_reason": f.get("guard_reason"),
             })
 
         counts = {"REVIEW-REQUIRED": 0, "STRONG-MERGE-CANDIDATE": 0}
