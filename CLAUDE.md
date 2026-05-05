@@ -121,6 +121,9 @@ These decision points have a standing answer per project discipline. Surfacing t
 | Choosing between extending an existing validator vs creating a new one | Extension. Always default to extension; new-validator is `# validator-extension-justified:` only with substantive criterion. | Validator-creation guard hook |
 | Cascade rebuild after pipeline change | 6 parallel cluster agents (Phase 2 of two-phase pattern). Never one agent on all 39 books. | A2 mandatory two-phase pattern (mechanically gated) |
 | "Should I commit now or wait?" | Commit substantive work proactively. Status claims AFTER the commit, not before. | `feedback_commit_only_finished_work.md` |
+| **Same FP class manifests in 2+ specs OR 2+ validators within a session** | **Stop. Fix at engine level (`scripts/spec_runner.py` `_check_morphology` / `validators/_shared/*` / `scripts/apply_*.py`), NOT per-spec or per-validator.** Writing a guard for "the same conceptual FP" the second time = engine-level fix opportunity that's being missed. | Stan-mantra ("swat the bug class, not the instance") + Class-fix discipline below |
+| **Stan escalation phrasing** ("WHY are you still doing this", "you screwed up again", "you have to quit taking so long", "stop wasting my time") | **STOP iterating on the surface fix. Frame-reset to class level. Read the recent commits and ask: what's the COMMON pattern across them that I've been treating as separate instances?** Don't continue the surgical-fix path past the escalation. | 2026-05-05 Sifrei-Emet purge arc — three iterations of per-spec guards before engine-level fix; escalation came at iteration 3 and was met with iteration 4 instead of frame-reset |
+| **Cascade leaves corpus in known-wrong state at session end** | **Don't wrap. Either fix it inline this session (revert + re-cascade with the corrected rules) OR explicitly retire to a follow-up commit with named verses listing the wrongness; never park "Psa 23:4 still split, Psa 23:5 still over-merged" as a vague carry-forward.** | 2026-05-05 cluster-5 cascade arc — wrap landed with corpus in known-wrong state at the named-verse leading-indicators that motivated the cascade |
 
 When a decision point is genuinely outside this table, surface it. When it's inside, dispatch the standing answer and report the result. The discipline-failure shape is: surfacing a known-default decision as if Stan needs to pick.
 
@@ -282,6 +285,37 @@ PYTHONIOENCODING=utf-8 py -3 validators/run_all.py --update-baseline # capture n
 
 ---
 
+## Class-fix vs instance-fix discipline (THE 2026-05-05 LESSON)
+
+Stan's mantra: *"good rules → validators → mechanical apply at scale → swat the bug class, not the instance."* This rule applies at the moment-of-fix decision, not retrospectively in session-notes. The 2026-05-05 Sifrei-Emet-purge arc violated this for THREE iterations before the engine-level fix landed. Each individual surgical fix looked locally rational; the aggregate was whack-a-mole.
+
+**The failure shape (worked example).** A morphology check (`_check_morphology("prep")` in `scripts/spec_runner.py`) had an FP class: N-headed nouns starting with `bet` / `kaf` / `lamed` / `mem` were misclassified as prepositions. The class manifested in spec H18.1; surgical fix added a guard to that spec. The class then manifested in spec H16; surgical fix added a similar guard to H16. The class then was about to be patched in spec M2.6 — at THIS point the engine-level fix to `_check_morphology("prep")` (one site, propagates to all specs) was the right move. Instead, the per-spec iteration continued. Stan's escalation arrived at iteration 3; the engine-level fix landed at iteration 4 (after the escalation, which is the wrong order).
+
+**The self-test (apply at the moment of writing the second per-spec guard).**
+
+- Have I added a guard for the same conceptual FP class to a different spec/validator already in this session?
+- If yes → STOP. The fix surface is the engine layer (`spec_runner.py` `_check_morphology` / `validators/_shared/*` / `scripts/apply_*.py`), NOT the second per-spec or per-validator file.
+- The Default Decisions table row "Same FP class manifests in 2+ specs OR 2+ validators within a session" codifies this; this section explains why and gives the worked case.
+
+**Detection heuristics (without a hook):**
+
+1. About to write `Edit` to a second `validators/specs/*.yaml` or `validators/colometry/*.py` for an FP whose CLASS description matches a recent edit's CLASS description → trigger the self-test.
+2. About to write the third commit titled `fix(<spec>): <FP-class>` in a session → trigger the self-test.
+3. About to add a guard whose semantics could be re-implemented in an engine-level helper → trigger the self-test.
+
+**What "engine level" means in this project (specific surfaces):**
+
+- `scripts/spec_runner.py` — morphology checks, line-shape predicates, guard primitives (`_check_morphology`, `_line_n_last_token_*`, etc.). Fixes here propagate to ALL specs that consume these primitives.
+- `validators/_shared/macula_constituents.py` — IR-driven constituent queries. Fixes here propagate to all IR-using validators.
+- `validators/_shared/morph_tags.py` — TAHOT morph tag parsers. Fixes here propagate to all tag-aware validators.
+- `scripts/apply_validators.py` — validator orchestration logic (severity routing, ADOPTED_VALIDATORS gate). Fixes here propagate to all validators in the work queue.
+
+**When a per-spec or per-validator guard IS the right answer:** the guard is SPECIFIC to that spec's local logic and would NOT generalize (e.g., `next_line_is_purpose_infinitive` is specific to H11 vs S7 oscillation, not a general morphology question). The test: would this guard, generalized, be useful to other specs? If yes — engine. If no — local guard is correct.
+
+**Cascade-output as discovery method.** When a cluster cascade leaves corpus in a known-wrong state at the named-verse leading-indicators (like Psa 23:4 still split + Psa 23:5 still over-merged after the Sifrei-Emet purge cascade), the wrong move is "park as carry-forward, wrap." The right move is: walk the failure back to its root, identify whether root is class-level or spec-level, fix at the right layer, re-cascade. The Default Decisions table row "Cascade leaves corpus in known-wrong state at session end" codifies this; don't wrap on a known-wrong corpus.
+
+---
+
 ## Five Diagnostic Questions (Before Writing New Specs or Tools)
 
 Before adding a new validator, proposing a new H-rule, or building infrastructure:
@@ -328,21 +362,6 @@ This discipline complements (does NOT replace) the **Self-consistency audit trig
 
 ---
 
-## Pre-flight Audit Pattern (parallel-by-default)
-
-When the scope of a proposed change is unclear (corpus-wide impact, cross-rule precedence, methodology-touching), dispatch N parallel verification agents BEFORE executing.
-
-**When to invoke:**
-- Adding a new H-rule or M-override → dispatch hostile audit + grammar-grounding + cross-rule integrity (parallel)
-- Sweep ≥5 instances under a settled rule → dispatch FP-precheck per cluster (6 agents)
-- Proposing a validator → dispatch one fixture-oracle agent per regression chapter
-
-**Pattern:** all audit dispatches go in a single message. Agents run concurrently; wall-time = max(per-agent), not sum.
-
-**Worked example (2026-04-28 H18 codification):** 6 parallel hostile audits (tifcha-servant, verbless-clause, Wickes/Yeivin, JM/WO, Sifrei Emet danger zone, cross-rule integrity) → adjudicated → design corrected (Option A vs B) → built. Saved a wider-than-realized scope.
-
----
-
 ## Follow-On Rebuild Cascade (automatic)
 
 **The cascade fires automatically on every commit that touches `data/text-files/v2/he/`.** You do not invoke it manually.
@@ -360,16 +379,21 @@ PYTHONIOENCODING=utf-8 py -3 scripts/refresh_book.py --all-books --build
 
 The `PYTHONIOENCODING=utf-8` prefix is mandatory on Windows for any script touching Hebrew Unicode (combining characters, te'amim, niqqud).
 
----
+### Cascade order when running BOTH apply_validators AND apply_specs
 
-## Two-check Post-cascade Gate
+`refresh_book.py` only runs `apply_validators.py` (line 7 of that file). When a cluster-cascade also needs to run `apply_specs.py` (e.g., after a spec change), the order matters and is **`apply_validators.py` FIRST, `apply_specs.py` SECOND**, then `refresh_book.py` for derived layers.
 
-After the rebuild cascade fires (any commit touching `data/text-files/v2/he/`), both English-quality scanners must report zero warnings before the commit lands:
+**Why:** `apply_validators` performs structure-establishing merges (the STRONG-MERGE-CANDIDATE work queue). Those merges normalize the corpus into the shape `apply_specs` is calibrated against. Running specs first means specs operate on un-normalized structure and over-merge or under-merge in ways the validator pass would have prevented. The 2026-05-05 cluster-5 cascade learned this the hard way at Psa 23:5 (apply_specs over-merged 3 cola into 1 because the M4 multi-token PP arm of `validate_short_orphan_line` hadn't run first to anchor the PP-orphan to its prior verb).
 
-1. `scripts/english_quality_check.py` — eng-gloss / eng-interlinear quality (gender-marker leak, alignment, etc.)
-2. `scripts/scan_english_drift.py` — drift detection across English layers vs. Hebrew structure
+**Per-cluster-agent cascade prompt template (when invoking cluster cascades):**
 
-Pre-commit hook should run both. Mandatory zero-warning gate; deviation requires explicit `--no-verify` with Stan-approved reason.
+```
+1. PYTHONIOENCODING=utf-8 py -3 scripts/apply_validators.py --book <each book in cluster>
+2. PYTHONIOENCODING=utf-8 py -3 scripts/apply_specs.py --book <each book in cluster>
+3. PYTHONIOENCODING=utf-8 py -3 scripts/refresh_book.py --book <each book in cluster> --build
+```
+
+Each agent commits its cluster's diff before the next stage, so pre-commit baseline-check sees the work in chunks rather than as one massive multi-cluster commit.
 
 ---
 
