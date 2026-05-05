@@ -243,14 +243,31 @@ def prosodic_word_count(line: str) -> int:
 # We match the bare skeleton after stripping points, looking for candidates
 # whose next word (line N+1) is a noun with no leading preposition.
 
+# Proper-name skeletons that are FP-prone in the closed-list skel-heuristic.
+# יהוה and אדני have identical consonant skeletons in absolute and construct
+# state, and the closed-list skel-heuristic systematically over-fires when
+# these tokens appear vocative, as rectum of an already-completed chain, or
+# as subject of the next-line verb. Surfaced by Torah + Sifrei Emet
+# cluster-Opus FP-rate verdicts (2026-05-05): 9/10 fixture FPs all on יהוה
+# (Psa 5:4, 37:9, 40:12, 115:1, 118:26, 119:108, 121:8 vocative /
+# rectum-of-completed-chain / subject-of-next-line). Per agent recommendation,
+# proper-name-vs-construct disambiguation requires IR state == "construct"
+# confirmation, not skel-only.
+#
+# When ONLY the skel-heuristic matches (TAHOT tag returns False) AND the skel
+# match is in this set AND IR does not confirm construct state, the emission
+# is suppressed. See the FP guard in scan_file().
+PROPER_NAME_FP_SKELETONS = {"יהוה", "אדני"}
+
+
 CONSTRUCT_HEAD_SKELETONS = {
     # Very common construct heads in narrative
     "דבר",     # word, matter
     "בית",     # house
     "בן",      # son
     "בת",      # daughter
-    "אדני",    # Lord (construct of אדון)
-    "יהוה",    # YHWH (construct form same, but appears as bound head)
+    "אדני",    # Lord — proper-name FP-prone, see PROPER_NAME_FP_SKELETONS
+    "יהוה",    # YHWH — proper-name FP-prone, see PROPER_NAME_FP_SKELETONS
     "מלך",     # king
     "רוח",     # spirit
     "יד",      # hand
@@ -881,6 +898,23 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
         # Suppress double-emit: if IR confirms NPofNP coverage, validate_construct_chain
         # will emit this. Skip here to avoid redundant STRONG-MERGE-CANDIDATE.
         if npofnp_covered_this:
+            continue
+
+        # --- Proper-name FP guard (post-FP-rate audit 2026-05-05) ---
+        # When ONLY the skel-heuristic matches (TAHOT tag did not confirm
+        # construct state) AND the skel match is a proper name in
+        # PROPER_NAME_FP_SKELETONS (יהוה / אדני) AND IR does not confirm
+        # construct state for this edge, suppress. The Torah + Sifrei Emet
+        # cluster-Opus FP-rate verdicts documented this as a 9/10-FP class:
+        # the proper-name consonant skeleton is identical in absolute and
+        # construct state, so the closed-list skel match over-fires on
+        # vocative, rectum-of-completed-chain, and subject-of-next-line cases.
+        if (
+            (not is_construct_tag)
+            and is_construct_skel
+            and construct_skel_local in PROPER_NAME_FP_SKELETONS
+            and not ir_confirmed_this
+        ):
             continue
 
         # --- Emit STRONG-MERGE-CANDIDATE finding ---

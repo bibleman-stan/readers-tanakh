@@ -1,5 +1,5 @@
 {
-  "validate_bare_construct_head": 221,
+  "validate_bare_construct_head": 37,
   "validate_bare_discourse_particle": 6,
   "validate_blessed_cursed_chain": 5,
   "validate_bonded_pair": 1,
