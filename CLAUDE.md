@@ -96,6 +96,34 @@ On-request (not default — only produce when the session warrants it or Stan as
 
 The 2026-05-04 colonoscopy audit found these tail artifacts had low cross-session retrieval value relative to their wrap cost. `session-notes.md` is the load-bearing carry-forward surface.
 
+**Carry-forward integrity (mandatory before writing the carry-forward section).** Every carry-forward item MUST have one of:
+- **A concrete next-action** Claude can execute without further Stan input — names the file/script/agent dispatch that will run.
+- **A concrete trigger condition** — a named file change, hook event, named-deliverable arrival, Stan-side artifact (only if explicitly Stan-blocked), or dated calendar event.
+
+The following phrasings are **drift, not defers** — they MUST be replaced before the wrap-up commit:
+- "Awaiting Stan direction" → either name the standing default and dispatch (per "Default decisions" below), or pin down the question concretely with proposed answer + ≥2 adversarial audits, or retire.
+- "Until Stan re-surfaces / brings up again / asks again" → Stan won't re-surface; the item evaporates. Either re-read the prior turn where Stan flagged it and pin down the specific items NOW (named verses, named files, named patterns), or retire with rationale.
+- "Stan-direction needed" without a concrete decision-point → the same. Default actions for known classes are listed below; only escalate genuinely novel questions.
+- "Defer until [vague event]" → either name the concrete trigger or retire.
+
+This is the WRAP-UP-side complement to the CHECK-IN carry-forward disposition. CHECK-IN catches drift on the next session's read; WRAP-UP catches drift at this session's write — closer to the source.
+
+### Default decisions (standing answers — do NOT surface these as menus)
+
+These decision points have a standing answer per project discipline. Surfacing them as menus to Stan is a permission-loop. Only escalate when the actual decision falls *outside* one of these patterns.
+
+| Decision point | Standing answer | Authority |
+|---|---|---|
+| Per-item judgment work at corpus scale (e.g., labeling 500-verse FP fixture) | Parallel cluster-Opus dispatch (5–6 agents, one per cluster) + Stan spot-audit on edge cases. Never hand-pass. | `feedback_scripts_default_agents_only_for_judgment.md` + Corpus Cluster Splits |
+| Validator FP-rate measurement | Cluster-Opus labeling, NOT manual review. The script `scripts/measure_validator_fp_rate.py` consumes the labels regardless of who produced them. | Phase 2 first-commit definition |
+| "Should I run validators or read the chapter manually?" | Validators first. Always. Manual commentary is an overlay on tool output, not a substitute. | `feedback_persistence_means_coverage_gap.md` + Five Diagnostic Questions |
+| Adversarial audit on a non-trivial implementation | ≥2 parallel agents in one message, OR `Audit-skippable: <reason>` with named trivial class. Never sequential dispatch. | A3 Step 0 (mechanically gated) |
+| Choosing between extending an existing validator vs creating a new one | Extension. Always default to extension; new-validator is `# validator-extension-justified:` only with substantive criterion. | Validator-creation guard hook |
+| Cascade rebuild after pipeline change | 6 parallel cluster agents (Phase 2 of two-phase pattern). Never one agent on all 39 books. | A2 mandatory two-phase pattern (mechanically gated) |
+| "Should I commit now or wait?" | Commit substantive work proactively. Status claims AFTER the commit, not before. | `feedback_commit_only_finished_work.md` |
+
+When a decision point is genuinely outside this table, surface it. When it's inside, dispatch the standing answer and report the result. The discipline-failure shape is: surfacing a known-default decision as if Stan needs to pick.
+
 ### Context-threshold discipline
 
 - **Green zone (0–60%)**: execute normally.
