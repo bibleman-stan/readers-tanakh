@@ -110,6 +110,90 @@ def is_skippable(line: str) -> bool:
     return False
 
 
+# ---------------------------------------------------------------------------
+# 2-token PP detection — M4 multi-token PP arm (Wave-C audit Option A,
+# 2026-05-05; extended for mid-verse cases with finite-verb anchor per
+# Stan's Psa 23:5 leading-indicator).
+# ---------------------------------------------------------------------------
+
+# Standalone prepositions (consonant-skel form). When a line's FIRST token is
+# one of these (or its prefix-prep equivalent), the line is PP-headed.
+STANDALONE_PREP_SKELETONS = frozenset({
+    "על", "אל", "מן", "עם", "תחת", "בין", "נגד", "בעד",
+    "לפני", "אחרי", "מאחרי", "מלפני", "מפני", "מאת",
+    "מעל", "מתחת", "בתוך", "מתוך", "מסביב",
+    "אצל", "ליד",
+})
+
+# Bound prefix-prep initial consonants (ב / ל / כ / מ).
+BOUND_PREP_PREFIX = frozenset({"ב", "ל", "כ", "מ"})
+
+# Superscription openers — when the verse-1 first content line begins with one
+# of these, the verse is a Psalm/Proverb superscription. The 2-token PP arm
+# does not fire on superscription verses (titles like "מִזְמוֹר לְדָוִד" pass
+# atomic-thought as a formulaic title; canon §3 substantive-adjunct).
+SUPERSCRIPTION_OPENER_SKELETONS = frozenset({
+    "מזמור",     # מִזְמוֹר — psalm
+    "למנצח",     # לַמְנַצֵּחַ — to the choirmaster
+    "תפלה",      # תְּפִלָּה — prayer (Hab 3, Ps 17/86/90/102/142)
+    "תהלה",      # תְּהִלָּה — praise (Ps 145)
+    "שיר",       # שִׁיר — song (Ps 30/45/46/48/65/66/67/68/75/76/83/87/88/92/108)
+    "משכיל",     # מַשְׂכִּיל — instruction
+    "מכתם",      # מִכְתָּם — miktam
+    "שגיון",     # שִׁגָּיוֹן — shiggaion (Ps 7)
+    "משלי",      # מִשְׁלֵי — proverbs of (Pro 1:1, 10:1, 25:1)
+    "דברי",      # דִּבְרֵי — words of (Pro 30:1, 31:1)
+    "משא",       # מַשָּׂא — oracle (prophetic; Hab 1:1 etc.)
+})
+
+
+def _starts_with_prep(token: str) -> bool:
+    """Heuristic: True if `token` is a preposition (standalone or prefix-prep)."""
+    bare = strip_points(token).rstrip(SOF_PASUQ).rstrip(MAQQEF)
+    if not bare:
+        return False
+    # Strip leading waw if present (וְעַל / וּלְ etc.)
+    if bare.startswith("ו") and len(bare) > 1:
+        bare = bare[1:]
+    # Standalone preps (incl. maqqef-bound forms — first segment)
+    head = bare.split(MAQQEF, 1)[0] if MAQQEF in bare else bare
+    if head in STANDALONE_PREP_SKELETONS:
+        return True
+    # Bound prefix-prep on a noun-like remainder
+    if len(bare) >= 3 and bare[0] in BOUND_PREP_PREFIX:
+        return True
+    return False
+
+
+def _line_contains_finite_verb_or_participle(
+    tag_list_for_line: "list[list[str]] | None",
+) -> bool:
+    """True if any token on the line carries a finite-verb / participle /
+    infinitive morphology tag.
+
+    Returns False when tags are unavailable (caller decides whether to fall
+    back to skel-heuristic or suppress).
+    """
+    if not tag_list_for_line:
+        return False
+    from _shared import morph_tags as MT
+    for tok_tags in tag_list_for_line:
+        if not tok_tags:
+            continue
+        for tag in tok_tags:
+            if not tag or tag == "[—]":
+                continue
+            if MT.is_finite_verb(tag):
+                return True
+            # Participles (Vqra / Vqrp / etc.) and infinitive constructs
+            # share the same tag family as verbs but are caught by has-V check.
+            for morpheme in tag.split("/"):
+                m = morpheme.lstrip("Hc")
+                if m.startswith("V") and len(m) >= 2:
+                    return True
+    return False
+
+
 # Independent personal pronouns that, when standing alone on a line, are
 # subjects requiring merge with their finite-verb predicate on the next line.
 # Includes vav-prefixed forms (וְהֵמָּה, וְאַתָּה, etc.).
@@ -390,8 +474,187 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
         # The atomic-thought arm may produce a higher REVIEW-REQUIRED rate in poetry; that is
         # the editorial review surface, not a reason to suppress findings.
 
-        # Check if this line is a single-token orphan
         toks = content_tokens(line)
+
+        # ── M4 multi-token PP arm (Wave-C audit Option A 2026-05-05;
+        #    extended for mid-verse cases per Stan's Psa 23:5
+        #    leading-indicator) ────────────────────────────────────────
+        # Trigger: 2 prosodic words, first is a preposition, NOT a verb,
+        # NOT in superscription position, AND prior line in same verse
+        # contains a finite verb / participle / infinitive that this PP
+        # could syntactically modify.
+        # Direction: merge_with_previous (PP modifies prior verb).
+        # Mid-verse safety: when the PP is mid-verse, the next non-skippable
+        # line in the same verse must START WITH a finite verb (opening a
+        # new clause) — this rules out the Psa 1:1-style fronted-PP FP class
+        # (`וּבְמוֹשַׁ֥ב לֵצִ֗ים / לֹ֣א יָשָֽׁב` where the PP fronts the
+        # next clause whose verb is on the following line).
+        if len(toks) == 2:
+            tok1, tok2 = toks
+            tok1_bare = strip_points(tok1).rstrip(SOF_PASUQ).rstrip(MAQQEF)
+            # Resolve tag lists for THIS line (token-1 + token-2) so we can
+            # FP-guard against verb-headed lines tag-aware.
+            tag_list_this_line: "list[list[str]] | None" = None
+            verse_token_tags = verse_token_tags_map.get(v_ctx)
+            if verse_token_tags is not None:
+                verse_idx_lines = verse_lines_map.get(v_ctx, [])
+                line_pos_in_verse = next(
+                    (pos for pos, (li, _) in enumerate(verse_idx_lines) if li == i),
+                    None,
+                )
+                if line_pos_in_verse is not None and line_pos_in_verse < len(verse_token_tags):
+                    tag_list_this_line = verse_token_tags[line_pos_in_verse]
+
+            tok1_tag_list_pre = (
+                tag_list_this_line[0]
+                if tag_list_this_line and len(tag_list_this_line) >= 1
+                else None
+            )
+
+            # Guard 1: token-1 must look like a preposition (skel-trigger),
+            # AND token-1's TAHOT first morpheme must NOT be a noun (N-tag
+            # FP guard). The skel-heuristic alone over-fires on common nouns
+            # whose first consonant is ב/כ/ל/מ (e.g. כּוֹסִי "my cup", בָּקָר
+            # "cattle" → both N-tagged in TAHOT). The N-tag guard rejects
+            # those while keeping prepositions tagged R, A (adverbial-prep
+            # like נֶגֶד), or T (particle-prep like לְמַעַן). When tags are
+            # absent, the skel-only trigger stands.
+            tok1_is_prep_candidate = _starts_with_prep(tok1)
+            if tok1_is_prep_candidate and tok1_tag_list_pre:
+                from _shared import morph_tags as _MT
+                head_tag = next((t for t in tok1_tag_list_pre if t and t != "[—]"), None)
+                if head_tag is not None:
+                    chain = _MT.morpheme_chain(head_tag)
+                    if chain and chain[0] == "c":
+                        chain = chain[1:]  # strip leading conjunction (וְ)
+                    if chain and chain[0].startswith("N"):
+                        tok1_is_prep_candidate = False  # noun-headed → not a PP
+
+            if not tok1_is_prep_candidate:
+                pass  # not a PP-headed line; fall through to single-token logic
+            else:
+                # Guard 2: token-1 must NOT be a tag-confirmed finite verb
+                # (catches the Gen 1:27-style "verb + object" 2-token line
+                # where token-1 looks like a prefix-prep skeleton but is
+                # actually a finite verb).
+                if M.is_finite_verb_token(tok1, tag_list=tok1_tag_list_pre):
+                    pass  # token-1 is a verb → not a PP-headed line
+                else:
+                    # Guard 3: not in superscription position
+                    is_superscription = False
+                    if verse == 1 and v_ctx in verse_lines_map:
+                        first_line_in_verse = verse_lines_map[v_ctx][0][1] if verse_lines_map[v_ctx] else ""
+                        first_tok = first_content_token(first_line_in_verse)
+                        if first_tok:
+                            first_bare = strip_points(first_tok).rstrip(SOF_PASUQ).rstrip(MAQQEF)
+                            if first_bare in SUPERSCRIPTION_OPENER_SKELETONS:
+                                is_superscription = True
+                    if is_superscription:
+                        pass  # superscription verse → skip arm
+                    else:
+                        # Guard 4: prior content line in same verse must
+                        # exist and contain a finite verb / participle.
+                        prior_idx = None
+                        for j in range(i - 1, -1, -1):
+                            if is_skippable(lines[j]):
+                                if parse_verse_ref(lines[j]) is not None:
+                                    break  # crossed verse boundary backwards
+                                continue
+                            if line_to_verse.get(j, (None, None)) != v_ctx:
+                                break
+                            prior_idx = j
+                            break
+
+                        if prior_idx is not None and verse_token_tags is not None:
+                            verse_idx_lines = verse_lines_map.get(v_ctx, [])
+                            prior_pos = next(
+                                (pos for pos, (li, _) in enumerate(verse_idx_lines) if li == prior_idx),
+                                None,
+                            )
+                            prior_tags = (
+                                verse_token_tags[prior_pos]
+                                if prior_pos is not None and prior_pos < len(verse_token_tags)
+                                else None
+                            )
+                            prior_has_verb = _line_contains_finite_verb_or_participle(prior_tags)
+
+                            if prior_has_verb:
+                                # Determine end-of-verse vs mid-verse
+                                line_ends_verse = line.rstrip().endswith(SOF_PASUQ)
+
+                                emit = False
+                                if line_ends_verse:
+                                    # Option A original case — safe to merge.
+                                    emit = True
+                                else:
+                                    # Mid-verse: require next non-skippable
+                                    # line in same verse to start with a
+                                    # finite verb (opens new clause). This
+                                    # rules out fronted-PP heading next
+                                    # clause (Psa 1:1 FP class).
+                                    next_idx = None
+                                    for k in range(i + 1, len(lines)):
+                                        if is_skippable(lines[k]):
+                                            if parse_verse_ref(lines[k]) is not None:
+                                                break
+                                            continue
+                                        if line_to_verse.get(k, (None, None)) != v_ctx:
+                                            break
+                                        next_idx = k
+                                        break
+                                    if next_idx is not None:
+                                        next_tags = None
+                                        next_pos = next(
+                                            (pos for pos, (li, _) in enumerate(verse_idx_lines) if li == next_idx),
+                                            None,
+                                        )
+                                        if next_pos is not None and next_pos < len(verse_token_tags):
+                                            next_line_tags = verse_token_tags[next_pos]
+                                            if next_line_tags and len(next_line_tags) >= 1:
+                                                next_tags = next_line_tags[0]
+                                        next_first_tok = first_content_token(lines[next_idx])
+                                        if (
+                                            next_first_tok is not None
+                                            and M.is_finite_verb_token(next_first_tok, tag_list=next_tags)
+                                        ):
+                                            emit = True
+
+                                if emit:
+                                    line_no = i + 1
+                                    pp_text = strip_points(tok1) + " " + strip_points(tok2).rstrip(SOF_PASUQ)
+                                    findings.append({
+                                        "file_path": path,
+                                        "file_rel": str(path.relative_to(REPO_ROOT)).replace("\\", "/"),
+                                        "line_num": line_no,
+                                        "rule": "M4/multi-token-pp-orphan",
+                                        "severity": "STRONG-MERGE-CANDIDATE",
+                                        "token": pp_text,
+                                        "prior_context": lines[prior_idx].strip()[:80],
+                                        "next_context": "",
+                                        "annotation": (
+                                            "2-token PP orphan: prepositional phrase "
+                                            f"({pp_text!r}) on its own line, modifying a "
+                                            "verb / participle / infinitive on the prior "
+                                            "line of the same verse. Per canon §4 M4, a "
+                                            "bare PP (prep + noun) is grammatical machinery "
+                                            "+ single referent and fails atomic-thought; "
+                                            "must merge with its governing verb. "
+                                            "(Wave-C audit verdict 2026-05-05, Option A + "
+                                            "mid-verse extension; merge_with_previous.)"
+                                        ),
+                                        "brief": (
+                                            f"2-token PP orphan {pp_text!r} — merges back to verb "
+                                            "on prior line"
+                                        ),
+                                        "book": book,
+                                        "chapter": chapter,
+                                        "verse": verse,
+                                        "text": line.strip(),
+                                        "applied_action": "merge_with_previous",
+                                    })
+                                    continue  # don't re-evaluate as single-token
+
+        # Check if this line is a single-token orphan
         if len(toks) != 1:
             continue
 
