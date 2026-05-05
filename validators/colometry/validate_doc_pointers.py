@@ -125,6 +125,14 @@ SKIP_PATHS = {
     # Generated / build artifacts that may not exist on a fresh clone
     "manifest.json",
     "data/reports/apply",
+    # Future deliverables documented as Deferred Work in CLAUDE.md (named
+    # targets, not yet existing files). These are referenced as concrete
+    # commit definitions so a future session can pick them up; the validator
+    # would otherwise flag the named path as broken.
+    "scripts/measure_validator_fp_rate.py",
+    "tests/fp-baseline-fixtures.tsv",
+    "validators/.fp-baseline.json",
+    "scripts/check_cascade_alignment.py",
     # External STEPBible source files (in research/, gitignored)
     "TAHOT_Gen-Deu.txt",
     "TAHOT_Jos-Est.txt",

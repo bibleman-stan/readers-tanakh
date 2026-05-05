@@ -11,6 +11,20 @@
 #   sequentially. If any rebuild fails, the commit is aborted before the
 #   validator gate.
 #
+#   Why auto-staging is safe here: the propagation pipeline (parse_teamim →
+#   propagate_editorial_layers → build_books) is deterministic — given the
+#   same v2/he input, the per-word layers (eng-interlinear/eng-gloss/translit)
+#   and the per-chapter HTML are reproducible. There's no proportional-
+#   redistribution heuristic that requires hand-correction. If you change this
+#   assumption (e.g., introduce a stochastic English-regen step), you must
+#   strip the auto-stage in Phase 1 and require manual `git add` after rebuild.
+#
+#   FAILURE MODE THIS CASCADE PRODUCES IF THE TREE IS DIRTY: pre-existing
+#   uncommitted v2/he changes get pulled into whatever commit you're making.
+#   Always run `git status --short | wc -l` before staging anything. See
+#   CLAUDE.md "Tree-state self-check before commit" — Item Zero of the
+#   2026-05-04 state block is a worked example of this exact failure.
+#
 # Phase 2 — Validator regression gate
 #   Runs run_all.py --baseline-check on any commit that touches v2/he/,
 #   the colometry canon, syntax-reference docs, or validator scripts.

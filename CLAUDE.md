@@ -19,10 +19,14 @@ The methodology rests on three forces operating simultaneously:
 The te'amim (cantillation accents) are **the most important single piece of evidence** — they preserve roughly a millennium of expert Masoretic reading tradition (Tiberian, ~9th–10th c. CE) and form the v1-he-baseline that editors revise from. The disjunctive accent hierarchy requires two parsers: one for the prose accent system (21 books) and one for the *Sifrei Emet* system (Psalms, Proverbs, Job 3:1–42:6). But the te'amim are evidence, not authority; any editorial overlay (te'amim, sof pasuq, paseq, niqqud, versification) is evidence that informs the editor's judgment, not a break-licensing rule.
 
 - **Repo:** github.com/bibleman-stan/readers-tanakh (public)
-- **Live site:** tanakh-reader.com (planned; domain secured, GitHub Pages not yet configured)
+- **Live site:** tanakh-reader.com — `CNAME` file is in repo root; verify GitHub Pages source-setting (Settings → Pages → branch `main`, folder `/`) before assuming the site is serving the latest commit and GA is firing.
 - **Base text:** STEPBible TAHOT — CC-BY-4.0
 - **User:** Stan (thebibleman77@gmail.com)
-- **Stage:** scaffolding complete; no editorial text yet; MVP target is Jonah
+- **State (2026-05-04):** all 39 books populated in `data/text-files/v2/he/` at canonical chapter counts (929 chapters, ~40K colometric lines). Macula Hebrew lowfat IR is wired across the validator suite; ~13K STRONG findings have been mechanically applied across the corpus through the round-4 cascade. **Open carry-forwards** in priority order:
+  1. **Psa 9:10 parallelism direction** — the orphan `מִשְׂגָּב` was merged with the prior verb-line; editorially correct grouping is parallelism (gapped restatement on the next line). Validator merge-direction needs context-aware logic, not the global default.
+  2. **M4 atomic-thought arm Sifrei Emet re-audit** — Wave-B removed overlay-as-authorization skips per the methodology audit, but the Sifrei Emet bound on this specific arm wasn't fully reconsidered. Single-pronoun orphans are colometric errors in any register; verify before next cascade.
+  3. **GH Pages source-setting verification + GA Realtime test** (Stan-side, not Claude-side).
+- **Item Zero — historical commit-title mismatch:** commit `4e1857e25` ("chore(analytics): wire Google Analytics") actually bundled (i) the GA snippet, (ii) the round-4 cluster cascade (~8K STRONG-MERGE applications), (iii) the `_validate_override_quotes` hook hardening, (iv) the `apply_validators` blank-safe-target patch, (v) the `validate_short_orphan_line` M4 direction fix, (vi) the `.baseline.json` refresh. The mismatch happened because pre-existing staged work from the prior session ("kill everything, stop") sat in the tree when the GA commit landed. Lesson: **`git status --short` before any `git add` or `git commit`** — see "Tree-state self-check" below.
 
 ---
 
@@ -65,19 +69,25 @@ The folder is the persistent write surface for the session. Session memory evapo
 4. `git log --oneline -10`
 
 **CONSULT-ON-TRIGGER:**
-- `private/01-method/colometry-canon.md` — **trigger:** ANY editorial, rule-interpretation, or methodology-touching work. **Skip when:** pure infrastructure / code / UX / deployment work with no canon touching.
+- `private/01-method/colometry-canon.md` — **trigger:** anything touching `validators/`, `scripts/apply_*.py`, `scripts/parse_teamim.py`, the data files under `data/text-files/v2/he/`, the syntax-reference, or any editorial / rule-interpretation question. **Skip ONLY when:** the work is pure UX / deployment / build-tooling / web-app frontend with no validator-or-rule surface. When in doubt, read it. The "skip-when" boundary is the elision surface that produced 5 sessions of source-stack blindness in 2026-04-27→2026-05-01 — don't elide silently.
 - `private/README.md` — **trigger:** writing a new file under `private/` and don't already know the subdirectory layout.
 
-**Self-report before first substantive response**: one line per mandatory file (e.g., `- CLAUDE.md: read`). A silent skip is a check-in failure.
+**This protocol applies to all wake signals, including brief "hey" pings.** A short prompt does not shorten the check-in. Compaction-resume runs the full protocol from scratch.
+
+**Self-report before first substantive response**: one line per mandatory file (e.g., `- CLAUDE.md: read`), AND surface any red flags noticed during check-in (stale carry-forwards, uncommitted work in tree from prior session, baseline drift, conflicts between session-notes and current state). Silent skip = check-in failure.
 
 ### WRAP-UP (at session end, or when context crosses ~60%)
 
 Produce in the session folder:
 
-1. **`session-notes.md`** — session arc, what landed (commits), discipline observations, withdrawn proposals, carry-forwards for next session.
-2. **`full-transcript.md`** — verbatim dialogue extraction from the session JSONL (dispatch a Sonnet agent with the JSONL path to stream-process).
-3. **`dialogue-notes.md`** — produce only for methodology-heavy sessions where the dialogue arc itself is the work.
-4. **`review-lists/`** (subfolder) — only when the session produced candidate lists requiring Stan review.
+1. **`session-notes.md`** (mandatory) — session arc, what landed (commits), discipline observations, withdrawn proposals, carry-forwards for next session.
+2. **`review-lists/`** (subfolder, when applicable) — only when the session produced candidate lists requiring Stan review.
+
+On-request (not default — only produce when the session warrants it or Stan asks):
+- **`full-transcript.md`** — verbatim dialogue extraction. Useful for retrospective audits; not useful for next-session carry-forward (that's `session-notes.md`'s job). Don't dispatch a Sonnet agent for this by default.
+- **`dialogue-notes.md`** — only for methodology-heavy sessions where the dialogue arc itself is the work product.
+
+The 2026-05-04 colonoscopy audit found these tail artifacts had low cross-session retrieval value relative to their wrap cost. `session-notes.md` is the load-bearing carry-forward surface.
 
 ### Context-threshold discipline
 
@@ -116,8 +126,8 @@ Current as of 2026-04-27 (post v0/v1/v2 tier collapse).
 | `data/text-files/v0/prose/*/` | populated | Raw text from TAHOT — **NEVER EDIT** |
 | `data/text-files/v1/he-baseline/*/` | populated | Te'amim-baseline cola draft (script-emitted) |
 | `data/text-files/v1/{eng-interlinear,eng-gloss,translit}/*/` | populated | Per-word layers in lockstep with v1/he-baseline |
-| `data/text-files/v2/he/*/` | Jonah 1 only | Hand-edited Hebrew gold standard — single source of truth |
-| `data/text-files/v2/{eng-interlinear,eng-gloss,translit}/*/` | Jonah 1 only | Per-word layers aligned to v2/he cola structure |
+| `data/text-files/v2/he/*/` | all 39 books, 929 chapters | Hand-edited Hebrew gold standard — single source of truth. ~13K STRONG validator findings applied through the 2026-05-04 round-4 cascade. |
+| `data/text-files/v2/{eng-interlinear,eng-gloss,translit}/*/` | all 39 books | Per-word layers aligned to v2/he cola structure (regenerated by `scripts/propagate_editorial_layers.py` via the pre-commit cascade). |
 | `data/syntax-reference/hebrew-break-legality.md` | live | Layer 1 surface (shape-capped, 22/24 rows) |
 | `data/syntax-reference/teamim-inventory.md` | TODO | Te'amim glyph inventory (not yet created) |
 | `private/01-method/colometry-canon.md` | live (force-staged) | Layer 3 editorial methodology |
@@ -179,6 +189,14 @@ Parallel per-word layers under `v2/` (`v2/eng-interlinear/`, `v2/eng-gloss/`, `v
 
 **Validator findings are the work queue, not a separate tier.** `validators/run_all.py` produces the dashboard; STRONG-tagged findings on v1 → v2 transitions are Category A (apply confidently per §2); REVIEW-REQUIRED items go to per-item editorial judgment. The `≥80%` adoption gate (canon §7) governs when a validator's STRONG findings are trusted as Category A. The previous "tier-diff audit gate" is replaced by commit-time discipline (the pre-commit and commit-msg gates documented below).
 
+### Rule-derivative vs ad-hoc changes (do not gate the wrong one)
+
+A rule-derivative change is one a validator with adopted STRONG-tag emission has classified — the rule is mechanical, the application is mechanical, the editor's role is to run it and verify post-cascade. An ad-hoc change is editorial judgment on a verse the validators didn't classify, or where the validator emitted REVIEW-REQUIRED — the editor's role is to decide.
+
+**Gate the right one.** Ad-hoc changes go through editorial review. Rule-derivative changes (validator STRONG-MERGE / STRONG-SPLIT findings on validators in `ADOPTED_VALIDATORS`) get **applied**, then the post-cascade dashboard surfaces the diff for spot-check. Walking Stan through N verse-level confirmations on rule-derivative changes is exactly the failure this corollary exists to prevent — it treats a mechanical rule as advisory, wastes context budget, and pushes the editor into a review queue rather than applying the validator's work queue. Stan's mantra: *"good rules → validators → mechanical apply at scale → swat the bug class, not the instance."*
+
+If the validator is wrong, fix the validator (and re-cascade), don't gate every emission. If the validator's STRONG-tag confidence is uncalibrated, the answer is FP-rate measurement (Phase 2 Deferred Work item 1) — not surfacing every finding to Stan.
+
 ---
 
 ## Three-Layer Validation Architecture & Mechanical Gates
@@ -193,6 +211,8 @@ Mirrors the `bibleman-stan/readers-bofm` sibling architecture (codified there 20
 
 **Discipline:** Layer 1 is a permission/prohibition surface — it catalogs what Hebrew grammar **forbids** or **permits**; it does not prescribe choices among permitted alternatives. Layer 3 operates **within** Layer 1's permitted-either space and codifies project-specific editorial calls. Mixing them in either direction is a regression. The shape cap on Layer 1's table prevents prose-creep; the `[MALFORMED]` vs `[DEVIATION]` error classes prevent confusing a syntax illegality with an editorial deviation.
 
+**Imposing vs revealing — the Layer 3 constraint.** When adding to Layer 3 (canon rules, M-overrides, validators that emit `[DEVIATION]`), don't codify rules from one or two session observations; don't add scope-exclusion carve-outs (Sifrei Emet skip, acrostic skip, register guard) unless the carve-out is methodologically grounded in the three criteria (atomic thought, single image, Hebrew syntax) — not in editorial overlay categories. **Editorial overlays — te'amim, niqqud, versification, register classification — are calibration evidence, not authorization.** If a Layer 3 rule fires on a verse and the candidate fix happens to be in Sifrei Emet, the answer is "is the fix correct under the three criteria?", not "Sifrei Emet is exempt." The 2026-05-04 methodology audit removed 11 `is_poetic_register` skips that had been treating overlay as authorization; future skip-list additions face the same test. (See `private/03-sessions/2026-05-04-macula-promotion-and-methodology-audit/session-notes.md` Wave B.)
+
 ### Mechanical gates (enforced by git hooks)
 
 | Component | What it does |
@@ -202,17 +222,18 @@ Mirrors the `bibleman-stan/readers-bofm` sibling architecture (codified there 20
 | `.git/hooks/pre-commit` (← `validators/hooks/pre-commit`) | Two-phase gate. **Phase 1 (rebuild cascade):** when `data/text-files/v2/he/<book>/` paths are staged, auto-runs `scripts/refresh_book.py --book <book> --build` for each affected book and stages the regenerated derived layers (`v2/eng-interlinear/`, `v2/eng-gloss/`, `v2/translit/`, `books/<book>/`) before the commit lands. Multiple books in one commit are rebuilt sequentially; any rebuild failure aborts the commit. **Phase 2 (regression gate):** runs `run_all.py --baseline-check`; blocks on finding count increase vs baseline. |
 | `.git/hooks/commit-msg` (← `validators/hooks/commit-msg`) | Runs `validators/check_canon_extensions.py` on the proposed commit message. Detects canon extensions (new `Rule HN`, new `MN.` merge-override, new dated principle, closed-list table row, new §7 trigger, new SCOPE-exclusion bullet). Requires audit-evidence keyword (`audit`, `§7`, `post-codification`, etc.) OR skip-safe claim (`typo`, `formatting`, `audit-skippable`). Closes the smuggling-during-unrelated-commit failure mode. |
 | `validators/colometry/validate_clause_nucleus_split.py` | Layer 3 colometry validator for Rule H18 — Clause-Nucleus Integrity (see canon §5 H18). Emits `[DEVIATION]`-class REVIEW-REQUIRED findings only; no STRONG tags. Not in `ADOPTED_VALIDATORS` — requires sustained corpus review before adoption. Uses `validators/_shared/poetic_register.py` to suppress false positives in Sifrei Emet chapters. |
-| `validators/_shared/poetic_register.py` | Shared helper module. Detects whether a chapter is in poetic register (Psalms, Proverbs, Job 3:1–42:6) so that register-sensitive validators can adjust behavior. Imported by `validate_clause_nucleus_split.py` and available to future validators needing the same discriminant. |
+| `validators/_shared/poetic_register.py` | Shared helper module. Detects whether a chapter is in poetic register (Psalms, Proverbs, Job 3:1–42:6) so that register-sensitive validators can adjust behavior. Imported by `validate_clause_nucleus_split.py` and available to future validators needing the same discriminant. **Use only as calibration, never as authorization** (see "Imposing vs revealing" above) — register membership cannot license suppressing a finding that the three criteria say is real. |
+| `.claude/hooks/check_bash_discipline.py` `_validate_override_quotes()` | Override quote-validation gate (added 2026-05-04 per colonoscopy audit). When any override comment (`# disciplined-allow:`, `# split-justified:`, `# audit-skippable:`) cites a quoted phrase ≥20 chars attributed to Stan, the hook walks the recent JSONL transcript user-turns and refuses the override if the cited phrase is not present verbatim or fuzzy-matched (SequenceMatcher ratio ≥0.92). Closes the hallucinated-citation bypass that allowed two hook violations in 90 minutes. **This is the one mechanical binding that has demonstrably changed Claude behavior at the moment of decision** — preserve. |
 
 **Override (Stan-only, explicit decision):** `git commit --no-verify`
 
 **One-time setup after fresh clone (or when hooks are missing):**
 
 ```bash
-cp validators/hooks/pre-commit  .git/hooks/pre-commit
-cp validators/hooks/commit-msg  .git/hooks/commit-msg
-chmod +x .git/hooks/pre-commit .git/hooks/commit-msg
+bash validators/hooks/install.sh
 ```
+
+(Manual fallback if the script is missing: `cp validators/hooks/pre-commit .git/hooks/pre-commit && cp validators/hooks/commit-msg .git/hooks/commit-msg && chmod +x .git/hooks/pre-commit .git/hooks/commit-msg`)
 
 **Routine commands:**
 
@@ -228,17 +249,9 @@ PYTHONIOENCODING=utf-8 py -3 validators/run_all.py --update-baseline # capture n
 
 ## Pre-implementation Adversarial-Audit Discipline (Step 0)
 
-**Before any non-trivial implementation** (new validator with classification logic, new spec, new helper in `validators/_shared/`, new mechanism, new canon rule), the **FIRST tool call** in your response must be either:
+Before any non-trivial implementation (new validator with classification logic, new spec, new helper in `validators/_shared/`, new mechanism, new canon rule), the **FIRST tool call** in your response must be either parallel Agent dispatches for adversarial evaluation (≥2 dimensions, one message, multiple Agent tool_use blocks) **or** a one-line `Audit-skippable: <reason>` declaration citing a recognized trivial class (port of validated sibling code, mechanical ingestion change, test/fixture, runner/glue, scratch diagnostic).
 
-(a) **Parallel Agent dispatches** for adversarial evaluation — at least 2 dimensions, in one message with multiple Agent tool_use blocks. Audit findings inform the design BEFORE any Edit/Write of substantive implementation.
-
-(b) **One-line acknowledgment** `Audit-skippable: <reason>` citing a recognized trivial class — port of already-validated sibling code (with file:line ref), mechanical ingestion-script change, test/fixture, orchestrator/runner/glue with no judgment, scratch diagnostic.
-
-**Mechanically gated** by `.claude/hooks/check_bash_discipline.py` at batch-boundary signals (`apply_specs.py --all-books`, `apply_validators.py --all-books`, `refresh_book.py --all-books`). The hook walks recent transcript turns; if zero or one Agent dispatch found in the lookback AND no `# audit-skippable:` override on the command, the cascade is refused.
-
-**Overrides** (visible in JSONL trace for later audit, use sparingly): prefix command body with `# audit-skippable: <reason>` (A3-Step0-specific) or `# disciplined-allow: <reason>` (universal).
-
-**Why this exists separately from the canon-extension gate below:** the canon-extension gate fires on commits to `private/01-method/colometry-canon.md` — too narrow. Stan repeatedly observed Claude jumping straight to implementation without auditing proposed approaches first (knowing-without-doing pattern across many feedback memories). Step 0 closes the proposal-time gap; the canon-extension gate catches the surviving artifact-time slip. See `handoffs/14-operational-protocols.md` §A3 for the full process and trivial-class definitions.
+**Enforcement is the hook**, not this prose. `.claude/hooks/check_bash_discipline.py` fires at batch-boundary signals (`apply_specs.py --all-books` / `apply_validators.py --all-books` / `refresh_book.py --all-books`); if <2 Agent dispatches are in the recent transcript window AND no `# audit-skippable:` override is on the command, the cascade is refused. Override comments that cite a Stan quote are quote-validated against the actual transcript (see Mechanical gates table). See `handoffs/14-operational-protocols.md §A3` for the full process and trivial-class definitions.
 
 ---
 
@@ -321,9 +334,9 @@ When dispatching subagents via the Agent tool, match model to task complexity. S
 
 ---
 
-## Corpus Cluster Splits — Parallel Dispatch Pattern
+## Corpus Cluster Splits
 
-For corpus-wide work (validator runs, sweep audits, FP-precheck), split agents by cluster rather than running one agent on all 39 books.
+For corpus-wide work (validator runs, sweep audits, FP-precheck), split agents by cluster rather than running one agent on all 39 books. **Threshold rule:** any batch of ≥25 surgical fixes spanning 3+ clusters MUST be split by cluster — no exceptions.
 
 ### The 6 clusters
 
@@ -334,14 +347,7 @@ For corpus-wide work (validator runs, sweep audits, FP-precheck), split agents b
 5. **Sifrei Emet (poetic)** — Psalms, Proverbs, Job 3:1–42:6
 6. **Embedded Poetry (prose-routed)** — Exod 15, Deut 32, Deut 33 vv 2-29, Judg 5, 1 Sam 2:1-10, 2 Sam 22, Isa 12, Hab 3, Lam 1-5, Song of Songs, Eccl 3:2-8
 
-### Two-phase pipeline-change pattern
-
-**Phase 1:** code change + commit in a single agent (one file).
-**Phase 2:** N-cluster parallel rebuild — N separate agent dispatches in one message.
-**Never combine these into one agent.** Bottleneck is documented across siblings.
-
-### Threshold rule
-Any batch of ≥25 surgical fixes spanning 3+ clusters MUST be split by cluster. No exceptions.
+The two-phase pipeline-change pattern (algorithm change in one agent → N-cluster parallel rebuild in N agents) is documented in `handoffs/14-operational-protocols.md §A2`. **Don't restate it here; the hook (A2 detection in `check_bash_discipline.py`) is what binds.**
 
 ---
 
@@ -366,7 +372,7 @@ Any batch of ≥25 surgical fixes spanning 3+ clusters MUST be split by cluster.
 
 ## Connected Resources
 
-- **Academic vault:** `C:\vaults-nano\my_brain\` — Hebrew grammar notes, Bible book files, scholar notes
+- **Academic vault:** `C:\vaults-nano\my_brain\` — Hebrew grammar notes, Bible book files, scholar notes. The `10_Projects\Readers\` subdirectory contains Stan's ATU (atomic thought unit) research-program orientation document and the MOC for the reader-projects family — read this for calibration on what Stan actually wants from the editorial process when the methodology canon and CLAUDE.md feel under-specified.
 - **Gospel vault:** `C:\vaults-nano\gospel\` — devotional scripture notes
 - **Foundational scholarly references:**
   - William Wickes, *A Treatise on the Accentuation of the Twenty-One So-Called Prose Books of the Old Testament* (1887)
@@ -387,6 +393,12 @@ Any batch of ≥25 surgical fixes spanning 3+ clusters MUST be split by cluster.
 - Claude Code prepares commits but cannot push (403 proxy error)
 - Stan's standing instruction: "whenever you finish, do a commit and I'll push"
 
+### Tree-state self-check before commit (mandatory)
+
+Before any `git add` or `git commit`, run `git status --short | wc -l` (or `--short` directly if the count is small). If the tree contains modified files you didn't author this session — especially under `data/text-files/v2/he/`, `validators/`, or `scripts/` — STOP and surface to Stan before staging. This is the failure mode that produced commit `4e1857e25` (Item Zero in the State block above): a 12-line analytics edit landed as a 4554-file commit because pre-existing staged work from a "kill everything, stop" wrap-up was in the tree and got bundled by the pre-commit cascade.
+
+The rule: **a commit's title should describe its actual scope.** If you're about to commit work you didn't author, either (a) ask Stan first, (b) commit it separately under its own title, or (c) `git stash --keep-index` the unrelated work, commit yours, then unstash.
+
 ---
 
 ## Project Siloing
@@ -398,3 +410,25 @@ This project is **publicly independent**. No cross-references to any other proje
 ## Update Protocol
 
 When updating handoff docs, append a dated block at the bottom — never overwrite history. After any session where decisions are made, principles are refined, or new patterns identified, update the relevant handoff file.
+
+**CLAUDE.md is the load-bearing doc, not memory files.** Per the 2026-05-04 colonoscopy audit, prose memories under `~/.claude/projects/.../memory/` have a ~50% application-failure rate; the variable that correlates with adherence is surface-detectability of the trigger, not memory age or word count. **Do not add new memory files for in-session corrections.** If the correction warrants persistence, it lives in CLAUDE.md or `handoffs/14-operational-protocols.md` (where future-Claude reads it during CHECK-IN), or it lives in a runtime hook (where it binds mechanically). The 5 memory files added in the 2026-05-04 session were judged not-helpful by the colonoscopy audit at the same session — the pattern is well-established.
+
+---
+
+## Deferred Operational Work (priority order)
+
+These are concrete next-step items surfaced by the 2026-05-04 audits and the 2026-05-05 path-forward review. Each has explicit completion criteria so a future session can pick one up without re-deriving the rationale.
+
+1. **Phase 2 defensibility — first commit (`scripts/measure_validator_fp_rate.py`).** Write a script that takes a 500-verse fixture set (drawn proportionally from the 6 clusters), runs `apply_validators.py` in dry-run, and computes per-validator true-positive / false-positive rates against manual-review ground truth. Ground-truth file: `tests/fp-baseline-fixtures.tsv` (verse-id, validator-name, expected-action {APPLY, REVIEW, REJECT}). Output: `validators/.fp-baseline.json` with per-validator FP-rate. **First-commit definition.** Phase 2 is not declared until this script exists and runs clean on the fixture set; "Phase 2" without the script is a CYA pause, not a pivot.
+
+2. **Psa 9:10 parallelism direction fix.** `validate_short_orphan_line.py` currently emits `merge_with_previous` for the M4 atomic-thought arm. For parallelism cases (gapped restatement on the next line), the correct merge is `merge_with_next`. Implement context-aware direction: if the next non-blank line is content sharing morphology/role with the prior verb's complement, prefer `merge_with_next`; if next is blank/verse-end, keep `merge_with_previous`. Single-validator change; no new validator needed (this is a bug fix within the existing arm, NOT proliferation).
+
+3. **Scripts-vs-agents runtime hook.** Per the 2026-05-04 colonoscopy §3.2: `feedback_scripts_default_agents_only_for_judgment.md` was violated three times within 24 hours of creation (highest recidivism in the inventory). Build a `PreToolUse` hook on the Agent tool: if the prompt body is short (≤2000 chars) AND matches a narrow mechanical-vocabulary regex (`\b(count|list all|how many|find all|glob for|enumerate)\b`), refuse the dispatch. Bypass: prompt body must start with `# judgment-required: <reason>`. Reference precedent: `_validate_override_quotes()` in the same hook file — proven feasible. **Do not** build the permission-loop hook (i) or counts-headline hook (iii) until Claude Code's Stop-hook surface stabilizes around the JSONL race condition flagged by the 2026-05-05 audit.
+
+4. **New-validator-creation guard hook.** Mechanical enforcement of the validator-extension-over-creation principle. `PreToolUse` on Bash detects `validators/(syntax|colometry)/validate_*.py` paths in `Write` tool calls; refuses unless the corresponding bypass token (`# validator-extension-justified: <reason>`) is present in a recent assistant message. The principle without the hook is a memory; with the hook, it binds. Stan's standing instruction (2026-05-03 session-notes line 67): *"Stop making new validators... The dataset is finite, the grammar is finite. Proliferation creates conflicts."*
+
+5. **GitHub Pages + GA Realtime verification (Stan-side).** Confirm Pages source-setting is `Source: Deploy from a branch / Branch: main / Folder: /`. Visit tanakh-reader.com in one tab + GA Realtime in another; click between chapters; confirm `page_view` events fire on hashchange.
+
+6. **A standalone cascade-alignment scanner** (target name: `scripts/check_cascade_alignment.py`) — port the word-count imbalance scanner from the GNT sibling repo. Tanakh has `scan_english_drift.py` and `english_quality_check.py` already, but lacks an on-demand alignment scanner separate from the pre-commit pipeline. Adapter work: change the sibling's editorial-tier paths to use tanakh's v2/he and v2/eng-interlinear directories. Haiku-tier mechanical port; no judgment work.
+
+Nothing in this list authorizes building a new validator, drafting a new H-rule, adding an M-override, or running a STRONG-promotion sweep. Those are out-of-scope until item 1 lands.

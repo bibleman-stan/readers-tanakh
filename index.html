@@ -10,7 +10,10 @@
   gtag('config', 'G-BJKS0RSVPX');
   // Track SPA hash navigation as pageviews
   window.addEventListener('hashchange', function() {
-    gtag('event', 'page_view', { page_path: location.hash });
+    gtag('event', 'page_view', {
+      page_path: location.hash,
+      page_title: document.title
+    });
   });
 </script>
 <title>Tanakh Reader — Hebrew Bible</title>

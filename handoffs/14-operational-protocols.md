@@ -1,6 +1,6 @@
 # 14 — Operational Protocols
 
-This file codifies the "work smarter" practices that govern how Claude Code should approach corpus-wide changes, bug fixes, and methodology refinements in the Tanakh Reader project. These protocols are ported from the sibling Reader's GNT and BOM Reader projects (`readers-bofm/handoffs/14-operational-protocols.md`, `readers-gnt/handoffs/04-editorial-workflow.md`) where they were established through hard experience — every violation of the patterns below has resulted in either a bottleneck, a regression, or a partial fix that had to be redone.
+This file codifies the "work smarter" practices that govern how Claude Code should approach corpus-wide changes, bug fixes, and methodology refinements in the Tanakh Reader project. These protocols were established through hard experience — every violation of the patterns below has resulted in either a bottleneck, a regression, or a partial fix that had to be redone.
 
 **These are not optional. They are the operating discipline of the project.**
 
@@ -168,21 +168,16 @@ Question-answering decomposes the same as task execution. ≥2 lookups = paralle
 
 ## D. Documentation Discipline
 
-### D1. Update Handoffs at Important Decision Points
+Update handoffs at the moment a decision is made — not at end of session — whenever:
+- A decision affects future work
+- A principle is refined or a new rule is established
+- A pattern is identified across the corpus
+- A methodology reset happens (the rules themselves change)
+- A bug class is discovered and fixed
+- A feature is shipped or deprecated
+- A cascade or build pipeline change lands
 
-The handoff docs are the memory layer between sessions. Update them whenever:
-
-1. A decision is made that affects future work
-2. A principle is refined or a new rule is established
-3. A pattern is identified across the corpus
-4. A methodology reset happens (the rules themselves change)
-5. A bug class is discovered and fixed
-6. A feature is shipped or deprecated
-7. A cascade or build pipeline change lands
-
-Don't wait for end of session — update the relevant handoff(s) at the moment the decision is made. Future sessions need the reasoning, not just the result.
-
-### D2. Append Dated Updates — Never Overwrite History
+**Append, don't overwrite.** Add a dated block at the bottom of the relevant handoff:
 
 ```markdown
 ---
@@ -192,11 +187,9 @@ Don't wait for end of session — update the relevant handoff(s) at the moment t
 - New state
 ```
 
-Never overwrite existing content. Append at the end. Future sessions need to trace how the methodology evolved, not just what it currently says.
+Future sessions need to trace evolution, not just the current state.
 
-### D3. Document the WHY, Not Just the WHAT
-
-When updating a handoff or writing a commit message, explain *why* the change was made. The "what" can be derived from git diff. The "why" is what makes the decision legible to future sessions.
+**Document the WHY, not just the WHAT.** The "what" is in `git diff`; the "why" is what makes the decision legible.
 
 **Bad:** "Added 18 oscillation guards."
 **Good:** "Added oscillation-blocker guard trio (next_line_is_vav_coord_pp / _vav_coord_np / _wayyiqtol) to 18 merge specs missing one or more guards. Discovered when tag-driven finite-verb classification (commit fa68cb5db) unblocked merge candidates that the skel-based mis-classification had been silently suppressing — the missing guards then exposed S1↔M2 oscillation at Gen 24:38, caught by MAX_PASSES=25 safety net. The trio is universally correct on merge specs (N+1 starting with vav-coord-PP/NP/wayyiqtol is recently-split material; merging would undo the split)."
@@ -355,23 +348,7 @@ The 2026-05-02 m4_e investigation was based on misdiagnosis A1 ("dry-run RUNAWAY
 
 ---
 
-## I. Origin of These Protocols
-
-These protocols were established in the Reader's GNT project after experience showed that ad hoc workflows don't scale. The same failure modes have surfaced across all three sibling projects (gnt, bofm, tanakh):
-
-- **A1 (find the class):** A bug was fixed in one place, then re-discovered three more times in subsequent sessions before the class was identified
-- **A2 (two-phase pattern):** A single agent was given "modify the script and rebuild the corpus" — it spent 90% of its time on the rebuild and never finished the modification properly
-- **A3 (multiple candidates):** A first-instinct fix was implemented, shipped, and then had to be undone two sessions later when a better approach was found
-- **A4 (haiku for review):** Opus was being used for simple read-only audits at 5x the cost and 3x the latency
-- **B (adversarial testing):** A change shipped, looked clean in spot checks, and then dozens of misclassifications were discovered by adversarial review three sessions later
-- **C (parallel dispatch):** Sequential agent dispatches were bottlenecking the project — what should have been 30 minutes of parallel work was taking 3 hours sequentially
-- **E1-E7 (tools-over-bash):** A 2026-04-30 tanakh session generated multi-line bash heredocs for at least 8 distinct one-off operations, each consuming context and several breaking on Windows-specific issues — that session is the proximate cause of this file existing in tanakh
-
-The Tanakh Reader project hit the same failure modes during the April 2026 sessions. Adopting these protocols formally prevents the same lessons from being relearned.
-
----
-
-## J. Protocol Self-Audit (End-of-Session)
+## I. Protocol Self-Audit (End-of-Session)
 
 Before WRAP-UP, ask:
 
