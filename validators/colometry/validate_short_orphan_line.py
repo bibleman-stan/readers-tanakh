@@ -751,6 +751,28 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
             "ambiguous edges only. Walk-back via revert if mis-applied."
         )
 
+        # Context-aware merge direction (CLAUDE.md Deferred Work item #2 fix,
+        # 2026-05-05). The Psa 9:10 case showed that a global merge_with_previous
+        # default mishandles poetic parallelism: when an orphan single-token line
+        # has another content line AFTER it within the same verse, the orphan +
+        # next-line typically form a gapped restatement (e.g. v9:10
+        # `מִשְׂגָּב לְעִתּוֹת בַּצָּרָה` — "a refuge / for times of trouble"
+        # belongs together, not absorbed back into the prior `יְהוָה מִשְׂגָּב לַדָּךְ`).
+        # Look-ahead rule: if the next non-skippable line IS within the same
+        # verse → merge_with_next (parallelism); else merge_with_previous
+        # (orphan is verb's complement, e.g. v9:9 `בְּמֵישָׁרִים` end-of-verse).
+        has_next_content_in_verse = False
+        for k in range(i + 1, len(lines)):
+            if is_skippable(lines[k]):
+                if parse_verse_ref(lines[k]) is not None:
+                    break  # crossed into a new verse marker
+                continue
+            if line_to_verse.get(k, (None, None)) != v_ctx:
+                break  # crossed verse boundary
+            has_next_content_in_verse = True
+            break
+        merge_direction = "merge_with_next" if has_next_content_in_verse else "merge_with_previous"
+
         findings.append({
             "file_path": path,
             "file_rel": str(path.relative_to(REPO_ROOT)).replace("\\", "/"),
@@ -766,6 +788,7 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
             "chapter": chapter,
             "verse": verse,
             "text": line.strip(),
+            "applied_action": merge_direction,
         })
 
     return findings
@@ -837,15 +860,18 @@ def main():
         findings_json = []
         for f in all_findings:
             sev = f["severity"]
-            # Action direction is rule-specific:
-            # - M4/subject-pronoun-orphan: pronoun on line N, finite verb on N+1
-            #   → merge_with_next (pronoun + verb co-locate on N).
-            # - M4/orphan-line-atomic-thought: single-token orphan (PP/A1/etc.)
-            #   typically follows a content line N-1 that needs the orphan as its
-            #   complement → merge_with_previous (orphan absorbed into N-1).
+            # Action direction:
+            # - If the finding dict already carries an "applied_action" (set at
+            #   emission time per CLAUDE.md Deferred Work item #2 — context-aware
+            #   parallelism vs verb-complement), prefer that.
+            # - Otherwise fall back to rule-based default: M4/subject-pronoun-orphan
+            #   merges with next (pronoun co-locates with following finite verb);
+            #   anything else merges with previous.
             #   Cross-verse boundary protection lives in apply_validators.
             if sev == "STRONG-MERGE-CANDIDATE":
-                if f["rule"] == "M4/subject-pronoun-orphan":
+                if f.get("applied_action"):
+                    applied_action = f["applied_action"]
+                elif f["rule"] == "M4/subject-pronoun-orphan":
                     applied_action = "merge_with_next"
                 else:
                     applied_action = "merge_with_previous"
