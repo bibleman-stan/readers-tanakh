@@ -428,6 +428,25 @@ When updating handoff docs, append a dated block at the bottom — never overwri
 
 ---
 
+## Built mechanical hooks (2026-05-05 session)
+
+Five hooks now binding behavior at runtime. All pass `tests/test_bash_discipline_hook.py` (56/56 fixtures).
+
+| Hook | Event/Tool | What it catches | Bypass |
+|---|---|---|---|
+| Override quote-validation | PreToolUse / Bash | Hallucinated-Stan-citation in `# disciplined-allow:` / `# split-justified:` / `# audit-skippable:` / `# judgment-required:` / `# validator-extension-justified:` reasons | Drop the fabricated quote |
+| Bash heredoc / cascade / verbose-git / A3-Step0 | PreToolUse / Bash | Multi-line Python heredocs, `--all-books` on main thread, bare `git status` / `git diff`, cascades without ≥2 recent Agent dispatches | `# disciplined-allow:` / `# split-justified:` / `# audit-skippable:` (visible in JSONL) |
+| Scripts-vs-agents (`[SCRIPTS-DEFAULT]`) | PreToolUse / Agent | Short prompt body (≤2000 chars) with mechanical-vocabulary verb (count/list all/how many/find all/enumerate/scan every/check whether/look up/pull every/return every/glob for) | `# judgment-required: <reason>` (substance-validated against closed criterion vocabulary) |
+| Validator-creation guard (`[VALIDATOR-PROLIFERATION]`) | PreToolUse / Write | Creating new `validators/(syntax\|colometry)/validate_*.py` files | `# validator-extension-justified: <reason>` in recent assistant message (substance-validated) |
+| Permission-loop coda (`[PERMISSION-LOOP]`) | Stop | Outgoing message ends with `?` AND recent `TodoWrite` has non-completed todos | `<!-- question-required: <reason> -->` HTML comment (renders invisible in markdown) |
+| Counts-headline (`[COUNTS-HEADLINE]`) | Stop | First paragraph contains bare integer ≥100 not contextualized as a verse/chapter/line/word/file/book reference | `<!-- counts-ok: <reason> -->` HTML comment |
+
+Override-substance validation: `# judgment-required:` and `# validator-extension-justified:` reason text must match a closed-vocabulary regex (classify / synthesis / hostile-audit / adversarial / precedence / edge-case / ambiguous / multi-source / cross-rule / cross-lens / methodology / FP-rate / hand-review / per-item / judgment-call for the first; extend / new-arm / new-subcase / distinct-failure / orthogonal / cannot-be-added / existing-validator-misses / fundamentally-different for the second). Quote-validation is universal across all override tokens. Settings.json registration: `PreToolUse.matcher = "Bash|Agent|Write"` + a separate `Stop` event entry (settings.json is gitignored — verify after fresh clone).
+
+Behavior change measurement: the colonoscopy audit's central diagnosis was prose-discipline binding at ~50%. Of the audit's six highest-recidivism failure modes, five are now mechanically gated (override-bypass, scripts-vs-agents, validator-proliferation, permission-loop, counts-headline). One remains prose-only (editorial-call structure rule — when Stan names a verse, lead with "Got it"). The "TRIGGER-section format migration" recommendation (colonoscopy §3.3) is also still prose; defer until the FP-rate measurement work in Deferred Work item 1 is done — measurement first, format migration second.
+
+---
+
 ## Deferred Operational Work (priority order)
 
 These are concrete next-step items surfaced by the 2026-05-04 audits and the 2026-05-05 path-forward review. Each has explicit completion criteria so a future session can pick one up without re-deriving the rationale.
@@ -436,12 +455,8 @@ These are concrete next-step items surfaced by the 2026-05-04 audits and the 202
 
 2. **Psa 9:10 parallelism direction fix.** `validate_short_orphan_line.py` currently emits `merge_with_previous` for the M4 atomic-thought arm. For parallelism cases (gapped restatement on the next line), the correct merge is `merge_with_next`. Implement context-aware direction: if the next non-blank line is content sharing morphology/role with the prior verb's complement, prefer `merge_with_next`; if next is blank/verse-end, keep `merge_with_previous`. Single-validator change; no new validator needed (this is a bug fix within the existing arm, NOT proliferation).
 
-3. **Scripts-vs-agents runtime hook.** **BUILT 2026-05-05** — `_agent_violations()` in `.claude/hooks/check_bash_discipline.py` (lines 215+); 13 fixture tests in `tests/test_bash_discipline_hook.py` (`AGENT_TESTS`). Detects Agent dispatches with short prompt bodies (≤2000 chars) matching mechanical-vocabulary regex (count / list all / how many / find all / enumerate / scan every / check whether / look up / pull every / return every / glob for). Bypass: prompt body starts with `# judgment-required: <reason>`. **Settings.json registration requirement:** the `.claude/settings.json` `PreToolUse.matcher` field must be `"Bash|Agent"` (not just `"Bash"`) for the hook to fire on Agent calls. settings.json is gitignored — verify on a fresh clone or after a settings reset. **Do not** build the permission-loop hook (i) or counts-headline hook (iii) until Claude Code's Stop-hook surface stabilizes around the JSONL race condition flagged by the 2026-05-05 audit.
+3. **GitHub Pages + GA Realtime verification (Stan-side).** Confirm Pages source-setting is `Source: Deploy from a branch / Branch: main / Folder: /`. Visit tanakh-reader.com in one tab + GA Realtime in another; click between chapters; confirm `page_view` events fire on hashchange.
 
-4. **New-validator-creation guard hook.** Mechanical enforcement of the validator-extension-over-creation principle. `PreToolUse` on the **Write tool** (the surface where new files are created — NOT Bash) detects `tool_input.file_path` matching `validators/(syntax|colometry)/validate_*.py` paths; refuses unless the corresponding bypass token `# validator-extension-justified: <reason>` is present in a recent assistant message. The settings.json matcher needs to be updated to include "Write" alongside "Bash|Agent" — currently only "Bash|Agent" is registered. The principle without the hook is a memory; with the hook, it binds. Stan's standing instruction (2026-05-03 session-notes line 67): *"Stop making new validators... The dataset is finite, the grammar is finite. Proliferation creates conflicts."*
+4. **A standalone cascade-alignment scanner** (target name: `scripts/check_cascade_alignment.py`) — port the word-count imbalance scanner from the GNT sibling repo. Tanakh has `scan_english_drift.py` and `english_quality_check.py` already, but lacks an on-demand alignment scanner separate from the pre-commit pipeline. Adapter work: change the sibling's editorial-tier paths to use tanakh's v2/he and v2/eng-interlinear directories. Haiku-tier mechanical port; no judgment work.
 
-5. **GitHub Pages + GA Realtime verification (Stan-side).** Confirm Pages source-setting is `Source: Deploy from a branch / Branch: main / Folder: /`. Visit tanakh-reader.com in one tab + GA Realtime in another; click between chapters; confirm `page_view` events fire on hashchange.
-
-6. **A standalone cascade-alignment scanner** (target name: `scripts/check_cascade_alignment.py`) — port the word-count imbalance scanner from the GNT sibling repo. Tanakh has `scan_english_drift.py` and `english_quality_check.py` already, but lacks an on-demand alignment scanner separate from the pre-commit pipeline. Adapter work: change the sibling's editorial-tier paths to use tanakh's v2/he and v2/eng-interlinear directories. Haiku-tier mechanical port; no judgment work.
-
-Nothing in this list authorizes building a new validator, drafting a new H-rule, adding an M-override, or running a STRONG-promotion sweep. Those are out-of-scope until item 1 lands.
+Nothing in this list authorizes building a new validator, drafting a new H-rule, adding an M-override, or running a STRONG-promotion sweep. Those are out-of-scope until item 1 lands AND the validator-creation guard hook lets you through (it won't, by design, unless you can name a substantive criterion).

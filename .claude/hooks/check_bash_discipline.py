@@ -102,7 +102,29 @@ def _count_recent_agent_dispatches(transcript_path: str, lookback_lines: int = 2
 
 
 _QUOTED_PHRASE_RE = re.compile(r'"([^"]{20,})"')
-_OVERRIDE_TOKENS = ("# disciplined-allow:", "# split-justified:", "# audit-skippable:")
+_OVERRIDE_TOKENS = (
+    "# disciplined-allow:",
+    "# split-justified:",
+    "# audit-skippable:",
+    "# judgment-required:",  # Agent tool bypass
+    "# validator-extension-justified:",  # Write tool bypass
+)
+
+# Bypass-substance validation (per 2026-05-05 meta-audit Hook-(ii) verdict §C).
+# Override comments may pass quote validation but still be substantively
+# vacuous ("# judgment-required: I need to" / "# validator-extension-justified:
+# this is needed"). Require the reason to name a recognized criterion.
+_JUDGMENT_SUBSTANCE_RE = re.compile(
+    r"\b(classif|synthesi[sz]|hostile.audit|adversarial|precedence|edge.case|"
+    r"ambigu|multi.source|cross.rule|cross.lens|methodology|FP.rate|"
+    r"hand.review|per.item|judgment.call)\b",
+    re.IGNORECASE,
+)
+_VALIDATOR_EXT_SUBSTANCE_RE = re.compile(
+    r"\b(extend|new.arm|new.subcase|distinct.failure|orthogonal|cannot.be.added|"
+    r"existing.validator.misses|fundamentally.different)\b",
+    re.IGNORECASE,
+)
 
 # Agent-tool mechanical-vocabulary trigger (per 2026-05-04 colonoscopy audit
 # §3.2 Hook (ii) — scripts-default-vs-agents). Matches prompts that describe
@@ -178,12 +200,32 @@ def _extract_recent_user_turns(transcript_path: str, lookback_lines: int = 500) 
 def _validate_override_quotes(command: str, transcript_path: str) -> str | None:
     """If override comment cites a quoted phrase, validate it against recent user turns.
 
+    Applies to ALL override tokens (`# disciplined-allow:`, `# split-justified:`,
+    `# audit-skippable:`, `# judgment-required:`, `# validator-extension-justified:`).
+    The 2026-05-04 colonoscopy audit named the hallucinated-citation pattern as
+    the central bypass exploit; same validator extends to all override surfaces.
+
     Returns an error message (str) if validation fails (override should be REFUSED).
     Returns None if no quote OR all cited quotes pass validation.
     """
-    if not any(tok in command for tok in _OVERRIDE_TOKENS):
-        return None  # No override comment present
-    quotes = _QUOTED_PHRASE_RE.findall(command)
+    # Only count override tokens that appear at the START of a line (real
+    # override comments live on their own line as shell preamble). Tokens
+    # appearing inside a heredoc body (e.g., a commit message describing
+    # the override mechanism) are not real overrides — skip them.
+    has_real_override = any(
+        re.search(r"(?m)^\s*" + re.escape(tok), command) for tok in _OVERRIDE_TOKENS
+    )
+    if not has_real_override:
+        return None  # No real override comment present
+    # Limit quote scan to the actual override-comment lines, not the whole
+    # command (which may include heredoc-body strings that aren't overrides).
+    override_lines: list[str] = []
+    for line in command.splitlines():
+        stripped = line.lstrip()
+        if any(stripped.startswith(tok) for tok in _OVERRIDE_TOKENS):
+            override_lines.append(stripped)
+    scan_text = "\n".join(override_lines)
+    quotes = _QUOTED_PHRASE_RE.findall(scan_text)
     if not quotes:
         return None  # Override has no quoted-phrase citation; nothing to validate
     user_turns = _extract_recent_user_turns(transcript_path)
@@ -232,6 +274,389 @@ def _validate_override_quotes(command: str, transcript_path: str) -> str | None:
     return None
 
 
+def _validate_bypass_substance(text: str, token: str, substance_re: re.Pattern) -> str | None:
+    """Verify an override comment's <reason> names a recognized criterion.
+
+    Per 2026-05-05 meta-audit §C: override comments can pass quote validation
+    yet be substantively vacuous. Require the reason text to match a closed
+    list of recognized criteria. Skips validation if quoted phrases were
+    used (those are validated separately by `_validate_override_quotes`).
+    """
+    idx = text.find(token)
+    if idx < 0:
+        return None
+    # Extract the rest of that line (the <reason>).
+    line_end = text.find("\n", idx)
+    reason = text[idx + len(token) : line_end if line_end > 0 else len(text)].strip()
+    if not reason:
+        return (
+            f"Override token '{token}' is present with no reason. Provide a "
+            f"<reason> after the colon describing why the bypass is justified."
+        )
+    # If reason contains a quoted phrase, defer to quote-validation.
+    if _QUOTED_PHRASE_RE.search(reason):
+        return None
+    if not substance_re.search(reason):
+        criteria_examples = {
+            "# judgment-required:": "classify, synthesis, hostile-audit, adversarial, precedence, edge-case, ambiguous, multi-source, cross-rule, methodology, FP-rate, hand-review, per-item, judgment-call",
+            "# validator-extension-justified:": "extend (existing), new-arm, new-subcase, distinct-failure, orthogonal, cannot-be-added (to existing), existing-validator-misses, fundamentally-different",
+        }
+        examples = criteria_examples.get(token, "(see hook source for accepted vocabulary)")
+        return (
+            f"=== BYPASS SUBSTANCE VALIDATION FAILED ===\n\n"
+            f"Override comment '{token} {reason[:80]}' does not name a recognized "
+            f"justification criterion. The bypass mechanism trusts your "
+            f"self-report; this gate checks that the self-report names a "
+            f"specific reason from a closed vocabulary, not just the word "
+            f"'judgment' or 'extension'.\n\n"
+            f"Accepted criteria (case-insensitive substring match):\n"
+            f"  {examples}\n\n"
+            f"ACTION: rewrite the bypass reason to name a specific criterion. "
+            f"If the deliverable doesn't fit any of these, the bypass is "
+            f"probably not the right move — re-think whether the gate is "
+            f"actually wrong for this case."
+        )
+    return None
+
+
+def _extract_last_assistant_text(transcript_path: str) -> str:
+    """Return concatenated text content of the most recent assistant message.
+
+    Used by Stop-hook gates that need to inspect the message Claude is about
+    to send. Empty string on any access failure or if no assistant message
+    is found in the JSONL tail.
+    """
+    if not transcript_path:
+        return ""
+    p = Path(transcript_path)
+    if not p.exists():
+        return ""
+    try:
+        with p.open("rb") as fh:
+            fh.seek(0, 2)
+            size = fh.tell()
+            tail_size = min(size, 5_000_000)
+            fh.seek(size - tail_size)
+            tail_bytes = fh.read()
+        tail_text = tail_bytes.decode("utf-8", errors="ignore")
+    except Exception:
+        return ""
+    # Walk backwards through lines, find the most recent assistant message.
+    lines = tail_text.splitlines()
+    for line in reversed(lines):
+        if not line.strip():
+            continue
+        try:
+            entry = json.loads(line)
+        except Exception:
+            continue
+        if entry.get("type") != "assistant":
+            continue
+        msg = entry.get("message")
+        if not isinstance(msg, dict):
+            continue
+        content = msg.get("content")
+        if isinstance(content, str):
+            return content
+        if isinstance(content, list):
+            parts: list[str] = []
+            for block in content:
+                if isinstance(block, dict) and block.get("type") == "text":
+                    text = block.get("text", "")
+                    if isinstance(text, str):
+                        parts.append(text)
+            if parts:
+                return "\n".join(parts)
+    return ""
+
+
+def _has_pending_todos(transcript_path: str) -> bool:
+    """Heuristic: does the recent transcript show any pending (non-completed) TodoWrite todos?
+
+    Walks JSONL tail backwards; the FIRST TodoWrite encountered is the
+    current state of the todo list. If any todo has status != "completed",
+    return True.
+
+    Imperfect (no structured todo-state API per Claude Code; this is a
+    JSONL-walk inference). False negatives possible if TodoWrite isn't
+    being used. False positives possible if the most recent TodoWrite
+    has stale "in_progress" entries that should be "completed."
+    """
+    if not transcript_path:
+        return False
+    p = Path(transcript_path)
+    if not p.exists():
+        return False
+    try:
+        with p.open("rb") as fh:
+            fh.seek(0, 2)
+            size = fh.tell()
+            tail_size = min(size, 5_000_000)
+            fh.seek(size - tail_size)
+            tail_bytes = fh.read()
+        tail_text = tail_bytes.decode("utf-8", errors="ignore")
+    except Exception:
+        return False
+    for line in reversed(tail_text.splitlines()):
+        if not line.strip():
+            continue
+        try:
+            entry = json.loads(line)
+        except Exception:
+            continue
+        if entry.get("type") != "assistant":
+            continue
+        msg = entry.get("message")
+        if not isinstance(msg, dict):
+            continue
+        content = msg.get("content")
+        if not isinstance(content, list):
+            continue
+        for block in content:
+            if (
+                isinstance(block, dict)
+                and block.get("type") == "tool_use"
+                and block.get("name") == "TodoWrite"
+            ):
+                todos = block.get("input", {}).get("todos", [])
+                if not isinstance(todos, list):
+                    return False
+                # Found the most recent TodoWrite; inspect its state.
+                for todo in todos:
+                    if isinstance(todo, dict):
+                        status = todo.get("status", "")
+                        if status and status != "completed":
+                            return True
+                return False  # All todos in latest TodoWrite are completed
+    return False  # No TodoWrite found in recent window
+
+
+# Permission-loop trigger: outgoing message ends with '?' (whitespace-trimmed).
+_PERMISSION_LOOP_BYPASS = "<!-- question-required:"
+
+# Counts-headline trigger: first paragraph contains a "leading" integer >= 100
+# that is not immediately contextualized as a verse/chapter/line/word/file/book
+# reference.
+_COUNTS_HEADLINE_BYPASS = "<!-- counts-ok:"
+
+# Pattern: an integer (possibly with thousands separators) that appears in
+# context where it's clearly a quantity-as-headline rather than a reference.
+# We catch numbers >= 100 that are NOT immediately preceded by reference
+# vocabulary and NOT immediately followed by reference units.
+_HEADLINE_NUMERIC_RE = re.compile(
+    r"(?<![:.\-\d/])"   # not part of a verse-ref or version-ref
+    r"\b(\d{1,3}(?:,\d{3})+|\d{3,})\b"  # 100+ (with or without commas)
+    r"(?!\s*(?:[:.]\d|/))"  # not "1234:5" or "12.34" or "100/200"
+)
+# Reference-unit nouns that contextualize a number as not-a-headline.
+_REFERENCE_UNIT_RE = re.compile(
+    r"\s*(?:verse|verses|chapter|chapters|book|books|line|lines|word|words|"
+    r"file|files|token|tokens|year|years|page|pages|day|days|"
+    r"BCE|CE|AD|BC|test|tests|second|seconds|minute|minutes|"
+    r"px|em|rem|%|line\b)",
+    re.IGNORECASE,
+)
+# Reference-prefix vocabulary (e.g., "verse 119" or "Psalm 119").
+_REFERENCE_PREFIX_RE = re.compile(
+    r"\b(verse|chapter|book|line|word|token|file|psalm|gen|exod|lev|num|deut|"
+    r"josh|judg|ruth|sam|kings|kgs|chron|chr|ezra|neh|esth|job|psa|ps|prov|"
+    r"prv|eccl|qoh|song|sos|isa|jer|lam|ezek|dan|hos|joel|amos|obad|jon|"
+    r"jonah|mic|nah|hab|zeph|hag|zech|mal|year|day|page|test|stage|item|"
+    r"step|level|round|wave|tier|version|v|phase|round)\b\s*$",
+    re.IGNORECASE,
+)
+
+
+def _stop_violations(transcript_path: str) -> list[str]:
+    """Detect outgoing-message anti-patterns at Stop time.
+
+    Two gates per 2026-05-04 colonoscopy audit §3.2:
+      (i)  Permission-loop coda: message ends with '?' and pending todos exist.
+      (iii) Counts-headline: first paragraph contains a leading integer >= 100
+            not contextualized as a reference.
+
+    Both are bypassable via leading HTML comment tokens (invisible in rendered
+    markdown but visible to the hook):
+      <!-- question-required: <reason> -->
+      <!-- counts-ok: <reason> -->
+    """
+    text = _extract_last_assistant_text(transcript_path)
+    if not text:
+        return []  # Can't read message → don't block (avoid spurious blocking)
+    violations: list[str] = []
+
+    # --- (i) Permission-loop coda ---
+    has_question_bypass = _PERMISSION_LOOP_BYPASS in text
+    if not has_question_bypass:
+        stripped = text.rstrip()
+        if stripped.endswith("?") and _has_pending_todos(transcript_path):
+            violations.append(
+                f"[PERMISSION-LOOP] Outgoing message ends with '?' AND the "
+                f"recent TodoWrite shows pending (non-completed) todos. Per "
+                f"`feedback_no_permission_loop_on_authorized_work.md` (8 days "
+                f"old, violated 326 times across 8 sessions per the 2026-05-04 "
+                f"prior-sessions audit): when status reports contain a non-"
+                f"empty pending-todo queue and Stan has not blocked the next "
+                f"item, the next message IS the next item — not a question "
+                f"about whether to start it.\n\n"
+                f"ACTION: rewrite the trailing question as 'Continuing on "
+                f"[next item from queue]' and proceed. If the question is "
+                f"genuinely necessary (Stan-decision required, ambiguous "
+                f"input, destructive action confirmation), bypass with "
+                f"leading HTML comment: '{_PERMISSION_LOOP_BYPASS} <reason> "
+                f"-->' (renders invisible in markdown; visible to the hook)."
+            )
+
+    # --- (iii) Counts-headline ---
+    has_counts_bypass = _COUNTS_HEADLINE_BYPASS in text
+    if not has_counts_bypass:
+        # First paragraph = text up to first \n\n
+        first_para = text.split("\n\n", 1)[0] if text else ""
+        # Skip leading HTML comments and bypass-token markers when measuring.
+        first_para_clean = re.sub(r"^\s*(?:<!--[\s\S]*?-->\s*)+", "", first_para).strip()
+        if first_para_clean:
+            for m in _HEADLINE_NUMERIC_RE.finditer(first_para_clean):
+                num_str = m.group(1).replace(",", "")
+                try:
+                    n = int(num_str)
+                except ValueError:
+                    continue
+                if n < 100:
+                    continue
+                # Check before-context: is this a reference-prefixed number?
+                before = first_para_clean[: m.start()][-40:]
+                if _REFERENCE_PREFIX_RE.search(before):
+                    continue
+                # Check after-context: is the number followed by a reference-unit?
+                after = first_para_clean[m.end() : m.end() + 30]
+                if _REFERENCE_UNIT_RE.match(after):
+                    continue
+                # Bare number ≥100 in first paragraph not contextualized → block.
+                violations.append(
+                    f"[COUNTS-HEADLINE] First paragraph of outgoing message "
+                    f"contains a bare integer {n} not contextualized as a "
+                    f"reference (verse, chapter, line, word, file, etc.). Per "
+                    f"`feedback_counts_belong_in_commit_messages.md` and the "
+                    f"2026-05-04 process-waste audit pattern #8: status "
+                    f"reports lead with WHAT changed in the corpus (named "
+                    f"verses, named files), not HOW MANY findings shifted. "
+                    f"Counts go in commit messages where Stan can pull them "
+                    f"on demand.\n\n"
+                    f"ACTION: rewrite the first paragraph to lead with the "
+                    f"editorial change, not the count. If the count IS the "
+                    f"reportable item (e.g., a build-summary message that's "
+                    f"genuinely number-led), bypass with leading HTML "
+                    f"comment: '{_COUNTS_HEADLINE_BYPASS} <reason> -->'."
+                )
+                break  # one violation per message is enough
+    return violations
+
+
+def _write_violations(payload: dict) -> list[str]:
+    """Detect new-validator-creation Write-tool calls without bypass token.
+
+    Per 2026-05-04 colonoscopy + 2026-05-03 Stan instruction
+    ("stop making new validators... proliferation creates conflicts"):
+    creating a new `validators/(syntax|colometry)/validate_*.py` file should
+    require an explicit justification token in a recent assistant message
+    naming why this is a NEW validator and not an extension to an existing one.
+
+    Bypass: a recent assistant message must contain the marker
+    `# validator-extension-justified: <reason>` with a substantive reason
+    (per `_validate_bypass_substance`).
+    """
+    file_path = payload.get("tool_input", {}).get("file_path", "") or ""
+    if not file_path:
+        return []
+    # Normalize to forward slashes for matching.
+    norm = file_path.replace("\\", "/")
+    if not re.search(
+        r"validators/(?:syntax|colometry)/validate_[\w]+\.py$", norm
+    ):
+        return []  # Not a validator file — pass through
+
+    # Check if the file already exists. If yes, this is editing not creating.
+    if Path(file_path).exists():
+        return []  # Editing existing validator is fine
+
+    # New validator file. Require bypass token in recent assistant messages.
+    transcript_path = payload.get("transcript_path", "")
+    asst_text = ""
+    if transcript_path:
+        # Concatenate the last few assistant messages to find the bypass token.
+        p = Path(transcript_path)
+        if p.exists():
+            try:
+                with p.open("rb") as fh:
+                    fh.seek(0, 2)
+                    size = fh.tell()
+                    tail_size = min(size, 5_000_000)
+                    fh.seek(size - tail_size)
+                    tail_bytes = fh.read()
+                tail_text = tail_bytes.decode("utf-8", errors="ignore")
+            except Exception:
+                tail_text = ""
+            collected: list[str] = []
+            for line in reversed(tail_text.splitlines()):
+                if not line.strip():
+                    continue
+                try:
+                    entry = json.loads(line)
+                except Exception:
+                    continue
+                if entry.get("type") != "assistant":
+                    continue
+                msg = entry.get("message")
+                if not isinstance(msg, dict):
+                    continue
+                content = msg.get("content")
+                if isinstance(content, list):
+                    for block in content:
+                        if isinstance(block, dict) and block.get("type") == "text":
+                            t = block.get("text", "")
+                            if isinstance(t, str):
+                                collected.append(t)
+                if len(collected) >= 5:
+                    break
+            asst_text = "\n".join(collected)
+
+    bypass_token = "# validator-extension-justified:"
+    if bypass_token in asst_text:
+        # Validate substance.
+        substance_err = _validate_bypass_substance(
+            asst_text, bypass_token, _VALIDATOR_EXT_SUBSTANCE_RE
+        )
+        if substance_err:
+            return [substance_err]
+        return []  # Bypass present and substantive — allow
+
+    return [
+        f"[VALIDATOR-PROLIFERATION] Write tool is creating a new validator "
+        f"file at {norm}. Per the 2026-05-03 Stan instruction "
+        f"(\"stop making new validators... the dataset is finite, the grammar "
+        f"is finite. proliferation creates conflicts.\") and the 2026-05-05 "
+        f"path-forward Deferred Work item 4: new validators face an O(N) "
+        f"interaction surface against the existing N validators. Default "
+        f"action is to extend an existing validator with a new arm/subcase, "
+        f"not create a new file.\n\n"
+        f"ACTION (in priority order):\n"
+        f"  (a) Identify which existing validator in `scripts/apply_validators.py` "
+        f"ADOPTED_VALIDATORS could carry this as a new arm or subcase. "
+        f"Extend that file instead.\n"
+        f"  (b) If extension is genuinely impossible (the new validator's "
+        f"trigger surface is fundamentally different from any existing "
+        f"validator), include in your message-before-this-Write a marker:\n"
+        f"      # validator-extension-justified: <reason from accepted "
+        f"vocabulary>\n"
+        f"    Accepted reasons name an explicit criterion: "
+        f"extend / new-arm / new-subcase / distinct-failure / orthogonal / "
+        f"cannot-be-added / existing-validator-misses / fundamentally-different. "
+        f"Substance is validated.\n"
+        f"  (c) If you're working on a fixture or test file (not a real "
+        f"validator), name it under `tests/` not `validators/`."
+    ]
+
+
 def _agent_violations(prompt: str) -> list[str]:
     """Detect Agent dispatches that describe script-able mechanical lookups.
 
@@ -250,7 +675,13 @@ def _agent_violations(prompt: str) -> list[str]:
         return []
     stripped = prompt.lstrip()
     if stripped.startswith(_AGENT_BYPASS_TOKEN):
-        return []  # Bypass token present — agent dispatch authorized
+        # Validate substance of bypass reason.
+        substance_err = _validate_bypass_substance(
+            prompt, _AGENT_BYPASS_TOKEN, _JUDGMENT_SUBSTANCE_RE
+        )
+        if substance_err:
+            return [substance_err]
+        return []  # Bypass token present and substantive — agent dispatch authorized
     if len(prompt) > _AGENT_PROMPT_LENGTH_THRESHOLD:
         return []  # Long prompt body = likely judgment-heavy synthesis
     m = _AGENT_MECHANICAL_VOCAB_RE.search(prompt)
@@ -407,7 +838,24 @@ def main() -> int:
         # Malformed input — don't block the tool call.
         return 0
 
+    event = payload.get("hook_event_name", "")
     tool_name = payload.get("tool_name")
+
+    # ── Stop event: outgoing-message gates (permission-loop + counts-headline) ──
+    if event == "Stop":
+        violations = _stop_violations(payload.get("transcript_path", ""))
+        if not violations:
+            return 0
+        msg = (
+            f"\n=== Stop DISCIPLINE GATE — {len(violations)} anti-pattern(s) "
+            f"detected on outgoing message ===\n\n"
+            + "\n\n".join(f"{i + 1}. {v}" for i, v in enumerate(violations))
+            + "\n\nBypasses are leading HTML comments (invisible in markdown):\n"
+            "  '<!-- question-required: <reason> -->' for permission-loop\n"
+            "  '<!-- counts-ok: <reason> -->' for counts-headline\n"
+        )
+        print(msg, file=sys.stderr)
+        return 2
 
     # ── Agent tool: scripts-default-vs-agents gate ──────────────────────────
     if tool_name == "Agent":
@@ -424,6 +872,19 @@ def main() -> int:
             + f"\n\nBypass (visible in JSONL): prefix the Agent prompt body with "
             f"'{_AGENT_BYPASS_TOKEN} <reason>'.\n"
             "Use sparingly — every override is reviewable by Stan.\n"
+        )
+        print(msg, file=sys.stderr)
+        return 2
+
+    # ── Write tool: validator-creation guard ────────────────────────────────
+    if tool_name == "Write":
+        violations = _write_violations(payload)
+        if not violations:
+            return 0
+        msg = (
+            f"\n=== PreToolUse DISCIPLINE GATE — {len(violations)} "
+            f"anti-pattern(s) detected on Write dispatch ===\n\n"
+            + "\n\n".join(f"{i + 1}. {v}" for i, v in enumerate(violations))
         )
         print(msg, file=sys.stderr)
         return 2

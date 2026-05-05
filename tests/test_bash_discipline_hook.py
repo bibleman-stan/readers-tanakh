@@ -61,6 +61,87 @@ def run_agent_hook(prompt: str) -> tuple[int, str]:
     return proc.returncode, proc.stderr
 
 
+def run_write_hook(file_path: str, transcript_path: str = "") -> tuple[int, str]:
+    """Pipe a Write tool_input.file_path to the hook; return (exit_code, stderr)."""
+    payload = {
+        "session_id": "test",
+        "transcript_path": transcript_path,
+        "cwd": str(Path.cwd()),
+        "hook_event_name": "PreToolUse",
+        "tool_name": "Write",
+        "tool_input": {"file_path": file_path, "content": "# stub"},
+    }
+    proc = subprocess.run(
+        [sys.executable, str(HOOK)],
+        input=json.dumps(payload),
+        capture_output=True,
+        text=True,
+        encoding="utf-8",
+    )
+    return proc.returncode, proc.stderr
+
+
+def run_stop_hook(transcript_path: str) -> tuple[int, str]:
+    """Pipe a Stop event payload to the hook; return (exit_code, stderr)."""
+    payload = {
+        "session_id": "test",
+        "transcript_path": transcript_path,
+        "cwd": str(Path.cwd()),
+        "hook_event_name": "Stop",
+        "stop_hook_active": True,
+    }
+    proc = subprocess.run(
+        [sys.executable, str(HOOK)],
+        input=json.dumps(payload),
+        capture_output=True,
+        text=True,
+        encoding="utf-8",
+    )
+    return proc.returncode, proc.stderr
+
+
+def _make_fake_transcript_with_assistant_text(
+    text: str, todos: list[dict] | None = None
+) -> str:
+    """Write a fake JSONL transcript with one assistant message containing TEXT.
+
+    Optionally include a TodoWrite tool_use entry with the given todos
+    (each todo is a dict with 'status' field).
+    """
+    f = tempfile.NamedTemporaryFile(
+        mode="w", suffix=".jsonl", delete=False, encoding="utf-8"
+    )
+    if todos is not None:
+        f.write(
+            json.dumps(
+                {
+                    "type": "assistant",
+                    "message": {
+                        "content": [
+                            {
+                                "type": "tool_use",
+                                "name": "TodoWrite",
+                                "input": {"todos": todos},
+                            }
+                        ]
+                    },
+                }
+            )
+            + "\n"
+        )
+    f.write(
+        json.dumps(
+            {
+                "type": "assistant",
+                "message": {"content": [{"type": "text", "text": text}]},
+            }
+        )
+        + "\n"
+    )
+    f.close()
+    return f.name
+
+
 def _make_fake_transcript(n_agent_dispatches: int) -> str:
     """Write a fake JSONL transcript containing N Agent tool_use entries.
 
@@ -400,6 +481,161 @@ AGENT_TESTS = [
 ]
 
 
+# ------------------------------------------------------------------
+# Stop-event fixtures (permission-loop + counts-headline gates)
+# Each fixture: (label, message_text, todos_or_None, expect_block, pattern_id)
+# ------------------------------------------------------------------
+
+# A pending todo (status != "completed") for fixtures that need one.
+_PENDING_TODO = [{"status": "in_progress", "content": "do thing", "activeForm": "doing thing"}]
+_COMPLETED_TODO = [{"status": "completed", "content": "do thing", "activeForm": "doing thing"}]
+
+STOP_TESTS = [
+    # === Permission-loop gate ===
+    (
+        "trailing question + pending todo blocks [PERMISSION-LOOP]",
+        "Did the X? I should ask before continuing — what's next?",
+        _PENDING_TODO,
+        True,
+        "[PERMISSION-LOOP]",
+    ),
+    (
+        "trailing question without pending todos allows",
+        "Should I push the commit now?",
+        _COMPLETED_TODO,
+        False,
+        "",
+    ),
+    (
+        "non-question ending with pending todo allows",
+        "Done with the first item; continuing on the next.",
+        _PENDING_TODO,
+        False,
+        "",
+    ),
+    (
+        "trailing question with question-required bypass allows",
+        "<!-- question-required: destructive action requires confirmation -->\n"
+        "About to revert the merge — proceed?",
+        _PENDING_TODO,
+        False,
+        "",
+    ),
+    # === Counts-headline gate ===
+    (
+        "leading bare 847 in first paragraph blocks [COUNTS-HEADLINE]",
+        "847 corpus changes applied. Tree is clean.",
+        None,
+        True,
+        "[COUNTS-HEADLINE]",
+    ),
+    (
+        "leading 8188 figure blocks",
+        "Round-4 cascade landed 8188 STRONG findings across the tree.",
+        None,
+        True,
+        "[COUNTS-HEADLINE]",
+    ),
+    (
+        "verse reference 119 in first paragraph allows (Psalm 119)",
+        "Working on Psalm 119 — colometric structure looks right.",
+        None,
+        False,
+        "",
+    ),
+    (
+        "Genesis 24:38 allows (chapter:verse pattern)",
+        "Gen 24:38 was the oscillation site; fixed by adding the guard trio.",
+        None,
+        False,
+        "",
+    ),
+    (
+        "small numbers below 100 allow",
+        "Tests: 38/38 passed. Commit 4e1857e25 still in HEAD.",
+        None,
+        False,
+        "",
+    ),
+    (
+        "number followed by reference unit allows",
+        "Adapted 39 books — full canonical chapter counts.",
+        None,
+        False,
+        "",
+    ),
+    (
+        "1138 lines of code blocks (no reference unit)",
+        "1138 changes landed in this commit alone.",
+        None,
+        True,
+        "[COUNTS-HEADLINE]",
+    ),
+    (
+        "counts-ok bypass allows",
+        "<!-- counts-ok: build-summary message; counts ARE the report -->\n"
+        "All tests: 200 unit + 38 hook = 238 passing.",
+        None,
+        False,
+        "",
+    ),
+]
+
+
+# ------------------------------------------------------------------
+# Write-tool fixtures (validator-creation guard)
+# Each fixture: (label, file_path, asst_text_or_None, expect_block, pattern_id)
+# ------------------------------------------------------------------
+
+WRITE_TESTS = [
+    (
+        "non-validator path allows",
+        "scripts/some_helper.py",
+        None,
+        False,
+        "",
+    ),
+    (
+        "test fixture path allows",
+        "tests/fixtures/validate_x/bad-01.txt",
+        None,
+        False,
+        "",
+    ),
+    (
+        "creating new validator without bypass blocks [VALIDATOR-PROLIFERATION]",
+        "validators/colometry/validate_made_up_thing.py",
+        "I think we need a new validator.",
+        True,
+        "[VALIDATOR-PROLIFERATION]",
+    ),
+    (
+        "creating new validator with substantive bypass allows",
+        "validators/colometry/validate_made_up_thing.py",
+        "Building the new validator now.\n"
+        "# validator-extension-justified: orthogonal to all existing arms; "
+        "fundamentally-different trigger surface that cannot-be-added to any "
+        "ADOPTED_VALIDATORS entry.",
+        False,
+        "",
+    ),
+    (
+        "creating new validator with empty bypass reason blocks",
+        "validators/colometry/validate_made_up_thing.py",
+        "Building.\n# validator-extension-justified:",
+        True,
+        "no reason",
+    ),
+    (
+        "creating new validator with vacuous bypass reason blocks",
+        "validators/colometry/validate_made_up_thing.py",
+        "Building.\n# validator-extension-justified: this is needed",
+        True,
+        "BYPASS SUBSTANCE",
+    ),
+]
+
+
 def main() -> int:
     passed = 0
     failed = 0
@@ -459,6 +695,86 @@ def main() -> int:
         else:
             failed += 1
             print(f"  FAIL  {label}")
+
+    # Stop-event [PERMISSION-LOOP] / [COUNTS-HEADLINE] fixtures
+    print()
+    print("--- Stop-event fixtures ---")
+    stop_transcript_files: list[str] = []
+    try:
+        for label, text, todos, expect_block, pattern_id in STOP_TESTS:
+            tpath = _make_fake_transcript_with_assistant_text(text, todos)
+            stop_transcript_files.append(tpath)
+            code, err = run_stop_hook(tpath)
+            was_blocked = code == 2
+
+            ok = True
+            if was_blocked != expect_block:
+                ok = False
+                failures.append(
+                    f"  [{label}] expected {'BLOCK' if expect_block else 'ALLOW'} "
+                    f"but got {'BLOCK' if was_blocked else 'ALLOW'} (exit {code}). "
+                    f"stderr={err.strip()[:300]!r}"
+                )
+            elif expect_block and pattern_id and pattern_id not in err:
+                ok = False
+                failures.append(
+                    f"  [{label}] blocked correctly but pattern_id {pattern_id!r} not in "
+                    f"stderr. stderr={err.strip()[:300]!r}"
+                )
+
+            if ok:
+                passed += 1
+                print(f"  PASS  {label}")
+            else:
+                failed += 1
+                print(f"  FAIL  {label}")
+    finally:
+        for tp in stop_transcript_files:
+            try:
+                Path(tp).unlink()
+            except Exception:
+                pass
+
+    # Write-tool [VALIDATOR-PROLIFERATION] fixtures
+    print()
+    print("--- Write-tool fixtures ---")
+    write_transcript_files: list[str] = []
+    try:
+        for label, file_path, asst_text, expect_block, pattern_id in WRITE_TESTS:
+            tpath = ""
+            if asst_text is not None:
+                tpath = _make_fake_transcript_with_assistant_text(asst_text)
+                write_transcript_files.append(tpath)
+            code, err = run_write_hook(file_path, transcript_path=tpath)
+            was_blocked = code == 2
+
+            ok = True
+            if was_blocked != expect_block:
+                ok = False
+                failures.append(
+                    f"  [{label}] expected {'BLOCK' if expect_block else 'ALLOW'} "
+                    f"but got {'BLOCK' if was_blocked else 'ALLOW'} (exit {code}). "
+                    f"stderr={err.strip()[:300]!r}"
+                )
+            elif expect_block and pattern_id and pattern_id not in err:
+                ok = False
+                failures.append(
+                    f"  [{label}] blocked correctly but pattern_id {pattern_id!r} not in "
+                    f"stderr. stderr={err.strip()[:300]!r}"
+                )
+
+            if ok:
+                passed += 1
+                print(f"  PASS  {label}")
+            else:
+                failed += 1
+                print(f"  FAIL  {label}")
+    finally:
+        for tp in write_transcript_files:
+            try:
+                Path(tp).unlink()
+            except Exception:
+                pass
 
     # A3-Step0 transcript-dependent fixtures
     print()
