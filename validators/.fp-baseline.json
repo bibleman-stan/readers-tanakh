@@ -1,0 +1,154 @@
+{
+  "fixture_count": 134,
+  "labeled_count": 157,
+  "validators": {
+    "validate_causal_ki": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 20,
+      "uncalibrated": 0,
+      "tn": 0,
+      "review_correct": 2,
+      "labeled_total": 22,
+      "tp_rate": 0.0,
+      "fp_rate": null
+    },
+    "validate_circumstantial_clause": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 26,
+      "uncalibrated": 0,
+      "tn": 12,
+      "review_correct": 2,
+      "labeled_total": 40,
+      "tp_rate": 0.0,
+      "fp_rate": 0.0
+    },
+    "validate_coordinated_object": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 4,
+      "uncalibrated": 1,
+      "tn": 2,
+      "review_correct": 2,
+      "labeled_total": 10,
+      "tp_rate": 0.0,
+      "fp_rate": 0.3333333333333333
+    },
+    "validate_speech_intro_framing": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 14,
+      "uncalibrated": 0,
+      "tn": 0,
+      "review_correct": 1,
+      "labeled_total": 15,
+      "tp_rate": 0.0,
+      "fp_rate": null
+    },
+    "validate_construct_chain": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 6,
+      "uncalibrated": 0,
+      "tn": 2,
+      "review_correct": 1,
+      "labeled_total": 9,
+      "tp_rate": 0.0,
+      "fp_rate": 0.0
+    },
+    "validate_cross_verse_continuity": {
+      "tp": 5,
+      "fp": 1,
+      "fn": 10,
+      "uncalibrated": 0,
+      "tn": 3,
+      "review_correct": 1,
+      "labeled_total": 20,
+      "tp_rate": 0.3333333333333333,
+      "fp_rate": 0.25
+    },
+    "validate_bare_construct_head": {
+      "tp": 1,
+      "fp": 9,
+      "fn": 0,
+      "uncalibrated": 0,
+      "tn": 0,
+      "review_correct": 0,
+      "labeled_total": 10,
+      "tp_rate": 1.0,
+      "fp_rate": 1.0
+    },
+    "validate_verb_object_bond": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "uncalibrated": 1,
+      "tn": 0,
+      "review_correct": 1,
+      "labeled_total": 2,
+      "tp_rate": null,
+      "fp_rate": null
+    },
+    "validate_clause_nucleus_split": {
+      "tp": 4,
+      "fp": 2,
+      "fn": 6,
+      "uncalibrated": 2,
+      "tn": 0,
+      "review_correct": 0,
+      "labeled_total": 14,
+      "tp_rate": 0.4,
+      "fp_rate": 1.0
+    },
+    "validate_interrogative_clause": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "uncalibrated": 0,
+      "tn": 0,
+      "review_correct": 0,
+      "labeled_total": 2,
+      "tp_rate": 1.0,
+      "fp_rate": null
+    },
+    "validate_wayehi_protasis": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 1,
+      "uncalibrated": 0,
+      "tn": 0,
+      "review_correct": 0,
+      "labeled_total": 4,
+      "tp_rate": 0.75,
+      "fp_rate": null
+    },
+    "validate_short_orphan_line": {
+      "tp": 3,
+      "fp": 2,
+      "fn": 0,
+      "uncalibrated": 2,
+      "tn": 0,
+      "review_correct": 0,
+      "labeled_total": 7,
+      "tp_rate": 1.0,
+      "fp_rate": 1.0
+    },
+    "validate_participial_speech_frame": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "uncalibrated": 0,
+      "tn": 0,
+      "review_correct": 0,
+      "labeled_total": 2,
+      "tp_rate": 1.0,
+      "fp_rate": null
+    }
+  },
+  "ground_truth_summary": {
+    "APPLY": 107,
+    "REVIEW": 16,
+    "REJECT": 34
+  }
+}
