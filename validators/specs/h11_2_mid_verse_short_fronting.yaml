@@ -31,6 +31,7 @@ guards:
   - next_line_is_wayyiqtol     # block re-absorbing post-S3-split wayyiqtol-headed lines
   - next_line_is_imperative_clause           # Path 1 H5b — block re-merge of propositionally-complete content
   - line_n_is_purpose_infinitive             # block H11.2 from absorbing post-S7 purpose-INF orphan-as-N
+  - next_line_is_purpose_infinitive          # symmetric: block H11.2 from absorbing post-S7 purpose-INF orphan-as-N+1 (Psa 59:5 / 71:9 oscillation, 2026-05-05)
 
 annotation_template: "Mid-verse fronting paradox: short PP + main clause (combined {pwc} prosodic words)"
 suggested_action: MERGE
