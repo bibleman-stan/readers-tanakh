@@ -35,8 +35,7 @@ vaiyitnaker | aleihem
 vaydaber | itam | kashot
 vaiyomer | alehem
 me'ayin | batem
-vaiyomeru | me'eretz | Kena'an
-lishbor | okhel
+vaiyomeru | me'eretz | Kena'an | lishbor | okhel
 
 42:8
 vaiyaker | Yosef | et | echav
@@ -65,17 +64,16 @@ lo | ki | ervat | ha'aretz | batem | lir'ot
 vaiyomeru
 sheneim | asar | avadeikha | achim | anachnu | benei | ish | echad
 be'eretz | Kena'an
-vehineh | hakaton | et | avinu | haiyom | veha'echad
-einenu
+vehineh | hakaton | et | avinu | haiyom | veha'echad | einenu
 
 42:14
 vaiyomer | alehem | Yosef
-hu | asher | dibarti | alekhem | lemor | meragelim | atem
+hu | asher | dibarti | alekhem | lemor
+meragelim | atem
 
 42:15
 bezot | tibachenu | chei | far'oh | im | tetze'u | mizeh
-ki | im | bevo | achikhem | hakaton
-henah
+ki | im | bevo | achikhem | hakaton | henah
 
 42:16
 shilchu | mikem | echad | veyikach | et | achikhem | ve'atem | he'aseru
@@ -97,8 +95,7 @@ ye'aser | beveit | mishmarkhem | ve'atem | lekhu | havi'u | shever | ra'avon | b
 
 42:20
 ve'et | achikhem | hakaton | tavi'u | elai | veye'amenu | divreikhem
-velo | tamutu
-vaiya'asu | khen
+velo | tamutu | vaiya'asu | khen
 
 42:21
 vaiyomeru | ish | el | achiv | aval | ashemim | anachnu | al | achinu
@@ -109,8 +106,7 @@ al | ken | ba'ah | eleinu | hatzarah | hazot
 42:22
 vaiya'an | Re'uven | otam
 lemor | halo | amarti | aleikhem | lemor | al | techet'u | vaiyeled
-velo | shema'tem
-vegam | damo
+velo | shema'tem | vegam | damo
 hineh | nidrash
 
 42:23
@@ -147,14 +143,12 @@ vaiyomer | el | echav
 hushav | kaspi | vegam
 hineh | ve'amtachti
 vaiyetze | libam
-vaiyecherdu | ish | el | achiv
-lemor
+vaiyecherdu | ish | el | achiv | lemor
 mah | zot | asah | elohim | lanu
 
 42:29
 vaiyavo'u | el | Ya'ako | avihem | artzah | Kena'an
-vaiyagidu | lo | et | kol | hakorot | otam
-lemor
+vaiyagidu | lo | et | kol | hakorot | otam | lemor
 
 42:30
 diber | ha'ish | adonei | ha'aretz | itanu
@@ -195,8 +189,7 @@ oti | shikaltem | Yosef | einenu | Veshim'on | einenu
 ve'et | Binyamin | tikachu | alai | hayu | khulanah
 
 42:37
-vaiyomer | Re'uven | el | aviv
-lemor
+vaiyomer | Re'uven | el | aviv | lemor
 et | shenei | vanai | tamit
 im | lo | avi'enu | eleikha | tenah | oto | al | yadi
 va'ani | ashivenu | eleikha

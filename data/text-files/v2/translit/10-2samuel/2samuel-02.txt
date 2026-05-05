@@ -1,6 +1,7 @@
 2:1
 vayhi | acharei | khen | vaiyish'al | David | Bayahweh
-lemor | ha'e'eleh | be'achat | arei | Yehudah
+lemor
+ha'e'eleh | be'achat | arei | Yehudah
 vaiyomer | Yahweh | elav
 aleh
 vaiyomer | David
@@ -41,13 +42,7 @@ lakach | et | Ish | Boshet | ben | Sha'ul
 vaiya'avirehu | Machanayim
 
 2:9
-vaiyamlikhehu | el | Hagil'ad
-ve'el | ha'ashuri
-ve'el | Yizre'el
-ve'al | Efrayim
-ve'al | Binyamin
-ve'al | Yisra'el
-kuloh
+vaiyamlikhehu | el | Hagil'ad | ve'el | ha'ashuri | ve'el | Yizre'el | ve'al | Efrayim | ve'al | Binyamin | ve'al | Yisra'el | kuloh
 
 2:10
 ben | arba'im | shanah | Ish | Boshet | ben | Sha'ul | bemalekho | al | Yisra'el
@@ -88,8 +83,7 @@ vatehi | hamilchamah | kashah | ad | me'od
 baiyom | hahu | vaiyinagef | Avner | ve'anshei | Yisra'el | lifnei | avdei | David
 
 2:18
-vaiyihyu | sham | sheloshah | benei | Tzeruyah | Yo'av | Va'avishai
-Va'asah'el
+vaiyihyu | sham | sheloshah | benei | Tzeruyah | Yo'av | Va'avishai | Va'asah'el
 Va'asah'el | kal | beraglav | ke'achad | hatzevayim | asher | basadeh
 
 2:19
@@ -107,9 +101,7 @@ vaiyomer | anokhi
 vaiyomer | lo | Avner
 neteh | lekha | al | yeminekha | o | al | semolekha
 ve'echoz | lekha | echad | mehane'arim
-vekach | lekha
-et | chalitzato
-velo | avah | Asah'el | lasur | me'acharav
+vekach | lekha | et | chalitzato | velo | avah | Asah'el | lasur | me'acharav
 
 2:22
 vaiyosef | od | Avner | lemor | el | Asah'el
@@ -119,8 +111,7 @@ ve'eikh | esa | fanai | el | Yo'av | achikha
 2:23
 vayma'en | lasur
 vaiyakehu | Avner | be'acharei | hachanit | el | hachomesh
-vatetze | hachanit | me'acharav
-vaiyipol | sham
+vatetze | hachanit | me'acharav | vaiyipol | sham
 vaiyamot | tachatov | vayhi | kol | haba | el | hamakom | asher | nafal | sham | Asah'el | vaiyamot
 vaiya'amodu
 
@@ -144,8 +135,7 @@ ve'ad | matai | lo | tomar | la'am | lashuv | me'acharei | acheihem
 
 2:27
 vaiyomer | Yo'av
-chai | ha'elohim | ki | lule | dibarta
-ki | az | mehaboker | Na'alah | ha'am | ish
+chai | ha'elohim | ki | lule | dibarta | ki | az | mehaboker | Na'alah | ha'am | ish
 me'acharei | achiv
 
 2:28

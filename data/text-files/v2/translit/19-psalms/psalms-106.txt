@@ -5,8 +5,7 @@ ki | le'olam | chasdo
 106:2
 mi
 yemalel | gevurot | Yahweh
-yashmia
-kol | tehilato
+yashmia | kol | tehilato
 
 106:3
 ashrei | shomerei | mishpat
@@ -19,8 +18,7 @@ bishu'atekha
 
 106:5
 lir'ot | betovat | bechireikha
-lismoach | besimchat | goyekha
-lehithalel
+lismoach | besimchat | goyekha | lehithalel
 im | nachalatekha
 
 106:6
@@ -33,14 +31,11 @@ lo | zakheru | et | ro | chasadeikha
 vaiyamru | al | yam | beyam | suf
 
 106:8
-vaiyoshi'em | lema'an | shemo
-lehodia
-et | gevurato
+vaiyoshi'em | lema'an | shemo | lehodia | et | gevurato
 
 106:9
 vaiyig'ar | beyam | suf | vaiyecherav
-vaiyolikhem | batehomot
-kamidbar
+vaiyolikhem | batehomot | kamidbar
 
 106:10
 vaiyoshi'em | miyad | sone
@@ -54,26 +49,21 @@ lo | Notar
 
 106:12
 vaiya'aminu | vidvarav
-yashiru
-tehilato
+yashiru | tehilato
 
 106:13
 miharu | shakhechu | ma'asav
-lo | chiku
-la'atzato
+lo | chiku | la'atzato
 
 106:14
-vaiyit'avu | ta'avah | bamidbar
-vaynasu | el
-bishimon
+vaiyit'avu | ta'avah | bamidbar | vaynasu | el | bishimon
 
 106:15
 vaiyiten | lahem | she'elatam
 vayshalach | razon | benafsham
 
 106:16
-vaykan'u | Lemosheh | bamachaneh
-Le'aharon
+vaykan'u | Lemosheh | bamachaneh | Le'aharon
 kedoosh | Yahweh
 
 106:17
@@ -82,40 +72,33 @@ vatekhas
 al | adat | Aviram
 
 106:18
-vativ'ar | esh | ba'adatam
-lehavah
+vativ'ar | esh | ba'adatam | lehavah
 telahet | resha'im
 
 106:19
 ya'asu | egel | Bechorev
-vaiyishtachavu
-lemasekhah
+vaiyishtachavu | lemasekhah
 
 106:20
 vaiyamiru | et | kevodam
-betavnit | shor
-okhel | esev
+betavnit | shor | okhel | esev
 
 106:21
 shakhchu | el | moshi'am
 oseh | gedolot | Bemitzrayim
 
 106:22
-nifla'ot | be'eretz | Cham
-nora'ot
-al | yam | suf
+nifla'ot | be'eretz | Cham | nora'ot | al | yam | suf
 
 106:23
 vaiyomer | lehashmidam
 lulei | Mosheh | vechiro
 amad | baperetz | lefanav
-lehashiv | chamato
-mehashchit
+lehashiv | chamato | mehashchit
 
 106:24
 vaiyim'asu | be'eretz | chemdah
-lo | he'eminu
-lidvaro
+lo | he'eminu | lidvaro
 
 106:25
 vaiyeragenu | ve'oholeihem
@@ -124,43 +107,33 @@ bekol | Yahweh
 
 106:26
 vaiyisa | yado | lahem
-lehapil | otam
-bamidbar
+lehapil | otam | bamidbar
 
 106:27
-ulehapil | zar'om | bagoyim
-ulezarotam
-ba'aratzot
+ulehapil | zar'om | bagoyim | ulezarotam | ba'aratzot
 
 106:28
-vaiyitzamedu | Leva'al | Pe'or
-vaiyokhelu
+vaiyitzamedu | Leva'al | Pe'or | vaiyokhelu
 zivchei | metim
 
 106:29
-vaiyakh'isu | bema'aleihem
-vatifrotz | bam
-magefah
+vaiyakh'isu | bema'aleihem | vatifrotz | bam | magefah
 
 106:30
 vaiya'amod | Pinchos | vayfalel
-vate'atzar
-hamagefah
+vate'atzar | hamagefah
 
 106:31
 vatechashev | lo | litzdakah
-ledor | vador
-ad | olam
+ledor | vador | ad | olam
 
 106:32
 vaiyaktzifu | al | mei | Merivah
-vaiyera | Lemosheh
-ba'avuram
+vaiyera | Lemosheh | ba'avuram
 
 106:33
 ki | himru | et | rucho
-vayvate
-bisfatav
+vayvate | bisfatav
 
 106:34
 lo | hishmidu | et | ha'amim
@@ -168,37 +141,31 @@ asher | amar | Yahweh | lahem
 
 106:35
 vaiyit'arevu | vagoyim
-vaiyilmedu
-ma'aseihem
+vaiyilmedu | ma'aseihem
 
 106:36
 vaiya'avdu | et | atzabeihem
 vaiyihyu | lahem | lemokesh
 
 106:37
-vaiyizbechu | et | beneihem | ve'et | benoteihem
-lashedim
+vaiyizbechu | et | beneihem | ve'et | benoteihem | lashedim
 
 106:38
 vaiyishpekhu | dam | naki | dam | beneihem | uvenoteihem
 asher | zibechu | la'atzabei | Khena'an
-vatechenaf | ha'aretz
-badamim
+vatechenaf | ha'aretz | badamim
 
 106:39
 vaiyitme'u | vema'aseihem
-vaiyiznu
-bema'aleihem
+vaiyiznu | bema'aleihem
 
 106:40
 vaiyichar | af | Yahweh | be'amo
-vayta'ev
-et | nachalato
+vayta'ev | et | nachalato
 
 106:41
 vaiyitenem | beyad | goyim
-vaiyimshelu | vahem
-sone'eihem
+vaiyimshelu | vahem | sone'eihem
 
 106:42
 vaiyilchatzum | oyveihem
@@ -209,13 +176,10 @@ tachat | yadam
 pe'amim | rabot
 yatzilem
 vehemah | yamru | va'atzatam
-vaiyamoku
-ba'avonam
+vaiyamoku | ba'avonam
 
 106:44
-vaiyar | batzar | lahem
-beshame'o
-et | rinatam
+vaiyar | batzar | lahem | beshame'o | et | rinatam
 
 106:45
 vaiyizkor | lahem | berito
@@ -224,17 +188,14 @@ kero | chasadav
 
 106:46
 vaiyiten | otam | lerachamim
-lifnei
-kol | shoeihem
+lifnei | kol | shoeihem
 
 106:47
 hoshi'enu | Yahweh | eloheinu
 vekabetzenu | min | hagoyim
-lehodot | leshem | kodshecha
-lehishtabeach
+lehodot | leshem | kodshecha | lehishtabeach
 bithilatekha
 
 106:48
 barukh | Yahweh | elohei | Yisra'el | min | ha'olam | ve'ad | ha'olam
-ve'amar | kol | ha'am | amen
-halu | Yah
+ve'amar | kol | ha'am | amen | halu | Yah

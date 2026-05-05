@@ -12,8 +12,7 @@ lo | yada'ti | et | Yahweh | vegam | et | Yisra'el
 lo | ashaleach
 
 5:3
-vaiyomeru | elohei
-ha'ivrim | Nikra | aleinu
+vaiyomeru | elohei | ha'ivrim | Nikra | aleinu
 nelakhah | na | derekh | sheloshet | yamim | bamidbar | venizbechah | Layahweh | eloheinu
 pen | yifga'enu | badever | o | vecharev
 
@@ -38,9 +37,7 @@ vekosheshu | lahem | teven
 
 5:8
 ve'et | matkonet | halevenim | asher | hem | osim | temol | shilshom | tasimu | aleihem
-lo | tigre'u | mimenu | ki | nirpim | hem | al | ken | hem | tzo'akim
-lemor
-nelekhah
+lo | tigre'u | mimenu | ki | nirpim | hem | al | ken | hem | tzo'akim | lemor | nelekhah
 nizbechah | leloheinu
 
 5:9
@@ -65,10 +62,8 @@ vehanogesim | atzim | lemor | kalu | ma'aseikhem | devar | yom | beyomo | ka'ash
 bihyot | hateven
 
 5:14
-vaiyuku | shoterei | benei | Yisra'el | asher | samu | alehem | nogesei | far'oh
-lemor
-madua | lo | khilitem | chakechem | lilbon | kitmol | shilshom | gam | temol
-gam | haiyom
+vaiyuku | shoterei | benei | Yisra'el | asher | samu | alehem | nogesei | far'oh | lemor
+madua | lo | khilitem | chakechem | lilbon | kitmol | shilshom | gam | temol | gam | haiyom
 
 5:15
 vaiyavo'u | shoterei | benei | Yisra'el
@@ -93,7 +88,8 @@ titenu
 
 5:19
 vaiyir'u | shoterei | venei | Yisra'el | otam | bera
-lemor | lo | tigre'u | milivneikhem | devar | yom | beyomo
+lemor
+lo | tigre'u | milivneikhem | devar | yom | beyomo
 
 5:20
 vaiyifge'u | et | Mosheh | ve'et | Aharon

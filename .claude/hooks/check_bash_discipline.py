@@ -43,6 +43,7 @@ Hook input (JSON on stdin):
 
 from __future__ import annotations
 
+import difflib
 import json
 import re
 import sys
@@ -98,6 +99,115 @@ def _count_recent_agent_dispatches(transcript_path: str, lookback_lines: int = 2
             ):
                 count += 1
     return count
+
+
+_QUOTED_PHRASE_RE = re.compile(r'"([^"]{20,})"')
+_OVERRIDE_TOKENS = ("# disciplined-allow:", "# split-justified:", "# audit-skippable:")
+
+
+def _extract_recent_user_turns(transcript_path: str, lookback_lines: int = 500) -> list[str]:
+    """Return text content of recent user-typed turns from JSONL transcript tail.
+
+    Stream-reads the last ~5MB of the JSONL, filters to entries with type=user
+    and extracts text content. Returns [] on any access failure.
+    """
+    if not transcript_path:
+        return []
+    p = Path(transcript_path)
+    if not p.exists():
+        return []
+    try:
+        with p.open("rb") as fh:
+            fh.seek(0, 2)
+            size = fh.tell()
+            tail_size = min(size, 5_000_000)
+            fh.seek(size - tail_size)
+            tail_bytes = fh.read()
+        tail_text = tail_bytes.decode("utf-8", errors="ignore")
+    except Exception:
+        return []
+    user_texts: list[str] = []
+    for line in tail_text.splitlines()[-lookback_lines:]:
+        if not line.strip():
+            continue
+        try:
+            entry = json.loads(line)
+        except Exception:
+            continue
+        if entry.get("type") != "user":
+            continue
+        msg = entry.get("message")
+        if not isinstance(msg, dict):
+            continue
+        content = msg.get("content")
+        if isinstance(content, str):
+            user_texts.append(content)
+        elif isinstance(content, list):
+            for block in content:
+                if isinstance(block, dict) and block.get("type") == "text":
+                    text = block.get("text", "")
+                    if isinstance(text, str):
+                        user_texts.append(text)
+                elif isinstance(block, str):
+                    user_texts.append(block)
+    return user_texts
+
+
+def _validate_override_quotes(command: str, transcript_path: str) -> str | None:
+    """If override comment cites a quoted phrase, validate it against recent user turns.
+
+    Returns an error message (str) if validation fails (override should be REFUSED).
+    Returns None if no quote OR all cited quotes pass validation.
+    """
+    if not any(tok in command for tok in _OVERRIDE_TOKENS):
+        return None  # No override comment present
+    quotes = _QUOTED_PHRASE_RE.findall(command)
+    if not quotes:
+        return None  # Override has no quoted-phrase citation; nothing to validate
+    user_turns = _extract_recent_user_turns(transcript_path)
+    if not user_turns:
+        return (
+            "Override cites a quoted phrase but the transcript is unreadable; "
+            "cannot validate the citation. Rewrite the override reason WITHOUT "
+            "quotation marks (use paraphrase) or fix transcript_path access."
+        )
+    haystack = "\n".join(user_turns).lower()
+    for quote in quotes:
+        needle = quote.strip().lower()
+        if len(needle) < 20:
+            continue
+        if needle in haystack:
+            continue  # Verbatim match — pass
+        # Fuzzy match via difflib.SequenceMatcher (Levenshtein-equivalent at high ratio)
+        # Sliding window across haystack for performance.
+        passed_fuzzy = False
+        window_size = len(needle) + 10
+        step = max(1, len(needle) // 4)
+        for offset in range(0, max(1, len(haystack) - window_size + 1), step):
+            window = haystack[offset:offset + window_size]
+            if difflib.SequenceMatcher(None, needle, window).ratio() >= 0.92:
+                passed_fuzzy = True
+                break
+        if not passed_fuzzy:
+            preview = quote[:80] + ("..." if len(quote) > 80 else "")
+            return (
+                f"=== OVERRIDE QUOTE VALIDATION FAILED ===\n\n"
+                f"Override comment cites Stan phrase: \"{preview}\"\n\n"
+                f"This phrase is NOT present in the recent {len(user_turns)} user turns "
+                f"of the transcript (no exact match, no fuzzy match at SequenceMatcher "
+                f"ratio >= 0.92). The override mechanism does NOT accept unverifiable "
+                f"Stan citations as of the 2026-05-04 colonoscopy audit hardening.\n\n"
+                f"Either:\n"
+                f"  (a) the phrase is paraphrased — REWRITE the override reason WITHOUT "
+                f"quotation marks; OR\n"
+                f"  (b) the phrase is hallucinated — ABORT the override, DROP the "
+                f"comment, and use the un-overridden cluster-dispatch / fully-disciplined "
+                f"path the gate is steering you toward.\n\n"
+                f"Self-test before retrying: open the JSONL transcript, locate the actual "
+                f"Stan turn you want to cite, copy-paste the verbatim text. If you can't "
+                f"find it, the citation does not exist; do not override."
+            )
+    return None
 
 
 def _violations(command: str, payload: dict | None = None) -> list[str]:
@@ -235,6 +345,18 @@ def main() -> int:
     command = payload.get("tool_input", {}).get("command", "") or ""
     if not command:
         return 0
+
+    # ── Override quote-validation gate (colonoscopy audit 2026-05-04 §2.3a) ──
+    # Before honoring ANY override comment (`# disciplined-allow:`,
+    # `# split-justified:`, `# audit-skippable:`), if the override comment cites
+    # a quoted phrase as Stan-said-X, validate that the phrase is verbatim (or
+    # near-verbatim) in the recent transcript. Refuse the override if the cited
+    # quote is hallucinated. Closes the structural hole that allowed bypassing
+    # the discipline gate four times on 2026-05-04 with confabulated citations.
+    quote_err = _validate_override_quotes(command, payload.get("transcript_path", ""))
+    if quote_err:
+        print(quote_err, file=sys.stderr)
+        return 2  # Refuse the tool call — override comment cites a non-existent quote
 
     # Universal escape hatch — visible in the JSONL for later audit.
     if "# disciplined-allow:" in command:

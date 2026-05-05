@@ -1,7 +1,6 @@
 14:1
 adom | yelud | ishah
-ketzar | yamim
-useva | rogez
+ketzar | yamim | useva | rogez
 
 14:2
 ketzitz | yatza | vaiyimal
@@ -24,19 +23,15 @@ velo | ya'avor
 
 14:6
 she'eh | me'alav | veyechdal
-ad | yirtzeh
-kesakhir | yomo
+ad | yirtzeh | kesakhir | yomo
 
 14:7
-ki | yesh | la'etz
-tikvah
-im | yikaret | ve'od | yachalif
-veyonakto
+ki | yesh | la'etz | tikvah
+im | yikaret | ve'od | yachalif | veyonakto
 lo | techdal
 
 14:8
-im | yazkin | ba'aretz | sharesho
-uve'afar
+im | yazkin | ba'aretz | sharesho | uve'afar
 yamut | giz'o
 
 14:9
@@ -48,16 +43,14 @@ vegever | yamut | vaiyechelash
 vaiyigva | adam | ve'aiyo
 
 14:11
-azelu | mayim | mini | yam
-venahar
+azelu | mayim | mini | yam | venahar
 yecherav | veyavesh
 
 14:12
 ve'ish | shakhav
 velo | yakum
 ad | bilti | shamayim | lo | yakitzu
-velo | ye'oru
-mishenatam
+velo | ye'oru | mishenatam
 
 14:13
 mi | yiten | bish'ol | tatzpineni
@@ -67,9 +60,7 @@ tashit | li | chok | vetizkereni
 14:14
 im | yamut | gever
 hayichyeh
-kol | yemei | tzeva'i | ayachel
-ad | bo
-chalifati
+kol | yemei | tzeva'i | ayachel | ad | bo | chalifati
 
 14:15
 tikra | ve'anokhi | e'eneka
@@ -77,17 +68,14 @@ lema'aseh | yadeikha | tikhsof
 
 14:16
 ki | atah | tze'adai | tispor
-lo | tishmor
-al | chatati
+lo | tishmor | al | chatati
 
 14:17
 chatum | bitzror | pish'i
-vatitpol
-al | avoni
+vatitpol | al | avoni
 
 14:18
-ve'ulom | har | nofel | yibol
-vetzur
+ve'ulom | har | nofel | yibol | vetzur
 ye'tak | mimekomo
 
 14:19
@@ -106,6 +94,5 @@ veyitz'aru
 velo | yavin | lamo
 
 14:22
-akh | besaro | alav | yikh'av
-venafsho
+akh | besaro | alav | yikh'av | venafsho
 alav | te'eval

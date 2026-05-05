@@ -1,6 +1,5 @@
 35:1
-vayhi | devar | Yahweh | elai
-lemor
+vayhi | devar | Yahweh | elai | lemor
 
 35:2
 ben | adam | sim | paneikha | al | har | Se'ir
@@ -29,8 +28,7 @@ vedam | yirdafekha | im | lo | dam | saneta
 vedam | yirdafekha
 
 35:7
-venatati | et | har | Se'ir | leshimah
-ushemamah
+venatati | et | har | Se'ir | leshimah | ushemamah
 vehikhrati | mimenu | over | vashav
 
 35:8
@@ -46,8 +44,7 @@ vida'tem | ki | ani | Yahweh
 35:10
 ya'an | amarekha | et | shenei | hagoyim
 ve'et | shetei | ha'aratzot | li | tihyeinah
-virashnuha
-Vayahweh
+virashnuha | Vayahweh
 sham | hayah
 
 35:11
@@ -60,7 +57,8 @@ misin'ateikha | bam | venoda'ti | vam | ka'asher | eshpetekha
 35:12
 veyada'ta | ki | ani | Yahweh
 shama'ti | et | kol | na'atzoteikha | asher | amarta | al | harei | Yisra'el
-lemor | shamemu
+lemor
+shamemu
 lanu | Nitenu | le'okhlah
 
 35:13

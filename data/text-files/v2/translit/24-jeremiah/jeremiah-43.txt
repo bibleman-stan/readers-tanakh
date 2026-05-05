@@ -5,7 +5,8 @@ aleihem | et | kol | hadevarim | ha'eleh
 43:2
 vaiyomer | Azaryah | ven | Hosha'yah | Veyochanan | ben | Kareach | vekhol | ha'anashim | hazedim
 omerim | el | Yirmeyahu | sheker | atah | medaber | lo | shelachakha | Yahweh | eloheinu
-lemor | lo | tavo'u | Mitzrayim | lagur | sham
+lemor
+lo | tavo'u | Mitzrayim | lagur | sham
 
 43:3
 ki | Barukh | ben | Neriyah | masit | otekha | banu
@@ -25,8 +26,7 @@ lagur | be'eretz | Yehudah
 43:6
 et | hagevarim | ve'et | hanashim | ve'et | hataf | ve'et | benot | hamelekh
 ve'et | kol | hanefesh | asher | hiniach | Nevuzar'adan | rav | tabachim | et | Gedalyahu
-ben | Achikam | ben | Shafan | ve'et | Yirmeyahu | hanavi | ve'et | Barukh
-ben | Neriyahu
+ben | Achikam | ben | Shafan | ve'et | Yirmeyahu | hanavi | ve'et | Barukh | ben | Neriyahu
 
 43:7
 vaiyavo'u | eretz | Mitzrayim
@@ -34,8 +34,7 @@ ki | lo | shame'u | bekol | Yahweh
 vaiyavo'u | ad | Tachpanches
 
 43:8
-vayhi | devar | Yahweh | el | Yirmeyahu | Betachpanches
-lemor
+vayhi | devar | Yahweh | el | Yirmeyahu | Betachpanches | lemor
 
 43:9
 kach | beyadekha | avanim | gedolot | utemantam | bamelet | bamalben
@@ -60,6 +59,5 @@ ve'atah | et | eretz | Mitzrayim | ka'asher | ya'teh | haro'eh | et | bigdo
 veyatza | misham | beshalom
 
 43:13
-veshibar | et | matzevot | beit | shemesh | asher | be'eretz | Mitzrayim
-ve'et | batei | elohei | Mitzrayim
+veshibar | et | matzevot | beit | shemesh | asher | be'eretz | Mitzrayim | ve'et | batei | elohei | Mitzrayim
 yisrof | ba'esh

@@ -442,6 +442,13 @@ def apply_mutations_to_lines(
             before_current = work[idx]
             before_next = work[next_idx]
 
+            # Blank-target skip (2026-05-04 fix): merging a content line with a
+            # blank line eats the blank (which typically separates verses or
+            # paragraphs) AND produces a trailing-space line with no useful
+            # content added. Abort the merge entirely; finding stays unapplied.
+            if not before_next.strip() or not before_current.strip():
+                continue
+
             # Cross-verse boundary skip: never absorb a verse-reference line
             # into a content line. Per canon §5 H10, cross-verse merges
             # require superscript-marker preservation; merge engine doesn't
@@ -469,6 +476,10 @@ def apply_mutations_to_lines(
 
             before_current = work[idx]
             before_prev = work[prev_idx]
+
+            # Blank-target skip (2026-05-04 fix): same rationale as merge_with_next.
+            if not before_prev.strip() or not before_current.strip():
+                continue
 
             # Cross-verse boundary skip: same rationale as merge_with_next.
             if _is_verse_ref_line(before_prev) or _is_verse_ref_line(before_current):

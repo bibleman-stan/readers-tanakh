@@ -4,14 +4,12 @@ Yahweh | amar | lishkon | ba'arafel
 
 6:2
 va'ani | baniti | veit | zevul | lakh
-umakhon | leshivtekha
-olamim
+umakhon | leshivtekha | olamim
 
 6:3
 vaiyasev | hamelekh | et | panav
 vayvarekh | et | kol | kehal | Yisra'el
-vekhol | kehal | Yisra'el
-omed
+vekhol | kehal | Yisra'el | omed
 
 6:4
 vaiyomer
@@ -40,8 +38,7 @@ ki | hayah | im | levavekha
 
 6:9
 rak | atah
-lo | tivneh
-habayit | ki | vinkha | haiyotze | mechalatzeikha
+lo | tivneh | habayit | ki | vinkha | haiyotze | mechalatzeikha
 hu | yivneh | habayit | lishmi
 
 6:10
@@ -77,8 +74,7 @@ vatedaber | befikha
 uveyadekha | mileta | kaiyom | hazeh
 
 6:16
-ve'atah | Yahweh | elohei | Yisra'el | shemor | le'avdekha | David | avi | et | asher | dibarta | lo
-lemor
+ve'atah | Yahweh | elohei | Yisra'el | shemor | le'avdekha | David | avi | et | asher | dibarta | lo | lemor
 lo | yikaret | lekha | ish | milefanai | yoshev | al | kise | Yisra'el
 rak | im | yishmeru | vaneikha | et | darkam
 lalekhet | betorati | ka'asher | halakhta | lefanai
@@ -98,8 +94,7 @@ ve'el | techinato | Yahweh | elohai | lishmoa | el | harinah
 ve'el | hatefilah | asher | avdekha | mitpalel | lefaneikha
 
 6:20
-lihyot | eineikha | fetuchot | el | habayit | hazeh | yomam
-valaylah
+lihyot | eineikha | fetuchot | el | habayit | hazeh | yomam | valaylah
 el | hamakom | asher | amarta | lasum | shimkha
 sham | lishmoa | el | hatefilah | asher | yitpalel | avdekha | el | hamakom | hazeh
 
@@ -111,8 +106,7 @@ veshama'ta
 vesalacheta
 
 6:22
-im | yecheta | ish | lere'ehu | venasha | vo | alah
-leha'aloto
+im | yecheta | ish | lere'ehu | venasha | vo | alah | leha'aloto
 uva | alah | lifnei | mizbachakha | babayit | hazeh
 
 6:23
@@ -128,8 +122,7 @@ vehitpalu | vehitchanenu | lefaneikha | babayit | hazeh
 6:25
 ve'atah | tishma | min | hashamayim
 vesalachta | lechatat | amekha | Yisra'el
-vahasheivotam | el | ha'adamah | asher | natatah | lahem
-vela'avoteihem
+vahasheivotam | el | ha'adamah | asher | natatah | lahem | vela'avoteihem
 
 6:26
 behe'atzer | hashamayim
@@ -170,8 +163,7 @@ hanetuyah | uva'u | vehitpalu | el | habayit | hazeh
 ve'atah | tishma | min | hashamayim | mimekhon | shivtekha
 ve'asita | kekhol | asher | yikra | eleikha | hanakheri
 lema'an | yede'u | khol | amei | ha'aretz | et | shemekha
-uleyir'ah | otekha | ke'amekha | Yisra'el
-velada'at
+uleyir'ah | otekha | ke'amekha | Yisra'el | velada'at
 ki | shimkha | Nikra | al | habayit | hazeh | asher | baniti
 
 6:34
@@ -192,7 +184,8 @@ veshavum | shoeihem | el | eretz | rechokah | o | kerovah
 6:37
 veheshivu | el | levavam | ba'aretz | asher | Nishbu | sham
 veshavu | vehitchanenu | eleikha | be'eretz | shivyam
-lemor | chatanu | he'evinu
+lemor
+chatanu | he'evinu
 verasha'enu
 
 6:38

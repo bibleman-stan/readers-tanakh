@@ -1,6 +1,5 @@
 22:1
-az | yikra | Yehoshua | lor'uveni
-velagadi
+az | yikra | Yehoshua | lor'uveni | velagadi
 velachatzi | mateh | Menasheh
 
 22:2
@@ -25,10 +24,8 @@ asher | natan | lakhem | Mosheh | eved | Yahweh | be'ever | Haiyarden
 rak | shimru | me'od | la'asot | et | hamitzvah | ve'et | hatorah | asher | tzivah | etkhem | Mosheh | eved | Yahweh
 le'ahavah | et | Yahweh | eloheikhem
 velalekhet | bekhol | derakhav
-velishmor | mitzvotav
-uledavekah | vo
-ule'avedo | bekhol | levavkhem
-uvekhol | nafshekhem
+velishmor | mitzvotav | uledavekah | vo
+ule'avedo | bekhol | levavkhem | uvekhol | nafshekhem
 
 22:6
 vayvarekhem | Yehoshua
@@ -43,11 +40,7 @@ vayvarakhem
 
 22:8
 vaiyomer | aleihem | lemor | binkhasim | rabim | shuvu | el | oholeikhem
-uvemikneh | rav | me'od | bekhesef
-uvezahav
-uvinchoshet
-uvevarzel
-uvislamot
+uvemikneh | rav | me'od | bekhesef | uvezahav | uvinchoshet | uvevarzel | uvislamot
 harbeh | me'od | chilku | shelal | oyeveikhem | im | acheikhem
 
 22:9
@@ -59,13 +52,11 @@ al | pi | Yahweh | beyad | Mosheh
 
 22:10
 vaiyavo'u | el | gelilot | Haiyarden | asher | be'eretz | Kena'an
-vaiyivnu | venei | Re'uven
-uvenei | Gad | vachatzi | shevet | hamnasheh | sham | mizbeach | al | Haiyarden
+vaiyivnu | venei | Re'uven | uvenei | Gad | vachatzi | shevet | hamnasheh | sham | mizbeach | al | Haiyarden
 mizbeach | gadol | lemar'eh
 
 22:11
-vaiyishme'u | venei | Yisra'el | lemor | hineh | vanu | venei | Re'uven
-uvenei | Gad | vachatzi | shevet | hamnasheh | et | hamizbeach | el | mul | eretz | Kena'an
+vaiyishme'u | venei | Yisra'el | lemor | hineh | vanu | venei | Re'uven | uvenei | Gad | vachatzi | shevet | hamnasheh | et | hamizbeach | el | mul | eretz | Kena'an
 el | gelilot | Haiyarden | el | ever | benei | Yisra'el
 
 22:12
@@ -75,10 +66,8 @@ vaiyikahalu | kol | adat | benei | Yisra'el | Shiloh
 la'alot | aleihem | latzava
 
 22:13
-vaiyishlechu | venei | Yisra'el | el | benei | Re'uven
-ve'el | benei | Gad
-ve'el | chatzi | shevet | Menasheh | el | eretz | Hagil'ad
-et | Pinchas
+vaiyishlechu | venei | Yisra'el | el | benei | Re'uven | ve'el | benei | Gad
+ve'el | chatzi | shevet | Menasheh | el | eretz | Hagil'ad | et | Pinchas
 ben | El'azar | hakohen
 
 22:14
@@ -86,8 +75,7 @@ va'asarah | nesi'im | imo | nasi | echad | nasi | echad | leveit | av | lekhol |
 ve'ish | rosh | beit | avotam | hemah | le'alfei | Yisra'el
 
 22:15
-vaiyavo'u | el | benei | Re'uven
-ve'el | benei | Gad
+vaiyavo'u | el | benei | Re'uven | ve'el | benei | Gad
 ve'el | chatzi | shevet | Menasheh
 el | eretz | Hagil'ad | vaydaberu | itam | lemor
 
@@ -117,12 +105,10 @@ ve'al | kol | adat | Yisra'el | hayah | katzef
 vehu | ish | echad | lo | gava | ba'avono
 
 22:21
-vaiya'anu | benei | Re'uven | uvenei | Gad | vachatzi
-shevet | hamnasheh | vaydaberu | et | rashei | alfei | Yisra'el
+vaiya'anu | benei | Re'uven | uvenei | Gad | vachatzi | shevet | hamnasheh | vaydaberu | et | rashei | alfei | Yisra'el
 
 22:22
-el | elohim | Yahweh | el | elohim | Yahweh | hu | yodea
-Veyisra'el
+el | elohim | Yahweh | el | elohim | Yahweh | hu | yodea | Veyisra'el
 hu | yeda | im | bemered | ve'im | bema'al | Bayahweh | al | toshi'enu | haiyom | hazeh
 
 22:23
@@ -135,8 +121,8 @@ hu | yevakesh
 22:24
 ve'im | lo | mide'agah | midavar | asinu | et | zot | lemor
 machar | yomeru | veneikhem | levaneinu
-lemor | mah | lakhem
-Velayahweh
+lemor
+mah | lakhem | Velayahweh
 elohei | Yisra'el
 
 22:25
@@ -151,11 +137,8 @@ vanomer
 na'aseh | na | lanu | livnot | et | hamizbeach | lo | le'olah | velo | lezavach
 
 22:27
-ki | ed | hu | beineinu
-uveineikhem
-uvein | doroteinu | achareinu | la'avod | et | avodat | Yahweh | lefanav | be'oloteinu
-uvizvacheinu
-uvishlameinu
+ki | ed | hu | beineinu | uveineikhem
+uvein | doroteinu | achareinu | la'avod | et | avodat | Yahweh | lefanav | be'oloteinu | uvizvacheinu | uvishlameinu
 velo | yomeru | veneikhem | machar | levaneinu | ein | lakhem | chelek | Bayahweh
 
 22:28
@@ -173,14 +156,11 @@ livnot | mizbeach | le'olah | leminchah
 ulezavach | milevad | mizbach | Yahweh | eloheinu | asher | lifnei | mishkano
 
 22:30
-vaiyishma | Pinchas | hakohen | unesi'ei | ha'edah | verashei | alfei | Yisra'el | asher | ito
-et | hadevarim | asher | diberu | benei | Re'uven
-uvenei | Gad
+vaiyishma | Pinchas | hakohen | unesi'ei | ha'edah | verashei | alfei | Yisra'el | asher | ito | et | hadevarim | asher | diberu | benei | Re'uven | uvenei | Gad
 uvenei | Menasheh | vaiyitav | be'eineihem
 
 22:31
-vaiyomer | Pinchas | ben | El'azar | hakohen | el | benei | Re'uven
-ve'el | benei | Gad
+vaiyomer | Pinchas | ben | El'azar | hakohen | el | benei | Re'uven | ve'el | benei | Gad
 ve'el | benei | Menasheh | haiyom | yada'nu | ki | vetokhenu | Yahweh
 asher | lo | me'altem | Bayahweh | hama'al | hazeh
 az | hitzaltem | et | benei | Yisra'el | miyad | Yahweh
@@ -200,5 +180,4 @@ uvenei | Gad | yoshevim | bah
 vaiyikre'u | benei | Re'uven
 uvenei | Gad | lamizbeach
 ki | ed | hu | beinoteinu
-ki | Yahweh
-ha'elohim
+ki | Yahweh | ha'elohim

@@ -43,9 +43,7 @@ ki | shichet | amekha | asher | he'eleita | me'eretz | Mitzrayim
 
 32:8
 saru | maher | min | haderekh | asher | tzivitim
-asu | lahem | egel | masekhah
-vaiyishtachavu | lo
-vaiyizbechu | lo
+asu | lahem | egel | masekhah | vaiyishtachavu | lo | vaiyizbechu | lo
 vaiyomeru
 eleh | eloheikha | Yisra'el | asher | he'elukha | me'eretz | Mitzrayim
 
@@ -87,13 +85,11 @@ Yahweh | al | hara'ah | asher | diber | la'asot | le'amo
 32:15
 vaiyifen | vaiyered | Mosheh | min | hahar
 ushenei | luchot | ha'edut | beyado
-luchot | ketuvim | mishenei | evreihem | mizeh
-umizeh
+luchot | ketuvim | mishenei | evreihem | mizeh | umizeh
 hem | ketuvim
 
 32:16
-vehaluchot | ma'aseh | elohim
-hemah
+vehaluchot | ma'aseh | elohim | hemah
 vehamikhtav | mikhtav | elohim | hu
 charut | al | haluchot
 
@@ -164,8 +160,7 @@ vaiyipol | min | ha'am | baiyom | hahu | kishloshet | alfei | ish
 32:29
 vaiyomer | Mosheh
 mil'u | yedkhem | haiyom | Layahweh
-ki | ish | bivno
-uve'achiv
+ki | ish | bivno | uve'achiv
 velatet | aleikhem | haiyom | berakhah
 
 32:30

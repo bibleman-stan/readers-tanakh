@@ -1,6 +1,5 @@
 63:1
-mizmor | Ledavid
-bihyoto
+mizmor | Ledavid | bihyoto
 bemidbar | Yehudah
 
 63:2
@@ -26,12 +25,10 @@ esa | khapai
 
 63:6
 kemo | chelev | vadeshen | tisba | nafshi
-vesiftei | renanot
-yehalel | pi
+vesiftei | renanot | yehalel | pi
 
 63:7
-im | zekhartikha | al | yetzu'ai
-be'ashmurot
+im | zekhartikha | al | yetzu'ai | be'ashmurot
 ehgeh | bakh
 
 63:8
@@ -39,8 +36,7 @@ ki | hayita | ezratah | li
 uvetzel | kenafeikha | aranen
 
 63:9
-davekah | nafshi | achareikha
-bi
+davekah | nafshi | achareikha | bi
 tamekhah | yeminekha
 
 63:10
@@ -56,5 +52,4 @@ menat | shu'alim | yihyu
 63:12
 vehamelekh | yismach | belohim
 yithalel | kol | hanishba | bo
-ki | yisakher
-pi | dovrei | shaker
+ki | yisakher | pi | dovrei | shaker

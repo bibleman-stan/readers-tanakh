@@ -1,6 +1,5 @@
 20:1
-Uven | Hadad | melekh | Aram | kavatz | et | kol | cheilo
-usheloshim | ushenayim | melekh | ito
+Uven | Hadad | melekh | Aram | kavatz | et | kol | cheilo | usheloshim | ushenayim | melekh | ito
 vesus | varakhev
 vaiya'al | vaiyatzar | al | Shomeron
 vaiyilachem | bah
@@ -15,13 +14,11 @@ uvaneikha | hatovim | li | hem
 
 20:4
 vaiya'an | melekh | Yisra'el
-vaiyomer | kidvarekha | adoni | hamelekh | lekha | ani
-vekhol | asher | li
+vaiyomer | kidvarekha | adoni | hamelekh | lekha | ani | vekhol | asher | li
 
 20:5
 vaiyashuvu | hamal'akhim
-vaiyomeru | koh | amar | Ben | Hadad
-lemor
+vaiyomeru | koh | amar | Ben | Hadad | lemor
 ki | shalachti | eleikha | lemor | kaspekha | uzehavekha | venasheikha
 uvaneikha | li | titen
 
@@ -35,9 +32,7 @@ yasimu | veyadam | velakachu
 vaiyikra | melekh | Yisra'el | lekhol | ziknei | ha'aretz
 vaiyomer
 de'u | na | ure'u | ki | ra'ah | zeh | mevakesh
-ki | shalach | elai | lenashai
-ulevanai
-ulekhaspi
+ki | shalach | elai | lenashai | ulevanai | ulekhaspi
 velizhavi | velo | mana'ti | mimenu
 
 20:8
@@ -57,8 +52,7 @@ vayshivuhu | davar
 vaiyishlach | elav | Ben | Hadad
 vaiyomer
 koh | ya'asun | li | elohim
-vekhoh | yosifu
-im | yispok | afar | Shomeron | lish'alim | lekhol | ha'am | asher | beraglai
+vekhoh | yosifu | im | yispok | afar | Shomeron | lish'alim | lekhol | ha'am | asher | beraglai
 
 20:11
 vaiya'an | melekh | Yisra'el
@@ -78,8 +72,7 @@ hini | noteno | veyadekha | haiyom | veyada'ta | ki | ani | Yahweh
 20:14
 vaiyomer | Ach'av | bemi
 vaiyomer
-koh | amar | Yahweh | bena'arei
-sarei | hamedinot | vaiyomer | mi | ye'sor | hamilchamah
+koh | amar | Yahweh | bena'arei | sarei | hamedinot | vaiyomer | mi | ye'sor | hamilchamah
 vaiyomer | atah
 
 20:15
@@ -94,7 +87,8 @@ Uven | Hadad | shoteh | shikor | basukot | hu | vehamelakhim | sheloshim | ushen
 20:17
 vaiyetze'u | na'arei | sarei | hamedinot | barishonah
 vaiyishlach | Ben | Hadad
-vaiyagidu | lo | lemor | anashim
+vaiyagidu | lo | lemor
+anashim
 yatze'u | Mishomeron
 
 20:18
@@ -111,8 +105,7 @@ vehachayil | asher | achareihem
 vaiyaku | ish | isho
 vaiyanusu | Aram
 vaiyirdefem | Yisra'el
-vaiyimalet | Ben | Hadad | melekh | Aram | al | sus
-ufarashim
+vaiyimalet | Ben | Hadad | melekh | Aram | al | sus | ufarashim
 
 20:21
 vaiyetze | melekh | Yisra'el
@@ -157,8 +150,7 @@ vaiyigash | ish | ha'elohim
 vaiyomer | el | melekh | Yisra'el
 vaiyomer
 koh | amar | Yahweh | ya'an | asher | ameru | Aram | elohei | harim | Yahweh
-velo | elohei | amakim
-hu
+velo | elohei | amakim | hu
 venatati | et | kol | hehamon | hagadol | hazeh | beyadekha
 vida'tem | ki | ani | Yahweh
 
@@ -175,10 +167,8 @@ vaiyavo | el | ha'ir | cheder | bechader
 
 20:31
 vaiyomeru | elav | avadav
-hineh | na | shama'nu
-ki | malkhei | beit | Yisra'el
-ki | malkhei | chesed
-hem
+hineh | na | shama'nu | ki | malkhei | beit | Yisra'el
+ki | malkhei | chesed | hem
 nasimah | na | sakim | bemateneinu | vachavalim | beroshenu | venetze | el | melekh | Yisra'el
 ulai | yechaiyeh | et | nafshekha
 
@@ -186,8 +176,7 @@ ulai | yechaiyeh | et | nafshekha
 vaiyachgeru | sakim | bemateneihem | vachavalim | berasheihem
 vaiyavo'u | el | melekh | Yisra'el
 vaiyomeru | avdekha | Ven | Hadad
-amar
-techi | na | nafshi | vaiyomer | ha'odenu | chai | achi | hu
+amar | techi | na | nafshi | vaiyomer | ha'odenu | chai | achi | hu
 
 20:33
 veha'anashim | yenachashu | vaymaharu | vaiyachletu | hamimenu | vaiyomeru | achikha | Ven | Hadad
@@ -205,8 +194,7 @@ vayshalechehu
 
 20:35
 ve'ish | echad | mibenei | hanevi'im | amar | el | re'ehu | bidvar | Yahweh
-hakeini | na | vayma'en | ha'ish
-lehakoto
+hakeini | na | vayma'en | ha'ish | lehakoto
 
 20:36
 vaiyomer | lo

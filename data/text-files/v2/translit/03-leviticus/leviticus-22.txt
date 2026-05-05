@@ -1,6 +1,5 @@
 22:1
-vaydaber | Yahweh | el | Mosheh
-lemor
+vaydaber | Yahweh | el | Mosheh | lemor
 
 22:2
 daber | el | Aharon
@@ -66,8 +65,7 @@ ve'ish | ki | yokhal | kodesh | bishgagah
 veyasaf | chamishito | alav | venatan | lakohen | et | hakodesh
 
 22:15
-velo | yechalelu | et | kadeshei
-benei | Yisra'el | et | asher | yarimu | Layahweh
+velo | yechalelu | et | kadeshei | benei | Yisra'el | et | asher | yarimu | Layahweh
 
 22:16
 vehisi'u | otam | avon | ashmah
@@ -75,12 +73,10 @@ be'akhelam | et | kadesheihem
 ki | ani | Yahweh | mekadesham
 
 22:17
-vaydaber | Yahweh | el | Mosheh
-lemor
+vaydaber | Yahweh | el | Mosheh | lemor
 
 22:18
-daber | el | Aharon
-ve'el | banav
+daber | el | Aharon | ve'el | banav
 ve'el | kol | benei | Yisra'el
 ve'amarta
 alehem | ish | ish | mibeit | Yisra'el
@@ -88,8 +84,7 @@ umin | hager | Beyisra'el | asher | yakriv | karebano | lekhol | nidreihem
 ulekhol | nidvotam | asher | yakrivu | Layahweh | le'olah
 
 22:19
-lirtzonekhem | tamim | zakhar | babakar | bakesavim
-uva'izim
+lirtzonekhem | tamim | zakhar | babakar | bakesavim | uva'izim
 
 22:20
 kol | asher | bo | mum
@@ -116,8 +111,7 @@ lo | yeratzeh
 22:24
 uma'ukh
 vekhatut | venatuk
-vekharut | lo | takrivu | Layahweh
-uve'artzekhem
+vekharut | lo | takrivu | Layahweh | uve'artzekhem
 lo | ta'asu
 
 22:25
@@ -126,8 +120,7 @@ ki | mashechatam | bahem | mum | bam
 lo | yeratzu | lakhem
 
 22:26
-vaydaber | Yahweh | el | Mosheh
-lemor
+vaydaber | Yahweh | el | Mosheh | lemor
 
 22:27
 shor | ov | khesev | ov | ez | ki | yivaled
@@ -135,8 +128,7 @@ vehayah | shiv'at | yamim | tachat | imo
 umiyom | hashemini | vahal'ah | yeratzeh | lekarban | isheh | Layahweh
 
 22:28
-veshor
-ov | seh
+veshor | ov | seh
 oto | ve'et | beno
 lo | tishchatu | beyom | echad
 

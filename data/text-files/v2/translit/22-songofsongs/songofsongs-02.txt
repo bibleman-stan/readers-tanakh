@@ -1,7 +1,6 @@
 2:1
 ani | chavatzelet | Hasharon
-shoshanat
-ha'amakim
+shoshanat | ha'amakim
 
 2:2
 keshoshanah | bein | hachochim
@@ -12,50 +11,37 @@ bein | habanot
 ketapuach | ba'atzei | haiya'ar
 ken | dodi
 bein | habanim
-betzilo | chimadti | veyashavti
-ufiryo
+betzilo | chimadti | veyashavti | ufiryo
 matok | lechiki
 
 2:4
 hevi'ani | el | beit | haiyayin
-vediglo | alai
-ahavah
+vediglo | alai | ahavah
 
 2:5
 samekhuni | ba'ashishot
-rapeduni
-batapuchim
-ki | cholat | ahavah
-ani
+rapeduni | batapuchim
+ki | cholat | ahavah | ani
 
 2:6
-semolo | tachat | leroshi
-vimino
+semolo | tachat | leroshi | vimino
 techabekeni
 
 2:7
-hishba'ti | etkhem | benot | Yerushalim | bitzva'ot
-o
+hishba'ti | etkhem | benot | Yerushalim | bitzva'ot | o
 be'aylot | hasadeh
 im | ta'iru | ve'im | te'oru | et | ha'ahavah
 ad | shetechpatz
 
 2:8
-kol | dodi
-hineh | zeh
-ba
-medaleg | al | heharim
-mekapetz
-al | hageva'ot
+kol | dodi | hineh | zeh | ba
+medaleg | al | heharim | mekapetz | al | hageva'ot
 
 2:9
-domeh | dodi | litzvi
-o
+domeh | dodi | litzvi | o
 le'ofer | ha'aiyalim
 hineh | zeh | omed | achar | katelenu
-mashgiach | min | hachalonot
-metzitz
-min | hacharakim
+mashgiach | min | hachalonot | metzitz | min | hacharakim
 
 2:10
 anah | dodi
@@ -65,8 +51,7 @@ ulekhi | lakh
 
 2:11
 ki | hineh | hasetav
-avar
-hageshem
+avar | hageshem
 chalaf
 halakh | lo
 
@@ -87,26 +72,20 @@ ulekhi | lakh
 2:14
 yonati | bechagvei | hasela | beseter | hamadregah
 har'ini | et | mar'ayikh
-hashmi'ini
-et | kolekh
+hashmi'ini | et | kolekh
 ki | kolekh | arev
 umar'eikh | naveh
 
 2:15
 echezu | lanu | shu'alim
 shu'alim | ketanim
-mechabelim | keramim
-ukherameinu
-semadar
+mechabelim | keramim | ukherameinu | semadar
 
 2:16
-dodi | li | va'ani | lo
-haro'eh
-bashoshanim
+dodi | li | va'ani | lo | haro'eh | bashoshanim
 
 2:17
 ad | sheiyafuach | haiyom
-venasu
-hatzelalim
+venasu | hatzelalim
 so | demeh | lekha | dodi | litzvi | o | le'ofer | ha'aiyalim
 al | harei | vater

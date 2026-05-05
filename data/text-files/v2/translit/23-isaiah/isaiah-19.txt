@@ -11,17 +11,14 @@ ve'ish | bere'ehu | ir | be'ir | mamlakhah | bemamlakhah
 19:3
 venavekah | ruach | Mitzrayim | bekirbo
 va'atzato | avalea
-vedareshu | el | ha'elilim | ve'el | ha'itim
-ve'el | ha'ovot
-ve'el | haiyide'onim
+vedareshu | el | ha'elilim | ve'el | ha'itim | ve'el | ha'ovot | ve'el | haiyide'onim
 
 19:4
 vesikarti | et | Mitzrayim | beyad | adonim | kasheh
 umelekh | az | yimshol | bam | ne'um | ha'adon | Yahweh | tzeva'ot
 
 19:5
-venishetu | mayim | mehaiyam
-venahar
+venishetu | mayim | mehaiyam | venahar
 yecherav | veyavesh
 
 19:6
@@ -32,8 +29,7 @@ kaneh | vasuf | kamelu
 19:7
 arot | al | Ye'or | al | pi | Ye'or
 vekhol | mizra | Ye'or
-yivash | Nidaf
-ve'einenu
+yivash | Nidaf | ve'einenu
 
 19:8
 ve'anu | hadaiyagim
@@ -48,9 +44,7 @@ vehayu | shatoteiha | meduka'im | kol | osei | sekher | agmei | nafesh
 
 19:11
 akh | evilim | sarei | Tzo'an
-chakhmei | yo'atzei | far'oh
-etzah
-niv'arah
+chakhmei | yo'atzei | far'oh | etzah | niv'arah
 eikh | tomeru | el | par'oh | ben | chakhamim | ani | ben | malkhei | kedem
 
 19:12
@@ -73,14 +67,12 @@ kipah | ve'agmon
 
 19:16
 baiyom | hahu | yihyeh | Mitzrayim | kanashim
-vecharad | ufachad | mipenei | tenufat | yad | Yahweh | tzeva'ot
-asher | hu | menif | alav
+vecharad | ufachad | mipenei | tenufat | yad | Yahweh | tzeva'ot | asher | hu | menif | alav
 
 19:17
 vehayetah | admat | Yehudah | Lemitzrayim | lechaga
 kol | asher | yazkir | otah | elav | yifchad
-mipenei | atzat | Yahweh | tzeva'ot
-asher | hu | yo'etz | alav
+mipenei | atzat | Yahweh | tzeva'ot | asher | hu | yo'etz | alav
 
 19:18
 baiyom | hahu | yihyu | chamesh | arim | be'eretz | Mitzrayim | medaberot | sefat | Kena'an
@@ -122,6 +114,7 @@ Ule'ashur | berakhah | bekerev | ha'aretz
 
 19:25
 asher | berakho | Yahweh | tzeva'ot
-lemor | barukh | ami | Mitzrayim
+lemor
+barukh | ami | Mitzrayim
 uma'aseh | yadai | Ashur
 venachalati | Yisra'el

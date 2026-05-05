@@ -10,10 +10,7 @@ ve'el | El'azar | hakohen
 ve'el | nesi'ei | ha'edah | lemor
 
 32:3
-Atarot
-Vedivon
-Veya'zer
-Venimrah
+Atarot | Vedivon | Veya'zer | Venimrah
 Vecheshbon | Ve'el'aleh
 Usevam | Unevo | Uve'on
 
@@ -51,10 +48,8 @@ vaiyichar | af | Yahweh
 baiyom | hahu | vaiyishava | lemor
 
 32:11
-im | yir'u | ha'anashim | ha'olim | Mimitzrayim | miben | esrim | shanah
-vama'lah
-et | ha'adamah | asher | Nishba'ti | Le'avraham | Leyitzchak
-Uleya'ako
+im | yir'u | ha'anashim | ha'olim | Mimitzrayim | miben | esrim | shanah | vama'lah
+et | ha'adamah | asher | Nishba'ti | Le'avraham | Leyitzchak | Uleya'ako
 ki | lo | mil'u | acharai
 
 32:12
@@ -86,12 +81,10 @@ ad | asher | im | havi'onum | el | mekomam
 veyashav | tapenu | be'arei | hamivtzar | mipenei | yoshevei | ha'aretz
 
 32:18
-lo | nashuv | el | bateinu | ad | hitnachel | benei | Yisra'el | ish
-nachalato
+lo | nashuv | el | bateinu | ad | hitnachel | benei | Yisra'el | ish | nachalato
 
 32:19
-ki | lo | ninchal | itam | me'ever | Laiyarden
-vahal'ah
+ki | lo | ninchal | itam | me'ever | Laiyarden | vahal'ah
 ki | va'ah | nachalatenu | eleinu | me'ever | Haiyarden | mizrachah
 
 32:20
@@ -105,8 +98,7 @@ lifnei | Yahweh | ad | horisho | et | oyevav | mipanav
 
 32:22
 venikhbeshah | ha'aretz | lifnei | Yahweh | ve'achar | tashuvu
-vihyitem | nekiyim | Meyahweh
-Umiyisra'el
+vihyitem | nekiyim | Meyahweh | Umiyisra'el
 vehayetah | ha'aretz | hazot | lakhem | la'achuzah | lifnei | Yahweh
 
 32:23
@@ -169,8 +161,7 @@ ha'aretz | le'areiha | bigvulot | arei | ha'aretz | saviv
 vaiyivnu | venei | Gad | et | Divon | ve'et | Atarot | ve'et | Aro'er
 
 32:35
-ve'et | Atrot | Shofan | ve'et | Ya'zer
-Veyagebohah
+ve'et | Atrot | Shofan | ve'et | Ya'zer | Veyagebohah
 
 32:36
 ve'et | Beit | Nimrah | ve'et | Beit | Haran | arei | mivtzar | vegidrot | tzon

@@ -5,8 +5,7 @@ vaiyasem | et | kis'o | me'al | kol | hasarim | asher | ito
 
 3:2
 vekhol | avdei | hamelekh | asher | besha'ar | hamelekh | kore'im
-umishtachavim | Lehaman
-ki | khen
+umishtachavim | Lehaman | ki | khen
 tzivah | lo | hamelekh | Umaredokhai
 lo | yikhra
 velo | yishtachaveh
@@ -57,12 +56,9 @@ veha'am | la'asot | bo | katov | be'eineikha
 3:12
 vaiyikare'u | soferei | hamelekh | bachodesh | harishon | bishloshah | asar | yom | bo
 vaiyikatev | kekhol | asher | tzivah | Haman | el | achashdarpenei | hamelekh
-ve'el | hapachot | asher | al | medinah
-umedinah
-ve'el | sarei | am
-va'am | medinah
-umedinah | kikhtavah
-ve'am
+ve'el | hapachot | asher | al | medinah | umedinah
+ve'el | sarei | am | va'am | medinah
+umedinah | kikhtavah | ve'am
 va'am | kilshono | beshem | hamelekh | Achashverosh | nikhtav
 venechtam | betaba'at | hamelekh
 
@@ -73,8 +69,7 @@ ve'ad | zaken | taf | venashim | beyom | echad | bishloshah | asar | lechodesh |
 ushelalam | lavoz
 
 3:14
-patshegen | haketav | lehinaten | dat | bekhol | medinah
-umedinah
+patshegen | haketav | lehinaten | dat | bekhol | medinah | umedinah
 galui | lekhol | ha'amim | lihyot | atidim
 laiyom | hazeh
 

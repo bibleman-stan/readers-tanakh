@@ -6,16 +6,13 @@ veha'aretz | Nish'arah | harbeh | me'od | lerishtah
 
 13:2
 zot | ha'aretz | hanish'aret
-kol | gelilot | hapelishtim
-vekhol | hageshuri
+kol | gelilot | hapelishtim | vekhol | hageshuri
 
 13:3
 min | Hashichor | asher | al | penei | Mitzrayim
 ve'ad | gevul | Ekron | tzafonah | lakena'ani
 techashev
-chameshet | sarnei | felishtim | ha'azati | veha'ashdodi | ha'eshkeloni | hagiti
-veha'ekroni
-Veha'avim
+chameshet | sarnei | felishtim | ha'azati | veha'ashdodi | ha'eshkeloni | hagiti | veha'ekroni | Veha'avim
 
 13:4
 miteiman | kol | eretz | hakena'ani
@@ -24,8 +21,7 @@ ad | Afekah | ad | gevul | ha'emori
 
 13:5
 veha'aretz | hagivli
-vekhol | Halevanon | mizrach | hashemesh | Miba'al | Gad
-tachat | har | Chermon | ad | levo | Chamat
+vekhol | Halevanon | mizrach | hashemesh | Miba'al | Gad | tachat | har | Chermon | ad | levo | Chamat
 
 13:6
 kol | yoshevei | hahor | min | Halevanon | ad | Misrefot | Mayim | kol | tzidonim | anokhi | orishem
@@ -38,8 +34,7 @@ ve'atah | chalek | et | ha'aretz | hazot | benachalah | letish'at | hashevatim
 vachatzi | hashevet | hamnasheh
 
 13:8
-imo | har'uveni | vehagadi | lakechu
-nachalatam | asher | natan | lahem | Mosheh | be'ever | Haiyarden | mizrachah
+imo | har'uveni | vehagadi | lakechu | nachalatam | asher | natan | lahem | Mosheh | be'ever | Haiyarden | mizrachah
 ka'asher | natan | lahem | Mosheh | eved | Yahweh
 
 13:9
@@ -79,8 +74,7 @@ vayhi | lahem | hagevul | Me'aro'er | asher | al | sefat | nachal | Arnon | veha
 vekhol | hamishor | al | Meideva
 
 13:17
-Cheshbon | vekhol | areiha | asher | bamishor
-Divon
+Cheshbon | vekhol | areiha | asher | bamishor | Divon
 Uvamot | Ba'al
 Uveit | Ba'al | Me'on
 
@@ -105,11 +99,8 @@ ve'et | Bil'am | ben | Be'or | hakosem
 haregu | venei | Yisra'el | bacherev | el | chaleihem
 
 13:23
-vayhi | gevul | benei | Re'uven | Haiyarden
-ugevul
-zot | nachalat | benei | Re'uven | lemishpechotam
-he'arim
-vechatzreihen
+vayhi | gevul | benei | Re'uven | Haiyarden | ugevul
+zot | nachalat | benei | Re'uven | lemishpechotam | he'arim | vechatzreihen
 
 13:24
 vaiyiten | Mosheh | lemateh | Gad | livnei | Gad | lemishpechotam
@@ -119,25 +110,19 @@ vayhi | lahem | hagevul | Ya'zer | vekhol | arei | Hagil'ad
 vachatzi | eretz | benei | Amon | ad | Aro'er | asher | al | penei | Rabah
 
 13:26
-Umecheshbon | ad | ramat | hamitzpeh
-Uvetonim
+Umecheshbon | ad | ramat | hamitzpeh | Uvetonim
 Umimachanayim | ad | gevul | Lidvir
 
 13:27
 uva'emek | Beit | Haram
-Uveit | Nimrah | Vesukot | Vetzafon | yeter | mamlekhut | Sichon | melekh | Cheshbon
-Haiyarden
-ugevul | ad | ketzeh | yom | Kineret
+Uveit | Nimrah | Vesukot | Vetzafon | yeter | mamlekhut | Sichon | melekh | Cheshbon | Haiyarden | ugevul | ad | ketzeh | yom | Kineret
 ever | Haiyarden | mizrachah
 
 13:28
-zot | nachalat | benei | Gad | lemishpechotam
-he'arim
-vechatzreihem
+zot | nachalat | benei | Gad | lemishpechotam | he'arim | vechatzreihem
 
 13:29
-vaiyiten | Mosheh | lachatzi
-shevet | Menasheh | vayhi | lachatzi | mateh | venei | Menasheh | lemishpechotam
+vaiyiten | Mosheh | lachatzi | shevet | Menasheh | vayhi | lachatzi | mateh | venei | Menasheh | lemishpechotam
 
 13:30
 vayhi | gevulam | Mimachanayim | kal | Habashan | kal | mamlekhut | Og | melekh | Habashan | vekhol | chavot | Ya'ir | asher | Babashan | shishim | ir

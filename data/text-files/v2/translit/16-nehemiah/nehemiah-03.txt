@@ -23,8 +23,7 @@ ve'adireihem | lo | hevi'u | tzavaram | ba'avodat | adoneihem
 
 3:6
 ve'et | sha'ar | hayshanah | hecheziku | Yoyada | ben | Paseach | Umeshulam
-ben | Besodyah | hemah | keruhu
-vaiya'amidu | daltotav | uman'ulav | uverichav
+ben | Besodyah | hemah | keruhu | vaiya'amidu | daltotav | uman'ulav | uverichav
 
 3:7
 ve'al | yadam | hechezik | Melatyah | hagiv'oni | Veyadon | hameronoti | anshei | Giv'on
@@ -44,8 +43,7 @@ veneged | beito
 ve'al | yado | hechezik | Chatush | ben | Chashavneyah
 
 3:11
-midah | shenit | hechezik | Malkiyah | ven | Charim | Vechashuv | ben | Pachat | Mo'av
-ve'et | migdal | hatanurim
+midah | shenit | hechezik | Malkiyah | ven | Charim | Vechashuv | ben | Pachat | Mo'av | ve'et | migdal | hatanurim
 
 3:12
 ve'al | yado | hechezik | Shalum | ben | Halochesh | sar | chatzi | pelekh | Yerushalim
@@ -53,20 +51,16 @@ hu | uvenotav
 
 3:13
 et | sha'ar | hagay | hechezik | Chanun | veyoshevei | Zanoach
-hemah | vanuhu | vaiya'amidu | daltotav | man'ulav
-uverichav
+hemah | vanuhu | vaiya'amidu | daltotav | man'ulav | uverichav
 ve'elef | amah | bachomah | ad | sha'ar | hashafot
 
 3:14
-ve'et | sha'ar | ha'ashpot | hechezik | Malkiyah | ven | Rekhav | sar | pelekh | Beit | Hakarem | hu | yivnenu
-veya'amid | daltotav | man'ulav | uverichav
+ve'et | sha'ar | ha'ashpot | hechezik | Malkiyah | ven | Rekhav | sar | pelekh | Beit | Hakarem | hu | yivnenu | veya'amid | daltotav | man'ulav | uverichav
 
 3:15
 ve'et | sha'ar | ha'ayin | hechezik | Shalun | ben | Kol | Chozeh | sar | pelekh | Hamitzpah | hu | yivnenu | vitallenu
-veya'amidu | daltotav | man'ulav | uverichav
-ve'et | chomat | berekhat | hashelach | legan | hamelekh
-ve'ad | hama'alot
-haiyordot | me'ir | David
+veya'amidu | daltotav | man'ulav | uverichav | ve'et | chomat | berekhat | hashelach | legan | hamelekh
+ve'ad | hama'alot | haiyordot | me'ir | David
 
 3:16
 acharav | hechezik | Nechemyah | ven | Azbuk | sar | chatzi | pelekh | Beit | Tzur | ad | neged | kivrei | David
@@ -81,9 +75,7 @@ Rechum | ben | Bani | al | yado | hechezik | Chashavyah | sar | chatzi | felekh 
 acharav | hecheziku | acheihem | Bavai | ben | Chenadad | sar | chatzi | pelekh | Ke'ilah
 
 3:19
-vaychazek | al | yado | Ezer | ben | Yeshua | sar | Hamitzpah
-midah | shenit | mineged | alot | haneshek
-hamiktzoa
+vaychazek | al | yado | Ezer | ben | Yeshua | sar | Hamitzpah | midah | shenit | mineged | alot | haneshek | hamiktzoa
 
 3:20
 acharav | hecherah | hechezik | Barukh | ben | Zakai | midah | shenit
@@ -103,8 +95,7 @@ acharav | hechezik | Azaryah | ven | Ma'aseyah | ben | Ananeyah | etzel | beito
 
 3:24
 acharav | hechezik | Binui | ben | Chenadad | midah | shenit
-mibeit | Azaryah | ad | hamiktzoa
-ve'ad | hapinah
+mibeit | Azaryah | ad | hamiktzoa | ve'ad | hapinah
 
 3:25
 Palal | ben | Uzai | mineged | hamiktzoa
@@ -113,9 +104,7 @@ acharav | Pedayah | ven | Par'osh
 
 3:26
 vehanetinim
-hayu | yoshevim | Ba'ofel | ad | neged | sha'ar | hamayim | lamizrach
-vehamigdal
-haiyotze
+hayu | yoshevim | Ba'ofel | ad | neged | sha'ar | hamayim | lamizrach | vehamigdal | haiyotze
 
 3:27
 acharav | hecheziku | hateko'im | midah | shenit
@@ -139,8 +128,7 @@ veharokhelim | neged | sha'ar | hamifkad | ve'ad | aliyat | hapinah
 
 3:32
 uvein | aliyat | hapinah | lesha'ar | hatzon
-hecheziku | hatzorefim
-veharokhelim
+hecheziku | hatzorefim | veharokhelim
 
 3:33
 vayehi | ka'asher | shama | Sanvalat | ki | anachnu | vonim | et | hachomah
@@ -173,5 +161,4 @@ ki | hikh'isu | leneged | habonim
 3:38
 vanivneh | et | hachomah
 vatikasher | kol | hachomah | ad | chetzyah
-vayhi | lev | la'am
-la'asot
+vayhi | lev | la'am | la'asot

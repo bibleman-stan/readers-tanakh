@@ -1,9 +1,6 @@
 124:1
-shir | hama'alot
-Ledavid
-lulei | Yahweh | shehayah | lanu
-yomar | na
-Yisra'el
+shir | hama'alot | Ledavid
+lulei | Yahweh | shehayah | lanu | yomar | na | Yisra'el
 
 124:2
 lulei | Yahweh | shehayah | lanu
@@ -14,19 +11,15 @@ azai | chaiyim | bela'unu
 bacharot | apam | banu
 
 124:4
-azai | hamayim | shetafunu
-nachlah
+azai | hamayim | shetafunu | nachlah
 avar | al | nafshenu
 
 124:5
-azai | avar | al | nafshenu
-hamayim
-hazeidonim
+azai | avar | al | nafshenu | hamayim | hazeidonim
 
 124:6
 barukh | Yahweh
-shelo | netananu | teref
-leshineihem
+shelo | netananu | teref | leshineihem
 
 124:7
 nafshenu
@@ -35,6 +28,4 @@ hapach | nishbar
 va'anachnu | Nimlatenu
 
 124:8
-ezrenu | beshem | Yahweh
-oseh
-shamayim | va'aretz
+ezrenu | beshem | Yahweh | oseh | shamayim | va'aretz

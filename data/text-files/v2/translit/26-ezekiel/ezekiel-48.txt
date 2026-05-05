@@ -1,15 +1,13 @@
 48:1
 ve'eleh | shemot | hashevatim
-miktzeh | tzafonah | el | yad | derekh | Chetlon | levo | Chamat | Chatzar | Einan | gevul | Damesek | tzafonah | el | yad | Chamat
-vehayu | lo | fe'at | kadim | haiyam
+miktzeh | tzafonah | el | yad | derekh | Chetlon | levo | Chamat | Chatzar | Einan | gevul | Damesek | tzafonah | el | yad | Chamat | vehayu | lo | fe'at | kadim | haiyam
 Dan | echad
 
 48:2
 ve'al | gevul | Dan | mipe'at | kadim | ad | pe'at | yamah | Asher | echad
 
 48:3
-ve'al | gevul | Asher | mipe'at | kadimah
-ve'ad | pe'at | yamah
+ve'al | gevul | Asher | mipe'at | kadimah | ve'ad | pe'at | yamah
 Naftali | echad
 
 48:4
@@ -20,8 +18,7 @@ ve'al | gevul | Menasheh | mipe'at | kadimah | ad | pe'at | yamah
 Efrayim | echad
 
 48:6
-ve'al | gevul | Efrayim | mipe'at | kadim
-ve'ad | pe'at | yamah
+ve'al | gevul | Efrayim | mipe'at | kadim | ve'ad | pe'at | yamah
 Re'uven | echad
 
 48:7
@@ -63,8 +60,7 @@ velo | yimkeru | mimenu | velo | yamer
 velo | ya'avur | reshit | ha'aretz | ki | kodesh | Layahweh
 
 48:15
-vachameshet | alafim | hanotar | barochav | al | penei | chamishah | ve'esrim | elef | chol | hu | la'ir
-lemoshav
+vachameshet | alafim | hanotar | barochav | al | penei | chamishah | ve'esrim | elef | chol | hu | la'ir | lemoshav
 ulemigrash | vehayetah | ha'ir | betokho
 
 48:16
@@ -143,21 +139,16 @@ chamesh | me'ot | ve'arba'at | alafim | midah
 
 48:31
 vesha'arei | ha'ir | al | shemot | shivtei | Yisra'el
-she'arim | sheloshah
-tzafonah
-sha'ar | Re'uven | echad | sha'ar | Yehudah | echad | sha'ar | Levi
-echad
+she'arim | sheloshah | tzafonah
+sha'ar | Re'uven | echad | sha'ar | Yehudah | echad | sha'ar | Levi | echad
 
 48:32
 ve'el | pe'at | kadimah | chamesh | me'ot | ve'arba'at | alafim | ushe'arim | sheloshah
-vesha'ar | Yosef | echad | sha'ar | Binyamin | echad | sha'ar | Dan
-echad
+vesha'ar | Yosef | echad | sha'ar | Binyamin | echad | sha'ar | Dan | echad
 
 48:33
-ufe'at | negbah | chamesh | me'ot | ve'arba'at | alafim | midah
-ushe'arim
-sheloshah | sha'ar | Shim'on | echad | sha'ar | Yisashkhar | echad | sha'ar | Zevulun
-echad
+ufe'at | negbah | chamesh | me'ot | ve'arba'at | alafim | midah | ushe'arim
+sheloshah | sha'ar | Shim'on | echad | sha'ar | Yisashkhar | echad | sha'ar | Zevulun | echad
 
 48:34
 pe'at | yamah | chamesh | me'ot | ve'arba'at | alafim | sha'areihem

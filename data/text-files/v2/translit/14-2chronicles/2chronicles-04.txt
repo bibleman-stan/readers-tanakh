@@ -1,7 +1,6 @@
 4:1
 vaiya'as | mizbach | nechoshet | esrim | amah | areko
-ve'esrim | amah
-rachebo
+ve'esrim | amah | rachebo
 ve'eser | amot | komato
 
 4:2
@@ -48,8 +47,7 @@ vaiyanach | baheikhal | chamishah | miyamin | vachamishah | misemol
 vaiya'as | mizrekei | zahav | me'ah
 
 4:9
-vaiya'as | chatzar | hakohanim
-veha'azarah | hagedolah
+vaiya'as | chatzar | hakohanim | veha'azarah | hagedolah
 udelatot | la'azarah | vedaltoteihem
 tzipah | nechoshet
 
@@ -62,8 +60,7 @@ vaykhal | Chyram | la'asot | et | hamelakhah | asher | asah | lamelekh | Shelomo
 beveit | ha'elohim
 
 4:12
-amudim | shenayim | vehaggulot | vehakotarot | al | rosh | ha'amudim
-shetayim | vehasevakhot | shetayim | lekhasot | et | shetei | gulot | hakotarot | asher | al | rosh | ha'amudim
+amudim | shenayim | vehaggulot | vehakotarot | al | rosh | ha'amudim | shetayim | vehasevakhot | shetayim | lekhasot | et | shetei | gulot | hakotarot | asher | al | rosh | ha'amudim
 
 4:13
 ve'et | harimonim | arba | me'ot | lishtei | hasevakhot
@@ -100,15 +97,10 @@ ve'et | hashulchanot | va'aleihem | lechem | hapanim
 ve'et | hamenorot | veneroteihem | leva'aram | kamishpat | lifnei | hadevir | zahav | sagur
 
 4:21
-vehaperach | vehanerot | vehamelkachayim
-zahav
+vehaperach | vehanerot | vehamelkachayim | zahav
 hu | mikhlot | zahav
 
 4:22
-vehamzamerot
-vehamizrakot
-vehakkapot
-vehamachtot
+vehamzamerot | vehamizrakot | vehakkapot | vehamachtot
 zahav | sagur
-ufetach | habayit | daltotav | hapenimiyot | lekodesh | hakodashim | vedaltei | habayit | laheikhal
-zahav
+ufetach | habayit | daltotav | hapenimiyot | lekodesh | hakodashim | vedaltei | habayit | laheikhal | zahav

@@ -39,8 +39,7 @@ shemot | benei | Esav | Elifaz | ben | Adah | eshet | Esav | Re'u'el
 ben | Basemat | eshet | Esav
 
 36:11
-vaiyihyu | benei | Elifaz | Teiman | Omar | Tzefo | Vega'tam
-Ukenaz
+vaiyihyu | benei | Elifaz | Teiman | Omar | Tzefo | Vega'tam | Ukenaz
 
 36:12
 Vetimna | hayetah | filegesh | Le'elifaz | ben | Esav
@@ -67,8 +66,7 @@ eleh | alufei | Elifaz | be'eretz | Edom | eleh | benei | Adah
 ve'eleh | benei | Re'u'el | ben | Esav | aluf | Nachat | aluf | Zerach
 aluf | Shamah
 aluf | Mizah
-eleh | alufei | Re'u'el | be'eretz | Edom | eleh | benei | Vasemat
-eshet | Esav
+eleh | alufei | Re'u'el | be'eretz | Edom | eleh | benei | Vasemat | eshet | Esav
 
 36:18
 ve'eleh | benei | Oholivamah | eshet | Esav
@@ -80,23 +78,18 @@ eleh | venei | Esav | ve'eleh | alufeihem | hu | Edom
 
 36:20
 eleh | venei | Se'ir | hachori
-yoshevei
-ha'aretz | Lotan | Veshoval
+yoshevei | ha'aretz | Lotan | Veshoval
 Vetziv'on | Va'anah
 
 36:21
-Vedishon | Ve'etzer
-Vedishan
+Vedishon | Ve'etzer | Vedishan
 eleh | alufei | hachori | benei | Se'ir | be'eretz | Edom
 
 36:22
 vaiyihyu | venei | Lotan | Chori | Veheimam | va'achot | Lotan | Timna
 
 36:23
-ve'eleh | benei | Shoval | Alvan | Umanachat
-Ve'eival
-Shefo
-Ve'onam
+ve'eleh | benei | Shoval | Alvan | Umanachat | Ve'eival | Shefo | Ve'onam
 
 36:24
 ve'eleh | venei | Tziv'on
@@ -114,8 +107,7 @@ Chemdan | Ve'eshban
 Veyitran | Ukheran
 
 36:27
-eleh | benei | Etzer | Bilhan | Veza'avan
-Va'akan
+eleh | benei | Etzer | Bilhan | Veza'avan | Va'akan
 
 36:28
 eleh | venei | Dishan | Utz | Va'aran
@@ -148,8 +140,7 @@ vaiyimlokh | tachtav | Chusham | me'eretz | hateimani
 36:35
 vaiyamot | Chusham
 vaiyimlokh | tachtav | Hadad | ben | Bedad | hamakeh | et | Midyan | bisdeh | Mo'av
-veshem | iro
-Avit
+veshem | iro | Avit
 
 36:36
 vaiyamot
@@ -166,8 +157,7 @@ Sha'ul | vaiyimlokh | tachtav | Ba'al | Chanan | ben | Akhbor
 36:39
 vaiyamat | Ba'al | Chanan | ben | Akhbor
 vaiyimlokh | tachtav | Hadar
-veshem | iro
-Pa'u
+veshem | iro | Pa'u
 veshem | ishto | Meheitav'el | bat | Matred | bat | Mei | Zahav
 
 36:40

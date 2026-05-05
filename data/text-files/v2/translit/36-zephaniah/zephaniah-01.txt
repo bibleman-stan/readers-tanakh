@@ -1,15 +1,11 @@
 1:1
-devar | Yahweh | asher | hayah | el | Tzefanyah | ben | Kushi | ven | Gedalyah | ben | Amaryah
-ben | Chizkiyah | bimei | Yoshiyahu | ven | Amon | melekh | Yehudah
+devar | Yahweh | asher | hayah | el | Tzefanyah | ben | Kushi | ven | Gedalyah | ben | Amaryah | ben | Chizkiyah | bimei | Yoshiyahu | ven | Amon | melekh | Yehudah
 
 1:2
-asof | asef | kol | me'al | penei | ha'adamah
-ne'um | Yahweh
+asof | asef | kol | me'al | penei | ha'adamah | ne'um | Yahweh
 
 1:3
-asef | adam | uvehemah | asef | of | hashamayim | udegei | haiyam
-vehamakhshelot
-et | haresha'im
+asef | adam | uvehemah | asef | of | hashamayim | udegei | haiyam | vehamakhshelot | et | haresha'im
 vehikhrati | et | ha'adam | me'al | penei | ha'adamah | ne'um | Yahweh
 
 1:4
@@ -76,8 +72,7 @@ mar | tzoreach | sham | gibor
 yom | evrah
 haiyom | hahu
 yom | tzarah | umetzukah | yom | sho'ah | umesho'ah
-yom | choshekh | va'afelah | yom | anan
-va'arafel
+yom | choshekh | va'afelah | yom | anan | va'arafel
 
 1:16
 yom | shofar | uteru'ah | al | he'arim | habetzurot
@@ -91,5 +86,4 @@ ulechumam | kagelalim
 
 1:18
 gam | kaspam | gam | zehavam | lo | yukhal | lehatzilam | beyom | evrat | Yahweh
-uve'esh | kin'ato | te'akhel
-kol | ha'aretz | ki | khalah | akh | nivhalah | ya'aseh | et | kol | yoshevei | ha'aretz
+uve'esh | kin'ato | te'akhel | kol | ha'aretz | ki | khalah | akh | nivhalah | ya'aseh | et | kol | yoshevei | ha'aretz

@@ -1,11 +1,9 @@
 13:1
-vaydaber | Yahweh | el | Mosheh
-lemor
+vaydaber | Yahweh | el | Mosheh | lemor
 
 13:2
 kadesh | li | khol | bekhor | peter | kol | rechem | bivnei | Yisra'el | ba'adam
-uvabehemah | li
-hu
+uvabehemah | li | hu
 
 13:3
 vaiyomer | Mosheh | el | ha'am
@@ -17,14 +15,9 @@ velo | ye'akhel | chametz
 haiyom | atem | yotze'im | bechodesh | ha'aviv
 
 13:5
-vehayah | khi | yevi'akha | Yahweh | el | eretz | hakena'ani
-vehachiti
-veha'emori
-vehachivi
+vehayah | khi | yevi'akha | Yahweh | el | eretz | hakena'ani | vehachiti | veha'emori | vehachivi
 vehayvusi | asher | Nishba | la'avoteikha | latet | lakh
-eretz | zavat | chalav
-udevash
-ve'avadta | et | ha'avodah | hazot | bachodesh | hazeh
+eretz | zavat | chalav | udevash | ve'avadta | et | ha'avodah | hazot | bachodesh | hazeh
 
 13:6
 shiv'at | yamim | tokhal | matzot
@@ -36,8 +29,7 @@ velo | yera'eh | lekha | chametz
 velo | yera'eh | lekha | se'or | bekhol | gevulekha
 
 13:8
-vehigadta | levinkha | baiyom | hahu
-lemor
+vehigadta | levinkha | baiyom | hahu | lemor
 ba'avur | zeh | asah | Yahweh | li
 betzeti | Mimitzrayim
 
@@ -56,8 +48,7 @@ ka'asher | Nishba | lekha
 vela'avoteikha | unetanah | lakh
 
 13:12
-veha'avarta | khol | peter | rechem | Layahweh
-vekhol | peter | sheger | behemah | asher | yihyeh | lekha | hazekharim | Layahweh
+veha'avarta | khol | peter | rechem | Layahweh | vekhol | peter | sheger | behemah | asher | yihyeh | lekha | hazekharim | Layahweh
 
 13:13
 vekhol | peter | chamor | tifdeh | veseh
@@ -67,13 +58,13 @@ vekhol | bekhor | adam | bevaneikha | tifdeh
 
 13:14
 vehayah | ki | yish'alekha | vinkha | machar
-lemor | mah | zot
+lemor
+mah | zot
 ve'amarta | elav | bechozek | yad | hotzi'anu | Yahweh | Mimitzrayim
 mibeit | avadim
 
 13:15
-vayhi | ki | hikshah | far'oh
-leshalechenu
+vayhi | ki | hikshah | far'oh | leshalechenu
 vaiyaharog | Yahweh | kol | bekhor | be'eretz | Mitzrayim | mibekhor | adam
 ve'ad | bekhor | behemah
 al | ken | ani | zoveach | Layahweh | kol | peter | rechem | hazekharim
@@ -97,8 +88,7 @@ vachamushim | alu | venei | Yisra'el | me'eretz | Mitzrayim
 
 13:19
 vaiyikach | Mosheh | et | atzmot | Yosef | imo
-ki | hashbea | hishbia | et | benei | Yisra'el
-lemor
+ki | hashbea | hishbia | et | benei | Yisra'el | lemor
 pakod | yifkod | elohim | etkhem
 veha'alitem | et | atzmotai | mizeh | itekhem
 

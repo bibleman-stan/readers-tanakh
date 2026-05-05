@@ -1,6 +1,5 @@
 40:1
-vaydaber | Yahweh | el | Mosheh
-lemor
+vaydaber | Yahweh | el | Mosheh | lemor
 
 40:2
 beyom | hachodesh | harishon | be'echad | lachodesh | takim | et | mishkan | ohel | mo'ed
@@ -16,8 +15,7 @@ veheveta | et | hamenorah
 veha'aleita | et | neroteiha
 
 40:5
-venatatah | et | mizbach | hazahav | liktoret | lifnei | aron | ha'edut | vesamta | et | masakh | hapetach
-lamishkan
+venatatah | et | mizbach | hazahav | liktoret | lifnei | aron | ha'edut | vesamta | et | masakh | hapetach | lamishkan
 
 40:6
 venatatah | et | mizbach | ha'olah | lifnei | petach | mishkan | ohel | mo'ed
@@ -66,8 +64,7 @@ kekhol | asher | tzivah | Yahweh | oto
 ken | asah
 
 40:17
-vayhi | bachodesh | harishon | bashanah | hashenit | be'echad | lachodesh | hukam
-hamishkan
+vayhi | bachodesh | harishon | bashanah | hashenit | be'echad | lachodesh | hukam | hamishkan
 
 40:18
 vaiyakem | Mosheh | et | hamishkan
@@ -126,12 +123,10 @@ ka'asher | tzivah | Yahweh | et | Mosheh
 40:30
 vaiyasem | et | hakiyor | bein | ohel | mo'ed
 uvein | hamizbeach
-vaiyiten | shamah | mayim
-lerachetzah
+vaiyiten | shamah | mayim | lerachetzah
 
 40:31
-verachatzu | mimenu | Mosheh
-Ve'aharon | uvanav | et | yedeihem | ve'et | ragleihem
+verachatzu | mimenu | Mosheh | Ve'aharon | uvanav | et | yedeihem | ve'et | ragleihem
 
 40:32
 bevo'am | el | ohel | mo'ed
@@ -140,8 +135,7 @@ ka'asher | tzivah | Yahweh | et | Mosheh
 
 40:33
 vaiyakem | et | hechatzer | saviv | lamishkan
-velamizbeach | vaiyiten | et | masakh
-sha'ar | hechatzer | vaykhal | Mosheh | et | hamelakhah
+velamizbeach | vaiyiten | et | masakh | sha'ar | hechatzer | vaykhal | Mosheh | et | hamelakhah
 
 40:34
 vaykhas | he'anan | et | ohel | mo'ed
@@ -161,6 +155,5 @@ ve'im | lo | ye'aleh | he'anan
 velo | yis'u | ad | yom | he'aloto
 
 40:38
-ki | anan | Yahweh | al | hamishkan | yomam
-ve'esh
+ki | anan | Yahweh | al | hamishkan | yomam | ve'esh
 tihyeh | laylah | bo | le'einei | khol | beit | Yisra'el | bekhol | mas'eihem

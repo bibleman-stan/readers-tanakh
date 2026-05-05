@@ -24,8 +24,7 @@ vaiyachanu | Ve'etam | asher | biktzeh | hamidbar
 
 33:7
 vaiyis'u | Me'etam
-vaiyashov | al | Pi | Hachirot | asher | al | penei
-Ba'al | Tzefon | vaiyachanu | lifnei | Migdol
+vaiyashov | al | Pi | Hachirot | asher | al | penei | Ba'al | Tzefon | vaiyachanu | lifnei | Migdol
 
 33:8
 vaiyis'u | mipenei | Hachirot
@@ -36,8 +35,7 @@ vaiyachanu | Bemarah
 33:9
 vaiyis'u | Mimarah
 vaiyavo'u | Eilimah
-Uve'eilim | sheteim | esreh | einot | mayim | veshiv'im | temarim
-vaiyachanu | sham
+Uve'eilim | sheteim | esreh | einot | mayim | veshiv'im | temarim | vaiyachanu | sham
 
 33:10
 vaiyis'u | Me'eilim
@@ -58,8 +56,7 @@ vaiyachanu | Be'alush
 33:14
 vaiyis'u | Me'alush
 vaiyachanu | Birfidim
-velo | hayah | sham | mayim | la'am
-lishtot
+velo | hayah | sham | mayim | la'am | lishtot
 
 33:15
 vaiyis'u | Merefidim
@@ -147,8 +144,7 @@ vaiyis'u | Me'avronah
 vaiyachanu | Be'etzyon | Gaver
 
 33:36
-vaiyis'u | Me'etzyon | Gaver
-vaiyachanu | vemidbar | Tzin | hi | Kadesh
+vaiyis'u | Me'etzyon | Gaver | vaiyachanu | vemidbar | Tzin | hi | Kadesh
 
 33:37
 vaiyis'u | Mikadesh
@@ -193,20 +189,17 @@ vaiyis'u | Midivon | Gad
 vaiyachanu | Be'almon | Divlatayemah
 
 33:47
-vaiyis'u | Me'almon | Divlatayemah
-vaiyachanu | beharei | Ha'avarim | lifnei | Nevo
+vaiyis'u | Me'almon | Divlatayemah | vaiyachanu | beharei | Ha'avarim | lifnei | Nevo
 
 33:48
 vaiyis'u | meharei | Ha'avarim
 vaiyachanu | Be'arvot | Mo'av | al | Yarden | Yerecho
 
 33:49
-vaiyachanu | al | Haiyarden | Mibeit | Hayshimot | ad | Avel | Hashitim | Be'arvot
-Mo'av
+vaiyachanu | al | Haiyarden | Mibeit | Hayshimot | ad | Avel | Hashitim | Be'arvot | Mo'av
 
 33:50
-vaydaber | Yahweh | el | Mosheh | Be'arvot | Mo'av | al | Yarden | Yerecho
-lemor
+vaydaber | Yahweh | el | Mosheh | Be'arvot | Mo'av | al | Yarden | Yerecho | lemor
 
 33:51
 daber | el | benei | Yisra'el

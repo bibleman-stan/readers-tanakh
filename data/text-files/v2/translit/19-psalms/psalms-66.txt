@@ -1,12 +1,10 @@
 66:1
 lamnatzeach | shir | mizmor
-hari'u | lelohim
-kol | ha'aretz
+hari'u | lelohim | kol | ha'aretz
 
 66:2
 zameru | khevod | shemo
-simu | khavod
-tehilato
+simu | khavod | tehilato
 
 66:3
 imru | lelohim | mah | nora | ma'aseikha
@@ -24,9 +22,7 @@ al | benei | adam
 
 66:6
 hafakh | yam | leyabashah
-banahor | ya'avru | veragel
-sham
-nismechah | bo
+banahor | ya'avru | veragel | sham | nismechah | bo
 
 66:7
 moshel | bigvurato | olam
@@ -44,28 +40,23 @@ velo | natan | lamot | raglenu
 
 66:10
 ki | vechantanu | elohim
-tzeraftanu
-kitzrof | kasef
+tzeraftanu | kitzrof | kasef
 
 66:11
 havetanu | vametzudah
 samta | mu'akah | vemateneinu
 
 66:12
-hirkavta | enoosh
-leroshenu
+hirkavta | enoosh | leroshenu
 banu | va'esh | uvamayim
-vatotzi'enu
-larevayah
+vatotzi'enu | larevayah
 
 66:13
 avo | veitekha | ve'olot
 ashalem | lekha | nedarai
 
 66:14
-asher | patzu | sefatai
-vediber | pi
-batzar | li
+asher | patzu | sefatai | vediber | pi | batzar | li
 
 66:15
 olot | mechim | a'aleh | lakh | im | ketoret | eilim
@@ -76,8 +67,7 @@ lekhu | shim'u | va'asaperah | kol | yir'ei | elohim
 asher | asah | lenafshi
 
 66:17
-elav | pi | karati
-veromam
+elav | pi | karati | veromam
 tachat | leshoni
 
 66:18
@@ -91,5 +81,4 @@ bekol | tefilati
 
 66:20
 barukh | elohim
-asher | lo | hesir | tefilati | vechasdo
-me'iti
+asher | lo | hesir | tefilati | vechasdo | me'iti

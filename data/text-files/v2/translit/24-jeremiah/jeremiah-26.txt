@@ -1,12 +1,10 @@
 26:1
 bereshit | mamlekhut | Yehoyakim | ben | Yoshiyahu | melekh | Yehudah
-hayah | hadavar | hazeh | me'et | Yahweh
-lemor
+hayah | hadavar | hazeh | me'et | Yahweh | lemor
 
 26:2
 koh | amar | Yahweh | amod | bachatzar | beit | Yahweh
-vedibarta | al | kol | arei | Yehudah | haba'im
-lehishtachavot | beit | Yahweh | et | kol | hadevarim
+vedibarta | al | kol | arei | Yehudah | haba'im | lehishtachavot | beit | Yahweh | et | kol | hadevarim
 asher | tzivitikha | ledaber | aleihem | al | tigra | davar
 
 26:3
@@ -35,8 +33,7 @@ vekhol | ha'am | et | Yirmeyahu | medaber | et | hadevarim | ha'eleh | beveit | 
 26:8
 vayhi | kekhalot | Yirmeyahu | ledaber | et | kol | asher | tzivah | Yahweh
 ledaber | el | kol | ha'am
-vaiyitpesu | oto | hakohanim | vehanevi'im | vekhol | ha'am
-lemor
+vaiyitpesu | oto | hakohanim | vehanevi'im | vekhol | ha'am | lemor
 mot | tamut
 
 26:9
@@ -52,7 +49,8 @@ vaiyeshevu | befetach | sha'ar | Yahweh | hechadash
 
 26:11
 vaiyomeru | hakohanim | vehanevi'im | el | hasarim
-ve'el | kol | ha'am | lemor | mishpat | mavet | la'ish | hazeh
+ve'el | kol | ha'am | lemor
+mishpat | mavet | la'ish | hazeh
 ki | Niba | el | ha'ir | hazot | ka'asher | shema'tem | be'azeneikhem
 
 26:12
@@ -74,28 +72,23 @@ vekhaiyashar | be'eineikhem
 
 26:15
 akh | yadoa | tede'u | ki | im | memitim | atem | oti
-ki | dam | naki | atem | notenim | aleikhem | ve'el | ha'ir | hazot
-ve'el | yosheveiha
+ki | dam | naki | atem | notenim | aleikhem | ve'el | ha'ir | hazot | ve'el | yosheveiha
 ki | ve'emet | shelachani | Yahweh | aleikhem
 ledaber | be'azeneikhem | et | kol | hadevarim | ha'eleh
 
 26:16
-vaiyomeru | hasarim | vekhol | ha'am | el | hakohanim
-ve'el | hanevi'im
+vaiyomeru | hasarim | vekhol | ha'am | el | hakohanim | ve'el | hanevi'im
 ein | la'ish | hazeh | mishpat | mavet
 ki | beshem | Yahweh | eloheinu
 diber | eleinu
 
 26:17
-vaiyakumu | anashim | miziknei
-ha'aretz | vaiyomeru | el | kol | kehal | ha'am
-lemor
+vaiyakumu | anashim | miziknei | ha'aretz | vaiyomeru | el | kol | kehal | ha'am | lemor
 
 26:18
 Mikhayah | hamorashti | hayah | niba
 bimei | Chizkiyahu | melekh | Yehudah
-vaiyomer | el | kol | am | Yehudah
-lemor
+vaiyomer | el | kol | am | Yehudah | lemor
 koh | amar | Yahweh | tzeva'ot | Tziyon | sadeh | techaresh | Virushalayim | iyim | tihyeh
 vehar | habayit | levamot | ya'ar
 
@@ -129,5 +122,4 @@ vaiyashlekh | et | nivlato | el | kivrei | benei | ha'am
 
 26:24
 akh | yad | Achikam | ben | Shafan
-hayetah | et | Yirmeyahu | levilti | tet | oto | veyad | ha'am
-lahamito
+hayetah | et | Yirmeyahu | levilti | tet | oto | veyad | ha'am | lahamito

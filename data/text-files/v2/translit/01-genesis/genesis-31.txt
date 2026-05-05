@@ -1,6 +1,5 @@
 31:1
-vaiyishma | et | divrei | venei | Lavan
-lemor
+vaiyishma | et | divrei | venei | Lavan | lemor
 lakach | Ya'ako | et | kol | asher | le'avinu
 ume'asher | le'avinu
 asah | et | kol | hakavod | hazeh
@@ -25,8 +24,7 @@ ki | einenu | elai | kitmol | shilshom
 velohei | avi | hayah | imadi
 
 31:6
-ve'atenah
-yeda'ten | ki | bekhol | kochi | avadti | et | avikhen
+ve'atenah | yeda'ten | ki | bekhol | kochi | avadti | et | avikhen
 
 31:7
 va'avikhen | hetel | bi
@@ -40,8 +38,7 @@ ve'im | koh | yomar | akudim | yihyeh | sekharekha
 veyaldu | khol | hatzon | akudim
 
 31:9
-vaiyatzel | elohim | et | mikneh | avikhem
-vaiyiten | li
+vaiyatzel | elohim | et | mikneh | avikhem | vaiyiten | li
 
 31:10
 vayhi | be'et | yachem | hatzon | va'esa | einai
@@ -61,8 +58,7 @@ uverudim | ki | ra'iti | et | kol | asher | Lavan | oseh | lakh
 31:13
 anokhi | ha'el | Beit | El | asher | mashachta | sham | matzevah
 asher | nadarta | li | sham | neder
-atah | kum | tze | min | ha'aretz | hazot
-veshuv | el | eretz | moladtekha
+atah | kum | tze | min | ha'aretz | hazot | veshuv | el | eretz | moladtekha
 
 31:14
 vata'an | Rachel | Vele'ah
@@ -107,8 +103,7 @@ vaiyugad | Lelavan | baiyom | hashelishi | ki | varach | Ya'ako
 
 31:23
 vaiyikach | et | echav | imo
-vaiyirdof | acharav | derekh
-shiv'at | yamim | vaiyadbek | oto | behar | Hagil'ad
+vaiyirdof | acharav | derekh | shiv'at | yamim | vaiyadbek | oto | behar | Hagil'ad
 
 31:24
 vaiyavo | elohim | el | Lavan | ha'arami
@@ -130,12 +125,10 @@ vatenaheg | et | benotai | kishvuyot | charev
 lamah | Nachbeta | livroach | vatigno | oti
 velo | higadta | li
 va'ashalechakha | besimchah
-uveshirim | betof
-uvekhinor
+uveshirim | betof | uvekhinor
 
 31:28
-velo | netashtani | lenashek | levanai
-velivnotai
+velo | netashtani | lenashek | levanai | velivnotai
 atah | hiskalta | aso
 
 31:29
@@ -236,8 +229,7 @@ vayrimeha | matzevah
 31:46
 vaiyomer | Ya'ako | le'echav
 liktu | avanim
-vaiyikchu | avanim
-vaiya'asu | gal
+vaiyikchu | avanim | vaiya'asu | gal
 vaiyokhelu | sham | al | hagal
 
 31:47
@@ -263,9 +255,7 @@ hineh | hagal | hazeh | vehineh | hamatzevah | asher | yariti
 beini | uveinekha
 
 31:52
-ed | hagal | hazeh
-ve'edah
-hamatzevah
+ed | hagal | hazeh | ve'edah | hamatzevah
 im | ani | lo | e'evor | eleikha | et | hagal | hazeh
 ve'im | atah | lo | ta'avor | elai | et | hagal | hazeh
 ve'et | hamatzevah | hazot | lera'ah

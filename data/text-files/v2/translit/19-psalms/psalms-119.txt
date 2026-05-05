@@ -1,6 +1,5 @@
 119:1
-ashrei | temimei | darekh
-haholekhim
+ashrei | temimei | darekh | haholekhim
 betorat | Yahweh
 
 119:2
@@ -20,13 +19,11 @@ achalai | yikonu | derakhai
 lishmor | chukeicha
 
 119:6
-az | lo | evoosh
-behabiti
+az | lo | evoosh | behabiti
 el | kol | mitzvoteikha
 
 119:7
-odkha | beyosher | levav
-belamedi
+odkha | beyosher | levav | belamedi
 mishpetei | tzidkecha
 
 119:8
@@ -34,8 +31,7 @@ et | chukeicha | eshmor
 al | ta'azveni | ad | me'od
 
 119:9
-bameh | yezakeh | na'ar | et | arecho
-lishmor
+bameh | yezakeh | na'ar | et | arecho | lishmor
 kidvarekha
 
 119:10
@@ -44,8 +40,7 @@ al | tashgeni
 mimitzvoteikha
 
 119:11
-belibi | tzafanti | imratekha
-lema'an
+belibi | tzafanti | imratekha | lema'an
 lo | echeta | lakh
 
 119:12
@@ -53,8 +48,7 @@ barukh | atah | Yahweh
 lamedeni | chukeicha
 
 119:13
-bisfatai | siparti
-kol
+bisfatai | siparti | kol
 mishpetei | fikha
 
 119:14
@@ -62,8 +56,7 @@ bederekh | edevoteikha | sasti
 ke'al | kol | hon
 
 119:15
-befikudeicha | asichah
-ve'abitah
+befikudeicha | asichah | ve'abitah
 orechoteikha
 
 119:16
@@ -75,8 +68,7 @@ gemol | al | avdekha | echyeh
 ve'eshmerah | devarekha
 
 119:18
-gal | einai | ve'abitah
-nifla'ot
+gal | einai | ve'abitah | nifla'ot
 mitoratekha
 
 119:19
@@ -89,8 +81,7 @@ garesah | nafshi | leta'avah
 el | mishpateikha | vekhol | et
 
 119:21
-ga'arta | zedim | arurim
-hashogim
+ga'arta | zedim | arurim | hashogim
 mimitzvoteikha
 
 119:22
@@ -116,8 +107,7 @@ derakhai | siparti | vata'aneni
 lamedeni | chukeicha
 
 119:27
-derekh | pikudeicha | havineni
-ve'asichah
+derekh | pikudeicha | havineni | ve'asichah
 benifle'oteikha
 
 119:28
@@ -163,8 +153,7 @@ ha'aver | einai | mere'ot | shav
 bidrakhekha | chaiyeni
 
 119:38
-hakem | le'avdekha | imratekha
-asher
+hakem | le'avdekha | imratekha | asher
 leyir'atekha
 
 119:39
@@ -229,8 +218,7 @@ va'etnecham
 
 119:53
 zal'afah | achazatni | meresha'im
-ozevei
-toratekha
+ozevei | toratekha
 
 119:54
 zemirot | hayu | li | chukeicha
@@ -238,8 +226,7 @@ beveit | megurai
 
 119:55
 zakharti | valaylah | shimkha | Yahweh
-va'eshmerah
-toratekha
+va'eshmerah | toratekha
 
 119:56
 zot | hayetah | li
@@ -260,8 +247,7 @@ va'ashivah | raglai
 el | edoteikha
 
 119:60
-chashti | velo | hitmahmaheti
-lishmor
+chashti | velo | hitmahmaheti | lishmor
 mitzvoteikha
 
 119:61
@@ -276,8 +262,7 @@ al | mishpetei | tzidkecha
 
 119:63
 chaver | ani | lekhol | asher | yere'ukha
-uleshomerei
-pikudeicha
+uleshomerei | pikudeicha
 
 119:64
 chasdekha | Yahweh | mal'ah | ha'aretz
@@ -285,16 +270,14 @@ chukeicha | lamedeni
 
 119:65
 tov | asita | im | avdekha
-Yahweh
-kidvarekha
+Yahweh | kidvarekha
 
 119:66
 tuv | ta'am | vada'at | lamedeni
 ki | vemitzvoteikha | he'emaneti
 
 119:67
-terem | e'eneh | ani | shogeg
-ve'atah
+terem | e'eneh | ani | shogeg | ve'atah
 imratekha | shamareti
 
 119:68
@@ -302,23 +285,19 @@ tov | atah | umetiv
 lamedeni | chukeicha
 
 119:69
-tafelu | alai | sheker | zedim
-ani
+tafelu | alai | sheker | zedim | ani
 bekhol | lev | etzor | pikudeicha
 
 119:70
-tafash | kachelev | libam
-ani
+tafash | kachelev | libam | ani
 toratekha | shi'asha'eti
 
 119:71
-tov | li | khi | uneiti
-lema'an
+tov | li | khi | uneiti | lema'an
 elmad | chukeicha
 
 119:72
-tov | li | torat | pikha
-me'alfei
+tov | li | torat | pikha | me'alfei
 zahav | vakhasef
 
 119:73
@@ -331,8 +310,7 @@ yere'eikha | yir'uni | veyismachu
 ki | lidvarekha | yichalti
 
 119:75
-yada'ti | Yahweh | ki | tzedek | mishpateikha
-ve'emunah
+yada'ti | Yahweh | ki | tzedek | mishpateikha | ve'emunah
 initani
 
 119:76
@@ -341,22 +319,18 @@ ke'imratekha | le'avdekha
 
 119:77
 yevo'uni | rachameikha | ve'echyeh
-ki | toratekha
-sha'ashu'ai
+ki | toratekha | sha'ashu'ai
 
 119:78
 yevoshu | zedim | ki | sheker | ivetuni
-ani
-asiach | befikudeicha
+ani | asiach | befikudeicha
 
 119:79
 yashuvu | li | yere'eikha
-veyode'ei
-edoteikha
+veyode'ei | edoteikha
 
 119:80
-yehi | libi | tamim | bechukeicha
-lema'an
+yehi | libi | tamim | bechukeicha | lema'an
 lo | evoosh
 
 119:81
@@ -364,8 +338,7 @@ kaltah | litshu'atekha | nafshi
 lidvarekha | yichalti
 
 119:82
-kalu | einai | le'imratekha
-lemor
+kalu | einai | le'imratekha | lemor
 matai | tenachameni
 
 119:83
@@ -378,8 +351,7 @@ kamah | yemei | avdekha
 matai | ta'aseh | verodefai | mishpat
 
 119:85
-karu | li | zedim | shichot
-asher
+karu | li | zedim | shichot | asher
 lo | khetoratekha
 
 119:86
@@ -387,14 +359,12 @@ kol | mitzvoteikha | emunah
 sheker | redafuni | azereni
 
 119:87
-kim'at | kiluni | va'aretz
-va'ani
+kim'at | kiluni | va'aretz | va'ani
 lo | azavti | fikuvdeicha
 
 119:88
 kechasdekha | chaiyeni
-ve'eshmerah
-edut | pikha
+ve'eshmerah | edut | pikha
 
 119:89
 le'olam | Yahweh
@@ -411,8 +381,7 @@ lemishpateikha | amedu | haiyom
 ki | hakol | avadeikha
 
 119:92
-lulei | toratekha | sha'ashu'ai
-az
+lulei | toratekha | sha'ashu'ai | az
 avadti | ve'aneyi
 
 119:93
@@ -434,8 +403,7 @@ lekhol | tikhlah | ra'iti | ketz
 rechavah | mitzvatekha | me'od
 
 119:97
-mah | ahavti | toratekha
-kol | haiyom
+mah | ahavti | toratekha | kol | haiyom
 hi | sichati
 
 119:98
@@ -452,32 +420,26 @@ mizekenim | etbonan
 ki | fikudeicha | natzareti
 
 119:101
-mikol | orach | ra | kaliti | raglai
-lema'an
+mikol | orach | ra | kaliti | raglai | lema'an
 eshmor | devarekha
 
 119:102
 mimishpateikha | lo | sareti
-ki | atah
-horetani
+ki | atah | horetani
 
 119:103
 mah | Nimletzu | lechiki | imratekha
 midevash | lefi
 
 119:104
-mipikudeicha | etbonan
-al | ken
+mipikudeicha | etbonan | al | ken
 saneti | kol | orach | shaker
 
 119:105
-ner | leragli | devarekha
-ve'or
-lintivati
+ner | leragli | devarekha | ve'or | lintivati
 
 119:106
-Nishba'ti | va'akaiyemah
-lishmor
+Nishba'ti | va'akaiyemah | lishmor
 mishpetei | tzidkecha
 
 119:107
@@ -517,27 +479,22 @@ lidvarekha | yichalti
 
 119:115
 suru | mimeni | mere'im
-ve'etzerah
-mitzvot | elohai
+ve'etzerah | mitzvot | elohai
 
 119:116
 samekheni | khe'imratekha | ve'echyeh
-ve'al | tevisheni
-misivri
+ve'al | tevisheni | misivri
 
 119:117
 se'adeni | ve'ivashe'ah
 ve'esh'ah | vechukeicha | tamid
 
 119:118
-salita | kol | shogim | mechukeicha
-ki | sheker
-tarmitam
+salita | kol | shogim | mechukeicha | ki | sheker | tarmitam
 
 119:119
 sigim
-hishbata | khol | rish'ei | aretz
-lakhen
+hishbata | khol | rish'ei | aretz | lakhen
 ahavti | edoteikha
 
 119:120
@@ -546,8 +503,7 @@ umimishpateikha | yareti
 
 119:121
 asiti | mishpat | vatzedek
-bal | tanicheni
-le'oshekai
+bal | tanicheni | le'oshekai
 
 119:122
 aro | avdekha | letov
@@ -563,13 +519,11 @@ vechukeicha | lamedeni
 
 119:125
 avdekha | ani | havineni
-ve'ede'ah
-edoteikha
+ve'ede'ah | edoteikha
 
 119:126
 et | la'asot | Layahweh
-heferu
-toratekha
+heferu | toratekha
 
 119:127
 al | ken | ahavti | mitzvoteikha
@@ -580,8 +534,7 @@ al | ken | kol | pikudei | khol | yishareti
 kol | orach | sheker | saneti
 
 119:129
-pela'ot | edevoteikha
-al | ken
+pela'ot | edevoteikha | al | ken
 netzaratam | nafshi
 
 119:130
@@ -593,8 +546,7 @@ pi | fa'arti | va'esh'afah
 ki | lemitzvoteikha | ya'aveti
 
 119:132
-peneh | elai | vechoneni
-kemishpat
+peneh | elai | vechoneni | kemishpat
 le'ohavei | shemekha
 
 119:133
@@ -603,21 +555,18 @@ ve'al | tashlet | bi | khol | aven
 
 119:134
 pedeni | me'oshek | adam
-ve'eshmerah
-pikudeicha
+ve'eshmerah | pikudeicha
 
 119:135
 paneikha | ha'er | be'avdekha
-velamedeni
-et | chukeicha
+velamedeni | et | chukeicha
 
 119:136
 palgei | mayim | yaredu | einai
 al | lo | shameru | toratekha
 
 119:137
-tzadik | atah | Yahweh
-veyashar
+tzadik | atah | Yahweh | veyashar
 mishpateikha
 
 119:138
@@ -643,8 +592,7 @@ vetoratekha | emet
 
 119:143
 tzar | umatzok | metza'uni
-mitzvoteikha
-sha'ashu'ai
+mitzvoteikha | sha'ashu'ai
 
 119:144
 tzedek | edevoteikha | le'olam
@@ -656,16 +604,14 @@ chukeicha | etzorah
 
 119:146
 keraticha | hoshi'eni
-ve'eshmerah
-edoteikha
+ve'eshmerah | edoteikha
 
 119:147
 kidamti | vaneshef | va'ashave'ah
 lidvareikha | yichalti
 
 119:148
-kidemu | einai | ashmurot
-lasiach
+kidemu | einai | ashmurot | lasiach
 be'imratekha
 
 119:149
@@ -719,8 +665,7 @@ Yahweh
 kechasdekha | chaiyeni
 
 119:160
-rosh | devarekha | emet
-ule'olam
+rosh | devarekha | emet | ule'olam
 kol | mishpat | tzidkecha
 
 119:161
@@ -730,8 +675,7 @@ pachad | libi
 
 119:162
 sas | anokhi | al | imratekha
-kemotze
-shalal | rav
+kemotze | shalal | rav
 
 119:163
 sheker | saneti | va'ata'evah
@@ -780,8 +724,7 @@ ki | fikudeicha | vachareti
 
 119:174
 ta'avti | lishu'atekha | Yahweh
-vetoratekha
-sha'ashu'ai
+vetoratekha | sha'ashu'ai
 
 119:175
 techi | nafshi | utehaleka

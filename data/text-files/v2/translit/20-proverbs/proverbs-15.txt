@@ -1,7 +1,5 @@
 15:1
-ma'aneh | rakh | yashiv | chemah
-udevar | etzev
-ya'aleh | af
+ma'aneh | rakh | yashiv | chemah | udevar | etzev | ya'aleh | af
 
 15:2
 leshon | chakhamim | teitiv | da'at
@@ -9,8 +7,7 @@ ufi | khesilim
 yabia | ivelet
 
 15:3
-bekhol | makom | einei | Yahweh
-tzofot
+bekhol | makom | einei | Yahweh | tzofot
 ra'im | vtovim
 
 15:4
@@ -44,18 +41,15 @@ musar | ra | le'ozev | orach
 sone | tokhachat | yamut
 
 15:11
-she'ol | va'avadon | neged | Yahweh
-af
+she'ol | va'avadon | neged | Yahweh | af
 ki | libot | benei | adam
 
 15:12
-lo | ye'ehav | letz | hokheach | lo
-el | chakhamim
+lo | ye'ehav | letz | hokheach | lo | el | chakhamim
 lo | yelekh
 
 15:13
-lev | sameach | yeitiv | panim
-uve'atzevat | lev
+lev | sameach | yeitiv | panim | uve'atzevat | lev
 ruach | nekhe'ah
 
 15:14
@@ -64,8 +58,7 @@ ufenei | khesilim
 yir'eh | ivelet
 
 15:15
-kol | yemei | ani | ra'im
-vetov | lev
+kol | yemei | ani | ra'im | vetov | lev
 mishteh | tamid
 
 15:16
@@ -75,8 +68,7 @@ umehumah | vo
 
 15:17
 tov | aruchat | yarok | ve'ahavah | sham
-mishor | avus
-vesin'ah | vo
+mishor | avus | vesin'ah | vo
 
 15:18
 ish | chemah | yegareh | madon
@@ -94,8 +86,7 @@ bozeh | imo
 
 15:21
 ivelet | simchah | lachasar | lev
-ve'ish | tevunah
-yeyasher | lakhet
+ve'ish | tevunah | yeyasher | lakhet
 
 15:22
 hafer | machashavot | be'ein | sod
@@ -116,9 +107,7 @@ veyatzev
 gevul | almanah
 
 15:26
-to'avat | Yahweh | machshevot | ra
-utehorim
-imrei | no'am
+to'avat | Yahweh | machshevot | ra | utehorim | imrei | no'am
 
 15:27
 okher | beito | botzea | batza
@@ -135,8 +124,7 @@ utefilat | tzadikim | yishma
 
 15:30
 me'or | einayim | yesamach | lev
-shemu'ah | tovah
-tedashen | atzem
+shemu'ah | tovah | tedashen | atzem
 
 15:31
 ozen

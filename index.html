@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="he">
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BJKS0RSVPX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BJKS0RSVPX');
+  // Track SPA hash navigation as pageviews
+  window.addEventListener('hashchange', function() {
+    gtag('event', 'page_view', { page_path: location.hash });
+  });
+</script>
 <title>Tanakh Reader — Hebrew Bible</title>
 <meta name="description" content="A colometric reading edition of the Hebrew Bible. Each line is a self-contained atomic thought-unit — sense-line formatting for oral delivery and comprehension.">
 <meta name="theme-color" content="#1c1f24">

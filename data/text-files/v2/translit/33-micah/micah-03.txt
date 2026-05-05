@@ -1,16 +1,14 @@
 3:1
 va'omar | shim'u | na | rashei | Ya'ako
 uketzinei | beit | Yisra'el
-halo | lakhem | lada'at
-et | hamishpat
+halo | lakhem | lada'at | et | hamishpat
 
 3:2
 sone'ei | tov | ve'ohavei | ra'ah
 gozelei | oram | me'aleihem | ushe'eram | me'al | atzmotam
 
 3:3
-va'asher | akhelu | she'er | ami | ve'oram | me'aleihem | hifshitu
-ve'et | atzmoteihem
+va'asher | akhelu | she'er | ami | ve'oram | me'aleihem | hifshitu | ve'et | atzmoteihem
 pitzechu
 ufaresu | ka'asher | basir
 ukhevasar | betokh | kalachat
@@ -35,11 +33,8 @@ uvoshu | hachozim | vechaferu | hakosemim
 ve'atu | al | safam | kulam | ki | ein | ma'aneh | elohim
 
 3:8
-ve'ulam | anokhi | maleti | khoach | et | ruach | Yahweh
-umishpat
-ugevurah | lehagid | Leya'ako | pish'o
-Uleyisra'el
-chatato
+ve'ulam | anokhi | maleti | khoach | et | ruach | Yahweh | umishpat
+ugevurah | lehagid | Leya'ako | pish'o | Uleyisra'el | chatato
 
 3:9
 shim'u | na | zot | rashei | beit | Ya'ako
@@ -58,8 +53,7 @@ ve'al | Yahweh | yisha'enu | lemor
 halo | Yahweh | bekirbenu | lo | tavo | aleinu | ra'ah
 
 3:12
-lakhen | biglalkhem
-Tziyon
+lakhen | biglalkhem | Tziyon
 sadeh | techaresh
 Virushalim | iyin | tihyeh
 vehar | habayit | levamot | ya'ar

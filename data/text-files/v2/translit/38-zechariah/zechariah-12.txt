@@ -1,7 +1,6 @@
 12:1
 masa | devar | Yahweh | al | Yisra'el
-ne'um | Yahweh | noteh | shamayim | veyosed | aretz
-veyotzer | ruach | adam | bekirbo
+ne'um | Yahweh | noteh | shamayim | veyosed | aretz | veyotzer | ruach | adam | bekirbo
 
 12:2
 hineh | anokhi | sam | et | Yerushalim | saf | ra'al | lekhol | ha'amim | saviv
@@ -24,8 +23,7 @@ amtzah | li | yoshevei | Yerushalim | Bayahweh | tzeva'ot | eloheihem
 
 12:6
 baiyom | hahu | asim | et | alufei | Yehudah | kekhiyor | esh | be'etzim
-ukhelapid | esh | be'amir | ve'akhelu | al | yamin
-ve'al | semol | et | kol | ha'amim | saviv | veyashevah | Yerushalim | od | tachteiha | Birushalim
+ukhelapid | esh | be'amir | ve'akhelu | al | yamin | ve'al | semol | et | kol | ha'amim | saviv | veyashevah | Yerushalim | od | tachteiha | Birushalim
 
 12:7
 vehoshia | Yahweh | et | oholei | Yehudah | barishonah
@@ -41,8 +39,7 @@ vehayah | baiyom | hahu
 avakesh | lehashmid | et | kol | hagoyim | haba'im | al | Yerushalim
 
 12:10
-veshafakhti | al | beit | David
-ve'al | yoshev | Yerushalim | ruach | chen | vetachanunim
+veshafakhti | al | beit | David | ve'al | yoshev | Yerushalim | ruach | chen | vetachanunim
 vehibitu | elai | et | asher | dakaru
 vesafedu | alav | kemisped | al | haiyachid
 vehamer | alav | kehamer | al | habekhor

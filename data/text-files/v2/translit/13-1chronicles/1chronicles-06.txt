@@ -1,19 +1,15 @@
 6:1
-benei | Levi
-Gereshom
+benei | Levi | Gereshom
 Kehat | Umerari
 
 6:2
 ve'eleh | shemot | benei | Gereshom | Livni | Veshim'i
 
 6:3
-uvenei | Kehat | Amram | Veyitzhar
-Vechevron
-Ve'uzi'el
+uvenei | Kehat | Amram | Veyitzhar | Vechevron | Ve'uzi'el
 
 6:4
-benei | Merari | Machli
-Umushi
+benei | Merari | Machli | Umushi
 ve'eleh | mishpechot | halevi | la'avoteihem
 
 6:5
@@ -156,25 +152,18 @@ ve'et | sedeh | ha'ir | ve'et | chatzereiha
 natenu | Lekhalev | ben | Yefuneh
 
 6:42
-velivnei | Aharon | natenu | et | arei | hamiklat | et | Chevron | ve'et | Livnah
-ve'et | migrasheiha
-ve'et | Yatir | ve'et | Eshtemoa
-ve'et | migrasheiha
+velivnei | Aharon | natenu | et | arei | hamiklat | et | Chevron | ve'et | Livnah | ve'et | migrasheiha
+ve'et | Yatir | ve'et | Eshtemoa | ve'et | migrasheiha
 
 6:43
-ve'et | Chilez | ve'et | migrasheiha | et | Devir
-ve'et | migrasheiha
+ve'et | Chilez | ve'et | migrasheiha | et | Devir | ve'et | migrasheiha
 
 6:44
 ve'et | Ashan | ve'et | migrasheiha
-ve'et | Yutah | ve'et | migrasheiha | ve'et | Beit | Shemesh
-ve'et | migrasheiha
+ve'et | Yutah | ve'et | migrasheiha | ve'et | Beit | Shemesh | ve'et | migrasheiha
 
 6:45
-umimateh | Vinyamin | et | Giv'on | ve'et | migrasheiha | et | Geva | ve'et | migrasheiha | ve'et | Alemet | ve'et | migrasheiha
-ve'et | Anatot
-ve'et | migrasheiha
-kol | areihem | shelosh | esreh | ir | bemishpechoteihem
+umimateh | Vinyamin | et | Giv'on | ve'et | migrasheiha | et | Geva | ve'et | migrasheiha | ve'et | Alemet | ve'et | migrasheiha | ve'et | Anatot | ve'et | migrasheiha | kol | areihem | shelosh | esreh | ir | bemishpechoteihem
 
 6:46
 velivnei | Kehat | hanotarim | mimishpachat | hamateh | mimachatzit | mateh | chatzi | Menasheh | bagoral
@@ -184,15 +173,12 @@ arim | aser
 velivnei | Gereshom | lemishpechotam | mimateh | Yisoshkhor
 umimateh | Asher
 umimateh | Naftali
-umimateh | Menasheh | Babashan
-arim
+umimateh | Menasheh | Babashan | arim
 shelosh | esreh
 
 6:48
-livnei | Merari | lemishpechotam | mimateh | Re'uven
-umimateh | Gad
-umimateh | Zevulun | bagoral
-arim
+livnei | Merari | lemishpechotam | mimateh | Re'uven | umimateh | Gad
+umimateh | Zevulun | bagoral | arim
 sheteim | esreh
 
 6:49
@@ -215,13 +201,11 @@ behar | Efrayim | ve'et | Gezer | ve'et | migrasheiha
 
 6:53
 ve'et | Yakeme'am | ve'et | migrasheiha
-ve'et | Beit | Choron
-ve'et | migrasheiha
+ve'et | Beit | Choron | ve'et | migrasheiha
 
 6:54
 ve'et | Aiyalon | ve'et | migrasheiha
-ve'et | Gat | Rimon
-ve'et | migrasheiha
+ve'et | Gat | Rimon | ve'et | migrasheiha
 
 6:55
 umimachatzit | mateh | Menasheh | et | Aner | ve'et | migrasheiha | ve'et | Bil'am
@@ -229,58 +213,38 @@ ve'et | migrasheiha | lemishpachat | livnei | Kehat | hanotarim
 
 6:56
 livnei | Gereshom | mimishpachat | chatzi | mateh | Menasheh
-et | Golan | Babashan
-ve'et | migrasheiha
-ve'et | Ashtarot
-ve'et | migrasheiha
+et | Golan | Babashan | ve'et | migrasheiha | ve'et | Ashtarot | ve'et | migrasheiha
 
 6:57
 umimateh | Yisoshkhar | et | Kedesh | ve'et | migrasheiha | et | Daverat | ve'et | migrasheiha
 
 6:58
-ve'et | Ramot | ve'et | migrasheiha
-ve'et | Anem
-ve'et | migrasheiha
+ve'et | Ramot | ve'et | migrasheiha | ve'et | Anem | ve'et | migrasheiha
 
 6:59
 umimateh | Asher | et | Mashal | ve'et | migrasheiha | ve'et | Avdon | ve'et | migrasheiha
 
 6:60
-ve'et | Chukok | ve'et | migrasheiha
-ve'et | Recho
-ve'et | migrasheiha
+ve'et | Chukok | ve'et | migrasheiha | ve'et | Recho | ve'et | migrasheiha
 
 6:61
-umimateh | Naftali | et | Kedesh | Bagalil | ve'et | migrasheiha | ve'et | Chamon | ve'et | migrasheiha
-ve'et | Kiryatayim
-ve'et | migrasheiha
+umimateh | Naftali | et | Kedesh | Bagalil | ve'et | migrasheiha | ve'et | Chamon | ve'et | migrasheiha | ve'et | Kiryatayim | ve'et | migrasheiha
 
 6:62
 livnei | Merari | hanotarim | mimateh | Zevulun
 et | Yakene'am | ve'et | migrasheiha | et | Kartah | ve'et | migrasheiha | et | Rimono
-ve'et | migrasheiha | et | Tavor
-ve'et | migrasheiha
+ve'et | migrasheiha | et | Tavor | ve'et | migrasheiha
 
 6:63
 ume'ever | Leyarden | Yerecho | lemizrach | Haiyarden | mimateh | Re'uven
-et | Betzer | bamidbar
-ve'et | migrasheiha
-ve'et | Yahtzah
-ve'et | migrasheiha
+et | Betzer | bamidbar | ve'et | migrasheiha | ve'et | Yahtzah | ve'et | migrasheiha
 
 6:64
-ve'et | Kedemot | ve'et | migrasheiha
-ve'et | Meifa'at
-ve'et | migrasheiha
+ve'et | Kedemot | ve'et | migrasheiha | ve'et | Meifa'at | ve'et | migrasheiha
 
 6:65
 umimateh | Gad
-et | Ramot | Bagil'ad
-ve'et | migrasheiha
-ve'et | Machanayim
-ve'et | migrasheiha
+et | Ramot | Bagil'ad | ve'et | migrasheiha | ve'et | Machanayim | ve'et | migrasheiha
 
 6:66
-ve'et | Cheshbon | ve'et | migrasheiha
-ve'et | Ya'zeir
-ve'et | migrasheiha
+ve'et | Cheshbon | ve'et | migrasheiha | ve'et | Ya'zeir | ve'et | migrasheiha

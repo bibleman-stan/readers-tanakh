@@ -12,7 +12,8 @@ hineh | hamelekh | bokheh | vaiyit'abel | al | Avshalom
 19:3
 vatehi | hateshu'ah | baiyom | hahu | le'evel | lekhol | ha'am
 ki | shama | ha'am | baiyom | hahu
-lemor | Ne'etzav | hamelekh | al | beno
+lemor
+Ne'etzav | hamelekh | al | beno
 
 19:4
 vaiyitganev | ha'am | baiyom | hahu
@@ -37,8 +38,7 @@ le'ahavah | et | sone'eikha | velisno
 et | ohaveikha
 ki | higadta | haiyom | ki | ein | lekha | sarim | va'avadim
 ki | yada'ti | haiyom | ki | lo | Avshalom | chai
-vekhulanu | haiyom | metim
-ki | az
+vekhulanu | haiyom | metim | ki | az
 yashar | be'eineikha
 
 19:8
@@ -56,7 +56,8 @@ Veyisra'el | nas | ish | le'ohalav
 
 19:10
 vayhi | khol | ha'am | nadon | bekhol | shivtei | Yisra'el
-lemor | hamelekh | hitzilanu | mikaf | oyeveinu | vehu | miletanu | mikaf | pelishtim
+lemor
+hamelekh | hitzilanu | mikaf | oyeveinu | vehu | miletanu | mikaf | pelishtim
 ve'atah | barach | min | ha'aretz | me'al | Avshalom
 
 19:11
@@ -66,8 +67,7 @@ ve'atah | lamah | atem | macharishim | lehashiv | et | hamelekh
 19:12
 vehamelekh | David | shalach | el | Tzadok
 ve'el | Evyatar | hakohanim | lemor
-daberu | el | ziknei | Yehudah
-lemor
+daberu | el | ziknei | Yehudah | lemor
 lamah | tihyu | acharonim | lehashiv | et | hamelekh | el | beito
 udevar | kol | Yisra'el | ba | el | hamelekh | el | beito
 
@@ -100,8 +100,7 @@ likrat | hamelekh | David
 19:18
 ve'elef | ish | imo | Mibinyamin
 Vetziva | na'ar | beit | Sha'ul
-vachameshet | asar | banav | ve'esrim | avadav
-ito
+vachameshet | asar | banav | ve'esrim | avadav | ito
 vetzalechu | Haiyarden
 lifnei | hamelekh
 
@@ -169,8 +168,7 @@ veliz'ok | od | el | hamelekh
 
 19:30
 vaiyomer | lo | hamelekh
-lamah | tedaber | od
-devareikha | amarti
+lamah | tedaber | od | devareikha | amarti
 atah | Vetziva | tachleku | et | hasadeh
 
 19:31

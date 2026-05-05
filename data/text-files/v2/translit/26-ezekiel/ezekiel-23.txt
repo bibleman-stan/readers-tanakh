@@ -1,6 +1,5 @@
 23:1
-vayhi | devar | Yahweh | elai
-lemor
+vayhi | devar | Yahweh | elai | lemor
 
 23:2
 ben | adam | shetayim | nashim | benot | em | achat
@@ -13,8 +12,7 @@ vesham | isu | dadei | betuleihen
 23:4
 ushemotan | Oholah | hagedolah | Ve'oholivah | achotah
 vatihyeinah | li
-vateladnah | banim | uvanot
-ushemotan
+vateladnah | banim | uvanot | ushemotan
 Shomeron | Oholah
 Virushalim | Oholivah
 
@@ -23,11 +21,8 @@ vatizen | Oholah
 tachtai | vata'gav | al | me'ahaveiha | el | Ashur | kerovim
 
 23:6
-levushei | tekhelet | pachot | useganim | bachurei | chemed
-kulam
-parashim
-rokhevei
-susim
+levushei | tekhelet | pachot | useganim | bachurei | chemed | kulam | parashim
+rokhevei | susim
 
 23:7
 vatiten | taznuteiha | aleihem | mivchar | benei | Ashur | kulam
@@ -45,8 +40,7 @@ beyad | benei | Ashur | asher | agevah | aleihem
 
 23:10
 hemah | gilu | ervatah | baneiha
-uvenoteiha | lakachu
-ve'otah
+uvenoteiha | lakachu | ve'otah
 bacherev | haragu | vatehi | shem | lanashim
 ushefutim | asu | vah
 
@@ -55,10 +49,8 @@ vatere | achotah | Oholivah
 vatashchet | agvatah | mimenah | ve'et | taznuteiha | mizenunei | achotah
 
 23:12
-el | benei | Ashur | agavah | pachot | useganim | kerovim | levushei | mikhlol
-parashim
-rokhevei | susim | bachurei | chemed
-kulam
+el | benei | Ashur | agavah | pachot | useganim | kerovim | levushei | mikhlol | parashim
+rokhevei | susim | bachurei | chemed | kulam
 
 23:13
 va'ere
@@ -80,8 +72,7 @@ vatishlach | mal'akhim | aleihem | Kasdimah
 
 23:17
 vaiyavo'u | eleiha | venei | Vavel | lemishkav | dodim
-vaytame'u | otah | betaznutam
-vatitma | vam
+vaytame'u | otah | betaznutam | vatitma | vam
 vateka | nafshah | mehem
 
 23:18
@@ -96,8 +87,7 @@ lizkor | et | yemei | ne'ureiha | asher | zanetah | be'eretz | Mitzrayim
 
 23:20
 vata'gevah | al | pilagsheihem | asher | besar | chamorim | besaram
-vezirmat | susim
-zirmatam
+vezirmat | susim | zirmatam
 
 23:21
 vatifkedi | et | zimat | ne'urayikh
@@ -113,8 +103,7 @@ benei | Vavel
 vekhol | Kasdim | Pekod | Veshoa | Vekoa
 kol | benei | Ashur
 otam | bachurei | chemed | pachot | useganim | kulam | shalishim | ukeru'im
-rokhevei | susim
-kulam
+rokhevei | susim | kulam
 
 23:24
 uva'u | alayikh | hotzen | rekhev | vegalgal
@@ -131,8 +120,7 @@ hemah | banayikh | uvenotayikh | yikachu
 ve'acharitekh | te'akhel | ba'esh
 
 23:26
-vehifshitukh
-et | begadayikh | velakechu | kelei | tif'artekh
+vehifshitukh | et | begadayikh | velakechu | kelei | tif'artekh
 
 23:27
 vehishbati | zimatekh | mimekh | ve'et | zenutekh | me'eretz | Mitzrayim
@@ -146,8 +134,7 @@ beyad | asher | nake'ah | nafshekh | mehem
 
 23:29
 ve'asu | otakh | besin'ah | velakechu | kol | yegi'ekh | va'azavukh
-eirom | ve'eryah | veniglah | ervat | zenunayikh
-vezimatekh | vetaznutayikh
+eirom | ve'eryah | veniglah | ervat | zenunayikh | vezimatekh | vetaznutayikh
 
 23:30
 asoh | eleh | lakh | biznotekh | acharei | goyim
@@ -192,8 +179,7 @@ chilelu
 
 23:39
 uveshachatam | et | beneihem | legiluleihem
-vaiyavo'u | el | mikdashi | baiyom | hahu
-lechalelo
+vaiyavo'u | el | mikdashi | baiyom | hahu | lechalelo
 vehineh | khoh | asu | betokh | beiti
 
 23:40
@@ -215,28 +201,23 @@ va'ateret | tif'eret | al | rasheihen
 
 23:43
 va'omar | labalah | ni'ufim
-ata | yiznuh | taznuteha
-vahi
+ata | yiznuh | taznuteha | vahi
 
 23:44
-vaiyavo | eleiha | kevo | el | ishah | zonah | ken | ba'u | el | Oholah
-ve'el | Oholivah
+vaiyavo | eleiha | kevo | el | ishah | zonah | ken | ba'u | el | Oholah | ve'el | Oholivah
 ishot | hazimah
 
 23:45
-va'anashim | tzadikim | hemah | yishpetu | othem | mishpat | no'afot
-umishpat | shofekhot | dam
+va'anashim | tzadikim | hemah | yishpetu | othem | mishpat | no'afot | umishpat | shofekhot | dam
 ki | no'afot | henah | vedam | bideihen
 
 23:46
 ki | koh | amar | Adonai | Yahweh
-ha'aleh | aleihem | kahal | venaton | ethen | leza'avah
-velavaz
+ha'aleh | aleihem | kahal | venaton | ethen | leza'avah | velavaz
 
 23:47
 veragemu | aleihen | even | kahal | uvare | othen | becharvotam
-beneihem | uvenoteihem | yaharogu
-uvateihen
+beneihem | uvenoteihem | yaharogu | uvateihen
 ba'esh | yisrofu
 
 23:48

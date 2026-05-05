@@ -1,10 +1,7 @@
 50:1
-mizmor
-Le'asaf
+mizmor | Le'asaf
 el | elohim | Yahweh
-diber | vaiyikra | aretz
-mimizracho | shemesh
-ad | mevo'o
+diber | vaiyikra | aretz | mimizracho | shemesh | ad | mevo'o
 
 50:2
 Mitziyon | mikhlal | yofi
@@ -13,13 +10,11 @@ elohim | hofia
 50:3
 yavo | eloheinu
 ve'al | yecherash
-esh | lefanav | tokhel
-usevivav
+esh | lefanav | tokhel | usevivav
 Nis'arah | me'od
 
 50:4
-yikra | el | hashamayim | me'al
-ve'el | ha'aretz
+yikra | el | hashamayim | me'al | ve'el | ha'aretz
 ladin | amo
 
 50:5
@@ -41,23 +36,18 @@ ve'oloteikha | lenegdi | tamid
 
 50:9
 lo | ekach | mibeitekha | far
-mimikhle'oteikha
-atudim
+mimikhle'oteikha | atudim
 
 50:10
-ki | li | khol | chaytov | ya'ar
-behemot
-beharei | alef
+ki | li | khol | chaytov | ya'ar | behemot | beharei | alef
 
 50:11
 yada'ti | kol | of | harim
-veziz | sadai
-imadi
+veziz | sadai | imadi
 
 50:12
 im | er'av | lo | omar | lakh
-ki | li | tevel
-umelo'ah
+ki | li | tevel | umelo'ah
 
 50:13
 ha'okhal | besar | abirim
@@ -92,8 +82,7 @@ tatzmid | mirmah
 
 50:20
 teshev | be'achikha | tedaber
-beven | imekha
-titen | dofi
+beven | imekha | titen | dofi
 
 50:21
 eleh | asita | vehecherashti

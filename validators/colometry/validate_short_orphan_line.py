@@ -742,8 +742,13 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
         brief = f"single-token orphan line: '{bare}' ({bare})"
         annotation = (
             "Single-token line that is not a sentence-final verb, classical comma, "
-            "or vocative (M4 Fragmented Atomic Thought-Unit). Candidate for merge "
-            "if the token fails to constitute an atomic thought on its own."
+            "vocative, divine name, or discourse particle (filtered upstream). "
+            "By construction this single token CANNOT constitute an atomic thought "
+            "on its own — it is the verb's complement / object / PP / parallel "
+            "restatement stranded across the sense-line break. M4 merges with "
+            "prior or next line. Promoted from REVIEW to STRONG 2026-05-04 per "
+            "Stan's mantra: bias is MERGE; REVIEW-REQUIRED reserved for genuinely "
+            "ambiguous edges only. Walk-back via revert if mis-applied."
         )
 
         findings.append({
@@ -751,7 +756,7 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
             "file_rel": str(path.relative_to(REPO_ROOT)).replace("\\", "/"),
             "line_num": line_no,
             "rule": "M4/orphan-line-atomic-thought",
-            "severity": "REVIEW-REQUIRED",
+            "severity": "STRONG-MERGE-CANDIDATE",
             "token": bare,
             "prior_context": prior_context,
             "next_context": next_context,
@@ -832,9 +837,20 @@ def main():
         findings_json = []
         for f in all_findings:
             sev = f["severity"]
-            applied_action = (
-                "merge_with_next" if sev == "STRONG-MERGE-CANDIDATE" else None
-            )
+            # Action direction is rule-specific:
+            # - M4/subject-pronoun-orphan: pronoun on line N, finite verb on N+1
+            #   → merge_with_next (pronoun + verb co-locate on N).
+            # - M4/orphan-line-atomic-thought: single-token orphan (PP/A1/etc.)
+            #   typically follows a content line N-1 that needs the orphan as its
+            #   complement → merge_with_previous (orphan absorbed into N-1).
+            #   Cross-verse boundary protection lives in apply_validators.
+            if sev == "STRONG-MERGE-CANDIDATE":
+                if f["rule"] == "M4/subject-pronoun-orphan":
+                    applied_action = "merge_with_next"
+                else:
+                    applied_action = "merge_with_previous"
+            else:
+                applied_action = None
             findings_json.append({
                 "file": f["file_rel"],
                 "line": f["line_num"],

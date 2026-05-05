@@ -5,8 +5,7 @@ ve'et | lekhol | chefetz | tachat | hashamayim
 3:2
 et | laledet
 ve'et | lamut
-et | lata'at
-ve'et
+et | lata'at | ve'et
 la'akor | natua
 
 3:3
@@ -20,11 +19,9 @@ et | sefod
 ve'et | rekod
 
 3:5
-et | lehashlikh | avanim
-ve'et
+et | lehashlikh | avanim | ve'et
 kenos | avanim
-et | lachavok
-ve'et
+et | lachavok | ve'et
 lirchok | mechabek
 
 3:6
@@ -71,8 +68,7 @@ umimenu | ein | ligroa
 veha'elohim | asah | sheiyir'u | milefanav
 
 3:15
-mah | shehayah | kevar | hu | va'asher
-lihyot
+mah | shehayah | kevar | hu | va'asher | lihyot
 kevar | hayah
 veha'elohim | yevakesh | et | nirdaf
 
@@ -87,8 +83,7 @@ yishpot | ha'elohim
 ki | et | lekhol | chefetz | ve'al | kol | hama'aseh | sham
 
 3:18
-amarti | ani | belibi | al | divrat | benei | ha'adam
-levaram
+amarti | ani | belibi | al | divrat | benei | ha'adam | levaram
 ha'elohim | velir'ot
 shehem | behemah | hemah | lahem
 
@@ -110,7 +105,5 @@ veruach | habehemah
 haiyoredet | hi | lematah | la'aretz
 
 3:22
-vera'iti | ki | ein | tov | me'asher | yismach | ha'adam | bema'asav
-ki | hu
-chelko
+vera'iti | ki | ein | tov | me'asher | yismach | ha'adam | bema'asav | ki | hu | chelko
 ki | mi | yevi'enu | lir'ot | bemeh | sheiyihyeh | acharav

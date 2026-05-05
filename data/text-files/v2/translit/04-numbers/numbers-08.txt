@@ -1,6 +1,5 @@
 8:1
-vaydaber | Yahweh | el | Mosheh
-lemor
+vaydaber | Yahweh | el | Mosheh | lemor
 
 8:2
 daber | el | Aharon
@@ -18,8 +17,7 @@ kamar'eh | asher | her'ah | Yahweh | et | Mosheh
 ken | asah | et | hamenorah
 
 8:5
-vaydaber | Yahweh | el | Mosheh
-lemor
+vaydaber | Yahweh | el | Mosheh | lemor
 
 8:6
 kach | et | halviyim | mitokh | benei | Yisra'el
@@ -33,8 +31,7 @@ vekhibesu | vigdeihem
 vehiteharu
 
 8:8
-velakechu | par | ben | bakar
-uminchato | solet | belulah | vashamen
+velakechu | par | ben | bakar | uminchato | solet | belulah | vashamen
 ufar | sheni | ven | bakar | tikach | lechatat
 
 8:9
@@ -102,8 +99,7 @@ vaiyitchate'u | halviyim
 vaykhabesu | bigdeihem
 vaiyanef | Aharon | otam | tenufah
 lifnei | Yahweh
-vaykhaper | aleihem | Aharon
-letaharam
+vaykhaper | aleihem | Aharon | letaharam
 
 8:22
 ve'acharei | khen | ba'u | halviyim | la'avod | et | avodatam | be'ohel | mo'ed
@@ -112,8 +108,7 @@ velifnei | vanav
 ka'asher | tzivah | Yahweh | et | Mosheh | al | halviyim | ken | asu | lahem
 
 8:23
-vaydaber | Yahweh | el | Mosheh
-lemor
+vaydaber | Yahweh | el | Mosheh | lemor
 
 8:24
 zot | asher | lalviyim
@@ -126,7 +121,6 @@ velo | ya'avod | od
 
 8:26
 vesheret | et | echav | be'ohel | mo'ed
-lishmor | mishmeret
-va'avodah
+lishmor | mishmeret | va'avodah
 lo | ya'avod
 kakhah | ta'aseh | lalviyim | bemishmerotam

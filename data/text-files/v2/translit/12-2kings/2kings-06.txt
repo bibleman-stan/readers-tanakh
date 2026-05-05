@@ -17,8 +17,7 @@ itam | vaiyavo'u | Haiyardenah
 vaiyigzeru | ha'etzim
 
 6:5
-vayhi | ha'echad | mapil | hakorah | ve'et | habarzel
-nafal | el | hamayim
+vayhi | ha'echad | mapil | hakorah | ve'et | habarzel | nafal | el | hamayim
 vaiyitz'ak | vaiyomer | ahah | adoni
 vehu | sha'ul
 
@@ -37,11 +36,11 @@ vaiyikachehu
 
 6:8
 umelekh | Aram | hayah | nilcham | Beyisra'el
-vaiyiva'atz | el | avadav | lemor | el | mekom | peloni | almoni | tachanoti
+vaiyiva'atz | el | avadav | lemor
+el | mekom | peloni | almoni | tachanoti
 
 6:9
-vaiyishlach | ish | ha'elohim | el | melekh | Yisra'el
-lemor
+vaiyishlach | ish | ha'elohim | el | melekh | Yisra'el | lemor
 hishamer | me'avor | hamakom | hazeh | ki | sham | Aram | nechitim
 
 6:10
@@ -68,14 +67,12 @@ vaiyugad | lo | lemor
 hineh | Vedotan
 
 6:14
-vaiyishlach | shamah | susim | verekhev
-vechayil | kaved
+vaiyishlach | shamah | susim | verekhev | vechayil | kaved
 vaiyavo'u | laylah
 vaiyakifu | al | ha'ir
 
 6:15
-vaiyashkem | mesharet | ish | ha'elohim
-lakum
+vaiyashkem | mesharet | ish | ha'elohim | lakum
 vaiyetze
 vehineh | chayil | sovev | et | ha'ir
 vesus | varakhev
@@ -85,8 +82,7 @@ eikhah | na'aseh
 
 6:16
 vaiyomer | al | tira
-ki | rabim | asher | itanu | me'asher
-otam
+ki | rabim | asher | itanu | me'asher | otam
 
 6:17
 vaiyitpalel | Elisha
@@ -122,8 +118,7 @@ vaiyomer
 lo | takeh | ha'asher | shavita | becharbekha
 uvekashtecha
 atah | makeh
-sim | lechem
-vamayim | lifneihem | veyokhelu | veyishtu
+sim | lechem | vamayim | lifneihem | veyokhelu | veyishtu
 veyelekhu | el | adoneihem
 
 6:23
@@ -177,8 +172,7 @@ vekhoh | yosif
 im | ya'amod | rosh | Elisha | ben | Shafat | alav | haiyom
 
 6:32
-Ve'elisha | yoshev | beveito
-vehazekenim
+Ve'elisha | yoshev | beveito | vehazekenim
 yoshevim | ito
 vaiyishlach | ish | milefanav | beterem | yavo | hamal'akh | elav | vehu | amar | el | hazekenim | hare'item | ki | shalach | ben | hamratzeach | hazeh
 lehasir | et | roshi

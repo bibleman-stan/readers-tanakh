@@ -1,16 +1,12 @@
 113:1
 halu | Yah | halu | avdei | Yahweh
-halu
-et | shem | Yahweh
+halu | et | shem | Yahweh
 
 113:2
-yehi | shem | Yahweh | mevorakh
-me'atah
-ve'ad | olam
+yehi | shem | Yahweh | mevorakh | me'atah | ve'ad | olam
 
 113:3
-mimizrach | shemesh | ad | mevo'o
-mehulal
+mimizrach | shemesh | ad | mevo'o | mehulal
 shem | Yahweh
 
 113:4
@@ -26,8 +22,7 @@ hamashpili | lir'ot
 bashamayim | uva'aretz
 
 113:7
-mekimi | me'afar | dal
-me'ashpot
+mekimi | me'afar | dal | me'ashpot
 yarim | evyon
 
 113:8
@@ -36,5 +31,4 @@ im | nedivei | amo
 
 113:9
 moshivi | akeret | habayit
-em | habanim | semechah
-halu | Yah
+em | habanim | semechah | halu | Yah

@@ -1,11 +1,9 @@
 5:1
-vaydaber | Yahweh | el | Mosheh
-lemor
+vaydaber | Yahweh | el | Mosheh | lemor
 
 5:2
 tzav | et | benei | Yisra'el
-vishalechu | min | hamachaneh | kol | tzarua
-vekhol | zav
+vishalechu | min | hamachaneh | kol | tzarua | vekhol | zav
 vekhol | tame | lanafesh
 
 5:3
@@ -18,8 +16,7 @@ vayshalechu | otam | el | michutz | lamachaneh
 ka'asher | diber | Yahweh | el | Mosheh | ken | asu | benei | Yisra'el
 
 5:5
-vaydaber | Yahweh | el | Mosheh
-lemor
+vaydaber | Yahweh | el | Mosheh | lemor
 
 5:6
 daber | el | benei | Yisra'el
@@ -46,8 +43,7 @@ lo | yihyu | ish | asher | yiten | lakohen
 lo | yihyeh
 
 5:11
-vaydaber | Yahweh | el | Mosheh
-lemor
+vaydaber | Yahweh | el | Mosheh | lemor
 
 5:12
 daber | el | benei | Yisra'el
@@ -58,15 +54,13 @@ uma'alah | vo | ma'al
 veshakhav | ish | otah | shikhvat | zera
 vene'lam | me'einei | ishah
 venisterah
-vehi | Nitma'ah | ve'ed | ein | bah
-vehiv
+vehi | Nitma'ah | ve'ed | ein | bah | vehiv
 lo | Nitpasah
 
 5:14
 ve'avar | alav | ruach | kin'ah | vekine | et | ishto
 vehiv | Nitma'ah
-ov | avar | alav | ruach | kin'ah | vekine | et | ishto
-vehi
+ov | avar | alav | ruach | kin'ah | vekine | et | ishto | vehi
 lo | Nitma'ah
 
 5:15
@@ -106,8 +100,7 @@ vaiyiten | ish | bokh | et | shekhaveto | mibal'adei | ishekh
 vehishbia | hakohen | et | ha'ishah | bishvu'at | ha'alah
 ve'amar | hakohen | la'ishah | yiten | Yahweh | otakh | le'alah
 velishvu'ah | betokh | amekh | betet | Yahweh | et | yerekhekh | nofelet
-ve'et | bitnekh
-tzavah
+ve'et | bitnekh | tzavah
 
 5:22
 uva'u | hamayim | ham'arerim | ha'eleh | beme'ayikh

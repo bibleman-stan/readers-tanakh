@@ -1,13 +1,9 @@
 10:1
-mishlei
-Shelomoh
-ben | chakhom | yesamach | av
-uven | kesil
+mishlei | Shelomoh | ben | chakhom | yesamach | av | uven | kesil
 tugat | imo
 
 10:2
-lo | yo'ilu | otzrot | resha
-utzedakah
+lo | yo'ilu | otzrot | resha | utzedakah
 tatzil | mimavet
 
 10:3
@@ -59,13 +55,11 @@ ve'al | kol | pesha'im
 tekhaseh | ahavah
 
 10:13
-besiftei | navon | timatze | chokhmah
-veshevet
+besiftei | navon | timatze | chokhmah | veshevet
 legev | chasar | lev
 
 10:14
-chakhamim | yitzpenu | da'at
-ufi | evil
+chakhamim | yitzpenu | da'at | ufi | evil
 mechitah | kerovah
 
 10:15
@@ -94,8 +88,7 @@ kesef | nivchor | leshon | tzadik
 lev | resha'im | kim'at
 
 10:21
-siftei | tzadik | yir'u | rabim
-ve'evilim
+siftei | tzadik | yir'u | rabim | ve'evilim
 bachasar | lev | yamutu
 
 10:22
@@ -103,8 +96,7 @@ birkat | Yahweh | hi | ta'ashir
 velo | yosif | etzev | imah
 
 10:23
-kischok | likhsil | asot | zimah
-vechakhemah
+kischok | likhsil | asot | zimah | vechakhemah
 le'ish | tevunah
 
 10:24
@@ -112,15 +104,13 @@ megorat | rasho | hi | tevo'enu
 veta'avat | tzadikim | yiten
 
 10:25
-ka'avor | sufah | ve'ein | rasha
-vetzadik
+ka'avor | sufah | ve'ein | rasha | vetzadik
 yesod | olam
 
 10:26
 kachometz | lashinayim
 vekhe'ashan | la'einayim
-ken | he'atzel
-lesholechav
+ken | he'atzel | lesholechav
 
 10:27
 yir'at | Yahweh | tosif | yamim
@@ -131,13 +121,11 @@ tochelet | tzadikim | simchah
 vetikvat | resha'im | toved
 
 10:29
-ma'oz | latom | derekh | Yahweh
-umechitah
+ma'oz | latom | derekh | Yahweh | umechitah
 lefo'alei | aven
 
 10:30
-tzadik | le'olam | bal | yimot
-uresha'im
+tzadik | le'olam | bal | yimot | uresha'im
 lo | yishkenu | aretz
 
 10:31
@@ -147,5 +135,4 @@ tikaret
 
 10:32
 siftei | tzadik | yede'un | ratzon
-ufi | resha'im
-tahpukhot
+ufi | resha'im | tahpukhot

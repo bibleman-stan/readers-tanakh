@@ -10,8 +10,7 @@ el | divrei | Yahweh | asher | diber | beyad | Yirmeyahu | hanavi
 37:3
 vaiyishlach | hamelekh | Tzidkiyahu | et | Yehukhal | ben | Shelemyah
 ve'et | Tzefanyahu | ven | Ma'aseyah | hakohen | el | Yirmeyahu | hanavi | lemor
-hitpalel | na | va'adenu | el | Yahweh
-eloheinu
+hitpalel | na | va'adenu | el | Yahweh | eloheinu
 
 37:4
 Veyirmeyahu | ba | veyotze | betokh | ha'am
@@ -23,8 +22,7 @@ vaiyishme'u | hakasdim | hatzarim | al | Yerushalim | et | shim'am
 vaiye'alu | me'al | Yerushalim
 
 37:6
-vayhi | devar | Yahweh | el | Yirmeyahu | hanavi
-lemor
+vayhi | devar | Yahweh | el | Yirmeyahu | hanavi | lemor
 
 37:7
 koh | amar | Yahweh | elohei | Yisra'el | koh | tomeru | el | melekh | Yehudah
@@ -37,8 +35,7 @@ veshavu | hakasdim | venilchamu | al | ha'ir | hazot | ulekhaduha
 userafuha | va'esh
 
 37:9
-koh | amar | Yahweh | al | tashi'u | nafshoteikhem
-lemor
+koh | amar | Yahweh | al | tashi'u | nafshoteikhem | lemor
 halokh | yelekhu | me'aleinu | hakasdim | ki | lo
 yelekhu
 
@@ -52,15 +49,15 @@ vesarefu | et | ha'ir | hazot | ba'esh
 vehayah | behe'alot | cheil | hakasdim | me'al | Yerushalim | mipenei | cheil | par'oh
 
 37:12
-vaiyetze | Yirmeyahu | Mirushalim
-lalekhet
+vaiyetze | Yirmeyahu | Mirushalim | lalekhet
 eretz | Binyamin | lachalik | misham | betokh | ha'am
 
 37:13
 vayhi | hu | besha'ar | Binyamin | vesham | ba'al | pekidut
 ushemo | Yir'iyaih
 ben | Shelemyah | ben | Chananyah | vaiyitpos | et | Yirmeyahu | hanavi
-lemor | el | hakasdim
+lemor
+el | hakasdim
 atah | nofel
 
 37:14
@@ -82,8 +79,7 @@ ve'el | hachanuyot | vaiyeshev | sham | Yirmeyahu | yamim | rabim
 37:17
 vaiyishlach | hamelekh | Tzidkiyahu | vaiyikachehu | vaiyish'alehu | hamelekh | beveito | baseter
 vaiyomer | hayesh | davar | me'et | Yahweh
-vaiyomer | Yirmeyahu
-yesh
+vaiyomer | Yirmeyahu | yesh
 vaiyomer
 beyad | melekh | Bavel | tinaten
 

@@ -1,7 +1,6 @@
 10:1
 vaiyakam | acharei | Avimelekh
-lehoshia | et | Yisra'el | Tola | ben | Pu'ah | ben | Dodo
-ish | Yisoshkhar
+lehoshia | et | Yisra'el | Tola | ben | Pu'ah | ben | Dodo | ish | Yisoshkhar
 vehu | yoshev | Beshamir | behar | Efrayim
 
 10:2
@@ -41,22 +40,20 @@ be'eretz | ha'emori | asher | Bagil'ad
 
 10:9
 vaiya'avru | venei | Amon | et | Haiyarden
-lehilachem | gam | Bihudah
-Uvevinyamin
+lehilachem | gam | Bihudah | Uvevinyamin
 uveveit | Efrayim
 vatetzer | Leyisra'el | me'od
 
 10:10
 vaiyiz'aku | benei | Yisra'el | el | Yahweh
-lemor | chatanu | lakh
+lemor
+chatanu | lakh
 vekhi | azavnu | et | eloheinu
 vana'avod | et | habe'alim
 
 10:11
-vaiyomer | Yahweh | el | benei | Yisra'el | halo | Mimitzrayim
-umin | ha'emori
-umin | benei | Amon
-umin | pelishtim
+vaiyomer | Yahweh | el | benei | Yisra'el | halo | Mimitzrayim | umin | ha'emori
+umin | benei | Amon | umin | pelishtim
 
 10:12
 vetzidonim | Va'amalek | Uma'on | lachatzu | etkhem
@@ -65,8 +62,7 @@ va'oshi'ah | etkhem | miyadam
 
 10:13
 ve'atem | azavtem | oti
-vata'avdu
-elohim | acherim | lakhen | lo | osif | lehoshia | etkhem
+vata'avdu | elohim | acherim | lakhen | lo | osif | lehoshia | etkhem
 
 10:14
 lekhu | veza'aku | el | ha'elohim | asher | bechartem | bam

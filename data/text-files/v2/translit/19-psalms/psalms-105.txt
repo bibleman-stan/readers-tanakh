@@ -1,12 +1,10 @@
 105:1
 hodu | Layahweh | kir'u | bishmo
-hodi'u | va'amim
-alilotav
+hodi'u | va'amim | alilotav
 
 105:2
 shiru | lo | zameru | lo
-sichu
-bekhol | nifle'otav
+sichu | bekhol | nifle'otav
 
 105:3
 hithalu | beshem | kadesho
@@ -19,18 +17,14 @@ bakeshu | fanav | tamid
 
 105:5
 zikhru
-nifle'otav | asher | asah
-mofetav
-umishpetei | fiv
+nifle'otav | asher | asah | mofetav | umishpetei | fiv
 
 105:6
 zera | Avraham | avdo
 benei | Ya'ako | bechirav
 
 105:7
-hu | Yahweh | eloheinu
-bekhol | ha'aretz
-mishpatav
+hu | Yahweh | eloheinu | bekhol | ha'aretz | mishpatav
 
 105:8
 zakhar | le'olam | berito
@@ -42,25 +36,21 @@ asher | karat | et | Avraham
 ushevu'ato | Leyischak
 
 105:10
-vaiya'amideha | Leya'ako | lechok
-Leyisra'el
+vaiya'amideha | Leya'ako | lechok | Leyisra'el
 berit | olam
 
 105:11
 lemor
 lekha
 eten | et | eretz | Kena'an
-chevel
-nachalatkhem
+chevel | nachalatkhem
 
 105:12
-bihyotom | metei | mispar
-kim'at
+bihyotom | metei | mispar | kim'at
 vegarim | bah
 
 105:13
-vaiyithalekhu | migoy | el | goy
-mimamlakhah
+vaiyithalekhu | migoy | el | goy | mimamlakhah
 el | am | acher
 
 105:14
@@ -68,8 +58,7 @@ lo | hiniach | adam | le'ashekam
 vaiyokhach | aleihem | melakhim
 
 105:15
-al | tige'u | vimshichai
-velinvi'ai
+al | tige'u | vimshichai | velinvi'ai
 al | tare'u
 
 105:16
@@ -77,13 +66,11 @@ vaiyikra | ra'o | al | ha'aretz
 kal | mateh | lechem | shavar
 
 105:17
-shalach | lifneihem | ish
-le'eved
+shalach | lifneihem | ish | le'eved
 Nimkar | Yosef
 
 105:18
-inu | vakevel | raglo
-barzel
+inu | vakevel | raglo | barzel
 ba'ah | nafsho
 
 105:19
@@ -96,58 +83,44 @@ moshel | amim
 vayfatechehu
 
 105:21
-samo | adon | leveito
-umoshel
-bekhol | kinyano
+samo | adon | leveito | umoshel | bekhol | kinyano
 
 105:22
 le'sor | sarav | benafsho
 uzekenav | yechakem
 
 105:23
-vaiyavo | Yisra'el | Mitzrayim
-Veya'ako
+vaiyavo | Yisra'el | Mitzrayim | Veya'ako
 gar | be'eretz | Cham
 
 105:24
 vaiyefer | et | amo | me'od
-vaiya'atzimehu
-mitzarav
+vaiya'atzimehu | mitzarav
 
 105:25
-hafakh | libom | lisno | amo
-lehitnakel
-ba'avadav
+hafakh | libom | lisno | amo | lehitnakel | ba'avadav
 
 105:26
-shalach | Mosheh | avdo
-Aharon
-asher | bachar | bo
+shalach | Mosheh | avdo | Aharon | asher | bachar | bo
 
 105:27
-samu | vam | divrei | ototav
-umofetim
+samu | vam | divrei | ototav | umofetim
 be'eretz | Cham
 
 105:28
 shalach | choshekh | vaiyachshikh
-velo | maru
-et | devaro
+velo | maru | et | devaro
 
 105:29
 hafakh | et | meimeihem | ledam
-vaiyamet
-et | degatam
+vaiyamet | et | degatam
 
 105:30
 sharatz | artzam | tzefarde'im
-bechadrei
-malkheihem
+bechadrei | malkheihem
 
 105:31
-amar | vaiyavo | aro
-kinim
-bekhol | gevulam
+amar | vaiyavo | aro | kinim | bekhol | gevulam
 
 105:32
 natan | gishmeihem | barad
@@ -155,23 +128,18 @@ esh | lehavot | be'artzam
 
 105:33
 vaiyakh | gafnom | ute'enatam
-vayshaber
-etz | gevulam
+vayshaber | etz | gevulam
 
 105:34
-amar | vaiyavo | arbeh
-veyelek
+amar | vaiyavo | arbeh | veyelek
 ve'ein | mispar
 
 105:35
 vaiyokhal | kol | esev | be'artzam
-vaiyokhal
-peri | admatam
+vaiyokhal | peri | admatam
 
 105:36
-vaiyakh | kol | bekhor | be'artzam
-reshit
-lekhol | onam
+vaiyakh | kol | bekhor | be'artzam | reshit | lekhol | onam
 
 105:37
 vaiyotzi'em | bekhesef | vezahav
@@ -182,8 +150,7 @@ samach | Mitzrayim | betzetam
 ki | nafal | pachdam | aleihem
 
 105:39
-paras | anan | lemasakh
-ve'esh
+paras | anan | lemasakh | ve'esh
 leha'ir | layelah
 
 105:40
@@ -201,14 +168,11 @@ ki | zakhar | et | devar | kadesho
 et | Avraham | avdo
 
 105:43
-vaiyotzi | amo | vesason
-berinah
-et | bechirav
+vaiyotzi | amo | vesason | berinah | et | bechirav
 
 105:44
 vaiyiten | lahem | artzot | goyim
 va'amal | le'umim | yirashu
 
 105:45
-ba'avur | yishmeru | chukav | vetorotav | yintzoru
-halu | Yah
+ba'avur | yishmeru | chukav | vetorotav | yintzoru | halu | Yah

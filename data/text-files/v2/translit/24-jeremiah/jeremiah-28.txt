@@ -1,12 +1,12 @@
 28:1
-vayhi | bashanah | hahi | bereshit | mamlekhet | Tzidkiyah | melekh | Yehudah | bishnat | harevi'it
-bachodesh | hachamishi | amar | elai | Chananyah | ven | Azur | hanavi | asher | Migiv'on | beveit | Yahweh
+vayhi | bashanah | hahi | bereshit | mamlekhet | Tzidkiyah | melekh | Yehudah | bishnat | harevi'it | bachodesh | hachamishi | amar | elai | Chananyah | ven | Azur | hanavi | asher | Migiv'on | beveit | Yahweh
 le'einei | hakohanim
 vekhol | ha'am | lemor
 
 28:2
 koh | amar | Yahweh | tzeva'ot | elohei | Yisra'el
-lemor | shavarti | et | ol | melekh | Bavel
+lemor
+shavarti | et | ol | melekh | Bavel
 
 28:3
 be'od | shenatayim | yamim | ani | meshiv | el | hamakom | hazeh
@@ -14,8 +14,7 @@ et | kol | kelei | beit | Yahweh | asher | lakach | Nevukhadnetzar | melekh | Ba
 vayvi'em | Bavel
 
 28:4
-ve'et | Yekhaneyah | ven | Yehoyakim | melekh | Yehudah | ve'et | kol | galut | Yehudah | haba'im | Bavelah | ani | meshiv | el | hamakom | hazeh
-ne'um | Yahweh
+ve'et | Yekhaneyah | ven | Yehoyakim | melekh | Yehudah | ve'et | kol | galut | Yehudah | haba'im | Bavelah | ani | meshiv | el | hamakom | hazeh | ne'um | Yahweh
 ki | eshbor | et | ol | melekh | Bavel
 
 28:5
@@ -51,15 +50,13 @@ vaiyikach | Chananyah | hanavi | et | hamotah | me'al | tzavar | Yirmeyah | hana
 vaiyishberehu
 
 28:11
-vaiyomer | Chananyah | le'einei | khol | ha'am
-lemor
+vaiyomer | Chananyah | le'einei | khol | ha'am | lemor
 koh | amar | Yahweh
 kakhah | eshbor | et | ol | Nevukhadnetzar | melekh | Bavel | be'od | shenatayim | yamim
 me'al | tzavar | kol | hagoyim | vaiyelekh | Yirmeyah | hanavi | ledarko
 
 28:12
-vayhi | devar | Yahweh | el | Yirmeyah | acharei | shevor | Chananyah | hanavi | et | hamotah | me'al | tzavar | Yirmeyah | hanavi
-lemor
+vayhi | devar | Yahweh | el | Yirmeyah | acharei | shevor | Chananyah | hanavi | et | hamotah | me'al | tzavar | Yirmeyah | hanavi | lemor
 
 28:13
 halokh | ve'amarta | el | Chananyah | lemor | koh | amar | Yahweh

@@ -1,11 +1,9 @@
 5:1
-beni | lechakhemati | hakshivah
-litvunati
+beni | lechakhemati | hakshivah | litvunati
 hat | azenekha
 
 5:2
-lishmor | mezimot
-veda'at
+lishmor | mezimot | veda'at
 sefateikha | yintzoru
 
 5:3
@@ -13,13 +11,11 @@ ki | nofet | titofenah | siftei | zarah
 vechalak | mishemen | chikah
 
 5:4
-ve'acharitah | marah | khala'anah
-chadah
+ve'acharitah | marah | khala'anah | chadah
 kecherev | piyot
 
 5:5
-ragleiha | yoredot | mavet
-sheol
+ragleiha | yoredot | mavet | sheol
 tze'adeiha | yitmokhu
 
 5:6
@@ -29,8 +25,7 @@ lo | teda
 
 5:7
 ve'atah | vanim | shim'u | li
-ve'al | tasuru
-me'imrei | fi
+ve'al | tasuru | me'imrei | fi
 
 5:8
 harchek | me'aleiha | darkekha
@@ -39,8 +34,7 @@ el | petach | beitah
 
 5:9
 pen | titen | la'acherim | hodekha
-ushenoteikha
-le'akhzari
+ushenoteikha | le'akhzari
 
 5:10
 pen | yisbe'u | zarim | kochekha
@@ -54,13 +48,11 @@ ushe'erekha
 
 5:12
 ve'amarta
-eikh | saneti | musar
-vetokhachat
+eikh | saneti | musar | vetokhachat
 na'atz | libi
 
 5:13
-velosha | shama'ti | bekol | morai
-velimlamedai
+velosha | shama'ti | bekol | morai | velimlamedai
 lo | hititi | azeni
 
 5:14
@@ -68,14 +60,11 @@ kim'at | hayiti | vekhol | ra
 betokh | kahal | ve'edah
 
 5:15
-sheteh | mayim | miborekha
-venozelim
+sheteh | mayim | miborekha | venozelim
 mitokh | be'erekha
 
 5:16
-yafutzu | ma'yenoteikha | chutzah
-barechovot
-palgei | mayim
+yafutzu | ma'yenoteikha | chutzah | barechovot | palgei | mayim
 
 5:17
 yihyu | lekha | levadekha
@@ -87,16 +76,13 @@ usemach
 me'eshet | ne'urekha
 
 5:19
-aiyelet | ahavim
-veya'alat | chen
-dadeiha | yeravukha | vekhol | et
-be'ahavatah
+aiyelet | ahavim | veya'alat | chen
+dadeiha | yeravukha | vekhol | et | be'ahavatah
 tishgeh | tamid
 
 5:20
 velamah | tishgeh | veni | vezarah
-utechabek
-chek | nakheriyah
+utechabek | chek | nakheriyah
 
 5:21
 ki | nokhach | einei | Yahweh | darkhei | ish
@@ -109,6 +95,5 @@ uvechavlei | chatato
 yitamekh
 
 5:23
-hu
-yamut | be'ein | musar
+hu | yamut | be'ein | musar
 uvero | ivalto | yishgeh

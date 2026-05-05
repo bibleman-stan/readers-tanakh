@@ -1,7 +1,6 @@
 23:1
 ho | ro'im | me'abedim
-umefitzim | et | tzon | mar'iti
-ne'um | Yahweh
+umefitzim | et | tzon | mar'iti | ne'um | Yahweh
 
 23:2
 lakhen | koh | amar | Yahweh | elohei | Yisra'el | al | haro'im | haro'im | et | ami
@@ -31,8 +30,7 @@ beyamav | tivasha | Yehudah | Veyisra'el | yishkon | lavetach
 vezeh | shemo | asher | yikre'o | Yahweh | tzidkenu
 
 23:7
-lakhen | hineh | yamim | ba'im
-ne'um | Yahweh
+lakhen | hineh | yamim | ba'im | ne'um | Yahweh
 velo | yomeru | od | chai | Yahweh | asher | he'elah | et | benei | Yisra'el
 me'eretz | Mitzrayim
 
@@ -124,7 +122,8 @@ halo | et | hashamayim | ve'et | ha'aretz | ani | male | ne'um | Yahweh
 
 23:25
 shama'ti | et | asher | ameru | hanevi'im | hanibe'im | bishmi | sheker
-lemor | chalamti
+lemor
+chalamti
 chalameti
 
 23:26
@@ -149,28 +148,24 @@ lakhen | hini | al | hanevi'im
 ne'um | Yahweh | meganevei | devarai | ish | me'et | re'ehu
 
 23:31
-hini | al | hanevi'im
-ne'um | Yahweh
+hini | al | hanevi'im | ne'um | Yahweh
 halokechim | leshonam
 vaiyin'amu | ne'um
 
 23:32
 hini | al | nibe'ei | chalomot | sheker | ne'um | Yahweh
-vaysaperum | vaiyat'u | et | ami | beshikreihem
-uvefachazutam
+vaysaperum | vaiyat'u | et | ami | beshikreihem | uvefachazutam
 ve'anokhi | lo | shelachtim | velo | tzivitim | veho'eil | lo | yo'ilu | la'om | hazeh | ne'um | Yahweh
 
 23:33
-vekhi | yish'alekha | ha'am | hazeh | ov | hanavi | ov | khohen
-lemor
+vekhi | yish'alekha | ha'am | hazeh | ov | hanavi | ov | khohen | lemor
 mah | masa | Yahweh | ve'amarta | aleihem | et | mah | masa
 venatashti | etkhem | ne'um | Yahweh
 
 23:34
 vehanavi | vehakohen | veha'am | asher | yomar
 masa | Yahweh
-ufakadti | al | ha'ish | hahu
-ve'al | beito
+ufakadti | al | ha'ish | hahu | ve'al | beito
 
 23:35
 koh | tomeru | ish | al | re'ehu | ve'ish | el | achiv
@@ -199,5 +194,4 @@ venatashti | etkhem | ve'et | ha'ir | asher | natati | lakhem
 vela'avoteikhem | me'al | panai
 
 23:40
-venatati | aleikhem | cherpat | olam
-ukhelimut | olam | asher | lo | tishakheach
+venatati | aleikhem | cherpat | olam | ukhelimut | olam | asher | lo | tishakheach

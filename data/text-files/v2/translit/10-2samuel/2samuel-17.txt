@@ -25,7 +25,8 @@ gam | Lechushai | ha'arki | venishme'ah | mah | befiv | gam | hu
 17:6
 vaiyavo | Chushai | el | Avshalom
 vaiyomer | Avshalom | elav
-lemor | kadavar | hazeh | diber | Achitofel
+lemor
+kadavar | hazeh | diber | Achitofel
 hana'aseh | et | devaro | im | ayin
 atah | daber
 
@@ -41,8 +42,7 @@ kedo | shakul | basadeh | ve'avikha | ish | milchamah
 velo | yalin | et | ha'am
 
 17:9
-hineh | atah | hu | nechba | be'achat | hapechatim
-o
+hineh | atah | hu | nechba | be'achat | hapechatim | o
 be'achad | hamekomot
 vehayah | kinfol | bahem | batechilah
 veshama | hashomea | ve'amar
@@ -62,8 +62,7 @@ ufaneikha | holekhim | bakrav
 uvanu | elav | be'achat | hamekomot | asher | Nimtza | sham
 venachnu | alav | ka'asher | yipol | hatal | al | ha'adamah
 velo | Notar | bo
-uvekhol | ha'anashim | asher | ito
-gam | echad
+uvekhol | ha'anashim | asher | ito | gam | echad
 
 17:13
 ve'im | el | ir | ye'asef
@@ -80,14 +79,13 @@ leva'avur | havi | Yahweh | el | Avshalom | et | hara'ah
 vaiyomer | Chushai | el | Tzadok
 ve'el | Evyatar | hakohanim | kazot
 vekhazot | ya'atz | Achitofel | et | Avshalom
-ve'et | ziknei | Yisra'el
-vekhazot
+ve'et | ziknei | Yisra'el | vekhazot
 vekhazot | ya'atzti | ani
 
 17:16
 ve'atah | shilchu | meherah | vehagidu | Ledavid
-lemor | al | talen | halaylah | be'arvot | hamidbar
-vegam
+lemor
+al | talen | halaylah | be'arvot | hamidbar | vegam
 avor | ta'avor
 pen | yevula | lamelekh
 ulekhol | ha'am | asher | ito
@@ -135,8 +133,7 @@ ki | khakhah | ya'atz | aleikhem | Achitofel
 17:22
 vaiyakom | David | vekhol | ha'am | asher | ito
 vaiya'avru | et | Haiyarden
-ad | or | haboker | ad | achad | lo | ne'dar | asher | lo | avar
-et | Haiyarden
+ad | or | haboker | ad | achad | lo | ne'dar | asher | lo | avar | et | Haiyarden
 
 17:23
 Va'achitofel | ra'ah | ki | lo | Ne'estah | atzato
@@ -166,13 +163,10 @@ vayhi | kevo | David | Machanayemah | Veshovi | ven | Nachash | merabat | benei 
 mishkav | vesapot | ukheli | yotzer
 vechitim | use'orim
 vekemach | vekali
-ufol | va'adashim
-vekali
+ufol | va'adashim | vekali
 
 17:29
-udevash
-vechem'ah
-vetzon
+udevash | vechem'ah | vetzon
 ushefot | bakar
 higishu | Ledavid
 vela'am | asher | ito | le'ekhol

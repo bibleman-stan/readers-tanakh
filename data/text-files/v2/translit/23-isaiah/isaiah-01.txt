@@ -28,8 +28,7 @@ petza | vechaburah | umakah | teriyah | lo | zoru | velo | chubashu
 velo | rukekhah | bashamen
 
 1:7
-artzekhem | shemamah
-areikhem
+artzekhem | shemamah | areikhem
 serufot | esh
 admatkhem | lenegdekhem | zarim | okhelim | otah
 ushemamah | kemahpekhat | zarim
@@ -48,9 +47,9 @@ shim'u | devar | Yahweh | ketzinei | Sedom
 ha'azinu | torat | eloheinu | am | Amorah
 
 1:11
-lamah | li | rov | zivcheikhem | yomar | Yahweh
-sava'ti | olot | eilim
-vechelev | meri'im | vedam | parim
+lamah | li | rov | zivcheikhem
+yomar | Yahweh
+sava'ti | olot | eilim | vechelev | meri'im | vedam | parim
 ukhevasim | ve'atudim | lo | chafatzeti
 
 1:12
@@ -59,8 +58,7 @@ panai | mi | vikesh | zot | miyedkhem | remos | chatzerai
 
 1:13
 lo | tosifu | havi | minchat | shav | ketoret | to'evah | hi | li
-chodesh | veshabat | kero | mikra | lo | ukhal | aven
-va'atzarah
+chodesh | veshabat | kero | mikra | lo | ukhal | aven | va'atzarah
 
 1:14
 chadesheikhem | umo'adeikhem | sane'ah | nafshi
@@ -83,7 +81,8 @@ shiftu | yatom
 rivu | almanah
 
 1:18
-lekhu | na | venivakhechah | yomar | Yahweh
+lekhu | na | venivakhechah
+yomar | Yahweh
 im | yihyu | chata'eikhem | kashanim | kasheleg | yalbinu | im | ya'dimu | khatola
 katzemer | yihyu
 
@@ -107,9 +106,7 @@ kaspekh | hayah | lesigim | save'ekh | mahul | bamayim
 
 1:23
 sarayikh | sorim | vechavrei | ganavim
-kulo | ohev | shochad
-verodef
-shalmonim
+kulo | ohev | shochad | verodef | shalmonim
 yatom | lo | yishpotu
 veriv | almanah | lo | yavo | aleihem
 

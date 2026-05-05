@@ -1,6 +1,5 @@
 7:1
-vezot | torat | ha'asham | kodesh | kadashim
-hu
+vezot | torat | ha'asham | kodesh | kadashim | hu
 
 7:2
 bimkom | asher | yishchatu | et | ha'olah | yishchatu | et | ha'asham
@@ -30,8 +29,7 @@ hakohen | asher | yekhaper | bo
 lo | yihyeh
 
 7:8
-vehakohen
-hamakriv
+vehakohen | hamakriv
 et | olat | ish
 or | ha'olah | asher | hikriv | lakohen
 lo | yihyeh
@@ -43,8 +41,7 @@ lakohen | hamakriv | otah
 lo | tihyeh
 
 7:10
-vekhol | minchah | velulah | vashemen
-vacharevah
+vekhol | minchah | velulah | vashemen | vacharevah
 lekhol | benei | Aharon | tihyeh | ish | ke'achiv
 
 7:11
@@ -85,8 +82,7 @@ vehanefesh | ha'okhelet | mimenu | avonah | tisa
 
 7:19
 vehabasar | asher | yiga | bekhol | tame | lo | ye'akhel | ba'esh
-yisaref
-vehabasar
+yisaref | vehabasar
 kol | tahor | yokhal | basar
 
 7:20
@@ -99,12 +95,10 @@ ve'akhal | mibesar | zevach | hashelamim | asher | Layahweh
 venikhretah | hanefesh | hahiv | me'ameiha
 
 7:22
-vaydaber | Yahweh | el | Mosheh
-lemor
+vaydaber | Yahweh | el | Mosheh | lemor
 
 7:23
-daber | el | benei | Yisra'el
-lemor
+daber | el | benei | Yisra'el | lemor
 kol | chelev | shor | vekhesev | va'ez | lo | tokhelu
 
 7:24
@@ -118,15 +112,13 @@ asher | yakriv | mimenah | isheh | Layahweh
 venikhretah | hanefesh | ha'okhelet | me'ameiha
 
 7:26
-vekhol | dam | lo | tokhelu | bekhol | moshevoteikhem | la'of
-velabehemah
+vekhol | dam | lo | tokhelu | bekhol | moshevoteikhem | la'of | velabehemah
 
 7:27
 kol | nefesh | asher | tokhal | kol | dam | venikhretah | hanefesh | hahiv | me'ameiha
 
 7:28
-vaydaber | Yahweh | el | Mosheh
-lemor
+vaydaber | Yahweh | el | Mosheh | lemor
 
 7:29
 daber | el | benei | Yisra'el
@@ -141,8 +133,7 @@ lifnei | Yahweh
 
 7:31
 vehiktir | hakohen | et | hachelev
-hamizbechah | vehayah | hechazeh | Le'aharon
-ulevanav
+hamizbechah | vehayah | hechazeh | Le'aharon | ulevanav
 
 7:32
 ve'et | shok | haiyamin
@@ -171,10 +162,7 @@ me'et | benei | Yisra'el
 chukat | olam | ledorotam
 
 7:37
-zot | hatorah | la'olah | laminchah
-velachatat
-vela'asham
-velammilu'im
+zot | hatorah | la'olah | laminchah | velachatat | vela'asham | velammilu'im
 ulezevach | hashelamim
 
 7:38
