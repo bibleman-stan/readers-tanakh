@@ -66,13 +66,11 @@ Without explicit disposition, items drift across sessions and silently disappear
 Produce in the session folder:
 
 1. **`session-notes.md`** (mandatory) — session arc, what landed (commits), discipline observations, withdrawn proposals, carry-forwards for next session.
-2. **`review-lists/`** (subfolder, when applicable) — only when the session produced candidate lists requiring Stan review.
+2. **`full-transcript.md`** (mandatory) — verbatim dialogue extraction from the session JSONL. Dispatch a Sonnet agent with the JSONL path to stream-process: filter to user-typed turns + assistant responses, strip sub-agent sidechain noise. **Why this matters:** session-notes.md is what future-Claude reads for carry-forward, but a different Stan-dispatched agent (auditor, diagnostic, thread-picker-upper) needs 100% fidelity to reconstruct what actually happened. The JSONL is the source of truth; the markdown is the readable form. Don't skip this step.
+3. **`review-lists/`** (subfolder, when applicable) — only when the session produced candidate lists requiring Stan review.
 
-On-request (not default — only produce when the session warrants it or Stan asks):
-- **`full-transcript.md`** — verbatim dialogue extraction. Useful for retrospective audits; not useful for next-session carry-forward (that's `session-notes.md`'s job). Don't dispatch a Sonnet agent for this by default.
+On-request (not default):
 - **`dialogue-notes.md`** — only for methodology-heavy sessions where the dialogue arc itself is the work product.
-
-The 2026-05-04 colonoscopy audit found these tail artifacts had low cross-session retrieval value relative to their wrap cost. `session-notes.md` is the load-bearing carry-forward surface.
 
 **Carry-forward integrity (mandatory before writing the carry-forward section).** Every carry-forward item MUST have one of:
 - **A concrete next-action** Claude can execute without further Stan input — names the file/script/agent dispatch that will run.
