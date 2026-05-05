@@ -86,6 +86,19 @@ This prevents building the wrong solution and having to undo it. The "I'll just 
 
 **Why Step 0 has both procedural and mechanical layers:** the procedural layer (this section + CLAUDE.md hot-path) primes the cognitive default ("audit before propose"); the mechanical layer (the hook) catches drift when the cognitive default fails — exactly the same pattern used for canon-extension audits (CLAUDE.md "Pre-commit Adversarial-Audit Discipline" + `validators/hooks/commit-msg`). Directives without gates become decoration; gates without directives are friction. Both are required.
 
+#### A3 Step 3 — Post-build adversarial audit
+
+After implementing any significant new validator, spec, or shared helper, and BEFORE telling Stan it's ready:
+
+Dispatch ≥3 parallel agents to attack the built thing:
+1. One focused on the specific new feature (over-merges, under-merges, false positives at corpus scale)
+2. One focused on rule interactions (does this new spec oscillate with any M-class or H-class spec in either direction?)
+3. One focused on benchmark regressions (does the pre-commit baseline hold? Do previously-clean chapters stay clean?)
+
+Fix HIGH-severity findings before the commit. Document MEDIUM findings in session-notes.
+
+Distinct from Step 0 (audit BEFORE building). Step 0 evaluates candidates; Step 3 attacks the built artifact. Both required for non-trivial implementations. Imported from GNT-Reader sibling 2026-05-05 (their `feedback_adversarial.md` codified all three stages).
+
 ### A4. When Running Adversarial Agents
 
 1. **Specific scoped mandates**, not "review all of X." Instead: "check Genesis 1, 24, Jonah 1, Ps 1, Prov 1 for these 5 specific patterns."
@@ -116,6 +129,50 @@ This prevents building the wrong solution and having to undo it. The "I'll just 
    - **Genesis 24:38** — known oscillation site (post-2026-04-30 fix)
 
 5. Never split or weaken: maqqef-joined prosodic words, construct chains (head + rectum), preposition + complement, atomic discourse formulas (וַיְהִי־כֵן etc.), Tetragrammaton in any compound divine name.
+
+### A6. When You Cannot Directly Test (No Browser / No Live Data)
+
+That is NOT license to skip analysis. Walk through predictable failure modes from the code before declaring done.
+
+For UI/UX changes: layout math, z-index relationships, selector collisions, JS init timing, state transitions, cross-cutting consumers.
+
+For cascade changes: count-delta sanity (50 expected vs 5,000 reported = something else fired), shared-helper ripple (a change to `morphology.py` can silently affect 10+ specs).
+
+What you genuinely cannot verify from code: visual aesthetics, touch ergonomics on real devices, cross-browser quirks. Be explicit about that short list. Don't lump "everything I haven't tested" into it.
+
+Imported from GNT-Reader sibling 2026-05-05 (their 2026-04-29 incident: after a UI change, Claude said "I can't visually verify; tell me if anything's broken." Stan corrected: "you shouldn't say 'don't know if there's problems, just let me know!' — that's not good development procedure."). Reasoning through code-deducible failure modes is your job; punting to user testing is not.
+
+### A7. Check Corpus Convention Before Any Directional Sweep
+
+Before dispatching a sweep that applies a uniform direction (e.g., wayyiqtol narrative-intro line placement, construct-chain joining direction, waw-consecutive lead position, speech-intro framing direction), FIRST count how the corpus currently handles that direction.
+
+Run a 3-line Python script or grep to count forms A and B across the corpus. If one form has a clear majority (2:1 or better), match it. If roughly split, ask Stan.
+
+Do NOT derive the convention from:
+- A single example Stan wrote in a message
+- A single hand-edit Stan applied
+- Your own reading of a canon principle
+
+GNT precedent (2026-04-18): 129-instance ὅτι-jam sweep went against a 10:1 corpus majority because the convention was extrapolated from one Stan example without querying the corpus. Recovery required 176 corrective edits. Same risk surface for any Hebrew formula-class sweep — wayyiqtol speech-intro chains, construct-chain joining direction, divine-name compound placement, blessing/curse frame conventions. The 12,000+ wayyiqtol instances and 1,000+ speech-intro formulas in the Tanakh make this risk surface much larger here than at the GNT.
+
+### A8. Consistency Precedes Correctness
+
+Before proposing a new spec or rule, audit whether the existing spec is already applied uniformly to all instances of the target construction. The failure mode is usually same-rule-applied-inconsistently across the corpus, not missing-rule.
+
+Why: being uniformly-wrong is fixable in one pass (fix the rule; re-cascade). Inconsistency requires multiple passes just to surface the drift.
+
+Tanakh risk surface: formula-heavy narrative prose (wayyiqtol chains, speech-intro formulae, divine-name compounds, blessing/curse frames, theophoric construct-chains) has many recurring constructions. Patching one instance of `וַיֹּאמֶר` handling without checking all corpus-wide instances of the formula creates sediment that takes sessions to surface. The "find the class" rule from §A1 is the upstream version of this principle; A8 is the operate-side reminder.
+
+### A9. Use WebSearch for External Authorities — Do Not Bluff
+
+When Stan invokes grammarians or external authorities ("what do Wickes / Yeivin say?", "what does JM say?", "what does Waltke-O'Connor say?", "what's the standard view?"), use WebSearch / WebFetch before answering. Do not:
+- Extrapolate from canon-internal principles and label it "what grammarians say"
+- Say "I don't have Wickes / JM / WO in hand"
+- Defer back to Stan
+
+WebSearch and WebFetch are available via ToolSearch. Loading the tools via ToolSearch takes one call. Run the search. Report what the source actually says. If inconclusive, say so explicitly — but do not skip the search step.
+
+The CLAUDE.md "Connected Resources" block lists six foundational scholarly references (Wickes I, Wickes II, Yeivin, Lowth, Kugel, Berlin, Dobbs-Allsopp, plus Joüon-Muraoka and Waltke-O'Connor as standing references). When any of these is invoked, fetch first.
 
 ---
 

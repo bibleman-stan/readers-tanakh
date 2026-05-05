@@ -254,6 +254,22 @@ PYTHONIOENCODING=utf-8 py -3 validators/run_all.py --update-baseline # capture n
 
 ---
 
+## Five Diagnostic Questions (Before Writing New Specs or Tools)
+
+Before adding a new validator, proposing a new H-rule, or building infrastructure:
+
+1. Is there already a validator, spec, or helper for this? (check `validators/_shared/`, `validators/colometry/`, `validators/syntax/`)
+2. Does Macula lowfat XML already provide the signal as a constituent role-label or frame annotation, such that a 20-line XPath query replaces 200 lines of TAHOT-tag walking?
+3. Am I answering the question Stan asked, or a different question? (when Stan asks for a spot-check, run the spot-check; don't build tooling)
+4. Did Stan specify a model, approach, or constraint I'm about to ignore?
+5. What's the smallest version that would test the hypothesis?
+
+If you answer any of (1)–(4) affirmatively, STOP and re-scope before building.
+
+Imported from GNT-Reader sibling 2026-05-05.
+
+---
+
 ## Pre-implementation Adversarial-Audit Discipline (Step 0)
 
 Before any non-trivial implementation (new validator with classification logic, new spec, new helper in `validators/_shared/`, new mechanism, new canon rule), the **FIRST tool call** in your response must be either parallel Agent dispatches for adversarial evaluation (≥2 dimensions, one message, multiple Agent tool_use blocks) **or** a one-line `Audit-skippable: <reason>` declaration citing a recognized trivial class (port of validated sibling code, mechanical ingestion change, test/fixture, runner/glue, scratch diagnostic).
