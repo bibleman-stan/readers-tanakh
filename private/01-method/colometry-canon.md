@@ -33,7 +33,7 @@ Some sections are dual-natured by design: §1 interleaves theoretical principles
 
 ### Mission
 
-**We are revealing sense-lines — atomic thoughts the reader can process as discrete units.** Each line is a unit of meaning the reader can take in before needing the next. We are not revealing rhetorical parallelism (Lowth / Berlin parallelism analysis is a separate scholarly layer that may overlap with ours but is not our target). We are not mechanizing the te'amim or any other historical reading-tradition's chant structure. We are formatting the text so that any reader — novice or experienced — can take Scripture one atomic thought at a time.
+**We are revealing atomic thought units (ATUs) — the discrete units a reader can process as a single complete thought.** Each line is a unit of meaning the reader can take in before needing the next. We are not revealing rhetorical parallelism (Lowth / Berlin parallelism analysis is a separate scholarly layer that may overlap with ours but is not our target). We are not mechanizing the te'amim or any other historical reading-tradition's chant structure. We are formatting the text so that any reader — novice or experienced — can take Scripture one atomic thought at a time.
 
 ### Origin
 
@@ -1135,6 +1135,8 @@ After any pipeline-changing pass (new rule, reformatter update, build script cha
 
 Proposals to change an existing rule, add a new rule, or cull a rule must:
 
+Apply the §2 scope/precedence/closed-list/carve-out diagnostic first — any proposal matching any of those four patterns is Category B by default and almost always triggers one of the categories below.
+
 1. **State the Hebrew syntactic / orthographic / Masoretic fact.** If you cannot cite it (Joüon-Muraoka, Waltke-O'Connor, GKC, Yeivin, Wickes), the proposal is insufficient.
 
 2. **Provide corpus evidence.** Worked examples from the actual text — not hypotheticals.
@@ -1200,7 +1202,7 @@ A rule labeled *proposed* is a rule awaiting corpus verification. "Proposed" is 
 
 ## §8 Update Log
 
-*Purpose: **dual-natured** — chronological reasoning trail. Recent entries documenting active-rule provenance are operationally referenced; older entries are historical narrative.*
+*Purpose: **dual-natured** — chronological reasoning trail. Recent entries documenting active-rule provenance are operationally referenced; older entries are historical narrative. **Do not rewrite or remove dated entries.** Historical entries retain their original wording; silently revising them falsifies the chronological trail.*
 
 ### 2026-04-26 — Intro structure brought into parity with GNT canon's 2026-04-25 voice-cleanup passes
 
@@ -1354,6 +1356,14 @@ Hostile audit findings on the original tifcha-servant proposal: the canon's own 
 
 **Audit dispatched:** six-agent parallel adversarial audit 2026-04-28; verdicts and design corrections cited above.
 
+### 2026-05-01 — ATU (atomic thought unit) terminology migration applied (parallel to GNT canon §10 same-date entry)
+
+The shorthand "sense-line" carried unwanted intuitive baggage from prosodic / Skousen-typographic registers and obscured the load-bearing concept (the unit of thought, not the surface line). The GNT canon ran an ATU migration on 2026-05-01 that replaced "sense-line" with "atomic thought unit (ATU)" / "ATU" through active-prose §0 / §1 / §3 / §5 sections and codified the term as the canonical reference. This entry records the same-date migration applied to the Tanakh canon's §0 Mission sentence — the historical-narrative §8 entries and §10 entries retain their original "sense-line" wording per the do-not-rewrite-dated-entries rule (now codified in the §8 / §10 header italics). Forward references in active prose use ATU; historical references retain their original term.
+
+The three-repos-same-provenance coordination matters: BoFM, GNT, and Tanakh canons all share the methodology lineage, so the term-migration date should match across all three for cross-repo readers. Without this entry the Tanakh §8 had no record that the migration happened.
+
+**Audit-skippable per §7** — terminology migration without scope change; the rule (atomic thought as one of the three editorial criteria) is unchanged. No closed-list extension; no scope claim; no precedence claim; no carve-out addition. Defensibility-capture only.
+
 ### 2026-05-02 — Path 1: Propositional completeness as canonical atomic-thought criterion; H5 short-framing-default retired; H5b Speech-Act Announcement Default added; 3 C's codified as governing values
 
 **What landed:**
@@ -1428,7 +1438,7 @@ Hebrew terminology used throughout this canon, in alphabetical order by translit
 
 ## §10 Retired Formulations
 
-*Purpose: **mainly historical** — documents what was explicitly retired and why, so future editors do not accidentally re-propose discarded framings as new ideas. Format mirrors §8 Update Log entries but is deletion-focused rather than addition-focused. Entries are in retirement-date order.*
+*Purpose: **mainly historical** — documents what was explicitly retired and why, so future editors do not accidentally re-propose discarded framings as new ideas. Format mirrors §8 Update Log entries but is deletion-focused rather than addition-focused. Entries are in retirement-date order. **Do not rewrite or remove dated entries.** Historical entries retain their original wording; silently revising them falsifies the chronological trail.*
 
 Each entry records: the retired formulation, the retirement date, why it was retired, and what (if anything) replaced it.
 
