@@ -35,7 +35,12 @@ trigger:
   combined_max_prosodic_words: 6
 
 guards:
-  - prev_line_incomplete          # only fire when prev clause is complete
+  # NOTE: prev_line_incomplete guard intentionally OMITTED (vs m2_4 which
+  # has it). The guard treats verbless-but-propositionally-complete clauses
+  # (e.g. כִּי אַתָּה עִמָּדִי "for you are with me" before Psa 23:4 line 16)
+  # as "incomplete," which blocks the merge. m2_4_b's trigger is already
+  # specific enough (subject NP + pronoun resumption + finite verb on N+1)
+  # that FPs are rare without this guard.
   - line_n_starts_with_do_marker  # block if line N is a DO continuation
   - next_line_is_wayyiqtol        # block re-absorbing post-S3-split wayyiqtol
   - next_line_is_vav_coord_pp     # block re-absorbing post-S1-split coord-PP
