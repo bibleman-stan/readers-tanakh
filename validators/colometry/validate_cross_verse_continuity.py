@@ -410,9 +410,8 @@ SPEECH_INTRO_SKELETONS = {
     "ויקרא",   # wayyiqtol qal 3ms — and he called (can introduce speech)
 }
 
-# לאמר (the speech-onset complementizer): if present on the verse-end cola,
-# the next verse almost certainly opens with the speech content.
-LEEMOR_SKELETON = "לאמר"
+# (Pattern a-1 leemor-cross-verse retired 2026-05-05; LEEMOR_SKELETON constant
+# removed with it. See analyze_verse_pair() for the retirement rationale.)
 
 # (c) Definite article prefixes (bare) for construct-chain heuristic
 DEFINITE_ARTICLE_PREFIXES = ("ה", "ה")  # הַ / הָ / הֶ — all bare to ה
@@ -583,31 +582,26 @@ def analyze_verse_pair(
     first_of_next = bare_first[0]
 
     # -----------------------------------------------------------------------
-    # Pattern (a-1): Last token is לאמר — next verse opens with speech content.
-    # This is the cross-verse לאמר case: the speech-intro complementizer sits
-    # at the end of the verse, the speech itself starts in the next verse.
-    # High confidence.
+    # Pattern (a-1) leemor-cross-verse — RETIRED 2026-05-05.
+    # Per canon §5 H5b (Path 1 revision 2026-05-02), the speech-act
+    # announcement and the quoted content occupy separate lines regardless
+    # of frame length. When verse N ends with לֵאמֹר and verse N+1 opens
+    # with speech content, the SPLIT IS THE CORRECT STRUCTURE — there is
+    # no cross-verse atomic-thought bond to merge. The 300 corpus-wide
+    # STRONG-MERGE emissions of this pattern were all H5b operating
+    # correctly; the validator was forcing canon-contradicting merges.
+    # Surfaced by Torah cluster-Opus FP-rate verdict (Lev 6:17, 2026-05-05).
+    # H5b forced-merge exceptions (H1 maqqef, H7 non-speech complement,
+    # H5 scope-economy carve-out for ≥4-turn dialogue chains) are not
+    # detectable by "verse N ends with לאמר + verse N+1 opens with speech":
+    #   - H1 maqqef: לֵאמֹר joined to prior verb via maqqef → single token,
+    #     wouldn't be the "final token == לאמר" case
+    #   - H7 non-speech complement: לֵאמֹר always introduces speech, by
+    #     definition not a non-speech-complement case
+    #   - H5 scope-economy: structural ≥4-turn pattern, not a verse-pair
+    #     pattern
+    # No editorial signal is lost by removing this pattern.
     # -----------------------------------------------------------------------
-    if final_token == LEEMOR_SKELETON:
-        # לאמר at verse end is a STRONG signal if the next verse opens with
-        # non-speech-intro content (speech content, not another framing clause).
-        first_of_next_is_speech_verb = (first_of_next in SPEECH_INTRO_SKELETONS)
-        severity = "REVIEW-REQUIRED" if first_of_next_is_speech_verb else "STRONG-MERGE-CANDIDATE"
-        return {
-            "verse_n_ref": verse_n.ref,
-            "verse_n1_ref": verse_n1.ref,
-            "last_cola_line": last.line_num,
-            "first_cola_line": first.line_num,
-            "pattern": "leemor-cross-verse",
-            "severity": severity,
-            "brief": (
-                f"לֵאמֹר at end of {verse_n.ref} — "
-                f"speech content opens {verse_n1.ref}; "
-                f"cross-verse לֵאמֹר merge required"
-            ),
-            "last_cola_text": last.text,
-            "first_cola_text": first.text,
-        }
 
     # -----------------------------------------------------------------------
     # Pattern (a-2): Last token is a STRONG subordinator.
