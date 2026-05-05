@@ -72,8 +72,12 @@ def discover_validators() -> list[tuple[str, Path]]:
     return out
 
 
-def run_validator(layer: str, path: Path) -> dict:
+def run_validator(layer: str, path: Path, books: list[str] | None = None) -> dict:
     """Invoke one validator with `--json --v2` and parse summary.total_findings.
+
+    If `books` is supplied, the validator is invoked once per book with `--book
+    <name>` and findings are aggregated into a single result dict — used by the
+    `--books` CLI filter for scoped editorial work on a chapter or two.
 
     Returns:
         {
@@ -89,6 +93,11 @@ def run_validator(layer: str, path: Path) -> dict:
         }
     """
     cmd = [sys.executable, str(path), "--json", "--v2"]
+    if books:
+        # MVP: pass first book only; for multi-book aggregation, run_all calls
+        # this function once per book in its result loop. (Most validators support
+        # a single --book at a time.)
+        cmd.extend(["--book", books[0]])
     env = {**os.environ, "PYTHONIOENCODING": "utf-8"}
 
     try:
@@ -269,9 +278,32 @@ def main() -> int:
         action="store_true",
         help="Print each validator's full stdout under its dashboard row.",
     )
+    ap.add_argument(
+        "--books",
+        metavar="LIST",
+        default=None,
+        help="Comma-separated list of book directory names (e.g. "
+             "'01-genesis,32-jonah') to scope validator runs to. Each "
+             "validator is invoked with --book <book> per name. Default: "
+             "validators run their corpus-wide default scope.",
+    )
+    ap.add_argument(
+        "--validators",
+        metavar="LIST",
+        default=None,
+        help="Comma-separated list of validator names (without 'validate_' "
+             "prefix; e.g. 'short_orphan_line,verb_object_bond') to scope "
+             "the dashboard to. Default: all discovered validators.",
+    )
     args = ap.parse_args()
 
     validators = discover_validators()
+    if args.validators:
+        wanted = {v.strip() for v in args.validators.split(",") if v.strip()}
+        validators = [
+            (layer, path) for (layer, path) in validators
+            if path.stem.removeprefix("validate_") in wanted or path.stem in wanted
+        ]
     if not validators:
         print(
             "ERROR: No validators discovered under validators/syntax/ or "
@@ -280,7 +312,31 @@ def main() -> int:
         )
         return 2
 
-    results = [run_validator(layer, path) for layer, path in validators]
+    if args.books:
+        book_list = [b.strip() for b in args.books.split(",") if b.strip()]
+        # Per-book aggregation: invoke each validator once per book and sum
+        # findings. Single-book is the common case; multi-book aggregates here.
+        results = []
+        for layer, path in validators:
+            agg: dict = {
+                "name": path.stem, "layer": layer, "exit_code": 0,
+                "findings": 0, "by_severity": {}, "by_tag": {},
+                "error": None, "stdout": "", "stderr": "",
+            }
+            for book in book_list:
+                r = run_validator(layer, path, books=[book])
+                agg["findings"] += r["findings"]
+                for k, v in r.get("by_severity", {}).items():
+                    agg["by_severity"][k] = agg["by_severity"].get(k, 0) + v
+                for k, v in r.get("by_tag", {}).items():
+                    agg["by_tag"][k] = agg["by_tag"].get(k, 0) + v
+                if r.get("error"):
+                    agg["error"] = r["error"]
+                if r.get("exit_code", 0) > agg["exit_code"]:
+                    agg["exit_code"] = r["exit_code"]
+            results.append(agg)
+    else:
+        results = [run_validator(layer, path) for layer, path in validators]
 
     print_dashboard(results, args.verbose)
 

@@ -33,8 +33,12 @@ import sys
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
+# Both the Layer-3 methodology canon AND the Layer-1 grammar surface table need
+# the same audit gate: closed-list extensions to either are scope-changing
+# additions per canon §7. Imported from GNT-Reader sibling 2026-05-05.
 CANON_FILES = [
     "private/01-method/colometry-canon.md",
+    "data/syntax-reference/hebrew-break-legality.md",
 ]
 
 # ---------------------------------------------------------------------------
