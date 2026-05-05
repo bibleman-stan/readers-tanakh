@@ -98,7 +98,7 @@ These decision points have a standing answer per project discipline. Surfacing t
 | Choosing between extending an existing validator vs creating a new one | Extension. Always default to extension; new-validator is `# validator-extension-justified:` only with substantive criterion. | Validator-creation guard hook |
 | Cascade rebuild after pipeline change | 6 parallel cluster agents (Phase 2 of two-phase pattern). Never one agent on all 39 books. | A2 mandatory two-phase pattern (mechanically gated) |
 | "Should I commit now or wait?" | Commit substantive work proactively. Status claims AFTER the commit, not before. | `feedback_commit_only_finished_work.md` |
-| **Same FP class manifests in 2+ specs OR 2+ validators within a session** | **Stop. Fix at engine level (`scripts/spec_runner.py` `_check_morphology` / `validators/_shared/*` / `scripts/apply_*.py`), NOT per-spec or per-validator.** Writing a guard for "the same conceptual FP" the second time = engine-level fix opportunity that's being missed. | Stan-mantra ("swat the bug class, not the instance") + Class-fix discipline below |
+| **Same FP class manifests in 2+ specs OR 2+ validators within a session** | **Stop. Fix at engine level (`validators/_shared/spec_runner.py` `_check_morphology` / `validators/_shared/*` / `scripts/apply_*.py`), NOT per-spec or per-validator.** Writing a guard for "the same conceptual FP" the second time = engine-level fix opportunity that's being missed. | Stan-mantra ("swat the bug class, not the instance") + Class-fix discipline below |
 | **Stan escalation phrasing** ("WHY are you still doing this", "you screwed up again", "you have to quit taking so long", "stop wasting my time") | **STOP iterating on the surface fix. Frame-reset to class level. Read the recent commits and ask: what's the COMMON pattern across them that I've been treating as separate instances?** Don't continue the surgical-fix path past the escalation. | 2026-05-05 Sifrei-Emet purge arc — three iterations of per-spec guards before engine-level fix; escalation came at iteration 3 and was met with iteration 4 instead of frame-reset |
 | **Cascade leaves corpus in known-wrong state at session end** | **Don't wrap. Either fix it inline this session (revert + re-cascade with the corrected rules) OR explicitly retire to a follow-up commit with named verses listing the wrongness; never park "Psa 23:4 still split, Psa 23:5 still over-merged" as a vague carry-forward.** | 2026-05-05 cluster-5 cascade arc — wrap landed with corpus in known-wrong state at the named-verse leading-indicators that motivated the cascade |
 
@@ -200,9 +200,9 @@ Layer 1 is permission/prohibition (what grammar forbids/permits, not what to cho
 
 ## Class-fix vs instance-fix discipline
 
-Stan's mantra: *"good rules → validators → mechanical apply at scale → swat the bug class, not the instance."* The 2026-05-05 Sifrei-Emet purge ran three iterations of per-spec guards (h18_1, m2_4_b, h16_c) before the engine-level fix at `_check_morphology("prep")` in `scripts/spec_runner.py`. Each surgical fix looked locally rational; the aggregate was whack-a-mole. Stan escalated at iteration 3; the class fix landed at iteration 4.
+Stan's mantra: *"good rules → validators → mechanical apply at scale → swat the bug class, not the instance."* The 2026-05-05 Sifrei-Emet purge ran three iterations of per-spec guards (h18_1, m2_4_b, h16_c) before the engine-level fix at `_check_morphology("prep")` in `validators/_shared/spec_runner.py`. Each surgical fix looked locally rational; the aggregate was whack-a-mole. Stan escalated at iteration 3; the class fix landed at iteration 4.
 
-**Self-test at the moment of writing a per-spec/per-validator guard:** "Have I added a similar guard for the same FP class in this session?" If yes → STOP. Fix at the engine layer (`scripts/spec_runner.py`, `validators/_shared/*`, `scripts/apply_*.py`), not the next per-spec file. Per-spec/per-validator guards are correct only when the logic is genuinely local and would not generalize.
+**Self-test at the moment of writing a per-spec/per-validator guard:** "Have I added a similar guard for the same FP class in this session?" If yes → STOP. Fix at the engine layer (`validators/_shared/spec_runner.py`, `validators/_shared/*`, `scripts/apply_*.py`), not the next per-spec file. Per-spec/per-validator guards are correct only when the logic is genuinely local and would not generalize.
 
 When a cluster cascade leaves corpus in a known-wrong state at the named-verse leading-indicators, walk the failure back to root and re-cascade — don't park it as carry-forward.
 
@@ -289,7 +289,7 @@ The rule: **a commit's title should describe its actual scope.** If you're about
 
 ## Project siloing
 
-Publicly independent. No cross-references to sibling projects in README/CLAUDE.md/handoffs. Connection lives only in `private/` and Stan's head.
+Publicly independent. No cross-references to sibling projects in README, CLAUDE, or handoffs files. Connection lives only in `private/` and Stan's head.
 
 ---
 
@@ -311,7 +311,7 @@ Five hooks now binding behavior at runtime. All pass `tests/test_bash_discipline
 |---|---|---|---|
 | Override quote-validation | PreToolUse / Bash | Hallucinated-Stan-citation in any `# *-justified:` / `# disciplined-allow:` / `# audit-skippable:` reason | Drop the fabricated quote |
 | Bash heredoc / cascade / verbose-git / A3-Step0 | PreToolUse / Bash | Multi-line Python heredocs, `--all-books` on main thread, bare `git status` / `git diff`, cascades without ≥2 recent Agent dispatches | `# disciplined-allow:` / `# split-justified:` / `# audit-skippable:` |
-| **Cascade-iteration (`[CASCADE-ITERATION]`)** | PreToolUse / Bash | 2nd `apply_specs.py` / `apply_validators.py` / `refresh_book.py` `--book <X>` against same `<X>` without engine-level Edit between (`scripts/spec_runner.py`, `scripts/apply_*.py`, `validators/_shared/`) | `# instance-fix-justified: <reason>` (substance: engine-tried / unrelated-bugs / stan-directed / cross-helper / revert-rerun / walkback / verify) |
+| **Cascade-iteration (`[CASCADE-ITERATION]`)** | PreToolUse / Bash | 2nd `apply_specs.py` / `apply_validators.py` / `refresh_book.py` `--book <X>` against same `<X>` without engine-level Edit between (`validators/_shared/spec_runner.py`, `scripts/apply_*.py`, `validators/_shared/`) | `# instance-fix-justified: <reason>` (substance: engine-tried / unrelated-bugs / stan-directed / cross-helper / revert-rerun / walkback / verify) |
 | Scripts-vs-agents (`[SCRIPTS-DEFAULT]`) | PreToolUse / Agent | Short prompt (≤2000 chars) with mechanical-vocabulary verb (count/list all/how many/find all/enumerate/scan every/check whether/look up/pull every/glob for) | `# judgment-required: <reason>` (substance: classify/synthesis/adversarial/precedence/edge-case/ambiguous/multi-source/cross-rule/methodology/FP-rate/per-item/judgment-call) |
 | Validator-creation guard (`[VALIDATOR-PROLIFERATION]`) | PreToolUse / Write | Creating new `validators/(syntax\|colometry)/validate_*.py` files | `# validator-extension-justified: <reason>` in recent assistant message (substance: extend / new-arm / new-subcase / distinct-failure / orthogonal / cannot-be-added / existing-validator-misses / fundamentally-different) |
 | Permission-loop coda (`[PERMISSION-LOOP]`) | Stop | Outgoing message ends with `?` AND recent `TodoWrite` has non-completed todos | `<!-- question-required: <reason> -->` (HTML comment, invisible in markdown) |
