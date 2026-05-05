@@ -247,7 +247,37 @@ def _check_morphology(tok: str, morph: str, tag_list: Optional[list[str]] = None
         return M.is_finite_verb_token(tok, tag_list=tag_list)
     if morph == "cognition_verb_qal":
         return M.is_cognition_verb_qal_token(tok, tag_list=tag_list)
+    if morph == "subject_pronoun":
+        # Tag-aware: Pp tag indicates personal pronoun. Skel-fallback uses
+        # closed-list of independent personal-pronoun skeletons (incl. vav-
+        # prefixed forms). Used by m2_4_b for subject NP + pronoun-resumed
+        # verb merges (Psa 23:4 case: שִׁבְטְךָ וּמִשְׁעַנְתֶּךָ / הֵמָּה יְנַחֲמֻנִי).
+        if tag_list:
+            for t in tag_list:
+                if not t or t == "[—]":
+                    continue
+                chain = MT.morpheme_chain(t)
+                if chain and chain[0] == "c":
+                    chain = chain[1:]
+                if chain and chain[0].startswith("Pp"):
+                    return True
+            return False
+        s = M.skel(tok)
+        return s in SUBJECT_PRONOUN_SKELETONS
     return False
+
+
+# Independent subject-pronoun skeletons (incl. vav-prefixed forms).
+# Mirror of validate_short_orphan_line.SUBJECT_PRONOUN_SKELETONS; used by the
+# `subject_pronoun` morphology dispatch above when TAHOT tag is unavailable.
+SUBJECT_PRONOUN_SKELETONS = frozenset({
+    "הוא", "היא", "הם", "המה", "הן", "הנה",
+    "אני", "אנכי", "אנחנו",
+    "אתה", "את", "אתם", "אתן", "אתנה",
+    "והוא", "והיא", "והם", "והמה", "והנה", "והן",
+    "ואני", "ואנכי", "ואנחנו",
+    "ואתה", "ואת", "ואתם", "ואתן",
+})
 
 
 def _matches_anywhere(
@@ -419,6 +449,67 @@ def _g_both_verbs(l_n, l_n1, ctx):
 @_register_guard("cross_verse")
 def _g_cross_verse(l_n, l_n1, ctx):
     # always False — engine already verse-scopes; this guard is a no-op marker
+    return False
+
+
+@_register_guard("line_n_last_token_has_pronominal_suffix")
+def _g_n_last_has_suffix(l_n, l_n1, ctx):
+    """Fire (block) when line N's last token carries a pronominal suffix
+    (Sp* tag in the morpheme chain). A possessed noun with explicit
+    pronominal suffix has its 'rectum' as the suffix itself, NOT as the
+    next-line opener — so h16_c-style "stranded construct head" specs
+    must NOT treat it as awaiting an external rectum.
+
+    Catches FP class: ראשי / כוסי / שמו / etc. — Nc*c/Sp* nouns whose
+    suffix-form makes them appear construct-shaped to is_construct_head_token's
+    skel-fallback (or to is_construct_state when reading wrong morpheme).
+    Surfaced via Psa 23:5 trace (h16_c firing on דשנת בשמן ראשי / כוסי רויה).
+    Same pattern class as commit 5e1d50695 bare_construct_head יהוה fix.
+    """
+    n_tags = ctx.get("line_n_token_tags")
+    if not n_tags:
+        return False
+    last_tok_tags = n_tags[-1] if n_tags else None
+    if not last_tok_tags:
+        return False
+    for tag in last_tok_tags:
+        if not tag or tag == "[—]":
+            continue
+        chain = MT.morpheme_chain(tag)
+        for m in chain:
+            if m.startswith("Sp"):
+                return True
+    return False
+
+
+@_register_guard("next_line_first_token_is_noun_headed")
+def _g_n1_first_is_noun(l_n, l_n1, ctx):
+    """Fire (block) when line N+1's first token is a tag-confirmed N-headed
+    noun (chain[0] starts with N after stripping leading conjunction).
+
+    Use case: prep-trigger specs (h18_1 verbless_predicate, h11_*) that
+    use morphology=prep on N+1's first token over-fire when the
+    skel-heuristic matches a noun whose first consonant is ב/כ/ל/מ
+    (כּוֹסִי "my cup" → starts with כ, BOUND_PREP_PREFIX, but TAHOT-tagged
+    Ncfsc/Sp1bs). N-head guard suppresses the FP without weakening the
+    spec engine's prep-detection for legitimate prep-fronted lines.
+    Surfaced via Psa 23:5 trace (h18_1 firing on דשנת בשמן ראשי / כוסי רויה).
+    """
+    n1_tags = ctx.get("line_n1_token_tags")
+    if not n1_tags:
+        return False
+    first_tok_tags = n1_tags[0] if n1_tags else None
+    if not first_tok_tags:
+        return False
+    for tag in first_tok_tags:
+        if not tag or tag == "[—]":
+            continue
+        chain = MT.morpheme_chain(tag)
+        if chain and chain[0] == "c":
+            chain = chain[1:]
+        if chain and chain[0].startswith("N"):
+            return True
+        return False  # use first non-empty tag only
     return False
 
 

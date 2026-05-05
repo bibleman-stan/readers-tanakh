@@ -26,6 +26,7 @@ guards:
   - next_line_is_vav_coord_np     # block re-absorbing post-S2-split coord-NP enumeration members
   - next_line_is_wayyiqtol      # block re-absorbing post-S3-split wayyiqtol-headed lines
   - next_line_is_purpose_infinitive   # block re-absorbing post-S7 purpose-INF orphans (tag-driven, more precise than le_infinitive_on_next_line)
+  - next_line_first_token_is_noun_headed   # FP guard 2026-05-05: skel-trigger morphology=prep over-fires on N-headed nouns whose first consonant is ב/כ/ל/מ (כּוֹסִי "my cup"). TAHOT N-head check suppresses the FP. Surfaced by Psa 23:5 trace.
 
 annotation_template: "H18.1 verbless subj-pred split (combined {pwc} prosodic words)"
 suggested_action: MERGE

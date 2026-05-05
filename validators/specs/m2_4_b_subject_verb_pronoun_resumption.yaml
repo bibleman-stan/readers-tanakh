@@ -1,0 +1,47 @@
+name: m2_4_b_subject_verb_pronoun_resumption
+rule: M2
+subcase: subject_verb_pronoun_resumption
+severity: STRONG-MERGE-CANDIDATE
+description: |
+  Sister of m2_4: short subject NP (no finite verb) + line N+1 starting with
+  a subject-pronoun resumption (closed list: הוא / היא / הם / המה / הן / הנה /
+  אני / אנכי / אנחנו / אתה / אתם / etc., plus vav-prefixed forms) followed
+  somewhere on N+1 by a finite verb. The pronoun picks up the subject from
+  N; the line N+1 verb is governed by the resumed subject. Subject and
+  predicate form the clause nucleus per WO §10 / JM §125 — they must not
+  be split across cola.
+
+  Example (Psa 23:4):
+    line N:    שִׁבְטְךָ֥ וּ֝מִשְׁעַנְתֶּ֗ךָ      (subject NP, 2 prosodic words)
+    line N+1:  הֵ֣מָּה יְנַֽחֲמֻֽנִי׃            (pronoun-resumption + verb)
+    merge:     שִׁבְטְךָ֥ וּ֝מִשְׁעַנְתֶּ֗ךָ הֵ֣מָּה יְנַֽחֲמֻֽנִי׃
+
+  Pattern grammatically parallel to m2_4 (which requires N+1 to START with
+  the finite verb directly). The pronoun-resumption form is common in
+  Sifrei Emet and casus-pendens topicalization; bare m2_4 misses it
+  because of the intervening pronoun.
+
+  Surfaced via Psa 23:4 leading-indicator failure (cluster-5 cascade
+  2026-05-05): the cascade emitted zero findings on this verse pair
+  (rule LACKING per Stan's diagnosis).
+
+trigger:
+  line_n_anywhere:
+    has_finite_verb: false        # line N is bare subject (no verb yet)
+  line_n1_first_token:
+    morphology: subject_pronoun   # closed-list / Pp-tag
+  line_n1_anywhere:
+    has_finite_verb: true         # verb is on N+1, after the pronoun
+  combined_max_prosodic_words: 6
+
+guards:
+  - prev_line_incomplete          # only fire when prev clause is complete
+  - line_n_starts_with_do_marker  # block if line N is a DO continuation
+  - next_line_is_wayyiqtol        # block re-absorbing post-S3-split wayyiqtol
+  - next_line_is_vav_coord_pp     # block re-absorbing post-S1-split coord-PP
+  - next_line_is_vav_coord_np     # block re-absorbing post-S2-split coord-NP
+  - next_line_is_imperative_clause  # Path 1 H5b — block re-merge of complete content
+  - next_line_is_purpose_infinitive  # block re-absorbing post-S7 purpose-INF orphans
+
+annotation_template: "Subject NP + pronoun-resumed verb merge ({pwc} prosodic words)"
+suggested_action: MERGE
