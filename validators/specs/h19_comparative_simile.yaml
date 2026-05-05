@@ -15,7 +15,5 @@ trigger:
   line_n1_anywhere:
     has_finite_verb: false
 
-guards:
-
 annotation_template: "H19 comparative simile (כְּ-prefix NP) on next line — potential predicative adjunct (combined {pwc} prosodic words)"
 suggested_action: REVIEW

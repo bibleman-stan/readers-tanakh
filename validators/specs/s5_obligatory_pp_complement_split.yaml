@@ -51,7 +51,5 @@ trigger:
   line_anywhere:
     obligatory_pp_complement_split: true
 
-guards:
-
 annotation_template: "S5 obligatory PP-complement split — extract PP from {pwc}-PWC line for merge with prior verb"
 suggested_action: SPLIT_AT_FINITE_VERB_BOUNDARY

@@ -44,7 +44,5 @@ trigger:
   line_anywhere:
     closed_list_clause_boundary_wayyiqtol: true
 
-guards:
-
 annotation_template: "S3 cross-clause split — closed-list closer + wayyiqtol opener ({pwc} prosodic words)"
 suggested_action: SPLIT_AT_FINITE_VERB_BOUNDARY

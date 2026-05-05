@@ -46,7 +46,5 @@ trigger:
   line_anywhere:
     purpose_infinitive: true
 
-guards:
-
 annotation_template: "S7 purpose-infinitive split — separate purpose-clause ATU"
 suggested_action: SPLIT_AT_FINITE_VERB_BOUNDARY

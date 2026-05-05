@@ -103,7 +103,7 @@ class Spec:
             severity=d["severity"],
             description=d.get("description", ""),
             trigger=d.get("trigger", {}),
-            guards=d.get("guards", []),
+            guards=d.get("guards") or [],
             annotation_template=d.get("annotation_template", ""),
             suggested_action=d.get("suggested_action", "MERGE"),
             mode=d.get("mode", "pair"),

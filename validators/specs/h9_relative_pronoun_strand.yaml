@@ -13,7 +13,5 @@ trigger:
     skeleton_in:
       - "אשר"
 
-guards:
-
 annotation_template: "H9-rel אֲשֶׁר relative pronoun stranded from NP head (combined {pwc} prosodic words)"
 suggested_action: REVIEW

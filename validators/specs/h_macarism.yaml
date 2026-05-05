@@ -15,7 +15,5 @@ trigger:
     skeleton_in:
       - "אשרי"
 
-guards:
-
 annotation_template: "Macarism אַשְׁרֵי opening stranded from content (combined {pwc} prosodic words) — classical comma or merge candidate per editor judgment"
 suggested_action: REVIEW

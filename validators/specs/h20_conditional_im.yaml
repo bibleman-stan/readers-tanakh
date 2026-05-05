@@ -21,7 +21,5 @@ trigger:
     has_finite_verb: false
   combined_max_prosodic_words: 8
 
-guards:
-
 annotation_template: "H20 conditional protasis-apodosis split — conditional particle at line start, apodosis on next line (combined {pwc} prosodic words)"
 suggested_action: REVIEW
