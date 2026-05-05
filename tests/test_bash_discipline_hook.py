@@ -100,6 +100,63 @@ def run_stop_hook(transcript_path: str) -> tuple[int, str]:
     return proc.returncode, proc.stderr
 
 
+def _make_fake_transcript_with_cascade_history(
+    cascade_book_invocations: list[str],
+    edits_after_first_cascade: list[str] | None = None,
+) -> str:
+    """Build a JSONL transcript fixture with cascade Bash invocations + Edits.
+
+    cascade_book_invocations: list of Bash command strings (each contains
+        --book <X>); written sequentially as assistant tool_use blocks.
+    edits_after_first_cascade: list of file_path strings; written as
+        Edit tool_use blocks AFTER the first cascade invocation if any
+        cascade invocations are present.
+    """
+    f = tempfile.NamedTemporaryFile(
+        mode="w", suffix=".jsonl", delete=False, encoding="utf-8"
+    )
+    edits_after_first_cascade = edits_after_first_cascade or []
+    for i, cmd in enumerate(cascade_book_invocations):
+        f.write(
+            json.dumps(
+                {
+                    "type": "assistant",
+                    "message": {
+                        "content": [
+                            {
+                                "type": "tool_use",
+                                "name": "Bash",
+                                "input": {"command": cmd, "description": "cascade"},
+                            }
+                        ]
+                    },
+                }
+            )
+            + "\n"
+        )
+        if i == 0:
+            for fp in edits_after_first_cascade:
+                f.write(
+                    json.dumps(
+                        {
+                            "type": "assistant",
+                            "message": {
+                                "content": [
+                                    {
+                                        "type": "tool_use",
+                                        "name": "Edit",
+                                        "input": {"file_path": fp, "old_string": "x", "new_string": "y"},
+                                    }
+                                ]
+                            },
+                        }
+                    )
+                    + "\n"
+                )
+    f.close()
+    return f.name
+
+
 def _make_fake_transcript_with_assistant_text(
     text: str, todos: list[dict] | None = None
 ) -> str:
@@ -482,6 +539,111 @@ AGENT_TESTS = [
 
 
 # ------------------------------------------------------------------
+# Cascade-iteration fixtures
+# Each fixture: (label, command, prior_invocations, intervening_edits, expect_block, pattern_id)
+# ------------------------------------------------------------------
+
+CASCADE_TESTS = [
+    # === ALLOWS (exit 0) ===
+    (
+        "non-cascade command unaffected",
+        "echo hello",
+        [],
+        [],
+        False,
+        "",
+    ),
+    (
+        "first cascade invocation against book allowed",
+        "PYTHONIOENCODING=utf-8 py -3 scripts/apply_validators.py --book 19-psalms",
+        [],
+        [],
+        False,
+        "",
+    ),
+    (
+        "second cascade with engine-level Edit between allowed",
+        "PYTHONIOENCODING=utf-8 py -3 scripts/apply_validators.py --book 19-psalms",
+        ["PYTHONIOENCODING=utf-8 py -3 scripts/apply_validators.py --book 19-psalms"],
+        ["scripts/spec_runner.py"],
+        False,
+        "",
+    ),
+    (
+        "second cascade against DIFFERENT book allowed",
+        "PYTHONIOENCODING=utf-8 py -3 scripts/apply_validators.py --book 20-proverbs",
+        ["PYTHONIOENCODING=utf-8 py -3 scripts/apply_validators.py --book 19-psalms"],
+        [],
+        False,
+        "",
+    ),
+    (
+        "instance-fix-justified bypass with substantive reason allowed",
+        "# instance-fix-justified: stan-directed unrelated-bugs in two specs\n"
+        "PYTHONIOENCODING=utf-8 py -3 scripts/apply_validators.py --book 19-psalms",
+        ["PYTHONIOENCODING=utf-8 py -3 scripts/apply_validators.py --book 19-psalms"],
+        [],
+        False,
+        "",
+    ),
+    (
+        "second cascade with shared-helper Edit between allowed",
+        "PYTHONIOENCODING=utf-8 py -3 scripts/apply_specs.py --book 19-psalms",
+        ["PYTHONIOENCODING=utf-8 py -3 scripts/apply_specs.py --book 19-psalms"],
+        ["validators/_shared/macula_constituents.py"],
+        False,
+        "",
+    ),
+    # === BLOCKS (exit 2) ===
+    (
+        "second cascade against same book without engine-Edit blocks",
+        "PYTHONIOENCODING=utf-8 py -3 scripts/apply_validators.py --book 19-psalms",
+        ["PYTHONIOENCODING=utf-8 py -3 scripts/apply_validators.py --book 19-psalms"],
+        [],
+        True,
+        "[CASCADE-ITERATION]",
+    ),
+    (
+        "third cascade against same book without engine-Edit blocks",
+        "PYTHONIOENCODING=utf-8 py -3 scripts/apply_specs.py --book 32-jonah",
+        [
+            "PYTHONIOENCODING=utf-8 py -3 scripts/apply_specs.py --book 32-jonah",
+            "PYTHONIOENCODING=utf-8 py -3 scripts/apply_specs.py --book 32-jonah",
+        ],
+        ["validators/colometry/validate_short_orphan_line.py"],
+        True,
+        "[CASCADE-ITERATION]",
+    ),
+    (
+        "second cascade with only spec-level Edit between blocks",
+        "PYTHONIOENCODING=utf-8 py -3 scripts/refresh_book.py --book 01-genesis",
+        ["PYTHONIOENCODING=utf-8 py -3 scripts/refresh_book.py --book 01-genesis"],
+        ["validators/specs/h18_1.yaml"],
+        True,
+        "[CASCADE-ITERATION]",
+    ),
+    (
+        "instance-fix-justified bypass with empty reason blocks",
+        "# instance-fix-justified:\n"
+        "PYTHONIOENCODING=utf-8 py -3 scripts/apply_validators.py --book 19-psalms",
+        ["PYTHONIOENCODING=utf-8 py -3 scripts/apply_validators.py --book 19-psalms"],
+        [],
+        True,
+        "no reason",
+    ),
+    (
+        "instance-fix-justified bypass with vacuous reason blocks",
+        "# instance-fix-justified: I think this is fine\n"
+        "PYTHONIOENCODING=utf-8 py -3 scripts/apply_validators.py --book 19-psalms",
+        ["PYTHONIOENCODING=utf-8 py -3 scripts/apply_validators.py --book 19-psalms"],
+        [],
+        True,
+        "BYPASS SUBSTANCE",
+    ),
+]
+
+
+# ------------------------------------------------------------------
 # Stop-event fixtures (permission-loop + counts-headline gates)
 # Each fixture: (label, message_text, todos_or_None, expect_block, pattern_id)
 # ------------------------------------------------------------------
@@ -695,6 +857,47 @@ def main() -> int:
         else:
             failed += 1
             print(f"  FAIL  {label}")
+
+    # Cascade-iteration fixtures
+    print()
+    print("--- Cascade-iteration fixtures ---")
+    cascade_transcript_files: list[str] = []
+    try:
+        for label, command, prior_invocations, intervening_edits, expect_block, pattern_id in CASCADE_TESTS:
+            tpath = _make_fake_transcript_with_cascade_history(
+                prior_invocations, intervening_edits
+            )
+            cascade_transcript_files.append(tpath)
+            code, err = run_hook(command, transcript_path=tpath)
+            was_blocked = code == 2
+
+            ok = True
+            if was_blocked != expect_block:
+                ok = False
+                failures.append(
+                    f"  [{label}] expected {'BLOCK' if expect_block else 'ALLOW'} "
+                    f"but got {'BLOCK' if was_blocked else 'ALLOW'} (exit {code}). "
+                    f"stderr={err.strip()[:300]!r}"
+                )
+            elif expect_block and pattern_id and pattern_id not in err:
+                ok = False
+                failures.append(
+                    f"  [{label}] blocked correctly but pattern_id {pattern_id!r} not in "
+                    f"stderr. stderr={err.strip()[:300]!r}"
+                )
+
+            if ok:
+                passed += 1
+                print(f"  PASS  {label}")
+            else:
+                failed += 1
+                print(f"  FAIL  {label}")
+    finally:
+        for tp in cascade_transcript_files:
+            try:
+                Path(tp).unlink()
+            except Exception:
+                pass
 
     # Stop-event [PERMISSION-LOOP] / [COUNTS-HEADLINE] fixtures
     print()

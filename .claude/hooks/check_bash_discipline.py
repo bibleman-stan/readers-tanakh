@@ -108,6 +108,7 @@ _OVERRIDE_TOKENS = (
     "# audit-skippable:",
     "# judgment-required:",  # Agent tool bypass
     "# validator-extension-justified:",  # Write tool bypass
+    "# instance-fix-justified:",  # Cascade-iteration bypass
 )
 
 # Bypass-substance validation (per 2026-05-05 meta-audit Hook-(ii) verdict §C).
@@ -125,6 +126,29 @@ _VALIDATOR_EXT_SUBSTANCE_RE = re.compile(
     r"existing.validator.misses|fundamentally.different)\b",
     re.IGNORECASE,
 )
+_INSTANCE_FIX_SUBSTANCE_RE = re.compile(
+    r"\b(engine.tried|unrelated.bugs|stan.directed|cross.helper|"
+    r"revert.rerun|walkback|verify|verification)\b",
+    re.IGNORECASE,
+)
+
+# Cascade-invocation iteration tripwire (per 2026-05-05 Sifrei-Emet purge
+# arc + Opus hook audit). Detects the SECOND `apply_specs.py --book <X>`
+# / `apply_validators.py --book <X>` / `refresh_book.py --book <X>` against
+# the same `<X>` in the session window, when no Edit between the two
+# invocations touched engine-level files. The pattern is: cascade reveals
+# FP class → fix per-spec → re-cascade → same FP class → fix per-spec →
+# re-cascade ... vs. cascade reveals FP class → fix engine → re-cascade.
+# The hook fires at the moment of the second cascade with no engine fix
+# in between — exactly when the class-vs-instance question should fire.
+_CASCADE_BOOK_RE = re.compile(
+    r"\b(apply_specs|apply_validators|refresh_book)\.py\b[^|;&\n]*?--book\s+(\S+)"
+)
+_ENGINE_FILE_RE = re.compile(
+    r"(scripts/spec_runner\.py|scripts/apply_validators\.py|"
+    r"scripts/apply_specs\.py|validators/_shared/[\w.]+\.py)"
+)
+_INSTANCE_FIX_BYPASS = "# instance-fix-justified:"
 
 # Agent-tool mechanical-vocabulary trigger (per 2026-05-04 colonoscopy audit
 # §3.2 Hook (ii) — scripts-default-vs-agents). Matches prompts that describe
@@ -281,10 +305,17 @@ def _validate_bypass_substance(text: str, token: str, substance_re: re.Pattern) 
     yet be substantively vacuous. Require the reason text to match a closed
     list of recognized criteria. Skips validation if quoted phrases were
     used (those are validated separately by `_validate_override_quotes`).
+
+    Only fires on tokens at line-start; tokens appearing inside heredoc
+    bodies (e.g., a commit message describing the override mechanism) are
+    not real overrides.
     """
-    idx = text.find(token)
-    if idx < 0:
+    line_start_match = re.search(r"(?m)^\s*" + re.escape(token), text)
+    if not line_start_match:
         return None
+    idx = line_start_match.start()
+    while idx < len(text) and text[idx] in " \t":
+        idx += 1
     # Extract the rest of that line (the <reason>).
     line_end = text.find("\n", idx)
     reason = text[idx + len(token) : line_end if line_end > 0 else len(text)].strip()
@@ -709,10 +740,125 @@ def _agent_violations(prompt: str) -> list[str]:
     ]
 
 
+def _cascade_invocation_violations(command: str, transcript_path: str) -> list[str]:
+    """Detect 2nd same-book cascade invocation without engine-level Edit between.
+
+    Per 2026-05-05 Sifrei-Emet purge arc: iterating cascade against the same
+    book without an engine-level fix is the whack-a-mole signal. Three
+    iterations of per-spec guards landed before the engine fix at
+    `_check_morphology("prep")` — and only after Stan's escalation. The
+    hook fires at the moment of the second cascade with no engine fix
+    between, exactly when the class-vs-instance question should be asked.
+    """
+    m = _CASCADE_BOOK_RE.search(command)
+    if not m:
+        return []  # Not a per-book cascade invocation
+    # Only treat the bypass token as real if it appears at line-start
+    # (token strings in heredoc bodies / commit messages are not bypasses).
+    bypass_at_linestart = re.search(
+        r"(?m)^\s*" + re.escape(_INSTANCE_FIX_BYPASS), command
+    )
+    if bypass_at_linestart:
+        substance_err = _validate_bypass_substance(
+            command, _INSTANCE_FIX_BYPASS, _INSTANCE_FIX_SUBSTANCE_RE
+        )
+        if substance_err:
+            return [substance_err]
+        return []  # Bypass present and substantive
+    current_book = m.group(2)
+    if not transcript_path:
+        return []  # Can't walk transcript — don't false-block
+    p = Path(transcript_path)
+    if not p.exists():
+        return []
+    try:
+        with p.open("rb") as fh:
+            fh.seek(0, 2)
+            size = fh.tell()
+            tail_size = min(size, 5_000_000)
+            fh.seek(size - tail_size)
+            tail_bytes = fh.read()
+        tail_text = tail_bytes.decode("utf-8", errors="ignore")
+    except Exception:
+        return []
+    prior_same_book = 0
+    engine_edit_after_first = False
+    first_seen = False
+    for line in tail_text.splitlines():
+        if not line.strip():
+            continue
+        try:
+            entry = json.loads(line)
+        except Exception:
+            continue
+        if entry.get("type") != "assistant":
+            continue
+        msg = entry.get("message")
+        if not isinstance(msg, dict):
+            continue
+        content = msg.get("content")
+        if not isinstance(content, list):
+            continue
+        for block in content:
+            if not isinstance(block, dict):
+                continue
+            if block.get("type") != "tool_use":
+                continue
+            name = block.get("name")
+            tool_input = block.get("input", {})
+            if not isinstance(tool_input, dict):
+                continue
+            if name == "Bash":
+                cmd = tool_input.get("command", "") or ""
+                if not isinstance(cmd, str):
+                    continue
+                cmd_match = _CASCADE_BOOK_RE.search(cmd)
+                if cmd_match and cmd_match.group(2) == current_book:
+                    prior_same_book += 1
+                    first_seen = True
+            elif name in ("Edit", "Write") and first_seen:
+                file_path = tool_input.get("file_path", "") or ""
+                if isinstance(file_path, str) and _ENGINE_FILE_RE.search(
+                    file_path.replace("\\", "/")
+                ):
+                    engine_edit_after_first = True
+    if prior_same_book < 1:
+        return []  # First invocation of cascade against this book; no signal
+    if engine_edit_after_first:
+        return []  # Engine fix landed between cascades; correct workflow
+    return [
+        f"[CASCADE-ITERATION] About to invoke cascade against book "
+        f"'{current_book}' for the {prior_same_book + 1}th time in this "
+        f"session, with NO Edit to engine-level files "
+        f"(scripts/spec_runner.py, scripts/apply_*.py, validators/_shared/) "
+        f"between cascades. Per the 2026-05-05 Sifrei-Emet purge: re-running "
+        f"cascade after instance-level fixes (per-spec guards, per-validator "
+        f"tweaks) without addressing the engine-level class is the whack-a-"
+        f"mole pattern that took three iterations before the engine fix at "
+        f"`_check_morphology(\"prep\")` landed — and only after Stan's "
+        f"escalation. Stan's mantra: \"swat the bug class, not the instance.\"\n\n"
+        f"ACTION: STOP. Look at the per-spec/per-validator fixes between "
+        f"the prior cascade and now. Are they addressing the same conceptual "
+        f"FP class? If yes → fix at the engine level (scripts/spec_runner.py "
+        f"or validators/_shared/) before re-cascading.\n\n"
+        f"BYPASS (use only with substantive justification): prefix command "
+        f"with '{_INSTANCE_FIX_BYPASS} <reason>' where <reason> names a "
+        f"closed-vocabulary criterion: engine-tried / unrelated-bugs / "
+        f"stan-directed / cross-helper / revert-rerun / walkback / verify."
+    ]
+
+
 def _violations(command: str, payload: dict | None = None) -> list[str]:
     """Return list of detected anti-pattern violations."""
     payload = payload or {}
     violations: list[str] = []
+    transcript_path = payload.get("transcript_path", "") or ""
+
+    # --- Pattern 5: cascade-iteration tripwire ------------------------------
+    # Detects whack-a-mole: 2nd `--book <X>` cascade without engine-level Edit.
+    cascade_iter = _cascade_invocation_violations(command, transcript_path)
+    if cascade_iter:
+        violations.extend(cascade_iter)
 
     # --- Pattern 1: multi-line Python heredoc -------------------------------
     # Match `<<TAG ... TAG` or `<<'TAG' ... TAG` blocks. We need the heredoc
