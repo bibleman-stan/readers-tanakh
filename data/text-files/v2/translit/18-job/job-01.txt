@@ -14,8 +14,8 @@ va'avudah | rabah | me'od | vayhi | ha'ish | hahu | gadol | mikol | benei | kede
 
 1:4
 vehalekhu | vanav | ve'asu | mishteh | beit | ish | yomo
-veshalechu | vekare'u | lishloshet | achyoteihem | le'ekhol
-velishtot | imahem
+veshalechu | vekare'u | lishloshet | achyoteihem
+le'ekhol | velishtot | imahem
 
 1:5
 vayhi | ki | hikifu | yemei | hamishteh | vaiyishlach | Iyov
@@ -26,16 +26,13 @@ kakhah | ya'aseh | Iyov | kol | haiyamim
 
 1:6
 vayhi | haiyom
-vaiyavo'u | benei | ha'elohim
-lehityatzev | al | Yahweh
+vaiyavo'u | benei | ha'elohim | lehityatzev | al | Yahweh
 vaiyavo | gam | hasatan | betokham
 
 1:7
-vaiyomer | Yahweh | el | hasatan
-me'ayin | tavo
+vaiyomer | Yahweh | el | hasatan | me'ayin | tavo
 vaiya'an | hasatan | et | Yahweh
-vaiyomar | mishut | ba'aretz
-umehithalekh | bah
+vaiyomar | mishut | ba'aretz | umehithalekh | bah
 
 1:8
 vaiyomer | Yahweh | el | hasatan
@@ -72,22 +69,21 @@ ro'ot | al | yedeihem
 1:15
 vatipol | Sheva
 vatikachem | ve'et | hane'arim
-hiku | lefi | charev | va'imaltah | rak | ani | levadi
-lehagid | lakh
+hiku | lefi | charev | va'imaltah | rak | ani | levadi | lehagid | lakh
 
 1:16
 od | zeh | medaber | vezeh | ba | vaiyomar
 esh | elohim | nafelah | min | hashamayim
 vativ'ar | batzon | uvane'arim
 vatokhlem
-va'imaltah | rak | ani | levadi
-lehagid | lakh
+va'imaltah | rak | ani | levadi | lehagid | lakh
 
 1:17
 od | zeh | medaber | vezeh | ba | vaiyomar
-Kasdim | samu | sheloshah | rashim | vaiyifshetu | al | hagemalim | vaiyikachum | ve'et | hane'arim
-hiku | lefi | charev | va'imaltah | rak | ani | levadi
-lehagid | lakh
+Kasdim | samu | sheloshah | rashim
+vaiyifshetu | al | hagemalim
+vaiyikachum | ve'et | hane'arim
+hiku | lefi | charev | va'imaltah | rak | ani | levadi | lehagid | lakh
 
 1:18
 ad | zeh | medaber | vezeh | ba | vaiyomar | baneikha
@@ -97,8 +93,7 @@ uvenoteikha | okhelim | veshotim | yayin | beveit | achihem | habekhor
 vehineh | ruach | gedolah | ba'ah | me'ever | hamidbar | vaiyiga | be'arba | pinot | habayit
 vaiyipol | al | hane'arim
 vaiyamutu
-va'imaltah | rak | ani | levadi
-lehagid | lakh
+va'imaltah | rak | ani | levadi | lehagid | lakh
 
 1:20
 vaiyakom | Iyov

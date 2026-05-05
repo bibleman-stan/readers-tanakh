@@ -1,6 +1,5 @@
 78:1
-maskil | Le'asaf
-ha'azinah | ami | torati
+maskil | Le'asaf | ha'azinah | ami | torati
 hatu | azenekhem | le'imrei | fi
 
 78:2
@@ -11,16 +10,13 @@ abi'ah | chidot | mini | kedem
 asher | shama'nu | vaneda'em | va'avoteinu | siperu | lanu
 
 78:4
-lo | nekhached | mibeneihem
-ledor | acharon
+lo | nekhached | mibeneihem | ledor | acharon
 mesaperim | tehilot | Yahweh
-ve'ezuzo | venifle'otav
-asher | asah
+ve'ezuzo | venifle'otav | asher | asah
 
 78:5
 vaiyakem | edut | Beya'ako
-vetorah | sam | Beyisra'el
-asher | tzivah | et | avoteinu | lehodi'am | livneihem
+vetorah | sam | Beyisra'el | asher | tzivah | et | avoteinu | lehodi'am | livneihem
 
 78:6
 lema'an | yede'u | dor | acharon | banim | yivaledu
@@ -28,45 +24,37 @@ yakumu
 visaperu | livneihem
 
 78:7
-veyasimu | velohim | kislam | velo | yishkechu | ma'alei | el
-umitzvotav | yintzoru
+veyasimu | velohim | kislam | velo | yishkechu | ma'alei | el | umitzvotav | yintzoru
 
 78:8
-velo | yihyu | ka'avotam
-dor | sorer | umoreh
+velo | yihyu | ka'avotam | dor | sorer | umoreh
 dor | lo | hekhin | libo
 velo | Ne'emnah | et | el | rucho
 
 78:9
-benei | Efrayim
-noshekei | romei | kashet
-hafekhu
-beyom | kerav
+benei | Efrayim | noshekei | romei | kashet
+hafekhu | beyom | kerav
 
 78:10
 lo | shamru | berit | elohim | uvetorato
 me'anu | lalekhet
 
 78:11
-vaiyishkechu | alilotav | venifle'otav
-asher | her'am
+vaiyishkechu | alilotav | venifle'otav | asher | her'am
 
 78:12
-neged | avotom | asah | fele
-be'eretz | Mitzrayim | sedeh | Tzo'an
+neged | avotom | asah | fele | be'eretz | Mitzrayim | sedeh | Tzo'an
 
 78:13
 baka | yam | vaiya'avirem
 vaiyatzev | mayim | kemov | ned
 
 78:14
-vaiyanchem | be'anan | yomam | vekhol | halaylah
-be'or | esh
+vaiyanchem | be'anan | yomam | vekhol | halaylah | be'or | esh
 
 78:15
 yevaka | tzurim | bamidbar
-vaiyashk
-kithomot | rabah
+vaiyashk | kithomot | rabah
 
 78:16
 vaiyotzi | nozlim | misala
@@ -77,8 +65,7 @@ vaiyosifu | od | lachato | lo
 lamrot | elyon | batziyah
 
 78:18
-vaynasu | el | bilvavam
-lish'ol | okhel | lenafsham
+vaynasu | el | bilvavam | lish'ol | okhel | lenafsham
 
 78:19
 vaydaberu | belohim
@@ -104,8 +91,8 @@ vaytzav | shechakim | mima'al
 vedaltei | shamayim | patach
 
 78:24
-vaiyamter | aleihem | man | le'ekhol | udeganosha | shamayim
-natan | lamo
+vaiyamter | aleihem | man
+le'ekhol | udeganosha | shamayim | natan | lamo
 
 78:25
 lechem | abirim | akhal | ish
@@ -128,8 +115,7 @@ vaiyokhelu | vaiyisbe'u | me'od | veta'avatam
 yavi | lahem
 
 78:30
-lo | zaru | mita'avatam | od
-akhelam | befihem
+lo | zaru | mita'avatam | od | akhelam | befihem
 
 78:31
 ve'af | elohim | alah | vahem
@@ -155,8 +141,7 @@ ve'el | elyon | go'alam
 vayfatuhu | befihem | uvilshonam | yekhazevu | lo
 
 78:37
-velibom | lo | Nakhon | imo
-velo | Ne'emnu | bivrito
+velibom | lo | Nakhon | imo | velo | Ne'emnu | bivrito
 
 78:38
 vehu | rachum | yekhaper | avon | velo | yashchit
@@ -164,13 +149,11 @@ vehirbah | lehashiv | apo
 velo | ya'ir | kol | chamato
 
 78:39
-vaiyizkor | ki | vasar | hemah
-ruach | holekh
+vaiyizkor | ki | vasar | hemah | ruach | holekh
 velo | yashuv
 
 78:40
-kamah | yamruhu | vamidbar
-ya'atzivuhu | bishimon
+kamah | yamruhu | vamidbar | ya'atzivuhu | bishimon
 
 78:41
 vaiyashuvu | vaynasu | el
@@ -201,17 +184,14 @@ vaiyasger | labarad | be'iram | umikneihem | lareshafim
 
 78:49
 yeshalach | bam | charon | apo
-evrah | vaza'am | vetzarah
-mishlachat | mal'akhei | ra'im
+evrah | vaza'am | vetzarah | mishlachat | mal'akhei | ra'im
 
 78:50
 yefales | nativ | le'apo
-lo | chasakh | mimavet | nafsham | vechaiyatam
-ladever | hisgir
+lo | chasakh | mimavet | nafsham | vechaiyatam | ladever | hisgir
 
 78:51
-vaiyakh | kol | bekhor | Bemitzrayim
-reshit | onim | be'oholei | Cham
+vaiyakh | kol | bekhor | Bemitzrayim | reshit | onim | be'oholei | Cham
 
 78:52
 vaiyasa | katzon | amo
@@ -237,8 +217,7 @@ lo | shamaru
 
 78:57
 vaiyisogu | vaiyivgedu | ka'avotam
-Nehpekhu
-kekeshet | remiyah
+Nehpekhu | kekeshet | remiyah
 
 78:58
 vaiyakh'isuhu | bevamotam | uvifsileihem
@@ -253,24 +232,20 @@ vaiyitosh | mishkan | Shilo | ohel
 shiken | ba'adam
 
 78:61
-vaiyiten | lashevi | uzo
-vetif'arto | veyad | tzar
+vaiyiten | lashevi | uzo | vetif'arto | veyad | tzar
 
 78:62
 vaiyasger | lacherev | amo | uvenachalato
 hit'abar
 
 78:63
-bachurav | akhelah | esh | uvetulotav
-lo | hulalu
+bachurav | akhelah | esh | uvetulotav | lo | hulalu
 
 78:64
-kohanav | bacherev | nafalu | ve'almenotav
-lo | tivkeinah
+kohanav | bacherev | nafalu | ve'almenotav | lo | tivkeinah
 
 78:65
-vaiyikatz | keyashen | Adonai | kegibor
-mitronen | miyayin
+vaiyikatz | keyashen | Adonai | kegibor | mitronen | miyayin
 
 78:66
 vaiyakh | tzarav | achor
@@ -283,8 +258,7 @@ uveshevet | Efrayim
 lo | vachar
 
 78:68
-vaiyivchar | et | shevet | Yehudah | et | har | Tziyon
-asher | ahev
+vaiyivchar | et | shevet | Yehudah | et | har | Tziyon | asher | ahev
 
 78:69
 vaiyiven | kemov | ramim | mikdasho | ke'eretz
@@ -292,12 +266,10 @@ yesadah | le'olam
 
 78:70
 vaiyivchar | Bedavid | avdo
-vaiyikachehu
-mimikhle'ot | tzon
+vaiyikachehu | mimikhle'ot | tzon
 
 78:71
-me'achar | alot
-hevi'o
+me'achar | alot | hevi'o
 lir'ot | Beya'ako | amo | Uveyisra'el | nachalato
 
 78:72

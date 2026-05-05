@@ -1,8 +1,6 @@
 74:1
-maskil | Le'asaf
-lamah | elohim | zanachta | lanetzach
-ye'shan | apekha
-betzon | mar'itekha
+maskil | Le'asaf | lamah | elohim | zanachta | lanetzach
+ye'shan | apekha | betzon | mar'itekha
 
 74:2
 zekhor | adatekha | kanita | kedem
@@ -21,8 +19,7 @@ samu | ototam | otot
 yivada | kemevi | lema'elah | bisavokh | etz | kardumot
 
 74:6
-ve'atah | pitucheiha | yachad
-bekhashil | vekheilapot
+ve'atah | pitucheiha | yachad | bekhashil | vekheilapot
 yahalomun
 
 74:7
@@ -34,10 +31,7 @@ ameru | velibom | ninam | yachad
 sarefu | khol | mo'adei | el | ba'aretz
 
 74:9
-ototeinu
-lo | ra'inu
-ein | od | navi | velo | itanu
-yodea | ad | mah
+ototeinu | lo | ra'inu | ein | od | navi | velo | itanu | yodea | ad | mah
 
 74:10
 ad | matai | elohim | yecharef | tzar
@@ -49,8 +43,7 @@ mikerev | cheikecha | khaleh
 
 74:12
 velohim | malki | mikedem
-po'el | yeshu'ot
-bekerev | ha'aretz
+po'el | yeshu'ot | bekerev | ha'aretz
 
 74:13
 atah | forarta | ve'azekha | yam
@@ -58,43 +51,34 @@ shibarta | rashei | taninim | al | hamayim
 
 74:14
 atah | ritzatzta | rashei | livyatan
-titenenu | ma'akhal
-le'am | letziyim
+titenenu | ma'akhal | le'am | letziyim
 
 74:15
 atah | vaka'ta | ma'yan | vanachal
-atah | hovashta
-naharot | eitan
+atah | hovashta | naharot | eitan
 
 74:16
-lekha | yom | af | lekha | layelah
-atah | hakhinota
+lekha | yom | af | lekha | layelah | atah | hakhinota
 ma'or | vashamesh
 
 74:17
-atah | hitzavta | kol | gevulot | aretz
-kayitz | vachoref
+atah | hitzavta | kol | gevulot | aretz | kayitz | vachoref
 atah | yetzartam
 
 74:18
-zekhor | zot
-oyev | cheref | Yahweh
-ve'am | naval
-ni'atzu | shemekha
+zekhor | zot | oyev | cheref | Yahweh
+ve'am | naval | ni'atzu | shemekha
 
 74:19
 al | titen | lechaiyat | nefesh | torekha
-chaiyat | aniyeikha
-al | tishkach | lanetzach
+chaiyat | aniyeikha | al | tishkach | lanetzach
 
 74:20
 habet | laberit
-ki | mal'u | machashakei | eretz
-ne'ot | chamas
+ki | mal'u | machashakei | eretz | ne'ot | chamas
 
 74:21
-al | yasho | dakh | nikhlam
-ani | ve'evyon
+al | yasho | dakh | nikhlam | ani | ve'evyon
 yehalu | shemekha
 
 74:22
@@ -103,5 +87,4 @@ zekhor | cherpatekha | mini | naval | kol | haiyom
 
 74:23
 al | tishkach | kol | tzorereikha
-she'on | kameicha
-oleh | tamid
+she'on | kameicha | oleh | tamid

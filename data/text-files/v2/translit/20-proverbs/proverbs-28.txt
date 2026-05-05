@@ -1,6 +1,5 @@
 28:1
-nasu | ve'ein | rodef | rasha | vetzadikim
-kikhfir | yivtach
+nasu | ve'ein | rodef | rasha | vetzadikim | kikhfir | yivtach
 
 28:2
 befesha | eretz | rabim | sareiha
@@ -8,23 +7,19 @@ uve'adam | mevin | yodea
 ken | ya'arikh
 
 28:3
-gever | rash | ve'oshek | dalim
-matar | sochef
+gever | rash | ve'oshek | dalim | matar | sochef
 ve'ein | lachem
 
 28:4
 ozevei | torah | yehalu | rasha
-veshomerei | torah
-yitgaru | vam
+veshomerei | torah | yitgaru | vam
 
 28:5
 anshei | ra | lo | yavinu | mishpat
-umevakshei | Yahweh
-yavinu | khol
+umevakshei | Yahweh | yavinu | khol
 
 28:6
-tov | rash | holekh | betumo
-me'ikesh | derakhayim
+tov | rash | holekh | betumo | me'ikesh | derakhayim
 vehu | ashir
 
 28:7
@@ -48,8 +43,7 @@ chakham | be'einav | ish | ashir
 vedal | mevin | yachkerenu
 
 28:12
-ba'alotz | tzadikim | rabah | tif'aret
-uvekum | resha'im
+ba'alotz | tzadikim | rabah | tif'aret | uvekum | resha'im
 yechupas | adam
 
 28:13
@@ -57,18 +51,14 @@ mekhaseh | fesha'av | lo | yatzliach
 umodeh | ve'ozev | yerucham
 
 28:14
-ashrei | adom | mefached | tamid
-umaksheh | libo
+ashrei | adom | mefached | tamid | umaksheh | libo
 yipol | bera'ah
 
 28:15
-ari | nohem | vedo | shokek
-moshel | rasha
-al | am | dal
+ari | nohem | vedo | shokek | moshel | rasha | al | am | dal
 
 28:16
-nagid
-chasar | tevunot | verav | ma'ashakot
+nagid | chasar | tevunot | verav | ma'ashakot
 sone'ei | vetza
 ya'arikh | yamim
 
@@ -76,8 +66,7 @@ ya'arikh | yamim
 adom | ashuk | bedam | nafesh | ad | bor | yanus | al | yitmekhu | vo
 
 28:18
-holekh | tamim | yivashea
-vene'kash | derakhayim
+holekh | tamim | yivashea | vene'kash | derakhayim
 yipol | be'echat
 
 28:19
@@ -95,12 +84,10 @@ haker | panim | lo | tov | ve'al | pat | lechem | yifsha | gaver
 28:22
 nivohal | lahon
 ish | ra | ayin
-velo | yeda
-ki | cheser | yevo'enu
+velo | yeda | ki | cheser | yevo'enu
 
 28:23
-mokhiach | adam | acharai | chen | yimtza
-mimachalik | lashon
+mokhiach | adam | acharai | chen | yimtza | mimachalik | lashon
 
 28:24
 gozel | aviv | ve'imo
@@ -122,5 +109,5 @@ noten | larosh | ein | machsor
 uma'lim | einav | rav | me'erot
 
 28:28
-bekum | resha'im | yisater | adam | uve'avedam
-yirbu | tzadikim
+bekum | resha'im | yisater | adam
+uve'avedam | yirbu | tzadikim

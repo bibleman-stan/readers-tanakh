@@ -1,7 +1,5 @@
 10:1
-lamah | Yahweh | ta'amod | berachok
-ta'lim
-le'itot | batzarah
+lamah | Yahweh | ta'amod | berachok | ta'lim | le'itot | batzarah
 
 10:2
 bega'avat | rasho | yidlak | ani
@@ -12,35 +10,27 @@ ki | hilel | rasho | al | ta'avat | nafsho
 uvotzea | berekh | ni'etz | Yahweh
 
 10:4
-rasha
-kegoah | apo | bal | yidrosh
-ein | elohim | kol | mezimotav
+rasha | kegoah | apo | bal | yidrosh | ein | elohim | kol | mezimotav
 
 10:5
-yachilu | darekv | bekhol | et
-marom | mishpateikha | minegdo | kol | tzorav
+yachilu | darekv | bekhol | et | marom | mishpateikha | minegdo | kol | tzorav
 yafiach | bahem
 
 10:6
-amar | belibo | bal | emot
-ledor | vador
-asher | lo | vera
+amar | belibo | bal | emot | ledor | vador | asher | lo | vera
 
 10:7
-alah | pihu | male | umirmot | vatokh
-tachat | leshono
+alah | pihu | male | umirmot | vatokh | tachat | leshono
 amal | va'aven
 
 10:8
 yeshev | bema'rav | chatzerim
-bamistarim | yaharog | naki | einav
-lechelekhah | yitzponu
+bamistarim | yaharog | naki | einav | lechelekhah | yitzponu
 
 10:9
 ye'ero | bamistar | ke'aryeh | vesukoh
 ye'ero | lachatof | ani
-yachtof | ani
-bemashekho | verishto
+yachtof | ani | bemashekho | verishto
 
 10:10
 vadakhah | yashoach
@@ -57,12 +47,12 @@ el | nesa | yadekha
 al | tishkach | aniyim
 
 10:13
-al | meh | ni'etz | rasha | elohim
-amar | belibo
+al | meh | ni'etz | rasha | elohim | amar | belibo
 lo | tidrosh
 
 10:14
-ra'itah | ki | atah | amal | vakha'as | tabit | latet | beyadekha
+ra'itah | ki | atah | amal | vakha'as | tabit
+latet | beyadekha
 aleikha | ya'azo | chelekhah | yatom
 atah | hayita | ozer
 

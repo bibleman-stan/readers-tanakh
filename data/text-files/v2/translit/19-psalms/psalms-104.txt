@@ -1,6 +1,5 @@
 104:1
-barakhi | nafshi | et | Yahweh | Yahweh | elohai | gadalta | me'od
-hod | vehadar | lavasheta
+barakhi | nafshi | et | Yahweh | Yahweh | elohai | gadalta | me'od | hod | vehadar | lavasheta
 
 104:2
 oteh | or | kasalmah
@@ -8,25 +7,20 @@ noteh | shamayim | kayri'ah
 
 104:3
 hamkareh | vamayim | aliyotav
-hasom | avim | rekhuvo
-hamhalekh | al | kanfei | ruach
+hasom | avim | rekhuvo | hamhalekh | al | kanfei | ruach
 
 104:4
 oseh | mal'akhav | ruchot | mesharetav
 esh | lohet
 
 104:5
-yasad | eretz | al | mekhoneiha
-bal | timot
-olam | va'ed
+yasad | eretz | al | mekhoneiha | bal | timot | olam | va'ed
 
 104:6
 tehom | kalevush | kisito | al | harim | ya'amdu | mayim
 
 104:7
-min | ga'aratekha | yenusun
-min | kol | ra'amkha
-yechafezun
+min | ga'aratekha | yenusun | min | kol | ra'amkha | yechafezun
 
 104:8
 ya'alu | harim | yeredu | veka'ot | el | mekom
@@ -34,12 +28,10 @@ zeh | yasadta | lahem
 
 104:9
 gevulsa | samta | bal | ya'avorun
-bal | yeshuvun
-lekhasot | ha'aretz
+bal | yeshuvun | lekhasot | ha'aretz
 
 104:10
-hamshaleach | ma'yanim | banechalim
-bein | harim
+hamshaleach | ma'yanim | banechalim | bein | harim
 yehalekhun
 
 104:11
@@ -47,12 +39,10 @@ yashku | kol | chayto | sadai
 yishberu | fera'im | tzema'am
 
 104:12
-aleihem | of | hashamayim | yishkon
-mibein | ofayim | yitenu | kol
+aleihem | of | hashamayim | yishkon | mibein | ofayim | yitenu | kol
 
 104:13
-mashkeh | harim | me'aliyotav
-miperi | ma'aseikha
+mashkeh | harim | me'aliyotav | miperi | ma'aseikha
 tisba | ha'aretz
 
 104:14
@@ -66,17 +56,13 @@ lehatzhil | panim | mishamen | velechem
 levav | enoosh | yis'ad
 
 104:16
-yisbe'u | atzei | Yahweh
-arzei | Levanon
-asher | nata
+yisbe'u | atzei | Yahweh | arzei | Levanon | asher | nata
 
 104:17
-asherosha | sham | tziporim | yekanenu | chasidah
-beroshim | beitah
+asherosha | sham | tziporim | yekanenu | chasidah | beroshim | beitah
 
 104:18
-harim | hagevohim | laiye'elim | sela'im
-machseh | lashfanim
+harim | hagevohim | laiye'elim | sela'im | machseh | lashfanim
 
 104:19
 asah | yareach | lemo'adim | shemesh
@@ -95,14 +81,11 @@ tizrach | hashemesh | ye'asefun | ve'el | me'onotam
 yirbatzun
 
 104:23
-yetze | adam | lefo'olo
-vela'avodato | adei | arev
+yetze | adam | lefo'olo | vela'avodato | adei | arev
 
 104:24
-mah | rabu | ma'aseikha | Yahweh
-kulom | bechakhemah | asita
-mal'ah | ha'aretz
-kinyanecha
+mah | rabu | ma'aseikha | Yahweh | kulom | bechakhemah | asita
+mal'ah | ha'aretz | kinyanecha
 
 104:25
 zeh | haiyam | gadol | urechav | yadayim

@@ -27,8 +27,7 @@ le'oseh | orim | gedolim
 ki | le'olam | chasdo
 
 136:8
-et | hashemesh | lememshelet | baiyom
-ki | le'olam | chasdo
+et | hashemesh | lememshelet | baiyom | ki | le'olam | chasdo
 
 136:9
 et | haiyareach | vekhokhavim | lememshelot | balayelah
@@ -43,7 +42,8 @@ vaiyotze | Yisra'el | mitokham
 ki | le'olam | chasdo
 
 136:12
-beyad | chazakah | uvizroa | netuyah
+beyad | chazakah
+uvizroa | netuyah
 ki | le'olam | chasdo
 
 136:13

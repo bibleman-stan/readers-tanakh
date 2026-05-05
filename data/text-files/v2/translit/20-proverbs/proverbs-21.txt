@@ -23,8 +23,7 @@ hevel | nidaf | mevakshei | mavet
 
 21:7
 shod | resha'im | yegorem
-ki | me'anu
-la'asot | mishpat
+ki | me'anu | la'asot | mishpat
 
 21:8
 hafakhpakh | derekh | ish | vazar
@@ -33,9 +32,7 @@ yashar | po'olo
 
 21:9
 tov
-lashevet | al | pinat | gag
-me'eshet | midyanim
-uveit | chaver
+lashevet | al | pinat | gag | me'eshet | midyanim | uveit | chaver
 
 21:10
 nefesh | rasho | ivetah | ra
@@ -46,8 +43,7 @@ ba'nosh | letz | yechkam | peti
 uvehaskil | lechakham | yikach | da'at
 
 21:12
-maskil | tzadik | leveit | rasha
-mesalef | resha'im | lara
+maskil | tzadik | leveit | rasha | mesalef | resha'im | lara
 
 21:13
 otem | azeno | miza'akat | dal
@@ -60,17 +56,14 @@ veshochad | bachek
 chemah | azah
 
 21:15
-simchah | latzadik | asot | mishpat | umechitah
-lefo'alei | aven
+simchah | latzadik | asot | mishpat | umechitah | lefo'alei | aven
 
 21:16
-adam
-to'eh | miderekh | haskel
+adam | to'eh | miderekh | haskel
 bikhal | refa'im | yanuach
 
 21:17
-ish | machsor | ohev | simchah
-ohev | yayin | vashemen
+ish | machsor | ohev | simchah | ohev | yayin | vashemen
 lo | ya'ashir
 
 21:18
@@ -79,8 +72,7 @@ vetachat | yesharim | boged
 
 21:19
 tov
-shevet | be'eretz | midbar
-me'eshet | medonim | vakha'as
+shevet | be'eretz | midbar | me'eshet | medonim | vakha'as
 
 21:20
 otzar | nechmad | vashemen | binveh | chakham
@@ -92,16 +84,14 @@ yimtza | chaiyim | tzedakah | vekhavod
 
 21:22
 ir | giborim | alah | chakham
-vaiyored
-oz | mivtechah
+vaiyored | oz | mivtechah
 
 21:23
 shomer | piv | uleshono
 shomer | mitzarot | nafsho
 
 21:24
-zed | yahir | letz | shemo | oseh
-be'evrat | zadon
+zed | yahir | letz | shemo | oseh | be'evrat | zadon
 
 21:25
 ta'avat | atzel | temitenu
@@ -113,13 +103,10 @@ vetzadik | yiten
 velo | yachsokh
 
 21:27
-zevach | resha'im | to'evah | af
-ki | vezimah | yevi'enu
+zevach | resha'im | to'evah | af | ki | vezimah | yevi'enu
 
 21:28
-ed | kezavim | yoved
-ve'ish | shomea
-lanetzach | yedaber
+ed | kezavim | yoved | ve'ish | shomea | lanetzach | yedaber
 
 21:29
 he'ez | ish | rasha | befanav | veyashar
@@ -131,5 +118,4 @@ ve'ein | etzah
 leneged | Yahweh
 
 21:31
-sus
-mukhon | leyom | milchamah | Velayahweh | hateshu'ah
+sus | mukhon | leyom | milchamah | Velayahweh | hateshu'ah

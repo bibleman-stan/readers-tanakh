@@ -1,10 +1,8 @@
 33:1
-ranenu | tzadikim | Bayahweh | laysharim
-navah | tehilah
+ranenu | tzadikim | Bayahweh | laysharim | navah | tehilah
 
 33:2
-hodu | Layahweh | bekhinor
-benevel | asor | zameru | lo
+hodu | Layahweh | bekhinor | benevel | asor | zameru | lo
 
 33:3
 shiru | lo | shir | chadash
@@ -23,8 +21,7 @@ bidvar | Yahweh | shamayim | Na'asu
 uveruach | piv | kol | tzeva'am
 
 33:7
-kones | kaned | mei | haiyam
-noten | be'otzarot | tehomot
+kones | kaned | mei | haiyam | noten | be'otzarot | tehomot
 
 33:8
 yire'u | Meyahweh | kol | ha'aretz
@@ -37,27 +34,21 @@ hu | tzivah
 vaiya'amod
 
 33:10
-Yahweh
-hefir | atzat | goyim
-heni
-machshevot | amim
+Yahweh | hefir | atzat | goyim
+heni | machshevot | amim
 
 33:11
-atzat | Yahweh | le'olam | ta'amod
-machshevot | libo
-ledor | vador
+atzat | Yahweh | le'olam | ta'amod | machshevot | libo | ledor | vador
 
 33:12
 ashrei | hagoy | asher | Yahweh | elohav
 ha'am | bachar | lenachalah | lo
 
 33:13
-mishamayim | hibit | Yahweh
-ra'ah | et | kol | benei | ha'adam
+mishamayim | hibit | Yahweh | ra'ah | et | kol | benei | ha'adam
 
 33:14
-mimekhon | shivto | hishgiach
-el | kol | yoshevei | ha'aretz
+mimekhon | shivto | hishgiach | el | kol | yoshevei | ha'aretz
 
 33:15
 haiyotzer | yachad | libam | hamevin | el | kol | ma'aseihem
@@ -72,15 +63,13 @@ uvero | cheilo
 lo | yemalet
 
 33:18
-hineh | ein | Yahweh | el | yere'av
-lamyachalim | lechasdo
+hineh | ein | Yahweh | el | yere'av | lamyachalim | lechasdo
 
 33:19
 lehatzil | mimavet | nafsham | ulechaiyotam | bara'av
 
 33:20
-nafshenu | chiketah | Layahweh
-ezrenu | umaginenu | hu
+nafshenu | chiketah | Layahweh | ezrenu | umaginenu | hu
 
 33:21
 ki | vo | yismach | libenu

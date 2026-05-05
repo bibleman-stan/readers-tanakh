@@ -22,9 +22,7 @@ ve'im | zakharti | Venivhalti
 ve'achaz | besari | palatzut
 
 21:7
-madua | resha'im | yichyu
-ateku
-gam | gaveru | chayil
+madua | resha'im | yichyu | ateku | gam | gaveru | chayil
 
 21:8
 zar'am | nakhon | lifneihem | imam | vetze'etza'eihem | le'eineihem
@@ -44,12 +42,11 @@ yerakedun
 
 21:12
 yis'u | ketof | vekhinor
-veyismechu
-lekol | ugav
+veyismechu | lekol | ugav
 
 21:13
-yekhalu | vatov | yemeihem | uverega
-she'ol | yechatu
+yekhalu | vatov | yemeihem
+uverega | she'ol | yechatu
 
 21:14
 vaiyomeru | la'el | sur | mimenu
@@ -72,13 +69,11 @@ veyavo | aleimov | eidam | chavalim
 yechalek | be'apo
 
 21:18
-yihyu
-keteven | lifnei | ruach | ukhemotz
-genavatu | sufah
+yihyu | keteven | lifnei | ruach
+ukhemotz | genavatu | sufah
 
 21:19
-eloah
-yitzpon | levanav | ono
+eloah | yitzpon | levanav | ono
 yeshalem | elav | veyeda
 
 21:20
@@ -94,17 +89,14 @@ hal'el | yelamed | da'at | vehu
 ramim | yishpot
 
 21:23
-zeh
-yamut | be'etzem | tumo | kulo
-shal'anan | veshaleiv
+zeh | yamut | be'etzem | tumo | kulo | shal'anan | veshaleiv
 
 21:24
 atinav | mal'u | chalav
 umoach | atzmotav | yeshukeh
 
 21:25
-vezeh
-yamut | benefesh | marah
+vezeh | yamut | benefesh | marah
 velo | akhal | batovah
 
 21:26
@@ -116,8 +108,7 @@ hen | yada'ti | machshevoteikhem | umezimot | alai | tachmosu
 
 21:28
 ki | tomeru
-aiyeh | veit | nadiv | ve'aiyeh
-ohel | mishkenot | resha'im
+aiyeh | veit | nadiv | ve'aiyeh | ohel | mishkenot | resha'im
 
 21:29
 halo | she'eltem | ovrei | darekh | ve'ototam
@@ -129,17 +120,14 @@ leyom | avarot | yuvalu
 
 21:31
 mi | yagid | al | panav | darko
-vehu | asah
-mi | yeshalem | lo
+vehu | asah | mi | yeshalem | lo
 
 21:32
 vehu | likvarot | yuval
 ve'al | gadish | yishkod
 
 21:33
-mateku | lo
-rigvei | nachal | ve'acharav | kol | adam | yimshokh | ulefanav
-ein | mispar
+mateku | lo | rigvei | nachal | ve'acharav | kol | adam | yimshokh | ulefanav | ein | mispar
 
 21:34
 ve'eikh | tenachamuni | havel | uteshuvoteikhem | Nish'ar | ma'al

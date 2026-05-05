@@ -9,12 +9,10 @@ ken | kilat | chinam
 lo | tavo
 
 26:3
-shot | lasus | meteg | lachamor | veshevet
-legev | kesilim
+shot | lasus | meteg | lachamor | veshevet | legev | kesilim
 
 26:4
-al | ta'an | kesil | ke'ivalto
-pen | tishveh | lo | gam | atah
+al | ta'an | kesil | ke'ivalto | pen | tishveh | lo | gam | atah
 
 26:5
 aneh | khesil | ke'ivalto
@@ -25,16 +23,14 @@ mekatzeh | raglayim | chamas | shoteh
 sholeach | devarim | beyad | kesil
 
 26:7
-dalyu | shokayim | mipiseach | umashal
-befi | khesilim
+dalyu | shokayim | mipiseach | umashal | befi | khesilim
 
 26:8
 kitzror | even | bemargemah
 ken | noten | likhsil | kavod
 
 26:9
-choach | alah | veyad | shikor | umashal
-befi | khesilim
+choach | alah | veyad | shikor | umashal | befi | khesilim
 
 26:10
 rav | mecholel | kol
@@ -46,29 +42,23 @@ kekhelev | shav | al | ke'o | kesil
 shoneh | ve'ivalto
 
 26:12
-ra'ita | ish | chakham | be'einav
-tikvah | likhsil | mimenu
+ra'ita | ish | chakham | be'einav | tikvah | likhsil | mimenu
 
 26:13
-amar | atzel | shachal | badarekh | ari
-bein | harechovot
+amar | atzel | shachal | badarekh | ari | bein | harechovot
 
 26:14
 hadelet | tisov | al | tzirah | ve'atzel | al | mitato
 
 26:15
 taman | atzel | yado | batzalachat
-Nil'ah
-lahashivah | el | piv
+Nil'ah | lahashivah | el | piv
 
 26:16
-chakham | atzel | be'einav | mishiv'ah
-meshivei | ta'am
+chakham | atzel | be'einav | mishiv'ah | meshivei | ta'am
 
 26:17
-machazik | be'azenei | khalev
-over | mit'aber
-al | riv | lo | lo
+machazik | be'azenei | khalev | over | mit'aber | al | riv | lo | lo
 
 26:18
 kemitlahleah | haiyoreh | zikim
@@ -76,12 +66,10 @@ chitzim | vamavet
 
 26:19
 ken | ish | rimah | et | re'ehu
-ve'amar
-halo | mesachek | ani
+ve'amar | halo | mesachek | ani
 
 26:20
-be'efes | etzim | tikhbeh | esh
-uve'ein | nirgan
+be'efes | etzim | tikhbeh | esh | uve'ein | nirgan
 yishtok | madon
 
 26:21
@@ -97,8 +85,8 @@ kesef | sigim | metzupeh | al | chares
 sefatayim | dolekim | velev | ra
 
 26:24
-bisfatov | yinakher | sone | uvekirbo
-yashit | mirmah
+bisfatov | yinakher | sone
+uvekirbo | yashit | mirmah
 
 26:25
 ki | yechanen | kolo | al | ta'amen | bo
@@ -115,5 +103,4 @@ elav | tashuv
 
 26:28
 leshonoshe | sheker | yisna | dakav
-upeh | chalak
-ya'aseh | midcheh
+upeh | chalak | ya'aseh | midcheh

@@ -1,14 +1,12 @@
 94:1
-el | nekamot | Yahweh
-el | nekamot | hofiya
+el | nekamot | Yahweh | el | nekamot | hofiya
 
 94:2
 hinase | shofet | ha'aretz
 hashev | gemul | al | ge'im
 
 94:3
-ad | matai | resha'im | Yahweh | ad | matai
-resha'im | ya'alozu
+ad | matai | resha'im | Yahweh | ad | matai | resha'im | ya'alozu
 
 94:4
 yabi'u | yedaberu | atak
@@ -29,8 +27,7 @@ velo | yavin
 elohei | Ya'ako
 
 94:8
-binu | bo'arim | ba'am | ukhesilim
-matai | taskilu
+binu | bo'arim | ba'am | ukhesilim | matai | taskilu
 
 94:9
 hanota | ozen | halo | yishma
@@ -42,13 +39,10 @@ hayoser | goyim | halo | yokhiach
 hamlamed | adam | da'at
 
 94:11
-Yahweh
-yodea | machshevot | adam
-ki | hemah | havel
+Yahweh | yodea | machshevot | adam | ki | hemah | havel
 
 94:12
-ashrei | hagever | asher | teyasserenu | Yah
-umitoratekha | telammedenu
+ashrei | hagever | asher | teyasserenu | Yah | umitoratekha | telammedenu
 
 94:13
 lehashkit | lo | mimei | ra
@@ -62,9 +56,7 @@ lo | ya'azo
 ki | ad | tzedek | yashuv | mishpat | ve'acharav | kol | yishrei | lev
 
 94:16
-mi | yakum | li | im | mere'im
-mi | yityatzev | li
-im | po'alei | aven
+mi | yakum | li | im | mere'im | mi | yityatzev | li | im | po'alei | aven
 
 94:17
 lulei | Yahweh | ezratah | li
@@ -80,19 +72,16 @@ tanchumeikha
 yesha'ash'u | nafshi
 
 94:20
-haychaverekha | kise | havot
-yotzer | amal | alei | chok
+haychaverekha | kise | havot | yotzer | amal | alei | chok
 
 94:21
 yagodu | al | nefesh | tzadik
 vedam | naki | yarshi'u
 
 94:22
-vayhi | Yahweh | li | lemisgav | velohai
-letzur | machsi
+vayhi | Yahweh | li | lemisgav | velohai | letzur | machsi
 
 94:23
-vaiyashev | aleihem | et | onam
-uvera'atam | yatzmitem
+vaiyashev | aleihem | et | onam | uvera'atam | yatzmitem
 yatzmitem
 Yahweh | eloheinu

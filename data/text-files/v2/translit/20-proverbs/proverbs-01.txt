@@ -1,6 +1,5 @@
 1:1
-mishlei | Shelomoh | ven | David
-melekh | Yisra'el
+mishlei | Shelomoh | ven | David | melekh | Yisra'el
 
 1:2
 lada'at | chokhmah | umusar | lehavin
@@ -32,21 +31,16 @@ shema | beni | musar | avikha
 ve'al | titosh | torat | imekha
 
 1:9
-ki | livyat | chen | hem | leroshekha | va'anakim
-legargeroteikha
+ki | livyat | chen | hem | leroshekha | va'anakim | legargeroteikha
 
 1:10
-beni | im | yefatukha | chata'im
-al | tove
+beni | im | yefatukha | chata'im | al | tove
 
 1:11
-im | yomeru | lekhah | itanu
-ne'ervah | ledam
-nitzpenah | lenaki | chinam
+im | yomeru | lekhah | itanu | ne'ervah | ledam | nitzpenah | lenaki | chinam
 
 1:12
-nivla'em | kish'ol | chaiyim | utemimim
-keyordei | vor
+nivla'em | kish'ol | chaiyim | utemimim | keyordei | vor
 
 1:13
 kol | hon | yakar | nimtza
@@ -54,12 +48,10 @@ nemale | vateinu | shalal
 
 1:14
 goralkha | tapil | betokhenu
-kis | echad
-yihyeh | lekhulanu
+kis | echad | yihyeh | lekhulanu
 
 1:15
-beni
-al | telekh | bederekh | itam
+beni | al | telekh | bederekh | itam
 mena | raglekha | minetivatam
 
 1:16
@@ -67,16 +59,14 @@ ki | ragleihem | lara | yarutzu
 vimaharu | lishpokh | dam
 
 1:17
-ki | chinom | mezorah | harashet
-be'einei | khol | ba'al | kanaf
+ki | chinom | mezorah | harashet | be'einei | khol | ba'al | kanaf
 
 1:18
 vehem | ledamam | ye'erou
 yitzpenu | lenafshotam
 
 1:19
-ken
-arechot | kol | botzea | batza
+ken | arechot | kol | botzea | batza
 et | nefesh | be'alav | yikach
 
 1:20
@@ -84,14 +74,11 @@ chakhemot | bachutz | taronah | barechovot
 titen | kolah
 
 1:21
-berosh | homiyot
-tikra
-befitchei | she'arim | ba'ir
+berosh | homiyot | tikra | befitchei | she'arim | ba'ir
 amareiha | tomer
 
 1:22
-ad | matai | petayim | te'ehavu
-feti | veletzim
+ad | matai | petayim | te'ehavu | feti | veletzim
 latzon | chamedu | lahem | ukhesilim | yisne'u | da'at
 
 1:23
@@ -110,8 +97,7 @@ lo | avitem
 
 1:26
 gam | ani | be'eidekhem | eschak
-el'ag
-bevo | fachdekhem
+el'ag | bevo | fachdekhem
 
 1:27
 bevo | khesha'avah | pachdekhem
@@ -125,8 +111,7 @@ yeshacharuni
 velo | yimtza'uni
 
 1:29
-tachat | ki | sane'u | da'at
-veyir'at | Yahweh
+tachat | ki | sane'u | da'at | veyir'at | Yahweh
 lo | vacharu
 
 1:30
@@ -134,8 +119,7 @@ lo | avu | la'atzati
 na'atzu | kol | tokhachti
 
 1:31
-veyokhelu | miperi | darkam
-umimo'atzoteihem | yisba'u
+veyokhelu | miperi | darkam | umimo'atzoteihem | yisba'u
 
 1:32
 ki | meshuvat | petayim | tahargem
@@ -143,5 +127,4 @@ veshalvat | kesilim | te'abedem
 
 1:33
 veshomea | li | yishkon | betach
-vesha'anan
-mipachad | ra'ah
+vesha'anan | mipachad | ra'ah

@@ -11,8 +11,7 @@ halo | eid | le'aval | venekher
 lefo'alei | aven
 
 31:4
-halo | hu | yir'eh | derakhai
-vekhol | tze'adai | yispor
+halo | hu | yir'eh | derakhai | vekhol | tze'adai | yispor
 
 31:5
 im | halakhti | im | shav
@@ -44,8 +43,7 @@ ki | hu | zimah | vehi
 avon | pelilim
 
 31:12
-ki | esh | hi | ad | avadon | tokhel
-uvekhol | tevu'ati | tesharesh
+ki | esh | hi | ad | avadon | tokhel | uvekhol | tevu'ati | tesharesh
 
 31:13
 im | em'as | mishpat | avdi | va'amati | berivam | imadi
@@ -56,10 +54,8 @@ vekhi | yifkod
 mah | ashivenu
 
 31:15
-halo | vabeten
-oseni | asahu
-vaykhunenu
-barechem | echad
+halo | vabeten | oseni | asahu
+vaykhunenu | barechem | echad
 
 31:16
 im | emna | mechefetz | dalim
@@ -78,16 +74,14 @@ im | er'eh | oved | mibeli | levush | ve'ein | kesut | la'evyon
 
 31:20
 im | lo | verakhuni | chalatzov
-umigez | kevasai
-yitchamam
+umigez | kevasai | yitchamam
 
 31:21
 im | hanifoti | al | yatom | yadi
 ki | er'eh | vasha'ar | ezrati
 
 31:22
-ketefi | mishikhmah | tipol | ve'ezro'i
-mikanah | tishaver
+ketefi | mishikhmah | tipol | ve'ezro'i | mikanah | tishaver
 
 31:23
 ki | fachad | elai | eid | el | umise'eto
@@ -128,16 +122,14 @@ mi | yiten | mibesaro
 lo | nisba
 
 31:32
-bachutz | lo | yalin | ger | delatai
-la'orach | eftach
+bachutz | lo | yalin | ger | delatai | la'orach | eftach
 
 31:33
 im | kisiti | Khe'adam | pesha'ai
 litmon | bechubi | avoni
 
 31:34
-ki | e'erotz | hamon | rabah
-uvuz | mishpachot | yechiteni
+ki | e'erotz | hamon | rabah | uvuz | mishpachot | yechiteni
 va'edom
 lo | etze | fatach
 
@@ -152,8 +144,7 @@ im | lo | aloshi | shikhmi | essa'enu
 e'endenu | atarot | li
 
 31:37
-mispar | tze'adai | aggidenu | kemov | nagid
-akaravenu
+mispar | tze'adai | aggidenu | kemov | nagid | akaravenu
 
 31:38
 im | alai | admati | tiz'ak | veyachad
@@ -165,6 +156,4 @@ venefesh | be'aleiha | hipacheti
 
 31:40
 tachat | chitah | yetze | choach
-vetachat | se'orah | va'eshah
-tamu
-divrei | Iyov
+vetachat | se'orah | va'eshah | tamu | divrei | Iyov

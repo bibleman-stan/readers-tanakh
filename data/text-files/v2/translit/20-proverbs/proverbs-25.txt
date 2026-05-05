@@ -1,7 +1,5 @@
 25:1
-gam | eleh | mishlei | Shelomoh
-asher | he'tiku
-anshei | Chizkiyah | melekh | Yehudah
+gam | eleh | mishlei | Shelomoh | asher | he'tiku | anshei | Chizkiyah | melekh | Yehudah
 
 25:2
 kevod | elohim | haster | davar
@@ -10,8 +8,7 @@ chakor | davar
 
 25:3
 shamayim | larum | va'aretz | la'omek
-velev | melakhim
-ein | cheker
+velev | melakhim | ein | cheker
 
 25:4
 hago | sigim | mikasef
@@ -23,18 +20,15 @@ veyikon | batzedek | kis'o
 
 25:6
 al | tithadar | lifnei | melekh
-uvimkom | gedolim
-al | ta'amod
+uvimkom | gedolim | al | ta'amod
 
 25:7
 ki | tov | amor | lekha
 aleh
-henah | mehashpilekha | lifnei | nadiv
-asher | ra'u | eineikha
+henah | mehashpilekha | lifnei | nadiv | asher | ra'u | eineikha
 
 25:8
-al | tetze | lariv | maher
-pen | mah | ta'aseh | be'acharitah
+al | tetze | lariv | maher | pen | mah | ta'aseh | be'acharitah
 behakhlim | otekha | re'ekha
 
 25:9
@@ -51,9 +45,7 @@ tapuchei | zaho | bemaskiyot | kasef | davar
 davur | al | afenav
 
 25:12
-nezem | zaho | vachali | khatem
-mokhiach | chakham
-al | ozen | shoma'at
+nezem | zaho | vachali | khatem | mokhiach | chakham | al | ozen | shoma'at
 
 25:13
 ketzinat | sheleg | beyom | katzir
@@ -61,8 +53,7 @@ tzir | ne'emon | lesholechav
 venefesh | adonav | yashiv
 
 25:14
-nesi'im | veruach | vegeshem | ayin
-ish | mithalel | bematat | shaker
+nesi'im | veruach | vegeshem | ayin | ish | mithalel | bematat | shaker
 
 25:15
 be'orekh | apayim | yefuteh | katzin
@@ -80,18 +71,14 @@ usene'ekha
 
 25:18
 mefitz | vecherev | vechetz | shanun
-ish | oneh | vere'ehu
-ed | shaker
+ish | oneh | vere'ehu | ed | shaker
 
 25:19
-shen | ro'ah | veregel | mu'adet
-mivtach | boged
-beyom | tzarah
+shen | ro'ah | veregel | mu'adet | mivtach | boged | beyom | tzarah
 
 25:20
 ma'adeh | beged | beyom | karah | chometz | al | nater
-veshar | bashirim
-al | lev | ra
+veshar | bashirim | al | lev | ra
 
 25:21
 im | ra'ev | sona'akha | ha'akhilehu | lachem | ve'im | tzame
@@ -109,18 +96,14 @@ leshon | sater
 
 25:24
 tov
-shevet | al | pinat | gag
-me'eshet | midonim
-uveit | chaver
+shevet | al | pinat | gag | me'eshet | midonim | uveit | chaver
 
 25:25
 mayim | karim | al | nefesh | ayefah
-ushemu'ah | tovah
-me'eretz | merchak
+ushemu'ah | tovah | me'eretz | merchak
 
 25:26
-ma'yan | nirpos | umakor | mashechat | tzadik
-mat | lifnei | rasha
+ma'yan | nirpos | umakor | mashechat | tzadik | mat | lifnei | rasha
 
 25:27
 akhol | devash | harbot | lo | tov

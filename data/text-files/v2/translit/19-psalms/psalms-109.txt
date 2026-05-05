@@ -5,8 +5,7 @@ al | techerash
 
 109:2
 ki | fi | rasha | ufi | mirmah | alai | patachu
-diberu | iti
-leshon | shaker
+diberu | iti | leshon | shaker
 
 109:3
 vedivrei | sin'ah | sevavuni
@@ -29,8 +28,7 @@ behishafetov | yetze | rasha | utefilato
 tihyeh | lachata'ah
 
 109:8
-yihyu | yamav | me'atim | pekudato
-yikach | acher
+yihyu | yamav | me'atim | pekudato | yikach | acher
 
 109:9
 yihyu | vanav | yetomim | ve'ishto | almanah
@@ -48,22 +46,19 @@ al | yehi | lo | moshekh | chased
 ve'al | yehi | chonen | litomav
 
 109:13
-yehi | acharito | lehakhrit
-bedor | acher
+yehi | acharito | lehakhrit | bedor | acher
 yimach | shemam
 
 109:14
 yizakher | avon | avotav | el | Yahweh
-vechatat | imo
-al | timach
+vechatat | imo | al | timach
 
 109:15
 yihyu | neged | Yahweh | tamid
 veyakhret | me'eretz | zikhram
 
 109:16
-ya'an
-asher | lo | zakhar | asot | chased | vaiyirdof | ish | ani | ve'evyon | venikh'eh | levav | lemotet
+ya'an | asher | lo | zakhar | asot | chased | vaiyirdof | ish | ani | ve'evyon | venikh'eh | levav | lemotet
 
 109:17
 vaiye'ehav | kelalah | vatevo'ehu
@@ -84,8 +79,7 @@ vehadoerim | ra | al | nafshi
 
 109:21
 ve'atah | Yahweh | Adonai
-aseh | iti | lema'an | shemekha
-ki | tov | chasdekha
+aseh | iti | lema'an | shemekha | ki | tov | chasdekha
 hatzileni
 
 109:22
@@ -97,8 +91,7 @@ ketzel | kintoto | Nehelakheti
 Nin'arti | ka'arbeh
 
 109:24
-birkai | kashelu | mitzom | uvesari
-kachash | mishamen
+birkai | kashelu | mitzom | uvesari | kachash | mishamen
 
 109:25
 va'ani | hayiti | cherpah | lahem
@@ -127,5 +120,5 @@ odeh | Yahweh | me'od | befi
 uvetokh | rabim | ahallenu
 
 109:31
-ki | ya'amod | limin | evyon | lehoshia
-mishofetei | nafsho
+ki | ya'amod | limin | evyon
+lehoshia | mishofetei | nafsho

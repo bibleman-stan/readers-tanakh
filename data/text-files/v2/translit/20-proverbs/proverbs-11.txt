@@ -31,9 +31,8 @@ tzadik | mitzarah | nechelatz
 vaiyavo | rasha | tachtav
 
 11:9
-bepeh
-chanef | yashchit | re'ehu | uveda'at
-tzadikim | yechaletzu
+bepeh | chanef | yashchit | re'ehu
+uveda'at | tzadikim | yechaletzu
 
 11:10
 betuv | tzadikim | ta'alotz | kiryah
@@ -41,24 +40,19 @@ uva'avod | resha'im | rinah
 
 11:11
 bevirkat | yesharim | tarum | karet
-uvefi | resha'im
-tehares
+uvefi | resha'im | tehares
 
 11:12
-boz | lere'ehu | chasar | lev
-ve'ish | tevunot | yacharish
+boz | lere'ehu | chasar | lev | ve'ish | tevunot | yacharish
 
 11:13
-holekh | rakhil | megaleh | sod | vene'eman | ruach
-mekhaseh | davar
+holekh | rakhil | megaleh | sod | vene'eman | ruach | mekhaseh | davar
 
 11:14
-be'ein | tachbulot | yipol | am | uteshu'ah
-bero | yo'etz
+be'ein | tachbulot | yipol | am | uteshu'ah | bero | yo'etz
 
 11:15
-ra | yeroa | ki | arav | zar
-vesone | toke'im | boteach
+ra | yeroa | ki | arav | zar | vesone | toke'im | boteach
 
 11:16
 eshet | chen | titmokh | kavod | ve'aritzim | yitmekhu | osher
@@ -68,8 +62,7 @@ gomel | nafsho | ish | chased
 ve'okher | sheero | akhzari
 
 11:18
-rasha
-oseh | fe'ulat | shaker
+rasha | oseh | fe'ulat | shaker
 vezorea | tzedakah
 sekher | emet
 
@@ -103,8 +96,7 @@ nefesh | berakhah | tedushan | umarveh
 gam | hu | yore
 
 11:26
-monea | bar | yikevuhu | le'om | uverakhah
-lerosh | mashbir
+monea | bar | yikevuhu | le'om | uverakhah | lerosh | mashbir
 
 11:27
 shocher | tov | yevakesh | ratzon
@@ -123,5 +115,4 @@ peri | tzadik | etz | chaiyim
 velokeach | nefasot | chakham
 
 11:31
-hen | tzadik | ba'aretz | yeshulam | af
-ki | rasha | vechote
+hen | tzadik | ba'aretz | yeshulam | af | ki | rasha | vechote

@@ -1,8 +1,7 @@
 127:1
 shir | hama'alot | Lishlomoh
 im | Yahweh | lo | yivneh | vayit
-shav | amelu | vonav | bo
-im | Yahweh | lo | yishmor | ir
+shav | amelu | vonav | bo | im | Yahweh | lo | yishmor | ir
 shav | shakad | shomer
 
 127:2
@@ -15,11 +14,9 @@ hineh | nachalat | Yahweh | banim | sakhar
 peri | habaten
 
 127:4
-kechitzim | beyad | gibor | ken
-benei | hane'urim
+kechitzim | beyad | gibor | ken | benei | hane'urim
 
 127:5
-ashrei | hagever
-asher | mile | et | ashpato | mehem
+ashrei | hagever | asher | mile | et | ashpato | mehem
 lo | yevoshu
 ki | yedaberu | et | oyvim | basha'ar

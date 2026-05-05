@@ -1,7 +1,6 @@
 30:1
 divrei | Agur | bin | Yakeh | hamasa
-ne'um | hagever | Le'iti'el
-Le'iti'el | ve'ukhal
+ne'um | hagever | Le'iti'el | Le'iti'el | ve'ukhal
 
 30:2
 ki | va'ar | anokhi | me'ish
@@ -13,27 +12,21 @@ veda'at | kedoshim | eda
 
 30:4
 mi | alah | shamayim | vaiyerad | mi | asaf | ruach | bechafenav | mi | tzarar | mayim | basimlah
-mi | hekim | kol | afsei | aretz
-mah | shemo | umah | shem | beno
+mi | hekim | kol | afsei | aretz | mah | shemo | umah | shem | beno
 ki | teda
 
 30:5
-kol | imrat | eloah | tzerufah
-magen | hu
-lachosim | bo
+kol | imrat | eloah | tzerufah | magen | hu | lachosim | bo
 
 30:6
-al | tosp | al | devarav
-pen | yokhiach | bekha | venikhzaveta
+al | tosp | al | devarav | pen | yokhiach | bekha | venikhzaveta
 
 30:7
 shetayim | sha'alti | me'itakh
-al | timna | mimeni
-beterem | amut
+al | timna | mimeni | beterem | amut
 
 30:8
-shav | udevar | kazav | harchek | mimeni
-resh | va'osher | al | titen | li
+shav | udevar | kazav | harchek | mimeni | resh | va'osher | al | titen | li
 hatrifeni | lechem | chuki
 
 30:9
@@ -43,8 +36,7 @@ ufen | ivaresh | veganavti
 vetafasti | shem | elohai
 
 30:10
-al | talshen | eved | el | adonov
-pen | yekalelcha | ve'ashameta
+al | talshen | eved | el | adonov | pen | yekalelcha | ve'ashameta
 
 30:11
 dor | aviv | yekalel | ve'et | imo
@@ -91,8 +83,7 @@ lo | fa'alti | aven
 
 30:21
 tachat | shaloosh | ragezah | eretz
-vetachat | arba
-lo | tukhal | se'et
+vetachat | arba | lo | tukhal | se'et
 
 30:22
 tachat | eved | ki | yimlokh | venaval
@@ -119,12 +110,10 @@ melekh | ein | la'arbeh
 vaiyetze | chotzetz | kulo
 
 30:28
-semamit | beyadayim | tetapes | vehi
-beheikhelei | melekh
+semamit | beyadayim | tetapes | vehi | beheikhelei | melekh
 
 30:29
-sheloshah | hemah | meitivei | tza'ad | ve'arba'ah
-meitivei | lakhet
+sheloshah | hemah | meitivei | tza'ad | ve'arba'ah | meitivei | lakhet
 
 30:30
 layish | gibor | babehemah
@@ -137,11 +126,9 @@ alkum | imo
 
 30:32
 im | navalta | vehitnase
-ve'im | zamota
-yad | lepeh
+ve'im | zamota | yad | lepeh
 
 30:33
 ki | mitz | chalav | yotzi | chem'ah
 umitz | af | yotzi | dam
-umitz | apayim
-yotzi | riv
+umitz | apayim | yotzi | riv

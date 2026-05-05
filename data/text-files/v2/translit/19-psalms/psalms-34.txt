@@ -1,6 +1,5 @@
 34:1
-Ledavid
-beshanoto | et | ta'mo | lifnei | Avimelekh
+Ledavid | beshanoto | et | ta'mo | lifnei | Avimelekh
 vaygarashehu
 vaiyelakh
 
@@ -9,12 +8,10 @@ avarakhah | et | Yahweh | bekhol | et | tamid
 tehilato | befi
 
 34:3
-Bayahweh | tithalel | nafshi
-yishme'u | anavim | veyismachu
+Bayahweh | tithalel | nafshi | yishme'u | anavim | veyismachu
 
 34:4
-gadelu | Layahweh | iti
-uneromah | shemo | yachdav
+gadelu | Layahweh | iti | uneromah | shemo | yachdav
 
 34:5
 darashti | et | Yahweh | ve'anani | umikol | megurotai
@@ -33,17 +30,14 @@ choneh | mal'akh | Yahweh | saviv | lire'av
 vaychaletzem
 
 34:9
-ta'amu | ure'u | ki | tov | Yahweh
-ashrei | hagever | yecheseh | bo
+ta'amu | ure'u | ki | tov | Yahweh | ashrei | hagever | yecheseh | bo
 
 34:10
-yer'u | et | Yahweh | kedoshav
-ki | ein | machsor | lire'av
+yer'u | et | Yahweh | kedoshav | ki | ein | machsor | lire'av
 
 34:11
 kefirim | rashu | vera'evu
-vedoreshei | Yahweh
-lo | yachseru | khol | tov
+vedoreshei | Yahweh | lo | yachseru | khol | tov
 
 34:12
 lekhu | vanim | shim'u | li
@@ -51,9 +45,7 @@ yir'at | Yahweh
 alamedkhem
 
 34:13
-mi | ha'ish | hechafetz | chaiyim
-ohev | yamim
-lir'ot | tov
+mi | ha'ish | hechafetz | chaiyim | ohev | yamim | lir'ot | tov
 
 34:14
 netzor | leshonkha | mera
@@ -94,5 +86,4 @@ vesone'ei | tzadik | ye'shamu
 
 34:23
 podeh | Yahweh | nefesh | avadav
-velo | ye'shemu
-kal | hachosim | bo
+velo | ye'shemu | kal | hachosim | bo

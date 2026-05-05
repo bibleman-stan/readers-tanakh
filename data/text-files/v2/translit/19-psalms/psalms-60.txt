@@ -1,6 +1,5 @@
 60:1
-lamnatzeach | al | shushan | edut
-mikhtam | Ledavid | lelamed
+lamnatzeach | al | shushan | edut | mikhtam | Ledavid | lelamed
 
 60:2
 behatzoto | et | Aram | Naharayim | ve'et | Aram | Tzovah
@@ -22,20 +21,19 @@ hir'itah | amekha | kashah
 hishkitanu | yayin | tar'elah
 
 60:6
-natatah | lire'eikha | nes | lehitnoses
-mipenei | koshet | selah
+natatah | lire'eikha | nes
+lehitnoses | mipenei | koshet | selah
 
 60:7
-lema'an | yechaltzun | yedideikha
-hoshi'ah | yeminekha | va'anenu
+lema'an | yechaltzun | yedideikha | hoshi'ah | yeminekha | va'anenu
 
 60:8
-elohim | diber | bekadesho | e'lozah
-achalekah | Shekhem
+elohim | diber | bekadesho | e'lozah | achalekah | Shekhem
 ve'emek | Sukot | amaded
 
 60:9
-li | Gil'ad | veli | Menasheh
+li | Gil'ad
+veli | Menasheh
 Ve'efrayim | ma'oz | roshi | Yehudah | mechokeki
 
 60:10

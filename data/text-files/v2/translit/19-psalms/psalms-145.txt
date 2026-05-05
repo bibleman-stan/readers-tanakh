@@ -1,17 +1,12 @@
 145:1
-tehilah | Ledavid
-aromikha | elohai | hamelekh
-va'avarakhah | shimkha
+tehilah | Ledavid | aromikha | elohai | hamelekh | va'avarakhah | shimkha
 le'olam | va'ed
 
 145:2
-bekhol | yom | avarakheka
-va'ahalah | shimkha
-le'olam | va'ed
+bekhol | yom | avarakheka | va'ahalah | shimkha | le'olam | va'ed
 
 145:3
-gadol | Yahweh | umehulal | me'od | veligdulato
-ein | cheker
+gadol | Yahweh | umehulal | me'od | veligdulato | ein | cheker
 
 145:4
 dor | ledor | yeshabach | ma'aseikha
@@ -38,8 +33,7 @@ tov | Yahweh | lakol | verachamav | al | kol | ma'asav
 
 145:10
 yodukha | Yahweh | kol | ma'aseikha
-vachasideikha
-yevarakhukhah
+vachasideikha | yevarakhukhah
 
 145:11
 kevod | malkhutekha | yomeru
@@ -50,17 +44,14 @@ lehodia | livnei | ha'adom | gevurotav
 ukhevod | hadar | malkhuto
 
 145:13
-malkhutekha
-malkhut | kol | olamim
-umemsheltekha
-bekhol | dor | vador | ne'eman | Yahweh | bekhol | devarav | vechasid | bekhol | ma'asav
+malkhutekha | malkhut | kol | olamim
+umemsheltekha | bekhol | dor | vador | ne'eman | Yahweh | bekhol | devarav | vechasid | bekhol | ma'asav
 
 145:14
 somekh | Yahweh | lekhol | hanofelim | vezokef | lekhol | hakefufim
 
 145:15
-einei | khol | eleikha | yesaberu
-ve'atah | noten | lahem | et | akhelam | be'ito
+einei | khol | eleikha | yesaberu | ve'atah | noten | lahem | et | akhelam | be'ito
 
 145:16
 poteach | et | yadekha
@@ -84,5 +75,4 @@ ve'et | kol | haresha'im | yashmid
 
 145:21
 tehilat | Yahweh | yedaber | pi
-vivarekh | kol | basor | shem | kadesho
-le'olam | va'ed
+vivarekh | kol | basor | shem | kadesho | le'olam | va'ed

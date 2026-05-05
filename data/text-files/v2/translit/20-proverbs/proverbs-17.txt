@@ -3,10 +3,8 @@ tov | pat | charevah | veshalvah | vah | mibayit
 male | zivchei | riv
 
 17:2
-eved | maskil
-yimshol | beven | mevish
-uvetokh | achim
-yachalok | nachalah
+eved | maskil | yimshol | beven | mevish
+uvetokh | achim | yachalok | nachalah
 
 17:3
 matzref | lakesef | vekhur | lazahav
@@ -14,12 +12,10 @@ uvochen | libot | Yahweh
 
 17:4
 mera | makshiv | al | sefat | aven
-sheker | mezin
-al | leshon | havot
+sheker | mezin | al | leshon | havot
 
 17:5
-lo'eg | larosh | cheref | osehu
-sameach | le'eid
+lo'eg | larosh | cheref | osehu | sameach | le'eid
 lo | yinakeh
 
 17:6
@@ -27,8 +23,7 @@ ateret | zekenim | benei | vanim
 vetif'eret | banim | avotam
 
 17:7
-lo | navah | lenaval | sefat | yeter | af
-ki | lenadiv | sefat | shaker
+lo | navah | lenaval | sefat | yeter | af | ki | lenadiv | sefat | shaker
 
 17:8
 even | chen | hashochad | be'einei | ve'alav
@@ -36,8 +31,7 @@ el | kol | asher | yifneh | yaskil
 
 17:9
 mekhaseh | pesha | mevakesh | ahavah
-veshoneh | vedavar
-mafrid | aluf
+veshoneh | vedavar | mafrid | aluf
 
 17:10
 techat | ge'arah | vemevin
@@ -74,12 +68,10 @@ yivaled
 
 17:18
 adam | chasar | lev | tokea | kaf
-orev | arubah
-lifnei | re'ehu
+orev | arubah | lifnei | re'ehu
 
 17:19
-ohev | pesha | ohev | matzah
-magbiah | pitcho | mevakesh | shaver
+ohev | pesha | ohev | matzah | magbiah | pitcho | mevakesh | shaver
 
 17:20
 ikesh | lev | lo | yimtza | tov
@@ -88,16 +80,14 @@ yipol | bera'ah
 
 17:21
 yoled | kesil | letugah | lo
-velo | yismach
-avi | naval
+velo | yismach | avi | naval
 
 17:22
 lev | sameach | yeitiv | gehah
 veruach | nekhe'ah | teyabesh | garem
 
 17:23
-shochad | mecheik | rasha | yikach | lehatot
-arechot | mishpat
+shochad | mecheik | rasha | yikach | lehatot | arechot | mishpat
 
 17:24
 et | penei | mevin | chokhmah
@@ -116,5 +106,4 @@ vekar | ruach
 ish | tevunah
 
 17:28
-gam | evil | macharish | chakham | yechashev
-otem | sefatav | navon
+gam | evil | macharish | chakham | yechashev | otem | sefatav | navon

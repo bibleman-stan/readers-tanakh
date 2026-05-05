@@ -1,6 +1,5 @@
 24:1
-madua
-Mishadai | lo | Nitzpenu | itim | veyode'ov
+madua | Mishadai | lo | Nitzpenu | itim | veyode'ov
 lo | chazu | yamav
 
 24:2
@@ -18,8 +17,7 @@ yachad | chube'u | aniyei | aretz
 
 24:5
 hen | pera'im | bamidbar
-yatze'u | befo'olom | meshacharei | lataref
-aravah | lo | lechem | lane'arim
+yatze'u | befo'olom | meshacharei | lataref | aravah | lo | lechem | lane'arim
 
 24:6
 basadeh | belilo | yaktziru
@@ -42,8 +40,7 @@ arom | hilekhu | beli | levush | ure'evim
 nase'u | omer
 
 24:11
-bein | shurotam | yatzhiru
-yekavim | darekhu
+bein | shurotam | yatzhiru | yekavim | darekhu
 vaiyitzma'u
 
 24:12
@@ -57,8 +54,7 @@ lo | hikiru | derakhav
 velo | yashevu | bintivotav
 
 24:14
-la'or | yakum | rotzeach
-yiktol | ani | ve'evyon | uvalaylah
+la'or | yakum | rotzeach | yiktol | ani | ve'evyon | uvalaylah
 yehi | khaganav
 
 24:15
@@ -76,14 +72,11 @@ ki | yakir
 balhot | tzalmavet
 
 24:18
-kal | hu | al | penei | mayim
-tekulal | chelkatam | ba'aretz
-lo | yifneh
-derekh | keramim
+kal | hu | al | penei | mayim | tekulal | chelkatam | ba'aretz
+lo | yifneh | derekh | keramim
 
 24:19
-tziyah | gam | chom
-yigzelu | meimei | sheleg
+tziyah | gam | chom | yigzelu | meimei | sheleg
 she'ol | chata'u
 
 24:20
@@ -96,8 +89,7 @@ ro'eh | akarah | lo | teled | ve'almanah
 lo | yeyetiv
 
 24:22
-umashakh | abirim | bekhocho
-yakum
+umashakh | abirim | bekhocho | yakum
 velo | ya'amin | bachaiyin
 
 24:23

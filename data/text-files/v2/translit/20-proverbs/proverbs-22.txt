@@ -1,7 +1,6 @@
 22:1
-nivchar | shem | me'osher | rav
-mikesef | umizahav
-chen | tov
+nivchar | shem | me'osher | rav | mikesef
+umizahav | chen | tov
 
 22:2
 ashir | varash | Nifgashu
@@ -27,8 +26,7 @@ lo | yasur | mimenah
 
 22:7
 ashir | berashim | yimshol
-ve'eved | loveh
-le'ish | malveh
+ve'eved | loveh | le'ish | malveh
 
 22:8
 zorea | avlah | yiktzor | aven
@@ -40,8 +38,7 @@ ki | natan | milachmo | ladal
 
 22:10
 garesh | letz | veyetze | madon
-veyishbot
-din | vekalon
+veyishbot | din | vekalon
 
 22:11
 ohev | tehor | lev
@@ -54,8 +51,7 @@ vaysalef | divrei | voged
 
 22:13
 amar | atzel | ari | vachutz
-betokh | rechovot
-eratzeach
+betokh | rechovot | eratzeach
 
 22:14
 shuchah | amukah | pi | zarot
@@ -68,33 +64,28 @@ shevet | musar
 yarchikenah | mimenu
 
 22:16
-oshek | dal | leharbot | lo
-noten | le'ashir | akh | lemachsor
+oshek | dal | leharbot | lo | noten | le'ashir | akh | lemachsor
 
 22:17
 hat | azenekha
 ushema | divrei | chakhamim
-velibekha
-tashit | leda'ti
+velibekha | tashit | leda'ti
 
 22:18
 ki | na'im | ki | tishmerem | bevitnekha
-yikonu | yachdav
-al | sefateikha
+yikonu | yachdav | al | sefateikha
 
 22:19
 lihyot | Bayahweh | mivtachekha
 hoda'tikha | haiyom | af | atah
 
 22:20
-halo | khatavti | lekha | shilshom
-bemo'etzot | vada'at
+halo | khatavti | lekha | shilshom | bemo'etzot | vada'at
 
 22:21
 lehodi'akha
 koshet | imrei | emet
-lehashiv | amarim | emet
-lesholecheikha
+lehashiv | amarim | emet | lesholecheikha
 
 22:22
 al | tigzol | dal | ki | dal | hu
@@ -105,8 +96,7 @@ ki | Yahweh | yariv | rivam
 vekava | et | koe'eihem | nafesh
 
 22:24
-al | titra | et | ba'al | af
-ve'et | ish | chemot
+al | titra | et | ba'al | af | ve'et | ish | chemot
 lo | tavo
 
 22:25
@@ -118,15 +108,11 @@ al | tehi | vetoke'ei | khaf | ba'orevim | masha'ot
 
 22:27
 im | ein | lekha | leshalem
-lamah | yikach | mishkavekha
-mitachteikha
+lamah | yikach | mishkavekha | mitachteikha
 
 22:28
-al | taseg | gevul | olam
-asher | asu | avoteikha
+al | taseg | gevul | olam | asher | asu | avoteikha
 
 22:29
-chazita | ish | mahir | bimlakhto
-lifnei | melakhim | yityatzav
-bal | yityatzev
-lifnei | chashukim
+chazita | ish | mahir | bimlakhto | lifnei | melakhim | yityatzav
+bal | yityatzev | lifnei | chashukim
