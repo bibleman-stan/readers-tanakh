@@ -66,8 +66,9 @@ Without explicit disposition, items drift across sessions and silently disappear
 Produce in the session folder:
 
 1. **`session-notes.md`** (mandatory) — session arc, what landed (commits), discipline observations, withdrawn proposals, carry-forwards for next session.
-2. **`full-transcript.md`** (mandatory) — verbatim dialogue extraction from the session JSONL. Dispatch a Sonnet agent with the JSONL path to stream-process: filter to user-typed turns + assistant responses, strip sub-agent sidechain noise. **Why this matters:** session-notes.md is what future-Claude reads for carry-forward, but a different Stan-dispatched agent (auditor, diagnostic, thread-picker-upper) needs 100% fidelity to reconstruct what actually happened. The JSONL is the source of truth; the markdown is the readable form. Don't skip this step.
-3. **`review-lists/`** (subfolder, when applicable) — only when the session produced candidate lists requiring Stan review.
+2. **`review-lists/`** (subfolder, when applicable) — only when the session produced candidate lists requiring Stan review.
+
+**Verbatim source of truth is the JSONL** at `~/.claude/projects/c--Users-bibleman-repos-readers-tanakh/<session-id>.jsonl` (parent session) plus `%TEMP%\claude\c--Users-bibleman-repos-readers-tanakh\<session-id>\tasks\<task-id>.output` (sub-agent deliberations). Don't produce a `full-transcript.md` copy — it's redundant with the JSONL and adds wrap-time cost without raising fidelity. When Stan dispatches a diagnostic / auditor / thread-picker-upper agent, point it at the JSONL directly (precedent: 2026-05-04 colonoscopy + process-waste + prior-sessions audits all walked the JSONL directly).
 
 On-request (not default):
 - **`dialogue-notes.md`** — only for methodology-heavy sessions where the dialogue arc itself is the work product.
