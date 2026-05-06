@@ -235,6 +235,49 @@ NATURALIZE_RULES = [
     (r"\b(\w+) your holiness your\b",           r"your holy \1"),
     (r"\b(\w+) your your holy\b",               r"your holy \1"),
     # -----------------------------------------------------------------------
+    # 3b. Construct-chain "of" insertion (Class 3 of 2026-05-05 four-class
+    # spec). Macula glosses Hebrew construct heads with "the." prefix
+    # (e.g. אֱלֹהֵי → "the.God") even though Hebrew construct heads are
+    # anarthrous; when the bound noun has a pronominal suffix, Macula does
+    # NOT insert "of" — yielding "the God my father" / "the days your life"
+    # / "the firstborn his flock". English idiom requires "of": "the God
+    # of my father". Insert "of" between X and the suffix-pronoun BEFORE
+    # the rule-4 swaps (which would otherwise produce "the my God father"
+    # by swapping the X-pron pair). After insertion, "X of pron" no longer
+    # matches the rule-4 pattern \bX pron\b. Runs AFTER rule 3a so the
+    # "your holiness your" double-possessive collapse fires first (avoids
+    # "the temple your holiness your" → "the temple of your holy of"
+    # corruption).
+    # The (?!...) guards skip insertion when X or Y is a particle / numeral
+    # / function word that wouldn't take "of" comfortably in English.
+    # -----------------------------------------------------------------------
+    (r"\bthe (?!one\b|two\b|three\b|four\b|five\b|six\b|seven\b|eight\b|nine\b|"
+     r"ten\b|first\b|second\b|third\b|other\b|all\b|every\b|some\b|many\b|"
+     r"much\b|few\b|both\b|same\b|whole\b|only\b|very\b|"
+     r"and\b|or\b|but\b|so\b|for\b|"
+     r"is\b|are\b|was\b|were\b|be\b|been\b|being\b|"
+     r"has\b|have\b|had\b|will\b|would\b|shall\b|"
+     r"this\b|that\b|these\b|those\b|"
+     r"who\b|which\b|what\b|where\b|"
+     r"his\b|her\b|my\b|your\b|our\b|their\b|its\b)"
+     r"(\w{2,}) (his|her|my|your|our|their|its) "
+     r"(?!one\b|two\b|three\b|four\b|five\b|six\b|seven\b|eight\b|nine\b|"
+     r"ten\b|first\b|second\b|third\b|all\b|every\b|some\b|many\b|much\b|"
+     r"few\b|both\b|same\b|whole\b|"
+     r"and\b|or\b|but\b|so\b|for\b|"
+     r"is\b|are\b|was\b|were\b|be\b|been\b|being\b|"
+     r"has\b|have\b|had\b|will\b|would\b|shall\b|"
+     r"this\b|that\b|these\b|those\b|"
+     r"who\b|which\b|what\b|where\b|"
+     r"to\b|from\b|in\b|on\b|with\b|by\b|at\b|of\b|"
+     r"not\b|no\b|never\b|"
+     r"great\b|small\b|good\b|bad\b|evil\b|"
+     r"old\b|new\b|young\b|"
+     r"holiness\b|holy\b|"  # avoid "the temple of your holy" cascade
+     r"his\b|her\b|my\b|your\b|our\b|their\b|its\b)"
+     r"(\w{2,})\b",
+     r"the \1 of \2 \3"),
+    # -----------------------------------------------------------------------
     # 4. Possessive-suffix reorder ("noun its/his/her/their" → "its/his/her/their noun")
     # These are the most common Hebrew suffixed-noun→English reorderings.
     # -----------------------------------------------------------------------

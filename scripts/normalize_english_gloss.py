@@ -55,6 +55,36 @@ VERSE_REF_RE = re.compile(r"^(\d+):(\d+)$")
 
 
 # ---------------------------------------------------------------------------
+# Pattern 0 — Construct chain "the X (suffix-pron) Y" → "the X of (suffix-pron) Y"
+#
+# Class 3 of the four-class eng-gloss cleanup spec (Stan 2026-05-05).
+# Macula glosses Hebrew construct heads with "the." prefix (e.g. אֱלֹהֵי →
+# "the.God") even though Hebrew construct heads are anarthrous. When the
+# bound noun has a pronominal suffix, Macula does NOT insert "of" — yielding
+# "the God my father" / "the days your life" / "the firstborn his flock".
+# English idiom requires "of": "the God of my father" / "the days of your life".
+#
+# This pass runs BEFORE pass1_suffix_reorder so the suffix-reorder rules
+# (which would swap "father my" → "my father") see the cleaner "X of pron Y"
+# pattern. After this pass, pass1's "X pron" → "pron X" no longer matches
+# because "of" sits between X and pron.
+#
+# Pattern: tokens "the <X> <pron> <Y>" where:
+#   - X is a content word (not in NONNOUN_HEADS, length ≥ 2, lowercase or
+#     proper-name)
+#   - pron is in SUFFIX_PRONOUNS
+#   - Y is a content word (not in NONNOUN_HEADS, length ≥ 2)
+# Insert "of" after X: "the <X> of <pron> <Y>".
+#
+# Conservative gating:
+#   - Skip if Y is a number / quantifier / particle (would yield "of his two")
+#   - Skip if Y is a comparative ("the greater his strength" — apposition)
+#   - Idempotent: after one pass the pattern becomes "the X of pron Y" which
+#     no longer matches the trigger.
+# ---------------------------------------------------------------------------
+
+
+# ---------------------------------------------------------------------------
 # Pattern 1 — Pronominal-suffix reorder
 # ---------------------------------------------------------------------------
 
@@ -130,6 +160,131 @@ _SUFFIX_REORDER_RE = re.compile(
     r"\b(\w+(?:\([^)]+\))?)\s+(" + SUFFIX_PRONOUN_PATTERN + r")\b",
     re.IGNORECASE,
 )
+
+
+# Tokens that, if Y is one of these, indicate Y is NOT a bound noun — skip
+# the construct-of insertion. Includes numerals, quantifiers, demonstratives,
+# and grammatical particles that wouldn't take "of" comfortably.
+# Note: this is INTENTIONALLY a different set from NONNOUN_HEADS — Y here
+# can be slightly broader (proper names, common nouns, abstract nouns).
+_CONSTRUCT_Y_BLOCKLIST = {
+    # Numerals / quantifiers
+    "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",
+    "ten", "first", "second", "third", "another", "other", "many", "much",
+    "few", "all", "every", "some", "any", "none", "more", "most", "less",
+    "least", "both",
+    # Demonstratives
+    "this", "that", "these", "those",
+    # Conjunctions / particles
+    "and", "or", "but", "so", "for", "if", "when", "while", "as", "of", "to",
+    "from", "in", "on", "with", "by", "at", "before", "after", "against",
+    "over", "under", "between", "among", "through", "without", "within",
+    "above", "below", "behind", "around", "into", "onto",
+    "out", "up", "down", "off", "near", "far", "upon", "than",
+    # Verbs / copulas (would mean Y is a verb, not a bound noun)
+    "is", "are", "was", "were", "be", "been", "being", "am",
+    "has", "have", "had",
+    "will", "would", "shall", "should", "may", "might", "can", "could",
+    "must", "do", "does", "did",
+    "said", "spoke", "called", "answered", "told", "asked",
+    "came", "went", "saw", "knew", "made", "did",
+    # Comparatives / adjectives that don't make sense as bound nouns
+    "great", "small", "big", "good", "bad", "evil",
+    "old", "new", "young", "first", "last",
+    # Negation
+    "not", "no", "never",
+    # Relative / interrog
+    "who", "whom", "which", "what", "where", "why", "how", "whose",
+}
+
+
+def pass0_construct_of_with_pron(line: str) -> str:
+    """Insert 'of' in 'the X (suffix-pron) Y' construct chains.
+
+    Class 3 of the four-class eng-gloss cleanup spec (Stan 2026-05-05).
+
+    Pattern: "the X pron Y" → "the X of pron Y" where:
+      - "the" is the literal article (case-insensitive)
+      - X is a content word (≥2 chars, not in NONNOUN_HEADS, not a pronoun,
+        not a numeral)
+      - pron ∈ SUFFIX_PRONOUNS (his/her/my/your/our/their/its)
+      - Y is a content word (≥2 chars, not in _CONSTRUCT_Y_BLOCKLIST)
+
+    Token-level single left-to-right pass. Idempotent: after insertion the
+    pattern becomes "the X of pron Y" which no longer matches (X is followed
+    by 'of', not pron).
+
+    Examples:
+      "for the God my father has been my help"
+        → "for the God of my father has been my help"
+      "all the days your life"
+        → "all the days of your life"
+      "to the firstborn his flock"
+        → "to the firstborn of his flock"
+    """
+    tokens = line.split()
+    if len(tokens) < 4:
+        return line
+
+    out: list[str] = []
+    i = 0
+    n = len(tokens)
+    while i < n:
+        # Need 4 tokens for the pattern: the X pron Y
+        if i + 3 >= n:
+            out.append(tokens[i])
+            i += 1
+            continue
+        t0 = tokens[i]      # "the"
+        t1 = tokens[i + 1]  # X
+        t2 = tokens[i + 2]  # pron
+        t3 = tokens[i + 3]  # Y
+
+        t0_lc = t0.lower().strip(".,;:!?")
+        if t0_lc != "the":
+            out.append(tokens[i])
+            i += 1
+            continue
+
+        t1_clean = re.sub(r"[^\w-]", "", t1).lower()
+        t2_clean = re.sub(r"[^\w-]", "", t2).lower()
+        t3_clean = re.sub(r"[^\w-]", "", t3).lower()
+
+        # X must be a content noun (not a particle, not a pronoun, not a
+        # quantifier). Allow capitalized proper names like "God" / "Yahweh"
+        # but those would be unusual after "the"; the typical case is
+        # lowercase common noun.
+        if (
+            t1_clean in NONNOUN_HEADS
+            or t1_clean in SUFFIX_PRONOUNS
+            or len(t1_clean) <= 1
+        ):
+            out.append(tokens[i])
+            i += 1
+            continue
+
+        # Pron position must be a suffix pronoun.
+        if t2_clean not in SUFFIX_PRONOUNS:
+            out.append(tokens[i])
+            i += 1
+            continue
+
+        # Y must be a content word (a likely bound noun); skip on the
+        # blocklist (numerals/quantifiers/particles).
+        if (
+            t3_clean in _CONSTRUCT_Y_BLOCKLIST
+            or t3_clean in SUFFIX_PRONOUNS
+            or len(t3_clean) <= 1
+        ):
+            out.append(tokens[i])
+            i += 1
+            continue
+
+        # Insert "of" between X and pron: "the X of pron Y ..."
+        out.extend([t0, t1, "of", t2, t3])
+        i += 4
+
+    return " ".join(out)
 
 
 def pass1_suffix_reorder(line: str) -> str:
@@ -1087,6 +1242,7 @@ def pass5_dedup(line: str) -> str:
 def normalize_line(line: str, in_poetic: bool) -> str:
     """Apply all passes in order to a single gloss line."""
     s = line
+    s = pass0_construct_of_with_pron(s)  # Class 3: insert "of" before pass1 sees "X pron"
     s = pass1_suffix_reorder(s)
     s = pass2_construct_of(s)
     s = pass7_capitalize_divine_titles(s)  # before pass3 so "Yahweh your God" matches COMPOUND_PROPER_SUBJECTS
