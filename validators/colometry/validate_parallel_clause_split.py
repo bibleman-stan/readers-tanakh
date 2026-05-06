@@ -77,6 +77,48 @@ def _is_wayyiqtol(t: MC.Token) -> bool:
     return bool(morph and morph[0] == "V" and len(morph) >= 3 and morph[2] == "W")
 
 
+def _clause_has_negation_before_verb(cl: MC.Constituent) -> bool:
+    """True if the clause has a negation particle (לֹא / אַל) appearing
+    before its finite-verb head. Used to detect both-clauses-negated
+    coordinated-prohibition FP class (Jdg 13:14 'she shall not eat /
+    and wine and strong drink she shall not drink' — bonded scope).
+    """
+    head = _clause_head_verb(cl)
+    if head is None:
+        return False
+    # Walk through the clause's tokens up to (but not including) the head.
+    # If any prior token's lemma or text-skel matches negation marker, return True.
+    for t in cl.tokens:
+        if id(t) == id(head):
+            return False
+        skel = t.consonant_skel
+        # לֹא = "לא" skel; אַל = "אל" skel; both negation particles
+        if skel in ("לא", "אל"):
+            return True
+    return False
+
+
+def _both_cohortative(head_a: Optional[MC.Token], head_b: Optional[MC.Token]) -> bool:
+    """True if both clause heads are cohortative-form verbs. Cohortative-
+    pairs are typically hendiadys-of-invitation (Lam 4:21 שִׂישִׂי + שִׂמְחִי
+    'rejoice and be glad' = one fused exhortation; Psa 119:153 רְאֵה +
+    חַלְּצֵנִי 'see and deliver me' = fused petition).
+    """
+    if head_a is None or head_b is None:
+        return False
+    return bool(head_a.is_cohortative and head_b.is_cohortative)
+
+
+def _both_imperative(head_a: Optional[MC.Token], head_b: Optional[MC.Token]) -> bool:
+    """True if both clause heads are imperative-form verbs. Some
+    imperative-pairs are also bonded ('come and see' formula). More
+    permissive than cohortative-pair; may over-suppress legitimate
+    imperative-bicola — apply only with additional context check."""
+    if head_a is None or head_b is None:
+        return False
+    return bool(head_a.is_imperative and head_b.is_imperative)
+
+
 def _clause_head_verb(clause: MC.Constituent) -> Optional[MC.Token]:
     for t in clause.tokens:
         if _is_finite_verb(t):
@@ -366,6 +408,25 @@ def scan_file(path: Path, book_slug: str) -> list[dict[str, Any]]:
                 # speech, complement-כִּי, cognition-verb + clause; Np2CL =
                 # similar matrix-takes-clause shape).
                 if (cl_a.wg_rule or "") in _COMPLEMENT_RULES:
+                    continue
+                # Both-negated guard (audit 2026-05-07: Jdg 13:14 class).
+                # Two negated clauses are typically a coordinated-prohibition
+                # bonded under one scope, NOT parallel cola.
+                if (_clause_has_negation_before_verb(cl_a)
+                        and _clause_has_negation_before_verb(cl_b)):
+                    continue
+                # Both-cohortative guard (audit 2026-05-07: Lam 4:21 / Psa
+                # 119:153 hendiadys-of-invitation class). Two cohortative
+                # heads typically form a fused exhortation/petition.
+                if _both_cohortative(head_a, head_b):
+                    continue
+                # Both-imperative + short-combined guard (audit 2026-05-07:
+                # Psa 119:153 רְאֵה + חַלְּצֵנִי "see and deliver me" =
+                # fused petition; Pro 8:6 שִׁמְעוּ + אֲדַבֵּר related).
+                # Two short imperatives (combined ≤4pw) typically form a
+                # bonded pair. The combined-pw threshold preserves longer
+                # imperative-bicola (genuine prophetic-call parallelism).
+                if _both_imperative(head_a, head_b) and (left + right) <= 4:
                     continue
                 findings.append({
                     "file": str(path.relative_to(REPO_ROOT)).replace("\\", "/"),
