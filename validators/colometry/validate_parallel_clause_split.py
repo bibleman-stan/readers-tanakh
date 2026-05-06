@@ -1,0 +1,248 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""validate_parallel_clause_split — Macula-driven SPLIT detector for parallel
+clauses merged onto one line.
+
+The Sifrei Emet parallel bicolon (PP+verb // PP+verb, gapped subject; canonical
+Psa 23:2) is the motivating class. The detector queries Macula's constituent
+tree for clause boundaries and fires when a single v2/he line contains tokens
+spanning >=2 distinct clauses, each with its own finite-verb head.
+
+Engine: Macula Hebrew lowfat XML. NO te'amim glyphs in trigger logic
+(canon §1 corollary). Severity: STRONG-SPLIT-CANDIDATE. Conservative
+trigger (each side >=3 prosodic words) keeps FP rate low.
+"""
+
+from __future__ import annotations
+
+import argparse
+import json
+import sys
+from pathlib import Path
+from typing import Any, Optional
+
+REPO_ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(REPO_ROOT))
+
+from validators._shared import macula_constituents as MC
+
+
+SEVERITY = "STRONG-SPLIT-CANDIDATE"
+RULE = "Hpar"
+SUBCASE = "parallel_clause_split"
+MIN_HALF_PW = 2  # Hebrew bicola can be 3+2 or 2+3; 2 is the minimum atomic-thought width
+
+
+def _is_finite_verb(t: MC.Token) -> bool:
+    morph = (t._morph_tag or "").upper()
+    if not morph or morph[0] != "V" or len(morph) < 3:
+        return False
+    return morph[2] in ("Q", "W", "I", "V", "O", "J", "H", "U")
+
+
+def _clause_head_verb(clause: MC.Constituent) -> Optional[MC.Token]:
+    for t in clause.tokens:
+        if _is_finite_verb(t):
+            return t
+    return None
+
+
+def _is_leaf_clause(cl: MC.Constituent) -> bool:
+    """A leaf clause has no descendant Constituents that are themselves clauses."""
+    for c in cl.child_constituents:
+        if c.is_clause:
+            return False
+        # recurse one level deeper to catch grand-child clauses
+        for gc in c.child_constituents:
+            if gc.is_clause:
+                return False
+    return True
+
+
+def _clauses_with_heads_in(verse_clauses: list[MC.Constituent],
+                           line_tokens: list[MC.Token]) -> list[MC.Constituent]:
+    """Return LEAF clauses whose finite-verb head is among line_tokens.
+    Wrapper / outer clauses are filtered out so we only emit on the
+    innermost actual clause boundaries."""
+    line_ids = {id(t) for t in line_tokens}
+    out: list[MC.Constituent] = []
+    seen: set[int] = set()
+    for cl in verse_clauses:
+        if not _is_leaf_clause(cl):
+            continue
+        head = _clause_head_verb(cl)
+        if head is None:
+            continue
+        if id(head) in line_ids and id(cl) not in seen:
+            out.append(cl)
+            seen.add(id(cl))
+    return out
+
+
+def _split_index(line_tokens: list[MC.Token],
+                 clause_b: MC.Constituent) -> Optional[int]:
+    cb_ids = {id(t) for t in clause_b.tokens}
+    for i, t in enumerate(line_tokens):
+        if id(t) in cb_ids:
+            return i
+    return None
+
+
+def _line_token_spans(verse_tokens: list[MC.Token],
+                      v2_lines: list[str]) -> list[list[MC.Token]]:
+    out = []
+    cursor = 0
+    for ln in v2_lines:
+        if not ln.strip():
+            continue
+        matched, next_cursor = MC.match_sense_line_tokens(verse_tokens, ln, cursor)
+        out.append(matched)
+        cursor = next_cursor
+    return out
+
+
+def _pw_count(tokens: list[MC.Token]) -> int:
+    """Count prosodic words by walking the previous token's `after` field;
+    if it contains whitespace, the current token starts a new prosodic word.
+    Maqqef-bonded morphemes have no whitespace in after → bonded into one pw."""
+    if not tokens:
+        return 0
+    pw = 1
+    for i in range(1, len(tokens)):
+        prev_after = (getattr(tokens[i - 1], "after", "") or "")
+        if any(c.isspace() for c in prev_after):
+            pw += 1
+    return pw
+
+
+def scan_file(path: Path, book_slug: str) -> list[dict[str, Any]]:
+    findings: list[dict[str, Any]] = []
+    text = path.read_text(encoding="utf-8")
+    lines = text.split("\n")
+
+    current_verse: Optional[int] = None
+    chapter_no: Optional[int] = None
+    vlines: list[str] = []
+    vline_indices: list[int] = []
+
+    def _flush(verse: int, lines_for: list[str], indices: list[int]):
+        if verse is None or chapter_no is None or not lines_for:
+            return
+        try:
+            vtokens = MC.get_verse_tokens(book_slug, chapter_no, verse)
+            vclauses = MC.get_verse_clauses(book_slug, chapter_no, verse)
+        except Exception:
+            return
+        if not vtokens or not vclauses:
+            return
+        line_token_lists = _line_token_spans(vtokens, lines_for)
+        non_blank_lines = [l for l in lines_for if l.strip()]
+        for line_tokens, line_text, file_line_no in zip(
+            line_token_lists, non_blank_lines, indices
+        ):
+            if len(line_tokens) < 4:
+                continue
+            clauses_here = _clauses_with_heads_in(vclauses, line_tokens)
+            if len(clauses_here) < 2:
+                continue
+            clauses_sorted = sorted(
+                clauses_here,
+                key=lambda c: next(
+                    (i for i, t in enumerate(line_tokens)
+                     if id(t) in {id(x) for x in c.tokens}),
+                    9999,
+                ),
+            )
+            for j in range(len(clauses_sorted) - 1):
+                cl_b = clauses_sorted[j + 1]
+                idx = _split_index(line_tokens, cl_b)
+                if idx is None or idx == 0:
+                    continue
+                left = _pw_count(line_tokens[:idx])
+                right = _pw_count(line_tokens[idx:])
+                if left < MIN_HALF_PW or right < MIN_HALF_PW:
+                    continue
+                head_a = _clause_head_verb(clauses_sorted[j])
+                head_b = _clause_head_verb(cl_b)
+                findings.append({
+                    "file": str(path.relative_to(REPO_ROOT)).replace("\\", "/"),
+                    "line": file_line_no,
+                    "rule": RULE,
+                    "subcase": SUBCASE,
+                    "severity": SEVERITY,
+                    "verse": f"{chapter_no}:{verse}",
+                    "annotation": (
+                        f"Hpar parallel-clause split: heads "
+                        f"{head_a.text if head_a else '?'} | "
+                        f"{head_b.text if head_b else '?'}; split before "
+                        f"token {idx} ({left}+{right} pw)"
+                    ),
+                    "suggested_action": "SPLIT_AT_CLAUSE_BOUNDARY",
+                    "split_positions": [idx],
+                    "prior_line": line_text,
+                })
+
+    for idx, raw in enumerate(lines, start=1):
+        s = raw.strip()
+        if not s:
+            if current_verse is not None and vlines:
+                _flush(current_verse, vlines, vline_indices)
+                vlines, vline_indices = [], []
+            continue
+        if ":" in s and all(p.isdigit() for p in s.split(":")):
+            ch_str, vs_str = s.split(":")
+            chapter_no = int(ch_str)
+            if current_verse is not None and vlines:
+                _flush(current_verse, vlines, vline_indices)
+            current_verse = int(vs_str)
+            vlines, vline_indices = [], []
+            continue
+        vlines.append(s)
+        vline_indices.append(idx)
+
+    if current_verse is not None and vlines:
+        _flush(current_verse, vlines, vline_indices)
+
+    return findings
+
+
+def main() -> int:
+    p = argparse.ArgumentParser()
+    p.add_argument("--v2", action="store_true")
+    p.add_argument("--book", help="restrict to book slug")
+    p.add_argument("--json", action="store_true")
+    args = p.parse_args()
+
+    base = REPO_ROOT / "data" / "text-files" / "v2" / "he"
+    books = sorted(base.iterdir()) if base.exists() else []
+    if args.book:
+        books = [b for b in books if b.name == args.book]
+
+    all_findings: list[dict[str, Any]] = []
+    for book_dir in books:
+        if not book_dir.is_dir():
+            continue
+        slug = book_dir.name
+        for ch_file in sorted(book_dir.glob("*.txt")):
+            try:
+                fnd = scan_file(ch_file, slug)
+                all_findings.extend(fnd)
+            except Exception as e:
+                print(f"[{slug}/{ch_file.name}] error: {e}", file=sys.stderr)
+
+    if args.json:
+        print(json.dumps({
+            "validator": "validate_parallel_clause_split",
+            "summary": {"total_findings": len(all_findings)},
+            "findings": all_findings,
+        }, ensure_ascii=False, indent=2))
+    else:
+        for f in all_findings:
+            print(f"  {f['file']}:{f['line']}  {f['verse']}  {f['annotation']}")
+        print(f"\nTotal: {len(all_findings)} parallel-clause-split candidates")
+
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
