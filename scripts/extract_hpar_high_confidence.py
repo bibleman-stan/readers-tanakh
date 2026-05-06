@@ -106,6 +106,18 @@ def main():
                             continue
                         if not _frame_args_share_object(head_a, head_b):
                             continue
+                        # FP guard 2026-05-07 (Stan-flagged review pass):
+                        # if the LINE token immediately before cl_b's first
+                        # token is a relativizer (אֲשֶׁר / דִּי), clause B
+                        # is a relative-clause modifying cl_a's antecedent,
+                        # NOT a parallel cola — even though both target the
+                        # same A1 (the antecedent). Caught: Exod 25:22,
+                        # Deut 17:15, Esth 1:20, Isa 56:5, Jer 23:40,
+                        # Jer 34:14, Dan 2:44.
+                        if idx > 0:
+                            prev_tok = line_tokens[idx - 1]
+                            if prev_tok.consonant_skel in ("אשר", "די"):
+                                continue
                         # High-confidence! Record it.
                         a_a1 = head_a.frame_arg_ids.get("A1", [])
                         shared_id = a_a1[0] if a_a1 else "?"

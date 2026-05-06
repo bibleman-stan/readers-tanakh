@@ -81,6 +81,22 @@ def find_split_offset(line_text: str, cl_b_first_token: MC.Token,
     return -1
 
 
+# Skip-list: per-entry (book, chapter, verse) tuples flagged in 2026-05-07
+# editorial review as borderline / likely-FP outside the relative-clause class
+# (which is now caught mechanically by the extractor's אֲשֶׁר/דִּי end guard).
+# Each entry has a one-line rationale; surface for editorial decision before
+# adding to or removing from this list.
+_EDITORIAL_SKIP = frozenset({
+    ("07-judges", 5, 30),       # rhetorical-question parallelism (Song of Deborah)
+    ("09-1samuel", 2, 22),      # sequential narrative (Eli was old AND he heard)
+    ("09-1samuel", 9, 13),      # temporal-sequential (he blesses, AFTER they eat)
+    ("11-1kings", 18, 25),      # speech-frame + embedded command
+    ("19-psalms", 51, 18),      # protasis-then-consequence (do not desire / would I give)
+    ("20-proverbs", 23, 23),    # hendiadys-of-exhortation (buy / do not sell)
+    ("24-jeremiah", 49, 11),    # subject-shift (you leave / I preserve)
+})
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__,
                                   formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -93,13 +109,20 @@ def main():
     )
     he_dir = REPO_ROOT / "data" / "text-files" / "v2" / "he"
 
-    # Group findings by file
+    # Group findings by file (excluding skip-list)
     findings_by_file: dict[Path, list[dict]] = defaultdict(list)
+    skipped_by_editorial = 0
     with tsv_path.open(encoding="utf-8") as f:
         for row in csv.DictReader(f, delimiter="\t"):
+            key = (row["book"], int(row["chapter"]), int(row["verse"]))
+            if key in _EDITORIAL_SKIP:
+                skipped_by_editorial += 1
+                continue
             book_slug = row["book"]
             file_path = he_dir / book_slug / f"{book_slug.split('-', 1)[1]}-{int(row['chapter']):02d}.txt"
             findings_by_file[file_path].append(row)
+    if skipped_by_editorial:
+        print(f"[editorial-skip] {skipped_by_editorial} findings skipped per editorial review", file=sys.stderr)
 
     applied = 0
     skipped = 0

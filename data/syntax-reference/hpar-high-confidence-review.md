@@ -70,23 +70,7 @@ parallelism). Spot-check 5-10 entries; if the TP rate looks ≥80%, run
 
 ---
 
-### 5. Exodus 25:22
-
-**EN:** and I will meet you there / and I will speak with you from above the atonement cover from between the two the cherubim which will be above the ark of the testimony all that I will command you to the people of Israel
-
-**Heads:** `דִבַּרְתִּ֨י` | `אֲצַוֶּ֛ה`  (12+4 pw)
-
-**Hebrew clause A:**
-
-> וְ דִבַּרְתִּ֨י אִתְּ ךָ֜ מֵ עַ֣ל הַ כַּפֹּ֗רֶת מִ בֵּין֙ שְׁנֵ֣י הַ כְּרֻבִ֔ים אֲשֶׁ֖ר עַל אֲרֹ֣ן הָ עֵדֻ֑ת אֵ֣ת כָּל אֲשֶׁ֧ר
-
-**Hebrew clause B (split point):**
-
-> אֲצַוֶּ֛ה אוֹתְ ךָ֖ אֶל בְּנֵ֥י יִשְׂרָאֵֽל
-
----
-
-### 6. Exodus 29:7
+### 5. Exodus 29:7
 
 **EN:** and you will take the oil of anointing and you will pour it on his head / and you will anoint him
 
@@ -102,7 +86,7 @@ parallelism). Spot-check 5-10 entries; if the TP rate looks ≥80%, run
 
 ---
 
-### 7. Leviticus 6:21
+### 6. Leviticus 6:21
 
 **EN:** and a vessel of earthenware which it will be boiled in it will be broken / and if in a vessel of bronze it was boiled / and it will be scoured and it will be rinsed with water
 
@@ -118,7 +102,7 @@ parallelism). Spot-check 5-10 entries; if the TP rate looks ≥80%, run
 
 ---
 
-### 8. Leviticus 19:13
+### 7. Leviticus 19:13
 
 **EN:** you will not oppress your neighbor and you will not rob him / it will not remain overnight the wages of a hired laborer with you until morning
 
@@ -134,7 +118,7 @@ parallelism). Spot-check 5-10 entries; if the TP rate looks ≥80%, run
 
 ---
 
-### 9. Numbers 11:8
+### 8. Numbers 11:8
 
 **EN:** they went about the people / and they gathered and they ground in hand-mill or they pounded in mortar / and they boiled in pot / and they made it bread cakes / and it was taste its like the taste of cake of oil
 
@@ -150,7 +134,7 @@ parallelism). Spot-check 5-10 entries; if the TP rate looks ≥80%, run
 
 ---
 
-### 10. Numbers 15:40
+### 9. Numbers 15:40
 
 **EN:** so that you may remember and you will observe all my commandments / and you will be holy to your God
 
@@ -166,7 +150,7 @@ parallelism). Spot-check 5-10 entries; if the TP rate looks ≥80%, run
 
 ---
 
-### 11. Numbers 19:18
+### 10. Numbers 19:18
 
 **EN:** and he will take hyssop and he will dip it in the water a person clean / and he will spatter it on the tent and on all the vessels / and on the people who they were there / and on the one who touched the bone or the one slain / or the dead body / or the grave
 
@@ -182,7 +166,7 @@ parallelism). Spot-check 5-10 entries; if the TP rate looks ≥80%, run
 
 ---
 
-### 12. Numbers 31:29
+### 11. Numbers 31:29
 
 **EN:** from their half you will take it and you will give it to Eleazar the priest the contribution of Yahweh
 
@@ -198,23 +182,7 @@ parallelism). Spot-check 5-10 entries; if the TP rate looks ≥80%, run
 
 ---
 
-### 13. Deuteronomy 17:15
-
-**EN:** indeed you will appoint over yourself a king whom Yahweh your God will choose him / from the midst of your countrymen you will appoint over yourself a king / you will not be able to set over yourself a foreign man who not countryman is your he
-
-**Heads:** `תָּשִׂ֤ים` | `יִבְחַ֛ר`  (5+4 pw)
-
-**Hebrew clause A:**
-
-> שׂ֣וֹם תָּשִׂ֤ים עָלֶ֨י ךָ֙ מֶ֔לֶךְ אֲשֶׁ֥ר
-
-**Hebrew clause B (split point):**
-
-> יִבְחַ֛ר יְהוָ֥ה אֱלֹהֶ֖י ךָ בּ֑ וֹ
-
----
-
-### 14. Deuteronomy 22:19
+### 12. Deuteronomy 22:19
 
 **EN:** and they will impose a fine on him a hundred silver and they will give them to the father of the young woman / because he has sent forth a name bad on virgin of Israel / and to him she will belong to a wife he will not be able / to send her away all his days
 
@@ -230,7 +198,7 @@ parallelism). Spot-check 5-10 entries; if the TP rate looks ≥80%, run
 
 ---
 
-### 15. Deuteronomy 24:1
+### 13. Deuteronomy 24:1
 
 **EN:** when he will take a man a woman and he will her marry / and it shall be, if she will find favor in eyes of his because he has found in her the nakedness of a thing / and he will write for her a document of divorce and he will give it in her hand / and he will send her away from his house
 
@@ -246,7 +214,7 @@ parallelism). Spot-check 5-10 entries; if the TP rate looks ≥80%, run
 
 ---
 
-### 16. Deuteronomy 24:3
+### 14. Deuteronomy 24:3
 
 **EN:** and he will hate of her the man latter / and he will write for her a document of divorce and he will give it in her hand / and he will send her away from his house / or if he will die the man latter who he has taken her for himself to a wife
 
@@ -262,7 +230,7 @@ parallelism). Spot-check 5-10 entries; if the TP rate looks ≥80%, run
 
 ---
 
-### 17. Judges 5:30
+### 15. Judges 5:30
 
 **EN:** not are they finding are they dividing up plunder a womb two wombs for the head of a man / plunder of colored cloth for Sisera / plunder of colored cloth multicolored material colored cloth multicolored material for the necks of plunder
 
@@ -278,23 +246,7 @@ parallelism). Spot-check 5-10 entries; if the TP rate looks ≥80%, run
 
 ---
 
-### 18. 1 Samuel 2:22
-
-**EN:** and Eli he was old exceedingly and he heard all that they did his sons to all Israel / and how they were lying with the women who were serving the opening of the tent of meeting
-
-**Heads:** `שָׁמַ֗ע` | `יַעֲשׂ֤וּ`  (6+3 pw)
-
-**Hebrew clause A:**
-
-> וְ עֵלִ֖י זָקֵ֣ן מְאֹ֑ד וְ שָׁמַ֗ע אֵת֩ כָּל אֲשֶׁ֨ר
-
-**Hebrew clause B (split point):**
-
-> יַעֲשׂ֤וּ ן בָּנָי ו֙ לְ כָל יִשְׂרָאֵ֔ל
-
----
-
-### 19. 1 Samuel 8:11
+### 16. 1 Samuel 8:11
 
 **EN:** and he said / this it will be the rights of the king who he will reign / over you your sons he will take and he will appoint them for himself in his chariots / and among his horsemen / and they will run before his chariot
 
@@ -310,7 +262,7 @@ parallelism). Spot-check 5-10 entries; if the TP rate looks ≥80%, run
 
 ---
 
-### 20. 1 Samuel 8:14
+### 17. 1 Samuel 8:14
 
 **EN:** and your fields and your vineyards and your olive groves good / he will take and he will give them to his servants
 
@@ -326,7 +278,7 @@ parallelism). Spot-check 5-10 entries; if the TP rate looks ≥80%, run
 
 ---
 
-### 21. 1 Samuel 8:16
+### 18. 1 Samuel 8:16
 
 **EN:** and servants of your male and servants of your female and your men young good and your donkeys / he will take and he will use them for his work
 
@@ -342,7 +294,7 @@ parallelism). Spot-check 5-10 entries; if the TP rate looks ≥80%, run
 
 ---
 
-### 22. 1 Samuel 9:13
+### 19. 1 Samuel 9:13
 
 **EN:** just as you come the city thus you will find him before he will go up to the high place / to eat for it will not eat the people until comes he / because he will bless the sacrifice after thus they will eat those who were invited / and now go up for him as the day / you will find him
 
@@ -358,7 +310,7 @@ parallelism). Spot-check 5-10 entries; if the TP rate looks ≥80%, run
 
 ---
 
-### 23. 1 Kings 18:23
+### 20. 1 Kings 18:23
 
 **EN:** and let people give to us two young bulls and let them choose for themselves the young bull one and let them cut it in pieces and let them put on the wood and fire / they will not set / and I will prepare the young bull one and I will put on the wood and fire / I will not set
 
@@ -374,7 +326,7 @@ parallelism). Spot-check 5-10 entries; if the TP rate looks ≥80%, run
 
 ---
 
-### 24. 1 Kings 18:25
+### 21. 1 Kings 18:25
 
 **EN:** and Elijah said to the prophets of Baal choose for yourselves the young bull one and prepare it first / for you are the many / and call on the name of your God and fire / you will not set
 
@@ -390,7 +342,7 @@ parallelism). Spot-check 5-10 entries; if the TP rate looks ≥80%, run
 
 ---
 
-### 25. 2 Kings 6:22
+### 22. 2 Kings 6:22
 
 **EN:** and he said / you must not strike them down those whom you have taken captive by your sword / and by your bow / are you about to strike down / set food and water before them so that they may eat and so that they may drink / and let them go to their master
 
@@ -406,7 +358,7 @@ parallelism). Spot-check 5-10 entries; if the TP rate looks ≥80%, run
 
 ---
 
-### 26. Ezra 8:29
+### 23. Ezra 8:29
 
 **EN:** watch / and keep them until you will weigh them out before the leaders of the priests and the Levites / and the leaders of the fathers of Israel in Jerusalem / the rooms of the house of Yahweh
 
@@ -422,23 +374,7 @@ parallelism). Spot-check 5-10 entries; if the TP rate looks ≥80%, run
 
 ---
 
-### 27. Esther 1:20
-
-**EN:** and it will be heard the decree of the king which he will make in all his kingdom because it is great / and all the women they will give honor to their husbands from great / and unto insignificant
-
-**Heads:** `נִשְׁמַע֩` | `יַעֲשֶׂה֙`  (4+5 pw)
-
-**Hebrew clause A:**
-
-> וְ נִשְׁמַע֩ פִּתְגָ֨ם הַ מֶּ֤לֶךְ אֲשֶֽׁר
-
-**Hebrew clause B (split point):**
-
-> יַעֲשֶׂה֙ בְּ כָל מַלְכוּת֔ וֹ כִּ֥י רַבָּ֖ה הִ֑יא
-
----
-
-### 28. Psalms 137:9
+### 24. Psalms 137:9
 
 **EN:** how blessed! is the one who he will seize and he will smash your children to the rock
 
@@ -454,7 +390,7 @@ parallelism). Spot-check 5-10 entries; if the TP rate looks ≥80%, run
 
 ---
 
-### 29. Psalms 51:18
+### 25. Psalms 51:18
 
 **EN:** for you will not desire sacrifice and I will give it burnt offering / you are not pleased with
 
@@ -470,7 +406,7 @@ parallelism). Spot-check 5-10 entries; if the TP rate looks ≥80%, run
 
 ---
 
-### 30. Psalms 55:10
+### 26. Psalms 55:10
 
 **EN:** confuse Lord my divide their tongue / for I have seen violence and strife in the city
 
@@ -486,7 +422,7 @@ parallelism). Spot-check 5-10 entries; if the TP rate looks ≥80%, run
 
 ---
 
-### 31. Psalms 75:9
+### 27. Psalms 75:9
 
 **EN:** for a cup is in the hand of Yahweh and wine it is foaming full spiced drink and he has poured out some of this / surely its dregs they will drain they will drink all the wicked people of the earth
 
@@ -502,7 +438,7 @@ parallelism). Spot-check 5-10 entries; if the TP rate looks ≥80%, run
 
 ---
 
-### 32. Psalms 92:7
+### 28. Psalms 92:7
 
 **EN:** a person stupid he will not knows and a fool he will not understands this
 
@@ -518,7 +454,7 @@ parallelism). Spot-check 5-10 entries; if the TP rate looks ≥80%, run
 
 ---
 
-### 33. Proverbs 23:23
+### 29. Proverbs 23:23
 
 **EN:** truth buy and do not sell it wisdom and discipline and understanding
 
@@ -534,7 +470,7 @@ parallelism). Spot-check 5-10 entries; if the TP rate looks ≥80%, run
 
 ---
 
-### 34. Isaiah 5:6
+### 30. Isaiah 5:6
 
 **EN:** and I will make it a desolation it will not be pruned and it will not be hoed / and it will grow up thorns and bushes / and to the clouds I will command from raining on it rain
 
@@ -550,7 +486,7 @@ parallelism). Spot-check 5-10 entries; if the TP rate looks ≥80%, run
 
 ---
 
-### 35. Isaiah 13:20
+### 31. Isaiah 13:20
 
 **EN:** it will not remain to perpetuity and it will not settle until a generation and a generation / and he will not pitch tent there an Arab / and shepherds they will not make lie down there
 
@@ -566,7 +502,7 @@ parallelism). Spot-check 5-10 entries; if the TP rate looks ≥80%, run
 
 ---
 
-### 36. Isaiah 24:22
+### 32. Isaiah 24:22
 
 **EN:** and they will be gathered a gathering prisoners to a pit / and they will be shut up at a prison and from an abundance of days they will be visited
 
@@ -582,7 +518,7 @@ parallelism). Spot-check 5-10 entries; if the TP rate looks ≥80%, run
 
 ---
 
-### 37. Isaiah 41:15
+### 33. Isaiah 41:15
 
 **EN:** here! I will make you a threshing-sledge sharp new an owner of edges / you will thresh mountains and you will crush them and hills / like chaff you will make
 
@@ -598,7 +534,7 @@ parallelism). Spot-check 5-10 entries; if the TP rate looks ≥80%, run
 
 ---
 
-### 38. Isaiah 48:19
+### 34. Isaiah 48:19
 
 **EN:** and it was like the sand of your offspring and the descendants of your inward parts your like its grains it will not be cut off and it will not be destroyed its name from before face me
 
@@ -614,23 +550,7 @@ parallelism). Spot-check 5-10 entries; if the TP rate looks ≥80%, run
 
 ---
 
-### 39. Isaiah 56:5
-
-**EN:** and I will give to them in my house / and in my walls a monument and a name good more than sons / and more than daughters / a name of perpetuity I will give to him which it will not be cut off
-
-**Heads:** `אֶתֶּן` | `יִכָּרֵֽת`  (4+2 pw)
-
-**Hebrew clause A:**
-
-> אֶתֶּן ל֔ וֹ שֵׁ֤ם עוֹלָם֙ אֲשֶׁ֖ר
-
-**Hebrew clause B (split point):**
-
-> לֹ֥א יִכָּרֵֽת
-
----
-
-### 40. Jeremiah 8:2
+### 35. Jeremiah 8:2
 
 **EN:** and they will spread them out to the sun and to the moon / and to all the host of the heavens which they loved them and which they served them and which they walked after them / and which they consulted them / and which they bowed down to them / they will not be gathered and they will not be buried / dung on the surface of the ground they will become
 
@@ -646,23 +566,7 @@ parallelism). Spot-check 5-10 entries; if the TP rate looks ≥80%, run
 
 ---
 
-### 41. Jeremiah 23:40
-
-**EN:** and I will put on you a reproach of perpetuity and shame of perpetuity which it will not be forgotten
-
-**Heads:** `נָתַתִּ֥י` | `תִשָּׁכֵֽחַ`  (7+2 pw)
-
-**Hebrew clause A:**
-
-> וְ נָתַתִּ֥י עֲלֵי כֶ֖ם חֶרְפַּ֣ת עוֹלָ֑ם וּ כְלִמּ֣וּת עוֹלָ֔ם אֲשֶׁ֖ר
-
-**Hebrew clause B (split point):**
-
-> לֹ֥א תִשָּׁכֵֽחַ
-
----
-
-### 42. Jeremiah 30:6
+### 36. Jeremiah 30:6
 
 **EN:** ask please and see if is giving birth / a male why have I seen every man of his hands are on loins his like woman who gives birth / and have they been changed all faces into paleness
 
@@ -678,23 +582,7 @@ parallelism). Spot-check 5-10 entries; if the TP rate looks ≥80%, run
 
 ---
 
-### 43. Jeremiah 34:14
-
-**EN:** from the end of seven years you will let go everyone his brother Hebrew who he will sell himself to you and he will serve you six years and you will let him go a free person / from with you / and they will not listened your ancestors to me and they will not inclined their ear
-
-**Heads:** `תְּֽשַׁלְּח֡וּ` | `יִמָּכֵ֣ר`  (8+7 pw)
-
-**Hebrew clause A:**
-
-> מִ קֵּ֣ץ שֶׁ֣בַע שָׁנִ֡ים תְּֽשַׁלְּח֡וּ אִישׁ֩ אֶת אָחִ֨י ו הָ עִבְרִ֜י אֲשֶֽׁר
-
-**Hebrew clause B (split point):**
-
-> יִמָּכֵ֣ר לְ ךָ֗ וַ עֲבָֽדְ ךָ֙ שֵׁ֣שׁ שָׁנִ֔ים וְ שִׁלַּחְתּ֥ וֹ חָפְשִׁ֖י
-
----
-
-### 44. Jeremiah 49:11
+### 37. Jeremiah 49:11
 
 **EN:** leave your fatherless I will preserve them alive and your widows / on me let them rely
 
@@ -710,7 +598,7 @@ parallelism). Spot-check 5-10 entries; if the TP rate looks ≥80%, run
 
 ---
 
-### 45. Lamentations 3:40
+### 38. Lamentations 3:40
 
 **EN:** let us examine our ways and let us examine and let us return to Yahweh
 
@@ -726,7 +614,7 @@ parallelism). Spot-check 5-10 entries; if the TP rate looks ≥80%, run
 
 ---
 
-### 46. Ezekiel 26:21
+### 39. Ezekiel 26:21
 
 **EN:** sudden terror I will give to you and you will not be / and you will be sought and you will not be found again forever / declares the Lord Yahweh
 
@@ -742,23 +630,7 @@ parallelism). Spot-check 5-10 entries; if the TP rate looks ≥80%, run
 
 ---
 
-### 47. Daniel 2:44
-
-**EN:** and in their days of the kings those he will set up the God of the heavens a kingdom which forever it will not be destroyed / and the kingdom to a people another / it will not be left / it will shatter and it will put an end to all these the kingdoms / and it will endure for ever
-
-**Heads:** `יְקִים֩` | `תִתְחַבַּ֔ל`  (9+3 pw)
-
-**Hebrew clause A:**
-
-> וּֽ בְ יוֹמֵי ה֞וֹן דִּ֧י מַלְכַיָּ֣ א אִנּ֗וּן יְקִים֩ אֱלָ֨הּ שְׁמַיָּ֤ א מַלְכוּ֙ דִּ֤י
-
-**Hebrew clause B (split point):**
-
-> לְ עָלְמִין֙ לָ֣א תִתְחַבַּ֔ל
-
----
-
-### 48. Hosea 8:13
+### 40. Hosea 8:13
 
 **EN:** the sacrifices of my gifts they sacrifice flesh and they ate it Yahweh he is not pleased with them / now he will remember their iniquity and he will punish their sins they / Egypt they will return
 
@@ -774,7 +646,7 @@ parallelism). Spot-check 5-10 entries; if the TP rate looks ≥80%, run
 
 ---
 
-### 49. Hosea 13:11
+### 41. Hosea 13:11
 
 **EN:** I gave to you a king in my anger and I took him away in my wrath
 
