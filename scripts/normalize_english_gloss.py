@@ -882,7 +882,6 @@ def pass3_vs_reorder(line: str, in_poetic: bool) -> str:
     """V-S → S-V reorder for narrative clauses.
 
     Conservative gating:
-      - Skip in poetic register (Sifrei Emet etc.).
       - Trigger only on closed-list verbs.
       - Subject must be a closed-list proper name OR a closed-list definite NP.
       - Subject NP must immediately follow verb (or follow one short PP).
@@ -891,10 +890,13 @@ def pass3_vs_reorder(line: str, in_poetic: bool) -> str:
 
     Idempotent: after reorder, the line begins "and <NAME> <V>" — no longer
     matches `_VS_OPEN_RE` because the captured pronoun "he" is gone.
-    """
-    if in_poetic:
-        return line
 
+    Register skip removed 2026-05-07 per canon §0 methodology principle:
+    editorial overlays (te'amim, niqqud, versification, register
+    classification) are calibration evidence, not authorization. The three
+    editorial criteria adjudicate uniformly across registers.
+    `in_poetic` parameter retained for caller-API stability.
+    """
     m = _VS_OPEN_RE.match(line)
     if not m:
         return line
@@ -1153,14 +1155,13 @@ def pass9_drop_redundant_rel_pron(line: str, in_poetic: bool) -> str:
         OR "that"/"which" with a Capitalized-name to the left
         of the match in the same line.
       - The verb is on NARRATIVE_VERBS (closed list).
-      - In_poetic is False.
 
     Idempotent: after drop, "<NAME> who <V>" no longer matches the pattern
     (no pron between rel and verb).
-    """
-    if in_poetic:
-        return line
 
+    Register skip removed 2026-05-07 per canon §0 (calibration vs
+    authorization). `in_poetic` retained for caller-API stability.
+    """
     def _replace(m: re.Match) -> str:
         rel = m.group(1)
         pron = m.group(2)
@@ -1282,7 +1283,6 @@ def pass8_vs_reorder_mid_clause(line: str, in_poetic: bool) -> str:
       → "<subord> <SUBJ> <verb-cluster> <rest>"
 
     Conservative gating:
-      - Skip in poetic register (Sifrei Emet etc.).
       - Trigger only on closed-list verbs (NARRATIVE_VERBS).
       - Subject must be a closed-list proper name OR a closed-list
         definite NP OR a compound proper name ("Yahweh God" etc.).
@@ -1292,6 +1292,11 @@ def pass8_vs_reorder_mid_clause(line: str, in_poetic: bool) -> str:
     Idempotent: after reorder, the line contains "<subord> <SUBJ> <V>"
     — no pron between subord and verb, so pattern doesn't re-match.
 
+    Register skip removed 2026-05-07 per canon §0 (Psa 9:10 line 1
+    surfaced "and he will be Yahweh a refuge" → should normalize to
+    "and Yahweh will be a refuge"). `in_poetic` retained for caller-API
+    stability.
+
     Examples (with normalize-pipeline context):
       "all that he had done God for Moses"
         → "all that God had done for Moses"
@@ -1300,9 +1305,6 @@ def pass8_vs_reorder_mid_clause(line: str, in_poetic: bool) -> str:
       "that he had brought out Yahweh Israel from Egypt"
         → "that Yahweh had brought out Israel from Egypt"
     """
-    if in_poetic:
-        return line
-
     # Iterate matches; we may need to apply multiple swaps in one line.
     # Use a single forward pass: find the leftmost match, attempt reorder,
     # if successful continue from after the reordered span.
@@ -1501,9 +1503,10 @@ def pass6_v_medial_reorder(line: str, in_poetic: bool) -> str:
     'for was unclean he?'
     >>> pass6_v_medial_reorder("for is holy he to his God", False)
     'for he is holy to his God'
+
+    Register skip removed 2026-05-07 per canon §0 (calibration vs
+    authorization). `in_poetic` retained for caller-API stability.
     """
-    if in_poetic:
-        return line
     if "?" in line:
         return line
 
