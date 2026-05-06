@@ -176,6 +176,21 @@ def scan_file(path: Path, book_slug: str) -> list[dict[str, Any]]:
                     continue
                 head_a = _clause_head_verb(clauses_sorted[j])
                 head_b = _clause_head_verb(cl_b)
+                # FP-overcount guard (2026-05-05 FP audit #1, ~9 of 13 sampled
+                # FPs): when both clause heads share the same lemma, the second
+                # is almost always the matrix verb's own occurrence inside an
+                # אֲשֶׁר / כַּאֲשֶׁר / כִּי relative clause that Macula's leaf
+                # partition split as a separate clause. The relative-clause
+                # verb is subordinate to the matrix, not a coordinate
+                # proposition. Examples: Lev 9:6 + 2Ki 11:5 (תַּעֲשׂוּ matrix +
+                # תַּעֲשׂוּן relative); Jdg 7:5 (יָלֹק × 2 across relative +
+                # simile); Isa 41:13 (תִּירָא × 2 with embedded quote).
+                if (
+                    head_a is not None and head_b is not None
+                    and head_a.lemma and head_b.lemma
+                    and head_a.lemma == head_b.lemma
+                ):
+                    continue
                 findings.append({
                     "file": str(path.relative_to(REPO_ROOT)).replace("\\", "/"),
                     "line": file_line_no,
