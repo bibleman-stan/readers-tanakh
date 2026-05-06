@@ -34,6 +34,24 @@ GAPPED_SUBCASE = "parallel_gapped_restatement"
 GAPPED_SEVERITY = "REVIEW-REQUIRED"  # FP risk warrants editor confirmation
 MIN_HALF_PW = 2  # Hebrew bicola can be 3+2 or 2+3; 2 is the minimum atomic-thought width
 
+# Hpar FP-class structural guards (cluster-stratified audit 2026-05-07 +
+# adversarial audit pivot: Macula constituent attributes replace
+# token-skel/lemma approximations). Three Macula `Constituent` attributes
+# subsume four FP classes:
+#   - `cl_b.is_relative_clause` — relative/subordinator-introduced clauses
+#     (FP class 4, ~6 of 30 sampled)
+#   - `cl_b.role == "o"` — clause B fills the object/complement slot of
+#     clause A's verb (FP class 3 embedded-speech: ~4 of 30; AND complement-
+#     ki cases: ~2 of 30)
+#   - `cl_b.role == "adv"` — purpose/result/temporal adverbial clause
+#     (FP class 1 result-clause: ~5 of 30)
+# These are constituent-level attributes from Macula's lowfat XML — not
+# re-derivable from token skeletons because the structural-role labels
+# require parser context. This is the canon §1 prescription:
+# "Macula constituent trees + frame annotations are the structural
+# diagnostic ... morpho-syntactic role symmetry across a candidate
+# boundary, queried mechanically."
+
 # Closed-list suppressions for the gapped-restatement arm (per audit
 # 2026-05-05 ab272883f08b465c3 — 6 FP classes covering ~40 of 60 raw
 # candidates in SE). Body-part lemmas in particular form paired idioms
@@ -320,6 +338,21 @@ def scan_file(path: Path, book_slug: str) -> list[dict[str, Any]]:
                     and head_a.lemma and head_b.lemma
                     and head_a.lemma == head_b.lemma
                 ):
+                    continue
+                # FP guard (audit 2026-05-07 + adversarial pivot): clause B
+                # is structurally subordinate to clause A — relative clause,
+                # complement, or adverbial. Macula's constituent attributes
+                # encode this directly; no token-skel re-derivation needed.
+                if cl_b.is_relative_clause:
+                    continue
+                if cl_b.ancestor_with(wg_class="relp") is not None:
+                    continue
+                if cl_b.role in ("o", "adv"):
+                    # role="o": clause B is the object/complement of clause
+                    # A's verb (covers embedded speech: אִמְרוּ + speech-content,
+                    # complement-כִּי: יָדַעְתִּי כִּי-X, etc.)
+                    # role="adv": clause B is purpose/result/temporal
+                    # adverbial (covers "do X so that Y" result-clause FP)
                     continue
                 findings.append({
                     "file": str(path.relative_to(REPO_ROOT)).replace("\\", "/"),
