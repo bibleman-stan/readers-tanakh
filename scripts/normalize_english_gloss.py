@@ -1131,8 +1131,12 @@ def pass7_capitalize_divine_titles(line: str) -> str:
 # Skip in poetic register.
 # ---------------------------------------------------------------------------
 
+# "whom" intentionally EXCLUDED — almost always relativizes an OBJECT
+# (English "whom did he see" / "the man whom he loves"), so the in-clause
+# pronoun is a REAL subject, not redundant. Tested 2026-05-05 on Exod 18:9:
+# "Israel whom he had delivered" — pass9 was wrongly dropping the "he".
 _REDUNDANT_REL_PRON_RE = re.compile(
-    r"\b(who|whom|that|which)\s+(he|she|it|they)\s+"
+    r"\b(who|that|which)\s+(he|she|it|they)\s+"
     r"((?:was|were|is|are|has|have|had|will|shall|may|might|would|could|should)\s+)?"
     r"(\w+)\b",
     re.IGNORECASE,
