@@ -299,27 +299,61 @@ def line_has_finite_verb(line: str, token_tags: "list[list[str]] | None" = None)
 # (per canon §5 H7 Rule). These are the matrix verbs that make next כִּי a
 # complement (H7 territory), not causal.
 COGNITION_SPEECH_VERBS = {
-    # Cognition verbs
+    # Cognition verbs (qatal)
     "ידע", "ידעה", "ידעו", "ידעתי", "ידעת",     # know
     "הבין", "הבינה", "הבינו", "הבינתי",        # understand
     "זכר", "זכרה", "זכרו", "זכרתי",             # remember
     "ראה", "ראתה", "ראו", "ראיתי",              # see
     "שמע", "שמעה", "שמעו", "שמעתי",             # hear
     "חשב", "חשבה", "חשבו", "חשבתי",             # think
-    # Speech verbs
+    # Cognition wayyiqtol forms (causal_ki audit 2026-05-05 fix #1 — Ezk 23:55
+    # וָאֵרֶא missed; Lam 1:72 הַבִּיטָה missed; etc.)
+    "וירא", "ויראה", "ויראו", "וארא", "ותרא",
+    "ויבן", "ויזכר", "וישמע", "ויחשב",
+    # Cognition imperative forms (audit fix #1 — Ecc 11:44 וְדָע missed)
+    "דע", "ודע", "דעי", "דעו",
+    "ראה", "וראה", "ראי", "ראו",
+    "שמע", "ושמע", "שמעי", "שמעו",
+    "זכר", "וזכר", "זכרי", "זכרו",
+    "הבן", "והבן",
+    # Hifil נבט (look/behold) — caught by audit Lam 1:72 הַבִּיטָה,
+    # Isa 22 patterns. Hifil pattern letter is 'ה' prefix.
+    "הביט", "הביטה", "הביטו", "הביטי", "יביט", "תביט",
+    "יביטו", "תביטו", "ויביט", "ותביט", "הבט", "והבט",
+    # Speech verbs (qatal)
     "אמר", "אמרה", "אמרו", "אמרתי", "אמרת",     # say
     "דבר", "דברה", "דברו", "דברתי",             # speak (piel)
     "קרא", "קראה", "קראו", "קראתי",             # call
     "צוה", "צותה", "צוו", "צויתי",              # command
     "אנה", "אנתה", "אנו", "אניתי",              # answer
+    # Speech wayyiqtol
+    "ויאמר", "ותאמר", "ויאמרו", "ותאמרנה",
+    "וידבר", "ותדבר", "וידברו",
+    "ויקרא", "ותקרא", "ויקראו",
     # Yiqtol + imperative forms of cognition/speech
-    "ידע", "יידע", "תידע", "יידעו", "תידעו",
-    "ידע", "וידע", "וידעה", "וידעו",
-    "הבין", "יבין", "תבין", "יבינו", "תבינו",
-    "זכר", "יזכר", "תזכר", "יזכרו", "תזכרו",
-    "אמר", "יאמר", "תאמר", "יאמרו", "תאמרו",
-    "דבר", "ידבר", "תדבר", "ידברו", "תדברו",
+    "יידע", "תידע", "יידעו", "תידעו",
+    "וידע", "וידעה", "וידעו",
+    "יבין", "תבין", "יבינו", "תבינו",
+    "יזכר", "תזכר", "יזכרו", "תזכרו",
+    "יאמר", "תאמר", "יאמרו", "תאמרו",
+    "ידבר", "תדבר", "ידברו", "תדברו",
 }
+
+# כִּי אִם compound-idiom marker — adversative/conditional, NOT causal.
+# Audit fix #3 (1Sam 20:46 חָלִילָה לָּךְ // כִּי אִם יָדֹעַ).
+KI_IM_NEXT_TOKEN_SKEL = "אם"
+
+# Interrogative prior-line skeletons (audit fix #4 — rhetorical questions
+# presuppose the answer; the כִּי clause IS the presupposed answer; single
+# image. e.g., Jdg 8:78 הֲכַף ... כִּי נִתֵּן).
+INTERROGATIVE_SKELETONS = frozenset({
+    "ה",        # interrogative he prefix (will be combined-token; check skel start)
+    "מה", "ומה", "למה",
+    "מי", "ומי",
+    "אי", "איה", "איך", "איפה",
+    "מתי", "ומתי",
+    "הלא", "הלוא",
+})
 
 
 def line_ends_with_cognition_speech_verb(line: str) -> bool:
@@ -584,6 +618,53 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
         if is_ki_noun_appositive(next_line):
             continue
 
+        # --- Guard 5 (audit 2026-05-05 fix #3): כִּי אִם compound idiom ---
+        # Adversative/conditional, not causal. Pattern: next line starts כִּי אִם
+        # (the second token after כִּי is אִם).
+        next_toks = content_tokens(next_line)
+        if len(next_toks) >= 2:
+            second_bare = strip_points(next_toks[1]).rstrip(SOF_PASUQ)
+            if second_bare == "אם" or second_bare == "ואם":
+                continue
+
+        # --- Guard 6 (audit fix #2): כִּי-clause-internal cognition check ---
+        # If the first verb-position token AFTER כִּי is itself a cognition or
+        # perception verb (כִּי רָאִיתִי, כִּי שָׁמַע, כִּי יָדַעְתִּי), the כִּי is
+        # complement-of-the-cognition-verb (H7), not causal. Caught audit FPs:
+        # Psa 55:35 כִּי רָאִיתִי, several others.
+        if len(next_toks) >= 2:
+            # Token 0 is כִּי; token 1 is the next content token (often the verb).
+            verb_candidate = strip_points(next_toks[1]).rstrip(SOF_PASUQ)
+            # Strip leading vav if present.
+            if verb_candidate.startswith("ו") and len(verb_candidate) > 1:
+                stripped = verb_candidate[1:]
+                if stripped in COGNITION_SPEECH_VERBS:
+                    continue
+            if verb_candidate in COGNITION_SPEECH_VERBS:
+                continue
+
+        # --- Guard 7 (audit fix #4): interrogative prior-line ---
+        # If prior line starts with an interrogative (ה-prefix, מה, מי, אי, etc.),
+        # the כִּי clause is the presupposed answer; single image. Caught audit
+        # FP-tight: Jdg 8:78 הֲכַף ... כִּי נִתֵּן.
+        prior_first = first_content_token(line)
+        if prior_first:
+            prior_first_bare = strip_points(prior_first)
+            if prior_first_bare.startswith("ו"):
+                prior_first_bare_no_vav = prior_first_bare[1:]
+            else:
+                prior_first_bare_no_vav = prior_first_bare
+            if prior_first_bare_no_vav in INTERROGATIVE_SKELETONS:
+                continue
+            # Interrogative he-prefix: bare token starts with ה followed by
+            # a non-vowel consonant (the ה prefix attached to following word
+            # like הֲכַף, הֲלָבוֹא, הֲשָׁמַעְתָּ).
+            if (len(prior_first_bare_no_vav) >= 2
+                and prior_first_bare_no_vav[0] == "ה"
+                and prior_first_bare_no_vav[:2] in {"הא", "הע", "הח", "הה"}
+                and len(prior_first_bare_no_vav) <= 6):  # short interrogative-prefixed
+                continue
+
         # --- Semantic test: could be causal כִּי? ---
         # Extract last token's verb from prior line
         prior_verb_bare = None
@@ -618,7 +699,7 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
             "line_num": line_no,
             "next_line_num": next_line_no,
             "rule": "causal-כִּי-clause-split",
-            "severity": "REVIEW-REQUIRED",
+            "severity": "STRONG-SPLIT-CANDIDATE",
             "book": book,
             "chapter": chapter,
             "verse": verse,
@@ -723,7 +804,7 @@ def main():
                 str(p.relative_to(REPO_ROOT)).replace("\\", "/") for p in files
             ],
             "findings": findings_json,
-            "counts": {"REVIEW-REQUIRED": len(findings_json)},
+            "counts": {"STRONG-SPLIT-CANDIDATE": len(findings_json)},
             "summary": {
                 "total_findings": len(findings_json),
                 "exit_code": exit_code,
