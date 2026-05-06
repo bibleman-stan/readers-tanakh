@@ -296,6 +296,19 @@ def pass0_construct_of_with_pron(line: str) -> str:
             i += 1
             continue
 
+        # FP guard: list-coordination (Stan-flagged 2026-05-07). If the next
+        # tokens after Y are "and [pron] [N]" or "[pron] [N]" (no comma in
+        # English gloss), the X is heading a coordinated possessive-NP list
+        # (temple-furniture pattern: "the lampstand its base and its shaft
+        # and its lamps"), NOT a construct chain. Don't insert 'of'.
+        if i + 5 < n:
+            t4_clean = re.sub(r"[^\w-]", "", tokens[i + 4]).lower()
+            t5_clean = re.sub(r"[^\w-]", "", tokens[i + 5]).lower()
+            if t4_clean == "and" and t5_clean in SUFFIX_PRONOUNS:
+                out.append(tokens[i])
+                i += 1
+                continue
+
         # Insert "of" between X and pron: "the X of pron Y ..."
         out.extend([t0, t1, "of", t2, t3])
         i += 4
