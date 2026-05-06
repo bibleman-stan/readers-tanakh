@@ -594,6 +594,30 @@ CASCADE_TESTS = [
         False,
         "",
     ),
+    (
+        "second refresh_book with gloss-generator Edit between allowed",
+        "PYTHONIOENCODING=utf-8 py -3 scripts/refresh_book.py --book 02-exodus",
+        ["PYTHONIOENCODING=utf-8 py -3 scripts/refresh_book.py --book 02-exodus"],
+        ["scripts/generate_english_glosses.py"],
+        False,
+        "",
+    ),
+    (
+        "second refresh_book with normalize_english_gloss Edit between allowed",
+        "PYTHONIOENCODING=utf-8 py -3 scripts/refresh_book.py --book 02-exodus",
+        ["PYTHONIOENCODING=utf-8 py -3 scripts/refresh_book.py --book 02-exodus"],
+        ["scripts/normalize_english_gloss.py"],
+        False,
+        "",
+    ),
+    (
+        "second refresh_book with propagate_editorial_layers Edit between allowed",
+        "PYTHONIOENCODING=utf-8 py -3 scripts/refresh_book.py --book 02-exodus",
+        ["PYTHONIOENCODING=utf-8 py -3 scripts/refresh_book.py --book 02-exodus"],
+        ["scripts/propagate_editorial_layers.py"],
+        False,
+        "",
+    ),
     # === BLOCKS (exit 2) ===
     (
         "second cascade against same book without engine-Edit blocks",
