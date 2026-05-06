@@ -88,16 +88,32 @@ if [ -n "$V2_HE_STAGED" ]; then
     echo ""
 fi
 
-# ── Phase 2: validator regression gate ──────────────────────────────────────
+# ── Phase 2: validator regression gate (incremental) ───────────────────────
+#
+# Categorize staged paths to decide what scope (if any) needs baseline-check:
+#   CODE_OR_CORPUS — touches v2/he/<book>, validators/<*.py|*.yaml>, or
+#                    scripts/<*.py> (engine code). Either could change
+#                    validator output → run baseline-check.
+#   DOCS_ONLY      — touches only canon, syntax-reference, handoffs,
+#                    CLAUDE.md, session-notes, etc. No validator output
+#                    impact possible → SKIP baseline-check (the legacy
+#                    behavior was to run full corpus on every canon edit,
+#                    which dominated the te'amim revision commit chokepoint).
+#
+# Validator-code or engine changes still pay full cost (any book could be
+# affected). v2/he changes still pay full cost in the current iteration;
+# scoping to per-book requires per-book baseline (deferred).
 
-RELEVANT=$(git diff --cached --name-only | grep -E "^(data/text-files/v2/he/|private/01-method/colometry-canon\.md|data/syntax-reference/|validators/)" || true)
+CODE_OR_CORPUS=$(git diff --cached --name-only | grep -E "^(data/text-files/v2/he/|validators/.*\.(py|yaml)$|scripts/.*\.py$)" || true)
 
-if [ -z "$RELEVANT" ]; then
+if [ -z "$CODE_OR_CORPUS" ]; then
+    echo ""
+    echo "[pre-commit] Docs-only commit (no v2/he or validator/engine code changes). Skipping baseline-check."
     exit 0
 fi
 
 echo ""
-echo "[pre-commit] Canon/corpus/validator files staged. Running run_all --baseline-check..."
+echo "[pre-commit] Code or corpus changes staged. Running run_all --baseline-check..."
 echo ""
 
 set +e
