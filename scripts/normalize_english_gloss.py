@@ -246,6 +246,22 @@ def pass0_construct_of_with_pron(line: str) -> str:
             i += 1
             continue
 
+        # FP guard: if "the X" is preceded by a proper name (capitalized,
+        # ≥2 chars), then "the X" is appositional to that name (gentilic
+        # adjective or descriptor), NOT a construct head. E.g., "Hagar the
+        # Egyptian her maidservant" — "the Egyptian" describes Hagar; the
+        # apposition continues with "her maidservant" as another descriptor,
+        # not a construct rectum. Inserting "of" produces "Hagar the Egyptian
+        # of her maidservant" which mistypes apposition as genitive.
+        # Stan-flagged 2026-05-07 (Genesis 16:3 case).
+        if i > 0:
+            prev_tok = tokens[i - 1].rstrip(".,;:!?")
+            if (len(prev_tok) >= 2 and prev_tok[0].isupper()
+                and prev_tok.lower() not in {"the", "a", "an"}):
+                out.append(tokens[i])
+                i += 1
+                continue
+
         t1_clean = re.sub(r"[^\w-]", "", t1).lower()
         t2_clean = re.sub(r"[^\w-]", "", t2).lower()
         t3_clean = re.sub(r"[^\w-]", "", t3).lower()
