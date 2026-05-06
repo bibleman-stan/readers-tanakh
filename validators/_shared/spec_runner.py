@@ -270,6 +270,22 @@ def _check_morphology(tok: str, morph: str, tag_list: Optional[list[str]] = None
     if morph == "numeral_or_unit_noun":
         return M.is_numeral_token(tok, tag_list=tag_list) or M.is_numeral_governed_noun(tok)
     if morph == "bare_noun":
+        # Engine-level TAHOT non-noun-head FP guard. Reject tokens whose first
+        # morpheme (after stripping leading conjunction) is R (preposition).
+        # Audit-named h18_4 FP class: PP+suffix forms (e.g., אִתָּךְ "with-you" =
+        # Rd/Sp2fs) collide with bare_noun heuristic via consonant-skeleton path
+        # because the prep + suffix produces a 4+ char skel that the helper
+        # mistakes for a possessed noun. One engine-level fix replaces per-spec
+        # whack-a-mole. Mirrors the prep guard pattern (commit d67a18f91).
+        if tag_list:
+            head_tag = next((t for t in tag_list if t and t != "[—]"), None)
+            if head_tag is not None:
+                from . import morph_tags as _MT
+                chain = _MT.morpheme_chain(head_tag)
+                if chain and chain[0] == "c":
+                    chain = chain[1:]
+                if chain and chain[0].startswith("R"):
+                    return False  # preposition head, not a bare noun
         return M.is_bare_noun_token(tok, tag_list=tag_list)
     if morph == "inf_abs":
         return M.is_inf_abs_token(tok, tag_list=tag_list)
