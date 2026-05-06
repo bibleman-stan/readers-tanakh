@@ -1,17 +1,19 @@
 name: h9_relative_pronoun_strand
 rule: H9-rel
 subcase: relative_pronoun_strand_asher
-severity: REVIEW-REQUIRED
+severity: STRONG-MERGE-CANDIDATE
 description: |
   H9 extension — אֲשֶׁר relative pronoun stranded from NP head. Line N+1
-  begins with אֲשֶׁר (standalone relative pronoun). Short relative clauses may
-  merge upward per justification 5; long ones stay separate. Surfaces
-  candidates; editor judges per three forces. Guard: poetic register.
+  begins with אֲשֶׁר (standalone relative pronoun). Tightened trigger
+  (combined ≤5 pw) per Stan 2026-05-05 REVIEW-REQUIRED ban + spec audit
+  ab3890fd8ee2249bd: short stranded relatives are mechanically safe to
+  merge; longer ones stay separate.
 
 trigger:
   line_n1_first_token:
     skeleton_in:
       - "אשר"
+  combined_max_prosodic_words: 5
 
-annotation_template: "H9-rel אֲשֶׁר relative pronoun stranded from NP head (combined {pwc} prosodic words)"
-suggested_action: REVIEW
+annotation_template: "H9-rel אֲשֶׁר relative pronoun stranded from NP head — short merge ({pwc} pw)"
+suggested_action: MERGE

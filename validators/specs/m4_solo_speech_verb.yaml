@@ -1,7 +1,7 @@
 name: m4_solo_speech_verb
 rule: M4
 subcase: solo_speech_verb
-severity: REVIEW-REQUIRED
+severity: STRONG-MERGE-CANDIDATE
 description: |
   Single-token bare wayyiqtol speech-verb on its own line. **Per Path 1
   canon revision (2026-05-02 §5 H5b): this spec is REVIEW-REQUIRED only.**
@@ -54,12 +54,12 @@ trigger:
       - "ותען"
       - "ויוסף"
   line_n_max_prosodic_words: 1
-  combined_max_prosodic_words: 25   # speech complement may be long (extended quotation)
+  combined_max_prosodic_words: 5   # narrow scope-economy carve-out per §5 H5; long quotations stay separate (Stan 2026-05-05 REVIEW-REQUIRED ban + spec audit ab3890fd8ee2249bd)
 
 guards:
   - next_line_is_vav_coord_pp     # block re-absorbing post-S1-split coord-PP enumeration members
   - next_line_is_vav_coord_np     # block re-absorbing post-S2-split coord-NP enumeration members
   - next_line_is_wayyiqtol        # block re-absorbing post-S3-split wayyiqtol-headed lines
 
-annotation_template: "Solo speech verb stranded — REVIEW for §5 H5 scope-economy carve-out (dialogue chain) ({pwc} prosodic words combined)"
-suggested_action: REVIEW
+annotation_template: "M4 solo speech verb merge — narrow scope-economy carve-out (combined ≤5 pw) ({pwc} prosodic words)"
+suggested_action: MERGE
