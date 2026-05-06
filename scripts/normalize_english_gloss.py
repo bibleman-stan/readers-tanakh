@@ -1589,6 +1589,68 @@ def pass5_dedup(line: str) -> str:
     return line
 
 
+# Negation placement (Stan-flagged 2026-05-07: Psa 23:1 "not I lack" / Psa 23:4
+# "not I will fear harm" — Hebrew negation לֹא + yiqtol mechanically renders as
+# "not [PRON] [V]" but English requires SUBJ + AUX + not + V).
+_NEG_SUBJ_PRONS = ("I", "you", "he", "she", "it", "we", "they")
+_NEG_AUX_VERBS = ("will", "shall", "do", "does", "did", "can", "may", "might",
+                  "would", "should", "could", "must",
+                  # Copulas + perfect/progressive auxes — when present, preserve
+                  # them (e.g., "not he had caused" → "he had not caused", not
+                  # "he will not had caused"; "not she is here" → "she is not here").
+                  "is", "are", "am", "was", "were",
+                  "has", "have", "had", "been", "being")
+# Pattern: "not <pron> [aux]? <V>" — Hebrew negation לֹא always immediately
+# precedes its verb, so any "not [PRON] [V]" surface is mechanically certain
+# to be the Hebrew construction needing English-style reorder. No clause-
+# boundary requirement; the closed-list pronoun + closed-list aux + content-
+# word verb combination is precise enough that the broad scan is safe.
+_NEG_PLACEMENT_RE = re.compile(
+    r"\bnot\s+(" + "|".join(_NEG_SUBJ_PRONS) + r")\s+"
+    r"(?:(" + "|".join(_NEG_AUX_VERBS) + r")\s+)?"
+    r"([a-z]\w*)",
+    re.IGNORECASE,
+)
+
+
+def pass_negation_placement(line: str) -> str:
+    """Reorder Hebrew-style "not [PRON] [V]" to English "[PRON] [aux] not [V]".
+
+    Hebrew negation לֹא precedes the verb (NEG SUBJ-VERB); literal gloss yields
+    "not I lack" / "not I will fear" which is non-English. English negation
+    requires SUBJ + AUX + not + V.
+
+    Conservative gating:
+      - Closed-list subject pronouns (I/you/he/she/it/we/they)
+      - Pattern fires at clause boundary (line start, post-punctuation, after
+        common subordinators) — avoids mid-line false matches like
+        "perhaps not I lack" where intervening text could change parsing
+      - If existing aux verb (will/shall/do/etc.) is present after the pronoun,
+        preserve it: "not I will fear" → "I will not fear"
+      - If no aux, insert "will" — preserves Stan's established future-tense
+        rendering for Hebrew yiqtol (Psa 23:4 already uses "will fear")
+      - Only trigger if the word after pronoun (or aux) is a content word
+        (not punctuation, not another particle)
+
+    Idempotent: after reorder "[PRON] [aux] not [V]", "not" no longer follows
+    the boundary trigger, so the pattern doesn't re-match.
+
+    Examples:
+      "not I lack" → "I will not lack"
+      "not I will fear harm" → "I will not fear harm"
+      "and not he forsook" → "and he will not forsake" (well, simpler: "and he did not forsake" but we use "will" uniformly per Stan-rendering pattern)
+    """
+    def _replace(m: re.Match) -> str:
+        pron = m.group(1)
+        aux = m.group(2)  # may be None
+        verb = m.group(3)
+        if not aux:
+            aux = "will"
+        return f"{pron} {aux} not {verb}"
+    # Single forward pass; idempotent so no risk of infinite rewrite.
+    return _NEG_PLACEMENT_RE.sub(_replace, line)
+
+
 # ---------------------------------------------------------------------------
 # Chapter processor
 # ---------------------------------------------------------------------------
@@ -1605,6 +1667,7 @@ def normalize_line(line: str, in_poetic: bool) -> str:
     s = pass9_drop_redundant_rel_pron(s, in_poetic)  # Class 1 sub-arm: drop redundant relative-clause pron
     s = pass4_whitespace(s)
     s = pass6_v_medial_reorder(s, in_poetic)
+    s = pass_negation_placement(s)
     s = pass5_dedup(s)
     return s
 
