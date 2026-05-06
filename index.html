@@ -212,6 +212,17 @@
     width: 100%;
   }
 
+  #nav-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 16px;
+    /* dense flow lets the second column backfill below an expanded book —
+       e.g., if Genesis (row 1 col 1) is expanded, the chapter grid takes
+       row 2 spanning both cols; Exodus then backfills row 1 col 2 instead
+       of being pushed to row 3. */
+    grid-auto-flow: dense;
+  }
+
   .nav-book-row {
     display: flex;
     align-items: center;
@@ -240,6 +251,8 @@
     gap: 5px;
     padding: 6px 12px 14px;
     border-bottom: 1px solid var(--border);
+    /* span both columns of #nav-columns when visible */
+    grid-column: 1 / -1;
   }
   .nav-ch-grid.visible { display: flex; }
 
@@ -2200,6 +2213,11 @@ function buildNavPanel() {
   const body = document.getElementById('nav-body');
   body.innerHTML = '';
 
+  // Two-column grid container with dense auto-flow (BoFM-reader port).
+  const cols = document.createElement('div');
+  cols.id = 'nav-columns';
+  body.appendChild(cols);
+
   for (const slug of BOOK_KEYS) {
     const book = BOOKS[slug];
     const isActive = (slug === currentBook);
@@ -2209,7 +2227,7 @@ function buildNavPanel() {
     row.className = 'nav-book-row' + (isActive ? ' active' : '');
     row.innerHTML = '<span>' + book.name + '</span><span class="nav-book-chaps">' + book.chapters + ' ch</span>';
     row.onclick = () => toggleBookChapters(slug);
-    body.appendChild(row);
+    cols.appendChild(row);
 
     // Chapter grid
     const grid = document.createElement('div');
@@ -2228,7 +2246,7 @@ function buildNavPanel() {
       }
     }
 
-    body.appendChild(grid);
+    cols.appendChild(grid);
 
     // Auto-expand current book
     if (isActive && book.chapters > 1) {
