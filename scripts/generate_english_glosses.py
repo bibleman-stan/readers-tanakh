@@ -482,6 +482,94 @@ NATURALIZE_RULES = [
     (r"\bnights three\b",          "three nights"),
     (r"\bdays forty\b",            "forty days"),
     # -----------------------------------------------------------------------
+    # 13b. Generalized NP+ADJ reorder (Class 2 of 2026-05-05 four-class
+    # spec). Hebrew default is NP + ADJ; English fronts the adjective. The
+    # closed list below is restricted to UNAMBIGUOUS attributive adjectives
+    # — words that are very rarely a noun in biblical English. Excluded
+    # from the list (despite being common in Hebrew) because they overlap
+    # with nouns or quantifiers:
+    #   good, bad, evil          — frequently nouns ("good and evil")
+    #   one, first, second, etc. — quantifiers / numerals
+    #   right, left              — direction nouns
+    #   true, false              — predicates more often than attributives
+    # The "very" rule (16 below) handles the adverbial-intensifier surface
+    # which is structurally similar but distinct.
+    # Pattern matches both "the <noun> <adj>" (definite NP) and
+    # "a <noun> <adj>" (indefinite NP) and bare "<noun> <adj>"; only the
+    # determiner-bearing forms reorder safely (bare NP+ADJ is too FP-prone).
+    # The (\w+) for <noun> excludes adjectives themselves to prevent
+    # cascading swaps like "the great fierce wind" mis-firing.
+    # -----------------------------------------------------------------------
+    # Definite NP+ADJ: "the <noun> <adj>" → "the <adj> <noun>"
+    (r"\bthe (\w+) (foreign|strange|holy|sacred|profane|mighty|valiant|"
+     r"fierce|gentle|righteous|wicked|beautiful|ugly|wise|foolish|"
+     r"hidden|exalted|humble|humbled|honest|"
+     r"rich|poor|wealthy|delicate|"
+     r"strong|weak|stout|tender|firm|loose|"
+     r"long|short|tall|deep|shallow|wide|narrow|broad|thick|thin|"
+     r"hot|cold|wet|dry|hard|soft|sweet|bitter|"
+     r"loud|quiet|swift|slow|"
+     r"alive|dead|fertile|barren|fruitful|"
+     r"angry|sad|happy|ashamed|"
+     r"perfect|imperfect|broken|whole|complete|"
+     r"heavy|light|severe|"
+     r"high|low|"
+     r"old|young|new|"
+     r"large|small|big|little|"
+     r"many|much|numerous|"
+     r"abundant|scarce|"
+     r"weary|tired|patient|bold|timid|"
+     r"proud|"
+     r"afraid|"
+     r"red|black|white|green|blue)\b",
+     r"the \2 \1"),
+    # Indefinite NP+ADJ: "a <noun> <adj>" → "a <adj> <noun>"
+    (r"\ba (\w+) (foreign|strange|holy|sacred|profane|mighty|valiant|"
+     r"fierce|gentle|righteous|wicked|beautiful|ugly|wise|foolish|"
+     r"hidden|exalted|humble|humbled|honest|"
+     r"rich|poor|wealthy|delicate|"
+     r"strong|weak|stout|tender|firm|loose|"
+     r"long|short|tall|deep|shallow|wide|narrow|broad|thick|thin|"
+     r"hot|cold|wet|dry|hard|soft|sweet|bitter|"
+     r"loud|quiet|swift|slow|"
+     r"alive|dead|fertile|barren|fruitful|"
+     r"angry|sad|happy|ashamed|"
+     r"perfect|imperfect|broken|whole|complete|"
+     r"heavy|light|severe|"
+     r"high|low|"
+     r"old|young|new|"
+     r"large|small|big|little|"
+     r"many|much|numerous|"
+     r"abundant|scarce|"
+     r"weary|tired|patient|bold|timid|"
+     r"proud|"
+     r"afraid|"
+     r"red|black|white|green|blue)\b",
+     r"a \2 \1"),
+    # "an <vowel-initial-noun> <adj>" — same swap; "an" handled separately
+    (r"\ban (\w+) (foreign|strange|holy|sacred|profane|mighty|valiant|"
+     r"fierce|gentle|righteous|wicked|beautiful|ugly|wise|foolish|"
+     r"hidden|exalted|humble|humbled|honest|"
+     r"rich|poor|wealthy|delicate|"
+     r"strong|weak|stout|tender|firm|loose|"
+     r"long|short|tall|deep|shallow|wide|narrow|broad|thick|thin|"
+     r"hot|cold|wet|dry|hard|soft|sweet|bitter|"
+     r"loud|quiet|swift|slow|"
+     r"alive|dead|fertile|barren|fruitful|"
+     r"angry|sad|happy|ashamed|"
+     r"perfect|imperfect|broken|whole|complete|"
+     r"heavy|light|severe|"
+     r"high|low|"
+     r"old|young|new|"
+     r"large|small|big|little|"
+     r"many|much|numerous|"
+     r"abundant|scarce|"
+     r"weary|tired|patient|bold|timid|"
+     r"proud|"
+     r"afraid|"
+     r"red|black|white|green|blue)\b",
+     r"an \2 \1"),
+    # -----------------------------------------------------------------------
     # 14. VS→SV reorder for wayyiqtol-initial narrative.
     # These are the most frequent instances in Jonah 1.
     # Pattern: "and he/they/it [VERB] the/a [SUBJECT]" → SVO order.
