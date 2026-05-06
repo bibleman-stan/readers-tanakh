@@ -1005,6 +1005,17 @@ def pass3_vs_reorder(line: str, in_poetic: bool) -> str:
     if subj_str is None:
         return line
 
+    # FP guard (Stan-flagged 2026-05-07: Genesis 44:4 "they went out the city"
+    # → "the city went out" was wrong — "the city" is a locative complement of
+    # "went out", not a fronted subject). When a directional particle was
+    # consumed AND the subject candidate is a definite NP starting with "the",
+    # the candidate is far more likely a locative/directional complement than
+    # a fronted subject. Suppress to avoid the misfire. Proper-name subjects
+    # remain reorderable (the TP class is overwhelmingly proper-name in Hebrew
+    # narrative V-S patterns).
+    if particle_consumed and subj_str.lower().startswith("the "):
+        return line
+
     # Subject extension: if matched subject is followed by 'of <Capitalized>',
     # extend the subject to include the of-chain (e.g. 'the people of Nineveh').
     # Up to 2 extensions to handle 'X of Y of Z'.
