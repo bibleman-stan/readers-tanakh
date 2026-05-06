@@ -40,6 +40,11 @@ def _is_finite_verb(t: MC.Token) -> bool:
     return morph[2] in ("Q", "W", "I", "V", "O", "J", "H", "U")
 
 
+def _is_wayyiqtol(t: MC.Token) -> bool:
+    morph = (t._morph_tag or "").upper()
+    return bool(morph and morph[0] == "V" and len(morph) >= 3 and morph[2] == "W")
+
+
 def _clause_head_verb(clause: MC.Constituent) -> Optional[MC.Token]:
     for t in clause.tokens:
         if _is_finite_verb(t):
@@ -144,6 +149,13 @@ def scan_file(path: Path, book_slug: str) -> list[dict[str, Any]]:
                 continue
             clauses_here = _clauses_with_heads_in(vclauses, line_tokens)
             if len(clauses_here) < 2:
+                continue
+            # Defer-to-S4 guard: if ALL clause heads on this line are
+            # wayyiqtols, S4 (multi_wayyiqtol_clause_split spec) already
+            # handles the case with its specialized hendiadys / shared-DO /
+            # bare-verb suppressions. Avoid double-fire.
+            heads = [_clause_head_verb(c) for c in clauses_here]
+            if all(h is not None and _is_wayyiqtol(h) for h in heads):
                 continue
             clauses_sorted = sorted(
                 clauses_here,
