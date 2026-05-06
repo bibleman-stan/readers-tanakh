@@ -1651,6 +1651,12 @@ _NEG_PLACEMENT_RE = re.compile(
     r"([a-z]\w*)",
     re.IGNORECASE,
 )
+# FP guard set: when "not" is already preceded by an English aux ("he did not",
+# "she has not"), the negation IS already English-correct and re-firing would
+# produce broken output ("he did he will not say"). Checked via prior-token
+# inspection in pass_negation_placement (lookbehind regex requires fixed-width
+# pattern, so closed-list aux check is done in Python).
+_NEG_AUX_LOOKBACK = frozenset(a.lower() for a in _NEG_AUX_VERBS)
 
 
 def pass_negation_placement(line: str) -> str:
@@ -1681,6 +1687,14 @@ def pass_negation_placement(line: str) -> str:
       "and not he forsook" → "and he will not forsake" (well, simpler: "and he did not forsake" but we use "will" uniformly per Stan-rendering pattern)
     """
     def _replace(m: re.Match) -> str:
+        # Skip if a pre-existing aux verb is immediately before "not" — the
+        # negation is already English-correct ("he did not", "she has not")
+        # and re-firing would double-emit auxes ("he did he will not say").
+        text_before = line[:m.start()].rstrip()
+        if text_before:
+            prior_tok = text_before.split()[-1].lower().strip(".,;:!?")
+            if prior_tok in _NEG_AUX_LOOKBACK:
+                return m.group(0)  # leave unchanged
         pron = m.group(1)
         aux = m.group(2)  # may be None
         verb = m.group(3)
