@@ -50,6 +50,7 @@ import json
 import os
 import subprocess
 import sys
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
@@ -58,6 +59,43 @@ BASELINE_PATH = VALIDATORS_DIR / ".baseline.json"
 
 LAYER_DIRS = ("syntax", "colometry")
 TIMEOUT_SECONDS = 120
+
+# Parallel-validator pool size. Validators are subprocess.run() invocations of
+# external Python processes — already isolated from each other. ThreadPoolExecutor
+# (not ProcessPoolExecutor) because the work is already subprocesses; threads
+# just wait on subprocess.Popen. Avoids ProcessPoolExecutor's per-worker spawn
+# cost (Windows spawn re-imports module per worker = 2x process-spawn overhead
+# for nothing). Pool size = number of validators (~28) to enable full parallelism.
+PARALLEL_WORKERS = 28
+
+
+def _run_validator_with_books(layer: str, path: Path, books_csv: str | None = None) -> dict:
+    """Top-level helper for ProcessPoolExecutor (must be picklable)."""
+    books = [b.strip() for b in books_csv.split(",")] if books_csv else None
+    return run_validator(layer, path, books=books)
+
+
+def _aggregate_per_book(args_tuple: tuple) -> dict:
+    """Top-level helper for ProcessPoolExecutor in --books mode.
+    Aggregates per-book findings for a single validator into a single result."""
+    layer, path, book_list = args_tuple
+    agg: dict = {
+        "name": path.stem, "layer": layer, "exit_code": 0,
+        "findings": 0, "by_severity": {}, "by_tag": {},
+        "error": None, "stdout": "", "stderr": "",
+    }
+    for book in book_list:
+        r = run_validator(layer, path, books=[book])
+        agg["findings"] += r["findings"]
+        for k, v in r.get("by_severity", {}).items():
+            agg["by_severity"][k] = agg["by_severity"].get(k, 0) + v
+        for k, v in r.get("by_tag", {}).items():
+            agg["by_tag"][k] = agg["by_tag"].get(k, 0) + v
+        if r.get("error"):
+            agg["error"] = r["error"]
+        if r.get("exit_code", 0) > agg["exit_code"]:
+            agg["exit_code"] = r["exit_code"]
+    return agg
 
 
 def discover_validators() -> list[tuple[str, Path]]:
@@ -315,28 +353,18 @@ def main() -> int:
     if args.books:
         book_list = [b.strip() for b in args.books.split(",") if b.strip()]
         # Per-book aggregation: invoke each validator once per book and sum
-        # findings. Single-book is the common case; multi-book aggregates here.
-        results = []
-        for layer, path in validators:
-            agg: dict = {
-                "name": path.stem, "layer": layer, "exit_code": 0,
-                "findings": 0, "by_severity": {}, "by_tag": {},
-                "error": None, "stdout": "", "stderr": "",
-            }
-            for book in book_list:
-                r = run_validator(layer, path, books=[book])
-                agg["findings"] += r["findings"]
-                for k, v in r.get("by_severity", {}).items():
-                    agg["by_severity"][k] = agg["by_severity"].get(k, 0) + v
-                for k, v in r.get("by_tag", {}).items():
-                    agg["by_tag"][k] = agg["by_tag"].get(k, 0) + v
-                if r.get("error"):
-                    agg["error"] = r["error"]
-                if r.get("exit_code", 0) > agg["exit_code"]:
-                    agg["exit_code"] = r["exit_code"]
-            results.append(agg)
+        # findings. Parallelized across validators via threads (subprocess
+        # isolation already provides true parallelism).
+        with ThreadPoolExecutor(max_workers=PARALLEL_WORKERS) as ex:
+            args_list = [(layer, path, book_list) for (layer, path) in validators]
+            results = list(ex.map(_aggregate_per_book, args_list))
     else:
-        results = [run_validator(layer, path) for layer, path in validators]
+        # Default mode: parallelize across validators via threads. Validators
+        # are subprocess.run() calls — true parallelism comes from the OS
+        # process scheduler, threads just wait on Popen.
+        with ThreadPoolExecutor(max_workers=PARALLEL_WORKERS) as ex:
+            futures = [ex.submit(run_validator, layer, path) for (layer, path) in validators]
+            results = [f.result() for f in futures]
 
     print_dashboard(results, args.verbose)
 
