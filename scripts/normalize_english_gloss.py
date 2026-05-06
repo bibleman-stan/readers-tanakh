@@ -367,6 +367,20 @@ def pass1_suffix_reorder(line: str) -> str:
         if prev_clean == "you":
             i += 1
             continue
+        # FP guard (Stan-flagged 2026-05-07: "may serve their" → "may their
+        # serve" misfire on Exod 10 / Jer 30). If prev token is preceded by
+        # an aux verb, prev is a verb (not a noun-head); don't reorder.
+        # Closed-list aux check is robust to NONNOUN_HEADS gaps for
+        # less-common verbs ("serve" / "destroy" / etc.).
+        if i >= 2:
+            prev2_clean = re.sub(r"[^\w-]", "", tokens[i - 2]).lower()
+            _AUX_BEFORE_VERB = {"will", "shall", "do", "does", "did", "may",
+                                 "might", "would", "should", "could", "must",
+                                 "can", "is", "are", "was", "were", "has",
+                                 "have", "had"}
+            if prev2_clean in _AUX_BEFORE_VERB:
+                i += 1
+                continue
         # Proper-name guard: capitalized words are typically proper nouns
         # (e.g. 'Yahweh') which in Hebrew don't take pronominal suffixes.
         # 'Yahweh his God' has 'his' as a determiner of 'God', not a suffix
