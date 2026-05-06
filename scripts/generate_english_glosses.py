@@ -742,6 +742,12 @@ def aggregate_word_gloss(morph_rows: list[dict]) -> str:
             g_stripped = re.sub(r"\[([^\]]*)\]", r"\1", g_stripped)
         # Drop any leftover bracket characters (unmatched in this morpheme).
         g_stripped = g_stripped.replace("[", "").replace("]", "")
+        # Drop any leftover paren characters (unmatched — Macula sometimes
+        # splits "(for himself)" across morpheme boundaries; the matched-pair
+        # regex above only catches in-morpheme pairs. Mirror the bracket
+        # discipline. Surfaced by Stan 2026-05-05 spot-check Exod 18:27
+        # "and he went (for himself to his land".
+        g_stripped = g_stripped.replace("(", "").replace(")", "")
         # Collapse extra whitespace introduced by bracket / paren strip.
         g_stripped = re.sub(r"\s+", " ", g_stripped).strip()
         if g_stripped:
