@@ -30,7 +30,19 @@ from validators._shared import macula_constituents as MC
 SEVERITY = "STRONG-SPLIT-CANDIDATE"
 RULE = "Hpar"
 SUBCASE = "parallel_clause_split"
+GAPPED_SUBCASE = "parallel_gapped_restatement"
+GAPPED_SEVERITY = "REVIEW-REQUIRED"  # FP risk warrants editor confirmation
 MIN_HALF_PW = 2  # Hebrew bicola can be 3+2 or 2+3; 2 is the minimum atomic-thought width
+
+# Closed-list suppressions for the gapped-restatement arm (per audit
+# 2026-05-05 ab272883f08b465c3 — 6 FP classes covering ~40 of 60 raw
+# candidates in SE). Body-part lemmas in particular form paired idioms
+# (e.g., יָד ... יָד across PP boundaries) that aren't gapped-restatement.
+GAPPED_BODY_PART_LEMMAS = frozenset({
+    "יָד", "לֵב", "לֵבָב", "רֹאשׁ", "עַיִן", "נֶפֶשׁ", "פֶּה",
+})
+GAPPED_DOR_LEMMA = "דּוֹר"  # דּוֹר וָדֹר idiom — vav-between suppressor
+GAPPED_KOL_LEMMA = "כֹּל"   # construct-state quantifier
 
 
 def _is_finite_verb(t: MC.Token) -> bool:
@@ -93,6 +105,105 @@ def _split_index(line_tokens: list[MC.Token],
     return None
 
 
+def _gapped_restatement_findings(
+    line_tokens: list[MC.Token],
+    clauses_here: list[MC.Constituent],
+    line_text: str,
+    file_line_no: int,
+    rel_path: str,
+    chapter_no: int,
+    verse: int,
+) -> list[dict[str, Any]]:
+    """Hpar-gapped arm — detect verbless second clause restating the first
+    clause's predicate noun (e.g., Psa 9:10 'Yahweh refuge for-X | refuge
+    for-Y'). Per audit ab272883f08b465c3 design proposal."""
+    out: list[dict[str, Any]] = []
+    if len(clauses_here) < 2:
+        return out
+    # Need exactly one clause with finite-verb head + at least one verbless
+    finite_clauses = [c for c in clauses_here if _clause_head_verb(c) is not None]
+    verbless_clauses = [c for c in clauses_here if _clause_head_verb(c) is None]
+    if not finite_clauses or not verbless_clauses:
+        return out
+    # Surface order: finite first, verbless second (left-to-right gapping only)
+    line_id_pos = {id(t): i for i, t in enumerate(line_tokens)}
+
+    def _first_pos(cl: MC.Constituent) -> int:
+        for t in cl.tokens:
+            if id(t) in line_id_pos:
+                return line_id_pos[id(t)]
+        return 9999
+
+    finite_first = min(finite_clauses, key=_first_pos)
+    verbless_after = [c for c in verbless_clauses if _first_pos(c) > _first_pos(finite_first)]
+    if not verbless_after:
+        return out
+    verbless_first = min(verbless_after, key=_first_pos)
+
+    # Find shared noun lemma between finite and verbless clauses
+    finite_noun_lemmas = {
+        t.lemma for t in finite_first.tokens
+        if t.pos == "noun" and t.lemma and t.type_ != "proper"
+    }
+    verbless_noun_lemmas = {
+        t.lemma for t in verbless_first.tokens
+        if t.pos == "noun" and t.lemma and t.type_ != "proper"
+    }
+    shared = finite_noun_lemmas & verbless_noun_lemmas
+    if not shared:
+        return out
+
+    # Suppressions per audit
+    for shared_lemma in shared:
+        if shared_lemma == GAPPED_KOL_LEMMA:
+            continue  # quantifier
+        if shared_lemma in GAPPED_BODY_PART_LEMMAS:
+            continue  # paired body-part idiom
+        # Get token instances of shared lemma in line
+        shared_toks = [t for t in line_tokens if t.lemma == shared_lemma]
+        if len(shared_toks) < 2:
+            continue
+        # Vav-between suppressor (דּוֹר וָדֹר idiom)
+        if shared_lemma == GAPPED_DOR_LEMMA:
+            tok_positions = [line_id_pos[id(t)] for t in shared_toks]
+            tok_positions.sort()
+            mid_tokens = line_tokens[tok_positions[0] + 1 : tok_positions[1]]
+            if any(t.pos == "conjunction" and t.lemma in ("וְ", "ו") for t in mid_tokens):
+                continue
+        # Both-construct suppressor
+        if all(t.state == "construct" for t in shared_toks if t.state):
+            continue
+        # Distributive-adv suppressor
+        if any(t.role == "adv" for t in shared_toks):
+            continue
+        # Passed all suppressors — emit
+        idx = _split_index(line_tokens, verbless_first)
+        if idx is None or idx == 0:
+            continue
+        left = _pw_count(line_tokens[:idx])
+        right = _pw_count(line_tokens[idx:])
+        if left < MIN_HALF_PW or right < MIN_HALF_PW:
+            continue
+        out.append({
+            "file": rel_path,
+            "line": file_line_no,
+            "rule": RULE,
+            "subcase": GAPPED_SUBCASE,
+            "severity": GAPPED_SEVERITY,
+            "verse": f"{chapter_no}:{verse}",
+            "annotation": (
+                f"Hpar gapped-restatement: predicate-noun '{shared_lemma}' "
+                f"repeated across finite clause + verbless restatement; "
+                f"split before token {idx} ({left}+{right} pw)"
+            ),
+            "suggested_action": "SPLIT_AT_GAPPED_BOUNDARY",
+            "split_positions": [idx],
+            "prior_line": line_text,
+        })
+        return out  # one finding per line (first shared lemma wins)
+    return out
+
+
 def _line_token_spans(verse_tokens: list[MC.Token],
                       v2_lines: list[str]) -> list[list[MC.Token]]:
     out = []
@@ -147,6 +258,25 @@ def scan_file(path: Path, book_slug: str) -> list[dict[str, Any]]:
         ):
             if len(line_tokens) < 4:
                 continue
+            # Gapped-restatement arm runs against ALL leaf clauses (including
+            # verbless ones), so collect those separately.
+            line_ids = {id(t) for t in line_tokens}
+            all_leaf_in_line: list[MC.Constituent] = []
+            seen: set[int] = set()
+            for cl in vclauses:
+                if not _is_leaf_clause(cl):
+                    continue
+                if id(cl) in seen:
+                    continue
+                if any(id(t) in line_ids for t in cl.tokens):
+                    all_leaf_in_line.append(cl)
+                    seen.add(id(cl))
+            findings.extend(_gapped_restatement_findings(
+                line_tokens, all_leaf_in_line, line_text, file_line_no,
+                str(path.relative_to(REPO_ROOT)).replace("\\", "/"),
+                chapter_no, verse,
+            ))
+
             clauses_here = _clauses_with_heads_in(vclauses, line_tokens)
             if len(clauses_here) < 2:
                 continue
