@@ -119,6 +119,63 @@ def _both_imperative(head_a: Optional[MC.Token], head_b: Optional[MC.Token]) -> 
     return bool(head_a.is_imperative and head_b.is_imperative)
 
 
+# Discourse-formula opener consonant skeletons. These open a temporal-
+# setup-then-action structure ("and-it-was on the seventh day [that] he
+# shaved" — Lev 14:9), NOT parallel cola.
+_DISCOURSE_FORMULA_SKELS = frozenset({
+    "ויהי",   # וַיְהִי
+    "והיה",   # וְהָיָה
+    "והיו",   # וְהָיוּ
+    "ותהי",   # וַתְּהִי
+    "ויהיו",  # וַיִּהְיוּ
+})
+
+
+def _clause_starts_with_discourse_formula(cl: MC.Constituent) -> bool:
+    """True if the clause's first token is a discourse-formula opener
+    (וַיְהִי / וְהָיָה / etc.). Macula tokenizes the וְ prefix separately
+    from the verb, so this checks the verb head's skel + aspect: היה
+    lemma + wayyiqtol (וַיְהִי) or weqatal (וְהָיָה) = discourse formula
+    that opens a temporal-setup-then-action structure (Lev 14:9)."""
+    if not cl.tokens:
+        return False
+    first = cl.tokens[0]
+    if first.consonant_skel == "היה" and (first.is_wayyiqtol or first.is_weqatal):
+        return True
+    return False
+
+
+def _frame_arg_chain(head_a: Optional[MC.Token], head_b: Optional[MC.Token]) -> bool:
+    """True if cl_a's A1 (object) referent is also cl_b's A0 (subject) —
+    the subject-object chain pattern of sequential-result clauses
+    (Amos 1:4 'I send fire / and it devours' — fire transitions from
+    object of cl_a to subject of cl_b). NOT parallelism.
+    """
+    if head_a is None or head_b is None:
+        return False
+    a_a1 = head_a.frame_arg_ids.get("A1")
+    b_a0 = head_b.frame_arg_ids.get("A0")
+    if not a_a1 or not b_a0:
+        return False
+    return any(t in a_a1 for t in b_a0)
+
+
+def _frame_args_share_object(head_a: Optional[MC.Token], head_b: Optional[MC.Token]) -> bool:
+    """True if cl_a and cl_b share the same A1 (object) referent — the
+    classic synonymous-parallelism signal (Isa 13:20 'she will not dwell
+    [in it] / nor will it be inhabited [in it]' — both verbs target
+    the same A1). Used as a TP-CONFIRMER that overrides downstream
+    FP-suppression heuristics on borderline cases.
+    """
+    if head_a is None or head_b is None:
+        return False
+    a_a1 = head_a.frame_arg_ids.get("A1")
+    b_a1 = head_b.frame_arg_ids.get("A1")
+    if not a_a1 or not b_a1:
+        return False
+    return any(t in a_a1 for t in b_a1)
+
+
 def _clause_head_verb(clause: MC.Constituent) -> Optional[MC.Token]:
     for t in clause.tokens:
         if _is_finite_verb(t):
@@ -428,6 +485,24 @@ def scan_file(path: Path, book_slug: str) -> list[dict[str, Any]]:
                 # imperative-bicola (genuine prophetic-call parallelism).
                 if _both_imperative(head_a, head_b) and (left + right) <= 4:
                     continue
+                # TP-CONFIRMER (frame-arg shared-object): if both clauses
+                # target the same A1 referent, this is the canonical
+                # synonymous-parallelism pattern (Isa 13:20 "she will not
+                # dwell [in it] / nor inhabited [in it]"). Skip downstream
+                # FP suppressors to preserve this TP signal.
+                _share_obj = _frame_args_share_object(head_a, head_b)
+                if not _share_obj:
+                    # Discourse-formula opener guard (audit 2026-05-07: Lev
+                    # 14:9 וְהָיָה בַיּוֹם הַשְּׁבִיעִי יְגַלַּח — temporal
+                    # setup-then-action, not parallel cola).
+                    if _clause_starts_with_discourse_formula(cl_a):
+                        continue
+                    # Frame-arg subject-object chain (audit 2026-05-07: Amos
+                    # 1:4 שִׁלַּחְתִּי + אָכְלָה — "I send fire / it devours";
+                    # fire transitions from object-of-cl_a to subject-of-cl_b).
+                    # Sequential-result, not parallelism.
+                    if _frame_arg_chain(head_a, head_b):
+                        continue
                 findings.append({
                     "file": str(path.relative_to(REPO_ROOT)).replace("\\", "/"),
                     "line": file_line_no,
