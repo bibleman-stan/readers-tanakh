@@ -160,15 +160,23 @@ def _check_morphology(tok: str, morph: str, tag_list: Optional[list[str]] = None
         # standalone token check: not a finite verb, not a particle/prep
         return not M.is_finite_verb_token(tok) and not M._matches_prep_only(tok) if hasattr(M, "_matches_prep_only") else not M.is_finite_verb_token(tok)
     if morph == "prep":
-        # Engine-level TAHOT N-head FP guard (2026-05-05): when tag_list is
-        # available AND the first non-empty tag's morpheme chain (after
-        # stripping leading conjunction) starts with N (noun), this token is
-        # a noun, not a prep. Suppresses the entire bug class where the
-        # skel-heuristic below misclassifies N-headed nouns whose first
-        # consonant is ב/כ/ל/מ (e.g. כּוֹסִי "my cup" → starts with כ,
-        # BOUND_PREP_PREFIX, but TAHOT-tagged Ncfsc/Sp1bs). One fix here
-        # propagates to all specs using `morphology: prep` instead of
-        # whack-a-mole guard additions per spec (h18_1, h16_c, m2_6, ...).
+        # Engine-level TAHOT non-prep-head FP guard. Reject tokens whose first
+        # morpheme (after stripping leading conjunction) is N (noun), V (verb),
+        # or Tn (negative particle) — all three classes contain skeletons that
+        # collide with PREP_SKELETONS or BOUND_PREP_PREFIXES under skel-only
+        # heuristics:
+        #   - N-head (2026-05-05 first surfacing): כּוֹסִי "my cup" — Ncfsc/Sp1bs,
+        #     skel starts with כ ∈ BOUND_PREP_PREFIXES; suppressed h18_1, h16_c,
+        #     m2_6 over-firing on Sifrei Emet possessed nouns.
+        #   - V-head (2026-05-05 H11-oscillation diagnostic): כָּרַתִּי "I cut"
+        #     (Vqp1cs), skel כרתי starts with כ ∈ BOUND_PREP_PREFIXES;
+        #     is_finite_verb_skel misses 4-letter qatal forms. Caused H11 to
+        #     fire on Psa 89:4 first token.
+        #   - Tn-head (same diagnostic): אַל negative particle, skel אל matches
+        #     PREP_SKELETONS exactly (homographic with prep אֶל). Caused H11 to
+        #     fire on Psa 75:6 first token.
+        # One fix here propagates to all specs using `morphology: prep`
+        # instead of whack-a-mole guard additions per spec.
         if tag_list:
             head_tag = next((t for t in tag_list if t and t != "[—]"), None)
             if head_tag is not None:
@@ -176,8 +184,12 @@ def _check_morphology(tok: str, morph: str, tag_list: Optional[list[str]] = None
                 chain = _MT.morpheme_chain(head_tag)
                 if chain and chain[0] == "c":
                     chain = chain[1:]
-                if chain and chain[0].startswith("N"):
-                    return False  # noun-headed, not a prep
+                if chain and (
+                    chain[0].startswith("N")
+                    or chain[0].startswith("V")
+                    or chain[0] == "Tn"
+                ):
+                    return False  # noun / verb / negative-particle head, not a prep
         # Maqqef-joined prep+complement (e.g., אֶל־הֶבֶל, מִן־הָאֲדָמָה):
         # check the FIRST sub-token (the prep itself), not the whole compound.
         if M.MAQQEF in tok:
