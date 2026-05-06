@@ -13,17 +13,6 @@
       "tp_rate": 0.0,
       "fp_rate": null
     },
-    "validate_circumstantial_clause": {
-      "tp": 0,
-      "fp": 0,
-      "fn": 26,
-      "uncalibrated": 0,
-      "tn": 12,
-      "review_correct": 2,
-      "labeled_total": 40,
-      "tp_rate": 0.0,
-      "fp_rate": 0.0
-    },
     "validate_coordinated_object": {
       "tp": 0,
       "fp": 1,
