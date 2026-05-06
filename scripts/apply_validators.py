@@ -212,6 +212,8 @@ ALL_VALIDATORS: list[tuple[str, str]] = [
     ("validators/colometry/validate_participial_speech_frame.py", "validate_participial_speech_frame"),
     # validate_discourse_particles removed 2026-05-04 — script never existed;
     # functionality covered by validate_bare_discourse_particle.py.
+    # ── Registered 2026-05-06 ──
+    ("validators/colometry/validate_causal_ki.py",             "validate_causal_ki"),
 ]
 
 

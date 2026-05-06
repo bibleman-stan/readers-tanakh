@@ -42,38 +42,23 @@ set -e
 REPO_ROOT=$(git rev-parse --show-toplevel)
 cd "$REPO_ROOT"
 
-# ── Phase 0.5: validator-side change → auto-apply STRONG findings ───────────
+# ── Phase 0.5 (REMOVED 2026-05-07) ──────────────────────────────────────────
 #
-# When validator code, validator specs, or apply_validators.py ADOPTED list
-# changes, run apply_validators across the corpus FIRST so any new STRONG
-# findings get mechanically applied to v2/he. Phase 1 then picks up the
-# resulting v2/he changes and cascades refresh_book.
+# Was: validator-side change → auto-run apply_validators.py --all-books to
+# mechanically apply STRONG findings to v2/he, then chain into Phase 1.
 #
-# Without this phase, a validator severity promotion (REVIEW → STRONG) or
-# ADOPTED_VALIDATORS update lands the code change but leaves the corpus
-# stale — STRONG findings sit unapplied. Stan 2026-05-06 directive: should
-# be automatic.
-
-VALIDATOR_SIDE_STAGED=$(git diff --cached --name-only | grep -E "^(validators/colometry/.*\.py$|validators/syntax/.*\.py$|validators/_shared/.*\.py$|validators/specs/.*\.yaml$|scripts/apply_validators\.py$|scripts/spec_runner\.py$)" || true)
-
-if [ -n "$VALIDATOR_SIDE_STAGED" ]; then
-    echo ""
-    echo "[pre-commit] Validator-side changes detected. Auto-applying STRONG findings across corpus..."
-    echo ""
-    set +e
-    PYTHONIOENCODING=utf-8 py -3 scripts/apply_validators.py --all-books
-    APPLY_RESULT=$?
-    set -e
-    if [ $APPLY_RESULT -ne 0 ]; then
-        echo ""
-        echo "[pre-commit] WARN: apply_validators.py exited $APPLY_RESULT — continuing (apply errors don't block commit; baseline-check will catch regressions)."
-        echo ""
-    fi
-    # Stage any v2/he changes apply_validators wrote so Phase 1 picks them up.
-    git add data/text-files/v2/he/ 2>/dev/null || true
-    echo "[pre-commit] Auto-apply complete. Continuing to Phase 1 (refresh_book per affected book)."
-    echo ""
-fi
+# Why removed: apply_validators.py has a divergence guard (lines 825-840)
+# that refuses writes when v2/he is "ahead" of v1+adopted_validators —
+# which is virtually always after any apply_specs cascade. Phase 0.5
+# therefore ran the full cross-corpus cascade (~5+ min wall) but produced
+# zero writes. Pure friction, no benefit.
+#
+# To restore the original intent (auto-apply on validator promotion), the
+# fix is upstream: either (a) migrate standalone validators to spec YAMLs
+# so they go through apply_specs (which DOES write in place), or (b) build
+# a diff-apply mode in apply_validators that bypasses the divergence guard
+# for newly-promoted STRONG findings. Carry-forward #3 in the
+# 2026-05-06-causal-ki-promotion session-notes.
 
 # ── Phase 1: follow-on rebuild cascade ──────────────────────────────────────
 
