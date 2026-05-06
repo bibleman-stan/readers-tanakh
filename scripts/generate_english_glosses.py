@@ -482,6 +482,24 @@ NATURALIZE_RULES = [
     (r"\bnights three\b",          "three nights"),
     (r"\bdays forty\b",            "forty days"),
     # -----------------------------------------------------------------------
+    # 13a-numeric. Hebrew construct-numeral + suffixed-noun construction.
+    # Two surface variants from Macula:
+    #   (i)  "the <numeral> <noun> <suffix-pron>" — emission of suffix as
+    #        separate token after head. Hebrew: שְׁנֵי בָנֶיהָ "two-of sons-her"
+    #        Macula: "the two sons her" → English idiom "her two sons".
+    #   (ii) "the <numeral> <suffix-pron> <noun>" — variant emission.
+    # English idiom moves the possessive to the front: "her two sons".
+    # Closed-list numerals only; specific to definite-article lead.
+    # -----------------------------------------------------------------------
+    # Variant (i): "the <NUM> <NOUN> <PRON>" → "<PRON> <NUM> <NOUN>"
+    (r"\bthe (one|two|three|four|five|six|seven|eight|nine|ten|"
+     r"twelve|hundred|thousand) (\w+) (his|her|my|your|our|their|its)\b",
+     r"\3 \1 \2"),
+    # Variant (ii): "the <NUM> <PRON> <NOUN>" → "<PRON> <NUM> <NOUN>"
+    (r"\bthe (one|two|three|four|five|six|seven|eight|nine|ten|"
+     r"twelve|hundred|thousand) (his|her|my|your|our|their|its) (\w+)\b",
+     r"\2 \1 \3"),
+    # -----------------------------------------------------------------------
     # 13b. Generalized NP+ADJ reorder (Class 2 of 2026-05-05 four-class
     # spec). Hebrew default is NP + ADJ; English fronts the adjective. The
     # closed list below is restricted to UNAMBIGUOUS attributive adjectives

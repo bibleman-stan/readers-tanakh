@@ -665,6 +665,21 @@ NARRATIVE_VERBS = {
     "clothed", "belonged", "recounted", "enquired", "inquired",
     "given", "taken", "gone", "come", "become",
     "left", "begotten",
+    # 2026-05-05 Class 1 (mid-clause V-S): past-participle forms used in
+    # English perfect tense (Macula gloss patterns "he had X" / "he has X").
+    # Without these, pass8 doesn't match qatal verbs that get "had/has"-aux
+    # glossing — exactly the Hebrew tense most likely to be V-S in
+    # subordinate / relative clauses.
+    "done", "made", "said", "spoken", "given", "taken", "brought",
+    "seen", "heard", "known", "shown", "told", "sent", "killed",
+    "delivered", "saved", "appointed", "set", "raised", "built",
+    "begotten", "borne", "written", "read", "called", "asked",
+    "answered", "established", "fashioned", "formed", "created",
+    "destroyed", "demolished", "broken", "torn", "split",
+    "passed", "crossed", "entered", "exited", "departed",
+    "buried", "fought", "filled", "led",
+    "remembered", "forgotten", "forgiven", "loved", "hated",
+    "kept", "guarded", "preserved",
     # 2026-05-04 Class 2: yiqtol speech verbs (Isa 40:1 "he says your god")
     "says", "speaks", "declares", "proclaims", "calls", "answers",
     "replies", "swears", "commands", "shouts", "whispers", "preaches",
@@ -1093,6 +1108,338 @@ def pass7_capitalize_divine_titles(line: str) -> str:
 
 
 # ---------------------------------------------------------------------------
+# Pass 9 — Drop redundant relative-clause subject pronoun
+#
+# Class 1 (sub-arm) of the four-class eng-gloss cleanup spec.
+#
+# When Macula glosses a 3rd-person verb in a relative clause whose
+# antecedent is the subject (e.g. "Yahweh who he has delivered you"),
+# the embedded "he" pronoun is redundant in English ("Yahweh who has
+# delivered you"). Drop the pronoun.
+#
+# Pattern: "<who|whom|that|which> <pron> <verb-cluster>"
+#   → "<who|whom|that|which> <verb-cluster>"
+#
+# Where pron ∈ {he, she, it, they} AND the verb is a NARRATIVE_VERB.
+#
+# Conservative gating: only fire when the relative pronoun is
+# antecedented by a recently-mentioned proper-name in the SAME line
+# (heuristic: line contains a Capitalized name to the left of the
+# relative). This avoids dropping the pronoun in cases like "all that
+# he had done" where "all" is the antecedent and "he" is a real subject.
+#
+# Skip in poetic register.
+# ---------------------------------------------------------------------------
+
+_REDUNDANT_REL_PRON_RE = re.compile(
+    r"\b(who|whom|that|which)\s+(he|she|it|they)\s+"
+    r"((?:was|were|is|are|has|have|had|will|shall|may|might|would|could|should)\s+)?"
+    r"(\w+)\b",
+    re.IGNORECASE,
+)
+
+
+def pass9_drop_redundant_rel_pron(line: str, in_poetic: bool) -> str:
+    """Drop redundant subject pronoun in relative clauses with named antecedent.
+
+    Pattern: "<NAME> ... who he <V>" → "<NAME> ... who <V>"
+
+    Only fires when:
+      - The relative is "who"/"whom" (proper-relative antecedent),
+        OR "that"/"which" with a Capitalized-name to the left
+        of the match in the same line.
+      - The verb is on NARRATIVE_VERBS (closed list).
+      - In_poetic is False.
+
+    Idempotent: after drop, "<NAME> who <V>" no longer matches the pattern
+    (no pron between rel and verb).
+    """
+    if in_poetic:
+        return line
+
+    def _replace(m: re.Match) -> str:
+        rel = m.group(1)
+        pron = m.group(2)
+        aux = (m.group(3) or "").rstrip()
+        verb = m.group(4)
+        if verb.lower() not in NARRATIVE_VERBS:
+            return m.group(0)  # leave untouched
+        # Check for Capitalized-name antecedent in pre-match text.
+        # IMPORTANT: the antecedent must be the IMMEDIATELY-prior token
+        # (or 1-2 tokens back at most), not just "anywhere in pre-text".
+        # The looser criterion produced FPs in Jonah 3:10:
+        #   "and God saw their deeds that they turned back" — pass9 saw
+        #   "God" as antecedent and dropped "they" (wrong; "they" =
+        #   the people of Nineveh, not God).
+        # Tight criterion: relative pronoun's antecedent is the immediately
+        # preceding noun-class token. If that token is a Capitalized name,
+        # the relative is co-referent with the name and the in-clause pron
+        # is redundant.
+        pre = line[: m.start()].rstrip()
+        pre_tokens = pre.split()
+        if not pre_tokens:
+            return m.group(0)
+        # Look at the last 1-2 tokens. The IMMEDIATELY-preceding token is
+        # the canonical antecedent for restrictive relatives. Allow up to
+        # 2 tokens back to handle "of X" tail (e.g., "the God of Israel
+        # who he delivered").
+        # Also check: the pre-text must NOT contain a definite NP that's
+        # MORE CLEARLY the antecedent. The simple rule: only accept the
+        # antecedent if the LAST capitalized token in pre is also at the
+        # end (last token or last token after "of <CAP>" pattern).
+        last_tok = pre_tokens[-1].rstrip(".,;:!?")
+        is_last_cap = (
+            last_tok and last_tok[0].isupper() and len(last_tok) >= 3
+            and last_tok.lower() not in {"and", "but", "or", "the", "a", "an", "i"}
+        )
+        # "of <CAP>" tail (e.g. "the God of Israel who...") — antecedent
+        # is the head noun before "of", but pragmatically the proper-name
+        # at the end resolves the relative. Accept this case.
+        is_of_cap_tail = (
+            len(pre_tokens) >= 2
+            and pre_tokens[-2].lower() == "of"
+            and last_tok and last_tok[0].isupper() and len(last_tok) >= 3
+        )
+        if not (is_last_cap or is_of_cap_tail):
+            return m.group(0)
+
+        # Build the dropped form: "<rel> <aux>? <verb>"
+        if aux:
+            return f"{rel} {aux} {verb}"
+        return f"{rel} {verb}"
+
+    return _REDUNDANT_REL_PRON_RE.sub(_replace, line)
+
+
+# ---------------------------------------------------------------------------
+# Pass 8 — Mid-clause V-S → S-V reorder
+#
+# Class 1 of the four-class eng-gloss cleanup spec (Stan 2026-05-05).
+#
+# pass3_vs_reorder handles CLAUSE-OPENING V-S patterns ("and he <V> <S>").
+# pass8 handles MID-CLAUSE V-S after a subordinator or relative pronoun:
+# "all that he had done God for Moses" → "all that God had done for Moses".
+#
+# The Hebrew construction is: relative-or-subordinator + qatal/wayyiqtol-3ms
+# + explicit-subject-NP. Macula's qatal/wayyiqtol-3ms gloss embeds the
+# pronoun ("he had done"); the explicit subject NP follows. English
+# requires the explicit subject before the verb AND drops the redundant
+# pronoun.
+#
+# Pattern: <subord> <pron> <verb-cluster> <SUBJECT> <rest>
+#   → <subord> <SUBJECT> <verb-cluster> <rest>
+#
+# Where:
+#   - subord ∈ {that, which, who, whom, because, when, while, if, for,
+#               since, although, though, until, where, as, after, before,
+#               whenever}
+#   - pron ∈ {he, she, it, they}
+#   - verb-cluster = (was|were|is|are|has|have|had|will|may|...)? + verb
+#                  + optional verb-particle (off/up/out/etc.)
+#   - SUBJECT = compound proper name | proper name | definite person NP
+#
+# Conservative gating identical to pass3 (closed-list verbs, closed-list
+# subjects, skip in poetic register). Idempotent: after reorder the
+# pattern becomes "<subord> <SUBJECT> <verb>" — pron is gone, no re-fire.
+# ---------------------------------------------------------------------------
+
+# Subordinators/relatives that can introduce a V-S clause mid-line.
+_MID_CLAUSE_SUBORDS = {
+    "that", "which", "who", "whom", "whose",
+    "because", "when", "while", "if", "for", "since",
+    "although", "though", "until", "unless",
+    "where", "wherever", "whenever",
+    "as", "after", "before",
+    "lest",
+}
+
+# Mid-clause V-S regex. Captures:
+#   group 1: subord token
+#   group 2: subject pronoun (he/she/it/they)
+#   group 3: optional aux (was/were/is/are/has/have/had/will/may/etc.)
+#   group 4: main verb token
+# Anchored mid-line by \b before the subord and \b after the verb.
+_VS_MID_RE = re.compile(
+    r"\b(" + "|".join(sorted(_MID_CLAUSE_SUBORDS, key=len, reverse=True)) + r")\s+"
+    r"(he|she|it|they)\s+"
+    r"((?:was|were|is|are|has|have|had|will|shall|may|might|would|could|should)\s+)?"
+    r"(\w+)\b",
+    re.IGNORECASE,
+)
+
+
+def pass8_vs_reorder_mid_clause(line: str, in_poetic: bool) -> str:
+    """V-S → S-V reorder for mid-clause subordinate clauses.
+
+    Class 1 of the four-class spec; complement to pass3_vs_reorder which
+    handles clause-opening patterns ("and he <V> <S>").
+
+    Pattern: "<subord> <pron> <verb-cluster> <SUBJ> <rest>"
+      → "<subord> <SUBJ> <verb-cluster> <rest>"
+
+    Conservative gating:
+      - Skip in poetic register (Sifrei Emet etc.).
+      - Trigger only on closed-list verbs (NARRATIVE_VERBS).
+      - Subject must be a closed-list proper name OR a closed-list
+        definite NP OR a compound proper name ("Yahweh God" etc.).
+      - Don't fire if the subject candidate is preceded by 'to' / 'with'
+        (already-prepositional → indirect object, not subject).
+
+    Idempotent: after reorder, the line contains "<subord> <SUBJ> <V>"
+    — no pron between subord and verb, so pattern doesn't re-match.
+
+    Examples (with normalize-pipeline context):
+      "all that he had done God for Moses"
+        → "all that God had done for Moses"
+      "for he has delivered the people from the hand of Egypt"
+        → (no fire — no explicit subject NP after verb)
+      "that he had brought out Yahweh Israel from Egypt"
+        → "that Yahweh had brought out Israel from Egypt"
+    """
+    if in_poetic:
+        return line
+
+    # Iterate matches; we may need to apply multiple swaps in one line.
+    # Use a single forward pass: find the leftmost match, attempt reorder,
+    # if successful continue from after the reordered span.
+    out_pos = 0
+    out_parts: list[str] = []
+    while True:
+        m = _VS_MID_RE.search(line, out_pos)
+        if not m:
+            out_parts.append(line[out_pos:])
+            break
+        subord = m.group(1)
+        pron = m.group(2)
+        aux = (m.group(3) or "").rstrip()
+        verb = m.group(4)
+        if verb.lower() not in NARRATIVE_VERBS:
+            # Verb not in closed list; emit up to and including this match,
+            # continue scanning AFTER this verb (so subsequent matches can fire).
+            out_parts.append(line[out_pos : m.end()])
+            out_pos = m.end()
+            continue
+
+        # What follows the verb cluster?
+        rest_start = m.end()
+        rest = line[rest_start:].lstrip()
+        if not rest:
+            out_parts.append(line[out_pos:])
+            break
+
+        rest_tokens = rest.split()
+
+        # Optional verb particle ("off", "up", "out", etc.) — same logic as pass3.
+        particle_consumed = ""
+        if rest_tokens and rest_tokens[0].lower() in VERB_PARTICLES:
+            particle_consumed = rest_tokens[0]
+            rest = rest[len(particle_consumed):].lstrip()
+            rest_tokens = rest.split()
+
+        # Optional short PP after verb ("to him" / "to them" etc.).
+        short_pp_consumed = ""
+        for pp in sorted(SHORT_PP_AFTER_VERB, key=len, reverse=True):
+            if rest.lower() == pp or rest.lower().startswith(pp + " "):
+                short_pp_consumed = pp
+                rest = rest[len(pp):].lstrip()
+                rest_tokens = rest.split()
+                break
+
+        # Optional bare-object pronoun ("him" / "her" / "them" etc.).
+        obj_pron_consumed = ""
+        if not short_pp_consumed and rest_tokens:
+            first_lc = rest_tokens[0].lower().strip(".,;:!?")
+            if first_lc in BARE_OBJECT_PRONOUNS_AFTER_VERB:
+                obj_pron_consumed = rest_tokens[0]
+                rest = rest[len(obj_pron_consumed):].lstrip()
+                rest_tokens = rest.split()
+
+        if not rest_tokens:
+            out_parts.append(line[out_pos : m.end()])
+            out_pos = m.end()
+            continue
+
+        # Determine subject candidate. Mid-clause case is more FP-prone than
+        # clause-opening pass3 because subordinate clauses often have an
+        # implicit subject (relative-pronoun with antecedent) and the
+        # post-verbal NP is the OBJECT — e.g. "Yahweh who he delivered the
+        # people" — "the people" is OBJ, not the subject of "delivered".
+        # To minimize FPs, restrict to PROPER-NAME subjects only (compound
+        # or single). Definite-NP subjects ("the king", "the man") are
+        # SKIPPED in mid-clause position because they're more often
+        # accusative objects of the relative clause's verb.
+        subj_str: str | None = None
+        subj_len_tokens = 0
+
+        cp_len = _matches_compound_proper(rest_tokens, 0)
+        if cp_len > 0:
+            subj_str = " ".join(rest_tokens[:cp_len])
+            subj_len_tokens = cp_len
+        if subj_str is None:
+            first = rest_tokens[0]
+            if _capitalized_name(first):
+                subj_str = first
+                subj_len_tokens = 1
+
+        if subj_str is None:
+            # No identifiable proper-name subject NP after verb; either
+            # there's no subject (relative-pronoun antecedent case) or the
+            # post-verbal NP is a definite-NP object. Either way, skip.
+            out_parts.append(line[out_pos : m.end()])
+            out_pos = m.end()
+            continue
+
+        # Subject extension via "of <Capitalized>" chain (max 2 hops).
+        while (
+            subj_len_tokens + 1 < len(rest_tokens)
+            and rest_tokens[subj_len_tokens].lower() == "of"
+            and len(rest_tokens[subj_len_tokens + 1]) >= 2
+            and rest_tokens[subj_len_tokens + 1][0].isupper()
+        ):
+            subj_str = subj_str + " of " + rest_tokens[subj_len_tokens + 1]
+            subj_len_tokens += 2
+
+        # Verify the subject candidate is what immediately follows the
+        # verb cluster + any consumed particle/PP/obj-pron.
+        rest_orig = line[rest_start:].lstrip()
+        rest_after_consumes = rest_orig
+        if particle_consumed:
+            rest_after_consumes = rest_after_consumes[len(particle_consumed):].lstrip()
+        if short_pp_consumed:
+            rest_after_consumes = rest_after_consumes[len(short_pp_consumed):].lstrip()
+        if obj_pron_consumed:
+            rest_after_consumes = rest_after_consumes[len(obj_pron_consumed):].lstrip()
+        if not rest_after_consumes.startswith(subj_str):
+            out_parts.append(line[out_pos : m.end()])
+            out_pos = m.end()
+            continue
+
+        # Build the reordered chunk: <subord> <SUBJ> <aux> <verb> <particle?>
+        # <short-pp?> <obj-pron?> <after-subj>
+        after_subj = rest_after_consumes[len(subj_str):].lstrip()
+        prefix_text = line[out_pos : m.start()]  # Text before the match
+        if aux:
+            new_chunk = f"{subord} {subj_str} {aux} {verb}"
+        else:
+            new_chunk = f"{subord} {subj_str} {verb}"
+        if particle_consumed:
+            new_chunk += f" {particle_consumed}"
+        if short_pp_consumed:
+            new_chunk += f" {short_pp_consumed}"
+        if obj_pron_consumed:
+            new_chunk += f" {obj_pron_consumed}"
+        if after_subj:
+            new_chunk += f" {after_subj}"
+
+        out_parts.append(prefix_text + new_chunk)
+        # The reordered chunk has consumed everything from out_pos to end-of-line.
+        out_pos = len(line)
+        break
+
+    return "".join(out_parts)
+
+
+# ---------------------------------------------------------------------------
 # Pass 4 — whitespace cleanup
 # ---------------------------------------------------------------------------
 
@@ -1247,6 +1594,8 @@ def normalize_line(line: str, in_poetic: bool) -> str:
     s = pass2_construct_of(s)
     s = pass7_capitalize_divine_titles(s)  # before pass3 so "Yahweh your God" matches COMPOUND_PROPER_SUBJECTS
     s = pass3_vs_reorder(s, in_poetic)
+    s = pass8_vs_reorder_mid_clause(s, in_poetic)  # Class 1: mid-clause V-S → S-V
+    s = pass9_drop_redundant_rel_pron(s, in_poetic)  # Class 1 sub-arm: drop redundant relative-clause pron
     s = pass4_whitespace(s)
     s = pass6_v_medial_reorder(s, in_poetic)
     s = pass5_dedup(s)
