@@ -25,6 +25,10 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO_ROOT))
 
 from validators._shared import macula_constituents as MC
+try:
+    from validators._shared.hendiadys_lemma_pairs import BONDED_LEMMA_PAIRS
+except ImportError:
+    BONDED_LEMMA_PAIRS = frozenset()
 
 
 SEVERITY = "STRONG-SPLIT-CANDIDATE"
@@ -485,6 +489,16 @@ def scan_file(path: Path, book_slug: str) -> list[dict[str, Any]]:
                 # imperative-bicola (genuine prophetic-call parallelism).
                 if _both_imperative(head_a, head_b) and (left + right) <= 4:
                     continue
+                # Bonded-lemma-pair guard (REMOVED 2026-05-07): tested as
+                # an integration of the hendiadys lexicon's lemma-pair
+                # extraction; over-suppressed 2 known TPs (Isa 13:20,
+                # Ruth 2:9 — synonymous-parallel cola where shared-lemma
+                # coincidentally matches a lexicon-flagged "doublet").
+                # The lexicon can't structurally differentiate bonded
+                # hendiadys from synonymous parallelism with cognate
+                # lemmas. Module file kept at validators/_shared/
+                # hendiadys_lemma_pairs.py for future use with stricter
+                # signal (e.g., hendiadys-figure-only + count >= 3).
                 # TP-CONFIRMER (frame-arg shared-object): if both clauses
                 # target the same A1 referent, this is the canonical
                 # synonymous-parallelism pattern (Isa 13:20 "she will not
