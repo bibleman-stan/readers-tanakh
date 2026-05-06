@@ -959,6 +959,24 @@ def _g_prev_incomplete(l_n, l_n1, ctx):
     return not _line_has_finite_verb(prev, ctx.get("prev_line_token_tags"))
 
 
+@_register_guard("line_n_has_finite_verb")
+def _g_line_n_finite_verb(l_n, l_n1, ctx):
+    """Fire (block emission) if line N already has its own finite verb.
+
+    Use case: distinguishes genuine fronting ("fronted PP + main clause" where
+    line N is JUST the fronted PP awaiting line N+1's predicate) from
+    parallel bicolon ("PP + verb // PP + verb" where each line is a complete
+    clause). H11 short_verse_fronting was over-merging Sifrei Emet bicola
+    where both lines have their own finite verb (Stan-leading-indicator Psa
+    23:2 line 7: בִּנְאוֹת דֶּשֶׁא יַרְבִּיצֵנִי // עַל־מֵי מְנֻחוֹת יְנַהֲלֵנִי).
+
+    A "fronted PP awaiting predicate" by definition does not have a finite
+    verb on the fronted line; if line N already has one, the line is a
+    complete clause and the merge would conflate parallel cola.
+    """
+    return _line_has_finite_verb(l_n, ctx.get("line_n_token_tags"))
+
+
 @_register_guard("m2_pp_prep_mismatch")
 def _g_m2_prep(l_n, l_n1, ctx):
     """Block emission when next-line prep is not in the M2 verb's allowed-prep set.

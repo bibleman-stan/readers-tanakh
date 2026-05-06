@@ -21,6 +21,7 @@ guards:
   - next_line_is_wayyiqtol      # block re-absorbing post-S3-split wayyiqtol-headed lines
   - line_n_is_purpose_infinitive   # block H11 from absorbing post-S7 purpose-INF orphan-as-N
   - next_line_is_purpose_infinitive   # symmetric: block H11 from absorbing post-S7 purpose-INF orphan-as-N+1 (Psa 59:5 / 71:9 oscillation, 2026-05-05)
+  - line_n_has_finite_verb     # block parallel-bicolon re-merge: if line N already has its own finite verb, it's a complete clause, not a fronted PP awaiting predicate (Psa 23:2 leading-indicator 2026-05-07)
 
 annotation_template: "Short-verse fronting paradox: fronted PP + main clause (combined {pwc} prosodic words)"
 suggested_action: MERGE
