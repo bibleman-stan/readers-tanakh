@@ -183,7 +183,7 @@ Non-predicated units that function as atomic thoughts via formal-structural reco
 2. **Portrait accumulation.** A set of attributes building one mental picture, sharing a copular or attributive frame from context (e.g., the divine attributes formula at Exod 34:6, the description of God in Deut 10:17 *הָאֵל הַגָּדֹל הַגִּבֹּר וְהַנּוֹרָא*). Applies only when the stack IS the portrait, not when it is a catalogue.
 
 3. **Speech-act announcement.** Complete communicative predication introducing direct discourse. Hebrew has rich variety here:
-    - **וַיֹּאמֶר X לֵאמֹר** — speech-intro frame, typically own-line-then-content (see §5 Rule H8 for short-vs-long defaults).
+    - **וַיֹּאמֶר X לֵאמֹר** — speech-intro frame, typically own-line-then-content (see §5 Rule H5 / H5b for the framing-and-announcement defaults).
     - **כֹּה אָמַר יְהוָה** — prophetic messenger formula, own line.
     - **נְאֻם־יְהוָה** — oracle attribution, own line whether sentence-initial, mid-utterance (parenthetical), or sentence-final (signature).
     - **לֵאמֹר alone** — the bare infinitive complementizer is a speech-act-announcement marker, gets its own line at the point of speech-onset.
@@ -323,40 +323,27 @@ This is the "rhetoric-bandwagon" failure mode — the highest predictable risk f
 
 (Casus pendens / left-dislocation is the *exception* — it is grammatically detached by the resumptive pronoun in the main clause, which is structural justification 5 territory, not a tight-fronting case. The rule applies to fronted-but-grammatically-bound constituents like topic-fronted objects without resumption.)
 
-### The Te'amim Are Not a Structural Prior
+### The Te'amim Play No Role in Editorial Decisions
 
-The Tiberian **te'amim** (cantillation accents) are the most important single piece of evidence we have about how educated readers in the Tiberian Masoretic tradition (~9th–10th c. CE) understood the structure of the biblical text. They preserve a thousand years of expert reading. They are, by far, the most useful single starting draft an editor has for a colometric reading edition — better than blank-page work.
+The Tiberian **te'amim** (cantillation accents) are a 9th–10th c. CE Masoretic editorial overlay marking cantillation melody, word stress, and phrase-pause boundaries for liturgical chant. They are preserved in the printed text for textual fidelity. They are not consulted in editorial decisions and they are not cited in defensibility-capture. The three forces (atomic thought, single image, Hebrew syntax) carry the entire load.
 
-But the te'amim are **not a structural prior.** They are evidence.
+**Operational uses that survive this retirement:**
+- `scripts/parse_teamim.py` generated the v1-he-baseline (`data/text-files/v1/he-baseline/`) as a one-time mechanical starting draft for the v2/he hand-editing pass. The v1 files exist as historical artifact; they are not "evidence" in the editorial sense.
+- The Sifrei Emet vs prose corpus partition (used for cluster-cascade routing per CLAUDE.md cluster-5 definition) is a book/chapter-membership fact, not a runtime te'amim check.
+- Sof pasuq (`׃`, U+05C3) remains usable as the structural verse-end punctuation marker (it is not a te'amim glyph proper, U+0591–U+05AF).
 
-**What the te'amim were designed to do** (Yeivin 1980, Tov 2012, Dobbs-Allsopp 2015):
-1. Mark cantillation melody for liturgical chant (their primary function).
-2. Mark word stress (secondary function — disjunctives also mark the tonic syllable).
-3. Mark phrase-pause boundaries within a verse (disjunctive accents pause the chant; conjunctive accents do not). This produces a binary recursive subdivision of each verse — atnach divides the verse, then zaqef/segolta subdivide each half, then tifcha/pashta subdivide each quarter, all the way down.
+**Validator-architecture corollary.** Validators (Layer 2) must trigger on Hebrew morpho-syntactic patterns — lexical class, morphology, syntactic position, formula presence, prefix class, agreement features. Validators must NEVER trigger on te'amim glyph placement or te'amim-derived positional concepts (atnach-domain membership, zaqef-tier hierarchy, paseq presence, etc.). **Diagnostic test:** if the validator wouldn't fire on text stripped of te'amim, its trigger is te'amim-dependent and the architecture is wrong.
 
-**What the te'amim were not designed to do, and do not do reliably:**
-1. Mark sense-units corpus-wide. The te'amim system is **verse-bounded by design** — a wayyiqtol chain spanning three verses cannot be marked by te'amim as one thought; the system has no apparatus for cross-verse sense-unit identification.
-2. Distinguish "this verse is one thought" from "this verse is four thoughts." Every verse gets the same atnach-driven binary subdivision regardless of how many sense-units it actually contains.
-3. Reflect original-author compositional intent. The te'amim are a 9th–10th c. CE artifact reflecting medieval Jewish reading tradition, not Iron Age compositional structure.
+**WHY this matters in execution.** The previous canon framed te'amim as "evidence not authority." That consultative status kept producing scope-slippage: every few sessions, a validator-design proposal would attempt to "use the v1-baseline as a starting candidate set" or "demote te'amim by merging across them" — both of which operationally promote the te'amim as the primary candidate-surfacing signal. The 2026-05-05 v1-aware S8 design failed for exactly this reason (proposed trigger "v1 cola count > v2 cola count" defines the universe of candidates by te'amim placement). Removing the consultative role closes the slippage surface entirely.
 
-**Why this matters operationally.** The Wickes-style framing that the te'amim "encode a hierarchical sense-unit system" conflates the three real functions above with a fourth claimed function (sense-unit marking) that the te'amim were never built for. That framing does not survive contact with what a colometric reading edition actually requires. The Jonah v1-he-baseline output (the project's MVP) makes this concrete: te'amim-driven breaks fragment single-thought verses into three-line widow patterns and lump multi-thought verses under one atnach-driven subdivision.
-
-**The te'amim's role in this canon:**
-- They are **the most important single piece of evidence** about the Masoretic reading tradition's understanding of structure. They corroborate atomic-thought analysis ~70–80% of the time.
-- They are **the editor's starting draft** in the v1-he-baseline layer of the pipeline (`data/text-files/v1/he-baseline/`), faster than blank-page work.
-- They are NOT authoritative. They cannot license a line break by themselves. Every break that survives to v2/he must be defensible as containing an atomic thought, and the te'amim are cited as evidence (confirming, disagreeing, or silent), never as warrant.
-- They are subject to the same discipline as any other editorial overlay: NA28 punctuation in the GNT project, Pratt's 1879 versification in the BoFM project, te'amim in the Tanakh project. Editorial overlays may corroborate; they may not justify.
-
-This is the central methodological correction relative to the predecessor stub canon.
-
-**Validator-architecture corollary.** The te'amim demotion has an operational reach into validator design. Validators (Layer 2) must trigger on Hebrew morpho-syntactic patterns — lexical class, morphology, syntactic position, formula presence, prefix class, agreement features. Validators must NEVER trigger on te'amim glyph placement or te'amim-derived positional concepts (atnach-domain membership, tifcha-as-servant position, zaqef-tier hierarchy, paseq presence, etc.). Te'amim placement MAY appear as corroborating or disagreeing evidence in a finding's defensibility-capture per Rule H8, but never as the trigger that surfaced the candidate. **Diagnostic test:** if the validator wouldn't fire on text stripped of te'amim, its trigger is te'amim-dependent and the architecture is wrong. Te'amim-meta-rules (Rule H11 Tifcha-as-Servant, the prose-vs-Sifrei-Emet routing, etc.) remain valid as editorial guidance for human editors reviewing the v1-baseline draft, but they do not become corpus-wide mechanical sweeps. **WHY:** even framing a validator as "demoting te'amim by merging across them" operationally promotes the te'amim as the primary signal — the universe of candidates surfaced by such a validator is defined by te'amim placement, which is exactly the prior the §1 demotion rejects. **Provenance:** Stan flagged this 2026-04-28 against a proposed `validate_tifcha_servant.py`; the validator was killed in design.
+**Provenance:** Stan flagged the validator-architecture corollary 2026-04-28 against a proposed `validate_tifcha_servant.py`. The full consultative-role retirement was authorized 2026-05-05 after the v1-aware S8 design hit the same corollary. See §8 entry for the audit evidence.
 
 ### Punctuation, Te'amim Glyphs, and the Masoretic Apparatus Are Not Break Signals
 
 The Masoretic apparatus — niqqud, te'amim, Ketiv/Qere markings, sof pasuq, paseq, soph pasuq, the maqqef — is preserved in the printed text for fidelity. Of these:
 
-- **Te'amim** are evidence-not-authority per the section above.
-- **Sof pasuq (`׃`)** is the verse-end mark. It coincides with silluq and marks the end of verse-internal recursive subdivision. It is the *editorial* boundary between verses, imposed by the Masoretic apparatus on top of compositional structure that often crosses it. Do not treat sof pasuq as a forced line break.
+- **Te'amim** play no role in editorial decisions per the section above. Their glyphs are preserved in the text; they are stripped for morphological matching; they are not cited in defensibility-capture.
+- **Sof pasuq (`׃`)** is the verse-end mark, structurally distinct from te'amim glyphs proper (U+05C3 vs U+0591–U+05AF). It is the *editorial* boundary between verses, imposed by the Masoretic apparatus on top of compositional structure that often crosses it. Do not treat sof pasuq as a forced line break, but verse-end detection (e.g., for guard predicates that need to know "this is the last token of the verse") is a structural fact and may be used.
 - **Paseq (`׀`)** is a post-Masoretic disjunctive added in the medieval period. Its function is contested. Treat as evidence (it usually marks something the Masoretes wanted to disjoin) but not as authority.
 - **Maqqef (`־`)** joins two-to-four orthographic words into a single prosodic unit. It IS a break-legality fact (do not break inside a maqqef-group — Layer 1, see §5 Rule H1). It is not by itself a break-license — a maqqef-group ending coincides with a prosodic-word boundary, but most prosodic-word boundaries are not break candidates.
 - **Niqqud** affects pronunciation, not line breaks. Ignore for break decisions.
@@ -381,18 +368,18 @@ But they are not authority either. Aleppo, Leningrad, MAM, and BHS disagree on i
 
 Hebrew parallelism is real. Lowth (1753) was right that biblical poetry is built on parallelistic structures; the question modern scholarship contests is what *kind* of structure parallelism is, not whether it exists. The 250-year debate (Lowth's three-fold synonymous/antithetic/synthetic taxonomy → Kugel 1981's "there is no such thing as parallelism, only seconding — A, and what's more, B" → Berlin 1985's multi-dimensional analysis across phonological/grammatical/lexical levels → Dobbs-Allsopp 2015's free-verse-with-lineation framing) is real, ongoing, and substantial.
 
-**The project does not take a position in that debate.** Parallelism is not a structural prior for line breaks. It is **evidence**, on the same epistemic footing as the te'amim and petucha/setuma — informative about how the author structured a thought, never authoritative for where the editor breaks a line.
+**The project does not take a position in that debate.** Parallelism is not a structural prior for line breaks. It is **evidence**, on the same epistemic footing as petucha/setuma — informative about how the author structured a thought, never authoritative for where the editor breaks a line.
 
-The reasoning is parallel (no pun) to the te'amim demotion: line breaks reveal atomic thoughts; parallelism is a phenomenon the atomic-thought analysis sometimes encounters (especially in Sifrei Emet) but never a generator of breaks in its own right. Importing Lowth's three-fold scheme as a mechanical rule would be the canonical rhetoric-bandwagon failure mode (§1 Imposing vs. Revealing): a scholarly category becoming a line-break authority. Importing Kugel's anti-parallelism stance as a mechanical rule would be the same failure in opposite direction.
+Line breaks reveal atomic thoughts; parallelism is a phenomenon the atomic-thought analysis sometimes encounters (especially in Sifrei Emet) but never a generator of breaks in its own right. Importing Lowth's three-fold scheme as a mechanical rule would be the canonical rhetoric-bandwagon failure mode (§1 Imposing vs. Revealing): a scholarly category becoming a line-break authority. Importing Kugel's anti-parallelism stance as a mechanical rule would be the same failure in opposite direction.
 
 **Operational implications:**
 
-- **In Sifrei Emet** (Pss/Prov/poetic Job): the te'amim's stich-divisions are the editor's starting draft per Rule H8, and they correlate strongly with parallelistic structure (the medieval cantor was reading the parallelism). When v2/he diverges from te'amim breaks in poetic books, the divergence is informative but not a defect — same status as in prose.
+- **In Sifrei Emet** (Pss/Prov/poetic Job): the v1-he-baseline (parse_teamim.py output) was the editor's starting draft. v2/he hand-editing applies the three forces; divergence from v1 is informative but not a defect — same status as in prose.
 - **The project does not display parallelism via line layout.** When parallel members appear on parallel lines in the rendered edition, they appear so because each member is itself an atomic thought (structural justification 1), NOT because we are typesetting parallelism for visual effect. This is the anti-Lowth posture from the sibling BoFM canon (which named it explicitly: "split-dominant repeated-frame layout IS the parallelism-display posture the project's stance opposes") applied to the original Hebrew.
-- **Berlin's multi-dimensional analysis is a useful diagnostic** when atomic-thought analysis is borderline — when phonological + grammatical + lexical parallelism converge on a structure the te'amim missed, that's high-confidence evidence for an override. But Berlin is an evidence-application tool under criterion #1, not a baseline framework.
-- **Dobbs-Allsopp's free-verse framing** aligns with the project's posture: the te'amim are a specific historical reading-tradition's lineation; atomic-thought is the editorial criterion that drives v2/he. The project does not adopt Dobbs-Allsopp as authority either — but his framing is the most compatible of the four with what the canon actually does.
+- **Berlin's multi-dimensional analysis is a useful diagnostic** when atomic-thought analysis is borderline — when phonological + grammatical + lexical parallelism converge on a structure the v1-baseline did not register, that's high-confidence evidence for an override. But Berlin is an evidence-application tool under criterion #1, not a baseline framework.
+- **Macula constituent trees + frame annotations** (lowfat XML, see §0 source-stack) are the structural diagnostic when parallelism-detection is needed — morpho-syntactic subject/verb/role symmetry across a candidate boundary, queried mechanically. This is the canon-aligned alternative to "look at the te'amim."
 
-**Why this matters as a load-bearing canon section.** The parallelism question was the question that surfaced the te'amim-prior failure in the first place: when Stan asked which parallelism stance to take for Sifrei Emet, the framing forced the prior-question — what *is* the prior, the te'amim or the atomic thought? The te'amim demotion is the answer. This subsection makes the symmetry explicit so future editorial work in poetic books does not accidentally reintroduce a parallelism-as-prior commitment under a different label. Do not relitigate by proposing Lowth/Kugel/Berlin/Dobbs-Allsopp as competing structural priors; they are competing scholarly accounts of a phenomenon the editor encounters as evidence.
+**Why this matters as a load-bearing canon section.** The parallelism question was the question that surfaced the original te'amim-prior failure: when Stan asked which parallelism stance to take for Sifrei Emet, the framing forced the prior-question — what *is* the prior, the te'amim or the atomic thought? The te'amim retirement (initially demotion to evidence-status; fully retired 2026-05-05) is the answer. This subsection makes the symmetry explicit so future editorial work in poetic books does not accidentally reintroduce a parallelism-as-prior commitment under a different label. Do not relitigate by proposing Lowth/Kugel/Berlin/Dobbs-Allsopp as competing structural priors; they are competing scholarly accounts of a phenomenon the editor encounters as evidence.
 
 ### N=2 Adjudication Principle
 
@@ -511,10 +498,10 @@ Hebrew-specific rules use the H-prefix to distinguish them from sibling-canon ru
 | H5b | Speech-Act Announcement Default | Mechanical | Finite speech-act verb closing a speech-intro frame, immediately followed by direct discourse | Speech-act announcement and quoted content occupy separate lines. Forced-merge exceptions: H1 (maqqef), H7 (non-speech complement), H5 scope-economy carve-out. See §5 H5b. |
 | H6 | Ketiv/Qere policy | Editorial | K/Q markers in source text | Print Qere by default; Ketiv accessible as hover/footnote (per §5 H6 sub-categories) |
 | H7 | Complement integrity (Hebrew) | Mechanical | Verb + obligatory complement (*אָמַר* + speech, *יָדַע* + כִּי-clause, etc.) | MERGE across boundary |
-| H8 | Te'amim as evidence | Principle | Always | The te'amim corroborate or disagree; they do not authorize. See §1 "The Te'amim Are Not a Structural Prior" |
+| H8 | RETIRED 2026-05-05 | — | — | Te'amim play no role in editorial decisions. See §1 "The Te'amim Play No Role in Editorial Decisions" + §8 entry. |
 | H9 | Divine-title appositives | Editorial | Divine title appositive after *YHWH* or *Elohim* | INTRODUCING (formal anchor) → STACK SPLIT; REFERENCING (default) → MERGE |
 | H10 | Cross-verse continuity merge | Mechanical | Atomic thought spans MT verse boundary | Sense-line stays intact in earlier verse's block; superscript verse-marker for boundary |
-| H11 | Tifcha-as-servant-of-atnach | Mechanical | Tifcha within atnach domain, short prosodic distance | Te'amim evidence weight reduced — tifcha disjunctive is "servant" not "primary breaker" in many positions per Wickes 1887 |
+| H11 | RETIRED 2026-05-05 | — | — | Te'amim-internal heuristic; nothing to govern at canon level once te'amim play no role in editorial decisions. See §8 entry. |
 | H12 | Petucha/setuma rendering | Mechanical | Petucha or setuma marker in source | Petucha → blank-line paragraph break; setuma → indented break. Evidence-weighted, not authority |
 | H13 | Special letters | Editorial | Suspended nun (Judg 18:30), inverted nuns (Num 10:35–36), large/small letters, scriptio plena/defectiva variants | Preserve graphically; document in marginal note; do not affect line breaks |
 | H14 | Discourse particles | Editorial | *הִנֵּה, נָא, אָז, עַתָּה, וְעַתָּה, לָכֵן, עַל־כֵּן* | Lead their content (frame, do not trail); cluster with vocative if both sentence-initial |
@@ -578,17 +565,16 @@ Canon rules H1–H18 cite Layer 1 rows by signature. The grammatical floor lives
 | H5b (Speech-Act Announcement Default) | Speech-frame boundary (same row as H5) |
 | H7 (Complement Integrity, Hebrew) | Bound enclitic split, plus verb-object integrity inherited from canon |
 | H9 (Divine-Title Appositives) | Compound divine name split, Apposition boundary |
-| H11 (Tifcha-as-Servant-of-Atnach) | All proclitic-stranding rows (conjunction / prep / article / object-marker / negation / compound-prep) |
 | H14 (Discourse Particles) | Conjunction-prefix and proclitic-stranding rows |
 | H15 (Casus Pendens / Left-Dislocation) | Casus pendens boundary |
 | H16 (FEF Wayehi Protasis) | Wayyehi / wehayah boundary |
 | H18 (Clause-Nucleus Integrity: verbless / participial / verb-PP-complement) | Apposition boundary, Bound enclitic split (H18.2 participial complement); H18.3 inherits H7's verb-object integrity from canon |
 
-Other canon rules (H6 Ketiv/Qere, H8 Te'amim-as-Evidence, H10 Cross-Verse Continuity, H12 Petucha/Setuma, H13 Special Letters, H17 Genealogy/List-Formula) operate above this surface — they are textual-tradition policies, editorial-judgment rules, or paragraph-scale concerns where per-line break-legality does not apply.
+Other canon rules (H6 Ketiv/Qere, H10 Cross-Verse Continuity, H12 Petucha/Setuma, H13 Special Letters, H17 Genealogy/List-Formula) operate above this surface — they are textual-tradition policies, editorial-judgment rules, or paragraph-scale concerns where per-line break-legality does not apply. (H8 and H11 retired 2026-05-05 per te'amim consultative-role removal.)
 
-### 4.2 Te'amim Inventory Reference
+### 4.2 Te'amim Inventory Reference (operational artifact, no canon role)
 
-Authoritative table: [`data/syntax-reference/teamim-inventory.md`](../../data/syntax-reference/teamim-inventory.md). Status: **populated** (2026-04-27); 82 lines covering prose + Sifrei Emet inventories. Lists the full prose and Sifrei Emet accent inventories with disambiguation by glyph / name / positional function / prose-vs-poetic equivalence. Corrects the factual errors in the predecessor stub canon (tzinnor = positional zarqa, mehuppakh-legarmeih is conjunctive-with-paseq, revia mugrash is positional revia).
+File: [`data/syntax-reference/teamim-inventory.md`](../../data/syntax-reference/teamim-inventory.md). Originally populated 2026-04-27 as canon reference; **demoted 2026-05-05** to operational reference for `scripts/parse_teamim.py` only. Te'amim inventory has no canon role since the consultative-role retirement (§8 entry 2026-05-05). The file is preserved as historical artifact and parser implementation reference; it is not cited in editorial decisions.
 
 ---
 
@@ -880,17 +866,13 @@ When Ketiv and Qere differ, the Masoretes preserved both: Ketiv stands in the co
 
 **Delete-test diagnostic.** Remove any intervening NP. If the sentence still reads as "[subject] [verb] *כִּי* X," the *כִּי* clause is a complement — MERGE. If the deletion breaks the sentence, the *כִּי* clause is appositive to a noun — DNM (do not merge).
 
-### Rule H8 — Te'amim as Evidence (Operational Application)
+### Rule H8 — RETIRED 2026-05-05
 
-**Principle.** See §1 "The Te'amim Are Not a Structural Prior" for the foundational framing. This rule operationalizes the principle.
+Rule H8 (Te'amim as Evidence — Operational Application) is **retired** as part of the te'amim consultative-role removal. See §1 "The Te'amim Play No Role in Editorial Decisions" and §8 entry "2026-05-05 — Te'amim consultative role retirement" for the retirement rationale.
 
-**Application:**
-- The v1-he-baseline (`data/text-files/v1/he-baseline/`) is the editor's starting draft, faster than blank-page work. It is canon-compliant by construction within the limits of mechanical te'amim parsing.
-- v2/he (`data/text-files/v2/he/`) freely adds, removes, or merges line breaks relative to v1/he-baseline, justified by atomic-thought + structural-justifications + merge-overrides + syntax veto.
-- When v2/he breaks coincide with te'amim-induced breaks, the te'amim corroborate. When v2/he breaks disagree with te'amim, the disagreement is informative but not a defect — the te'amim are evidence, not authority.
-- **Cite the te'amim as evidence in defensibility-capture for non-trivial breaks** (per §7.5): "WHY = atomic thought; HOW WE KNOW = te'amim agree (atnach at this position); SCOPE = ..."  When te'amim disagree, document: "WHY = atomic thought + structural justification 5; HOW WE KNOW = te'amim disagree (no disjunctive at this position; tifcha mid-clause); the disagreement is consistent with the te'amim-as-chant-pause-not-sense-unit framing in §1."
+The v1-he-baseline (`data/text-files/v1/he-baseline/`) was generated mechanically by `scripts/parse_teamim.py` as a one-time starting draft for v2/he hand-editing. Defensibility-capture for non-trivial breaks cites the three forces (atomic thought, single image, Hebrew syntax) and the named structural-justifications; it does not cite te'amim positions.
 
-**Tier-thresholding (the predecessor stub canon's §2.1 default breaker list)** is **withdrawn as a canon claim.** The te'amim disjunctive hierarchy is real, but it operates as evidence-weighting, not as a break-licensing threshold. The pipeline's `scripts/parse_teamim.py` may still implement a mechanical default (silluq + atnach + segolta + zaqef qaton/gadol as primary breakers; tifcha as servant per Rule H11; lower disjunctives as evidence-only) for the v1-he-baseline draft, but this is a draft-generation heuristic, not a canon commitment.
+Rule numbering preserved (H8 slot stays empty rather than renumbering H9–H17).
 
 ### Rule H9 — Divine-Title Appositives
 
@@ -929,19 +911,13 @@ INTRODUCING (stack on own line) earns a split ONLY when one of three formal anch
 
 **Cross-verse continuity** is the operative convention; Hebrew-specific examples appear in the rule diagnostic above.
 
-### Rule H11 — Tifcha-as-Servant-of-Atnach
+### Rule H11 — RETIRED 2026-05-05
 
-**Grammatical basis.** William Wickes (*A Treatise on the Accentuation of the Twenty-One So-Called Prose Books of the Old Testament*, 1887) documented that **tifcha** (טִפְחָא, the disjunctive accent at the second tier in some pedagogical schemes) frequently functions as a *servant* (mishneh) of atnach in many positions — i.e., it marks a sub-pause within atnach's domain rather than being a primary clause-divider.
+Rule H11 (Tifcha-as-Servant-of-Atnach) is **retired** as part of the te'amim consultative-role removal. See §1 "The Te'amim Play No Role in Editorial Decisions" and §8 entry "2026-05-05 — Te'amim consultative role retirement" for the retirement rationale.
 
-**Trigger.** Tifcha occurring within atnach's domain at short prosodic distance from the atnach (or from silluq when no atnach is present).
+Tifcha-as-servant was a te'amim-internal heuristic governing the parse_teamim.py draft generator. Now that te'amim play no role in editorial decisions, the rule has nothing to govern at the canon level. The parse_teamim.py heuristic itself remains as one-time draft-generation code (operational, not consultative); whether it implements tifcha-as-servant or not is an implementation detail, not a canon commitment.
 
-**Diagnostic.** Te'amim evidence weight reduced — when tifcha appears in a servant-of-atnach position, treat it as a weak corroborator of any v2/he editorial decision rather than as a primary breaking signal. The mechanical default in `scripts/parse_teamim.py` of treating tifcha as a tier-2 default breaker over-fragments single-thought verses (Jonah 1:1 currently produces a 3-line widow split because of tifcha-driven break at *וַיְהִי*); the v2/he editorial pass should re-evaluate tifcha-induced breaks against the atomic-thought criterion.
-
-**WHY:** corrects the predecessor stub canon's §2.1 default-breaker list, which included tifcha as a tier-2 primary breaker without addressing Wickes's well-documented servant-of-atnach analysis.
-
-**HOW WE KNOW:** Wickes 1887 (treatise on prose accentuation, foundational reference in CLAUDE.md). Yeivin 1980 §266 corroborates the servant-pattern.
-
-**SCOPE:** prose books only (21 books using prose accent system + Job's prose frame). The tifcha analog in the Sifrei Emet system has different position-functions; addressed separately in the te'amim-inventory reference.
+Rule numbering preserved (H11 slot stays empty rather than renumbering H12–H17).
 
 ### Rule H12 — Petucha / Setuma Rendering
 
@@ -1105,12 +1081,12 @@ After any pipeline-changing pass (new rule, reformatter update, build script cha
 
 | Fixture | Register | Primary rules tested |
 |---|---|---|
-| **Jonah 1** | Prose narrative | Rule H5 direct-speech framing (4 instances), Rule H16 FEF wayehi protasis, Rule H3 wayyiqtol clause-head policy, Rule H11 tifcha-as-servant |
-| **Jonah 2** | Sifrei Emet poetic | Te'amim-evidence-not-authority for Sifrei Emet (Rule H8), structural justification 1 parallel members in psalmic poetry, FEF wayehi protasis at 2:1 |
+| **Jonah 1** | Prose narrative | Rule H5 direct-speech framing (4 instances), Rule H16 FEF wayehi protasis, Rule H3 wayyiqtol clause-head policy |
+| **Jonah 2** | Sifrei Emet poetic | Structural justification 1 parallel members in psalmic poetry; FEF wayehi protasis at 2:1 |
 | **Genesis 1** | Prose narrative + creation formula | Rule H1 maqqef-group, Rule H17 list-formula (the days-of-creation formula), Parallel-List Uniformity Principle |
 | **Deuteronomy 27** | Legal list | Parallel-List Uniformity Principle (the *אָרוּר* curse-series), Authorial Asymmetry test |
 | **Psalm 1** | Sifrei Emet wisdom | Sifrei Emet stichometry, te'amim-as-evidence in poetic register, M1 bonded-pair tests on common psalmic doublets |
-| **Exodus 15** | Embedded prose-cantillated poetry (Song of the Sea) | Embedded-poetry skip-gate for H18; Rule H11 + Authorial Asymmetry interaction; structural justification 1 (parallel bicolon) |
+| **Exodus 15** | Embedded prose-cantillated poetry (Song of the Sea) | Embedded-poetry skip-gate for H18; Authorial Asymmetry; structural justification 1 (parallel bicolon) |
 | **Deuteronomy 32** | Embedded prose-cantillated poetry (Ha'azinu) | H18 hard-skip (densest embedded-poetry chapter in Torah); mixed verbal/verbless bicola |
 | **Deuteronomy 33** | Embedded prose-cantillated poetry (Mosaic blessings) | H18 hard-skip; **Deut 33:26 canonical regression case** (verbless-NP // bare-participle must NOT merge) |
 | **Judges 5** | Embedded prose-cantillated poetry (Song of Deborah) | Long embedded-poetry block; gate completeness across full chapter |
@@ -1387,6 +1363,37 @@ The three-repos-same-provenance coordination matters: BoFM, GNT, and Tanakh cano
 
 **Audit-status declaration (per CLAUDE.md Pre-commit Adversarial-Audit Discipline):** Audit dispatched: four parallel agents 2026-05-02 (canon revision drafter Opus, FP/FN sampling Opus, spec impact survey Sonnet, M2 verbless audit Sonnet); §8 entry above + corresponding canon edits.
 
+### 2026-05-05 — Te'amim consultative role retirement (full removal)
+
+**What landed.** Te'amim are no longer cited as evidence in editorial decisions. The previous canon stance ("evidence not authority") was demoted further to "play no role in editorial decisions." Operational uses survive (parse_teamim.py one-time v1-baseline generator; Sifrei Emet vs prose corpus partition for cluster routing; sof-pasuq-as-verse-end structural marker). The three forces (atomic thought, single image, Hebrew syntax) carry the entire load.
+
+**Edits applied:**
+1. §1 "The Te'amim Are Not a Structural Prior" → renamed and rewritten as **"The Te'amim Play No Role in Editorial Decisions"**. Old section's "most important single piece of evidence" / "evidence-not-authority" / "70-80% corroboration" framing all retired. New section explicitly preserves operational uses and the validator-architecture corollary.
+2. §1 "Punctuation, Te'amim Glyphs..." subsection: te'amim bullet rewritten to "play no role in editorial decisions"; sof pasuq bullet preserves verse-end structural use, distinguished from te'amim glyphs proper (U+05C3 vs U+0591–U+05AF).
+3. §1 "Parallelism Is Not a Structural Prior": removed te'amim epistemic-footing comparison; replaced "the te'amim missed" with "the v1-baseline did not register"; added Macula constituent trees as the canon-aligned diagnostic for parallelism detection.
+4. **Rule H8 retired** (was: Te'amim as Evidence — Operational Application). Replaced with retirement notice + pointer to §1 + this §8 entry. Rule numbering preserved (H8 slot empty rather than renumbering H9–H17).
+5. **Rule H11 retired** (was: Tifcha-as-Servant-of-Atnach). Same treatment as H8.
+6. §3 Quick-Reference Rule Table: H8 row → RETIRED notice; H11 row → RETIRED notice.
+7. §4.1 Rule-to-Table Mapping: H11 row removed (was: tifcha-as-servant cited proclitic-stranding rows). H8 removed from "above this surface" rule list.
+8. §4.2 Te'amim Inventory Reference demoted: file preserved as parse_teamim.py implementation reference; no longer canon reference.
+9. §6.x Calibration Corpus rows: Jonah 1 row removed Rule H11; Jonah 2 row removed Te'amim-evidence-not-authority + Rule H8 cite; Exodus 15 row removed Rule H11.
+10. §9 Glossary: Tifcha entry's "See Rule H11" cross-ref removed; Ta'am entry retained as terminology definition without canon-role implication.
+11. **CLAUDE.md** edits: te'amim-as-evidence framing in project intro (line 19) and Te'amim-as-Evidence section (lines 144–146) and v1 tier-table description (line 157) all rewritten to reflect operational-only role.
+12. **handoffs/01-project-overview.md** + **handoffs/04-editorial-workflow.md**: te'amim-as-evidence references removed from defensibility-capture descriptions.
+13. **validators/specs/m4_b_dibber_formula.yaml**: "atnach typically splits the formula" comment-prose deleted from description (no trigger logic affected).
+
+**WHY.** The previous "te'amim are evidence not authority" framing kept producing scope-slippage. Three concrete failure modes recurred: (a) defensibility-capture-as-smuggled-authority — once "atnach at this position" appears in a commit message as HOW WE KNOW, future agents treat it as warrant rather than re-deriving the atomic-thought defense; (b) validator-design slippage — even framing a validator as "demoting te'amim by merging across them" centers them as the candidate-surfacing signal (the §1 corollary case 2026-04-28; recurred 2026-05-05 with the v1-aware S8 design that proposed trigger "v1 cola count > v2 cola count" — which IS a te'amim-trigger because v1 = parse_teamim.py output); (c) Sifrei Emet vs prose conflation with poetic-register-as-skip (Wave-B 2026-05-04 already removed 11 such skips; the residual te'amim-evidence framing kept re-creating the temptation). Removing the consultative role closes the slippage surface entirely. Adversarial audit found ZERO documented tiebreaker cases in canon or session-notes where the three forces were ambiguous and only te'amim broke the tie — the Decision Procedure (§1, lines ~450–464) names atomic thought / split triggers / syntax veto / merge override / image diagnostic, with te'amim appearing nowhere. The "70–80% corroboration" claim in the prior §1 was unfalsifiable as stated and operationally inert.
+
+**HOW WE KNOW.** Two parallel agents 2026-05-05: (a) Opus adversarial audit (agent ID `ab055c3b0ef3a37ec`) on the proposed removal — verdict "DO IT IF" with three preserved-scope items (sof-pasuq-as-verse-marker, cluster-5 SE/prose routing, parse_teamim.py + v1-baseline files until 39/39 v2 coverage independently verified); (b) Sonnet corpus survey (agent ID `a004131ab06584e0b`) of all te'amim references — found 33 CONSULTATIVE locations across canon + CLAUDE.md + 2 handoffs + 1 YAML + 4 validator output-only blocks; ~85 OPERATIONAL refs (parse_teamim.py, poetic_register.py, sof-pasuq guards, Unicode constants); ~9 HISTORICAL-RECORD blocks in §8/§10 (preserved per historical-record-preservation rule). **Critical survey finding: zero existing validators trigger on te'amim glyphs** — the §1 corollary architecture is already clean; the retirement is forward-looking, not corrective. Imposing-vs-revealing analysis: this is REVEALING (correcting an asymmetry where one Masoretic editorial overlay was given a special epistemic status that the others — sof pasuq, paseq, niqqud, versification — were already denied), not IMPOSING.
+
+**SCOPE.** Canon: §1 te'amim section + parallelism-comparison line + glossary entries; Rules H8 + H11 retired; §3 table + §4.1/§4.2 + §6.x calibration + §8 (this entry). CLAUDE.md: 3 locations. Handoffs: 2 files. YAML specs: m4_b_dibber_formula description prose only (no trigger change). Validators: 4 output-only `teamim_summary()` calls removed (validate_bonded_pair, validate_causal_ki, validate_bare_construct_head, validate_oath_formula); trigger logic unchanged. Operational preservations per audit verdict: parse_teamim.py + v1-baseline files preserved (one-time draft generator; canary-verify 39/39 v2 coverage before retirement); cluster-5 SE/prose routing preserved (book/chapter membership, not runtime te'amim check); sof-pasuq-as-verse-marker preserved (structural punctuation, U+05C3, distinct from te'amim glyphs U+0591–U+05AF). Historical-record entries in §8/§10 referencing the prior te'amim framing preserved per §8 do-not-rewrite-dated-entries rule.
+
+**Closes prior carry-forwards.** §8 carry-forward "Update parse_teamim.py to reflect Rule H8's de-authority framing" (line ~1269) — closed by retirement (script docstring becomes operational-only). §8 carry-forward "Update parse_teamim.py to reflect Rule H11 — tifcha-as-servant mechanical adjustment" (line ~1271) — closed by retirement (parse_teamim.py implementation choice is now an operational detail, not a canon commitment). Te'amim Inventory Reference §4.2 carry-forwards (line ~1216) — closed by demotion to operational reference.
+
+**Audit dispatched (per §7 multi-trigger requirement):** two parallel agents 2026-05-05 (Opus adversarial audit `ab055c3b0ef3a37ec`; Sonnet corpus survey `a004131ab06584e0b`). Triggers fired: #1 (canon-rule retirements: H8 + H11); #5 (te'amim-as-evidence stance is a live application being retired); #6 (validator-output cleanup at 4 sites under settled rule); #7 (corpus survey of all te'amim references); #12a (post-codification spot-check of Macula-parallelism detector design pathway scheduled as next-session task).
+
+**Audit-status declaration (per CLAUDE.md Pre-commit Adversarial-Audit Discipline):** Audit dispatched: two parallel agents 2026-05-05 (Opus adversarial audit `ab055c3b0ef3a37ec`; Sonnet corpus survey `a004131ab06584e0b`); §8 entry above + corresponding canon edits.
+
 ---
 
 ## §9 Glossary
@@ -1427,7 +1434,7 @@ Hebrew terminology used throughout this canon, in alphabetical order by translit
 - **TaNaK** — acronym for Torah / Nevi'im / Ketuvim, the Hebrew tripartite division of the canon.
 - **Tetragrammaton** — the four-letter divine name יהוה, vocalized as Adonai (or Elohim) in Jewish reading tradition; transliterated as *Yahweh* in this project's translit layer per scholarly convention.
 - **Tiqqunei sopherim** — "scribal corrections" the Masorah identifies as deliberate emendations from earlier forms (~18 cases per masoretic tradition).
-- **Tifcha** (*טִפְחָא*) — disjunctive ta'am that frequently functions as a *servant of atnach* (mishneh) in many positions. See Rule H11.
+- **Tifcha** (*טִפְחָא*) — disjunctive ta'am that frequently functions as a *servant of atnach* (mishneh) in many positions. (Rule H11 retired 2026-05-05; see §8 entry.)
 - **Trei Asar** — "the Twelve" — the twelve Minor Prophets, treated as one book in Hebrew tradition.
 - **UXLC** — Westminster Leningrad Codex digital edition at tanach.us. Vendored as transcription cross-check.
 - **Wayyiqtol** (vav-consecutive imperfect) — the dominant clause-head verbal form in Hebrew narrative prose. Marks sequential narrative events. See Rule H3.

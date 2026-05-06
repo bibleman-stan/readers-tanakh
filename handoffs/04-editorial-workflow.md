@@ -45,7 +45,7 @@ Findings tagged `STRONG-MERGE-CANDIDATE` or `STRONG-SPLIT-CANDIDATE` are Categor
 
 **Editorial moves allowed:**
 
-- **Merge an accent break** — e.g., the parser broke at a tifcha that the editor judges does not warrant a colon boundary. Each editorial line break must positively justify itself as containing an atomic thought, citing which of the three editorial criteria (atomic thought, single image, Hebrew syntax) and any relevant structural justification (per colometry-canon.md §1) supports the break. Te'amim agreement or disagreement is documented as evidence.
+- **Merge a v1-baseline break** — e.g., the parser broke at a position the editor judges does not warrant a colon boundary. Each editorial line break must positively justify itself as containing an atomic thought, citing which of the three editorial criteria (atomic thought, single image, Hebrew syntax) and any relevant structural justification (per colometry-canon.md §1) supports the break. Te'amim are not cited in defensibility-capture (consultative role retired 2026-05-05; canon §1 + §8 entry).
 - **Insert a non-accent break** — e.g., a long colon contains two atomic thoughts that the accent system left fused. The insertion must cite which criterion warrants the additional break.
 - **Adjust whitespace and verse-number formatting** for readability.
 
@@ -119,7 +119,7 @@ Every divergence from the v1-he-baseline should leave a trail. The simplest conv
 - A periodic sweep produces a "divergence census": count of divergences per book, per chapter, per criterion-invoked
 - Divergence hot-spots (chapters with unusually high divergence rates) are candidates for canon revision — either the criteria need refinement, or the te'amim parser is producing systematic noise
 
-Divergence rate from v1/he-baseline is a key diagnostic metric. A v2/he that diverges from te'amim breaks at >50% suggests either (a) v1/he-baseline is over-fragmenting via tifcha-as-servant (canon Rule H11) and the editor is correctly merging back, or (b) the editor's atomic-thought criterion is firing too aggressively and warrants review for canon compliance. Both cases are diagnostic, not failures per se — the te'amim are evidence, not authority. A v2/he that diverges 0% from v1/he-baseline suggests the editorial pass isn't adding value.
+Divergence rate from v1/he-baseline is a diagnostic metric only. The v1 baseline is a one-time mechanical artifact (parse_teamim.py output), not a normative target. High divergence may indicate (a) v1 over-fragmented mechanically and the editor correctly merged back, or (b) the editor's atomic-thought criterion is firing too aggressively and warrants review for canon compliance. Both cases are diagnostic, not failures per se. (The te'amim that drove the v1 baseline are not consulted in editorial decisions; consultative role retired 2026-05-05 per canon §1 + §8 entry.)
 
 ---
 

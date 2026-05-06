@@ -3,8 +3,9 @@ rule: M4
 subcase: dibber_formula
 severity: STRONG-MERGE-CANDIDATE
 description: |
-  YHWH-speech closing formula 'כִּי פִּי יְהוָה (צְבָאוֹת) דִּבֵּר' — atnach typically
-  splits the formula between יְהוָה (or יְהוָה צְבָאוֹת) and דִּבֵּר. Sibling to
+  YHWH-speech closing formula 'כִּי פִּי יְהוָה (צְבָאוֹת) דִּבֵּר' — the v1-baseline
+  often splits the formula between יְהוָה (or יְהוָה צְבָאוֹת) and דִּבֵּר; this
+  spec re-merges to preserve formulaic integrity. Sibling to
   m4_yhwh_formula_integrity which catches openers (כֹּה אָמַר, נְאֻם, etc.); this
   one catches closers.
 

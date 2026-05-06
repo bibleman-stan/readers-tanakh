@@ -16,7 +16,7 @@ The methodology rests on three forces operating simultaneously:
 - **Subtractive** — Hebrew syntax integrity, complement integrity, and formula integrity trigger merges; four closed-list merge-overrides govern exceptions.
 - **Diagnostic** — single image acts as tiebreaker when generative and subtractive forces are in tension.
 
-The te'amim (cantillation accents) are **the most important single piece of evidence** — they preserve roughly a millennium of expert Masoretic reading tradition (Tiberian, ~9th–10th c. CE) and form the v1-he-baseline that editors revise from. The disjunctive accent hierarchy requires two parsers: one for the prose accent system (21 books) and one for the *Sifrei Emet* system (Psalms, Proverbs, Job 3:1–42:6). But the te'amim are evidence, not authority; any editorial overlay (te'amim, sof pasuq, paseq, niqqud, versification) is evidence that informs the editor's judgment, not a break-licensing rule.
+The te'amim (cantillation accents) play no role in editorial decisions (canon §1, retired-as-consultative-criterion 2026-05-05). They drove `scripts/parse_teamim.py` which generated the v1-he-baseline as a one-time mechanical starting draft for v2/he hand-editing; the v1 files exist as historical artifact. The Sifrei Emet vs prose corpus partition (cluster-5 routing) is a book/chapter-membership fact, not a runtime te'amim check. Any editorial overlay (te'amim, sof pasuq, paseq, niqqud, versification) is preserved in the printed text for fidelity but does not figure in editorial decisions or defensibility-capture.
 
 - **Repo:** github.com/bibleman-stan/readers-tanakh (public)
 - **Live site:** tanakh-reader.com — `CNAME` file is in repo root; verify GitHub Pages source-setting (Settings → Pages → branch `main`, folder `/`) before assuming the site is serving the latest commit and GA is firing.
@@ -142,9 +142,9 @@ Current as of 2026-05-05 (post Macula-pivot promotion sweep + round-4 cascade + 
 
 ---
 
-## Te'amim as Evidence
+## Te'amim Play No Role in Editorial Decisions
 
-The te'amim are the editor's starting draft, not the editor's authority. The v1-he-baseline is what the accent hierarchy produces; departures need a documented reason (which of the three forces is doing the work). **Three criteria, not four** — atomic thought, single image, Hebrew syntax. Breath is NOT a criterion. **No overlay has deterministic force** — te'amim, sof pasuq, paseq, niqqud, versification all are evidence; none license a break alone.
+Te'amim were retired as a consultative criterion 2026-05-05 (canon §1 + §8 entry). The v1-he-baseline is a historical mechanical artifact, not a normative starting draft. Editorial decisions cite the three forces only — atomic thought, single image, Hebrew syntax. Breath is NOT a criterion. **No overlay has deterministic force OR consultative force** — te'amim, sof pasuq, paseq, niqqud, versification are preserved for textual fidelity but do not figure in editorial decisions or defensibility-capture.
 
 ---
 
@@ -155,7 +155,7 @@ The pipeline is **v0 → v1 → v2**. The earlier 5-tier scheme (v0/v1/v2-he-syn
 | Tier | Directory | Engine | What it does |
 |---|---|---|---|
 | v0 | `data/text-files/v0/prose/` | `scripts/ingest_tahot.py` | Raw text from TAHOT. Never edited. |
-| v1 | `data/text-files/v1/he-baseline/` | `scripts/parse_teamim.py` | Te'amim-as-evidence baseline cola draft. Editor's starting draft, not a normative "version 1." |
+| v1 | `data/text-files/v1/he-baseline/` | `scripts/parse_teamim.py` | One-time mechanical starting draft for v2/he hand-editing. Historical artifact post-retirement of te'amim consultative role (2026-05-05). |
 | v2 | `data/text-files/v2/he/` | Stan + Claude | Hand-edited Hebrew gold standard. Applies the three forces (generative, subtractive, diagnostic) and the four merge-overrides; consumes Layer 1 + Layer 3 validator findings as a work queue. Single source of truth for the build. |
 
 Parallel per-word layers (`v2/eng-interlinear/`, `v2/eng-gloss/`, `v2/translit/`) are produced by `scripts/propagate_editorial_layers.py` from v2/he. `scripts/build_books.py` picks v2 if present per chapter, otherwise v1.
