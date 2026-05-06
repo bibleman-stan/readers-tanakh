@@ -1123,57 +1123,6 @@ def partition_into_verses(lines: list[str]) -> list[tuple[int | None, int | None
 # ---------------------------------------------------------------------------
 
 # Common te'amim by Unicode codepoint, used ONLY for annotation strings.
-# This dict is referenced solely from the annotation builder; trigger logic
-# never imports or compares against te'amim.
-_TEAMIM_NAME_BY_CHAR = {
-    "֖": "tipha",
-    "֔": "zaqef qatan",
-    "֕": "zaqef gadol",
-    "֨": "qadma",
-    "֩": "telisha qetannah",
-    "֫": "geresh",
-    "֬": "geresh muqdam",
-    "֠": "telisha gedolah",
-    "֤": "pashta",
-    "֙": "pashta",
-    "֡": "darga",
-    "֣": "munach",
-    "֥": "merkha",
-    "֦": "merkha kefulah",
-    "֧": "darga",
-    "֜": "geresh",
-    "֝": "geresh muqdam",
-    "֞": "gershayim",
-    "֟": "qarne phara",
-    "֑": "etnachta",
-    "֒": "segol",
-    "֓": "shalshelet",
-    "֮": "zarka",
-    "֭": "dehi",
-    "֛": "tevir",
-    "֢": "atnach hafukh",
-    "֪": "yetiv",
-    "֘": "zarka",
-    "֗": "revia",
-}
-
-
-def teamim_summary(line: str) -> str:
-    """Return a short informational summary of te'amim names present on `line`.
-
-    INFORMATIONAL ONLY — never consulted by trigger predicates.
-    """
-    seen: list[str] = []
-    for ch in line:
-        if "֑" <= ch <= "֯":
-            name = _TEAMIM_NAME_BY_CHAR.get(ch)
-            if name and name not in seen:
-                seen.append(name)
-    if not seen:
-        return ""
-    return ", ".join(seen)
-
-
 # ---------------------------------------------------------------------------
 # Per-file scanner
 # ---------------------------------------------------------------------------
@@ -1408,20 +1357,9 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
         # --- All guards passed; emit REVIEW-REQUIRED finding ---
         prior_text = line.strip()
         next_text = next_line.strip()
-
-        prior_teamim = teamim_summary(line)
-        next_teamim = teamim_summary(next_line)
-        teamim_note = ""
-        if prior_teamim or next_teamim:
-            teamim_note = (
-                f" Te'amim placement: {prior_teamim or '(none)'} on prior line, "
-                f"{next_teamim or '(none)'} on next line — informational only."
-            )
-
         if subcase == "verbless_subj_pred_split":
             annotation = (
                 "Verbless subject + locative/PP predicate (H18.1; JM §154; WO §8.4)."
-                + teamim_note
             )
             suggested = "MERGE candidate per H18.1"
             brief = (
@@ -1432,7 +1370,6 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
             annotation = (
                 "Subject + participial predicate (H18.2; JM §121; WO §37.6 — "
                 "participle fills the slot of a finite verb)."
-                + teamim_note
             )
             suggested = "MERGE candidate per H18.2"
             brief = (
@@ -1443,7 +1380,6 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
             annotation = (
                 f"Finite verb {verb_root!r} with obligatory PP-complement "
                 "(H18.3 / M2 corpus extension)."
-                + teamim_note
             )
             suggested = "MERGE candidate per H18.3"
             brief = (

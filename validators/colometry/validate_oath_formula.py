@@ -304,55 +304,6 @@ def partition_into_verses(lines: list[str]) -> list[tuple[int | None, int | None
 # Te'amim annotation helper (informational only — NOT in trigger predicates)
 # ---------------------------------------------------------------------------
 
-_TEAMIM_NAME_BY_CHAR = {
-    "֖": "tipha",
-    "֔": "zaqef qatan",
-    "֕": "zaqef gadol",
-    "֨": "qadma",
-    "֩": "telisha qetannah",
-    "֫": "geresh",
-    "֬": "geresh muqdam",
-    "֠": "telisha gedolah",
-    "֤": "pashta",
-    "֩": "pashta",
-    "֡": "darga",
-    "֣": "munach",
-    "֥": "merkha",
-    "֦": "merkha kefulah",
-    "֧": "darga",
-    "֜": "geresh",
-    "֝": "geresh muqdam",
-    "֞": "gershayim",
-    "֟": "qarne phara",
-    "֑": "etnachta",
-    "֒": "segol",
-    "֓": "shalshelet",
-    "֮": "zarka",
-    "֭": "dehi",
-    "֛": "tevir",
-    "֢": "atnach hafukh",
-    "֪": "yetiv",
-    "֘": "zarka",
-    "֗": "revia",
-}
-
-
-def teamim_summary(line: str) -> str:
-    """Return a short informational summary of te'amim names present on `line`.
-
-    INFORMATIONAL ONLY — never consulted by trigger predicates.
-    """
-    seen: list[str] = []
-    for ch in line:
-        if "א" > ch >= "֑":
-            name = _TEAMIM_NAME_BY_CHAR.get(ch)
-            if name and name not in seen:
-                seen.append(name)
-    if not seen:
-        return ""
-    return ", ".join(seen)
-
-
 # ---------------------------------------------------------------------------
 # Per-file scanner — tag-aware via morph_alignment (skel fallback automatic)
 # ---------------------------------------------------------------------------
@@ -439,20 +390,9 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
         # --- All guards passed; emit STRONG-MERGE-CANDIDATE finding ---
         prior_text = line.strip()
         next_text = next_line.strip()
-
-        prior_teamim = teamim_summary(line)
-        next_teamim = teamim_summary(next_line)
-        teamim_note = ""
-        if prior_teamim or next_teamim:
-            teamim_note = (
-                f" Te'amim: {prior_teamim or '(none)'} on oath line, "
-                f"{next_teamim or '(none)'} on asseveration line — informational only."
-            )
-
         annotation = (
             "Oath formula skeleton (חַי + divine name/pronoun/title) split from asseveration content. "
             "Oath formulas are frozen units (canon §5 M4)."
-            + teamim_note
         )
         suggested = "MERGE candidate per M4"
         brief = f"oath formula split from asseveration — {prior_text} // {next_text}"

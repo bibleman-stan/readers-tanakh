@@ -534,52 +534,6 @@ def partition_into_verses(lines: list[str]) -> list[tuple[int | None, int | None
 # Te'amim annotation helper
 # ---------------------------------------------------------------------------
 
-_TEAMIM_NAME_BY_CHAR = {
-    "֖": "tipha",
-    "֔": "zaqef qatan",
-    "֕": "zaqef gadol",
-    "֨": "qadma",
-    "֩": "telisha qetannah",
-    "֫": "geresh",
-    "֬": "geresh muqdam",
-    "֠": "telisha gedolah",
-    "֤": "pashta",
-    "֙": "pashta",
-    "֡": "darga",
-    "֣": "munach",
-    "֥": "merkha",
-    "֦": "merkha kefulah",
-    "֧": "darga",
-    "֜": "geresh",
-    "֝": "geresh muqdam",
-    "֞": "gershayim",
-    "֟": "qarne phara",
-    "֑": "etnachta",
-    "֒": "segol",
-    "֓": "shalshelet",
-    "֮": "zarka",
-    "֭": "dehi",
-    "֛": "tevir",
-    "֢": "atnach hafukh",
-    "֪": "yetiv",
-    "֘": "zarka",
-    "֗": "revia",
-}
-
-
-def teamim_summary(line: str) -> str:
-    """Return a short informational summary of te'amim names present."""
-    seen: list[str] = []
-    for ch in line:
-        if "֑" <= ch <= "֯":
-            name = _TEAMIM_NAME_BY_CHAR.get(ch)
-            if name and name not in seen:
-                seen.append(name)
-    if not seen:
-        return ""
-    return ", ".join(seen)
-
-
 # ---------------------------------------------------------------------------
 # IR helpers — Macula lowfat construct-chain detection
 # ---------------------------------------------------------------------------
@@ -920,16 +874,6 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
         # --- Emit STRONG-MERGE-CANDIDATE finding ---
         prior_text = line.strip()
         next_text = next_line.strip()
-
-        prior_teamim = teamim_summary(line)
-        next_teamim = teamim_summary(next_line)
-        teamim_note = ""
-        if prior_teamim or next_teamim:
-            teamim_note = (
-                f" Te'amim placement: {prior_teamim or '(none)'} on construct head, "
-                f"{next_teamim or '(none)'} on rectum — informational only."
-            )
-
         if ir_confirmed_this:
             # IR confirms construct state but no NPofNP parent in the tree —
             # this is a parser-missed case not covered by validate_construct_chain.
@@ -942,7 +886,6 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
         annotation = (
             f"Bare construct-state head {construct_skel!r}{tag_note} without rectum "
             "(M3 Bare-Governor Indivisibility; canon §1; JM §129; WO §9)."
-            + teamim_note
         )
 
         brief = (

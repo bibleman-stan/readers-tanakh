@@ -457,52 +457,6 @@ def partition_into_verses(lines: list[str]) -> list[tuple[int | None, int | None
 # Te'amim annotation helper (informational only)
 # ---------------------------------------------------------------------------
 
-_TEAMIM_NAME_BY_CHAR = {
-    "֖": "tipha",
-    "֔": "zaqef qatan",
-    "֕": "zaqef gadol",
-    "֨": "qadma",
-    "֩": "telisha qetannah",
-    "֫": "geresh",
-    "֬": "geresh muqdam",
-    "֠": "telisha gedolah",
-    "֤": "pashta",
-    "֙": "pashta",
-    "֡": "darga",
-    "֣": "munach",
-    "֥": "merkha",
-    "֦": "merkha kefulah",
-    "֧": "darga",
-    "֜": "geresh",
-    "֝": "geresh muqdam",
-    "֞": "gershayim",
-    "֟": "qarne phara",
-    "֑": "etnachta",
-    "֒": "segol",
-    "֓": "shalshelet",
-    "֮": "zarka",
-    "֭": "dehi",
-    "֛": "tevir",
-    "֢": "atnach hafukh",
-    "֪": "yetiv",
-    "֘": "zarka",
-    "֗": "revia",
-}
-
-
-def teamim_summary(line: str) -> str:
-    """Return a short informational summary of te'amim names present on `line`."""
-    seen: list[str] = []
-    for ch in line:
-        if "֑" <= ch <= "֯":
-            name = _TEAMIM_NAME_BY_CHAR.get(ch)
-            if name and name not in seen:
-                seen.append(name)
-    if not seen:
-        return ""
-    return ", ".join(seen)
-
-
 # ---------------------------------------------------------------------------
 # Per-file scanner
 # ---------------------------------------------------------------------------
@@ -645,21 +599,11 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
         prior_text = line.strip()
         next_text = next_line.strip()
         combined_words = prosodic_word_count(line) + prosodic_word_count(next_line)
-
-        prior_teamim = teamim_summary(line)
-        next_teamim = teamim_summary(next_line)
-        teamim_note = ""
-        if prior_teamim or next_teamim:
-            teamim_note = (
-                f" Te'amim placement: {prior_teamim or '(none)'} on prior line, "
-                f"{next_teamim or '(none)'} on next line — informational only."
-            )
-
         annotation = (
             f"Causal כִּי clause. Prior statement: {prior_text[:80]}; "
             f"reason clause: {next_text[:80]} — "
             "may justify own line per generative justification 5 (substantive adjunct) "
-            f"or merge per atomic-thought / single-image test.{teamim_note}"
+            f"or merge per atomic-thought / single-image test."
         )
         suggested = "REVIEW candidate — editor judges causal coherence + single-image"
 

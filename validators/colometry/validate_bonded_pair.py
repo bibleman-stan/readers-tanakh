@@ -323,52 +323,6 @@ def line_has_finite_verb(line: str) -> bool:
 # Te'amim annotation helper (informational only)
 # ---------------------------------------------------------------------------
 
-_TEAMIM_NAME_BY_CHAR = {
-    "֖": "tipha",
-    "֔": "zaqef qatan",
-    "֕": "zaqef gadol",
-    "֨": "qadma",
-    "֩": "telisha qetannah",
-    "֫": "geresh",
-    "֬": "geresh muqdam",
-    "֠": "telisha gedolah",
-    "֤": "pashta",
-    "֙": "pashta",
-    "֡": "darga",
-    "֣": "munach",
-    "֥": "merkha",
-    "֦": "merkha kefulah",
-    "֧": "darga",
-    "֜": "geresh",
-    "֝": "geresh muqdam",
-    "֞": "gershayim",
-    "֟": "qarne phara",
-    "֑": "etnachta",
-    "֒": "segol",
-    "֓": "shalshelet",
-    "֮": "zarka",
-    "֭": "dehi",
-    "֛": "tevir",
-    "֢": "atnach hafukh",
-    "֪": "yetiv",
-    "֘": "zarka",
-    "֗": "revia",
-}
-
-
-def teamim_summary(line: str) -> str:
-    """Return a short informational summary of te'amim names present on `line`."""
-    seen: list[str] = []
-    for ch in line:
-        if "֑" <= ch <= "֯":
-            name = _TEAMIM_NAME_BY_CHAR.get(ch)
-            if name and name not in seen:
-                seen.append(name)
-    if not seen:
-        return ""
-    return ", ".join(seen)
-
-
 # ---------------------------------------------------------------------------
 # Per-file scanner
 # ---------------------------------------------------------------------------
@@ -461,20 +415,9 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
         # --- All guards passed; emit STRONG-MERGE-CANDIDATE finding ---
         prior_text = line.strip()
         next_text = next_line.strip()
-
-        prior_teamim = teamim_summary(line)
-        next_teamim = teamim_summary(next_line)
-        teamim_note = ""
-        if prior_teamim or next_teamim:
-            teamim_note = (
-                f" Te'amim placement: {prior_teamim or '(none)'} on prior line, "
-                f"{next_teamim or '(none)'} on next line — informational only."
-            )
-
         annotation = (
             f"M1 bonded pair: {skeleton1!r} and {skeleton2!r} — "
             f"hendiadys / merism / bonded rhetorical image (canon §3 M1)."
-            + teamim_note
         )
         suggested = "MERGE candidate per M1 (bonded pair)"
         brief = (
