@@ -564,24 +564,37 @@ def aggregate_word_gloss(morph_rows: list[dict]) -> str:
         # Replace dot-notation with spaces (Cherith morpheme separator)
         # e.g. "it.came" → "it came", "(dm).that" → "(dm) that"
         g = g.replace(".", " ")
-        # Strip ALL pure-annotation bracketed tags ANYWHERE in the string.
-        # These are morphological-annotation tags from Cherith — not natural
-        # English content. Mid-string occurrences come from dot-notation
-        # like "and.(dm)" → "and (dm)" after the above replace, where the
-        # leading-only strip below would miss them. (Stan-flagged 2026-05-02
-        # Gen 3:6 line 2 `and (dm) that was a delight ...`.)
-        # Cherith census: (et) 9303, (the) 7098, (dm) 4370, (cmp) 1106 —
-        # these four cover the bulk and are unambiguous annotations.
-        g = re.sub(r"\((?:dm|cmp|et|the)\)\s*", "", g, flags=re.IGNORECASE)
+        # Class 4 (Stan 2026-05-05): strip ALL parenthetical annotations from
+        # Macula gloss output. The annotations are scaffolding (preposition
+        # expansion `(in)`, `(into)`, `(of)`, `(to)`; ellipsis filler `(et)`;
+        # discourse marker `(dm)`; complementizer `(cmp)`; plurality hedge
+        # `(s)`; etc.) that surface as ungrammatical English noise. They
+        # belong in the interlinear layer, not the gloss layer.
+        # Cherith census (2026-05-04): (et) 9303, (the) 7098, (dm) 4370,
+        # (cmp) 1106 covered the bulk; the long tail includes (in) (into)
+        # (of) (to) (s) (eat) (die) etc. Drop all parens entirely.
+        g = re.sub(r"\([^\)]*\)\s*", "", g)
         # Skip fully trivial/empty tokens (whole gloss is a tag or blank)
         g_stripped = g.strip()
         if g_stripped.lower() in EMPTY_GLOSS_TOKENS:
             continue
-        # Skip gloss tokens that are entirely a bracketed tag "(et)", "(the)", etc.
-        if re.fullmatch(r"\([\w\s]+\)", g_stripped):
-            continue
-        # Strip bracketed-optional markers like "[was]" → keep the content word
-        g_stripped = re.sub(r"\[([^\]]+)\]", r"\1", g_stripped).strip()
+        # Strip bracketed-optional markers like "[was]" / "[has been]" → keep
+        # the content word inside. Brackets in Macula mark interpretive
+        # ellipsis-fillers (often copulas / aspectual verbs) that improve
+        # English flow when integrated as plain words. Drop the brackets,
+        # keep the content. Repeat until convergence to handle nested cases
+        # like "[was [the] one]". Then strip any UNMATCHED brackets too —
+        # Macula sometimes splits a bracketed phrase across morphemes
+        # (e.g. בְּעֶזְרִי emits "[has", "been](in)", "my.help" as three
+        # rows; the bracket characters straddle morpheme boundaries).
+        prev = None
+        while g_stripped != prev:
+            prev = g_stripped
+            g_stripped = re.sub(r"\[([^\]]*)\]", r"\1", g_stripped)
+        # Drop any leftover bracket characters (unmatched in this morpheme).
+        g_stripped = g_stripped.replace("[", "").replace("]", "")
+        # Collapse extra whitespace introduced by bracket / paren strip.
+        g_stripped = re.sub(r"\s+", " ", g_stripped).strip()
         if g_stripped:
             parts.append(g_stripped)
 
