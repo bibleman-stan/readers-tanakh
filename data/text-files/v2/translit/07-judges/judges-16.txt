@@ -5,8 +5,7 @@ vaiyavo | eleiha
 
 16:2
 la'azatim | lemor | ba | Shimshon | henah | vaiyasobu | vaiye'ervu | lo | khol | halaylah
-besha'ar | ha'ir | vaiyitchareshu | khol | halaylah | lemor
-ad | or | haboker
+besha'ar | ha'ir | vaiyitchareshu | khol | halaylah | lemor | ad | or | haboker
 vahargenuhu
 
 16:3
@@ -65,9 +64,7 @@ vechaliti | vehayiti | ke'achad | ha'adam
 16:12
 vatikach | Delilah | avotim | chadashim
 vata'asrehu | vahem
-vatomer | elav
-pelishtim | aleikha | Shimshon | veha'orev
-yoshev | bechader
+vatomer | elav | pelishtim | aleikha | Shimshon | veha'orev | yoshev | bechader
 vaynatekem | me'al | zero'otav | kachut
 
 16:13
@@ -82,7 +79,8 @@ im | hamasakhet | vetaka'ta | beyated | el | hakir | vechaliti | vehayiti | ke'a
 16:14
 vateyashenehu
 vata'arig | et | sheva | machlefot | rosho | im | hamasekhet
-vatitka | baiyated | vatomer | elav
+vatitka | baiyated
+vatomer | elav
 pelishtim | aleikha | Shimshon
 vaiyikatz | mishenato
 vaiyisa | et | haytad | ha'ereg | ve'et | hamasakhet
@@ -107,7 +105,8 @@ vechaliti | vehayiti | kekhol | ha'adam
 
 16:18
 vatere | Delilah | ki | higid | lah | et | kol | libo
-vatishlach | vatikra | lesarnei | felishtim | lemor
+vatishlach | vatikra | lesarnei | felishtim
+lemor
 alu | hapa'am
 ki | higid | lai | et | kol | libo
 ve'alu | eleiha | sarnei | felishtim
@@ -121,11 +120,9 @@ vatachel | le'anoto
 vaiyasar | kocho | me'alav
 
 16:20
-vatomer
-pelishtim | aleikha | Shimshon
+vatomer | pelishtim | aleikha | Shimshon
 vaiyikatz | mishenato
-vaiyomer
-etze | kefa'am | befa'am | ve'ina'er
+vaiyomer | etze | kefa'am | befa'am | ve'ina'er
 vehu | lo | yada | ki | Yahweh | sar | me'alav
 
 16:21
@@ -162,8 +159,7 @@ hamachazik | beyado | hanichah | oti
 vaheimisheni | et | ha'amudim | asher | habayit | nakhon | aleihem | ve'esha'en | aleihem
 
 16:27
-vehabayit | male | ha'anashim | vehanashim | veshamah
-kol | sarnei | felishtim
+vehabayit | male | ha'anashim | vehanashim | veshamah | kol | sarnei | felishtim
 ve'al | hagag | kishloshet | alafim | ish | ve'ishah | haro'im | bischok | Shimshon
 
 16:28

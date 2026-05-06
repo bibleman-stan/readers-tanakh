@@ -9,7 +9,8 @@ aseh | lekha | charvot | tzurim
 veshuv | mol | et | benei | Yisra'el | shenit
 
 5:3
-vaiya'as | lo | Yehoshua | charvot | tzurim | vaiyamol | et | benei | Yisra'el | el | giv'at | ha'aralot
+vaiya'as | lo | Yehoshua | charvot | tzurim
+vaiyamol | et | benei | Yisra'el | el | giv'at | ha'aralot
 
 5:4
 vezeh | hadavar | asher | mal | Yehoshua
@@ -34,7 +35,8 @@ ve'et | beneihem | hekim | tachtam | otam | mal | Yehoshua | ki | arelim | hayu
 ki | lo | malu | otam | badarekh
 
 5:8
-vayhi | ka'asher | tamu | khol | hagoy | lehimol
+vayhi | ka'asher | tamu | khol | hagoy
+lehimol
 vaiyeshevu | tachtam | bamachaneh | ad | chayotam
 
 5:9
@@ -64,8 +66,7 @@ vaiyelekh | Yehoshua | elav
 vaiyomer | lo | halanu | atah | im | letzareinu
 
 5:14
-vaiyomer
-lo | ki | ani | sar | tzeva | Yahweh
+vaiyomer | lo | ki | ani | sar | tzeva | Yahweh
 atah | vati
 vaiyipol | Yehoshua | el | panav | artzah | vaiyishtachu
 vaiyomer | lo | mah | adoni | medaber | el | avdo

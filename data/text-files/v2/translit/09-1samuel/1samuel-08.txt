@@ -7,7 +7,9 @@ vayhi | shem | beno | habekhor | Yo'el
 veshem | mishnehu | Aviyah | shofetim | Biv'er | Shava
 
 8:3
-velo | halekhu | vanav | bedarkhov | vaiyitu | acharei | habatza | vaiyikchu | shochad
+velo | halekhu | vanav | bedarkhov
+vaiyitu | acharei | habatza
+vaiyikchu | shochad
 vaiyatu | mishpat
 
 8:4
@@ -22,7 +24,8 @@ atah | simah | lanu | melekh | leshafetenu | kekhol | hagoyim
 
 8:6
 vaiyera | hadavar | be'einei | Shemu'el
-ka'asher | ameru | tenah | lanu | melekh | leshafetenu
+ka'asher | ameru | tenah | lanu | melekh
+leshafetenu
 vaiyitpalel | Shemu'el | el | Yahweh
 
 8:7
@@ -49,7 +52,8 @@ vaiyomer | Shemu'el | et | kol | divrei | Yahweh | el | ha'am | hasho'alim | me'
 8:11
 vaiyomer
 zeh | yihyeh | mishpat | hamelekh | asher | yimlokh
-aleikhem | et | beneikhem | yikach | vesam | lo | bemerkavto | uvefarashav
+aleikhem | et | beneikhem | yikach | vesam | lo | bemerkavto
+uvefarashav
 veratzu | lifnei | merkavto
 
 8:12
@@ -61,7 +65,9 @@ ukhelei | rikhbo
 
 8:13
 ve'et | benoteikhem
-yikach | lerakachot | uletabachot | ule'ofot
+yikach | lerakachot
+uletabachot
+ule'ofot
 
 8:14
 ve'ets | sedoteikhem | ve'et | karmeikhem | vezeiteikhem | hatovim

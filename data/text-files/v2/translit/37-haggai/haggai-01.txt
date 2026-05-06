@@ -5,12 +5,14 @@ hayah | devar | Yahweh | beyad | Chagai | hanavi | el | Zerubavel | ben | She'al
 ve'el | Yehoshua | ben | Yehotzadak | hakohen | hagadol | lemor
 
 1:2
-koh | amar | Yahweh | tzeva'ot | lemor
+koh | amar | Yahweh | tzeva'ot
+lemor
 ha'am | hazeh | ameru
 lo | et | bo | et | beit | Yahweh | lehibanot
 
 1:3
-vayhi | devar | Yahweh | beyad | Chagai | hanavi | lemor
+vayhi | devar | Yahweh | beyad | Chagai | hanavi
+lemor
 
 1:4
 ha'et | lakhem | atem | lashevet | bevateikhem | sefunim
@@ -20,7 +22,8 @@ vehabayit | hazeh | charev
 ve'atah | koh | amar | Yahweh | tzeva'ot | simu | levavkhem | al | darkheikhem
 
 1:6
-zera'tem | harbeh | vehave | me'at | akhol | ve'ein | lesave'ah | shato | ve'ein | leshakherah
+zera'tem | harbeh | vehave | me'at | akhol | ve'ein | lesave'ah | shato
+ve'ein | leshakherah
 lavoosh | ve'ein | lechom | lo
 vehammistaker | mistaker | el | tzeror | nakuv
 
@@ -44,8 +47,14 @@ al | ken | aleikhem | kal'u | shamayim | mital
 veha'aretz | kal'ah | yevulah
 
 1:11
-va'ekra | chorev | al | ha'aretz | ve'al | heharim | ve'al | hadagan | ve'al | hatiroosh | ve'al | haiyitzhar
-ve'al | asher | totzi | ha'adamah | ve'al | ha'adam | ve'al | habehemah
+va'ekra | chorev | al | ha'aretz
+ve'al | heharim
+ve'al | hadagan
+ve'al | hatiroosh
+ve'al | haiyitzhar
+ve'al | asher | totzi | ha'adamah
+ve'al | ha'adam
+ve'al | habehemah
 ve'al | kol | yegia | kapayim
 
 1:12

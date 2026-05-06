@@ -1,8 +1,7 @@
 4:1
 veha'adam | yada | et | Chavah | ishto
 vatahar | vateled | et | Kayin
-vatomer
-kaniti | ish | et | Yahweh
+vatomer | kaniti | ish | et | Yahweh
 
 4:2
 vatosef | laledet | et | achiv | et | Havel
@@ -15,7 +14,8 @@ vaiyave | Kayin | miperi | ha'adamah | minchah | Layahweh
 
 4:4
 Vehevel | hevi | gam | hu | mibekhorot | tzono | umechelvehen
-vaiyisha | Yahweh | el | Hevel | ve'el | minchato
+vaiyisha | Yahweh | el | Hevel
+ve'el | minchato
 
 4:5
 ve'el | Kayin
@@ -59,7 +59,8 @@ ki | ta'avod | et | ha'adamah | lo | tosef | tet | kochah | lakh
 na | vanad | tihyeh | va'aretz
 
 4:13
-vaiyomer | Kayin | el | Yahweh | gadol | avoni | mineso
+vaiyomer | Kayin | el | Yahweh | gadol | avoni
+mineso
 
 4:14
 hen | gerashta | oti | haiyom | me'al | penei | ha'adamah

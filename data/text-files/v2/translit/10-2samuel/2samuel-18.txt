@@ -19,12 +19,12 @@ vaiyomer | aleihem | hamelekh
 asher | yitav | be'eineikhem
 e'eseh
 vaiya'amod | hamelekh | el | yad | hasha'ar
-vekhol | ha'am | yatze'u | leme'ot | vela'alafim
+vekhol | ha'am | yatze'u | leme'ot
+vela'alafim
 
 18:5
 vaytzav | hamelekh | et | Yo'o | ve'et | Avishai | ve'et | Itai
-lemor
-le'at | li
+lemor | le'at | li
 lana'ar | Le'avshalom
 vekhol | ha'am | shame'u | betzavot | hamelekh | et | kol | hasarim | al | devar | Avshalom
 
@@ -62,7 +62,8 @@ ve'alai | latet | lekha | asarah | khesef | vachagorah | echat
 18:12
 vaiyomer | ha'ish | el | Yo'av
 velo | anokhi | shokel | al | kapai | elef | kesef | lo | eshlach | yadi
-el | ben | hamelekh | ki | ve'azeneinu | tzivah | hamelekh | otekha | ve'et | Avishai | ve'et | Itai | lemor
+el | ben | hamelekh | ki | ve'azeneinu | tzivah | hamelekh | otekha | ve'et | Avishai | ve'et | Itai
+lemor
 shimru | mi | bana'ar | Be'avshalom
 
 18:13
@@ -118,7 +119,8 @@ vaiyarotz
 vaiyosef | od | Achima'atz | ben | Tzadok
 vaiyomer | el | Yo'av
 vihi | mah | arutzah | na | gam | ani
-acharei | hakushi | vaiyomer | Yo'av | lamah | zeh | atah | ratz | beni | ulekhah
+acharei | hakushi | vaiyomer | Yo'av | lamah | zeh | atah | ratz | beni
+ulekhah
 ein | besorah | motzet
 
 18:23
@@ -130,8 +132,8 @@ vaiya'avor | et | hakushi
 18:24
 Vedavid | yoshev | bein | shenei | hashe'arim
 vaiyelekh | hatzopeh | el | gag | hasha'ar | el | hachomah
-vaiyisa | et | einav | vaiyar | vehineh | ish
-ratz | levado
+vaiyisa | et | einav
+vaiyar | vehineh | ish | ratz | levado
 
 18:25
 vaiyikra | hatzopeh
@@ -174,8 +176,7 @@ vaiya'amod
 
 18:31
 vehineh | hakushi | ba
-vaiyomer
-hakushi | yitbaser | adoni | hamelekh
+vaiyomer | hakushi | yitbaser | adoni | hamelekh
 ki | shefatekha | Yahweh | haiyom | miyad | kol | hakamim | aleikha
 
 18:32

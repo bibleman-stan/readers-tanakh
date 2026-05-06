@@ -1,5 +1,6 @@
 29:1
-vaiyisa | Ya'ako | raglav | vaiyelekh | artzah | venei | kedem
+vaiyisa | Ya'ako | raglav
+vaiyelekh | artzah | venei | kedem
 
 29:2
 vaiyar | vehineh | ve'er | basadeh | vehineh | sham | sheloshah | edrei | tzon | roetzim | aleiha
@@ -30,8 +31,7 @@ hen | od | haiyom | gadol | lo | et | he'asef | hamikneh
 hashku | hatzon | ulekhu | re'u
 
 29:8
-vaiyomeru
-lo | nukhal
+vaiyomeru | lo | nukhal
 ad | asher | ye'asefu | kol | ha'adarim | vegalalu | et | ha'even
 me'al | pi | habe'er
 vehishkinu | hatzon
@@ -58,7 +58,9 @@ vekhi | ven | Rivkah | hu | vatarotz
 vataged | le'aviha
 
 29:13
-vayhi | khishmoa | Lavan | et | shema | Ya'ako | ben | achoto | vaiyarotz | likrato | vaychabek | lo | vaynashek | lo
+vayhi | khishmoa | Lavan | et | shema | Ya'ako | ben | achoto | vaiyarotz | likrato
+vaychabek | lo
+vaynashek | lo
 vayvi'ehu | el | beito
 vaysaper | Lelavan | et | kol | hadevarim | ha'eleh
 
@@ -137,7 +139,8 @@ sheva | shanim | acherot
 
 29:28
 vaiya'as | Ya'ako | ken
-vaymale | shevua | zot | vaiyiten | lo | et | Rachel | bito | lo | le'ishah
+vaymale | shevua | zot
+vaiyiten | lo | et | Rachel | bito | lo | le'ishah
 
 29:29
 vaiyiten | Lavan | Lerachel | bito | et | Bilhah | shifchato | lah | leshifchah
@@ -161,9 +164,9 @@ ki | atah | ye'ehavani | ishi
 29:33
 vatahar | od
 vateled | ben
-vatomer
-ki | shama | Yahweh | ki | senu'ah | anokhi
-vaiyiten | li | gam | et | zeh | vatikra | shemo | Shim'on
+vatomer | ki | shama | Yahweh | ki | senu'ah | anokhi
+vaiyiten | li | gam | et | zeh
+vatikra | shemo | Shim'on
 
 29:34
 vatahar | od

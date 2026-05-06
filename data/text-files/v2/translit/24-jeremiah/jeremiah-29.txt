@@ -1,6 +1,8 @@
 29:1
 ve'eleh | divrei | hasefer | asher | shalach | Yirmeyah | hanavi
-Mirushalim | el | yeter | ziknei | hagolah | ve'el | hakohanim | ve'el | hanevi'im
+Mirushalim | el | yeter | ziknei | hagolah
+ve'el | hakohanim
+ve'el | hanevi'im
 ve'el | kol | ha'am | asher | heglah | Nevukhadnetzar | Mirushalim | Bavelah
 
 29:2
@@ -85,7 +87,9 @@ venatati | otam | kate'enim | hasho'arim | asher | lo | te'akhalnah | meroa
 
 29:18
 veradafti | achareihem | bacherev | bara'av
-uvadaver | unetatim | lizva'ah | lekhol | mamlekhot | ha'aretz | le'alah | uleshamah | velishrekah
+uvadaver | unetatim | lizva'ah | lekhol | mamlekhot | ha'aretz | le'alah
+uleshamah
+velishrekah
 ulecherpah | bekhol | hagoyim | asher | hidachtim | sham
 
 29:19
@@ -115,7 +119,8 @@ ve'anokhi | huyodea | va'ed | ne'um | Yahweh
 ve'el | Shema'yahu | hanechelami | tomar | lemor
 
 29:25
-koh | amar | Yahweh | tzeva'ot | elohei | Yisra'el | lemor
+koh | amar | Yahweh | tzeva'ot | elohei | Yisra'el
+lemor
 ya'an | asher | atah | shalachta | veshimkhah | sefarim | el | kol | ha'am | asher | Birushalim
 ve'el | Tzefanyah | ven | Ma'aseyah | hakohen
 ve'el | kol | hakohanim | lemor
@@ -123,13 +128,15 @@ ve'el | kol | hakohanim | lemor
 29:26
 Yahweh | netanekha | khohen | tachat | Yehoyada | hakohen
 lihyot | pekidim | beit | Yahweh | lekhol | ish | meshuga
-umitnabe | venatatah | oto | el | hamahpekhet | ve'el | hatzinok
+umitnabe | venatatah | oto | el | hamahpekhet
+ve'el | hatzinok
 
 29:27
 ve'atah | lamah | lo | ga'arta | Beyirmeyahu | ha'anetoti | hamitnabe | lakhem
 
 29:28
-ki | al | ken | shalach | eleinu | Bavel | lemor
+ki | al | ken | shalach | eleinu | Bavel
+lemor
 arukah | hi
 benu | vatim | veshevu | venit'u | ganot
 ve'ikhlu | et | perihen
@@ -138,7 +145,8 @@ ve'ikhlu | et | perihen
 vaiyikra | Tzefanyah | hakohen | et | hasefer | hazeh | be'azenei | Yirmeyahu | hanavi
 
 29:30
-vayhi | devar | Yahweh | el | Yirmeyahu | lemor
+vayhi | devar | Yahweh | el | Yirmeyahu
+lemor
 
 29:31
 shelach | al | kol | hagolah | lemor | koh | amar | Yahweh | el | Shema'yah | hanechelami
@@ -146,7 +154,8 @@ ya'an | asher | Niba | lakhem | Shema'yah | va'ani | lo | shelachtiv
 vaiyavtach | etkhem | al | shaker
 
 29:32
-lakhen | koh | amar | Yahweh | hini | foked | al | Shema'yah | hanechelami | ve'al | zar'o
+lakhen | koh | amar | Yahweh | hini | foked | al | Shema'yah | hanechelami
+ve'al | zar'o
 lo | yihyeh | lo | ish | yoshev | betokh | ha'am | hazeh
 velo | yir'eh | vatov | asher | ani | oseh | le'ami | ne'um | Yahweh
 ki | sarah | diber | al | Yahweh

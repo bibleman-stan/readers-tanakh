@@ -1,5 +1,6 @@
 15:1
-vaydaber | Yahweh | el | Mosheh | lemor
+vaydaber | Yahweh | el | Mosheh
+lemor
 
 15:2
 daber | el | benei | Yisra'el
@@ -74,7 +75,8 @@ yihyeh | lakhem
 velager | hagar | itekhem
 
 15:17
-vaydaber | Yahweh | el | Mosheh | lemor
+vaydaber | Yahweh | el | Mosheh
+lemor
 
 15:18
 daber | el | benei | Yisra'el
@@ -86,8 +88,7 @@ vehayah | ba'akhalekhem
 milechem | ha'aretz | tarimu | terumah | Layahweh
 
 15:20
-reshit | arisotekhem | chalah
-tarimu | terumah
+reshit | arisotekhem | chalah | tarimu | terumah
 kitrumat | goren | ken | tarimu | otah
 
 15:21
@@ -113,7 +114,8 @@ venislach | lahem | ki | shegagah | hi
 vehem | hevi'u | et | karebanam | isheh | Layahweh | vechatatam | lifnei | Yahweh | al | shigatam
 
 15:26
-venislach | lekhol | adat | benei | Yisra'el | velager
+venislach | lekhol | adat | benei | Yisra'el
+velager
 hagar | betokham
 ki | lekhol | ha'am | bishgagah
 
@@ -131,7 +133,8 @@ hagar | betokham
 torah | achat | yihyeh | lakhem | la'oseh | bishgagah
 
 15:30
-vehanefesh | asher | ta'aseh | beyad | ramah | min | ha'ezrach | umin | hager | et | Yahweh
+vehanefesh | asher | ta'aseh | beyad | ramah | min | ha'ezrach
+umin | hager | et | Yahweh
 hu | megadef | venikhretah | hanefesh | hahiv | mikerev | amah
 
 15:31
@@ -144,7 +147,8 @@ vaiyimtze'u | ish | mekoshesh | etzim | beyom | hashabat
 
 15:33
 vaiyakrivu | oto
-hamotze'im | oto | mekoshesh | etzim | el | Mosheh | ve'el | Aharon
+hamotze'im | oto | mekoshesh | etzim | el | Mosheh
+ve'el | Aharon
 ve'el | kol | ha'edah
 
 15:34
@@ -163,7 +167,8 @@ vaiyamot
 ka'asher | tzivah | Yahweh | et | Mosheh
 
 15:37
-vaiyomer | Yahweh | el | Mosheh | lemor
+vaiyomer | Yahweh | el | Mosheh
+lemor
 
 15:38
 daber | el | benei | Yisra'el | ve'amarta | alehem | ve'asu | lahem | tzitzit | al | kanfei | vigdeihem

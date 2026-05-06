@@ -1,5 +1,6 @@
 20:1
-vaydaber | Yahweh | el | Mosheh | lemor
+vaydaber | Yahweh | el | Mosheh
+lemor
 
 20:2
 ve'el | benei | Yisra'el | tomar | ish | ish | mibenei | Yisra'el
@@ -17,7 +18,8 @@ betito | mizar'o | Lamolekh | levilti
 hamit | oto
 
 20:5
-vesamti | ani | et | panai | ba'ish | hahu | uvemishpachto
+vesamti | ani | et | panai | ba'ish | hahu
+uvemishpachto
 vehikhrati | oto | ve'et | kol | hazonim | acharav
 liznot | acharei | Hamolekh | mikerev | amam
 
@@ -116,8 +118,10 @@ asher | hivdalti | etkhem | min | ha'amim
 20:25
 vehivdaltem | bein | habehemah | hatehorah | lateme'ah
 uvein | ha'of | hatame | latahor
-velo | teshaketzu | et | nafshoteikhem | babehemah | uva'of
-uvekhol | asher | tirmos | ha'adamah | asher | hivdalti | lakhem | letame
+velo | teshaketzu | et | nafshoteikhem | babehemah
+uva'of
+uvekhol | asher | tirmos | ha'adamah | asher | hivdalti | lakhem
+letame
 
 20:26
 vihyitem | li | kedoshim | ki | kadoosh | ani | Yahweh

@@ -1,6 +1,7 @@
 14:1
 vayhi | haiyom | vaiyomer | Yonatan | ben | Sha'ul | el | hana'ar | nose | khelav
-lekhah | vena'berah | el | matzav | pelishtim | asher | me'ever | halaz | ule'aviv
+lekhah | vena'berah | el | matzav | pelishtim | asher | me'ever | halaz
+ule'aviv
 lo | higid
 
 14:2
@@ -48,7 +49,8 @@ ve'im | koh | yomeru | alu | aleinu
 ve'alinu | ki | netanam | Yahweh | beyadenu | vezeh | lanu | ha'ot
 
 14:11
-vaiyigalu | sheneihem | el | matzav | pelishtim | vaiyomeru | felishtim
+vaiyigalu | sheneihem | el | matzav | pelishtim
+vaiyomeru | felishtim
 hineh | ivrim | yotze'im | min | hachorim | asher | hitchabe'u | sham
 
 14:12
@@ -115,7 +117,8 @@ vehamilchamah | averah | et | Beit | Aven
 
 14:24
 ve'ish | Yisra'el | Nigas
-baiyom | hahu | vaiyo'el | Sha'ul | et | ha'am | lemor
+baiyom | hahu | vaiyo'el | Sha'ul | et | ha'am
+lemor
 arur | ha'ish | asher | yokhal | lechem | ad | ha'erev | venikamti | me'oyevai
 velo | ta'am | kol | ha'am | lachem
 
@@ -135,7 +138,8 @@ vataronah | einav
 
 14:28
 vaiya'an | ish | meha'am
-vaiyomer | hashbea | hishbia | avikha | et | ha'am | lemor
+vaiyomer | hashbea | hishbia | avikha | et | ha'am
+lemor
 arur | ha'ish | asher | yokhal | lechem
 haiyom | vaiya'af | ha'am
 
@@ -155,7 +159,8 @@ vaiya'af | ha'am | me'od
 
 14:32
 vaiya'as | ha'am | el | hashalal
-vaiyikchu | tzon | uvakar | uvenei | vakar | vaiyishchatu | aretzah
+vaiyikchu | tzon | uvakar | uvenei | vakar
+vaiyishchatu | aretzah
 vaiyokhal | ha'am | al | hadam
 
 14:33
@@ -167,7 +172,8 @@ begadtem | golu | elai | haiyom | even | gedolah
 vaiyomer | Sha'ul
 putzu | va'am | va'amartem | lahem | hagishu | elai | ish | shoro | ve'ish | seyehu | ushechatem | bazeh | va'akhaltem
 velo | techet'u | Layahweh | le'ekhol | el | hadam
-vaiyagishu | khol | ha'am | ish | shoro | veyadov | halaylah | vaiyishchatu | sham
+vaiyagishu | khol | ha'am | ish | shoro | veyadov | halaylah
+vaiyishchatu | sham
 
 14:35
 vaiyiven | Sha'ul | mizbeach | Layahweh
@@ -244,7 +250,9 @@ ufelishtim | halekhu | limkomam
 
 14:47
 Vesha'ul | lakhad | hamelukhah | al | Yisra'el
-vaiyilachem | saviv | bekhol | oyevav | Bemo'av | uvivnei | Amon | Uve'edom
+vaiyilachem | saviv | bekhol | oyevav | Bemo'av
+uvivnei | Amon
+Uve'edom
 uvemalkhei | Tzovah | uvapelishtim
 uvekhol | asher | yifneh | yarshia
 

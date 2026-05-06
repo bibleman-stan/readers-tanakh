@@ -59,7 +59,8 @@ vaiyomer | Uriyah | el | David | ha'aron | Veyisra'el
 Vihudah | yoshevim | basukot
 vadoni | Yo'av
 ve'avdei | adoni | al | penei | hasadeh | chonim
-va'ani | avo | el | beiti | le'ekhol | velishtot
+va'ani | avo | el | beiti | le'ekhol
+velishtot
 velishkav | im | ishti | chaiyekha | vechei | nafshekha
 im | e'eseh | et | hadavar | hazeh
 
@@ -67,12 +68,14 @@ im | e'eseh | et | hadavar | hazeh
 vaiyomer | David | el | Uriyah
 shev | bazeh | gam | haiyom
 umachar | ashalecheka
-vaiyeshev | Uriyah | Virushalim | baiyom | hahu | umimochorat
+vaiyeshev | Uriyah | Virushalim | baiyom | hahu
+umimochorat
 
 11:13
 vaiyikra | lo | David | vaiyokhal | lefanav | vaiyeshet
 vayshakerehu
-vaiyetze | va'erev | lishkav | bemishkavo | im | avdei | adonav | ve'el | beito
+vaiyetze | va'erev | lishkav | bemishkavo | im | avdei | adonav
+ve'el | beito
 lo | yarad
 
 11:14
@@ -145,4 +148,5 @@ vaiya'avor | ha'evel
 vaiyishlach | David
 vaiya'asfah | el | beito
 vatehi | lo | le'ishah
-vateled | lo | ben | vaiyera | hadavar | asher | asah | David | be'einei | Yahweh
+vateled | lo | ben
+vaiyera | hadavar | asher | asah | David | be'einei | Yahweh

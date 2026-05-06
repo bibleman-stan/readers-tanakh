@@ -1,8 +1,7 @@
 1:1
 vayhi | acharei | mot | Yehoshua
 vaiyish'alu | benei | Yisra'el | Bayahweh
-lemor
-mi | ya'aleh | lanu | el | hakena'ani | batechilah
+lemor | mi | ya'aleh | lanu | el | hakena'ani | batechilah
 lehilachem | bo
 
 1:2
@@ -95,7 +94,8 @@ vaiyilkod | Yehudah | et | Azah | ve'et | gevulah | ve'et | Ashkelon | ve'et | g
 
 1:19
 vayhi | Yahweh | et | Yehudah
-vaiyoresh | et | hahar | ki | lo | lehorish | et | yoshevei | ha'emek
+vaiyoresh | et | hahar | ki | lo
+lehorish | et | yoshevei | ha'emek
 ki | rekhev | barzel | lahem
 
 1:20
@@ -129,7 +129,8 @@ vaiyikra | shemah | Luz
 hu | shemah | ad | haiyom | hazeh
 
 1:27
-velo | horish | Menasheh | et | Beit | She'an | ve'et | benoteiha | ve'et | Ta'nakh | ve'et | benoteiha | ve'et | yoshev | Dor | ve'et | benoteiha | ve'et | yoshevei | Yivle'am | ve'et | benoteiha | ve'et | yoshevei | Megido | ve'et | benoteiha | vaiyo'el | hakena'ani | lashevet | ba'aretz | hazot
+velo | horish | Menasheh | et | Beit | She'an | ve'et | benoteiha | ve'et | Ta'nakh | ve'et | benoteiha | ve'et | yoshev | Dor | ve'et | benoteiha | ve'et | yoshevei | Yivle'am | ve'et | benoteiha | ve'et | yoshevei | Megido | ve'et | benoteiha | vaiyo'el | hakena'ani
+lashevet | ba'aretz | hazot
 
 1:28
 vayhi | ki | chazak | Yisra'el

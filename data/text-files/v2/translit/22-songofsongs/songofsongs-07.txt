@@ -1,19 +1,14 @@
 7:1
 shuvi | shuvi | hashulamit
-shuvi | shuvi
-venechezeh | bakh
-mah | techezu | bashulamit
-kimcholat | Hamachanayim
+shuvi | shuvi | venechezeh | bakh
+mah | techezu | bashulamit | kimcholat | Hamachanayim
 
 7:2
-mah | yafu | fe'amayikh | bane'alim | bat | nadiv
-chamukei | yerekhayikh
-kemo | chala'im
-ma'aseh | yedei | aman
+mah | yafu | fe'amayikh | bane'alim | bat | nadiv | chamukei | yerekhayikh
+kemo | chala'im | ma'aseh | yedei | aman
 
 7:3
-sharerekh | agan | hasahar
-al | yechsar | hamazeg
+sharerekh | agan | hasahar | al | yechsar | hamazeg
 bitnekh | aremat | chitim | sugah | bashoshanim
 
 7:4
@@ -21,8 +16,7 @@ shenei | shadayikh | kishnei | ofarim
 to'omei | tzeviyah
 
 7:5
-tzavarekh
-kemigdal | hashen
+tzavarekh | kemigdal | hashen
 einayikh | berekhot | Becheshbon | al | sha'ar | Bat | Rabim | apekh | kemigdal | Halevanon | tzopeh
 penei | Damasek
 
@@ -59,8 +53,7 @@ lekhah | dodi | netze | hasadeh | nalinah | bakefarim
 nashkimah | lakeramim
 nir'eh | im | parechah | hagefen | pitach | hasemadar
 henetzu | harimonim
-sham | eten | et | dodai
-lakh
+sham | eten | et | dodai | lakh
 
 7:14
 haduda'im | natenu | reiach | ve'al | petacheinu | kol | megadim | chadashim | gam | yeshanim | dodi

@@ -24,7 +24,8 @@ vayhi | me'az | hifkid | oto | beveito
 ve'al | kol | asher | yesh | lo
 vayvarekh | Yahweh | et | beit | hamitzri
 biglal | Yosef
-vayhi | birkat | Yahweh | bekhol | asher | yesh | lo | babayit | uvasadeh
+vayhi | birkat | Yahweh | bekhol | asher | yesh | lo | babayit
+uvasadeh
 
 39:6
 vaiya'azo | kol | asher | lo | beyad | Yosef
@@ -34,8 +35,7 @@ vayhi | Yosef | yefeh | to'ar | vipeh | mar'eh
 39:7
 vayhi | achar | hadevarim | ha'eleh
 vatisa | eshet | adonav | et | eineiha | el | Yosef
-vatomer
-shikhvah | imi
+vatomer | shikhvah | imi
 
 39:8
 vayma'en | vaiyomer | el | eshet | adonav
@@ -83,7 +83,8 @@ vaiyetze | hachutzah
 vatanach | bigdo | etzlah | ad | bo | adonav | el | beito
 
 39:17
-vatedaber | elav | kadevarim | ha'eleh | lemor
+vatedaber | elav | kadevarim | ha'eleh
+lemor
 ba | elai | ha'eved | ha'ivri | asher | heveta | lanu
 letzachek | bi
 

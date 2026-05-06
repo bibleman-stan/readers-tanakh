@@ -1,5 +1,6 @@
 30:1
-vayhi | bevo | David | va'anashav | Tziklag | baiyom | hashelishi | va'amalki | fashetu | el | Negev | ve'el | Tziklag
+vayhi | bevo | David | va'anashav | Tziklag | baiyom | hashelishi | va'amalki | fashetu | el | Negev
+ve'el | Tziklag
 vaiyaku | et | Tziklag
 vaiyisrefu | otah | ba'esh
 
@@ -15,15 +16,18 @@ unesheihem | uveneihem | uvenoteihem | Nishbu
 
 30:4
 vaiyisa | David | veha'am | asher | ito | et | kolam
-vaiyivku | ad | asher | ein | bahem | koach | livkot
+vaiyivku | ad | asher | ein | bahem | koach
+livkot
 
 30:5
 ushetei | neshei | David | Nishbu | Achino'am | haiyizre'elit
 Va'avigayil | eshet | Naval | hakarmeli
 
 30:6
-vatetzer | Ledavid | me'od | ki | ameru | ha'am | lesakelo
-ki | marah | nefesh | kol | ha'am | ish | al | benov | ve'al | benotav
+vatetzer | Ledavid | me'od | ki | ameru | ha'am
+lesakelo
+ki | marah | nefesh | kol | ha'am | ish | al | benov
+ve'al | benotav
 vaiyitchazek | David | Bayahweh | elohav
 
 30:7
@@ -98,20 +102,23 @@ vaiyatzel | David | et | kol | asher | lakechu
 Amalek | ve'et | shetei | nashav | hitzil | David
 
 30:19
-velo | Ne'dar | lahem | min | hakaton | ve'ad | hagadol | ve'ad | banim | uvanot | umishalal
+velo | Ne'dar | lahem | min | hakaton
+ve'ad | hagadol
+ve'ad | banim | uvanot
+umishalal
 ve'ad | kol | asher | lakechu | lahem
 hakol | heshiv | David
 
 30:20
 vaiyikach | David | et | kol | hatzon | vehabakar | nahagu | lifnei | hamikneh | hahu
-vaiyomeru
-zeh | shelal | David
+vaiyomeru | zeh | shelal | David
 
 30:21
 vaiyavo | David | el | matayim | ha'anashim | asher | pigeru
 milekhet | acharei | David
 vaiyoshivum | benachal | Habesor
-vaiyetze'u | likrat | David | velikrat
+vaiyetze'u | likrat | David
+velikrat
 ha'am | asher | ito | vaiyigash | David | et | ha'am
 vaiyish'al | lahem | leshalom
 
@@ -143,7 +150,8 @@ ulemishpat | Leyisra'el | ad | haiyom | hazeh
 
 30:26
 vaiyavo | David | el | Tziklag
-vayshalach | mehashalal | leziknei | Yehudah | lere'ehu | lemor
+vayshalach | mehashalal | leziknei | Yehudah | lere'ehu
+lemor
 hineh | lakhem | berakhah | mishelal | oyevei | Yahweh
 
 30:27

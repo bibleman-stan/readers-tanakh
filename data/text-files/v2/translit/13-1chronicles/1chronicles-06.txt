@@ -6,7 +6,10 @@ Kehat | Umerari
 ve'eleh | shemot | benei | Gereshom | Livni | Veshim'i
 
 6:3
-uvenei | Kehat | Amram | Veyitzhar | Vechevron | Ve'uzi'el
+uvenei | Kehat | Amram
+Veyitzhar
+Vechevron
+Ve'uzi'el
 
 6:4
 benei | Merari | Machli | Umushi
@@ -177,7 +180,8 @@ umimateh | Menasheh | Babashan | arim
 shelosh | esreh
 
 6:48
-livnei | Merari | lemishpechotam | mimateh | Re'uven | umimateh | Gad
+livnei | Merari | lemishpechotam | mimateh | Re'uven
+umimateh | Gad
 umimateh | Zevulun | bagoral | arim
 sheteim | esreh
 

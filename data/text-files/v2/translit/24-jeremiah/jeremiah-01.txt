@@ -10,7 +10,8 @@ melekh | Yehudah | bishlosh | esreh | shanah | lemalekho
 vayhi | bimei | Yehoyakim | ben | Yoshiyahu | melekh | Yehudah | ad | tom | ashtei | esreh | shanah | Letzidkiyahu | ven | Yoshiyahu | melekh | Yehudah | ad | gelot | Yerushalim | bachodesh | hachamishi
 
 1:4
-vayhi | devar | Yahweh | elai | lemor
+vayhi | devar | Yahweh | elai
+lemor
 
 1:5
 beterem | etzorkha | vabeten | yeda'tikha
@@ -39,18 +40,22 @@ hineh | natati | devarai | befikha
 
 1:10
 re'eh | hifkadticha | haiyom | hazeh | al | hagoyim
-ve'al | hamamlakhot | lintoosh | velintotz | uleha'avid
+ve'al | hamamlakhot | lintoosh
+velintotz
+uleha'avid
 velaharos | livnot | velintoa
 
 1:11
-vayhi | devar | Yahweh | elai | lemor | mah | atah | ro'eh | Yirmeyahu | va'omar | makel | shaked | ani | ro'eh
+vayhi | devar | Yahweh | elai
+lemor | mah | atah | ro'eh | Yirmeyahu | va'omar | makel | shaked | ani | ro'eh
 
 1:12
 vaiyomer | Yahweh | elai
 heitavta | lir'ot | ki | shoked | ani | al | devari | la'asoto
 
 1:13
-vayhi | devar | Yahweh | elai | shenit | lemor
+vayhi | devar | Yahweh | elai | shenit
+lemor
 mah | atah | ro'eh | va'omar | sir | nafuach | ani | ro'eh
 ufanav | mipenei | tzafonah
 
@@ -81,4 +86,5 @@ ule'am | ha'aretz
 
 1:19
 venilchamu | eleikha
-velo | yukhelu | lakh | ki | itekha | ani | ne'um | Yahweh | lehatzilekha
+velo | yukhelu | lakh | ki | itekha | ani | ne'um | Yahweh
+lehatzilekha

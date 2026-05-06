@@ -1,5 +1,6 @@
 15:1
-achar | hadevarim | ha'eleh | hayah | devar | Yahweh | el | Avram | bamachazeh | lemor
+achar | hadevarim | ha'eleh | hayah | devar | Yahweh | el | Avram | bamachazeh
+lemor
 al | tira | Avram | anokhi | magen | lakh | sekharekha | harbeh | me'od
 
 15:2
@@ -19,8 +20,7 @@ ki | im | asher | yetze | mime'eikha | hu | yirashekha
 
 15:5
 vaiyotze | oto | hachutzah
-vaiyomer
-habet | na | hashamaymah | usefor | hakokhavim
+vaiyomer | habet | na | hashamaymah | usefor | hakokhavim
 im | tukhal
 lispor | otam
 vaiyomer | lo
@@ -40,7 +40,10 @@ bamah | eda | ki | irashenah
 
 15:9
 vaiyomer | elav
-kechah | li | eglah | meshuleshet | ve'ez | meshuleshet | ve'ayil | meshulash | vetor | vegozal
+kechah | li | eglah | meshuleshet
+ve'ez | meshuleshet | ve'ayil | meshulash
+vetor
+vegozal
 
 15:10
 vaiyikach | lo | et | kol | eleh
@@ -81,7 +84,8 @@ vehineh | tanur | ashan | velapid | esh | asher | avar
 bein | hagezarim | ha'eleh
 
 15:18
-baiyom | hahu | karat | Yahweh | et | Avram | berit | lemor
+baiyom | hahu | karat | Yahweh | et | Avram | berit
+lemor
 lezar'akha | natati | et | ha'aretz | hazot | minehar | Mitzrayim | ad | hanahar | hagadol | nehar | Perat
 
 15:19

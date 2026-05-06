@@ -3,7 +3,8 @@ vaiyered | Shimshon | Timnatah
 vaiyar | ishah | Betimnatah | mibenot | pelishtim
 
 14:2
-vaiya'al | vaiyaged | le'aviv | ule'imo
+vaiya'al | vaiyaged | le'aviv
+ule'imo
 vaiyomer | ishah
 ra'iti | Vetimnatah | mibenot | pelishtim
 ve'atah | kechu | otah | li | le'ishah
@@ -64,13 +65,11 @@ vaiyihyu | ito
 14:12
 vaiyomer | lahem | Shimshon | achudah | na | lakhem | chidah
 im | haged | tagidu | otah | li | shiv'at | yemei | hamishteh | umetzatem
-venatati | lakhem | sheloshim | sedinim | usheloshim
-chalifot | begadim
+venatati | lakhem | sheloshim | sedinim | usheloshim | chalifot | begadim
 
 14:13
 ve'im | lo | tukhelu | lehagid | li
-unetatem | atem | li | sheloshim | sedinim | usheloshim
-chalifot | begadim
+unetatem | atem | li | sheloshim | sedinim | usheloshim | chalifot | begadim
 vaiyomeru | lo
 chudah | chidatekha | venishma'enah
 
@@ -87,8 +86,7 @@ halyareshenu | keratem | lanu | halo
 
 14:16
 vatevek | eshet | Shimshon | alav
-vatomer
-rak | senetani | velo | ahavtani
+vatomer | rak | senetani | velo | ahavtani
 hachidah | chadta | livnei | ami
 veli | lo | higadtah
 vaiyomer | lah
@@ -113,7 +111,8 @@ vatitzlach | alav | ruach | Yahweh
 vaiyered | Ashkelon
 vaiyakh | mehem | sheloshim | ish
 vaiyikach | et | chalitzotam
-vaiyiten | hachalifot | lemagidei | hachidah | vaiyichar | apo
+vaiyiten | hachalifot | lemagidei | hachidah
+vaiyichar | apo
 vaiya'al | beit | avihu
 
 14:20

@@ -1,7 +1,6 @@
 2:1
 vayhi | acharei | khen | vaiyish'al | David | Bayahweh
-lemor
-ha'e'eleh | be'achat | arei | Yehudah
+lemor | ha'e'eleh | be'achat | arei | Yehudah
 vaiyomer | Yahweh | elav
 aleh
 vaiyomer | David
@@ -42,7 +41,12 @@ lakach | et | Ish | Boshet | ben | Sha'ul
 vaiya'avirehu | Machanayim
 
 2:9
-vaiyamlikhehu | el | Hagil'ad | ve'el | ha'ashuri | ve'el | Yizre'el | ve'al | Efrayim | ve'al | Binyamin | ve'al | Yisra'el | kuloh
+vaiyamlikhehu | el | Hagil'ad
+ve'el | ha'ashuri
+ve'el | Yizre'el
+ve'al | Efrayim
+ve'al | Binyamin
+ve'al | Yisra'el | kuloh
 
 2:10
 ben | arba'im | shanah | Ish | Boshet | ben | Sha'ul | bemalekho | al | Yisra'el
@@ -93,15 +97,15 @@ ve'al | hasemol | me'acharei | Avner
 
 2:20
 vaiyifen | Avner | acharav
-vaiyomer
-ha'atah | zeh | Asah'el
+vaiyomer | ha'atah | zeh | Asah'el
 vaiyomer | anokhi
 
 2:21
 vaiyomer | lo | Avner
 neteh | lekha | al | yeminekha | o | al | semolekha
 ve'echoz | lekha | echad | mehane'arim
-vekach | lekha | et | chalitzato | velo | avah | Asah'el | lasur | me'acharav
+vekach | lekha | et | chalitzato | velo | avah | Asah'el
+lasur | me'acharav
 
 2:22
 vaiyosef | od | Avner | lemor | el | Asah'el
@@ -111,7 +115,8 @@ ve'eikh | esa | fanai | el | Yo'av | achikha
 2:23
 vayma'en | lasur
 vaiyakehu | Avner | be'acharei | hachanit | el | hachomesh
-vatetze | hachanit | me'acharav | vaiyipol | sham
+vatetze | hachanit | me'acharav
+vaiyipol | sham
 vaiyamot | tachatov | vayhi | kol | haba | el | hamakom | asher | nafal | sham | Asah'el | vaiyamot
 vaiya'amodu
 

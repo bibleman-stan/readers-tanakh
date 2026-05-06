@@ -28,7 +28,8 @@ lekhol | beit | Yisra'el | yihyeh
 velanasi | mizeh
 umizeh | litrumat | hakodesh
 vela'achuzat | ha'ir | el | penei | terumat | hakodesh
-ve'el | penei | achuzat | ha'ir | mipe'at | yam | yamah | umipe'at | kedemah | kadimah
+ve'el | penei | achuzat | ha'ir | mipe'at | yam | yamah
+umipe'at | kedemah | kadimah
 ve'orekh | le'umot | achad | hachalakim | migevul | yam | el | gevul | kadimah
 
 45:8
@@ -68,7 +69,8 @@ vechok | hashemen | habat | hashemen | ma'sar | habat | min | hakor
 aseret | habatim | chomer | ki | aseret | habatim | chomer
 
 45:15
-veseh | achat | min | hatzon | min | hamatayim | mimashkeh | Yisra'el | leminchah | ule'olah
+veseh | achat | min | hatzon | min | hamatayim | mimashkeh | Yisra'el | leminchah
+ule'olah
 velishlamim | lekhaper | aleihem
 ne'um | Adonai | Yahweh
 
@@ -76,7 +78,8 @@ ne'um | Adonai | Yahweh
 kol | ha'am | ha'aretz | yihyu | el | haterumah | hazot | lanasi | Beyisra'el
 
 45:17
-ve'al | hanasi | yihyeh | ha'olot | vehaminchah | vehanesekh | bachagim | uvechodashim
+ve'al | hanasi | yihyeh | ha'olot | vehaminchah | vehanesekh | bachagim
+uvechodashim
 uvashabatot | bekhol | mo'adei | beit | Yisra'el
 hu | ya'aseh | et | hachatat | ve'et | haminchah | ve'et | ha'olah | ve'et | hashelamim
 lekhaper | be'ad | beit | Yisra'el
@@ -114,4 +117,6 @@ veshemen | hin | la'eifah
 
 45:25
 bashevi'i | bachamishah | asar | yom | lachodesh | bechag
-ya'aseh | kha'eleh | shiv'at | haiyamim | kachatat | ka'olah | vekhaminchah | vekhashamen
+ya'aseh | kha'eleh | shiv'at | haiyamim | kachatat | ka'olah
+vekhaminchah
+vekhashamen

@@ -1,6 +1,7 @@
 9:1
 uvishneim | asar | chodesh | hu | chodesh | Adar | bishloshah | asar | yom | bo
-asher | higia | devar | hamelekh | vedato | lehe'asot
+asher | higia | devar | hamelekh | vedato
+lehe'asot
 baiyom | asher | siberu | oyevei | haiyehudim
 lishlot | bahem
 venahafokh | hu | asher | yishletu | haiyehudim | hemah | besone'eihem
@@ -56,7 +57,8 @@ umah | bakashatekh | od | vete'as
 9:13
 vatomer | Ester
 im | al | hamelekh | tov
-yinaten | gam | machar | laiyehudim | asher | Beshushan | la'asot
+yinaten | gam | machar | laiyehudim | asher | Beshushan
+la'asot
 kedat | haiyom | ve'et | aseret | benei | Haman | yitlu | al | ha'etz
 
 9:14
@@ -108,12 +110,15 @@ umishloach | manot | ish | lere'ehu
 umatanot | la'evyonim
 
 9:23
-vekibel | haiyehudim | et | asher | hechelu | la'asot
+vekibel | haiyehudim | et | asher | hechelu
+la'asot
 ve'et | asher | katav | Maredokhai | aleihem
 
 9:24
 ki | Haman | ben | Hamedata | ha'agagi | tzorer | kol | haiyehudim | chashav | al | haiyehudim | le'abedam
-vehipil | pur | hu | hagoral | lehumam | ule'abedam
+vehipil | pur | hu | hagoral
+lehumam
+ule'abedam
 
 9:25
 uvevo'ah | lifnei | hamelekh | amar | im | hasefer
@@ -143,11 +148,15 @@ vatikhto | Ester | hamalkah | vat | Avichayil | Umaredokhai | haiyehudi | et | k
 lekaiyem | et | igeret | hapurim | hazot | hashenit
 
 9:30
-vaiyishlach | sefarim | el | kol | haiyehudim | el | sheva | ve'esrim | ume'ah | medinah | malkhut | Achashveroosh | divrei | shalom | ve'emet
+vaiyishlach | sefarim | el | kol | haiyehudim | el | sheva
+ve'esrim
+ume'ah | medinah | malkhut | Achashveroosh | divrei | shalom
+ve'emet
 
 9:31
 lekaiyem | et | yemei | hapurim | ha'eleh | bizmaneihem | ka'asher | kiyam | aleihem | Maredokhai | haiyehudi | Ve'ester | hamalkah
-vekha'asher | kiyemu | al | nafsham | ve'al | zar'am
+vekha'asher | kiyemu | al | nafsham
+ve'al | zar'am
 divrei | hatzomot | veza'akatam
 
 9:32

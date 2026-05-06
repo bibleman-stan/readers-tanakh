@@ -36,7 +36,8 @@ vaiyishlach | vaiyikra | et | kol | chartumei | Mitzrayim | ve'et | kol | chakha
 vaysaper | par'oh | lahem | et | chalomo | ve'ein | poter | otam | lefar'oh
 
 41:9
-vaydaber | sar | hamashkim | et | par'oh | lemor | et | chata'ai
+vaydaber | sar | hamashkim | et | par'oh
+lemor | et | chata'ai
 ani | mazkir | haiyom
 
 41:10
@@ -64,8 +65,7 @@ vaygalach | vaychalef | simlotav
 vaiyavo | el | par'oh
 
 41:15
-vaiyomer
-par'oh | el | Yosef | chalom | chalamti
+vaiyomer | par'oh | el | Yosef | chalom | chalamti
 ufoter | ein | oto
 va'ani | shama'ti | aleikha | lemor
 tishma | chalom | liftor | oto
@@ -90,8 +90,7 @@ dalot | vera'ot | to'ar | me'od | verakot | basar
 lo | ra'iti | khahenah | bekhol | eretz | Mitzrayim | laroa
 
 41:20
-vatokhalnah | haparot | harakot | vehara'ot
-et | sheva | haparot | harishonot | haberi'ot
+vatokhalnah | haparot | harakot | vehara'ot | et | sheva | haparot | harishonot | haberi'ot
 
 41:21
 vatavonah | el | kirbenah
@@ -200,14 +199,14 @@ vaiyikre'u | lefanav | avrekh
 venaton | oto | al | kol | eretz | Mitzrayim
 
 41:44
-vaiyomer
-par'oh | el | Yosef | ani | far'oh
+vaiyomer | par'oh | el | Yosef | ani | far'oh
 uvil'adeikha | lo | yarim | ish | et | yado
 ve'et | raglo | bekhol | eretz | Mitzrayim
 
 41:45
 vaiyikra | far'oh | shem | Yosef | Tzafenat | Pa'neach
-vaiyiten | lo | et | Asenat | bat | Poti | Fera | kohen | On | le'ishah | vaiyetze | Yosef | al | eretz | Mitzrayim
+vaiyiten | lo | et | Asenat | bat | Poti | Fera | kohen | On | le'ishah
+vaiyetze | Yosef | al | eretz | Mitzrayim
 
 41:46
 Veyosef | ben | sheloshim | shanah | be'amedo
@@ -252,8 +251,7 @@ uvekhol | eretz | Mitzrayim | hayah | lachem
 41:55
 vatir'av | kol | eretz | Mitzrayim
 vaiyitz'ak | ha'am | el | par'oh | lalachem
-vaiyomer
-par'oh | lekhol | Mitzrayim | lekhu | el | Yosef
+vaiyomer | par'oh | lekhol | Mitzrayim | lekhu | el | Yosef
 asher | yomar | lakhem | ta'asu
 
 41:56

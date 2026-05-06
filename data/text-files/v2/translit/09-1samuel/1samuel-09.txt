@@ -35,7 +35,8 @@ atah | nelakhah | sham | ulai | yagid | lanu | et | darkenu | asher | halakhnu |
 vaiyomer | Sha'ul | lena'aro
 vehineh | nelekh
 umah | navi | la'ish
-ki | halechem | azal | mikeleinu | uteshurah | ein | lehavi
+ki | halechem | azal | mikeleinu | uteshurah
+ein | lehavi
 le'ish | ha'elohim | mah | itanu
 
 9:8
@@ -101,8 +102,7 @@ beit | haro'eh
 
 9:19
 vaiya'an | Shemu'el | et | Sha'ul
-vaiyomer
-anokhi | haro'eh
+vaiyomer | anokhi | haro'eh
 aleh | lefanai | habamah
 va'akhaltem | imi | haiyom | veshilachtikha | vaboker
 vekhol | asher | bilvavekha | agid | lakh
@@ -136,8 +136,7 @@ lakh | asher | amarti | eleikha | sim | otah | imakh
 9:24
 vaiyarem | hataboch | et | hashok | vehe'aleiha
 vaiyasem | lifnei | Sha'ul
-vaiyomer
-hineh | hanish'ar | sim | lefaneikha | ekhol
+vaiyomer | hineh | hanish'ar | sim | lefaneikha | ekhol
 ki | lamo'ed | shamur | lekha | lemor
 ha'am | karati
 vaiyokhal | Sha'ul | im | Shemu'el | baiyom | hahu

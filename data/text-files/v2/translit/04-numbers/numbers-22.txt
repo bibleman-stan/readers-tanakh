@@ -69,8 +69,7 @@ ki | me'en | Yahweh | letiti | lahalokh | imakhem
 22:14
 vaiyakumu | sarei | Mo'av
 vaiyavo'u | el | Balak
-vaiyomeru
-me'en | Bil'am | halokh | imanu
+vaiyomeru | me'en | Bil'am | halokh | imanu
 
 22:15
 vaiyosef | od | Balak | sheloach | sarim | rabim | venikhbadim | me'eleh
@@ -212,7 +211,8 @@ vaiyelekh | Bil'am | im | Balak
 vaiyavo'u | Kiryat | Chutzot
 
 22:40
-vaiyizbach | Balak | bakar | vatzon | vayshalach | Levil'am
+vaiyizbach | Balak | bakar | vatzon
+vayshalach | Levil'am
 velasarim | asher | ito
 
 22:41

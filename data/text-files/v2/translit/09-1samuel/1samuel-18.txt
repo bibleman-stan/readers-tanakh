@@ -11,7 +11,10 @@ vaiyikhrot | Yehonatan | Vedavid | berit | be'ahavato | oto | kenafsho
 
 18:4
 vaiyitpashet | Yehonatan | et | hame'il | asher | alav
-vaiyitenehu | Ledavid | umadav | ve'ad | charbo | ve'ad | kashto | ve'ad | chagoro
+vaiyitenehu | Ledavid | umadav
+ve'ad | charbo
+ve'ad | kashto
+ve'ad | chagoro
 
 18:5
 vaiyetze | David | bekhol | asher | yishlachenu | Sha'ul | yaskil
@@ -22,7 +25,8 @@ vaiyitav | be'einei | khol | ha'am | vegam | be'einei | avdei | Sha'ul
 vayhi | bevo'am | beshuv | David | mehakot | et | hapelishti
 vatetzenah | hanashim | mikol | arei | Yisra'el
 lashor | vehamecholot | likrat
-Sha'ul | hamelekh | betupim | besimchah | uveshalishim
+Sha'ul | hamelekh | betupim | besimchah
+uveshalishim
 
 18:7
 vata'aneinah | hanashim | hamsachakot
@@ -33,8 +37,7 @@ Vedavid | berivotav
 18:8
 vaiyichar | Lesha'ul | me'od
 vaiyera | be'einav | hadavar | hazeh
-vaiyomer
-natenu | Ledavid | revavot
+vaiyomer | natenu | Ledavid | revavot
 veli | natenu | ha'alafim
 ve'od | lo
 akh | hamelukhah
@@ -50,8 +53,8 @@ keyom | beyom | vehachanit | beyad | Sha'ul
 
 18:11
 vaiyatel | Sha'ul | et | hachanit
-vaiyomer
-akeh | Vedavid | uvakir
+vaiyomer | akeh | Vedavid
+uvakir
 vaiyiso | David | mipanav | pa'amayim
 
 18:12
@@ -102,7 +105,8 @@ yad | pelishtim | vaiyomer | Sha'ul | el | David
 bishtayim | titchaten | bi | haiyom
 
 18:22
-vaytzav | Sha'ul | et | avadav | daberu | el | David | balat | lemor
+vaytzav | Sha'ul | et | avadav | daberu | el | David | balat
+lemor
 hineh | chafetz | bekha | hamelekh | vekhol | avadav | ahevukha
 ve'atah | hitchaten | bamelekh
 

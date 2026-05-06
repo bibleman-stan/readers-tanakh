@@ -1,6 +1,5 @@
 3:1
-ve'eleh | hagoyim | asher | hiniach | Yahweh | lenasot | bam | et | Yisra'el
-et | kol | asher | lo | yade'u | et | kol | milchamot | Kena'an
+ve'eleh | hagoyim | asher | hiniach | Yahweh | lenasot | bam | et | Yisra'el | et | kol | asher | lo | yade'u | et | kol | milchamot | Kena'an
 
 3:2
 rak | lema'an | da'at | dorot | benei | Yisra'el | lelamedam
@@ -16,7 +15,11 @@ lada'at | hayishme'u | et | mitzvot | Yahweh
 asher | tzivah | et | avotam | beyad | Mosheh
 
 3:5
-uvenei | Yisra'el | yashevu | bekerev | hakena'ani | hachiti | veha'emori | vehapperizi | vehachivi | vehayvusi
+uvenei | Yisra'el | yashevu | bekerev | hakena'ani | hachiti
+veha'emori
+vehapperizi
+vehachivi
+vehayvusi
 
 3:6
 vaiyikchu | et | benoteihem | lahem | lenashim | ve'et | benoteihem
@@ -150,4 +153,6 @@ vatikana | Mo'av | baiyom | hahu | tachat | yad | Yisra'el
 vatishkot | ha'aretz | shemonim | shanah
 
 3:31
-ve'acharav | hayah | Shamgar | ben | Anat | vaiyakh | et | pelishtim | shesh | me'ot | ish | bemalmad | habakar | vaiyosha | gam | hu | et | Yisra'el
+ve'acharav | hayah | Shamgar | ben | Anat
+vaiyakh | et | pelishtim | shesh | me'ot | ish | bemalmad | habakar
+vaiyosha | gam | hu | et | Yisra'el

@@ -88,7 +88,8 @@ vesham | tamutu
 42:17
 veyihyu | khol | ha'anashim | asher | samu | et | peneihem
 lavo | Mitzrayim | lagur | sham
-yamutu | bacherev | bara'av | uvadaver
+yamutu | bacherev | bara'av
+uvadaver
 velo | yihyeh | lahem | sarid | ufalit
 mipenei | hara'ah | asher | ani | mevi | aleihem
 
@@ -97,7 +98,10 @@ ki | khoh | amar | Yahweh | tzeva'ot | elohei | Yisra'el
 ka'asher | Nitakh | api | vachamati | al | yoshevei | Yerushalim
 ken | titakh | chamati | aleikhem
 bevo'akhem | Mitzrayim
-vihyitem | le'alah | uleshamah | veliklalah | ulecherpah
+vihyitem | le'alah
+uleshamah
+veliklalah
+ulecherpah
 velo | tir'u | od | et | hamakom | hazeh
 
 42:19
@@ -106,7 +110,8 @@ Mitzrayim | yadoa | tede'u | ki | ha'idoti | vakhem | haiyom
 
 42:20
 ki | hit'eteim | benafshoteikhem
-ki | atem | shelachtem | oti | el | Yahweh | eloheikhem | lemor
+ki | atem | shelachtem | oti | el | Yahweh | eloheikhem
+lemor
 hitpalel | ba'adenu | el | Yahweh | eloheinu
 ukhekhol | asher | yomar | Yahweh | eloheinu | ken | haged | lanu
 ve'asinu
@@ -118,5 +123,6 @@ ulekhol | asher | shelachani | aleikhem
 
 42:22
 ve'atah | yadoa | tede'u | ki | bacherev | bara'av
-uvadever | tamutu | bamakom | asher | chafatztem | lavo
+uvadever | tamutu | bamakom | asher | chafatztem
+lavo
 lagur | sham

@@ -1,7 +1,8 @@
 4:1
 vayhi | ka'asher | tamu | khol | hagoy
 la'avor | et | Haiyarden
-vaiyomer | Yahweh | el | Yehoshua | lemor
+vaiyomer | Yahweh | el | Yehoshua
+lemor
 
 4:2
 kechu | lakhem | min | ha'am | sheneim | asar | anashim
@@ -25,8 +26,7 @@ veharimu | lakhem | ish | even | achat | al | shikhmo | lemispar | shivtei | ven
 4:6
 lema'an | tihyeh | zot | ot | bekirbekhem
 ki | yish'alun | beneikhem | machar
-lemor
-mah | ha'avanim | ha'eleh | lakhem
+lemor | mah | ha'avanim | ha'eleh | lakhem
 
 4:7
 va'amartem | lahem | asher | Nikhretu | meimei | Haiyarden | mipenei | aron | berit | Yahweh
@@ -54,7 +54,8 @@ vaymaharu | ha'am
 vaiya'avoru
 
 4:11
-vayhi | ka'asher | tam | kol | ha'am | la'avor
+vayhi | ka'asher | tam | kol | ha'am
+la'avor
 vaiya'avor | aron | Yahweh | vehakohanim | lifnei | ha'am
 
 4:12
@@ -71,7 +72,8 @@ baiyom | hahu | gidal | Yahweh | et | Yehoshua | be'einei | kol | Yisra'el | vai
 ka'asher | yare'u | et | Mosheh | kol | yemei | chaiyav
 
 4:15
-vaiyomer | Yahweh | el | Yehoshua | lemor
+vaiyomer | Yahweh | el | Yehoshua
+lemor
 
 4:16
 tzaveh | et | hakohanim | nose'ei | aron | ha'edut

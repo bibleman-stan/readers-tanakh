@@ -1,5 +1,7 @@
 7:1
-vaiyavo'u | anshei | Kiryat | Ye'arim | vaiya'alu | et | aron | Yahweh | vaiyavi'u | oto
+vaiyavo'u | anshei | Kiryat | Ye'arim
+vaiya'alu | et | aron | Yahweh
+vaiyavi'u | oto
 el | beit | Avinadav | bagiv'ah | ve'et | El'azar | beno | kideshu | lishmor
 et | aron | Yahweh
 
@@ -10,7 +12,8 @@ vaiyihyu
 esrim | shanah | vaiyinahu | kol | beit | Yisra'el | acharei | Yahweh
 
 7:3
-vaiyomer | Shemu'el | el | kol | beit | Yisra'el | lemor
+vaiyomer | Shemu'el | el | kol | beit | Yisra'el
+lemor
 im | bekhol | levavkhem | atem | shavim | el | Yahweh
 hasiru | et | elohei | hanekhar | mitokhkhem | veha'ashtarot
 vehakhinu | levavkhem | el | Yahweh | ve'ivduhu | levado
@@ -26,11 +29,11 @@ kivtzu | et | kol | Yisra'el | Hamitzpatah
 ve'etpalel | ba'adkhem | el | Yahweh
 
 7:6
-vaiyikavetzu | Hamitzpatah | vaiyish'avu | mayim
+vaiyikavetzu | Hamitzpatah
+vaiyish'avu | mayim
 vaiyishpekhu | lifnei | Yahweh
 vaiyatzumu | baiyom | hahu
-vaiyomeru
-sham | chatanu | Layahweh
+vaiyomeru | sham | chatanu | Layahweh
 vaiyishpot | Shemu'el | et | benei | Yisra'el | Bamitzpah
 
 7:7
@@ -73,8 +76,8 @@ velo | yasefu | od | lavo | bigvul | Yisra'el
 vatehi | yad | Yahweh | bapelishtim | kol | yemei | Shemu'el
 
 7:14
-vatashoenah | he'arim | asher | lakechu | felishtim | me'et | Yisra'el | Leyisra'el | Me'ekron | ve'ad | Gat | ve'et | gevulan
-hitzil | Yisra'el
+vatashoenah | he'arim | asher | lakechu | felishtim | me'et | Yisra'el | Leyisra'el | Me'ekron
+ve'ad | Gat | ve'et | gevulan | hitzil | Yisra'el
 miyad | pelishtim | vayhi | shalom | bein | Yisra'el
 uvein | ha'emori
 
@@ -82,7 +85,10 @@ uvein | ha'emori
 vaiyishpot | Shemu'el | et | Yisra'el | kol | yemei | chaiyav
 
 7:16
-vehalakh | midei | shanah | beshanah | vesavav | Beit | El | Vehagilgal | Vehamitzpah
+vehalakh | midei | shanah | beshanah
+vesavav | Beit | El
+Vehagilgal
+Vehamitzpah
 veshafat | et | Yisra'el | et | kol | hamekomot | ha'eleh
 
 7:17

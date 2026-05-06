@@ -1,6 +1,5 @@
 10:1
-ho | hachokekim
-chikei | aven | umekhatevim | amal | kitevu
+ho | hachokekim | chikei | aven | umekhatevim | amal | kitevu
 
 10:2
 lehatot | midin | dalim
@@ -8,7 +7,8 @@ veligzol | mishpat | aniyei | ami | lihyot | almanot | shelalam | ve'et | yetomi
 yavozu
 
 10:3
-umah | ta'asu | leyom | pekudah | ulesho'ah
+umah | ta'asu | leyom | pekudah
+ulesho'ah
 mimerchak | tavo
 al | mi | tanusu | le'ezrah
 ve'anah | ta'azvu | kevodkhem
@@ -16,12 +16,10 @@ ve'anah | ta'azvu | kevodkhem
 10:4
 bilti | khara | tachat | asir
 vetachat | harugim
-yipolu | bekhol | zot | lo | shav | apo | ve'od
-yado | netuyah
+yipolu | bekhol | zot | lo | shav | apo | ve'od | yado | netuyah
 
 10:5
-ho | Ashur
-shevet | api
+ho | Ashur | shevet | api
 umateh | hu | veyadam | za'mi
 
 10:6
@@ -47,8 +45,10 @@ ka'asher | matze'ah | yadi | lemamlekhot | ha'elil
 ufesileihem | Mirushalim | Umishomeron
 
 10:11
-halo | ka'asher | asiti | Leshomeron | vele'elileiha
-ken | e'eseh | Lirushalim | vela'atzabeiha
+halo | ka'asher | asiti | Leshomeron
+vele'elileiha
+ken | e'eseh | Lirushalim
+vela'atzabeiha
 
 10:12
 vehayah | ki | yevatza | Adonai | et | kol | ma'asehu | behar | Tziyon
@@ -56,7 +56,8 @@ Uvirushalim | efkod | al | peri | godel | levav | melekh | Ashur
 ve'al | tif'eret | rum | einav
 
 10:13
-ki | amar | bekhoach | yadi | asiti | uvechakhemati
+ki | amar | bekhoach | yadi | asiti
+uvechakhemati
 ki | Nevunoti
 ve'asir | gevulot | amim | va'atidoteihem | shoseti
 ve'orid | kabir | yoshevim

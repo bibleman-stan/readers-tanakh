@@ -81,15 +81,13 @@ vatomer | mah | titen | li
 ki | tavo | elai
 
 38:17
-vaiyomer
-anokhi | ashalach | gedi | izim | min | hatzon
-vatomer
-im | titen | eravon | ad | shalchekha
+vaiyomer | anokhi | ashalach | gedi | izim | min | hatzon
+vatomer | im | titen | eravon | ad | shalchekha
 
 38:18
-vaiyomer
-mah | ha'eravon | asher | eten | lokh
-vatomer | chotamekha | ufetilekha | umatekha | asher | beyadekha | vaiyiten | lah
+vaiyomer | mah | ha'eravon | asher | eten | lokh
+vatomer | chotamekha | ufetilekha | umatekha | asher | beyadekha
+vaiyiten | lah
 vaiyavo | eleiha
 vatahar | lo
 
@@ -103,15 +101,14 @@ vaiyishlach | Yehudah | et | gedi | ha'izim | beyad | re'ehu | ha'adulami
 lakachat | ha'eravon | miyad | ha'ishah | velo | metza'ah
 
 38:21
-vaiyish'al | et | anshei | mekomah | lemor
+vaiyish'al | et | anshei | mekomah
+lemor
 aiyeh | hakedeshah | hi | Va'einayim | al | hadarekh
-vaiyomeru
-lo | hayetah | vazeh | kedeshah
+vaiyomeru | lo | hayetah | vazeh | kedeshah
 
 38:22
 vaiyashov | el | Yehudah
-vaiyomer
-lo | metzatiha
+vaiyomer | lo | metzatiha
 vegam | anshei | hamakom | ameru | lo | hayetah | vazeh | kedeshah
 
 38:23
@@ -121,8 +118,7 @@ hineh | shalachti | hagedi | hazeh | ve'atah | lo | metzatah
 
 38:24
 vayhi | kemishlosh | chodashim | vaiyugad | Lihudah
-lemor
-zanetah | Tamar | kalatekha
+lemor | zanetah | Tamar | kalatekha
 vegam | hineh | harah | liznunim
 vaiyomer | Yehudah
 hotzi'uha | vetisaref
@@ -135,8 +131,7 @@ lemi | hachotemet | vehapetilim | vehammateh | ha'eleh
 
 38:26
 vaiyaker | Yehudah
-vaiyomer
-tzadekah | mimeni | ki | al | ken | lo | netatiha
+vaiyomer | tzadekah | mimeni | ki | al | ken | lo | netatiha
 Leshelah | veni
 velo | yasaf | od | leda'tah
 
@@ -146,12 +141,14 @@ vayhi | be'et | lidtah | vehineh | te'omim | bevitnah
 38:28
 vayhi | velidtah | vaiyiten | yad
 vatikach | hamyaledet
-vatikshor | al | yado | shani | lemor
+vatikshor | al | yado | shani
+lemor
 zeh | yatza | rishonah
 
 38:29
 vayhi | kemeshiv | yado | vehineh | yatza | achiv
-vatomer | mah | paratzta | aleikha | paretz | vaiyikra | shemo | Paretz
+vatomer | mah | paratzta | aleikha | paretz
+vaiyikra | shemo | Paretz
 
 38:30
 ve'achar | yatza | achiv | asher | al | yado

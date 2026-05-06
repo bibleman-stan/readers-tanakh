@@ -1,5 +1,6 @@
 24:1
-vayhi | devar | Yahweh | elai | bashanah | hateshi'it | bachodesh | ha'asiri | be'asor | lachodesh | lemor
+vayhi | devar | Yahweh | elai | bashanah | hateshi'it | bachodesh | ha'asiri | be'asor | lachodesh
+lemor
 
 24:2
 ben | adam | ketov | lekha | et | shem | haiyom | et | etzem | haiyom | hazeh
@@ -34,8 +35,7 @@ al | tzechiach | sala | levilti | hikasot
 
 24:9
 lakhen | koh | amar | Adonai | Yahweh
-o | ir | hadamim
-gam | ani | agdil | hamedurah
+o | ir | hadamim | gam | ani | agdil | hamedurah
 
 24:10
 harbeh | ha'etzim | hadlek | ha'esh
@@ -52,8 +52,7 @@ te'unim | hel'at
 velo | tetze | mimenah | rabat | chel'atah | be'esh | chel'atah
 
 24:13
-betum'atekh | zimah
-ya'an | tihartikh | velo | tahart
+betum'atekh | zimah | ya'an | tihartikh | velo | tahart
 mitum'atekh | lo | tithari | od | ad | hanichi | et | chamati | bakh
 
 24:14
@@ -63,7 +62,8 @@ vekha'alilotayikh | shefatukh
 ne'um | Adonai | Yahweh
 
 24:15
-vayhi | devar | Yahweh | elai | lemor
+vayhi | devar | Yahweh | elai
+lemor
 
 24:16
 ben | adam | hini | lokeach | mimekha | et | machmad | eineikha | bemagefah

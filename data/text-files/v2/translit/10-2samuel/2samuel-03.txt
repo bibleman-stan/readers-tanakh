@@ -36,7 +36,8 @@ madua | batah | el | pilegesh | avi
 vaiyichar | Le'avner | me'od | al | divrei | Ish | Boshet
 vaiyomer
 harosh | kelev | anokhi | asher | Lihudah
-haiyom | e'eseh | chesed | im | beit | Sha'ul | avikha | el | echav | ve'el | mere'ehu
+haiyom | e'eseh | chesed | im | beit | Sha'ul | avikha | el | echav
+ve'el | mere'ehu
 velo | himtzitikha | beyad | David | vatifkod | alai | avon | ha'ishah | haiyom
 
 3:9
@@ -54,7 +55,8 @@ ve'ad | Be'er | Shava
 velo | yakhol | od | lehashiv | et | Avner | davar | miyir'ato | oto
 
 3:12
-vaiyishlach | Avner | mal'akhim | el | David | tachatov | lemor
+vaiyishlach | Avner | mal'akhim | el | David | tachatov
+lemor
 lemi | aretz | lemor | karetah | veritekha | iti
 vehineh | yadi | imakh | lehasev | eleikha | et | kol | Yisra'el
 
@@ -68,7 +70,8 @@ bevo'akha
 lir'ot | et | panai
 
 3:14
-vaiyishlach | David | mal'akhim | el | Ish | Boshet | ben | Sha'ul | lemor | tenah | et | ishti | et | Mikhal | asher | erasti | li | beme'ah
+vaiyishlach | David | mal'akhim | el | Ish | Boshet | ben | Sha'ul
+lemor | tenah | et | ishti | et | Mikhal | asher | erasti | li | beme'ah
 arelot | pelishtim
 
 3:15
@@ -83,7 +86,8 @@ lekh | shuv
 vaiyasho
 
 3:17
-udevar | Avner | hayah | im | ziknei | Yisra'el | lemor
+udevar | Avner | hayah | im | ziknei | Yisra'el
+lemor
 gam | temol | gam | shilshom
 heyitem | mevakshim | et | David | lemelekh | aleikhem
 
@@ -101,7 +105,8 @@ uve'einei | kol | beit | Binyamin
 
 3:20
 vaiyavo | Avner | el | David | Chevron | ve'ito | esrim | anashim
-vaiya'as | David | Le'avner | vela'anashim | asher | ito | mishteh
+vaiya'as | David | Le'avner
+vela'anashim | asher | ito | mishteh
 
 3:21
 vaiyomer | Avner | el | David
@@ -125,8 +130,7 @@ vaiyelekh | beshalom
 
 3:24
 vaiyavo | Yo'av | el | hamelekh
-vaiyomer
-meh | asitah
+vaiyomer | meh | asitah
 hineh | va | Avner | eleikha | lamah | zeh | shilachto
 vaiyelekh | halokh
 
@@ -178,8 +182,7 @@ vaiyivku | kol | ha'am
 
 3:33
 vaykonen | hamelekh | el | Avner
-vaiyomar
-hakemot | naval | yamut | Avner
+vaiyomar | hakemot | naval | yamut | Avner
 
 3:34
 yadekha | lo | asurot | veragleikha | lo | linchushtayim | hugashu | kinfol | lifnei | venei | avlah | nafalta

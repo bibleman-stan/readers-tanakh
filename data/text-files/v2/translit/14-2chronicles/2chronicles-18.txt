@@ -11,7 +11,8 @@ vela'am | asher | imo | vaysitehu | la'alot | el | Ramot | Gil'ad
 vaiyomer | Ach'av | melekh | Yisra'el | el | Yehoshafat
 melekh | Yehudah
 hatelekh | imi | Ramot | Gil'ad
-vaiyomer | lo | kamoni | khamokha | ukhe'amekha | ami
+vaiyomer | lo | kamoni | khamokha
+ukhe'amekha | ami
 ve'imekha | bamilchamah
 
 18:4
@@ -46,8 +47,7 @@ vekhol | hanevi'im | mitnabe'im | lifneihem
 
 18:10
 vaiya'as | lo | Tzidkiyahu | ven | Kena'anah | karnei | varzel
-vaiyomer
-koh | amar | Yahweh
+vaiyomer | koh | amar | Yahweh
 be'eleh | tenagach | et | Aram | ad | kalotam
 
 18:11
@@ -103,8 +103,7 @@ vezeh | omer | kakhah
 18:20
 vaiyetze | haruach
 vaiya'amod | lifnei | Yahweh
-vaiyomer
-ani | afattenu
+vaiyomer | ani | afattenu
 vaiyomer | Yahweh | elav | bamah
 
 18:21
@@ -126,13 +125,14 @@ ledaber | otakh
 
 18:24
 vaiyomer | Mikhayehu | hinekha | ro'eh | baiyom | hahu
-asher | tavo | cheder | becheder | lehechave
+asher | tavo | cheder | becheder
+lehechave
 
 18:25
 vaiyomer | melekh | Yisra'el
 kechu | et | Mikhayehu
-vahashivuhu | el | Amon | sar | ha'ir | ve'el | Yo'ash
-ben | hamelekh
+vahashivuhu | el | Amon | sar | ha'ir
+ve'el | Yo'ash | ben | hamelekh
 
 18:26
 va'amartem | koh | amar | hamelekh | simu | zeh
@@ -142,8 +142,7 @@ veha'akhiluhu | lechem | lachatz | umayim | lachatz | ad | shuvi | veshalom
 18:27
 vaiyomer | Mikhayehu
 im | shov | tashuv | beshalom | lo | diber | Yahweh | bi
-vaiyomer
-shim'u | amim | kulam
+vaiyomer | shim'u | amim | kulam
 
 18:28
 vaiya'al | melekh | Yisra'el | Vihoshafat | melekh | Yehudah | el | Ramot | Gil'ad
@@ -155,7 +154,8 @@ vaiyitchapes | melekh | Yisra'el
 vaiyavo'u | bamilchamah
 
 18:30
-umelekh | Aram | tzivah | et | sarei | harekhev | asher | lo | lemor
+umelekh | Aram | tzivah | et | sarei | harekhev | asher | lo
+lemor
 lo | tilachamu | et | hakaton | et | hagadol | ki | im | et | melekh | Yisra'el | levado
 
 18:31

@@ -10,12 +10,12 @@ uveinekha | ve'arbeh | otkha | bim'od | me'od
 
 17:3
 vaiyipol | Avram | al | panav
-vaydaber | ito | elohim | lemor
+vaydaber | ito | elohim
+lemor
 
 17:4
 ani
-hineh | veriti
-itakh
+hineh | veriti | itakh
 vehayita | le'av | hamon | goyim
 
 17:5
@@ -34,7 +34,8 @@ livrit | olam | lihyot | lekha | lelohim
 ulezar'akha | achareikha
 
 17:8
-venatati | lekha | ulezar'akha | achareikha | et | eretz | megureikha | et | kol | eretz | Kena'an
+venatati | lekha
+ulezar'akha | achareikha | et | eretz | megureikha | et | kol | eretz | Kena'an
 la'achuzat | olam
 vehayiti | lahem | lelohim
 
@@ -76,8 +77,7 @@ vaiyipol | Avraham | al | panav
 vaiyitzchak
 vaiyomer
 belibo | haleven | me'ah | shanah | yivaled | ve'im | Sarah
-havat | tish'im | shanah
-teled
+havat | tish'im | shanah | teled
 
 17:18
 vaiyomer | Avraham | el | ha'elohim

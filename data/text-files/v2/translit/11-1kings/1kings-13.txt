@@ -11,7 +11,8 @@ vezavach | aleikha | et | kohanei | habamot | hamaktirim | aleikha | ve'atzmot |
 yisrefu | aleikha
 
 13:3
-venatan | baiyom | hahu | mofet | lemor
+venatan | baiyom | hahu | mofet
+lemor
 zeh | hamofet | asher | diber | Yahweh
 hineh | hamizbeach | Nikra
 venishpakh | hadeshen | asher | alav
@@ -47,8 +48,7 @@ velo | okhal | lechem | velo | eshteh | mayim | bamakom | hazeh
 
 13:9
 ki | khen | tzivah | oti | bidvar | Yahweh
-lemor
-lo | tokhal | lechem | velo | tishteh | mayim
+lemor | lo | tokhal | lechem | velo | tishteh | mayim
 velo | tashuv | baderekh | asher | halakheta
 
 13:10
@@ -59,7 +59,8 @@ velo | shav | baderekh | asher | ba | vah | el | Beit | El
 venavi | echad | zaken
 yoshev | Beveit | El
 vaiyavo | veno
-vaysaper | lo | et | kol | hama'aseh | asher | asah | ish | ha'elohim | haiyom | Beveit | El | et | hadevarim | asher | diber | el | hamelekh | vaysaperum | la'avihem
+vaysaper | lo | et | kol | hama'aseh | asher | asah | ish | ha'elohim | haiyom | Beveit | El | et | hadevarim | asher | diber | el | hamelekh
+vaysaperum | la'avihem
 
 13:12
 vaydaber | alehem | avihem
@@ -86,8 +87,8 @@ lekh | iti
 habayetah | ve'ekhol | lachem
 
 13:16
-vaiyomer
-lo | ukhal | lashuv | itakh
+vaiyomer | lo | ukhal
+lashuv | itakh
 velavo | itakh
 velo | okhal | lechem
 velo | eshteh | itekha | mayim | bamakom | hazeh
@@ -99,7 +100,8 @@ lalekhet | baderekh | asher | halakhta | bah
 
 13:18
 vaiyomer | lo | gam | ani | navi | kamokha
-umal'akh | diber | elai | bidvar | Yahweh | lemor
+umal'akh | diber | elai | bidvar | Yahweh
+lemor
 hashivehu | itekha | el | beitekha
 veyokhal | lechem
 veyeshet | mayim | kichesh | lo
@@ -114,7 +116,8 @@ vayhi | hem | yoshevim | el | hashulchan
 vayhi | devar | Yahweh | el | hanavi | asher | heshivo
 
 13:21
-vaiyikra | el | ish | ha'elohim | asher | ba | Mihudah | lemor
+vaiyikra | el | ish | ha'elohim | asher | ba | Mihudah
+lemor
 koh | amar | Yahweh
 ya'an | ki | marita | pi | Yahweh
 velo | shamarta | et | hamitzvah | asher | tzivekha | Yahweh | eloheikha
@@ -161,7 +164,9 @@ lo | akhal | ha'aryeh | et | hanevelah | velo | shavar | et | hachamor
 vaiyisa | hanavi | et | nivlat | ish | ha'elohim
 vaiyanichehu | el | hachamor
 vayshivehu
-vaiyavo | el | ir | hanavi | hazaken | lispod | ulekavero
+vaiyavo | el | ir | hanavi | hazaken
+lispod
+ulekavero
 
 13:30
 vaiyanach | et | nivlato | bekivro
@@ -186,5 +191,6 @@ hechafetz | yemale | et | yado
 vihi | kohanei | vamot
 
 13:34
-vayhi | badavar | hazeh | lechatat | beit | Yarave'am | ulehakhchid
+vayhi | badavar | hazeh | lechatat | beit | Yarave'am
+ulehakhchid
 ulehashmid | me'al | penei | ha'adamah

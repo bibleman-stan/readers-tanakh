@@ -1,7 +1,9 @@
 2:1
 vayhi | haiyom
-vaiyavo'u | benei | ha'elohim | lehityatzev | al | Yahweh
-vaiyavo | gam | hasatan | betokham | lehityatzev | al | Yahweh
+vaiyavo'u | benei | ha'elohim
+lehityatzev | al | Yahweh
+vaiyavo | gam | hasatan | betokham
+lehityatzev | al | Yahweh
 
 2:2
 vaiyomer | Yahweh | el | hasatan
@@ -55,7 +57,8 @@ lo | nekabel | bekhol | zot | lo | chata | Iyov | bisfatav
 2:11
 vaiyishme'u | sheloshet | re'ei | Iyov | et | kol | hara'ah | hazot | haba'ah | alav
 vaiyavo'u | ish | mimekomo | Elifaz | hateimani | Uvildad | hashuchi | Vetzofar | hana'amati
-vaiyiva'adu | yachdav | lavo | lanud | lo | ulenachamo
+vaiyiva'adu | yachdav | lavo | lanud | lo
+ulenachamo
 
 2:12
 vaiyis'u | et | eineihem | merachok | velo | hikiruhu

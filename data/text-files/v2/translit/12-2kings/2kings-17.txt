@@ -115,7 +115,8 @@ ka'asher | diber | beyad | kol | avadav | hanevi'im
 vaiyigel | Yisra'el | me'al | admato | Ashurah | ad | haiyom | hazeh
 
 17:24
-vaiyave | melekh | Ashur | Mibavel | Umikutah | Ume'ava
+vaiyave | melekh | Ashur | Mibavel
+Umikutah | Ume'ava
 Umechamat | Usefarvayim
 vaiyoshev | be'arei | Shomeron | tachat | benei | Yisra'el
 vaiyirshu | et | Shomeron
@@ -128,7 +129,8 @@ vayshalach | Yahweh | bahem | et | ha'arayot
 vaiyihyu | horegim | bahem
 
 17:26
-vaiyomeru | lemelekh | Ashur | lemor
+vaiyomeru | lemelekh | Ashur
+lemor
 hagoyim | asher | higlita | vatooshev | be'arei | Shomeron
 lo | yade'u | et | mishpat | elohei | ha'aretz | vayshalach | bam | et | ha'arayot | vehinam | memitim | otam
 ka'asher | einam | yode'im | et | mishpat | elohei | ha'aretz
@@ -172,7 +174,9 @@ asher | higlu | otam | misham
 17:34
 ad | haiyom | hazeh | hem | osim | kamishpatim | harishonim
 einam | yere'im | et | Yahweh
-ve'einam | osim | kechukotam | ukhemishpatam | vekhatorah
+ve'einam | osim | kechukotam
+ukhemishpatam
+vekhatorah
 vekhamitzvah | asher | tzivah | Yahweh | et | benei | Ya'ako
 asher | sam | shemo | Yisra'el
 

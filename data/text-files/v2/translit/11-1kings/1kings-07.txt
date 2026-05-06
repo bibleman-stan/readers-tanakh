@@ -147,7 +147,8 @@ vezeh | ma'aseh | hamekhonah | misgerot | lahem
 umisgerot | bein | hashlabim
 
 7:29
-ve'al | hamisgerot | asher | bein | hashlabim | arayot | bakar | ukheruvim | ve'al | hashlabim
+ve'al | hamisgerot | asher | bein | hashlabim | arayot | bakar | ukheruvim
+ve'al | hashlabim
 ken | mima'al
 umitachat | la'arayot
 velabakar | loyot | ma'aseh | morad
@@ -172,7 +173,10 @@ vekomat | ha'ofan | ha'echad | amah
 vachatzi | ha'amah
 
 7:33
-uma'aseh | ha'ofanim | kema'aseh | ofan | hamerkavah | yedotam | vegabeihem | vechishukeihem | vechishureihem
+uma'aseh | ha'ofanim | kema'aseh | ofan | hamerkavah | yedotam
+vegabeihem
+vechishukeihem
+vechishureihem
 hakol | mutzak
 
 7:34
@@ -185,7 +189,8 @@ agol | saviv | ve'al | rosh | hamekhonah | yedoteiha
 umisgeroteiha | mimenah
 
 7:36
-vayfatach | al | haluchot | yedoteiha | ve'al | misgeroteiha | keruvim
+vayfatach | al | haluchot | yedoteiha
+ve'al | misgeroteiha | keruvim
 arayot | vetimorot | kema'ar | ish
 veloyot | saviv
 
@@ -247,7 +252,11 @@ zahav | sagur
 vehaperach | vehanerot | vehamelkachayim | zahav
 
 7:50
-vehassipot | vehamzamerot | vehamizrakot | vehakkapot | vehamachtot
+vehassipot
+vehamzamerot
+vehamizrakot
+vehakkapot
+vehamachtot
 zahav | sagur
 vehapotot | ledaltot | habayit | hapenimi | lekodesh | hakodashim | ledaltei | habayit | laheikhal | zahav
 

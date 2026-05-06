@@ -20,13 +20,15 @@ hineh | shenei | hamelakhim | lo | amedu
 lefanav | ve'eikh | na'amod | anachenu
 
 10:5
-vaiyishlach | asher | al | habayit | va'asher | al | ha'ir | vehazekenim | veha'omenim | el | Yehu | lemor
+vaiyishlach | asher | al | habayit | va'asher | al | ha'ir | vehazekenim | veha'omenim | el | Yehu
+lemor
 avadeikha | anachnu
 vekhol | asher | tomar | eleinu | na'aseh | lo | namlikh | ish
 hatov | be'eineikha | aseh
 
 10:6
-vaiyikhto | aleihem | sefer | shenit | lemor
+vaiyikhto | aleihem | sefer | shenit
+lemor
 im | li | atem
 ulekoli | atem | shome'im | kechu | et | rashei | anshei | venei | adoneikhem
 uvo'u | elai | ka'et | machar | Yizre'elah
@@ -35,7 +37,8 @@ et | gedolei | ha'ir | megadelim | otam
 
 10:7
 vayhi | kevo | hasefer | aleihem | vaiyikchu | et | benei | hamelekh
-vaiyishchatu | shiv'im | ish | vaiyasimu | et | rasheihem | badudim
+vaiyishchatu | shiv'im | ish
+vaiyasimu | et | rasheihem | badudim
 vaiyishlechu | elav | Yizre'elah
 
 10:8
@@ -64,15 +67,13 @@ vaiyelekh | Shomeron | hu | Beit | Eked | Haro'im | badarekh
 
 10:13
 Veyehu | matza | et | achei | Achazyahu | melekh | Yehudah
-vaiyomer
-mi | atem
+vaiyomer | mi | atem
 vaiyomeru | achei | Achazyahu | anachnu
 vanered | lishlom | benei | hamelekh
 uvenei | hagevirah
 
 10:14
-vaiyomer
-tifsum | chaiyim
+vaiyomer | tifsum | chaiyim
 vaiyitpesum | chaiyim
 vaiyishchatum | el | bor | Beit | Eked | arba'im | ushenayim | ish
 velo | hish'ir | ish | mehem
@@ -89,8 +90,7 @@ tenah | et | yadekha | vaiyiten | yado
 vaiya'alehu | elav | el | hamerkavah
 
 10:16
-vaiyomer
-lekhah | iti
+vaiyomer | lekhah | iti
 ure'eh | bekin'ati | Layahweh
 vaiyarkivu | oto | berikhbo
 

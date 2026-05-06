@@ -14,8 +14,7 @@ ve'echad | al | semolah
 
 4:4
 va'a'an | va'omar | el | hamal'akh | hadover | bi
-lemor
-mah | eleh | adoni
+lemor | mah | eleh | adoni
 
 4:5
 vaiya'an | hamal'akh | hadover | bi
@@ -23,7 +22,8 @@ vaiyomer | elai
 halo | yada'ta | mah | hemah | eleh | va'omar | lo | adoni
 
 4:6
-vaiya'an | vaiyomer | elai | lemor
+vaiya'an | vaiyomer | elai
+lemor
 zeh | devar | Yahweh | el | Zerubavel | lemor | lo | vechayil | velo | vekhoach
 ki | im | beruchi | amar | Yahweh | tzeva'ot
 
@@ -32,7 +32,8 @@ mi | atah | har | hagadol | lifnei | Zerubavel | lemishor
 vehotzi | et | ha'even | haroshah | teshu'ot | chen | chen | lah
 
 4:8
-vayhi | devar | Yahweh | elai | lemor
+vayhi | devar | Yahweh | elai
+lemor
 
 4:9
 yedei | Zerubavel | yisedu | habayit | hazeh
@@ -47,7 +48,8 @@ hemah | meshotim | bekhol | ha'aretz
 
 4:11
 va'a'an
-va'omar | elav | mah | shenei | hazeitim | ha'eleh | al | yemin | hamenorah | ve'al | semolah
+va'omar | elav | mah | shenei | hazeitim | ha'eleh | al | yemin | hamenorah
+ve'al | semolah
 
 4:12
 va'a'an | shenit

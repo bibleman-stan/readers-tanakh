@@ -1,5 +1,6 @@
 8:1
-Ve'elisha | diber | el | ha'ishah | asher | hecheyah | et | benah | lemor
+Ve'elisha | diber | el | ha'ishah | asher | hecheyah | et | benah
+lemor
 kumi
 ulekhi | ati
 uveitekh
@@ -16,7 +17,8 @@ vatagor | be'eretz | pelishtim | sheva | shanim
 8:3
 vayhi | miktzeh | sheva | shanim
 vatashov | ha'ishah | me'eretz | pelishtim
-vatetze | litz'ok | el | hamelekh | el | beitah | ve'el | sadah
+vatetze | litz'ok | el | hamelekh | el | beitah
+ve'el | sadah
 
 8:4
 vehamelekh | medaber | el | Gechazi
@@ -25,13 +27,16 @@ saperah | na | li | et | kol | hagedolot | asher | asah | Elisha
 
 8:5
 vayhi | hu | mesaper | lamelekh | et | asher | hecheyah | et | hamet
-vehineh | ha'ishah | asher | hecheyah | et | benah | tzo'eket | el | hamelekh | al | beitah | ve'al | sadah
+vehineh | ha'ishah | asher | hecheyah | et | benah | tzo'eket | el | hamelekh | al | beitah
+ve'al | sadah
 vaiyomer | Gechazi | adoni | hamelekh | zot | ha'ishah
 vezeh | benah | asher | hecheyah | Elisha
 
 8:6
-vaiyish'al | hamelekh | la'ishah | vatesaper | lo
-vaiyiten | lah | hamelekh | saris | echad | lemor
+vaiyish'al | hamelekh | la'ishah
+vatesaper | lo
+vaiyiten | lah | hamelekh | saris | echad
+lemor
 hasheiv | et | kol | asher | lah | ve'et | kol | tevu'ot | hasadeh
 miyom | azevah | et | ha'aretz | ve'ad | atah
 
@@ -44,16 +49,14 @@ vaiyomer | hamelekh | el | Chazah'el
 kach | beyadekha | minchah
 velekh | likrat | ish | ha'elohim
 vedarashta | et | Yahweh | me'oto
-lemor
-ha'echyeh | mecholi | zeh
+lemor | ha'echyeh | mecholi | zeh
 
 8:9
 vaiyelekh | Chaza'el | likrato
 vaiyikach | minchah | veyado
 vekhol | tuv | Damesek | masa | arba'im | gamal
 vaiyavo | vaiya'amod | lefanav | vaiyomer | binkha | Ven | Hadad | melekh | Aram | shelachani | eleikha
-lemor
-ha'echyeh | mecholi | zeh
+lemor | ha'echyeh | mecholi | zeh
 
 8:10
 vaiyomer | elav | Elisha
@@ -87,8 +90,7 @@ vaiyelekh | me'et | Elisha
 vaiyavo | el | adonav
 vaiyomer | lo
 mah | amar | lekha | Elisha
-vaiyomer
-amar | li
+vaiyomer | amar | li
 chayoh | tichyeh
 
 8:15
@@ -163,7 +165,8 @@ vaiyaku | aramim | et | Yoram
 
 8:29
 vaiyashav | Yoram | hamelekh
-lehitrape | Veyizre'el | min | hamakim | asher | yakuhu | aramim | Baramah | behilachamo | et | Chazah'el
+lehitrape | Veyizre'el | min | hamakim | asher | yakuhu | aramim | Baramah
+behilachamo | et | Chazah'el
 melekh | Aram
 Va'achazyahu | ven | Yehoram | melekh | Yehudah | yarad | lir'ot | et | Yoram | ben | Ach'av | Beyizre'el
 ki | choleh | hu

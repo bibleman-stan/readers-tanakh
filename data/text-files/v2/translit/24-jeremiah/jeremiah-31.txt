@@ -55,7 +55,9 @@ uge'alo | miyad | chazak | mimenu
 
 31:12
 uva'u | verinenu | vimrom | Tziyon
-venaharu | el | tuv | Yahweh | al | dagan | ve'al | tirosh | ve'al | yitzhar
+venaharu | el | tuv | Yahweh | al | dagan
+ve'al | tirosh
+ve'al | yitzhar
 ve'al | benei | tzon | uvakar
 vehayetah | nafsham | kegan | raveh
 velo | yosifu | leda'avah | od
@@ -137,9 +139,13 @@ ve'et | beit | Yehudah | zera | adam
 vezera | behemah
 
 31:28
-vehayah | ka'asher | shakadti | aleihem | lintoosh | velintotz | velaharos
+vehayah | ka'asher | shakadti | aleihem
+lintoosh
+velintotz
+velaharos
 uleha'avid | uleharea
-ken | eshkod | aleihem | livnot | velintoa | ne'um | Yahweh
+ken | eshkod | aleihem | livnot
+velintoa | ne'um | Yahweh
 
 31:29
 baiyamim | hahem | lo | yomeru | od | avot
@@ -167,7 +173,8 @@ vehayiti | lahem | lelohim
 vehemah | yihyu | li | le'am
 
 31:34
-velo | yelamedu | od | ish | et | re'ehu | ve'ish | et | achiv | lemor
+velo | yelamedu | od | ish | et | re'ehu | ve'ish | et | achiv
+lemor
 de'u | et | Yahweh
 ki | khulam | yede'u | oti | lemiktanam | ve'ad | gedolam | ne'um | Yahweh
 ki | eslach | la'avonam

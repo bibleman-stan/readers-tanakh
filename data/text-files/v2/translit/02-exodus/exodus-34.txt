@@ -34,7 +34,8 @@ verav | chesed | ve'emet
 notzer | chesed | la'alafim
 nose | avon | vafesha | vechata'ah
 venakeh | lo | yenakeh | poked | avon | avot | al | banim
-ve'al | benei | vanim | al | shileshim | ve'al | ribe'im
+ve'al | benei | vanim | al | shileshim
+ve'al | ribe'im
 
 34:8
 vaymaher | Mosheh
@@ -49,8 +50,7 @@ vesalachta | la'avonenu | ulechatatenu
 unechaltanu
 
 34:10
-vaiyomer
-hineh | anokhi | koret | berit
+vaiyomer | hineh | anokhi | koret | berit
 neged | kal | amekha | e'eseh | nifla'ot | asher | lo | Nivre'u | vekhol | ha'aretz
 uvekhol | hagoyim | vera'ah | khol | ha'om | asher | atah | vekirbo | et | ma'aseh | Yahweh | ki | nora | hu
 asher | ani
@@ -60,7 +60,10 @@ oseh | imakh
 shemar | lekha
 et | asher | anokhi
 metzavekha | haiyom | hini | goresh | mipaneikha | et | ha'emori | vehakena'ani
-vehachiti | vehapperizi | vehachivi | vehayvusi
+vehachiti
+vehapperizi
+vehachivi
+vehayvusi
 
 34:12
 hishamer | lekha | pen | tikhrot | berit | leyoshev | ha'aretz | asher | atah

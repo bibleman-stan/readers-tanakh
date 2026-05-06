@@ -37,13 +37,11 @@ ba | el | hamachaneh
 vaiyir'u | hapelishtim
 ki | ameru
 ba | elohim | el | hamachaneh
-vaiyomeru
-o | lanu
+vaiyomeru | o | lanu
 ki | lo | hayetah | kazot | etmol | shilshom
 
 4:8
-o | lanu
-mi | yatzilenu
+o | lanu | mi | yatzilenu
 miyad | ha'elohim | ha'adirim | ha'eleh | eleh | hem | ha'elohim | hamakim | et | Mitzrayim | bekhol | makah | bamidbar
 
 4:9
@@ -88,13 +86,11 @@ velo | yakhol | lir'ot
 vaiyomer | ha'ish | el | Eli
 anokhi | haba | min | hama'arakhah
 va'ani | min | hama'arakhah | nasti | haiyom
-vaiyomer
-meh | hayah | hadavar | beni
+vaiyomer | meh | hayah | hadavar | beni
 
 4:17
 vaiya'an | hamvaser
-vaiyomer
-nas | Yisra'el | lifnei | felishtim
+vaiyomer | nas | Yisra'el | lifnei | felishtim
 vegam | magefah | gedolah | hayetah | va'am
 vegam | shenei | vaneikha | metu | Chafeni | Ufinchas
 va'aron | ha'elohim | Nilkachah
@@ -116,8 +112,10 @@ ki | ven | yaladet | velo | anetah
 velo | shatah | libah
 
 4:21
-vatikra | lana'ar | I | Khavod | lemor
-galah | khavod | Miyisra'el | el | hilakach | aron | ha'elohim | ve'el | chamiha | ve'ishah
+vatikra | lana'ar | I | Khavod
+lemor
+galah | khavod | Miyisra'el | el | hilakach | aron | ha'elohim
+ve'el | chamiha | ve'ishah
 
 4:22
 vatomer

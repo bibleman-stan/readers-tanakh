@@ -1,5 +1,6 @@
 25:1
-vaydaber | Yahweh | el | Mosheh | lemor
+vaydaber | Yahweh | el | Mosheh
+lemor
 
 25:2
 daber | el | benei | Yisra'el
@@ -22,7 +23,8 @@ veliktoret | hasamim
 
 25:7
 avnei | shoham
-ve'avnei | milu'im | la'efod | velachoshen
+ve'avnei | milu'im | la'efod
+velachoshen
 
 25:8
 ve'asu | li | mikdash | veshakhanti | betokham
@@ -82,7 +84,8 @@ ish | el | achiv | el | hakaporet
 yihyu | penei | hakeruvim
 
 25:21
-venatata | et | hakaporet | al | ha'aron | milma'elah | ve'el | ha'aron
+venatata | et | hakaporet | al | ha'aron | milma'elah
+ve'el | ha'aron
 titen | et | ha'edut | asher | eten | eleikha
 
 25:22
@@ -105,7 +108,8 @@ ve'asita | lo | arba | tabe'ot | zahav | venatata | et | hataba'ot
 al | arba | hape'ot | asher | le'arba | raglav
 
 25:27
-le'umat | hamisgeret | tihyeina | hataba'ot | levatim | levadim | laset | et | hashulchan
+le'umat | hamisgeret | tihyeina | hataba'ot | levatim | levadim
+laset | et | hashulchan
 
 25:28
 ve'asita | et | habadim | atzei | shitim

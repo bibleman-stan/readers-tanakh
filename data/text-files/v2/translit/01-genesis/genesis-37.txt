@@ -35,13 +35,13 @@ vatishtachaveina | la'alumati
 37:8
 vaiyomeru | lo | echav
 hamalokh | timlokh | aleinu | im | mashol | timshol
-banu | vaiyosifu | od | seno | oto | al | chalomotav | ve'al | devarav
+banu | vaiyosifu | od | seno | oto | al | chalomotav
+ve'al | devarav
 
 37:9
 vaiyachalom | od | chalom | acher
 vaysaper | oto | le'echav
-vaiyomer
-hineh | chalamti | chalom | od
+vaiyomer | hineh | chalamti | chalom | od
 vehineh | hashemesh | vehaiyareach | ve'achad | asar | kokhavim | mishtachavim | li
 
 37:10
@@ -88,7 +88,8 @@ vaiyimtza'em | Bedotan
 
 37:18
 vaiyir'u | oto | merachok
-uveterem | yikrav | aleihem | vaiyitnakelu | oto | lahamito
+uveterem | yikrav | aleihem | vaiyitnakelu | oto
+lahamito
 
 37:19
 vaiyomeru | ish | el | achiv
@@ -102,8 +103,7 @@ venir'eh | mah | yihyu | chalomotav
 37:21
 vaiyishma | Re'uven
 vaiyatzilehu | miyadam
-vaiyomer
-lo | nakenu | nafesh
+vaiyomer | lo | nakenu | nafesh
 
 37:22
 vaiyomer | alehem | Re'uven | al | tishpekhu | dam
@@ -147,8 +147,7 @@ vehineh | ein | Yosef | babor | vaiyikra | et | begadav
 
 37:30
 vaiyashov | el | echav
-vaiyomar | haiyeled | einenu | va'ani
-anah | ani | va
+vaiyomar | haiyeled | einenu | va'ani | anah | ani | va
 
 37:31
 vaiyikchu | et | ketonet | Yosef
@@ -173,8 +172,7 @@ vaiyit'abel | al | beno | yamim | rabim
 37:35
 vaiyakumu | khol | banav
 vekhol | benotav | lenachamo | vayma'en | lehitnachem
-vaiyomer
-ki | ered | el | beni | avel | she'olah
+vaiyomer | ki | ered | el | beni | avel | she'olah
 vaiyevek | oto | aviv
 
 37:36

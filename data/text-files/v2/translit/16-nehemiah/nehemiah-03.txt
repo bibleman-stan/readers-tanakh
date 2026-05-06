@@ -95,7 +95,8 @@ acharav | hechezik | Azaryah | ven | Ma'aseyah | ben | Ananeyah | etzel | beito
 
 3:24
 acharav | hechezik | Binui | ben | Chenadad | midah | shenit
-mibeit | Azaryah | ad | hamiktzoa | ve'ad | hapinah
+mibeit | Azaryah | ad | hamiktzoa
+ve'ad | hapinah
 
 3:25
 Palal | ben | Uzai | mineged | hamiktzoa
@@ -138,8 +139,7 @@ vaiyal'eg | al | haiyehudim
 
 3:34
 vaiyomer | lifnei | echav | vecheil | Shomeron
-vaiyomer
-mah | haiyehudim | ha'amelalim | osim
+vaiyomer | mah | haiyehudim | ha'amelalim | osim
 haya'azvu | lahem | hayizbachu | haykhalu | vaiyom | haychaiyu | et | ha'avanim | me'aremot | he'afar
 vehemah | serufot
 
@@ -161,4 +161,5 @@ ki | hikh'isu | leneged | habonim
 3:38
 vanivneh | et | hachomah
 vatikasher | kol | hachomah | ad | chetzyah
-vayhi | lev | la'am | la'asot
+vayhi | lev | la'am
+la'asot

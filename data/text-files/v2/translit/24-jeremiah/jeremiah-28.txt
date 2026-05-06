@@ -5,8 +5,7 @@ vekhol | ha'am | lemor
 
 28:2
 koh | amar | Yahweh | tzeva'ot | elohei | Yisra'el
-lemor
-shavarti | et | ol | melekh | Bavel
+lemor | shavarti | et | ol | melekh | Bavel
 
 28:3
 be'od | shenatayim | yamim | ani | meshiv | el | hamakom | hazeh
@@ -50,13 +49,15 @@ vaiyikach | Chananyah | hanavi | et | hamotah | me'al | tzavar | Yirmeyah | hana
 vaiyishberehu
 
 28:11
-vaiyomer | Chananyah | le'einei | khol | ha'am | lemor
+vaiyomer | Chananyah | le'einei | khol | ha'am
+lemor
 koh | amar | Yahweh
 kakhah | eshbor | et | ol | Nevukhadnetzar | melekh | Bavel | be'od | shenatayim | yamim
 me'al | tzavar | kol | hagoyim | vaiyelekh | Yirmeyah | hanavi | ledarko
 
 28:12
-vayhi | devar | Yahweh | el | Yirmeyah | acharei | shevor | Chananyah | hanavi | et | hamotah | me'al | tzavar | Yirmeyah | hanavi | lemor
+vayhi | devar | Yahweh | el | Yirmeyah | acharei | shevor | Chananyah | hanavi | et | hamotah | me'al | tzavar | Yirmeyah | hanavi
+lemor
 
 28:13
 halokh | ve'amarta | el | Chananyah | lemor | koh | amar | Yahweh

@@ -71,11 +71,13 @@ vehinachti | etkhem | al | admatkhem
 vida'tem | ki | ani | Yahweh | dibarti | ve'asiti | ne'um | Yahweh
 
 37:15
-vayhi | devar | Yahweh | elai | lemor
+vayhi | devar | Yahweh | elai
+lemor
 
 37:16
 ve'atah | ven | adam | kach | lekha | etz | echad
-ukheto | alav | Lihudah | velivnei | Yisra'el
+ukheto | alav | Lihudah
+velivnei | Yisra'el
 chaverov | ulekach | etz | echad
 ukhetov | alav | Leyosef | etz | Efrayim | vekhol | beit | Yisra'el | chaverov
 
@@ -84,8 +86,7 @@ vekarav | otam | echad | el | echad | lekha | le'etz | echad | vehayu | la'achad
 
 37:18
 vekha'asher | yomeru | eleikha | benei | amekha
-lemor
-halo | tagid | lanu | mah | eleh | lakh
+lemor | halo | tagid | lanu | mah | eleh | lakh
 
 37:19
 daber | alehem | koh | amar | Adonai | Yahweh
@@ -109,7 +110,8 @@ velo | yihyeh | od | lishnei | goyim
 velo | yechatzu | od | lishtei | mamlakhot | od
 
 37:23
-velo | yitame'u | od | begiluleihem | uveshikutzeihem
+velo | yitame'u | od | begiluleihem
+uveshikutzeihem
 uvekhol | pish'eihem
 vehosha'ti | otam | mikol | moshevoteihem | asher | chate'u | vahem
 vetiharti | otam | vehayu | li | le'am | va'ani

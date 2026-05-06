@@ -92,7 +92,9 @@ vezarakta | et | hadam | al | hamizbeach | saviv
 29:21
 velakachta | min | hadam | asher | al | hamizbeach
 umishemen | hamishchah
-vehizeita | al | Aharon | ve'al | begadav | ve'al | banav
+vehizeita | al | Aharon
+ve'al | begadav
+ve'al | banav
 ve'al | bigdei | vanav | ito
 vekadash | hu | uvegadav | uvanav
 uvigdei | vanav | ito
@@ -135,7 +137,8 @@ uterumah | yihyeh | me'et | benei | Yisra'el | mizivchei | shalmeihem | terumata
 
 29:29
 uvigdei | hakodesh | asher | Le'aharon | yihyu | levanav
-acharav | lemashechah | vahem | ulemale | vam | et | yadam
+acharav | lemashechah | vahem
+ulemale | vam | et | yadam
 
 29:30
 shiv'at | yamim | yilbasham | hakohen | tachtav | mibanav
@@ -158,7 +161,8 @@ lekadesh | otam
 vezar | lo | yokhal | ki | kodesh | hem
 
 29:34
-ve'im | yivater | mibesar | hamilu'im | umin | halechem | ad | haboker
+ve'im | yivater | mibesar | hamilu'im
+umin | halechem | ad | haboker
 vesarafta | et | hanotar | ba'esh
 lo | ye'akhel | ki | kodesh | hu
 

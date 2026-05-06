@@ -1,10 +1,8 @@
 3:1
-ani | hagever | ra'ah | oni
-beshevet | evrato
+ani | hagever | ra'ah | oni | beshevet | evrato
 
 3:2
-oti | nahag | vaiyolakh
-choshekh | velo | or
+oti | nahag | vaiyolakh | choshekh | velo | or
 
 3:3
 akh | bi | yashuv | yahafokh | yado | kol | haiyom
@@ -14,12 +12,10 @@ bilah | vesari | ve'ori
 shibar | atzmotai
 
 3:5
-banah | alai | vaiyakaf
-rosh | utela'ah
+banah | alai | vaiyakaf | rosh | utela'ah
 
 3:6
-bemachashakim | hoshivani
-kemetei | olam
+bemachashakim | hoshivani | kemetei | olam
 
 3:7
 gadar | ba'adi | velo | etze
@@ -82,24 +78,20 @@ chasdei | Yahweh | ki | lo | tamenu
 ki | lo | khalu | rachamav
 
 3:23
-chadashim | labekarim | rabah
-emunatekha
+chadashim | labekarim | rabah | emunatekha
 
 3:24
-chelki | Yahweh | amerah | nafshi | al | ken
-ochil | lo
+chelki | Yahweh | amerah | nafshi | al | ken | ochil | lo
 
 3:25
 tov | Yahweh | lekovav
 lenefesh | tidreshenu
 
 3:26
-tov | veyachil | vedumam
-litshu'at | Yahweh
+tov | veyachil | vedumam | litshu'at | Yahweh
 
 3:27
-tov | lagever
-ki | yisa | ol | bin'urav
+tov | lagever | ki | yisa | ol | bin'urav
 
 3:28
 yeshev | badad | veyidom
@@ -114,34 +106,29 @@ yiten | lemakehu | lechi
 yisba | becherpah
 
 3:31
-ki | lo | yiznach | le'olam
-Adonai
+ki | lo | yiznach | le'olam | Adonai
 
 3:32
 ki | im | hogah
-vericham
-kero | chasdov
+vericham | kero | chasdov
 
 3:33
 ki | lo | inah | milibo
 vaiyageh | benei | ish
 
 3:34
-ledake | tachat | raglav | kol
-asirei | aretz
+ledake | tachat | raglav | kol | asirei | aretz
 
 3:35
 lehatot | mishpat | gaver | neged
 penei | elyon
 
 3:36
-le'avet | adam | berivo
-Adonai
+le'avet | adam | berivo | Adonai
 lo | ra'ah
 
 3:37
-mi | zeh | amar | vatehi
-Adonai
+mi | zeh | amar | vatehi | Adonai
 lo | tzivah
 
 3:38
@@ -167,34 +154,29 @@ haragta
 lo | chamalta
 
 3:44
-sakotah | ve'anan | lakh | me'avor | tefilah
+sakotah | ve'anan | lakh
+me'avor | tefilah
 
 3:45
-sechi | uma'os | tesimenu
-bekerev | ha'amim
+sechi | uma'os | tesimenu | bekerev | ha'amim
 
 3:46
 patzu | aleinu | pihem | kol | oyeveinu
 
 3:47
-pachad | vafachat | hayah | lanu
-hashet | vehashaver
+pachad | vafachat | hayah | lanu | hashet | vehashaver
 
 3:48
-palgei | mayim | terad | eini
-al | shever | bat | ami
+palgei | mayim | terad | eini | al | shever | bat | ami
 
 3:49
-eini | Nigerah | velo | tidmeh
-me'ein | hafugot
+eini | Nigerah | velo | tidmeh | me'ein | hafugot
 
 3:50
-ad | yashkif | veyere
-Yahweh | mishamayim
+ad | yashkif | veyere | Yahweh | mishamayim
 
 3:51
-eini | olah | lenafshi | mikol
-benot | iri
+eini | olah | lenafshi | mikol | benot | iri
 
 3:52
 tzod | tzaduni | katzipor
@@ -204,15 +186,13 @@ oyevai | chinam
 tzametu | vabor | chaiyai | vaiyadu | even | bi
 
 3:54
-tzafu | mayim | al | roshi
-amarti | Nigzareti
+tzafu | mayim | al | roshi | amarti | Nigzareti
 
 3:55
 karati | shimkha | Yahweh | mibor | tachtiyot
 
 3:56
-koli
-shama'eta
+koli | shama'eta
 al | ta'lem | azenekha | leravchati | leshav'ati
 
 3:57
@@ -241,13 +221,10 @@ siftei | kamai | vehegyonam | alai | kol | haiyom
 shivtam | vekimatam | habitah | ani | manginatam
 
 3:64
-tashiv | lahem | gemul | Yahweh
-kema'aseh | yedeihem
+tashiv | lahem | gemul | Yahweh | kema'aseh | yedeihem
 
 3:65
-titen | lahem | meginat | lev
-ta'alatekha | lahem
+titen | lahem | meginat | lev | ta'alatekha | lahem
 
 3:66
-tirdof | be'af | vetashmidem | mitachat
-shemei | Yahweh
+tirdof | be'af | vetashmidem | mitachat | shemei | Yahweh

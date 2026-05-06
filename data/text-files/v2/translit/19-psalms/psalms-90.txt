@@ -1,6 +1,5 @@
 90:1
-tefilah | Lemosheh | ish | ha'elohim
-Adonai
+tefilah | Lemosheh | ish | ha'elohim | Adonai
 ma'on | atah | hayita | lanu
 bedor | vador
 
@@ -25,7 +24,8 @@ zeramtom | shenah | yihyu | baboker | kechatzir | yachalof
 baboker | yatzitz | vechalaf | la'erev | yemolel | veyavesh
 
 90:7
-ki | khalinu | ve'apekha | uvachamatekha | Nivhalnu
+ki | khalinu | ve'apekha
+uvachamatekha | Nivhalnu
 
 90:8
 shatah | avonoteinu | lenegdekha | alumenu | lim'or | paneikha
@@ -42,8 +42,7 @@ vana'ufah
 
 90:11
 mi | yodea | oz | apekha
-ukheyir'atekha
-evratekha
+ukheyir'atekha | evratekha
 
 90:12
 limnot | yameinu | ken | hoda

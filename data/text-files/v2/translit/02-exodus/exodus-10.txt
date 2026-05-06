@@ -86,9 +86,10 @@ velo | Notar | kol | yerek | ba'etz
 uve'esev | hasadeh | bekhol | eretz | Mitzrayim
 
 10:16
-vaymaher | par'oh | likro | Lemosheh | Ule'aharon
-vaiyomer
-chatati | Layahweh | eloheikhem | velakhem
+vaymaher | par'oh | likro | Lemosheh
+Ule'aharon
+vaiyomer | chatati | Layahweh | eloheikhem
+velakhem
 
 10:17
 ve'atah | sa | na | chatati | akh | hapa'am
@@ -127,8 +128,7 @@ ulekhol | benei | Yisra'el | hayah | or | bemoshevotam
 
 10:24
 vaiyikra | far'oh | el | Mosheh
-vaiyomer
-lekhu | ivdu | et | Yahweh
+vaiyomer | lekhu | ivdu | et | Yahweh
 rak | tzonkhem | uvekarkhem | yutzag
 gam | tapekhem | yelekh | imakhem
 
@@ -143,7 +143,8 @@ ki | mimenu | nikach | la'avod | et | Yahweh | eloheinu
 va'anachnu | lo | neda | mah | na'avod | et | Yahweh | ad | bo'enu | shamah
 
 10:27
-vaychazek | Yahweh | et | lev | par'oh | velo | avah | leshalecham
+vaychazek | Yahweh | et | lev | par'oh | velo | avah
+leshalecham
 
 10:28
 vaiyomer | lo | far'oh | lekh | me'alai

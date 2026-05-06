@@ -11,8 +11,7 @@ vaiyomer | elav | Yahweh
 vaiyomer | mateh
 
 4:3
-vaiyomer
-hashlikhehu | artzah
+vaiyomer | hashlikhehu | artzah
 vaiyashlikhehu | artzah
 vayhi | lenachash
 vaiyanos | Mosheh | mipanav
@@ -36,8 +35,7 @@ vaiyave | yado | becheiko
 vaiyotzi'ah | vehineh | yado | metzora'at | kashaleg
 
 4:7
-vaiyomer
-hashev | yadekha | el | cheikecha
+vaiyomer | hashev | yadekha | el | cheikecha
 vaiyashev | yado | el | cheiko
 vaiyotzi'ah | mecheiko
 vehineh | shavah | kivsaro
@@ -65,16 +63,14 @@ ki | khevad | peh | ukhevad | lashon | anokhi
 vaiyomer | Yahweh | elav
 mi | sam | peh | la'adam
 o | mi | yasum | ilem | o | cheresh | o | fikeach | o | iver
-halo | anokhi
-Yahweh
+halo | anokhi | Yahweh
 
 4:12
 ve'atah | lekh
 ve'anokhi | ehyeh | im | pikha | vehoreitikha | asher | tedaber
 
 4:13
-vaiyomer
-bi | Adonai | shelach | na | beyad | tishlach
+vaiyomer | bi | Adonai | shelach | na | beyad | tishlach
 
 4:14
 vaiyichar | af | Yahweh | Bemosheh
@@ -86,7 +82,8 @@ vera'akha | vesamach | belibo
 
 4:15
 vedibarta | elav | vesamta | et | hadevarim | befiv
-ve'anokhi | ehyeh | im | pikha | ve'im | pihu
+ve'anokhi | ehyeh | im | pikha
+ve'im | pihu
 vehoreiti | etkhem | et | asher | ta'asun
 
 4:16

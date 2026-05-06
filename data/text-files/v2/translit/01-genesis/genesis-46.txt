@@ -10,8 +10,7 @@ vaiyomer | Ya'ako | Ya'ako
 vaiyomer | hineni
 
 46:3
-vaiyomer
-anokhi | ha'el
+vaiyomer | anokhi | ha'el
 elohei | avikha | al | tira | meredah | Mitzraymah
 ki | legoy | gadol | asimekha | sham
 
@@ -21,7 +20,8 @@ a'alkha | gam | aloh
 Veyosef | yashit | yado | al | eineikha
 
 46:5
-vaiyakom | Ya'ako | Mibe'er | Shava | vaiyis'u | venei | Yisra'el | et | Ya'ako | avihem | ve'et | tapam | ve'et | nesheihem | ba'agalot
+vaiyakom | Ya'ako | Mibe'er | Shava
+vaiyis'u | venei | Yisra'el | et | Ya'ako | avihem | ve'et | tapam | ve'et | nesheihem | ba'agalot
 asher | shalach | par'oh | laset | oto
 
 46:6
@@ -145,8 +145,7 @@ uveit | avi | asher | be'eretz | Kena'an | ba'u | elai
 46:32
 veha'anashim | ro'ei | tzon
 ki | anshei | mikneh | hayu | vetzonam | uvekaram
-vekhol | asher | lahem
-hevi'u
+vekhol | asher | lahem | hevi'u
 
 46:33
 vehayah | ki | yikra | lakhem

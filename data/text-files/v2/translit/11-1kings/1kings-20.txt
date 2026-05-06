@@ -14,11 +14,13 @@ uvaneikha | hatovim | li | hem
 
 20:4
 vaiya'an | melekh | Yisra'el
-vaiyomer | kidvarekha | adoni | hamelekh | lekha | ani | vekhol | asher | li
+vaiyomer | kidvarekha | adoni | hamelekh | lekha | ani
+vekhol | asher | li
 
 20:5
 vaiyashuvu | hamal'akhim
-vaiyomeru | koh | amar | Ben | Hadad | lemor
+vaiyomeru | koh | amar | Ben | Hadad
+lemor
 ki | shalachti | eleikha | lemor | kaspekha | uzehavekha | venasheikha
 uvaneikha | li | titen
 
@@ -32,7 +34,9 @@ yasimu | veyadam | velakachu
 vaiyikra | melekh | Yisra'el | lekhol | ziknei | ha'aretz
 vaiyomer
 de'u | na | ure'u | ki | ra'ah | zeh | mevakesh
-ki | shalach | elai | lenashai | ulevanai | ulekhaspi
+ki | shalach | elai | lenashai
+ulevanai
+ulekhaspi
 velizhavi | velo | mana'ti | mimenu
 
 20:8
@@ -50,14 +54,12 @@ vayshivuhu | davar
 
 20:10
 vaiyishlach | elav | Ben | Hadad
-vaiyomer
-koh | ya'asun | li | elohim
+vaiyomer | koh | ya'asun | li | elohim
 vekhoh | yosifu | im | yispok | afar | Shomeron | lish'alim | lekhol | ha'am | asher | beraglai
 
 20:11
 vaiya'an | melekh | Yisra'el
-vaiyomer
-daberu | al | yithalel | choger | kimfateach
+vaiyomer | daberu | al | yithalel | choger | kimfateach
 
 20:12
 vayhi | kishmoa | et | hadavar | hazeh | vehu | shoteh | hu | vehamelakhim | basukot | vaiyomer | el | avadav | simu
@@ -87,13 +89,11 @@ Uven | Hadad | shoteh | shikor | basukot | hu | vehamelakhim | sheloshim | ushen
 20:17
 vaiyetze'u | na'arei | sarei | hamedinot | barishonah
 vaiyishlach | Ben | Hadad
-vaiyagidu | lo | lemor
-anashim
+vaiyagidu | lo | lemor | anashim
 yatze'u | Mishomeron
 
 20:18
-vaiyomer
-im | leshalom | yatza'u
+vaiyomer | im | leshalom | yatza'u
 tifsum | chaiyim
 ve'im | lemilchamah | yatza'u | chaiyim | tifsum
 
@@ -180,8 +180,7 @@ amar | techi | na | nafshi | vaiyomer | ha'odenu | chai | achi | hu
 
 20:33
 veha'anashim | yenachashu | vaymaharu | vaiyachletu | hamimenu | vaiyomeru | achikha | Ven | Hadad
-vaiyomer
-bo'u | kachuhu
+vaiyomer | bo'u | kachuhu
 vaiyetze | elav | Ben | Hadad
 vaiya'alehu | al | hamerkavah
 
@@ -194,7 +193,8 @@ vayshalechehu
 
 20:35
 ve'ish | echad | mibenei | hanevi'im | amar | el | re'ehu | bidvar | Yahweh
-hakeini | na | vayma'en | ha'ish | lehakoto
+hakeini | na | vayma'en | ha'ish
+lehakoto
 
 20:36
 vaiyomer | lo
@@ -206,8 +206,7 @@ vaiyakehu
 
 20:37
 vaiyimtza | ish | acher
-vaiyomer
-hakeini | na
+vaiyomer | hakeini | na
 vaiyakehu | ha'ish | hakeh | ufatzoa
 
 20:38
@@ -221,8 +220,7 @@ vehu | tza'ak | el | hamelekh
 vaiyomer | avdekha
 yatza | vekerev | hamilchamah | vehineh | ish | sar
 vaiyave | elai | ish
-vaiyomer
-shemor | et | ha'ish | hazeh
+vaiyomer | shemor | et | ha'ish | hazeh
 im | hipaked | yipaked
 vehayetah | nafshekha | tachat | nafsho
 o | khikar | kesef | tishkol

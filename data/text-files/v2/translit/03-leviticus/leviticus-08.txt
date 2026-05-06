@@ -1,5 +1,6 @@
 8:1
-vaydaber | Yahweh | el | Mosheh | lemor
+vaydaber | Yahweh | el | Mosheh
+lemor
 
 8:2
 kach | et | Aharon | ve'et | banav | ito | ve'et | habegadim
@@ -47,7 +48,8 @@ vaykadesh | otam
 
 8:11
 vaiyaz | mimenu | al | hamizbeach | sheva | pe'amim
-vaiyimshach | et | hamizbeach | ve'et | kol | kelav | ve'et | hakiyor | ve'et | kano | lekadesham
+vaiyimshach | et | hamizbeach | ve'et | kol | kelav | ve'et | hakiyor | ve'et | kano
+lekadesham
 
 8:12
 vaiyitzok | mishemen | hamishchah | al | rosh | Aharon
@@ -146,7 +148,8 @@ ka'asher | tzivah | Yahweh | et | Mosheh
 8:30
 vaiyikach | Mosheh | mishemen | hamishchah
 umin | hadam | asher | al | hamizbeach
-vaiyaz | al | Aharon | al | begadav | ve'al | banav
+vaiyaz | al | Aharon | al | begadav
+ve'al | banav
 ve'al | bigdei | vanav
 ito | vaykadesh | et | Aharon | et | begadav | ve'et | banav | ve'et | bigdei | vanav | ito
 

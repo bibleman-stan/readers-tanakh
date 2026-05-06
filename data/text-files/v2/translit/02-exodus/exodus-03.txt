@@ -40,9 +40,14 @@ ki | yada'ti | et | makh'ovav
 
 3:8
 va'ered | lehatzilo | miyad | Mitzrayim
-uleha'aloto | min | ha'aretz | hahiv
-el | eretz | tovah | urechavah | el | eretz | zavat | chalav | udevash | el | mekom | hakena'ani | vehachiti
-veha'emori | vehapperizi | vehachivi | vehayvusi
+uleha'aloto | min | ha'aretz | hahiv | el | eretz | tovah
+urechavah | el | eretz | zavat | chalav
+udevash | el | mekom | hakena'ani
+vehachiti
+veha'emori
+vehapperizi
+vehachivi
+vehayvusi
 
 3:9
 ve'atah | hineh | tza'akat | benei | Yisra'el | ba'ah | elai | vegam | ra'iti | et | halachatz
@@ -73,8 +78,7 @@ shelachani | aleikhem | ve'ameru | li | mah | shemo | mah | omar | alehem
 3:14
 vaiyomer | elohim | el | Mosheh
 ehyeh | asher | ehyeh
-vaiyomer
-koh | tomar | livnei | Yisra'el
+vaiyomer | koh | tomar | livnei | Yisra'el
 ehyeh | shelachani | aleikhem
 
 3:15
@@ -85,7 +89,8 @@ shelachani | aleikhem | zeh | shemi | le'olam
 vezeh | zikhri | ledor | dor
 
 3:16
-lekh | ve'asafta | et | ziknei | Yisra'el | ve'amarta | alehem | Yahweh | elohei | avoteikhem | Nir'ah | elai | elohei | Avraham | Yitzchak | Veya'ako | lemor
+lekh | ve'asafta | et | ziknei | Yisra'el | ve'amarta | alehem | Yahweh | elohei | avoteikhem | Nir'ah | elai | elohei | Avraham | Yitzchak | Veya'ako
+lemor
 pakod | pakadti | etkhem
 ve'et | he'asui | lakhem | Bemitzrayim
 

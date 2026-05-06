@@ -1,5 +1,6 @@
 20:1
-vaydaber | elohim | et | kol | hadevarim | ha'eleh | lemor
+vaydaber | elohim | et | kol | hadevarim | ha'eleh
+lemor
 
 20:2
 anokhi | Yahweh | eloheikha | asher | hotzetikha | me'eretz | Mitzrayim
@@ -64,7 +65,10 @@ lo | tgeno
 lo | ta'aneh | vere'akha | ed | shaker
 
 20:17
-lo | tachmod | beit | re'ekha | lo | tachmod | eshet | re'ekha | ve'avdo | va'amato | veshoro | vachamoro
+lo | tachmod | beit | re'ekha | lo | tachmod | eshet | re'ekha
+ve'avdo | va'amato
+veshoro
+vachamoro
 vekhol | asher | lere'ekha
 
 20:18

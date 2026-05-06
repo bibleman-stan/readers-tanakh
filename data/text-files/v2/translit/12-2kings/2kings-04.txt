@@ -33,15 +33,15 @@ keli | vaiya'amod | hashamen
 
 4:7
 vatavo | vataged | le'ish | ha'elohim
-vaiyomer
-lekhi | mikhri | et | hashemen
+vaiyomer | lekhi | mikhri | et | hashemen
 veshalemi | et | nishyekhe | ve'at | vebaneikhe
 tichyi | banotar
 
 4:8
 vayhi | haiyom | vaiya'avor | Elisha | el | Shunem | vesham | ishah | gedolah
 vatachazek | bo | le'ekhol | lachem
-vayhi | midei | avero | yasur | shamah | le'ekhol | lachem
+vayhi | midei | avero | yasur | shamah
+le'ekhol | lachem
 
 4:9
 vatomer | el | ishah
@@ -50,12 +50,14 @@ kadoosh | hu | over | aleinu | tamid
 
 4:10
 na'aseh | na | aliyat | kir | ketanah
-venasim | lo | sham | mitah | veshulchan | vekhise | umenorah | vehayah | bevo'o | eleinu | yasur | shamah
+venasim | lo | sham | mitah | veshulchan | vekhise | umenorah | vehayah
+bevo'o | eleinu | yasur | shamah
 
 4:11
 vayhi | haiyom
 vaiyavo | shamah
-vaiyasar | el | ha'aliyah | vaiyishkav | shamah
+vaiyasar | el | ha'aliyah
+vaiyishkav | shamah
 
 4:12
 vaiyomer | el | Gechazi | na'aro
@@ -67,8 +69,7 @@ vaiyomer | lo
 emor | na | eleiha | hineh | charadt | eleinu | et | kol | hacharadah | hazot
 meh | la'asot | lakh
 hayesh | ledaber | lokh | el | hamelekh | o | el | sar | hatzava
-vatomer
-betokh | ami | anokhi | yoshavet
+vatomer | betokh | ami | anokhi | yoshavet
 
 4:14
 vaiyomer
@@ -77,7 +78,8 @@ vaiyomer | Geichazi | aval | ben | ein | lah
 ve'ishah | zaken
 
 4:15
-vaiyomer | kera | lah | vaiyikra | lah
+vaiyomer | kera | lah
+vaiyikra | lah
 vata'amod | bapatach
 
 4:16
@@ -145,8 +147,7 @@ harpeh | lah | ki | nafshah | marah | lah
 Vayahweh | he'lim | mimeni | velo | higid | li
 
 4:28
-vatomer
-hasha'alti | ven | me'et | adoni
+vatomer | hasha'alti | ven | me'et | adoni
 halo | amarti
 lo | tashleh | oti
 
@@ -194,12 +195,10 @@ vaiyifkach | hana'ar | et | einav
 
 4:36
 vaiyikra | el | Geichazi
-vaiyomer
-kera | el | hashunamit | hazot
+vaiyomer | kera | el | hashunamit | hazot
 vaiyikra'eha
 vatavo | elav
-vaiyomer
-se'i | venekh
+vaiyomer | se'i | venekh
 
 4:37
 vatavo | vatipol | al | raglav
@@ -228,8 +227,7 @@ velo | yakhelu | le'ekhol
 4:41
 vaiyomer | ukechu | kemach
 vaiyashlekh | el | hasir
-vaiyomer
-tzak | la'am | veyokhelu
+vaiyomer | tzak | la'am | veyokhelu
 velo | hayah | davar | ra | basir
 
 4:42
@@ -240,8 +238,7 @@ ten | la'am | veyokhelu
 vaiyomer | meshareto
 mah | eten | zeh
 lifnei | me'ah | ish
-vaiyomer
-ten | la'am | veyokhelu
+vaiyomer | ten | la'am | veyokhelu
 ki | khoh | amar | Yahweh | akhol | vehoter
 
 4:44

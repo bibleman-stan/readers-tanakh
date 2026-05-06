@@ -8,11 +8,13 @@ vaiyomer | David | e'eseh | chesed | im | Chanun
 ben | Nachash | ki | asah | aviv | imi | chesed
 vaiyishlach | David | mal'akhim
 lenachamo | al | aviv
-vaiyavo'u | avdei | David | el | eretz | benei | Amon | el | Chanun | lenachamo
+vaiyavo'u | avdei | David | el | eretz | benei | Amon | el | Chanun
+lenachamo
 
 19:3
 vaiyomeru | sarei | venei | Amon | Lechanun | hamkhabed | David | et | avikha | be'eineikha
-ki | shalach | lekha | menachamim | halo | ba'avur | lachkor
+ki | shalach | lekha | menachamim | halo | ba'avur
+lachkor
 velahafokh
 uleragel | ha'aretz | ba'u | avadav | eleikha
 
@@ -22,14 +24,17 @@ vaiyikhrot | et | madveihem | bachetzi | ad | hamifsa'ah
 vayshalechem
 
 19:5
-vaiyelekhu | vaiyagidu | Ledavid | al | ha'anashim | vaiyishlach | likratam
+vaiyelekhu | vaiyagidu | Ledavid | al | ha'anashim | vaiyishlach
+likratam
 ki | hayu | ha'anashim | nikhlamim | me'od | vaiyomer | hamelekh | shevu | Virecho | ad | asher | yetzamach | zekankhem
 veshavtem
 
 19:6
 vaiyir'u | benei | Amon
-ki | hitba'ashu | im | David | vaiyishlach | Chanun | uvenei | Amon | elef | kikar | kesef | liskor | lahem | min | Aram | Naharayim
-umin | Aram | Ma'akhah | Umitzovah | rekhev | ufarashim
+ki | hitba'ashu | im | David | vaiyishlach | Chanun | uvenei | Amon | elef | kikar | kesef
+liskor | lahem | min | Aram | Naharayim
+umin | Aram | Ma'akhah
+Umitzovah | rekhev | ufarashim
 
 19:7
 vaiyiskeru | lahem | shenayim | usheloshim | elef | rekhev | ve'et | melekh | Ma'akhah | ve'et | amo
@@ -58,8 +63,7 @@ ve'et | yeter | ha'am | natan | beyad | Avshai | achiv
 vaiya'arkhu | likrat | benei | Amon
 
 19:12
-vaiyomer
-im | techezak | mimeni | Aram
+vaiyomer | im | techezak | mimeni | Aram
 vehayita | li | litshu'ah
 ve'im | benei | Amon | yechezku | mimekha | vehosha'tikha
 

@@ -53,11 +53,11 @@ ki | tilonu | alav
 16:12
 vaiyishlach | Mosheh | likro | Ledatan
 Vela'aviram | benei | Eli'av
-vaiyomeru
-lo | na'aleh
+vaiyomeru | lo | na'aleh
 
 16:13
-ham'at | ki | he'elitanu | me'eretz | zavat | chalav | udevash | lahamitenu
+ham'at | ki | he'elitanu | me'eretz | zavat | chalav | udevash
+lahamitenu
 bamidbar | ki | tistarer | aleinu | gam | histarer
 
 16:14
@@ -92,7 +92,8 @@ vaiya'amdu | petach | ohel | mo'ed
 Umosheh | Ve'aharon
 
 16:19
-vaiyakhel | aleihem | Korach | et | kol | ha'edah | el | petach | ohel | mo'ed | vaiyera | khevod | Yahweh | el | kol | ha'edah
+vaiyakhel | aleihem | Korach | et | kol | ha'edah | el | petach | ohel | mo'ed
+vaiyera | khevod | Yahweh | el | kol | ha'edah
 
 16:20
 vaydaber | Yahweh | el | Mosheh
@@ -109,7 +110,8 @@ ha'ish | echad | yecheta
 ve'al | kol | ha'edah | tiktzof
 
 16:23
-vaydaber | Yahweh | el | Mosheh | lemor
+vaydaber | Yahweh | el | Mosheh
+lemor
 
 16:24
 daber | el | ha'edah | lemor | he'alu | misaviv | lemishkan | Korach | Datan | Va'aviram

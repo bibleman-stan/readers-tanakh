@@ -27,7 +27,8 @@ lo | zakheru | et | ro | chasadeikha
 vaiyamru | al | yam | beyam | suf
 
 106:8
-vaiyoshi'em | lema'an | shemo | lehodia | et | gevurato
+vaiyoshi'em | lema'an | shemo
+lehodia | et | gevurato
 
 106:9
 vaiyig'ar | beyam | suf | vaiyecherav
@@ -101,10 +102,12 @@ vaiyisa | yado | lahem
 lehapil | otam | bamidbar
 
 106:27
-ulehapil | zar'om | bagoyim | ulezarotam | ba'aratzot
+ulehapil | zar'om | bagoyim
+ulezarotam | ba'aratzot
 
 106:28
-vaiyitzamedu | Leva'al | Pe'or | vaiyokhelu | zivchei | metim
+vaiyitzamedu | Leva'al | Pe'or
+vaiyokhelu | zivchei | metim
 
 106:29
 vaiyakh'isu | bema'aleihem
@@ -166,7 +169,8 @@ vehemah | yamru | va'atzatam
 vaiyamoku | ba'avonam
 
 106:44
-vaiyar | batzar | lahem | beshame'o | et | rinatam
+vaiyar | batzar | lahem
+beshame'o | et | rinatam
 
 106:45
 vaiyizkor | lahem | berito
@@ -178,8 +182,7 @@ vaiyiten | otam | lerachamim | lifnei | kol | shoeihem
 106:47
 hoshi'enu | Yahweh | eloheinu
 vekabetzenu | min | hagoyim
-lehodot | leshem | kodshecha | lehishtabeach
-bithilatekha
+lehodot | leshem | kodshecha | lehishtabeach | bithilatekha
 
 106:48
 barukh | Yahweh | elohei | Yisra'el | min | ha'olam | ve'ad | ha'olam

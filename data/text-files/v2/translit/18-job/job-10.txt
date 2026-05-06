@@ -15,12 +15,12 @@ ha'einei | vasar | lakh
 im | kir'ot | enoosh | tir'eh
 
 10:5
-hakhimei | enoosh | yameikha
-imosh | shenoteikha
+hakhimei | enoosh | yameikha | imosh | shenoteikha
 kimei | gaver
 
 10:6
-ki | tevakesh | la'avoni | ulechatati | tidroosh
+ki | tevakesh | la'avoni
+ulechatati | tidroosh
 
 10:7
 al | da'tekha | ki | lo | ersha
@@ -35,7 +35,8 @@ zekhor | na | ki | khachomer | asitani
 ve'el | afar | teshiveni
 
 10:10
-halo | khechalo | tatikheni | vekhaggevinah | takpi'eni
+halo | khechalo | tatikheni
+vekhaggevinah | takpi'eni
 
 10:11
 or | uvasor | talbisheni

@@ -3,7 +3,8 @@ vaydaber | Yahweh | el | Mosheh
 ve'el | Aharon | lemor | alehem
 
 11:2
-daberu | el | benei | Yisra'el | lemor
+daberu | el | benei | Yisra'el
+lemor
 zot | hachaiyah | asher | tokhelu | mikol | habehemah | asher | al | ha'aretz
 
 11:3
@@ -35,7 +36,8 @@ uvenivlatam | lo | tiga'u | teme'im | hem | lakhem
 
 11:9
 et | zeh | tokhelu | mikol | asher | bamayim
-kol | asher | lo | senapir | vekaskeset | bamayim | baiyamim | uvanechalim
+kol | asher | lo | senapir | vekaskeset | bamayim | baiyamim
+uvanechalim
 otam | tokhelu
 
 11:10
@@ -121,7 +123,11 @@ hashoretz | al | ha'aretz | hacholed | veha'akhbar
 vehatzav | leminehu
 
 11:30
-veha'anakah | vehakoach | vehaleta'ah | vehachomet | vehatinshamet
+veha'anakah
+vehakoach
+vehaleta'ah
+vehachomet
+vehatinshamet
 
 11:31
 eleh | hateme'im | lakhem | bekhol | hasharetz | kol | hanogea | bahem | bemotam

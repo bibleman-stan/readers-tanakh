@@ -12,8 +12,7 @@ uvehar | Beit | El | ve'elef | hayu | im | Yonatan | begiv'at | Binyamin | veyet
 vaiyakh | Yonatan | et | netziv | pelishtim | asher | Begeva
 vaiyishme'u | pelishtim
 Vesha'ul | taka | bashofar | bekhol | ha'aretz
-lemor
-yishme'u | ha'ivrim
+lemor | yishme'u | ha'ivrim
 
 13:4
 vekhol | Yisra'el | shame'u | lemor | hikah | Sha'ul | et | netziv | pelishtim
@@ -27,7 +26,9 @@ vaiya'alu | vaiyachanu | Vemikhmas | kidmat | Beit | Aven
 
 13:6
 ve'ish | Yisra'el | ra'u | ki | tzar | lo | ki | Nigas
-ha'am | vaiyitchabe'u | ha'am | bame'arot | uvachavachim | uvasela'im
+ha'am | vaiyitchabe'u | ha'am | bame'arot
+uvachavachim
+uvasela'im
 uvatzerichim | uvaborot
 
 13:7
@@ -103,7 +104,8 @@ liltoosh | ish | et | macharashto | ve'et | eto | ve'et | kardumo
 ve'et | machareshato
 
 13:21
-vehayetah | hapetzirah | fim | lamachareshot | vela'etim
+vehayetah | hapetzirah | fim | lamachareshot
+vela'etim
 velishlosh | kileshon
 ulehakkardumim | ulehatziv | hadarevan
 

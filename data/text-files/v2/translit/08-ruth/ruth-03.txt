@@ -8,7 +8,9 @@ hineh | hu | zoreh | et | goren | hase'orim | halayelah
 
 3:3
 verachatzt | vasakht | vesamt | simlotekh | alayikh | veyaradti | hagoren
-al | tivade'i | la'ish | ad | kaloto | le'ekhol | velishtot
+al | tivade'i | la'ish | ad | kaloto
+le'ekhol
+velishtot
 
 3:4
 vihi | veshakhevo | veyada'at | et | hamakom | asher | yishkav | sham
@@ -36,13 +38,11 @@ vaiyilafet | vehineh | ishah | shokhevet | margelotav
 
 3:9
 vaiyomer | mi | at
-vatomer
-anokhi | Rut | amatekha
+vatomer | anokhi | Rut | amatekha
 ufarasta | khenafekha | al | amatekha | ki | go'el | atah
 
 3:10
-vaiyomer
-berukhah | at | Layahweh | biti
+vaiyomer | berukhah | at | Layahweh | biti
 heitavt | chasdekh | ha'acharon | min | harishon | levilti | lekhet | acharei | habachurim | im | dal | ve'im | ashir
 
 3:11
@@ -64,12 +64,10 @@ chai | Yahweh | shikhvi | ad | haboker
 vatishkav | margelatav | ad | haboker
 vatakom
 bitrom | yakir | ish | et | re'ehu
-vaiyomer
-al | yivada | ki | va'ah | ha'ishah | hagoren
+vaiyomer | al | yivada | ki | va'ah | ha'ishah | hagoren
 
 3:15
-vaiyomer
-havi | hamitpachat | asher | alayikh | ve'echozi | vah
+vaiyomer | havi | hamitpachat | asher | alayikh | ve'echozi | vah
 vatochez | bah
 vaiyamod | shesh | se'orim
 vaiyashet | aleiha
@@ -86,8 +84,7 @@ ha'eleh | natan | li
 ki | amar 'ali | al | tavo'i | reikam | el | chamotekh
 
 3:18
-vatomer
-shevi | viti
+vatomer | shevi | viti
 ad | asher | tede'in | eikh
 yipol | davar
 ki | lo | yishkot | ha'ish | ki | im | kilah | hadavar | haiyom

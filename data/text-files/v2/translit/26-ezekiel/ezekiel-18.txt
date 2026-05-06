@@ -1,5 +1,6 @@
 18:1
-vayhi | devar | Yahweh | elai | lemor
+vayhi | devar | Yahweh | elai
+lemor
 
 18:2
 mah | lakhem | atem | moshelim | et | hamashal | hazeh | al | admat | Yisra'el | lemor
@@ -13,8 +14,7 @@ im | yihyeh | lakhem | od | meshol | hamashal | hazeh | Beyisra'el
 18:4
 hen | kol | hanefashot | li | henah | kenefesh | ha'av
 ukhenefesh | haben | li | henah
-hanefesh | hachotet
-hi | tamut
+hanefesh | hachotet | hi | tamut
 
 18:5
 ve'ish | ki | yihyeh | tzadik | ve'asah | mishpat | utzedakah
@@ -98,8 +98,7 @@ vehaben | mishpat | utzedakah | asah | et | kol | chukotai | shamar | vaiya'aseh
 chayoh | yichyeh
 
 18:20
-hanefesh | hachotet
-hi | tamut
+hanefesh | hachotet | hi | tamut
 ben | lo | yisa | ba'avon | ha'av | ve'av | lo | yisa | ba'avon | haben
 tzidkat | hatzadik | alav | tihyeh
 verish'at | harasha

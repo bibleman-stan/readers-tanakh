@@ -23,7 +23,8 @@ vehotzi'u | et | hanidah | min | hakodesh
 29:6
 ki | ma'alu | avoteinu | ve'asu | hara | be'einei | Yahweh | eloheinu
 vaiya'azvuhu
-vaiyassebu | feneihem | mimishkan | Yahweh | vaiyitenu | oref
+vaiyassebu | feneihem | mimishkan | Yahweh
+vaiyitenu | oref
 
 29:7
 gam | sageru | daltot | ha'ulam | vaykhabu | et | hanerot
@@ -69,13 +70,15 @@ vaiyavo'u | khemitzvat | hamelekh | bedivrei | Yahweh
 letaher | beit | Yahweh
 
 29:16
-vaiyavo'u | hakohanim | lifnimah | veit | Yahweh | letaher
+vaiyavo'u | hakohanim | lifnimah | veit | Yahweh
+letaher
 vaiyotzi'u | et | kol | hatum'ah | asher | matze'u | beheikhal | Yahweh
 lachatzar | beit | Yahweh
 vaykabelu | halviyim | lehotzi | lenachal | Kidron | chutzah
 
 29:17
-vaiyachelu | be'echad | lachodesh | harishon | lekadesh
+vaiyachelu | be'echad | lachodesh | harishon
+lekadesh
 uveyom | shemonah | lachodesh | ba'u | le'ulam | Yahweh
 vaykadeshu | et | beit | Yahweh | leyamim | shemonah
 uveyom | shishah | asar | lachodesh | harishon
@@ -153,8 +156,7 @@ vaiyishtachavu
 
 29:31
 vaiya'an | Yechizkiyahu
-vaiyomer
-atah | miletem | yedkhem | Layahweh
+vaiyomer | atah | miletem | yedkhem | Layahweh
 goshu | vehavi'u | zevachim | vetodot
 leveit | Yahweh
 vaiyavi'u | hakahal | zevachim | vetodot

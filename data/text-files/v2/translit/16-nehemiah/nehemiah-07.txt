@@ -22,7 +22,8 @@ ve'ein | batim | benuyim
 
 7:5
 vaiyiten | elohai | el | libi
-va'ekbetzah | et | hachorim | ve'et | haseganim | ve'et | ha'am | lehityaches
+va'ekbetzah | et | hachorim | ve'et | haseganim | ve'et | ha'am
+lehityaches
 va'emtza | sefer | haiyachas | ha'olim | barishonah
 va'emtza | katuv | bo
 
@@ -262,7 +263,10 @@ vekhatenot | kohanim
 shishim | veshiv'ah
 
 7:72
-vaiyeshevu | hakohanim | vehalviyim | vehasho'arim | vehamshorerim
+vaiyeshevu | hakohanim
+vehalviyim
+vehasho'arim
+vehamshorerim
 umin | ha'am | vehanetinim
 vekhol | Yisra'el | be'areihem
 vaiyiga | hachodesh | hashevi'i

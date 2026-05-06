@@ -46,8 +46,7 @@ vekhol | hanevi'im | mitnabe'im | lifneihem
 
 22:11
 vaiya'as | lo | Tzidkiyah | ven | Kena'anah | karnei | varzel
-vaiyomer
-koh | amar | Yahweh
+vaiyomer | koh | amar | Yahweh
 be'eleh | tenagach | et | Aram | ad | kalotam
 
 22:12
@@ -88,7 +87,8 @@ halo | amarti | eleikha | lo | yitnabe | alai | tov | ki | im | ra
 
 22:19
 vaiyomer | lakhen | shema | devar | Yahweh | ra'iti | et | Yahweh | yoshev | al | kis'o
-vekhol | tzeva | hashamayim | omed | alav | mimino | umisemolo
+vekhol | tzeva | hashamayim | omed | alav | mimino
+umisemolo
 
 22:20
 vaiyomer | Yahweh
@@ -101,8 +101,7 @@ vezeh | omer | bekhoh
 22:21
 vaiyetze | haruach
 vaiya'amod | lifnei | Yahweh
-vaiyomer
-ani | afattenu
+vaiyomer | ani | afattenu
 vaiyomer | Yahweh | elav | bamah
 
 22:22
@@ -117,19 +116,19 @@ Vayahweh | diber | aleikha | ra'ah
 22:24
 vaiyigash | Tzidkiyahu | ven | Kena'anah
 vaiyakeh | et | Mikhayehu | al | halechi
-vaiyomer
-ei | zeh | avar | ruach | Yahweh | me'iti
+vaiyomer | ei | zeh | avar | ruach | Yahweh | me'iti
 ledaber | otakh
 
 22:25
 vaiyomer | Mikhayehu | hinekha | ro'eh | baiyom | hahu
-asher | tavo | cheder | becheder | lehechaveh
+asher | tavo | cheder | becheder
+lehechaveh
 
 22:26
 vaiyomer | melekh | Yisra'el
 kach | et | Mikhayehu
-vahashivehu | el | Amon | sar | ha'ir | ve'el | Yo'ash
-ben | hamelekh
+vahashivehu | el | Amon | sar | ha'ir
+ve'el | Yo'ash | ben | hamelekh
 
 22:27
 ve'amarta | koh | amar | hamelekh | simu | et | zeh
@@ -140,8 +139,7 @@ umayim | lachatz | ad | bo'i | veshalom
 22:28
 vaiyomer | Mikhayehu
 im | shov | tashuv | beshalom | lo | diber | Yahweh | bi
-vaiyomer
-shim'u | amim | kulam
+vaiyomer | shim'u | amim | kulam
 
 22:29
 vaiya'al | melekh | Yisra'el | Vihoshafat | melekh | Yehudah | Ramot | Gil'ad
@@ -153,7 +151,8 @@ vaiyitchapes | melekh | Yisra'el
 vaiyavo | bamilchamah
 
 22:31
-umelekh | Aram | tzivah | et | sarei | harekhev | asher | lo | sheloshim | ushenayim | lemor
+umelekh | Aram | tzivah | et | sarei | harekhev | asher | lo | sheloshim | ushenayim
+lemor
 lo | tilachamu | et | katon | ve'et | gadol | ki | im | et | melekh | Yisra'el | levado
 
 22:32

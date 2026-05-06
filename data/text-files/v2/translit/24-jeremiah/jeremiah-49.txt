@@ -43,7 +43,10 @@ lo | yash'iru | olelot | im | ganavim | balaylah | hishchitu | daiyam
 49:10
 ki | ani | chasafti | et | Esav | gileiti | et | mistarav
 venechbah
-lo | yukhal | shudad | zar'o | ve'echav | ushekhenav | ve'einenu
+lo | yukhal | shudad | zar'o
+ve'echav
+ushekhenav
+ve'einenu
 
 49:11
 azevah | yetomeikha | ani | achaiyeh | ve'almenoteikha
@@ -80,8 +83,7 @@ vehayetah | Edom | leshamah
 kol | over | aleiha | yishom | veyishrok | al | kol | makoteha
 
 49:18
-kemahpekhat | Sedom | Va'amorah | ushekheneiha
-amar | Yahweh
+kemahpekhat | Sedom | Va'amorah | ushekheneiha | amar | Yahweh
 lo | yeshev | sham | ish
 velo | yagur | bah | ben | adam
 
@@ -112,7 +114,8 @@ ki | shemu'ah | ra'ah | shame'u | Namogu | baiyam | de'agah | hashket
 lo | yukhal
 
 49:24
-rafetah | Damesek | hifnetah | lanus
+rafetah | Damesek | hifnetah
+lanus
 veretet | hechezikah | tzarah | vachavalim | achazatah | kaiyoledah
 
 49:25

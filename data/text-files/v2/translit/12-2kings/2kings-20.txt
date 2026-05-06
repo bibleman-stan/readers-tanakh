@@ -72,7 +72,8 @@ ki | shama | ki | chalah | Chizkiyahu
 vaiyishma | aleihem | Chizkiyahu
 vaiyar'em | et | kol | beit | nekhoto | et | hakesef | ve'et | hazahav | ve'et | habesamim | ve'et | shemen | hatov | ve'et | beit | kelav
 ve'et | kol | asher | Nimtza | be'otzrotav
-lo | hayah | davar | asher | lo | her'am | Chizkiyahu | beveito | uvekhol | memshalto
+lo | hayah | davar | asher | lo | her'am | Chizkiyahu | beveito
+uvekhol | memshalto
 
 20:14
 vaiyavo | Yesha'yahu | hanavi | el | hamelekh | Chizkiyahu
@@ -81,8 +82,7 @@ mah | ameru | ha'anashim | ha'eleh
 ume'ayin | yavo'u | eleikha | vaiyomer | Chizkiyahu | me'eretz | rechokah | ba'u | Mibavel
 
 20:15
-vaiyomer
-mah | ra'u | beveitekha
+vaiyomer | mah | ra'u | beveitekha
 vaiyomer | Chizkiyahu | et | kol | asher | beveiti | ra'u
 lo | hayah | davar | asher | lo | hir'itim | be'otzerotai
 
@@ -93,8 +93,7 @@ shema | devar | Yahweh
 20:17
 hineh | yamim | ba'im
 venisa | kol | asher | beveitekha | va'asher | atzeru | avoteikha | ad | haiyom | hazeh
-Bavelah | lo | yivater | davar
-amar | Yahweh
+Bavelah | lo | yivater | davar | amar | Yahweh
 
 20:18
 umibaneikha | asher | yetze'u | mimekha | asher | tolid

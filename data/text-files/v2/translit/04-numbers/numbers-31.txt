@@ -1,5 +1,6 @@
 31:1
-vaydaber | Yahweh | el | Mosheh | lemor
+vaydaber | Yahweh | el | Mosheh
+lemor
 
 31:2
 nekom | nikmat | benei | Yisra'el | me'et | hamidyanim
@@ -43,7 +44,8 @@ ve'et | kol | areihem | bemooshevotam
 ve'et | kol | tirotam | sarefu | ba'esh
 
 31:11
-vaiyikchu | et | kol | hashalal | ve'et | kol | hamalkoach | ba'adam | uvabehemah
+vaiyikchu | et | kol | hashalal | ve'et | kol | hamalkoach | ba'adam
+uvabehemah
 
 31:12
 vaiyavi'u | el | Mosheh
@@ -108,10 +110,12 @@ utehartem
 ve'achar | tavo'u | el | hamachaneh
 
 31:25
-vaiyomer | Yahweh | el | Mosheh | lemor
+vaiyomer | Yahweh | el | Mosheh
+lemor
 
 31:26
-sa | et | rosh | malkoach | hashevi | ba'adam | uvabehemah
+sa | et | rosh | malkoach | hashevi | ba'adam
+uvabehemah
 atah | Ve'el'azar | hakohen
 verashei | avot | ha'edah
 
@@ -121,13 +125,17 @@ uvein | kol | ha'edah
 
 31:28
 vaharemota | mekhes | Layahweh | me'et | anshei | hamilchamah | haiyotze'im | latzava
-echad | nefesh | mechamesh | hame'ot | min | ha'adam | umin | habakar | umin | hachamorim | umin | hatzon
+echad | nefesh | mechamesh | hame'ot | min | ha'adam
+umin | habakar
+umin | hachamorim
+umin | hatzon
 
 31:29
 mimachatzitam | tikachu | venatatah | Le'el'azar | hakohen | terumat | Yahweh
 
 31:30
-umimachatzit | benei | Yisra'el | tikach | echad | achuz | min | hachamishim | min | ha'adam | min | habakar | min | hachamorim | umin | hatzon
+umimachatzit | benei | Yisra'el | tikach | echad | achuz | min | hachamishim | min | ha'adam | min | habakar | min | hachamorim
+umin | hatzon
 mikol | habehemah | venatatah | otam | lalviyim | shomerei | mishmeret | mishkan | Yahweh
 
 31:31
