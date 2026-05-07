@@ -1672,6 +1672,18 @@ _NEG_PLACEMENT_RE = re.compile(
 # pattern, so closed-list aux check is done in Python).
 _NEG_AUX_LOOKBACK = frozenset(a.lower() for a in _NEG_AUX_VERBS)
 
+# Interrogative-inverted negation: "not [AUX] [PRON] [V]" — Hebrew הֲלֹא +
+# verb-with-prefix-subject renders as "not are they finding" / "not did he see"
+# (Stan-flagged 2026-05-07 on Judg 5:30 "not are they finding are they
+# dividing up"). English target: "[AUX] [PRON] not [V]" — "are they not
+# finding" / "did he not see".
+_NEG_INVERTED_RE = re.compile(
+    r"\bnot\s+(" + "|".join(_NEG_AUX_VERBS) + r")\s+"
+    r"(" + "|".join(_NEG_SUBJ_PRONS) + r")\s+"
+    r"([a-z]\w*)",
+    re.IGNORECASE,
+)
+
 
 def pass_negation_placement(line: str) -> str:
     """Reorder Hebrew-style "not [PRON] [V]" to English "[PRON] [aux] not [V]".
@@ -1715,8 +1727,18 @@ def pass_negation_placement(line: str) -> str:
         if not aux:
             aux = "will"
         return f"{pron} {aux} not {verb}"
-    # Single forward pass; idempotent so no risk of infinite rewrite.
-    return _NEG_PLACEMENT_RE.sub(_replace, line)
+
+    def _replace_inverted(m: re.Match) -> str:
+        # "not [AUX] [PRON] [V]" → "[AUX] [PRON] not [V]" (interrogative form)
+        aux = m.group(1)
+        pron = m.group(2)
+        verb = m.group(3)
+        return f"{aux} {pron} not {verb}"
+
+    # Apply inverted-form first (more specific pattern), then declarative.
+    line = _NEG_INVERTED_RE.sub(_replace_inverted, line)
+    line = _NEG_PLACEMENT_RE.sub(_replace, line)
+    return line
 
 
 # ---------------------------------------------------------------------------

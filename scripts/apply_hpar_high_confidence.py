@@ -87,13 +87,16 @@ def find_split_offset(line_text: str, cl_b_first_token: MC.Token,
 # Each entry has a one-line rationale; surface for editorial decision before
 # adding to or removing from this list.
 _EDITORIAL_SKIP = frozenset({
-    ("07-judges", 5, 30),       # rhetorical-question parallelism (Song of Deborah)
-    ("09-1samuel", 2, 22),      # sequential narrative (Eli was old AND he heard)
-    ("09-1samuel", 9, 13),      # temporal-sequential (he blesses, AFTER they eat)
-    ("11-1kings", 18, 25),      # speech-frame + embedded command
-    ("19-psalms", 51, 18),      # protasis-then-consequence (do not desire / would I give)
-    ("20-proverbs", 23, 23),    # hendiadys-of-exhortation (buy / do not sell)
-    ("24-jeremiah", 49, 11),    # subject-shift (you leave / I preserve)
+    # Stan editorial review 2026-05-07: these two stay skipped.
+    ("09-1samuel", 2, 22),      # sequential narrative (Eli was old AND he heard) — relative-clause-via-A1 misfire
+    ("19-psalms", 51, 18),      # protasis-then-consequence (do not desire / would I give) — one logical unit
+    # Other 5 cleared by Stan; entries below were previously skipped pending
+    # editorial review and now apply:
+    #   ("07-judges", 5, 30),    SPLIT — rhetorical-Q bicolon (Song of Deborah)
+    #   ("09-1samuel", 9, 13),   SPLIT — temporal-sequential, each its own ATU
+    #   ("11-1kings", 18, 25),   SPLIT — coordinated imperatives within speech
+    #   ("20-proverbs", 23, 23), SPLIT — antithetic Wisdom-Lit imperative bicolon
+    #   ("24-jeremiah", 49, 11), SPLIT — prophetic-oracle command/promise bicolon
 })
 
 
