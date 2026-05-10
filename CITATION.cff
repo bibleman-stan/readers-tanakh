@@ -1,0 +1,52 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: software
+title: "Tanakh Reader: A Colometric Reading Edition of the Hebrew Bible"
+authors:
+  - name: "Stan the Bible Man"
+    email: "thebibleman77@gmail.com"
+date-released: "2026-05-10"
+repository-code: "https://github.com/bibleman-stan/readers-tanakh"
+url: "https://tanakh-reader.com"
+license: MIT
+abstract: >-
+  A colometric reading edition of the Hebrew Bible based on the Tiberian
+  Masoretic Text in its Leningrad recension. Each line renders one
+  atomic thought unit (ATU) motivated by Hebrew grammatical and prosodic
+  structure. The edition is produced via the ATU apparatus (atu-method)
+  — a proposition-first generative framework with structural
+  justifications, merge-overrides, and morpho-syntactic validation
+  against Macula-Hebrew (lowfat XML treebank) and BHSA/ETCBC syntactic
+  annotations. The te'amim (Masoretic cantillation accents) are
+  preserved in the source text for textual fidelity but play no role in
+  editorial decisions (canon §1, retired 2026-05-05).
+keywords:
+  - Hebrew Bible
+  - Tanakh
+  - colometric edition
+  - reading edition
+  - atomic thought unit
+  - ATU
+  - sense-lines
+  - Masoretic Text
+  - Leningrad Codex
+references:
+  - type: software
+    title: "ATU Method: Computational Colometry for Canonical Texts"
+    authors:
+      - name: "Stan the Bible Man"
+        email: "thebibleman77@gmail.com"
+    repository-code: "https://github.com/bibleman-stan/atu-method"
+    notes: "Methodology and apparatus used to produce this edition."
+  - type: data
+    title: "STEPBible TAHOT (Translators Amalgamated Hebrew OT)"
+    notes: "Primary Hebrew source text, CC-BY-4.0"
+    url: "https://github.com/STEPBible/STEPBible-Data"
+  - type: data
+    title: "Macula Hebrew"
+    notes: "Clear Bible's lowfat XML treebank for Hebrew Bible"
+    url: "https://github.com/Clear-Bible/macula-hebrew"
+  - type: data
+    title: "Open Scriptures Hebrew Bible"
+    notes: "Westminster Leningrad Codex morphology, CC-BY-4.0"
+    url: "https://github.com/openscriptures/morphhb"
