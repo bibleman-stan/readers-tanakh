@@ -467,6 +467,50 @@
   body.show-inter    .en-inter { display: flex; }
   body.show-gloss    .en-gloss { display: block; }
 
+  /* === KJV-source swap layer (Wave 3β; ?source=kjv only) ===
+     Ported from bomreader's swap system. The build emits <span class="swap"
+     data-orig=".." data-mod="..">archaic</span> markup ONLY inside the
+     .en-gloss row. The Modern pill toggles textContent between data-orig
+     (default) and data-mod; the .aid-active body class also restyles
+     visited swap tokens so a reader can see at a glance which words moved.
+     The Hebrew / translit / en-inter rows contain no .swap spans, so the
+     pill is structurally incapable of moving those layers. */
+  .swap {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: rgba(124,175,194,0.55);
+    text-underline-offset: 3px;
+  }
+  .swap.swap-quiet {
+    text-decoration: none;
+  }
+  body.aid-active .swap {
+    color: #7cafc2 !important;
+    text-decoration: none !important;
+  }
+
+  /* Modern pill — sits in the topbar right-cluster. Hidden by default;
+     showAidPill() in the JS toggles it visible on ?source=kjv. */
+  #aid-pill {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 4px 12px;
+    font-size: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    cursor: pointer;
+    display: none;
+    margin-right: 6px;
+  }
+  body.kjv-mode #aid-pill { display: inline-block; }
+  #aid-pill.active-aid {
+    background: rgba(124, 175, 194, 0.2);
+    border-color: #7cafc2;
+    color: #7cafc2;
+  }
+
   /* === LAYER PILLBOX TOOLBAR (fixed, always visible) ===
      Same outer/inner pattern as the topbar — outer spans the viewport
      so the blurred bg covers the full width; inner constrains the pill
@@ -1523,6 +1567,8 @@
   </div>
   <!-- RIGHT cluster: brand + controls -->
   <div class="topbar-icons">
+    <!-- Modern pill (Wave 3β kjv-preview only; hidden unless body.kjv-mode) -->
+    <button id="aid-pill" onclick="toggleAid()" aria-label="Modern words" title="Toggle modern words">Modern</button>
     <span class="topbar-brand" onclick="showLanding()" style="cursor:pointer;">Tanakh Reader</span>
     <!-- Search button hidden for MVP. Hebrew search needs niqqud/te'amim
          normalization that hasn't been implemented yet. The search overlay
@@ -1892,6 +1938,54 @@ function resolveBookSlug(raw) {
 }
 let currentBook = 'jonah';  // small default — Genesis-class books (3+MB DOM) hang on initial load; users opt in via picker
 let currentChapter = 1;
+
+// ---- Wave 3β: KJV-source preview mode ----
+// Activated by ?source=kjv in the URL. When active:
+//   - chapter HTML is fetched from books-kjv/ instead of books/
+//   - the Modern pill is shown (CSS gates it on body.kjv-mode)
+//   - .swap markup inside the .en-gloss row toggles between archaic and modern
+// The body.kjv-mode class is set once on load; toggleAid uses aidOn state
+// for the per-page toggle. The 4-layer integrity is preserved structurally
+// (build_books.py emits identical Hebrew/translit/interlinear HTML on both
+// paths; only the .en-gloss row receives .swap wrapping in the kjv build).
+const KJV_MODE = (function() {
+  try {
+    return new URLSearchParams(location.search).get('source') === 'kjv';
+  } catch (_) { return false; }
+})();
+let aidOn = false;
+if (KJV_MODE) {
+  document.body.classList.add('kjv-mode');
+  // Default the gloss layer on so the reader actually sees the kjv-anchored
+  // English without having to dig into the layer-bar pill toolbar. This is
+  // a preview-mode-only default; legacy mode keeps its prior behavior.
+  document.body.classList.add('show-gloss');
+}
+window.toggleAid = function() {
+  aidOn = !aidOn;
+  // Only the .en-gloss row contains .swap spans (build_books.py renders the
+  // Hebrew/translit/interlinear layers via separate code paths that never
+  // emit .swap markup). So this loop, by construction, cannot move those
+  // layers — it iterates only the English-gloss tokens.
+  document.querySelectorAll('.swap').forEach(function(el) {
+    if (aidOn) {
+      if (!el.hasAttribute('data-orig-html')) {
+        el.setAttribute('data-orig-html', el.innerHTML);
+      }
+      el.textContent = el.getAttribute('data-mod');
+    } else {
+      var cached = el.getAttribute('data-orig-html');
+      if (cached) {
+        el.innerHTML = cached;
+      } else {
+        el.textContent = el.getAttribute('data-orig');
+      }
+    }
+  });
+  document.body.classList.toggle('aid-active', aidOn);
+  var pill = document.getElementById('aid-pill');
+  if (pill) pill.classList.toggle('active-aid', aidOn);
+};
 // Per-chapter cache: key = "slug:chapter", value = HTML string.
 // Replacing the old whole-book cache; each chapter is fetched and cached
 // independently so large books never hit memory or parse-time cliffs.
@@ -2067,9 +2161,12 @@ async function navigate(book, chapter, verse) {
 
 // Chapter URL: books/<slug>/<slug>-<NN>.html (zero-padded to 2 digits).
 // Falls back to books/<slug>/<slug>-<N>.html (1-digit) for forward compat.
+// In KJV-source preview mode (?source=kjv) we route to books-kjv/ instead.
+// The directory layout under books-kjv/ is identical to books/.
 function chapterUrl(slug, chapter) {
   const pad = String(chapter).padStart(2, '0');
-  return 'books/' + slug + '/' + slug + '-' + pad + '.html';
+  const root = KJV_MODE ? 'books-kjv/' : 'books/';
+  return root + slug + '/' + slug + '-' + pad + '.html';
 }
 
 function chapterCacheKey(slug, chapter) {
@@ -2088,6 +2185,21 @@ async function fetchChapterHtml(slug, chapter) {
   return await resp.text();
 }
 
+// In KJV preview mode with the Modern pill on, freshly-injected chapter HTML
+// arrives with .swap spans showing their data-orig (archaic) text. Reapply
+// the active modernization so the user doesn't see a flash of archaic text
+// every time they navigate to a new chapter. Operates only on .en-gloss
+// .swap nodes by structural fact — see toggleAid for the invariant.
+function applyAidStateToNewChapter(containerEl) {
+  if (!aidOn) return;
+  containerEl.querySelectorAll('.swap').forEach(function(el) {
+    if (!el.hasAttribute('data-orig-html')) {
+      el.setAttribute('data-orig-html', el.innerHTML);
+    }
+    el.textContent = el.getAttribute('data-mod');
+  });
+}
+
 async function loadChapter(slug, chapter) {
   const container = document.getElementById('text-container');
   const loading = document.getElementById('loading');
@@ -2096,6 +2208,7 @@ async function loadChapter(slug, chapter) {
   if (bookCache[key]) {
     loading.style.display = 'none';
     container.innerHTML = bookCache[key];
+    applyAidStateToNewChapter(container);
     return;
   }
 
@@ -2106,6 +2219,7 @@ async function loadChapter(slug, chapter) {
     const html = await fetchChapterHtml(slug, chapter);
     bookCache[key] = html;
     container.innerHTML = html;
+    applyAidStateToNewChapter(container);
   } catch (e) {
     container.innerHTML = '<p style="color:var(--text-faint);text-align:center;padding:60px 0;">Could not load ' + BOOKS[slug].name + ' ' + chapter + '.</p>';
   } finally {
