@@ -13,11 +13,13 @@ the editorial cola boundaries.
 
 Per-layer behaviour:
   eng-interlinear, translit  — re-segmented mechanically (perfect 1:1).
-  eng-gloss                  — flowing English; two cases:
-    (a) editorial cola spans one or more *complete* v1 cola
-        → space-join the v1 gloss lines (preserves prior gloss quality).
-    (b) editorial cola partial-overlaps a v1 cola (split case)
-        → fallback: synthesize gloss from interlinear with bracket cleanup.
+  eng-gloss                  — DISABLED post-Wave-6 (2026-05-12).
+    v2/eng-gloss is now KJV verbatim from atu_method.kjv_alignment
+    (via scripts/regenerate_english.py). The legacy v1-derived structural
+    gloss this script formerly produced was a Wave-6 retirement artifact;
+    writing it here would silently overwrite the KJV substrate. The
+    in-memory computation of ed_gloss_lines is preserved for the word-
+    stream-invariant check; only the disk write is suppressed.
 
 Word-stream invariant:
   v1 Hebrew word stream MUST equal editorial Hebrew word stream (same words,
@@ -278,7 +280,13 @@ def propagate_chapter(book: str, chapter_filename: str, dry_run: bool) -> tuple[
 
     if not dry_run:
         write_chapter(out_inter,    ED_INTER_DIR    / book / chapter_filename)
-        write_chapter(out_gloss,    ED_GLOSS_DIR    / book / chapter_filename)
+        # Wave 6 (2026-05-12): v2/eng-gloss is now KJV verbatim, produced by
+        # scripts/regenerate_english.py (atu_method.kjv_alignment). Writing
+        # the v1-derived legacy gloss here would silently overwrite the KJV
+        # substrate with stale Macula-era English. The propagation loop above
+        # still computes ed_gloss_lines as a no-op safety (preserves the
+        # word-stream invariant check); the WRITE is suppressed.
+        # write_chapter(out_gloss, ED_GLOSS_DIR / book / chapter_filename)
         write_chapter(out_translit, ED_TRANSLIT_DIR / book / chapter_filename)
 
     return True, stats
