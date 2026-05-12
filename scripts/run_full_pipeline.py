@@ -15,7 +15,7 @@ Steps per book:
      Skip with warning if script does not exist yet
   4. propagate_editorial_layers.py --book <out_subdir>
      Skip if data/text-files/v2/he/<out_subdir>/ does not exist
-  5. generate_english_glosses.py --book <out_subdir>
+  5. regenerate_english.py --book <book_key> --force  (KJV-verbatim via MetaV)
   6. build_books.py --book <book_key>  (only with --build flag)
 
 Per-book result: success / partial / failure, with per-step status.
@@ -215,12 +215,19 @@ def run_propagate(spec: dict, dry_run: bool) -> tuple[str, str]:
     return FAIL, (err or out).strip()[:200]
 
 
-def run_gloss(spec: dict, dry_run: bool) -> tuple[str, str]:
-    """Step 5 — generate_english_glosses.py --book <out_subdir>."""
-    if not _script_exists("generate_english_glosses.py"):
-        return FAIL, "generate_english_glosses.py not found"
+def run_gloss(book_key: str, dry_run: bool) -> tuple[str, str]:
+    """Step 5 — regenerate_english.py --book <book_key> --force.
 
-    cmd = [sys.executable, str(_script("generate_english_glosses.py")), "--book", spec["out_subdir"]]
+    Wave 6-OT change: the Macula-Hebrew structural-gloss generator
+    (generate_english_glosses.py) was retired. regenerate_english.py is
+    the canonical KJV-verbatim English-layer generator (thin wrapper over
+    atu_method.kjv_alignment + MetaV). It takes the short book key
+    (e.g. 'genesis'), not the folder form ('01-genesis').
+    """
+    if not _script_exists("regenerate_english.py"):
+        return FAIL, "regenerate_english.py not found"
+
+    cmd = [sys.executable, str(_script("regenerate_english.py")), "--book", book_key, "--force"]
     rc, out, err = _run(cmd, dry_run)
     if dry_run:
         return SKIP, out
@@ -353,8 +360,9 @@ def process_book(book_key: str, spec: dict, build: bool, dry_run: bool) -> BookR
     r.propag, r.propag_detail = run_propagate(spec, dry_run)
     _print_step("propag", r.propag, r.propag_detail)
 
-    # Step 5: gloss
-    r.gloss, r.gloss_detail = run_gloss(spec, dry_run)
+    # Step 5: gloss (Wave 6-OT: KJV-verbatim via regenerate_english.py;
+    # takes the short book_key, not the folder-form spec["out_subdir"])
+    r.gloss, r.gloss_detail = run_gloss(book_key, dry_run)
     _print_step("gloss ", r.gloss, r.gloss_detail)
 
     # Step 6: build (optional)

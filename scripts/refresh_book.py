@@ -6,9 +6,12 @@ refresh_book.py — Thin chain wrapper that runs the per-book pipeline end-to-en
 For the given book (or all books with --all-books), runs sequentially:
 1. scripts/apply_validators.py --book <book>  (skipped if missing; non-zero exit aborts chain)
 2. scripts/propagate_editorial_layers.py --book <book>
-3. scripts/generate_english_glosses.py --book <book>
-4. scripts/normalize_english_gloss.py --book <book>
-5. (optional) scripts/build_books.py --book <book_short>  (if --build flag passed)
+3. scripts/regenerate_english.py --book <book_short>  (KJV-verbatim English from MetaV)
+4. (optional) scripts/build_books.py --book <book_short>  (if --build flag passed)
+
+Wave 6-OT change: the Macula-Hebrew structural-gloss generator
+(generate_english_glosses.py) and its post-processor (normalize_english_gloss.py)
+were retired in favour of the KJV-anchored regenerate_english.py.
 
 Each subprocess invocation includes PYTHONIOENCODING=utf-8 env var.
 
@@ -109,6 +112,48 @@ def run_step(script_name, book, dry_run, skip_missing=False):
         return False
 
 
+def run_step_short(short_name, dry_run):
+    """
+    Run regenerate_english.py with the short book name (e.g. 'genesis').
+
+    This is the canonical English-layer step. The script signature differs
+    from the folder-form steps: it takes ``--book <short>`` (without the
+    NN- prefix) and emits to data/text-files/v2/eng-gloss/<NN-short>/.
+
+    Returns True if step succeeded, False if it failed.
+    """
+    script_name = "regenerate_english.py"
+    script_path = SCRIPTS_DIR / script_name
+
+    if not script_path.exists():
+        print(f"  X {script_name} not found", file=sys.stderr)
+        return False
+
+    cmd = [
+        sys.executable,
+        str(script_path),
+        "--book", short_name,
+        "--force",
+    ]
+
+    if dry_run:
+        print(f"  [DRY-RUN] {' '.join(cmd)}")
+        return True
+
+    print(f"  Running {script_name}...")
+    try:
+        result = subprocess.run(cmd, env=ENV, check=False)
+        if result.returncode != 0:
+            print(f"  X {script_name} failed with exit code {result.returncode}",
+                  file=sys.stderr)
+            return False
+        print(f"  OK {script_name} completed")
+        return True
+    except Exception as e:
+        print(f"  X {script_name} error: {e}", file=sys.stderr)
+        return False
+
+
 def run_build_step(book, dry_run):
     """
     Run build_books.py with the short book name.
@@ -160,17 +205,25 @@ def process_book(book, build=False, dry_run=False):
     start_time = time.time()
     print(f"\n{book}")
 
-    steps = [
+    # Steps 1-2 take the folder-form book name (e.g. '01-genesis').
+    folder_steps = [
         ("apply_validators.py", True),   # (script_name, skip_missing)
         ("propagate_editorial_layers.py", False),
-        ("generate_english_glosses.py", False),
-        ("normalize_english_gloss.py", False),
     ]
 
-    for script_name, skip_missing in steps:
+    for script_name, skip_missing in folder_steps:
         if not run_step(script_name, book, dry_run, skip_missing=skip_missing):
             elapsed = time.time() - start_time
             return (False, elapsed)
+
+    # Step 3 — regenerate_english.py takes the short book key (e.g. 'genesis').
+    # It is the canonical English-layer generator after Wave 6-OT (KJV-anchored
+    # via atu_method.kjv_alignment + MetaV); replaces the retired Macula
+    # structural-gloss generator + post-processor.
+    short_name = book_short_name(book)
+    if not run_step_short(short_name, dry_run):
+        elapsed = time.time() - start_time
+        return (False, elapsed)
 
     if build:
         if not run_build_step(book, dry_run):

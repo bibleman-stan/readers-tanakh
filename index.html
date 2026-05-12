@@ -501,10 +501,9 @@
     font-size: 12px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     cursor: pointer;
-    display: none;
+    display: inline-block;
     margin-right: 6px;
   }
-  body.kjv-mode #aid-pill { display: inline-block; }
   #aid-pill.active-aid {
     background: rgba(124, 175, 194, 0.2);
     border-color: #7cafc2;
@@ -1567,7 +1566,9 @@
   </div>
   <!-- RIGHT cluster: brand + controls -->
   <div class="topbar-icons">
-    <!-- Modern pill (Wave 3β kjv-preview only; hidden unless body.kjv-mode) -->
+    <!-- Modern pill — toggles archaic→modern on the English-gloss row only.
+         Wave 6-OT: always visible; the .swap markup is emitted by the build
+         pipeline (build_books.py + atu_method.swaps) under all conditions. -->
     <button id="aid-pill" onclick="toggleAid()" aria-label="Modern words" title="Toggle modern words">Modern</button>
     <span class="topbar-brand" onclick="showLanding()" style="cursor:pointer;">Tanakh Reader</span>
     <!-- Search button hidden for MVP. Hebrew search needs niqqud/te'amim
@@ -1939,28 +1940,21 @@ function resolveBookSlug(raw) {
 let currentBook = 'jonah';  // small default — Genesis-class books (3+MB DOM) hang on initial load; users opt in via picker
 let currentChapter = 1;
 
-// ---- Wave 3β: KJV-source preview mode ----
-// Activated by ?source=kjv in the URL. When active:
-//   - chapter HTML is fetched from books-kjv/ instead of books/
-//   - the Modern pill is shown (CSS gates it on body.kjv-mode)
-//   - .swap markup inside the .en-gloss row toggles between archaic and modern
-// The body.kjv-mode class is set once on load; toggleAid uses aidOn state
-// for the per-page toggle. The 4-layer integrity is preserved structurally
-// (build_books.py emits identical Hebrew/translit/interlinear HTML on both
-// paths; only the .en-gloss row receives .swap wrapping in the kjv build).
-const KJV_MODE = (function() {
-  try {
-    return new URLSearchParams(location.search).get('source') === 'kjv';
-  } catch (_) { return false; }
-})();
+// ---- KJV-anchored English (default, Wave 6-OT) ----
+// The .en-gloss row carries KJV-verbatim text wrapped with .swap markup
+// (build_books.py + atu_method.swaps). The Modern pill toggles archaic →
+// modern at runtime by iterating .swap spans and swapping their text
+// content between data-orig (KJV) and data-mod (modernized) values.
+//
+// 4-layer integrity invariant: .swap markup lives ONLY inside the
+// .en-gloss span. The Hebrew, translit, and interlinear rows render via
+// separate code paths in build_books.py (render_he_layer, render_word_layer)
+// that never emit .swap markup. So the Modern pill cannot move those layers
+// by construction — it iterates only English-gloss tokens.
 let aidOn = false;
-if (KJV_MODE) {
-  document.body.classList.add('kjv-mode');
-  // Default the gloss layer on so the reader actually sees the kjv-anchored
-  // English without having to dig into the layer-bar pill toolbar. This is
-  // a preview-mode-only default; legacy mode keeps its prior behavior.
-  document.body.classList.add('show-gloss');
-}
+// Default the gloss layer on so the reader sees the KJV-anchored English
+// without having to open the layer-bar pill toolbar.
+document.body.classList.add('show-gloss');
 window.toggleAid = function() {
   aidOn = !aidOn;
   // Only the .en-gloss row contains .swap spans (build_books.py renders the
@@ -2160,13 +2154,12 @@ async function navigate(book, chapter, verse) {
 }
 
 // Chapter URL: books/<slug>/<slug>-<NN>.html (zero-padded to 2 digits).
-// Falls back to books/<slug>/<slug>-<N>.html (1-digit) for forward compat.
-// In KJV-source preview mode (?source=kjv) we route to books-kjv/ instead.
-// The directory layout under books-kjv/ is identical to books/.
+// Wave 6-OT: there is a single books/ output tree (KJV-anchored English);
+// the legacy Macula-structural-gloss path and its sibling books-kjv/ tree
+// were both retired.
 function chapterUrl(slug, chapter) {
   const pad = String(chapter).padStart(2, '0');
-  const root = KJV_MODE ? 'books-kjv/' : 'books/';
-  return root + slug + '/' + slug + '-' + pad + '.html';
+  return 'books/' + slug + '/' + slug + '-' + pad + '.html';
 }
 
 function chapterCacheKey(slug, chapter) {

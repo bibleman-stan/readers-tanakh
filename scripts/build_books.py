@@ -67,15 +67,14 @@ INTER_V1_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v1", "eng-interlin
 GLOSS_V2_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v2", "eng-gloss")
 GLOSS_V1_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v1", "eng-gloss")
 
-# Wave 2 KJV-anchored literal-order English source (one English line per
-# Hebrew cola, identical 4-layer alignment as the legacy eng-gloss/ tier).
-GLOSS_KJV_V2_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v2", "eng-gloss-kjv")
+# Wave 6-OT: KJV-anchored English is now the only path. The v2/eng-gloss/
+# directory holds KJV-verbatim text emitted by scripts/regenerate_english.py
+# (one English line per Hebrew cola, 4-layer-integrity preserved).
 
 TRANSLIT_V2_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v2", "translit")
 TRANSLIT_V1_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v1", "translit")
 
 OUTPUT_DIR = os.path.join(REPO_ROOT, "books")
-OUTPUT_DIR_KJV = os.path.join(REPO_ROOT, "books-kjv")
 
 ENG_WORD_SEP = " | "
 MAQQEF = "־"
@@ -195,7 +194,10 @@ def render_word_layer(cls, units, joins):
 
 
 # ---------------------------------------------------------------------------
-# Wave 3β — KJV-source swap pipeline (lazy import, only when --english-source=kjv)
+# OT swap pipeline — wraps archaic tokens in the .en-gloss row with
+# <span class="swap"> markup so the Modern pill can toggle archaic→modern.
+# Wave 6-OT: this is unconditional (KJV is the only English path now); the
+# atu-method universal swap engine + OT swap list is the substrate.
 # ---------------------------------------------------------------------------
 _SWAP_CACHE: dict = {}
 
@@ -204,8 +206,7 @@ def _load_ot_swap_pipeline():
     """Lazy-load the atu-method swap engine + OT corpus swap list.
 
     Returns (apply_swaps_fn, swap_pairs, quiet_set). Cached after first call
-    so per-line apply_swaps() invocations hit the engine cache too. Only
-    invoked when english_source='kjv'; the legacy path never touches this.
+    so per-line apply_swaps() invocations hit the engine cache too.
     """
     if "loaded" in _SWAP_CACHE:
         return _SWAP_CACHE["loaded"]
@@ -306,26 +307,23 @@ def _pick_source(
     return None, "none", "none"
 
 
-def build_book(book_key, skip_missing=False, english_source="legacy"):
+def build_book(book_key, skip_missing=False):
     """Build per-chapter HTML files and a manifest for a single book.
 
-    english_source:
-        "legacy" (default) — read English gloss from v2/eng-gloss/ → v1/eng-gloss/
-                              cascade; emit to books/<slug>/. Gloss is plain
-                              HTML-escaped text (no swap markup).
-        "kjv"              — read English gloss from v2/eng-gloss-kjv/ (Wave 2
-                              substrate, KJV-anchored, literal Hebrew word
-                              order). Apply atu_method.swaps.apply_swaps with
-                              the OT corpus swap list, producing
-                              <span class="swap"...> markup inside the
-                              .en-gloss row. Emit to books-kjv/<slug>/.
-                              Hebrew / translit / interlinear sources +
-                              rendering are UNCHANGED — this is the 4-layer
-                              integrity invariant Wave 3β preserves.
+    Wave 6-OT: the English gloss is KJV-verbatim (read from v2/eng-gloss/,
+    emitted by scripts/regenerate_english.py). The atu-method universal
+    swap pipeline wraps archaic tokens in <span class="swap"> markup so the
+    Modern pill can toggle archaic→modern at runtime — the .swap markup
+    is emitted ONLY inside the .en-gloss row. Hebrew / transliteration /
+    interlinear layers render via separate code paths that never emit
+    .swap spans; this is the 4-layer integrity invariant.
+
+    The Macula-Hebrew structural-gloss path (legacy English-source) and the
+    sibling books-kjv/ output tree were retired in the same wave.
 
     Emits:
-      <output-dir>/<slug>/manifest.json              — {book_name, chapters: [...]}
-      <output-dir>/<slug>/<slug>-<NN>.html           — one file per chapter
+      books/<slug>/manifest.json              — {book_name, chapters: [...]}
+      books/<slug>/<slug>-<NN>.html           — one file per chapter
 
     Returns True on success, False when source files are absent and
     skip_missing=True (used by --all-books).  With skip_missing=False
@@ -333,8 +331,6 @@ def build_book(book_key, skip_missing=False, english_source="legacy"):
     """
     if book_key not in BOOK_REGISTRY:
         sys.exit(f"Unknown book key: {book_key}")
-    if english_source not in ("legacy", "kjv"):
-        sys.exit(f"Unknown english_source: {english_source!r} (expected 'legacy' or 'kjv')")
     spec = BOOK_REGISTRY[book_key]
     prefix = spec["prefix"]
     sub = spec["subdir"]
@@ -354,24 +350,17 @@ def build_book(book_key, skip_missing=False, english_source="legacy"):
 
     inter_v2 = os.path.join(INTER_V2_DIR, sub)
     inter_v1 = os.path.join(INTER_V1_DIR, sub)
-    # Gloss source switches based on english_source. The kjv path reads from
-    # eng-gloss-kjv/ exclusively (no v1 fallback — Wave 2 is the only KJV
-    # source). The legacy path keeps the original v2 → v1 cascade.
-    if english_source == "kjv":
-        gloss_v2 = os.path.join(GLOSS_KJV_V2_DIR, sub)
-        gloss_v1 = os.path.join(GLOSS_V1_DIR, sub)  # unused (kjv has no v1)
-    else:
-        gloss_v2 = os.path.join(GLOSS_V2_DIR, sub)
-        gloss_v1 = os.path.join(GLOSS_V1_DIR, sub)
+    # English gloss is KJV-verbatim from v2/eng-gloss/. No v1 fallback —
+    # the KJV substrate is a Wave-5c/6 deliverable that has no v1 tier.
+    gloss_v2 = os.path.join(GLOSS_V2_DIR, sub)
+    gloss_v1 = os.path.join(GLOSS_V1_DIR, sub)  # unused (no v1 KJV tier)
     tr_v2 = os.path.join(TRANSLIT_V2_DIR, sub)
     tr_v1 = os.path.join(TRANSLIT_V1_DIR, sub)
 
     inter_v2_files = _files_in(inter_v2, prefix)
     inter_v1_files = _files_in(inter_v1, prefix)
     gloss_v2_files = _files_in(gloss_v2, prefix)
-    # In kjv mode we deliberately suppress v1 fallback for gloss — the KJV
-    # substrate is a Wave-2 deliverable that does not have a v1 tier.
-    gloss_v1_files = set() if english_source == "kjv" else _files_in(gloss_v1, prefix)
+    gloss_v1_files = set()  # no v1 fallback for the KJV gloss substrate
     tr_v2_files = _files_in(tr_v2, prefix)
     tr_v1_files = _files_in(tr_v1, prefix)
 
@@ -382,29 +371,24 @@ def build_book(book_key, skip_missing=False, english_source="legacy"):
         "tr_v2": 0, "tr_v1": 0, "tr_none": 0,
     }
 
-    # Per-chapter output directory: books/<slug>/ or books-kjv/<slug>/.
-    # Live books/ is sacrosanct under the kjv path; we write to a sibling
-    # tree so the production app stays untouched until Stan promotes per-book.
-    out_root = OUTPUT_DIR_KJV if english_source == "kjv" else OUTPUT_DIR
-    book_out_dir = os.path.join(out_root, book_key)
+    # Per-chapter output directory: books/<slug>/.
+    book_out_dir = os.path.join(OUTPUT_DIR, book_key)
     os.makedirs(book_out_dir, exist_ok=True)
 
-    # Build the gloss HTML renderer once per book. In kjv mode this wraps
-    # archaic words with <span class="swap" data-orig=".." data-mod="..">..</span>;
-    # in legacy mode it's None and the render_chapter falls back to html.escape.
-    if english_source == "kjv":
-        apply_swaps_fn, swap_pairs, quiet_set = _load_ot_swap_pipeline()
+    # Build the gloss HTML renderer once per book. Wraps archaic words
+    # with <span class="swap" data-orig=".." data-mod="..">..</span>;
+    # the Modern pill toggle (index.html) flips between data-orig and
+    # data-mod values at runtime.
+    apply_swaps_fn, swap_pairs, quiet_set = _load_ot_swap_pipeline()
 
-        def _gloss_html_renderer(text: str) -> str:
-            # apply_swaps does not pre-escape; the OT gloss source has no
-            # raw HTML so this is safe, and the inserted spans use plain
-            # ASCII attributes (no characters needing escaping). Any future
-            # change to gloss content with HTML-special chars (<, >, &)
-            # would need escape-then-swap discipline.
-            return apply_swaps_fn(text, swap_pairs, quiet_set)
-        gloss_renderer = _gloss_html_renderer
-    else:
-        gloss_renderer = None
+    def _gloss_html_renderer(text: str) -> str:
+        # apply_swaps does not pre-escape; the OT gloss source has no
+        # raw HTML so this is safe, and the inserted spans use plain
+        # ASCII attributes (no characters needing escaping). Any future
+        # change to gloss content with HTML-special chars (<, >, &)
+        # would need escape-then-swap discipline.
+        return apply_swaps_fn(text, swap_pairs, quiet_set)
+    gloss_renderer = _gloss_html_renderer
 
     chapter_nums = []
 
@@ -425,18 +409,13 @@ def build_book(book_key, skip_missing=False, english_source="legacy"):
         )
         counts[f"inter_{inter_tier if inter_tier != 'none' else 'none'}"] += 1
 
-        # Source label distinguishes which substrate the gloss came from.
-        # In kjv mode the v2 slot is labeled v2-eng-gloss-kjv so the rendered
-        # HTML's data-gloss-source attribute is honest about the substrate.
-        if english_source == "kjv":
-            gloss_v2_label = "v2-eng-gloss-kjv"
-        else:
-            gloss_v2_label = "v2-eng-gloss"
+        # Wave 6-OT: the v2 gloss tier is KJV-verbatim (regenerate_english.py).
+        # No v1 fallback for gloss — the KJV substrate is a v2-only tier.
         gloss_path, gloss_source, gloss_tier = _pick_source(
             fn,
             gloss_v2, gloss_v2_files,
             gloss_v1, gloss_v1_files,
-            gloss_v2_label, "v1-eng-gloss",
+            "v2-eng-gloss", "v1-eng-gloss",
         )
         counts[f"gloss_{gloss_tier if gloss_tier != 'none' else 'none'}"] += 1
 
@@ -514,54 +493,40 @@ def main():
              "Books whose Hebrew source files are absent are skipped with a "
              "status line; only books with source data are built.",
     )
-    ap.add_argument(
-        "--english-source",
-        choices=("legacy", "kjv"),
-        default="legacy",
-        help="Which English gloss substrate to render. 'legacy' (default) "
-             "reads data/text-files/v2/eng-gloss/ and emits to books/. "
-             "'kjv' reads data/text-files/v2/eng-gloss-kjv/ (Wave 2), "
-             "applies atu-method OT swap markup for the Modern-pill toggle, "
-             "and emits to books-kjv/. The kjv path is sandboxed: the live "
-             "books/*.html tree is never touched. Hebrew / translit / "
-             "interlinear sources are IDENTICAL between the two paths — "
-             "this preserves the 4-layer integrity invariant.",
-    )
     args = ap.parse_args()
 
-    src = args.english_source
     if args.book:
-        print(f"Building {args.book} (english-source={src}) ...")
-        build_book(args.book, skip_missing=False, english_source=src)
+        print(f"Building {args.book} ...")
+        build_book(args.book, skip_missing=False)
     elif args.all_books:
         built = []
         skipped = []
         for key in BOOK_REGISTRY:
-            ok = build_book(key, skip_missing=True, english_source=src)
+            ok = build_book(key, skip_missing=True)
             if ok:
                 built.append(key)
                 print()
             else:
                 skipped.append(key)
-        print(f"\n--- all-books summary (english-source={src}) ---")
+        print(f"\n--- all-books summary ---")
         print(f"  built   ({len(built)}): {', '.join(built) if built else 'none'}")
         print(f"  skipped ({len(skipped)}): no source files")
         if skipped:
             for s in skipped:
                 print(f"    {s}")
     else:
-        # Legacy default: build all books that have source files.
-        print(f"No --book or --all-books flag; building all books with source files (english-source={src}) ...")
+        # Default: build all books that have source files.
+        print("No --book or --all-books flag; building all books with source files ...")
         built = []
         skipped = []
         for key in BOOK_REGISTRY:
-            ok = build_book(key, skip_missing=True, english_source=src)
+            ok = build_book(key, skip_missing=True)
             if ok:
                 built.append(key)
                 print()
             else:
                 skipped.append(key)
-        print(f"\n--- summary (english-source={src}) ---")
+        print(f"\n--- summary ---")
         print(f"  built   ({len(built)}): {', '.join(built) if built else 'none'}")
         print(f"  skipped ({len(skipped)}): no source files")
 

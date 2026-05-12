@@ -147,8 +147,7 @@ _CASCADE_BOOK_RE = re.compile(
 _ENGINE_FILE_RE = re.compile(
     r"(scripts/spec_runner\.py|scripts/apply_validators\.py|"
     r"scripts/apply_specs\.py|validators/_shared/[\w.]+\.py|"
-    r"scripts/generate_english_glosses\.py|"
-    r"scripts/normalize_english_gloss\.py|"
+    r"scripts/regenerate_english\.py|"
     r"scripts/propagate_editorial_layers\.py)"
 )
 _INSTANCE_FIX_BYPASS = "# instance-fix-justified:"
