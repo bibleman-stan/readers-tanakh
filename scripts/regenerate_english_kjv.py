@@ -1,59 +1,58 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-regenerate_english_kjv.py — Wave 2 KJV-style English extractor (Tanakh).
+regenerate_english_kjv.py — Wave 5c-OT KJV-verbatim English extractor (Tanakh).
 
-Architecture
-------------
-The legacy ``generate_english_glosses.py`` produces Macula-Hebrew
-structural glosses (per-morpheme, mechanically-naturalized). The new
-generator anchors the English layer to TAHOT's per-Hebrew-token English
-column — STEPBible's already-aligned, KJV-tradition translation gloss
-(CC BY 4.0).
+Thin wrapper over ``atu_method.kjv_alignment`` (Wave 5b universal module).
 
-Per-Hebrew-ATU-cola algorithm:
+Substrate change (Wave 5c vs Wave 2/4)
+--------------------------------------
+- Wave 2/4 used TAHOT's English column directly — this produced Hebrew VSO
+  word order (e.g. "and he said God") and postpositive possessives
+  ("shepherd my"), because TAHOT's per-token English IS a literal
+  per-Hebrew-word gloss.
+- Wave 5c reads ACTUAL KJV verbatim per ATU cola, via viz.bible's MetaV
+  (per-KJV-word Strong's tagging, CC BY-SA 3.0). For each Hebrew token in
+  v2/he, the universal algorithm finds the KJV words in the same verse
+  whose Strong's match, distributes them to the right ATU cola preserving
+  KJV reading order within each cola, and attaches translator-supplied
+  KJV words (no Strong's) to the cola of their nearest non-italic
+  neighbour.
 
-  1. Read Hebrew cola lines from ``data/text-files/v2/he/<book>/<chapter>.txt``
-     (one ATU cola per line; maqqef-aware splits into orthographic words).
-  2. Stream TAHOT rows for the same verse (e.g. ``Gen.1.1#NN=...``).
-     Each row carries one orthographic word and its per-token English
-     gloss in column 4 (1-indexed) — morphemes joined by ``/``.
-  3. Walk Hebrew cola words and TAHOT tokens in lockstep. Token N in the
-     verse must correspond to orthographic-word N in v2/he (after maqqef
-     joins). Mismatched counts are reported as alignment failures.
-  4. For each cola, concatenate the TAHOT English column of its tokens
-     with mechanical cleanup:
-        - Drop ``<obj.>`` (the direct-object marker אֵת has no English).
-        - Drop ``<...>`` angle-bracket "Hebrew but best-not-translated"
-          tokens entirely (per TAHOT field-description guidance).
-        - Strip ``[...]`` square-bracket markers but KEEP their contents
-          (TAHOT square brackets mark "implied; best included").
-        - Replace morpheme separator ``/`` with single space.
-        - Collapse runs of whitespace.
-  5. **Word order: literal (no VSO→SVO reorder).** Stan's directive for
-     Wave 2: "be more careful and thoughtful." Reordering rules are risky
-     when subjects are pronominal or elided; we emit token order and
-     leave reordering for Wave 3 once Stan eye-checks. The modernization
-     layer (data-orig→data-mod swap-class) covers archaic→modern phrasing
-     at render time; it cannot fix word-order issues — so getting word
-     order *right* > getting it *fluent*.
+The pipeline:
 
-Output
-------
-``data/text-files/v2/eng-gloss-kjv/<book>/<chapter>.txt`` — parallel to
-the legacy ``eng-gloss/`` directory; identical file format (verse
-marker, one English line per Hebrew ATU cola, blank line separator).
+  1. Walk v2/he/<NN-book>/<book>-<NN>.txt, yielding verses (BHS-numbered).
+  2. Stream TAHOT rows for the same verse. TAHOT keys verses by KJV/English
+     number primarily; rows whose Hebrew BHS verse differs append the BHS
+     ref parenthetically (e.g. ``Gen.31.55(32.1)``). Build a BHS-keyed
+     verse index BUT also remember every English ref encountered for that
+     BHS verse — this is the ENGLISH NUMBER to call MetaV with (MetaV uses
+     KJV versification).
+  3. Per Hebrew cola, consume TAHOT tokens positionally (maqqef-aware
+     prosodic-word count via build_books.py's canonical reference). Build
+     a SourceToken per token: surface from TAHOT col 1, Strong's via
+     ``extract_strongs_from_tahot_col(col 4)``.
+  4. Pass ``source_atu_lines_with_tokens`` (list-of-lists) +
+     book_osis + chapter + ENGLISH verse number to
+     ``align_verse(...)``. Receive ``list[str]`` — one KJV verbatim line
+     per Hebrew cola.
+  5. Write to ``data/text-files/v2/eng-gloss-kjv/<NN-book>/<book>-<NN>.txt``
+     in identical format to Wave 2/4 output (verse marker, one English
+     line per Hebrew cola, blank line separator).
 
-The legacy ``eng-gloss/`` directory is NOT touched.
+What stays
+----------
+- CLI surface: ``--book``, ``--all``, ``--force``, ``--self-test``
+- Book registry: 39 OT books with TAHOT prefix + TAHOT volume file
+- The v2/he source directory is read-only (sacrosanct per CLAUDE.md)
 
 CLI
 ---
     py -3 scripts/regenerate_english_kjv.py --book genesis
-    py -3 scripts/regenerate_english_kjv.py --all
-    py -3 scripts/regenerate_english_kjv.py --book genesis --force
+    py -3 scripts/regenerate_english_kjv.py --all --force
     py -3 scripts/regenerate_english_kjv.py --self-test
 
-Co-authored-with: Wave 2 pipeline (Claude Code, Opus 4.7).
+Wave 5c-OT (atu-method commit 48f9d42).
 """
 
 from __future__ import annotations
@@ -61,21 +60,46 @@ from __future__ import annotations
 import argparse
 import re
 import sys
-import unicodedata
 from collections import defaultdict
 from pathlib import Path
 
 # ─── paths ──────────────────────────────────────────────────────────────────
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
+ATU_METHOD_ROOT = REPO_ROOT.parent / "atu-method"
 V2_HE_DIR = REPO_ROOT / "data" / "text-files" / "v2" / "he"
 OUT_DIR = REPO_ROOT / "data" / "text-files" / "v2" / "eng-gloss-kjv"
 TAHOT_DIR = REPO_ROOT / "research" / "stepbible-tahot"
-TBESH_PATH = (
-    REPO_ROOT.parent / "atu-method" / "data" / "lexicons" / "TBESH.txt"
+METAV_DIR = ATU_METHOD_ROOT / "data" / "kjv-strongs"
+
+# Make the universal kjv_alignment module importable.
+sys.path.insert(0, str(ATU_METHOD_ROOT))
+
+from atu_method.kjv_alignment import (  # noqa: E402
+    SourceToken,
+    align_verse,
+    extract_strongs_from_tahot_col,
+    load_kjv_strongs_index,
 )
 
-# ─── book registry (mirrors parse_teamim.py BOOK_REGISTRY) ─────────────────
+# ─── book registry ──────────────────────────────────────────────────────────
+
+# TAHOT prefix -> MetaV OSIS code. The kjv_alignment.metav_loader's
+# OSIS_TO_BOOK_ID dict is the authority; this maps TAHOT's 3-letter codes
+# (Exo/Deu/Jos/Jdg/Rut/...) to MetaV's varied-length OSIS codes
+# (Exod/Deut/Josh/Judg/Ruth/...).
+TAHOT_TO_OSIS = {
+    "Gen": "Gen", "Exo": "Exod", "Lev": "Lev", "Num": "Num", "Deu": "Deut",
+    "Jos": "Josh", "Jdg": "Judg", "Rut": "Ruth",
+    "1Sa": "1Sam", "2Sa": "2Sam", "1Ki": "1Kgs", "2Ki": "2Kgs",
+    "1Ch": "1Chr", "2Ch": "2Chr",
+    "Ezr": "Ezra", "Neh": "Neh", "Est": "Esth",
+    "Job": "Job", "Psa": "Ps", "Pro": "Prov", "Ecc": "Eccl", "Sng": "Song",
+    "Isa": "Isa", "Jer": "Jer", "Lam": "Lam", "Ezk": "Ezek", "Dan": "Dan",
+    "Hos": "Hos", "Jol": "Joel", "Amo": "Amos", "Oba": "Obad", "Jon": "Jonah",
+    "Mic": "Mic", "Nam": "Nah", "Hab": "Hab", "Zep": "Zeph",
+    "Hag": "Hag", "Zec": "Zech", "Mal": "Mal",
+}
 
 BOOK_REGISTRY = {
     "genesis":      {"subdir": "01-genesis",      "code": "Gen", "file": "TAHOT_Gen-Deu.txt"},
@@ -122,12 +146,16 @@ BOOK_REGISTRY = {
 # ─── constants / regex ──────────────────────────────────────────────────────
 
 MAQQEF = "־"
-SOF_PASUQ = "׃"
 VERSE_REF_RE = re.compile(r"^\d+:\d+$")
-TAHOT_ROW_RE = re.compile(r"^([A-Za-z0-9]+)\.(\d+)\.(\d+)#(\d+)([=A-Za-z\(\)]*)$")
-ANGLE_BRACKET_RE = re.compile(r"<[^>]+>")      # drop entirely
-SQUARE_BRACKET_RE = re.compile(r"\[([^\]]*)\]")  # keep contents
-WHITESPACE_RE = re.compile(r"\s+")
+# Placeholder for cola whose KJV-words got swept onto an adjacent line.
+# Must be non-blank so build_books' parse_chapter_lines doesn't treat the
+# cola line as a verse separator.
+EMPTY_COLA_PLACEHOLDER = "—"
+TAHOT_ROW_RE = re.compile(
+    r"^([A-Za-z0-9]+)\.(\d+)\.(\d+)"
+    r"(?:\((\d+)\.(\d+)\))?"
+    r"#(\d+)=([A-Za-z]+)"
+)
 
 
 # ─── parsers ────────────────────────────────────────────────────────────────
@@ -157,12 +185,7 @@ def parse_chapter_hebrew(filepath: Path):
 
 
 def split_hebrew_cola_to_words(cola_line: str):
-    """Maqqef-aware split: returns list of orthographic-word records.
-
-    Each record: {"he": str, "joins_next": bool}. Words joined by maqqef
-    count as ONE orthographic word for layer-alignment purposes (per
-    build_books.py canonical reference).
-    """
+    """Maqqef-aware split (canonical reference: build_books.py L156)."""
     out = []
     pwords = [p for p in cola_line.split(" ") if p]
     for pw in pwords:
@@ -176,42 +199,17 @@ def split_hebrew_cola_to_words(cola_line: str):
     return out
 
 
-def count_orthographic_words(cola_line: str) -> int:
-    """Count orthographic words in a cola, treating maqqef-joined as one.
-
-    NOTE: used by the 4-layer verifier (per-cola orthographic-word count
-    matches translit / eng-interlinear ``|``-token count).
-    """
-    words = split_hebrew_cola_to_words(cola_line)
-    return sum(1 for w in words if not w["joins_next"])
-
-
 def count_tahot_tokens_in_cola(cola_line: str) -> int:
-    """Count TAHOT tokens that correspond to one cola line.
+    """Count prosodic words (= TAHOT row count for this cola).
 
-    TAHOT emits ONE row per prosodic word — i.e. it splits maqqef-joined
-    compounds into separate rows. So we count prosodic words, not
-    orthographic words. This is the key alignment number when walking
-    TAHOT verse-token streams against v2/he cola.
+    TAHOT emits ONE row per prosodic word — maqqef-joined compounds split
+    into separate rows. Match alignment uses this count.
     """
     return len(split_hebrew_cola_to_words(cola_line))
 
 
 def _decode_tok_idx(tok_idx_str: str, source: str) -> tuple[int, int]:
-    """Return (primary_idx, sub_idx) for ordering tokens within a verse.
-
-    L/Q/R rows use 2-digit tok_idx (#01, #02, …) — primary index for the
-    main token sequence.
-    X rows (LXX-restored extras) use 4-digit tok_idx like ``0501`` which
-    means "inserted after L-token 05 as the 1st extra" — i.e., the first
-    two digits are the L-token AFTER which the X word inserts, and the
-    last two digits are the 1-based position within the X-insertion run.
-    Returns ``(05, 1)`` so the ordering tuple sorts X tokens after L05
-    and before L06.
-
-    (L tokens get sub_idx 0 so they sort BEFORE any X tokens at the same
-    primary index.)
-    """
+    """L/Q/R = 2-digit primary index; X = 4-digit (after-Lnn, insert-pos)."""
     if source == "X" and len(tok_idx_str) >= 4:
         primary = int(tok_idx_str[:-2])
         sub = int(tok_idx_str[-2:])
@@ -220,38 +218,31 @@ def _decode_tok_idx(tok_idx_str: str, source: str) -> tuple[int, int]:
 
 
 def parse_tahot_file(tahot_path: Path, book_code: str):
-    """Parse TAHOT into {chapter: {verse: [(surface_he, english, strongs), ...]}}.
+    """Parse TAHOT into ``{bhs_ch: {bhs_vs: VerseRec}}``.
 
-    Token rows look like:
-        Gen.1.1#01=L	בְּ/רֵאשִׁ֖ית	be./re.Shit	in/ beginning	H9003/{H7225G}	HR/Ncfsa	...
+    VerseRec = {
+        "tokens": list[(surface, strongs_field)] in textual order,
+        "english_refs": list[(eng_ch, eng_vs)] in token-order (deduped),
+    }
 
-    TAHOT's primary verse reference is the **English/NRSV** numbering. When
-    Hebrew verse numbering differs, TAHOT appends ``(H.V)`` in parentheses
-    to the ref, e.g. ``Gen.31.55(32.1)`` means English 31:55 = Hebrew 32:1.
-    The v2/he source files use **Hebrew BHS** numbering, so we key the
-    index by the Hebrew ref where one is present. Without the parenthetical
-    we use the English ref directly (the two coincide for most of the corpus).
-
-    We collect tokens in textual order; tok_idx (the ``#NN`` suffix) is
-    1-based within a verse.
+    TAHOT's primary ref is English/KJV; when Hebrew BHS differs, TAHOT
+    appends ``(H.V)`` to the ref. We key by BHS so v2/he (which uses BHS
+    numbering) reads cleanly; we remember every English (ch, vs) seen so
+    we can call MetaV with the correct KJV verse number.
     """
     staging: dict[int, dict[int, list]] = defaultdict(lambda: defaultdict(list))
     target_prefix = book_code + "."
-    row_re = re.compile(
-        r"^([A-Za-z0-9]+)\.(\d+)\.(\d+)"
-        r"(?:\((\d+)\.(\d+)\))?"
-        r"#(\d+)=([A-Za-z]+)"
-    )
+
     with tahot_path.open("r", encoding="utf-8") as f:
         for raw in f:
             line = raw.rstrip("\r\n")
             if not line.startswith(target_prefix):
                 continue
             cols = line.split("\t")
-            if len(cols) < 4:
+            if len(cols) < 5:
                 continue
             ref_field = cols[0]
-            m = row_re.match(ref_field)
+            m = TAHOT_ROW_RE.match(ref_field)
             if not m:
                 continue
             if m.group(1) != book_code:
@@ -262,162 +253,139 @@ def parse_tahot_file(tahot_path: Path, book_code: str):
             heb_vs = int(m.group(5)) if m.group(5) else eng_vs
             tok_idx_str = m.group(6)
             source = m.group(7)
-            # Accepted sources (each row IS a Hebrew word the project
-            # treats as base text):
-            #   L     — Leningrad
-            #   L*    — Leningrad-family (LA, LAH, LBH, LAB, etc.)
-            #   Q     — Qere; translators use Qere when differs from K
-            #   R     — restored from another verse (Jos.21.36-37, Neh.7.67b)
-            #   X     — extra word reconstructed from LXX; present in
-            #           v2/he per project's editorial decision. Insertion
-            #           position decoded from tok_idx (e.g. ``0501`` = after
-            #           L-token 05, position 1 in the insertion).
-            # Skip:
-            #   K     — Ketiv; shares tok_idx with Q row (would duplicate).
+            # Skip Ketiv (Q row shares tok_idx and replaces it); accept
+            # L, L* (LA/LAH/...), Q, R (restored), X (LXX-extra).
             if source == "K":
                 continue
             if source not in ("L", "Q", "R", "X") and not source.startswith("L"):
                 continue
-            ch, vs = heb_ch, heb_vs
             primary, sub = _decode_tok_idx(tok_idx_str, source)
             surface = cols[1] if len(cols) > 1 else ""
-            english = cols[3] if len(cols) > 3 else ""
-            strongs = cols[4] if len(cols) > 4 else ""
-            staging[ch][vs].append(((primary, sub), surface, english, strongs))
+            strongs_field = cols[4] if len(cols) > 4 else ""
 
-    # Sort each verse's tokens into textual order and emit clean triples.
-    out: dict[int, dict[int, list[tuple[str, str, str]]]] = defaultdict(dict)
+            staging[heb_ch][heb_vs].append(
+                ((primary, sub), surface, strongs_field, eng_ch, eng_vs)
+            )
+
+    out: dict[int, dict[int, dict]] = defaultdict(dict)
     for ch, verses in staging.items():
         for vs, entries in verses.items():
             entries.sort(key=lambda e: e[0])
-            out[ch][vs] = [(s, e, st) for _, s, e, st in entries]
+            tokens: list[tuple[str, str]] = []
+            english_refs_seen: list[tuple[int, int]] = []
+            seen_refs: set[tuple[int, int]] = set()
+            for _, surface, strongs_field, ech, evs in entries:
+                tokens.append((surface, strongs_field))
+                key = (ech, evs)
+                if key not in seen_refs:
+                    seen_refs.add(key)
+                    english_refs_seen.append(key)
+            out[ch][vs] = {
+                "tokens": tokens,
+                "english_refs": english_refs_seen,
+            }
     return out
 
 
-# ─── TBESH fallback lexicon (only loaded if a TAHOT English column is empty) ─
+# ─── per-verse alignment via universal module ───────────────────────────────
 
-_TBESH_CACHE: dict[str, str] | None = None
+def choose_english_verse_for_metav(
+    english_refs: list[tuple[int, int]],
+    metav_index,
+    book_id: int,
+) -> tuple[int, int] | None:
+    """Pick the English (ch, vs) that exists in MetaV.
 
+    If multiple English verses map to one BHS verse (Psalms superscription:
+    English 23:0 + 23:1 both BHS 23:1), MetaV typically only carries the
+    higher-numbered one (KJV folds the superscription into v.1 at
+    negative vpos). So prefer the largest English verse first.
 
-def load_tbesh() -> dict[str, str]:
-    """Load TBESH brief-gloss lexicon keyed by Strong number (e.g. 'H0430').
-
-    Returns dict {strong: short_gloss}. Falls back to empty dict if file
-    is missing — the fallback then degrades to empty string for unknown
-    tokens, which is acceptable since TAHOT itself covers the corpus.
+    Returns None if no MetaV match exists.
     """
-    global _TBESH_CACHE
-    if _TBESH_CACHE is not None:
-        return _TBESH_CACHE
-    cache: dict[str, str] = {}
-    if not TBESH_PATH.exists():
-        _TBESH_CACHE = cache
-        return cache
+    if not english_refs:
+        return None
+    candidates = sorted(set(english_refs), key=lambda x: (-x[1], -x[0]))
+    for ech, evs in candidates:
+        if (book_id, ech, evs) in metav_index:
+            return (ech, evs)
+    return None
+
+
+def render_verse(
+    book_osis: str,
+    book_id: int,
+    bhs_ch: int,
+    bhs_vs: int,
+    cola_lines: list[str],
+    verse_rec: dict,
+    metav_index,
+    diagnostics: dict,
+    book_key: str,
+) -> list[str]:
+    """Render one BHS verse's cola as KJV-verbatim English lines."""
+    tokens = verse_rec["tokens"]
+    english_refs = verse_rec["english_refs"]
+
+    # Pick the English verse number for MetaV
+    metav_key = choose_english_verse_for_metav(english_refs, metav_index, book_id)
+    if metav_key is None:
+        diagnostics.setdefault("metav_misses", []).append(
+            f"{book_key} {bhs_ch}:{bhs_vs}: no MetaV entry for any English ref "
+            f"{english_refs}"
+        )
+        return ["" for _ in cola_lines]
+
+    eng_ch, eng_vs = metav_key
+
+    # Walk cola lines, consume tokens sequentially.
+    cursor = 0
+    source_lines: list[list[SourceToken]] = []
+    for cola in cola_lines:
+        n_words = count_tahot_tokens_in_cola(cola)
+        cola_tokens = tokens[cursor:cursor + n_words]
+        cursor += n_words
+        atu_line: list[SourceToken] = []
+        for surface, strongs_field in cola_tokens:
+            strongs = tuple(extract_strongs_from_tahot_col(strongs_field))
+            atu_line.append(SourceToken(text=surface, strongs_list=strongs))
+        source_lines.append(atu_line)
+
+    if cursor != len(tokens):
+        diagnostics.setdefault("token_count_mismatches", []).append(
+            f"{book_key} {bhs_ch}:{bhs_vs}: consumed {cursor}, TAHOT has "
+            f"{len(tokens)} (Δ={len(tokens) - cursor})"
+        )
+
     try:
-        with TBESH_PATH.open("r", encoding="utf-8") as f:
-            for raw in f:
-                line = raw.rstrip("\r\n")
-                if not line or not line.startswith("H"):
-                    continue
-                cols = line.split("\t")
-                if len(cols) < 7:
-                    continue
-                # cols: eStrong, dStrong-anno, dStrong, hebrew, transliteration, POS, gloss, def
-                key = cols[2].strip()  # dStrong, e.g. "H0430G"
-                gloss = cols[6].strip() if len(cols) > 6 else ""
-                if key and gloss and key not in cache:
-                    cache[key] = gloss
-    except Exception:
-        pass
-    _TBESH_CACHE = cache
-    return cache
+        out = align_verse(book_osis, eng_ch, eng_vs, source_lines, METAV_DIR)
+    except KeyError as e:
+        diagnostics.setdefault("align_errors", []).append(str(e))
+        return [EMPTY_COLA_PLACEHOLDER for _ in cola_lines]
 
-
-# ─── cleanup pipeline ───────────────────────────────────────────────────────
-
-def clean_token_english(eng: str) -> str:
-    """Apply mechanical cleanup to a single TAHOT English-column value.
-
-    Rules:
-      - Replace morpheme separator ``/`` with single space.
-      - Drop ``<...>`` angle-bracket markers entirely (TAHOT: "in the
-        Hebrew but best not included in translation").
-      - Strip ``[...]`` square brackets but KEEP contents (TAHOT: "not in
-        the Hebrew but best included").
-      - Collapse runs of whitespace.
-    """
-    if eng is None:
-        return ""
-    s = eng.replace("/", " ")
-    s = ANGLE_BRACKET_RE.sub("", s)
-    s = SQUARE_BRACKET_RE.sub(r"\1", s)
-    s = WHITESPACE_RE.sub(" ", s).strip()
-    return s
-
-
-def primary_strong(strongs_field: str) -> str:
-    """Extract the lexical (curly-braced) Strong from a TAHOT dStrongs cell.
-
-    Example: ``H9003/{H7225G}`` → ``H7225G``. Returns "" if none found.
-    """
-    if not strongs_field:
-        return ""
-    m = re.search(r"\{(H\d+[A-Za-z]?)\}", strongs_field)
-    return m.group(1) if m else ""
-
-
-def token_english_with_fallback(eng: str, strongs_field: str) -> str:
-    """Get cleaned English for a token, falling back to TBESH if empty.
-
-    IMPORTANT: a TAHOT English column that contains ONLY angle-bracket
-    markers (e.g. ``<obj.>``, ``<to>``) is an INTENTIONAL no-translation
-    signal, not a missing gloss — TBESH fallback would re-introduce
-    ``Obj.`` from the lexicon's bracketed bare label. So we skip fallback
-    when the original eng-string was non-empty (i.e. TAHOT *had* a value,
-    it's just untranslated by design).
-    """
-    cleaned = clean_token_english(eng)
-    if cleaned:
-        return cleaned
-    # If TAHOT had ANY content (e.g. "<obj.>"), respect the no-translation
-    # signal and emit empty — do not fall back.
-    if eng and eng.strip():
-        return ""
-    strong = primary_strong(strongs_field)
-    if not strong:
-        return ""
-    tbesh = load_tbesh()
-    gloss = tbesh.get(strong, "")
-    if not gloss:
-        # Try without trailing letter (H7225G → H7225)
-        gloss = tbesh.get(strong[:-1], "") if strong[-1].isalpha() else ""
-    return clean_token_english(gloss)
-
-
-def assemble_cola_english(cola_tokens_english: list[str]) -> str:
-    """Join per-token English values into a smooth cola line.
-
-    No reordering; literal token order (Wave 2 conservative choice).
-    """
-    parts = [t for t in cola_tokens_english if t]
-    s = " ".join(parts)
-    s = WHITESPACE_RE.sub(" ", s).strip()
-    return s
+    # Empty cola can occur when the synonymy sweep pulls all of a cola's
+    # KJV words onto an adjacent line (e.g. Gen 1:4 "and divided the light
+    # from the darkness" — the second cola consumes the third cola's KJV
+    # words because they share Strong's). The file format requires ONE
+    # non-blank line per cola (blank line = verse separator), so we emit
+    # a placeholder. The 4-layer verifier and build_books then see the
+    # expected line count.
+    return [line if line else EMPTY_COLA_PLACEHOLDER for line in out]
 
 
 # ─── core generator ─────────────────────────────────────────────────────────
 
 def generate_chapter(
     book_key: str,
+    book_osis: str,
+    book_id: int,
     chapter_filepath: Path,
     tahot_index: dict,
+    metav_index,
     out_path: Path,
     diagnostics: dict,
 ) -> int:
-    """Generate one chapter's KJV-style English file from TAHOT.
-
-    Returns the number of cola lines written.
-    """
+    """Generate one chapter's KJV-verbatim English file."""
     chapter_num_match = re.search(r"-(\d+)\.txt$", chapter_filepath.name)
     if not chapter_num_match:
         diagnostics.setdefault("errors", []).append(
@@ -432,55 +400,59 @@ def generate_chapter(
     cola_total = 0
 
     for verse in he_verses:
-        ref = verse["ref"]              # "1:1"
+        ref = verse["ref"]
         ch_str, vs_str = ref.split(":")
         try:
+            ch_num = int(ch_str)
             vs_num = int(vs_str)
         except ValueError:
             continue
 
-        verse_tokens = chapter_tahot.get(vs_num, [])
-        # Walk cola lines; consume tokens sequentially.
-        cursor = 0
-        cola_english_lines: list[str] = []
-        for cola in verse["cola_lines"]:
-            n_words = count_tahot_tokens_in_cola(cola)
-            cola_tokens = verse_tokens[cursor:cursor + n_words]
-            cursor += n_words
-            token_eng = [
-                token_english_with_fallback(t[1], t[2]) for t in cola_tokens
-            ]
-            line = assemble_cola_english(token_eng)
-            cola_english_lines.append(line)
-            cola_total += 1
-
-        if cursor != len(verse_tokens):
-            diagnostics.setdefault("token_count_mismatches", []).append(
-                f"{book_key} {ref}: consumed {cursor} tokens, TAHOT has "
-                f"{len(verse_tokens)} (Δ={len(verse_tokens) - cursor})"
+        verse_rec = chapter_tahot.get(vs_num)
+        if verse_rec is None:
+            # No TAHOT data — emit placeholder cola lines.
+            cola_english_lines = [EMPTY_COLA_PLACEHOLDER for _ in verse["cola_lines"]]
+            diagnostics.setdefault("tahot_misses", []).append(
+                f"{book_key} {ref}: no TAHOT rows"
+            )
+        else:
+            cola_english_lines = render_verse(
+                book_osis=book_osis,
+                book_id=book_id,
+                bhs_ch=ch_num,
+                bhs_vs=vs_num,
+                cola_lines=verse["cola_lines"],
+                verse_rec=verse_rec,
+                metav_index=metav_index,
+                diagnostics=diagnostics,
+                book_key=book_key,
             )
 
+        cola_total += len(cola_english_lines)
         out_lines.append(ref)
         out_lines.extend(cola_english_lines)
         out_lines.append("")
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
     with out_path.open("w", encoding="utf-8") as f:
-        # Drop trailing blank to match v2/eng-gloss/ convention (one blank
-        # between verses, file ends without an extra terminator).
         body = "\n".join(out_lines).rstrip() + "\n"
         f.write(body)
     return cola_total
 
 
-def generate_book(book_key: str, *, force: bool = False) -> dict:
-    """Generate the eng-gloss-kjv layer for one book. Returns diagnostics."""
+def generate_book(book_key: str, metav_index, *, force: bool = False) -> dict:
+    """Generate eng-gloss-kjv for one book. Returns diagnostics."""
     if book_key not in BOOK_REGISTRY:
         return {"error": f"Unknown book: {book_key}"}
     entry = BOOK_REGISTRY[book_key]
     book_subdir = entry["subdir"]
     book_code = entry["code"]
+    book_osis = TAHOT_TO_OSIS[book_code]
     tahot_file = TAHOT_DIR / entry["file"]
+
+    # Resolve book_id from OSIS via the kjv_alignment module
+    from atu_method.kjv_alignment.metav_loader import OSIS_TO_BOOK_ID
+    book_id = OSIS_TO_BOOK_ID[book_osis]
 
     if not tahot_file.exists():
         return {"error": f"TAHOT file missing: {tahot_file}"}
@@ -490,27 +462,41 @@ def generate_book(book_key: str, *, force: bool = False) -> dict:
     out_dir = OUT_DIR / book_subdir
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    print(f"[{book_key}] Parsing TAHOT for {book_code} from {tahot_file.name}...")
+    print(f"[{book_key}] Parsing TAHOT for {book_code} (OSIS={book_osis}, "
+          f"BookID={book_id}) from {tahot_file.name}...")
     tahot_index = parse_tahot_file(tahot_file, book_code)
     n_chapters_in_tahot = len(tahot_index)
     print(f"[{book_key}] TAHOT chapters parsed: {n_chapters_in_tahot}")
 
-    diagnostics: dict = {"book": book_key, "chapters": 0, "cola_total": 0,
-                         "token_count_mismatches": [], "errors": []}
+    diagnostics: dict = {
+        "book": book_key, "chapters": 0, "cola_total": 0,
+        "token_count_mismatches": [], "errors": [], "metav_misses": [],
+        "tahot_misses": [], "align_errors": [],
+    }
     chapter_files = sorted(he_dir.glob("*.txt"))
     for cf in chapter_files:
         out_path = out_dir / cf.name
         if out_path.exists() and not force:
-            # Skip; user can pass --force to regenerate
             diagnostics["chapters"] += 1
             continue
-        cola = generate_chapter(book_key, cf, tahot_index, out_path, diagnostics)
+        cola = generate_chapter(
+            book_key=book_key,
+            book_osis=book_osis,
+            book_id=book_id,
+            chapter_filepath=cf,
+            tahot_index=tahot_index,
+            metav_index=metav_index,
+            out_path=out_path,
+            diagnostics=diagnostics,
+        )
         diagnostics["chapters"] += 1
         diagnostics["cola_total"] += cola
     print(
-        f"[{book_key}] Wrote {diagnostics['chapters']} chapter file(s), "
-        f"{diagnostics['cola_total']} cola lines. "
-        f"Mismatches: {len(diagnostics['token_count_mismatches'])}."
+        f"[{book_key}] Wrote {diagnostics['chapters']} chapter(s), "
+        f"{diagnostics['cola_total']} cola. "
+        f"Token-count mismatches: {len(diagnostics['token_count_mismatches'])}, "
+        f"MetaV misses: {len(diagnostics['metav_misses'])}, "
+        f"TAHOT misses: {len(diagnostics['tahot_misses'])}."
     )
     return diagnostics
 
@@ -518,9 +504,10 @@ def generate_book(book_key: str, *, force: bool = False) -> dict:
 # ─── self-test ──────────────────────────────────────────────────────────────
 
 def _self_test() -> int:
-    """Run Gen 1 generation and assert sanity properties. Returns exit code."""
-    print("=== self-test: regenerate_english_kjv.py / Genesis 1 ===")
-    diag = generate_book("genesis", force=True)
+    """Run Gen 1 generation and assert KJV-verbatim sanity."""
+    print("=== self-test: regenerate_english_kjv.py / Genesis 1 (KJV) ===")
+    metav_index = load_kjv_strongs_index(METAV_DIR)
+    diag = generate_book("genesis", metav_index, force=True)
     if diag.get("error"):
         print(f"FAIL: {diag['error']}")
         return 1
@@ -530,7 +517,6 @@ def _self_test() -> int:
         print(f"FAIL: output missing: {gen1}")
         return 1
 
-    # Parse output and compare line counts per verse to the Hebrew source.
     out_verses = parse_chapter_hebrew(gen1)
     he_verses = parse_chapter_hebrew(V2_HE_DIR / "01-genesis" / "genesis-01.txt")
     out_by_ref = {v["ref"]: v["cola_lines"] for v in out_verses}
@@ -543,47 +529,44 @@ def _self_test() -> int:
             print(f"FAIL: cola-count mismatch {ref}: he={len(he_cola)} en={len(out_cola)}")
             failed = True
 
-    # Content checks
-    gen_1_1 = " ".join(out_by_ref.get("1:1", [])).lower()
-    for needed in ("god", "created", "heavens", "earth"):
-        if needed not in gen_1_1:
-            print(f"FAIL: Gen 1:1 missing token '{needed}'. Got: {gen_1_1!r}")
-            failed = True
-
-    # 90%-non-empty check
-    flat_lines = [l for v in out_verses for l in v["cola_lines"]]
-    non_empty = [l for l in flat_lines if l.strip()]
-    pct = 100.0 * len(non_empty) / max(1, len(flat_lines))
-    if pct < 90:
-        print(f"FAIL: only {pct:.1f}% of lines have content")
+    gen_1_1 = " ".join(out_by_ref.get("1:1", []))
+    expected_1_1 = "In the beginning God created the heaven and the earth."
+    if gen_1_1.strip() != expected_1_1:
+        print(f"FAIL: Gen 1:1 mismatch. Got: {gen_1_1!r}; expected: {expected_1_1!r}")
         failed = True
-
-    print(f"Gen 1 cola lines: {len(flat_lines)} ({pct:.1f}% non-empty)")
-    print(f"Gen 1:1 → {gen_1_1!r}")
+    else:
+        print(f"  PASS Gen 1:1: {gen_1_1!r}")
 
     if failed:
         return 1
-    print("PASS: all self-test assertions held.")
+    print("PASS: self-test assertions held.")
     return 0
 
 
 # ─── CLI ────────────────────────────────────────────────────────────────────
 
 def main(argv: list[str] | None = None) -> int:
-    p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    p = argparse.ArgumentParser(
+        description=__doc__,
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+    )
     p.add_argument("--book", help="Single book key (e.g. genesis, jonah)")
-    p.add_argument("--all", action="store_true", help="Run all books in BOOK_REGISTRY")
-    p.add_argument("--force", action="store_true", help="Overwrite existing output files")
-    p.add_argument("--self-test", action="store_true", help="Run Genesis 1 self-test")
+    p.add_argument("--all", action="store_true", help="Run all books")
+    p.add_argument("--force", action="store_true", help="Overwrite existing outputs")
+    p.add_argument("--self-test", action="store_true", help="Run Gen 1 self-test")
     args = p.parse_args(argv)
 
     if args.self_test:
         return _self_test()
 
+    print(f"Loading MetaV index from {METAV_DIR}...")
+    metav_index = load_kjv_strongs_index(METAV_DIR)
+    print(f"MetaV verses indexed: {len(metav_index)}")
+
     if args.all:
         had_error = False
         for book in BOOK_REGISTRY:
-            diag = generate_book(book, force=args.force)
+            diag = generate_book(book, metav_index, force=args.force)
             if diag.get("error"):
                 print(f"  ERROR: {diag['error']}")
                 had_error = True
@@ -593,7 +576,7 @@ def main(argv: list[str] | None = None) -> int:
         p.print_help()
         return 2
 
-    diag = generate_book(args.book, force=args.force)
+    diag = generate_book(args.book, metav_index, force=args.force)
     if diag.get("error"):
         print(f"ERROR: {diag['error']}")
         return 1
