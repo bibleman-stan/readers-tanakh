@@ -57,7 +57,7 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 VALIDATORS_DIR = REPO_ROOT / "validators"
 BASELINE_PATH = VALIDATORS_DIR / ".baseline.json"
 
-LAYER_DIRS = ("syntax", "colometry")
+LAYER_DIRS = ("syntax", "colometry", "4-layer-integrity")
 TIMEOUT_SECONDS = 120
 
 # Parallel-validator pool size. Validators are subprocess.run() invocations of
@@ -99,13 +99,20 @@ def _aggregate_per_book(args_tuple: tuple) -> dict:
 
 
 def discover_validators() -> list[tuple[str, Path]]:
-    """Return [(layer_subdir, validator_path)] sorted, for syntax/ then colometry/."""
+    """Return [(layer_subdir, validator_path)] sorted, for syntax/ then
+    colometry/ then 4-layer-integrity/. Picks up `validate_*.py` files in
+    syntax/ + colometry/ and `verify_*.py` files in 4-layer-integrity/
+    (the verifier's name reflects its different shape — it checks token-
+    count parity across pre-existing layers rather than emitting per-cola
+    findings)."""
     out: list[tuple[str, Path]] = []
     for sub in LAYER_DIRS:
         sub_dir = VALIDATORS_DIR / sub
         if not sub_dir.exists():
             continue
         for f in sorted(sub_dir.glob("validate_*.py")):
+            out.append((sub, f))
+        for f in sorted(sub_dir.glob("verify_*.py")):
             out.append((sub, f))
     return out
 

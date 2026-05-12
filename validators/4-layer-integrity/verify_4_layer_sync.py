@@ -224,20 +224,30 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--all", action="store_true", help="Verify every book")
     p.add_argument("--chapter", type=int, help="Restrict to one chapter number")
     p.add_argument("--quiet", action="store_true", help="Suppress per-fail detail; print only summary")
+    p.add_argument("--json", action="store_true",
+                   help="Emit run_all.py-compatible JSON summary on stdout (one fail = one finding)")
+    p.add_argument("--v2", action="store_true",
+                   help="Reserved for run_all.py compatibility (this verifier always uses v2)")
     args = p.parse_args(argv)
 
     # Resolve book → subdir
     book_to_subdir = {sub.split("-", 1)[1]: sub for sub in BOOK_SUBDIRS}
     book_to_subdir.update({sub: sub for sub in BOOK_SUBDIRS})
 
-    if args.all:
-        targets = BOOK_SUBDIRS
-    elif args.book:
+    if args.book:
         if args.book not in book_to_subdir:
-            print(f"ERROR: unknown book key: {args.book}")
-            print(f"Valid keys: {sorted(book_to_subdir.keys())}")
+            if args.json:
+                import json as _j
+                print(_j.dumps({"summary": {"total_findings": 0}, "error": f"unknown book {args.book}"}))
+            else:
+                print(f"ERROR: unknown book key: {args.book}")
+                print(f"Valid keys: {sorted(book_to_subdir.keys())}")
             return 2
         targets = [book_to_subdir[args.book]]
+    elif args.all or args.json:
+        # JSON mode (used by run_all.py) defaults to all-books — there's no
+        # meaningful per-book invocation in the dashboard context.
+        targets = BOOK_SUBDIRS
     else:
         p.print_help()
         return 2
@@ -253,7 +263,26 @@ def main(argv: list[str] | None = None) -> int:
         total_pass += n_p
         total_fail += n_f
         all_fails.extend(fails)
-        print(f"[{subdir}] chapters={n_ch} pass={n_p} fail={n_f}")
+        if not args.json:
+            print(f"[{subdir}] chapters={n_ch} pass={n_p} fail={n_f}")
+
+    if args.json:
+        import json as _j
+        # run_all.py-compatible JSON: each fail = one finding, severity
+        # MALFORMED (Layer 1 — structural drift across the 4-layer alignment).
+        findings = [
+            {"verse": ch, "severity": "MALFORMED", "tag": "4-LAYER-DRIFT", "msg": msg}
+            for ch, msg in all_fails
+        ]
+        print(_j.dumps({
+            "summary": {
+                "total_findings": total_fail,
+                "by_severity": {"MALFORMED": total_fail} if total_fail else {},
+                "by_tag": {"4-LAYER-DRIFT": total_fail} if total_fail else {},
+            },
+            "findings": findings,
+        }))
+        return 0
 
     if all_fails and not args.quiet:
         print()
