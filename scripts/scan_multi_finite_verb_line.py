@@ -59,6 +59,11 @@ sys.path.insert(0, str(REPO_ROOT))
 
 from validators._shared import macula_constituents as MC
 
+try:
+    from validators._shared.hendiadys_lemma_pairs import BONDED_LEMMA_PAIRS
+except ImportError:
+    BONDED_LEMMA_PAIRS = frozenset()
+
 # Reuse the cross-clause structural relationship rules from Hpar.
 _COMPLEMENT_RULES = frozenset({"V2CL", "Np2CL"})
 _SUBORDINATE_RULES = frozenset({"CLaCL", "relCL"})
@@ -70,6 +75,14 @@ _DISCOURSE_FORMULA_SKELS = frozenset({
 
 _NEGATION_SKELS = frozenset({"לא", "אל"})
 _RELATIVIZER_SKELS = frozenset({"אשר", "די"})
+
+# Speech-act verb lemmas (per audit FP-3): when the first finite verb is a
+# speech-act lemma followed by a second finite verb that's the speech content
+# (typically imperative or jussive in direct discourse), the merge is J3
+# speech-act announcement framing, not a generative-principle violation.
+_SPEECH_ACT_LEMMAS = frozenset({
+    "אָמַר", "דָּבַר", "עָנָה", "צִוָּה", "קָרָא", "שָׁאַל", "הִגִּיד",
+})
 
 VERSE_REF_RE = re.compile(r"^(\d+):(\d+)\s*$")
 
@@ -91,6 +104,20 @@ def _verb_aspect(t: MC.Token) -> str:
     if not morph or morph[0] != "V" or len(morph) < 3:
         return ""
     return morph[2]
+
+
+def _pw_count(tokens) -> int:
+    """Count prosodic words by walking each token's `after` field; whitespace
+    in `after` ends a prosodic word. Maqqef-bonded morphemes have no whitespace
+    in after → bonded into one pw. Same algorithm as Hpar's _pw_count."""
+    if not tokens:
+        return 0
+    pw = 1
+    for i in range(1, len(tokens)):
+        prev_after = (getattr(tokens[i - 1], "after", "") or "")
+        if any(c.isspace() for c in prev_after):
+            pw += 1
+    return pw
 
 
 def _is_leaf_clause(cl: MC.Constituent) -> bool:
@@ -189,8 +216,7 @@ def _suppressor_cascade(line_tokens, clauses) -> tuple[str, list[str]]:
     # S6: both verbs imperative (aspect v) AND combined ≤4 prosodic words
     if head_a is not None and head_b is not None:
         if _verb_aspect(head_a) == "V" and _verb_aspect(head_b) == "V":
-            pw_count = sum(1 for t in line_tokens if t.consonant_skel)
-            if pw_count <= 4:
+            if _pw_count(line_tokens) <= 4:
                 return "SUPPRESSED", ["S6-imperative-pair-short"]
 
     # S7: both verbs preceded by negation
@@ -215,6 +241,24 @@ def _suppressor_cascade(line_tokens, clauses) -> tuple[str, list[str]]:
                     between_neg = True
         if before_a_neg and between_neg:
             return "SUPPRESSED", ["S7-negation-pair"]
+
+    # S8: speech-intro frame — head_a is a speech-act verb lemma. The
+    # second finite verb is the speech content (typically imperative or
+    # jussive in direct discourse). J3 announcement-frame, not a
+    # generative-principle violation. Hpar covers this via the speech-
+    # intro framing rule (H5/H5b); this scanner mirrors the discriminator.
+    if head_a is not None and head_a.lemma in _SPEECH_ACT_LEMMAS:
+        return "SUPPRESSED", ["S8-speech-intro-frame"]
+
+    # S9: cognate-lemma hendiadys — both heads' lemmas form a bonded pair
+    # per validators/_shared/hendiadys_lemma_pairs.py (M1-class merge).
+    if head_a is not None and head_b is not None:
+        lemma_a, lemma_b = head_a.lemma, head_b.lemma
+        if lemma_a and lemma_b:
+            pair_fwd = (lemma_a, lemma_b)
+            pair_rev = (lemma_b, lemma_a)
+            if pair_fwd in BONDED_LEMMA_PAIRS or pair_rev in BONDED_LEMMA_PAIRS:
+                return "SUPPRESSED", ["S9-cognate-lemma-hendiadys"]
 
     # All mechanical suppressors passed.
     # Default: REVIEW-REQUIRED (Stan-confirms editorial intent vs M3/M4
