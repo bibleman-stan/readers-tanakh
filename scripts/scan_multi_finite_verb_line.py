@@ -76,6 +76,15 @@ _DISCOURSE_FORMULA_SKELS = frozenset({
 _NEGATION_SKELS = frozenset({"לא", "אל"})
 _RELATIVIZER_SKELS = frozenset({"אשר", "די"})
 
+# Conditional / comparative / temporal-subordinator particles that introduce
+# a subordinate clause whose finite verb is grammatically dependent on the
+# main clause. Two finite verbs across the boundary are joined by the
+# subordinator, not parallel propositions. (Audit class FP-2 / FP-conditional.)
+_SUBORDINATOR_SKELS = frozenset({
+    "אם", "כי", "כאשר", "פן", "אולי", "לולי", "לולא", "בטרם", "טרם",
+    "עד", "למען", "בעבור",
+})
+
 # Speech-act verb lemmas (per audit FP-3): when the first finite verb is a
 # speech-act lemma followed by a second finite verb that's the speech content
 # (typically imperative or jussive in direct discourse), the merge is J3
@@ -260,12 +269,78 @@ def _suppressor_cascade(line_tokens, clauses) -> tuple[str, list[str]]:
             if pair_fwd in BONDED_LEMMA_PAIRS or pair_rev in BONDED_LEMMA_PAIRS:
                 return "SUPPRESSED", ["S9-cognate-lemma-hendiadys"]
 
-    # All mechanical suppressors passed.
+    # S10: same-lemma parallelism (Hpar territory) — when both finite-verb
+    # heads share the same lemma, this is parallel restatement, governed by
+    # validate_parallel_clause_split (rule Hpar). Defer rather than double-flag.
+    if head_a is not None and head_b is not None:
+        if head_a.lemma and head_a.lemma == head_b.lemma:
+            return "SUPPRESSED", ["S10-same-lemma-defer-to-Hpar"]
+
+    # S11: conditional / comparative / temporal subordinator before head_a.
+    # When the line opens with אִם / כִּי / כַּאֲשֶׁר / פֶּן / אוּלַי / etc., the
+    # two finite verbs are protasis+apodosis or comparator+main, joined by
+    # the subordinator. Not parallel propositions.
+    if head_a is not None:
+        head_a_id = id(head_a)
+        for t in line_tokens:
+            if id(t) == head_a_id:
+                break
+            if t.consonant_skel in _SUBORDINATOR_SKELS:
+                return "SUPPRESSED", ["S11-subordinator-before-head"]
+
+    # S12: wayyiqtol-bonded narrative pair (audit FP-1) — both verbs
+    # wayyiqtol AND head_b's clause has no explicit subject (shared A0 with
+    # head_a). The sequential micro-narrative pair (rose-and-went, took-and-
+    # shook) reads as one fused beat. The S1 all-wayyiqtol guard already
+    # defers full-line wayyiqtol-only cases to the S4 spec; this catches
+    # the specific N=2-wayyiqtol-with-shared-subject pattern.
+    if head_a is not None and head_b is not None:
+        if _is_wayyiqtol(head_a) and _is_wayyiqtol(head_b):
+            # Macula frame check: cl_b's A0 (subject) frame-arg empty or
+            # matches cl_a's A0 → shared subject, bonded pair.
+            a_a0 = head_a.frame_arg_ids.get("A0", []) if hasattr(head_a, "frame_arg_ids") else []
+            b_a0 = head_b.frame_arg_ids.get("A0", []) if hasattr(head_b, "frame_arg_ids") else []
+            if not b_a0 or (a_a0 and b_a0 and a_a0[0] == b_a0[0]):
+                return "SUPPRESSED", ["S12-wayyiqtol-bonded-pair"]
+
+    # All mechanical suppressors passed. Now positive-class promotion to
+    # STRONG-SPLIT-CANDIDATE for clean shapes (audit-confirmed TP classes).
+
+    # T1: parallel-jussive pair — both heads aspect J. Promise/blessing
+    # pattern (Gen 1:9 yiqqavu/vetera'eh, Gen 9:27 yapht/yishkon, Isa 45:8
+    # har'ifu/yizzelu). Each member is its own beat per the generative
+    # principle.
+    if head_a is not None and head_b is not None:
+        if _verb_aspect(head_a) == "J" and _verb_aspect(head_b) == "J":
+            return "STRONG-SPLIT-CANDIDATE", ["T1-parallel-jussives"]
+
+    # T2: N=3+ verb chain — three or more leaf clauses with finite-verb
+    # heads on one cola. N=3+ cliff per framework §1.9 — J1 wins regardless
+    # of merge-rule co-firing. (Exod 21:16 steal/sell/be-found; Jer 20:6
+    # come/die/be-buried; 2Chr 6:23 hear/do/judge.)
+    if len(clauses) >= 3:
+        return "STRONG-SPLIT-CANDIDATE", ["T2-N3-plus-verb-chain"]
+
+    # T3: question + speech-act response — head_a is interrogative
+    # (yiqtol/imperfect with question particle הֲ / מָה / מִי / אַיֵּה
+    # before it) AND head_b lemma is in speech-act set. Two distinct
+    # speech turns. (1Sam 30:8 'shall I overtake?' / 'pursue!'; 2Kgs 4:2
+    # 'what shall I do?' / 'tell me'.)
+    if head_a is not None and head_b is not None:
+        if head_b.lemma in _SPEECH_ACT_LEMMAS and _verb_aspect(head_a) == "I":
+            head_a_id = id(head_a)
+            has_question_particle = False
+            for t in line_tokens:
+                if id(t) == head_a_id:
+                    break
+                if t.consonant_skel in {"ה", "מה", "מי", "איה", "איך", "מתי"}:
+                    has_question_particle = True
+                    break
+            if has_question_particle:
+                return "STRONG-SPLIT-CANDIDATE", ["T3-question-plus-speech-response"]
+
     # Default: REVIEW-REQUIRED (Stan-confirms editorial intent vs M3/M4
-    # fragmented-atomic-thought / M1 bonded-pair lemma residue). Only
-    # promote to STRONG when both clauses are top-level coordinations
-    # (LCA in COORD_RULES) — but we lack the full Hpar LCA machinery
-    # here, so default to REVIEW-REQUIRED for safety.
+    # fragmented-atomic-thought / Category B bicolon judgment).
     return "REVIEW-REQUIRED", ["mechanical-clean"]
 
 
