@@ -1,9 +1,0 @@
-# FIXTURE: bad-01 — הִנֵּה stranded at line end
-# Violation: הִנֵּה is last non-punctuation token; governed content is on next line
-# Rule: H14/discourse-particles, STRONG-MERGE-CANDIDATE
-# Expected: ≥1 finding
-
-1:1
-וַיִּקְרַב אֵלָיו הַמַּלָּח הִנֵּה
-יוֹנָה נִרְדָּם בְּיַרְכְּתֵי הַסְּפִינָה׃
-

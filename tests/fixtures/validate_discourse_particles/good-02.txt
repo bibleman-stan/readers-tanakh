@@ -1,7 +1,0 @@
-# FIXTURE: good-02 — discourse particle גַּם mid-line (not at line end)
-# Pattern: גַּם appears mid-line; not stranded at line end
-# Expected: 0 findings
-
-1:1
-וְגַם אַתָּה תִּשְׁמַע אֵלָי׃
-

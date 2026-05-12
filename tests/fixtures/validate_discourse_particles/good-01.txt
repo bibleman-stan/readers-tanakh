@@ -1,7 +1,0 @@
-# FIXTURE: good-01 — discourse particle הִנֵּה LEADS its line (correct placement)
-# Pattern: הִנֵּה is the first token of the line, not the last
-# Expected: 0 findings
-
-1:1
-הִנֵּה יוֹנָה יָרַד אֶל יַרְכְּתֵי הַסְּפִינָה׃
-

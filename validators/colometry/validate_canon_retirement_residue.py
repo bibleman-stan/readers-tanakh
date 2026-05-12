@@ -110,6 +110,49 @@ RETIRED_TERMS = [
         "retired": "Stale memory entry — project siloing IS still in force per CLAUDE.md",
         "note": "CLAUDE.md still has the Project Siloing section. The 2026-04-27 memory entry that claimed siloing was dropped is stale.",
     },
+    # === Wave 6 Macula structural-gloss pipeline retirements (2026-05-12) ===
+    {
+        "pattern": r"\bgenerate_english_glosses\.py\b",
+        "term": "generate_english_glosses.py (1208-line Macula structural-gloss generator)",
+        "retired": "2026-05-12 (Wave 6 — replaced by scripts/regenerate_english.py thin-wrapper around atu_method.kjv_alignment)",
+        "note": "v2/eng-gloss substrate pivoted from Macula structural English to KJV verbatim per Hebrew ATU cola via Strong's matching. See commit aece7a310.",
+    },
+    {
+        "pattern": r"\bnormalize_english_gloss\.py\b",
+        "term": "normalize_english_gloss.py (1906-line post-processor)",
+        "retired": "2026-05-12 (Wave 6 — consumer gone; KJV verbatim is deterministic, no normalize step needed)",
+        "note": "Post-processor for naturalize regex output; obsolete with KJV verbatim substrate.",
+    },
+    {
+        "pattern": r"\bmine_phrase_map\.py\b",
+        "term": "mine_phrase_map.py (674-line phrase-map miner)",
+        "retired": "2026-05-12 (Wave 6 — phrase-map abandoned)",
+        "note": "Macula-anchored phrase-map approach retired with the structural-gloss substrate.",
+    },
+    {
+        "pattern": r"\bscan_eng_gloss_readability\.py\b",
+        "term": "scan_eng_gloss_readability.py (268-line readability QA scanner)",
+        "retired": "2026-05-12 (Wave 6 — KJV verbatim is deterministic; readability scan unnecessary)",
+        "note": "QA scanner for the now-retired naturalized-English output.",
+    },
+    {
+        "pattern": r"\bKJV_MODE\b|\?source=kjv\b",
+        "term": "KJV_MODE / ?source=kjv URL gating",
+        "retired": "2026-05-12 (Wave 6 — Modern pill always visible; swap always active)",
+        "note": "Pre-Wave-6 the KJV-anchored English was URL-gated for staged rollout; post-promotion it's the only path.",
+    },
+    {
+        "pattern": r"\bbooks-kjv/",
+        "term": "books-kjv/ parallel HTML tree",
+        "retired": "2026-05-12 (Wave 6 — single books/ tree; KJV is default substrate)",
+        "note": "Parallel HTML tree for staged KJV rollout; collapsed post-promotion.",
+    },
+    {
+        "pattern": r"\beng-gloss-kjv\b",
+        "term": "v2/eng-gloss-kjv/ parallel directory",
+        "retired": "2026-05-12 (Wave 6 — v2/eng-gloss is now the KJV substrate)",
+        "note": "Parallel directory for staged KJV rollout; promoted into the canonical eng-gloss slot.",
+    },
     # Add new entries here when retiring/withdrawing/rescinding canon items.
 ]
 

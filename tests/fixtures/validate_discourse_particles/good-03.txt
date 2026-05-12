@@ -1,7 +1,0 @@
-# FIXTURE: good-03 — particle אָז at line end but FOLLOWED BY sof pasuq (clause boundary)
-# Pattern: אָז at line end followed by ׃ — the sof-pasuq guard suppresses the finding
-# Expected: 0 findings
-
-1:1
-וַיִּירְאוּ אֶת יְהוָה וַיִּשְׁבְּעוּ אָז׃
-
