@@ -57,15 +57,27 @@ Findings tagged `STRONG-MERGE-CANDIDATE` or `STRONG-SPLIT-CANDIDATE` are Categor
 
 Every editorial decision should be defensible against the canon. When the canon has no clear rule for a decision, that's a signal to either (a) note it for canon revision, or (b) flag it for Stan review.
 
-## Stage 4 — Propagate parallel layers
+## Stage 4a — Propagate per-word layers (translit + eng-interlinear)
 
-Once v2/he/ Hebrew is settled for a chapter, re-segment the parallel per-word layers (eng-interlinear, eng-gloss, translit) to match the new cola structure:
+Once v2/he/ Hebrew is settled for a chapter, re-segment the per-word layers that are 1:1-aligned to v2/he tokens:
 
 ```bash
 PYTHONIOENCODING=utf-8 py -3 scripts/propagate_editorial_layers.py --book 32-jonah
 ```
 
-Output: `data/text-files/v2/{eng-interlinear,eng-gloss,translit}/{NN-book}/{abbr}-{NN}.txt`. The propagator enforces a word-stream invariant — v1 Hebrew word stream MUST equal v2 Hebrew word stream (same words, same order, same count); editorial work changes only line breaks, never adds/removes/reorders words. Script exits with error on violation.
+Output: `data/text-files/v2/{eng-interlinear,translit}/{NN-book}/{abbr}-{NN}.txt`. The propagator enforces a word-stream invariant — v1 Hebrew word stream MUST equal v2 Hebrew word stream (same words, same order, same count); editorial work changes only line breaks, never adds/removes/reorders words. Script exits with error on violation.
+
+## Stage 4b — Regenerate KJV English (eng-gloss)
+
+The English row substrate is KJV 1769 verbatim (post-Wave-6 — replaces the retired Macula structural-gloss pipeline). Regeneration is independent of `propagate_editorial_layers.py`:
+
+```bash
+PYTHONIOENCODING=utf-8 py -3 scripts/regenerate_english.py --book 32-jonah
+```
+
+Output: `data/text-files/v2/eng-gloss/{NN-book}/{abbr}-{NN}.txt`. For each verse, the script calls `atu_method.kjv_alignment.align_verse()` to distribute KJV phrases across the Hebrew ATU cola via Strong's-number matching against TAHOT's per-Hebrew-token Strong's data. BHS-vs-English versification offsets (Psalms superscriptions, Gen 31:55=BHS 32:1, 1Sam–Kgs alignment shifts) are handled internally.
+
+The pre-commit hook auto-runs `refresh_book.py --book <book> --build` which orchestrates Stages 4a + 4b + Stage 5 atomically; manual invocation is needed only for one-off regenerations.
 
 ## Stage 5 — Build
 
@@ -81,6 +93,7 @@ The validator suite under `validators/` runs on demand and at commit time (via t
 
 - **Layer 1 (Hebrew break-legality)** — checks for syntactic patterns that should not be split (e.g., maqqef-joined words; preposition + bound noun; construct chains kept together).
 - **Layer 3 (colometry)** — checks for methodology compliance (every line positively justified as an atomic thought per canon §1; no orphaned lines; balanced colon lengths within reason). Current Layer 3 validators include Rule H18 — Clause-Nucleus Integrity (`validate_clause_nucleus_split.py`; REVIEW-REQUIRED only; see canon §5 H18), which flags cola where a clause nucleus (subject + predicate) appears to be split across lines without a structural justification.
+- **4-layer integrity** — `validators/4-layer-integrity/verify_4_layer_sync.py` validates per-Hebrew-ATU-cola token-count parity across the four layers (Hebrew / translit / interlinear / KJV). Run after any v2/he edit. Current baseline: 907/929 PASS, 22 pre-existing translit/interlinear cola-count drifts (Hebrew + KJV align; translit + interlinear are exactly one cola short). Drift class is investigatable as a propagator gap; see `private/03-sessions/2026-05-12-post-migration-wake/pending.md` §5.1.
 
 Validator output is a work queue, not a review queue (canon §6). STRONG-tagged findings are application-ready; REVIEW-REQUIRED items need per-item editorial judgment.
 

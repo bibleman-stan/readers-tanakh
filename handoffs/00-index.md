@@ -12,6 +12,8 @@ These documents capture project state so that any session (human or AI) can spin
 
 The slots `02-` and `05-13-` are intentionally skipped. Methodology (the colometry canon) lives in `private/01-method/colometry-canon.md`, not in handoffs, because it is pre-publication scholarly material. The `14-` slot mirrors the bofm/gnt convention so the operational-protocols file occupies the same numeric position across sibling projects (an internal convention only — repos remain publicly siloed per CLAUDE.md).
 
+**Methodology and architecture references**: this repo's methodology canon at `private/01-method/colometry-canon.md` and several handoffs (01, 03, 04) cite framework material that now lives authoritatively in `../atu-method/docs/` (`framework.md`, `architecture.md`, `apparatus.md`, `change-protocol.md`, `glossary.md`). When reading those handoffs, treat framework-level content as a recap and the atu-method docs as normative.
+
 ---
 
 ## Update Protocol
