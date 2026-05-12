@@ -49,7 +49,7 @@ REPO_ROOT = SCRIPT_DIR.parent
 
 VALIDATORS_DIR = REPO_ROOT / "validators"
 V2_HE_DIR = REPO_ROOT / "data" / "text-files" / "v2" / "he"
-V2_ENG_DIR = REPO_ROOT / "data" / "text-files" / "v2" / "eng-gloss"
+V2_ENG_DIR = REPO_ROOT / "data" / "text-files" / "v2" / "eng-kjv"
 V4_DIR = REPO_ROOT / "data" / "text-files" / "v4" / "editorial"
 
 REPORTS_DIR = REPO_ROOT / "data" / "reports" / "quality"

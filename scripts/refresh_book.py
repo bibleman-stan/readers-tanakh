@@ -118,7 +118,7 @@ def run_step_short(short_name, dry_run):
 
     This is the canonical English-layer step. The script signature differs
     from the folder-form steps: it takes ``--book <short>`` (without the
-    NN- prefix) and emits to data/text-files/v2/eng-gloss/<NN-short>/.
+    NN- prefix) and emits to data/text-files/v2/eng-kjv/<NN-short>/.
 
     Returns True if step succeeded, False if it failed.
     """

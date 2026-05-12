@@ -67,7 +67,7 @@ SEARCH_SUBDIRS = [
     "data/text-files/v2",
     "data/text-files/v2/he",
     "data/text-files/v2/eng-interlinear",
-    "data/text-files/v2/eng-gloss",
+    "data/text-files/v2/eng-kjv",
     "data/text-files/v2/translit",
     "data/syntax-reference",
     "data/reports",

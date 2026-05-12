@@ -359,7 +359,7 @@ def scan_book(book_slug: str, out_rows: list[str]) -> dict:
         stats["chapters"] += 1
 
         # Load KJV layer for context
-        kjv_path = REPO_ROOT / "data" / "text-files" / "v2" / "eng-gloss" / book_slug / ch_path.name
+        kjv_path = REPO_ROOT / "data" / "text-files" / "v2" / "eng-kjv" / book_slug / ch_path.name
         kjv_lines_by_verse: dict[int, list[str]] = {}
         if kjv_path.exists():
             cur_v = None

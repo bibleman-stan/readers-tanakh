@@ -49,7 +49,7 @@ readers-tanakh/
     ingest_tahot.py                      # TAHOT TSV → v0-prose chapter files
     parse_teamim.py                      # Te'amim parser (prose + Sifrei Emet) → v1/* layers
     propagate_editorial_layers.py        # v2/he cola changes → re-segment v2/{eng-interlinear,translit}/
-    regenerate_english.py                # KJV verbatim per Hebrew ATU cola (atu_method.kjv_alignment) → v2/eng-gloss/
+    regenerate_english.py                # KJV verbatim per Hebrew ATU cola (atu_method.kjv_alignment) → v2/eng-kjv/
     build_books.py                       # v2/* (cascade to v1/*) → books/*.html
     refresh_book.py                      # Orchestrates propagate + regenerate + build for a single book
     ...
@@ -126,7 +126,7 @@ The pipeline runs **v0 → v1 → v2** (3 tiers; collapsed from the 5-tier schem
 | v1 | `v1/he-baseline/` (+ `v1/eng-interlinear/`, `v1/eng-gloss/`, `v1/translit/`) | `parse_teamim.py` (prose + Sifrei Emet) | Machine-generated cola draft. Te'amim-as-evidence starting point; editor's draft, not a normative "version 1." |
 | v2 | `v2/he/` | Stan + Claude | Hand-edited Hebrew gold standard. Single source of truth for the web app. Applies the three forces (atomic thought, single image, Hebrew syntax) and the four merge-overrides; consumes Layer 1 + Layer 3 validator findings as a work queue. |
 | v2 | `v2/eng-interlinear/`, `v2/translit/` | `propagate_editorial_layers.py` | Per-word layers re-segmented to v2/he cola structure when Hebrew edits land. Word-stream invariant enforced. |
-| v2 | `v2/eng-gloss/` | `regenerate_english.py` (post-Wave-6) | KJV 1769 verbatim distributed per Hebrew ATU cola via `atu_method.kjv_alignment.align_verse()` (Strong's matching against TAHOT's per-Hebrew-token Strong's data). Replaces the retired Macula structural-gloss pipeline. |
+| v2 | `v2/eng-kjv/` | `regenerate_english.py` (post-Wave-6) | KJV 1769 verbatim distributed per Hebrew ATU cola via `atu_method.kjv_alignment.align_verse()` (Strong's matching against TAHOT's per-Hebrew-token Strong's data). Renamed from `eng-gloss` 2026-05-12 to reflect actual substrate. |
 
 **Validator findings as work queue.** Validators in `validators/syntax/` (Layer 1) and `validators/colometry/` (Layer 3) emit STRONG-MERGE-CANDIDATE / STRONG-SPLIT-CANDIDATE / REVIEW-REQUIRED tags. STRONG findings are Category A per canon §2 Mechanical-rule authority — apply confidently. REVIEW-REQUIRED items go to per-item editorial judgment. The `≥80%` adoption gate (canon §7 proposed-rule adoption protocol) governs when a validator's STRONG findings reach Category A confidence.
 
@@ -159,7 +159,7 @@ research/stepbible-tahot/  →  (ingest_tahot.py)
                                via  atu_method.kjv_alignment.align_verse()
                                using  ../atu-method/data/kjv-strongs/MetaV_*.csv (KJV 1769 + Strong's)
                                  +  TAHOT per-Hebrew-token Strong's tags
-                               →  data/text-files/v2/eng-gloss/{NN-book}/{abbr}-{ch}.txt
+                               →  data/text-files/v2/eng-kjv/{NN-book}/{abbr}-{ch}.txt
 
                            →  (build_books.py — cascade picks v2 if present, else v1)
                            →  books/{book}.html (single tree; no parallel KJV/legacy fork post-Wave-6)

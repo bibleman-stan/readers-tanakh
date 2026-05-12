@@ -2,7 +2,7 @@
 """
 scan_english_drift.py — Find probable English-alignment drift sites.
 
-The English glosses in data/text-files/v2/eng-gloss/ are supposed to have
+The English text in data/text-files/v2/eng-kjv/ is supposed to have
 a 1:1 line correspondence with the Hebrew v2/he/ files. Mechanical splits
 can introduce English phrases broken mid-sentence:
 
@@ -79,7 +79,7 @@ from collections import defaultdict
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.dirname(SCRIPT_DIR)
-ENG_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v2", "eng-gloss")
+ENG_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v2", "eng-kjv")
 HE_DIR  = os.path.join(REPO_ROOT, "data", "text-files", "v2", "he")
 
 # ---------------------------------------------------------------------------
@@ -353,7 +353,7 @@ def _parse_chapter(filepath):
 
 
 def _load_hebrew_chapter(eng_file_rel):
-    """Given an eng-gloss relative path ('05-jonah/jonah-01.txt'), load the
+    """Given an eng-kjv relative path ('05-jonah/jonah-01.txt'), load the
     corresponding Hebrew chapter from v2/he/. Returns dict: verse_ref -> list."""
     he_path = os.path.join(HE_DIR, *eng_file_rel.split("/"))
     if not os.path.exists(he_path):

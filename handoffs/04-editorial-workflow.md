@@ -67,7 +67,7 @@ PYTHONIOENCODING=utf-8 py -3 scripts/propagate_editorial_layers.py --book 32-jon
 
 Output: `data/text-files/v2/{eng-interlinear,translit}/{NN-book}/{abbr}-{NN}.txt`. The propagator enforces a word-stream invariant — v1 Hebrew word stream MUST equal v2 Hebrew word stream (same words, same order, same count); editorial work changes only line breaks, never adds/removes/reorders words. Script exits with error on violation.
 
-## Stage 4b — Regenerate KJV English (eng-gloss)
+## Stage 4b — Regenerate KJV English (eng-kjv)
 
 The English row substrate is KJV 1769 verbatim (post-Wave-6 — replaces the retired Macula structural-gloss pipeline). Regeneration is independent of `propagate_editorial_layers.py`:
 
@@ -75,7 +75,7 @@ The English row substrate is KJV 1769 verbatim (post-Wave-6 — replaces the ret
 PYTHONIOENCODING=utf-8 py -3 scripts/regenerate_english.py --book 32-jonah
 ```
 
-Output: `data/text-files/v2/eng-gloss/{NN-book}/{abbr}-{NN}.txt`. For each verse, the script calls `atu_method.kjv_alignment.align_verse()` to distribute KJV phrases across the Hebrew ATU cola via Strong's-number matching against TAHOT's per-Hebrew-token Strong's data. BHS-vs-English versification offsets (Psalms superscriptions, Gen 31:55=BHS 32:1, 1Sam–Kgs alignment shifts) are handled internally.
+Output: `data/text-files/v2/eng-kjv/{NN-book}/{abbr}-{NN}.txt` (renamed from `eng-gloss` 2026-05-12 to reflect actual substrate). For each verse, the script calls `atu_method.kjv_alignment.align_verse()` to distribute KJV phrases across the Hebrew ATU cola via Strong's-number matching against TAHOT's per-Hebrew-token Strong's data. BHS-vs-English versification offsets (Psalms superscriptions, Gen 31:55=BHS 32:1, 1Sam–Kgs alignment shifts) are handled internally.
 
 The pre-commit hook auto-runs `refresh_book.py --book <book> --build` which orchestrates Stages 4a + 4b + Stage 5 atomically; manual invocation is needed only for one-off regenerations.
 

@@ -7,11 +7,12 @@ The Tanakh app stacks four synchronized layers per Hebrew ATU cola:
     1. Hebrew                  — data/text-files/v2/he/
     2. Transliteration         — data/text-files/v2/translit/
     3. Interlinear (per-word)  — data/text-files/v2/eng-interlinear/
-    4. KJV-style English       — data/text-files/v2/eng-gloss/
+    4. KJV verbatim English    — data/text-files/v2/eng-kjv/
+       (renamed from v2/eng-gloss 2026-05-12 to reflect the actual substrate)
 
 The 4-layer integrity invariant: for every Hebrew ATU cola line in v2/he,
 the corresponding translit and eng-interlinear lines must contain the SAME
-orthographic-word count (split on " | "), and the eng-gloss layer
+orthographic-word count (split on " | "), and the eng-kjv layer
 must contain exactly ONE English line per cola.
 
 A regression in this invariant means a layer drifted by a token (e.g. an
@@ -58,7 +59,7 @@ REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 V2_HE = REPO_ROOT / "data" / "text-files" / "v2" / "he"
 V2_TRANSLIT = REPO_ROOT / "data" / "text-files" / "v2" / "translit"
 V2_INTER = REPO_ROOT / "data" / "text-files" / "v2" / "eng-interlinear"
-V2_KJV = REPO_ROOT / "data" / "text-files" / "v2" / "eng-gloss"
+V2_KJV = REPO_ROOT / "data" / "text-files" / "v2" / "eng-kjv"
 
 MAQQEF = "־"
 VERSE_REF_RE = re.compile(r"^\d+:\d+$")

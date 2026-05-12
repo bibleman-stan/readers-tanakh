@@ -5,7 +5,7 @@ Per-chapter source preference (independent for each layer; falls through):
 
   Hebrew:       v2/he/             > v1/he-baseline/
   Interlinear:  v2/eng-interlinear/ > v1/eng-interlinear/
-  Gloss:        v2/eng-gloss/       > v1/eng-gloss/
+  KJV English:  v2/eng-kjv/         (no v1 fallback — Wave 6-OT substrate)
   Translit:     v2/translit/        > v1/translit/
 
 The Hebrew cascade reflects the collapsed two-tier pipeline (canon §6 +
@@ -64,12 +64,15 @@ V1_HE_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v1", "he-baseline")
 INTER_V2_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v2", "eng-interlinear")
 INTER_V1_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v1", "eng-interlinear")
 
-GLOSS_V2_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v2", "eng-gloss")
+GLOSS_V2_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v2", "eng-kjv")
 GLOSS_V1_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v1", "eng-gloss")
 
-# Wave 6-OT: KJV-anchored English is now the only path. The v2/eng-gloss/
+# Wave 6-OT: KJV-anchored English is now the only path. The v2/eng-kjv/
 # directory holds KJV-verbatim text emitted by scripts/regenerate_english.py
-# (one English line per Hebrew cola, 4-layer-integrity preserved).
+# (one English line per Hebrew cola, 4-layer-integrity preserved). Renamed
+# from v2/eng-gloss → v2/eng-kjv 2026-05-12 to reflect the actual substrate
+# (KJV verbatim, not a Macula-style structural gloss). v1/eng-gloss kept
+# its name — that tier IS legacy Macula structural gloss.
 
 TRANSLIT_V2_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v2", "translit")
 TRANSLIT_V1_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v1", "translit")
@@ -310,7 +313,7 @@ def _pick_source(
 def build_book(book_key, skip_missing=False):
     """Build per-chapter HTML files and a manifest for a single book.
 
-    Wave 6-OT: the English gloss is KJV-verbatim (read from v2/eng-gloss/,
+    Wave 6-OT: the English layer is KJV-verbatim (read from v2/eng-kjv/,
     emitted by scripts/regenerate_english.py). The atu-method universal
     swap pipeline wraps archaic tokens in <span class="swap"> markup so the
     Modern pill can toggle archaic→modern at runtime — the .swap markup
@@ -350,7 +353,7 @@ def build_book(book_key, skip_missing=False):
 
     inter_v2 = os.path.join(INTER_V2_DIR, sub)
     inter_v1 = os.path.join(INTER_V1_DIR, sub)
-    # English gloss is KJV-verbatim from v2/eng-gloss/. No v1 fallback —
+    # English layer is KJV-verbatim from v2/eng-kjv/. No v1 fallback —
     # the KJV substrate is a Wave-5c/6 deliverable that has no v1 tier.
     gloss_v2 = os.path.join(GLOSS_V2_DIR, sub)
     gloss_v1 = os.path.join(GLOSS_V1_DIR, sub)  # unused (no v1 KJV tier)
@@ -409,13 +412,15 @@ def build_book(book_key, skip_missing=False):
         )
         counts[f"inter_{inter_tier if inter_tier != 'none' else 'none'}"] += 1
 
-        # Wave 6-OT: the v2 gloss tier is KJV-verbatim (regenerate_english.py).
-        # No v1 fallback for gloss — the KJV substrate is a v2-only tier.
+        # Wave 6-OT: the v2 KJV tier (v2/eng-kjv/) is the only English source
+        # post-Wave-6 (regenerate_english.py emits KJV verbatim). No v1
+        # fallback. Variable name "gloss_*" preserved for backward
+        # compatibility within the build pipeline; semantics are KJV-verbatim.
         gloss_path, gloss_source, gloss_tier = _pick_source(
             fn,
             gloss_v2, gloss_v2_files,
             gloss_v1, gloss_v1_files,
-            "v2-eng-gloss", "v1-eng-gloss",
+            "v2-eng-kjv", "v1-eng-gloss",
         )
         counts[f"gloss_{gloss_tier if gloss_tier != 'none' else 'none'}"] += 1
 

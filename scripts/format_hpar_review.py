@@ -1,6 +1,6 @@
 """
 Convert hpar-high-confidence.tsv to a readable markdown review file with
-English-gloss context pulled from v2/eng-gloss for each verse.
+English context pulled from v2/eng-kjv for each verse.
 
 Output: data/syntax-reference/hpar-high-confidence-review.md
 """
@@ -13,11 +13,11 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 
 
 def get_english_for_verse(book_slug: str, chapter: int, verse: int) -> str:
-    """Read v2/eng-gloss for the given verse; return joined non-blank lines."""
+    """Read v2/eng-kjv for the given verse; return joined non-blank lines."""
     book_name = book_slug.split("-", 1)[1] if "-" in book_slug else book_slug
-    path = REPO_ROOT / "data" / "text-files" / "v2" / "eng-gloss" / book_slug / f"{book_name}-{chapter:02d}.txt"
+    path = REPO_ROOT / "data" / "text-files" / "v2" / "eng-kjv" / book_slug / f"{book_name}-{chapter:02d}.txt"
     if not path.exists():
-        return "(no eng-gloss)"
+        return "(no eng-kjv)"
     text = path.read_text(encoding="utf-8")
     in_verse = False
     out_lines = []

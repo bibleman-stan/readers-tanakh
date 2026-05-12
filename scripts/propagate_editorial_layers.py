@@ -14,12 +14,13 @@ the editorial cola boundaries.
 Per-layer behaviour:
   eng-interlinear, translit  — re-segmented mechanically (perfect 1:1).
   eng-gloss                  — DISABLED post-Wave-6 (2026-05-12).
-    v2/eng-gloss is now KJV verbatim from atu_method.kjv_alignment
-    (via scripts/regenerate_english.py). The legacy v1-derived structural
-    gloss this script formerly produced was a Wave-6 retirement artifact;
-    writing it here would silently overwrite the KJV substrate. The
-    in-memory computation of ed_gloss_lines is preserved for the word-
-    stream-invariant check; only the disk write is suppressed.
+    v2/eng-kjv (renamed from v2/eng-gloss 2026-05-12) is now KJV verbatim
+    from atu_method.kjv_alignment (via scripts/regenerate_english.py).
+    The legacy v1-derived structural gloss this script formerly produced
+    was a Wave-6 retirement artifact; writing it would silently overwrite
+    the KJV substrate. The in-memory computation of ed_gloss_lines is
+    preserved for the word-stream-invariant check; only the disk write
+    is suppressed.
 
 Word-stream invariant:
   v1 Hebrew word stream MUST equal editorial Hebrew word stream (same words,
@@ -53,7 +54,7 @@ V1_TRANSLIT_DIR  = TEXT_DIR / "v1" / "translit"
 
 ED_HE_DIR        = TEXT_DIR / "v2" / "he"
 ED_INTER_DIR     = TEXT_DIR / "v2" / "eng-interlinear"
-ED_GLOSS_DIR     = TEXT_DIR / "v2" / "eng-gloss"
+ED_GLOSS_DIR     = TEXT_DIR / "v2" / "eng-kjv"  # write disabled post-Wave-6 (see write_chapter call below)
 ED_TRANSLIT_DIR  = TEXT_DIR / "v2" / "translit"
 
 VERSE_REF_RE = re.compile(r"^\d+:\d+$")

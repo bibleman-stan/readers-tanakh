@@ -36,7 +36,7 @@ The pipeline:
      book_osis + chapter + ENGLISH verse number to
      ``align_verse(...)``. Receive ``list[str]`` — one KJV verbatim line
      per Hebrew cola.
-  5. Write to ``data/text-files/v2/eng-gloss/<NN-book>/<book>-<NN>.txt``
+  5. Write to ``data/text-files/v2/eng-kjv/<NN-book>/<book>-<NN>.txt``
      (verse marker, one English line per Hebrew cola, blank line separator).
 
 What stays
@@ -68,7 +68,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent
 ATU_METHOD_ROOT = REPO_ROOT.parent / "atu-method"
 V2_HE_DIR = REPO_ROOT / "data" / "text-files" / "v2" / "he"
-OUT_DIR = REPO_ROOT / "data" / "text-files" / "v2" / "eng-gloss"
+OUT_DIR = REPO_ROOT / "data" / "text-files" / "v2" / "eng-kjv"
 TAHOT_DIR = REPO_ROOT / "research" / "stepbible-tahot"
 METAV_DIR = ATU_METHOD_ROOT / "data" / "kjv-strongs"
 
