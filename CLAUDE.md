@@ -41,60 +41,35 @@ The te'amim (cantillation accents) play no role in editorial decisions (canon §
 
 ---
 
-## Session bookend protocol
+## Orientation protocol
 
-Stan is sole authority. Each session writes to `private/03-sessions/yyyy-mm-dd-brief_description/` (start-date; compaction-wake = new folder).
+Stan is the sole authority. Work continuously against standing/pending items, not in session-bookended chunks. The JSONL at `~/.claude/projects/c--Users-bibleman-repos-readers-tanakh/<session-id>.jsonl` is the authoritative verbatim record — after compaction or a fresh start, re-read it (or grep into it) to recover state instead of reconstructing from synthesis files.
 
-### CHECK-IN (at session start)
+### Orientation reads (every wake, including short "hey" pings)
 
 **MANDATORY:**
 1. This CLAUDE.md in full
-2. `handoffs/14-operational-protocols.md` in full — the operating-discipline file. Without this, you will drift into the failure modes it codifies (sequential dispatch, bash heredocs for recurring ops, single-agent-on-39-books cascades, spot-checking instead of testing). Re-read every wake; the patterns are easy to forget mid-session.
-3. The most recent `private/03-sessions/yyyy-mm-dd-*/session-notes.md` (for carry-forwards and prior-session context)
-4. `git log --oneline -10`
+2. `handoffs/14-operational-protocols.md` in full — operating-discipline file. Without it you drift into the failure modes it codifies (sequential dispatch, bash heredocs for recurring ops, single-agent-on-39-books cascades, spot-checking instead of testing).
+3. `git log --oneline -10`
+4. `private/03-sessions/yyyy-mm-dd-*/pending.md` if a recent one exists (used only for extended hand-offs / multi-step carry-overs); for routine prior-state, grep the JSONL.
 
 **CONSULT-ON-TRIGGER:**
-- `private/01-method/colometry-canon.md` — **trigger:** anything touching `validators/`, `scripts/apply_*.py`, `scripts/parse_teamim.py`, the data files under `data/text-files/v2/he/`, the syntax-reference, or any editorial / rule-interpretation question. **Skip ONLY when:** the work is pure UX / deployment / build-tooling / web-app frontend with no validator-or-rule surface. When in doubt, read it. The "skip-when" boundary is the elision surface that produced 5 sessions of source-stack blindness in 2026-04-27→2026-05-01 — don't elide silently.
-- `../atu-method/docs/apparatus.md` + `../atu-method/docs/architecture.md` — **trigger:** English-layer migration work, swap-system port, or any work touching the 4-layer integrity (Hebrew / transliteration / interlinear / English). These are the picture-shaped docs — they tell you what the user sees on tanakh-reader.com when done (4 layers stacked per Hebrew ATU, modern-mode pill toggling English only, KJV-anchored alignment via STEPBible Strong's lexicon). The 4-layer integrity invariant is the single hardest constraint and is explicit there. Pull back to them whenever an architectural fork appears (per `feedback_endstate_first_orientation`).
-- `../atu-method/docs/framework.md` — **trigger:** methodology-touching work, rule-design work, autonomy-boundary application — any work that previously consulted local canon §0/§1/§2. Authoritative cross-corpus framework definition (mission, generative principle, syntax-forbids-splits, five justifications, four merge-overrides, autonomy boundary, decision procedure). Hebrew-specific application stays in `private/01-method/colometry-canon.md`.
-- `../atu-method/docs/change-protocol.md` — **trigger:** any canon revision (extension, narrowing, or override). Defines the per-rule defensibility elements required for any rule change.
-- `../atu-method/docs/glossary.md` — **trigger:** ambiguous term (ATU, cola, anchor, swap, etc.); cross-corpus authoritative definition.
-- `private/README.md` — **trigger:** writing a new file under `private/` and don't already know the subdirectory layout.
+- `private/01-method/colometry-canon.md` — **trigger:** anything touching `validators/`, `scripts/apply_*.py`, `scripts/parse_teamim.py`, files under `data/text-files/v2/he/`, the syntax-reference, or any editorial / rule-interpretation question. Skip ONLY for pure UX / deployment / build-tooling / web-app frontend with no validator-or-rule surface.
+- `../atu-method/docs/apparatus.md` + `../atu-method/docs/architecture.md` — **trigger:** English-layer work, swap-system port, or anything touching the 4-layer integrity (Hebrew / transliteration / interlinear / English). Picture-shaped docs — what the user sees on tanakh-reader.com when done. Pull back here whenever an architectural fork appears (per `feedback_endstate_first_orientation`).
+- `../atu-method/docs/framework.md` — **trigger:** methodology-touching work, rule-design, autonomy-boundary application. Authoritative cross-corpus framework body (mission, generative principle, syntax-forbids-splits, five justifications, four merge-overrides, autonomy boundary, decision procedure). Hebrew-specific application stays in `private/01-method/colometry-canon.md`.
+- `../atu-method/docs/change-protocol.md` — **trigger:** any canon revision.
+- `../atu-method/docs/glossary.md` — **trigger:** ambiguous term (ATU, cola, anchor, swap, etc.).
+- `private/README.md` — **trigger:** writing a new file under `private/` and don't already know the layout.
 
-**This protocol applies to all wake signals, including brief "hey" pings.** A short prompt does not shorten the check-in. Compaction-resume runs the full protocol from scratch.
+**Self-report before first substantive response:** one line per mandatory file (e.g., `- CLAUDE.md: read`), pending-item disposition (see below), and any red flags. Silent skip = orientation failure.
 
-**Carry-forward disposition (mandatory after reading prior session-notes).** Enumerate every carry-forward item from the prior session-notes and classify each as one of:
-- **(a) Executing this session** — picked up in current task surface
-- **(b) Explicitly retired** — name the rationale (no longer applicable, superseded by X, won't be done because Y)
-- **(c) Re-deferred** — name the trigger condition that would re-prioritize it (waiting on hook X, blocked on Stan-side verification, etc.)
+**Pending-item disposition (after reading any active pending.md, prior commits, or recent JSONL):** for each standing/pending item, classify as **(a) executing now**, **(b) retired with rationale**, or **(c) re-deferred with concrete trigger condition**. These phrasings are drift, not defers, and must be replaced when surfacing items: "awaiting Stan direction" / "until Stan re-surfaces" / "Stan-direction needed" without a concrete decision-point / "defer until [vague event]". Either name the standing default and dispatch (per Default decisions below), or pin down the question concretely with a proposed answer, or retire.
 
-Without explicit disposition, items drift across sessions and silently disappear (the NEW-2 longitudinal pattern from the 2026-05-04 prior-sessions audit: "user-facing items never ship because infrastructure work keeps bumping them"). The disposition table is a one-paragraph block in your check-in self-report — visible to Stan, who can correct if you re-deferred something he wanted executed.
+### End of work / context-exhaustion
 
-**Self-report before first substantive response**: one line per mandatory file (e.g., `- CLAUDE.md: read`), the carry-forward disposition table, AND any red flags noticed during check-in (stale carry-forwards, uncommitted work in tree from prior session, baseline drift, conflicts between session-notes and current state). Silent skip = check-in failure.
+No wrap artifacts, no session-notes, no full-transcript dumps. The JSONL is the verbatim record; future work re-reads or greps it. Surface standing/pending items as text in the conversation when a task arc closes. Write `pending.md` only for extended multi-cycle hand-offs; write `review-lists/` only when a candidate list needs Stan review.
 
-### WRAP-UP (at session end, or when context crosses ~60%)
-
-Produce in the session folder:
-
-1. **`session-notes.md`** (mandatory) — session arc, what landed (commits), discipline observations, withdrawn proposals, carry-forwards for next session.
-2. **`review-lists/`** (subfolder, when applicable) — only when the session produced candidate lists requiring Stan review.
-
-**Verbatim source of truth is the JSONL** at `~/.claude/projects/c--Users-bibleman-repos-readers-tanakh/<session-id>.jsonl` (parent session) plus `%TEMP%\claude\c--Users-bibleman-repos-readers-tanakh\<session-id>\tasks\<task-id>.output` (sub-agent deliberations). Don't produce a `full-transcript.md` copy — it's redundant with the JSONL and adds wrap-time cost without raising fidelity. When Stan dispatches a diagnostic / auditor / thread-picker-upper agent, point it at the JSONL directly (precedent: 2026-05-04 colonoscopy + process-waste + prior-sessions audits all walked the JSONL directly).
-
-On-request (not default):
-- **`dialogue-notes.md`** — only for methodology-heavy sessions where the dialogue arc itself is the work product.
-
-**Carry-forward integrity (mandatory before writing the carry-forward section).** Every carry-forward item MUST have one of:
-- **A concrete next-action** Claude can execute without further Stan input — names the file/script/agent dispatch that will run.
-- **A concrete trigger condition** — a named file change, hook event, named-deliverable arrival, Stan-side artifact (only if explicitly Stan-blocked), or dated calendar event.
-
-The following phrasings are **drift, not defers** — they MUST be replaced before the wrap-up commit:
-- "Awaiting Stan direction" → either name the standing default and dispatch (per "Default decisions" below), or pin down the question concretely with proposed answer + ≥2 adversarial audits, or retire.
-- "Until Stan re-surfaces / brings up again / asks again" → Stan won't re-surface; the item evaporates. Either re-read the prior turn where Stan flagged it and pin down the specific items NOW (named verses, named files, named patterns), or retire with rationale.
-- "Stan-direction needed" without a concrete decision-point → the same. Default actions for known classes are listed below; only escalate genuinely novel questions.
-- "Defer until [vague event]" → either name the concrete trigger or retire.
-
-This is the WRAP-UP-side complement to the CHECK-IN carry-forward disposition. CHECK-IN catches drift on the next session's read; WRAP-UP catches drift at this session's write — closer to the source.
+Compaction-resume runs the full Orientation reads from scratch.
 
 ### Default decisions (standing answers — do NOT surface these as menus)
 
@@ -111,14 +86,10 @@ These decision points have a standing answer per project discipline. Surfacing t
 | "Should I commit now or wait?" | Commit substantive work proactively. Status claims AFTER the commit, not before. | `feedback_commit_only_finished_work.md` |
 | **Same FP class manifests in 2+ specs OR 2+ validators within a session** | **Stop. Fix at engine level (`validators/_shared/spec_runner.py` `_check_morphology` / `validators/_shared/*` / `scripts/apply_*.py`), NOT per-spec or per-validator.** Writing a guard for "the same conceptual FP" the second time = engine-level fix opportunity that's being missed. | Stan-mantra ("swat the bug class, not the instance") + Class-fix discipline below |
 | **Stan escalation phrasing** ("WHY are you still doing this", "you screwed up again", "you have to quit taking so long", "stop wasting my time") | **STOP iterating on the surface fix. Frame-reset to class level. Read the recent commits and ask: what's the COMMON pattern across them that I've been treating as separate instances?** Don't continue the surgical-fix path past the escalation. | 2026-05-05 Sifrei-Emet purge arc — three iterations of per-spec guards before engine-level fix; escalation came at iteration 3 and was met with iteration 4 instead of frame-reset |
-| **Cascade leaves corpus in known-wrong state at session end** | **Don't wrap. Either fix it inline this session (revert + re-cascade with the corrected rules) OR explicitly retire to a follow-up commit with named verses listing the wrongness; never park "Psa 23:4 still split, Psa 23:5 still over-merged" as a vague carry-forward.** | 2026-05-05 cluster-5 cascade arc — wrap landed with corpus in known-wrong state at the named-verse leading-indicators that motivated the cascade |
+| **Cascade leaves corpus in known-wrong state at task-arc end** | **Don't park it. Either fix it inline now (revert + re-cascade with the corrected rules) OR explicitly retire to a follow-up commit with named verses listing the wrongness; never park "Psa 23:4 still split, Psa 23:5 still over-merged" as a vague carry-forward.** | 2026-05-05 cluster-5 cascade arc — task-arc ended with corpus in known-wrong state at the named-verse leading-indicators that motivated the cascade |
 | **Commit attempt fails** | **Diagnose with `git log -3 + git status --short` BEFORE retry. Identify root: race / regression-baseline / hook-keyword / Windows-heredoc.** Don't relaunch same approach. Use `git commit -m "$(cat <<'EOF'...EOF)"` (NEVER `-F /dev/stdin` — Linux-only). New validators stage `--update-baseline` in same commit. Canon edits include literal AUDIT_KEYWORDS substring (`audit verdict` / `§7` / `stan-direct` / `§8 update log`); synonyms don't match the canon-extension hook. Never run two `git commit` processes in parallel — they race against each other on HEAD lock. | 2026-05-05 commit-chokepoint walk-through; 4 failed retries on te'amim doc commit (race × 2, Windows heredoc × 1) before deferring; 1 failure on Macula validator commit (baseline regression) |
 
 When a decision point is genuinely outside this table, surface it. When it's inside, dispatch the standing answer and report the result. The discipline-failure shape is: surfacing a known-default decision as if Stan needs to pick.
-
-### Context-threshold discipline
-
-Green (0–60%): execute. Yellow (60–80%): start drafting `session-notes.md`. Red (80%+): stop new execution, wrap up. Compaction-resume runs full CHECK-IN.
 
 ---
 
@@ -296,11 +267,18 @@ When Stan names a specific verse with a specific desired partition, the next ass
 
 ## Git workflow
 
-All work on `main`. Claude commits; Stan pushes. Standing instruction: commit substantive work proactively, status claims AFTER the commit.
+All work on `main`. **Commit AND push autonomously after any clean commit on main** — no "want me to push?" hedge. Stan blanket-authorized push 2026-05-11 across all four sibling reader repos via SSH key (bibleman-windows-desktop, `git@github.com:bibleman-stan/<repo>.git`); transport is silent. Status claims come AFTER the push, not before.
+
+**Exceptions still warranting Stan confirmation BEFORE push:**
+- Force-pushes (`--force` / `--force-with-lease`).
+- Pushes to any branch other than `main`.
+- Pushes containing agent-applied bulk corpus changes I haven't personally diff-reviewed.
+
+Outside those exceptions, the sequence is `git commit` → if exit 0 → `git push origin main` → THEN report.
 
 ### Tree-state self-check before commit (mandatory)
 
-Before any `git add` or `git commit`, run `git status --short | wc -l` (or `--short` directly if the count is small). If the tree contains modified files you didn't author this session — especially under `data/text-files/v2/he/`, `validators/`, or `scripts/` — STOP and surface to Stan before staging. This is the failure mode that produced commit `4e1857e25` (Item Zero in the State block above): a 12-line analytics edit landed as a 4554-file commit because pre-existing staged work from a "kill everything, stop" wrap-up was in the tree and got bundled by the pre-commit cascade.
+Before any `git add` or `git commit`, run `git status --short | wc -l` (or `--short` directly if the count is small). If the tree contains modified files you didn't author in the current work cycle — especially under `data/text-files/v2/he/`, `validators/`, or `scripts/` — STOP and surface to Stan before staging. This is the failure mode that produced commit `4e1857e25`: a 12-line analytics edit landed as a 4554-file commit because pre-existing staged work was in the tree and got bundled by the pre-commit cascade.
 
 The rule: **a commit's title should describe its actual scope.** If you're about to commit work you didn't author, either (a) ask Stan first, (b) commit it separately under its own title, or (c) `git stash --keep-index` the unrelated work, commit yours, then unstash.
 
