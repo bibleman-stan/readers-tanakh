@@ -309,7 +309,7 @@ book	chapter	verse	line_idx	hebrew_line	kjv_line	severity	suppressors_trace	head
 04-numbers	18	4	0	וְנִלְו֣וּ עָלֶ֔יךָ וְשָֽׁמְר֗וּ אֶת־מִשְׁמֶ֙רֶת֙ אֹ֣הֶל מוֹעֵ֔ד	And they shall be joined unto thee, and keep the charge of the tabernacle of the congregation,	REVIEW-REQUIRED	mechanical-clean	לָוָה	Q	שָׁמַר	Q
 04-numbers	18	10	1	כָּל־זָכָר֙ יֹאכַ֣ל אֹת֔וֹ קֹ֖דֶשׁ יִֽהְיֶה־לָּֽךְ׃	it; every male shall eat it: it shall be holy unto thee.	REVIEW-REQUIRED	mechanical-clean	אָכַל	I	הָיָה	I
 04-numbers	18	17	2	אֶת־דָּמָ֞ם תִּזְרֹ֤ק עַל־הַמִּזְבֵּ֙חַ֙ וְאֶת־חֶלְבָּ֣ם תַּקְטִ֔יר	thou shalt sprinkle their blood upon the altar, and shalt burn their fat	REVIEW-REQUIRED	mechanical-clean	זָרַק	I	קָטַר	I
-04-numbers	18	26	0	וְאֶל־הַלְוִיִּ֣ם תְּדַבֵּר֮ וְאָמַרְתָּ֣ אֲלֵהֶם֒	Thus speak unto the Levites, and say	STRONG-SPLIT-CANDIDATE	T3-question-plus-speech-response	דָבַר	I	אָמַר	Q
+04-numbers	18	26	0	וְאֶל־הַלְוִיִּ֣ם תְּדַבֵּר֮ וְאָמַרְתָּ֣ אֲלֵהֶם֒	Thus speak unto the Levites, and say	REVIEW-REQUIRED	mechanical-clean	דָבַר	I	אָמַר	Q
 04-numbers	19	2	2	דַּבֵּ֣ר׀ אֶל־בְּנֵ֣י יִשְׂרָאֵ֗ל וְיִקְח֣וּ אֵלֶיךָ֩ פָרָ֨ה אֲדֻמָּ֜ה תְּמִימָ֗ה אֲשֶׁ֤ר אֵֽין־בָּהּ֙ מ֔וּם	Speak unto the children of Israel, that they bring thee a red heifer without spot, wherein is no blemish,	REVIEW-REQUIRED	mechanical-clean	דָבַר	V	לָקַח	I
 04-numbers	19	7	0	וְכִבֶּ֨ס בְּגָדָ֜יו הַכֹּהֵ֗ן וְרָחַ֤ץ בְּשָׂרוֹ֙ בַּמַּ֔יִם	Then the priest shall wash his clothes, and he shall bathe his flesh in water,	REVIEW-REQUIRED	mechanical-clean	כָּבַס	Q	רָחַץ	Q
 04-numbers	19	8	1	וְרָחַ֥ץ בְּשָׂר֖וֹ בַּמָּ֑יִם וְטָמֵ֖א עַד־הָעָֽרֶב׃	and bathe his flesh in water, and shall be unclean until the even.	REVIEW-REQUIRED	mechanical-clean	רָחַץ	Q	טָמֵא	Q
@@ -646,7 +646,7 @@ book	chapter	verse	line_idx	hebrew_line	kjv_line	severity	suppressors_trace	head
 11-1kings	21	2	1	לֵאמֹר֩׀ תְּנָה־לִּ֨י אֶֽת־כַּרְמְךָ֜ וִֽיהִי־לִ֣י לְגַן־יָרָ֗ק כִּ֣י ה֤וּא קָרוֹב֙ אֵ֣צֶל בֵּיתִ֔י	saying, Give me thy vineyard, that I may have it for a garden of herbs, because it is near unto my house:	REVIEW-REQUIRED	mechanical-clean	נָתַן	V	הָיָה	J
 11-1kings	21	10	5	וְסִקְלֻ֖הוּ וְיָמֹֽת׃	and stone him, that he may die.	REVIEW-REQUIRED	mechanical-clean	סָקַל	V	מוּת	J
 11-1kings	21	21	1	וּבִעַרְתִּ֖י אַחֲרֶ֑יךָ וְהִכְרַתִּ֤י לְאַחְאָב֙ מַשְׁתִּ֣ין בְּקִ֔יר	upon thee, and will take away thy posterity, and will cut off from Ahab him that pisseth against the wall,	REVIEW-REQUIRED	mechanical-clean	בָּעַר	Q	כָּרַת	Q
-11-1kings	22	4	1	הֲתֵלֵ֥ךְ אִתִּ֛י לַמִּלְחָמָ֖ה רָמֹ֣ת גִּלְעָ֑ד	Wilt thou go with me to battle to Ramoth-gilead?	STRONG-SPLIT-CANDIDATE	T3-question-plus-speech-response	הלך	I	אָמַר	W
+11-1kings	22	4	1	הֲתֵלֵ֥ךְ אִתִּ֛י לַמִּלְחָמָ֖ה רָמֹ֣ת גִּלְעָ֑ד	Wilt thou go with me to battle to Ramoth-gilead?	REVIEW-REQUIRED	mechanical-clean	הלך	I	אָמַר	W
 11-1kings	22	6	2	הַאֵלֵ֞ךְ עַל־רָמֹ֥ת גִּלְעָ֛ד לַמִּלְחָמָ֖ה	unto them, Shall I go against Ramoth-gilead to battle,	REVIEW-REQUIRED	mechanical-clean	הלך	I	חָדַל	I
 11-1kings	22	12	1	לֵאמֹ֑ר עֲלֵ֞ה רָמֹ֤ת גִּלְעָד֙ וְהַצְלַ֔ח	so, saying, Go up to Ramoth-gilead, and prosper:	REVIEW-REQUIRED	mechanical-clean	עָלָה	V	צָלֵחַ	V
 11-1kings	22	15	2	מִיכָ֙יְהוּ֙ הֲנֵלֵ֞ךְ אֶל־רָמֹ֥ת גִּלְעָ֛ד לַמִּלְחָמָ֖ה	unto him, Micaiah, shall we go against Ramoth-gilead to battle,	REVIEW-REQUIRED	mechanical-clean	הלך	I	חָדַל	I
@@ -710,7 +710,7 @@ book	chapter	verse	line_idx	hebrew_line	kjv_line	severity	suppressors_trace	head
 14-2chronicles	10	10	4	וְאַתָּ֖ה הָקֵ֣ל מֵעָלֵ֑ינוּ כֹּ֚ה תֹּאמַ֣ר אֲלֵהֶ֔ם קָֽטָנִּ֥י עָבָ֖ה מִמָּתְנֵ֥י אָבִֽי׃	but make thou it somewhat lighter for us; thus shalt thou say unto them, My little finger shall be thicker than my father's loins.	REVIEW-REQUIRED	mechanical-clean	קָלַל	V	אָמַר	I
 14-2chronicles	11	4	1	וְלֹא־תִלָּ֨חֲמ֜וּ עִם־אֲחֵיכֶ֗ם שׁ֚וּבוּ אִ֣ישׁ לְבֵית֔וֹ	nor fight against your brethren: return every man to his house:	REVIEW-REQUIRED	mechanical-clean	לָחַם	I	שׁוּב	V
 14-2chronicles	14	6	1	נִבְנֶ֣ה׀ אֶת־הֶעָרִ֣ים הָאֵ֗לֶּה וְנָסֵ֨ב חוֹמָ֣ה	Let us build these cities, and make about them walls,	REVIEW-REQUIRED	mechanical-clean	בָּנָה	I	סָבַב	I
-14-2chronicles	18	3	2	הֲתֵלֵ֥ךְ עִמִּ֖י רָמֹ֣ת גִּלְעָ֑ד	Wilt thou go with me to Ramoth-gilead?	STRONG-SPLIT-CANDIDATE	T3-question-plus-speech-response	הלך	I	אָמַר	W
+14-2chronicles	18	3	2	הֲתֵלֵ֥ךְ עִמִּ֖י רָמֹ֣ת גִּלְעָ֑ד	Wilt thou go with me to Ramoth-gilead?	REVIEW-REQUIRED	mechanical-clean	הלך	I	אָמַר	W
 14-2chronicles	18	5	2	הֲנֵלֵ֞ךְ אֶל־רָמֹ֥ת גִּלְעָ֛ד לַמִּלְחָמָ֖ה	unto them, Shall we go to Ramoth-gilead to battle,	REVIEW-REQUIRED	mechanical-clean	הלך	I	חָדַל	I
 14-2chronicles	18	11	1	לֵאמֹ֑ר עֲלֵ֞ה רָמֹ֤ת גִּלְעָד֙ וְהַצְלַ֔ח	so, saying, Go up to Ramoth-gilead, and prosper:	STRONG-SPLIT-CANDIDATE	T2-N3-plus-verb-chain	עָלָה	V	צָלֵחַ	V
 14-2chronicles	18	12	2	וִֽיהִי־נָ֧א דְבָרְךָ֛ כְּאַחַ֥ד מֵהֶ֖ם וְדִבַּ֥רְתָּ טּֽוֹב׃	let thy word therefore, I pray thee, be like one of theirs, and speak thou good.	REVIEW-REQUIRED	mechanical-clean	הָיָה	J	דָבַר	Q
@@ -761,7 +761,7 @@ book	chapter	verse	line_idx	hebrew_line	kjv_line	severity	suppressors_trace	head
 18-job	7	14	0	וְחִתַּתַּ֥נִי בַחֲלֹמ֑וֹת וּֽמֵחֶזְיֹנ֥וֹת תְּבַעֲתַֽנִּי׃	Then thou scarest me with dreams, and terrifiest me through visions:	REVIEW-REQUIRED	mechanical-clean	חָתַת	Q	בָּעַת	I
 18-job	7	16	0	מָ֭אַסְתִּי לֹא־לְעֹלָ֣ם אֶֽחְיֶ֑ה חֲדַ֥ל מִ֝מֶּ֗נִּי כִּי־הֶ֥בֶל יָמָֽי׃	I loathe it; I would not live alway: let me alone; for my days are vanity.	REVIEW-REQUIRED	mechanical-clean	חָיָה	I	חָדַל	V
 18-job	7	21	0	וּמֶ֤ה׀ לֹא־תִשָּׂ֣א פִשְׁעִי֮ וְתַעֲבִ֪יר אֶת־עֲוֹ֫נִ֥י	And why dost thou not pardon my transgression, and take away mine iniquity?	REVIEW-REQUIRED	mechanical-clean	נָשָׂא	I	עָבַר	I
-18-job	8	10	0	הֲלֹא־הֵ֣ם י֭וֹרוּךָ יֹ֣אמְרוּ לָ֑ךְ וּ֝מִלִּבָּ֗ם	Shall not they teach thee, and tell out of their heart?	STRONG-SPLIT-CANDIDATE	T3-question-plus-speech-response	יָרָה	I	אָמַר	I
+18-job	8	10	0	הֲלֹא־הֵ֣ם י֭וֹרוּךָ יֹ֣אמְרוּ לָ֑ךְ וּ֝מִלִּבָּ֗ם	Shall not they teach thee, and tell out of their heart?	REVIEW-REQUIRED	mechanical-clean	יָרָה	I	אָמַר	I
 18-job	8	15	0	יִשָּׁעֵ֣ן עַל־בֵּ֭יתוֹ וְלֹ֣א יַעֲמֹ֑ד	He shall lean upon his house, but it shall not stand:	REVIEW-REQUIRED	mechanical-clean	שָׁעַן	I	עָמַד	I
 18-job	8	17	0	עַל־גַּ֭ל שָֽׁרָשָׁ֣יו יְסֻבָּ֑כוּ בֵּ֖ית אֲבָנִ֣ים יֶחֱזֶֽה׃	His roots are wrapped about the heap, and seeth the place of stones.	REVIEW-REQUIRED	mechanical-clean	סָבַךְ	I	חָזָה	I
 18-job	9	11	0	הֵ֤ן יַעֲבֹ֣ר עָ֭לַי וְלֹ֣א אֶרְאֶ֑ה	Lo, he goeth by me, and I see	REVIEW-REQUIRED	mechanical-clean	עָבַר	I	רָאָה	I
@@ -1333,7 +1333,7 @@ book	chapter	verse	line_idx	hebrew_line	kjv_line	severity	suppressors_trace	head
 23-isaiah	57	13	0	בְּזַֽעֲקֵךְ֙ יַצִּילֻ֣ךְ קִבּוּצַ֔יִךְ וְאֶת־כֻּלָּ֥ם יִשָּׂא־ר֖וּחַ יִקַּח־הָ֑בֶל	When thou criest, let thy companies deliver thee; but the wind shall carry them all away; vanity shall take	REVIEW-REQUIRED	mechanical-clean	נָשָׂא	I	לָקַח	I
 23-isaiah	57	13	1	וְהַחוֹסֶ֥ה בִי֙ יִנְחַל־אֶ֔רֶץ וְיִירַ֖שׁ הַר־קָדְשִֽׁי׃	them: but he that putteth his trust in me shall possess the land, and shall inherit my holy mountain;	REVIEW-REQUIRED	mechanical-clean	נָחַל	I	יָרַשׁ	I
 23-isaiah	57	17	0	בַּעֲוֹ֥ן בִּצְע֛וֹ קָצַ֥פְתִּי וְאַכֵּ֖הוּ הַסְתֵּ֣ר וְאֶקְצֹ֑ף	For the iniquity of his covetousness was I wroth, and smote him: I hid me, and was wroth,	REVIEW-REQUIRED	mechanical-clean	נָכָה	I	קָצַף	I
-23-isaiah	58	5	1	הֲלָכֹ֨ף כְּאַגְמֹ֜ן רֹאשׁ֗וֹ וְשַׂ֤ק וָאֵ֙פֶר֙ יַצִּ֔יעַ הֲלָזֶה֙ תִּקְרָא־צ֔וֹם	is it to bow down his head as a bulrush, and to spread sackcloth and ashes under him? wilt thou call this a fast,	STRONG-SPLIT-CANDIDATE	T3-question-plus-speech-response	יָצַע	I	קָרָא	I
+23-isaiah	58	5	1	הֲלָכֹ֨ף כְּאַגְמֹ֜ן רֹאשׁ֗וֹ וְשַׂ֤ק וָאֵ֙פֶר֙ יַצִּ֔יעַ הֲלָזֶה֙ תִּקְרָא־צ֔וֹם	is it to bow down his head as a bulrush, and to spread sackcloth and ashes under him? wilt thou call this a fast,	REVIEW-REQUIRED	mechanical-clean	יָצַע	I	קָרָא	I
 23-isaiah	58	7	1	וַעֲנִיִּ֥ים מְרוּדִ֖ים תָּ֣בִיא בָ֑יִת כִּֽי־תִרְאֶ֤ה עָרֹם֙	and that thou bring the poor that are cast out to thy house? when thou seest the naked,	REVIEW-REQUIRED	mechanical-clean	בּוֹא	I	רָאָה	I
 23-isaiah	58	8	2	וְהָלַ֤ךְ לְפָנֶ֙יךָ֙ צִדְקֶ֔ךָ כְּב֥וֹד יְהוָ֖ה יַאַסְפֶֽךָ׃	and thy righteousness shall go before thee; the glory of the LORD shall be thy rereward.	REVIEW-REQUIRED	mechanical-clean	הָלַךְ	Q	אָסַף	I
 23-isaiah	58	14	1	וְהִרְכַּבְתִּ֖יךָ עַל־בָּ֣מֳתֵי אָ֑רֶץ וְהַאֲכַלְתִּ֗יךָ נַחֲלַת֙ יַעֲקֹ֣ב אָבִ֔יךָ כִּ֛י פִּ֥י יְהוָ֖ה דִּבֵּֽר׃	and I will cause thee to ride upon the high places of the earth, and feed thee with the heritage of Jacob thy father: for the mouth of the LORD hath spoken it.	REVIEW-REQUIRED	mechanical-clean	רָכַב	Q	אָכַל	Q

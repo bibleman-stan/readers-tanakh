@@ -333,7 +333,12 @@ def _suppressor_cascade(line_tokens, clauses) -> tuple[str, list[str]]:
             for t in line_tokens:
                 if id(t) == head_a_id:
                     break
-                if t.consonant_skel in {"ה", "מה", "מי", "איה", "איך", "מתי"}:
+                # Multi-char question particles only — bare 'ה' skel matches
+                # the definite article (e.g., 'הַלְוִיִּם' = the-Levites) and
+                # produces FPs. Interrogative-ה is morphologically distinct
+                # (TAHOT tag Ti) but we don't currently surface that in this
+                # scanner; falling back to the unambiguous multi-char particles.
+                if t.consonant_skel in {"מה", "מי", "איה", "איך", "מתי", "למה", "מדוע"}:
                     has_question_particle = True
                     break
             if has_question_particle:
