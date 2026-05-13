@@ -19,8 +19,7 @@ uvein | hachoshekh
 1:5
 vaiyikra | elohim | la'or | yom
 velachoshekh | kara | lailah
-vayhi | erev
-vayhi | voker | yom | echad
+vayhi | erev | vayhi | voker | yom | echad
 
 1:6
 vaiyomer | elohim
@@ -35,8 +34,7 @@ vayhi | khen
 
 1:8
 vaiyikra | elohim | larakia | shamayim
-vayhi | erev
-vayhi | voker | yom | sheni
+vayhi | erev | vayhi | voker | yom | sheni
 
 1:9
 vaiyomer | elohim
@@ -60,8 +58,7 @@ ve'etz | oseh | peri | asher | zar'ov | vo | leminehu
 vaiyar | elohim | ki | tov
 
 1:13
-vayhi | erev
-vayhi | voker | yom | shelishi
+vayhi | erev | vayhi | voker | yom | shelishi
 
 1:14
 vaiyomer | elohim
@@ -94,8 +91,7 @@ uvein | hachoshekh
 vaiyar | elohim | ki | tov
 
 1:19
-vayhi | erev
-vayhi | voker | yom | revi'i
+vayhi | erev | vayhi | voker | yom | revi'i
 
 1:20
 vaiyomer | elohim
@@ -114,8 +110,7 @@ peru | urevu | umil'u | et | hamayim | baiyamim
 veha'of | yirev | ba'aretz
 
 1:23
-vayhi | erev
-vayhi | voker | yom | chamishi
+vayhi | erev | vayhi | voker | yom | chamishi
 
 1:24
 vaiyomer | elohim
@@ -167,5 +162,4 @@ vayhi | khen
 1:31
 vaiyar | elohim | et | kol | asher | asah
 vehineh | tov | me'od
-vayhi | erev
-vayhi | voker | yom | hashishi
+vayhi | erev | vayhi | voker | yom | hashishi
