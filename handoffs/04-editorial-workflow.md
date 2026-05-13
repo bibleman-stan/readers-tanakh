@@ -134,23 +134,3 @@ Every divergence from the v1-he-baseline should leave a trail. The simplest conv
 
 Divergence rate from v1/he-baseline is a diagnostic metric only. The v1 baseline is a one-time mechanical artifact (parse_teamim.py output), not a normative target. High divergence may indicate (a) v1 over-fragmented mechanically and the editor correctly merged back, or (b) the editor's atomic-thought criterion is firing too aggressively and warrants review for canon compliance. Both cases are diagnostic, not failures per se. (The te'amim that drove the v1 baseline are not consulted in editorial decisions; consultative role retired 2026-05-05 per canon §1 + §8 entry.)
 
----
-
-### Established — 2026-04-25 (scaffolding session)
-
-- Workflow stages defined: ingest, parse, edit, build, validate
-- Cascade rule and mechanical-merge pattern documented (carried forward from sibling-project lessons)
-- Override tracking framing established as a key methodological metric
-- No actual workflow runs yet; document will mature through Jonah MVP and first-book completion
-
----
-
-**2026-04-26 update:** v1-teamim directory renamed to v1-he-baseline; path references updated throughout this doc to align with the canon's te'amim-as-evidence framing (no longer te'amim-as-prior).
-
-**2026-04-26 update:** Four-tier pipeline adopted. Stages 3 and 4 (v2-he-syntax and v3-he-colometry mechanical passes) inserted between the v1 parse stage and the v4 editorial pass. Old Stages 3–5 renumbered to 5–7. v2 applies STRONG Layer 1 syntax candidates (Rules H1, H11 stranded-token); v3 applies STRONG Layer 3 colometry candidates (Rules H2, H5, H7, H16). REVIEW-REQUIRED items from both layers feed the v4 editorial work queue. The editorial pass now opens v3-he-colometry (not v1-he-baseline) as its starting draft.
-
-**2026-04-26 update:** `data/text-files/` restructured into per-tier subfolders (v0/, v1/, v2/, v3/, v4/). Tier-name identity strings (v1-he-baseline, v2-he-syntax, etc.) unchanged; only filesystem layout. Path references in this doc updated to the new layout.
-
-**2026-04-27 update:** Tier collapse — both 2026-04-26 multi-tier updates above are superseded. Pipeline simplified from 7 stages to **6 stages** (ingest / parse / editorial / propagate / build / validate); the auto-apply mechanical stages (old Stages 3–4) are retired. Editorial pass now opens v1/he-baseline as its starting draft and writes to `v2/heb/` (was `v4/editorial/`). STRONG-tagged validator findings feed the editorial work queue directly, with the same Category A/B/C reasoning the canon already governs. Parallel per-word layers re-segmented by `propagate_editorial_layers.py` into `v2/{eng-interlinear,eng-gloss,translit}/`. See canon §8 entry 2026-04-27 for full rationale.
-
-**2026-04-28 update:** Rule H18 — Clause-Nucleus Integrity added to the Layer 3 validator inventory (`validators/colometry/validate_clause_nucleus_split.py`). H18 findings are REVIEW-REQUIRED only; the validator is not in `ADOPTED_VALIDATORS` and does not emit STRONG tags. H18 items in the work queue go to per-item editorial judgment. See canon §5 H18 for the full rule body.

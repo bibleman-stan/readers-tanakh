@@ -144,18 +144,3 @@ This project is **publicly siloed** — no cross-references in README, CLAUDE.md
 
 **Why:** Multiple reasons Stan chose not to elaborate publicly. Respect this decision and never add cross-references.
 
----
-
-### Established — 2026-04-25 (scaffolding session)
-
-- Project scoped end to end: source text picked, methodology framed, MVP book chosen, domain secured.
-- Repo scaffolding complete (CLAUDE.md, README.md, handoffs, private folder structure, colometry canon stub).
-- No editorial text yet. Next session: TAHOT ingest + v0-prose generation + first te'amim parser pass on Jonah.
-
----
-
-**2026-04-26 update:** v1-teamim directory renamed to v1-he-baseline; path references updated throughout this doc to align with the canon's te'amim-as-evidence framing (no longer te'amim-as-prior).
-
-**2026-04-26 update:** `data/text-files/` restructured into per-tier subfolders (v0/, v1/, v2/, v3/, v4/). Tier-name identity strings (v1-he-baseline, v2-he-syntax, etc.) unchanged; only filesystem layout. Path references in this doc updated to the new layout.
-
-**2026-04-27 update:** Tier collapse — pipeline simplified from 5 tiers (v0/v1/v2-he-syntax/v3-he-colometry/v4-editorial) to 3 tiers (v0/v1/v2). Editorial gold standard now lives at `v2/heb/` (was `v4/editorial/`); the parallel per-word layers live at `v2/{eng-interlinear,eng-gloss,translit}/` (was under `v4/`). The intermediate auto-apply tiers are retired; STRONG-tagged validator findings feed the editorial work queue directly. See `03-architecture.md` for the updated pipeline diagram and canon §8 entry 2026-04-27 for full rationale.
