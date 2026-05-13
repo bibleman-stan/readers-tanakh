@@ -481,7 +481,7 @@ AGENT_TESTS = [
     # === BLOCKS (exit 2) ===
     (
         "'list all' short prompt blocks",
-        "List all books that have v2/he files.",
+        "List all books that have v2/heb files.",
         True,
         "[SCRIPTS-DEFAULT]",
     ),

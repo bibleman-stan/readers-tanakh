@@ -338,7 +338,7 @@ def test_psa98_3_zachar_has_multi_a1():
 # ---------------------------------------------------------------------------
 
 def test_match_sense_line_basic():
-    """A v2/he sense-line matches a contiguous slice of verse Tokens."""
+    """A v2/heb sense-line matches a contiguous slice of verse Tokens."""
     ch = get_chapter("23-isaiah", 40)
     verse_tokens = ch.get_verse_tokens(3)
     line_a = "ק֣וֹל קוֹרֵ֔א בַּמִּדְבָּ֕ר"

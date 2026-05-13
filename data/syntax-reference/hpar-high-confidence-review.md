@@ -2,7 +2,7 @@
 
 **49 candidates** identified via Macula frame-args share-A1 signal (both clauses target the same object referent — canonical synonymous-
 parallelism). Spot-check 5-10 entries; if the TP rate looks ≥80%, run
-`scripts/apply_hpar_high_confidence.py` to apply the splits to v2/he.
+`scripts/apply_hpar_high_confidence.py` to apply the splits to v2/heb.
 
 ---
 
