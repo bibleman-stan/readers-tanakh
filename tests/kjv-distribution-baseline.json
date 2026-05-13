@@ -1,0 +1,121 @@
+{
+  "02-exodus|2|6": {
+    "category": "verb-bound-suffix",
+    "lines": [
+      "And when she had opened",
+      "it, she saw the child:",
+      "and, behold, the babe wept.",
+      "And she had compassion",
+      "on him, and said,",
+      "This is one of the Hebrews' children."
+    ],
+    "hash": "1075e4c75b99"
+  },
+  "02-exodus|2|5": {
+    "category": "translator-italic-infinitive",
+    "lines": [
+      "And the daughter of Pharaoh came down to wash herself at the river; and her maidens walked along by the river's side;",
+      "and when she saw the ark among the flags,",
+      "she sent her maid",
+      "to fetch it."
+    ],
+    "hash": "d61555438ca6"
+  },
+  "02-exodus|2|3": {
+    "category": "verb-bound-suffix",
+    "lines": [
+      "And when she could not longer hide",
+      "him, she took for him an ark of bulrushes,",
+      "and daubed it with slime and with pitch,",
+      "and put the child",
+      "therein; and she laid it in the flags by the river's brink."
+    ],
+    "hash": "63d66e25f7ea"
+  },
+  "02-exodus|2|17": {
+    "category": "verb-bound-suffix",
+    "lines": [
+      "And the shepherds came",
+      "and drove them away:",
+      "but Moses stood up and helped",
+      "them, and watered their flock."
+    ],
+    "hash": "12ae5f294a8d"
+  },
+  "02-exodus|2|9": {
+    "category": "verb-bound-suffix",
+    "lines": [
+      "And Pharaoh's daughter said",
+      "unto her, Take this child away, and nurse",
+      "it for me, and I will give thee thy wages.",
+      "And the woman took the child, and nursed it.",
+      "—"
+    ],
+    "hash": "840c64d5c69c"
+  },
+  "02-exodus|3|6": {
+    "category": "control-no-suffix",
+    "lines": [
+      "Moreover he said,",
+      "I am the God of thy father, the God of Abraham, the God of Isaac,",
+      "and the God of Jacob.",
+      "And Moses hid his face;",
+      "for he was afraid to look upon God."
+    ],
+    "hash": "82272a00c2a6"
+  },
+  "02-exodus|3|2": {
+    "category": "clause-opener-and-behold",
+    "lines": [
+      "And the angel of the LORD appeared unto him in a flame of fire out of the midst of a bush:",
+      "and he looked, and, behold, the bush burned with fire,",
+      "and the bush was not consumed."
+    ],
+    "hash": "20a9aa1ea35f"
+  },
+  "01-genesis|1|2": {
+    "category": "sentence-initial-and",
+    "lines": [
+      "And the earth was without form, and void;",
+      "and darkness was upon the face of the deep.",
+      "And the Spirit of God moved upon the face of the waters."
+    ],
+    "hash": "2170b021f113"
+  },
+  "01-genesis|1|5": {
+    "category": "verb-bound-prep",
+    "lines": [
+      "And God called the light Day,",
+      "and the darkness he called Night.",
+      "And the evening and the morning were the first day."
+    ],
+    "hash": "cb242a35b087"
+  },
+  "01-genesis|22|2": {
+    "category": "noun-bound-suffix",
+    "lines": [
+      "And he said,",
+      "Take now thy son, thine only son Isaac, whom thou lovest,",
+      "and get thee into the land of Moriah;",
+      "and offer him there for a burnt offering upon one of the mountains",
+      "which I will tell thee of."
+    ],
+    "hash": "8c6dfe5118fe"
+  },
+  "19-psalms|23|1": {
+    "category": "verbless-clause",
+    "lines": [
+      "A Psalm of David.",
+      "The LORD is my shepherd;",
+      "I shall not want."
+    ],
+    "hash": "1372a58920a5"
+  },
+  "01-genesis|1|1": {
+    "category": "control-canonical",
+    "lines": [
+      "In the beginning God created the heaven and the earth."
+    ],
+    "hash": "6f785a86b271"
+  }
+}

@@ -1,0 +1,13 @@
+book	chapter	verse	category	note
+02-exodus	2	6	verb-bound-suffix	"compassion / on him, and said," — orphan trailing-pronoun should attach backward to verb-line; current state attaches forward to said-line. Stan-flagged 2026-05-12.
+02-exodus	2	5	translator-italic-infinitive	"sent her maid / to fetch it" — 'to fetch it' is translator-supplied infinitive of purpose. Verify forward attachment is preserved (no Hebrew bound suffix).
+02-exodus	2	3	verb-bound-suffix	"could not longer hide / him" — same verb+suffix pattern as 2:6. Audit-flagged.
+02-exodus	2	17	verb-bound-suffix	"stood up and helped / them, and watered" — verb+suffix pattern. Audit-flagged.
+02-exodus	2	9	verb-bound-suffix	Audit-flagged verb+suffix instance.
+02-exodus	3	6	control-no-suffix	"And Moses hid his face;" — possessive suffix on noun, not verb-object. Verify intact (no shift expected on any fix attempt).
+02-exodus	3	2	clause-opener-and-behold	"and, behold, the bush burned with fire" — coordinator + interjection should stay forward-attached, NOT pulled backward.
+01-genesis	1	2	sentence-initial-and	"And the Spirit of God moved upon the face of the waters" — sentence-initial 'And' after period; must route forward via sentence-boundary check.
+01-genesis	1	5	verb-bound-prep	"And God called the light Day" — לָאוֹר has bound preposition. Verify current mapping is acceptable (control-ish).
+01-genesis	22	2	noun-bound-suffix	"Take now thy son" — bound suffix on noun (בִּנְךָ). Verify current mapping; rendering may be intact since KJV has 'thy son' as one block.
+19-psalms	23	1	verbless-clause	"The LORD is my shepherd; I shall not want." — verbless clause + negation orphan. Verify Pass C handles non-suffix orphans correctly.
+01-genesis	1	1	control-canonical	"In the beginning God created the heaven and the earth." — single-cola most-canonical verse. Verify intact under any change.
