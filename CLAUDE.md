@@ -279,7 +279,7 @@ When Stan names a specific verse with a specific desired partition, the next ass
 
 **Right shape:** "Per framework §1.5 M1's explicit exclusion of sequential narrative bonding, these stay split. Your reader-intuition is at the narrative-scene level which the framework deliberately doesn't capture. If you want to extend the framework to include narrative-scene-as-ATU, that's a Category B/C canon change requiring §7.3 audit + corpus survey before any engine work."
 
-The Gen 1:8 day-formula was a real gap (M1 bonded-pair on cognate-lemma evening+morning merism — same lemma, true bipartite expression). Engine fix justified. The Exo 2:5 telic-pair was NOT — framework's M1 exclusion answered it directly.
+The Gen 1:8 day-formula was a real gap, primarily under formula-integrity §1.2.3 (the six-occurrence verbatim closing-formula `וַיְהִי־עֶרֶב וַיְהִי־בֹקֶר יוֹם N` is a lexicalized multi-word frame). M1 bonded-pair §1.5 may co-apply via the temporal-totality merism reading of evening+morning (analogous to יוֹמָם וָלָיְלָה), though strictly speaking evening (עֶרֶב) and morning (בֹּקֶר) are distinct nouns, not cognate-lemmas — the same-lemma element is the wayyiqtol verb pair. Engine fix justified by formula-integrity. The Exo 2:5 telic-pair was NOT a real gap — framework's M1 exclusion (sequential narrative bonding) answered it directly.
 
 ## Anchor editorial decisions in Hebrew syntax, not English-translation surface form
 

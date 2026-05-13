@@ -170,19 +170,34 @@ def _has_negation_before(cl: MC.Constituent, head_id: int) -> bool:
     return False
 
 
-def _suppressor_cascade(line_tokens, clauses) -> tuple[str, list[str]]:
+def _suppressor_cascade(line_tokens, clauses, anchor_count: int = None) -> tuple[str, list[str]]:
     """Apply suppressors; return (severity, suppressor-trace).
     Severity: SUPPRESSED if any FP class fires; otherwise STRONG-SPLIT-CANDIDATE
     (clean class) or REVIEW-REQUIRED (residual ambiguity).
+
+    anchor_count: optional total proposition-anchor count (finite verbs +
+    predicative-participle anchors). If ≥ len(clauses), Macula's clause-
+    detection has undercounted relative to the anchor inventory and S1's
+    N=2-wayyiqtol-defer should NOT fire (the extra anchor is a third
+    proposition Macula merged into one clause).
     """
     if len(clauses) < 2:
         return "SUPPRESSED", ["fewer-than-2-clauses"]
 
     heads = [_clause_head_verb(c) for c in clauses]
 
-    # S1: all-wayyiqtol → defer to S4 spec
-    if all(h is not None and _is_wayyiqtol(h) for h in heads):
-        return "SUPPRESSED", ["S1-all-wayyiqtol-defer-to-S4"]
+    # S1: N=2 all-wayyiqtol → defer to S4 spec. Audit 2026-05-12 caught
+    # over-suppression at N≥3 — three or more sequential wayyiqtols on
+    # one cola exceed the M1 N=2 bonded-pair bound and per §1.9 N=3+
+    # cliff should split (J1 wins). Also: if anchor_count > clauses,
+    # the line has additional propositions Macula merged (e.g., presentational
+    # + participle predicate at Exo 2:6); don't auto-suppress.
+    if len(heads) == 2 and all(h is not None and _is_wayyiqtol(h) for h in heads):
+        if anchor_count is None or anchor_count == len(clauses):
+            return "SUPPRESSED", ["S1-N2-all-wayyiqtol-defer-to-S4"]
+        # Extra anchor present (e.g., participial-predicate from a
+        # presentational clause Macula merged) → surface as REVIEW.
+        return "REVIEW-REQUIRED", ["S1-bypassed-anchor-undercount"]
 
     # Operate on the first two clauses for binary classification
     cl_a, cl_b = clauses[0], clauses[1]
@@ -217,39 +232,36 @@ def _suppressor_cascade(line_tokens, clauses) -> tuple[str, list[str]]:
     if head_a is not None and head_a.consonant_skel in _DISCOURSE_FORMULA_SKELS:
         return "SUPPRESSED", ["S4-discourse-formula-opener"]
 
-    # S5: both verbs cohortative (aspect h)
+    # S5: both verbs cohortative (aspect h) AND lemma-cognate (audit
+    # 2026-05-12: aspect-class alone is insufficient for M1 — distinct
+    # cohortatives like "let us go down / and let us confuse" are J1
+    # split-candidates, not bonded. Require lemma-pair membership.
     if head_a is not None and head_b is not None:
         if _verb_aspect(head_a) == "H" and _verb_aspect(head_b) == "H":
-            return "SUPPRESSED", ["S5-cohortative-pair"]
+            la, lb = head_a.lemma, head_b.lemma
+            if la and lb and ((la, lb) in BONDED_LEMMA_PAIRS or
+                              (lb, la) in BONDED_LEMMA_PAIRS or
+                              la == lb):
+                return "SUPPRESSED", ["S5-cohortative-cognate-pair"]
 
-    # S6: both verbs imperative (aspect v) AND combined ≤4 prosodic words
+    # S6: both verbs imperative (aspect v) AND lemma-cognate (audit
+    # 2026-05-12: same fix as S5 — the ≤4 pw heuristic was an invented
+    # proxy for "probably cognate". Require lemma-pair membership.
     if head_a is not None and head_b is not None:
         if _verb_aspect(head_a) == "V" and _verb_aspect(head_b) == "V":
-            if _pw_count(line_tokens) <= 4:
-                return "SUPPRESSED", ["S6-imperative-pair-short"]
+            la, lb = head_a.lemma, head_b.lemma
+            if la and lb and ((la, lb) in BONDED_LEMMA_PAIRS or
+                              (lb, la) in BONDED_LEMMA_PAIRS or
+                              la == lb):
+                return "SUPPRESSED", ["S6-imperative-cognate-pair"]
 
-    # S7: both verbs preceded by negation
-    if head_a is not None and head_b is not None:
-        head_a_id, head_b_id = id(head_a), id(head_b)
-        # Negation before head_a anywhere from line-start; negation before
-        # head_b anywhere between head_a and head_b
-        before_a_neg = False
-        between_neg = False
-        seen_a = False
-        for t in line_tokens:
-            if id(t) == head_a_id:
-                seen_a = True
-                continue
-            if id(t) == head_b_id:
-                break
-            if not seen_a:
-                if t.consonant_skel in _NEGATION_SKELS:
-                    before_a_neg = True
-            else:
-                if t.consonant_skel in _NEGATION_SKELS:
-                    between_neg = True
-        if before_a_neg and between_neg:
-            return "SUPPRESSED", ["S7-negation-pair"]
+    # S7: ROLLED BACK 2026-05-12 per audit. Original claim "two verbs both
+    # negated → M1 bonded scope" had no framework or canon backing —
+    # negation is syntactic scope, not semantic bonding. Two distinct
+    # prohibitions (e.g., "thou shalt not kill / thou shalt not steal")
+    # are explicitly non-synonymous propositions. The Jdg 13:14 precedent
+    # cited in the original comment was not verified in the canon.
+    # Pattern is now NOT suppressed; surfaces normally per generative principle.
 
     # S8: speech-intro frame — head_a is a speech-act verb lemma. The
     # second finite verb is the speech content (typically imperative or
@@ -276,43 +288,63 @@ def _suppressor_cascade(line_tokens, clauses) -> tuple[str, list[str]]:
         if head_a.lemma and head_a.lemma == head_b.lemma:
             return "SUPPRESSED", ["S10-same-lemma-defer-to-Hpar"]
 
-    # S11: conditional / comparative / temporal subordinator before head_a.
-    # When the line opens with אִם / כִּי / כַּאֲשֶׁר / פֶּן / אוּלַי / etc., the
-    # two finite verbs are protasis+apodosis or comparator+main, joined by
-    # the subordinator. Not parallel propositions.
-    if head_a is not None:
-        head_a_id = id(head_a)
+    # S11: conditional / comparative / temporal subordinator before head_a
+    # OR between head_a and head_b (audit 2026-05-12 caught Josh 22:22
+    # FP — the original check only looked before head_a, missing cases
+    # where the subordinator opens an apodosis between the two verbs:
+    # "he knows — IF in rebellion ... save us not". When אִם / כִּי / כַּאֲשֶׁר
+    # / פֶּן / etc. appears anywhere between line-start and head_b, the
+    # second clause is grammatically dependent on the first, not parallel.
+    if head_a is not None and head_b is not None:
+        head_a_id, head_b_id = id(head_a), id(head_b)
         for t in line_tokens:
-            if id(t) == head_a_id:
+            if id(t) == head_b_id:
                 break
+            if id(t) == head_a_id:
+                continue  # don't count the head itself
             if t.consonant_skel in _SUBORDINATOR_SKELS:
-                return "SUPPRESSED", ["S11-subordinator-before-head"]
+                return "SUPPRESSED", ["S11-subordinator-anywhere-before-head_b"]
 
     # S12: wayyiqtol-bonded narrative pair (audit FP-1) — both verbs
-    # wayyiqtol AND head_b's clause has no explicit subject (shared A0 with
-    # head_a). The sequential micro-narrative pair (rose-and-went, took-and-
-    # shook) reads as one fused beat. The S1 all-wayyiqtol guard already
-    # defers full-line wayyiqtol-only cases to the S4 spec; this catches
-    # the specific N=2-wayyiqtol-with-shared-subject pattern.
+    # wayyiqtol AND head_b's clause has no explicit subject (shared A0)
+    # AND lemma-cognate per BONDED_LEMMA_PAIRS. Audit 2026-05-12: the
+    # shared-A0 heuristic alone catches BOTH the M1-included subset
+    # (rose-and-went, answer-and-said) AND the M1-excluded subset
+    # (draw-and-smite — sequential narrative, framework §1.5 explicitly
+    # excludes). Adding the lemma-cognate requirement aligns with M1's
+    # core synonymy/cognate test and avoids the over-suppression.
     if head_a is not None and head_b is not None:
         if _is_wayyiqtol(head_a) and _is_wayyiqtol(head_b):
-            # Macula frame check: cl_b's A0 (subject) frame-arg empty or
-            # matches cl_a's A0 → shared subject, bonded pair.
-            a_a0 = head_a.frame_arg_ids.get("A0", []) if hasattr(head_a, "frame_arg_ids") else []
-            b_a0 = head_b.frame_arg_ids.get("A0", []) if hasattr(head_b, "frame_arg_ids") else []
-            if not b_a0 or (a_a0 and b_a0 and a_a0[0] == b_a0[0]):
-                return "SUPPRESSED", ["S12-wayyiqtol-bonded-pair"]
+            la, lb = head_a.lemma, head_b.lemma
+            cognate = la and lb and (
+                (la, lb) in BONDED_LEMMA_PAIRS or
+                (lb, la) in BONDED_LEMMA_PAIRS or
+                la == lb
+            )
+            if cognate:
+                a_a0 = head_a.frame_arg_ids.get("A0", []) if hasattr(head_a, "frame_arg_ids") else []
+                b_a0 = head_b.frame_arg_ids.get("A0", []) if hasattr(head_b, "frame_arg_ids") else []
+                if not b_a0 or (a_a0 and b_a0 and a_a0[0] == b_a0[0]):
+                    return "SUPPRESSED", ["S12-wayyiqtol-cognate-bonded-pair"]
 
     # All mechanical suppressors passed. Now positive-class promotion to
     # STRONG-SPLIT-CANDIDATE for clean shapes (audit-confirmed TP classes).
 
-    # T1: parallel-jussive pair — both heads aspect J. Promise/blessing
-    # pattern (Gen 1:9 yiqqavu/vetera'eh, Gen 9:27 yapht/yishkon, Isa 45:8
-    # har'ifu/yizzelu). Each member is its own beat per the generative
-    # principle.
+    # T1: parallel-jussive pair — both heads aspect J AND distinct lemmas.
+    # When lemmas are identical or cognate-bonded, defer to Hpar (parallelism
+    # validator) or M1 (bonded-pair) instead. Audit 2026-05-12 caught minor
+    # over-promotion at same-lemma jussive pairs (Hpar territory).
     if head_a is not None and head_b is not None:
         if _verb_aspect(head_a) == "J" and _verb_aspect(head_b) == "J":
-            return "STRONG-SPLIT-CANDIDATE", ["T1-parallel-jussives"]
+            la, lb = head_a.lemma, head_b.lemma
+            cognate_or_same = la and lb and (
+                la == lb or
+                (la, lb) in BONDED_LEMMA_PAIRS or
+                (lb, la) in BONDED_LEMMA_PAIRS
+            )
+            if cognate_or_same:
+                return "REVIEW-REQUIRED", ["T1-parallel-jussives-but-same-or-cognate-lemma"]
+            return "STRONG-SPLIT-CANDIDATE", ["T1-parallel-jussives-distinct-lemma"]
 
     # T2: N=3+ verb chain — three or more leaf clauses with finite-verb
     # heads on one cola. N=3+ cliff per framework §1.9 — J1 wins regardless
@@ -321,11 +353,14 @@ def _suppressor_cascade(line_tokens, clauses) -> tuple[str, list[str]]:
     if len(clauses) >= 3:
         return "STRONG-SPLIT-CANDIDATE", ["T2-N3-plus-verb-chain"]
 
-    # T3: question + speech-act response — head_a is interrogative
-    # (yiqtol/imperfect with question particle הֲ / מָה / מִי / אַיֵּה
-    # before it) AND head_b lemma is in speech-act set. Two distinct
-    # speech turns. (1Sam 30:8 'shall I overtake?' / 'pursue!'; 2Kgs 4:2
-    # 'what shall I do?' / 'tell me'.)
+    # T3: question + speech-act response — head_a is interrogative AND
+    # head_b lemma is in speech-act set. Two distinct speech turns
+    # (1Sam 30:8 'shall I overtake?' / 'pursue!'). DOWNGRADED to
+    # REVIEW-REQUIRED 2026-05-12 per audit: the rule is mislabeled
+    # (calls itself J1 but is structurally J3 speech-act announcement),
+    # and the question-particle detection is incomplete (misses
+    # interrogative-ה which is morphologically Ti). Stays surfaced as
+    # an editorial-judgment candidate; no longer auto-promoted to STRONG.
     if head_a is not None and head_b is not None:
         if head_b.lemma in _SPEECH_ACT_LEMMAS and _verb_aspect(head_a) == "I":
             head_a_id = id(head_a)
@@ -333,16 +368,11 @@ def _suppressor_cascade(line_tokens, clauses) -> tuple[str, list[str]]:
             for t in line_tokens:
                 if id(t) == head_a_id:
                     break
-                # Multi-char question particles only — bare 'ה' skel matches
-                # the definite article (e.g., 'הַלְוִיִּם' = the-Levites) and
-                # produces FPs. Interrogative-ה is morphologically distinct
-                # (TAHOT tag Ti) but we don't currently surface that in this
-                # scanner; falling back to the unambiguous multi-char particles.
                 if t.consonant_skel in {"מה", "מי", "איה", "איך", "מתי", "למה", "מדוע"}:
                     has_question_particle = True
                     break
             if has_question_particle:
-                return "STRONG-SPLIT-CANDIDATE", ["T3-question-plus-speech-response"]
+                return "REVIEW-REQUIRED", ["T3-question-plus-speech-response-downgraded"]
 
     # Default: REVIEW-REQUIRED (Stan-confirms editorial intent vs M3/M4
     # fragmented-atomic-thought / Category B bicolon judgment).
@@ -399,8 +429,26 @@ def scan_book(book_slug: str, out_rows: list[str]) -> dict:
                 matched, cursor = MC.match_sense_line_tokens(vtokens, hebrew_line, cursor)
                 if len(matched) < 3:
                     continue
-                # Count finite verbs on the line
+                # Count finite verbs on the line PLUS predicative active
+                # participles (Vqr*). Per canon §1 anchor inventory: "A
+                # participle standing as predicate" is a primary anchor
+                # type. Conservative heuristic: count Vqr* tokens when
+                # preceded by a הִנֵּה (Tm) token in the same line —
+                # presentational + participle reads as predicate. Audit
+                # 2026-05-12 (Exo 2:6 line 30) caught the gap when
+                # `הִנֵּה־נַעַר בֹּכֶה` + 2 wayyiqtols on one cola was
+                # missed because בֹּכֶה (Vqrmsa) wasn't counted.
                 fv = [t for t in matched if _is_finite_verb(t)]
+                # Add predicative-participle anchors (Vqr* after Tm/הִנֵּה)
+                seen_hinneh = False
+                for t in matched:
+                    morph = (t._morph_tag or "")
+                    if morph.startswith("Tm") or t.consonant_skel == "הנה":
+                        seen_hinneh = True
+                        continue
+                    if seen_hinneh and morph.startswith("Vqr"):
+                        fv.append(t)
+                        seen_hinneh = False
                 if len(fv) < 2:
                     continue
                 # Find leaf clauses with heads on this line
@@ -431,7 +479,7 @@ def scan_book(book_slug: str, out_rows: list[str]) -> dict:
                     ]))
                     continue
 
-                severity, trace = _suppressor_cascade(matched, clauses_here)
+                severity, trace = _suppressor_cascade(matched, clauses_here, anchor_count=len(fv))
                 if severity == "SUPPRESSED":
                     stats["suppressed"] += 1
                     continue
