@@ -257,6 +257,22 @@ Two-phase pipeline-change pattern (one agent for code, N-cluster parallel agents
 
 When Stan names a specific verse with a specific desired partition, the next assistant turn structure is: line 1 = "Got it — [Stan's reading]"; line 2-N = the diff being applied. NO leading analytical defense of an alternative reading. Analysis is value-add ONLY when Stan asks "what should it be?" — not when Stan tells me what it is.
 
+## Editorial-flag = class-investigation directive
+
+**When Stan points out a problem at a specific verse, that's a directive to investigate the broader rule set, not a request to patch the verse.** The shape of the right response is:
+
+1. **Diagnose the verse** — what's the underlying class/pattern Stan's intuition is responding to?
+2. **Investigate corpus-wide** — does this class appear elsewhere? Build a scanner if needed (cheap; a few minutes of engine-plane work).
+3. **Identify the framework gap** — is the class covered by an existing rule (M1/M2/M3/M4 / J1-J5 / formula-integrity)? If yes, why isn't the engine catching it? If no, what new rule/sub-rule is missing?
+4. **Fix at the engine layer** — register the formula in `scripts/apply_formula_integrity_merge.py` FORMULAE registry, add a suppressor to a scanner, propose a canon §5 rule extension, etc. Per-verse patches are anti-pattern (the four-plane architecture exists exactly to prevent this).
+5. **Apply mechanically corpus-wide** — the engine encodes the rule once; corpus convergence is automatic.
+
+The Exo 2:5 telic-pair flag, the Gen 1:8 day-formula flag, and the Gen 1:3 jussive+wayyiqtol flag are all instances of this pattern. Each surfaced a class boundary that the existing rule set didn't capture mechanically. The right response is engine-level fix, not 6 manual merges.
+
+**Anti-pattern (do not do):** "Got it, applying the merge to Exo 2:5" → patches one verse. Stan then has to flag every other instance manually.
+
+**Right shape:** "That's the telic-pair class — let me audit the corpus for instances and figure out whether the framework needs a sub-rule" → builds the engine fix once.
+
 ---
 
 ## Connected Resources
