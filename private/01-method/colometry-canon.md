@@ -974,7 +974,7 @@ references: n/a (textual-tradition policy — Ketiv/Qere apparatus is a Masoreti
 
 ```yaml
 # Spec→tooling interface contract for H7
-primitive: macula-constituent (verb + obligatory-complement constituent membership via lowfat role labels: o, c, adv-c)
+primitive: surface-morphology + morph-alignment (currently surface-form via morph_alignment.py + morphology.py; **should be macula-constituent** — see backlog: refactor validate_complement_integrity.py + validate_causal_ki.py to consult Macula constituent role labels: o, c, adv-c)
 detectors:
   - validators/colometry/validate_complement_integrity.py
   - validators/colometry/validate_causal_ki.py
@@ -1145,7 +1145,7 @@ references: n/a (scribal-apparatus preservation; not a syntactic rule)
 
 ```yaml
 # Spec→tooling interface contract for H14
-primitive: macula-clause + surface-morphology (sentence-initial discourse-particle position via lowfat clause-opening)
+primitive: surface-form (closed-list regex matching on DISCOURSE_PARTICLES at sentence-initial position; currently no Macula consultation. **Should be macula-clause** — backlog: refactor validate_bare_discourse_particle.py to use Macula clause-opening detection rather than text-position heuristic)
 detectors:
   - validators/colometry/validate_bare_discourse_particle.py
 closed_lists:
@@ -1195,7 +1195,7 @@ references: WO §4.7 (Nominative Absolute = casus pendens — same construction)
 
 ```yaml
 # Spec→tooling interface contract for H16
-primitive: macula-clause (וַיְהִי + temporal protasis clause-cluster via lowfat clause-head + role labels)
+primitive: macula-clause (primary detector validate_wayehi_protasis.py consults lowfat clause-head + role labels); secondary detector validate_short_verse_fronting.py is surface-morphology + poetic-register only (backlog: extend to Macula)
 detectors:
   - validators/colometry/validate_wayehi_protasis.py
   - validators/colometry/validate_short_verse_fronting.py
@@ -1222,7 +1222,7 @@ references: WO §33.2.4 (Waw-Relative After Circumstantial Phrases and Clauses �
 
 ```yaml
 # Spec→tooling interface contract for H17
-primitive: macula-constituent + textual-pattern (genealogical formula via lowfat repeated-clause-shape detection)
+primitive: textual-pattern (currently regex-based formula matching X הוֹלִיד אֶת־Y etc.; no Macula consultation. **Should be macula-constituent** — backlog: refactor validate_genealogy_uniformity.py to use lowfat repeated-clause-shape detection for robustness against formula variants)
 detectors:
   - validators/colometry/validate_genealogy_uniformity.py
 closed_lists:
