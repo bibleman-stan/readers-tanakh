@@ -81,6 +81,19 @@ def _clauses_with_heads_in(vclauses, line_tokens):
     return out
 
 
+def _prosodic_word_count(text: str) -> int:
+    """Hebrew prosodic-word count: whitespace-separated tokens, with each
+    maqqef-bound pair counting as separate prosodic words. Mirrors the
+    verifier at validators/4-layer-integrity/verify_4_layer_sync.py."""
+    if not text.strip():
+        return 0
+    pw = 0
+    for ws_token in text.split():
+        # Each whitespace-separated unit may contain N maqqef-bound prosodic words
+        pw += ws_token.count("־") + 1  # maqqef ־ = U+05BE
+    return pw
+
+
 def find_split_offset(line_text: str, target_token) -> int:
     target_skel = target_token.consonant_skel
     if not target_skel:
@@ -235,6 +248,22 @@ def main():
             if not prior or not nxt:
                 if args.dry_run:
                     print(f"[skip-empty-half] {file_path.name} {chapter}:{verse}", file=sys.stderr)
+                skipped += 1
+                continue
+
+            # 4-layer-integrity preservation check (root-caused 2026-05-12):
+            # If the split crosses a maqqef-bound prosodic-word boundary,
+            # propagate_editorial_layers can't mirror the new break onto
+            # the per-word v1 layers (translit + eng-interlinear). Skip
+            # the apply if pw-count doesn't add up.
+            pw_orig = _prosodic_word_count(line_text)
+            pw_split = _prosodic_word_count(prior) + _prosodic_word_count(nxt)
+            if pw_orig != pw_split:
+                if args.dry_run:
+                    print(f"[skip-pw-parity] {file_path.name} {chapter}:{verse}: "
+                          f"orig pw={pw_orig} != split pw={pw_split} "
+                          f"(split would cross maqqef-bound pair, breaking 4-layer integrity)",
+                          file=sys.stderr)
                 skipped += 1
                 continue
 
