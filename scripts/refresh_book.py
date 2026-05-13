@@ -230,6 +230,30 @@ def process_book(book, build=False, dry_run=False):
             elapsed = time.time() - start_time
             return (False, elapsed)
 
+    # Post-cascade integrity gate (added 2026-05-12 after T2-apply
+    # cluster cascade reported "pass" but verifier showed 15 chapters
+    # drifted). The cluster-agent dispatcher reports refresh_book exit
+    # code; if integrity drifts, refresh_book must FAIL so the dispatcher
+    # surfaces the regression instead of declaring "all clusters pass."
+    if not dry_run:
+        short = book_short_name(book)
+        verifier_script = REPO_ROOT / "validators" / "4-layer-integrity" / "verify_4_layer_sync.py"
+        if verifier_script.exists():
+            print(f"  Running 4-layer integrity verify...")
+            try:
+                result = subprocess.run(
+                    [sys.executable, str(verifier_script), "--book", short, "--quiet"],
+                    env=ENV, check=False, capture_output=True, text=True,
+                )
+                if result.returncode != 0:
+                    print(f"  X 4-layer integrity FAILED for {short}", file=sys.stderr)
+                    print(result.stdout[-2000:] if result.stdout else "", file=sys.stderr)
+                    elapsed = time.time() - start_time
+                    return (False, elapsed)
+                print(f"  OK 4-layer integrity verified")
+            except Exception as e:
+                print(f"  WARN integrity check error: {e}", file=sys.stderr)
+
     elapsed = time.time() - start_time
     return (True, elapsed)
 
