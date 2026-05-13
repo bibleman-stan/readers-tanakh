@@ -488,27 +488,35 @@ This diagnostic catches the failure mode where a canon change is self-framed as 
 
 Hebrew-specific rules use the H-prefix to distinguish them from sibling-canon rule numbers (BoFM Rule 1–28, GNT R1–R29) and to signal Tanakh-corpus origin.
 
-| # | Name | Type | Trigger | Action |
-|---|------|------|---------|--------|
-| H1 | Maqqef-group indivisibility | **Layer 1** → [hebrew-break-legality.md](../../data/syntax-reference/hebrew-break-legality.md) | Maqqef glyph (־) joining tokens | Never break inside |
-| H2 | Construct chain default | Mechanical + judgment | Bound *nomen regens + nomen rectum*, no intervening modifier | MERGE (one prosodic unit) |
-| H3 | Vav-consecutive clause-head policy | Editorial | Wayyiqtol verb at clause head | Default own line for narrative *wayyiqtol* heads; tighter merging in fast-paced narrative sequences (see §5 H3) |
-| H4 | Vocative handling (Hebrew) | Editorial | Address particle (or contextually marked vocative — Hebrew lacks a vocative case) | Default own line; merge under apposition rule (§5 H4) |
-| H5 | Direct-speech framing default | Mechanical + judgment | *X לֵאמֹר* speech-intro frame | Frame and quoted content occupy separate lines regardless of frame length (short-framing-default retired). Frame length governs visual display, not merge licensing. Narrow scope-economy carve-out (REVIEW-REQUIRED) for ≥4-turn dialogue chains. See §5 H5. |
-| H5b | Speech-Act Announcement Default | Mechanical | Finite speech-act verb closing a speech-intro frame, immediately followed by direct discourse | Speech-act announcement and quoted content occupy separate lines. Forced-merge exceptions: H1 (maqqef), H7 (non-speech complement), H5 scope-economy carve-out. See §5 H5b. |
-| H6 | Ketiv/Qere policy | Editorial | K/Q markers in source text | Print Qere by default; Ketiv accessible as hover/footnote (per §5 H6 sub-categories) |
-| H7 | Complement integrity (Hebrew) | Mechanical | Verb + obligatory complement (*אָמַר* + speech, *יָדַע* + כִּי-clause, etc.) | MERGE across boundary |
-| H8 | RETIRED 2026-05-05 | — | — | Te'amim play no role in editorial decisions. See §1 "The Te'amim Play No Role in Editorial Decisions" + §8 entry. |
-| H9 | Divine-title appositives | Editorial | Divine title appositive after *YHWH* or *Elohim* | INTRODUCING (formal anchor) → STACK SPLIT; REFERENCING (default) → MERGE |
-| H10 | Cross-verse continuity merge | Mechanical | Atomic thought spans MT verse boundary | Sense-line stays intact in earlier verse's block; superscript verse-marker for boundary |
-| H11 | RETIRED 2026-05-05 | — | — | Te'amim-internal heuristic; nothing to govern at canon level once te'amim play no role in editorial decisions. See §8 entry. |
-| H12 | Petucha/setuma rendering | Mechanical | Petucha or setuma marker in source | Petucha → blank-line paragraph break; setuma → indented break. Evidence-weighted, not authority |
-| H13 | Special letters | Editorial | Suspended nun (Judg 18:30), inverted nuns (Num 10:35–36), large/small letters, scriptio plena/defectiva variants | Preserve graphically; document in marginal note; do not affect line breaks |
-| H14 | Discourse particles | Editorial | *הִנֵּה, נָא, אָז, עַתָּה, וְעַתָּה, לָכֵן, עַל־כֵּן* | Lead their content (frame, do not trail); cluster with vocative if both sentence-initial |
-| H15 | Casus pendens / left-dislocation | Mechanical | Topic-fronted NP + resumptive pronoun in main clause | Topic earns its own line (structural justification 5) |
-| H16 | FEF wayehi protasis | Mechanical | *וַיְהִי* + temporal/circumstantial protasis + main clause | Protasis own line; main clause starts fresh |
-| H17 | Genealogy / list-formula handling | Editorial | Genealogical formula (*X הוֹלִיד אֶת־Y וַיֵּלֶד בָּנִים וּבָנוֹת*) | List-uniform per Parallel-List Uniformity Principle; merge per-generation member to one line |
-| H18 | Clause-nucleus integrity (verbless / participial / verb-PP-complement) | Mechanical + judgment | NP-ending line followed by prep- or participle-fronted next line, no finite verb either side | MERGE (default for short cases ≤8 prosodic words); SPLIT permitted for heavy predicate, casus pendens, embedded poetry, parallel bicolon |
+| # | Name | Type | Trigger | Action | Detector |
+|---|------|------|---------|--------|----------|
+| H1 | Maqqef-group indivisibility | **Layer 1** → [hebrew-break-legality.md](../../data/syntax-reference/hebrew-break-legality.md) | Maqqef glyph (־) joining tokens | Never break inside | `validators/syntax/validate_maqqef_integrity.py` + `validate_line_final_tokens.py` |
+| H2 | Construct chain default | Mechanical + judgment | Bound *nomen regens + nomen rectum*, no intervening modifier | MERGE (one prosodic unit) | `validators/colometry/validate_construct_chain.py` + `validate_bare_construct_head.py` |
+| H3 | Vav-consecutive clause-head policy | Editorial | Wayyiqtol verb at clause head | Default own line for narrative *wayyiqtol* heads; tighter merging in fast-paced narrative sequences (see §5 H3) | (no validator — corpus-evidence rule; surfaced via `scripts/scan_multi_finite_verb_line.py`) |
+| H4 | Vocative handling (Hebrew) | Editorial | Address particle (or contextually marked vocative — Hebrew lacks a vocative case) | Default own line; merge under apposition rule (§5 H4) | (no validator — editorial) |
+| H5 | Direct-speech framing default | Mechanical + judgment | *X לֵאמֹר* speech-intro frame | Frame and quoted content occupy separate lines regardless of frame length (short-framing-default retired). Frame length governs visual display, not merge licensing. Narrow scope-economy carve-out (REVIEW-REQUIRED) for ≥4-turn dialogue chains. See §5 H5. | `validators/colometry/validate_speech_intro_framing.py` + `validate_participial_speech_frame.py` |
+| H5b | Speech-Act Announcement Default | Mechanical | Finite speech-act verb closing a speech-intro frame, immediately followed by direct discourse | Speech-act announcement and quoted content occupy separate lines. Forced-merge exceptions: H1 (maqqef), H7 (non-speech complement), H5 scope-economy carve-out. See §5 H5b. | sub-check inside `validate_speech_intro_framing.py` |
+| H6 | Ketiv/Qere policy | Editorial | K/Q markers in source text | Print Qere by default; Ketiv accessible as hover/footnote (per §5 H6 sub-categories) | (no validator — textual policy) |
+| H7 | Complement integrity (Hebrew) | Mechanical | Verb + obligatory complement (*אָמַר* + speech, *יָדַע* + כִּי-clause, etc.) | MERGE across boundary | `validators/colometry/validate_complement_integrity.py` + `validate_causal_ki.py` + `validate_verb_object_bond.py` |
+| H8 | RETIRED 2026-05-05 | — | — | Te'amim play no role in editorial decisions. See §1 "The Te'amim Play No Role in Editorial Decisions" + §8 entry. | (retired) |
+| H9 | Divine-title appositives | Editorial | Divine title appositive after *YHWH* or *Elohim* | INTRODUCING (formal anchor) → STACK SPLIT; REFERENCING (default) → MERGE | (no validator — editorial) |
+| H10 | Cross-verse continuity merge | Mechanical | Atomic thought spans MT verse boundary | Sense-line stays intact in earlier verse's block; superscript verse-marker for boundary | `validators/colometry/validate_cross_verse_continuity.py` |
+| H11 | RETIRED 2026-05-05 | — | — | Te'amim-internal heuristic; nothing to govern at canon level once te'amim play no role in editorial decisions. See §8 entry. | (retired) |
+| H12 | Petucha/setuma rendering | Mechanical | Petucha or setuma marker in source | Petucha → blank-line paragraph break; setuma → indented break. Evidence-weighted, not authority | (no validator — build-time rendering in `scripts/build_books.py`) |
+| H13 | Special letters | Editorial | Suspended nun (Judg 18:30), inverted nuns (Num 10:35–36), large/small letters, scriptio plena/defectiva variants | Preserve graphically; document in marginal note; do not affect line breaks | (no validator — textual preservation) |
+| H14 | Discourse particles | Editorial | *הִנֵּה, נָא, אָז, עַתָּה, וְעַתָּה, לָכֵן, עַל־כֵּן* | Lead their content (frame, do not trail); cluster with vocative if both sentence-initial | `validators/colometry/validate_bare_discourse_particle.py` |
+| H15 | Casus pendens / left-dislocation | Mechanical | Topic-fronted NP + resumptive pronoun in main clause | Topic earns its own line (structural justification 5) | covered in `validate_clause_nucleus_split.py` (H15/H16/H18 cluster) |
+| H16 | FEF wayehi protasis | Mechanical | *וַיְהִי* + temporal/circumstantial protasis + main clause | Protasis own line; main clause starts fresh | `validators/colometry/validate_wayehi_protasis.py` + `validate_short_verse_fronting.py` |
+| H17 | Genealogy / list-formula handling | Editorial | Genealogical formula (*X הוֹלִיד אֶת־Y וַיֵּלֶד בָּנִים וּבָנוֹת*) | List-uniform per Parallel-List Uniformity Principle; merge per-generation member to one line | `validators/colometry/validate_genealogy_uniformity.py` |
+| H18 | Clause-nucleus integrity (verbless / participial / verb-PP-complement) | Mechanical + judgment | NP-ending line followed by prep- or participle-fronted next line, no finite verb either side | MERGE (default for short cases ≤8 prosodic words); SPLIT permitted for heavy predicate, casus pendens, embedded poetry, parallel bicolon | `validators/colometry/validate_clause_nucleus_split.py` (primary) + `validate_short_orphan_line.py` |
+**Validators not bound to numbered H-rules** (operating under §1 named principles or M-overrides):
+
+- `validate_blessed_cursed_chain.py`, `validate_oath_formula.py`, `validate_parallel_series_uniformity.py`, `validate_parallel_clause_split.py` → **Parallel-List Uniformity Principle** (§1)
+- `validate_bonded_pair.py` → **M1 Gorgianic Bonded Pair** (§1 merge-overrides)
+- `validate_coordinated_object.py`, `validate_interrogative_clause.py` → discourse/syntax integrity (§1)
+- `validate_compound_preposition_object.py` → Layer 1 syntax extension
+- `validate_canon_retirement_residue.py`, `validate_doc_pointers.py` → **meta-validators** (catch references to retired rules / broken doc pointers)
+- `validators/4-layer-integrity/verify_4_layer_sync.py` → **4-layer integrity invariant** (Hebrew/translit/interlinear/KJV per-cola token-count parity)
 
 **Guidelines** (useful tendencies, not strict rules): line length as signal; vocative splitting nuances; fronted-adverbial weight thresholds; compound-divine-name handling.
 
@@ -685,6 +693,18 @@ Five named tests that editors invoke by name at candidate boundaries. They are n
 
 **Note on rendering.** Display the maqqef glyph between joined orthographic words. The web-app's per-orthographic-word `<span>` structure preserves the joining for downstream layers (translit, interlinear) — the connector glyph (figure dash ‒ in current implementation) marks the prosodic bond visually.
 
+
+```yaml
+# Spec→tooling interface contract for H1
+primitive: textual-marker (maqqef glyph U+05BE — Layer 1 syntactic floor)
+detectors:
+  - validators/syntax/validate_maqqef_integrity.py
+  - validators/syntax/validate_line_final_tokens.py  (sub-check: proclitic-stranding inside maqqef-group)
+closed_lists: none (single-glyph trigger)
+fixture: Gen 1:1 (וְאֵת־הָאָרֶץ — maqqef-bound DO marker)
+cross_corpus: none direct (maqqef is Hebrew-only orthography; BoFM/GNT have no analog)
+```
+
 ### Rule H2 — Construct Chain Default
 
 **Grammatical basis.** A construct chain (*nomen regens + nomen rectum*, e.g., *דְּבַר־יְהוָה*, *בֵּית הַמֶּלֶךְ*, *מִמְּעֵי הַדָּגָה*) is a single bound noun phrase. The regens is in construct state; the rectum carries the genitival force. Modern reference grammars (Joüon-Muraoka §129; Waltke-O'Connor §9) treat construct chains as one syntactic unit for clause analysis.
@@ -699,6 +719,18 @@ Five named tests that editors invoke by name at candidate boundaries. They are n
 - Long construct chain (3+ levels deep) where the deepest rectum is itself modified by a substantial relative clause — evaluate under structural justification 5 (substantive adjunct).
 
 **Example.** Jonah 2:7 *מִמְּעֵי הַדָּגָה* — construct chain, treat as one unit; do not break between *מִמְּעֵי* and *הַדָּגָה* even though they're not maqqef-joined. Currently widow-line in v1/he-baseline Jonah; v2/heb should merge upward.
+
+
+```yaml
+# Spec→tooling interface contract for H2
+primitive: macula-constituent (construct-chain detection via lowfat NP boundary + bound-state morphology)
+detectors:
+  - validators/colometry/validate_construct_chain.py
+  - validators/colometry/validate_bare_construct_head.py
+closed_lists: none (morphological trigger; bound-state is morphology-derived)
+fixture: Jonah 2:1 (מִמְּעֵי הַדָּגָה — non-maqqef construct chain)
+cross_corpus: BoFM Rule 6 fixed-phrase / GNT R6 fixed-phrase (analogous bound-NP integrity)
+```
 
 ### Rule H3 — Vav-Consecutive Clause-Head Policy
 
@@ -718,6 +750,17 @@ Five named tests that editors invoke by name at candidate boundaries. They are n
 **HOW WE KNOW:** Hebrew narrative grammar (Waltke-O'Connor §33 on wayyiqtol; Niccacci 1990 on the *wayyiqtol* as foreground-narrative engine). Corpus evidence will accumulate as books are edited.
 
 **SCOPE:** prose books only (21 books using prose accent system + Job's prose frame 1:1–2:13 and 42:7–17). Sifrei Emet poetic books rarely use *wayyiqtol* in extended chains; case-by-case there.
+
+
+```yaml
+# Spec→tooling interface contract for H3
+primitive: macula-clause + surface-morphology (wayyiqtol via Vqw* / Vnw* / etc. morph + Macula clause-head identification)
+detectors: (no direct validator — corpus-evidence rule; Hmfv scanner at scripts/scan_multi_finite_verb_line.py surfaces violations)
+closed_lists:
+  - BONDED_LEMMA_PAIRS (curated wayyiqtol pair lexicon at data/syntax-reference/bonded-lemma-pairs.txt)
+fixture: Gen 1:5 (וַיִּקְרָא ... וַיְהִי-עֶרֶב — formula closure pair); Exo 2:6 (6-line restructure per H3+H14+H5b)
+cross_corpus: GNT R9 subordinate-clause-introduction (analogous default own-line policy for clause heads)
+```
 
 ### Rule H4 — Vocative Handling
 
@@ -740,6 +783,18 @@ Five named tests that editors invoke by name at candidate boundaries. They are n
 
 **Stacked parallel vocatives** (multi-vocative address chains) are treated as a parallel address structure — each vocative on its own line per structural justification 1.
 
+
+```yaml
+# Spec→tooling interface contract for H4
+primitive: macula-constituent (vocative-position NP detection via lowfat role labels)
+detectors: (no direct validator — editorial; surfaced via review-required findings in cross-rule sweeps)
+closed_lists:
+  - ADDRESS_PARTICLES (הוֹי / אוֹי / אָנָּא / sentence-initial proper-name in 2p clause)
+  - REPEATED_VOCATIVE_PAIRS (אַבְרָהָם אַבְרָהָם / מֹשֶׁה מֹשֶׁה / שְׁמוּאֵל שְׁמוּאֵל — stay together as one speech act)
+fixture: Gen 22:11 (אַבְרָהָם אַבְרָהָם), Exo 3:4 (מֹשֶׁה מֹשֶׁה)
+cross_corpus: BoFM Rule 18 vocative / GNT R18 vocative (three-way refined treatment)
+```
+
 ### Rule H5 — Direct-Speech Framing Default
 
 **Grammatical basis.** Hebrew direct speech is introduced by an explicit speech-intro frame, most commonly *X אָמַר/אָמְרוּ + (אֶל-Y) + לֵאמֹר*, where *לֵאמֹר* is the bare infinitive complementizer marking the speech-onset boundary. The frame is an obligatory grammatical construction (Waltke-O'Connor §36.2.3 on *לֵאמֹר*).
@@ -760,6 +815,20 @@ Five named tests that editors invoke by name at candidate boundaries. They are n
 - Jonah 1:1 *וַיְהִי דְבַר־יְהוָה אֶל־יוֹנָה בֶן־אֲמִתַּי לֵאמֹר // [v.2 speech]* — unchanged; long-framing case already split.
 
 **Connection to Rule H5b.** The split-default formalized here is restated as **Rule H5b — Speech-Act Announcement Default** for cross-rule citation clarity (§5 H5b below).
+
+
+```yaml
+# Spec→tooling interface contract for H5
+primitive: macula-clause + textual-marker (לֵאמֹר infinitive complementizer + speech-frame clause head)
+detectors:
+  - validators/colometry/validate_speech_intro_framing.py
+  - validators/colometry/validate_participial_speech_frame.py
+closed_lists:
+  - SPEECH_FRAME_VERBS (אָמַר / דִּבֶּר / עָנָה / קָרָא / צִוָּה — finite speech-act verbs)
+  - SOLEMNITY_PREFIXES (כֹּה אָמַר יְהוָה / נְאֻם־יְהוָה — formulaic frames)
+fixture: Jonah 1:1 (long-frame split), Jonah 1:6/1:9 (short-frame split — short-framing-default retired)
+cross_corpus: BoFM Rule 11 / GNT R11 direct-speech-introduction
+```
 
 ### Rule H5b — Speech-Act Announcement Default
 
@@ -796,6 +865,17 @@ Five named tests that editors invoke by name at candidate boundaries. They are n
 - **Rule H3** (vav-consecutive clause-head policy): wayyiqtol speech verbs (*וַיֹּאמֶר*, *וַיְדַבֵּר*) inherit own-line default from H3; H5b reinforces and specializes for the announcement-content boundary.
 - **Rule H14** (discourse particles): speech-content frequently opens with *הִנֵּה* — H14 already places *הִנֵּה* on its own line (or leading the content line); H5b's split occurs cleanly at the announcement/content boundary regardless.
 - **Rule H16** (FEF wayehi protasis): *וַיְהִי + protasis + לֵאמֹר // content* combines H16 (protasis own line) + H5b (announcement/content split).
+
+
+```yaml
+# Spec→tooling interface contract for H5b
+primitive: macula-clause + macula-constituent (finite verb with speech-act frame role + adjacent direct-discourse boundary)
+detectors: sub-check inside validators/colometry/validate_speech_intro_framing.py
+closed_lists:
+  - SPEECH_ACT_VERBS (subset of SPEECH_FRAME_VERBS — finite forms only, all stems including imperative/jussive)
+fixture: Jonah 1:6 (וַיֹּאמֶר לוֹ // מַה־לְּךָ — split per H5b default)
+cross_corpus: GNT R28-ext speech-act-announcement (this is the Tanakh codification of the analogous rule)
+```
 
 ### Rule H6 — Ketiv/Qere Policy
 
@@ -841,6 +921,17 @@ When Ketiv and Qere differ, the Masoretes preserved both: Ketiv stands in the co
 
 **Policy.** Print the Masoretic form. Document the scribal-correction note in marginal apparatus where the Masorah records it. The project does not "restore" earlier forms; the Masoretic consensus is the textual base.
 
+
+```yaml
+# Spec→tooling interface contract for H6
+primitive: textual-marker (Ketiv/Qere apparatus markers in TAHOT/UXLC source)
+detectors: (no validator — textual-tradition policy; build-time rendering in scripts/build_books.py uses Qere-default + footnote)
+closed_lists:
+  - QERE_REGISTRY (per-verse K/Q pairs — derived from TAHOT col-2 markers, not maintained as canon list)
+fixture: Gen 49:11 (Ketiv עירה / Qere עִירוֹ); Jer 31:38 (Ketiv בָּאִים / Qere)
+cross_corpus: none direct (NT has no equivalent textual-tradition apparatus); BoFM has 2026/2020-edition variants but mechanism differs
+```
+
 ### Rule H7 — Complement Integrity (Hebrew)
 
 **Grammatical basis.** Verbs requiring a clausal or PP complement form one integrated predication with their complement. The matrix verb alone does not express a complete thought.
@@ -865,6 +956,21 @@ When Ketiv and Qere differ, the Masoretes preserved both: Ketiv stands in the co
 - Direct divine speech with recitativum *כִּי* (*נְאֻם־יְהוָה כִּי [first-person content]*) — recitativum-*כִּי* functions as direct-discourse marker.
 
 **Delete-test diagnostic.** Remove any intervening NP. If the sentence still reads as "[subject] [verb] *כִּי* X," the *כִּי* clause is a complement — MERGE. If the deletion breaks the sentence, the *כִּי* clause is appositive to a noun — DNM (do not merge).
+
+
+```yaml
+# Spec→tooling interface contract for H7
+primitive: macula-constituent (verb + obligatory-complement constituent membership via lowfat role labels: o, c, adv-c)
+detectors:
+  - validators/colometry/validate_complement_integrity.py
+  - validators/colometry/validate_causal_ki.py
+  - validators/colometry/validate_verb_object_bond.py
+closed_lists:
+  - OBLIGATORY_COMPLEMENT_VERBS (יָדַע / רָאָה / שָׁמַע / זָכַר / פָּחַד / רָצָה / שָׁמַח + speech verbs that take כִּי-clause)
+  - CAUSAL_KI_CONTEXTS (כִּי as causal subordinator vs. כִּי as recitative/asseverative)
+fixture: Gen 12:11 (יָדַעְתִּי כִּי / Hb merge); Jer 31:34 (יָדְעוּ אוֹתִי)
+cross_corpus: BoFM Rule 17 / GNT R8 framing-devices (analogous verb-complement integrity)
+```
 
 ### Rule H8 — RETIRED 2026-05-05
 
@@ -893,6 +999,18 @@ INTRODUCING (stack on own line) earns a split ONLY when one of three formal anch
 
 **Precedence with Rule H4 (vocative).** When a divine-title appositive sits within a vocative unit (the phrase opens with address particle + title, addressing deity directly in second person), **Rule H4 wins** — the vocative + its close appositive stay whole as one direct-address unit. Rule H9's STACK SPLIT for INTRODUCING appositives applies only to non-vocative narrative or prophetic frames (third-person naming contexts).
 
+
+```yaml
+# Spec→tooling interface contract for H9
+primitive: macula-constituent (apposition detection via lowfat NP/Apposition role labels)
+detectors: (no direct validator — editorial; covered case-by-case in review-required findings)
+closed_lists:
+  - DIVINE_TITLES (יְהוָה / אֱלֹהִים / אֵל / אֵל שַׁדַּי / אֲדֹנָי / יְהוָה צְבָאוֹת / אֱלֹהֵי-X compound forms)
+  - INTRODUCING_FORMULAE (oath formulas, doxology openers, prophetic-attribution formulas)
+fixture: Gen 14:18 (אֵל עֶלְיוֹן introducing); Ps 23:1 (יְהוָה referencing)
+cross_corpus: GNT divine-title-handling (Tanakh-specific elaboration; GNT canon doesn't have a numbered analog)
+```
+
 ### Rule H10 — Cross-Verse Continuity Merge
 
 **Grammatical basis.** When a single atomic thought crosses an MT verse boundary, the sense-line stays intact. The verse boundary is an editorial overlay (Masoretic verse division was pre-Masoretic chant-units, finalized in the Tiberian period; not original to the text); it does not constrain sense-line formation. The sense-line is formed by grammatical/rhetorical continuity, and the versification is carried along by an inline superscript marker.
@@ -910,6 +1028,17 @@ INTRODUCING (stack on own line) earns a split ONLY when one of three formal anch
 **Hebrew-versification-only.** This rule operates on MT (Hebrew) versification. The Hebrew/Christian versification crosswalk (per textual posture) is independent of cross-verse continuity decisions; the crosswalk is a citation-lookup mechanism, not a structural decision.
 
 **Cross-verse continuity** is the operative convention; Hebrew-specific examples appear in the rule diagnostic above.
+
+
+```yaml
+# Spec→tooling interface contract for H10
+primitive: macula-clause + verse-boundary marker (clause crossing MT verse boundary detected via lowfat sentence/clause spans)
+detectors:
+  - validators/colometry/validate_cross_verse_continuity.py
+closed_lists: none (structural rule)
+fixture: Gen 1:1-2 (no merge); Hos 4:14-15 (cross-verse continuation candidate)
+cross_corpus: BoFM Rule 14 cross-verse / GNT R3.17 cross-verse-continuity-merge
+```
 
 ### Rule H11 — RETIRED 2026-05-05
 
@@ -932,6 +1061,16 @@ Rule numbering preserved (H11 slot stays empty rather than renumbering H12–H17
 
 **Tradition-disagreement protocol.** When Aleppo, Leningrad, MAM, and BHS disagree on petucha/setuma placement (which they do at the ~5–10% level per Yeivin 1980; Tov 2012), the project follows Leningrad per textual posture §0.1. Discrepancies may be documented in marginal note for sibling-tradition awareness but do not affect the primary text.
 
+
+```yaml
+# Spec→tooling interface contract for H12
+primitive: textual-marker (petucha פ / setuma ס markers in source TAHOT/UXLC)
+detectors: (no validator — build-time rendering in scripts/build_books.py)
+closed_lists: none (single-marker trigger)
+fixture: Gen 1:1 (petucha at v.1 close); Lev 8:1 (petucha)
+cross_corpus: NT has no chapter-internal paragraph markers; BoFM has chapter-only
+```
+
 ### Rule H13 — Special Letters
 
 **Grammatical basis.** The Masoretic text preserves graphical anomalies that the masoretic consensus identifies as deliberate (not scribal errors):
@@ -949,6 +1088,19 @@ Rule numbering preserved (H11 slot stays empty rather than renumbering H12–H17
 - **Do not affect line breaks.** Special letters are graphical anomalies, not structural cues. The line break decision is independent.
 
 **Scriptio plena/defectiva.** TAHOT preserves the Leningrad orthography. Variants in MAM (Aleppo) or other witnesses are not adopted. Translit layer transliterates the Leningrad form.
+
+
+```yaml
+# Spec→tooling interface contract for H13
+primitive: textual-marker (special-letter codepoints / scribal apparatus from TAHOT)
+detectors: (no validator — textual preservation; documented in marginal notes only)
+closed_lists:
+  - SUSPENDED_LETTERS (Judg 18:30 ה of מנשה suspended; Job 38:13 ע)
+  - INVERTED_NUNS (Num 10:35-36 enclosing nuns; Ps 107 7 inverted nuns per some MSS)
+  - LARGE_LETTERS / SMALL_LETTERS (Gen 1:1 בְ; Lev 1:1 א)
+fixture: Judg 18:30; Num 10:35-36
+cross_corpus: none
+```
 
 ### Rule H14 — Discourse Particles
 
@@ -971,6 +1123,19 @@ Rule numbering preserved (H11 slot stays empty rather than renumbering H12–H17
 
 **Cluster with vocative.** When a sentence-initial discourse particle co-occurs with a vocative, both are extra-clausal elements and cluster on one line; the proposition follows on the next line.
 
+
+```yaml
+# Spec→tooling interface contract for H14
+primitive: macula-clause + surface-morphology (sentence-initial discourse-particle position via lowfat clause-opening)
+detectors:
+  - validators/colometry/validate_bare_discourse_particle.py
+closed_lists:
+  - DISCOURSE_PARTICLES (הִנֵּה / נָא / אָז / עַתָּה / וְעַתָּה / לָכֵן / עַל־כֵּן)
+  - VOCATIVE_CLUSTER_PEERS (when both H4 vocative + H14 particle are sentence-initial → cluster as one frame)
+fixture: Exo 2:6 (וְהִנֵּה־נַעַר בֹּכֶה — own-line per H14); Gen 22:1 (הִנֵּנִי frame)
+cross_corpus: BoFM Rule 8 framing-devices / GNT R8 framing-devices
+```
+
 ### Rule H15 — Casus Pendens / Left-Dislocation
 
 **Grammatical basis.** Hebrew uses topic-fronting + resumptive pronoun (casus pendens, also called *nominative absolute* or *left-dislocation*) extensively. The fronted topic is grammatically detached; the main clause picks up the topic via a resumptive pronoun. Joüon-Muraoka §156 documents this as a primary Hebrew syntactic device.
@@ -982,6 +1147,16 @@ Rule numbering preserved (H11 slot stays empty rather than renumbering H12–H17
 **Example:** *וְהָאֱלֹהִים יַעֲנֶנּוּ בְקוֹל* "(As for) God / He answers him with [his] voice" — *וְהָאֱלֹהִים* fronted topic; *יַעֲנֶנּוּ* main clause with object-suffix resumption.
 
 **SCOPE:** does not apply to mere subject-fronting without resumption (which is a marked-but-bound word-order variation, not a true casus pendens — fronting paradox applies, see §1 "Imposing vs. Revealing").
+
+
+```yaml
+# Spec→tooling interface contract for H15
+primitive: macula-constituent (topic-NP + resumptive-pronoun pattern via lowfat dislocation tagging)
+detectors: covered in validators/colometry/validate_clause_nucleus_split.py (H15/H16/H18 cluster)
+closed_lists: none (structural rule via Macula constituent boundaries)
+fixture: Gen 17:14 (וְעָרֵל זָכָר ... וְנִכְרְתָה — left-dislocated topic + resumptive)
+cross_corpus: GNT R28 textual-asymmetry / BoFM Rule 22 left-dislocation
+```
 
 ### Rule H16 — FEF Wayehi Protasis
 
@@ -996,6 +1171,20 @@ Rule numbering preserved (H11 slot stays empty rather than renumbering H12–H17
 
 **Connection to Rule H5 direct-speech framing.** When *וַיְהִי* + speech-intro frame + *לֵאמֹר* combines (Jonah 1:1 case), the FEF protasis IS the long-speech-intro frame; it gets its own line; the speech opens on the next line.
 
+
+```yaml
+# Spec→tooling interface contract for H16
+primitive: macula-clause (וַיְהִי + temporal protasis clause-cluster via lowfat clause-head + role labels)
+detectors:
+  - validators/colometry/validate_wayehi_protasis.py
+  - validators/colometry/validate_short_verse_fronting.py
+closed_lists:
+  - FEF_PROTASIS_HEADS (וַיְהִי / וְהָיָה in temporal/circumstantial frame position)
+  - PROTASIS_CONNECTORS (כַּאֲשֶׁר / כִּי / בְּ + infinitive / b-temporal)
+fixture: Jonah 1:1 (וַיְהִי דְבַר־יְהוָה); Gen 22:1 (וַיְהִי אַחַר הַדְּבָרִים הָאֵלֶּה)
+cross_corpus: GNT R3.14a hoste-binding / BoFM Rule 14 it-came-to-pass-clause (analogous front-end-frame pattern)
+```
+
 ### Rule H17 — Genealogy / List-Formula Handling
 
 **Grammatical basis.** Hebrew genealogies use formulaic constructions: *X חַי N שָׁנִים וַיּוֹלֶד אֶת־Y וַיְחִי X אַחֲרֵי הוֹלִידוֹ אֶת־Y M שָׁנִים וַיּוֹלֶד בָּנִים וּבָנוֹת וַיִּהְיוּ כָּל־יְמֵי X N+M שָׁנִים וַיָּמֹת* (the Gen 5 generational formula). Legal lists use repeated case-introduction frames (*וְכִי / אִם / לֹא*). Each list-member is one of the same kind of unit.
@@ -1007,6 +1196,19 @@ Rule numbering preserved (H11 slot stays empty rather than renumbering H12–H17
 **Example.** Gen 5:6 *וַיְחִי שֵׁת חָמֵשׁ שָׁנִים וּמְאַת שָׁנָה וַיּוֹלֶד אֶת־אֱנוֹשׁ* → one line per Seth-generation member, not 4–5 lines for the formula's grammatical sub-parts.
 
 **SCOPE:** Gen 5, Gen 10, Gen 11, Gen 36, 1 Chr 1–9, similar genealogical blocks. Legal lists (Lev 11 dietary, Deut 14 dietary, Deut 27 curses, Deut 28 blessings) per the same principle. Acrostic structures (Pss 119, Lam 1–4) — list-uniform within the acrostic-letter-stanza scope.
+
+
+```yaml
+# Spec→tooling interface contract for H17
+primitive: macula-constituent + textual-pattern (genealogical formula via lowfat repeated-clause-shape detection)
+detectors:
+  - validators/colometry/validate_genealogy_uniformity.py
+closed_lists:
+  - GENEALOGY_FORMULAE (X הוֹלִיד אֶת־Y / X-Y-זָכָר וּנְקֵבָה / X חַי N שָׁנָה וַיּוֹלֶד פלוני)
+  - LIST_FORMULA_PEERS (curse-series אָרוּר / blessing-series בָּרוּךְ / beatitude אַשְׁרֵי)
+fixture: Gen 5 (full genealogy); Deut 27:15-26 (curse-series)
+cross_corpus: BoFM Rule 21 genealogy / GNT R12-R14 parallel-stacking
+```
 
 ### Rule H18 — Clause-Nucleus Integrity (Verbless / Participial / Verb-PP-Complement)
 
@@ -1055,19 +1257,109 @@ Rule numbering preserved (H11 slot stays empty rather than renumbering H12–H17
 
 ---
 
+
+```yaml
+# Spec→tooling interface contract for H18
+primitive: macula-constituent (verbless / participial / verb-PP-complement clause boundary via lowfat clause-shape)
+detectors:
+  - validators/colometry/validate_clause_nucleus_split.py  (primary — full H18 logic)
+  - validators/colometry/validate_short_orphan_line.py  (sub-check: H1 anchor + H18 nucleus)
+  - validators/colometry/validate_participial_speech_frame.py  (sub-case: participial + speech-frame)
+closed_lists:
+  - SIFREI_EMET_BOOKS (Pss / Prov / poetic Job 3-42 — H18 hard-skip)
+  - EMBEDDED_POETRY_CHAPTERS (Exo 15 / Deut 32 / Deut 33 / Judg 5 / 1 Sam 2:1-10 / 2 Sam 22 / Isa 12 / Hab 3 / Lam / Song)
+fixture: Deut 33:26 (NP // bare-participle MUST NOT merge); Lam 3:25 (verbless + prep MUST NOT merge); Pro 25:11 (Sifrei Emet hard-skip)
+cross_corpus: BoFM Rule 17 complement-integrity / GNT M1 Gorgianic + M2 verb-object-bond (verbless-clause analog)
+```
+
 ## §6 Validator Suite
 
-Validators live in two subfolders reflecting the Layer 1 / Layer 3 split. Four active validators as of 2026-04-27:
+Validators live in three subfolders reflecting the architectural decomposition. **25 validators total** as of 2026-05-12; per-rule mapping is in §3's Detector column. This section indexes by validator-file rather than by rule.
 
 **Layer 1 — Syntax validators** at `validators/syntax/` (generic Hebrew grammar checks; violations tagged `[MALFORMED]` — hard grammatical failures):
-- `validate_maqqef_integrity.py` → Rule H1 (maqqef-group indivisibility). Gate-passed; STRONG findings feed the editorial work queue at Category A confidence.
-- `validate_line_final_tokens.py` → Rule H1 sub-check + L1 proclitic-stranding rows from `data/syntax-reference/hebrew-break-legality.md` (conjunction-prefix וְ, prepositional-prefix, definite-article, direct-object-marker אֵת, negation, compound-prep stranded). Gate-passed; STRONG findings feed the editorial work queue at Category A confidence.
+
+| Validator | Implements | Status |
+|---|---|---|
+| `validate_maqqef_integrity.py` | H1 maqqef-group indivisibility | Gate-passed; STRONG → Category A |
+| `validate_line_final_tokens.py` | H1 sub-check + L1 proclitic-stranding rows | Gate-passed; STRONG → Category A |
+| `validate_compound_preposition_object.py` | L1 syntax extension (compound-prep + obj integrity) | Gate-passed |
 
 **Layer 3 — Colometry validators** at `validators/colometry/` (Tanakh-specific editorial-rule checks; violations tagged `[DEVIATION]`):
-- `validate_construct_chain.py` → Rule H2 (construct-chain default). Functioning as a REVIEW-REQUIRED surfacer; STRONG threshold not yet cleared at corpus scale.
-- `validate_speech_intro_framing.py` → Rule H5 (direct-speech framing default) + Rule H16 secondary (FEF wayehi-protasis interaction). Gate-passed on STRONG-MERGE findings; REVIEW-REQUIRED items go to per-item editorial judgment.
 
-**Dashboard and gates.** `validators/run_all.py` is the validator dashboard — discovers all `validate_*.py`, runs each with `--json --v2`, aggregates per-validator finding counts. Run with `--baseline-check` to gate against `.baseline.json` (the regression reference). Two git hooks enforce the gate at commit time: the pre-commit hook (`validators/hooks/pre-commit`) runs `run_all.py --baseline-check` when editorial corpus / canon / validator files are staged; the commit-msg hook (`validators/hooks/commit-msg`) runs `check_canon_extensions.py` to require audit-evidence on any commit that extends the canon.
+| Validator | Implements | Status |
+|---|---|---|
+| `validate_bare_construct_head.py` | H2 construct-chain (sub-check) | Active |
+| `validate_bare_discourse_particle.py` | H14 discourse particles | Active |
+| `validate_blessed_cursed_chain.py` | Parallel-List Uniformity (curse/blessing series) | Active |
+| `validate_bonded_pair.py` | M1 Gorgianic bonded-pair (merge-override) | Active |
+| `validate_canon_retirement_residue.py` | meta-validator (catches references to retired rules in code/docs) | Active |
+| `validate_causal_ki.py` | H7 (causal-כִּי subset of complement integrity) | Active |
+| `validate_clause_nucleus_split.py` | H18 primary + H15/H16 cluster | Active |
+| `validate_complement_integrity.py` | H7 complement integrity | Active |
+| `validate_construct_chain.py` | H2 construct-chain default | REVIEW-REQUIRED surfacer (STRONG threshold not yet cleared) |
+| `validate_coordinated_object.py` | discourse/syntax integrity (§1) | Active |
+| `validate_cross_verse_continuity.py` | H10 cross-verse continuity merge | Active |
+| `validate_doc_pointers.py` | meta-validator (broken doc-pointer detection) | Active |
+| `validate_genealogy_uniformity.py` | H17 genealogy/list-formula | Active |
+| `validate_interrogative_clause.py` | discourse integrity (§1) | Active |
+| `validate_oath_formula.py` | Parallel-List Uniformity (oath formulas) | Active |
+| `validate_parallel_clause_split.py` | Parallel-List Uniformity (bicolon parallelism) | Active — Hpar |
+| `validate_parallel_series_uniformity.py` | Parallel-List Uniformity Principle (general) | Active |
+| `validate_participial_speech_frame.py` | H5 + H18 sub-case (participial speech-frame) | Active |
+| `validate_short_orphan_line.py` | H1 anchor + H18 nucleus | Active |
+| `validate_short_verse_fronting.py` | H16 + Authorial Asymmetry | Active |
+| `validate_speech_intro_framing.py` | H5 primary + H5b sub-check + H16 secondary | Gate-passed; STRONG → Category A |
+| `validate_verb_object_bond.py` | H7 + H10 (verb-object cross-verse integrity) | Active |
+| `validate_wayehi_protasis.py` | H16 FEF wayehi-protasis | Active |
+
+**4-Layer integrity** at `validators/4-layer-integrity/`:
+
+| Validator | Implements | Status |
+|---|---|---|
+| `verify_4_layer_sync.py` | per-cola token-count parity across Hebrew / translit / interlinear / KJV | Critical — runs in `refresh_book.py` post-cascade gate |
+
+**Dashboard and gates.** `validators/run_all.py` is the validator dashboard — discovers all `validate_*.py` + `verify_*.py`, runs each with `--json --v2`, aggregates per-validator finding counts. Run with `--baseline-check` to gate against `.baseline.json` (the regression reference). Two git hooks enforce the gate at commit time: the pre-commit hook (`validators/hooks/pre-commit`) runs `run_all.py --baseline-check` when editorial corpus / canon / validator files are staged; the commit-msg hook (`validators/hooks/commit-msg`) runs `check_canon_extensions.py` to require audit-evidence on any commit that extends the canon.
+
+### Closed-List Registry
+
+Named closed lists consumed by validators. Each entry: list name → source-of-truth file → consumers.
+
+| List | Source-of-truth | Consumed by |
+|---|---|---|
+| SPEECH_FRAME_VERBS / SPEECH_ACT_VERBS (H5, H5b) | `validators/_shared/speech_verbs.py` | `validate_speech_intro_framing.py`, `validate_participial_speech_frame.py` |
+| BONDED_LEMMA_PAIRS / hendiadys (H3, M1) | `validators/_shared/hendiadys_lemma_pairs.py` | `validate_bonded_pair.py`, `scripts/scan_multi_finite_verb_line.py` |
+| SIFREI_EMET_BOOKS / EMBEDDED_POETRY_CHAPTERS (H18) | `validators/_shared/poetic_register.py` | `validate_clause_nucleus_split.py`, `validate_short_orphan_line.py`, all H18-aware validators |
+| Macula constituent / clause / role-label API | `validators/_shared/macula_constituents.py` | nearly every Layer 3 validator (H2/H7/H14/H15/H16/H17/H18) — **the syntactic primitive** |
+| morph-tag utilities | `validators/_shared/morph_tags.py`, `morphology.py`, `morph_alignment.py` | wayyiqtol detection, finite-verb detection, prefix/suffix splitting |
+| DISCOURSE_PARTICLES (H14) | inline in `validate_bare_discourse_particle.py` (not yet a registry) | `validate_bare_discourse_particle.py` only |
+| DIVINE_TITLES (H9) | not yet codified — case-by-case inline | (future: extract to `_shared/divine_titles.py` if H9 gets a validator) |
+| ADDRESS_PARTICLES (H4) | not yet codified — case-by-case inline | (future) |
+| GENEALOGY_FORMULAE (H17) | inline in `validate_genealogy_uniformity.py` | `validate_genealogy_uniformity.py` only |
+| OBLIGATORY_COMPLEMENT_VERBS (H7) | inline in `validate_complement_integrity.py` | `validate_complement_integrity.py` only |
+
+**Migration discipline for closed lists.** When the same list is needed by ≥2 validators, extract to `_shared/` (consistent with the validator-extension-justified hook discipline). Inline lists are fine for single-consumer cases.
+
+### Cross-Corpus Rule-Name Map
+
+Tanakh H-rules sometimes have analogs in BoFM (Rule N) or GNT (R-N). Quick reference for cross-corpus methodology imports / audits:
+
+| Tanakh | BoFM analog | GNT analog | Common principle |
+|---|---|---|---|
+| H1 (maqqef indivisibility) | — | — | Hebrew-only orthography |
+| H2 (construct chain) | Rule 6 (fixed phrase) | R6 (fixed phrase) | bound-NP integrity |
+| H3 (wayyiqtol clause-head) | — | R9 (subordinate-clause-introduction) | default own-line for clause heads |
+| H4 (vocative) | Rule 18 (vocative) | R18 (vocative three-way) | vocative own-line + apposition exception |
+| H5 (direct-speech framing) | Rule 11 (direct-speech intro) | R11 (direct-speech intro) | frame + content as two structural units |
+| H5b (speech-act announcement) | — | R28-ext (speech-act announcement after frame) | finite speech-act verb closes its own line |
+| H7 (complement integrity) | Rule 17 (complement) | R8 (framing devices) | verb + obligatory complement merges |
+| H10 (cross-verse continuity) | Rule 14 (cross-verse) | R3.17 (cross-verse continuity merge) | atomic thought spans verse boundary |
+| H14 (discourse particles) | Rule 8 (framing devices) | R8 (framing devices) | sentence-initial particle leads its content |
+| H15 (casus pendens) | Rule 22 (left-dislocation) | R28 (textual asymmetry) | topic-fronted NP earns own line |
+| H16 (FEF wayehi protasis) | Rule 14 (it-came-to-pass-clause) | R3.14a (hoste-binding) | front-end-frame protasis own-line |
+| H17 (genealogy/list-formula) | Rule 21 (genealogy) | R12-R14 (parallel stacking) | uniform parallel-list rendering |
+| H18 (clause-nucleus integrity) | Rule 17 (complement integrity) | M1 Gorgianic + M2 verb-object-bond | verbless / participial / verb-PP-complement integrity |
+
+Cross-corpus changes propagate via [`atu-method/docs/framework.md`](../../atu-method/docs/framework.md) §7 (canon revision protocol). When adopting a sibling-canon refinement, verify the principle holds in Hebrew via independent corpus evidence — provenance from a sibling project is not validation per §7 trigger #11.
 
 **Validator design constraint — no length caps on merge candidates.** Atomic-thought test is the gate, not line length. A long correctly-merged line is evidence that the original text contains a long single thought. Length is diagnostic (may trigger Category B/C review for unusually long results) but is never a mechanical gate.
 
@@ -1178,159 +1470,20 @@ A rule labeled *proposed* is a rule awaiting corpus verification. "Proposed" is 
 
 ## §8 Update Log
 
-*Purpose: **dual-natured** — chronological reasoning trail. Recent entries documenting active-rule provenance are operationally referenced; older entries are historical narrative. **Do not rewrite or remove dated entries.** Historical entries retain their original wording; silently revising them falsifies the chronological trail.*
+*Purpose: **dual-natured** — chronological reasoning trail for active-rule provenance. Recent entries (≥2026-05-01) are operationally referenced; pre-2026-05-01 entries archived to git history.*
 
-### 2026-04-26 — Intro structure brought into parity with GNT canon's 2026-04-25 voice-cleanup passes
+### Pre-2026-05-01 entries — archived to git history
 
-The Tanakh canon was written 2026-04-26 using BoFM v2.0 as architectural template. The GNT canon ran three voice-cleanup passes on 2026-04-25 (commits 514f15d, c787418, b86c13a) that the Tanakh canon didn't inherit because BoFM v2.0 still carried the older HUMAN/ROBOT structure. Stan flagged the gap.
+The pre-2026-05-01 chronological entries (covering canon v1.0 write 2026-04-26, directory-rename 2026-04-26, tier subfolders 2026-04-27, 5-tier→3-tier collapse 2026-04-27, 2026-04-26 carry-forward closure 2026-04-27, and Rule H18 adoption 2026-04-28) lived here through 2026-05-12. They were a chronological reasoning trail that git history captures verbatim:
 
-**Edits applied:**
-- D1: HUMAN/ROBOT "How to use this document" section replaced with content-led "What is this document?" + Reader's guide by purpose (mirrors GNT lines 31–47).
-- D2: Stripped "for humans understanding what we are doing" parenthetical from Part I header; same for Part II/III headers; added brief italic Part-level epigraphs.
-- D3: Added PURPOSE italics header to §0 opener.
-- D4: Added PURPOSE italics headers to §2, §3, §5, §7, §8 openers (parallel to existing §1 header).
-- E2: Added Skousen-dictation-specific rationale clarification to §0 Origin subsection.
+```
+git log --follow private/01-method/colometry-canon.md
+git log -p --follow private/01-method/colometry-canon.md
+```
 
-WHY: Stan flagged that the GNT canon is fresher than what the Tanakh rewrite was based on, and asked whether the Tanakh canon's intro matches the fresher GNT structure. It didn't. These edits bring intro architecture and PURPOSE-header discipline into parity. No methodological content changed.
+Provenance of any active rule is now codified in the rule's own §5 entry (WHY / HOW WE KNOW / SCOPE per defensibility-capture). Entries from 2026-05-01 onwards retained below for active-rule context.
 
-HOW WE KNOW: 2026-04-26 background subagent re-read the GNT canon end-to-end against the current Tanakh canon and produced a structured 4-edit diff with file:line citations.
-
-SCOPE: intro architecture + PURPOSE headers + Origin paragraph factual accuracy. No rule content modified, no Hebrew-specific sections changed, no methodological position revised.
-
-### 2026-04-26 — Canon v1.0 written from scratch
-
-The predecessor stub canon (231 lines, established 2026-04-25) was scrapped and the canon rewritten from scratch using BoFM v2.0 as architectural template, GNT canon as content where BoFM is silent or where GNT's formulation is sharper, and Hebrew-specific content extracted from the stub or written net-new.
-
-**Why:** Granular reading of both sibling canons end-to-end (2026-04-26) found the stub:
-- Carried "te'amim-prior with override discipline" as central commitment, which contradicts the converged sibling principle that **editorial overlays must not have deterministic force**. The te'amim are the Hebrew analog of NA28 punctuation (sibling GNT) and Pratt's 1879 BoFM versification — late editorial overlays.
-- Carried the four-criteria framing both canons retired (BoFM 2026-04-19, GNT 2026-04-20). Breath was empirically retired by both projects after testing showed zero cases where breath was the sole deciding factor.
-- Framed discipline as "override warrants against an authority" instead of the converged "positive justification under atomic-thought prior."
-- Lacked every architectural element both sibling canons converged on after ~13 months of iteration: three forces, closed-list structural justifications, closed-list merge-overrides, Decision Procedure / Application Order, Category A/B/C autonomy boundary, mandatory-audit triggers, defensibility-capture enforcement, gold-standard regression chapters, withdrawn-proposals discipline.
-- Lacked the rhetoric-bandwagon failure-mode awareness, which is the highest-risk failure mode for the Tanakh project specifically given Hebrew's deep scholarly literature on parallelism (Lowth/Kugel/Berlin/Dobbs-Allsopp), chiasm, and other rhetorical figures.
-
-**Stan-validated 2026-04-26** after explicit pushback against earlier hedging that framed the te'amim demotion as a "tradeoff" or "Stan-call between branding and defensibility." Per `feedback_no_false_choice_framing.md`, fixing wrong methodology is not a tradeoff — it is the work.
-
-**Extracted from the predecessor stub (Tanakh-specific decisions retained):**
-- Textual posture (Leningrad-only, no LXX/DSS/Samaritan/Targums/Peshitta/Vulgate, MAM as reference). Now §0.1.
-- Two-accent-systems reality (prose 21 books, Sifrei Emet for Pss/Prov/poetic Job, Job 3:1–42:6 boundary). Now Rule H8 framing + Te'amim Inventory Reference §4.2 (TODO).
-- Petucha/setuma reality. Now §1 "Petucha / Setuma Are Evidence, Not Authority" + Rule H12.
-- Maqqef. Now Rule H1 (Layer 1 break-legality fact).
-- Ketiv/Qere policy. Now Rule H6 with sub-categories H6.1–H6.5.
-- Glossary content extracted to §9.
-
-**Imported from sibling canons:**
-- Three-forces framework + structural justifications + merge-overrides + Decision Procedure / Application Order: from BoFM v2.0 §1 / GNT canon §1–§2.
-- Container-not-originator framing: from GNT canon §1.
-- Imposing vs. Revealing scope discipline + reaching-for-split warning + fronting paradox: from GNT canon §1.
-- Punctuation/versification not break signals: from both canons, adapted to add te'amim explicitly to the same category.
-- Cross-Verse Continuity Merge: from GNT §3.17 (already imported into BoFM 2026-04-22). Now Rule H10.
-- Authorial Asymmetry Principle (R28): from both canons. Now §1 subsection.
-- Parallel-List Uniformity Principle: from BoFM 2026-04-26 (most recent addition).
-- N=2 Adjudication Principle: from BoFM 2026-04-23.
-- Autonomy Boundary (Categories A/B/C) + Mechanical-rule authority + Scope/precedence/closed-list/carve-out diagnostic: from both canons. Now §2.
-- §7 Change Protocol with 12 mandatory-audit triggers + audit-skippable + parallelization default + defensibility-capture + proposed-rule adoption protocol: from both canons (BoFM 2026-04-26 most recent).
-- FEF treatment for *wayehi* protases: explicitly named in GNT canon §5 as the Hebrew paradigm. Now Rule H16.
-- Validator-output-as-work-queue + validator-design-no-length-caps: from BoFM §6.
-
-**Hebrew-specific net-new sections (no sibling source):**
-- §1 "The Te'amim Are Not a Structural Prior" — the central methodological correction. Frames the te'amim as evidence-not-authority parallel to NA28 punctuation in GNT and Pratt's versification in BoFM.
-- §1 Hebrew anchor inventory (in the Generative Principle subsection) — Hebrew verbless clauses ARE atomic thoughts; do not import the Greek "every line needs a verb" instinct.
-- Rule H1 maqqef-group indivisibility (Layer 1 fact) with the joining-glyph rendering note.
-- Rule H2 construct-chain default.
-- Rule H3 vav-consecutive clause-head policy with bonded-pair / speech-intro-pair / hendiadic exceptions.
-- Rule H4 vocative handling (Hebrew lacks morphological vocative case; address-position diagnostic).
-- Rule H5 direct-speech framing default with short-vs-long *לֵאמֹר* test.
-- Rule H6 Ketiv/Qere policy with sub-categories H6.1–H6.5 (perpetual qere, qere-ve-la-ketiv, ketiv-ve-la-qere, sebirin, tiqqunei sopherim).
-- Rule H7 complement integrity for Hebrew verb classes.
-- Rule H8 te'amim as evidence (operational application of the §1 framing).
-- Rule H9 divine-title appositives.
-- Rule H10 cross-verse continuity merge (GNT-imported, Hebrew-specific examples).
-- Rule H11 tifcha-as-servant-of-atnach (Wickes 1887; corrects predecessor stub §2.1 default-breaker list).
-- Rule H12 petucha/setuma rendering with tradition-disagreement protocol.
-- Rule H13 special letters (suspended/inverted nuns, large/small letters, scriptio plena/defectiva).
-- Rule H14 discourse particles (*הִנֵּה, נָא, אָז, עַתָּה, וְעַתָּה, לָכֵן, עַל־כֵּן, אַף*).
-- Rule H15 casus pendens / left-dislocation.
-- Rule H16 FEF wayehi protasis.
-- Rule H17 genealogy / list-formula handling.
-- Layer 1 reference pointer to `data/syntax-reference/hebrew-break-legality.md` (file TODO; first-pass row inventory listed in §4.1).
-- Te'amim Inventory Reference pointer to `data/syntax-reference/teamim-inventory.md` (file TODO; will correct the §3.2 factual errors of the predecessor stub: tzinnor = positional zarqa, mehuppakh-legarmeih is conjunctive-with-paseq, revia mugrash is positional revia).
-
-**Adjudicated decisions captured (do not relitigate):**
-- Three criteria not four (no breath) — see `feedback_no_breath_criterion.md`.
-- Te'amim are evidence-plus-starting-draft, not authority — locked in §1 "The Te'amim Are Not a Structural Prior."
-- Atomic thought is the prior — locked in §1 Generative Principle.
-- Parallelism is evidence, not a structural prior — locked in §1 "Parallelism Is Not a Structural Prior." The Lowth/Kugel/Berlin/Dobbs-Allsopp debate is real and substantial; the project does not take a position in it because parallelism's status as evidence-not-authority is the same status the te'amim hold, and the framework is symmetric.
-
-**Follow-up work (carry-forwards, not part of this commit):**
-- Update `CLAUDE.md` and `README.md` to reflect new framing (drop te'amim-prior, drop four-criteria, drop breath, point to canon).
-- Audit and update `handoffs/` for cross-references that assume the predecessor framing. Most likely candidates: `handoffs/01-project-overview.md`, `handoffs/03-architecture.md`, `handoffs/04-editorial-workflow.md`.
-- Create `data/syntax-reference/hebrew-break-legality.md` shape-capped table (Layer 1 reference).
-- Create `data/syntax-reference/teamim-inventory.md` (te'amim disambiguation reference, correcting predecessor §3.2 factual errors).
-- Update `scripts/parse_teamim.py` to reflect Rule H8's de-authority framing — the script still produces v1-he-baseline as the editor's starting draft (no functional change), but its output is no longer "the structural prior."
-- Update `scripts/parse_teamim.py` to reflect Rule H11 — tifcha-as-servant-of-atnach mechanical adjustment (raise its evidence weight; remove or sub-condition the tifcha tier-2 default-breaker behavior).
-
-**Adversarial audit dispatched:** three parallel Opus subagents on 2026-04-26 (GNT-canon mining, BoFM-canon mining, Hebrew-realities hostile audit). Reports synthesized into the canon-revision plan; this v1.0 rewrite is the implementation. Per §7 trigger #11 (cross-project imports), each imported architectural element was vetted for Tanakh-corpus applicability during the rewrite.
-
-### 2026-04-26 — Directory rename: v1-teamim → v1-he-baseline; all canon path references updated
-
-**Summary:** Renamed `data/text-files/v1-teamim/` to `data/text-files/v1-he-baseline/` and updated all eight path and prose references in this canon accordingly.
-
-**WHY:** The directory name `v1-teamim` carried the te'amim-prior implication that the canon v1.0 rewrite eliminated. The directory's role is "starting draft for editorial work" — not "te'amim-prior baseline." Renaming to `v1-he-baseline` aligns directory-name framing with canon framing and achieves symmetry with sibling tier names (`v0-eng-baseline`, `v0-translit-baseline`, `v1-eng-interlinear`, `v1-eng-gloss`, `v1-translit`), where the tier prefix encodes position in the pipeline and the suffix encodes content/tradition — not the generation mechanism.
-
-**HOW WE KNOW:** Stan flagged the inconsistency directly: the old name implies the te'amim are the authoritative basis of the draft, which is precisely the framing the canon v1.0 rewrite retired.
-
-**SCOPE:** Directory rename (`data/text-files/v1-teamim/` → `data/text-files/v1-he-baseline/`) + all path references in this canon + carry-forward TODO in §8 (scripts/parse_teamim.py update). Path references in `scripts/`, `handoffs/`, `CLAUDE.md`, and any memory files referencing the old directory name are carry-forward work for the same session.
-
-### 2026-04-27 — Directory layout: tier subfolders
-
-`data/text-files/` restructured so each pipeline tier (v0, v1, v2, v3, v4) gets its own subfolder. Previously each tier-layer combination was a top-level directory (e.g., `v1-he-baseline/`, `v2-eng-interlinear/`); now they nest under `vN/` (e.g., `v1/he-baseline/`, `v2/eng-interlinear/`). The tier-name identity strings (v1-he-baseline, v2-he-syntax, etc.) are unchanged — only the filesystem layout. Canon path references updated throughout.
-
-**WHY:** directory layout was getting unwieldy as v2 (and eventually v3) were added — 14+ top-level tier directories cluttered `data/text-files/`. Subfolder grouping makes the tier structure visible at a glance.
-
-**HOW WE KNOW:** Stan flagged the clutter directly 2026-04-27 ("create a subfolder for v0 folders, etc.").
-
-**SCOPE:** filesystem layout + path references in scripts, validators, canon, tracked docs. Tier-name identities unchanged. apply_v2/apply_v3 ADOPTED_VALIDATORS gates and decision-procedure semantics unchanged.
-
-### 2026-04-27 — Tier collapse: 5-tier pipeline → 3-tier pipeline
-
-Pipeline simplified from **v0 → v1 → v2-he-syntax → v3-he-colometry → v4-editorial** (5 tiers) to **v0 → v1 → v2** (3 tiers). The intermediate auto-apply tiers (v2-he-syntax via `apply_v2.py`; v3-he-colometry via `apply_v3.py`) are retired. The editorial gold standard moves from `data/text-files/v4/editorial/` to `data/text-files/v2/heb/`; the parallel per-word layers move from `data/text-files/v4/{eng-interlinear,eng-gloss,translit}/` to `data/text-files/v2/{eng-interlinear,eng-gloss,translit}/`. Path references throughout this canon, scripts, validators, hooks, handoffs, and CLAUDE.md updated accordingly.
-
-**WHY:** the auto-apply tiers added pipeline complexity without adding capability. Their function was to auto-apply STRONG-tagged validator findings as a pre-editorial mechanical pass; that work can be done equivalently inside the editorial pass with the same Category A/B/C reasoning the canon already governs (§2 Mechanical-rule authority). `apply_v3.py` was a passthrough (empty `ADOPTED_VALIDATORS` — no Layer 3 validators had cleared the ≥80% adoption gate); `apply_v2.py` had two validators cleared, but their findings (~2 corrections per chapter on Jonah) sit on the editorial work queue without meaningful cost saving. The closed-list rule set (H1, H2, H5, H7, H11, H16) is not the mechanical-error surface that motivated mechanical-tier expansion in sibling projects (where ~10–12% error rates emerged from open-ended pattern-discovery passes); the canon's autonomy boundary already bounds the mechanical surface. Two tiers (baseline + editorial) are sufficient.
-
-**HOW WE KNOW:** the tier collapse was identified in the 2026-04-27 gating-architecture session as a carry-forward (session-notes pt2 carry-forwards: "Tier collapse v0-v4 → v0/v1/v2"), proposed by Claude on grounds of validator-adoption observability (apply_v3 had been a passthrough since inception) and accepted by Stan in principle. Executed as a comprehensive cleanup in the 2026-04-27 tier-collapse-cleanup session, with the file moves landing first (commit `3c6282a`), followed by the script/validator/path updates (commit `7303f28`), then the documentation propagation (this commit).
-
-**SCOPE:** removed scripts (`scripts/apply_v2.py`, `scripts/apply_v3.py`, `scripts/lib/apply_pipeline.py`, `scripts/lib/__init__.py`, empty `scripts/archive/`); removed reports (`data/reports/v2/`); moved Hebrew gold-standard and parallel-layer files from `v4/` to `v2/`; updated build cascade (`scripts/build_books.py`) from 4-tier to 2-tier; updated validator path constants (V4_DIR → V2_DIR; --v4 flag → --v2); updated pre-commit hook regex; updated all canon, handoff, README, and CLAUDE.md prose. Validator suite continues as before; STRONG-tagged findings now feed the editorial work queue directly. Decision-procedure semantics, three forces, four merge-overrides, structural justifications, autonomy boundary — all unchanged.
-
-**Audit dispatched:** stan-authorized comprehensive cleanup per parent-agent amplification (memory `feedback_purge_stale_framing_comprehensively.md` — methodological reframings must propagate through directory names, filenames, identifiers, scripts, comments, and prose). The amplification specified: "all the remnants and loose ends of our clean up should be enforced throughout."
-
-### 2026-04-27 — Carry-forwards from 2026-04-26 canon v1.0 write — closure
-
-The following carry-forwards listed in the 2026-04-26 §8 "Canon v1.0 written from scratch" entry are now complete:
-
-- **`data/syntax-reference/hebrew-break-legality.md` (file TODO)** — file created 2026-04-27; shape-capped table of Layer 1 break-legality rows populated with per-rule mapping (H1, H2, H7, H9, H11, H14, H15, H16 + other-above-surface rules). Status: populated and active; §4.1 references it correctly.
-- **`data/syntax-reference/teamim-inventory.md` (file TODO)** — file created 2026-04-27; 82 lines covering full prose and Sifrei Emet accent inventories with glyph/name/positional-function/prose-poetic-equivalence disambiguation. Factual errors from predecessor stub (tzinnor ≠ zarqa, mehuppakh-legarmeih, revia mugrash) corrected. §4.2 status updated from "TODO" to "populated."
-- **`scripts/parse_teamim.py` docstring framing** — docstring already carries correct Rule H8 evidence-not-authority framing as of the 2026-04-27 session (confirmed by inspection); the Rule H11 tifcha-as-servant mechanical adjustment carry-forward remains open (script behavior unchanged; editorial work queue absorbs the finding).
-- **Validator suite "planned, not yet built"** — validators are now built and active (four validators across `validators/syntax/` and `validators/colometry/`). §6 updated 2026-04-27 to reflect as-built reality.
-
-Remaining open carry-forward: Rule H11 parse_teamim.py mechanical adjustment (tifcha-as-servant behavior in the v1-he-baseline generator). This is an improvement-path item, not a correctness blocker — the editorial pass at v2/heb absorbs the finding.
-
-### 2026-04-28 — Rule H18 Clause-Nucleus Integrity adopted; te'amim-centric validator architecture rejected
-
-**What landed:**
-1. New Rule H18 (Verbless / Participial / Verb-PP-complement Clause-Nucleus Integrity) added to §3 and §5. Three sub-rules H18.1 / H18.2 / H18.3.
-2. §1 "The Te'amim Are Not a Structural Prior" extended with Validator-architecture corollary: validator triggers must be Hebrew morpho-syntactic, never te'amim-derived.
-3. §6 fixture set expanded by 8 chapters (Exod 15, Deut 32, Deut 33, Judg 5, 2 Sam 22, Hab 3, Lam 3, Pro 25) — closes embedded-poetry blind spot.
-4. Proposed `validate_tifcha_servant.py` (te'amim-centric architecture) was killed in design after Stan's discomfort flag and 6-agent hostile audit findings.
-
-**Why:** Stan flagged Genesis 1:1 and 1:2 as over-split; corpus survey confirmed pattern at scale (~1,533 strict candidates for verbless / participial; ~16,835 candidates for tifcha-servant signature). Initial proposal included a tifcha-servant validator triggering on the TIPHA glyph; Stan's discomfort with "overreliance on Masoretic punctuation cues for determining thought line breaks" surfaced the architectural problem: even framing a validator as "demoting te'amim by merging across them" operationally centers them as the primary signal. The validator-architecture corollary makes explicit what §1's te'amim demotion already implied.
-
-Hostile audit findings on the original tifcha-servant proposal: the canon's own H11 fixture (Jonah 1) DISCONFIRMED the proposal — 3 of 4 candidate sites in the gold-standard book were SPLIT by Stan's hand-edit decisions (1:4 *בַּיָּ֑ם*, 1:4 *לְהִשָּׁבֵֽר*, 1:5 *מֵֽעֲלֵיהֶ֑ם*). STRONG-MERGE auto-application would have inverted documented gold-standard.
-
-**HOW WE KNOW:** Six-agent parallel hostile audit dispatched 2026-04-28 (Opus, multi-dimensional): hostile audit on tifcha-servant + verbless-clause; Wickes / Yeivin grounding deep-dive; JM / WO grammar deep-dive; Sifrei Emet poetic-bicolon danger zone; cross-rule integrity. Verdicts adjudicated. Architectural choice (Option A new H18 vs. Option B extend M2) decided by cross-rule integrity audit's identification of Option B as closed-list smuggling per §2 scope diagnostic.
-
-**SCOPE:** H18 covers all books except Sifrei Emet routing + embedded-poetry list + acrostic chapters. Validator deployment is REVIEW-REQUIRED-only initially; promotion to STRONG-MERGE awaits at least one hand-edited Tanakh book beyond Jonah showing ≥80% editor-merge agreement on a specific subcase.
-
-**Audit dispatched:** six-agent parallel adversarial audit 2026-04-28; verdicts and design corrections cited above.
+---
 
 ### 2026-05-01 — ATU (atomic thought unit) terminology migration applied (parallel to GNT canon §10 same-date entry)
 
