@@ -1,0 +1,55 @@
+book	chapter	verse	classification	pattern	brief_rationale
+01-genesis	30	26	IMPROVEMENT	pronoun-object backward attachment	"served / thee" → "served thee" keeps verb+pronoun-object together
+01-genesis	30	35	IMPROVEMENT	prep-NP backward attachment (in it)	"some white / in it" → "some white in it" keeps prepositional phrase intact
+03-leviticus	5	13	REGRESSION	prep pulled away from NP complement (of these)	"in one / of these" → "in one of / these" splits "of" from "these"
+05-deuteronomy	9	26	REGRESSION	prep pulled away from NP complement (through thy greatness)	"redeemed / through thy greatness" → "redeemed through / thy greatness" splits "through" from its NP
+05-deuteronomy	13	1	IMPROVEMENT	pronoun-object backward attachment (you)	"command / you" → "command you" keeps verb+object together
+06-joshua	12	7	REGRESSION	prep+NP both pulled left, breaking subject NP	"smote / and the children of Israel on this side" → "smote on / and the children of Israel this side" — "on" pulled away from "this side", strands subject NP
+07-judges	6	9	REGRESSION	prep "of" pulled away from NP "the Egyptians"	"hand / of the Egyptians" → "hand of / the Egyptians" splits genitive "of" from its NP
+07-judges	15	8	REGRESSION	prep "with" pulled away from NP "a great slaughter"	"hip and thigh / with a great slaughter" → "hip and thigh with / a great slaughter" splits prep from NP
+09-1samuel	28	3	IMPROVEMENT	pronoun-object backward attachment (him)	"lamented / him" → "lamented him" keeps verb+pronoun-object together
+10-2samuel	5	24	IMPROVEMENT	pronoun-object backward attachment (thyself, thee)	"bestir / thyself" + "before / thee" both attach to verb/prep correctly
+10-2samuel	6	21	REGRESSION	pronoun "It" pulled forward incorrectly	"And David said unto Michal, / It was..." → "And David said unto Michal, It / was..." — "It" is subject of next clause, should not attach to previous line; this looks like a forward push not backward — actually re-reading: "It" was originally on L2 with "was before the LORD"; post-fix moves "It" to end of L1. This is a REGRESSION — "It" is sentence-initial subject pronoun, belongs with "was".
+11-1kings	9	6	REGRESSION	prep "from" pulled away from gerund-NP "following me"	"turn / from following me" → "turn from / following me" splits prep from its complement
+11-1kings	12	4	REGRESSION	"upon us" displaced into wrong clause	pre-fix had "upon us" misplaced; post-fix moves "upon us" with "his heavy yoke which he put" — actually re-reading carefully: post-fix correctly groups "his heavy yoke which he put upon us, and we will serve thee" together — this is an IMPROVEMENT in syntactic grouping. Mark as IMPROVEMENT.
+12-2kings	22	15	REGRESSION	prep+NP pulled too aggressively (unto them)	"she said / unto them" → "she said unto them, / Thus saith..." — moves "unto them" backward; but original L1 was just "And she said" — collapses speech-frame from 2 lines to 1. Loses ATU partition for speech-frame. Mark as NEUTRAL — common speech-frame collapse, neither clearly worse.
+12-2kings	6	6	IMPROVEMENT	pronoun-object backward attachment (it)	"cast / it in thither" → "cast it in thither" keeps verb+object+adverb together
+12-2kings	17	20	IMPROVEMENT	pronoun-object backward attachment (them)	"afflicted / them" → "afflicted them" keeps verb+object together
+12-2kings	19	16	IMPROVEMENT	pronoun-object backward attachment (him)	"sent / him" → "sent him" keeps verb+object together
+23-isaiah	16	11	REGRESSION	prep "for" pulled away from PN "Kir-haresh"	"mine inward parts / for Kir-haresh" → "mine inward parts for / Kir-haresh" splits prep from its NP; also breaks parallel "for Moab" / "for Kir-haresh"
+24-jeremiah	38	12	REGRESSION	mangled word order (Ebed-melech said / the Ethiopian)	pre-fix "Ebed-melech said / the Ethiopian unto Jeremiah" → post-fix "Ebed-melech said unto / the Ethiopian Jeremiah" — moves "unto" backward but adjacent words remain mis-aligned; both pre and post are mis-aligned but post is worse (combines "the Ethiopian Jeremiah")
+26-ezekiel	16	17	IMPROVEMENT	pronoun-object backward attachment (thee)	"given / thee" → "given thee" keeps verb+object together
+26-ezekiel	44	13	NEUTRAL	speech/clause boundary shift	rebalances clauses; both readings defensible
+29-joel	2	17	IMPROVEMENT	pronoun-object backward attachment (them)	"rule over / them" → "rule over them" keeps prep+pronoun-object together
+30-amos	6	14	REGRESSION	prep "against" pulled forward incorrectly	pre-fix has "I will raise up O house of Israel... / against you a nation" → post-fix "I will raise up against you O house of Israel... / a nation" — pulls "against you" out of the second clause where it belongs grammatically. Severe word-order corruption.
+30-amos	1	2	REGRESSION	prep "from" displaced from clause	pre-fix "will roar from Zion, from Jerusalem; / and utter his voice" → post-fix "will roar from Zion, Jerusalem; / and utter his voice from / and the habitations..." — strands "from" between two clauses, breaks parallelism
+30-amos	9	3	IMPROVEMENT	pronoun-object/adverb backward attachment (thence)	"take them out / thence" → "take them out thence" keeps adverb with verb
+31-obadiah	1	7	IMPROVEMENT	prep+pronoun backward attachment (against thee)	"prevailed / against thee" → "prevailed against thee" keeps verb+prep-phrase together
+31-obadiah	1	18	IMPROVEMENT	pronoun-object backward attachment (them)	"devour / them" → "devour them" keeps verb+object together
+31-obadiah	1	3	IMPROVEMENT	pronoun-object backward attachment (thee)	"deceived / thee" → "deceived thee" keeps verb+object together
+32-jonah	3	10	MIXED	prep-NP regression + prep+pronoun improvement	L1/L2: "turned / from their evil way" → "turned from / their evil way" REGRESSION (prep from NP); L4/L5: "do / unto them" → "do unto them" IMPROVEMENT. Net: REGRESSION because the "from"-prep split is more harmful than the "unto them" gain.
+32-jonah	1	11	IMPROVEMENT	prep+pronoun backward attachment (unto thee)	"do / unto thee" → "do unto thee" keeps verb+prep-phrase together
+33-micah	6	10	REGRESSION	prep "in" stranded in wrong clause	pre-fix "Are there in the house... / yet the treasures..." → post-fix "Are there the house... / yet the treasures of wickedness in / and the scant measure" — strands "in" at end of clause 2, breaks both clauses
+33-micah	5	12	IMPROVEMENT	prep+pronoun backward attachment (of thee)	"out of the midst / of thee" → "out of the midst of thee" keeps prep-NP intact
+36-zephaniah	1	11	REGRESSION	prep "for" pulled away from clause	"ye inhabitants of Maktesh, / for all the merchant..." → "ye inhabitants of Maktesh, for / all the merchant..." splits subordinator "for" from its clause
+36-zephaniah	1	15	REGRESSION	prep "of" stranded between clauses	pre-fix "That day of wrath, / is a day" → post-fix "That day wrath, / is a day of" — strands "of" awkwardly, breaks "day of wrath"
+36-zephaniah	2	14	REGRESSION	severe word-order corruption (lintels/of it/lodge/in)	pre-fix "in the upper lintels / shall lodge / of it" → post-fix "the upper lintels of it; / shall lodge in / their voice" — severely tangles three lines, splits "lodge in" from its NP
+36-zephaniah	3	17	IMPROVEMENT	prep+pronoun backward attachment (of thee)	"in the midst / of thee" → "in the midst of thee" keeps prep-NP intact
+38-zechariah	1	9	IMPROVEMENT	prep+pronoun backward attachment (unto me)	"said / unto me" → "said unto me" keeps verb+prep-phrase together
+39-malachi	3	22	REGRESSION	prep "with" pulled away from NP	"for all Israel, / with the statutes" → "for all Israel, with / the statutes" splits prep from its NP
+39-malachi	2	2	IMPROVEMENT	pronoun-object backward attachment (them)	"cursed / them already" → "cursed them / already" keeps verb+object together
+08-ruth	3	7	REGRESSION	prep "at" pulled away from NP	"to lie down / at the end of the heap" → "to lie down at / the end of the heap" splits prep from its NP
+08-ruth	1	10	NEUTRAL	speech-frame collapse	"they said / unto her" → "they said unto her,"; common speech-frame; neither clearly better/worse
+08-ruth	1	21	IMPROVEMENT	prep+pronoun backward attachment (against me)	"testified / against me" → "testified against me" keeps verb+prep-phrase together
+17-esther	1	18	REGRESSION	severe word-order corruption (unto/which)	"say this day / unto all the king's princes" → "say this day unto / all the king's princes" — splits "unto" from "all the king's princes" and the surrounding context shows mangling of "which have heard"
+27-daniel	4	13	IMPROVEMENT	prep+pronoun backward attachment (unto him)	"given / unto him" → "given unto him" keeps verb+prep-phrase together
+16-nehemiah	2	2	NEUTRAL	speech-frame collapse	"the king said / unto me" → "the king said unto me,"; common speech-frame; either acceptable
+14-2chronicles	5	11	REGRESSION	prep "of" pulled away from NP	"come out / of the holy place" → "come out of / the holy place" splits genitive-prep from its NP
+14-2chronicles	26	16	REGRESSION	prep "against" pulled away from NP	"transgressed / against the LORD" → "transgressed against / the LORD" splits prep from its NP (Divine Name)
+21-ecclesiastes	8	11	IMPROVEMENT	prep+pronoun backward attachment (in them)	"fully set / in them" → "fully set in them" keeps verb+prep-phrase together
+21-ecclesiastes	5	15	NEUTRAL	clause re-merging across em-dash	rebalances around "—"; both defensible
+18-job	27	12	IMPROVEMENT	pronoun-object backward attachment (it)	"seen / it" → "seen it" keeps verb+object together
+22-songofsongs	5	8	NEUTRAL	speech-frame shift (charge you)	"I charge / you" → "I charge you," — verb+object together is good, but "O daughters of Jerusalem" vocative now stands alone; net neutral
+22-songofsongs	8	11	REGRESSION	prep "unto" pulled away from NP "keepers"	"vineyard / unto keepers" → "vineyard unto / keepers" splits prep from NP
+22-songofsongs	8	2	IMPROVEMENT	pronoun-object backward attachment (me)	"instruct / me" → "instruct me" keeps verb+object together
+25-lamentations	3	57	IMPROVEMENT	prep+pronoun backward attachment (upon thee)	"called / upon thee" → "called upon thee" keeps verb+prep-phrase together

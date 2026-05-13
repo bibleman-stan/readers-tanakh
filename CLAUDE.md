@@ -54,9 +54,21 @@ When Stan names a verse with a specific desired partition: line 1 = "Got it — 
 
 Same FP class in 2+ specs OR 2+ validators in one session = engine-level fix at `validators/_shared/spec_runner.py` / `validators/_shared/*` / `scripts/apply_*.py`. Per-spec/per-validator guard the second time = whack-a-mole. Stan's mantra: *swat the bug class, not the instance.*
 
+### Use the primitive, not the heuristic
+
+Before any engine change touching syntactic/morphological structure (KJV-distribution, English-layer, validator logic, 4-layer integrity), FIRST ask: **what mechanical primitive already addresses this?**
+
+- **Macula Hebrew lowfat IR** (`research/macula-hebrew/WLC/lowfat/`, wrapped at `validators/_shared/macula_constituents.py`) — constituent trees + role labels + frame-args + clause membership. **The syntactic primitive for any Hebrew-side or Hebrew-derived question.** If a problem can be answered by querying constituent membership, clause boundaries, or role labels, USE Macula. Do NOT reach for surface-form heuristics (regex on KJV English, closed-list word matching, vpos-distance heuristics) until you've explicitly ruled out the Macula query.
+- **Existing validators** (`validators/syntax/`, `validators/colometry/`, `validators/4-layer-integrity/`) — extend before creating new.
+- **TAHOT Strong's anchors** + **MetaV per-KJV-word Strong's** — the deterministic mapping for KJV-to-Hebrew alignment (where MetaV has tags).
+
+If you find yourself iterating an engine heuristic across multiple revert/re-apply cycles, **STOP — the wrong primitive is being used.** Heuristic iteration ≠ progress. Identify the proper primitive (usually Macula) and pivot. Past failure: Exo 2:6 KJV-distribution (2026-05-12) — 4 distribute.py iterations + 3 corpus cascades + 5 audit waves chasing closed-list heuristics when Macula constituent membership was the right primitive from the start.
+
 ### Adversarial-audit discipline (pre-implementation)
 
 Before non-trivial implementation (new validator with classification logic, new spec, new shared helper, new mechanism, new canon rule, **OR ANY edit to `atu-method/atu_method/*` cross-corpus shared infrastructure**), FIRST tool call must be ≥2 parallel Agent adversarial dispatches in one message OR `Audit-skippable: <named-trivial-class>`. The cascade-iteration `engine-tried` bypass is NEVER legitimate when the engine edit itself is the unaudited change.
+
+**Build the regression-test fixture BEFORE the engine change**, not after. The fixture (sample N corpus instances, capture pre-change state as baseline, define expected-improvement set) is the FIRST move on any engine-touching investigation. Engine change without a baseline-diff to verify against = unsafe corpus-wide cascade. Past failure: 2026-05-12 distribute.py — built `verify_kjv_distribution.py` only after iteration 3, by which point 2 cascades had already burned + reverted.
 
 Pre-commit on canon-touching commits: include `Audit-skippable per §7 ([reason])` OR `Audit dispatched: [evidence]`. When uncertain, dispatch.
 
