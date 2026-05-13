@@ -590,6 +590,8 @@ File: [`data/syntax-reference/teamim-inventory.md`](../../data/syntax-reference/
 
 *Purpose: **mainly operational** — full rule detail for rules H1–H18. Reference when a §3 table entry is insufficient.*
 
+**Reference-grammar substrate.** Each rule's YAML footer carries a `references:` line citing Waltke-O'Connor 1990 (*An Introduction to Biblical Hebrew Syntax*, Eisenbrauns; cited `WO §N.M.K`) section(s) that ground the rule. The full text of W&O is stored as per-chapter files at [`../05-resources/waltke-1990/`](../05-resources/waltke-1990/) (gitignored — copyright; see that directory's README for navigation). Citation convention per Stan-directive 2026-05-13: any rule revision or new rule creation that draws on Waltke MUST cite him at the YAML `references:` line plus a brief note in WHY/HOW WE KNOW prose. Citing the reference-grammar substrate strengthens defensibility and aligns with scholarly practice.
+
 Each rule below follows the template:
 - **Grammatical basis** — the Hebrew syntactic / orthographic / Masoretic fact
 - **Trigger** — the mechanical signal
@@ -703,6 +705,7 @@ detectors:
 closed_lists: none (single-glyph trigger)
 fixture: Gen 1:1 (וְאֵת־הָאָרֶץ — maqqef-bound DO marker)
 cross_corpus: none direct (maqqef is Hebrew-only orthography; BoFM/GNT have no analog)
+references: n/a (Layer 1 orthography — W&O does not address maqqef as separable colometric topic; treatment is generic Hebrew syntax)
 ```
 
 ### Rule H2 — Construct Chain Default
@@ -730,6 +733,7 @@ detectors:
 closed_lists: none (morphological trigger; bound-state is morphology-derived)
 fixture: Jonah 2:1 (מִמְּעֵי הַדָּגָה — non-maqqef construct chain)
 cross_corpus: BoFM Rule 6 fixed-phrase / GNT R6 fixed-phrase (analogous bound-NP integrity)
+references: WO §9.3 (construct state), §9.5 (12+ genitive species: subjective/objective/attributive/epexegetical/partitive/measure/class/superlative), §9.3d (broken construct chains: intervening directional-he, enclitic mem, prepositions, suffixes)
 ```
 
 ### Rule H3 — Vav-Consecutive Clause-Head Policy
@@ -760,6 +764,7 @@ closed_lists:
   - BONDED_LEMMA_PAIRS (curated wayyiqtol pair lexicon at data/syntax-reference/bonded-lemma-pairs.txt)
 fixture: Gen 1:5 (וַיִּקְרָא ... וַיְהִי-עֶרֶב — formula closure pair); Exo 2:6 (6-line restructure per H3+H14+H5b)
 cross_corpus: GNT R9 subordinate-clause-introduction (analogous default own-line policy for clause heads)
+references: WO §33.1.1c (wayyqtl frequency: 14,972 cases = 29% of finite verbs — empirical backbone for default-split), §33.1.2g (dual nature: perfective aspect + subordination), §33.2.1 (succession taxonomy: chronological / logical entailment / logical contrast / summary), §33.2.2 (epexegesis — informs hendiadic merge sub-class), §33.2.3 (pluperfect)
 ```
 
 ### Rule H4 — Vocative Handling
@@ -793,6 +798,7 @@ closed_lists:
   - REPEATED_VOCATIVE_PAIRS (אַבְרָהָם אַבְרָהָם / מֹשֶׁה מֹשֶׁה / שְׁמוּאֵל שְׁמוּאֵל — stay together as one speech act)
 fixture: Gen 22:11 (אַבְרָהָם אַבְרָהָם), Exo 3:4 (מֹשֶׁה מֹשֶׁה)
 cross_corpus: BoFM Rule 18 vocative / GNT R18 vocative (three-way refined treatment)
+references: WO §4.7 (Nominative Absolute and Vocative — vocative as syntactically distinct from clause core)
 ```
 
 ### Rule H5 — Direct-Speech Framing Default
@@ -828,6 +834,7 @@ closed_lists:
   - SOLEMNITY_PREFIXES (כֹּה אָמַר יְהוָה / נְאֻם־יְהוָה — formulaic frames)
 fixture: Jonah 1:1 (long-frame split), Jonah 1:6/1:9 (short-frame split — short-framing-default retired)
 cross_corpus: BoFM Rule 11 / GNT R11 direct-speech-introduction
+references: WO §36.2.3 (Infinitive Construct with preposition ל — the לֵאמֹר frame as complementizer marking speech-onset), §36.2.1 (syntactic features of nominal-use infinitive construct)
 ```
 
 ### Rule H5b — Speech-Act Announcement Default
@@ -875,6 +882,7 @@ closed_lists:
   - SPEECH_ACT_VERBS (subset of SPEECH_FRAME_VERBS — finite forms only, all stems including imperative/jussive)
 fixture: Jonah 1:6 (וַיֹּאמֶר לוֹ // מַה־לְּךָ — split per H5b default)
 cross_corpus: GNT R28-ext speech-act-announcement (this is the Tanakh codification of the analogous rule)
+references: WO §34.3 (Uses of the Jussive — speech-act subtypes), §34.5.1 (Cohortative in Independent Clauses), §34.2 (Form: imperative/jussive/cohortative paradigm)
 ```
 
 ### Rule H6 — Ketiv/Qere Policy
@@ -930,6 +938,7 @@ closed_lists:
   - QERE_REGISTRY (per-verse K/Q pairs — derived from TAHOT col-2 markers, not maintained as canon list)
 fixture: Gen 49:11 (Ketiv עירה / Qere עִירוֹ); Jer 31:38 (Ketiv בָּאִים / Qere)
 cross_corpus: none direct (NT has no equivalent textual-tradition apparatus); BoFM has 2026/2020-edition variants but mechanism differs
+references: n/a (textual-tradition policy — Ketiv/Qere apparatus is a Masoretic editorial convention, not a syntactic rule W&O addresses)
 ```
 
 ### Rule H7 — Complement Integrity (Hebrew)
@@ -970,6 +979,7 @@ closed_lists:
   - CAUSAL_KI_CONTEXTS (כִּי as causal subordinator vs. כִּי as recitative/asseverative)
 fixture: Gen 12:11 (יָדַעְתִּי כִּי / Hb merge); Jer 31:34 (יָדְעוּ אוֹתִי)
 cross_corpus: BoFM Rule 17 / GNT R8 framing-devices (analogous verb-complement integrity)
+references: WO §10.2.1 (Accusative-object taxonomy: direct/effected/internal/complement — H7 currently flattens these), §10.2.3 (Double Accusatives — relevant to verbs like נתן with recipient + thing-given), §11.4 (verbs governing accusative OR prepositional object with no semantic difference — צוה, ידע, הרג, ארך Hiphil)
 ```
 
 ### Rule H8 — RETIRED 2026-05-05
@@ -1009,6 +1019,7 @@ closed_lists:
   - INTRODUCING_FORMULAE (oath formulas, doxology openers, prophetic-attribution formulas)
 fixture: Gen 14:18 (אֵל עֶלְיוֹן introducing); Ps 23:1 (יְהוָה referencing)
 cross_corpus: GNT divine-title-handling (Tanakh-specific elaboration; GNT canon doesn't have a numbered analog)
+references: WO §12.3 (Apposition: identification vs class — directly grounds H9's INTRODUCING formal anchor / REFERENCING flow distinction), §12.3f (particle repetition: relevant to oath-formula chains like לְאַבְרָהָם לְיִצְחָק)
 ```
 
 ### Rule H10 — Cross-Verse Continuity Merge
@@ -1038,6 +1049,7 @@ detectors:
 closed_lists: none (structural rule)
 fixture: Gen 1:1-2 (no merge); Hos 4:14-15 (cross-verse continuation candidate)
 cross_corpus: BoFM Rule 14 cross-verse / GNT R3.17 cross-verse-continuity-merge
+references: WO §38.8 (Constituent Noun Clauses — clause-level continuation), §39.2.2 (Conjunctive-sequential Waw)
 ```
 
 ### Rule H11 — RETIRED 2026-05-05
@@ -1069,6 +1081,7 @@ detectors: (no validator — build-time rendering in scripts/build_books.py)
 closed_lists: none (single-marker trigger)
 fixture: Gen 1:1 (petucha at v.1 close); Lev 8:1 (petucha)
 cross_corpus: NT has no chapter-internal paragraph markers; BoFM has chapter-only
+references: n/a (Petucha/setuma are pre-Masoretic paragraph markers, not syntactic features; W&O does not address as separate topic)
 ```
 
 ### Rule H13 — Special Letters
@@ -1100,6 +1113,7 @@ closed_lists:
   - LARGE_LETTERS / SMALL_LETTERS (Gen 1:1 בְ; Lev 1:1 א)
 fixture: Judg 18:30; Num 10:35-36
 cross_corpus: none
+references: n/a (scribal-apparatus preservation; not a syntactic rule)
 ```
 
 ### Rule H14 — Discourse Particles
@@ -1134,6 +1148,7 @@ closed_lists:
   - VOCATIVE_CLUSTER_PEERS (when both H4 vocative + H14 particle are sentence-initial → cluster as one frame)
 fixture: Exo 2:6 (וְהִנֵּה־נַעַר בֹּכֶה — own-line per H14); Gen 22:1 (הִנֵּנִי frame)
 cross_corpus: BoFM Rule 8 framing-devices / GNT R8 framing-devices
+references: WO §39.3.1 (Adverbs in General), §39.3.2 (Clausal and Item Adverbs — frame-positioning vs item-modifying distinction), §39.3.4 (Emphatic Adverbs)
 ```
 
 ### Rule H15 — Casus Pendens / Left-Dislocation
@@ -1156,6 +1171,7 @@ detectors: covered in validators/colometry/validate_clause_nucleus_split.py (H15
 closed_lists: none (structural rule via Macula constituent boundaries)
 fixture: Gen 17:14 (וְעָרֵל זָכָר ... וְנִכְרְתָה — left-dislocated topic + resumptive)
 cross_corpus: GNT R28 textual-asymmetry / BoFM Rule 22 left-dislocation
+references: WO §4.7 (Nominative Absolute = casus pendens — same construction), §16 (Personal Pronouns — resumptive-pronoun feature is the H15 trigger)
 ```
 
 ### Rule H16 — FEF Wayehi Protasis
@@ -1183,6 +1199,7 @@ closed_lists:
   - PROTASIS_CONNECTORS (כַּאֲשֶׁר / כִּי / בְּ + infinitive / b-temporal)
 fixture: Jonah 1:1 (וַיְהִי דְבַר־יְהוָה); Gen 22:1 (וַיְהִי אַחַר הַדְּבָרִים הָאֵלֶּה)
 cross_corpus: GNT R3.14a hoste-binding / BoFM Rule 14 it-came-to-pass-clause (analogous front-end-frame pattern)
+references: WO §33.2.4 (Waw-Relative After Circumstantial Phrases and Clauses — the FEF wayehi protasis pattern), §38.7 (Temporal Clauses — circumstantial frame as subordinate)
 ```
 
 ### Rule H17 — Genealogy / List-Formula Handling
@@ -1208,6 +1225,7 @@ closed_lists:
   - LIST_FORMULA_PEERS (curse-series אָרוּר / blessing-series בָּרוּךְ / beatitude אַשְׁרֵי)
 fixture: Gen 5 (full genealogy); Deut 27:15-26 (curse-series)
 cross_corpus: BoFM Rule 21 genealogy / GNT R12-R14 parallel-stacking
+references: WO §39 (Coordination — parallel-list patterns at §39.2 Waw conjunctions), §39.2.5 (Conjunctive Waw — list-uniform handling)
 ```
 
 ### Rule H18 — Clause-Nucleus Integrity (Verbless / Participial / Verb-PP-Complement)
@@ -1270,6 +1288,7 @@ closed_lists:
   - EMBEDDED_POETRY_CHAPTERS (Exo 15 / Deut 32 / Deut 33 / Judg 5 / 1 Sam 2:1-10 / 2 Sam 22 / Isa 12 / Hab 3 / Lam / Song)
 fixture: Deut 33:26 (NP // bare-participle MUST NOT merge); Lam 3:25 (verbless + prep MUST NOT merge); Pro 25:11 (Sifrei Emet hard-skip)
 cross_corpus: BoFM Rule 17 complement-integrity / GNT M1 Gorgianic + M2 verb-object-bond (verbless-clause analog)
+references: WO §8.4.1 (Clauses of Identification: S-Pred order), §8.4.2 (Clauses of Classification: Pred-S order — predicate-type rules: numerals/adverbs/PPs neutralize), §37.6 (Predicate Use of Participles — participle as clause nucleus), §37.7 (Participles in Association with Finite Verbs)
 ```
 
 ## §6 Validator Suite
