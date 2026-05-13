@@ -406,6 +406,29 @@ def scan_book(book_slug: str, out_rows: list[str]) -> dict:
                 # Find leaf clauses with heads on this line
                 clauses_here = _clauses_with_heads_in(vclauses, matched)
                 if len(clauses_here) < 2:
+                    # Macula didn't surface ≥2 leaf clauses but TAHOT morph
+                    # shows ≥2 finite verbs (the `len(fv) < 2` check above
+                    # already passed). Macula's tree may have lumped the
+                    # propositions into one clause node. Surface as
+                    # REVIEW-REQUIRED so the class boundary case (Gen 1:5
+                    # exemplar — qatal + wayyiqtol on one cola; Macula
+                    # tree merged them) doesn't silently pass.
+                    fv_lemmas = " / ".join(f"{t.lemma}({_verb_aspect(t)})" for t in fv[:2])
+                    stats["candidates"] += 1
+                    stats["review"] += 1
+                    kvl_local = kjv_lines_by_verse.get(verse, [])
+                    kjv_at_idx_local = kvl_local[verse_line_idx] if verse_line_idx < len(kvl_local) else ""
+                    out_rows.append("\t".join([
+                        book_slug, str(ch_num), str(verse), str(verse_line_idx),
+                        hebrew_line.strip(),
+                        kjv_at_idx_local,
+                        "REVIEW-REQUIRED",
+                        "macula-undercount-fv-fallback",
+                        fv[0].lemma if fv[0].lemma else "?",
+                        _verb_aspect(fv[0]) if fv[0] else "?",
+                        fv[1].lemma if len(fv) > 1 and fv[1].lemma else "?",
+                        _verb_aspect(fv[1]) if len(fv) > 1 else "?",
+                    ]))
                     continue
 
                 severity, trace = _suppressor_cascade(matched, clauses_here)
