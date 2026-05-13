@@ -3,7 +3,7 @@ build_books.py - Generate three-layer HTML book fragments from tier sources.
 
 Per-chapter source preference (independent for each layer; falls through):
 
-  Hebrew:       v2/he/             > v1/he-baseline/
+  Hebrew:       v2/heb/             > v1/he-baseline/
   Interlinear:  v2/eng-interlinear/ > v1/eng-interlinear/
   KJV English:  v2/eng-kjv/         (no v1 fallback — Wave 6-OT substrate)
   Translit:     v2/translit/        > v1/translit/
@@ -58,7 +58,7 @@ REPO_ROOT = os.path.dirname(SCRIPT_DIR)
 # demand for the kjv build path only; legacy path imports nothing).
 ATU_METHOD_ROOT = os.path.normpath(os.path.join(REPO_ROOT, "..", "atu-method"))
 
-V2_HE_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v2", "he")
+V2_HEB_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v2", "heb")
 V1_HE_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v1", "he-baseline")
 
 INTER_V2_DIR = os.path.join(REPO_ROOT, "data", "text-files", "v2", "eng-interlinear")
@@ -340,9 +340,9 @@ def build_book(book_key, skip_missing=False):
 
     # Discover chapters by Hebrew layer (Hebrew is required). Cascade
     # picks the most-refined available tier per chapter independently.
-    v2_he_dir = os.path.join(V2_HE_DIR, sub)
+    v2_heb_dir = os.path.join(V2_HEB_DIR, sub)
     v1_he_dir = os.path.join(V1_HE_DIR, sub)
-    v2_he_files = _files_in(v2_he_dir, prefix)
+    v2_he_files = _files_in(v2_heb_dir, prefix)
     v1_he_files = _files_in(v1_he_dir, prefix)
     all_files = sorted(v2_he_files | v1_he_files)
 
@@ -398,7 +398,7 @@ def build_book(book_key, skip_missing=False):
     for fn in all_files:
         # Hebrew (required). Cascade through tiers in canonical order.
         if fn in v2_he_files:
-            he_path, he_source = os.path.join(v2_he_dir, fn), "v2-he"
+            he_path, he_source = os.path.join(v2_heb_dir, fn), "v2-heb"
             counts["he_v2"] += 1
         else:
             he_path, he_source = os.path.join(v1_he_dir, fn), "v1-he-baseline"

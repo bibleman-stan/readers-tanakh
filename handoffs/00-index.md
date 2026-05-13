@@ -61,7 +61,7 @@ Decisions locked in this session:
 
 **2026-04-26 update:** `data/text-files/` restructured into per-tier subfolders (v0/, v1/, v2/, v3/, v4/). Tier-name identity strings (v1-he-baseline, v2-he-syntax, etc.) unchanged; only filesystem layout. Path references in this doc updated to the new layout.
 
-**2026-04-27 update:** Tier collapse — both 2026-04-26 multi-tier updates above are superseded. The auto-apply tiers (v2-he-syntax via apply_v2, v3-he-colometry via apply_v3) are retired; the editorial gold standard moves from `v4/editorial/` to `v2/he/`; the parallel per-word layers move from `v4/{eng-interlinear,eng-gloss,translit}/` to `v2/{eng-interlinear,eng-gloss,translit}/`. Pipeline is now **v0 → v1 → v2** (3 tiers). STRONG-tagged validator findings feed the editorial work queue directly per canon §2 Mechanical-rule authority. See canon §8 entry 2026-04-27 + `03-architecture.md` + `04-editorial-workflow.md` for full updates.
+**2026-04-27 update:** Tier collapse — both 2026-04-26 multi-tier updates above are superseded. The auto-apply tiers (v2-he-syntax via apply_v2, v3-he-colometry via apply_v3) are retired; the editorial gold standard moves from `v4/editorial/` to `v2/heb/`; the parallel per-word layers move from `v4/{eng-interlinear,eng-gloss,translit}/` to `v2/{eng-interlinear,eng-gloss,translit}/`. Pipeline is now **v0 → v1 → v2** (3 tiers). STRONG-tagged validator findings feed the editorial work queue directly per canon §2 Mechanical-rule authority. See canon §8 entry 2026-04-27 + `03-architecture.md` + `04-editorial-workflow.md` for full updates.
 
 ---
 

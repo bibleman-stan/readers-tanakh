@@ -48,7 +48,7 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 REPO_ROOT = SCRIPT_DIR.parent
 
 VALIDATORS_DIR = REPO_ROOT / "validators"
-V2_HE_DIR = REPO_ROOT / "data" / "text-files" / "v2" / "he"
+V2_HEB_DIR = REPO_ROOT / "data" / "text-files"  / "v2" / "heb"
 V2_ENG_DIR = REPO_ROOT / "data" / "text-files" / "v2" / "eng-kjv"
 V4_DIR = REPO_ROOT / "data" / "text-files" / "v4" / "editorial"
 
@@ -65,16 +65,16 @@ def _slug_from_dir(d: str) -> str:
 
 
 # ---------------------------------------------------------------------------
-# Discover available book directories in v2/he (the primary scored tier)
+# Discover available book directories in v2/heb (the primary scored tier)
 # ---------------------------------------------------------------------------
 def discover_books() -> list[tuple[str, Path]]:
-    """Return [(dir_name, dir_path)] for all book directories present in v2/he,
+    """Return [(dir_name, dir_path)] for all book directories present in v2/heb,
     sorted by directory name (which includes the canonical BHS numeric prefix)."""
-    if not V2_HE_DIR.exists():
+    if not V2_HEB_DIR.exists():
         return []
     result = []
     seen_slugs: set[str] = set()
-    for d in sorted(V2_HE_DIR.iterdir()):
+    for d in sorted(V2_HEB_DIR.iterdir()):
         if d.is_dir():
             slug = _slug_from_dir(d.name)
             if slug in seen_slugs:
@@ -96,7 +96,7 @@ def find_book_dir(book_slug: str) -> tuple[str, Path] | None:
 
 
 # ---------------------------------------------------------------------------
-# Cola counting from v2/he text files
+# Cola counting from v2/heb text files
 # ---------------------------------------------------------------------------
 _VERSE_REF_RE = re.compile(r"^\d+:\d+[a-z]?$")
 
@@ -486,7 +486,7 @@ def render_markdown(
     lines.append(f"# Quality Scorecard — {book_slug.capitalize()}")
     lines.append(f"")
     lines.append(f"Generated: {timestamp}")
-    lines.append(f"Tier: v2/he (scored tier)")
+    lines.append(f"Tier: v2/heb (scored tier)")
     lines.append(f"")
 
     # ── Overview ──────────────────────────────────────────────────────────
@@ -662,7 +662,7 @@ def run_scorecard(book_slug: str, verbose: bool = True) -> dict:
     """
     result = find_book_dir(book_slug)
     if result is None:
-        print(f"ERROR: No v2/he directory found for book '{book_slug}'.", file=sys.stderr)
+        print(f"ERROR: No v2/heb directory found for book '{book_slug}'.", file=sys.stderr)
         sys.exit(2)
 
     dir_name, dir_path = result
@@ -769,7 +769,7 @@ def main() -> int:
     mode.add_argument(
         "--all-books",
         action="store_true",
-        help="Score all books with v2/he data present.",
+        help="Score all books with v2/heb data present.",
     )
     ap.add_argument(
         "--output",
@@ -791,11 +791,11 @@ def main() -> int:
     if args.book:
         books_to_score = [args.book]
     else:
-        # --all-books: discover all books present in v2/he
+        # --all-books: discover all books present in v2/heb
         discovered = discover_books()
         if not discovered:
             print(
-                f"ERROR: No book directories found under {V2_HE_DIR}",
+                f"ERROR: No book directories found under {V2_HEB_DIR}",
                 file=sys.stderr,
             )
             return 2

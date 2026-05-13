@@ -1,5 +1,5 @@
 """
-parse_teamim.py - Te'amim-driven baseline cola generator (starting draft for v2/he editorial).
+parse_teamim.py - Te'amim-driven baseline cola generator (starting draft for v2/heb editorial).
 
 Reads v0-prose Hebrew + v0-eng-baseline English + v0-translit-baseline
 translit in lockstep. Splits at te'amim cola boundaries derived from the
@@ -22,7 +22,7 @@ draft for editorial refinement:
 METHODOLOGICAL NOTE: The te'amim (cantillation accents) are EVIDENCE of the
 Masoretic tradition's structural understanding, not authority for line-break
 decisions. v1-he-baseline is the editor's starting draft (seeded by te'amim
-parsing); v2/he (editorial) freely adds, removes, or merges line breaks relative
+parsing); v2/heb (editorial) freely adds, removes, or merges line breaks relative
 to this baseline per the colometry canon's atomic-thought and Hebrew-syntax criteria.
 See private/01-method/colometry-canon.md §1 "The Te'amim Are Not a Structural
 Prior" and Rule H8 "Te'amim as Evidence" for canonical framing.
@@ -53,7 +53,7 @@ MAQQEF = "־"
 
 # Tier-1/2 disjunctives — prose (21 books).
 # NOTE: These are draft-generation heuristics for the v1-he-baseline starting
-# draft, not canon commitments. v2/he (editorial) applies the colometry canon
+# draft, not canon commitments. v2/heb (editorial) applies the colometry canon
 # to refine breaks relative to this v1 output.
 PROSE_BREAKERS = {
     "֑",  # ETNAHTA
@@ -776,7 +776,7 @@ def parse_chapter(he_in, en_in, tr_in,
             mismatch_count += 1
 
         # Cola boundaries (v1-he-baseline starting draft) are at PROSODIC-word level.
-        # Te'amim sit on prosodic units; v2/he editorial refines these baseline breaks
+        # Te'amim sit on prosodic units; v2/heb editorial refines these baseline breaks
         # per the colometry canon's atomic-thought and syntax criteria.
         boundaries = compute_cola_boundaries(he_pwords, breakers)
 

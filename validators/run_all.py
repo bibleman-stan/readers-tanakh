@@ -4,7 +4,7 @@
 run_all.py — Tanakh Reader colometry audit dashboard.
 
 Discovers every `validate_*.py` under `validators/syntax/` and
-`validators/colometry/`, runs each against the v2/he editorial corpus
+`validators/colometry/`, runs each against the v2/heb editorial corpus
 (in JSON mode), aggregates per-validator finding counts, prints a
 unified dashboard.
 

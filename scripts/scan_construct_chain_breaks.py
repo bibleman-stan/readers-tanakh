@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Corpus scanner — cross-line construct-chain breaks in v2/he.
+Corpus scanner — cross-line construct-chain breaks in v2/heb.
 
 Three pattern classes:
 
@@ -33,7 +33,7 @@ import sys
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-V2_DIR = REPO_ROOT / "data" / "text-files" / "v2" / "he"
+V2_DIR = REPO_ROOT / "data" / "text-files"  / "v2" / "heb"
 OUT_DIR = REPO_ROOT / "private" / "03-sessions" / "2026-04-30-wave6-saturation-audit"
 OUT_FILE = OUT_DIR / "construct-chain-findings.csv"
 

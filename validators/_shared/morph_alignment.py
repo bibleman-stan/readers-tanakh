@@ -1,4 +1,4 @@
-"""morph_alignment.py - Map v2/he (or v1/he-baseline) tokens to TAHOT morph tags.
+"""morph_alignment.py - Map v2/heb (or v1/he-baseline) tokens to TAHOT morph tags.
 
 The v0/morph layer (one tag per orthographic word, " | " separated, one
 verse per file-line) is anchored to TAHOT's word inventory. The v1/v2
@@ -84,7 +84,7 @@ def _morph_path_for(he_chapter_path: Path) -> Optional[Path]:
     """Compute v0/morph path from a v1/v2 he-chapter path.
 
     Conventions:
-      data/text-files/v2/he/<book>/<book>-NN.txt
+      data/text-files/v2/heb/<book>/<book>-NN.txt
         → data/text-files/v0/morph/<book>/<book>-NN.txt
       data/text-files/v1/he-baseline/<book>/<book>-NN.txt
         → same destination
@@ -97,7 +97,7 @@ def _morph_path_for(he_chapter_path: Path) -> Optional[Path]:
         return None
     if i + 2 >= len(parts):
         return None
-    # parts[i+1] = "v0"|"v1"|"v2", parts[i+2] = layer ("he"/"he-baseline"/"prose"/"morph"/...)
+    # parts[i+1] = "v0"|"v1"|"v2", parts[i+2] = layer ("heb"/"he-baseline"/"prose"/"morph"/...)
     book_and_file = parts[i + 3 :]
     if not book_and_file:
         return None

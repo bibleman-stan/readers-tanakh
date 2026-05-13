@@ -83,11 +83,11 @@ import sys
 from pathlib import Path
 
 # ---------------------------------------------------------------------------
-# Path constants — two-tier layout: v1/he-baseline + v2/he
+# Path constants — two-tier layout: v1/he-baseline + v2/heb
 # ---------------------------------------------------------------------------
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 V1_DIR = REPO_ROOT / "data" / "text-files" / "v1" / "he-baseline"
-V2_DIR = REPO_ROOT / "data" / "text-files" / "v2" / "he"
+V2_DIR = REPO_ROOT / "data" / "text-files"  / "v2" / "heb"
 
 # Make _shared importable when this script is run as __main__.
 sys.path.insert(0, str(REPO_ROOT / "validators"))
@@ -1461,19 +1461,19 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
     parser.add_argument("--book", metavar="BOOK", help="Restrict to one book.")
-    parser.add_argument("--v2", action="store_true", help="Scan v2/he (default if v1 missing).")
+    parser.add_argument("--v2", action="store_true", help="Scan v2/heb (default if v1 missing).")
     parser.add_argument("--verbose", "-v", action="store_true", help="Show context.")
     parser.add_argument("--json", action="store_true", help="Emit JSON document.")
     args = parser.parse_args()
 
     base_dir = V2_DIR if args.v2 else V1_DIR
-    tier_label = "v2/he" if args.v2 else "v1/he-baseline"
+    tier_label = "v2/heb" if args.v2 else "v1/he-baseline"
     if not base_dir.exists():
         # Fall back to the other tier rather than failing — v1 may be absent.
         alt = V2_DIR if not args.v2 else V1_DIR
         if alt.exists():
             base_dir = alt
-            tier_label = "v2/he" if alt is V2_DIR else "v1/he-baseline"
+            tier_label = "v2/heb" if alt is V2_DIR else "v1/he-baseline"
         else:
             print(f"ERROR: neither {V1_DIR} nor {V2_DIR} found.", file=sys.stderr)
             sys.exit(2)

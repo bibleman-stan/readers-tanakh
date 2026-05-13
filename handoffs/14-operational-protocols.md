@@ -120,7 +120,7 @@ Distinct from Step 0 (audit BEFORE building). Step 0 evaluates candidates; Step 
 2. Every merge spec MUST carry the post-split-block guard trio: `next_line_is_vav_coord_pp` / `next_line_is_vav_coord_np` / `next_line_is_wayyiqtol` (see canon §2 plus the 2026-04-30 oscillation-runaway lesson). Without these, S1/S2/S3 splits → merge → split oscillation can occur.
 3. After any spec change, re-run the cascade to convergence; verify max-passes stays well under MAX_PASSES=25
 4. **Test on gold standard chapters before corpus-wide rollout.** For Tanakh Reader, the gold standards are:
-   - **Jonah 1** — only v2/he chapter hand-edited start to finish; primary regression baseline
+   - **Jonah 1** — only v2/heb chapter hand-edited start to finish; primary regression baseline
    - **Genesis 1** — creation account, dense parallelism + repetition, exercises wayyiqtol/refrain handling
    - **Deuteronomy 6:4-9** — Shema, classic vocative + relative chain
    - **Psalm 1** — short Sifrei Emet chapter, exercises poetic_register guards
@@ -306,10 +306,10 @@ The TAHOT morph tag layer (`v0/morph/`, persisted 2026-04-30 in commit b4d90ebe1
 
 ## F. Pre-Commit Checklist
 
-Before committing source text or v2/he changes:
+Before committing source text or v2/heb changes:
 
 1. ☐ All files saved and verified on disk (run `git diff --shortstat` to confirm scope)
-2. ☐ Cascade pipeline ran cleanly (`scripts/refresh_book.py --book <book> --build` or `--all-books`); the pre-commit hook will re-run if v2/he is staged
+2. ☐ Cascade pipeline ran cleanly (`scripts/refresh_book.py --book <book> --build` or `--all-books`); the pre-commit hook will re-run if v2/heb is staged
 3. ☐ Spot-check the build output for obvious damage (sense-line view of one affected verse from the gold standards)
 4. ☐ Validator regression gate clean (`validators/run_all.py --baseline-check`); the pre-commit hook runs this
 5. ☐ Commit message explains WHY, not just WHAT (D3)

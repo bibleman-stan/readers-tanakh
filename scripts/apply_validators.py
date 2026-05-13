@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-apply_validators.py — Single orchestrator for v1/he-baseline → v2/he pipeline.
+apply_validators.py — Single orchestrator for v1/he-baseline → v2/heb pipeline.
 
 Runs adopted validators, filters to STRONG findings per the adopted tag-set,
-applies mechanical mutations to v1/he-baseline text, and writes v2/he output
+applies mechanical mutations to v1/he-baseline text, and writes v2/heb output
 plus per-chapter markdown reports.
 
 ADOPTED_VALIDATORS is the single gate: a dict mapping validator name to either:
@@ -32,7 +32,7 @@ NOT adopted yet (remaining subcases):
    functionality covered by validate_bare_discourse_particle.py instead)
   validate_complement_integrity    — needs multi-book evidence
 
-Safety: if v2/he/<book>/<chapter>.txt already exists, the script diffs
+Safety: if v2/heb/<book>/<chapter>.txt already exists, the script diffs
 it against what the pipeline would produce.  If the diff contains lines
 not derivable from v1 + mechanical apply (i.e., hand-edits), it aborts
 unless --force is given.
@@ -77,11 +77,11 @@ def _is_verse_ref_line(line: str) -> bool:
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 V1_DIR = REPO_ROOT / "data" / "text-files" / "v1" / "he-baseline"
-V2_DIR = REPO_ROOT / "data" / "text-files" / "v2" / "he"
+V2_DIR = REPO_ROOT / "data" / "text-files"  / "v2" / "heb"
 REPORTS_DIR = REPO_ROOT / "data" / "reports" / "apply"
 
 INPUT_TIER_LABEL = "v1-he-baseline"
-OUTPUT_TIER_LABEL = "v2-he"
+OUTPUT_TIER_LABEL = "v2-heb"
 
 # ---------------------------------------------------------------------------
 # Adoption gate
@@ -247,8 +247,8 @@ def run_validator(script_rel: str, book: str, *, use_v2: bool = False) -> dict |
     """Invoke a validator with --json --book <book>.
 
     By default scans v1/he-baseline. When `use_v2=True`, adds `--v2` so the
-    validator scans v2/he — used by --diff-apply mode where findings are
-    computed against the current v2/he state and applied in place.
+    validator scans v2/heb — used by --diff-apply mode where findings are
+    computed against the current v2/heb state and applied in place.
 
     Returns parsed JSON doc or None on failure.
     Validators exit 0 (clean) or 1 (findings) — both are success.
@@ -577,7 +577,7 @@ def detect_merge_split_conflicts(
 def resolve_chapter_files(book: str, *, use_v2: bool = False) -> list[Path]:
     """Return sorted list of .txt files for a book.
 
-    By default scans v1/he-baseline. When `use_v2=True`, scans v2/he —
+    By default scans v1/he-baseline. When `use_v2=True`, scans v2/heb —
     used by --diff-apply mode.
     """
     book_dir = (V2_DIR if use_v2 else V1_DIR) / book
@@ -592,7 +592,7 @@ def file_key(chapter_file: Path) -> str:
 
 
 def v2_path_for(v1_file: Path, book: str) -> Path:
-    """Return the v2/he target path for a given v1/he-baseline source file."""
+    """Return the v2/heb target path for a given v1/he-baseline source file."""
     return V2_DIR / book / v1_file.name
 
 
@@ -608,11 +608,11 @@ def check_divergence(
 ) -> tuple[bool, list[str]]:
     """Return (diverges, divergent_lines).
 
-    A divergence occurs when the existing v2/he file differs from what the
+    A divergence occurs when the existing v2/heb file differs from what the
     pipeline would produce AND those differences cannot be explained purely
     by the mechanical apply of strong_findings on v1_lines.
 
-    Strategy: the pipeline output IS candidate_lines.  If the existing v2/he
+    Strategy: the pipeline output IS candidate_lines.  If the existing v2/heb
     content differs from candidate_lines, those lines are hand-edits that
     the script must not silently overwrite.
     """
@@ -776,7 +776,7 @@ def build_chapter_report(
         lines_out.append("## Merge-vs-split conflicts (canon §1 step 4)\n")
         lines_out.append(
             "The following lines have a split candidate conflicting with a prior merge. "
-            "Merge wins per canon §1 Decision Procedure step 4. Review in v2/he.\n"
+            "Merge wins per canon §1 Decision Procedure step 4. Review in v2/heb.\n"
         )
         for i, conflict in enumerate(conflicts, start=1):
             lines_out.append(_format_conflict_block(conflict, i))
@@ -799,10 +799,10 @@ def process_chapter(
     timestamp: str,
     diff_apply: bool = False,
 ) -> dict:
-    """Apply findings to one chapter; write v2/he and reports if applicable.
+    """Apply findings to one chapter; write v2/heb and reports if applicable.
 
-    In diff-apply mode (`diff_apply=True`), `chapter_file` is the v2/he file
-    itself; findings have already been computed against the v2/he state.
+    In diff-apply mode (`diff_apply=True`), `chapter_file` is the v2/heb file
+    itself; findings have already been computed against the v2/heb state.
     Applying them in place adds only NEW mutations on top of the existing
     cascade, leaving prior edits intact. Divergence check is skipped.
     """
@@ -815,11 +815,11 @@ def process_chapter(
     mutated_lines, applied_changes = apply_mutations_to_lines(input_lines, strong_findings)
     v2_line_count = len(mutated_lines)
 
-    # Divergence guard — only relevant when not dry-running and v2/he already exists,
-    # AND we're NOT in diff-apply mode (where input == existing v2/he, so
+    # Divergence guard — only relevant when not dry-running and v2/heb already exists,
+    # AND we're NOT in diff-apply mode (where input == existing v2/heb, so
     # divergence is impossible by construction).
-    # When spec_runner (apply_specs.py) has mutated v2/he beyond what v1 + adopted
-    # validators can re-derive, PRESERVE the existing v2/he and continue the cascade.
+    # When spec_runner (apply_specs.py) has mutated v2/heb beyond what v1 + adopted
+    # validators can re-derive, PRESERVE the existing v2/heb and continue the cascade.
     # The downstream pipeline (propagate_editorial_layers, glosses, build) reads v2
     # as input, so preserving it is the correct behavior — not an abort.
     diverged = False
@@ -833,8 +833,8 @@ def process_chapter(
         )
         if diverged and not force:
             print(
-                f"  [PRESERVE] {chapter_stem}: v2/he has merges beyond v1+adopted_validators "
-                f"({len(divergent_lines)} divergent lines). Keeping existing v2/he as source of truth.",
+                f"  [PRESERVE] {chapter_stem}: v2/heb has merges beyond v1+adopted_validators "
+                f"({len(divergent_lines)} divergent lines). Keeping existing v2/heb as source of truth.",
                 file=sys.stderr,
             )
             should_write_v2 = False  # don't overwrite spec-driven merges
@@ -851,7 +851,7 @@ def process_chapter(
     )
 
     if not dry_run and not report_only and should_write_v2:
-        # Write v2/he output.
+        # Write v2/heb output.
         out_dir = V2_DIR / book
         out_dir.mkdir(parents=True, exist_ok=True)
         v2_file.write_text("\n".join(mutated_lines) + "\n", encoding="utf-8")
@@ -890,9 +890,9 @@ def process_book(
 ) -> dict:
     """Run validators and process all chapters in a book.
 
-    In diff-apply mode (`diff_apply=True`), validators are run against v2/he
+    In diff-apply mode (`diff_apply=True`), validators are run against v2/heb
     (current state, post any prior cascades) and findings are applied IN
-    PLACE on v2/he. This bypasses the PRESERVE divergence guard and adds
+    PLACE on v2/heb. This bypasses the PRESERVE divergence guard and adds
     only the new STRONG mutations the validators emit on the current state.
     Used to push tag-aware-validator improvements into the corpus without
     destabilizing existing edits.
@@ -907,7 +907,7 @@ def process_book(
     print(f"\n{'='*60}")
     print(f"Book: {book}")
     mode_label = (
-        "diff-apply (v2/he in-place)"
+        "diff-apply (v2/heb in-place)"
         if diff_apply
         else ("dry-run" if dry_run else "report-only" if report_only else "apply")
     )
@@ -921,7 +921,7 @@ def process_book(
     print(f"{'='*60}")
 
     # -----------------------------------------------------------------------
-    # Step 1: Run all validators (v1/he-baseline by default; v2/he in diff-apply mode).
+    # Step 1: Run all validators (v1/he-baseline by default; v2/heb in diff-apply mode).
     # -----------------------------------------------------------------------
     print("\nRunning validators...")
     validator_outputs: list[tuple[str, dict]] = []
@@ -1037,22 +1037,22 @@ def main() -> None:
         default=False,
         help=(
             "Show what would be applied; print reports to stdout. "
-            "No files written (neither v2/he nor reports)."
+            "No files written (neither v2/heb nor reports)."
         ),
     )
     parser.add_argument(
         "--report-only",
         action="store_true",
         default=False,
-        help="Write markdown reports but do not write v2/he files.",
+        help="Write markdown reports but do not write v2/heb files.",
     )
     parser.add_argument(
         "--force",
         action="store_true",
         default=False,
         help=(
-            "Override divergence guard — overwrite hand-edited v2/he files. "
-            "DESTRUCTIVE: hand-edits in v2/he will be lost."
+            "Override divergence guard — overwrite hand-edited v2/heb files. "
+            "DESTRUCTIVE: hand-edits in v2/heb will be lost."
         ),
     )
     parser.add_argument(
@@ -1060,8 +1060,8 @@ def main() -> None:
         action="store_true",
         default=False,
         help=(
-            "Run validators against v2/he (current state, post any prior cascades) "
-            "and apply STRONG findings IN PLACE on v2/he. Bypasses the PRESERVE "
+            "Run validators against v2/heb (current state, post any prior cascades) "
+            "and apply STRONG findings IN PLACE on v2/heb. Bypasses the PRESERVE "
             "divergence guard. Used to push tag-aware-validator improvements into "
             "the corpus without re-running the full v1→v2 pipeline. Additive only — "
             "cannot undo prior edits."
@@ -1079,7 +1079,7 @@ def main() -> None:
     timestamp = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
 
     base_dir = V2_DIR if args.diff_apply else V1_DIR
-    base_label = "v2/he" if args.diff_apply else "v1/he-baseline"
+    base_label = "v2/heb" if args.diff_apply else "v1/he-baseline"
     if args.all_books:
         if not base_dir.exists():
             print(f"ERROR: {base_label} directory not found: {base_dir}", file=sys.stderr)
@@ -1146,14 +1146,14 @@ def main() -> None:
     if not args.dry_run:
         print()
         if not args.report_only:
-            print(f"  v2/he output: {V2_DIR}")
+            print(f"  v2/heb output: {V2_DIR}")
         print(f"  Reports:      {REPORTS_DIR}")
 
     print()
     if grand_total_aborted:
         print(
             f"WARNING: {grand_total_aborted} chapter(s) aborted due to hand-edits "
-            f"in v2/he. Run with --force to override (destructive)."
+            f"in v2/heb. Run with --force to override (destructive)."
         )
     if grand_total_applied >= 5:
         print(

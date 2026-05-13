@@ -59,7 +59,7 @@ RETIRED_TERMS = [
         "pattern": r"\bv2-he-syntax\b",
         "term": "v2-he-syntax tier",
         "retired": "2026-04-27 (tier collapse)",
-        "note": "Old 5-tier scheme had v2 = Layer 1 syntax pass; collapsed pipeline is now v0 → v1 → v2 (where v2/he is the editorial gold standard).",
+        "note": "Old 5-tier scheme had v2 = Layer 1 syntax pass; collapsed pipeline is now v0 → v1 → v2 (where v2/heb is the editorial gold standard).",
     },
     {
         "pattern": r"\bv3-he-colometry\b",
@@ -71,7 +71,7 @@ RETIRED_TERMS = [
         "pattern": r"\bv4[-\s]?editorial\b",
         "term": "v4-editorial tier / directory",
         "retired": "2026-04-27 (tier collapse)",
-        "note": "Editorial gold standard moved from v4/editorial/ to v2/he/. Per-word layers moved from v4/ to v2/.",
+        "note": "Editorial gold standard moved from v4/editorial/ to v2/heb/. Per-word layers moved from v4/ to v2/.",
     },
     {
         "pattern": r"\bfour[-\s]?tier\b|\bfive[-\s]?tier\b|\b5[-\s]?tier\b|\b4[-\s]?tier\b",

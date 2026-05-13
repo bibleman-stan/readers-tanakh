@@ -1,6 +1,6 @@
-"""scan_atomic_thought_violations.py — Atomic-thought scanner for v2/he corpus.
+"""scan_atomic_thought_violations.py — Atomic-thought scanner for v2/heb corpus.
 
-Walks data/text-files/v2/he/<book>/<book>-NN.txt and flags lines that visibly
+Walks data/text-files/v2/heb/<book>/<book>-NN.txt and flags lines that visibly
 carry N≥2 propositions (canon §1 violations).  Five pattern classes:
 
   MULTI_VERB_NO_S3         — ≥2 finite verbs, S3 closed-list doesn't fire
@@ -45,7 +45,7 @@ from validators._shared.morphology import (
 
 # ── constants ────────────────────────────────────────────────────────────────
 
-V2_HE_ROOT = REPO_ROOT / "data" / "text-files" / "v2" / "he"
+V2_HE_ROOT = REPO_ROOT / "data" / "text-files"  / "v2" / "heb"
 
 # Speech-intro wayyiqtol skeletons (closed list per spec)
 SPEECH_INTRO_SKELS = {
@@ -262,14 +262,14 @@ def walk_corpus(v2_root: Path):
 # ── main ─────────────────────────────────────────────────────────────────────
 
 def main():
-    parser = argparse.ArgumentParser(description="Scan v2/he corpus for atomic-thought violations.")
+    parser = argparse.ArgumentParser(description="Scan v2/heb corpus for atomic-thought violations.")
     parser.add_argument("--out", default=None, help="CSV output file path (default: stdout only)")
     parser.add_argument("--book", default=None, help="Limit scan to one book slug (e.g. 32-jonah)")
     args = parser.parse_args()
 
     v2_root = V2_HE_ROOT
     if not v2_root.exists():
-        print(f"ERROR: v2/he root not found: {v2_root}", file=sys.stderr)
+        print(f"ERROR: v2/heb root not found: {v2_root}", file=sys.stderr)
         sys.exit(1)
 
     findings: list[dict] = []
@@ -298,7 +298,7 @@ def main():
     top_verses = verse_counts.most_common(10)
 
     print(f"\n{'='*60}")
-    print(f"Atomic-thought violation scan  —  v2/he corpus")
+    print(f"Atomic-thought violation scan  —  v2/heb corpus")
     print(f"{'='*60}")
     print(f"Total findings: {len(findings)}")
     print(f"\nPer-class counts:")

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """apply_multi_finite_verb_strong.py — Apply Hmfv STRONG-SPLIT-CANDIDATE
-findings to v2/he as forward-compatible cola splits.
+findings to v2/heb as forward-compatible cola splits.
 
 Reads data/syntax-reference/multi-finite-verb-candidates.tsv, filters to
 SEVERITY == 'STRONG-SPLIT-CANDIDATE', and inserts a line break before
@@ -112,7 +112,7 @@ def main():
     tsv_path = Path(args.tsv) if args.tsv else (
         REPO_ROOT / "data" / "syntax-reference" / "multi-finite-verb-candidates.tsv"
     )
-    he_dir = REPO_ROOT / "data" / "text-files" / "v2" / "he"
+    he_dir = REPO_ROOT / "data" / "text-files"  / "v2" / "heb"
 
     findings_by_file: dict[Path, list[dict]] = defaultdict(list)
     skipped_severity = 0

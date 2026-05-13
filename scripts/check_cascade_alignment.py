@@ -1,7 +1,7 @@
 """
 check_cascade_alignment.py — post-cascade misalignment warning checker.
 
-Scans data/text-files/v2/eng-interlinear/ against data/text-files/v2/he/ for
+Scans data/text-files/v2/eng-interlinear/ against data/text-files/v2/heb/ for
 mechanical signatures of misalignment. Flags candidates for manual review.
 Does NOT modify any file.
 
@@ -16,7 +16,7 @@ Usage:
     PYTHONIOENCODING=utf-8 py -3 scripts/check_cascade_alignment.py --output /tmp/warnings.md
 
 Ported 2026-05-05 from `readers-gnt/scripts/check_cascade_alignment.py:1-326`.
-Adapter changes: v4-editorial → v2/he and eng-gloss → v2/eng-interlinear path
+Adapter changes: v4-editorial → v2/heb and eng-gloss → v2/eng-interlinear path
 roots; "Greek" → "Hebrew" in user-facing messages and the Warning dataclass
 field name; heuristic thresholds preserved (English-vs-source typically 1-3x
 ratio for Hebrew translations, similar to Greek). Hebrew word counting uses
@@ -31,7 +31,7 @@ from dataclasses import dataclass
 from pathlib import Path
 
 _REPO_ROOT = Path(__file__).resolve().parent.parent
-_HE_ROOT = _REPO_ROOT / "data" / "text-files" / "v2" / "he"
+_HE_ROOT = _REPO_ROOT / "data" / "text-files"  / "v2" / "heb"
 _ENG_ROOT = _REPO_ROOT / "data" / "text-files" / "v2" / "eng-interlinear"
 
 # ---------------------------------------------------------------------------

@@ -1,8 +1,8 @@
 """
-Apply the ULTRA-STRONG high-confidence Hpar splits to v2/he.
+Apply the ULTRA-STRONG high-confidence Hpar splits to v2/heb.
 
 Reads data/syntax-reference/hpar-high-confidence.tsv (the share-A1 frame-args
-subset = canonical synonymous-parallelism), splits each affected v2/he line
+subset = canonical synonymous-parallelism), splits each affected v2/heb line
 at the recorded clause boundary using Macula token positions for accurate
 character-offset computation.
 
@@ -110,7 +110,7 @@ def main():
     tsv_path = Path(args.tsv) if args.tsv else (
         REPO_ROOT / "data" / "syntax-reference" / "hpar-high-confidence.tsv"
     )
-    he_dir = REPO_ROOT / "data" / "text-files" / "v2" / "he"
+    he_dir = REPO_ROOT / "data" / "text-files"  / "v2" / "heb"
 
     # Group findings by file (excluding skip-list)
     findings_by_file: dict[Path, list[dict]] = defaultdict(list)

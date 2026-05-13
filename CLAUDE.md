@@ -16,7 +16,7 @@ The methodology rests on three forces operating simultaneously:
 - **Subtractive** — Hebrew syntax integrity, complement integrity, and formula integrity trigger merges; four closed-list merge-overrides govern exceptions.
 - **Diagnostic** — single image acts as tiebreaker when generative and subtractive forces are in tension.
 
-The te'amim (cantillation accents) play no role in editorial decisions (canon §1, retired-as-consultative-criterion 2026-05-05). They drove `scripts/parse_teamim.py` which generated the v1-he-baseline as a one-time mechanical starting draft for v2/he hand-editing; the v1 files exist as historical artifact. The Sifrei Emet vs prose corpus partition (cluster-5 routing) is a book/chapter-membership fact, not a runtime te'amim check. Any editorial overlay (te'amim, sof pasuq, paseq, niqqud, versification) is preserved in the printed text for fidelity but does not figure in editorial decisions or defensibility-capture.
+The te'amim (cantillation accents) play no role in editorial decisions (canon §1, retired-as-consultative-criterion 2026-05-05). They drove `scripts/parse_teamim.py` which generated the v1-he-baseline as a one-time mechanical starting draft for v2/heb hand-editing; the v1 files exist as historical artifact. The Sifrei Emet vs prose corpus partition (cluster-5 routing) is a book/chapter-membership fact, not a runtime te'amim check. Any editorial overlay (te'amim, sof pasuq, paseq, niqqud, versification) is preserved in the printed text for fidelity but does not figure in editorial decisions or defensibility-capture.
 
 **Authoritative framework definition:** [`../atu-method/docs/framework.md`](../atu-method/docs/framework.md). The three-forces summary above is a recap of the cross-corpus methodology canonized in atu-method (mission, generative principle, syntax-forbids-splits, five justifications, four merge-overrides, autonomy boundary, decision procedure). When a methodology question runs deeper than the recap, framework.md is normative.
 
@@ -24,7 +24,7 @@ The te'amim (cantillation accents) play no role in editorial decisions (canon §
 - **Live site:** tanakh-reader.com — `CNAME` file is in repo root; verify GitHub Pages source-setting (Settings → Pages → branch `main`, folder `/`) before assuming the site is serving the latest commit and GA is firing.
 - **Base text:** STEPBible TAHOT — CC-BY-4.0
 - **User:** Stan (thebibleman77@gmail.com)
-- **State (2026-05-04):** all 39 books populated in `data/text-files/v2/he/` at canonical chapter counts (929 chapters, ~40K colometric lines). Macula Hebrew lowfat IR is wired across the validator suite; ~13K STRONG findings have been mechanically applied across the corpus through the round-4 cascade. **Open carry-forwards** in priority order:
+- **State (2026-05-04):** all 39 books populated in `data/text-files/v2/heb/` at canonical chapter counts (929 chapters, ~40K colometric lines). Macula Hebrew lowfat IR is wired across the validator suite; ~13K STRONG findings have been mechanically applied across the corpus through the round-4 cascade. **Open carry-forwards** in priority order:
   1. **Psa 9:10 parallelism direction** — the orphan `מִשְׂגָּב` was merged with the prior verb-line; editorially correct grouping is parallelism (gapped restatement on the next line). Validator merge-direction needs context-aware logic, not the global default.
   2. **M4 atomic-thought arm Sifrei Emet re-audit** — Wave-B removed overlay-as-authorization skips per the methodology audit, but the Sifrei Emet bound on this specific arm wasn't fully reconsidered. Single-pronoun orphans are colometric errors in any register; verify before next cascade.
   3. **GH Pages source-setting verification + GA Realtime test** (Stan-side, not Claude-side).
@@ -54,7 +54,7 @@ Stan is the sole authority. Work continuously against standing/pending items, no
 4. `private/03-sessions/yyyy-mm-dd-*/pending.md` if a recent one exists (used only for extended hand-offs / multi-step carry-overs); for routine prior-state, grep the JSONL.
 
 **CONSULT-ON-TRIGGER:**
-- `private/01-method/colometry-canon.md` — **trigger:** anything touching `validators/`, `scripts/apply_*.py`, `scripts/parse_teamim.py`, files under `data/text-files/v2/he/`, the syntax-reference, or any editorial / rule-interpretation question. Skip ONLY for pure UX / deployment / build-tooling / web-app frontend with no validator-or-rule surface.
+- `private/01-method/colometry-canon.md` — **trigger:** anything touching `validators/`, `scripts/apply_*.py`, `scripts/parse_teamim.py`, files under `data/text-files/v2/heb/`, the syntax-reference, or any editorial / rule-interpretation question. Skip ONLY for pure UX / deployment / build-tooling / web-app frontend with no validator-or-rule surface.
 - `../atu-method/docs/apparatus.md` + `../atu-method/docs/architecture.md` — **trigger:** English-layer work, swap-system port, or anything touching the 4-layer integrity (Hebrew / transliteration / interlinear / English). Picture-shaped docs — what the user sees on tanakh-reader.com when done. Pull back here whenever an architectural fork appears (per `feedback_endstate_first_orientation`).
 - `../atu-method/docs/framework.md` — **trigger:** methodology-touching work, rule-design, autonomy-boundary application. Authoritative cross-corpus framework body (mission, generative principle, syntax-forbids-splits, five justifications, four merge-overrides, autonomy boundary, decision procedure). Hebrew-specific application stays in `private/01-method/colometry-canon.md`.
 - `../atu-method/docs/change-protocol.md` — **trigger:** any canon revision.
@@ -103,15 +103,15 @@ Current as of 2026-05-12 (post English-layer migration Waves 0–7). Re-date thi
 | `scripts/ingest_tahot.py` | TAHOT TSV → v0-prose |
 | `scripts/parse_teamim.py` | Te'amim hierarchy → v1-he-baseline cola + per-word layers |
 | `scripts/build_books.py` | v2→v1 cascade → per-chapter HTML + manifest (single `books/` tree, no parallel KJV/legacy fork post-Wave-6) |
-| `scripts/propagate_editorial_layers.py` | Re-segments v1 per-word layers (translit + eng-interlinear) when v2/he cola changes |
+| `scripts/propagate_editorial_layers.py` | Re-segments v1 per-word layers (translit + eng-interlinear) when v2/heb cola changes |
 | `scripts/regenerate_english.py` | Generates v2/eng-kjv as KJV verbatim per Hebrew ATU cola; thin wrapper around `atu_method.kjv_alignment.align_verse()` (post-Wave-6 substrate; replaces retired Macula structural-gloss pipeline) |
 | `validators/run_all.py` | Dashboard + baseline gate |
 | `validators/4-layer-integrity/verify_4_layer_sync.py` | 4-layer integrity verifier — per-Hebrew-ATU-cola token-count parity across Hebrew / translit / interlinear / KJV layers; current baseline 907/929 PASS |
 | `validators/check_canon_extensions.py` | Commit-msg gate against canon-extension diffs |
 | `data/text-files/v0/prose/*/` | Raw TAHOT — **NEVER EDIT** |
 | `data/text-files/v1/{he-baseline,eng-interlinear,eng-gloss,translit}/*/` | Te'amim-baseline cola + lockstep per-word layers |
-| `data/text-files/v2/he/*/` | All 39 books / 929 chapters hand-edited (single source of truth, post round-4 cascade) |
-| `data/text-files/v2/{eng-interlinear,translit}/*/` | Per-word layers aligned to v2/he (regenerated by `propagate_editorial_layers.py`) |
+| `data/text-files/v2/heb/*/` | All 39 books / 929 chapters hand-edited (single source of truth, post round-4 cascade) |
+| `data/text-files/v2/{eng-interlinear,translit}/*/` | Per-word layers aligned to v2/heb (regenerated by `propagate_editorial_layers.py`) |
 | `data/text-files/v2/eng-kjv/*/` | KJV verbatim per Hebrew ATU cola (regenerated by `regenerate_english.py`; post-Wave-6 — renamed from `eng-gloss` 2026-05-12 to reflect the actual substrate) |
 | `data/syntax-reference/hebrew-break-legality.md` | Layer 1 surface (shape-capped) |
 | `private/01-method/colometry-canon.md` | Layer 3 editorial methodology (Hebrew-specific application; framework body is `../atu-method/docs/framework.md`) |
@@ -121,9 +121,9 @@ Current as of 2026-05-12 (post English-layer migration Waves 0–7). Re-date thi
 
 ## CRITICAL: Source Text Rules
 
-**NEVER:** modify vendored sources in `research/`; modify `v0/prose/` files; alter Hebrew consonants/niqqud/te'amim; add or remove words; adopt readings from non-vendored versions (LXX/DSS/Samaritan/Targums/Peshitta/Vulgate) into source files (see canon §0.1); run te'amim parsers without checking if hand-edited `v2/he/` chapters will be overwritten.
+**NEVER:** modify vendored sources in `research/`; modify `v0/prose/` files; alter Hebrew consonants/niqqud/te'amim; add or remove words; adopt readings from non-vendored versions (LXX/DSS/Samaritan/Targums/Peshitta/Vulgate) into source files (see canon §0.1); run te'amim parsers without checking if hand-edited `v2/heb/` chapters will be overwritten.
 
-**ALWAYS:** work only in `v2/he/` (the editorial surface is where lines break); preserve verse-refs and Ketiv/Qere markers; use `PYTHONIOENCODING=utf-8` for Python on Windows (Hebrew Unicode).
+**ALWAYS:** work only in `v2/heb/` (the editorial surface is where lines break); preserve verse-refs and Ketiv/Qere markers; use `PYTHONIOENCODING=utf-8` for Python on Windows (Hebrew Unicode).
 
 ---
 
@@ -140,11 +140,11 @@ The pipeline is **v0 → v1 → v2**. The earlier 5-tier scheme (v0/v1/v2-he-syn
 | Tier | Directory | Engine | What it does |
 |---|---|---|---|
 | v0 | `data/text-files/v0/prose/` | `scripts/ingest_tahot.py` | Raw text from TAHOT. Never edited. |
-| v1 | `data/text-files/v1/he-baseline/` | `scripts/parse_teamim.py` | One-time mechanical starting draft for v2/he hand-editing. Historical artifact post-retirement of te'amim consultative role (2026-05-05). |
-| v2 | `data/text-files/v2/he/` | Stan + Claude | Hand-edited Hebrew gold standard. Applies the three forces (generative, subtractive, diagnostic) and the four merge-overrides; consumes Layer 1 + Layer 3 validator findings as a work queue. Single source of truth for the build. |
+| v1 | `data/text-files/v1/he-baseline/` | `scripts/parse_teamim.py` | One-time mechanical starting draft for v2/heb hand-editing. Historical artifact post-retirement of te'amim consultative role (2026-05-05). |
+| v2 | `data/text-files/v2/heb/` | Stan + Claude | Hand-edited Hebrew gold standard. Applies the three forces (generative, subtractive, diagnostic) and the four merge-overrides; consumes Layer 1 + Layer 3 validator findings as a work queue. Single source of truth for the build. |
 
 Parallel per-word layers split by producer:
-- `v2/eng-interlinear/` and `v2/translit/` — re-segmented from v1 by `scripts/propagate_editorial_layers.py` whenever v2/he cola change. Word-stream invariant: same words, same order, same count as v2/he; only line breaks move.
+- `v2/eng-interlinear/` and `v2/translit/` — re-segmented from v1 by `scripts/propagate_editorial_layers.py` whenever v2/heb cola change. Word-stream invariant: same words, same order, same count as v2/heb; only line breaks move.
 - `v2/eng-kjv/` — generated independently by `scripts/regenerate_english.py` (post-Wave-6 substrate; renamed from `eng-gloss` 2026-05-12). For each verse, calls `atu_method.kjv_alignment.align_verse()` to distribute KJV 1769 verbatim across the Hebrew ATU cola via Strong's-number matching against TAHOT's per-Hebrew-token Strong's data. Handles BHS-vs-English versification offsets (Psalms superscriptions, Gen 31:55=BHS 32:1, 1Sam–Kgs alignment shifts, etc.).
 
 `scripts/build_books.py` picks v2 if present per chapter, otherwise v1.
@@ -224,7 +224,7 @@ Imported from GNT-Reader sibling 2026-05-05.
 
 ## Follow-on rebuild cascade
 
-**Automatic on every commit touching `data/text-files/v2/he/`.** Pre-commit hook detects affected books and runs `refresh_book.py --book <book> --build`, staging regenerated `v2/eng-{interlinear,gloss,translit}/` + `books/<book>/` into the same commit. Editor commits only the Hebrew; everything downstream regenerates atomically.
+**Automatic on every commit touching `data/text-files/v2/heb/`.** Pre-commit hook detects affected books and runs `refresh_book.py --book <book> --build`, staging regenerated `v2/eng-{interlinear,gloss,translit}/` + `books/<book>/` into the same commit. Editor commits only the Hebrew; everything downstream regenerates atomically.
 
 **Manual:** `PYTHONIOENCODING=utf-8 py -3 scripts/refresh_book.py --book <slug> --build`. The PYTHONIOENCODING prefix is mandatory on Windows for any script touching Hebrew Unicode.
 
@@ -278,7 +278,7 @@ Outside those exceptions, the sequence is `git commit` → if exit 0 → `git pu
 
 ### Tree-state self-check before commit (mandatory)
 
-Before any `git add` or `git commit`, run `git status --short | wc -l` (or `--short` directly if the count is small). If the tree contains modified files you didn't author in the current work cycle — especially under `data/text-files/v2/he/`, `validators/`, or `scripts/` — STOP and surface to Stan before staging. This is the failure mode that produced commit `4e1857e25`: a 12-line analytics edit landed as a 4554-file commit because pre-existing staged work was in the tree and got bundled by the pre-commit cascade.
+Before any `git add` or `git commit`, run `git status --short | wc -l` (or `--short` directly if the count is small). If the tree contains modified files you didn't author in the current work cycle — especially under `data/text-files/v2/heb/`, `validators/`, or `scripts/` — STOP and surface to Stan before staging. This is the failure mode that produced commit `4e1857e25`: a 12-line analytics edit landed as a 4554-file commit because pre-existing staged work was in the tree and got bundled by the pre-commit cascade.
 
 The rule: **a commit's title should describe its actual scope.** If you're about to commit work you didn't author, either (a) ask Stan first, (b) commit it separately under its own title, or (c) `git stash --keep-index` the unrelated work, commit yours, then unstash.
 
@@ -328,6 +328,6 @@ These are concrete next-step items surfaced by the 2026-05-04 audits and the 202
 
 3. **GitHub Pages + GA Realtime verification (Stan-side).** Confirm Pages source-setting is `Source: Deploy from a branch / Branch: main / Folder: /`. Visit tanakh-reader.com in one tab + GA Realtime in another; click between chapters; confirm `page_view` events fire on hashchange.
 
-4. **A standalone cascade-alignment scanner** (target name: `scripts/check_cascade_alignment.py`) — port the word-count imbalance scanner from the GNT sibling repo. Tanakh has `scan_english_drift.py` (and `validators/4-layer-integrity/verify_4_layer_sync.py` post-Wave-6) but lacks an on-demand alignment scanner separate from the pre-commit pipeline. Adapter work: change the sibling's editorial-tier paths to use tanakh's v2/he and v2/eng-interlinear directories. Haiku-tier mechanical port; no judgment work.
+4. **A standalone cascade-alignment scanner** (target name: `scripts/check_cascade_alignment.py`) — port the word-count imbalance scanner from the GNT sibling repo. Tanakh has `scan_english_drift.py` (and `validators/4-layer-integrity/verify_4_layer_sync.py` post-Wave-6) but lacks an on-demand alignment scanner separate from the pre-commit pipeline. Adapter work: change the sibling's editorial-tier paths to use tanakh's v2/heb and v2/eng-interlinear directories. Haiku-tier mechanical port; no judgment work.
 
 Nothing in this list authorizes building a new validator, drafting a new H-rule, adding an M-override, or running a STRONG-promotion sweep. Those are out-of-scope until item 1 lands AND the validator-creation guard hook lets you through (it won't, by design, unless you can name a substantive criterion).

@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Apply STRONG-MERGE findings from the spec-runner to mutate v2/he.
+"""Apply STRONG-MERGE findings from the spec-runner to mutate v2/heb.
 
 This is the mechanical surface that closes the rule-implementation loop:
-specs (YAML) → findings → merge cascade → updated v2/he.
+specs (YAML) → findings → merge cascade → updated v2/heb.
 
 Cascade behavior: applies all STRONG-MERGE findings in the current pass,
 re-runs spec-runner against the mutated state, and repeats until no new
@@ -290,7 +290,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--book", help="single book (substring match)")
     ap.add_argument("--all-books", action="store_true", help="apply to all books")
-    ap.add_argument("--corpus", default="data/text-files/v2/he")
+    ap.add_argument("--corpus", default="data/text-files/v2/heb")
     ap.add_argument("--specs", default="validators/specs")
     ap.add_argument("--dry-run", action="store_true", help="report only, do not write")
     ap.add_argument("--verbose", action="store_true")

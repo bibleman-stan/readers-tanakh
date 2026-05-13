@@ -61,14 +61,14 @@ CLUSTERS: dict[str, set[str]] = {
 }
 
 _PREFIX_RE = re.compile(r"^\d{2}-")
-_FILE_PATH_RE = re.compile(r"data/text-files/v2/he/(\d{2}-)?([a-z0-9]+)/[a-z0-9]+-(\d+)\.txt")
+_FILE_PATH_RE = re.compile(r"data/text-files/v2/heb/(\d{2}-)?([a-z0-9]+)/[a-z0-9]+-(\d+)\.txt")
 _VERSE_REF_RE = re.compile(r"^\d+:\d+[a-z]?$")
 
 
 def slug_from_filepath(filepath: str) -> tuple[str, str]:
-    """Extract (book_slug, chapter) from a v2/he file path.
+    """Extract (book_slug, chapter) from a v2/heb file path.
 
-    'data/text-files/v2/he/01-genesis/genesis-03.txt' → ('genesis', '03')
+    'data/text-files/v2/heb/01-genesis/genesis-03.txt' → ('genesis', '03')
     """
     m = _FILE_PATH_RE.match(filepath.replace("\\", "/"))
     if not m:
@@ -80,7 +80,7 @@ _LINE_TO_VERSE_CACHE: dict[str, dict[int, str]] = {}
 
 
 def line_to_verse_map(filepath_rel: str) -> dict[int, str]:
-    """Build {line_number: verse_ref} map for a v2/he chapter file.
+    """Build {line_number: verse_ref} map for a v2/heb chapter file.
 
     Verse markers are bare lines matching \\d+:\\d+(?:[a-z])? (e.g. '1:1', '3:5a').
     Each cola line gets the verse_ref of the most recent preceding marker.
@@ -274,7 +274,7 @@ def render_finding(n: dict, idx: int, stratum_key: str) -> str:
     sev = n["severity"]
     stratum_value = _lookup_stratum(n, stratum_key)
 
-    # Clickable link to the v2/he chapter at the finding's first line.
+    # Clickable link to the v2/heb chapter at the finding's first line.
     rel_link = fp.replace("\\", "/")
     if nl is not None:
         line_anchor = f"{rel_link}#L{line}-L{nl}"

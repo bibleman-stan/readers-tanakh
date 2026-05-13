@@ -7,7 +7,7 @@ write a new YAML spec; no Python code change.
 Usage:
     from validators._shared.spec_runner import SpecRunner
     runner = SpecRunner('validators/specs/')
-    findings = runner.run_corpus('data/text-files/v2/he/')
+    findings = runner.run_corpus('data/text-files/v2/heb/')
 
 CLI: see scripts/run_validators.py.
 

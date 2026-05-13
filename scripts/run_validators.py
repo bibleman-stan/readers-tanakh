@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """Spec-driven validator runner.
 
-Iterates all YAML specs in `validators/specs/` over the v2/he corpus and emits
+Iterates all YAML specs in `validators/specs/` over the v2/heb corpus and emits
 findings. Replaces the per-rule `validate_*.py` build pattern with declarative
 specs.
 
@@ -38,8 +38,8 @@ def main():
     ap.add_argument("--severity",
                     choices=["STRONG-MERGE-CANDIDATE", "REVIEW-REQUIRED", "MALFORMED"],
                     help="filter to severity")
-    ap.add_argument("--corpus", default="data/text-files/v2/he",
-                    help="corpus directory (default: v2/he)")
+    ap.add_argument("--corpus", default="data/text-files/v2/heb",
+                    help="corpus directory (default: v2/heb)")
     ap.add_argument("--specs", default="validators/specs",
                     help="specs directory (default: validators/specs)")
     ap.add_argument("--json", action="store_true", help="emit JSON instead of text")

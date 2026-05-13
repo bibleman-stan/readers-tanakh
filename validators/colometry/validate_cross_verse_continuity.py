@@ -89,7 +89,7 @@ from pathlib import Path
 # ---------------------------------------------------------------------------
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 V1_DIR = REPO_ROOT / "data" / "text-files" / "v1" / "he-baseline"
-V2_DIR = REPO_ROOT / "data" / "text-files" / "v2" / "he"
+V2_DIR = REPO_ROOT / "data" / "text-files"  / "v2" / "heb"
 
 # ---------------------------------------------------------------------------
 # Shared morphology + morph-alignment helpers
@@ -129,7 +129,7 @@ _BOOK_SLUG_FROM_DIR = re.compile(r"^\d{2}-[a-z0-9]+$")
 
 
 def _book_slug_from_path(path: Path) -> str | None:
-    """Return the project book-slug (e.g. '01-genesis') from a v2/he chapter
+    """Return the project book-slug (e.g. '01-genesis') from a v2/heb chapter
     file path. Returns None if path doesn't conform to the expected layout."""
     parent = path.parent.name
     if _BOOK_SLUG_FROM_DIR.match(parent):
@@ -883,7 +883,7 @@ def main():
     parser.add_argument(
         "--v2",
         action="store_true",
-        help="Scan v2/he (colometry-pass tier) instead of v1/he-baseline.",
+        help="Scan v2/heb (colometry-pass tier) instead of v1/he-baseline.",
     )
     parser.add_argument(
         "--verbose", "-v",
@@ -898,7 +898,7 @@ def main():
     args = parser.parse_args()
 
     base_dir = V2_DIR if args.v2 else V1_DIR
-    tier_label = "v2/he" if args.v2 else "v1/he-baseline"
+    tier_label = "v2/heb" if args.v2 else "v1/he-baseline"
 
     if not base_dir.exists():
         print(

@@ -5,7 +5,7 @@ clauses merged onto one line.
 
 The Sifrei Emet parallel bicolon (PP+verb // PP+verb, gapped subject; canonical
 Psa 23:2) is the motivating class. The detector queries Macula's constituent
-tree for clause boundaries and fires when a single v2/he line contains tokens
+tree for clause boundaries and fires when a single v2/heb line contains tokens
 spanning >=2 distinct clauses, each with its own finite-verb head.
 
 Engine: Macula Hebrew lowfat XML. NO te'amim glyphs in trigger logic
@@ -566,7 +566,7 @@ def main() -> int:
     p.add_argument("--json", action="store_true")
     args = p.parse_args()
 
-    base = REPO_ROOT / "data" / "text-files" / "v2" / "he"
+    base = REPO_ROOT / "data" / "text-files"  / "v2" / "heb"
     books = sorted(base.iterdir()) if base.exists() else []
     if args.book:
         books = [b for b in books if b.name == args.book]

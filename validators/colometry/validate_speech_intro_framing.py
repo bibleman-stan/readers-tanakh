@@ -84,11 +84,11 @@ import sys
 from pathlib import Path
 
 # ---------------------------------------------------------------------------
-# Path constants — collapsed two-tier layout: v1/he-baseline + v2/he
+# Path constants — collapsed two-tier layout: v1/he-baseline + v2/heb
 # ---------------------------------------------------------------------------
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 V1_DIR = REPO_ROOT / "data" / "text-files" / "v1" / "he-baseline"
-V2_DIR = REPO_ROOT / "data" / "text-files" / "v2" / "he"
+V2_DIR = REPO_ROOT / "data" / "text-files"  / "v2" / "heb"
 
 # ---------------------------------------------------------------------------
 # Shared morphology + morph-alignment helpers
@@ -791,7 +791,7 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
     line_token_tags: dict[int, list[list[str]]] = {}
     # Parallel lookup for IR-driven H5b detection: file_line_index → [MC.Token]
     # Built per-verse via Macula lowfat constituent-tree; populated only when
-    # the path conforms to the v1/he-baseline or v2/he layout.
+    # the path conforms to the v1/he-baseline or v2/heb layout.
     line_ir_tokens: dict[int, list["MC.Token"]] = {}
 
     book_slug = path.parent.name
@@ -1254,7 +1254,7 @@ def main():
     parser.add_argument(
         "--v2",
         action="store_true",
-        help="Scan v2/he (editorial gold standard) instead of v1/he-baseline.",
+        help="Scan v2/heb (editorial gold standard) instead of v1/he-baseline.",
     )
     parser.add_argument(
         "--verbose", "-v",
@@ -1269,7 +1269,7 @@ def main():
     args = parser.parse_args()
 
     base_dir = V2_DIR if args.v2 else V1_DIR
-    tier_label = "v2/he" if args.v2 else "v1/he-baseline"
+    tier_label = "v2/heb" if args.v2 else "v1/he-baseline"
 
     if not base_dir.exists():
         print(

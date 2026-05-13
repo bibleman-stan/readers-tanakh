@@ -4,13 +4,13 @@
 verify_4_layer_sync.py — Tanakh 4-layer integrity verifier.
 
 The Tanakh app stacks four synchronized layers per Hebrew ATU cola:
-    1. Hebrew                  — data/text-files/v2/he/
+    1. Hebrew                  — data/text-files/v2/heb/
     2. Transliteration         — data/text-files/v2/translit/
     3. Interlinear (per-word)  — data/text-files/v2/eng-interlinear/
     4. KJV verbatim English    — data/text-files/v2/eng-kjv/
        (renamed from v2/eng-gloss 2026-05-12 to reflect the actual substrate)
 
-The 4-layer integrity invariant: for every Hebrew ATU cola line in v2/he,
+The 4-layer integrity invariant: for every Hebrew ATU cola line in v2/heb,
 the corresponding translit and eng-interlinear lines must contain the SAME
 orthographic-word count (split on " | "), and the eng-kjv layer
 must contain exactly ONE English line per cola.
@@ -56,7 +56,7 @@ import sys
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
-V2_HE = REPO_ROOT / "data" / "text-files" / "v2" / "he"
+V2_HEB = REPO_ROOT / "data" / "text-files"  / "v2" / "heb"
 V2_TRANSLIT = REPO_ROOT / "data" / "text-files" / "v2" / "translit"
 V2_INTER = REPO_ROOT / "data" / "text-files" / "v2" / "eng-interlinear"
 V2_KJV = REPO_ROOT / "data" / "text-files" / "v2" / "eng-kjv"
@@ -135,7 +135,7 @@ def pipe_layer_word_count(line: str) -> int:
 
 def verify_book(book_subdir: str, *, only_chapter: int | None = None):
     """Run the verifier on one book. Returns (n_chapters, n_pass, n_fail, fails)."""
-    he_dir = V2_HE / book_subdir
+    he_dir = V2_HEB / book_subdir
     if not he_dir.is_dir():
         return (0, 0, 0, [(book_subdir, "missing he/ dir")])
 

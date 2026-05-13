@@ -4,7 +4,7 @@
 propagate_editorial_layers.py — re-segment v1 per-word layers to the editorial
 Hebrew cola structure.
 
-When the editorial Hebrew layer (data/text-files/v2/he/) changes cola
+When the editorial Hebrew layer (data/text-files/v2/heb/) changes cola
 structure relative to the v1 he-baseline, the per-word layers (eng-interlinear,
 translit, eng-gloss) must follow. v1 has 1:1 alignment between Hebrew
 orthographic words and per-word tokens; this script slices those per-word
@@ -52,7 +52,7 @@ V1_INTER_DIR     = TEXT_DIR / "v1" / "eng-interlinear"
 V1_GLOSS_DIR     = TEXT_DIR / "v1" / "eng-gloss"
 V1_TRANSLIT_DIR  = TEXT_DIR / "v1" / "translit"
 
-ED_HE_DIR        = TEXT_DIR / "v2" / "he"
+ED_HE_DIR        = TEXT_DIR  / "v2" / "heb"
 ED_INTER_DIR     = TEXT_DIR / "v2" / "eng-interlinear"
 ED_GLOSS_DIR     = TEXT_DIR / "v2" / "eng-kjv"  # write disabled post-Wave-6 (see write_chapter call below)
 ED_TRANSLIT_DIR  = TEXT_DIR / "v2" / "translit"
@@ -326,7 +326,7 @@ def main() -> None:
     )
     book_group = ap.add_mutually_exclusive_group(required=True)
     book_group.add_argument("--book", help="Book folder, e.g. '32-jonah'")
-    book_group.add_argument("--all-books", action="store_true", help="Process all books in v2/he/")
+    book_group.add_argument("--all-books", action="store_true", help="Process all books in v2/heb/")
     ap.add_argument("--dry-run", action="store_true", help="Do not write files")
     args = ap.parse_args()
 
@@ -361,7 +361,7 @@ def main() -> None:
         if book_stats is None:
             # Book directory doesn't exist
             if args.all_books:
-                print(f"  {book}: skipped (no v2/he directory)")
+                print(f"  {book}: skipped (no v2/heb directory)")
                 books_not_found.append(book)
             else:
                 # Single-book mode with missing directory

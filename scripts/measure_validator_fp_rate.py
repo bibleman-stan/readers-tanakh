@@ -74,7 +74,7 @@ from collections import defaultdict
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-V2_HE_DIR = REPO_ROOT / "data" / "text-files" / "v2" / "he"
+V2_HEB_DIR = REPO_ROOT / "data" / "text-files"  / "v2" / "heb"
 VALIDATORS_DIR = REPO_ROOT / "validators"
 FIXTURE_FILE = REPO_ROOT / "tests" / "fp-baseline-fixtures.tsv"
 OUTPUT_FILE = REPO_ROOT / "validators" / ".fp-baseline.json"
@@ -141,7 +141,7 @@ def sample_cluster(cluster_name: str, books: list[str], rng: random.Random) -> l
     book_chapters: dict[str, int] = {}
     book_verses: dict[str, list[tuple[int, str]]] = {}
     for book in books:
-        bdir = V2_HE_DIR / book
+        bdir = V2_HEB_DIR / book
         if not bdir.is_dir():
             continue
         verses = enumerate_book_verses(bdir)
@@ -398,7 +398,7 @@ def finding_in_chapter(f: dict, book: str, chapter_num: int) -> bool:
 def chapter_verse_line_map(book: str, chapter_num: int) -> dict[str, tuple[int, int]]:
     """Return {verse_ref: (start_line, end_line)} (1-indexed, inclusive) for
     the chapter's content lines following each verse marker."""
-    bdir = V2_HE_DIR / book
+    bdir = V2_HEB_DIR / book
     chapter_files = list(bdir.glob(f"*-{chapter_num:02d}.txt"))
     if not chapter_files:
         return {}

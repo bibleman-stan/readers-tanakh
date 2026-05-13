@@ -14,14 +14,14 @@ Substrate
 ---------
 Reads ACTUAL KJV verbatim per ATU cola, via viz.bible's MetaV
 (per-KJV-word Strong's tagging, CC BY-SA 3.0). For each Hebrew token in
-v2/he, the universal algorithm finds the KJV words in the same verse
+v2/heb, the universal algorithm finds the KJV words in the same verse
 whose Strong's match, distributes them to the right ATU cola preserving
 KJV reading order within each cola, and attaches translator-supplied
 KJV words (no Strong's) to the cola of their nearest non-italic neighbour.
 
 The pipeline:
 
-  1. Walk v2/he/<NN-book>/<book>-<NN>.txt, yielding verses (BHS-numbered).
+  1. Walk v2/heb/<NN-book>/<book>-<NN>.txt, yielding verses (BHS-numbered).
   2. Stream TAHOT rows for the same verse. TAHOT keys verses by KJV/English
      number primarily; rows whose Hebrew BHS verse differs append the BHS
      ref parenthetically (e.g. ``Gen.31.55(32.1)``). Build a BHS-keyed
@@ -43,7 +43,7 @@ What stays
 ----------
 - CLI surface: ``--book``, ``--all``, ``--force``, ``--self-test``
 - Book registry: 39 OT books with TAHOT prefix + TAHOT volume file
-- The v2/he source directory is read-only (sacrosanct per CLAUDE.md)
+- The v2/heb source directory is read-only (sacrosanct per CLAUDE.md)
 
 CLI
 ---
@@ -67,7 +67,7 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 ATU_METHOD_ROOT = REPO_ROOT.parent / "atu-method"
-V2_HE_DIR = REPO_ROOT / "data" / "text-files" / "v2" / "he"
+V2_HEB_DIR = REPO_ROOT / "data" / "text-files"  / "v2" / "heb"
 OUT_DIR = REPO_ROOT / "data" / "text-files" / "v2" / "eng-kjv"
 TAHOT_DIR = REPO_ROOT / "research" / "stepbible-tahot"
 METAV_DIR = ATU_METHOD_ROOT / "data" / "kjv-strongs"
@@ -161,7 +161,7 @@ TAHOT_ROW_RE = re.compile(
 # ─── parsers ────────────────────────────────────────────────────────────────
 
 def parse_chapter_hebrew(filepath: Path):
-    """Parse a v2/he chapter file into [{ref, cola_lines}]."""
+    """Parse a v2/heb chapter file into [{ref, cola_lines}]."""
     verses = []
     current = None
     with filepath.open("r", encoding="utf-8") as f:
@@ -226,7 +226,7 @@ def parse_tahot_file(tahot_path: Path, book_code: str):
     }
 
     TAHOT's primary ref is English/KJV; when Hebrew BHS differs, TAHOT
-    appends ``(H.V)`` to the ref. We key by BHS so v2/he (which uses BHS
+    appends ``(H.V)`` to the ref. We key by BHS so v2/heb (which uses BHS
     numbering) reads cleanly; we remember every English (ch, vs) seen so
     we can call MetaV with the correct KJV verse number.
     """
@@ -456,7 +456,7 @@ def generate_book(book_key: str, metav_index, *, force: bool = False) -> dict:
 
     if not tahot_file.exists():
         return {"error": f"TAHOT file missing: {tahot_file}"}
-    he_dir = V2_HE_DIR / book_subdir
+    he_dir = V2_HEB_DIR / book_subdir
     if not he_dir.is_dir():
         return {"error": f"Hebrew source dir missing: {he_dir}"}
     out_dir = OUT_DIR / book_subdir
@@ -518,7 +518,7 @@ def _self_test() -> int:
         return 1
 
     out_verses = parse_chapter_hebrew(gen1)
-    he_verses = parse_chapter_hebrew(V2_HE_DIR / "01-genesis" / "genesis-01.txt")
+    he_verses = parse_chapter_hebrew(V2_HEB_DIR / "01-genesis" / "genesis-01.txt")
     out_by_ref = {v["ref"]: v["cola_lines"] for v in out_verses}
     he_by_ref = {v["ref"]: v["cola_lines"] for v in he_verses}
 

@@ -1,8 +1,8 @@
 """
 Sample validator findings stratified by the 6-cluster scheme for audit dispatch.
 
-Reads validator output (one finding per line, must contain a v2/he path like
-`data/text-files/v2/he/{NN}-{book}/{book}-{NN}.txt:{line}  ...`), routes each
+Reads validator output (one finding per line, must contain a v2/heb path like
+`data/text-files/v2/heb/{NN}-{book}/{book}-{NN}.txt:{line}  ...`), routes each
 finding to its cluster (1=Torah / 2=Former Prophets / 3=Latter Prophets /
 4=Writings prose / 5=Sifrei Emet / 6=Embedded Poetry), and samples N random
 findings per cluster (default 5 → 30 total) for parallel-Sonnet audit.
@@ -31,7 +31,7 @@ CLUSTER4_BOOKS = {8, 17, 27, 15, 16, 13, 14, 21}
 CLUSTER5_BOOKS = {19, 20, 18}
 
 FINDING_RE = re.compile(
-    r"data/text-files/v2/he/(\d+)-(\w+)/\w+-(\d+)\.txt:(\d+)\s+\S+\s+\S+\s+(.+)"
+    r"data/text-files/v2/heb/(\d+)-(\w+)/\w+-(\d+)\.txt:(\d+)\s+\S+\s+\S+\s+(.+)"
 )
 
 
@@ -100,7 +100,7 @@ def main():
         pool = by_cluster.get(c, [])
         n = min(args.per_cluster, len(pool))
         for f in random.sample(pool, n):
-            path = f"data/text-files/v2/he/{f['book_num']:02d}-{f['book']}/{f['book']}-{f['chapter']:02d}.txt"
+            path = f"data/text-files/v2/heb/{f['book_num']:02d}-{f['book']}/{f['book']}-{f['chapter']:02d}.txt"
             print(f"C{c}\t{f['book']}\t{f['chapter']}:{f['line']}\t{path}\t{f['detail']}")
 
 

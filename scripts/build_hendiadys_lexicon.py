@@ -33,7 +33,7 @@ DST = REPO / "data" / "syntax-reference" / "hendiadys-lexicon.tsv"
 
 DOOR43_TAGS = {"figs-hendiadys", "figs-doublet", "figs-merism"}
 
-# door43 3-letter book codes -> v2/he book slug
+# door43 3-letter book codes -> v2/heb book slug
 DOOR43_BOOK_SLUGS = {
     "GEN": "01-genesis", "EXO": "02-exodus", "LEV": "03-leviticus",
     "NUM": "04-numbers", "DEU": "05-deuteronomy", "JOS": "06-joshua",
@@ -50,7 +50,7 @@ DOOR43_BOOK_SLUGS = {
     "HAG": "37-haggai", "ZEC": "38-zechariah", "MAL": "39-malachi",
 }
 
-# Bullinger Victorian-era abbreviations -> v2/he slug (OT only; NT silently drops)
+# Bullinger Victorian-era abbreviations -> v2/heb slug (OT only; NT silently drops)
 BULLINGER_BOOK_SLUGS = {
     "Gen": "01-genesis", "Exod": "02-exodus", "Ex": "02-exodus",
     "Lev": "03-leviticus", "Num": "04-numbers",

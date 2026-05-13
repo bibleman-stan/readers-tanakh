@@ -33,7 +33,7 @@ Every line break in v1/he-baseline corresponds to a disjunctive accent at or abo
 
 ## Stage 3 — Editorial pass (the human work)
 
-Open the v1/he-baseline file and the v0-prose file side-by-side. For each chapter, produce `data/text-files/v2/he/{NN-book}/{abbr}-{NN}.txt`.
+Open the v1/he-baseline file and the v0-prose file side-by-side. For each chapter, produce `data/text-files/v2/heb/{NN-book}/{abbr}-{NN}.txt`.
 
 Run the validator dashboard to get the work queue:
 
@@ -59,7 +59,7 @@ Every editorial decision should be defensible against the canon. When the canon 
 
 ## Stage 4a — Propagate per-word layers (translit + eng-interlinear)
 
-Once v2/he/ Hebrew is settled for a chapter, re-segment the per-word layers that are 1:1-aligned to v2/he tokens:
+Once v2/heb/ Hebrew is settled for a chapter, re-segment the per-word layers that are 1:1-aligned to v2/heb tokens:
 
 ```bash
 PYTHONIOENCODING=utf-8 py -3 scripts/propagate_editorial_layers.py --book 32-jonah
@@ -93,7 +93,7 @@ The validator suite under `validators/` runs on demand and at commit time (via t
 
 - **Layer 1 (Hebrew break-legality)** — checks for syntactic patterns that should not be split (e.g., maqqef-joined words; preposition + bound noun; construct chains kept together).
 - **Layer 3 (colometry)** — checks for methodology compliance (every line positively justified as an atomic thought per canon §1; no orphaned lines; balanced colon lengths within reason). Current Layer 3 validators include Rule H18 — Clause-Nucleus Integrity (`validate_clause_nucleus_split.py`; REVIEW-REQUIRED only; see canon §5 H18), which flags cola where a clause nucleus (subject + predicate) appears to be split across lines without a structural justification.
-- **4-layer integrity** — `validators/4-layer-integrity/verify_4_layer_sync.py` validates per-Hebrew-ATU-cola token-count parity across the four layers (Hebrew / translit / interlinear / KJV). Run after any v2/he edit. Current baseline: 907/929 PASS, 22 pre-existing translit/interlinear cola-count drifts (Hebrew + KJV align; translit + interlinear are exactly one cola short). Drift class is investigatable as a propagator gap; see `private/03-sessions/2026-05-12-post-migration-wake/pending.md` §5.1.
+- **4-layer integrity** — `validators/4-layer-integrity/verify_4_layer_sync.py` validates per-Hebrew-ATU-cola token-count parity across the four layers (Hebrew / translit / interlinear / KJV). Run after any v2/heb edit. Current baseline: 907/929 PASS, 22 pre-existing translit/interlinear cola-count drifts (Hebrew + KJV align; translit + interlinear are exactly one cola short). Drift class is investigatable as a propagator gap; see `private/03-sessions/2026-05-12-post-migration-wake/pending.md` §5.1.
 
 Validator output is a work queue, not a review queue (canon §6). STRONG-tagged findings are application-ready; REVIEW-REQUIRED items need per-item editorial judgment.
 
@@ -128,7 +128,7 @@ This pattern is the default for systematic cleanup once the corpus is large enou
 
 Every divergence from the v1-he-baseline should leave a trail. The simplest convention:
 
-- The v2/he file itself is the trail — comparing v1/he-baseline against v2/he reveals every divergence (merges of accent breaks and splits not in v1)
+- The v2/heb file itself is the trail — comparing v1/he-baseline against v2/heb reveals every divergence (merges of accent breaks and splits not in v1)
 - A periodic sweep produces a "divergence census": count of divergences per book, per chapter, per criterion-invoked
 - Divergence hot-spots (chapters with unusually high divergence rates) are candidates for canon revision — either the criteria need refinement, or the te'amim parser is producing systematic noise
 
@@ -151,6 +151,6 @@ Divergence rate from v1/he-baseline is a diagnostic metric only. The v1 baseline
 
 **2026-04-26 update:** `data/text-files/` restructured into per-tier subfolders (v0/, v1/, v2/, v3/, v4/). Tier-name identity strings (v1-he-baseline, v2-he-syntax, etc.) unchanged; only filesystem layout. Path references in this doc updated to the new layout.
 
-**2026-04-27 update:** Tier collapse — both 2026-04-26 multi-tier updates above are superseded. Pipeline simplified from 7 stages to **6 stages** (ingest / parse / editorial / propagate / build / validate); the auto-apply mechanical stages (old Stages 3–4) are retired. Editorial pass now opens v1/he-baseline as its starting draft and writes to `v2/he/` (was `v4/editorial/`). STRONG-tagged validator findings feed the editorial work queue directly, with the same Category A/B/C reasoning the canon already governs. Parallel per-word layers re-segmented by `propagate_editorial_layers.py` into `v2/{eng-interlinear,eng-gloss,translit}/`. See canon §8 entry 2026-04-27 for full rationale.
+**2026-04-27 update:** Tier collapse — both 2026-04-26 multi-tier updates above are superseded. Pipeline simplified from 7 stages to **6 stages** (ingest / parse / editorial / propagate / build / validate); the auto-apply mechanical stages (old Stages 3–4) are retired. Editorial pass now opens v1/he-baseline as its starting draft and writes to `v2/heb/` (was `v4/editorial/`). STRONG-tagged validator findings feed the editorial work queue directly, with the same Category A/B/C reasoning the canon already governs. Parallel per-word layers re-segmented by `propagate_editorial_layers.py` into `v2/{eng-interlinear,eng-gloss,translit}/`. See canon §8 entry 2026-04-27 for full rationale.
 
 **2026-04-28 update:** Rule H18 — Clause-Nucleus Integrity added to the Layer 3 validator inventory (`validators/colometry/validate_clause_nucleus_split.py`). H18 findings are REVIEW-REQUIRED only; the validator is not in `ADOPTED_VALIDATORS` and does not emit STRONG tags. H18 items in the work queue go to per-item editorial judgment. See canon §5 H18 for the full rule body.

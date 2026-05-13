@@ -66,11 +66,11 @@ import sys
 from pathlib import Path
 
 # ---------------------------------------------------------------------------
-# Path constants — two-tier layout: v1/he-baseline + v2/he
+# Path constants — two-tier layout: v1/he-baseline + v2/heb
 # ---------------------------------------------------------------------------
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 V1_DIR = REPO_ROOT / "data" / "text-files" / "v1" / "he-baseline"
-V2_DIR = REPO_ROOT / "data" / "text-files" / "v2" / "he"
+V2_DIR = REPO_ROOT / "data" / "text-files"  / "v2" / "heb"
 
 # ---------------------------------------------------------------------------
 # Hebrew Unicode helpers
@@ -254,7 +254,7 @@ def main() -> None:
     parser.add_argument(
         "--v2",
         action="store_true",
-        help="Scan v2/he (post-editorial tier) instead of v1/he-baseline.",
+        help="Scan v2/heb (post-editorial tier) instead of v1/he-baseline.",
     )
     parser.add_argument(
         "--verbose", "-v",
@@ -269,14 +269,14 @@ def main() -> None:
     args = parser.parse_args()
 
     base_dir = V2_DIR if args.v2 else V1_DIR
-    tier_label = "v2/he" if args.v2 else "v1/he-baseline"
+    tier_label = "v2/heb" if args.v2 else "v1/he-baseline"
 
     if not base_dir.exists():
         # Fall back to the other tier if the requested one doesn't exist
         alt = V2_DIR if not args.v2 else V1_DIR
         if alt.exists():
             base_dir = alt
-            tier_label = "v2/he" if alt is V2_DIR else "v1/he-baseline"
+            tier_label = "v2/heb" if alt is V2_DIR else "v1/he-baseline"
         else:
             print(f"ERROR: neither {V1_DIR} nor {V2_DIR} found.", file=sys.stderr)
             sys.exit(2)

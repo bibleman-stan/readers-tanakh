@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""scan_under_broken.py — Detect over-merged (under-broken) lines in v2/he corpus.
+"""scan_under_broken.py — Detect over-merged (under-broken) lines in v2/heb corpus.
 
 Each colon should carry one proposition (canon §1 atomic thought). This scanner
 finds lines that likely carry multiple propositions — a SPLIT was missed where
@@ -33,7 +33,7 @@ sys.path.insert(0, str(REPO_ROOT))
 import validators._shared.morphology as M
 
 # ── paths ──────────────────────────────────────────────────────────────────
-V2_HE_ROOT = REPO_ROOT / "data" / "text-files" / "v2" / "he"
+V2_HE_ROOT = REPO_ROOT / "data" / "text-files"  / "v2" / "heb"
 DEFAULT_OUTPUT = (
     REPO_ROOT
     / "private"
@@ -151,7 +151,7 @@ VERSE_REF_RE = re.compile(r"^\d+:\d+$")
 
 
 def scan_file(path: Path, book_slug: str) -> list[dict]:
-    """Scan one v2/he chapter file; return list of finding dicts."""
+    """Scan one v2/heb chapter file; return list of finding dicts."""
     text = path.read_text(encoding="utf-8")
     rows: list[dict] = []
     cur_ref = ""
@@ -194,7 +194,7 @@ def scan_corpus(v2_root: Path) -> list[dict]:
 def main() -> None:
     import argparse
 
-    parser = argparse.ArgumentParser(description="Scan v2/he for over-merged lines.")
+    parser = argparse.ArgumentParser(description="Scan v2/heb for over-merged lines.")
     parser.add_argument("--output", default=str(DEFAULT_OUTPUT), help="CSV output path")
     args = parser.parse_args()
 

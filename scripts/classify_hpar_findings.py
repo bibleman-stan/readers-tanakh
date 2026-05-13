@@ -152,7 +152,7 @@ def classify_finding_for_line(
 
 def scan_book(book_slug: str) -> list[dict]:
     """Run Hpar's per-line scan with classification on each finding."""
-    book_dir = REPO_ROOT / "data" / "text-files" / "v2" / "he" / book_slug
+    book_dir = REPO_ROOT / "data" / "text-files"  / "v2" / "heb" / book_slug
     if not book_dir.is_dir():
         return []
     out: list[dict] = []
@@ -206,7 +206,7 @@ def scan_chapter(book_slug: str, chapter_no: int, ch_file: Path) -> list[dict]:
         if not leaves:
             continue
 
-        # Match v2/he lines to verse-token slices (per-line greedy match).
+        # Match v2/heb lines to verse-token slices (per-line greedy match).
         cursor = 0
         line_token_lists = []
         for ln in verse_line_texts[verse]:
@@ -336,7 +336,7 @@ def main():
     ap.add_argument("--csv", action="store_true", help="Emit CSV to stdout")
     args = ap.parse_args()
 
-    he_dir = REPO_ROOT / "data" / "text-files" / "v2" / "he"
+    he_dir = REPO_ROOT / "data" / "text-files"  / "v2" / "heb"
     if args.book:
         books = [args.book]
     else:

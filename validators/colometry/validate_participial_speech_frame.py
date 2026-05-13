@@ -83,7 +83,7 @@ from pathlib import Path
 # ---------------------------------------------------------------------------
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 V1_DIR = REPO_ROOT / "data" / "text-files" / "v1" / "he-baseline"
-V2_DIR = REPO_ROOT / "data" / "text-files" / "v2" / "he"
+V2_DIR = REPO_ROOT / "data" / "text-files"  / "v2" / "heb"
 
 sys.path.insert(0, str(REPO_ROOT / "validators"))
 from _shared.poetic_register import is_poetic_register  # noqa: E402
@@ -328,7 +328,7 @@ def compute_h5d_split(tokens: list["MC.Token"]) -> tuple[int, str, str, "MC.Toke
 # Sense-line position-mapping
 #
 # We need to map IR-detected split-position (which is a TOKEN INDEX within
-# the verse's flat token list) back to a SENSE-LINE INDEX in the v2/he file
+# the verse's flat token list) back to a SENSE-LINE INDEX in the v2/heb file
 # (which is what an editor reads). The trigger fires when an editorial
 # sense-line spans BOTH the participle and the imperative — i.e., the split
 # would happen WITHIN a single sense-line.
@@ -465,7 +465,7 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
     parser.add_argument("--book", metavar="BOOK", help="Restrict to one book.")
-    parser.add_argument("--v2", action="store_true", help="Scan v2/he.")
+    parser.add_argument("--v2", action="store_true", help="Scan v2/heb.")
     parser.add_argument("--json", action="store_true", help="Emit JSON.")
     args = parser.parse_args()
 

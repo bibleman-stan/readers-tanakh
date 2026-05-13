@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """scan_multi_finite_verb_line.py — corpus-wide detector for the Gen-1:3 class.
 
-Class definition: a single v2/he cola containing 2+ independent finite-verb
+Class definition: a single v2/heb cola containing 2+ independent finite-verb
 clauses where no merge-override (M1 bonded-pair / M2 verb-object clause-nucleus
 / M3 bare-governor / M4 fragmented atomic-thought / formula integrity) justifies
 the merge. Per the canon's generative principle (framework.md §1.1, canon §1):
@@ -350,7 +350,7 @@ def _suppressor_cascade(line_tokens, clauses) -> tuple[str, list[str]]:
 
 
 def scan_book(book_slug: str, out_rows: list[str]) -> dict:
-    he_dir = REPO_ROOT / "data" / "text-files" / "v2" / "he" / book_slug
+    he_dir = REPO_ROOT / "data" / "text-files"  / "v2" / "heb" / book_slug
     if not he_dir.exists():
         return {"chapters": 0, "candidates": 0}
 
@@ -490,7 +490,7 @@ def main():
         "head2_lemma", "head2_aspect",
     ]))
 
-    he_root = REPO_ROOT / "data" / "text-files" / "v2" / "he"
+    he_root = REPO_ROOT / "data" / "text-files"  / "v2" / "heb"
     if args.book:
         books = [args.book]
     else:

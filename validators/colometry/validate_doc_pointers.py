@@ -65,7 +65,7 @@ SEARCH_SUBDIRS = [
     "data/text-files/v1/eng-gloss",
     "data/text-files/v1/translit",
     "data/text-files/v2",
-    "data/text-files/v2/he",
+    "data/text-files/v2/heb",
     "data/text-files/v2/eng-interlinear",
     "data/text-files/v2/eng-kjv",
     "data/text-files/v2/translit",
@@ -119,7 +119,7 @@ SKIP_PATHS = {
     "scripts/apply_v3.py",
     "scripts/apply_v4.py",
     # Pre-cascade-engine references that may appear in older handoff prose
-    "v4-editorial",  # collapsed into v2/he 2026-04-27
+    "v4-editorial",  # collapsed into v2/heb 2026-04-27
     "v3-he-colometry",
     "v2-he-syntax",
     # Generated / build artifacts that may not exist on a fresh clone

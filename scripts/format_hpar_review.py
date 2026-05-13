@@ -46,7 +46,7 @@ def main():
     out.append(f"**{49} candidates** identified via Macula frame-args share-A1 signal "
                "(both clauses target the same object referent — canonical synonymous-")
     out.append("parallelism). Spot-check 5-10 entries; if the TP rate looks ≥80%, run")
-    out.append("`scripts/apply_hpar_high_confidence.py` to apply the splits to v2/he.")
+    out.append("`scripts/apply_hpar_high_confidence.py` to apply the splits to v2/heb.")
     out.append("")
     out.append("---")
     out.append("")

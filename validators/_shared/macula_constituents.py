@@ -703,7 +703,7 @@ def clear_cache() -> None:
 # Sense-line ↔ Token matching
 # ---------------------------------------------------------------------------
 #
-# Validators operate on editorial sense-lines (v2/he), not on lowfat verses.
+# Validators operate on editorial sense-lines (v2/heb), not on lowfat verses.
 # To use IR queries from a sense-line context, we need to map a sense-line's
 # Hebrew text to the subset of verse Tokens it contains.
 #

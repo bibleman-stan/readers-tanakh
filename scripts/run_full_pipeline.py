@@ -14,7 +14,7 @@ Steps per book:
   3. apply_validators.py --book <out_subdir>
      Skip with warning if script does not exist yet
   4. propagate_editorial_layers.py --book <out_subdir>
-     Skip if data/text-files/v2/he/<out_subdir>/ does not exist
+     Skip if data/text-files/v2/heb/<out_subdir>/ does not exist
   5. regenerate_english.py --book <book_key> --force  (KJV-verbatim via MetaV)
   6. build_books.py --book <book_key>  (only with --build flag)
 
@@ -57,7 +57,7 @@ REPORTS_DIR = REPO_ROOT / "data" / "reports"
 
 V0_PROSE_DIR  = TEXT_DIR / "v0" / "prose"
 V1_HE_DIR     = TEXT_DIR / "v1" / "he-baseline"
-V2_HE_DIR     = TEXT_DIR / "v2" / "he"
+V2_HEB_DIR     = TEXT_DIR  / "v2" / "heb"
 V4_ED_DIR     = TEXT_DIR / "v4" / "editorial"
 
 # ---------------------------------------------------------------------------
@@ -89,7 +89,7 @@ OK       = "OK"
 SKIP     = "SKIP"
 WARN     = "WARN"   # skipped with a warning (e.g. missing script)
 FAIL     = "FAIL"
-NA       = "N/A"    # step cannot apply (e.g. no v2/he/ → propagate is irrelevant)
+NA       = "N/A"    # step cannot apply (e.g. no v2/heb/ → propagate is irrelevant)
 
 # ---------------------------------------------------------------------------
 # Subprocess helpers
@@ -197,11 +197,11 @@ def run_apply_validators(spec: dict, dry_run: bool) -> tuple[str, str]:
 def run_propagate(spec: dict, dry_run: bool) -> tuple[str, str]:
     """Step 4 — propagate_editorial_layers.py --book <out_subdir>.
 
-    Skip (N/A) if v2/he/<out_subdir>/ does not exist — nothing to propagate.
+    Skip (N/A) if v2/heb/<out_subdir>/ does not exist — nothing to propagate.
     """
-    v2_dir = V2_HE_DIR / spec["out_subdir"]
+    v2_dir = V2_HEB_DIR / spec["out_subdir"]
     if not (v2_dir.is_dir() and any(v2_dir.glob("*.txt"))):
-        return NA, f"v2/he/{spec['out_subdir']}/ missing — nothing to propagate"
+        return NA, f"v2/heb/{spec['out_subdir']}/ missing — nothing to propagate"
 
     if not _script_exists("propagate_editorial_layers.py"):
         return FAIL, "propagate_editorial_layers.py not found"
@@ -258,14 +258,14 @@ def run_build(book_key: str, dry_run: bool) -> tuple[str, str]:
 def count_review_queue(spec: dict) -> int:
     """Count REVIEW-REQUIRED cola lines in v4/editorial/<out_subdir>/.
 
-    Falls back to counting cola lines in v2/he/<out_subdir>/ when v4 does not
+    Falls back to counting cola lines in v2/heb/<out_subdir>/ when v4 does not
     exist (since the full v4 editorial pass may not yet have happened).
 
     A "REVIEW-REQUIRED" count is the total number of Hebrew cola lines across
     all chapter files in the best available editorial tier: v4 preferred, then
     v2, then v1. Returns -1 if none of the tiers have data.
     """
-    for tier_dir in (V4_ED_DIR, V2_HE_DIR, V1_HE_DIR):
+    for tier_dir in (V4_ED_DIR, V2_HEB_DIR, V1_HE_DIR):
         book_dir = tier_dir / spec["out_subdir"]
         if not book_dir.is_dir():
             continue

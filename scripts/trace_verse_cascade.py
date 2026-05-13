@@ -21,7 +21,7 @@ from scripts.apply_specs import merge_lines, split_lines  # noqa: E402
 
 
 def extract_verse(corpus_book_dir: Path, chapter: int, verse: int) -> str:
-    """Extract a single verse from the v2/he corpus into a single-verse chapter file."""
+    """Extract a single verse from the v2/heb corpus into a single-verse chapter file."""
     chapter_str = f"{chapter:02d}"
     book_name = corpus_book_dir.name
     suffix = book_name.split("-", 1)[1] if "-" in book_name else book_name
@@ -58,7 +58,7 @@ def main():
     verse = int(sys.argv[3])
     max_passes = int(sys.argv[4]) if len(sys.argv) >= 5 else 5
 
-    corpus_book_dir = ROOT / "data/text-files/v2/he" / book_dir_name
+    corpus_book_dir = ROOT / "data/text-files/v2/heb" / book_dir_name
     verse_text = extract_verse(corpus_book_dir, chapter, verse)
     print(f"=== Initial state of {book_dir_name} {chapter}:{verse} ===")
     print(verse_text)

@@ -27,7 +27,7 @@ from validators.colometry.validate_parallel_clause_split import (
 
 
 def main():
-    he_dir = REPO_ROOT / "data" / "text-files" / "v2" / "he"
+    he_dir = REPO_ROOT / "data" / "text-files"  / "v2" / "heb"
     out_path = REPO_ROOT / "data" / "syntax-reference" / "hpar-high-confidence.tsv"
 
     rows = []
