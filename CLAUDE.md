@@ -13,6 +13,7 @@ A colometric reading edition of the Hebrew Bible. Each line on the page is an at
 4. `private/03-sessions/yyyy-mm-dd-*/pending.md` if a recent one exists
 
 **CONSULT-ON-TRIGGER:**
+- `validators/_shared/macula_constituents.py` (API surface) — **trigger: ANY Hebrew-side or Hebrew-derived question.** KJV-distribution / English-layer / 4-layer integrity / clause membership / role-label / frame-arg / constituent-boundary questions all have Macula as the syntactic primitive. Skim the `Token` / `Constituent` / `Clause` API + the `get_verse_*` query functions BEFORE writing any heuristic against the same surface. Past failure: 2026-05-12 distribute.py iteration burned 4 cycles + 3 cascades chasing closed-list KJV-surface heuristics when Macula constituent membership was the right primitive from the start.
 - `private/01-method/colometry-canon.md` — anything touching `validators/`, `scripts/apply_*.py`, `data/text-files/v2/heb/`, syntax-reference, or rule-interpretation. Skip only for pure UX/deploy/build-tooling.
 - `../atu-method/docs/apparatus.md` + `architecture.md` — English-layer work, swap-system, anything touching 4-layer integrity. Picture-shaped: what the reader sees on tanakh-reader.com when done.
 - `../atu-method/docs/framework.md` — methodology, rule-design, autonomy-boundary. Authoritative cross-corpus body.
@@ -69,6 +70,10 @@ If you find yourself iterating an engine heuristic across multiple revert/re-app
 Before non-trivial implementation (new validator with classification logic, new spec, new shared helper, new mechanism, new canon rule, **OR ANY edit to `atu-method/atu_method/*` cross-corpus shared infrastructure**), FIRST tool call must be ≥2 parallel Agent adversarial dispatches in one message OR `Audit-skippable: <named-trivial-class>`. The cascade-iteration `engine-tried` bypass is NEVER legitimate when the engine edit itself is the unaudited change.
 
 **Build the regression-test fixture BEFORE the engine change**, not after. The fixture (sample N corpus instances, capture pre-change state as baseline, define expected-improvement set) is the FIRST move on any engine-touching investigation. Engine change without a baseline-diff to verify against = unsafe corpus-wide cascade. Past failure: 2026-05-12 distribute.py — built `verify_kjv_distribution.py` only after iteration 3, by which point 2 cascades had already burned + reverted.
+
+**Sample-audit-before-cascade when affected population >> fixture size.** If the engine change touches >100 corpus instances AND the fixture covers <10% of affected, run a randomized N≥50 spot-audit against pre-change state BEFORE corpus-wide cascade — not after. Past failure: 2026-05-12 closed-list distribute.py shipped after a 12-verse fixture passed; spot-audit run AFTER ship revealed 22 regressions in 200 sampled verses (the change touched ~6,925 instances; fixture covered 0.17%). The spot-audit script (`scripts/spot_audit_kjv_distribution.py`) is reusable infra — extend its sampling logic for other engine changes; don't rebuild from scratch.
+
+**Name the primitives explicitly in audit-dispatch prompts.** Adversarial audits return what they're asked about. If the prompt only mentions algorithmic/heuristic options, the audit returns algorithmic/heuristic options. List the available primitives (Macula constituent trees, validators/_shared/* helpers, existing engine layers, TAHOT/MetaV Strong's anchors) in the dispatch prompt and require the audit to evaluate each before recommending a heuristic.
 
 Pre-commit on canon-touching commits: include `Audit-skippable per §7 ([reason])` OR `Audit dispatched: [evidence]`. When uncertain, dispatch.
 
