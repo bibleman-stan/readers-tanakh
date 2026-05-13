@@ -1,0 +1,9 @@
+book	chapter	verse	expected	category	notes
+02-exodus	9	23	STRONG	distinct-subject-canonical	Moses stretched his staff / YHWH sent thunder (AC §3.5.4(a) canonical; head_a=Vqw Moses, head_b=Vp YHWH gave)
+03-leviticus	24	23	STRONG	anterior-pluperfect	וַיִּרְגְּמוּ + יְהוָה צִוָּה — they stoned + YHWH had commanded (AC §3.5.4(c) pluperfect)
+32-jonah	3	3	STRONG	narrative-parenthetical	וַיֵּלֶךְ יוֹנָה + נִינְוֵה הָיְתָה — Jonah went + (Nineveh was a great city) parenthetical narrative interruption
+01-genesis	17	14	NEGATIVE	casus-pendens-H15	וְעָרֵל זָכָר ... וְנִכְרְתָה — left-dislocated topic + resumptive verb, single proposition (H15 territory, not Hmfv-distinct-subject)
+08-ruth	1	1	NEGATIVE	wayehi-fef-H16	וַיְהִי בִּימֵי שְׁפֹט הַשֹּׁפְטִים + main clause — FEF temporal protasis (H16, not chain-break)
+07-judges	17	1	NEGATIVE	wayehi-fef-H16	וַיְהִי־אִישׁ מֵהַר־אֶפְרַיִם — FEF participant-introducing existential
+09-1samuel	8	8	NEGATIVE	subject-reassertion	וַיַּעַזְבֻנִי וַיַּעַבְדוּ — both wayyqtl, same subject (the people), no chain break per W&O §33.2.1c
+01-genesis	4	1	NEGATIVE	wayyqtl-only-chain	וְהָאָדָם יָדַע ... וַתַּהַר וַתֵּלֶד — first clause is qatal-frame, second wayyqtl; signature requires head_b NON-wayyqtl
