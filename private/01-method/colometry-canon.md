@@ -61,7 +61,7 @@ Every rule here cites a Hebrew grammatical fact (anchored in standard reference 
 
 ### Scope
 
-This canon governs where lines break in the v2/he editorial source files. It does not govern textual decisions (those follow the textual-posture statement at §0.1; the project does not adjudicate MT against versions), niqqud, te'amim glyph rendering, or layout beyond break positions. Scripts that touch the source text — `scripts/ingest_tahot.py`, `scripts/parse_teamim.py`, `scripts/build_books.py` — implement this canon's mechanical-rule subset; their output (`v0/prose/`, `v1/he-baseline/`, `books/`) is canon-compliant by construction within the limits of mechanical detectability.
+This canon governs where lines break in the v2/heb editorial source files. It does not govern textual decisions (those follow the textual-posture statement at §0.1; the project does not adjudicate MT against versions), niqqud, te'amim glyph rendering, or layout beyond break positions. Scripts that touch the source text — `scripts/ingest_tahot.py`, `scripts/parse_teamim.py`, `scripts/build_books.py` — implement this canon's mechanical-rule subset; their output (`v0/prose/`, `v1/he-baseline/`, `books/`) is canon-compliant by construction within the limits of mechanical detectability.
 
 ### §0.1 Textual Posture
 
@@ -113,7 +113,7 @@ The canon and the corpus are evaluated against three governing values. These are
 
 A validator emitting a STRONG finding does not, on its own, update the corpus. Three accumulation paths leave validator-state and corpus-state drifting apart silently:
 
-**Adoption-without-cascade.** When a new STRONG arm is added to an adopted validator (or a new validator enters `ADOPTED_VALIDATORS`), its findings sit in the queue until `apply_validators --all-books --diff-apply` is run. `refresh_book.py`'s base-mode `apply_validators` preserves any v2/he chapter that has diverged from v1 + adopted_validators (the PRESERVE branch), so newly-emitting STRONG findings cannot reach already-edited chapters via base-mode at all. PRESERVE is asymmetric — it protects hand-edits but blocks retroactive cascade.
+**Adoption-without-cascade.** When a new STRONG arm is added to an adopted validator (or a new validator enters `ADOPTED_VALIDATORS`), its findings sit in the queue until `apply_validators --all-books --diff-apply` is run. `refresh_book.py`'s base-mode `apply_validators` preserves any v2/heb chapter that has diverged from v1 + adopted_validators (the PRESERVE branch), so newly-emitting STRONG findings cannot reach already-edited chapters via base-mode at all. PRESERVE is asymmetric — it protects hand-edits but blocks retroactive cascade.
 
 **Run-without-adoption.** `ADOPTED_VALIDATORS` and `ALL_VALIDATORS` in `scripts/apply_validators.py` are separate registries. A validator marked adopted but missing from `ALL_VALIDATORS` is never invoked — its STRONG findings are invisible to the strong-queue aggregator. Both registries must be updated in lockstep when adopting a new validator (or the registries should be unified; deferred to infrastructure work).
 
@@ -328,7 +328,7 @@ This is the "rhetoric-bandwagon" failure mode — the highest predictable risk f
 The Tiberian **te'amim** (cantillation accents) are a 9th–10th c. CE Masoretic editorial overlay marking cantillation melody, word stress, and phrase-pause boundaries for liturgical chant. They are preserved in the printed text for textual fidelity. They are not consulted in editorial decisions and they are not cited in defensibility-capture. The three forces (atomic thought, single image, Hebrew syntax) carry the entire load.
 
 **Operational uses that survive this retirement:**
-- `scripts/parse_teamim.py` generated the v1-he-baseline (`data/text-files/v1/he-baseline/`) as a one-time mechanical starting draft for the v2/he hand-editing pass. The v1 files exist as historical artifact; they are not "evidence" in the editorial sense.
+- `scripts/parse_teamim.py` generated the v1-he-baseline (`data/text-files/v1/he-baseline/`) as a one-time mechanical starting draft for the v2/heb hand-editing pass. The v1 files exist as historical artifact; they are not "evidence" in the editorial sense.
 - The Sifrei Emet vs prose corpus partition (used for cluster-cascade routing per CLAUDE.md cluster-5 definition) is a book/chapter-membership fact, not a runtime te'amim check.
 - Sof pasuq (`׃`, U+05C3) remains usable as the structural verse-end punctuation marker (it is not a te'amim glyph proper, U+0591–U+05AF).
 
@@ -374,7 +374,7 @@ Line breaks reveal atomic thoughts; parallelism is a phenomenon the atomic-thoug
 
 **Operational implications:**
 
-- **In Sifrei Emet** (Pss/Prov/poetic Job): the v1-he-baseline (parse_teamim.py output) was the editor's starting draft. v2/he hand-editing applies the three forces; divergence from v1 is informative but not a defect — same status as in prose.
+- **In Sifrei Emet** (Pss/Prov/poetic Job): the v1-he-baseline (parse_teamim.py output) was the editor's starting draft. v2/heb hand-editing applies the three forces; divergence from v1 is informative but not a defect — same status as in prose.
 - **The project does not display parallelism via line layout.** When parallel members appear on parallel lines in the rendered edition, they appear so because each member is itself an atomic thought (structural justification 1), NOT because we are typesetting parallelism for visual effect. This is the anti-Lowth posture from the sibling BoFM canon (which named it explicitly: "split-dominant repeated-frame layout IS the parallelism-display posture the project's stance opposes") applied to the original Hebrew.
 - **Berlin's multi-dimensional analysis is a useful diagnostic** when atomic-thought analysis is borderline — when phonological + grammatical + lexical parallelism converge on a structure the v1-baseline did not register, that's high-confidence evidence for an override. But Berlin is an evidence-application tool under criterion #1, not a baseline framework.
 - **Macula constituent trees + frame annotations** (lowfat XML, see §0 source-stack) are the structural diagnostic when parallelism-detection is needed — morpho-syntactic subject/verb/role symmetry across a candidate boundary, queried mechanically. This is the canon-aligned alternative to "look at the te'amim."
@@ -698,7 +698,7 @@ Five named tests that editors invoke by name at candidate boundaries. They are n
 - Chain with intervening modifier on the regens (e.g., *הַבַּיִת הַגָּדוֹל אֲשֶׁר־לַמֶּלֶךְ*) — modifier may license a break, evaluated case-by-case.
 - Long construct chain (3+ levels deep) where the deepest rectum is itself modified by a substantial relative clause — evaluate under structural justification 5 (substantive adjunct).
 
-**Example.** Jonah 2:7 *מִמְּעֵי הַדָּגָה* — construct chain, treat as one unit; do not break between *מִמְּעֵי* and *הַדָּגָה* even though they're not maqqef-joined. Currently widow-line in v1/he-baseline Jonah; v2/he should merge upward.
+**Example.** Jonah 2:7 *מִמְּעֵי הַדָּגָה* — construct chain, treat as one unit; do not break between *מִמְּעֵי* and *הַדָּגָה* even though they're not maqqef-joined. Currently widow-line in v1/he-baseline Jonah; v2/heb should merge upward.
 
 ### Rule H3 — Vav-Consecutive Clause-Head Policy
 
@@ -706,7 +706,7 @@ Five named tests that editors invoke by name at candidate boundaries. They are n
 
 **Trigger.** *Wayyiqtol* verb at clause head (verbal morphology: וַ + dagesh forte + yiqtol stem).
 
-**Diagnostic.** **Default own line for narrative wayyiqtol clause heads.** Each wayyiqtol typically introduces its own narrative event and its own atomic thought. Even when the te'amim group multiple wayyiqtol clauses under one atnach, each gets its own line in v2/he.
+**Diagnostic.** **Default own line for narrative wayyiqtol clause heads.** Each wayyiqtol typically introduces its own narrative event and its own atomic thought. Even when the te'amim group multiple wayyiqtol clauses under one atnach, each gets its own line in v2/heb.
 
 **Exceptions:**
 - **Tight narrative pairs** (*וַיָּקָם וַיֵּלֶךְ*, *וַיַּעַן וַיֹּאמֶר*, *וַיָּבֹא וַיֵּשֶׁב*): two wayyiqtol clauses describing tightly-bonded sequential actions in one image (rising-and-going, answering-and-saying, coming-and-sitting) merge under M1 bonded-pair logic. The pair functions as a single narrative beat.
@@ -870,7 +870,7 @@ When Ketiv and Qere differ, the Masoretes preserved both: Ketiv stands in the co
 
 Rule H8 (Te'amim as Evidence — Operational Application) is **retired** as part of the te'amim consultative-role removal. See §1 "The Te'amim Play No Role in Editorial Decisions" and §8 entry "2026-05-05 — Te'amim consultative role retirement" for the retirement rationale.
 
-The v1-he-baseline (`data/text-files/v1/he-baseline/`) was generated mechanically by `scripts/parse_teamim.py` as a one-time starting draft for v2/he hand-editing. Defensibility-capture for non-trivial breaks cites the three forces (atomic thought, single image, Hebrew syntax) and the named structural-justifications; it does not cite te'amim positions.
+The v1-he-baseline (`data/text-files/v1/he-baseline/`) was generated mechanically by `scripts/parse_teamim.py` as a one-time starting draft for v2/heb hand-editing. Defensibility-capture for non-trivial breaks cites the three forces (atomic thought, single image, Hebrew syntax) and the named structural-justifications; it does not cite te'amim positions.
 
 Rule numbering preserved (H8 slot stays empty rather than renumbering H9–H17).
 
@@ -926,8 +926,8 @@ Rule numbering preserved (H11 slot stays empty rather than renumbering H12–H17
 **Trigger.** Petucha (פ marker in TAHOT, or whole-line gap in source manuscripts) or setuma (ס marker, or mid-line gap) in the source apparatus.
 
 **Diagnostic.**
-- **Petucha → blank-line paragraph break** in v2/he and rendered as `<div class="paragraph-break-open">` (or equivalent) in the web app.
-- **Setuma → indented paragraph break** in v2/he and rendered as a smaller-prominence visual break.
+- **Petucha → blank-line paragraph break** in v2/heb and rendered as `<div class="paragraph-break-open">` (or equivalent) in the web app.
+- **Setuma → indented paragraph break** in v2/heb and rendered as a smaller-prominence visual break.
 - Section-level navigation in the web app uses petucha/setuma boundaries as primary structural cues; chapter/verse divisions are present for citation but not the primary structural framing.
 
 **Tradition-disagreement protocol.** When Aleppo, Leningrad, MAM, and BHS disagree on petucha/setuma placement (which they do at the ~5–10% level per Yeivin 1980; Tov 2012), the project follows Leningrad per textual posture §0.1. Discrepancies may be documented in marginal note for sibling-tradition awareness but do not affect the primary text.
@@ -1293,7 +1293,7 @@ The predecessor stub canon (231 lines, established 2026-04-25) was scrapped and 
 
 ### 2026-04-27 — Tier collapse: 5-tier pipeline → 3-tier pipeline
 
-Pipeline simplified from **v0 → v1 → v2-he-syntax → v3-he-colometry → v4-editorial** (5 tiers) to **v0 → v1 → v2** (3 tiers). The intermediate auto-apply tiers (v2-he-syntax via `apply_v2.py`; v3-he-colometry via `apply_v3.py`) are retired. The editorial gold standard moves from `data/text-files/v4/editorial/` to `data/text-files/v2/he/`; the parallel per-word layers move from `data/text-files/v4/{eng-interlinear,eng-gloss,translit}/` to `data/text-files/v2/{eng-interlinear,eng-gloss,translit}/`. Path references throughout this canon, scripts, validators, hooks, handoffs, and CLAUDE.md updated accordingly.
+Pipeline simplified from **v0 → v1 → v2-he-syntax → v3-he-colometry → v4-editorial** (5 tiers) to **v0 → v1 → v2** (3 tiers). The intermediate auto-apply tiers (v2-he-syntax via `apply_v2.py`; v3-he-colometry via `apply_v3.py`) are retired. The editorial gold standard moves from `data/text-files/v4/editorial/` to `data/text-files/v2/heb/`; the parallel per-word layers move from `data/text-files/v4/{eng-interlinear,eng-gloss,translit}/` to `data/text-files/v2/{eng-interlinear,eng-gloss,translit}/`. Path references throughout this canon, scripts, validators, hooks, handoffs, and CLAUDE.md updated accordingly.
 
 **WHY:** the auto-apply tiers added pipeline complexity without adding capability. Their function was to auto-apply STRONG-tagged validator findings as a pre-editorial mechanical pass; that work can be done equivalently inside the editorial pass with the same Category A/B/C reasoning the canon already governs (§2 Mechanical-rule authority). `apply_v3.py` was a passthrough (empty `ADOPTED_VALIDATORS` — no Layer 3 validators had cleared the ≥80% adoption gate); `apply_v2.py` had two validators cleared, but their findings (~2 corrections per chapter on Jonah) sit on the editorial work queue without meaningful cost saving. The closed-list rule set (H1, H2, H5, H7, H11, H16) is not the mechanical-error surface that motivated mechanical-tier expansion in sibling projects (where ~10–12% error rates emerged from open-ended pattern-discovery passes); the canon's autonomy boundary already bounds the mechanical surface. Two tiers (baseline + editorial) are sufficient.
 
@@ -1312,7 +1312,7 @@ The following carry-forwards listed in the 2026-04-26 §8 "Canon v1.0 written fr
 - **`scripts/parse_teamim.py` docstring framing** — docstring already carries correct Rule H8 evidence-not-authority framing as of the 2026-04-27 session (confirmed by inspection); the Rule H11 tifcha-as-servant mechanical adjustment carry-forward remains open (script behavior unchanged; editorial work queue absorbs the finding).
 - **Validator suite "planned, not yet built"** — validators are now built and active (four validators across `validators/syntax/` and `validators/colometry/`). §6 updated 2026-04-27 to reflect as-built reality.
 
-Remaining open carry-forward: Rule H11 parse_teamim.py mechanical adjustment (tifcha-as-servant behavior in the v1-he-baseline generator). This is an improvement-path item, not a correctness blocker — the editorial pass at v2/he absorbs the finding.
+Remaining open carry-forward: Rule H11 parse_teamim.py mechanical adjustment (tifcha-as-servant behavior in the v1-he-baseline generator). This is an improvement-path item, not a correctness blocker — the editorial pass at v2/heb absorbs the finding.
 
 ### 2026-04-28 — Rule H18 Clause-Nucleus Integrity adopted; te'amim-centric validator architecture rejected
 
@@ -1491,7 +1491,7 @@ Each entry records: the retired formulation, the retirement date, why it was ret
 
 **Retired formulation.** A proposed validator (`validate_tifcha_servant.py`) that would trigger on the tifcha (TIPHA) glyph's presence within atnach domain, flag candidate lines, and recommend merges where tifcha was acting as a "servant of atnach" rather than a primary disjunctive.
 
-**Why retired.** Killed in design after Stan's discomfort flag ("overreliance on Masoretic punctuation cues for determining thought line breaks") and a six-agent hostile audit. Two problems: (1) **Architectural violation:** a validator triggering on te'amim glyph placement operationally centers te'amim as the primary candidate-universe — exactly the te'amim-as-prior the §1 demotion rejects. Even framing the validator as "demoting te'amim by merging across them" doesn't fix the problem: the candidate universe is still defined by tifcha glyph positions. The §1 Validator-architecture corollary (added same session) makes this explicit. (2) **Gold-standard disconfirmation:** the Jonah 1 hand-edited gold standard (the project's existing v2/he reference) showed 3 of 4 candidate tifcha-servant sites SPLIT by Stan's editorial decisions — STRONG-MERGE auto-application would have inverted the documented gold standard.
+**Why retired.** Killed in design after Stan's discomfort flag ("overreliance on Masoretic punctuation cues for determining thought line breaks") and a six-agent hostile audit. Two problems: (1) **Architectural violation:** a validator triggering on te'amim glyph placement operationally centers te'amim as the primary candidate-universe — exactly the te'amim-as-prior the §1 demotion rejects. Even framing the validator as "demoting te'amim by merging across them" doesn't fix the problem: the candidate universe is still defined by tifcha glyph positions. The §1 Validator-architecture corollary (added same session) makes this explicit. (2) **Gold-standard disconfirmation:** the Jonah 1 hand-edited gold standard (the project's existing v2/heb reference) showed 3 of 4 candidate tifcha-servant sites SPLIT by Stan's editorial decisions — STRONG-MERGE auto-application would have inverted the documented gold standard.
 
 **Replacement.** The editorial problem the validator was targeting (tifcha-driven over-fragmentation in v1-he-baseline) is addressed by (a) Rule H11 Tifcha-as-Servant-of-Atnach as editorial guidance for human editors reviewing the v1 draft, and (b) Rule H18 Clause-Nucleus Integrity, which provides the morpho-syntactic (non-te'amim) trigger that catches the same over-fragmentation pattern. See §1 Validator-architecture corollary; Rule H11; Rule H18; §8 "2026-04-28 — Rule H18 adopted; te'amim-centric validator architecture rejected."
 

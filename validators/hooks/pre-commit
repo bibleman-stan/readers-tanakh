@@ -3,30 +3,31 @@
 #
 # Two-phase gate:
 #
-# Phase 1 — Follow-on rebuild cascade (v2/he changes only)
-#   When any data/text-files/v2/he/<book>/ file is staged, automatically
+# Phase 1 — Follow-on rebuild cascade (v2/heb changes only)
+#   When any data/text-files/v2/heb/<book>/ file is staged, automatically
 #   runs refresh_book.py --book <book> --build for each affected book and
 #   stages the regenerated output (v2 derived layers + books/<book>/ per-chapter
 #   files + manifest.json). Multiple books edited in one commit are rebuilt
 #   sequentially. If any rebuild fails, the commit is aborted before the
 #   validator gate.
 #
-#   Why auto-staging is safe here: the propagation pipeline (parse_teamim →
-#   propagate_editorial_layers → build_books) is deterministic — given the
-#   same v2/he input, the per-word layers (eng-interlinear/eng-gloss/translit)
-#   and the per-chapter HTML are reproducible. There's no proportional-
-#   redistribution heuristic that requires hand-correction. If you change this
-#   assumption (e.g., introduce a stochastic English-regen step), you must
-#   strip the auto-stage in Phase 1 and require manual `git add` after rebuild.
+#   Why auto-staging is safe here: the propagation pipeline (regenerate_english
+#   KJV-anchored + propagate_editorial_layers + build_books) is deterministic —
+#   given the same v2/heb input, the per-word layers (eng-interlinear/eng-kjv/
+#   translit) and the per-chapter HTML are reproducible. There's no
+#   proportional-redistribution heuristic that requires hand-correction. If
+#   you change this assumption (e.g., introduce a stochastic English-regen
+#   step), you must strip the auto-stage in Phase 1 and require manual
+#   `git add` after rebuild.
 #
 #   FAILURE MODE THIS CASCADE PRODUCES IF THE TREE IS DIRTY: pre-existing
-#   uncommitted v2/he changes get pulled into whatever commit you're making.
+#   uncommitted v2/heb changes get pulled into whatever commit you're making.
 #   Always run `git status --short | wc -l` before staging anything. See
 #   CLAUDE.md "Tree-state self-check before commit" — Item Zero of the
 #   2026-05-04 state block is a worked example of this exact failure.
 #
 # Phase 2 — Validator regression gate
-#   Runs run_all.py --baseline-check on any commit that touches v2/he/,
+#   Runs run_all.py --baseline-check on any commit that touches v2/heb/,
 #   the colometry canon, syntax-reference docs, or validator scripts.
 #   Blocks the commit if finding counts increase vs .baseline.json.
 #
@@ -45,10 +46,10 @@ cd "$REPO_ROOT"
 # ── Phase 0.5 (REMOVED 2026-05-07) ──────────────────────────────────────────
 #
 # Was: validator-side change → auto-run apply_validators.py --all-books to
-# mechanically apply STRONG findings to v2/he, then chain into Phase 1.
+# mechanically apply STRONG findings to v2/heb, then chain into Phase 1.
 #
 # Why removed: apply_validators.py has a divergence guard (lines 825-840)
-# that refuses writes when v2/he is "ahead" of v1+adopted_validators —
+# that refuses writes when v2/heb is "ahead" of v1+adopted_validators —
 # which is virtually always after any apply_specs cascade. Phase 0.5
 # therefore ran the full cross-corpus cascade (~5+ min wall) but produced
 # zero writes. Pure friction, no benefit.
@@ -62,15 +63,15 @@ cd "$REPO_ROOT"
 
 # ── Phase 1: follow-on rebuild cascade ──────────────────────────────────────
 
-# Find all staged v2/he/<book>/<file> paths and extract unique book folders.
-V2_HE_STAGED=$(git diff --cached --name-only | grep -E "^data/text-files/v2/he/[^/]+/" || true)
+# Find all staged v2/heb/<book>/<file> paths and extract unique book folders.
+V2_HEB_STAGED=$(git diff --cached --name-only | grep -E "^data/text-files/v2/heb/[^/]+/" || true)
 
-if [ -n "$V2_HE_STAGED" ]; then
-    # Extract unique book folder names (the segment after v2/he/).
-    BOOKS=$(echo "$V2_HE_STAGED" | sed -E 's|^data/text-files/v2/he/([^/]+)/.*|\1|' | sort -u)
+if [ -n "$V2_HEB_STAGED" ]; then
+    # Extract unique book folder names (the segment after v2/heb/).
+    BOOKS=$(echo "$V2_HEB_STAGED" | sed -E 's|^data/text-files/v2/heb/([^/]+)/.*|\1|' | sort -u)
 
     echo ""
-    echo "[pre-commit] v2/he edits detected. Running follow-on rebuild cascade..."
+    echo "[pre-commit] v2/heb edits detected. Running follow-on rebuild cascade..."
 
     for BOOK in $BOOKS; do
         echo ""
@@ -97,7 +98,7 @@ if [ -n "$V2_HE_STAGED" ]; then
     # if a layer was untouched by the rebuild.
     git add \
         data/text-files/v2/eng-interlinear/ \
-        data/text-files/v2/eng-gloss/ \
+        data/text-files/v2/eng-kjv/ \
         data/text-files/v2/translit/ \
         books/ \
         2>/dev/null || true
@@ -109,7 +110,7 @@ fi
 # ── Phase 2: validator regression gate (incremental) ───────────────────────
 #
 # Categorize staged paths to decide what scope (if any) needs baseline-check:
-#   CODE_OR_CORPUS — touches v2/he/<book>, validators/<*.py|*.yaml>, or
+#   CODE_OR_CORPUS — touches v2/heb/<book>, validators/<*.py|*.yaml>, or
 #                    scripts/<*.py> (engine code). Either could change
 #                    validator output → run baseline-check.
 #   DOCS_ONLY      — touches only canon, syntax-reference, handoffs,
@@ -119,14 +120,14 @@ fi
 #                    which dominated the te'amim revision commit chokepoint).
 #
 # Validator-code or engine changes still pay full cost (any book could be
-# affected). v2/he changes still pay full cost in the current iteration;
+# affected). v2/heb changes still pay full cost in the current iteration;
 # scoping to per-book requires per-book baseline (deferred).
 
-CODE_OR_CORPUS=$(git diff --cached --name-only | grep -E "^(data/text-files/v2/he/|validators/.*\.(py|yaml)$|scripts/.*\.py$)" || true)
+CODE_OR_CORPUS=$(git diff --cached --name-only | grep -E "^(data/text-files/v2/heb/|validators/.*\.(py|yaml)$|scripts/.*\.py$)" || true)
 
 if [ -z "$CODE_OR_CORPUS" ]; then
     echo ""
-    echo "[pre-commit] Docs-only commit (no v2/he or validator/engine code changes). Skipping baseline-check."
+    echo "[pre-commit] Docs-only commit (no v2/heb or validator/engine code changes). Skipping baseline-check."
     exit 0
 fi
 

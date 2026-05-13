@@ -2,7 +2,7 @@
 
 **Date:** 2026-04-29
 **Cluster:** Latter Prophets — Isaiah 7–8, Jeremiah 32/36, Ezekiel 33, Malachi 1–2, Hosea 1, Amos 7, Micah 3
-**Source layer:** v1/he-baseline (no v2/he exists for these books)
+**Source layer:** v1/he-baseline (no v2/heb exists for these books)
 **Wave 1 avoided:** Isa 36–38, Jer 26/36/38, Ezek 1–2, Jonah 1/3, Hagg 1, Zech 1
 **Bias note:** Prose-leaning sampling per task brief. Formula-integrity focus: m4 YHWH formula integrity (כֹּה אָמַר יְהוָה / נְאֻם יְהוָה) over-fire testing is the primary agenda.
 
