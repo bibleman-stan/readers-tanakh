@@ -126,11 +126,22 @@ def hebrew_cola_prosodic_count(cola: str) -> int:
 
 
 def pipe_layer_word_count(line: str) -> int:
-    """Count |-separated tokens in a translit/interlinear cola line."""
+    """Count |-separated POSITIONS in a translit/interlinear cola line.
+
+    Counts positions (including empty ones), not just non-empty tokens —
+    TAHOT's source data has empty English entries for some Hebrew words
+    (e.g., maqqef-bound וְאֶת prefix at 2Sam 5:8 / Isa 10:15), and those
+    empty positions are valid alignment slots. The 4-layer integrity
+    invariant is *positional* parity (slot N in translit lines up with
+    slot N in interlinear and Hebrew prosodic word N), not non-empty-
+    token parity.
+
+    Pre-2026-05-12 the function filtered empties, producing false-positive
+    drift reports on the 2 stubborn 2Sam 5:8 + Isa 10:15 chapters.
+    """
     if not line.strip():
         return 0
-    parts = [p for p in (s.strip() for s in line.split("|")) if p]
-    return len(parts)
+    return len(line.split("|"))
 
 
 def verify_book(book_subdir: str, *, only_chapter: int | None = None):
