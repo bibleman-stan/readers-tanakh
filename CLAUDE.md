@@ -281,6 +281,16 @@ When Stan names a specific verse with a specific desired partition, the next ass
 
 The Gen 1:8 day-formula was a real gap (M1 bonded-pair on cognate-lemma evening+morning merism — same lemma, true bipartite expression). Engine fix justified. The Exo 2:5 telic-pair was NOT — framework's M1 exclusion answered it directly.
 
+## Anchor editorial decisions in Hebrew syntax, not English-translation surface form
+
+Editorial intuitions sourced from the KJV layer (or any literary English translation) can mislead about Hebrew structure. KJV systematically smooths Hebrew wayyiqtol narrative chains into English-idiomatic temporal subordinations ("**when** she saw") and infinitive purpose-clauses ("**to** fetch it") that don't exist in the Hebrew syntax. The Hebrew underneath those KJV smoothings is typically a sequential wayyiqtol chain — three independent main-clause propositions presented coordinately.
+
+**Discipline (Stan-corrected at Exo 2:5 2026-05-12):** when Stan flags "feels like one ATU" based on KJV reading, before agreeing OR disagreeing, FIRST check the Hebrew morph data (Macula `_morph_tag`):
+- Wayyiqtols (`Vqw*` / `Vnw*` / etc.) with no intervening subordinator (אִם / כִּי / כַּאֲשֶׁר / אֲשֶׁר / לְ + infinitive) = sequential narrative chain → split per framework.
+- KJV's "when" / "to" / "and then" English subordinations imposed on independent wayyiqtols are translation choices, not Hebrew syntactic facts.
+
+Push back on the English-driven intuition with the Hebrew morph evidence. This is exactly the kind of pushback Stan wants ("any time it looks like i'm wrong, push back" — codified 2026-05-12). The decision criterion is Hebrew syntax; the KJV layer is downstream output, not editorial input.
+
 ---
 
 ## Connected Resources
