@@ -147,14 +147,6 @@
     white-space: nowrap;
   }
 
-  .topbar-brand {
-    font-size: 0.62em;
-    color: var(--text-faint);
-    font-weight: 400;
-    font-style: italic;
-    letter-spacing: 0.03em;
-  }
-
   /* === NAV PANEL === */
   .nav-panel {
     position: fixed;
@@ -1570,7 +1562,6 @@
          Wave 6-OT: always visible; the .swap markup is emitted by the build
          pipeline (build_books.py + atu_method.swaps) under all conditions. -->
     <button id="aid-pill" onclick="toggleAid()" aria-label="Modern words" title="Toggle modern words">Modern</button>
-    <span class="topbar-brand" onclick="showLanding()" style="cursor:pointer;">Tanakh Reader</span>
     <!-- Search button hidden for MVP. Hebrew search needs niqqud/te'amim
          normalization that hasn't been implemented yet. The search overlay
          and infrastructure are still in the file and will activate when
@@ -1682,7 +1673,7 @@
       <li>Tap the book name or chapter number in the top bar to open the navigation panel.</li>
       <li>Tap a chapter number, then select a verse to jump directly to it.</li>
       <li>URL format: <code>#book-chapter-verse</code> (e.g., <code>#genesis-1-1</code>).</li>
-      <li>Tap the home icon or &ldquo;Tanakh Reader&rdquo; text to return to the landing page.</li>
+      <li>Tap the home icon to return to the landing page.</li>
       <li>Use arrow keys or the floating arrows at screen edges to move between chapters.</li>
     </ul>
 
@@ -2065,7 +2056,7 @@ function setBookHash(slug) {
 // --- Topbar ---
 
 function updateTopbar() {
-  document.getElementById('topbar-book').textContent = BOOKS[currentBook].name;
+  document.getElementById('topbar-book').textContent = bookDisplayName(currentBook, 'short');
   document.getElementById('topbar-chap').textContent = currentChapter;
   document.title = BOOKS[currentBook].name + ' ' + currentChapter + ' — Tanakh Reader';
 }
@@ -2103,7 +2094,7 @@ function updateTopbarForView(view, slug) {
   } else {
     locEl.style.display = '';
     homeBtn.style.display = '';
-    bookEl.textContent = bookDisplayName(currentBook, 'name');
+    bookEl.textContent = bookDisplayName(currentBook, 'short');
     chapEl.textContent = currentChapter;
     document.title = bookDisplayName(currentBook, 'name') + ' ' + currentChapter + ' — Tanakh Reader';
     locEl.onclick = () => openNav();
