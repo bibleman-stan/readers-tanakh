@@ -769,7 +769,7 @@ closed_lists:
   - BONDED_LEMMA_PAIRS (curated wayyiqtol pair lexicon at data/syntax-reference/bonded-lemma-pairs.txt)
 fixture: Gen 1:5 (וַיִּקְרָא ... וַיְהִי-עֶרֶב — formula closure pair); Exo 2:6 (6-line restructure per H3+H14+H5b)
 cross_corpus: GNT R9 subordinate-clause-introduction (analogous default own-line policy for clause heads)
-references: WO §33.1.1c (wayyqtl frequency: 14,972 cases = 29% of finite verbs — empirical backbone for default-split), §33.1.2g (dual nature: perfective aspect + subordination), §33.2.1 (succession taxonomy: chronological / logical entailment / logical contrast / summary), §33.2.2 (epexegesis — informs hendiadic merge sub-class), §33.2.3 (pluperfect); AC §3.5.1 (Imperfect+waw consecutive — wayyiqtol succession), §3.5.4 (Interruptions in Verbal Sequences — taxonomy of chain breaks; novel relative to W&O)
+references: WO §33.1.1c (wayyqtl frequency: 14,972 cases = 29% of finite verbs — empirical backbone for default-split), §33.1.2g (dual nature: perfective aspect + subordination), §33.2.1 (succession taxonomy: chronological / logical entailment / logical contrast / summary), §33.2.2 (epexegesis — wayyqtl explaining the prior situation; conceptually related to but distinct from hendiadic merge), §33.2.3 (pluperfect); AC §3.5.1 (Imperfect+waw consecutive — wayyiqtol succession), §3.5.4 (Interruptions in Verbal Sequences — taxonomy of chain breaks; novel relative to W&O)
 ```
 
 ### Rule H4 — Vocative Handling
@@ -839,7 +839,7 @@ closed_lists:
   - SOLEMNITY_PREFIXES (כֹּה אָמַר יְהוָה / נְאֻם־יְהוָה — formulaic frames)
 fixture: Jonah 1:1 (long-frame split), Jonah 1:6/1:9 (short-frame split — short-framing-default retired)
 cross_corpus: BoFM Rule 11 / GNT R11 direct-speech-introduction
-references: WO §36.2.3 (Infinitive Construct with preposition ל — the לֵאמֹר frame as complementizer marking speech-onset), §36.2.1 (syntactic features of nominal-use infinitive construct); AC §3.4.1 (Infinitive Construct — includes לֵאמֹר treatment)
+references: WO §36.2.3 (ל + Infinitive Construct general uses — לֵאמֹר is one instance of this pattern, not separately treated as speech-frame in W&O §36), §36.2.1 (syntactic features of nominal-use infinitive construct); AC §3.4.1 (Infinitive Construct general syntax — לֵאמֹר is an instance; AC does not give it a dedicated subsection)
 ```
 
 ### Rule H5b — Speech-Act Announcement Default
@@ -887,7 +887,7 @@ closed_lists:
   - SPEECH_ACT_VERBS (subset of SPEECH_FRAME_VERBS — finite forms only, all stems including imperative/jussive)
 fixture: Jonah 1:6 (וַיֹּאמֶר לוֹ // מַה־לְּךָ — split per H5b default)
 cross_corpus: GNT R28-ext speech-act-announcement (this is the Tanakh codification of the analogous rule)
-references: WO §34.3 (Uses of the Jussive — speech-act subtypes), §34.5.1 (Cohortative in Independent Clauses), §34.2 (Form: imperative/jussive/cohortative paradigm); AC §3.3 (Modals: Jussive/Imperative/Cohortative paradigm), §3.5.3 (Commands in Verbal Sequences)
+references: WO §34.3 (Uses of the Jussive — speech-act subtypes), §34.5.1 (Cohortative in Independent Clauses), §34.2 (Form: §34.2.1 Jussive form, §34.2.2 Imperative and Cohortative form); AC §3.3 (Modals: Jussive/Imperative/Cohortative paradigm), §3.5.3 (Commands in Verbal Sequences)
 ```
 
 ### Rule H6 — Ketiv/Qere Policy
@@ -984,7 +984,7 @@ closed_lists:
   - CAUSAL_KI_CONTEXTS (כִּי as causal subordinator vs. כִּי as recitative/asseverative)
 fixture: Gen 12:11 (יָדַעְתִּי כִּי / Hb merge); Jer 31:34 (יָדְעוּ אוֹתִי)
 cross_corpus: BoFM Rule 17 / GNT R8 framing-devices (analogous verb-complement integrity)
-references: WO §10.2.1 (Accusative-object taxonomy: direct/effected/internal/complement — H7 currently flattens these), §10.2.3 (Double Accusatives — relevant to verbs like נתן with recipient + thing-given), §11.4 (verbs governing accusative OR prepositional object with no semantic difference — צוה, ידע, הרג, ארך Hiphil); AC §2.3.1 (Accusative-Object 4 species: direct/effected/internal/complement — matches WO taxonomy with more accessible exposition)
+references: WO §10.2.1 (Accusative-object taxonomy: direct/effected/internal/complement — H7 currently flattens these), §10.2.3 (Double Accusatives — relevant to verbs like נתן with recipient + thing-given), §11.4.1 (Verbs with Accusative or Prepositional Objects — pairs verbs that govern both interchangeably); AC §2.3.1 (Accusative-Object 4 species: direct/effected/internal/complement — matches WO taxonomy with more accessible exposition)
 ```
 
 ### Rule H8 — RETIRED 2026-05-05
@@ -1024,7 +1024,7 @@ closed_lists:
   - INTRODUCING_FORMULAE (oath formulas, doxology openers, prophetic-attribution formulas)
 fixture: Gen 14:18 (אֵל עֶלְיוֹן introducing); Ps 23:1 (יְהוָה referencing)
 cross_corpus: GNT divine-title-handling (Tanakh-specific elaboration; GNT canon doesn't have a numbered analog)
-references: WO §12.3 (Apposition: identification vs class — directly grounds H9's INTRODUCING formal anchor / REFERENCING flow distinction), §12.3f (particle repetition: relevant to oath-formula chains like לְאַבְרָהָם לְיִצְחָק); AC §2.4 (Apposition — 5 species: Species/Attributive/Material/Measure/Explicative — different lens from WO §12.3's 2-species identification/class frame)
+references: WO §12.3 (Noun-Noun Appositional Phrases — §12.3a apposition identifies or qualifies the leadword, §12.3b sortal subclass-narrowing, §12.3c quality/character, §12.3e name + identifying apposition — §12.3e grounds H9 INTRODUCING formal-anchor cases like אֵל עֶלְיוֹן); §12.3f (particle repetition on prep+name: לִבְנִי לְיִצְחָק Gen 24:4, לְעַבְדְּךָ לְיַעֲקֹב Gen 32:19); AC §2.4 (Apposition — 5 species: Species/Attributive/Material/Measure/Explicative — different lens from WO §12.3's 2-species identification/class frame)
 ```
 
 ### Rule H10 — Cross-Verse Continuity Merge
@@ -1230,7 +1230,7 @@ closed_lists:
   - LIST_FORMULA_PEERS (curse-series אָרוּר / blessing-series בָּרוּךְ / beatitude אַשְׁרֵי)
 fixture: Gen 5 (full genealogy); Deut 27:15-26 (curse-series)
 cross_corpus: BoFM Rule 21 genealogy / GNT R12-R14 parallel-stacking
-references: WO §39 (Coordination — parallel-list patterns at §39.2 Waw conjunctions), §39.2.5 (Conjunctive Waw — list-uniform handling); AC §5.3.4 (Existential Sentences — יֵשׁ/אַיִן markers in genealogy heads)
+references: WO §39.2.1 (Basic Functions of Waw — phrasal w distribution in lists: w on each item, only on last, or omitted), §39.2.5 (Conjunctive Waw — joining clauses including hendiadic pairs); AC §5.3.4 (Existential Sentences — יֵשׁ/אַיִן markers in genealogy heads)
 ```
 
 ### Rule H18 — Clause-Nucleus Integrity (Verbless / Participial / Verb-PP-Complement)
