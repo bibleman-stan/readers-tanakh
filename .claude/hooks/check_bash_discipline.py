@@ -131,6 +131,20 @@ _INSTANCE_FIX_SUBSTANCE_RE = re.compile(
     r"revert.rerun|walkback|verify|verification)\b",
     re.IGNORECASE,
 )
+# Macula-checked bypass for atu-method/atu_method/* edits. Per CLAUDE.md
+# "Use the primitive, not the heuristic" rule (codified 2026-05-12 after
+# the distribute.py iteration cycle): edits to cross-corpus shared
+# infrastructure require evidence in recent assistant text that Macula
+# constituent-tree query was considered — OR a closed-vocab bypass naming
+# why Macula doesn't apply.
+_MACULA_CHECKED_SUBSTANCE_RE = re.compile(
+    r"\b(macula.checked|macula.queried|macula.extended|macula.consulted|"
+    r"macula.doesn.?t.cover|macula.does.not.cover|"
+    r"not.applicable.greek.side|greek.side.only|"
+    r"primitive.already.in.use|trivial.non.structural|"
+    r"audit.dispatched.with.macula.named|docstring.only|formatting.only)\b",
+    re.IGNORECASE,
+)
 
 # Cascade-invocation iteration tripwire (per 2026-05-05 Sifrei-Emet purge
 # arc + Opus hook audit). Detects the SECOND `apply_specs.py --book <X>`
@@ -690,6 +704,115 @@ def _write_violations(payload: dict) -> list[str]:
     ]
 
 
+def _atu_method_edit_violations(payload: dict) -> list[str]:
+    """Detect Edit/Write to atu-method/atu_method/* without Macula evidence.
+
+    Per CLAUDE.md "Use the primitive, not the heuristic" rule (codified
+    2026-05-12 after the distribute.py iteration cycle that burned 4
+    iterations + 3 cascades + 5 audit waves on closed-list KJV-surface
+    heuristics when Macula constituent membership was the right primitive
+    from the start):
+
+    Edits to atu-method/atu_method/* (cross-corpus shared infrastructure
+    for KJV alignment, distribution, Strong's normalization) require
+    evidence in recent assistant text that the Macula primitive was
+    consulted before reaching for surface-form heuristics.
+
+    Bypass: a recent assistant message must contain the marker
+    `# macula-checked: <verdict>` with substance from the closed vocab.
+    """
+    file_path = payload.get("tool_input", {}).get("file_path", "") or ""
+    if not file_path:
+        return []
+    norm = file_path.replace("\\", "/")
+    # Trigger only on atu-method/atu_method/* engine code (not docs, tests,
+    # or other top-level repo files). The kjv_alignment, audit, and other
+    # algorithm modules under atu_method/ are the cross-corpus engine.
+    if not re.search(r"/atu-method/atu_method/[^/]+/.*\.py$", norm):
+        return []
+
+    transcript_path = payload.get("transcript_path", "")
+    asst_text = ""
+    if transcript_path:
+        p = Path(transcript_path)
+        if p.exists():
+            try:
+                with p.open("rb") as fh:
+                    fh.seek(0, 2)
+                    size = fh.tell()
+                    tail_size = min(size, 5_000_000)
+                    fh.seek(size - tail_size)
+                    tail_bytes = fh.read()
+                tail_text = tail_bytes.decode("utf-8", errors="ignore")
+            except Exception:
+                tail_text = ""
+            collected: list[str] = []
+            for line in reversed(tail_text.splitlines()):
+                if not line.strip():
+                    continue
+                try:
+                    entry = json.loads(line)
+                except Exception:
+                    continue
+                if entry.get("type") != "assistant":
+                    continue
+                msg = entry.get("message")
+                if not isinstance(msg, dict):
+                    continue
+                content = msg.get("content")
+                if isinstance(content, list):
+                    for block in content:
+                        if isinstance(block, dict) and block.get("type") == "text":
+                            t = block.get("text", "")
+                            if isinstance(t, str):
+                                collected.append(t)
+                if len(collected) >= 5:
+                    break
+            asst_text = "\n".join(collected)
+
+    bypass_token = "# macula-checked:"
+    if bypass_token in asst_text:
+        substance_err = _validate_bypass_substance(
+            asst_text, bypass_token, _MACULA_CHECKED_SUBSTANCE_RE
+        )
+        if substance_err:
+            return [substance_err]
+        return []
+
+    return [
+        f"[MACULA-PRIMITIVE-CHECK] Edit/Write to atu-method/atu_method/* "
+        f"engine file ({norm}) without Macula-checked evidence in recent "
+        f"assistant message.\n\n"
+        f"Per CLAUDE.md \"Use the primitive, not the heuristic\" rule: "
+        f"edits to cross-corpus shared infrastructure for Hebrew-side or "
+        f"Hebrew-derived processing (KJV distribution, Strong's normalization, "
+        f"alignment) MUST first consult Macula constituent membership "
+        f"(validators/_shared/macula_constituents.py) before reaching for "
+        f"surface-form heuristics. Past failure (2026-05-12 distribute.py): "
+        f"4 iterations + 3 corpus cascades + 5 audit waves on closed-list "
+        f"KJV-surface heuristics when Macula constituent membership was the "
+        f"right primitive from the start.\n\n"
+        f"ACTION (in priority order):\n"
+        f"  (a) Skim validators/_shared/macula_constituents.py — the "
+        f"Token / Constituent / Clause API + get_verse_* query functions. "
+        f"Determine: does the question I'm trying to answer with this Edit "
+        f"reduce to a Macula query (constituent membership, clause boundary, "
+        f"role label, frame-arg)? If yes — use it; the heuristic is wrong.\n"
+        f"  (b) If Macula genuinely doesn't apply, include in your "
+        f"message-before-this-Edit a marker:\n"
+        f"      # macula-checked: <reason from accepted vocabulary>\n"
+        f"    Accepted reasons: macula-checked / macula-queried / "
+        f"macula-extended / macula-consulted / macula-doesnt-cover / "
+        f"not-applicable-greek-side / greek-side-only / "
+        f"primitive-already-in-use / trivial-non-structural / "
+        f"audit-dispatched-with-macula-named / docstring-only / "
+        f"formatting-only. Substance is validated.\n"
+        f"  (c) If you're iterating an engine heuristic across multiple "
+        f"revert/re-apply cycles in this session, STOP. Heuristic iteration "
+        f"= wrong primitive. Pivot to Macula."
+    ]
+
+
 def _agent_violations(prompt: str) -> list[str]:
     """Detect Agent dispatches that describe script-able mechanical lookups.
 
@@ -1024,14 +1147,27 @@ def main() -> int:
         print(msg, file=sys.stderr)
         return 2
 
-    # ── Write tool: validator-creation guard ────────────────────────────────
+    # ── Write tool: validator-creation guard + atu-method Macula-check ──────
     if tool_name == "Write":
-        violations = _write_violations(payload)
+        violations = _write_violations(payload) + _atu_method_edit_violations(payload)
         if not violations:
             return 0
         msg = (
             f"\n=== PreToolUse DISCIPLINE GATE — {len(violations)} "
             f"anti-pattern(s) detected on Write dispatch ===\n\n"
+            + "\n\n".join(f"{i + 1}. {v}" for i, v in enumerate(violations))
+        )
+        print(msg, file=sys.stderr)
+        return 2
+
+    # ── Edit tool: atu-method Macula-primitive-check gate ───────────────────
+    if tool_name == "Edit":
+        violations = _atu_method_edit_violations(payload)
+        if not violations:
+            return 0
+        msg = (
+            f"\n=== PreToolUse DISCIPLINE GATE — {len(violations)} "
+            f"anti-pattern(s) detected on Edit dispatch ===\n\n"
             + "\n\n".join(f"{i + 1}. {v}" for i, v in enumerate(violations))
         )
         print(msg, file=sys.stderr)
