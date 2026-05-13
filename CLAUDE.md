@@ -262,16 +262,24 @@ When Stan names a specific verse with a specific desired partition, the next ass
 **When Stan points out a problem at a specific verse, that's a directive to investigate the broader rule set, not a request to patch the verse.** The shape of the right response is:
 
 1. **Diagnose the verse** — what's the underlying class/pattern Stan's intuition is responding to?
-2. **Investigate corpus-wide** — does this class appear elsewhere? Build a scanner if needed (cheap; a few minutes of engine-plane work).
-3. **Identify the framework gap** — is the class covered by an existing rule (M1/M2/M3/M4 / J1-J5 / formula-integrity)? If yes, why isn't the engine catching it? If no, what new rule/sub-rule is missing?
-4. **Fix at the engine layer** — register the formula in `scripts/apply_formula_integrity_merge.py` FORMULAE registry, add a suppressor to a scanner, propose a canon §5 rule extension, etc. Per-verse patches are anti-pattern (the four-plane architecture exists exactly to prevent this).
-5. **Apply mechanically corpus-wide** — the engine encodes the rule once; corpus convergence is automatic.
+2. **Audit yourself FIRST: does the existing framework already cover it?** Walk M1 / M2 / M3 / M4 / J1-J5 / formula-integrity / N=2 adjudication / N=3+ cliff explicitly. Read the ACTUAL canon entries before declaring a gap. Pay particular attention to **explicit exclusions** in the framework (e.g., M1 §1.5 explicitly excludes "sequential narrative bonding" — distinct sequential actions split per the generative principle even when they form a rhetorical figure). If the framework's existing answer is "split, this is excluded," that's a real answer — not a gap.
+3. **Only if step 2 finds a real gap, investigate corpus-wide** — does the proposed-new class appear in enough instances to warrant a rule, or is the verse Stan flagged a one-off / Category B editorial judgment?
+4. **NEW RULES TRIGGER §7.3 ADVERSARIAL AUDIT.** Before building any engine infrastructure for a new rule, the rule itself must survive ≥2 parallel adversarial-agent audits (per change-protocol.md §7.3 trigger #1: "new named rules / sub-clauses / categories"). NO scanner, NO applier, NO FORMULAE-registry entry until the rule passes audit. Building infrastructure first is the "fake rule" failure mode — looks like rigor, is actually unaudited invention.
+5. **If audit holds: fix at engine layer** (FORMULAE registry / scanner suppressor / canon §5 rule extension), apply mechanically corpus-wide.
+6. **If audit fails or framework already answers:** report Stan the actual framework answer; offer Category B per-verse editorial-judgment as fallback if Stan wants the merge anyway for that one case.
 
-The Exo 2:5 telic-pair flag, the Gen 1:8 day-formula flag, and the Gen 1:3 jussive+wayyiqtol flag are all instances of this pattern. Each surfaced a class boundary that the existing rule set didn't capture mechanically. The right response is engine-level fix, not 6 manual merges.
+**Anti-pattern (the Exo 2:5 self-correction case 2026-05-12):**
+- Stan flagged Exo 2:5 as ATU-feeling
+- Claude jumped to "telic-cluster" — a category Claude invented
+- Claude built scanner + heuristic + 70-candidate output
+- Claude was about to register in FORMULAE engine and apply corpus-wide
+- **All without §7.3 audit and against framework's explicit M1 exclusion of sequential bonding.**
+- Stan caught it: "make sure you are also auditing yourself and not making up fake rules"
+- Rolled back; framework actually says split per existing rules; Stan's intuition is at a different cognitive layer (narrative-scene coherence, not proposition-level ATU).
 
-**Anti-pattern (do not do):** "Got it, applying the merge to Exo 2:5" → patches one verse. Stan then has to flag every other instance manually.
+**Right shape:** "Per framework §1.5 M1's explicit exclusion of sequential narrative bonding, these stay split. Your reader-intuition is at the narrative-scene level which the framework deliberately doesn't capture. If you want to extend the framework to include narrative-scene-as-ATU, that's a Category B/C canon change requiring §7.3 audit + corpus survey before any engine work."
 
-**Right shape:** "That's the telic-pair class — let me audit the corpus for instances and figure out whether the framework needs a sub-rule" → builds the engine fix once.
+The Gen 1:8 day-formula was a real gap (M1 bonded-pair on cognate-lemma evening+morning merism — same lemma, true bipartite expression). Engine fix justified. The Exo 2:5 telic-pair was NOT — framework's M1 exclusion answered it directly.
 
 ---
 
