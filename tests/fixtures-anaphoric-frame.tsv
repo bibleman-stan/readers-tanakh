@@ -1,0 +1,35 @@
+book	chapter	verse	expected	category	notes
+01-genesis	22	1	POSITIVE	wayehi+achar-ha-devarim-ha-eleh	Canonical case — frame referentially empty; apodosis וְהָאֱלֹהִים נִסָּה אֶת־אַבְרָהָם merges
+01-genesis	39	7	POSITIVE	wayehi+achar-ha-devarim-ha-eleh	apodosis וַתִּשָּׂא אֵשֶׁת־אֲדֹנָיו (clean wayyiqtol; no speech-intro / death-formula)
+01-genesis	40	1	POSITIVE	wayehi+achar-ha-devarim-ha-eleh	apodosis חָטְאוּ (qatal but treated by Audit 1 §4 mod #4? — qatal-apodosis carve-out applies; recheck during Macula run)
+07-judges	16	4	POSITIVE	wayehi+acharei-ken	apodosis וַיֶּאֱהַב אִשָּׁה — clean wayyiqtol; no exclusions
+09-1samuel	24	6	POSITIVE	wayehi+acharei-ken	apodosis וַיַּךְ לֵב־דָּוִד — clean
+10-2samuel	8	1	POSITIVE	wayehi+acharei-ken	apodosis וַיַּךְ דָּוִד — clean; parallel to 1Ch 18:1
+10-2samuel	21	18	POSITIVE	wayehi+acharei-ken	apodosis וַתְּהִי־עוֹד הַמִּלְחָמָה — clean; parallel to 1Ch 20:4
+13-1chronicles	18	1	POSITIVE	wayehi+acharei-ken	apodosis וַיַּךְ דָּוִיד — clean; parallel to 2Sa 8:1
+13-1chronicles	20	4	POSITIVE	wayehi+acharei-ken	apodosis וַתַּעֲמֹד מִלְחָמָה — clean; parallel to 2Sa 21:18
+01-genesis	22	20	NEGATIVE	speech-introduction-apodosis	apodosis וַיֻּגַּד לְאַבְרָהָם לֵאמֹר — speech-introducer with לֵאמֹר; H7/SJ3 conflict; do NOT merge
+01-genesis	48	1	NEGATIVE	speech-introduction-apodosis	apodosis וַיֹּאמֶר לְיוֹסֵף — speech-onset lemma אמר; do NOT merge
+06-joshua	24	29	NEGATIVE	death-formula-with-biographical-adjunct	apodosis וַיָּמָת יְהוֹשֻׁעַ ... עֶבֶד יְהוָה בֶּן־מֵאָה וָעֶשֶׂר שָׁנִים — J5 substantive biographical death-notice
+12-2kings	6	24	POSITIVE	wayehi+acharei-ken	apodosis וַיִּקְבֹּץ בֶּן־הֲדַד מֶלֶךְ־אֲרָם אֶת־כָּל־מַחֲנֵהוּ — Audit 1's "heavy-apodosis" exclusion was length-based; rejected per Stan's "no arbitrary length limits" rule. Frame is anaphoric, apodosis is clean wayyiqtol, merges
+14-2chronicles	24	4	NEGATIVE	qatal-or-nominal-apodosis	apodosis הָיָה עִם־לֵב יוֹאָשׁ — qatal (not wayyiqtol); rule requires wayyiqtol head
+13-1chronicles	19	1	POSITIVE	wayehi+acharei-ken	Frame+wayyamot merges per bidirectional principle; the 3rd-line (Nachash subj-NP) parallel-fracture concern vs 2Sa 10:1 is an APPLY-step concern, not a detector exclusion
+01-genesis	22	4	NEGATIVE	substantive-ordinal-frame	בַּיּוֹם הַשְּׁלִישִׁי — ordinal adjective (Aomsa), substantive J5 frame
+02-exodus	19	11	NEGATIVE	substantive-ordinal-frame	לַיּוֹם הַשְּׁלִישִׁי — substantive ordinal
+03-leviticus	23	7	NEGATIVE	substantive-ordinal-frame	בַּיּוֹם הָרִאשׁוֹן — ordinal
+11-1kings	14	25	NEGATIVE	regnal-year-substantive-frame	בַּשָּׁנָה הַחֲמִישִׁית לַמֶּלֶךְ רְחַבְעָם — ordinal + לַמֶּלֶךְ-PP
+12-2kings	18	13	NEGATIVE	regnal-year-substantive-frame	בְּאַרְבַּע עֶשְׂרֵה שָׁנָה לַמֶּלֶךְ חִזְקִיָּה — numbered year + לַמֶּלֶךְ-PP
+24-jeremiah	36	1	NEGATIVE	regnal-year-substantive-frame	בַּשָּׁנָה הָרְבִיעִת לִיהוֹיָקִים
+26-ezekiel	1	1	NEGATIVE	regnal-year-substantive-frame	בִּשְׁלֹשִׁים שָׁנָה — construct-state numbered year
+05-deuteronomy	6	6	NEGATIVE	cataphoric-relative-clause	הַדְּבָרִים הָאֵלֶּה אֲשֶׁר אָנֹכִי מְצַוְּךָ — אֲשֶׁר-introduced; cataphoric exclusion (wg_class=relp follows)
+05-deuteronomy	12	1	NEGATIVE	cataphoric-list-header	אֵלֶּה הַחֻקִּים וְהַמִּשְׁפָּטִים אֲשֶׁר — cataphoric to following list
+02-exodus	21	1	NEGATIVE	cataphoric-list-header	וְאֵלֶּה הַמִּשְׁפָּטִים אֲשֶׁר — cataphoric headers
+02-exodus	1	1	NEGATIVE	cataphoric-list-header	וְאֵלֶּה שְׁמוֹת בְּנֵי יִשְׂרָאֵל — cataphoric to following genealogical list
+19-psalms	96	12	NEGATIVE	poetic-az-J5	אָז יְרַנְּנוּ כָּל־עֲצֵי־יָעַר — Sifrei Emet register; poetic אָז is J5 own-line
+19-psalms	126	2	NEGATIVE	poetic-az-J5	אָז יִמָּלֵא שְׂחוֹק פִּינוּ — poetic threshold marker
+18-job	3	13	NEGATIVE	poetic-causal-conditional	כִּי־עַתָּה שָׁכַבְתִּי — Job poetic causal-conditional; register-different
+20-proverbs	1	28	NEGATIVE	poetic-az-internal	אָז יִקְרָאֻנְנִי — proverb-internal frame-logic, not narrative anaphora
+07-judges	17	6	NEGATIVE	refrain-formula	בַּיָּמִים הָהֵם אֵין מֶלֶךְ בְּיִשְׂרָאֵל — Judges refrain (also 18:1, 19:1, 21:25); flag-for-editorial not auto-merge
+07-judges	21	25	NEGATIVE	refrain-formula	בַּיָּמִים הָהֵם אֵין מֶלֶךְ בְּיִשְׂרָאֵל — Judges closing refrain
+04-numbers	25	12	NEGATIVE	speech-internal-lakhen	לָכֵן אֱמֹר — inside YHWH speech-block; speech-internal לָכֵן differs from narrative-anaphoric
+23-isaiah	5	13	NEGATIVE	prophetic-lakhen-rhetorical-weight	לָכֵן גָּלָה עַמִּי — prophetic threshold; Cat B own-line per rhetorical-register; needs Stan editorial
