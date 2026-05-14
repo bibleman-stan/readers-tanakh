@@ -58,11 +58,20 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO_ROOT))
 
 from validators._shared import macula_constituents as MC
+from validators._shared.poetic_register import is_poetic_register
 
 try:
     from validators._shared.hendiadys_lemma_pairs import BONDED_LEMMA_PAIRS
 except ImportError:
     BONDED_LEMMA_PAIRS = frozenset()
+
+# Personal-pronoun lemmas — used by the T4 H3-distinct-subject promotion's
+# Class-B empty-subjref fallback (a pronoun subject with unresolved subjref
+# is likely coreferential, not a genuine distinct-subject chain-break).
+_PERSONAL_PRONOUN_LEMMAS = frozenset({
+    "הוּא", "הִיא", "הֵם", "הֵמָּה", "הֵנָּה", "אֲנִי",
+    "אָנֹכִי", "אַתָּה", "אַתֶּם", "אֲנַחְנוּ",
+})
 
 # Reuse the cross-clause structural relationship rules from Hpar.
 _COMPLEMENT_RULES = frozenset({"V2CL", "Np2CL"})
@@ -147,6 +156,15 @@ def _clause_head_verb(cl: MC.Constituent) -> MC.Token | None:
     return None
 
 
+def _clause_subject_token(cl: MC.Constituent) -> MC.Token | None:
+    """First token with role='s' (Macula subject marker) — used by the
+    T4 H3-distinct-subject promotion."""
+    for t in cl.tokens:
+        if t.role == "s":
+            return t
+    return None
+
+
 def _clauses_with_heads_in(vclauses, line_tokens):
     line_ids = {id(t) for t in line_tokens}
     out = []
@@ -170,7 +188,9 @@ def _has_negation_before(cl: MC.Constituent, head_id: int) -> bool:
     return False
 
 
-def _suppressor_cascade(line_tokens, clauses, anchor_count: int = None) -> tuple[str, list[str]]:
+def _suppressor_cascade(line_tokens, clauses, anchor_count: int = None,
+                         book: str = None, chapter: int = None,
+                         verse: int = None) -> tuple[str, list[str]]:
     """Apply suppressors; return (severity, suppressor-trace).
     Severity: SUPPRESSED if any FP class fires; otherwise STRONG-SPLIT-CANDIDATE
     (clean class) or REVIEW-REQUIRED (residual ambiguity).
@@ -180,6 +200,9 @@ def _suppressor_cascade(line_tokens, clauses, anchor_count: int = None) -> tuple
     detection has undercounted relative to the anchor inventory and S1's
     N=2-wayyiqtol-defer should NOT fire (the extra anchor is a third
     proposition Macula merged into one clause).
+
+    book/chapter/verse: optional verse coordinates — required for the T4
+    H3-distinct-subject promotion's poetic-register guard.
     """
     if len(clauses) < 2:
         return "SUPPRESSED", ["fewer-than-2-clauses"]
@@ -353,6 +376,47 @@ def _suppressor_cascade(line_tokens, clauses, anchor_count: int = None) -> tuple
     if len(clauses) >= 3:
         return "STRONG-SPLIT-CANDIDATE", ["T2-N3-plus-verb-chain"]
 
+    # T4: H3 distinct-subject interruption (AC §3.5.4(a)). A wayyiqtol clause
+    # followed by a non-wayyiqtol subject-initial (S-V*) clause whose subject
+    # is a DISTINCT actor is a narrative chain-break → STRONG-SPLIT.
+    # Per the 5-cluster audit 2026-05-14 (REVISION 2 of
+    # scripts/test_h3_distinct_subject_signature.py): the dominant FP classes
+    # (speech-act content, subordinator-joined, discourse-formula opener) are
+    # already filtered upstream by this scanner's S4/S8/S11 suppressors. T4
+    # adds the poetic-register guard (Class D) — H3 is a narrative-prose rule
+    # and Sifrei Emet synonymous parallelism aliases same-referent as
+    # distinct-subject. The empty-subjref fallback is Class B.
+    # NOTE: head_a.lemma != הָיָה guard ports the classifier's condition 6
+    # (defer wayehi-FEF openers to H16). It is also a necessary backstop
+    # here because S4 (discourse-formula suppressor) is effectively dead
+    # for Macula-tokenized input: Macula splits the conjunctive vav into
+    # its own token, so the הָיָה token's consonant_skel is "יהי" not
+    # "ויהי" and never matches _DISCOURSE_FORMULA_SKELS. S4 should be
+    # repaired separately (lemma-based check); until then T4 self-guards.
+    if (head_a is not None and head_b is not None
+            and _is_wayyiqtol(head_a) and not _is_wayyiqtol(head_b)
+            and head_a.lemma != "הָיָה"
+            and (cl_b.wg_rule or "").startswith("S-V")
+            and not (book is not None and chapter is not None and verse is not None
+                     and is_poetic_register(book, chapter, verse))):
+        subj_a = _clause_subject_token(cl_a) or head_a
+        subj_b = _clause_subject_token(cl_b)
+        if subj_b is not None:
+            a_refs = set(subj_a.subjref_ids or [])
+            b_refs = set(subj_b.subjref_ids or [])
+            distinct = False
+            if a_refs and b_refs:
+                distinct = not (a_refs & b_refs)
+            else:
+                # Class B fallback: subjref resolution empty on at least one
+                # side. A pronoun subject is likely coreferential; matching
+                # consonant skeletons are the same subject.
+                if (subj_b.lemma not in _PERSONAL_PRONOUN_LEMMAS
+                        and subj_a.consonant_skel != subj_b.consonant_skel):
+                    distinct = True
+            if distinct:
+                return "STRONG-SPLIT-CANDIDATE", ["T4-H3-distinct-subject"]
+
     # T3: question + speech-act response — head_a is interrogative AND
     # head_b lemma is in speech-act set. Two distinct speech turns
     # (1Sam 30:8 'shall I overtake?' / 'pursue!'). DOWNGRADED to
@@ -479,7 +543,9 @@ def scan_book(book_slug: str, out_rows: list[str]) -> dict:
                     ]))
                     continue
 
-                severity, trace = _suppressor_cascade(matched, clauses_here, anchor_count=len(fv))
+                severity, trace = _suppressor_cascade(
+                    matched, clauses_here, anchor_count=len(fv),
+                    book=book_slug, chapter=ch_num, verse=verse)
                 if severity == "SUPPRESSED":
                     stats["suppressed"] += 1
                     continue
