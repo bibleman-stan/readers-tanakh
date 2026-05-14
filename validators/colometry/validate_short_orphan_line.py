@@ -338,8 +338,33 @@ def is_standalone_permitted(
     if M.is_finite_verb_token(token, tag_list=tag_list):
         return True
 
+    # (a') Maqqef-bound verb-headed compound (וַיְהִי־אוֹר, וַיְהִי־כֵן, etc.):
+    # the finite verb is the FIRST morpheme, but is_finite_verb_token's
+    # tag-path classifies on the LAST tag — so a verb-headed maqqef compound
+    # is mis-read as non-finite (last tag = the noun/object). A maqqef
+    # compound CONTAINING a finite verb is verb-anchored — a complete
+    # predication, not an M4 orphan. Maqqef is a Masoretic overlay (canon
+    # §1: overlays inform, never dictate); the orphan call must rest on
+    # atomic-thought completeness (finite verb present), not on the
+    # maqqef-defined prosodic-word boundary. Mirrors the ANY-tag pattern
+    # already used in the next-line finite-verb check (scan_file, below).
+    if tag_list:
+        from _shared import morph_tags as _MT
+        if any(t and t != "[—]" and _MT.is_finite_verb(t) for t in tag_list):
+            return True
+
     # (b) Classical comma check
     if bare in CLASSICAL_COMMAS:
+        return True
+
+    # (b') Speech-act-announcement marker — לֵאמֹר standing alone. Per canon
+    # §1 SJ3 / §5 H5: "the bare infinitive complementizer is a speech-act-
+    # announcement marker, gets its own line at the point of speech-onset."
+    # A standalone לֵאמֹר line is CANON-CORRECT, not an M4 orphan — it is
+    # the announcement frame, structurally complete as a proposition-
+    # equivalent (SJ3). Was the single largest single-token FP class
+    # (474 corpus-wide) before this guard.
+    if bare == "לאמר":
         return True
 
     # (c) Vocative check
