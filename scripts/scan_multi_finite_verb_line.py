@@ -77,7 +77,12 @@ _PERSONAL_PRONOUN_LEMMAS = frozenset({
 _COMPLEMENT_RULES = frozenset({"V2CL", "Np2CL"})
 _SUBORDINATE_RULES = frozenset({"CLaCL", "relCL"})
 
-# Discourse-formula heads (היה-family openers; Hpar's _DISCOURSE_FORMULA_SKELS).
+# Discourse-formula heads (היה-family openers: וַיְהִי / וְהָיָה / וַתְּהִי
+# / וְהָיוּ / וִיהִי). RETIRED as a consonant-skeleton set 2026-05-14:
+# Macula tokenizes the conjunctive vav as its OWN token, so a wayyiqtol
+# הָיָה verb-token's consonant_skel is "יהי" not "ויהי" and never matched
+# this set — S4 was dead code. Replaced by _is_discourse_formula_head()
+# (lemma-based). Kept here only as documentation of the surface forms.
 _DISCOURSE_FORMULA_SKELS = frozenset({
     "ויהי", "והיה", "ויהיו", "ותהי", "והיו", "ויהיה",
 })
@@ -154,6 +159,29 @@ def _clause_head_verb(cl: MC.Constituent) -> MC.Token | None:
         if _is_finite_verb(t):
             return t
     return None
+
+
+def _is_discourse_formula_head(head: MC.Token | None, line_tokens) -> bool:
+    """True if `head` is a הָיָה-family discourse-formula opener
+    (וַיְהִי / וַתְּהִי / וְהָיָה / וְהָיוּ / וִיהִי).
+
+    Replaces the dead consonant_skel check (S4 bug, 2026-05-14): Macula
+    splits the conjunctive vav into its own token, so the הָיָה verb-
+    token's consonant_skel is "יהי" not "ויהי". This lemma-based check
+    catches: (a) wayyiqtol הָיָה — always a discourse-formula opener;
+    (b) qatal הָיָה immediately preceded by a conjunction token — the
+    weqatal-form discourse formula (וְהָיָה / וְהָיוּ)."""
+    if head is None or head.lemma != "הָיָה":
+        return False
+    if _is_wayyiqtol(head):
+        return True
+    if _verb_aspect(head) == "Q":
+        for i, t in enumerate(line_tokens):
+            if id(t) == id(head):
+                if i > 0 and getattr(line_tokens[i - 1], "pos", None) == "conjunction":
+                    return True
+                break
+    return False
 
 
 def _clause_subject_token(cl: MC.Constituent) -> MC.Token | None:
@@ -251,8 +279,11 @@ def _suppressor_cascade(line_tokens, clauses, anchor_count: int = None,
             if seen_head_a and t.consonant_skel in _RELATIVIZER_SKELS:
                 in_between = True
 
-    # S4: first verb is a הָיָה-family discourse-formula opener
-    if head_a is not None and head_a.consonant_skel in _DISCOURSE_FORMULA_SKELS:
+    # S4: first verb is a הָיָה-family discourse-formula opener (FEF-frame,
+    # H16 territory — not a generative-principle multi-verb violation).
+    # lemma-based check; the old consonant_skel check was dead (see
+    # _is_discourse_formula_head docstring — 2026-05-14 S4 bug fix).
+    if _is_discourse_formula_head(head_a, line_tokens):
         return "SUPPRESSED", ["S4-discourse-formula-opener"]
 
     # S5: both verbs cohortative (aspect h) AND lemma-cognate (audit
