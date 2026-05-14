@@ -139,14 +139,21 @@ def _has_subordinator_between(tokens_a_end_idx: int, tokens_b_start_idx: int,
     return False
 
 
-def _has_subordinator_between_clauses(cl_a, cl_b) -> bool:
-    """Class C fix (condition 8): scan for a subordinator token positioned
-    between cl_a's last token and cl_b's first token, OR as cl_b's own
-    first token. Uses Token.position (token position within verse).
+# Consonant-skeleton subordinator forms (Class C). עד added 2026-05-14
+# (1Sam 20:41 re-verification: עַד־דָּוִד הִגְדִּיל "until David exceeded"
+# is a עַד-temporal subordinate clause, not a distinct-subject chain-break).
+_SUBORDINATOR_SKELS = {"אשר", "כי", "אם", "כאשר", "פן", "עד"}
 
-    Catches: כִּי-causal/reason clauses (Gen 3:20, Num 15:34, 2Chr 22:4),
-    אֲשֶׁר relatives, אִם/כַּאֲשֶׁר/פֶּן subordinate clauses misparsed by
-    Macula as adjacent leaves."""
+
+def _has_subordinator_between_clauses(cl_a, cl_b, vtokens=None) -> bool:
+    """Class C (condition 8): a subordinator between cl_a and cl_b means
+    cl_b is grammatically dependent, not a parallel distinct-subject chain
+    break. Checks (1) cl_b's own tokens and (2) — when vtokens is supplied —
+    the verse-token gap between cl_a's last token and cl_b's first token
+    (Macula often attaches the subordinator outside cl_b).
+
+    Catches: כִּי-causal/reason clauses, אֲשֶׁר relatives, אִם/כַּאֲשֶׁר/פֶּן
+    subordinate clauses, עַד-temporal clauses."""
     a_tokens = cl_a.tokens
     b_tokens = cl_b.tokens
     if not a_tokens or not b_tokens:
@@ -156,17 +163,20 @@ def _has_subordinator_between_clauses(cl_a, cl_b) -> bool:
         b_start = min(t.position for t in b_tokens)
     except (ValueError, AttributeError):
         return False
-    # Check cl_b's own tokens (a subordinator can be the clause's first token)
-    # and any token positioned in the [a_end, b_start] gap.
+    # (1) cl_b's own tokens — subordinator as the clause's head.
     for t in b_tokens:
         skel = _consonant_skel(t.text).strip("־")
-        if t.lemma in SUBORDINATORS or skel in {"אשר", "כי", "אם", "כאשר", "פן"}:
+        if t.lemma in SUBORDINATORS or skel in _SUBORDINATOR_SKELS:
             return True
-    # Also scan the gap: cl_b may not include the subordinator if Macula
-    # attached it elsewhere. We need the verse tokens — but this helper
-    # only has the clauses. The clause-internal check above covers the
-    # common case (subordinator as cl_b's head); gap-scan is handled by
-    # the caller if needed.
+    # (2) Gap-scan: any verse token positioned strictly between cl_a's last
+    # and cl_b's first token. Macula frequently attaches the subordinator
+    # (esp. maqqef-bonded עַד־X) to neither clause's token list.
+    if vtokens is not None:
+        for t in vtokens:
+            if a_end < t.position < b_start:
+                skel = _consonant_skel(t.text).strip("־")
+                if t.lemma in SUBORDINATORS or skel in _SUBORDINATOR_SKELS:
+                    return True
     return False
 
 
@@ -205,6 +215,18 @@ def classify_verse(book: str, chapter: int, verse: int):
         head_b = _clause_head_verb(cl_b)
         if head_a is None or head_b is None:
             continue
+
+        # (Class nested-clause fix) cl_a and cl_b must be token-DISJOINT.
+        # `_is_leaf_clause` only checks one level, so a clause embedded
+        # deeper (e.g., Gen 22:14: the name "יְהוָה יִרְאֶה" is an S-V
+        # clause nested as the O2 of the naming clause "וַיִּקְרָא...") can
+        # pass as a "leaf" while its tokens are a subset of cl_a's. That is
+        # not a distinct-subject chain-break — cl_b IS cl_a's content.
+        # Re-verification 2026-05-14 (Gen 22:14 FP catch).
+        a_ids = {id(t) for t in cl_a.tokens}
+        b_ids = {id(t) for t in cl_b.tokens}
+        if a_ids & b_ids:
+            continue  # nested/overlapping clauses — not a chain break
 
         # (1) head_a is wayyqtl
         if not head_a.is_wayyiqtol:
@@ -253,9 +275,11 @@ def classify_verse(book: str, chapter: int, verse: int):
         # now catches the dominant case upstream.
         if _is_speech_act_ancestor(cl_b):
             continue
-        # (8) (Class C fix) No subordinator between cl_a and cl_b. Uses
-        # Token.position to scan the verse-token span between the clauses.
-        if _has_subordinator_between_clauses(cl_a, cl_b):
+        # (8) (Class C fix) No subordinator between cl_a and cl_b. Scans
+        # cl_b's tokens AND the verse-token gap between the clauses (Macula
+        # often attaches the subordinator outside cl_b — e.g., maqqef-bonded
+        # עַד־דָּוִד in 1Sam 20:41).
+        if _has_subordinator_between_clauses(cl_a, cl_b, vtokens):
             continue
 
         return "STRONG", (

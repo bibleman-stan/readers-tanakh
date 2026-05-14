@@ -1,11 +1,9 @@
 book	chapter	verse	placement	detail	signature_reason
-01-genesis	22	14	MISPLACED	boundary unbroken on line 1; a break splits a clause near it (set_a=[0, 1] set_b=[1])	head_a=יִּקְרָ֧א(wayyiqtol) head_b=יִרְאֶ֑ה(yiqtol) cl_b.wg_rule=S-V subj_a=אַבְרָהָ֛ם subj_b=יְהוָ֣ה
 01-genesis	31	25	CORRECT	break at clause boundary (cl_a ends line 0 / cl_b starts line 1)	head_a=יַּשֵּׂ֥ג(wayyiqtol) head_b=תָּקַ֤ע(qatal) cl_b.wg_rule=S-V-O-PP subj_a=לָבָ֖ן subj_b=יַעֲקֹ֗ב
 01-genesis	31	47	MISPLACED	boundary unbroken on line 0; a break splits a clause near it (set_a=[0] set_b=[0, 1])	head_a=יִּקְרָא(wayyiqtol) head_b=קָ֥רָא(qatal) cl_b.wg_rule=S-V-PP-O subj_a=לָבָ֔ן subj_b=יַֽעֲקֹ֔ב
 01-genesis	45	14	CORRECT	break at clause boundary (cl_a ends line 1 / cl_b starts line 2)	head_a=יֵּ֑בְךְּ(wayyiqtol) head_b=בָּכָ֖ה(qatal) cl_b.wg_rule=S-V-PP subj_a=יֵּ֑בְךְּ subj_b=בִנְיָמִ֔ן
 02-exodus	9	23	CORRECT	break at clause boundary (cl_a ends line 0 / cl_b starts line 1)	head_a=יֵּ֨ט(wayyiqtol) head_b=נָתַ֤ן(qatal) cl_b.wg_rule=S-V-O subj_a=מֹשֶׁ֣ה subj_b=יהוָ֗ה
 02-exodus	10	13	CORRECT	break at clause boundary (cl_a ends line 0 / cl_b starts line 1)	head_a=יֵּ֨ט(wayyiqtol) head_b=נִהַ֤ג(qatal) cl_b.wg_rule=S-V-O-PP-ADV subj_a=מֹשֶׁ֣ה subj_b=יהוָ֗ה
-04-numbers	15	34	CORRECT	break at clause boundary (cl_a ends line 0 / cl_b starts line 1)	head_a=יַּנִּ֥יחוּ(wayyiqtol) head_b=יֵּעָשֶׂ֖ה(yiqtol) cl_b.wg_rule=S-V-PP subj_a=יַּנִּ֥יחוּ subj_b=מַה
 04-numbers	24	25	CORRECT	break at clause boundary (cl_a ends line 2 / cl_b starts line 3)	head_a=יָּ֣שָׁב(wayyiqtol) head_b=הָלַ֥ךְ(qatal) cl_b.wg_rule=S-V-PP subj_a=יָּ֣שָׁב subj_b=בָּלָ֖ק
 06-joshua	10	13	MERGED	cl_a + cl_b share line 0, no break near boundary	head_a=יִּדֹּ֨ם(wayyiqtol) head_b=עָמָ֗ד(qatal) cl_b.wg_rule=S-V subj_a=יִּדֹּ֨ם subj_b=יָרֵ֣חַ
 07-judges	20	39	CORRECT	break at clause boundary (cl_a ends line 0 / cl_b starts line 1)	head_a=יַּהֲפֹ֥ךְ(wayyiqtol) head_b=הֵחֵל֩(qatal) cl_b.wg_rule=S-V-PP subj_a=יַּהֲפֹ֥ךְ subj_b=בִנְיָמִ֡ן
@@ -17,7 +15,6 @@ book	chapter	verse	placement	detail	signature_reason
 09-1samuel	14	46	CORRECT	break at clause boundary (cl_a ends line 0 / cl_b starts line 1)	head_a=יַּ֣עַל(wayyiqtol) head_b=הָלְכ֥וּ(qatal) cl_b.wg_rule=S-V-PP subj_a=שָׁא֔וּל subj_b=פְלִשְׁתִּ֖ים
 09-1samuel	15	34	CORRECT	break at clause boundary (cl_a ends line 0 / cl_b starts line 1)	head_a=יֵּ֥לֶךְ(wayyiqtol) head_b=עָלָ֥ה(qatal) cl_b.wg_rule=S-V-PP-ADV subj_a=שְׁמוּאֵ֖ל subj_b=שָׁא֛וּל
 09-1samuel	19	10	CORRECT	break at clause boundary (cl_a ends line 2 / cl_b starts line 3)	head_a=יַּ֥ךְ(wayyiqtol) head_b=נָ֥ס(qatal) cl_b.wg_rule=S-V-PP subj_a=יַּ֥ךְ subj_b=דָוִ֛ד
-09-1samuel	20	41	MERGED	cl_a + cl_b share line 5, no break near boundary	head_a=יִּבְכּוּ֙(wayyiqtol) head_b=הִגְדִּֽיל(qatal) cl_b.wg_rule=S-V subj_a=יִּבְכּוּ֙ subj_b=דָּוִ֖ד
 09-1samuel	21	1	CORRECT	break at clause boundary (cl_a ends line 1 / cl_b starts line 2)	head_a=יֵּלַ֑ךְ(wayyiqtol) head_b=בָּ֥א(qatal) cl_b.wg_rule=S-V-ADV subj_a=יֵּלַ֑ךְ subj_b=יהוֹנָתָ֖ן
 09-1samuel	23	18	CORRECT	break at clause boundary (cl_a ends line 1 / cl_b starts line 2)	head_a=יֵּ֤שֶׁב(wayyiqtol) head_b=הָלַ֥ךְ(qatal) cl_b.wg_rule=S-V-PP subj_a=דָּוִד֙ subj_b=יהוֹנָתָ֖ן
 09-1samuel	25	13	CORRECT	break at clause boundary (cl_a ends line 4 / cl_b starts line 5)	head_a=יַּעֲל֣וּ(wayyiqtol) head_b=יָשְׁב֥וּ(qatal) cl_b.wg_rule=S-V-PP subj_a=יַּעֲל֣וּ subj_b=מָאתַ֖יִם
