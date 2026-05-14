@@ -8,7 +8,7 @@ book	chapter	verse	expected	category	notes
 10-2samuel	21	18	POSITIVE	wayehi+acharei-ken	apodosis וַתְּהִי־עוֹד הַמִּלְחָמָה — clean; parallel to 1Ch 20:4
 13-1chronicles	18	1	POSITIVE	wayehi+acharei-ken	apodosis וַיַּךְ דָּוִיד — clean; parallel to 2Sa 8:1
 13-1chronicles	20	4	POSITIVE	wayehi+acharei-ken	apodosis וַתַּעֲמֹד מִלְחָמָה — clean; parallel to 2Sa 21:18
-01-genesis	22	20	NEGATIVE	speech-introduction-apodosis	apodosis וַיֻּגַּד לְאַבְרָהָם לֵאמֹר — speech-introducer with לֵאמֹר; H7/SJ3 conflict; do NOT merge
+01-genesis	22	20	POSITIVE	wayehi+acharei-ha-devarim-ha-eleh	apodosis וַיֻּגַּד לְאַבְרָהָם לֵאמֹר — matrix is נגד-Hofal (report-event), NOT speech-onset; לֵאמֹר here flags embedded quotation not matrix-verb register. Audit 2 caught the over-exclusion 2026-05-13. Speech-introducer carve-out tightened to apodosis-HEAD lemma only.
 01-genesis	48	1	NEGATIVE	speech-introduction-apodosis	apodosis וַיֹּאמֶר לְיוֹסֵף — speech-onset lemma אמר; do NOT merge
 06-joshua	24	29	NEGATIVE	death-formula-with-biographical-adjunct	apodosis וַיָּמָת יְהוֹשֻׁעַ ... עֶבֶד יְהוָה בֶּן־מֵאָה וָעֶשֶׂר שָׁנִים — J5 substantive biographical death-notice
 12-2kings	6	24	POSITIVE	wayehi+acharei-ken	apodosis וַיִּקְבֹּץ בֶּן־הֲדַד מֶלֶךְ־אֲרָם אֶת־כָּל־מַחֲנֵהוּ — Audit 1's "heavy-apodosis" exclusion was length-based; rejected per Stan's "no arbitrary length limits" rule. Frame is anaphoric, apodosis is clean wayyiqtol, merges

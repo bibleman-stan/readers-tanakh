@@ -199,17 +199,18 @@ def _next_clause_at_apodosis(verse_clauses: list, frame_cl) -> Optional[object]:
 
 
 def _apodosis_has_speech_introducer(apod_cl) -> bool:
-    """Apodosis head verb is speech-onset (אמר, נגד-Hofal, דבר), OR contains
-    לֵאמֹר (infinitive construct of אמר). Excludes merge per Audit 1."""
+    """Apodosis HEAD verb is a speech-onset lemma (אָמַר, דָּבַר) — only the
+    head matters. An embedded לֵאמֹר flagging a downstream quotation does NOT
+    exclude; the matrix verb may be a report-event (e.g., נָגַד/Hofal `הֻגַּד`
+    in Gen 22:20: "it was reported to Abraham, saying...") which is a normal
+    apodosis. Tightened post-§7.3-audit-2 2026-05-13 (Gen 22:20 FN catch).
+
+    Excludes Gen 48:1 (head=אָמַר) but NOT Gen 22:20 (head=נגד Hofal)."""
     if apod_cl is None:
         return False
     hv = apod_cl.head_verb()
-    if hv and hv.lemma in SPEECH_INTRO_LEMMAS:
+    if hv and hv.lemma in {"אָמַר", "דָּבַר"}:
         return True
-    # Check for le'mor — infinitive construct of אָמַר anywhere in the clause
-    for t in apod_cl.tokens:
-        if t.lemma == LEMOR_LEMMA and t.type_ == "infinitive construct":
-            return True
     return False
 
 

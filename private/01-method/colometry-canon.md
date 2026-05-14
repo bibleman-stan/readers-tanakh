@@ -1298,6 +1298,14 @@ cross_corpus: BoFM Rule 17 complement-integrity / GNT M1 Gorgianic + M2 verb-obj
 references: WO §8.4.1 (Clauses of Identification: S-Pred order), §8.4.2 (Clauses of Classification: Pred-S order — predicate-type rules: numerals/adverbs/PPs neutralize), §37.6 (Predicate Use of Participles — participle as clause nucleus), §37.7 (Participles in Association with Finite Verbs); AC §5.1 (Nominal and Verbal Clauses — §5.1.1 Nominal, §5.1.2 Verbal — direct clause-type enumeration)
 ```
 
+### (RETIRED H19 placeholder — Anaphoric-Frame Merge)
+
+**Drafted and retracted same day 2026-05-13.** An initial mechanical H19 rule encoding the bidirectional atomic-thought test (framework §1.1) as a Layer-3 override of H16 was drafted then retracted on the GNT-reader precedent: the bidirectional test is an **informational diagnostic at canon §1, NOT a precedence override at §5**. It surfaces candidates for editorial review; each application is a per-verse Cat-B editorial decision validated through the existing rule set, not a mechanical cascade.
+
+The 13 wayehi+anaphoric-frame merges applied 2026-05-13 (Gen 22:1, 22:20, 39:7, 40:1; Jdg 16:4; 1 Sa 24:6; 2 Sa 8:1, 10:1, 21:18; 2 Ki 6:24; 1 Ch 18:1, 19:1 [3-line collapse], 20:4) are individually-audited Cat-B editorial decisions surfaced by the bidirectional diagnostic via [`scripts/audit_anaphoric_frame_macula.py`](../../scripts/audit_anaphoric_frame_macula.py); §7.3 audit verdict CLEAR-WITH-MODIFICATIONS (Gen 22:20 FN catch + 1 Ch 19:1 special-case collapse); see commit log for the rationale and per-verse evidence. H16's `validate_wayehi_protasis.py` continues to flag these verses as STRONG-SPLIT candidates — that is correct editorial signal (deviation from H16 default), accepted via audit-cleared baseline shift, not suppressed at validator code.
+
+See [`feedback_bidirectional_is_diagnostic_not_override`](../../../../../.claude/projects/c--Users-bibleman-repos-readers-tanakh/memory/feedback_bidirectional_is_diagnostic_not_override.md) for the cross-corpus precedent.
+
 ## §6 Validator Suite
 
 Validators live in three subfolders reflecting the architectural decomposition. **25 validators total** as of 2026-05-12; per-rule mapping is in §3's Detector column. This section indexes by validator-file rather than by rule.
