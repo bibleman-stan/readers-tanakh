@@ -170,8 +170,10 @@ def _has_subordinator_between_clauses(cl_a, cl_b) -> bool:
     return False
 
 
-def classify_verse(book: str, chapter: int, verse: int) -> tuple[str, str]:
-    """Run the refined signature against a verse. Returns (verdict, reason).
+def classify_verse(book: str, chapter: int, verse: int):
+    """Run the refined signature against a verse.
+    Returns (verdict, reason, pair) where pair is (cl_a, cl_b) on STRONG,
+    else None.
 
     Verdict:
       - "STRONG": signature matches; STRONG-SPLIT promotion
@@ -182,17 +184,17 @@ def classify_verse(book: str, chapter: int, verse: int) -> tuple[str, str]:
     # Emet + embedded poetry) aliases synonymous parallelism as
     # distinct-subject chain-breaks. Hard scope-exclusion.
     if is_poetic_register(book, chapter, verse):
-        return "NEGATIVE", "poetic register (Sifrei Emet / embedded poetry) — H3 scope-excluded"
+        return "NEGATIVE", "poetic register (Sifrei Emet / embedded poetry) — H3 scope-excluded", None
 
     try:
         vclauses = MC.get_verse_clauses(book, chapter, verse)
         vtokens = MC.get_verse_tokens(book, chapter, verse)
     except Exception as e:
-        return "ERROR", f"macula-load: {e}"
+        return "ERROR", f"macula-load: {e}", None
 
     leaves = [c for c in vclauses if _is_leaf_clause(c)]
     if len(leaves) < 2:
-        return "NEGATIVE", f"only {len(leaves)} leaf clause(s) in verse"
+        return "NEGATIVE", f"only {len(leaves)} leaf clause(s) in verse", None
 
     # Walk pairwise; if ANY adjacent pair (cl_a, cl_b) matches the refined
     # signature, the verse is a STRONG positive. (For multi-clause verses we
@@ -261,9 +263,9 @@ def classify_verse(book: str, chapter: int, verse: int) -> tuple[str, str]:
             f"head_b={head_b.text}({head_b.type_}) "
             f"cl_b.wg_rule={cl_b.wg_rule} "
             f"subj_a={subj_a.text} subj_b={subj_b.text}"
-        )
+        ), (cl_a, cl_b)
 
-    return "NEGATIVE", "no adjacent (wayyqtl + S-V-non-wayyqtl + distinct-subject) pair found"
+    return "NEGATIVE", "no adjacent (wayyqtl + S-V-non-wayyqtl + distinct-subject) pair found", None
 
 
 def run_fixture():
@@ -275,7 +277,7 @@ def run_fixture():
             vs = int(r["verse"])
             expected = r["expected"]
             category = r["category"]
-            verdict, reason = classify_verse(book, ch, vs)
+            verdict, reason, _pair = classify_verse(book, ch, vs)
             match = "✓" if verdict == expected else "✗"
             rows.append({
                 "book": book, "ch": ch, "vs": vs,
@@ -319,7 +321,7 @@ def run_corpus():
                     continue
                 ch, vs = int(m.group(1)), int(m.group(2))
                 total += 1
-                verdict, reason = classify_verse(book, ch, vs)
+                verdict, reason, _pair = classify_verse(book, ch, vs)
                 if verdict == "STRONG":
                     hits.append((book, ch, vs, reason))
 
@@ -340,9 +342,152 @@ def run_corpus():
     print(f"\nWritten: {out}")
 
 
+def _verse_lines(book: str, chapter: int, verse: int) -> list[str]:
+    """Return the v2/heb content lines for a verse (no verse-ref line)."""
+    import re
+    V2_HEB = REPO_ROOT / "data" / "text-files" / "v2" / "heb"
+    short = book.split("-", 1)[1]
+    chap_path = V2_HEB / book / f"{short}-{chapter:02d}.txt"
+    if not chap_path.exists():
+        return []
+    verse_re = re.compile(r"^(\d+):(\d+)\s*$")
+    in_verse, out = False, []
+    for ln in chap_path.read_text(encoding="utf-8").splitlines():
+        s = ln.strip()
+        m = verse_re.match(s)
+        if m and int(m.group(1)) == chapter and int(m.group(2)) == verse:
+            in_verse = True
+            continue
+        if in_verse:
+            if not s or verse_re.match(s):
+                break
+            out.append(ln)
+    return out
+
+
+def _token_line_map(book: str, chapter: int, verse: int) -> dict:
+    """Map each verse Token's id() → its v2/heb line index (0-based)."""
+    try:
+        vtokens = MC.get_verse_tokens(book, chapter, verse)
+    except Exception:
+        return {}
+    lines = _verse_lines(book, chapter, verse)
+    tok_line = {}
+    cursor = 0
+    for line_idx, line_text in enumerate(lines):
+        matched, cursor = MC.match_sense_line_tokens(vtokens, line_text, cursor)
+        for t in matched:
+            tok_line[id(t)] = line_idx
+    return tok_line
+
+
+def check_placement(book: str, chapter: int, verse: int, pair) -> tuple[str, str]:
+    """For an H3-distinct-subject verse, classify whether the v2/heb line
+    break coincides with the cl_a → cl_b clause BOUNDARY specifically.
+
+    The question is narrow: is there a line break exactly between cl_a's
+    last token and cl_b's first token? Internal breaks WITHIN cl_b (e.g.,
+    a long apodosis split for other reasons) are not H3's concern.
+
+    Returns (placement, detail):
+      CORRECT   — line break sits exactly at the cl_a/cl_b boundary.
+      MERGED    — cl_a and cl_b share one line and neither spans a break;
+                  there is no break near the boundary → add one.
+      MISPLACED — the boundary itself is unbroken, but a break splits a
+                  clause near it (Gen 31:47 splits the Aramaic name), OR
+                  the clauses sit on non-adjacent lines → relocate.
+      UNKNOWN   — token→line mapping failed.
+    """
+    cl_a, cl_b = pair
+    tok_line = _token_line_map(book, chapter, verse)
+    if not tok_line:
+        return "UNKNOWN", "token-line-map failed"
+    a_mapped = [(t.position, t) for t in cl_a.tokens if id(t) in tok_line]
+    b_mapped = [(t.position, t) for t in cl_b.tokens if id(t) in tok_line]
+    if not a_mapped or not b_mapped:
+        return "UNKNOWN", f"unmapped tokens (a={len(a_mapped)} b={len(b_mapped)})"
+    a_last = max(a_mapped, key=lambda x: x[0])[1]
+    b_first = min(b_mapped, key=lambda x: x[0])[1]
+    line_a_last = tok_line[id(a_last)]
+    line_b_first = tok_line[id(b_first)]
+    set_a = {tok_line[id(t)] for _, t in a_mapped}
+    set_b = {tok_line[id(t)] for _, t in b_mapped}
+
+    if line_b_first == line_a_last + 1:
+        return "CORRECT", f"break at clause boundary (cl_a ends line {line_a_last} / cl_b starts line {line_b_first})"
+    if line_a_last == line_b_first:
+        if len(set_a) > 1 or len(set_b) > 1:
+            return "MISPLACED", (
+                f"boundary unbroken on line {line_a_last}; a break splits a "
+                f"clause near it (set_a={sorted(set_a)} set_b={sorted(set_b)})"
+            )
+        return "MERGED", f"cl_a + cl_b share line {line_a_last}, no break near boundary"
+    return "MISPLACED", (
+        f"clauses on non-adjacent lines "
+        f"(cl_a ends line {line_a_last} / cl_b starts line {line_b_first})"
+    )
+
+
+def run_placement():
+    """For every STRONG H3-distinct-subject verse, check whether the v2/heb
+    line break coincides with the cl_a/cl_b clause boundary. Surfaces the
+    ACTIONABLE cases (MERGED + MISPLACED) — the genuine H3 editorial work."""
+    import re
+    V2_HEB = REPO_ROOT / "data" / "text-files" / "v2" / "heb"
+    verse_re = re.compile(r"^(\d+):(\d+)\s*$")
+    results = []
+    for book_dir in sorted(V2_HEB.iterdir()):
+        if not book_dir.is_dir():
+            continue
+        book = book_dir.name
+        short = book.split("-", 1)[1]
+        for chap_file in sorted(book_dir.glob(f"{short}-*.txt")):
+            for ln in chap_file.read_text(encoding="utf-8").splitlines():
+                m = verse_re.match(ln.strip())
+                if not m:
+                    continue
+                ch, vs = int(m.group(1)), int(m.group(2))
+                verdict, reason, pair = classify_verse(book, ch, vs)
+                if verdict != "STRONG" or pair is None:
+                    continue
+                placement, detail = check_placement(book, ch, vs, pair)
+                results.append((book, ch, vs, placement, detail, reason))
+
+    from collections import Counter
+    by_placement = Counter(r[3] for r in results)
+    print(f"\n=== H3 distinct-subject break-PLACEMENT audit ===")
+    print(f"STRONG verses: {len(results)}")
+    print(f"  CORRECT   (break at clause boundary, no action): {by_placement.get('CORRECT', 0)}")
+    print(f"  MERGED    (no break at boundary — SPLIT needed): {by_placement.get('MERGED', 0)}")
+    print(f"  MISPLACED (break in wrong place — RELOCATE):     {by_placement.get('MISPLACED', 0)}")
+    print(f"  UNKNOWN   (mapping failed):                      {by_placement.get('UNKNOWN', 0)}")
+
+    print(f"\n--- ACTIONABLE: MERGED ---")
+    for book, ch, vs, pl, detail, reason in results:
+        if pl == "MERGED":
+            print(f"  {book} {ch}:{vs} — {detail}")
+    print(f"\n--- ACTIONABLE: MISPLACED ---")
+    for book, ch, vs, pl, detail, reason in results:
+        if pl == "MISPLACED":
+            print(f"  {book} {ch}:{vs} — {detail}")
+    print(f"\n--- UNKNOWN (mapping failed — needs manual check) ---")
+    for book, ch, vs, pl, detail, reason in results:
+        if pl == "UNKNOWN":
+            print(f"  {book} {ch}:{vs} — {detail}")
+
+    out = REPO_ROOT / "tests" / "h3-distinct-subject-placement-audit.tsv"
+    with out.open("w", encoding="utf-8", newline="") as f:
+        f.write("book\tchapter\tverse\tplacement\tdetail\tsignature_reason\n")
+        for book, ch, vs, pl, detail, reason in results:
+            f.write(f"{book}\t{ch}\t{vs}\t{pl}\t{detail}\t{reason}\n")
+    print(f"\nWritten: {out}")
+
+
 def main():
     if "--corpus" in sys.argv:
         run_corpus()
+    elif "--placement" in sys.argv:
+        run_placement()
     else:
         ok = run_fixture()
         sys.exit(0 if ok else 1)
