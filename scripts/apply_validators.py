@@ -162,6 +162,7 @@ ADOPTED_VALIDATORS: dict[str, AdoptionSpec] = {
     "validate_coordinated_object": {"STRONG-MERGE-CANDIDATE"},
     "validate_cross_verse_continuity": {"STRONG-MERGE-CANDIDATE"},
     "validate_genealogy_uniformity": {"STRONG-MERGE-CANDIDATE"},
+    "validate_list_formula_uniformity": {"STRONG-SPLIT-CANDIDATE"},
     "validate_interrogative_clause": {"STRONG-MERGE-CANDIDATE"},
     "validate_oath_formula": {"STRONG-MERGE-CANDIDATE"},
     # ── Adopted 2026-05-04 post-Macula-pivot promotion sweep ──────────────
@@ -203,6 +204,7 @@ ALL_VALIDATORS: list[tuple[str, str]] = [
     ("validators/colometry/validate_coordinated_object.py",    "validate_coordinated_object"),
     ("validators/colometry/validate_cross_verse_continuity.py", "validate_cross_verse_continuity"),
     ("validators/colometry/validate_genealogy_uniformity.py",  "validate_genealogy_uniformity"),
+    ("validators/colometry/validate_list_formula_uniformity.py", "validate_list_formula_uniformity"),
     ("validators/colometry/validate_interrogative_clause.py",  "validate_interrogative_clause"),
     ("validators/colometry/validate_oath_formula.py",          "validate_oath_formula"),
     # ── Pre-existing ADOPTED-but-missing entry, repaired 2026-05-04 ──────

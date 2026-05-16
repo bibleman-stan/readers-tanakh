@@ -97,6 +97,7 @@ V2_DIR = REPO_ROOT / "data" / "text-files"  / "v2" / "heb"
 sys.path.insert(0, str(REPO_ROOT / "validators"))
 from _shared import morphology as M  # noqa: E402
 from _shared import morph_alignment as MA  # noqa: E402
+from _shared import morph_tags as MT  # noqa: E402
 
 # ---------------------------------------------------------------------------
 # Hebrew Unicode helpers
@@ -139,12 +140,54 @@ SPEECH_VERB_LEMMAS = {
     "סִפֵּר", "נָגַד", "שָׁאַל", "צָעַק", "זָעַק",
 }
 
-# Prophetic formula line — these get their OWN line regardless of length.
-# Consonant skeletons: כה אמר יהוה, נאם יהוה
-PROPHETIC_FORMULA_SKELETONS = {
-    "כה",       # כֹּה — particle in כֹּה אָמַר יְהוָה
-    "נאם",      # נְאֻם — oracle marker
-}
+# Canon §5 H5 closed list — line-leading messenger-formula prefixes
+# (כֹּה אָמַר X / נְאֻם־X). Per canon §5 H5 line 825: "atomic formulaic
+# units that get their own line — same default as ordinary finite
+# speech-frames now."
+SOLEMNITY_PREFIXES = frozenset({
+    "כה",       # כֹּה — particle in כֹּה אָמַר X (divine: YHWH/Adonai/Tsevaot;
+                # human: Hezekiah, Pharaoh, patriarchs — same colometric default)
+    "נאם",      # נְאֻם — oracle/utterance marker (divine + Balaam/David uses)
+})
+
+# Backward-compat alias (existing references in this file).
+PROPHETIC_FORMULA_SKELETONS = SOLEMNITY_PREFIXES
+
+# Tokens that continue the messenger-formula attribution cluster.
+# When the line opens with a SOLEMNITY_PREFIX, walking forward through
+# these tokens identifies the end of the formula; any non-cluster token
+# starts the quoted content. Enumeration is corpus-driven from the
+# 2026-05-16 pre-flight: 264 כה-אמר + 129 נאם cases analyzed.
+FORMULA_CLUSTER_CONTINUATION_SKELS = frozenset({
+    # אמר variants (the verb of "כה אמר X")
+    "אמר", "אמרו",
+    # Divine subject + apposition tokens (bare + article-prefixed variants;
+    # ה- definite article on divine common nouns like הָאֱלֹהִים is frequent
+    # and the article-form is not separately Np-tagged in TAHOT)
+    "יהוה", "אדני", "אל", "אלהים", "אלהי", "אלוה",
+    "האל", "האלהים", "האלוה",
+    "צבאות", "ישראל", "יעקב", "השמים", "הצבאות",
+    "האדון",
+    # Common-noun speaker collectives (also article-prefixed)
+    "עדת",
+    # Patronymic + apposition wrappers
+    "עבדך", "בנך", "בני", "אחיך",
+    "בן", "בנו",
+})
+
+# Maqqef-preserving niqqud/te'amim stripper. Used to identify the first
+# sub-token (maqqef-separated) of a maqqef-joined orthographic word like
+# נְאֻם־יְהוָה (which whitespace-tokenizes as a single token).
+_HEBREW_KEEP_MAQQEF_RE = re.compile(r"[֑-ֽֿ-ׇ]")
+
+
+def _first_subtoken_skel(orig_token: str) -> str:
+    """Return first maqqef-separated sub-skel of an original token.
+    Strips niqqud/te'amim but preserves maqqef so we can split on it."""
+    normalized = _HEBREW_KEEP_MAQQEF_RE.sub("", orig_token)
+    if "־" in normalized:
+        return normalized.split("־", 1)[0]
+    return normalized
 
 
 def is_prophetic_formula_line(bare_tokens: list[str]) -> bool:
@@ -152,10 +195,103 @@ def is_prophetic_formula_line(bare_tokens: list[str]) -> bool:
 
     כֹּה אָמַר יְהוָה and נְאֻם יְהוָה are atomic formulaic units per Rule H5
     exception — they always get their own line regardless of word count.
+
+    Note: bare_tokens are produced by strip_points() which removes maqqef.
+    For lines where the prefix is maqqef-joined (e.g., נְאֻם־יְהוָה as one
+    orthographic word), bare_tokens[0] would be "נאמיהוה" not "נאם". Such
+    cases are caught by the Gap 1 SOLEMNITY split check (see scan_file)
+    which uses maqqef-preserving normalization.
     """
     if not bare_tokens:
         return False
-    return bare_tokens[0] in PROPHETIC_FORMULA_SKELETONS
+    return bare_tokens[0] in SOLEMNITY_PREFIXES
+
+
+def detect_solemnity_split_position(
+    orig_tokens: list[str],
+    tag_for_token,
+) -> "int | None":
+    """Return the index where a Gap 1 STRONG-SPLIT should fire, or None
+    if the line is formula-only (no co-located quoted content).
+
+    Trigger requirements (must be a TRUE messenger formula, not a
+    jussive-instruction or comparative use of כה):
+      - First sub-skel "כה" + second sub-skel "אמר"/"אמרו" (perfect אָמַר), OR
+      - First sub-skel "נאם" (oracle/utterance noun head).
+
+    Subject-NP cluster definition:
+      - Up to MAX_CLUSTER_WINDOW (5) consecutive post-verb tokens that are
+        either (a) members of FORMULA_CLUSTER_CONTINUATION_SKELS, or
+        (b) TAHOT-confirmed proper nouns (`Np` tag, via MT.is_proper_noun).
+      - Cluster ends at the first non-cluster, non-Np token.
+
+    Returns the index where content begins, OR None if no content beyond
+    the cluster (= formula-only line, no split needed).
+
+    `tag_for_token` is a callable `(idx) -> list[str] | None` returning the
+    TAHOT tags for orig_tokens[idx], or None on miss."""
+    if not orig_tokens:
+        return None
+    first_sub = _first_subtoken_skel(orig_tokens[0])
+
+    # Trigger check
+    if first_sub == "כה":
+        if len(orig_tokens) < 2:
+            return None
+        second_sub = _first_subtoken_skel(orig_tokens[1])
+        if second_sub not in ("אמר", "אמרו"):
+            return None
+        idx = 2  # past prefix + verb
+    elif first_sub == "נאם":
+        idx = 1
+    else:
+        return None
+
+    # Walk subject-NP cluster
+    MAX_CLUSTER_WINDOW = 5
+    cluster_count = 0
+    while idx < len(orig_tokens) and cluster_count < MAX_CLUSTER_WINDOW:
+        normalized = _HEBREW_KEEP_MAQQEF_RE.sub("", orig_tokens[idx])
+        if normalized.rstrip("׃") == "":
+            idx += 1
+            continue
+
+        is_cluster_member = False
+        # (a) Sub-token in FORMULA_CLUSTER_CONTINUATION_SKELS
+        subs = [s.rstrip("׃") for s in normalized.split("־")]
+        for sub in subs:
+            if sub and sub in FORMULA_CLUSTER_CONTINUATION_SKELS:
+                is_cluster_member = True
+                break
+        # (b) TAHOT-confirmed proper noun
+        if not is_cluster_member:
+            tags = tag_for_token(idx)
+            if tags:
+                for tag in tags:
+                    if MT.is_proper_noun(tag):
+                        is_cluster_member = True
+                        break
+
+        if not is_cluster_member:
+            return idx  # content begins here
+
+        idx += 1
+        cluster_count += 1
+
+    # Reached cluster window cap or end of line — check for trailing content
+    while idx < len(orig_tokens):
+        normalized = _HEBREW_KEEP_MAQQEF_RE.sub("", orig_tokens[idx])
+        if normalized.rstrip("׃") != "":
+            return idx
+        idx += 1
+    return None
+
+
+def is_formula_only_line(orig_tokens: list[str]) -> bool:
+    """Backward-compat shim — returns True if no Gap 1 split fires.
+    Prefer detect_solemnity_split_position() for new code (returns the
+    split index AND has TAHOT-aware proper-noun handling)."""
+    return detect_solemnity_split_position(orig_tokens, lambda i: None) is None
 
 
 # ---------------------------------------------------------------------------
@@ -846,6 +982,39 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
 
         tokens = line.split()
         bare_tokens = [strip_points(t) for t in tokens]
+
+        # --- Gap 1 / canon §5 H5: SOLEMNITY-prefix split check ---
+        # Canon §5 H5 line 825 names two messenger formulas:
+        #   (1) כֹּה אָמַר X — prophetic messenger formula (perfect אָמַר)
+        #   (2) נְאֻם־X     — oracle/utterance attribution
+        # When the line opens with one of these AND quoted content follows
+        # on the same line (beyond the formula+subject-NP cluster), emit
+        # STRONG-SPLIT. Subject-NP cluster detection uses TAHOT proper-noun
+        # tags as primary signal (handles arbitrary speaker names like
+        # יִפְתָּח, חִזְקִיָּהוּ, פַּרְעֹה without explicit enumeration), with
+        # FORMULA_CLUSTER_CONTINUATION_SKELS as a fallback for common
+        # divine titles + apposition. Trigger refuses to fire on non-
+        # messenger כה uses (jussive "thus you shall say", comparative
+        # "thus shall it be"). Corpus pre-flight 2026-05-16 identified
+        # ~110 same-line cases.
+        if tokens:
+            _split_pos = detect_solemnity_split_position(
+                tokens, lambda idx: _tag_list_for(i, idx)
+            )
+            if _split_pos is not None:
+                violations.append({
+                    "file": path.name,
+                    "file_path": path,
+                    "line_num": line_no,
+                    "rule": "H5/solemnity-prefix",
+                    "severity": "STRONG-SPLIT-CANDIDATE",
+                    "brief": (
+                        f"messenger formula ({_first_subtoken_skel(tokens[0])}-prefixed) "
+                        f"merged with content on same line — split at token {_split_pos} "
+                        f"per canon §5 H5"
+                    ),
+                    "line": line.rstrip(),
+                })
 
         # --- Primary check: line contains לֵאמֹר ---
         if LEEMOR_SKELETON in bare_tokens:

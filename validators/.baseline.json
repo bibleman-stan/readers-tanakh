@@ -15,6 +15,7 @@
   "validate_genealogy_uniformity": 0,
   "validate_interrogative_clause": 29,
   "validate_line_final_tokens": 2,
+  "validate_list_formula_uniformity": 0,
   "validate_maqqef_integrity": 0,
   "validate_oath_formula": 23,
   "validate_parallel_clause_split": 2051,
@@ -22,7 +23,7 @@
   "validate_participial_speech_frame": 14,
   "validate_short_orphan_line": 2453,
   "validate_short_verse_fronting": 0,
-  "validate_speech_intro_framing": 449,
+  "validate_speech_intro_framing": 557,
   "validate_verb_object_bond": 135,
   "validate_wayehi_protasis": 396,
   "verify_4_layer_sync": 0

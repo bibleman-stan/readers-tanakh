@@ -1238,9 +1238,10 @@ references: WO §33.2.4 (Waw-Relative After Circumstantial Phrases and Clauses �
 primitive: textual-pattern (currently regex-based formula matching X הוֹלִיד אֶת־Y etc.; no Macula consultation. **Should be macula-constituent** — backlog: refactor validate_genealogy_uniformity.py to use lowfat repeated-clause-shape detection for robustness against formula variants)
 detectors:
   - validators/colometry/validate_genealogy_uniformity.py
+  - validators/colometry/validate_list_formula_uniformity.py
 closed_lists:
   - GENEALOGY_FORMULAE (X הוֹלִיד אֶת־Y / X-Y-זָכָר וּנְקֵבָה / X חַי N שָׁנָה וַיּוֹלֶד פלוני)
-  - LIST_FORMULA_PEERS (curse-series אָרוּר / blessing-series בָּרוּךְ / beatitude אַשְׁרֵי)
+  - LIST_FORMULA_PEERS (curse-series אָרוּר / blessing-series בָּרוּךְ / beatitude אַשְׁרֵי — series-uniformity check at validate_list_formula_uniformity.py; regression-audit only on currently-correct corpus)
 fixture: Gen 5 (full genealogy); Deut 27:15-26 (curse-series)
 cross_corpus: BoFM Rule 21 genealogy / GNT R12-R14 parallel-stacking
 references: WO §39.2.1 (Basic Functions of Waw — phrasal w distribution in lists: w on each item, only on last, or omitted), §39.2.5 (Conjunctive Waw — joining clauses including hendiadic pairs); AC §5.3.4 (Existential Sentences — יֵשׁ/אַיִן markers in genealogy heads)
