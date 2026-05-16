@@ -4,7 +4,7 @@
 
 A colometric reading edition of the Hebrew Bible (Tanakh). The Masoretic Text is reformatted into **sense-lines (cola)** — each line one atomic thought, one image, motivated by Hebrew prosodic and grammatical structure. The edition is designed for oral delivery, devotional reading, and as an analytical substrate for compositional research.
 
-Live at (planned): `tanakh-reader.com`. Domain secured via Cloudflare. GitHub Pages configuration pending until the MVP book ships.
+Live at [tanakh-reader.com](https://tanakh-reader.com). All 39 books have hand-edited `v2/heb/` and the full corpus builds; ongoing rule refinement and per-verse review continue corpus-wide.
 
 ## Origin
 

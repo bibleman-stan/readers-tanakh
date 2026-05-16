@@ -1,6 +1,6 @@
 # 04 — Editorial Workflow
 
-This document describes how a chapter moves from raw source to finished reading edition. It is a stub at scaffolding time; it will mature through the Jonah MVP pass and subsequent chapters.
+This document describes how a chapter moves from raw source to finished reading edition. The workflow described here is established practice across the corpus pass — all 39 books have completed Stages 1–3 (ingest, v1 generation, hand-edited v2/heb); ongoing work iterates Stages 4+ (validator-driven refinement, cluster-cascade applies, per-verse review).
 
 ## Stage 1 — Ingest (one-time per book)
 
