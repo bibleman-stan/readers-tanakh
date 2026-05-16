@@ -3853,8 +3853,11 @@ function buildChapterGrid(slug) {
     const btn = document.createElement('div');
     btn.className = 'chgrid-btn';
     btn.textContent = c;
+    // Same pattern as the nav-drawer + landing-page chapter buttons:
+    // open the verse popover so users can drill to a specific verse,
+    // matching gnt + bofm family behavior (Stan 2026-05-14).
     btn.onclick = ((s, ch) => () => {
-      setHash(s, ch);
+      showVersePopover(s, ch);
     })(slug, c);
     grid.appendChild(btn);
   }
