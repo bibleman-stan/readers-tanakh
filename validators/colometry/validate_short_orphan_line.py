@@ -535,6 +535,11 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
                 if tag_list_this_line and len(tag_list_this_line) >= 1
                 else None
             )
+            tok2_tag_list_pre = (
+                tag_list_this_line[1]
+                if tag_list_this_line and len(tag_list_this_line) >= 2
+                else None
+            )
 
             # Guard 1: token-1 must look like a preposition (skel-trigger),
             # AND token-1's TAHOT first morpheme must NOT be a noun (N-tag
@@ -564,6 +569,15 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
                 # actually a finite verb).
                 if M.is_finite_verb_token(tok1, tag_list=tok1_tag_list_pre):
                     pass  # token-1 is a verb → not a PP-headed line
+                # Guard 2b (2026-05-15, M4 sample-audit): token-2 must NOT
+                # be a tag-confirmed finite verb either. A 2-token line
+                # like "ממנה יהיו" or "כאשר דברלו" is PP/subordinator +
+                # VERB = a complete clause, not a stranded PP fragment.
+                # The pp-orphan detector mis-fires on these; ~25% of
+                # the multi-token-pp-orphan class is this clause-as-PP
+                # misparse. Defer — the verb anchors a proposition.
+                elif M.is_finite_verb_token(tok2, tag_list=tok2_tag_list_pre):
+                    pass  # token-2 is a verb → line is a clause, not PP-orphan
                 else:
                     # Guard 3: not in superscription position
                     is_superscription = False
