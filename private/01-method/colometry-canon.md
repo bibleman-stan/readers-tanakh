@@ -1162,7 +1162,7 @@ detectors:
   - validators/colometry/validate_bare_discourse_particle.py
 closed_lists:
   - DISCOURSE_PARTICLES (הִנֵּה / נָא / אָז / עַתָּה / וְעַתָּה / לָכֵן / עַל־כֵּן)
-  - VOCATIVE_CLUSTER_PEERS (when both H4 vocative + H14 particle are sentence-initial → cluster as one frame)
+  - VOCATIVE_CLUSTER_PEERS — applier: (none — editorial-judgment rule); inherits H4 vocative-position editorial posture (H4 vocatives are not mechanically detected; the cluster sub-case lives or dies with H4 detectability)
 fixture: Exo 2:6 (וְהִנֵּה־נַעַר בֹּכֶה — own-line per H14); Gen 22:1 (הִנֵּנִי frame)
 cross_corpus: BoFM Rule 8 framing-devices / GNT R8 framing-devices
 references: WO §39.3.1 (Adverbs in General), §39.3.2 (Clausal and Item Adverbs — frame-positioning vs item-modifying distinction), §39.3.4 (Emphatic Adverbs); AC §4.2 (per-Adverb treatment: 17 individual entries — incl. the H14 closed-list members), §4.5 (הִנֵּה / וְהִנֵּה — dedicated 8-page section; directly grounds Exo 2:6 / Gen 22 fixture handling)

@@ -156,6 +156,14 @@ def extract_yaml_fields(body_lines: list[str]) -> dict:
         elif section == "closed_lists":
             m = CLOSED_LIST_RE.match(s)
             if m:
+                # Skip per-closed-list inline applier-notation. A line like
+                #   - VOCATIVE_CLUSTER_PEERS — applier: (none — …)
+                # documents an editorial-only sub-case that is expected NOT
+                # to appear in source. Excluding from closed_lists prevents
+                # a spurious DRIFT verdict on the rule.
+                rest = s[m.end():].lower()
+                if "applier: (none" in rest:
+                    continue
                 closed_lists.append(m.group(1))
     # Deduplicate while preserving order
     seen = set()
