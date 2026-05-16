@@ -46,17 +46,35 @@ RETIRED_HEADER_RE = re.compile(r"^### Rule (H\d+) — RETIRED")
 PLACEHOLDER_HEADER_RE = re.compile(r"^### \(RETIRED H\d+ placeholder")
 
 # YAML field patterns inside the spec block.
-DETECTORS_LINE_RE = re.compile(r"^\s*-\s*(validators/\S+\.py)")
+#   list-item form:    "  - validators/foo/bar.py"
+#   inline-prose form: "detectors: sub-check inside validators/foo/bar.py"
+# Both must be detectable so that the script doesn't false-positive on entries
+# whose YAML footers use prose rather than a bullet list (e.g., H5b, H15).
+INLINE_PATH_RE = re.compile(r"(validators/[\w/]+\.py)")
 CLOSED_LIST_RE = re.compile(r"^\s*-\s*([A-Z][A-Z0-9_]+)")  # Uppercase identifier.
 
-# Editorial-ack markers in entry prose.
+# Editorial-ack markers in entry prose. The explicit YAML key
+#   `applier: (none — editorial-judgment rule)`
+# is the strongest signal; the longer-prose phrases catch entries pre-dating
+# the explicit notation.
 EDITORIAL_ACK_MARKERS = (
+    "applier: (none",
     "no validator",
+    "no direct validator",
     "no auto-applier",
+    "editorial-judgment rule",
+    "corpus-evidence rule",
     "deliberately dormant",
     "currently dormant",
     "reference-only",
 )
+
+# Cross-validator constants frequently live in validators/_shared/*.py rather
+# than in a specific detector file. The closed-list check scans this directory
+# as a fallback so that, e.g., DISCOURSE_PARTICLES in _shared/morphology.py
+# is recognized when H14's detector validate_bare_discourse_particle.py
+# imports it.
+SHARED_DIR = Path(__file__).resolve().parents[2] / "validators" / "_shared"
 
 
 def parse_canon_entries(text: str) -> list[dict]:
@@ -101,7 +119,13 @@ def parse_canon_entries(text: str) -> list[dict]:
 def extract_yaml_fields(body_lines: list[str]) -> dict:
     """Find the ```yaml ... ``` block(s) in the entry body and pull out
     detectors paths + closed-list names. Returns a dict with keys
-    'detectors' (list[str]) and 'closed_lists' (list[str])."""
+    'detectors' (list[str]) and 'closed_lists' (list[str]).
+
+    Detector paths are matched in two forms:
+      (a) list-item form — '  - validators/foo/bar.py'
+      (b) inline-prose form — 'detectors: sub-check inside validators/foo/bar.py'
+    Both share INLINE_PATH_RE; the section-tracker keeps the prose match
+    scoped to the detectors: block."""
     detectors, closed_lists = [], []
     in_yaml = False
     section = None
@@ -119,6 +143,7 @@ def extract_yaml_fields(body_lines: list[str]) -> dict:
             continue
         if s.startswith("detectors:"):
             section = "detectors"
+            detectors.extend(INLINE_PATH_RE.findall(s))
             continue
         if s.startswith("closed_lists:"):
             section = "closed_lists"
@@ -127,13 +152,14 @@ def extract_yaml_fields(body_lines: list[str]) -> dict:
             # New top-level YAML key — leave the section
             section = None
         if section == "detectors":
-            m = DETECTORS_LINE_RE.match(s)
-            if m:
-                detectors.append(m.group(1))
+            detectors.extend(INLINE_PATH_RE.findall(s))
         elif section == "closed_lists":
             m = CLOSED_LIST_RE.match(s)
             if m:
                 closed_lists.append(m.group(1))
+    # Deduplicate while preserving order
+    seen = set()
+    detectors = [d for d in detectors if not (d in seen or seen.add(d))]
     return {"detectors": detectors, "closed_lists": closed_lists}
 
 
@@ -152,14 +178,31 @@ def check_validator_file(detector_path: str) -> bool:
 
 
 def check_closed_list_in_source(detector_path: str, list_name: str) -> bool:
-    """Grep the validator source for the closed-list constant name. Accepts
-    matches as: assignment, frozenset content, import-from-shared, or
-    parameter naming."""
-    path = REPO_ROOT / detector_path
-    if not path.is_file():
-        return False
-    text = path.read_text(encoding="utf-8")
-    return bool(re.search(rf"\b{re.escape(list_name)}\b", text))
+    """Grep the validator source AND validators/_shared/*.py for the closed-list
+    constant name. Detector source is checked first; if not found, the shared
+    module tree is scanned because many cross-validator constants
+    (DISCOURSE_PARTICLES, SIFREI_EMET_BOOKS_FULL, EMBEDDED_POETRY, etc.) live
+    in validators/_shared/ rather than in any single detector file.
+
+    Match is prefix-tolerant: `\\bNAME` (word-start boundary, no trailing
+    boundary) so that a canon name like SIFREI_EMET_BOOKS matches a source
+    variant SIFREI_EMET_BOOKS_FULL. This handles the FULL/PARTIAL/CHAPTERS
+    suffix variation pattern observed in poetic_register.py."""
+    paths: list[Path] = []
+    detector_full = REPO_ROOT / detector_path
+    if detector_full.is_file():
+        paths.append(detector_full)
+    if SHARED_DIR.is_dir():
+        paths.extend(sorted(SHARED_DIR.glob("*.py")))
+    pattern = rf"\b{re.escape(list_name)}"  # prefix-tolerant
+    for p in paths:
+        try:
+            text = p.read_text(encoding="utf-8")
+        except OSError:
+            continue
+        if re.search(pattern, text):
+            return True
+    return False
 
 
 def classify(entry: dict) -> tuple[str, list[str]]:

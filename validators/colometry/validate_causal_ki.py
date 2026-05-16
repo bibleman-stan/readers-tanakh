@@ -298,7 +298,7 @@ def line_has_finite_verb(line: str, token_tags: "list[list[str]] | None" = None)
 # High-confidence cognition/speech verbs that take obligatory כִּי-complement
 # (per canon §5 H7 Rule). These are the matrix verbs that make next כִּי a
 # complement (H7 territory), not causal.
-COGNITION_SPEECH_VERBS = {
+OBLIGATORY_COMPLEMENT_VERBS = {
     # Cognition verbs (qatal)
     "ידע", "ידעה", "ידעו", "ידעתי", "ידעת",     # know
     "הבין", "הבינה", "הבינו", "הבינתי",        # understand
@@ -365,11 +365,11 @@ def line_ends_with_cognition_speech_verb(line: str) -> bool:
     if not last:
         return False
     bare = strip_points(last).rstrip(SOF_PASUQ)
-    if bare in COGNITION_SPEECH_VERBS:
+    if bare in OBLIGATORY_COMPLEMENT_VERBS:
         return True
     # Also check with leading conjunction ו
     if bare.startswith("ו") and len(bare) > 1:
-        if bare[1:] in COGNITION_SPEECH_VERBS:
+        if bare[1:] in OBLIGATORY_COMPLEMENT_VERBS:
             return True
     return False
 
@@ -452,7 +452,7 @@ def could_be_causal_ki(prior_verb_bare: str | None) -> bool:
     """
     if prior_verb_bare is None:
         return True  # No verb on prior line — could be causal
-    if prior_verb_bare in COGNITION_SPEECH_VERBS:
+    if prior_verb_bare in OBLIGATORY_COMPLEMENT_VERBS:
         return False  # Cognition/speech verb → complement כִּי
     # Any other verb → could be causal
     return True
@@ -638,9 +638,9 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
             # Strip leading vav if present.
             if verb_candidate.startswith("ו") and len(verb_candidate) > 1:
                 stripped = verb_candidate[1:]
-                if stripped in COGNITION_SPEECH_VERBS:
+                if stripped in OBLIGATORY_COMPLEMENT_VERBS:
                     continue
-            if verb_candidate in COGNITION_SPEECH_VERBS:
+            if verb_candidate in OBLIGATORY_COMPLEMENT_VERBS:
                 continue
 
         # --- Guard 7 (audit fix #4): interrogative prior-line ---

@@ -146,7 +146,7 @@ ADOPTED_VALIDATORS: dict[str, AdoptionSpec] = {
     # high-confidence (otherwise the finding would be REVIEW-REQUIRED).
     "validate_compound_preposition_object": {"STRONG-MERGE-CANDIDATE"},
     # Adopted 2026-05-05 post-tightening (4 engine-level guards added per
-    # FP audit a629c390bc0fa2eba: expanded COGNITION_SPEECH_VERBS to wayyiqtol
+    # FP audit a629c390bc0fa2eba: expanded OBLIGATORY_COMPLEMENT_VERBS to wayyiqtol
     # /imperative/hifil forms; clause-internal cognition check; כִּי אִם idiom
     # guard; interrogative prior-line guard). Severity promoted from REVIEW-
     # REQUIRED to STRONG-SPLIT-CANDIDATE per Stan's 2026-05-05 ban on the

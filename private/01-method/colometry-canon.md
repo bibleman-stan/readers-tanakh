@@ -773,6 +773,7 @@ references: WO §9.3 (construct state), §9.5 (12+ genitive species: subjective/
 # Spec→tooling interface contract for H3
 primitive: macula-clause + surface-morphology (wayyiqtol via Vqw* / Vnw* / etc. morph + Macula clause-head identification)
 detectors: (no direct validator — corpus-evidence rule; Hmfv scanner at scripts/scan_multi_finite_verb_line.py surfaces violations)
+applier: (none — editorial-judgment rule)
 closed_lists:
   - BONDED_LEMMA_PAIRS (curated wayyiqtol pair lexicon at data/syntax-reference/bonded-lemma-pairs.txt)
 fixture: Gen 1:5 (וַיִּקְרָא ... וַיְהִי-עֶרֶב — formula closure pair); Exo 2:6 (6-line restructure per H3+H14+H5b)
@@ -806,6 +807,7 @@ references: WO §33.1.1c (wayyqtl frequency: 14,972 cases = 29% of finite verbs 
 # Spec→tooling interface contract for H4
 primitive: macula-constituent (vocative-position NP detection via lowfat role labels)
 detectors: (no direct validator — editorial; surfaced via review-required findings in cross-rule sweeps)
+applier: (none — editorial-judgment rule)
 closed_lists:
   - ADDRESS_PARTICLES (הוֹי / אוֹי / אָנָּא / sentence-initial proper-name in 2p clause)
   - REPEATED_VOCATIVE_PAIRS (אַבְרָהָם אַבְרָהָם / מֹשֶׁה מֹשֶׁה / שְׁמוּאֵל שְׁמוּאֵל — stay together as one speech act)
@@ -892,7 +894,7 @@ references: WO §36.2.3 (ל + Infinitive Construct general uses — לֵאמֹר
 primitive: macula-clause + macula-constituent (finite verb with speech-act frame role + adjacent direct-discourse boundary)
 detectors: sub-check inside validators/colometry/validate_speech_intro_framing.py
 closed_lists:
-  - SPEECH_ACT_VERBS (subset of SPEECH_FRAME_VERBS — finite forms only, all stems including imperative/jussive)
+  - BARE_SPEECH_VERB_SKELETONS (wayyiqtol forms of אמר / דבר / ענה / יסף; centralized at validators/_shared/speech_verbs.py for cross-validator use)
 fixture: Jonah 1:6 (וַיֹּאמֶר לוֹ // מַה־לְּךָ — split per H5b default)
 cross_corpus: GNT R28-ext speech-act-announcement (this is the Tanakh codification of the analogous rule)
 references: WO §34.3 (Uses of the Jussive — speech-act subtypes), §34.5.1 (Cohortative in Independent Clauses), §34.2 (Form: §34.2.1 Jussive form, §34.2.2 Imperative and Cohortative form); AC §3.3 (Modals: Jussive/Imperative/Cohortative paradigm), §3.5.3 (Commands in Verbal Sequences)
@@ -986,10 +988,11 @@ primitive: surface-morphology + morph-alignment (currently surface-form via morp
 detectors:
   - validators/colometry/validate_complement_integrity.py
   - validators/colometry/validate_causal_ki.py
-  - validators/colometry/validate_verb_object_bond.py
+  - validators/syntax/validate_verb_object_bond.py
 closed_lists:
   - OBLIGATORY_COMPLEMENT_VERBS (יָדַע / רָאָה / שָׁמַע / זָכַר / פָּחַד / רָצָה / שָׁמַח + speech verbs that take כִּי-clause)
-  - CAUSAL_KI_CONTEXTS (כִּי as causal subordinator vs. כִּי as recitative/asseverative)
+discriminators:
+  - causal-vs-recitative-vs-asseverative כִּי: predicate logic in validate_causal_ki.py (matrix-verb-class check + context heuristics); no closed list — the disambiguation is computed per-occurrence from prior-line lemma, morph, and clause role
 fixture: Gen 12:11 (יָדַעְתִּי כִּי / Hb merge); Jer 31:34 (יָדְעוּ אוֹתִי)
 cross_corpus: BoFM Rule 17 / GNT R8 framing-devices (analogous verb-complement integrity)
 references: WO §10.2.1 (Accusative-object taxonomy: direct/effected/internal/complement — H7 currently flattens these), §10.2.3 (Double Accusatives — relevant to verbs like נתן with recipient + thing-given), §11.4.1 (Verbs with Accusative or Prepositional Objects — pairs verbs that govern both interchangeably); AC §2.3.1 (Accusative-Object 4 species: direct/effected/internal/complement — matches WO taxonomy with more accessible exposition)
@@ -1027,6 +1030,7 @@ INTRODUCING (stack on own line) earns a split ONLY when one of three formal anch
 # Spec→tooling interface contract for H9
 primitive: macula-constituent (apposition detection via lowfat NP/Apposition role labels)
 detectors: (no direct validator — editorial; covered case-by-case in review-required findings)
+applier: (none — editorial-judgment rule)
 closed_lists:
   - DIVINE_TITLES (יְהוָה / אֱלֹהִים / אֵל / אֵל שַׁדַּי / אֲדֹנָי / יְהוָה צְבָאוֹת / אֱלֹהֵי-X compound forms)
   - INTRODUCING_FORMULAE (oath formulas, doxology openers, prophetic-attribution formulas)
@@ -1208,8 +1212,9 @@ detectors:
   - validators/colometry/validate_wayehi_protasis.py
   - validators/colometry/validate_short_verse_fronting.py
 closed_lists:
-  - FEF_PROTASIS_HEADS (וַיְהִי / וְהָיָה in temporal/circumstantial frame position)
-  - PROTASIS_CONNECTORS (כַּאֲשֶׁר / כִּי / בְּ + infinitive / b-temporal)
+  - WAYEHI_SKELETON (single-token trigger "ויהי" at line-initial position — past-narrative FEF only; וְהָיָה future-time/conditional FEF is structurally analogous but NOT currently coded — scale-up deferred until corpus FN evidence)
+internal_signals:
+  - FEF existential-vs-frame discriminators (used inside the wayehi detector, not exposed as a named canon-level closed list): complementizers כִּי / כַּאֲשֶׁר / כְּ-prefix; recipient-PP אֶל; בְּ + temporal-noun (יוֹם / עֵת / לַיְלָה / שָׁנָה); Macula clause-role check (V-S → existential)
 fixture: Jonah 1:1 (וַיְהִי דְבַר־יְהוָה); Gen 22:1 (וַיְהִי אַחַר הַדְּבָרִים הָאֵלֶּה)
 cross_corpus: GNT R3.14a hoste-binding / BoFM Rule 14 it-came-to-pass-clause (analogous front-end-frame pattern)
 references: WO §33.2.4 (Waw-Relative After Circumstantial Phrases and Clauses — the FEF wayehi protasis pattern), §38.7 (Temporal Clauses — circumstantial frame as subordinate); AC §5.2.4 (Temporal Clause), §5.2.11 (Circumstantial Clause — frames the wayehi-protasis subordination)
@@ -1297,8 +1302,8 @@ detectors:
   - validators/colometry/validate_short_orphan_line.py  (sub-check: H1 anchor + H18 nucleus)
   - validators/colometry/validate_participial_speech_frame.py  (sub-case: participial + speech-frame)
 closed_lists:
-  - SIFREI_EMET_BOOKS (Pss / Prov / poetic Job 3-42 — H18 hard-skip)
-  - EMBEDDED_POETRY_CHAPTERS (Exo 15 / Deut 32 / Deut 33 / Judg 5 / 1 Sam 2:1-10 / 2 Sam 22 / Isa 12 / Hab 3 / Lam / Song)
+  - SIFREI_EMET_BOOKS_FULL (Pss / Prov — H18 hard-skip across the whole book; routing constant in validators/_shared/poetic_register.py; SIFREI_EMET_BOOKS_PARTIAL handles Job 3:1–42:6 by chapter range)
+  - EMBEDDED_POETRY (Exo 15 / Deut 32 / Deut 33 / Judg 5 / 1 Sam 2:1-10 / 2 Sam 22 / Isa 12 / Hab 3 / Lam / Song — routing constant in validators/_shared/poetic_register.py)
 fixture: Deut 33:26 (NP // bare-participle MUST NOT merge); Lam 3:25 (verbless + prep MUST NOT merge); Pro 25:11 (Sifrei Emet hard-skip)
 cross_corpus: BoFM Rule 17 complement-integrity / GNT M1 Gorgianic + M2 verb-object-bond (verbless-clause analog)
 references: WO §8.4.1 (Clauses of Identification: S-Pred order), §8.4.2 (Clauses of Classification: Pred-S order — predicate-type rules: numerals/adverbs/PPs neutralize), §37.6 (Predicate Use of Participles — participle as clause nucleus), §37.7 (Participles in Association with Finite Verbs); AC §5.1 (Nominal and Verbal Clauses — §5.1.1 Nominal, §5.1.2 Verbal — direct clause-type enumeration)
