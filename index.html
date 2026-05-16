@@ -191,6 +191,22 @@
   }
   .nav-panel-close:hover { color: var(--text-dim); }
 
+  .nav-panel-home {
+    margin-left: auto;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    background: none;
+    border: none;
+    color: var(--text-faint);
+    cursor: pointer;
+  }
+  .nav-panel-home:hover { color: var(--text-dim); }
+  .nav-panel-home svg { width: 18px; height: 18px; }
+
   .nav-panel-title {
     font-size: 0.88em;
     color: var(--text-dim);
@@ -482,24 +498,23 @@
     text-decoration: none !important;
   }
 
-  /* Modern pill — sits in the topbar right-cluster. Hidden by default;
-     showAidPill() in the JS toggles it visible on ?source=kjv. */
-  #aid-pill {
-    background: rgba(255, 255, 255, 0.05);
-    color: var(--text);
-    border: 1px solid var(--border);
-    border-radius: 999px;
-    padding: 4px 12px;
-    font-size: 12px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    cursor: pointer;
-    display: inline-block;
-    margin-right: 6px;
-  }
+  /* Modern pill — lives in the layer-bar (row 2) per the unified family
+     spec, alongside the language/display pills. Inherits .pill base styling;
+     only its toggle-active state is special here. */
   #aid-pill.active-aid {
-    background: rgba(124, 175, 194, 0.2);
-    border-color: #7cafc2;
-    color: #7cafc2;
+    background: rgba(124, 175, 194, 0.22);
+    border-color: rgba(124, 175, 194, 0.55);
+    color: #cfe7f1;
+  }
+  /* Thin vertical divider between layer/display pills and mode pills (Modern). */
+  .pill-sep {
+    display: inline-block;
+    width: 1px;
+    height: 18px;
+    background: var(--border);
+    margin: 0 4px;
+    flex-shrink: 0;
+    align-self: center;
   }
 
   /* === LAYER PILLBOX TOOLBAR (fixed, always visible) ===
@@ -1533,41 +1548,43 @@
      .layer-bar-inner constrains the pill row to the body's 36em column. -->
 <div class="layer-bar" id="layer-bar">
   <div class="layer-bar-inner">
-    <button class="pill" data-layer="he"       onclick="toggleLayer(this)">Hebrew</button>
-    <button class="pill" data-layer="translit" onclick="toggleLayer(this)">Translit</button>
+    <button class="pill" data-layer="he"       onclick="toggleLayer(this)">Heb</button>
+    <button class="pill" data-layer="translit" onclick="toggleLayer(this)">Trans</button>
     <button class="pill" data-layer="inter"    onclick="toggleLayer(this)">Inter</button>
     <button class="pill" data-layer="gloss"    onclick="toggleLayer(this)">Gloss</button>
+    <span class="pill-sep" aria-hidden="true"></span>
+    <!-- Modern pill — moved here from row 1 (topbar) per the unified family
+         header spec. Sits beside the layer pills as a mode toggle. -->
+    <button id="aid-pill" class="pill" onclick="toggleAid()" aria-label="Modern words" title="Toggle modern words">Modern</button>
   </div>
 </div>
 
 <!-- Top bar — outer spans viewport, inner constrains content to 36em. -->
 <div class="topbar">
  <div class="topbar-inner">
-  <!-- LEFT cluster: hamburger + home + book/chap location (BoFM-reader pattern, 2026-05-06) -->
+  <!-- LEFT cluster: hamburger menu + location label. Home folds into the
+       drawer (nav-panel-header) per the unified family-wide header spec. -->
   <div style="flex:1; display:flex; align-items:center; gap:8px; min-width:0;">
-    <button class="topbar-icon" id="topbar-hamburger" onclick="openNav()" aria-label="Navigation" title="Navigation">
-      <svg viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
-    </button>
-    <button class="topbar-icon" id="btn-home" onclick="showLanding()" aria-label="Home" title="Home">
-      <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+    <button class="topbar-icon" id="topbar-hamburger" onclick="openNav()" aria-label="Menu" title="Menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
     </button>
     <div class="topbar-loc" id="topbar-loc" onclick="openNav()" style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis; min-width:0;">
       <span class="topbar-book" id="topbar-book">Genesis</span>
       <span class="topbar-chap" id="topbar-chap">1</span>
     </div>
   </div>
-  <!-- RIGHT cluster: brand + controls -->
+  <!-- RIGHT cluster: utility icons only — search · listen · settings · help.
+       Modern moved to the layer-bar (row 2) per the unified family spec. -->
   <div class="topbar-icons">
-    <!-- Modern pill — toggles archaic→modern on the English-gloss row only.
-         Wave 6-OT: always visible; the .swap markup is emitted by the build
-         pipeline (build_books.py + atu_method.swaps) under all conditions. -->
-    <button id="aid-pill" onclick="toggleAid()" aria-label="Modern words" title="Toggle modern words">Modern</button>
-    <!-- Search button hidden for MVP. Hebrew search needs niqqud/te'amim
-         normalization that hasn't been implemented yet. The search overlay
-         and infrastructure are still in the file and will activate when
-         the normalization layer ships. -->
-    <button class="topbar-icon" id="btn-search" onclick="toggleSearch()" aria-label="Search" title="Search (Ctrl+F)" style="display:none;">
+    <!-- Search button. Hebrew niqqud/te'amim normalization is still TODO;
+         the overlay + infrastructure exist but the search build is the
+         next work unit (Stan-flagged 2026-05-14). Icon now visible per
+         unified header spec; clicking opens the WIP search panel. -->
+    <button class="topbar-icon" id="btn-search" onclick="toggleSearch()" aria-label="Search" title="Search (Ctrl+F)">
       <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+    </button>
+    <button class="topbar-icon" id="btn-listen" onclick="toggleListen()" aria-label="Listen" title="Listen (audio — coming soon)">
+      <svg viewBox="0 0 24 24"><path d="M12 1c-4.97 0-9 4.03-9 9v7c0 1.66 1.34 3 3 3h3v-8H5v-2c0-3.87 3.13-7 7-7s7 3.13 7 7v2h-4v8h3c1.66 0 3-1.34 3-3v-7c0-4.97-4.03-9-9-9z"/></svg>
     </button>
     <button class="topbar-icon" id="btn-settings" onclick="toggleSettings()" aria-label="Settings" title="Settings">
       <svg viewBox="0 0 24 24"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58a.49.49 0 00.12-.61l-1.92-3.32a.49.49 0 00-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54a.48.48 0 00-.48-.41h-3.84a.48.48 0 00-.48.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96a.49.49 0 00-.59.22L2.74 8.87a.48.48 0 00.12.61l2.03 1.58c-.05.3-.07.62-.07.94s.02.64.07.94l-2.03 1.58a.49.49 0 00-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.26.41.48.41h3.84c.24 0 .44-.17.48-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6A3.6 3.6 0 1115.6 12 3.61 3.61 0 0112 15.6z"/></svg>
@@ -1700,6 +1717,9 @@
   <div class="nav-panel-header">
     <button class="nav-panel-close" onclick="closeNav()">&times;</button>
     <span class="nav-panel-title">Hebrew Bible</span>
+    <button class="nav-panel-home" onclick="closeNav(); showLanding();" aria-label="Home" title="Home">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+    </button>
   </div>
   <div class="nav-panel-body" id="nav-body"></div>
 </div>
@@ -1946,6 +1966,11 @@ let aidOn = false;
 // Default the gloss layer on so the reader sees the KJV-anchored English
 // without having to open the layer-bar pill toolbar.
 document.body.classList.add('show-gloss');
+// Listen — TTS audio playback. Placeholder; feature still to be built.
+window.toggleListen = function() {
+  alert('Listen (audio playback) is coming soon.');
+};
+
 window.toggleAid = function() {
   aidOn = !aidOn;
   // Only the .en-gloss row contains .swap spans (build_books.py renders the
@@ -2063,7 +2088,6 @@ function updateTopbar() {
 
 function updateTopbarForView(view, slug) {
   const locEl = document.getElementById('topbar-loc');
-  const homeBtn = document.getElementById('btn-home');
   const bookEl = document.getElementById('topbar-book');
   const chapEl = document.getElementById('topbar-chap');
   // Tradition-aware identity strings. christianBrand vs hebrewBrand drive
@@ -2073,11 +2097,9 @@ function updateTopbarForView(view, slug) {
     ? 'Old Testament' : 'Hebrew Bible';
   if (view === 'toc') {
     locEl.style.display = 'none';
-    homeBtn.style.display = 'none';
     document.title = 'Tanakh Reader — ' + traditionBrand;
   } else if (view === 'chapters') {
     locEl.style.display = '';
-    homeBtn.style.display = '';
     bookEl.textContent = bookDisplayName(slug, 'name');
     // In christian mode, surface the KJV section (e.g. "— Major Prophets")
     // alongside the book name so Daniel reads as a Major Prophet, not
@@ -2093,7 +2115,6 @@ function updateTopbarForView(view, slug) {
     locEl.onclick = () => history.back();
   } else {
     locEl.style.display = '';
-    homeBtn.style.display = '';
     bookEl.textContent = bookDisplayName(currentBook, 'short');
     chapEl.textContent = currentChapter;
     document.title = bookDisplayName(currentBook, 'name') + ' ' + currentChapter + ' — Tanakh Reader';
