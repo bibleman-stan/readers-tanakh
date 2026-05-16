@@ -1643,10 +1643,14 @@
     <span class="search-op" onclick="insertSearchOp('&quot;', '&quot;')">&quot; &quot;</span>
     <span class="search-op" onclick="insertSearchOp(' NEAR5 ')">NEAR</span>
   </div>
-  <!-- Corpus filters (Torah / Nevi'im / Ketuvim) deferred until more
-       than one book has shipped. The corpus-filters div is preserved
-       so the search infrastructure has a stable mount point. -->
-  <div class="corpus-filters" id="corpus-filters" style="display:none;"></div>
+  <!-- Corpus filter chips — Tanakh canonical sections (Stan 2026-05-16).
+       Tap to narrow scope; multiple chips OR together. -->
+  <div class="corpus-filters" id="corpus-filters">
+    <span class="corpus-chip" data-corpus="torah"    onclick="toggleCorpusFilter(this)">Torah</span>
+    <span class="corpus-chip" data-corpus="neviim-f" onclick="toggleCorpusFilter(this)">Nevi'im — Former</span>
+    <span class="corpus-chip" data-corpus="neviim-l" onclick="toggleCorpusFilter(this)">Nevi'im — Latter</span>
+    <span class="corpus-chip" data-corpus="ketuvim"  onclick="toggleCorpusFilter(this)">Ketuvim</span>
+  </div>
   <div class="lemma-info" id="lemma-info"></div>
   <div class="search-body">
     <div class="search-status">
@@ -2623,7 +2627,18 @@ let activeBook = null; // book slug (e.g. 'rom') or null for all books
 // Corpus filter groups deferred — Tanakh sections (Torah / Nevi'im / Ketuvim)
 // will populate this when more than one book ships and the corpus chips
 // are unhidden. Keep an empty object so callers don't NPE.
-const CORPUS_GROUPS = {};
+// --- Corpus filter groups — Tanakh canonical sections (Stan 2026-05-16). ---
+// Matches BOOK_SECTIONS_RAW ordering used by the landing-page sectionizer.
+const CORPUS_GROUPS = {
+  'torah':    ['genesis', 'exodus', 'leviticus', 'numbers', 'deuteronomy'],
+  'neviim-f': ['joshua', 'judges', '1samuel', '2samuel', '1kings', '2kings'],
+  'neviim-l': ['isaiah', 'jeremiah', 'ezekiel',
+               'hosea', 'joel', 'amos', 'obadiah', 'jonah', 'micah',
+               'nahum', 'habakkuk', 'zephaniah', 'haggai', 'zechariah', 'malachi'],
+  'ketuvim':  ['psalms', 'proverbs', 'job', 'songofsongs', 'ruth',
+               'lamentations', 'ecclesiastes', 'esther', 'daniel',
+               'ezra', 'nehemiah', '1chronicles', '2chronicles'],
+};
 let activeCorpusFilters = new Set();
 
 function toggleCorpusFilter(el) {
@@ -2631,31 +2646,13 @@ function toggleCorpusFilter(el) {
   if (activeCorpusFilters.has(corpus)) {
     activeCorpusFilters.delete(corpus);
     el.classList.remove('active');
-    // If deactivating Pauline, also deactivate Disputed
-    if (corpus === 'pauline') {
-      activeCorpusFilters.delete('disputed');
-      const disputedChip = document.querySelector('.corpus-chip[data-corpus="disputed"]');
-      if (disputedChip) {
-        disputedChip.classList.remove('active', 'visible');
-      }
-    }
   } else {
     activeCorpusFilters.add(corpus);
     el.classList.add('active');
   }
-  // Show/hide Disputed sub-filter based on Pauline state
-  const disputedChip = document.querySelector('.corpus-chip[data-corpus="disputed"]');
-  if (disputedChip) {
-    if (activeCorpusFilters.has('pauline')) {
-      disputedChip.classList.add('visible');
-    } else {
-      disputedChip.classList.remove('visible');
-    }
-  }
-  // Corpus change: the active book may no longer be in the allowed set.
-  // Reset it so the user isn't stuck filtered to a book outside the corpus.
+  // Corpus change resets activeBook drill-down so user isn't stuck
+  // filtered to a book outside the now-allowed set.
   activeBook = null;
-  // Re-run search with current query
   const input = document.getElementById('search-input');
   if (input && input.value.trim().length >= 2) {
     performSearch(input.value);
@@ -2665,33 +2662,11 @@ function toggleCorpusFilter(el) {
 }
 
 function getCorpusAllowedBooks() {
-  if (activeCorpusFilters.size === 0) return null; // null = no filter, allow all
+  if (activeCorpusFilters.size === 0) return null; // null = no filter
   const allowed = new Set();
   for (const corpus of activeCorpusFilters) {
-    if (CORPUS_GROUPS[corpus]) {
-      for (const slug of CORPUS_GROUPS[corpus]) {
-        allowed.add(slug);
-      }
-    }
-  }
-  // If Disputed is active (sub-filter of Pauline), restrict Pauline books to disputed only
-  if (activeCorpusFilters.has('disputed') && activeCorpusFilters.has('pauline')) {
-    const paulineAll = CORPUS_GROUPS['pauline'];
-    const disputedSet = new Set(CORPUS_GROUPS['disputed']);
-    // Remove undisputed Pauline books (keep disputed ones + any from other active filters)
-    for (const slug of paulineAll) {
-      if (!disputedSet.has(slug)) {
-        // Only remove if no OTHER active filter includes this book
-        let keptByOther = false;
-        for (const corpus of activeCorpusFilters) {
-          if (corpus !== 'pauline' && corpus !== 'disputed' && CORPUS_GROUPS[corpus] && CORPUS_GROUPS[corpus].includes(slug)) {
-            keptByOther = true;
-            break;
-          }
-        }
-        if (!keptByOther) allowed.delete(slug);
-      }
-    }
+    const slugs = CORPUS_GROUPS[corpus];
+    if (slugs) for (const slug of slugs) allowed.add(slug);
   }
   return allowed;
 }
@@ -2998,6 +2973,40 @@ function hasBooleanOps(query) {
   return /\b(AND|OR|NOT|NEAR\d+)\b/.test(query) || /[()]/.test(query);
 }
 
+// --- Wildcard phrase-template detection (family-standard from bofm). ---
+// Activates ONLY when the entire query is in double-quotes AND contains
+// a standalone '*' or '?' token. Examples:
+//   "according to ? faith"   →  ? matches any single word
+//   "faith * mountains"      →  * matches any sequence of words
+// Literal tokens are matched diacritic/niqqud-insensitively.
+function hasWildcards(query) {
+  const q = query.trim();
+  if (q.charAt(0) !== '"' || q.charAt(q.length - 1) !== '"') return false;
+  const inner = q.slice(1, -1);
+  return /(?:^|\s)[?*](?:\s|$)/.test(inner);
+}
+
+function buildWildcardRegex(query) {
+  const inner = query.trim().replace(/^"|"$/g, '');
+  const words = stripDiacritics(inner).split(/\s+/);
+  const parts = [];
+  const literalTerms = [];
+  for (let i = 0; i < words.length; i++) {
+    if (words[i] === '?') {
+      parts.push('\\S+');
+    } else if (words[i] === '*') {
+      parts.push('\\S+(?:\\s+\\S+)*');
+    } else {
+      parts.push(words[i].replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+      literalTerms.push(words[i]);
+    }
+  }
+  return {
+    regex: new RegExp('\\b' + parts.join('\\s+') + '\\b', 'gi'),
+    literalTerms: literalTerms,
+  };
+}
+
 // --- Word splitting (strips Greek punctuation for word-position matching) ---
 
 function getWords(text) {
@@ -3249,12 +3258,21 @@ function performSearch(query) {
   const lemmaInfoEl = document.getElementById('lemma-info');
   lemmaInfoEl.textContent = '';
 
-  const isBoolean = hasBooleanOps(query);
-  const isExact = /^".*"$/.test(query.trim());
+  const isWildcard = hasWildcards(query);
+  const isBoolean = !isWildcard && hasBooleanOps(query);
+  const isExact = !isWildcard && /^".*"$/.test(query.trim());
   let boolMatcher = null;
+  let wildcardData = null;
   const lemmaExpansions = []; // track expansions for UI indicator
 
-  if (isBoolean) {
+  if (isWildcard) {
+    wildcardData = buildWildcardRegex(query);
+    // Highlight the literal (non-?/*) tokens via the existing diacritic-aware
+    // path. Placeholder positions aren't highlighted; literal anchors are
+    // enough to spot the match. No lemma expansion in wildcard mode —
+    // pattern fidelity beats fuzzy match.
+    lastSearchTerms = wildcardData.literalTerms;
+  } else if (isBoolean) {
     const parsed = parseBooleanQuery(query);
     boolMatcher = parsed.matcher;
     lastSearchTerms = parsed.highlightTerms;
@@ -3309,7 +3327,11 @@ function performSearch(query) {
 
     let matched = false;
 
-    if (searchEnglish) {
+    if (wildcardData) {
+      // Wildcard phrase-template: regex test against niqqud-stripped text.
+      wildcardData.regex.lastIndex = 0;
+      matched = wildcardData.regex.test(entry.textStripped);
+    } else if (searchEnglish) {
       // English mode: simple case-insensitive search on English text
       if (!entry.enText) continue;
       const queryLower = query.trim().toLowerCase();
