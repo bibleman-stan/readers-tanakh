@@ -159,13 +159,21 @@ Layer 1 = permission/prohibition. Layer 3 operates within L1's permitted-either 
 | Commit attempt fails | Diagnose with `git log -3` + `git status --short` BEFORE retry. Use `git commit -m "$(cat <<'EOF'...EOF)"` (NEVER `-F /dev/stdin` — Linux-only). Never run two `git commit` in parallel — they race on HEAD lock. |
 | "Should I commit now or wait?" | Commit substantive work proactively; status claims AFTER commit. |
 | Cascade rebuild after pipeline change | 6 parallel cluster agents; never one agent on 39 books. |
-| Per-item judgment work at corpus scale | Parallel cluster-Opus dispatch (5–6 agents, one per cluster); never hand-pass. |
+| Per-item judgment work at corpus scale | Parallel cluster dispatch (5–6 agents, one per cluster); never hand-pass. **Default Sonnet** (rule defined, per-instance judgment within it); upgrade to Opus only if the cluster work needs adversarial reasoning. |
 
 When outside this table, surface. When inside, dispatch the standing answer and report the result.
 
 **Corpus clusters** (for cluster-cascade routing): Torah / Former Prophets / Latter Prophets / Writings prose / Sifrei Emet (Pss/Prov/poetic Job) / Embedded Poetry. Threshold: any batch ≥25 surgical fixes spanning 3+ clusters MUST be split.
 
-**Agent model routing:** Haiku for mechanical lookups; Sonnet for narrow-scope scans where rules are defined; Opus for adversarial audits / methodology synthesis / novel rule design. Sonnet default; reserve Opus for reasoning-heavy work.
+**Agent model routing — frugal-default, triage at every dispatch** (Stan-codified 2026-05-15: *"be smarter and more frugal about using the correct level of model for task; don't blow thru Opus tokens for a Haiku or Sonnet task"*). The triage question at every Agent call: **is the structure of the work already defined?**
+
+- **Haiku** when YES + work is mechanical: file lookups, set-membership checks, template fills, mirroring, regex-shaped fuzzy queries, single-doc quote extraction, simple counts. Things a regex could almost do but needs an LLM for the fuzzy edges.
+- **Sonnet** when YES + per-instance judgment within the defined rule: per-verse classification with a known signature, cluster-cascade verse audits, "apply this rule to this batch," focused single-doc analysis. **Sonnet is the default for cluster-cascade per-item judgment** — not Opus.
+- **Opus** only when NO — the structure isn't given and must be generated: adversarial audits where the agent must invent attack vectors, methodology synthesis, novel rule design from scratch, cross-cutting reasoning over multiple domains, multi-class FP-investigation where the classes themselves aren't yet named.
+
+Default is the LOWEST tier that does the job. Upgrade only when the lower tier would actually fail. No "Opus for safety" — that's the anti-pattern this directive corrects.
+
+Frugality applies in-session too: brief reports over long, single-purpose tool calls over multi-purpose explorations, terse status updates over essays. The same triage discipline that picks the cheapest sufficient agent picks the cheapest sufficient response.
 
 ---
 
