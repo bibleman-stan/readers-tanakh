@@ -22,7 +22,7 @@ A colometric reading edition of the Hebrew Bible. Each line on the page is an at
 
 **Self-report before first substantive response:** one line per mandatory file read; pending-item disposition (each = executing-now / retired-with-rationale / re-deferred-with-concrete-trigger; "awaiting Stan direction" / "until Stan re-surfaces" are drift not defers); red flags. Silent skip = orientation failure.
 
-The JSONL at `~/.claude/projects/c--Users-bibleman-repos-readers-tanakh/<session-id>.jsonl` is the verbatim record. After compaction, grep into it. Don't write wrap artifacts / session-notes / full-transcript dumps; surface state inline. `pending.md` only for extended multi-cycle hand-offs.
+**Compaction-resume protocol.** Per [`../atu-method/memories/feedback_compaction_resume_protocol.md`](../atu-method/memories/feedback_compaction_resume_protocol.md) (cross-corpus shared discipline): when resuming from a compaction event, the FIRST action after the mandatory orientation reads is to read the last 20-30 user↔assistant back-and-forth turns from the session JSONL verbatim. Report the re-read as part of the orientation self-report. Don't write wrap artifacts / session-notes / full-transcript dumps; surface state inline. `pending.md` only for extended multi-cycle hand-offs.
 
 ---
 
