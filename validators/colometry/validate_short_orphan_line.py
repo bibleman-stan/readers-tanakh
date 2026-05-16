@@ -706,6 +706,28 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
         if is_standalone_permitted(token, line, tag_list=tag_list):
             continue
 
+        # ── H15 casus-pendens defer ──
+        # Topic-fronted NP + resumptive pronoun on the next line is
+        # CANON-CORRECT per H15 / SJ5 (e.g., 1Sam 17:14 וְדָוִד / הוּא
+        # הַקָּטָן — "and David / he was the youngest"). Topic earns its
+        # own line; the next-line pronoun resumes it. NOT an M4 orphan.
+        # Detect: peek at the next non-empty content line within the
+        # verse; if it opens with a 3rd-person personal pronoun (resumptive,
+        # not הִנֵּה which is presentative-cataphoric), defer.
+        _next_first_skel = ""
+        for _j in range(i + 1, len(lines)):
+            _s = lines[_j].strip()
+            if not _s:
+                continue
+            if parse_verse_ref(lines[_j]) is not None:
+                break
+            _nxt_toks = _s.split()
+            if _nxt_toks:
+                _next_first_skel = strip_points(_nxt_toks[0]).rstrip(SOF_PASUQ)
+            break
+        if _next_first_skel in {"הוא", "היא", "הם", "המה"}:
+            continue
+
         # ── STRONG-MERGE arm: subject-pronoun-orphan + finite-verb-next ──
         # Tight pattern: 1-token line that's a subject pronoun, followed by a
         # line whose first token is a tag-confirmed finite verb. Both within
