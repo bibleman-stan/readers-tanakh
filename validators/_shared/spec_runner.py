@@ -14,6 +14,17 @@ CLI: see scripts/run_validators.py.
 Architectural constraint: NO te'amim Unicode codepoints (U+0591-U+05AF) in
 trigger predicates. The morphology module enforces this; spec evaluation
 delegates trigger logic to that module.
+
+Note on atu_method shared-infrastructure consumption (2026-05-16): Tanakh
+imports `atu_method.*` only from build scripts (build_books.py,
+propagate_editorial_layers.py, regenerate_english.py) — NOT from any
+validator. `Finding.to_text` (below) emits a one-line markdown record
+locally; the cross-corpus `atu_method.infrastructure.validator_output`
+module currently exposes `Candidate` + `write_candidates` (file-output)
+but no per-line text formatter, so there is no verdict-layer helper to
+migrate to. Future sessions should not re-investigate this; revisit only
+if atu-method adds a per-line formatter helper that the Tanakh validator
+side could meaningfully consume.
 """
 
 from __future__ import annotations
