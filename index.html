@@ -2792,24 +2792,52 @@ async function buildSearchIndex() {
     }
   }
 
+  // Build queue of all (slug, chapter) tasks across the full corpus
+  // (~929 chapters in the Tanakh). Sequential fetching exceeded the 30s
+  // timeout — Stan flagged 2026-05-16. Worker pool pattern caps concurrent
+  // requests (most static servers happily serve 20 in parallel; per-origin
+  // HTTP/2 multiplexing handles the rest).
+  const tasks = [];
   for (const slug of BOOK_KEYS) {
     const totalChapters = BOOKS[slug].chapters;
     for (let ch = 1; ch <= totalChapters; ch++) {
+      tasks.push({ slug: slug, ch: ch });
+    }
+  }
+  const total = tasks.length;
+  let completed = 0;
+  const CONCURRENCY = 20;
+
+  async function worker() {
+    while (tasks.length > 0) {
+      const task = tasks.shift();
+      if (!task) return;
       try {
-        const key = chapterCacheKey(slug, ch);
+        const key = chapterCacheKey(task.slug, task.ch);
         let html;
         if (bookCache[key]) {
           html = bookCache[key];
         } else {
-          html = await fetchChapterHtml(slug, ch);
+          html = await fetchChapterHtml(task.slug, task.ch);
           bookCache[key] = html;
         }
-        extractVerses(slug, html);
+        extractVerses(task.slug, html);
       } catch (e) {
         // Chapter not available (book not yet built) — skip silently.
       }
+      completed++;
+      // Periodic progress update so users see the build advancing rather
+      // than staring at a frozen "Building search index..." string.
+      if (completed % 25 === 0 || completed === total) {
+        statusEl.innerHTML = '<div class="search-loading">Building search index... '
+          + completed + ' / ' + total + '</div>';
+      }
     }
   }
+
+  const workers = [];
+  for (let i = 0; i < CONCURRENCY; i++) workers.push(worker());
+  await Promise.all(workers);
 
   searchIndex = index;
   searchIndexLoading = false;
@@ -3245,9 +3273,9 @@ function performSearch(query) {
       if (searchIndex) {
         clearInterval(checkInterval);
         performSearch(query);
-      } else if (Date.now() - startedAt > 30000) {
+      } else if (Date.now() - startedAt > 90000) {
         clearInterval(checkInterval);
-        statusEl.innerHTML = '<div class="search-loading" style="color:#c66;">Search index failed to build (30s timeout). Reload the page to retry.</div>';
+        statusEl.innerHTML = '<div class="search-loading" style="color:#c66;">Search index failed to build (90s timeout). Reload the page to retry.</div>';
       }
     }, 200);
     return;
@@ -3317,8 +3345,12 @@ function performSearch(query) {
   }
 
   const hits = [];
-  const displayMode = (document.body.classList.contains('show-gloss') ? 'gloss' : 'hebrew');
-  const searchEnglish = (displayMode === 'gloss');
+  // Auto-detect query language: any Hebrew character (Unicode block
+  // U+0590-U+05FF) → Hebrew search against textStripped; otherwise →
+  // English search against enText. Stan 2026-05-16 — users shouldn't
+  // need to toggle display layers before typing a query.
+  const hasHebrewChars = /[֐-׿]/.test(query);
+  const searchEnglish = !hasHebrewChars;
   const corpusAllowed = getCorpusAllowedBooks();
 
   for (const entry of searchIndex) {
