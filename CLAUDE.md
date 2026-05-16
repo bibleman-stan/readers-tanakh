@@ -55,14 +55,9 @@ When Stan names a verse with a specific desired partition: line 1 = "Got it — 
 
 Same FP class in 2+ specs OR 2+ validators in one session = engine-level fix at `validators/_shared/spec_runner.py` / `validators/_shared/*` / `scripts/apply_*.py`. Per-spec/per-validator guard the second time = whack-a-mole. Stan's mantra: *swat the bug class, not the instance.*
 
-### Grammar constrains ATU boundaries; it does not determine them
+### Grammar constrains; atomic-thought determines
 
-Stan codified verbatim 2026-05-13: *"grammar doesn't determine ATUs boundaries, but it can constrain them."* Authoritative cross-corpus statement at [`../atu-method/docs/framework.md §1.2`](../atu-method/docs/framework.md) tail ("Constraint vs. determination — the asymmetry") + memory [`feedback_grammar_constrains_not_determines.md`](../atu-method/memories/feedback_grammar_constrains_not_determines.md).
-
-- **Grammar gives PROHIBITIONS, not PRESCRIPTIONS.** Hebrew syntax (Layer 1, wayyiqtol-chain markers), H7 complement integrity, M1–M4 merge-overrides, formula integrity constrain where breaks **can't** go.
-- **Atomic-thought is the determination engine.** Generative principle + J1–J5 + image/camera-angle/period tests determine where breaks **should** go. Critical for Tanakh's 4-layer integrity: the determination operates on the Hebrew layer's atomic-thought content; the other three layers conform.
-- **When proposing a new rule:** "constraint or determination?" Constraints ground in grammar/morph signatures; determinations require the atomic-thought test (propositional, not grammatical). Grammar can confirm a determination is safe; grammar alone cannot generate it.
-- **For closed-list extensions:** threshold is "is this position content-empty such that breaking here leaves a line with no atomic thought?" Operationalization, not grammatical-pattern catalog.
+Cross-corpus discipline at `framework.md §1.2` tail + `../atu-method/memories/feedback_grammar_constrains_not_determines.md` + new Factor A in `feedback_three_anti_default_factors.md`. Tanakh-specific instantiation: Layer 1 = Hebrew syntax + wayyiqtol-chain markers; H7 = complement integrity; M1–M4 = merge-overrides; formula integrity per per-corpus §5. Tanakh 4-layer integrity note: determination operates on the Hebrew layer's atomic-thought content; the other three layers conform.
 
 ### Use the primitive, not the heuristic
 
