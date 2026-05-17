@@ -28,6 +28,23 @@ A colometric reading edition of the Hebrew Bible. Each line on the page is an at
 
 ---
 
+## Production tier (ATU rendering at scale) — validated 2026-05-17
+
+**ATU rendering production protocol: Opus 3-pass with agreement scoring.**
+Empirically validated 2026-05-17 across 5 chapters / 3 corpora / 3 languages.
+
+- 3 independent Opus passes per chapter, same minimal-rubric prompt
+- Unanimous (3/3 agree): auto-apply (94% prose / 100% poetic accuracy)
+- Non-unanimous: surface to editorial review
+- **Sonnet 3-pass is NOT production-grade for ATU rendering** — silent agreement-on-wrong-answer failure mode (~40% wrong on poetic content, ~20% on prose). Do NOT default to Sonnet for ATU rendering.
+- **Haiku is off-table for biblical content** — content-filter blocks ~67%; quality variance ~55% when completing.
+
+Reference: [`../atu-method/docs/toolset-architecture.md`](../atu-method/docs/toolset-architecture.md) Stage 1 + cross-session memory `feedback_production_tier_empirical.md`.
+
+**Frugal-default model routing still applies for all OTHER work** (cluster sweeps, classification, audits, doc reads — see model routing section below). Only ATU rendering at scale is Opus-required. The frugal-default is NOT overridden for non-rendering work classes.
+
+---
+
 ## Editorial discipline (highest-violation surface)
 
 ### Stan-flagged verse = class-investigation directive
@@ -35,7 +52,7 @@ A colometric reading edition of the Hebrew Bible. Each line on the page is an at
 When Stan flags a problem at a specific verse, that's a directive to investigate the rule set, not patch the verse. Right shape:
 
 1. Diagnose: what's the underlying class/pattern Stan's intuition is responding to?
-2. **Audit yourself FIRST** — walk M1 / M2 / M3 / M4 / J1–J5 / formula-integrity / N=2 / N=3+ explicitly against the actual canon. Pay attention to **explicit exclusions** (e.g., M1 §1.5 explicitly excludes sequential narrative bonding). If the framework's existing answer is "split, this is excluded," that's a real answer — not a gap.
+2. **Audit yourself FIRST** — walk the bidirectional test + restrictive-relative binding + minimal-rubric constraints (per `framework.md §1.2`) explicitly against the actual canon. Pay attention to **explicit exclusions** (e.g., sequential narrative bonding is excluded from merge-trigger scope). If the framework's existing answer is "split, this is excluded," that's a real answer — not a gap.
 3. Only if step 2 finds a real gap, investigate corpus-wide.
 4. **New rules trigger §7.3 adversarial audit** — ≥2 parallel agents BEFORE any engine infrastructure. NO scanner / applier / FORMULAE entry until the rule passes. Building infrastructure first is the "fake rule" failure mode.
 5. If audit holds: fix at engine layer, apply mechanically corpus-wide.
@@ -59,7 +76,7 @@ Same FP class in 2+ specs OR 2+ validators in one session = engine-level fix at 
 
 ### Grammar constrains; atomic-thought determines
 
-Cross-corpus discipline at `framework.md §1.2` tail + `../atu-method/memories/feedback_grammar_constrains_not_determines.md` + new Factor A in `feedback_three_anti_default_factors.md`. Tanakh-specific instantiation: Layer 1 = Hebrew syntax + wayyiqtol-chain markers; H7 = complement integrity; M1–M4 = merge-overrides; formula integrity per per-corpus §5. Tanakh 4-layer integrity note: determination operates on the Hebrew layer's atomic-thought content; the other three layers conform.
+Cross-corpus discipline at `framework.md §1.2` tail + `../atu-method/memories/feedback_grammar_constrains_not_determines.md` + new Factor A in `feedback_three_anti_default_factors.md`. Tanakh-specific instantiation: Hebrew syntactic constraints (wayyiqtol-chain markers, complement integrity, formula integrity) are in the constraint catalog audit at Stage 2 of the pipeline; complement integrity is a constraint, not a layer; cognitive identification at Stage 1 (LLM + bidirectional test) is the determination engine. Tanakh 4-layer integrity note: determination operates on the Hebrew layer's atomic-thought content; the other three layers conform.
 
 ### Use the primitive, not the heuristic
 
@@ -99,7 +116,7 @@ STOP iterating on the surface fix. Frame-reset to class level. Ask: what's the C
 
 ## Methodology stack
 
-Methodology rests on three forces operating simultaneously: **generative** (atomic thought drives line creation; J1–J5 structural justifications), **subtractive** (Hebrew syntax + complement + formula integrity trigger merges; M1–M4 merge-overrides), **diagnostic** (single image as tiebreaker). Authoritative body: [`../atu-method/docs/framework.md`](../atu-method/docs/framework.md).
+Methodology pipeline: **cognitive identification first** (LLM + bidirectional test determines ATU well-formedness), **syntactic constraints second** (constraint catalog as audit — restrictive-relative binding + language-specific constraints), **parallelism off-axis** from ATU rendering. Three-stage pipeline: LLM identification (Opus 3-pass) → constraint catalog audit → editorial review. Authoritative body: [`../atu-method/docs/framework.md`](../atu-method/docs/framework.md).
 
 **No editorial overlay has force.** Te'amim, niqqud, sof-pasuq, paseq, versification: preserved for textual fidelity, zero force in editorial decisions or defensibility-capture (canon §1, retired 2026-05-05). Sifrei Emet vs prose partition is book/chapter-membership, not runtime te'amim check. The v1-he-baseline (parse_teamim.py output) is a historical mechanical artifact, not a normative starting draft.
 
@@ -169,6 +186,8 @@ When outside this table, surface. When inside, dispatch the standing answer and 
 - **Opus** only when NO — the structure isn't given and must be generated: adversarial audits where the agent must invent attack vectors, methodology synthesis, novel rule design from scratch, cross-cutting reasoning over multiple domains, multi-class FP-investigation where the classes themselves aren't yet named.
 
 Default is the LOWEST tier that does the job. Upgrade only when the lower tier would actually fail. No "Opus for safety" — that's the anti-pattern this directive corrects.
+
+**ATU rendering at production scale is the explicit exception: Opus 3-pass with agreement scoring.** Do NOT default to Sonnet or Haiku for ATU rendering. Sonnet produces silent agreement-on-wrong-answer failures (~40% wrong on poetic content); Haiku is off-table for biblical content entirely. This overrides the frugal-default for this specific work class only. All other work (cluster sweeps, classification, audits, doc reads) remains under frugal-default routing above.
 
 Frugality applies in-session too: brief reports over long, single-purpose tool calls over multi-purpose explorations, terse status updates over essays. The same triage discipline that picks the cheapest sufficient agent picks the cheapest sufficient response.
 
