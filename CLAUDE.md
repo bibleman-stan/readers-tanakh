@@ -28,20 +28,9 @@ A colometric reading edition of the Hebrew Bible. Each line on the page is an at
 
 ---
 
-## Production tier (ATU rendering at scale) — validated 2026-05-17
+## Production tier (ATU rendering at scale)
 
-**ATU rendering production protocol: Opus 3-pass with agreement scoring.**
-Empirically validated 2026-05-17 across 5 chapters / 3 corpora / 3 languages.
-
-- 3 independent Opus passes per chapter, same minimal-rubric prompt
-- Unanimous (3/3 agree): auto-apply (94% prose / 100% poetic accuracy)
-- Non-unanimous: surface to editorial review
-- **Sonnet 3-pass is NOT production-grade for ATU rendering** — silent agreement-on-wrong-answer failure mode (~40% wrong on poetic content, ~20% on prose). Do NOT default to Sonnet for ATU rendering.
-- **Haiku is off-table for biblical content** — content-filter blocks ~67%; quality variance ~55% when completing.
-
-Reference: [`../atu-method/docs/toolset-architecture.md`](../atu-method/docs/toolset-architecture.md) Stage 1 + cross-session memory `feedback_production_tier_empirical.md`.
-
-**Frugal-default model routing still applies for all OTHER work** (cluster sweeps, classification, audits, doc reads — see model routing section below). Only ATU rendering at scale is Opus-required. The frugal-default is NOT overridden for non-rendering work classes.
+ATU rendering at scale = **Opus 3-pass with agreement scoring**. Frugal-default applies for everything else. See [`../atu-method/docs/toolset-architecture.md`](../atu-method/docs/toolset-architecture.md) §Stage 1 and [`../atu-method/memories/feedback_production_tier_empirical.md`](../atu-method/memories/feedback_production_tier_empirical.md).
 
 ---
 
