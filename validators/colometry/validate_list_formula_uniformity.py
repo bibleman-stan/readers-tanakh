@@ -33,11 +33,20 @@ VIOLATION TAGS:
                            split needed to give the formula its own line.
 
 CORPUS REALITY (pre-flight 2026-05-16):
-  All 6 series instances in current v2/heb (Deut 27 curse + Deut 28 blessing
-  pairs; 2 Chr 9 + Ps 144 beatitude pairs) are already correctly edited —
+  All series instances in current v2/heb are already correctly edited —
   formula tokens are line-leading. Validator role is REGRESSION-AUDIT
   ONLY: catches future un-edits that introduce non-uniform formatting.
   Expected baseline: 0 findings.
+
+  Known series locations:
+    - Deut 27:15–26: ארור 12-verse curse series (interrupted by amen
+      responses; series boundaries detected per consecutive opener)
+    - Deut 28:3–6: ברוך blessing series (run of 4)
+    - Deut 28:16–19: ארור curse series (run of 4)
+    - 2 Chr 9:7: אשרי beatitude pair
+    - Ps 84:5–6: אשרי beatitude pair
+    - Ps 119:1–2: אשרי acrostic pair (aleph stanza)
+    - Ps 144:15: אשרי beatitude pair
 
 ARCHITECTURAL NOTE (FORK rationale):
   This validator forks from validate_genealogy_uniformity.py per Stan's
@@ -70,7 +79,7 @@ V2_DIR = REPO_ROOT / "data" / "text-files" / "v2" / "heb"
 HEBREW_POINTS_RE = re.compile(r"[֑-ׇ]")
 SOF_PASUQ = "׃"
 MAQQEF = "־"
-_VERSE_REF_RE = re.compile(r"^(\w+\s+)?\d+:\d+\s*$")
+_VERSE_REF_RE = re.compile(r"^\d+:\d+\s*$")
 
 # Canon §5 H17 closed list — list-formula opening lemmas (parallel-series uniformity).
 LIST_FORMULA_PEERS = frozenset({
@@ -215,12 +224,18 @@ def format_finding(v: dict) -> str:
 def main() -> int:
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--book", help="book slug (e.g., 05-deuteronomy)")
-    p.add_argument("--v2", action="store_true", help="scan v2/heb instead of v1")
+    p.add_argument("--v1", action="store_true",
+                   help="scan v1/he-baseline (legacy; default is v2/heb)")
+    p.add_argument("--v2", action="store_true",
+                   help="explicit v2/heb (default; flag kept for backward-compat)")
     p.add_argument("--json", action="store_true", help="emit JSON")
     p.add_argument("--verbose", action="store_true")
     args = p.parse_args()
 
-    root = V2_DIR if args.v2 else V1_DIR
+    # Default to V2 (source of truth); --v1 explicit legacy access.
+    # Must-fix #4 in 2400 directive — was V1_DIR default; flipped to
+    # match regression-audit semantic contract (v2/heb is source of truth).
+    root = V1_DIR if args.v1 else V2_DIR
     if not root.exists():
         print(f"ERROR: directory not found: {root}", file=sys.stderr)
         return 2

@@ -161,6 +161,9 @@ PROPHETIC_FORMULA_SKELETONS = SOLEMNITY_PREFIXES
 FORMULA_CLUSTER_CONTINUATION_SKELS = frozenset({
     # אמר variants (the verb of "כה אמר X")
     "אמר", "אמרו",
+    # Vav-prefixed נאם — coordinate continuation of attribution
+    # (2 Sam 23:3 doubled-נאם title — must-fix #3 in 2400 directive)
+    "ונאם",
     # Divine subject + apposition tokens (bare + article-prefixed variants;
     # ה- definite article on divine common nouns like הָאֱלֹהִים is frequent
     # and the article-form is not separately Np-tagged in TAHOT)
@@ -168,12 +171,34 @@ FORMULA_CLUSTER_CONTINUATION_SKELS = frozenset({
     "האל", "האלהים", "האלוה",
     "צבאות", "ישראל", "יעקב", "השמים", "הצבאות",
     "האדון",
+    # Quantifier preceding subject NP (Josh 22:16 כל עדת יהוה — nice-to-have
+    # from 2200 audit Agent A F4)
+    "כל",
     # Common-noun speaker collectives (also article-prefixed)
     "עדת",
     # Patronymic + apposition wrappers
     "עבדך", "בנך", "בני", "אחיך",
     "בן", "בנו",
 })
+
+
+def _is_literary_attribution_head(tag_list) -> bool:
+    """Return True if the post-verb head token's TAHOT tags indicate a
+    literary-attribution NP (participle / common-noun without proper-noun
+    status) rather than a prophetic / human-speaker messenger-formula
+    subject. Used to suppress the FP class identified in 2200 audit:
+    Ps 36:2 (נאם פשע), Prov 30:1 (נאם הגבר), Num 24:4/16 (נאם שמע)."""
+    if not tag_list:
+        return False
+    for tag in tag_list:
+        head = MT.head_morpheme(tag)
+        # Active participles (qal/nifal/piel/hifil) — Balaam-title shape
+        if head.startswith(("Vqr", "Vnr", "Vpr", "Vhr")):
+            return True
+        # Common nouns (bare Nc or article-prefixed HC/Nc) — Ps 36:2 / Prov 30:1
+        if head.startswith("Nc"):
+            return True
+    return False
 
 # Maqqef-preserving niqqud/te'amim stripper. Used to identify the first
 # sub-token (maqqef-separated) of a maqqef-joined orthographic word like
@@ -236,20 +261,55 @@ def detect_solemnity_split_position(
 
     # Trigger check
     if first_sub == "כה":
-        if len(orig_tokens) < 2:
+        # Maqqef-joined כה־אמר is a single orthographic token (must-fix #1
+        # in 2400 directive — 60 silently missed splits in 2200 audit).
+        # Check sub-skels of tokens[0] first; if the כה־אמר maqqef-group
+        # is one token, advance idx past tokens[0] only. Otherwise look
+        # at tokens[1] for the whitespace-separated אמר verb.
+        subs0 = _HEBREW_KEEP_MAQQEF_RE.sub("", orig_tokens[0]).split("־")
+        if len(subs0) >= 2 and subs0[1] in ("אמר", "אמרו"):
+            idx = 1  # past maqqef-joined כה־אמר single token
+        elif len(orig_tokens) >= 2:
+            second_sub = _first_subtoken_skel(orig_tokens[1])
+            if second_sub in ("אמר", "אמרו"):
+                idx = 2  # past whitespace-separated prefix + verb
+            else:
+                return None
+        else:
             return None
-        second_sub = _first_subtoken_skel(orig_tokens[1])
-        if second_sub not in ("אמר", "אמרו"):
-            return None
-        idx = 2  # past prefix + verb
     elif first_sub == "נאם":
         idx = 1
     else:
         return None
 
+    # Literary-attribution gate (must-fix #2 in 2400 directive).
+    # If the first post-verb token (= subject-NP head) carries TAHOT
+    # tags indicating a participle / common-noun construction AND is
+    # not in the FORMULA_CLUSTER_CONTINUATION_SKELS lexicon, the line
+    # is a literary attribution (Ps 36:2 נאם פשע / Prov 30:1 נאם הגבר
+    # / Num 24:4 נאם שמע), not a messenger formula. Suppress firing.
+    if idx < len(orig_tokens):
+        post_verb_normalized = _HEBREW_KEEP_MAQQEF_RE.sub("", orig_tokens[idx])
+        post_verb_subs = [s.rstrip("׃") for s in post_verb_normalized.split("־")]
+        in_cluster = any(
+            s in FORMULA_CLUSTER_CONTINUATION_SKELS
+            for s in post_verb_subs if s
+        )
+        if not in_cluster:
+            tags = tag_for_token(idx)
+            if _is_literary_attribution_head(tags):
+                return None  # FP suppression — literary attribution
+
+    # Recursive literary-attribution gate after vav-prefixed coordinate
+    # attribution (ונאם). Pattern: "נאם דוד … ונאם הגבר הוקם על …"
+    # (2 Sam 23:3 double-attribution title — fire at "הגבר" would be wrong).
+    # After consuming a "ונאם" token, re-check the literary-attribution
+    # gate on the next token.
+
     # Walk subject-NP cluster
     MAX_CLUSTER_WINDOW = 5
     cluster_count = 0
+    just_consumed_vav_naum = False
     while idx < len(orig_tokens) and cluster_count < MAX_CLUSTER_WINDOW:
         normalized = _HEBREW_KEEP_MAQQEF_RE.sub("", orig_tokens[idx])
         if normalized.rstrip("׃") == "":
@@ -257,11 +317,14 @@ def detect_solemnity_split_position(
             continue
 
         is_cluster_member = False
+        consumed_vav_naum = False
         # (a) Sub-token in FORMULA_CLUSTER_CONTINUATION_SKELS
         subs = [s.rstrip("׃") for s in normalized.split("־")]
         for sub in subs:
             if sub and sub in FORMULA_CLUSTER_CONTINUATION_SKELS:
                 is_cluster_member = True
+                if sub == "ונאם":
+                    consumed_vav_naum = True
                 break
         # (b) TAHOT-confirmed proper noun
         if not is_cluster_member:
@@ -274,6 +337,22 @@ def detect_solemnity_split_position(
 
         if not is_cluster_member:
             return idx  # content begins here
+
+        # Recursive literary-attribution gate after coordinate attribution
+        # (must-fix #3 follow-on for 2 Sam 23:3 double-attribution shape).
+        # If we just consumed a ונאם token and the NEXT token is a
+        # literary-attribution head (Vqr* / Nc* not in cluster), the line
+        # is a multi-attribution title not a messenger formula — suppress.
+        if consumed_vav_naum and idx + 1 < len(orig_tokens):
+            next_normalized = _HEBREW_KEEP_MAQQEF_RE.sub("", orig_tokens[idx + 1])
+            next_subs = [s.rstrip("׃") for s in next_normalized.split("־")]
+            next_in_cluster = any(
+                s in FORMULA_CLUSTER_CONTINUATION_SKELS for s in next_subs if s
+            )
+            if not next_in_cluster:
+                next_tags = tag_for_token(idx + 1)
+                if _is_literary_attribution_head(next_tags):
+                    return None  # multi-attribution title — suppress
 
         idx += 1
         cluster_count += 1
