@@ -95,25 +95,40 @@ Each constraint:
 
 Deliverable: `canon/constraint_catalog_v1.md` — single authoritative document. Implementation comes next.
 
-### Item 2 — MVP pipeline build
+### Item 2 — MVP pipeline build (production tier: Opus 3-pass with agreement scoring)
 
 Build the new pipeline as scripts under `scripts/atu_pipeline/` (new directory):
 
-1. **`scripts/atu_pipeline/render_atus.py`** — wraps an LLM call using the minimal-rubric prompt; outputs ATU-segmented text per chapter. Input: source text file. Output: proposed rendering file.
+1. **`scripts/atu_pipeline/render_atus.py`** — runs **3 independent Opus passes** of the minimal-rubric prompt against source text. Per-verse verdict assignment:
+   - **Unanimous (3/3 passes agree)**: auto-apply to final rendering (high confidence)
+   - **Majority (2/3 passes agree)**: write majority verdict to draft, flag for editorial review
+   - **All-disagree (3 distinct verdicts)**: flag for editorial review as uncertain
+   Output: proposed rendering file + agreement report (per-verse verdict tier + non-unanimous flags).
 2. **`scripts/atu_pipeline/audit_constraints.py`** — runs the constraint catalog against a proposed rendering; produces violation report. Reuses the audit-mode logic from `scripts/audit_rendered_output.py`.
-3. **`scripts/atu_pipeline/run_pipeline.py`** — orchestrates render → audit → report. Output: proposed rendering + violation report for editorial review.
+3. **`scripts/atu_pipeline/run_pipeline.py`** — orchestrates render → audit → report. Output: proposed rendering + agreement report + violation report for editorial review.
 
-The minimal-rubric prompt itself: distilled from the 2026-05-17 experiments. Single canonical prompt under `scripts/atu_pipeline/prompts/minimal_rubric_hebrew.md`.
+**Production model tier**: Opus 3-pass with agreement scoring. Empirically validated 2026-05-17 across 5 chapters / 3 corpora / 3 languages (Enos / Lev 11 / Eph 1 / Isa 53 / Rev 5). Unanimous accuracy: 94% prose / 100% poetic. See `memories/feedback_production_tier_empirical.md` (cross-session memory) for protocol specification and empirical evidence.
+
+**Sonnet 3-pass is NOT production-grade.** Silent agreement-on-wrong-answer failure mode: ~40% of unanimous Sonnet verdicts on poetic content are wrong, ~20% on prose. Editor cannot trust Sonnet unanimous output. Do not default to Sonnet at scale.
+
+**Haiku is off-table** for biblical content (content-filter blocks ~67% of passes; quality unreliable on completed runs).
+
+The minimal-rubric prompt itself: the v0.1 prompt (bidirectional test + restrictive-relative binding + small set of language-specific syntactic constraints + default KEEP-AS-IS, with NO cognitive-unity gate, NO parallelism class adjudication, NO genre anchors). Single canonical prompt under `scripts/atu_pipeline/prompts/minimal_rubric_hebrew.md`. Do NOT add few-shot-heavy variants (empirically v0.2 caused Sonnet over-correction; the v0.1 simple prompt is the production prompt).
 
 §7.3 audit triggers apply per existing precedent (pre-build adversarial audit on prompt design and constraint catalog before integration).
 
 ### Item 3 — Rubric refinements from 2026-05-17 calibration items
 
-Incorporate into the minimal rubric (v0.2):
+Targeted refinements to the minimal rubric (small, surgical additions only — resist new-rule reflex):
 
 - **Speech-intro + short particle-led reply/vocative**: Unified discourse-particle binding extension. `וַיֹּאמֶר X` + short particle-led unit (vocative call, `הִנֵּנִי`, etc.) = ONE ATU.
 - **Wayyiqtol hendiadys**: candidate carve-out for fixed motion-onset pairs (`וַיָּקָם וַיֵּלֶךְ`, `וַיַּשְׁכֵּם וַ֯`) — pre-decision Stan's call before integration.
-- Other items per cross-corpus evidence as they surface.
+
+Calibration items RESOLVED 2026-05-17 (no rubric change needed):
+
+- **Doxological NP enumeration** (Rev 5:12 seven-fold attribute list): strict minimal rubric got it right — bare-NP enumerations collapse per Step 1 forward-closure failure. NO sub-rule needed.
+
+Other items per cross-corpus evidence as they surface. Resist new-rule reflex per `feedback_three_anti_default_factors`.
 
 ### Item 4 — Port already-validated renderings forward
 
@@ -161,7 +176,7 @@ Reply at `directives/replies/2026-05-17-1500-ground-up-rebuild-architecture.md` 
 
 This is a substantial directive. Realistic timeline: 3–5 days of Tanakh-Claude work for Items 1–3; Items 4–5 follow once Items 1–3 land. Item 6 is downstream.
 
-Cost: ~$15–30 in Sonnet spend across constraint catalog construction, pre-build adversarial audits, MVP integration tests.
+Cost: pipeline build itself is small; production rendering at scale uses Opus 3-pass per chapter. Tanakh-Claude operates within the shared Max-plan usage cap; allocate accordingly across constraint-catalog construction, MVP pipeline build, and per-chapter production rendering.
 
 ## Audit triggers
 
@@ -173,6 +188,8 @@ This directive is large enough that each item warrants its own §7.3 audit trigg
 
 ## What this realigns
 
-The fundamental claim: **the architecture going forward IS what the method always actually said.** Cognitive ATU identification (LLM + minimal rubric) is the primary work. Syntactic rules (constraint catalog) audit candidates. Parallelism is off-axis. Producer-style validators are sunset. The minimal rubric was empirically validated as load-bearing on 2026-05-17 across 8 chapters / 3 corpora / 3 languages.
+The fundamental claim: **the architecture going forward IS what the method always actually said.** Cognitive ATU identification (LLM + minimal rubric) is the primary work; syntactic rules (constraint catalog) audit candidates; parallelism is off-axis; producer-style validators are sunset.
+
+**Production protocol settled 2026-05-17:** Opus 3-pass with agreement scoring. Empirically validated across 8 chapters / 3 corpora / 3 languages (Stan's chapter-level spot-check) PLUS 5-chapter / 3-corpus formal cross-tier × cross-genre matrix establishing Opus 3-pass at 94% prose / 100% poetic unanimous accuracy. Sonnet 3-pass is not production-grade. Haiku is off-table. Codified in `memories/feedback_production_tier_empirical.md` (cross-session) and `atu-method/docs/toolset-architecture.md`.
 
 This is the rebuild. The legacy stack served its purpose; this directive replaces it.
