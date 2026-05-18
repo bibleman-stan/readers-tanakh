@@ -29,6 +29,7 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import inspect
 import json
 import re
 import sys
@@ -43,6 +44,8 @@ REPORT_DIR = REPO_ROOT / "data" / "reports" / "atu_pipeline"
 
 # Add validators/ to sys.path for shared Macula primitive imports.
 sys.path.insert(0, str(REPO_ROOT / "validators"))
+# Add scripts/atu_pipeline/ to sys.path so the checks_*.py cluster modules can be imported.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 HEBREW_POINTS_RE = re.compile(r"[֑-ׇ]")
 
@@ -220,46 +223,103 @@ def check_compound_prep_object(verse_text: str, source_text: str) -> Optional[di
     return {"fires": False, "verdict": "NO-EFFECT", "reason": "no compound-prep stranding"}
 
 
-@register_check("JM158-restrictive-relative")
-def check_restrictive_relative_binding(verse_text: str, source_text: str) -> Optional[dict]:
-    """Restrictive אֲשֶׁר-clauses must not stand alone as ATUs.
-    Heuristic v1: if a line begins with אֲשֶׁר (אשר) and the prior line ends
-    without a sof-pasuq, the relative is likely bound to a head on the prior
-    line. Mark as ADVISORY (audit-mode flag; editor adjudicates restrictive
-    vs non-restrictive).
-
-    Macula upgrade (deferred): use lowfat `relp` constituent + head-noun
-    uniqueness check."""
-    lines = [ln for ln in verse_text.splitlines() if ln.strip()]
-    for i in range(1, len(lines)):
-        stripped = strip_points(lines[i].lstrip()).split()
-        if stripped and stripped[0] == "אשר":
-            prior = lines[i - 1].rstrip()
-            if not prior.endswith("׃"):
-                return {
-                    "fires": True,
-                    "verdict": "ADVISORY",
-                    "reason": f"line {i+1} begins with אֲשֶׁר; relative may be restrictive (bound to head on prior line)",
-                    "details": {"line": i + 1},
-                }
-    return {"fires": False, "verdict": "NO-EFFECT", "reason": "no leading-אשר pattern"}
+# JM158-restrictive-relative removed from this file 2026-05-17 per §7.3 audit β
+# MUST-FIX #3: registered twice (here + in checks_relative_subordinate module),
+# producing silent-overwrite collision. The Macula-aware version in
+# checks_relative_subordinate.py supersedes this surface heuristic.
 
 
-@register_check("JM150-verbless-clause")
-def check_verbless_clause(verse_text: str, source_text: str) -> Optional[dict]:
-    """Verbless / nominal-predicate clause: informational only (no auto-fire).
-    Reports as INFORM when a line appears to be a verbless predication."""
-    # Surface heuristic v1: line of 2-4 tokens with no finite-verb skeleton
-    # is a candidate verbless clause. Mark as INFORM only.
-    return {"fires": False, "verdict": "NO-EFFECT", "reason": "verbless-clause check informational"}
+# Phantom ID stubs removed 2026-05-17 per §7.3 audit α MUST-FIX #9 + audit β MUST-FIX #2:
+#   - "JM150-verbless-clause" — not a catalog ID; real ID is JM154-verbless-clause-nucleus
+#   - "JM155-construct-chain" — not a catalog ID; real ID is JM129-construct-chain
+# Real implementations land via the cluster-module register_with() calls below.
 
 
-@register_check("JM155-construct-chain")
-def check_bare_construct_head(verse_text: str, source_text: str) -> Optional[dict]:
-    """Bare construct head awaiting genitive on next line: FAILS forward
-    closure. Heuristic: a line ending with a noun in construct state (no
-    clear marker without Macula); informational v1."""
-    return {"fires": False, "verdict": "NO-EFFECT", "reason": "construct-chain check needs Macula bound-state morphology"}
+# ---------------------------------------------------------------------------
+# Cluster module registration (wires the 22 Macula-aware checks into CHECK_REGISTRY)
+# ---------------------------------------------------------------------------
+#
+# Per §7.3 audit β MUST-FIX #1 and the design-fix residual-risks audit:
+# audit_verse now dispatches by arity, so 5-arg cluster functions can register
+# directly. The shim wrappers in checks_*.py modules that pass empty/None
+# coordinates are bypassed where possible (the audit_verse arity dispatch will
+# invoke the registered callable correctly regardless of whether it's the
+# wrapped 2-arg shim or the underlying 5-arg function).
+
+
+def _register_cluster_checks() -> None:
+    """Import each cluster module and register its checks into CHECK_REGISTRY.
+
+    Failure to import is fatal (the module is required for production); failure
+    to register a specific check is logged but does not abort registration of
+    the others.
+    """
+    # checks_bound_nominals: register the 5-arg full-Macula path directly (skip
+    # the 2-arg shim that returns NO-EFFECT unconditionally).
+    try:
+        from checks_bound_nominals import register_with as _rw_bn  # type: ignore
+        _rw_bn(CHECK_REGISTRY, five_arg=True)
+    except Exception as e:
+        print(f"WARN: failed to register checks_bound_nominals: {e!r}", file=sys.stderr)
+
+    # The other cluster modules use 2-arg-shim wrappers internally that pass
+    # empty coordinates, which defeats the Macula path. To bypass the shim, we
+    # import the underlying 5-arg check functions directly and register them
+    # by their catalog IDs. audit_verse's arity dispatch will route the full
+    # coordinates through.
+    for mod_name, id_to_fn in _CLUSTER_DIRECT_REGISTRATIONS:
+        try:
+            mod = __import__(mod_name)
+            for catalog_id, fn_name in id_to_fn:
+                fn = getattr(mod, fn_name, None)
+                if fn is None:
+                    print(f"WARN: {mod_name}.{fn_name} not found; skipping {catalog_id}", file=sys.stderr)
+                    continue
+                CHECK_REGISTRY[catalog_id] = fn
+        except Exception as e:
+            print(f"WARN: failed to register {mod_name}: {e!r}", file=sys.stderr)
+
+
+# Maps catalog ID → underlying 5-arg function name in each cluster module.
+# Bypasses the 2-arg shim wrappers in those modules so audit_verse arity dispatch
+# can pass full Macula coordinates through.
+_CLUSTER_DIRECT_REGISTRATIONS: list[tuple[str, list[tuple[str, str]]]] = [
+    ("checks_clause_nucleus", [
+        ("JM125-verb-object-bond", "check_JM125_verb_object_bond"),
+        ("JM125-coordinated-objects", "check_JM125_coordinated_objects"),
+        ("JM157-complement-integrity", "check_JM157_complement_integrity"),
+        ("JM154-verbless-clause-nucleus", "check_JM154_verbless_clause_nucleus"),
+        ("JM121-participial-predicate", "check_JM121_participial_predicate"),
+        ("JM133-verb-pp-complement", "check_JM133_verb_pp_complement"),
+    ]),
+    ("checks_particles", [
+        ("JM160-negation-scope", "check_JM160_negation_scope"),
+        ("JM155-discourse-particle", "check_JM155_discourse_particle"),
+        ("JM161-interrogative-particle", "check_JM161_interrogative_particle"),
+        ("JM147-vocative-extraclausal", "check_JM147_vocative_extraclausal"),
+    ]),
+    ("checks_bonded_formula", [
+        ("JM177-bonded-pair", "check_JM177_bonded_pair"),
+        ("JM-oath-formula", "check_JM_oath_formula"),
+        ("JM-cross-verse-continuity", "check_JM_cross_verse_continuity"),
+        ("JM-wayehi-fef-protasis", "check_JM_wayehi_fef_protasis"),
+    ]),
+    ("checks_relative_subordinate", [
+        ("JM158-restrictive-relative", "check_jm158_restrictive_relative"),
+        ("JM158-nonrestrictive-relative", "check_jm158_nonrestrictive_relative"),
+        ("JM156-casus-pendens", "check_jm156_casus_pendens"),
+        ("JM168-purpose-clause", "check_jm168_purpose_clause"),
+        ("JM159e-conditional-protasis", "check_jm159e_conditional_protasis"),
+        ("JM157-ki-recitativum", "check_jm157_ki_recitativum"),
+        ("JM174-gapped-verb", "check_jm174_gapped_verb"),
+        ("JM123-inf-abs-predicate", "check_jm123_inf_abs_predicate"),
+    ]),
+]
+
+
+# Wire the cluster checks at module import time. coverage_preflight() called
+# below will now see all 26 catalog entries either registered or honestly NYI.
+_register_cluster_checks()
 
 
 # ---------------------------------------------------------------------------
@@ -290,19 +350,58 @@ def coverage_preflight(entries: list[ConstraintEntry]) -> dict:
 # ---------------------------------------------------------------------------
 
 
+# Arity-cached dispatch: inspect each check once, cache its parameter count.
+# Replaces the prior try/except TypeError dual-dispatch which silently swallowed
+# bugs inside 5-arg checks per §7.3 audit β finding.
+_ARITY_CACHE: dict[Callable, int] = {}
+
+
+def _check_arity(check: Callable) -> int:
+    """Return the number of positional parameters the check accepts (cached)."""
+    cached = _ARITY_CACHE.get(check)
+    if cached is not None:
+        return cached
+    try:
+        sig = inspect.signature(check)
+        n = sum(
+            1 for p in sig.parameters.values()
+            if p.kind in (
+                inspect.Parameter.POSITIONAL_ONLY,
+                inspect.Parameter.POSITIONAL_OR_KEYWORD,
+            )
+        )
+    except (ValueError, TypeError):
+        # Builtins or C-implemented callables — assume 5-arg max.
+        n = 5
+    _ARITY_CACHE[check] = n
+    return n
+
+
 def audit_verse(
     verse_text: str,
     source_text: str,
     entries: list[ConstraintEntry],
+    book_slug: str = "",
+    chapter: int = 0,
+    verse_num: int = 0,
 ) -> list[dict]:
-    """Run all registered checks against one verse. Return per-firing records."""
+    """Run all registered checks against one verse. Return per-firing records.
+
+    `book_slug`, `chapter`, `verse_num` are threaded to checks that need Macula
+    coordinates. Dispatch by parameter count (cached): 2-arg checks get
+    (verse_text, source_text); 5+-arg checks get the full tuple.
+    """
     firings: list[dict] = []
     # Sort by precedence (lowest int = highest priority)
     for entry in sorted(entries, key=lambda e: e.precedence):
         check = CHECK_REGISTRY.get(entry.constraint_id)
         if check is None:
             continue
-        result = check(verse_text, source_text)
+        arity = _check_arity(check)
+        if arity >= 5:
+            result = check(verse_text, source_text, book_slug, chapter, verse_num)
+        else:
+            result = check(verse_text, source_text)
         if result is None:
             continue
         if not result.get("fires"):
@@ -317,6 +416,19 @@ def audit_verse(
             "details": result.get("details", {}),
         })
     return firings
+
+
+def _parse_verse_num(verse_ref: str) -> int:
+    """Parse 'chapter:verse' format into verse_num. Returns 0 on parse failure."""
+    if not verse_ref or ":" not in verse_ref:
+        return 0
+    parts = verse_ref.split(":")
+    if len(parts) < 2:
+        return 0
+    try:
+        return int(parts[-1])
+    except ValueError:
+        return 0
 
 
 def audit_chapter(
@@ -338,7 +450,11 @@ def audit_chapter(
         rec = json.loads(raw)
         verse_text = rec.get("draft", "") or ""
         source_text = rec.get("source", "") or ""
-        firings = audit_verse(verse_text, source_text, entries)
+        verse_num = _parse_verse_num(rec.get("verse", ""))
+        firings = audit_verse(
+            verse_text, source_text, entries,
+            book_slug=book_slug, chapter=chapter, verse_num=verse_num,
+        )
         audit_records.append({
             "verse": rec["verse"],
             "agreement": rec.get("agreement"),

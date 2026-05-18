@@ -8,6 +8,35 @@ composition_rule: >
   Highest-priority HARD constraint wins. Two BIND constraints on the same
   boundary → JUDGMENT-REQUIRED. HARD always overrides ADVISORY. Within the
   same tier and precedence, lower precedence-integer wins.
+implementation_conventions:
+  - >
+    **NFC normalization discipline (mandatory).** All Hebrew string literals
+    used in Token.lemma / Token.pos / closed-list comparisons MUST be
+    NFC-normalized at module load. Use `unicodedata.normalize("NFC", literal)`
+    on every literal. Lowfat XML normalizes to NFC at parse; comparison strings
+    must match. Failing to NFC-normalize produces silent matching failures.
+  - >
+    **Prosodic-word counting.** Every weight-threshold guard (≤N / ≥N prosodic
+    words) MUST use `validators._shared.macula_constituents.prosodic_word_count(
+    tokens)` for the count. Raw token-length is wrong: maqqef-bound tokens
+    collapse to one prosodic word.
+  - >
+    **Sense-line → token mapping preamble.** For every constraint that operates
+    on sense-line content (every line-boundary constraint), the implementation
+    MUST start by retrieving the line's tokens via
+    `match_sense_line_tokens(verse_tokens, sense_line_text, start_idx)`.
+    Predicates on `Token` cannot be applied to raw sense-line strings.
+  - >
+    **Frame-arg safety pattern.** `Token.frame_args` is sparse in lowfat —
+    many verbs lack frame annotation. Use `verb.frame_args.get("A1") or []`,
+    never `verb.frame_args["A1"]`. Implement surface fallback for missing frame
+    coverage (e.g., אֵת-marker detection for direct objects).
+  - >
+    **Bonded-noun-pair lookup.** JM177 uses the 13-pair structural list at
+    `validators/_shared/bonded_noun_pairs.py` (`BONDED_NOUN_PAIRS` frozenset
+    of frozensets; `is_bonded_pair(lemma_a, lemma_b)` helper). NOT the 88-pair
+    `BONDED_LEMMA_PAIRS` in `hendiadys_lemma_pairs.py` (DORMANT verb list,
+    reference-only).
 bidirectional_test: >
   This catalog EXCLUDES bidirectional-test logic. Forward closure
   (does this line's proposition carry forward?) and backward containment
@@ -236,7 +265,7 @@ Sub-files (per-construction detail):
 - **Tier**: HARD
 - **Precedence**: 2
 - **Source**: Joüon §177; WO §4.6.5; canon M1
-- **Macula operationalization**: Closed list: 13-pair structural bonded-pair list at `validators/_shared/hendiadys_lemma_pairs.py` (the active list, distinct from the dormant 88-pair BONDED_LEMMA_PAIRS). Trigger: sense-line N ends with skeleton1-lemma, sense-line N+1 begins with וְ + skeleton2-lemma, and (skeleton1, skeleton2) is in the 13-pair closed list. Guard: no finite verb on either line (prevents misfiring on verbal coordination). Macula: `Token.lemma` lookup against closed list.
+- **Macula operationalization**: Closed list: 13-pair structural bonded-noun list at `validators/_shared/bonded_noun_pairs.py` (`BONDED_NOUN_PAIRS` frozenset; `is_bonded_pair(lemma_a, lemma_b)` helper). Distinct from the 88-pair DORMANT `BONDED_LEMMA_PAIRS` in `hendiadys_lemma_pairs.py` (verb-pair list, reference-only — do NOT use). Trigger: sense-line N ends with token T1 (`T1.lemma` in some pair), sense-line N+1 begins with `pos == "conjunction"` + lemma "ו" (or proclitic וְ prefix on next token) + token T2 (`T2.lemma` in same pair as T1). Guard: no finite verb on either line (prevents misfiring on verbal coordination). Lemmas MUST be NFC-normalized per implementation_conventions.
 - **Status**: DRAFT
 - **Backward-compat**: C11 (1100 catalog)
 - **Diagnostic examples**:
@@ -362,7 +391,7 @@ Sub-files (per-construction detail):
 - **Tier**: HARD
 - **Precedence**: 3
 - **Source**: Joüon §156; WO §4.7; canon H15
-- **Macula operationalization**: Pattern: NP token on line N + resumptive pronoun token (pronominal suffix or independent pronoun `pos="pronoun"` with `type_="pronominal"`) that references the NP on the same or following line within the same clause (Macula `participantref` or `subjref` pointing to the NP token's xml_id). A casus pendens earns its own line per SJ5 (substantive adjunct). When both the topic NP and the resumptive-pronoun clause appear on one line, this SPLIT fires.
+- **Macula operationalization**: Pattern detection requires walking from the resumptive pronoun OUTWARD to its antecedent NP (not from NP to pronoun — the API has no backreferences field). Iterate all pronoun / pronominal-suffix tokens (`pos="pronoun"` with `type_="pronominal"`, or suffix tokens) on lines after a candidate topic NP. For each such pronoun, check `pronoun.antecedents` (resolved from `participantref_ids`): if any antecedent is a Token on a prior line whose role is fronted-topic-like (NP at line head, no preceding finite verb on that line), the prior NP is a casus pendens topic. SPLIT fires when both the topic NP and the resumptive-pronoun clause appear on the same line. Note: `participantref` coverage in lowfat is sparse; surface fallback (independent pronoun on line N resuming a pre-verbal NP on line N-1, no chain-continuity from a different antecedent) needed for ~40% of cases.
 - **Status**: DRAFT
 - **Backward-compat**: G8 (1100 catalog, previously only partial coverage via H15 guard in validate_clause_nucleus_split)
 - **Diagnostic examples**:
@@ -404,8 +433,8 @@ Sub-files (per-construction detail):
 - **Tier**: HARD
 - **Precedence**: 4
 - **Source**: Canon H10; §1 versification-is-not-a-break-signal
-- **Macula operationalization**: Four sub-cases:
-  1. Bare subordinator at verse-end: `Token.pos == "conjunction"` + subordinating lemma (כִּי, אֲשֶׁר, אִם, כַּאֲשֶׁר) at final position of verse N = BIND (subordinator requires clause on verse N+1)
+- **Macula operationalization**: Four sub-cases. Note: this is the ONLY catalog constraint that requires loading more than one chapter. At chapter-boundary verses (the final verse of a chapter), the check must load the next chapter via `get_chapter(book_slug, chapter+1)` and call `get_verse_tokens(book_slug, chapter+1, 1)` to inspect the continuation. The pipeline must supply the chapter's total verse count so the check knows when a verse is chapter-final.
+  1. Bare subordinator at verse-end: `Token.pos == "conjunction"` + subordinating lemma (NFC-normalized: כִּי, אֲשֶׁר, אִם, כַּאֲשֶׁר) at final position of verse N = BIND (subordinator requires clause on verse N+1)
   2. Construct-state noun at verse-end: `Token.is_construct` = True at final token of verse N, nominal continuation on verse N+1 = BIND (same as JM129, applied cross-verse)
   3. Speech-intro frame at verse-end without content: speech-frame token (לֵאמֹר or bare speech verb) at verse-end, speech content beginning verse N+1 = BIND
   4. Conjunction-prefix at verse-end: `Token.pos == "conjunction"` (proclitic וְ) at verse-end token = BIND (same as JM103, applied cross-verse)
@@ -534,7 +563,7 @@ Sub-files (per-construction detail):
 - **Tier**: ADVISORY
 - **Precedence**: 6
 - **Source**: Joüon §174 (gapping); WO §8.3.2
-- **Macula operationalization**: Line N: `Token.is_finite_verb` = True (verb present). Line N+1: no finite verb token. Both lines are within the same clause-boundary grouping in Macula (parallel role-label structure: similar `role` values — Subj, Obj, PP-adjunct — across both lines). Detection: `Constituent.tokens_with_role("s")` and `Constituent.tokens_with_role("o")` on both lines show parallel subject/object structure without a finite verb on N+1. INFORM: the gapped bicolon is propositionally complete; no correction needed.
+- **Macula operationalization**: First, retrieve each line's tokens via `match_sense_line_tokens(verse_tokens, sense_line_text, start_idx)` (per the implementation_conventions preamble). Line N: at least one token with `is_finite_verb == True`. Line N+1: no token with `is_finite_verb == True`. Compare role distributions across lines by filtering each line's token list to `token.role in ('s', 'o', 'o2', 'pp', 'adv')`. INFORM verdict fires when line N has a finite verb with role-bearing arguments AND line N+1 has structurally analogous role distribution (subject role present, object role present, no finite verb). Note: `Constituent.tokens_with_role()` is a Constituent method, NOT applicable to a sense-line slice; the per-token `token.role` filter is the correct API at the sense-line level.
 - **Status**: DRAFT
 - **Backward-compat**: G3 (1100 catalog, previously NOT COVERED)
 - **Diagnostic examples**:
@@ -555,7 +584,7 @@ Sub-files (per-construction detail):
 - **Tier**: ADVISORY
 - **Precedence**: 5
 - **Source**: Joüon §157.3; WO §39.3.4; canon H7 complement integrity
-- **Macula operationalization**: Line N+1 opens with `Token.lemma == "כִּי"`. Check: is the prior line (N) a speech-act frame or a divine-speech context (first-person verbal forms, YHWH as speaker in surrounding context)? Macula `subjref` or `participantref` pointing to YHWH token on prior line = recitativum candidate. Guard for causal: if line N does not end with a cognition/speech verb AND the כִּי-clause has first-person divine verbal content, flag as JUDGMENT-REQUIRED for recitativum disambiguation.
+- **Macula operationalization**: Line N+1 opens with `Token.lemma == "כִּי"`. Detection uses a **surface heuristic** (not subjref/participantref, which is too sparse for speaker identification): the first finite verb on the next line has `token.person == "1"` (first-person divine self-reference). Combined trigger: line N opens / continues a speech-act frame (lemma in `{אָמַר, דִּבֵּר, צִוָּה}`) OR line N is in an already-established prophetic-oracle context, AND line N+1's first finite verb has `person == "1"`. Flag as JUDGMENT-REQUIRED. Note: `subjref` is grammatical-subject pointer, not speaker-discourse-role pointer — using subjref to detect YHWH-as-speaker is unreliable.
 - **Status**: DRAFT
 - **Backward-compat**: G11 partial (1100 catalog, previously PARTIAL)
 - **Diagnostic examples**:

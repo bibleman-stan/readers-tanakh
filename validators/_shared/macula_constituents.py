@@ -700,6 +700,48 @@ def clear_cache() -> None:
 
 
 # ---------------------------------------------------------------------------
+# Prosodic-word counting (used by weight-threshold constraints)
+# ---------------------------------------------------------------------------
+#
+# Several Hebrew Constraint Catalog entries reference "prosodic words" as a
+# weight metric (JM154, JM157, JM168, JM159e, JM125-coordinated, JM123). A
+# prosodic word is a single phonological unit; tokens joined by maqfek (־)
+# form ONE prosodic word, not multiple. This function gives the catalog its
+# operational definition.
+#
+# Per JM §13 / canon H1: maqfek collapses two-to-four tokens into one
+# prosodic-word unit. Sof-pasuq, blank space, and other terminators do NOT
+# collapse.
+
+
+def prosodic_word_count(tokens: list[Token]) -> int:
+    """Count prosodic words in a token list.
+
+    A prosodic word is a maximal run of tokens where all but the last have
+    `token.has_maqqef_after() == True`. Each run counts as 1.
+
+    Examples (using maqqef = "־" in token.after):
+      - [אֵת, ־הָאָרֶץ]                     → 1 prosodic word
+      - [אֵת, ־הָאָרֶץ, ־וְאֵת, ־הַשָּׁמַיִם]  → 1 prosodic word (long chain)
+      - [אֵת, הָאָרֶץ]                       → 2 prosodic words (no maqqef between)
+      - [וַיֵּלֶךְ, אֶת־בִּנְךָ, יִצְחָק]      → 2 prosodic words (second token has maqqef, third is run-end)
+    """
+    if not tokens:
+        return 0
+    count = 0
+    in_run = False
+    for t in tokens:
+        if not in_run:
+            # Start of a new prosodic word.
+            count += 1
+            in_run = True
+        if not t.has_maqqef_after():
+            # End of this prosodic word run.
+            in_run = False
+    return count
+
+
+# ---------------------------------------------------------------------------
 # Sense-line ↔ Token matching
 # ---------------------------------------------------------------------------
 #
