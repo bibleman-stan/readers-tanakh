@@ -157,7 +157,8 @@ Sub-files (per-construction detail):
 
 - **Encoded question**: Does a line end with a multi-morpheme compound preposition (מִלִּפְנֵי, מִפְּנֵי, מִתַּחַת, מֵאַחֲרֵי, מִנֶּגֶד, בְּתוֹךְ, לִפְנֵי, etc.) whose governed NP begins the next line?
 - **Verdict family**: BIND
-- **Tier**: HARD
+- **Tier**: ADVISORY  <!-- v1.1 demotion: JM §103e descriptive; see commit message + audit log -->
+
 - **Precedence**: 1
 - **Source**: Joüon §103e
 - **Macula operationalization**: Macula `wg_class="pp"` (prepositional phrase) where the head preposition token lands on line N but the complement NP tokens (`role="o"` within the pp) begin on line N+1. Query: `Constituent.is_pp` → True, then check if head preposition token is on a different sense-line than its object tokens.
@@ -199,7 +200,7 @@ Sub-files (per-construction detail):
 
 - **Encoded question**: Does a finite verb's nominal direct object (Macula frame-arg A1) begin the next sense-line rather than appearing on the same line as the verb?
 - **Verdict family**: BIND
-- **Tier**: HARD
+- **Tier**: ADVISORY  <!-- v1.1 demotion per §7.3 retroactive audit; see commit + audit log -->
 - **Precedence**: 2
 - **Source**: Joüon §125; WO §10.2.1; canon M2
 - **Macula operationalization**: `Token.frame_args["A1"]` — resolves to list of Token objects. If the finite verb token lands on line N and any A1 token lands on line N+1 = BIND. Use `Token.is_finite_verb` to identify the governing verb. Frame-arg resolution via `parse_frame_str()` on the governing verb's frame attribute in lowfat.
@@ -220,7 +221,7 @@ Sub-files (per-construction detail):
 
 - **Encoded question**: When a single verb governs multiple coordinated A1 direct objects, are those A1 tokens distributed across distinct sense-lines rather than grouped together?
 - **Verdict family**: BIND
-- **Tier**: HARD
+- **Tier**: ADVISORY  <!-- v1.1 demotion per §7.3 retroactive audit; see commit + audit log -->
 - **Precedence**: 2
 - **Source**: Joüon §125; WO §10.2.1; canon M2 + SJ1
 - **Macula operationalization**: `Token.frame_args["A1"]` returns multiple tokens when the verb has coordinated objects. If A1 tokens span two or more distinct sense-lines = BIND. Guard: combined token-weight of all A1 tokens ≤8 prosodic words (heavy coordinated objects may justify SJ1 series break).
@@ -241,7 +242,7 @@ Sub-files (per-construction detail):
 
 - **Encoded question**: Does a cognition/volition/causative verb appear at line-end with its grammatically obligatory כִּי-clause (or אֲשֶׁר-clause, or speech-content for causative verbs) beginning the next line?
 - **Verdict family**: BIND
-- **Tier**: HARD
+- **Tier**: ADVISORY  <!-- v1.1 demotion per §7.3 retroactive audit; see commit + audit log -->
 - **Precedence**: 2
 - **Source**: Joüon §157; WO §38.3; canon H7
 - **Macula operationalization**: `Token.lemma` membership in OBLIGATORY_COMPLEMENT_VERBS closed list (יָדַע, רָאָה, שָׁמַע, אָמַר for complement use, צִוָּה, אָמַר ... כִּי class); next sense-line token `pos="conjunction"` + `lemma="כִּי"` or `lemma="אֲשֶׁר"`. Macula frame-arg A2 may carry the clausal complement ID for some verbs. Guard: if next line opens with כִּי that is causal (adverbial, not object), this constraint does NOT fire — see JM157-ki-recitativum for the disambiguation.
@@ -283,7 +284,7 @@ Sub-files (per-construction detail):
 
 - **Encoded question**: Is the subject of a verbless clause (nominal / adjectival predication) on line N while the predicative PP or nominal predicate begins line N+1, splitting the verbless-clause nucleus?
 - **Verdict family**: BIND
-- **Tier**: HARD
+- **Tier**: ADVISORY  <!-- v1.1 demotion per §7.3 retroactive audit; see commit + audit log -->
 - **Precedence**: 3
 - **Source**: Joüon §154; WO §8.4; canon H18.1
 - **Macula operationalization**: Detect verbless-clause pattern: line N ends with NP (no finite verb; `Token.is_finite_verb` = False for all tokens on line N); line N+1 begins with `wg_class="pp"` or nominal predicate (`pos="noun"` or `pos="adjective"` with `role="p"` in Macula). Clause boundary: both token sets are within the same Macula `wg_class="cl"` constituent. Guard: if line N is a casus pendens (resumptive pronoun follows — JM156-casus-pendens), this constraint defers; if line N is a discourse particle (JM155), that constraint takes priority.
@@ -304,7 +305,7 @@ Sub-files (per-construction detail):
 
 - **Encoded question**: Is a subject NP on line N separated from its predicative participle on line N+1, splitting a participial-predicate clause nucleus?
 - **Verdict family**: BIND
-- **Tier**: HARD
+- **Tier**: ADVISORY  <!-- v1.1 demotion per §7.3 retroactive audit; see commit + audit log -->
 - **Precedence**: 3
 - **Source**: Joüon §121; WO §37.6; canon H18.2
 - **Macula operationalization**: `Token.is_participle` — True when `type_` in ("participle active", "participle passive"). Pattern: line N ends with NP (no finite verb), line N+1 opens with a token where `is_participle` = True. Both tokens fall within the same Macula `wg_class="cl"` constituent where the participle has `role="p"` (predicative). Guard: passive participial used attributively (adjectival modifier of a noun, not predicative) does not fire this constraint — check `role` attribute; attributive role is "a", predicative is "p".
@@ -325,7 +326,7 @@ Sub-files (per-construction detail):
 
 - **Encoded question**: Is a finite verb with an obligatory PP complement (שָׁמַע לְ, פָּנָה אֶל, בָּטַח בְּ) on line N while that PP complement begins line N+1?
 - **Verdict family**: BIND
-- **Tier**: HARD
+- **Tier**: ADVISORY  <!-- v1.1 demotion per §7.3 retroactive audit; see commit + audit log -->
 - **Precedence**: 3
 - **Source**: Joüon §133; WO §11.4.1; canon H18.3 / M2
 - **Macula operationalization**: `Constituent.is_pp` — True when `wg_class="pp"`. Check: finite verb token on line N; PP constituent (Macula `wg_class="pp"`) with `role="o"` or `role="pp"` (oblique) as argument of that verb, whose tokens begin line N+1. Closed-list verb-PP pairs for obligatory PP complements: OBLIGATORY_PP_VERBS (שָׁמַע + לְ, פָּנָה + אֶל, שָׁב + אֶל, בָּטַח + בְּ, חָטָא + לְ, etc.) — obligation determined by verb-class semantics.

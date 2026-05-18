@@ -247,74 +247,44 @@ def check_compound_prep_object(verse_text: str, source_text: str) -> Optional[di
 # wrapped 2-arg shim or the underlying 5-arg function).
 
 
-def _register_cluster_checks() -> None:
-    """Import each cluster module and register its checks into CHECK_REGISTRY.
-
-    Failure to import is fatal (the module is required for production); failure
-    to register a specific check is logged but does not abort registration of
-    the others.
-    """
-    # checks_bound_nominals: register the 5-arg full-Macula path directly (skip
-    # the 2-arg shim that returns NO-EFFECT unconditionally).
-    try:
-        from checks_bound_nominals import register_with as _rw_bn  # type: ignore
-        _rw_bn(CHECK_REGISTRY, five_arg=True)
-    except Exception as e:
-        print(f"WARN: failed to register checks_bound_nominals: {e!r}", file=sys.stderr)
-
-    # The other cluster modules use 2-arg-shim wrappers internally that pass
-    # empty coordinates, which defeats the Macula path. To bypass the shim, we
-    # import the underlying 5-arg check functions directly and register them
-    # by their catalog IDs. audit_verse's arity dispatch will route the full
-    # coordinates through.
-    for mod_name, id_to_fn in _CLUSTER_DIRECT_REGISTRATIONS:
-        try:
-            mod = __import__(mod_name)
-            for catalog_id, fn_name in id_to_fn:
-                fn = getattr(mod, fn_name, None)
-                if fn is None:
-                    print(f"WARN: {mod_name}.{fn_name} not found; skipping {catalog_id}", file=sys.stderr)
-                    continue
-                CHECK_REGISTRY[catalog_id] = fn
-        except Exception as e:
-            print(f"WARN: failed to register {mod_name}: {e!r}", file=sys.stderr)
-
-
-# Maps catalog ID → underlying 5-arg function name in each cluster module.
-# Bypasses the 2-arg shim wrappers in those modules so audit_verse arity dispatch
-# can pass full Macula coordinates through.
-_CLUSTER_DIRECT_REGISTRATIONS: list[tuple[str, list[tuple[str, str]]]] = [
-    ("checks_clause_nucleus", [
-        ("JM125-verb-object-bond", "check_JM125_verb_object_bond"),
-        ("JM125-coordinated-objects", "check_JM125_coordinated_objects"),
-        ("JM157-complement-integrity", "check_JM157_complement_integrity"),
-        ("JM154-verbless-clause-nucleus", "check_JM154_verbless_clause_nucleus"),
-        ("JM121-participial-predicate", "check_JM121_participial_predicate"),
-        ("JM133-verb-pp-complement", "check_JM133_verb_pp_complement"),
-    ]),
-    ("checks_particles", [
-        ("JM160-negation-scope", "check_JM160_negation_scope"),
-        ("JM155-discourse-particle", "check_JM155_discourse_particle"),
-        ("JM161-interrogative-particle", "check_JM161_interrogative_particle"),
-        ("JM147-vocative-extraclausal", "check_JM147_vocative_extraclausal"),
-    ]),
-    ("checks_bonded_formula", [
-        ("JM177-bonded-pair", "check_JM177_bonded_pair"),
-        ("JM-oath-formula", "check_JM_oath_formula"),
-        ("JM-cross-verse-continuity", "check_JM_cross_verse_continuity"),
-        ("JM-wayehi-fef-protasis", "check_JM_wayehi_fef_protasis"),
-    ]),
-    ("checks_relative_subordinate", [
-        ("JM158-restrictive-relative", "check_jm158_restrictive_relative"),
-        ("JM158-nonrestrictive-relative", "check_jm158_nonrestrictive_relative"),
-        ("JM156-casus-pendens", "check_jm156_casus_pendens"),
-        ("JM168-purpose-clause", "check_jm168_purpose_clause"),
-        ("JM159e-conditional-protasis", "check_jm159e_conditional_protasis"),
-        ("JM157-ki-recitativum", "check_jm157_ki_recitativum"),
-        ("JM174-gapped-verb", "check_jm174_gapped_verb"),
-        ("JM123-inf-abs-predicate", "check_jm123_inf_abs_predicate"),
-    ]),
+_CLUSTER_MODULES: list[str] = [
+    "checks_bound_nominals",
+    "checks_clause_nucleus",
+    "checks_particles",
+    "checks_bonded_formula",
+    "checks_relative_subordinate",
 ]
+
+
+def _register_cluster_checks() -> None:
+    """Import each cluster module and merge its CHECKS_5ARG into CHECK_REGISTRY.
+
+    Single source of truth per module: each cluster file exposes
+    CHECKS_5ARG: dict[str, Callable] mapping catalog-id → 5-arg check function,
+    and register_with(registry, strict=True) that merges + detects collisions.
+
+    All failures are FATAL — silent skip is the failure mode this refactor
+    closes (coding-audit MF-1, 2026-05-17). A module that fails to import,
+    lacks CHECKS_5ARG, or registers zero checks is a hard error.
+    """
+    for mod_name in _CLUSTER_MODULES:
+        mod = __import__(mod_name)
+        if not hasattr(mod, "CHECKS_5ARG"):
+            raise RuntimeError(
+                f"{mod_name} missing required CHECKS_5ARG dict — "
+                f"all cluster modules must expose this canonical registry"
+            )
+        if not hasattr(mod, "register_with"):
+            raise RuntimeError(
+                f"{mod_name} missing required register_with(registry) — "
+                f"all cluster modules must expose this function"
+            )
+        registered = mod.register_with(CHECK_REGISTRY)
+        if not registered:
+            raise RuntimeError(
+                f"{mod_name}.register_with() registered 0 checks — "
+                f"CHECKS_5ARG empty or registration silently failed"
+            )
 
 
 # Wire the cluster checks at module import time. coverage_preflight() called

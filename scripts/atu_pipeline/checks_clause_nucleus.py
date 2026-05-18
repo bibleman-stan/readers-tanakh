@@ -124,7 +124,15 @@ def _align_lines(verse_tokens: list, lines: list[str]) -> dict[int, list]:
 # ---------------------------------------------------------------------------
 
 # JM157 — cognition/volition/causative verbs that take obligatory clausal complements
-# (כִּי-clause or אֲשֶׁר-clause). Per JM §157 and validate_complement_integrity.py.
+# (כִּי-clause or אֲשֶׁר-clause). Per JM §157.
+#
+# 2026-05-18 §7.3 retroactive audit on Catalog v1: removed אָמַר and נָגַד.
+# Both are SPEECH verbs whose כִּי introduces direct speech (recitativum),
+# not a cognition complement. They were causing spurious JM157 firings on
+# narrative speech-frames (e.g., Gen 3:14 וַיֹּאמֶר ... כִּי). Routing to
+# JM157-ki-recitativum is correct; OBLIGATORY_COMPLEMENT_VERBS is for the
+# cognition / volition / causative classes only. JM125-verb-object-bond's
+# _SPEECH_VERB_LEMMAS provides the parallel suppression on that side.
 OBLIGATORY_COMPLEMENT_VERBS = frozenset({
     "יָדַע",   # know
     "רָאָה",   # see
@@ -132,21 +140,20 @@ OBLIGATORY_COMPLEMENT_VERBS = frozenset({
     "זָכַר",   # remember
     "בִּין",   # understand / discern
     "חָשַׁב",  # think / consider
-    "אָמַר",   # say (in complement use — object כִּי)
     "צִוָּה",  # command
     "רָצָה",   # desire / want
     "חָפֵץ",   # delight in / want
     "בִּקֵּשׁ", # seek
     "גָּזַר",  # decree
-    "נָגַד",   # tell (hiphil of נגד)
     "שָׂמַח",  # rejoice (occasionally takes כִּי complement)
     "יָרֵא",   # fear (takes כִּי in complement slot)
 })
 
 # Consonant skeletons for OBLIGATORY_COMPLEMENT_VERBS — used by skel fallback.
+# Mirrors the lemma-list removal of אמר and נגד above.
 _OBL_COMP_SKEL = frozenset({
-    "ידע", "ראה", "שמע", "זכר", "בין", "חשב", "אמר",
-    "צוה", "רצה", "חפץ", "בקש", "גזר", "נגד", "שמח", "ירא",
+    "ידע", "ראה", "שמע", "זכר", "בין", "חשב",
+    "צוה", "רצה", "חפץ", "בקש", "גזר", "שמח", "ירא",
 })
 
 # Complementizer lemmas that introduce obligatory clausal complements.
@@ -1191,14 +1198,33 @@ def check_JM133_verb_pp_complement(
 # Registration
 # ---------------------------------------------------------------------------
 
-def register_with(registry: dict) -> None:
-    """Register all 6 clause-nucleus check functions into the given registry dict.
+# Canonical 5-arg check registry — single source of truth for this module.
+CHECKS_5ARG: dict[str, Callable] = {
+    "JM125-verb-object-bond":        check_JM125_verb_object_bond,
+    "JM125-coordinated-objects":     check_JM125_coordinated_objects,
+    "JM157-complement-integrity":    check_JM157_complement_integrity,
+    "JM154-verbless-clause-nucleus": check_JM154_verbless_clause_nucleus,
+    "JM121-participial-predicate":   check_JM121_participial_predicate,
+    "JM133-verb-pp-complement":      check_JM133_verb_pp_complement,
+}
 
-    Registry keys are the canonical constraint IDs from the catalog.
+
+def register_with(registry: dict, strict: bool = True) -> list[str]:
+    """Merge this module's 5-arg checks into the runner registry.
+
+    audit_constraints.audit_verse dispatches on callable arity, so 5-arg
+    functions register directly. If strict=True (default), raise KeyError on
+    collisions where the existing registry entry is a different function.
+    Returns the list of constraint IDs registered.
     """
-    registry["JM125-verb-object-bond"]        = check_JM125_verb_object_bond
-    registry["JM125-coordinated-objects"]     = check_JM125_coordinated_objects
-    registry["JM157-complement-integrity"]    = check_JM157_complement_integrity
-    registry["JM154-verbless-clause-nucleus"] = check_JM154_verbless_clause_nucleus
-    registry["JM121-participial-predicate"]   = check_JM121_participial_predicate
-    registry["JM133-verb-pp-complement"]      = check_JM133_verb_pp_complement
+    registered: list[str] = []
+    for cid, fn in CHECKS_5ARG.items():
+        existing = registry.get(cid)
+        if strict and existing is not None and existing is not fn:
+            raise KeyError(
+                f"register_with collision: '{cid}' already in registry "
+                f"with a different function ({getattr(existing, '__name__', repr(existing))!r} vs {fn.__name__!r})"
+            )
+        registry[cid] = fn
+        registered.append(cid)
+    return registered

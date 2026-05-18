@@ -352,36 +352,30 @@ def check_construct_chain_shim(verse_text: str, source_text: str) -> Optional[di
 # Registration helper
 # ---------------------------------------------------------------------------
 
-def register_with(
-    registry: dict,
-    five_arg: bool = False,
-) -> None:
-    """Register JM129-construct-chain with a check registry.
+CHECKS_5ARG: dict[str, Callable] = {
+    "JM129-construct-chain": check_construct_chain,
+}
 
-    Parameters
-    ----------
-    registry:
-        The CHECK_REGISTRY dict from audit_constraints.py.
-    five_arg:
-        If True, register the full 5-arg check_construct_chain directly
-        (requires the registry to support Callable[[str,str,str,int,int], dict]).
-        If False (default), register the 2-arg shim which returns NO-EFFECT
-        with a documented gap.
 
-    Integration example (audit_constraints.py, after upgrading registry):
+def register_with(registry: dict, strict: bool = True) -> list[str]:
+    """Merge this module's 5-arg checks into the runner registry.
 
-        from scripts.atu_pipeline.checks_bound_nominals import register_with
-        register_with(CHECK_REGISTRY, five_arg=True)
-
-    Integration example (current 2-arg registry, shim only):
-
-        from scripts.atu_pipeline.checks_bound_nominals import register_with
-        register_with(CHECK_REGISTRY, five_arg=False)
+    audit_constraints.audit_verse dispatches on callable arity, so 5-arg
+    functions register directly. If strict=True (default), raise KeyError on
+    collisions where the existing registry entry is a different function.
+    Returns the list of constraint IDs registered.
     """
-    if five_arg:
-        registry["JM129-construct-chain"] = check_construct_chain
-    else:
-        registry["JM129-construct-chain"] = check_construct_chain_shim
+    registered: list[str] = []
+    for cid, fn in CHECKS_5ARG.items():
+        existing = registry.get(cid)
+        if strict and existing is not None and existing is not fn:
+            raise KeyError(
+                f"register_with collision: '{cid}' already in registry "
+                f"with a different function ({getattr(existing, '__name__', repr(existing))!r} vs {fn.__name__!r})"
+            )
+        registry[cid] = fn
+        registered.append(cid)
+    return registered
 
 
 # ---------------------------------------------------------------------------

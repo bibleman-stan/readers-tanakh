@@ -573,7 +573,7 @@ def check_JM147_vocative_extraclausal(
 # ---------------------------------------------------------------------------
 
 # Ordered map: constraint ID → full-signature check function.
-_PARTICLE_CHECKS: dict[str, Callable] = {
+CHECKS_5ARG: dict[str, Callable] = {
     "JM160-negation-scope":         check_JM160_negation_scope,         # prec 2
     "JM155-discourse-particle":     check_JM155_discourse_particle,      # prec 3
     "JM161-interrogative-particle": check_JM161_interrogative_particle,  # prec 3
@@ -581,27 +581,22 @@ _PARTICLE_CHECKS: dict[str, Callable] = {
 }
 
 
-def register_with(registry: dict) -> None:
-    """Register all four particle/negation checks into *registry*.
+def register_with(registry: dict, strict: bool = True) -> list[str]:
+    """Merge this module's 5-arg checks into the runner registry.
 
-    The registry (audit_constraints.CHECK_REGISTRY) expects the two-arg
-    callable shape::
-
-        check(verse_text: str, source_text: str) -> Optional[dict]
-
-    Each full-signature check is wrapped with a shim that passes empty Macula
-    coordinates, so the existing audit_verse runner (which does not yet thread
-    book_slug/chapter/verse_num) works unchanged.
-
-    Upgrade path: when audit_verse is extended to pass coordinates, remove the
-    shim and register each function from ``_PARTICLE_CHECKS`` directly.
+    audit_constraints.audit_verse dispatches on callable arity, so 5-arg
+    functions register directly. If strict=True (default), raise KeyError on
+    collisions where the existing registry entry is a different function.
+    Returns the list of constraint IDs registered.
     """
-    def _make_shim(f: Callable) -> Callable:
-        def shim(verse_text: str, source_text: str) -> Optional[dict]:
-            return f(verse_text, source_text, "", 0, 0)
-        shim.__name__ = f.__name__ + "_shim"
-        shim.__doc__ = f.__doc__
-        return shim
-
-    for constraint_id, fn in _PARTICLE_CHECKS.items():
-        registry[constraint_id] = _make_shim(fn)
+    registered: list[str] = []
+    for cid, fn in CHECKS_5ARG.items():
+        existing = registry.get(cid)
+        if strict and existing is not None and existing is not fn:
+            raise KeyError(
+                f"register_with collision: '{cid}' already in registry "
+                f"with a different function ({getattr(existing, '__name__', repr(existing))!r} vs {fn.__name__!r})"
+            )
+        registry[cid] = fn
+        registered.append(cid)
+    return registered

@@ -853,7 +853,7 @@ def check_JM_wayehi_fef_protasis(
 # This dict mirrors the CHECK_REGISTRY pattern in audit_constraints.py but
 # does NOT modify that module's global.  Call register_with() to integrate.
 
-_LOCAL_REGISTRY: dict[str, Callable] = {
+CHECKS_5ARG: dict[str, Callable] = {
     "JM177-bonded-pair":         check_JM177_bonded_pair,
     "JM-oath-formula":           check_JM_oath_formula,
     "JM-cross-verse-continuity": check_JM_cross_verse_continuity,
@@ -861,24 +861,21 @@ _LOCAL_REGISTRY: dict[str, Callable] = {
 }
 
 
-def register_with(registry: dict) -> list[str]:
-    """Merge this module's checks into an external registry dict.
+def register_with(registry: dict, strict: bool = True) -> list[str]:
+    """Merge this module's 5-arg checks into the runner registry.
 
-    Call as:
-        from checks_bonded_formula import register_with
-        register_with(CHECK_REGISTRY)
-
-    Returns list of constraint IDs registered.
-    Raises KeyError if a constraint ID is already in the registry and the
-    existing function is different (collision detection).
+    audit_constraints.audit_verse dispatches on callable arity, so 5-arg
+    functions register directly. If strict=True (default), raise KeyError on
+    collisions where the existing registry entry is a different function.
+    Returns the list of constraint IDs registered.
     """
     registered: list[str] = []
-    for cid, fn in _LOCAL_REGISTRY.items():
+    for cid, fn in CHECKS_5ARG.items():
         existing = registry.get(cid)
-        if existing is not None and existing is not fn:
+        if strict and existing is not None and existing is not fn:
             raise KeyError(
                 f"register_with collision: '{cid}' already in registry "
-                f"with a different function ({existing.__name__!r} vs {fn.__name__!r})"
+                f"with a different function ({getattr(existing, '__name__', repr(existing))!r} vs {fn.__name__!r})"
             )
         registry[cid] = fn
         registered.append(cid)
@@ -958,6 +955,6 @@ if __name__ == "__main__":
     print("register_with() test")
     test_registry: dict = {}
     ids = register_with(test_registry)
-    assert set(ids) == set(_LOCAL_REGISTRY.keys()), f"Mismatch: {ids}"
+    assert set(ids) == set(CHECKS_5ARG.keys()), f"Mismatch: {ids}"
     print(f"  Registered: {ids}")
     print("\nAll self-tests passed.")

@@ -1262,8 +1262,10 @@ def check_jm123_inf_abs_predicate(
 # Registry integration
 # ---------------------------------------------------------------------------
 
-# Map from constraint-id to the 5-arg check function defined above.
-_CHECKS: dict[str, Callable] = {
+# Canonical 5-arg check registry — single source of truth for this module's
+# constraint-id → check-function mapping. Consumed by register_with() and
+# directly by audit_constraints.py._register_cluster_checks().
+CHECKS_5ARG: dict[str, Callable] = {
     "JM158-restrictive-relative":   check_jm158_restrictive_relative,
     "JM158-nonrestrictive-relative": check_jm158_nonrestrictive_relative,
     "JM156-casus-pendens":           check_jm156_casus_pendens,
@@ -1275,26 +1277,25 @@ _CHECKS: dict[str, Callable] = {
 }
 
 
-def register_with(registry: dict) -> None:
-    """Register all 8 checks into an audit_constraints-style CHECK_REGISTRY.
+def register_with(registry: dict, strict: bool = True) -> list[str]:
+    """Merge this module's 5-arg checks into the runner registry.
 
-    The existing registry expects Callable[[str, str], Optional[dict]]
-    (verse_text, source_text).  This wrapper calls each 5-arg function with
-    (verse_text, source_text, None, None, None), disabling Macula queries that
-    require book/chapter/verse location.
-
-    Integration note: when audit_verse is updated to pass location context,
-    replace this with direct 5-arg dispatch:
-        registry[cid] = fn  # and update audit_verse call site
+    audit_constraints.audit_verse dispatches on callable arity, so 5-arg
+    functions register directly. If strict=True (default), raise KeyError on
+    collisions where the existing registry entry is a different function.
+    Returns the list of constraint IDs registered.
     """
-    for cid, fn in _CHECKS.items():
-        def _make_wrapper(f):
-            def _wrapper(verse_text: str, source_text: str) -> Optional[dict]:
-                return f(verse_text, source_text, None, None, None)
-            _wrapper.__name__ = f.__name__
-            _wrapper.__doc__ = f.__doc__
-            return _wrapper
-        registry[cid] = _make_wrapper(fn)
+    registered: list[str] = []
+    for cid, fn in CHECKS_5ARG.items():
+        existing = registry.get(cid)
+        if strict and existing is not None and existing is not fn:
+            raise KeyError(
+                f"register_with collision: '{cid}' already in registry "
+                f"with a different function ({getattr(existing, '__name__', repr(existing))!r} vs {fn.__name__!r})"
+            )
+        registry[cid] = fn
+        registered.append(cid)
+    return registered
 
 
 # ---------------------------------------------------------------------------
