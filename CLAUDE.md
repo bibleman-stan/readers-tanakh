@@ -26,7 +26,25 @@ A colometric reading edition of the Hebrew Bible. Each line on the page is an at
 
 **Self-report before first substantive response**: one line per mandatory file read; pending-item disposition; red flags. Silent skip = orientation failure.
 
-**Compaction-resume**: per `../atu-method/memories/feedback_compaction_resume_protocol.md`, after orientation reads, read the last 20-30 user↔assistant turns from the session JSONL verbatim.
+### Compaction-resume protocol (robust JSONL re-read)
+
+When a compaction event occurs (system message contains "This session is being continued from a previous conversation that ran out of context" OR `isCompactSummary: true`), the **FIRST tool call after the mandatory orientation reads MUST be a Bash command reading the last 30-35 user/assistant exchanges from the session JSONL verbatim.** The harness summary is degraded "kind of memory"; the JSONL is the authoritative verbatim record.
+
+**JSONL location pattern**:
+```
+C:\Users\bibleman\.claude\projects\c--Users-bibleman-repos-readers-tanakh\<session-id>.jsonl
+```
+The `<session-id>` UUID is in the system context. If multiple JSONL files exist in that directory, the active session's JSONL is the one with the most recent `LastWriteTime`.
+
+**Recommended read command** (PowerShell-side, reads last ~250 lines and pretty-prints user/assistant text):
+```powershell
+$file = (Get-ChildItem "C:\Users\bibleman\.claude\projects\c--Users-bibleman-repos-readers-tanakh\*.jsonl" | Sort-Object LastWriteTime -Descending | Select-Object -First 1).FullName
+Get-Content $file -Tail 250 | ForEach-Object { try { $obj = $_ | ConvertFrom-Json; if ($obj.type -eq 'user' -or $obj.type -eq 'assistant') { Write-Host "----- $($obj.type) -----"; Write-Host ($obj.message.content | Out-String) } } catch {} }
+```
+
+**ALSO check `data/text-files/v2-pipeline-draft/_OPERATION_IN_PROGRESS.md`** if it exists — it captures any in-flight destructive operation's state so the operation can be resumed cleanly.
+
+**Self-report includes** "Recovered: [one-line summary of pre-compaction work based on JSONL re-read + checkpoint inspection]" as part of the orientation report.
 
 **Directive-queue**: per `../atu-method/memories/feedback_directive_protocol.md`, on wake, after orientation reads, check `directives/pending/` for files in commit-order. Process each in turn: read, execute, write reply at `directives/replies/<same-name>.md`, move processed directive to `directives/processed/<same-name>.md`, commit + push per directive.
 
