@@ -181,11 +181,18 @@ def _align_words_to_v0(verse_words, v0_tokens, F):
     v0_idx = 0
     ok = True
     for w in verse_words:
-        g = F.g_word_utf8.v(w) or ""
+        # v0/TAHOT applies qere-by-default, so where a word carries a ketiv/qere
+        # match on the QERE form (and its trailer); else the plain written form.
+        # (qere_utf8 == "" is ketiv-velo-qere → read as nothing → empty node.)
+        qere = F.qere_utf8.v(w)
+        if qere is not None:
+            g, tr = qere, (F.qere_trailer_utf8.v(w) or "")
+        else:
+            g, tr = (F.g_word_utf8.v(w) or ""), (F.trailer_utf8.v(w) or "")
         if not _letters(g):  # empty node — no v0 correspondent
             first_map[w] = min(v0_idx, max(n - 1, 0))
             span_map[w] = 0
-            if any(c.isspace() for c in (F.trailer_utf8.v(w) or "")):
+            if any(c.isspace() for c in tr):
                 v0_idx += 1
             continue
         parts = g.split()  # 1 normally; >1 for a compound proper name
@@ -197,7 +204,7 @@ def _align_words_to_v0(verse_words, v0_tokens, F):
             else:
                 ok = False
         v0_idx += len(parts) - 1
-        if any(c.isspace() for c in (F.trailer_utf8.v(w) or "")):
+        if any(c.isspace() for c in tr):
             v0_idx += 1
 
     if not ok or v0_idx != n:
