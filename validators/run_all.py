@@ -239,7 +239,11 @@ def load_baseline() -> dict | None:
 
 
 def save_baseline(results: list[dict]) -> None:
-    data = {r["name"]: r["findings"] for r in results}
+    # Record a real count only for validators that actually ran. A timeout/
+    # error yields findings=0, which is "no data" not "zero findings" — store
+    # null so diff_against_baseline skips it rather than treating 0 as the
+    # baseline (which would false-flag a regression once it completes).
+    data = {r["name"]: (None if r.get("error") else r["findings"]) for r in results}
     BASELINE_PATH.write_text(
         json.dumps(data, indent=2, sort_keys=True) + "\n",
         encoding="utf-8",
@@ -292,13 +296,23 @@ def print_dashboard(results: list[dict], verbose: bool) -> None:
 
 def diff_against_baseline(results: list[dict], baseline: dict) -> list[tuple[str, int, int]]:
     """Return [(validator_name, baseline_count, current_count)] for any
-    validator whose count INCREASED vs baseline."""
+    validator whose count INCREASED vs baseline.
+
+    Timeout-robust: a validator that timed out / errored records findings=0,
+    which is "no data", not "zero findings". Skip such validators in EITHER
+    direction — if it errored on this run, or if its baseline value is null
+    (it had timed out when the baseline was captured) — so nondeterministic
+    validator timeouts can never manufacture a false regression that blocks a
+    commit. (Validators that complete in both runs still gate normally.)"""
     regressions: list[tuple[str, int, int]] = []
     for r in results:
-        base = int(baseline.get(r["name"], 0))
-        cur = int(r["findings"])
-        if cur > base:
-            regressions.append((r["name"], base, cur))
+        if r.get("error"):
+            continue  # no comparable count from this run
+        base = baseline.get(r["name"], 0)
+        if base is None:
+            continue  # no recorded baseline (validator timed out at capture)
+        if int(r["findings"]) > int(base):
+            regressions.append((r["name"], int(base), int(r["findings"])))
     return regressions
 
 
