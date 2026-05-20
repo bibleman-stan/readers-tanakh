@@ -35,7 +35,16 @@ from pathlib import Path
 
 # Make the binding-rules module importable from this script's dir
 sys.path.insert(0, str(Path(__file__).parent))
-from binding_rules import apply_bindings
+import re as _re
+from binding_rules import apply_bindings, strip_pointing
+
+# Hebrew consonant letters only — for matching BHSA forms against v0 tokens
+# robustly across maqqef / sof-pasuq / spacing differences.
+_CONS_ONLY = _re.compile(r"[^א-ת]")
+
+
+def _letters(text: str) -> str:
+    return _CONS_ONLY.sub("", strip_pointing(text or ""))
 
 from tf.app import use
 
@@ -137,6 +146,68 @@ def parse_v0_prose(path: Path) -> dict[int, str]:
     return verses
 
 
+def _counter_fallback(verse_words, F):
+    """Original trailer-counter mapping (one v0 token per BHSA word). Used as a
+    safe fallback for any verse where consonant alignment can't be verified;
+    such verses simply stay held by the downstream safe-merge."""
+    first_map, span_map = {}, {}
+    v0_idx = 0
+    for w in verse_words:
+        first_map[w] = v0_idx
+        span_map[w] = 1
+        trailer = F.trailer_utf8.v(w) or ""
+        if any(ch.isspace() for ch in trailer):
+            v0_idx += 1
+    return first_map, span_map
+
+
+def _align_words_to_v0(verse_words, v0_tokens, F):
+    """Map each BHSA word to its v0/prose token range. Returns (first_map,
+    span_map): per word, its first v0-token index and how many v0 tokens it
+    spans (0 = empty node; >1 = a compound node whose g_word_utf8 holds an
+    embedded space like "בֵּית לֶחֶם").
+
+    Builds the mapping at the ORTHOGRAPHIC-token level: a maqqef trailer keeps
+    consecutive BHSA words in the SAME v0 token (their consonants concatenate);
+    a whitespace trailer ends the token; an embedded space inside g_word_utf8
+    splits one BHSA word across multiple v0 tokens. The reconstruction is then
+    VERIFIED letter-for-letter against the actual v0 tokens — if it doesn't
+    match exactly (ketiv/qere, genuine divergence, count drift), it falls back
+    to the trailer counter, so a bad alignment is never shipped; the verse just
+    stays held by the downstream safe-merge."""
+    n = len(v0_tokens)
+    first_map, span_map = {}, {}
+    recon = [""] * n
+    v0_idx = 0
+    ok = True
+    for w in verse_words:
+        g = F.g_word_utf8.v(w) or ""
+        if not _letters(g):  # empty node — no v0 correspondent
+            first_map[w] = min(v0_idx, max(n - 1, 0))
+            span_map[w] = 0
+            if any(c.isspace() for c in (F.trailer_utf8.v(w) or "")):
+                v0_idx += 1
+            continue
+        parts = g.split()  # 1 normally; >1 for a compound proper name
+        first_map[w] = v0_idx
+        span_map[w] = len(parts)
+        for j, p in enumerate(parts):
+            if v0_idx + j < n:
+                recon[v0_idx + j] += _letters(p)
+            else:
+                ok = False
+        v0_idx += len(parts) - 1
+        if any(c.isspace() for c in (F.trailer_utf8.v(w) or "")):
+            v0_idx += 1
+
+    if not ok or v0_idx != n:
+        return _counter_fallback(verse_words, F)
+    for i, tok in enumerate(v0_tokens):
+        if recon[i] != _letters(tok):
+            return _counter_fallback(verse_words, F)
+    return first_map, span_map
+
+
 def extract_clauses_for_chapter(api, book_name: str, chapter_num: int, v0_text_by_verse: dict[int, str]) -> list[dict]:
     """Query BHSA for clause-atoms in (book, chapter); return clause dicts.
 
@@ -157,21 +228,19 @@ def extract_clauses_for_chapter(api, book_name: str, chapter_num: int, v0_text_b
         return []
     chapter = target_chapters[0]
 
-    # Precompute v0-token-index per BHSA word within each verse.
-    # A v0-token boundary is a BHSA word whose trailer is whitespace
-    # (space, newline). Maqaf trailers stay within the same v0-token.
+    # Map each BHSA word to its v0-token range within its verse, by consonant
+    # alignment against the v0/prose token stream (see _align_words_to_v0).
     verses_in_chapter = list(L.d(chapter, otype="verse"))
-    word_to_v0_idx: dict[int, int] = {}  # bhsa word node -> v0_token_index in its verse
+    word_to_v0_first: dict[int, int] = {}
+    word_to_v0_span: dict[int, int] = {}
 
     for v in verses_in_chapter:
-        v0_idx = 0
         verse_words = list(L.d(v, otype="word"))
-        for i, w in enumerate(verse_words):
-            word_to_v0_idx[w] = v0_idx
-            trailer = F.trailer_utf8.v(w) or ""
-            # If trailer contains whitespace, this word ends the current v0-token
-            if any(ch.isspace() for ch in trailer):
-                v0_idx += 1
+        vnum = T.sectionFromNode(v)[2]
+        v0_tokens = (v0_text_by_verse.get(vnum, "") or "").split()
+        first_map, span_map = _align_words_to_v0(verse_words, v0_tokens, F)
+        word_to_v0_first.update(first_map)
+        word_to_v0_span.update(span_map)
 
     clause_atoms = list(L.d(chapter, otype="clause_atom"))
     verse_counters: dict[int, int] = {}
@@ -186,9 +255,15 @@ def extract_clauses_for_chapter(api, book_name: str, chapter_num: int, v0_text_b
         idx_in_verse = verse_counters.get(verse_num, 0)
         verse_counters[verse_num] = idx_in_verse + 1
 
-        # v0-token-index range for this clause-atom
-        v0_first = word_to_v0_idx.get(words[0], 0)
-        v0_last = word_to_v0_idx.get(words[-1], 0)
+        # v0-token range for this clause-atom: min first .. max last across its
+        # words (spans cover compound proper names; empty nodes (span 0) ignored)
+        spans = [(word_to_v0_first.get(w, 0), word_to_v0_span.get(w, 1)) for w in words]
+        real = [(f, s) for f, s in spans if s > 0]
+        if real:
+            v0_first = min(f for f, _ in real)
+            v0_last = max(f + s - 1 for f, s in real)
+        else:
+            v0_first = v0_last = spans[0][0]
 
         # BHSA-encoded text (kept for diagnostics, NOT for output)
         word_texts = [F.g_word_utf8.v(w) + F.trailer_utf8.v(w) for w in words]
