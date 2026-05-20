@@ -64,8 +64,8 @@ vehayah | totze'otav | midbarah | Beit | Aven
 
 18:13
 ve'avar | misham | hagevul | Luzah | el | ketef | Luzah | negbah
-hi | Beit | El | veyarad | hagevul | Atrot | Adar | al | hahar
-asher | minegev | Leveit | Choron | Tachton
+hi | Beit | El
+veyarad | hagevul | Atrot | Adar | al | hahar | asher | minegev | Leveit | Choron | Tachton
 
 18:14
 veta'ar | hagevul
@@ -74,17 +74,19 @@ ir | benei | Yehudah | zot | pe'at | yam
 
 18:15
 ufe'at | negbah | miktzeh | Kiryat | Ye'arim
-veyatza | hagevul | yamah | veyatza | el | ma'yan | mei | Neftoach
+veyatza | hagevul | yamah
+veyatza | el | ma'yan | mei | Neftoach
 
 18:16
-veyarad | hagevul | el | ketzeh | hahar | asher | al | penei | gei | Ven | Hinom | asher | be'emek | Refa'im
-tzafonah | veyarad | gei | Hinom | el | ketef | hayvusi | negbah
+veyarad | hagevul | el | ketzeh | hahar | asher | al | penei | gei | Ven | Hinom | asher | be'emek | Refa'im | tzafonah
+veyarad | gei | Hinom | el | ketef | hayvusi | negbah
 veyarad | Ein | Rogel
 
 18:17
 veta'ar | mitzafon
 veyatza | Ein | Shemesh
-veyatza | el | Gelilot | asher | nokhach | ma'aleh | Adumim | veyarad | even | Bohan | ben | Re'uven
+veyatza | el | Gelilot | asher | nokhach | ma'aleh | Adumim
+veyarad | even | Bohan | ben | Re'uven
 
 18:18
 ve'avar | el | ketef | mul | ha'aravah | tzafonah

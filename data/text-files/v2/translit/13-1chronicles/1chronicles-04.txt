@@ -12,8 +12,7 @@ Yizre'el | Veyishma | Veyidbash
 veshem | achotam | Hatzlelponi
 
 4:4
-Ufenu'el | avi | Gedor | Ve'ezer
-avi | Chushah
+Ufenu'el | avi | Gedor | Ve'ezer | avi | Chushah
 eleh | venei | Chur | bekhor | Efratah | avi | Beit | Lachem
 
 4:5
@@ -48,7 +47,8 @@ Ukheluv | achi | Shuchah | holid | et | Mechir
 hu | avi | Eshton
 
 4:12
-Ve'eshton | holid | et | beit | Rafa | ve'et | Paseach | ve'et | Techinah | avi | Ir | Nachash | eleh | anshei | Rekhah
+Ve'eshton | holid | et | beit | Rafa | ve'et | Paseach | ve'et | Techinah | avi | Ir | Nachash
+eleh | anshei | Rekhah
 
 4:13
 uvenei | Kenaz | Ateni'el
@@ -87,9 +87,8 @@ uvenei | Yish'i | Zochet | Uven | Zochet
 benei | Shelah | ven | Yehudah | Er | avi | Lekhah | Vela'dah | avi | Mareshah | umishpechot | beit | avodat | habutz | leveit | Ashbea
 
 4:22
-Veyokim
-ve'anshei | Khozeva | Veyo'ash
-Vesaraf | asher | ba'alu | Lemo'av | Veyashuvi | Lachem | vehadevarim | atikim
+Veyokim | ve'anshei | Khozeva | Veyo'ash | Vesaraf | asher | ba'alu | Lemo'av | Veyashuvi | Lachem
+vehadevarim | atikim
 
 4:23
 hemah | haiyotzrim | veyoshevei | Neta'im | Ugederah
@@ -110,8 +109,7 @@ ule'echav | ein | banim | rabim
 vekhol | mishpachtam | lo | hirbu | ad | benei | Yehudah
 
 4:28
-vaiyeshevu | Biv'er | Sheva | Umoladah
-Vachatzar | Shu'al
+vaiyeshevu | Biv'er | Sheva | Umoladah | Vachatzar | Shu'al
 
 4:29
 Uvevilhah | Uve'etzem | Uvetolad
@@ -120,14 +118,11 @@ Uvevilhah | Uve'etzem | Uvetolad
 Uvivtu'el | Uvecharemah | Uvetzikelag
 
 4:31
-Uveveit | Markavot
-Uvachatzar | Susim
-Uveveit | Bir'i | Uvesha'arayim
+Uveveit | Markavot | Uvachatzar | Susim | Uveveit | Bir'i | Uvesha'arayim
 eleh | areihem | ad | melokh | David
 
 4:32
-vechatzreihem | Eitam | Va'ayin
-Rimon | Vetokhen | Ve'ashan | arim | chamesh
+vechatzreihem | Eitam | Va'ayin | Rimon | Vetokhen | Ve'ashan | arim | chamesh
 
 4:33
 vekhol | chatzreihem | asher | sevivot | he'arim | ha'eleh | ad | Ba'al

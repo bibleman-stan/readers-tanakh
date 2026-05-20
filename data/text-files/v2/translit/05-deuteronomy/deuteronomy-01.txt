@@ -1,8 +1,5 @@
 1:1
-eleh | hadevarim | asher | diber | Mosheh | el | kol | Yisra'el | be'ever | Haiyarden
-bamidbar | Ba'aravah | mol | Suf | bein | Paran | uvein | Tofel
-Velavan | Vachatzerot
-Vedi | Zahav
+eleh | hadevarim | asher | diber | Mosheh | el | kol | Yisra'el | be'ever | Haiyarden | bamidbar | Ba'aravah | mol | Suf | bein | Paran | uvein | Tofel | Velavan | Vachatzerot | Vedi | Zahav
 
 1:2
 achad | asar | yom | Mechorev | derekh | har | Se'ir | ad | Kadesh | Barnea
@@ -82,9 +79,10 @@ va'atzaveh | etkhem | ba'et | hahiv | et | kol | hadevarim | asher | ta'asun
 
 1:19
 vanisa | Mechorev
-vanelekh | et | kol | hamidbar | hagadol | vehanora | hahu | asher | re'item | derekh | har | ha'emori
-ka'asher | tzivah | Yahweh | eloheinu
-otanu | vanavo | ad | Kadesh | Barnea
+vanelekh | et | kol | hamidbar | hagadol | vehanora | hahu | asher | re'item
+derekh | har | ha'emori
+ka'asher | tzivah | Yahweh | eloheinu | otanu
+vanavo | ad | Kadesh | Barnea
 
 1:20
 va'omar | alekhem | batem | ad | har | ha'emori | asher | Yahweh | eloheinu | noten | lanu

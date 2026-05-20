@@ -130,13 +130,12 @@ vaiyis'u | Mimoserot
 vaiyachanu | Bivnei | Ya'akan
 
 33:32
-vaiyis'u
-Mibenei | Ya'akan
+vaiyis'u | Mibenei | Ya'akan
 vaiyachanu | Bechor | Hagidgad
 
 33:33
-vaiyis'u
-Mechor | Hagidgad | vaiyachanu | Beyatevatah
+vaiyis'u | Mechor | Hagidgad
+vaiyachanu | Beyatevatah
 
 33:34
 vaiyis'u | Miyatevatah
@@ -148,7 +147,8 @@ vaiyachanu | Be'etzyon | Gaver
 
 33:36
 vaiyis'u | Me'etzyon | Gaver
-vaiyachanu | vemidbar | Tzin | hi | Kadesh
+vaiyachanu | vemidbar | Tzin
+hi | Kadesh
 
 33:37
 vaiyis'u | Mikadesh

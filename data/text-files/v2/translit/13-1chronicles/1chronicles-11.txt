@@ -60,7 +60,9 @@ ve'acharav | El'azar | ben | Dodo | ha'achochi
 hu | bishloshah | hagiborim
 
 11:13
-hu | hayah | im | David | Bapas | Damim | vehapelishtim | Ne'esfu | sham | lamilchamah | vatehi | chelkat | hasadeh | mele'ah | se'orim
+hu | hayah | im | David | Bapas | Damim
+vehapelishtim | Ne'esfu | sham | lamilchamah
+vatehi | chelkat | hasadeh | mele'ah | se'orim
 veha'am | nasu | mipenei | felishtim
 
 11:14
@@ -73,10 +75,8 @@ vaiyeredu | sheloshah | min | hasheloshim | rosh | al | hatzur | el | David | el
 umachaneh | felishtim | chonah | be'emek | refa'im
 
 11:16
-Vedavid
-az | bametzudah
-unetziv | pelishtim
-az | Beveit | Lachem
+Vedavid | az | bametzudah
+unetziv | pelishtim | az | Beveit | Lachem
 
 11:17
 vaiyit'av | David
@@ -132,9 +132,7 @@ ve'el | hasheloshah | lo | va
 vaysimehu | David | al | mishma'to
 
 11:26
-vegiborei | hachayalim
-Asah | El | achi | Yo'av
-Elchanan | ben | Dodo | Mibeit | Lachem
+vegiborei | hachayalim | Asah | El | achi | Yo'av | Elchanan | ben | Dodo | Mibeit | Lachem
 
 11:27
 Shamot | haharori | Cheletz | hapeloni

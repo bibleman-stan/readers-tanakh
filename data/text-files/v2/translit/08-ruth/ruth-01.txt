@@ -1,14 +1,13 @@
 1:1
 vayhi | bimei | shefot | hashofetim
-vayhi | ra'av | ba'aretz
-vaiyelekh | ish | Mibeit | Lechem | Yehudah
-lagur | bisdei | Mo'av
-hu | ve'ishto
-ushenei | vanav
+vayhi | ra'av | ba'aretz | vaiyelekh | ish | Mibeit | Lechem | Yehudah | lagur | bisdei | Mo'av
+hu | ve'ishto | ushenei | vanav
 
 1:2
-veshem | ha'ish | Elimelekh | veshem | ishto | No'omi | veshem | shenei | vanav | Machlon | Vekhilyon | efratim
-Mibeit | Lechem | Yehudah
+veshem | ha'ish | Elimelekh
+veshem | ishto | No'omi
+veshem | shenei | vanav | Machlon | Vekhilyon
+efratim | Mibeit | Lechem | Yehudah
 vaiyavo'u | sedei | Mo'av
 vaiyihyu | sham
 
@@ -111,8 +110,10 @@ vatechdal | ledaber | eleiha
 
 1:19
 vatelakhnah | sheteihem | ad | bo'anah | Beit | Lachem
-vayhi | kevo'anah | Beit | Lechem | vatehom | kol | ha'ir | aleihen
-vatomarnah | hazot | No'omi
+vayhi | kevo'anah | Beit | Lechem
+vatehom | kol | ha'ir | aleihen
+vatomarnah
+hazot | No'omi
 
 1:20
 vatomer | aleihen
@@ -128,6 +129,7 @@ Vayahweh | anah | vi
 Veshadai | hera | li
 
 1:22
-vatashov | No'omi | Verut | hamo'aviyah | khalatah | imah | hashavah
-misedei | Mo'av
+vatashov | No'omi
+Verut | hamo'aviyah | khalatah | imah
+hashavah | misedei | Mo'av
 vehemah | ba'u | Beit | Lechem | bitchilat | ketzir | se'orim

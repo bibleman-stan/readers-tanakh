@@ -9,10 +9,7 @@ moshel | Me'aro'er | asher | al | sefat | nachal | Arnon
 vetokh | hanachal | vachatzi | Hagil'ad | ve'ad | Yabok | hanachal | gevul | benei | Amon
 
 12:3
-Veha'aravah | ad | yam | Kinrot | mizrachah
-ve'ad | yam | Ha'aravah | yom | hamelach | mizrachah
-derekh | Beit | Hayshimot
-umiteiman | tachat | ashdot | Hapisgah
+Veha'aravah | ad | yam | Kinrot | mizrachah | ve'ad | yam | Ha'aravah | yom | hamelach | mizrachah | derekh | Beit | Hayshimot | umiteiman | tachat | ashdot | Hapisgah
 
 12:4
 ugevul | Og | melekh | Habashan | miyeter | harefa'im
@@ -26,10 +23,8 @@ Mosheh | eved | Yahweh | uvenei | Yisra'el | hikum
 vaiyitenah | Mosheh | eved | Yahweh | yerushah | laru'uveni | velagadi | velachatzi | shevet | hamnasheh
 
 12:7
-ve'eleh | malkhei | ha'aretz | asher | hikah | Yehoshua
-uvenei | Yisra'el | be'ever | Haiyarden | yamah
-Miba'al | Gad | bevik'at | Halevanon
-ve'ad | hahar | hechalak | ha'oleh | Se'irah
+ve'eleh | malkhei | ha'aretz | asher | hikah | Yehoshua | uvenei | Yisra'el | be'ever | Haiyarden | yamah | Miba'al | Gad | bevik'at | Halevanon | ve'ad | hahar | hechalak
+ha'oleh | Se'irah
 vaiyitenah | Yehoshua | leshivtei | Yisra'el | yerushah | kemachlekotam
 
 12:8
@@ -81,7 +76,8 @@ melekh | Madon | echad
 melekh | Chatzor | echad
 
 12:20
-melekh | Shimron | Mer'on | echad | melekh | Akhshaf | echad
+melekh | Shimron | Mer'on | echad
+melekh | Akhshaf | echad
 
 12:21
 melekh | Ta'nakh | echad

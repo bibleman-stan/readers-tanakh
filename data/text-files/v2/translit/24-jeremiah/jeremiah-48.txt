@@ -120,13 +120,10 @@ ki | shudad | Mo'av
 umishpat | ba | el | eretz | hamishor | el | Cholon | ve'el | Yahtzah | ve'al | Mofa'at
 
 48:22
-ve'al | Divon | ve'al | Nevo
-ve'al | Beit | Divlatayim
+ve'al | Divon | ve'al | Nevo | ve'al | Beit | Divlatayim
 
 48:23
-ve'al | Kiryatayim
-ve'al | Beit | Gamul
-ve'al | Beit | Me'on
+ve'al | Kiryatayim | ve'al | Beit | Gamul | ve'al | Beit | Me'on
 
 48:24
 ve'al | Keriyot | ve'al | Botzrah | ve'al | kol | arei | eretz | Mo'av | harechokot | vehakerovot
@@ -184,8 +181,7 @@ heidad | lo | heidad
 48:34
 miza'akat | Cheshbon | ad | El'aleh | ad | Yahatz | natenu | kolam
 Mitzo'ar | ad | Choronayim | Eglat | Shelishiyah
-ki | gam | mei | Nimrim | limshamot
-yihyu
+ki | gam | mei | Nimrim | limshamot | yihyu
 
 48:35
 vehishbati | Lemo'av

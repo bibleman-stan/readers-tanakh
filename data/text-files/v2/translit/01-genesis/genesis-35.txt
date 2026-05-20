@@ -81,8 +81,7 @@ Beit | El
 
 35:16
 vaiyis'u | Mibeit | El
-vayhi | od | kivrat | ha'aretz
-lavo | Efratah
+vayhi | od | kivrat | ha'aretz | lavo | Efratah
 vateled | Rachel
 vatekash | belidtah
 
@@ -99,8 +98,9 @@ vatikra | shemo | Ben | Oni
 ve'aviv | kara | lo | Vinyamin
 
 35:19
-vatamot
-Rachel | vatikaver | bederekh | Efratah | hi | Beit | Lachem
+vatamot | Rachel
+vatikaver | bederekh | Efratah
+hi | Beit | Lachem
 
 35:20
 vaiyatzev | Ya'ako | matzevah | al | kevuratah
@@ -131,9 +131,8 @@ uvenei | Zilpah | shifchat | Le'ah | Gad | Ve'asher
 eleh | benei | Ya'ako | asher | yulad | lo | Befadan | Aram
 
 35:27
-vaiyavo | Ya'ako | el | Yitzchak | aviv | Mamre
-Kiryat | Ha'arba | hi | Chevron
-asher | gar | sham | Avraham | Veyitzchak
+vaiyavo | Ya'ako | el | Yitzchak | aviv | Mamre | Kiryat | Ha'arba
+hi | Chevron | asher | gar | sham | Avraham | Veyitzchak
 
 35:28
 vaiyihyu | yemei | Yitzchak | me'at | shanah | ushemonim | shanah

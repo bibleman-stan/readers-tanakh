@@ -20,16 +20,16 @@ benei | Yo'el | Shema'yah | veno | Gog | beno | Shim'i | veno
 Mikhah | veno | Re'ayah | veno | Ba'al | beno
 
 5:6
-Be'erah | veno | asher | heglah | Tilegat | Pilne'eser
-melekh | Ashur | hu | nasi | lor'uveni
+Be'erah | veno | asher | heglah | Tilegat | Pilne'eser | melekh | Ashur
+hu | nasi | lor'uveni
 
 5:7
 ve'echav | lemishpechotav | behityaches | letoledotam
 harosh | Ye'i'el | Uzekharyahu
 
 5:8
-Uvela | ben | Azaz | ben | Shema | ben | Yo'el | hu | yoshev | Ba'aro'er
-ve'ad | Nevo | Uva'al | Me'on
+Uvela | ben | Azaz | ben | Shema | ben | Yo'el
+hu | yoshev | Ba'aro'er | ve'ad | Nevo | Uva'al | Me'on
 
 5:9
 velamizrach | yashav | ad | levo | midbarah | lemin | hanahar | Perat
@@ -89,8 +89,8 @@ ki | meha'elohim | hamilchamah
 vaiyeshevu | tachteihem | ad | hagolah
 
 5:23
-uvenei | chatzi | shevet | Menasheh | yashevu
-ba'aretz | Mibashan | ad | Ba'al | Chermon | Usenir | vehar | Chermon | hemah | ravu
+uvenei | chatzi | shevet | Menasheh | yashevu | ba'aretz
+Mibashan | ad | Ba'al | Chermon | Usenir | vehar | Chermon | hemah | ravu
 
 5:24
 ve'eleh | rashei | veit | avotam
@@ -103,13 +103,9 @@ vaiyim'alu | belohei | avoteihem
 vaiyiznu | acharei | elohei | amei | ha'aretz | asher | hishmid | elohim | mipeneihem
 
 5:26
-vaiya'ar | elohei | Yisra'el | et | ruach | Pul | melekh | Ashur
-ve'et | ruach | Tilegat | Pilneser | melekh | Ashur
-vaiyaglem | lor'uveni
-velagadi
-velachatzi | shevet | Menasheh
-vayvi'em | Lachlach | Vechavor | Vehara | unehar | Gozan
-ad | haiyom | hazeh
+vaiya'ar | elohei | Yisra'el | et | ruach | Pul | melekh | Ashur | ve'et | ruach | Tilegat | Pilneser | melekh | Ashur
+vaiyaglem | lor'uveni | velagadi | velachatzi | shevet | Menasheh
+vayvi'em | Lachlach | Vechavor | Vehara | unehar | Gozan | ad | haiyom | hazeh
 
 5:27
 benei | Levi | Gereshon | Kehat | Umerari
