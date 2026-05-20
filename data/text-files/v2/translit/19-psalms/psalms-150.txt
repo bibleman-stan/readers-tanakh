@@ -1,5 +1,6 @@
 150:1
-halu | Yah | halu | el | bekadesho
+halu | Yah
+halu | el | bekadesho
 haluhu | birkia | uzo
 
 150:2
@@ -19,4 +20,5 @@ haluhu | vetziltzelei | shama
 haluhu | betziltzelei | teru'ah
 
 150:6
-kol | haneshamah | tehalel | Yah | halu | Yah
+kol | haneshamah | tehalel | Yah
+halu | Yah

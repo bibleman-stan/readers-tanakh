@@ -1,13 +1,12 @@
 24:1
-vaiyar | Bil'am | ki | tov | be'einei | Yahweh
-levarekh | et | Yisra'el
-velo | halakh | kefa'am | befa'am
-likrat | nechashim
+vaiyar | Bil'am | ki | tov | be'einei | Yahweh | levarekh | et | Yisra'el
+velo | halakh | kefa'am | befa'am | likrat | nechashim
 vaiyashet | el | hamidbar | panav
 
 24:2
 vaiyisa | Vil'am | et | einav
-vaiyar | et | Yisra'el | shokhen | lishvatav
+vaiyar | et | Yisra'el
+shokhen | lishvatav
 vatehi | alav | ruach | elohim
 
 24:3
@@ -16,23 +15,27 @@ vaiyomar | ne'um | Bil'am | beno | Ve'or
 une'um | hagever | shetum | ha'ayin
 
 24:4
-ne'um | shomea | imrei | el | asher | machazeh | Shadai | yechezeh | nofel | ugelui | einayim
+ne'um
+shomea | imrei | el | asher | machazeh | Shadai | yechezeh | nofel | ugelui | einayim
 
 24:5
-mah | tou | ohaleikha | Ya'ako | mishkenoteikha | Yisra'el
+mah | tou | ohaleikha | Ya'ako
+mishkenoteikha | Yisra'el
 
 24:6
 kinchalim | Nitayu | keganot | alei | nahar
 ka'ahalim | nata | Yahweh | ka'arazim | alei | mayim
 
 24:7
-yizal | mayim | midalyav | vezar'o | bemayim | rabim
+yizal | mayim | midalyav
+vezar'o | bemayim | rabim
 veyarom | Me'agag | malko
 vetinnase | malkhuto
 
 24:8
-el | motzi'o | Mimitzrayim | keto'afot | re'em | lo
-yokhal | goyim | tzarav | ve'atzmoteihem | yegarem
+el | motzi'o | Mimitzrayim
+keto'afot | re'em | lo | yokhal | goyim | tzarav
+ve'atzmoteihem | yegarem
 vechitzav | yimchatz
 
 24:9
@@ -42,30 +45,28 @@ ukhelavi | mi | yekimenu | mevarakheikha | varukh | ve'orereikha | arur
 24:10
 vaiyichar | af | Balak | el | Bil'am
 vaiyispok | et | kapav
-vaiyomer | Balak | el | Bil'am
-lako | oyevai | keraticha
+vaiyomer | Balak | el | Bil'am | lako | oyevai | keraticha
 vehineh | berakhta | varekh | zeh | shalosh | pe'amim
 
 24:11
-ve'atah | berach | lekha | el | mekomecha
-amarti | kabed | akhabedkha | vehineh | mena'akha | Yahweh | mikavod
+ve'atah
+berach | lekha | el | mekomecha | amarti
+kabed | akhabedkha
+vehineh | mena'akha | Yahweh | mikavod
 
 24:12
 vaiyomer | Bil'am | el | Balak
-halo | gam | el | mal'akheikha | asher | shalachta | elai | dibarti
-lemor
+halo | gam | el | mal'akheikha | asher | shalachta | elai | dibarti | lemor
 
 24:13
 im | yiten | li | Valak | melo | veito | kesef | vezahav
-lo | ukhal | la'avor | et | pi | Yahweh
-la'asot | tovah | o | ra'ah | milibi
-asher | yedaber | Yahweh
+lo | ukhal | la'avor | et | pi | Yahweh | la'asot | tovah | o | ra'ah | milibi | asher | yedaber | Yahweh
 oto | adaber
 
 24:14
-ve'atah | hini | holekh | le'ami
-lekhah | i'atzekha | asher | ya'aseh | ha'am | hazeh | le'amekha
-be'acharit | haiyamim
+ve'atah
+hini | holekh | le'ami
+lekhah | i'atzekha | asher | ya'aseh | ha'am | hazeh | le'amekha | be'acharit | haiyamim
 
 24:15
 vaiyisa | meshalo
@@ -73,19 +74,22 @@ vaiyomar | ne'um | Bil'am | beno | Ve'or
 une'um | hagever | shetum | ha'ayin
 
 24:16
-ne'um | shomea | imrei | el | veyodea | da'at | elyon
-machazeh | Shadai | yechezeh | nofel
-ugelui | einayim
+ne'um
+shomea | imrei | el
+veyodea | da'at | elyon
+machazeh | Shadai | yechezeh | nofel | ugelui | einayim
 
 24:17
-er'enu | velo | atah | ashurenu | velo | karov
-darakh | kokhav | Miya'ako | vekam | shevet | Miyisra'el
-umachatz | pa'atei | Mo'av
-vekarkar | kol | benei | Shet
+er'enu
+velo | atah | ashurenu
+velo | karov
+darakh | kokhav | Miya'ako
+vekam | shevet | Miyisra'el
+umachatz | pa'atei | Mo'av | vekarkar | kol | benei | Shet
 
 24:18
-vehayah | Edom | yereshah | vehayah | yereshah | Se'ir | oyevav | Veyisra'el
-oseh | chayil
+vehayah | Edom | yereshah
+vehayah | yereshah | Se'ir | oyevav | Veyisra'el | oseh | chayil
 
 24:19
 veyered | Miya'ako
@@ -94,29 +98,35 @@ vehe'evid | sarid | me'ir
 24:20
 vaiyar | et | Amalek
 vaiyisa | meshalo
-vaiyomar | reshit | goyim | Amalek | ve'acharito | adei | oved
+vaiyomar
+reshit | goyim | Amalek
+ve'acharito | adei | oved
 
 24:21
 vaiyar | et | hakeini
 vaiyisa | meshalo
 vaiyomar
-eitan | moshavekha | vesim | basela | kinecha
+eitan | moshavekha
+vesim | basela | kinecha
 
 24:22
-ki | im | yihyeh | leva'er | Kayin | ad | mah | Ashur | tishbeka
+ki | im | yihyeh | leva'er
+Kayin
+ad | mah | Ashur | tishbeka
 
 24:23
 vaiyisa | meshalo
 vaiyomar
-o | mi | yichyeh | misumo | el
+o
+mi | yichyeh | misumo | el
 
 24:24
 vetzim | miyad | Kitim
-ve'inu | Ashur | ve'inu | Ever
+ve'inu | Ashur
+ve'inu | Ever
 vegam | hu | adei | oved
 
 24:25
 vaiyakom | Bil'am
-vaiyelekh
-vaiyashov | limkomo
+vaiyelekh | vaiyashov | limkomo
 vegam | Balak | halakh | ledarko

@@ -1,6 +1,5 @@
 14:1
-vaydaber | Yahweh | el | Mosheh
-lemor
+vaydaber | Yahweh | el | Mosheh | lemor
 
 14:2
 daber | el | benei | Yisra'el
@@ -11,22 +10,27 @@ nikhcho | tachanu | al | haiyam
 
 14:3
 ve'amar | par'oh | livnei | Yisra'el
-nevukhim | hem | ba'aretz | sagar | aleihem | hamidbar
+nevukhim | hem | ba'aretz
+sagar | aleihem | hamidbar
 
 14:4
 vechizakti | et | lev | par'oh
-veradaf | achareihem | ve'ikavedah | befar'oh
-uvekhol | cheilo | veyade'u | Mitzrayim | ki | ani | Yahweh | vaiya'asu | khen
+veradaf | achareihem
+ve'ikavedah | befar'oh | uvekhol | cheilo
+veyade'u | Mitzrayim | ki | ani | Yahweh
+vaiya'asu | khen
 
 14:5
-vaiyugad | lemelekh | Mitzrayim | ki | varach
-ha'am | vaiyehafekh | levav | par'oh | va'avadav | el | ha'am
-vaiyomru | mah | zot | asinu | ki | shilachnu | et | Yisra'el
-me'avedenu
+vaiyugad | lemelekh | Mitzrayim
+ki | varach | ha'am
+vaiyehafekh | levav | par'oh | va'avadav | el | ha'am
+vaiyomru
+mah | zot | asinu
+ki | shilachnu | et | Yisra'el | me'avedenu
 
 14:6
-vaiye'sor | et | rikhbo | ve'et | amo
-lakach | imo
+vaiye'sor | et | rikhbo
+ve'et | amo | lakach | imo
 
 14:7
 vaiyikach | shesh | me'ot | rekhev | bachur | vekhol | rekhev | Mitzrayim
@@ -35,8 +39,7 @@ veshalishim | al | kulo
 14:8
 vaychazek | Yahweh | et | lev | par'oh | melekh | Mitzrayim
 vaiyirdof | acharei | benei | Yisra'el
-uvenei | Yisra'el
-yotze'im | beyad | ramah
+uvenei | Yisra'el | yotze'im | beyad | ramah
 
 14:9
 vaiyirdefu | Mitzrayim | achareihem
@@ -46,62 +49,65 @@ lifnei | Ba'al | Tzefon
 
 14:10
 ufar'oh | hikriv
-vaiyis'u | venei | Yisra'el | et | eineihem | vehineh | Mitzrayim | nosea | achareihem
+vaiyis'u | venei | Yisra'el | et | eineihem
+vehineh
+Mitzrayim | nosea | achareihem
 vaiyire'u | me'od
 vaiyitz'aku | venei | Yisra'el | el | Yahweh
 
 14:11
 vaiyomeru | el | Mosheh
-hamibeli | ein | kevarim | Bemitzrayim | lekachtanu
-lamut | bamidbar | mah | zot | asita | lanu | lehotzi'anu | Mimitzrayim
+hamibeli | ein | kevarim | Bemitzrayim | lekachtanu | lamut | bamidbar
+mah | zot | asita | lanu | lehotzi'anu | Mimitzrayim
 
 14:12
-halo | zeh | hadavar | asher | dibarnu | eleikha | Vemitzrayim
-lemor
-chadal | mimenu | vena'avdah | et | Mitzrayim
+halo | zeh | hadavar | asher | dibarnu | eleikha | Vemitzrayim | lemor
+chadal | mimenu
+vena'avdah | et | Mitzrayim
 ki | tov | lanu | avod | et | Mitzrayim | mimutenu | bamidbar
 
 14:13
 vaiyomer | Mosheh | el | ha'am
 al | tira'u
-hityatzvu | ure'u | et | yeshu'at | Yahweh
-asher | ya'aseh | lakhem
-haiyom | ki | asher | re'item | et | Mitzrayim | haiyom
-lo | tosifu | lir'otam | od | ad | olam
+hityatzvu
+ure'u | et | yeshu'at | Yahweh | asher | ya'aseh | lakhem | haiyom
+ki | asher | re'item | et | Mitzrayim | haiyom
+lo | tosifu | lir'otam | od
+ad | olam
 
 14:14
-Yahweh | yilachem | lakhem | ve'atem
-tacharishun
+Yahweh | yilachem | lakhem
+ve'atem | tacharishun
 
 14:15
 vaiyomer | Yahweh | el | Mosheh
-mah | titz'ak
-elai | daber | el | benei | Yisra'el
+mah | titz'ak | elai
+daber | el | benei | Yisra'el
 veyisa'u
 
 14:16
-ve'atah | harem | et | matekha | uneteh | et | yadekha | al | haiyam
-uveka'ehu | veyavo'u | venei | Yisra'el | betokh | haiyam | baiyabashah
+ve'atah | harem | et | matekha
+uneteh | et | yadekha | al | haiyam
+uveka'ehu
+veyavo'u | venei | Yisra'el | betokh | haiyam | baiyabashah
 
 14:17
 va'ani | hini | mechazek | et | lev | Mitzrayim
-veyavo'u | achareihem | ve'ikavedah | befar'oh
-uvekhol | cheilo | berikhbo | uvefarashav
+veyavo'u | achareihem
+ve'ikavedah | befar'oh | uvekhol | cheilo | berikhbo | uvefarashav
 
 14:18
-veyade'u | Mitzrayim
-ki | ani | Yahweh | behikavedi | befar'oh | berikhbo
-uvefarashav
+veyade'u | Mitzrayim | ki | ani | Yahweh | behikavedi | befar'oh | berikhbo | uvefarashav
 
 14:19
-vaiyisa | mal'akh | ha'elohim | haholekh | lifnei | machaneh | Yisra'el
+vaiyisa | mal'akh | ha'elohim
+haholekh | lifnei | machaneh | Yisra'el
 vaiyelekh | me'achareihem
 vaiyisa | amud | he'anan | mipeneihem
 vaiya'amod | me'achareihem
 
 14:20
-vaiyavo | bein | machaneh | Mitzrayim
-uvein | machaneh | Yisra'el
+vaiyavo | bein | machaneh | Mitzrayim | uvein | machaneh | Yisra'el
 vayhi | he'anan | vehachoshekh
 vaiya'er | et | halayelah
 velo | karav | zeh | el | zeh | kol | halayelah
@@ -114,17 +120,14 @@ vaiyibake'u | hamayim
 
 14:22
 vaiyavo'u | venei | Yisra'el | betokh | haiyam | baiyabashah
-vehamayim | lahem | chomah | miminam
-umisemolam
+vehamayim | lahem | chomah | miminam | umisemolam
 
 14:23
 vaiyirdefu | Mitzrayim
-vaiyavo'u | achareihem | kol | sus | par'oh | rikhbo
-ufarashav | el | tokh | haiyam
+vaiyavo'u | achareihem | kol | sus | par'oh | rikhbo | ufarashav | el | tokh | haiyam
 
 14:24
-vayhi | be'ashmoret | haboker
-vaiyashkef | Yahweh | el | machaneh | Mitzrayim | be'amud | esh | ve'anan
+vayhi | be'ashmoret | haboker | vaiyashkef | Yahweh | el | machaneh | Mitzrayim | be'amud | esh | ve'anan
 vaiyahom | et | machaneh | Mitzrayim
 
 14:25
@@ -136,31 +139,31 @@ ki | Yahweh | nilcham | lahem | Bemitzrayim
 14:26
 vaiyomer | Yahweh | el | Mosheh
 neteh | et | yadekha | al | haiyam
-veyashuvu | hamayim | al | Mitzrayim | al | rikhbo
-ve'al | parashav
+veyashuvu | hamayim | al | Mitzrayim | al | rikhbo | ve'al | parashav
 
 14:27
 vaiyet | Mosheh | et | yado | al | haiyam
-vaiyashov | haiyam | lifnot | boker | le'eitano
+vaiyashov | haiyam | lifnot | boker
+le'eitano
 Umitzrayim | nasim | likrato
 vayna'er | Yahweh | et | Mitzrayim | betokh | haiyam
 
 14:28
 vaiyashuvu | hamayim
 vaykhasu | et | harekhev | ve'et | haparashim | lekhol | cheil | par'oh
-haba'im | achareihem | baiyam | lo | Nish'ar | bahem | ad | echad
+haba'im | achareihem | baiyam
+lo | Nish'ar | bahem | ad | echad
 
 14:29
 uvenei | Yisra'el | halekhu | vaiyabashah | betokh | haiyam
-vehamayim | lahem | chomah | miminam
-umisemolam
+vehamayim | lahem | chomah | miminam | umisemolam
 
 14:30
 vaiyoosha | Yahweh | baiyom | hahu | et | Yisra'el | miyad | Mitzrayim
-vaiyar | Yisra'el | et | Mitzrayim | met | al | sefat | haiyam
+vaiyar | Yisra'el | et | Mitzrayim
+met | al | sefat | haiyam
 
 14:31
 vaiyar | Yisra'el | et | haiyad | hagedolah | asher | asah | Yahweh | Bemitzrayim
 vaiyire'u | ha'am | et | Yahweh
-vaiya'aminu | Bayahweh
-Uvemosheh | avdo
+vaiya'aminu | Bayahweh | Uvemosheh | avdo

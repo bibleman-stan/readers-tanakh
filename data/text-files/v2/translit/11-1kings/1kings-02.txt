@@ -1,31 +1,26 @@
 2:1
 vaiyikrevu | yemei | David | lamut
-vaytzav | et | Shelomoh | veno
-lemor
+vaytzav | et | Shelomoh | veno | lemor
 
 2:2
-anokhi | holekh | bederekh | kol | ha'aretz | vechazakta
+anokhi | holekh | bederekh | kol | ha'aretz
+vechazakta
 vehayita | le'ish
 
 2:3
-veshamarta | et | mishmeret | Yahweh | eloheikha
-lalekhet | bidrakhav | lishmor | chukotav | mitzvotav
-umishpatav | ve'edevotav | kakatuv
-betorat | Mosheh
-lema'an | taskil | et | kol | asher | ta'aseh
-ve'et | kol | asher | tifneh | sham
+veshamarta | et | mishmeret | Yahweh | eloheikha | lalekhet | bidrakhav | lishmor | chukotav | mitzvotav | umishpatav | ve'edevotav
+kakatuv | betorat | Mosheh
+lema'an | taskil | et | kol | asher | ta'aseh | ve'et | kol | asher | tifneh | sham
 
 2:4
-lema'an | yakim | Yahweh | et | devaro | asher | diber | alai
-lemor | im | yishmeru | vaneikha | et | darkam
-lalekhet | lefanai | be'emet | bekhol | levavam
-uvekhol | nafsham | lemor
+lema'an | yakim | Yahweh | et | devaro | asher | diber | alai | lemor
+im | yishmeru | vaneikha | et | darkam | lalekhet | lefanai | be'emet | bekhol | levavam | uvekhol | nafsham | lemor
 lo | yikaret | lekha | ish | me'al | kise | Yisra'el
 
 2:5
-vegam | atah | yada'ta | et | asher | asah | li | Yo'av | ben | Tzeruyah | asher | asah | lishnei | sarei | tziv'ot | Yisra'el | Le'avner | ben | Ner
-Vela'amasa | ven | Yeter | vaiyahargem
-vaiyasem | demei | milchamah | beshalom
+vegam | atah | yada'ta
+et | asher | asah | li | Yo'av | ben | Tzeruyah | asher | asah | lishnei | sarei | tziv'ot | Yisra'el | Le'avner | ben | Ner | Vela'amasa | ven | Yeter
+vaiyahargem | vaiyasem | demei | milchamah | beshalom
 vaiyiten | demei | milchamah | bachagorato | asher | bematenav
 uvena'alo | asher | beraglav
 
@@ -40,14 +35,18 @@ ki | khen | karevu | elai | bevarechi | mipenei | Avshalom | achikha
 
 2:8
 vehineh | imekha | Shim'i | ven | Gera | ven | haymini | Mibachurim
-vehu | kilani | kelalah | nimretzet | beyom | lekhti | Machanayim | vehu | yarad
-likrati | Haiyarden
-va'eshava | lo | Bayahweh
-lemor | im | amitekha | becharev
+vehu | kilani | kelalah | nimretzet | beyom | lekhti | Machanayim
+vehu | yarad | likrati
+Haiyarden
+va'eshava | lo | Bayahweh | lemor
+im | amitekha | becharev
 
 2:9
-ve'atah | al | tenakehu | ki | ish | chakham | atah
-veyada'ta | et | asher | ta'aseh | lo
+ve'atah
+al | tenakehu
+ki | ish | chakham | atah
+veyada'ta
+et | asher | ta'aseh | lo
 vehoradta | et | seivato | bedam | she'ol
 
 2:10
@@ -56,7 +55,8 @@ vaiyikaver | be'ir | David
 
 2:11
 vehaiyamim | asher | malakh | David | al | Yisra'el
-arba'im | shanah | Bechevron | malakh | sheva | shanim
+arba'im | shanah
+Bechevron | malakh | sheva | shanim
 Uvirushalim | malakh | sheloshim | veshalosh | shanim
 
 2:12
@@ -65,39 +65,45 @@ vatikon | malkhuto | me'od
 
 2:13
 vaiyavo | Adoniyahu | ven | Chageit | el | Bat | Sheva | em | Shelomoh
-vatomer | hashalom | bo'ekha
-vaiyomer | shalom
+vatomer
+hashalom | bo'ekha
+vaiyomer
+shalom
 
 2:14
-vaiyomer | davar | li
-elayikh | vatomer
+vaiyomer
+davar | li | elayikh
+vatomer
 daber
 
 2:15
-vaiyomer | at | yada'at | ki | li | hayetah | hamelukhah
-ve'alai | samu | khol | Yisra'el | peneihem
-limlokh
+vaiyomer
+at | yada'at | ki | li | hayetah | hamelukhah
+ve'alai | samu | khol | Yisra'el | peneihem | limlokh
 vatiso | hamelukhah
-vatehi | le'achi | ki | Meyahweh
-hayetah | lo
+vatehi | le'achi
+ki | Meyahweh | hayetah | lo
 
 2:16
-ve'atah | she'elah | achat | anokhi | sho'el | me'itakh | al | tashivi | et | panai
+ve'atah
+she'elah | achat | anokhi | sho'el | me'itakh
+al | tashivi | et | panai
 vatomer | elav
 daber
 
 2:17
 vaiyomer
-imri | na | Lishlomoh | hamelekh | ki | lo | yashiv | et | panayikh
+imri | na | Lishlomoh | hamelekh
+ki | lo | yashiv | et | panayikh
 veyiten | li | et | Avishag | hashunamit | le'ishah
 
 2:18
-vatomer | Bat | Sheva | tov
+vatomer | Bat | Sheva
+tov
 anokhi | adaber | aleikha | el | hamelekh
 
 2:19
-vatavo | Vat | Sheva | el | hamelekh | Shelomoh
-ledaber | lo | al | Adoniyahu
+vatavo | Vat | Sheva | el | hamelekh | Shelomoh | ledaber | lo | al | Adoniyahu
 vaiyakam | hamelekh | likratah
 vaiyishtachu | lah
 vaiyeshev | al | kis'o
@@ -105,9 +111,12 @@ vaiyasem | kise | le'em | hamelekh
 vateshev | limino
 
 2:20
-vatomer | she'elah | achat
-ketanah | anokhi | sho'elet | me'itakh | al | tashev | et | panai
-vaiyomer | lah | hamelekh | sha'ali | imi | ki | lo | ashiv | et | panayikh
+vatomer
+she'elah | achat | ketanah | anokhi | sho'elet | me'itakh
+al | tashev | et | panai
+vaiyomer | lah | hamelekh
+sha'ali | imi
+ki | lo | ashiv | et | panayikh
 
 2:21
 vatomer
@@ -118,37 +127,38 @@ vaiya'an | hamelekh | Shelomoh
 vaiyomer | le'imo
 velamah | at | sho'elet | et | Avishag | hashunamit | La'adoniyahu
 vesha'ali | lo | et | hamelukhah
-ki | hu | achi | hagadol | mimeni | velo
-Ule'evyatar | hakohen
-Uleyo'av | ben | Tzeruyah
+ki | hu | achi
+hagadol | mimeni
+velo | Ule'evyatar | hakohen | Uleyo'av | ben | Tzeruyah
 
 2:23
-vaiyishava | hamelekh | Shelomoh | Bayahweh
-lemor
-koh | ya'aseh | li | elohim | vekhoh | yosif
+vaiyishava | hamelekh | Shelomoh | Bayahweh | lemor
+koh | ya'aseh | li | elohim
+vekhoh | yosif
 ki | venafsho | diber | Adoniyahu | et | hadavar | hazeh
 
 2:24
-ve'atah | chai | Yahweh | asher | hekhinani | vaiyoshivini | al | kise | David | avi
-va'asher | asah | li | bayit | ka'asher | diber | ki | haiyom
-yumat | Adoniyahu
+ve'atah
+chai | Yahweh | asher | hekhinani
+vaiyoshivini | al | kise | David | avi
+va'asher | asah | li | bayit
+ka'asher | diber
+ki | haiyom | yumat | Adoniyahu
 
 2:25
 vaiyishlach | hamelekh | Shelomoh | beyad | Benayahu | ven | Yehoyada
-vaiyifga | bo
-vaiyamot
+vaiyifga | bo | vaiyamot
 
 2:26
-Ule'evyatar | hakohen | amar | hamelekh | Anatot | lekh | al | sadeikha
-ki | ish | mavet
-atah
-uvaiyom | hazeh | lo | amitekha | ki | nasata | et | aron | Adonai | Yahweh | lifnei | David | avi
+Ule'evyatar | hakohen | amar | hamelekh
+Anatot | lekh | al | sadeikha
+ki | ish | mavet | atah
+uvaiyom | hazeh | lo | amitekha
+ki | nasata | et | aron | Adonai | Yahweh | lifnei | David | avi
 vekhi | hit'anita | bekhol | asher | hit'anah | avi
 
 2:27
-vaygaresh | Shelomoh | et | Evyatar
-mihyot | kohen | Layahweh
-lemale | et | devar | Yahweh | asher | diber | al | beit | Eli | Beshiloh
+vaygaresh | Shelomoh | et | Evyatar | mihyot | kohen | Layahweh | lemale | et | devar | Yahweh | asher | diber | al | beit | Eli | Beshiloh
 
 2:28
 vehashemu'ah | ba'ah | ad | Yo'av
@@ -158,46 +168,48 @@ vaiyanos | Yo'av | el | ohel | Yahweh
 vaiyachazek | bekarnot | hamizbeach
 
 2:29
-vaiyugad | lamelekh | Shelomoh | ki | nas | Yo'av | el | ohel | Yahweh | vehineh
-etzel | hamizbeach
-vaiyishlach | Shelomoh | et | Benayahu | ven | Yehoyada
-lemor
-lekh | pega | bo
+vaiyugad | lamelekh | Shelomoh
+ki | nas | Yo'av | el | ohel | Yahweh
+vehineh | etzel | hamizbeach
+vaiyishlach | Shelomoh | et | Benayahu | ven | Yehoyada | lemor
+lekh
+pega | bo
 
 2:30
 vaiyavo | Venayahu | el | ohel | Yahweh
 vaiyomer | elav
-koh | amar | hamelekh | tze
-vaiyomer | lo | ki | foh | amut
-vaiyashev | Benayahu | et | hamelekh | davar
-lemor | koh | diber | Yo'av | vekhoh | anani
+koh | amar | hamelekh
+tze
+vaiyomer
+lo
+ki | foh | amut
+vaiyashev | Benayahu | et | hamelekh | davar | lemor
+koh | diber | Yo'av
+vekhoh | anani
 
 2:31
 vaiyomer | lo | hamelekh
-aseh | ka'asher | diber | ufega | bo
+aseh
+ka'asher | diber
+ufega | bo
 ukevarto
-vahasirota | demei | chinam | asher | shafakh | Yo'av | me'alai
-ume'al | beit | avi
+vahasirota | demei | chinam | asher | shafakh | Yo'av
+me'alai | ume'al | beit | avi
 
 2:32
-veheshiv | Yahweh | et | damo | al | rosho | asher | paga | bishnei | anashim | tzadikim | vetovim | mimenu | vaiyahargem | bacherev
-ve'avi | David | lo | yada | et | Avner | ben | Ner | sar | tzeva | Yisra'el
-ve'et | Amasa | ven | Yeter | sar | tzeva | Yehudah
+veheshiv | Yahweh | et | damo | al | rosho | asher | paga | bishnei | anashim
+tzadikim | vetovim | mimenu
+vaiyahargem | bacherev
+ve'avi | David | lo | yada
+et | Avner | ben | Ner | sar | tzeva | Yisra'el | ve'et | Amasa | ven | Yeter | sar | tzeva | Yehudah
 
 2:33
-veshavu | demeihem | berosh | Yo'av
-uverosh | zar'o | le'olam
-Uledavid
-ulezar'o
-uleveito
-ulekhis'o | yihyeh | shalom | ad | olam
-me'im | Yahweh
+veshavu | demeihem | berosh | Yo'av | uverosh | zar'o | le'olam
+Uledavid | ulezar'o | uleveito | ulekhis'o | yihyeh | shalom | ad | olam | me'im | Yahweh
 
 2:34
 vaiya'al | Benayahu | ben | Yehoyada
-vaiyifga | bo
-vaymitehu
-vaiyikaver | beveito | bamidbar
+vaiyifga | bo | vaymitehu | vaiyikaver | beveito | bamidbar
 
 2:35
 vaiyiten | hamelekh | et | Benayahu | ven | Yehoyada | tachtav | al | hatzava
@@ -207,20 +219,22 @@ ve'et | Tzadok | hakohen | natan | hamelekh | tachat | Evyatar
 vaiyishlach | hamelekh
 vaiyikra | Leshim'i
 vaiyomer | lo
-beneh | lekha | vayit | Birushalim | veyashavta
-sham | velo | tetze | misham | aneh | va'anah
+beneh | lekha | vayit | Birushalim
+veyashavta | sham
+velo | tetze | misham | aneh | va'anah
 
 2:37
-vehayah | beyom | tzetekha | ve'avarta | et | nachal | Kidron
-yadoa | teda
-ki | mot | tamut
+vehayah
+beyom | tzetekha
+ve'avarta | et | nachal | Kidron
+yadoa | teda | ki | mot | tamut
 damekha | yihyeh | veroshekha
 
 2:38
 vaiyomer | Shim'i | lamelekh
 tov | hadavar
-ka'asher | diber | adoni | hamelekh | ken
-ya'aseh | avdekha
+ka'asher | diber | adoni | hamelekh
+ken | ya'aseh | avdekha
 vaiyeshev | Shim'i | Birushalim | yamim | rabim
 
 2:39
@@ -232,14 +246,14 @@ hineh | avadeikha | Begat
 2:40
 vaiyakom | Shim'i
 vaiyachavosh | et | chamoro
-vaiyelekh | Gatah | el | Akhish
-levakesh | et | avadav
+vaiyelekh | Gatah | el | Akhish | levakesh | et | avadav
 vaiyelekh | Shim'i
 vaiyave | et | avadav | Migat
 
 2:41
 vaiyugad | Lishlomoh
-ki | halakh | Shim'i | Mirushalim | Gat | vaiyasho
+ki | halakh | Shim'i | Mirushalim | Gat
+vaiyasho
 
 2:42
 vaiyishlach | hamelekh
@@ -247,21 +261,19 @@ vaiyikra | Leshim'i
 vaiyomer | elav
 halo | hishba'tikha | Bayahweh
 va'a'id | bekha | lemor
-beyom | tzetekha | vehalakhta | aneh | va'anah
-yadoa | teda
-ki | mot | tamut
+beyom | tzetekha
+vehalakhta | aneh | va'anah
+yadoa | teda | ki | mot | tamut
 vatomer | elai
 tov | hadavar | shama'eti
 
 2:43
-umadua | lo | shamarta | et | shevu'at | Yahweh
-ve'et | hamitzvah | asher | tziviti | aleikha
+umadua | lo | shamarta | et | shevu'at | Yahweh | ve'et | hamitzvah | asher | tziviti | aleikha
 
 2:44
 vaiyomer | hamelekh | el | Shim'i
-atah | yada'ta | et | kol | hara'ah | asher | yada | levavekha
-asher | asita
-Ledavid | avi | veheshiv | Yahweh | et | ra'atekha | beroshekha
+atah | yada'ta | et | kol | hara'ah | asher | yada | levavekha | asher | asita | Ledavid | avi
+veheshiv | Yahweh | et | ra'atekha | beroshekha
 
 2:45
 vehamelekh | Shelomoh | barukh
@@ -269,6 +281,5 @@ vekhise | David | yihyeh | nakhon | lifnei | Yahweh | ad | olam
 
 2:46
 vaytzav | hamelekh | et | Benayahu | ben | Yehoyada
-vaiyetze | vaiyifga | bo
-vaiyamot
+vaiyetze | vaiyifga | bo | vaiyamot
 vehamamlakhah | Nakhonah | beyad | Shelomoh

@@ -18,9 +18,8 @@ vaiyismach | likrato
 
 19:4
 vaiyechezak | bo | choteno | avi | hana'arah
-vaiyeshev | ito
-sheloshet | yamim | vaiyokhelu | vaiyishtu
-vaiyalinu | sham
+vaiyeshev | ito | sheloshet | yamim
+vaiyokhelu | vaiyishtu | vaiyalinu | sham
 
 19:5
 vayhi | baiyom | harevi'i | vaiyashkimu | vaboker
@@ -31,56 +30,61 @@ ve'achar | telekhu
 
 19:6
 vaiyeshevu | vaiyokhelu | sheneihem | yachdav
-vaiyishtu
-vaiyomer | avi | hana'arah | el | ha'ish
+vaiyishtu | vaiyomer | avi | hana'arah | el | ha'ish
 ho'el | na
-velin | veyitav | libekha
+velin
+veyitav | libekha
 
 19:7
 vaiyakom | ha'ish | lalekhet
 vaiyiftzar | bo | choteno
-vaiyashov
-vaiyalen | sham
+vaiyashov | vaiyalen | sham
 
 19:8
-vaiyashkem | baboker | baiyom | hachamishi
-lalekhet
+vaiyashkem | baboker | baiyom | hachamishi | lalekhet
 vaiyomer | avi | hana'arah
 se'od | na | levavekha
-vehitmahmehu | ad | netot | haiyom | vaiyokhelu | sheneihem
+vehitmahmehu | ad | netot | haiyom
+vaiyokhelu | sheneihem
 
 19:9
-vaiyakom | ha'ish | lalekhet | hu | ufilagsho | vena'aro
+vaiyakom | ha'ish | lalekhet
+hu | ufilagsho | vena'aro
 vaiyomer | lo | choteno | avi | hana'arah
-hineh | na | rafah | haiyom | la'aro | linu | na | hineh | chanot | haiyom | lin | poh | veyitav | levavekha
+hineh | na | rafah | haiyom | la'aro
+linu | na | hineh | chanot | haiyom
+lin | poh
+veyitav | levavekha
 vehishkamtem | machar | ledarkekhem
 vehalakhta | le'ohalekha
 
 19:10
 velo | avah | ha'ish | lalun
 vaiyakom | vaiyelekh | vaiyavo | ad | nokhach | Yevus
-hi | Yerushalim | ve'imo | tzemed | chamorim | chavushim
+hi | Yerushalim
+ve'imo | tzemed | chamorim | chavushim
 ufilagsho | imo
 
 19:11
-hem | im | Yevus | vehaiyom
-rad | me'od | vaiyomer | hana'ar | el | adonav | lekhah | na | venasurah | el | ir | hayvusi | hazot
+hem | im | Yevus | vehaiyom | rad | me'od
+vaiyomer | hana'ar | el | adonav
+lekhah | na
+venasurah | el | ir | hayvusi | hazot
 venalin | bah
 
 19:12
 vaiyomer | elav | adonav
-lo | nasur | el | ir | nakheri | asher | lo | mibenei | Yisra'el
-henah | ve'avarnu | ad | Giv'ah
+lo | nasur | el | ir | nakheri | asher | lo | mibenei | Yisra'el | henah
+ve'avarnu | ad | Giv'ah
 
 19:13
 vaiyomer | lena'aro
-lekhah | venikrevah | be'achad | hamekomot
+lekhah
+venikrevah | be'achad | hamekomot
 velanu | Vagiv'ah | o | Varamah
 
 19:14
-vaiya'avru
-vaiyelekhu
-vatavo | lahem | hashemesh | etzel | Hagiv'ah | asher | Levinyamin
+vaiya'avru | vaiyelekhu | vatavo | lahem | hashemesh | etzel | Hagiv'ah | asher | Levinyamin
 
 19:15
 vaiyasuru | sham | lavo | lalun | Bagiv'ah
@@ -95,8 +99,9 @@ ve'anshei | hamakom | benei | yemini
 
 19:17
 vaiyisa | einav
-vaiyar | et | ha'ish | ha'oreach
-bircho | ha'ir | vaiyomer | ha'ish | hazaken | anah | telekh
+vaiyar | et | ha'ish | ha'oreach | bircho | ha'ir
+vaiyomer | ha'ish | hazaken
+anah | telekh
 ume'ayin | tavo
 
 19:18
@@ -108,37 +113,42 @@ ve'ein | ish | me'asef | oti | habayetah
 
 19:19
 vegam | teven | gam | mispo | yesh | lachamoreinu
-vegam | lechem | vayayin | yesh | li
-vela'amatekha
-velana'ar | im | avadeikha | ein | machsor | kol | davar
+vegam | lechem | vayayin | yesh | li | vela'amatekha | velana'ar | im | avadeikha
+ein | machsor | kol | davar
 
 19:20
-vaiyomer | ha'ish | hazaken | shalom | lakh
-rak | kol | machsorkha | alai | rak | barechov | al | talan
+vaiyomer | ha'ish | hazaken
+shalom | lakh
+rak | kol | machsorkha | alai
+rak | barechov | al | talan
 
 19:21
 vayvi'ehu | leveito
 vaiyibol | lachamorim
 vaiyirchatzu | ragleihem
-vaiyokhelu
-vaiyishtu
+vaiyokhelu | vaiyishtu
 
 19:22
 hemah | meitivim | et | libam
-vehineh | anshei | ha'ir | anshei | venei | veliya'al | Nasabu | et | habayit | mitdapekim | al | hadalet
-vaiyomeru | el | ha'ish | ba'al | habayit | hazaken
-lemor
+vehineh | anshei | ha'ir | anshei | venei | veliya'al | Nasabu | et | habayit
+mitdapekim | al | hadalet
+vaiyomeru | el | ha'ish | ba'al | habayit | hazaken | lemor
 hotze | et | ha'ish | asher | ba | el | beitekha
 veneda'enu
 
 19:23
 vaiyetze | aleihem | ha'ish | ba'al | habayit
-vaiyomer | alehem | al | achai
-al | tare'u | na | acharei | asher | ba | ha'ish | hazeh | al | beiti | al | ta'asu | et | hanevalah | hazot
+vaiyomer | alehem
+al | achai
+al | tare'u | na
+acharei | asher | ba | ha'ish | hazeh | al | beiti
+al | ta'asu | et | hanevalah | hazot
 
 19:24
-hineh | viti | habetulah | ufilagshehu | otzi'ah | na | otam | ve'anu | otam
-va'asu | lahem | hatov | be'eineikhem
+hineh | viti | habetulah | ufilagshehu | otzi'ah | na | otam
+ve'anu | otam
+va'asu | lahem
+hatov | be'eineikhem
 vela'ish | hazeh | lo | ta'asu | devar | hanevalah | hazot
 
 19:25
@@ -150,8 +160,9 @@ vaiyit'alelu | vah | kol | halaylah | ad | haboker
 vayshalechuha | ka'alot | hashachar
 
 19:26
-vatavo | ha'ishah
-lifnot | haboker | vatipol | petach | beit | ha'ish | asher | adoneiha | sham | ad | ha'or
+vatavo | ha'ishah | lifnot | haboker
+vatipol | petach | beit | ha'ish | asher | adoneiha | sham
+ad | ha'or
 
 19:27
 vaiyakom | adoneiha | baboker
@@ -162,7 +173,9 @@ veyadeiha | al | hasaf
 
 19:28
 vaiyomer | eleiha
-kumi | venelekhah | ve'ein | oneh
+kumi
+venelekhah
+ve'ein | oneh
 vaiyikacheha | al | hachamor
 vaiyakom | ha'ish
 vaiyelekh | limkomo
@@ -171,12 +184,16 @@ vaiyelekh | limkomo
 vaiyavo | el | beito
 vaiyikach | et | hama'akhelet
 vaiyachazek | befilagsho
-vaynatecheha | la'atzameiha
-lishneim | asar | netachim | vayshalecheha | bekhol | gevul | Yisra'el
+vaynatecheha | la'atzameiha | lishneim | asar | netachim
+vayshalecheha | bekhol | gevul | Yisra'el
 
 19:30
-vehayah | khol | haro'eh | ve'amar | lo | Nihyetah
-velo | Nir'atah | kazot
-lemiyom | alot | benei | Yisra'el | me'eretz | Mitzrayim | ad | haiyom | hazeh
+vehayah
+khol | haro'eh
+ve'amar
+lo | Nihyetah
+velo | Nir'atah | kazot | lemiyom | alot | benei | Yisra'el | me'eretz | Mitzrayim
+ad | haiyom | hazeh
 simu | lakhem | aleiha
-utzu | vedaberu
+utzu
+vedaberu

@@ -1,5 +1,6 @@
 19:1
-lamnatzeach | mizmor | Ledavid
+lamnatzeach
+mizmor | Ledavid
 
 19:2
 hashamayim | mesaperim | kevod | el
@@ -10,17 +11,18 @@ yom | leyom | yabia | omer
 velaylah | lelaylah | yechaveh | da'at
 
 19:4
-ein | omer | ve'ein | devarim | beli
-nishma | kolam
+ein | omer
+ve'ein | devarim
+beli | nishma | kolam
 
 19:5
 bekhol | ha'aretz | yatza | kavam
-uviktzeh | tevel | mileihem | lashemesh
-sam | ohel | bahem
+uviktzeh | tevel | mileihem
+lashemesh | sam | ohel | bahem
 
 19:6
-vehu | kechaton | yotze | mechupato
-yasis | kegibor | larutz | orach
+vehu | kechaton
+yotze | mechupato | yasis | kegibor | larutz | orach
 
 19:7
 miktzeh | hashamayim | motza'o
@@ -28,34 +30,39 @@ utekufato | al | ketzotam
 ve'ein | nistar | mechamato
 
 19:8
-torat | Yahweh | temimah | meshivat | nafesh
-edut | Yahweh | ne'emanah | machkimat | peti
+torat | Yahweh | temimah
+meshivat | nafesh
+edut | Yahweh | ne'emanah
+machkimat | peti
 
 19:9
-pikudei | Yahweh | yesharim | mesamechei | lev | mitzvat | Yahweh | barah | me'irat | einayim
+pikudei | Yahweh | yesharim
+mesamechei | lev
+mitzvat | Yahweh | barah
+me'irat | einayim
 
 19:10
-yir'at | Yahweh | tehorah | omedet | la'ad | mishpetei | Yahweh | emet
-tzadeku | yachdav
+yir'at | Yahweh | tehorah
+omedet | la'ad
+mishpetei | Yahweh | emet | tzadeku | yachdav
 
 19:11
-hanechemadim | mizaho
-umipaz | rav
-umetukim | midevash
-venofet | tzufim
+hanechemadim | mizaho | umipaz | rav
+umetukim | midevash | venofet | tzufim
 
 19:12
 gam | avdekha | nizhar | bahem | beshameram
 ekev | rav
 
 19:13
-shegi'ot | mi | yavin | ministarot | nakeni
+shegi'ot | mi | yavin
+ministarot | nakeni
 
 19:14
 gam | mizedim | chasokh | avdekha
-al | yimshelu | vi | az | eitam
+al | yimshelu | vi
+az | eitam
 venikeiti | mipesha | rav
 
 19:15
-yihyu | leratzon | imrei | fi | vehegyon | libi | lefaneikha | Yahweh
-tzuri | vego'ali
+yihyu | leratzon | imrei | fi | vehegyon | libi | lefaneikha | Yahweh | tzuri | vego'ali

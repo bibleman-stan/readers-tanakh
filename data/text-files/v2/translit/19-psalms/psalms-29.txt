@@ -1,5 +1,6 @@
 29:1
-mizmor | Ledavid | havu | Layahweh | benei | elim
+mizmor | Ledavid
+havu | Layahweh | benei | elim
 havu | Layahweh | kavod | va'oz
 
 29:2
@@ -8,7 +9,8 @@ hishtachavu | Layahweh | behadrat | kodesh
 
 29:3
 kol | Yahweh | al | hamayim
-el | hakavod | hir'im | Yahweh | al | mayim | rabim
+el | hakavod | hir'im
+Yahweh | al | mayim | rabim
 
 29:4
 kol | Yahweh | bakoach
@@ -19,7 +21,8 @@ kol | Yahweh | shover | arazim
 vayshaber | Yahweh | et | arzei | Halevanon
 
 29:6
-vaiyarkidem | kemov | egel | Levanon | Vesiryon | kemo | ven | re'emim
+vaiyarkidem | kemov | egel
+Levanon | Vesiryon | kemo | ven | re'emim
 
 29:7
 kol | Yahweh | chotzev | lahavot | esh
@@ -29,14 +32,14 @@ kol | Yahweh | yachil | midbar
 yachil | Yahweh | midbar | Kadesh
 
 29:9
-kol | Yahweh | yecholel | aiyalot | vaiyechesof | ye'arot | uveheikhalo | kulo
-omer | kavod
+kol | Yahweh | yecholel | aiyalot
+vaiyechesof | ye'arot
+uveheikhalo | kulo | omer | kavod
 
 29:10
 Yahweh | lamabul | yashav
 vaiyeshev | Yahweh | melekh | le'olam
 
 29:11
-Yahweh
-oz | le'amo | yiten
+Yahweh | oz | le'amo | yiten
 Yahweh | yevarekh | et | amo | vashalom

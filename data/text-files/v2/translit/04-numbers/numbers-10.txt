@@ -1,12 +1,10 @@
 10:1
-vaydaber | Yahweh | el | Mosheh
-lemor
+vaydaber | Yahweh | el | Mosheh | lemor
 
 10:2
-aseh | lekha | shetei | chatzotzrot | kesef | mikshah
-ta'aseh | otam
-vehayu | lekha | lemikra | ha'edah
-ulemasa | et | hamachanot
+aseh | lekha | shetei | chatzotzrot | kesef
+mikshah | ta'aseh | otam
+vehayu | lekha | lemikra | ha'edah | ulemasa | et | hamachanot
 
 10:3
 vetake'u | bahen
@@ -18,11 +16,13 @@ veno'adu | eleikha | hanesi'im | rashei | alfei | Yisra'el
 
 10:5
 uteka'tem | teru'ah
-venase'u | hamachanot | hachonim | kedemah
+venase'u | hamachanot
+hachonim | kedemah
 
 10:6
 uteka'tem | teru'ah | shenit
-venase'u | hamachanot | hachonim | teimanah
+venase'u | hamachanot
+hachonim | teimanah
 teru'ah | yitke'u | lemas'eihem
 
 10:7
@@ -34,17 +34,17 @@ uvenei | Aharon | hakohanim | yitke'u | bachatzotzerot
 vehayu | lakhem | lechukat | olam | ledoroteikhem
 
 10:9
-vekhi | tavo'u | milchamah | be'artzekhem | al | hatzar | hatzorer | etkhem
+vekhi | tavo'u | milchamah | be'artzekhem | al | hatzar
+hatzorer | etkhem
 vahare'otem | bachatzotzerot
 vanizkartem | lifnei | Yahweh | eloheikhem
 venosha'tem | me'oyeveikhem
 
 10:10
-uveyom | simchatkhem | uvemo'adeikhem
-uverashei | chadesheikhem
-uteka'tem | bachatzotzerot | al | oloteikhem
-ve'al | zivchei | shalmeikhem
-vehayu | lakhem | lezikaron | lifnei | eloheikhem | ani | Yahweh | eloheikhem
+uveyom | simchatkhem | uvemo'adeikhem | uverashei | chadesheikhem
+uteka'tem | bachatzotzerot | al | oloteikhem | ve'al | zivchei | shalmeikhem
+vehayu | lakhem | lezikaron | lifnei | eloheikhem
+ani | Yahweh | eloheikhem
 
 10:11
 vayhi | bashanah | hashenit | bachodesh | hasheni | be'esrim | bachodesh | Na'alah | he'anan | me'al | mishkan | ha'edut
@@ -68,9 +68,7 @@ ve'al | tzeva | mateh | benei | Zevulun | Eli'av | ben | Chelon
 
 10:17
 vehurad | hamishkan
-venase'u | venei | Gereshon
-uvenei | Merari
-nose'ei | hamishkan
+venase'u | venei | Gereshon | uvenei | Merari | nose'ei | hamishkan
 
 10:18
 venasa | degel | machaneh | Re'uven | letziv'otam
@@ -98,7 +96,9 @@ ve'al | tzeva | mateh | benei | Menasheh | Gamli'el | ben | Pedah | Tzur
 ve'al | tzeva | mateh | benei | Vinyamin | Avidan | ben | Gid'oni
 
 10:25
-venasa | degel | machaneh | venei | Dan | me'asef | lekhol | hamachanot | letziv'otam
+venasa | degel | machaneh | venei | Dan
+me'asef | lekhol | hamachanot
+letziv'otam
 ve'al | tzeva'o | Achi'ezer | ben | Ammishadai
 
 10:26
@@ -108,33 +108,37 @@ ve'al | tzeva | mateh | benei | Asher | Pag'i'el | ben | Akheran
 ve'al | tzeva | mateh | benei | Naftali | Achira | ben | Einan
 
 10:28
-eleh | mas'ei | venei | Yisra'el | letziv'otam | vaiyisa'u
+eleh | mas'ei | venei | Yisra'el | letziv'otam
+vaiyisa'u
 
 10:29
 vaiyomer | Mosheh | Lechoo | ben | Re'u'el | hamidyani | choten | Mosheh
-nose'im | anachnu | el | hamakom | asher | amar | Yahweh | oto
-eten | lakhem | lekhah | itanu | vehetavnu | lakh
+nose'im | anachnu | el | hamakom | asher | amar | Yahweh
+oto | eten | lakhem
+lekhah | itanu
+vehetavnu | lakh
 ki | Yahweh | diber | tov | al | Yisra'el
 
 10:30
 vaiyomer | elav
-lo | elekh | ki | im | el | artzi
-ve'el | moladti | elekh
+lo | elekh
+ki | im | el | artzi | ve'el | moladti | elekh
 
 10:31
-vaiyomer | al | na
-ta'azo | otanu
+vaiyomer
+al | na | ta'azo | otanu
 ki | al | ken | yada'ta | chanotenu | bamidbar
 vehayita | lanu | le'einayim
 
 10:32
-vehayah | ki | telekh | imanu
-vehayah | hatov | hahu | asher | yeitiv | Yahweh | imanu | vehetavnu | lakh
+vehayah
+ki | telekh | imanu
+vehayah | hatov | hahu | asher | yeitiv | Yahweh | imanu
+vehetavnu | lakh
 
 10:33
 vaiyis'u | mehar | Yahweh | derekh | sheloshet | yamim
-va'aron | berit | Yahweh | nosea | lifneihem | derekh | sheloshet | yamim
-latur | lahem | menuchah
+va'aron | berit | Yahweh | nosea | lifneihem | derekh | sheloshet | yamim | latur | lahem | menuchah
 
 10:34
 va'anan | Yahweh | aleihem | yomam | benase'am | min | hamachaneh
@@ -142,8 +146,11 @@ va'anan | Yahweh | aleihem | yomam | benase'am | min | hamachaneh
 10:35
 vayhi | binsoa | ha'aron
 vaiyomer | Mosheh
-kumah | Yahweh | veyafutzu | oyeveikha
+kumah | Yahweh
+veyafutzu | oyeveikha
 veyanusu | mesan'eikha | mipaneikha
 
 10:36
-uvenuchoh | yomar | shuvah | Yahweh | rivot | alfei | Yisra'el
+uvenuchoh | yomar
+shuvah | Yahweh
+rivot | alfei | Yisra'el

@@ -1,5 +1,6 @@
 19:1
-bachodesh | hashelishi | letzet | benei | Yisra'el | me'eretz | Mitzrayim | baiyom | hazeh | ba'u | midbar | Sinai
+bachodesh | hashelishi | letzet | benei | Yisra'el | me'eretz | Mitzrayim
+baiyom | hazeh | ba'u | midbar | Sinai
 
 19:2
 vaiyis'u | Merefidim
@@ -9,9 +10,9 @@ vaiyichan | sham | Yisra'el | neged | hahar
 
 19:3
 Umosheh | alah | el | ha'elohim
-vaiyikra | elav | Yahweh | min | hahar
-lemor
-koh | tomar | leveit | Ya'ako | vetageid | livnei | Yisra'el
+vaiyikra | elav | Yahweh | min | hahar | lemor
+koh | tomar | leveit | Ya'ako
+vetageid | livnei | Yisra'el
 
 19:4
 atem | re'item | asher | asiti | Lemitzrayim
@@ -19,13 +20,14 @@ va'esa | etkhem | al | kanfei | nesharim
 va'avi | etkhem | elai
 
 19:5
-ve'atah | im | shamoa | tishme'u | bekoli
+ve'atah
+im | shamoa | tishme'u | bekoli
 ushemartem | et | beriti
-vihyitem | li | segulah | mikol | ha'amim | ki | li | kol | ha'aretz
+vihyitem | li | segulah | mikol | ha'amim
+ki | li | kol | ha'aretz
 
 19:6
-ve'atem | tihyu | li | mamlekhet | kohanim
-vegoy | kadoosh
+ve'atem | tihyu | li | mamlekhet | kohanim | vegoy | kadoosh
 eleh | hadevarim | asher | tedaber | el | benei | Yisra'el
 
 19:7
@@ -34,21 +36,23 @@ vaiyikra | leziknei | ha'am
 vaiyasem | lifneihem | et | kol | hadevarim | ha'eleh | asher | tzivahu | Yahweh
 
 19:8
-vaiya'anu | khol | ha'am | yachdav | vaiyomeru
+vaiya'anu | khol | ha'am | yachdav
+vaiyomeru
 kol | asher | diber | Yahweh | na'aseh
 vaiyashev | Mosheh | et | divrei | ha'am | el | Yahweh
 
 19:9
 vaiyomer | Yahweh | el | Mosheh
 hineh | anokhi | ba | eleikha | be'av | he'anan
-ba'avur | yishma | ha'am | bedaberi | imakh | vegam | bekha
-ya'aminu | le'olam
+ba'avur | yishma | ha'am | bedaberi | imakh
+vegam | bekha | ya'aminu | le'olam
 vaiyaged | Mosheh | et | divrei | ha'am | el | Yahweh
 
 19:10
 vaiyomer | Yahweh | el | Mosheh
 lekh | el | ha'am
-vekidashtam | haiyom | umachar | vekhibesu | simlotam
+vekidashtam | haiyom | umachar
+vekhibesu | simlotam
 
 19:11
 vehayu | nekhonim | laiyom | hashelishi
@@ -61,11 +65,13 @@ hishameru | lakhem | alot | bahar | unegoa | bekatzehu
 kol | hanogea | bahar | mot | yumat
 
 19:13
-lo | tiga | bo | yad | ki | sakol | yisakel
+lo | tiga | bo | yad
+ki | sakol | yisakel
 ov | yaroh | yiyareh
-im | behemah | im | ish
-lo | yichyeh
-bimshokh | haiyovel | hemah | ya'alu | vahar
+im | behemah
+im | ish
+lo | yichyeh | bimshokh | haiyovel
+hemah | ya'alu | vahar
 
 19:14
 vaiyered | Mosheh | min | hahar | el | ha'am
@@ -74,16 +80,19 @@ vaykhabesu | simlotam
 
 19:15
 vaiyomer | el | ha'am
-heyu | nekhonim | lishloshet | yamim | al | tigeshu | el | ishah
+heyu | nekhonim | lishloshet | yamim
+al | tigeshu | el | ishah
 
 19:16
-vayhi | vaiyom | hashelishi
-bihyot | haboker | vayhi | kolot | uverakim | ve'anan | kaved | al | hahar | vekol | shofar | chazak | me'od
+vayhi | vaiyom | hashelishi | bihyot | haboker
+vayhi
+kolot | uverakim | ve'anan | kaved | al | hahar
+vekol | shofar | chazak | me'od
 vaiyecherad | kol | ha'am | asher | bamachaneh
 
 19:17
-vaiyotze | Mosheh | et | ha'am
-likrat | ha'elohim | min | hamachaneh
+vaiyotze | Mosheh | et | ha'am | likrat | ha'elohim
+min | hamachaneh
 vaiyityatzevu | betachtit | hahar
 
 19:18
@@ -93,23 +102,27 @@ vaiya'al | ashano | ke'eshen | hakivshan
 vaiyecherad | kol | hahar | me'od
 
 19:19
-vayhi | kol | hashofar
-holekh | vechazek | me'od | Mosheh | yedaber
+vayhi | kol | hashofar | holekh
+vechazek | me'od
+Mosheh | yedaber
 veha'elohim | ya'anenu | vekol
 
 19:20
-vaiyered | Yahweh | al | har | Sinai
-el | rosh | hahar | vaiyikra | Yahweh | Lemosheh | el | rosh | hahar
+vaiyered | Yahweh | al | har | Sinai | el | rosh | hahar
+vaiyikra | Yahweh | Lemosheh | el | rosh | hahar
 vaiya'al | Mosheh
 
 19:21
 vaiyomer | Yahweh | el | Mosheh
 red
-ha'ed | ba'am | pen | yehersu | el | Yahweh
-lir'ot | venafal | mimenu | rav
+ha'ed | ba'am
+pen | yehersu | el | Yahweh | lir'ot
+venafal | mimenu | rav
 
 19:22
-vegam | hakohanim | hanigashim | el | Yahweh | yitkadashu | pen | yifrotz | bahem | Yahweh
+vegam | hakohanim
+hanigashim | el | Yahweh | yitkadashu
+pen | yifrotz | bahem | Yahweh
 
 19:23
 vaiyomer | Mosheh | el | Yahweh

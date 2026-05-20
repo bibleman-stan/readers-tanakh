@@ -1,5 +1,6 @@
 136:1
-hodu | Layahweh | ki | tov
+hodu | Layahweh
+ki | tov
 ki | le'olam | chasdo
 
 136:2
@@ -27,7 +28,8 @@ le'oseh | orim | gedolim
 ki | le'olam | chasdo
 
 136:8
-et | hashemesh | lememshelet | baiyom | ki | le'olam | chasdo
+et | hashemesh | lememshelet | baiyom
+ki | le'olam | chasdo
 
 136:9
 et | haiyareach | vekhokhavim | lememshelot | balayelah
@@ -42,8 +44,7 @@ vaiyotze | Yisra'el | mitokham
 ki | le'olam | chasdo
 
 136:12
-beyad | chazakah
-uvizroa | netuyah
+beyad | chazakah | uvizroa | netuyah
 ki | le'olam | chasdo
 
 136:13
@@ -87,8 +88,7 @@ nachalah | Leyisra'el | avdo
 ki | le'olam | chasdo
 
 136:23
-shebeshiflenu | zakhar | lanu
-ki | le'olam | chasdo
+shebeshiflenu | zakhar | lanu | ki | le'olam | chasdo
 
 136:24
 vaiyifrekenu | mitzareinu

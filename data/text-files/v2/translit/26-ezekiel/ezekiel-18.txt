@@ -1,9 +1,9 @@
 18:1
-vayhi | devar | Yahweh | elai
-lemor
+vayhi | devar | Yahweh | elai | lemor
 
 18:2
-mah | lakhem | atem | moshelim | et | hamashal | hazeh | al | admat | Yisra'el | lemor
+mah | lakhem
+atem | moshelim | et | hamashal | hazeh | al | admat | Yisra'el | lemor
 avot | yokhelu | voser
 veshinei | habanim | tikheinah
 
@@ -12,78 +12,90 @@ chai | ani | ne'um | Adonai | Yahweh
 im | yihyeh | lakhem | od | meshol | hamashal | hazeh | Beyisra'el
 
 18:4
-hen | kol | hanefashot | li | henah | kenefesh | ha'av
-ukhenefesh | haben | li | henah
-hanefesh | hachotet | hi | tamut
+hen | kol | hanefashot | li | henah
+kenefesh | ha'av | ukhenefesh | haben | li | henah
+hanefesh | hachotet
+hi | tamut
 
 18:5
-ve'ish | ki | yihyeh | tzadik | ve'asah | mishpat | utzedakah
+ve'ish | ki | yihyeh | tzadik
+ve'asah | mishpat | utzedakah
 
 18:6
-el | heharim | lo | akhal | ve'einav | lo | nasa | el | gilulei | beit | Yisra'el
+el | heharim | lo | akhal
+ve'einav | lo | nasa | el | gilulei | beit | Yisra'el
 ve'et | eshet | re'ehu | lo | time
-ve'el | ishah | nidah
-lo | yikrav
+ve'el | ishah | nidah | lo | yikrav
 
 18:7
 ve'ish | lo | yoneh
-chavolato | chov | yashiv | gezelah
-lo | yigzol | lachmo | lera'ev | yiten
+chavolato | chov | yashiv
+gezelah | lo | yigzol
+lachmo | lera'ev | yiten
 ve'eirom | yekhaseh | baged
 
 18:8
-baneshekh | lo | yiten | vetarbit | lo | yikach | me'avel
-yashiv | yado
+baneshekh | lo | yiten
+vetarbit | lo | yikach
+me'avel | yashiv | yado
 mishpat | emet | ya'aseh | bein | ish | le'ish
 
 18:9
 bechukotai | yehalekh
 umishpatai | shamar | la'asot | emet
-tzadik | hu | chayoh | yichyeh
+tzadik | hu
+chayoh | yichyeh
 ne'um | Adonai | Yahweh
 
 18:10
-veholid | ben | paritz | shofekh | dam
+veholid | ben | paritz
+shofekh | dam
 ve'asah | ach | me'achad | me'eleh
 
 18:11
-vehu | et | kol | eleh
-lo | asah | ki | gam | el | heharim | akhal
-ve'et | eshet | re'ehu
-time
+vehu | et | kol | eleh | lo | asah
+ki | gam | el | heharim | akhal
+ve'et | eshet | re'ehu | time
 
 18:12
-ani | ve'evyon | honah | gezelot | gazal | chavol
-lo | yashiv
-ve'el | hagilulim | nasa | einav | to'evah
-asah
+ani | ve'evyon | honah
+gezelot | gazal
+chavol | lo | yashiv
+ve'el | hagilulim | nasa | einav
+to'evah | asah
 
 18:13
-baneshekh | natan | vetarbit | lakach
+baneshekh | natan
+vetarbit | lakach
 vachai
-lo | yichyeh | et | kol | hato'evot | ha'eleh | asah
-mot | yumat | damav
-bo | yihyeh
+lo | yichyeh
+et | kol | hato'evot | ha'eleh | asah
+mot | yumat
+damav | bo | yihyeh
 
 18:14
-vehineh | holid | ben | vaiyar | et | kol | chatot | aviv | asher | asah
+vehineh | holid | ben
+vaiyar | et | kol | chatot | aviv | asher | asah
 vaiyir'eh
 velo | ya'aseh | kahen
 
 18:15
-al | heharim | lo | akhal | ve'einav | lo | nasa | el | gilulei | beit | Yisra'el | et | eshet | re'ehu
-lo | time
+al | heharim | lo | akhal
+ve'einav | lo | nasa | el | gilulei | beit | Yisra'el
+et | eshet | re'ehu | lo | time
 
 18:16
-ve'ish | lo | honah | chavol | lo | chaval
+ve'ish | lo | honah
+chavol | lo | chaval
 ugezelah | lo | gazal
 lachmo | lera'ev | natan
 ve'erom | kisah | vaged
 
 18:17
-me'ani | heshiv | yado | neshekh | vetarbit | lo | lakach
-mishpatai | asah | bechukotai
-halakh
+me'ani | heshiv | yado
+neshekh | vetarbit | lo | lakach
+mishpatai | asah
+bechukotai | halakh
 hu | lo | yamut | ba'avon | aviv
 chayoh | yichyeh
 
@@ -93,21 +105,27 @@ va'asher | lo | tov | asah | betokh | amav
 vehineh | met | ba'avono
 
 18:19
-va'amartem | madua | lo | nasa | haben | ba'avon | ha'av
-vehaben | mishpat | utzedakah | asah | et | kol | chukotai | shamar | vaiya'aseh | otam
+va'amartem
+madua | lo | nasa | haben | ba'avon | ha'av
+vehaben | mishpat | utzedakah | asah
+et | kol | chukotai | shamar
+vaiya'aseh | otam
 chayoh | yichyeh
 
 18:20
-hanefesh | hachotet | hi | tamut
-ben | lo | yisa | ba'avon | ha'av | ve'av | lo | yisa | ba'avon | haben
+hanefesh | hachotet
+hi | tamut
+ben | lo | yisa | ba'avon | ha'av
+ve'av | lo | yisa | ba'avon | haben
 tzidkat | hatzadik | alav | tihyeh
-verish'at | harasha
-alav | tihyeh
+verish'at | harasha | alav | tihyeh
 
 18:21
-veharasha | ki | yashuv | mikol | chatatov | asher | asah
+veharasha
+ki | yashuv | mikol | chatatov | asher | asah
 veshamar | et | kol | chukotai
-ve'asah | mishpat | utzedakah | chayoh | yichyeh
+ve'asah | mishpat | utzedakah
+chayoh | yichyeh
 lo | yamut
 
 18:22
@@ -116,32 +134,37 @@ lo | yizakheru | lo
 betzidkato | asher | asah | yichyeh
 
 18:23
-hechafotz | echpotz | mot | rasha
-ne'um | Adonai | Yahweh
-halo | beshuvo | miderakhav | vechayah
+hechafotz | echpotz | mot | rasha | ne'um | Adonai | Yahweh
+halo | beshuvo | miderakhav
+vechayah
 
 18:24
-uveshuv | tzadik | mitzidkato | ve'asah | avel
-kekhol | hato'evot | asher | asah | harasha | ya'aseh
+uveshuv | tzadik | mitzidkato
+ve'asah | avel | kekhol | hato'evot | asher | asah | harasha | ya'aseh
 vachai
-kol | tzidkatov | asher | asah | lo | tizakharnah
+kol | tzidkatov | asher | asah
+lo | tizakharnah
 bema'alo | asher | ma'al
 uvechatato | asher | chata
 bam | yamut
 
 18:25
 va'amartem
-lo | yitakhen | derekh | Adonai | shim'u | na | beit | Yisra'el
-hadarki | lo | yitakhen | halo | darkheikhem
-lo | yitakhenu
+lo | yitakhen | derekh | Adonai
+shim'u | na | beit | Yisra'el
+hadarki | lo | yitakhen
+halo | darkheikhem | lo | yitakhenu
 
 18:26
-beshuv | tzadik | mitzidkato | ve'asah | avel
-umet | aleihem | be'avlo | asher | asah | yamut
+beshuv | tzadik | mitzidkato
+ve'asah | avel
+umet | aleihem
+be'avlo | asher | asah | yamut
 
 18:27
 uveshuv | rasha | merish'ato | asher | asah
-vaiya'as | mishpat | utzedakah | hu | et | nafsho | yechaiyeh
+vaiya'as | mishpat | utzedakah
+hu | et | nafsho | yechaiyeh
 
 18:28
 vaiyir'eh | vaiyashov | mikol | pesha'av | asher | asah
@@ -151,20 +174,21 @@ lo | yamut
 18:29
 ve'ameru | beit | Yisra'el
 lo | yitakhen | derekh | Adonai
-haderakhai | lo | yitakhenu | beit | Yisra'el | halo | darkheikhem
-lo | yitakhen
+haderakhai | lo | yitakhenu | beit | Yisra'el
+halo | darkheikhem | lo | yitakhen
 
 18:30
-lakhen | ish | kidrakhav | eshpot | etkhem | beit | Yisra'el
+lakhen
+ish | kidrakhav | eshpot | etkhem | beit | Yisra'el
 ne'um | Adonai | Yahweh
-shuvu | vehashivu | mikol | pish'eikhem
+shuvu
+vehashivu | mikol | pish'eikhem
 velo | yihyeh | lakhem | lemikhshol | avon
 
 18:31
 hashlikhu | me'aleikhem | et | kol | pish'eikhem | asher | pesha'tem | bam
 va'asu | lakhem | lev | chadash | veruach | chadashah
-velamah | tamutu
-beit | Yisra'el
+velamah | tamutu | beit | Yisra'el
 
 18:32
 ki | lo | echpotz | bemot | hamet | ne'um | Adonai | Yahweh

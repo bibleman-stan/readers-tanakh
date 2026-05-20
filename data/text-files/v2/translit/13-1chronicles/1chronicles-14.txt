@@ -1,8 +1,6 @@
 14:1
 vaiyishlach | Chiram | melekh | Tzor | mal'akhim | el | David
-va'atzei | arazim
-vecharashei | kir
-vecharashei | etzim | livnot | lo | bayit
+va'atzei | arazim | vecharashei | kir | vecharashei | etzim | livnot | lo | bayit
 
 14:2
 vaiyeda | David | ki | hekhino | Yahweh | lemelekh | al | Yisra'el
@@ -32,12 +30,15 @@ vaiyishma | David
 vaiyetze | lifneihem
 
 14:9
-ufelishtim | ba'u | vaiyifshetu | be'emek | refa'im
+ufelishtim | ba'u
+vaiyifshetu | be'emek | refa'im
 
 14:10
-vaiyish'al | David | belohim
-lemor | ha'e'eleh | al | pelishtiyim | unetatam
-beyadi | vaiyomer | lo | Yahweh | aleh
+vaiyish'al | David | belohim | lemor
+ha'e'eleh | al | pelishtiyim
+unetatam | beyadi
+vaiyomer | lo | Yahweh
+aleh
 unetatim | beyadekha
 
 14:11
@@ -58,17 +59,19 @@ vaiyifshetu | ba'emek
 14:14
 vaiyish'al | od | David | belohim
 vaiyomer | lo | ha'elohim
-lo | ta'aleh | achareihem | hasev | me'aleihem
+lo | ta'aleh | achareihem
+hasev | me'aleihem
 uvata | lahem | mimul | habekha'im
 
 14:15
-vihi | keshame'akha | et | kol | hatze'adah | berashei | habekha'im | az | tetze | vamilchamah
-ki | yatza | ha'elohim | lefaneikha
-lehakot | et | machaneh | felishtim
+vihi | keshame'akha | et | kol | hatze'adah | berashei | habekha'im
+az | tetze | vamilchamah
+ki | yatza | ha'elohim | lefaneikha | lehakot | et | machaneh | felishtim
 
 14:16
-vaiya'as | David | ka'asher | tzivahu
-ha'elohim | vaiyaku | et | machaneh | felishtim | Migiv'on | ve'ad | Gazerah
+vaiya'as | David
+ka'asher | tzivahu | ha'elohim
+vaiyaku | et | machaneh | felishtim | Migiv'on | ve'ad | Gazerah
 
 14:17
 vaiyetze | shem | David | bekhol | ha'aratzot

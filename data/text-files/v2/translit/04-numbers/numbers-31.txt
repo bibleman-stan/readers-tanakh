@@ -1,24 +1,20 @@
 31:1
-vaydaber | Yahweh | el | Mosheh
-lemor
+vaydaber | Yahweh | el | Mosheh | lemor
 
 31:2
 nekom | nikmat | benei | Yisra'el | me'et | hamidyanim
 achar | te'asef | el | ameikha
 
 31:3
-vaydaber | Mosheh | el | ha'am
-lemor | hechaltzu | me'itekhem | anashim | latzava
+vaydaber | Mosheh | el | ha'am | lemor
+hechaltzu | me'itekhem | anashim | latzava
 veyihyu | al | Midyan | latet | nikmat | Yahweh | Bemidyan
 
 31:4
-elef | lamateh
-elef | lamateh | lekhol | matot | Yisra'el
-tishlechu | latzava
+elef | lamateh | elef | lamateh | lekhol | matot | Yisra'el | tishlechu | latzava
 
 31:5
-vaiyimaseru | me'alfei | Yisra'el | elef | lamateh
-sheneim | asar | elef | chalutzei | tzava
+vaiyimaseru | me'alfei | Yisra'el | elef | lamateh | sheneim | asar | elef | chalutzei | tzava
 
 31:6
 vaiyishlach | otam | Mosheh | elef | lamateh | latzava
@@ -31,8 +27,7 @@ ka'asher | tzivah | Yahweh | et | Mosheh
 vaiyahargu | kol | zakhar
 
 31:8
-ve'et | malkhei | Midyan | haregu | al | chaleihem | et | Evi | ve'et | Rekem | ve'et | Tzur | ve'et | Chur | ve'et | Reva
-chameshet | malkhei | Midyan
+ve'et | malkhei | Midyan | haregu | al | chaleihem | et | Evi | ve'et | Rekem | ve'et | Tzur | ve'et | Chur | ve'et | Reva | chameshet | malkhei | Midyan
 ve'et | Bil'am | ben | Be'or | haregu | becharev
 
 31:9
@@ -40,70 +35,64 @@ vaiyishbu | venei | Yisra'el | et | neshei | Midyan | ve'et | tapam
 ve'et | kol | behemtam | ve'et | kol | miknehem | ve'et | kol | cheilam | bazazu
 
 31:10
-ve'et | kol | areihem | bemooshevotam
-ve'et | kol | tirotam | sarefu | ba'esh
+ve'et | kol | areihem | bemooshevotam | ve'et | kol | tirotam | sarefu | ba'esh
 
 31:11
-vaiyikchu | et | kol | hashalal | ve'et | kol | hamalkoach | ba'adam
-uvabehemah
+vaiyikchu | et | kol | hashalal | ve'et | kol | hamalkoach | ba'adam | uvabehemah
 
 31:12
-vaiyavi'u | el | Mosheh
-ve'el | El'azar | hakohen
-ve'el | adat | benei | Yisra'el | et | hashevi | ve'et | hamalkoach | ve'et | hashalal
-el | hamachaneh | el | Arvot | Mo'av | asher | al | Yarden | Yerecho
+vaiyavi'u | el | Mosheh | ve'el | El'azar | hakohen | ve'el | adat | benei | Yisra'el | et | hashevi | ve'et | hamalkoach | ve'et | hashalal | el | hamachaneh | el | Arvot | Mo'av | asher | al | Yarden | Yerecho
 
 31:13
-vaiyetze'u | Mosheh | Ve'el'azar | hakohen
-vekhol | nesi'ei | ha'edah | likratam | el | michutz | lamachaneh
+vaiyetze'u | Mosheh | Ve'el'azar | hakohen | vekhol | nesi'ei | ha'edah | likratam
+el | michutz | lamachaneh
 
 31:14
-vaiyiktzof | Mosheh | al | pekudei | hechayil
-sarei | ha'alafim | vesarei | hame'ot | haba'im | mitzeva | hamilchamah
+vaiyiktzof | Mosheh | al | pekudei | hechayil | sarei | ha'alafim | vesarei | hame'ot
+haba'im | mitzeva | hamilchamah
 
 31:15
 vaiyomer | aleihem | Mosheh
 hachiyitem | kol | nekevah
 
 31:16
-hen | henah | hayu | livnei | Yisra'el | bidvar | Bil'am
-limsor | ma'al | Bayahweh | al | devar | Pe'or | vatehi | hamagefah | ba'adat | Yahweh
+hen | henah | hayu | livnei | Yisra'el | bidvar | Bil'am | limsor | ma'al | Bayahweh | al | devar | Pe'or
+vatehi | hamagefah | ba'adat | Yahweh
 
 31:17
-ve'atah | hirgu | khol | zakhar | bataf
-vekhol | ishah | yoda'at | ish | lemishkav | zakhar
+ve'atah
+hirgu | khol | zakhar | bataf
+vekhol | ishah
+yoda'at | ish | lemishkav | zakhar
 harogu
 
 31:18
-vekhol | hataf | banashim | asher | lo | yade'u
-mishkav | zakhar | hachayu | lakhem
+vekhol | hataf | banashim | asher | lo | yade'u | mishkav | zakhar
+hachayu | lakhem
 
 31:19
 ve'atem | chanu | michutz | lamachaneh | shiv'at | yamim
 kol | horeg | nefesh
-vekhol | nogea | bechalal | titchate'u | baiyom | hashelishi
-uvaiyom | hashevi'i
-atem | ushevikhem
+vekhol
+nogea | bechalal
+titchate'u | baiyom | hashelishi | uvaiyom | hashevi'i | atem | ushevikhem
 
 31:20
-vekhol | beged | vekhol | keli | or
-vekhol | ma'aseh | izim
-vekhol | keli | etz | titchata'u
+vekhol | beged | vekhol | keli | or | vekhol | ma'aseh | izim | vekhol | keli | etz | titchata'u
 
 31:21
-vaiyomer | El'azar | hakohen | el | anshei | hatzava | haba'im | lamilchamah
-zot | chukat | hatorah
-asher | tzivah | Yahweh | et | Mosheh
+vaiyomer | El'azar | hakohen | el | anshei | hatzava
+haba'im | lamilchamah
+zot | chukat | hatorah | asher | tzivah | Yahweh | et | Mosheh
 
 31:22
 akh | et | hazahav | ve'et | hakasef | et | hanechoshet | et | habarzel | et | habedil | ve'et | ha'ofaret
 
 31:23
-kol | davar | asher | yavo | va'esh
-ta'aviru | va'esh | vetaher
+kol | davar | asher | yavo | va'esh | ta'aviru | va'esh
+vetaher
 akh | bemei | nidah | yitchata
-vekhol | asher | lo | yavo | ba'esh
-ta'aviru | vamayim
+vekhol | asher | lo | yavo | ba'esh | ta'aviru | vamayim
 
 31:24
 vekhibastem | bigdeikhem | baiyom | hashevi'i
@@ -111,111 +100,94 @@ utehartem
 ve'achar | tavo'u | el | hamachaneh
 
 31:25
-vaiyomer | Yahweh | el | Mosheh
-lemor
+vaiyomer | Yahweh | el | Mosheh | lemor
 
 31:26
-sa | et | rosh | malkoach | hashevi | ba'adam
-uvabehemah
-atah | Ve'el'azar | hakohen
-verashei | avot | ha'edah
+sa | et | rosh | malkoach | hashevi | ba'adam | uvabehemah | atah | Ve'el'azar | hakohen | verashei | avot | ha'edah
 
 31:27
-vechatzita | et | hamalkoach | bein | tofesei | hamilchamah | haiyotze'im | latzava
+vechatzita | et | hamalkoach | bein | tofesei | hamilchamah
+haiyotze'im | latzava
 uvein | kol | ha'edah
 
 31:28
-vaharemota | mekhes | Layahweh | me'et | anshei | hamilchamah | haiyotze'im | latzava
-echad | nefesh | mechamesh | hame'ot | min | ha'adam
-umin | habakar
-umin | hachamorim
-umin | hatzon
+vaharemota | mekhes | Layahweh | me'et | anshei | hamilchamah
+haiyotze'im | latzava
+echad | nefesh | mechamesh | hame'ot | min | ha'adam | umin | habakar | umin | hachamorim | umin | hatzon
 
 31:29
 mimachatzitam | tikachu
 venatatah | Le'el'azar | hakohen | terumat | Yahweh
 
 31:30
-umimachatzit | benei | Yisra'el | tikach | echad | achuz | min | hachamishim | min | ha'adam | min | habakar | min | hachamorim
-umin | hatzon
-mikol | habehemah | venatatah | otam | lalviyim | shomerei | mishmeret | mishkan | Yahweh
+umimachatzit | benei | Yisra'el | tikach | echad | achuz | min | hachamishim | min | ha'adam | min | habakar | min | hachamorim | umin | hatzon | mikol | habehemah
+venatatah | otam | lalviyim | shomerei | mishmeret | mishkan | Yahweh
 
 31:31
 vaiya'as | Mosheh | Ve'el'azar | hakohen
 ka'asher | tzivah | Yahweh | et | Mosheh
 
 31:32
-vayhi | hamalkoach | yeter | habaz | asher | bazezu
-am | hatzava
+vayhi | hamalkoach | yeter | habaz | asher | bazezu | am | hatzava
 tzon | shesh | me'ot | elef | veshiv'im | elef | vachameshet | alafim
 
 31:33
-uvakar
-shenayim | veshiv'im | alef
+uvakar | shenayim | veshiv'im | alef
 
 31:34
-vachamorim
-echad | veshishim | alef
+vachamorim | echad | veshishim | alef
 
 31:35
 venefesh | adam | min | hanashim | asher | lo | yade'u | mishkav | zakhar
 kol | nefesh | shenayim | usheloshim | alef
 
 31:36
-vatehi | hamechetzah | chelek | haiyotze'im | batzava | mispar | hatzon | shelosh | me'ot | elef | usheloshim | elef
-veshiv'at | alafim | vachamesh | me'ot
+vatehi | hamechetzah | chelek | haiyotze'im | batzava
+mispar | hatzon | shelosh | me'ot | elef | usheloshim | elef | veshiv'at | alafim | vachamesh | me'ot
 
 31:37
 vayhi | hamekhes | Layahweh | min | hatzon | shesh | me'ot | chamesh | veshiv'im
 
 31:38
-vehabakar
-shishah | usheloshim | alef | umikhsam | Layahweh
-shenayim | veshiv'im
+vehabakar | shishah | usheloshim | alef
+umikhsam | Layahweh | shenayim | veshiv'im
 
 31:39
-vachamorim
-sheloshim | elef | vachamesh | me'ot
-umikhsam | Layahweh
-echad | veshishim
+vachamorim | sheloshim | elef | vachamesh | me'ot
+umikhsam | Layahweh | echad | veshishim
 
 31:40
-venefesh | adam
-shishah | asar | alef | umikhsam | Layahweh
-shenayim | usheloshim | nafesh
+venefesh | adam | shishah | asar | alef
+umikhsam | Layahweh | shenayim | usheloshim | nafesh
 
 31:41
 vaiyiten | Mosheh | et | mekhes | terumat | Yahweh | Le'el'azar | hakohen
 ka'asher | tzivah | Yahweh | et | Mosheh
 
 31:42
-umimachatzit | benei | Yisra'el | asher | chatzah | Mosheh | min | ha'anashim | hatzoe'im
+umimachatzit | benei | Yisra'el | asher | chatzah | Mosheh | min | ha'anashim
+hatzoe'im
 
 31:43
-vatehi | mechetzat | ha'edah | min | hatzon
-shelosh | me'ot | elef | usheloshim | elef | shiv'at | alafim | vachamesh | me'ot
+vatehi | mechetzat | ha'edah | min | hatzon | shelosh | me'ot | elef | usheloshim | elef | shiv'at | alafim | vachamesh | me'ot
 
 31:44
-uvakar
-shishah | usheloshim | alef
+uvakar | shishah | usheloshim | alef
 
 31:45
-vachamorim
-sheloshim | elef | vachamesh | me'ot
+vachamorim | sheloshim | elef | vachamesh | me'ot
 
 31:46
-venefesh | adam
-shishah | asar | alef
+venefesh | adam | shishah | asar | alef
 
 31:47
-vaiyikach | Mosheh | mimachatzit | benei | Yisra'el | et | ha'achuz | echad | min | hachamishim
-min | ha'adam | umin | habehemah
+vaiyikach | Mosheh | mimachatzit | benei | Yisra'el | et | ha'achuz | echad | min | hachamishim | min | ha'adam | umin | habehemah
 vaiyiten | otam | lalviyim | shomerei | mishmeret | mishkan | Yahweh
 ka'asher | tzivah | Yahweh | et | Mosheh
 
 31:48
-vaiyikrevu | el | Mosheh | hapekudim | asher | le'alfei | hatzava | sarei | ha'alafim
-vesarei | hame'ot
+vaiyikrevu | el | Mosheh | hapekudim | asher | le'alfei | hatzava
+sarei | ha'alafim | vesarei | hame'ot
 
 31:49
 vaiyomeru | el | Mosheh
@@ -223,22 +195,21 @@ avadeikha | nase'u | et | rosh | anshei | hamilchamah | asher | beyadenu
 velo | Nifkad | mimenu | ish
 
 31:50
-vanakrev | et | kareban | Yahweh | ish | asher | matza | kheli | zahav | etz'adah | vetzamid | taba'at | agil
-vekhumaz | lekhaper | al | nafshoteinu
-lifnei | Yahweh
+vanakrev | et | kareban | Yahweh
+ish | asher | matza
+kheli | zahav | etz'adah | vetzamid | taba'at | agil | vekhumaz | lekhaper | al | nafshoteinu | lifnei | Yahweh
 
 31:51
 vaiyikach | Mosheh | Ve'el'azar | hakohen | et | hazahav | me'itam | kol | keli | ma'aseh
 
 31:52
 vayhi | kol | zehav | haterumah | asher | herimu | Layahweh
-shishah | asar | elef | sheva | me'ot | vachamishim | shakel | me'et | sarei | ha'alafim
-ume'et | sarei | hame'ot
+shishah | asar | elef | sheva | me'ot | vachamishim | shakel | me'et | sarei | ha'alafim | ume'et | sarei | hame'ot
 
 31:53
-anshei | hatzava | bazezu | ish | lo
+anshei | hatzava | bazezu
+ish | lo
 
 31:54
-vaiyikach | Mosheh | Ve'el'azar | hakohen | et | hazahav
-me'et | sarei | ha'alafim | vehame'ot
+vaiyikach | Mosheh | Ve'el'azar | hakohen | et | hazahav | me'et | sarei | ha'alafim | vehame'ot
 vaiyavi'u | oto | el | ohel | mo'ed | zikaron | livnei | Yisra'el | lifnei | Yahweh

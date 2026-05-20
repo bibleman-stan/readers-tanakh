@@ -1,7 +1,8 @@
 46:1
-kara | Bel | kores | Nevo
-hayu | atzabeihem | lachaiyah
-velabehemah | nesu'oteikhem | amusot | masa | la'ayefah
+kara | Bel
+kores | Nevo
+hayu | atzabeihem | lachaiyah | velabehemah
+nesu'oteikhem | amusot | masa | la'ayefah
 
 46:2
 karesu | khare'u | yachdav
@@ -9,61 +10,71 @@ lo | yakhelu | malet | masa
 venafsham | bashevi | halakhah
 
 46:3
-shim'u | elai | beit | Ya'ako
-vekhol | she'erit | beit | Yisra'el
-ha'amusim | mini | veten | hanesu'im | mini | racham
+shim'u | elai | beit | Ya'ako | vekhol | she'erit | beit | Yisra'el
+ha'amusim | mini | veten
+hanesu'im | mini | racham
 
 46:4
 ve'ad | ziknah | ani | hu
 ve'ad | sheivah | ani | esbol
-ani | asiti | va'ani | esa
+ani | asiti
+va'ani | esa
 va'ani | esbol
 va'amalet
 
 46:5
 lemi | tedamyuni
-vetashvu | vetamshiluni | venidmeh
+vetashvu
+vetamshiluni
+venidmeh
 
 46:6
-hazalim | zahav | mikis | vekhesef
-bakaneh | yishkolu
-yiskeru | tzoref | veya'asehu | el
-yisgedu | af | yishtachavu
+hazalim | zahav | mikis
+vekhesef | bakaneh | yishkolu | yiskeru | tzoref
+veya'asehu | el | yisgedu
+af | yishtachavu
 
 46:7
-yisa'uhu | al | katef | yisbeluhu | veyanichuhu | tachtav | veya'amod | mimekomo
-lo | yamish
+yisa'uhu
+al | katef | yisbeluhu
+veyanichuhu | tachtav
+veya'amod
+mimekomo | lo | yamish
 af | yitz'ak | elav
-velo | ya'aneh | mitzarato | lo | yoshi'enu
+velo | ya'aneh
+mitzarato | lo | yoshi'enu
 
 46:8
 zikhru | zot
 vehit'oshashu
-hashivu | foshe'im | al | lev
+hashivu | foshe'im
+al | lev
 
 46:9
-zikhru | rishonot | me'olam
-ki | anokhi | el | ve'ein | od
-elohim | ve'efes | kamoni
+zikhru | rishonot | me'olam | ki | anokhi | el
+ve'ein | od | elohim
+ve'efes | kamoni
 
 46:10
 magid | mereshit | acharit
 umikedem | asher | lo | Na'asu
-omer | atzati | takum
+omer
+atzati | takum
 vekhol | cheftzi | e'eseh
 
 46:11
-kore | mimizrach | ayit | me'eretz | merchak
-ish | atzati
+kore | mimizrach | ayit
+me'eretz | merchak | ish | atzati
 af | dibarti
-af | avi'enah
-yatzarti
+af | avi'enah | yatzarti
 af | e'esenah
 
 46:12
-shim'u | elai | abirei | lev | harechokim | mitzedakah
+shim'u | elai | abirei | lev
+harechokim | mitzedakah
 
 46:13
-keravti | tzidkati | lo | tirchak | uteshu'ati
-lo | te'acher
+keravti | tzidkati
+lo | tirchak
+uteshu'ati | lo | te'acher
 venatati | Vetziyon | teshu'ah | Leyisra'el | tif'arti

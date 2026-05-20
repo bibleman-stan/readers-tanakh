@@ -1,14 +1,14 @@
 25:1
 vaiyamot | Shemu'el
 vaiyikavetzu | khol | Yisra'el
-vaiyispedu | lo
-vaiyikberuhu | beveito | Baramah
+vaiyispedu | lo | vaiyikberuhu | beveito | Baramah
 vaiyakom | David
 vaiyered | el | midbar | Paran
 
 25:2
 ve'ish | Bema'on
-uma'asehu | Vakarmel | veha'ish | gadol | me'od
+uma'asehu | Vakarmel
+veha'ish | gadol | me'od
 velo | tzon | sheloshet | alafim | ve'elef | izim
 vayhi | bigzoz | et | tzono | Bakarmel
 
@@ -16,7 +16,8 @@ vayhi | bigzoz | et | tzono | Bakarmel
 veshem | ha'ish | Naval
 veshem | ishto | Avigayil
 veha'ishah | toat | sekhel | vifat | to'ar
-veha'ish | kasheh | vera | ma'alalim | vehu | khalvov
+veha'ish | kasheh | vera | ma'alalim
+vehu | khalvov
 
 25:4
 vaiyishma | David | bamidbar | ki | gozez | Naval | et | tzono
@@ -29,172 +30,194 @@ uvatem | el | Naval
 ushe'eltem | lo | vishmi | leshalom
 
 25:6
-va'amartem | koh | lechai | ve'atah | shalom
+va'amartem
+koh | lechai
+ve'atah | shalom
 uveitekha | shalom
-vekhol | asher | lekha | shalom
+vekhol | asher | lekha
+shalom
 
 25:7
 ve'atah | shama'ti | ki | gozezim | lakh
-atah | haro'im | asher | lekha | hayu | imanu | lo | hekhlamnum
+atah | haro'im | asher | lekha | hayu | imanu
+lo | hekhlamnum
 velo | Nifkad | lahem | me'umah | kol | yemei | heyotam | Bakarmel
 
 25:8
-she'al | et | ne'areikha | veyagidu | lakh | veyimtze'u | hane'arim | chen | be'eineikha
+she'al | et | ne'areikha
+veyagidu | lakh
+veyimtze'u | hane'arim | chen | be'eineikha
 ki | al | yom | tov | banu
-tenah | na | et | asher | timtza | yadekha | la'avadeikha
-ulevinkha | Ledavid
+tenah | na
+et | asher | timtza | yadekha
+la'avadeikha | ulevinkha | Ledavid
 
 25:9
 vaiyavo'u | na'arei | David
-vaydaberu | el | Naval | kekhol | hadevarim | ha'eleh
-beshem | David | vaiyanuchu
+vaydaberu | el | Naval | kekhol | hadevarim | ha'eleh | beshem | David
+vaiyanuchu
 
 25:10
 vaiya'an | Naval | et | avdei | David
-vaiyomer | mi | David
-umi | ven | Yishai | haiyom | rabu | avadim | hamitparetzim
+vaiyomer
+mi | David
+umi | ven | Yishai
+haiyom | rabu | avadim
+hamitparetzim
 ish | mipenei | adonav
 
 25:11
 velakachti | et | lachmi | ve'et | meimai | ve'et | tivchati | asher | tavachti | legozezai
-venatati | la'anashim | asher | lo | yada'ti | ei | mizeh | hemah
+venatati | la'anashim | asher | lo | yada'ti
+ei | mizeh | hemah
 
 25:12
 vaiyahafkhu | na'arei | David | ledarkam
-vaiyashuvu | vaiyavo'u
-vaiyagidu | lo | kekhol | hadevarim | ha'eleh
+vaiyashuvu | vaiyavo'u | vaiyagidu | lo | kekhol | hadevarim | ha'eleh
 
 25:13
 vaiyomer | David | la'anashav
-chigru | ish | et | charbo
-vaiyachgeru | ish | et | charbo
+chigru
+ish | et | charbo
+vaiyachgeru
+ish | et | charbo
 vaiyachgor | gam | David | et | charbo
 vaiya'alu | acharei | David | ke'arba | me'ot | ish
 umatayim | yashevu | al | hakelim
 
 25:14
-Vela'avigayil | eshet | Naval | higid | na'ar | echad | mehane'arim
-lemor
-hineh | shalach | David | mal'akhim | mehamidbar
-levarekh | et | adoneinu
+Vela'avigayil | eshet | Naval | higid | na'ar | echad | mehane'arim | lemor
+hineh | shalach | David | mal'akhim | mehamidbar | levarekh | et | adoneinu
 vaiya'at | bahem
 
 25:15
-veha'anashim
-tovim | lanu | me'od | velo | hakhelamnu
-velo | fakadnu | me'umah
-kol | yemei | hithalakhnu | itam | bihyotenu | basadeh
+veha'anashim | tovim | lanu | me'od
+velo | hakhelamnu
+velo | fakadnu | me'umah | kol | yemei | hithalakhnu | itam | bihyotenu | basadeh
 
 25:16
-chomah | hayu | aleinu | gam | laylah | gam | yomam | kol | yemei | heyotenu | imam
-ro'im | hatzon
+chomah | hayu | aleinu | gam | laylah | gam | yomam | kol | yemei | heyotenu | imam | ro'im | hatzon
 
 25:17
-ve'atah | de'i | ure'i | mah | ta'asi
-ki | khaltah | hara'ah | el | adoneinu
-ve'al | kol | beito | vehu | ben | beliya'al | midaber | elav
+ve'atah
+de'i
+ure'i
+mah | ta'asi
+ki | khaltah | hara'ah | el | adoneinu | ve'al | kol | beito
+vehu | ben | beliya'al | midaber | elav
 
 25:18
 vatemaher | Avogayil
-vatikach | matayim | lechem | ushenayim | nivlei | yayin
-vechamesh | tzon | asavot
-vechamesh | se'im | kali
-ume'ah | tzimukim | umatayim | develim
+vatikach | matayim | lechem | ushenayim | nivlei | yayin | vechamesh | tzon | asavot | vechamesh | se'im | kali | ume'ah | tzimukim | umatayim | develim
 vatasem | al | hachamorim
 
 25:19
 vatomer | lin'areiha
-ivru | lefanai | hini | achareikhem | ba'ah
+ivru | lefanai
+hini | achareikhem | ba'ah
 ule'ishah | Naval | lo | higidah
 
 25:20
 vehayah | hi | rokhevet | al | hachamor | veyoredet | beseter | hahar
-vehineh | David | va'anashav
-yoredim | likratah | vatifgosh | otam
+vehineh
+David | va'anashav | yoredim | likratah
+vatifgosh | otam
 
 25:21
-Vedavid | amar | akh | lasheker | shamarti | et | kol | asher | lazeh | bamidbar
-velo | Nifkad | mikol | asher | lo | me'umah | vaiyashev | li | ra'ah | tachat | tovah
+Vedavid | amar
+akh | lasheker | shamarti | et | kol | asher | lazeh
+bamidbar
+velo | Nifkad | mikol | asher | lo
+me'umah
+vaiyashev | li | ra'ah | tachat | tovah
 
 25:22
 koh | ya'aseh | elohim | le'oyevei | David
 vekhoh | yosif
-im | ash'ir | mikol | asher | lo | ad | haboker | mashtin | bekir
+im | ash'ir | mikol | asher | lo
+ad | haboker
+mashtin | bekir
 
 25:23
 vatere | Avigayil | et | David
-vatemaher
-vatered
-me'al | hachamor
+vatemaher | vatered | me'al | hachamor
 vatipol | le'apei | David | al | paneiha
 vatishtachu | aretz
 
 25:24
 vatipol | al | raglav
 vatomer
-bi | ani | adoni | he'avon | utedaber | na | amatekha | be'azeneikha
+bi | ani | adoni
+he'avon
+utedaber | na | amatekha | be'azeneikha
 ushema | et | divrei | amatekha
 
 25:25
-al | na | yasim | adoni | et | libo | el | ish | habeliya'al | hazeh | al | Naval | ki | khishmo | ken | hu
-Naval | shemo | unevalah | imo | va'ani | amatekha
-lo | ra'iti | et | na'arei | adoni | asher | shalacheta
+al | na | yasim | adoni | et | libo | el | ish | habeliya'al | hazeh | al | Naval
+ki | khishmo | ken | hu
+Naval | shemo
+unevalah | imo
+va'ani | amatekha | lo | ra'iti | et | na'arei | adoni | asher | shalacheta
 
 25:26
-ve'atah | adoni | chai | Yahweh | vechei | nafshekha | asher | mena'akha | Yahweh | mibo | vedamim
+ve'atah | adoni
+chai | Yahweh
+vechei | nafshekha | asher | mena'akha | Yahweh | mibo | vedamim
 vehoshea | yadekha | lakh
-ve'atah | yihyu | Khenaval | oyeveikha
-vehamvakshim | el | adoni | ra'ah
+ve'atah
+yihyu | Khenaval | oyeveikha | vehamvakshim | el | adoni | ra'ah
 
 25:27
-ve'atah | haberakhah | hazot
-asher | hevi | shifchatekha | ladoni
-venitenah | lane'arim | hamithalekhim | beraglei | adoni
+ve'atah
+haberakhah | hazot | asher | hevi | shifchatekha | ladoni
+venitenah | lane'arim
+hamithalekhim | beraglei | adoni
 
 25:28
 sa | na | lefesha | amatekha
-ki | asoh | ya'aseh | Yahweh | ladoni | bayit | ne'eman | ki | milchamot | Yahweh | adoni | nilcham
+ki | asoh | ya'aseh | Yahweh | ladoni | bayit | ne'eman
+ki | milchamot | Yahweh | adoni | nilcham
 vera'ah | lo | timatze | vekha | miyameikha
 
 25:29
-vaiyakom | adam | lirdafekha
-ulevakesh | et | nafshekha
+vaiyakom | adam | lirdafekha | ulevakesh | et | nafshekha
 vehayetah | nefesh | adoni | tzerurah | bitzror | hachaiyim | et | Yahweh | eloheikha
 ve'et | nefesh | oyeveikha | yekalle'enah | betokh | kaf | hakala
 
 25:30
-vehayah | ki | ya'aseh | Yahweh | ladoni | kekhol | asher | diber | et | hatovah
-aleikha | vetzivekha | lenagid | al | Yisra'el
+vehayah
+ki | ya'aseh | Yahweh | ladoni | kekhol | asher | diber | et | hatovah | aleikha
+vetzivekha | lenagid | al | Yisra'el
 
 25:31
-velo | tihyeh | zot | lekha | lefukah
-ulemikhshol | lev | ladoni
-velishpokh | dam | chinam
-ulehoshia | adoni | lo
+velo | tihyeh | zot | lekha | lefukah | ulemikhshol | lev | ladoni | velishpokh | dam | chinam | ulehoshia | adoni | lo
 veheitiv | Yahweh | ladoni
 vezakharta | et | amatekha
 
 25:32
 vaiyomer | David | La'avigal
-barukh | Yahweh | elohei | Yisra'el | asher | shelachekh | haiyom | hazeh
-likrati
+barukh | Yahweh | elohei | Yisra'el | asher | shelachekh | haiyom | hazeh | likrati
 
 25:33
 uvarukh | ta'mekh
-uverukhah | at | asher | kelitini | haiyom | hazeh
-mibo | vedamim
+uverukhah | at | asher | kelitini | haiyom | hazeh | mibo | vedamim
 vehoshea | yadi | li
 
 25:34
-ve'ulam | chai | Yahweh | elohei | Yisra'el | asher | mena'ani
-mehara | otakh
-ki | lulei | mihart | vatavoti | likrati
-ki | im | Notar | Lenaval | ad | or | haboker | mashtin | bekir
+ve'ulam
+chai | Yahweh | elohei | Yisra'el | asher | mena'ani | mehara | otakh
+ki | lulei | mihart
+vatavoti | likrati
+ki | im | Notar | Lenaval | ad | or | haboker
+mashtin | bekir
 
 25:35
-vaiyikach | David | miyadah | et | asher | hevi'ah | lo
-velah | amar | ali | leshalom | leveitekh
-re'i | shama'ti | vekolekh | va'esa | panayikh
+vaiyikach | David | miyadah
+et | asher | hevi'ah | lo
+velah | amar
+ali | leshalom | leveitekh
+re'i | shama'ti | vekolekh
+va'esa | panayikh
 
 25:36
 vatavo | Avigayil | el | Naval | vehineh | lo | mishteh | beveito | kemishteh | hamelekh
@@ -203,12 +226,13 @@ velo | higidah | lo | davar | katon | vegadol | ad | or | haboker
 
 25:37
 vayhi | vaboker | betzet | haiyayin | Minaval
-vataged | lo | ishto | et | hadevarim
-ha'eleh | vaiyamot | libo | bekirbo
+vataged | lo | ishto | et | hadevarim | ha'eleh
+vaiyamot | libo | bekirbo
 vehu | hayah | le'aven
 
 25:38
-vayhi | ka'aseret | haiyamim | vaiyigof | Yahweh | et | Naval
+vayhi | ka'aseret | haiyamim
+vaiyigof | Yahweh | et | Naval
 vaiyamot
 
 25:39
@@ -216,25 +240,26 @@ vaiyishma | David | ki | met | Naval
 vaiyomer
 barukh | Yahweh | asher | rav | et | riv | cherpati | miyad | Naval
 ve'et | avdo | chasakh | mera'ah
-ve'et | ra'at | Naval
-heshiv | Yahweh | berosho
+ve'et | ra'at | Naval | heshiv | Yahweh | berosho
 vaiyishlach | David
 vaydaber | Ba'avigayil | lekachtah | lo | le'ishah
 
 25:40
-vaiyavo'u | avdei | David | el | Avigayil
-Hakarmelah | vaydaberu | eleiha | lemor
+vaiyavo'u | avdei | David | el | Avigayil | Hakarmelah
+vaydaberu | eleiha | lemor
 David | shelachanu | elayikh | lekachtekh | lo | le'ishah
 
 25:41
-vatakom
-vatishtachu | apayim | aretzah
+vatakom | vatishtachu
+apayim | aretzah
 vatomer
 hineh | amatekha | leshifchah | lirchotz | raglei | avdei | adoni
 
 25:42
-vatemaher | vatakom | Avigayil | vatirkav | al | hachamor
-vechamesh | na'aroteiha | haholekhot | leraglah
+vatemaher | vatakom | Avigayil
+vatirkav | al | hachamor
+vechamesh | na'aroteiha
+haholekhot | leraglah
 vatelekh | acharei | mal'akhei | David
 vatehi | lo | le'ishah
 
@@ -243,5 +268,4 @@ ve'et | Achino'am | lakach | David | Miyizre'el
 vatihyeina | gam | sheteihen | lo | lenashim
 
 25:44
-Vesha'ul | natan | et | Mikhal | bito
-eshet | David | Lefalti | ven | Layish | asher | Migalim
+Vesha'ul | natan | et | Mikhal | bito | eshet | David | Lefalti | ven | Layish | asher | Migalim

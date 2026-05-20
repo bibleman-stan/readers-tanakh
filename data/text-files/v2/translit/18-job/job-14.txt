@@ -1,10 +1,9 @@
 14:1
-adom | yelud | ishah
-ketzar | yamim | useva | rogez
+adom | yelud | ishah | ketzar | yamim | useva | rogez
 
 14:2
-ketzitz | yatza | vaiyimal
-vaiyivrach | katzel
+ketzitz | yatza
+vaiyimal | vaiyivrach | katzel
 velo | ya'amod
 
 14:3
@@ -16,32 +15,39 @@ mi | yiten | tahor | mitame
 lo | echad
 
 14:5
-im | charutzim | yamav | mispar | chodashav | itakh
+im | charutzim | yamav
+mispar | chodashav | itakh
 chukov | asita
 velo | ya'avor
 
 14:6
-she'eh | me'alav | veyechdal
+she'eh | me'alav
+veyechdal
 ad | yirtzeh | kesakhir | yomo
 
 14:7
 ki | yesh | la'etz | tikvah
-im | yikaret | ve'od | yachalif | veyonakto
-lo | techdal
+im | yikaret
+ve'od | yachalif
+veyonakto | lo | techdal
 
 14:8
 im | yazkin | ba'aretz | sharesho
 uve'afar | yamut | giz'o
 
 14:9
-mereiach | mayim | yafriach | ve'asah | katzir | kemov | nata
+mereiach | mayim | yafriach
+ve'asah | katzir | kemov | nata
 
 14:10
-vegever | yamut | vaiyechelash
-vaiyigva | adam | ve'aiyo
+vegever | yamut
+vaiyechelash | vaiyigva | adam
+ve'aiyo
 
 14:11
-azelu | mayim | mini | yam | venahar | yecherav | veyavesh
+azelu | mayim | mini | yam
+venahar | yecherav
+veyavesh
 
 14:12
 ve'ish | shakhav
@@ -50,9 +56,9 @@ ad | bilti | shamayim | lo | yakitzu
 velo | ye'oru | mishenatam
 
 14:13
-mi | yiten | bish'ol | tatzpineni
-tastireni | ad | shuv | apekha
-tashit | li | chok | vetizkereni
+mi | yiten
+bish'ol | tatzpineni | tastireni | ad | shuv | apekha | tashit | li | chok
+vetizkereni
 
 14:14
 im | yamut | gever
@@ -60,7 +66,8 @@ hayichyeh
 kol | yemei | tzeva'i | ayachel | ad | bo | chalifati
 
 14:15
-tikra | ve'anokhi | e'eneka
+tikra
+ve'anokhi | e'eneka
 lema'aseh | yadeikha | tikhsof
 
 14:16
@@ -72,22 +79,27 @@ chatum | bitzror | pish'i
 vatitpol | al | avoni
 
 14:18
-ve'ulom | har | nofel | yibol | vetzur
-ye'tak | mimekomo
+ve'ulom
+har | nofel | yibol
+vetzur | ye'tak | mimekomo
 
 14:19
-avanim | shachaku | mayim | tishtof | seficheiha | afar | aretz
+avanim | shachaku | mayim
+tishtof | seficheiha | afar | aretz
 vetikvat | enoosh | he'evadta
 
 14:20
-titkefehu | lanetzach | vaiyahalokh | meshaneh | fanav
+titkefehu | lanetzach
+vaiyahalokh
+meshaneh | fanav
 vateshalechehu
 
 14:21
-yikhbedu | vanav | velo | yeda
+yikhbedu | vanav
+velo | yeda
 veyitz'aru
 velo | yavin | lamo
 
 14:22
-akh | besaro | alav | yikh'av | venafsho
-alav | te'eval
+akh | besaro | alav | yikh'av
+venafsho | alav | te'eval

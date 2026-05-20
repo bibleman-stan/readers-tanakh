@@ -1,29 +1,29 @@
 107:1
-hodu | Layahweh | ki | tov
+hodu | Layahweh
+ki | tov
 ki | le'olam | chasdo
 
 107:2
 yomeru | ge'ulei | Yahweh | asher | ge'alam | miyad | tzar
 
 107:3
-ume'aratzot | kibetzam | mimizrach
-umima'arav | mitzafon | umiyam
+ume'aratzot | kibetzam | mimizrach | umima'arav | mitzafon | umiyam
 
 107:4
-ta'u | vamidbor | bishimon | darekh | ir | moshav
-lo | matza'u
+ta'u | vamidbor | bishimon | darekh
+ir | moshav | lo | matza'u
 
 107:5
-re'evim | gam | tzeme'im | nafsham
-bahem | tit'ataf
+re'evim
+gam | tzeme'im
+nafsham | bahem | tit'ataf
 
 107:6
-vaiyitz'aku | el | Yahweh | batzar | lahem | mimetzukoteihem
-yatzilem
+vaiyitz'aku | el | Yahweh | batzar | lahem
+mimetzukoteihem | yatzilem
 
 107:7
-vaiyadrikhem | bederekh | yesharah
-lalekhet | el | ir | moshav
+vaiyadrikhem | bederekh | yesharah | lalekhet | el | ir | moshav
 
 107:8
 yodu | Layahweh | chasdo | venifle'otav | livnei | adam
@@ -33,24 +33,23 @@ ki | hisbia | nefesh | shokekah
 venefesh | re'evah | mile | tov
 
 107:10
-yoshevei | choshekh | vetzalmavet
-asirei | oni | uvarzel
+yoshevei | choshekh | vetzalmavet | asirei | oni | uvarzel
 
 107:11
 ki | himru | imrei | el
 va'atzat | elyon | na'atzu
 
 107:12
-vaiyakhna | be'amal | libam
-kashelu
+vaiyakhna | be'amal | libam | kashelu
 ve'ein | ozer
 
 107:13
-vaiyiz'aku | el | Yahweh | batzar | lahem | mimetzukoteihem
-yoshi'em
+vaiyiz'aku | el | Yahweh | batzar | lahem
+mimetzukoteihem | yoshi'em
 
 107:14
-yotzi'em | mechoshekh | vetzalmavet | umosroteihem | yenatek
+yotzi'em | mechoshekh | vetzalmavet
+umosroteihem | yenatek
 
 107:15
 yodu | Layahweh | chasdo | venifle'otav | livnei | adam
@@ -67,11 +66,12 @@ kol | okhel | teta'ev | nafsham
 vaiyagi'u | ad | sha'arei | mavet
 
 107:19
-vaiyiz'aku | el | Yahweh | batzar | lahem | mimetzukoteihem
-yoshi'em
+vaiyiz'aku | el | Yahweh | batzar | lahem
+mimetzukoteihem | yoshi'em
 
 107:20
-yishlach | devaro | veyirpa'em
+yishlach | devaro
+veyirpa'em
 vimalet | mishechitotam
 
 107:21
@@ -82,8 +82,7 @@ veyizbechu | zivchei | todah
 visaperu | ma'asav | berinah
 
 107:23
-yordei | haiyom | bo'oniyot
-osei | melakhah | bemayim | rabim
+yordei | haiyom | bo'oniyot | osei | melakhah | bemayim | rabim
 
 107:24
 hemah | ra'u | ma'asei | Yahweh | venifle'otav | bimtzulah
@@ -93,12 +92,13 @@ vaiyomer | vaiya'amed | ruach | se'arah
 vateromem | galav
 
 107:26
-ya'alu | shamayim
-yeredu | tehomot | nafsham | bera'ah | titmogag
+ya'alu | shamayim | yeredu | tehomot
+nafsham | bera'ah | titmogag
 
 107:27
-yachogu | veyanu'u | kashikor | vekhol | chakhematam
-titbala
+yachogu
+veyanu'u | kashikor
+vekhol | chakhematam | titbala
 
 107:28
 vaiyitz'aku | el | Yahweh | batzar | lahem
@@ -109,7 +109,8 @@ yakem | se'arah | lidmamah
 vaiyecheshu | galeihem
 
 107:30
-vaiyismechu | khi | yishtoku
+vaiyismechu
+khi | yishtoku
 vaiyanchem | el | mechoz | cheftzam
 
 107:31
@@ -128,8 +129,7 @@ eretz | peri | limlechah | mera'at | yoshevei | vah
 
 107:35
 yasem | midbor | la'agam | mayim
-ve'eretz | tziyah
-lemotza'ei | mayim
+ve'eretz | tziyah | lemotza'ei | mayim
 
 107:36
 vaiyooshev | sham | re'evim
@@ -141,23 +141,27 @@ vaiyite'u | kheramim
 vaiya'asu | peri | tevu'ah
 
 107:38
-vayvarakhem | vaiyirbu | me'od | uvehemtam
-lo | yam'it
+vayvarakhem | vaiyirbu | me'od
+uvehemtam | lo | yam'it
 
 107:39
 vaiyim'atu | vaiyashochu | me'otzer | ra'ah | veyagon
 
 107:40
 shofekh | buz | al | nedivim
-vaiyat'em | betohu | lo | darekh
+vaiyat'em | betohu
+lo | darekh
 
 107:41
 vaysagev | evyon | me'oni
 vaiyasem | katzon | mishpachot
 
 107:42
-yir'u | yesharim | veyismachu | vekhol | avlah
-kafetzah | piha
+yir'u | yesharim
+veyismachu
+vekhol | avlah | kafetzah | piha
 
 107:43
-mi | chakham | veyishmor | eleh | veyitbonu | chasdei | Yahweh
+mi | chakham
+veyishmor | eleh
+veyitbonu | chasdei | Yahweh

@@ -1,7 +1,8 @@
 9:1
 umalkat | Sheva | shame'ah | et | shema | Shelomoh
-vatavo | lenasot | et | Shelomoh | vechidot | Birushalim | bechayil | kaved | me'od | ugemalim | nose'im | besamim | vezahav | laro
-ve'even | yekarah
+vatavo | lenasot | et | Shelomoh | vechidot
+Birushalim | bechayil | kaved | me'od | ugemalim
+nose'im | besamim | vezahav | laro | ve'even | yekarah
 vatavo | el | Shelomoh
 vatedaber | imo | et | kol | asher | hayah | im | levavah
 
@@ -13,50 +14,40 @@ velo | Ne'lam | davar | Mishelomoh | asher | lo | higid | lah
 vatere | malkat | Sheva | et | chakhemat | Shelomoh | vehabayit | asher | banah
 
 9:4
-uma'akhal | shulchano
-umoshav | avadav
-uma'amad | mesharetav
-umalbusheihem
-umashkav
-umalbusheihem
-va'aliyato | asher | ya'aleh
-beit | Yahweh
+uma'akhal | shulchano | umoshav | avadav | uma'amad | mesharetav | umalbusheihem | umashkav | umalbusheihem | va'aliyato | asher | ya'aleh | beit | Yahweh
 velo | hayah | od | bah | ruach
 
 9:5
-vatomer | el | hamelekh | emet | hadavar | asher | shama'ti | be'artzi | al | devareikha
-ve'al | chakhematekha
+vatomer | el | hamelekh
+emet | hadavar | asher | shama'ti | be'artzi | al | devareikha | ve'al | chakhematekha
 
 9:6
-velo | he'emanti | ledivreihem | ad | asher | bati | vatir'einah | einai
-vehineh | lo | hugad | li
-chatzi | marbit | chakhematekha
-yasafta | al | hashemu'ah | asher | shama'eti
+velo | he'emanti | ledivreihem
+ad | asher | bati
+vatir'einah | einai
+vehineh
+lo | hugad | li | chatzi | marbit | chakhematekha | yasafta | al | hashemu'ah | asher | shama'eti
 
 9:7
 ashrei | anasheikha
 ve'ashrei | avadeikha | eleh
-ha'omedim | lefaneikha | tamid | veshome'im
-et | chakhematekha
+ha'omedim | lefaneikha | tamid
+veshome'im | et | chakhematekha
 
 9:8
-yehi | Yahweh | eloheikha | barukh
-asher | chafetz | bekha | letitekha | al | kis'o | lemelekh | Layahweh
-eloheikha | be'ahavat | eloheikha | et | Yisra'el | leha'amido | le'olam
-vaiyitenkha | aleihem | lemelekh
-la'asot | mishpat | utzedakah
+yehi | Yahweh | eloheikha | barukh | asher | chafetz | bekha | letitekha | al | kis'o | lemelekh | Layahweh | eloheikha
+be'ahavat | eloheikha | et | Yisra'el | leha'amido | le'olam
+vaiyitenkha | aleihem | lemelekh | la'asot | mishpat | utzedakah
 
 9:9
 vatiten | lamelekh | me'ah | ve'esrim | kikar | zahav | uvesamim | laro | me'od | ve'even | yekarah
 velo | hayah | kabosem | hahu | asher | natenah | malkat | Sheva | lamelekh | Shelomoh
 
 9:10
-vegam | avdei | Chiram | ve'avdei | Shelomoh
-asher | hevi'u | zahav | Me'ofir | hevi'u | atzei | algumim | ve'even | yekarah
+vegam | avdei | Chiram | ve'avdei | Shelomoh | asher | hevi'u | zahav | Me'ofir | hevi'u | atzei | algumim | ve'even | yekarah
 
 9:11
-vaiya'as | hamelekh | et | atzei | ha'algumim | mesilot | leveit | Yahweh
-uleveit | hamelekh
+vaiya'as | hamelekh | et | atzei | ha'algumim | mesilot | leveit | Yahweh | uleveit | hamelekh
 vekhinorot | unevalim | lasharim
 velo | Nir'u | khahem | lefanim | be'eretz | Yehudah
 
@@ -66,24 +57,22 @@ milevad | asher | hevi'ah | el | hamelekh
 vatahafokh | vatelekh | le'artzah | hi | va'avadeiha
 
 9:13
-vayhi | mishkal | hazahav
-asher | ba | Lishlomoh | beshanah | echat | shesh | me'ot | veshishim | vashesh | kikerei | zahav
+vayhi
+mishkal | hazahav | asher | ba | Lishlomoh | beshanah | echat
+shesh | me'ot | veshishim | vashesh | kikerei | zahav
 
 9:14
 levad | me'anshei | hatarim | vehasocharim | mevi'im
-vekhol | malkhei | Arav | ufachot | ha'aretz | mevi'im | zahav
-vakhesef | Lishlomoh
+vekhol | malkhei | Arav | ufachot | ha'aretz | mevi'im | zahav | vakhesef | Lishlomoh
 
 9:15
 vaiya'as | hamelekh | Shelomoh | matayim | tzinah | zahav | shachut
-shesh | me'ot | zahav | shachut
-ya'aleh | al | hatzinah | ha'echat
+shesh | me'ot | zahav | shachut | ya'aleh | al | hatzinah | ha'echat
 
 9:16
 ushelosh | me'ot | maginim | zahav | shachut
-shelosh | me'ot | zahav
-ya'aleh
-al | hamagen | ha'echat | vaiyitenem | hamelekh | beveit | ya'ar | Halevanon
+shelosh | me'ot | zahav | ya'aleh | al | hamagen | ha'echat
+vaiyitenem | hamelekh | beveit | ya'ar | Halevanon
 
 9:17
 vaiya'as | hamelekh | kise | shen | gadol
@@ -92,45 +81,40 @@ vaytzapehu | zahav | tahor
 9:18
 veshesh | ma'alot | lakise
 vekhevesh | bazahav | lakise | mo'ochazim
-veyadot | mizeh
-umizeh | al | mekom | hashavet
+veyadot | mizeh | umizeh | al | mekom | hashavet
 ushenayim | arayot | omedim | etzel | haiyadot
 
 9:19
-usheneim | asar | arayot | omedim | sham | al | shesh | hama'alot | mizeh
-umizeh | lo | Na'asah | khen | lekhol | mamlakhah
+usheneim | asar | arayot | omedim | sham | al | shesh | hama'alot | mizeh | umizeh
+lo | Na'asah | khen | lekhol | mamlakhah
 
 9:20
 vekhol | kelei | mashkeh | hamelekh | Shelomoh | zahav
-vekhol | kelei | beit | ya'ar | Halevanon
-zahav | sagur | ein | kesef | nechshav | bimei | Shelomoh | lim'umah
+vekhol | kelei | beit | ya'ar | Halevanon | zahav | sagur
+ein | kesef | nechshav | bimei | Shelomoh | lim'umah
 
 9:21
 ki | oniyot | lamelekh | holekhot | Tarshish | im | avdei | Churam
-achat | leshaloosh | shanim | tavonah | oniyot | Tarshish | nose'ot | zahav | vakhesef
-shenhabim | vekofim | vetukiyim
+achat | leshaloosh | shanim | tavonah | oniyot | Tarshish
+nose'ot | zahav | vakhesef | shenhabim | vekofim | vetukiyim
 
 9:22
 vaiyigdal | hamelekh | Shelomoh | mikol | malkhei | ha'aretz | le'osher | vechakhemah
 
 9:23
-vekhol | malkhei | ha'aretz | mevakshim | et | penei | Shelomoh
-lishmoa | et | chakhemato
-asher | natan | ha'elohim | belibo
+vekhol | malkhei | ha'aretz | mevakshim | et | penei | Shelomoh | lishmoa | et | chakhemato | asher | natan | ha'elohim | belibo
 
 9:24
-vehem | mevi'im | ish | minchato | kelei | khesef
-ukhelei | zahav | uselamot | neshek | uvesamim | susim | uferadim
-devar | shanah | beshanah
+vehem | mevi'im
+ish | minchato
+kelei | khesef | ukhelei | zahav | uselamot | neshek | uvesamim | susim | uferadim | devar | shanah | beshanah
 
 9:25
 vayhi | Lishlomoh | arba'at | alafim | uryot | susim | umarkavot | usheneim | asar | elef | parashim | vaiyanichem | be'arei | harekhev
 ve'im | hamelekh | Birushalim
 
 9:26
-vayhi | moshel | bekhol | hamelakhim | min | Hanahar
-ve'ad | eretz | pelishtim
-ve'ad | gevul | Mitzrayim
+vayhi | moshel | bekhol | hamelakhim | min | Hanahar | ve'ad | eretz | pelishtim | ve'ad | gevul | Mitzrayim
 
 9:27
 vaiyiten | hamelekh | et | hakesef | Birushalim | ka'avanim
@@ -141,10 +125,7 @@ umotzi'im | susim | Mimitzrayim | Lishlomoh
 umikol | ha'aratzot
 
 9:29
-ushe'ar | divrei | Shelomoh | harishonim | veha'acharonim
-halo | hem | ketuvim | al | divrei | Natan | hanavi
-ve'al | nevu'at | Achiyah | hashiloni
-uvachazot | Ye'di | hachozeh | al | Yarave'am | ben | Nevat
+ushe'ar | divrei | Shelomoh | harishonim | veha'acharonim | halo | hem | ketuvim | al | divrei | Natan | hanavi | ve'al | nevu'at | Achiyah | hashiloni | uvachazot | Ye'di | hachozeh | al | Yarave'am | ben | Nevat
 
 9:30
 vaiyimlokh | Shelomoh | Virushalim | al | kol | Yisra'el | arba'im | shanah

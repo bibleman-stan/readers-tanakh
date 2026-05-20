@@ -1,23 +1,23 @@
 22:1
-nivchar | shem | me'osher | rav | mikesef
-umizahav | chen | tov
+nivchar | shem | me'osher | rav
+mikesef | umizahav | chen | tov
 
 22:2
 ashir | varash | Nifgashu
 oseh | khulam | Yahweh
 
 22:3
-arum | ra'ah | ra'ah | veyisater | ufetayim
-averu | vene'enashu
+arum | ra'ah | ra'ah
+veyisater
+ufetayim | averu
+vene'enashu
 
 22:4
-ekev | anavah | yir'at | Yahweh
-osher | vekhavod | vechaiyim
+ekev | anavah | yir'at | Yahweh | osher | vekhavod | vechaiyim
 
 22:5
 tzinim | pachim | bederekh | ikesh
-shomer | nafsho
-yirchak | mehem
+shomer | nafsho | yirchak | mehem
 
 22:6
 chanokh | lana'ar | al | pi | darko
@@ -37,7 +37,8 @@ tov | ayin | hu | yevorakh
 ki | natan | milachmo | ladal
 
 22:10
-garesh | letz | veyetze | madon
+garesh | letz
+veyetze | madon
 veyishbot | din | vekalon
 
 22:11
@@ -50,7 +51,8 @@ einei | Yahweh | natzeru | da'at
 vaysalef | divrei | voged
 
 22:13
-amar | atzel | ari | vachutz
+amar | atzel
+ari | vachutz
 betokh | rechovot | eratzeach
 
 22:14
@@ -60,11 +62,11 @@ yipol | sham
 
 22:15
 ivelet | keshurah | velev | na'ar
-shevet | musar
-yarchikenah | mimenu
+shevet | musar | yarchikenah | mimenu
 
 22:16
-oshek | dal | leharbot | lo | noten | le'ashir | akh | lemachsor
+oshek | dal | leharbot | lo
+noten | le'ashir | akh | lemachsor
 
 22:17
 hat | azenekha
@@ -72,23 +74,21 @@ ushema | divrei | chakhamim
 velibekha | tashit | leda'ti
 
 22:18
-ki | na'im | ki | tishmerem | bevitnekha
-yikonu | yachdav | al | sefateikha
+ki | na'im
+ki | tishmerem | bevitnekha | yikonu | yachdav | al | sefateikha
 
 22:19
-lihyot | Bayahweh | mivtachekha
-hoda'tikha | haiyom | af | atah
+lihyot | Bayahweh | mivtachekha | hoda'tikha | haiyom | af | atah
 
 22:20
 halo | khatavti | lekha | shilshom | bemo'etzot | vada'at
 
 22:21
-lehodi'akha
-koshet | imrei | emet
-lehashiv | amarim | emet | lesholecheikha
+lehodi'akha | koshet | imrei | emet | lehashiv | amarim | emet | lesholecheikha
 
 22:22
-al | tigzol | dal | ki | dal | hu
+al | tigzol | dal
+ki | dal | hu
 ve'al | tedake | ani | vasha'ar
 
 22:23
@@ -96,8 +96,8 @@ ki | Yahweh | yariv | rivam
 vekava | et | koe'eihem | nafesh
 
 22:24
-al | titra | et | ba'al | af | ve'et | ish | chemot
-lo | tavo
+al | titra | et | ba'al | af
+ve'et | ish | chemot | lo | tavo
 
 22:25
 pen | te'elaf | arechatov
@@ -114,5 +114,6 @@ lamah | yikach | mishkavekha | mitachteikha
 al | taseg | gevul | olam | asher | asu | avoteikha
 
 22:29
-chazita | ish | mahir | bimlakhto | lifnei | melakhim | yityatzav
+chazita | ish | mahir | bimlakhto
+lifnei | melakhim | yityatzav
 bal | yityatzev | lifnei | chashukim

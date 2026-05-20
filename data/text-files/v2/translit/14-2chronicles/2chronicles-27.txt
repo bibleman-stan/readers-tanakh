@@ -1,11 +1,12 @@
 27:1
 ben | esrim | vechamesh | shanah | Yotam | bemalekho
 veshesh | esreh | shanah | malakh | Birushalim
-veshem | imo
-Yerushah | bat | Tzadok
+veshem | imo | Yerushah | bat | Tzadok
 
 27:2
-vaiya'as | haiyashar | be'einei | Yahweh | kekhol | asher | asah | Uziyahu | aviv
+vaiya'as
+haiyashar | be'einei | Yahweh
+kekhol | asher | asah | Uziyahu | aviv
 rak | lo | va | el | heikhal | Yahweh
 ve'od | ha'am | mashchitim
 
@@ -18,9 +19,10 @@ ve'arim | banah | behar | Yehudah
 uvechorashim | banah | biraniyot | umigdalim
 
 27:5
-vehu | Nilcham | im | melekh | benei | Amon | vaiyechezak | aleihem
-vaiyitenu | lo | venei | Amon | bashanah | hahi | me'ah | kikar | kesef | va'aseret | alafim | korim | chitim | use'orim
-aseret | alafim | zot | heshivu | lo | benei | Amon
+vehu | Nilcham | im | melekh | benei | Amon
+vaiyechezak | aleihem
+vaiyitenu | lo | venei | Amon | bashanah | hahi | me'ah | kikar | kesef | va'aseret | alafim | korim | chitim | use'orim | aseret | alafim
+zot | heshivu | lo | benei | Amon
 uvashanah | hashenit | vehashelishit
 
 27:6
@@ -28,9 +30,7 @@ vaiyitchazek | Yotam
 ki | hekhin | derakhav | lifnei | Yahweh | elohav
 
 27:7
-veyeter | divrei | Yotam
-vekhol | milchamotav | uderakhav
-hinam | ketuvim | al | sefer | malkhei | Yisra'el | Vihudah
+veyeter | divrei | Yotam | vekhol | milchamotav | uderakhav | hinam | ketuvim | al | sefer | malkhei | Yisra'el | Vihudah
 
 27:8
 ben | esrim | vechamesh | shanah | hayah | vemalekho
@@ -38,5 +38,5 @@ veshesh | esreh | shanah | malakh | Birushalim
 
 27:9
 vaiyishkav | Yotam | im | avotav
-vaiyikberu | oto
-be'ir | David | vaiyimlokh | Achaz | beno | tachtav
+vaiyikberu | oto | be'ir | David
+vaiyimlokh | Achaz | beno | tachtav

@@ -1,6 +1,6 @@
 24:1
-madua | Mishadai | lo | Nitzpenu | itim | veyode'ov
-lo | chazu | yamav
+madua | Mishadai | lo | Nitzpenu | itim
+veyode'ov | lo | chazu | yamav
 
 24:2
 gevulot | yasigu
@@ -8,16 +8,16 @@ eder | gazelu
 vaiyir'u
 
 24:3
-chamor | yetomim | yinhagu
-yachbelu | shor | almanah
+chamor | yetomim | yinhagu | yachbelu | shor | almanah
 
 24:4
 yatu | evyonim | midarekh
 yachad | chube'u | aniyei | aretz
 
 24:5
-hen | pera'im | bamidbar
-yatze'u | befo'olom | meshacharei | lataref | aravah | lo | lechem | lane'arim
+hen | pera'im | bamidbar | yatze'u | befo'olom
+meshacharei | lataref
+aravah | lo | lechem | lane'arim
 
 24:6
 basadeh | belilo | yaktziru
@@ -36,17 +36,18 @@ yigzelu | mishod | yatom
 ve'al | ani | yachbolu
 
 24:10
-arom | hilekhu | beli | levush | ure'evim
-nase'u | omer
+arom | hilekhu | beli | levush
+ure'evim | nase'u | omer
 
 24:11
-bein | shurotam | yatzhiru | yekavim | darekhu
+bein | shurotam | yatzhiru
+yekavim | darekhu
 vaiyitzma'u
 
 24:12
 me'ir | metim | yin'aku
-venefesh | chalalim | teshavea | ve'eloah
-lo | yasim | tiflah
+venefesh | chalalim | teshavea
+ve'eloah | lo | yasim | tiflah
 
 24:13
 hemah | hayu | bemoredei | or
@@ -54,8 +55,8 @@ lo | hikiru | derakhav
 velo | yashevu | bintivotav
 
 24:14
-la'or | yakum | rotzeach | yiktol | ani | ve'evyon | uvalaylah
-yehi | khaganav
+la'or | yakum | rotzeach | yiktol | ani | ve'evyon
+uvalaylah | yehi | khaganav
 
 24:15
 ve'ein | no'ef | shamerah | neshef | lemor
@@ -63,16 +64,17 @@ lo | teshureni | ayin
 veseter | panim | yasim
 
 24:16
-chatar | bachoshekh | batim | yomam | chitemu | lamo
+chatar | bachoshekh | batim
+yomam | chitemu | lamo
 lo | yade'u | or
 
 24:17
 ki | yachdav | boker | lamo | tzalmavet
-ki | yakir
-balhot | tzalmavet
+ki | yakir | balhot | tzalmavet
 
 24:18
-kal | hu | al | penei | mayim | tekulal | chelkatam | ba'aretz
+kal | hu | al | penei | mayim
+tekulal | chelkatam | ba'aretz
 lo | yifneh | derekh | keramim
 
 24:19
@@ -80,27 +82,33 @@ tziyah | gam | chom | yigzelu | meimei | sheleg
 she'ol | chata'u
 
 24:20
-yishkachehu | rechem | metako | rimah
+yishkachehu | rechem
+metako | rimah
 od | lo | yizakher
 vatishaver | ka'etz | avlah
 
 24:21
-ro'eh | akarah | lo | teled | ve'almanah
-lo | yeyetiv
+ro'eh | akarah
+lo | teled
+ve'almanah | lo | yeyetiv
 
 24:22
 umashakh | abirim | bekhocho | yakum
 velo | ya'amin | bachaiyin
 
 24:23
-yiten | lo | lavetach | veyisha'en | ve'eineihu | al | darkheihem
+yiten | lo | lavetach
+veyisha'en
+ve'eineihu | al | darkheihem
 
 24:24
-romu | me'at | ve'einenu
+romu | me'at
+ve'einenu
 vehumekhu
 kakol | yikafetzun
 ukherosh | shibolet | yimalu
 
 24:25
-ve'im | lo | efo | mi | yakhziveni
+ve'im | lo | efo
+mi | yakhziveni
 veyasem | le'al | milati

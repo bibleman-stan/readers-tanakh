@@ -1,10 +1,8 @@
 30:1
-vaiyomer | Mosheh | el | benei | Yisra'el
-kekhol | asher | tzivah | Yahweh | et | Mosheh
+vaiyomer | Mosheh | el | benei | Yisra'el | kekhol | asher | tzivah | Yahweh | et | Mosheh
 
 30:2
-vaydaber | Mosheh | el | rashei | hamatot | livnei | Yisra'el
-lemor
+vaydaber | Mosheh | el | rashei | hamatot | livnei | Yisra'el | lemor
 zeh | hadavar | asher | tzivah | Yahweh
 
 30:3
@@ -20,64 +18,65 @@ ve'aserah | isar | beveit | aviha | bin'ureiha
 30:5
 veshama | aviha | et | nidrah | ve'esarah | asher | aserah | al | nafshah
 vehecherish | lah | aviha
-vekamu | kol | nedareiha | vekhol | isar | asher | aserah | al | nafshah
-yakum
+vekamu | kol | nedareiha
+vekhol | isar | asher | aserah | al | nafshah | yakum
 
 30:6
 ve'im | heni | aviha | otah | beyom | shame'o
 kol | nedareiha | ve'esareiha | asher | aserah | al | nafshah
 lo | yakum
-Vayahweh | yislach | lah | ki | heni | aviha | otah
+Vayahweh | yislach | lah
+ki | heni | aviha | otah
 
 30:7
 ve'im | hayo | tihyeh | le'ish
-unedareiha | aleiha | o | mivta | sefateiha | asher | aserah | al | nafshah
+unedareiha | aleiha
+o | mivta | sefateiha | asher | aserah | al | nafshah
 
 30:8
 veshama | ishah | beyom | shame'o
 vehecherish | lah
-vekamu | nedareiha | ve'esareha | asher | aserah | al | nafshah
-yakumu
+vekamu | nedareiha
+ve'esareha | asher | aserah | al | nafshah | yakumu
 
 30:9
 ve'im | beyom | shemoa | ishah | yani | otah
-vehefer | et | nidrah | asher | aleiha
-ve'et | mivta | sefateiha | asher | aserah | al | nafshah
+vehefer | et | nidrah | asher | aleiha | ve'et | mivta | sefateiha | asher | aserah | al | nafshah
 Vayahweh | yislach | lah
 
 30:10
-veneder | almanah | ugerushah | kol | asher | aserah | al | nafshah
-yakum | aleiha
+veneder | almanah | ugerushah | kol | asher | aserah | al | nafshah | yakum | aleiha
 
 30:11
-ve'im | beit | ishah | nadarah | ov | aserah | isar | al | nafshah | bishvu'ah
+ve'im | beit | ishah | nadarah
+ov | aserah | isar | al | nafshah | bishvu'ah
 
 30:12
-veshama | ishah | vehecherish | lah | lo | heni | otah
-vekamu | kol | nedareiha | vekhol | isar | asher | aserah | al | nafshah
-yakum
+veshama | ishah
+vehecherish | lah
+lo | heni | otah
+vekamu | kol | nedareiha
+vekhol | isar | asher | aserah | al | nafshah | yakum
 
 30:13
 ve'im | hafer | yafer | otam | ishah | beyom | shame'o
-kol | motza | sefateiha | lindareiha
-ule'isar | nafshah
-lo | yakum | ishah | haferam | Vayahweh | yislach | lah
+kol | motza | sefateiha | lindareiha | ule'isar | nafshah | lo | yakum
+ishah | haferam
+Vayahweh | yislach | lah
 
 30:14
-kol | neder | vekhol | shevu'at | isar
-le'anot | nafesh
+kol | neder | vekhol | shevu'at | isar | le'anot | nafesh
 ishah | yekimenu
 ve'ishah | yeferenu
 
 30:15
 ve'im | hacharesh | yacharish | lah | ishah | miyom | el | yom
-vehekim | et | kol | nedareiha
-o | et | kol | esareiha | asher | aleiha | hekim | otam
+vehekim | et | kol | nedareiha | o | et | kol | esareiha | asher | aleiha | hekim | otam
 ki | hecherish | lah | beyom | shame'o
 
 30:16
-ve'im | hafer | yafer | otam
-acharei | shame'o | venasa | et | avonah
+ve'im | hafer | yafer | otam | acharei | shame'o
+venasa | et | avonah
 
 30:17
 eleh | hachukim | asher | tzivah | Yahweh | et | Mosheh

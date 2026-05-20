@@ -1,8 +1,11 @@
 129:1
-shir | hama'alot | rabat | tzeraruni | mine'urai | yomar | na | Yisra'el
+shir | hama'alot
+rabat | tzeraruni | mine'urai
+yomar | na | Yisra'el
 
 129:2
-rabat | tzeraruni | mine'urai | gam | lo | yakhelu | li
+rabat | tzeraruni | mine'urai
+gam | lo | yakhelu | li
 
 129:3
 al | gabi | chareshu | choreshim | he'erikhu | lema'anotam
@@ -11,7 +14,8 @@ al | gabi | chareshu | choreshim | he'erikhu | lema'anotam
 Yahweh | tzadik | kitzetz | avot | resha'im
 
 129:5
-yevoshu | veyisogu | achor | kol | sone'ei | Tziyon
+yevoshu
+veyisogu | achor | kol | sone'ei | Tziyon
 
 129:6
 yihyu | kachatzir | gagot

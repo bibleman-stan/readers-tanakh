@@ -1,11 +1,9 @@
 11:1
-veyatza | choter | migeza | Yishai | venetzer
-misharashav | yifreh
+veyatza | choter | migeza | Yishai
+venetzer | misharashav | yifreh
 
 11:2
-venachah | alav | ruach | Yahweh
-ruach | chokhmah | uvinah | ruach | etzah | ugevurah
-ruach | da'at | veyir'at | Yahweh
+venachah | alav | ruach | Yahweh | ruach | chokhmah | uvinah | ruach | etzah | ugevurah | ruach | da'at | veyir'at | Yahweh
 
 11:3
 vaharicho | beyir'at | Yahweh
@@ -14,7 +12,8 @@ velo | lemishma | azenav | yokhiach
 
 11:4
 veshafat | betzedek | dalim
-vehokhiach | bemishor | le'anvei | aretz | vehikah | eretz | beshevet | piv
+vehokhiach | bemishor | le'anvei | aretz
+vehikah | eretz | beshevet | piv
 uveruach | sefatav | yamit | rasha
 
 11:5
@@ -22,24 +21,25 @@ vehayah | tzedek | ezor | matenav
 veha'emunah | ezor | chalatzav
 
 11:6
-vegar | ze'ev | im | keves | venamer
-im | gedi | yirbatz
+vegar | ze'ev | im | keves
+venamer | im | gedi | yirbatz
 ve'egel | ukhefir | umeri | yachdav
 vena'ar | katon | noheg | bam
 
 11:7
 ufarah | vado | tir'einah | yachdav
-yirbetzu | yaldeihen | ve'aryeh | kabakar | yokhal | teven
+yirbetzu | yaldeihen
+ve'aryeh | kabakar | yokhal | teven
 
 11:8
 veshi'asha | yonek | al | chur | paten
-ve'al | me'urat | tzif'oni | gamul
-yado | hadah
+ve'al | me'urat | tzif'oni | gamul | yado | hadah
 
 11:9
 lo | yare'u
 velo | yashchitu | bekhol | har | kodshi
-ki | mal'ah | ha'aretz | de'ah | et | Yahweh | kamayim | laiyam | mekhasim
+ki | mal'ah | ha'aretz | de'ah | et | Yahweh
+kamayim | laiyam | mekhasim
 
 11:10
 vehayah | baiyom | hahu
@@ -48,14 +48,8 @@ elav | goyim | yidroshu
 vehayetah | menuchato | kavod
 
 11:11
-vehayah | baiyom | hahu | yosif | Adonai | shenit | yado
-liknot
-et | she'ar | amo | asher | yisha'er | Me'ashur
-Umimitzrayim
-Umipatros
-Umikush | Ume'eilam
-Umishin'ar | Umechamat
-ume'iyei | haiyam
+vehayah | baiyom | hahu
+yosif | Adonai | shenit | yado | liknot | et | she'ar | amo | asher | yisha'er | Me'ashur | Umimitzrayim | Umipatros | Umikush | Ume'eilam | Umishin'ar | Umechamat | ume'iyei | haiyam
 
 11:12
 venasa | nes | lagoyim
@@ -64,14 +58,14 @@ unefutzot | Yehudah | yekabetz | me'arba | kanfot | ha'aretz
 
 11:13
 vesarah | kin'at | Efrayim
-vetzorerei | Yehudah
-yikaretu | Efrayim | lo | yekane | et | Yehudah
+vetzorerei | Yehudah | yikaretu
+Efrayim | lo | yekane | et | Yehudah
 Vihudah | lo | yatzor | et | Efrayim
 
 11:14
-ve'afu | vekhatef | pelishtim | yamah | yachdav
-yavozu | et | benei | kedem | Edom
-Umo'av | mishloch | yadam
+ve'afu | vekhatef | pelishtim | yamah
+yachdav | yavozu | et | benei | kedem
+Edom | Umo'av | mishloch | yadam
 uvenei | Amon | mishma'tam
 
 11:15

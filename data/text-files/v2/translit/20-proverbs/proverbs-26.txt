@@ -1,36 +1,40 @@
 26:1
-kasheleg | bakayitz
-vekhamatar | bakatzir
-ken | lo | naveh | likhsil | kavod
+kasheleg | bakayitz | vekhamatar | bakatzir | ken | lo | naveh | likhsil | kavod
 
 26:2
-katzipor | lanud | kaderor | la'uf
-ken | kilat | chinam
-lo | tavo
+katzipor | lanud
+kaderor | la'uf
+ken | kilat | chinam | lo | tavo
 
 26:3
-shot | lasus | meteg | lachamor | veshevet | legev | kesilim
+shot | lasus
+meteg | lachamor
+veshevet | legev | kesilim
 
 26:4
-al | ta'an | kesil | ke'ivalto | pen | tishveh | lo | gam | atah
+al | ta'an | kesil | ke'ivalto
+pen | tishveh | lo | gam | atah
 
 26:5
 aneh | khesil | ke'ivalto
 pen | yihyeh | chakham | be'einav
 
 26:6
-mekatzeh | raglayim | chamas | shoteh
+mekatzeh | raglayim
+chamas | shoteh
 sholeach | devarim | beyad | kesil
 
 26:7
-dalyu | shokayim | mipiseach | umashal | befi | khesilim
+dalyu | shokayim | mipiseach
+umashal | befi | khesilim
 
 26:8
 kitzror | even | bemargemah
 ken | noten | likhsil | kavod
 
 26:9
-choach | alah | veyad | shikor | umashal | befi | khesilim
+choach | alah | veyad | shikor
+umashal | befi | khesilim
 
 26:10
 rav | mecholel | kol
@@ -38,43 +42,51 @@ vesokher | kesil
 vesokher | oerim
 
 26:11
-kekhelev | shav | al | ke'o | kesil
+kekhelev
+shav | al | ke'o
+kesil
 shoneh | ve'ivalto
 
 26:12
-ra'ita | ish | chakham | be'einav | tikvah | likhsil | mimenu
+ra'ita | ish | chakham | be'einav
+tikvah | likhsil | mimenu
 
 26:13
-amar | atzel | shachal | badarekh | ari | bein | harechovot
+amar | atzel
+shachal | badarekh
+ari | bein | harechovot
 
 26:14
-hadelet | tisov | al | tzirah | ve'atzel | al | mitato
+hadelet | tisov | al | tzirah
+ve'atzel | al | mitato
 
 26:15
-taman | atzel | yado | batzalachat
-Nil'ah | lahashivah | el | piv
+taman | atzel | yado | batzalachat | Nil'ah | lahashivah | el | piv
 
 26:16
 chakham | atzel | be'einav | mishiv'ah | meshivei | ta'am
 
 26:17
-machazik | be'azenei | khalev | over | mit'aber | al | riv | lo | lo
+machazik | be'azenei | khalev
+over
+mit'aber | al | riv
+lo | lo
 
 26:18
-kemitlahleah | haiyoreh | zikim
-chitzim | vamavet
+kemitlahleah | haiyoreh | zikim | chitzim | vamavet
 
 26:19
 ken | ish | rimah | et | re'ehu
-ve'amar | halo | mesachek | ani
+ve'amar
+halo | mesachek | ani
 
 26:20
 be'efes | etzim | tikhbeh | esh
-uve'ein | nirgan
-yishtok | madon
+uve'ein | nirgan | yishtok | madon
 
 26:21
-pecham | legechalim | ve'etzim | le'esh
+pecham | legechalim
+ve'etzim | le'esh
 ve'ish | midonim | lecharchar | riv
 
 26:22
@@ -82,7 +94,8 @@ divrei | nirgon | kemitlahamim
 vehem | yaredu | chadrei | vaten
 
 26:23
-kesef | sigim | metzupeh | al | chares
+kesef | sigim
+metzupeh | al | chares
 sefatayim | dolekim | velev | ra
 
 26:24
@@ -90,7 +103,8 @@ bisfatov | yinakher | sone
 uvekirbo | yashit | mirmah
 
 26:25
-ki | yechanen | kolo | al | ta'amen | bo
+ki | yechanen | kolo
+al | ta'amen | bo
 ki | sheva | to'evot | belibo
 
 26:26
@@ -98,9 +112,9 @@ tikaseh | sin'ah | bemasha'on
 tigaleh | ra'ato | vekahal
 
 26:27
-korehosha | shachat | bah | yipol
-vegolel | even
-elav | tashuv
+korehosha | shachat
+bah | yipol
+vegolel | even | elav | tashuv
 
 26:28
 leshonoshe | sheker | yisna | dakav

@@ -2,17 +2,18 @@
 bishnat | sheteim | esreh | Le'achaz | melekh | Yehudah | malakh | Hoshea | ben | Elah | Veshomeron | al | Yisra'el | tesha | shanim
 
 17:2
-vaiya'as | hara | be'einei | Yahweh
+vaiya'as
+hara | be'einei | Yahweh
 rak | lo | kemalkhei | Yisra'el | asher | hayu | lefanav
 
 17:3
 alav | alah | Shalman'eser | melekh | Ashur
-vayhi | lo | Hoshea | eved
-vaiyashev | lo | minchah
+vayhi | lo | Hoshea | eved | vaiyashev | lo | minchah
 
 17:4
 vaiyimtza | melekh | Ashur | Behoshea | kesher | asher | shalach | mal'akhim | el | So | melekh | Mitzrayim
-velo | he'elah | minchah | lemelekh | Ashur | keshanah | veshanah | vaiya'atzrehu | melekh | Ashur
+velo | he'elah | minchah | lemelekh | Ashur | keshanah | veshanah
+vaiya'atzrehu | melekh | Ashur
 vaiya'asrehu | beit | kele
 
 17:5
@@ -23,41 +24,38 @@ vaiyatzar | aleiha | shalosh | shanim
 17:6
 bishnat | hateshi'it | Lehoshea | lakhad | melekh | Ashur | et | Shomeron
 vaiyegel | et | Yisra'el | Ashurah
-vaiyoshev | otam | Bachlach
-Uvechavor | nehar | Gozan
-ve'arei | Madai
+vaiyoshev | otam | Bachlach | Uvechavor | nehar | Gozan | ve'arei | Madai
 
 17:7
-vayhi | ki | chate'u | venei | Yisra'el | Layahweh | eloheihem
-hama'aleh | otam | me'eretz | Mitzrayim | mitachat | yad | par'oh | melekh | Mitzrayim | vaiyire'u | elohim | acherim
+vayhi
+ki | chate'u | venei | Yisra'el | Layahweh | eloheihem
+hama'aleh | otam | me'eretz | Mitzrayim | mitachat | yad | par'oh | melekh | Mitzrayim
+vaiyire'u | elohim | acherim
 
 17:8
 vaiyelekhu | bechukot | hagoyim | asher | horish | Yahweh | mipenei | benei | Yisra'el
 umalkhei | Yisra'el | asher | asu
 
 17:9
-vaychape'u | venei | Yisra'el | devarim | asher | lo | khen | al | Yahweh
-eloheihem | vaiyivnu | lahem | bamot | bekhol | areihem
-mimigdal | notzrim | ad | ir | mivtzar
+vaychape'u | venei | Yisra'el | devarim | asher | lo | khen
+al | Yahweh | eloheihem
+vaiyivnu | lahem | bamot | bekhol | areihem | mimigdal | notzrim | ad | ir | mivtzar
 
 17:10
-vaiyatzivu | lahem | matzevot
-va'asherim | al | kol | giv'ah | gevohah | vetachat | kol | etz | ra'anan
+vaiyatzivu | lahem | matzevot | va'asherim | al | kol | giv'ah | gevohah | vetachat | kol | etz | ra'anan
 
 17:11
 vaykateru | sham | bekhol | bamot | kagoyim | asher | heglah | Yahweh | mipeneihem
-vaiya'asu | devarim | ra'im
-lehakh'is | et | Yahweh
+vaiya'asu | devarim | ra'im | lehakh'is | et | Yahweh
 
 17:12
 vaiya'avdu | hagilulim | asher | amar | Yahweh | lahem
 lo | ta'asu | et | hadavar | hazeh
 
 17:13
-vaiya'ad | Yahweh | Beyisra'el
-Uvihudah | beyad | kol | nevi'ov | khol | chozeh | lemor
-shuvu | midarkheikhem | hara'im | veshimru | mitzvotai | chukotai
-kekhal | hatorah | asher | tziviti | et | avoteikhem
+vaiya'ad | Yahweh | Beyisra'el | Uvihudah | beyad | kol | nevi'ov | khol | chozeh | lemor
+shuvu | midarkheikhem | hara'im
+veshimru | mitzvotai | chukotai | kekhal | hatorah | asher | tziviti | et | avoteikhem
 va'asher | shalachti | aleikhem | beyad | avadai | hanevi'im
 
 17:14
@@ -65,11 +63,10 @@ velo | shame'u
 vaiyakshu | et | arepam | ke'oref | avotam | asher | lo | he'eminu | Bayahweh | eloheihem
 
 17:15
-vaiyim'asu | et | chukav | ve'et | berito | asher | karat | et | avotam
-ve'et | edevotav | asher | he'id | bam
-vaiyelekhu | acharei | hahevel | vaiyehbalu
-ve'acharei | hagoyim | asher | sevivotam | asher | tzivah | Yahweh | otam | levilti
-asot | kahem
+vaiyim'asu | et | chukav | ve'et | berito | asher | karat | et | avotam | ve'et | edevotav | asher | he'id | bam
+vaiyelekhu | acharei | hahevel
+vaiyehbalu
+ve'acharei | hagoyim | asher | sevivotam | asher | tzivah | Yahweh | otam | levilti | asot | kahem
 
 17:16
 vaiya'azvu | et | kol | mitzvot | Yahweh | eloheihem
@@ -81,23 +78,22 @@ vaiya'avdu | et | haba'al
 17:17
 vaiya'aviru | et | beneihem | ve'et | benoteihem | ba'esh
 vaiyiksemu | kesamim
-vaynacheshu
-vaiyitmakeru | la'asot | hara | be'einei | Yahweh | lehakh'iso
+vaynacheshu | vaiyitmakeru | la'asot
+hara | be'einei | Yahweh | lehakh'iso
 
 17:18
 vaiyit'anaf | Yahweh | me'od | Beyisra'el
 vaysirem | me'al | panav
-lo | Nish'ar
-rak | shevet | Yehudah | levado
+lo | Nish'ar | rak | shevet | Yehudah | levado
 
 17:19
 gam | Yehudah | lo | shamar | et | mitzvot | Yahweh | eloheihem
-vaiyelekhu
-bechukot | Yisra'el | asher | asu
+vaiyelekhu | bechukot | Yisra'el | asher | asu
 
 17:20
-vaiyim'as | Yahweh | bekhol | zera | Yisra'el | vay'anem
-vaiyitenem | beyad | shosim | ad | asher | hishlikham | mipanav
+vaiyim'as | Yahweh | bekhol | zera | Yisra'el
+vay'anem | vaiyitenem | beyad | shosim
+ad | asher | hishlikham | mipanav
 
 17:21
 ki | kara | Yisra'el | me'al | beit | David
@@ -106,8 +102,8 @@ vaiyade | Yarave'am | et | Yisra'el | me'acharei | Yahweh
 vehechetei'am | chata'ah | gedolah
 
 17:22
-vaiyelekhu | benei | Yisra'el
-bekhol | chatot | Yarave'am | asher | asah | lo | saru | mimenah
+vaiyelekhu | benei | Yisra'el | bekhol | chatot | Yarave'am | asher | asah
+lo | saru | mimenah
 
 17:23
 ad | asher | hesir | Yahweh | et | Yisra'el | me'al | panav
@@ -115,9 +111,7 @@ ka'asher | diber | beyad | kol | avadav | hanevi'im
 vaiyigel | Yisra'el | me'al | admato | Ashurah | ad | haiyom | hazeh
 
 17:24
-vaiyave | melekh | Ashur | Mibavel
-Umikutah | Ume'ava
-Umechamat | Usefarvayim
+vaiyave | melekh | Ashur | Mibavel | Umikutah | Ume'ava | Umechamat | Usefarvayim
 vaiyoshev | be'arei | Shomeron | tachat | benei | Yisra'el
 vaiyirshu | et | Shomeron
 vaiyeshevu | be'areiha
@@ -129,14 +123,17 @@ vayshalach | Yahweh | bahem | et | ha'arayot
 vaiyihyu | horegim | bahem
 
 17:26
-vaiyomeru | lemelekh | Ashur
-lemor
-hagoyim | asher | higlita | vatooshev | be'arei | Shomeron
-lo | yade'u | et | mishpat | elohei | ha'aretz | vayshalach | bam | et | ha'arayot | vehinam | memitim | otam
+vaiyomeru | lemelekh | Ashur | lemor
+hagoyim | asher | higlita
+vatooshev | be'arei | Shomeron
+lo | yade'u | et | mishpat | elohei | ha'aretz
+vayshalach | bam | et | ha'arayot
+vehinam | memitim | otam
 ka'asher | einam | yode'im | et | mishpat | elohei | ha'aretz
 
 17:27
-vaytzav | melekh | Ashur | lemor | holikhu | shamah | echad | mehakohanim | asher | higlitem | misham
+vaytzav | melekh | Ashur | lemor
+holikhu | shamah | echad | mehakohanim | asher | higlitem | misham
 veyelekhu
 veyeshevu | sham
 veyorem | et | mishpat | elohei | ha'aretz
@@ -144,7 +141,8 @@ veyorem | et | mishpat | elohei | ha'aretz
 17:28
 vaiyavo | echad | mehakohanim | asher | higlu | Mishomeron
 vaiyeshev | Beveit | El
-vayhi | moreh | otam | eikh | yire'u | et | Yahweh
+vayhi | moreh | otam
+eikh | yire'u | et | Yahweh
 
 17:29
 vaiyihyu | osim | goy | goy | elohav
@@ -158,8 +156,7 @@ ve'anshei | Chamat | asu | et | Ashima
 
 17:31
 Veha'avim | asu | Nivchaz | ve'et | Tartak
-vehasfarvim | sorefim | et | beneihem | ba'esh | Le'adramelekh | Va'anamelekh
-eloah | Sefarim
+vehasfarvim | sorefim | et | beneihem | ba'esh | Le'adramelekh | Va'anamelekh | eloah | Sefarim
 
 17:32
 vaiyihyu | yere'im | et | Yahweh
@@ -167,37 +164,31 @@ vaiya'asu | lahem | miktzotam | kohanei | vamot
 vaiyihyu | osim | lahem | beveit | habamot
 
 17:33
-et | Yahweh
-hayu | yere'im | ve'et | eloheihem | hayu | oedim | kemishpat | hagoyim
-asher | higlu | otam | misham
+et | Yahweh | hayu | yere'im
+ve'et | eloheihem | hayu | oedim | kemishpat | hagoyim | asher | higlu | otam | misham
 
 17:34
 ad | haiyom | hazeh | hem | osim | kamishpatim | harishonim
 einam | yere'im | et | Yahweh
-ve'einam | osim | kechukotam
-ukhemishpatam
-vekhatorah
-vekhamitzvah | asher | tzivah | Yahweh | et | benei | Ya'ako
-asher | sam | shemo | Yisra'el
+ve'einam | osim | kechukotam | ukhemishpatam | vekhatorah | vekhamitzvah | asher | tzivah | Yahweh | et | benei | Ya'ako | asher | sam | shemo | Yisra'el
 
 17:35
 vaiyikhrot | Yahweh | itam | berit
 vaytzavem | lemor
 lo | tire'u | elohim | acherim
-velo | tishtachavu | lahem | velo | ta'avdum
+velo | tishtachavu | lahem
+velo | ta'avdum
 velo | tizbechu | lahem
 
 17:36
-ki | im | et | Yahweh | asher | he'elah | etkhem | me'eretz | Mitzrayim | bekhoach | gadol
-uvizroa | netuyah
+ki | im | et | Yahweh | asher | he'elah | etkhem | me'eretz | Mitzrayim | bekhoach | gadol | uvizroa | netuyah
 oto | tira'u
 velo | tishtachavu
 velo | tizbachu
 
 17:37
-ve'et | hachukim | ve'et | hamishpatim | vehatorah | vehamitzvah | asher | katav | lakhem
-tishmerun | la'asot
-kol | haiyamim | velo | tire'u | elohim | acherim
+ve'et | hachukim | ve'et | hamishpatim | vehatorah | vehamitzvah | asher | katav | lakhem | tishmerun | la'asot | kol | haiyamim
+velo | tire'u | elohim | acherim
 
 17:38
 vehaberit | asher | karati | itekhem
@@ -213,6 +204,6 @@ velo | shame'u | ki | im | kemishpatam | harishon | hem | osim
 
 17:41
 vaiyihyu | hagoyim | ha'eleh | yere'im | et | Yahweh
-ve'et | pesileihem | hayu | oedim | gam | beneihem
-uvenei | veneihem | ka'asher | asu | avotam | hem | osim
-ad | haiyom | hazeh
+ve'et | pesileihem | hayu | oedim
+gam | beneihem | uvenei | veneihem | ka'asher | asu | avotam
+hem | osim | ad | haiyom | hazeh

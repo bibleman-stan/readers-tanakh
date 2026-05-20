@@ -1,23 +1,23 @@
 16:1
-bishnat | sheva | esreh | shanah | Lefekach
-ben | Remalyahu | malakh | Achaz | ben | Yotam | melekh | Yehudah
+bishnat | sheva | esreh | shanah | Lefekach | ben | Remalyahu | malakh | Achaz | ben | Yotam | melekh | Yehudah
 
 16:2
 ben | esrim | shanah | Achaz | bemalekho
 veshesh | esreh | shanah | malakh | Birushalim
-velo | asah | haiyashar | be'einei | Yahweh | elohav | Kedavid | aviv
+velo | asah
+haiyashar | be'einei | Yahweh | elohav
+Kedavid | aviv
 
 16:3
 vaiyelekh | bederekh | malkhei | Yisra'el
 vegam | et | beno | he'evir | ba'esh | keto'avot | hagoyim | asher | horish | Yahweh | otam | mipenei | benei | Yisra'el
 
 16:4
-vayzabeach | vaykater | babamot | ve'al | hageva'ot
-vetachat | kol | etz | ra'anan
+vayzabeach | vaykater | babamot | ve'al | hageva'ot | vetachat | kol | etz | ra'anan
 
 16:5
-az | ya'aleh | Retzin | melekh | Arom | Ufekach | ben | Remalyahu | melekh | Yisra'el | Yerushalim
-lamilchamah | vaiyatzuru | al | Achaz
+az | ya'aleh | Retzin | melekh | Arom | Ufekach | ben | Remalyahu | melekh | Yisra'el | Yerushalim | lamilchamah
+vaiyatzuru | al | Achaz
 velo | yakhelu | lehilachem
 
 16:6
@@ -35,15 +35,15 @@ umikaf | melekh | Yisra'el
 hakomim | alai
 
 16:8
-vaiyikach | Achaz | et | hakesef
-ve'et | hazahav | hanimtza | beit | Yahweh
-uve'otzerot | beit | hamelekh | vaiyishlach | lemelekh | Ashur | shochad
+vaiyikach | Achaz | et | hakesef | ve'et | hazahav
+hanimtza | beit | Yahweh | uve'otzerot | beit | hamelekh
+vaiyishlach | lemelekh | Ashur | shochad
 
 16:9
 vaiyishma | elav | melekh | Ashur
-vaiya'al | melekh | Ashur | el | Damesek | vaiyitpeseha
-vaiyagleha
-Kirah | ve'et | Retzin | hemit
+vaiya'al | melekh | Ashur | el | Damesek
+vaiyitpeseha | vaiyagleha | Kirah
+ve'et | Retzin | hemit
 
 16:10
 vaiyelekh | hamelekh | Achaz
@@ -53,8 +53,8 @@ vaiyishlach | hamelekh | Achaz | el | Uriyah | hakohen | et | demut | hamizbeach
 
 16:11
 vaiyiven | Uriyah | hakohen | et | hamizbeach
-kekhol | asher | shalach | hamelekh | Achaz | Midamesek | ken | asah | Uriyah | hakohen
-ad | bo | hamelekh | Achaz | Midamasek
+kekhol | asher | shalach | hamelekh | Achaz | Midamesek
+ken | asah | Uriyah | hakohen | ad | bo | hamelekh | Achaz | Midamasek
 
 16:12
 vaiyavo | hamelekh | Midamesek
@@ -65,21 +65,18 @@ vaiya'al | alav
 16:13
 vaiyakter | et | olato | ve'et | minchato
 vaiyasekh | et | nisko
-vaiyizrok | et | dam | hashelamim | asher | lo | al | hamizbeach
+vaiyizrok | et | dam | hashelamim | asher | lo
+al | hamizbeach
 
 16:14
 ve'et | hamizbach | hanechoshet | asher | lifnei | Yahweh
-vaiyakrev | me'et | penei | habayit | mibein | hamizbeach
-umibein | beit | Yahweh
+vaiyakrev | me'et | penei | habayit | mibein | hamizbeach | umibein | beit | Yahweh
 vaiyiten | oto | al | yerekh | hamizbeach | tzafonah
 
 16:15
-vaytzavuh | hamelekh | Achoz | et | Uriyah | hakohen
-lemor
-al | hamizbeach | hagadol | hakter | et | olat | haboker | ve'et | minchat | ha'erev | ve'et | olat | hamelekh | ve'et | minchato | ve'et | olat | kol | am | ha'aretz
-uminchatam | veniskeihem
-vekhol | dam | olah
-vekhol | dam | zevach | alav | tizrok
+vaytzavuh | hamelekh | Achoz | et | Uriyah | hakohen | lemor
+al | hamizbeach | hagadol | hakter | et | olat | haboker | ve'et | minchat | ha'erev | ve'et | olat | hamelekh | ve'et | minchato | ve'et | olat | kol | am | ha'aretz | uminchatam | veniskeihem
+vekhol | dam | olah | vekhol | dam | zevach | alav | tizrok
 umizbach | hanechoshet | yihyeh | li | levaker
 
 16:16
@@ -92,13 +89,11 @@ ve'et | haiyam | horid | me'al | habakar | hanechoshet
 asher | tachteiha | vaiyiten | oto | al | martzefet | avanim
 
 16:18
-ve'et | misakh | hashabat | asher | banu | vabayit | ve'et | mevo | hamelekh | hachitzonah
-hesev | beit | Yahweh | mipenei | melekh | Ashur
+ve'et | misakh | hashabat | asher | banu | vabayit | ve'et | mevo | hamelekh | hachitzonah | hesev | beit | Yahweh | mipenei | melekh | Ashur
 
 16:19
 veyeter | divrei | Achaz | asher | asah
-halo | hem | ketuvim | al | sefer | divrei | haiyamim
-lemalkhei | Yehudah
+halo | hem | ketuvim | al | sefer | divrei | haiyamim | lemalkhei | Yehudah
 
 16:20
 vaiyishkav | Achaz | im | avotav
