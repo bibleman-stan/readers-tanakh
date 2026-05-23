@@ -36,6 +36,9 @@ desktop.ini
 *.swo
 *~
 
+# Obsidian-generated default file (not editorial content)
+Welcome.md
+
 # Local environment
 .env
 
