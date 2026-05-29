@@ -1632,7 +1632,7 @@
 <div class="search-overlay" id="search-overlay">
   <div class="search-header">
     <button class="search-back" onclick="closeSearch()">&#8592;</button>
-    <input type="text" id="search-input" placeholder="Search Hebrew text..." autocomplete="off" spellcheck="false">
+    <input type="text" id="search-input" placeholder="Search Hebrew or English..." autocomplete="off" spellcheck="false">
     <button class="search-close" onclick="closeSearch()">&#10005;</button>
   </div>
   <div class="search-ops">
@@ -2885,9 +2885,9 @@ function openSearch() {
   document.getElementById('search-overlay').classList.add('open');
   const input = document.getElementById('search-input');
   input.value = '';
-  // Set placeholder based on display mode
-  const dm = (document.body.classList.contains('show-gloss') ? 'gloss' : 'hebrew');
-  input.placeholder = dm === 'gloss' ? 'Search English text...' : 'Search Hebrew text...';
+  // Bilingual search: a query matches across BOTH the Hebrew text and the
+  // English layer, independent of the current display mode.
+  input.placeholder = 'Search Hebrew or English...';
   input.focus();
   document.getElementById('search-status').textContent = '';
   document.getElementById('search-results').innerHTML = '';
@@ -3345,39 +3345,36 @@ function performSearch(query) {
   }
 
   const hits = [];
-  // Auto-detect query language: any Hebrew character (Unicode block
-  // U+0590-U+05FF) → Hebrew search against textStripped; otherwise →
-  // English search against enText. Stan 2026-05-16 — users shouldn't
-  // need to toggle display layers before typing a query.
-  const hasHebrewChars = /[֐-׿]/.test(query);
-  const searchEnglish = !hasHebrewChars;
+  // Bilingual search: every query is tested against BOTH the Hebrew layer
+  // (textStripped, niqqud-stripped) AND the English layer (enTextLower), and
+  // a verse is a hit if EITHER matches. A Hebrew-script query naturally only
+  // hits Hebrew and a Latin-script query only hits English, but running both
+  // matchers unconditionally broadens coverage and lets the result render the
+  // side that actually hit. (Supersedes the prior script-detect single-layer
+  // gate — Stan 2026-05-16; additive, no behavior removed.)
   const corpusAllowed = getCorpusAllowedBooks();
+  // Precompute the English query words once (case-insensitive substring AND).
+  const enQueryWords = query.trim().toLowerCase().split(/\s+/).filter(w => w.length > 0);
 
   for (const entry of searchIndex) {
     // Corpus filter: skip books not in any active filter group
     if (corpusAllowed && !corpusAllowed.has(entry.book)) continue;
 
-    let matched = false;
+    let matchedHe = false;
 
     if (wildcardData) {
       // Wildcard phrase-template: regex test against niqqud-stripped text.
       wildcardData.regex.lastIndex = 0;
-      matched = wildcardData.regex.test(entry.textStripped);
-    } else if (searchEnglish) {
-      // English mode: simple case-insensitive search on English text
-      if (!entry.enText) continue;
-      const queryLower = query.trim().toLowerCase();
-      const words = queryLower.split(/\s+/).filter(w => w.length > 0);
-      matched = words.every(w => entry.enTextLower.indexOf(w) !== -1);
+      matchedHe = wildcardData.regex.test(entry.textStripped);
     } else if (boolMatcher) {
-      matched = boolMatcher(entry.textStripped);
+      matchedHe = boolMatcher(entry.textStripped);
     } else if (isExact) {
       const phrase = stripDiacritics(query.trim().replace(/^"|"$/g, ''));
-      matched = entry.textStripped.indexOf(phrase) !== -1;
+      matchedHe = entry.textStripped.indexOf(phrase) !== -1;
     } else {
       // All terms must appear (implicit AND for multi-word)
       // Each original term must have at least one form match
-      matched = true;
+      matchedHe = true;
       const verseWords = getWords(entry.textStripped);
       const rawWords = query.trim().split(/\s+/).filter(w => w.length > 0);
       for (const w of rawWords) {
@@ -3391,11 +3388,22 @@ function performSearch(query) {
           }
           if (found) break;
         }
-        if (!found) { matched = false; break; }
+        if (!found) { matchedHe = false; break; }
       }
     }
 
-    if (matched) {
+    // English layer: case-insensitive substring match, every word required.
+    // Skipped in wildcard mode (the wildcard template is Hebrew-phrase-shaped).
+    let matchedEn = false;
+    if (!wildcardData && entry.enText && enQueryWords.length > 0) {
+      matchedEn = enQueryWords.every(w => entry.enTextLower.indexOf(w) !== -1);
+    }
+
+    if (matchedHe || matchedEn) {
+      // Record which layer(s) matched so renderFilteredResults can show the
+      // hitting side. Hebrew is the primary layer when both match.
+      entry._matchHe = matchedHe;
+      entry._matchEn = matchedEn;
       hits.push(entry);
     }
   }
@@ -3572,9 +3580,6 @@ function renderFilteredResults() {
     statusEl.textContent = totalCount + ' verse' + (totalCount !== 1 ? 's' : '') + ' found' + filterLabel;
   }
 
-  const displayMode = (document.body.classList.contains('show-gloss') ? 'gloss' : 'hebrew');
-  const searchEnglish = (displayMode === 'gloss');
-
   const shown = Math.min(totalCount, displayLimit);
   for (let i = 0; i < shown; i++) {
     const entry = filteredHits[i];
@@ -3589,11 +3594,14 @@ function renderFilteredResults() {
 
     const textDiv = document.createElement('div');
     textDiv.className = 'search-result-text';
-    if (searchEnglish) {
+    // Render the layer that actually matched. Hebrew is shown when it hit;
+    // otherwise the English layer is shown (English-only match). When both
+    // hit, Hebrew is the primary display layer.
+    if (entry._matchHe) {
+      textDiv.innerHTML = highlightSearchResult(entry.text, lastSearchTerms);
+    } else {
       const qw = lastSearchQuery.trim().toLowerCase().split(/\s+/).filter(w => w.length > 0);
       textDiv.innerHTML = highlightSearchResult(entry.enText, qw);
-    } else {
-      textDiv.innerHTML = highlightSearchResult(entry.text, lastSearchTerms);
     }
 
     card.appendChild(refDiv);
