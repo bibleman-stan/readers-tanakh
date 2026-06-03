@@ -37,6 +37,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 import re as _re
 from binding_rules import apply_bindings, strip_pointing
+import tanakh_overrides
 
 # Hebrew consonant letters only — for matching BHSA forms against v0 tokens
 # robustly across maqqef / sof-pasuq / spacing differences.
@@ -305,13 +306,19 @@ def extract_clauses_for_chapter(api, book_name: str, chapter_num: int, v0_text_b
     return rows
 
 
-def render_v2_heb_format(groups: list[dict], v0_text_by_verse: dict[int, str], chapter_num: int) -> str:
+def render_v2_heb_format(groups: list[dict], v0_text_by_verse: dict[int, str], chapter_num: int, book_folder: str = "") -> str:
     """Render ATU groups as v2/heb-format text using v0/prose word forms.
 
     Each group's text is reconstructed by taking v0/prose tokens at the
     v0-token-index range derived from BHSA. This preserves TAHOT-encoded
     word forms (matching v1/he-baseline) so downstream cascades pass the
     word-stream-invariance integrity gate.
+
+    Per-verse render-stage adjudication overrides apply iff `book_folder`
+    is provided and the (book_folder, chapter_num, verse) key is present in
+    data/text-files/v2/heb-adjudicated/overrides.json AND passes the two-gate
+    parity (consonant + pointing-strict). See scripts/atu_pipeline_v2/
+    tanakh_overrides.py and the heb-adjudicated/README.md for details.
     """
     by_verse: dict[int, list[dict]] = {}
     for g in groups:
@@ -321,7 +328,9 @@ def render_v2_heb_format(groups: list[dict], v0_text_by_verse: dict[int, str], c
     for v in sorted(by_verse.keys()):
         v0_text = v0_text_by_verse.get(v, "")
         v0_tokens = v0_text.split()
-        lines.append(f"{chapter_num}:{v}")
+        # Assemble mechanical ATU lines for this verse FIRST so an override
+        # can be parity-checked against the v0_text and substituted as a unit.
+        mechanical: list[str] = []
         for g in by_verse[v]:
             # Take v0-token range from min(v0_token_first) to max(v0_token_last)
             # across all clauses in this group
@@ -329,10 +338,22 @@ def render_v2_heb_format(groups: list[dict], v0_text_by_verse: dict[int, str], c
             v0_last = max(c.get("v0_token_last", 0) for c in g["clauses_full"])
             atu_tokens = v0_tokens[v0_first : v0_last + 1]
             if atu_tokens:
-                lines.append(" ".join(atu_tokens))
+                mechanical.append(" ".join(atu_tokens))
             else:
                 # Fallback: BHSA text if v0 mapping failed
-                lines.append(g["text"])
+                mechanical.append(g["text"])
+
+        final = mechanical
+        if book_folder:
+            ref = tanakh_overrides.ref_for(book_folder, chapter_num, v)
+            ov = tanakh_overrides.apply_override(
+                ref, v0_text, mechanical, book_folder, chapter_num, v
+            )
+            if ov is not None:
+                final = ov
+
+        lines.append(f"{chapter_num}:{v}")
+        lines.extend(final)
         lines.append("")  # blank line between verses
 
     return "\n".join(lines) + "\n"
@@ -392,7 +413,7 @@ def main():
                 clauses_full = [c for c in clauses if c["cid"] in g["clause_cids"]]
                 g["clauses_full"] = clauses_full
 
-            rendered = render_v2_heb_format(groups_raw, v0_text_by_verse, chapter_num)
+            rendered = render_v2_heb_format(groups_raw, v0_text_by_verse, chapter_num, book_folder)
             out_path = book_out_dir / source_path.name
             out_path.write_text(rendered, encoding="utf-8")
             total_chapters += 1
