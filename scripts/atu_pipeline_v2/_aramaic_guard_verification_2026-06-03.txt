@@ -1,0 +1,22 @@
+Loading BHSA via Text-Fabric (etcbc/bhsa)...
+
+=== 27-daniel ===
+  Aramaic verses: 200
+  Aramaic clause-atoms: 1070
+  Pre-guard intra-verse fires: 137
+
+=== 15-ezra ===
+  Aramaic verses: 67
+  Aramaic clause-atoms: 305
+  Pre-guard intra-verse fires: 43
+
+=== TOTALS ===
+Aramaic verses: 267
+Aramaic clause-atoms: 1375
+Pre-guard fires (would silently fire WITHOUT guard): 180
+Pre-guard fires by rule:
+  B10-purposive-infc: 78
+  B14-asyndetic-predicate: 43
+  B1-vocative: 34
+  B6-cpen-resumption: 25
+Post-guard fires (WITH guard active): 0 (by construction)
