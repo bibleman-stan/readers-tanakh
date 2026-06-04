@@ -406,7 +406,7 @@ def main():
                 print(".", end="", flush=True)
                 continue
 
-            groups_raw = apply_bindings(clauses)
+            groups_raw = apply_bindings(clauses, book_folder=book_folder, chapter=chapter_num)
 
             # Attach the original clause records to each group so render step has v0_token spans
             for g in groups_raw:

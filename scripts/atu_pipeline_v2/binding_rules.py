@@ -122,22 +122,42 @@ def should_bind(prev: dict, curr: dict) -> tuple[bool, str | None]:
     return False, None
 
 
-def apply_bindings(clauses: list[dict]) -> list[dict]:
+def apply_bindings(clauses: list[dict], book_folder: str = "", chapter: int = 0) -> list[dict]:
     """Group consecutive clause-atoms into ATU candidate groups by applying binding rules.
 
     Each clause dict must have keys: cid, verse, clause_idx_in_verse, typ, rela,
     head_verb_lemma, head_verb_text, text.
+
+    When book_folder + chapter are provided, Aramaic verses are guarded:
+    each Aramaic clause becomes its own group (no binding-rule firing).
+    Empirical sweep (Pipeline B Round 2, 2026-06-03): without the guard
+    181 silent false-fires across 1,378 Aramaic clause-atoms; with the
+    guard, 0. See aramaic_guard.py for the held ranges.
 
     Returns a list of ATU candidate group dicts.
     """
     if not clauses:
         return []
 
+    from aramaic_guard import is_aramaic_verse
+
+    def _is_aramaic(c: dict) -> bool:
+        if not book_folder:
+            return False
+        return is_aramaic_verse(book_folder, chapter, c["verse"])
+
     groups: list[dict] = []
     current = {"clauses": [clauses[0]], "bindings_fired": []}
 
     for c in clauses[1:]:
         prev = current["clauses"][-1]
+        # Aramaic guard: refuse cross-clause binding when either side is
+        # in a held Aramaic range. Each Aramaic clause-atom becomes its
+        # own ATU group regardless of surface morphology.
+        if _is_aramaic(prev) or _is_aramaic(c):
+            groups.append(current)
+            current = {"clauses": [c], "bindings_fired": []}
+            continue
         bind, rule = should_bind(prev, c)
         if bind:
             current["clauses"].append(c)
