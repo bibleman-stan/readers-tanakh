@@ -2745,6 +2745,33 @@ async function buildSearchIndex() {
   searchIndexLoading = true;
 
   const statusEl = document.getElementById('search-status');
+  statusEl.innerHTML = '<div class="search-loading">Loading search index...</div>';
+
+  // Fast path: prebuilt compact index (data/search_index.json, from
+  // scripts/build_search_index.py). Avoids 929 chapter fetches + 929
+  // DOMParser walks. Compact rows [bookIdx, ch, vs, heText, enText] are
+  // expanded here; diacritic-stripped / lowercased forms derived now so
+  // stripDiacritics() stays the single source of truth.
+  try {
+    const resp = await fetch('data/search_index.json', { cache: 'no-store' });
+    if (resp.ok) {
+      const data = await resp.json();
+      const names = data.books, ids = data.bookIds;
+      searchIndex = data.v.map(function(r) {
+        return {
+          book: ids[r[0]], bookName: names[r[0]],
+          chapter: r[1], verse: r[2],
+          text: r[3], textStripped: stripDiacritics(r[3]),
+          enText: r[4], enTextLower: (r[4] || '').toLowerCase(),
+        };
+      });
+      searchIndexLoading = false;
+      statusEl.textContent = '';
+      return;
+    }
+  } catch (e) {
+    console.warn('Prebuilt search index unavailable; building from chapter HTML', e);
+  }
   statusEl.innerHTML = '<div class="search-loading">Building search index...</div>';
 
   const index = [];
