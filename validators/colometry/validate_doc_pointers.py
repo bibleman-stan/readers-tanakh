@@ -145,6 +145,10 @@ SKIP_PATHS = {
 SKIP_PREFIXES = (
     "C:/", "c:/", "/",
     "readers-",      # sibling projects (siloed)
+    "atu-method/",   # methodology-canon sibling project (siloed) — refs to
+                     # framework.md / cross-corpus-principles.md / binding-
+                     # rules-hebrew.md / toolset-architecture.md / deployment-
+                     # status.md are cross-repo pointers, not broken paths
     "archive/",
     "private/",      # gitignored session folders, sub-method docs
     "research/",     # gitignored vendored sources
