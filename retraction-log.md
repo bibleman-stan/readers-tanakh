@@ -1,6 +1,6 @@
 # Retraction-Precedent Log — readers-tanakh
 
-Per [`atu-method/docs/retraction-log-protocol.md`](../atu-method/docs/retraction-log-protocol.md).
+Per [`atu-method/docs/04-process/retraction-log-protocol.md`](../atu-method/docs/04-process/retraction-log-protocol.md).
 Append-only; chronological. When 3 retractions share the same factor AND
 sub-pattern, the sub-pattern is promoted to
 [`atu-method/memories/feedback_three_anti_default_factors.md`](../atu-method/memories/feedback_three_anti_default_factors.md)

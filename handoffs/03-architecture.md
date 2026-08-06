@@ -2,14 +2,14 @@
 
 ## Position in the four-plane architecture
 
-readers-tanakh participates in the cross-corpus **four-plane architecture** documented at [`../atu-method/docs/architecture.md`](../atu-method/docs/architecture.md). The decomposition:
+readers-tanakh participates in the cross-corpus **four-plane architecture** documented at [`../atu-method/docs/03-implementation/architecture.md`](../atu-method/docs/03-implementation/architecture.md). The decomposition:
 
 | Plane | Where | This repo's role |
 |---|---|---|
 | Universal | `../atu-method/` | **Consumes.** KJV alignment engine (`atu_method.kjv_alignment`), swap engine (`atu_method.swaps`), MetaV CSVs, STEPBible Strong's lexicons, swap lists. |
 | Engine | `validators/`, `scripts/build_books.py`, `scripts/refresh_book.py`, pre-commit hook | **Owns.** Hebrew-side validators, build pipeline, cascade orchestration. |
 | Corpus | `data/text-files/v2/heb/`, `data/text-files/v0/prose/` | **Owns.** TAHOT-sourced Hebrew, hand-edited gold standard. |
-| Editorial | `private/01-method/colometry-canon.md` | **Owns** Hebrew-specific application (rules H1–H18, M1–M4 overrides). Cross-corpus framework body lives at `../atu-method/docs/framework.md`. |
+| Editorial | `private/01-method/colometry-canon.md` | **Owns** Hebrew-specific application (rules H1–H18, M1–M4 overrides). Cross-corpus framework body lives at `../atu-method/docs/01-normative/framework.md`. |
 
 The repo structure below covers planes 2–3 (engine + corpus) plus the public-facing web app. Plane 1 (universal) is consumed via relative paths into the sibling repo. Plane 4 (editorial) lives in gitignored `private/`.
 

@@ -43,7 +43,7 @@ Pipeline:
 |---|---|---|
 | v0 | `data/text-files/v0/prose/` | Raw STEPBible TAHOT (never edited) |
 | v1 | `data/text-files/v1/he-baseline/` | Historical mechanical draft from te'amim parse (retained for reference) |
-| **v2** (= the v1.5 *stage*; dir name is accidental) | `data/text-files/v2/heb/` | **Deployed mechanical-first ATU output** (BHSA clause-atoms + binding rules; 37 books published 2026-05-22, Aramaic held). Single source of truth the reader builds from — regenerable method output, not hand-edited. See `atu-method/docs/deployment-status.md`. |
+| **v2** (= the v1.5 *stage*; dir name is accidental) | `data/text-files/v2/heb/` | **Deployed mechanical-first ATU output** (BHSA clause-atoms + binding rules; 37 books published 2026-05-22, Aramaic held). Single source of truth the reader builds from — regenerable method output, not hand-edited. See `atu-method/docs/05-status/deployment-status.md`. |
 | v2 derived | `data/text-files/v2/{translit,eng-interlinear,eng-kjv}/` | Regenerated from v2/heb per build run |
 | books | `books/<book>/<book>-NN.html` | Built reader pages (one per chapter) |
 
