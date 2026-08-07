@@ -4,8 +4,8 @@ binding_rules.py — the 14 validated Hebrew binding rules (B1-B14, B4 retired).
 Importable module: `from binding_rules import apply_bindings`.
 
 Each rule fires based on BHSA-derived clause features and is justified by the
-bidirectional test (see ../atu-method/docs/01-normative/framework.md §2 and
-../atu-method/docs/02-registries/binding-rules-hebrew.md).
+bidirectional test (see ../atu-method/1-method/framework.md §2 and
+../atu-method/1-method/binding-rules-hebrew.md).
 
 A global same-verse guard refuses any binding across verse boundaries.
 """

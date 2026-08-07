@@ -4,7 +4,7 @@ This directory holds the scholarly-grounding citations for each §5 rule that dr
 
 ## Convention
 
-When §5 work touches a rule that has inline scholarly citations (Joüon-Muraoka, Yeivin, Wickes, Waltke-O'Connor, Arnold-Choi, GKC, Niccacci, etc.) in the rule body, MOVE the citation prose to `scholarship/h{N}.md` for that rule. **Don't delete** — preservation of the scholarly defensibility chain is mandatory.
+When §5 work touches a rule that has inline scholarly citations (Joüon-Muraoka, Yeivin, Wickes, Waltke-O'Connor, Arnold-Choi, GKC, Niccacci, etc.) in the rule body, MOVE the citation prose to `2-evidence/scholarship/h{N}.md` for that rule. **Don't delete** — preservation of the scholarly defensibility chain is mandatory.
 
 ## File naming
 
@@ -31,8 +31,8 @@ When §5 work touches a rule that has inline scholarly citations (Joüon-Muraoka
 ## Cross-corpus precedent
 
 Pointers to sibling-canon scholarship files for the analog rule:
-- BoFM: `../../../../readers-bofm/private/01-method/scholarship/{R|M}{N}.md`
-- GNT: `../../../../readers-gnt/private/01-method/scholarship/{R}{N}.md`
+- BoFM: `../../../../readers-bofm/private/01-method/2-evidence/scholarship/{R|M}{N}.md`
+- GNT: `../../../../readers-gnt/private/01-method/2-evidence/scholarship/{R}{N}.md`
 
 ## Editorial decisions touching this scholarship
 
@@ -43,7 +43,7 @@ Brief notes on canon revisions or §7 audit outcomes that turned on the scholarl
 
 **Stays in the canon §5 entry:**
 - Rule statement (Grammatical basis / Trigger / Diagnostic / Exceptions / Examples).
-- A one-line `references:` field in the YAML footer pointing here (e.g., `references: scholarship/h7.md`).
+- A one-line `references:` field in the YAML footer pointing here (e.g., `references: 2-evidence/scholarship/h7.md`).
 - Worked-example commentary that is operationally load-bearing.
 
 **Moves here:**

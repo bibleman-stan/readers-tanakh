@@ -2,7 +2,7 @@
 
 Productized version of the pilot at `research/atu-pilot-mechanical-first/`. Batch-runs the validated 14-rule binding catalog over the entire Tanakh and produces draft ATU renderings as a staging artifact (`data/text-files/v2-pipeline-draft/heb/`) for diff against hand-edited `data/text-files/v2/heb/`.
 
-Methodology reference: `../../../atu-method/docs/01-normative/framework.md` + `../../../atu-method/docs/02-registries/binding-rules-hebrew.md`.
+Methodology reference: `../../../atu-method/1-method/framework.md` + `../../../atu-method/1-method/binding-rules-hebrew.md`.
 
 ---
 
