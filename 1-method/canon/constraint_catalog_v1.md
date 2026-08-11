@@ -1,5 +1,33 @@
 # Hebrew Constraint Catalog v1
 
+> **Restored from `_archive/` on 2026-08-11.** Commit `922001bc0` (2026-05-18)
+> moved this file out, describing it as *"superseded"* by the mechanical-first
+> rewrite. It was not superseded. `atu-method/1-method/binding-rules-hebrew.md`
+> operates at the **clause-atom binding** layer — vocative, restrictive ʾăšer,
+> wayhi frames, casus pendens, neʾum. This catalog operates at the **prosodic
+> and NP** layer — maqqef groups, proclitic stranding, construct chains, bonded
+> pairs. Word counts across the two files: maqqef 15 / 0, proclitic 11 / 0,
+> bonded 13 / 0, construct chain 20 / 0. They are complementary, not rival
+> versions of one thing, and archiving this left the prosodic layer with no
+> documentation at all while the validators implementing it kept running.
+>
+> **What the supersession got right, and this file still owes.** The B-rules
+> justify every rule against the bidirectional test, carry counter-examples that
+> must *not* fire, and state known limitations. This catalog does none of that.
+> A `Source` line is a weaker warrant than it looks: Joüon §129 establishes that
+> the construct chain is a nominal unit — it does not license never breaking one
+> across a colometric line. That inference is ours and is nowhere stated here.
+>
+> **Therefore neither document is finished.** The target is a merged catalog in
+> which every constraint carries BOTH an external `Source` (anchoring the unit,
+> checkable by a peer) AND a bidirectional-test justification (doing the
+> editorial work), with the inferential step between them named rather than
+> assumed. Tracked in `atu-method/2-evidence/traceability-tanakh.md`.
+>
+> **`Status: DRAFT` below stands.** No entry here has been corpus-fixture
+> validated. Restoration reconnects the six live sub-files in `constraints/`
+> to their master index; it does not promote this to settled canon.
+
 ```yaml
 catalog_version: v1
 last_reviewed: 2026-05-17
