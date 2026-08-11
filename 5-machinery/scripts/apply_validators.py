@@ -75,7 +75,7 @@ def _find_repo_root():
 
 # Verse-reference line: matches `1:1`, `12:34`, `Gen 1:1`, etc. — pure-numeric
 # verse marker that MUST NOT be absorbed into adjacent content lines on merge.
-# Cross-verse merges per 1-method/canon §5 H10 require a superscript-marker preservation
+# Cross-verse merges per canon §5 H10 require a superscript-marker preservation
 # scheme that the merge engine does not yet implement; until that exists,
 # cross-verse merges are SKIPPED here (carry-forward
 # 2026-05-04 carry-forward-cross-verse-merge-bug.md).
@@ -109,8 +109,8 @@ OUTPUT_TIER_LABEL = "v2-heb"
 # Only findings that clear this gate are applied mechanically.
 # All others go to REVIEW-REQUIRED.
 #
-# Update this dict as 5-machinery/validators clear the ≥80% clean-rate adoption protocol
-# per 1-method/canon §7.  Do NOT update 5-machinery/validators/.baseline.json from this script;
+# Update this dict as validators clear the ≥80% clean-rate adoption protocol
+# per canon §7.  Do NOT update 5-machinery/validators/.baseline.json from this script;
 # run:  PYTHONIOENCODING=utf-8 py -3 5-machinery/validators/run_all.py --update-baseline
 # ---------------------------------------------------------------------------
 
@@ -127,7 +127,7 @@ ADOPTED_VALIDATORS: dict[str, AdoptionSpec] = {
         "STRONG-SPLIT-CANDIDATE",
     },
     "validate_speech_intro_framing": {
-        # STRONG-MERGE-CANDIDATE retired per Path 1 1-method/canon revision (2026-05-02 §5 H5b):
+        # STRONG-MERGE-CANDIDATE retired per Path 1 canon revision (2026-05-02 §5 H5b):
         # speech-act announcements are propositionally complete on their own.
         # Bare wayyiqtol speech-verbs no longer auto-merge with their content.
         # The narrow scope-economy carve-out (§5 H5 dialogue chain) is
@@ -152,7 +152,7 @@ ADOPTED_VALIDATORS: dict[str, AdoptionSpec] = {
     "validate_short_orphan_line": {
         "STRONG-MERGE-CANDIDATE",
     },
-    # ── Adopted 2026-05-04 per 1-method/canon §0.2.1 cleanup sweep ──────────────
+    # ── Adopted 2026-05-04 per canon §0.2.1 cleanup sweep ──────────────
     # Validators that have been emitting STRONG-MERGE-CANDIDATE corpus-wide
     # but were never in ADOPTED_VALIDATORS — their STRONG findings have
     # been sitting un-applied. Adopting closes the registry-coupling drift
@@ -194,7 +194,7 @@ ADOPTED_VALIDATORS: dict[str, AdoptionSpec] = {
 
 # ---------------------------------------------------------------------------
 # Validator registry — (script_path_relative_to_repo, validator_name_key)
-# All 5-machinery/validators that this script may run.  Unadopted 5-machinery/validators still run
+# All validators that this script may run.  Unadopted validators still run
 # so their REVIEW-REQUIRED findings appear in reports.
 # ---------------------------------------------------------------------------
 
@@ -235,7 +235,7 @@ ALL_VALIDATORS: list[tuple[str, str]] = [
 
 
 # ---------------------------------------------------------------------------
-# Adoption / registry coupling assertion (1-method/canon §0.2.1)
+# Adoption / registry coupling assertion (canon §0.2.1)
 # ---------------------------------------------------------------------------
 # Every entry in ADOPTED_VALIDATORS must also appear in ALL_VALIDATORS, or
 # the validator's STRONG findings are silently invisible to the strong-queue
@@ -477,7 +477,7 @@ def apply_mutations_to_lines(
                 continue
 
             # Cross-verse boundary skip: never absorb a verse-reference line
-            # into a content line. Per 1-method/canon §5 H10, cross-verse merges
+            # into a content line. Per canon §5 H10, cross-verse merges
             # require superscript-marker preservation; merge engine doesn't
             # implement that yet (carry-forward), so skip the merge.
             # Same skip if the CURRENT line is a verse-ref (defensive).
@@ -836,7 +836,7 @@ def process_chapter(
     # AND we're NOT in diff-apply mode (where input == existing v2/heb, so
     # divergence is impossible by construction).
     # When spec_runner (apply_specs.py) has mutated v2/heb beyond what v1 + adopted
-    # 5-machinery/validators can re-derive, PRESERVE the existing v2/heb and continue the cascade.
+    # validators can re-derive, PRESERVE the existing v2/heb and continue the cascade.
     # The downstream pipeline (propagate_editorial_layers, glosses, build) reads v2
     # as input, so preserving it is the correct behavior — not an abort.
     diverged = False
@@ -930,7 +930,7 @@ def process_book(
     )
     print(f"Mode: {mode_label}")
     print(f"Adopted 5-machinery/validators: {sorted(adopted_names)}")
-    # Show subcase restrictions for 5-machinery/validators with per-tag subcase gates
+    # Show subcase restrictions for validators with per-tag subcase gates
     for vname, spec in ADOPTED_VALIDATORS.items():
         if isinstance(spec, dict):
             for tag, subcases in spec.items():
@@ -938,12 +938,12 @@ def process_book(
     print(f"{'='*60}")
 
     # -----------------------------------------------------------------------
-    # Step 1: Run all 5-machinery/validators (v1/he-baseline by default; v2/heb in diff-apply mode).
+    # Step 1: Run all validators (v1/he-baseline by default; v2/heb in diff-apply mode).
     # -----------------------------------------------------------------------
     print("\nRunning 5-machinery/validators...")
     validator_outputs: list[tuple[str, dict]] = []
     for script_rel, validator_name in ALL_VALIDATORS:
-        # Skip 5-machinery/validators whose 5-machinery/scripts don't exist yet — don't abort.
+        # Skip validators whose scripts don't exist yet — don't abort.
         path = REPO_ROOT / script_rel
         if not path.exists():
             print(f"  {validator_name}: [SKIP — script not found]")
@@ -1014,7 +1014,7 @@ def process_book(
             print(stats["report"])
 
     # -----------------------------------------------------------------------
-    # Step 4: Sweep-scale audit warning (1-method/canon §7).
+    # Step 4: Sweep-scale audit warning (canon §7).
     # -----------------------------------------------------------------------
     if total_applied >= 5:
         print(

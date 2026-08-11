@@ -283,7 +283,7 @@ def analyze_pattern_e_pronoun_resumption(
     # three editorial criteria (atomic thought, single image, Hebrew syntax)
     # in any register. Suppressing or demoting findings based solely on
     # register would treat the register classification as an overlay with
-    # deterministic force — which the 1-method/canon explicitly prohibits. Severity
+    # deterministic force — which the canon explicitly prohibits. Severity
     # stays REVIEW-REQUIRED corpus-wide pending wider editorial sampling.
     severity = "REVIEW-REQUIRED"
 
@@ -599,7 +599,7 @@ def analyze_verse_pair(
 
     # -----------------------------------------------------------------------
     # Pattern (a-1) leemor-cross-verse — RETIRED 2026-05-05.
-    # Per 1-method/canon §5 H5b (Path 1 revision 2026-05-02), the speech-act
+    # Per canon §5 H5b (Path 1 revision 2026-05-02), the speech-act
     # announcement and the quoted content occupy separate lines regardless
     # of frame length. When verse N ends with לֵאמֹר and verse N+1 opens
     # with speech content, the SPLIT IS THE CORRECT STRUCTURE — there is

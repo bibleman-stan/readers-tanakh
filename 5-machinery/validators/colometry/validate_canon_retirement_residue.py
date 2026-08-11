@@ -43,7 +43,7 @@ SCAN_PATHS = [
 ] + sorted((REPO_ROOT / "handoffs").glob("*.md"))
 
 
-# Retired/withdrawn/rescinded 1-method/canon items.
+# Retired/withdrawn/rescinded canon items.
 # Each entry: (search-pattern, retirement-date, brief-note).
 # Patterns are case-insensitive regex; should match the term as it would
 # appear in active prose.
@@ -153,7 +153,7 @@ RETIRED_TERMS = [
         "retired": "2026-05-12 (Wave 6 — v2/eng-gloss is now the KJV substrate)",
         "note": "Parallel directory for staged KJV rollout; promoted into the canonical eng-gloss slot.",
     },
-    # Add new entries here when retiring/withdrawing/rescinding 1-method/canon items.
+    # Add new entries here when retiring/withdrawing/rescinding canon items.
 ]
 
 

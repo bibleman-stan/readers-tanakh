@@ -50,7 +50,7 @@ MIN_HALF_PW = 2  # Hebrew bicola can be 3+2 or 2+3; 2 is the minimum atomic-thou
 #   -   162 confident TPs (LCA in COORD_RULES or both clauses top-level)
 #   - 2,016 AMBIGUOUS (LCA exists but lacks an informative wg_rule —
 #     mostly the structurally-implicit coordinations Macula didn't tag)
-# This is the 1-method/canon §1 prescription: "Macula constituent trees + frame
+# This is the canon §1 prescription: "Macula constituent trees + frame
 # annotations are the structural diagnostic ... morpho-syntactic role
 # symmetry across a candidate boundary, queried mechanically."
 

@@ -92,7 +92,7 @@ from pathlib import Path
 from typing import Optional, Callable
 
 # ---------------------------------------------------------------------------
-# Repo-root sys.path insert so 5-machinery/validators._shared is importable from any cwd.
+# Repo-root sys.path insert so validators._shared is importable from any cwd.
 # ---------------------------------------------------------------------------
 REPO_ROOT = _find_repo_root()
 sys.path.insert(0, str(REPO_ROOT / "5-machinery/validators"))

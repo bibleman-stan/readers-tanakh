@@ -21,7 +21,7 @@ import os
 import sys
 from pathlib import Path
 
-# ── project root on sys.path so 5-machinery/validators._shared resolves ─────────────────
+# ── project root on sys.path so validators._shared resolves ─────────────────
 SCRIPT_DIR = Path(__file__).resolve().parent
 REPO_ROOT = SCRIPT_DIR.parent
 sys.path.insert(0, str(REPO_ROOT))

@@ -325,11 +325,11 @@ def _suppressor_cascade(line_tokens, clauses, anchor_count: int = None,
                 return "SUPPRESSED", ["S6-imperative-cognate-pair"]
 
     # S7: ROLLED BACK 2026-05-12 per audit. Original claim "two verbs both
-    # negated → M1 bonded scope" had no framework or 1-method/canon backing —
+    # negated → M1 bonded scope" had no framework or canon backing —
     # negation is syntactic scope, not semantic bonding. Two distinct
     # prohibitions (e.g., "thou shalt not kill / thou shalt not steal")
     # are explicitly non-synonymous propositions. The Jdg 13:14 precedent
-    # cited in the original comment was not verified in the 1-method/canon.
+    # cited in the original comment was not verified in the canon.
     # Pattern is now NOT suppressed; surfaces normally per generative principle.
 
     # S8: speech-intro frame — head_a is a speech-act verb lemma. The
@@ -540,7 +540,7 @@ def scan_book(book_slug: str, out_rows: list[str]) -> dict:
                 if len(matched) < 3:
                     continue
                 # Count finite verbs on the line PLUS predicative active
-                # participles (Vqr*). Per 1-method/canon §1 anchor inventory: "A
+                # participles (Vqr*). Per canon §1 anchor inventory: "A
                 # participle standing as predicate" is a primary anchor
                 # type. Conservative heuristic: count Vqr* tokens when
                 # preceded by a הִנֵּה (Tm) token in the same line —

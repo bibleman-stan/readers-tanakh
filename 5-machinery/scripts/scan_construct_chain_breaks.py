@@ -37,7 +37,7 @@ V2_DIR = REPO_ROOT / "data" / "text-files"  / "v2" / "heb"
 OUT_DIR = REPO_ROOT / "private" / "03-sessions" / "2026-04-30-wave6-saturation-audit"
 OUT_FILE = OUT_DIR / "construct-chain-findings.csv"
 
-# Make 5-machinery/validators._shared importable
+# Make validators._shared importable
 sys.path.insert(0, str(REPO_ROOT / "5-machinery/validators"))
 
 from _shared.morphology import (  # noqa: E402

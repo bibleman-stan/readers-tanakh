@@ -117,7 +117,7 @@ QATAL_COMMON = {
     # cognition
     # NOTE: "זכר" excluded — homograph with זָכָר (noun "male"). Skeleton can't
     # disambiguate without niqqud (qamatz-qamatz noun vs. qamatz-patah qatal).
-    # Per 1-method/canon §1 hybrid policy, prefer FN on rare qatal "remembered" 3ms over
+    # Per canon §1 hybrid policy, prefer FN on rare qatal "remembered" 3ms over
     # FP on common noun "male". Wayyiqtol וַיִּזְכֹּר / yiqtol יִזְכֹּר still detected.
     "ידע", "ראה", "שמע", "חשב", "הבין",
     # motion
@@ -150,7 +150,7 @@ QATAL_COMMON = {
 
 
 # Yiqtol-prefix-conflict nouns — skeletons that LOOK like yiqtol forms
-# (start with י/ת/א/נ) but are actually nouns. Per 1-method/canon §1 hybrid policy
+# (start with י/ת/א/נ) but are actually nouns. Per canon §1 hybrid policy
 # (2026-04-29): prefer lexical exclusion over niqqud-aware vowel inspection.
 # This list is also reused in the wayyiqtol check to filter vav+noun forms
 # (וְנָקֵבָה, וְאָדָם, וְתוֹרָה, etc.) that would otherwise look like
@@ -159,7 +159,7 @@ YIQTOL_KNOWN_NOUNS = {
     # י-initial nouns
     "יד", "ים", "יום", "ין", "יין", "יער", "יען", "ימים",
     "ירא", "ירה",  # fear/shoot (can be noun in some forms)
-    # ── α-prefix nouns (lexical exclusion per 1-method/canon §1 hybrid policy)
+    # ── α-prefix nouns (lexical exclusion per canon §1 hybrid policy)
     # chataf-aleph noun stems
     "אדמה", "אדמת", "אדמתו", "אדמתי", "אדמתך", "אדמתם",
     "אמונה", "אמונת", "אמונתי",
@@ -777,7 +777,7 @@ def _first_vowel_is_holam(token: str) -> bool:
     return False
 
 
-## Note: niqqud-policy per 1-method/canon §1 (2026-04-29 + extension 2026-04-29-pm).
+## Note: niqqud-policy per canon §1 (2026-04-29 + extension 2026-04-29-pm).
 ## Hybrid approach:
 ##   - Niqqud-AWARE checks are reserved for morpho-lexical patterns that cannot be
 ##     enumerated lexically (qal active participle CōCēC — every active verb has one,
@@ -1283,7 +1283,7 @@ def _mem_after_vav_is_min_prep(token: str) -> bool:
 # Wave 6 audit revealed compound numeral phrases (Gen 5 / Gen 11 lifespans,
 # Num 1 / Ezra 2 / 1 Chr census counts) fragmented across lines because the
 # te'amim baseline imposes disjunctive accents on each numeral component.
-# Per 1-method/canon §1, a compound count is one atomic thought.
+# Per canon §1, a compound count is one atomic thought.
 
 CARDINAL_STEMS: frozenset[str] = frozenset({
     # Units 1-10 (m/f pairs)
@@ -1782,7 +1782,7 @@ def is_vav_coord_np_head(token: str) -> bool:
 # ─── S3 closed-list clause-boundary helpers (atomic-thought separation) ───
 #
 # S3 fires only on a closed list of recognized "previous content closes;
-# wayyiqtol opens fresh clause" signatures. Per 1-method/canon §1: Hebrew narrative IS
+# wayyiqtol opens fresh clause" signatures. Per canon §1: Hebrew narrative IS
 # a wayyiqtol chain; default-MERGE direction means "do not split chain-internal
 # wayyiqtols" (Rule H3 governs at v1→v2 layer). S3 is a line-internal fixer for
 # the rare cases where v1 baseline glued a wayyiqtol onto a closing fragment.
@@ -2915,7 +2915,7 @@ def is_heavy_participial_complement(line: str) -> bool:
 # tuple of allowed preposition skeletons for the complement.
 # Conservative closed list: only high-confidence cases included.
 # Ported from validate_clause_nucleus_split.py M2_PP_VERBS.
-# Audit basis: 9/9 TP rate corpus-wide — meets 1-method/canon §7.4 ≥80% threshold.
+# Audit basis: 9/9 TP rate corpus-wide — meets canon §7.4 ≥80% threshold.
 M2_PP_VERB_SKELETONS: dict[str, tuple[str, ...]] = {
     # שָׁמַע ל / אֶל
     "שמע":     ("ל", "אל"),

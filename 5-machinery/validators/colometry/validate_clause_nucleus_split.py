@@ -734,7 +734,7 @@ def looks_like_participle(token: str) -> bool:
     if bare[0] == MEM and len(bare) >= 3:
         # Reject the very common מ-initial closed-class words and frequent
         # nouns that share the m-prefix shape but are NOT participles.
-        # Strip leading maqqef-bound first segment for membership 5-machinery/tests.
+        # Strip leading maqqef-bound first segment for membership tests.
         head_segment = bare.split(MAQQEF, 1)[0] if MAQQEF in bare else bare
         NOT_PARTICIPLE_M_HEADS = {
             # Closed-class

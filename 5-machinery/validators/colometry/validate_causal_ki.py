@@ -311,7 +311,7 @@ def line_has_finite_verb(line: str, token_tags: "list[list[str]] | None" = None)
 # ---------------------------------------------------------------------------
 
 # High-confidence cognition/speech verbs that take obligatory כִּי-complement
-# (per 1-method/canon §5 H7 Rule). These are the matrix verbs that make next כִּי a
+# (per canon §5 H7 Rule). These are the matrix verbs that make next כִּי a
 # complement (H7 territory), not causal.
 OBLIGATORY_COMPLEMENT_VERBS = {
     # Cognition verbs (qatal)

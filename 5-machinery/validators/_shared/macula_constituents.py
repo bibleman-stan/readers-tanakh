@@ -709,7 +709,7 @@ def clear_cache() -> None:
 # form ONE prosodic word, not multiple. This function gives the catalog its
 # operational definition.
 #
-# Per JM §13 / 1-method/canon H1: maqfek collapses two-to-four tokens into one
+# Per JM §13 / canon H1: maqfek collapses two-to-four tokens into one
 # prosodic-word unit. Sof-pasuq, blank space, and other terminators do NOT
 # collapse.
 

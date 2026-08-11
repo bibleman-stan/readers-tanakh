@@ -455,7 +455,7 @@ def _register_guard(name: str):
 
 
 # _g_poetic guard RETIRED 2026-05-05 (Stan re-affirmed methodology principle).
-# Per the 1-method/canon's "register is calibration, not authorization" rule (CLAUDE.md
+# Per the canon's "register is calibration, not authorization" rule (CLAUDE.md
 # "Imposing vs revealing" §Layer 3), validator logic and editorial judgment
 # must be register-agnostic. The 62 specs that previously listed
 # `- poetic_register` in their guards lists had it removed in the same purge.

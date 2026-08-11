@@ -586,7 +586,7 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
         if not line_tokens_ir:
             # IR alignment unavailable (e.g. synthetic fixture text with no
             # Macula lowfat coverage). Fall back to skeleton-heuristic detection
-            # so that fixture 5-machinery/tests and any unsupported books still fire correctly.
+            # so that fixture tests and any unsupported books still fire correctly.
             next_line_content = ""
             next_line_num_fb: int | None = None
             for j in range(i + 1, len(lines)):

@@ -42,7 +42,7 @@ EMBEDDED_POETRY = {
 }
 
 # Acrostic chapters: alphabetic-letter heads correlate with line starts ≥80%.
-# Hard-skip for 5-machinery/validators that would over-merge across acrostic boundaries.
+# Hard-skip for validators that would over-merge across acrostic boundaries.
 ACROSTIC_CHAPTERS = {
     "psalms":       {9, 10, 25, 34, 37, 111, 112, 119, 145},
     "proverbs":     [(31, (10, 31))],   # ch 31 vv 10–31 (eshet hayil)

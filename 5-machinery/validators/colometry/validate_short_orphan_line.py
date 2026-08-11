@@ -146,7 +146,7 @@ BOUND_PREP_PREFIX = frozenset({"ב", "ל", "כ", "מ"})
 # Superscription openers — when the verse-1 first content line begins with one
 # of these, the verse is a Psalm/Proverb superscription. The 2-token PP arm
 # does not fire on superscription verses (titles like "מִזְמוֹר לְדָוִד" pass
-# atomic-thought as a formulaic title; 1-method/canon §3 substantive-adjunct).
+# atomic-thought as a formulaic title; canon §3 substantive-adjunct).
 SUPERSCRIPTION_OPENER_SKELETONS = frozenset({
     "מזמור",     # מִזְמוֹר — psalm
     "למנצח",     # לַמְנַצֵּחַ — to the choirmaster
@@ -358,7 +358,7 @@ def is_standalone_permitted(
     # tag-path classifies on the LAST tag — so a verb-headed maqqef compound
     # is mis-read as non-finite (last tag = the noun/object). A maqqef
     # compound CONTAINING a finite verb is verb-anchored — a complete
-    # predication, not an M4 orphan. Maqqef is a Masoretic overlay (1-method/canon
+    # predication, not an M4 orphan. Maqqef is a Masoretic overlay (canon
     # §1: overlays inform, never dictate); the orphan call must rest on
     # atomic-thought completeness (finite verb present), not on the
     # maqqef-defined prosodic-word boundary. Mirrors the ANY-tag pattern
@@ -372,7 +372,7 @@ def is_standalone_permitted(
     if bare in CLASSICAL_COMMAS:
         return True
 
-    # (b') Speech-act-announcement marker — לֵאמֹר standing alone. Per 1-method/canon
+    # (b') Speech-act-announcement marker — לֵאמֹר standing alone. Per canon
     # §1 SJ3 / §5 H5: "the bare infinitive complementizer is a speech-act-
     # announcement marker, gets its own line at the point of speech-onset."
     # A standalone לֵאמֹר line is CANON-CORRECT, not an M4 orphan — it is
@@ -508,7 +508,7 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
         verse = v_ctx[1]
 
         # SUPERSEDED 2026-05-04 methodology audit: whole-validator poetic-register skip removed.
-        # Overlay-as-authorization is not permitted by the 1-method/canon — poetic register is calibration
+        # Overlay-as-authorization is not permitted by the canon — poetic register is calibration
         # (it informs expected rates), NOT authorization (it cannot silence a structural arm).
         # All M4 arms (subject-pronoun, atomic-thought, weqatal) apply in any register.
         # The atomic-thought arm may produce a higher REVIEW-REQUIRED rate in poetry; that is

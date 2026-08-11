@@ -141,7 +141,7 @@ LEEMOR_SKELETON = "לאמר"
 
 # Bare speech verbs that may introduce direct speech without לֵאמֹר.
 # Consonant skeletons (stripped). Centralised in _shared/speech_verbs.py
-# so multiple 5-machinery/validators (this one + validate_verb_object_bond H5b guard)
+# so multiple validators (this one + validate_verb_object_bond H5b guard)
 # share the same set without drift.
 from _shared.speech_verbs import BARE_SPEECH_VERB_SKELETONS  # noqa: E402
 
@@ -157,7 +157,7 @@ SPEECH_VERB_LEMMAS = {
 }
 
 # Canon §5 H5 closed list — line-leading messenger-formula prefixes
-# (כֹּה אָמַר X / נְאֻם־X). Per 1-method/canon §5 H5 line 825: "atomic formulaic
+# (כֹּה אָמַר X / נְאֻם־X). Per canon §5 H5 line 825: "atomic formulaic
 # units that get their own line — same default as ordinary finite
 # speech-frames now."
 SOLEMNITY_PREFIXES = frozenset({
@@ -394,7 +394,7 @@ def is_formula_only_line(orig_tokens: list[str]) -> bool:
 # ---------------------------------------------------------------------------
 # Detects lines where a speech-verb-headed frame is merged with quoted content
 # on a single line WITHOUT לֵאמֹר (the long-frame-with-לֵאמֹר case is handled
-# by the existing primary-check arm above). Per 1-method/canon §5 H5b: split.
+# by the existing primary-check arm above). Per canon §5 H5b: split.
 
 RECIPIENT_PP_HEAD_SKELS = frozenset({"אל", "ל", "את", "על", "עם"})
 PRONOMINAL_RECIPIENT_SKELS = frozenset({
@@ -1078,7 +1078,7 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
         tokens = line.split()
         bare_tokens = [strip_points(t) for t in tokens]
 
-        # --- Gap 1 / 1-method/canon §5 H5: SOLEMNITY-prefix split check ---
+        # --- Gap 1 / canon §5 H5: SOLEMNITY-prefix split check ---
         # Canon §5 H5 line 825 names two messenger formulas:
         #   (1) כֹּה אָמַר X — prophetic messenger formula (perfect אָמַר)
         #   (2) נְאֻם־X     — oracle/utterance attribution
@@ -1254,7 +1254,7 @@ def scan_file(path: Path, verbose: bool = False) -> list[dict]:
 
         # --- H5b short-frame-with-content check: speech verb starts line, no לֵאמֹר,
         # frame is merged with quoted content on the same line ---
-        # Per 1-method/canon §5 H5b (Path 1, 2026-05-02): split between announcement
+        # Per canon §5 H5b (Path 1, 2026-05-02): split between announcement
         # frame and quoted content. Mirrors the long-frame STRONG-SPLIT arm
         # above but for the no-לֵאמֹר case (~2,400 historic merges corpus-wide).
         # Tag-driven: requires TAHOT alignment for accurate frame-end detection.

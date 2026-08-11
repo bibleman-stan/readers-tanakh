@@ -140,7 +140,7 @@ def run_validator_on_fixture(
                     doc = json.loads(result.stdout)
                     findings_count = doc.get("summary", {}).get("total_findings", 0)
                 else:
-                    # Some 5-machinery/validators may emit nothing on error — use returncode
+                    # Some validators may emit nothing on error — use returncode
                     findings_count = 0
             except json.JSONDecodeError as e:
                 json_parse_error = str(e)
