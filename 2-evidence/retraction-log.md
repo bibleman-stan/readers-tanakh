@@ -45,6 +45,6 @@ already-completed retractions; no new claims asserted).
 ### 2026-05-17 — Validator-stack-as-producer architecture retracted
 - **Factor:** structural
 - **Sub-pattern:** "rules that GENERATE rendering vs rules that AUDIT proposed rendering" — producer-style framing dressed as constraints
-- **What was retracted:** the validator-stack-as-producer architecture (5-machinery/validators GENERATE ATU rendering decisions)
-- **What surfaced it:** architecture-method alignment audit — producer 5-machinery/validators don't match the method's claim that "rules constrain, not create"
+- **What was retracted:** the validator-stack-as-producer architecture (validators GENERATE ATU rendering decisions)
+- **What surfaced it:** architecture-method alignment audit — producer validators don't match the method's claim that "rules constrain, not create"
 - **Reference:** directive `2026-05-17-1500-ground-up-rebuild-architecture.md`; atu-method memories cascade `c9ab999`

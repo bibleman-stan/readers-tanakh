@@ -27,7 +27,7 @@ Output (in lockstep, all four parallel layers):
 - `data/text-files/v1/eng-gloss/{NN-book}/{abbr}-{NN}.txt` — naturalized English (one per cola)
 - `data/text-files/v1/translit/{NN-book}/{abbr}-{NN}.txt` — per-word translit
 
-Every line break in v1/he-baseline corresponds to a disjunctive accent at or above the threshold defined in the 1-method/canon. The other three layers are 1:1-aligned to the Hebrew at the cola level.
+Every line break in v1/he-baseline corresponds to a disjunctive accent at or above the threshold defined in the canon. The other three layers are 1:1-aligned to the Hebrew at the cola level.
 
 `v1/` is machine-deterministic. Re-running the parser on identical v0 input must produce identical v1 output.
 
@@ -41,11 +41,11 @@ Run the validator dashboard to get the work queue:
 PYTHONIOENCODING=utf-8 py -3 5-machinery/validators/run_all.py
 ```
 
-Findings tagged `STRONG-MERGE-CANDIDATE` or `STRONG-SPLIT-CANDIDATE` are Category A per 1-method/canon §2 Mechanical-rule authority — apply confidently. Findings tagged `REVIEW-REQUIRED` need per-item editorial judgment.
+Findings tagged `STRONG-MERGE-CANDIDATE` or `STRONG-SPLIT-CANDIDATE` are Category A per canon §2 Mechanical-rule authority — apply confidently. Findings tagged `REVIEW-REQUIRED` need per-item editorial judgment.
 
 **Editorial moves allowed:**
 
-- **Merge a v1-baseline break** — e.g., the parser broke at a position the editor judges does not warrant a colon boundary. Each editorial line break must positively justify itself as containing an atomic thought, citing which of the three editorial criteria (atomic thought, single image, Hebrew syntax) and any relevant structural justification (per colometry-canon.md §1) supports the break. Te'amim are not cited in defensibility-capture (consultative role retired 2026-05-05; 1-method/canon §1 + §8 entry).
+- **Merge a v1-baseline break** — e.g., the parser broke at a position the editor judges does not warrant a colon boundary. Each editorial line break must positively justify itself as containing an atomic thought, citing which of the three editorial criteria (atomic thought, single image, Hebrew syntax) and any relevant structural justification (per colometry-canon.md §1) supports the break. Te'amim are not cited in defensibility-capture (consultative role retired 2026-05-05; canon §1 + §8 entry).
 - **Insert a non-accent break** — e.g., a long colon contains two atomic thoughts that the accent system left fused. The insertion must cite which criterion warrants the additional break.
 - **Adjust whitespace and verse-number formatting** for readability.
 
@@ -55,7 +55,7 @@ Findings tagged `STRONG-MERGE-CANDIDATE` or `STRONG-SPLIT-CANDIDATE` are Categor
 - Add, remove, or substitute words
 - Change verse numbering
 
-Every editorial decision should be defensible against the 1-method/canon. When the 1-method/canon has no clear rule for a decision, that's a signal to either (a) note it for 1-method/canon revision, or (b) flag it for Stan review.
+Every editorial decision should be defensible against the canon. When the canon has no clear rule for a decision, that's a signal to either (a) note it for canon revision, or (b) flag it for Stan review.
 
 ## Stage 4a — Propagate per-word layers (translit + eng-interlinear)
 
@@ -92,10 +92,10 @@ PYTHONIOENCODING=utf-8 py -3 5-machinery/scripts/build_books.py --book jonah
 The validator suite under `5-machinery/validators/` runs on demand and at commit time (via the pre-commit hook):
 
 - **Layer 1 (Hebrew break-legality)** — checks for syntactic patterns that should not be split (e.g., maqqef-joined words; preposition + bound noun; construct chains kept together).
-- **Layer 3 (colometry)** — checks for methodology compliance (every line positively justified as an atomic thought per 1-method/canon §1; no orphaned lines; balanced colon lengths within reason). Current Layer 3 5-machinery/validators include Rule H18 — Clause-Nucleus Integrity (`validate_clause_nucleus_split.py`; REVIEW-REQUIRED only; see 1-method/canon §5 H18), which flags cola where a clause nucleus (subject + predicate) appears to be split across lines without a structural justification.
+- **Layer 3 (colometry)** — checks for methodology compliance (every line positively justified as an atomic thought per canon §1; no orphaned lines; balanced colon lengths within reason). Current Layer 3 validators include Rule H18 — Clause-Nucleus Integrity (`validate_clause_nucleus_split.py`; REVIEW-REQUIRED only; see 1-method/canon §5 H18), which flags cola where a clause nucleus (subject + predicate) appears to be split across lines without a structural justification.
 - **4-layer integrity** — `5-machinery/validators/4-layer-integrity/verify_4_layer_sync.py` validates per-Hebrew-ATU-cola token-count parity across the four layers (Hebrew / translit / interlinear / KJV). Run after any v2/heb edit. Current baseline: 907/929 PASS, 22 pre-existing translit/interlinear cola-count drifts (Hebrew + KJV align; translit + interlinear are exactly one cola short). Drift class is investigatable as a propagator gap; see `private/03-sessions/2026-05-12-post-migration-wake/pending.md` §5.1.
 
-Validator output is a work queue, not a review queue (1-method/canon §6). STRONG-tagged findings are application-ready; REVIEW-REQUIRED items need per-item editorial judgment.
+Validator output is a work queue, not a review queue (canon §6). STRONG-tagged findings are application-ready; REVIEW-REQUIRED items need per-item editorial judgment.
 
 ```bash
 PYTHONIOENCODING=utf-8 py -3 5-machinery/validators/run_all.py                   # dashboard
@@ -130,7 +130,7 @@ Every divergence from the v1-he-baseline should leave a trail. The simplest conv
 
 - The v2/heb file itself is the trail — comparing v1/he-baseline against v2/heb reveals every divergence (merges of accent breaks and splits not in v1)
 - A periodic sweep produces a "divergence census": count of divergences per book, per chapter, per criterion-invoked
-- Divergence hot-spots (chapters with unusually high divergence rates) are candidates for 1-method/canon revision — either the criteria need refinement, or the te'amim parser is producing systematic noise
+- Divergence hot-spots (chapters with unusually high divergence rates) are candidates for canon revision — either the criteria need refinement, or the te'amim parser is producing systematic noise
 
-Divergence rate from v1/he-baseline is a diagnostic metric only. The v1 baseline is a one-time mechanical artifact (parse_teamim.py output), not a normative target. High divergence may indicate (a) v1 over-fragmented mechanically and the editor correctly merged back, or (b) the editor's atomic-thought criterion is firing too aggressively and warrants review for 1-method/canon compliance. Both cases are diagnostic, not failures per se. (The te'amim that drove the v1 baseline are not consulted in editorial decisions; consultative role retired 2026-05-05 per 1-method/canon §1 + §8 entry.)
+Divergence rate from v1/he-baseline is a diagnostic metric only. The v1 baseline is a one-time mechanical artifact (parse_teamim.py output), not a normative target. High divergence may indicate (a) v1 over-fragmented mechanically and the editor correctly merged back, or (b) the editor's atomic-thought criterion is firing too aggressively and warrants review for canon compliance. Both cases are diagnostic, not failures per se. (The te'amim that drove the v1 baseline are not consulted in editorial decisions; consultative role retired 2026-05-05 per canon §1 + §8 entry.)
 

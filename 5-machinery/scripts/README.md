@@ -1,6 +1,6 @@
 # 5-machinery/scripts/ — Tanakh Reader Tooling
 
-This directory carries the pipeline 5-machinery/scripts, diagnostic scans, validator-meta tools, fixture 5-machinery/tests, and dormant-lexicon reference builders for the Tanakh reader. Scripts no longer in regular use live in [`5-machinery/scripts/archive/`](archive/) for provenance.
+This directory carries the pipeline scripts, diagnostic scans, validator-meta tools, fixture tests, and dormant-lexicon reference builders for the Tanakh reader. Scripts no longer in regular use live in [`5-machinery/scripts/archive/`](archive/) for provenance.
 
 ## Pipeline stages
 
@@ -9,7 +9,7 @@ The canonical editorial pipeline runs Stages 1–6. Per-stage detail in [`3-proj
 | Stage | Script | Purpose |
 |---|---|---|
 | 1 — Ingest (one-time per book) | `ingest_tahot.py` | Convert STEPBible TAHOT TSV into per-chapter `v0/prose/` files |
-| 2 — Generate v1 layers | `parse_teamim.py` | Te'amim parser → v1 he-baseline + interlinear + gloss + translit (historical mechanical artifact; 1-method/canon §1 retired te'amim consultative role 2026-05-05) |
+| 2 — Generate v1 layers | `parse_teamim.py` | Te'amim parser → v1 he-baseline + interlinear + gloss + translit (historical mechanical artifact; canon §1 retired te'amim consultative role 2026-05-05) |
 | 4a — Propagate per-word layers | `propagate_editorial_layers.py` | Re-segment translit + eng-interlinear to v2/heb token boundaries (word-stream invariant enforced) |
 | 4b — Regenerate KJV English | `regenerate_english.py` | KJV 1769 verbatim per Hebrew ATU cola via Strong's-number matching (atu_method.kjv_alignment) |
 | 5 — Build | `build_books.py` | Regenerate `books/{book}.html` from v2 (cascade falls through to v1 for unedited chapters) |
@@ -19,15 +19,15 @@ The canonical editorial pipeline runs Stages 1–6. Per-stage detail in [`3-proj
 | Apply | `apply_validators.py` | Cat-A mechanical apply from STRONG validator findings (registry: `ADOPTED_VALIDATORS` + `ALL_VALIDATORS`) |
 | Apply (spec-driven) | `apply_specs.py` | YAML-spec-driven apply via `5-machinery/validators/_shared/spec_runner.py` |
 
-## Diagnostic 5-machinery/scripts
+## Diagnostic scripts
 
-Standalone scanners that surface rule-class candidates or audit drift across the corpus. Run on-demand during 1-method/canon revision or validator development.
+Standalone scanners that surface rule-class candidates or audit drift across the corpus. Run on-demand during canon revision or validator development.
 
 | Script | Purpose |
 |---|---|
-| `scan_multi_finite_verb_line.py` | Hmfv scanner — surfaces multi-finite-verb lines (1-method/canon §5 H3 corpus-evidence rule) |
-| `audit_anaphoric_frame_macula.py` | Detector for the 13-verse anaphoric-frame Cat-B editorial set (1-method/canon §5 H19 retraction evidence) |
-| `scan_construct_chain_breaks.py` | Surface construct-chain breaks (1-method/canon §5 H2) |
+| `scan_multi_finite_verb_line.py` | Hmfv scanner — surfaces multi-finite-verb lines (canon §5 H3 corpus-evidence rule) |
+| `audit_anaphoric_frame_macula.py` | Detector for the 13-verse anaphoric-frame Cat-B editorial set (canon §5 H19 retraction evidence) |
+| `scan_construct_chain_breaks.py` | Surface construct-chain breaks (canon §5 H2) |
 | `scan_atomic_thought_violations.py` | M4 atomic-thought-fragment scanner |
 | `scan_english_drift.py` | English-layer vs Hebrew-layer drift detection |
 | `scan_under_broken.py` | Under-broken case surfacer |
@@ -36,7 +36,7 @@ Standalone scanners that surface rule-class candidates or audit drift across the
 | `trace_verse_cascade.py` | Trace a specific verse through the cascade pipeline |
 | `triage_validator_findings.py` | Triage utility for validator finding queues |
 
-## Validator-meta 5-machinery/scripts
+## Validator-meta scripts
 
 Tools used during validator FP-rate measurement, cluster-cascade work, and infrastructure-level quality work.
 
@@ -49,17 +49,17 @@ Tools used during validator FP-rate measurement, cluster-cascade work, and infra
 | `verify_kjv_distribution.py` | KJV distribution diff verifier (engine-change verification) |
 | `quality_dashboard.py` | Cross-corpus quality dashboard rendering |
 
-## Fixture 5-machinery/tests
+## Fixture tests
 
 Standalone test fixtures (kept in `5-machinery/scripts/` rather than `5-machinery/tests/` per current convention).
 
 | Script | Purpose |
 |---|---|
-| `test_h3_distinct_subject_signature.py` | Fixture for proposed AC §3.5.4(a) distinct-subject interruption STRONG-promotion signature (1-method/canon §5 H3) |
+| `test_h3_distinct_subject_signature.py` | Fixture for proposed AC §3.5.4(a) distinct-subject interruption STRONG-promotion signature (canon §5 H3) |
 
 ## Reference tools — dormant-lexicon builders
 
-These build the BONDED_LEMMA_PAIRS lexicon at `data/syntax-reference/hendiadys-lexicon.tsv` (88-pair set; 1-method/canon §1 M1 closed-list dormancy codified 2026-05-16 — kept for potential future activation if a context-discrimination protocol is built). Rerun only when source data updates.
+These build the BONDED_LEMMA_PAIRS lexicon at `data/syntax-reference/hendiadys-lexicon.tsv` (88-pair set; canon §1 M1 closed-list dormancy codified 2026-05-16 — kept for potential future activation if a context-discrimination protocol is built). Rerun only when source data updates.
 
 | Script | Purpose |
 |---|---|
@@ -72,9 +72,9 @@ These build the BONDED_LEMMA_PAIRS lexicon at `data/syntax-reference/hendiadys-l
 |---|---|---|
 | `apply_multi_finite_verb_strong.py` | Apply Hmfv STRONG-SPLIT findings to v2/heb as cola splits | Kept (multi-finite-verb merge is a recurring corpus pattern) |
 
-## Archived 5-machinery/scripts
+## Archived scripts
 
 See [`archive/README.md`](archive/) for per-script disposition history. Currently archived (2026-05-16):
-- 3 one-time cascade-apply 5-machinery/scripts (anaphoric-frame H19 / formula-integrity Gen 1 / hpar high-confidence)
+- 3 one-time cascade-apply scripts (anaphoric-frame H19 / formula-integrity Gen 1 / hpar high-confidence)
 - 1 revert utility (re-promote if recurring use emerges)
 - 2 HPar one-time extracts (extract + review formatter)

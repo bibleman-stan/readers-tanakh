@@ -1,7 +1,7 @@
 # Colometry Rule Validators
 
-Mechanical 5-machinery/validators for the Tanakh colometry 1-method/canon. Split into two layers
-matching the project's theoretical stack per 1-method/canon §6.
+Mechanical validators for the Tanakh colometry canon. Split into two layers
+matching the project's theoretical stack per canon §6.
 
 ## Directory layout
 
@@ -15,7 +15,7 @@ matching the project's theoretical stack per 1-method/canon §6.
 
 ## `syntax/` — Layer 1 (generic Hebrew grammar)
 
-These 5-machinery/validators check facts about Hebrew grammar that hold regardless of
+These validators check facts about Hebrew grammar that hold regardless of
 Tanakh-specific editorial policy. A failure here is a structural error in the
 line break — a hard grammatical violation that any competent Hebrew editor
 would flag.
@@ -43,8 +43,8 @@ PYTHONIOENCODING=utf-8 py -3 5-machinery/validators/syntax/validate_maqqef_integ
 
 ## `colometry/` — Layer 3 (Tanakh-specific editorial rules)
 
-These 5-machinery/validators check whether editorial line-break decisions conform to the
-settled rules of the Tanakh colometry 1-method/canon (H1–H17). A failure here is a
+These validators check whether editorial line-break decisions conform to the
+settled rules of the Tanakh colometry canon (H1–H17). A failure here is a
 policy deviation — the rule says the break should be elsewhere.
 
 **Reference:** `private/01-method/colometry-canon.md` §5
@@ -73,20 +73,20 @@ PYTHONIOENCODING=utf-8 py -3 5-machinery/validators/colometry/validate_construct
 |---|---|---|---|
 | `[MALFORMED]` | syntax/ | Hard grammatical failure — line break violates generic Hebrew structural grammar | Fix before editorial review |
 | `[DEVIATION]` | colometry/ | Editorial policy violation — break diverges from 1-method/canon rule H1–H17 | Review; document exception or merge/split |
-| `STRONG-MERGE-CANDIDATE` | colometry/ | Category A per 1-method/canon §2 — application-ready; merge without per-item review | Apply |
-| `STRONG-SPLIT-CANDIDATE` | colometry/ | Category A per 1-method/canon §2 — application-ready; split without per-item review | Apply |
-| `REVIEW-REQUIRED` | colometry/ | Category C per 1-method/canon §2 — editorial judgment needed before acting | Per-item editorial decision |
+| `STRONG-MERGE-CANDIDATE` | colometry/ | Category A per canon §2 — application-ready; merge without per-item review | Apply |
+| `STRONG-SPLIT-CANDIDATE` | colometry/ | Category A per canon §2 — application-ready; split without per-item review | Apply |
+| `REVIEW-REQUIRED` | colometry/ | Category C per canon §2 — editorial judgment needed before acting | Per-item editorial decision |
 
 **Validator output is a work queue, not a review queue.** `STRONG-*-CANDIDATE`
-tags are application-ready Category A per 1-method/canon §2; only `REVIEW-REQUIRED`
-items need per-item editorial judgment (1-method/canon §6 principle, ported from sibling
-BoFM 1-method/canon §6).
+tags are application-ready Category A per canon §2; only `REVIEW-REQUIRED`
+items need per-item editorial judgment (canon §6 principle, ported from sibling
+BoFM canon §6).
 
 ---
 
 ## Exit codes
 
-All 5-machinery/validators use the same convention:
+All validators use the same convention:
 
 - `0` — zero violations found; corpus is clean for this rule
 - `1` — violations found; output lists each with file, line number, tag, and brief
@@ -135,7 +135,7 @@ A rule earns a validator when three conditions hold:
 3. **Systematicity of the failure mode** — violations tend to be systematic
    (same pattern missed across many verses), not idiosyncratic one-offs.
 
-Rules failing condition 1 stay as editorial principles without 5-machinery/validators.
+Rules failing condition 1 stay as editorial principles without validators.
 The validator-build exercise is also a canon-pruning exercise: asking "does
 this rule earn a validator?" forces "does this rule earn its place?"
 
@@ -146,8 +146,8 @@ this rule earn a validator?" forces "does this rule earn its place?"
 1. Determine whether the rule is Layer 1 (generic Hebrew grammar) or Layer 3
    (Tanakh-specific editorial policy). Place in the matching subfolder.
 2. Name the file `validate_<rule_shortname>.py`.
-3. Add a header docstring citing the 1-method/canon rule (e.g., "Validates 1-method/canon Rule H2").
-4. Use `argparse` with `--book` parameter (see existing 5-machinery/validators for pattern).
+3. Add a header docstring citing the canon rule (e.g., "Validates canon Rule H2").
+4. Use `argparse` with `--book` parameter (see existing validators for pattern).
 5. Read from `v1/he-baseline/` by default; add `--v2` flag to switch to
    `v2/heb/` when editorial files exist.
 6. Output: `[TAG]  file:line  rule  brief` to stdout.

@@ -26,10 +26,10 @@ JM129-construct-chain at verse boundaries — those constraints apply at all
 positions including verse-end; this entry specifically addresses the
 VERSIFICATION boundary as a potential false split trigger.
 
-JM-oath-formula is governed by formula-integrity (1-method/canon §1), not a Joüon-
+JM-oath-formula is governed by formula-integrity (canon §1), not a Joüon-
 section grammar rule per se. The JM §147 citation covers the broader category
 of oaths and adjurations; the specific oath-formula constraint derives from
-1-method/canon M4 + formula-integrity.
+canon M4 + formula-integrity.
 
 ## Closed lists referenced
 

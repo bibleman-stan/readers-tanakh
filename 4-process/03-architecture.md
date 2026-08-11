@@ -7,7 +7,7 @@ readers-tanakh participates in the cross-corpus **four-plane architecture** docu
 | Plane | Where | This repo's role |
 |---|---|---|
 | Universal | `../atu-method/` | **Consumes.** KJV alignment engine (`atu_method.kjv_alignment`), swap engine (`atu_method.swaps`), MetaV CSVs, STEPBible Strong's lexicons, swap lists. |
-| Engine | `5-machinery/validators/`, `5-machinery/scripts/build_books.py`, `5-machinery/scripts/refresh_book.py`, pre-commit hook | **Owns.** Hebrew-side 5-machinery/validators, build pipeline, cascade orchestration. |
+| Engine | `5-machinery/validators/`, `5-machinery/scripts/build_books.py`, `5-machinery/scripts/refresh_book.py`, pre-commit hook | **Owns.** Hebrew-side validators, build pipeline, cascade orchestration. |
 | Corpus | `data/text-files/v2/heb/`, `data/text-files/v0/prose/` | **Owns.** TAHOT-sourced Hebrew, hand-edited gold standard. |
 | Editorial | `private/01-method/colometry-canon.md` | **Owns** Hebrew-specific application (rules H1–H18, M1–M4 overrides). Cross-corpus framework body lives at `../atu-method/1-method/framework.md`. |
 
@@ -80,13 +80,13 @@ The vendored TAHOT lives in `research/` (gitignored). The `data/` folder holds d
 
 ## Private Workspace (`private/`)
 
-The `private/` folder contains strategic, pre-publication, and methodology material that is intentionally kept out of the public repo: the colometry 1-method/canon, paper drafts, session artifacts, scan outputs, and adversarial audit reports. The folder is excluded via `.gitignore` per the project-siloing decision.
+The `private/` folder contains strategic, pre-publication, and methodology material that is intentionally kept out of the public repo: the colometry canon, paper drafts, session artifacts, scan outputs, and adversarial audit reports. The folder is excluded via `.gitignore` per the project-siloing decision.
 
 ### Numbered subdirectory layout
 
 | Dir | Purpose |
 |---|---|
-| `01-method/` | Methodology 1-method/canon (`colometry-canon.md`), te'amim references, methodology comparisons |
+| `01-method/` | Methodology canon (`colometry-canon.md`), te'amim references, methodology comparisons |
 | `02-research/` | Paper drafts, prospectus material, bibliography, strategy notes |
 | `03-sessions/` | Dated session artifacts — one subdirectory per session |
 | `04-audits/` | Self-audits, scan outputs, diagnostic findings |
@@ -129,11 +129,11 @@ The pipeline runs **v0 → v1 → v2** (3 tiers; collapsed from the 5-tier schem
 | v2 | `v2/eng-interlinear/`, `v2/translit/` | `propagate_editorial_layers.py` | Per-word layers re-segmented to v2/heb cola structure when Hebrew edits land. Word-stream invariant enforced. |
 | v2 | `v2/eng-kjv/` | `regenerate_english.py` (post-Wave-6) | KJV 1769 verbatim distributed per Hebrew ATU cola via `atu_method.kjv_alignment.align_verse()` (Strong's matching against TAHOT's per-Hebrew-token Strong's data). Renamed from `eng-gloss` 2026-05-12 to reflect actual substrate. |
 
-**Validator findings as work queue.** Validators in `5-machinery/validators/syntax/` (Layer 1) and `5-machinery/validators/colometry/` (Layer 3) emit STRONG-MERGE-CANDIDATE / STRONG-SPLIT-CANDIDATE / REVIEW-REQUIRED tags. STRONG findings are Category A per 1-method/canon §2 Mechanical-rule authority — apply confidently. REVIEW-REQUIRED items go to per-item editorial judgment. The `≥80%` adoption gate (1-method/canon §7 proposed-rule adoption protocol) governs when a validator's STRONG findings reach Category A confidence.
+**Validator findings as work queue.** Validators in `5-machinery/validators/syntax/` (Layer 1) and `5-machinery/validators/colometry/` (Layer 3) emit STRONG-MERGE-CANDIDATE / STRONG-SPLIT-CANDIDATE / REVIEW-REQUIRED tags. STRONG findings are Category A per canon §2 Mechanical-rule authority — apply confidently. REVIEW-REQUIRED items go to per-item editorial judgment. The `≥80%` adoption gate (canon §7 proposed-rule adoption protocol) governs when a validator's STRONG findings reach Category A confidence.
 
-**Why no separate auto-apply tier:** the previous v2-he-syntax (auto-apply Layer 1 STRONG) and v3-he-colometry (auto-apply Layer 3 STRONG) tiers were retired on 2026-04-27. The intermediate tiers added pipeline complexity without adding capability — STRONG findings now feed the editorial work queue directly with the same Category A/B/C reasoning the 1-method/canon already governs. The closed-list rule set (H1, H2, H5, H7, H11, H16) was not the mechanical-error surface that drove the original tier expansion in sibling projects; the autonomy boundary is established at the 1-method/canon level. Two tiers (baseline + editorial) are sufficient. See 1-method/canon §8 entry 2026-04-27 for full rationale.
+**Why no separate auto-apply tier:** the previous v2-he-syntax (auto-apply Layer 1 STRONG) and v3-he-colometry (auto-apply Layer 3 STRONG) tiers were retired on 2026-04-27. The intermediate tiers added pipeline complexity without adding capability — STRONG findings now feed the editorial work queue directly with the same Category A/B/C reasoning the canon already governs. The closed-list rule set (H1, H2, H5, H7, H11, H16) was not the mechanical-error surface that drove the original tier expansion in sibling projects; the autonomy boundary is established at the canon level. Two tiers (baseline + editorial) are sufficient. See 1-method/canon §8 entry 2026-04-27 for full rationale.
 
-**Mechanical-gate enforcement at commit time.** The pre-commit hook runs `5-machinery/validators/run_all.py --baseline-check` when 1-method/canon / editorial corpus / validator files are staged; the commit-msg hook runs `check_canon_extensions.py` when canon-extension patterns are present. Both block on regression / unaudited extension. See `CLAUDE.md` Three-Layer Validation Architecture & Mechanical Gates section.
+**Mechanical-gate enforcement at commit time.** The pre-commit hook runs `5-machinery/validators/run_all.py --baseline-check` when canon / editorial corpus / validator files are staged; the commit-msg hook runs `check_canon_extensions.py` when canon-extension patterns are present. Both block on regression / unaudited extension. See `CLAUDE.md` Three-Layer Validation Architecture & Mechanical Gates section.
 
 ## Build Pipeline (planned)
 
@@ -167,7 +167,7 @@ research/stepbible-tahot/  →  (ingest_tahot.py)
                            →  index.html (loads via fetch on demand; 4-layer view + Modern pill)
 ```
 
-Run 5-machinery/scripts with:
+Run scripts with:
 
 ```bash
 PYTHONIOENCODING=utf-8 py -3 5-machinery/scripts/<script>.py

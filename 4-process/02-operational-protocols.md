@@ -74,7 +74,7 @@ Before implementing a new colometric spec, helper, or validator:
 
 1. Generate **multiple candidate approaches** (3–5 angles), not just the first instinct
 2. Dispatch parallel adversarial agents to evaluate EACH approach against real corpus data
-3. Each evaluation agent 5-machinery/tests:
+3. Each evaluation agent tests:
    - Accuracy rate (how often it produces the desired result)
    - False positive rate (how often it produces unwanted side effects on the 39-book corpus)
    - Implementation complexity (how hard it is to write and maintain)
@@ -108,7 +108,7 @@ Distinct from Step 0 (audit BEFORE building). Step 0 evaluates candidates; Step 
 
 **Three-tier model routing for agent dispatch:**
 
-- **Haiku** (cheapest, fastest): file moves, renames, glob/ls formatting, mechanical reference lookups (find all X, count Y), single-file reads-and-summarize with no judgment, yes/no checks against file content, set-membership 5-machinery/tests, template fills.
+- **Haiku** (cheapest, fastest): file moves, renames, glob/ls formatting, mechanical reference lookups (find all X, count Y), single-file reads-and-summarize with no judgment, yes/no checks against file content, set-membership tests, template fills.
 - **Sonnet** (mid-tier): scanner runs where rules are already defined, quick consistency checks with narrow scope, documentation updates following a clear template, short adversarial checks on a single specific question, cross-project consistency checks once both sides are stable, mirroring edits between files.
 - **Opus** (reasoning-heavy): multi-angle adversarial audits requiring deep reasoning, methodology synthesis across multiple sources, restructuring major documents, novel rule design or hierarchy reframes, anything where the judgment IS the work product.
 
@@ -151,7 +151,7 @@ Run a 3-line Python script or grep to count forms A and B across the corpus. If 
 Do NOT derive the convention from:
 - A single example Stan wrote in a message
 - A single hand-edit Stan applied
-- Your own reading of a 1-method/canon principle
+- Your own reading of a canon principle
 
 GNT precedent (2026-04-18): 129-instance ὅτι-jam sweep went against a 10:1 corpus majority because the convention was extrapolated from one Stan example without querying the corpus. Recovery required 176 corrective edits. Same risk surface for any Hebrew formula-class sweep — wayyiqtol speech-intro chains, construct-chain joining direction, divine-name compound placement, blessing/curse frame conventions. The 12,000+ wayyiqtol instances and 1,000+ speech-intro formulas in the Tanakh make this risk surface much larger here than at the GNT.
 
@@ -180,9 +180,9 @@ The CLAUDE.md "Connected Resources" block lists six foundational scholarly refer
 
 After ANY significant change to merge/split rules or morphology helpers, dispatch parallel adversarial agents BEFORE committing:
 
-1. **Feature-specific adversary** — 5-machinery/tests the new rule for over-merges, under-merges, and edge cases. "I just changed X. Find every place where X might be wrong on the gold-standard chapters AND on a representative sample from the 6 clusters."
+1. **Feature-specific adversary** — tests the new rule for over-merges, under-merges, and edge cases. "I just changed X. Find every place where X might be wrong on the gold-standard chapters AND on a representative sample from the 6 clusters."
 
-2. **Rule-interaction adversary** — 5-machinery/tests all rules together for cascading errors and oscillation between passes. "Spec X interacts with spec Y. Find conflicts. Especially: does X create line-shapes that Y will undo?"
+2. **Rule-interaction adversary** — tests all rules together for cascading errors and oscillation between passes. "Spec X interacts with spec Y. Find conflicts. Especially: does X create line-shapes that Y will undo?"
 
 3. **Benchmark regression adversary** — re-runs known-good test cases to check for regressions. "Check that Jonah 1, Genesis 1, Deut 6, Psalm 1 still look right."
 
@@ -265,13 +265,13 @@ The 2026-04-30 session generated a long list of multi-line Python heredocs run v
 
 ### E2. Save Merge / Mutation Scripts to Files, Not Bash Heredocs
 
-Hebrew text contains apostrophes, niqqud, te'amim, maqqef, and other Unicode that interacts badly with bash heredocs and quoting. Always `Write` the script to `C:/tmp/*.py` (or a repo-local scratch dir) and run it via `py -3 C:/tmp/file.py`. Never paste large multi-line mutation 5-machinery/scripts through `bash -c` or heredoc.
+Hebrew text contains apostrophes, niqqud, te'amim, maqqef, and other Unicode that interacts badly with bash heredocs and quoting. Always `Write` the script to `C:/tmp/*.py` (or a repo-local scratch dir) and run it via `py -3 C:/tmp/file.py`. Never paste large multi-line mutation scripts through `bash -c` or heredoc.
 
 `/tmp` is **ephemeral between bash invocations on Windows**. Files written there in one Bash tool call may not exist in the next call. Use `C:/tmp/` (persistent) or a repo-local scratch path.
 
 ### E3. Content-Based Replacement Beats Line-Number Replacement
 
-Line numbers drift as earlier merges compress the file. A script that uses `text.replace(multiline_before, single_line_after, 1)` with full multi-line context strings is immune to drift and trivially audits itself (the match count must equal the expected count, or something's wrong). Line-number-based 5-machinery/scripts need re-sorting and offset math. **Mutation 5-machinery/scripts should use exact multi-line content matching, not line indices.**
+Line numbers drift as earlier merges compress the file. A script that uses `text.replace(multiline_before, single_line_after, 1)` with full multi-line context strings is immune to drift and trivially audits itself (the match count must equal the expected count, or something's wrong). Line-number-based scripts need re-sorting and offset math. **Mutation scripts should use exact multi-line content matching, not line indices.**
 
 ### E4. Find-the-Class → Build a Scanner > Dispatch Agents (when mechanical)
 
@@ -296,11 +296,11 @@ Reasons: easier to revert if one class goes wrong; cleaner git log; class-by-cla
 
 ### E6. Encode Invariants as Tests, Don't Spot-Check
 
-Spot-check operations that you'd want to do again — token-tag alignment for specific verses, v0/morph parity with v0/eng-baseline, cascade idempotency for known-stable chapters — should be encoded as 5-machinery/tests under `5-machinery/tests/` (or as scanners under `5-machinery/scripts/scan_*.py` if they fit that idiom), not re-run by hand each session. The scanners pattern (Stan-at-scale watchdogs) is exactly this discipline applied to corpus content; the same discipline applies to inner-loop infrastructure checks.
+Spot-check operations that you'd want to do again — token-tag alignment for specific verses, v0/morph parity with v0/eng-baseline, cascade idempotency for known-stable chapters — should be encoded as tests under `5-machinery/tests/` (or as scanners under `5-machinery/scripts/scan_*.py` if they fit that idiom), not re-run by hand each session. The scanners pattern (Stan-at-scale watchdogs) is exactly this discipline applied to corpus content; the same discipline applies to inner-loop infrastructure checks.
 
 ### E7. Tag-Driven Classification Over Skel-Heuristics
 
-The TAHOT morph tag layer (`v0/morph/`, persisted 2026-04-30 in commit b4d90ebe1) is the authoritative classification source. When writing a new helper, classifier, or validator, the default should be: **read the tag, not the orthographic skeleton.** Skel-heuristics survive only as fallback for the rare token without a tag. This applies project-wide, not just to spec_runner — scanners, standalone 5-machinery/validators, ingest 5-machinery/scripts, propagation logic should all consume tags as the primary primitive. See `5-machinery/validators/_shared/morph_tags.py` (pure tag parsers) and `5-machinery/validators/_shared/morph_alignment.py` (per-chapter loader). Phase 4+ of the TAHOT pivot expands tag-driven classification beyond `is_finite_verb` to construct/participle/infinitive/proper-noun across all consumers.
+The TAHOT morph tag layer (`v0/morph/`, persisted 2026-04-30 in commit b4d90ebe1) is the authoritative classification source. When writing a new helper, classifier, or validator, the default should be: **read the tag, not the orthographic skeleton.** Skel-heuristics survive only as fallback for the rare token without a tag. This applies project-wide, not just to spec_runner — scanners, standalone validators, ingest scripts, propagation logic should all consume tags as the primary primitive. See `5-machinery/validators/_shared/morph_tags.py` (pure tag parsers) and `5-machinery/validators/_shared/morph_alignment.py` (per-chapter loader). Phase 4+ of the TAHOT pivot expands tag-driven classification beyond `is_finite_verb` to construct/participle/infinitive/proper-noun across all consumers.
 
 ---
 
@@ -314,7 +314,7 @@ Before committing source text or v2/heb changes:
 4. ☐ Validator regression gate clean (`5-machinery/validators/run_all.py --baseline-check`); the pre-commit hook runs this
 5. ☐ Commit message explains WHY, not just WHAT (D3)
 6. ☐ Co-author trailer included
-7. ☐ For 1-method/canon edits: audit-status declared (`Audit-skippable per §7 (...)` OR `Audit dispatched: ...`)
+7. ☐ For canon edits: audit-status declared (`Audit-skippable per §7 (...)` OR `Audit dispatched: ...`)
 
 Before committing pipeline changes (apply_specs.py, apply_validators.py, morphology.py, spec_runner.py):
 
@@ -370,7 +370,7 @@ To compare spec findings before/after a code change, I used `git stash push → 
 
 ### H4. The two-cascade-engines confusion
 
-`apply_validators.py` (standalone 5-machinery/validators with adoption gate) and `apply_specs.py` (spec-runner findings) are two separate cascade engines. `refresh_book.py` only invokes the first. So when a spec_runner change lands, you must manually run `apply_specs --all-books` BEFORE `refresh_book --all-books --build`. This is a footgun unless you already know the architecture. **Eventual fix:** unified cascade pipeline. **Interim discipline:** a comment in CLAUDE.md (Follow-On Rebuild Cascade section) and a warning in apply_specs.py output noting that refresh_book is downstream.
+`apply_validators.py` (standalone validators with adoption gate) and `apply_specs.py` (spec-runner findings) are two separate cascade engines. `refresh_book.py` only invokes the first. So when a spec_runner change lands, you must manually run `apply_specs --all-books` BEFORE `refresh_book --all-books --build`. This is a footgun unless you already know the architecture. **Eventual fix:** unified cascade pipeline. **Interim discipline:** a comment in CLAUDE.md (Follow-On Rebuild Cascade section) and a warning in apply_specs.py output noting that refresh_book is downstream.
 
 ### H5. The dry-run cascade RUNAWAY artifact
 
@@ -401,7 +401,7 @@ Across multiple 2026-05-02 cycles, engine fixes uncovered latent bugs in OTHER p
 - For "verse V is oscillating" → run the cascade on V in non-dry-run mode against a scratch corpus and observe the actual touch count. Don't trust dry-run RUNAWAY reports (H5).
 - For "the cascade silently bailed" → check the dispatcher's actual exit code and stderr capture, not just the summary line.
 
-The 2026-05-02 m4_e investigation was based on misdiagnosis A1 ("dry-run RUNAWAY = m4_e oscillating") + A2 ("Gen 5:31 / 24:30 oscillating in committed baseline") — both falsified by 2026-05-03 verification agents in <30 minutes once the falsification 5-machinery/tests were dispatched. The investigation work itself was useful (uncovered the dry-run artifact and the real S4↔M2 partner), but the original framing was wrong. Cheaper to falsify-first than to debug-on-a-bad-premise.
+The 2026-05-02 m4_e investigation was based on misdiagnosis A1 ("dry-run RUNAWAY = m4_e oscillating") + A2 ("Gen 5:31 / 24:30 oscillating in committed baseline") — both falsified by 2026-05-03 verification agents in <30 minutes once the falsification tests were dispatched. The investigation work itself was useful (uncovered the dry-run artifact and the real S4↔M2 partner), but the original framing was wrong. Cheaper to falsify-first than to debug-on-a-bad-premise.
 
 ---
 
