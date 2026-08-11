@@ -13,4 +13,4 @@
 REPO_ROOT=$(git rev-parse --show-toplevel)
 cd "$REPO_ROOT"
 
-PYTHONIOENCODING=utf-8 py -3 validators/check_canon_extensions.py "$1"
+PYTHONIOENCODING=utf-8 py -3 5-machinery/validators/check_canon_extensions.py "$1"

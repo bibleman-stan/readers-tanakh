@@ -1,0 +1,195 @@
+{"cid": 527227, "verse": 1, "clause_idx_in_verse": 0, "typ": "WayX", "domain": "", "rela": "", "head_verb_lemma": "דבר", "head_verb_text": "יְדַבֵּ֧ר", "text": "וַיְדַבֵּ֧ר יְהוָ֛ה אֶל־מֹשֶׁ֥ה וְאֶֽל־אַהֲרֹ֖ן"}
+{"cid": 527228, "verse": 1, "clause_idx_in_verse": 1, "typ": "InfC", "domain": "", "rela": "", "head_verb_lemma": "אמר", "head_verb_text": "אמֹ֥ר", "text": "לֵאמֹ֥ר אֲלֵהֶֽם׃"}
+{"cid": 527229, "verse": 2, "clause_idx_in_verse": 0, "typ": "ZIm0", "domain": "", "rela": "", "head_verb_lemma": "דבר", "head_verb_text": "דַּבְּר֛וּ", "text": "דַּבְּר֛וּ אֶל־בְּנֵ֥י יִשְׂרָאֵ֖ל"}
+{"cid": 527230, "verse": 2, "clause_idx_in_verse": 1, "typ": "InfC", "domain": "", "rela": "", "head_verb_lemma": "אמר", "head_verb_text": "אמֹ֑ר", "text": "לֵאמֹ֑ר"}
+{"cid": 527231, "verse": 2, "clause_idx_in_verse": 2, "typ": "NmCl", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "זֹ֤את הַֽחַיָּה֙"}
+{"cid": 527232, "verse": 2, "clause_idx_in_verse": 3, "typ": "xYq0", "domain": "", "rela": "", "head_verb_lemma": "אכל", "head_verb_text": "תֹּאכְל֔וּ", "text": "אֲשֶׁ֣ר תֹּאכְל֔וּ מִכָּל־הַבְּהֵמָ֖ה"}
+{"cid": 527233, "verse": 2, "clause_idx_in_verse": 4, "typ": "NmCl", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "אֲשֶׁ֥ר עַל־הָאָֽרֶץ׃"}
+{"cid": 527234, "verse": 3, "clause_idx_in_verse": 0, "typ": "CPen", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "כֹּ֣ל׀"}
+{"cid": 527235, "verse": 3, "clause_idx_in_verse": 1, "typ": "Ptcp", "domain": "", "rela": "", "head_verb_lemma": "פרס", "head_verb_text": "מַפְרֶ֣סֶת", "text": "מַפְרֶ֣סֶת פַּרְסָ֗ה"}
+{"cid": 527236, "verse": 3, "clause_idx_in_verse": 2, "typ": "Ptcp", "domain": "", "rela": "", "head_verb_lemma": "שׁסע", "head_verb_text": "שֹׁסַ֤עַת", "text": "וְשֹׁסַ֤עַת שֶׁ֨סַע֙ פְּרָסֹ֔ת"}
+{"cid": 527237, "verse": 3, "clause_idx_in_verse": 3, "typ": "Ptcp", "domain": "", "rela": "", "head_verb_lemma": "עלה", "head_verb_text": "מַעֲלַ֥ת", "text": "מַעֲלַ֥ת גֵּרָ֖ה"}
+{"cid": 527238, "verse": 3, "clause_idx_in_verse": 4, "typ": "Defc", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "בַּבְּהֵמָ֑ה"}
+{"cid": 527239, "verse": 3, "clause_idx_in_verse": 5, "typ": "xYq0", "domain": "", "rela": "", "head_verb_lemma": "אכל", "head_verb_text": "תֹּאכֵֽלוּ", "text": "אֹתָ֖הּ תֹּאכֵֽלוּ׃"}
+{"cid": 527240, "verse": 4, "clause_idx_in_verse": 0, "typ": "xYq0", "domain": "", "rela": "", "head_verb_lemma": "אכל", "head_verb_text": "תֹֽאכְל֔וּ", "text": "אַ֤ךְ אֶת־זֶה֙ לֹ֣א תֹֽאכְל֔וּ מִֽמַּעֲלֵי֙ הַגֵּרָ֔ה וּמִמַּפְרִיסֵ֖י הַפַּרְסָ֑ה"}
+{"cid": 527241, "verse": 4, "clause_idx_in_verse": 1, "typ": "Ellp", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "אֶֽת־הַ֠גָּמָל"}
+{"cid": 527242, "verse": 4, "clause_idx_in_verse": 2, "typ": "AjCl", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "כִּֽי־מַעֲלֵ֨ה גֵרָ֜ה ה֗וּא"}
+{"cid": 527243, "verse": 4, "clause_idx_in_verse": 3, "typ": "Ptcp", "domain": "", "rela": "", "head_verb_lemma": "פרס", "head_verb_text": "מַפְרִ֔יס", "text": "וּפַרְסָה֙ אֵינֶ֣נּוּ מַפְרִ֔יס"}
+{"cid": 527244, "verse": 4, "clause_idx_in_verse": 4, "typ": "AjCl", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "טָמֵ֥א ה֖וּא לָכֶֽם׃"}
+{"cid": 527245, "verse": 5, "clause_idx_in_verse": 0, "typ": "Ellp", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "וְאֶת־הַשָּׁפָ֗ן"}
+{"cid": 527246, "verse": 5, "clause_idx_in_verse": 1, "typ": "AjCl", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "כִּֽי־מַעֲלֵ֤ה גֵרָה֙ ה֔וּא"}
+{"cid": 527247, "verse": 5, "clause_idx_in_verse": 2, "typ": "WxY0", "domain": "", "rela": "", "head_verb_lemma": "פרס", "head_verb_text": "יַפְרִ֑יס", "text": "וּפַרְסָ֖ה לֹ֣א יַפְרִ֑יס"}
+{"cid": 527248, "verse": 5, "clause_idx_in_verse": 3, "typ": "AjCl", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "טָמֵ֥א ה֖וּא לָכֶֽם׃"}
+{"cid": 527249, "verse": 6, "clause_idx_in_verse": 0, "typ": "Ellp", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "וְאֶת־הָאַרְנֶ֗בֶת"}
+{"cid": 527250, "verse": 6, "clause_idx_in_verse": 1, "typ": "AjCl", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "כִּֽי־מַעֲלַ֤ת גֵּרָה֙ הִ֔וא"}
+{"cid": 527251, "verse": 6, "clause_idx_in_verse": 2, "typ": "WxQ0", "domain": "", "rela": "", "head_verb_lemma": "פרס", "head_verb_text": "הִפְרִ֑יסָה", "text": "וּפַרְסָ֖ה לֹ֣א הִפְרִ֑יסָה"}
+{"cid": 527252, "verse": 6, "clause_idx_in_verse": 3, "typ": "AjCl", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "טְמֵאָ֥ה הִ֖וא לָכֶֽם׃"}
+{"cid": 527253, "verse": 7, "clause_idx_in_verse": 0, "typ": "Ellp", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "וְאֶת־הַ֠חֲזִיר"}
+{"cid": 527254, "verse": 7, "clause_idx_in_verse": 1, "typ": "AjCl", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "כִּֽי־מַפְרִ֨יס פַּרְסָ֜ה ה֗וּא"}
+{"cid": 527255, "verse": 7, "clause_idx_in_verse": 2, "typ": "Ptcp", "domain": "", "rela": "", "head_verb_lemma": "שׁסע", "head_verb_text": "שֹׁסַ֥ע", "text": "וְשֹׁסַ֥ע שֶׁ֨סַע֙ פַּרְסָ֔ה"}
+{"cid": 527256, "verse": 7, "clause_idx_in_verse": 3, "typ": "WXYq", "domain": "", "rela": "", "head_verb_lemma": "גרר", "head_verb_text": "יִגָּ֑ר", "text": "וְה֖וּא גֵּרָ֣ה לֹֽא־יִגָּ֑ר"}
+{"cid": 527257, "verse": 7, "clause_idx_in_verse": 4, "typ": "AjCl", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "טָמֵ֥א ה֖וּא לָכֶֽם׃"}
+{"cid": 527258, "verse": 8, "clause_idx_in_verse": 0, "typ": "xYq0", "domain": "", "rela": "", "head_verb_lemma": "אכל", "head_verb_text": "תֹאכֵ֔לוּ", "text": "מִבְּשָׂרָם֙ לֹ֣א תֹאכֵ֔לוּ"}
+{"cid": 527259, "verse": 8, "clause_idx_in_verse": 1, "typ": "WxY0", "domain": "", "rela": "", "head_verb_lemma": "נגע", "head_verb_text": "תִגָּ֑עוּ", "text": "וּבְנִבְלָתָ֖ם לֹ֣א תִגָּ֑עוּ"}
+{"cid": 527260, "verse": 8, "clause_idx_in_verse": 2, "typ": "AjCl", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "טְמֵאִ֥ים הֵ֖ם לָכֶֽם׃"}
+{"cid": 527261, "verse": 9, "clause_idx_in_verse": 0, "typ": "xYq0", "domain": "", "rela": "", "head_verb_lemma": "אכל", "head_verb_text": "תֹּֽאכְל֔וּ", "text": "אֶת־זֶה֙ תֹּֽאכְל֔וּ מִכֹּ֖ל"}
+{"cid": 527262, "verse": 9, "clause_idx_in_verse": 1, "typ": "NmCl", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "אֲשֶׁ֣ר בַּמָּ֑יִם"}
+{"cid": 527263, "verse": 9, "clause_idx_in_verse": 2, "typ": "CPen", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "כֹּ֣ל"}
+{"cid": 527264, "verse": 9, "clause_idx_in_verse": 3, "typ": "NmCl", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "אֲשֶׁר־לֹו֩ סְנַפִּ֨יר וְקַשְׂקֶ֜שֶׂת בַּמַּ֗יִם בַּיַּמִּ֛ים וּבַנְּחָלִ֖ים"}
+{"cid": 527265, "verse": 9, "clause_idx_in_verse": 4, "typ": "xYq0", "domain": "", "rela": "", "head_verb_lemma": "אכל", "head_verb_text": "תֹּאכֵֽלוּ", "text": "אֹתָ֥ם תֹּאכֵֽלוּ׃"}
+{"cid": 527266, "verse": 10, "clause_idx_in_verse": 0, "typ": "CPen", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "וְכֹל֩"}
+{"cid": 527267, "verse": 10, "clause_idx_in_verse": 1, "typ": "NmCl", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "אֲשֶׁ֨ר אֵֽין־לֹ֜ו סְנַפִּ֣יר וְקַשְׂקֶ֗שֶׂת בַּיַּמִּים֙ וּבַנְּחָלִ֔ים"}
+{"cid": 527268, "verse": 10, "clause_idx_in_verse": 2, "typ": "Defc", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "מִכֹּל֙ שֶׁ֣רֶץ הַמַּ֔יִם וּמִכֹּ֛ל נֶ֥פֶשׁ הַחַיָּ֖ה"}
+{"cid": 527269, "verse": 10, "clause_idx_in_verse": 3, "typ": "NmCl", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "אֲשֶׁ֣ר בַּמָּ֑יִם"}
+{"cid": 527270, "verse": 10, "clause_idx_in_verse": 4, "typ": "NmCl", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "שֶׁ֥קֶץ הֵ֖ם לָכֶֽם׃"}
+{"cid": 527271, "verse": 11, "clause_idx_in_verse": 0, "typ": "WxY0", "domain": "", "rela": "", "head_verb_lemma": "היה", "head_verb_text": "יִהְי֣וּ", "text": "וְשֶׁ֖קֶץ יִהְי֣וּ לָכֶ֑ם"}
+{"cid": 527272, "verse": 11, "clause_idx_in_verse": 1, "typ": "xYq0", "domain": "", "rela": "", "head_verb_lemma": "אכל", "head_verb_text": "תֹאכֵ֔לוּ", "text": "מִבְּשָׂרָם֙ לֹ֣א תֹאכֵ֔לוּ"}
+{"cid": 527273, "verse": 11, "clause_idx_in_verse": 2, "typ": "WxY0", "domain": "", "rela": "", "head_verb_lemma": "שׁקץ", "head_verb_text": "תְּשַׁקֵּֽצוּ", "text": "וְאֶת־נִבְלָתָ֖ם תְּשַׁקֵּֽצוּ׃"}
+{"cid": 527274, "verse": 12, "clause_idx_in_verse": 0, "typ": "CPen", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "כֹּ֣ל"}
+{"cid": 527275, "verse": 12, "clause_idx_in_verse": 1, "typ": "NmCl", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "אֲשֶׁ֥ר אֵֽין־לֹ֛ו סְנַפִּ֥יר וְקַשְׂקֶ֖שֶׂת"}
+{"cid": 527276, "verse": 12, "clause_idx_in_verse": 2, "typ": "Defc", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "בַּמָּ֑יִם"}
+{"cid": 527277, "verse": 12, "clause_idx_in_verse": 3, "typ": "NmCl", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "שֶׁ֥קֶץ ה֖וּא לָכֶֽם׃"}
+{"cid": 527278, "verse": 13, "clause_idx_in_verse": 0, "typ": "WxY0", "domain": "", "rela": "", "head_verb_lemma": "שׁקץ", "head_verb_text": "תְּשַׁקְּצ֣וּ", "text": "וְאֶת־אֵ֨לֶּה֙ תְּשַׁקְּצ֣וּ מִן־הָעֹ֔וף"}
+{"cid": 527279, "verse": 13, "clause_idx_in_verse": 1, "typ": "xYq0", "domain": "", "rela": "", "head_verb_lemma": "אכל", "head_verb_text": "יֵאָכְל֖וּ", "text": "לֹ֥א יֵאָכְל֖וּ"}
+{"cid": 527280, "verse": 13, "clause_idx_in_verse": 2, "typ": "NmCl", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "שֶׁ֣קֶץ הֵ֑ם"}
+{"cid": 527281, "verse": 13, "clause_idx_in_verse": 3, "typ": "Ellp", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "אֶת־הַנֶּ֨שֶׁר֙ וְאֶת־הַפֶּ֔רֶס וְאֵ֖ת הָעָזְנִיָּֽה׃"}
+{"cid": 527282, "verse": 14, "clause_idx_in_verse": 0, "typ": "Ellp", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "וְאֶת־הַ֨דָּאָ֔ה וְאֶת־הָאַיָּ֖ה לְמִינָֽהּ׃"}
+{"cid": 527283, "verse": 15, "clause_idx_in_verse": 0, "typ": "Ellp", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "אֵ֥ת כָּל־עֹרֵ֖ב לְמִינֹֽו׃"}
+{"cid": 527284, "verse": 16, "clause_idx_in_verse": 0, "typ": "Ellp", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "וְאֵת֙ בַּ֣ת הַֽיַּעֲנָ֔ה וְאֶת־הַתַּחְמָ֖ס וְאֶת־הַשָּׁ֑חַף וְאֶת־הַנֵּ֖ץ לְמִינֵֽהוּ׃"}
+{"cid": 527285, "verse": 17, "clause_idx_in_verse": 0, "typ": "Ellp", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "וְאֶת־הַכֹּ֥וס וְאֶת־הַשָּׁלָ֖ךְ וְאֶת־הַיַּנְשֽׁוּף׃"}
+{"cid": 527286, "verse": 18, "clause_idx_in_verse": 0, "typ": "Ellp", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "וְאֶת־הַתִּנְשֶׁ֥מֶת וְאֶת־הַקָּאָ֖ת וְאֶת־הָרָחָֽם׃"}
+{"cid": 527287, "verse": 19, "clause_idx_in_verse": 0, "typ": "Ellp", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "וְאֵת֙ הַחֲסִידָ֔ה הָאֲנָפָ֖ה לְמִינָ֑הּ וְאֶת־הַדּוּכִיפַ֖ת וְאֶת־הָעֲטַלֵּֽף׃"}
+{"cid": 527288, "verse": 20, "clause_idx_in_verse": 0, "typ": "CPen", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "כֹּ֚ל שֶׁ֣רֶץ הָעֹ֔וף"}
+{"cid": 527289, "verse": 20, "clause_idx_in_verse": 1, "typ": "Ptcp", "domain": "", "rela": "", "head_verb_lemma": "הלך", "head_verb_text": "הֹלֵ֖ךְ", "text": "הַהֹלֵ֖ךְ עַל־אַרְבַּ֑ע"}
+{"cid": 527290, "verse": 20, "clause_idx_in_verse": 2, "typ": "NmCl", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "שֶׁ֥קֶץ ה֖וּא לָכֶֽם׃ ס"}
+{"cid": 527291, "verse": 21, "clause_idx_in_verse": 0, "typ": "xYq0", "domain": "", "rela": "", "head_verb_lemma": "אכל", "head_verb_text": "תֹּֽאכְל֔וּ", "text": "אַ֤ךְ אֶת־זֶה֙ תֹּֽאכְל֔וּ מִכֹּל֙ שֶׁ֣רֶץ הָעֹ֔וף"}
+{"cid": 527292, "verse": 21, "clause_idx_in_verse": 1, "typ": "Ptcp", "domain": "", "rela": "", "head_verb_lemma": "הלך", "head_verb_text": "הֹלֵ֖ךְ", "text": "הַהֹלֵ֖ךְ עַל־אַרְבַּ֑ע"}
+{"cid": 527293, "verse": 21, "clause_idx_in_verse": 2, "typ": "NmCl", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "אֲשֶׁר־לא כְרָעַ֨יִם֙ מִמַּ֣עַל לְרַגְלָ֔יו"}
+{"cid": 527294, "verse": 21, "clause_idx_in_verse": 3, "typ": "InfC", "domain": "", "rela": "", "head_verb_lemma": "נתר", "head_verb_text": "נַתֵּ֥ר", "text": "לְנַתֵּ֥ר בָּהֵ֖ן עַל־הָאָֽרֶץ׃"}
+{"cid": 527295, "verse": 22, "clause_idx_in_verse": 0, "typ": "xYq0", "domain": "", "rela": "", "head_verb_lemma": "אכל", "head_verb_text": "תֹּאכֵ֔לוּ", "text": "אֶת־אֵ֤לֶּה מֵהֶם֙ תֹּאכֵ֔לוּ"}
+{"cid": 527296, "verse": 22, "clause_idx_in_verse": 1, "typ": "Ellp", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "אֶת־הָֽאַרְבֶּ֣ה לְמִינֹ֔ו וְאֶת־הַסָּלְעָ֖ם לְמִינֵ֑הוּ וְאֶת־הַחַרְגֹּ֣ל לְמִינֵ֔הוּ וְאֶת־הֶחָגָ֖ב לְמִינֵֽהוּ׃"}
+{"cid": 527297, "verse": 23, "clause_idx_in_verse": 0, "typ": "CPen", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "וְכֹל֙ שֶׁ֣רֶץ הָעֹ֔וף"}
+{"cid": 527298, "verse": 23, "clause_idx_in_verse": 1, "typ": "NmCl", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "אֲשֶׁר־לֹ֖ו אַרְבַּ֣ע רַגְלָ֑יִם"}
+{"cid": 527299, "verse": 23, "clause_idx_in_verse": 2, "typ": "NmCl", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "שֶׁ֥קֶץ ה֖וּא לָכֶֽם׃"}
+{"cid": 527300, "verse": 24, "clause_idx_in_verse": 0, "typ": "WxY0", "domain": "", "rela": "", "head_verb_lemma": "טמא", "head_verb_text": "תִּטַּמָּ֑אוּ", "text": "וּלְאֵ֖לֶּה תִּטַּמָּ֑אוּ"}
+{"cid": 527301, "verse": 24, "clause_idx_in_verse": 1, "typ": "Defc", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "כָּל־"}
+{"cid": 527302, "verse": 24, "clause_idx_in_verse": 2, "typ": "Ptcp", "domain": "", "rela": "", "head_verb_lemma": "נגע", "head_verb_text": "נֹּגֵ֥עַ", "text": "הַנֹּגֵ֥עַ בְּנִבְלָתָ֖ם"}
+{"cid": 527303, "verse": 24, "clause_idx_in_verse": 3, "typ": "ZYq0", "domain": "", "rela": "", "head_verb_lemma": "טמא", "head_verb_text": "יִטְמָ֥א", "text": "יִטְמָ֥א עַד־הָעָֽרֶב׃"}
+{"cid": 527304, "verse": 25, "clause_idx_in_verse": 0, "typ": "Defc", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "וְכָל־"}
+{"cid": 527305, "verse": 25, "clause_idx_in_verse": 1, "typ": "Ptcp", "domain": "", "rela": "", "head_verb_lemma": "נשׂא", "head_verb_text": "נֹּשֵׂ֖א", "text": "הַנֹּשֵׂ֖א מִנִּבְלָתָ֑ם"}
+{"cid": 527306, "verse": 25, "clause_idx_in_verse": 2, "typ": "ZYq0", "domain": "", "rela": "", "head_verb_lemma": "כבס", "head_verb_text": "יְכַבֵּ֥ס", "text": "יְכַבֵּ֥ס בְּגָדָ֖יו"}
+{"cid": 527307, "verse": 25, "clause_idx_in_verse": 3, "typ": "WQt0", "domain": "", "rela": "", "head_verb_lemma": "טמא", "head_verb_text": "טָמֵ֥א", "text": "וְטָמֵ֥א עַד־הָעָֽרֶב׃"}
+{"cid": 527308, "verse": 26, "clause_idx_in_verse": 0, "typ": "CPen", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "לְֽכָל־הַבְּהֵמָ֡ה"}
+{"cid": 527309, "verse": 26, "clause_idx_in_verse": 1, "typ": "Ptcp", "domain": "", "rela": "", "head_verb_lemma": "פרס", "head_verb_text": "מַפְרֶ֨סֶת", "text": "אֲשֶׁ֣ר הִוא֩ מַפְרֶ֨סֶת פַּרְסָ֜ה"}
+{"cid": 527310, "verse": 26, "clause_idx_in_verse": 2, "typ": "Ptcp", "domain": "", "rela": "", "head_verb_lemma": "שׁסע", "head_verb_text": "שֹׁסַ֗עַת", "text": "וְשֶׁ֣סַע׀ אֵינֶ֣נָּה שֹׁסַ֗עַת"}
+{"cid": 527311, "verse": 26, "clause_idx_in_verse": 3, "typ": "Ptcp", "domain": "", "rela": "", "head_verb_lemma": "עלה", "head_verb_text": "מַעֲלָ֔ה", "text": "וְגֵרָה֙ אֵינֶ֣נָּה מַעֲלָ֔ה"}
+{"cid": 527312, "verse": 26, "clause_idx_in_verse": 4, "typ": "AjCl", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "טְמֵאִ֥ים הֵ֖ם לָכֶ֑ם"}
+{"cid": 527313, "verse": 26, "clause_idx_in_verse": 5, "typ": "Defc", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "כָּל־"}
+{"cid": 527314, "verse": 26, "clause_idx_in_verse": 6, "typ": "Ptcp", "domain": "", "rela": "", "head_verb_lemma": "נגע", "head_verb_text": "נֹּגֵ֥עַ", "text": "הַנֹּגֵ֥עַ בָּהֶ֖ם"}
+{"cid": 527315, "verse": 26, "clause_idx_in_verse": 7, "typ": "ZYq0", "domain": "", "rela": "", "head_verb_lemma": "טמא", "head_verb_text": "יִטְמָֽא", "text": "יִטְמָֽא׃"}
+{"cid": 527316, "verse": 27, "clause_idx_in_verse": 0, "typ": "CPen", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "וְכֹ֣ל׀"}
+{"cid": 527317, "verse": 27, "clause_idx_in_verse": 1, "typ": "Ptcp", "domain": "", "rela": "", "head_verb_lemma": "הלך", "head_verb_text": "הֹולֵ֣ךְ", "text": "הֹולֵ֣ךְ עַל־כַּפָּ֗יו"}
+{"cid": 527318, "verse": 27, "clause_idx_in_verse": 2, "typ": "Defc", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "בְּכָל־הַֽחַיָּה֙"}
+{"cid": 527319, "verse": 27, "clause_idx_in_verse": 3, "typ": "Ptcp", "domain": "", "rela": "", "head_verb_lemma": "הלך", "head_verb_text": "הֹלֶ֣כֶת", "text": "הַהֹלֶ֣כֶת עַל־אַרְבַּ֔ע"}
+{"cid": 527320, "verse": 27, "clause_idx_in_verse": 4, "typ": "AjCl", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "טְמֵאִ֥ים הֵ֖ם לָכֶ֑ם"}
+{"cid": 527321, "verse": 27, "clause_idx_in_verse": 5, "typ": "Defc", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "כָּל־"}
+{"cid": 527322, "verse": 27, "clause_idx_in_verse": 6, "typ": "Ptcp", "domain": "", "rela": "", "head_verb_lemma": "נגע", "head_verb_text": "נֹּגֵ֥עַ", "text": "הַנֹּגֵ֥עַ בְּנִבְלָתָ֖ם"}
+{"cid": 527323, "verse": 27, "clause_idx_in_verse": 7, "typ": "ZYq0", "domain": "", "rela": "", "head_verb_lemma": "טמא", "head_verb_text": "יִטְמָ֥א", "text": "יִטְמָ֥א עַד־הָעָֽרֶב׃"}
+{"cid": 527324, "verse": 28, "clause_idx_in_verse": 0, "typ": "Defc", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "וְ"}
+{"cid": 527325, "verse": 28, "clause_idx_in_verse": 1, "typ": "Ptcp", "domain": "", "rela": "", "head_verb_lemma": "נשׂא", "head_verb_text": "נֹּשֵׂא֙", "text": "הַנֹּשֵׂא֙ אֶת־נִבְלָתָ֔ם"}
+{"cid": 527326, "verse": 28, "clause_idx_in_verse": 2, "typ": "ZYq0", "domain": "", "rela": "", "head_verb_lemma": "כבס", "head_verb_text": "יְכַבֵּ֥ס", "text": "יְכַבֵּ֥ס בְּגָדָ֖יו"}
+{"cid": 527327, "verse": 28, "clause_idx_in_verse": 3, "typ": "WQt0", "domain": "", "rela": "", "head_verb_lemma": "טמא", "head_verb_text": "טָמֵ֣א", "text": "וְטָמֵ֣א עַד־הָעָ֑רֶב"}
+{"cid": 527328, "verse": 28, "clause_idx_in_verse": 4, "typ": "AjCl", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "טְמֵאִ֥ים הֵ֖מָּה לָכֶֽם׃ ס"}
+{"cid": 527329, "verse": 29, "clause_idx_in_verse": 0, "typ": "NmCl", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "וְזֶ֤ה לָכֶם֙ הַטָּמֵ֔א בַּשֶּׁ֖רֶץ"}
+{"cid": 527330, "verse": 29, "clause_idx_in_verse": 1, "typ": "Ptcp", "domain": "", "rela": "", "head_verb_lemma": "שׁרץ", "head_verb_text": "שֹּׁרֵ֣ץ", "text": "הַשֹּׁרֵ֣ץ עַל־הָאָ֑רֶץ"}
+{"cid": 527331, "verse": 29, "clause_idx_in_verse": 2, "typ": "Ellp", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "הַחֹ֥לֶד וְהָעַכְבָּ֖ר וְהַצָּ֥ב לְמִינֵֽהוּ׃"}
+{"cid": 527332, "verse": 30, "clause_idx_in_verse": 0, "typ": "Ellp", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "וְהָאֲנָקָ֥ה וְהַכֹּ֖חַ וְהַלְּטָאָ֑ה וְהַחֹ֖מֶט וְהַתִּנְשָֽׁמֶת׃"}
+{"cid": 527333, "verse": 31, "clause_idx_in_verse": 0, "typ": "NmCl", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "אֵ֛לֶּה הַטְּמֵאִ֥ים לָכֶ֖ם בְּכָל־הַשָּׁ֑רֶץ"}
+{"cid": 527334, "verse": 31, "clause_idx_in_verse": 1, "typ": "Defc", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "כָּל־"}
+{"cid": 527335, "verse": 31, "clause_idx_in_verse": 2, "typ": "Ptcp", "domain": "", "rela": "", "head_verb_lemma": "נגע", "head_verb_text": "נֹּגֵ֧עַ", "text": "הַנֹּגֵ֧עַ בָּהֶ֛ם בְּמֹתָ֖ם"}
+{"cid": 527336, "verse": 31, "clause_idx_in_verse": 3, "typ": "ZYq0", "domain": "", "rela": "", "head_verb_lemma": "טמא", "head_verb_text": "יִטְמָ֥א", "text": "יִטְמָ֥א עַד־הָעָֽרֶב׃"}
+{"cid": 527337, "verse": 32, "clause_idx_in_verse": 0, "typ": "Defc", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "וְכֹ֣ל"}
+{"cid": 527338, "verse": 32, "clause_idx_in_verse": 1, "typ": "xYqX", "domain": "", "rela": "", "head_verb_lemma": "נפל", "head_verb_text": "יִפֹּל", "text": "אֲשֶׁר־יִפֹּל־עָלָיו֩ מֵהֶ֨ם׀ בְּמֹתָ֜ם"}
+{"cid": 527339, "verse": 32, "clause_idx_in_verse": 2, "typ": "ZYq0", "domain": "", "rela": "", "head_verb_lemma": "טמא", "head_verb_text": "יִטְמָ֗א", "text": "יִטְמָ֗א מִכָּל־כְּלִי־עֵץ֙ אֹ֣ו בֶ֤גֶד אֹו־עֹור֙ אֹ֣ו שָׂ֔ק"}
+{"cid": 527340, "verse": 32, "clause_idx_in_verse": 3, "typ": "Defc", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "כָּל־כְּלִ֕י"}
+{"cid": 527341, "verse": 32, "clause_idx_in_verse": 4, "typ": "xYqX", "domain": "", "rela": "", "head_verb_lemma": "עשׂה", "head_verb_text": "יֵעָשֶׂ֥ה", "text": "אֲשֶׁר־יֵעָשֶׂ֥ה מְלָאכָ֖ה בָּהֶ֑ם"}
+{"cid": 527342, "verse": 32, "clause_idx_in_verse": 5, "typ": "xYq0", "domain": "", "rela": "", "head_verb_lemma": "בוא", "head_verb_text": "יוּבָ֛א", "text": "בַּמַּ֧יִם יוּבָ֛א"}
+{"cid": 527343, "verse": 32, "clause_idx_in_verse": 6, "typ": "WQt0", "domain": "", "rela": "", "head_verb_lemma": "טמא", "head_verb_text": "טָמֵ֥א", "text": "וְטָמֵ֥א עַד־הָעֶ֖רֶב"}
+{"cid": 527344, "verse": 32, "clause_idx_in_verse": 7, "typ": "WQt0", "domain": "", "rela": "", "head_verb_lemma": "טהר", "head_verb_text": "טָהֵֽר", "text": "וְטָהֵֽר׃"}
+{"cid": 527345, "verse": 33, "clause_idx_in_verse": 0, "typ": "CPen", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "וְכָל־כְּלִי־חֶ֔רֶשׂ"}
+{"cid": 527346, "verse": 33, "clause_idx_in_verse": 1, "typ": "xYqX", "domain": "", "rela": "", "head_verb_lemma": "נפל", "head_verb_text": "יִפֹּ֥ל", "text": "אֲשֶׁר־יִפֹּ֥ל מֵהֶ֖ם אֶל־תֹּוכֹ֑ו"}
+{"cid": 527347, "verse": 33, "clause_idx_in_verse": 2, "typ": "Defc", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "כֹּ֣ל"}
+{"cid": 527348, "verse": 33, "clause_idx_in_verse": 3, "typ": "NmCl", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "אֲשֶׁ֧ר בְּתֹוכֹ֛ו"}
+{"cid": 527349, "verse": 33, "clause_idx_in_verse": 4, "typ": "ZYq0", "domain": "", "rela": "", "head_verb_lemma": "טמא", "head_verb_text": "יִטְמָ֖א", "text": "יִטְמָ֖א"}
+{"cid": 527350, "verse": 33, "clause_idx_in_verse": 5, "typ": "WxY0", "domain": "", "rela": "", "head_verb_lemma": "שׁבר", "head_verb_text": "תִשְׁבֹּֽרוּ", "text": "וְאֹתֹ֥ו תִשְׁבֹּֽרוּ׃"}
+{"cid": 527351, "verse": 34, "clause_idx_in_verse": 0, "typ": "Defc", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "מִכָּל־הָאֹ֜כֶל"}
+{"cid": 527352, "verse": 34, "clause_idx_in_verse": 1, "typ": "xYq0", "domain": "", "rela": "", "head_verb_lemma": "אכל", "head_verb_text": "יֵאָכֵ֗ל", "text": "אֲשֶׁ֣ר יֵאָכֵ֗ל"}
+{"cid": 527353, "verse": 34, "clause_idx_in_verse": 2, "typ": "xYqX", "domain": "", "rela": "", "head_verb_lemma": "בוא", "head_verb_text": "יָבֹ֥וא", "text": "אֲשֶׁ֨ר יָבֹ֥וא עָלָ֛יו מַ֖יִם"}
+{"cid": 527354, "verse": 34, "clause_idx_in_verse": 3, "typ": "ZYq0", "domain": "", "rela": "", "head_verb_lemma": "טמא", "head_verb_text": "יִטְמָ֑א", "text": "יִטְמָ֑א"}
+{"cid": 527355, "verse": 34, "clause_idx_in_verse": 4, "typ": "Defc", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "וְכָל־מַשְׁקֶה֙"}
+{"cid": 527356, "verse": 34, "clause_idx_in_verse": 5, "typ": "xYq0", "domain": "", "rela": "", "head_verb_lemma": "שׁתה", "head_verb_text": "יִשָּׁתֶ֔ה", "text": "אֲשֶׁ֣ר יִשָּׁתֶ֔ה בְּכָל־כְּלִ֖י"}
+{"cid": 527357, "verse": 34, "clause_idx_in_verse": 6, "typ": "ZYq0", "domain": "", "rela": "", "head_verb_lemma": "טמא", "head_verb_text": "יִטְמָֽא", "text": "יִטְמָֽא׃"}
+{"cid": 527358, "verse": 35, "clause_idx_in_verse": 0, "typ": "Defc", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "וְ֠כֹל"}
+{"cid": 527359, "verse": 35, "clause_idx_in_verse": 1, "typ": "xYqX", "domain": "", "rela": "", "head_verb_lemma": "נפל", "head_verb_text": "יִפֹּ֨ל", "text": "אֲשֶׁר־יִפֹּ֨ל מִנִּבְלָתָ֥ם׀ עָלָיו֮"}
+{"cid": 527360, "verse": 35, "clause_idx_in_verse": 2, "typ": "ZYq0", "domain": "", "rela": "", "head_verb_lemma": "טמא", "head_verb_text": "יִטְמָא֒", "text": "יִטְמָא֒"}
+{"cid": 527361, "verse": 35, "clause_idx_in_verse": 3, "typ": "XYqt", "domain": "", "rela": "", "head_verb_lemma": "נתץ", "head_verb_text": "יֻתָּ֖ץ", "text": "תַּנּ֧וּר וְכִירַ֛יִם יֻתָּ֖ץ"}
+{"cid": 527362, "verse": 35, "clause_idx_in_verse": 4, "typ": "AjCl", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "טְמֵאִ֣ים הֵ֑ם"}
+{"cid": 527363, "verse": 35, "clause_idx_in_verse": 5, "typ": "WxY0", "domain": "", "rela": "", "head_verb_lemma": "היה", "head_verb_text": "יִהְי֥וּ", "text": "וּטְמֵאִ֖ים יִהְי֥וּ לָכֶֽם׃"}
+{"cid": 527364, "verse": 36, "clause_idx_in_verse": 0, "typ": "XYqt", "domain": "", "rela": "", "head_verb_lemma": "היה", "head_verb_text": "יִהְיֶ֣ה", "text": "אַ֣ךְ מַעְיָ֥ן וּבֹ֛ור מִקְוֵה־מַ֖יִם יִהְיֶ֣ה טָהֹ֑ור"}
+{"cid": 527365, "verse": 36, "clause_idx_in_verse": 1, "typ": "Defc", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "וְ"}
+{"cid": 527366, "verse": 36, "clause_idx_in_verse": 2, "typ": "Ptcp", "domain": "", "rela": "", "head_verb_lemma": "נגע", "head_verb_text": "נֹגֵ֥עַ", "text": "נֹגֵ֥עַ בְּנִבְלָתָ֖ם"}
+{"cid": 527367, "verse": 36, "clause_idx_in_verse": 3, "typ": "ZYq0", "domain": "", "rela": "", "head_verb_lemma": "טמא", "head_verb_text": "יִטְמָֽא", "text": "יִטְמָֽא׃"}
+{"cid": 527368, "verse": 37, "clause_idx_in_verse": 0, "typ": "WxYX", "domain": "", "rela": "", "head_verb_lemma": "נפל", "head_verb_text": "יִפֹּל֙", "text": "וְכִ֤י יִפֹּל֙ מִנִּבְלָתָ֔ם עַל־כָּל־זֶ֥רַע זֵר֖וּעַ"}
+{"cid": 527369, "verse": 37, "clause_idx_in_verse": 1, "typ": "xYq0", "domain": "", "rela": "", "head_verb_lemma": "זרע", "head_verb_text": "יִזָּרֵ֑עַ", "text": "אֲשֶׁ֣ר יִזָּרֵ֑עַ"}
+{"cid": 527370, "verse": 37, "clause_idx_in_verse": 2, "typ": "AjCl", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "טָהֹ֖ור הֽוּא׃"}
+{"cid": 527371, "verse": 38, "clause_idx_in_verse": 0, "typ": "WxYX", "domain": "", "rela": "", "head_verb_lemma": "נתן", "head_verb_text": "יֻתַּן", "text": "וְכִ֤י יֻתַּן־מַ֨יִם֙ עַל־זֶ֔רַע"}
+{"cid": 527372, "verse": 38, "clause_idx_in_verse": 1, "typ": "WQtX", "domain": "", "rela": "", "head_verb_lemma": "נפל", "head_verb_text": "נָפַ֥ל", "text": "וְנָפַ֥ל מִנִּבְלָתָ֖ם עָלָ֑יו"}
+{"cid": 527373, "verse": 38, "clause_idx_in_verse": 2, "typ": "AjCl", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "טָמֵ֥א ה֖וּא לָכֶֽם׃ ס"}
+{"cid": 527374, "verse": 39, "clause_idx_in_verse": 0, "typ": "WxY0", "domain": "", "rela": "", "head_verb_lemma": "מות", "head_verb_text": "יָמוּת֙", "text": "וְכִ֤י יָמוּת֙ מִן־הַבְּהֵמָ֔ה"}
+{"cid": 527375, "verse": 39, "clause_idx_in_verse": 1, "typ": "NmCl", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "אֲשֶׁר־הִ֥יא לָכֶ֖ם לְאָכְלָ֑ה"}
+{"cid": 527376, "verse": 39, "clause_idx_in_verse": 2, "typ": "Ptcp", "domain": "", "rela": "", "head_verb_lemma": "נגע", "head_verb_text": "נֹּגֵ֥עַ", "text": "הַנֹּגֵ֥עַ בְּנִבְלָתָ֖הּ"}
+{"cid": 527377, "verse": 39, "clause_idx_in_verse": 3, "typ": "ZYq0", "domain": "", "rela": "", "head_verb_lemma": "טמא", "head_verb_text": "יִטְמָ֥א", "text": "יִטְמָ֥א עַד־הָעָֽרֶב׃"}
+{"cid": 527378, "verse": 40, "clause_idx_in_verse": 0, "typ": "Defc", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "וְ"}
+{"cid": 527379, "verse": 40, "clause_idx_in_verse": 1, "typ": "Ptcp", "domain": "", "rela": "", "head_verb_lemma": "אכל", "head_verb_text": "אֹכֵל֙", "text": "הָֽאֹכֵל֙ מִנִּבְלָתָ֔הּ"}
+{"cid": 527380, "verse": 40, "clause_idx_in_verse": 2, "typ": "ZYq0", "domain": "", "rela": "", "head_verb_lemma": "כבס", "head_verb_text": "יְכַבֵּ֥ס", "text": "יְכַבֵּ֥ס בְּגָדָ֖יו"}
+{"cid": 527381, "verse": 40, "clause_idx_in_verse": 3, "typ": "WQt0", "domain": "", "rela": "", "head_verb_lemma": "טמא", "head_verb_text": "טָמֵ֣א", "text": "וְטָמֵ֣א עַד־הָעָ֑רֶב"}
+{"cid": 527382, "verse": 40, "clause_idx_in_verse": 4, "typ": "Defc", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "וְ"}
+{"cid": 527383, "verse": 40, "clause_idx_in_verse": 5, "typ": "Ptcp", "domain": "", "rela": "", "head_verb_lemma": "נשׂא", "head_verb_text": "נֹּשֵׂא֙", "text": "הַנֹּשֵׂא֙ אֶת־נִבְלָתָ֔הּ"}
+{"cid": 527384, "verse": 40, "clause_idx_in_verse": 6, "typ": "ZYq0", "domain": "", "rela": "", "head_verb_lemma": "כבס", "head_verb_text": "יְכַבֵּ֥ס", "text": "יְכַבֵּ֥ס בְּגָדָ֖יו"}
+{"cid": 527385, "verse": 40, "clause_idx_in_verse": 7, "typ": "WQt0", "domain": "", "rela": "", "head_verb_lemma": "טמא", "head_verb_text": "טָמֵ֥א", "text": "וְטָמֵ֥א עַד־הָעָֽרֶב׃"}
+{"cid": 527386, "verse": 41, "clause_idx_in_verse": 0, "typ": "CPen", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "וְכָל־הַשֶּׁ֖רֶץ"}
+{"cid": 527387, "verse": 41, "clause_idx_in_verse": 1, "typ": "Ptcp", "domain": "", "rela": "", "head_verb_lemma": "שׁרץ", "head_verb_text": "שֹּׁרֵ֣ץ", "text": "הַשֹּׁרֵ֣ץ עַל־הָאָ֑רֶץ"}
+{"cid": 527388, "verse": 41, "clause_idx_in_verse": 2, "typ": "NmCl", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "שֶׁ֥קֶץ ה֖וּא"}
+{"cid": 527389, "verse": 41, "clause_idx_in_verse": 3, "typ": "xYq0", "domain": "", "rela": "", "head_verb_lemma": "אכל", "head_verb_text": "יֵאָכֵֽל", "text": "לֹ֥א יֵאָכֵֽל׃"}
+{"cid": 527390, "verse": 42, "clause_idx_in_verse": 0, "typ": "CPen", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "כֹּל֩"}
+{"cid": 527391, "verse": 42, "clause_idx_in_verse": 1, "typ": "Ptcp", "domain": "", "rela": "", "head_verb_lemma": "הלך", "head_verb_text": "הֹולֵ֨ךְ", "text": "הֹולֵ֨ךְ עַל־גָּחֹ֜ון"}
+{"cid": 527392, "verse": 42, "clause_idx_in_verse": 2, "typ": "Defc", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "וְכֹ֣ל׀"}
+{"cid": 527393, "verse": 42, "clause_idx_in_verse": 3, "typ": "Ptcp", "domain": "", "rela": "", "head_verb_lemma": "הלך", "head_verb_text": "הֹולֵ֣ךְ", "text": "הֹולֵ֣ךְ עַל־אַרְבַּ֗ע"}
+{"cid": 527394, "verse": 42, "clause_idx_in_verse": 4, "typ": "Defc", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "עַ֚ד כָּל־"}
+{"cid": 527395, "verse": 42, "clause_idx_in_verse": 5, "typ": "Ptcp", "domain": "", "rela": "", "head_verb_lemma": "רבה", "head_verb_text": "מַרְבֵּ֣ה", "text": "מַרְבֵּ֣ה רַגְלַ֔יִם לְכָל־הַשֶּׁ֖רֶץ"}
+{"cid": 527396, "verse": 42, "clause_idx_in_verse": 6, "typ": "Ptcp", "domain": "", "rela": "", "head_verb_lemma": "שׁרץ", "head_verb_text": "שֹּׁרֵ֣ץ", "text": "הַשֹּׁרֵ֣ץ עַל־הָאָ֑רֶץ"}
+{"cid": 527397, "verse": 42, "clause_idx_in_verse": 7, "typ": "xYq0", "domain": "", "rela": "", "head_verb_lemma": "אכל", "head_verb_text": "תֹאכְל֖וּם", "text": "לֹ֥א תֹאכְל֖וּם"}
+{"cid": 527398, "verse": 42, "clause_idx_in_verse": 8, "typ": "NmCl", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "כִּי־שֶׁ֥קֶץ הֵֽם׃"}
+{"cid": 527399, "verse": 43, "clause_idx_in_verse": 0, "typ": "xYq0", "domain": "", "rela": "", "head_verb_lemma": "שׁקץ", "head_verb_text": "תְּשַׁקְּצוּ֙", "text": "אַל־תְּשַׁקְּצוּ֙ אֶת־נַפְשֹׁ֣תֵיכֶ֔ם בְּכָל־הַשֶּׁ֖רֶץ"}
+{"cid": 527400, "verse": 43, "clause_idx_in_verse": 1, "typ": "Ptcp", "domain": "", "rela": "", "head_verb_lemma": "שׁרץ", "head_verb_text": "שֹּׁרֵ֑ץ", "text": "הַשֹּׁרֵ֑ץ"}
+{"cid": 527401, "verse": 43, "clause_idx_in_verse": 2, "typ": "WxY0", "domain": "", "rela": "", "head_verb_lemma": "טמא", "head_verb_text": "תִֽטַּמְּאוּ֙", "text": "וְלֹ֤א תִֽטַּמְּאוּ֙ בָּהֶ֔ם"}
+{"cid": 527402, "verse": 43, "clause_idx_in_verse": 3, "typ": "WQt0", "domain": "", "rela": "", "head_verb_lemma": "טמא", "head_verb_text": "נִטְמֵתֶ֖ם", "text": "וְנִטְמֵתֶ֖ם בָּֽם׃"}
+{"cid": 527403, "verse": 44, "clause_idx_in_verse": 0, "typ": "NmCl", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "כִּ֣י אֲנִ֣י יְהוָה֮ אֱלֹֽהֵיכֶם֒"}
+{"cid": 527404, "verse": 44, "clause_idx_in_verse": 1, "typ": "WQt0", "domain": "", "rela": "", "head_verb_lemma": "קדשׁ", "head_verb_text": "הִתְקַדִּשְׁתֶּם֙", "text": "וְהִתְקַדִּשְׁתֶּם֙"}
+{"cid": 527405, "verse": 44, "clause_idx_in_verse": 2, "typ": "WQt0", "domain": "", "rela": "", "head_verb_lemma": "היה", "head_verb_text": "הְיִיתֶ֣ם", "text": "וִהְיִיתֶ֣ם קְדֹשִׁ֔ים"}
+{"cid": 527406, "verse": 44, "clause_idx_in_verse": 3, "typ": "AjCl", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "כִּ֥י קָדֹ֖ושׁ אָ֑נִי"}
+{"cid": 527407, "verse": 44, "clause_idx_in_verse": 4, "typ": "WxY0", "domain": "", "rela": "", "head_verb_lemma": "טמא", "head_verb_text": "תְטַמְּאוּ֙", "text": "וְלֹ֤א תְטַמְּאוּ֙ אֶת־נַפְשֹׁ֣תֵיכֶ֔ם בְּכָל־הַשֶּׁ֖רֶץ"}
+{"cid": 527408, "verse": 44, "clause_idx_in_verse": 5, "typ": "Ptcp", "domain": "", "rela": "", "head_verb_lemma": "רמשׂ", "head_verb_text": "רֹמֵ֥שׂ", "text": "הָרֹמֵ֥שׂ עַל־הָאָֽרֶץ׃"}
+{"cid": 527409, "verse": 45, "clause_idx_in_verse": 0, "typ": "NmCl", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "כִּ֣י׀ אֲנִ֣י יְהוָ֗ה"}
+{"cid": 527410, "verse": 45, "clause_idx_in_verse": 1, "typ": "Ptcp", "domain": "", "rela": "", "head_verb_lemma": "עלה", "head_verb_text": "מַּעֲלֶ֤ה", "text": "הַֽמַּעֲלֶ֤ה אֶתְכֶם֙ מֵאֶ֣רֶץ מִצְרַ֔יִם"}
+{"cid": 527411, "verse": 45, "clause_idx_in_verse": 2, "typ": "InfC", "domain": "", "rela": "", "head_verb_lemma": "היה", "head_verb_text": "הְיֹ֥ת", "text": "לִהְיֹ֥ת לָכֶ֖ם לֵאלֹהִ֑ים"}
+{"cid": 527412, "verse": 45, "clause_idx_in_verse": 3, "typ": "WQt0", "domain": "", "rela": "", "head_verb_lemma": "היה", "head_verb_text": "הְיִיתֶ֣ם", "text": "וִהְיִיתֶ֣ם קְדֹשִׁ֔ים"}
+{"cid": 527413, "verse": 45, "clause_idx_in_verse": 4, "typ": "AjCl", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "כִּ֥י קָדֹ֖ושׁ אָֽנִי׃"}
+{"cid": 527414, "verse": 46, "clause_idx_in_verse": 0, "typ": "NmCl", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "זֹ֣את תֹּורַ֤ת הַבְּהֵמָה֙ וְהָעֹ֔וף וְכֹל֙ נֶ֣פֶשׁ הַֽחַיָּ֔ה"}
+{"cid": 527415, "verse": 46, "clause_idx_in_verse": 1, "typ": "Ptcp", "domain": "", "rela": "", "head_verb_lemma": "רמשׂ", "head_verb_text": "רֹמֶ֖שֶׂת", "text": "הָרֹמֶ֖שֶׂת בַּמָּ֑יִם"}
+{"cid": 527416, "verse": 46, "clause_idx_in_verse": 2, "typ": "Ellp", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "וּלְכָל־נֶ֖פֶשׁ"}
+{"cid": 527417, "verse": 46, "clause_idx_in_verse": 3, "typ": "Ptcp", "domain": "", "rela": "", "head_verb_lemma": "שׁרץ", "head_verb_text": "שֹּׁרֶ֥צֶת", "text": "הַשֹּׁרֶ֥צֶת עַל־הָאָֽרֶץ׃"}
+{"cid": 527418, "verse": 47, "clause_idx_in_verse": 0, "typ": "InfC", "domain": "", "rela": "", "head_verb_lemma": "בדל", "head_verb_text": "הַבְדִּ֕יל", "text": "לְהַבְדִּ֕יל בֵּ֥ין הַטָּמֵ֖א וּבֵ֣ין הַטָּהֹ֑ר וּבֵ֤ין הַֽחַיָּה֙"}
+{"cid": 527419, "verse": 47, "clause_idx_in_verse": 1, "typ": "Ptcp", "domain": "", "rela": "", "head_verb_lemma": "אכל", "head_verb_text": "נֶּאֱכֶ֔לֶת", "text": "הַֽנֶּאֱכֶ֔לֶת"}
+{"cid": 527420, "verse": 47, "clause_idx_in_verse": 2, "typ": "Defc", "domain": "", "rela": "", "head_verb_lemma": "", "head_verb_text": "", "text": "וּבֵין֙ הַֽחַיָּ֔ה"}
+{"cid": 527421, "verse": 47, "clause_idx_in_verse": 3, "typ": "xYq0", "domain": "", "rela": "", "head_verb_lemma": "אכל", "head_verb_text": "תֵאָכֵֽל", "text": "אֲשֶׁ֖ר לֹ֥א תֵאָכֵֽל׃ פ"}

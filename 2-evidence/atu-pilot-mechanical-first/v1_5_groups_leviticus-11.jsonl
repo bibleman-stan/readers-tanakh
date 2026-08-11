@@ -1,0 +1,150 @@
+{"group_idx": 0, "verse_first": 1, "verse_last": 1, "n_clauses": 2, "bindings_fired": ["B10-purposive-infc"], "clause_cids": [527227, 527228], "clause_typs": ["WayX", "InfC"], "text": "וַיְדַבֵּ֧ר יְהוָ֛ה אֶל־מֹשֶׁ֥ה וְאֶֽל־אַהֲרֹ֖ן לֵאמֹ֥ר אֲלֵהֶֽם׃"}
+{"group_idx": 1, "verse_first": 2, "verse_last": 2, "n_clauses": 2, "bindings_fired": ["B10-purposive-infc"], "clause_cids": [527229, 527230], "clause_typs": ["ZIm0", "InfC"], "text": "דַּבְּר֛וּ אֶל־בְּנֵ֥י יִשְׂרָאֵ֖ל לֵאמֹ֑ר"}
+{"group_idx": 2, "verse_first": 2, "verse_last": 2, "n_clauses": 3, "bindings_fired": ["B3-restrictive-asher", "B3-restrictive-asher"], "clause_cids": [527231, 527232, 527233], "clause_typs": ["NmCl", "xYq0", "NmCl"], "text": "זֹ֤את הַֽחַיָּה֙ אֲשֶׁ֣ר תֹּאכְל֔וּ מִכָּל־הַבְּהֵמָ֖ה אֲשֶׁ֥ר עַל־הָאָֽרֶץ׃"}
+{"group_idx": 3, "verse_first": 3, "verse_last": 3, "n_clauses": 2, "bindings_fired": ["B6-cpen-resumption"], "clause_cids": [527234, 527235], "clause_typs": ["CPen", "Ptcp"], "text": "כֹּ֣ל׀ מַפְרֶ֣סֶת פַּרְסָ֗ה"}
+{"group_idx": 4, "verse_first": 3, "verse_last": 3, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527236], "clause_typs": ["Ptcp"], "text": "וְשֹׁסַ֤עַת שֶׁ֨סַע֙ פְּרָסֹ֔ת"}
+{"group_idx": 5, "verse_first": 3, "verse_last": 3, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527237], "clause_typs": ["Ptcp"], "text": "מַעֲלַ֥ת גֵּרָ֖ה"}
+{"group_idx": 6, "verse_first": 3, "verse_last": 3, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527238], "clause_typs": ["Defc"], "text": "בַּבְּהֵמָ֑ה"}
+{"group_idx": 7, "verse_first": 3, "verse_last": 3, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527239], "clause_typs": ["xYq0"], "text": "אֹתָ֖הּ תֹּאכֵֽלוּ׃"}
+{"group_idx": 8, "verse_first": 4, "verse_last": 4, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527240], "clause_typs": ["xYq0"], "text": "אַ֤ךְ אֶת־זֶה֙ לֹ֣א תֹֽאכְל֔וּ מִֽמַּעֲלֵי֙ הַגֵּרָ֔ה וּמִמַּפְרִיסֵ֖י הַפַּרְסָ֑ה"}
+{"group_idx": 9, "verse_first": 4, "verse_last": 4, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527241], "clause_typs": ["Ellp"], "text": "אֶֽת־הַ֠גָּמָל"}
+{"group_idx": 10, "verse_first": 4, "verse_last": 4, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527242], "clause_typs": ["AjCl"], "text": "כִּֽי־מַעֲלֵ֨ה גֵרָ֜ה ה֗וּא"}
+{"group_idx": 11, "verse_first": 4, "verse_last": 4, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527243], "clause_typs": ["Ptcp"], "text": "וּפַרְסָה֙ אֵינֶ֣נּוּ מַפְרִ֔יס"}
+{"group_idx": 12, "verse_first": 4, "verse_last": 4, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527244], "clause_typs": ["AjCl"], "text": "טָמֵ֥א ה֖וּא לָכֶֽם׃"}
+{"group_idx": 13, "verse_first": 5, "verse_last": 5, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527245], "clause_typs": ["Ellp"], "text": "וְאֶת־הַשָּׁפָ֗ן"}
+{"group_idx": 14, "verse_first": 5, "verse_last": 5, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527246], "clause_typs": ["AjCl"], "text": "כִּֽי־מַעֲלֵ֤ה גֵרָה֙ ה֔וּא"}
+{"group_idx": 15, "verse_first": 5, "verse_last": 5, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527247], "clause_typs": ["WxY0"], "text": "וּפַרְסָ֖ה לֹ֣א יַפְרִ֑יס"}
+{"group_idx": 16, "verse_first": 5, "verse_last": 5, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527248], "clause_typs": ["AjCl"], "text": "טָמֵ֥א ה֖וּא לָכֶֽם׃"}
+{"group_idx": 17, "verse_first": 6, "verse_last": 6, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527249], "clause_typs": ["Ellp"], "text": "וְאֶת־הָאַרְנֶ֗בֶת"}
+{"group_idx": 18, "verse_first": 6, "verse_last": 6, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527250], "clause_typs": ["AjCl"], "text": "כִּֽי־מַעֲלַ֤ת גֵּרָה֙ הִ֔וא"}
+{"group_idx": 19, "verse_first": 6, "verse_last": 6, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527251], "clause_typs": ["WxQ0"], "text": "וּפַרְסָ֖ה לֹ֣א הִפְרִ֑יסָה"}
+{"group_idx": 20, "verse_first": 6, "verse_last": 6, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527252], "clause_typs": ["AjCl"], "text": "טְמֵאָ֥ה הִ֖וא לָכֶֽם׃"}
+{"group_idx": 21, "verse_first": 7, "verse_last": 7, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527253], "clause_typs": ["Ellp"], "text": "וְאֶת־הַ֠חֲזִיר"}
+{"group_idx": 22, "verse_first": 7, "verse_last": 7, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527254], "clause_typs": ["AjCl"], "text": "כִּֽי־מַפְרִ֨יס פַּרְסָ֜ה ה֗וּא"}
+{"group_idx": 23, "verse_first": 7, "verse_last": 7, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527255], "clause_typs": ["Ptcp"], "text": "וְשֹׁסַ֥ע שֶׁ֨סַע֙ פַּרְסָ֔ה"}
+{"group_idx": 24, "verse_first": 7, "verse_last": 7, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527256], "clause_typs": ["WXYq"], "text": "וְה֖וּא גֵּרָ֣ה לֹֽא־יִגָּ֑ר"}
+{"group_idx": 25, "verse_first": 7, "verse_last": 7, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527257], "clause_typs": ["AjCl"], "text": "טָמֵ֥א ה֖וּא לָכֶֽם׃"}
+{"group_idx": 26, "verse_first": 8, "verse_last": 8, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527258], "clause_typs": ["xYq0"], "text": "מִבְּשָׂרָם֙ לֹ֣א תֹאכֵ֔לוּ"}
+{"group_idx": 27, "verse_first": 8, "verse_last": 8, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527259], "clause_typs": ["WxY0"], "text": "וּבְנִבְלָתָ֖ם לֹ֣א תִגָּ֑עוּ"}
+{"group_idx": 28, "verse_first": 8, "verse_last": 8, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527260], "clause_typs": ["AjCl"], "text": "טְמֵאִ֥ים הֵ֖ם לָכֶֽם׃"}
+{"group_idx": 29, "verse_first": 9, "verse_last": 9, "n_clauses": 2, "bindings_fired": ["B3-restrictive-asher"], "clause_cids": [527261, 527262], "clause_typs": ["xYq0", "NmCl"], "text": "אֶת־זֶה֙ תֹּֽאכְל֔וּ מִכֹּ֖ל אֲשֶׁ֣ר בַּמָּ֑יִם"}
+{"group_idx": 30, "verse_first": 9, "verse_last": 9, "n_clauses": 2, "bindings_fired": ["B3-restrictive-asher"], "clause_cids": [527263, 527264], "clause_typs": ["CPen", "NmCl"], "text": "כֹּ֣ל אֲשֶׁר־לֹו֩ סְנַפִּ֨יר וְקַשְׂקֶ֜שֶׂת בַּמַּ֗יִם בַּיַּמִּ֛ים וּבַנְּחָלִ֖ים"}
+{"group_idx": 31, "verse_first": 9, "verse_last": 9, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527265], "clause_typs": ["xYq0"], "text": "אֹתָ֥ם תֹּאכֵֽלוּ׃"}
+{"group_idx": 32, "verse_first": 10, "verse_last": 10, "n_clauses": 2, "bindings_fired": ["B3-restrictive-asher"], "clause_cids": [527266, 527267], "clause_typs": ["CPen", "NmCl"], "text": "וְכֹל֩ אֲשֶׁ֨ר אֵֽין־לֹ֜ו סְנַפִּ֣יר וְקַשְׂקֶ֗שֶׂת בַּיַּמִּים֙ וּבַנְּחָלִ֔ים"}
+{"group_idx": 33, "verse_first": 10, "verse_last": 10, "n_clauses": 2, "bindings_fired": ["B3-restrictive-asher"], "clause_cids": [527268, 527269], "clause_typs": ["Defc", "NmCl"], "text": "מִכֹּל֙ שֶׁ֣רֶץ הַמַּ֔יִם וּמִכֹּ֛ל נֶ֥פֶשׁ הַחַיָּ֖ה אֲשֶׁ֣ר בַּמָּ֑יִם"}
+{"group_idx": 34, "verse_first": 10, "verse_last": 10, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527270], "clause_typs": ["NmCl"], "text": "שֶׁ֥קֶץ הֵ֖ם לָכֶֽם׃"}
+{"group_idx": 35, "verse_first": 11, "verse_last": 11, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527271], "clause_typs": ["WxY0"], "text": "וְשֶׁ֖קֶץ יִהְי֣וּ לָכֶ֑ם"}
+{"group_idx": 36, "verse_first": 11, "verse_last": 11, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527272], "clause_typs": ["xYq0"], "text": "מִבְּשָׂרָם֙ לֹ֣א תֹאכֵ֔לוּ"}
+{"group_idx": 37, "verse_first": 11, "verse_last": 11, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527273], "clause_typs": ["WxY0"], "text": "וְאֶת־נִבְלָתָ֖ם תְּשַׁקֵּֽצוּ׃"}
+{"group_idx": 38, "verse_first": 12, "verse_last": 12, "n_clauses": 2, "bindings_fired": ["B3-restrictive-asher"], "clause_cids": [527274, 527275], "clause_typs": ["CPen", "NmCl"], "text": "כֹּ֣ל אֲשֶׁ֥ר אֵֽין־לֹ֛ו סְנַפִּ֥יר וְקַשְׂקֶ֖שֶׂת"}
+{"group_idx": 39, "verse_first": 12, "verse_last": 12, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527276], "clause_typs": ["Defc"], "text": "בַּמָּ֑יִם"}
+{"group_idx": 40, "verse_first": 12, "verse_last": 12, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527277], "clause_typs": ["NmCl"], "text": "שֶׁ֥קֶץ ה֖וּא לָכֶֽם׃"}
+{"group_idx": 41, "verse_first": 13, "verse_last": 13, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527278], "clause_typs": ["WxY0"], "text": "וְאֶת־אֵ֨לֶּה֙ תְּשַׁקְּצ֣וּ מִן־הָעֹ֔וף"}
+{"group_idx": 42, "verse_first": 13, "verse_last": 13, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527279], "clause_typs": ["xYq0"], "text": "לֹ֥א יֵאָכְל֖וּ"}
+{"group_idx": 43, "verse_first": 13, "verse_last": 13, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527280], "clause_typs": ["NmCl"], "text": "שֶׁ֣קֶץ הֵ֑ם"}
+{"group_idx": 44, "verse_first": 13, "verse_last": 13, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527281], "clause_typs": ["Ellp"], "text": "אֶת־הַנֶּ֨שֶׁר֙ וְאֶת־הַפֶּ֔רֶס וְאֵ֖ת הָעָזְנִיָּֽה׃"}
+{"group_idx": 45, "verse_first": 14, "verse_last": 14, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527282], "clause_typs": ["Ellp"], "text": "וְאֶת־הַ֨דָּאָ֔ה וְאֶת־הָאַיָּ֖ה לְמִינָֽהּ׃"}
+{"group_idx": 46, "verse_first": 15, "verse_last": 15, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527283], "clause_typs": ["Ellp"], "text": "אֵ֥ת כָּל־עֹרֵ֖ב לְמִינֹֽו׃"}
+{"group_idx": 47, "verse_first": 16, "verse_last": 16, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527284], "clause_typs": ["Ellp"], "text": "וְאֵת֙ בַּ֣ת הַֽיַּעֲנָ֔ה וְאֶת־הַתַּחְמָ֖ס וְאֶת־הַשָּׁ֑חַף וְאֶת־הַנֵּ֖ץ לְמִינֵֽהוּ׃"}
+{"group_idx": 48, "verse_first": 17, "verse_last": 17, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527285], "clause_typs": ["Ellp"], "text": "וְאֶת־הַכֹּ֥וס וְאֶת־הַשָּׁלָ֖ךְ וְאֶת־הַיַּנְשֽׁוּף׃"}
+{"group_idx": 49, "verse_first": 18, "verse_last": 18, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527286], "clause_typs": ["Ellp"], "text": "וְאֶת־הַתִּנְשֶׁ֥מֶת וְאֶת־הַקָּאָ֖ת וְאֶת־הָרָחָֽם׃"}
+{"group_idx": 50, "verse_first": 19, "verse_last": 19, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527287], "clause_typs": ["Ellp"], "text": "וְאֵת֙ הַחֲסִידָ֔ה הָאֲנָפָ֖ה לְמִינָ֑הּ וְאֶת־הַדּוּכִיפַ֖ת וְאֶת־הָעֲטַלֵּֽף׃"}
+{"group_idx": 51, "verse_first": 20, "verse_last": 20, "n_clauses": 2, "bindings_fired": ["B6-cpen-resumption"], "clause_cids": [527288, 527289], "clause_typs": ["CPen", "Ptcp"], "text": "כֹּ֚ל שֶׁ֣רֶץ הָעֹ֔וף הַהֹלֵ֖ךְ עַל־אַרְבַּ֑ע"}
+{"group_idx": 52, "verse_first": 20, "verse_last": 20, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527290], "clause_typs": ["NmCl"], "text": "שֶׁ֥קֶץ ה֖וּא לָכֶֽם׃ ס"}
+{"group_idx": 53, "verse_first": 21, "verse_last": 21, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527291], "clause_typs": ["xYq0"], "text": "אַ֤ךְ אֶת־זֶה֙ תֹּֽאכְל֔וּ מִכֹּל֙ שֶׁ֣רֶץ הָעֹ֔וף"}
+{"group_idx": 54, "verse_first": 21, "verse_last": 21, "n_clauses": 3, "bindings_fired": ["B3-restrictive-asher", "B10-purposive-infc"], "clause_cids": [527292, 527293, 527294], "clause_typs": ["Ptcp", "NmCl", "InfC"], "text": "הַהֹלֵ֖ךְ עַל־אַרְבַּ֑ע אֲשֶׁר־לא כְרָעַ֨יִם֙ מִמַּ֣עַל לְרַגְלָ֔יו לְנַתֵּ֥ר בָּהֵ֖ן עַל־הָאָֽרֶץ׃"}
+{"group_idx": 55, "verse_first": 22, "verse_last": 22, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527295], "clause_typs": ["xYq0"], "text": "אֶת־אֵ֤לֶּה מֵהֶם֙ תֹּאכֵ֔לוּ"}
+{"group_idx": 56, "verse_first": 22, "verse_last": 22, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527296], "clause_typs": ["Ellp"], "text": "אֶת־הָֽאַרְבֶּ֣ה לְמִינֹ֔ו וְאֶת־הַסָּלְעָ֖ם לְמִינֵ֑הוּ וְאֶת־הַחַרְגֹּ֣ל לְמִינֵ֔הוּ וְאֶת־הֶחָגָ֖ב לְמִינֵֽהוּ׃"}
+{"group_idx": 57, "verse_first": 23, "verse_last": 23, "n_clauses": 2, "bindings_fired": ["B3-restrictive-asher"], "clause_cids": [527297, 527298], "clause_typs": ["CPen", "NmCl"], "text": "וְכֹל֙ שֶׁ֣רֶץ הָעֹ֔וף אֲשֶׁר־לֹ֖ו אַרְבַּ֣ע רַגְלָ֑יִם"}
+{"group_idx": 58, "verse_first": 23, "verse_last": 23, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527299], "clause_typs": ["NmCl"], "text": "שֶׁ֥קֶץ ה֖וּא לָכֶֽם׃"}
+{"group_idx": 59, "verse_first": 24, "verse_last": 24, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527300], "clause_typs": ["WxY0"], "text": "וּלְאֵ֖לֶּה תִּטַּמָּ֑אוּ"}
+{"group_idx": 60, "verse_first": 24, "verse_last": 24, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527301], "clause_typs": ["Defc"], "text": "כָּל־"}
+{"group_idx": 61, "verse_first": 24, "verse_last": 24, "n_clauses": 2, "bindings_fired": ["B14-asyndetic-predicate"], "clause_cids": [527302, 527303], "clause_typs": ["Ptcp", "ZYq0"], "text": "הַנֹּגֵ֥עַ בְּנִבְלָתָ֖ם יִטְמָ֥א עַד־הָעָֽרֶב׃"}
+{"group_idx": 62, "verse_first": 25, "verse_last": 25, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527304], "clause_typs": ["Defc"], "text": "וְכָל־"}
+{"group_idx": 63, "verse_first": 25, "verse_last": 25, "n_clauses": 2, "bindings_fired": ["B14-asyndetic-predicate"], "clause_cids": [527305, 527306], "clause_typs": ["Ptcp", "ZYq0"], "text": "הַנֹּשֵׂ֖א מִנִּבְלָתָ֑ם יְכַבֵּ֥ס בְּגָדָ֖יו"}
+{"group_idx": 64, "verse_first": 25, "verse_last": 25, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527307], "clause_typs": ["WQt0"], "text": "וְטָמֵ֥א עַד־הָעָֽרֶב׃"}
+{"group_idx": 65, "verse_first": 26, "verse_last": 26, "n_clauses": 2, "bindings_fired": ["B3-restrictive-asher"], "clause_cids": [527308, 527309], "clause_typs": ["CPen", "Ptcp"], "text": "לְֽכָל־הַבְּהֵמָ֡ה אֲשֶׁ֣ר הִוא֩ מַפְרֶ֨סֶת פַּרְסָ֜ה"}
+{"group_idx": 66, "verse_first": 26, "verse_last": 26, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527310], "clause_typs": ["Ptcp"], "text": "וְשֶׁ֣סַע׀ אֵינֶ֣נָּה שֹׁסַ֗עַת"}
+{"group_idx": 67, "verse_first": 26, "verse_last": 26, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527311], "clause_typs": ["Ptcp"], "text": "וְגֵרָה֙ אֵינֶ֣נָּה מַעֲלָ֔ה"}
+{"group_idx": 68, "verse_first": 26, "verse_last": 26, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527312], "clause_typs": ["AjCl"], "text": "טְמֵאִ֥ים הֵ֖ם לָכֶ֑ם"}
+{"group_idx": 69, "verse_first": 26, "verse_last": 26, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527313], "clause_typs": ["Defc"], "text": "כָּל־"}
+{"group_idx": 70, "verse_first": 26, "verse_last": 26, "n_clauses": 2, "bindings_fired": ["B14-asyndetic-predicate"], "clause_cids": [527314, 527315], "clause_typs": ["Ptcp", "ZYq0"], "text": "הַנֹּגֵ֥עַ בָּהֶ֖ם יִטְמָֽא׃"}
+{"group_idx": 71, "verse_first": 27, "verse_last": 27, "n_clauses": 2, "bindings_fired": ["B6-cpen-resumption"], "clause_cids": [527316, 527317], "clause_typs": ["CPen", "Ptcp"], "text": "וְכֹ֣ל׀ הֹולֵ֣ךְ עַל־כַּפָּ֗יו"}
+{"group_idx": 72, "verse_first": 27, "verse_last": 27, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527318], "clause_typs": ["Defc"], "text": "בְּכָל־הַֽחַיָּה֙"}
+{"group_idx": 73, "verse_first": 27, "verse_last": 27, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527319], "clause_typs": ["Ptcp"], "text": "הַהֹלֶ֣כֶת עַל־אַרְבַּ֔ע"}
+{"group_idx": 74, "verse_first": 27, "verse_last": 27, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527320], "clause_typs": ["AjCl"], "text": "טְמֵאִ֥ים הֵ֖ם לָכֶ֑ם"}
+{"group_idx": 75, "verse_first": 27, "verse_last": 27, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527321], "clause_typs": ["Defc"], "text": "כָּל־"}
+{"group_idx": 76, "verse_first": 27, "verse_last": 27, "n_clauses": 2, "bindings_fired": ["B14-asyndetic-predicate"], "clause_cids": [527322, 527323], "clause_typs": ["Ptcp", "ZYq0"], "text": "הַנֹּגֵ֥עַ בְּנִבְלָתָ֖ם יִטְמָ֥א עַד־הָעָֽרֶב׃"}
+{"group_idx": 77, "verse_first": 28, "verse_last": 28, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527324], "clause_typs": ["Defc"], "text": "וְ"}
+{"group_idx": 78, "verse_first": 28, "verse_last": 28, "n_clauses": 2, "bindings_fired": ["B14-asyndetic-predicate"], "clause_cids": [527325, 527326], "clause_typs": ["Ptcp", "ZYq0"], "text": "הַנֹּשֵׂא֙ אֶת־נִבְלָתָ֔ם יְכַבֵּ֥ס בְּגָדָ֖יו"}
+{"group_idx": 79, "verse_first": 28, "verse_last": 28, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527327], "clause_typs": ["WQt0"], "text": "וְטָמֵ֣א עַד־הָעָ֑רֶב"}
+{"group_idx": 80, "verse_first": 28, "verse_last": 28, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527328], "clause_typs": ["AjCl"], "text": "טְמֵאִ֥ים הֵ֖מָּה לָכֶֽם׃ ס"}
+{"group_idx": 81, "verse_first": 29, "verse_last": 29, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527329], "clause_typs": ["NmCl"], "text": "וְזֶ֤ה לָכֶם֙ הַטָּמֵ֔א בַּשֶּׁ֖רֶץ"}
+{"group_idx": 82, "verse_first": 29, "verse_last": 29, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527330], "clause_typs": ["Ptcp"], "text": "הַשֹּׁרֵ֣ץ עַל־הָאָ֑רֶץ"}
+{"group_idx": 83, "verse_first": 29, "verse_last": 29, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527331], "clause_typs": ["Ellp"], "text": "הַחֹ֥לֶד וְהָעַכְבָּ֖ר וְהַצָּ֥ב לְמִינֵֽהוּ׃"}
+{"group_idx": 84, "verse_first": 30, "verse_last": 30, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527332], "clause_typs": ["Ellp"], "text": "וְהָאֲנָקָ֥ה וְהַכֹּ֖חַ וְהַלְּטָאָ֑ה וְהַחֹ֖מֶט וְהַתִּנְשָֽׁמֶת׃"}
+{"group_idx": 85, "verse_first": 31, "verse_last": 31, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527333], "clause_typs": ["NmCl"], "text": "אֵ֛לֶּה הַטְּמֵאִ֥ים לָכֶ֖ם בְּכָל־הַשָּׁ֑רֶץ"}
+{"group_idx": 86, "verse_first": 31, "verse_last": 31, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527334], "clause_typs": ["Defc"], "text": "כָּל־"}
+{"group_idx": 87, "verse_first": 31, "verse_last": 31, "n_clauses": 2, "bindings_fired": ["B14-asyndetic-predicate"], "clause_cids": [527335, 527336], "clause_typs": ["Ptcp", "ZYq0"], "text": "הַנֹּגֵ֧עַ בָּהֶ֛ם בְּמֹתָ֖ם יִטְמָ֥א עַד־הָעָֽרֶב׃"}
+{"group_idx": 88, "verse_first": 32, "verse_last": 32, "n_clauses": 3, "bindings_fired": ["B3-restrictive-asher", "B14-asyndetic-predicate"], "clause_cids": [527337, 527338, 527339], "clause_typs": ["Defc", "xYqX", "ZYq0"], "text": "וְכֹ֣ל אֲשֶׁר־יִפֹּל־עָלָיו֩ מֵהֶ֨ם׀ בְּמֹתָ֜ם יִטְמָ֗א מִכָּל־כְּלִי־עֵץ֙ אֹ֣ו בֶ֤גֶד אֹו־עֹור֙ אֹ֣ו שָׂ֔ק"}
+{"group_idx": 89, "verse_first": 32, "verse_last": 32, "n_clauses": 2, "bindings_fired": ["B3-restrictive-asher"], "clause_cids": [527340, 527341], "clause_typs": ["Defc", "xYqX"], "text": "כָּל־כְּלִ֕י אֲשֶׁר־יֵעָשֶׂ֥ה מְלָאכָ֖ה בָּהֶ֑ם"}
+{"group_idx": 90, "verse_first": 32, "verse_last": 32, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527342], "clause_typs": ["xYq0"], "text": "בַּמַּ֧יִם יוּבָ֛א"}
+{"group_idx": 91, "verse_first": 32, "verse_last": 32, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527343], "clause_typs": ["WQt0"], "text": "וְטָמֵ֥א עַד־הָעֶ֖רֶב"}
+{"group_idx": 92, "verse_first": 32, "verse_last": 32, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527344], "clause_typs": ["WQt0"], "text": "וְטָהֵֽר׃"}
+{"group_idx": 93, "verse_first": 33, "verse_last": 33, "n_clauses": 2, "bindings_fired": ["B3-restrictive-asher"], "clause_cids": [527345, 527346], "clause_typs": ["CPen", "xYqX"], "text": "וְכָל־כְּלִי־חֶ֔רֶשׂ אֲשֶׁר־יִפֹּ֥ל מֵהֶ֖ם אֶל־תֹּוכֹ֑ו"}
+{"group_idx": 94, "verse_first": 33, "verse_last": 33, "n_clauses": 3, "bindings_fired": ["B3-restrictive-asher", "B14-asyndetic-predicate"], "clause_cids": [527347, 527348, 527349], "clause_typs": ["Defc", "NmCl", "ZYq0"], "text": "כֹּ֣ל אֲשֶׁ֧ר בְּתֹוכֹ֛ו יִטְמָ֖א"}
+{"group_idx": 95, "verse_first": 33, "verse_last": 33, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527350], "clause_typs": ["WxY0"], "text": "וְאֹתֹ֥ו תִשְׁבֹּֽרוּ׃"}
+{"group_idx": 96, "verse_first": 34, "verse_last": 34, "n_clauses": 4, "bindings_fired": ["B3-restrictive-asher", "B3-restrictive-asher", "B14-asyndetic-predicate"], "clause_cids": [527351, 527352, 527353, 527354], "clause_typs": ["Defc", "xYq0", "xYqX", "ZYq0"], "text": "מִכָּל־הָאֹ֜כֶל אֲשֶׁ֣ר יֵאָכֵ֗ל אֲשֶׁ֨ר יָבֹ֥וא עָלָ֛יו מַ֖יִם יִטְמָ֑א"}
+{"group_idx": 97, "verse_first": 34, "verse_last": 34, "n_clauses": 3, "bindings_fired": ["B3-restrictive-asher", "B14-asyndetic-predicate"], "clause_cids": [527355, 527356, 527357], "clause_typs": ["Defc", "xYq0", "ZYq0"], "text": "וְכָל־מַשְׁקֶה֙ אֲשֶׁ֣ר יִשָּׁתֶ֔ה בְּכָל־כְּלִ֖י יִטְמָֽא׃"}
+{"group_idx": 98, "verse_first": 35, "verse_last": 35, "n_clauses": 3, "bindings_fired": ["B3-restrictive-asher", "B14-asyndetic-predicate"], "clause_cids": [527358, 527359, 527360], "clause_typs": ["Defc", "xYqX", "ZYq0"], "text": "וְ֠כֹל אֲשֶׁר־יִפֹּ֨ל מִנִּבְלָתָ֥ם׀ עָלָיו֮ יִטְמָא֒"}
+{"group_idx": 99, "verse_first": 35, "verse_last": 35, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527361], "clause_typs": ["XYqt"], "text": "תַּנּ֧וּר וְכִירַ֛יִם יֻתָּ֖ץ"}
+{"group_idx": 100, "verse_first": 35, "verse_last": 35, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527362], "clause_typs": ["AjCl"], "text": "טְמֵאִ֣ים הֵ֑ם"}
+{"group_idx": 101, "verse_first": 35, "verse_last": 35, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527363], "clause_typs": ["WxY0"], "text": "וּטְמֵאִ֖ים יִהְי֥וּ לָכֶֽם׃"}
+{"group_idx": 102, "verse_first": 36, "verse_last": 36, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527364], "clause_typs": ["XYqt"], "text": "אַ֣ךְ מַעְיָ֥ן וּבֹ֛ור מִקְוֵה־מַ֖יִם יִהְיֶ֣ה טָהֹ֑ור"}
+{"group_idx": 103, "verse_first": 36, "verse_last": 36, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527365], "clause_typs": ["Defc"], "text": "וְ"}
+{"group_idx": 104, "verse_first": 36, "verse_last": 36, "n_clauses": 2, "bindings_fired": ["B14-asyndetic-predicate"], "clause_cids": [527366, 527367], "clause_typs": ["Ptcp", "ZYq0"], "text": "נֹגֵ֥עַ בְּנִבְלָתָ֖ם יִטְמָֽא׃"}
+{"group_idx": 105, "verse_first": 37, "verse_last": 37, "n_clauses": 2, "bindings_fired": ["B3-restrictive-asher"], "clause_cids": [527368, 527369], "clause_typs": ["WxYX", "xYq0"], "text": "וְכִ֤י יִפֹּל֙ מִנִּבְלָתָ֔ם עַל־כָּל־זֶ֥רַע זֵר֖וּעַ אֲשֶׁ֣ר יִזָּרֵ֑עַ"}
+{"group_idx": 106, "verse_first": 37, "verse_last": 37, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527370], "clause_typs": ["AjCl"], "text": "טָהֹ֖ור הֽוּא׃"}
+{"group_idx": 107, "verse_first": 38, "verse_last": 38, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527371], "clause_typs": ["WxYX"], "text": "וְכִ֤י יֻתַּן־מַ֨יִם֙ עַל־זֶ֔רַע"}
+{"group_idx": 108, "verse_first": 38, "verse_last": 38, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527372], "clause_typs": ["WQtX"], "text": "וְנָפַ֥ל מִנִּבְלָתָ֖ם עָלָ֑יו"}
+{"group_idx": 109, "verse_first": 38, "verse_last": 38, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527373], "clause_typs": ["AjCl"], "text": "טָמֵ֥א ה֖וּא לָכֶֽם׃ ס"}
+{"group_idx": 110, "verse_first": 39, "verse_last": 39, "n_clauses": 2, "bindings_fired": ["B3-restrictive-asher"], "clause_cids": [527374, 527375], "clause_typs": ["WxY0", "NmCl"], "text": "וְכִ֤י יָמוּת֙ מִן־הַבְּהֵמָ֔ה אֲשֶׁר־הִ֥יא לָכֶ֖ם לְאָכְלָ֑ה"}
+{"group_idx": 111, "verse_first": 39, "verse_last": 39, "n_clauses": 2, "bindings_fired": ["B14-asyndetic-predicate"], "clause_cids": [527376, 527377], "clause_typs": ["Ptcp", "ZYq0"], "text": "הַנֹּגֵ֥עַ בְּנִבְלָתָ֖הּ יִטְמָ֥א עַד־הָעָֽרֶב׃"}
+{"group_idx": 112, "verse_first": 40, "verse_last": 40, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527378], "clause_typs": ["Defc"], "text": "וְ"}
+{"group_idx": 113, "verse_first": 40, "verse_last": 40, "n_clauses": 2, "bindings_fired": ["B14-asyndetic-predicate"], "clause_cids": [527379, 527380], "clause_typs": ["Ptcp", "ZYq0"], "text": "הָֽאֹכֵל֙ מִנִּבְלָתָ֔הּ יְכַבֵּ֥ס בְּגָדָ֖יו"}
+{"group_idx": 114, "verse_first": 40, "verse_last": 40, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527381], "clause_typs": ["WQt0"], "text": "וְטָמֵ֣א עַד־הָעָ֑רֶב"}
+{"group_idx": 115, "verse_first": 40, "verse_last": 40, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527382], "clause_typs": ["Defc"], "text": "וְ"}
+{"group_idx": 116, "verse_first": 40, "verse_last": 40, "n_clauses": 2, "bindings_fired": ["B14-asyndetic-predicate"], "clause_cids": [527383, 527384], "clause_typs": ["Ptcp", "ZYq0"], "text": "הַנֹּשֵׂא֙ אֶת־נִבְלָתָ֔הּ יְכַבֵּ֥ס בְּגָדָ֖יו"}
+{"group_idx": 117, "verse_first": 40, "verse_last": 40, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527385], "clause_typs": ["WQt0"], "text": "וְטָמֵ֥א עַד־הָעָֽרֶב׃"}
+{"group_idx": 118, "verse_first": 41, "verse_last": 41, "n_clauses": 2, "bindings_fired": ["B6-cpen-resumption"], "clause_cids": [527386, 527387], "clause_typs": ["CPen", "Ptcp"], "text": "וְכָל־הַשֶּׁ֖רֶץ הַשֹּׁרֵ֣ץ עַל־הָאָ֑רֶץ"}
+{"group_idx": 119, "verse_first": 41, "verse_last": 41, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527388], "clause_typs": ["NmCl"], "text": "שֶׁ֥קֶץ ה֖וּא"}
+{"group_idx": 120, "verse_first": 41, "verse_last": 41, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527389], "clause_typs": ["xYq0"], "text": "לֹ֥א יֵאָכֵֽל׃"}
+{"group_idx": 121, "verse_first": 42, "verse_last": 42, "n_clauses": 2, "bindings_fired": ["B6-cpen-resumption"], "clause_cids": [527390, 527391], "clause_typs": ["CPen", "Ptcp"], "text": "כֹּל֩ הֹולֵ֨ךְ עַל־גָּחֹ֜ון"}
+{"group_idx": 122, "verse_first": 42, "verse_last": 42, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527392], "clause_typs": ["Defc"], "text": "וְכֹ֣ל׀"}
+{"group_idx": 123, "verse_first": 42, "verse_last": 42, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527393], "clause_typs": ["Ptcp"], "text": "הֹולֵ֣ךְ עַל־אַרְבַּ֗ע"}
+{"group_idx": 124, "verse_first": 42, "verse_last": 42, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527394], "clause_typs": ["Defc"], "text": "עַ֚ד כָּל־"}
+{"group_idx": 125, "verse_first": 42, "verse_last": 42, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527395], "clause_typs": ["Ptcp"], "text": "מַרְבֵּ֣ה רַגְלַ֔יִם לְכָל־הַשֶּׁ֖רֶץ"}
+{"group_idx": 126, "verse_first": 42, "verse_last": 42, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527396], "clause_typs": ["Ptcp"], "text": "הַשֹּׁרֵ֣ץ עַל־הָאָ֑רֶץ"}
+{"group_idx": 127, "verse_first": 42, "verse_last": 42, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527397], "clause_typs": ["xYq0"], "text": "לֹ֥א תֹאכְל֖וּם"}
+{"group_idx": 128, "verse_first": 42, "verse_last": 42, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527398], "clause_typs": ["NmCl"], "text": "כִּי־שֶׁ֥קֶץ הֵֽם׃"}
+{"group_idx": 129, "verse_first": 43, "verse_last": 43, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527399], "clause_typs": ["xYq0"], "text": "אַל־תְּשַׁקְּצוּ֙ אֶת־נַפְשֹׁ֣תֵיכֶ֔ם בְּכָל־הַשֶּׁ֖רֶץ"}
+{"group_idx": 130, "verse_first": 43, "verse_last": 43, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527400], "clause_typs": ["Ptcp"], "text": "הַשֹּׁרֵ֑ץ"}
+{"group_idx": 131, "verse_first": 43, "verse_last": 43, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527401], "clause_typs": ["WxY0"], "text": "וְלֹ֤א תִֽטַּמְּאוּ֙ בָּהֶ֔ם"}
+{"group_idx": 132, "verse_first": 43, "verse_last": 43, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527402], "clause_typs": ["WQt0"], "text": "וְנִטְמֵתֶ֖ם בָּֽם׃"}
+{"group_idx": 133, "verse_first": 44, "verse_last": 44, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527403], "clause_typs": ["NmCl"], "text": "כִּ֣י אֲנִ֣י יְהוָה֮ אֱלֹֽהֵיכֶם֒"}
+{"group_idx": 134, "verse_first": 44, "verse_last": 44, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527404], "clause_typs": ["WQt0"], "text": "וְהִתְקַדִּשְׁתֶּם֙"}
+{"group_idx": 135, "verse_first": 44, "verse_last": 44, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527405], "clause_typs": ["WQt0"], "text": "וִהְיִיתֶ֣ם קְדֹשִׁ֔ים"}
+{"group_idx": 136, "verse_first": 44, "verse_last": 44, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527406], "clause_typs": ["AjCl"], "text": "כִּ֥י קָדֹ֖ושׁ אָ֑נִי"}
+{"group_idx": 137, "verse_first": 44, "verse_last": 44, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527407], "clause_typs": ["WxY0"], "text": "וְלֹ֤א תְטַמְּאוּ֙ אֶת־נַפְשֹׁ֣תֵיכֶ֔ם בְּכָל־הַשֶּׁ֖רֶץ"}
+{"group_idx": 138, "verse_first": 44, "verse_last": 44, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527408], "clause_typs": ["Ptcp"], "text": "הָרֹמֵ֥שׂ עַל־הָאָֽרֶץ׃"}
+{"group_idx": 139, "verse_first": 45, "verse_last": 45, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527409], "clause_typs": ["NmCl"], "text": "כִּ֣י׀ אֲנִ֣י יְהוָ֗ה"}
+{"group_idx": 140, "verse_first": 45, "verse_last": 45, "n_clauses": 2, "bindings_fired": ["B10-purposive-infc"], "clause_cids": [527410, 527411], "clause_typs": ["Ptcp", "InfC"], "text": "הַֽמַּעֲלֶ֤ה אֶתְכֶם֙ מֵאֶ֣רֶץ מִצְרַ֔יִם לִהְיֹ֥ת לָכֶ֖ם לֵאלֹהִ֑ים"}
+{"group_idx": 141, "verse_first": 45, "verse_last": 45, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527412], "clause_typs": ["WQt0"], "text": "וִהְיִיתֶ֣ם קְדֹשִׁ֔ים"}
+{"group_idx": 142, "verse_first": 45, "verse_last": 45, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527413], "clause_typs": ["AjCl"], "text": "כִּ֥י קָדֹ֖ושׁ אָֽנִי׃"}
+{"group_idx": 143, "verse_first": 46, "verse_last": 46, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527414], "clause_typs": ["NmCl"], "text": "זֹ֣את תֹּורַ֤ת הַבְּהֵמָה֙ וְהָעֹ֔וף וְכֹל֙ נֶ֣פֶשׁ הַֽחַיָּ֔ה"}
+{"group_idx": 144, "verse_first": 46, "verse_last": 46, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527415], "clause_typs": ["Ptcp"], "text": "הָרֹמֶ֖שֶׂת בַּמָּ֑יִם"}
+{"group_idx": 145, "verse_first": 46, "verse_last": 46, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527416], "clause_typs": ["Ellp"], "text": "וּלְכָל־נֶ֖פֶשׁ"}
+{"group_idx": 146, "verse_first": 46, "verse_last": 46, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527417], "clause_typs": ["Ptcp"], "text": "הַשֹּׁרֶ֥צֶת עַל־הָאָֽרֶץ׃"}
+{"group_idx": 147, "verse_first": 47, "verse_last": 47, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527418], "clause_typs": ["InfC"], "text": "לְהַבְדִּ֕יל בֵּ֥ין הַטָּמֵ֖א וּבֵ֣ין הַטָּהֹ֑ר וּבֵ֤ין הַֽחַיָּה֙"}
+{"group_idx": 148, "verse_first": 47, "verse_last": 47, "n_clauses": 1, "bindings_fired": [], "clause_cids": [527419], "clause_typs": ["Ptcp"], "text": "הַֽנֶּאֱכֶ֔לֶת"}
+{"group_idx": 149, "verse_first": 47, "verse_last": 47, "n_clauses": 2, "bindings_fired": ["B3-restrictive-asher"], "clause_cids": [527420, 527421], "clause_typs": ["Defc", "xYq0"], "text": "וּבֵין֙ הַֽחַיָּ֔ה אֲשֶׁ֖ר לֹ֥א תֵאָכֵֽל׃ פ"}

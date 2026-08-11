@@ -1,0 +1,53 @@
+{"group_idx": 0, "verse_first": 1, "verse_last": 1, "n_clauses": 1, "bindings_fired": [], "clause_cids": [562176], "clause_typs": ["XQtl"], "text": "מִ֥י הֶאֱמִ֖ין לִשְׁמֻעָתֵ֑נוּ"}
+{"group_idx": 1, "verse_first": 1, "verse_last": 1, "n_clauses": 1, "bindings_fired": [], "clause_cids": [562177], "clause_typs": ["WXQt"], "text": "וּזְרֹ֥ועַ יְהוָ֖ה עַל־מִ֥י נִגְלָֽתָה׃"}
+{"group_idx": 2, "verse_first": 2, "verse_last": 2, "n_clauses": 1, "bindings_fired": [], "clause_cids": [562178], "clause_typs": ["Way0"], "text": "וַיַּ֨עַל כַּיֹּונֵ֜ק לְפָנָ֗יו"}
+{"group_idx": 3, "verse_first": 2, "verse_last": 2, "n_clauses": 1, "bindings_fired": [], "clause_cids": [562179], "clause_typs": ["Ellp"], "text": "וְכַשֹּׁ֨רֶשׁ֙ מֵאֶ֣רֶץ צִיָּ֔ה"}
+{"group_idx": 4, "verse_first": 2, "verse_last": 2, "n_clauses": 1, "bindings_fired": [], "clause_cids": [562180], "clause_typs": ["NmCl"], "text": "לֹא־תֹ֥אַר לֹ֖ו"}
+{"group_idx": 5, "verse_first": 2, "verse_last": 2, "n_clauses": 1, "bindings_fired": [], "clause_cids": [562181], "clause_typs": ["Ellp"], "text": "וְלֹ֣א הָדָ֑ר"}
+{"group_idx": 6, "verse_first": 2, "verse_last": 2, "n_clauses": 1, "bindings_fired": [], "clause_cids": [562182], "clause_typs": ["WYq0"], "text": "וְנִרְאֵ֥הוּ"}
+{"group_idx": 7, "verse_first": 2, "verse_last": 2, "n_clauses": 1, "bindings_fired": [], "clause_cids": [562183], "clause_typs": ["Ellp"], "text": "וְלֹֽא־מַרְאֶ֖ה"}
+{"group_idx": 8, "verse_first": 2, "verse_last": 2, "n_clauses": 1, "bindings_fired": [], "clause_cids": [562184], "clause_typs": ["WYq0"], "text": "וְנֶחְמְדֵֽהוּ׃"}
+{"group_idx": 9, "verse_first": 3, "verse_last": 3, "n_clauses": 1, "bindings_fired": [], "clause_cids": [562185], "clause_typs": ["Ptcp"], "text": "נִבְזֶה֙"}
+{"group_idx": 10, "verse_first": 3, "verse_last": 3, "n_clauses": 1, "bindings_fired": [], "clause_cids": [562186], "clause_typs": ["AjCl"], "text": "וַחֲדַ֣ל אִישִׁ֔ים"}
+{"group_idx": 11, "verse_first": 3, "verse_last": 3, "n_clauses": 1, "bindings_fired": [], "clause_cids": [562187], "clause_typs": ["NmCl"], "text": "אִ֥ישׁ מַכְאֹבֹ֖ות"}
+{"group_idx": 12, "verse_first": 3, "verse_last": 3, "n_clauses": 1, "bindings_fired": [], "clause_cids": [562188], "clause_typs": ["AjCl"], "text": "וִיד֣וּעַ חֹ֑לִי"}
+{"group_idx": 13, "verse_first": 3, "verse_last": 3, "n_clauses": 1, "bindings_fired": [], "clause_cids": [562189], "clause_typs": ["Ptcp"], "text": "וּכְמַסְתֵּ֤ר פָּנִים֙ מִמֶּ֔נּוּ נִבְזֶ֖ה"}
+{"group_idx": 14, "verse_first": 3, "verse_last": 3, "n_clauses": 1, "bindings_fired": [], "clause_cids": [562190], "clause_typs": ["WxQ0"], "text": "וְלֹ֥א חֲשַׁבְנֻֽהוּ׃"}
+{"group_idx": 15, "verse_first": 4, "verse_last": 4, "n_clauses": 1, "bindings_fired": [], "clause_cids": [562191], "clause_typs": ["XQtl"], "text": "אָכֵ֤ן חֳלָיֵ֨נוּ֙ ה֣וּא נָשָׂ֔א"}
+{"group_idx": 16, "verse_first": 4, "verse_last": 4, "n_clauses": 2, "bindings_fired": ["B6-cpen-resumption"], "clause_cids": [562192, 562193], "clause_typs": ["CPen", "ZQt0"], "text": "וּמַכְאֹבֵ֖ינוּ סְבָלָ֑ם"}
+{"group_idx": 17, "verse_first": 4, "verse_last": 4, "n_clauses": 1, "bindings_fired": [], "clause_cids": [562194], "clause_typs": ["WXQt"], "text": "וַאֲנַ֣חְנוּ חֲשַׁבְנֻ֔הוּ נָג֛וּעַ מֻכֵּ֥ה אֱלֹהִ֖ים וּמְעֻנֶּֽה׃"}
+{"group_idx": 18, "verse_first": 5, "verse_last": 5, "n_clauses": 1, "bindings_fired": [], "clause_cids": [562195], "clause_typs": ["Ptcp"], "text": "וְהוּא֙ מְחֹלָ֣ל מִפְּשָׁעֵ֔נוּ"}
+{"group_idx": 19, "verse_first": 5, "verse_last": 5, "n_clauses": 1, "bindings_fired": [], "clause_cids": [562196], "clause_typs": ["Ptcp"], "text": "מְדֻכָּ֖א מֵעֲוֹנֹתֵ֑ינוּ"}
+{"group_idx": 20, "verse_first": 5, "verse_last": 5, "n_clauses": 1, "bindings_fired": [], "clause_cids": [562197], "clause_typs": ["NmCl"], "text": "מוּסַ֤ר שְׁלֹומֵ֨נוּ֙ עָלָ֔יו"}
+{"group_idx": 21, "verse_first": 5, "verse_last": 5, "n_clauses": 1, "bindings_fired": [], "clause_cids": [562198], "clause_typs": ["WxQ0"], "text": "וּבַחֲבֻרָתֹ֖ו נִרְפָּא־לָֽנוּ׃"}
+{"group_idx": 22, "verse_first": 6, "verse_last": 6, "n_clauses": 1, "bindings_fired": [], "clause_cids": [562199], "clause_typs": ["XQtl"], "text": "כֻּלָּ֨נוּ֙ כַּצֹּ֣אן תָּעִ֔ינוּ"}
+{"group_idx": 23, "verse_first": 6, "verse_last": 6, "n_clauses": 2, "bindings_fired": ["B14-asyndetic-predicate"], "clause_cids": [562200, 562201], "clause_typs": ["Ellp", "ZQt0"], "text": "אִ֥ישׁ לְדַרְכֹּ֖ו פָּנִ֑ינוּ"}
+{"group_idx": 24, "verse_first": 6, "verse_last": 6, "n_clauses": 1, "bindings_fired": [], "clause_cids": [562202], "clause_typs": ["WXQt"], "text": "וַֽיהוָה֙ הִפְגִּ֣יעַ בֹּ֔ו אֵ֖ת עֲוֹ֥ן כֻּלָּֽנוּ׃"}
+{"group_idx": 25, "verse_first": 7, "verse_last": 7, "n_clauses": 1, "bindings_fired": [], "clause_cids": [562203], "clause_typs": ["ZQt0"], "text": "נִגַּ֨שׂ"}
+{"group_idx": 26, "verse_first": 7, "verse_last": 7, "n_clauses": 1, "bindings_fired": [], "clause_cids": [562204], "clause_typs": ["Ptcp"], "text": "וְה֣וּא נַעֲנֶה֮"}
+{"group_idx": 27, "verse_first": 7, "verse_last": 7, "n_clauses": 1, "bindings_fired": [], "clause_cids": [562205], "clause_typs": ["WxY0"], "text": "וְלֹ֣א יִפְתַּח־פִּיו֒"}
+{"group_idx": 28, "verse_first": 7, "verse_last": 7, "n_clauses": 1, "bindings_fired": [], "clause_cids": [562206], "clause_typs": ["NmCl"], "text": "כַּשֶּׂה֙"}
+{"group_idx": 29, "verse_first": 7, "verse_last": 7, "n_clauses": 1, "bindings_fired": [], "clause_cids": [562207], "clause_typs": ["xYq0"], "text": "לַטֶּ֣בַח יוּבָ֔ל"}
+{"group_idx": 30, "verse_first": 7, "verse_last": 7, "n_clauses": 1, "bindings_fired": [], "clause_cids": [562208], "clause_typs": ["NmCl"], "text": "וּכְרָחֵ֕ל"}
+{"group_idx": 31, "verse_first": 7, "verse_last": 7, "n_clauses": 1, "bindings_fired": [], "clause_cids": [562209], "clause_typs": ["xQt0"], "text": "לִפְנֵ֥י גֹזְזֶ֖יהָ נֶאֱלָ֑מָה"}
+{"group_idx": 32, "verse_first": 7, "verse_last": 7, "n_clauses": 1, "bindings_fired": [], "clause_cids": [562210], "clause_typs": ["WxY0"], "text": "וְלֹ֥א יִפְתַּ֖ח פִּֽיו׃"}
+{"group_idx": 33, "verse_first": 8, "verse_last": 8, "n_clauses": 1, "bindings_fired": [], "clause_cids": [562211], "clause_typs": ["xQt0"], "text": "מֵעֹ֤צֶר וּמִמִּשְׁפָּט֙ לֻקָּ֔ח"}
+{"group_idx": 34, "verse_first": 8, "verse_last": 8, "n_clauses": 1, "bindings_fired": [], "clause_cids": [562212], "clause_typs": ["WXYq"], "text": "וְאֶת־דֹּורֹ֖ו מִ֣י יְשֹׂוחֵ֑חַ"}
+{"group_idx": 35, "verse_first": 8, "verse_last": 8, "n_clauses": 1, "bindings_fired": [], "clause_cids": [562213], "clause_typs": ["xQt0"], "text": "כִּ֤י נִגְזַר֙ מֵאֶ֣רֶץ חַיִּ֔ים"}
+{"group_idx": 36, "verse_first": 8, "verse_last": 8, "n_clauses": 1, "bindings_fired": [], "clause_cids": [562214], "clause_typs": ["NmCl"], "text": "מִפֶּ֥שַׁע עַמִּ֖י נֶ֥גַע לָֽמֹו׃"}
+{"group_idx": 37, "verse_first": 9, "verse_last": 9, "n_clauses": 1, "bindings_fired": [], "clause_cids": [562215], "clause_typs": ["Way0"], "text": "וַיִּתֵּ֤ן אֶת־רְשָׁעִים֙ קִבְרֹ֔ו"}
+{"group_idx": 38, "verse_first": 9, "verse_last": 9, "n_clauses": 1, "bindings_fired": [], "clause_cids": [562216], "clause_typs": ["NmCl"], "text": "וְאֶת־עָשִׁ֖יר בְּמֹתָ֑יו"}
+{"group_idx": 39, "verse_first": 9, "verse_last": 9, "n_clauses": 1, "bindings_fired": [], "clause_cids": [562217], "clause_typs": ["xQt0"], "text": "עַ֚ל לֹא־חָמָ֣ס עָשָׂ֔ה"}
+{"group_idx": 40, "verse_first": 9, "verse_last": 9, "n_clauses": 1, "bindings_fired": [], "clause_cids": [562218], "clause_typs": ["NmCl"], "text": "וְלֹ֥א מִרְמָ֖ה בְּפִֽיו׃"}
+{"group_idx": 41, "verse_first": 10, "verse_last": 10, "n_clauses": 3, "bindings_fired": ["B10-purposive-infc", "B14-asyndetic-predicate"], "clause_cids": [562219, 562220, 562221], "clause_typs": ["WXQt", "InfC", "ZQt0"], "text": "וַיהוָ֞ה חָפֵ֤ץ דַּכְּאֹו֙ הֶֽחֱלִ֔י"}
+{"group_idx": 42, "verse_first": 10, "verse_last": 10, "n_clauses": 3, "bindings_fired": ["B14-asyndetic-predicate", "B14-asyndetic-predicate"], "clause_cids": [562222, 562223, 562224], "clause_typs": ["xYqX", "ZYq0", "ZYq0"], "text": "אִם־תָּשִׂ֤ים אָשָׁם֙ נַפְשֹׁ֔ו יִרְאֶ֥ה זֶ֖רַע יַאֲרִ֣יךְ יָמִ֑ים"}
+{"group_idx": 43, "verse_first": 10, "verse_last": 10, "n_clauses": 1, "bindings_fired": [], "clause_cids": [562225], "clause_typs": ["WXYq"], "text": "וְחֵ֥פֶץ יְהוָ֖ה בְּיָדֹ֥ו יִצְלָֽח׃"}
+{"group_idx": 44, "verse_first": 11, "verse_last": 11, "n_clauses": 2, "bindings_fired": ["B14-asyndetic-predicate"], "clause_cids": [562226, 562227], "clause_typs": ["xYq0", "ZYq0"], "text": "מֵעֲמַ֤ל נַפְשֹׁו֙ יִרְאֶ֣ה יִשְׂבָּ֔ע"}
+{"group_idx": 45, "verse_first": 11, "verse_last": 11, "n_clauses": 1, "bindings_fired": [], "clause_cids": [562228], "clause_typs": ["xYqX"], "text": "בְּדַעְתֹּ֗ו יַצְדִּ֥יק צַדִּ֛יק עַבְדִּ֖י לָֽרַבִּ֑ים"}
+{"group_idx": 46, "verse_first": 11, "verse_last": 11, "n_clauses": 1, "bindings_fired": [], "clause_cids": [562229], "clause_typs": ["WXYq"], "text": "וַעֲוֹנֹתָ֖ם ה֥וּא יִסְבֹּֽל׃"}
+{"group_idx": 47, "verse_first": 12, "verse_last": 12, "n_clauses": 1, "bindings_fired": [], "clause_cids": [562230], "clause_typs": ["xYq0"], "text": "לָכֵ֞ן אֲחַלֶּק־לֹ֣ו בָרַבִּ֗ים"}
+{"group_idx": 48, "verse_first": 12, "verse_last": 12, "n_clauses": 1, "bindings_fired": [], "clause_cids": [562231], "clause_typs": ["WxY0"], "text": "וְאֶת־עֲצוּמִים֮ יְחַלֵּ֣ק שָׁלָל֒"}
+{"group_idx": 49, "verse_first": 12, "verse_last": 12, "n_clauses": 1, "bindings_fired": [], "clause_cids": [562232], "clause_typs": ["xQt0"], "text": "תַּ֗חַת אֲשֶׁ֨ר הֶעֱרָ֤ה לַמָּ֨וֶת֙ נַפְשֹׁ֔ו"}
+{"group_idx": 50, "verse_first": 12, "verse_last": 12, "n_clauses": 1, "bindings_fired": [], "clause_cids": [562233], "clause_typs": ["WxQ0"], "text": "וְאֶת־פֹּשְׁעִ֖ים נִמְנָ֑ה"}
+{"group_idx": 51, "verse_first": 12, "verse_last": 12, "n_clauses": 1, "bindings_fired": [], "clause_cids": [562234], "clause_typs": ["WXQt"], "text": "וְהוּא֙ חֵטְא־רַבִּ֣ים נָשָׂ֔א"}
+{"group_idx": 52, "verse_first": 12, "verse_last": 12, "n_clauses": 1, "bindings_fired": [], "clause_cids": [562235], "clause_typs": ["WxY0"], "text": "וְלַפֹּשְׁעִ֖ים יַפְגִּֽיעַ׃ ס"}

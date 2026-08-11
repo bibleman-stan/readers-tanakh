@@ -1,5 +1,14 @@
-# Vendored external corpora (local only; not our editorial work)
-research/
+# Third-party corpora. The bulk payloads stay local — upstream owns them, and a
+# clone pinned to a commit is more recoverable than a copy vendored into our
+# history. research/README.md IS tracked and names every expected clone with its
+# URL and pinned commit, so losing one is never silent (2026-08-10: macula-greek
+# and morphgnt-sblgnt had both vanished from readers-gnt with no trace, because a
+# blanket `research/` ignore leaves nothing behind to notice their absence).
+#
+# Our own analysis does NOT belong here. It goes in the numbered tiers — evidence
+# in 2-evidence/, scripts in 5-machinery/ — where git can diff and recover it.
+research/*
+!research/README.md
 
 # Pre-publication strategy, methodology canon, session artifacts (Dropbox-junctioned)
 private/
