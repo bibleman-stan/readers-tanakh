@@ -3,12 +3,12 @@
 
 Mechanical forcing function that fires at the action site (the moment Claude
 Code is about to execute a Bash tool call). Blocks anti-patterns documented
-in handoffs/14-operational-protocols.md before they happen, instead of
+in 4-process/02-operational-protocols.md before they happen, instead of
 detecting them after the fact.
 
 Anti-patterns blocked:
   1. Multi-line Python heredocs (>=5 non-empty lines containing Python idioms)
-     — per §E1-E2: should be persistent scripts under scripts/, not one-off
+     — per §E1-E2: should be persistent scripts under 5-machinery/scripts/, not one-off
      bash heredocs (history shows they break on Windows /tmp ephemerality and
      apostrophe/Hebrew-text heredoc parsing).
   2. Cascade invocations (apply_specs / refresh_book / apply_validators with
@@ -159,10 +159,10 @@ _CASCADE_BOOK_RE = re.compile(
     r"\b(apply_specs|apply_validators|refresh_book)\.py\b[^|;&\n]*?--book\s+(\S+)"
 )
 _ENGINE_FILE_RE = re.compile(
-    r"(scripts/spec_runner\.py|scripts/apply_validators\.py|"
-    r"scripts/apply_specs\.py|validators/_shared/[\w.]+\.py|"
-    r"scripts/regenerate_english\.py|"
-    r"scripts/propagate_editorial_layers\.py)"
+    r"(5-machinery/scripts/spec_runner\.py|5-machinery/scripts/apply_validators\.py|"
+    r"5-machinery/scripts/apply_specs\.py|5-machinery/validators/_shared/[\w.]+\.py|"
+    r"5-machinery/scripts/regenerate_english\.py|"
+    r"5-machinery/scripts/propagate_editorial_layers\.py)"
 )
 _INSTANCE_FIX_BYPASS = "# instance-fix-justified:"
 
@@ -604,7 +604,7 @@ def _write_violations(payload: dict) -> list[str]:
 
     Per 2026-05-04 colonoscopy + 2026-05-03 Stan instruction
     ("stop making new validators... proliferation creates conflicts"):
-    creating a new `validators/(syntax|colometry)/validate_*.py` file should
+    creating a new `5-machinery/validators/(syntax|colometry)/validate_*.py` file should
     require an explicit justification token in a recent assistant message
     naming why this is a NEW validator and not an extension to an existing one.
 
@@ -618,7 +618,7 @@ def _write_violations(payload: dict) -> list[str]:
     # Normalize to forward slashes for matching.
     norm = file_path.replace("\\", "/")
     if not re.search(
-        r"validators/(?:syntax|colometry)/validate_[\w]+\.py$", norm
+        r"5-machinery/validators/(?:syntax|colometry)/validate_[\w]+\.py$", norm
     ):
         return []  # Not a validator file — pass through
 
@@ -687,7 +687,7 @@ def _write_violations(payload: dict) -> list[str]:
         f"action is to extend an existing validator with a new arm/subcase, "
         f"not create a new file.\n\n"
         f"ACTION (in priority order):\n"
-        f"  (a) Identify which existing validator in `scripts/apply_validators.py` "
+        f"  (a) Identify which existing validator in `5-machinery/scripts/apply_validators.py` "
         f"ADOPTED_VALIDATORS could carry this as a new arm or subcase. "
         f"Extend that file instead.\n"
         f"  (b) If extension is genuinely impossible (the new validator's "
@@ -700,7 +700,7 @@ def _write_violations(payload: dict) -> list[str]:
         f"cannot-be-added / existing-validator-misses / fundamentally-different. "
         f"Substance is validated.\n"
         f"  (c) If you're working on a fixture or test file (not a real "
-        f"validator), name it under `tests/` not `validators/`."
+        f"validator), name it under `5-machinery/tests/` not `5-machinery/validators/`."
     ]
 
 
@@ -787,13 +787,13 @@ def _atu_method_edit_violations(payload: dict) -> list[str]:
         f"edits to cross-corpus shared infrastructure for Hebrew-side or "
         f"Hebrew-derived processing (KJV distribution, Strong's normalization, "
         f"alignment) MUST first consult Macula constituent membership "
-        f"(validators/_shared/macula_constituents.py) before reaching for "
+        f"(5-machinery/validators/_shared/macula_constituents.py) before reaching for "
         f"surface-form heuristics. Past failure (2026-05-12 distribute.py): "
         f"4 iterations + 3 corpus cascades + 5 audit waves on closed-list "
         f"KJV-surface heuristics when Macula constituent membership was the "
         f"right primitive from the start.\n\n"
         f"ACTION (in priority order):\n"
-        f"  (a) Skim validators/_shared/macula_constituents.py — the "
+        f"  (a) Skim 5-machinery/validators/_shared/macula_constituents.py — the "
         f"Token / Constituent / Clause API + get_verse_* query functions. "
         f"Determine: does the question I'm trying to answer with this Edit "
         f"reduce to a Macula query (constituent membership, clause boundary, "
@@ -855,7 +855,7 @@ def _agent_violations(prompt: str) -> list[str]:
         f"seconds — not dispatched to a Sonnet/Haiku agent at $0.05-0.15 "
         f"+ 60-180s wall-clock.\n\n"
         f"ACTION: (a) re-write the deliverable as a Bash/Glob/Grep call or "
-        f"a small persistent script under `scripts/scan_*.py`; OR (b) if "
+        f"a small persistent script under `5-machinery/scripts/scan_*.py`; OR (b) if "
         f"the deliverable genuinely requires judgment that regex can't "
         f"enumerate (e.g., classifying edge cases, multi-source synthesis, "
         f"hostile audit), prefix the prompt body with "
@@ -955,7 +955,7 @@ def _cascade_invocation_violations(command: str, transcript_path: str) -> list[s
         f"[CASCADE-ITERATION] About to invoke cascade against book "
         f"'{current_book}' for the {prior_same_book + 1}th time in this "
         f"session, with NO Edit to engine-level files "
-        f"(scripts/spec_runner.py, scripts/apply_*.py, validators/_shared/) "
+        f"(5-machinery/scripts/spec_runner.py, 5-machinery/scripts/apply_*.py, 5-machinery/validators/_shared/) "
         f"between cascades. Per the 2026-05-05 Sifrei-Emet purge: re-running "
         f"cascade after instance-level fixes (per-spec guards, per-validator "
         f"tweaks) without addressing the engine-level class is the whack-a-"
@@ -964,8 +964,8 @@ def _cascade_invocation_violations(command: str, transcript_path: str) -> list[s
         f"escalation. Stan's mantra: \"swat the bug class, not the instance.\"\n\n"
         f"ACTION: STOP. Look at the per-spec/per-validator fixes between "
         f"the prior cascade and now. Are they addressing the same conceptual "
-        f"FP class? If yes → fix at the engine level (scripts/spec_runner.py "
-        f"or validators/_shared/) before re-cascading.\n\n"
+        f"FP class? If yes → fix at the engine level (5-machinery/scripts/spec_runner.py "
+        f"or 5-machinery/validators/_shared/) before re-cascading.\n\n"
         f"BYPASS (use only with substantive justification): prefix command "
         f"with '{_INSTANCE_FIX_BYPASS} <reason>' where <reason> names a "
         f"closed-vocabulary criterion: engine-tried / unrelated-bugs / "
@@ -1019,12 +1019,12 @@ def _violations(command: str, payload: dict | None = None) -> list[str]:
             continue
         violations.append(
             f"[E1-E2] Multi-line Python heredoc detected ({len(body_lines)} non-empty "
-            f"lines, contains Python idioms). Per handoffs/14-operational-protocols.md "
+            f"lines, contains Python idioms). Per 4-process/02-operational-protocols.md "
             f"§E1-E2: recurring Python operations must be persistent scripts under "
-            f"scripts/, not bash heredocs. Bash heredocs break on Windows /tmp "
+            f"5-machinery/scripts/, not bash heredocs. Bash heredocs break on Windows /tmp "
             f"ephemerality and on Hebrew/apostrophe-containing text. ACTION: use the "
-            f"Write tool to create scripts/<descriptive_name>.py, then run with `py -3 "
-            f"scripts/<name>.py`. Reuse next time you need the same operation."
+            f"Write tool to create 5-machinery/scripts/<descriptive_name>.py, then run with `py -3 "
+            f"5-machinery/scripts/<name>.py`. Reuse next time you need the same operation."
         )
         break  # one heredoc violation surfaces the lesson; don't spam multiple
 
@@ -1036,7 +1036,7 @@ def _violations(command: str, payload: dict | None = None) -> list[str]:
     if cascade_match and "# split-justified:" not in command:
         violations.append(
             "[A2] Cascade invocation '--all-books' on main thread. Per "
-            "handoffs/14-operational-protocols.md §A2 (mandatory two-phase pattern): "
+            "4-process/02-operational-protocols.md §A2 (mandatory two-phase pattern): "
             "this should be dispatched as 6 parallel cluster Agent calls in one "
             "message — Torah / Former Prophets / Latter Prophets / Writings prose / "
             "Sifrei Emet / Embedded Poetry. Wall time collapses to max(per-cluster) "
@@ -1056,7 +1056,7 @@ def _violations(command: str, payload: dict | None = None) -> list[str]:
                 f"[A3-Step0] Cascade invocation '--all-books' with insufficient "
                 f"adversarial-audit evidence in recent transcript (found "
                 f"{n_dispatches} Agent dispatch(es); need ≥2). Per "
-                f"handoffs/14-operational-protocols.md §A3 Step 0: before any "
+                f"4-process/02-operational-protocols.md §A3 Step 0: before any "
                 f"non-trivial implementation, the FIRST tool call in your response "
                 f"must be either (a) parallel Agent dispatches for adversarial "
                 f"audit (one message, multiple Agent tool_use blocks), OR (b) a "
@@ -1092,7 +1092,7 @@ def _violations(command: str, payload: dict | None = None) -> list[str]:
         # but safer to flag than miss.
         violations.append(
             f"[H3] git status/diff without summary flag in: '{clause_s[:90]}'. Per "
-            f"handoffs/14-operational-protocols.md §H3 (verbose-by-default ingestion): "
+            f"4-process/02-operational-protocols.md §H3 (verbose-by-default ingestion): "
             f"bare `git status` and `git diff` ingest verbose output and waste context. "
             f"ACTION: add a summary flag (--shortstat / --numstat / --stat / "
             f"--porcelain / --name-only / --short) or pipe to | wc -l for a count."

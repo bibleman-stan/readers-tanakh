@@ -2748,7 +2748,7 @@ async function buildSearchIndex() {
   statusEl.innerHTML = '<div class="search-loading">Loading search index...</div>';
 
   // Fast path: prebuilt compact index (data/search_index.json, from
-  // scripts/build_search_index.py). Avoids 929 chapter fetches + 929
+  // 5-machinery/scripts/build_search_index.py). Avoids 929 chapter fetches + 929
   // DOMParser walks. Compact rows [bookIdx, ch, vs, heText, enText] are
   // expanded here; diacritic-stripped / lowercased forms derived now so
   // stripDiacritics() stays the single source of truth.

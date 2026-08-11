@@ -47,7 +47,7 @@ Pipeline:
 | v2 derived | `data/text-files/v2/{translit,eng-interlinear,eng-kjv}/` | Regenerated from v2/heb per build run |
 | books | `books/<book>/<book>-NN.html` | Built reader pages (one per chapter) |
 
-The Tanakh canon (`private/01-method/colometry-canon.md`) instantiates the framework for Hebrew-specific rules (H1–H19) — maqqef-group indivisibility, construct-chain handling, complement integrity, FEF *wayehi*-protasis, casus pendens, and the rest. A validator suite (`validators/syntax/` for Layer 1 grammatical legality, `validators/colometry/` for Layer 3 editorial rules) runs against every commit through a pre-commit baseline check.
+The Tanakh canon (`private/01-method/colometry-canon.md`) instantiates the framework for Hebrew-specific rules (H1–H19) — maqqef-group indivisibility, construct-chain handling, complement integrity, FEF *wayehi*-protasis, casus pendens, and the rest. A validator suite (`5-machinery/validators/syntax/` for Layer 1 grammatical legality, `5-machinery/validators/colometry/` for Layer 3 editorial rules) runs against every commit through a pre-commit baseline check.
 
 ## Data Sources
 
