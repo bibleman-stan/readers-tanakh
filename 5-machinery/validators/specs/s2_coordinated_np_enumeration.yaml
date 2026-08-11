@@ -1,0 +1,43 @@
+name: s2_coordinated_np_enumeration
+rule: S2
+subcase: coordinated_np_enumeration
+severity: STRONG-SPLIT-CANDIDATE
+mode: line
+
+description: |
+  Coordinated-NP enumeration on a single line — splits into one NP per cola.
+  Per 1-method/canon §1 generative principle ("each proposition splits by default") and
+  §1 structural-justification 1 (formally-marked parallel series, each member
+  its own beat).
+
+  Trigger: line contains ≥4 NP heads (initial NP + ≥3 vav-coord-NP heads).
+  Threshold 4 (one notch more conservative than S1's min:3) excludes triadic
+  bonded triplets like אַבְרָהָם יִצְחָק וְיַעֲקֹב — 3-member NP enumerations
+  remain editorial-judgment per 1-method/canon §2 Category B; 4+ are clearly atomic-
+  thought breakage.
+
+  Action: insert line break before each vav-coord NP token.
+
+  Concrete example (Gen 10:2 sons-of-Yepheth list):
+    Before: בְּנֵי יֶפֶת גֹּמֶר וּמָגוֹג וּמָדַי וְיָוָן וְתֻבָל וּמֶשֶׁךְ וְתִירָס
+    After:  בְּנֵי יֶפֶת גֹּמֶר
+            וּמָגוֹג
+            וּמָדַי
+            וְיָוָן
+            וְתֻבָל
+            וּמֶשֶׁךְ
+            וְתִירָס
+
+  Architectural note (2026-04-29): second SPLIT-mode spec; mirrors S1
+  structure with NP-instead-of-PP head detection (is_vav_coord_np_head:
+  vav + NP head, excluding vav-prep / vav-DO-marker / vav-verb / vav-particle).
+
+  S2b (DO-stack enumeration וְאֵת ... וְאֵת ...) deferred to next spec; conflict
+  surface with m2_coordinated_object needs separate analysis.
+
+trigger:
+  line_anywhere:
+    coordinated_np_count: { min: 4 }
+
+annotation_template: "S2 coordinated-NP enumeration ({pwc} prosodic words; split into one NP per cola)"
+suggested_action: SPLIT_AT_VAV_NP_BOUNDARIES

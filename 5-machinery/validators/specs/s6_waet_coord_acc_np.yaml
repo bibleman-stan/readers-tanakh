@@ -1,0 +1,39 @@
+name: s6_waet_coord_acc_np
+rule: S6
+subcase: waet_coord_acc_np_split
+severity: STRONG-SPLIT-CANDIDATE
+mode: line
+
+description: |
+  Split a line containing a waet-coord parallel-accusative-NP enumeration
+  (אֵת-NP1 modifier1 + וְאֵת-NP2 modifier2) before the וְאֵת. Each member
+  is a complete object-with-modifier ATU per 1-method/canon §1 SJ1 (parallel
+  propositions split by default).
+
+  Helper enforces 3-token-minimum-per-member floor: bare compound DOs
+  (אֶת־X וְאֶת־Y, single-token members) do NOT split — coordinated_acc_np_
+  split_positions returns [] for them.
+
+  Example (Gen 1:16 line 2 type):
+    אֶת־הַמָּאוֹר הַגָּדֹל לְמֶמְשֶׁלֶת הַיּוֹם וְאֶת־הַמָּאוֹר הַקָּטֹן לְמֶמְשֶׁלֶת הַלַּיְלָה
+    →
+    אֶת־הַמָּאוֹר הַגָּדֹל לְמֶמְשֶׁלֶת הַיּוֹם
+    וְאֶת־הַמָּאוֹר הַקָּטֹן לְמֶמְשֶׁלֶת הַלַּיְלָה
+
+  Counter-example (Num 7:6 type, NOT split):
+    אֶת־הָעֲגָלֹת וְאֶת־הַבָּקָר      [bare compound DO; single token per member]
+
+  Audit (2026-05-04, 49 corpus instances): ~0 FPs at helper level.
+
+  Cascade-safety (2026-05-04 carry-forward execution):
+  Re-enabled with `combined_lines_s6_eligible` guard on m2_coordinated_object
+  (only oscillation partner identified). The guard re-calls this same helper
+  on (line N + line N+1) — if positive, blocks merge. Discriminant is
+  isomorphic with this spec's own design invariant.
+
+trigger:
+  line_anywhere:
+    waet_coord_acc_np: true
+
+annotation_template: "S6 waet-coord-acc-NP split — separate parallel object-with-modifier ATUs"
+suggested_action: SPLIT_AT_FINITE_VERB_BOUNDARY
